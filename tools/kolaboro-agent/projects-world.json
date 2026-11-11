@@ -179155,6 +179155,5763 @@
    "added": "2026-11-06",
    "found_by": "discover-agent",
    "slug": "syncord-tower-lagos"
+  },
+  {
+   "name": "The Highgrove",
+   "developer": "Ellington Properties",
+   "area": "Mohammed Bin Rashid City, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://thehighgrove.ellingtonproperties.ae/",
+   "docs_url": "https://thehighgrove.ellingtonproperties.ae/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% at booking; 10% at 60 days and 10% at 120 days after reservation; 5% at 240 and 5% at 360 days; 5% each at 20%, 30%, 40% and 50% construction progress; 30% on completion",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion date published as \"Q4 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thehighgrove.ellingtonproperties.ae/"
+    },
+    {
+     "claim": "Apartments, penthouses, duplexes and a sky villa; one, two and three-bedroom apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thehighgrove.ellingtonproperties.ae/"
+    },
+    {
+     "claim": "Payment plan as published: 20% at booking, staged instalments during construction, 30% on completion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thehighgrove.ellingtonproperties.ae/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "penthouse",
+     "duplex",
+     "sky villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% at booking; 10% at 60 days and 10% at 120 days after reservation; 5% at 240 and 5% at 360 days; 5% each at 20%, 30%, 40% and 50% construction progress; 30% on completion",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Highgrove by Ellington Properties in Mohammed Bin Rashid City, Dubai (UAE). Added from the official developer page: off-plan; handover on record: 2027-Q4. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://thehighgrove.ellingtonproperties.ae/"
+   ],
+   "docs_listed": [
+    "Completion date published as \"Q4 2027\"",
+    "Apartments, penthouses, duplexes and a sky villa; one, two and three-bedroom apartments",
+    "Payment plan as published: 20% at booking, staged instalments during construction, 30% on completion"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-highgrove"
+  },
+  {
+   "name": "Costa Mare",
+   "developer": "Ellington Properties",
+   "area": "Al Marjan Island, Ras Al Khaimah",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://costa-mare.ellingtonproperties.ae/",
+   "docs_url": "https://costa-mare.ellingtonproperties.ae/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% at booking plus AED 3,000 RERA registration fee; 10% at 90 days and 10% at 180 days after reservation; 5% at each of six construction milestones (20% to 70%); 30% on completion",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion date published as \"Q3 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costa-mare.ellingtonproperties.ae/"
+    },
+    {
+     "claim": "Studios, 1 to 4-bedroom apartments, 1 to 3-bedroom duplexes, 4-bedroom penthouses and 5 to 6-bedroom villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costa-mare.ellingtonproperties.ae/"
+    },
+    {
+     "claim": "Payment plan as published: 20% at booking plus AED 3,000 registration fee, instalments during construction, 30% on completion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costa-mare.ellingtonproperties.ae/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 to 4-bedroom apartment",
+     "duplex",
+     "penthouse",
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% at booking plus AED 3,000 RERA registration fee; 10% at 90 days and 10% at 180 days after reservation; 5% at each of six construction milestones (20% to 70%); 30% on completion",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Costa Mare by Ellington Properties in Al Marjan Island, Ras Al Khaimah (UAE). Added from the official developer page: off-plan; handover on record: 2028-Q3. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://costa-mare.ellingtonproperties.ae/"
+   ],
+   "docs_listed": [
+    "Completion date published as \"Q3 2028\"",
+    "Studios, 1 to 4-bedroom apartments, 1 to 3-bedroom duplexes, 4-bedroom penthouses and 5 to 6-bedroom villas",
+    "Payment plan as published: 20% at booking plus AED 3,000 registration fee, instalments during construction, 30% on completion"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "costa-mare"
+  },
+  {
+   "name": "Fahid Beach Residences",
+   "developer": "Aldar Properties",
+   "area": "Fahid Island, Abu Dhabi",
+   "country": "UAE",
+   "market": "Abu Dhabi",
+   "stage": "off-plan",
+   "url": "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences",
+   "docs_url": "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Apartments, townhouses and penthouses with 1 to 4 bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences"
+    },
+    {
+     "claim": "Sustainability ratings listed on the page: Fitwel 3-Star, LEED Platinum (pre-certified), Estidama 3 Pearl",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences"
+    },
+    {
+     "claim": "No handover date, price or permit number is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "townhouse",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Fahid Beach Residences by Aldar Properties in Fahid Island, Abu Dhabi (UAE). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.aldar.com/properties/en/Fahid-Island/fahidbeachresidences"
+   ],
+   "docs_listed": [
+    "Apartments, townhouses and penthouses with 1 to 4 bedrooms",
+    "Sustainability ratings listed on the page: Fitwel 3-Star, LEED Platinum (pre-certified), Estidama 3 Pearl",
+    "No handover date, price or permit number is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "fahid-beach-residences"
+  },
+  {
+   "name": "Bermondsey Place",
+   "developer": "Berkeley Homes South East London Ltd (Berkeley Group)",
+   "area": "Bermondsey, London SE1",
+   "country": "United Kingdom",
+   "market": "London",
+   "stage": "off-plan",
+   "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place",
+   "docs_url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place",
+   "permit_number": null,
+   "seed": {
+    "price": 557500,
+    "currency": "GBP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "New homes from GBP 557,500",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    },
+    {
+     "claim": "Studios, 1, 2 and 3 bedroom apartments; phases named The Art House and The Art Mill",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    },
+    {
+     "claim": "Page banner: \"Now 70% Sold\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    },
+    {
+     "claim": "Sales and marketing suite at Olmar St, London SE1 5AY, operated by Berkeley Homes South East London Ltd",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    },
+    {
+     "claim": "No completion or move-in date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 557500,
+    "price_max": null,
+    "currency": "GBP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Bermondsey Place by Berkeley Homes South East London Ltd in Bermondsey, London SE1 (United Kingdom). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+   ],
+   "docs_listed": [
+    "New homes from GBP 557,500",
+    "Studios, 1, 2 and 3 bedroom apartments; phases named The Art House and The Art Mill",
+    "Page banner: \"Now 70% Sold\"",
+    "Sales and marketing suite at Olmar St, London SE1 5AY, operated by Berkeley Homes South East London Ltd",
+    "No completion or move-in date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "bermondsey-place"
+  },
+  {
+   "name": "Célere Sunrise",
+   "developer": "Vía Célere",
+   "area": "El Chaparral, Mijas, Málaga",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "under construction",
+   "url": "https://www.viacelere.com/en/project/sunrise/",
+   "docs_url": "https://www.viacelere.com/en/project/sunrise/",
+   "permit_number": null,
+   "seed": {
+    "price": 412100,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 77,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 46,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status \"In process\" with \"Works progress 77%\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
+    },
+    {
+     "claim": "Gated complex of 46 homes in two blocks; 2-bedroom homes of 97 m2 and 3-bedroom homes of 119 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
+    },
+    {
+     "claim": "Price from EUR 412,100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
+    },
+    {
+     "claim": "Address published as Aralia S/N, 29649 Mijas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom home",
+     "3-bedroom home"
+    ],
+    "size_min_m2": 97,
+    "size_max_m2": 119,
+    "price_min": 412100,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Célere Sunrise by Vía Célere in El Chaparral, Mijas, Málaga (Spain). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.viacelere.com/en/project/sunrise/"
+   ],
+   "docs_listed": [
+    "Status \"In process\" with \"Works progress 77%\"",
+    "Gated complex of 46 homes in two blocks; 2-bedroom homes of 97 m2 and 3-bedroom homes of 119 m2",
+    "Price from EUR 412,100",
+    "Address published as Aralia S/N, 29649 Mijas",
+    "No delivery date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "celere-sunrise"
+  },
+  {
+   "name": "Luz Altear",
+   "developer": "SOLYD Property Developers",
+   "area": "Lumiar, Lisbon",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "off-plan",
+   "url": "https://www.solyd.pt/en/luz-altear/",
+   "docs_url": "https://www.solyd.pt/en/luz-altear/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 165,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "165 residences across 5 blocks and 1 store; 1 to 5 bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/luz-altear/"
+    },
+    {
+     "claim": "Sales status shown as \"Under sale\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/luz-altear/"
+    },
+    {
+     "claim": "No completion date, price or licence number is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/luz-altear/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 5-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Luz Altear by SOLYD Property Developers in Lumiar, Lisbon (Portugal). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.solyd.pt/en/luz-altear/"
+   ],
+   "docs_listed": [
+    "165 residences across 5 blocks and 1 store; 1 to 5 bedrooms",
+    "Sales status shown as \"Under sale\"",
+    "No completion date, price or licence number is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "luz-altear"
+  },
+  {
+   "name": "Marina Village Residences (Visterija and Jasmin Residences)",
+   "developer": "Luštica Bay (Orascom Development Holding)",
+   "area": "Marina Village, Luštica Bay",
+   "country": "Montenegro",
+   "market": "Montenegro",
+   "stage": "off-plan",
+   "url": "https://marinavillage.lusticabay.com/",
+   "docs_url": "https://marinavillage.lusticabay.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 508000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": true,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "Interest-free plan with a 20% deposit, extended up to 2 years post delivery",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Visterija and Jasmin Residences are presented as the final residential phase of Marina Village",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    },
+    {
+     "claim": "Studios, 1 to 3-bedroom apartments and penthouses of 44 to 148 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    },
+    {
+     "claim": "Prices from EUR 508,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    },
+    {
+     "claim": "Interest-free payment plan with a 20% deposit, extended up to 2 years after delivery",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    },
+    {
+     "claim": "A 4% guaranteed return for 3 years is offered on some 2-bedroom units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://marinavillage.lusticabay.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 to 3-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 44,
+    "size_max_m2": 148,
+    "price_min": 508000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": 20,
+    "payment_plan": "Interest-free plan with a 20% deposit, extended up to 2 years post delivery",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Marina Village Residences (Visterija and Jasmin Residences) by Luštica Bay in Marina Village, Luštica Bay (Montenegro). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://marinavillage.lusticabay.com/"
+   ],
+   "docs_listed": [
+    "Visterija and Jasmin Residences are presented as the final residential phase of Marina Village",
+    "Studios, 1 to 3-bedroom apartments and penthouses of 44 to 148 m2",
+    "Prices from EUR 508,000",
+    "Interest-free payment plan with a 20% deposit, extended up to 2 years after delivery",
+    "A 4% guaranteed return for 3 years is offered on some 2-bedroom units",
+    "No delivery date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "marina-village-residences-visterija-and-jasmin-residences"
+  },
+  {
+   "name": "Thalassa Residences 2",
+   "developer": "Cybarco",
+   "area": "Limassol city centre",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "off-plan",
+   "url": "https://www.cybarco.com/project/thalassa-residences-2/",
+   "docs_url": "https://www.cybarco.com/project/thalassa-residences-2/",
+   "permit_number": null,
+   "seed": {
+    "price": 210000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 29,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label \"Newly Launched\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/thalassa-residences-2/"
+    },
+    {
+     "claim": "29 units: studios, one and two-bedroom apartments, 150 m from the sea",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/thalassa-residences-2/"
+    },
+    {
+     "claim": "Lowest listed unit price EUR 210,000 (a studio)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/thalassa-residences-2/"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/thalassa-residences-2/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 210000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Thalassa Residences 2 by Cybarco in Limassol city centre (Cyprus). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cybarco.com/project/thalassa-residences-2/"
+   ],
+   "docs_listed": [
+    "Status label \"Newly Launched\"",
+    "29 units: studios, one and two-bedroom apartments, 150 m from the sea",
+    "Lowest listed unit price EUR 210,000 (a studio)",
+    "No delivery date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "thalassa-residences-2"
+  },
+  {
+   "name": "Aktea Residences 4",
+   "developer": "Cybarco",
+   "area": "Limassol",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "under construction",
+   "url": "https://www.cybarco.com/project/aktea-residences-4/",
+   "docs_url": "https://www.cybarco.com/project/aktea-residences-4/",
+   "permit_number": null,
+   "seed": {
+    "price": 510000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 24,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Under construction\" on the developer projects page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/"
+    },
+    {
+     "claim": "24 city apartments with a communal swimming pool",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/aktea-residences-4/"
+    },
+    {
+     "claim": "Prices from EUR 510,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/aktea-residences-4/"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/aktea-residences-4/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 510000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Aktea Residences 4 by Cybarco in Limassol (Cyprus). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cybarco.com/project/",
+    "https://www.cybarco.com/project/aktea-residences-4/"
+   ],
+   "docs_listed": [
+    "24 city apartments with a communal swimming pool",
+    "Prices from EUR 510,000",
+    "No delivery date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "aktea-residences-4"
+  },
+  {
+   "name": "Trilogy Limassol Seafront",
+   "developer": "Cybarco",
+   "area": "Limassol seafront",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "under construction",
+   "url": "https://www.cybarco.com/project/trilogy-limassol-seafront/",
+   "docs_url": "https://www.cybarco.com/project/trilogy-limassol-seafront/",
+   "permit_number": null,
+   "seed": {
+    "price": 710000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 268,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer projects page shows \"Delivery November 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/"
+    },
+    {
+     "claim": "268 apartments (76 North Residences, 67 West tower, 125 East tower) and 52 offices",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/trilogy-limassol-seafront/"
+    },
+    {
+     "claim": "Prices from EUR 710,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/project/trilogy-limassol-seafront/"
+    },
+    {
+     "claim": "Developer news item titled \"The ultimate destination on road to completion\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cybarco.com/news/trilogy-on-its-road-to-completion/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "November 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "office"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 710000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Trilogy Limassol Seafront by Cybarco in Limassol seafront (Cyprus). Added from the official developer page: under construction; handover on record: November 2026. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cybarco.com/news/trilogy-on-its-road-to-completion/",
+    "https://www.cybarco.com/project/",
+    "https://www.cybarco.com/project/trilogy-limassol-seafront/"
+   ],
+   "docs_listed": [
+    "268 apartments (76 North Residences, 67 West tower, 125 East tower) and 52 offices",
+    "Prices from EUR 710,000"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "trilogy-limassol-seafront"
+  },
+  {
+   "name": "Isle Waterfront Newstead",
+   "developer": "Mirvac",
+   "area": "Newstead, Brisbane",
+   "country": "Australia",
+   "market": "Brisbane",
+   "stage": "under construction",
+   "url": "https://isle.mirvac.com/",
+   "docs_url": "https://isle.mirvac.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer page: \"completion anticipated November 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://isle.mirvac.com/"
+    },
+    {
+     "claim": "1, 2 and 3 bedroom residences and 3 and 4 bedroom pavilions; \"Final Collection Now Selling\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://isle.mirvac.com/"
+    },
+    {
+     "claim": "Developer news release headline: construction commences on the Isle apartments project in Brisbane",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mirvac.com/en/about/news-and-media/construction-commences-on-mirvacs-isle-apartments-project-in-brisbane-creating-new-green-urban-oasis"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "November 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 3-bedroom residence",
+     "3 to 4-bedroom pavilion"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Isle Waterfront Newstead by Mirvac in Newstead, Brisbane (Australia). Added from the official developer page: under construction; handover on record: November 2026. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://isle.mirvac.com/",
+    "https://www.mirvac.com/en/about/news-and-media/construction-commences-on-mirvacs-isle-apartments-project-in-brisbane-creating-new-green-urban-oasis"
+   ],
+   "docs_listed": [
+    "Developer page: \"completion anticipated November 2026\"",
+    "1, 2 and 3 bedroom residences and 3 and 4 bedroom pavilions; \"Final Collection Now Selling\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "isle-waterfront-newstead"
+  },
+  {
+   "name": "Sands Residences",
+   "developer": "SM Development Corporation (SMDC)",
+   "area": "Mall of Asia, Pasay City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "off-plan",
+   "url": "https://smdc.com/properties/heights/sands-residences/",
+   "docs_url": "https://smdc.com/properties/heights/sands-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": 6000000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status shown as \"Pre-selling\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smdc.com/properties/heights/sands-residences/"
+    },
+    {
+     "claim": "51-floor condominium with studio, 1-bedroom and 2-bedroom units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smdc.com/properties/heights/sands-residences/"
+    },
+    {
+     "claim": "Price range published as PHP 6,000,000 to PHP 17,500,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smdc.com/properties/heights/sands-residences/"
+    },
+    {
+     "claim": "No turnover date and no License to Sell number are printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smdc.com/properties/heights/sands-residences/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom",
+     "2-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 6000000,
+    "price_max": 17500000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Sands Residences by SM Development Corporation in Mall of Asia, Pasay City (Philippines). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://smdc.com/properties/heights/sands-residences/"
+   ],
+   "docs_listed": [
+    "Status shown as \"Pre-selling\"",
+    "51-floor condominium with studio, 1-bedroom and 2-bedroom units",
+    "Price range published as PHP 6,000,000 to PHP 17,500,000",
+    "No turnover date and no License to Sell number are printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "sands-residences"
+  },
+  {
+   "name": "SE.RUMA (Eco Sanctuary)",
+   "developer": "Eco Sanctuary Sdn. Bhd. (EcoWorld)",
+   "area": "Eco Sanctuary, Telok Panglima Garang, Kuala Langat, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma",
+   "docs_url": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma",
+   "permit_number": "14050-10/01-2028/0045(A)-(S)",
+   "seed": {
+    "price": 250000,
+    "currency": "MYR",
+    "title": "leasehold 99 years (expiry 09/11/2110)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "July 2029",
+    "permit_claim": true,
+    "permit_number": "14050-10/01-2028/0045(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 483,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected Completion Date: July 2029\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Serviced apartment, 483 units; leasehold 99 years expiring 09/11/2110",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Prices from RM250,000 to RM1,143,100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Developer licence no. 14050/10-2027/1055(A), valid 08/10/2022 to 07/10/2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Advertising and sales permit no. 14050-10/01-2028/0045(A)-(S), valid 16/01/2025 to 15/01/2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Building plan approval MPKL/JKB/2/2/15/2023(A)(12) issued by Majlis Perbandaran Kuala Langat",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    },
+    {
+     "claim": "Developer named as Eco Sanctuary Sdn. Bhd. (201401000413 (1076483-V))",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Eco Sanctuary Sdn. Bhd. (201401000413 (1076483-V))",
+    "construction_start": null,
+    "handover_promised": "July 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 250000,
+    "price_max": 1143100,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Perbandaran Kuala Langat (building plan approval, as published)"
+   },
+   "note": "SE.RUMA (Eco Sanctuary) by Eco Sanctuary Sdn. Bhd. in Eco Sanctuary, Telok Panglima Garang, Kuala Langat, Selangor (Malaysia). Added from the official developer page: off-plan; handover on record: July 2029. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ecoworld.my/ecosanctuary/?high-rise=se-ruma"
+   ],
+   "docs_listed": [
+    "\"Expected Completion Date: July 2029\"",
+    "Serviced apartment, 483 units; leasehold 99 years expiring 09/11/2110",
+    "Prices from RM250,000 to RM1,143,100",
+    "Developer licence no. 14050/10-2027/1055(A), valid 08/10/2022 to 07/10/2027",
+    "Advertising and sales permit no. 14050-10/01-2028/0045(A)-(S), valid 16/01/2025 to 15/01/2028",
+    "Building plan approval MPKL/JKB/2/2/15/2023(A)(12) issued by Majlis Perbandaran Kuala Langat"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "se-ruma-eco-sanctuary"
+  },
+  {
+   "name": "Serenity View",
+   "developer": "Cogedim (Altarea)",
+   "area": "234 Avenue de Sainte-Marguerite, 06200 Nice",
+   "country": "France",
+   "market": "French Riviera",
+   "stage": "off-plan",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html",
+   "permit_number": null,
+   "seed": {
+    "price": 325000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Livraison à partir du 4ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html"
+    },
+    {
+     "claim": "Status \"EN COMMERCIALISATION\"; apartments from 2 to 4 rooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html"
+    },
+    {
+     "claim": "Prices from EUR 325,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html"
+    },
+    {
+     "claim": "Address published: 234 Avenue de Sainte-Marguerite, 06200 Nice, with map coordinates",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 325000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.697044,
+    "lng": 7.199458,
+    "permit_authority": null
+   },
+   "note": "Serenity View by Cogedim in 234 Avenue de Sainte-Marguerite, 06200 Nice (France). Added from the official developer page: off-plan; handover on record: 2028-Q4. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/serenity-view-29427-1851483.html"
+   ],
+   "docs_listed": [
+    "\"Livraison à partir du 4ème trimestre 2028\"",
+    "Status \"EN COMMERCIALISATION\"; apartments from 2 to 4 rooms",
+    "Prices from EUR 325,000",
+    "Address published: 234 Avenue de Sainte-Marguerite, 06200 Nice, with map coordinates"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "serenity-view"
+  },
+  {
+   "name": "Les Terrasses d'Ella",
+   "developer": "Cogedim, in co-promotion with éleis",
+   "area": "45 Avenue de Grasse, 06800 Cagnes-sur-Mer",
+   "country": "France",
+   "market": "French Riviera",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html",
+   "permit_number": null,
+   "seed": {
+    "price": 270000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Livraison à partir du 2ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html"
+    },
+    {
+     "claim": "Status \"EN TRAVAUX\"; apartments from 2 to 3 rooms; co-promotion with éleis",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html"
+    },
+    {
+     "claim": "Price from EUR 270,000 in the page header (the page description gives EUR 247,501)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html"
+    },
+    {
+     "claim": "Address published: 45 Avenue de Grasse, 06800 Cagnes-sur-Mer, with map coordinates",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 3-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 270000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.658063,
+    "lng": 7.141486,
+    "permit_authority": null
+   },
+   "note": "Les Terrasses d'Ella by Cogedim, in co-promotion with éleis in 45 Avenue de Grasse, 06800 Cagnes-sur-Mer (France). Added from the official developer page: under construction; handover on record: 2028-Q2. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/cagnes-sur-mer/les-terrasses-della-23125-1851426.html"
+   ],
+   "docs_listed": [
+    "\"Livraison à partir du 2ème trimestre 2028\"",
+    "Status \"EN TRAVAUX\"; apartments from 2 to 3 rooms; co-promotion with éleis",
+    "Price from EUR 270,000 in the page header (the page description gives EUR 247,501)",
+    "Address published: 45 Avenue de Grasse, 06800 Cagnes-sur-Mer, with map coordinates"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "les-terrasses-d-ella"
+  },
+  {
+   "name": "Cove Edition 5 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubailand (Dubai Land Residence Complex), Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 47,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "50/50 plan (20% on booking, construction-linked instalments, 50% on completion in June 2027) or 3-year post-handover plan (30% after handover at 2.5% per quarter)",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"ESTIMATED COMPLETION DATE Q2 - 2027\"; the page FAQ says handover is scheduled for June 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 47 overall: substructure 100, superstructure 95, MEP works 22, finishing works 20",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+    },
+    {
+     "claim": "Studios, 1-bedroom and 2-bedroom apartments in a building of 2 basements, ground, 11 residential floors and rooftop",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+    },
+    {
+     "claim": "Payment plans published: 50/50, or 20% on booking with 30% paid over 3 years after handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+    },
+    {
+     "claim": "Map embedded on the developer page points to 25.08714, 55.38097",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "50/50 plan (20% on booking, construction-linked instalments, 50% on completion in June 2027) or 3-year post-handover plan (30% after handover at 2.5% per quarter)",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.08714,
+    "lng": 55.380974,
+    "permit_authority": null
+   },
+   "note": "Cove Edition 5 by Imtiaz by Imtiaz Developments in Dubailand (Dubai Land Residence Complex), Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q2. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/cove-edition-5-by-imtiaz"
+   ],
+   "docs_listed": [
+    "\"ESTIMATED COMPLETION DATE Q2 - 2027\"; the page FAQ says handover is scheduled for June 2027",
+    "Construction progress shown as 47 overall: substructure 100, superstructure 95, MEP works 22, finishing works 20",
+    "Studios, 1-bedroom and 2-bedroom apartments in a building of 2 basements, ground, 11 residential floors and rooftop",
+    "Payment plans published: 50/50, or 20% on booking with 30% paid over 3 years after handover",
+    "Map embedded on the developer page points to 25.08714, 55.38097"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "cove-edition-5-by-imtiaz"
+  },
+  {
+   "name": "Fioresta",
+   "developer": "AEDAS Homes",
+   "area": "Sector Nou Nazareth, San Juan de Alicante",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "under construction",
+   "url": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta",
+   "docs_url": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 51,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Las obras en Fioresta avanzan a muy buen ritmo.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta"
+    },
+    {
+     "claim": "51 new-build flats in two blocks with 2 and 3 bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta"
+    },
+    {
+     "claim": "Location published: corner of calle Cronista Isidro Buades and calle Pedagoga Amelia Asensi Beviá, Sector Nou Nazareth",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta"
+    },
+    {
+     "claim": "No delivery date or price is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom flat",
+     "3-bedroom flat"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Fioresta by AEDAS Homes in Sector Nou Nazareth, San Juan de Alicante (Spain). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.aedashomes.com/pisos-en-venta-en-alicante-obra-nueva-fioresta"
+   ],
+   "docs_listed": [
+    "\"Las obras en Fioresta avanzan a muy buen ritmo.\"",
+    "51 new-build flats in two blocks with 2 and 3 bedrooms",
+    "Location published: corner of calle Cronista Isidro Buades and calle Pedagoga Amelia Asensi Beviá, Sector Nou Nazareth",
+    "No delivery date or price is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "fioresta-costa-blanca"
+  },
+  {
+   "name": "MAIA Mont Kiara",
+   "developer": "Laser Tower Sdn. Bhd. (UEM Sunrise)",
+   "area": "Mont Kiara, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.uemsunrise.com/permit-and-licenses",
+   "docs_url": "https://www.uemsunrise.com/permit-and-licenses",
+   "permit_number": "30141-2/06-2029/0431(N)-(S)",
+   "seed": {
+    "price": 1841000,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2029",
+    "permit_claim": true,
+    "permit_number": "30141-2/06-2029/0431(N)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 495,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion: June 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Two 45-storey condominium blocks: Block A 247 units and Block B 248 units; freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Prices: Block A RM2,273,500 to RM3,563,500; Block B RM1,841,000 to RM3,869,750",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer licence no. 30141/08-2027/0140(A)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Advertising and sales permit no. 30141-2/06-2029/0431(N)-(S), valid 11/06/2026 to 10/06/2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Building plan approval BP T1 OSC 2025 4037 issued by Dewan Bandaraya Kuala Lumpur",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer named as Laser Tower Sdn. Bhd. (647615-T)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Laser Tower Sdn. Bhd. (647615-T)",
+    "construction_start": null,
+    "handover_promised": "June 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1841000,
+    "price_max": 3869750,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur (building plan approval, as published)"
+   },
+   "note": "MAIA Mont Kiara by Laser Tower Sdn. Bhd. in Mont Kiara, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: June 2029. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uemsunrise.com/permit-and-licenses"
+   ],
+   "docs_listed": [
+    "Expected date of completion: June 2029",
+    "Two 45-storey condominium blocks: Block A 247 units and Block B 248 units; freehold",
+    "Prices: Block A RM2,273,500 to RM3,563,500; Block B RM1,841,000 to RM3,869,750",
+    "Developer licence no. 30141/08-2027/0140(A)",
+    "Advertising and sales permit no. 30141-2/06-2029/0431(N)-(S), valid 11/06/2026 to 10/06/2029",
+    "Building plan approval BP T1 OSC 2025 4037 issued by Dewan Bandaraya Kuala Lumpur"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "maia-mont-kiara"
+  },
+  {
+   "name": "The Connaught One",
+   "developer": "UEM Land Bhd. (UEM Sunrise)",
+   "area": "Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.uemsunrise.com/permit-and-licenses",
+   "docs_url": "https://www.uemsunrise.com/permit-and-licenses",
+   "permit_number": "10555-15/03-2026/0267(N)-(S)",
+   "seed": {
+    "price": 419860,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2027",
+    "permit_claim": true,
+    "permit_number": "10555-15/03-2026/0267(N)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1334,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion: Nov 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Block A 677 units and Block B 657 units; freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Prices: Block A RM419,860 to RM1,003,610; Block B RM581,110 to RM1,007,360",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer licence no. 10555/09-2026/0712(A)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Advertising and sales permit no. 10555-15/03-2026/0267(N)-(S), validity listed as 14/03/2023 to 13/03/2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Building plan approval DBKL.JKB.BP S2 OSC 2025 0146(26) issued by Dewan Bandaraya Kuala Lumpur",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer named as UEM Land Bhd. 198201011169 (90894-P)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "UEM Land Bhd. 198201011169 (90894-P)",
+    "construction_start": null,
+    "handover_promised": "November 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 419860,
+    "price_max": 1007360,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur (building plan approval, as published)"
+   },
+   "note": "The Connaught One by UEM Land Bhd. in Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: November 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uemsunrise.com/permit-and-licenses"
+   ],
+   "docs_listed": [
+    "Expected date of completion: Nov 2027",
+    "Block A 677 units and Block B 657 units; freehold",
+    "Prices: Block A RM419,860 to RM1,003,610; Block B RM581,110 to RM1,007,360",
+    "Developer licence no. 10555/09-2026/0712(A)",
+    "Advertising and sales permit no. 10555-15/03-2026/0267(N)-(S), validity listed as 14/03/2023 to 13/03/2026",
+    "Building plan approval DBKL.JKB.BP S2 OSC 2025 0146(26) issued by Dewan Bandaraya Kuala Lumpur"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-connaught-one"
+  },
+  {
+   "name": "Residensi ZIG",
+   "developer": "Mega Legacy (M) Sdn. Bhd. (UEM Sunrise)",
+   "area": "Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.uemsunrise.com/permit-and-licenses",
+   "docs_url": "https://www.uemsunrise.com/permit-and-licenses",
+   "permit_number": "7466-5/06-2026/0721(A)-(S)",
+   "seed": {
+    "price": 402960,
+    "currency": "MYR",
+    "title": "leasehold 99 years (expiring 29 December 2112)",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2027",
+    "permit_claim": true,
+    "permit_number": "7466-5/06-2026/0721(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1126,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion: November 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "1,126 units; leasehold 99 years expiring on 29 December 2112",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Prices from RM402,960 to RM1,080,960",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer licence no. 7466/12-2025/1536(A), validity listed as 15/12/2022 to 14/12/2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Advertising and sales permit no. 7466-5/06-2026/0721(A)-(S), validity listed as 20/06/2023 to 19/06/2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Building plan approval BP U1 OSC 2022 2268 (19) issued by Dewan Bandaraya Kuala Lumpur",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer named as Mega Legacy (M) Sdn. Bhd. 199401018743 (304422-K)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Mega Legacy (M) Sdn. Bhd. 199401018743 (304422-K)",
+    "construction_start": null,
+    "handover_promised": "November 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 402960,
+    "price_max": 1080960,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur (building plan approval, as published)"
+   },
+   "note": "Residensi ZIG by Mega Legacy in Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: November 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uemsunrise.com/permit-and-licenses"
+   ],
+   "docs_listed": [
+    "Expected date of completion: November 2027",
+    "1,126 units; leasehold 99 years expiring on 29 December 2112",
+    "Prices from RM402,960 to RM1,080,960",
+    "Developer licence no. 7466/12-2025/1536(A), validity listed as 15/12/2022 to 14/12/2025",
+    "Advertising and sales permit no. 7466-5/06-2026/0721(A)-(S), validity listed as 20/06/2023 to 19/06/2026",
+    "Building plan approval BP U1 OSC 2022 2268 (19) issued by Dewan Bandaraya Kuala Lumpur"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "residensi-zig"
+  },
+  {
+   "name": "XT 10 Ekkamai",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Sukhumvit 63 (Ekkamai Road), Bangkok",
+   "country": "Thailand",
+   "market": "Bangkok",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/condominium/xt-10ekkamai/en/",
+   "docs_url": "https://www.sansiri.com/condominium/xt-10ekkamai/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "February 2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 10,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 933,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: February 2029\"; overall construction progress 10%, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "29 storeys and 933 units, between Ekkamai Soi 10 and 12",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/xt-10ekkamai/en/"
+    },
+    {
+     "claim": "Map link on the developer page points to 13.7337829, 100.5843811",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/xt-10ekkamai/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "February 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom",
+     "2-bedroom",
+     "3-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 13.733783,
+    "lng": 100.584381,
+    "permit_authority": null
+   },
+   "note": "XT 10 Ekkamai by Sansiri in Sukhumvit 63 (Ekkamai Road), Bangkok (Thailand). Added from the official developer page: under construction; handover on record: February 2029. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/condominium/xt-10ekkamai/en/",
+    "https://www.sansiri.com/projectprogress/en/"
+   ],
+   "docs_listed": [
+    "29 storeys and 933 units, between Ekkamai Soi 10 and 12",
+    "Map link on the developer page points to 13.7337829, 100.5843811"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "xt-10-ekkamai"
+  },
+  {
+   "name": "LOVE Charoen Nakhon",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Charoen Nakhon, Bangkok",
+   "country": "Thailand",
+   "market": "Bangkok",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "February 2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 15,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: February 2029\"; overall construction progress 15%, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "The progress page does not print the address, unit count or price",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "February 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "LOVE Charoen Nakhon by Sansiri in Charoen Nakhon, Bangkok (Thailand). Added from the official developer page: under construction; handover on record: February 2029. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: February 2029\"; overall construction progress 15%, updated 10 November 2026",
+    "The progress page does not print the address, unit count or price"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "love-charoen-nakhon"
+  },
+  {
+   "name": "THE BASE Wongsawang",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Wongsawang, Bangkok",
+   "country": "Thailand",
+   "market": "Bangkok",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 72,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: June 2027\"; overall construction progress 72%, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "The progress page does not print the address, unit count or price",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "June 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "THE BASE Wongsawang by Sansiri in Wongsawang, Bangkok (Thailand). Added from the official developer page: under construction; handover on record: June 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: June 2027\"; overall construction progress 72%, updated 10 November 2026",
+    "The progress page does not print the address, unit count or price"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-base-wongsawang"
+  },
+  {
+   "name": "dcondo cove Phuket",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Phuket",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 41,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: September 2027\"; overall construction progress 41%, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "The progress page does not print the address, unit count or price",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "September 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "dcondo cove Phuket by Sansiri in Phuket (Thailand). Added from the official developer page: under construction; handover on record: September 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: September 2027\"; overall construction progress 41%, updated 10 November 2026",
+    "The progress page does not print the address, unit count or price"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "dcondo-cove-phuket"
+  },
+  {
+   "name": "Wickside",
+   "developer": "Galliard Homes",
+   "area": "Hackney Wick, London E9 5HH",
+   "country": "United Kingdom",
+   "market": "London",
+   "stage": "off-plan",
+   "url": "https://www.galliardhomes.com/wickside",
+   "docs_url": "https://www.galliardhomes.com/wickside",
+   "permit_number": null,
+   "seed": {
+    "price": 499000,
+    "currency": "GBP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Off-plan\" in Hackney Wick, E9 5HH, with prices from GBP 499,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.galliardhomes.com/galliard-developments?registerPopup=1"
+    },
+    {
+     "claim": "Listed among new developments in London with prices from GBP 499,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.galliardhomes.com/property/new-developments-london"
+    },
+    {
+     "claim": "No completion date is printed on the developer listing pages we read",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.galliardhomes.com/galliard-developments?registerPopup=1"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 499000,
+    "price_max": null,
+    "currency": "GBP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Wickside by Galliard Homes in Hackney Wick, London E9 5HH (United Kingdom). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.galliardhomes.com/galliard-developments?registerPopup=1",
+    "https://www.galliardhomes.com/property/new-developments-london",
+    "https://www.galliardhomes.com/wickside"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "wickside-london"
+  },
+  {
+   "name": "St Paul's Quarter",
+   "developer": "Galliard Homes",
+   "area": "Birmingham B3 1TH",
+   "country": "United Kingdom",
+   "market": "Birmingham",
+   "stage": "off-plan",
+   "url": "https://www.galliardhomes.com/st-pauls-quarter",
+   "docs_url": "https://www.galliardhomes.com/st-pauls-quarter",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Coming soon\" in Birmingham, B3 1TH",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.galliardhomes.com/galliard-developments?registerPopup=1"
+    },
+    {
+     "claim": "No price or completion date is printed on the developer listing page we read",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.galliardhomes.com/galliard-developments?registerPopup=1"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "St Paul's Quarter by Galliard Homes in Birmingham B3 1TH (United Kingdom). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.galliardhomes.com/galliard-developments?registerPopup=1",
+    "https://www.galliardhomes.com/st-pauls-quarter"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "st-paul-s-quarter"
+  },
+  {
+   "name": "June",
+   "developer": "SODIC",
+   "area": "Ras El Hekma, North Coast",
+   "country": "Egypt",
+   "market": "Egypt",
+   "stage": "under construction",
+   "url": "https://www.sodic.com/our-developments/june",
+   "docs_url": "https://www.sodic.com/our-developments/june",
+   "permit_number": null,
+   "seed": {
+    "price": 25204000,
+    "currency": "EGP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2030-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Delivery dates published per phase: Aqua Lagoons \"Q3 2030\", Water Chalets \"Q3 2029\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/june"
+    },
+    {
+     "claim": "Chalets of 101 to 237 m2; the page also mentions villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/june"
+    },
+    {
+     "claim": "Price from EGP 25,204,000; Aqua Lagoons starting price EGP 30,049,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/june"
+    },
+    {
+     "claim": "Construction section reports ongoing works in several parcels",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/june"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2030-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "chalet",
+     "water chalet"
+    ],
+    "size_min_m2": 101,
+    "size_max_m2": 237,
+    "price_min": 25204000,
+    "price_max": null,
+    "currency": "EGP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "June by SODIC in Ras El Hekma, North Coast (Egypt). Added from the official developer page: under construction; handover on record: 2030-Q3. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sodic.com/our-developments/june"
+   ],
+   "docs_listed": [
+    "Delivery dates published per phase: Aqua Lagoons \"Q3 2030\", Water Chalets \"Q3 2029\"",
+    "Chalets of 101 to 237 m2; the page also mentions villas",
+    "Price from EGP 25,204,000; Aqua Lagoons starting price EGP 30,049,000",
+    "Construction section reports ongoing works in several parcels"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "june-egypt"
+  },
+  {
+   "name": "Caesar",
+   "developer": "SODIC",
+   "area": "Ras El Hekma, North Coast",
+   "country": "Egypt",
+   "market": "Egypt",
+   "stage": "under construction",
+   "url": "https://www.sodic.com/our-developments/caesar",
+   "docs_url": "https://www.sodic.com/our-developments/caesar",
+   "permit_number": null,
+   "seed": {
+    "price": 27530000,
+    "currency": "EGP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Townhomes and villas of 141 to 546 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/caesar"
+    },
+    {
+     "claim": "Starting price EGP 27,530,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/caesar"
+    },
+    {
+     "claim": "The page has a construction progress section with a Q1 2026 update",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/caesar"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/caesar"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "townhome",
+     "villa"
+    ],
+    "size_min_m2": 141,
+    "size_max_m2": 546,
+    "price_min": 27530000,
+    "price_max": null,
+    "currency": "EGP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Caesar by SODIC in Ras El Hekma, North Coast (Egypt). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sodic.com/our-developments/caesar"
+   ],
+   "docs_listed": [
+    "Townhomes and villas of 141 to 546 m2",
+    "Starting price EGP 27,530,000",
+    "The page has a construction progress section with a Q1 2026 update",
+    "No delivery date is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "caesar-egypt"
+  },
+  {
+   "name": "255 East 77th Street",
+   "developer": "Naftali Group",
+   "area": "255 East 77th Street (also 1481 Second Avenue), Lenox Hill, Manhattan",
+   "country": "USA",
+   "market": "New York",
+   "stage": "under construction",
+   "url": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/",
+   "docs_url": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 62,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion \"slated for fall 2026, as noted on site\" (article dated 28 May 2024, republished on the developer site)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/"
+    },
+    {
+     "claim": "36-story residential tower with 62 condominium units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/"
+    },
+    {
+     "claim": "Foundations were progressing in May 2024",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/"
+    },
+    {
+     "claim": "Pin: 255 East 77th Street geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 40.772522,
+    "lng": -73.956982,
+    "permit_authority": null
+   },
+   "note": "255 East 77th Street by Naftali Group in 255 East 77th Street (also 1481 Second Avenue), Lenox Hill, Manhattan (USA). Added from the official developer page: under construction; handover on record: 2026. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://naftaligroup.com/press/foundations-underway-for-ramsas-255-east-77th-street-on-manhattans-upper-east-side/"
+   ],
+   "docs_listed": [
+    "Completion \"slated for fall 2026, as noted on site\" (article dated 28 May 2024, republished on the developer site)",
+    "36-story residential tower with 62 condominium units",
+    "Foundations were progressing in May 2024",
+    "Pin: 255 East 77th Street geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "255-east-77th-street"
+  },
+  {
+   "name": "The Courtyards (The Ellinikon, Little Athens)",
+   "developer": "LAMDA Development",
+   "area": "Little Athens, The Ellinikon, Athens Riviera",
+   "country": "Greece",
+   "market": "Greece",
+   "stage": "off-plan",
+   "url": "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards",
+   "docs_url": "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2030-H1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 324,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"ESTIMATED COMPLETION DATE: EAST & WEST PLOTS: H1 2030\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards"
+    },
+    {
+     "claim": "Eleven-building residential complex with 324 residences of 1 to 4 bedrooms, 350 metres from the sea",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards"
+    },
+    {
+     "claim": "Availability shown as \"ON THE MARKET\"; designed by AUDO",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2030-H1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Courtyards (The Ellinikon, Little Athens) by LAMDA Development in Little Athens, The Ellinikon, Athens Riviera (Greece). Added from the official developer page: off-plan; handover on record: 2030-H1. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://theellinikon.com.gr/en/residences/little-athens/the-courtyards"
+   ],
+   "docs_listed": [
+    "\"ESTIMATED COMPLETION DATE: EAST & WEST PLOTS: H1 2030\"",
+    "Eleven-building residential complex with 324 residences of 1 to 4 bedrooms, 350 metres from the sea",
+    "Availability shown as \"ON THE MARKET\"; designed by AUDO"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-courtyards-the-ellinikon-little-athens"
+  },
+  {
+   "name": "Pavilion Terraces (The Ellinikon, Little Athens)",
+   "developer": "LAMDA Development",
+   "area": "Little Athens, The Ellinikon, Athens Riviera",
+   "country": "Greece",
+   "market": "Greece",
+   "stage": "off-plan",
+   "url": "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces",
+   "docs_url": "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-H1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 156,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"ESTIMATED COMPLETION DATE: H1 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces"
+    },
+    {
+     "claim": "Complex of seven buildings with 156 residences of 1 to 5 bedrooms, 300 metres from the sea",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces"
+    },
+    {
+     "claim": "Availability shown as \"SOLD OUT\"; designed by 314 Architecture Studio",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-H1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 5-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Pavilion Terraces (The Ellinikon, Little Athens) by LAMDA Development in Little Athens, The Ellinikon, Athens Riviera (Greece). Added from the official developer page: off-plan; handover on record: 2028-H1. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://theellinikon.com.gr/en/residences/little-athens/pavilion-terraces"
+   ],
+   "docs_listed": [
+    "\"ESTIMATED COMPLETION DATE: H1 2028\"",
+    "Complex of seven buildings with 156 residences of 1 to 5 bedrooms, 300 metres from the sea",
+    "Availability shown as \"SOLD OUT\"; designed by 314 Architecture Studio"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "pavilion-terraces-the-ellinikon-little-athens"
+  },
+  {
+   "name": "Trump Tower Jeddah",
+   "developer": "Dar Global (DarGlobal Holdings Real Estate)",
+   "area": "Jeddah Corniche, Jeddah",
+   "country": "Saudi Arabia",
+   "market": "Saudi Arabia",
+   "stage": "under construction",
+   "url": "https://darglobal.co.uk/trump-tower-jeddah",
+   "docs_url": "https://darglobal.co.uk/trump-tower-jeddah",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Completion is scheduled for December 2029.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/trump-tower-jeddah"
+    },
+    {
+     "claim": "47 floors; 1 to 4-bedroom apartments and 3 to 4-bedroom penthouses of 70 to 365 sqm",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/trump-tower-jeddah"
+    },
+    {
+     "claim": "Developer press release headline: Dar Global breaks ground on Trump Tower Jeddah and appoints SIFCO for enabling works",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/press/darglobal-breaks-ground-on-trump-tower-jeddah"
+    },
+    {
+     "claim": "No price and no off-plan sales licence number are printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/trump-tower-jeddah"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "DarGlobal Holdings Real Estate",
+    "construction_start": null,
+    "handover_promised": "December 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 70,
+    "size_max_m2": 365,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Trump Tower Jeddah by Dar Global in Jeddah Corniche, Jeddah (Saudi Arabia). Added from the official developer page: under construction; handover on record: December 2029. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://darglobal.co.uk/press/darglobal-breaks-ground-on-trump-tower-jeddah",
+    "https://darglobal.co.uk/trump-tower-jeddah"
+   ],
+   "docs_listed": [
+    "\"Completion is scheduled for December 2029.\"",
+    "47 floors; 1 to 4-bedroom apartments and 3 to 4-bedroom penthouses of 70 to 365 sqm",
+    "No price and no off-plan sales licence number are printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "trump-tower-jeddah"
+  },
+  {
+   "name": "Itzaé Tulum",
+   "developer": "Grupo CISA (ITZAE Desarrollo Inmobiliario)",
+   "area": "La Veleta, Tulum, Quintana Roo",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "under construction",
+   "url": "https://www.itzaetulum.com/",
+   "docs_url": "https://www.itzaetulum.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 2400000,
+    "currency": "MXN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 70,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Presale apartments with \"Mas del 70% de avance\" (an image caption on the same page says 50%)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
+    },
+    {
+     "claim": "Five unit types of 48 to 135 m2 with 1 or 2 bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
+    },
+    {
+     "claim": "Prices from MXN 2.4 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
+    },
+    {
+     "claim": "Address published: C. 14 Sur 102, La Veleta, 77760 Tulum, Q.R.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
+    },
+    {
+     "claim": "No delivery date or permit number is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 48,
+    "size_max_m2": 135,
+    "price_min": 2400000,
+    "price_max": null,
+    "currency": "MXN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Itzaé Tulum by Grupo CISA in La Veleta, Tulum, Quintana Roo (Mexico). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.itzaetulum.com/"
+   ],
+   "docs_listed": [
+    "Presale apartments with \"Mas del 70% de avance\" (an image caption on the same page says 50%)",
+    "Five unit types of 48 to 135 m2 with 1 or 2 bedrooms",
+    "Prices from MXN 2.4 million",
+    "Address published: C. 14 Sur 102, La Veleta, 77760 Tulum, Q.R.",
+    "No delivery date or permit number is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "itzae-tulum"
+  },
+  {
+   "name": "Inspire UpTown",
+   "developer": "EuroMilano S.p.A.",
+   "area": "UpTown Milano (between MIND and San Siro), Milan",
+   "country": "Italy",
+   "market": "Italy",
+   "stage": "under construction",
+   "url": "https://www.uptown-milano.it/it/inspire",
+   "docs_url": "https://www.uptown-milano.it/it/inspire",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Delivery year published as 2027 (\"anno di consegna\")",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uptown-milano.it/it/inspire"
+    },
+    {
+     "claim": "Status \"In costruzione\"; five buildings with two, three and four-room apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uptown-milano.it/it/inspire"
+    },
+    {
+     "claim": "Energy class A, nZEB",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uptown-milano.it/it/inspire"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "two-room apartment",
+     "three-room apartment",
+     "four-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Inspire UpTown by EuroMilano S.p.A. in UpTown Milano (between MIND and San Siro), Milan (Italy). Added from the official developer page: under construction; handover on record: 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uptown-milano.it/it/inspire"
+   ],
+   "docs_listed": [
+    "Delivery year published as 2027 (\"anno di consegna\")",
+    "Status \"In costruzione\"; five buildings with two, three and four-room apartments",
+    "Energy class A, nZEB"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "inspire-uptown"
+  },
+  {
+   "name": "m² at Mtatsminda Park",
+   "developer": "m² (m2 Group)",
+   "area": "20 Innovation Str., Okrokana, Tbilisi",
+   "country": "Georgia",
+   "market": "Georgia",
+   "stage": "under construction",
+   "url": "https://m2.ge/en/projects/m2-mtatsmindis-parktan",
+   "docs_url": "https://m2.ge/en/projects/m2-mtatsmindis-parktan",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 190,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"COMPLETION DATE 2026\"; construction deadline for Buildings I to VI given as 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
+    },
+    {
+     "claim": "Six five-story buildings with 190 apartments, 118 marked sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
+    },
+    {
+     "claim": "Listed under current projects at 20 Innovation Str., Okrokana, near Mtatsminda Park",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "duplex"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "m² at Mtatsminda Park by m² in 20 Innovation Str., Okrokana, Tbilisi (Georgia). Added from the official developer page: under construction; handover on record: 2026. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
+   ],
+   "docs_listed": [
+    "\"COMPLETION DATE 2026\"; construction deadline for Buildings I to VI given as 2026",
+    "Six five-story buildings with 190 apartments, 118 marked sold",
+    "Listed under current projects at 20 Innovation Str., Okrokana, near Mtatsminda Park"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "m2-at-mtatsminda-park"
+  },
+  {
+   "name": "ICONICA",
+   "developer": "Meriton",
+   "area": "152 Esplanade, Surfers Paradise, Queensland",
+   "country": "Australia",
+   "market": "Gold Coast",
+   "stage": "under construction",
+   "url": "https://www.meriton.com.au/residential-buy/iconica/",
+   "docs_url": "https://www.meriton.com.au/residential-buy/iconica/",
+   "permit_number": null,
+   "seed": {
+    "price": 950000,
+    "currency": "AUD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion published as \"Due 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/iconica/"
+    },
+    {
+     "claim": "Two towers of 51 and 77 storeys; 1 to 4-bedroom apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/iconica/"
+    },
+    {
+     "claim": "Prices from AUD 950,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/iconica/"
+    },
+    {
+     "claim": "The developer states that all its projects are DA-approved and under construction prior to selling",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/iconica/"
+    },
+    {
+     "claim": "Pin: 152 Esplanade geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/iconica/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 950000,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -27.99209,
+    "lng": 153.430073,
+    "permit_authority": null
+   },
+   "note": "ICONICA by Meriton in 152 Esplanade, Surfers Paradise, Queensland (Australia). Added from the official developer page: under construction; handover on record: 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.meriton.com.au/residential-buy/iconica/"
+   ],
+   "docs_listed": [
+    "Completion published as \"Due 2027\"",
+    "Two towers of 51 and 77 storeys; 1 to 4-bedroom apartments",
+    "Prices from AUD 950,000",
+    "The developer states that all its projects are DA-approved and under construction prior to selling",
+    "Pin: 152 Esplanade geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "iconica-gold-coast"
+  },
+  {
+   "name": "The Carling",
+   "developer": "Meriton",
+   "area": "263-281 Pennant Hills Road, Carlingford, New South Wales",
+   "country": "Australia",
+   "market": "Sydney",
+   "stage": "under construction",
+   "url": "https://www.meriton.com.au/residential-buy/the-carling/",
+   "docs_url": "https://www.meriton.com.au/residential-buy/the-carling/",
+   "permit_number": null,
+   "seed": {
+    "price": 525000,
+    "currency": "AUD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 223,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Due for completion in 2027.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/the-carling/"
+    },
+    {
+     "claim": "Master-planned community of seven residential towers; this second release has 223 residences over 29 levels",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/the-carling/"
+    },
+    {
+     "claim": "Prices from AUD 525,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/the-carling/"
+    },
+    {
+     "claim": "The developer states that its projects are under construction prior to selling",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/the-carling/"
+    },
+    {
+     "claim": "Pin: 263 Pennant Hills Road geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/the-carling/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 525000,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -33.780815,
+    "lng": 151.050851,
+    "permit_authority": null
+   },
+   "note": "The Carling by Meriton in 263-281 Pennant Hills Road, Carlingford, New South Wales (Australia). Added from the official developer page: under construction; handover on record: 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.meriton.com.au/residential-buy/the-carling/"
+   ],
+   "docs_listed": [
+    "\"Due for completion in 2027.\"",
+    "Master-planned community of seven residential towers; this second release has 223 residences over 29 levels",
+    "Prices from AUD 525,000",
+    "The developer states that its projects are under construction prior to selling",
+    "Pin: 263 Pennant Hills Road geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-carling"
+  },
+  {
+   "name": "Zetland Square",
+   "developer": "Meriton",
+   "area": "905 South Dowling Street, Zetland, New South Wales 2017",
+   "country": "Australia",
+   "market": "Sydney",
+   "stage": "off-plan",
+   "url": "https://www.meriton.com.au/residential-buy/zetland-square/",
+   "docs_url": "https://www.meriton.com.au/residential-buy/zetland-square/",
+   "permit_number": null,
+   "seed": {
+    "price": 745000,
+    "currency": "AUD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Due for completion in late 2028.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/zetland-square/"
+    },
+    {
+     "claim": "25-storey tower sold off the plan, with 1 to 4-bedroom apartments and 28 terrace homes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/zetland-square/"
+    },
+    {
+     "claim": "Prices from AUD 745,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.meriton.com.au/residential-buy/zetland-square/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment",
+     "townhouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 745000,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Zetland Square by Meriton in 905 South Dowling Street, Zetland, New South Wales 2017 (Australia). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.meriton.com.au/residential-buy/zetland-square/"
+   ],
+   "docs_listed": [
+    "\"Due for completion in late 2028.\"",
+    "25-storey tower sold off the plan, with 1 to 4-bedroom apartments and 28 terrace homes",
+    "Prices from AUD 745,000"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "zetland-square"
+  },
+  {
+   "name": "LUMIÈRE Midtown",
+   "developer": "Masterise Homes",
+   "area": "The Global City, Do Xuan Hop Street, Binh Trung Ward, Ho Chi Minh City",
+   "country": "Vietnam",
+   "market": "Ho Chi Minh City",
+   "stage": "off-plan",
+   "url": "https://masterisehomes.com/the-global-city/lumiere-midtown/en/",
+   "docs_url": "https://masterisehomes.com/the-global-city/lumiere-midtown/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 808,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Estimated Handover\" 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://masterisehomes.com/the-global-city/lumiere-midtown/en/"
+    },
+    {
+     "claim": "2 towers with 2 basements, 4 podium floors and 23 residential floors; 808 apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://masterisehomes.com/the-global-city/lumiere-midtown/en/"
+    },
+    {
+     "claim": "\"50-year ownership for foreign nationals\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://masterisehomes.com/the-global-city/lumiere-midtown/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1BR",
+     "2BR",
+     "3BR",
+     "4BR",
+     "penthouse",
+     "duplex"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "50-year ownership for foreign nationals (as published)",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "LUMIÈRE Midtown by Masterise Homes in The Global City, Do Xuan Hop Street, Binh Trung Ward, Ho Chi Minh City (Vietnam). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://masterisehomes.com/the-global-city/lumiere-midtown/en/"
+   ],
+   "docs_listed": [
+    "\"Estimated Handover\" 2027",
+    "2 towers with 2 basements, 4 podium floors and 23 residential floors; 808 apartments",
+    "\"50-year ownership for foreign nationals\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "lumiere-midtown"
+  },
+  {
+   "name": "Villa Miami",
+   "developer": "Terra (project entity 710 Edge Property LLC)",
+   "area": "Edgewater, Miami",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "off-plan",
+   "url": "https://www.terragroup.com/projects/villa-miami",
+   "docs_url": "https://www.terragroup.com/projects/villa-miami",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 49,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected Completion\" 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/villa-miami"
+    },
+    {
+     "claim": "55-story tower with 49 residences in Edgewater",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/villa-miami"
+    },
+    {
+     "claim": "Project entity listed as 710 Edge Property LLC",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/villa-miami"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "710 Edge Property LLC",
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Villa Miami by Terra in Edgewater, Miami (USA). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.terragroup.com/projects/villa-miami"
+   ],
+   "docs_listed": [
+    "\"Expected Completion\" 2027",
+    "55-story tower with 49 residences in Edgewater",
+    "Project entity listed as 710 Edge Property LLC"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "villa-miami"
+  },
+  {
+   "name": "THE WELL Coconut Grove",
+   "developer": "Terra with AB Asset Management (project entity AB CG Owner, LLC)",
+   "area": "Coconut Grove, Miami",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "off-plan",
+   "url": "https://www.terragroup.com/projects/the-well-coconut-grove",
+   "docs_url": "https://www.terragroup.com/projects/the-well-coconut-grove",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 194,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected Completion\" 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/the-well-coconut-grove"
+    },
+    {
+     "claim": "194 residences across 8 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/the-well-coconut-grove"
+    },
+    {
+     "claim": "Partner listed on the developer page: AB Asset Management",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.terragroup.com/projects/the-well-coconut-grove"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "THE WELL Coconut Grove by Terra with AB Asset Management in Coconut Grove, Miami (USA). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.terragroup.com/projects/the-well-coconut-grove"
+   ],
+   "docs_listed": [
+    "\"Expected Completion\" 2028",
+    "194 residences across 8 floors",
+    "Partner listed on the developer page: AB Asset Management"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "the-well-coconut-grove"
+  },
+  {
+   "name": "Olana Naples Residences",
+   "developer": "Kolter Urban with BH Group",
+   "area": "294 14th Avenue South, Naples, Florida",
+   "country": "USA",
+   "market": "Naples",
+   "stage": "off-plan",
+   "url": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/",
+   "docs_url": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/",
+   "permit_number": null,
+   "seed": {
+    "price": 30000000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 12,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "12 estate-sized residences of more than 10,000 square feet each, priced from USD 30 million (article dated 31 March 2025, republished on the developer site)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/"
+    },
+    {
+     "claim": "Address given as 294 14th Avenue South; the sales gallery had opened",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/"
+    },
+    {
+     "claim": "Listed among projects in development on the developer portfolio page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kolterurban.com/portfolio-in-development/"
+    },
+    {
+     "claim": "No completion date is printed on the developer pages we read",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/"
+    },
+    {
+     "claim": "Pin: 294 14th Avenue South geocoded with OpenStreetMap Nominatim (address-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "5-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 30000000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 26.129548,
+    "lng": -81.802041,
+    "permit_authority": null
+   },
+   "note": "Olana Naples Residences by Kolter Urban with BH Group in 294 14th Avenue South, Naples, Florida (USA). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.kolterurban.com/kolter-urban-unveils-ultra-luxury-beachfront-residences-in-naples/",
+    "https://www.kolterurban.com/portfolio-in-development/"
+   ],
+   "docs_listed": [
+    "12 estate-sized residences of more than 10,000 square feet each, priced from USD 30 million (article dated 31 March 2025, republished on the developer site)",
+    "Address given as 294 14th Avenue South; the sales gallery had opened",
+    "No completion date is printed on the developer pages we read",
+    "Pin: 294 14th Avenue South geocoded with OpenStreetMap Nominatim (address-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "olana-naples-residences"
+  },
+  {
+   "name": "Harbor 171 Torre Norte",
+   "developer": "Not named on the project site (exclusive marketer Domus Vallarta Inmobiliaria)",
+   "area": "Zona Hotelera, Las Glorias, Puerto Vallarta, Jalisco",
+   "country": "Mexico",
+   "market": "Puerto Vallarta",
+   "stage": "off-plan",
+   "url": "https://harbor171.com/es",
+   "docs_url": "https://harbor171.com/es",
+   "permit_number": null,
+   "seed": {
+    "price": 647080,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Presale (\"en preventa\") of beachfront condos; studios and 1 to 3-bedroom units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://harbor171.com/es"
+    },
+    {
+     "claim": "Price from USD 647,080",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://harbor171.com/es"
+    },
+    {
+     "claim": "Address published: Febronio Uribe 171, Zona Hotelera, Las Glorias, 48333 Puerto Vallarta",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://harbor171.com/es"
+    },
+    {
+     "claim": "Final payment is due at deed signing and delivery of the unit; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://harbor171.com/es"
+    },
+    {
+     "claim": "The project site does not name the developer; Domus Vallarta Inmobiliaria is named as exclusive marketer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://harbor171.com/es"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom",
+     "2-bedroom",
+     "3-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 647080,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Harbor 171 Torre Norte in Zona Hotelera, Las Glorias, Puerto Vallarta, Jalisco (Mexico). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://harbor171.com/es"
+   ],
+   "docs_listed": [
+    "Presale (\"en preventa\") of beachfront condos; studios and 1 to 3-bedroom units",
+    "Price from USD 647,080",
+    "Address published: Febronio Uribe 171, Zona Hotelera, Las Glorias, 48333 Puerto Vallarta",
+    "Final payment is due at deed signing and delivery of the unit; no delivery date is printed",
+    "The project site does not name the developer; Domus Vallarta Inmobiliaria is named as exclusive marketer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "harbor-171-torre-norte"
+  },
+  {
+   "name": "SAMANA Resorts",
+   "developer": "SAMANA Developers",
+   "area": "Dubai Production City, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-resorts",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-resorts",
+   "permit_number": null,
+   "seed": {
+    "price": 1300000,
+    "currency": "AED",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "As previously offered: 15% or 20% booking, 1% per month during construction, further instalments after handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Handover at SAMANA Resorts is anticipated for Q3, 2028.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-resorts"
+    },
+    {
+     "claim": "Studios, 1-bedroom and 2-bedroom apartments with private pools, from 428 sq ft; listed as sold out",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-resorts"
+    },
+    {
+     "claim": "Previously offered from AED 1.3 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-resorts"
+    },
+    {
+     "claim": "Map embedded on the developer page points to 25.03924, 55.19304",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-resorts"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1300000,
+    "price_max": null,
+    "currency": "AED",
+    "deposit_pct": null,
+    "payment_plan": "As previously offered: 15% or 20% booking, 1% per month during construction, further instalments after handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.039238,
+    "lng": 55.19304,
+    "permit_authority": null
+   },
+   "note": "SAMANA Resorts by SAMANA Developers in Dubai Production City, Dubai (UAE). Added from the official developer page: off-plan; handover on record: 2028-Q3. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.samanadevelopers.com/projects/samana-resorts"
+   ],
+   "docs_listed": [
+    "\"Handover at SAMANA Resorts is anticipated for Q3, 2028.\"",
+    "Studios, 1-bedroom and 2-bedroom apartments with private pools, from 428 sq ft; listed as sold out",
+    "Previously offered from AED 1.3 million",
+    "Map embedded on the developer page points to 25.03924, 55.19304"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "samana-resorts"
+  },
+  {
+   "name": "SAMANA Ocean Bay",
+   "developer": "SAMANA Developers",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-ocean-bay",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-ocean-bay",
+   "permit_number": null,
+   "seed": {
+    "price": 2887000,
+    "currency": "AED",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"The anticipated handover date for SAMANA Ocean Bay is Q2, 2028.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+    },
+    {
+     "claim": "Six floors; 1 to 4-bedroom apartments from 808 sq ft",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+    },
+    {
+     "claim": "Price from AED 2,887,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+    },
+    {
+     "claim": "Two different payment plans are printed on the same page (a 50/50 plan with post-handover instalments, and a plan with 20% down)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+    },
+    {
+     "claim": "Map embedded on the developer page points to 25.29774, 55.32043",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 2887000,
+    "price_max": null,
+    "currency": "AED",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.297735,
+    "lng": 55.320434,
+    "permit_authority": null
+   },
+   "note": "SAMANA Ocean Bay by SAMANA Developers in Dubai Islands, Dubai (UAE). Added from the official developer page: off-plan; handover on record: 2028-Q2. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.samanadevelopers.com/projects/samana-ocean-bay"
+   ],
+   "docs_listed": [
+    "\"The anticipated handover date for SAMANA Ocean Bay is Q2, 2028.\"",
+    "Six floors; 1 to 4-bedroom apartments from 808 sq ft",
+    "Price from AED 2,887,000",
+    "Two different payment plans are printed on the same page (a 50/50 plan with post-handover instalments, and a plan with 20% down)",
+    "Map embedded on the developer page points to 25.29774, 55.32043"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "samana-ocean-bay"
+  },
+  {
+   "name": "6 Palma",
+   "developer": "Taylor Wimpey España",
+   "area": "Carrer de Gilabert de Centelles, Palma de Mallorca",
+   "country": "Spain",
+   "market": "Balearics",
+   "stage": "off-plan",
+   "url": "https://taylorwimpeyspain.com/property/6-palma-apartments/",
+   "docs_url": "https://taylorwimpeyspain.com/property/6-palma-apartments/",
+   "permit_number": null,
+   "seed": {
+    "price": 765000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 6,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Handover date: August 2027.\" (delivery date also shown as 30-08-2027)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/property/6-palma-apartments/"
+    },
+    {
+     "claim": "6 apartments and penthouses with 2 bedrooms, each with an underground parking space; labelled \"NEW RELEASE\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/property/6-palma-apartments/"
+    },
+    {
+     "claim": "Prices from EUR 765,000 for apartments and EUR 1,190,000 for penthouses, VAT not included",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/property/6-palma-apartments/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "August 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "2-bedroom penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 765000,
+    "price_max": 1190000,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "6 Palma by Taylor Wimpey España in Carrer de Gilabert de Centelles, Palma de Mallorca (Spain). Added from the official developer page: off-plan; handover on record: August 2027. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://taylorwimpeyspain.com/property/6-palma-apartments/"
+   ],
+   "docs_listed": [
+    "\"Handover date: August 2027.\" (delivery date also shown as 30-08-2027)",
+    "6 apartments and penthouses with 2 bedrooms, each with an underground parking space; labelled \"NEW RELEASE\"",
+    "Prices from EUR 765,000 for apartments and EUR 1,190,000 for penthouses, VAT not included"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "6-palma-balearics"
+  },
+  {
+   "name": "Cor 39",
+   "developer": "Taylor Wimpey España",
+   "area": "Palma de Mallorca",
+   "country": "Spain",
+   "market": "Balearics",
+   "stage": "off-plan",
+   "url": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/",
+   "docs_url": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "March 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 12,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"La entrega está prevista para marzo de 2028.\" (developer news article of March 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/"
+    },
+    {
+     "claim": "12 homes and one commercial unit in Palma de Mallorca",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/"
+    },
+    {
+     "claim": "No price is printed in the developer article",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "March 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Cor 39 by Taylor Wimpey España in Palma de Mallorca (Spain). Added from the official developer page: off-plan; handover on record: March 2028. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-impulsa-en-manilva-y-palma-nuevas-promociones/"
+   ],
+   "docs_listed": [
+    "\"La entrega está prevista para marzo de 2028.\" (developer news article of March 2026)",
+    "12 homes and one commercial unit in Palma de Mallorca",
+    "No price is printed in the developer article"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "cor-39-balearics"
+  },
+  {
+   "name": "Habitat TorreMare",
+   "developer": "Habitat Inmobiliaria",
+   "area": "El Pato-La Térmica, Málaga",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://www.habitatinmobiliaria.com/en/new-home/malaga-province/habitat-torremare/",
+   "docs_url": "https://www.habitatinmobiliaria.com/en/new-home/malaga-province/habitat-torremare/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 100,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Presented as a new development with around 100 properties in El Pato-La Térmica, Málaga",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.habitatinmobiliaria.com/en/new-home/malaga-province/habitat-torremare/"
+    },
+    {
+     "claim": "No delivery date, price or licence number is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.habitatinmobiliaria.com/en/new-home/malaga-province/habitat-torremare/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Habitat TorreMare by Habitat Inmobiliaria in El Pato-La Térmica, Málaga (Spain). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.habitatinmobiliaria.com/en/new-home/malaga-province/habitat-torremare/"
+   ],
+   "docs_listed": [
+    "Presented as a new development with around 100 properties in El Pato-La Térmica, Málaga",
+    "No delivery date, price or licence number is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "habitat-torremare"
+  },
+  {
+   "name": "Folkart Orion",
+   "developer": "Folkart (Saya Holding)",
+   "area": "Alsancak-Bayraklı line, İzmir",
+   "country": "Turkey",
+   "market": "Izmir",
+   "stage": "off-plan",
+   "url": "https://folkart.com.tr/folkart-orion-da-on-satis-basladi",
+   "docs_url": "https://folkart.com.tr/folkart-orion-da-on-satis-basladi",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Delivery dates published: first stage September 2028, second stage June 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://folkart.com.tr/folkart-orion-da-on-satis-basladi"
+    },
+    {
+     "claim": "Pre-sale has started; residences from 1+1 to 4+1, garden residences and penthouses, with a hotel, offices and a private hospital in the scheme",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://folkart.com.tr/folkart-orion-da-on-satis-basladi"
+    },
+    {
+     "claim": "Location given as the intersection of Altınyol and Ankara Asfaltı",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://folkart.com.tr/folkart-orion-da-on-satis-basladi"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "September 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1+1 residence",
+     "4+1 residence",
+     "garden residence",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Folkart Orion by Folkart in Alsancak-Bayraklı line, İzmir (Turkey). Added from the official developer page: off-plan; handover on record: September 2028. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://folkart.com.tr/folkart-orion-da-on-satis-basladi"
+   ],
+   "docs_listed": [
+    "Delivery dates published: first stage September 2028, second stage June 2029",
+    "Pre-sale has started; residences from 1+1 to 4+1, garden residences and penthouses, with a hotel, offices and a private hospital in the scheme",
+    "Location given as the intersection of Altınyol and Ankara Asfaltı"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "folkart-orion"
+  },
+  {
+   "name": "Parq Blue",
+   "developer": "Parq Development",
+   "area": "Near Melasti Beach, Bali",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "url": "https://parqdevelopment.com/blue/en",
+   "docs_url": "https://parqdevelopment.com/blue/en",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Villas, apartments and townhouses are planned in three stages on 27 hectares, 900 metres from Melasti beach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/blue/en"
+    },
+    {
+     "claim": "The page states that the first phase of development has already been sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/blue/en"
+    },
+    {
+     "claim": "The page prints 1,953,600,000 IDR next to a note that cost is indicated per square metre of living space",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/blue/en"
+    },
+    {
+     "claim": "The page projects average rental profit and a 30% rise in property values; it does not use the word guaranteed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/blue/en"
+    },
+    {
+     "claim": "No completion date, permit number or lease term is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://parqdevelopment.com/blue/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "villa",
+     "apartment",
+     "townhouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Parq Blue by Parq Development in Near Melasti Beach, Bali (Indonesia). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://parqdevelopment.com/blue/en"
+   ],
+   "docs_listed": [
+    "Villas, apartments and townhouses are planned in three stages on 27 hectares, 900 metres from Melasti beach",
+    "The page states that the first phase of development has already been sold",
+    "The page prints 1,953,600,000 IDR next to a note that cost is indicated per square metre of living space",
+    "The page projects average rental profit and a 30% rise in property values; it does not use the word guaranteed",
+    "No completion date, permit number or lease term is printed on the developer page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-11",
+   "found_by": "discover-manual",
+   "slug": "parq-blue-bali"
   }
  ]
 }

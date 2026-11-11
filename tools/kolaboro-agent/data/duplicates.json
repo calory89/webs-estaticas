@@ -24,6 +24,14 @@
   ]
  },
  {
+  "a": "trump-plaza-jeddah-dar-global",
+  "b": "trump-tower-jeddah",
+  "market": "Saudi Arabia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "oystra-richmind",
   "b": "fortune-bay-residences-topero",
   "market": "Ras Al Khaimah",
@@ -37,6 +45,14 @@
   "market": "Miami",
   "why": [
    "149 m apart"
+  ]
+ },
+ {
+  "a": "cove-edition-6-dubai",
+  "b": "cove-edition-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
   ]
  }
 ]
