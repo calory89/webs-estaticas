@@ -1382,3 +1382,6 @@ main details>summary{min-height:44px!important}
 .lk li>a,.kwrap .k-xs>a:only-child,.kwrap p>a:only-child,a.src{display:inline-block;min-height:24px;line-height:1.5}
 [data-kb-scroll]:focus-visible{outline:3px solid var(--k-sea,#155C75);outline-offset:2px}
 .lv-ok{color:#136B45}
+/* n21e: keyboard focus was invisible on the main buttons (a later rule removed the ring) and faint on the big search box */
+.btn:focus-visible,.k-btn:focus-visible,.kbtn:focus-visible,.kmore:focus-visible{outline:2px solid #fff!important;outline-offset:0!important;box-shadow:0 0 0 2px #fff,0 0 0 5px var(--k-sea,#155C75)!important}
+.k-omni:focus-within{box-shadow:0 0 0 3px var(--k-sea,#155C75)!important}

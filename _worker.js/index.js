@@ -117,7 +117,12 @@ function kbHeaders(r, u) {
   // Tested with ?csp=strict on 271 URLs and every interactive tool, the portal and the admin before the switch (scratchpad n21/n21e-issues.md).
   // The rest of the policy (connect, img, style, frame sources) stays report-only. Rollback in one line: KB_CSP_SCRIPTS = false below
   // (or Pages variable KB_CSP_STRICT=0, read at the top of fetch). Counts: /api/x/live/csp.
-  else if (KB_CSP_SCRIPTS) h.set('content-security-policy', h.get('content-security-policy') + "; script-src 'nonce-" + nonce + "' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; worker-src 'self' blob:; report-uri /api/kb/csp; report-to csp");
+  else if (KB_CSP_SCRIPTS) {
+    h.set('content-security-policy', h.get('content-security-policy') + "; script-src 'nonce-" + nonce + "' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; worker-src 'self' blob:; report-uri /api/kb/csp; report-to csp");
+    // the script rules are enforced above, so the report-only copy stops judging scripts: a blocked script is reported once, and the
+    // one false report per page view (Cloudflare gives its Zaraz loader a nonce in an enforced header only) is gone from the counts
+    h.set('content-security-policy-report-only', h.get('content-security-policy-report-only').replace(/script-src [^;]+; script-src-attr 'none'; /, "script-src * 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data:; "));
+  }
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
@@ -167,7 +172,7 @@ function kbRu(html) {
   });
 }
 const KB_SITE_CSS_V = 'f8f85e2a20', KB_PROV_V = 'b72a9677d4';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
-let KB_CSP_SCRIPTS = false;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
+let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
@@ -208,11 +213,11 @@ async function kbLd(r, u, env) {
     .transform(r);
 }
 // scripts added after kbHeaders (HTMLRewriter append) carry the same nonce as the response's CSP header
-const kbNonce = r => { const m = (r.headers.get('content-security-policy-report-only') || r.headers.get('content-security-policy') || '').match(/'nonce-([A-Za-z0-9+/=]+)'/); return m ? ' nonce="' + m[1] + '"' : ''; };
+const kbNonce = r => { const m = ((r.headers.get('content-security-policy-report-only') || '') + ' ' + (r.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/); return m ? ' nonce="' + m[1] + '"' : ''; };
 const KB_CSP = "default-src 'self'; script-src 'nonce-{N}' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; script-src-attr 'none'; " +
   "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; " +
   "img-src 'self' data: blob: https://oykcsmextclpdnugixqz.supabase.co https://server.arcgisonline.com https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://*.google-analytics.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com; " +
-  "font-src 'self'; connect-src 'self' https://tile.openstreetmap.org https://cdnjs.cloudflare.com https://api.frankfurter.dev https://api.frankfurter.app https://oykcsmextclpdnugixqz.supabase.co wss://oykcsmextclpdnugixqz.supabase.co https://huggingface.co https://*.hf.co https://raw.githubusercontent.com https://mempool.space https://nominatim.openstreetmap.org https://cdn.jsdelivr.net https://earth-search.aws.element84.com https://*.amazonaws.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com https://cloudflareinsights.com; " +
+  "font-src 'self'; connect-src 'self' https://tile.openstreetmap.org https://cdnjs.cloudflare.com https://api.frankfurter.dev https://api.frankfurter.app https://oykcsmextclpdnugixqz.supabase.co wss://oykcsmextclpdnugixqz.supabase.co https://huggingface.co https://*.hf.co https://raw.githubusercontent.com https://mempool.space https://nominatim.openstreetmap.org https://cdn.jsdelivr.net https://earth-search.aws.element84.com https://extensions.duckdb.org https://*.amazonaws.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com https://cloudflareinsights.com; " +
   "frame-src 'self' https://www.paypal.com https://www.sandbox.paypal.com; worker-src 'self' blob:; manifest-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; " +
   "form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co; frame-ancestors {FA}; report-uri /api/kb/csp; report-to csp";
 // equinoxinvestmentgroup.com: browser security headers (no framing, no plugins, admin never indexed or cached) and long cache for fonts

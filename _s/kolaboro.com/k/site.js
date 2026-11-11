@@ -428,7 +428,8 @@
   var prose = document.querySelector('.prose');
   if (!prose || location.pathname === '/' ) return;
   var hs = prose.querySelectorAll('h2');
-  function slug(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+  // n21e: headings in Russian, Arabic or Chinese used to get an empty id (every "On this page" link pointed at "#"); letters of any script are kept and ids stay unique
+  function slug(t) { var s; try { s = t.toLowerCase().replace(new RegExp('[^\\p{L}\\p{N}]+', 'gu'), '-'); } catch (e) { s = t.toLowerCase().replace(/[^a-z0-9]+/g, '-'); } s = s.replace(/^-+|-+$/g, '').slice(0, 60) || 'sec'; var b = s, n = 2; while (document.getElementById(s)) s = b + '-' + n++; return s; }
   var otp = ({ es: 'En esta página', de: 'Auf dieser Seite', fr: 'Sur cette page', nl: 'Op deze pagina', ru: 'На этой странице', zh: '本页内容', ar: 'في هذه الصفحة' })[(document.documentElement.lang || 'en').slice(0, 2)] || 'On this page';
   if (hs.length >= 3 && matchMedia('(max-width:760px)').matches) {
     // phones: no block pushed in above the text (it shifted the page after load); a bar under the header instead, shown once you scroll into the text
