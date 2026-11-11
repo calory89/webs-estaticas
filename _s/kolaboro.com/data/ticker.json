@@ -4,6 +4,48 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "Around the site: project pages with a reliable pin now show the nearest sea, beach, airport, runway end, hospital, school, supermarket and transport stop from OpenStreetMap, and the yearly PM2.5 and NO2 of the Copernicus atmosphere model",
+   "tl": {
+    "es": "Alrededor de la obra: las páginas de proyecto con un punto fiable muestran ahora el mar, la playa, el aeropuerto, la cabecera de pista, el hospital, el colegio, el supermercado y la parada de transporte más cercanos según OpenStreetMap, y la media anual de PM2,5 y NO2 del modelo atmosférico de Copernicus",
+    "fr": "Autour du site : les pages projet dotées d'un point fiable affichent désormais la mer, la plage, l'aéroport, l'extrémité de piste, l'hôpital, l'école, le supermarché et l'arrêt de transport les plus proches selon OpenStreetMap, ainsi que la moyenne annuelle de PM2,5 et de NO2 du modèle atmosphérique Copernicus",
+    "de": "Rund um das Grundstück: Projektseiten mit verlässlichem Pin zeigen jetzt Meer, Strand, Flughafen, Bahnende, Krankenhaus, Schule, Supermarkt und Haltestelle in der Nähe laut OpenStreetMap sowie das Jahresmittel von PM2,5 und NO2 aus dem Copernicus-Atmosphärenmodell",
+    "nl": "Rond de locatie: projectpagina's met een betrouwbare pin tonen nu de dichtstbijzijnde zee, het strand, de luchthaven, het baaneinde, het ziekenhuis, de school, de supermarkt en de halte volgens OpenStreetMap, plus het jaargemiddelde van PM2,5 en NO2 uit het atmosfeermodel van Copernicus",
+    "ru": "Что вокруг участка: на страницах проектов с надёжной точкой теперь показаны ближайшие море, пляж, аэропорт, торец взлётной полосы, больница, школа, супермаркет и остановка по данным OpenStreetMap, а также среднегодовые PM2,5 и NO2 по атмосферной модели Copernicus",
+    "zh": "项目周边：定位点可靠的项目页面现在显示 OpenStreetMap 上最近的海、海滩、机场、跑道端、医院、学校、超市和公交站点，以及哥白尼大气模型的 PM2.5 和 NO2 年均值",
+    "ar": "ما يحيط بالموقع: صفحات المشاريع ذات النقطة الموثوقة تعرض الآن أقرب بحر وشاطئ ومطار وطرف مدرج ومستشفى ومدرسة وسوبرماركت وموقف نقل عام بحسب OpenStreetMap، والمتوسط السنوي لـ PM2.5 و NO2 من نموذج كوبرنيكوس للغلاف الجوي"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "Distance claims check: distances and travel times stated on the project page we track are quoted from our sealed copy next to the straight-line and road distance measured from the pin",
+   "tl": {
+    "es": "Comprobación de distancias: las distancias y los tiempos de viaje que da la página del proyecto que seguimos se citan de nuestra copia sellada junto a la distancia en línea recta y por carretera medida desde el punto",
+    "fr": "Vérification des distances : les distances et temps de trajet annoncés sur la page du projet que nous suivons sont cités depuis notre copie scellée, à côté de la distance à vol d'oiseau et par la route mesurée depuis le point",
+    "de": "Prüfung der Entfernungsangaben: Entfernungen und Fahrzeiten von der Projektseite, die wir verfolgen, werden aus unserer versiegelten Kopie zitiert, daneben stehen Luftlinie und Straßenentfernung vom Pin",
+    "nl": "Controle van afstandsclaims: afstanden en reistijden op de projectpagina die we volgen worden geciteerd uit onze verzegelde kopie, naast de afstand in rechte lijn en over de weg gemeten vanaf de pin",
+    "ru": "Проверка заявленных расстояний: расстояния и время в пути со страницы проекта, за которой мы следим, цитируются по нашей опечатанной копии рядом с расстоянием по прямой и по дороге от точки",
+    "zh": "距离说法核对：我们跟踪的项目页面上的距离和行程时间引自我们的封存副本，旁边列出从定位点测得的直线距离和公路距离",
+    "ar": "التحقق من ادعاءات المسافة: المسافات وأزمنة الوصول المذكورة في صفحة المشروع التي نتابعها تُقتبس من نسختنا المختومة بجانب المسافة بخط مستقيم وبالطريق مقيسةً من النقطة"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "Climate at the plot: hot days, warm nights, yearly rain and heavy-rain days for 1995 to 2014 against 2040 to 2059, with the range across climate models (World Bank CMIP6 data)",
+   "tl": {
+    "es": "Clima en la parcela: días de calor, noches cálidas, lluvia anual y días de lluvia intensa de 1995 a 2014 frente a 2040 a 2059, con el rango entre modelos climáticos (datos CMIP6 del Banco Mundial)",
+    "fr": "Climat sur la parcelle : jours très chauds, nuits chaudes, pluie annuelle et jours de forte pluie de 1995 à 2014 face à 2040 à 2059, avec l'écart entre modèles climatiques (données CMIP6 de la Banque mondiale)",
+    "de": "Klima am Grundstück: heiße Tage, warme Nächte, Jahresregen und Starkregentage für 1995 bis 2014 gegenüber 2040 bis 2059, mit der Spanne zwischen den Klimamodellen (CMIP6-Daten der Weltbank)",
+    "nl": "Klimaat op het perceel: hete dagen, warme nachten, jaarlijkse regen en dagen met zware regen voor 1995 tot 2014 tegenover 2040 tot 2059, met de spreiding tussen klimaatmodellen (CMIP6-gegevens van de Wereldbank)",
+    "ru": "Климат на участке: жаркие дни, тёплые ночи, годовые осадки и дни с сильным дождём за 1995–2014 годы в сравнении с 2040–2059 годами, с разбросом между климатическими моделями (данные CMIP6 Всемирного банка)",
+    "zh": "地块气候：1995 至 2014 年与 2040 至 2059 年的高温天数、暖夜、年降雨量和强降雨天数对比，并给出各气候模型之间的范围（世界银行 CMIP6 数据）",
+    "ar": "المناخ عند قطعة الأرض: الأيام الحارة والليالي الدافئة والمطر السنوي وأيام المطر الغزير للفترة 1995 إلى 2014 مقابل 2040 إلى 2059، مع المدى بين النماذج المناخية (بيانات CMIP6 من البنك الدولي)"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "39 developer pages of listed companies now show the exchange, the ticker and a link to the official filings, with the latest annual report date for those filing with the US SEC. No share prices, no advice",
    "tl": {
     "es": "39 páginas de promotores cotizados muestran ahora la bolsa, el símbolo y un enlace a la información oficial, con la fecha del último informe anual de los que presentan ante la SEC de EE. UU. Sin cotizaciones ni consejos",

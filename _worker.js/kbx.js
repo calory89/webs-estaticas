@@ -49,7 +49,8 @@ import * as m_bulkix from './kbx_bulkix.js'; // batch 21 (n21d): compact public 
 import * as m_gaz from './kbx_gaz.js'; // batch 21 (n21a): official gazette notices about developer companies (JSON); regulator warning lists line
 import * as m_rules from './kbx_rules.js'; // batch 21 (n21c): short-let rules by city (JSON); page /guides/short-let-rules/ is routed in index.js
 import * as m_filings from './kbx_filings.js'; // batch 21 (n21c): official filings of developers that are listed companies (JSON)
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see, m_money, m_land, m_watch, m_bulkix, m_gaz, m_rules, m_filings];
+import * as m_around from './kbx_around.js'; // batch 21 (n21b): around the site, distance claims, climate at the plot (JSON)
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see, m_money, m_land, m_watch, m_bulkix, m_gaz, m_rules, m_filings, m_around];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
