@@ -15,6 +15,7 @@
 //   GET /__k/kwatch-admin.js             admin CRM tab "Screening" (index.js injects it on /admin)
 // Developer pages: kbx_named.js calls watchDevHtml() for the section #watch.
 import { LOCALE } from './kbx_named_i18n.js';
+import { warnDevHtml } from './kbx_gaz.js';   // n21a (batch 21): regulator warning lists line, gazette notices data
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -38,10 +39,10 @@ async function loadOne(env, name) {
 }
 export async function watchData(env) {
   if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
-  const [la, sa] = await Promise.all([loadOne(env, 'lookalikes.json'), loadOne(env, 'sanctions.json')]);
+  const [la, sa, gz] = await Promise.all([loadOne(env, 'lookalikes.json'), loadOne(env, 'sanctions.json'), loadOne(env, 'gazette.json')]);   // gz: n21a
   const byUrl = new Map();
   for (const x of ((la && la.items) || [])) { if (!byUrl.has(x.url)) byUrl.set(x.url, []); byUrl.get(x.url).push(x); }
-  const v = { la, sa, byUrl, clean: new Set((sa && sa.no_match) || []) };
+  const v = { la, sa, gz, byUrl, clean: new Set((sa && sa.no_match) || []) };
   MEMO = { t: Date.now(), v }; return v;
 }
 
@@ -184,6 +185,7 @@ export function watchDevHtml(wd, slug, lang) {
     const links = ok.map(l => '<a class="src" href="' + esc(l.page) + '" rel="noopener" target="_blank">' + esc(SHORT[l.id] || l.id) + (l.list_date ? ' (' + esc(fdt(l.list_date, lang)) + ')' : '') + '</a>').join(', ');
     h += '<div class="kwa-sa"><h3>' + esc(t(lang, 'sa_h')) + '</h3><ul class="fl"><li class="kfact">' + esc(t(lang, 'sa_ok', { d: fdt(sa.updated, lang), lists: '\u0001' })).replace('\u0001', links) + '</li></ul><p class="k-xs">' + esc(t(lang, 'sa_note')) + ' <a href="/data/sanctions.json">sanctions.json</a></p></div>';
   }
+  h += warnDevHtml(sa, slug, lang);   // n21a: regulator warning lists of unauthorised firms
   return h ? CSS + h : '';
 }
 
@@ -236,7 +238,7 @@ export async function handle(req, u, env) {
   if (u.pathname === '/api/x/watch/sanctions') {
     if (!wd.sa) return out({ error: 'not_built_yet' }, 503);
     const s = u.searchParams.get('dev');
-    if (s) return out({ dev: s, screened_no_match: wd.clean.has(s), updated: wd.sa.updated, lists: wd.sa.lists, note: 'false means the name was not screened (it could be a person\'s name) or is under review; it is not a finding.' });
+    if (s) return out({ dev: s, screened_no_match: wd.clean.has(s), updated: wd.sa.updated, lists: wd.sa.lists, warnings: wd.sa.warnings ? { screened_no_match: (wd.sa.warnings.no_match || []).includes(s), updated: wd.sa.warnings.updated, lists: wd.sa.warnings.lists } : undefined, note: 'false means the name was not screened (it could be a person\'s name) or is under review; it is not a finding.' });
     return out(wd.sa);
   }
   if (!wd.la) return out({ error: 'not_built_yet' }, 503);
@@ -262,6 +264,10 @@ export const ADMIN_JS = `/* kolaboro.com/admin: "Screening" tab (n19a, 9 Nov 202
       h += '<p>Screened ' + esc(S.generated_at) + ': ' + S.screened + ' developer names, ' + S.no_match + ' without a possible match (published as "no match"), ' + S.not_screened_person_like + ' not screened (could be a person). Lists: ' + (S.lists || []).map(function (l) { return esc(l.id) + (l.ok ? ' ' + esc(l.list_date || '') + ' (' + l.entities + ' entities)' : ' <b style="color:#B42318">download failed</b>'); }).join(', ') + '.</p>';
       h += '<p class="muted">Possible matches are hidden from the public pages. Check each one against the official entry (programme, address, registration number) before acting; a similar name is not the same company.</p>';
       h += '<h3>Possible matches to review (' + (S.review || []).length + ')</h3>' + table(['Developer', 'Listed name', 'List', 'Score', 'Programme', 'Entry id'], [].concat.apply([], (S.review || []).map(function (r) { return r.hits.map(function (x, i) { return [i ? '' : '<a href="/developers/' + esc(r.slug) + '/" target="_blank" rel="noopener">' + esc(r.developer) + '</a>', esc(x.listed_name), esc(x.list), esc(x.score), esc(x.programme), esc(x.ref)]; }); })));
+    }
+    if (S && S.warn) {
+      h += '<h3>Regulator warning lists: possible matches to review (' + (S.warn_review || []).length + ')</h3><p class="muted">Lists read ' + esc(S.warn.read || '') + ': ' + (S.warn.lists || []).map(function (l) { return esc(l.id) + (l.ok ? ' ' + esc(l.list_date || '') + ' (' + l.entries + ' entries)' : ' <b style="color:#B42318">not read</b>'); }).join(', ') + '. ' + S.warn.no_match + ' developer names without a possible match (published as "no match"). These lists are about unauthorised financial services; many entries are clones that copy the name of a genuine firm. Never published.</p>' +
+        table(['Developer', 'Listed name', 'List', 'Score', 'Kind'], [].concat.apply([], (S.warn_review || []).map(function (r) { return r.hits.map(function (x, i) { return [i ? '' : '<a href="/developers/' + esc(r.slug) + '/" target="_blank" rel="noopener">' + esc(r.developer) + '</a>', esc(x.listed_name), esc(x.list), esc(x.score), esc(x.programme)]; }); })));
     }
     var I = (L && L.items) || [];
     h += '<h3>Newest lookalike websites (' + I.length + ' public)</h3>' + table(['Website', 'Resembles', 'How', 'Registered', 'First cert', 'Resolves'], I.slice(0, 40).map(function (x) { return [esc(x.d), esc(x.o) + (x.dv ? ' (' + esc(x.dv) + ')' : ''), esc(x.why), esc(x.reg || '-'), esc(x.cert || '-'), x.res ? 'yes' : 'no']; })) + '<p><a href="/watch/lookalikes/" target="_blank" rel="noopener">Public feed</a></p>';

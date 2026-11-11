@@ -46,7 +46,8 @@ import * as m_money from './kbx_money.js'; // batch 19 (n19b): short lets (Insid
 import * as m_stage from './kbx_stage.js'; // n18b (batch 18): construction stage estimate per month (rules over optical, radar, footprints, promised dates)
 import * as m_watch from './kbx_watch.js'; // batch 19 (n19a): fraud radar: lookalike websites feed, sanctions screening (JSON)
 import * as m_bulkix from './kbx_bulkix.js'; // batch 21 (n21d): compact public index for the in-browser bulk check (/tools/bulk-check/)
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see, m_money, m_land, m_watch, m_bulkix];
+import * as m_gaz from './kbx_gaz.js'; // batch 21 (n21a): official gazette notices about developer companies (JSON); regulator warning lists line
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see, m_money, m_land, m_watch, m_bulkix, m_gaz];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });

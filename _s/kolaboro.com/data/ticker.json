@@ -4,6 +4,20 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "Developer pages now compare the company name with official regulator warning lists of unauthorised firms (FCA, AMF, MAS, SFC, FINMA, Central Bank of Ireland, SEC) and show a no-match result with each list's date; possible matches go to a private review and are never published",
+   "tl": {
+    "es": "Las páginas de promotores comparan ahora el nombre de la empresa con listas oficiales de advertencias de reguladores sobre entidades no autorizadas (FCA, AMF, MAS, SFC, FINMA, Banco Central de Irlanda, SEC) y muestran el resultado sin coincidencias con la fecha de cada lista; las posibles coincidencias pasan a revisión privada y nunca se publican",
+    "fr": "Les pages promoteur comparent désormais le nom de la société aux listes officielles de mises en garde des régulateurs contre des entités non autorisées (FCA, AMF, MAS, SFC, FINMA, Banque centrale d'Irlande, SEC) et affichent le résultat sans correspondance avec la date de chaque liste ; les correspondances possibles vont en revue privée et ne sont jamais publiées",
+    "de": "Bauträgerseiten vergleichen den Firmennamen jetzt mit offiziellen Warnlisten der Aufsichtsbehörden zu nicht zugelassenen Anbietern (FCA, AMF, MAS, SFC, FINMA, Irische Zentralbank, SEC) und zeigen das Ergebnis ohne Treffer mit dem Datum jeder Liste; mögliche Treffer gehen in eine private Prüfung und werden nie veröffentlicht",
+    "nl": "Ontwikkelaarspagina's vergelijken de bedrijfsnaam nu met officiële waarschuwingslijsten van toezichthouders over partijen zonder vergunning (FCA, AMF, MAS, SFC, FINMA, Centrale Bank van Ierland, SEC) en tonen het resultaat zonder overeenkomst met de datum van elke lijst; mogelijke overeenkomsten gaan naar een besloten controle en worden nooit gepubliceerd",
+    "ru": "Страницы застройщиков теперь сверяют название компании с официальными списками предупреждений регуляторов о компаниях без лицензии (FCA, AMF, MAS, SFC, FINMA, Центральный банк Ирландии, SEC) и показывают результат без совпадений с датой каждого списка; возможные совпадения уходят на закрытую проверку и никогда не публикуются",
+    "zh": "开发商页面现在会将公司名称与监管机构的官方未获授权机构警示名单（FCA、AMF、MAS、SFC、FINMA、爱尔兰中央银行、SEC）比对，并显示无匹配结果及各名单日期；可能的匹配进入内部人工复核，绝不公布",
+    "ar": "صفحات المطوّرين تقارن الآن اسم الشركة بالقوائم الرسمية لتحذيرات الجهات الرقابية من جهات غير مرخصة (FCA و AMF و MAS و SFC و FINMA والبنك المركزي الأيرلندي و SEC) وتعرض نتيجة عدم التطابق مع تاريخ كل قائمة؛ التطابقات المحتملة تذهب إلى مراجعة خاصة ولا تُنشر أبدًا"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "Accessibility pass on 271 pages with an automated checker: charts and status strips are announced correctly, sideways-scrolling boxes work from the keyboard, small links are easier to tap; Russian pages use the right word form after numbers; project links open the project page directly",
    "tl": {
     "es": "Revisión de accesibilidad en 271 páginas con un comprobador automático: los gráficos y las tiras de estado se anuncian bien, las cajas con desplazamiento lateral funcionan con el teclado y los enlaces pequeños son más fáciles de tocar; las páginas en ruso usan la forma correcta tras los números; los enlaces a proyectos abren la página del proyecto directamente",
