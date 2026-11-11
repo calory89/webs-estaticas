@@ -4,6 +4,20 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "Developer pages now list official gazette notices about the developer's company when it is identified by its exact legal name: Spain's BORME (every daily issue of the last 12 months), France's BODACC (by SIREN number) and The Gazette in the UK, with notice type, date and link; no names of people are copied",
+   "tl": {
+    "es": "Las páginas de promotores listan ahora los anuncios de boletines oficiales sobre la sociedad del promotor cuando está identificada por su denominación social exacta: BORME en España (todos los números diarios de los últimos 12 meses), BODACC en Francia (por número SIREN) y The Gazette en el Reino Unido, con tipo de anuncio, fecha y enlace; no se copian nombres de personas",
+    "fr": "Les pages promoteur listent désormais les annonces des bulletins officiels sur la société du promoteur lorsqu'elle est identifiée par sa dénomination sociale exacte : BORME en Espagne (tous les numéros quotidiens des 12 derniers mois), BODACC en France (par numéro SIREN) et The Gazette au Royaume-Uni, avec type d'annonce, date et lien ; aucun nom de personne n'est copié",
+    "de": "Bauträgerseiten listen jetzt Bekanntmachungen aus Amtsblättern über die Gesellschaft des Bauträgers, wenn sie über ihren genauen Firmennamen identifiziert ist: BORME in Spanien (jede Tagesausgabe der letzten 12 Monate), BODACC in Frankreich (über die SIREN-Nummer) und The Gazette im Vereinigten Königreich, mit Art, Datum und Link; Namen von Personen werden nicht übernommen",
+    "nl": "Ontwikkelaarspagina's tonen nu aankondigingen uit officiële publicatiebladen over de vennootschap van de ontwikkelaar wanneer die via de exacte statutaire naam is vastgesteld: BORME in Spanje (elke dagelijkse uitgave van de laatste 12 maanden), BODACC in Frankrijk (via het SIREN-nummer) en The Gazette in het Verenigd Koninkrijk, met type, datum en link; namen van personen worden niet overgenomen",
+    "ru": "Страницы застройщиков теперь показывают объявления официальных бюллетеней о компании застройщика, если она определена по точному юридическому названию: BORME в Испании (все ежедневные выпуски за последние 12 месяцев), BODACC во Франции (по номеру SIREN) и The Gazette в Великобритании, с типом объявления, датой и ссылкой; имена людей не копируются",
+    "zh": "开发商页面现在会列出官方公报中关于开发商公司的公告（公司须以准确的法定名称确认）：西班牙 BORME（过去 12 个月的每一期日报）、法国 BODACC（按 SIREN 号）和英国 The Gazette，显示公告类型、日期和链接；不复制任何人名",
+    "ar": "صفحات المطوّرين تعرض الآن إعلانات الجرائد الرسمية عن شركة المطوّر عندما تُحدَّد باسمها القانوني المطابق: BORME في إسبانيا (كل عدد يومي خلال آخر 12 شهرًا) و BODACC في فرنسا (برقم SIREN) و The Gazette في المملكة المتحدة، مع نوع الإعلان وتاريخه ورابطه؛ ولا تُنسخ أسماء الأشخاص"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "Around the site: project pages with a reliable pin now show the nearest sea, beach, airport, runway end, hospital, school, supermarket and transport stop from OpenStreetMap, and the yearly PM2.5 and NO2 of the Copernicus atmosphere model",
    "tl": {
     "es": "Alrededor de la obra: las páginas de proyecto con un punto fiable muestran ahora el mar, la playa, el aeropuerto, la cabecera de pista, el hospital, el colegio, el supermercado y la parada de transporte más cercanos según OpenStreetMap, y la media anual de PM2,5 y NO2 del modelo atmosférico de Copernicus",

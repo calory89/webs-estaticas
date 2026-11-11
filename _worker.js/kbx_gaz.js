@@ -89,10 +89,10 @@ export function warnDevHtml(sa, slug, lang) {
   const w = sa && sa.warnings; if (!w || !Array.isArray(w.no_match) || !w.updated) return '';
   const set = w.__set || (w.__set = new Set(w.no_match)); if (!set.has(slug)) return '';
   const ok = (w.lists || []).filter(l => l.ok); if (!ok.length) return '';
-  const links = ok.map(l => '<a class="src" href="' + esc(http(l.page)) + '" rel="noopener" target="_blank"><bdi>' + esc(l.short || l.id) + '</bdi>' + (l.list_date ? ' (' + esc(fdt(l.list_date, lang)) + ')' : '') + '</a>').join(', ');
+  const links = ok.map(l => '<a class="src" href="' + esc(http(l.page)) + '" rel="noopener" target="_blank"><bdi>' + esc(l.short || l.id) + '</bdi>' + (l.list_date ? ' (' + esc(fdt(l.list_date, lang)) + ')' : '') + '</a>').join(' ');
   const hand = (w.not_read || []).map(l => '<a href="' + esc(http(l.page)) + '" rel="noopener" target="_blank"><bdi>' + esc(l.name) + '</bdi></a>').join(', ');
-  return '<div class="kgz-w"><h3>' + esc(t(lang, 'w_h')) + '</h3><ul class="fl"><li class="kfact">' + esc(t(lang, 'w_ok', { d: fdt(w.updated, lang), lists: '\u0001' })).replace('\u0001', links) + '</li></ul><p class="k-xs">' + esc(t(lang, 'w_note')) +
-    (hand ? ' ' + esc(t(lang, 'w_hand')) + ' ' + hand + '.' : '') + ' <a href="/data/sanctions.json">sanctions.json</a></p></div><style id="kgazw-css">.kgz-w{margin-top:var(--k-5,24px)}.kgz-w h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}</style>';
+  return '<div class="kgz-w"><h3>' + esc(t(lang, 'w_h')) + '</h3><ul class="fl"><li class="kfact">' + esc(t(lang, 'w_ok', { d: fdt(w.updated, lang), lists: '\u0001' })).replace(/\s*[(（]\u0001[)）]/, '') + '<span class="kgz-ls">' + links + '</span></li></ul><p class="k-xs">' + esc(t(lang, 'w_note')) +
+    (hand ? ' ' + esc(t(lang, 'w_hand')) + ' ' + hand + '.' : '') + ' <a href="/data/sanctions.json">sanctions.json</a></p></div><style id="kgazw-css">.kgz-w{margin-top:var(--k-5,24px)}.kgz-w h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}.kgz-ls{display:flex;flex-wrap:wrap;gap:var(--k-1,4px) var(--k-3,12px);margin-top:var(--k-2,8px)}</style>';
 }
 
 // ------------------------------------------------------------------------------------------------ gazette notices section (#gazette)
