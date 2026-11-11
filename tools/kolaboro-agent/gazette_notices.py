@@ -2,6 +2,7 @@
 """Kolaboro official gazette notices about developer companies (batch 21, n21a). No model calls.
 
 Usage: gazette_notices.py OUT_DIR [--named named.json] [--family gleif-family.json] [--prev gazette.json] [--es-days N] [--budget SECONDS]
+       [--es-start YYYY-MM-DD] [--es-end YYYY-MM-DD] [--workers N]   (manual backfill of a BORME window)
 
 For developer companies that are identified by an exact legal name in Spain, France or the United Kingdom, lists the notices the
 official gazettes carry about that company: type of notice, date and link. Nothing else is copied: no officer names, no text.
@@ -152,9 +153,11 @@ def spain(want, prev_es):
     """want: {norm: [slugs]}. Returns (rows {slug: [[date, 'borme', label, kind, url]]}, state)."""
     done_to = (prev_es or {}).get('to'); frm = (prev_es or {}).get('from')
     start = (datetime.strptime(done_to, '%Y-%m-%d').date() + timedelta(days=1)) if done_to else (NOW - timedelta(days=ES_DAYS)).date()
+    if arg('--es-start'): start = datetime.strptime(arg('--es-start'), '%Y-%m-%d').date()      # manual backfill of a window
+    end = datetime.strptime(arg('--es-end'), '%Y-%m-%d').date() if arg('--es-end') else NOW.date()
     rows, day, last_ok, days, pages = {}, start, done_to, 0, 0
-    with ThreadPoolExecutor(max_workers=4) as ex:
-        while day <= NOW.date():
+    with ThreadPoolExecutor(max_workers=int(arg('--workers', '4'))) as ex:
+        while day <= end:
             if time.time() - T0 > BUDGET: print('budget reached at', day); break
             if day.weekday() < 5:
                 items = borme_items(datetime(day.year, day.month, day.day))
@@ -283,6 +286,7 @@ def main():
             rows, total = france(sir)
             if rows is None:
                 rows = [r for r in (pdevs.get(slug) or {}).get('notices_all', []) if r[1] == 'bodacc']; print('BODACC not reachable, kept', len(rows))
+                if ((pdevs.get(slug) or {}).get('searched') or {}).get('bodacc'): d['searched']['bodacc'] = pdevs[slug]['searched']['bodacc']   # keep the date of the last search that worked
             else:
                 d['searched']['bodacc'] = {'to': TODAY}; fr_n += 1
             n['siren'] = sir
@@ -295,6 +299,7 @@ def main():
             rows = gazette(n['n'])
             if rows is None:
                 rows = [r for r in (pdevs.get(slug) or {}).get('notices_all', []) if r[1] == 'gazette']; print('Gazette not reachable, kept', len(rows))
+                if ((pdevs.get(slug) or {}).get('searched') or {}).get('gazette'): d['searched']['gazette'] = pdevs[slug]['searched']['gazette']
             else:
                 d['searched']['gazette'] = {'to': TODAY}; uk_n += 1
             d['_all'] += rows
