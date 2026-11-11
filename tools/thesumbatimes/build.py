@@ -997,6 +997,7 @@ SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting
 
 def assets():
     write("/sw.js", SW_JS)
+    write("/BingSiteAuth.xml", '<?xml version="1.0"?>\n<users>\n\t<user>05B8339A86426AD018D8A40369B078EF</user>\n</users>')  # Bing Webmaster Tools verification (12 Nov 2026)
     write(f"/s.{css_hash()}.css", css_all())
     import shutil
     os.makedirs(os.path.join(OUT, "fonts"), exist_ok=True)
