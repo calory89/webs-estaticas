@@ -60,7 +60,10 @@ async function snFinish(req, u, r, env) {
   }
   const v = u.searchParams.has('v');
   let cc = null;
-  if (/^\/[dl]\/[^/]+\.json$/.test(p)) cc = v ? SN_IMM : 'public, max-age=3600';
+  // supportnear-only (R22, 11-nov-2026): el codigo de la app va en /a/<nombre>-<huella>.js; el nombre
+  // cambia si cambia una letra, asi que el navegador puede guardarlo un ano sin volver a preguntar.
+  if (/^\/a\/[\w.-]+-[0-9a-f]{8,}\.(?:js|css|json)$/.test(p)) cc = SN_IMM;
+  else if (/^\/(?:d|l|tw)\/[^/]+\.json$/.test(p)) cc = v ? SN_IMM : 'public, max-age=3600';
   else if (/^\/social[\w-]*\.(?:jpg|png)$/.test(p)) cc = v ? SN_IMM : 'public, max-age=86400';
   else if (/\.(?:png|jpe?g|webp|gif|svg|ico|woff2?)$/i.test(p)) cc = 'public, max-age=86400, stale-while-revalidate=604800';
   else if (/\.(?:json|csv|js)$/i.test(p) && p !== '/sw.js') cc = v ? 'public, max-age=86400' : 'public, max-age=3600';

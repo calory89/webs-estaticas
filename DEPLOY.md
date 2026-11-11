@@ -162,3 +162,34 @@ con el padre actual y `update ref` sin force. Cloudflare Pages despliega solo (~
   `X-Frame-Options: SAMEORIGIN` y `Content-Security-Policy: frame-ancestors 'self'` salvo con
   `?embed=1` (el mapa incrustable), y `Permissions-Policy` (ubicación y micro solo la propia web).
   Copia del worker en `worker/pub_wp_worker_index.js`.
+
+## Ronda 22 (11-nov-2026): velocidad
+
+Pedido de Carlos: «revisa fallos que haya, hazla mucho mas rapida, hazla mas usable».
+
+**Que cambio en como se construye y se sube**
+- `build.py` parte la portada: Leaflet y la app salen a `a/leaflet-<huella>.js` y `a/app-<huella>.js`
+  (`<script defer>` + `<link rel="preload">`). `index.html` pasa de 709 KB a 135 KB. `NO_SPLIT=1` lo deja como antes.
+  `index.full.html` sigue llevando todo dentro (lo leen pages.py, city_pages.py…).
+- `SN_BUILT=AAAA-MM-DD python3 build.py` cuando se reconstruye sin datos nuevos: la fecha que ensena la app es la de los datos.
+- `sw.js` lleva `BUILD` (huella de `index.html`) y `SHELL` (los dos ficheros de `a/`). **Despues de `patch_live.py`
+  hay que pasar `python3 tools/finish_sw.py <carpeta que se sube>`**: si la portada cambia y `sw.js` no, quien ya tiene
+  la app no recibe la portada nueva (el service worker la sirve desde el movil).
+- Al subir, **no borrar los `a/*.js` de la publicacion anterior** hasta la siguiente: una pagina abierta a medias los puede pedir.
+- El worker (`worker/pub_wp_worker_index.js`) da cache de un ano a `/a/<nombre>-<huella>.js` y a `/tw/*.json?v=`.
+- `tw/<letra>.json`: los pueblos de `towns.json` partidos por la primera letra (lo hace `build.py`). `towns.json` se conserva.
+- `analytics_snip.py`: `snip(lang)`; la app lleva los 20 idiomas del aviso, las paginas sueltas el suyo + ingles.
+  `add(html)` cambia el script de rondas anteriores por el de ahora y su huella en la CSP. `patch_live.py` lo importa
+  (copia en `qa_r18/live_fix/analytics_snip.py`: mantener las dos iguales).
+- **Ojo con el worker `analytics-all`** (el que mete GA/Clarity en las webs que no lo llevan): mira el texto de los
+  `<script>` por trozos de ~3 KB. Si «clarity.ms/tag» cae en el corte no lo ve y mete su propio Clarity (la CSP lo
+  bloquea, pero ensucia la consola y la comprobacion byte a byte). Por eso el script lleva la marca tres veces
+  (principio, medio, final). Arreglarlo de raiz es cambiar ese worker (afecta a las 154 webs).
+- Parches de la plantilla, en orden: `qa_r22/patch_r22a_speed.py` … `patch_r22g_polish.py` (ya aplicados en `index.template.html`).
+- Pruebas nuevas: `python3 tests_r22/r22.py http://127.0.0.1:PUERTO/` (bienvenida desde el HTML, toques antes de tiempo,
+  idioma, teselas, pueblos, cookies, sin red). Servidor local que imita a Cloudflare (brotli, URLs limpias, cabeceras):
+  `python3 qa_r22/cfserve.py <carpeta> <puerto>`. Lighthouse: `qa_r22/lh.sh URL nombre`.
+- Arbol que se sube: `qa_r22/stage_r22.py` (work_osm + lo que ya esta en vivo + patch_live x2 + finish_sw) y
+  `qa_r22/mk_manifest.py` (que cambio respecto a lo publicado, en trozos .tgz).
+
+**Publicado:** `pub/_wp` 37207f7 (R22) y 604f637 (R22b, la marca triple). 8.613 + 8.560 ficheros.

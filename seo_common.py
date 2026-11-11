@@ -91,9 +91,21 @@ def set_csp(s):
     return s2
 
 
+def add_main(html):
+    """R22: toda pagina suelta lleva su zona principal marcada (lectores de pantalla saltan a ella).
+    Si el <body> empieza por la caja de la pagina (<div class="wrap">), esa caja es la zona
+    principal; si no, se envuelve el contenido en <main>."""
+    if '<main' in html or 'role="main"' in html or '<body' not in html:
+        return html
+    h2 = re.sub(r'(<body[^>]*>\s*<div class="(?:wrap|w)")', lambda m: m.group(1) + ' role="main"', html, count=1)
+    if h2 != html:
+        return h2
+    return re.sub(r'(<body[^>]*>)(.*)(</body>)', lambda m: m.group(1) + '<main>' + m.group(2) + '</main>' + m.group(3), html, count=1, flags=re.S)
+
+
 def finalize(html):
     """Lo ultimo antes de escribir una pagina suelta."""
-    return set_csp(clean_links(html))
+    return set_csp(clean_links(add_main(html)))
 
 
 # ---------------------------------------------------------------- nombres

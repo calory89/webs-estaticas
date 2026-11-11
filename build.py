@@ -856,6 +856,28 @@ try:
     open('towns.json','w',encoding='utf-8').write(json.dumps(towns,ensure_ascii=False,separators=(',',':')))
     print('pueblos:', len(towns), '| towns.json', round(os.path.getsize('towns.json')/1024), 'KB')
 except Exception as _ex: print('towns.json no generado:', _ex)
+# R22c: los pueblos, partidos por la primera letra (la que pide el buscador): tw/<letra>.json.
+# Un pueblo con nombre alternativo va tambien en la letra de ese nombre. towns.json se
+# conserva: lo siguen pidiendo las copias de la app que haya guardadas en moviles.
+try:
+    import unicodedata as _ud
+    def _tk(x):
+        x = _ud.normalize('NFD', x or ''); x = re.sub(r'[\u0300-\u036f]', '', x).lower()
+        c = x[:1]
+        if re.match(r'[a-z0-9]', c or ''): return c
+        cp = ord(c) if c else 0
+        if cp < 0x80: return '_'
+        return 'u%x' % (cp >> 8) if cp < 0x3000 else 'ucjk'      # igual que townKey() en la app
+    _tw = json.load(open('towns.json', encoding='utf-8')); _tb = {}
+    for _t in _tw:
+        for _k in {_tk(_t[0])} | ({_tk(_t[1])} if _t[1] else set()):
+            _tb.setdefault(_k, []).append(_t)
+    os.makedirs('tw', exist_ok=True)
+    for _f in os.listdir('tw'): os.remove(os.path.join('tw', _f))
+    for _k, _v in _tb.items():
+        open(os.path.join('tw', _k + '.json'), 'w', encoding='utf-8').write(json.dumps(_v, ensure_ascii=False, separators=(',', ':')))
+    print('pueblos por letra:', len(_tb), 'ficheros | el mayor', max(len(json.dumps(v, ensure_ascii=False)) for v in _tb.values()) // 1024, 'KB')
+except Exception as _ex: print('tw/ no generado:', _ex)
 html=open('index.template.html',encoding='utf-8').read()
 # Leaflet 1.9.4 vive en vendor/, dentro del proyecto. Antes se leia de /tmp:
 # el 22 de septiembre el contenedor se reinicio, /tmp se vacio y el build dejo
@@ -873,7 +895,8 @@ meta_desc = ('Free food, shelter, showers, clothes and help on one live map. %s 
              'across %s countries, in 20 languages. No account, no ads, no cost.'
              % (format(len(places), ',d'), format(ncities, ',d'), countries))
 import datetime as _dt
-html=html.replace("const BUILT = /*__BUILT__*/'';", "const BUILT = /*__BUILT__*/'%s';" % _dt.date.today().isoformat(), 1)
+# R22: SN_BUILT=2026-10-28 cuando se reconstruye la web sin datos nuevos (la fecha que se ensena es la de los datos)
+html=html.replace("const BUILT = /*__BUILT__*/'';", "const BUILT = /*__BUILT__*/'%s';" % (os.environ.get('SN_BUILT') or _dt.date.today().isoformat()), 1)
 html=html.replace('const STATS = /*__STATS__*/{places:0,cities:0,countries:0};',
                   'const STATS = /*__STATS__*/'+json.dumps(stats)+';',1)
 html=html.replace('__META_DESC__', meta_desc).replace('__CITYN__', format(ncities, ',d')).replace('__COUNTRYN__', str(countries))
@@ -1006,6 +1029,35 @@ for _f in sorted(os.listdir('l')):
     if _f.endswith('.json'): _lh.update(open(os.path.join('l', _f), 'rb').read())
 html = html.replace("const LANG_V = /*__LANGV__*/'';", "const LANG_V = /*__LANGV__*/'%s';" % _lh.hexdigest()[:8], 1)
 
+# ---- R22: script de arranque del <head> y bienvenida escrita en el HTML ----
+# El script del <head> necesita saber que idiomas hay, cuales van de derecha a
+# izquierda y la huella de las traducciones (para pedir ya el fichero del idioma).
+# La bienvenida lleva sus frases visibles en los 20 idiomas: asi sale en el idioma
+# de la persona con el primer trozo de HTML, sin esperar a la app.
+_jc = lambda o: json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+_langs_src = re.search(r'const LANGS = \[(.*?)\n\];', html, re.S).group(1)
+_rtl = re.findall(r"code:'(\w+)'[^}\n]*rtl:true", _langs_src)
+_native = dict(re.findall(r"code:'(\w+)',\s*name:['\"][^'\"]*['\"],\s*native:['\"]([^'\"]*)['\"]", _langs_src))
+assert len(_native) == len(LANG_CODES) and len(_rtl) >= 4, (_native, _rtl)
+_fa, _fb = obj_span(html, 'FALLBACK')
+_fallback = js_eval(html[_fa:_fb])
+_wa = html.index('<div class="modal wel" id="mWel"'); _wb = html.index('<details class="wel-more">', _wa)
+_wkeys = []
+for _k in re.findall(r'data-i18n="([^"]+)"', html[_wa:_wb]) + ['wel.more']:
+    if _k not in _wkeys: _wkeys.append(_k)
+_packs = {c: json.load(open(os.path.join('l', c + '.json'), encoding='utf-8'))['t'] for c in LANG_CODES if c != 'en'}
+_wel = {}
+for c in LANG_CODES:
+    if c == 'en': continue
+    fbp = _packs.get(_fallback.get(c), {})
+    _wel[c] = [_packs[c].get(k) or fbp.get(k) or '' for k in _wkeys]
+    assert _wel[c][0], ('sin wel.h', c)
+for _tok, _val in (('__BOOT_LANGS__', _jc(LANG_CODES)), ('__BOOT_FB__', _jc(_fallback)), ('__BOOT_RTL__', _jc(_rtl)),
+                   ('__BOOT_LANGV__', _lh.hexdigest()[:8]), ('__WEL_K__', _jc(_wkeys)), ('__WEL_T__', _jc(_wel)), ('__WEL_N__', _jc(_native))):
+    assert _tok in html, _tok
+    html = html.replace(_tok, _val)
+print('bienvenida en el HTML:', len(_wkeys), 'frases x', len(_wel), 'idiomas |', round(len(_jc(_wel).encode())/1024, 1), 'KB')
+
 # Minificar el JS propio y el CSS del fichero final (terser / csso, si estan).
 # Los comentarios y el espacio se quedan en la plantilla, que es lo que se lee;
 # el navegador de un movil de 80 euros no tiene por que descargarlos ni parsearlos.
@@ -1078,8 +1130,47 @@ def _csp(h):
     return h.replace('<meta charset="utf-8">', '<meta charset="utf-8">'+tag, 1) if '<meta charset="utf-8">' in h else _re.sub(r'(<head[^>]*>)', r'\1'+tag, h, count=1)
 import analytics_snip as _an
 html=_an.add(html)                   # GA4 + Clarity (R20)
+
+# ---- R22: Leaflet y la app, fuera del HTML ----
+# Antes todo iba dentro de index.html (709 KB; 293 KB por el cable, porque Cloudflare
+# comprime peor el HTML que reescribe). Ahora el HTML son el marcado y los estilos
+# (se pinta con el primer trozo) y el codigo va en a/<nombre>-<huella>.js: se baja en
+# paralelo, se compila fuera del hilo principal y se guarda un ano (el nombre cambia
+# si cambia una letra). El orden de ejecucion es el mismo: defer, uno detras de otro.
+def _split(h):
+    import re as _re, hashlib as _hl
+    os.makedirs('a', exist_ok=True)
+    made = []
+    def ext(m):
+        code = m.group(2)
+        if len(code) < 20000: return m.group(0)
+        name = 'leaflet' if 'Leaflet' in code[:400] else 'app'
+        fn = 'a/%s-%s.js' % (name, _hl.sha1(code.encode('utf-8')).hexdigest()[:10])
+        io.open(fn, 'w', encoding='utf-8', newline='').write(code)
+        made.append(fn)
+        return '<script defer src="%s"></script>' % fn
+    h = _re.sub(r'(<script(?![^>]*(?:type=|src=))[^>]*>)(.*?)</script>', ext, h, flags=_re.S)
+    assert len(made) == 2 and made[0].startswith('a/leaflet-') and made[1].startswith('a/app-'), made
+    for f in os.listdir('a'):
+        if 'a/' + f not in made and _re.match(r'(leaflet|app)-[0-9a-f]+\.js$', f): os.remove(os.path.join('a', f))
+    pre = ''.join('<link rel="preload" as="script" href="%s">' % f for f in made)
+    vp = _re.search(r'<meta name="viewport"[^>]*>', h)
+    h = h[:vp.end()] + pre + h[vp.end():]
+    return h, made
+if os.environ.get('NO_SPLIT'): SHELL = []
+else: html, SHELL = _split(html)
 if not os.environ.get('NO_CSP'): html=_csp(html)
 open('index.html','w',encoding='utf-8').write(html)
+# R22: el service worker guarda la portada y sus ficheros; lleva la huella de la
+# portada para enterarse de cualquier cambio (tools/finish_sw.py la vuelve a poner
+# despues de patch_live.py, que retoca el <head> de index.html)
+try:
+    _sw = io.open('sw.js', encoding='utf-8').read()
+    _sw2 = re.sub(r"const BUILD = /\*__BUILD__\*/'[^']*';", "const BUILD = /*__BUILD__*/'%s';" % hashlib.sha1(html.encode('utf-8')).hexdigest()[:10], _sw)
+    _sw2 = re.sub(r"const SHELL = /\*__SHELL__\*/\[[^\]]*\];", "const SHELL = /*__SHELL__*/%s;" % json.dumps(['./' + f for f in SHELL]), _sw2)
+    assert '/*__BUILD__*/' in _sw2 and '/*__SHELL__*/' in _sw2, 'sw.js sin huecos'
+    if _sw2 != _sw: io.open('sw.js', 'w', encoding='utf-8', newline='').write(_sw2)
+except Exception as _ex: print('sw.js no actualizado:', _ex)
 
 c=Counter(CATIDS[p[3]] for p in places)
 print('places:',len(places)); print(dict(c))

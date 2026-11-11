@@ -1,49 +1,56 @@
 # -*- coding: utf-8 -*-
-"""Medicion de SupportNear: GA4 + Microsoft Clarity, con aviso de cookies (R21, 29-oct-2026).
+"""Medicion de SupportNear: GA4 + Microsoft Clarity, con aviso de cookies.
 
-- Un solo <script> en linea en el <head> de cada pagina. Lleva el id de GA4 y
-  «clarity.ms/tag», asi el worker «analytics-all» de Cloudflare ve que la pagina
-  ya mide y no mete su propio codigo (que la CSP bloquearia).
+R22 (11-nov-2026), tres cambios sobre R21:
+- Microsoft Clarity YA NO se carga sin permiso en Europa. Aunque se le pida que no
+  use cookies propias, sus servidores ponen cookies de terceros (MUID en bing.com,
+  CLID en clarity.ms): se comprobo en un navegador limpio. Ahora Clarity y GA4 van
+  juntos: en Europa solo tras «Aceptar»; fuera de Europa sin preguntar; nunca tras
+  «Rechazar». El aviso nombra las dos herramientas.
+- Se cargan con el primer toque (o a los 5 s), no 1,5 s despues de la pagina: son
+  200 KB de JavaScript ajeno que competian con el mapa en moviles lentos.
+- El aviso es mas bajo (tapaba media lista en un movil) y las paginas sueltas solo
+  llevan su idioma y el ingles (antes los 20: 8 KB por pagina).
+
+Lo demas sigue igual:
+- Un solo <script> en linea en el <head>. Lleva el id de GA4 y «clarity.ms/tag»,
+  asi el worker «analytics-all» de Cloudflare ve que la pagina ya mide y no mete su
+  propio codigo (que la CSP bloquearia).
 - Nada si el navegador pide no ser rastreado (DNT / Global Privacy Control), ni en
-  el mapa incrustado en otras webs (?embed=1), ni con «ahorro de datos» o en 2G: la
-  web es para el movil mas barato. Y se carga 1,5 s despues de la pagina, no antes.
-- Aviso de cookies: en Europa (zona horaria Europe/*, Canarias, Azores, Madeira,
-  Islandia, Feroe, o desconocida) GA4 NO se carga hasta que la persona dice «Aceptar».
-  Si dice «Rechazar», nunca. Fuera de Europa se carga sin preguntar (se puede quitar
-  desde «Configurar cookies»). La eleccion se guarda en localStorage «sn.ck».
-- El aviso va por debajo de los cuadros de la app (z-index 1900 < 2000): no tapa sus botones.
+  el mapa incrustado en otras webs (?embed=1), ni con «ahorro de datos» o en 2G.
+- Europa = zona horaria Europe/*, Canarias, Azores, Madeira, Islandia, Feroe, o
+  desconocida. La eleccion se guarda en localStorage «sn.ck».
+- El aviso va por debajo de los cuadros de la app (z-index 1900 < 2000).
 - Cualquier elemento con el atributo data-sn-cookies se convierte en el boton
-  «Configurar cookies» (en /about y en «Lo que sabemos de ti»); window.snBind() lo
-  vuelve a enlazar si se pinta despues.
-- GA4: su cookie _ga solo con permiso; sin señales de Google ni anuncios; la URL sin
-  el #fragmento. Clarity: sin cookies propias (consentv2 denegado) y todo el texto
-  enmascarado; no pone cookies de la web, por eso no espera al aviso.
+  «Configurar cookies»; window.snBind() lo vuelve a enlazar si se pinta despues.
+- GA4 sin señales de Google ni anuncios, y la URL sin el #fragmento. Clarity con
+  todo el texto enmascarado.
 """
 GA_ID = 'G-FJKJE77K4V'
 CLARITY_ID = 'z4eqcmaic7'
 
 # [mensaje, aceptar, rechazar, privacidad, configurar cookies]
 TX = {
- 'en': ['May we use a Google Analytics cookie to count visits? It never learns who you are.', 'Accept', 'Reject', 'Privacy', 'Cookie settings'],
- 'es': ['¿Podemos usar una cookie de Google Analytics para contar las visitas? Nunca sabe quién eres.', 'Aceptar', 'Rechazar', 'Privacidad', 'Configurar cookies'],
- 'fr': ['Pouvons-nous utiliser un cookie de Google Analytics pour compter les visites ? Il ne sait jamais qui tu es.', 'Accepter', 'Refuser', 'Confidentialité', 'Réglages des cookies'],
- 'ar': ['هل يمكننا استخدام ملف كوكيز من Google Analytics لعدّ الزيارات؟ لا يعرف أبدًا من أنت.', 'قبول', 'رفض', 'الخصوصية', 'إعدادات الكوكيز'],
- 'uk': ['Чи можемо ми використовувати cookie Google Analytics, щоб рахувати відвідування? Він ніколи не знає, хто ти.', 'Прийняти', 'Відхилити', 'Приватність', 'Налаштування cookie'],
- 'ro': ['Putem folosi un cookie Google Analytics ca să numărăm vizitele? Nu află niciodată cine ești.', 'Accept', 'Refuz', 'Confidențialitate', 'Setări cookie-uri'],
- 'pl': ['Czy możemy użyć ciasteczka Google Analytics do liczenia odwiedzin? Nigdy nie wie, kim jesteś.', 'Akceptuję', 'Odrzucam', 'Prywatność', 'Ustawienia ciasteczek'],
- 'ru': ['Можно мы будем использовать cookie Google Analytics, чтобы считать посещения? Он никогда не узнаёт, кто ты.', 'Принять', 'Отклонить', 'Конфиденциальность', 'Настройки cookie'],
- 'pt': ['Podemos usar um cookie do Google Analytics para contar as visitas? Nunca sabe quem és.', 'Aceitar', 'Recusar', 'Privacidade', 'Definições de cookies'],
- 'ur': ['کیا ہم وزٹ گننے کے لیے Google Analytics کی ایک کوکی استعمال کر سکتے ہیں؟ اسے کبھی پتا نہیں چلتا کہ آپ کون ہیں۔', 'قبول', 'رد', 'رازداری', 'کوکی کی ترتیبات'],
- 'fa': ['آیا می‌توانیم برای شمردن بازدیدها از یک کوکی Google Analytics استفاده کنیم؟ هرگز نمی‌فهمد تو کیستی.', 'قبول', 'رد', 'حریم خصوصی', 'تنظیمات کوکی'],
- 'wo': ['Ndax mën nañu jëfandikoo ab cookie bu Google Analytics ngir waññ ñi ñëw? Du xam mukk ki nga doon.', 'Nangu', 'Bañ', 'Sutura', 'Tànn cookies yi'],
- 'bm': ['An bɛ se ka Google Analytics ka cookie kelen kɛ ka taamaw jate wa? A tɛ i dɔn abada.', 'Sɔn', 'Ban', 'Gundo', 'Cookies labɛncogo'],
- 'ti': ['ምብጻሓት ንምቑጻር ናይ Google Analytics cookie ክንጥቀም ንኽእልዶ? መን ምዃንካ ፈጺሙ ኣይፈልጥን።', 'ተቐበል', 'ኣይፋል', 'ብሕትውና', 'ምድላው cookies'],
- 'ps': ['ایا موږ کولی شو د لیدنو د شمېرلو لپاره د Google Analytics یوه کوکي وکاروو؟ هېڅکله نه پوهېږي چې ته څوک یې.', 'منل', 'ردول', 'محرمیت', 'د کوکیز تنظیمات'],
- 'so': ['Ma isticmaali karnaa cookie Google Analytics si aan u tirinno booqashooyinka? Weligeed ma oga cidda aad tahay.', 'Aqbal', 'Diid', 'Qarsoodinimo', 'Dejinta cookies'],
- 'am': ['ጉብኝቶችን ለመቁጠር የGoogle Analytics ኩኪ መጠቀም እንችላለን? ማን እንደሆንክ በጭራሽ አያውቅም።', 'ተቀበል', 'አትቀበል', 'ግላዊነት', 'የኩኪ ቅንብሮች'],
- 'tr': ['Ziyaretleri saymak için bir Google Analytics çerezi kullanabilir miyiz? Kim olduğunu asla bilmez.', 'Kabul et', 'Reddet', 'Gizlilik', 'Çerez ayarları'],
- 'bn': ['ভিজিট গুনতে আমরা কি Google Analytics-এর একটা কুকি ব্যবহার করতে পারি? এটা কখনো জানে না তুমি কে।', 'মেনে নাও', 'না', 'গোপনীয়তা', 'কুকি সেটিংস'],
- 'zh': ['我们可以使用一个 Google Analytics 的 Cookie 来统计访问吗？它永远不会知道你是谁。', '接受', '拒绝', '隐私', 'Cookie 设置'],
+ 'en': ["Cookies to count visits and see how the site is used? (Google Analytics, Microsoft Clarity)", "Accept", "Reject", "Privacy", "Cookie settings"],
+ 'es': ["¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)", "Aceptar", "Rechazar", "Privacidad", "Configurar cookies"],
+ 'fr': ["Des cookies pour compter les visites et voir comment le site est utilisé ? (Google Analytics, Microsoft Clarity)", "Accepter", "Refuser", "Confidentialité", "Réglages des cookies"],
+ 'ar': ["هل نستخدم ملفات كوكيز لعدّ الزيارات ومعرفة كيف يُستخدم الموقع؟ (Google Analytics، Microsoft Clarity)", "قبول", "رفض", "الخصوصية", "إعدادات الكوكيز"],
+ 'uk': ["Cookie, щоб рахувати відвідування й бачити, як користуються сайтом? (Google Analytics, Microsoft Clarity)", "Прийняти", "Відхилити", "Приватність", "Налаштування cookie"],
+ 'ro': ["Cookie-uri ca să numărăm vizitele și să vedem cum e folosit site-ul? (Google Analytics, Microsoft Clarity)", "Accept", "Refuz", "Confidențialitate", "Setări cookie-uri"],
+ 'pl': ["Ciasteczka do liczenia odwiedzin i sprawdzania, jak używana jest strona? (Google Analytics, Microsoft Clarity)", "Akceptuję", "Odrzucam", "Prywatność", "Ustawienia ciasteczek"],
+ 'ru': ["Cookie, чтобы считать посещения и видеть, как пользуются сайтом? (Google Analytics, Microsoft Clarity)", "Принять", "Отклонить", "Конфиденциальность", "Настройки cookie"],
+ 'pt': ["Cookies para contar as visitas e ver como o site é usado? (Google Analytics, Microsoft Clarity)", "Aceitar", "Recusar", "Privacidade", "Definições de cookies"],
+ 'ur': ["وزٹ گننے اور یہ دیکھنے کے لیے کہ سائٹ کیسے استعمال ہوتی ہے، کوکیز استعمال کریں؟ (Google Analytics، Microsoft Clarity)", "قبول", "رد", "رازداری", "کوکی کی ترتیبات"],
+ 'fa': ["کوکی برای شمردن بازدیدها و دیدن اینکه سایت چطور استفاده می‌شود؟ (Google Analytics، Microsoft Clarity)", "قبول", "رد", "حریم خصوصی", "تنظیمات کوکی"],
+ 'wo': ["Ndax mën nañu jëfandikoo ay cookies ngir waññ ñi ñëw te xam ni ñuy jëfandikoo site bi? (Google Analytics, Microsoft Clarity)", "Nangu", "Bañ", "Sutura", "Tànn cookies yi"],
+ 'bm': ["An bɛ se ka cookies kɛ ka taamaw jate ani k’a lajɛ site bɛ baara cogo min na wa? (Google Analytics, Microsoft Clarity)", "Sɔn", "Ban", "Gundo", "Cookies labɛncogo"],
+ 'ti': ["ምብጻሓት ንምቑጻርን እቲ መርበብ ከመይ ከም ዝጥቀም ንምርኣይን cookies ክንጥቀም ንኽእልዶ? (Google Analytics፣ Microsoft Clarity)", "ተቐበል", "ኣይፋል", "ብሕትውና", "ምድላው cookies"],
+ 'ps': ["د لیدنو د شمېرلو او دا چې سایټ څنګه کارول کېږي د لیدلو لپاره کوکیز وکاروو؟ (Google Analytics، Microsoft Clarity)", "منل", "ردول", "محرمیت", "د کوکیز تنظیمات"],
+ 'so': ["Cookies si aan u tirinno booqashooyinka oo aan u aragno sida bogga loo isticmaalo? (Google Analytics, Microsoft Clarity)", "Aqbal", "Diid", "Qarsoodinimo", "Dejinta cookies"],
+ 'am': ["ጉብኝቶችን ለመቁጠር እና ድረ-ገጹ እንዴት እንደሚጠቀሙበት ለማየት ኩኪዎችን እንጠቀም? (Google Analytics፣ Microsoft Clarity)", "ተቀበል", "አትቀበል", "ግላዊነት", "የኩኪ ቅንብሮች"],
+ 'tr': ["Ziyaretleri saymak ve sitenin nasıl kullanıldığını görmek için çerez kullanalım mı? (Google Analytics, Microsoft Clarity)", "Kabul et", "Reddet", "Gizlilik", "Çerez ayarları"],
+ 'bn': ["ভিজিট গুনতে আর সাইট কীভাবে ব্যবহার হয় তা দেখতে কুকি ব্যবহার করব? (Google Analytics, Microsoft Clarity)", "মেনে নাও", "না", "গোপনীয়তা", "কুকি সেটিংস"],
+ 'zh': ["可以用 Cookie 统计访问并了解网站的使用情况吗？（Google Analytics、Microsoft Clarity）", "接受", "拒绝", "隐私", "Cookie 设置"],
 }
 
 _JS = r"""
@@ -63,46 +70,78 @@ w.dataLayer=w.dataLayer||[];function g(){dataLayer.push(arguments)}w.gtag=g;
 g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:ok?'granted':'denied'});
 g('js',new Date());g('config','__GA__',{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname+location.search});
 w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};
-w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'denied'});w.clarity('set','site','supportnear');
+function cv(){w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:ok?'granted':'denied'})}
+cv();w.clarity('set','site','supportnear');
 d.documentElement.setAttribute('data-clarity-mask','True');
 function a(s){var e=d.createElement('script');e.async=1;e.src=s;d.head.appendChild(e)}
-function ga(){if(gl||!ready)return;gl=1;a('https://www.googletagmanager.com/gtag/js?id=__GA__')}
-function set(v){try{localStorage.setItem(K,v?'1':'0')}catch(e){}ch=v?'1':'0';ok=!!v;g('consent','update',{analytics_storage:v?'granted':'denied'});if(v)ga();else d.cookie.split(';').forEach(function(c){var k=c.split('=')[0].trim();if(/^_ga/.test(k)){var h=location.hostname;[h,'.'+h,'.'+h.split('.').slice(-2).join('.')].forEach(function(dm){d.cookie=k+'=;Max-Age=0;path=/;domain='+dm});d.cookie=k+'=;Max-Age=0;path=/'}});var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b)}
-function btn(t,y){var b=d.createElement('button');b.type='button';b.textContent=t;b.style.cssText='flex:1;min-height:44px;border-radius:12px;font-weight:600;font-size:15px;line-height:1.2;font-family:inherit;cursor:pointer;padding:8px 12px;'+(y?'background:#0B7A63;color:#fff;border:1.5px solid #0B7A63':'background:transparent;color:inherit;border:1.5px solid currentColor');b.addEventListener('click',function(){set(y)});return b}
+function load(){if(gl||!ready||!ok)return;gl=1;a('https://www.googletagmanager.com/gtag/js?id=__GA__');a('https://www.clarity.ms/tag/__CL__')}
+function set(v){try{localStorage.setItem(K,v?'1':'0')}catch(e){}ch=v?'1':'0';ok=!!v;g('consent','update',{analytics_storage:v?'granted':'denied'});cv();if(v){ready=1;load()}else d.cookie.split(';').forEach(function(c){var k=c.split('=')[0].trim();if(/^_(ga|clck|clsk)/.test(k)){var h=location.hostname;[h,'.'+h,'.'+h.split('.').slice(-2).join('.')].forEach(function(dm){d.cookie=k+'=;Max-Age=0;path=/;domain='+dm});d.cookie=k+'=;Max-Age=0;path=/'}});var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b)}
+function btn(t,y){var b=d.createElement('button');b.type='button';b.textContent=t;b.style.cssText='flex:1;min-height:40px;border-radius:10px;font-weight:600;font-size:14px;line-height:1.2;font-family:inherit;cursor:pointer;padding:6px 10px;'+(y?'background:#0B7A63;color:#fff;border:1.5px solid #0B7A63':'background:transparent;color:inherit;border:1.5px solid currentColor');b.addEventListener('click',function(){set(y)});return b}
 function bar(hi){if(d.getElementById('sn-ck')||!d.body)return;var dk=d.documentElement.getAttribute('data-theme')=='dark'||(!d.documentElement.getAttribute('data-theme')&&w.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
 var b=d.createElement('div');b.id='sn-ck';b.setAttribute('role','region');b.setAttribute('aria-label',tx(4));
-b.style.cssText='position:fixed;z-index:'+(hi?2600:1900)+';left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:440px;margin:0 auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.25);padding:14px 16px;font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;'+(dk?'background:#1d2228;color:#eef0f2;border:1px solid #3a424c':'background:#fff;color:#1c1916;border:1px solid #d9d2c5');
-var p=d.createElement('p');p.style.cssText='margin:0 0 12px';p.textContent=tx(0)+' ';var m=d.createElement('a');m.href='/about';m.textContent=tx(3);m.style.cssText='color:inherit;text-decoration:underline';p.appendChild(m);
-var r=d.createElement('div');r.style.cssText='display:flex;gap:8px';r.appendChild(btn(tx(1),1));r.appendChild(btn(tx(2),0));b.appendChild(p);b.appendChild(r);d.body.appendChild(b)}
+b.style.cssText='position:fixed;z-index:'+(hi?2600:1900)+';left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-width:470px;margin:0 auto;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.22);padding:10px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:13.5px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;'+(dk?'background:#1d2228;color:#eef0f2;border:1px solid #3a424c':'background:#fff;color:#1c1916;border:1px solid #d9d2c5');
+var p=d.createElement('p');p.style.cssText='margin:0;flex:1 1 210px;min-width:0';p.textContent=tx(0)+' ';var m=d.createElement('a');m.href='/about';m.textContent=tx(3);m.style.cssText='color:inherit;text-decoration:underline;white-space:nowrap';p.appendChild(m);
+var r=d.createElement('div');r.style.cssText='display:flex;gap:8px;flex:1 1 170px';r.appendChild(btn(tx(1),1));r.appendChild(btn(tx(2),0));b.appendChild(p);b.appendChild(r);d.body.appendChild(b)}
 w.snCookies=function(){var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b);bar(1)};
-function go(){ready=1;a('https://www.clarity.ms/tag/__CL__');if(ok)ga();if(eu&&ch==null)bar()}
-if(d.readyState=='complete')setTimeout(go,1500);else w.addEventListener('load',function(){setTimeout(go,1500)})
+function go(){if(ready)return;ready=1;load()}
+function arm(){['pointerdown','keydown','touchstart','scroll'].forEach(function(v){w.addEventListener(v,go,{once:true,passive:true,capture:true})});setTimeout(go,5000);if(eu&&ch==null)setTimeout(bar,1500)}
+if(d.readyState=='complete')arm();else w.addEventListener('load',arm)
 })(window,document,navigator);
 """
 
 
-def _build():
-    import json, re
-    js = _JS.replace('__TX__', json.dumps(TX, ensure_ascii=False, separators=(',', ':'))).replace('__GA__', GA_ID).replace('__CL__', CLARITY_ID)
+def snip(lang=None):
+    """El <script>. Sin `lang`, con los 20 idiomas (la app, que cambia de idioma sin recargar);
+    con `lang`, solo ese y el ingles (las paginas sueltas)."""
+    import json
+    tx = TX if not lang else {k: TX[k] for k in dict.fromkeys(['en', lang if lang in TX else 'en'])}
+    js = _JS.replace('__TX__', json.dumps(tx, ensure_ascii=False, separators=(',', ':'))).replace('__GA__', GA_ID).replace('__CL__', CLARITY_ID)
     js = '\n'.join(l.strip() for l in js.strip().splitlines())
     js = js.replace('\n', '')
     assert '</' not in js.replace('<\\/', '')
-    return '<script>' + js + '</script>'
+    # R22h: el worker «analytics-all» de Cloudflare mira el texto de los <script> por trozos; si «clarity.ms/tag»
+    # cae justo en el corte de un trozo (pasa hacia el byte 3010 de la pagina) no lo ve y mete su propio Clarity,
+    # que la CSP bloquea. La marca va tambien al principio y al final: un corte no puede partir las tres.
+    return '<script>/*clarity.ms/tag %s*/' % GA_ID + js + '/*clarity.ms/tag*/</script>'
 
 
-SNIP = _build()
+SNIP = snip()
+SNIP_RX = r'<script>(?:/\*clarity\.ms/tag [\w-]+\*/)?\(function\(w,d,n\)\{var T=\{"en":\[.*?\}\)\(window,document,navigator\);(?:/\*clarity\.ms/tag\*/)?</script>'
 CSP_SCRIPT = 'https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms'
 CSP_CONNECT = ('https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com '
                'https://*.clarity.ms https://c.bing.com')
 CSP_IMG = 'https://*.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com'
 
 
-def add(html):
-    """Mete SNIP en el <head> (tras <meta charset>) si la pagina aun no mide."""
+def page_snip(html):
+    """El que le toca a esta pagina: completo en la app, su idioma + ingles en las demas."""
     import re
-    if GA_ID in html or '<head' not in html:
+    if 'id="mWel"' in html or 'var RTL' in html or 'documentElement.lang' in html:
+        return SNIP          # la app y las paginas que cambian de idioma sin recargar
+    m = re.search(r'<html[^>]*\blang="([A-Za-z]{2})', html)
+    return snip(m.group(1).lower() if m else 'en')
+
+
+def _hash(tag):
+    import base64, hashlib
+    return base64.b64encode(hashlib.sha256(tag[len('<script>'):-len('</script>')].encode('utf-8')).digest()).decode()
+
+
+def add(html):
+    """Mete el script en el <head> (tras <meta charset>) si la pagina aun no mide. Si lleva uno
+    de una ronda anterior, lo cambia por el de ahora (y su huella en la CSP, si la pagina la
+    lleva escrita a mano)."""
+    import re
+    if '<head' not in html:
         return html
+    new = page_snip(html)
+    if GA_ID in html:
+        m = re.search(SNIP_RX, html, re.S)
+        if not m or m.group(0) == new:
+            return html
+        old = m.group(0)
+        return html.replace(old, new).replace('sha256-' + _hash(old), 'sha256-' + _hash(new))
     m = re.search(r'<meta charset="utf-8">', html, re.I)
     if m:
-        return html[:m.end()] + SNIP + html[m.end():]
-    return re.sub(r'(<head[^>]*>)', lambda x: x.group(1) + SNIP, html, count=1)
+        return html[:m.end()] + new + html[m.end():]
+    return re.sub(r'(<head[^>]*>)', lambda x: x.group(1) + new, html, count=1)

@@ -85,6 +85,21 @@
 <!-- Sin tipografias externas a proposito: la hoja de Google Fonts bloquea el
      pintado y en una red mala, o donde Google esta bloqueado, la app tardaba
      12 segundos en aparecer. Se usa la tipografia del propio telefono. -->
+<script>(function(w,d){var e=d.documentElement,q=location.search,s=w.__sn={},ls=null;
+try{ls=w.localStorage}catch(x){}
+function g(k){try{return JSON.parse(ls.getItem('sn.'+k))}catch(x){return null}}
+function P(k){var m=new RegExp('[?&]'+k+'=([^&#]*)').exec(q);if(!m)return'';try{return decodeURIComponent(m[1].replace(/\+/g,' '))}catch(x){return m[1]}}
+var th=g('theme');e.setAttribute('data-theme',th==='dark'||th==='light'?th:(w.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+if(g('big'))e.classList.add('big');if(g('calm'))e.classList.add('calm');if(g('lite')===1)e.classList.add('lite');
+var emb=P('embed')==='1',kio=P('kiosk')==='1';if(kio)e.classList.add('big','kiosk');
+var LC=__BOOT_LANGS__,FB=__BOOT_FB__,RTL=__BOOT_RTL__;
+function bl(){try{var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en'];for(var i=0;i<l.length;i++){var c=String(l[i]).toLowerCase().split('-')[0];if(LC.indexOf(c)>-1)return c;if(FB[c]&&LC.indexOf(FB[c])>-1)return FB[c]}}catch(x){}return'en'}
+var ql=P('lang'),L=LC.indexOf(ql)>-1?ql:(g('langManual')?(g('lang')||'en'):bl());if(LC.indexOf(L)<0)L='en';s.lang=L;
+if(L!=='en'){e.lang=L;if(RTL.indexOf(L)>-1)e.dir='rtl';e.classList.add('pre');setTimeout(function(){e.classList.remove('pre')},9000);
+[L,FB[L]].forEach(function(c){if(!c||c==='en')return;var k=null;try{k=ls.getItem('sn.tr:'+c+':__BOOT_LANGV__')}catch(x){}
+if(!k){var p=d.createElement('link');p.rel='preload';p.as='fetch';p.crossOrigin='anonymous';p.href='l/'+c+'.json?v=__BOOT_LANGV__';d.head.appendChild(p)}})}
+s.wel=!emb&&!kio&&!P('city')&&location.hash.indexOf('#p=')!==0&&(P('welcome')==='1'||(!P('sos')&&!P('now')&&!P('need')&&!g('welcomed')&&!g('last')));
+})(window,document);</script>
 <style>/*__LEAFLET_CSS__*/</style>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B7A63'/%3E%3Cpath d='M32 14c-8.3 0-15 6.5-15 14.6C17 39.6 32 52 32 52s15-12.4 15-23.4C47 20.5 40.3 14 32 14z' fill='%23fff'/%3E%3Cpath d='M32 21v15M24.5 28.5h15' stroke='%230B7A63' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
@@ -853,6 +868,39 @@ html[data-theme="dark"] .tag--age.age-ok{color:#7fd1b0} html[data-theme="dark"] 
 html.big .chip,html.big .btn{min-height:48px}
 .leaflet-control-attribution{font-size:10px}
 .modal.on{display:flex}
+
+/* R22: bienvenida pintada desde el HTML (clase «pre», antes de que arranque la app) */
+/* R22g: acabado en el movil */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a,button,input,select,summary,[role="button"],.card,.chip{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.btn:active,.chip:active,.iconbtn:active,.callbtn:active,.fab:active,.plan-r:active{transform:scale(.97)}
+.card:active{transform:scale(.992)}
+html.calm .btn:active,html.calm .chip:active,html.calm .iconbtn:active,html.calm .callbtn:active,html.calm .fab:active,html.calm .plan-r:active,html.calm .card:active{transform:none}
+@media (prefers-reduced-motion:reduce){ .btn:active,.chip:active,.iconbtn:active,.callbtn:active,.fab:active,.plan-r:active,.card:active{transform:none} }
+@media (max-width:640px){
+  .modal-bg{backdrop-filter:none;-webkit-backdrop-filter:none}
+  .tags{row-gap:20px;max-height:30px} html.big .tags{max-height:34px}
+}
+/* R22f: la segunda linea de la cabecera baja entera si no cabe, en vez de cortarse en la distancia */
+@media (max-width:640px){ .panel-head .sub{flex:1 1 auto} }
+/* R22e: la fila de etiquetas con boton «Llamar» mide lo que el boton (antes lo cortaba) */
+@media (max-width:640px){ .tags.tags--call{max-height:36px;align-items:center} html.big .tags.tags--call{max-height:42px} }
+/* R22e: las necesidades de la bienvenida son botones */
+.wel-needs button{display:flex;flex-direction:column;align-items:center;gap:5px;font:inherit;font-size:11.5px;color:var(--ink-2);text-align:center;padding:9px 2px;border-radius:10px;background:var(--paper-3);border:1px solid transparent;cursor:pointer;min-height:44px;-webkit-tap-highlight-color:transparent}
+.wel-needs button:hover{border-color:var(--line-2)} .wel-needs button:active{transform:scale(.97)}
+.wel-needs button.busy{border-color:var(--brand);opacity:.8}
+@media (max-width:480px){ .wel-needs button{font-size:10.5px} }
+@media (max-width:640px){ .wel-needs button{padding:7px 2px;font-size:10px} }
+/* R22d: sitio reservado para lo que pinta la app al arrancar */
+.filterwrap{min-height:63px} html.big .filterwrap{min-height:71px} body.is-embed .filterwrap{min-height:0}
+@media (min-width:641px){ .panel-head .sub{min-height:17px} }
+.modal.pre{display:flex}
+@media (max-width:640px){ .modal.pre .modal-box{transform:none} }
+.btn.busy{position:relative;pointer-events:none;opacity:.8}
+.btn.busy::after{content:"";width:16px;height:16px;border-radius:50%;border:2.5px solid currentColor;border-inline-end-color:transparent;animation:spin .7s linear infinite;margin-inline-start:10px;flex:none}
+/* R22: hasta que llega su idioma no se ensena el ingles de la app (la bienvenida ya va traducida) */
+html.pre #app [data-i18n],html.pre #panelTitle,html.pre #panelSub{visibility:hidden}
+html.pre #q::placeholder{color:transparent}
 .modal-bg{position:absolute;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(3px)}
 .modal-box{position:relative;background:var(--paper-2);border-radius:var(--r-l);max-width:520px;width:100%;
   max-height:88vh;overflow-y:auto;box-shadow:var(--shadow-2);padding:26px}
@@ -1349,7 +1397,7 @@ html[data-theme="dark"] .wel-needs .wn5{--cc:var(--c-legal)}
         <h2 id="panelTitle">Nearby help</h2>
         <div class="sub" id="panelSub" role="status" aria-live="polite">Locating you…</div>
       </div>
-      <div class="list" id="list" tabindex="-1"></div>
+      <div class="list" id="list" tabindex="-1"><div style="padding:8px" aria-hidden="true"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>
       <button type="button" class="topbtn" id="topBtn"><svg class="icon icon--s" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span></span></button>
     </aside>
 
@@ -1400,12 +1448,12 @@ html[data-theme="dark"] .wel-needs .wn5{--cc:var(--c-legal)}
     <div class="wel-logo"><span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></span><b>SupportNear</b></div>
     <h1 id="welH" data-i18n="wel.h">Free help near you</h1>
     <p class="lede" data-i18n="wel.p">Food, a bed for tonight, a shower, a doctor, clothes, legal help: on one map, from wherever you are standing. Free, no account, in 20 languages, and it keeps working with no signal.</p>
-    <div class="wel-needs" aria-hidden="true">
-      <span class="wn1"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8a3 3 0 0 0 6 0V3M8 3v18M17 3c-2 0-3 3-3 6v3h3v9"/></svg><em data-i18n="plan.food">Eat</em></span>
-      <span class="wn2"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-8h18v8M3 14h18M6 10V7h5v3M3 21v-3M21 21v-3"/></svg><em data-i18n="plan.sleep">Sleep</em></span>
-      <span class="wn3"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8a4 4 0 0 1 8 0M8 12h10M10 15v.01M13 15v.01M16 15v.01M11 18v.01M14 18v.01"/></svg><em data-i18n="show.shower">A shower</em></span>
-      <span class="wn4"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/><circle cx="12" cy="12" r="9"/></svg><em data-i18n="show.doctor">A doctor</em></span>
-      <span class="wn5"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h6M9 16h6"/></svg><em data-i18n="show.papers">Help with papers</em></span>
+    <div class="wel-needs">
+      <button type="button" class="wn1" data-need="food"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8a3 3 0 0 0 6 0V3M8 3v18M17 3c-2 0-3 3-3 6v3h3v9"/></svg><em data-i18n="plan.food">Eat</em></button>
+      <button type="button" class="wn2" data-need="shelter"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-8h18v8M3 14h18M6 10V7h5v3M3 21v-3M21 21v-3"/></svg><em data-i18n="plan.sleep">Sleep</em></button>
+      <button type="button" class="wn3" data-need="hygiene"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8a4 4 0 0 1 8 0M8 12h10M10 15v.01M13 15v.01M16 15v.01M11 18v.01M14 18v.01"/></svg><em data-i18n="show.shower">A shower</em></button>
+      <button type="button" class="wn4" data-need="health"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/><circle cx="12" cy="12" r="9"/></svg><em data-i18n="show.doctor">A doctor</em></button>
+      <button type="button" class="wn5" data-need="legal,social"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h6M9 16h6"/></svg><em data-i18n="show.papers">Help with papers</em></button>
     </div>
     <div class="wel-cta"><button type="button" class="btn btn--primary" id="welLoc"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3.2M12 18.8V22M22 12h-3.2M5.2 12H2"/><circle cx="12" cy="12" r="8"/></svg><span data-i18n="wel.loc">Use my location</span></button>
     <p class="wel-locp" data-i18n="wel.locp">Only used to find help near you. We never store it; public map servers receive it to show places, weather and walking routes.</p></div>
@@ -1423,6 +1471,15 @@ html[data-theme="dark"] .wel-needs .wn5{--cc:var(--c-legal)}
     </details>
   </div>
 </div>
+<script>(function(w,d){var s=w.__sn;if(!s||!s.wel)return;var m=d.getElementById('mWel');if(!m)return;
+var K=__WEL_K__,W=__WEL_T__,N=__WEL_N__,L=s.lang,t=W[L];
+if(t)[].forEach.call(m.querySelectorAll('[data-i18n]'),function(el){var i=K.indexOf(el.getAttribute('data-i18n'));if(i>-1&&t[i])el.textContent=t[i]});
+var b=d.getElementById('welLangs'),top=[L].concat(['en','es','fr','ar','uk'].filter(function(x){return x!==L})).slice(0,5);
+if(b)b.innerHTML=top.map(function(c){return'<button type="button" data-l="'+c+'" aria-pressed="'+(c===L)+'" lang="'+c+'">'+N[c]+'</button>'}).join('')+'<button type="button" data-l="*">…</button>';
+m.classList.add('pre');
+m.addEventListener('click',function(ev){if(w.__snReady)return;var x=ev.target.closest&&ev.target.closest('#welLoc,#welCity,[data-close],[data-l],[data-need]');if(!x)return;
+s.intent=x.id||(x.hasAttribute('data-close')?'close':x.hasAttribute('data-need')?'need:'+x.getAttribute('data-need'):'lang:'+x.getAttribute('data-l'));if(x.id||x.hasAttribute('data-need'))x.classList.add('busy')});
+})(window,document);</script>
 
 <div class="modal" id="mShow" role="dialog" aria-modal="true" aria-labelledby="showT">
   <div class="modal-bg" data-close></div>
@@ -13839,7 +13896,9 @@ Object.defineProperty(window,'MAXD',{get(){ return S.wide ? MAXD_BASE*4 : MAXD_B
 // El texto largo («Busca una ciudad, calle o estacion…») solo si cabe entero
 // en la caja tal como esta ahora; si no, el corto. Antes se miraba el ancho de
 // la ventana y en tablets y en arabe salia cortado igual.
-function fitQ(){
+// R22b: se mide en el siguiente fotograma (y una sola vez aunque se pida diez)
+function fitQ(){ if(fitQ.raf) return; fitQ.raf=requestAnimationFrame(()=>{ fitQ.raf=0; fitQNow(); }); }
+function fitQNow(){
   const q=$('#q'); if(!q) return;
   const w=q.clientWidth||0, long=t('ui.search');
   let fits=w>0;
@@ -14023,7 +14082,9 @@ function initMap(){
     attribution: ATTR_ESRI
   });
   document.documentElement.classList.toggle('tiles-inverted', theme()==='dark');
-  if(!document.documentElement.classList.contains('lite')) layer.addTo(map);
+  // R22: con la bienvenida delante no se bajan teselas (350 KB de una ciudad adivinada)
+  S.holdTiles = !!(window.__sn && window.__sn.wel) && window.innerWidth<=640;   // R22d: solo en el movil
+  if(!document.documentElement.classList.contains('lite') && !S.holdTiles) layer.addTo(map);
   // Leaflet dispara «tileload» tambien cuando la tesela ha fallado: despues de
   // fallar le pone encima errorTileUrl y eso cuenta como cargada. Asi que tileOk
   // se ponia a true con el mapa entero en gris, y el aviso de «estas sin
@@ -14155,6 +14216,7 @@ let markerOf = {};    // id -> marcador del grupo que lo contiene (para resaltar
 const RAD = Math.PI/180;
 function renderMarkers(){
   if(!map||!mapReady()) return;
+  if(S.holdTiles) return;   // R22d: con la bienvenida delante (movil) no se pintan pines: se pintan al cerrarla
   // durante la animacion de zoom Leaflet coloca mal lo que se anade: se espera
   if(map._animatingZoom){ if(!renderMarkers._wait){ renderMarkers._wait=1; map.once('zoomend',()=>{ renderMarkers._wait=0; renderMarkers(); }); } return; }
   if(!cluster) cluster = L.layerGroup().addTo(map);
@@ -14694,7 +14756,7 @@ function cardHTML(p){
       +(lbl?'<span class="card-s" style="--cc:'+CATMAP[p.cat].color+'">'+esc(lbl)+'</span>':'')
       +'<span class="card-m"><b>'+km(p.d||0)+'</b>'+(walkable(p.d)?'<span>·</span><span>'+walkTxt(p.d)+'</span>':'')
         +((!p.auto && (p.addr||p.near))?'<span class="card-a">'+esc(p.addr?p.addr.split(',')[0]:t('ui.nearstreet',{s:p.near}))+'</span>':'')+'</span>'
-      +'<span class="tags">'+statusTag(p)+hrs+repTag(p)+verTag(p)+ageTag(p)+forTags(p)+(officeLike(p)?'<span class="tag tag--dim">'+esc(t('ui.office'))+'</span>':'')+call+'</span>'
+      +'<span class="tags'+(call?' tags--call':'')+'">'+statusTag(p)+hrs+repTag(p)+verTag(p)+ageTag(p)+forTags(p)+(officeLike(p)?'<span class="tag tag--dim">'+esc(t('ui.office'))+'</span>':'')+call+'</span>'
     +'</span></div>';
 }
 /* Cuando se toco por ultima vez en el mapa abierto, en la propia tarjeta: verde
@@ -15760,19 +15822,30 @@ function openWelcome(){
       const mine=CITIES.filter(c=>c[4]===cc).slice(0,5);
       const b=nav.querySelector('b');
       mine.slice().reverse().forEach(c=>{
-        const href='c/'+slugCity(c[0])+'.html';
+        const href='c/'+slugCity(c[0]);
         const old=nav.querySelector('a[href="'+href+'"]'); if(old) old.remove();
         const a=document.createElement('a'); a.href=href; a.textContent=cityName(c);
         if(b) b.after(document.createTextNode(' '),a); else nav.prepend(a);
       });
     }
   }catch(e){}
-  $('#mWel').classList.add('on'); document.body.style.overflow='hidden';
+  $('#mWel').classList.remove('pre'); $('#mWel').classList.add('on'); document.body.style.overflow='hidden';
   // p5: con raton o teclado el foco va al boton; en tactil a la caja del cuadro
   // (lo hace el gestor de foco), sin el anillo grueso sobre «Usar mi ubicacion»
   if(window.matchMedia && matchMedia('(pointer:fine)').matches) setTimeout(()=>{ try{ $('#welLoc').focus({preventScroll:true,focusVisible:false}); }catch(e){} },50);
 }
-function closeWelcome(){ store.set('welcomed',1); $('#mWel').classList.remove('on'); document.body.style.overflow=''; }
+/* R22e: «Comer», «Dormir»… en la bienvenida: el mapa abre con ese filtro y pide la ubicacion */
+function wireWelNeeds(){
+  $$('#mWel .wel-needs [data-need]').forEach(b=>{ b.onclick=()=>{
+    const ids=String(b.dataset.need||'').split(',').filter(x=>CATIDS.includes(x));
+    if(ids.length){ S.filters=new Set(ids); S.limit=(window.innerWidth<=640?12:24); try{ saveFlt(); }catch(e){} try{ buildFilters(); }catch(e){} tally('need', ids[0]); }
+    closeWelcome(); geolocate(true);
+  }; });
+}
+function closeWelcome(){ store.set('welcomed',1); $('#mWel').classList.remove('on','pre'); document.body.style.overflow=''; showTiles(); }
+function showTiles(){ if(!S.holdTiles) return; S.holdTiles=false;
+  try{ if(map && layer && !map.hasLayer(layer) && !document.documentElement.classList.contains('lite')) layer.addTo(map); }catch(e){}
+  try{ renderMarkers(); }catch(e){} }
 /* Cerrar la bienvenida con la X dejaba la lista vacia preguntando otra vez.
    Si el movil dice en que pais esta (idioma o zona horaria), se ensena ya su
    ciudad principal con una linea arriba: «¿No es aqui? Usa tu ubicacion». */
@@ -16080,7 +16153,23 @@ function browserLang(){
    trozos de datos. La primera vez cuesta una peticion; a partir de ahi esta
    guardado en el movil y no se vuelve a pedir ni hace falta conexion. */
 const LANG_MEM = {};
-function langKey(c){ return 'tr:'+c+':'+DATA_V; }
+function langKey(c){ return 'tr:'+c+':'+(LANG_V||DATA_V); }   // R22: huella de las traducciones, no de los datos
+/* R22: lo que ya esta guardado en el movil se lee en el acto, sin esperar a nada */
+function primeLang(c){
+  try{
+    if(!c || c==='en' || T[c]) return;
+    const fb=FALLBACK[c];
+    if(fb && fb!=='en' && !T[fb]){ primeLang(fb); if(!T[fb]) return; }
+    const cached=store.get(langKey(c));
+    if(cached && typeof cached==='object' && (cached.t||cached)['wel.h']){
+      T[c]=LANG_MEM[c]=cached.t || cached;
+      if(cached.sub) SUB[c]=cached.sub;
+      if(cached.lbl) LBL[c]=cached.lbl;
+      if(cached['for']) FOR_LBL[c]=cached['for'];
+      if(cached.cities) CITY_L[c]=cached.cities;
+    }
+  }catch(e){}
+}
 async function ensureLang(c){
   if(!c || c==='en') return;
   // wolof y bambara se apoyan en el frances para lo que no tengan traducido
@@ -16121,6 +16210,7 @@ async function ensureLang(c){
 }
 async function setLang(code, manual){
   await ensureLang(code);
+  if(S.langHold===code && !T[code]) S.langHold=null;   // R22: no llego su idioma: se queda el ingles, entero
   applyLang(code, manual);
 }
 
@@ -16128,17 +16218,24 @@ function applyLang(code, manual){
   // Antes se contaba el idioma al arrancar, antes de que el navegador ni la
   // persona eligieran: todo salia «en». Ahora se cuenta el primero que se
   // aplica de verdad, una vez por visita.
-  if(S.tallyLang && T[code]){ S.tallyLang=0; setTimeout(()=>tally('lang', code), 1200); }
+  if(S.tallyLang && T[code] && !(S.langHold && code==='en')){ S.tallyLang=0; setTimeout(()=>tally('lang', code), 1200); }
   LANG = T[code]?code:'en';
   store.set('lang',LANG);
-  if(manual) store.set('langManual',1);
+  if(manual){ store.set('langManual',1); S.langHold=null; }
+  // R22: mientras llega el idioma de la persona, la bienvenida (ya traducida en el HTML)
+  // y la direccion de la pagina no pasan por el ingles
+  if(S.langHold && LANG===S.langHold) S.langHold=null;
+  const hold = !!S.langHold && LANG==='en';
   const meta = LANGS.find(l=>l.code===LANG)||LANGS[0];
-  document.documentElement.lang = LANG;
-  document.documentElement.dir = meta.rtl?'rtl':'ltr';
+  if(!hold){
+    document.documentElement.lang = LANG;
+    document.documentElement.dir = meta.rtl?'rtl':'ltr';
+    document.documentElement.classList.remove('pre');
+  }
   if(LANG!=='en' && !EMBED){ document.title = t('wel.h') + ' — SupportNear'; const md=document.querySelector('meta[name="description"]'); if(md && t('wel.p',null,true)) md.setAttribute('content', t('wel.p')); }
   applyNd();
-  $$('[data-i18n]').forEach(el=>{ el.textContent = t(el.dataset.i18n); });
-  if($('#mWel') && $('#mWel').classList.contains('on') && typeof openWelcome==='function') setTimeout(openWelcome,0);
+  $$('[data-i18n]').forEach(el=>{ if(hold && el.closest('#mWel')) return; el.textContent = t(el.dataset.i18n); });
+  if(!hold && $('#mWel') && $('#mWel').classList.contains('on') && typeof openWelcome==='function') setTimeout(openWelcome,0);
   $$('[data-i18n-html]').forEach(el=>{ el.innerHTML = t(el.dataset.i18nHtml); });
   // A 360 px el hueco del buscador da para «Busca una ciuda…». Cortado no dice
   // nada; corto entero si. La lupa ya explica para que sirve la caja.
@@ -16344,6 +16441,8 @@ function geolocate(explicit){
     setSub(''); if(explicit) geoHelp('s'); return;
   }
   setSub(t('ui.locating'));
+  // R22e: mientras la persona contesta al permiso, se abre la conexion con el servidor de datos en directo
+  try{ if(!geolocate.pc){ geolocate.pc=1; ['https://overpass-api.de','https://server.arcgisonline.com'].forEach(u=>{ const l=document.createElement('link'); l.rel='preconnect'; l.href=u; l.crossOrigin='anonymous'; document.head.appendChild(l); }); } }catch(e){}
   $$('#geoBtn,#locate').forEach(b=>b.classList.add('busy'));
   navigator.geolocation.getCurrentPosition(pos=>{
     $$('#geoBtn,#locate').forEach(b=>b.classList.remove('busy'));
@@ -16613,18 +16712,26 @@ function localSearch(q){
   // pueblos de 10.000 habitantes o mas (30.000, en towns.json): se cargan la
   // primera vez que hace falta y se quedan en la cache del navegador
   let towns=[];
+  if(cities.length<3 && n.length>=3 && TOWN_B[townKey(n)]!==2) loadTowns(n);
   if(TOWNS && cities.length<3 && n.length>=3){
     const tn=tw=>[norm(tw[0]), tw[1]?norm(tw[1]):''].filter(Boolean);
     const rankT=list=>rankPlaces(list, n, tn, tw=>tw[4], tw=>tw[2], tw=>tw[3]);
     towns=rankT(TOWNS.filter(tw=>tn(tw).some(v=>v.startsWith(n)))).slice(0,5);
     if(towns.length<2 && n.length>=5) towns=towns.concat(rankT(TOWNS.filter(tw=>!towns.includes(tw) && tn(tw).some(v=>v.includes(n))))).slice(0,5);
-  } else if(!TOWNS && cities.length<3 && n.length>=3) loadTowns();
+  }
   return {needs:needSearch(q), cities, places:hits.slice(0,6), country, incountry, towns};
 }
-let TOWNS=null, townsLoading=false;
-function loadTowns(){
-  if(TOWNS || townsLoading) return; townsLoading=true;
-  fetch('towns.json?v='+DATA_V).then(r=>r.ok?r.json():[]).then(j=>{ TOWNS=j; const v=$('#q').value.trim(); if(v.length>=3 && document.activeElement===$('#q')) showAc(null, v); }).catch(()=>{ townsLoading=false; });
+// R22c: los pueblos van partidos por la primera letra (tw/g.json): se pide solo la que se escribe.
+// TOWNS solo crece por el final: el indice de un pueblo no cambia (lo usan las sugerencias).
+let TOWNS=null; const TOWN_B={}, TOWN_SEEN=new Set();
+function townKey(n){ const c=String(n||'').charAt(0); if(/[a-z0-9]/.test(c)) return c; const cp=c?String(n).codePointAt(0):0; if(cp<0x80) return '_'; return cp<0x3000 ? 'u'+(cp>>8).toString(16) : 'ucjk'; }
+function loadTowns(n){
+  const k=townKey(n); if(TOWN_B[k]) return; TOWN_B[k]=1;
+  fetch('tw/'+k+'.json?v='+DATA_V).then(r=>r.ok?r.json():[]).then(j=>{
+    const add=[]; for(const tw of j){ const id=tw[0]+'|'+tw[2]+'|'+tw[3]; if(!TOWN_SEEN.has(id)){ TOWN_SEEN.add(id); add.push(tw); } }
+    TOWNS=(TOWNS||[]).concat(add); TOWN_B[k]=2;
+    const v=$('#q').value.trim(); if(v.length>=3 && document.activeElement===$('#q')) showAc(null, v);
+  }).catch(()=>{ TOWN_B[k]=0; });
 }
 function acHTML(r, geo){
   let h='';
@@ -17269,7 +17376,7 @@ function setLite(on, manual){
   if(on && theme()!=='dark') setTheme('dark');
   if(map && layer){
     if(on){ if(map.hasLayer(layer)) map.removeLayer(layer); }
-    else { if(!map.hasLayer(layer)) layer.addTo(map); }
+    else { if(!map.hasLayer(layer) && !S.holdTiles) layer.addTo(map); }
     setTimeout(()=>map.invalidateSize(), 60);
   }
   const b=$('#menuBody [data-act="lite"]'); if(b) b.setAttribute('aria-pressed', on);
@@ -17482,7 +17589,7 @@ function buildMenu(){
     if(a==='pocket') openPocket();
     if(a==='data') exportData();
     if(a==='pass') passIt();
-    if(a==='what'){ openWelcome(); $('#welLoc').onclick=()=>{ closeWelcome(); geolocate(true); }; $('#welCity').onclick=()=>{ closeWelcome(); $('#q').focus(); showCities(); }; $$('#mWel [data-close]').forEach(x=>x.onclick=closeWelcome); }
+    if(a==='what'){ openWelcome(); wireWelNeeds(); $('#welLoc').onclick=()=>{ closeWelcome(); geolocate(true); }; $('#welCity').onclick=()=>{ closeWelcome(); $('#q').focus(); showCities(); }; $$('#mWel [data-close]').forEach(x=>x.onclick=closeWelcome); }
   });
 }
 
@@ -17531,7 +17638,8 @@ function barsSync(){
 }
 /* M9: aviso sin conexion, barras y «Buscar en esta zona» van en fila sobre el
    mapa. Aqui se miden y se pasan a CSS (--off-h, --bars-h, --main-top). */
-function topStack(){
+function topStack(){ if(topStack.raf) return; topStack.raf=requestAnimationFrame(()=>{ topStack.raf=0; topStackNow(); }); }   // R22b
+function topStackNow(){
   try{
     const r=document.documentElement.style, main=document.querySelector('.main');
     if(main) r.setProperty('--main-top', Math.round(main.getBoundingClientRect().top)+'px');
@@ -17721,7 +17829,7 @@ function modalSync(recs){
 })();
 function closeModals(){
   const wasMenu = !!$('#mMenu.on');
-  $$('.modal').forEach(m=>m.classList.remove('on')); document.body.style.overflow='';
+  $$('.modal').forEach(m=>m.classList.remove('on','pre')); document.body.style.overflow=''; showTiles();
   const ib=$('#menuBtn');
   if(ib){ ib.setAttribute('aria-expanded','false');
           // Al cerrar, el foco vuelve al boton del menu: es donde estaba la mano.
@@ -17958,7 +18066,9 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
 })();
 
 /* ---------------- init ---------------- */
-(function init(){
+(async function init(){
+  // R22b: entre fase y fase se cede el paso, para pintar y atender un toque
+  const pause = ()=>new Promise(r=>setTimeout(r,0));
   if(store.get('big')) document.documentElement.classList.add('big');
   if(store.get('calm')) document.documentElement.classList.add('calm');
   if(KIOSK){
@@ -17987,15 +18097,28 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
     const today = new Date().toDateString();
     if(store.get('nightSeen') !== today){ store.set('nightSeen', today); S.now = true; }
   }
+  // R22b: la visita se cuenta antes de aplicar el idioma (ahora se aplica una sola vez, el de verdad)
+  try{ if(!sessionStorage.getItem('sn_v')){ sessionStorage.setItem('sn_v','1'); tally('view', (window.innerWidth<=640?'mobile':'desktop')+(isStandalone()?'/app':'')); S.tallyLang=1; } }catch(e){}
   const want0 = store.get('langManual') ? (store.get('lang')||'en') : browserLang();
-  applyLang(T[want0] ? want0 : 'en');
-  if(want0!=='en' && !T[want0]) setLang(want0);
+  // R22: el idioma con el que se va a acabar (el del enlace ?lang= manda) se aplica ya si
+  // esta guardado en el movil; si hay que pedirlo, la bienvenida no pasa por el ingles
+  const qlang0 = (new URLSearchParams(location.search)).get('lang');
+  const first0 = (qlang0 && LANGS.some(l=>l.code===qlang0)) ? qlang0 : want0;
+  primeLang(first0);
+  if(first0!=='en' && !T[first0]){
+    S.langHold = first0;
+    // R22b: su idioma lo pidio ya el <head>: casi siempre esta aqui en unos milisegundos
+    try{ await Promise.race([ensureLang(first0), new Promise(r=>setTimeout(r,600))]); }catch(e){}
+    if(T[first0]) S.langHold = null;
+  }
+  applyLang(T[first0] ? first0 : 'en');
+  if(want0!=='en' && !T[want0] && first0===want0) setLang(want0);
   // Installable + offline. Both are optional extras: if the files are not there
   // (the single-file copy opened from disk) nothing breaks.
   const mf=document.createElement('link'); mf.rel='manifest'; mf.href='manifest.webmanifest';
   document.head.appendChild(mf);
   if('serviceWorker' in navigator && window.isSecureContext){
-    window.addEventListener('load',()=>{
+    const swGo = ()=>{
       navigator.serviceWorker.register('sw.js').then(reg=>{
         // Hay version nueva: un aviso de una linea y un toque para cargarla. Sin
         // esto, quien tenia la app abierta tardo horas en ver el mapa arreglado.
@@ -18017,16 +18140,25 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
         // funciona sin cobertura antes de que sea cierto seria mentir a alguien
         // que igual se queda sin datos esta misma noche.
         const ready = ()=>{ if(navigator.serviceWorker.controller) offlineNote(); };
+        // R22f: primera visita: lo que se cargo antes de que hubiera service worker, que lo guarde el
+        const keep = ()=>{ try{ const c=navigator.serviceWorker.controller; if(!c) return;
+          const urls=[...loadedChunks].slice(0,40).map(k=>'d/'+k+'.json'+(DATA_V?'?v='+DATA_V:''));
+          if(LANG!=='en') urls.push('l/'+LANG+'.json'+((LANG_V||DATA_V)?'?v='+(LANG_V||DATA_V):''));
+          urls.push('holidays.json?v='+DATA_V);
+          c.postMessage({t:'keep', urls}); }catch(e){} };
+        if(!navigator.serviceWorker.controller) navigator.serviceWorker.addEventListener('controllerchange', ()=>setTimeout(keep,1200), {once:true});
         if(navigator.serviceWorker.controller) setTimeout(ready, 2500);
         else navigator.serviceWorker.addEventListener('controllerchange', ()=>setTimeout(ready,1500));
         if(reg && reg.active) setTimeout(ready, 3000);
       }).catch(()=>{});
-    });
+    };
+    // R22b: init() ahora cede el paso; «load» puede haber pasado ya
+    if(document.readyState==='complete') setTimeout(swGo,0); else window.addEventListener('load',swGo);
   }
   window.addEventListener('resize',()=>{ fitViewport(); if(map) map.invalidateSize(); });
 
   applyEmbed();
-  try{ if(!sessionStorage.getItem('sn_v')){ sessionStorage.setItem('sn_v','1'); tally('view', (window.innerWidth<=640?'mobile':'desktop')+(isStandalone()?'/app':'')); S.tallyLang=1; } }catch(e){}
+  await pause();
   initMap();
   decodeAll();
   S.places = PLACES;
@@ -18055,9 +18187,11 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
   // Estados Unidos y las yardas en Madrid para un movil en ingles
   setCountry((guess && !(last && last.lat) ? guess[4] : '') || ccAt(start.lat,start.lon), true);
   if(!S.country) detectCountry(start.lat,start.lon);
+  await pause();
   sortPlaces();
   if(map){ map.setView([start.lat,start.lon],(last&&last.lat)?13:11); renderMe(); }
   render();
+  await pause();
   const qlang=(new URLSearchParams(location.search)).get('lang');
   if(qlang && T[qlang]!==undefined || (qlang && LANGS.some(l=>l.code===qlang))) setLang(qlang, false);
 
@@ -18125,8 +18259,20 @@ on('#zhint','click',()=>{ if(map) map.setZoom(8); });
       $('#welLoc').onclick=()=>{ closeWelcome(); geolocate(true); };
       $('#welCity').onclick=()=>{ closeWelcome(); askState(); setTimeout(()=>{ $('#q').focus(); showCities(); },60); };
       $$('#mWel [data-close]').forEach(x=>x.addEventListener('click',()=>{ closeWelcome(); afterWelcome(); }));
+      wireWelNeeds();
+      // R22: lo que se toco en la bienvenida antes de que la app estuviera lista
+      const it = window.__sn && window.__sn.intent; window.__snReady = 1;
+      $$('#mWel .busy').forEach(x=>x.classList.remove('busy'));
+      if(it==='welLoc' || it==='welCity') setTimeout(()=>{ const b=$('#'+it); if(b) b.click(); }, 0);
+      else if(it==='close') setTimeout(()=>{ closeWelcome(); afterWelcome(); }, 0);
+      else if(it && it.indexOf('need:')===0) setTimeout(()=>{ const b=$('#mWel .wel-needs [data-need="'+it.slice(5).replace(/[^a-z,]/g,'')+'"]'); if(b) b.click(); }, 0);
+      else if(it && it.indexOf('lang:')===0) setTimeout(()=>{ const b=$('#welLangs [data-l="'+it.slice(5).replace(/[^a-z*]/g,'')+'"]'); if(b) b.click(); }, 0);
     } else geolocate();
   }
+  // R22: pase lo que pase, al acabar de arrancar no queda nada pintado «de antes»
+  window.__snReady = 1;
+  { const mw=$('#mWel'); if(mw && mw.classList.contains('pre')){ mw.classList.remove('pre'); S.holdTiles && showTiles(); } }
+  if(!S.langHold) document.documentElement.classList.remove('pre');
 })();
 </script>
 </body>
