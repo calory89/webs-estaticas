@@ -283,6 +283,21 @@ def main():
              '</div></main></body></html>')
     open('404.html', 'w', encoding='utf-8').write(p404)
 
+    # ---------- /publicidad/: artículos patrocinados y colaboraciones ----------
+    purl = f'{SITE}/publicidad/'
+    pg = G.head(title='Publicidad y artículos patrocinados · Happy Low Cost', desc='Llega a viajeros que buscan vuelos baratos: artículos patrocinados desde 200 €, publicaciones en nuestra página de Facebook (420.000 seguidores) y menciones en las alertas.',
+                canonical=purl, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='legal')
+    pg += ('<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">Para marcas y agencias</div><h1 class="x-h1">Publicidad en Happy Low Cost</h1>'
+           '<p style="font-size:18px;line-height:1.6">Happy Low Cost publica chollos de vuelos verificados desde 2012. Nos siguen más de 420.000 viajeros en Facebook y la web está en español e inglés. Si tu marca ayuda a viajar mejor o más barato, aquí puedes llegar a ellos.</p>'
+           '<article class="txt guide">'
+           '<h2>Artículo patrocinado</h2><p>Un artículo sobre tu destino, producto o servicio, publicado en el blog y enlazado desde la portada del blog. Desde 200 €; el precio depende de lo que necesites (redacción, enlaces, permanencia). Siempre va marcado como contenido patrocinado.</p>'
+           '<h2>Publicación en Facebook</h2><p>Una publicación en la página de Happy Low Cost para sus 420.000 seguidores, sola o junto al artículo. Precio según formato y fechas.</p>'
+           '<h2>Mención en las alertas</h2><p>Tu oferta junto a los chollos que enviamos a quienes tienen una alerta activa. Precio según fechas.</p>'
+           '<h2>Qué no hacemos</h2><p>No publicamos precios que no hayamos podido comprobar, ni contenido patrocinado sin marcarlo como tal. Tampoco apuestas, créditos rápidos ni nada que no tenga que ver con viajar.</p>'
+           '</article><p style="margin-top:24px"><a class="hlc-btn" href="/contacto/">Pedir tarifas</a></p></div></main></body></html>')
+    os.makedirs('publicidad', exist_ok=True)
+    open('publicidad/index.html', 'w', encoding='utf-8').write(pg)
+
     # ---------- panel semanal (interno, sin indexar): alertas, chollos publicados y clics a reserva ----------
     ph = G.head(title='Panel semanal · Happy Low Cost', desc='Panel interno.', canonical=f'{SITE}/panel/', robots='noindex, nofollow', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
                 extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='panel')
@@ -313,7 +328,7 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
     import gen_blog
     gen_blog.main()
     pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')
