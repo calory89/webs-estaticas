@@ -337,6 +337,8 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
 <script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}})(window,document,"clarity","script","{CLARITY}");</script>
 {extra}</head><body><a class="skip" href="#main">{X[l]["skip"]}</a>"""
 
+SS_LAB = {"en": "Maps &amp; secret spots", "es": "Mapas y sitios secretos", "id": "Peta &amp; tempat rahasia"}
+
 def masthead(l, path_tpl, active=None, front=False):
     x = X[l]
     langs = "".join(f'<a href="{P(path_tpl, y)}" hreflang="{y}" lang="{y}" class="{"on" if y==l else ""}" onclick="stLang(\'{y}\')">{y.upper()}</a>' for y in LANGS)
@@ -344,7 +346,7 @@ def masthead(l, path_tpl, active=None, front=False):
     return f"""<div class="w"><div class="bar"><span><time id="st-today" datetime="{NOW.date().isoformat()}">{today_str(l)}</time> · <span class="daily">{x["daily"]}</span></span>
 <span class="r"><a href="/{l}/search/" aria-label="{x["search"]}">&#9906; {x["search"]}</a>{langs}<button type="button" class="tb" onclick="stTheme()" aria-label="{x["dark"]}" title="{x["dark"]}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></span></div>
 <header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · ' + {"en": "East Nusa Tenggara", "es": "Nusa Tenggara Oriental", "id": "Nusa Tenggara Timur"}[l] + '</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><span id="ear-wx">Waingapu</span></div>') if front else ''}{'<h1 class="mh">' if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a>{'</h1>' if front else ''}<div class="tg">{esc(UI[l]["tagline"])}</div></header>
-<nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}</div></nav></div>
+<nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}<a href="https://sumbasecrets.com/{l}/">{SS_LAB[l]} &#8599;</a></div></nav></div>
 <script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
 def subscribe(l, inline=False, topic=None, src=""):
@@ -383,7 +385,7 @@ else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://the
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
-    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
 <a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{reader_tools.saved_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
