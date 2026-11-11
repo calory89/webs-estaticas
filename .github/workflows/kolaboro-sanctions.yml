@@ -4,6 +4,8 @@ name: Kolaboro sanctions screening
 # Public: kolaboro.com/data/sanctions.json (lists screened, developer pages with no possible match). Possible matches are never
 # published: they go to the admin CRM (Screening tab, kept with the internal risk graph) and an email alert when they change.
 # Skips everything when neither the lists nor the developer names changed since the last run.
+# Batch 21 (n21a): the same run also compares the names with official regulator warning lists of unauthorised firms (FCA, AMF,
+# MAS, SFC, FINMA, Central Bank of Ireland, SEC), read at most once a week (kept in the state cache between runs).
 on:
   schedule:
     - cron: '17 6 * * *'
@@ -63,9 +65,9 @@ jobs:
       - name: Screen
         run: |
           mkdir -p "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv" "$RUNNER_TEMP/state"
-          python3 -u tools/kolaboro-agent/sanctions_screen.py "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv"
+          python3 -u tools/kolaboro-agent/sanctions_screen.py "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv" --warn-cache "$RUNNER_TEMP/state/warn-cache.json"
           python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/sanctions.json'));ok=[l['id'] for l in j['lists'] if l['ok']];assert len(ok)>=2,ok;assert len(j['no_match'])>=300,len(j['no_match']);print('lists',ok,'no match',len(j['no_match']))"
-          H=$(python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/sanctions.json'));p=json.load(open('$RUNNER_TEMP/priv/review.json'));print(json.dumps([[(l['id'],l.get('list_date'),l.get('entities')) for l in j['lists']],j['no_match'],p['key']]))" | sha256sum | cut -c1-16)
+          H=$(python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/sanctions.json'));p=json.load(open('$RUNNER_TEMP/priv/review.json'));w=j.get('warnings') or {};print(json.dumps([[(l['id'],l.get('list_date'),l.get('entities')) for l in j['lists']],j['no_match'],p['key'],w.get('updated'),w.get('no_match'),[(l['id'],l.get('ok')) for l in w.get('lists',[])]]))" | sha256sum | cut -c1-16)
           if [ -f "$RUNNER_TEMP/state/inputs" ] && [ "$(cat $RUNNER_TEMP/state/inputs)" = "$H" ] && [ "$(cat $RUNNER_TEMP/state/day 2>/dev/null)" \> "$(date -u -d '-6 days' +%F)" ]; then echo "SKIP=1" >> $GITHUB_ENV; echo "lists and names unchanged"; fi
           echo "$H" > "$RUNNER_TEMP/state/inputs.new"
       - name: Review list to the admin CRM

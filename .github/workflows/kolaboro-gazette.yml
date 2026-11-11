@@ -1,0 +1,66 @@
+name: Kolaboro gazette notices
+# Monthly (n21a, batch 21): notices that official gazettes carry about developer companies identified by an exact legal name.
+# Spain BORME (boe.es open data, read day by day since the last run), France BODACC (open API, by SIREN), UK The Gazette.
+# Type, date and link only: no officer names, no notice text. No model calls. One job, incremental (the state is inside the
+# published file). Public: kolaboro.com/data/gazette.json, shown on developer pages (section "Official gazette notices").
+on:
+  schedule:
+    - cron: '41 4 6 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kolaboro-gazette
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Kolaboro budget gate (max 80 Actions minutes a day, about 0.50 USD)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KB_DAILY_MIN: '80'
+        run: |
+          # Owner rule (9 Nov 2026): all Kolaboro workflows together spend at most 0.50 USD a day (80 min at 0.006 USD/min).
+          # Counts today's (UTC) job minutes of every "Kolaboro ..." run, rounded up per job like GitHub bills them.
+          # Over the cap: cancel this run. Under it: a watchdog cancels this run when the rest of the day's budget is used.
+          T=$(date -u +%F); used=0
+          for id in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs?created=%3E%3D$T&per_page=100" --paginate \
+              --jq '.workflow_runs[] | select(.name | startswith("Kolaboro")) | .id'); do
+            [ "$id" = "$GITHUB_RUN_ID" ] && continue
+            m=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$id/jobs?per_page=100" --jq \
+              '[.jobs[] | select(.started_at != null) | ((((.completed_at // (now | todate)) | fromdateiso8601) - (.started_at | fromdateiso8601)) / 60 | ceil)] | add // 0' || echo 0)
+            used=$((used + m))
+          done
+          left=$((KB_DAILY_MIN - used - 1))
+          echo "Kolaboro Actions minutes used today: $used of $KB_DAILY_MIN"
+          if [ "$left" -le 0 ]; then
+            echo "::notice::Daily Kolaboro budget reached ($used min). Cancelling this run."
+            gh run cancel "$GITHUB_RUN_ID" -R "$GITHUB_REPOSITORY"; sleep 60; exit 1
+          fi
+          echo "Watchdog: this run may use $left more minutes today."
+          nohup setsid bash -c "sleep $((left * 60)); gh run cancel $GITHUB_RUN_ID -R $GITHUB_REPOSITORY" >/dev/null 2>&1 &
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent/gazette_notices.py
+            tools/kolaboro-agent/agent.py
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+            tools/kolaboro-agent/research
+            tools/kolaboro-w/wcommon.py
+            tools/kolaboro-reliability
+          sparse-checkout-cone-mode: false
+      - name: Read the gazettes
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          python3 -u tools/kolaboro-agent/gazette_notices.py "$RUNNER_TEMP/out" --budget 480
+          python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/gazette.json'));assert j['version']=='gazette-1' and len(j['devs'])>=5,len(j['devs']);print('developers',len(j['devs']),'state',j['state']['es'])"
+      - name: Publish to kolaboro.com
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: gazette notices $(date -u +%F)" \
+            "$RUNNER_TEMP/out/gazette.json=_s/kolaboro.com/data/gazette.json"
