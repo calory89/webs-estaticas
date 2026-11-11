@@ -935,3 +935,45 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   addEventListener('hashchange', function () { try { openFor(D.querySelector(location.hash)); } catch (e) {} });
   D.addEventListener('beforematch', function (e) { openFor(e.target); }, true);
 })();
+// n21e (11 Nov 2026): links built from a project id (/p/<ID>/) went through a redirect to the named page. About 40 scripts and
+// pages build them, so they are pointed at /projects/<slug>/ here, in the page's language. The id list (about 12 KB, kept a day
+// in the browser) is only fetched on pages that carry such a link. Projects without a named page keep /p/<ID>/.
+(function () {
+  var D = document, RE = /^(?:https:\/\/kolaboro\.com)?\/p\/([A-Za-z0-9-]{3,20})\/?(#.*)?$/, SEL = 'a[href^="/p/"]:not([data-kp]),a[href^="https://kolaboro.com/p/"]:not([data-kp])';
+  var LG = (D.documentElement.lang || 'en').slice(0, 2), NL = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(LG) >= 0 ? '/' + LG : '';
+  var M = null, asked = 0, queued = 0;
+  function fix() {
+    queued = 0; var a = D.querySelectorAll(SEL); if (!a.length) return;
+    if (!M) { load(); return; }
+    for (var i = 0; i < a.length; i++) { var h = a[i].getAttribute('href'), m = RE.exec(h), s = m && M[m[1].toUpperCase()]; if (s) a[i].setAttribute('href', NL + '/projects/' + s + '/' + (m[2] || '')); else if (m) a[i].setAttribute('data-kp', '1'); }
+  }
+  function load() {
+    if (asked) return; asked = 1; var st = null, c = null;
+    try { st = window.localStorage; c = JSON.parse(st.getItem('kb-ids-v1') || 'null'); } catch (e) { st = null; }
+    if (c && c.ids && Date.now() - c.at < 864e5) { M = c.ids; fix(); return; }
+    fetch('/api/v1/search-index?f=ids').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+      if (!j || !j.ids) return; M = j.ids; try { st && st.setItem('kb-ids-v1', JSON.stringify({ at: Date.now(), ids: M })); } catch (e) {} fix();
+    }).catch(function () {});
+  }
+  function later() { if (queued) return; queued = 1; setTimeout(fix, 60); }
+  fix();
+  try { new MutationObserver(later).observe(D.documentElement, { childList: true, subtree: true }); } catch (e) {}
+})();
+// n21e (11 Nov 2026) accessibility pass (WCAG 2.2 AA, axe-core on 271 URLs): things that are the same on every page are fixed here once.
+(function () {
+  var D = document, q = function (s) { return D.querySelectorAll(s); };
+  // the sticky phone button sits outside header, main and footer: name it as a region so it is not orphan content
+  var m = D.querySelector('.mcta'); if (m && !m.getAttribute('role')) { var a = m.querySelector('a'); m.setAttribute('role', 'region'); m.setAttribute('aria-label', ((a && a.textContent) || 'Kolaboro').trim()); }
+  // boxes that scroll sideways (code samples, wide tables, the shipping bar when motion is reduced) must be reachable with the keyboard
+  function scrollers() {
+    q('.eg-code,.api-b,.bm-code,.wq-tw,.tw,pre,.ship-v,.ksat-strip').forEach(function (el) {
+      if (el.hasAttribute('tabindex') || el.scrollWidth <= el.clientWidth + 1) return;
+      var o = getComputedStyle(el).overflowX; if (o !== 'auto' && o !== 'scroll') return;
+      if (el.querySelector('a[href],button,input,select,textarea,[tabindex]:not([tabindex="-1"])')) return;
+      el.setAttribute('tabindex', '0'); el.setAttribute('data-kb-scroll', '');
+    });
+  }
+  if (D.readyState === 'complete') setTimeout(scrollers, 300); else addEventListener('load', function () { setTimeout(scrollers, 300); });
+  // empty header cells (corner of a comparison table) are presentational
+  q('th:empty,[role="columnheader"]:empty').forEach(function (th) { if (!th.getAttribute('aria-label')) th.setAttribute('aria-hidden', 'true'); });
+})();

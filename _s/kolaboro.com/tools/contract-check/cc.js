@@ -318,9 +318,14 @@
     if (!f) return; MARK = performance.now(); status('Reading ' + f.name + '...');
     if (/\.txt$/i.test(f.name) || f.type === 'text/plain') { f.text().then(function (t) { start([t], f.name, 'text'); }); return; }
     if (f.size > 60 * 1024 * 1024) { status('This file is over 60 MB. Try a smaller export of the contract.', true); return; }
-    f.arrayBuffer().then(function (b) { return extractPdf(new Uint8Array(b)); }).then(function (r) {
+    // n21e: a Word, image or other file used to end in "Could not read this PDF". Say what the file is and what to do instead.
+    var ext = (f.name.match(/\.([a-z0-9]{1,6})$/i) || [0, ''])[1].toLowerCase();
+    var kinds = { docx: 'a Word document', doc: 'a Word document', odt: 'a text document', rtf: 'a text document', pages: 'a Pages document', jpg: 'a picture', jpeg: 'a picture', png: 'a picture', heic: 'a picture', webp: 'a picture', tif: 'a picture', tiff: 'a picture', zip: 'a zip archive', xlsx: 'a spreadsheet', xls: 'a spreadsheet' };
+    function notPdf() { $('ccOut').hidden = true; $('ccAi').hidden = true; status('This check reads PDF files with selectable text and plain text (.txt). "' + f.name + '" is ' + (kinds[ext] || 'not a PDF') + '. ' + (/^docx?$|^odt$|^rtf$|^pages$/.test(ext) ? 'Open it and choose Save as or Export, then PDF, or copy the text and paste it below.' : /^(jpe?g|png|heic|webp|tiff?)$/.test(ext) ? 'This check cannot read pictures of pages: use a PDF with selectable text, or paste the text below.' : 'Use a PDF, or paste the text below.'), true); }
+    if (kinds[ext]) { notPdf(); return; }
+    f.arrayBuffer().then(function (b) { var u8 = new Uint8Array(b), head = ''; for (var i = 0; i < Math.min(u8.length, 1024); i++) head += String.fromCharCode(u8[i]); if (head.indexOf('%PDF-') < 0) { var e = new Error('not a pdf'); e.kbNotPdf = 1; throw e; } return extractPdf(u8); }).then(function (r) {
       start(r.pages, f.name + (r.total > r.pages.length ? ' (first ' + r.pages.length + ' of ' + r.total + ' pages)' : ''), 'pdf');
-    }).catch(function (e) { status('Could not read this PDF: ' + (e && e.message || e) + '. If it is password protected, export an unprotected copy, or paste the text below.', true); });
+    }).catch(function (e) { if (e && e.kbNotPdf) { notPdf(); return; } status('Could not read this PDF: ' + (e && e.message || e) + '. If it is password protected, export an unprotected copy, or paste the text below.', true); });
   }
   function offerAI() {
     var box = $('ccAi'); box.hidden = false;

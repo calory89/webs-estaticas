@@ -4,6 +4,20 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "Accessibility pass on 271 pages with an automated checker: charts and status strips are announced correctly, sideways-scrolling boxes work from the keyboard, small links are easier to tap; Russian pages use the right word form after numbers; project links open the project page directly",
+   "tl": {
+    "es": "Revisión de accesibilidad en 271 páginas con un comprobador automático: los gráficos y las tiras de estado se anuncian bien, las cajas con desplazamiento lateral funcionan con el teclado y los enlaces pequeños son más fáciles de tocar; las páginas en ruso usan la forma correcta tras los números; los enlaces a proyectos abren la página del proyecto directamente",
+    "fr": "Passe d'accessibilité sur 271 pages avec un vérificateur automatique : graphiques et bandes d'état correctement annoncés, zones à défilement horizontal utilisables au clavier, petits liens plus faciles à toucher ; les pages russes utilisent la bonne forme après les nombres ; les liens de projet ouvrent directement la page du projet",
+    "de": "Barrierefreiheitsprüfung auf 271 Seiten mit einem automatischen Prüfwerkzeug: Diagramme und Statusleisten werden korrekt angesagt, seitlich scrollende Bereiche sind per Tastatur bedienbar, kleine Links lassen sich leichter antippen; russische Seiten nutzen die richtige Wortform nach Zahlen; Projektlinks öffnen die Projektseite direkt",
+    "nl": "Toegankelijkheidsronde op 271 pagina's met een automatische controle: grafieken en statusstroken worden goed voorgelezen, zijwaarts scrollende vakken werken met het toetsenbord, kleine links zijn makkelijker aan te tikken; Russische pagina's gebruiken de juiste woordvorm na getallen; projectlinks openen de projectpagina direct",
+    "ru": "Проверка доступности на 271 странице автоматическим инструментом: графики и полосы состояния правильно озвучиваются, блоки с боковой прокруткой работают с клавиатуры, мелкие ссылки легче нажимать; на русских страницах правильная форма слова после чисел; ссылки на проекты открывают страницу проекта напрямую",
+    "zh": "用自动检查工具对 271 个页面做了无障碍检查：图表和状态条能被正确朗读，横向滚动的区域可用键盘操作，小链接更容易点按；俄语页面在数字后使用正确的词形；项目链接直接打开项目页面",
+    "ar": "مراجعة لإمكانية الوصول في 271 صفحة بأداة فحص آلية: تُقرأ الرسوم وأشرطة الحالة بشكل صحيح، وتعمل المربعات ذات التمرير الجانبي من لوحة المفاتيح، وصارت الروابط الصغيرة أسهل في اللمس؛ الصفحات الروسية تستخدم صيغة الكلمة الصحيحة بعد الأرقام؛ وروابط المشاريع تفتح صفحة المشروع مباشرة"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "Project pages now say where the developer's own schedule puts the project today, and the promised dates download as a calendar file (.ics) or a subscription that updates when a date moves; the portal exports your payment schedule the same way",
    "tl": {
     "es": "Las páginas de proyecto dicen ahora dónde sitúa hoy el proyecto el calendario del propio promotor, y las fechas prometidas se descargan como archivo de calendario (.ics) o como suscripción que se actualiza si una fecha se aplaza; el portal exporta igual tu calendario de pagos",

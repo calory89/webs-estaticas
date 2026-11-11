@@ -184,7 +184,7 @@ export const webHeading = (lang, which) => tt(lang, which === 'l' ? 'hl' : 'hh')
 export const typeLabel = (lang, t) => ((S[lang] || S.en).ty || S.en.ty)[t] || t;
 
 // ------------------------------------------------------------------------------------------------ HTML
-export const WEB_CSS = '<style id="kweb18">.kw-strip{display:flex;gap:2px;margin:6px 0 2px;padding:0;list-style:none;max-width:480px}.kw-strip li{flex:0 0 auto;width:calc((100% - 58px) / 30);height:22px;border-radius:2px;background:var(--k-sunken,#E8ECEA)}' +
+export const WEB_CSS = '<style id="kweb18">.kw-strip{display:flex;gap:2px;margin:6px 0 2px;padding:0;list-style:none;max-width:480px}.kw-strip span{flex:0 0 auto;width:calc((100% - 58px) / 30);height:22px;border-radius:2px;background:var(--k-sunken,#E8ECEA)}' +
   '.kw-strip .u{background:var(--k-ok,#1F6B45)}.kw-strip .b{background:var(--k-warn,#8A5A00)}.kw-strip .x,.kw-strip .z{background:var(--k-bad,#A12A1C)}.kw-strip .n{background:repeating-linear-gradient(135deg,var(--k-sunken,#E8ECEA) 0 3px,var(--k-line-2,#C9D1CE) 3px 5px)}' +
   '.kw-key{display:flex;flex-wrap:wrap;gap:4px 14px;margin:4px 0 10px;padding:0;list-style:none;font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kw-key i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-inline-end:6px;vertical-align:-1px}' +
   '.kw-site{margin:0 0 18px}.kw-site h3{font-size:var(--k-fs-md,17px);margin:0 0 4px;overflow-wrap:anywhere}.kw-site .k-xs{color:var(--k-muted)}.kw-dom{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}' +
@@ -192,10 +192,10 @@ export const WEB_CSS = '<style id="kweb18">.kw-strip{display:flex;gap:2px;margin
 const KEYS = { u: 'l_u', b: 'l_b', x: 'l_x', '0': 'l_x', '-': 'l_n' };
 function strip(health, h, lang) {
   const s = h.h || '', days = health.days || [];
-  const cells = [...s].map((c, i) => '<li class="' + (c === '0' ? 'z' : c === '-' ? 'n' : c) + '" title="' + esc((days[i] ? fdt(days[i], lang) + ': ' : '') + tt(lang, KEYS[c] || 'l_n')) + '"></li>').join('');
+  const cells = [...s].map((c, i) => '<span class="' + (c === '0' ? 'z' : c === '-' ? 'n' : c) + '" title="' + esc((days[i] ? fdt(days[i], lang) + ': ' : '') + tt(lang, KEYS[c] || 'l_n')) + '"></span>').join('');
   const cnt = c => [...s].filter(x => x === c).length;
   const alt = tt(lang, 'strip', { n: s.length }) + ': ' + [['u', 'l_u'], ['b', 'l_b'], ['x', 'l_x'], ['-', 'l_n']].map(([c, k]) => tt(lang, k) + ' ' + (c === 'x' ? cnt('x') + cnt('0') : cnt(c))).join(', ');
-  return '<p class="k-xs">' + esc(tt(lang, 'strip', { n: s.length })) + '</p><ul class="kw-strip" role="img" aria-label="' + esc(alt) + '">' + cells + '</ul>' +
+  return '<p class="k-xs">' + esc(tt(lang, 'strip', { n: s.length })) + '</p><div class="kw-strip" role="img" aria-label="' + esc(alt) + '">' + cells + '</div>' +
     '<ul class="kw-key" aria-hidden="true">' + [['u', 'var(--k-ok,#1F6B45)'], ['b', 'var(--k-warn,#8A5A00)'], ['x', 'var(--k-bad,#A12A1C)'], ['-', 'var(--k-sunken,#E8ECEA)']].map(([c, col]) => '<li><i style="background:' + col + '"></i>' + esc(tt(lang, KEYS[c])) + '</li>').join('') + '</ul>';
 }
 const src = (u, label) => u.startsWith('/') ? ' <a class="src" href="' + esc(u) + '">' + esc(label) + '</a>' : ' <a class="src" href="' + esc(u) + '" rel="nofollow noopener" target="_blank">' + esc(label) + '</a>';

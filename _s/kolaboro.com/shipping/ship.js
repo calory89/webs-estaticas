@@ -85,8 +85,8 @@
 
   function pick(k, scroll) {
     sel = k;
-    [].forEach.call(document.querySelectorAll('.sh-c[aria-pressed]'), function (b) { b.removeAttribute('aria-pressed'); });
-    var b = document.querySelector('.sh-c[data-d="' + k + '"]'); if (b) b.setAttribute('aria-pressed', 'true');
+    [].forEach.call(document.querySelectorAll('.sh-c[aria-selected]'), function (b) { b.removeAttribute('aria-selected'); });
+    var b = document.querySelector('.sh-c[data-d="' + k + '"]'); if (b) b.setAttribute('aria-selected', 'true');
     var r = byDate[k];
     $('sh-day').innerHTML = '<h3>' + e(hd(k)) + ': ' + (r ? r.ships : 0) + ' change' + (r && r.ships === 1 ? '' : 's') + ' shipped</h3>' + lines(r) + dataKinds(r) + commits(r) +
       '<p class="sh-m">' + pageLink(r, k) + (r && r.ships ? ' &middot; <a href="#d-' + k + '">In the list below</a>' : '') + '</p>';

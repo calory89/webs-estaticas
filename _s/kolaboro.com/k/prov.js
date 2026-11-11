@@ -85,7 +85,7 @@
     '@media (max-width:520px){.kbp dl{grid-template-columns:1fr}.kbp dt{padding-top:4px}}' +
     '@media (pointer:coarse){.kbp-pv{min-height:40px}}.kbp-pv{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:none;text-align:left}.kbp-pv:hover{text-decoration:underline;text-decoration-color:#FF5B14;text-decoration-thickness:2px}.kbp-pv:focus-visible{outline:3px solid #FF5B14;outline-offset:2px}' +
     '.kbp-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}';
-  function css() { if (document.getElementById('kbp-css')) return; var s = document.createElement('style'); s.id = 'kbp-css'; s.textContent = CSS; document.head.appendChild(s); var h = document.createElement('span'); h.id = 'kbp-hint'; h.className = 'kbp-sr'; h.textContent = 'Opens where this number comes from.'; document.body.appendChild(h); }
+  function css() { if (document.getElementById('kbp-css')) return; var s = document.createElement('style'); s.id = 'kbp-css'; s.textContent = CSS; document.head.appendChild(s); var h = document.createElement('span'); h.id = 'kbp-hint'; h.className = 'kbp-sr'; h.textContent = 'Opens where this number comes from.'; (document.querySelector('main') || document.body).appendChild(h); }   /* n21e: inside the main landmark */
   // ---------- marking elements
   function mark(el) {
     if (el.getAttribute('data-prov-on')) return;

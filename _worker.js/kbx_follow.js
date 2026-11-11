@@ -155,6 +155,8 @@ export async function handle(req, u, env, ctx) {
   // API: rate limit, then answer
   const rl = await rate(req, ctx, 'api9', 120), rh = { 'x-ratelimit-limit': '120;w=60', 'x-ratelimit-remaining': String(rl.remaining) };
   if (!rl.ok) return jerr({ error: 'rate_limited', limit_per_minute: 120, retry_after_s: rl.retry }, 429, Object.assign(rh, { 'retry-after': String(rl.retry) }));
+  // n21e: ?f=ids is the small id -> slug list site.js uses to point /p/<ID>/ links straight at the named page
+  if (p === '/api/v1/search-index' && u.searchParams.get('f') === 'ids') { const ids = {}; for (const [id, x] of ix.byId) if (x && x.s) ids[id] = x.s; return out(req, JSON.stringify({ version: 'named-ids-1', ids }), JT, rh, 3600); }
   if (p === '/api/v1/search-index') return out(req, JSON.stringify(searchIndex(N, ix)), JT, rh, 900);
   const m = p.match(/^\/api\/v1\/(projects|developers)(?:\/([a-z0-9-]{1,90}))?\/?$/);
   if (!m[2]) return out(req, JSON.stringify(m[1] === 'projects' ? listProjects(N, ix) : listDevelopers(N, ix)), JT, rh, 900);

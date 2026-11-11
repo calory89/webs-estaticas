@@ -85,7 +85,7 @@ export async function handle(req, u, env, ctx) {
   if (p === '/api/x/live/csp') {
     let d = null; try { d = await rpc('kolaboro_csp_public', {}); } catch (e) {}
     if (!d) return out({ available: false, mode: 'report-only', endpoint: '/api/kb/csp', note: 'Reports are collected since 3 Nov 2026. The public read of the counts is not enabled yet.' }, 200, 300);
-    return out(Object.assign({ available: true, mode: 'report-only', endpoint: '/api/kb/csp' }, d), 200, 300);
+    return out(Object.assign({ available: true, mode: 'script rules enforced on every page since 2026-11-11 (a blocked script is reported twice: once by the enforced rule, once by the wider report-only policy); other rules report-only', endpoint: '/api/kb/csp' }, d), 200, 300);
   }
   return out({ error: 'not_found' }, 404);
 }

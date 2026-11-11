@@ -195,7 +195,7 @@ function chart(pts, cur, x, url, lang) {
   const ticks = [v0 + (v1 - v0) * 0.1, (v0 + v1) / 2, v1 - (v1 - v0) * 0.1];
   const short = v => { try { return nmf(LOC[lang] || 'en-GB', { notation: 'compact', maximumFractionDigits: 2 }).format(v); } catch (e) { return String(Math.round(v)); } };
   const line = P.map((p, i) => (i ? 'L' : 'M') + X(T[i]).toFixed(1) + ' ' + Y(V[i]).toFixed(1)).join(' ');
-  return '<figure class="kph-fig"><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(nt(lang, 'ph_chart', { cur })) + '" class="kph-svg">' +
+  return '<figure class="kph-fig"><svg viewBox="0 0 ' + W + ' ' + H + '" role="group" aria-label="' + esc(nt(lang, 'ph_chart', { cur })) + '" class="kph-svg">' +
     ticks.map(v => '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '" class="kph-grid"/><text x="' + (L - 8) + '" y="' + (Y(v) + 4).toFixed(1) + '" text-anchor="end" class="kph-ax">' + esc(short(v)) + '</text>').join('') +
     '<text x="' + L + '" y="' + (H - 8) + '" class="kph-ax">' + esc(fdt(P[0].d, lang)) + '</text><text x="' + (W - R) + '" y="' + (H - 8) + '" text-anchor="end" class="kph-ax">' + esc(fdt(P[P.length - 1].d, lang)) + '</text>' +
     '<path d="' + line + '" class="kph-line"/>' +

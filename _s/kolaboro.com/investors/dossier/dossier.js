@@ -25,7 +25,7 @@
       var x = 4 + gap / 2 + i * (bw + gap), h = Math.max(2, (p.v / max) * (Hh - pad - 14)), y = Hh - pad - h, lab = p.d.slice(5).replace('-', '/');
       var t = when(p.d) + ': ' + (s.id.indexOf('spend') >= 0 ? '$' + p.v : p.v) + (p.n != null ? ' (' + p.n + (s.id === 'uptime_daily' ? ' probes' : ' calls') + ')' : '') + (p.pass != null ? ', ' + p.pass + ' passed every case' : '');
       return '<g><rect class="h" x="' + (x - gap / 2) + '" y="0" width="' + (bw + gap) + '" height="' + (Hh - pad) + '" data-t="' + esc(t) + '"></rect>' +
-        '<rect class="b" tabindex="0" x="' + x + '" y="' + y + '" width="' + bw + '" height="' + h + '" rx="3" data-t="' + esc(t) + '" aria-label="' + esc(t) + '"></rect>' +
+        '<rect class="b" tabindex="0" role="img" x="' + x + '" y="' + y + '" width="' + bw + '" height="' + h + '" rx="3" data-t="' + esc(t) + '" aria-label="' + esc(t) + '"></rect>' +
         (n <= 12 || i % Math.ceil(n / 8) === 0 ? '<text x="' + (x + bw / 2) + '" y="' + (Hh - 6) + '" text-anchor="middle">' + esc(lab) + '</text>' : '') + '</g>';
     }).join('');
     var top = '<text x="4" y="10">max ' + esc(s.id.indexOf('spend') >= 0 ? '$' + max : max) + '</text><line x1="0" x2="' + W + '" y1="' + (Hh - pad) + '" y2="' + (Hh - pad) + '" stroke="rgba(23,33,43,.25)"/>';

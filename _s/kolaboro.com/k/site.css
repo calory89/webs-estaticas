@@ -1378,3 +1378,7 @@ main summary{min-height:44px;align-content:center}
 details.kvb>summary{min-height:44px}
 main details>summary{min-height:44px!important}
 @media (max-width:760px){a[data-r]{min-width:44px;justify-content:center}}
+/* n21e (11 Nov 2026) accessibility pass: 24px minimum targets for links that stand alone, visible focus on scrollable blocks, status colours at 4.5:1 */
+.lk li>a,.kwrap .k-xs>a:only-child,.kwrap p>a:only-child,a.src{display:inline-block;min-height:24px;line-height:1.5}
+[data-kb-scroll]:focus-visible{outline:3px solid var(--k-sea,#155C75);outline-offset:2px}
+.lv-ok{color:#136B45}

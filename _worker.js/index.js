@@ -111,11 +111,20 @@ function kbHeaders(r, u) {
   // The log-in and password-reset pages (where credentials are typed) already run with the strict policy enforced: tested 9 Nov 2026 with
   // signup, log-in, wrong password, reset and analytics, no blocked script.
   if (u.searchParams.get('csp') === 'strict' || /^\/(login|reset)(\/|$)/.test(u.pathname)) h.set('content-security-policy', h.get('content-security-policy-report-only') + '; upgrade-insecure-requests');
+  // n21e (11 Nov 2026): the strict SCRIPT rules are now enforced on every page: a script runs only with this response's nonce, or when a
+  // script that has it loads it ('strict-dynamic'); no inline handlers, no eval (WebAssembly allowed), workers from our origin or blob: only.
+  // Tested with ?csp=strict on 271 URLs and every interactive tool, the portal and the admin before the switch (scratchpad n21/n21e-issues.md).
+  // The rest of the policy (connect, img, style, frame sources) stays report-only. Rollback in one line: KB_CSP_SCRIPTS = false below
+  // (or Pages variable KB_CSP_STRICT=0, read at the top of fetch). Counts: /api/x/live/csp.
+  else if (KB_CSP_SCRIPTS) h.set('content-security-policy', h.get('content-security-policy') + "; script-src 'nonce-" + nonce + "' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; worker-src 'self' blob:; report-uri /api/kb/csp; report-to csp");
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
-  const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+  // n21e: Russian pages get the right noun form after a number ("2 проекта", "1 проект"; the templates only carry "проектов")
+  const ru = r.status === 200 && r.body && /^\/ru(\/|$)/.test(u.pathname);
+  if (ru) h.delete('content-length');
+  const out = new Response(ru ? new ReadableStream({ async start(c) { try { c.enqueue(new TextEncoder().encode(kbRu(await r.text()))); c.close(); } catch (e) { c.error(e); } } }) : r.body, { status: r.status, statusText: r.statusText, headers: h });
   // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
   let ds = false; const styleIds = new Set(); const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
   // n20p: pages that load site.css get /k/ds-site.css, the same rules without the :has() page test (see that file's first lines)
@@ -124,12 +133,40 @@ function kbHeaders(r, u) {
   // nonce and without waiting (that was every strict-CSP report: about 35 page types). Pages without the tag now get the same tag from
   // here, with the nonce and held until the first interaction like on every other page; analytics-all then sees it and adds nothing.
   let ga = false, gaTail = '';
-  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } })
+  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
-    .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
+    .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
+      if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
     .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
 }
+// n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
+// wants the genitive singular ("2 проекта") and after 1 (21, 31...) the nominative singular ("1 проект"). Left alone: 5 to 20, numbers
+// after a word that asks for the genitive itself ("из 3 проектов", "меньше 3 объявлений", "последних 3 проверок") and decimals.
+const KB_RU_N = { 'проектов': ['проекта', 'проект'], 'застройщиков': ['застройщика', 'застройщик'], 'месяцев': ['месяца', 'месяц'], 'кварталов': ['квартала', 'квартал'], 'контуров': ['контура', 'контур'],
+  'вопросов': ['вопроса', 'вопрос'], 'изменений': ['изменения', 'изменение'], 'объявлений': ['объявления', 'объявление'], 'зданий': ['здания', 'здание'], 'обещаний': ['обещания', 'обещание'],
+  'сайтов': ['сайта', 'сайт'], 'оповещений': ['оповещения', 'оповещение'], 'снимков': ['снимка', 'снимок'], 'дней': ['дня', 'день'], 'лет': ['года', 'год'], 'этажей': ['этажа', 'этаж'],
+  'документов': ['документа', 'документ'], 'источников': ['источника', 'источник'], 'рынков': ['рынка', 'рынок'], 'языков': ['языка', 'язык'], 'сдач': ['сдачи', 'сдача'], 'продаж': ['продажи', 'продажа'],
+  'проверок': ['проверки', 'проверка'], 'сделок': ['сделки', 'сделка'], 'ночей': ['ночи', 'ночь'], 'комнат': ['комнаты', 'комната'], 'копий': ['копии', 'копия'], 'карточек': ['карточки', 'карточка'],
+  'страниц': ['страницы', 'страница'], 'стран': ['страны', 'страна'], 'записей': ['записи', 'запись'], 'раз': ['раза', 'раз'], 'ссылок': ['ссылки', 'ссылка'], 'файлов': ['файла', 'файл'],
+  'часов': ['часа', 'час'], 'минут': ['минуты', 'минута'], 'недель': ['недели', 'неделя'], 'квартир': ['квартиры', 'квартира'], 'платежей': ['платежа', 'платёж'], 'отзывов': ['отзыва', 'отзыв'],
+  'ответов': ['ответа', 'ответ'], 'жалоб': ['жалобы', 'жалоба'], 'городов': ['города', 'город'], 'уведомлений': ['уведомления', 'уведомление'], 'пунктов': ['пункта', 'пункт'], 'фотографий': ['фотографии', 'фотография'] };
+const KB_RU_RE = new RegExp('(\\d+)((?:</(?:b|strong|span)>)?[ \u00a0])((?:[а-яё]+(?:ых|их) )?)(' + Object.keys(KB_RU_N).join('|') + ')(?![а-яёА-ЯЁ])', 'g');
+const KB_RU_STOP = /(?:^|[^а-яё])(?:из|от|до|меньше|больше|более|менее|около|для|без|у|цена|цены|цене|среди|после|основе|свыше|порядка|нет|всех|минимум|максимум|[а-яё]+(?:ых|их))$/;
+function kbRu(html) {
+  return html.replace(KB_RU_RE, (m, num, gap, adj, noun, off, all) => {
+    const n = +num.slice(-2), d = n % 10, teen = n > 10 && n < 20;
+    if (teen || d === 0 || d > 4) return m;
+    const before = all.slice(Math.max(0, off - 48), off);
+    if (/[\d.,\u00a0$\\{}%]$/.test(before) || (/\d[ ]$/.test(before) && num.length === 3)) return m;           // part of a decimal or a grouped number, or a "$1" in a script
+    const prev = before.replace(/<[^>]*>?/g, '').replace(/[\s:(«"]+$/, '').toLowerCase();
+    if (KB_RU_STOP.test(prev)) return m;
+    if (d === 1) return adj ? m : num + gap + KB_RU_N[noun][1];
+    return num + gap + adj + KB_RU_N[noun][0];
+  });
+}
+const KB_SITE_CSS_V = 'f8f85e2a20', KB_PROV_V = 'b72a9677d4';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+let KB_CSP_SCRIPTS = false;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
@@ -233,6 +270,7 @@ async function rhMedia(req, u) {
 let kTick = null;
 export default {
   async fetch(req, env, ctx) {
+    if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     const r = await this.fetch0(req, env, ctx);
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kTick) kTick = await import('./kbx_ticker.js'); return await kTick.kbTick(req, r, env); } catch (e) { return r; } }
     return r;

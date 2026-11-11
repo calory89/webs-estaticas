@@ -241,7 +241,7 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
         : '<li><span class="ksat-tile is-none" role="img" aria-label="' + lab + ': ' + esc(t(lang, 'cloudy')) + '"></span><small>' + lab + '</small></li>');
     }
     // n18b: the sprite loads only when the section comes near the viewport (TM_JS adds is-on); without script, noscript shows it
-    strip = '<figure dir="ltr"><ol class="ksat-strip" style="--ksat-u:url(' + img + ')">' + li.join('') + '</ol><noscript><style>.ksat-strip .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style></noscript><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
+    strip = '<figure dir="ltr"><ol class="ksat-strip" tabindex="0" style="--ksat-u:url(' + img + ')">' + li.join('') + '</ol><noscript><style>.ksat-strip .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style></noscript><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
     tmach = timeMachine(rec, months, lang, fd, img, stageLabels(est, lang));
     if (!tmach) strip = strip.replace('class="ksat-strip"', 'class="ksat-strip is-on"');
   }

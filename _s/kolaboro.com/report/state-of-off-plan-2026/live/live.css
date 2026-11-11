@@ -12,7 +12,7 @@
 .lv-note.bad{border-left-color:#C9461A}
 .lv-dl{display:grid;gap:10px;margin-top:16px}.lv-dl dt{font-weight:700;font-size:.9rem}.lv-dl dd{color:var(--ink-2);font-size:.93rem;overflow-wrap:anywhere}
 .lv-dl code,.fn code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.84rem;overflow-wrap:anywhere}
-.lv-ok{color:var(--t-ok,#1E8A5A)}.lv-bad{color:var(--t-warn,#C9461A)}
+.lv-ok{color:#136B45}.lv-bad{color:var(--t-warn,#C9461A)}
 .lv-tbl{margin-top:18px}
 .lv-pt{min-width:560px}.lv-pt th.tl{white-space:normal;font-weight:500;max-width:60ch}
 .sop-kn dd:empty::before{content:"\2026";color:var(--muted)}
