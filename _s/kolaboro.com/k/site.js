@@ -956,7 +956,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
       if (!j || !j.ids) return; M = j.ids; try { st && st.setItem('kb-ids-v1', JSON.stringify({ at: Date.now(), ids: M })); } catch (e) {} fix();
     }).catch(function () {});
   }
-  function later() { if (queued) return; queued = 1; setTimeout(fix, 60); }
+  function later(ms) { if (queued) return; for (var i = 0, hit = 0; i < ms.length && !hit; i++) for (var j = 0, n = ms[i].addedNodes; j < n.length; j++) if (n[j].nodeType === 1 && (n[j].tagName === 'A' || n[j].firstElementChild)) { hit = 1; break; } if (!hit) return; queued = 1; (window.requestIdleCallback || setTimeout)(fix, { timeout: 1500 }); }
   fix();
   try { new MutationObserver(later).observe(D.documentElement, { childList: true, subtree: true }); } catch (e) {}
 })();
@@ -966,13 +966,18 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   // the sticky phone button sits outside header, main and footer: name it as a region so it is not orphan content
   var m = D.querySelector('.mcta'); if (m && !m.getAttribute('role')) { var a = m.querySelector('a'); m.setAttribute('role', 'region'); m.setAttribute('aria-label', ((a && a.textContent) || 'Kolaboro').trim()); }
   // boxes that scroll sideways (code samples, wide tables, the shipping bar when motion is reduced) must be reachable with the keyboard
+  // Measured only when a box comes near the screen: measuring all of them at load forced the layout of every off-screen section
+  // (project pages render those on approach) and cost a long task on phones.
+  function one(el) {
+    if (el.hasAttribute('tabindex') || el.scrollWidth <= el.clientWidth + 1) return;
+    var o = getComputedStyle(el).overflowX; if (o !== 'auto' && o !== 'scroll') return;
+    if (el.querySelector('a[href],button,input,select,textarea,[tabindex]:not([tabindex="-1"])')) return;
+    el.setAttribute('tabindex', '0'); el.setAttribute('data-kb-scroll', '');
+  }
   function scrollers() {
-    q('.eg-code,.api-b,.bm-code,.wq-tw,.tw,pre,.ship-v,.ksat-strip').forEach(function (el) {
-      if (el.hasAttribute('tabindex') || el.scrollWidth <= el.clientWidth + 1) return;
-      var o = getComputedStyle(el).overflowX; if (o !== 'auto' && o !== 'scroll') return;
-      if (el.querySelector('a[href],button,input,select,textarea,[tabindex]:not([tabindex="-1"])')) return;
-      el.setAttribute('tabindex', '0'); el.setAttribute('data-kb-scroll', '');
-    });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { io.unobserve(x.target); one(x.target); } }); }, { rootMargin: '200px' });
+    q('.eg-code,.api-b,.bm-code,.wq-tw,.tw,pre,.ship-v').forEach(function (el) { io.observe(el); });
   }
   if (D.readyState === 'complete') setTimeout(scrollers, 300); else addEventListener('load', function () { setTimeout(scrollers, 300); });
   // empty header cells (corner of a comparison table) are presentational
