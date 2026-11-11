@@ -10,7 +10,6 @@ BRIEFS = [
  "time": "06:30",
  "dateline": "WAINGAPU",
  "kind": "brief",
- "top": True,
  "img_key": "waikelo-sape-ferry-reopens",
  "slugs": {
   "es": "granja-camarones-waingapu-casi-20-por-ciento-obra-2028",
@@ -303,4 +302,140 @@ BRIEFS = [
   "body": "<p>PT ASDP Indonesia Ferry bersama Pemerintah Kabupaten Sumba Barat Daya membuka kembali lintasan penyeberangan antara Pelabuhan Waikelo, dekat Tambolaka, dan Pelabuhan Sape di Bima, Pulau Sumbawa, pada 24 Mei 2026, ditandai pelepasan simbolis penumpang pertama.</p><h2>Mengapa lintasan Waikelo-Sape penting</h2><p>Bupati Ratu Ngadu Bonnu Wulla menyebut lintasan ini urat nadi logistik yang sangat vital bagi konektivitas NTT dan NTB.</p><h2>Manfaat penyeberangan bagi Sumba Barat Daya</h2><p>Menurut pemerintah, lintasan ini membuka pasar bagi hasil pertanian, peternakan dan perikanan, mempermudah rujukan kesehatan darurat dan mendatangkan lebih banyak wisatawan melalui Waikelo. Pengumuman tersebut tidak mencantumkan jadwal.</p><h2>Apa artinya</h2><p>Bagi wisatawan, lintasan ini membuka rute darat dan laut antara Sumba dan Sumbawa, Lombok serta Bali. Cek jadwal terbaru di ASDP sebelum merencanakan perjalanan, karena penyeberangan di kawasan ini bisa berubah mengikuti cuaca dan musim.</p>"},
  "sources": [["InfoPublik: Sumba Barat Daya Hidupkan Kembali Jalur Penyeberangan Waikelo-Sape (24 May 2026)", "https://infopublik.id/kategori/nusantara/971641/sumba-barat-daya-hidupkan-kembali-jalur-penyeberangan-waikelo-sape"]]
 },
+{'section': 'business',
+ 'slug': 'waikelo-port-tambolaka-airport-upgrade-push-2026',
+ 'date': '2026-11-12',
+ 'time': '06:00',
+ 'dateline': 'KUPANG',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'mejorar-puerto-waikelo-aeropuerto-tambolaka-gobernador-ntt-2026', 'id': 'gubernur-ntt-percepatan-pelabuhan-waikelo-bandara-tambolaka-2026'},
+ 'keywords': {'en': ['Waikelo port expansion',
+                     'Tambolaka airport upgrade',
+                     'Southwest Sumba infrastructure',
+                     'Sumba port Bali ferry vehicles',
+                     'NTT governor Sumba airport port',
+                     'Sumba investment infrastructure 2026'],
+              'es': ['puerto de Waikelo ampliación',
+                     'aeropuerto de Tambolaka mejora',
+                     'infraestructuras Sumba Suroccidental',
+                     'puerto Sumba ferri vehículos',
+                     'gobernador NTT Sumba aeropuerto puerto'],
+              'id': ['perluasan Pelabuhan Waikelo', 'pengembangan Bandara Tambolaka', 'infrastruktur Sumba Barat Daya', 'Pelabuhan Waikelo kapal besar', 'Gubernur NTT Waikelo Tambolaka']},
+ 'en': {'title': 'NTT governor presses for bigger Waikelo port and Tambolaka airport',
+        'dek': "Waikelo's 105 m dock is too short for bigger ships, officials say, and the regent wants it extended; no funding or timetable has been announced.",
+        'answer': 'East Nusa Tenggara (NTT) Governor Melki Laka Lena has asked for faster development of Waikelo port and Tambolaka airport in Southwest Sumba, ANTARA Kupang reported on 11 November '
+                  "2026. The port's dock is 105 m long, and its head proposes extending it for larger ships. No budget or start date has been announced.",
+        'keys': ['ANTARA Kupang reported on 11 November 2026 that Governor Melki Laka Lena wants faster work on Waikelo port and Tambolaka airport in Southwest Sumba (Sumba Barat Daya, SBD).',
+                 'The Waikelo dock is 105 m long; the port head, Tonny E. Bokty, proposes extending it so larger ships such as KM Egon can unload vehicles from NTB, Bali and Java directly in SBD.',
+                 'The governor said Tambolaka airport needs a better apron and terminal because many visitors arrive through it.',
+                 "Regent Ratu Ngadu Bonu Wulla says sea links are weak and wants the port expanded; for 2026 the port authority's funds go to a service building and staff housing.",
+                 'These are requests and proposals: the reports give no cost, funding source or timetable, and both come from one outlet.'],
+        'visitors': 'Nothing changes for travellers yet: the airport and port work as they do today, and no construction dates have been announced. If the plans advance, Tambolaka would be the first '
+                    'place to feel it, with a bigger terminal and apron. For now, check flight times with your airline and ferry times with the operator before you travel.',
+        'body': '<p>East Nusa Tenggara (NTT) Governor Melki Laka Lena has called for faster development of Waikelo port and Tambolaka airport in Southwest Sumba, according to two reports from ANTARA '
+                'Kupang published on Wednesday 11 November 2026. The reports describe requests and proposals. They do not mention a budget, a funding source or a start date, and both come from a '
+                'single news agency.</p><h2>What officials asked for at the airport and the port</h2><p>The governor said Tambolaka airport needs better apron and terminal facilities, because many '
+                'visitors enter the island through it. For the port, Tonny E. Bokty, head of the Class III Waikelo port authority (KUPP), said the dock is 105 m long and proposed extending it so '
+                'that bigger ships, such as the ferry KM Egon, could berth. That would let vehicles from NTB, Bali and Java be unloaded directly in Southwest Sumba. He also listed repairs to the '
+                'revetment (the rock wall that protects the shore), the detailed engineering design (DED) and the weighbridge. The governor asked the port authority and the regency to prepare '
+                'technical data so the projects can be put forward for central-government funding.</p><h2>The regent wants a bigger port</h2><p>Regent Ratu Ngadu Bonu Wulla told ANTARA she wants '
+                'Waikelo expanded to improve the flow of agricultural, plantation, livestock and tourism goods. She said air links to Sumba have improved and that tourist flows are shifting from '
+                "Labuan Bajo to Sumba, but that sea links remain weak: much of the regency's produce is shipped through Waingapu in East Sumba. She said she had met the chair of Commission V of the "
+                "national parliament (DPR), which covers transport, and that he is ready to support the project. Mr Bokty said the port's 2026 funds are going to a service building and staff "
+                'housing, and that the passenger dock operated by the state ferry company ASDP still needs repairs. The governor said he would coordinate with the Ministry of '
+                'Transportation.</p><h2>What is and is not decided</h2><p>So far nobody has announced a cost, a design or a date. The next step described in the reports is for the port authority and '
+                'the regency to prepare technical data. Waikelo is also the Sumba end of the ferry to Sape on Sumbawa, which reopened on 24 May 2026; read <a '
+                'href="/en/travel/waikelo-sape-ferry-reopens/">our story on that route</a>.</p><h2>What it means for visitors, residents and investors</h2><p>Visitors: no change for now; the plans '
+                'are about capacity, not new services. Residents: a longer dock could bring cheaper or faster shipping of vehicles and goods to the west of the island, but only if funded. Investors: '
+                'this is a signal of intent, not a project. Watch for a funding decision, a design and a timetable before treating it as a change in logistics costs for the west of Sumba.</p>',
+        'faq': [['Is Waikelo port being expanded?',
+                 'Not yet. On 11 November 2026 ANTARA Kupang reported that the NTT governor and the Southwest Sumba regent want it expanded, and that the port authority proposes a longer dock. No '
+                 'budget or date has been announced.'],
+                ['How long is the Waikelo dock?', 'The head of the Waikelo port authority, Tonny E. Bokty, said it is 105 m long, according to ANTARA Kupang on 11 November 2026.']]},
+ 'es': {'title': 'NTT pide mejorar el puerto de Waikelo y el aeropuerto de Tambolaka',
+        'dek': 'El muelle de Waikelo mide 105 m y se queda corto para barcos mayores; la regente pide ampliarlo, pero no hay fondos ni calendario anunciados.',
+        'answer': 'El gobernador de Nusa Tenggara Oriental (NTT), Melki Laka Lena, ha pedido acelerar el desarrollo del puerto de Waikelo y del aeropuerto de Tambolaka, en Sumba Suroccidental, según '
+                  'informó ANTARA Kupang el 11 de noviembre de 2026. El muelle mide 105 m y su responsable propone alargarlo para barcos mayores. No se ha anunciado presupuesto ni fecha de inicio.',
+        'keys': ['ANTARA Kupang informó el 11 de noviembre de 2026 de que el gobernador Melki Laka Lena quiere acelerar las obras del puerto de Waikelo y del aeropuerto de Tambolaka, en Sumba '
+                 'Suroccidental (Sumba Barat Daya, SBD).',
+                 'El muelle de Waikelo mide 105 m; el jefe del puerto, Tonny E. Bokty, propone alargarlo para que barcos mayores, como el KM Egon, descarguen directamente en SBD vehículos de NTB, '
+                 'Bali y Java.',
+                 'El gobernador dijo que el aeropuerto de Tambolaka necesita una mejor plataforma de estacionamiento (apron) y terminal porque muchos visitantes llegan por él.',
+                 'La regente Ratu Ngadu Bonu Wulla dice que la conexión marítima es débil y quiere ampliar el puerto; los fondos de 2026 de la autoridad portuaria van a un edificio de servicios y a '
+                 'viviendas para el personal.',
+                 'Son peticiones y propuestas: las informaciones no dan coste, fuente de financiación ni calendario, y ambas proceden de un único medio.'],
+        'visitors': 'Por ahora no cambia nada para los viajeros: el aeropuerto y el puerto funcionan como hasta ahora y no hay fechas de obra. Si los planes avanzan, Tambolaka sería el primer sitio '
+                    'donde se notaría, con una terminal y una plataforma mayores. Mientras tanto, confirma los horarios de vuelo con tu aerolínea y los del ferri con el operador antes de viajar.',
+        'body': '<p>El gobernador de Nusa Tenggara Oriental (NTT), Melki Laka Lena, ha pedido acelerar el desarrollo del puerto de Waikelo y del aeropuerto de Tambolaka, en Sumba Suroccidental, '
+                'según dos informaciones de ANTARA Kupang publicadas el miércoles 11 de noviembre de 2026. Las crónicas describen peticiones y propuestas. No mencionan presupuesto, fuente de '
+                'financiación ni fecha de inicio, y ambas proceden de una sola agencia.</p><h2>Qué piden las autoridades para el aeropuerto y el puerto</h2><p>El gobernador dijo que el aeropuerto de '
+                'Tambolaka necesita una mejor plataforma de estacionamiento de aeronaves y una mejor terminal, porque muchos visitantes entran a la isla por él. En cuanto al puerto, Tonny E. Bokty, '
+                'jefe de la autoridad portuaria de Waikelo (KUPP, clase III), explicó que el muelle mide 105 m y propuso alargarlo para que puedan atracar barcos mayores, como el ferri KM Egon. Así '
+                'se podrían descargar directamente en Sumba Suroccidental vehículos procedentes de NTB, Bali y Java. También enumeró reparaciones del talud (el muro de roca que protege la orilla), '
+                'del diseño técnico detallado (DED) y de la báscula de pesaje. El gobernador pidió a la autoridad portuaria y a la regencia que preparen datos técnicos para presentar los proyectos y '
+                'optar a financiación del Gobierno central.</p><h2>La regente quiere un puerto mayor</h2><p>La regente Ratu Ngadu Bonu Wulla dijo a ANTARA que quiere ampliar Waikelo para mejorar el '
+                'flujo de productos agrícolas, de plantación, ganaderos y turísticos. Según ella, la conexión aérea con Sumba ha mejorado y el flujo de turistas se está desplazando de Labuan Bajo a '
+                'Sumba, pero la conexión marítima sigue siendo débil: buena parte de la producción de la regencia sale por Waingapu, en Sumba Oriental. Contó que se reunió con el presidente de la '
+                'Comisión V del Parlamento nacional (DPR), que se ocupa del transporte, y que este está dispuesto a apoyar el proyecto. Bokty indicó que los fondos de 2026 del puerto se destinan a '
+                'un edificio de servicios y a viviendas para el personal, y que el muelle de pasajeros que gestiona la naviera estatal ASDP todavía necesita reparaciones. El gobernador dijo que lo '
+                'coordinará con el Ministerio de Transporte.</p><h2>Qué está decidido y qué no</h2><p>De momento nadie ha anunciado coste, diseño ni fecha. El siguiente paso que describen las '
+                'crónicas es que la autoridad portuaria y la regencia preparen datos técnicos. Waikelo es además el extremo en Sumba del ferri a Sape, en Sumbawa, que reabrió el 24 de mayo de 2026; '
+                'lee <a href="/es/travel/waikelo-sape-ferry-reopens/">nuestra noticia sobre esa ruta</a>.</p><h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: nada cambia '
+                'por ahora; los planes tratan de capacidad, no de servicios nuevos. Residentes: un muelle más largo podría abaratar o acelerar el transporte marítimo de vehículos y mercancías al '
+                'oeste de la isla, pero solo si se financia. Inversores: es una señal de intención, no un proyecto. Conviene esperar a que haya decisión de financiación, diseño y calendario antes de '
+                'tratarlo como un cambio en los costes logísticos del oeste de Sumba.</p>',
+        'faq': [['¿Se está ampliando el puerto de Waikelo?',
+                 'Todavía no. El 11 de noviembre de 2026, ANTARA Kupang informó de que el gobernador de NTT y la regente de Sumba Suroccidental quieren ampliarlo y de que la autoridad portuaria '
+                 'propone un muelle más largo. No se ha anunciado presupuesto ni fecha.'],
+                ['¿Cuánto mide el muelle de Waikelo?', 'Según ANTARA Kupang del 11 de noviembre de 2026, el jefe de la autoridad portuaria de Waikelo, Tonny E. Bokty, dijo que mide 105 m.']]},
+ 'id': {'title': 'Gubernur NTT dorong percepatan Pelabuhan Waikelo dan Bandara Tambolaka',
+        'dek': 'Dermaga Waikelo sepanjang 105 m dinilai kurang untuk kapal lebih besar; bupati meminta perluasan, tetapi belum ada dana atau jadwal yang diumumkan.',
+        'answer': 'Gubernur Nusa Tenggara Timur (NTT) Melki Laka Lena meminta percepatan pengembangan Pelabuhan Waikelo dan Bandara Tambolaka di Sumba Barat Daya, lapor ANTARA Kupang pada 11 '
+                  'November 2026. Dermaga pelabuhan itu panjangnya 105 m, dan kepala pelabuhan mengusulkan perpanjangan untuk kapal yang lebih besar. Belum ada anggaran atau tanggal mulai yang '
+                  'diumumkan.',
+        'keys': ['ANTARA Kupang melaporkan pada 11 November 2026 bahwa Gubernur Melki Laka Lena ingin pengembangan Pelabuhan Waikelo dan Bandara Tambolaka di Sumba Barat Daya (SBD) dipercepat.',
+                 'Dermaga Waikelo panjangnya 105 m; Kepala KUPP Waikelo, Tonny E. Bokty, mengusulkan perpanjangan agar kapal lebih besar seperti KM Egon dapat membongkar kendaraan dari NTB, Bali dan '
+                 'Jawa langsung di SBD.',
+                 'Gubernur mengatakan Bandara Tambolaka memerlukan apron dan terminal yang lebih baik karena banyak pengunjung masuk lewat bandara itu.',
+                 'Bupati Ratu Ngadu Bonu Wulla menilai jalur laut masih lemah dan ingin pelabuhan diperluas; dana KUPP 2026 dipakai untuk gedung layanan dan rumah dinas pegawai.',
+                 'Semua ini masih permintaan dan usulan: laporan tidak memuat biaya, sumber dana atau jadwal, dan keduanya berasal dari satu media.'],
+        'visitors': 'Belum ada perubahan bagi wisatawan: bandara dan pelabuhan beroperasi seperti biasa, dan belum ada jadwal pembangunan. Jika rencana ini berjalan, Tambolaka akan menjadi tempat '
+                    'pertama yang merasakannya, dengan terminal dan apron yang lebih besar. Sementara itu, pastikan jadwal penerbangan ke maskapai dan jadwal kapal ke operator sebelum berangkat.',
+        'body': '<p>Gubernur Nusa Tenggara Timur (NTT) Melki Laka Lena meminta percepatan pengembangan Pelabuhan Waikelo dan Bandara Tambolaka di Sumba Barat Daya, menurut dua laporan ANTARA Kupang '
+                'yang terbit pada Rabu, 11 November 2026. Laporan itu memuat permintaan dan usulan. Tidak disebutkan anggaran, sumber dana atau tanggal mulai, dan keduanya berasal dari satu kantor '
+                'berita.</p><h2>Permintaan untuk bandara dan pelabuhan</h2><p>Gubernur mengatakan Bandara Tambolaka memerlukan fasilitas apron dan terminal yang lebih baik karena banyak pengunjung '
+                'masuk ke pulau melalui bandara itu. Untuk pelabuhan, Kepala Kantor Unit Penyelenggara Pelabuhan (KUPP) Kelas III Waikelo, Tonny E. Bokty, menyebut panjang dermaga 105 m dan '
+                'mengusulkan perpanjangan agar kapal yang lebih besar, seperti KM Egon, dapat bersandar. Dengan begitu kendaraan dari NTB, Bali dan Jawa dapat dibongkar langsung di Sumba Barat Daya. '
+                'Ia juga menyebut perlunya perbaikan talud, dokumen desain rekayasa rinci (DED) dan jembatan timbang. Gubernur meminta KUPP dan pemerintah kabupaten menyiapkan data teknis agar '
+                'proyek dapat diajukan untuk pendanaan pemerintah pusat.</p><h2>Bupati ingin pelabuhan lebih besar</h2><p>Bupati Sumba Barat Daya Ratu Ngadu Bonu Wulla mengatakan kepada ANTARA bahwa '
+                'ia ingin Waikelo diperluas untuk melancarkan arus barang pertanian, perkebunan, peternakan dan pariwisata. Menurutnya, konektivitas udara ke Sumba sudah membaik dan arus wisatawan '
+                'mulai bergeser dari Labuan Bajo ke Sumba, tetapi jalur laut masih lemah: sebagian besar hasil bumi kabupaten dikirim lewat Waingapu di Sumba Timur. Ia mengaku telah bertemu Ketua '
+                'Komisi V DPR RI, yang membidangi transportasi, dan siap mendukung proyek ini. Bokty mengatakan dana KUPP tahun 2026 dipakai untuk gedung layanan dan rumah dinas pegawai, sedangkan '
+                'dermaga penumpang yang dikelola ASDP masih perlu diperbaiki. Gubernur menyatakan akan berkoordinasi dengan Kementerian Perhubungan.</p><h2>Apa yang sudah dan belum '
+                'diputuskan</h2><p>Sejauh ini belum ada yang mengumumkan biaya, desain atau tanggal. Langkah berikutnya menurut laporan adalah KUPP dan pemerintah kabupaten menyiapkan data teknis. '
+                'Waikelo juga merupakan ujung Sumba dari lintasan feri ke Sape di Sumbawa, yang dibuka kembali pada 24 Mei 2026; baca <a href="/id/travel/waikelo-sape-ferry-reopens/">berita kami '
+                'tentang lintasan itu</a>.</p><h2>Apa artinya bagi wisatawan, warga dan investor</h2><p>Wisatawan: belum ada perubahan; rencana ini soal kapasitas, bukan layanan baru. Warga: dermaga '
+                'yang lebih panjang bisa membuat pengiriman kendaraan dan barang ke wilayah barat pulau lebih murah atau cepat, tetapi hanya jika didanai. Investor: ini sinyal niat, bukan proyek. '
+                'Tunggu keputusan pendanaan, desain dan jadwal sebelum menganggapnya sebagai perubahan biaya logistik di Sumba bagian barat.</p>',
+        'faq': [['Apakah Pelabuhan Waikelo sedang diperluas?',
+                 'Belum. Pada 11 November 2026 ANTARA Kupang melaporkan bahwa Gubernur NTT dan Bupati Sumba Barat Daya menginginkan perluasan, dan KUPP mengusulkan dermaga yang lebih panjang. Belum '
+                 'ada anggaran atau tanggal yang diumumkan.'],
+                ['Berapa panjang dermaga Waikelo?', 'Kepala KUPP Waikelo, Tonny E. Bokty, menyebut panjangnya 105 m, menurut ANTARA Kupang pada 11 November 2026.']]},
+ 'sources': [['ANTARA Kupang: Gubernur NTT mempercepat pengembangan pelabuhan dan bandara di Sumba (11 Nov 2026)',
+              'https://kupang.antaranews.com/berita/205255/gubernur-ntt-mempercepat-pengembangan-pelabuhan-dan-bandara-di-sumba'],
+             ['ANTARA Kupang: Bupati SBD menginginkan perluasan Pelabuhan Waikelo pacu ekonomi daerah (11 Nov 2026)',
+              'https://kupang.antaranews.com/berita/205287/bupati-sbd-menginginkan-perluasan-pelabuhan-waikelo-pacu-ekonomi-daerah'],
+             ['InfoPublik: Sumba Barat Daya Hidupkan Kembali Jalur Penyeberangan Waikelo-Sape (24 May 2026)',
+              'https://infopublik.id/kategori/nusantara/971641/sumba-barat-daya-hidupkan-kembali-jalur-penyeberangan-waikelo-sape']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': '',
+           'license': '',
+           'license_url': '',
+           'page': '',
+           'ai': True,
+           'caption': {'en': 'AI-generated illustration of a small ferry harbour on a dry-season island coast; not a photo of Waikelo or of the events described.',
+                       'es': 'Ilustración generada con IA de un pequeño puerto de ferris en una costa isleña en estación seca; no es una foto de Waikelo ni de los hechos descritos.',
+                       'id': 'Ilustrasi buatan AI pelabuhan feri kecil di pesisir pulau pada musim kemarau; bukan foto Waikelo maupun kejadian yang diberitakan.'}}},
 ]
