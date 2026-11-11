@@ -940,7 +940,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
 // pages build them, so they are pointed at /projects/<slug>/ here, in the page's language. The id list (about 12 KB, kept a day
 // in the browser) is only fetched on pages that carry such a link. Projects without a named page keep /p/<ID>/.
 (function () {
-  var D = document, RE = /^(?:https:\/\/kolaboro\.com)?\/p\/([A-Za-z0-9-]{3,20})\/?(#.*)?$/, SEL = 'a[href^="/p/"]:not([data-kp]),a[href^="https://kolaboro.com/p/"]:not([data-kp])';
+  var D = document, RE = /^(?:https:\/\/kolaboro\.com)?\/p\/(?:\?id=)?([A-Za-z0-9-]{3,20})\/?(#.*)?$/, SEL = 'a[href^="/p/"]:not([data-kp]),a[href^="https://kolaboro.com/p/"]:not([data-kp])';
   var LG = (D.documentElement.lang || 'en').slice(0, 2), NL = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(LG) >= 0 ? '/' + LG : '';
   var M = null, asked = 0, queued = 0;
   function fix() {
