@@ -40,7 +40,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v62';   // v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
+const CACHE_V = 'named-v63';   // v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
 //   'named-v57';   // v57: payment email check link without a language prefix on developer pages (n22e)   // was   // v56: gazette section: 5 rows before Show all, paths left to right in Arabic (n21a)   // was   // v55: official gazette notices on developer pages; warning lists shown as a row of sources (n21a)   // was   // v54: around the site, distance claims, climate at the plot (n21b)   // was   // v53: filings data for listed developers, rules table layout (n21c)   // was   // v52: short-let rules next to the short-let figures, filings section on developer pages (n21c)   // was   // v51: regulator warning lists line, gazette notices section on developer pages (n21a)   // was   // v50: accessibility pass (n21e)   // was    // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
@@ -462,7 +462,9 @@ function projectPage(ix, x, lang, extra) {
   const hN = (c.history || []).length;
   FAQ.push([tr(lang, 'q_change', { n: name }), [tr(lang, 'a_change', { d: fd(checked, lang) }), ph && ph.n > 1 ? tr(lang, 'ph_line', { n: ph.n, a: fd(ph.first, lang), b: fd(ph.last, lang), c: ph.changed }) : '', hN ? tr(lang, 'a_change_k', { k: hN }) : (ph && ph.changed ? '' : tr(lang, 'a_change_none'))].filter(Boolean).join(' ')]);
   for (const f of FAQ) f[1] = dot(f[1]);
-  const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('');
+  // n25t: a source's own wording quoted inside a translated answer (payment plan, ownership terms) is marked lang="en"
+  const qmark = (h, Q) => lang === 'en' || !Q ? h : Q.reduce((t, w) => { const e = esc(String(w).replace(/[.\s]+$/, '')); return e.length > 3 ? t.split(e).join('<span lang="en" dir="ltr">' + e + '</span>') : t; }, h);
+  const faq = FAQ.map(([q, a, Q]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + qmark(esc(a), Q) + '</p></details>').join('');
 
   // sources
   const S = [...new Set([page, x.du, ...(x.src || []), ...CL.map(r => r[3]), ...FL.map(f => f[1])].filter(okHttp))];
@@ -557,8 +559,12 @@ function devPage(ix, dv, lang, extra) {
   const mks = [...new Set(L.map(x => x.mk))], lm = L.map(x => lastmod(ix, x)).sort(), checked = lm[lm.length - 1];
   const pn = L.filter(x => x.pn).length, P = L.flatMap(x => ix.prom[x.id] || []);
   const cnt = st => P.filter(p => p.st === st).length, moved = P.filter(p => p.mv).length;
-  const title = tr(lang, 'title_d', { dev: name });
-  const desc = dot(tr(lang, 'desc_d2', { dev: name, k: L.length, mks: mks.join(', '), pn, p: P.length, mv: moved, d: fd(checked, lang) }));
+  // n25t: developer titles were 70 to 95 characters; the longest form that fits 60 (searched words first, brand last)
+  const title = [tr(lang, 'title_d', { dev: name }), tr(lang, 'title_d2', { dev: name }) + ' | Kolaboro', tr(lang, 'title_d2', { dev: name }), qa(lang, 'b', { n: name }) + ' | Kolaboro', qa(lang, 'b', { n: name })].find(t => [...t].length <= 60) || qa(lang, 'b', { n: name });
+  // n25t: markets in the page language; the description stays within 155 characters (fewer markets named, then whole sentences)
+  const dsc = n => dot(tr(lang, 'desc_d2', { dev: name, k: L.length, mks: mks.slice(0, n).map(m => mkName(m, lang)).join(', ') + (mks.length > n ? ' +' + (mks.length - n) : ''), pn, p: P.length, mv: moved, d: fd(checked, lang) }));
+  let desc = dsc(mks.length); for (const n of [3, 2, 1]) if ([...desc].length > 155 && mks.length > n) desc = dsc(n);
+  if ([...desc].length > 155) { const cut = [...desc].slice(0, 155).join(''), k = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('。')); desc = k > 60 ? cut.slice(0, k + 1) : cut.replace(/\s+\S*$/, '') + '.'; }
   const first = L[0], fx = Object.assign({}, ...L.map(x => x.fx || {}).reverse());
   const g = [fact(esc(tr(lang, 'g_d', { k: L.length, dev: name, mks: mks.map(m => mkName(m, lang)).join(', ') })), first.url), fact(esc(tr(lang, 'g_d_pn', { pn, k: L.length })), first.du || first.url)];
   if (P.length) g.push(fact(esc(tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') })), '/promises/', tr(lang, 'm_promises')));
@@ -588,9 +594,7 @@ function devPage(ix, dv, lang, extra) {
   FAQ.push([tr(lang, 'q_drev', { dev: name }), tr(lang, 'a_drev')]);
   const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(factsTxt) + '</p><p class="kans-u"><span><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time></span><span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span></p></div>';
   for (const f of FAQ) f[1] = dot(f[1]);
-  // n25t: a source's own wording quoted inside a translated answer (payment plan, ownership terms) is marked lang="en"
-  const qmark = (h, Q) => lang === 'en' || !Q ? h : Q.reduce((t, w) => { const e = esc(w); return e.length > 3 ? t.split(e).join('<span lang="en" dir="ltr">' + e + '</span>') : t; }, h);
-  const faq = FAQ.map(([q, a, Q]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + qmark(esc(a), Q) + '</p></details>').join('');
+  const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('');
   const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
   const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.slice(0, 60).map(srcLi).join('') + '</ol>';
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
@@ -612,7 +616,7 @@ function indexPage(ix, lang) {
   const mks = [...by.keys()].sort((a, b) => by.get(b).length - by.get(a).length);
   const canon = ORIGIN + pre(lang) + '/projects/', title = tr(lang, 'title_i'), desc = tr(lang, 'lead_i', { k: ix.P.length, m: mks.length });
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + searchBox(lang, ix.P.length, ix.devs.size) + '</div></section><div class="wrap kwrap" data-kx-lists>' +
-    '<details class="kmkt"><summary>' + esc(tr(lang, 'jump_mk')) + ' (' + mks.length + ')</summary><p>' + mks.map(m => '<a href="#m-' + slugM(m) + '">' + esc(m) + ' <small>' + by.get(m).length + '</small></a>').join('') + '</p></details>' +
+    '<details class="kmkt"><summary>' + esc(tr(lang, 'jump_mk')) + ' (' + mks.length + ')</summary><p>' + mks.map(m => '<a href="#m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></a>').join('') + '</p></details>' +
     mks.map(m => '<section class="ks"><h2 id="m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></h2><ul class="lk cols">' + by.get(m).sort((a, b) => a.n.localeCompare(b.n)).map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a>' + (x.dv ? ' <small>' + esc(x.dv) + '</small>' : '') + '</li>').join('') + '</ul></section>').join('') + '</div>';
   const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: iso(ix.updated) };
   return { title, desc, canon, body, ld, lastmod: iso(ix.updated), alt: l => ORIGIN + pre(l) + '/projects/' };
