@@ -384,7 +384,7 @@ function openBody(d, lang) {
   const kv = (key, vals, h, l, extra) => { const full = t(lang, key, vals), k = full.search(/[:：]/); return '<dt>' + esc(k < 0 ? full : full.slice(0, k).trim()) + '</dt><dd>' + esc(k < 0 ? '' : full.slice(k + 1).trim()) + (extra || '') + ' ' + src(h, l) + '</dd>'; };
   const nn = v => v == null ? t(lang, 'o_none') : nf(v, lang);
   const sealed = '<dl class="k-ledger">' + kv('s_log', { n: nn(se.log_days), d: dayName(se.log_first, lang) }, '/log/', 'kolaboro.com/log') +
-    kv('s_seal', { n: nn(se.projects_in_todays_root) }, '/verify', 'kolaboro.com/verify', se.root_date ? ' <small class="k-muted">' + esc(dayName(se.root_date, lang)) + '</small>' : '') +
+    kv('s_seal', { n: nn(se.projects_in_todays_root) }, '/verify/', 'kolaboro.com/verify', se.root_date ? ' <small class="k-muted">' + esc(dayName(se.root_date, lang)) + '</small>' : '') +
     kv('s_st', { n: nn(se.bitcoin_stamps), c: nn(se.stamps_confirmed) }, '/log/', 'kolaboro.com/log') + '</dl>';
   const ship = '<dl class="k-ledger">' + kv('sh_7', { n: nn(sh.ships_last_7_days) }, '/shipping/', 'kolaboro.com/shipping') + kv('sh_streak', { n: nn(sh.streak_days) }, '/shipping/', 'kolaboro.com/shipping') +
     kv('sh_dep', { n: nf(sh.deploys_last_7_days, lang), f: nf(sh.rollbacks_last_7_days, lang) }, '/data/deploys.json', '/data/deploys.json') + '</dl>' + (sh.as_of ? '<p class="kfc-fine">' + esc(t(lang, 'rs_at', { d: dayName(sh.as_of, lang) })) + '</p>' : '');

@@ -4,6 +4,20 @@
   {
    "date": "2026-11-12",
    "kind": "shipped",
+   "text": "Every named project page now opens with a quick answer (developer, place, handover date as published, permit published or not, transparency score and rank, last checked) and answers by question: when it will be completed, how much it costs, who the developer is, what we could check and where it is, with sources, plus six related projects.",
+   "tl": {
+    "es": "Cada ficha de proyecto empieza ahora con una respuesta rápida (promotor, lugar, fecha de entrega publicada, licencia publicada o no, puntuación y puesto de transparencia, última revisión) y responde por preguntas: cuándo se entrega, cuánto cuesta, quién es el promotor, qué pudimos comprobar y dónde está, con fuentes, más seis proyectos relacionados.",
+    "fr": "Chaque fiche projet commence par une réponse rapide (promoteur, lieu, date de livraison publiée, permis publié ou non, score et rang de transparence, dernière vérification) et répond par questions : date de livraison, prix, promoteur, ce que nous avons pu vérifier et emplacement, avec sources, plus six projets liés.",
+    "de": "Jede Projektseite beginnt jetzt mit einer kurzen Antwort (Bauträger, Ort, veröffentlichter Übergabetermin, Genehmigung veröffentlicht oder nicht, Transparenzwert und Platz, zuletzt geprüft) und beantwortet Fragen: Fertigstellung, Preis, Bauträger, was wir prüfen konnten und Lage, mit Quellen, dazu sechs verwandte Projekte.",
+    "nl": "Elke projectpagina begint nu met een kort antwoord (ontwikkelaar, plaats, gepubliceerde opleverdatum, vergunning gepubliceerd of niet, transparantiescore en plaats, laatst gecontroleerd) en beantwoordt vragen: oplevering, prijs, ontwikkelaar, wat we konden controleren en locatie, met bronnen, plus zes gerelateerde projecten.",
+    "ru": "Каждая страница проекта теперь начинается с краткого ответа (застройщик, место, опубликованный срок сдачи, опубликовано ли разрешение, оценка и место по прозрачности, дата проверки) и отвечает на вопросы: когда сдадут, сколько стоит, кто застройщик, что мы смогли проверить и где находится, с источниками, плюс шесть похожих проектов.",
+    "zh": "每个项目页面现在以简要回答开头（开发商、地点、公布的交付时间、是否公布许可证、透明度评分和排名、最近核查日期），并按问题作答：何时交付、多少钱、开发商是谁、我们能核查的内容和位置，均附来源，另有六个相关项目。",
+    "ar": "تبدأ كل صفحة مشروع الآن بإجابة سريعة (المطوّر، المكان، موعد التسليم المنشور، هل الترخيص منشور، درجة الشفافية والترتيب، آخر فحص) وتجيب عن الأسئلة: متى يُسلَّم، كم سعره، من المطوّر، ما الذي استطعنا التحقق منه وأين يقع، مع المصادر، إضافة إلى ستة مشاريع ذات صلة."
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "shipped",
    "text": "Transparency rankings for 30 islands and 30 cities: every tracked off-plan project scored 0 to 100 on what is published and checkable (legal name, permit, handover date and its record, deposit protection, location, website, official lists), with the method and weights public, a source on every line, a right of reply on every row and the full analysis by email on request; Sumba is ranked with a disclosure, and the founder's own project there is excluded",
    "tl": {
     "es": "Rankings de transparencia de 30 islas y 30 ciudades: cada proyecto sobre plano que seguimos, puntuado de 0 a 100 según lo publicado y comprobable (razón social, licencia, fecha de entrega y su historial, protección del depósito, ubicación, web, listas oficiales), con el método y los pesos públicos, una fuente en cada línea, derecho de réplica en cada fila y el análisis completo por email si se pide; Sumba aparece con una declaración de conflicto y el proyecto propio del fundador queda excluido",

@@ -170,8 +170,21 @@ export async function trBadge(env, id, lang) {
   return out.length ? '<p class="k-small ktr-badge" id="transparency-rank">' + out.join(' · ') + '</p>' : '';
 }
 
+// n24s: everything a named project page needs from the ranking in one read: the badge line above, the score, the ranks in each place,
+// the eleven components as a published / not published checklist (same wording and sources as the ranking's detail rows) and a plain
+// text summary for the FAQ answer. Sumba rows and excluded projects return null (they have no named page).
+export async function trProject(env, id, lang) {
+  let ix; try { ix = await trData(env); } catch (e) { return null; }
+  const r = ix.rows.get(id); if (!r || r.sumba) return null;
+  const ranks = [];
+  for (const [s, pl] of ix.places) if (!pl.P.coi && pl.L.includes(r)) ranks.push({ s, p: pl.P.n, r: pl.ranked ? r['rk_' + s] : null, m: pl.n, ranked: pl.ranked });
+  const plain = h => String(h).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  const items = KEYS.map(k => ({ k, st: r.comp[k].st, label: t(lang, 'c_' + k), text: plain(compText(lang, k, r.comp[k])) }));
+  return { score: r.score, rv: r.rv, ranks, items, badge: await trBadge(env, id, lang), ledger: ledger(lang, r), method: pre(lang) + '/methods/transparency-score/', updated: ix.updated };
+}
+
 // ------------------------------------------------------------------------------------------------ HTML parts
-const CSS = '<style id="ktr-css">.ktr>.k-sec:first-child{padding-top:clamp(20px,3vw,36px)}.ktr .k-phead{margin-bottom:var(--k-5,24px)}.ktr h2{margin-top:var(--k-7,48px)}.ktr-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface);margin:var(--k-4,16px) 0}.ktr-kv div{padding:14px 16px;box-shadow:inset -1px -1px 0 var(--k-line)}.ktr-kv b{display:block;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;font-variant-numeric:tabular-nums}.ktr-kv span{display:block;font-size:var(--k-fs-sm,15px);color:var(--k-muted)}' +
+const CSS ='<style id="ktr-css">.ktr>.k-sec:first-child{padding-top:clamp(20px,3vw,36px)}.ktr .k-phead{margin-bottom:var(--k-5,24px)}.ktr h2{margin-top:var(--k-7,48px)}.ktr-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface);margin:var(--k-4,16px) 0}.ktr-kv div{padding:14px 16px;box-shadow:inset -1px -1px 0 var(--k-line)}.ktr-kv b{display:block;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;font-variant-numeric:tabular-nums}.ktr-kv span{display:block;font-size:var(--k-fs-sm,15px);color:var(--k-muted)}' +
   '.ktr-tw{overflow-x:auto;margin:var(--k-3,12px) 0 var(--k-5,24px);border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface)}.ktr-tw table{min-width:860px;width:100%}.ktr-tw th{font-size:var(--k-fs-xs,13px);font-weight:600;white-space:normal;vertical-align:bottom}.ktr-tw td{vertical-align:top}.ktr-tw tbody tr{content-visibility:auto;contain-intrinsic-size:auto 64px}' +
   '.ktr-sc{font-weight:700;font-variant-numeric:tabular-nums;font-size:var(--k-fs-lg,20px);white-space:nowrap}.ktr-bar{display:block;height:6px;border-radius:3px;background:var(--k-sunken);margin-top:4px;min-width:56px}.ktr-bar i{display:block;height:100%;border-radius:3px;background:var(--k-sea);width:var(--v)}' +
   '.ktr-t{display:inline-flex;align-items:flex-start;gap:4px;font-size:var(--k-fs-xs,13px);line-height:1.3}.ktr-t b{font-size:15px;line-height:1}.ktr-yes{color:var(--k-ok)}.ktr-part{color:var(--k-warn)}.ktr-no,.ktr-nc{color:var(--k-muted)}' +
@@ -182,7 +195,8 @@ const CSS = '<style id="ktr-css">.ktr>.k-sec:first-child{padding-top:clamp(20px,
 function tick(lang, st) { const sym = { yes: '✓', part: '◐', no: '○', nc: '?' }[st] || '?'; return '<span class="ktr-t ktr-' + st + '"><b aria-hidden="true">' + sym + '</b>' + esc(t(lang, 'st_' + st)) + '</span>'; }
 function srcA(lang, u, isSumba) {
   if (!u || isSumba && /^https?:/.test(u)) return '';
-  const lbl = /^https?:/.test(u) && !/gleif\.org/.test(u) ? t(lang, 'src_dev') : /gleif\.org/.test(u) ? 'GLEIF' : u.replace(/\?.*$/, '');
+  // n24s: the website-health source is our domain check API; its path ("/api/x/fraud/...") is shown as kolaboro.com, so no verdict word appears as text
+  const lbl = /^https?:/.test(u) && !/gleif\.org/.test(u) ? t(lang, 'src_dev') : /gleif\.org/.test(u) ? 'GLEIF' : /^\/api\/x\/fraud\//.test(u) ? 'kolaboro.com' : u.replace(/\?.*$/, '');
   return '<a class="k-src" href="' + esc(u) + '"' + (/^https?:/.test(u) ? ' rel="noopener nofollow" target="_blank"' : '') + '>' + (/^\//.test(lbl) ? '<bdi>' + esc(lbl) + '</bdi>' : esc(lbl)) + '</a>';
 }
 function compText(lang, k, q) {

@@ -296,11 +296,12 @@ function changesAtom(X) {
 }
 
 // ---------- answer files for answer engines
-function answers(X, x) {
+function answers(X, x, tp) {
   const c = X.ix.caseBy.get(x.id) || {}, rv = X.rev(x), page = pageOf(x), ho = N.handoverOf(X.ix, x), lm = late(X, x), P = X.ix.prom[x.id] || [];
   const url = pUrl('en', x), sha = x.sha || (c.fp || {}).sha256, sd = x.sealed || (c.fp || {}).date, lc = N.lastmod(X.ix, x);
   const ch = X.changes.filter(e => e.x.id === x.id).slice(0, 8), where = [x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ');
   const L = ['# ' + x.n + ': facts on record', '', 'Canonical page: ' + url, 'Other languages: ' + LANGS.filter(l => l !== 'en').map(l => pUrl(l, x)).join(' '), 'Last checked: ' + lc + '. Licence: CC BY 4.0, attribute "Kolaboro" and link the canonical page.', 'Rules: facts only, each with its source. Kolaboro gives no verdicts about a named company.', ''];
+  L.push('## Quick answer {#answer}', '', N.quickAnswer(X.ix, x, 'en', tp || null), '');   // n24s: the same text as the top of the page
   L.push('## Summary {#summary}', '');
   if (!rv) L.push(x.n + ' (' + where + ') is tracked by Kolaboro and not yet reviewed: our research agent has not read its sources yet, so no score or check results are published. Page: ' + url, '');
   else {
@@ -329,7 +330,7 @@ function answers(X, x) {
   return L.join('\n');
 }
 function llmsProjects(X) {
-  const L = ['# Kolaboro: every named off-plan project, one citation-ready block each', '', '> Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Projects not yet reviewed carry no score. Full answers per project: ' + ORIGIN + '/answers/<slug>.md. Section anchors on each project page: #glance #promise #delivery #permits #checks #reviews #reply #faq #sources.', ''];
+  const L = ['# Kolaboro: every named off-plan project, one citation-ready block each', '', '> Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Projects not yet reviewed carry no score. Full answers per project: ' + ORIGIN + '/answers/<slug>.md. Section anchors on each project page: #answer #glance #legit #promise #delivery #permits #where #checks #developer #reviews #reply #faq #sources.', ''];
   const mk = new Map(); for (const x of X.ix.P) { if (!mk.has(x.mk)) mk.set(x.mk, []); mk.get(x.mk).push(x); }
   for (const m of [...mk.keys()].sort()) {
     L.push('## ' + m, '');
@@ -374,7 +375,8 @@ export async function handle(req, u, env, ctx, shell) {
   }
   if ((m = /^\/answers\/([a-z0-9-]{1,90})\.md$/.exec(p))) {
     const x = X.ix.bySlug.get(m[1]); if (!x) return nf();
-    return txt(answers(X, x), 'text/markdown; charset=utf-8', { link: '<' + pUrl('en', x) + '>; rel="canonical"', 'last-modified': new Date(N.lastmod(X.ix, x) + 'T12:00:00Z').toUTCString() });
+    let tp = null; try { tp = await (await import('./kbx_tr.js')).trProject(env, x.id, 'en'); } catch (e) { tp = null; }
+    return txt(answers(X, x, tp), 'text/markdown; charset=utf-8', { link: '<' + pUrl('en', x) + '>; rel="canonical"', 'last-modified': new Date(N.lastmod(X.ix, x) + 'T12:00:00Z').toUTCString() });
   }
   if (p === '/llms-projects.txt') return txt(llmsProjects(X), 'text/plain; charset=utf-8');
   if (p === '/stories/sitemap.xml') return txt(citeSitemap(X), 'application/xml; charset=utf-8');

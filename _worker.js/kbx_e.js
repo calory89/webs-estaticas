@@ -144,6 +144,11 @@ const TOOLS = [
     inputSchema: { type: 'object', additionalProperties: false, required: ['id'], properties: {
       id: { type: 'string', pattern: '^[A-Za-z0-9-]{3,20}$' }, as_of: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$', description: 'Optional date for time travel' } } },
     annotations: Object.assign({ title: 'Get one project' }, RO) },
+  { name: 'project_quick_answer', title: 'Quick answer about one named project',
+    description: 'The quick answer shown at the top of a named project page (batch 24): what it is, developer, place, handover date as published and its moves, permit number published or not, transparency score and rank in its island or city, review status, last checked. Facts only, no verdict. By page slug (e.g. unsere-flora-berlin) or id (e.g. BER-001); lang one of en es de fr nl ru zh ar. Links to the page, its answer file and the checklist.',
+    inputSchema: { type: 'object', additionalProperties: false, properties: {
+      slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' }, id: { type: 'string', pattern: '^[A-Za-z0-9-]{3,20}$' }, lang: { type: 'string', enum: ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], default: 'en' } } },
+    annotations: Object.assign({ title: 'Quick answer about one named project' }, RO) },
   { name: 'market_stats', title: 'Market statistics',
     description: 'Per-market statistics: projects tracked, average checks public and confirmed, share with a public permit, share with deposit protection (escrow), projects with all six public, flagged projects, and the transparency index (0-100, markets with 3+ projects). Without filters returns GET /api/open/markets as published.',
     inputSchema: { type: 'object', additionalProperties: false, properties: {
@@ -191,6 +196,18 @@ async function runTool(env, name, a) {
     const id = str(a, 'id', 20), day = str(a, 'as_of', 10);
     if (!id || !ID_RE.test(id)) throw argErr('id must look like BALI-014'); if (day && !DAY_RE.test(day)) throw argErr('as_of must be YYYY-MM-DD');
     return [await openCall(env, '/api/open/projects/' + encodeURIComponent(id.toUpperCase()) + (day ? '/at/' + day : ''))];
+  }
+  if (name === 'project_quick_answer') {
+    const slug = str(a, 'slug', 90), id = str(a, 'id', 20), lang = str(a, 'lang', 2) || 'en';
+    if (!slug && !id) throw argErr('give slug or id'); if (slug && !/^[a-z0-9-]{1,90}$/.test(slug)) throw argErr('slug must be lowercase letters, digits and hyphens'); if (id && !ID_RE.test(id)) throw argErr('id must look like BER-001');
+    if (['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(lang) < 0) throw argErr('lang must be one of en es de fr nl ru zh ar');
+    const [N, TR] = await Promise.all([import('./kbx_named.js'), import('./kbx_tr.js')]), ix = await N.data(env), x = slug ? ix.bySlug.get(slug) : ix.byId.get(id.toUpperCase());
+    if (!x) return [{ status: 404, local: true, body: JSON.stringify({ error: 'no named project with this ' + (slug ? 'slug' : 'id'), hint: 'Named project pages: https://kolaboro.com/projects/ ; projects in Sumba are never named (conflict of interest, see /independence/).' }, null, 1), source: 'https://kolaboro.com/projects/' }];
+    const tp = await TR.trProject(env, x.id, lang).catch(() => null), url = 'https://kolaboro.com' + N.pre(lang) + '/projects/' + x.s + '/';
+    const body = JSON.stringify({ id: x.id, name: x.n, developer: x.dv || null, url, lang, quick_answer: N.quickAnswer(ix, x, lang, tp), transparency_score: tp ? tp.score : null, ranks: tp ? tp.ranks.map(r => ({ place: r.p, rank: r.r, of: r.m, page: 'https://kolaboro.com' + N.pre(lang) + '/rankings/transparency/' + r.s + '/' })) : [],
+      checklist: tp ? tp.items.map(i => ({ item: i.label, status: i.st, text: i.text })) : [], last_checked: N.lastmod(ix, x), answers: 'https://kolaboro.com/answers/' + x.s + '.md', sections: [url + '#answer', url + '#legit', url + '#delivery', url + '#promise', url + '#developer', url + '#where'],
+      rules: 'Facts only, each with its source on the page. Kolaboro gives no verdict about a named company. The transparency score counts what is published and checkable, not quality.' }, null, 1);
+    return [await signed(env, body, url + '#answer')];
   }
   if (name === 'market_stats') {
     const m = str(a, 'market'), c = str(a, 'country'), r = await openCall(env, '/api/open/markets');
