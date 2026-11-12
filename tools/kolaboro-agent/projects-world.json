@@ -198750,6 +198750,5768 @@
    "added": "2026-11-12",
    "found_by": "discover-manual",
    "slug": "prime-kadawatha"
+  },
+  {
+   "name": "Villa Arteo",
+   "developer": "Cogedim (Altarea)",
+   "area": "84 Avenue Cyrille Besset, Saint-Barthélemy, Nice",
+   "country": "France",
+   "market": "French Riviera",
+   "stage": "off-plan",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html",
+   "permit_number": null,
+   "seed": {
+    "price": 275000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN LANCEMENT Livraison à partir du 4 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html"
+    },
+    {
+     "claim": "2 to 4-room apartments; prices from EUR 275,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html"
+    },
+    {
+     "claim": "Address published: 84 Avenue Cyrille Besset, Saint-Barthélemy, Nice, with map coordinates 43.716259, 7.258733",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 275000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.716259,
+    "lng": 7.258733,
+    "permit_authority": null
+   },
+   "note": "Villa Arteo by Cogedim in 84 Avenue Cyrille Besset, Saint-Barthélemy, Nice (France). Added from the official developer page: off-plan; handover on record: 2028-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/alpes-maritimes-06/nice/villa-arteo-24172-456717.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN LANCEMENT Livraison à partir du 4 ème trimestre 2028\"",
+    "2 to 4-room apartments; prices from EUR 275,000",
+    "Address published: 84 Avenue Cyrille Besset, Saint-Barthélemy, Nice, with map coordinates 43.716259, 7.258733",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "villa-arteo"
+  },
+  {
+   "name": "Les Hauts du Golfe",
+   "developer": "Cogedim (Altarea)",
+   "area": "1546 Rue du Volcan, Cogolin",
+   "country": "France",
+   "market": "French Riviera",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html",
+   "permit_number": null,
+   "seed": {
+    "price": 449000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 4 ème trimestre 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html"
+    },
+    {
+     "claim": "4 and 5-room houses; prices from EUR 449,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html"
+    },
+    {
+     "claim": "Address published: 1546 Rue du Volcan, Cogolin, with map coordinates 43.250423, 6.52035",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "4-room house",
+     "5-room house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 449000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.250423,
+    "lng": 6.52035,
+    "permit_authority": null
+   },
+   "note": "Les Hauts du Golfe by Cogedim in 1546 Rue du Volcan, Cogolin (France). Added from the official developer page: under construction; handover on record: 2027-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/cogolin/les-hauts-du-golfe-38247-1780780.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 4 ème trimestre 2027\"",
+    "4 and 5-room houses; prices from EUR 449,000",
+    "Address published: 1546 Rue du Volcan, Cogolin, with map coordinates 43.250423, 6.52035",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "les-hauts-du-golfe"
+  },
+  {
+   "name": "Oasia",
+   "developer": "Cogedim (Altarea)",
+   "area": "573 Rue des Combattants d'Afrique du Nord, Fréjus",
+   "country": "France",
+   "market": "French Riviera",
+   "stage": "off-plan",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html",
+   "permit_number": null,
+   "seed": {
+    "price": 464000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN COMMERCIALISATION Livraison à partir du 2 ème trimestre 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html"
+    },
+    {
+     "claim": "4-room houses; prices from EUR 464,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html"
+    },
+    {
+     "claim": "Address published: 573 Rue des Combattants d'Afrique du Nord, Fréjus, with map coordinates 43.463096, 6.725406",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "4-room house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 464000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.463096,
+    "lng": 6.725406,
+    "permit_authority": null
+   },
+   "note": "Oasia by Cogedim in 573 Rue des Combattants d'Afrique du Nord, Fréjus (France). Added from the official developer page: off-plan; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/frejus/oasia-26877-1788692.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN COMMERCIALISATION Livraison à partir du 2 ème trimestre 2027\"",
+    "4-room houses; prices from EUR 464,000",
+    "Address published: 573 Rue des Combattants d'Afrique du Nord, Fréjus, with map coordinates 43.463096, 6.725406",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "oasia-french-riviera"
+  },
+  {
+   "name": "Domaine Eden du Cap",
+   "developer": "Cogedim (Altarea)",
+   "area": "2503 Avenue de la Résistance, Toulon",
+   "country": "France",
+   "market": "France",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html",
+   "permit_number": null,
+   "seed": {
+    "price": 990000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html"
+    },
+    {
+     "claim": "4-room duplexes; prices from EUR 990,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html"
+    },
+    {
+     "claim": "Address published: 2503 Avenue de la Résistance, Toulon, with map coordinates 43.117541, 5.946182",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "4-room duplex"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 990000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.117541,
+    "lng": 5.946182,
+    "permit_authority": null
+   },
+   "note": "Domaine Eden du Cap by Cogedim in 2503 Avenue de la Résistance, Toulon (France). Added from the official developer page: under construction; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/var-83/toulon/domaine-eden-du-cap-28746-1786461.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2027\"",
+    "4-room duplexes; prices from EUR 990,000",
+    "Address published: 2503 Avenue de la Résistance, Toulon, with map coordinates 43.117541, 5.946182",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "domaine-eden-du-cap"
+  },
+  {
+   "name": "Baïa Azur",
+   "developer": "Cogedim (Altarea)",
+   "area": "983 Avenue Guillaume Dulac, La Ciotat",
+   "country": "France",
+   "market": "France",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html",
+   "permit_number": null,
+   "seed": {
+    "price": 295000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html"
+    },
+    {
+     "claim": "2 and 3-room apartments (the description also names 4-room homes); prices from EUR 295,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html"
+    },
+    {
+     "claim": "Address published: 983 Avenue Guillaume Dulac, La Ciotat, with map coordinates 43.198032, 5.614789",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-room apartment",
+     "3-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 295000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.198032,
+    "lng": 5.614789,
+    "permit_authority": null
+   },
+   "note": "Baïa Azur by Cogedim in 983 Avenue Guillaume Dulac, La Ciotat (France). Added from the official developer page: under construction; handover on record: 2027-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/la-ciotat/baia-azur-36818-1851439.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2027\"",
+    "2 and 3-room apartments (the description also names 4-room homes); prices from EUR 295,000",
+    "Address published: 983 Avenue Guillaume Dulac, La Ciotat, with map coordinates 43.198032, 5.614789",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "baia-azur-france"
+  },
+  {
+   "name": "Rosae",
+   "developer": "Cogedim (Altarea)",
+   "area": "147 Avenue des Etats-Unis, Toulouse",
+   "country": "France",
+   "market": "France",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html",
+   "docs_url": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html",
+   "permit_number": null,
+   "seed": {
+    "price": 179000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html"
+    },
+    {
+     "claim": "2 and 3-room apartments; prices from EUR 179,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html"
+    },
+    {
+     "claim": "Address published: 147 Avenue des Etats-Unis, Toulouse, with map coordinates 43.635538, 1.430588",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-room apartment",
+     "3-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 179000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.635538,
+    "lng": 1.430588,
+    "permit_authority": null
+   },
+   "note": "Rosae by Cogedim in 147 Avenue des Etats-Unis, Toulouse (France). Added from the official developer page: under construction; handover on record: 2028-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/occitanie/haute-garonne-31/toulouse/rosae-32548-1851103.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+    "2 and 3-room apartments; prices from EUR 179,000",
+    "Address published: 147 Avenue des Etats-Unis, Toulouse, with map coordinates 43.635538, 1.430588",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "rosae-france"
+  },
+  {
+   "name": "Hypnose - Quartier des Hirondelles",
+   "developer": "Cogedim (Altarea)",
+   "area": "Avenue des Hirondelles, Annecy",
+   "country": "France",
+   "market": "French Alps",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html",
+   "docs_url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html",
+   "permit_number": null,
+   "seed": {
+    "price": 249000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 4 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html"
+    },
+    {
+     "claim": "2-room apartments to 4-room duplexes; prices from EUR 249,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html"
+    },
+    {
+     "claim": "Address published: Avenue des Hirondelles, Annecy, with map coordinates 45.904259, 6.11582",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-room apartment",
+     "4-room duplex"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 249000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 45.904259,
+    "lng": 6.11582,
+    "permit_authority": null
+   },
+   "note": "Hypnose - Quartier des Hirondelles by Cogedim in Avenue des Hirondelles, Annecy (France). Added from the official developer page: under construction; handover on record: 2028-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annecy/hypnose-quartier-des-hirondelles-74784-1851447.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 4 ème trimestre 2028\"",
+    "2-room apartments to 4-room duplexes; prices from EUR 249,000",
+    "Address published: Avenue des Hirondelles, Annecy, with map coordinates 45.904259, 6.11582",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "hypnose-quartier-des-hirondelles"
+  },
+  {
+   "name": "Sérénaé",
+   "developer": "Cogedim (Altarea)",
+   "area": "21 rue du Saget, Annemasse",
+   "country": "France",
+   "market": "French Alps",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html",
+   "docs_url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html",
+   "permit_number": null,
+   "seed": {
+    "price": 222000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html"
+    },
+    {
+     "claim": "2-room apartments; prices from EUR 222,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html"
+    },
+    {
+     "claim": "Address published: 21 rue du Saget, Annemasse, with map coordinates 46.187731, 6.237951",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 222000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 46.187731,
+    "lng": 6.237951,
+    "permit_authority": null
+   },
+   "note": "Sérénaé by Cogedim in 21 rue du Saget, Annemasse (France). Added from the official developer page: under construction; handover on record: 2028-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/annemasse/serenae-33756-1851657.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+    "2-room apartments; prices from EUR 222,000",
+    "Address published: 21 rue du Saget, Annemasse, with map coordinates 46.187731, 6.237951",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "serenae-french-alps"
+  },
+  {
+   "name": "Parenthèse",
+   "developer": "Cogedim (Altarea)",
+   "area": "5-7 Avenue de Ternier, Saint-Julien-en-Genevois",
+   "country": "France",
+   "market": "French Alps",
+   "stage": "off-plan",
+   "url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html",
+   "docs_url": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html",
+   "permit_number": null,
+   "seed": {
+    "price": 258000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN LANCEMENT Livraison à partir du 4 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html"
+    },
+    {
+     "claim": "2 to 4-room apartments, each with a balcony, terrace or private garden; prices from EUR 258,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html"
+    },
+    {
+     "claim": "Address published: 5-7 Avenue de Ternier, Saint-Julien-en-Genevois, with map coordinates 46.142115, 6.082159",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 258000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 46.142115,
+    "lng": 6.082159,
+    "permit_authority": null
+   },
+   "note": "Parenthèse by Cogedim in 5-7 Avenue de Ternier, Saint-Julien-en-Genevois (France). Added from the official developer page: off-plan; handover on record: 2028-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/auvergne-rhone-alpes/haute-savoie-74/saint-julien-genevois/parenthese-23193-1851797.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN LANCEMENT Livraison à partir du 4 ème trimestre 2028\"",
+    "2 to 4-room apartments, each with a balcony, terrace or private garden; prices from EUR 258,000",
+    "Address published: 5-7 Avenue de Ternier, Saint-Julien-en-Genevois, with map coordinates 46.142115, 6.082159",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "parenthese"
+  },
+  {
+   "name": "Scala",
+   "developer": "Cogedim (Altarea)",
+   "area": "15 Avenue du Général Cartier, Cognin",
+   "country": "France",
+   "market": "French Alps",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html",
+   "docs_url": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html",
+   "permit_number": null,
+   "seed": {
+    "price": 174001,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html"
+    },
+    {
+     "claim": "Studios to 3-room apartments; prices from EUR 174,001",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html"
+    },
+    {
+     "claim": "Address published: 15 Avenue du Général Cartier, Cognin, with map coordinates 45.574061, 5.903672",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "2-room apartment",
+     "3-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 174001,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 45.574061,
+    "lng": 5.903672,
+    "permit_authority": null
+   },
+   "note": "Scala by Cogedim in 15 Avenue du Général Cartier, Cognin (France). Added from the official developer page: under construction; handover on record: 2028-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/cognin/scala-26414-1851401.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 2 ème trimestre 2028\"",
+    "Studios to 3-room apartments; prices from EUR 174,001",
+    "Address published: 15 Avenue du Général Cartier, Cognin, with map coordinates 45.574061, 5.903672",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "scala-french-alps"
+  },
+  {
+   "name": "Linéa Parc",
+   "developer": "Cogedim (Altarea)",
+   "area": "Rue Concorde / Rue Richelieu / Rue du puits d'Ordet, La Ravoire",
+   "country": "France",
+   "market": "French Alps",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html",
+   "docs_url": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html",
+   "permit_number": null,
+   "seed": {
+    "price": 213000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html"
+    },
+    {
+     "claim": "2 to 4-room apartments; prices from EUR 213,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html"
+    },
+    {
+     "claim": "Address published: Rue Concorde / Rue Richelieu / Rue du puits d'Ordet, La Ravoire, with map coordinates 45.559811, 5.966307",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 213000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 45.559811,
+    "lng": 5.966307,
+    "permit_authority": null
+   },
+   "note": "Linéa Parc by Cogedim in Rue Concorde / Rue Richelieu / Rue du puits d'Ordet, La Ravoire (France). Added from the official developer page: under construction; handover on record: 2028-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/auvergne-rhone-alpes/savoie-73/la-ravoire/linea-parc-40852-1851563.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2028\"",
+    "2 to 4-room apartments; prices from EUR 213,000",
+    "Address published: Rue Concorde / Rue Richelieu / Rue du puits d'Ordet, La Ravoire, with map coordinates 45.559811, 5.966307",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "linea-parc"
+  },
+  {
+   "name": "Constellation Provence",
+   "developer": "Cogedim (Altarea)",
+   "area": "Chemin des Mourettes, chemin de Picholine (Avenue Félix Gouin), Istres",
+   "country": "France",
+   "market": "France",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html",
+   "permit_number": null,
+   "seed": {
+    "price": 161020,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html"
+    },
+    {
+     "claim": "2 to 4-room apartments; prices from EUR 161,020",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html"
+    },
+    {
+     "claim": "Address published: Chemin des Mourettes, chemin de Picholine (Avenue Félix Gouin), Istres, with map coordinates 43.488341, 4.991527",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 161020,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.488341,
+    "lng": 4.991527,
+    "permit_authority": null
+   },
+   "note": "Constellation Provence by Cogedim in Chemin des Mourettes, chemin de Picholine (Avenue Félix Gouin), Istres (France). Added from the official developer page: under construction; handover on record: 2028-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/istres/constellation-provence-36272-1851078.html"
+   ],
+   "docs_listed": [
+    "Status and delivery printed on the page: \"EN TRAVAUX Livraison à partir du 3 ème trimestre 2028\"",
+    "2 to 4-room apartments; prices from EUR 161,020",
+    "Address published: Chemin des Mourettes, chemin de Picholine (Avenue Félix Gouin), Istres, with map coordinates 43.488341, 4.991527",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "constellation-provence"
+  },
+  {
+   "name": "Les Mas du Roucaoudo",
+   "developer": "Cogedim (Altarea)",
+   "area": "Chemin de Rousset / Route des Michels, Fuveau",
+   "country": "France",
+   "market": "France",
+   "stage": "off-plan",
+   "url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html",
+   "docs_url": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html",
+   "permit_number": null,
+   "seed": {
+    "price": 228000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the page: \"EN LANCEMENT\"; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html"
+    },
+    {
+     "claim": "40 apartments of 2 to 4 rooms; prices from EUR 228,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html"
+    },
+    {
+     "claim": "Address published: Chemin de Rousset / Route des Michels, Fuveau, with map coordinates 43.454119, 5.567628",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 228000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.454119,
+    "lng": 5.567628,
+    "permit_authority": null
+   },
+   "note": "Les Mas du Roucaoudo by Cogedim in Chemin de Rousset / Route des Michels, Fuveau (France). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/provence-alpes-cote-d-azur/bouches-du-rhone-13/fuveau/les-mas-du-roucaoudo-32554-1851790.html"
+   ],
+   "docs_listed": [
+    "Status printed on the page: \"EN LANCEMENT\"; no delivery date is printed",
+    "40 apartments of 2 to 4 rooms; prices from EUR 228,000",
+    "Address published: Chemin de Rousset / Route des Michels, Fuveau, with map coordinates 43.454119, 5.567628",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "les-mas-du-roucaoudo"
+  },
+  {
+   "name": "Belle Plaisance",
+   "developer": "Cogedim (Altarea)",
+   "area": "33-35 rue Louis Morard, Paris 14e",
+   "country": "France",
+   "market": "France",
+   "stage": "under construction",
+   "url": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html",
+   "docs_url": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html",
+   "permit_number": null,
+   "seed": {
+    "price": 434000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the page: \"EN TRAVAUX\"; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html"
+    },
+    {
+     "claim": "2 and 3-room apartments (the description says studio to 3 rooms); prices from EUR 434,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html"
+    },
+    {
+     "claim": "Address published: 33-35 rue Louis Morard, Paris 14e, with map coordinates 48.828765, 2.320475",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html"
+    },
+    {
+     "claim": "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-room apartment",
+     "3-room apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 434000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 48.828765,
+    "lng": 2.320475,
+    "permit_authority": null
+   },
+   "note": "Belle Plaisance by Cogedim in 33-35 rue Louis Morard, Paris 14e (France). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cogedim.com/ile-de-france/paris-75/paris/paris-14eme/belle-plaisance-36084-1851688.html"
+   ],
+   "docs_listed": [
+    "Status printed on the page: \"EN TRAVAUX\"; no delivery date is printed",
+    "2 and 3-room apartments (the description says studio to 3 rooms); prices from EUR 434,000",
+    "Address published: 33-35 rue Louis Morard, Paris 14e, with map coordinates 48.828765, 2.320475",
+    "Pin: coordinates published in the page data (programme GPS) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "belle-plaisance"
+  },
+  {
+   "name": "Sunset Bay 2 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 90,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q1 2027\"; the FAQ says \"the expected completion timeline will be in Q1 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 90 overall: finishing works 88, MEP works 89, super-structure 100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+    },
+    {
+     "claim": "1 and 2-bedroom apartments and limited 3-bedroom penthouses on Dubai Islands",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+    },
+    {
+     "claim": "The FAQ lists payment structures such as 50/50, 60/40 or 70/30 between construction and handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 2 by Imtiaz\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.286749,
+    "lng": 55.294984,
+    "permit_authority": null
+   },
+   "note": "Sunset Bay 2 by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/sunset-bay-2-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q1 2027\"; the FAQ says \"the expected completion timeline will be in Q1 2027\"",
+    "Construction progress shown as 90 overall: finishing works 88, MEP works 89, super-structure 100",
+    "1 and 2-bedroom apartments and limited 3-bedroom penthouses on Dubai Islands",
+    "The FAQ lists payment structures such as 50/50, 60/40 or 70/30 between construction and handover",
+    "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 2 by Imtiaz\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunset-bay-2-by-imtiaz"
+  },
+  {
+   "name": "Sunset Bay 3 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 81,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% on booking; 40% in instalments during construction; 40% on completion",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q1 2027\"; the FAQ says \"The anticipated completion and handover are scheduled for Q1 2027.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+    },
+    {
+     "claim": "The payment plan answer on the same page says \"40% on completion in June 2026\", a date earlier than the Q1 2027 handover the page shows",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 81 overall: finishing works 79, MEP works 68, super-structure 100, sub-structure 100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+    },
+    {
+     "claim": "1 and 2-bedroom apartments and 3-bedroom penthouses, delivered fully furnished (the FAQ names Miele, Gessi and Villeroy & Boch)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 3 by Imtiaz\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on booking; 40% in instalments during construction; 40% on completion",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.291155,
+    "lng": 55.297649,
+    "permit_authority": null
+   },
+   "note": "Sunset Bay 3 by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/sunset-bay-3-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q1 2027\"; the FAQ says \"The anticipated completion and handover are scheduled for Q1 2027.\"",
+    "The payment plan answer on the same page says \"40% on completion in June 2026\", a date earlier than the Q1 2027 handover the page shows",
+    "Construction progress shown as 81 overall: finishing works 79, MEP works 68, super-structure 100, sub-structure 100",
+    "1 and 2-bedroom apartments and 3-bedroom penthouses, delivered fully furnished (the FAQ names Miele, Gessi and Villeroy & Boch)",
+    "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 3 by Imtiaz\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunset-bay-3-by-imtiaz"
+  },
+  {
+   "name": "Sunset Bay 4 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 78,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 63,
+    "payment_plan": "20% on booking (May 2025); 40% during construction; 40% on completion in June 2027",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q2 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 78 overall: finishing works 75, MEP works 65, super-structure 100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+    },
+    {
+     "claim": "30 one-bedroom and 32 two-bedroom apartments and 1 three-bedroom residence; Ground + 2 podium parking levels + 8 residential floors + rooftop",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+    },
+    {
+     "claim": "Payment plan published: 20% on booking (May 2025), 40% in instalments during construction, 40% on completion in June 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 4 by Imtiaz\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on booking (May 2025); 40% during construction; 40% on completion in June 2027",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.287317,
+    "lng": 55.298085,
+    "permit_authority": null
+   },
+   "note": "Sunset Bay 4 by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/sunset-bay-4-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q2 2027\"",
+    "Construction progress shown as 78 overall: finishing works 75, MEP works 65, super-structure 100",
+    "30 one-bedroom and 32 two-bedroom apartments and 1 three-bedroom residence; Ground + 2 podium parking levels + 8 residential floors + rooftop",
+    "Payment plan published: 20% on booking (May 2025), 40% in instalments during construction, 40% on completion in June 2027",
+    "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 4 by Imtiaz\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunset-bay-4-by-imtiaz"
+  },
+  {
+   "name": "Sunset Bay 5 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 58,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% on booking; instalments during construction; 40% on completion",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q4 2027\"; the FAQ says \"The anticipated completion and handover are scheduled for October 2027.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 58 overall: finishing works 46, MEP works 35, super-structure 100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+    },
+    {
+     "claim": "1, 2 and 3-bedroom residences on Dubai Islands",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+    },
+    {
+     "claim": "Payment plan published: 20% on booking, instalments during construction, 40% on completion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 5 by Imtiaz\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on booking; instalments during construction; 40% on completion",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.30088,
+    "lng": 55.303853,
+    "permit_authority": null
+   },
+   "note": "Sunset Bay 5 by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/sunset-bay-5-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q4 2027\"; the FAQ says \"The anticipated completion and handover are scheduled for October 2027.\"",
+    "Construction progress shown as 58 overall: finishing works 46, MEP works 35, super-structure 100",
+    "1, 2 and 3-bedroom residences on Dubai Islands",
+    "Payment plan published: 20% on booking, instalments during construction, 40% on completion",
+    "Pin: coordinates of the map embedded on the developer page (labelled \"Sunset Bay 5 by Imtiaz\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunset-bay-5-by-imtiaz"
+  },
+  {
+   "name": "Cotier House 2 by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 23,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q2 2027\"; the FAQ says \"the expected completion timeline will be in Q2 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 23 overall: finishing works 1, MEP works 1, super-structure 63",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+    },
+    {
+     "claim": "Studios to 3-bedroom apartments and penthouses in a marina-front setting on Dubai Islands",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+    },
+    {
+     "claim": "The FAQ describes typical structures of 10% on booking, 40 to 50% during construction and the balance on handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page (labelled \"Cotier house 2 by Imtiaz\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.293171,
+    "lng": 55.292946,
+    "permit_authority": null
+   },
+   "note": "Cotier House 2 by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/cotier-house-2-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q2 2027\"; the FAQ says \"the expected completion timeline will be in Q2 2027\"",
+    "Construction progress shown as 23 overall: finishing works 1, MEP works 1, super-structure 63",
+    "Studios to 3-bedroom apartments and penthouses in a marina-front setting on Dubai Islands",
+    "The FAQ describes typical structures of 10% on booking, 40 to 50% during construction and the balance on handover",
+    "Pin: coordinates of the map embedded on the developer page (labelled \"Cotier house 2 by Imtiaz\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "cotier-house-2-by-imtiaz"
+  },
+  {
+   "name": "Beach Walk III by Imtiaz",
+   "developer": "Imtiaz Developments (Imtiaz Real Estate Investment and Development LLC)",
+   "area": "Dubai Islands, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 95,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% on booking; 40% during construction; 40% on completion in June 2026",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated completion date published as \"Q2 2026\"; the FAQ says \"The anticipated completion and handover are scheduled for June 2026.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+    },
+    {
+     "claim": "Construction progress shown as 95 overall: finishing works 93, MEP works 94, super-structure 100",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+    },
+    {
+     "claim": "Studios, 1 and 2-bedroom apartments on Dubai Islands, a 3-minute walk from the beach, next to the island's largest shopping mall (as the FAQ says)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+    },
+    {
+     "claim": "Payment plan published: 20% on booking, 40% in instalments during construction, 40% on completion in June 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+    },
+    {
+     "claim": "The map embedded on the page points to 25.2043, 55.1968, which is not on Dubai Islands, so no pin is set",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Imtiaz Real Estate Investment and Development LLC",
+    "construction_start": null,
+    "handover_promised": "2026-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on booking; 40% during construction; 40% on completion in June 2026",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Beach Walk III by Imtiaz by Imtiaz Developments in Dubai Islands, Dubai (UAE). Added from the official developer page: under construction; handover on record: 2026-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/beach-walk-iii-by-imtiaz"
+   ],
+   "docs_listed": [
+    "Estimated completion date published as \"Q2 2026\"; the FAQ says \"The anticipated completion and handover are scheduled for June 2026.\"",
+    "Construction progress shown as 95 overall: finishing works 93, MEP works 94, super-structure 100",
+    "Studios, 1 and 2-bedroom apartments on Dubai Islands, a 3-minute walk from the beach, next to the island's largest shopping mall (as the FAQ says)",
+    "Payment plan published: 20% on booking, 40% in instalments during construction, 40% on completion in June 2026",
+    "The map embedded on the page points to 25.2043, 55.1968, which is not on Dubai Islands, so no pin is set"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "beach-walk-iii-by-imtiaz"
+  },
+  {
+   "name": "SAMANA Barari Lagoons",
+   "developer": "SAMANA Developers",
+   "area": "Majan, Dubailand, Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-barari-lagoons",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-barari-lagoons",
+   "permit_number": null,
+   "seed": {
+    "price": 809474,
+    "currency": "AED",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"The anticipated handover date is Q3 2028.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+    },
+    {
+     "claim": "Studios, 1 BHK, 2 BHK, 2 BHK duplex and 3 BHK apartments; selected units include a private pool",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+    },
+    {
+     "claim": "Prices from AED 809,474; payment options with 15% or 20% on booking",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+    },
+    {
+     "claim": "Map embedded on the developer page points to 25.09295, 55.320968",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+    },
+    {
+     "claim": "Pin: coordinates of the map embedded on the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "2-bedroom duplex",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 809474,
+    "price_max": null,
+    "currency": "AED",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.09295,
+    "lng": 55.320968,
+    "permit_authority": null
+   },
+   "note": "SAMANA Barari Lagoons by SAMANA Developers in Majan, Dubailand, Dubai (UAE). Added from the official developer page: off-plan; handover on record: 2028-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.samanadevelopers.com/projects/samana-barari-lagoons"
+   ],
+   "docs_listed": [
+    "\"The anticipated handover date is Q3 2028.\"",
+    "Studios, 1 BHK, 2 BHK, 2 BHK duplex and 3 BHK apartments; selected units include a private pool",
+    "Prices from AED 809,474; payment options with 15% or 20% on booking",
+    "Map embedded on the developer page points to 25.09295, 55.320968",
+    "Pin: coordinates of the map embedded on the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "samana-barari-lagoons"
+  },
+  {
+   "name": "SAMANA ParkVille",
+   "developer": "SAMANA Developers",
+   "area": "Dubai Land Residence Complex (DLRC), Dubai",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-parkville",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-parkville",
+   "permit_number": null,
+   "seed": {
+    "price": 1309244,
+    "currency": "AED",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Handover is scheduled for Q3 2028.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-parkville"
+    },
+    {
+     "claim": "Studios, 1 and 2-bedroom apartments, with sizes starting from 415 sq ft",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-parkville"
+    },
+    {
+     "claim": "Prices from AED 1,309,244; the payment options include 1% monthly over 80 months",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.samanadevelopers.com/projects/samana-parkville"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1309244,
+    "price_max": null,
+    "currency": "AED",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "SAMANA ParkVille by SAMANA Developers in Dubai Land Residence Complex (DLRC), Dubai (UAE). Added from the official developer page: off-plan; handover on record: 2028-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.samanadevelopers.com/projects/samana-parkville"
+   ],
+   "docs_listed": [
+    "\"Handover is scheduled for Q3 2028.\"",
+    "Studios, 1 and 2-bedroom apartments, with sizes starting from 415 sq ft",
+    "Prices from AED 1,309,244; the payment options include 1% monthly over 80 months"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "samana-parkville"
+  },
+  {
+   "name": "Apartamenty Grzybowska 11",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Grzybowska 11, Śródmieście, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 28500
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1 - budynek A - 2 kw. 2027\" (stage 1.1, building A, Q2 2027)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11"
+    },
+    {
+     "claim": "Address published: ul. Grzybowska 11, Śródmieście, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 28 500 ZŁ/M 2\" (from PLN 28,500 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.236061,
+    "lng": 20.998561,
+    "permit_authority": null
+   },
+   "note": "Apartamenty Grzybowska 11 by Dom Development S.A. in ul. Grzybowska 11, Śródmieście, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-grzybowska-11"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1 - budynek A - 2 kw. 2027\" (stage 1.1, building A, Q2 2027)",
+    "Address published: ul. Grzybowska 11, Śródmieście, Warsaw",
+    "Price printed on the page: \"OD 28 500 ZŁ/M 2\" (from PLN 28,500 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "apartamenty-grzybowska-11"
+  },
+  {
+   "name": "Osiedle Palladium",
+   "developer": "Dom Development S.A.",
+   "area": "ul. M. Ćwiklińskiej, Białołęka, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 12650
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1 - budynki A i B - 3 kw. 2028\" (stage 1, buildings A and B, Q3 2028)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium"
+    },
+    {
+     "claim": "Address published: ul. M. Ćwiklińskiej, Białołęka, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium"
+    },
+    {
+     "claim": "Price printed on the page: \"CENY OD 12 650 zł/m2\" (from PLN 12,650 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.337834,
+    "lng": 20.953794,
+    "permit_authority": null
+   },
+   "note": "Osiedle Palladium by Dom Development S.A. in ul. M. Ćwiklińskiej, Białołęka, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2028-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-palladium"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1 - budynki A i B - 3 kw. 2028\" (stage 1, buildings A and B, Q3 2028)",
+    "Address published: ul. M. Ćwiklińskiej, Białołęka, Warsaw",
+    "Price printed on the page: \"CENY OD 12 650 zł/m2\" (from PLN 12,650 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "osiedle-palladium"
+  },
+  {
+   "name": "Mokotów Sportowy",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Antoniewska 6, Mokotów, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 13200
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1b - budynki C, D i E - 1 kw. 2027\", \"Etap 3.1 - budynek A - 1 kw. 2027\" and \"Etap 1.3 - budynki A, B, C, D, E - 4 kw. 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy"
+    },
+    {
+     "claim": "Address published: ul. Antoniewska 6, Mokotów, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 13 200 zł/m2\" (from PLN 13,200 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.195749,
+    "lng": 21.087126,
+    "permit_authority": null
+   },
+   "note": "Mokotów Sportowy by Dom Development S.A. in ul. Antoniewska 6, Mokotów, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/mokotow-sportowy"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1b - budynki C, D i E - 1 kw. 2027\", \"Etap 3.1 - budynek A - 1 kw. 2027\" and \"Etap 1.3 - budynki A, B, C, D, E - 4 kw. 2027\"",
+    "Address published: ul. Antoniewska 6, Mokotów, Warsaw",
+    "Price printed on the page: \"OD 13 200 zł/m2\" (from PLN 13,200 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "mokotow-sportowy"
+  },
+  {
+   "name": "Osiedle Urbino",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Równoległa 16, Włochy, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 14400
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): stage 1.4 building D Q4 2026; stage 4.1 buildings A and B Q3 2027; stage 4.2 buildings C and D Q4 2027; stage 4.3 buildings E and F Q2 2028; stage 5.1 building A Q2 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino"
+    },
+    {
+     "claim": "Address published: ul. Równoległa 16, Włochy, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 14 400 zł/m2\" (from PLN 14,400 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.19996,
+    "lng": 20.94444,
+    "permit_authority": null
+   },
+   "note": "Osiedle Urbino by Dom Development S.A. in ul. Równoległa 16, Włochy, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2026-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-urbino"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): stage 1.4 building D Q4 2026; stage 4.1 buildings A and B Q3 2027; stage 4.2 buildings C and D Q4 2027; stage 4.3 buildings E and F Q2 2028; stage 5.1 building A Q2 2027",
+    "Address published: ul. Równoległa 16, Włochy, Warsaw",
+    "Price printed on the page: \"OD 14 400 zł/m2\" (from PLN 14,400 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "osiedle-urbino"
+  },
+  {
+   "name": "Apartamenty Literacka",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Literacka 7, Bielany, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 17600
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): stage 1.1 buildings A and B \"gotowe do odbioru\" (ready for handover); stage 2.1 buildings C and D Q1 2027; stage 2.2 building E Q1 2028; stage 2.3 building F Q2 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka"
+    },
+    {
+     "claim": "Address published: ul. Literacka 7, Bielany, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 17 600 zł/m2\" (from PLN 17,600 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.263707,
+    "lng": 20.951527,
+    "permit_authority": null
+   },
+   "note": "Apartamenty Literacka by Dom Development S.A. in ul. Literacka 7, Bielany, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-literacka"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): stage 1.1 buildings A and B \"gotowe do odbioru\" (ready for handover); stage 2.1 buildings C and D Q1 2027; stage 2.2 building E Q1 2028; stage 2.3 building F Q2 2028",
+    "Address published: ul. Literacka 7, Bielany, Warsaw",
+    "Price printed on the page: \"OD 17 600 zł/m2\" (from PLN 17,600 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "apartamenty-literacka"
+  },
+  {
+   "name": "Osiedle Wilno",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Wierna 24, Targówek, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno",
+   "permit_number": null,
+   "seed": {
+    "price": 535000,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q3",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): stage 8.1.1 building A Q3 2027; stage 8.1.2 buildings B, C and D Q4 2027; stage 9.2.1 buildings A, B and C Q1 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno"
+    },
+    {
+     "claim": "Address published: ul. Wierna 24, Targówek, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 535 000 ZŁ\" (from PLN 535,000)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q3",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 535000,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.275969,
+    "lng": 21.082565,
+    "permit_authority": null
+   },
+   "note": "Osiedle Wilno by Dom Development S.A. in ul. Wierna 24, Targówek, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q3. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-wilno"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): stage 8.1.1 building A Q3 2027; stage 8.1.2 buildings B, C and D Q4 2027; stage 9.2.1 buildings A, B and C Q1 2028",
+    "Address published: ul. Wierna 24, Targówek, Warsaw",
+    "Price printed on the page: \"OD 535 000 ZŁ\" (from PLN 535,000)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "osiedle-wilno"
+  },
+  {
+   "name": "Osiedle Bokserska 71",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Bokserska 71, Ursynów, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): stage 2.1 building A Q2 2027; stage 2.2 buildings B and C Q3 2027; stage 2.3 buildings D and E Q3 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71"
+    },
+    {
+     "claim": "Address published: ul. Bokserska 71, Ursynów, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.170989,
+    "lng": 20.990424,
+    "permit_authority": null
+   },
+   "note": "Osiedle Bokserska 71 by Dom Development S.A. in ul. Bokserska 71, Ursynów, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-bokserska-71"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): stage 2.1 building A Q2 2027; stage 2.2 buildings B and C Q3 2027; stage 2.3 buildings D and E Q3 2027",
+    "Address published: ul. Bokserska 71, Ursynów, Warsaw",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "osiedle-bokserska-71"
+  },
+  {
+   "name": "Osiedle Myśliborska",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Myśliborska 27b, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 13300
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1 - budynki A i B - 2 kw. 2027\" (dashes as hyphens) (stage 1, buildings A and B, Q2 2027)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska"
+    },
+    {
+     "claim": "Address published: ul. Myśliborska 27b, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 13 300 ZŁ/M2\" (from PLN 13,300 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.30359,
+    "lng": 20.97581,
+    "permit_authority": null
+   },
+   "note": "Osiedle Myśliborska by Dom Development S.A. in ul. Myśliborska 27b, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/osiedle-mysliborska"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1 - budynki A i B - 2 kw. 2027\" (dashes as hyphens) (stage 1, buildings A and B, Q2 2027)",
+    "Address published: ul. Myśliborska 27b, Warsaw",
+    "Price printed on the page: \"OD 13 300 ZŁ/M2\" (from PLN 13,300 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "osiedle-mysliborska"
+  },
+  {
+   "name": "Apartamenty Beethovena",
+   "developer": "Dom Development S.A.",
+   "area": "ul. Dziekońskiego 4, Mokotów, Warsaw",
+   "country": "Poland",
+   "market": "Warsaw",
+   "stage": "off-plan",
+   "url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena",
+   "docs_url": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": "PLN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": 19700
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1 - budynki A i B - 4 kw. 2026\" and \"Etap 2.1 - budynki C i D - 4 kw. 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena"
+    },
+    {
+     "claim": "Address published: ul. Dziekońskiego 4, Mokotów, Warsaw",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena"
+    },
+    {
+     "claim": "Price printed on the page: \"OD 19 700 ZŁ/M 2\" (from PLN 19,700 per m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena"
+    },
+    {
+     "claim": "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": "PLN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 52.19518,
+    "lng": 21.045365,
+    "permit_authority": null
+   },
+   "note": "Apartamenty Beethovena by Dom Development S.A. in ul. Dziekońskiego 4, Mokotów, Warsaw (Poland). Added from the official developer page: off-plan; handover on record: 2026-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.domd.pl/pl-pl/warszawa/lista-inwestycji/apartamenty-beethovena"
+   ],
+   "docs_listed": [
+    "Handover dates printed on the page (\"Terminy odbiorów\"): \"Etap 1.1 - budynki A i B - 4 kw. 2026\" and \"Etap 2.1 - budynki C i D - 4 kw. 2026\"",
+    "Address published: ul. Dziekońskiego 4, Mokotów, Warsaw",
+    "Price printed on the page: \"OD 19 700 ZŁ/M 2\" (from PLN 19,700 per m2)",
+    "Pin: coordinates of the investment on the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "apartamenty-beethovena"
+  },
+  {
+   "name": "Four Seasons Life III",
+   "developer": "Döveç Group",
+   "area": "İskele",
+   "country": "Northern Cyprus",
+   "market": "Northern Cyprus",
+   "stage": "under construction",
+   "url": "https://www.dovecgroup.com/en/projects/four-seasons-life-iii",
+   "docs_url": "https://www.dovecgroup.com/en/projects/four-seasons-life-iii",
+   "permit_number": null,
+   "seed": {
+    "price": 135000,
+    "currency": "GBP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 738,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2026\", location İskele, \"Total Units 738\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/four-seasons-life-iii"
+    },
+    {
+     "claim": "Residence types 1+1, 2+1 and 3+1; \"Starting From £135,000\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/four-seasons-life-iii"
+    },
+    {
+     "claim": "The page describes beachfront villas and apartments with an aqua park, spa and water sports",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/four-seasons-life-iii"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1+1 apartment",
+     "2+1 apartment",
+     "3+1 apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 135000,
+    "price_max": null,
+    "currency": "GBP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Life III by Döveç Group in İskele (Northern Cyprus). Added from the official developer page: under construction; handover on record: December 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dovecgroup.com/en/projects/four-seasons-life-iii"
+   ],
+   "docs_listed": [
+    "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2026\", location İskele, \"Total Units 738\"",
+    "Residence types 1+1, 2+1 and 3+1; \"Starting From £135,000\"",
+    "The page describes beachfront villas and apartments with an aqua park, spa and water sports"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-life-iii"
+  },
+  {
+   "name": "Courtyard Platinum",
+   "developer": "Döveç Group",
+   "area": "İskele Boğaz, İskele",
+   "country": "Northern Cyprus",
+   "market": "Northern Cyprus",
+   "stage": "under construction",
+   "url": "https://www.dovecgroup.com/en/projects/courtyard-platinum",
+   "docs_url": "https://www.dovecgroup.com/en/projects/courtyard-platinum",
+   "permit_number": null,
+   "seed": {
+    "price": 127000,
+    "currency": "GBP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 952,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2026\", location İskele, \"Total Units 952\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/courtyard-platinum"
+    },
+    {
+     "claim": "Residence types studio, 1+1, 2+1 and 3+1 (duplex layouts also listed); \"Starting From £127,000\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/courtyard-platinum"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1+1 apartment",
+     "2+1 apartment",
+     "3+1 apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 127000,
+    "price_max": null,
+    "currency": "GBP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Courtyard Platinum by Döveç Group in İskele Boğaz, İskele (Northern Cyprus). Added from the official developer page: under construction; handover on record: December 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dovecgroup.com/en/projects/courtyard-platinum"
+   ],
+   "docs_listed": [
+    "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2026\", location İskele, \"Total Units 952\"",
+    "Residence types studio, 1+1, 2+1 and 3+1 (duplex layouts also listed); \"Starting From £127,000\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "courtyard-platinum"
+  },
+  {
+   "name": "La Casalia",
+   "developer": "Döveç Group",
+   "area": "Tatlısu",
+   "country": "Northern Cyprus",
+   "market": "Northern Cyprus",
+   "stage": "under construction",
+   "url": "https://www.dovecgroup.com/en/projects/la-casalia",
+   "docs_url": "https://www.dovecgroup.com/en/projects/la-casalia",
+   "permit_number": null,
+   "seed": {
+    "price": 178000,
+    "currency": "GBP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 454,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2027\", location Tatlısu, \"Total Units 454\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/la-casalia"
+    },
+    {
+     "claim": "Residence types Grand Studio, 1+1 Deluxe, 2+1 Deluxe, 3+1 Loft and 3+1 Duplex Villa; \"Starting From £178,000\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/la-casalia"
+    },
+    {
+     "claim": "Described as a wellness-focused community with a medical wellness centre, spa and marina",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dovecgroup.com/en/projects/la-casalia"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1+1 apartment",
+     "2+1 apartment",
+     "3+1 loft",
+     "3+1 duplex villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 178000,
+    "price_max": null,
+    "currency": "GBP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "La Casalia by Döveç Group in Tatlısu (Northern Cyprus). Added from the official developer page: under construction; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dovecgroup.com/en/projects/la-casalia"
+   ],
+   "docs_listed": [
+    "Project facts on the page: status \"Ongoing\", \"Delivery Date December 2027\", location Tatlısu, \"Total Units 454\"",
+    "Residence types Grand Studio, 1+1 Deluxe, 2+1 Deluxe, 3+1 Loft and 3+1 Duplex Villa; \"Starting From £178,000\"",
+    "Described as a wellness-focused community with a medical wellness centre, spa and marina"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "la-casalia"
+  },
+  {
+   "name": "Ege Yapı Göktürk",
+   "developer": "Ege Yapı",
+   "area": "Eyüpsultan, Istanbul",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "off-plan",
+   "url": "https://egeyapi.com/en/ege-yapi-gokturk",
+   "docs_url": "https://egeyapi.com/en/ege-yapi-gokturk",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-gokturk"
+    },
+    {
+     "claim": "Construction area 32,500 m2; region Eyüpsultan, Istanbul; functions: Residential",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-gokturk"
+    },
+    {
+     "claim": "1+1 to 3+1 apartments with landscaped areas; the page names smart home technology and proximity to Istanbul Airport",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-gokturk"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ege Yapı Göktürk by Ege Yapı in Eyüpsultan, Istanbul (Turkey). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://egeyapi.com/en/ege-yapi-gokturk"
+   ],
+   "docs_listed": [
+    "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+    "Construction area 32,500 m2; region Eyüpsultan, Istanbul; functions: Residential",
+    "1+1 to 3+1 apartments with landscaped areas; the page names smart home technology and proximity to Istanbul Airport"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ege-yapi-gokturk"
+  },
+  {
+   "name": "Ege Yapı Beyoğlu",
+   "developer": "Ege Yapı",
+   "area": "Beyoğlu, Istanbul",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "off-plan",
+   "url": "https://egeyapi.com/en/ege-yapi-beyoglu",
+   "docs_url": "https://egeyapi.com/en/ege-yapi-beyoglu",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-beyoglu"
+    },
+    {
+     "claim": "Construction area 20,142 m2; region Beyoğlu, Istanbul; functions: Residential, Commercial",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-beyoglu"
+    },
+    {
+     "claim": "Apartments with terraces and Golden Horn views; amenities listed include a pool, spa and shopping centre",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-beyoglu"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ege Yapı Beyoğlu by Ege Yapı in Beyoğlu, Istanbul (Turkey). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://egeyapi.com/en/ege-yapi-beyoglu"
+   ],
+   "docs_listed": [
+    "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+    "Construction area 20,142 m2; region Beyoğlu, Istanbul; functions: Residential, Commercial",
+    "Apartments with terraces and Golden Horn views; amenities listed include a pool, spa and shopping centre"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ege-yapi-beyoglu"
+  },
+  {
+   "name": "Ege Yapı Kordon İzmir",
+   "developer": "Ege Yapı",
+   "area": "Alsancak, İzmir",
+   "country": "Turkey",
+   "market": "Izmir",
+   "stage": "off-plan",
+   "url": "https://egeyapi.com/en/ege-yapi-kordon-izmir",
+   "docs_url": "https://egeyapi.com/en/ege-yapi-kordon-izmir",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-kordon-izmir"
+    },
+    {
+     "claim": "Construction area 32,000 m2; region Alsancak, İzmir; functions: Residential and Commercial Units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-kordon-izmir"
+    },
+    {
+     "claim": "Within walking distance of Pasaport Pier and Cumhuriyet Square; serviced apartments under \"The Superior Living\" concept",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-kordon-izmir"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ege Yapı Kordon İzmir by Ege Yapı in Alsancak, İzmir (Turkey). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://egeyapi.com/en/ege-yapi-kordon-izmir"
+   ],
+   "docs_listed": [
+    "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2027\"",
+    "Construction area 32,000 m2; region Alsancak, İzmir; functions: Residential and Commercial Units",
+    "Within walking distance of Pasaport Pier and Cumhuriyet Square; serviced apartments under \"The Superior Living\" concept"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ege-yapi-kordon-izmir"
+  },
+  {
+   "name": "Ege Yapı Alsancak",
+   "developer": "Ege Yapı",
+   "area": "Konak, İzmir",
+   "country": "Turkey",
+   "market": "Izmir",
+   "stage": "off-plan",
+   "url": "https://egeyapi.com/en/ege-yapi-alsancak",
+   "docs_url": "https://egeyapi.com/en/ege-yapi-alsancak",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-alsancak"
+    },
+    {
+     "claim": "Construction area 29,500 m2; region Konak, İzmir; functions: Residential and Commercial",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-alsancak"
+    },
+    {
+     "claim": "Apartments with a rooftop pool; the page names smart home systems",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-alsancak"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ege Yapı Alsancak by Ege Yapı in Konak, İzmir (Turkey). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://egeyapi.com/en/ege-yapi-alsancak"
+   ],
+   "docs_listed": [
+    "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2027\"",
+    "Construction area 29,500 m2; region Konak, İzmir; functions: Residential and Commercial",
+    "Apartments with a rooftop pool; the page names smart home systems"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ege-yapi-alsancak"
+  },
+  {
+   "name": "Ege Yapı Oliville Halkidiki",
+   "developer": "Ege Yapı",
+   "area": "Chalkidiki, Greece",
+   "country": "Greece",
+   "market": "Greece",
+   "stage": "off-plan",
+   "url": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki",
+   "docs_url": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
+    },
+    {
+     "claim": "Construction area 43,600 m2; region Chalkidiki, Greece; functions: Villa",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
+    },
+    {
+     "claim": "Villas built with lightweight steel, each designed as two independent units; the page mentions rental management and \"foreign-currency-based returns\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ege Yapı Oliville Halkidiki by Ege Yapı in Chalkidiki, Greece (Greece). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
+   ],
+   "docs_listed": [
+    "Listed under \"Ongoing Projects for Sale\"; \"Delivery Year 2028\"",
+    "Construction area 43,600 m2; region Chalkidiki, Greece; functions: Villa",
+    "Villas built with lightweight steel, each designed as two independent units; the page mentions rental management and \"foreign-currency-based returns\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ege-yapi-oliville-halkidiki"
+  },
+  {
+   "name": "Prospect Place South (Battersea Power Station)",
+   "developer": "Battersea Power Station Development Company (BPSDC)",
+   "area": "Electric Boulevard, Battersea Power Station, London SW11",
+   "country": "United Kingdom",
+   "market": "London",
+   "stage": "under construction",
+   "url": "https://batterseapowerstation.co.uk/news/battersea-power-station-and-sisk-break-ground-at-prospect-place-south/",
+   "docs_url": "https://batterseapowerstation.co.uk/news/battersea-power-station-and-sisk-break-ground-at-prospect-place-south/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2030",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 300,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Groundbreaking on 9 September 2026 with Sisk as main contractor; \"Construction is expected to complete in 2030.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://batterseapowerstation.co.uk/news/battersea-power-station-and-sisk-break-ground-at-prospect-place-south/"
+    },
+    {
+     "claim": "Two Gehry Partners designed buildings, Rosewood House and Hayworth House, with approximately 300 new homes, 65,000 sq ft of commercial space and a 15,000 sq ft Community Hub",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://batterseapowerstation.co.uk/news/battersea-power-station-and-sisk-break-ground-at-prospect-place-south/"
+    },
+    {
+     "claim": "The planning release of 1 May 2025 said \"Construction is expected to start later this year with completion anticipated in 2029\", one year earlier than the 2030 date of September 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://batterseapowerstation.co.uk/news/gehry-partners-designed-next-phase-of-battersea-power-station-development-to-progress/"
+    },
+    {
+     "claim": "The planning release describes 306 new homes in two buildings and senior living for the first time at the estate",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://batterseapowerstation.co.uk/news/gehry-partners-designed-next-phase-of-battersea-power-station-development-to-progress/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2030",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Prospect Place South (Battersea Power Station) by Battersea Power Station Development Company in Electric Boulevard, Battersea Power Station, London SW11 (United Kingdom). Added from the official developer page: under construction; handover on record: 2030. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://batterseapowerstation.co.uk/news/battersea-power-station-and-sisk-break-ground-at-prospect-place-south/",
+    "https://batterseapowerstation.co.uk/news/gehry-partners-designed-next-phase-of-battersea-power-station-development-to-progress/"
+   ],
+   "docs_listed": [
+    "Groundbreaking on 9 September 2026 with Sisk as main contractor; \"Construction is expected to complete in 2030.\"",
+    "Two Gehry Partners designed buildings, Rosewood House and Hayworth House, with approximately 300 new homes, 65,000 sq ft of commercial space and a 15,000 sq ft Community Hub"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "prospect-place-south-battersea-power-station"
+  },
+  {
+   "name": "Koppelhain",
+   "developer": "Bonava (Bonava Deutschland GmbH)",
+   "area": "Rennbahnallee, 15366 Hoppegarten (near Berlin)",
+   "country": "Germany",
+   "market": "Germany",
+   "stage": "off-plan",
+   "url": "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain",
+   "docs_url": "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain",
+   "permit_number": null,
+   "seed": {
+    "price": 249900,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 60,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Project page: \"Im Verkauf\", \"Bezugsfertig: Dezember 2027\"; condominiums, terraced houses and semi-detached houses of 2 to 4 rooms, 59 to 96 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain"
+    },
+    {
+     "claim": "Prices on the project page: EUR 249,900 to 434,900",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain"
+    },
+    {
+     "claim": "The project page gives the address \"Rennbahnallee 89, 15366 Hoppegarten\"; the press release of 17 February 2026 says \"An der Rennbahnallee 59\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain"
+    },
+    {
+     "claim": "Press release of 17 February 2026: 60 homes (53 condominiums, 3 terraced houses, 4 semi-detached houses), construction start planned for Q2 2026, full completion planned for 2030, first move-ins possible in December 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.bonava.de/contentassets/ecee910472594e73888673406aec1f6a/260217_pm_bonava-startet-verkauf-in-hoppegarten.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Bonava Deutschland GmbH",
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium",
+     "terraced house",
+     "semi-detached house"
+    ],
+    "size_min_m2": 59,
+    "size_max_m2": 96,
+    "price_min": 249900,
+    "price_max": 434900,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Koppelhain by Bonava in Rennbahnallee, 15366 Hoppegarten (near Berlin) (Germany). Added from the official developer page: off-plan; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.bonava.de/contentassets/ecee910472594e73888673406aec1f6a/260217_pm_bonava-startet-verkauf-in-hoppegarten.pdf",
+    "https://www.bonava.de/immobilien/berliner-umland/hoppegarten/koppelhain"
+   ],
+   "docs_listed": [
+    "Project page: \"Im Verkauf\", \"Bezugsfertig: Dezember 2027\"; condominiums, terraced houses and semi-detached houses of 2 to 4 rooms, 59 to 96 m2",
+    "Prices on the project page: EUR 249,900 to 434,900",
+    "The project page gives the address \"Rennbahnallee 89, 15366 Hoppegarten\"; the press release of 17 February 2026 says \"An der Rennbahnallee 59\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "koppelhain"
+  },
+  {
+   "name": "Medblue III",
+   "developer": "Metrovacesa",
+   "area": "Los Monteros (upper part), Marbella",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii",
+   "docs_url": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii",
+   "permit_number": null,
+   "seed": {
+    "price": 499000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-H1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 51,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The Malaga developments list shows \"Delivery 1st semester 2027\" for Medblue III",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga"
+    },
+    {
+     "claim": "Project status \"On sale\"; the description starts \"New launch!\"; 51 flats and duplex penthouses in 3 blocks (3rd phase) of 4 floors plus penthouse",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+    },
+    {
+     "claim": "Prices from EUR 499,000 excluding 10% VAT; 2 and 3-bedroom homes from 113.59 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+    },
+    {
+     "claim": "Data sheet names architects HCP, promoter bank Banco Santander and construction company CARTUJA INMOBILIARIA S.A.U.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+    },
+    {
+     "claim": "Map link on the developer page points to 36.529248, -4.841458",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+    },
+    {
+     "claim": "Pin: coordinates of the map link on the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-H1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "duplex penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 499000,
+    "price_max": null,
+    "currency": "EUR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 36.529248,
+    "lng": -4.841458,
+    "permit_authority": null
+   },
+   "note": "Medblue III by Metrovacesa in Los Monteros (upper part), Marbella (Spain). Added from the official developer page: off-plan; handover on record: 2027-H1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://metrovacesa.com/en/developments/malaga",
+    "https://metrovacesa.com/en/developments/malaga/marbella/medblue-iii"
+   ],
+   "docs_listed": [
+    "Project status \"On sale\"; the description starts \"New launch!\"; 51 flats and duplex penthouses in 3 blocks (3rd phase) of 4 floors plus penthouse",
+    "Prices from EUR 499,000 excluding 10% VAT; 2 and 3-bedroom homes from 113.59 m2",
+    "Data sheet names architects HCP, promoter bank Banco Santander and construction company CARTUJA INMOBILIARIA S.A.U.",
+    "Map link on the developer page points to 36.529248, -4.841458",
+    "Pin: coordinates of the map link on the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "medblue-iii"
+  },
+  {
+   "name": "ÉLOU Jardins",
+   "developer": "SOLYD Property Developers",
+   "area": "Loures (Lisbon area)",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "off-plan",
+   "url": "https://www.solyd.pt/en/elou-jardins/",
+   "docs_url": "https://www.solyd.pt/en/elou-jardins/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 304,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The page says \"YOUR NEW HOME IS COMING TO LIFE HERE\" and \"Your next home is already taking shape\"; status \"Under sale\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/elou-jardins/"
+    },
+    {
+     "claim": "304 residences of 1 to 4 bedrooms in 19 buildings with private underground parking, a pool, gym and garden; total GBA 54,442 sqm",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/elou-jardins/"
+    },
+    {
+     "claim": "No delivery date or price is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.solyd.pt/en/elou-jardins/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "ÉLOU Jardins by SOLYD Property Developers in Loures (Lisbon area) (Portugal). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.solyd.pt/en/elou-jardins/"
+   ],
+   "docs_listed": [
+    "The page says \"YOUR NEW HOME IS COMING TO LIFE HERE\" and \"Your next home is already taking shape\"; status \"Under sale\"",
+    "304 residences of 1 to 4 bedrooms in 19 buildings with private underground parking, a pool, gym and garden; total GBA 54,442 sqm",
+    "No delivery date or price is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "elou-jardins"
+  },
+  {
+   "name": "Sunset Cove",
+   "developer": "2Futures",
+   "area": "Coastal Road, Tamarin, west coast",
+   "country": "Mauritius",
+   "market": "Mauritius",
+   "stage": "under construction",
+   "url": "https://2futures.com/projects/sunset-cove",
+   "docs_url": "https://2futures.com/projects/sunset-cove",
+   "permit_number": null,
+   "seed": {
+    "price": 299540,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 36,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed on the developer page \"Under Construction\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/under-construction"
+    },
+    {
+     "claim": "Four blocks of 2 and 3-bedroom apartments, 36 apartments in total, on the Coastal Road after Tamarin Beach; roof sky lounge with infinity pool",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/sunset-cove"
+    },
+    {
+     "claim": "Price from USD 299.54K; investment open to \"Foreigners and Mauritians\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/sunset-cove"
+    },
+    {
+     "claim": "No completion date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/sunset-cove"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 299540,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners and Mauritians (as published)",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Sunset Cove by 2Futures in Coastal Road, Tamarin, west coast (Mauritius). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://2futures.com/projects/sunset-cove",
+    "https://2futures.com/under-construction"
+   ],
+   "docs_listed": [
+    "Four blocks of 2 and 3-bedroom apartments, 36 apartments in total, on the Coastal Road after Tamarin Beach; roof sky lounge with infinity pool",
+    "Price from USD 299.54K; investment open to \"Foreigners and Mauritians\"",
+    "No completion date is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunset-cove"
+  },
+  {
+   "name": "Infinity by the Sea",
+   "developer": "2Futures",
+   "area": "Black River, west coast",
+   "country": "Mauritius",
+   "market": "Mauritius",
+   "stage": "under construction",
+   "url": "https://2futures.com/projects/infinity-by-the-sea",
+   "docs_url": "https://2futures.com/projects/infinity-by-the-sea",
+   "permit_number": null,
+   "seed": {
+    "price": 340480,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed on the developer page \"Under Construction\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/under-construction"
+    },
+    {
+     "claim": "Seafront penthouses and apartments in Black River facing Le Morne Brabant",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/infinity-by-the-sea"
+    },
+    {
+     "claim": "Price from USD 340.48K; investment open to \"Foreigners and Mauritians\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/infinity-by-the-sea"
+    },
+    {
+     "claim": "No completion date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/infinity-by-the-sea"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 340480,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Foreigners and Mauritians (as published)",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Infinity by the Sea by 2Futures in Black River, west coast (Mauritius). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://2futures.com/projects/infinity-by-the-sea",
+    "https://2futures.com/under-construction"
+   ],
+   "docs_listed": [
+    "Seafront penthouses and apartments in Black River facing Le Morne Brabant",
+    "Price from USD 340.48K; investment open to \"Foreigners and Mauritians\"",
+    "No completion date is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "infinity-by-the-sea"
+  },
+  {
+   "name": "Amaiya Blocks E & F (Garden City)",
+   "developer": "Mi Vida Homes",
+   "area": "Garden City, Thika Road, Nairobi",
+   "country": "Kenya",
+   "market": "Nairobi",
+   "stage": "off-plan",
+   "url": "https://mividahomes.com/developments/amaiya-e-f/",
+   "docs_url": "https://mividahomes.com/developments/amaiya-e-f/",
+   "permit_number": null,
+   "seed": {
+    "price": 8500000,
+    "currency": "KES",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "20% on offer letter; 10% on sale agreement; 70% across the construction period from September 2026",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"Off-plan\"; final release of Blocks E and F with 1, 2, 3 and 4-bedroom apartments, including 3-bedroom duplexes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mividahomes.com/developments/amaiya-e-f/"
+    },
+    {
+     "claim": "Amaiya is described as a 734-unit development; prices from KES 8.5M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mividahomes.com/developments/amaiya-e-f/"
+    },
+    {
+     "claim": "Payment terms published: 20% on signing the offer letter, 10% on signing the sale agreement, 70% spread across the construction period beginning September 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mividahomes.com/developments/amaiya-e-f/"
+    },
+    {
+     "claim": "The page states gross rental yields \"of up to 12%\" for Amaiya; no completion date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mividahomes.com/developments/amaiya-e-f/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom duplex",
+     "4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 8500000,
+    "price_max": null,
+    "currency": "KES",
+    "deposit_pct": 20,
+    "payment_plan": "20% on offer letter; 10% on sale agreement; 70% across the construction period from September 2026",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Amaiya Blocks E & F (Garden City) by Mi Vida Homes in Garden City, Thika Road, Nairobi (Kenya). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://mividahomes.com/developments/amaiya-e-f/"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"Off-plan\"; final release of Blocks E and F with 1, 2, 3 and 4-bedroom apartments, including 3-bedroom duplexes",
+    "Amaiya is described as a 734-unit development; prices from KES 8.5M",
+    "Payment terms published: 20% on signing the offer letter, 10% on signing the sale agreement, 70% spread across the construction period beginning September 2026",
+    "The page states gross rental yields \"of up to 12%\" for Amaiya; no completion date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "amaiya-blocks-e-f-garden-city"
+  },
+  {
+   "name": "King Tamar by Archi",
+   "developer": "Archi",
+   "area": "King Tamar Avenue, Saburtalo, Tbilisi",
+   "country": "Georgia",
+   "market": "Georgia",
+   "stage": "under construction",
+   "url": "https://archi.ge/en/block/archi-king-tamar",
+   "docs_url": "https://archi.ge/en/block/archi-king-tamar",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 1,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the page: \"Ongoing\" with a progress figure of \"1 %\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/archi-king-tamar"
+    },
+    {
+     "claim": "High-class complex in Saburtalo on King Tamar Avenue; homes, parking and commercial units; amenities listed include a fitness centre, pool, spa and cinema",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/archi-king-tamar"
+    },
+    {
+     "claim": "No completion date or price is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/archi-king-tamar"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "King Tamar by Archi by Archi in King Tamar Avenue, Saburtalo, Tbilisi (Georgia). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://archi.ge/en/block/archi-king-tamar"
+   ],
+   "docs_listed": [
+    "Status on the page: \"Ongoing\" with a progress figure of \"1 %\"",
+    "High-class complex in Saburtalo on King Tamar Avenue; homes, parking and commercial units; amenities listed include a fitness centre, pool, spa and cinema",
+    "No completion date or price is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "king-tamar-by-archi"
+  },
+  {
+   "name": "Trump Tower Tbilisi",
+   "developer": "Archi",
+   "area": "Tamarashvili Street, next to Central Park, Saburtalo, Tbilisi",
+   "country": "Georgia",
+   "market": "Georgia",
+   "stage": "off-plan",
+   "url": "https://archi.ge/en/block/trump-tower-tbilisi",
+   "docs_url": "https://archi.ge/en/block/trump-tower-tbilisi",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 0,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the page: \"Ongoing\" with a progress figure of \"0 %\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/trump-tower-tbilisi"
+    },
+    {
+     "claim": "62-storey tower of 280 metres designed by Gensler, described as the tallest building in Georgia",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/trump-tower-tbilisi"
+    },
+    {
+     "claim": "Location published: \"On Tamarashvili Street, next to Central Park\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/trump-tower-tbilisi"
+    },
+    {
+     "claim": "No completion date or price is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/trump-tower-tbilisi"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Trump Tower Tbilisi by Archi in Tamarashvili Street, next to Central Park, Saburtalo, Tbilisi (Georgia). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://archi.ge/en/block/trump-tower-tbilisi"
+   ],
+   "docs_listed": [
+    "Status on the page: \"Ongoing\" with a progress figure of \"0 %\"",
+    "62-storey tower of 280 metres designed by Gensler, described as the tallest building in Georgia",
+    "Location published: \"On Tamarashvili Street, next to Central Park\"",
+    "No completion date or price is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "trump-tower-tbilisi"
+  },
+  {
+   "name": "Eastvale",
+   "developer": "SODIC",
+   "area": "Mada City, East Cairo",
+   "country": "Egypt",
+   "market": "Egypt",
+   "stage": "off-plan",
+   "url": "https://www.sodic.com/our-developments/eastvale",
+   "docs_url": "https://www.sodic.com/our-developments/eastvale",
+   "permit_number": null,
+   "seed": {
+    "price": 9736000,
+    "currency": "EGP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Location \"Mada City, East Cairo\"; unit types apartments, townhomes, twin villas and villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/eastvale"
+    },
+    {
+     "claim": "Starting price \"From 9,736,000 EGP\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/eastvale"
+    },
+    {
+     "claim": "The page has a \"Construction Progress\" section; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sodic.com/our-developments/eastvale"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "townhome",
+     "twin villa",
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 9736000,
+    "price_max": null,
+    "currency": "EGP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Eastvale by SODIC in Mada City, East Cairo (Egypt). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sodic.com/our-developments/eastvale"
+   ],
+   "docs_listed": [
+    "Location \"Mada City, East Cairo\"; unit types apartments, townhomes, twin villas and villas",
+    "Starting price \"From 9,736,000 EGP\"",
+    "The page has a \"Construction Progress\" section; no delivery date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "eastvale-egypt"
+  },
+  {
+   "name": "Saraya Al Ruba",
+   "developer": "Dar wa Emaar Real Estate Investment & Development (with NHC)",
+   "area": "Al Ruba district, East Riyadh",
+   "country": "Saudi Arabia",
+   "market": "Saudi Arabia",
+   "stage": "off-plan",
+   "url": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/",
+   "docs_url": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1155,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Launch announced on 27 November 2025, developed in partnership with NHC; nearly one million square meters and 1,155 residential units in eight housing models, total value above SAR 1.7 billion",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/"
+    },
+    {
+     "claim": "The release says 25% of the units were booked or sold within 48 hours of launch",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/"
+    },
+    {
+     "claim": "A reduced instalment option from SAR 400 per month for up to 36 months applies to Dar wa Emaar projects approved by NHC for the off-plan sales product",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/"
+    },
+    {
+     "claim": "No completion date or price per unit is printed in the release",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "residential unit"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Saraya Al Ruba by Dar wa Emaar Real Estate Investment & Development in Al Ruba district, East Riyadh (Saudi Arabia). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://darwaemaar.com/en/dar-wa-emaar-launches-sar1-7-bln-saraya-al-ruba-project-in-riyadh-amid-strong-demand/"
+   ],
+   "docs_listed": [
+    "Launch announced on 27 November 2025, developed in partnership with NHC; nearly one million square meters and 1,155 residential units in eight housing models, total value above SAR 1.7 billion",
+    "The release says 25% of the units were booked or sold within 48 hours of launch",
+    "A reduced instalment option from SAR 400 per month for up to 36 months applies to Dar wa Emaar projects approved by NHC for the off-plan sales product",
+    "No completion date or price per unit is printed in the release"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "saraya-al-ruba"
   }
  ]
 }
