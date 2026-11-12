@@ -183,13 +183,14 @@ ${o.leaflet ? '<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet
 
 function mapJS(l, items, opts) {
   const u = D.ui[l];
-  const pts = items.map(p => { const t = P(p, l); return { s: p.s, n: t.n, c: p.c, sec: p.sec, ll: p.ll, d: t.t.split(". ")[0] + "." }; });
+  const mine = new Set(items.map(p => p.s));
+  const pts = D.places.map(p => { const t = P(p, l); return { s: p.s, n: t.n, c: p.c, sec: p.sec, ll: p.ll, d: t.t.split(". ")[0] + ".", o: mine.has(p.s) ? 1 : 0 }; });
   return `(function(){var P=${JSON.stringify(pts)},C=${JSON.stringify(CAT_COLOR)},CAT=${JSON.stringify(u.cat)},SB=${JSON.stringify(u.secret_badge)},RM=${JSON.stringify(u.readmore)};
 var m=L.map('map',{scrollWheelZoom:false}).setView(${JSON.stringify(opts.center || [-9.68, 119.75])},${opts.zoom || 9});
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap'}).addTo(m);
-var layers=[];P.forEach(function(p){var mk=L.circleMarker(p.ll,{radius:p.sec?10:8,color:p.sec?'#e0ad55':'#fff',weight:p.sec?4:2,fillColor:C[p.c],fillOpacity:.95}).addTo(m);
+var layers=[];P.forEach(function(p){var mk=L.circleMarker(p.ll,{radius:p.o?(p.sec?10:8):6,color:p.sec?'#e0ad55':'#fff',weight:p.sec?4:2,fillColor:C[p.c],fillOpacity:p.o?.95:.7}).addTo(m);if(p.o)mk.bringToFront&&setTimeout(function(){mk.bringToFront()},0);
 mk.bindPopup('<b>'+p.n+'</b><br><small>'+CAT[p.c]+(p.sec?' · '+SB:'')+'</small><br>'+p.d+'<br><a href="/${l}/place/'+p.s+'/">'+RM+' →</a>');layers.push({p:p,mk:mk});});
-${opts.base ? `L.marker(${JSON.stringify(NB.ll)},{zIndexOffset:2000,icon:L.divIcon({className:'',html:'<div class="basepin">🏡</div>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(m).bindPopup(${JSON.stringify('<b>' + esc(NT(l).base) + '</b><br><small>' + esc(NT(l).base_d) + '</small>')});` : ""}${opts.fit ? "m.fitBounds(L.featureGroup(layers.map(function(x){return x.mk})).getBounds().pad(.08));" : ""}
+${opts.base ? `L.marker(${JSON.stringify(NB.ll)},{zIndexOffset:2000,icon:L.divIcon({className:'',html:'<div class="basepin">🏡</div>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(m).bindPopup(${JSON.stringify('<b>' + esc(NT(l).base) + '</b><br><small>' + esc(NT(l).base_d) + '</small>')});` : ""}${opts.fit ? "var own=layers.filter(function(x){return x.p.o});if(own.length)m.fitBounds(L.featureGroup(own.map(function(x){return x.mk})).getBounds().pad(.08));" : ""}
 document.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;
 layers.forEach(function(x){var show=f==='all'||(f==='secret'?x.p.sec:x.p.c===f);if(show)x.mk.addTo(m);else m.removeLayer(x.mk)});
 document.querySelectorAll('[data-cat]').forEach(function(el){el.style.display=(f==='all'||(f==='secret'?el.dataset.sec==='1':el.dataset.cat===f))?'':'none'})}});
@@ -614,7 +615,7 @@ function declutter(now){clearTimeout(declutter.t);if(!now){declutter.t=setTimeou
 var pan=document.getElementById('pan'),list=document.getElementById('list'),det=document.getElementById('det'),q=document.getElementById('q'),cur='all',REG='',AREA=false,ME=null,ORDER=[],GRID=ls('ss_grid')==='1',SR=document.getElementById('sr');
 function match(p){var s=nz(q.value);if(!s)return true;return nz(p.n+' '+p.ni+' '+p.ne+' '+S.reg[p.r]+' '+S.cat[p.c]+' '+T.filter(function(t){return t.s===p.town})[0].n).indexOf(s)>-1}
 function inf(p,f){if(f==='all')return true;if(f==='near')return p.nr>0;if(f==='secret')return p.sec;if(f.indexOf('reg:')===0)return p.r===f.slice(4);return p.c===f}
-function vis(p){return match(p)&&inf(p,cur)&&(!REG||p.r===REG)}
+function vis(p){return match(p)&&inf(p,cur)}
 document.querySelectorAll('.ch button').forEach(function(b){var n=P.filter(function(p){return inf(p,b.dataset.f)}).length;var i=document.createElement('i');i.textContent=n;b.appendChild(i)});
 function draw(){var h='',nv=0,bb=m.getBounds(),O=P.slice();if(cur==='near')O.sort(function(a,b){return a.nr-b.nr});else if(ME)O.sort(function(a,b){return kmd(ME,a.ll)-kmd(ME,b.ll)});ORDER=[];
 O.forEach(function(p){var v=vis(p);if(v){if(!CL.hasLayer(MK[p.s]))CL.addLayer(MK[p.s])}else{if(CL.hasLayer(MK[p.s]))CL.removeLayer(MK[p.s])}if(!v)return;if(AREA&&!bb.contains(p.ll))return;nv++;ORDER.push(p.s);
@@ -626,7 +627,7 @@ list.querySelectorAll('.it').forEach(function(x){x.onclick=function(){open(x.dat
 var a=document.getElementById('area');if(a)a.onchange=function(){AREA=a.checked;draw()};var gv=document.getElementById('gv');if(gv)gv.onclick=function(){GRID=!GRID;ls('ss_grid',GRID?'1':'0');draw()};var rx=document.getElementById('rx');if(rx)rx.onclick=function(){setReg('')};var r=document.getElementById('reset');if(r)r.onclick=function(){q.value='';AREA=false;REG='';filt('all')}}
 m.on('moveend',function(){if(AREA&&det.style.display==='none')draw()});
 function showList(){det.style.display='none';list.style.display=''}
-function setReg(r,fit){REG=r;document.querySelectorAll('.ch button[data-f^="reg:"]').forEach(function(b){b.classList.toggle('on',b.dataset.f==='reg:'+r);b.setAttribute('aria-pressed',b.dataset.f==='reg:'+r)});if(fit){var pp=P.filter(vis);if(pp.length)m.flyToBounds(L.latLngBounds(pp.map(function(p){return p.ll})),Object.assign({duration:.8,maxZoom:11},PADS()))}hsh();showList();draw()}
+function setReg(r,fit){REG='';document.querySelectorAll('.ch button[data-f^="reg:"]').forEach(function(b){b.classList.remove('on');b.setAttribute('aria-pressed','false')});if(r){var pp=P.filter(function(p){return p.r===r});if(pp.length)m.flyToBounds(L.latLngBounds(pp.map(function(p){return p.ll})),Object.assign({duration:.8,maxZoom:11},PADS()))}hsh();showList();draw()}
 function hsh(){var parts=[];if(cur!=='all'&&cur!=='near')parts.push('f='+cur);if(REG)parts.push('r='+REG);var hs=cur==='near'?'#near':parts.length?'#'+parts.join('&'):'';var o=location.hash;if(o!==hs&&(!o||o==='#near'||o.indexOf('#f=')===0||o.indexOf('#r=')===0||hs))history.replaceState(null,'',location.pathname+hs)}
 window.filt=function(f,nofit){if(f.indexOf('reg:')===0){setReg(REG===f.slice(4)?'':f.slice(4),!nofit);return}cur=f;act(null);if(f==='near'&&!nofit){var b=L.latLngBounds(P.filter(function(p){return p.nr>0}).map(function(p){return p.ll}).concat([S.nll]));m.flyToBounds(b,Object.assign({duration:.9},PADS()))}
 hsh();
@@ -674,7 +675,7 @@ gb.addEventListener('touchstart',ts,{passive:true});gb.addEventListener('touchmo
 pan.addEventListener('touchstart',function(ev){if(ev.target.closest('.lh'))ts(ev)},{passive:true});pan.addEventListener('touchmove',function(ev){if(Y0!==null)tm(ev)},{passive:false});pan.addEventListener('touchend',te);
 m.on('click',function(){if(!WIDE()&&det.style.display==='none')snap('min')});
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){if(det.style.display!=='none')closeDet();else if(document.activeElement===q){q.value='';draw();q.blur()}}if(ev.key==='/'&&document.activeElement!==q){ev.preventDefault();q.focus()}});
-draw();var h=location.hash.slice(1);if(h==='near')setTimeout(function(){filt('near')},250);else if(h.indexOf('f=')===0||h.indexOf('r=')===0){h.split('&').forEach(function(kv){var x=kv.split('=');if(x[0]==='f')filt(x[1],1);if(x[0]==='r')setReg(x[1])})}if(h&&BYS[h])setTimeout(function(){open(h)},300);if(h.indexOf('route-')===0&&RL[h.slice(6)]){routes.addTo(m);m.fitBounds(RL[h.slice(6)].getBounds(),{padding:[40,40]})}
+draw();var h=location.hash.slice(1);if(h==='near')setTimeout(function(){filt('near')},250);else if(h.indexOf('f=')===0||h.indexOf('r=')===0){h.split('&').forEach(function(kv){var x=kv.split('=');if(x[0]==='f')filt(x[1],1);if(x[0]==='r')setReg(x[1],1)})}if(h&&BYS[h])setTimeout(function(){open(h)},300);if(h.indexOf('route-')===0&&RL[h.slice(6)]){routes.addTo(m);m.fitBounds(RL[h.slice(6)].getBounds(),{padding:[40,40]})}
 addEventListener('resize',function(){clearTimeout(window._rz);window._rz=setTimeout(function(){m.invalidateSize()},200)})})();`;
   const title = `${u.map} · Sumba: ${u.cat.beach.toLowerCase()}, ${u.cat.waterfall.toLowerCase()}, ${u.cat.village.toLowerCase()} & ${u.secrets.toLowerCase()}`;
   const opts = L.map(x => `<option value="/${x}/map/"${x === l ? " selected" : ""}>${x.toUpperCase()}</option>`).join("");
