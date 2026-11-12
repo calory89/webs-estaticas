@@ -108,7 +108,7 @@ section.dark{background:#0f1714;color:#ece6d8}section.dark .lead{color:#a9b3ac}.
 .regs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.rg2{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1;color:#fff;text-decoration:none}.rg2 img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.rg2:hover img{transform:scale(1.06)}.rg2::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}.rg2 span{position:absolute;left:16px;bottom:14px;z-index:1}.rg2 b{display:block;font-family:Fraunces,Georgia,serif;font-size:24px}
 .mapcta{background:linear-gradient(120deg,#0e6f66,#0b3b37);color:#fff}.mapcta-in{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}.mapcta h2{font-family:Fraunces,Georgia,serif;font-size:clamp(28px,3.6vw,44px);margin:0 0 8px}.mapcta-img img{width:100%;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .nums{background:var(--sand)}.nm{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}.nm b{display:block;font-family:Fraunces,Georgia,serif;font-size:clamp(44px,6vw,72px);color:var(--teal);line-height:1}.nm span{color:var(--mute)}
-.ph-hero{position:relative;height:78svh;min-height:480px;max-height:760px;color:#fff;overflow:hidden;background:#0b3b37}@media(max-width:700px){.ph-hero{height:62svh;min-height:400px}}.ph-hero.short{height:56svh;min-height:380px}.ph-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tblw{overflow-x:auto;margin:8px 0}.tbl{border-collapse:collapse;width:100%;font-size:15px;background:var(--paper)}.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;white-space:nowrap}.tbl th{font-size:13px;color:var(--mute)}.tbl.clim td,.tbl.clim th{text-align:center;padding:6px}.tbl.clim td:first-child,.tbl.clim th:first-child{text-align:left;position:sticky;left:0;background:var(--paper)}.note{font-size:14px;color:var(--mute)}ul.chk{padding-left:20px}ul.chk li{margin:6px 0}.ph-hero{position:relative;height:78svh;min-height:480px;max-height:760px;color:#fff;overflow:hidden;background:#0b3b37}@media(max-width:700px){.ph-hero{height:62svh;min-height:400px}}.ph-hero.short{height:56svh;min-height:380px}.ph-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph-in{position:absolute;left:0;right:0;bottom:44px}.ph-hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(40px,6.5vw,84px);line-height:1;letter-spacing:-.03em;margin:10px 0 8px;text-shadow:0 2px 30px rgba(0,0,0,.35)}.ph-sub{font-size:19px;max-width:60ch;opacity:.95;margin:0 0 16px}.ph-cr{position:absolute;right:12px;bottom:8px;font-size:11px;opacity:.75;margin:0}
 .crumbs.light,.crumbs.light a{color:rgba(255,255,255,.85)}
 .pl2{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;padding-top:34px;padding-bottom:30px}.pl2-side{position:relative}.pl2-side .qf{position:static;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:var(--shadow)}.pl2-side .qf:first-child{position:sticky;top:84px}
@@ -459,13 +459,37 @@ function videoLD(v, l) {
   return { "@context": "https://schema.org", "@type": "VideoObject", name: t, description: t + " (Sumba, Indonesia)", thumbnailUrl: `https://i.ytimg.com/vi/${v}/hqdefault.jpg`, embedUrl: `https://www.youtube-nocookie.com/embed/${v}`, contentUrl: `https://www.youtube.com/watch?v=${v}`, uploadDate: "2026-01-01" };
 }
 
+function driveH(l, k) { const u2 = D.ui2[l]; const road = k * 1.35, m = Math.max(15, Math.round((road / 35 * 60 + 10) / 15) * 15); const h = Math.floor(m / 60), mm = m % 60; return [Math.round(road / 5) * 5, (h ? h + " " + u2.u_h : "") + (h && mm ? " " : "") + (mm ? mm + " " + u2.u_min : "")]; }
+function sunTimes(lat, lon, n) { const r = Math.PI / 180, g = 2 * Math.PI / 365 * (n - 1), eq = 229.18 * (.000075 + .001868 * Math.cos(g) - .032077 * Math.sin(g) - .014615 * Math.cos(2 * g) - .040849 * Math.sin(2 * g)), dc = .006918 - .399912 * Math.cos(g) + .070257 * Math.sin(g) - .006758 * Math.cos(2 * g) + .000907 * Math.sin(2 * g) - .002697 * Math.cos(3 * g) + .00148 * Math.sin(3 * g), ha = Math.acos(Math.cos(90.833 * r) / (Math.cos(lat * r) * Math.cos(dc)) - Math.tan(lat * r) * Math.tan(dc)) / r; return [720 - 4 * (lon + ha) - eq + 480, 720 - 4 * (lon - ha) - eq + 480]; }
+const hhmm = m => { m = Math.round(m); return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0"); };
+function sunRange(ll) { const a = [], b = []; for (let n = 1; n <= 365; n += 7) { const t = sunTimes(ll[0], ll[1], n); a.push(t[0]); b.push(t[1]); } return [hhmm(Math.min(...a)), hhmm(Math.max(...a)), hhmm(Math.min(...b)), hhmm(Math.max(...b))]; }
+const CLIM_PTS = { waingapu: [-9.65, 120.26], waikabubak: [-9.636, 119.41], tambolaka: [-9.424, 119.245], south: [-9.97, 119.95] };
+const CLIM_NAME = { waingapu: "Waingapu", waikabubak: "Waikabubak", tambolaka: "Tambolaka", south: "South coast (Tarimbang)" };
+function bearing(a, b) { const t = x => x * Math.PI / 180, y = Math.sin(t(b[1] - a[1])) * Math.cos(t(b[0])), x = Math.cos(t(a[0])) * Math.sin(t(b[0])) - Math.sin(t(a[0])) * Math.cos(t(b[0])) * Math.cos(t(b[1] - a[1])); return Math.round(((Math.atan2(y, x) * 180 / Math.PI + 360) % 360) / 45) % 8; }
+function placeExtra(l, p, t) {
+  const u2 = D.ui2[l];
+  const origins = D.airports.map(a => [a.n, a.ll]).concat(D.towns.map(x => [x.n, x.ll]), [[NT(l).base, NB.ll]]);
+  const rows = origins.map(([n, ll]) => { const k = km(ll, p.ll); const [rk, h] = driveH(l, k); return [n, Math.round(k), rk, h]; }).sort((a, b) => a[1] - b[1]);
+  const sr = sunRange(p.ll);
+  const ck = Object.keys(CLIM_PTS).map(k => [km(CLIM_PTS[k], p.ll), k]).sort((a, b) => a[0] - b[0])[0][1], cl = D.climate[ck];
+  let mf; try { mf = new Intl.DateTimeFormat(l, { month: "short", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }); }
+  const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).filter(x => x[0] <= 15).sort((a, b) => a[0] - b[0]).slice(0, 8);
+  const plan = u2["plan_" + p.c] || [];
+  return `<h2 class="sec h2s" id="getting-there">🚗 ${esc(u2.gt_t)}</h2><div class="tblw"><table class="tbl"><thead><tr><th>${esc(u2.gt_from)}</th><th>${esc(u2.gt_km)}</th><th>${esc(u2.gt_drive)}</th></tr></thead><tbody>${rows.map(r => `<tr><td>${esc(r[0])}</td><td>${r[1]} km</td><td>~${r[2]} km · ${esc(r[3])}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(u2.gt_note)}</p>
+<h2 class="sec h2s">🌅 ${esc(u2.sun_t)}</h2><p>${esc(tpl(u2.sun_b, { n: t.n, r1: sr[0], r2: sr[1], s1: sr[2], s2: sr[3] }))}</p>
+${plan.length ? `<h2 class="sec h2s">✅ ${esc(u2.pv_t)}</h2><ul class="chk">${plan.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+<h2 class="sec h2s">📍 ${esc(u2.near15_t)}</h2>${near.length ? `<ul class="chk">${near.map(([k, x]) => `<li><a href="/${l}/place/${x.s}/">${esc(P(x, l).n)}</a> · ${esc(tpl(u2.near15_row, { k: k.toFixed(1), d: u2.dirs[bearing(p.ll, x.ll)] }))}</li>`).join("")}</ul>` : `<p>${esc(u2.near15_none)}</p>`}
+<h2 class="sec h2s">🌦️ ${esc(tpl(u2.clim_t, { n: t.n }))}</h2><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(u2.clim_m)}</th>${cl.map(r => `<th>${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</th>`).join("")}</tr></thead><tbody>
+<tr><td>${esc(u2.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_rain)}</td>${cl.map(r => `<td>${r[3]}</td>`).join("")}</tr></tbody></table></div><p class="note">${esc(tpl(u2.clim_note, { s: CLIM_NAME[ck] }))}</p>`;
+}
 function placePage(l, p) {
   const u = D.ui[l], u2 = U2(l), t = P(p, l);
   const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 6);
   const [tk, town] = nearestOf(p.ll, D.towns), [ak, ap] = nearestOf(p.ll, D.airports);
   const ph = photos(p), hero = ph[0];
   const ll = `${p.ll[0].toFixed(4)}, ${p.ll[1].toFixed(4)}`;
-  const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })], [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]], [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })], [tpl(u2.q_tip, { n: t.n }), t.tip]];
+  const [akr, akh] = driveH(l, ak), [tkr, tkh] = driveH(l, tk);
+  const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })], [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]], [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })], [tpl(u2.q_far, { n: t.n, ap: ap.n }), tpl(u2.a_far, { n: t.n, ap: ap.n, k: Math.round(ak), h: akh })], [tpl(u2.q_drive, { n: t.n, t: town.n }), tpl(u2.a_drive, { n: t.n, t: town.n, k: tkr, h: tkh })], [tpl(u2.q_tip, { n: t.n }), t.tip]];
   const vids = D.videos[p.s] || [];
   const idx = D.places.indexOf(p), prev = D.places[(idx - 1 + D.places.length) % D.places.length], next = D.places[(idx + 1) % D.places.length];
   const body = `<section class="ph-hero"><img src="${hero.b.replace("/ph/1280/", "/ph/960/")}" alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba" fetchpriority="high">
@@ -477,6 +501,7 @@ function placePage(l, p) {
 <div class="body lead1"><p>${esc(t.t)}</p></div><div class="tipb"><b>💡 ${esc(u.tip)}</b>${esc(t.tip)}</div>
 ${ph.length > 1 ? `<h2 class="sec h2s">📷 ${esc(u2.gallery)}</h2><div class="gal2">${ph.map((x, i) => `<button data-lb="${i}" aria-label="${esc(u2.gallery)} ${i + 1}"><img src="${x.s}" alt="${esc(t.n)} (${i + 1})" loading="lazy" width="500" height="333"></button>`).join("")}</div><p class="crs">${ph.map(x => `${x.fp ? esc(u2.file) + " · " : ""}${esc(x.a)} (<a href="${x.f}" rel="nofollow noopener" target="_blank">${esc(x.l)}</a>)`).join(" · ")}, Wikimedia Commons</p>` : ""}
 ${vids.length ? `<h2 class="sec h2s">▶ ${esc(u2.videos_t)}</h2><div class="vids one">${vids.map(v => ytFacade(v, l)).join("")}</div>` : ""}
+${placeExtra(l, p, t)}
 <h2 class="sec h2s">${esc(u2.faq)}</h2><div class="faq">${faq.map(([q, a], i) => `<details${i ? "" : " open"}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
 ${tipForm(l, p)}</article>
 <aside class="pl2-side"><div class="qf"><h2>${esc(u2.quick)}</h2><dl>

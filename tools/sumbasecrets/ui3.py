@@ -1,0 +1,28 @@
+# 13-nov-2026 · English source strings for the data-driven sections added to every place page
+# (distances and drive times, sunrise/sunset, climate table, nearby places, plan-your-visit checklist).
+EXTRA_UI3 = {
+ "gt_t": "Getting there: distances and drive times",
+ "gt_from": "From", "gt_km": "Straight line", "gt_drive": "By road (approx.)",
+ "gt_note": "Drive times are estimates for a car with a driver, at about 35 km/h on average including stops and slow village stretches. Allow more time in the rainy season and on the last unpaved section.",
+ "u_h": "h", "u_min": "min",
+ "sun_t": "Sunrise and sunset",
+ "sun_b": "At {n} the sun rises between {r1} and {r2} and sets between {s1} and {s2}, local time (WITA, UTC+8), depending on the month. So close to the equator, days last about 12 hours all year, and it gets dark quickly after sunset.",
+ "clim_t": "Climate near {n} by month",
+ "clim_m": "Month", "clim_max": "Max °C", "clim_min": "Min °C", "clim_rain": "Rain mm", "clim_days": "Rain days",
+ "clim_note": "Monthly averages for 2015 to 2024 from Open-Meteo historical weather data (ERA5 reanalysis, a weather model) for the nearest area: {s}. Treat rainfall as approximate: models tend to overestimate it in dry areas.",
+ "near15_t": "Also within 15 km",
+ "near15_none": "There are no other places from our map within 15 km, so plan this as its own trip.",
+ "dirs": ["north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west"],
+ "near15_row": "{k} km to the {d}",
+ "pv_t": "Plan your visit",
+ "plan_beach": ["Check the sea before swimming: the south and west coasts face the open Indian Ocean, with strong currents and big waves for much of the year.", "There is little shade and often no shop nearby, so bring water, sun protection and some cash in small notes.", "Low tide often shows rock pools and reef flats; high tide can cover small beaches completely.", "Leave nothing behind and do not take coral or shells."],
+ "plan_waterfall": ["Water flow is strongest in and just after the rainy season (about December to April) and can be thin by September and October.", "Rocks are slippery: wear sandals or shoes with grip.", "Some paths are steep or cross rivers; ask locally before going after heavy rain.", "A small entry or parking fee and a local guide are common at popular falls."],
+ "plan_village": ["Traditional villages are homes, not museums: greet people, ask before taking photos and before entering a house.", "Visitors usually sign a guestbook and leave a small contribution; going with a local guide makes the visit easier and more respectful.", "Dress modestly, covering shoulders and knees.", "Do not touch or climb on the stone tombs."],
+ "plan_viewpoint": ["Go at sunrise or late afternoon for soft light and cooler temperatures.", "There is rarely shade or water on the hills: bring both.", "Dry season light is golden; from January to April the hills are greenest.", "Stay on existing paths; the grassland is grazing land for local herds."],
+ "plan_culture": ["Ceremonies follow local tradition and dates can change at short notice; confirm with a local guide.", "Ask permission before photographing people, animals and rituals.", "Keep a safe distance from horses and riders during events.", "A local guide can explain what you are seeing and introduce you properly."],
+ "q_far": "How far is {n} from {ap}?",
+ "a_far": "{n} is about {k} km in a straight line from {ap}, roughly {h} by road.",
+ "q_drive": "How long is the drive from {t} to {n}?",
+ "a_drive": "Plan on about {h} for the roughly {k} km by road from {t}, and more after heavy rain.",
+ "upd_l": "Updated",
+}
