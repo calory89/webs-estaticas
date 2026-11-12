@@ -195686,6 +195686,3070 @@
    "added": "2026-11-12",
    "found_by": "discover-manual",
    "slug": "kuilei-place"
+  },
+  {
+   "name": "District at Downtown",
+   "developer": "Civil-Mek",
+   "area": "Ciudad Las Canas, Cap Cana, Punta Cana",
+   "country": "Dominican Republic",
+   "market": "Punta Cana",
+   "stage": "off-plan",
+   "url": "https://www.civilmek.com/proyecto/district-at-downtown/",
+   "docs_url": "https://www.civilmek.com/proyecto/district-at-downtown/",
+   "permit_number": null,
+   "seed": {
+    "price": 133520,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "US$2,500 reservation; 10% within 30 days; 30% during construction; 60% on delivery",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated delivery printed in the page FAQ: \"Estimado, principios 2028\" (estimated, early 2028)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/district-at-downtown/"
+    },
+    {
+     "claim": "Works status printed in the FAQ: \"En preventa\" (pre-sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/district-at-downtown/"
+    },
+    {
+     "claim": "Price from US$133,520; three blocks of four levels with 1 and 2-bedroom apartments (the programme list also names 3-bedroom units)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/district-at-downtown/"
+    },
+    {
+     "claim": "Standard payment plan as published: US$2,500 reservation, 10% within 30 days, 30% during construction and 60% on delivery",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/district-at-downtown/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 133520,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": "US$2,500 reservation; 10% within 30 days; 30% during construction; 60% on delivery",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "District at Downtown by Civil-Mek in Ciudad Las Canas, Cap Cana, Punta Cana (Dominican Republic). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.civilmek.com/proyecto/district-at-downtown/"
+   ],
+   "docs_listed": [
+    "Estimated delivery printed in the page FAQ: \"Estimado, principios 2028\" (estimated, early 2028)",
+    "Works status printed in the FAQ: \"En preventa\" (pre-sale)",
+    "Price from US$133,520; three blocks of four levels with 1 and 2-bedroom apartments (the programme list also names 3-bedroom units)",
+    "Standard payment plan as published: US$2,500 reservation, 10% within 30 days, 30% during construction and 60% on delivery"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "district-at-downtown"
+  },
+  {
+   "name": "Circle Residences",
+   "developer": "Civil-Mek",
+   "area": "Cap Cana Village, Cap Cana, Punta Cana",
+   "country": "Dominican Republic",
+   "market": "Punta Cana",
+   "stage": "under construction",
+   "url": "https://www.civilmek.com/proyecto/circle-residences/",
+   "docs_url": "https://www.civilmek.com/proyecto/circle-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": 250000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-H1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated delivery printed in the page FAQ: \"Estimado primer semestre 2028\" (estimated, first half of 2028)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/circle-residences/"
+    },
+    {
+     "claim": "Works status printed in the FAQ: \"Inicio de excavaciones\" (excavation started)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/circle-residences/"
+    },
+    {
+     "claim": "Price from US$250,000; two residential blocks on one plot of 8,545 m2 with a maximum height of 6 levels and underground parking",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/circle-residences/"
+    },
+    {
+     "claim": "The FAQ says the project will have the Confotur law benefit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/circle-residences/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-H1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 250000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Circle Residences by Civil-Mek in Cap Cana Village, Cap Cana, Punta Cana (Dominican Republic). Added from the official developer page: under construction; handover on record: 2028-H1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.civilmek.com/proyecto/circle-residences/"
+   ],
+   "docs_listed": [
+    "Estimated delivery printed in the page FAQ: \"Estimado primer semestre 2028\" (estimated, first half of 2028)",
+    "Works status printed in the FAQ: \"Inicio de excavaciones\" (excavation started)",
+    "Price from US$250,000; two residential blocks on one plot of 8,545 m2 with a maximum height of 6 levels and underground parking",
+    "The FAQ says the project will have the Confotur law benefit"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "circle-residences"
+  },
+  {
+   "name": "Boulevard Villas",
+   "developer": "Civil-Mek",
+   "area": "Las Iguanas Golf Residences, Cap Cana",
+   "country": "Dominican Republic",
+   "market": "Punta Cana",
+   "stage": "off-plan",
+   "url": "https://www.civilmek.com/proyecto/boulevard-villas/",
+   "docs_url": "https://www.civilmek.com/proyecto/boulevard-villas/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 28,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Complex of 28 residential villas, each with 3 bedrooms, a service room, private pool and 2 parking spaces",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/boulevard-villas/"
+    },
+    {
+     "claim": "Works status printed in the FAQ: \"En preventa\" (pre-sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/boulevard-villas/"
+    },
+    {
+     "claim": "Delivery printed in the FAQ as a period, not a date: \"De 18 a 24 meses a partir de la firma de la promesa de venta\" (18 to 24 months from signing the promise of sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/boulevard-villas/"
+    },
+    {
+     "claim": "The FAQ says the project will have the Confotur law benefit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.civilmek.com/proyecto/boulevard-villas/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bedroom villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Boulevard Villas by Civil-Mek in Las Iguanas Golf Residences, Cap Cana (Dominican Republic). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.civilmek.com/proyecto/boulevard-villas/"
+   ],
+   "docs_listed": [
+    "Complex of 28 residential villas, each with 3 bedrooms, a service room, private pool and 2 parking spaces",
+    "Works status printed in the FAQ: \"En preventa\" (pre-sale)",
+    "Delivery printed in the FAQ as a period, not a date: \"De 18 a 24 meses a partir de la firma de la promesa de venta\" (18 to 24 months from signing the promise of sale)",
+    "The FAQ says the project will have the Confotur law benefit"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "boulevard-villas"
+  },
+  {
+   "name": "Poseidonia Residences",
+   "developer": "Noval Properties",
+   "area": "Cana Bay, Punta Cana",
+   "country": "Dominican Republic",
+   "market": "Punta Cana",
+   "stage": "under construction",
+   "url": "https://www.novalproperties.com/proyectos/poseidonia-residencias",
+   "docs_url": "https://www.novalproperties.com/proyectos/poseidonia-residencias",
+   "permit_number": null,
+   "seed": {
+    "price": 195000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Price printed on the page: \"Desde $195,000 USD\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/poseidonia-residencias"
+    },
+    {
+     "claim": "The page shows a construction progress section (\"Asi avanza\") with an update dated September 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/poseidonia-residencias"
+    },
+    {
+     "claim": "Hotel management named on the page: Archipelago International (Poseidonia Residences by Aston)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/poseidonia-residencias"
+    },
+    {
+     "claim": "No delivery date is printed on the project page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/poseidonia-residencias"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 195000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Poseidonia Residences by Noval Properties in Cana Bay, Punta Cana (Dominican Republic). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.novalproperties.com/proyectos/poseidonia-residencias"
+   ],
+   "docs_listed": [
+    "Price printed on the page: \"Desde $195,000 USD\"",
+    "The page shows a construction progress section (\"Asi avanza\") with an update dated September 2026",
+    "Hotel management named on the page: Archipelago International (Poseidonia Residences by Aston)",
+    "No delivery date is printed on the project page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "poseidonia-residences"
+  },
+  {
+   "name": "Four Seasons Private Residences Dominican Republic at Tropicalia",
+   "developer": "Cisneros (Tropicalia Hldgs)",
+   "area": "Playa Esmeralda, Tropicalia, Samana Bay area",
+   "country": "Dominican Republic",
+   "market": "Dominican Republic",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/tropicalia/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/tropicalia/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 25,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2027\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 25; Developer: Cisneros (Tropicalia Hldgs); architect and interior designer named on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/tropicalia/"
+    },
+    {
+     "claim": "Beach Flat residences leading down to Playa Esmeralda; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/tropicalia/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Tropicalia Hldgs",
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "beach flat residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Dominican Republic at Tropicalia by Cisneros in Playa Esmeralda, Tropicalia, Samana Bay area (Dominican Republic). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/in-development/",
+    "https://www.fourseasons.com/residences/private_residences/tropicalia/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 25; Developer: Cisneros (Tropicalia Hldgs); architect and interior designer named on the page",
+    "Beach Flat residences leading down to Playa Esmeralda; the page says the project is \"In Development\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-dominican-republic-at-tropicalia"
+  },
+  {
+   "name": "Bosco di Santa Maria",
+   "developer": "Grupo Los Pueblos",
+   "area": "Santa Maria Golf & Country Club, Panama City",
+   "country": "Panama",
+   "market": "Panama City",
+   "stage": "off-plan",
+   "url": "https://boscodisantamaria.com/",
+   "docs_url": "https://boscodisantamaria.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 484000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The project site says \"Preventa\" and \"Entrega 2029\" (delivery 2029)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://boscodisantamaria.com/"
+    },
+    {
+     "claim": "Apartments from $484,000 and houses from $2,030,000; 3-bedroom apartments of 160 m2 and 4-bedroom duplexes of 256 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://boscodisantamaria.com/"
+    },
+    {
+     "claim": "The developer page lists villas, apartments, residences with private pool and penthouses from 100 m2 to 478 m2, in more than 30 models",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://glp.com.pa/proyecto/bosco-di-santa-maria/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "duplex",
+     "penthouse",
+     "villa"
+    ],
+    "size_min_m2": 100,
+    "size_max_m2": 478,
+    "price_min": 484000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Bosco di Santa Maria by Grupo Los Pueblos in Santa Maria Golf & Country Club, Panama City (Panama). Added from the official developer page: off-plan; handover on record: 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://boscodisantamaria.com/",
+    "https://glp.com.pa/proyecto/bosco-di-santa-maria/"
+   ],
+   "docs_listed": [
+    "The project site says \"Preventa\" and \"Entrega 2029\" (delivery 2029)",
+    "Apartments from $484,000 and houses from $2,030,000; 3-bedroom apartments of 160 m2 and 4-bedroom duplexes of 256 m2"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "bosco-di-santa-maria"
+  },
+  {
+   "name": "Mayaliah Tulum MGallery Branded Residences",
+   "developer": "Inmobilia Desarrollos",
+   "area": "Aldea Zama, Tulum",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "off-plan",
+   "url": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery",
+   "docs_url": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 95,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the page: \"Preventa\" (pre-sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+    },
+    {
+     "claim": "95 branded private residences and 45 hotel rooms in Aldea Zama, Tulum; described as the first MGallery private residence in Mexico",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+    },
+    {
+     "claim": "Developer legal name in the page data: Inmobilia Desarrollos S.A.P.I. de C.V.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+    },
+    {
+     "claim": "No delivery date or price is printed on the project page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+    },
+    {
+     "claim": "Pin: coordinates published in the structured data (GeoCoordinates) of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Inmobilia Desarrollos S.A.P.I. de C.V.",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 20.201895,
+    "lng": -87.44933,
+    "permit_authority": null
+   },
+   "note": "Mayaliah Tulum MGallery Branded Residences by Inmobilia Desarrollos in Aldea Zama, Tulum (Mexico). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery"
+   ],
+   "docs_listed": [
+    "Status printed on the page: \"Preventa\" (pre-sale)",
+    "95 branded private residences and 45 hotel rooms in Aldea Zama, Tulum; described as the first MGallery private residence in Mexico",
+    "Developer legal name in the page data: Inmobilia Desarrollos S.A.P.I. de C.V.",
+    "No delivery date or price is printed on the project page",
+    "Pin: coordinates published in the structured data (GeoCoordinates) of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "mayaliah-tulum-mgallery-branded-residences"
+  },
+  {
+   "name": "Campus Country Mayab",
+   "developer": "Inmobilia Desarrollos",
+   "area": "Paseo Country 1ra Etapa, next to Universidad Anahuac Mayab, Merida",
+   "country": "Mexico",
+   "market": "Mérida",
+   "stage": "off-plan",
+   "url": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx",
+   "docs_url": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx",
+   "permit_number": null,
+   "seed": {
+    "price": 1500000,
+    "currency": "MXN",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 501,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the page: \"Preventa\" (pre-sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx"
+    },
+    {
+     "claim": "501 furnished suites in three types: Junior Suite 22.4 m2, Master Suite 25.6 m2 and Grand Suite 34.38 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx"
+    },
+    {
+     "claim": "The project includes a 9,900 m2 shopping plaza with 53 units and a corporate office tower",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx"
+    },
+    {
+     "claim": "Price range shown on the developer project list: \"$1.5-3MDP\" (MXN 1.5 to 3 million)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery?hsLang=es-mx"
+    },
+    {
+     "claim": "Sales contact on the page: info@ralforealestate.mx; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "suite"
+    ],
+    "size_min_m2": 22.4,
+    "size_max_m2": 34.38,
+    "price_min": 1500000,
+    "price_max": 3000000,
+    "currency": "MXN",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Campus Country Mayab by Inmobilia Desarrollos in Paseo Country 1ra Etapa, next to Universidad Anahuac Mayab, Merida (Mexico). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.inmobilia.mx/proyecto/campus-country-mayab?hsLang=es-mx",
+    "https://www.inmobilia.mx/proyecto/mayaliah-tulum-mgallery?hsLang=es-mx"
+   ],
+   "docs_listed": [
+    "Status printed on the page: \"Preventa\" (pre-sale)",
+    "501 furnished suites in three types: Junior Suite 22.4 m2, Master Suite 25.6 m2 and Grand Suite 34.38 m2",
+    "The project includes a 9,900 m2 shopping plaza with 53 units and a corporate office tower",
+    "Sales contact on the page: info@ralforealestate.mx; no delivery date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "campus-country-mayab"
+  },
+  {
+   "name": "Altezza Luxury Tower",
+   "developer": "Not named on the project site",
+   "area": "5 de Diciembre, Puerto Vallarta",
+   "country": "Mexico",
+   "market": "Puerto Vallarta",
+   "stage": "off-plan",
+   "url": "https://tropicasa.com/altezza/",
+   "docs_url": "https://tropicasa.com/altezza/",
+   "permit_number": null,
+   "seed": {
+    "price": 136000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 34,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The project site prints \"34 Residences\", \"6 Levels\" and \"December 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tropicasa.com/altezza/"
+    },
+    {
+     "claim": "Price starting from $136,000 USD / $2,332,400 MXN",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tropicasa.com/altezza/"
+    },
+    {
+     "claim": "Unit locator lists 1-bedroom units of 45.72 m2 and 2-bedroom units of 68.29 to 81.11 m2, several marked SOLD",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tropicasa.com/altezza/"
+    },
+    {
+     "claim": "The sales site is run by Tropicasa (agents); no developer is named on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tropicasa.com/altezza/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom condo",
+     "2-bedroom condo"
+    ],
+    "size_min_m2": 45.72,
+    "size_max_m2": 81.11,
+    "price_min": 136000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Altezza Luxury Tower in 5 de Diciembre, Puerto Vallarta (Mexico). Added from the official developer page: off-plan; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://tropicasa.com/altezza/"
+   ],
+   "docs_listed": [
+    "The project site prints \"34 Residences\", \"6 Levels\" and \"December 2027\"",
+    "Price starting from $136,000 USD / $2,332,400 MXN",
+    "Unit locator lists 1-bedroom units of 45.72 m2 and 2-bedroom units of 68.29 to 81.11 m2, several marked SOLD",
+    "The sales site is run by Tropicasa (agents); no developer is named on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "altezza-luxury-tower"
+  },
+  {
+   "name": "Four Seasons Private Residences Caye Chapel",
+   "developer": "Thor Urbana",
+   "area": "Caye Chapel, Belize",
+   "country": "Belize",
+   "market": "Belize",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/belize/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/belize/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 24,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Facts table on the page: Private Residences (# of Units) 24; Developer Thor Urbana; Opening Date 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/belize/"
+    },
+    {
+     "claim": "The page labels the project \"In Development\"; two-story Private Estates on a private island with the Caye Chapel golf course",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/belize/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "private estate"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Caye Chapel by Thor Urbana in Caye Chapel, Belize (Belize). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/belize/"
+   ],
+   "docs_listed": [
+    "Facts table on the page: Private Residences (# of Units) 24; Developer Thor Urbana; Opening Date 2027",
+    "The page labels the project \"In Development\"; two-story Private Estates on a private island with the Caye Chapel golf course"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-caye-chapel"
+  },
+  {
+   "name": "The Penthouses at Goldwynn",
+   "developer": "Wynn Development",
+   "area": "340 West Bay Street, Cable Beach, Nassau",
+   "country": "Bahamas",
+   "market": "Bahamas",
+   "stage": "under construction",
+   "url": "https://goldwynnbahamas.com/",
+   "docs_url": "https://goldwynnbahamas.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 2600000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Fourteen stories of beachfront residences on Cable Beach; full-floor and half-floor residences with private elevator entry",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldwynnbahamas.com/"
+    },
+    {
+     "claim": "Residence pricing starting from $2.6 million; the FAQ says units in Phase One of Goldwynn start at $500,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldwynnbahamas.com/"
+    },
+    {
+     "claim": "Construction update of October 2025 on the developer site: Level 11 window and door installation underway, Level 12 glazing scheduled next",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldwynnbahamas.com/october-2025-construction-progress/"
+    },
+    {
+     "claim": "No completion date is printed on the home page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldwynnbahamas.com/"
+    },
+    {
+     "claim": "Pin: 340 West Bay Street, Nassau geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldwynnbahamas.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "full-floor residence",
+     "half-floor residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 2600000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.0709825,
+    "lng": -77.3845715,
+    "permit_authority": null
+   },
+   "note": "The Penthouses at Goldwynn by Wynn Development in 340 West Bay Street, Cable Beach, Nassau (Bahamas). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://goldwynnbahamas.com/",
+    "https://goldwynnbahamas.com/october-2025-construction-progress/"
+   ],
+   "docs_listed": [
+    "Fourteen stories of beachfront residences on Cable Beach; full-floor and half-floor residences with private elevator entry",
+    "Residence pricing starting from $2.6 million; the FAQ says units in Phase One of Goldwynn start at $500,000",
+    "No completion date is printed on the home page",
+    "Pin: 340 West Bay Street, Nassau geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-penthouses-at-goldwynn"
+  },
+  {
+   "name": "Four Seasons Private Residences Lake Austin",
+   "developer": "Austin Capital Partners and Lincoln Property",
+   "area": "Hillside above Lake Austin, about 20 minutes from downtown Austin",
+   "country": "USA",
+   "market": "Austin",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/lake-austin/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/lake-austin/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 179,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Facts table on the page: Private Residences (# of Units) 179; Developer Austin Capital Partners and Lincoln Property; Opening Date 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/lake-austin/"
+    },
+    {
+     "claim": "Resort property on 145 acres (59 hectares) with a private waterfront; the page labels it \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/lake-austin/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Lake Austin by Austin Capital Partners and Lincoln Property in Hillside above Lake Austin, about 20 minutes from downtown Austin (USA). Added from the official developer page: off-plan; handover on record: 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/lake-austin/"
+   ],
+   "docs_listed": [
+    "Facts table on the page: Private Residences (# of Units) 179; Developer Austin Capital Partners and Lincoln Property; Opening Date 2029",
+    "Resort property on 145 acres (59 hectares) with a private waterfront; the page labels it \"In Development\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-lake-austin"
+  },
+  {
+   "name": "Paragon LIC",
+   "developer": "ZDJ Vernon LLC (sponsor); sales by SERHANT",
+   "area": "45-40 Vernon Boulevard, Long Island City, Queens",
+   "country": "USA",
+   "market": "New York",
+   "stage": "under construction",
+   "url": "https://www.paragonlic.com/",
+   "docs_url": "https://www.paragonlic.com/",
+   "permit_number": "Offering plan File No. CD25-0193",
+   "seed": {
+    "price": 765000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2026",
+    "permit_claim": true,
+    "permit_number": "Offering plan File No. CD25-0193",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 182,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Offering plan file number printed on the site: \"File No. CD25-0193\"; Sponsor: ZDJ Vernon LLC, Great Neck, NY",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.paragonlic.com/"
+    },
+    {
+     "claim": "The developer press page summarises a 23-story, 182-residence condominium priced from $765,000 with \"move-ins as early as November 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.paragonlic.com/press"
+    },
+    {
+     "claim": "The developer press page also lists a report that facade installation is complete; the tower rises out of a restored 1930s paint factory",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.paragonlic.com/press"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "ZDJ Vernon LLC",
+    "construction_start": null,
+    "handover_promised": "November 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom",
+     "2-bedroom",
+     "3-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 765000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "New York State Attorney General (condominium offering plan)"
+   },
+   "note": "Paragon LIC by ZDJ Vernon LLC in 45-40 Vernon Boulevard, Long Island City, Queens (USA). Added from the official developer page: under construction; handover on record: November 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.paragonlic.com/",
+    "https://www.paragonlic.com/press"
+   ],
+   "docs_listed": [
+    "Offering plan file number printed on the site: \"File No. CD25-0193\"; Sponsor: ZDJ Vernon LLC, Great Neck, NY"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "paragon-lic"
+  },
+  {
+   "name": "Tower 1888",
+   "developer": "Shea Homes",
+   "area": "1602 S. Coast Hwy, Oceanside, California",
+   "country": "USA",
+   "market": "San Diego",
+   "stage": "off-plan",
+   "url": "https://www.sheahomes.com/tower-1888",
+   "docs_url": "https://www.sheahomes.com/tower-1888",
+   "permit_number": null,
+   "seed": {
+    "price": 915000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Page heading \"Tower 1888 Coming To Oceanside\" and \"Now Selling\"; no quick move-in homes are available",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sheahomes.com/tower-1888"
+    },
+    {
+     "claim": "Four-story mixed-use building of flats and retail; 2 and 3-bedroom flats of 1,000 to 1,630 sq ft, priced from $915,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sheahomes.com/tower-1888"
+    },
+    {
+     "claim": "Licences printed on the page: Shea Homes Marketing Company (CalDRE #01378646, sales) and SHSC GC, INC. (CSLB #1012096, construction)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sheahomes.com/tower-1888"
+    },
+    {
+     "claim": "No completion date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sheahomes.com/tower-1888"
+    },
+    {
+     "claim": "Pin: coordinates published in the structured data (GeoCoordinates) of the developer page for 1602 S. Coast Hwy, Oceanside; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sheahomes.com/tower-1888"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom flat",
+     "3-bedroom flat"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 915000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 33.1782083,
+    "lng": -117.3641414,
+    "permit_authority": null
+   },
+   "note": "Tower 1888 by Shea Homes in 1602 S. Coast Hwy, Oceanside, California (USA). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sheahomes.com/tower-1888"
+   ],
+   "docs_listed": [
+    "Page heading \"Tower 1888 Coming To Oceanside\" and \"Now Selling\"; no quick move-in homes are available",
+    "Four-story mixed-use building of flats and retail; 2 and 3-bedroom flats of 1,000 to 1,630 sq ft, priced from $915,000",
+    "Licences printed on the page: Shea Homes Marketing Company (CalDRE #01378646, sales) and SHSC GC, INC. (CSLB #1012096, construction)",
+    "No completion date is printed on the page",
+    "Pin: coordinates published in the structured data (GeoCoordinates) of the developer page for 1602 S. Coast Hwy, Oceanside; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "tower-1888"
+  },
+  {
+   "name": "Four Seasons Private Residences Cartagena",
+   "developer": "San Francisco Investments",
+   "area": "Cartagena",
+   "country": "Colombia",
+   "market": "Cartagena",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/cartagena/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/cartagena/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 15,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Facts table on the page: Private Residences (# of Units) 15; Developer San Francisco Investments; Opening Date 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/cartagena/"
+    },
+    {
+     "claim": "The Four Seasons list of residences in development shows \"Opening 2026\" for Cartagena, while the project page says 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Cartagena by San Francisco Investments in Cartagena (Colombia). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/cartagena/",
+    "https://www.fourseasons.com/residences/private_residences/in-development/"
+   ],
+   "docs_listed": [
+    "Facts table on the page: Private Residences (# of Units) 15; Developer San Francisco Investments; Opening Date 2027"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-cartagena"
+  },
+  {
+   "name": "Phu My Hung Harmonie",
+   "developer": "Phu My Hung Development Corporation (Cong ty TNHH Phat trien Phu My Hung)",
+   "area": "My Phuoc - Tan Van and Vo Van Kiet avenue, new Binh Duong centre, Ho Chi Minh City",
+   "country": "Vietnam",
+   "market": "Ho Chi Minh City",
+   "stage": "under construction",
+   "url": "https://phumyhung.vn/harmonie/",
+   "docs_url": "https://phumyhung.vn/harmonie/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1490,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Site of 19,990 m2 with 5 towers of 32 to 34 floors, 1,490 apartments and 23 shops",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://phumyhung.vn/harmonie/"
+    },
+    {
+     "claim": "Apartments from 1-bedroom (43.79 m2) to groundhouse units (up to 168.70 m2)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://phumyhung.vn/harmonie/"
+    },
+    {
+     "claim": "Sales policy as published: 20% on signing the sale contract, 0% interest support and principal grace until handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://phumyhung.vn/harmonie/"
+    },
+    {
+     "claim": "The site news list includes a construction site report (\"Cong truong Phu My Hung Harmonie\"); no handover date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://phumyhung.vn/harmonie/"
+    },
+    {
+     "claim": "Pin: coordinates of the \"Phu My Hung Harmonie\" marker in the map data of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://phumyhung.vn/harmonie/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "garden apartment",
+     "groundhouse"
+    ],
+    "size_min_m2": 43.79,
+    "size_max_m2": 168.7,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 11.038412,
+    "lng": 106.653669,
+    "permit_authority": null
+   },
+   "note": "Phu My Hung Harmonie by Phu My Hung Development Corporation in My Phuoc - Tan Van and Vo Van Kiet avenue, new Binh Duong centre, Ho Chi Minh City (Vietnam). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://phumyhung.vn/harmonie/"
+   ],
+   "docs_listed": [
+    "Site of 19,990 m2 with 5 towers of 32 to 34 floors, 1,490 apartments and 23 shops",
+    "Apartments from 1-bedroom (43.79 m2) to groundhouse units (up to 168.70 m2)",
+    "Sales policy as published: 20% on signing the sale contract, 0% interest support and principal grace until handover",
+    "The site news list includes a construction site report (\"Cong truong Phu My Hung Harmonie\"); no handover date is printed",
+    "Pin: coordinates of the \"Phu My Hung Harmonie\" marker in the map data of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "phu-my-hung-harmonie"
+  },
+  {
+   "name": "The Fullton",
+   "developer": "CapitaLand Development (with Far East Organization)",
+   "area": "Vinhomes Ocean Park 3, Hung Yen Province, east of Hanoi",
+   "country": "Vietnam",
+   "market": "Vietnam",
+   "stage": "under construction",
+   "url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html",
+   "docs_url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 692,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "CapitaLand Development broke ground on 6 June 2025; gross development value about US$800 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html"
+    },
+    {
+     "claim": "25 hectares in two phases: the first phase, The Fullton Edition, with 342 units by 2026, and about 350 more residences in the second phase scheduled for completion in 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html"
+    },
+    {
+     "claim": "Boutique townhouses, enclave villas, twin villas and detached villas with a 1.9-hectare central park",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "townhouse",
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Fullton by CapitaLand Development in Vinhomes Ocean Park 3, Hung Yen Province, east of Hanoi (Vietnam). Added from the official developer page: under construction; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2025/capitaland-development-breaks-ground-on-the-fullton---its-first-.html"
+   ],
+   "docs_listed": [
+    "CapitaLand Development broke ground on 6 June 2025; gross development value about US$800 million",
+    "25 hectares in two phases: the first phase, The Fullton Edition, with 342 units by 2026, and about 350 more residences in the second phase scheduled for completion in 2027",
+    "Boutique townhouses, enclave villas, twin villas and detached villas with a 1.9-hectare central park"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-fullton"
+  },
+  {
+   "name": "Maison Privee",
+   "developer": "CapitaLand Development with Mitsubishi Estate and Nomura Real Estate Development",
+   "area": "Ciputra Township, Tay Ho, Hanoi",
+   "country": "Vietnam",
+   "market": "Vietnam",
+   "stage": "off-plan",
+   "url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html",
+   "docs_url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 490,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Unveiled on 26 May 2026; \"Construction is slated to commence in 3Q 2026 and scheduled for completion within 1Q 2029\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html"
+    },
+    {
+     "claim": "490 units across two 35-storey towers on about 0.8 hectares; from 2-bedroom-plus suites of 98 m2 to duplexes near 400 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html"
+    },
+    {
+     "claim": "Developed in partnership with Mitsubishi Estate Co., Ltd. and Nomura Real Estate Development Co., Ltd.; projected gross development value about US$450 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2029-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom-plus suite",
+     "duplex"
+    ],
+    "size_min_m2": 98,
+    "size_max_m2": 400,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Maison Privee by CapitaLand Development with Mitsubishi Estate and Nomura Real Estate Development in Ciputra Township, Tay Ho, Hanoi (Vietnam). Added from the official developer page: off-plan; handover on record: 2029-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/vietnam/2026/capitaland-development-unveils-maison-privee--its-latest-luxury-.html"
+   ],
+   "docs_listed": [
+    "Unveiled on 26 May 2026; \"Construction is slated to commence in 3Q 2026 and scheduled for completion within 1Q 2029\"",
+    "490 units across two 35-storey towers on about 0.8 hectares; from 2-bedroom-plus suites of 98 m2 to duplexes near 400 m2",
+    "Developed in partnership with Mitsubishi Estate Co., Ltd. and Nomura Real Estate Development Co., Ltd.; projected gross development value about US$450 million"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "maison-privee"
+  },
+  {
+   "name": "Orchard Hill (Sycamore)",
+   "developer": "CapitaLand Development",
+   "area": "Sycamore township, Binh Duong (now Ho Chi Minh City)",
+   "country": "Vietnam",
+   "market": "Ho Chi Minh City",
+   "stage": "under construction",
+   "url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/april/cld-draws-bookings-orchard-heights-sycamore-third-phase.html",
+   "docs_url": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/april/cld-draws-bookings-orchard-heights-sycamore-third-phase.html",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 774,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "CapitaLand Development says it is on track to hand over 774 units of Orchard Hill in 2026 (release of 28 April 2025)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/april/cld-draws-bookings-orchard-heights-sycamore-third-phase.html"
+    },
+    {
+     "claim": "Orchard Hill is the second phase of Sycamore, where over 3,500 residential units are planned across several phases; 99% of Orchard Hill units were booked",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/april/cld-draws-bookings-orchard-heights-sycamore-third-phase.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Orchard Hill (Sycamore) by CapitaLand Development in Sycamore township, Binh Duong (now Ho Chi Minh City) (Vietnam). Added from the official developer page: under construction; handover on record: 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2025/april/cld-draws-bookings-orchard-heights-sycamore-third-phase.html"
+   ],
+   "docs_listed": [
+    "CapitaLand Development says it is on track to hand over 774 units of Orchard Hill in 2026 (release of 28 April 2025)",
+    "Orchard Hill is the second phase of Sycamore, where over 3,500 residential units are planned across several phases; 99% of Orchard Hill units were booked"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "orchard-hill-sycamore"
+  },
+  {
+   "name": "URBN X Tower UX",
+   "developer": "LippoLand (PT Lippo Karawaci Tbk)",
+   "area": "CBD Lippo Village Sentral, Lippo Village, Tangerang (Greater Jakarta)",
+   "country": "Indonesia",
+   "market": "Jakarta",
+   "stage": "under construction",
+   "url": "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x",
+   "docs_url": "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x",
+   "permit_number": null,
+   "seed": {
+    "price": 399000000,
+    "currency": "IDR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026-07",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Topping off of Tower UX held on 19 December 2025; \"Unit handover remains on track and is scheduled to begin in July 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x"
+    },
+    {
+     "claim": "Next phases named: interior completion, mechanical and electrical installation and area facilities",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x"
+    },
+    {
+     "claim": "Units from 399 million rupiah; Duplex Mono type of 26.4 m2 and X tra Elevate 2-bedroom type of 40.79 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "PT Lippo Karawaci Tbk",
+    "construction_start": null,
+    "handover_promised": "2026-07",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "duplex studio",
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": 26.4,
+    "size_max_m2": 40.79,
+    "price_min": 399000000,
+    "price_max": null,
+    "currency": "IDR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "URBN X Tower UX by LippoLand in CBD Lippo Village Sentral, Lippo Village, Tangerang (Greater Jakarta) (Indonesia). Added from the official developer page: under construction; handover on record: 2026-07. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.lippoland.id/news/lippoland-officially-holds-topping-off-ceremony-for-urbn-x"
+   ],
+   "docs_listed": [
+    "Topping off of Tower UX held on 19 December 2025; \"Unit handover remains on track and is scheduled to begin in July 2026\"",
+    "Next phases named: interior completion, mechanical and electrical installation and area facilities",
+    "Units from 399 million rupiah; Duplex Mono type of 26.4 m2 and X tra Elevate 2-bedroom type of 40.79 m2"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "urbn-x-tower-ux"
+  },
+  {
+   "name": "Nawi Island Homes",
+   "developer": "Not named on the project site",
+   "area": "Nawi Island, Savusavu Bay, Vanua Levu",
+   "country": "Fiji",
+   "market": "Fiji",
+   "stage": "under construction",
+   "url": "https://nawiisland.com/real_estate/",
+   "docs_url": "https://nawiisland.com/real_estate/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 49,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"When completed, the project will include a full service marina, a full service 12 acre boatyard, approximately 50 private residences, a luxurious waterfront resort and spa\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nawiisland.com/real_estate/"
+    },
+    {
+     "claim": "The marina began accepting tenants in May 2023 and the boatyard began operations in July 2024",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nawiisland.com/real_estate/"
+    },
+    {
+     "claim": "36 freehold lots of about 1,200 m2 up to a private island of over 21,000 m2, plus 13 furnished bure-style homes offered for sale",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nawiisland.com/real_estate/"
+    },
+    {
+     "claim": "No completion date or price is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://nawiisland.com/real_estate/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "freehold lot",
+     "bure-style home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Nawi Island Homes in Nawi Island, Savusavu Bay, Vanua Levu (Fiji). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://nawiisland.com/real_estate/"
+   ],
+   "docs_listed": [
+    "\"When completed, the project will include a full service marina, a full service 12 acre boatyard, approximately 50 private residences, a luxurious waterfront resort and spa\"",
+    "The marina began accepting tenants in May 2023 and the boatyard began operations in July 2024",
+    "36 freehold lots of about 1,200 m2 up to a private island of over 21,000 m2, plus 13 furnished bure-style homes offered for sale",
+    "No completion date or price is printed on the page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "nawi-island-homes"
+  },
+  {
+   "name": "The Seasons Colombo 08",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Colombo 08",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en",
+   "docs_url": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en",
+   "permit_number": null,
+   "seed": {
+    "price": 132000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 44,
+    "payment_plan": "Reservation LKR 5,000,000; 15% quarterly payments till May 2027; 30% at handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en"
+    },
+    {
+     "claim": "11 floors with 44 apartments; 3-bedroom residences of 1,764 to 2,159 sq ft",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en"
+    },
+    {
+     "claim": "Price shown on the page: LKR 132,000,000; payment plan: reservation LKR 5,000,000, 15% quarterly payments till May 2027, 30% at handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en"
+    },
+    {
+     "claim": "Pin: coordinates of the project marker in the map embedded on the developer page (\"The Seasons Colombo 8 By Prime Residencies\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 132000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "Reservation LKR 5,000,000; 15% quarterly payments till May 2027; 30% at handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 6.9152052,
+    "lng": 79.8825149,
+    "permit_authority": null
+   },
+   "note": "The Seasons Colombo 08 by Prime Residencies in Colombo 08 (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/THE-SEASONS-COLOMBO-08/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"",
+    "11 floors with 44 apartments; 3-bedroom residences of 1,764 to 2,159 sq ft",
+    "Price shown on the page: LKR 132,000,000; payment plan: reservation LKR 5,000,000, 15% quarterly payments till May 2027, 30% at handover",
+    "Pin: coordinates of the project marker in the map embedded on the developer page (\"The Seasons Colombo 8 By Prime Residencies\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-seasons-colombo-08"
+  },
+  {
+   "name": "J'Adore Negombo",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Beachfront, Negombo",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en",
+   "docs_url": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en",
+   "permit_number": null,
+   "seed": {
+    "price": 52000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 333,
+    "payment_plan": "Two 15% bullet payments (months 6 and 12); 1% monthly till July 2028; 19% at handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"; the page says 100% of piling work is complete and superstructure construction was scheduled to commence early 2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+    },
+    {
+     "claim": "25-story White and Emerald Towers with 333 apartments on 229.2 perches of beachfront land; 1 and 2-bedroom units and nine 3-bedroom White Presidential Suites",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+    },
+    {
+     "claim": "Price shown on the page: LKR 52,000,000; payment plan: two 15% bullet payments in months 6 and 12, 1% monthly till July 2028, 19% at handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+    },
+    {
+     "claim": "The page states an \"anticipated rental yield over 11%\" and an \"anticipated 80% ROI\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+    },
+    {
+     "claim": "Pin: coordinates of the project marker in the map embedded on the developer page (\"J'Adore Negombo by Prime Residencies\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom suite"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 52000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "Two 15% bullet payments (months 6 and 12); 1% monthly till July 2028; 19% at handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 7.2563931,
+    "lng": 79.843022,
+    "permit_authority": null
+   },
+   "note": "J'Adore Negombo by Prime Residencies in Beachfront, Negombo (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/J-ADORE-NEGOMBO/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"; the page says 100% of piling work is complete and superstructure construction was scheduled to commence early 2025",
+    "25-story White and Emerald Towers with 333 apartments on 229.2 perches of beachfront land; 1 and 2-bedroom units and nine 3-bedroom White Presidential Suites",
+    "Price shown on the page: LKR 52,000,000; payment plan: two 15% bullet payments in months 6 and 12, 1% monthly till July 2028, 19% at handover",
+    "The page states an \"anticipated rental yield over 11%\" and an \"anticipated 80% ROI\"",
+    "Pin: coordinates of the project marker in the map embedded on the developer page (\"J'Adore Negombo by Prime Residencies\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "j-adore-negombo"
+  },
+  {
+   "name": "Skye Blossom Kottawa",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Rathmaldeniya Road, Pannipitiya, Kottawa",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en",
+   "docs_url": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en",
+   "permit_number": null,
+   "seed": {
+    "price": 50000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "Down payment LKR 9,000,000; LKR 250,000 monthly; balance on handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en"
+    },
+    {
+     "claim": "Twin 16-story towers described as the only high-rise of its kind in Kottawa",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en"
+    },
+    {
+     "claim": "Price shown on the page: LKR 50,000,000; down payment LKR 9,000,000, monthly instalment LKR 250,000, balance payable upon handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en"
+    },
+    {
+     "claim": "Pin: centre of the map embedded on the developer page, labelled \"Rathmaldeniya Rd, Pannipitiya\" (street level); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 50000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "Down payment LKR 9,000,000; LKR 250,000 monthly; balance on handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 6.8271455,
+    "lng": 79.9526619,
+    "permit_authority": null
+   },
+   "note": "Skye Blossom Kottawa by Prime Residencies in Rathmaldeniya Road, Pannipitiya, Kottawa (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/SKYE-BLOSSOM-KOTTAWA/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"",
+    "Twin 16-story towers described as the only high-rise of its kind in Kottawa",
+    "Price shown on the page: LKR 50,000,000; down payment LKR 9,000,000, monthly instalment LKR 250,000, balance payable upon handover",
+    "Pin: centre of the map embedded on the developer page, labelled \"Rathmaldeniya Rd, Pannipitiya\" (street level); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "skye-blossom-kottawa"
+  },
+  {
+   "name": "Mon Vie Colombo 05 (Thalakotuwa Gardens)",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Thalakotuwa Gardens, Colombo 05",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "off-plan",
+   "url": "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en",
+   "docs_url": "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en",
+   "permit_number": null,
+   "seed": {
+    "price": 86000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "Reservation LKR 3,000,000; 25% down; 1% monthly plus bullet payments till April 2030; 19% at handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"; \"Early Bird Reservations Now Open!\" with early bird deals \"from 86M\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en"
+    },
+    {
+     "claim": "Payment plan as published: reservation LKR 3,000,000, 25% down payment, 1% monthly with 5%, 10% and 5% bullet payments every 12 months till April 2030, 19% balance at handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en"
+    },
+    {
+     "claim": "2 and 3-bedroom apartments; no handover date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 86000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "Reservation LKR 3,000,000; 25% down; 1% monthly plus bullet payments till April 2030; 19% at handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Mon Vie Colombo 05 (Thalakotuwa Gardens) by Prime Residencies in Thalakotuwa Gardens, Colombo 05 (Sri Lanka). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/MON-VIE-COLOMBO-05/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"; \"Early Bird Reservations Now Open!\" with early bird deals \"from 86M\"",
+    "Payment plan as published: reservation LKR 3,000,000, 25% down payment, 1% monthly with 5%, 10% and 5% bullet payments every 12 months till April 2030, 19% balance at handover",
+    "2 and 3-bedroom apartments; no handover date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "mon-vie-colombo-05-thalakotuwa-gardens"
+  },
+  {
+   "name": "The Reflection Thalawathugoda",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Samagi Mawatha, Thalawathugoda",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en",
+   "docs_url": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en",
+   "permit_number": null,
+   "seed": {
+    "price": 52000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "30% within 30 days; 2% monthly for 20 months; 22% at handover (month 21)",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en"
+    },
+    {
+     "claim": "Price shown on the page: LKR 52,000,000; payment plan: 30% down payment within 30 days, 2% monthly for 20 months, balance (22%) at handover in the 21st month",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en"
+    },
+    {
+     "claim": "2 and 3-bedroom apartments; the handover is described by month of the payment plan, not by a date",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en"
+    },
+    {
+     "claim": "Pin: coordinates of the project marker in the map embedded on the developer page (\"Prime The Residence - Samagi Mawatha\"); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 52000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "30% within 30 days; 2% monthly for 20 months; 22% at handover (month 21)",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 6.877738,
+    "lng": 79.950885,
+    "permit_authority": null
+   },
+   "note": "The Reflection Thalawathugoda by Prime Residencies in Samagi Mawatha, Thalawathugoda (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/THE-REFLECTION-SAMAGI-MAWATHA-THALAWATHUGODA/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"",
+    "Price shown on the page: LKR 52,000,000; payment plan: 30% down payment within 30 days, 2% monthly for 20 months, balance (22%) at handover in the 21st month",
+    "2 and 3-bedroom apartments; the handover is described by month of the payment plan, not by a date",
+    "Pin: coordinates of the project marker in the map embedded on the developer page (\"Prime The Residence - Samagi Mawatha\"); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-reflection-thalawathugoda"
+  },
+  {
+   "name": "Prime Kadawatha",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Gonahena Road, Kadawatha",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en",
+   "docs_url": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en",
+   "permit_number": null,
+   "seed": {
+    "price": 42000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": "25% down; 1% monthly for 36 months; 15% on handover",
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"; \"100 units sold in 7 weeks!\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en"
+    },
+    {
+     "claim": "Located on Gonahena Road, Kadawatha, about 3 minutes from the Kadawatha expressway interchange",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en"
+    },
+    {
+     "claim": "Price shown on the page: LKR 42,000,000; payment plan: 25% down payment, 1% monthly for 36 months, 15% balance upon handover",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en"
+    },
+    {
+     "claim": "Pin: coordinates of the project marker in the map embedded on the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 42000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": "25% down; 1% monthly for 36 months; 15% on handover",
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 7.012747,
+    "lng": 79.971574,
+    "permit_authority": null
+   },
+   "note": "Prime Kadawatha by Prime Residencies in Gonahena Road, Kadawatha (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/PRIME-KADAWATHA/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"; \"100 units sold in 7 weeks!\"",
+    "Located on Gonahena Road, Kadawatha, about 3 minutes from the Kadawatha expressway interchange",
+    "Price shown on the page: LKR 42,000,000; payment plan: 25% down payment, 1% monthly for 36 months, 15% balance upon handover",
+    "Pin: coordinates of the project marker in the map embedded on the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "prime-kadawatha"
   }
  ]
 }
