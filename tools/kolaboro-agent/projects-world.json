@@ -191948,6 +191948,3744 @@
    "added": "2026-11-12",
    "found_by": "discover-manual",
    "slug": "the-bridges-east-bridge"
+  },
+  {
+   "name": "Station M",
+   "developer": "Ockham Residential",
+   "area": "Meadowbank, Auckland",
+   "country": "New Zealand",
+   "market": "New Zealand",
+   "stage": "under construction",
+   "url": "https://www.ockham.co.nz/station-m/",
+   "docs_url": "https://www.ockham.co.nz/station-m/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q1",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 14,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Construction is scheduled to be completed in Quarter 1, 2027.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ockham.co.nz/station-m/"
+    },
+    {
+     "claim": "14 residences in a five-storey building at 21 Manapau Street, Meadowbank",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ockham.co.nz/station-m/"
+    },
+    {
+     "claim": "The developer home page lists: 14 apartments, construction commenced Q3 2025, completion expected Q1 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ockham.co.nz/"
+    },
+    {
+     "claim": "Pin: 21 Manapau Street, Meadowbank geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ockham.co.nz/station-m/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027-Q1",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -36.866693,
+    "lng": 174.821103,
+    "permit_authority": null
+   },
+   "note": "Station M by Ockham Residential in Meadowbank, Auckland (New Zealand). Added from the official developer page: under construction; handover on record: 2027-Q1. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.ockham.co.nz/",
+    "https://www.ockham.co.nz/station-m/"
+   ],
+   "docs_listed": [
+    "\"Construction is scheduled to be completed in Quarter 1, 2027.\"",
+    "14 residences in a five-storey building at 21 Manapau Street, Meadowbank",
+    "Pin: 21 Manapau Street, Meadowbank geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "station-m-new-zealand"
+  },
+  {
+   "name": "6080 Yonge",
+   "developer": "Tridel with Arkfield (Residences Of 6080 Yonge Inc.)",
+   "area": "Yonge Street north of Finch, North York, Toronto",
+   "country": "Canada",
+   "market": "Toronto",
+   "stage": "off-plan",
+   "url": "https://www.tridel.com/6080yonge",
+   "docs_url": "https://www.tridel.com/6080yonge",
+   "permit_number": "HCRA licence B62460",
+   "seed": {
+    "price": 428000,
+    "currency": "CAD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Early 2030",
+    "permit_claim": true,
+    "permit_number": "HCRA licence B62460",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Now Selling\" with \"occupancy Early 2030\" and prices from CAD 428,000 on the developer community list",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/all-communities"
+    },
+    {
+     "claim": "Mid-rise condominium community; a new release of 1 and 2-bedroom suites is on sale",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/6080yonge"
+    },
+    {
+     "claim": "Residences Of 6080 Yonge Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B62460",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/6080yonge"
+    },
+    {
+     "claim": "Pin: 6080 Yonge Street, Toronto (the address in the project name) geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/6080yonge"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Residences Of 6080 Yonge Inc.",
+    "construction_start": null,
+    "handover_promised": "Early 2030",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom suite",
+     "2-bedroom suite"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 428000,
+    "price_max": null,
+    "currency": "CAD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.79091,
+    "lng": -79.41866,
+    "permit_authority": "Home Construction Regulatory Authority (Ontario)"
+   },
+   "note": "6080 Yonge by Tridel with Arkfield in Yonge Street north of Finch, North York, Toronto (Canada). Added from the official developer page: off-plan; handover on record: Early 2030. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.tridel.com/6080yonge",
+    "https://www.tridel.com/all-communities"
+   ],
+   "docs_listed": [
+    "Mid-rise condominium community; a new release of 1 and 2-bedroom suites is on sale",
+    "Residences Of 6080 Yonge Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B62460",
+    "Pin: 6080 Yonge Street, Toronto (the address in the project name) geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "6080-yonge"
+  },
+  {
+   "name": "Harbourwalk at Lakeview Village",
+   "developer": "Tridel (Residences At Harbourwalk Inc.)",
+   "area": "Lakeshore and Hydro Road, Lakeview Village, Mississauga",
+   "country": "Canada",
+   "market": "Toronto",
+   "stage": "under construction",
+   "url": "https://www.tridel.com/lakeviewvillagecondos",
+   "docs_url": "https://www.tridel.com/lakeviewvillagecondos",
+   "permit_number": "HCRA licence B61447",
+   "seed": {
+    "price": 708850,
+    "currency": "CAD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Summer 2028",
+    "permit_claim": true,
+    "permit_number": "HCRA licence B61447",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Under Construction\" with \"occupancy Summer 2028\" and prices from CAD 708,850 on the developer community list",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/all-communities"
+    },
+    {
+     "claim": "1, 2 and 3-bedroom suites from 599 to over 2,000 square feet; the page says ground-breaking is complete",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/lakeviewvillagecondos"
+    },
+    {
+     "claim": "Residences At Harbourwalk Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B61447",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/lakeviewvillagecondos"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Residences At Harbourwalk Inc.",
+    "construction_start": null,
+    "handover_promised": "Summer 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom suite",
+     "2-bedroom suite",
+     "3-bedroom suite"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 708850,
+    "price_max": null,
+    "currency": "CAD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Home Construction Regulatory Authority (Ontario)"
+   },
+   "note": "Harbourwalk at Lakeview Village by Tridel in Lakeshore and Hydro Road, Lakeview Village, Mississauga (Canada). Added from the official developer page: under construction; handover on record: Summer 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.tridel.com/all-communities",
+    "https://www.tridel.com/lakeviewvillagecondos"
+   ],
+   "docs_listed": [
+    "1, 2 and 3-bedroom suites from 599 to over 2,000 square feet; the page says ground-breaking is complete",
+    "Residences At Harbourwalk Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B61447"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "harbourwalk-at-lakeview-village"
+  },
+  {
+   "name": "Queen Church",
+   "developer": "Tridel and BAZIS (Residences Of Queen Church Inc.)",
+   "area": "60 Queen Street East, downtown Toronto",
+   "country": "Canada",
+   "market": "Toronto",
+   "stage": "under construction",
+   "url": "https://www.tridel.com/queenchurchcondos",
+   "docs_url": "https://www.tridel.com/queenchurchcondos",
+   "permit_number": "HCRA licence B61250",
+   "seed": {
+    "price": 640000,
+    "currency": "CAD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Summer 2028",
+    "permit_claim": true,
+    "permit_number": "HCRA licence B61250",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Under Construction\" with \"occupancy Summer 2028\" and prices from CAD 640,000 on the developer community list",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/all-communities"
+    },
+    {
+     "claim": "\"Queen Church at 60 Queen Street East Under Construction\"; 2-bedroom suites are offered on floors 37 to 57",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/queenchurchcondos"
+    },
+    {
+     "claim": "Residences Of Queen Church Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B61250",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/queenchurchcondos"
+    },
+    {
+     "claim": "Pin: 60 Queen Street East, Toronto geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tridel.com/queenchurchcondos"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Residences Of Queen Church Inc.",
+    "construction_start": null,
+    "handover_promised": "Summer 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom suite"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 640000,
+    "price_max": null,
+    "currency": "CAD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 43.653311,
+    "lng": -79.375657,
+    "permit_authority": "Home Construction Regulatory Authority (Ontario)"
+   },
+   "note": "Queen Church by Tridel and BAZIS in 60 Queen Street East, downtown Toronto (Canada). Added from the official developer page: under construction; handover on record: Summer 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.tridel.com/all-communities",
+    "https://www.tridel.com/queenchurchcondos"
+   ],
+   "docs_listed": [
+    "\"Queen Church at 60 Queen Street East Under Construction\"; 2-bedroom suites are offered on floors 37 to 57",
+    "Residences Of Queen Church Inc. is registered with the Home Construction Regulatory Authority (HCRA), Licence Number B61250",
+    "Pin: 60 Queen Street East, Toronto geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "queen-church"
+  },
+  {
+   "name": "The MINH",
+   "developer": "Laser Tower Sdn. Bhd. (647615-T) (UEM Sunrise)",
+   "area": "Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "under construction",
+   "url": "https://www.uemsunrise.com/permit-and-licenses",
+   "docs_url": "https://www.uemsunrise.com/permit-and-licenses",
+   "permit_number": "Developer's License 30141/08-2027/0140(A); Advertising and Sales Permit 30141-1/10-2025/0231(A)-(S)",
+   "seed": {
+    "price": 1399800,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2027",
+    "permit_claim": true,
+    "permit_number": "Developer's License 30141/08-2027/0140(A); Advertising and Sales Permit 30141-1/10-2025/0231(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 496,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected completion date printed as \"September 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Condominium, freehold; Block A 245 units, Tower B 251 units; prices from RM1,399,800 to RM3,178,370",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer's License No. 30141/08-2027/0140(A); Advertising and Sales Permit No. 30141-1/10-2025/0231(A)-(S), validity 13 October 2022 to 12 October 2025 as listed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Building plan BP T1 OSC 2022 1608 (21), approving authority Dewan Bandaraya Kuala Lumpur",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Laser Tower Sdn. Bhd. (647615-T)",
+    "construction_start": null,
+    "handover_promised": "September 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1399800,
+    "price_max": 3178370,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur"
+   },
+   "note": "The MINH by Laser Tower Sdn. Bhd. in Kuala Lumpur (Malaysia). Added from the official developer page: under construction; handover on record: September 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uemsunrise.com/permit-and-licenses"
+   ],
+   "docs_listed": [
+    "Expected completion date printed as \"September 2027\"",
+    "Condominium, freehold; Block A 245 units, Tower B 251 units; prices from RM1,399,800 to RM3,178,370",
+    "Developer's License No. 30141/08-2027/0140(A); Advertising and Sales Permit No. 30141-1/10-2025/0231(A)-(S), validity 13 October 2022 to 12 October 2025 as listed",
+    "Building plan BP T1 OSC 2022 1608 (21), approving authority Dewan Bandaraya Kuala Lumpur"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-minh-kuala-lumpur"
+  },
+  {
+   "name": "Aspira Hills (Phases 3B and 4)",
+   "developer": "Nusajaya Rise Sdn Bhd (UEM Sunrise)",
+   "area": "Iskandar Puteri, Johor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.uemsunrise.com/permit-and-licenses",
+   "docs_url": "https://www.uemsunrise.com/permit-and-licenses",
+   "permit_number": "Developer License 14228/02-2029/1559(A); Advertising and Sales Permits 14228-15/10-2027/0895(N)-(L) and 14228-16/10-2027/0896(N)-(L)",
+   "seed": {
+    "price": 1087500,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2027",
+    "permit_claim": true,
+    "permit_number": "Developer License 14228/02-2029/1559(A); Advertising and Sales Permits 14228-15/10-2027/0895(N)-(L) and 14228-16/10-2027/0896(N)-(L)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 124,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected completion date printed as \"August 2027\" for Phase 3B and Phase 4",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Double storey terrace houses, freehold; Phase 3B lists 37, 14 and 26 units and Phase 4 lists 7 and 40 units; prices from RM1,087,500 to RM1,495,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Developer License No. 14228/02-2029/1559(A); Advertising and Sales Permits No. 14228-15/10-2027/0895(N)-(L) and 14228-16/10-2027/0896(N)-(L), validity 28/10/2025 to 27/10/2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    },
+    {
+     "claim": "Building plan MBIP(JB)RP/6/11/2025(16), approving authority Majlis Bandaraya Iskandar Puteri",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.uemsunrise.com/permit-and-licenses"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Nusajaya Rise Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "August 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "double storey terrace house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1087500,
+    "price_max": 1495000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Bandaraya Iskandar Puteri"
+   },
+   "note": "Aspira Hills (Phases 3B and 4) by Nusajaya Rise Sdn Bhd in Iskandar Puteri, Johor (Malaysia). Added from the official developer page: off-plan; handover on record: August 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.uemsunrise.com/permit-and-licenses"
+   ],
+   "docs_listed": [
+    "Expected completion date printed as \"August 2027\" for Phase 3B and Phase 4",
+    "Double storey terrace houses, freehold; Phase 3B lists 37, 14 and 26 units and Phase 4 lists 7 and 40 units; prices from RM1,087,500 to RM1,495,000",
+    "Developer License No. 14228/02-2029/1559(A); Advertising and Sales Permits No. 14228-15/10-2027/0895(N)-(L) and 14228-16/10-2027/0896(N)-(L), validity 28/10/2025 to 27/10/2027",
+    "Building plan MBIP(JB)RP/6/11/2025(16), approving authority Majlis Bandaraya Iskandar Puteri"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "aspira-hills-phases-3b-and-4"
+  },
+  {
+   "name": "Eco Radiance (Artisan Homes, Phase 5)",
+   "developer": "Eco Radiance Sdn. Bhd. (1567062-H) (EcoWorld)",
+   "area": "Eco Radiance, Semenyih corridor, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://ecoworld.my/ecoradiance/",
+   "docs_url": "https://ecoworld.my/ecoradiance/",
+   "permit_number": "Developer License 31489/09-2031/0236(N)",
+   "seed": {
+    "price": 715000,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "November 2029",
+    "permit_claim": true,
+    "permit_number": "Developer License 31489/09-2031/0236(N)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 150,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected Completion Date: Nov 2029\" for Artisan Homes (Phase 5), 150 double storey terraces priced RM 715,000 to RM 1,002,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoradiance/"
+    },
+    {
+     "claim": "Developer License No. 31489/09-2031/0236(N), validity 21/09/2026 to 20/09/2031; freehold; land encumbrance Maybank Berhad",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoradiance/"
+    },
+    {
+     "claim": "Building plan reference BIL.(108) dlm.MPKj.JKB3.600-3/3/119(11), approving authority Majlis Perbandaran Kajang (MPKJ)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoradiance/"
+    },
+    {
+     "claim": "Eco Radiance is described as an 870-acre freehold township; Atrium Homes (Phase 2) is listed with the same completion date",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoradiance/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Eco Radiance Sdn. Bhd. (1567062-H)",
+    "construction_start": null,
+    "handover_promised": "November 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "double storey terrace house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 715000,
+    "price_max": 1002000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Perbandaran Kajang (MPKJ)"
+   },
+   "note": "Eco Radiance (Artisan Homes, Phase 5) by Eco Radiance Sdn. Bhd. in Eco Radiance, Semenyih corridor, Selangor (Malaysia). Added from the official developer page: off-plan; handover on record: November 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ecoworld.my/ecoradiance/"
+   ],
+   "docs_listed": [
+    "\"Expected Completion Date: Nov 2029\" for Artisan Homes (Phase 5), 150 double storey terraces priced RM 715,000 to RM 1,002,000",
+    "Developer License No. 31489/09-2031/0236(N), validity 21/09/2026 to 20/09/2031; freehold; land encumbrance Maybank Berhad",
+    "Building plan reference BIL.(108) dlm.MPKj.JKB3.600-3/3/119(11), approving authority Majlis Perbandaran Kajang (MPKJ)",
+    "Eco Radiance is described as an 870-acre freehold township; Atrium Homes (Phase 2) is listed with the same completion date"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "eco-radiance-artisan-homes-phase-5"
+  },
+  {
+   "name": "Birchpark Garden Homes (Eco Forest)",
+   "developer": "Eco Majestic Development Sdn Bhd (1079086-W) (EcoWorld)",
+   "area": "Eco Forest, Semenyih, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "under construction",
+   "url": "https://ecoworld.my/ecoforest",
+   "docs_url": "https://ecoworld.my/ecoforest",
+   "permit_number": "Developer's License 19150/12-2028/1420(A); Advertising and Sales Permit 19150-18/03-2025/0197(A)-(S)",
+   "seed": {
+    "price": 917000,
+    "currency": "MYR",
+    "title": "freehold",
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "May 2028",
+    "permit_claim": true,
+    "permit_number": "Developer's License 19150/12-2028/1420(A); Advertising and Sales Permit 19150-18/03-2025/0197(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 128,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected Date of Completion: May 2028\"; 128 double storey terrace houses, freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoforest"
+    },
+    {
+     "claim": "Developer's License 19150/12-2028/1420(A), validity 25/12/2023 to 24/12/2028; Advertising and Sales Permit 19150-18/03-2025/0197(A)-(S)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoforest"
+    },
+    {
+     "claim": "Building plan ref BIL.(47)DLM.MPKJ2/P/41/2021, approving authority Majlis Perbandaran Kajang; land encumbrance Public Bank Berhad",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoforest"
+    },
+    {
+     "claim": "Selling price RM917,000 (min) to RM1,387,000 (max) across types 2A, 2B and 2C",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ecoworld.my/ecoforest"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Eco Majestic Development Sdn Bhd (1079086-W)",
+    "construction_start": null,
+    "handover_promised": "May 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "double storey terrace house"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 917000,
+    "price_max": 1387000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Perbandaran Kajang"
+   },
+   "note": "Birchpark Garden Homes (Eco Forest) by Eco Majestic Development Sdn Bhd in Eco Forest, Semenyih, Selangor (Malaysia). Added from the official developer page: under construction; handover on record: May 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ecoworld.my/ecoforest"
+   ],
+   "docs_listed": [
+    "\"Expected Date of Completion: May 2028\"; 128 double storey terrace houses, freehold",
+    "Developer's License 19150/12-2028/1420(A), validity 25/12/2023 to 24/12/2028; Advertising and Sales Permit 19150-18/03-2025/0197(A)-(S)",
+    "Building plan ref BIL.(47)DLM.MPKJ2/P/41/2021, approving authority Majlis Perbandaran Kajang; land encumbrance Public Bank Berhad",
+    "Selling price RM917,000 (min) to RM1,387,000 (max) across types 2A, 2B and 2C"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "birchpark-garden-homes-eco-forest"
+  },
+  {
+   "name": "PTY Residence Sai 1",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Pattaya Sai 1",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/681",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/681",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "May 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 73,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: May 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/681"
+    },
+    {
+     "claim": "Overall construction work 73% completed, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "The page states that the environmental impact assessment has been approved and a construction permit has been issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "May 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "PTY Residence Sai 1 by Sansiri in Pattaya Sai 1 (Thailand). Added from the official developer page: under construction; handover on record: May 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://www.sansiri.com/projectprogress/en/681"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: May 2027\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "pty-residence-sai-1"
+  },
+  {
+   "name": "valles HAUS",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Thailand (location not stated on the progress page)",
+   "country": "Thailand",
+   "market": "Bangkok",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/711",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/711",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 88,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: December 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/711"
+    },
+    {
+     "claim": "Overall construction work 88% completed, updated 10 November 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "The page states that the environmental impact assessment has been approved and a construction permit has been issued",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "valles HAUS by Sansiri in Thailand (location not stated on the progress page) (Thailand). Added from the official developer page: under construction; handover on record: December 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://www.sansiri.com/projectprogress/en/711"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: December 2026\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "valles-haus"
+  },
+  {
+   "name": "The Perigon Miami Beach",
+   "developer": "Mast Capital and Starwood Capital Group",
+   "area": "Miami Beach, Florida",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "under construction",
+   "url": "https://theperigonmiamibeach.com/",
+   "docs_url": "https://theperigonmiamibeach.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Summer 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 73,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Page title: \"OCCUPANCY SUMMER 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theperigonmiamibeach.com/"
+    },
+    {
+     "claim": "73 residences with two to four bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theperigonmiamibeach.com/"
+    },
+    {
+     "claim": "Sales gallery address: 2341 Collins Avenue",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theperigonmiamibeach.com/"
+    },
+    {
+     "claim": "Developers named on the team page: Mast Capital and Starwood Capital Group",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://theperigonmiamibeach.com/team/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "Summer 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Perigon Miami Beach by Mast Capital and Starwood Capital Group in Miami Beach, Florida (USA). Added from the official developer page: under construction; handover on record: Summer 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://theperigonmiamibeach.com/",
+    "https://theperigonmiamibeach.com/team/"
+   ],
+   "docs_listed": [
+    "Page title: \"OCCUPANCY SUMMER 2027\"",
+    "73 residences with two to four bedrooms",
+    "Sales gallery address: 2341 Collins Avenue"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-perigon-miami-beach"
+  },
+  {
+   "name": "Ella Miami Beach",
+   "developer": "6940 North Beach Property, LLC",
+   "area": "6940 Abbott Avenue, North Beach, Miami Beach, Florida",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "under construction",
+   "url": "https://ellamiamibeach.com/",
+   "docs_url": "https://ellamiamibeach.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Early 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Now under construction and anticipated delivery early 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ellamiamibeach.com/"
+    },
+    {
+     "claim": "Addresses printed on the site: 6940 Abbot Ave and a sales gallery at 6801 Collins Avenue",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ellamiamibeach.com/"
+    },
+    {
+     "claim": "The site names 6940 North Beach Property, LLC, a Florida limited liability company, as the Developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ellamiamibeach.com/"
+    },
+    {
+     "claim": "The site states that short term rental of units requires a certificate of use from the governing agency and is subject to City of Miami Beach rules",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ellamiamibeach.com/"
+    },
+    {
+     "claim": "Pin: 6940 Abbott Avenue, Miami Beach geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ellamiamibeach.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "6940 North Beach Property, LLC",
+    "construction_start": null,
+    "handover_promised": "Early 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 25.855074,
+    "lng": -80.12247,
+    "permit_authority": null
+   },
+   "note": "Ella Miami Beach by 6940 North Beach Property, LLC in 6940 Abbott Avenue, North Beach, Miami Beach, Florida (USA). Added from the official developer page: under construction; handover on record: Early 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellamiamibeach.com/"
+   ],
+   "docs_listed": [
+    "\"Now under construction and anticipated delivery early 2027\"",
+    "Addresses printed on the site: 6940 Abbot Ave and a sales gallery at 6801 Collins Avenue",
+    "The site names 6940 North Beach Property, LLC, a Florida limited liability company, as the Developer",
+    "The site states that short term rental of units requires a certificate of use from the governing agency and is subject to City of Miami Beach rules",
+    "Pin: 6940 Abbott Avenue, Miami Beach geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ella-miami-beach"
+  },
+  {
+   "name": "Olara",
+   "developer": "Savanna",
+   "area": "Flagler Drive, West Palm Beach, Florida",
+   "country": "USA",
+   "market": "Palm Beach County",
+   "stage": "under construction",
+   "url": "https://olarawestpalmbeach.com/",
+   "docs_url": "https://olarawestpalmbeach.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 2000000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Topping Off Spring 2027 | Completion 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://olarawestpalmbeach.com/"
+    },
+    {
+     "claim": "2 to 4+ bedroom waterfront residences priced from USD 2 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://olarawestpalmbeach.com/"
+    },
+    {
+     "claim": "Sales gallery: 300 Butler Street, West Palm Beach, FL 33407",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://olarawestpalmbeach.com/"
+    },
+    {
+     "claim": "Savanna is named as developer on the team page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://olarawestpalmbeach.com/team/"
+    },
+    {
+     "claim": "Pin: coordinates of the project marker on the map of the developer Location page (https://olarawestpalmbeach.com/location/); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://olarawestpalmbeach.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 2000000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 26.730764,
+    "lng": -80.051849,
+    "permit_authority": null
+   },
+   "note": "Olara by Savanna in Flagler Drive, West Palm Beach, Florida (USA). Added from the official developer page: under construction; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://olarawestpalmbeach.com/",
+    "https://olarawestpalmbeach.com/location/",
+    "https://olarawestpalmbeach.com/team/"
+   ],
+   "docs_listed": [
+    "\"Topping Off Spring 2027 | Completion 2028\"",
+    "2 to 4+ bedroom waterfront residences priced from USD 2 million",
+    "Sales gallery: 300 Butler Street, West Palm Beach, FL 33407",
+    "Pin: coordinates of the project marker on the map of the developer Location page (https://olarawestpalmbeach.com/location/); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "olara-palm-beach-county"
+  },
+  {
+   "name": "The Valeron Tower",
+   "developer": "DMCI Homes",
+   "area": "C-5 corner P.E. Antonio St., Brgy. Ugong, Pasig City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/the-valeron-tower",
+   "docs_url": "https://www.dmcihomes.com/the-valeron-tower",
+   "permit_number": null,
+   "seed": {
+    "price": 6975000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 19.6,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Property address: C-5 corner P.E. Antonio St., Brgy. Ugong, Pasig City",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-valeron-tower"
+    },
+    {
+     "claim": "Price range PHP 6,975,000 to PHP 18,014,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-valeron-tower"
+    },
+    {
+     "claim": "Site progress published monthly with photos; 19.60% for September 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-valeron-tower"
+    },
+    {
+     "claim": "No turnover date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-valeron-tower"
+    },
+    {
+     "claim": "Pin: coordinates published in the developer page map data; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-valeron-tower"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 6975000,
+    "price_max": 18014000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.582526,
+    "lng": 121.077317,
+    "permit_authority": null
+   },
+   "note": "The Valeron Tower by DMCI Homes in C-5 corner P.E. Antonio St., Brgy. Ugong, Pasig City (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/the-valeron-tower"
+   ],
+   "docs_listed": [
+    "Property address: C-5 corner P.E. Antonio St., Brgy. Ugong, Pasig City",
+    "Price range PHP 6,975,000 to PHP 18,014,000",
+    "Site progress published monthly with photos; 19.60% for September 2026",
+    "No turnover date is printed on the developer page",
+    "Pin: coordinates published in the developer page map data; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-valeron-tower"
+  },
+  {
+   "name": "Kalea Heights",
+   "developer": "DMCI Homes",
+   "area": "Good Shepherd Road, Banawa, Brgy. Guadalupe, Cebu City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/kalea-heights",
+   "docs_url": "https://www.dmcihomes.com/kalea-heights",
+   "permit_number": null,
+   "seed": {
+    "price": 5726000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 6.21,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Property address: Good Shepherd Road, Banawa Brgy. Guadalupe, Cebu City",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/kalea-heights"
+    },
+    {
+     "claim": "Price range PHP 5,726,000 to PHP 13,695,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/kalea-heights"
+    },
+    {
+     "claim": "Site progress published monthly with photos; 6.21% for October 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/kalea-heights"
+    },
+    {
+     "claim": "No turnover date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/kalea-heights"
+    },
+    {
+     "claim": "Pin: coordinates published in the developer page map data; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/kalea-heights"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5726000,
+    "price_max": 13695000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 10.313875,
+    "lng": 123.87137,
+    "permit_authority": null
+   },
+   "note": "Kalea Heights by DMCI Homes in Good Shepherd Road, Banawa, Brgy. Guadalupe, Cebu City (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/kalea-heights"
+   ],
+   "docs_listed": [
+    "Property address: Good Shepherd Road, Banawa Brgy. Guadalupe, Cebu City",
+    "Price range PHP 5,726,000 to PHP 13,695,000",
+    "Site progress published monthly with photos; 6.21% for October 2026",
+    "No turnover date is printed on the developer page",
+    "Pin: coordinates published in the developer page map data; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "kalea-heights"
+  },
+  {
+   "name": "Sage Residences",
+   "developer": "DMCI Homes",
+   "area": "Domingo M. Guevara and Sinag Streets, Mauway, Mandaluyong City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/sage-residences",
+   "docs_url": "https://www.dmcihomes.com/sage-residences",
+   "permit_number": null,
+   "seed": {
+    "price": 6513000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 48.82,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Property address: Domingo M. Guevara and Sinag Streets, Mauway, Mandaluyong City",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/sage-residences"
+    },
+    {
+     "claim": "Price range PHP 6,513,000 to PHP 16,077,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/sage-residences"
+    },
+    {
+     "claim": "Site progress published monthly with photos; 48.82% for October 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/sage-residences"
+    },
+    {
+     "claim": "No turnover date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/sage-residences"
+    },
+    {
+     "claim": "Pin: coordinates published in the developer page map data; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/sage-residences"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 6513000,
+    "price_max": 16077000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.580165,
+    "lng": 121.046465,
+    "permit_authority": null
+   },
+   "note": "Sage Residences by DMCI Homes in Domingo M. Guevara and Sinag Streets, Mauway, Mandaluyong City (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/sage-residences"
+   ],
+   "docs_listed": [
+    "Property address: Domingo M. Guevara and Sinag Streets, Mauway, Mandaluyong City",
+    "Price range PHP 6,513,000 to PHP 16,077,000",
+    "Site progress published monthly with photos; 48.82% for October 2026",
+    "No turnover date is printed on the developer page",
+    "Pin: coordinates published in the developer page map data; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sage-residences"
+  },
+  {
+   "name": "Escape Brooklin",
+   "developer": "Cyrela",
+   "area": "Rua Flórida, 675, Brooklin, São Paulo",
+   "country": "Brazil",
+   "market": "Brazil",
+   "stage": "off-plan",
+   "url": "https://www.cyrela.com.br/empreendimentos/escape-brooklin",
+   "docs_url": "https://www.cyrela.com.br/empreendimentos/escape-brooklin",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status shown as \"Lançamento\" (launch)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+    },
+    {
+     "claim": "Residential units of 52 to 99 m2 with 1 to 3 bedrooms; studio and 1-bedroom HMP units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+    },
+    {
+     "claim": "Address printed: Rua Flórida, 675, São Paulo, Brooklin, SP",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+    },
+    {
+     "claim": "Pin: Rua Flórida 675, São Paulo geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 to 3-bedroom apartment"
+    ],
+    "size_min_m2": 52,
+    "size_max_m2": 99,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -23.613253,
+    "lng": -46.686248,
+    "permit_authority": null
+   },
+   "note": "Escape Brooklin by Cyrela in Rua Flórida, 675, Brooklin, São Paulo (Brazil). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cyrela.com.br/empreendimentos/escape-brooklin"
+   ],
+   "docs_listed": [
+    "Status shown as \"Lançamento\" (launch)",
+    "Residential units of 52 to 99 m2 with 1 to 3 bedrooms; studio and 1-bedroom HMP units",
+    "Address printed: Rua Flórida, 675, São Paulo, Brooklin, SP",
+    "No delivery date is printed on the developer page",
+    "Pin: Rua Flórida 675, São Paulo geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "escape-brooklin"
+  },
+  {
+   "name": "The Garden Klabin",
+   "developer": "Cyrela",
+   "area": "Rua Charles Astor, Chácara Klabin, São Paulo",
+   "country": "Brazil",
+   "market": "Brazil",
+   "stage": "under construction",
+   "url": "https://www.cyrela.com.br/empreendimentos/garden-klabin",
+   "docs_url": "https://www.cyrela.com.br/empreendimentos/garden-klabin",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status shown as \"Em obras\" (under construction)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+    },
+    {
+     "claim": "Apartments of 136 m2 (3 suites) and 170 m2 (4 bedrooms)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+    },
+    {
+     "claim": "Address printed: Rua Charles Astor, São Paulo, Chácara Klabin, SP (no street number)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+    },
+    {
+     "claim": "Pin: coordinates published in the map of the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-suite apartment",
+     "4-bedroom apartment"
+    ],
+    "size_min_m2": 136,
+    "size_max_m2": 170,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -23.596517,
+    "lng": -46.623572,
+    "permit_authority": null
+   },
+   "note": "The Garden Klabin by Cyrela in Rua Charles Astor, Chácara Klabin, São Paulo (Brazil). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.cyrela.com.br/empreendimentos/garden-klabin"
+   ],
+   "docs_listed": [
+    "Status shown as \"Em obras\" (under construction)",
+    "Apartments of 136 m2 (3 suites) and 170 m2 (4 bedrooms)",
+    "Address printed: Rua Charles Astor, São Paulo, Chácara Klabin, SP (no street number)",
+    "No delivery date is printed on the developer page",
+    "Pin: coordinates published in the map of the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-garden-klabin"
+  },
+  {
+   "name": "Renato 410",
+   "developer": "Even",
+   "area": "Rua Doutor Renato Paes de Barros, 410, Itaim Bibi, São Paulo",
+   "country": "Brazil",
+   "market": "Brazil",
+   "stage": "off-plan",
+   "url": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410",
+   "docs_url": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status shown as \"Lançamento\" (launch)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+    },
+    {
+     "claim": "3 to 5 bedrooms, 273 m2 to 545 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+    },
+    {
+     "claim": "Address printed: Rua Doutor Renato Paes de Barros, 410",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+    },
+    {
+     "claim": "Pin: Rua Doutor Renato Paes de Barros 410, São Paulo geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3 to 5-bedroom apartment"
+    ],
+    "size_min_m2": 273,
+    "size_max_m2": 545,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -23.582153,
+    "lng": -46.674187,
+    "permit_authority": null
+   },
+   "note": "Renato 410 by Even in Rua Doutor Renato Paes de Barros, 410, Itaim Bibi, São Paulo (Brazil). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.even.com.br/sp/sao-paulo/itaim-bibi/residencial/renato-410"
+   ],
+   "docs_listed": [
+    "Status shown as \"Lançamento\" (launch)",
+    "3 to 5 bedrooms, 273 m2 to 545 m2",
+    "Address printed: Rua Doutor Renato Paes de Barros, 410",
+    "No delivery date is printed on the developer page",
+    "Pin: Rua Doutor Renato Paes de Barros 410, São Paulo geocoded with OpenStreetMap Nominatim (house-level match); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "renato-410"
+  },
+  {
+   "name": "Parc Avignon",
+   "developer": "Londoño Gómez",
+   "area": "Sector Avignon, El Poblado, Medellín",
+   "country": "Colombia",
+   "market": "Medellín",
+   "stage": "off-plan",
+   "url": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon",
+   "docs_url": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon",
+   "permit_number": null,
+   "seed": {
+    "price": 2213921198,
+    "currency": "COP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q2",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Tiempo de entrega: segundo trimestre de 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon"
+    },
+    {
+     "claim": "Apartments of 132 to 202 m2 with 2 or 3 bedrooms; four apartments per floor in the typical plan",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon"
+    },
+    {
+     "claim": "Prices from COP 2,213,921,198 (Type 01, Tower 2); the page says published areas and prices are estimates",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon"
+    },
+    {
+     "claim": "Pin: coordinates in the \"how to get there\" map link published on the developer page; the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q2",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": 132,
+    "size_max_m2": 202,
+    "price_min": 2213921198,
+    "price_max": null,
+    "currency": "COP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 6.17857,
+    "lng": -75.568901,
+    "permit_authority": null
+   },
+   "note": "Parc Avignon by Londoño Gómez in Sector Avignon, El Poblado, Medellín (Colombia). Added from the official developer page: off-plan; handover on record: 2028-Q2. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/parc-avignon"
+   ],
+   "docs_listed": [
+    "\"Tiempo de entrega: segundo trimestre de 2028\"",
+    "Apartments of 132 to 202 m2 with 2 or 3 bedrooms; four apartments per floor in the typical plan",
+    "Prices from COP 2,213,921,198 (Type 01, Tower 2); the page says published areas and prices are estimates",
+    "Pin: coordinates in the \"how to get there\" map link published on the developer page; the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "parc-avignon"
+  },
+  {
+   "name": "Palmyra West",
+   "developer": "Finbar Group Limited",
+   "area": "45 McGregor Rd, Palmyra, Perth WA 6157",
+   "country": "Australia",
+   "market": "Perth",
+   "stage": "under construction",
+   "url": "https://www.finbar.com.au/developments/palmyra-west",
+   "docs_url": "https://www.finbar.com.au/developments/palmyra-west",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Mid 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 130,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Under construction\" with \"Completion Est. Mid 2027\" and 130 apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.finbar.com.au/developments"
+    },
+    {
+     "claim": "Address printed: 45 McGregor Rd, Palmyra WA 6157, Australia",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.finbar.com.au/developments/palmyra-west"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "Mid 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Palmyra West by Finbar Group Limited in 45 McGregor Rd, Palmyra, Perth WA 6157 (Australia). Added from the official developer page: under construction; handover on record: Mid 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.finbar.com.au/developments",
+    "https://www.finbar.com.au/developments/palmyra-west"
+   ],
+   "docs_listed": [
+    "Address printed: 45 McGregor Rd, Palmyra WA 6157, Australia"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "palmyra-west"
+  },
+  {
+   "name": "Romeo Applecross",
+   "developer": "Finbar Group Limited",
+   "area": "910 Canning Hwy, Applecross, Perth WA 6153",
+   "country": "Australia",
+   "market": "Perth",
+   "stage": "off-plan",
+   "url": "https://www.finbar.com.au/developments/romeo-applecross",
+   "docs_url": "https://www.finbar.com.au/developments/romeo-applecross",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 152,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"New to market\" with \"Completion Est. 2028\", 152 apartments and 3 commercial lots",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.finbar.com.au/developments"
+    },
+    {
+     "claim": "Address printed: 910 Canning Hwy, Applecross WA 6153, Australia",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.finbar.com.au/developments/romeo-applecross"
+    },
+    {
+     "claim": "Described as the third and final stage of the developer's Applecross precinct",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.finbar.com.au/developments/romeo-applecross"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Romeo Applecross by Finbar Group Limited in 910 Canning Hwy, Applecross, Perth WA 6153 (Australia). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.finbar.com.au/developments",
+    "https://www.finbar.com.au/developments/romeo-applecross"
+   ],
+   "docs_listed": [
+    "Address printed: 910 Canning Hwy, Applecross WA 6153, Australia",
+    "Described as the third and final stage of the developer's Applecross precinct"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "romeo-applecross"
+  },
+  {
+   "name": "West Village Karrinyup",
+   "developer": "Blackburne",
+   "area": "Karrinyup, Perth, adjoining Karrinyup Shopping Centre",
+   "country": "Australia",
+   "market": "Perth",
+   "stage": "under construction",
+   "url": "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/",
+   "docs_url": "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/",
+   "permit_number": null,
+   "seed": {
+    "price": 1490000,
+    "currency": "AUD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 253,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Remaining residences are priced from $1.49 million to $4.45 million, with completion anticipated in 2029.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/"
+    },
+    {
+     "claim": "253 two, three and four-bedroom apartments and penthouses adjoining Karrinyup Shopping Centre",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/"
+    },
+    {
+     "claim": "The developer states that Multiplex has been appointed as builder and that more than 70% of the 253 residences are sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 to 4-bedroom apartment",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1490000,
+    "price_max": 4450000,
+    "currency": "AUD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "West Village Karrinyup by Blackburne in Karrinyup, Perth, adjoining Karrinyup Shopping Centre (Australia). Added from the official developer page: under construction; handover on record: 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.blackburne.com.au/blackburne-appoints-multiplex-for-500m-west-village-karrinyup-project/"
+   ],
+   "docs_listed": [
+    "\"Remaining residences are priced from $1.49 million to $4.45 million, with completion anticipated in 2029.\"",
+    "253 two, three and four-bedroom apartments and penthouses adjoining Karrinyup Shopping Centre",
+    "The developer states that Multiplex has been appointed as builder and that more than 70% of the 253 residences are sold"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "west-village-karrinyup"
+  },
+  {
+   "name": "Treehouse at Midtown MacPark",
+   "developer": "Frasers Property Australia",
+   "area": "Midtown MacPark, Macquarie Park, Sydney",
+   "country": "Australia",
+   "market": "Sydney",
+   "stage": "under construction",
+   "url": "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open",
+   "docs_url": "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Mid 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Treehouse is already under construction\"; 1, 2 and 3-bedroom apartments \"with estimated completion in mid-2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open"
+    },
+    {
+     "claim": "The building overlooks the Village Green of the Midtown MacPark community",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "Mid 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Treehouse at Midtown MacPark by Frasers Property Australia in Midtown MacPark, Macquarie Park, Sydney (Australia). Added from the official developer page: under construction; handover on record: Mid 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open"
+   ],
+   "docs_listed": [
+    "\"Treehouse is already under construction\"; 1, 2 and 3-bedroom apartments \"with estimated completion in mid-2027\"",
+    "The building overlooks the Village Green of the Midtown MacPark community"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "treehouse-at-midtown-macpark"
+  },
+  {
+   "name": "Belvedere at The Hill",
+   "developer": "Fletcher Living",
+   "area": "The Hill, Remuera, Auckland",
+   "country": "New Zealand",
+   "market": "New Zealand",
+   "stage": "under construction",
+   "url": "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/",
+   "docs_url": "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Belvedere is the only apartment building scheduled for completion in Remuera in 2027.\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/"
+    },
+    {
+     "claim": "The page says show apartments are open and almost half of the apartments are sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/"
+    },
+    {
+     "claim": "Experience Centre address: 99 Ladies Mile, Remuera, Auckland",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Belvedere at The Hill by Fletcher Living in The Hill, Remuera, Auckland (New Zealand). Added from the official developer page: under construction; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fletcherliving.co.nz/locations/auckland/the-hill/belvedere-apartments/"
+   ],
+   "docs_listed": [
+    "\"Belvedere is the only apartment building scheduled for completion in Remuera in 2027.\"",
+    "The page says show apartments are open and almost half of the apartments are sold",
+    "Experience Centre address: 99 Ladies Mile, Remuera, Auckland"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "belvedere-at-the-hill"
+  },
+  {
+   "name": "Banyan Tree Beach Residences Oceanus",
+   "developer": "Banyan Group Residences (Banyan Group)",
+   "area": "Bang Tao Beach, Laguna Phuket",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "under construction",
+   "url": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus",
+   "docs_url": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus",
+   "permit_number": null,
+   "seed": {
+    "price": 160000000,
+    "currency": "THB",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 16,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"completion scheduled for Q4 2028\"; the page says foundation, structural, roofing and plastering works are largely complete across the four buildings",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus"
+    },
+    {
+     "claim": "16 four-bedroom beachfront residences",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus"
+    },
+    {
+     "claim": "Residences start at approximately THB 160 million, penthouses up to THB 391 million",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus"
+    },
+    {
+     "claim": "Foreign buyers: freehold units subject to the 49% foreign quota, or a 30+30+30 year leasehold structure",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "4-bedroom residence",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 160000000,
+    "price_max": 391000000,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Freehold units subject to the 49% foreign quota, or a 30+30+30 year leasehold structure, as stated by the developer",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Banyan Tree Beach Residences Oceanus by Banyan Group Residences in Bang Tao Beach, Laguna Phuket (Thailand). Added from the official developer page: under construction; handover on record: 2028-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.banyangroupresidences.com/thailand/phuket/banyan-tree-beach-residences-oceanus"
+   ],
+   "docs_listed": [
+    "\"completion scheduled for Q4 2028\"; the page says foundation, structural, roofing and plastering works are largely complete across the four buildings",
+    "16 four-bedroom beachfront residences",
+    "Residences start at approximately THB 160 million, penthouses up to THB 391 million",
+    "Foreign buyers: freehold units subject to the 49% foreign quota, or a 30+30+30 year leasehold structure"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "banyan-tree-beach-residences-oceanus"
+  },
+  {
+   "name": "BRANZ Gokokuji Fujimizaka",
+   "developer": "Tokyu Land Corporation",
+   "area": "Otsuka 2-chome, Bunkyo-ku, Tokyo",
+   "country": "Japan",
+   "market": "Tokyo",
+   "stage": "under construction",
+   "url": "https://sumai.tokyu-land.co.jp/branz/gokokuji/",
+   "docs_url": "https://sumai.tokyu-land.co.jp/branz/gokokuji/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "January 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 36,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion as printed in the property outline: mid January 2027 (2027年1月中旬予定); the project page gives handover in mid March 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/gokokuji/outline/"
+    },
+    {
+     "claim": "Location (lot number) as printed: 東京都文京区大塚二丁目110番3 (lot number)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/gokokuji/outline/"
+    },
+    {
+     "claim": "Total units as printed: 36 (including 5 for the project partner); seller: Tokyu Land Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/gokokuji/outline/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "January 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Gokokuji Fujimizaka by Tokyu Land Corporation in Otsuka 2-chome, Bunkyo-ku, Tokyo (Japan). Added from the official developer page: under construction; handover on record: January 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sumai.tokyu-land.co.jp/branz/gokokuji/",
+    "https://sumai.tokyu-land.co.jp/branz/gokokuji/outline/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-gokokuji-fujimizaka"
+  },
+  {
+   "name": "BRANZ Tower Nishinomiya",
+   "developer": "Tokyu Land Corporation",
+   "area": "Ikeda-cho, Nishinomiya, Hyogo",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://sumai.tokyu-land.co.jp/branz/nishinomiya/",
+   "docs_url": "https://sumai.tokyu-land.co.jp/branz/nishinomiya/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "July 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 377,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion as printed in the property outline: 30 July 2027 (2027年7月30日予定)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nishinomiya/outline/"
+    },
+    {
+     "claim": "Location (lot number) as printed: 兵庫県西宮市池田町164番 (lot number)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nishinomiya/outline/"
+    },
+    {
+     "claim": "Total units as printed: 377 (including 35 not for sale and 69 not offered, shops excluded); seller: Tokyu Land Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nishinomiya/outline/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "July 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Tower Nishinomiya by Tokyu Land Corporation in Ikeda-cho, Nishinomiya, Hyogo (Japan). Added from the official developer page: under construction; handover on record: July 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sumai.tokyu-land.co.jp/branz/nishinomiya/",
+    "https://sumai.tokyu-land.co.jp/branz/nishinomiya/outline/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-tower-nishinomiya"
+  },
+  {
+   "name": "BRANZ City Funabashi Biare",
+   "developer": "Tokyu Land Corporation",
+   "area": "Ichiba 1-chome, Funabashi, Chiba",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://sumai.tokyu-land.co.jp/branz/funabashi/",
+   "docs_url": "https://sumai.tokyu-land.co.jp/branz/funabashi/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 257,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion as printed in the property outline: buildings 1 and 2 late January 2028, buildings 3 and 4 late September 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/funabashi/outline/"
+    },
+    {
+     "claim": "Location (lot number) as printed: 千葉県船橋市市場一丁目1974番23 (lot number)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/funabashi/outline/"
+    },
+    {
+     "claim": "Total units as printed: 257; seller: Tokyu Land Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/funabashi/outline/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "September 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ City Funabashi Biare by Tokyu Land Corporation in Ichiba 1-chome, Funabashi, Chiba (Japan). Added from the official developer page: under construction; handover on record: September 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sumai.tokyu-land.co.jp/branz/funabashi/",
+    "https://sumai.tokyu-land.co.jp/branz/funabashi/outline/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-city-funabashi-biare"
+  },
+  {
+   "name": "BRANZ Omiya Nisshin Biare",
+   "developer": "Tokyu Land Corporation",
+   "area": "Nisshin-cho 2-chome, Kita-ku, Saitama",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://sumai.tokyu-land.co.jp/branz/nisshin/",
+   "docs_url": "https://sumai.tokyu-land.co.jp/branz/nisshin/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "February 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 155,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Completion as printed in the property outline: mid February 2027 (2027年2月中旬予定)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nisshin/outline/"
+    },
+    {
+     "claim": "Location (lot number) as printed: 埼玉県さいたま市北区日進町二丁目482-2 (lot number)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nisshin/outline/"
+    },
+    {
+     "claim": "Total units as printed: 155; seller: Tokyu Land Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sumai.tokyu-land.co.jp/branz/nisshin/outline/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "February 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Omiya Nisshin Biare by Tokyu Land Corporation in Nisshin-cho 2-chome, Kita-ku, Saitama (Japan). Added from the official developer page: under construction; handover on record: February 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sumai.tokyu-land.co.jp/branz/nisshin/",
+    "https://sumai.tokyu-land.co.jp/branz/nisshin/outline/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-omiya-nisshin-biare"
+  },
+  {
+   "name": "Vauxhall DSTRCT",
+   "developer": "John Keells Properties",
+   "area": "Vauxhall Street, Colombo 02",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "off-plan",
+   "url": "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch",
+   "docs_url": "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The developer announced the launch on 13 March 2026 and says over 100 apartments were sold by opening day",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch"
+    },
+    {
+     "claim": "One 60-storey residential tower with one, two, three and four-bedroom residences on Vauxhall Street, Colombo 02",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch"
+    },
+    {
+     "claim": "No completion date, price or permit number is printed in the developer announcement",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 to 4-bedroom residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Vauxhall DSTRCT by John Keells Properties in Vauxhall Street, Colombo 02 (Sri Lanka). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.johnkeellsproperties.com/media-centre/news-and-blogs/john-keells-properties-unveils-vauxhall-dstrct-over-100-apartments-sold-by-launch"
+   ],
+   "docs_listed": [
+    "The developer announced the launch on 13 March 2026 and says over 100 apartments were sold by opening day",
+    "One 60-storey residential tower with one, two, three and four-bedroom residences on Vauxhall Street, Colombo 02",
+    "No completion date, price or permit number is printed in the developer announcement"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "vauxhall-dstrct"
+  },
+  {
+   "name": "The Colombo Border",
+   "developer": "Prime Lands Residencies PLC",
+   "area": "Colombo-Kandy Road, Peliyagoda",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/",
+   "docs_url": "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Tower Cosmos has topped out and is \"on track for completion by December 2027\" (developer news, 7 February 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/"
+    },
+    {
+     "claim": "Three residential towers on 6.5 acres along the Colombo-Kandy Road; Tower Cosmos has 152 two-bedroom apartments over 20 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/"
+    },
+    {
+     "claim": "Builders named by the developer: Prime Construction (Pvt) Ltd for Towers Cosmos and Amaá, Sanken Construction (Pvt) Ltd for Tower Brielle",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Colombo Border by Prime Lands Residencies PLC in Colombo-Kandy Road, Peliyagoda (Sri Lanka). Added from the official developer page: under construction; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primeresidencies.lk/news/the-colombo-border-project-by-prime-residences-marks-major-milestone-as-tower-cosmos-tops-out/"
+   ],
+   "docs_listed": [
+    "Tower Cosmos has topped out and is \"on track for completion by December 2027\" (developer news, 7 February 2026)",
+    "Three residential towers on 6.5 acres along the Colombo-Kandy Road; Tower Cosmos has 152 two-bedroom apartments over 20 floors",
+    "Builders named by the developer: Prime Construction (Pvt) Ltd for Towers Cosmos and Amaá, Sanken Construction (Pvt) Ltd for Tower Brielle"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-colombo-border"
+  },
+  {
+   "name": "Kuilei Place",
+   "developer": "Not named on the project site",
+   "area": "Honolulu, Hawaii (near Diamond Head, Waikiki and Kaimuki)",
+   "country": "USA",
+   "market": "Hawaii",
+   "stage": "under construction",
+   "url": "https://kuileiplace.com/",
+   "docs_url": "https://kuileiplace.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the site: \"Currently Under Construction\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kuileiplace.com/"
+    },
+    {
+     "claim": "1, 2 and 3-bedroom homes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kuileiplace.com/"
+    },
+    {
+     "claim": "Exclusive project broker named on the site: Compass RB-23206; no developer is named on the home page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kuileiplace.com/"
+    },
+    {
+     "claim": "No completion date or price is printed on the project home page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kuileiplace.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom home",
+     "2-bedroom home",
+     "3-bedroom home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Kuilei Place in Honolulu, Hawaii (near Diamond Head, Waikiki and Kaimuki) (USA). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://kuileiplace.com/"
+   ],
+   "docs_listed": [
+    "Status printed on the site: \"Currently Under Construction\"",
+    "1, 2 and 3-bedroom homes",
+    "Exclusive project broker named on the site: Compass RB-23206; no developer is named on the home page",
+    "No completion date or price is printed on the project home page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "kuilei-place"
   }
  ]
 }
