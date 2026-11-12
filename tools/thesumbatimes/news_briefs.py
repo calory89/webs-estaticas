@@ -308,7 +308,6 @@ BRIEFS = [
  'time': '06:00',
  'dateline': 'KUPANG',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'mejorar-puerto-waikelo-aeropuerto-tambolaka-gobernador-ntt-2026', 'id': 'gubernur-ntt-percepatan-pelabuhan-waikelo-bandara-tambolaka-2026'},
  'keywords': {'en': ['Waikelo port expansion',
                      'Tambolaka airport upgrade',
@@ -438,4 +437,147 @@ BRIEFS = [
            'caption': {'en': 'AI-generated illustration of a small ferry harbour on a dry-season island coast; not a photo of Waikelo or of the events described.',
                        'es': 'Ilustración generada con IA de un pequeño puerto de ferris en una costa isleña en estación seca; no es una foto de Waikelo ni de los hechos descritos.',
                        'id': 'Ilustrasi buatan AI pelabuhan feri kecil di pesisir pulau pada musim kemarau; bukan foto Waikelo maupun kejadian yang diberitakan.'}}},
+{'section': 'business',
+ 'slug': 'east-sumba-seeks-2027-funds-melolo-lewa-transmigration-areas',
+ 'date': '2026-11-13',
+ 'time': '06:00',
+ 'dateline': 'JAKARTA',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'sumba-oriental-pide-fondos-2027-zonas-transmigracion-melolo-lewa', 'id': 'sumba-timur-ajukan-anggaran-2027-kawasan-transmigrasi-melolo-lewa'},
+ 'keywords': {'en': ['East Sumba transmigration area',
+                     'Melolo Lewa transmigration',
+                     'Sumba investment 2026',
+                     'East Sumba cashew sugar cane seaweed',
+                     'Sumba budget 2027',
+                     'East Sumba agriculture investment'],
+              'es': ['zona de transmigración Sumba Oriental', 'Melolo y Lewa', 'inversión en Sumba 2026', 'anacardo caña de azúcar algas Sumba', 'presupuesto 2027 Sumba'],
+              'id': ['kawasan transmigrasi Sumba Timur',
+                     'transmigrasi Melolo Lewa',
+                     'investasi Sumba Timur 2026',
+                     'kacang mete tebu rumput laut Sumba Timur',
+                     'anggaran 2027 Sumba Timur']},
+ 'en': {'title': 'East Sumba asks for 2027 funds for Melolo and Lewa farm areas',
+        'dek': 'The regent met the transmigration minister on 10 November and pitched sugar cane, cashew, seaweed and cattle, but no amounts have been announced.',
+        'answer': 'The regent of East Sumba, Umbu Lili Pekuwali, asked Transmigration Minister M. Iftitah Sulaiman Suryanagara in Jakarta on 10 November 2026 for 2027 budget '
+                  'support for the Melolo and Lewa transmigration areas, Waingapu.com and RRI Kupang reported on 11 November. No amount, date or ministry answer has been '
+                  'reported.',
+        'keys': ['On Tuesday 10 November 2026 the East Sumba regent, Umbu Lili Pekuwali, met Transmigration Minister M. Iftitah Sulaiman Suryanagara in Jakarta.',
+                 'He asked for central-government money in the 2027 budget year for the Melolo and Lewa transmigration areas: basic infrastructure, facilities and economic '
+                 'empowerment programmes.',
+                 'Investment potential presented: sugar cane, seaweed, food crops and cattle; for Melolo, cashew as a flagship crop, plus sorghum.',
+                 "No amount, timetable or ministry decision has been reported, and both reports rely on the regency's own account."],
+        'visitors': 'Nothing changes for travellers: Melolo and Lewa are rural farming districts of East Sumba, not tourist sites, and the plan is only a funding request for now.',
+        'body': '<p>The regent of East Sumba, Umbu Lili Pekuwali, has asked the central government for money in the 2027 budget year to speed up two transmigration areas, Melolo '
+                'and Lewa, according to reports by Waingapu.com and RRI Kupang published on 11 November 2026. He made the request at a meeting with Transmigration Minister M. '
+                'Iftitah Sulaiman Suryanagara in Jakarta on Tuesday 10 November 2026. The reports give no amounts, no dates and no answer from the ministry, so for now this is a '
+                'request, not a funded project.</p><p>A transmigration area (kawasan transmigrasi) is a rural zone that the national Ministry of Transmigration develops with '
+                "basic infrastructure and livelihood programmes. The regent was accompanied by the head of the regency's manpower and transmigration office.</p><h2>What the "
+                "regent asked for</h2><p>According to the regency's press office, quoted by RRI, the priorities were basic infrastructure, facilities for the two areas and "
+                'economic empowerment programmes for the communities living there. RRI says the aim is better connectivity and productivity. Waingapu.com quotes the regent as '
+                'hoping the proposals will get central-government support.</p><h2>Sugar cane, cashew, seaweed and cattle</h2><p>The regent also set out the investment potential '
+                'of the two areas. Waingapu.com lists sugar cane, seaweed, food crops and cattle farming. RRI adds that the areas have potential in agriculture, plantations, '
+                'livestock, fisheries and tourism, and that for Melolo the regency is pushing cashew as a flagship crop for food security and exports. Sorghum and other crops are '
+                'meant to help protect land and supply raw material for renewable energy. The regent said he wants Melolo and Lewa to become new centres of economic '
+                'growth.</p><h2>What is not known yet</h2><p>Neither report says how much money was requested, whether the ministry agreed, or when anything would be built. Both '
+                "rely on the regency's own account of the meeting; RRI credits the regency press office. For another large East Sumba project that already has a timetable, read "
+                '<a href="/en/projects/waingapu-shrimp-farm-nearly-20-percent-built-2028/">our story on the Waingapu shrimp farm</a>.</p><h2>What it means for visitors, residents '
+                'and investors</h2><p>Visitors: nothing changes for trips; Melolo and Lewa are rural farming districts, not tourist sites. Residents: if the money arrives, roads, '
+                'water and farm support could improve, but watch the 2027 budget before expecting anything. Investors: the regency is openly pitching sugar cane, cashew, seaweed '
+                'and cattle, but no land, permit or incentive details were published. Ask the regency before committing, and check land status first.</p>',
+        'faq': [['Is the Melolo and Lewa transmigration project funded?',
+                 'Not yet. On 11 November 2026 Waingapu.com and RRI Kupang reported that the East Sumba regent asked the Transmigration Minister for 2027 budget support. No '
+                 'amount or decision has been reported.'],
+                ['What does East Sumba want to grow in Melolo and Lewa?',
+                 'The reports list sugar cane, seaweed, food crops and cattle, with cashew as the flagship crop for Melolo and sorghum as a land-conservation and renewable-energy '
+                 'crop.']]},
+ 'es': {'title': 'Sumba Oriental pide fondos para 2027 en las zonas de Melolo y Lewa',
+        'dek': 'El regente se reunió con el ministro de Transmigración el 10 de noviembre y ofreció caña, anacardo, algas y ganado, pero no hay cifras anunciadas.',
+        'answer': 'El regente de Sumba Oriental, Umbu Lili Pekuwali, pidió el 10 de noviembre de 2026 en Yakarta al ministro de Transmigración, M. Iftitah Sulaiman Suryanagara, '
+                  'apoyo presupuestario para 2027 para las zonas de Melolo y Lewa, informaron Waingapu.com y RRI Kupang el 11 de noviembre. No se ha informado de cifra, fecha ni '
+                  'respuesta del ministerio.',
+        'keys': ['El martes 10 de noviembre de 2026 el regente de Sumba Oriental, Umbu Lili Pekuwali, se reunió en Yakarta con el ministro de Transmigración, M. Iftitah Sulaiman '
+                 'Suryanagara.',
+                 'Pidió fondos del Gobierno central en el presupuesto de 2027 para las zonas de transmigración de Melolo y Lewa: infraestructuras básicas, equipamientos y '
+                 'programas de empoderamiento económico.',
+                 'Potencial de inversión presentado: caña de azúcar, algas, cultivos alimentarios y ganado vacuno; en Melolo, el anacardo como cultivo estrella, además del sorgo.',
+                 'No se ha informado de importe, calendario ni decisión del ministerio, y ambas informaciones se basan en el relato de la propia regencia.'],
+        'visitors': 'Para quien viaja no cambia nada: Melolo y Lewa son distritos agrícolas de Sumba Oriental, no destinos turísticos, y por ahora solo hay una petición de '
+                    'fondos.',
+        'body': '<p>El regente de Sumba Oriental, Umbu Lili Pekuwali, ha pedido al Gobierno central fondos en el presupuesto de 2027 para acelerar dos zonas de transmigración, '
+                'Melolo y Lewa, según informaron Waingapu.com y RRI Kupang el 11 de noviembre de 2026. Lo planteó en una reunión con el ministro de Transmigración, M. Iftitah '
+                'Sulaiman Suryanagara, el martes 10 de noviembre de 2026 en Yakarta. Las informaciones no dan cifras ni fechas ni la respuesta del ministerio, así que por ahora '
+                'es una petición, no un proyecto con financiación.</p><p>Una zona de transmigración (kawasan transmigrasi) es un territorio rural que el Ministerio de '
+                'Transmigración desarrolla con infraestructuras básicas y programas de sustento. El regente acudió con el jefe de la oficina regional de empleo y '
+                'transmigración.</p><h2>Qué pidió el regente</h2><p>Según el gabinete de prensa de la regencia, citado por RRI, las prioridades fueron las infraestructuras '
+                'básicas, los equipamientos de las dos zonas y programas de empoderamiento económico para las comunidades que viven allí. RRI dice que el objetivo es mejorar la '
+                'conectividad y la productividad. Waingapu.com recoge que el regente espera el respaldo del Gobierno central a sus propuestas.</p><h2>Caña de azúcar, anacardo, '
+                'algas y ganado</h2><p>El regente expuso también el potencial de inversión de las dos zonas. Waingapu.com cita la caña de azúcar, las algas, los cultivos '
+                'alimentarios y la ganadería de vacuno. RRI añade que hay potencial en agricultura, plantaciones, ganadería, pesca y turismo, y que en Melolo la regencia impulsa '
+                'el anacardo como cultivo estrella para la seguridad alimentaria y la exportación. El sorgo y otros cultivos servirían para proteger el suelo y aportar materia '
+                'prima para energías renovables. El regente quiere que Melolo y Lewa se conviertan en nuevos polos de crecimiento económico.</p><h2>Lo que aún no se '
+                'sabe</h2><p>Ninguna de las dos informaciones precisa cuánto dinero se pidió, si el ministerio aceptó o cuándo se construiría algo. Ambas se basan en el relato de '
+                'la propia regencia; RRI atribuye el texto a su gabinete de prensa. Para otro gran proyecto de Sumba Oriental que sí tiene calendario, lee <a '
+                'href="/es/projects/granja-camarones-waingapu-casi-20-por-ciento-obra-2028/">nuestra noticia sobre la granja de camarones de Waingapu</a>.</p><h2>Qué significa '
+                'para visitantes, residentes e inversores</h2><p>Visitantes: no cambia nada para tu viaje; Melolo y Lewa son distritos agrícolas, no destinos turísticos. '
+                'Residentes: si llega el dinero, podrían mejorar las carreteras, el agua y el apoyo al campo, pero conviene esperar a ver el presupuesto de 2027. Inversores: la '
+                'regencia ofrece abiertamente caña, anacardo, algas y ganado, pero no ha publicado detalles de tierras, permisos o incentivos. Consulta con la regencia antes de '
+                'comprometerte y comprueba primero la situación de la tierra.</p>',
+        'faq': [['¿Está financiado el proyecto de transmigración de Melolo y Lewa?',
+                 'Todavía no. El 11 de noviembre de 2026 Waingapu.com y RRI Kupang informaron de que el regente de Sumba Oriental pidió al ministro de Transmigración apoyo del '
+                 'presupuesto de 2027. No se ha informado de importe ni de decisión.'],
+                ['¿Qué quiere cultivar Sumba Oriental en Melolo y Lewa?',
+                 'Las informaciones citan caña de azúcar, algas, cultivos alimentarios y ganado, con el anacardo como cultivo estrella en Melolo y el sorgo para conservar el '
+                 'suelo y producir energía renovable.']]},
+ 'id': {'title': 'Sumba Timur ajukan anggaran 2027 untuk kawasan Melolo dan Lewa',
+        'dek': 'Bupati bertemu Menteri Transmigrasi pada 10 November dan menawarkan tebu, kacang mete, rumput laut, dan sapi, tetapi nilai anggaran belum diumumkan.',
+        'answer': 'Bupati Sumba Timur, Umbu Lili Pekuwali, meminta Menteri Transmigrasi M. Iftitah Sulaiman Suryanagara di Jakarta pada 10 November 2026 untuk mendukung anggaran '
+                  '2027 bagi kawasan transmigrasi Melolo dan Lewa, lapor Waingapu.com dan RRI Kupang pada 11 November. Nilai anggaran, jadwal, dan jawaban kementerian belum '
+                  'dilaporkan.',
+        'keys': ['Pada Selasa, 10 November 2026, Bupati Sumba Timur Umbu Lili Pekuwali beraudiensi dengan Menteri Transmigrasi M. Iftitah Sulaiman Suryanagara di Jakarta.',
+                 'Ia meminta dukungan anggaran pusat tahun 2027 untuk kawasan transmigrasi Melolo dan Lewa: infrastruktur dasar, sarana dan prasarana kawasan, serta pemberdayaan '
+                 'ekonomi masyarakat.',
+                 'Potensi investasi yang dipaparkan: tebu, rumput laut, tanaman pangan, dan peternakan sapi; untuk Melolo, kacang mete sebagai komoditas unggulan, ditambah '
+                 'sorgum.',
+                 'Nilai anggaran, jadwal, dan keputusan kementerian belum dilaporkan, dan kedua pemberitaan bersumber dari penjelasan pemerintah kabupaten sendiri.'],
+        'visitors': 'Tidak ada perubahan bagi wisatawan: Melolo dan Lewa adalah kecamatan pertanian di Sumba Timur, bukan tujuan wisata, dan rencana ini baru berupa permintaan '
+                    'anggaran.',
+        'body': '<p>Bupati Sumba Timur, Umbu Lili Pekuwali, meminta dukungan anggaran pemerintah pusat pada tahun anggaran 2027 untuk mempercepat dua kawasan transmigrasi, Melolo '
+                'dan Lewa, menurut pemberitaan Waingapu.com dan RRI Kupang pada 11 November 2026. Permintaan itu disampaikan dalam audiensi dengan Menteri Transmigrasi M. Iftitah '
+                'Sulaiman Suryanagara di Jakarta pada Selasa, 10 November 2026. Kedua laporan tidak menyebut nilai anggaran, jadwal, maupun tanggapan kementerian, sehingga untuk '
+                'saat ini ini baru usulan, belum proyek yang sudah dibiayai.</p><p>Kawasan transmigrasi adalah wilayah perdesaan yang dikembangkan Kementerian Transmigrasi dengan '
+                'infrastruktur dasar dan program penghidupan masyarakat. Bupati didampingi Kepala Dinas Ketenagakerjaan dan Transmigrasi kabupaten.</p><h2>Apa yang diusulkan '
+                'bupati</h2><p>Menurut Prokopim Sumba Timur yang dikutip RRI, usulan prioritas mencakup pembangunan infrastruktur dasar, sarana dan prasarana kawasan, serta '
+                'program pemberdayaan ekonomi masyarakat. RRI menyebut tujuannya meningkatkan konektivitas dan produktivitas. Waingapu.com mengutip harapan bupati agar usulan itu '
+                'memperoleh dukungan pemerintah pusat.</p><h2>Tebu, kacang mete, rumput laut, dan sapi</h2><p>Bupati juga memaparkan potensi investasi kedua kawasan. Waingapu.com '
+                'menyebut tebu, rumput laut, tanaman pangan, dan peternakan sapi. RRI menambahkan bahwa kawasan itu berpotensi di sektor pertanian, perkebunan, peternakan, '
+                'perikanan, dan pariwisata, serta bahwa untuk Melolo pemerintah daerah mendorong kacang mete sebagai komoditas unggulan demi ketahanan pangan dan ekspor. Sorgum '
+                'dan tanaman lain diarahkan untuk konservasi lahan dan bahan baku energi baru terbarukan. Bupati berharap Melolo dan Lewa menjadi pusat pertumbuhan ekonomi '
+                'baru.</p><h2>Yang belum diketahui</h2><p>Kedua laporan tidak menyebut berapa dana yang diminta, apakah kementerian setuju, atau kapan pembangunan dimulai. '
+                'Keduanya bersumber dari penjelasan pemerintah kabupaten sendiri; RRI mencantumkan Prokopim Sumba Timur sebagai sumber. Untuk proyek besar lain di Sumba Timur '
+                'yang sudah punya jadwal, baca <a href="/id/projects/tambak-udang-waingapu-hampir-20-persen-beroperasi-2028/">berita kami tentang tambak udang '
+                'Waingapu</a>.</p><h2>Apa artinya bagi wisatawan, warga, dan investor</h2><p>Wisatawan: tidak ada perubahan untuk perjalanan Anda; Melolo dan Lewa adalah '
+                'kecamatan pertanian, bukan tujuan wisata. Warga: bila dana turun, jalan, air, dan dukungan pertanian bisa membaik, tetapi tunggu dulu kepastian APBN 2027. '
+                'Investor: pemerintah kabupaten terbuka menawarkan tebu, kacang mete, rumput laut, dan sapi, tetapi belum ada rincian soal lahan, izin, atau insentif. Tanyakan '
+                'langsung ke pemerintah kabupaten sebelum berkomitmen, dan periksa status lahan lebih dulu.</p>',
+        'faq': [['Apakah proyek transmigrasi Melolo dan Lewa sudah dibiayai?',
+                 'Belum. Pada 11 November 2026 Waingapu.com dan RRI Kupang melaporkan bahwa Bupati Sumba Timur meminta dukungan anggaran 2027 kepada Menteri Transmigrasi. Nilai '
+                 'anggaran maupun keputusan belum dilaporkan.'],
+                ['Apa yang ingin dikembangkan Sumba Timur di Melolo dan Lewa?',
+                 'Pemberitaan menyebut tebu, rumput laut, tanaman pangan, dan peternakan sapi, dengan kacang mete sebagai komoditas unggulan Melolo serta sorgum untuk konservasi '
+                 'lahan dan energi terbarukan.']]},
+ 'sources': [['Waingapu.Com: Bidik Anggaran 2027, Bupati Sumba Timur Ajukan Sejumlah Prioritas Pembangunan ke Menteri Transmigrasi (11 Nov 2026)',
+              'https://www.waingapu.com/bidik-anggaran-2027-bupati-sumba-timur-ajukan-sejumlah-prioritas-pembangunan-ke-menteri-transmigrasi/'],
+             ['RRI Kupang: Bupati Sumba Timur Dorong Percepatan Pembangunan Kawasan Transmigrasi Melolo (11 Nov 2026)',
+              'https://rri.co.id/kupang/berita-lain/2886770/bupati-sumba-timur-dorong-percepatan-pembangunan-kawasan-transmigrasi-melolo']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': 'a_rabin',
+           'license': 'CC BY 2.0',
+           'license_url': 'https://creativecommons.org/licenses/by/2.0/',
+           'page': 'https://commons.wikimedia.org/wiki/File:NTT_030.jpg',
+           'ai': False,
+           'caption': {'en': 'File photo: a river near the Kambaniru Dam, Waingapu, East Sumba. It does not show Melolo, Lewa or the meeting described.',
+                       'es': 'Foto de archivo: un río junto a la presa de Kambaniru, en Waingapu (Sumba Oriental). No muestra Melolo, Lewa ni la reunión descrita.',
+                       'id': 'Foto arsip: sungai di dekat Bendungan Kambaniru, Waingapu, Sumba Timur. Bukan foto Melolo, Lewa, maupun pertemuan yang diberitakan.'}}},
 ]
