@@ -194,7 +194,7 @@ function mapJS(l, items, opts) {
   const pts = D.places.map(p => { const t = P(p, l); return { s: p.s, n: t.n, c: p.c, sec: p.sec, ll: p.ll, d: t.t.split(". ")[0] + ".", o: mine.has(p.s) ? 1 : 0 }; });
   return `(function(){var P=${JSON.stringify(pts)},C=${JSON.stringify(CAT_COLOR)},CAT=${JSON.stringify(u.cat)},SB=${JSON.stringify(u.secret_badge)},RM=${JSON.stringify(u.readmore)};
 var mel=document.getElementById('map');if(!mel)return;function boot(){if(!window.L){setTimeout(boot,150);return}var m=L.map('map',{scrollWheelZoom:false}).setView(${JSON.stringify(opts.center || [-9.68, 119.75])},${opts.zoom || 9});
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(m);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors'}).addTo(m);
 var layers=[];P.forEach(function(p){var mk=L.circleMarker(p.ll,{radius:p.o?(p.sec?10:8):6,color:p.sec?'#e0ad55':'#fff',weight:p.sec?4:2,fillColor:C[p.c],fillOpacity:p.o?.95:.7}).addTo(m);if(p.o)mk.bringToFront&&setTimeout(function(){mk.bringToFront()},0);
 mk.bindPopup('<b>'+p.n+'</b><br><small>'+CAT[p.c]+(p.sec?' · '+SB:'')+'</small><br>'+p.d+'<br><a href="/${l}/place/'+p.s+'/">'+RM+' →</a>');layers.push({p:p,mk:mk});});
 ${opts.base ? `L.marker(${JSON.stringify(NB.ll)},{zIndexOffset:2000,icon:L.divIcon({className:'',html:'<div class="basepin">🏡</div>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(m).bindPopup(${JSON.stringify('<b>' + esc(NT(l).base) + '</b><br><small>' + esc(NT(l).base_d) + '</small>')});` : ""}${opts.fit ? "var own=layers.filter(function(x){return x.p.o});if(own.length)m.fitBounds(L.featureGroup(own.map(function(x){return x.mk})).getBounds().pad(.08));" : ""}
@@ -241,10 +241,26 @@ function guideCard(g, l) {
   return `<a class="card" href="/${l}/guide/${g.s}/" style="flex-direction:row"><div class="ph" style="flex:none;width:34%;aspect-ratio:auto;min-height:120px"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy" onerror="this.remove()"></div><div class="tx"><h3>${esc(t.t)}</h3><p>${esc(t.d)}</p></div></a>`;
 }
 
+function toolsBox(l) {
+  const u2 = D.ui2[l], code = `<iframe src="${BASE}/embed/map?l=${l}" width="100%" height="420" style="border:0;border-radius:12px" loading="lazy" title="Sumba map"></iframe>`;
+  return `<div class="qf" style="margin-top:28px"><h2>⬇️ ${esc(u2.kml_t)}</h2><p>${esc(u2.kml_d)}</p><p class="acts"><a class="btn alt2" href="/sumba-places.kml" download>KML</a> <a class="btn alt2" href="/sumba-places.gpx" download>GPX</a></p>
+<h2>🧩 ${esc(u2.embed_t)}</h2><p>${esc(u2.embed_d)}</p><textarea readonly rows="3" style="width:100%;font:13px monospace" onclick="this.select()">${esc(code)}</textarea></div>`;
+}
+function geoExport(kind) {
+  const pts = D.places.map(p => ({ n: p.en.n, d: p.en.t, ll: p.ll, u: `${BASE}/en/place/${p.s}/`, c: p.c }));
+  if (kind === "gpx") return `<?xml version="1.0" encoding="UTF-8"?><gpx version="1.1" creator="Sumba Secrets ${BASE}" xmlns="http://www.topografix.com/GPX/1/1"><metadata><name>Sumba Secrets places</name><link href="${BASE}"/></metadata>${pts.map(x => `<wpt lat="${x.ll[0]}" lon="${x.ll[1]}"><name>${esc(x.n)}</name><desc>${esc(x.d)} ${x.u}</desc><type>${x.c}</type></wpt>`).join("")}</gpx>`;
+  return `<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Sumba Secrets places</name><description>${BASE}</description>${pts.map(x => `<Placemark><name>${esc(x.n)}</name><description>${esc(x.d)} ${x.u}</description><Point><coordinates>${x.ll[1]},${x.ll[0]},0</coordinates></Point></Placemark>`).join("")}</Document></kml>`;
+}
+function embedMap(l) {
+  if (!L.includes(l)) l = "en";
+  const pts = D.places.map(p => { const t = P(p, l); return { s: p.s, n: t.n, c: p.c, ll: p.ll }; });
+  return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sumba map · Sumba Secrets</title><meta name="robots" content="noindex"><link rel="canonical" href="${BASE}/${l}/map/"><link rel="stylesheet" href="/lib/leaflet.css"><style>html,body,#m{height:100%;margin:0;font:14px system-ui,sans-serif}.cr{position:absolute;z-index:999;left:8px;bottom:8px;background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.25)}.cr a{color:#0e6f66;font-weight:700;text-decoration:none}</style></head><body><div id="m"></div><div class="cr"><a href="${BASE}/${l}/map/" target="_blank" rel="noopener">🗺️ Sumba Secrets: ${esc(D.ui[l].map)} →</a></div>
+<script src="/lib/leaflet.js"></script><script>var P=${JSON.stringify(pts)},C=${JSON.stringify(CAT_COLOR)};var m=L.map('m',{scrollWheelZoom:false}).setView([-9.68,119.75],8);L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors'}).addTo(m);var g=[];P.forEach(function(p){var k=L.circleMarker(p.ll,{radius:7,color:'#fff',weight:2,fillColor:C[p.c],fillOpacity:.95}).addTo(m);var d=document.createElement('div');d.textContent=p.n;k.bindPopup('<b>'+d.innerHTML+'</b><br><a target="_blank" rel="noopener" href="${BASE}/${l}/place/'+p.s+'/">Sumba Secrets →</a>');g.push(k)});m.fitBounds(L.featureGroup(g).getBounds().pad(.05));</script></body></html>`;
+}
 function listPage(l, path, title, lead, items, withMap) {
   const lph = photos(items[0])[0];
   const body = `${bannerHero(lph.b.replace("/ph/1280/", "/ph/960/"), path === "/secret-spots/" ? "★ " + esc(D.ui[l].secret_badge) : "📍 Sumba", esc(title), esc(lead))}<section><div class="w">${chips(l)}
-<div class="grid">${items.map(p => `<div data-cat="${p.c}" data-sec="${p.sec ? 1 : 0}">${card(p, l)}</div>`).join("")}</div>${withMap ? `<h2 class="sec h2s">🗺️ ${esc(D.ui[l].map)}</h2><div id="map" style="height:360px"></div>` : ""}</div></section>`;
+<div class="grid">${items.map(p => `<div data-cat="${p.c}" data-sec="${p.sec ? 1 : 0}">${card(p, l)}</div>`).join("")}</div>${withMap ? `<h2 class="sec h2s">🗺️ ${esc(D.ui[l].map)}</h2><div id="map" style="height:360px"></div>` : ""}${path === "/places/" ? toolsBox(l) : ""}</div></section>`;
   return page(l, path, { home: true, title, desc: lead, body, leaflet: withMap, js: withMap ? mapJS(l, items, { fit: true }) : "" });
 }
 
@@ -284,7 +300,7 @@ ${faq.length ? `<section class="faq"><h2 class="sec h2s">FAQ</h2>${faq.map(f => 
 
 function aboutPage(l) {
   const u = D.ui[l];
-  return page(l, "/about/", { title: u.about_t, body: `<div class="w"><article class="pl"><h1>${esc(u.about_t)}</h1><div class="body">${u.about_b}</div></article></div>` });
+  return page(l, "/about/", { title: u.about_t, body: `<div class="w"><article class="pl"><h1>${esc(u.about_t)}</h1><div class="body">${u.about_b}${D.ui2[l].about_more || ""}</div>${toolsBox(l)}</article></div>`, ld: [{ "@context": "https://schema.org", "@type": "AboutPage", name: u.about_t, url: `${BASE}/${l}/about/`, publisher: { "@type": "Organization", name: "Eco Beach City", email: "info@ecobeachcity.com", url: BASE } }] });
 }
 
 function notFound(l) {
@@ -621,7 +637,7 @@ function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorag
 function kmd(a,b){var R=6371,t=function(x){return x*Math.PI/180},dl=t(b[0]-a[0]),dn=t(b[1]-a[1]),h=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(t(a[0]))*Math.cos(t(b[0]))*Math.sin(dn/2)*Math.sin(dn/2);return 2*R*Math.asin(Math.sqrt(h))}
 var WIDE=function(){return innerWidth>760},PADS=function(){var w=WIDE(),pw=document.getElementById('pan').classList.contains('hid')?0:(innerWidth>1100?400:340);return {paddingTopLeft:[20,w?110:150],paddingBottomRight:[w?pw+20:20,w?20:innerHeight*.45]}};
 var m=L.map('m',{zoomControl:false,attributionControl:true,zoomSnap:1,zoomDelta:1,wheelPxPerZoomLevel:160,wheelDebounceTime:60,tapTolerance:20,minZoom:7,maxZoom:17,maxBounds:[[-11.4,117.6],[-8.1,121.9]],maxBoundsViscosity:.8,worldCopyJump:false}).setView([-9.68,119.75],9);L.control.zoom({position:'topright'}).addTo(m);L.control.scale({imperial:false,position:'bottomright'}).addTo(m);
-var base={${JSON.stringify(u2.l_map)}:L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap &copy; CARTO'}),
+var base={${JSON.stringify(u2.l_map)}:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors'}),
 ${JSON.stringify(u2.l_sat)}:L.layerGroup([L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,pane:'overlayPane',opacity:.9})]),
 ${JSON.stringify(u2.l_topo)}:L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'&copy; OpenStreetMap, SRTM | OpenTopoMap (CC-BY-SA)'})};
 var bk=ls('ss_base');(base[bk]||base[S.sat]).addTo(m);m.on('baselayerchange',function(ev){ls('ss_base',ev.name)});
@@ -806,17 +822,31 @@ function searchPage(l) {
     .concat(D.towns.map(t => { const x = Object.assign({}, D.towntxt[t.s].en, D.towntxt[t.s][l]); return { u: `/${l}/town/${t.s}/`, n: x.t, d: x.d, k: u2.town_l }; }));
   const body = `<section><div class="w srch"><h1 class="h1">🔎 ${esc(u2.search_site)}</h1><input id="sq" type="search" autofocus placeholder="${esc(u2.search_site)}" aria-label="${esc(u2.search_site)}"><div id="sr" class="news" style="margin-top:16px"></div></div></section>`;
   const js = `(function(){var I=${JSON.stringify(idx)},q=document.getElementById('sq'),r=document.getElementById('sr'),NO=${JSON.stringify(u2.no_results)};function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function n(s){return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}function go(){var v=n(q.value.trim());var h=I.filter(function(x){return !v||n(x.n+' '+x.d+' '+x.k).indexOf(v)>-1});r.innerHTML=h.length?h.slice(0,40).map(function(x){return '<a class="n" href="'+x.u+'"><b>'+e(x.n)+'</b><span>'+e(x.k)+' · '+e(x.d.slice(0,140))+'</span></a>'}).join(''):'<p>'+e(NO)+'</p>';history.replaceState(null,'','?q='+encodeURIComponent(q.value))}
+function n(s){return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}var SY=[['beach','playa','pantai','plage','strand','spiaggia','praia','ビーチ','海滩','해변','пляж'],['waterfall','cascada','air terjun','wasserfall','cascade','waterval','cascata','滝','瀑布','폭포','водопад'],['village','aldea','pueblo','kampung','dorf','dorp','villaggio','aldeia','村','마을','деревня'],['hill','colina','bukit','hügel','colline','heuvel','collina','丘','언덕','холм'],['lagoon','laguna','danau','lagune','lagoa','ラグーン','泻湖','석호','лагуна'],['airport','aeropuerto','bandara','flughafen','aéroport','luchthaven','aeroporto','空港','机场','공항','аэропорт']];
+function ex(v){var out=[v];SY.forEach(function(g){g.forEach(function(w){if(v.indexOf(n(w))>-1)g.forEach(function(o){out.push(v.replace(n(w),n(o)))})})});return out}
+function go(){var v=n(q.value.trim()),vs=ex(v);var h=I.filter(function(x){if(!v)return true;var t=n(x.n+' '+x.d+' '+x.k);return vs.some(function(y){return y.split(/\s+/).every(function(w){return t.indexOf(w)>-1})})});r.innerHTML=h.length?h.slice(0,40).map(function(x){return '<a class="n" href="'+x.u+'"><b>'+e(x.n)+'</b><span>'+e(x.k)+' · '+e(x.d.slice(0,140))+'</span></a>'}).join(''):'<p>'+e(NO)+'</p>';history.replaceState(null,'','?q='+encodeURIComponent(q.value))}
 q.value=new URLSearchParams(location.search).get('q')||'';q.oninput=go;go()})();`;
   return page(l, "/search/", { title: u2.search_site, body, js, robots: "noindex" });
 }
 function savedPage(l) {
   const u2 = D.ui2[l];
-  const idx = Object.fromEntries(D.places.map(p => { const ph = photos(p)[0]; return [p.s, { n: P(p, l).n, i: ph ? ph.s : "", r: D.ui[l].reg[p.r] }]; }));
-  const body = `<section><div class="w"><h1 class="h1">★ ${esc(u2.saved)}</h1><div id="sv" class="grid"></div></div></section>`;
-  const js = `(function(){var I=${JSON.stringify(idx)},a=[];try{a=JSON.parse(localStorage.getItem('ss_saved')||'[]')}catch(e){}var el=document.getElementById('sv');function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-el.innerHTML=a.filter(function(s){return I[s]}).map(function(s){var x=I[s];return '<a class="card" href="/${l}/place/'+s+'/"><div class="ph">'+(x.i?'<img src="'+x.i+'" alt="" loading="lazy">':'')+'</div><div class="tx"><h3>'+e(x.n)+'</h3><p class="rg">'+e(x.r)+'</p></div></a>'}).join('')||'<p>'+e(${JSON.stringify(u2.nosaved)})+'</p>'})();`;
-  return page(l, "/saved/", { title: u2.saved, body, js, robots: "noindex" });
+  const idx = Object.fromEntries(D.places.map(p => { const ph = photos(p)[0]; return [p.s, { n: P(p, l).n, i: ph ? ph.s : "", r: D.ui[l].reg[p.r], ll: p.ll }]; }));
+  const body = `<section><div class="w"><h1 class="h1">★ ${esc(u2.saved)}</h1><div id="sv" class="grid"></div>
+<div id="rt" hidden><h2 class="sec h2s">🧭 ${esc(u2.route_t)}</h2><p id="rtd"></p><ol id="rto" class="chk"></ol><p class="acts"><a id="rtg" class="btn" target="_blank" rel="noopener">${esc(u2.route_gm)}</a> <button id="rts" class="btn alt2">↗ ${esc(u2.route_share)}</button></p><div id="map" class="mapsm" style="height:360px"></div></div>
+<p id="rte" class="note">${esc(u2.route_empty)}</p></div></section>`;
+  const js = `(function(){var I=${JSON.stringify(idx)},a=[],RD=${JSON.stringify(u2.route_d)};try{a=JSON.parse(localStorage.getItem('ss_saved')||'[]')}catch(e){}
+var hs=location.hash.match(/s=([a-z0-9,-]+)/);if(hs){var add=hs[1].split(',').filter(function(s){return I[s]});add.forEach(function(s){if(a.indexOf(s)<0)a.push(s)});try{localStorage.setItem('ss_saved',JSON.stringify(a))}catch(e){}}
+a=a.filter(function(s){return I[s]});var el=document.getElementById('sv');function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function km(p,q){var R=6371,t=function(x){return x*Math.PI/180},dl=t(q[0]-p[0]),dn=t(q[1]-p[1]),h=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(t(p[0]))*Math.cos(t(q[0]))*Math.sin(dn/2)*Math.sin(dn/2);return 2*R*Math.asin(Math.sqrt(h))}
+el.innerHTML=a.map(function(s){var x=I[s];return '<a class="card" href="/${l}/place/'+s+'/"><div class="ph">'+(x.i?'<img src="'+x.i+'" alt="" loading="lazy">':'')+'</div><div class="tx"><h3>'+e(x.n)+'</h3><p class="rg">'+e(x.r)+'</p></div></a>'}).join('');
+if(!a.length)return;document.getElementById('rte').hidden=true;
+var left=a.slice(1),o=[a[0]],tot=0;while(left.length){var c=I[o[o.length-1]].ll,bi=0,bd=1e9;left.forEach(function(s,i){var d=km(c,I[s].ll);if(d<bd){bd=d;bi=i}});tot+=bd;o.push(left.splice(bi,1)[0])}
+if(o.length>1){document.getElementById('rt').hidden=false;document.getElementById('rtd').textContent=RD.replace('{k}',Math.round(tot));
+document.getElementById('rto').innerHTML=o.map(function(s){return '<li><a href="/${l}/place/'+s+'/">'+e(I[s].n)+'</a></li>'}).join('');
+document.getElementById('rtg').href='https://www.google.com/maps/dir/'+o.slice(0,10).map(function(s){return I[s].ll.join(',')}).join('/');
+document.getElementById('rts').onclick=function(){var u=location.origin+location.pathname+'#s='+o.join(',');if(navigator.share)navigator.share({title:document.title,url:u}).catch(function(){});else{try{navigator.clipboard.writeText(u)}catch(x){}this.textContent='✓'}};
+(function boot(){if(!window.L){setTimeout(boot,150);return}var m=L.map('map',{scrollWheelZoom:false});L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors'}).addTo(m);var ll=o.map(function(s){return I[s].ll});L.polyline(ll,{color:'#0e6f66',weight:4,opacity:.8,dashArray:'6 8'}).addTo(m);o.forEach(function(s,i){L.marker(I[s].ll,{icon:L.divIcon({className:'',html:'<div style="background:#0e6f66;color:#fff;border:2px solid #fff;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font:700 13px system-ui;box-shadow:0 2px 6px rgba(0,0,0,.4)">'+(i+1)+'</div>',iconSize:[26,26],iconAnchor:[13,13]})}).addTo(m).bindPopup(e(I[s].n))});m.fitBounds(L.latLngBounds(ll).pad(.15))})()}})();`;
+  return page(l, "/saved/", { title: u2.saved, body, js, robots: "noindex", leaflet: true });
 }
 const ROUTES = D.guides.filter(g => /^itinerary-/.test(g.s)).map(g => { const seen = []; (g.en.b.match(/\/place\/([a-z0-9-]+)\//g) || []).forEach(m => { const s = m.split("/")[2]; if (!seen.includes(s)) seen.push(s); }); return { s: g.s, pts: seen.map(s => D.places.find(p => p.s === s)).filter(Boolean).map(p => p.ll) }; });
 const SW = `const C='ss-v3';self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(clients.claim()));
@@ -965,6 +995,9 @@ export default {
     if (p.startsWith("/gf/")) return gfFile(p, ctx);
     if (p === "/lib/leaflet.css" || p === "/lib/leaflet.js") return libFile(p, ctx);
     if (p === "/api/wx") return apiWx(ctx);
+    if (p === "/sumba-places.kml") return new Response(geoExport("kml"), { headers: { "content-type": "application/vnd.google-earth.kml+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.kml", "cache-control": "public, max-age=86400" } });
+    if (p === "/sumba-places.gpx") return new Response(geoExport("gpx"), { headers: { "content-type": "application/gpx+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.gpx", "cache-control": "public, max-age=86400" } });
+    if (p === "/embed/map") return new Response(embedMap(url.searchParams.get("l") || "en"), { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600", "content-security-policy": "frame-ancestors *", "x-robots-tag": "noindex" } });
     if (p === "/api/indexnow" && req.method === "POST") { if (!env.TR_KEY || req.headers.get("x-tr-key") !== env.TR_KEY) return new Response("no", { status: 403 }); return indexNow(env); }
     if (p === "/llms.txt") return new Response(llms(), { headers: { "content-type": "text/plain; charset=utf-8" } });
     if (p === "/icon.svg") return new Response(ICON, { headers: { "content-type": "image/svg+xml", "cache-control": "public, max-age=604800" } });
