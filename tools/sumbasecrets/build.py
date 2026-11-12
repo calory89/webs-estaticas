@@ -8,9 +8,13 @@ from gallery import GALLERY
 from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI, EXTRA_UI2, VIDEOS, VIDEO_META
 EXTRA_UI = dict(EXTRA_UI, **EXTRA_UI2)
 from translate import tr_tree
+from guides3 import GUIDES3
 import translate
 from places_mamboro import MAMBORO, TR6, MAMBORO_GAL, BASE as NEAR_BASE, NEAR
 PLACES += MAMBORO
+from coords_fix import COORD_FIX
+for _p in PLACES:
+    if _p['s'] in COORD_FIX: _p['ll'] = COORD_FIX[_p['s']]
 GALLERY.update(MAMBORO_GAL)
 for _l, _m in TR6.items():  # hand translations for the six extra languages
     for _en, _tx in _m.items(): translate.CACHE[translate.key(_l, _en)] = _tx
@@ -46,8 +50,9 @@ for l in LANGS:
 GUIDES_ALL = []
 for g in GUIDES:
     GUIDES_ALL.append(dict(g))
-for g in GUIDES2:
+for g in GUIDES2 + GUIDES3:
     e = {"t": g["t"], "d": g["d"], "b": g["b"]}
+    if g.get("faq"): e["faq"] = g["faq"]
     ng = {"s": g["s"], "img": g["img"], "en": e}
     for l in LANGS[1:]: ng[l] = tr_tree(e, l)
     GUIDES_ALL.append(ng)

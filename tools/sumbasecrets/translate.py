@@ -17,7 +17,10 @@ def _call(lang, batch):
               "(Weekuri, Ratenggaro, Waingapu, Marapu, Pasola, ikat, Sumba) unchanged. Natural, fluent style. No em dashes. "
               "Return ONLY a valid JSON object with exactly the same keys.")
     body = json.dumps({"messages":[{"role":"system","content":sysmsg},{"role":"user","content":json.dumps(batch, ensure_ascii=False)}],"max_tokens":4096,"temperature":0.2}).encode()
-    req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{ACC}/ai/run/{MODEL}", data=body,
+    if os.environ.get("TR_URL"):  # 13-nov-2026: translate through the site's own Worker (Workers AI binding), key in TR_KEY
+        req = urllib.request.Request(os.environ["TR_URL"], data=body, headers={"x-tr-key": os.environ["TR_KEY"], "content-type": "application/json", "user-agent": "curl/8"})
+    else:
+        req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{ACC}/ai/run/{MODEL}", data=body,
           headers={"Authorization":"Bearer "+os.environ["CF_TOKEN"],"content-type":"application/json","user-agent":"curl/8"})
     for attempt in range(4):
         try:
@@ -62,6 +65,9 @@ def _apply(o, m):
     return o
 FIX = {"ja": [("スマバ", "スンバ")], "zh": [("苏巴", "松巴")]}
 def tr_tree(obj, lang):
+    if os.environ.get("TR_SKIP"):  # no translator available: keep only cached strings, leave the rest in English
+        acc = []; _collect(obj, acc)
+        return _apply(obj, {s: CACHE[key(lang, s)] for s in acc if key(lang, s) in CACHE})
     acc = []; _collect(obj, acc)
     m = tr_strings(lang, acc)
     for a, b in FIX.get(lang, []): m = {k: v.replace(a, b) for k, v in m.items()}
