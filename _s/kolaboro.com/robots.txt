@@ -31,5 +31,15 @@ Disallow: /thanks
 Disallow: /watchlist/
 Disallow: /saved/
 Disallow: /old/
+# endpoints that only answer POST from our own pages, and Cloudflare's own paths (n25e: they showed as 404 in Search Console)
+Disallow: /api/kb/analyze
+Disallow: /api/kb/progress
+Disallow: /api/kb/ask
+Disallow: /api/kb/document
+Disallow: /api/kb/plan
+Disallow: /api/kb/report-draft
+Disallow: /api/kb/csp
+Disallow: /api/x/b/
+Disallow: /cdn-cgi/
 
 Sitemap: https://kolaboro.com/sitemap_index.xml

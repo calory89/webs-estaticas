@@ -117,7 +117,7 @@
     var W = window.KBWatch, saved = W ? W.has(c.id) : false;
     var starBtn = W ? '<button type="button" class="btn btn-line pf-star" id="pf-star" aria-pressed="' + saved + '">' + starLabel(saved) + '</button>' : '';
 
-    var html = '<div class="pf-ponly pf-phead"><b>Kolaboro project dossier: ' + esc(c.id) + '</b><span>' + esc(url) + '</span><span>Printed ' + today() + ', data updated ' + esc(D.updated || 'not stated') + '</span></div>' +
+    var html = '<div class="pf-ponly pf-phead"><b>Kolaboro project dossier: ' + esc(c.id) + '</b><span><a href="' + esc(url) + '">' + esc(url) + '</a></span> <span>Printed ' + today() + ', data updated ' + esc(D.updated || 'not stated') + '</span></div>' +
       '<section class="pf-hero"><div class="wrap">' +
       '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/cases">Live cases</a> / <a href="/cases?q=' + encodeURIComponent(c.market) + '">' + esc(c.market) + '</a> / ' + esc(c.id) + '</p>' +
       '<div class="pf-top"><span class="pf-id">' + esc(c.id) + '</span><span class="pf-tier" style="color:' + t[1] + '">' + t[0] + '</span></div>' +
