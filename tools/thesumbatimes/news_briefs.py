@@ -580,4 +580,140 @@ BRIEFS = [
            'caption': {'en': 'File photo: a river near the Kambaniru Dam, Waingapu, East Sumba. It does not show Melolo, Lewa or the meeting described.',
                        'es': 'Foto de archivo: un río junto a la presa de Kambaniru, en Waingapu (Sumba Oriental). No muestra Melolo, Lewa ni la reunión descrita.',
                        'id': 'Foto arsip: sungai di dekat Bendungan Kambaniru, Waingapu, Sumba Timur. Bukan foto Melolo, Lewa, maupun pertemuan yang diberitakan.'}}},
+{'section': 'living',
+ 'slug': 'east-sumba-targets-end-of-aids-tb-malaria-malaria-rate-0-84',
+ 'date': '2026-11-13',
+ 'time': '07:15',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'slugs': {'es': 'sumba-oriental-quiere-eliminar-sida-tuberculosis-malaria-tasa-0-84', 'id': 'sumba-timur-bertekad-eliminasi-aids-tbc-malaria-api-0-84'},
+ 'keywords': {'en': ['malaria Sumba', 'East Sumba health', 'malaria risk Sumba travellers', 'tuberculosis East Sumba', 'HIV East Sumba'],
+              'es': ['malaria en Sumba', 'salud en Sumba Oriental', 'riesgo de malaria Sumba viajeros', 'tuberculosis Sumba Oriental'],
+              'id': ['malaria Sumba Timur', 'eliminasi AIDS TBC malaria', 'kesehatan Sumba Timur', 'risiko malaria wisatawan Sumba']},
+ 'en': {'title': 'East Sumba aims to end AIDS, TB and malaria; malaria rate 0.84',
+        'dek': 'Officials at a Waingapu forum on 11 November reported Q3 2026 figures: malaria at 0.84 cases per 1,000 people, but new TB detection of only 41.3%.',
+        'answer': 'The East Sumba government said at a health forum in Waingapu on 11 November 2026 that it aims to eliminate AIDS, tuberculosis and malaria, '
+                  'Pos-Kupang.com reported on 12 November. Through the third quarter of 2026 malaria stood at 0.84 cases per 1,000 people, under the national target of '
+                  '1 per 1,000, so malaria is not gone and travellers still need protection.',
+        'keys': ['On Wednesday 11 November 2026 East Sumba officials, the NTT health offices association (Adinkes) and partners met at Hotel Padadita in Waingapu to '
+                 'plan an action to eliminate AIDS, TB and malaria.',
+                 'Malaria: an Annual Parasite Incidence of 0.84 per 1,000 people through Q3 2026, under the target of 1 per 1,000.',
+                 'TB: 3,187 suspected cases found against a target of 3,558 (89.6%), but new-case detection reached only 41.3% and treatment success 81.8%.',
+                 'HIV: 5,010 people tested against a target of 8,409 (59.6%); 63.9% of people living with HIV had started ARV treatment.'],
+        'visitors': 'A malaria rate under the national target is not the same as no malaria. Keep using repellent, cover up at dusk, and ask your doctor about '
+                    'prevention before you fly. Our <a href="/en/getting-here/sumba-travel-safety-health/">Sumba health and safety guide</a> explains the risks.',
+        'body': '<p>The East Sumba government says it wants to eliminate AIDS, tuberculosis (TB) and malaria in the regency. The aim was set out at a cross-sector '
+                'partnership forum on Wednesday 11 November 2026 at Hotel Padadita in Waingapu, according to Pos-Kupang.com on 12 November. The meeting followed up a '
+                'letter from the association of NTT provincial health offices (Adinkes) and discussed a programme called Resilient and Sustainable Systems for Health, '
+                'which is linked to The Global Fund.</p><p>Regent Umbu Lili Pekuwali was represented by Yulius Ngenju, Assistant for Economy and Development at the '
+                'Regional Secretariat. He thanked Adinkes and The Global Fund for choosing East Sumba as a programme site and said, in the words reported by '
+                'Pos-Kupang.com, that AIDS, TB and malaria remain real public-health problems in the regency. The talks covered funding from village and urban ward '
+                'budgets, corporate social responsibility support and a regional action plan.</p><h2>Malaria in East Sumba: the figures</h2><p>The most useful number '
+                'for travellers is malaria. Pos-Kupang.com reports an Annual Parasite Incidence of 0.84 per 1,000 people through the third quarter of 2026. That meets '
+                'the target of less than 1 per 1,000. It is an average for the regency, not a guarantee for any village, and it does not cover other parts of Sumba. A '
+                'September 2025 report by the Fair Future Foundation, which runs a malaria prevention project in East Sumba, said testing in the Umalulu area found '
+                'malaria cases outside the usual August to November peak, among children, teenagers and pregnant women.</p><h2>Tuberculosis and HIV: gaps in '
+                'detection</h2><p>For TB, the forum heard that 3,187 suspected cases had been found against a target of 3,558, or 89.6%. However, detection of new TB '
+                'cases reached only 41.3%, and treatment success was 81.8%. The assistant regional secretary noted a wide gap between suspected cases examined and '
+                'confirmed cases. For HIV, 5,010 people were tested against a target of 8,409 (59.6%), and 63.9% of people living with HIV had started antiretroviral '
+                '(ARV) treatment.</p><h2>What it means for travellers and residents</h2><p>Travellers: nothing new is required, but the malaria figure is a reminder to '
+                'take precautions. Use repellent, sleep under a net where advised, wear long sleeves at dusk and talk to a doctor or travel clinic before the trip about '
+                'prophylaxis. Healthcare in Sumba is basic; see the <a href="/en/getting-here/sumba-travel-safety-health/">health and safety guide</a> (the section on '
+                'hospitals and medical care) and the <a href="/en/places/waingapu-town/">Waingapu town page</a> if you are staying in town. Residents: the TB detection '
+                'gap means anyone with a cough lasting more than two weeks should get tested at a puskesmas (community health centre). The plan is an intention, with no '
+                'funding amounts announced.</p>',
+        'faq': [['Is there malaria in Sumba?',
+                 'Yes. Pos-Kupang.com reported on 12 November 2026 that East Sumba had 0.84 malaria cases per 1,000 people through the third quarter of 2026, under the '
+                 'national target of 1 per 1,000. That means malaria is still present and travellers should take precautions.'],
+                ['What did East Sumba announce on 11 November 2026?',
+                 'At a forum in Waingapu, the regency said it aims to eliminate AIDS, tuberculosis and malaria, and discussed funding and a regional action plan with '
+                 'Adinkes and The Global Fund. No amounts were announced.']]},
+ 'es': {'title': 'Sumba Oriental busca acabar con sida, TB y malaria; tasa de 0,84',
+        'dek': 'Un foro en Waingapu dio cifras del tercer trimestre: malaria en 0,84 por 1.000 habitantes y solo un 41,3 % de casos nuevos de TB detectados.',
+        'answer': 'El Gobierno de Sumba Oriental anunció en un foro de salud en Waingapu el 11 de noviembre de 2026 que quiere eliminar el sida, la tuberculosis y la '
+                  'malaria, informó Pos-Kupang.com el 12 de noviembre. Hasta el tercer trimestre de 2026 la malaria estaba en 0,84 casos por 1.000 habitantes, por '
+                  'debajo del objetivo nacional de 1 por 1.000; no ha desaparecido y el viajero debe protegerse.',
+        'keys': ['El miércoles 11 de noviembre de 2026, autoridades de Sumba Oriental, la asociación de oficinas de salud de NTT (Adinkes) y otros socios se reunieron '
+                 'en el Hotel Padadita de Waingapu para preparar un plan de eliminación del sida, la TB y la malaria.',
+                 'Malaria: incidencia parasitaria anual de 0,84 por 1.000 habitantes hasta el tercer trimestre de 2026, por debajo del objetivo de 1 por 1.000.',
+                 'TB: 3.187 casos sospechosos detectados frente a un objetivo de 3.558 (89,6 %), pero la detección de casos nuevos llegó solo al 41,3 % y el éxito del '
+                 'tratamiento al 81,8 %.',
+                 'VIH: 5.010 personas analizadas frente a un objetivo de 8.409 (59,6 %); el 63,9 % de las personas con VIH había empezado el tratamiento '
+                 'antirretroviral.'],
+        'visitors': 'Una tasa de malaria por debajo del objetivo nacional no significa que no haya malaria. Sigue usando repelente, cúbrete al atardecer y consulta con '
+                    'tu médico la prevención antes de volar. Nuestra <a href="/es/getting-here/es-seguro-viajar-a-sumba-salud-malaria/">guía de salud y seguridad en '
+                    'Sumba</a> explica los riesgos.',
+        'body': '<p>El Gobierno de Sumba Oriental dice que quiere eliminar el sida, la tuberculosis (TB) y la malaria en la regencia. El objetivo se expuso en un foro '
+                'de colaboración entre sectores el miércoles 11 de noviembre de 2026 en el Hotel Padadita de Waingapu, según Pos-Kupang.com el 12 de noviembre. La '
+                'reunión respondía a una carta de la asociación de oficinas provinciales de salud de NTT (Adinkes) y trató un programa llamado Sistemas de Salud '
+                'Resilientes y Sostenibles, vinculado al Fondo Mundial.</p><p>El regente, Umbu Lili Pekuwali, estuvo representado por Yulius Ngenju, asistente de '
+                'Economía y Desarrollo de la Secretaría Regional. Agradeció a Adinkes y al Fondo Mundial que eligieran Sumba Oriental como sede del programa y afirmó, '
+                'en palabras recogidas por Pos-Kupang.com, que el sida, la TB y la malaria siguen siendo problemas reales de salud pública en la regencia. Se habló de '
+                'la financiación con presupuestos de aldeas y barrios, del apoyo de la responsabilidad social empresarial y de un plan de acción '
+                'regional.</p><h2>Malaria en Sumba Oriental: las cifras</h2><p>La cifra más útil para el viajero es la de la malaria. Pos-Kupang.com cita una incidencia '
+                'parasitaria anual de 0,84 por 1.000 habitantes hasta el tercer trimestre de 2026. Cumple el objetivo de menos de 1 por 1.000. Es un promedio de la '
+                'regencia, no una garantía para cada aldea, y no incluye otras zonas de Sumba. Un informe de septiembre de 2025 de la Fair Future Foundation, que lleva '
+                'un proyecto de prevención de la malaria en Sumba Oriental, indicó que las pruebas en la zona de Umalulu detectaron casos fuera del pico habitual de '
+                'agosto a noviembre, entre niños, adolescentes y embarazadas.</p><h2>Tuberculosis y VIH: huecos en la detección</h2><p>En la TB, el foro conoció que se '
+                'habían detectado 3.187 casos sospechosos frente a un objetivo de 3.558, un 89,6 %. Sin embargo, la detección de casos nuevos llegó solo al 41,3 % y el '
+                'éxito del tratamiento fue del 81,8 %. El asistente de la secretaría regional señaló una gran distancia entre los casos sospechosos examinados y los '
+                'confirmados. En el VIH se analizó a 5.010 personas frente a un objetivo de 8.409 (59,6 %), y el 63,9 % de las personas con VIH había iniciado el '
+                'tratamiento antirretroviral.</p><h2>Qué significa para viajeros y residentes</h2><p>Viajeros: no se exige nada nuevo, pero la cifra de malaria recuerda '
+                'que conviene tomar precauciones. Usa repelente, duerme bajo mosquitera cuando se aconseje, lleva manga larga al atardecer y consulta con tu médico o '
+                'con un centro de viajeros la profilaxis antes del viaje. La atención médica en Sumba es básica; consulta la <a '
+                'href="/es/getting-here/es-seguro-viajar-a-sumba-salud-malaria/">guía de salud y seguridad</a> (la sección sobre hospitales y atención médica) y la <a '
+                'href="/es/places/waingapu-town/">página de la ciudad de Waingapu</a> si te alojas en la ciudad. Residentes: por la brecha de detección de la TB, quien '
+                'tenga tos de más de dos semanas debería hacerse la prueba en un puskesmas (centro de salud comunitario). El plan es una intención y no se ha anunciado '
+                'ninguna cifra de financiación.</p>',
+        'faq': [['¿Hay malaria en Sumba?',
+                 'Sí. Pos-Kupang.com informó el 12 de noviembre de 2026 de que Sumba Oriental tenía 0,84 casos de malaria por 1.000 habitantes hasta el tercer trimestre '
+                 'de 2026, por debajo del objetivo nacional de 1 por 1.000. Es decir, sigue habiendo malaria y el viajero debe tomar precauciones.'],
+                ['¿Qué anunció Sumba Oriental el 11 de noviembre de 2026?',
+                 'En un foro en Waingapu, la regencia dijo que quiere eliminar el sida, la tuberculosis y la malaria, y habló de financiación y de un plan de acción '
+                 'regional con Adinkes y el Fondo Mundial. No se anunciaron importes.']]},
+ 'id': {'title': 'Sumba Timur bertekad eliminasi AIDS, TBC, malaria; API 0,84',
+        'dek': 'Dalam forum di Waingapu pada 11 November dipaparkan data triwulan III 2026: malaria 0,84 per 1.000 penduduk, tetapi penemuan kasus baru TBC baru 41,3 '
+               'persen.',
+        'answer': 'Pemkab Sumba Timur menyatakan dalam forum kesehatan di Waingapu pada 11 November 2026 bahwa pihaknya bertekad mengeliminasi AIDS, tuberkulosis, dan '
+                  'malaria, lapor Pos-Kupang.com pada 12 November. Hingga triwulan III 2026 angka malaria (API) 0,84 per 1.000 penduduk, di bawah target nasional 1 per '
+                  '1.000; malaria belum hilang, sehingga wisatawan tetap perlu melindungi diri.',
+        'keys': ['Pada Rabu, 11 November 2026, pemerintah Sumba Timur, Asosiasi Dinas Kesehatan (Adinkes) NTT, dan mitra bertemu di Hotel Padadita, Waingapu, untuk '
+                 'menyusun aksi eliminasi AIDS, TBC, dan malaria.',
+                 'Malaria: Annual Parasite Incidence (API) 0,84 per 1.000 penduduk hingga triwulan III 2026, di bawah target 1 per 1.000.',
+                 'TBC: 3.187 terduga ditemukan dari target 3.558 (89,6 persen), tetapi penemuan kasus baru hanya 41,3 persen dan keberhasilan pengobatan 81,8 persen.',
+                 'HIV: 5.010 orang dites dari target 8.409 (59,6 persen); 63,9 persen orang dengan HIV sudah memulai pengobatan ARV.'],
+        'visitors': 'API malaria di bawah target nasional bukan berarti tidak ada malaria. Tetap gunakan obat nyamuk, tutupi badan saat senja, dan tanyakan pencegahan '
+                    'kepada dokter sebelum terbang. <a href="/id/getting-here/keamanan-dan-kesehatan-wisata-sumba/">Panduan kesehatan dan keamanan Sumba</a> kami '
+                    'menjelaskan risikonya.',
+        'body': '<p>Pemerintah Kabupaten Sumba Timur menyatakan bertekad mengeliminasi AIDS, tuberkulosis (TBC), dan malaria di wilayahnya. Tekad itu disampaikan dalam '
+                'rapat forum kemitraan lintas sektor pada Rabu, 11 November 2026, di Hotel Padadita, Waingapu, menurut Pos-Kupang.com pada 12 November. Pertemuan itu '
+                'menindaklanjuti surat Asosiasi Dinas Kesehatan Provinsi (Adinkes) NTT dan membahas program Resilient and Sustainable Systems for Health (RSSH) ATM yang '
+                'terkait dengan The Global Fund.</p><p>Bupati Umbu Lili Pekuwali diwakili Asisten Perekonomian dan Pembangunan Setda, Yulius Ngenju. Ia berterima kasih '
+                'kepada Adinkes dan The Global Fund yang memilih Sumba Timur sebagai lokasi program, dan menyatakan, seperti dikutip Pos-Kupang.com, bahwa AIDS, TBC, '
+                'dan malaria masih menjadi persoalan kesehatan masyarakat yang nyata di daerah. Pembahasan mencakup pendanaan dari anggaran desa dan kelurahan, dukungan '
+                'CSR perusahaan, dan rencana aksi daerah.</p><h2>Malaria di Sumba Timur: angkanya</h2><p>Angka yang paling berguna bagi wisatawan adalah malaria. '
+                'Pos-Kupang.com melaporkan Annual Parasite Incidence (API) 0,84 per 1.000 penduduk hingga triwulan III 2026. Angka itu memenuhi target di bawah 1 per '
+                '1.000. Ini rata-rata kabupaten, bukan jaminan untuk setiap desa, dan tidak mencakup wilayah Sumba lainnya. Laporan Fair Future Foundation pada '
+                'September 2025, yang menjalankan proyek pencegahan malaria di Sumba Timur, menyebut pemeriksaan di wilayah Umalulu menemukan kasus malaria di luar '
+                'puncak musim Agustus sampai November, pada anak-anak, remaja, dan ibu hamil.</p><h2>TBC dan HIV: celah penemuan kasus</h2><p>Untuk TBC, forum mendengar '
+                'bahwa 3.187 terduga telah ditemukan dari target 3.558, atau 89,6 persen. Namun penemuan kasus TBC baru hanya mencapai 41,3 persen dan keberhasilan '
+                'pengobatan 81,8 persen. Asisten Setda mencatat adanya jarak lebar antara terduga yang diperiksa dan kasus yang terkonfirmasi. Untuk HIV, 5.010 orang '
+                'dites dari target 8.409 (59,6 persen), dan 63,9 persen orang dengan HIV telah memulai pengobatan antiretroviral (ARV).</p><h2>Apa artinya bagi '
+                'wisatawan dan warga</h2><p>Wisatawan: tidak ada aturan baru, tetapi angka malaria ini mengingatkan agar tetap berhati-hati. Gunakan obat nyamuk, tidur '
+                'dengan kelambu bila dianjurkan, kenakan lengan panjang saat senja, dan bicarakan profilaksis dengan dokter atau klinik perjalanan sebelum berangkat. '
+                'Layanan kesehatan di Sumba terbatas; lihat <a href="/id/getting-here/keamanan-dan-kesehatan-wisata-sumba/">panduan kesehatan dan keamanan</a> (bagian '
+                'tentang rumah sakit dan layanan medis) dan <a href="/id/places/waingapu-town/">halaman kota Waingapu</a> bila Anda menginap di kota. Warga: karena '
+                'penemuan kasus TBC masih rendah, siapa pun yang batuk lebih dari dua minggu sebaiknya memeriksakan diri ke puskesmas. Rencana ini baru niat; belum ada '
+                'nilai anggaran yang diumumkan.</p>',
+        'faq': [['Apakah ada malaria di Sumba?',
+                 'Ada. Pos-Kupang.com melaporkan pada 12 November 2026 bahwa Sumba Timur mencatat API malaria 0,84 per 1.000 penduduk hingga triwulan III 2026, di bawah '
+                 'target nasional 1 per 1.000. Artinya malaria masih ada dan wisatawan perlu berhati-hati.'],
+                ['Apa yang diumumkan Sumba Timur pada 11 November 2026?',
+                 'Dalam forum di Waingapu, pemerintah kabupaten menyatakan bertekad mengeliminasi AIDS, TBC, dan malaria, serta membahas pendanaan dan rencana aksi '
+                 'daerah bersama Adinkes dan The Global Fund. Nilai anggaran belum diumumkan.']]},
+ 'sources': [['Pos-Kupang.com: Pemkab Sumba Timur Bertekad Eliminasi AIDS, TBC dan Malaria (12 Nov 2026)',
+              'https://kupang.tribunnews.com/regional-ntt/986787/pemkab-sumba-timur-bertekad-eliminasi-aids-tbc-dan-malaria'],
+             ['Fair Future Foundation: Testing uncovers malaria cases outside the peak season in East Sumba villages (22 Sep 2025)',
+              'https://fairfuturefoundation.org/?p=25114929']],
+ 'img_key': 'waingapu-port-drug-checks-ferry-passengers'},
 ]
