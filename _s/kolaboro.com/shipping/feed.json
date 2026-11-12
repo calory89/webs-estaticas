@@ -13,17 +13,31 @@
  ],
  "items": [
   {
-   "id": "https://kolaboro.com/shipping/#d-2026-11-11",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-11",
-   "title": "11 November 2026: 1 change shipped so far",
-   "content_text": "- Supabase: clave publica nueva en el worker (kolaboro, jurimatch, jobersity, realhunt)\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Supabase: clave publica nueva en el worker (kolaboro, jurimatch, jobersity, realhunt)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
-   "date_published": "2026-11-11T00:00:00Z",
-   "date_modified": "2026-11-11T06:38:21Z",
+   "id": "https://kolaboro.com/shipping/#d-2026-11-12",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-12",
+   "title": "12 November 2026: 13 changes shipped so far",
+   "content_text": "- Transparency rankings (n23): consent box before the button, \"page we read\" as the source label (some tracked pages are sales pages)\n- N22e ticker line covers the later fixes of the sweep (broken links on translated pages, weekly file list on the verify page)\n- Transparency rankings layout (n23): score details in a full-width row, no horizontal scroll on phones\n- Transparency rankings (n23): phone cards with the project name as title, score and bar together\n- 27 new projects in 11 countries (1,294 tracked), not yet reviewed, every fact sourced (n22h)\n- 60 new projects in 17 countries (1,234 tracked), not yet reviewed, every fact sourced\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Transparency rankings (n23): consent box before the button, &quot;page we read&quot; as the source label (some tracked pages are sales pages)</li><li>N22e ticker line covers the later fixes of the sweep (broken links on translated pages, weekly file list on the verify page)</li><li>Transparency rankings layout (n23): score details in a full-width row, no horizontal scroll on phones</li><li>Transparency rankings (n23): phone cards with the project name as title, score and bar together</li><li>27 new projects in 11 countries (1,294 tracked), not yet reviewed, every fact sourced (n22h)</li><li>60 new projects in 17 countries (1,234 tracked), not yet reviewed, every fact sourced</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-12T00:00:00Z",
+   "date_modified": "2026-11-12T02:19:10Z",
    "_kolaboro": {
-    "ships": 1,
-    "data_updates": 0,
+    "ships": 13,
+    "data_updates": 1,
     "method": "so-far"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-11",
+   "url": "https://kolaboro.com/changelog/2026-11-11/",
+   "title": "11 November 2026: 21 changes shipped",
+   "content_text": "- Can you legally short-let there (rules table with official sources on project pages, /guides/short-let-rules/ in 8 languages, JSON); filings module wired, data to follow\n- Official filings of listed developers (exchange, ticker, filings link, latest SEC annual report; 39 developer pages), short-let rules table layout on phones\n- Promised dates as a calendar (.ics) and where the schedule puts the project today, bulk check against the public index, sealed X-ray page in 8 languages\n- Around the site (OpenStreetMap places, CAMS air), distance claims next to the map, climate at the plot (CMIP6) on pinned project pages (n21b)\n- Site.js measures scrollable boxes only near the screen and rescans links only when links were added (no forced layout of off-screen sections)\n- Bulk check content masked in session recordings, sealed X-ray language menu keeps the page, larger calendar button in the portal\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Can you legally short-let there (rules table with official sources on project pages, /guides/short-let-rules/ in 8 languages, JSON); filings module wired, data to follow</li><li>Official filings of listed developers (exchange, ticker, filings link, latest SEC annual report; 39 developer pages), short-let rules table layout on phones</li><li>Promised dates as a calendar (.ics) and where the schedule puts the project today, bulk check against the public index, sealed X-ray page in 8 languages</li><li>Around the site (OpenStreetMap places, CAMS air), distance claims next to the map, climate at the plot (CMIP6) on pinned project pages (n21b)</li><li>Site.js measures scrollable boxes only near the screen and rescans links only when links were added (no forced layout of off-screen sections)</li><li>Bulk check content masked in session recordings, sealed X-ray language menu keeps the page, larger calendar button in the portal</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-11T00:00:00Z",
+   "date_modified": "2026-11-11T20:39:05Z",
+   "_kolaboro": {
+    "ships": 21,
+    "data_updates": 10,
+    "method": "deterministic"
    }
   },
   {
