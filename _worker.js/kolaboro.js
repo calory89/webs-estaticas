@@ -1627,7 +1627,10 @@ export async function ssr(base, u, kind) {
     ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
   }
   const nm = ((base.headers.get('content-security-policy-report-only') || '') + ' ' + (base.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
-  const tags = '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
+  // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section
+  // around after first paint (layout shift 0.8 to 1.6). With scripting on, the list is not painted and the body keeps its room.
+  const cls22 = kind === 'p' ? '' : '<style>@media (scripting:enabled){#ssr.ssr-only{display:none}}#mk-body:empty{min-height:130vh}</style>';
+  const tags = cls22 + '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
   let seenTitle = false;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })

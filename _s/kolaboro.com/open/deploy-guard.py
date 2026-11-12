@@ -73,7 +73,21 @@ def ensure_browser():
     if os.path.exists(os.path.join(PW, 'node_modules', 'playwright')): return
     os.makedirs(PW, exist_ok=True)
     subprocess.run(['npm', 'i', '-s', '--no-save', '--prefix', PW, 'playwright@' + PW_VERSION], check=True)
-    subprocess.run(['npx', '--prefix', PW, 'playwright', 'install', '--with-deps', 'chromium'], check=True, cwd=PW, capture_output=True)
+    # n22e (12 Nov 2026): the run of 11 Nov spent 10 minutes in "install --with-deps" (system packages) and failed without a word.
+    # The runner image already carries the libraries Chromium needs, so the browser alone is tried first; system packages only
+    # if that fails, with a time limit, and the output is printed.
+    for args in (['chromium'], ['--with-deps', 'chromium']):
+        try:
+            r = subprocess.run(['npx', '--prefix', PW, 'playwright', 'install'] + args, cwd=PW, capture_output=True, text=True, timeout=240)
+        except subprocess.TimeoutExpired:
+            print('playwright install %s: no result after 240 s' % ' '.join(args), flush=True); continue
+        if r.returncode == 0:
+            # the browser must really start before the smoke checks rely on it (a missing system library shows here, not later)
+            t = subprocess.run(['node', '-e', "require('playwright').chromium.launch().then(b=>b.close()).then(()=>process.exit(0),e=>{console.error(String(e).slice(0,300));process.exit(1)})"], cwd=PW, capture_output=True, text=True, timeout=120)
+            if t.returncode == 0: return
+            print('browser installed with %s does not start: %s' % (' '.join(args), (t.stderr or '')[-300:]), flush=True); continue
+        print('playwright install %s failed (%s): %s' % (' '.join(args), r.returncode, ((r.stderr or '') + (r.stdout or ''))[-600:]), flush=True)
+    raise RuntimeError('could not install the browser for the smoke checks')
 
 
 def smoke(expect, inject=False):

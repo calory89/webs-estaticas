@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'qa13c';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'n22e1';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();
@@ -617,7 +617,7 @@ async function page(root, env, ctx, shell, qlang) {
   const ltr = t => '<bdi dir="ltr">' + escH(t) + '</bdi>';
   const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="' + pl + '/">Kolaboro</a> / <a href="' + pl + '/check/">' + escH(X('check')) + '</a> / ' + escH(X('xray')) + '</p><h1 class="xr-h1">' + (d ? escH(X('h1', { n: '\u0001' })).replace('\u0001', '<bdi>' + escH(clip(name, 80)) + '</bdi>') : escH(X('h1_nf'))) + '</h1>' +
     (d ? '<p class="lead">' + escH(X('lead', { d: '\u0001', t: '\u0002' })).replace('\u0001', ltr(String(d.meta.started_at).slice(0, 10))).replace('\u0002', ltr(String(d.meta.started_at).slice(11, 16))) + '</p><p class="xr-fp">' + escH(X('fp')) + '<code dir="ltr">' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="' + pl + '/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">' + escH(X('again')) + '</a></p>' : '<p class="lead">' + escH(X('lead_nf')) + '</p><p><a class="btn btn-hi" href="' + pl + '/check/">' + escH(X('fresh')) + '</a></p>') + '</div></section>' +
-    '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}</style>' +
+    '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}#xr-sealed:empty{min-height:110vh}</style>' +
     '<section class="sec" id="analyze"><div class="wrap"><div id="xr-sealed" data-root="' + root + '"></div>' + noJs + '</div></section>' +
     '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=n20f1" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
   const r = new HTMLRewriter()
