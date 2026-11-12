@@ -2,6 +2,20 @@
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
   {
+   "date": "2026-11-12",
+   "kind": "data",
+   "text": "60 more projects added in 17 countries across Europe, the Middle East and Africa, from France, Germany and Spain to the UAE, Oman, Egypt, Kenya and South Africa (1,234 tracked in total): 43 have a handover date as the developer publishes it and 25 have a map pin from the developer's own map or address; every fact has a source link and none is reviewed or scored yet",
+   "tl": {
+    "es": "60 proyectos más añadidos en 17 países de Europa, Oriente Medio y África, de Francia, Alemania y España a EAU, Omán, Egipto, Kenia y Sudáfrica (1.234 en seguimiento en total): 43 tienen la fecha de entrega tal como la publica el promotor y 25 tienen un punto en el mapa tomado del mapa o la dirección del propio promotor; cada dato lleva un enlace a su fuente y ninguno está revisado ni puntuado todavía",
+    "fr": "60 projets de plus ajoutés dans 17 pays d'Europe, du Moyen-Orient et d'Afrique, de la France, l'Allemagne et l'Espagne aux EAU, à Oman, l'Égypte, le Kenya et l'Afrique du Sud (1 234 suivis au total) : 43 ont une date de livraison telle que le promoteur la publie et 25 ont un repère sur la carte tiré de la carte ou de l'adresse du promoteur ; chaque fait a un lien source et aucun n'est encore examiné ni noté",
+    "de": "60 weitere Projekte in 17 Ländern in Europa, im Nahen Osten und in Afrika hinzugefügt, von Frankreich, Deutschland und Spanien bis zu den VAE, Oman, Ägypten, Kenia und Südafrika (insgesamt 1.234 verfolgt): 43 haben einen Übergabetermin, wie ihn der Bauträger veröffentlicht, und 25 einen Kartenpunkt aus der Karte oder Adresse des Bauträgers; jede Angabe hat einen Quellenlink, noch keines ist geprüft oder bewertet",
+    "nl": "60 projecten toegevoegd in 17 landen in Europa, het Midden-Oosten en Afrika, van Frankrijk, Duitsland en Spanje tot de VAE, Oman, Egypte, Kenia en Zuid-Afrika (1.234 gevolgd in totaal): 43 hebben een opleverdatum zoals de ontwikkelaar die publiceert en 25 een kaartpunt uit de kaart of het adres van de ontwikkelaar zelf; bij elk feit staat een bronlink en nog geen enkel project is beoordeeld of gescoord",
+    "ru": "Добавлено ещё 60 проектов в 17 странах Европы, Ближнего Востока и Африки, от Франции, Германии и Испании до ОАЭ, Омана, Египта, Кении и ЮАР (всего отслеживается 1 234): у 43 указан срок сдачи в том виде, как его публикует застройщик, у 25 есть точка на карте по карте или адресу самого застройщика; у каждого факта есть ссылка на источник, ни один проект пока не проверен и не оценён",
+    "zh": "新增 60 个项目,覆盖欧洲、中东和非洲 17 个国家,从法国、德国、西班牙到阿联酋、阿曼、埃及、肯尼亚和南非(共跟踪 1,234 个):其中 43 个有开发商按原文公布的交付日期,25 个有取自开发商地图或地址的地图定位;每项事实都有来源链接,目前均未审核、未评分",
+    "ar": "أضيف 60 مشروعا آخر في 17 دولة في أوروبا والشرق الأوسط وأفريقيا، من فرنسا وألمانيا وإسبانيا إلى الإمارات وعُمان ومصر وكينيا وجنوب أفريقيا (المجموع 1,234 مشروعا قيد المتابعة): 43 منها لها تاريخ تسليم كما ينشره المطور و25 لها موقع على الخريطة مأخوذ من خريطة المطور أو عنوانه؛ لكل معلومة رابط مصدر ولم يراجع أي منها ولم يقيّم بعد"
+   }
+  },
+  {
    "date": "2026-11-11",
    "kind": "shipped",
    "text": "Developer pages now list official gazette notices about the developer's company when it is identified by its exact legal name: Spain's BORME (every daily issue of the last 12 months), France's BODACC (by SIREN number) and The Gazette in the UK, with notice type, date and link; no names of people are copied",
