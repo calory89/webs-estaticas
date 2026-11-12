@@ -209,3 +209,8 @@ NEAR = {
  "ja": {"t": "マンボロ周辺のトップ10", "d": "静かな中央スンバ北海岸のマンボロから行ける、美しいビーチ、滝、村を距離順に紹介します。", "km": "km（マンボロから）", "chip": "マンボロ トップ10", "base": "Eco Beach City · マンボロ", "base_d": "Sumba Secrets の発行元で、北海岸にあります。トップ10の距離はここから測っています。", "go": "トップ10を見る", "map": "地図で見る", "why": "マンボロの魅力", "why_d": "サバンナの丘、人のいない白砂のビーチ、漁村、そしてスンバ最古級の巨石文化。にぎやかな南西部から遠く離れています。", "visit": "サイトを見る"},
  "ko": {"t": "맘보로 주변 톱 10", "d": "조용한 중앙 숨바 북쪽 해안의 맘보로에서 갈 수 있는 최고의 해변, 폭포, 마을을 거리순으로 소개합니다.", "km": "km (맘보로에서)", "chip": "맘보로 톱 10", "base": "Eco Beach City · 맘보로", "base_d": "Sumba Secrets의 발행처로 북쪽 해안에 있습니다. 톱 10의 거리는 이곳에서 잰 것입니다.", "go": "톱 10 보기", "map": "지도에서 보기", "why": "왜 맘보로인가", "why_d": "사바나 언덕, 한적한 백사장, 어촌 마을, 그리고 숨바에서 가장 오래된 거석 문화가 붐비는 남서부에서 멀리 떨어져 있습니다.", "visit": "웹사이트 방문"},
 }
+
+# 13-nov-2026 · Prai Ijing (Desa Tebara, Kota Waikabubak). Sources: GNFI 9-oct-2020, UNY/UNPAR papers. Coordinates: OSM village Tebara (approx.).
+MAMBORO.append(_p("prai-ijing", "village", "sb", [-9.62866, 119.46095], False, "Kampung Adat Prai Ijing", {
+  "en": {"n": "Prai Ijing Village", "t": "A traditional village in Tebara, on the edge of Waikabubak in West Sumba, with several dozen high-roofed clan houses rising in terraces up a hillside around megalithic tombs. Prai means village and Ijing is a wild fruit tree that once grew here. It is one of the easiest traditional villages to visit from Waikabubak.", "tip": "Sign the guestbook and leave a donation. Ask before photographing people, and do not climb on the stone tombs."}}))
+MAMBORO_GAL["prai-ijing"] = [{k: v for k, v in GALLERY["waigalli-village"][0].items() if k != "fp"}]
