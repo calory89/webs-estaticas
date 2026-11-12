@@ -32,6 +32,14 @@
   ]
  },
  {
+  "a": "beach-walk-residences-4-imtiaz",
+  "b": "beach-walk-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "cipriani-residences-miami",
   "b": "residences-1428-brickell-ytech",
   "market": "Miami",
@@ -112,8 +120,88 @@
   ]
  },
  {
+  "a": "sunset-bay-grand-by-imtiaz",
+  "b": "sunset-bay-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-grand-by-imtiaz",
+  "b": "sunset-bay-3-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-grand-by-imtiaz",
+  "b": "sunset-bay-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-grand-by-imtiaz",
+  "b": "sunset-bay-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "beach-walk-grand-2-by-imtiaz",
   "b": "beach-walk-grand-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-grand-2-by-imtiaz",
+  "b": "beach-walk-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-grand-by-imtiaz",
+  "b": "beach-walk-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-by-imtiaz",
+  "b": "sunset-bay-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-by-imtiaz",
+  "b": "sunset-bay-3-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-by-imtiaz",
+  "b": "sunset-bay-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-by-imtiaz",
+  "b": "sunset-bay-5-by-imtiaz",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -123,6 +211,62 @@
   "a": "atrium-gardens-the-ellinikon-little-athens",
   "b": "trinity-gardens-the-ellinikon-little-athens",
   "market": "Greece",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-2-by-imtiaz",
+  "b": "sunset-bay-3-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-2-by-imtiaz",
+  "b": "sunset-bay-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-2-by-imtiaz",
+  "b": "sunset-bay-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-3-by-imtiaz",
+  "b": "sunset-bay-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-3-by-imtiaz",
+  "b": "sunset-bay-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sunset-bay-4-by-imtiaz",
+  "b": "sunset-bay-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "ege-yapi-gokturk",
+  "b": "ege-yapi-beyoglu",
+  "market": "Istanbul",
   "why": [
    "similar name"
   ]

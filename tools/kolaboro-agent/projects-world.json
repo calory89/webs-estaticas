@@ -204512,6 +204512,5581 @@
    "added": "2026-11-12",
    "found_by": "discover-manual",
    "slug": "saraya-al-ruba"
+  },
+  {
+   "name": "Residensi M Aria",
+   "developer": "Mah Sing Group (M Aria Sdn Bhd)",
+   "area": "Rivercity, Jalan Sultan Azlan Shah, Sentul, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/m-aria-sentul/",
+   "docs_url": "https://www.mahsing.com.my/projects/m-aria-sentul/",
+   "permit_number": "31251-1/01-2029/0037(A)-(S)",
+   "seed": {
+    "price": 635000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "January 2030",
+    "permit_claim": true,
+    "permit_number": "31251-1/01-2029/0037(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 606,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: January 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 31251/12-2030/0307(N) and advertising and sales permit 31251-1/01-2029/0037(A)-(S); approving authority: Dewan Bandaraya Kuala Lumpur; building plan reference BP U1 OSC 2025 3414 (5)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "606 units; freehold; selling price from RM635,000 to RM750,000 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Project address published on the project page: Lot No. 468 B(B), Block B, Rivercity, Jalan Sultan Azlan Shah, Jalan Ipoh, 51200 Kuala Lumpur; from RM483,000 onwards on the project page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/m-aria-sentul/"
+    },
+    {
+     "claim": "Pin: 3.1798811, 101.6829472 (coordinates of the \"M Aria @ Sentul\" navigation link on the developer page); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/m-aria-sentul/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "M Aria Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "January 2030",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 635000,
+    "price_max": 750000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 3.1798811,
+    "lng": 101.6829472,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur"
+   },
+   "note": "Residensi M Aria by Mah Sing Group in Rivercity, Jalan Sultan Azlan Shah, Sentul, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: January 2030. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/m-aria-sentul/"
+   ],
+   "docs_listed": [
+    "Project address published on the project page: Lot No. 468 B(B), Block B, Rivercity, Jalan Sultan Azlan Shah, Jalan Ipoh, 51200 Kuala Lumpur; from RM483,000 onwards on the project page",
+    "Pin: 3.1798811, 101.6829472 (coordinates of the \"M Aria @ Sentul\" navigation link on the developer page); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-aria"
+  },
+  {
+   "name": "Residensi M Terra",
+   "developer": "Mah Sing Group (Supreme Springs Sdn Bhd)",
+   "area": "Puchong, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/puchong-condo-m-terra/",
+   "docs_url": "https://www.mahsing.com.my/projects/puchong-condo-m-terra/",
+   "permit_number": "30805-1/07-2027/0679(A)-(S)",
+   "seed": {
+    "price": 546250,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2027",
+    "permit_claim": true,
+    "permit_number": "30805-1/07-2027/0679(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 999,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: August 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 30805/06-2029/0147(N) and advertising and sales permit 30805-1/07-2027/0679(A)-(S); approving authority: Majlis Bandaraya Subang Jaya; building plan reference MBSJ.BGN.BP5.600-1/10/4/4(28)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "999 units in total (748 serviced apartments and 251 RMM units at RM250,000); leasehold, 74 years expiring 24 March 2098; selling price from RM546,250 to RM909,535 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Supreme Springs Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "August 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 546250,
+    "price_max": 909535,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Bandaraya Subang Jaya"
+   },
+   "note": "Residensi M Terra by Mah Sing Group in Puchong, Selangor (Malaysia). Added from the official developer page: off-plan; handover on record: August 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/puchong-condo-m-terra/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-terra"
+  },
+  {
+   "name": "M Legasi (Phase 3)",
+   "developer": "Mah Sing Group (Mestika Bistari Sdn. Bhd.)",
+   "area": "Semenyih, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/semenyih-house-for-sale-m-legasi/",
+   "docs_url": "https://www.mahsing.com.my/projects/semenyih-house-for-sale-m-legasi/",
+   "permit_number": "30897-3/09-2027/0726(N)-(L)",
+   "seed": {
+    "price": 769216,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2028",
+    "permit_claim": true,
+    "permit_number": "30897-3/09-2027/0726(N)-(L)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 231,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: August 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 30897/10-2029/0240(A) and advertising and sales permit 30897-3/09-2027/0726(N)-(L); approving authority: Majlis Perbandaran Kajang; building plan reference Bil.(24)dlm.MPKj2/P/21/2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "231 two-storey terrace homes in Phase 3 (Types A and B); freehold; selling price from RM769,216 to RM1,141,056 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Mestika Bistari Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "August 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-storey terrace home"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 769216,
+    "price_max": 1141056,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Perbandaran Kajang"
+   },
+   "note": "M Legasi (Phase 3) by Mah Sing Group in Semenyih, Selangor (Malaysia). Added from the official developer page: off-plan; handover on record: August 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/semenyih-house-for-sale-m-legasi/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "m-legasi-phase-3"
+  },
+  {
+   "name": "M Zenni",
+   "developer": "Mah Sing Group (Vienna View Development Sdn. Bhd.)",
+   "area": "Southbay City, Batu Maung, Bayan Lepas, Penang",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/penang-new-condo-m-zenni/",
+   "docs_url": "https://www.mahsing.com.my/projects/penang-new-condo-m-zenni/",
+   "permit_number": "12029-3/09-2028/0779(A)-(S)",
+   "seed": {
+    "price": 657250,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2029",
+    "permit_claim": true,
+    "permit_number": "12029-3/09-2028/0779(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 494,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: September 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 12029/11-2027/1276(A) and advertising and sales permit 12029-3/09-2028/0779(A)-(S); approving authority: Majlis Bandaraya Pulau Pinang; building plan reference MBPP.OSC-PB1450/2025",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "494 serviced apartment units; freehold; selling price from RM657,250 to RM1,139,750 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The project page describes a 33-storey tower with 10 commercial lots within the Southbay township, 900 m from the Second Penang Bridge and 1.5 km from Penang International Airport (distances as published)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/penang-new-condo-m-zenni/"
+    },
+    {
+     "claim": "Pin: 5.284251, 100.288933 (Cangkat Batu Maung 1, the address the developer publishes for M Zenni, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/penang-new-condo-m-zenni/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Vienna View Development Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "September 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 657250,
+    "price_max": 1139750,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 5.284251,
+    "lng": 100.288933,
+    "permit_authority": "Majlis Bandaraya Pulau Pinang"
+   },
+   "note": "M Zenni by Mah Sing Group in Southbay City, Batu Maung, Bayan Lepas, Penang (Malaysia). Added from the official developer page: off-plan; handover on record: September 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/penang-new-condo-m-zenni/"
+   ],
+   "docs_listed": [
+    "The project page describes a 33-storey tower with 10 commercial lots within the Southbay township, 900 m from the Second Penang Bridge and 1.5 km from Penang International Airport (distances as published)",
+    "Pin: 5.284251, 100.288933 (Cangkat Batu Maung 1, the address the developer publishes for M Zenni, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "m-zenni-malaysia"
+  },
+  {
+   "name": "Residensi M Aspira",
+   "developer": "Mah Sing Group (Mah Sing Properties Sdn. Bhd.)",
+   "area": "Jalan Desa, Taman Desa, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/taman-desa-condo-m-aspira/",
+   "docs_url": "https://www.mahsing.com.my/projects/taman-desa-condo-m-aspira/",
+   "permit_number": "5911-33/08-2027/0768(A)-(S)",
+   "seed": {
+    "price": 624960,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2029",
+    "permit_claim": true,
+    "permit_number": "5911-33/08-2027/0768(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1618,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: June 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 5911/09-2027/1524(A) and advertising and sales permit 5911-33/08-2027/0768(A)-(S); approving authority: DBKL; building plan reference DBKL.JKB.BP S1 OSC 2024 2824",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "1,618 serviced apartment units in Towers A and B; leasehold, 99 years to 13 August 2123; selling price from RM624,960 to RM983,760 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Mah Sing Properties Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "June 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 624960,
+    "price_max": 983760,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DBKL"
+   },
+   "note": "Residensi M Aspira by Mah Sing Group in Jalan Desa, Taman Desa, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: June 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/taman-desa-condo-m-aspira/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-aspira"
+  },
+  {
+   "name": "Residensi M Azura",
+   "developer": "Mah Sing Group (M Azura Sdn. Bhd.)",
+   "area": "Wangsa Maju, Setapak, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/setapak-new-condo-m-azura/",
+   "docs_url": "https://www.mahsing.com.my/projects/setapak-new-condo-m-azura/",
+   "permit_number": "30834-1/08-2027/0769(A)-(S)",
+   "seed": {
+    "price": 534960,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2028",
+    "permit_claim": true,
+    "permit_number": "30834-1/08-2027/0769(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1140,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: August 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 30834/08-2029/0176(A) and advertising and sales permit 30834-1/08-2027/0769(A)-(S); approving authority: DBKL; building plan reference BP U2 OSC 2024 0172 (20)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "1,140 serviced apartment units (570 per tower); leasehold, 99 years to December 2123; selling price from RM534,960 to RM800,160 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Project address published on the project page: No. 1, Jalan Wangsa Delima 1A, Pusat Bandar Wangsa Maju, 53300 Kuala Lumpur",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/setapak-new-condo-m-azura/"
+    },
+    {
+     "claim": "Pin: 3.199113, 101.744195 (Jalan Wangsa Delima 1A, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/setapak-new-condo-m-azura/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "M Azura Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "August 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 534960,
+    "price_max": 800160,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 3.199113,
+    "lng": 101.744195,
+    "permit_authority": "DBKL"
+   },
+   "note": "Residensi M Azura by Mah Sing Group in Wangsa Maju, Setapak, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: August 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/setapak-new-condo-m-azura/"
+   ],
+   "docs_listed": [
+    "Project address published on the project page: No. 1, Jalan Wangsa Delima 1A, Pusat Bandar Wangsa Maju, 53300 Kuala Lumpur",
+    "Pin: 3.199113, 101.744195 (Jalan Wangsa Delima 1A, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-azura"
+  },
+  {
+   "name": "Residensi M Aurora",
+   "developer": "Mah Sing Group (Major Land Development Sdn. Bhd.)",
+   "area": "Jalan Klang Lama (Old Klang Road), Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/old-klang-road-condo-m-aurora/",
+   "docs_url": "https://www.mahsing.com.my/projects/old-klang-road-condo-m-aurora/",
+   "permit_number": "13262-2/03-2029/0221(N)-(S)",
+   "seed": {
+    "price": 492960,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "September 2030",
+    "permit_claim": true,
+    "permit_number": "13262-2/03-2029/0221(N)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1544,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: September 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 13262/01-2028/0471(A) and advertising and sales permit 13262-2/03-2029/0221(N)-(S); approving authority: DBKL; building plan reference DBKL.JKB. BP S1 OSC 2026 0503(7)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "1,544 suite apartment units (747 in Tower A, 797 in Tower B), built-up 556 to 1,019 sq ft; freehold; selling price from RM492,960 to RM856,560 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Major Land Development Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "September 2030",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "suite apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 492960,
+    "price_max": 856560,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DBKL"
+   },
+   "note": "Residensi M Aurora by Mah Sing Group in Jalan Klang Lama (Old Klang Road), Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: September 2030. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/old-klang-road-condo-m-aurora/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-aurora"
+  },
+  {
+   "name": "M Grand Minori",
+   "developer": "Mah Sing Group (Dsara Sentral Sdn. Bhd.)",
+   "area": "Jalan Kuning, Taman Pelangi, Johor Bahru",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/m-grand-minori/",
+   "docs_url": "https://www.mahsing.com.my/projects/m-grand-minori/",
+   "permit_number": "9600-6/08-2031/0878(R)-(S) (Tower A) and 9600-7/11-2028/0954(N)-(S) (Tower B)",
+   "seed": {
+    "price": 437000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "July 2030",
+    "permit_claim": true,
+    "permit_number": "9600-6/08-2031/0878(R)-(S) (Tower A) and 9600-7/11-2028/0954(N)-(S) (Tower B)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1733,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: July 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 9600/09-2026/0761 (A) and advertising and sales permit 9600-6/08-2031/0878(R)-(S) (Tower A) and 9600-7/11-2028/0954(N)-(S) (Tower B); approving authority: Majlis Bandaraya Johor Bahru; building plan reference MBJB/U/2025/14/BGN/105/KOM",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "843 units in Tower A and 890 in Tower B (61 floors each); Tower B expected completion October 2030; freehold; selling price from RM437,000 to RM1,000,000 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Dsara Sentral Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "July 2030",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 437000,
+    "price_max": 1000000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Bandaraya Johor Bahru"
+   },
+   "note": "M Grand Minori by Mah Sing Group in Jalan Kuning, Taman Pelangi, Johor Bahru (Malaysia). Added from the official developer page: off-plan; handover on record: July 2030. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/m-grand-minori/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "m-grand-minori"
+  },
+  {
+   "name": "Residensi M Zenya",
+   "developer": "Mah Sing Group (Star Residence Sdn Bhd)",
+   "area": "Jalan Kepong, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/kepong-new-condo-m-zenya/",
+   "docs_url": "https://www.mahsing.com.my/projects/kepong-new-condo-m-zenya/",
+   "permit_number": "11430-2/03-2027/0280(N)-(S)",
+   "seed": {
+    "price": 598560,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "April 2028",
+    "permit_claim": true,
+    "permit_number": "11430-2/03-2027/0280(N)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 619,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: April 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 11430/12-2026/1094(A) and advertising and sales permit 11430-2/03-2027/0280(N)-(S); approving authority: DBKL; building plan reference BP U1 OSC 2023 1734",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "619 units in Tower A, built-up 762 to 1,067 sq ft; leasehold, 99 years to 13 December 2120; selling price from RM598,560 to RM849,360 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Star Residence Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "April 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 598560,
+    "price_max": 849360,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "DBKL"
+   },
+   "note": "Residensi M Zenya by Mah Sing Group in Jalan Kepong, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: April 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/kepong-new-condo-m-zenya/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-zenya"
+  },
+  {
+   "name": "Residensi M Nova",
+   "developer": "Mah Sing Group (Myvilla Development Sdn Bhd)",
+   "area": "Jalan Sibu, Taman Wahyu, Kepong, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/m-nova/",
+   "docs_url": "https://www.mahsing.com.my/projects/m-nova/",
+   "permit_number": "11202-4/08-2026/0898(A)-(S)",
+   "seed": {
+    "price": 466560,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "February 2028",
+    "permit_claim": true,
+    "permit_number": "11202-4/08-2026/0898(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1248,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: February 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 11202/11-2026/1503(A) and advertising and sales permit 11202-4/08-2026/0898(A)-(S); approving authority: DBKL; building plan reference BP U1 OSC 2022 2433",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "1,248 suite apartment units (624 per tower); leasehold, 99 years to 19 July 2122; selling price from RM466,560 to RM722,160 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Pin: 3.210323, 101.669512 (Jalan Sibu, Taman Wahyu, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/m-nova/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Myvilla Development Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "February 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "suite apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 466560,
+    "price_max": 722160,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 3.210323,
+    "lng": 101.669512,
+    "permit_authority": "DBKL"
+   },
+   "note": "Residensi M Nova by Mah Sing Group in Jalan Sibu, Taman Wahyu, Kepong, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: February 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/m-nova/"
+   ],
+   "docs_listed": [
+    "Pin: 3.210323, 101.669512 (Jalan Sibu, Taman Wahyu, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-m-nova"
+  },
+  {
+   "name": "Residensi Anggun (M Minori)",
+   "developer": "Mah Sing Group (MS Lakecity Sdn Bhd)",
+   "area": "Jalan Austin Perdana 2, Taman Austin Perdana, Johor Bahru",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/m-minori/",
+   "docs_url": "https://www.mahsing.com.my/projects/m-minori/",
+   "permit_number": "30440-1/10-2026/1099(A)-(S) (Tower A)",
+   "seed": {
+    "price": 379000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": true,
+    "permit_number": "30440-1/10-2026/1099(A)-(S) (Tower A)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1526,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: December 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 30440/05-2028/0117(A) and advertising and sales permit 30440-1/10-2026/1099(A)-(S) (Tower A); approving authority: Majlis Bandaraya Johor Bahru; building plan reference MBJB/U/2022/14/BGN/150/RP(21)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "1,526 units in three towers (421, 619 and 486); Towers B and C expected January and March 2028; freehold; selling price from RM379,000 to RM633,000 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Pin: 1.547244, 103.782030 (Jalan Austin Perdana 2, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/projects/m-minori/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "MS Lakecity Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 379000,
+    "price_max": 633000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 1.547244,
+    "lng": 103.78203,
+    "permit_authority": "Majlis Bandaraya Johor Bahru"
+   },
+   "note": "Residensi Anggun (M Minori) by Mah Sing Group in Jalan Austin Perdana 2, Taman Austin Perdana, Johor Bahru (Malaysia). Added from the official developer page: off-plan; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/m-minori/"
+   ],
+   "docs_listed": [
+    "Pin: 1.547244, 103.782030 (Jalan Austin Perdana 2, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "residensi-anggun-m-minori"
+  },
+  {
+   "name": "M Sinar @ Southville City (Phase 1)",
+   "developer": "Mah Sing Group (Southville City Sdn. Bhd.)",
+   "area": "Southville City, Bangi, Selangor",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://www.mahsing.com.my/projects/bangi-property-m-sinar/",
+   "docs_url": "https://www.mahsing.com.my/projects/bangi-property-m-sinar/",
+   "permit_number": "13425-8/05-2027/0477(A)-(S)",
+   "seed": {
+    "price": 618000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2028",
+    "permit_claim": true,
+    "permit_number": "13425-8/05-2027/0477(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 500,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected date of completion printed on the developer permits page: June 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "Developer licence 13425/03-2028/0360(A) and advertising and sales permit 13425-8/05-2027/0477(A)-(S); approving authority: Majlis Perbandaran Sepang; building plan reference MPSepang. 600-34/3/619(12)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "500 units in Block A (78 affordable apartments at RM270,000 and 422 serviced apartments); freehold; selling price from RM618,000 to RM643,000 as listed on the permits page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    },
+    {
+     "claim": "The permits page says the development information and approved advertisement can be checked on the National Housing Department portal teduh.kpkt.gov.my",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mahsing.com.my/advertising-permits-and-developer-license/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Southville City Sdn. Bhd.",
+    "construction_start": null,
+    "handover_promised": "June 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 618000,
+    "price_max": 643000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Perbandaran Sepang"
+   },
+   "note": "M Sinar @ Southville City (Phase 1) by Mah Sing Group in Southville City, Bangi, Selangor (Malaysia). Added from the official developer page: off-plan; handover on record: June 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mahsing.com.my/advertising-permits-and-developer-license/",
+    "https://www.mahsing.com.my/projects/bangi-property-m-sinar/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "m-sinar-southville-city-phase-1"
+  },
+  {
+   "name": "Sunway Cochrane (Sunway Cochrane Residences)",
+   "developer": "Sunway Property (Sunway Cochrane Sdn Bhd)",
+   "area": "Jalan Cochrane, Kuala Lumpur",
+   "country": "Malaysia",
+   "market": "Kuala Lumpur",
+   "stage": "off-plan",
+   "url": "https://sunwayproperty.com/sunway-cochrane/",
+   "docs_url": "https://sunwayproperty.com/sunway-cochrane/",
+   "permit_number": "8824-5/09-2028/0795(N)-(S)",
+   "seed": {
+    "price": 948000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "October 2029",
+    "permit_claim": true,
+    "permit_number": "8824-5/09-2028/0795(N)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1296,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected completion date printed on the developer APDL page: October 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    },
+    {
+     "claim": "Developer licence 8824/04-2032/0378(A); advertising and sales permit 8824-5/09-2028/0795(N)-(S) valid 30/09/2025 to 29/09/2028; approving authority Dewan Bandaraya Kuala Lumpur; building plan BPU3OSC20250806(23)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    },
+    {
+     "claim": "1,296 serviced apartment units (641 in Block A, 655 in Block B), built-up 650 to 1,001 sq ft; Tower A RM1,000,000 to RM1,725,000, Tower B RM948,000 to RM1,645,000; freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    },
+    {
+     "claim": "The project page presents it as a freehold transit-oriented development in the Jalan Cochrane neighbourhood",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/sunway-cochrane/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Sunway Cochrane Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "October 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "serviced apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 948000,
+    "price_max": 1725000,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Dewan Bandaraya Kuala Lumpur"
+   },
+   "note": "Sunway Cochrane (Sunway Cochrane Residences) by Sunway Property in Jalan Cochrane, Kuala Lumpur (Malaysia). Added from the official developer page: off-plan; handover on record: October 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sunwayproperty.com/apdl/",
+    "https://sunwayproperty.com/sunway-cochrane/"
+   ],
+   "docs_listed": [
+    "The project page presents it as a freehold transit-oriented development in the Jalan Cochrane neighbourhood"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunway-cochrane-sunway-cochrane-residences"
+  },
+  {
+   "name": "Sunway Wellesley",
+   "developer": "Sunway Property (Sunway Bintang Sdn Bhd)",
+   "area": "Seberang Perai, Penang",
+   "country": "Malaysia",
+   "market": "Malaysia",
+   "stage": "off-plan",
+   "url": "https://sunwayproperty.com/apdl/",
+   "docs_url": "https://sunwayproperty.com/apdl/",
+   "permit_number": "13389-2/07-2027/0664(A)-(S)",
+   "seed": {
+    "price": 774000,
+    "currency": "MYR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027",
+    "permit_claim": true,
+    "permit_number": "13389-2/07-2027/0664(A)-(S)",
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 210,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Expected completion date printed on the developer APDL page: December 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    },
+    {
+     "claim": "Developer licence 13389/02-2028/0059(A); advertising and sales permit 13389-2/07-2027/0664(A)-(S) valid 23/07/2024 to 22/07/2027; approving authority Majlis Bandaraya Seberang Perai",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    },
+    {
+     "claim": "210 three-storey townhouses, freehold; price RM774,000 to RM1,138,800",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sunwayproperty.com/apdl/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Sunway Bintang Sdn Bhd",
+    "construction_start": null,
+    "handover_promised": "December 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-storey townhouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 774000,
+    "price_max": 1138800,
+    "currency": "MYR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Majlis Bandaraya Seberang Perai"
+   },
+   "note": "Sunway Wellesley by Sunway Property in Seberang Perai, Penang (Malaysia). Added from the official developer page: off-plan; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://sunwayproperty.com/apdl/"
+   ],
+   "docs_listed": [
+    "Expected completion date printed on the developer APDL page: December 2027",
+    "Developer licence 13389/02-2028/0059(A); advertising and sales permit 13389-2/07-2027/0664(A)-(S) valid 23/07/2024 to 22/07/2027; approving authority Majlis Bandaraya Seberang Perai",
+    "210 three-storey townhouses, freehold; price RM774,000 to RM1,138,800"
+   ],
+   "disclosure": {
+    "permit": true,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sunway-wellesley"
+  },
+  {
+   "name": "BRANZ Tower Osaki",
+   "developer": "Tokyu Land Corporation",
+   "area": "Higashi-Gotanda 2-chome, Shinagawa, Tokyo",
+   "country": "Japan",
+   "market": "Tokyo",
+   "stage": "under construction",
+   "url": "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf",
+   "docs_url": "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "August 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 389,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: handover (引渡時期) \"2027 年 8 月（予定）\" (August 2027, planned); completion May 2027 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf"
+    },
+    {
+     "claim": "40 floors above ground, 389 units including 149 units for existing landowners; 1K to 3LDK, 30.02 to 282.57 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf"
+    },
+    {
+     "claim": "Residential tower of the Higashi-Gotanda 2-chome District 3 urban redevelopment; seller: Tokyu Land Corporation; contractor Takenaka Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "August 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": 30.02,
+    "size_max_m2": 282.57,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Tower Osaki by Tokyu Land Corporation in Higashi-Gotanda 2-chome, Shinagawa, Tokyo (Japan). Added from the official developer page: under construction; handover on record: August 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://tokyu-land.co.jp/news/uploads/06783df3dcfa8f8b42e27dda7128e0fd8ff07eaf.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: handover (引渡時期) \"2027 年 8 月（予定）\" (August 2027, planned); completion May 2027 (planned)",
+    "40 floors above ground, 389 units including 149 units for existing landowners; 1K to 3LDK, 30.02 to 282.57 m2",
+    "Residential tower of the Higashi-Gotanda 2-chome District 3 urban redevelopment; seller: Tokyu Land Corporation; contractor Takenaka Corporation"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-tower-osaki"
+  },
+  {
+   "name": "BRANZ Tower Yokohama Kitanaka",
+   "developer": "Tokyu Land Corporation, with Keikyu Corporation",
+   "area": "Kaigandori 5-chome, Naka-ku, Yokohama",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf",
+   "docs_url": "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "March 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 704,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: handover (引渡時期) \"2028 年３月（予定）\" (March 2028, planned); completion November 2027 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf"
+    },
+    {
+     "claim": "40 floors above ground, 704 units, part of a mixed-use development with retail and offices; 2 minutes on foot from Bashamichi station",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf"
+    },
+    {
+     "claim": "Land held under a general fixed-term leasehold of about 75 years, building in strata ownership; sellers: Tokyu Land Corporation and Keikyu Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "March 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "leasehold land (about 75 years), strata title for the unit",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Tower Yokohama Kitanaka by Tokyu Land Corporation, with Keikyu Corporation in Kaigandori 5-chome, Naka-ku, Yokohama (Japan). Added from the official developer page: under construction; handover on record: March 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.tokyu-land.co.jp/news/uploads/419b5b961b9c9ef8ac523c0bd932f57955a38f07.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: handover (引渡時期) \"2028 年３月（予定）\" (March 2028, planned); completion November 2027 (planned)",
+    "40 floors above ground, 704 units, part of a mixed-use development with retail and offices; 2 minutes on foot from Bashamichi station",
+    "Land held under a general fixed-term leasehold of about 75 years, building in strata ownership; sellers: Tokyu Land Corporation and Keikyu Corporation"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-tower-yokohama-kitanaka"
+  },
+  {
+   "name": "BRANZ Hoshigaoka Terrace",
+   "developer": "Tokyu Land Corporation and Meitetsu Urban Development",
+   "area": "Hoshigaoka Motomachi, Chikusa-ku, Nagoya",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://www.m-cd.co.jp/information/pdf/260210_release.pdf",
+   "docs_url": "https://www.m-cd.co.jp/information/pdf/260210_release.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "March 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 129,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: handover \"2028 年 3 月下旬予定\" (late March 2028, planned); completion late January 2028 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.m-cd.co.jp/information/pdf/260210_release.pdf"
+    },
+    {
+     "claim": "14 floors above ground, 129 units including 26 not offered for sale; fixed-term leasehold land; model room opened 14 February 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.m-cd.co.jp/information/pdf/260210_release.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "March 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "BRANZ Hoshigaoka Terrace by Tokyu Land Corporation and Meitetsu Urban Development in Hoshigaoka Motomachi, Chikusa-ku, Nagoya (Japan). Added from the official developer page: under construction; handover on record: March 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.m-cd.co.jp/information/pdf/260210_release.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: handover \"2028 年 3 月下旬予定\" (late March 2028, planned); completion late January 2028 (planned)",
+    "14 floors above ground, 129 units including 26 not offered for sale; fixed-term leasehold land; model room opened 14 February 2026"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "branz-hoshigaoka-terrace"
+  },
+  {
+   "name": "The Parkhouse Osaka Uehommachi Tower",
+   "developer": "Mitsubishi Jisho Residence, Yasuda Real Estate, JR West Properties, NIPPO and Obayashi Shinseiwa Real Estate",
+   "area": "Tennoji-ku, Osaka",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://prtimes.jp/main/html/rd/p/000000103.000069362.html",
+   "docs_url": "https://prtimes.jp/main/html/rd/p/000000103.000069362.html",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 318,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the sellers' press release: move-in \"2028年12月下旬（予定）\" (late December 2028, planned); completion early October 2028 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://prtimes.jp/main/html/rd/p/000000103.000069362.html"
+    },
+    {
+     "claim": "42 floors, 145 m, seismic isolation; 318 units; price \"未定\" (not yet set); sales planned to start late July 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://prtimes.jp/main/html/rd/p/000000103.000069362.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "December 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Parkhouse Osaka Uehommachi Tower by Mitsubishi Jisho Residence, Yasuda Real Estate, JR West Properties, NIPPO and Obayashi Shinseiwa Real Estate in Tennoji-ku, Osaka (Japan). Added from the official developer page: under construction; handover on record: December 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://prtimes.jp/main/html/rd/p/000000103.000069362.html"
+   ],
+   "docs_listed": [
+    "Outline in the sellers' press release: move-in \"2028年12月下旬（予定）\" (late December 2028, planned); completion early October 2028 (planned)",
+    "42 floors, 145 m, seismic isolation; 318 units; price \"未定\" (not yet set); sales planned to start late July 2026"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-parkhouse-osaka-uehommachi-tower"
+  },
+  {
+   "name": "The Parkhouse Musashi-Kosugi Towers",
+   "developer": "Mitsubishi Jisho Residence, Tokyo Tatemono, Tokyu Corporation and Tokyu Land Corporation",
+   "area": "Kosugi-machi 1-chome, Nakahara-ku, Kawasaki",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf",
+   "docs_url": "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "February 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 1438,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the sellers' release: handover South tower \"2028 年 2 月（予定）\", North tower September 2028 (planned); completion South September 2027, North May 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf"
+    },
+    {
+     "claim": "Two 50-floor towers with 1,438 units (719 each); 1LDK to 4LDK, 44.07 to 136.04 m2; price not yet set at the time of the release",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf"
+    },
+    {
+     "claim": "Design supervision by an outside architect named in the release; contractor Fujita Corporation",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "February 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": 44.07,
+    "size_max_m2": 136.04,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Parkhouse Musashi-Kosugi Towers by Mitsubishi Jisho Residence, Tokyo Tatemono, Tokyu Corporation and Tokyu Land Corporation in Kosugi-machi 1-chome, Nakahara-ku, Kawasaki (Japan). Added from the official developer page: under construction; handover on record: February 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://tokyu-land.co.jp/news/uploads/d8c8d01e8a3d77d093dc8c13648ec81fdc834f01.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the sellers' release: handover South tower \"2028 年 2 月（予定）\", North tower September 2028 (planned); completion South September 2027, North May 2028",
+    "Two 50-floor towers with 1,438 units (719 each); 1LDK to 4LDK, 44.07 to 136.04 m2; price not yet set at the time of the release",
+    "Design supervision by an outside architect named in the release; contractor Fujita Corporation"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-parkhouse-musashi-kosugi-towers"
+  },
+  {
+   "name": "Park Tower Osaka Tenmabashi",
+   "developer": "Mitsui Fudosan Residential and Keihan Electric Railway Real Estate",
+   "area": "Tenma 1-chome, Kita-ku, Osaka",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0227_01.pdf",
+   "docs_url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0227_01.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "January 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 161,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: completion \"2028 年 1 月下旬（予定）\" (late January 2028, planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0227_01.pdf"
+    },
+    {
+     "claim": "30 floors, 161 units (96 for general sale) overlooking the Okawa river; first sales phase from 1 March 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0227_01.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "January 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Park Tower Osaka Tenmabashi by Mitsui Fudosan Residential and Keihan Electric Railway Real Estate in Tenma 1-chome, Kita-ku, Osaka (Japan). Added from the official developer page: under construction; handover on record: January 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0227_01.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: completion \"2028 年 1 月下旬（予定）\" (late January 2028, planned)",
+    "30 floors, 161 units (96 for general sale) overlooking the Okawa river; first sales phase from 1 March 2026"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "park-tower-osaka-tenmabashi"
+  },
+  {
+   "name": "Park Court Ochanomizu The Tower",
+   "developer": "Mitsui Fudosan Residential",
+   "area": "Hongo 3-chome, Bunkyo, Tokyo",
+   "country": "Japan",
+   "market": "Tokyo",
+   "stage": "under construction",
+   "url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0326_01.pdf",
+   "docs_url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0326_01.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "April 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 267,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: move-in \"2028 年 4 月下旬予定\" (late April 2028, planned); completion late January 2028 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0326_01.pdf"
+    },
+    {
+     "claim": "23 floors above ground and 3 below, 267 units, 2LDK to 4LDK, 55.06 to 137.58 m2; built on the former JFA House site; official site and entries opened 26 March 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0326_01.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "April 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": 55.06,
+    "size_max_m2": 137.58,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Park Court Ochanomizu The Tower by Mitsui Fudosan Residential in Hongo 3-chome, Bunkyo, Tokyo (Japan). Added from the official developer page: under construction; handover on record: April 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0326_01.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: move-in \"2028 年 4 月下旬予定\" (late April 2028, planned); completion late January 2028 (planned)",
+    "23 floors above ground and 3 below, 267 units, 2LDK to 4LDK, 55.06 to 137.58 m2; built on the former JFA House site; official site and entries opened 26 March 2026"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "park-court-ochanomizu-the-tower"
+  },
+  {
+   "name": "Park Homes Funabashi",
+   "developer": "Mitsui Fudosan Residential",
+   "area": "Honcho 1-chome, Funabashi, Chiba",
+   "country": "Japan",
+   "market": "Japan",
+   "stage": "under construction",
+   "url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0611_01.pdf",
+   "docs_url": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0611_01.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "May 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 121,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Outline in the developer release: move-in start \"2028 年 5 月下旬予定\" (late May 2028, planned); completion late January 2028 (planned)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0611_01.pdf"
+    },
+    {
+     "claim": "15 floors, 121 units (105 for general sale) and 1 retail unit; first sales phase planned for late July 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0611_01.pdf"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "May 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Park Homes Funabashi by Mitsui Fudosan Residential in Honcho 1-chome, Funabashi, Chiba (Japan). Added from the official developer page: under construction; handover on record: May 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.31sumai.com/content/dam/mfrcojp/company/news/2026/0611_01.pdf"
+   ],
+   "docs_listed": [
+    "Outline in the developer release: move-in start \"2028 年 5 月下旬予定\" (late May 2028, planned); completion late January 2028 (planned)",
+    "15 floors, 121 units (105 for general sale) and 1 retail unit; first sales phase planned for late July 2026"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "park-homes-funabashi"
+  },
+  {
+   "name": "V&A Broadbeach (Victoria & Albert)",
+   "developer": "Iris Capital",
+   "area": "Albert Avenue, Broadbeach, Gold Coast",
+   "country": "Australia",
+   "market": "Gold Coast",
+   "stage": "under construction",
+   "url": "https://vabroadbeach.com.au/",
+   "docs_url": "https://vabroadbeach.com.au/",
+   "permit_number": null,
+   "seed": {
+    "price": 1910000,
+    "currency": "AUD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The project site prints \"MOVE IN EARLY 2028\" and says the developer is moving towards welcoming the first residents in early 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vabroadbeach.com.au/"
+    },
+    {
+     "claim": "\"Construction underway\"; the construction timeline marks retention walls, piling and excavation to level B6 as completed (excavation started July 2024)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vabroadbeach.com.au/"
+    },
+    {
+     "claim": "2-bedroom residences from $1.91M, 3-bedroom from $2.45M, 4-bedroom from $5.47M; 5% deposit offer subject to terms; display suite at Shop 1/90 Surf Parade, Broadbeach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vabroadbeach.com.au/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "4-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1910000,
+    "price_max": null,
+    "currency": "AUD",
+    "deposit_pct": 5,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "V&A Broadbeach (Victoria & Albert) by Iris Capital in Albert Avenue, Broadbeach, Gold Coast (Australia). Added from the official developer page: under construction; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://vabroadbeach.com.au/"
+   ],
+   "docs_listed": [
+    "The project site prints \"MOVE IN EARLY 2028\" and says the developer is moving towards welcoming the first residents in early 2028",
+    "\"Construction underway\"; the construction timeline marks retention walls, piling and excavation to level B6 as completed (excavation started July 2024)",
+    "2-bedroom residences from $1.91M, 3-bedroom from $2.45M, 4-bedroom from $5.47M; 5% deposit offer subject to terms; display suite at Shop 1/90 Surf Parade, Broadbeach"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "v-a-broadbeach-victoria-albert"
+  },
+  {
+   "name": "Affinity Broadbeach",
+   "developer": "Amalgamated Property Group, with Base Developments",
+   "area": "40-46 Chelsea Avenue, Broadbeach, Gold Coast",
+   "country": "Australia",
+   "market": "Gold Coast",
+   "stage": "under construction",
+   "url": "https://amalgamatedpropertygroup.com.au/project/affinity-broadbeach/",
+   "docs_url": "https://amalgamatedpropertygroup.com.au/project/affinity-broadbeach/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 185,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer news page: construction has started and the tower \"is due for completion in early 2028\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://amalgamatedpropertygroup.com.au/news/affinity-broadbeach-construction-commences/"
+    },
+    {
+     "claim": "Project page: Location 40-46 Chelsea Avenue, Broadbeach; Residences 185; Status Under Construction; architect DBI Design; \"Affinity is 80% sold\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://amalgamatedpropertygroup.com.au/project/affinity-broadbeach/"
+    },
+    {
+     "claim": "Built by the developer's in-house builder Capital Constructions Queensland Pty Ltd (CCQ); the news page counts 180 two and three-bedroom apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://amalgamatedpropertygroup.com.au/news/affinity-broadbeach-construction-commences/"
+    },
+    {
+     "claim": "Pin: -28.023069, 153.429796 (Chelsea Avenue, Broadbeach, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://amalgamatedpropertygroup.com.au/project/affinity-broadbeach/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -28.023069,
+    "lng": 153.429796,
+    "permit_authority": null
+   },
+   "note": "Affinity Broadbeach by Amalgamated Property Group, with Base Developments in 40-46 Chelsea Avenue, Broadbeach, Gold Coast (Australia). Added from the official developer page: under construction; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://amalgamatedpropertygroup.com.au/news/affinity-broadbeach-construction-commences/",
+    "https://amalgamatedpropertygroup.com.au/project/affinity-broadbeach/"
+   ],
+   "docs_listed": [
+    "Project page: Location 40-46 Chelsea Avenue, Broadbeach; Residences 185; Status Under Construction; architect DBI Design; \"Affinity is 80% sold\"",
+    "Pin: -28.023069, 153.429796 (Chelsea Avenue, Broadbeach, geocoded with OpenStreetMap Nominatim (street-level match: the pin is on the street the developer names, not on the plot)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "affinity-broadbeach"
+  },
+  {
+   "name": "Castile Newstead",
+   "developer": "Consolidated Properties Group",
+   "area": "47 Skyring Terrace, Newstead, Brisbane",
+   "country": "Australia",
+   "market": "Brisbane",
+   "stage": "off-plan",
+   "url": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/",
+   "docs_url": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 239,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer news (29 May 2026): the approved development comprises 227 apartments in a 25-storey tower plus a six-storey riverfront building of 12 residences, designed by Woods Bagot",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    },
+    {
+     "claim": "\"Construction is scheduled to commence in September 2026\"; no completion date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    },
+    {
+     "claim": "47 metres of river frontage on the east bank of Newstead; registrations for priority access ahead of the public launch",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    },
+    {
+     "claim": "Pin: -27.450210, 153.047178 (47 Skyring Terrace, Newstead, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -27.45021,
+    "lng": 153.047178,
+    "permit_authority": null
+   },
+   "note": "Castile Newstead by Consolidated Properties Group in 47 Skyring Terrace, Newstead, Brisbane (Australia). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+   ],
+   "docs_listed": [
+    "Developer news (29 May 2026): the approved development comprises 227 apartments in a 25-storey tower plus a six-storey riverfront building of 12 residences, designed by Woods Bagot",
+    "\"Construction is scheduled to commence in September 2026\"; no completion date is printed",
+    "47 metres of river frontage on the east bank of Newstead; registrations for priority access ahead of the public launch",
+    "Pin: -27.450210, 153.047178 (47 Skyring Terrace, Newstead, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "castile-newstead"
+  },
+  {
+   "name": "The Erin Heights",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "Commonwealth Ave. corner Tandang Sora Ave., Matandang Balara, Quezon City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/the-erin-heights",
+   "docs_url": "https://www.dmcihomes.com/the-erin-heights",
+   "permit_number": null,
+   "seed": {
+    "price": 4930000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "October 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Under Construction\"; full price range PHP 4,930,000 to PHP 30,140,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-erin-heights"
+    },
+    {
+     "claim": "Property address published on the developer page: Commonwealth Ave. corner Tandang Sora Ave., Matandang Balara, Quezon City; 54 residential levels and 8 podium levels on a 6,103 sqm site",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-erin-heights"
+    },
+    {
+     "claim": "Developer news (11 August 2026): structural works are complete and the project is \"on track for its scheduled turnover in October 2027\"; studio, two and three-bedroom units of 28.5 to 87 sqm plus loft penthouses",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/whats-new/news/dmci-homes-completes-structural-works-for-the-erin-heights-in-quezon-city"
+    },
+    {
+     "claim": "Pin: 14.6638158, 121.0693928 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-erin-heights"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "October 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "2-bedroom condo",
+     "3-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 4930000,
+    "price_max": 30140000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.6638158,
+    "lng": 121.0693928,
+    "permit_authority": null
+   },
+   "note": "The Erin Heights by DMCI Homes in Commonwealth Ave. corner Tandang Sora Ave., Matandang Balara, Quezon City (Philippines). Added from the official developer page: under construction; handover on record: October 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/the-erin-heights",
+    "https://www.dmcihomes.com/whats-new/news/dmci-homes-completes-structural-works-for-the-erin-heights-in-quezon-city"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Under Construction\"; full price range PHP 4,930,000 to PHP 30,140,000",
+    "Property address published on the developer page: Commonwealth Ave. corner Tandang Sora Ave., Matandang Balara, Quezon City; 54 residential levels and 8 podium levels on a 6,103 sqm site",
+    "Pin: 14.6638158, 121.0693928 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-erin-heights"
+  },
+  {
+   "name": "Anissa Heights",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "P. Zamora St., Brgy. 101, San Roque District, Pasay City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "off-plan",
+   "url": "https://www.dmcihomes.com/anissa-heights",
+   "docs_url": "https://www.dmcihomes.com/anissa-heights",
+   "permit_number": null,
+   "seed": {
+    "price": 3160500,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"New\"; full price range PHP 3,160,500 to PHP 3,600,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/anissa-heights"
+    },
+    {
+     "claim": "Property address published on the developer page: P. Zamora St., Brgy. 101, San Roque District, Pasay City; 29 residential levels and 5 podium parking levels on a 4,000 sqm site",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/anissa-heights"
+    },
+    {
+     "claim": "Site progress photo albums are published monthly from January 2025; studio and 1-bedroom units; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/anissa-heights"
+    },
+    {
+     "claim": "Pin: 14.543828767991256, 121.00175690524378 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/anissa-heights"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 3160500,
+    "price_max": 3600000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.543828767991256,
+    "lng": 121.00175690524378,
+    "permit_authority": null
+   },
+   "note": "Anissa Heights by DMCI Homes in P. Zamora St., Brgy. 101, San Roque District, Pasay City (Philippines). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/anissa-heights"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"New\"; full price range PHP 3,160,500 to PHP 3,600,000",
+    "Property address published on the developer page: P. Zamora St., Brgy. 101, San Roque District, Pasay City; 29 residential levels and 5 podium parking levels on a 4,000 sqm site",
+    "Site progress photo albums are published monthly from January 2025; studio and 1-bedroom units; no turnover date is printed on the page",
+    "Pin: 14.543828767991256, 121.00175690524378 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "anissa-heights"
+  },
+  {
+   "name": "One Delta Terraces",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "Quezon Ave, Quezon City (corner of West Avenue and Quezon Avenue, West Triangle)",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "off-plan",
+   "url": "https://www.dmcihomes.com/one-delta-terraces",
+   "docs_url": "https://www.dmcihomes.com/one-delta-terraces",
+   "permit_number": null,
+   "seed": {
+    "price": 6953000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"New\"; full price range PHP 6,953,000 to PHP 22,147,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/one-delta-terraces"
+    },
+    {
+     "claim": "Property address published on the developer page: Quezon Ave, Quezon City (corner of West Avenue and Quezon Avenue, West Triangle); single-tower development described as \"rising soon\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/one-delta-terraces"
+    },
+    {
+     "claim": "Studio, 2 and 3-bedroom units; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/one-delta-terraces"
+    },
+    {
+     "claim": "Pin: 14.637996807191517, 121.0266958259652 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/one-delta-terraces"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "2-bedroom condo",
+     "3-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 6953000,
+    "price_max": 22147000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.637996807191517,
+    "lng": 121.0266958259652,
+    "permit_authority": null
+   },
+   "note": "One Delta Terraces by DMCI Homes in Quezon Ave, Quezon City (corner of West Avenue and Quezon Avenue, West Triangle) (Philippines). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/one-delta-terraces"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"New\"; full price range PHP 6,953,000 to PHP 22,147,000",
+    "Property address published on the developer page: Quezon Ave, Quezon City (corner of West Avenue and Quezon Avenue, West Triangle); single-tower development described as \"rising soon\"",
+    "Studio, 2 and 3-bedroom units; no turnover date is printed on the page",
+    "Pin: 14.637996807191517, 121.0266958259652 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "one-delta-terraces"
+  },
+  {
+   "name": "Allegra Garden Place",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "Pasig Boulevard, Brgy. Bagong Ilog, Pasig City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/allegra-garden-place",
+   "docs_url": "https://www.dmcihomes.com/allegra-garden-place",
+   "permit_number": null,
+   "seed": {
+    "price": 5058000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Under Construction\"; full price range PHP 5,058,000 to PHP 14,167,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/allegra-garden-place"
+    },
+    {
+     "claim": "Property address published on the developer page: Pasig Boulevard, Brgy. Bagong Ilog, Pasig City; 55 residential levels and 5 podium levels on a 12,676 sqm site",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/allegra-garden-place"
+    },
+    {
+     "claim": "Studio to 3-bedroom units; modern architecture with Moroccan inspiration; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/allegra-garden-place"
+    },
+    {
+     "claim": "Pin: 14.563424, 121.067068 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/allegra-garden-place"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom condo",
+     "2-bedroom condo",
+     "3-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5058000,
+    "price_max": 14167000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.563424,
+    "lng": 121.067068,
+    "permit_authority": null
+   },
+   "note": "Allegra Garden Place by DMCI Homes in Pasig Boulevard, Brgy. Bagong Ilog, Pasig City (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/allegra-garden-place"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Under Construction\"; full price range PHP 5,058,000 to PHP 14,167,000",
+    "Property address published on the developer page: Pasig Boulevard, Brgy. Bagong Ilog, Pasig City; 55 residential levels and 5 podium levels on a 12,676 sqm site",
+    "Studio to 3-bedroom units; modern architecture with Moroccan inspiration; no turnover date is printed on the page",
+    "Pin: 14.563424, 121.067068 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "allegra-garden-place"
+  },
+  {
+   "name": "Solmera Coast",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "Brgy. Calubcub II and Brgy. Subukin, San Juan, Batangas",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/solmera-coast",
+   "docs_url": "https://www.dmcihomes.com/solmera-coast",
+   "permit_number": null,
+   "seed": {
+    "price": 6754000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Under Construction\"; full price range PHP 6,754,000 to PHP 20,405,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/solmera-coast"
+    },
+    {
+     "claim": "Property address published on the developer page: Brgy. Calubcub II and Brgy. Subukin, San Juan, Batangas; condotel and residential leisure development on a 75,367 sqm site, 6 residential levels",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/solmera-coast"
+    },
+    {
+     "claim": "Described as a condotel and residential development by DMCI Homes Leisure Residences; studio to 2-bedroom units; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/solmera-coast"
+    },
+    {
+     "claim": "Pin: 13.733234, 121.436173 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/solmera-coast"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom condo",
+     "2-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 6754000,
+    "price_max": 20405000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 13.733234,
+    "lng": 121.436173,
+    "permit_authority": null
+   },
+   "note": "Solmera Coast by DMCI Homes in Brgy. Calubcub II and Brgy. Subukin, San Juan, Batangas (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/solmera-coast"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Under Construction\"; full price range PHP 6,754,000 to PHP 20,405,000",
+    "Property address published on the developer page: Brgy. Calubcub II and Brgy. Subukin, San Juan, Batangas; condotel and residential leisure development on a 75,367 sqm site, 6 residential levels",
+    "Described as a condotel and residential development by DMCI Homes Leisure Residences; studio to 2-bedroom units; no turnover date is printed on the page",
+    "Pin: 13.733234, 121.436173 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "solmera-coast"
+  },
+  {
+   "name": "The Camden Place",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "Dominga St., Malate, Manila",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/the-camden-place",
+   "docs_url": "https://www.dmcihomes.com/the-camden-place",
+   "permit_number": null,
+   "seed": {
+    "price": 5299000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Under Construction\"; full price range PHP 5,299,000 to PHP 10,217,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-camden-place"
+    },
+    {
+     "claim": "Property address published on the developer page: Dominga St., Malate, Manila; one tower with 27 residential levels and 5 podium levels on a 2,382 sqm site",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-camden-place"
+    },
+    {
+     "claim": "Studio to 2-bedroom units; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-camden-place"
+    },
+    {
+     "claim": "Pin: 14.561598, 120.997058 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-camden-place"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom condo",
+     "2-bedroom condo"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5299000,
+    "price_max": 10217000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.561598,
+    "lng": 120.997058,
+    "permit_authority": null
+   },
+   "note": "The Camden Place by DMCI Homes in Dominga St., Malate, Manila (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/the-camden-place"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Under Construction\"; full price range PHP 5,299,000 to PHP 10,217,000",
+    "Property address published on the developer page: Dominga St., Malate, Manila; one tower with 27 residential levels and 5 podium levels on a 2,382 sqm site",
+    "Studio to 2-bedroom units; no turnover date is printed on the page",
+    "Pin: 14.561598, 120.997058 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-camden-place"
+  },
+  {
+   "name": "The Calinea Tower",
+   "developer": "DMCI Homes (DMCI Project Developers, Inc.)",
+   "area": "M.H. Del Pilar St., East Grace Park, Caloocan City",
+   "country": "Philippines",
+   "market": "Philippines",
+   "stage": "under construction",
+   "url": "https://www.dmcihomes.com/the-calinea-tower",
+   "docs_url": "https://www.dmcihomes.com/the-calinea-tower",
+   "permit_number": null,
+   "seed": {
+    "price": 5379000,
+    "currency": "PHP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Under Construction\"; full price range PHP 5,379,000 to PHP 24,601,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-calinea-tower"
+    },
+    {
+     "claim": "Property address published on the developer page: M.H. Del Pilar St., East Grace Park, Caloocan City; 48 residential levels and 10 podium levels on a 7,472 sqm site",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-calinea-tower"
+    },
+    {
+     "claim": "Studio to 3-bedroom and loft units; no turnover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-calinea-tower"
+    },
+    {
+     "claim": "Pin: 14.652032199948914, 120.9847598517186 (the map coordinates in the developer page data); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/the-calinea-tower"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom condo",
+     "2-bedroom condo",
+     "3-bedroom condo",
+     "loft"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5379000,
+    "price_max": 24601000,
+    "currency": "PHP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 14.652032199948914,
+    "lng": 120.9847598517186,
+    "permit_authority": null
+   },
+   "note": "The Calinea Tower by DMCI Homes in M.H. Del Pilar St., East Grace Park, Caloocan City (Philippines). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.dmcihomes.com/the-calinea-tower"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Under Construction\"; full price range PHP 5,379,000 to PHP 24,601,000",
+    "Property address published on the developer page: M.H. Del Pilar St., East Grace Park, Caloocan City; 48 residential levels and 10 podium levels on a 7,472 sqm site",
+    "Studio to 3-bedroom and loft units; no turnover date is printed on the page",
+    "Pin: 14.652032199948914, 120.9847598517186 (the map coordinates in the developer page data); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "the-calinea-tower"
+  },
+  {
+   "name": "Celesta Gold",
+   "developer": "Keppel, Phu Long and Nomura Real Estate Vietnam (investor: Nha Be Real Estate Joint Stock Company)",
+   "area": "CELESTA City, Nha Be, south Ho Chi Minh City",
+   "country": "Vietnam",
+   "market": "Ho Chi Minh City",
+   "stage": "under construction",
+   "url": "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold",
+   "docs_url": "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-Q4",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 420,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Celesta Gold is expected to be handed over to customers in the fourth quarter of 2027\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold"
+    },
+    {
+     "claim": "Broke ground on 7 May 2026 as the latest phase of CELESTA City; main contractor Coteccons",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold"
+    },
+    {
+     "claim": "Site of over 1.28 hectares; a 25-storey development with 420 apartments and a commercial podium with officetel units, shophouses and retail",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Nha Be Real Estate Joint Stock Company",
+    "construction_start": null,
+    "handover_promised": "2027-Q4",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "officetel"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Celesta Gold by Keppel, Phu Long and Nomura Real Estate Vietnam in CELESTA City, Nha Be, south Ho Chi Minh City (Vietnam). Added from the official developer page: under construction; handover on record: 2027-Q4. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.keppel.com/realestate/vn/en/News-Library/05-2026-Groundbreaking-ceremony-of-Celesta-Gold"
+   ],
+   "docs_listed": [
+    "\"Celesta Gold is expected to be handed over to customers in the fourth quarter of 2027\"",
+    "Broke ground on 7 May 2026 as the latest phase of CELESTA City; main contractor Coteccons",
+    "Site of over 1.28 hectares; a 25-storey development with 420 apartments and a commercial podium with officetel units, shophouses and retail"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "celesta-gold"
+  },
+  {
+   "name": "Estiva Charm (Estiva, Mailand Hanoi City)",
+   "developer": "Phu Long and Keppel",
+   "area": "Mailand Hanoi City, western Hanoi",
+   "country": "Vietnam",
+   "market": "Vietnam",
+   "stage": "under construction",
+   "url": "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony",
+   "docs_url": "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 109,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Broke ground on 2 July 2026 as the first phase of the Estiva residential development, jointly developed by Phu Long and Keppel",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony"
+    },
+    {
+     "claim": "Estiva Charm occupies a 2.86-hectare site with 109 dual-frontage shophouses; Estiva as a whole spans more than 14 hectares",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony"
+    },
+    {
+     "claim": "No handover date is printed in the release",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "shophouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Estiva Charm (Estiva, Mailand Hanoi City) by Phu Long and Keppel in Mailand Hanoi City, western Hanoi (Vietnam). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.keppel.com/realestate/vn/en/Media-Releases/07-2026-Estiva-Charm-Ground-Breaking-Ceremony"
+   ],
+   "docs_listed": [
+    "Broke ground on 2 July 2026 as the first phase of the Estiva residential development, jointly developed by Phu Long and Keppel",
+    "Estiva Charm occupies a 2.86-hectare site with 109 dual-frontage shophouses; Estiva as a whole spans more than 14 hectares",
+    "No handover date is printed in the release"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "estiva-charm-estiva-mailand-hanoi-city"
+  },
+  {
+   "name": "Four Seasons Private Residences Charleston",
+   "developer": "Strategic Property Partners",
+   "area": "Charleston, South Carolina",
+   "country": "USA",
+   "market": "Charleston",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/charleston/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/charleston/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 36,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2029\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 36; Developer: Strategic Property Partners; architect: Morris Adjmi Architects; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/charleston/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Charleston by Strategic Property Partners in Charleston, South Carolina (USA). Added from the official developer page: off-plan; handover on record: 2029. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/charleston/",
+    "https://www.fourseasons.com/residences/private_residences/in-development/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 36; Developer: Strategic Property Partners; architect: Morris Adjmi Architects; the page says the project is \"In Development\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-charleston"
+  },
+  {
+   "name": "Four Seasons Private Residences Coconut Grove",
+   "developer": "Fort Partners / CMC Group",
+   "area": "Coconut Grove, Miami",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/coconut-grove/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/coconut-grove/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 70,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2028\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 70; Developer: Fort Partners / CMC Group; architect: Revuelta; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/coconut-grove/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Coconut Grove by Fort Partners / CMC Group in Coconut Grove, Miami (USA). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/coconut-grove/",
+    "https://www.fourseasons.com/residences/private_residences/in-development/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 70; Developer: Fort Partners / CMC Group; architect: Revuelta; the page says the project is \"In Development\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-coconut-grove"
+  },
+  {
+   "name": "Four Seasons Private Residences Deer Valley",
+   "developer": "Extell Development",
+   "area": "Deer Valley, Park City, Utah",
+   "country": "USA",
+   "market": "Deer Valley",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/deer-valley/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/deer-valley/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 123,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2028\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 123; Developer: Extell Development; architect: ODA Architecture; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/deer-valley/"
+    },
+    {
+     "claim": "The page describes slope-side residences with ski-in and ski-out access",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/deer-valley/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Deer Valley by Extell Development in Deer Valley, Park City, Utah (USA). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/deer-valley/",
+    "https://www.fourseasons.com/residences/private_residences/in-development/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 123; Developer: Extell Development; architect: ODA Architecture; the page says the project is \"In Development\"",
+    "The page describes slope-side residences with ski-in and ski-out access"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-deer-valley"
+  },
+  {
+   "name": "Four Seasons Private Residences Telluride",
+   "developer": "Fort Partners & Merrimac Ventures",
+   "area": "Telluride, Colorado",
+   "country": "USA",
+   "market": "Telluride",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/telluride/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/telluride/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 69,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2027\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 69; Developer: Fort Partners & Merrimac Ventures; architect: Olson Kundig; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/telluride/"
+    },
+    {
+     "claim": "The project page itself prints \"Opening Date 2028\", one year later than the in-development list (\"Opening 2027\")",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/telluride/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Telluride by Fort Partners & Merrimac Ventures in Telluride, Colorado (USA). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/in-development/",
+    "https://www.fourseasons.com/residences/private_residences/telluride/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 69; Developer: Fort Partners & Merrimac Ventures; architect: Olson Kundig; the page says the project is \"In Development\"",
+    "The project page itself prints \"Opening Date 2028\", one year later than the in-development list (\"Opening 2027\")"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-telluride"
+  },
+  {
+   "name": "Four Seasons Private Residences Jacksonville",
+   "developer": "Iguana Investments",
+   "area": "Jacksonville, Florida",
+   "country": "USA",
+   "market": "Jacksonville",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/jacksonville/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/jacksonville/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 26,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2026\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 26; Developer: Iguana Investments; architect: Pininfarina and HKS; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/jacksonville/"
+    },
+    {
+     "claim": "The project page itself prints \"Opening Date 2027\", one year later than the in-development list (\"Opening 2026\")",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/jacksonville/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Jacksonville by Iguana Investments in Jacksonville, Florida (USA). Added from the official developer page: off-plan; handover on record: 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/in-development/",
+    "https://www.fourseasons.com/residences/private_residences/jacksonville/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 26; Developer: Iguana Investments; architect: Pininfarina and HKS; the page says the project is \"In Development\"",
+    "The project page itself prints \"Opening Date 2027\", one year later than the in-development list (\"Opening 2026\")"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-jacksonville"
+  },
+  {
+   "name": "Four Seasons Private Residences Washington, DC",
+   "developer": "The Georgetown Company, The Levy Group and Mohari Hospitality",
+   "area": "Washington, DC",
+   "country": "USA",
+   "market": "Washington DC",
+   "stage": "off-plan",
+   "url": "https://www.fourseasons.com/residences/private_residences/washington-dc/",
+   "docs_url": "https://www.fourseasons.com/residences/private_residences/washington-dc/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 70,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Opening 2026\" on the Four Seasons list of private residences in development",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/in-development/"
+    },
+    {
+     "claim": "Private Residences (# of Units): 70; Developer: The Georgetown Company, The Levy Group and Mohari Hospitality; architect: SLCE Architects; the page says the project is \"In Development\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/washington-dc/"
+    },
+    {
+     "claim": "The project page prints \"Opening Date 2026\"",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fourseasons.com/residences/private_residences/washington-dc/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Four Seasons Private Residences Washington, DC by The Georgetown Company, The Levy Group and Mohari Hospitality in Washington, DC (USA). Added from the official developer page: off-plan; handover on record: 2026. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fourseasons.com/residences/private_residences/in-development/",
+    "https://www.fourseasons.com/residences/private_residences/washington-dc/"
+   ],
+   "docs_listed": [
+    "Private Residences (# of Units): 70; Developer: The Georgetown Company, The Levy Group and Mohari Hospitality; architect: SLCE Architects; the page says the project is \"In Development\"",
+    "The project page prints \"Opening Date 2026\""
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "four-seasons-private-residences-washington-dc"
+  },
+  {
+   "name": "ʻIlima Ward Village",
+   "developer": "Howard Hughes Communities with Discovery Land Company",
+   "area": "South Shore, Ward Village, Kakaʻako, Honolulu",
+   "country": "USA",
+   "market": "Hawaii",
+   "stage": "under construction",
+   "url": "https://www.wardvillage.com/residences/",
+   "docs_url": "https://www.wardvillage.com/residences/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 148,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Now Selling\" on the Ward Village residences page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.wardvillage.com/residences/"
+    },
+    {
+     "claim": "Developer release: 33 stories with 148 residences; Discovery Land Company's residential offering on Oʻahu, designed by Robert A.M. Stern Architects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-communities-reports-12-billion-sales-launch-newest"
+    },
+    {
+     "claim": "Groundbreaking reported on 29 September 2026 with \"an anticipated opening in 2030\" (local news report, not a developer page)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "ʻIlima Ward Village by Howard Hughes Communities with Discovery Land Company in South Shore, Ward Village, Kakaʻako, Honolulu (USA). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-communities-reports-12-billion-sales-launch-newest",
+    "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/",
+    "https://www.wardvillage.com/residences/"
+   ],
+   "docs_listed": [
+    "Listed as \"Now Selling\" on the Ward Village residences page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "ilima-ward-village"
+  },
+  {
+   "name": "Melia Ward Village",
+   "developer": "Howard Hughes Communities",
+   "area": "South Shore, Ward Village, Kakaʻako, Honolulu",
+   "country": "USA",
+   "market": "Hawaii",
+   "stage": "under construction",
+   "url": "https://www.wardvillage.com/residences/",
+   "docs_url": "https://www.wardvillage.com/residences/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 221,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as \"Now Selling\" on the Ward Village residences page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.wardvillage.com/residences/"
+    },
+    {
+     "claim": "Developer release: a 35-story companion tower to ʻIlima with 221 residences and a full suite of amenities",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-communities-reports-12-billion-sales-launch-newest"
+    },
+    {
+     "claim": "Groundbreaking reported on 29 September 2026 with \"an anticipated opening in 2030\" (local news report, not a developer page)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Melia Ward Village by Howard Hughes Communities in South Shore, Ward Village, Kakaʻako, Honolulu (USA). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-communities-reports-12-billion-sales-launch-newest",
+    "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/",
+    "https://www.wardvillage.com/residences/"
+   ],
+   "docs_listed": [
+    "Listed as \"Now Selling\" on the Ward Village residences page"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "melia-ward-village"
+  },
+  {
+   "name": "Reign (Metrotown)",
+   "developer": "Wesgroup Properties",
+   "area": "6280 Willingdon Avenue, Metrotown, Burnaby",
+   "country": "Canada",
+   "market": "Vancouver",
+   "stage": "under construction",
+   "url": "https://wesgroup.ca/residential/new-homes/reign/",
+   "docs_url": "https://wesgroup.ca/residential/new-homes/reign/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 617,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Now Selling & Under Construction\"; 617 homes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/reign/"
+    },
+    {
+     "claim": "Two towers with both condominium residences and rental homes; sales centre at 4366 Beresford Street, Burnaby",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/reign/"
+    },
+    {
+     "claim": "No completion date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/reign/"
+    },
+    {
+     "claim": "Pin: 49.226287, -123.008546 (6280 Willingdon Avenue, Burnaby, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/reign/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 49.226287,
+    "lng": -123.008546,
+    "permit_authority": null
+   },
+   "note": "Reign (Metrotown) by Wesgroup Properties in 6280 Willingdon Avenue, Metrotown, Burnaby (Canada). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://wesgroup.ca/residential/new-homes/reign/"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Now Selling & Under Construction\"; 617 homes",
+    "Two towers with both condominium residences and rental homes; sales centre at 4366 Beresford Street, Burnaby",
+    "No completion date is printed on the developer page",
+    "Pin: 49.226287, -123.008546 (6280 Willingdon Avenue, Burnaby, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "reign-metrotown"
+  },
+  {
+   "name": "W16 by Olson Kundig",
+   "developer": "Wesgroup Properties",
+   "area": "480 West 16th Avenue, Cambie Village, Vancouver",
+   "country": "Canada",
+   "market": "Vancouver",
+   "stage": "under construction",
+   "url": "https://wesgroup.ca/residential/new-homes/w16/",
+   "docs_url": "https://wesgroup.ca/residential/new-homes/w16/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 53,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Now Selling & Under Construction\"; 53 homes in a seven-storey concrete building designed by Olson Kundig",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/w16/"
+    },
+    {
+     "claim": "Presentation centre at 4033 Cambie Street, Vancouver; no completion date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/w16/"
+    },
+    {
+     "claim": "Pin: 49.256597, -123.114688 (480 West 16th Avenue, Vancouver, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wesgroup.ca/residential/new-homes/w16/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "condominium"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 49.256597,
+    "lng": -123.114688,
+    "permit_authority": null
+   },
+   "note": "W16 by Olson Kundig by Wesgroup Properties in 480 West 16th Avenue, Cambie Village, Vancouver (Canada). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://wesgroup.ca/residential/new-homes/w16/"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Now Selling & Under Construction\"; 53 homes in a seven-storey concrete building designed by Olson Kundig",
+    "Presentation centre at 4033 Cambie Street, Vancouver; no completion date is printed on the developer page",
+    "Pin: 49.256597, -123.114688 (480 West 16th Avenue, Vancouver, geocoded with OpenStreetMap Nominatim (house-level match)); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "w16-by-olson-kundig"
+  },
+  {
+   "name": "Daslu Residences São Paulo",
+   "developer": "Mitre Realty",
+   "area": "Rua Chabad, 109, Jardins, São Paulo",
+   "country": "Brazil",
+   "market": "Brazil",
+   "stage": "under construction",
+   "url": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo",
+   "docs_url": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"EM OBRA\" (under construction), with a works progress (\"evolução de obra\") section",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo"
+    },
+    {
+     "claim": "Apartments of 114 to 306 m2 with 3 to 4 bedrooms, penthouses of 243 to 306 m2; address Rua Chabad, 109",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo"
+    },
+    {
+     "claim": "Pin: -23.5617419, -46.6727781 (GeoCoordinates in the structured data of the developer page); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 114,
+    "size_max_m2": 306,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -23.5617419,
+    "lng": -46.6727781,
+    "permit_authority": null
+   },
+   "note": "Daslu Residences São Paulo by Mitre Realty in Rua Chabad, 109, Jardins, São Paulo (Brazil). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.mitrerealty.com.br/pt/empreendimentos/daslu-residences-sao-paulo"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"EM OBRA\" (under construction), with a works progress (\"evolução de obra\") section",
+    "Apartments of 114 to 306 m2 with 3 to 4 bedrooms, penthouses of 243 to 306 m2; address Rua Chabad, 109",
+    "No delivery date is printed on the developer page",
+    "Pin: -23.5617419, -46.6727781 (GeoCoordinates in the structured data of the developer page); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "daslu-residences-sao-paulo"
+  },
+  {
+   "name": "Azzure Resort Life",
+   "developer": "Eztec",
+   "area": "Av. Bussocaba, 906, Osasco, São Paulo",
+   "country": "Brazil",
+   "market": "Brazil",
+   "stage": "off-plan",
+   "url": "https://www.eztec.com.br/imoveis/azzure",
+   "docs_url": "https://www.eztec.com.br/imoveis/azzure",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status on the developer page: \"Lançamento\" (launch)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eztec.com.br/imoveis/azzure"
+    },
+    {
+     "claim": "Apartments of 63 to 120 m2, 2 bedrooms to 3 suites, on a 9,000 m2 site on Av. Bussocaba, with a 50 m pool",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eztec.com.br/imoveis/azzure"
+    },
+    {
+     "claim": "No delivery date is printed on the developer page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eztec.com.br/imoveis/azzure"
+    },
+    {
+     "claim": "Pin: -23.5465142, -46.7731075 (GeoCoordinates in the structured data of the developer page, address Av. Bussocaba, 906); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.eztec.com.br/imoveis/azzure"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment"
+    ],
+    "size_min_m2": 63,
+    "size_max_m2": 120,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": -23.5465142,
+    "lng": -46.7731075,
+    "permit_authority": null
+   },
+   "note": "Azzure Resort Life by Eztec in Av. Bussocaba, 906, Osasco, São Paulo (Brazil). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.eztec.com.br/imoveis/azzure"
+   ],
+   "docs_listed": [
+    "Status on the developer page: \"Lançamento\" (launch)",
+    "Apartments of 63 to 120 m2, 2 bedrooms to 3 suites, on a 9,000 m2 site on Av. Bussocaba, with a 50 m pool",
+    "No delivery date is printed on the developer page",
+    "Pin: -23.5465142, -46.7731075 (GeoCoordinates in the structured data of the developer page, address Av. Bussocaba, 906); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "azzure-resort-life"
+  },
+  {
+   "name": "Venezia Negombo",
+   "developer": "Prime Residencies (Prime Group / Prime Lands)",
+   "area": "Negombo, near the Colombo-Negombo main road",
+   "country": "Sri Lanka",
+   "market": "Sri Lanka",
+   "stage": "under construction",
+   "url": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en",
+   "docs_url": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en",
+   "permit_number": null,
+   "seed": {
+    "price": 60000000,
+    "currency": "LKR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status label on the page: \"ONGOING\"; price shown LKR 60,000,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+    },
+    {
+     "claim": "Water-villa themed 2-bedroom apartments with a fitted jacuzzi, lagoon views and hotel-style services; 25% down payment to be settled within 1 month",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+    },
+    {
+     "claim": "No handover date is printed on the page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+    },
+    {
+     "claim": "Pin: 7.196342, 79.852120 (coordinates of the project marker in the map embedded on the developer page); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 60000000,
+    "price_max": null,
+    "currency": "LKR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 7.196342,
+    "lng": 79.85212,
+    "permit_authority": null
+   },
+   "note": "Venezia Negombo by Prime Residencies in Negombo, near the Colombo-Negombo main road (Sri Lanka). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+   ],
+   "docs_listed": [
+    "Status label on the page: \"ONGOING\"; price shown LKR 60,000,000",
+    "Water-villa themed 2-bedroom apartments with a fitted jacuzzi, lagoon views and hotel-style services; 25% down payment to be settled within 1 month",
+    "No handover date is printed on the page",
+    "Pin: 7.196342, 79.852120 (coordinates of the project marker in the map embedded on the developer page); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "venezia-negombo"
+  },
+  {
+   "name": "SLS Ocean Beach Residences",
+   "developer": "Inmobilia Desarrollos",
+   "area": "Cancún, between the Hotel Zone and the city",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "off-plan",
+   "url": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx",
+   "docs_url": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 92,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Status printed on the page: \"Preventa\" (pre-sale)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx"
+    },
+    {
+     "claim": "A boutique collection of 92 SLS branded residences near the sea, each with a view of the Caribbean as described by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx"
+    },
+    {
+     "claim": "No delivery date or price is printed on the project page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx"
+    },
+    {
+     "claim": "Pin: 21.165743, -86.80673 (coordinates published in the structured data (GeoCoordinates) of the developer page); the address is the one published by the developer",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "branded residence"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 21.165743,
+    "lng": -86.80673,
+    "permit_authority": null
+   },
+   "note": "SLS Ocean Beach Residences by Inmobilia Desarrollos in Cancún, between the Hotel Zone and the city (Mexico). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.inmobilia.mx/proyecto/sls-ocean-beach?hsLang=es-mx"
+   ],
+   "docs_listed": [
+    "Status printed on the page: \"Preventa\" (pre-sale)",
+    "A boutique collection of 92 SLS branded residences near the sea, each with a view of the Caribbean as described by the developer",
+    "No delivery date or price is printed on the project page",
+    "Pin: 21.165743, -86.80673 (coordinates published in the structured data (GeoCoordinates) of the developer page); the address is the one published by the developer"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "sls-ocean-beach-residences"
+  },
+  {
+   "name": "Coralia",
+   "developer": "Noval Properties",
+   "area": "Santo Domingo Este, seafront",
+   "country": "Dominican Republic",
+   "market": "Dominican Republic",
+   "stage": "under construction",
+   "url": "https://www.novalproperties.com/proyectos/coralia",
+   "docs_url": "https://www.novalproperties.com/proyectos/coralia",
+   "permit_number": null,
+   "seed": {
+    "price": 257000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Price printed on the page: \"Desde USD $257,000\"; height \"Hasta 50 Niveles\" (up to 50 levels)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/coralia"
+    },
+    {
+     "claim": "Phase 1: two condo-hotel towers and one hotel tower; branded residence model; studios, 1 to 3 bedrooms and penthouses; convention centre and food market planned",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/coralia"
+    },
+    {
+     "claim": "The page shows a construction progress section (\"Asi avanza\") with an update dated October 2026; no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.novalproperties.com/proyectos/coralia"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "apartment",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 257000,
+    "price_max": null,
+    "currency": "USD",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Coralia by Noval Properties in Santo Domingo Este, seafront (Dominican Republic). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.novalproperties.com/proyectos/coralia"
+   ],
+   "docs_listed": [
+    "Price printed on the page: \"Desde USD $257,000\"; height \"Hasta 50 Niveles\" (up to 50 levels)",
+    "Phase 1: two condo-hotel towers and one hotel tower; branded residence model; studios, 1 to 3 bedrooms and penthouses; convention centre and food market planned",
+    "The page shows a construction progress section (\"Asi avanza\") with an update dated October 2026; no delivery date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "coralia-dominican-republic"
+  },
+  {
+   "name": "Poblado Central (Ciudad Central)",
+   "developer": "Londoño Gómez",
+   "area": "Avenida El Poblado near Calle 30, Medellín",
+   "country": "Colombia",
+   "market": "Medellín",
+   "stage": "off-plan",
+   "url": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/poblado-central",
+   "docs_url": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/poblado-central",
+   "permit_number": null,
+   "seed": {
+    "price": 838477122,
+    "currency": "COP",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "The developer page presents Poblado Central as the first project of Ciudad Central, on Avenida El Poblado a few steps from Calle 30, with 1, 2 and 3-bedroom apartments",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/poblado-central"
+    },
+    {
+     "claim": "Developer brochure: two towers, apartments of 50 to 96 m2, project and common areas \"desarrollados y entregados por etapas\" (built and delivered in stages)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/sites/default/files/2025-11/PPT%20Digital_Poblado%20Central_V3.pdf"
+    },
+    {
+     "claim": "Prices shown from COP 838,477,122 (the page says outlet prices apply only to the listed inventory); no delivery date is printed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/poblado-central"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom apartment",
+     "2-bedroom apartment",
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": 50,
+    "size_max_m2": 96,
+    "price_min": 838477122,
+    "price_max": null,
+    "currency": "COP",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Poblado Central (Ciudad Central) by Londoño Gómez in Avenida El Poblado near Calle 30, Medellín (Colombia). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://londonogomez.com/proyectos-vivienda/antioquia/medellin/poblado-central",
+    "https://londonogomez.com/sites/default/files/2025-11/PPT%20Digital_Poblado%20Central_V3.pdf"
+   ],
+   "docs_listed": [
+    "The developer page presents Poblado Central as the first project of Ciudad Central, on Avenida El Poblado a few steps from Calle 30, with 1, 2 and 3-bedroom apartments",
+    "Prices shown from COP 838,477,122 (the page says outlet prices apply only to the listed inventory); no delivery date is printed"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-12",
+   "found_by": "discover-manual",
+   "slug": "poblado-central-ciudad-central"
   }
  ]
 }
