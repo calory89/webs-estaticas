@@ -41,7 +41,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v66';   // v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
+const CACHE_V = 'named-v67';   // v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
 //   // v64: market source label is the full /m/<market>/ path, not the 404 path kolaboro.com/m (n25e); v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
@@ -243,6 +243,45 @@ function rel6(ix, x, ho) {
   for (const [L, why] of pools) take(L, why, 6);
   return out;
 }
+
+// n26i (batch 26): the project pages the fewest other project pages link to. In-links counted from the links every project page
+// carries (the related six and the same-area list); the index, place and developer pages link every project and are left out of the
+// count. Ties rotate by day so the home page and hubs spread their links. Used by /projects/ and the home page and hubs (index.js).
+const LL6 = new WeakMap();
+export function leastLinked(ix, n, seed) {
+  let C = LL6.get(ix);
+  if (!C) {
+    C = new Map(ix.P.map(x => [x.id, 0]));
+    for (const x of ix.P) {
+      const R = rel6(ix, x, handoverOf(ix, x)), rs = new Set(R.map(r => r[0].id));
+      for (const [o] of R) C.set(o.id, (C.get(o.id) || 0) + 1);
+      if (x.ar && x.ar !== x.mk) for (const o of (ix.byAr.get(x.mk + '|' + x.ar) || []).filter(o => o.id !== x.id && !rs.has(o.id)).slice(0, 8)) C.set(o.id, (C.get(o.id) || 0) + 1);
+    }
+    LL6.set(ix, C);
+  }
+  let h = 0; for (const ch of String(seed || '')) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  const key = x => { let k = h; for (const ch of x.id) k = (k * 33 + ch.charCodeAt(0)) >>> 0; return k; };
+  return ix.P.slice().sort((a, b) => C.get(a.id) - C.get(b.id) || key(a) - key(b)).slice(0, n).map(x => ({ x, links: C.get(x.id) }));
+}
+const LLH = { en: ['More projects to look at', 'Pages few other project pages link to yet.'], es: ['Más proyectos para revisar', 'Fichas a las que todavía enlazan pocas otras fichas.'],
+  de: ['Weitere Projekte', 'Seiten, auf die bisher nur wenige andere Projektseiten verlinken.'], fr: ['D\'autres projets à consulter', 'Des fiches vers lesquelles peu d\'autres fiches renvoient encore.'],
+  nl: ['Meer projecten om te bekijken', 'Pagina\'s waar nog weinig andere projectpagina\'s naar linken.'], ru: ['Ещё проекты', 'Страницы, на которые пока ссылаются немногие другие страницы проектов.'],
+  zh: ['更多可查看的项目', '目前很少有其他项目页面链接到这些页面。'], ar: ['مشاريع أخرى للاطلاع', 'صفحات لا تشير إليها حتى الآن إلا صفحات مشاريع قليلة.'] };
+export function leastHtml(ix, lang, n, seed) {
+  const L = leastLinked(ix, n, seed), T = LLH[lang] || LLH.en, b = s => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
+  if (!L.length) return '';
+  return '<section class="kll" id="more-projects"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h2>' + esc(T[0]) + '</h2><p class="kll-s">' + esc(T[1]) + '</p><ul class="kll-l">' +
+    L.map(({ x }) => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + b(x.n) + '</a> <small>' + b(mkName(x.mk, lang)) + '</small></li>').join('') + '</ul></div></section>';
+}
+// for the home page and hubs (index.js): the block from memory only, so those pages never wait for the named data; when the data is
+// not in memory yet it loads in the background and the next request carries the block
+const LLR = new Map();
+export function leastReady(env, ctx, lang) {
+  if (IDX) { const k = lang + '|' + iso(IDX.updated) + '|' + IDX.P.length; let h = LLR.get(k); if (!h) { h = LL_CSS + leastHtml(IDX, lang, 12, iso(IDX.updated) + lang); if (LLR.size > 40) LLR.clear(); LLR.set(k, h); } return h; }
+  try { const p = data(env).catch(() => null); if (ctx && ctx.waitUntil) ctx.waitUntil(p); } catch (e) {}
+  return '';
+}
+export const LL_CSS = '<style>.kll{padding:28px 0;border-top:1px solid var(--line)}.kll h2{font-size:1.25rem;margin:0 0 4px}.kll-s{color:var(--muted);margin:0 0 12px}.kll-l{columns:3 220px;padding-inline-start:18px;margin:0}.kll-l li{margin:0 0 8px;break-inside:avoid}.kll-l small{color:var(--muted)}</style>';
 
 // n24s (batch 24): the quick answer, 40 to 60 words, only from fields we hold: what it is, developer, place, handover date as
 // published (and its moves), permit published yes or no, transparency score and rank in its place, our review status, last checked.
@@ -617,7 +656,7 @@ function indexPage(ix, lang) {
   const by = new Map(); for (const x of ix.P) { if (!by.has(x.mk)) by.set(x.mk, []); by.get(x.mk).push(x); }
   const mks = [...by.keys()].sort((a, b) => by.get(b).length - by.get(a).length);
   const canon = ORIGIN + pre(lang) + '/projects/', title = tr(lang, 'title_i'), desc = tr(lang, 'lead_i', { k: ix.P.length, m: mks.length });
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + searchBox(lang, ix.P.length, ix.devs.size) + filterBar(lang) + '</div></section><div class="wrap kwrap" data-kx-lists>' +
+  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + searchBox(lang, ix.P.length, ix.devs.size) + filterBar(lang) + '</div></section>' + LL_CSS + leastHtml(ix, lang, 24, iso(ix.updated)) + '<div class="wrap kwrap" data-kx-lists>' +
     '<details class="kmkt"><summary>' + esc(tr(lang, 'jump_mk')) + ' (' + mks.length + ')</summary><p>' + mks.map(m => '<a href="#m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></a>').join('') + '</p></details>' +
     mks.map(m => '<section class="ks"><h2 id="m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></h2><ul class="lk cols">' + by.get(m).sort((a, b) => a.n.localeCompare(b.n)).map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a>' + (x.dv ? ' <small>' + esc(x.dv) + '</small>' : '') + '</li>').join('') + '</ul></section>').join('') + '</div>';
   const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: iso(ix.updated) };

@@ -1,7 +1,7 @@
 // kolaboro.com (n25e, 12 Nov 2026): what a missing URL answers. No paid AI, no DB.
 //   fix(u, env)  -> 301 to the one current page that clearly replaces an old URL, 410 Gone for junk that was never ours, or null (keep 404).
 //                   Called only after the site answered 404, so normal pages pay nothing.
-//   page(r, u, status) -> the static 404 page with a useful, translated body (project search, /projects/, transparency rankings,
+//   page(r, u, status, env) -> the static 404 page (n26i: translated header and footer from the /<lang>/ shell) with a useful, translated body (project search, /projects/, transparency rankings,
 //                   tools), noindex, and the right status (404 or 410).
 // Rules: never redirect to the home page as a catch-all; Sumba ids (conflict of interest) never go to a named page, they keep the
 // anonymous /p/<id>/ file; private paths and API paths keep their 404.
@@ -67,13 +67,22 @@ export function helpBody(lang, h1, lead) {
     '<ul class="nf-links">' + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
 }
 
-export function page(r, u, status) {
+export async function page(r, u, status, env) {
   const lm = u.pathname.match(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/), lang = lm ? lm[1] : 'en', L = T[lang], gone = status === 410;
   const body = helpBody(lang, gone ? L.hg : L.h, L.l);
-  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.delete('content-length'); h.delete('etag');
-  const out = new Response(r.body, { status: gone ? 410 : 404, headers: h });
-  return new HTMLRewriter()
-    .on('head title', { element(e) { e.setInnerContent((gone ? L.g : L.t) + ' | Kolaboro'); } })
-    .on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
-    .transform(out);
+  // n26i (batch 26): header and footer in the page language too. The static 404.html is English; for /<lang>/ paths the shell is the
+  // translated /<lang>/how-we-score/ page (the same shell the named pages use), with its head reduced to a noindex 404.
+  let src = r;
+  if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request('https://kolaboro.com/' + lang + '/how-we-score/')); if (s.ok && /text\/html/.test(s.headers.get('content-type') || 'text/html')) src = s; } catch (e) { src = r; }
+  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag');
+  const out = new Response(src.body, { status: gone ? 410 : 404, headers: h });
+  const title = (gone ? L.g : L.t) + ' | Kolaboro';
+  let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } });
+  if (src !== r) rw = rw
+    .on('link[rel="canonical"],link[rel="alternate"][hreflang],script[type="application/ld+json"],meta[property^="og:"],meta[name^="twitter:"]', { element(e) { e.remove(); } })
+    .on('meta[name="description"]', { element(e) { e.setAttribute('content', L.l); } })
+    .on('meta[name="robots"]', { element(e) { e.remove(); } })
+    .on('head', { element(e) { e.append('<meta name="robots" content="noindex">', { html: true }); } })
+    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } });
+  return rw.transform(out);
 }

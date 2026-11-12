@@ -185,7 +185,7 @@ export async function trProject(env, id, lang) {
 }
 
 // ------------------------------------------------------------------------------------------------ HTML parts
-const CSS ='<style id="ktr-css">.ktr>.k-sec:first-child{padding-top:clamp(20px,3vw,36px)}.ktr .k-phead{margin-bottom:var(--k-5,24px)}.ktr h2{margin-top:var(--k-7,48px)}.ktr-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface);margin:var(--k-4,16px) 0}.ktr-kv div{padding:14px 16px;box-shadow:inset -1px -1px 0 var(--k-line)}.ktr-kv b{display:block;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;font-variant-numeric:tabular-nums}.ktr-kv span{display:block;font-size:var(--k-fs-sm,15px);color:var(--k-muted)}' +
+const CSS ='<style id="ktr-css">.ktr-thin{columns:2 300px;padding-inline-start:18px;margin:var(--k-3,12px) 0 var(--k-5,24px)}.ktr-thin li{margin:0 0 8px;break-inside:avoid}.ktr-thin small{display:block;color:var(--k-muted,#56636F)}.ktr>.k-sec:first-child{padding-top:clamp(20px,3vw,36px)}.ktr .k-phead{margin-bottom:var(--k-5,24px)}.ktr h2{margin-top:var(--k-7,48px)}.ktr-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface);margin:var(--k-4,16px) 0}.ktr-kv div{padding:14px 16px;box-shadow:inset -1px -1px 0 var(--k-line)}.ktr-kv b{display:block;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;font-variant-numeric:tabular-nums}.ktr-kv span{display:block;font-size:var(--k-fs-sm,15px);color:var(--k-muted)}' +
   '.ktr-tw{overflow-x:auto;margin:var(--k-3,12px) 0 var(--k-5,24px);border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface)}.ktr-tw table{min-width:860px;width:100%}.ktr-tw th{font-size:var(--k-fs-xs,13px);font-weight:600;white-space:normal;vertical-align:bottom}.ktr-tw td{vertical-align:top}.ktr-tw tbody tr{content-visibility:auto;contain-intrinsic-size:auto 64px}' +
   '.ktr-sc{font-weight:700;font-variant-numeric:tabular-nums;font-size:var(--k-fs-lg,20px);white-space:nowrap}.ktr-bar{display:block;height:6px;border-radius:3px;background:var(--k-sunken);margin-top:4px;min-width:56px}.ktr-bar i{display:block;height:100%;border-radius:3px;background:var(--k-sea);width:var(--v)}' +
   '.ktr-t{display:inline-flex;align-items:flex-start;gap:4px;font-size:var(--k-fs-xs,13px);line-height:1.3}.ktr-t b{font-size:15px;line-height:1}.ktr-yes{color:var(--k-ok)}.ktr-part{color:var(--k-warn)}.ktr-no,.ktr-nc{color:var(--k-muted)}' +
@@ -288,6 +288,29 @@ function linksHtml(lang, slug) {
   return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">' + esc(t(lang, 'all_places')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a><a href="/api/x/transparency' + (slug ? '/' + slug : '') + '">' + esc(t(lang, 'json')) + '</a><a href="/rankings/">' + esc(t(lang, 'crumb_r')) + '</a></p>';
 }
 
+// n26i (batch 26): projects with almost nothing published yet stay on their own pages and are grouped here too, in short rows with a
+// strong link, so the place page carries them until data arrives. "Little published": at most one of the six basic facts (legal name,
+// permit number, handover date, deposit protection, location, price) is published. They also stay in the table above.
+const THIN_K = ['legal', 'permit', 'date', 'deposit', 'location', 'price'];
+const isThin = r => THIN_K.filter(k => r.comp[k] && r.comp[k].st === 'yes').length <= 1;
+const THIN_T = {
+  en: ['Little published so far ({n})', 'These projects publish at most one of the basic facts we look for. Their pages stay up and gain detail as the developer publishes more.', 'Published', 'nothing yet'],
+  es: ['Poco publicado por ahora ({n})', 'Estos proyectos publican como mucho uno de los datos básicos que buscamos. Sus fichas siguen activas y ganan detalle a medida que el promotor publica más.', 'Publicado', 'nada todavía'],
+  de: ['Bisher wenig veröffentlicht ({n})', 'Diese Projekte veröffentlichen höchstens eine der grundlegenden Angaben, nach denen wir suchen. Ihre Seiten bleiben online und werden ausführlicher, sobald der Bauträger mehr veröffentlicht.', 'Veröffentlicht', 'noch nichts'],
+  fr: ['Peu publié pour l\'instant ({n})', 'Ces projets publient au plus une des informations de base que nous cherchons. Leurs fiches restent en ligne et s\'enrichissent quand le promoteur en publie davantage.', 'Publié', 'rien pour l\'instant'],
+  nl: ['Tot nu toe weinig gepubliceerd ({n})', 'Deze projecten publiceren hooguit één van de basisgegevens die we zoeken. Hun pagina\'s blijven online en worden uitgebreider zodra de ontwikkelaar meer publiceert.', 'Gepubliceerd', 'nog niets'],
+  ru: ['Пока опубликовано мало (проектов: {n})', 'Эти проекты публикуют не больше одного из основных сведений, которые мы ищем. Их страницы остаются на сайте и пополняются, когда застройщик публикует больше.', 'Опубликовано', 'пока ничего'],
+  zh: ['目前公开信息很少（{n} 个）', '这些项目在我们查找的基本信息中最多只公开了一项。它们的页面会保留，并在开发商公开更多信息后补充。', '已公开', '暂无'],
+  ar: ['القليل منشور حتى الآن ({n})', 'تنشر هذه المشاريع معلومة واحدة على الأكثر من المعلومات الأساسية التي نبحث عنها. تبقى صفحاتها متاحة وتزداد تفاصيلها كلما نشر المطوّر المزيد.', 'المنشور', 'لا شيء بعد'] };
+const PRICE_L = { en: 'Price', es: 'Precio', de: 'Preis', fr: 'Prix', nl: 'Prijs', ru: 'Цена', zh: '价格', ar: 'السعر' };
+function thinHtml(lang, pl) {
+  const L = pl.L.filter(r => !r.sumba && isThin(r)); if (!L.length) return '';
+  const T = THIN_T[lang] || THIN_T.en, f = (i, v) => esc(T[i]).replace('{n}', v == null ? '' : nf(lang, v));
+  return '<h2 id="little-data">' + f(0, L.length) + '</h2><p class="k-small">' + f(1) + '</p><ul class="ktr-thin">' + L.map(r => {
+    const got = THIN_K.filter(k => r.comp[k] && r.comp[k].st === 'yes').map(k => k === 'price' ? (PRICE_L[lang] || PRICE_L.en) : t(lang, 'k_' + k));
+    return '<li><a href="' + pre(lang) + '/projects/' + esc(r.s) + '/">' + bdi(r.n) + '</a>' + (r.dv ? ' <span class="k-muted">' + bdi(r.dv) + '</span>' : '') + ' <small>' + f(2) + ': ' + (got.length ? got.map(esc).join(', ') : f(3)) + '</small></li>';
+  }).join('') + '</ul>';
+}
 // ------------------------------------------------------------------------------------------------ pages
 function placePage(ix, slug, lang) {
   const pl = ix.places.get(slug); if (!pl) return null;
@@ -300,6 +323,7 @@ function placePage(ix, slug, lang) {
   if (P.coi) body += '<div class="k-alert k-alert--warn ktr-coi" role="note" id="disclosure"><b>' + esc(t(lang, 'coi')) + '</b> <span><a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a>. ' + esc(t(lang, 'coi_rows')) + '</span></div>';
   body += kvHtml(lang, pl, ix) + assignHtml(lang, P) + (pl.ranked ? '' : '<p class="k-small">' + esc(t(lang, 'small')) + '</p>');
   body += '<h2 id="ranking">' + esc(t(lang, pl.ranked ? 'tbl_h' : 'list_h')) + '</h2>' + tableHtml(lang, pl);
+  body += thinHtml(lang, pl);
   body += emailBox(lang, P) + replyBox(lang, null);
   body += '<h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2><div class="k-disc">' + faq.map(([q, a]) => '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('') + '</div>';
   body += linksHtml(lang, slug) + '</div></section></div>' + LED_JS + FORM_JS;

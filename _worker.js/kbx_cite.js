@@ -18,11 +18,12 @@
 import * as N from './kbx_named.js';
 import { rpc } from './kolaboro.js';
 import { S } from './kbx_cite_i18n.js';
+import { coName, mkName } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$/;
 const MIN_STORY = 8;   // reviewed named projects a market needs for a monthly story (the delay index itself needs 5)
 const esc = N.esc, pre = N.pre;
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
@@ -344,6 +345,45 @@ function llmsProjects(X) {
   }
   return L.join('\n');
 }
+// n26i (batch 26): llms.txt per language (/<lang>/llms.txt) and per country (/llms/<country>.txt), every named project with the
+// quick answer of its page in that language (the same words, built from the same fields), its page link and its answer file.
+const LL = {
+  en: ['Kolaboro: off-plan projects, facts only', 'Every named off-plan project we track, with the quick answer shown at the top of its page. Facts only, each with its source on the page. Data of {d}. CC BY 4.0, attribute "Kolaboro". Projects not yet reviewed carry no score.', 'Other files', '{n} projects'],
+  es: ['Kolaboro: proyectos sobre plano, solo hechos', 'Todos los proyectos sobre plano con nombre que seguimos, con la respuesta rápida que aparece arriba en su página. Solo hechos, cada uno con su fuente en la página. Datos del {d}. CC BY 4.0, cite "Kolaboro". Los proyectos aún no revisados no llevan puntuación.', 'Otros archivos', '{n} proyectos'],
+  de: ['Kolaboro: Off-Plan-Projekte, nur Fakten', 'Alle benannten Off-Plan-Projekte, die wir verfolgen, mit der Kurzantwort oben auf ihrer Seite. Nur Fakten, jede mit Quelle auf der Seite. Datenstand {d}. CC BY 4.0, Quellenangabe „Kolaboro“. Noch nicht geprüfte Projekte haben keinen Wert.', 'Weitere Dateien', '{n} Projekte'],
+  fr: ['Kolaboro : projets sur plan, des faits uniquement', 'Tous les projets sur plan nommés que nous suivons, avec la réponse courte affichée en haut de leur page. Des faits uniquement, chacun avec sa source sur la page. Données du {d}. CC BY 4.0, citer « Kolaboro ». Les projets pas encore examinés n\'ont pas de score.', 'Autres fichiers', '{n} projets'],
+  nl: ['Kolaboro: projecten op plan, alleen feiten', 'Alle benoemde projecten op plan die we volgen, met het korte antwoord bovenaan hun pagina. Alleen feiten, elk met de bron op de pagina. Gegevens van {d}. CC BY 4.0, vermeld "Kolaboro". Projecten die nog niet zijn beoordeeld hebben geen score.', 'Andere bestanden', '{n} projecten'],
+  ru: ['Kolaboro: строящиеся проекты, только факты', 'Все строящиеся проекты с названием, которые мы отслеживаем, с кратким ответом из начала их страницы. Только факты, у каждого источник на странице. Данные на {d}. CC BY 4.0, ссылка на «Kolaboro». У ещё не проверенных проектов нет оценки.', 'Другие файлы', 'проектов: {n}'],
+  zh: ['Kolaboro：期房项目，只列事实', '我们跟踪的所有具名期房项目，附其页面顶部的简要回答。只列事实，每条在页面上都有来源。数据日期 {d}。CC BY 4.0，请注明“Kolaboro”。尚未审核的项目没有评分。', '其他文件', '{n} 个项目'],
+  ar: ['Kolaboro: مشاريع على المخطط، حقائق فقط', 'كل المشاريع على المخطط المسماة التي نتابعها، مع الإجابة المختصرة الظاهرة أعلى صفحتها. حقائق فقط، لكل منها مصدر على الصفحة. بيانات {d}. ترخيص CC BY 4.0، مع ذكر "Kolaboro". المشاريع التي لم تُراجع بعد ليست لها درجة.', 'ملفات أخرى', '{n} مشروع'] };
+const LLD = {};
+const llT = (lang, i, v) => String((LL[lang] || LL.en)[i]).replace(/\{(\w+)\}/g, (m, k) => v && v[k] != null ? v[k] : m);
+const fdate = (d, lang) => { try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); } catch (e) { return d; } };
+const CO_AL = { 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia', 'United States': 'USA', 'United Arab Emirates': 'UAE' };   // same names as the country hubs (kbx_seo.js)
+export function llmsCountries(X) { const m = new Map(); for (const x of X.ix.P) if (x.co) { const co = CO_AL[x.co] || x.co, k = slug(co); if (!m.has(k)) m.set(k, { co, s: k, L: [] }); m.get(k).L.push(x); } return [...m.values()].sort((a, b) => b.L.length - a.L.length || a.co.localeCompare(b.co)); }
+async function llmsLang(X, env, lang, only) {
+  const key = lang + '|' + (only ? only.s : '*') + '|' + X.today + '|' + X.ix.P.length; if (LLD[key]) return LLD[key];
+  const P = only ? only.L : X.ix.P;
+  let trP = null; try { trP = (await import('./kbx_tr.js')).trProject; } catch (e) { trP = null; }
+  const tps = trP ? await Promise.all(P.map(x => trP(env, x.id, lang).catch(() => null))) : P.map(() => null);
+  const tpOf = new Map(P.map((x, i) => [x.id, tps[i]]));
+  const L = ['# ' + llT(lang, 0) + (only ? ': ' + coName(only.co, lang) : ''), '', '> ' + llT(lang, 1, { d: fdate(X.today, lang) }), ''];
+  L.push('## ' + llT(lang, 2), '', '- ' + ORIGIN + '/llms.txt', '- ' + ORIGIN + '/llms-full.txt', '- ' + ORIGIN + '/llms-projects.txt', ...LANGS.filter(l => l !== 'en' && l !== lang).map(l => '- ' + ORIGIN + '/' + l + '/llms.txt'), '- ' + ORIGIN + '/llms/<country>.txt (' + llmsCountries(X).slice(0, 6).map(c => c.s).join(', ') + ', ...)', '- ' + ORIGIN + '/answers/<slug>.md', '');
+  const byCo = new Map(); for (const x of P) { const c = x.co || '-'; if (!byCo.has(c)) byCo.set(c, new Map()); const m = byCo.get(c); if (!m.has(x.mk)) m.set(x.mk, []); m.get(x.mk).push(x); }
+  for (const [co, M] of [...byCo.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+    if (!only) L.push('## ' + coName(co, lang) + ' (' + llT(lang, 3, { n: [...M.values()].reduce((a, v) => a + v.length, 0) }) + ')', '');
+    for (const [mk, xs] of [...M.entries()].sort((a, b) => String(a[0]).localeCompare(String(b[0])))) {
+      L.push((only ? '## ' : '### ') + mkName(mk, lang), '');
+      for (const x of xs.sort((a, b) => a.n.localeCompare(b.n))) {
+        let qa = ''; try { qa = N.quickAnswer(X.ix, x, lang, tpOf.get(x.id) || null); } catch (e) { qa = ''; }
+        L.push('- [' + x.n + '](' + pUrl(lang, x) + ')' + (qa ? ': ' + qa.replace(/\s+/g, ' ').trim() : '') + ' ' + ORIGIN + '/answers/' + x.s + '.md');
+      }
+      L.push('');
+    }
+  }
+  const out = L.join('\n'); for (const k of Object.keys(LLD)) if (!k.endsWith('|' + X.today + '|' + X.ix.P.length)) delete LLD[k];
+  if (Object.keys(LLD).length < 40) LLD[key] = out; return out;
+}
 function citeSitemap(X) {
   const U = [];
   const lastIn = m => [(X.changes.find(e => e.d.slice(0, 7) === m) || {}).d, X.added.filter(e => e.d.slice(0, 7) === m).map(e => e.d).sort().pop()].filter(Boolean).sort().pop() || X.today;
@@ -380,6 +420,8 @@ export async function handle(req, u, env, ctx, shell) {
     return txt(answers(X, x, tp), 'text/markdown; charset=utf-8', { link: '<' + pUrl('en', x) + '>; rel="canonical"', 'last-modified': new Date(N.lastmod(X.ix, x) + 'T12:00:00Z').toUTCString() });
   }
   if (p === '/llms-projects.txt') return txt(llmsProjects(X), 'text/plain; charset=utf-8');
+  if ((m = /^\/(es|de|fr|nl|ru|zh|ar)\/llms\.txt$/.exec(p))) return txt(await llmsLang(X, env, m[1], null), 'text/plain; charset=utf-8', { 'content-language': m[1], 'x-robots-tag': 'noindex' });
+  if ((m = /^\/llms\/([a-z0-9-]{2,60})\.txt$/.exec(p))) { const c = llmsCountries(X).find(z => z.s === m[1]); if (!c) return nf(); return txt(await llmsLang(X, env, 'en', c), 'text/plain; charset=utf-8', { 'x-robots-tag': 'noindex' }); }
   if (p === '/stories/sitemap.xml') return txt(citeSitemap(X), 'application/xml; charset=utf-8');
   if (p === '/changes/feed.atom') return txt(changesAtom(X), 'application/atom+xml; charset=utf-8');
   if ((m = /^\/stories\/(\d{4}-\d{2})\/([a-z0-9-]{1,60})\.csv$/.exec(p))) {

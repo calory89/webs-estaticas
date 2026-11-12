@@ -440,15 +440,32 @@ const urlset = (items, alt, img) => '<?xml version="1.0" encoding="UTF-8"?>\n<ur
 // image sitemap (batch 15): the share card of every named project and developer page (rendered by kbx_og.js from the same facts) and,
 // where we hold one, the monthly Sentinel-2 thumbnail strip shown in "Construction progress from space" (kbx_named_sat.js).
 // English pages only: the images are the same in every language and the hreflang set already links the translations.
-async function imageUrls(env, B, NP, ND) {
+async function imageUrls(env, B, NP, ND, pages) {
   const prog = await file(env, '/data/construction-progress.json'), sp = (prog && prog.projects) || {};
   const one = (i, kind) => { const b = i.base, img = [SITE + '/og' + b.replace(/\/$/, '') + '.png']; const r = kind === 'project' && i.id && sp[i.id]; if (r && r.frames && r.v) img.push(SITE + '/k/sat/proj/' + encodeURIComponent(i.id) + '.jpg?v=' + encodeURIComponent(r.v)); return { loc: i.loc, lastmod: i.lastmod, img }; };
   const en = i => !/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.test(i.loc);
-  return NP.filter(i => en(i) && /^\/projects\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'project')).concat(ND.filter(i => en(i) && /^\/developers\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'developer')));
+  const out = NP.filter(i => en(i) && /^\/projects\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'project')).concat(ND.filter(i => en(i) && /^\/developers\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'developer')));
+  // n26i: English static pages with their own share image (og:image of the page itself, read from the deployed file, our domain only)
+  if (pages) { const E = pages.filter(pg => pg.lang === 'en'), I = await Promise.all(E.map(pg => ogOf(env, pg.loc.replace(SITE, '')))); E.forEach((pg, i) => { if (I[i]) out.push({ loc: pg.loc, lastmod: pg.lastmod, img: [I[i]] }); }); }
+  return out;
 }
+async function ogOf(env, p) {
+  const k = '__og' + p, m = MEMO[k]; if (m && Date.now() - m.t < 21600000) return m.v;
+  let v = null;
+  if (p.endsWith('/')) try { const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com' + p + 'index.html')); if (r.ok) { const t = (await r.text()).slice(0, 12000), g = /<meta property="og:image" content="(https:\/\/kolaboro\.com\/[^"?#]+\.(?:png|jpe?g|webp))"/.exec(t); v = g ? g[1] : null; }
+    if (v) { const i = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com' + v.replace(SITE, ''))); if (!i.ok) v = null; }   // only images that exist
+  } catch (e) { v = null; }
+  MEMO[k] = { t: Date.now(), v }; return v;
+}
+// n26i (batch 26): indexable pages our own crawl of 13 Nov found linked but in no sitemap: worker-rendered pages in 8 languages and
+// a few static pages. Each answered 200, self-canonical, no noindex. No lastmod is invented for them (left out when not known).
+const XL = ['methods/construction-stage', 'methods/delivery-forecast', 'guides/short-let-rules', 'satellite/plot', 'watch/lookalikes', 'graph/developers', 'tools/contract-addendum', 'tools/permit-photo', 'live/xrays', 'open', 'numbers'];
+const XE = ['tools/account-check', 'tools/site-visit', 'tools/payment-email-check', 'findings', 'room', 'bulk-check', 'engineering/seo'];
+const xtraLocs = () => XL.flatMap(p => LANGS.map(l => SITE + (l === 'en' ? '' : '/' + l) + '/' + p + '/')).concat(XE.map(p => SITE + '/' + p + '/')).map(loc => ({ loc, lastmod: null }));
 async function staticPages(env, audit) {   // the static sitemap (kept as /sitemap.xml for the QA tools) grouped by language
   const sm = (await file(env, '/sitemap.xml')) || '';
-  const locs = [...sm.matchAll(/<url><loc>([^<]+)<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?/g)].map(m => ({ loc: m[1], lastmod: m[2] || null }));
+  const locs0 = [...sm.matchAll(/<url><loc>([^<]+)<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?/g)].map(m => ({ loc: m[1], lastmod: m[2] || null }));
+  const have = new Set(locs0.map(x => x.loc)), locs = locs0.concat(xtraLocs().filter(x => !have.has(x.loc)));
   const set = new Set(locs.map(x => x.loc)), lm = (audit && audit.lastmod) || {};
   const key = loc => { const p = loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p); return m ? [m[1], m[2]] : ['en', p]; };
   const drop = new Set(((audit && audit.exclude) || []).concat(['/saved/', '/portal/demo/']));   // noindex or non-200 pages found by the crawl audit
@@ -486,7 +503,7 @@ async function sitemaps(env, B, name) {
   Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon });
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
-  S.images = await imageUrls(env, B, NP, ND);
+  S.images = await imageUrls(env, B, NP, ND, pages);
   for (const k of Object.keys(S)) if (k !== 'images') { const seen = new Set(); S[k] = S[k].filter(i => i && i.loc && !seen.has(i.loc) && seen.add(i.loc)); }   // n20f: one URL once per sitemap (/report/sample/ was listed twice)
   if (name === 'index' || name === 'stats') {
     const keys = Object.keys(S).filter(k => S[k].length);
@@ -513,6 +530,11 @@ async function llms(env, B, full) {
   for (const x of list.filter(o => o.L.length)) { const s = stats(x.L); L.push('- [Off-plan projects in ' + x.c + '](' + SITE + '/countries/' + x.s + '/): ' + x.L.length + ' projects, ' + pct(s.pub.permit, s.n) + '% publish a permit number, ' + pct(s.pub.escrow, s.n) + '% state deposit protection. Guide: [how to check](' + SITE + '/countries/' + x.s + '/how-to-check/)' + (x.L.length >= SAFE_MIN ? ', [is it safe](' + SITE + '/countries/' + x.s + '/is-it-safe/)' : '') + (lawFor(B, x.c).length ? ', [buyer protection law](' + SITE + '/countries/' + x.s + '/buyer-protection-law/)' : '')); }
   L.push('', '## Rankings', '- [Most delayed off-plan projects](' + SITE + '/rankings/most-delayed/): past the first handover date on record, by market.', '- [Most changed promises](' + SITE + '/rankings/changed-promises/): changes found between dated copies of developer pages.', '- [New projects this month](' + SITE + '/new/)', '- [Embeddable widgets](' + SITE + '/embed/widgets/)', '- [Off-plan Delivery Index, monthly frozen editions](' + SITE + '/press/delivery-index/): citeable permalinks with CSV');
   const np = [...B.N.projects.values()], byId = new Map(B.all.map(c => [c.id, c]));
+  // n26i (batch 26): the same named projects with their quick answer in each language, and one file per country
+  if (np.length) {
+    const cn = new Map(); for (const e of np) { const c = byId.get(e.id); if (c && c.country) cn.set(c.country, (cn.get(c.country) || 0) + 1); }
+    L.push('', '## Per language and per country', '- Every named project with the quick answer of its page, in the page language: ' + ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].map(l => '[' + l + '](' + SITE + '/' + l + '/llms.txt)').join(', ') + '; English: ' + SITE + '/llms-full.txt and ' + SITE + '/llms-projects.txt.', '- One answer file per project (quick answer, dated promises, permit, developer, changes, sources): ' + SITE + '/answers/<slug>.md', '- Per country (English): ' + [...cn.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([c, n]) => '[' + c + '](' + SITE + '/llms/' + slug(c) + '.txt) ' + n).join(', '));
+  }
   if (np.length) {
     L.push('', '## Named projects (facts only; each page has a right of reply)');
     // n24s: the page's quick answer (from /api/seo/urls) when we have it: what, developer, where, handover, permit, transparency score
@@ -526,7 +548,7 @@ async function llms(env, B, full) {
 
 // ---------- measurement ----------
 async function pSeo(env, B) {
-  const audit = await file(env, '/data/seo-audit.json'), cnt = await sitemaps(env, B, 'stats'), lh = await file(env, '/data/lighthouse.json'), inow = await file(env, '/data/indexnow.json');
+  const audit = await file(env, '/data/seo-audit.json'), cnt = await sitemaps(env, B, 'stats'), lh = await file(env, '/data/lighthouse.json'), inow = await file(env, '/data/indexnow.json'), daily = await file(env, '/data/seo-daily.json');
   const total = Object.values(cnt).reduce((a, b) => a + b, 0);
   let body = '<div class="sx-sum" id="summary"><p><b>' + fmt(total) + ' URLs are listed in our sitemaps right now</b> (computed live from <a href="/sitemap_index.xml">/sitemap_index.xml</a>). ' + (audit ? 'Last crawl ' + esc(audit.generated_at) + ': ' + fmt(audit.summary.crawled) + ' URLs fetched' + (audit.summary.in_sitemaps ? ' of ' + fmt(audit.summary.in_sitemaps) + ' listed (translated project and developer pages are sampled)' : '') + ', ' + fmt(audit.summary.indexable) + ' indexable, ' + fmt(audit.summary.schema_valid_pages) + ' with valid structured data' + (audit.indexable_estimate_all ? '; about ' + fmt(audit.indexable_estimate_all) + ' indexable across all listed URLs at the sample pass rate' : '') + '.' : 'The first crawl result is not published yet.') + '</p><p>Search Console and Bing Webmaster figures (clicks, impressions, index coverage) will appear here once the site owner connects them; we do not estimate them.</p></div>';
   body += h2('sitemaps', 'Sitemap coverage') + tableWrap(['Sitemap', 'URLs'], Object.entries(cnt).map(([k, v]) => '<tr><td>' + (v ? '<a href="/sitemaps/' + k + '.xml">' + k + '</a>' : k) + '</td><td>' + v + '</td></tr>'));
@@ -536,6 +558,16 @@ async function pSeo(env, B) {
     if ((audit.problems || []).length) body += '<h3>Open problems (first 40)</h3><ul class="sx-l">' + audit.problems.slice(0, 40).map(p => '<li><code>' + esc(p.url.replace(SITE, '')) + '</code>: ' + esc(p.issue) + '</li>').join('') + '</ul>';
     if ((audit.history || []).length) body += '<h3>History</h3>' + tableWrap(['Run', 'Crawled', 'Indexable', 'Valid schema', 'Problems'], audit.history.slice(-14).reverse().map(h => '<tr><td>' + esc(h.at) + '</td><td>' + h.crawled + '</td><td>' + h.indexable + '</td><td>' + h.schema_valid_pages + '</td><td>' + h.problems + '</td></tr>'));
   }
+  // n26i (batch 26): the daily sample check (tools/kolaboro-seo/daily.py): structured data and internal 404s / redirects
+  body += h2('daily', 'Daily sample check: structured data, 404s and redirects');
+  if (daily && daily.summary) {
+    const d = daily.summary;
+    body += '<p>Run ' + esc(daily.generated_at) + ' by tools/kolaboro-seo/daily.py on main, every day after the IndexNow job. ' + esc(daily.method || '') + ' Raw result: <a href="/data/seo-daily.json">/data/seo-daily.json</a>.</p><div class="sx-kv">' +
+      [[d.pages, 'pages sampled today'], [d.pages_ok, 'passed every check'], [d.ld_valid + ' / ' + d.ld_pages, 'with valid structured data'], [d.links_checked, 'internal links requested'], [d.broken, 'broken (4xx, 5xx)'], [d.redirects, 'through a redirect']].map(([v, l]) => '<div><b>' + esc(typeof v === 'number' ? fmt(v) : v) + '</b><span>' + l + '</span></div>').join('') + '</div>';
+    const L = (daily.broken || []).map(x => '<li><code>' + esc(x.url) + '</code>: ' + esc(x.status) + ', linked from <code>' + esc(x.found_on) + '</code></li>').concat((daily.problems || []).slice(0, 20).map(x => '<li><code>' + esc(x.url) + '</code>: ' + esc(x.issue) + '</li>'), (daily.redirects || []).slice(0, 20).map(x => '<li><code>' + esc(x.url) + '</code>: ' + esc(x.status) + ' to <code>' + esc(x.to) + '</code>, linked from <code>' + esc(x.found_on) + '</code></li>'));
+    body += L.length ? '<h3>Found today</h3><ul class="sx-l">' + L.slice(0, 60).join('') + '</ul>' : '<p>Nothing found today.</p>';
+    if ((daily.history || []).length > 1) body += '<h3>Last runs</h3>' + tableWrap(['Run', 'Pages', 'Passed', 'Links', 'Broken', 'Redirects'], daily.history.slice(-14).reverse().map(x => '<tr><td>' + esc(x.at) + '</td><td>' + x.pages + '</td><td>' + x.pages_ok + '</td><td>' + x.links_checked + '</td><td>' + x.broken + '</td><td>' + x.redirects + '</td></tr>'));
+  } else body += '<p>The first daily run has not been published yet. It runs every day after the IndexNow job (tools/kolaboro-seo/daily.py on main) and writes <code>/data/seo-daily.json</code>.</p>';
   if (lh && Array.isArray(lh.runs)) { const rows = lh.runs.filter(r => r.form_factor === 'mobile'); const over = rows.filter(r => (r.metrics || {}).lcp_ms >= 2500 || (r.metrics || {}).cls >= 0.1 || (r.metrics || {}).tbt_ms >= 200).length; body += h2('cwv', 'Core Web Vitals budget (lab, Lighthouse, mobile)') + '<p>Budget per page: LCP under 2,500 ms, CLS under 0.1, TBT under 200 ms (lab stand-in for INP). ' + (rows.length - over) + ' of ' + rows.length + ' key pages are within budget. Source: <a href="/data/lighthouse.json">/data/lighthouse.json</a>, run ' + esc(String(lh.generated || '').slice(0, 16).replace('T', ' ')) + ' UTC. Real-user figures: <a href="/engineering/speed/">speed</a>.</p>' + tableWrap(['Page', 'Performance', 'LCP', 'CLS', 'TBT', 'Budget'], rows.map(r => { const m = r.metrics || {}, ok = m.lcp_ms < 2500 && m.cls < 0.1 && m.tbt_ms < 200; return '<tr><td><a href="' + esc(r.page) + '">' + esc(r.page) + '</a></td><td>' + esc((r.scores || {}).performance) + '</td><td>' + fmt(m.lcp_ms) + ' ms</td><td>' + m.cls + '</td><td>' + fmt(m.tbt_ms) + ' ms</td><td>' + (ok ? 'within' : 'over') + '</td></tr>'; })); }
   // batch 15: true lastmod, image sitemap, crawl rules
   const T = B.T;
@@ -546,12 +578,15 @@ async function pSeo(env, B) {
       '<div class="sx-kv"><div><b>' + fmt(ds.length) + '</b><span>projects with a true lastmod</span></div><div><b>' + fmt(ds.filter(d => d >= wk).length) + '</b><span>changed in the last 7 days</span></div><div><b>' + fmt(ds.filter(d => d === today).length) + '</b><span>changed today</span></div></div>' +
       tableWrap(['Last data change', 'Projects'], [...byDay.entries()].sort((a, b) => a[0] < b[0] ? 1 : -1).slice(0, 10).map(([d, n]) => '<tr><td>' + longDate(d) + '</td><td>' + fmt(n) + '</td></tr>'));
   }
-  body += h2('images', 'Image sitemap') + '<p><a href="/sitemaps/images.xml">/sitemaps/images.xml</a> lists ' + fmt(cnt.images || 0) + ' English named pages with their 1200 x 630 facts card and, where we hold one, the monthly Sentinel-2 thumbnail strip. Each card is also an <code>ImageObject</code> (primaryImageOfPage) in the page\'s JSON-LD.</p>';
+  body += h2('images', 'Image sitemap') + '<p><a href="/sitemaps/images.xml">/sitemaps/images.xml</a> lists ' + fmt(cnt.images || 0) + ' English pages with their images: every named project and developer page with its 1200 x 630 facts card and, where we hold one, the monthly Sentinel-2 satellite strip, plus the static pages that carry their own share image. Each card is also an <code>ImageObject</code> (primaryImageOfPage) in the page\'s JSON-LD.</p>';
   body += h2('hygiene', 'Crawl rules') + '<ul class="sx-l"><li>One URL per page: trailing slash, lower case; <code>/p/&lt;id&gt;/</code>, <code>/projects/x</code> and <code>index.html</code> answer one 301 to the final URL (no chains).</li><li>Pages reached with a functional query (<code>?q=</code>, <code>?sort=</code>, <code>?lang=</code> ...) answer <code>X-Robots-Tag: noindex, follow</code>; tracking-only queries (<code>utm_*</code>, <code>gclid</code>, <code>fbclid</code>) keep the canonical as the only signal.</li><li><a href="/robots.txt">robots.txt</a> allows every search and answer-engine crawler (Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Applebot and others) on public pages.</li><li>Structured data on named pages: WebPage or ProfilePage, Organization, Residence or ApartmentComplex with GeoCoordinates where the location is public, Dataset, FAQPage, BreadcrumbList, ImageObject. Never Review, AggregateRating or ClaimReview.</li></ul>';
   body += h2('indexnow', 'IndexNow') + (inow ? '<p>Last submission ' + esc(inow.at) + ': ' + fmt(inow.submitted) + ' URLs, HTTP ' + esc(inow.status) + ' from api.indexnow.org (shared with Bing, Yandex, Naver, Seznam and Yep). ' + fmt(inow.known) + ' URLs known in total.</p>' : '<p>No submission recorded yet.</p>') + '<p>Key file: <a href="/' + INDEXNOW_KEY + '.txt">/' + INDEXNOW_KEY + '.txt</a>. Google does not use IndexNow; it reads <a href="/sitemap_index.xml">the sitemap index</a> listed in <a href="/robots.txt">robots.txt</a>.</p>';
   body += h2('search-console', 'Search Console and Bing Webmaster') + '<p>Not connected yet. The domain is verified in Search Console; clicks, impressions and index coverage will only be shown here once the site owner grants read access (Search Console API with the read-only scope, or a service account added as a restricted user). We do not estimate them. Sitemap to submit: <a href="/sitemap_index.xml">/sitemap_index.xml</a>.</p>';
   return render({ path: '/engineering/seo/', title: 'Search and indexation: sitemaps, crawl audit, structured data | Kolaboro engineering', h1: 'Search and indexation', lead: 'How much of kolaboro.com search engines and answer engines can find, measured, not estimated.', desc: fmt(total) + ' URLs in the sitemaps; crawl audit of status codes, canonicals, hreflang and structured data; Core Web Vitals budget; IndexNow submissions.', updated: (audit && audit.generated_at || B.d.updated).slice(0, 10), crumbs: [['Kolaboro', '/'], ['Engineering', '/engineering/'], ['Search and indexation', '/engineering/seo/']], body });
 }
+
+// n26i: sitemap URL counts for /numbers/ (the same figures /engineering/seo/ shows)
+export async function sitemapStats(env, inner) { const B = await base(env, inner); return sitemaps(env, B, 'stats'); }
 
 // ---------- entry ----------
 export async function handle(req, u, env, ctx, shell, inner) {

@@ -49,11 +49,13 @@ let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/tran
 let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules\/?$/;   // n21c (batch 21): short-let rules by city (see kbx_rules.js)
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
 let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
+let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
+const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kbix = null; const KBIX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;   // n21d (batch 21): bulk check against the public index, in the browser, 8 languages (keep equal to PAGE in kbx_bulkix.js)
 let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   // n21d (batch 21): promised dates of a named project as an iCalendar file (keep equal to PATHS in kbx_cal.js)
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
-let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
+let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
 let k404 = null;   // n25e: 301 map, 410 and the translated 404 page (kbx_404.js)
 let kseo = null; const KSEO = /^\/(sitemap_index\.xml|api\/seo\/lastmod|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;   // keep equal to PATHS in kbx_seo.js
@@ -277,10 +279,17 @@ async function rhMedia(req, u) {
   if (r.status === 404) return new Response(null, { status: 404 });
   return r;
 }
-let kTick = null;
+// n26i (batch 26): home page and hubs carry links to the project pages the fewest other project pages link to (kbx_named.js)
+async function llInject(req, u, env, ctx, r) {
+  if (req.method !== 'GET' || !r || r.status !== 200 || u.search || !LLP.test(u.pathname) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+  try { if (!knm) knm = await import('./kbx_named.js'); const lb = knm.leastReady(env, ctx, LLP.exec(u.pathname)[1] || 'en'); if (lb) return new HTMLRewriter().on('main', { element(e) { e.append(lb, { html: true }); } }).transform(r); } catch (e) {}
+  return r;
+}
+let kTick = null, kbots = null;
 export default {
   async fetch(req, env, ctx) {
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
+    if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     const r = await this.fetch0(req, env, ctx);
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kTick) kTick = await import('./kbx_ticker.js'); return await kTick.kbTick(req, r, env); } catch (e) { return r; } }
     return r;
@@ -407,7 +416,7 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KTR.test(u.pathname)) {
       if (!ktr) ktr = await import('./kbx_tr.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await ktr.page(req, u, env, ctx, shell);
+      const r = await llInject(req, u, env, ctx, await ktr.page(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n21c, batch 21): /guides/short-let-rules/ in 8 languages (see kbx_rules.js)
@@ -450,11 +459,20 @@ export default {
         return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
       }
     }
+    // kolaboro.com (n26i, batch 26): AI crawler visits per day, counted at the edge (see kbx_bots.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/api\/open\/ai-crawlers\/?$/.test(u.pathname)) { if (!kbots) kbots = await import('./kbx_bots.js'); return kbots.api(req); }
+    // kolaboro.com (n26i, batch 26): /numbers/ in 8 languages, citable figures with source and date (see kbx_numbers.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && KNUM.test(u.pathname)) {
+      if (!knum) knum = await import('./kbx_numbers.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
+      try { const r = await knum.handle(req, u, env, ctx, shell, inner); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
     if (host === 'kolaboro.com' && req.method === 'GET' && KSEO.test(u.pathname)) {
       if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { headers: req.headers }), env, ctx, su, host); };
       const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
-      const r = await kseo.handle(req, u, env, ctx, shell, inner);
+      const r = await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner));
       return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u, req);
@@ -471,7 +489,10 @@ export default {
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)
-      if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) return k404.page(kr, u, fx === 'gone' ? 410 : 404); }
+      if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) return await k404.page(kr, u, fx === 'gone' ? 410 : 404, env); }
+      if (req.method === 'GET' && kr.status === 200 && u.pathname === '/engineering/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); const bh = await kbots.html(req); kr = new HTMLRewriter().on('main', { element(e) { e.append(bh, { html: true }); } }).transform(kr); } catch (e) {} }   // n26i: AI crawler visits on /engineering/
+      // n26i (batch 26): the home page and the hubs link the project pages the fewest other project pages link to (kbx_named.js)
+      kr = await llInject(req, u, env, ctx, kr);
       const kn = kbNonce(kr); if (req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?check\/?$/.test(u.pathname) && kr.status === 200 && /text\/html/.test(kr.headers.get('content-type') || '')) kr = new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/k/xray.js?v=' + KXR_V + '" defer></script><script' + kn + ' src="/k/xray-cta.js?v=n22e1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/ktraffic.js?v=1" defer></script><script' + kn + ' src="/__k/kxc-admin.js?v=1" defer></script><script' + kn + ' src="/__k/kwatch-admin.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kbLd(kr, u, env); }
     return this.site(req, env, ctx, u, host);
   },
