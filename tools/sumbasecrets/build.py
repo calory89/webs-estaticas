@@ -50,11 +50,18 @@ for l in LANGS:
 GUIDES_ALL = []
 for g in GUIDES:
     GUIDES_ALL.append(dict(g))
+import re as _re
+def _parts(html):  # translate long articles section by section so the model never truncates
+    return [x for x in _re.split(r'(?=<h2>)', html) if x]
 for g in GUIDES2 + GUIDES3:
     e = {"t": g["t"], "d": g["d"], "b": g["b"]}
     if g.get("faq"): e["faq"] = g["faq"]
     ng = {"s": g["s"], "img": g["img"], "en": e}
-    for l in LANGS[1:]: ng[l] = tr_tree(e, l)
+    for l in LANGS[1:]:
+        src = dict(e, b=_parts(e["b"])) if g in GUIDES3 else e
+        tr = tr_tree(src, l)
+        if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))
+        ng[l] = tr
     GUIDES_ALL.append(ng)
 TOWNS_ALL = {}
 for s, e in TOWNS_TXT.items():

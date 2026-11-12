@@ -16,7 +16,7 @@ def _call(lang, batch):
               "Keep HTML tags, attributes, URLs and placeholders like {n} {l} {r} exactly as they are. Keep proper names of places "
               "(Weekuri, Ratenggaro, Waingapu, Marapu, Pasola, ikat, Sumba) unchanged. Natural, fluent style. No em dashes. "
               "Return ONLY a valid JSON object with exactly the same keys.")
-    body = json.dumps({"messages":[{"role":"system","content":sysmsg},{"role":"user","content":json.dumps(batch, ensure_ascii=False)}],"max_tokens":4096,"temperature":0.2}).encode()
+    body = json.dumps({"messages":[{"role":"system","content":sysmsg},{"role":"user","content":json.dumps(batch, ensure_ascii=False)}],"max_tokens":8000,"temperature":0.2}).encode()
     if os.environ.get("TR_URL"):  # 13-nov-2026: translate through the site's own Worker (Workers AI binding), key in TR_KEY
         req = urllib.request.Request(os.environ["TR_URL"], data=body, headers={"x-tr-key": os.environ["TR_KEY"], "content-type": "application/json", "user-agent": "curl/8"})
     else:
@@ -38,7 +38,7 @@ def tr_strings(lang, strings):
     todo = [s for s in dict.fromkeys(strings) if s and key(lang, s) not in CACHE]
     batches, cur, size = [], {}, 0
     for i, s in enumerate(todo):
-        if size + len(s) > 1800 and cur: batches.append(cur); cur, size = {}, 0
+        if size + len(s) > 2600 and cur: batches.append(cur); cur, size = {}, 0
         cur[f"k{i}"] = s; size += len(s)
     if cur: batches.append(cur)
     def run(b):
