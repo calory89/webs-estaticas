@@ -1593,8 +1593,11 @@ export async function dataSitemap() {
   const urls = [].concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
   return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
-export async function ssr(base, u, kind) {
+export async function ssr(base, u, kind, env) {
   let d; try { d = await openData(); } catch (e) { return base; }
+  // n25e: market lists link straight to the named page (/p/<id>/ is a 301 for every named project); Sumba ids keep /p/<id>/
+  let SL = {}; if (kind !== 'p') try { const ix = await (await import('./kbx_named.js')).data(env); for (const [id, x] of ix.byId) SL[id] = x.s; } catch (e) { SL = {}; }
+  const pHref = id => SL[id] ? '/projects/' + SL[id] + '/' : '/p/' + encodeURIComponent(id) + '/';
   const cs = d.cases || [], key = decodeURIComponent(u.pathname.split('/')[2] || '');
   let title, desc, canon, body, ld;
   if (kind === 'p') {
@@ -1622,7 +1625,7 @@ export async function ssr(base, u, kind) {
     title = 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
     desc = !L.some(rv8) ? n + ' off-plan projects tracked in ' + m + ', not yet reviewed by Kolaboro. Updated ' + d.updated + '.' : n + ' off-plan projects tracked in ' + m + (LR.length < n ? ' (' + (n - LR.length) + ' not yet reviewed)' : '') + '. Of the reviewed ones, on average ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public; ' + pct(x => (x.checks || {}).permit === 2) + '% publish a permit number and ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + d.updated + '.';
     canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
-    body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="/p/' + encodeURIComponent(x.id) + '/">' + hesc(x.id) + '</a>: ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>';
+    body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="' + pHref(x.id) + '">' + hesc(x.id) + '</a>: ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>';
     const cs8 = String(L[0].country === 'Puerto Rico (USA)' ? 'Puerto Rico' : L[0].country === 'St Lucia' ? 'Saint Lucia' : L[0].country).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same slug as /countries/<c>/ (kbx_seo.js)
     body = '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + '</a> · <a href="/countries/' + cs8 + '/how-to-check/">How to check a project in ' + hesc(L[0].country) + '</a> · <a href="/rankings/most-delayed/">Most delayed projects</a> · <a href="/registers/">Official registers</a>' + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
     ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
@@ -1641,6 +1644,7 @@ export async function ssr(base, u, kind) {
     .on('meta[name="robots"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.prepend('<section class="sec ssr-only" id="ssr"><div class="wrap">' + body + '</div></section>', { html: true }); } })
+    .on('body', { element(e) { if (kind !== 'p') { const mine = {}; for (const c of cs) if (SL[c.id] && (slugM(c.market) === slugM(key) || c.market.toLowerCase() === key.toLowerCase())) mine[c.id] = SL[c.id]; e.append('<script type="application/json" id="kb-slugs">' + JSON.stringify(mine).replace(/</g, '\\u003c') + '</script>', { html: true }); } } })
     .transform(base);
   const h = new Headers(res.headers); h.set('cache-control', 'private, max-age=600');   // private: the page carries a per-response CSP nonce, no shared cache may reuse it
   return new Response(res.body, { status: 200, headers: h });

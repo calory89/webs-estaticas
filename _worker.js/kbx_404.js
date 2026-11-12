@@ -13,6 +13,7 @@ const COI = new Set(['sumba']);
 const MAP = {
   '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/countries/',
   '/data/visual-tests.json': '/data/quality.json', '/data/page-weight.json': '/data/quality.json',
+  '/open/evals/': '/engineering/evals/',
   '/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles', '/data/benchmark/': '/data/#benchmark'
 };
 const GONE = new Set(['/6', '/p/HO']);   // truncated or garbled strings found by Search Console, never pages of ours

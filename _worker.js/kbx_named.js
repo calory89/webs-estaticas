@@ -40,7 +40,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v63';   // v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
+const CACHE_V = 'named-v64';   // v64: market source label is the full /m/<market>/ path, not the 404 path kolaboro.com/m (n25e); v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
 //   'named-v57';   // v57: payment email check link without a language prefix on developer pages (n22e)   // was   // v56: gazette section: 5 rows before Show all, paths left to right in Arabic (n21a)   // was   // v55: official gazette notices on developer pages; warning lists shown as a row of sources (n21a)   // was   // v54: around the site, distance claims, climate at the plot (n21b)   // was   // v53: filings data for listed developers, rules table layout (n21c)   // was   // v52: short-let rules next to the short-let figures, filings section on developer pages (n21c)   // was   // v51: regulator warning lists line, gazette notices section on developer pages (n21a)   // was   // v50: accessibility pass (n21e)   // was    // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
@@ -407,7 +407,7 @@ function projectPage(ix, x, lang, extra) {
 
   // market
   const ms = ix.mk.get(x.mk), dm = ix.dmk.get(x.mk);
-  const market = '<ul class="fl">' + fact(esc(tr(lang, 'mk_line', { k: ms.k, mk: x.mk, pp: Math.round(ms.pn / ms.k * 100), pe: Math.round(ms.esc / ms.k * 100) })), '/m/' + slugM(x.mk) + '/', 'kolaboro.com/m') +
+  const market = '<ul class="fl">' + fact(esc(tr(lang, 'mk_line', { k: ms.k, mk: x.mk, pp: Math.round(ms.pn / ms.k * 100), pe: Math.round(ms.esc / ms.k * 100) })), '/m/' + slugM(x.mk) + '/', 'kolaboro.com/m/' + slugM(x.mk) + '/') +
     (dm && dm.past_first && dm.median_late != null ? fact(esc(tr(lang, 'mk_delay', { mk: x.mk, k: dm.past_first, m: dm.median_late })), '/index/delays/', 'kolaboro.com/index/delays') : '') + '</ul>' +
     '<p><a class="more" href="/m/' + slugM(x.mk) + '/">' + esc(tr(lang, 'mk_link', { mk: x.mk })) + '</a></p>' +
     ((ms.rv || 0) >= 8 && iso(ix.updated) ? '<p><a class="more" href="' + pre(lang) + '/stories/' + iso(ix.updated).slice(0, 7) + '/' + slugA(x.mk) + '/">' + esc(tr(lang, 'rel_story', { mk: x.mk, mo: fd(iso(ix.updated).slice(0, 7), lang) })) + '</a></p>' : '');

@@ -68,6 +68,8 @@
       '<div class="mk-leg">' + LV.map(function(l){ return '<span style="--c:' + l[2] + '">' + l[1] + ' <b>' + Math.round((n[l[0]] || 0) / tot * 100) + '%</b> (' + fmt(n[l[0]] || 0) + ')</span>'; }).join('') + '</div>' +
       '<p class="mk-note">' + fmt(tot) + ' checks in total: 6 per project. Registry and Confirmed mean an official register or an independent source backs what the developer says.</p>';
   }
+  // n25e: named projects link to their page directly (/p/<id>/ is a 301); the map comes from the server (#kb-slugs), Sumba ids are not in it
+  var SLUGS = {}; try { SLUGS = JSON.parse((document.getElementById('kb-slugs') || {}).textContent || '{}') || {}; } catch (e) {}
   function byScore(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (b.vscore || 0) - (a.vscore || 0) || (a.id < b.id ? -1 : 1); }
   function row(c, showMarket){
     var bd = [];
@@ -75,7 +77,7 @@
     if (contra(c)) bd.push('<span class="mk-b ct">Contradicted</span>');
     if (flagged(c)) bd.push('<span class="mk-b fl">' + (c.flags.length === 1 ? '1 flag' : c.flags.length + ' flags') + '</span>');
     var meta = [showMarket ? c.market : '', c.stage ? c.stage.charAt(0).toUpperCase() + c.stage.slice(1) : 'Stage not stated', c.band || 'Price not stated'].filter(Boolean).join(' · ');
-    return '<li><a class="mk-row" href="/p/?id=' + encodeURIComponent(c.id) + '"><span class="id">' + esc(c.id) + '</span><span class="meta">' + esc(meta) + '</span>' +
+    return '<li><a class="mk-row" href="' + (SLUGS[c.id] ? '/projects/' + SLUGS[c.id] + '/' : '/p/' + encodeURIComponent(c.id) + '/') + '"><span class="id">' + esc(c.id) + '</span><span class="meta">' + esc(meta) + '</span>' +
       '<span class="sc"><span class="mk-col">Published </span><b>' + (c.score || 0) + '</b>/' + (c.max || 6) + '</span>' +
       '<span class="cf"><span class="mk-col">Confirmed </span><b>' + (c.vscore || 0) + '</b>/' + (c.max || 6) + '</span>' +
       '<span class="bd">' + bd.join('') + '</span></a></li>';

@@ -444,7 +444,7 @@ export default {
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
       const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
-      const sr = await kb.ssr(base, u, isP ? 'p' : 'm');
+      const sr = await kb.ssr(base, u, isP ? 'p' : 'm', env);
       if (isP || sr.status !== 200) return sr;
       // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
       try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr); } catch (e) {}
