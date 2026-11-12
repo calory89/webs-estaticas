@@ -3,7 +3,8 @@ import concurrent.futures as cf, translate as T
 from places import PLACES
 from ui import UI, GUIDES
 from ui2 import UI2, REGION_TXT, CAT_TXT, SEASON
-from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI
+from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI, EXTRA_UI2
+EXTRA_UI = dict(EXTRA_UI, **EXTRA_UI2)
 NEW = ["it","zh","ja","ko","ru","pt"]; ALL = ["es","id","de","fr","nl"] + NEW
 WX_EN = ["Clear","Partly cloudy","Cloudy","Fog","Drizzle","Rain","Showers","Thunderstorm"]
 def strings(o, acc):

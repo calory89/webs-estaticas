@@ -5,7 +5,8 @@ from places import PLACES, TOWNS, CREDITS, AIRPORTS
 from ui import LANGS as HAND, LNAME, TIMES_LANG, UI, GUIDES
 from ui2 import UI2, REGION_TXT, REGION_SLUG, CAT_SLUG, CAT_TXT, SEASON
 from gallery import GALLERY
-from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI
+from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI, EXTRA_UI2, VIDEOS, VIDEO_META
+EXTRA_UI = dict(EXTRA_UI, **EXTRA_UI2)
 from translate import tr_tree
 
 NEW = ["it", "zh", "ja", "ko", "ru", "pt"]
@@ -61,7 +62,7 @@ assert not any(b in blob for b in bad), "hotel photo in gallery"
 data = {"langs": LANGS, "lname": LNAME, "tl": TIMES_LANG, "ui": UI, "ui2": UI2, "wx": WX, "places": PLACES, "towns": TOWNS, "towntxt": TOWNS_ALL,
         "guides": GUIDES_ALL, "credits": CREDITS, "rtxt": REGION_TXT, "rslug": REGION_SLUG, "cslug": CAT_SLUG, "ctxt": CAT_TXT, "season": SEASON,
         "gallery": GALLERY, "airports": AIRPORTS, "regions": json.load(open("regions.json")), "indexnow": "5f0c3b7e9a2d4c18b6e1a7f3d9c2e0b4",
-        "built": datetime.date.today().isoformat()}
+        "built": datetime.date.today().isoformat(), "videos": VIDEOS, "vmeta": VIDEO_META}
 tpl = open("worker.tpl.js").read()
 out = tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 open("worker.js", "w").write(out)

@@ -39,3 +39,30 @@ EXTRA_UI = {  # English source for new interface strings
  "share_t":"Share a photo or tip","share_d":"Been here? Send us your photo or tip. We review every message before publishing.","your_name":"Your name","your_tip":"Your tip","send":"Send","sent":"Thanks, we will review it.",
  "routes":"Routes","flights":"Find flights to Sumba","file":"File photo: Sumba","video_t":"Videos","search_site":"Search Sumba Secrets","no_results":"No results",
 }
+
+EXTRA_UI2 = {
+ "hsearch":"Search beaches, waterfalls, villages...","hgo":"Search","km_from":"km from","more_secrets":"More secret spots",
+ "kicker":"Indonesia's best-kept island","words":"turquoise lagoons|hidden waterfalls|ancestral villages|golden savannas|empty beaches",
+ "cta1":"Discover the secrets","cta2":"Plan my trip","scroll":"Scroll","sod_t":"Secret of the day","sod_go":"Discover it",
+ "exp_t":"How do you want to live Sumba?","exp_d":"Pick an experience and we will show you where to go.",
+ "watch_t":"Watch Sumba","watch_d":"Real videos by travellers and locals. Tap to play.","play":"Play video",
+ "live_t":"Sumba right now","local_time":"Local time","sunrise":"Sunrise","sunset":"Sunset",
+ "nums_t":"Sumba in numbers","n_reg":"regencies","n_air":"airports","n_places":"places on our map","n_langs":"languages",
+ "why_t":"Why Sumba?","why1_t":"Empty beaches","why1_d":"Bays and lagoons where you are often the only person on the sand.",
+ "why2_t":"A living culture","why2_d":"Villages of towering roofs, megalithic tombs and the Marapu belief, still part of daily life.",
+ "why3_t":"Wild nature","why3_d":"Golden savanna, wild horses, canyons of turquoise pools and forests full of endemic birds.",
+ "plan_t":"Plan your trip in 3 steps","step1_t":"Choose your days","step1_d":"3, 5 or 7 days: we have a route for each.","step2_t":"Fly in","step2_d":"Tambolaka in the west or Waingapu in the east, via Bali.","step3_t":"Hire a driver","step3_d":"The easiest and safest way to reach the secret spots.",
+ "map_cta_t":"Explore the interactive map","map_cta_d":"Satellite view, regions, routes and every secret spot on one screen.","open_map":"Open the map",
+ "quick":"Quick facts","best_time":"Best time","region_l":"Region","category_l":"Type","n_town":"Nearest town","n_airport":"Nearest airport","good_for":"Good for","copy":"Copy","copied2":"Copied",
+ "gf_beach":"Swimming, sunsets and photography","gf_waterfall":"Swimming, hiking and photography","gf_village":"Culture, architecture and ikat","gf_viewpoint":"Sunrise, sunset and photography","gf_culture":"Culture and photography",
+ "photos_n":"photos","see_all":"See all","prev":"Previous","next":"Next","close2":"Close","back_top":"Back to top","explore_more":"Keep exploring","days_n":"days","read_guide":"Read the guide",
+ "all_secrets":"All secret spots","videos_t":"Videos","nearby_km":"km away",
+}
+VIDEOS = {
+ "_home": ["0J_YZmXJjsk", "nUdahFp6jkI", "IIMwNiXekkE", "ZTxIMzveI5c"],
+ "ratenggaro": ["WeKYwZoYmEU"], "tanggedu-waterfall": ["uSAqTtg4sso"], "puru-kambera": ["uSAqTtg4sso"], "pasola-wanokaka": ["EwtIXEgN0As"],
+ "_guide:getting-there-around": ["Hoq8_mHeubA"], "_guide:pasola-guide": ["EwtIXEgN0As"], "_town:waingapu": ["7XNLNdyFljA"], "_town:waikabubak": ["7XNLNdyFljA"],
+ "weekuri-lagoon": ["ZTxIMzveI5c"], "wairinding-hill": ["nUdahFp6jkI"], "walakiri-beach": ["0J_YZmXJjsk"],
+}
+VIDEO_META = {"0J_YZmXJjsk":"SUMBA ISLAND, Indonesia - The Secret Paradise · Roman Bader","nUdahFp6jkI":"Highlights of Sumba · Glori Stephani","IIMwNiXekkE":"Discover Sumba, Indonesia · Herr Translator","ZTxIMzveI5c":"Beautiful Sumba travel vlog · Katarina Joan",
+ "WeKYwZoYmEU":"Ratenggaro traditional village · Yunitaalghazali","uSAqTtg4sso":"Tanggedu, Puru Kambera · Yunitaalghazali","EwtIXEgN0As":"Wild Sumba: horses and the Pasola · Menelusuri nusantara","Hoq8_mHeubA":"How to get to Sumba · Native Sumba people","7XNLNdyFljA":"Waingapu, Waikabubak and Sumba · daviddonny"}

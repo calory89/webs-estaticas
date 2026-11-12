@@ -57,7 +57,55 @@ article.pl{max-width:760px;margin:0 auto}article.pl h1{font-family:Fraunces,Geor
 .band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 footer{padding:36px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line);margin-top:30px}footer a{color:var(--mute)}
 .two{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}@media(max-width:820px){.two{grid-template-columns:1fr}.hero p{font-size:16px}header.top .w{flex-wrap:wrap;gap:6px 10px;padding-top:8px}.logo{font-size:21px;flex:1}nav.main{order:3;flex-basis:100%;margin:0 -16px;padding:0 12px 6px}.net .d{display:none}.net .w{gap:10px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}}
-.h1{font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,46px);margin:6px 0 4px;letter-spacing:-.02em}.h2s{font-size:24px!important;margin-top:28px!important}.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0}.gal figure{margin:0}.gal figure:first-child{grid-column:1/-1}.gal img{border-radius:12px;width:100%;aspect-ratio:3/2;object-fit:cover}.gal figure:first-child img{aspect-ratio:16/9}.gal figcaption{font-size:12px;color:var(--mute);margin-top:4px}.faq details{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}.faq summary{font-weight:600;cursor:pointer}.faq p{margin:8px 0 0}.acts .btn{margin-bottom:8px}.btn.alt2{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.upd{color:var(--mute);font-size:14px;margin-top:28px}.itin ol{margin:8px 0 0;padding-left:20px}.itin li{margin:4px 0}a.chip{text-decoration:none;display:inline-block}.ico{font-size:18px;text-decoration:none;padding:6px}.nl{background:var(--ink);color:var(--bg);padding:32px 0}.nl h2{font-family:Fraunces,Georgia,serif;margin:0 0 6px}.nl form,.tipf{display:flex;gap:8px;flex-wrap:wrap}.nl input,.tipf input,.tipf textarea{flex:1;min-width:200px;padding:12px;border-radius:10px;border:1px solid var(--line);font:inherit}.tipf{flex-direction:column}.tipf textarea{min-height:90px}.nl .btn{border:0;cursor:pointer}.srch input{width:100%;font:inherit;font-size:18px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}@media print{.net,header.top,footer,.nl,.noprint,#map,.acts,.tipb+form{display:none!important}body{background:#fff}}.leaflet-popup-content a{font-weight:600}.leaflet-popup-content{font:14px/1.45 Inter,system-ui,sans-serif}`;
+.h1{font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,46px);margin:6px 0 4px;letter-spacing:-.02em}.h2s{font-size:24px!important;margin-top:28px!important}.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0}.gal figure{margin:0}.gal figure:first-child{grid-column:1/-1}.gal img{border-radius:12px;width:100%;aspect-ratio:3/2;object-fit:cover}.gal figure:first-child img{aspect-ratio:16/9}.gal figcaption{font-size:12px;color:var(--mute);margin-top:4px}.faq details{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}.faq summary{font-weight:600;cursor:pointer}.faq p{margin:8px 0 0}.acts .btn{margin-bottom:8px}.btn.alt2{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.upd{color:var(--mute);font-size:14px;margin-top:28px}.itin ol{margin:8px 0 0;padding-left:20px}.itin li{margin:4px 0}a.chip{text-decoration:none;display:inline-block}.ico{font-size:18px;text-decoration:none;padding:6px}.nl{background:var(--ink);color:var(--bg);padding:32px 0}.nl h2{font-family:Fraunces,Georgia,serif;margin:0 0 6px}.nl form,.tipf{display:flex;gap:8px;flex-wrap:wrap}.nl input,.tipf input,.tipf textarea{flex:1;min-width:200px;padding:12px;border-radius:10px;border:1px solid var(--line);font:inherit}.tipf{flex-direction:column}.tipf textarea{min-height:90px}.nl .btn{border:0;cursor:pointer}.srch input{width:100%;font:inherit;font-size:18px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}@media print{.net,header.top,footer,.nl,.noprint,#map,.acts,.tipb+form{display:none!important}body{background:#fff}}.leaflet-popup-content a{font-weight:600}.leaflet-popup-content{font:14px/1.45 Inter,system-ui,sans-serif}.hx-rot,.hx-in h1,.hx-d{text-shadow:0 2px 18px rgba(0,0,0,.45)}.hx-q{display:flex;max-width:560px;margin:4px 0 18px;background:rgba(255,255,255,.96);border-radius:999px;padding:5px;box-shadow:0 10px 30px rgba(0,0,0,.25)}.hx-q input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:16px;padding:10px 16px;color:#1b2722;outline:none}.hx-q button{border:0;border-radius:999px;background:var(--teal);color:#fff;font:inherit;font-weight:700;padding:10px 20px;cursor:pointer}.hx-cap{position:absolute;right:24px;bottom:72px;color:#fff;font-size:13px;text-decoration:none;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;z-index:3}.hx-dots{position:absolute;right:24px;bottom:110px;display:flex;gap:6px;z-index:3}.hx-dots i{width:9px;height:9px;border-radius:9px;background:rgba(255,255,255,.45);cursor:pointer;transition:width .3s}.hx-dots i.on{width:26px;background:#fff}body.home .fab-map{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .3s,transform .3s}body.home.scr .fab-map{opacity:1;pointer-events:auto;transform:none}@media(max-width:820px){header.top select.lang{max-width:96px;padding:4px 6px;font-size:13px}header.top .w{flex-wrap:wrap}.hx-cap,.hx-dots{display:none}.hx-q{margin:0 0 14px}.hx-q button{padding:10px 14px}}
+:root{--sun:#e86f4d;--sand:#efe4cf}
+body{font-size:16.5px}.kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#f5d9a6;margin:0 0 10px}.kick.dark{color:var(--teal)}
+.sec.xl{font-size:clamp(30px,4.4vw,52px);line-height:1.05;letter-spacing:-.02em}.center{text-align:center}
+header.top.over{position:absolute;top:34px;left:0;right:0;background:transparent;border-color:transparent;transition:background .3s,box-shadow .3s}header.top.over .logo,header.top.over nav.main a,header.top.over .ico{color:#fff}header.top.over nav.main a:hover,header.top.over nav.main a.on{background:rgba(255,255,255,.15)}
+header.top.over.solid{position:fixed;top:0;background:var(--paper);box-shadow:0 2px 20px rgba(0,0,0,.08)}header.top.over.solid .logo,header.top.over.solid nav.main a,header.top.over.solid .ico{color:var(--ink)}header.top.over.solid .logo span{color:var(--teal)}header.top.over .logo span{color:#f5d9a6}
+header.top.over select.lang{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.4)}header.top.over.solid select.lang{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.net{position:relative;z-index:1001}
+.hx{position:relative;height:100svh;min-height:560px;color:#fff;overflow:hidden;background:#0b3b37}.hx-sl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease,transform 8s linear}.hx-sl img.on{opacity:1;transform:scale(1)}
+.hx-sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.25) 60%,rgba(0,0,0,.78) 100%)}
+.hx-in{position:absolute;left:0;right:0;bottom:120px}.hx h1{font-family:Fraunces,Georgia,serif;font-size:clamp(42px,7.5vw,96px);line-height:.98;letter-spacing:-.03em;margin:0 0 8px;max-width:13ch;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hx-rot{font-family:Fraunces,Georgia,serif;font-size:clamp(22px,3vw,34px);margin:0 0 14px;color:#f5d9a6}.hx-rot span{transition:opacity .35s;display:inline-block}.hx-d{max-width:56ch;font-size:18px;opacity:.95;margin:0 0 22px}
+.btn.big{padding:15px 24px;font-size:17px;background:var(--sun)}.btn.big:hover{filter:brightness(1.08)}.btn.ghost{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px);color:#fff}
+.hx-live{position:absolute;left:0;right:0;bottom:28px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;opacity:.95}.hx-live span{background:rgba(0,0,0,.28);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px}
+.hx-sc{position:absolute;right:24px;bottom:26px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.6);animation:bob 2s infinite}@keyframes bob{50%{transform:translateY(6px)}}
+.exp{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.ex{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;color:#fff;text-decoration:none;box-shadow:var(--shadow)}.ex img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.ex:hover img{transform:scale(1.07)}
+.ex::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}.ex-t{position:absolute;left:16px;right:16px;bottom:14px;z-index:1}.ex-t b{display:block;font-family:Fraunces,Georgia,serif;font-size:22px}.ex-t small{opacity:.85}
+.sod{background:linear-gradient(135deg,#0b3b37,#12524b);color:#fff}.sod-in{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}.sod-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.sod h2{font-family:Fraunces,Georgia,serif;font-size:clamp(32px,4vw,50px);margin:0 0 6px;line-height:1.05}.sod .rg{opacity:.8}.tipline{background:rgba(255,255,255,.08);border-left:3px solid #f5d9a6;padding:10px 14px;border-radius:8px}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}.more{font-weight:700;text-decoration:none;white-space:nowrap}
+.mos{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}.mo{position:relative;border-radius:16px;overflow:hidden;color:#fff;text-decoration:none}.mo.big{grid-column:span 2;grid-row:span 2}.mo img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.mo:hover img{transform:scale(1.06)}
+.mo::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.72))}.mo span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1}.mo b{display:block;font-family:Fraunces,Georgia,serif;font-size:21px}.mo.big b{font-size:34px}.mo small{opacity:.85;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.why{background:var(--sand)}.why3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:20px}.why3 div{background:var(--paper);border-radius:18px;padding:26px;box-shadow:var(--shadow)}.wi{font-size:38px}.why3 h3{font-family:Fraunces,Georgia,serif;font-size:24px;margin:8px 0 6px}.why3 p{margin:0;color:var(--mute)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 26px}.steps div{border-top:3px solid var(--sun);padding-top:12px}.steps span{font-family:Fraunces,Georgia,serif;font-size:34px;color:var(--sun);font-weight:700}.steps b{display:block;font-size:18px}.steps p{margin:4px 0 0;color:var(--mute)}
+.itc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.it2{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;color:#fff;text-decoration:none}.it2 img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.it2:hover img{transform:scale(1.06)}.it2::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.8))}
+.dn{position:absolute;top:14px;left:14px;z-index:1;background:var(--sun);padding:6px 12px;border-radius:999px;font-weight:700;font-size:14px}.it2-t{position:absolute;left:16px;right:16px;bottom:16px;z-index:1}.it2-t b{display:block;font-family:Fraunces,Georgia,serif;font-size:24px;line-height:1.1}.it2-t small{opacity:.9}
+section.dark{background:#0f1714;color:#ece6d8}section.dark .lead{color:#a9b3ac}.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.vids.one{grid-template-columns:1fr;max-width:760px}
+.yt{position:relative;border:0;padding:0;border-radius:14px;overflow:hidden;cursor:pointer;aspect-ratio:16/9;background:#000;display:block;width:100%}.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .3s}.yt:hover img{opacity:1}
+.yp{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(232,111,77,.95);color:#fff;display:grid;place-items:center;font-size:24px}.yc{position:absolute;left:10px;right:10px;bottom:8px;color:#fff;font-size:12px;text-align:left;text-shadow:0 1px 4px #000}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.regs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.rg2{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1;color:#fff;text-decoration:none}.rg2 img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.rg2:hover img{transform:scale(1.06)}.rg2::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}.rg2 span{position:absolute;left:16px;bottom:14px;z-index:1}.rg2 b{display:block;font-family:Fraunces,Georgia,serif;font-size:24px}
+.mapcta{background:linear-gradient(120deg,#0e6f66,#0b3b37);color:#fff}.mapcta-in{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}.mapcta h2{font-family:Fraunces,Georgia,serif;font-size:clamp(28px,3.6vw,44px);margin:0 0 8px}.mapcta-img img{width:100%;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.nums{background:var(--sand)}.nm{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}.nm b{display:block;font-family:Fraunces,Georgia,serif;font-size:clamp(44px,6vw,72px);color:var(--teal);line-height:1}.nm span{color:var(--mute)}
+.ph-hero{position:relative;height:78svh;min-height:480px;color:#fff;overflow:hidden;background:#0b3b37}.ph-hero.short{height:56svh;min-height:380px}.ph-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph-in{position:absolute;left:0;right:0;bottom:44px}.ph-hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(40px,6.5vw,84px);line-height:1;letter-spacing:-.03em;margin:10px 0 8px;text-shadow:0 2px 30px rgba(0,0,0,.35)}.ph-sub{font-size:19px;max-width:60ch;opacity:.95;margin:0 0 16px}.ph-cr{position:absolute;right:12px;bottom:8px;font-size:11px;opacity:.75;margin:0}
+.crumbs.light,.crumbs.light a{color:rgba(255,255,255,.85)}
+.pl2{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;padding-top:34px;padding-bottom:30px}.pl2-side{position:relative}.pl2-side .qf{position:static;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:var(--shadow)}.pl2-side .qf:first-child{position:sticky;top:84px}
+.qf h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 10px}.qf dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0 0 12px;font-size:15px}.qf dt{color:var(--mute)}.qf dd{margin:0;font-weight:600}.cp{border:0;background:none;font:inherit;font-weight:600;color:var(--teal);cursor:pointer;padding:0}
+.qf .acts .btn{margin:4px 4px 0 0;padding:10px 14px;font-size:14px}.lead1 p{font-size:21px;line-height:1.55;font-family:Fraunces,Georgia,serif;font-weight:400}
+.gal2{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.gal2 button{border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:none}.gal2 img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .4s}.gal2 button:hover img{transform:scale(1.05)}.crs{font-size:12px;color:var(--mute)}
+.hs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.hs>*{scroll-snap-align:start}
+.pn{display:flex;justify-content:space-between;gap:12px;margin-top:20px;font-weight:600}.pn a{text-decoration:none}
+.lb{position:fixed;inset:0;z-index:3000;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center}.lb[hidden]{display:none}.lb img{max-width:92vw;max-height:84vh;border-radius:8px}.lb button{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:34px;width:52px;height:52px;border-radius:50%;cursor:pointer}.lb-x{top:16px;right:16px}.lb-p{left:16px}.lb-n{right:16px}.lb-c{position:absolute;bottom:14px;color:#ddd;font-size:13px;margin:0}
+.fab-map{position:fixed;right:18px;bottom:18px;z-index:1500;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:999px;padding:12px 18px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.25)}.fab-map:hover{background:var(--teal);color:#fff}
+.totop{position:fixed;right:18px;bottom:76px;z-index:1500;width:44px;height:44px;border-radius:50%;border:0;background:var(--paper);box-shadow:0 6px 18px rgba(0,0,0,.18);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}.totop.show{opacity:1;pointer-events:auto}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hx-sl img{transition:none}.hx-sc{animation:none}}
+section{padding:64px 0}
+@media(max-width:980px){.exp{grid-template-columns:repeat(5,72%);overflow-x:auto;scroll-snap-type:x mandatory}.ex{scroll-snap-align:start;aspect-ratio:4/5}.mos{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}.mo.big{grid-column:span 2}.why3,.steps,.itc,.vids{grid-template-columns:1fr}.regs,.nm{grid-template-columns:repeat(2,1fr)}.sod-in,.mapcta-in,.pl2{grid-template-columns:1fr}.pl2-side .qf:first-child{position:static}.hx-in{bottom:110px}.hx-live{gap:8px;font-size:12px;bottom:18px}.hx-sc{display:none}.fab-map span{display:none}.gal2{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.itc{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto}}
+`;
 
 function analytics() {
   return `<script>addEventListener('load',function(){setTimeout(function(){var g=document.createElement('script');g.async=1;g.src='https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V';document.head.appendChild(g);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-FJKJE77K4V');
@@ -67,7 +115,7 @@ function analytics() {
 function page(l, path, o) {
   const u = D.ui[l];
   const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}${path}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/en${path}">`;
-  const nav = [["/", u.home], ["/map/", u.map], ["/secret-spots/", u.secrets], ["/places/", u.places], ["/weather/", u.weather], ["/guides/", u.guides], ["/towns/", D.ui2[l].towns_t]]
+  const nav = [["/secret-spots/", "★ " + u.secrets], ["/places/", u.places], ["/guides/", u.guides], ["/towns/", D.ui2[l].towns_t], ["/weather/", u.weather], ["/map/", "🗺️ " + u.map]]
     .map(([p, t]) => `<a href="/${l}${p}"${p === path ? ' class="on"' : ""}>${esc(t)}</a>`).join("") + `<a href="${TIMES}/${D.tl[l]}/">${esc(u.news)} ↗</a>`;
   const opts = L.map(x => `<option value="/${x}${path}"${x === l ? " selected" : ""}>${esc(D.lname[x])}</option>`).join("");
   const title = o.title ? `${o.title} · Sumba Secrets` : `Sumba Secrets · ${u.tag}`;
@@ -76,13 +124,13 @@ function page(l, path, o) {
 <title>${esc(title)}</title><meta name="description" content="${esc(o.desc || u.hero_d)}">${o.robots ? `<meta name="robots" content="${o.robots}">` : ""}<link rel="canonical" href="${BASE}/${l}${path}">${alts}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Sumba Secrets"><meta property="og:title" content="${esc(o.title || "Sumba Secrets")}"><meta property="og:description" content="${esc(o.desc || u.hero_d)}"><meta property="og:image" content="${ogimg}"><meta property="og:url" content="${BASE}/${l}${path}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e6f66"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icon.svg"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e6f66'/%3E%3Cpath d='M10 42c8-6 14-6 22 0s14 6 22 0' stroke='%23f7f2e8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23e0ad55'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>${o.preload ? `<link rel="preload" as="image" href="${o.preload}" fetchpriority="high">` : ""}<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preconnect" href="https://i.ytimg.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>${o.preload ? `<link rel="preload" as="image" href="${o.preload}" fetchpriority="high">` : ""}<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 ${o.leaflet ? '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">' : ""}
-<style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body>
+<style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body${o.home && path === "/" ? ' class="home"' : ""}>
 <div class="net"><div class="w"><b>${esc(u.network)}:</b><a href="${TIMES}/${D.tl[l]}/">The Sumba Times<span class="d"> · ${esc(u.times_d)}</span></a><a href="/${l}/"><b>Sumba Secrets</b><span class="d"> · ${esc(u.secrets_n)}</span></a></div></div>
-<header class="top"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
+<header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
 <a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆</a><select class="lang" aria-label="${esc(u.lang)}" onchange="location.href=this.value">${opts}</select></div></header>
-<main>${o.body}</main>
+<main>${o.body}</main><a class="fab-map" href="/${l}/map/" aria-label="${esc(u.map)}">🗺️ <span>${esc(u.map)}</span></a><button class="totop" aria-label="${esc(D.ui2[l].back_top)}" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 ${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a></p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
 <p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
 ${o.leaflet ? '<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>' : ""}${o.js ? `<script>addEventListener("DOMContentLoaded",function(){${o.js}})</script>` : ""}<script>${COMMONJS(l)}</script></body></html>`;
@@ -129,22 +177,6 @@ function newsJS(l) {
   return `fetch('/api/news?l=${D.tl[l]}').then(function(r){return r.json()}).then(function(a){var e=document.getElementById('news');if(!a.length){e.innerHTML='';return}e.innerHTML=a.slice(0,5).map(function(n){var x=document.createElement('div');x.textContent=n.t;var t=x.innerHTML;x.textContent=n.d;return '<a class="n" href="'+n.u+'"><b>'+t+'</b><span>'+x.innerHTML+'</span></a>'}).join('')}).catch(function(){document.getElementById('news').innerHTML=''});`;
 }
 
-function home(l) {
-  const u = D.ui[l];
-  const secrets = D.places.filter(p => p.sec);
-  const body = `<div class="hero"><img src="${gthumb(D.gallery["weekuri-lagoon"][0], 960)}" srcset="${gthumb(D.gallery["weekuri-lagoon"][0], 500)} 500w, ${gthumb(D.gallery["weekuri-lagoon"][0], 960)} 960w, ${gthumb(D.gallery["weekuri-lagoon"][0], 1280)} 1280w" sizes="100vw" alt="Weekuri Lagoon, Sumba" width="1280" height="720" fetchpriority="high"><div class="in"><div class="w"><h1>${esc(u.hero_t)}</h1><p>${esc(u.hero_d)}</p>
-<a class="btn" href="/${l}/map/">${esc(u.explore)}</a><a class="btn alt" href="/${l}/secret-spots/">${esc(u.see_secrets)}</a></div></div></div>
-<section><div class="w"><h2 class="sec">${esc(u.now)}</h2><p class="lead">${esc(u.weather_d)} <a href="/${l}/weather/">${esc(u.forecast)} →</a></p>${wxBoxes(l, D.towns)}</div></section>
-<section class="band"><div class="w"><h2 class="sec">${esc(u.map)}</h2><p class="lead">${esc(u.map_d)} <a href="/${l}/map/">${esc(D.ui2[l].fullmap)} →</a></p>${chips(l)}<div id="map"></div><p><a class="btn" href="/${l}/map/">🗺️ ${esc(D.ui2[l].fullmap)}</a></p></div></section>
-<section><div class="w"><h2 class="sec">${esc(D.ui2[l].zones)}</h2><div class="grid">${Object.keys(D.rslug).map(r => { const it = D.places.filter(p => p.r === r); const ph = it.map(p => photos(p)[0]).find(Boolean); return `<a class="card" href="/${l}/region/${D.rslug[r]}/"><div class="ph">${ph ? `<img src="${ph.s}" alt="${esc(u.reg[r])}" loading="lazy">` : ""}<span class="k">${it.length} ${esc(u.count)}</span></div><div class="tx"><h3>${esc(u.reg[r])}</h3><p>${esc(D.rtxt[r][l])}</p></div></a>`; }).join("")}</div></div></section>
-<section><div class="w"><h2 class="sec">${esc(u.secrets)}</h2><p class="lead">${esc(u.secrets_d)}</p><div class="grid">${secrets.map(p => card(p, l)).join("")}</div></div></section>
-<section class="band"><div class="w two"><div><h2 class="sec">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${D.guides.map(g => guideCard(g, l)).join("")}</div></div>
-<div><h2 class="sec" style="font-size:26px">${esc(u.latest)}</h2>${newsBox(l)}</div></div></section>
-${itinerary(l)}<section><div class="w"><h2 class="sec">${esc(u.places)}</h2><div class="grid">${D.places.filter(p => !p.sec).map(p => card(p, l)).join("")}</div></div></section>`;
-  const ld = [{ "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" } }, { "@context": "https://schema.org", "@type": "TouristDestination", name: "Sumba", description: u.hero_d, geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 }, containsPlace: D.places.map(p => ({ "@type": "TouristAttraction", name: P(p, l).n, url: `${BASE}/${l}/place/${p.s}/` })) }];
-  return page(l, "/", { preload: gthumb(D.gallery["weekuri-lagoon"][0], 960), ogimgOwn: `${BASE}/og/home.jpg`, body, leaflet: true, js: mapJS(l, D.places, { fit: true }) + wxJS(l, D.towns, false) + newsJS(l), ld });
-}
-
 function ghero(g) {
   const pl = D.places.find(p => p.s === g.img);
   if (pl) { const ph = photos(pl)[0]; return { s: ph.s, b: ph.b, cr: [ph.a, ph.l, ph.f] }; }
@@ -153,13 +185,14 @@ function ghero(g) {
 function gtxt(g, l) { const t = Object.assign({}, g.en, g[l]); t.b = (t.b || "").replace(/\{l\}/g, l); return t; }
 function guideCard(g, l) {
   const t = gtxt(g, l), h = ghero(g);
-  return `<a class="card" href="/${l}/guide/${g.s}/" style="flex-direction:row"><div class="ph" style="width:38%;aspect-ratio:auto;min-height:120px"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy" onerror="this.remove()"></div><div class="tx"><h3>${esc(t.t)}</h3><p>${esc(t.d)}</p></div></a>`;
+  return `<a class="card" href="/${l}/guide/${g.s}/" style="flex-direction:row"><div class="ph" style="flex:none;width:34%;aspect-ratio:auto;min-height:120px"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy" onerror="this.remove()"></div><div class="tx"><h3>${esc(t.t)}</h3><p>${esc(t.d)}</p></div></a>`;
 }
 
 function listPage(l, path, title, lead, items, withMap) {
-  const body = `<section><div class="w"><h1 class="sec" style="font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);margin:0">${esc(title)}</h1><p class="lead">${esc(lead)}</p>
-${withMap ? `<div id="map" style="height:420px;margin-bottom:24px"></div>` : ""}<div class="grid">${items.map(p => card(p, l)).join("")}</div></div></section>`;
-  return page(l, path, { title, desc: lead, body, leaflet: withMap, js: withMap ? mapJS(l, items, { fit: true }) : "" });
+  const lph = photos(items[0])[0];
+  const body = `${bannerHero(lph.b.replace("/ph/1280/", "/ph/960/"), path === "/secret-spots/" ? "★ " + esc(D.ui[l].secret_badge) : "📍 Sumba", esc(title), esc(lead))}<section><div class="w">${chips(l)}
+<div class="grid">${items.map(p => `<div data-cat="${p.c}" data-sec="${p.sec ? 1 : 0}">${card(p, l)}</div>`).join("")}</div>${withMap ? `<h2 class="sec h2s">🗺️ ${esc(D.ui[l].map)}</h2><div id="map" style="height:360px"></div>` : ""}</div></section>`;
+  return page(l, path, { home: true, title, desc: lead, body, leaflet: withMap, js: withMap ? mapJS(l, items, { fit: true }) : "" });
 }
 
 function weatherPage(l) {
@@ -201,7 +234,7 @@ async function news(l, ctx) {
   let items = [];
   try {
     const x = await (await fetch(`${TIMES}/${l}/feed.xml`, { cf: { cacheTtl: 900 } })).text();
-    const dec = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
+    const dec = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCharCode(parseInt(h, 16))).replace(/&#(\d+);/g, (m, d) => String.fromCharCode(+d)).trim();
     for (const m of x.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
       const g = t => { const mm = m[1].match(new RegExp(`<${t}>([\\s\\S]*?)</${t}>`)); return mm ? dec(mm[1]) : ""; };
       const u = g("link"); if (!u.startsWith(TIMES)) continue;
@@ -238,56 +271,27 @@ function card(p, l) {
 function crumbsLD(items) { return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items.map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x[0], item: BASE + x[1] })) }; }
 function itemListLD(l, items) { return { "@context": "https://schema.org", "@type": "ItemList", itemListElement: items.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/${l}/place/${p.s}/`, name: P(p, l).n })) }; }
 
-function placePage(l, p) {
-  const u = D.ui[l], u2 = U2(l), t = P(p, l);
-  const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 4);
-  const [tk, town] = nearestOf(p.ll, D.towns), [ak, ap] = nearestOf(p.ll, D.airports);
-  const ph = photos(p);
-  const gal = ph.length ? `<div class="gal">${ph.map((x, i) => `<figure><a href="${x.b}" target="_blank" rel="noopener"><img src="${i ? x.s : x.b.replace("/ph/1280/", "/ph/960/")}" ${i ? "" : `srcset="${x.s} 500w, ${x.b.replace("/ph/1280/", "/ph/960/")} 960w, ${x.b} 1280w" sizes="(max-width:820px) 100vw, 760px"`} alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba${i ? " (" + (i + 1) + ")" : ""}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="${i ? 500 : 1280}" height="${i ? 333 : 853}"></a><figcaption>${x.fp ? esc(u2.file) + " · " : ""}${esc(u.photo)}: ${esc(x.a)} · <a href="${x.f}" rel="nofollow noopener" target="_blank">${esc(x.l)}</a>, Wikimedia Commons</figcaption></figure>`).join("")}</div>` : `<div class="nofig" style="--c:${CAT_COLOR[p.c]}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])} · ${esc(u.nophoto)}</div>`;
-  const ll = `${p.ll[0].toFixed(4)}, ${p.ll[1].toFixed(4)}`;
-  const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })],
-    [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]],
-    [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })],
-    [tpl(u2.q_tip, { n: t.n }), t.tip]];
-  const yt = `https://www.youtube.com/results?search_query=${encodeURIComponent(t.n + " Sumba")}`;
-  const body = `<div class="w"><article class="pl"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> › <a href="${catPath(l, p.c)}">${esc(u.cat[p.c])}</a></nav>
-<p style="margin:14px 0 0"><a class="badge" style="background:${CAT_COLOR[p.c]};color:#fff;text-decoration:none" href="${catPath(l, p.c)}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</a> ${p.sec ? `<a class="badge" style="text-decoration:none" href="/${l}/secret-spots/">${esc(u.secret_badge)}</a>` : ""}</p>
-<h1>${esc(t.n)}</h1><p class="rg" style="color:var(--mute);margin:0"><a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> · ${esc(u2.coords)} ${ll} · ${Math.round(tk)} ${esc(u2.km_from)} ${esc(town.n)}</p>${gal}
-<div class="body"><p>${esc(t.t)}</p></div><div class="tipb"><b>${esc(u.tip)}</b>${esc(t.tip)}</div>
-<p class="acts"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u.directions)}</a><a class="btn alt2" href="https://maps.apple.com/?daddr=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u2.apple)}</a><a class="btn alt2" href="${yt}" rel="nofollow noopener" target="_blank">▶ ${esc(u2.videos)}</a><a class="btn alt2" href="/${l}/map/#${p.s}">🗺️ ${esc(u2.fullmap)}</a><button class="btn alt2 savebtn" data-s="${p.s}">☆ ${esc(u2.save)}</button></p>
-<h2 class="sec h2s">${esc(u.now)} · ${esc(town.n)}</h2>${wxBoxes(l, [town])}
-<h2 class="sec h2s">${esc(u.map)}</h2><div id="map" class="mapsm"></div>
-<h2 class="sec h2s">${esc(u2.faq)}</h2><div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
-<h2 class="sec h2s">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, x]) => card(x, l)).join("")}</div>
-${tipForm(l, p)}<p class="upd">${esc(u2.updated)}: ${D.built} · <a href="${regionPath(l, p.r)}">${esc(u2.explore_region)}: ${esc(u.reg[p.r])}</a></p></article></div>`;
-  const ld = [{ "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, inLanguage: l, isAccessibleForFree: true,
-      geo: { "@type": "GeoCoordinates", latitude: p.ll[0], longitude: p.ll[1] }, address: { "@type": "PostalAddress", addressRegion: u.reg[p.r], addressCountry: "ID" },
-      containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, ...(ph.length ? { image: ph.map(x => x.b) } : {}) },
-    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
-    crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]])];
-  return page(l, `/place/${p.s}/`, { preload: ph[0] && ph[0].b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()}, ${u.map.toLowerCase()} & ${u.tip.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), ogimg: ph[0] && ph[0].b, body, leaflet: true, ld,
-    js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) });
-}
-
 function regionPage(l, r) {
   const u = D.ui[l], u2 = U2(l), items = D.places.filter(p => p.r === r);
-  const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.zones)}</nav><h1 class="h1">${esc(u.reg[r])}</h1><p class="lead">${esc(D.rtxt[r][l])}</p>
+  const rph = items.map(p => photos(p)[0]).find(Boolean);
+  const body = `${bannerHero(rph.b.replace("/ph/1280/", "/ph/960/"), "📍 " + esc(u2.zones), esc(u.reg[r]), esc(D.rtxt[r][l]))}<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.zones)} › ${esc(u.reg[r])}</nav>
 <div id="map" style="height:440px;margin-bottom:24px"></div><h2 class="sec h2s">${esc(u2.in_region)} (${items.length})</h2><div class="grid">${items.map(p => card(p, l)).join("")}</div>
 <h2 class="sec h2s">${esc(u2.zones)}</h2><div class="chips">${Object.keys(D.rslug).filter(x => x !== r).map(x => `<a class="chip" href="${regionPath(l, x)}">${esc(u.reg[x])}</a>`).join("")}</div></div></section>`;
   const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[r], regionPath(l, r)]]),
     { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r) }];
   const ph = items.map(p => photos(p)[0]).find(Boolean);
-  return page(l, regionPath(l, r).slice(3), { title: `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
+  return page(l, regionPath(l, r).slice(3), { home: true, title: `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
     js: mapJS(l, items, { fit: true, region: r }) });
 }
 
 function catPage(l, c) {
   const u = D.ui[l], u2 = U2(l), items = D.places.filter(p => p.c === c);
-  const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.categories)}</nav><h1 class="h1">${CAT_ICON[c]} ${esc(u.cat[c])} · Sumba</h1><p class="lead">${esc(D.ctxt[c][l])} ${esc(D.season[c][l])}</p>
+  const cph = items.map(p => photos(p)[0]).find(Boolean);
+  const body = `${bannerHero(cph.b.replace("/ph/1280/", "/ph/960/"), CAT_ICON[c] + " " + esc(u2.categories), esc(u.cat[c]) + " · Sumba", esc(D.ctxt[c][l]))}<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u.cat[c])}</nav><p class="lead">${esc(D.season[c][l])}</p>
 <div id="map" style="height:420px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
 <h2 class="sec h2s">${esc(u2.categories)}</h2><div class="chips">${Object.keys(D.cslug).filter(x => x !== c).map(x => `<a class="chip" href="${catPath(l, x)}">${CAT_ICON[x]} ${esc(u.cat[x])}</a>`).join("")}</div></div></section>`;
   const ph = items.map(p => photos(p)[0]).find(Boolean);
-  return page(l, catPath(l, c).slice(3), { title: `${u.cat[c]} in Sumba (${items.length}): ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`.replace(" in Sumba", l === "en" ? " in Sumba" : " · Sumba"), desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
+  return page(l, catPath(l, c).slice(3), { home: true, title: `${u.cat[c]} in Sumba (${items.length}): ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`.replace(" in Sumba", l === "en" ? " in Sumba" : " · Sumba"), desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
     ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)]])], js: mapJS(l, items, { fit: true }) });
 }
 
@@ -297,6 +301,117 @@ function itinerary(l) {
   return `<section><div class="w"><h2 class="sec">${esc(u2.itin)}</h2><p class="lead">${esc(u2.itin_d)}</p><div class="grid itin">${order.map((r, i) => {
     const it = D.places.filter(p => p.r === r).sort((a, b) => a.ll[1] - b.ll[1]).slice(0, 5);
     return `<div class="wxc"><h3>${esc(u2.day)} ${i + 1} · <a href="${regionPath(l, r)}">${esc(u.reg[r])}</a></h3><ol>${it.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ol></div>`; }).join("")}</div></div></section>`;
+}
+
+function home(l) {
+  const u = D.ui[l], u2 = D.ui2[l];
+  const heroSl = ["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"].map(s => D.gallery[s][0]);
+  const words = u2.words.split("|");
+  const secrets = D.places.filter(p => p.sec);
+  const dayIdx = Math.floor(Date.now() / 864e5) % secrets.length; const sod = secrets[dayIdx]; const sodT = P(sod, l); const sodP = photos(sod);
+  const cats = Object.keys(D.cslug);
+  const itins = D.guides.filter(g => /^itinerary-/.test(g.s));
+  const vids = D.videos._home || [];
+  const body = `<section class="hx" aria-label="Sumba">
+<div class="hx-sl">${heroSl.map((c, i) => `<img src="${gthumb(c, i ? 1280 : 960)}" ${i ? 'loading="lazy"' : `srcset="${gthumb(c, 500)} 500w, ${gthumb(c, 960)} 960w, ${gthumb(c, 1280)} 1280w" sizes="100vw" fetchpriority="high"`} alt="" class="${i ? "" : "on"}">`).join("")}</div>
+<div class="hx-sh"></div><div class="w hx-in"><p class="kick">✦ ${esc(u2.kicker)}</p><h1>${esc(u.hero_t)}</h1>
+<p class="hx-rot" aria-live="polite"><span id="rot">${esc(words[0])}</span></p><p class="hx-d">${esc(u.hero_d)}</p>
+<form class="hx-q" action="/${l}/search/" role="search"><input name="q" type="search" placeholder="🔎 ${esc(u2.hsearch)}" aria-label="${esc(u2.hsearch)}"><button>${esc(u2.hgo)}</button></form>
+<p><a class="btn big" href="/${l}/secret-spots/">${esc(u2.cta1)} →</a><a class="btn big ghost" href="/${l}/guide/itinerary-5-days/">${esc(u2.cta2)}</a></p></div>
+<div class="hx-live w"><span>🕐 ${esc(u2.local_time)} <b id="lt">--:--</b> WITA</span><span id="lwx">☀️ Waingapu</span><span>🌅 <b id="sr">--</b> · 🌇 <b id="ss">--</b></span></div>
+<a class="hx-cap" id="hcap" href="/${l}/place/${["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"][0]}/">📍 ${esc(P(D.places.find(p => p.s === "weekuri-lagoon"), l).n)}</a><div class="hx-dots">${heroSl.map((c, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div>
+<a class="hx-sc" href="#exp" aria-label="${esc(u2.scroll)}">↓</a></section>
+
+<section id="exp" class="rv"><div class="w"><p class="kick dark">${esc(u.places)}</p><h2 class="sec xl">${esc(u2.exp_t)}</h2><p class="lead">${esc(u2.exp_d)}</p>
+<div class="exp">${cats.map(c => { const it = D.places.filter(p => p.c === c); const ph = it.map(p => photos(p)[0]).find(Boolean); return `<a class="ex" href="/${l}/${D.cslug[c]}/"><img src="${ph.s}" alt="${esc(u.cat[c])}" loading="lazy"><span class="ex-t"><b>${CAT_ICON[c]} ${esc(u.cat[c])}</b><small>${it.length} ${esc(u.count)}</small></span></a>`; }).join("")}</div></div></section>
+
+<section class="sod rv"><div class="w sod-in"><a class="sod-ph" href="/${l}/place/${sod.s}/"><img src="${sodP[0].b.replace("/ph/1280/", "/ph/960/")}" alt="${esc(sodT.n)}" loading="lazy"></a>
+<div class="sod-tx"><p class="kick">★ ${esc(u2.sod_t)}</p><h2>${esc(sodT.n)}</h2><p class="rg">${esc(u.reg[sod.r])} · ${CAT_ICON[sod.c]} ${esc(u.cat[sod.c])}</p><p>${esc(sodT.t)}</p><p class="tipline">💡 ${esc(sodT.tip)}</p><a class="btn" href="/${l}/place/${sod.s}/">${esc(u2.sod_go)} →</a></div></div></section>
+
+<section class="rv"><div class="w"><div class="hd"><div><p class="kick dark">★ ${esc(u.secret_badge)}</p><h2 class="sec xl">${esc(u.secrets)}</h2><p class="lead">${esc(u.secrets_d)}</p></div><a class="more" href="/${l}/secret-spots/">${esc(u2.all_secrets)} →</a></div>
+<div class="mos">${secrets.slice(0, 9).map((p, i) => { const t = P(p, l), ph = photos(p)[0]; return `<a class="mo${i === 0 ? " big" : ""}" href="/${l}/place/${p.s}/"><img src="${i === 0 ? ph.b.replace("/ph/1280/", "/ph/960/") : ph.s}" alt="${esc(t.n)}" loading="lazy"><span><small>${esc(u.reg[p.r])}</small><b>${esc(t.n)}</b></span></a>`; }).join("")}</div></div></section>
+
+<section class="why rv"><div class="w"><h2 class="sec xl center">${esc(u2.why_t)}</h2><div class="why3">${[["🏝️", u2.why1_t, u2.why1_d], ["🛖", u2.why2_t, u2.why2_d], ["🐎", u2.why3_t, u2.why3_d]].map(([i, t, d]) => `<div><span class="wi">${i}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join("")}</div></div></section>
+
+<section class="rv"><div class="w"><h2 class="sec xl">${esc(D.ui2[l].itins)}</h2><p class="lead">${esc(u2.plan_t)}</p>
+<div class="steps">${[[1, u2.step1_t, u2.step1_d], [2, u2.step2_t, u2.step2_d], [3, u2.step3_t, u2.step3_d]].map(([n, t, d]) => `<div><span>${n}</span><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join("")}</div>
+<div class="itc">${itins.map(g => { const t = gtxt(g, l), h = ghero(g), n = (g.s.match(/\d+/) || [""])[0]; return `<a class="it2" href="/${l}/guide/${g.s}/"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy"><span class="dn">${n} ${esc(u2.days_n)}</span><span class="it2-t"><b>${esc(t.t)}</b><small>${esc(t.d)}</small></span></a>`; }).join("")}</div></div></section>
+
+${vids.length ? `<section class="dark rv"><div class="w"><h2 class="sec xl">▶ ${esc(u2.watch_t)}</h2><p class="lead">${esc(u2.watch_d)}</p><div class="vids">${vids.map(v => ytFacade(v, l)).join("")}</div></div></section>` : ""}
+
+<section class="rv"><div class="w"><h2 class="sec xl">${esc(D.ui2[l].zones)}</h2><div class="regs">${Object.keys(D.rslug).map(r => { const it = D.places.filter(p => p.r === r); const ph = it.map(p => photos(p)[0]).find(Boolean); return `<a class="rg2" href="/${l}/region/${D.rslug[r]}/"><img src="${ph.s}" alt="${esc(u.reg[r])}" loading="lazy"><span><b>${esc(u.reg[r])}</b><small>${it.length} ${esc(u.count)}</small></span></a>`; }).join("")}</div></div></section>
+
+<section class="mapcta rv"><div class="w mapcta-in"><div><p class="kick">🗺️ ${esc(u.map)}</p><h2>${esc(u2.map_cta_t)}</h2><p>${esc(u2.map_cta_d)}</p><a class="btn big" href="/${l}/map/">${esc(u2.open_map)} →</a></div>
+<a class="mapcta-img" href="/${l}/map/" aria-label="${esc(u2.open_map)}"><img src="${BASE}/og/home.jpg" alt="" loading="lazy"></a></div></section>
+
+<section class="nums rv"><div class="w"><div class="nm">${[[4, u2.n_reg], [2, u2.n_air], [D.places.length, u2.n_places], [L.length, u2.n_langs]].map(([n, t]) => `<div><b data-n="${n}">${n}</b><span>${esc(t)}</span></div>`).join("")}</div></div></section>
+
+<section class="rv"><div class="w"><h2 class="sec xl">${esc(u2.live_t)}</h2><p class="lead">${esc(u.weather_d)} <a href="/${l}/weather/">${esc(u.forecast)} →</a></p>${wxBoxes(l, D.towns)}</div></section>
+
+<section class="band rv"><div class="w two"><div><h2 class="sec">${esc(D.ui2[l].guides_more)}</h2><div class="grid" style="grid-template-columns:1fr">${D.guides.filter(g => !/^itinerary-/.test(g.s)).slice(0, 6).map(g => guideCard(g, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(u2.see_all)} →</a></p></div>
+<div><h2 class="sec" style="font-size:26px">${esc(u.latest)}</h2>${newsBox(l)}</div></div></section>`;
+  const ld = [{ "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" }, potentialAction: { "@type": "SearchAction", target: `${BASE}/${l}/search/?q={q}`, "query-input": "required name=q" } },
+    { "@context": "https://schema.org", "@type": "TouristDestination", name: "Sumba", description: u.hero_d, geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 }, containsPlace: D.places.map(p => ({ "@type": "TouristAttraction", name: P(p, l).n, url: `${BASE}/${l}/place/${p.s}/` })) },
+    ...vids.map(v => videoLD(v, l))];
+  const js = `(function(){var W=${JSON.stringify(words)},i=0,el=document.getElementById('rot');setInterval(function(){i=(i+1)%W.length;el.style.opacity=0;setTimeout(function(){el.textContent=W[i];el.style.opacity=1},350)},2600);
+var im=document.querySelectorAll('.hx-sl img'),dt=document.querySelectorAll('.hx-dots i'),cp=document.getElementById('hcap'),CP=${JSON.stringify(["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"].map(s => [s, P(D.places.find(p => p.s === s), l).n]))},k=0;function go(n){im[k].classList.remove('on');dt[k].classList.remove('on');k=n;im[k].classList.add('on');dt[k].classList.add('on');cp.href='/${l}/place/'+CP[k][0]+'/';cp.textContent='📍 '+CP[k][1]}var T=setInterval(function(){go((k+1)%im.length)},5500);dt.forEach(function(d,i){d.onclick=function(){clearInterval(T);go(i)}});
+function tk(){var d=new Date(Date.now()+8*36e5);document.getElementById('lt').textContent=d.toISOString().slice(11,16)}tk();setInterval(tk,30000);
+fetch('https://api.open-meteo.com/v1/forecast?latitude=-9.65&longitude=120.26&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=Asia%2FMakassar&forecast_days=1').then(function(r){return r.json()}).then(function(d){var c=d.current.weather_code,I=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'],g=c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7;document.getElementById('lwx').textContent=I[g]+' Waingapu '+Math.round(d.current.temperature_2m)+'°';document.getElementById('sr').textContent=d.daily.sunrise[0].slice(11);document.getElementById('ss').textContent=d.daily.sunset[0].slice(11)}).catch(function(){})})();` + wxJS(l, D.towns, false) + newsJS(l);
+  return page(l, "/", { home: true, preload: gthumb(heroSl[0], 960), ogimgOwn: `${BASE}/og/home.jpg`, body, js, ld });
+}
+
+function ytFacade(v, l) {
+  const t = (D.vmeta && D.vmeta[v]) || "Sumba";
+  return `<button class="yt" data-v="${v}" aria-label="${esc(D.ui2[l].play)}: ${esc(t)}"><img src="https://i.ytimg.com/vi/${v}/hqdefault.jpg" alt="${esc(t)}" loading="lazy" width="480" height="360"><span class="yp">▶</span><span class="yc">${esc(t)}</span></button>`;
+}
+function videoLD(v, l) {
+  const t = (D.vmeta && D.vmeta[v]) || "Sumba";
+  return { "@context": "https://schema.org", "@type": "VideoObject", name: t, description: t + " (Sumba, Indonesia)", thumbnailUrl: `https://i.ytimg.com/vi/${v}/hqdefault.jpg`, embedUrl: `https://www.youtube-nocookie.com/embed/${v}`, contentUrl: `https://www.youtube.com/watch?v=${v}`, uploadDate: "2026-01-01" };
+}
+
+function placePage(l, p) {
+  const u = D.ui[l], u2 = U2(l), t = P(p, l);
+  const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 6);
+  const [tk, town] = nearestOf(p.ll, D.towns), [ak, ap] = nearestOf(p.ll, D.airports);
+  const ph = photos(p), hero = ph[0];
+  const ll = `${p.ll[0].toFixed(4)}, ${p.ll[1].toFixed(4)}`;
+  const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })], [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]], [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })], [tpl(u2.q_tip, { n: t.n }), t.tip]];
+  const vids = D.videos[p.s] || [];
+  const idx = D.places.indexOf(p), prev = D.places[(idx - 1 + D.places.length) % D.places.length], next = D.places[(idx + 1) % D.places.length];
+  const body = `<section class="ph-hero"><img src="${hero.b.replace("/ph/1280/", "/ph/960/")}" srcset="${hero.s} 500w, ${hero.b.replace("/ph/1280/", "/ph/960/")} 960w, ${hero.b} 1280w" sizes="100vw" alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba" fetchpriority="high">
+<div class="hx-sh"></div><div class="w ph-in"><nav class="crumbs light" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> › <a href="${catPath(l, p.c)}">${esc(u.cat[p.c])}</a></nav>
+<p><a class="badge" style="background:${CAT_COLOR[p.c]};color:#fff;text-decoration:none" href="${catPath(l, p.c)}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</a> ${p.sec ? `<a class="badge" style="text-decoration:none" href="/${l}/secret-spots/">★ ${esc(u.secret_badge)}</a>` : ""}</p>
+<h1>${esc(t.n)}</h1><p class="ph-sub">📍 ${esc(u.reg[p.r])} · ${Math.round(tk)} ${esc(u2.km_from)} ${esc(town.n)} · ✈ ${esc(ap.code)} ${Math.round(ak)} km</p>${ph.length > 1 ? `<button class="btn ghost" data-lb="0">📷 ${ph.length} ${esc(u2.photos_n)}</button>` : ""}</div>
+<p class="ph-cr">${hero.fp ? esc(u2.file) + " · " : ""}${esc(u.photo)}: ${esc(hero.a)} · ${esc(hero.l)}</p></section>
+<div class="w pl2"><article class="pl2-main">
+<div class="body lead1"><p>${esc(t.t)}</p></div><div class="tipb"><b>💡 ${esc(u.tip)}</b>${esc(t.tip)}</div>
+${ph.length > 1 ? `<h2 class="sec h2s">📷 ${esc(u2.gallery)}</h2><div class="gal2">${ph.map((x, i) => `<button data-lb="${i}" aria-label="${esc(u2.gallery)} ${i + 1}"><img src="${x.s}" alt="${esc(t.n)} (${i + 1})" loading="lazy" width="500" height="333"></button>`).join("")}</div><p class="crs">${ph.map(x => `${x.fp ? esc(u2.file) + " · " : ""}${esc(x.a)} (<a href="${x.f}" rel="nofollow noopener" target="_blank">${esc(x.l)}</a>)`).join(" · ")}, Wikimedia Commons</p>` : ""}
+${vids.length ? `<h2 class="sec h2s">▶ ${esc(u2.videos_t)}</h2><div class="vids one">${vids.map(v => ytFacade(v, l)).join("")}</div>` : ""}
+<h2 class="sec h2s">${esc(u2.faq)}</h2><div class="faq">${faq.map(([q, a], i) => `<details${i ? "" : " open"}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
+${tipForm(l, p)}</article>
+<aside class="pl2-side"><div class="qf"><h2>${esc(u2.quick)}</h2><dl>
+<dt>${esc(u2.region_l)}</dt><dd><a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a></dd><dt>${esc(u2.category_l)}</dt><dd><a href="${catPath(l, p.c)}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</a></dd>
+<dt>${esc(u2.good_for)}</dt><dd>${esc(u2["gf_" + p.c])}</dd><dt>${esc(u2.best_time)}</dt><dd>${esc(D.season[p.c][l].split(/[,.:;]/)[0])}</dd>
+<dt>${esc(u2.n_town)}</dt><dd><a href="/${l}/town/${town.s}/">${esc(town.n)}</a> · ${Math.round(tk)} km</dd><dt>${esc(u2.n_airport)}</dt><dd>✈ ${esc(ap.code)} · ${Math.round(ak)} km</dd>
+<dt>GPS</dt><dd><button class="cp" data-c="${ll}">${ll} ⧉</button></dd></dl>
+<p class="acts"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u.directions)}</a><a class="btn alt2" href="https://maps.apple.com/?daddr=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u2.apple)}</a><button class="btn alt2 savebtn" data-s="${p.s}">☆ ${esc(u2.save)}</button><button class="btn alt2 shbtn">↗ ${esc(u2.share)}</button></p></div>
+<div class="qf"><h2>${esc(u.now)} · ${esc(town.n)}</h2>${wxBoxes(l, [town])}</div>
+<div class="qf"><div id="map" class="mapsm"></div><p><a href="/${l}/map/#${p.s}">🗺️ ${esc(u2.fullmap)} →</a></p></div></aside></div>
+<section class="band"><div class="w"><h2 class="sec xl">${esc(u.nearby)}</h2><div class="hs">${near.map(([d, x]) => card(x, l).replace('<p class="rg">', `<p class="rg">${Math.round(d)} ${esc(u2.nearby_km)} · `)).join("")}</div>
+<nav class="pn"><a href="/${l}/place/${prev.s}/">← ${esc(P(prev, l).n)}</a><a href="/${l}/place/${next.s}/">${esc(P(next, l).n)} →</a></nav><p class="upd">${esc(u2.updated)}: ${D.built}</p></div></section>
+<div class="lb" id="lb" hidden><button class="lb-x" aria-label="${esc(u2.close2)}">×</button><button class="lb-p" aria-label="${esc(u2.prev)}">‹</button><img alt=""><button class="lb-n" aria-label="${esc(u2.next)}">›</button><p class="lb-c"></p></div>
+<script type="application/json" id="lbd">${JSON.stringify(ph.map(x => [x.b, `${x.a} · ${x.l}`]))}</script>`;
+  const ld = [{ "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, inLanguage: l, isAccessibleForFree: true, touristType: u2["gf_" + p.c],
+      geo: { "@type": "GeoCoordinates", latitude: p.ll[0], longitude: p.ll[1] }, address: { "@type": "PostalAddress", addressRegion: u.reg[p.r], addressCountry: "ID" },
+      containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, image: ph.map(x => x.b) },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+    crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]]), ...vids.map(v => videoLD(v, l))];
+  return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()}, ${u.map.toLowerCase()} & ${u.tip.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
+    js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) });
+}
+
+function bannerHero(img, kicker, title, lead) {
+  return `<section class="ph-hero short"><img src="${img}" alt="" fetchpriority="high"><div class="hx-sh"></div><div class="w ph-in"><p class="kick">${kicker}</p><h1>${title}</h1>${lead ? `<p class="ph-sub">${lead}</p>` : ""}</div></section>`;
 }
 
 // ---------- full-screen map app ----------
@@ -429,6 +544,14 @@ window.ssSub=function(f,k){var m=f.nextElementSibling||f.parentNode.querySelecto
 window.ssTip=function(f,s){var m=f.querySelector('.msg');fetch('/api/tip',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({s:s,l:L,n:f.n.value,e:f.e.value,t:f.t.value,u:f.u.value})}).then(function(r){return r.json()}).then(function(j){m.textContent=j.ok?T.sent:'⚠';if(j.ok){f.reset();ev('tip_sent')}});return false};
 function getS(){try{return JSON.parse(localStorage.getItem('ss_saved')||'[]')}catch(e){return[]}}function setS(a){try{localStorage.setItem('ss_saved',JSON.stringify(a))}catch(e){}}
 document.querySelectorAll('.savebtn').forEach(function(b){var s=b.dataset.s;function upd(){var on=getS().indexOf(s)>-1;b.textContent=(on?'★ '+T.saved:'☆ '+T.save)}upd();b.onclick=function(){var a=getS(),i=a.indexOf(s);if(i>-1)a.splice(i,1);else{a.push(s);ev('save_place')}setS(a);upd()}});
+var H=document.getElementById('hdr'),TT=document.querySelector('.totop');function sc(){var y=scrollY;if(H&&H.classList.contains('over'))H.classList.toggle('solid',y>60);if(TT)TT.classList.toggle('show',y>900);document.body.classList.toggle('scr',y>innerHeight*.6)}addEventListener('scroll',sc,{passive:true});sc();
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.rv').forEach(function(x){io.observe(x)})}else document.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')});
+document.querySelectorAll('.yt').forEach(function(b){b.addEventListener('click',function(){var v=b.dataset.v;b.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="YouTube"></iframe>';ev('video_play')})});
+var LD=document.getElementById('lbd'),LB=document.getElementById('lb');if(LD&&LB){var A=JSON.parse(LD.textContent),ci=0,LI=LB.querySelector('img'),LC=LB.querySelector('.lb-c');function sh(i){ci=(i+A.length)%A.length;LI.src=A[ci][0];LC.textContent=(ci+1)+'/'+A.length+' · '+A[ci][1];LB.hidden=false}
+document.querySelectorAll('[data-lb]').forEach(function(b){b.addEventListener('click',function(){sh(+b.dataset.lb);ev('gallery_open')})});LB.querySelector('.lb-x').onclick=function(){LB.hidden=true};LB.querySelector('.lb-p').onclick=function(){sh(ci-1)};LB.querySelector('.lb-n').onclick=function(){sh(ci+1)};LB.onclick=function(e){if(e.target===LB)LB.hidden=true};
+document.addEventListener('keydown',function(e){if(LB.hidden)return;if(e.key==='Escape')LB.hidden=true;if(e.key==='ArrowLeft')sh(ci-1);if(e.key==='ArrowRight')sh(ci+1)})}
+document.querySelectorAll('.cp').forEach(function(b){b.onclick=function(){try{navigator.clipboard.writeText(b.dataset.c)}catch(e){}b.textContent='✓ '+b.dataset.c;ev('copy_gps')}});
+document.querySelectorAll('.shbtn').forEach(function(b){b.onclick=function(){if(navigator.share)navigator.share({title:document.title,url:location.href}).catch(function(){});else{try{navigator.clipboard.writeText(location.href)}catch(e){}b.textContent='✓'}ev('share')}});
 if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})});})();`;
 }
 function townPage(l, t) {
