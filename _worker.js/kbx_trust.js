@@ -168,7 +168,7 @@ function progressPage(D, lang, sm) {
     '<h2 id="records">' + esc(t(lang, 'sn_h')) + '</h2><p>' + esc(t(lang, 'sn_d')) + '</p>' + sn +
     '<h2 id="improvements">' + esc(t(lang, 'imp_h')) + '</h2><p>' + esc(tx(lang, 'imp_p', { a: nf(lang, c.done), b: nf(lang, c.doing), c: nf(lang, c.next), d: nf(lang, c.planned) })) + '</p><p><a class="k-btn k-btn--primary" href="' + pre(lang) + IMP_P + '">' + esc(t(lang, 'imp_a')) + '</a></p>' +
     '<h2 id="method">' + esc(t(lang, 'mt_h')) + '</h2><ul>' + t(lang, 'mt').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
-    '<h2>' + esc(t(lang, 'more_h')) + '</h2><ul>' + more + '<li><a href="' + pre(lang) + TEAM_P + '">' + esc(t(lang, 'l_team')) + '</a></li><li><a href="' + pre(lang) + PRESS_P + '">' + esc(t(lang, 'crumb_places')) + '</a></li></ul>' +
+    '<h2>' + esc(t(lang, 'more_h')) + '</h2><ul><li><a href="' + pre(lang) + '/numbers/">' + esc(t(lang, 'l_num')) + '</a></li>' + more + '<li><a href="' + pre(lang) + TEAM_P + '">' + esc(t(lang, 'l_team')) + '</a></li><li><a href="' + pre(lang) + PRESS_P + '">' + esc(t(lang, 'crumb_places')) + '</a></li></ul>' +
     '<p class="k-small"><a class="k-src" href="/api/x/progress">' + esc(t(lang, 'json')) + '</a> <a class="k-src" href="/data/progress.json">/data/progress.json</a> <span class="k-muted">CC BY 4.0</span></p></div></section></div>';
   const title = t(lang, 'p_title'), desc = t(lang, 'p_desc'), url = ORIGIN + pre(lang) + PROG_P;
   const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: now, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
