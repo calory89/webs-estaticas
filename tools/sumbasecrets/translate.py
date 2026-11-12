@@ -67,7 +67,9 @@ FIX = {"ja": [("スマバ", "スンバ")], "zh": [("苏巴", "松巴")]}
 def tr_tree(obj, lang):
     if os.environ.get("TR_SKIP"):  # no translator available: keep only cached strings, leave the rest in English
         acc = []; _collect(obj, acc)
-        return _apply(obj, {s: CACHE[key(lang, s)] for s in acc if key(lang, s) in CACHE})
+        m = {s: CACHE[key(lang, s)] for s in acc if key(lang, s) in CACHE}
+        for a, b in FIX.get(lang, []): m = {k: v.replace(a, b) for k, v in m.items()}
+        return _apply(obj, m)
     acc = []; _collect(obj, acc)
     m = tr_strings(lang, acc)
     for a, b in FIX.get(lang, []): m = {k: v.replace(a, b) for k, v in m.items()}
