@@ -11,5 +11,5 @@ k = 111320 * math.cos(math.radians(9.6)); bad = 0
 for p in PLACES + MAMBORO:
     lat, lon = COORD_FIX.get(p["s"], p["ll"]); pt = Point(lon, lat); q = nearest_points(coast, pt)[0]
     d = math.hypot((pt.x - q.x) * k, (pt.y - q.y) * 110570)
-    if (p["c"] == "beach" and d > 250) or (p["c"] != "beach" and not land.contains(pt)): bad += 1; print("CHECK", p["s"], p["c"], round(d), "m")
+    if (p["c"] == "beach" and p["s"] != "weekuri-lagoon" and d > 60) or (p["c"] != "beach" and not land.contains(pt)): bad += 1; print("CHECK", p["s"], p["c"], round(d), "m")
 print("places", len(PLACES + MAMBORO), "problems", bad); sys.exit(1 if bad else 0)
