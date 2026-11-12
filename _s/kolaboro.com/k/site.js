@@ -30,6 +30,24 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
     // a tap outside the open menu closes it
     document.addEventListener('click', function (e) { if (links.classList.contains('open') && !e.target.closest('.nav')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
+    // n26u (13 Nov 2026): the phone menu starts with search (projects, developers, places; opens the search with suggestions) and
+    // "My projects" (the list saved in this browser, with its count). Wide screens keep the search button in the header.
+    try {
+      var ML = (document.documentElement.lang || 'en').slice(0, 2), MT = { en: ['Search projects, developers, places', 'My projects'], es: ['Buscar proyectos, promotoras, lugares', 'Mis proyectos'], de: ['Projekte, Bauträger, Orte suchen', 'Meine Projekte'], fr: ['Rechercher projets, promoteurs, lieux', 'Mes projets'], nl: ['Zoek projecten, ontwikkelaars, plaatsen', 'Mijn projecten'], ru: ['Поиск проектов, застройщиков, мест', 'Мои проекты'], zh: ['搜索项目、开发商、地点', '我的项目'], ar: ['ابحث عن مشاريع ومطوّرين وأماكن', 'مشاريعي'] }[ML] || null;
+      if (MT && !links.querySelector('.kmn')) {
+        var mst = document.createElement('style');
+        mst.textContent = '.kmn{display:none}@media (max-width:900px){.links .kmn{display:flex}.links .kmn-s{order:-2;align-items:center;gap:10px;width:100%;min-height:52px;margin:4px 0 6px;padding:0 14px;border:2px solid #17212B;border-radius:12px;background:#fff;color:#59626B;font:500 1rem Archivo,system-ui,sans-serif;text-align:start;cursor:pointer}.links .kmn-s svg{width:18px;height:18px;flex:none;color:#17212B}.links .kmn-m{order:-1;justify-content:space-between}.links .kmn-m b{min-width:24px;padding:0 7px;border-radius:99px;background:#17212B;color:#fff;font-size:.78rem;line-height:24px;text-align:center}}';
+        document.head.appendChild(mst);
+        var sb2 = document.createElement('button'); sb2.type = 'button'; sb2.className = 'kmn kmn-s'; sb2.setAttribute('aria-haspopup', 'dialog');
+        sb2.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span></span>';
+        sb2.lastChild.textContent = MT[0];
+        sb2.addEventListener('click', function () { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); if (window.kbOpenSearch) window.kbOpenSearch(); });
+        var my = document.createElement('a'); my.className = 'kmn kmn-m'; my.href = '/watchlist/'; my.textContent = MT[1];
+        var nmy = 0; try { nmy = (JSON.parse(localStorage.getItem('kb_watch') || '[]') || []).length; } catch (e) {}
+        if (nmy > 0) { var bb = document.createElement('b'); bb.textContent = nmy; my.appendChild(bb); }
+        links.insertBefore(my, links.firstChild); links.insertBefore(sb2, links.firstChild);
+      }
+    } catch (e) {}
   }
 
   // language switcher: every page offers every language. Each entry leads to this page in that language when it exists

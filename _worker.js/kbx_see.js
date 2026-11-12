@@ -235,15 +235,23 @@ async function thumb(req, sd, id, n, ctx) {
   if (!x || !/^https:\/\//.test(x.thumb || '')) return new Response('not found', { status: 404, headers: { 'cache-control': 'public, max-age=3600' } });
   const ck = new Request(ORIGIN + '/__see_ph/' + encodeURIComponent(id) + '/' + n + '/' + encodeURIComponent(x.src + ':' + x.id + ':' + x.thumb.slice(-48)));
   try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
-  let r;
-  try { r = await fetch(x.thumb, { headers: { 'user-agent': UA, accept: 'image/jpeg,image/webp,image/png,image/*' }, cf: { cacheTtl: 604800, cacheEverything: true }, redirect: 'follow' }); } catch (e) { r = null; }
-  const ct = r && r.headers.get('content-type') || '';
-  if (!r || !r.ok || !/^image\/(jpeg|png|webp)/.test(ct)) return new Response('unavailable', { status: 502, headers: { 'cache-control': 'no-store' } });
-  const buf = await r.arrayBuffer();
-  if (buf.byteLength > 2500000) return new Response('too large', { status: 502, headers: { 'cache-control': 'no-store' } });
+  // n26u (13 Nov 2026): the photo source answered 502 now and then. Two tries (12 s each, short pause), then the last good copy this
+  // edge kept (30 days, marked x-kb-fallback: stale), then a plain grey placeholder (not cached) instead of a broken image.
+  const sk = new Request(ck.url + '/stale');
+  let r = null, ct = '', buf = null;
+  for (let a = 0; a < 2 && !buf; a++) {
+    if (a) await new Promise(ok => setTimeout(ok, 600));
+    try { r = await fetch(x.thumb, { headers: { 'user-agent': UA, accept: 'image/jpeg,image/webp,image/png,image/*' }, cf: { cacheTtl: 604800, cacheEverything: true }, redirect: 'follow', signal: AbortSignal.timeout(12000) }); } catch (e) { r = null; }
+    ct = r && r.headers.get('content-type') || '';
+    if (r && r.ok && /^image\/(jpeg|png|webp)/.test(ct)) { const b = await r.arrayBuffer(); if (b.byteLength <= 2500000) buf = b; }
+  }
+  if (!buf) {
+    try { const st = await caches.default.match(sk); if (st) { const h = new Headers(st.headers); h.set('x-kb-fallback', 'stale'); h.set('cache-control', 'public, max-age=600'); return new Response(st.body, { status: 200, headers: h }); } } catch (e) {}
+    return new Response('<svg xmlns="http://www.w3.org/2000/svg" width="500" height="375" viewBox="0 0 500 375"><rect width="500" height="375" fill="#E3E2DD"/></svg>', { status: 200, headers: { 'content-type': 'image/svg+xml', 'cache-control': 'no-store', 'x-kb-fallback': 'placeholder', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'" } });
+  }
   const res = new Response(buf, { status: 200, headers: { 'content-type': ct.split(';')[0], 'cache-control': 'public, max-age=604800', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*',
     'x-photo-source': x.page, 'x-photo-licence': x.lic, 'content-security-policy': "default-src 'none'" } });
-  try { ctx && ctx.waitUntil && ctx.waitUntil(caches.default.put(ck, res.clone())); } catch (e) {}
+  try { ctx && ctx.waitUntil && ctx.waitUntil(Promise.all([caches.default.put(ck, res.clone()), caches.default.put(sk, new Response(buf.slice(0), { headers: { 'content-type': ct.split(';')[0], 'cache-control': 'public, max-age=2592000', 'x-photo-source': x.page, 'x-photo-licence': x.lic, 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*', 'content-security-policy': "default-src 'none'" } }))])); } catch (e) {}
   return res;
 }
 

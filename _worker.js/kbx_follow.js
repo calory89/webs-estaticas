@@ -13,6 +13,7 @@
 // projects not yet reviewed carry no score, checks or claim counts. The UI parts (watch box, search box, feed links) are exported
 // for kbx_named.js.
 
+import { t26 } from './kbx_u26.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS9 = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -47,6 +48,7 @@ const S = {
 };
 const R1 = {"en": "1 result", "es": "1 resultado", "de": "1 Treffer", "fr": "1 résultat", "nl": "1 resultaat", "ru": "результатов: 1", "zh": "1 个结果", "ar": "نتيجة واحدة"};   // n19f: '1 results'
 for (const [l, v] of Object.entries(R1)) if (S[l]) S[l].sx_res1 = v;
+for (const l of Object.keys(S)) { S[l].w_h = t26(l, 'w_h'); S[l].w_btn = t26(l, 'w_btn'); }   // n26u (13 Nov 2026): the watch box says what it does: an alert when the handover date or the price changes
 // n20f (9 Nov 2026): the star that saves a project to the visitor's list (and account when logged in) lived on /p/<ID>/, which now
 // redirects to the named page; without it nothing could be saved for the portal's "Saved projects" and "Payments vs progress".
 const SV = {"en": ["Save to my list", "Saved to my list", "Saved to your list and your account.", "Saved to your list in this browser.", "Removed from your list.", "Open your dashboard", "Open your list"], "es": ["Guardar en mi lista", "Guardado en mi lista", "Guardado en tu lista y en tu cuenta.", "Guardado en tu lista en este navegador.", "Quitado de tu lista.", "Abrir tu panel", "Abrir tu lista"], "de": ["In meiner Liste speichern", "In meiner Liste gespeichert", "In Ihrer Liste und Ihrem Konto gespeichert.", "In Ihrer Liste in diesem Browser gespeichert.", "Aus Ihrer Liste entfernt.", "Dashboard öffnen", "Liste öffnen"], "fr": ["Enregistrer dans ma liste", "Enregistré dans ma liste", "Enregistré dans votre liste et votre compte.", "Enregistré dans votre liste, dans ce navigateur.", "Retiré de votre liste.", "Ouvrir votre tableau de bord", "Ouvrir votre liste"], "nl": ["Bewaren in mijn lijst", "Bewaard in mijn lijst", "Bewaard in je lijst en je account.", "Bewaard in je lijst in deze browser.", "Verwijderd uit je lijst.", "Open je dashboard", "Open je lijst"], "ru": ["Сохранить в мой список", "Сохранено в моём списке", "Сохранено в вашем списке и аккаунте.", "Сохранено в вашем списке в этом браузере.", "Удалено из вашего списка.", "Открыть панель", "Открыть список"], "zh": ["保存到我的清单", "已保存到我的清单", "已保存到您的清单和账户。", "已保存到此浏览器中的清单。", "已从清单中移除。", "打开我的面板", "打开我的清单"], "ar": ["احفظ في قائمتي", "محفوظ في قائمتي", "حُفظ في قائمتك وفي حسابك.", "حُفظ في قائمتك على هذا المتصفح.", "أُزيل من قائمتك.", "افتح لوحتك", "افتح قائمتك"]};

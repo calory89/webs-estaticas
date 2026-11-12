@@ -44,21 +44,30 @@ async function fx(u, ctx) {
     }
   } catch (e) { try { await cache.delete(ck); } catch (x) {} }
 
-  let txt = '';
-  try {
-    const ac = new AbortController(), tm = setTimeout(() => ac.abort(), 12000);
-    const r = await fetch(query, { headers: { accept: 'text/csv', 'user-agent': 'kolaboro.com currency-risk tool (+https://kolaboro.com/tools/currency-risk/)' }, signal: ac.signal });
-    if (!r.ok) { clearTimeout(tm); return json({ error: 'ECB data portal answered ' + r.status, query }, 502); }
-    txt = await r.text(); clearTimeout(tm);
-  } catch (e) {
-    return json({ error: 'ECB data portal not reachable', query }, 502);
+  // n26u (13 Nov 2026): the ECB portal answered 502 now and then. Two tries with a short pause, then the last good answer this edge
+  // kept (30 days), marked "stale": true with the date it was fetched; only when there is none the error is passed on.
+  const sk = new Request(ck.url + '/stale');
+  const stale = async why => {
+    try { const st = await cache.match(sk); if (st) { const j = await st.json(); j.stale = true; j.stale_reason = why; return new Response(JSON.stringify(j), { headers: hdr({ 'cache-control': 'public, max-age=300', 'x-kb-cache': 'stale', 'x-kb-fallback': 'stale' }) }); } } catch (e) {}
+    return json({ error: why, query }, 502);
+  };
+  let txt = '', why = '';
+  for (let a = 0; a < 2 && !txt; a++) {
+    if (a) await new Promise(ok => setTimeout(ok, 700));
+    try {
+      const ac = new AbortController(), tm = setTimeout(() => ac.abort(), 12000);
+      const r = await fetch(query, { headers: { accept: 'text/csv', 'user-agent': 'kolaboro.com currency-risk tool (+https://kolaboro.com/tools/currency-risk/)' }, signal: ac.signal });
+      if (!r.ok) { clearTimeout(tm); why = 'ECB data portal answered ' + r.status; continue; }
+      txt = await r.text(); clearTimeout(tm);
+    } catch (e) { why = 'ECB data portal not reachable'; }
   }
+  if (!txt) return stale(why);
   // CSV columns: KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE
   const by = {};
   const lines = txt.replace(/^\uFEFF/, '').split(/\r?\n/);
   const head = (lines[0] || '').split(',');
   const iC = head.indexOf('CURRENCY'), iT = head.indexOf('TIME_PERIOD'), iV = head.indexOf('OBS_VALUE');
-  if (iC < 0 || iT < 0 || iV < 0) return json({ error: 'unexpected ECB response', query }, 502);
+  if (iC < 0 || iT < 0 || iV < 0) return stale('unexpected ECB response');
   for (let i = 1; i < lines.length; i++) {
     const f = lines[i].split(',');
     if (f.length <= iV) continue;
@@ -66,7 +75,7 @@ async function fx(u, ctx) {
     if (!(v > 0)) continue;
     (by[f[iC]] || (by[f[iC]] = new Map())).set(f[iT], v);
   }
-  if (series.some(s => !by[s])) return json({ error: 'series missing in ECB response', query }, 502);
+  if (series.some(s => !by[s])) return stale('series missing in ECB response');
   // Keep only dates where every requested series has a value.
   let dates = series.length ? [...by[series[0]].keys()] : [];
   dates = dates.filter(d => series.every(s => by[s].has(d))).sort();
@@ -88,7 +97,7 @@ async function fx(u, ctx) {
     dates,
     rates: out
   };
-  const text = JSON.stringify(body), put = cache.put(ck, new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=' + TTL }) })).catch(() => {});
+  const text = JSON.stringify(body), put = Promise.all([cache.put(ck, new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=' + TTL }) })), cache.put(sk, new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=2592000' }) }))]).catch(() => {});
   if (ctx && ctx.waitUntil) ctx.waitUntil(put); else await put;
   return new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=' + TTL, 'x-kb-cache': 'miss' }) });
 }

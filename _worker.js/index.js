@@ -44,6 +44,7 @@ let kca = null; const KCA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-a
 let knet = null; const KNET = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:graph\/developers|live\/xrays)\/?$|^\/api\/x\/net\/(?:graph|live)$/;   // b14 f14c: developer network graph + live X-ray globe (keep equal to PATHS in kbx_net.js)
 let kplot = null; const KPLOT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?satellite\/plot\/?$/;   // n19d (batch 19): any plot from space, 8 languages (see kbx_plot.js)
 let kwat = null; const KWAT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?watch\/lookalikes\/?$|^\/__k\/kwatch-admin\.js$/;   // n19a (batch 19): lookalike websites feed, admin Screening tab (see kbx_watch.js)
+let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
 let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules\/?$/;   // n21c (batch 21): short-let rules by city (see kbx_rules.js)
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
@@ -384,6 +385,15 @@ export default {
       const r = await kwat.page(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
+    // kolaboro.com (n26u, batch 26): /compare/?p=<slugs> (named, 8 languages, noindex), /api/v1/facets, /api/v1/followers, /api/x/status/pages (see kbx_u26.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KU26.test(u.pathname)) {
+      if (!ku26) ku26 = await import('./kbx_u26.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await ku26.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // n26u: the database server's 5-minute uptime probe of /api/kb/health also refreshes the key-page sweep shown on /status/
+    if (host === 'kolaboro.com' && u.pathname === '/api/kb/health' && req.method === 'GET') { try { if (!ku26) ku26 = await import('./kbx_u26.js'); ku26.warm(env, ctx); } catch (e) {} }
     // kolaboro.com (n23, batch 23): /rankings/transparency/[<place>/] and /methods/transparency-score/ in 8 languages (see kbx_tr.js); before the /rankings/ hubs of kbx_seo.js
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KTR.test(u.pathname)) {
       if (!ktr) ktr = await import('./kbx_tr.js');
