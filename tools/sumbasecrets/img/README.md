@@ -1,0 +1,1 @@
+Worker `sumbasecrets-img` on custom domain src.sumbasecrets.com: fetches the 1280px Wikimedia Commons thumbnail (with a proper User-Agent) so Cloudflare Image Transformations can resize it to WebP/AVIF from the main worker (/ph/ route, env IMGX=1). Source code is inline in the deploy call; it only proxies paths of the form /x/xy/File.jpg.
