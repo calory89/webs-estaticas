@@ -5,6 +5,9 @@ name: Kolaboro open history
 # Bitcoin stamps per week) into /data/traction.json, then advances "complete_until" per series. Nothing is written when nothing changed.
 # X-ray runs per week have no public source and keep their last value from the claude-ops snapshot (marked partial on /open).
 # Developer answer speed needs no job: /data/dev-response.json is served live by the worker.
+# n26y (batch 26, 13 Nov 2026): a second step records the figures of kolaboro.com/progress/ that cannot be rebuilt later from other
+# files (sources cited, claims tested, URLs in the sitemaps, totals) as one row per UTC day in /data/progress.json "days", read from
+# the public JSON https://kolaboro.com/api/x/progress/today (counts only). Same budget gate and job; a few seconds.
 on:
   schedule:
     - cron: '41 0 * * *'
@@ -88,6 +91,38 @@ jobs:
             T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: /open weekly history $(date -u +%F) (closed weeks from public aggregates)")
+            git push -q origin $C:refs/heads/pub/_lovable && { echo "published $C"; exit 0; }
+            sleep 5
+          done; exit 1
+      - name: Daily record of the progress figures (/data/progress.json "days")
+        if: ${{ !cancelled() }}
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          K=_s/kolaboro.com/data/progress.json
+          curl -sSf --retry 3 --max-time 60 -H 'user-agent: kolaboro-open-history (GitHub Actions)' "https://kolaboro.com/api/x/progress/today?h=$(date +%s)" -o $RUNNER_TEMP/today.json
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            git show FETCH_HEAD:$K > $RUNNER_TEMP/pg.json
+            python3 - "$RUNNER_TEMP/today.json" "$RUNNER_TEMP/pg.json" "$RUNNER_TEMP/pg-new.json" <<'PY'
+          import json, sys, re
+          o, p = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
+          if not re.match(r'^\d{4}-\d{2}-\d{2}$', str(o.get('d') or '')): sys.exit('bad snapshot')
+          row = {'d': o['d'], 'at': o.get('at')}
+          for k in ('projects', 'markets', 'countries', 'sources', 'claims_total', 'data_points', 'sitemap_urls'):
+              if isinstance(o.get(k), int) and o[k] >= 0: row[k] = o[k]
+          days = [r for r in (p.get('days') or []) if r.get('d') != row['d']] + [row]
+          p['days'] = sorted(days, key=lambda r: r['d'])[-400:]
+          json.dump(p, open(sys.argv[3], 'w'), ensure_ascii=False, separators=(',', ':'))
+          print('row', json.dumps(row))
+          PY
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" $RUNNER_TEMP/pg-new.json
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx2; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w $RUNNER_TEMP/pg-new.json); git update-index --add --cacheinfo 100644,$H,$K
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: /progress/ daily record $(date -u +%F) (public counts from /api/x/progress/today)")
             git push -q origin $C:refs/heads/pub/_lovable && { echo "published $C"; exit 0; }
             sleep 5
           done; exit 1
