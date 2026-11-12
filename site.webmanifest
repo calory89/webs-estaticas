@@ -1,0 +1,20 @@
+{
+ "name": "Carlos de Ory",
+ "short_name": "Carlos de Ory",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#070818",
+ "theme_color": "#070818",
+ "icons": [
+  {
+   "src": "/assets/cdo/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/cdo/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
