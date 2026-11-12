@@ -1,8 +1,8 @@
 # Sumba Secrets · 300 mejoras (12-nov-2026)
 
-**Hechas: 172 de 300.** Las 128 restantes llevan ⏳ y, cuando depende de algo, el motivo. Lo que se pidió hoy: la portada llama la atención (fotos a pantalla completa que cambian, buscador, secreto del día, vídeos) y el mapa pasa a segundo plano (último del menú, botón flotante y mapa pequeño en cada ficha).
+**Hechas: 175 de 300.** Las 125 restantes llevan ⏳ y, cuando depende de algo, el motivo. Lo que se pidió hoy: la portada llama la atención (fotos a pantalla completa que cambian, buscador, secreto del día, vídeos) y el mapa pasa a segundo plano (último del menú, botón flotante y mapa pequeño en cada ficha).
 
-Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit b72103d). Worker Cloudflare `sumbasecrets`.
+Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit más reciente). Worker Cloudflare `sumbasecrets`.
 
 ## Portada (lo primero que se ve)
 1. ✅ Portada a pantalla completa con fotos reales de Sumba
@@ -150,7 +150,7 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit b72103d). Worker 
 135. ⏳ Logo diseñado (hoy es texto)
 136. ⏳ Ilustraciones propias de Sumba
 137. ⏳ Fotos propias de alta calidad (las de Wikimedia varían)
-138. ⏳ Microanimaciones en iconos
+138. ✅ Autocompletar nombres de sitios en el buscador de portada
 139. ⏳ Plantilla de historias para Instagram
 140. ⏳ Tipografía de títulos alojada en el propio dominio
 141. ✅ Cabecera de red Sumba (Times + Secrets)
@@ -158,10 +158,10 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit b72103d). Worker 
 143. ✅ Carrusel horizontal de cercanos
 144. ✅ Etiquetas de días en itinerarios
 145. ✅ Botones grandes en móvil
-146. ✅ Selector de idioma compacto en móvil
+146. ✅ Selector de idiomas con banderas (menú desplegable, también en el mapa)
 147. ✅ Barra de navegación deslizable en móvil
 148. ⏳ Página 404 ilustrada
-149. ⏳ Favicon animado
+149. ✅ Barra de navegación inferior en móvil: Sumba, Secretos, Guías, Mapa, Guardados
 150. ⏳ Paleta revisada por un diseñador
 
 ## Funcionalidades
@@ -241,7 +241,7 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit b72103d). Worker 
 220. ✅ Noticias del Times en EN, ES o ID según idioma
 221. ⏳ Revisión nativa de japonés, chino y coreano
 222. ⏳ Revisión nativa de ruso
-223. ⏳ Detectar idioma del navegador en la entrada
+223. ✅ Detectar idioma del navegador y sugerirlo
 224. ⏳ Árabe (escritura de derecha a izquierda)
 225. ⏳ Hindi
 226. ⏳ Polaco
