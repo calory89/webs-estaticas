@@ -319,7 +319,7 @@ export function devFacets(F, ix, dv, lang) {
 
 // ------------------------------------------------------------------------------------------------ pages
 const CSS = '<style id="kfa-css">.kfa h2{margin-top:var(--k-7,48px)}.kfa .k-phead{margin-bottom:var(--k-5,24px)}.kfa-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface);margin:var(--k-4,16px) 0}.kfa-kv div{padding:12px 16px;border-inline-end:1px solid var(--k-line)}.kfa-kv b{display:block;font-size:var(--k-fs-xl,24px);font-variant-numeric:tabular-nums}.kfa-kv span{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}' +
-  '.kfa .k-table-wrap{overflow-x:auto;margin:var(--k-3,12px) 0 var(--k-5,24px)}.kfa td{vertical-align:top}.kfa-l{display:flex;flex-wrap:wrap;gap:8px 16px;padding:0;list-style:none;margin:var(--k-3,12px) 0}.kfa-l li{margin:0}.kfa-box{border:1px solid var(--k-line-2);border-radius:var(--k-r-lg,14px);background:var(--k-surface);padding:16px 20px;margin:var(--k-6,32px) 0;max-width:760px}.kfa-vs th[scope=row]{text-align:start;font-weight:600;width:28%}.kfa-vs td{width:36%}@media (max-width:640px){.kfa-vs th[scope=row]{width:auto}}</style>';
+  '.kfa .k-table-wrap{overflow-x:auto;margin:var(--k-3,12px) 0 var(--k-5,24px)}.kfa td{vertical-align:top}.kfa-l{display:flex;flex-wrap:wrap;gap:8px 16px;padding:0;list-style:none;margin:var(--k-3,12px) 0}.kfa-l li{margin:0}.kfa-box{border:1px solid var(--k-line-2);border-radius:var(--k-r-lg,14px);background:var(--k-surface);padding:16px 20px;margin:var(--k-6,32px) 0;max-width:760px}.kfa-vs{table-layout:fixed;width:100%}.kfa-vs th,.kfa-vs td{overflow-wrap:anywhere;word-break:break-word}.kfa-vs th[scope=row]{text-align:start;font-weight:600;width:28%}.kfa-vs td{width:36%}@media (max-width:640px){.kfa-vs th[scope=row]{width:auto}}</style>';
 const crumbHtml = list => '<p class="k-crumb">' + list.map((c, i) => i < list.length - 1 ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span>' + esc(c[0]) + '</span>').join(' / ') + '</p>';
 const crumbLd = list => ({ '@type': 'BreadcrumbList', itemListElement: list.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: ORIGIN + c[1] })) });
 const replyBox = lang => '<div class="kfa-box"><p><b>' + te(lang, 'rp_h') + '</b> ' + te(lang, 'rp_t') + '</p><p><a class="k-btn k-btn--line" href="/developers/reply/">' + te(lang, 'rp_b') + '</a> <a class="k-btn k-btn--line" href="/corrections/">' + te(lang, 'rp_c') + '</a></p></div>';
@@ -477,7 +477,8 @@ export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;
   const lang = m[1] || 'en';
   const path = '/' + u.pathname.replace(/^\/(es|de|fr|nl|ru|zh|ar)\//, '/').replace(/^\/+|\/+$/g, '') + '/';
-  let F; try { F = await facetsData(env); } catch (e) { return null; }
+  // a data file that failed to load must not answer 404 for a page listed in the sitemap: 503 with a retry hint instead
+  let F; try { F = await facetsData(env); } catch (e) { return new Response('Temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8' } }); }
   const key = lang + '|' + path + '|' + F.v;
   let pg = BODY.get(key);
   if (!pg) { pg = renderPath(F, path, lang); if (!pg) return null; if (BODY.size > 400) BODY.clear(); BODY.set(key, pg); }
