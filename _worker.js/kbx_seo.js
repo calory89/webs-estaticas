@@ -371,7 +371,7 @@ function pVs(B, key) {
 }
 function pRankings(B) {
   const mw = marketsWithDelays(B);
-  const body = '<ul class="sx-l"><li><a href="/rankings/most-delayed/">Most delayed off-plan projects</a>: past the first handover date on record, all markets</li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + '<li><a href="/rankings/changed-promises/">Most changed promises</a>: what developers changed on their own pages</li><li><a href="/new/">New this month</a></li><li><a href="/rankings/transparency/">Transparency rankings: 30 islands and 30 cities</a>: every project scored 0 to 100 on what is published and checkable</li><li><a href="/transparency-index/">Transparency index by market</a></li><li><a href="/vs/">Project comparisons</a></li></ul>';
+  const body = '<ul class="sx-l"><li><a href="/rankings/most-delayed/">Most delayed off-plan projects</a>: past the first handover date on record, all markets</li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + '<li><a href="/rankings/changed-promises/">Most changed promises</a>: what developers changed on their own pages</li><li><a href="/new/">New this month</a></li><li><a href="/rankings/transparency/">Transparency rankings: 30 islands and 30 cities</a>: every project scored 0 to 100 on what is published and checkable</li><li><a href="/transparency-index/">Transparency index by market</a></li><li><a href="/vs/">Project comparisons</a></li><li><a href="/handover/">Projects by handover year and place</a>: with the delay index by place</li><li><a href="/areas/">Projects by neighbourhood</a></li></ul>';
   return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency | Kolaboro', h1: 'Off-plan rankings', desc: 'Data-driven lists of off-plan projects: most delayed by market, most changed promises, new projects, transparency by market.', updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
 }
 
@@ -511,7 +511,7 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml']) {   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
+    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml']) {   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
       let ok = MEMO['__ext' + x]; if (!ok || Date.now() - ok.t > 600000) { let v = null; try { const r = B.inner ? await B.inner(x) : null; if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); v = { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length }; } } catch (e) { v = null; } ok = MEMO['__ext' + x] = { t: Date.now(), v }; }
       if (ok.v && ok.v.n) ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (ok.v.last ? '<lastmod>' + ok.v.last + '</lastmod>' : '') + '</sitemap>');
     }
