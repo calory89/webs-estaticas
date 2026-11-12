@@ -2,7 +2,7 @@
 
 > RealHunt (https://realhunt.co) is where foreigners find, check and buy property: homes for sale around the world, each checked by a person and graded from 70 to 98 against every other home on the site, with buying rules, taxes and costs by country. It is not an estate agent; every home links to its original listing. Legal and tax notes are general information, not advice.
 
-Updated 2026-11-11. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
+Updated 2026-11-12. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
 
 
 ---
@@ -50,11 +50,11 @@ It is not a survey or a valuation. Photos can flatter and listings go out of dat
 
 
 ---
-Source: https://realhunt.co/research/prices (updated 2026-11-11)
+Source: https://realhunt.co/research/prices (updated 2026-11-12)
 
 ## What a cheap home costs, country by country
 
-From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-11. Free to quote with a link to this page.
+From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-12. Free to quote with a link to this page.
 
 Country | Homes | Median €/m² | Median price | Cheapest | Median score
 [Japan](https://realhunt.co/homes/japan) | 30 | €340 | €39,560 | €7,400 | 86
@@ -679,8 +679,8 @@ Rent paid to a non-resident is subject to 20.42% withholding (except when an ind
 - [€11,380 · Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) · Shokawa, Takayama, Gifu · score 91 · 53 m² · 1 bed
 - [€7,400 · Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · score 91 · 94 m² · 2 bed
 - [€10,240 · Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · score 91 · 66 m² · 2 bed
-- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€19,910 · Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · score 91 · 70 m² · 2 bed
+- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 - [€27,870 · Renovated two-storey villa in the Mount Akagi woods, Gunma](https://realhunt.co/deal/jp-akagi-villa-28k-082879) · Kasukawa, Maebashi, Gunma · score 91 · 70 m² · 2 bed
 - [€15,930 · Ready-to-live forest villa with two balconies near Lake Misasa, Nagano](https://realhunt.co/deal/jp-saku-forest-villa-16k-837899) · Misasa, Saku, Nagano · score 91 · 106 m² · 3 bed
@@ -1956,8 +1956,8 @@ Tax on rental income: Rent paid to a non-resident is subject to 20.42% withholdi
 - [€11,380 · Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) · Shokawa, Takayama, Gifu · score 91 · 53 m² · 1 bed
 - [€7,400 · Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · score 91 · 94 m² · 2 bed
 - [€10,240 · Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · score 91 · 66 m² · 2 bed
-- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€19,910 · Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · score 91 · 70 m² · 2 bed
+- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 
 [All 30 homes in Japan](https://realhunt.co/homes/japan)
@@ -8425,8 +8425,8 @@ Buying a home gives no visa or residency in Japan.
 - [€11,380 · Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) · Shokawa, Takayama, Gifu · score 91 · 53 m² · 1 bed
 - [€7,400 · Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · score 91 · 94 m² · 2 bed
 - [€10,240 · Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · score 91 · 66 m² · 2 bed
-- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€19,910 · Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · score 91 · 70 m² · 2 bed
+- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 
 [All 30 homes in Japan](https://realhunt.co/homes/japan)
@@ -10214,8 +10214,8 @@ Buying a home gives no visa or residency in Japan.
 - [€11,380 · Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) · Shokawa, Takayama, Gifu · score 91 · 53 m² · 1 bed
 - [€7,400 · Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · score 91 · 94 m² · 2 bed
 - [€10,240 · Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · score 91 · 66 m² · 2 bed
-- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€19,910 · Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · score 91 · 70 m² · 2 bed
+- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 
 [All 30 homes in Japan](https://realhunt.co/homes/japan)
@@ -12594,8 +12594,8 @@ By region: [Tuscany (12)](https://realhunt.co/homes/italy/tuscany) · [Calabria 
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
 - [€158,000 · Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishes](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k) · Roccastrada, Grosseto, Tuscany · score 85 · 220 m² · 2 bed
 - [€150,000 · Medieval-village house with a terrace above a sea of clouds in Tuscany](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k) · Svizzera Pesciatina, near Pescia, Tuscany · score 85 · 148 m² · 3 bed
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
@@ -12849,8 +12849,8 @@ Source: https://realhunt.co/homes/italy/under-100000 (updated 2026-11-02)
 - [€41,000 · Apartment with sea view in Falconara Albanese, Cosenza](https://realhunt.co/deal/falconara-albanese-41000) · Falconara Albanese, Cosenza, Italy · score 87 · 86 m²
 - [€89,000 · 3-bedroom stone house with Lake Como views](https://realhunt.co/deal/lake-como-plesio-89000) · Plesio, Menaggio, Lake Como, Italy · score 86 · 160 m² · 3 bed
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
@@ -12909,8 +12909,8 @@ Source: https://realhunt.co/homes/italy/under-150000 (updated 2026-11-09)
 - [€89,000 · 3-bedroom stone house with Lake Como views](https://realhunt.co/deal/lake-como-plesio-89000) · Plesio, Menaggio, Lake Como, Italy · score 86 · 160 m² · 3 bed
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
 - [€150,000 · Medieval-village house with a terrace above a sea of clouds in Tuscany](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k) · Svizzera Pesciatina, near Pescia, Tuscany · score 85 · 148 m² · 3 bed
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
@@ -12976,8 +12976,8 @@ Source: https://realhunt.co/homes/italy/under-40000 (updated 2026-11-02)
 - [€32,000 · Lake-view house six minutes from the lake](https://realhunt.co/deal/DdUZvbGkTvh) · Umbria, Italy · score 88
 - [€28,000 · Whitewashed house 25 minutes from the beach](https://realhunt.co/deal/Dc1cyxRDM9Y) · Puglia, Italy · score 88
 - [€35,000 · Sea-view house five minutes from the beach](https://realhunt.co/deal/Dc32k2tDKLf) · Calabria, Italy · score 87
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
 - [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
@@ -13009,8 +13009,8 @@ Source: https://realhunt.co/homes/italy/under-60000 (updated 2026-11-02)
 - [€35,000 · Sea-view house five minutes from the beach](https://realhunt.co/deal/Dc32k2tDKLf) · Calabria, Italy · score 87
 - [€41,000 · Apartment with sea view in Falconara Albanese, Cosenza](https://realhunt.co/deal/falconara-albanese-41000) · Falconara Albanese, Cosenza, Italy · score 87 · 86 m²
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
@@ -13055,8 +13055,8 @@ Source: https://realhunt.co/homes/italy/under-80000 (updated 2026-11-02)
 - [€35,000 · Sea-view house five minutes from the beach](https://realhunt.co/deal/Dc32k2tDKLf) · Calabria, Italy · score 87
 - [€41,000 · Apartment with sea view in Falconara Albanese, Cosenza](https://realhunt.co/deal/falconara-albanese-41000) · Falconara Albanese, Cosenza, Italy · score 87 · 86 m²
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
@@ -13107,8 +13107,8 @@ Median price €59,000.
 - [€45,000 · 2-bed house 10 minutes from the lake](https://realhunt.co/deal/Dc82VcSjAIe) · Lombardy, Italy · score 86
 - [€158,000 · Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishes](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k) · Roccastrada, Grosseto, Tuscany · score 85 · 220 m² · 2 bed
 - [€150,000 · Medieval-village house with a terrace above a sea of clouds in Tuscany](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k) · Svizzera Pesciatina, near Pescia, Tuscany · score 85 · 148 m² · 3 bed
-- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
+- [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
 - [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€85,000 · 2-bedroom flat with a Lake Como view terrace](https://realhunt.co/deal/lake-como-peglio-85000) · Peglio, Lake Como, Italy · score 83 · 69 m² · 2 bed
@@ -13160,8 +13160,8 @@ By region: [Wakayama (6)](https://realhunt.co/homes/japan/wakayama) · [Gifu (3)
 - [€11,380 · Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) · Shokawa, Takayama, Gifu · score 91 · 53 m² · 1 bed
 - [€7,400 · Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · score 91 · 94 m² · 2 bed
 - [€10,240 · Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · score 91 · 66 m² · 2 bed
-- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€19,910 · Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · score 91 · 70 m² · 2 bed
+- [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 - [€27,870 · Renovated two-storey villa in the Mount Akagi woods, Gunma](https://realhunt.co/deal/jp-akagi-villa-28k-082879) · Kasukawa, Maebashi, Gunma · score 91 · 70 m² · 2 bed
 - [€15,930 · Ready-to-live forest villa with two balconies near Lake Misasa, Nagano](https://realhunt.co/deal/jp-saku-forest-villa-16k-837899) · Misasa, Saku, Nagano · score 91 · 106 m² · 3 bed
@@ -13385,8 +13385,8 @@ Source: https://realhunt.co/best
 - Updated 3-bed townhouse in McKees Rocks, Pennsylvania | United States | €65,428 | 106 m² | 93 | https://realhunt.co/deal/mckees-rocks-65428
 - 2-bed apartment in San Pedro Tlaquepaque, Jalisco | Mexico | €50,575 | 49 m² | 93 | https://realhunt.co/deal/san-pedro-tlaquepaque-50575
 - 211 m² country house with fields as far as the eye can see | Denmark | €93,200 | 211 m² | 92 | https://realhunt.co/deal/dk-froslev-93k-c03bb2
-- 157 m² family villa with two bathrooms and energy label B | Denmark | €79,800 | 157 m² | 92 | https://realhunt.co/deal/dk-broby-79k-431a7e
 - Sea-view apartment with pool on Bulgaria's Black Sea coast | Bulgaria | €58,900 | 53 m² | 92 | https://realhunt.co/deal/bg-byala-58k-fbw62u
+- 157 m² family villa with two bathrooms and energy label B | Denmark | €79,800 | 157 m² | 92 | https://realhunt.co/deal/dk-broby-79k-431a7e
 - Furnished townhouse with a private pool, 100 m from the sea in Protaras | Cyprus | €350,000 | 94 m² | 92 | https://realhunt.co/deal/cy-protaras-350k-257111
 - 151 m² single-storey villa on a 2,500 m² plot, 12 min from Billund | Denmark | €93,200 | 151 m² | 92 | https://realhunt.co/deal/dk-grindsted-93k-0855d5
 - Renovated, freshly painted house near the train and motorway | Denmark | €83,800 | 120 m² | 92 | https://realhunt.co/deal/dk-norre-alslev-84k-6c843d
@@ -13404,20 +13404,20 @@ Source: https://realhunt.co/best
 - Two-apartment house with river swimming spots and geothermal heat | Sweden | €59,000 | 156 m² | 92 | https://realhunt.co/deal/Dc-RMNwIPpv
 - 1914 home with lake views, guest house and double garage on 6,525 m² | Sweden | €55,000 | 120 m² | 92 | https://realhunt.co/deal/DcaE8pfoH77
 - Furnished lake-view house in the old centre of San Siro, Lake Como | Italy | €115,000 | 85 m² | 91 | https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633
-- Penthouse in Puerto Naos with a sun terrace bigger than the flat | Spain | €178,000 | 29 m² | 91 | https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889
 - Renovated stone house with a lake-view balcony above Lake Como | Italy | €95,000 | 60 m² | 91 | https://realhunt.co/deal/it-san-siro-95k-057133
 - 186 m² energy-A villa with open views on the island of Mors | Denmark | €99,900 | 186 m² | 91 | https://realhunt.co/deal/dk-flade-99k-566f97
+- Furnished log cabin on stilts with a deck in the Hida forest | Japan | €11,380 | 53 m² | 91 | https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929
+- Mountain chalet with a wood stove and a loft in the Hida forest | Japan | €7,400 | 94 m² | 91 | https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056
+- Penthouse in Puerto Naos with a sun terrace bigger than the flat | Spain | €178,000 | 29 m² | 91 | https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889
 - Holiday flat with a big sea-view terrace and garden in Calabria | Italy | €29,000 | 55 m² | 91 | https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544
 - Furnished seaside flat a few steps from the beach at Acqualadrone, Messina | Italy | €30,000 | 40 m² | 91 | https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356
 - Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù | Italy | €30,000 | 50 m² | 91 | https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163
-- Furnished log cabin on stilts with a deck in the Hida forest | Japan | €11,380 | 53 m² | 91 | https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929
-- Mountain chalet with a wood stove and a loft in the Hida forest | Japan | €7,400 | 94 m² | 91 | https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056
 - Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu | Japan | €10,240 | 66 m² | 91 | https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694
 - Renovated Lake Como flat with a lake-view balcony, 100 m from the shore | Italy | €195,000 | 80 m² | 91 | https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k
 - Furnished beachfront studio 50 m from a sandy beach in Calabria | Italy | €28,000 | 40 m² | 91 | https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771
+- Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama | Japan | €19,910 | 70 m² | 91 | https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430
 - Four-level village house with sea and mountain views in Sangineto, Calabria | Italy | €22,000 | 108 m² | 91 | https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976
 - Wooden villa in Kita-Karuizawa that you can rent out as a holiday home | Japan | €25,600 | 60 m² | 91 | https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770
-- Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama | Japan | €19,910 | 70 m² | 91 | https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430
 - Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room | Japan | €22,750 | 75 m² | 91 | https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004
 - Renovated two-storey villa in the Mount Akagi woods, Gunma | Japan | €27,870 | 70 m² | 91 | https://realhunt.co/deal/jp-akagi-villa-28k-082879
 - Ready-to-live forest villa with two balconies near Lake Misasa, Nagano | Japan | €15,930 | 106 m² | 91 | https://realhunt.co/deal/jp-saku-forest-villa-16k-837899
@@ -13439,8 +13439,8 @@ Source: https://realhunt.co/best
 - Red-brick villa a short walk from Odden harbour and the Kattegat | Denmark | €87,100 | 106 m² | 90 | https://realhunt.co/deal/dk-sjaellands-odde-87k-f42724
 - Mountain chalet with pool, two en-suite bedrooms and big views | Spain | €125,000 | 198 m² | 90 | https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921
 - Bright two-storey villa from 1920 a few minutes from Viborg | Denmark | €93,200 | 138 m² | 90 | https://realhunt.co/deal/dk-viborg-93k-3c1223
-- Swedish villa with a glazed porch and big garden in Gnarp | Sweden | €82,000 | 117 m² | 90 | https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k
 - The historic Savage House: a white Victorian with a gingerbread porch | United States | €151,000 | 199 m² | 90 | https://realhunt.co/deal/us-north-carolina-victorian-170k
+- Swedish villa with a glazed porch and big garden in Gnarp | Sweden | €82,000 | 117 m² | 90 | https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k
 - Through-flat with three bedrooms and a sunny balcony in Malmö | Sweden | €67,200 | 84 m² | 90 | https://realhunt.co/deal/se-malmo-rosengard-67k-1678590
 - Two-level stone house with a sea view in Marathokampos, Samos | Greece | €68,000 | 80 m² | 90 | https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330
 - Bright top-floor flat with a sea-view balcony in Corme Porto, Costa da Morte | Spain | €68,500 | 80 m² | 90 | https://realhunt.co/deal/es-ponteceso-corme-68k-189908571
@@ -13521,14 +13521,14 @@ Source: https://realhunt.co/best
 - Updated 2-bed house in Bulyea, Saskatchewan | Canada | €55,842 | 62 m² | 88 | https://realhunt.co/deal/bulyea-55842
 - Move-in ready 3-bed house in McKeesport, Pennsylvania | United States | €82,875 | 95 m² | 88 | https://realhunt.co/deal/mckeesport-82875
 - Updated 2-bed house in Avonlea, Saskatchewan | Canada | €68,327 | 77 m² | 88 | https://realhunt.co/deal/avonlea-68327
-- 137 m² village house with a roof terrace near Carcassonne | France | €72,000 | 137 m² | 87 | https://realhunt.co/deal/fr-azille-72k-4qkrv1
 - Corner three-bed condo with three balconies in Downtown Hollywood | United States | €259,800 | 141 m² | 87 | https://realhunt.co/deal/us-hollywood-140-501-290k
+- 137 m² village house with a roof terrace near Carcassonne | France | €72,000 | 137 m² | 87 | https://realhunt.co/deal/fr-azille-72k-4qkrv1
 - Top-floor two-bed condo in a gated resort-style community in Doral | United States | €223,100 | 111 m² | 87 | https://realhunt.co/deal/us-doral-8215-502-249k
 - Energy-label A townhouse with solar panels and a battery | Denmark | €93,200 | 120 m² | 87 | https://realhunt.co/deal/dk-stenum-93k-79ad4a
 - Renovated house near the Limfjord at Doverodde | Denmark | €93,600 | 115 m² | 87 | https://realhunt.co/deal/dk-doverodde-93k-9ed12a
 - Townhouse with garden 15 minutes from Aalborg | Denmark | €93,200 | 88 m² | 87 | https://realhunt.co/deal/dk-vaarst-93k-925500
-- Furnished beachfront flat on Playa Las Ballenas, Las Terrenas | Dominican Republic | €201,200 | size n/a | 87 | https://realhunt.co/deal/dr-las-terrenas-201k-439030
 - Dual-unit investment property with rental income in Belmont Heights, Tampa | United States | €237,400 | 158 m² | 87 | https://realhunt.co/deal/us-tampa-4811-265k
+- Furnished beachfront flat on Playa Las Ballenas, Las Terrenas | Dominican Republic | €201,200 | size n/a | 87 | https://realhunt.co/deal/dr-las-terrenas-201k-439030
 - Village villa at the end of a quiet cul-de-sac, new windows 2017 | Denmark | €99,900 | 125 m² | 87 | https://realhunt.co/deal/dk-lundby-100k-ad7c52
 - Well-kept villa with energy label C and an updated kitchen | Denmark | €87,000 | 88 m² | 87 | https://realhunt.co/deal/dk-ruds-vedby-87k-30051e
 - Move-in-ready villa with views of fields and Lyderslev Church | Denmark | €93,200 | 87 m² | 87 | https://realhunt.co/deal/dk-lyderslev-93k-15b047
@@ -13569,8 +13569,8 @@ Source: https://realhunt.co/best
 - Townhouse with a screened patio three blocks from Young Circle, Hollywood | United States | €241,900 | 121 m² | 86 | https://realhunt.co/deal/us-hollywood-2200-6-270k
 - Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort Lauderdale | United States | €134,400 | 81 m² | 86 | https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k
 - Modern rustic Ozarks cabin minutes from the river | United States | €84,500 | 104 m² | 86 | https://realhunt.co/deal/us-dora-84k-329130
-- Red-brick country house with four bedrooms and a closed garden | Denmark | €99,900 | 132 m² | 86 | https://realhunt.co/deal/dk-kippinge-100k-b3d56b
 - Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca Raton | United States | €389,800 | 158 m² | 86 | https://realhunt.co/deal/us-boca-raton-18102-435k
+- Red-brick country house with four bedrooms and a closed garden | Denmark | €99,900 | 132 m² | 86 | https://realhunt.co/deal/dk-kippinge-100k-b3d56b
 - Country house with pool, fireplace and valley views, 30 minutes from Valencia | Spain | €169,000 | 138 m² | 86 | https://realhunt.co/deal/es-casinos-169k-742027
 - New 2-bed condo with rooftop and terrace in Mazatlán, ready now | Mexico | €86,100 | 68 m² | 86 | https://realhunt.co/deal/mx-mazatlan-86k-809756
 - Sea-view flat between two seas in La Manga, with pool and parking | Spain | €179,900 | 104 m² | 86 | https://realhunt.co/deal/es-la-manga-veneziola-sea-view-pool-180k
@@ -13612,11 +13612,11 @@ Source: https://realhunt.co/best
 - Red-brick house near the harbour in Frederikshavn | Denmark | €93,200 | 75 m² | 85 | https://realhunt.co/deal/dk-frederikshavn-93k-b8e556
 - Renovated half-timbered villa in a Lolland village | Denmark | €83,800 | 91 m² | 85 | https://realhunt.co/deal/dk-rodby-83k-d8bfeb
 - White country house with field views at the end of a lane | Denmark | €99,900 | 85 m² | 85 | https://realhunt.co/deal/dk-kaas-99k-80f932
-- Fully renovated village house in Árchez, Málaga's Moorish village | Spain | €75,000 | 56 m² | 85 | https://realhunt.co/deal/es-archez-75k-ni4va0
 - Updated corner house with impact windows in Greenbriar at Boca Chase (55+ community) | United States | €412,200 | 147 m² | 85 | https://realhunt.co/deal/us-boca-raton-10308-460k
+- Fully renovated village house in Árchez, Málaga's Moorish village | Spain | €75,000 | 56 m² | 85 | https://realhunt.co/deal/es-archez-75k-ni4va0
 - Bright corner split-level condo with 2.5 baths at Paragon, Plantation | United States | €250,900 | 122 m² | 85 | https://realhunt.co/deal/us-plantation-791-214-280k
-- 127 m² period house with an extra outbuilding, 73 min from Copenhagen | Denmark | €99,900 | 127 m² | 85 | https://realhunt.co/deal/dk-skorpinge-100k-07992d
 - Three-bed lake-view townhouse with a private patio in Miramar | United States | €255,400 | 97 m² | 85 | https://realhunt.co/deal/us-miramar-3625-23x-285k
+- 127 m² period house with an extra outbuilding, 73 min from Copenhagen | Denmark | €99,900 | 127 m² | 85 | https://realhunt.co/deal/dk-skorpinge-100k-07992d
 - Fully renovated 2-bed flat in a palm-lined pool complex near Corralejo | Spain | €185,000 | 72 m² | 85 | https://realhunt.co/deal/es-la-caleta-185k-063013
 - Renovated flat 100 m from the sea with a garden terrace and pool | Spain | €240,000 | 81 m² | 85 | https://realhunt.co/deal/es-costa-del-silencio-240k-479658
 - Beachfront flat on the Mar Menor with a tourist licence | Spain | €116,500 | 70 m² | 85 | https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k
@@ -13637,8 +13637,8 @@ Source: https://realhunt.co/best
 - Two-bed village house with terrace in Portugal's Dão wine country | Portugal | €76,500 | 134 m² | 85 | https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q
 - Skagen-yellow 1877 house with energy label A | Denmark | €99,900 | 124 m² | 85 | https://realhunt.co/deal/dk-fjerritslev-99k-69e4a9
 - Modernised villa at the end of a quiet lane, new windows 2026 | Denmark | €99,900 | 115 m² | 85 | https://realhunt.co/deal/dk-dybvad-99k-f51461
-- 5-bed house with a terrace and courtyard | Italy | €34,000 | size n/a | 85 | https://realhunt.co/deal/Dc8TyIDkexU
 - Stone house with a swimming pool in a Tuscan village | Italy | €24,000 | size n/a | 85 | https://realhunt.co/deal/Dc6Y4UKDLyc
+- 5-bed house with a terrace and courtyard | Italy | €34,000 | size n/a | 85 | https://realhunt.co/deal/Dc8TyIDkexU
 - Holiday cottage with winter garden by a bathing lake in Salgesch | Switzerland | €52,800 | 40 m² | 85 | https://realhunt.co/deal/ch-salgesch-49k-76547
 - 4-bedroom house in Flix | Spain | €80,000 | 152 m² | 85 | https://realhunt.co/deal/es-flix-80k-33800
 - 2-bedroom house with terrace in Árchez | Spain | €65,000 | 50 m² | 85 | https://realhunt.co/deal/es-archez-65k-74704
@@ -13715,20 +13715,20 @@ Source: https://realhunt.co/best
 - Sea-view home with a panoramic terrace | Italy | €49,000 | size n/a | 84 | https://realhunt.co/deal/Dclv5CJDdhi
 - 2-bed apartment in Mazatlán, Sinaloa | Mexico | €83,448 | 60 m² | 84 | https://realhunt.co/deal/mazatlan-83448
 - 2-bedroom flat with a Lake Como view terrace | Italy | €85,000 | 69 m² | 83 | https://realhunt.co/deal/lake-como-peglio-85000
-- Renovated family home with a view of Mount Fuji | Japan | €66,700 | 88 m² | 83 | https://realhunt.co/deal/jp-fuji-66k-852751
 - Bright four-bedroom apartment with community pool in Palmete, Sevilla | Spain | €197,000 | 105 m² | 83 | https://realhunt.co/deal/live-pisos-m1zujj
+- Renovated family home with a view of Mount Fuji | Japan | €66,700 | 88 m² | 83 | https://realhunt.co/deal/jp-fuji-66k-852751
 - Fully modernised 1920 house with a new roof near Randers | Denmark | €93,600 | 88 m² | 83 | https://realhunt.co/deal/dk-jennum-93k-8c1463
 - Year-round wooden chalet with garden and pool access near Lake Zurich | Switzerland | €80,700 | 50 m² | 83 | https://realhunt.co/deal/ch-gommiswald-75k-93656
-- 3-bed duplex with a 227 m² private garden and pool, near Corralejo | Spain | €245,000 | 76 m² | 83 | https://realhunt.co/deal/es-majanicho-245k-645378
 - Lakefront three-bedroom house with a screened patio in Country Park, Boca Raton | United States | €447,600 | 150 m² | 83 | https://realhunt.co/deal/us-boca-raton-8353-500k
+- 3-bed duplex with a 227 m² private garden and pool, near Corralejo | Spain | €245,000 | 76 m² | 83 | https://realhunt.co/deal/es-majanicho-245k-645378
 - Furnished flat in a garden complex with a big pool, tennis and sea views | Spain | €215,000 | 72 m² | 83 | https://realhunt.co/deal/es-puerto-de-la-cruz-215k-003905
 - Fully renovated penthouse with a sunny terrace over the pools | Spain | €239,000 | 87 m² | 83 | https://realhunt.co/deal/es-costa-del-silencio-239k-481637
 - Renovated, furnished flat in a garden resort with pool near Tavira | Portugal | €183,000 | 68 m² | 83 | https://realhunt.co/deal/pt-tavira-183k-300012
-- 1920 house on the main square of Corpa with four bedrooms and a terrace | Spain | €173,000 | 145 m² | 83 | https://realhunt.co/deal/es-corpa-173k-599473
 - High-floor two-bedroom with city views at Commodore Plaza, Aventura | United States | €232,100 | 100 m² | 83 | https://realhunt.co/deal/us-aventura-2750-2404-259k
-- Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste | Spain | €155,000 | 116 m² | 83 | https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484
+- 1920 house on the main square of Corpa with four bedrooms and a terrace | Spain | €173,000 | 145 m² | 83 | https://realhunt.co/deal/es-corpa-173k-599473
 - Renovated high-floor two-bedroom with skyline and sunset views in Aventura | United States | €313,600 | 149 m² | 83 | https://realhunt.co/deal/us-aventura-18011-1904-350k
 - Sunset-view two-bedroom at waterfront Commodore Plaza, Aventura | United States | €264,300 | 118 m² | 83 | https://realhunt.co/deal/us-aventura-2750-2208-295k
+- Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste | Spain | €155,000 | 116 m² | 83 | https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484
 - Restored 1925 village house with beams, fireplace and a private patio | Spain | €169,000 | 118 m² | 83 | https://realhunt.co/deal/es-villa-del-prado-169k-315730
 - Character house with panoramic views in Treignac | France | €66,600 | 88 m² | 83 | https://realhunt.co/deal/fr-treignac-66k-6l5r27
 - Brand-new 2024 log cabin surrounded by farmland in Kentucky | United States | €155,500 | 114 m² | 83 | https://realhunt.co/deal/us-kentucky-new-log-cabin-175k
@@ -13762,8 +13762,8 @@ Source: https://realhunt.co/best
 - Renovated 1-bed house in Perryville, Arkansas | United States | €91,599 | 75 m² | 83 | https://realhunt.co/deal/perryville-91599
 - Duplex in Acquedolci, Messina | Italy | €49,000 | 81 m² | 83 | https://realhunt.co/deal/acquedolci-49000
 - Two-bed condo with a split plan over the gardens of Las Vistas, Doral | United States | €255,400 | 96 m² | 82 | https://realhunt.co/deal/us-doral-8290-236-285k
-- Move-in-ready village house by the famous canal locks | France | €65,000 | 52 m² | 82 | https://realhunt.co/deal/fr-rogny-les-sept-ecluses-65k-2p3e04
 - Corner-lot family house with a big fenced garden of fruit trees, Country Park, Boca Raton | United States | €439,000 | 102 m² | 82 | https://realhunt.co/deal/us-boca-raton-8315-490k
+- Move-in-ready village house by the famous canal locks | France | €65,000 | 52 m² | 82 | https://realhunt.co/deal/fr-rogny-les-sept-ecluses-65k-2p3e04
 - Spacious five-bedroom apartment in the heart of Vejer de la Frontera | Spain | €290,000 | 191 m² | 82 | https://realhunt.co/deal/live-pisos-a4dw9a
 - 2-bed, 2-bath flat with sea and Montgó views in La Sella golf | Spain | €255,000 | 75 m² | 82 | https://realhunt.co/deal/es-la-sella-255k-025158
 - Renovated beachfront bungalow with a corner terrace and fireplace | Spain | €249,000 | 80 m² | 82 | https://realhunt.co/deal/es-denia-249k-235125
@@ -13771,8 +13771,8 @@ Source: https://realhunt.co/best
 - Sea-view penthouse 2 minutes' walk from the beach in Dénia | Spain | €219,000 | 85 m² | 82 | https://realhunt.co/deal/es-denia-219k-283381
 - 2-bed flat between Jávea and Moraira with lagoon pools, 700 m from the cove | Spain | €190,000 | 85 m² | 82 | https://realhunt.co/deal/es-cumbre-del-sol-190k-503985
 - Renovated, furnished studio in Golf del Sur with pool and gardens | Spain | €158,000 | 55 m² | 82 | https://realhunt.co/deal/es-golf-del-sur-158k-368775
-- Two-level beach flat in Antigua Bay, freshly done up, with pool and sea views | Spain | €180,000 | 59 m² | 82 | https://realhunt.co/deal/es-caleta-de-fuste-180k-465927
 - Golf course and skyline views from a two-bedroom at Coronado, Aventura | United States | €237,400 | 106 m² | 82 | https://realhunt.co/deal/us-aventura-20335-2302-265k
+- Two-level beach flat in Antigua Bay, freshly done up, with pool and sea views | Spain | €180,000 | 59 m² | 82 | https://realhunt.co/deal/es-caleta-de-fuste-180k-465927
 - 134 m² flat a few steps from Chinchón's famous Plaza Mayor | Spain | €165,000 | 134 m² | 82 | https://realhunt.co/deal/es-chinchon-165k-004043
 - Waterfront two-bedroom plus den with two balconies at El Prado, Aventura | United States | €233,000 | 145 m² | 82 | https://realhunt.co/deal/us-aventura-18041-1201-260k
 - Forest house with a 45 m² terrace, hot tub and fireplace | Spain | €179,000 | 115 m² | 82 | https://realhunt.co/deal/es-mediona-179k-850907
