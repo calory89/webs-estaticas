@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-13",
+   "kind": "data",
+   "text": "100 more projects added in 15 countries of the Americas and Asia-Pacific: the USA (Miami, Austin), Thailand, Indonesia (Bali), Vietnam, Malaysia, Brazil (Balneário Camboriú), the Philippines, Cambodia, Japan, Australia, Canada, Uruguay, Paraguay, Costa Rica and the Dominican Republic (1,595 tracked in total): 97 have a delivery or completion date as published, every fact links to the page it came from, and none is reviewed or scored yet",
+   "tl": {
+    "es": "100 proyectos más en 15 países de América y Asia-Pacífico: Estados Unidos (Miami, Austin), Tailandia, Indonesia (Bali), Vietnam, Malasia, Brasil (Balneário Camboriú), Filipinas, Camboya, Japón, Australia, Canadá, Uruguay, Paraguay, Costa Rica y República Dominicana (1.595 en seguimiento en total): 97 tienen fecha de entrega o de finalización tal como se publica, cada dato enlaza a la página de la que sale y ninguno está revisado ni puntuado todavía",
+    "fr": "100 projets de plus dans 15 pays des Amériques et d'Asie-Pacifique : États-Unis (Miami, Austin), Thaïlande, Indonésie (Bali), Vietnam, Malaisie, Brésil (Balneário Camboriú), Philippines, Cambodge, Japon, Australie, Canada, Uruguay, Paraguay, Costa Rica et République dominicaine (1 595 suivis au total) : 97 ont une date de livraison ou d'achèvement telle que publiée, chaque fait renvoie à la page d'où il vient et aucun n'est encore examiné ni noté",
+    "de": "100 weitere Projekte in 15 Ländern in Amerika und im Asien-Pazifik-Raum: USA (Miami, Austin), Thailand, Indonesien (Bali), Vietnam, Malaysia, Brasilien (Balneário Camboriú), Philippinen, Kambodscha, Japan, Australien, Kanada, Uruguay, Paraguay, Costa Rica und Dominikanische Republik (insgesamt 1.595 verfolgt): 97 haben einen Übergabe- oder Fertigstellungstermin wie veröffentlicht, jede Angabe verlinkt die Seite, von der sie stammt, und noch keines ist geprüft oder bewertet",
+    "nl": "100 projecten erbij in 15 landen in Amerika en Azië-Pacific: de VS (Miami, Austin), Thailand, Indonesië (Bali), Vietnam, Maleisië, Brazilië (Balneário Camboriú), de Filipijnen, Cambodja, Japan, Australië, Canada, Uruguay, Paraguay, Costa Rica en de Dominicaanse Republiek (1.595 gevolgd in totaal): 97 hebben een oplever- of voltooiingsdatum zoals gepubliceerd, elk feit linkt naar de pagina waar het vandaan komt en nog geen enkel project is beoordeeld of gescoord",
+    "ru": "Добавлено ещё 100 проектов в 15 странах Америки и Азиатско-Тихоокеанского региона: США (Майами, Остин), Таиланд, Индонезия (Бали), Вьетнам, Малайзия, Бразилия (Балнеариу-Камбориу), Филиппины, Камбоджа, Япония, Австралия, Канада, Уругвай, Парагвай, Коста-Рика и Доминиканская Республика (всего отслеживается 1 595): у 97 указан срок сдачи или завершения в опубликованном виде, каждый факт ссылается на страницу, откуда он взят, ни один проект пока не проверен и не оценён",
+    "zh": "新增 100 个项目,覆盖美洲和亚太地区 15 个国家:美国(迈阿密、奥斯汀)、泰国、印度尼西亚(巴厘岛)、越南、马来西亚、巴西(巴尔内阿里奥坎博里乌)、菲律宾、柬埔寨、日本、澳大利亚、加拿大、乌拉圭、巴拉圭、哥斯达黎加和多米尼加共和国(共跟踪 1,595 个):其中 97 个有按原文公布的交付或竣工日期,每项事实都链接到其出处页面,目前均未审核、未评分",
+    "ar": "أضيف 100 مشروع آخر في 15 دولة في الأمريكتين وآسيا والمحيط الهادئ: الولايات المتحدة (ميامي وأوستن) وتايلاند وإندونيسيا (بالي) وفيتنام وماليزيا والبرازيل (بالنياريو كامبوريو) والفلبين وكمبوديا واليابان وأستراليا وكندا وأوروغواي وباراغواي وكوستاريكا وجمهورية الدومينيكان (المجموع 1,595 مشروعا قيد المتابعة): 97 منها لها تاريخ تسليم أو إنجاز كما هو منشور، وكل معلومة مرتبطة بالصفحة التي أخذت منها، ولم يراجع أي منها ولم يقيّم بعد"
+   }
+  },
+  {
+   "date": "2026-11-13",
    "kind": "shipped",
    "text": "Project pages now show what changed since the last check, the total cost of buying with each country's taxes and fees and their sources, the official permit register of the market, alternatives in the same place with a similar price and a higher transparency score, website domain age and the place's delay index; developer pages compare promised and actual handover dates; new pages in 8 languages list projects by handover year and place, by neighbourhood, and 500 side-by-side comparisons",
    "tl": {

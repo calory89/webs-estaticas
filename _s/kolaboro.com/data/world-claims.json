@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-12",
- "projects": 1495,
+ "projects": 1595,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-12",
@@ -1581,7 +1581,7 @@
    "updated": "2026-11-12",
    "market": "Austin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -1618,7 +1618,7 @@
     "max": null
    },
    "completion": {
-    "2029": 1,
+    "2029": 2,
     "unknown": 2
    },
    "runs": [
@@ -2373,7 +2373,7 @@
    "updated": "2026-11-12",
    "market": "Bali",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 79,
+   "projects": 93,
    "title": {
     "leasehold": 38,
     "known": 43
@@ -2399,8 +2399,8 @@
    "permit_numbers_published": 0,
    "plans_published": 32,
    "price_usd": {
-    "known": 55,
-    "median": 182000.0,
+    "known": 69,
+    "median": 176000.0,
     "min": 11000.0,
     "max": 1050000.0
    },
@@ -2411,8 +2411,8 @@
    },
    "completion": {
     "2024": 1,
-    "2026": 10,
-    "2027": 24,
+    "2026": 13,
+    "2027": 35,
     "2028": 8,
     "2029": 1,
     "unknown": 35
@@ -2508,7 +2508,7 @@
    "updated": "2026-11-12",
    "market": "Bangkok",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 12,
+   "projects": 13,
    "title": {
     "leasehold": 0,
     "known": 6
@@ -2534,8 +2534,8 @@
    "permit_numbers_published": 0,
    "plans_published": 3,
    "price_usd": {
-    "known": 8,
-    "median": 750000.0,
+    "known": 9,
+    "median": 618000.0,
     "min": 106000.0,
     "max": 2059000.0
    },
@@ -2546,7 +2546,7 @@
    },
    "completion": {
     "2026": 1,
-    "2027": 3,
+    "2027": 4,
     "2028": 3,
     "2029": 3,
     "2030": 2
@@ -3431,7 +3431,7 @@
    "updated": "2026-11-12",
    "market": "Brazil",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 17,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -3457,9 +3457,9 @@
    "permit_numbers_published": 2,
    "plans_published": 2,
    "price_usd": {
-    "known": 2,
-    "median": 4251000.0,
-    "min": 2742000.0,
+    "known": 8,
+    "median": 853000.0,
+    "min": 387000.0,
     "max": 5760000.0
    },
    "yield": {
@@ -3469,8 +3469,11 @@
    },
    "completion": {
     "2026": 1,
-    "2028": 1,
-    "2029": 1,
+    "2027": 2,
+    "2028": 2,
+    "2029": 3,
+    "2030": 1,
+    "2031": 2,
     "2033": 1,
     "unknown": 5
    },
@@ -4224,7 +4227,7 @@
    "updated": "2026-11-12",
    "market": "Cambodia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 14,
    "title": {
     "leasehold": 0,
     "known": 4
@@ -4250,9 +4253,9 @@
    "permit_numbers_published": 0,
    "plans_published": 4,
    "price_usd": {
-    "known": 5,
-    "median": 158000.0,
-    "min": 72000.0,
+    "known": 10,
+    "median": 86000.0,
+    "min": 40000.0,
     "max": 330000.0
    },
    "yield": {
@@ -4262,8 +4265,9 @@
    },
    "completion": {
     "2026": 2,
-    "2028": 1,
-    "2029": 2,
+    "2027": 2,
+    "2028": 2,
+    "2029": 4,
     "unknown": 4
    },
    "runs": [
@@ -5802,7 +5806,7 @@
    "updated": "2026-11-12",
    "market": "Costa Rica",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -5828,8 +5832,8 @@
    "permit_numbers_published": 0,
    "plans_published": 3,
    "price_usd": {
-    "known": 8,
-    "median": 346000.0,
+    "known": 9,
+    "median": 313000.0,
     "min": 179000.0,
     "max": 1170000.0
    },
@@ -5839,6 +5843,7 @@
     "max": null
    },
    "completion": {
+    "2025": 1,
     "2026": 2,
     "2027": 4,
     "unknown": 4
@@ -6463,7 +6468,7 @@
    "updated": "2026-11-12",
    "market": "Da Nang",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -6489,10 +6494,10 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 192000.0,
+    "min": 192000.0,
+    "max": 192000.0
    },
    "yield": {
     "known": 1,
@@ -6500,7 +6505,8 @@
     "max": 8
    },
    "completion": {
-    "2026": 1
+    "2026": 1,
+    "2027": 1
    },
    "runs": [
     {
@@ -9097,7 +9103,7 @@
    "updated": "2026-11-12",
    "market": "Gold Coast",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 11,
+   "projects": 14,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -9134,9 +9140,10 @@
     "max": null
    },
    "completion": {
-    "2027": 3,
-    "2028": 5,
-    "2029": 3
+    "2027": 4,
+    "2028": 6,
+    "2029": 3,
+    "unknown": 1
    },
    "runs": [
     {
@@ -9756,7 +9763,7 @@
    "updated": "2026-11-12",
    "market": "Ho Chi Minh City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 6,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -9782,10 +9789,10 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 5,
+    "median": 173000.0,
+    "min": 115000.0,
+    "max": 231000.0
    },
    "yield": {
     "known": 0,
@@ -9793,8 +9800,9 @@
     "max": null
    },
    "completion": {
-    "2026": 1,
-    "2027": 3,
+    "2026": 2,
+    "2027": 5,
+    "2028": 2,
     "unknown": 2
    },
    "runs": [
@@ -10018,7 +10026,7 @@
    "updated": "2026-11-12",
    "market": "Hua Hin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 5,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -10044,9 +10052,9 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 4,
-    "median": 337000.0,
-    "min": 262000.0,
+    "known": 5,
+    "median": 313000.0,
+    "min": 117000.0,
     "max": 435000.0
    },
    "yield": {
@@ -10056,7 +10064,7 @@
    },
    "completion": {
     "2026": 1,
-    "2027": 2,
+    "2027": 3,
     "2028": 1,
     "unknown": 1
    },
@@ -11601,7 +11609,7 @@
    "updated": "2026-11-12",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 14,
+   "projects": 16,
    "title": {
     "leasehold": 0,
     "known": 6
@@ -11627,8 +11635,8 @@
    "permit_numbers_published": 12,
    "plans_published": 3,
    "price_usd": {
-    "known": 12,
-    "median": 141000.0,
+    "known": 14,
+    "median": 145000.0,
     "min": 93000.0,
     "max": 423000.0
    },
@@ -11639,8 +11647,8 @@
    },
    "completion": {
     "2027": 3,
-    "2028": 4,
-    "2029": 3,
+    "2028": 5,
+    "2029": 4,
     "2030": 2,
     "unknown": 2
    },
@@ -11735,7 +11743,7 @@
    "updated": "2026-11-12",
    "market": "Kyoto",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -11761,9 +11769,9 @@
    "permit_numbers_published": 1,
    "plans_published": 0,
    "price_usd": {
-    "known": 1,
-    "median": 833000.0,
-    "min": 833000.0,
+    "known": 2,
+    "median": 600000.0,
+    "min": 367000.0,
     "max": 833000.0
    },
    "yield": {
@@ -11772,7 +11780,8 @@
     "max": null
    },
    "completion": {
-    "2027": 1
+    "2027": 1,
+    "2028": 1
    },
    "runs": [
     {
@@ -13313,7 +13322,7 @@
    "updated": "2026-11-12",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 30,
+   "projects": 36,
    "title": {
     "leasehold": 2,
     "known": 17
@@ -13335,14 +13344,14 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 16,
-   "permit_numbers_published": 16,
+   "permit_claims": 20,
+   "permit_numbers_published": 20,
    "plans_published": 5,
    "price_usd": {
-    "known": 22,
-    "median": 172000.0,
+    "known": 28,
+    "median": 183000.0,
     "min": 58000.0,
-    "max": 474000.0
+    "max": 863000.0
    },
    "yield": {
     "known": 0,
@@ -13350,9 +13359,9 @@
     "max": null
    },
    "completion": {
-    "2027": 6,
-    "2028": 6,
-    "2029": 5,
+    "2027": 8,
+    "2028": 8,
+    "2029": 7,
     "2030": 3,
     "2032": 1,
     "unknown": 9
@@ -14501,7 +14510,7 @@
    "updated": "2026-11-12",
    "market": "Miami",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 21,
+   "projects": 39,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -14538,10 +14547,10 @@
     "max": null
    },
    "completion": {
-    "2027": 7,
-    "2028": 5,
-    "2029": 1,
-    "2030": 1,
+    "2027": 10,
+    "2028": 13,
+    "2029": 4,
+    "2030": 5,
     "unknown": 7
    },
    "runs": [
@@ -16734,6 +16743,137 @@
     }
    ]
   },
+  "Osaka": {
+   "updated": "2026-11-12",
+   "market": "Osaka",
+   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+   "projects": 3,
+   "title": {
+    "leasehold": 0,
+    "known": 0
+   },
+   "lease": {
+    "known": 0,
+    "median": null,
+    "min": null,
+    "max": null,
+    "hist": {
+     "under 30": 0,
+     "30 to 34": 0,
+     "35 to 39": 0,
+     "40 or more": 0
+    }
+   },
+   "extension_promised": {
+    "yes": 0,
+    "known": 0
+   },
+   "guaranteed_language": 0,
+   "permit_claims": 0,
+   "permit_numbers_published": 0,
+   "plans_published": 0,
+   "price_usd": {
+    "known": 3,
+    "median": 400000.0,
+    "min": 397000.0,
+    "max": 1320000.0
+   },
+   "yield": {
+    "known": 0,
+    "median": null,
+    "max": null
+   },
+   "completion": {
+    "2027": 2,
+    "2028": 1
+   },
+   "runs": [
+    {
+     "date": "2026-11-03",
+     "mode": "ai",
+     "pages_ok": 782,
+     "pages_failed": 109,
+     "changes": 46
+    },
+    {
+     "date": "2026-11-04",
+     "mode": "ai",
+     "pages_ok": 676,
+     "pages_failed": 94,
+     "changes": 33
+    },
+    {
+     "date": "2026-11-04",
+     "mode": "ai",
+     "pages_ok": 678,
+     "pages_failed": 81,
+     "changes": 39
+    },
+    {
+     "date": "2026-11-04",
+     "mode": "ai",
+     "pages_ok": 656,
+     "pages_failed": 78,
+     "changes": 14
+    },
+    {
+     "date": "2026-11-05",
+     "mode": "ai",
+     "pages_ok": 543,
+     "pages_failed": 75,
+     "changes": 54
+    },
+    {
+     "date": "2026-11-05",
+     "mode": "ai",
+     "pages_ok": 645,
+     "pages_failed": 84,
+     "changes": 48
+    },
+    {
+     "date": "2026-11-05",
+     "mode": "ai",
+     "pages_ok": 72,
+     "pages_failed": 4,
+     "changes": 1
+    },
+    {
+     "date": "2026-11-05",
+     "mode": "ai",
+     "pages_ok": 803,
+     "pages_failed": 113,
+     "changes": 38
+    },
+    {
+     "date": "2026-11-05",
+     "mode": "ai",
+     "pages_ok": 8,
+     "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-07",
+     "mode": "ai",
+     "pages_ok": 33,
+     "pages_failed": 91,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-12",
+     "mode": "seed",
+     "pages_ok": 0,
+     "pages_failed": 0,
+     "changes": 0
+    }
+   ]
+  },
   "Palm Beach County": {
    "updated": "2026-11-12",
    "market": "Palm Beach County",
@@ -17133,7 +17273,7 @@
    "updated": "2026-11-12",
    "market": "Paraguay",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 5,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -17171,7 +17311,7 @@
    },
    "completion": {
     "2028": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
     {
@@ -17660,7 +17800,7 @@
    "updated": "2026-11-12",
    "market": "Philippines",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 25,
+   "projects": 30,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -17686,9 +17826,9 @@
    "permit_numbers_published": 3,
    "plans_published": 5,
    "price_usd": {
-    "known": 17,
-    "median": 116000.0,
-    "min": 54000.0,
+    "known": 22,
+    "median": 118000.0,
+    "min": 46000.0,
     "max": 698000.0
    },
    "yield": {
@@ -17697,9 +17837,10 @@
     "max": 4.5
    },
    "completion": {
-    "2027": 3,
-    "2028": 1,
+    "2027": 5,
+    "2028": 3,
     "2030": 2,
+    "2031": 1,
     "2032": 1,
     "unknown": 18
    },
@@ -17794,7 +17935,7 @@
    "updated": "2026-11-12",
    "market": "Phuket",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 25,
+   "projects": 39,
    "title": {
     "leasehold": 2,
     "known": 11
@@ -17820,9 +17961,9 @@
    "permit_numbers_published": 0,
    "plans_published": 9,
    "price_usd": {
-    "known": 18,
-    "median": 131000.0,
-    "min": 86000.0,
+    "known": 32,
+    "median": 130000.0,
+    "min": 85000.0,
     "max": 4706000.0
    },
    "yield": {
@@ -17831,9 +17972,9 @@
     "max": 8.5
    },
    "completion": {
-    "2026": 4,
-    "2027": 3,
-    "2028": 13,
+    "2026": 9,
+    "2027": 9,
+    "2028": 16,
     "2029": 1,
     "unknown": 4
    },
@@ -18716,7 +18857,7 @@
    "updated": "2026-11-12",
    "market": "Punta Cana",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 7,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -18755,7 +18896,7 @@
    "completion": {
     "2025": 1,
     "2028": 3,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
     {
@@ -22134,7 +22275,7 @@
    "updated": "2026-11-12",
    "market": "Tokyo",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 5,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -22160,9 +22301,9 @@
    "permit_numbers_published": 2,
    "plans_published": 1,
    "price_usd": {
-    "known": 1,
-    "median": 1180000.0,
-    "min": 1180000.0,
+    "known": 2,
+    "median": 595000.0,
+    "min": 10000.0,
     "max": 1180000.0
    },
    "yield": {
@@ -22171,7 +22312,7 @@
     "max": null
    },
    "completion": {
-    "2027": 3,
+    "2027": 4,
     "2028": 1,
     "2029": 1
    },
@@ -22660,7 +22801,7 @@
    "updated": "2026-11-12",
    "market": "Uruguay",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 2,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -22698,6 +22839,7 @@
    },
    "completion": {
     "2020": 1,
+    "2026": 1,
     "unknown": 1
    },
    "runs": [
@@ -22791,7 +22933,7 @@
    "updated": "2026-11-12",
    "market": "Vancouver",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 6,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -22828,6 +22970,7 @@
     "max": null
    },
    "completion": {
+    "2029": 2,
     "unknown": 6
    },
    "runs": [
@@ -23051,7 +23194,7 @@
    "updated": "2026-11-12",
    "market": "Vietnam",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 14,
+   "projects": 19,
    "title": {
     "leasehold": 2,
     "known": 4
@@ -23077,9 +23220,9 @@
    "permit_numbers_published": 2,
    "plans_published": 5,
    "price_usd": {
-    "known": 3,
-    "median": 181000.0,
-    "min": 169000.0,
+    "known": 8,
+    "median": 162000.0,
+    "min": 75000.0,
     "max": 3077000.0
    },
    "yield": {
@@ -23089,8 +23232,8 @@
    },
    "completion": {
     "2026": 2,
-    "2027": 4,
-    "2028": 1,
+    "2027": 7,
+    "2028": 3,
     "2029": 2,
     "unknown": 5
    },
