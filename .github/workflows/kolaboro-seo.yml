@@ -4,6 +4,8 @@ name: Kolaboro SEO
 #    page (tools/kolaboro-seo/lastmod.py, state kolaboro.com/data/lastmod.json), then submit to IndexNow (Bing, Yandex, Naver, Seznam,
 #    Yep) only the sitemap URLs whose lastmod moved, i.e. whose data really changed. Both files go out in one commit (one deploy).
 #    State: kolaboro.com/data/indexnow.json. Google does not take IndexNow; it reads the sitemaps.
+#    n26i (batch 26): the same daily job then runs tools/kolaboro-seo/daily.py: a different sample of sitemap URLs every day checked
+#    for structured data (same rules as the audit) and every internal link on them for 404s and redirects; kolaboro.com/data/seo-daily.json.
 #  - audit (weekly, Tuesday 09:47 UTC, and on demand): crawl every sitemap URL (GET and HEAD): status, canonical, hreflang reciprocity,
 #    JSON-LD validity, image sitemap, true lastmod of static pages. Result: kolaboro.com/data/seo-audit.json, on /engineering/seo/.
 # Batch 15 fix: the spend cut of 6 Nov left one weekly cron whose value matched neither job's condition, so no scheduled run happened.
@@ -71,7 +73,7 @@ jobs:
   indexnow:
     if: (github.event_name == 'schedule' && github.event.schedule == '41 9 * * *') || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'audit')
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Kolaboro budget gate (max 80 Actions minutes a day, about 0.50 USD)
         env:
@@ -115,9 +117,17 @@ jobs:
           set +e; python3 tools/kolaboro-seo/indexnow.py "$RUNNER_TEMP/inow"; c=$?; set -e
           echo "code=$c" >> "$GITHUB_OUTPUT"
           if [ "$c" != "0" ] && [ "$c" != "3" ]; then echo "::warning::IndexNow submission did not return 200/202 (exit $c)"; fi
-      - name: Publish state to kolaboro.com (one commit for both files)
+      - name: Daily sample check (structured data, internal 404s and redirects)
+        id: daily
+        run: |
+          # n26i (batch 26): a different sample every day; result on /engineering/seo/ (kolaboro.com/data/seo-daily.json)
+          set +e; timeout 900 python3 tools/kolaboro-seo/daily.py "$RUNNER_TEMP/inow"; c=$?; set -e
+          echo "code=$c" >> "$GITHUB_OUTPUT"
+          if [ "$c" = "3" ]; then echo "::warning::Daily sample check found broken links or structured-data problems (see kolaboro.com/data/seo-daily.json)"; elif [ "$c" != "0" ]; then echo "::warning::Daily sample check did not finish (exit $c)"; fi
+      - name: Publish state to kolaboro.com (one commit for all files)
         run: |
           F=""
+          [ -f "$RUNNER_TEMP/inow/seo-daily.json" ] && F="$F $RUNNER_TEMP/inow/seo-daily.json=_s/kolaboro.com/data/seo-daily.json"
           [ -f "$RUNNER_TEMP/inow/indexnow.json" ] && F="$F $RUNNER_TEMP/inow/indexnow.json=_s/kolaboro.com/data/indexnow.json"
           [ -f "$RUNNER_TEMP/inow/lastmod.json" ] && F="$F $RUNNER_TEMP/inow/lastmod.json=_s/kolaboro.com/data/lastmod.json"
           [ -n "$F" ] || { echo "nothing changed"; exit 0; }
