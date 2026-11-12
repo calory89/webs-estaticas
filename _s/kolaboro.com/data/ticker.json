@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/progress/",
+   "text": "New public pages: /progress/ with daily counters (projects, markets, countries, sources, sitemap URLs, deploys) and a chart of projects added per day since the start; the 300 improvements we are working on, with their status; press figures for each island and city we rank; our moderation policy; and a team and method page with its review date",
+   "tl": {
+    "es": "Nuevas páginas públicas: /progress/ con contadores diarios (proyectos, mercados, países, fuentes, URL en sitemaps, despliegues) y un gráfico de proyectos añadidos por día desde el inicio; las 300 mejoras en las que trabajamos, con su estado; cifras para la prensa de cada isla y ciudad del ranking; nuestra política de moderación; y una página de equipo y método con su fecha de revisión",
+    "fr": "Nouvelles pages publiques : /progress/ avec des compteurs quotidiens (projets, marchés, pays, sources, URL des sitemaps, déploiements) et un graphique des projets ajoutés par jour depuis le début ; les 300 améliorations en cours, avec leur statut ; des chiffres pour la presse sur chaque île et ville classée ; notre politique de modération ; et une page équipe et méthode avec sa date de revue",
+    "de": "Neue öffentliche Seiten: /progress/ mit täglichen Zählern (Projekte, Märkte, Länder, Quellen, Sitemap-URLs, Deploys) und einer Grafik der neu aufgenommenen Projekte pro Tag seit dem Start; die 300 Verbesserungen, an denen wir arbeiten, mit ihrem Stand; Pressezahlen für jede Insel und Stadt im Ranking; unsere Moderationsrichtlinie; und eine Seite zu Team und Methode mit Prüfdatum",
+    "nl": "Nieuwe openbare pagina's: /progress/ met dagelijkse tellers (projecten, markten, landen, bronnen, sitemap-URL's, deploys) en een grafiek van toegevoegde projecten per dag sinds de start; de 300 verbeteringen waar we aan werken, met hun status; perscijfers voor elk eiland en elke stad in de ranglijst; ons moderatiebeleid; en een pagina over team en methode met de datum van herziening",
+    "ru": "Новые публичные страницы: /progress/ с ежедневными счётчиками (проекты, рынки, страны, источники, адреса в картах сайта, выкладки) и графиком проектов, добавленных за день с самого начала; 300 улучшений, над которыми мы работаем, со статусом; цифры для прессы по каждому острову и городу рейтинга; наши правила модерации; страница о команде и методе с датой пересмотра",
+    "zh": "新的公开页面：/progress/ 提供每日计数（项目、市场、国家、来源、站点地图网址、部署）以及自开始以来每日新增项目的图表；我们正在推进的 300 项改进及其状态；排名中每个岛屿和城市的媒体数据；我们的审核政策；以及标明审阅日期的团队与方法页面",
+    "ar": "صفحات عامة جديدة: /progress/ بعدّادات يومية (المشاريع والأسواق والدول والمصادر وعناوين خرائط الموقع وعمليات النشر) ورسم للمشاريع المضافة يوميًا منذ البداية؛ والتحسينات الـ300 التي نعمل عليها مع حالتها؛ وأرقام للصحافة عن كل جزيرة ومدينة في التصنيف؛ وسياسة الإشراف لدينا؛ وصفحة الفريق والمنهج مع تاريخ مراجعتها"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "text": "Easier to use: every project page ends with a clear next step (compare with similar projects, save to My projects, alert me if the date or price changes, ask the developer, share by WhatsApp or link); /projects/ can be filtered by country, place, handover year, permit and transparency score and sorted; compare two or three named projects side by side; the phone menu starts with search; /status/ checks 20 key pages every 5 minutes and after every deploy",
    "tl": {
     "es": "Más fácil de usar: cada ficha termina con un siguiente paso claro (comparar con proyectos similares, guardar en Mis proyectos, avisarme si cambia la fecha o el precio, preguntar a la promotora, compartir por WhatsApp o enlace); /projects/ se puede filtrar por país, lugar, año de entrega, licencia y puntuación de transparencia, y ordenar; comparar dos o tres proyectos con nombre lado a lado; el menú del móvil empieza por la búsqueda; /status/ revisa 20 páginas clave cada 5 minutos y tras cada despliegue",

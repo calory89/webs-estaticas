@@ -61,11 +61,18 @@ export async function tickerHtml(env, lang) {
 const BAD_HREF = 'a[href*="script" i], a[href^="data:" i], a[href*="&#"], a[href*="&colon" i], a[href*="&tab" i], a[href*="&newline" i], area[href*="script" i]';
 const deEnt = v => v.replace(/&#x([0-9a-f]{1,6});?/gi, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch (e) { return ''; } }).replace(/&#(\d{1,7});?/g, (m, n) => { try { return String.fromCodePoint(+n); } catch (e) { return ''; } }).replace(/&colon;/gi, ':').replace(/&(?:tab|newline);/gi, '');
 function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000- ]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
+// n26y (batch 26): every page links /progress/ (daily counters, chart, the 300 improvements): the "Shipping daily" label of the bar,
+// one footer line after "Changelog", and a line under the /changelog/ heading (the changelog file itself is edited by the lead only)
+const PROG_L = {"en": "Progress", "es": "Avances", "fr": "Avancement", "de": "Fortschritt", "nl": "Voortgang", "ru": "Прогресс", "zh": "进展", "ar": "التقدّم"};
+const PROG_C = {"en": "Daily counters, the chart of projects added and the 300 improvements with their status:", "es": "Contadores diarios, el gráfico de proyectos añadidos y las 300 mejoras con su estado:", "fr": "Compteurs quotidiens, graphique des projets ajoutés et les 300 améliorations avec leur statut :", "de": "Tägliche Zähler, die Grafik der neu aufgenommenen Projekte und die 300 Verbesserungen mit ihrem Stand:", "nl": "Dagelijkse tellers, de grafiek van toegevoegde projecten en de 300 verbeteringen met hun status:", "ru": "Ежедневные счётчики, график добавленных проектов и 300 улучшений со статусом:", "zh": "每日计数、新增项目图表，以及 300 项改进及其状态：", "ar": "العدّادات اليومية، ورسم المشاريع المضافة، والتحسينات الـ300 مع حالتها:"};
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
     let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
+    const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;
+    rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } });
+    if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
     if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('.ship-v[lang="en"]', { element(e) { if (lm) e.setAttribute('lang', lm[1]); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
     return rw.transform(r);
   } catch (e) { return r; }
