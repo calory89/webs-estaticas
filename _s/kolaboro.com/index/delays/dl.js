@@ -63,7 +63,7 @@
     $('dlBarsN').textContent = M.length + ' markets';
     var Z0 = M.filter(function (m) { return !m.share_past_first; }); M = M.filter(function (m) { return m.share_past_first > 0; });
     $('dlBars').innerHTML = M.map(function (m) {
-      return '<button type="button" class="dl-bar" data-m="' + esc(m.market) + '" aria-label="' + esc(m.market) + ': ' + m.share_past_first + '% of ' + m.with_date + ' projects past the first promised handover"><span class="l">' + esc(m.market) + '</span><span class="t">' + (m.share_past_first > 0 ? '<i style="width:' + m.share_past_first + '%"></i>' : '') + '</span><span class="v"><b>' + m.share_past_first + '%</b> of ' + m.with_date + '</span></button>';
+      return '<button type="button" class="dl-bar" data-m="' + esc(m.market) + '" aria-label="' + esc(m.market) + ' ' + m.share_past_first + '% of ' + m.with_date + ' projects past the first promised handover"><span class="l">' + esc(m.market) + '</span><span class="t">' + (m.share_past_first > 0 ? '<i style="width:' + m.share_past_first + '%"></i>' : '') + '</span><span class="v"><b>' + m.share_past_first + '%</b> of ' + m.with_date + '</span></button>';
     }).join('') + (Z0.length ? '<p class="pi-sub">0% past the first date (' + Z0.length + ' markets): ' + Z0.map(function (m) { return esc(m.market) + ' (' + m.with_date + ')'; }).join(', ') + '.</p>' : '');
   }
   function strip(vals, med, p90) {

@@ -89,7 +89,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
 <input type="file" id="pv-file" accept=".json,application/json" aria-label="Choose a dataset JSON file to compare with the public log"><div id="pv-fo" style="margin-top:10px"></div>
 <p style="font-size:.88rem;color:#4A5661">These checks run on <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a>, our open-source checker (MIT). You can run the same code on your own machine.</p></div></section>
 <section class="sec alt" id="page"><div class="wrap" style="max-width:860px"><h2>Check that a page is the page we published</h2>
-<p>After each deploy a GitHub Actions job takes the git commit the live site is serving and computes the SHA-256 of every published file outside <code>/data/</code>. The worker serves that list, signed with the same Ed25519 key as the open API, at <a href="/api/x/n/manifest">/api/x/n/manifest</a>. Your browser fetches a page again without cache, plus every script and stylesheet of our own that it loads, hashes each one and compares it with the signed list. Every page that shows the footer link "Verify this page" runs the same check on itself.</p>
+<p>Once a week (Monday morning, UTC) a GitHub Actions job takes the git commit the live site is serving and computes the SHA-256 of every published file outside <code>/data/</code>. The worker serves that list, signed with the same Ed25519 key as the open API, at <a href="/api/x/n/manifest">/api/x/n/manifest</a>. Your browser fetches a page again without cache, plus every script and stylesheet of our own that it loads, hashes each one and compares it with the signed list. Every page that shows the footer link "Verify this page" runs the same check on itself. A page or script we changed after the last weekly list shows as a mismatch until the next list is made; the result prints the date of the list and says when the site is newer than it.</p>
 <form id="pg-f" style="display:flex;gap:8px;flex-wrap:wrap"><label for="pg-u" class="sr-only">Page address on kolaboro.com</label><input id="pg-u" value="/" spellcheck="false" autocomplete="off" style="flex:1;min-width:200px;min-height:46px;border:1px solid #D8D6CE;border-radius:12px;padding:0 12px;font:inherit"><button class="btn btn-hi" type="submit">Check this page</button></form>
 <div id="pg-o" style="margin-top:12px" aria-live="polite"></div>
 <details style="margin-top:14px"><summary><b>Exactly what is normalized before hashing the HTML</b></summary>
@@ -205,7 +205,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script><script src="/verify/n.js?v=3107a1e8ec" defer></script>
+<script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script><script src="/verify/n.js?v=be8058e633" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>
 (function(){
   function $(i){ return document.getElementById(i); }

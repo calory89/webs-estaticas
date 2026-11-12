@@ -982,4 +982,20 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   if (D.readyState === 'complete') setTimeout(scrollers, 300); else addEventListener('load', function () { setTimeout(scrollers, 300); });
   // empty header cells (corner of a comparison table) are presentational
   q('th:empty,[role="columnheader"]:empty').forEach(function (th) { if (!th.getAttribute('aria-label')) th.setAttribute('aria-hidden', 'true'); });
+  // n22e: a heading that skips a level (a card title h3 right under the page h1, on about ten pages) is announced one level
+  // below the heading before it; the look does not change. Runs after load and once more for lists drawn later.
+  function levels() {
+    var prev = 0, map = {};
+    q('main h1,main h2,main h3,main h4,main h5,main h6').forEach(function (h) {
+      var n = +h.tagName.charAt(1), eff = n;
+      if (prev && n > prev.n + 1) { map = {}; map[n] = prev.eff + 1; }
+      else if (prev && n <= prev.n && !(n in map)) map = {};
+      if (n in map) eff = map[n]; else if (prev && Object.keys(map).length && n > prev.n) { eff = prev.eff + 1; map[n] = eff; }
+      if (eff !== n) h.setAttribute('aria-level', eff); else if (h.hasAttribute('aria-level') && h.getAttribute('data-lv') === '1') h.removeAttribute('aria-level');
+      if (eff !== n) h.setAttribute('data-lv', '1');
+      prev = { n: n, eff: eff };
+    });
+  }
+  var lvRun = function () { setTimeout(levels, 400); setTimeout(levels, 3000); };
+  if (D.readyState === 'complete') lvRun(); else addEventListener('load', lvRun);
 })();

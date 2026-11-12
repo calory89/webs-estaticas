@@ -81,7 +81,7 @@
     }).then(function (a) {
       var M = a[0], live = a[1], V = a[2];
       if (!M.ok || !M.json || !M.json.files) {
-        el.innerHTML = '<p class="kpc-bad"><b>The signed manifest is not published yet</b> (' + esc(M.status) + '). The job that writes it runs after each deploy. Nothing was checked, so nothing is shown as verified.</p>';
+        el.innerHTML = '<p class="kpc-bad"><b>The signed manifest is not published yet</b> (' + esc(M.status) + '). The job that writes it runs once a week. Nothing was checked, so nothing is shown as verified.</p>';
         return null;
       }
       var man = M.json, files = man.files;
@@ -115,9 +115,9 @@
           rows.forEach(function (rw) { rw.state = rw.err ? 'err' : rw.want == null ? 'none' : rw.got === rw.want ? 'ok' : 'bad'; if (rw.state === 'ok') ok++; else if (rw.state === 'bad') bad++; else none++; });
           var ms = Math.round(performance.now() - t0), stale = live.commit && man.commit && live.commit !== man.commit;
           el.innerHTML =
-            '<div class="kpc-sum ' + (bad ? 'kpc-bad' : ok ? 'kpc-ok' : '') + '"><b>' + (bad ? bad + ' of ' + (ok + bad) + ' files do not match' : ok ? 'All ' + ok + ' checked files match' : 'Nothing could be matched') + '</b> the manifest' + (none ? ', ' + none + ' not covered' : '') + '. Checked in ' + ms + ' ms in this browser.</div>' +
+            '<div class="kpc-sum ' + (bad && !stale ? 'kpc-bad' : ok && !bad ? 'kpc-ok' : '') + '"><b>' + (bad ? bad + ' of ' + (ok + bad) + (stale ? ' files differ from' : ' files do not match') : ok ? 'All ' + ok + ' checked files match' : 'Nothing could be matched') + '</b> the manifest' + (bad && stale ? ' of ' + esc(String(man.generated_at).slice(0, 10)) + ', and the site has been updated since then' : '') + (none ? ', ' + none + ' not covered' : '') + '. Checked in ' + ms + ' ms in this browser.</div>' +
             '<p class="kpc-m">Manifest: ' + man.count + ' files at commit <code>' + esc(String(man.commit).slice(0, 12)) + '</code>, made ' + esc(String(man.generated_at).replace('T', ' ').replace('Z', ' UTC')) + '. Live site: commit <code>' + esc(String(live.commit || 'unknown').slice(0, 12)) + '</code>. <span class="kpc-sig"></span></p>' +
-            (stale ? '<p class="kpc-m">The live commit is newer than the manifest. That is normal: data publishes create commits too, and the manifest only changes when a published file outside /data/ changes. ' + (bad ? 'A file changed in a deploy after the manifest was made shows as a mismatch until the next manifest run (about every 30 minutes).' : '') + '</p>' : '') +
+            (stale ? '<p class="kpc-m">The live commit is newer than the manifest. That is normal: data publishes create commits too, and the manifest only changes when a published file outside /data/ changes. ' + (bad ? 'The manifest is rebuilt once a week (Monday morning, UTC). A file changed in a deploy after that shows as a mismatch until the next manifest, so a mismatch here does not by itself mean the page was altered on the way to you. Check again after the next manifest.' : '') + '</p>' : '') +
             '<div class="kpc-tw"><table class="kpc-t"><thead><tr><th>File</th><th>Result</th><th>SHA-256 you received</th></tr></thead><tbody>' + rows.map(function (rw) {
               var lab = rw.state === 'ok' ? '<span class="kpc-y">Match</span>' : rw.state === 'bad' ? '<span class="kpc-n">Mismatch</span>' : rw.state === 'err' ? '<span class="kpc-n">Not fetched</span>' : '<span class="kpc-u">Not in manifest</span>';
               return '<tr><td><code>' + esc(rw.path) + '</code><br><small>' + esc(rw.kind) + (rw.note ? ': ' + esc(rw.note) : '') + '</small></td><td>' + lab + (rw.state === 'bad' ? '<br><small>expected <code>' + esc(String(rw.want).slice(0, 16)) + '…</code></small>' : '') + '</td><td><code>' + esc(rw.got ? rw.got.slice(0, 16) + '…' : '') + '</code></td></tr>';
