@@ -85,6 +85,18 @@ data = {"langs": LANGS, "lname": LNAME, "tl": TIMES_LANG, "ui": UI, "ui2": UI2, 
         "guides": GUIDES_ALL, "credits": CREDITS, "rtxt": REGION_TXT, "rslug": REGION_SLUG, "cslug": CAT_SLUG, "ctxt": CAT_TXT, "season": SEASON,
         "gallery": GALLERY, "airports": AIRPORTS, "regions": json.load(open("regions.json")), "indexnow": "5f0c3b7e9a2d4c18b6e1a7f3d9c2e0b4",
         "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
+# ---- real lastmod per page: date changes only when that page's content changes ----
+import hashlib, os
+_lm = json.load(open("lastmod.json")) if os.path.exists("lastmod.json") else {}
+_today = datetime.date.today().isoformat()
+def _stamp(path, obj):
+    h = hashlib.sha1(json.dumps(obj, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
+    old = _lm.get(path)
+    if not old or old[0] != h: _lm[path] = [h, _today if old else "2026-11-11"]
+for p in PLACES: _stamp(f"/place/{p['s']}/", {k: p[k] for k in p if k not in ("ll",)} | {"g": GALLERY.get(p["s"])})
+for g in GUIDES_ALL: _stamp(f"/guide/{g['s']}/", g)
+json.dump(_lm, open("lastmod.json", "w"), indent=0, sort_keys=True)
+data["mod"] = {k: v[1] for k, v in _lm.items()}
 tpl = open("worker.tpl.js").read()
 out = tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 open("worker.js", "w").write(out)

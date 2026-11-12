@@ -108,7 +108,7 @@ section.dark{background:#0f1714;color:#ece6d8}section.dark .lead{color:#a9b3ac}.
 .regs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.rg2{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1;color:#fff;text-decoration:none}.rg2 img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.rg2:hover img{transform:scale(1.06)}.rg2::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}.rg2 span{position:absolute;left:16px;bottom:14px;z-index:1}.rg2 b{display:block;font-family:Fraunces,Georgia,serif;font-size:24px}
 .mapcta{background:linear-gradient(120deg,#0e6f66,#0b3b37);color:#fff}.mapcta-in{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}.mapcta h2{font-family:Fraunces,Georgia,serif;font-size:clamp(28px,3.6vw,44px);margin:0 0 8px}.mapcta-img img{width:100%;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .nums{background:var(--sand)}.nm{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}.nm b{display:block;font-family:Fraunces,Georgia,serif;font-size:clamp(44px,6vw,72px);color:var(--teal);line-height:1}.nm span{color:var(--mute)}
-.ph-hero{position:relative;height:78svh;min-height:480px;color:#fff;overflow:hidden;background:#0b3b37}.ph-hero.short{height:56svh;min-height:380px}.ph-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph-hero{position:relative;height:78svh;min-height:480px;max-height:760px;color:#fff;overflow:hidden;background:#0b3b37}@media(max-width:700px){.ph-hero{height:62svh;min-height:400px}}.ph-hero.short{height:56svh;min-height:380px}.ph-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph-in{position:absolute;left:0;right:0;bottom:44px}.ph-hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(40px,6.5vw,84px);line-height:1;letter-spacing:-.03em;margin:10px 0 8px;text-shadow:0 2px 30px rgba(0,0,0,.35)}.ph-sub{font-size:19px;max-width:60ch;opacity:.95;margin:0 0 16px}.ph-cr{position:absolute;right:12px;bottom:8px;font-size:11px;opacity:.75;margin:0}
 .crumbs.light,.crumbs.light a{color:rgba(255,255,255,.85)}
 .pl2{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;padding-top:34px;padding-bottom:30px}.pl2-side{position:relative}.pl2-side .qf{position:static;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:var(--shadow)}.pl2-side .qf:first-child{position:sticky;top:84px}
@@ -157,20 +157,27 @@ const flag = (x, w = 22) => `<img class="fl" src="/flags/${FLAG[x]}.svg" width="
 function langPicker(l, path, keepHash) {
   return `<details class="lp"><summary aria-label="${esc(D.ui[l].lang)}: ${esc(D.lname[l])}">${flag(l)}<b>${l.toUpperCase()}</b><i>▾</i></summary><div class="lp-m" role="menu">${L.map(x => `<a role="menuitem" hreflang="${x}" lang="${x}" href="/${x}${path}"${x === l ? ' class="on" aria-current="true"' : ""}${keepHash ? ` onclick="this.href=this.getAttribute('href')+location.hash"` : ""}>${flag(x, 26)}<span>${esc(D.lname[x])}</span></a>`).join("")}</div></details>`;
 }
+function cut60(t) { t = String(t); if (t.length <= 62) return t; let c = t.slice(0, 60); const i = c.lastIndexOf(" "); if (i > 30) c = c.slice(0, i); return c.replace(/[,;:·&\-\s]+$/, ""); }
+function fixDesc(d, l) {
+  d = String(d || "").replace(/\s+/g, " ").trim();
+  if (d.length < 110) { const add = D.ui[l].hero_d; d = d + (d && !/[.!?。]$/.test(d) ? ". " : " ") + add; }
+  if (d.length > 158) { let c = d.slice(0, 156); const i = c.lastIndexOf(" "); if (i > 100) c = c.slice(0, i); d = c.replace(/[,;:·\s]+$/, "") + "…"; }
+  return d;
+}
 function page(l, path, o) {
   const u = D.ui[l];
   const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}${path}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/en${path}">`;
   const nav = [["/secret-spots/", "★ " + u.secrets], ["/places/", u.places], ["/guides/", u.guides], ["/towns/", D.ui2[l].towns_t], ["/weather/", u.weather], ["/map/", "🗺️ " + u.map]]
     .map(([p, t]) => `<a href="/${l}${p}"${p === path ? ' class="on"' : ""}>${esc(t)}</a>`).join("") + `<a href="${TIMES}/${D.tl[l]}/">${esc(u.news)} ↗</a>`;
   const opts = L.map(x => `<option value="/${x}${path}"${x === l ? " selected" : ""}>${esc(D.lname[x])}</option>`).join("");
-  const title = o.title ? `${o.title} · Sumba Secrets` : `Sumba Secrets · ${u.tag}`;
+  const title = cut60(o.title ? (o.title.length <= 43 ? `${o.title} · Sumba Secrets` : o.title) : `Sumba Secrets: ${u.tag}`); o.desc = fixDesc(o.desc || u.hero_d, l);
   const ogimg = o.ogimgOwn || o.ogimg || (o.img ? img(o.img, 1280) : img("magnitude-6-1-earthquake-southwest-sumba", 1280));
   return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(o.desc || u.hero_d)}">${o.robots ? `<meta name="robots" content="${o.robots}">` : ""}<link rel="canonical" href="${BASE}/${l}${path}">${alts}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Sumba Secrets"><meta property="og:title" content="${esc(o.title || "Sumba Secrets")}"><meta property="og:description" content="${esc(o.desc || u.hero_d)}"><meta property="og:image" content="${ogimg}"><meta property="og:url" content="${BASE}/${l}${path}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e6f66"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icon.svg"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e6f66'/%3E%3Cpath d='M10 42c8-6 14-6 22 0s14 6 22 0' stroke='%23f7f2e8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23e0ad55'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://i.ytimg.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>${o.preload ? `<link rel="preload" as="image" href="${o.preload}" fetchpriority="high">` : ""}<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-${o.leaflet ? '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">' : ""}
+<link rel="preconnect" href="https://i.ytimg.com">${o.preload ? `<link rel="preload" as="image" href="${o.preload}" fetchpriority="high"${o.preloadMedia ? ` media="${o.preloadMedia}"` : ""}>` : ""}<link href="/fonts.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="/fonts.css" rel="stylesheet"></noscript><link rel="alternate" type="application/rss+xml" title="Sumba Secrets" href="/${l}/feed.xml">
+${o.leaflet ? '<link rel="stylesheet" href="/lib/leaflet.css">' : ""}
 <style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body${o.home && path === "/" ? ' class="home"' : ""}>
 <div class="net"><div class="w"><b>${esc(u.network)}:</b><a href="${TIMES}/${D.tl[l]}/">The Sumba Times<span class="d"> · ${esc(u.times_d)}</span></a><a href="/${l}/"><b>Sumba Secrets</b><span class="d"> · ${esc(u.secrets_n)}</span></a></div></div>
 <header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
@@ -178,7 +185,7 @@ ${o.leaflet ? '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/li
 <main>${o.body}</main><nav class="bnav" aria-label="Mobile">${[["/", "🏝️", "Sumba"], ["/secret-spots/", "★", u.secrets], ["/guides/", "📖", u.guides], ["/map/", "🗺️", u.map], ["/saved/", "☆", D.ui2[l].saved]].map(([p, i, t]) => `<a href="/${l}${p}"${p === path ? ' class="on" aria-current="page"' : ""}><span>${i}</span><small>${esc(t)}</small></a>`).join("")}</nav><a class="fab-map" href="/${l}/map/" aria-label="${esc(u.map)}">🗺️ <span>${esc(u.map)}</span></a><button class="totop" aria-label="${esc(D.ui2[l].back_top)}" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 ${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a> · <a href="/${l}/mamboro/">🏡 ${esc(NT(l).t)}</a></p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
 <p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
-${o.leaflet ? '<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>' : ""}${o.js ? `<script>addEventListener("DOMContentLoaded",function(){${o.js}})</script>` : ""}<script>${COMMONJS(l)}</script></body></html>`;
+${o.leaflet ? '<script defer src="/lib/leaflet.js"></script>' : ""}${o.js ? `<script>addEventListener("DOMContentLoaded",function(){${o.js}})</script>` : ""}<script>${COMMONJS(l)}</script></body></html>`;
 }
 
 function mapJS(l, items, opts) {
@@ -186,14 +193,15 @@ function mapJS(l, items, opts) {
   const mine = new Set(items.map(p => p.s));
   const pts = D.places.map(p => { const t = P(p, l); return { s: p.s, n: t.n, c: p.c, sec: p.sec, ll: p.ll, d: t.t.split(". ")[0] + ".", o: mine.has(p.s) ? 1 : 0 }; });
   return `(function(){var P=${JSON.stringify(pts)},C=${JSON.stringify(CAT_COLOR)},CAT=${JSON.stringify(u.cat)},SB=${JSON.stringify(u.secret_badge)},RM=${JSON.stringify(u.readmore)};
-var m=L.map('map',{scrollWheelZoom:false}).setView(${JSON.stringify(opts.center || [-9.68, 119.75])},${opts.zoom || 9});
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap'}).addTo(m);
+var mel=document.getElementById('map');if(!mel)return;function boot(){if(!window.L){setTimeout(boot,150);return}var m=L.map('map',{scrollWheelZoom:false}).setView(${JSON.stringify(opts.center || [-9.68, 119.75])},${opts.zoom || 9});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(m);
 var layers=[];P.forEach(function(p){var mk=L.circleMarker(p.ll,{radius:p.o?(p.sec?10:8):6,color:p.sec?'#e0ad55':'#fff',weight:p.sec?4:2,fillColor:C[p.c],fillOpacity:p.o?.95:.7}).addTo(m);if(p.o)mk.bringToFront&&setTimeout(function(){mk.bringToFront()},0);
 mk.bindPopup('<b>'+p.n+'</b><br><small>'+CAT[p.c]+(p.sec?' · '+SB:'')+'</small><br>'+p.d+'<br><a href="/${l}/place/'+p.s+'/">'+RM+' →</a>');layers.push({p:p,mk:mk});});
 ${opts.base ? `L.marker(${JSON.stringify(NB.ll)},{zIndexOffset:2000,icon:L.divIcon({className:'',html:'<div class="basepin">🏡</div>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(m).bindPopup(${JSON.stringify('<b>' + esc(NT(l).base) + '</b><br><small>' + esc(NT(l).base_d) + '</small>')});` : ""}${opts.fit ? "var own=layers.filter(function(x){return x.p.o});if(own.length)m.fitBounds(L.featureGroup(own.map(function(x){return x.mk})).getBounds().pad(.08));" : ""}
 document.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;
 layers.forEach(function(x){var show=f==='all'||(f==='secret'?x.p.sec:x.p.c===f);if(show)x.mk.addTo(m);else m.removeLayer(x.mk)});
 document.querySelectorAll('[data-cat]').forEach(function(el){el.style.display=(f==='all'||(f==='secret'?el.dataset.sec==='1':el.dataset.cat===f))?'':'none'})}});
+}if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();boot()}},{rootMargin:'400px'});io.observe(mel)}else boot();
 })();`;
 }
 
@@ -206,11 +214,10 @@ function wxJS(l, towns, full) {
   const u = D.ui[l];
   return `(function(){var T=${JSON.stringify(towns)},W=${JSON.stringify(D.wx[l])},U=${JSON.stringify({feels:u.feels,wind:u.wind,rain:u.rain,err:u.wx_err,days:u.days})};
 function g(c){return c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7}var I=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'];
-var url='https://api.open-meteo.com/v1/forecast?latitude='+T.map(function(t){return t.ll[0]}).join(',')+'&longitude='+T.map(function(t){return t.ll[1]}).join(',')+'&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FMakassar&forecast_days=7';
-fetch(url).then(function(r){return r.json()}).then(function(d){if(!Array.isArray(d))d=[d];d.forEach(function(x,i){var el=document.getElementById('wx-'+T[i].s);if(!el)return;var c=x.current,k=g(c.weather_code);
-var h='<h3>'+T[i].n+'</h3><div class="t">'+I[k]+' '+Math.round(c.temperature_2m)+'°</div><div class="s">'+W[k]+' · '+U.feels+' '+Math.round(c.apparent_temperature)+'° · '+U.wind+' '+Math.round(c.wind_speed_10m)+' km/h</div>';
+var url='/api/wx';fetch(url).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){d.forEach(function(x){var ti=T.filter(function(t){return t.s===x.s})[0];var el=ti&&document.getElementById('wx-'+x.s);if(!el||!x.current)return;var c=x.current,k=g(c.weather_code);
+var h='<h3>'+ti.n+'</h3><div class="t">'+I[k]+' '+Math.round(c.temperature_2m)+'°</div><div class="s">'+W[k]+' · '+U.feels+' '+Math.round(c.apparent_temperature)+'° · '+U.wind+' '+Math.round(c.wind_speed_10m)+' km/h</div>';
 ${full ? `h+='<div class="days">'+x.daily.time.map(function(t,j){var dd=new Date(t+'T12:00:00');return '<div><b>'+U.days[dd.getDay()]+'</b>'+I[g(x.daily.weather_code[j])]+'<br>'+Math.round(x.daily.temperature_2m_max[j])+'° / '+Math.round(x.daily.temperature_2m_min[j])+'°<br><small>'+U.rain+' '+(x.daily.precipitation_probability_max[j]==null?'-':x.daily.precipitation_probability_max[j])+'%</small></div>'}).join('')+'</div>';` : ""}
-el.innerHTML=h})}).catch(function(){T.forEach(function(t){var el=document.getElementById('wx-'+t.s);if(el)el.innerHTML='<h3>'+t.n+'</h3><div class="s">'+U.err+'</div>'})});})();`;
+el.innerHTML=h})}).catch(function(){T.forEach(function(t){var el=document.getElementById('wx-'+t.s);if(el){var bx=el.closest('.wx');(bx||el).style.display='none';var q=bx&&bx.closest('.qf');if(q)q.style.display='none'}})});})();`;
 }
 
 function wxBoxes(l, towns) { return `<div class="wx">${towns.map(t => `<div class="wxc" id="wx-${t.s}"><h3>${esc(t.n)}</h3><div class="s">${esc(D.ui[l].loading)}</div></div>`).join("")}</div>`; }
@@ -263,14 +270,14 @@ function guidePage(l, g) {
   const faq = (t.faq || []).filter(f => f && f[0] && f[1]);
   const rel = D.guides.filter(x => x.s !== g.s).map(x => [((x.s.split("-").filter(w => g.s.includes(w)).length) + (x.en && x.en.faq ? 1 : 0)), x]).sort((a, b) => b[0] - a[0]).slice(0, 6).map(x => x[1]);
   const body = `<div class="w"><article class="pl"><div class="crumbs"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/guides/">${esc(u.guides)}</a></div><h1>${esc(t.t)}</h1><p class="lead" style="font-size:19px">${esc(t.d)}</p>
-<p class="gmeta">⏱ ${mins} min · ${esc(D.built)} · <a href="/${l}/map/">🗺️ ${esc(u.map)}</a></p>
+<p class="gmeta">⏱ ${mins} min · <time datetime="${MOD(`/guide/${g.s}/`)}">${esc(D.ui2[l].updated)}: ${MOD(`/guide/${g.s}/`)}</time> · <a href="/${l}/map/">🗺️ ${esc(u.map)}</a></p>
 ${isItin ? `<p class="noprint"><button class="btn" onclick="print()">🖨 ${esc(D.ui2[l].print)}</button> <a class="btn alt2" href="/${l}/map/#route-${g.s}">🗺️ ${esc(D.ui2[l].fullmap)}</a></p>` : ""}<figure class="fig"><img src="${h.b}" alt="${esc(t.t)}" width="1280" height="720" fetchpriority="high"><figcaption>${esc(u.photo)}: ${esc(cr[0])} · <a href="${cr[2]}" rel="nofollow">${esc(cr[1])}</a>, Wikimedia Commons</figcaption></figure>
 ${toc.length > 3 ? `<nav class="toc" aria-label="Contents"><details open><summary>☰ ${toc.length}</summary><ol>${toc.map(x => `<li><a href="#s${x[0]}">${esc(x[1])}</a></li>`).join("")}</ol></details></nav>` : ""}
 <div class="body">${b2}</div>
 ${faq.length ? `<section class="faq"><h2 class="sec h2s">FAQ</h2>${faq.map(f => `<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join("")}</section>` : ""}
 <p class="near-cta"><a class="btn" href="/${l}/map/">🗺️ ${esc(u.map)} →</a><a class="btn alt2" href="/${l}/secret-spots/">★ ${esc(u.secrets)}</a></p>
 <h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${rel.map(x => guideCard(x, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(D.ui2[l].see_all)} →</a></p></article></div>`;
-  const ld = [{ "@context": "https://schema.org", "@type": isItin ? "TouristTrip" : "Article", ...(isItin ? { name: t.t } : { headline: t.t }), description: t.d, inLanguage: l, image: h.b, author: { "@type": "Organization", name: "Sumba Secrets", url: BASE }, publisher: { "@type": "Organization", name: "Sumba Secrets", logo: { "@type": "ImageObject", url: `${BASE}/icon.svg` } }, datePublished: g.en && g.en.faq ? "2026-11-13" : "2026-11-11", dateModified: D.built, wordCount: words, mainEntityOfPage: `${BASE}/${l}/guide/${g.s}/` }, crumbsLD([["Sumba Secrets", `/${l}/`], [u.guides, `/${l}/guides/`], [t.t, `/${l}/guide/${g.s}/`]])];
+  const ld = [{ "@context": "https://schema.org", "@type": isItin ? "TouristTrip" : "Article", ...(isItin ? { name: t.t } : { headline: t.t }), description: t.d, inLanguage: l, image: h.b, author: { "@type": "Organization", name: "Sumba Secrets", url: BASE }, publisher: { "@type": "Organization", name: "Sumba Secrets", logo: { "@type": "ImageObject", url: `${BASE}/icon.svg` } }, datePublished: g.en && g.en.faq ? "2026-11-13" : "2026-11-11", dateModified: MOD(`/guide/${g.s}/`), wordCount: words, mainEntityOfPage: `${BASE}/${l}/guide/${g.s}/` }, crumbsLD([["Sumba Secrets", `/${l}/`], [u.guides, `/${l}/guides/`], [t.t, `/${l}/guide/${g.s}/`]])];
   if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(f => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
   return page(l, `/guide/${g.s}/`, { title: t.t, desc: t.d, ogimg: `${BASE}/og/guide-${g.s}.jpg`, body, ld });
 }
@@ -282,7 +289,8 @@ function aboutPage(l) {
 
 function notFound(l) {
   const u = D.ui[l];
-  return page(l, "/", { title: u.nf, body: `<div class="w"><article class="pl" style="padding:60px 0"><h1>${esc(u.nf)}</h1><p><a class="btn" href="/${l}/">${esc(u.back)}</a></p></article></div>` });
+  const pop = ["weekuri-lagoon", "wairinding-hill", "ratenggaro", "walakiri-beach", "tanggedu-waterfall", "mandorak-beach"].map(s => D.places.find(p => p.s === s)).filter(Boolean);
+  return page(l, "/404/", { title: u.nf, robots: "noindex", body: `<div class="w"><article class="pl" style="padding:40px 0"><h1>${esc(u.nf)}</h1><form action="/${l}/search/" class="srch"><input name="q" type="search" placeholder="${esc(D.ui2[l].search_site)}" aria-label="${esc(D.ui2[l].search_site)}"></form><p><a class="btn" href="/${l}/">${esc(u.back)}</a> <a class="btn alt2" href="/${l}/map/">🗺️ ${esc(u.map)}</a></p><div class="grid">${pop.map(p => card(p, l)).join("")}</div></article></div>` });
 }
 
 async function news(l, ctx) {
@@ -392,7 +400,7 @@ function home(l) {
   const itins = D.guides.filter(g => /^itinerary-/.test(g.s));
   const vids = D.videos._home || [];
   const body = `<section class="hx" aria-label="Sumba">
-<div class="hx-sl">${heroSl.map((c, i) => `<img src="${gthumb(c, i ? 1280 : 960)}" ${i ? 'loading="lazy"' : `srcset="${gthumb(c, 500)} 500w, ${gthumb(c, 960)} 960w, ${gthumb(c, 1280)} 1280w" sizes="100vw" fetchpriority="high"`} alt="" class="${i ? "" : "on"}">`).join("")}</div>
+<div class="hx-sl">${heroSl.map((c, i) => i ? `<img data-src="${gthumb(c, 960)}" data-src2="${gthumb(c, 1280)}" alt="">` : `<picture><source media="(min-width:900px)" srcset="${gthumb(c, 1280)}"><img src="${gthumb(c, 960)}" fetchpriority="high" alt="" class="on"></picture>`).join("")}</div>
 <div class="hx-sh"></div><div class="w hx-in"><p class="kick">✦ ${esc(u2.kicker)}</p><h1>${esc(u.hero_t)}</h1>
 <p class="hx-rot" aria-live="polite"><span id="rot">${esc(words[0])}</span></p><p class="hx-d">${esc(u.hero_d)}</p>
 <form class="hx-q" action="/${l}/search/" role="search"><input name="q" type="search" list="pl-names" autocomplete="off" placeholder="🔎 ${esc(u2.hsearch)}" aria-label="${esc(u2.hsearch)}"><datalist id="pl-names">${D.places.map(p => `<option value="${esc(P(p, l).n)}">`).join("")}</datalist><button>${esc(u2.hgo)}</button></form>
@@ -435,10 +443,11 @@ ${vids.length ? `<section class="dark rv"><div class="w"><h2 class="sec xl">▶ 
     { "@context": "https://schema.org", "@type": "TouristDestination", name: "Sumba", description: u.hero_d, geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 }, containsPlace: D.places.map(p => ({ "@type": "TouristAttraction", name: P(p, l).n, url: `${BASE}/${l}/place/${p.s}/` })) },
     ...vids.map(v => videoLD(v, l))];
   const js = `(function(){var W=${JSON.stringify(words)},i=0,el=document.getElementById('rot');setInterval(function(){i=(i+1)%W.length;el.style.opacity=0;setTimeout(function(){el.textContent=W[i];el.style.opacity=1},350)},2600);
-var im=document.querySelectorAll('.hx-sl img'),dt=document.querySelectorAll('.hx-dots i'),cp=document.getElementById('hcap'),CP=${JSON.stringify(["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"].map(s => [s, P(D.places.find(p => p.s === s), l).n]))},k=0;function go(n){im[k].classList.remove('on');dt[k].classList.remove('on');k=n;im[k].classList.add('on');dt[k].classList.add('on');cp.href='/${l}/place/'+CP[k][0]+'/';cp.textContent='📍 '+CP[k][1]}var T=setInterval(function(){go((k+1)%im.length)},5500);dt.forEach(function(d,i){d.onclick=function(){clearInterval(T);go(i)}});
+var im=document.querySelectorAll('.hx-sl img'),ld=function(x){if(x&&x.dataset.src){x.src=innerWidth>=900?x.dataset.src2:x.dataset.src;x.removeAttribute('data-src')}},dt=document.querySelectorAll('.hx-dots i'),cp=document.getElementById('hcap'),CP=${JSON.stringify(["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"].map(s => [s, P(D.places.find(p => p.s === s), l).n]))},k=0;function go(n){ld(im[n]);ld(im[(n+1)%im.length]);im[k].classList.remove('on');dt[k].classList.remove('on');k=n;im[k].classList.add('on');dt[k].classList.add('on');cp.href='/${l}/place/'+CP[k][0]+'/';cp.textContent='📍 '+CP[k][1]}setTimeout(function(){ld(im[1])},4000);var T=setInterval(function(){go((k+1)%im.length)},5500);dt.forEach(function(d,i){d.onclick=function(){clearInterval(T);go(i)}});
 function tk(){var d=new Date(Date.now()+8*36e5);document.getElementById('lt').textContent=d.toISOString().slice(11,16)}tk();setInterval(tk,30000);
-fetch('https://api.open-meteo.com/v1/forecast?latitude=-9.65&longitude=120.26&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=Asia%2FMakassar&forecast_days=1').then(function(r){return r.json()}).then(function(d){var c=d.current.weather_code,I=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'],g=c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7;document.getElementById('lwx').textContent=I[g]+' Waingapu '+Math.round(d.current.temperature_2m)+'°';document.getElementById('sr').textContent=d.daily.sunrise[0].slice(11);document.getElementById('ss').textContent=d.daily.sunset[0].slice(11)}).catch(function(){})})();` + wxJS(l, D.towns, false) + newsJS(l);
-  return page(l, "/", { home: true, preload: gthumb(heroSl[0], 960), ogimgOwn: `${BASE}/og/home.jpg`, body, js, ld });
+(function(){function sun(lat,lon,tz){var d=new Date(),n=Math.floor((d-new Date(d.getUTCFullYear(),0,0))/864e5),r=Math.PI/180,g=2*Math.PI/365*(n-1),eq=229.18*(.000075+.001868*Math.cos(g)-.032077*Math.sin(g)-.014615*Math.cos(2*g)-.040849*Math.sin(2*g)),dc=.006918-.399912*Math.cos(g)+.070257*Math.sin(g)-.006758*Math.cos(2*g)+.000907*Math.sin(2*g)-.002697*Math.cos(3*g)+.00148*Math.sin(3*g),ha=Math.acos(Math.cos(90.833*r)/(Math.cos(lat*r)*Math.cos(dc))-Math.tan(lat*r)*Math.tan(dc))/r;function f(m){m=(m+tz*60+1440)%1440;var h=Math.floor(m/60),mi=Math.round(m%60);if(mi==60){h++;mi=0}return (h<10?'0':'')+h+':'+(mi<10?'0':'')+mi}return [f(720-4*(lon+ha)-eq),f(720-4*(lon-ha)-eq)]}var S=sun(-9.65,120.26,8);document.getElementById('sr').textContent=S[0];document.getElementById('ss').textContent=S[1]})();
+fetch('/api/wx').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(a){var d=a[0];var c=d.current.weather_code,I=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'],g=c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7;document.getElementById('lwx').textContent=I[g]+' Waingapu '+Math.round(d.current.temperature_2m)+'°'}).catch(function(){var w=document.getElementById('lwx');if(w)w.style.display='none'})})();` + wxJS(l, D.towns, false) + newsJS(l);
+  return page(l, "/", { home: true, preload: gthumb(heroSl[0], 960), preloadMedia: "(max-width:899px)", ogimgOwn: `${BASE}/og/home.jpg`, body, js, ld });
 }
 
 function ytFacade(v, l) {
@@ -459,7 +468,7 @@ function placePage(l, p) {
   const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })], [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]], [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })], [tpl(u2.q_tip, { n: t.n }), t.tip]];
   const vids = D.videos[p.s] || [];
   const idx = D.places.indexOf(p), prev = D.places[(idx - 1 + D.places.length) % D.places.length], next = D.places[(idx + 1) % D.places.length];
-  const body = `<section class="ph-hero"><img src="${hero.b.replace("/ph/1280/", "/ph/960/")}" srcset="${hero.s} 500w, ${hero.b.replace("/ph/1280/", "/ph/960/")} 960w, ${hero.b} 1280w" sizes="100vw" alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba" fetchpriority="high">
+  const body = `<section class="ph-hero"><img src="${hero.b.replace("/ph/1280/", "/ph/960/")}" alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba" fetchpriority="high">
 <div class="hx-sh"></div><div class="w ph-in"><nav class="crumbs light" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> › <a href="${catPath(l, p.c)}">${esc(u.cat[p.c])}</a></nav>
 <p><a class="badge" style="background:${CAT_COLOR[p.c]};color:#fff;text-decoration:none" href="${catPath(l, p.c)}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</a> ${p.sec ? `<a class="badge" style="text-decoration:none" href="/${l}/secret-spots/">★ ${esc(u.secret_badge)}</a>` : ""}</p>
 <h1>${esc(t.n)}</h1><p class="ph-sub">📍 ${esc(u.reg[p.r])} · ${Math.round(tk)} ${esc(u2.km_from)} ${esc(town.n)} · ✈ ${esc(ap.code)} ${Math.round(ak)} km</p>${ph.length > 1 ? `<button class="btn ghost" data-lb="0">📷 ${ph.length} ${esc(u2.photos_n)}</button>` : ""}</div>
@@ -479,7 +488,7 @@ ${tipForm(l, p)}</article>
 <div class="qf"><h2>${esc(u.now)} · ${esc(town.n)}</h2>${wxBoxes(l, [town])}</div>
 <div class="qf"><div id="map" class="mapsm"></div><p><a href="/${l}/map/#${p.s}">🗺️ ${esc(u2.fullmap)} →</a></p></div></aside></div>
 <section class="band"><div class="w"><h2 class="sec xl">${esc(u.nearby)}</h2><div class="hs">${near.map(([d, x]) => card(x, l).replace('<p class="rg">', `<p class="rg">${Math.round(d)} ${esc(u2.nearby_km)} · `)).join("")}</div>
-<nav class="pn"><a href="/${l}/place/${prev.s}/">← ${esc(P(prev, l).n)}</a><a href="/${l}/place/${next.s}/">${esc(P(next, l).n)} →</a></nav><p class="upd">${esc(u2.updated)}: ${D.built}</p></div></section>
+<nav class="pn"><a href="/${l}/place/${prev.s}/">← ${esc(P(prev, l).n)}</a><a href="/${l}/place/${next.s}/">${esc(P(next, l).n)} →</a></nav><p class="upd">${esc(u2.updated)}: <time datetime="${MOD(`/place/${p.s}/`)}">${MOD(`/place/${p.s}/`)}</time></p></div></section>
 <div class="lb" id="lb" hidden><button class="lb-x" aria-label="${esc(u2.close2)}">×</button><button class="lb-p" aria-label="${esc(u2.prev)}">‹</button><img alt=""><button class="lb-n" aria-label="${esc(u2.next)}">›</button><p class="lb-c"></p></div>
 <script type="application/json" id="lbd">${JSON.stringify(ph.map(x => [x.b, `${x.a} · ${x.l}`]))}</script>`;
   const ld = [{ "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, inLanguage: l, isAccessibleForFree: true, touristType: u2["gf_" + p.c],
@@ -487,7 +496,7 @@ ${tipForm(l, p)}</article>
       containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, image: ph.map(x => x.b) },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
     crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]]), ...vids.map(v => videoLD(v, l))];
-  return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()}, ${u.map.toLowerCase()} & ${u.tip.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
+  return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()} & ${u.map.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
     js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) });
 }
 
@@ -636,7 +645,7 @@ var ob=document.querySelector('.ch button.on');if(ob&&ob.scrollIntoView)ob.scrol
 document.querySelectorAll('.ch button').forEach(function(b){b.onclick=function(){filt(b.dataset.f)}});q.oninput=function(){showList();draw()};
 q.onkeydown=function(ev){if(ev.key==='Enter'&&ORDER[0]){open(ORDER[0]);q.blur()}};
 var WXD={};function wxc(c){return c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7}var WI=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'];
-fetch('https://api.open-meteo.com/v1/forecast?latitude='+T.map(function(t){return t.ll[0]}).join(',')+'&longitude='+T.map(function(t){return t.ll[1]}).join(',')+'&current=temperature_2m,weather_code&timezone=Asia%2FMakassar').then(function(r){return r.json()}).then(function(d){if(!Array.isArray(d))d=[d];d.forEach(function(x,i){WXD[T[i].s]=x.current;var t=document.getElementById('tw-'+T[i].s);if(t)t.innerHTML=e(T[i].n)+' '+WI[wxc(x.current.weather_code)]+' '+Math.round(x.current.temperature_2m)+'°'})}).catch(function(){});
+fetch('/api/wx').then(function(r){return r.json()}).then(function(d){if(!Array.isArray(d))d=[d];d.forEach(function(x,i){WXD[T[i].s]=x.current;var t=document.getElementById('tw-'+T[i].s);if(t)t.innerHTML=e(T[i].n)+' '+WI[wxc(x.current.weather_code)]+' '+Math.round(x.current.temperature_2m)+'°'})}).catch(function(){});
 var IOS=/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)&&'ontouchend' in document;
 function open(s,fromPin){var p=BYS[s];if(!p)return;var tw=T.filter(function(t){return t.s===p.town})[0],w=WXD[p.town];
 var near=P.filter(function(x){return x.s!==p.s}).map(function(x){return [kmd(p.ll,x.ll),x]}).sort(function(a,b){return a[0]-b[0]}).slice(0,3);
@@ -682,27 +691,29 @@ addEventListener('resize',function(){clearTimeout(window._rz);window._rz=setTime
   const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}/map/">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/map">`;
   const filters = ["all", "near", "secret", "beach", "waterfall", "village", "viewpoint", "culture"].map((f, i) => f === "near" ? `<button class="nearb" data-f="near">🏡 ${esc(NT(l).chip)}</button>` : `<button class="${i ? "" : "on"}" data-f="${f}">${f === "secret" ? "★ " : (CAT_ICON[f] ? CAT_ICON[f] + " " : "")}${esc(u.cat[f])}</button>`).join("") + Object.keys(D.rslug).map(r => `<button data-f="reg:${r}">📍 ${esc(u.reg[r])}</button>`).join("");
   const ld = { "@context": "https://schema.org", "@type": "Map", name: title, url: `${BASE}${canonicalPath}`, inLanguage: l, mapType: "VenueMap", about: { "@type": "TouristDestination", name: "Sumba", geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 } } };
-  return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${esc(title)} · Sumba Secrets</title>
-<meta name="description" content="${esc(u.map_d + " " + u.hero_d)}"><link rel="canonical" href="${BASE}${canonicalPath}">${alts}
+  return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${esc(cut60(title))}</title>
+<meta name="description" content="${esc(fixDesc(u.map_d, l))}"><link rel="canonical" href="${BASE}${canonicalPath}">${alts}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(u.map_d)}"><meta property="og:image" content="${BASE}/og/home.jpg"><meta property="og:url" content="${BASE}${canonicalPath}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0e6f66">
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin><link rel="preconnect" href="https://server.arcgisonline.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://api.open-meteo.com">
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><style>${MAPCSS}</style><script type="application/ld+json">${JSON.stringify(ld)}</script>${analytics()}</head><body>
+<link rel="preconnect" href="https://server.arcgisonline.com" crossorigin>
+<link rel="preload" as="script" href="/lib/leaflet.js" crossorigin><link rel="stylesheet" href="/lib/leaflet.css" crossorigin>
+<link href="/fonts.css" rel="stylesheet" media="print" onload="this.media='all'"><style>${MAPCSS}</style><script type="application/ld+json">${JSON.stringify(ld)}</script>${analytics()}</head><body>
 <h1 style="position:absolute;left:-9999px">${esc(title)}</h1><div id="m" role="application" aria-label="${esc(u.map)}"></div>
 <div class="top"><a class="box brand" href="/${l}/">Sumba <span>Secrets</span></a><div class="box sb"><input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="🔎 ${esc(u2.search)}" aria-label="${esc(u2.search)}"><div class="ch">${filters}</div></div><div class="box lgw">${langPicker(l, "/map/", true)}</div></div>
 <div class="box pan" id="pan" role="region" aria-label="${esc(u.places)}"><div class="grab" id="grab" role="button" aria-label="${esc(u.places)}"></div><div id="list" role="list"></div><div id="det" style="display:none" aria-live="polite"></div></div><button type="button" class="box tgl" id="tgl" aria-controls="pan" aria-expanded="true" aria-label="${esc(u.places)}">☰</button>
 <div class="fab"><button id="all" title="Sumba" aria-label="Sumba">🏝️</button><button id="loc" title="${esc(u2.locate)}" aria-label="${esc(u2.locate)}">📍</button><button id="rnd" title="${esc(u2.surprise)}" aria-label="${esc(u2.surprise)}">🎲</button><button id="fs" title="Fullscreen" aria-label="Fullscreen">⛶</button></div>
 <div class="toast" id="toast" role="status"></div><div id="sr" class="sr" aria-live="polite"></div>
 <noscript><ul>${D.places.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ul></noscript>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin></script><script>addEventListener('DOMContentLoaded',function(){${js}});</script><script>${COMMONJS(l)}</script></body></html>`;
+<script defer src="/lib/leaflet.js"></script><script>addEventListener('DOMContentLoaded',function(){${js}});</script><script>${COMMONJS(l)}</script></body></html>`;
 }
 
-function sitemap() {
-  const paths = ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
+function SITE_PATHS() {
+  return ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
     .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.towns.map(t => `/town/${t.s}/`), ["/towns/"], D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`));
-  const imgs = p => { const m = p.match(/^\/place\/([a-z0-9-]+)\/$/); if (!m) return ""; const pl = D.places.find(x => x.s === m[1]); return photos(pl).map(x => `<image:image><image:loc>${esc(x.b)}</image:loc></image:image>`).join(""); };
-  const urls = paths.map(p => L.map(l => `<url><loc>${BASE}/${l}${p}</loc>${L.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${BASE}/${x}${p}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${BASE}/en${p}"/><lastmod>${D.built}</lastmod>${imgs(p)}</url>`).join("")).join("") + `<url><loc>${BASE}/map</loc><lastmod>${D.built}</lastmod></url>`;
+}
+function sitemap(l) {
+  const imgs = p => { const m = p.match(/^\/place\/([a-z0-9-]+)\/$/); if (!m) return ""; const pl = D.places.find(x => x.s === m[1]); const t = P(pl, l); return photos(pl).map(x => `<image:image><image:loc>${esc(x.b)}</image:loc><image:title>${esc(t.n)}, Sumba</image:title></image:image>`).join(""); };
+  const urls = SITE_PATHS().map(p => `<url><loc>${BASE}/${l}${p}</loc>${L.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${BASE}/${x}${p}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${BASE}/en${p}"/><lastmod>${MOD(p)}</lastmod>${imgs(p)}</url>`).join("") + (l === "en" ? `<url><loc>${BASE}/map</loc><lastmod>${MOD("/map/")}</lastmod></url>` : "");
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${urls}</urlset>`;
 }
 
@@ -730,7 +741,7 @@ function COMMONJS(l) {
 function ev(n){try{clarity('event',n)}catch(e){}try{gtag('event',n)}catch(e){}}
 document.addEventListener('click',function(e){document.querySelectorAll('details.lp[open]').forEach(function(d){if(!d.contains(e.target))d.open=false})});document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('details.lp[open]').forEach(function(d){d.open=false})});
 document.querySelectorAll('details.lp a').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('ss_lang',a.hreflang)}catch(e){}})});
-(function(){var N=${JSON.stringify(Object.fromEntries(L.map(x => [x, D.lname[x]])))},F=${JSON.stringify(FLAG)},pref=null;try{if(localStorage.getItem('ss_lang')||localStorage.getItem('ss_lsx'))return}catch(e){return}var ls=navigator.languages||[navigator.language||''];for(var i=0;i<ls.length;i++){var c=(ls[i]||'').slice(0,2).toLowerCase();if(N[c]){pref=c;break}}if(!pref||pref===L||location.pathname.indexOf('/map/')>-1)return;var b=document.createElement('div');b.className='lsug';var h='/'+pref+location.pathname.slice(3)+location.hash;b.innerHTML='<a href="'+h+'"><img src="/flags/'+F[pref]+'.svg" width="22" height="16" alt=""> '+N[pref]+' →</a><button aria-label="×">×</button>';b.querySelector('a').onclick=function(){try{localStorage.setItem('ss_lang',pref)}catch(e){}};b.querySelector('button').onclick=function(){b.remove();try{localStorage.setItem('ss_lsx','1')}catch(e){}};document.body.appendChild(b)})();
+(function(){var N=${JSON.stringify(Object.fromEntries(L.map(x => [x, D.lname[x]])))},F=${JSON.stringify(FLAG)},pref=null;try{if(localStorage.getItem('ss_lang')||localStorage.getItem('ss_lsx'))return}catch(e){return}var ls=navigator.languages||[navigator.language||''];for(var i=0;i<ls.length;i++){var c=(ls[i]||'').slice(0,2).toLowerCase();if(N[c]){pref=c;break}}if(!pref||pref===L||location.pathname.indexOf('/map/')>-1)return;var b=document.createElement('div');b.className='lsug';setTimeout(function(){if(b.parentNode)b.remove()},9000);var h='/'+pref+location.pathname.slice(3)+location.hash;b.innerHTML='<a href="'+h+'"><img src="/flags/'+F[pref]+'.svg" width="22" height="16" alt=""> '+N[pref]+' →</a><button aria-label="×">×</button>';b.querySelector('a').onclick=function(){try{localStorage.setItem('ss_lang',pref)}catch(e){}};b.querySelector('button').onclick=function(){b.remove();try{localStorage.setItem('ss_lsx','1')}catch(e){}};document.body.appendChild(b)})();
 document.addEventListener('click',function(e){var a=e.target.closest('a,button');if(!a)return;var h=a.getAttribute('href')||'';
 if(h.indexOf('google.com/maps')>-1)ev('click_directions');else if(h.indexOf('maps.apple.com')>-1)ev('click_apple_maps');else if(h.indexOf('youtube.com')>-1)ev('click_videos');else if(h.indexOf('happylowcost')>-1)ev('click_flights');else if(h.indexOf('thesumbatimes')>-1)ev('click_times');});
 window.ssSub=function(f,k){var m=f.nextElementSibling||f.parentNode.querySelector('.msg');fetch('/api/subscribe',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({e:f.e.value,l:L,k:k,p:location.pathname})}).then(function(r){return r.json()}).then(function(j){if(j.ok){m.textContent=T.ok;ev(k==='pdf'?'pdf_download':'newsletter_signup');if(k==='pdf')location.href='/sumba-secrets-guide.pdf';f.reset()}else m.textContent='⚠ '+(j.err||'')}).catch(function(){m.textContent='⚠'});return false};
@@ -787,12 +798,16 @@ const SW = `const C='ss-v3';self.addEventListener('install',e=>self.skipWaiting(
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);
 if(/tile|basemaps|arcgisonline|\\/ph\\//.test(u.href)){e.respondWith(caches.open(C+'-t').then(c=>c.match(r).then(m=>m||fetch(r).then(res=>{if(res.ok||res.type==='opaque')c.put(r,res.clone());return res}))));return}
 if(u.origin===location.origin&&r.mode==='navigate'){e.respondWith(fetch(r).then(res=>{caches.open(C).then(c=>c.put(r,res.clone()));return res}).catch(()=>caches.match(r).then(m=>m||caches.match('/en/'))))}});`;
-async function photoProxy(req, url, ctx) {
+async function photoProxy(req, url, ctx, env) {
   const m = url.pathname.match(/^\/ph\/(500|960|1280)\/([0-9a-f]\/[0-9a-f]{2}\/[^/]+)$/);
   if (m) { let k = m[2]; try { k = decodeURIComponent(k); } catch (e) {} m[2] = PH_OK.get(k); }
   if (!m || !m[2]) return new Response("Not found", { status: 404 });
-  const cache = caches.default, key = new Request(url.toString()); let r = await cache.match(key); if (r) return r;
+  const acc = req.headers.get("accept") || "", fmt = env && env.IMGX === "1" ? (/image\/avif/.test(acc) ? "avif" : /image\/webp/.test(acc) ? "webp" : "") : "";
+  const cache = caches.default, key = new Request(url.toString() + (fmt ? "?f=" + fmt : "")); let r = await cache.match(key); if (r) return r;
   const fn = m[2].split("/").pop();
+  if (fmt) { const big = m[1] === "1280" ? "1280" : "1280";
+    const tr = await fetch(`https://upload.wikimedia.org/wikipedia/commons/thumb/${m[2]}/${big}px-${fn}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { image: { width: +m[1], quality: 70, format: fmt, fit: "scale-down", metadata: "none" }, cacheTtl: 2592000 } });
+    if (tr.ok && (tr.headers.get("content-type") || "").includes(fmt)) { r = new Response(tr.body, { headers: { "content-type": "image/" + fmt, "cache-control": "public, max-age=2592000, immutable", "vary": "accept", "x-content-type-options": "nosniff" } }); ctx.waitUntil(cache.put(key, r.clone())); return r; } }
   let up = await fetch(`https://upload.wikimedia.org/wikipedia/commons/thumb/${m[2]}/${m[1]}px-${fn}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { cacheTtl: 2592000, cacheEverything: true } });
   if (!up.ok) up = await fetch(`https://upload.wikimedia.org/wikipedia/commons/${m[2]}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { cacheTtl: 2592000, cacheEverything: true } });
   if (!up.ok) return new Response("Upstream error", { status: 502 });
@@ -828,6 +843,58 @@ async function apiTr(req, env) {
   return Response.json({ result: r });
 }
 const MEMO = new Map();
+const GF = "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap";
+const UA_CH = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
+async function cached(key, ttl, make, ctx) {
+  const c = caches.default, k = new Request(`${BASE}/__c/${key}`); let r = await c.match(k); if (r) return r;
+  r = await make(); if (!r || !r.ok) return r || new Response("", { status: 502 });
+  r = new Response(r.body, r); r.headers.set("cache-control", `public, max-age=${ttl}`); ctx.waitUntil(c.put(k, r.clone())); return r;
+}
+async function fontsCss(ctx) {
+  return cached("fonts-v1", 2592000, async () => { const o = await fetch(GF, { headers: { "user-agent": UA_CH } }); if (!o.ok) return o;
+    const css = (await o.text()).replace(/https:\/\/fonts\.gstatic\.com\//g, "/gf/");
+    return new Response(css, { headers: { "content-type": "text/css; charset=utf-8" } }); }, ctx);
+}
+async function gfFile(p, ctx) {
+  if (!/^\/gf\/[a-z0-9/_.-]+\.woff2$/i.test(p)) return new Response("", { status: 404 });
+  return cached("gf" + p.slice(3), 31536000, async () => { const o = await fetch("https://fonts.gstatic.com/" + p.slice(4)); return o.ok ? new Response(o.body, { headers: { "content-type": "font/woff2", "access-control-allow-origin": "*" } }) : o; }, ctx);
+}
+async function libFile(p, ctx) {
+  const ty = p.endsWith(".css") ? "text/css; charset=utf-8" : "application/javascript; charset=utf-8";
+  return cached("lib-1.9.4" + p, 31536000, async () => { const o = await fetch(`https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min${p.endsWith(".css") ? ".css" : ".js"}`); if (!o.ok) return o;
+    let t = await o.text(); if (p.endsWith(".css")) t = t.replace(/url\(images\//g, "url(https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/"); return new Response(t, { headers: { "content-type": ty } }); }, ctx);
+}
+async function apiWx(ctx) {
+  const T = D.towns;
+  const url = "https://api.open-meteo.com/v1/forecast?latitude=" + T.map(t => t.ll[0]).join(",") + "&longitude=" + T.map(t => t.ll[1]).join(",") + "&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset&timezone=Asia%2FMakassar&forecast_days=7";
+  const c = caches.default, k = new Request(`${BASE}/__c/wx-v1`), stale = new Request(`${BASE}/__c/wx-stale-v1`);
+  let r = await c.match(k); if (r) return r;
+  try { const o = await fetch(url, { cf: { cacheTtl: 1800 } }); if (!o.ok) throw new Error(o.status); let d = await o.json(); if (!Array.isArray(d)) d = [d];
+    const body = JSON.stringify(d.map((x, i) => ({ s: T[i].s, current: x.current, daily: x.daily })));
+    r = new Response(body, { headers: { "content-type": "application/json", "cache-control": "public, max-age=1800" } });
+    ctx.waitUntil(c.put(k, r.clone())); ctx.waitUntil(c.put(stale, new Response(body, { headers: { "content-type": "application/json", "cache-control": "public, max-age=604800" } }))); return r;
+  } catch (e) { const s2 = await c.match(stale); if (s2) return new Response(s2.body, { headers: { "content-type": "application/json", "cache-control": "public, max-age=300" } }); return Response.json([], { status: 503 }); }
+}
+const MOD = p => (D.mod && D.mod[p]) || D.built;
+function sitemapIndex() {
+  return `<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${L.map(l => `<sitemap><loc>${BASE}/sitemap-${l}.xml</loc><lastmod>${D.built}</lastmod></sitemap>`).join("")}</sitemapindex>`;
+}
+function feed(l) {
+  const u = D.ui[l];
+  const items = D.guides.map(g => { const t = gtxt(g, l); return { t: t.t, d: t.d, u: `${BASE}/${l}/guide/${g.s}/`, m: MOD(`/guide/${g.s}/`) }; })
+    .concat(D.places.map(p => { const t = P(p, l); return { t: t.n, d: t.t, u: `${BASE}/${l}/place/${p.s}/`, m: MOD(`/place/${p.s}/`) }; }))
+    .sort((a, b) => b.m.localeCompare(a.m)).slice(0, 60);
+  return `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumba Secrets (${l.toUpperCase()})</title><link>${BASE}/${l}/</link><description>${esc(u.hero_d)}</description><language>${l}</language><atom:link href="${BASE}/${l}/feed.xml" rel="self" type="application/rss+xml"/>${items.map(x => `<item><title>${esc(x.t)}</title><link>${x.u}</link><guid>${x.u}</guid><description>${esc(x.d)}</description><pubDate>${new Date(x.m + "T08:00:00Z").toUTCString()}</pubDate></item>`).join("")}</channel></rss>`;
+}
+async function indexNow(env) {
+  const urls = []; for (const l of L) for (const p of SITE_PATHS()) urls.push(`${BASE}/${l}${p}`);
+  const out = [];
+  for (let i = 0; i < urls.length; i += 9000) {
+    const r = await fetch("https://api.indexnow.org/indexnow", { method: "POST", headers: { "content-type": "application/json; charset=utf-8" }, body: JSON.stringify({ host: "sumbasecrets.com", key: D.indexnow, keyLocation: `${BASE}/${D.indexnow}.txt`, urlList: urls.slice(i, i + 9000) }) });
+    out.push(r.status);
+  }
+  return Response.json({ urls: urls.length, status: out });
+}
 const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600, stale-while-revalidate=86400", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
 const pickLang = req => { const al = (req.headers.get("accept-language") || "").toLowerCase(); return al.split(",").map(x => x.trim().slice(0, 2)).find(x => L.includes(x)) || "en"; };
 
@@ -863,13 +930,20 @@ export default {
     if (url.hostname.startsWith("www.") || url.protocol === "http:") return Response.redirect(`${BASE}${url.pathname}${url.search}`, 301);
     const p = url.pathname;
     if (p === "/robots.txt") return new Response(`User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${BASE}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
-    if (p === "/sitemap.xml") return new Response(sitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
+    if (p === "/sitemap.xml") return new Response(sitemapIndex(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
+    { const sm = p.match(/^\/sitemap-([a-z]{2})\.xml$/); if (sm && L.includes(sm[1])) return new Response(sitemap(sm[1]), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } }); }
+    { const fm = p.match(/^\/([a-z]{2})\/feed\.xml$/); if (fm && L.includes(fm[1])) return new Response(feed(fm[1]), { headers: { "content-type": "application/rss+xml; charset=utf-8", "cache-control": "public, max-age=3600" } }); }
+    if (p === "/fonts.css") return fontsCss(ctx);
+    if (p.startsWith("/gf/")) return gfFile(p, ctx);
+    if (p === "/lib/leaflet.css" || p === "/lib/leaflet.js") return libFile(p, ctx);
+    if (p === "/api/wx") return apiWx(ctx);
+    if (p === "/api/indexnow" && req.method === "POST") { if (!env.TR_KEY || req.headers.get("x-tr-key") !== env.TR_KEY) return new Response("no", { status: 403 }); return indexNow(env); }
     if (p === "/llms.txt") return new Response(llms(), { headers: { "content-type": "text/plain; charset=utf-8" } });
     if (p === "/icon.svg") return new Response(ICON, { headers: { "content-type": "image/svg+xml", "cache-control": "public, max-age=604800" } });
     if (p === "/favicon.ico") return Response.redirect(`${BASE}/icon.svg`, 301);
     if (p === "/manifest.webmanifest") return new Response(MANIFEST, { headers: { "content-type": "application/manifest+json" } });
     if (p === `/${D.indexnow}.txt`) return new Response(D.indexnow, { headers: { "content-type": "text/plain" } });
-    if (p.startsWith("/ph/")) return photoProxy(req, url, ctx);
+    if (p.startsWith("/ph/")) return photoProxy(req, url, ctx, env);
     if (/^\/flags\/[a-z]{2}\.svg$/.test(p) && Object.values(FLAG).includes(p.slice(7, 9))) { const ck = new Request(BASE + p), c = caches.default; let r = await c.match(ck); if (r) return r; const o = await fetch(`https://flagcdn.com/${p.slice(7, 9)}.svg`); if (!o.ok) return new Response("", { status: 404 }); r = new Response(o.body, { headers: { "content-type": "image/svg+xml", "cache-control": "public, max-age=31536000, immutable" } }); ctx.waitUntil(c.put(ck, r.clone())); return r; }
     if (p === "/sw.js") return new Response(SW, { headers: { "content-type": "application/javascript", "cache-control": "no-cache" } });
     if (p === "/api/subscribe" && req.method === "POST") return apiSubscribe(req, env);
