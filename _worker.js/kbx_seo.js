@@ -15,7 +15,8 @@
 //   /<key>.txt                                  IndexNow key file
 // Facts only: every number is computed from the data files named on the page; named project pages belong to seoP (/api/seo/urls).
 import * as KB from './kolaboro.js';
-import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';   // batch 15 (s15b): date of the last real data change per project
+import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';
+import { placesForCountry } from './kbx_tr_places.js';   // batch 23 (n23): links to the transparency rankings of a country's islands and cities   // batch 15 (s15b): date of the last real data change per project
 const { openData } = KB;
 
 const SITE = 'https://kolaboro.com';
@@ -222,7 +223,7 @@ function pCountry(B, x) {
   const regs = regsFor(B, C), laws = lawFor(B, C);
   const kv = '<div class="sx-kv"><div><b>' + n + '</b><span>projects tracked</span></div><div><b>' + mk.length + '</b><span>markets</span></div><div><b>' + pct(st.pub.permit, n) + '%</b><span>publish a permit or licence number</span></div><div><b>' + pct(st.pub.escrow, n) + '%</b><span>state deposit protection</span></div><div><b>' + lates.length + '</b><span>past the first handover date on record</span></div><div><b>' + fmt(st.contra) + '</b><span>developer claims contradicted by another source</span></div></div>';
   let body = '<div class="sx-sum" id="summary"><p><b>In ' + esc(C) + ', Kolaboro has reviewed ' + n + ' off-plan project' + (n === 1 ? '' : 's') + ' in ' + mk.length + ' market' + (mk.length === 1 ? '' : 's') + '</b>' + (U.length ? ' (' + U.length + ' more added, not yet reviewed)' : '') + ' (' + st.op + ' off-plan, ' + st.uc + ' under construction' + (st.done ? ', ' + st.done + ' completed' : '') + '). On average ' + st.avg.toFixed(1) + ' of 6 buyer checks are public and ' + st.vavg.toFixed(1) + ' are confirmed by an official register or independent source.</p><p>' + lates.length + ' project' + (lates.length === 1 ? ' is' : 's are') + ' past the first handover date we have on record; ' + st.overdue + ' ' + (st.overdue === 1 ? 'is' : 'are') + ' past the date currently advertised. Data of ' + longDate(up) + '.</p></div>' + kv;
-  body += '<ul class="sx-chips"><li><a href="/countries/' + S + '/how-to-check/">How to check a project in ' + esc(C) + '</a></li>' + (n >= SAFE_MIN ? '<li><a href="/countries/' + S + '/is-it-safe/">Is it safe to buy off-plan in ' + esc(C) + '?</a></li>' : '') + (laws.length ? '<li><a href="/countries/' + S + '/buyer-protection-law/">Buyer protection law in ' + esc(C) + '</a></li>' : '') + '</ul>';
+  body += '<ul class="sx-chips"><li><a href="/countries/' + S + '/how-to-check/">How to check a project in ' + esc(C) + '</a></li>' + (n >= SAFE_MIN ? '<li><a href="/countries/' + S + '/is-it-safe/">Is it safe to buy off-plan in ' + esc(C) + '?</a></li>' : '') + (laws.length ? '<li><a href="/countries/' + S + '/buyer-protection-law/">Buyer protection law in ' + esc(C) + '</a></li>' : '') + placesForCountry(C).map(P => '<li><a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + esc(P.n) + '</a></li>').join('') + '</ul>';
   body += h2('markets', 'Markets in ' + C) + '<ul class="sx-chips">' + mk.map(o => '<li><a href="/m/' + slugM(o.m) + '/">' + esc(o.m) + ' (' + o.n + ')</a></li>').join('') + '</ul>';
   body += h2('projects', 'Off-plan projects tracked in ' + C) + '<p class="muted">Sorted by the number of buyer checks the developer makes public. Facts as advertised, checked against registers where we could; "not published" means we found no public source.</p>' + tableWrap(PHEAD, projectRows(B, L)) + unrevSection(B, U);
   if (lates.length) body += h2('delays', 'Furthest past the first handover date') + '<ol class="sx-l">' + lates.slice(0, 10).map(o => '<li><a href="' + plink(B, o.c) + '">' + esc(pname(B, o.c)) + '</a> (' + esc(o.c.market) + '): first handover on record ' + ymName(o.lm.first + '-01') + ', ' + o.lm.late + ' months ago' + (o.lm.moved ? '; date moved ' + o.lm.moved + ' months in total' : '') + '</li>').join('') + '</ol><p class="sx-src">Source: <a href="/data/on-time.json">/data/on-time.json</a> (as of ' + esc(B.ontime.as_of_month) + '). <a href="/rankings/most-delayed/">All markets</a></p>';
@@ -370,7 +371,7 @@ function pVs(B, key) {
 }
 function pRankings(B) {
   const mw = marketsWithDelays(B);
-  const body = '<ul class="sx-l"><li><a href="/rankings/most-delayed/">Most delayed off-plan projects</a>: past the first handover date on record, all markets</li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + '<li><a href="/rankings/changed-promises/">Most changed promises</a>: what developers changed on their own pages</li><li><a href="/new/">New this month</a></li><li><a href="/transparency-index/">Transparency index by market</a></li><li><a href="/vs/">Project comparisons</a></li></ul>';
+  const body = '<ul class="sx-l"><li><a href="/rankings/most-delayed/">Most delayed off-plan projects</a>: past the first handover date on record, all markets</li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + '<li><a href="/rankings/changed-promises/">Most changed promises</a>: what developers changed on their own pages</li><li><a href="/new/">New this month</a></li><li><a href="/rankings/transparency/">Transparency rankings: 30 islands and 30 cities</a>: every project scored 0 to 100 on what is published and checkable</li><li><a href="/transparency-index/">Transparency index by market</a></li><li><a href="/vs/">Project comparisons</a></li></ul>';
   return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency | Kolaboro', h1: 'Off-plan rankings', desc: 'Data-driven lists of off-plan projects: most delayed by market, most changed promises, new projects, transparency by market.', updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
 }
 
@@ -493,7 +494,7 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml']) {
+    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml']) {
       let ok = MEMO['__ext' + x]; if (!ok || Date.now() - ok.t > 600000) { let v = null; try { const r = B.inner ? await B.inner(x) : null; if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); v = { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length }; } } catch (e) { v = null; } ok = MEMO['__ext' + x] = { t: Date.now(), v }; }
       if (ok.v && ok.v.n) ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (ok.v.last ? '<lastmod>' + ok.v.last + '</lastmod>' : '') + '</sitemap>');
     }
