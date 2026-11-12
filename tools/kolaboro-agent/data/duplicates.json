@@ -40,11 +40,43 @@
   ]
  },
  {
+  "a": "tw-almazara-gardens-istan",
+  "b": "almazara-views-3",
+  "market": "Costa del Sol",
+  "why": [
+   "36 m apart"
+  ]
+ },
+ {
   "a": "cipriani-residences-miami",
   "b": "residences-1428-brickell-ytech",
   "market": "Miami",
   "why": [
    "149 m apart"
+  ]
+ },
+ {
+  "a": "time-square-8-phnom-penh",
+  "b": "time-square-6",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-8-phnom-penh",
+  "b": "time-square-11",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-8-phnom-penh",
+  "b": "time-square-7",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -72,11 +104,27 @@
   ]
  },
  {
+  "a": "baccarat-residences-miami-related-group",
+  "b": "619-brickell-by-nobu",
+  "market": "Miami",
+  "why": [
+   "145 m apart"
+  ]
+ },
+ {
   "a": "residences-1428-brickell-ytech",
   "b": "st-regis-residences-miami-brickell-related-integra",
   "market": "Miami",
   "why": [
    "149 m apart"
+  ]
+ },
+ {
+  "a": "damac-bay-by-cavalli-dubai",
+  "b": "damac-bay-2-by-cavalli",
+  "market": "Dubai",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -93,6 +141,14 @@
   "market": "Dubai",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "valmer-french-riviera",
+  "b": "viva-mare-french-riviera",
+  "market": "French Riviera",
+  "why": [
+   "0 m apart"
   ]
  },
  {
@@ -267,6 +323,94 @@
   "a": "ege-yapi-gokturk",
   "b": "ege-yapi-beyoglu",
   "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "affinity-broadbeach",
+  "b": "maison-broadbeach",
+  "market": "Gold Coast",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "toshi-france",
+  "b": "stud-este-france",
+  "market": "France",
+  "why": [
+   "114 m apart"
+  ]
+ },
+ {
+  "a": "golf-greens-damac-hills",
+  "b": "golf-gate-2-damac-hills",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "elo-3-damac-hills-2",
+  "b": "elo-2-damac-hills-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "elo-3-damac-hills-2",
+  "b": "elo-damac-hills-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "elo-2-damac-hills-2",
+  "b": "elo-damac-hills-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "canal-heights-de-grisogono",
+  "b": "canal-heights-2-de-grisogono",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-lume-seri-tanjung-pinang",
+  "b": "maris-seri-tanjung-pinang",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-6",
+  "b": "time-square-11",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-6",
+  "b": "time-square-7",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-11",
+  "b": "time-square-7",
+  "market": "Cambodia",
   "why": [
    "similar name"
   ]
