@@ -263,7 +263,10 @@ def main(data_dir, around_path, out_path, rc_path='route-cache.json'):
                 if tgt['d'] > 30 and not tgt.get('in'):
                     far = 1500 if cat == 'airport' else 400     # an airport's label sits in the middle of the airfield
                     car = route('car', (lat, lng), tgt['ll'])
-                    if car and len(car) == 4 and car[2] <= 400 and car[3] <= far: rec['car'] = car[:2]
+                    # n22e (12 Nov 2026): a route to an airport label can end on a service road inside the airfield (Las Vegas: 22.9 km
+                    # and 47 min for an airport 9.5 km away). Such a route is long and slow at once; it is not shown.
+                    airside = cat == 'airport' and car and len(car) == 4 and car[0] / max(tgt['d'], 1) > 2.2 and car[0] / max(car[1], 1) * 3.6 < 30
+                    if car and len(car) == 4 and car[2] <= 400 and car[3] <= far and not airside: rec['car'] = car[:2]
                     if tgt['d'] <= 5000 and cat != 'airport':
                         ft = route('foot', (lat, lng), tgt['ll'])
                         if ft and len(ft) == 4 and ft[2] <= 400 and ft[3] <= far: rec['foot'] = ft[:2]
@@ -279,7 +282,7 @@ def main(data_dir, around_path, out_path, rc_path='route-cache.json'):
            'source': {'claims': 'The developer\'s own page as we sealed it (text copy with its SHA-256), /projects/<slug>/changes/<sha>.txt',
                       'map': 'OpenStreetMap contributors, ODbL, https://www.openstreetmap.org/copyright (read from OpenFreeMap vector tiles, planet build ' + str(AR.get('osm_build')) + ')',
                       'routing': 'OSRM on OpenStreetMap data, public server of FOSSGIS e.V., https://routing.openstreetmap.de/ (car and foot profiles; times without traffic)'},
-           'route_limits': 'A route is kept when it starts within 400 m of the pin and ends within 400 m of the place (1,500 m for an airport, whose map label sits in the middle of the airfield).',
+           'route_limits': 'A route is kept when it starts within 400 m of the pin and ends within 400 m of the place (1,500 m for an airport, whose map label sits in the middle of the airfield). An airport route that is more than 2.2 times the straight line and slower than 30 km/h on average is not shown: it ended on a service road inside the airfield.',
            'method': 'Fixed patterns find numbers followed by minutes, metres, kilometres or miles in the page text, and the place they point at; text after a block of other projects ("similar projects" and the like) is not read. A claim is measured when that place is a kind we measure from the pin: beach, sea, airport, rail or metro station, bus stop, hospital, school, supermarket. A claim that names its place is measured only when exactly one mapped place fits that name (airports within about 150 km, other places within about 4 km); a named beach is not measured because beaches carry no name in our map data. A claim that names no place ("the beach", "airport") is measured to the nearest one mapped. Straight-line distance from the pin; road distance and time by OSRM where the route starts and ends within 400 m of both points.',
            'limits': 'The pin is accurate to about 100 m. The nearest mapped place may not be the one the developer means. OpenStreetMap can be incomplete. Route times ignore traffic, parking and waiting. Patterns can miss or misread a claim.',
            'fields': {'q': 'quote from the sealed copy (whitespace collapsed)', 'v': 'number claimed', 'v2': 'upper number of a range', 'u': 'min, m, km or mi', 'mode': 'walk or car when the page says so', 'cat': 'kind of place',
