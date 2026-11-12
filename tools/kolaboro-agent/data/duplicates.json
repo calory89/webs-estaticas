@@ -16,6 +16,22 @@
   ]
  },
  {
+  "a": "beach-walk-residences-4-imtiaz",
+  "b": "beach-walk-grand-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-residences-4-imtiaz",
+  "b": "beach-walk-grand-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "cipriani-residences-miami",
   "b": "residences-1428-brickell-ytech",
   "market": "Miami",
@@ -48,9 +64,57 @@
   ]
  },
  {
+  "a": "samana-hills-south-dubai",
+  "b": "samana-hills-south-3",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "cove-edition-6-dubai",
   "b": "cove-edition-5-by-imtiaz",
   "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "le-belvedere-bordo-neo",
+  "b": "le-belvedere-bordo-tempo",
+  "market": "France",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "cove-boulevard-by-imtiaz",
+  "b": "samana-ivy-gardens-2",
+  "market": "Dubai",
+  "why": [
+   "68 m apart"
+  ]
+ },
+ {
+  "a": "sunset-bay-grand-by-imtiaz",
+  "b": "sunset-bay-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-grand-2-by-imtiaz",
+  "b": "beach-walk-grand-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "atrium-gardens-the-ellinikon-little-athens",
+  "b": "trinity-gardens-the-ellinikon-little-athens",
+  "market": "Greece",
   "why": [
    "similar name"
   ]
