@@ -240,7 +240,7 @@ function story(X, mkt, month, lang) {
   }
   const url = ORIGIN + pre(lang) + path, cite = t(lang, 'st_cite', { mk: m, mo, url, d: N.fd(X.today, lang) });
   b += h2('cite', t(lang, 'cite_h')) + '<p class="cx-q">' + esc(cite) + '</p><p><a class="k-btn" href="/stories/' + month + '/' + mkt.s + '.csv" download>' + esc(t(lang, 'dl')) + '</a></p>';
-  b += h2('more', t(lang, 'more_h')) + '<ul class="cx-l"><li><a href="' + pre(lang) + '/m/' + slugM(m) + '/">' + esc(t(lang, 'l_market')) + ': ' + esc(m) + '</a></li><li><a href="/index/delays/">' + esc(t(lang, 'l_delay')) + '</a></li><li><a href="' + pre(lang) + '/changes/' + month + '/">' + esc(t(lang, 'l_changes')) + '</a></li><li><a href="' + pre(lang) + '/stories/">' + esc(t(lang, 'l_all')) + '</a></li></ul>';
+  b += h2('more', t(lang, 'more_h')) + '<ul class="cx-l"><li><a href="/m/' + slugM(m) + '/">' + esc(t(lang, 'l_market')) + ': ' + esc(m) + '</a></li><li><a href="/index/delays/">' + esc(t(lang, 'l_delay')) + '</a></li><li><a href="' + pre(lang) + '/changes/' + month + '/">' + esc(t(lang, 'l_changes')) + '</a></li><li><a href="' + pre(lang) + '/stories/">' + esc(t(lang, 'l_all')) + '</a></li></ul>';
   const title = t(lang, 'st_title', { mk: m, mo });
   const ds = { '@type': 'Dataset', '@id': url + '#dataset', name: 'Kolaboro off-plan data, ' + m + ', ' + N.fd(month, 'en'), description: t('en', 'st_lead', { k: L.length, mk: m }), url, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true,
     creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, temporalCoverage: month, dateModified: X.today, spatialCoverage: { '@type': 'Place', name: m + ', ' + (L[0].co || '') },

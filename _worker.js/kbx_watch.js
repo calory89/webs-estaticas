@@ -178,7 +178,7 @@ export function watchDevHtml(wd, slug, lang) {
     const L = (wd.byUrl.get(url) || []).slice(0, 6);
     h += '<div class="kwa-la"><h3>' + esc(t(lang, 'la_h')) + '</h3><p class="ki">' + esc(t(lang, 'la_intro', { doms: doms.slice(0, 6).join(', ') })) + '</p>' +
       (L.length ? '<ul class="kwa-l">' + L.map(x => itemHtml(x, lang)).join('') + '</ul>' : '<ul class="fl"><li class="kfact">' + esc(t(lang, 'none', { d: fdt(la.updated, lang) })) + ' <a class="src" href="/watch/lookalikes/">kolaboro.com</a></li></ul>') +
-      '<p class="kwa-lk"><a class="more" href="' + pre(lang) + '/watch/lookalikes/">' + esc(t(lang, 'all')) + '</a> <a class="more" href="' + pre(lang) + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div>';
+      '<p class="kwa-lk"><a class="more" href="' + pre(lang) + '/watch/lookalikes/">' + esc(t(lang, 'all')) + '</a> <a class="more" href="' + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div>';
   }
   const ok = sa ? (sa.lists || []).filter(l => l.ok) : [];
   if (sa && wd.clean.has(slug) && ok.length) {
@@ -204,7 +204,7 @@ function pageBody(la, lang) {
   const srcs = ((la && la.sources) || []).map(s => '<li><a href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.name) + '</a> <span class="k-muted">(' + esc(s.licence) + ')</span></li>').join('');
   return '<div class="kwa-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p><p class="kwa-cav">' + esc(t(lang, 'p_cav')) + '</p>' +
     (la ? '<p><b>' + esc(t(lang, 'p_count', { n: items.length, k, w: la.watched || 0 })) + '</b> <span class="k-muted">' + esc(t(lang, 'p_upd', { d: fdt(la.updated, lang) })) + '</span></p>' : '') + '</div>' + table + '</div></section>' +
-    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'p_mh')) + '</h2><p>' + esc(t(lang, 'p_m')) + '</p><h3>' + esc(t(lang, 'p_src')) + '</h3><ul class="kwa-src">' + srcs + '</ul><p><a href="/api/x/watch/lookalikes">/api/x/watch/lookalikes</a> · <a href="/data/lookalikes.json">/data/lookalikes.json</a> · <a href="' + pre(lang) + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div></section></div>';
+    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'p_mh')) + '</h2><p>' + esc(t(lang, 'p_m')) + '</p><h3>' + esc(t(lang, 'p_src')) + '</h3><ul class="kwa-src">' + srcs + '</ul><p><a href="/api/x/watch/lookalikes">/api/x/watch/lookalikes</a> · <a href="/data/lookalikes.json">/data/lookalikes.json</a> · <a href="' + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div></section></div>';
 }
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;

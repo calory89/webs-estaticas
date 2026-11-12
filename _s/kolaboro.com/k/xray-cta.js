@@ -340,7 +340,7 @@
       '<div class="kxc-row"><button class="kxc-btn" type="button" id="kxc-open" aria-expanded="' + (S.open ? 'true' : 'false') + '" aria-controls="kxc-pan">' + esc(t(copy.cta)) + '</button></div>' +
       '<div class="kxc-panel" id="kxc-pan"' + (S.open ? '' : ' hidden') + '>' + panel(logged, I, x) + '</div>') +
       sec('kxc-get', '<h3>' + esc(t('get')) + '</h3><ol class="kxc-tl">' + (O.timeline || []).map(function (s) { return '<li><b>' + esc(t(s[0])) + '</b>' + esc(t(s[1])) + '</li>'; }).join('') + '</ol>' +
-        '<p style="margin-top:12px"><a class="kxc-btn l" id="kxc-sample" href="' + hu((C.sample && C.sample.url) || '/report/sample') + '">' + esc(t('sample')) + '</a></p><p class="kxc-m">' + esc((C.sample && C.sample.note) ? tf('sample_n', { x: t(C.sample.note) }) : '') + '</p><p class="kxc-links"><a href="' + PRE + '/pricing/">' + esc(t('pricing')) + '</a><a href="' + PRE + '/book/">' + esc(t('how_book')) + '</a></p>') + '</div>';
+        '<p style="margin-top:12px"><a class="kxc-btn l" id="kxc-sample" href="' + hu((C.sample && C.sample.url) || '/report/sample') + '">' + esc(t('sample')) + '</a></p><p class="kxc-m">' + esc((C.sample && C.sample.note) ? tf('sample_n', { x: t(C.sample.note) }) : '') + '</p><p class="kxc-links"><a href="' + PRE + '/pricing/">' + esc(t('pricing')) + '</a><a href="/book/">' + esc(t('how_book')) + '</a></p>') + '</div>';
     // (23) monitoring, only when the project is off-plan with a future handover
     if (C.monitoring && C.monitoring.offered) {
       var M = C.monitor_offer || {};
