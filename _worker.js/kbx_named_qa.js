@@ -79,7 +79,7 @@ const S = {
     wh_around: 'Wat er rond het perceel ligt', wh_map: 'Het punt openen in OpenStreetMap', wh_mk: 'Alle projecten in {mk}', wh_rank: 'Transparantieranglijst: {p}',
     r6_h: 'Gerelateerde projecten', r6_dev: 'zelfde ontwikkelaar', r6_mk: 'ook in {mk}', r6_y: 'oplevering {y}',
     q_tr: 'Wat is de transparantiescore van {n}?', a_tr_x: 'Die telt wat gepubliceerd en controleerbaar is, niet de kwaliteit.', q_plan: 'Wat is het betalingsschema van {n}?', a_plan: 'Gepubliceerd betalingsschema: {p}. Vraag de ontwikkelaar naar de actuele voorwaarden voordat u betaalt.', a_price0: 'Op de pagina’s die we lazen staat geen prijs. Vraag de ontwikkelaar om de actuele prijslijst.' },
-  ru: { b: '{n}: отзывы', s1: ', ', s2: ', ', t_h: 'сдача {h}', t_pn: 'разрешение опубликовано', t_f: '{n}: отзывы и факты',
+  ru: { b: '{n}: отзывы', s1: ', ', s2: ', ', t_h: 'сдача: {h}', t_pn: 'разрешение опубликовано', t_f: '{n}: отзывы и факты',
     d_lead: '{n}: отзывы и факты{by}, {place}.', d_h: 'Срок сдачи по публикации: {h}.', d_h0: 'Срок сдачи не опубликован.', d_pn1: 'Номер разрешения опубликован.', d_pn0: 'Номер разрешения не опубликован.', d_tr: 'Оценка прозрачности {s}/100.', d_nr: 'Ещё не проверен нами; только факты с источниками.', d_chk: 'Проверено {d}.',
     qa_w0: '{n}: проект недвижимости, {place}.', qa_w0d: '{n}: проект недвижимости, {place}, застройщик {dev}.', qa_pn1: 'Номер разрешения опубликован.', qa_pn0: 'Номер разрешения не опубликован.',
     qa_tr: 'Оценка прозрачности: {s} из 100, место {r} из {m} в рейтинге «{p}».', qa_tr1: 'Оценка прозрачности: {s} из 100.', qa_cl: 'Подтверждено заявлений застройщика из проверенных нами: {v} из {c}.', qa_chk: 'Последняя проверка: {d}.',
