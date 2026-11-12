@@ -803,10 +803,11 @@ async function photoProxy(req, url, ctx, env) {
   if (m) { let k = m[2]; try { k = decodeURIComponent(k); } catch (e) {} m[2] = PH_OK.get(k); }
   if (!m || !m[2]) return new Response("Not found", { status: 404 });
   const acc = req.headers.get("accept") || "", fmt = env && env.IMGX === "1" ? (/image\/avif/.test(acc) ? "avif" : /image\/webp/.test(acc) ? "webp" : "") : "";
-  const cache = caches.default, key = new Request(url.toString() + (fmt ? "?f=" + fmt : "")); let r = await cache.match(key); if (r) return r;
+  const cache = caches.default, key = new Request(url.toString() + (fmt ? "?f=" + fmt : "")); let r = url.searchParams.get("dbg") ? null : await cache.match(key); if (r) return r;
   const fn = m[2].split("/").pop();
   if (fmt) { const big = m[1] === "1280" ? "1280" : "1280";
     const tr = await fetch(`https://upload.wikimedia.org/wikipedia/commons/thumb/${m[2]}/${big}px-${fn}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { image: { width: +m[1], quality: 70, format: fmt, fit: "scale-down", metadata: "none" }, cacheTtl: 2592000 } });
+    if (url.searchParams.get("dbg") === "1") return new Response(JSON.stringify({ st: tr.status, ct: tr.headers.get("content-type"), cfr: tr.headers.get("cf-resized"), body: tr.ok ? "" : (await tr.text()).slice(0, 300) }), { headers: { "content-type": "application/json", "cache-control": "no-store" } });
     if (tr.ok && (tr.headers.get("content-type") || "").includes(fmt)) { r = new Response(tr.body, { headers: { "content-type": "image/" + fmt, "cache-control": "public, max-age=2592000, immutable", "vary": "accept", "x-content-type-options": "nosniff" } }); ctx.waitUntil(cache.put(key, r.clone())); return r; } }
   let up = await fetch(`https://upload.wikimedia.org/wikipedia/commons/thumb/${m[2]}/${m[1]}px-${fn}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { cacheTtl: 2592000, cacheEverything: true } });
   if (!up.ok) up = await fetch(`https://upload.wikimedia.org/wikipedia/commons/${m[2]}`, { headers: { "user-agent": "SumbaSecrets/1.0 (https://sumbasecrets.com; info@ecobeachcity.com)" }, cf: { cacheTtl: 2592000, cacheEverything: true } });
