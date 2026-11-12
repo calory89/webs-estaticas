@@ -73,7 +73,7 @@ export async function page(r, u, status, env) {
   // n26i (batch 26): header and footer in the page language too. The static 404.html is English; for /<lang>/ paths the shell is the
   // translated /<lang>/how-we-score/ page (the same shell the named pages use), with its head reduced to a noindex 404.
   let src = r;
-  if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request('https://kolaboro.com/' + lang + '/how-we-score/')); if (s.ok && /text\/html/.test(s.headers.get('content-type') || 'text/html')) src = s; } catch (e) { src = r; }
+  if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/' + lang + '/how-we-score/index.html')); if (s.ok && /text\/html/.test(s.headers.get('content-type') || 'text/html')) src = s; } catch (e) { src = r; }
   const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag');
   const out = new Response(src.body, { status: gone ? 410 : 404, headers: h });
   const title = (gone ? L.g : L.t) + ' | Kolaboro';
