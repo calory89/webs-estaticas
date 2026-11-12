@@ -141,6 +141,8 @@ export function qaTitle(lang, f) {
   C.push(q(lang, 't_f', { n: f.n }) + ' | Kolaboro', base + ' | Kolaboro', base);
   const n2 = String(f.n).replace(/\s*\([^)]*\)/g, '').trim();   // a long name without its bracketed part ("Meriva Collection (Gardens / Signature)")
   if (n2 && n2 !== f.n) { const b2 = q(lang, 'b', { n: n2 }); if (facts.length) C.push(b2 + q(lang, 's1') + facts[0] + ' | Kolaboro', b2 + q(lang, 's1') + facts[0]); C.push(b2 + ' | Kolaboro', b2); }
+  const n3 = (n2 || String(f.n)).split(/,\s|\s[-\u2013]\s|\s\//)[0].trim();   // still too long: the name up to its first comma, dash or slash
+  if (n3 && n3 !== n2 && n3 !== f.n) C.push(q(lang, 'b', { n: n3 }) + ' | Kolaboro', q(lang, 'b', { n: n3 }));
   return C.find(t => len(t) <= 60) || base;
 }
 // Description under 155 characters, most useful facts first; shorter place, then fewer facts until it fits.

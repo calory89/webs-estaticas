@@ -39,7 +39,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
+const CACHE_V = 'named-v60';   // v60: very long project names shortened in the title (n24s)   // was
+//   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
 //   'named-v57';   // v57: payment email check link without a language prefix on developer pages (n22e)   // was   // v56: gazette section: 5 rows before Show all, paths left to right in Arabic (n21a)   // was   // v55: official gazette notices on developer pages; warning lists shown as a row of sources (n21a)   // was   // v54: around the site, distance claims, climate at the plot (n21b)   // was   // v53: filings data for listed developers, rules table layout (n21c)   // was   // v52: short-let rules next to the short-let figures, filings section on developer pages (n21c)   // was   // v51: regulator warning lists line, gazette notices section on developer pages (n21a)   // was   // v50: accessibility pass (n21e)   // was    // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
 //     // 'named-v45';   // v45: lookalike websites and sanctions screening on developer pages (n19a)
