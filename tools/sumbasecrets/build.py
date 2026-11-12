@@ -8,6 +8,12 @@ from gallery import GALLERY
 from guides2 import GUIDES2, TOWNS_TXT, EXTRA_UI, EXTRA_UI2, VIDEOS, VIDEO_META
 EXTRA_UI = dict(EXTRA_UI, **EXTRA_UI2)
 from translate import tr_tree
+import translate
+from places_mamboro import MAMBORO, TR6, MAMBORO_GAL, BASE as NEAR_BASE, NEAR
+PLACES += MAMBORO
+GALLERY.update(MAMBORO_GAL)
+for _l, _m in TR6.items():  # hand translations for the six extra languages
+    for _en, _tx in _m.items(): translate.CACHE[translate.key(_l, _en)] = _tx
 
 NEW = ["it", "zh", "ja", "ko", "ru", "pt"]
 LANGS = HAND + NEW
@@ -55,6 +61,7 @@ for p in PLACES:
     for l in LANGS: assert p[l]["t"] and p[l]["tip"], (p["s"], l)
     assert p["s"] in GALLERY or p["img"], ("no photo", p["s"])
 for l in LANGS:
+    assert l in NEAR and set(NEAR[l]) == set(NEAR["en"]), ("near ui", l)
     assert set(UI[l]) == set(UI["en"]), (l, set(UI["en"]) ^ set(UI[l]))
     assert set(UI2[l]) == set(UI2["en"]), (l, set(UI2["en"]) ^ set(UI2[l]))
     assert len(WX[l]) == 8 and len(UI[l]["days"]) == 7, l
@@ -65,7 +72,7 @@ assert not any(b in blob for b in bad), "hotel photo in gallery"
 data = {"langs": LANGS, "lname": LNAME, "tl": TIMES_LANG, "ui": UI, "ui2": UI2, "wx": WX, "places": PLACES, "towns": TOWNS, "towntxt": TOWNS_ALL,
         "guides": GUIDES_ALL, "credits": CREDITS, "rtxt": REGION_TXT, "rslug": REGION_SLUG, "cslug": CAT_SLUG, "ctxt": CAT_TXT, "season": SEASON,
         "gallery": GALLERY, "airports": AIRPORTS, "regions": json.load(open("regions.json")), "indexnow": "5f0c3b7e9a2d4c18b6e1a7f3d9c2e0b4",
-        "built": datetime.date.today().isoformat(), "videos": VIDEOS, "vmeta": VIDEO_META}
+        "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
 tpl = open("worker.tpl.js").read()
 out = tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 open("worker.js", "w").write(out)

@@ -17,6 +17,11 @@ const WX = {
 function km(a, b) { const R=6371, t=x=>x*Math.PI/180; const dl=t(b[0]-a[0]), dn=t(b[1]-a[1]);
   const h=Math.sin(dl/2)**2+Math.cos(t(a[0]))*Math.cos(t(b[0]))*Math.sin(dn/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
 function img(slug, size) { return `${TIMES}/img/${slug}-${size}.webp`; }
+// ---- Top 10 around Mamboro (distances from Eco Beach City, the publisher's base on the north coast) ----
+const NB = D.nbase;
+const NT = l => D.near[l] || D.near.en;
+const NEAR10 = D.places.map(p => [km(NB.ll, p.ll), p]).sort((a, b) => a[0] - b[0]).slice(0, 10);
+const NEAR_SET = new Set(NEAR10.map(x => x[1].s));
 
 const CSS = `:root{--bg:#f7f2e8;--paper:#fffdf8;--ink:#1b2722;--mute:#5d6a63;--line:#e4dccb;--teal:#0e6f66;--teal2:#0a5650;--gold:#c08a2b;--card:#fffdf8;--shadow:0 1px 2px rgba(27,39,34,.06),0 6px 24px rgba(27,39,34,.06)}
 @media (prefers-color-scheme:dark){:root{--bg:#111815;--paper:#18211d;--ink:#ece6d8;--mute:#a3ada6;--line:#2a3530;--teal:#4fb3a6;--teal2:#7fd0c4;--gold:#e0ad55;--card:#18211d;--shadow:none}}
@@ -102,7 +107,27 @@ section.dark{background:#0f1714;color:#ece6d8}section.dark .lead{color:#a9b3ac}.
 .fab-map{position:fixed;right:18px;bottom:18px;z-index:1500;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:999px;padding:12px 18px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.25)}.fab-map:hover{background:var(--teal);color:#fff}
 .totop{position:fixed;right:18px;bottom:76px;z-index:1500;width:44px;height:44px;border-radius:50%;border:0;background:var(--paper);box-shadow:0 6px 18px rgba(0,0,0,.18);font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}.totop.show{opacity:1;pointer-events:auto}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hx-sl img{transition:none}.hx-sc{animation:none}}
+/* 13-nov-2026: buttons, focus, Mamboro top 10 */
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;line-height:1.2;border:0;cursor:pointer;font:inherit;font-weight:700;letter-spacing:.005em;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 6px 18px -8px rgba(14,111,102,.75);transition:transform .15s ease,box-shadow .2s ease,filter .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 12px 26px -10px rgba(14,111,102,.85)}.btn:active{transform:translateY(0) scale(.98)}
+.btn.alt2{box-shadow:0 1px 2px rgba(0,0,0,.06)}.btn.alt2:hover{background:var(--bg);box-shadow:0 8px 20px -12px rgba(0,0,0,.35)}
+.btn.big{box-shadow:0 10px 30px -10px rgba(232,111,77,.9)}.btn.ghost{box-shadow:none}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #e0ad55;outline-offset:3px;border-radius:10px}
+.chip{transition:background .2s,color .2s,border-color .2s,transform .15s}.chip:hover{border-color:var(--teal);transform:translateY(-1px)}
+.card{transition:transform .2s ease,box-shadow .25s ease}.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(27,39,34,.45)}
+.fab-map{display:inline-flex;align-items:center;gap:6px;transition:transform .15s,background .2s}.fab-map:hover{transform:translateY(-2px)}
+.near{background:linear-gradient(180deg,var(--bg),var(--sand))}
+.ncs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:thin}.ncs>a{scroll-snap-align:start}
+.nc{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:var(--card);border:1px solid var(--line);text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .2s,box-shadow .25s}.nc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(27,39,34,.5)}
+.nc-ph{position:relative;aspect-ratio:3/2;background:linear-gradient(135deg,var(--c,#0e6f66),#0b3b37);overflow:hidden}.nc-ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.nc:hover .nc-ph img{transform:scale(1.06)}
+.nc-n{position:absolute;left:10px;top:10px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fffdf8;color:#1b2722;font-family:Fraunces,Georgia,serif;font-size:19px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.nc-km{position:absolute;right:10px;bottom:10px;background:rgba(15,23,20,.72);backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.nc-tx{padding:12px 14px 14px;display:flex;flex-direction:column;gap:3px}.nc-tx small{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.06em}.nc-tx small i{font-style:normal;color:var(--gold);font-weight:700}.nc-tx b{font-family:Fraunces,Georgia,serif;font-size:20px;line-height:1.15}.nc-tx>span{color:var(--mute);font-size:15px}
+.nlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}.nc.big .nc-tx b{font-size:23px}
+.near-cta{margin:14px 0 0}.qf.nb{align-self:start}.mute{color:var(--mute);font-size:14px}
+.basepin{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:radial-gradient(circle at 30% 30%,#fff7e6,#e0ad55);border:3px solid #fff;box-shadow:0 0 0 4px rgba(224,173,85,.45),0 6px 16px rgba(0,0,0,.35)}
+@media(max-width:820px){.ncs{grid-auto-columns:72%}}
+@media (prefers-reduced-motion:reduce){.card,.nc,.btn{transition:none}.rv{opacity:1;transform:none}.hx-sl img{transition:none}.hx-sc{animation:none}}
 section{padding:64px 0}
 @media(max-width:980px){.exp{grid-template-columns:repeat(5,72%);overflow-x:auto;scroll-snap-type:x mandatory}.ex{scroll-snap-align:start;aspect-ratio:4/5}.mos{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}.mo.big{grid-column:span 2}.why3,.steps,.itc,.vids{grid-template-columns:1fr}.regs,.nm{grid-template-columns:repeat(2,1fr)}.sod-in,.mapcta-in,.pl2{grid-template-columns:1fr}.pl2-side .qf:first-child{position:static}.hx-in{bottom:110px}.hx-live{gap:8px;font-size:12px;bottom:18px}.hx-sc{display:none}.fab-map span{display:none}.gal2{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.itc{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto}}
 `;
@@ -136,7 +161,7 @@ ${o.leaflet ? '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/li
 <header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
 <a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆</a>${langPicker(l, path, false)}</div></header>
 <main>${o.body}</main><nav class="bnav" aria-label="Mobile">${[["/", "🏝️", "Sumba"], ["/secret-spots/", "★", u.secrets], ["/guides/", "📖", u.guides], ["/map/", "🗺️", u.map], ["/saved/", "☆", D.ui2[l].saved]].map(([p, i, t]) => `<a href="/${l}${p}"${p === path ? ' class="on" aria-current="page"' : ""}><span>${i}</span><small>${esc(t)}</small></a>`).join("")}</nav><a class="fab-map" href="/${l}/map/" aria-label="${esc(u.map)}">🗺️ <span>${esc(u.map)}</span></a><button class="totop" aria-label="${esc(D.ui2[l].back_top)}" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
-${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a></p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
+${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a> · <a href="/${l}/mamboro/">🏡 ${esc(NT(l).t)}</a></p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
 <p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
 ${o.leaflet ? '<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>' : ""}${o.js ? `<script>addEventListener("DOMContentLoaded",function(){${o.js}})</script>` : ""}<script>${COMMONJS(l)}</script></body></html>`;
 }
@@ -149,7 +174,7 @@ var m=L.map('map',{scrollWheelZoom:false}).setView(${JSON.stringify(opts.center 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap'}).addTo(m);
 var layers=[];P.forEach(function(p){var mk=L.circleMarker(p.ll,{radius:p.sec?10:8,color:p.sec?'#e0ad55':'#fff',weight:p.sec?4:2,fillColor:C[p.c],fillOpacity:.95}).addTo(m);
 mk.bindPopup('<b>'+p.n+'</b><br><small>'+CAT[p.c]+(p.sec?' · '+SB:'')+'</small><br>'+p.d+'<br><a href="/${l}/place/'+p.s+'/">'+RM+' →</a>');layers.push({p:p,mk:mk});});
-${opts.fit ? "m.fitBounds(L.featureGroup(layers.map(function(x){return x.mk})).getBounds().pad(.05));" : ""}
+${opts.base ? `L.marker(${JSON.stringify(NB.ll)},{zIndexOffset:2000,icon:L.divIcon({className:'',html:'<div class="basepin">🏡</div>',iconSize:[38,38],iconAnchor:[19,19]})}).addTo(m).bindPopup(${JSON.stringify('<b>' + esc(NT(l).base) + '</b><br><small>' + esc(NT(l).base_d) + '</small>')});` : ""}${opts.fit ? "m.fitBounds(L.featureGroup(layers.map(function(x){return x.mk})).getBounds().pad(.08));" : ""}
 document.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;
 layers.forEach(function(x){var show=f==='all'||(f==='secret'?x.p.sec:x.p.c===f);if(show)x.mk.addTo(m);else m.removeLayer(x.mk)});
 document.querySelectorAll('[data-cat]').forEach(function(el){el.style.display=(f==='all'||(f==='secret'?el.dataset.sec==='1':el.dataset.cat===f))?'':'none'})}});
@@ -308,6 +333,28 @@ function itinerary(l) {
     return `<div class="wxc"><h3>${esc(u2.day)} ${i + 1} · <a href="${regionPath(l, r)}">${esc(u.reg[r])}</a></h3><ol>${it.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ol></div>`; }).join("")}</div></div></section>`;
 }
 
+function nearCards(l, big) {
+  const u = D.ui[l], n = NT(l);
+  return NEAR10.map(([d, p], i) => { const t = P(p, l), ph = photos(p)[0];
+    return `<a class="nc${big ? " big" : ""}" href="/${l}/place/${p.s}/"><span class="nc-ph" style="--c:${CAT_COLOR[p.c]}">${ph ? `<img src="${ph.s}" alt="${esc(t.n)}" loading="lazy" width="500" height="333" onerror="this.remove()">` : ""}<b class="nc-n">${i + 1}</b><span class="nc-km">${Math.max(1, Math.round(d))} ${esc(n.km)}</span></span><span class="nc-tx"><small>${CAT_ICON[p.c]} ${esc(u.cat[p.c])}${p.sec ? ` · <i title="${esc(u.secret_badge)}">★</i>` : ""}</small><b>${esc(t.n)}</b>${big ? `<span>${esc(t.t.split(". ")[0])}.</span>` : ""}</span></a>`; }).join("");
+}
+function nearSection(l) {
+  const n = NT(l);
+  return `<section class="near rv"><div class="w"><div class="hd"><div><p class="kick dark">🏡 Mamboro · ${esc(D.ui[l].reg.st)}</p><h2 class="sec xl">${esc(n.t)}</h2><p class="lead">${esc(n.d)}</p></div><a class="more" href="/${l}/mamboro/">${esc(n.go)} →</a></div>
+<div class="ncs">${nearCards(l, false)}</div><p class="near-cta"><a class="btn" href="/${l}/mamboro/">${esc(n.go)} →</a><a class="btn alt2" href="/${l}/map/#near">🗺️ ${esc(n.map)}</a></p></div></section>`;
+}
+function mamboroPage(l) {
+  const u = D.ui[l], n = NT(l), first = photos(D.places.find(p => p.s === "mamboro-savanna"))[0];
+  const items = NEAR10.map(x => x[1]);
+  const body = `${bannerHero(first.b.replace("/ph/1280/", "/ph/960/"), "🏡 Mamboro · " + esc(u.reg.st), esc(n.t), esc(n.d))}
+<section><div class="w"><div class="nlist">${nearCards(l, true)}</div>
+<div class="two" style="margin-top:34px"><div><h2 class="sec h2s">🗺️ ${esc(u.map)}</h2><div id="map" style="height:420px"></div><p><a class="btn" href="/${l}/map/#near">${esc(n.map)} →</a></p></div>
+<aside class="qf nb"><p class="kick dark">🏡 ${esc(n.base)}</p><h2>${esc(n.why)}</h2><p>${esc(n.why_d)}</p><p class="mute">${esc(n.base_d)}</p><p><a class="btn alt2" href="${NB.url}" rel="noopener">${esc(n.visit)} ↗</a></p></aside></div></div></section>`;
+  const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [n.t, `/${l}/mamboro/`]])];
+  const js = mapJS(l, items, { fit: true, base: true });
+  return page(l, "/mamboro/", { home: true, title: n.t, desc: n.d, body, ld, leaflet: true, js });
+}
+
 function home(l) {
   const u = D.ui[l], u2 = D.ui2[l];
   const heroSl = ["weekuri-lagoon", "wairinding-hill", "tanggedu-waterfall", "ratenggaro", "walakiri-beach"].map(s => D.gallery[s][0]);
@@ -335,6 +382,8 @@ function home(l) {
 
 <section class="rv"><div class="w"><div class="hd"><div><p class="kick dark">★ ${esc(u.secret_badge)}</p><h2 class="sec xl">${esc(u.secrets)}</h2><p class="lead">${esc(u.secrets_d)}</p></div><a class="more" href="/${l}/secret-spots/">${esc(u2.all_secrets)} →</a></div>
 <div class="mos">${secrets.slice(0, 9).map((p, i) => { const t = P(p, l), ph = photos(p)[0]; return `<a class="mo${i === 0 ? " big" : ""}" href="/${l}/place/${p.s}/"><img src="${i === 0 ? ph.b.replace("/ph/1280/", "/ph/960/") : ph.s}" alt="${esc(t.n)}" loading="lazy"><span><small>${esc(u.reg[p.r])}</small><b>${esc(t.n)}</b></span></a>`; }).join("")}</div></div></section>
+
+${nearSection(l)}
 
 <section class="why rv"><div class="w"><h2 class="sec xl center">${esc(u2.why_t)}</h2><div class="why3">${[["🏝️", u2.why1_t, u2.why1_d], ["🛖", u2.why2_t, u2.why2_d], ["🐎", u2.why3_t, u2.why3_d]].map(([i, t, d]) => `<div><span class="wi">${i}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join("")}</div></div></section>
 
@@ -443,18 +492,41 @@ select.lg{pointer-events:auto;border:0;border-radius:12px;padding:10px;font:inhe
 .fab{position:fixed;z-index:1000;left:12px;bottom:24px;display:flex;flex-direction:column;gap:8px}.fab button{pointer-events:auto;border:0;width:44px;height:44px;border-radius:12px;background:rgba(255,253,248,.96);box-shadow:0 4px 18px rgba(0,0,0,.2);font-size:20px;cursor:pointer}
 .leaflet-top.leaflet-right{top:118px}.toast{position:fixed;z-index:2000;left:50%;bottom:30px;transform:translateX(-50%);background:#1b2722;color:#fff;padding:8px 14px;border-radius:999px;display:none}
 .grab{display:none}
+/* 13-nov-2026: map design v2 */
+.box{background:rgba(255,253,248,.9);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 34px -10px rgba(15,23,20,.45)}
+.brand{display:flex;align-items:center;gap:8px}.brand::before{content:"";width:24px;height:24px;border-radius:7px;background:url("/icon.svg") center/cover;flex:none}
+.sb input{border-radius:10px}.sb input:focus{background:#fff}
+.ch button{transition:background .2s,color .2s,border-color .2s,transform .15s;min-height:34px}.ch button:hover{border-color:#0e6f66;transform:translateY(-1px)}
+.ch button.nearb{background:linear-gradient(135deg,#fff7e6,#f3dfb4);border-color:#e0ad55;font-weight:700}.ch button.nearb.on{background:linear-gradient(135deg,#c08a2b,#e0ad55);color:#1b2722;border-color:#c08a2b}
+.pan{border-radius:20px}.lh{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 14px;background:rgba(255,253,248,.97);border-bottom:1px solid #eee5d4;font-size:13px;color:#5d6a63}.lh b{color:#1b2722;font-size:15px}.lh.near{background:linear-gradient(135deg,#fff7e6,#fbecc9)}.lh a{font-weight:700;color:#0e6f66;text-decoration:none;white-space:nowrap}
+.it{transition:background .15s}.it:hover{background:#f4eddd}.it .go{margin-left:auto;font-size:22px;color:#b9ae98;transition:transform .2s,color .2s}.it:hover .go{transform:translateX(3px);color:#0e6f66}
+.it img,.it .ph{width:72px;height:54px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.rk{display:inline-grid;place-items:center;font-style:normal;width:22px;height:22px;border-radius:50%;background:#1b2722;color:#fff;font-size:12px;margin-right:2px;vertical-align:1px}
+.pin{width:36px;height:36px;background-image:linear-gradient(135deg,rgba(255,255,255,.28),rgba(0,0,0,.12))!important;box-shadow:0 6px 14px -4px rgba(0,0,0,.55);animation:drop .45s cubic-bezier(.2,1.4,.4,1) backwards}@keyframes drop{from{transform:translateY(-18px) rotate(-45deg);opacity:0}to{transform:rotate(-45deg);opacity:1}}
+.pinw.act .pin{animation:none}.pinw.act::after{content:"";position:absolute;left:50%;top:100%;width:46px;height:46px;margin:-30px 0 0 -23px;border-radius:50%;border:3px solid #e0ad55;animation:ring 1.4s ease-out infinite;pointer-events:none}@keyframes ring{from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}}
+.clu{background:radial-gradient(circle at 30% 30%,#2fa395,#0b3b37);border:3px solid rgba(255,255,255,.95);box-shadow:0 0 0 6px rgba(14,111,102,.28),0 8px 20px rgba(0,0,0,.4);font-family:Fraunces,Georgia,serif}
+.basepin{position:relative;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,#fff7e6,#e0ad55);border:3px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.45);cursor:pointer}.basepin span{font-size:22px}.basepin i{position:absolute;inset:-8px;border-radius:50%;border:3px solid rgba(224,173,85,.9);animation:ring 2s ease-out infinite}
+.bpw .leaflet-popup-content-wrapper{border-radius:16px}.bpop b{font-family:Fraunces,Georgia,serif;font-size:18px}.bpop p{margin:6px 0 10px;color:#5d6a63}.bpop a.bt{color:#fff}.bpop a.bt.l{color:#1b2722}
+.fab button{display:grid;place-items:center;border-radius:14px;transition:transform .15s,background .2s;backdrop-filter:blur(10px)}.fab button:hover{transform:translateY(-2px);background:#fff}
+.bt{transition:transform .15s,filter .2s,box-shadow .2s;min-height:40px;display:inline-flex;align-items:center;gap:6px;box-shadow:0 6px 16px -8px rgba(14,111,102,.8)}.bt:hover{transform:translateY(-2px);filter:brightness(1.07)}.bt.l{box-shadow:none}.bt.l:hover{background:#e6dcc6}
+.leaflet-control-zoom{border:0!important;box-shadow:0 10px 30px -10px rgba(15,23,20,.45)!important;border-radius:14px!important;overflow:hidden}.leaflet-control-zoom a{width:40px!important;height:40px!important;line-height:40px!important;background:rgba(255,253,248,.95)!important;color:#1b2722!important}
+.leaflet-control-layers{border:0!important;border-radius:14px!important;box-shadow:0 10px 30px -10px rgba(15,23,20,.45)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #e0ad55;outline-offset:2px}
+.det .gl img{height:250px}.det h2{font-size:28px}@media(min-width:761px){.leaflet-top.leaflet-right{right:400px}}
+@media(max-width:760px){.pan{border-radius:22px 22px 0 0}.det .gl img{height:200px}}
+@media (prefers-reduced-motion:reduce){.pin,.pinw.act::after,.basepin i{animation:none}}
 @media(max-width:760px){.top{flex-wrap:wrap}.sb{max-width:none;order:3;flex-basis:100%}.brand{font-size:17px}.pan{left:0;right:0;width:auto;top:auto;bottom:0;height:42vh;border-radius:18px 18px 0 0;transition:height .25s}.pan.min{height:64px}.pan.max{height:82vh}.grab{display:block;width:44px;height:5px;border-radius:9px;background:#cfc6b4;margin:8px auto}.fab{bottom:calc(42vh + 14px)}.leaflet-top.leaflet-right{top:150px}.det .gl img{height:190px}}`;
 
 function mapApp(l, canonicalPath) {
   const u = D.ui[l], u2 = U2(l);
   const pts = D.places.map(p => { const t = P(p, l); const ph = photos(p); const [tk, town] = nearestOf(p.ll, D.towns); const [ak, ap] = nearestOf(p.ll, D.airports);
-    return { s: p.s, n: t.n, c: p.c, r: p.r, sec: p.sec, ll: p.ll, t: t.t, tip: t.tip, ph: ph.map(x => [x.s, x.b, x.a, x.l]), town: town.s, tk: Math.round(tk), ap: ap.code, ak: Math.round(ak) }; });
-  const S = { cat: u.cat, reg: u.reg, sb: u.secret_badge, tip: u.tip, dir: u.directions, vid: u2.videos, share: u2.share, copied: u2.copied, guide: u.readmore, km: u2.km_from, wx: D.wx[l], close: u2.close, nophoto: u.nophoto, photo: u.photo };
+    return { s: p.s, n: t.n, c: p.c, r: p.r, sec: p.sec, ll: p.ll, t: t.t, tip: t.tip, ph: ph.map(x => [x.s, x.b, x.a, x.l]), town: town.s, tk: Math.round(tk), ap: ap.code, ak: Math.round(ak), nk: Math.max(1, Math.round(km(NB.ll, p.ll))), nr: NEAR10.findIndex(x => x[1].s === p.s) + 1 }; });
+  const NN = NT(l); const S = { nkm: NN.km, nbase: NN.base, nbd: NN.base_d, ntop: NN.t, ngo: NN.go, nurl: `/${l}/mamboro/`, nbu: NB.url, nvis: NN.visit, nll: NB.ll, cat: u.cat, reg: u.reg, sb: u.secret_badge, tip: u.tip, dir: u.directions, vid: u2.videos, share: u2.share, copied: u2.copied, guide: u.readmore, km: u2.km_from, wx: D.wx[l], close: u2.close, nophoto: u.nophoto, photo: u.photo };
   const js = `(function(){var P=${JSON.stringify(pts)},T=${JSON.stringify(D.towns)},A=${JSON.stringify(D.airports)},R=${JSON.stringify(D.regions)},RS=${JSON.stringify(D.rslug)},S=${JSON.stringify(S)},C=${JSON.stringify(CAT_COLOR)},IC=${JSON.stringify(CAT_ICON)},LG=${JSON.stringify(l)};
 var RC={sbd:'#0e7c86',sb:'#6c8a2e',st:'#2f6fb5',stim:'#c08a2b'};
 var m=L.map('m',{zoomControl:false,attributionControl:true}).setView([-9.68,119.75],9);L.control.zoom({position:'topright'}).addTo(m);L.control.scale({imperial:false,position:'bottomright'}).addTo(m);
 var base={${JSON.stringify(u2.l_map)}:L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap &copy; CARTO'}),
-${JSON.stringify(u2.l_sat)}:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
+${JSON.stringify(u2.l_sat)}:L.layerGroup([L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,pane:'overlayPane',opacity:.9})]),
 ${JSON.stringify(u2.l_topo)}:L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'&copy; OpenStreetMap, SRTM | OpenTopoMap (CC-BY-SA)'})};
 base[${JSON.stringify(u2.l_sat)}].addTo(m);
 var zones=L.layerGroup(),towns=L.layerGroup(),apts=L.layerGroup();
@@ -468,24 +540,25 @@ var RT=${JSON.stringify(ROUTES)},RTC=['#e0ad55','#e05555','#8a3f8f'],routes=L.la
 var ov={};ov[${JSON.stringify(u2.routes)}]=routes;ov[${JSON.stringify(u2.zones)}]=zones;ov[${JSON.stringify(u2.towns)}]=towns;ov[${JSON.stringify(u2.airports)}]=apts;L.control.layers(base,ov,{position:'topright',collapsed:true}).addTo(m);
 var MK={},CL=L.markerClusterGroup?L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:11,spiderfyOnMaxZoom:true,showCoverageOnHover:false,zoomToBoundsOnClick:true,iconCreateFunction:function(c){return L.divIcon({className:'',html:'<div class="clu"><b>'+c.getChildCount()+'</b></div>',iconSize:[44,44],iconAnchor:[22,22]})}}):L.layerGroup();CL.addTo(m);
 P.forEach(function(p){var mk=L.marker(p.ll,{title:p.n,riseOnHover:true,zIndexOffset:500,icon:L.divIcon({className:'pinw',html:'<div class="pin'+(p.sec?' sec':'')+'" style="background:'+C[p.c]+'"><span>'+IC[p.c]+'</span></div>',iconSize:[34,34],iconAnchor:[17,34]})});mk.on('click',function(ev){if(ev&&ev.originalEvent)L.DomEvent.stopPropagation(ev.originalEvent);open(p.s)});CL.addLayer(mk);MK[p.s]=mk});
+var BM=L.marker(S.nll,{zIndexOffset:4000,title:S.nbase,icon:L.divIcon({className:'',html:'<div class="basepin"><span>🏡</span><i></i></div>',iconSize:[46,46],iconAnchor:[23,23]})}).addTo(m).bindPopup('<div class="bpop"><b>'+e(S.nbase)+'</b><p>'+e(S.nbd)+'</p><a class="bt" href="'+S.nurl+'">'+e(S.ngo)+' →</a> <a class="bt l" href="'+S.nbu+'" target="_blank" rel="noopener">'+e(S.nvis)+' ↗</a></div>',{maxWidth:280,className:'bpw'});BM.on('click',function(){filt('near',1)});
 var ACT=null;function act(s){if(ACT&&MK[ACT]){MK[ACT].setZIndexOffset(500);var o=MK[ACT].getElement();if(o)o.classList.remove('act')}ACT=s;if(s&&MK[s]){MK[s].setZIndexOffset(3000);var el=MK[s].getElement();if(el)el.classList.add('act')}}m.on('moveend zoomend',function(){if(ACT)act(ACT)});
 var wide=innerWidth>760;m.fitBounds(L.latLngBounds(P.map(function(p){return p.ll})),{paddingTopLeft:[20,wide?110:150],paddingBottomRight:[wide?400:20,wide?20:innerHeight*.42]});function lab(){document.getElementById('m').classList.toggle('hidelab',m.getZoom()>10)}m.on('zoomend',lab);lab();
 var pan=document.getElementById('pan'),list=document.getElementById('list'),det=document.getElementById('det'),q=document.getElementById('q'),cur='all';
 function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function vis(p){var f=cur,s=(q.value||'').toLowerCase();if(s&&(p.n+' '+S.reg[p.r]+' '+S.cat[p.c]).toLowerCase().indexOf(s)<0)return false;if(f==='all')return true;if(f==='secret')return p.sec;if(f.indexOf('reg:')===0)return p.r===f.slice(4);return p.c===f}
-function draw(){var h='';P.forEach(function(p){var v=vis(p);if(v){if(!CL.hasLayer(MK[p.s]))CL.addLayer(MK[p.s])}else{if(CL.hasLayer(MK[p.s]))CL.removeLayer(MK[p.s])}if(!v)return;h+='<div class="it" data-s="'+p.s+'">'+(p.ph[0]?'<img src="'+p.ph[0][0]+'" alt="" loading="lazy" onerror="this.style.visibility=\\'hidden\\'">':'<div class="ph" style="background:'+C[p.c]+'">'+IC[p.c]+'</div>')+'<div><b>'+e(p.n)+'</b><small>'+IC[p.c]+' '+e(S.cat[p.c])+' · '+e(S.reg[p.r])+(p.sec?' · <span class="g">★ '+e(S.sb)+'</span>':'')+'</small></div></div>'});list.innerHTML=h;
+function vis(p){var f=cur,s=(q.value||'').toLowerCase();if(s&&(p.n+' '+S.reg[p.r]+' '+S.cat[p.c]).toLowerCase().indexOf(s)<0)return false;if(f==='all')return true;if(f==='near')return p.nr>0;if(f==='secret')return p.sec;if(f.indexOf('reg:')===0)return p.r===f.slice(4);return p.c===f}
+function draw(){var h='',nv=0,O=cur==='near'?P.slice().sort(function(a,b){return a.nr-b.nr}):P;O.forEach(function(p){var v=vis(p);if(v)nv++;if(v){if(!CL.hasLayer(MK[p.s]))CL.addLayer(MK[p.s])}else{if(CL.hasLayer(MK[p.s]))CL.removeLayer(MK[p.s])}if(!v)return;h+='<div class="it" data-s="'+p.s+'">'+(p.ph[0]?'<img src="'+p.ph[0][0]+'" alt="" loading="lazy" onerror="this.style.visibility=\\'hidden\\'">':'<div class="ph" style="background:'+C[p.c]+'">'+IC[p.c]+'</div>')+'<div><b>'+(cur==='near'?'<em class="rk">'+p.nr+'</em> ':'')+e(p.n)+'</b><small>'+IC[p.c]+' '+e(S.cat[p.c])+' · '+(cur==='near'?'🏡 '+p.nk+' '+e(S.nkm):e(S.reg[p.r]))+(p.sec?' · <span class="g">★ '+e(S.sb)+'</span>':'')+'</small></div><span class="go">›</span></div>'});list.innerHTML=(cur==='near'?'<div class="lh near"><b>🏡 '+e(S.ntop)+'</b><a href="'+S.nurl+'">'+e(S.ngo)+' →</a></div>':'<div class="lh"><b>'+nv+'</b> · Sumba</div>')+h;
 list.querySelectorAll('.it').forEach(function(x){x.onclick=function(){open(x.dataset.s)}})}
-window.filt=function(f){cur=f;act(null);document.querySelectorAll('.ch button').forEach(function(b){b.classList.toggle('on',b.dataset.f===f)});det.style.display='none';list.style.display='';draw()};
+window.filt=function(f,nofit){cur=f;act(null);if(f==='near'&&!nofit){var b=L.latLngBounds(P.filter(function(p){return p.nr>0}).map(function(p){return p.ll}).concat([S.nll]));m.flyToBounds(b,{paddingTopLeft:[30,innerWidth>760?130:170],paddingBottomRight:[innerWidth>760?420:30,innerWidth>760?30:innerHeight*.44],duration:.9})}if(location.hash==='#near'&&f!=='near')history.replaceState(null,'',location.pathname);document.querySelectorAll('.ch button').forEach(function(b){b.classList.toggle('on',b.dataset.f===f)});det.style.display='none';list.style.display='';draw()};
 document.querySelectorAll('.ch button').forEach(function(b){b.onclick=function(){filt(b.dataset.f)}});q.oninput=function(){det.style.display='none';list.style.display='';draw()};
 var WXD={};function wxc(c){return c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7}var WI=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'];
 fetch('https://api.open-meteo.com/v1/forecast?latitude='+T.map(function(t){return t.ll[0]}).join(',')+'&longitude='+T.map(function(t){return t.ll[1]}).join(',')+'&current=temperature_2m,weather_code&timezone=Asia%2FMakassar').then(function(r){return r.json()}).then(function(d){if(!Array.isArray(d))d=[d];d.forEach(function(x,i){WXD[T[i].s]=x.current;var el=document.getElementById('tw-'+T[i].s);if(el)el.innerHTML=T[i].n+' '+WI[wxc(x.current.weather_code)]+' '+Math.round(x.current.temperature_2m)+'°'})}).catch(function(){});
 function open(s){var p=P.filter(function(x){return x.s===s})[0];if(!p)return;var tw=T.filter(function(t){return t.s===p.town})[0],w=WXD[p.town];
 det.innerHTML=(p.ph.length?'<div class="gl">'+p.ph.map(function(x){return '<img src="'+x[0]+'" alt="'+e(p.n)+'" loading="lazy">'}).join('')+'</div><div class="cr">'+e(S.photo)+': '+p.ph.map(function(x){return e(x[2])+' ('+e(x[3])+')'}).join(', ')+', Wikimedia Commons</div>':'')+
 '<div class="in"><button class="x" aria-label="'+e(S.close)+'" onclick="filt(\\''+cur+'\\')">×</button><span class="bdg" style="background:'+C[p.c]+'">'+IC[p.c]+' '+e(S.cat[p.c])+'</span> '+(p.sec?'<span class="bdg" style="background:#c08a2b">★ '+e(S.sb)+'</span>':'')+
-'<h2>'+e(p.n)+'</h2><div class="meta">'+e(S.reg[p.r])+' · '+p.tk+' '+e(S.km)+' '+e(tw.n)+' · ✈ '+p.ak+' '+e(S.km)+' '+p.ap+'</div><p>'+e(p.t)+'</p><div class="tip"><b>'+e(S.tip)+':</b> '+e(p.tip)+'</div>'+
+'<h2>'+e(p.n)+'</h2><div class="meta">'+e(S.reg[p.r])+' · '+p.tk+' '+e(S.km)+' '+e(tw.n)+' · ✈ '+p.ak+' '+e(S.km)+' '+p.ap+(p.nk<=90?' · 🏡 '+p.nk+' '+e(S.nkm):'')+'</div><p>'+e(p.t)+'</p><div class="tip"><b>'+e(S.tip)+':</b> '+e(p.tip)+'</div>'+
 (w?'<div class="wxl">'+WI[wxc(w.weather_code)]+' '+Math.round(w.temperature_2m)+'° · '+e(S.wx[wxc(w.weather_code)])+' ('+e(tw.n)+')</div>':'')+
 '<p><a class="bt" href="/'+LG+'/place/'+p.s+'/">'+e(S.guide)+' →</a><a class="bt l" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination='+p.ll[0]+','+p.ll[1]+'">'+e(S.dir)+'</a><a class="bt l" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query='+encodeURIComponent(p.n+' Sumba')+'">▶ '+e(S.vid)+'</a><button class="bt l" id="shr">'+e(S.share)+'</button><button class="bt l" id="sv">'+(sv().indexOf(p.s)>-1?'★':'☆')+'</button></p></div>';
-list.style.display='none';det.style.display='';det.className='det';pan.classList.remove('min');(function(){var z=Math.max(m.getZoom(),13),pt=m.project(p.ll,z);if(innerWidth>760){pt=pt.add([190,0])}else{pt=pt.add([0,innerHeight*.21])}m.flyTo(m.unproject(pt,z),z,{duration:.8})})();history.replaceState(null,'','#'+p.s);setTimeout(function(){act(p.s)},900);
+m.closePopup();list.style.display='none';det.style.display='';det.className='det';pan.classList.remove('min');(function(){var z=Math.max(m.getZoom(),13),pt=m.project(p.ll,z);if(innerWidth>760){pt=pt.add([190,0])}else{pt=pt.add([0,innerHeight*.21])}m.flyTo(m.unproject(pt,z),z,{duration:.8})})();history.replaceState(null,'','#'+p.s);setTimeout(function(){act(p.s)},900);
 document.getElementById('sv').onclick=function(){var a=sv(),i=a.indexOf(p.s);if(i>-1)a.splice(i,1);else a.push(p.s);try{localStorage.setItem('ss_saved',JSON.stringify(a))}catch(x){}this.textContent=a.indexOf(p.s)>-1?'★':'☆';try{clarity('event','save_place')}catch(x){}};document.getElementById('shr').onclick=function(){var url=location.origin+'/'+LG+'/place/'+p.s+'/';if(navigator.share){navigator.share({title:p.n+' · Sumba Secrets',url:url}).catch(function(){})}else{navigator.clipboard&&navigator.clipboard.writeText(url);toast(S.copied)}};
 try{clarity('event','map_open_place')}catch(x){}}
 window.openPlace=open;function sv(){try{return JSON.parse(localStorage.getItem('ss_saved')||'[]')}catch(x){return[]}}function toast(t){var x=document.getElementById('toast');x.textContent=t;x.style.display='block';setTimeout(function(){x.style.display='none'},1800)}
@@ -494,29 +567,30 @@ document.getElementById('rnd').onclick=function(){var v=P.filter(vis);open(v[Mat
 document.getElementById('fs').onclick=function(){var d=document.documentElement;if(!document.fullscreenElement){d.requestFullscreen&&d.requestFullscreen()}else{document.exitFullscreen()}};
 document.getElementById('grab').onclick=function(){pan.classList.toggle('max')};
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape')filt(cur)});
-draw();var h=location.hash.slice(1);if(h&&MK[h])setTimeout(function(){open(h)},300);addEventListener('hashchange',function(){var x=location.hash.slice(1);if(x&&MK[x]&&x!==ACT)open(x)});if(h.indexOf('route-')===0&&RL[h.slice(6)]){routes.addTo(m);m.fitBounds(RL[h.slice(6)].getBounds(),{padding:[40,40]})}})();`;
+draw();var h=location.hash.slice(1);if(h==='near')setTimeout(function(){filt('near')},250);if(h&&MK[h])setTimeout(function(){open(h)},300);addEventListener('hashchange',function(){var x=location.hash.slice(1);if(x&&MK[x]&&x!==ACT)open(x)});if(h.indexOf('route-')===0&&RL[h.slice(6)]){routes.addTo(m);m.fitBounds(RL[h.slice(6)].getBounds(),{padding:[40,40]})}})();`;
   const title = `${u.map} · Sumba: ${u.cat.beach.toLowerCase()}, ${u.cat.waterfall.toLowerCase()}, ${u.cat.village.toLowerCase()} & ${u.secrets.toLowerCase()}`;
   const opts = L.map(x => `<option value="/${x}/map/"${x === l ? " selected" : ""}>${x.toUpperCase()}</option>`).join("");
   const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}/map/">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/map">`;
-  const filters = ["all", "secret", "beach", "waterfall", "village", "viewpoint", "culture"].map((f, i) => `<button class="${i ? "" : "on"}" data-f="${f}">${f === "secret" ? "★ " : (CAT_ICON[f] ? CAT_ICON[f] + " " : "")}${esc(u.cat[f])}</button>`).join("") + Object.keys(D.rslug).map(r => `<button data-f="reg:${r}">📍 ${esc(u.reg[r])}</button>`).join("");
+  const filters = ["all", "near", "secret", "beach", "waterfall", "village", "viewpoint", "culture"].map((f, i) => f === "near" ? `<button class="nearb" data-f="near">🏡 ${esc(NT(l).chip)}</button>` : `<button class="${i ? "" : "on"}" data-f="${f}">${f === "secret" ? "★ " : (CAT_ICON[f] ? CAT_ICON[f] + " " : "")}${esc(u.cat[f])}</button>`).join("") + Object.keys(D.rslug).map(r => `<button data-f="reg:${r}">📍 ${esc(u.reg[r])}</button>`).join("");
   const ld = { "@context": "https://schema.org", "@type": "Map", name: title, url: `${BASE}${canonicalPath}`, inLanguage: l, mapType: "VenueMap", about: { "@type": "TouristDestination", name: "Sumba", geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 } } };
   return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${esc(title)} · Sumba Secrets</title>
 <meta name="description" content="${esc(u.map_d + " " + u.hero_d)}"><link rel="canonical" href="${BASE}${canonicalPath}">${alts}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(u.map_d)}"><meta property="og:image" content="${BASE}/og/home.jpg"><meta property="og:url" content="${BASE}${canonicalPath}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0e6f66">
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"><style>${MAPCSS}</style><script type="application/ld+json">${JSON.stringify(ld)}</script>${analytics()}</head><body>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin><link rel="preconnect" href="https://server.arcgisonline.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://api.open-meteo.com">
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><style>${MAPCSS}</style><script type="application/ld+json">${JSON.stringify(ld)}</script>${analytics()}</head><body>
 <h1 style="position:absolute;left:-9999px">${esc(title)}</h1><div id="m" role="application" aria-label="${esc(u.map)}"></div>
 <div class="top"><a class="box brand" href="/${l}/">Sumba <span>Secrets</span></a><div class="box sb"><input id="q" type="search" placeholder="🔎 ${esc(u2.search)}" aria-label="${esc(u2.search)}"><div class="ch">${filters}</div></div><div class="box lgw">${langPicker(l, "/map/", true)}</div></div>
 <div class="box pan" id="pan"><div class="grab" id="grab"></div><div id="list"></div><div id="det" style="display:none"></div></div>
 <div class="fab"><button id="loc" title="${esc(u2.locate)}" aria-label="${esc(u2.locate)}">📍</button><button id="rnd" title="${esc(u2.surprise)}" aria-label="${esc(u2.surprise)}">🎲</button><button id="fs" title="Fullscreen" aria-label="Fullscreen">⛶</button></div>
 <div class="toast" id="toast"></div>
 <noscript><ul>${D.places.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ul></noscript>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script><script>${js}</script><script>${COMMONJS(l)}</script></body></html>`;
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" crossorigin></script><script>addEventListener('DOMContentLoaded',function(){${js}});</script><script>${COMMONJS(l)}</script></body></html>`;
 }
 
 function sitemap() {
-  const paths = ["/", "/map/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
+  const paths = ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
     .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.towns.map(t => `/town/${t.s}/`), ["/towns/"], D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`));
   const imgs = p => { const m = p.match(/^\/place\/([a-z0-9-]+)\/$/); if (!m) return ""; const pl = D.places.find(x => x.s === m[1]); return photos(pl).map(x => `<image:image><image:loc>${esc(x.b)}</image:loc></image:image>`).join(""); };
   const urls = paths.map(p => L.map(l => `<url><loc>${BASE}/${l}${p}</loc>${L.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${BASE}/${x}${p}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${BASE}/en${p}"/><lastmod>${D.built}</lastmod>${imgs(p)}</url>`).join("")).join("") + `<url><loc>${BASE}/map</loc><lastmod>${D.built}</lastmod></url>`;
@@ -637,7 +711,8 @@ async function apiTip(req, env) {
   return Response.json({ ok: true });
 }
 
-const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
+const MEMO = new Map();
+const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600, stale-while-revalidate=86400", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
 const pickLang = req => { const al = (req.headers.get("accept-language") || "").toLowerCase(); return al.split(",").map(x => x.trim().slice(0, 2)).find(x => L.includes(x)) || "en"; };
 
 function route(req, url) {
@@ -655,6 +730,7 @@ function route(req, url) {
   if (rest === "/guides/") return [200, guidesPage(l)];
   if (rest === "/about/") return [200, aboutPage(l)];
   if (rest === "/towns/") return [200, townsPage(l)];
+  if (rest === "/mamboro/") return [200, mamboroPage(l)];
   if (rest === "/search/") return [200, searchPage(l)];
   if (rest === "/saved/") return [200, savedPage(l)];
   { const mt = rest.match(/^\/town\/([a-z]+)\/$/); if (mt) { const t = D.towns.find(x => x.s === mt[1]); if (t) return [200, townPage(l, t)]; } }
@@ -688,10 +764,18 @@ export default {
       return new Response("Not found", { status: 404 }); }
     if (p === "/api/news") { const l = url.searchParams.get("l"); return news(["en", "es", "id"].includes(l) ? l : "en", ctx); }
     if (p === "/" || p === "") return new Response(null, { status: 302, headers: { location: `/${pickLang(req)}/`, vary: "accept-language", "cache-control": "no-store" } });
+    // speed: rendered pages are kept in the isolate for 10 min and in the Cloudflare edge cache, keyed by build version
+    const cacheable = req.method === "GET" && !url.search && /^\/[a-z]{2}\/(.*\/)?$/.test(p);
+    const ck = cacheable ? new Request(`${BASE}${p}?__v=${D.ver}`) : null;
+    if (cacheable) {
+      const hit = MEMO.get(p); if (hit && Date.now() - hit.t < 6e5) return new Response(hit.b, { status: 200, headers: Object.assign({ "x-cache": "memo" }, H) });
+      const cr = await caches.default.match(ck); if (cr) { const b = await cr.text(); MEMO.set(p, { t: Date.now(), b }); return new Response(b, { status: 200, headers: Object.assign({ "x-cache": "edge" }, H) }); }
+    }
     const r = route(req, url);
     if (!r) return new Response("Gone", { status: 410, headers: { "content-type": "text/plain", "x-robots-tag": "noindex" } });
     if (r[0] === 301) return Response.redirect(r[1], 301);
     const h = Object.assign({}, H); if (r[0] === 404) h["x-robots-tag"] = "noindex"; if (p === "/map" || p === "/map/") { h["vary"] = "accept-language"; h["cache-control"] = "private, max-age=300"; }
+    if (cacheable && r[0] === 200) { if (MEMO.size > 400) MEMO.clear(); MEMO.set(p, { t: Date.now(), b: r[1] }); ctx.waitUntil(caches.default.put(ck, new Response(r[1], { headers: H }))); }
     return new Response(r[1], { status: r[0], headers: h });
   }
 };
