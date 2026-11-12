@@ -59,19 +59,25 @@ const opt = (env, n) => load(env, n).catch(() => null);
 const capped = (p, ms) => Promise.race([p.catch(() => null), new Promise(r => setTimeout(() => r(null), ms))]);
 
 // URLs listed in our sitemaps: the counts of kbx_seo.js plus the sitemaps other modules publish (counted in this isolate, 10 minutes)
-let SMC = null;
-async function sitemapUrls(env, inner) {
+let SMC = null, SMP = null;
+// Computing the count rebuilds every sitemap (about 3 s), so it never blocks a page: the value is kept per isolate and in the edge
+// cache (per deploy, 1 hour); on a miss the page waits at most 600 ms and the count finishes in the background for the next view.
+async function sitemapUrls(env, inner, ctx, wait) {
   if (SMC && Date.now() - SMC.t < 600000) return SMC.v;
-  const run = (async () => {
+  const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__kpg_sm/v1/' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x')) : null;
+  if (ck) { try { const h = await caches.default.match(ck); if (h) { const v = +(await h.text()); if (v > 0) { SMC = { t: Date.now(), v }; return v; } } } catch (e) {} }
+  if (!SMP) SMP = (async () => {
     const seo = await import('./kbx_seo.js');
     let n = await seo.sitemapTotal(env, inner);
     for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', SITEMAP]) {
       try { const r = x === SITEMAP ? new Response(await sitemapXml(env)) : (inner ? await inner(x) : null); if (r && r.ok) n += ((await r.text()).match(/<url>/g) || []).length; } catch (e) {}
     }
+    SMC = { t: Date.now(), v: n };
+    if (ck) { try { await caches.default.put(ck, new Response(String(n), { headers: { 'cache-control': 'max-age=3600' } })); } catch (e) {} }
     return n;
-  })();
-  const v = await capped(run, 2500);
-  if (v != null) SMC = { t: Date.now(), v };
+  })().catch(() => null).finally(() => { SMP = null; });
+  const p = SMP; if (ctx && ctx.waitUntil) ctx.waitUntil(p);
+  const v = await capped(p, wait ? 8000 : 600);
   return v != null ? v : (SMC ? SMC.v : null);
 }
 
@@ -275,7 +281,7 @@ function teamPage(lang) {
 // ------------------------------------------------------------------------------------------------ page entry
 const BODY = new Map();
 export async function page(req, u, env, ctx, shell, inner) {
-  if (PATHS.test(u.pathname)) return api(req, u, env, inner);
+  if (PATHS.test(u.pathname)) return api(req, u, env, inner, ctx);
   if (u.pathname === SITEMAP) return new Response(await sitemapXml(env), { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
@@ -288,7 +294,7 @@ export async function page(req, u, env, ctx, shell, inner) {
     pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size > 900) BODY.clear(); BODY.set(k, pg); }
   } else {
     let D; try { D = await progData(env, inner); } catch (e) { return null; }
-    if (kind === 'progress') { const sm = await sitemapUrls(env, inner); pg = progressPage(D, lang, sm); }
+    if (kind === 'progress') { const sm = await sitemapUrls(env, inner, ctx); pg = progressPage(D, lang, sm != null ? sm : (D.days[0] && D.days[0].sitemap_urls) || null); }
     else pg = improvementsPage(D, lang);
   }
   const sh = await shell(pre(lang) + '/how-we-score/');
@@ -318,11 +324,11 @@ async function sitemapXml(env) {
 }
 
 // ------------------------------------------------------------------------------------------------ JSON API (routed with the pages in index.js)
-async function api(req, u, env, inner) {
+async function api(req, u, env, inner, ctx) {
   const H = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(JSON.stringify({ error: 'method' }), { status: 405, headers: Object.assign({}, H, { 'cache-control': 'no-store' }) });
   let D; try { D = await progData(env, inner); } catch (e) { return new Response(JSON.stringify({ error: 'not_built_yet' }), { status: 503, headers: Object.assign({}, H, { 'cache-control': 'no-store' }) }); }
-  const sm = await sitemapUrls(env, inner), L = D.live, now = new Date();
+  const sm = await sitemapUrls(env, inner, ctx, /\/today\/?$/.test(u.pathname)), L = D.live, now = new Date();
   if (/\/today\/?$/.test(u.pathname)) return new Response(JSON.stringify({ d: day(now), at: now.toISOString().slice(0, 19) + 'Z', projects: L.projects, markets: L.markets, countries: L.countries, sources: L.sources, claims_total: L.claims_total, data_points: L.data_points, sitemap_urls: sm, ships_7d: L.ships_7d, deploys_7d: L.deploys_7d, data_updated: L.data_updated }), { headers: Object.assign({}, H, { 'cache-control': 'no-store' }) });
   return new Response(JSON.stringify({ page: ORIGIN + PROG_P, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', at: now.toISOString().slice(0, 19) + 'Z',
     live: Object.assign({ sitemap_urls: sm }, L), per_day: D.series, daily_records: D.days, improvements: { updated: D.itemsUpd, counts: D.cnt, page: ORIGIN + IMP_P, file: ORIGIN + '/data/progress.json' },
