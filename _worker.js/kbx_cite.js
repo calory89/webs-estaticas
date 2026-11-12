@@ -239,7 +239,7 @@ function story(X, mkt, month, lang) {
     b += h2('projects', t(lang, 'st_tab_h', { mk: m })) + '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr><th scope="col">' + [t(lang, 'th_proj'), t(lang, 'th_hand'), t(lang, 'th_late'), t(lang, 'th_pn'), t(lang, 'th_chk'), t(lang, 'th_last')].map(esc).join('</th><th scope="col">') + '</th></tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
   }
   const url = ORIGIN + pre(lang) + path, cite = t(lang, 'st_cite', { mk: m, mo, url, d: N.fd(X.today, lang) });
-  b += h2('cite', t(lang, 'cite_h')) + '<p class="cx-q">' + esc(cite) + '</p><p><a class="k-btn" href="/stories/' + month + '/' + mkt.s + '.csv" download>' + esc(t(lang, 'dl')) + '</a></p>';
+  b += h2('cite', t(lang, 'cite_h')) + '<p class="cx-q">' + esc(cite).replace(esc(url), '<bdi><a href="' + esc(url) + '">' + esc(url) + '</a></bdi>' + (lang === 'zh' || lang === 'ar' ? ' ' : '')) + '</p><p><a class="k-btn" href="/stories/' + month + '/' + mkt.s + '.csv" download>' + esc(t(lang, 'dl')) + '</a></p>';
   b += h2('more', t(lang, 'more_h')) + '<ul class="cx-l"><li><a href="/m/' + slugM(m) + '/">' + esc(t(lang, 'l_market')) + ': ' + esc(m) + '</a></li><li><a href="/index/delays/">' + esc(t(lang, 'l_delay')) + '</a></li><li><a href="' + pre(lang) + '/changes/' + month + '/">' + esc(t(lang, 'l_changes')) + '</a></li><li><a href="' + pre(lang) + '/stories/">' + esc(t(lang, 'l_all')) + '</a></li></ul>';
   const title = t(lang, 'st_title', { mk: m, mo });
   const ds = { '@type': 'Dataset', '@id': url + '#dataset', name: 'Kolaboro: ' + t(lang, 'st_h1', { mk: m, mo }), description: t(lang, 'st_lead', { k: L.length, mk: m }), url,   // n25t: in the page language
