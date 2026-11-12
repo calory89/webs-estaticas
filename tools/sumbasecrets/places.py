@@ -271,3 +271,24 @@ PLACES += [
   "fr":{"n":"Vallée de Napu","t":"De vastes collines herbeuses et une vallée fluviale verte autour du village de Napu, à Haharu, sur la côte nord de l'est de Sumba. Peu de visiteurs viennent jusqu'ici, et la lumière du matin et du soir est spectaculaire.","tip":"À combiner avec Wunga, tout proche. Prévoyez eau et carburant : il y a peu de choses sur cette côte."},
   "nl":{"n":"Napu-vallei","t":"Weidse grasheuvels en een groene riviervallei rond het dorp Napu, in Haharu aan de noordkust van Oost-Sumba. Weinig bezoekers komen zo ver, en het licht aan het begin en eind van de dag is spectaculair.","tip":"Combineer met Wunga, dat vlakbij ligt. Neem water en brandstof mee: aan deze kust is weinig."}},
 ]
+
+# ---- 12-nov-2026: Central Sumba and the north coast around Mamboro (EN only; other languages machine-translated in build) ----
+def _np(s, c, r, ll, sec, n_id, en):
+    return {"s": s, "c": c, "sec": sec, "r": r, "ll": ll, "img": None, "n": {"id": n_id}, "en": en}
+PLACES += [
+ _np("mamboro-savanna", "viewpoint", "st", [-9.3844, 119.5402], True, "Sabana Mamboro", {"n": "Mamboro savanna",
+   "t": "Rolling savanna on the north coast of Central Sumba, around the villages of Mamboro and Wendewa. In the dry season the grass turns golden brown and the hills could pass for East Africa, with herds of horses, cattle and buffalo. Nearby is Manua Kalada, one of the oldest traditional villages on Sumba, where the kings of Mamboro lived and are buried.",
+   "tip": "Come early in the morning or late in the afternoon for the light. Ask before entering Manua Kalada and leave a small donation."}),
+ _np("pasunga-village", "village", "st", [-9.58777, 119.57497], False, "Kampung Adat Pasunga", {"n": "Pasunga Village",
+   "t": "A traditional village in Anakalang, Central Sumba, with rows of high-roofed houses facing each other across a square of megalithic stone tombs. It sits right on the main road between West and East Sumba, opposite the Anakalang market, so it is an easy stop on a drive across the island.",
+   "tip": "Sign the guestbook and leave a donation. Do not climb on the tombs."}),
+ _np("gallubakul-tomb", "culture", "st", [-9.62195, 119.56607], True, "Kubur Batu Gallubakul", {"n": "Gallubakul stone tomb",
+   "t": "Home to the tomb of Umbu Sawola, one of the largest megalithic graves in Sumba: a single slab of stone said to weigh around 70 tonnes. It lies about 3.5 km south of Pasunga in Anakalang, Central Sumba, among the other stone tombs of the village.",
+   "tip": "Visit it together with Pasunga. Ask in the village before walking among the graves and do not climb on the stones."}),
+ _np("harunda-waterfall", "waterfall", "st", [-9.56479, 119.85587], True, "Air Terjun Harunda", {"n": "Harunda Waterfall",
+   "t": "A waterfall about 20 metres high in the village of Soru, Umbu Ratu Nggay, in the east of Central Sumba, roughly 45 km from Waibakul. From the road it is a walk of about 300 metres up a rocky riverbed.",
+   "tip": "Wear sandals with good grip for the rocks and go in the dry season, when the river is easier to walk."}),
+ _np("weekacura-waterfall", "waterfall", "sbd", [-9.59514, 119.33214], True, "Air Terjun Weekacura", {"n": "Weekacura Waterfall",
+   "t": "A waterfall in the middle of rice fields at Tema Tana, Wewewa Timur, in Southwest Sumba. The water spills over a series of low terraces, each under two metres high, so it is more a staircase of small falls than one big drop. It is about an hour from Tambolaka.",
+   "tip": "Wear shoes you do not mind getting wet and walk carefully on the paddy edges: these are working fields."}),
+]

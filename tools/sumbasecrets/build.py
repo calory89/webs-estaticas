@@ -24,6 +24,9 @@ WX = {"en": WX_EN,
  "nl": ["Helder","Half bewolkt","Bewolkt","Mist","Motregen","Regen","Buien","Onweer"]}
 
 # ---- machine translation for the six new languages (existing content) and for new content (all languages) ----
+for p in PLACES:
+    for l in HAND[1:]:
+        if l not in p: p[l] = tr_tree({k: v for k, v in p["en"].items() if k != "n"}, l) | {"n": (lambda x: x[:1].upper() + x[1:])(tr_tree(p["en"]["n"], l)) if l != "id" else p["n"].get("id", p["en"]["n"])}
 for l in NEW:
     UI[l] = tr_tree(UI["en"], l)
     UI2[l] = tr_tree(UI2["en"], l)

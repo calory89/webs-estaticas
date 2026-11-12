@@ -59,10 +59,10 @@ EXTRA_UI2 = {
  "all_secrets":"All secret spots","videos_t":"Videos","nearby_km":"km away",
 }
 VIDEOS = {
- "_home": ["0J_YZmXJjsk", "nUdahFp6jkI", "IIMwNiXekkE", "ZTxIMzveI5c"],
+ "weekacura-waterfall": ["Posa1QnIo7s"], "_home": ["0J_YZmXJjsk", "nUdahFp6jkI", "IIMwNiXekkE", "ZTxIMzveI5c"],
  "ratenggaro": ["WeKYwZoYmEU"], "tanggedu-waterfall": ["uSAqTtg4sso"], "puru-kambera": ["uSAqTtg4sso"], "pasola-wanokaka": ["EwtIXEgN0As"],
  "_guide:getting-there-around": ["Hoq8_mHeubA"], "_guide:pasola-guide": ["EwtIXEgN0As"], "_town:waingapu": ["7XNLNdyFljA"], "_town:waikabubak": ["7XNLNdyFljA"],
  "weekuri-lagoon": ["ZTxIMzveI5c"], "wairinding-hill": ["nUdahFp6jkI"], "walakiri-beach": ["0J_YZmXJjsk"],
 }
-VIDEO_META = {"0J_YZmXJjsk":"SUMBA ISLAND, Indonesia - The Secret Paradise · Roman Bader","nUdahFp6jkI":"Highlights of Sumba · Glori Stephani","IIMwNiXekkE":"Discover Sumba, Indonesia · Herr Translator","ZTxIMzveI5c":"Beautiful Sumba travel vlog · Katarina Joan",
+VIDEO_META = {"Posa1QnIo7s":"Weekacura waterfall, Southwest Sumba","0J_YZmXJjsk":"SUMBA ISLAND, Indonesia - The Secret Paradise · Roman Bader","nUdahFp6jkI":"Highlights of Sumba · Glori Stephani","IIMwNiXekkE":"Discover Sumba, Indonesia · Herr Translator","ZTxIMzveI5c":"Beautiful Sumba travel vlog · Katarina Joan",
  "WeKYwZoYmEU":"Ratenggaro traditional village · Yunitaalghazali","uSAqTtg4sso":"Tanggedu, Puru Kambera · Yunitaalghazali","EwtIXEgN0As":"Wild Sumba: horses and the Pasola · Menelusuri nusantara","Hoq8_mHeubA":"How to get to Sumba · Native Sumba people","7XNLNdyFljA":"Waingapu, Waikabubak and Sumba · daviddonny"}

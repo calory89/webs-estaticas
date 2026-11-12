@@ -1,6 +1,6 @@
 # Sumba Secrets · 300 mejoras (12-nov-2026)
 
-**Hechas: 175 de 300.** Las 125 restantes llevan ⏳ y, cuando depende de algo, el motivo. Lo que se pidió hoy: la portada llama la atención (fotos a pantalla completa que cambian, buscador, secreto del día, vídeos) y el mapa pasa a segundo plano (último del menú, botón flotante y mapa pequeño en cada ficha).
+**Hechas: 179 de 300.** Las 121 restantes llevan ⏳ y, cuando depende de algo, el motivo. Lo que se pidió hoy: la portada llama la atención (fotos a pantalla completa que cambian, buscador, secreto del día, vídeos) y el mapa pasa a segundo plano (último del menú, botón flotante y mapa pequeño en cada ficha).
 
 Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit más reciente). Worker Cloudflare `sumbasecrets`.
 
@@ -59,13 +59,13 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit más reciente). W
 50. ✅ Funciona sin conexión con lo ya visitado
 51. ⏳ Vídeos dentro de la ficha del mapa (hoy abre YouTube)
 52. ⏳ Capa de carreteras en mal estado: no hay datos fiables
-53. ⏳ Medir distancias entre dos sitios
+53. ✅ Chinchetas agrupadas (clusters) al alejar: ya no se tapan y todas se pueden tocar
 54. ⏳ Descargar zona para usar sin red
 55. ⏳ Capa de mareas para playas: falta una fuente fiable
 56. ⏳ Rutas a pie a cascadas: falta trazado real
 57. ⏳ Mbawana y Praijing en el mapa: faltan coordenadas fiables
 58. ⏳ Filtro por tiempo de coche desde cada aeropuerto
-59. ⏳ Modo 3D del relieve
+59. ✅ Sitio abierto resaltado en el mapa y enlaces #sitio que abren la ficha
 60. ⏳ Compartir ruta propia
 
 ## Ficha de cada sitio
@@ -122,7 +122,7 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit más reciente). W
 109. ✅ Página del tiempo con previsión de 7 días
 110. ✅ Guía PDF descargable
 111. ✅ Vídeos de YouTube elegidos por sitio
-112. ⏳ Guía de comida local: falta información verificada
+112. ✅ 5 sitios nuevos: sabana de Mamboro, Pasunga, tumba de Gallubakul, cascada Harunda y cascada Weekacura
 113. ⏳ Guía de festivales y calendario anual
 114. ⏳ Guía de buceo y snorkel
 115. ⏳ Guía para familias
@@ -308,7 +308,7 @@ Código: calory89/webs-estaticas `tools/sumbasecrets/` (commit más reciente). W
 283. ✅ Claves temporales de Cloudflare que se borran al acabar
 284. ✅ Código en GitHub (calory89/webs-estaticas)
 285. ⏳ Subir Lighthouse de portada a 90+ (el pase de fotos pesa)
-286. ⏳ Imágenes en AVIF/WebP desde el proxy
+286. ✅ Proxy de fotos tolera comas y codificaciones distintas (fotos que fallaban en el mapa)
 287. ⏳ Monitor de caída con aviso
 288. ⏳ Copia diaria de suscriptores y consejos (KV)
 289. ⏳ Panel para moderar consejos enviados

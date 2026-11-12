@@ -47,3 +47,10 @@ GALLERY["brotherhood-hill"] = [F("Sumba Pulau Seribu Bukit.jpg","Zahrasrtn","CC 
 GALLERY["wanggameti"] += [F("Padang Rumput dan Kuda Sandalwood.jpg","Waskito Kukuh W","CC BY-SA 4.0",1)]
 GALLERY["mandorak-beach"] += []
 GALLERY["pasola-wanokaka"] += [F("HorsesSumba.JPG","Wybe","CC BY-SA 3.0",1)]
+# 12-nov-2026 new places (fp = stock photo of the same kind of place)
+_meg = F("Megalithic Royal Grave Stone - Anakalang Central Sumba.jpg", "Albert Jata", "CC BY-SA 2.0", 1)
+GALLERY["mamboro-savanna"] = [F("Kuda Pulau Sumba.jpg", "Zahrasrtn", "CC BY-SA 4.0", 1), F("Kuda-kuda Pulau Sumba.jpg", "Zahrasrtn", "CC BY-SA 4.0", 1), F("Batuan Di Savana Sumba.jpg", "Bayu345", "CC BY-SA 4.0", 1)]
+GALLERY["pasunga-village"] = [_meg, dict(GALLERY["ratenggaro"][1], fp=1)]
+GALLERY["gallubakul-tomb"] = [_meg]
+GALLERY["harunda-waterfall"] = [dict(GALLERY["lapopu-waterfall"][1], fp=1)]
+GALLERY["weekacura-waterfall"] = [dict(GALLERY["tanggedu-waterfall"][1], fp=1)]
