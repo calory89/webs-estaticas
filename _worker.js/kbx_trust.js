@@ -61,11 +61,13 @@ const capped = (p, ms) => Promise.race([p.catch(() => null), new Promise(r => se
 // URLs listed in our sitemaps: the counts of kbx_seo.js plus the sitemaps other modules publish (counted in this isolate, 10 minutes)
 let SMC = null, SMP = null;
 // Computing the count rebuilds every sitemap (about 3 s), so it never blocks a page: the value is kept per isolate and in the edge
-// cache (per deploy, 1 hour); on a miss the page waits at most 600 ms and the count finishes in the background for the next view.
+// cache (per deploy, 1 hour). Pages never compute it (CPU work cannot be cut by a timer): they show the cached count or, failing
+// that, the latest daily record; /api/x/progress and /api/x/progress/today compute it and fill the cache.
 async function sitemapUrls(env, inner, ctx, wait) {
   if (SMC && Date.now() - SMC.t < 600000) return SMC.v;
   const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__kpg_sm/v1/' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x')) : null;
   if (ck) { try { const h = await caches.default.match(ck); if (h) { const v = +(await h.text()); if (v > 0) { SMC = { t: Date.now(), v }; return v; } } } catch (e) {} }
+  if (!wait) return SMC ? SMC.v : null;   // the count is CPU-heavy: pages only read the cached value (filled by the JSON API and the daily job)
   if (!SMP) SMP = (async () => {
     const seo = await import('./kbx_seo.js');
     let n = await seo.sitemapTotal(env, inner);
@@ -154,10 +156,10 @@ function chartSvg(lang, S) {
 
 // ------------------------------------------------------------------------------------------------ /progress/
 const NUMS_L = { en: 'Kolaboro in numbers: figures to cite', es: 'Kolaboro en cifras: datos para citar', de: 'Kolaboro in Zahlen: zitierfähige Angaben', fr: 'Kolaboro en chiffres : données à citer', nl: 'Kolaboro in cijfers: gegevens om te citeren', ru: 'Kolaboro в цифрах: данные для цитирования', zh: 'Kolaboro 数据一览：可引用的数字', ar: 'Kolaboro بالأرقام: أرقام قابلة للاقتباس' };
-function progressPage(D, lang, sm) {
+function progressPage(D, lang, sm, smDay) {
   const L = D.live, S = D.series, now = day(new Date());
   const st = [stat(lang, L.projects, 'k_projects', srcA('/api/open/stats')), stat(lang, L.markets, 'k_markets', srcA('/api/open/stats')), stat(lang, L.countries, 'k_countries', srcA('/api/open/stats')),
-    stat(lang, L.sources, 'k_sources', srcA('/data/bali-cases.json')), stat(lang, L.claims_total, 'k_claims', srcA('/data/bali-cases.json')), stat(lang, sm, 'k_sitemap', srcA('/sitemap_index.xml')),
+    stat(lang, L.sources, 'k_sources', srcA('/data/bali-cases.json')), stat(lang, L.claims_total, 'k_claims', srcA('/data/bali-cases.json')), stat(lang, sm, 'k_sitemap', srcA('/sitemap_index.xml') + (smDay ? ' ' + esc(fdt(smDay, lang)) : '')),
     stat(lang, L.ships_7d, 'k_ships', srcA('/data/shipping.json')), stat(lang, L.deploys_7d, 'k_deploys', srcA('/data/deploys.json'))].join('');
   const cell = v => v == null ? '<td class="k-n k-muted">' + esc(t(lang, 'none')) + '</td>' : '<td class="k-n">' + esc(nf(lang, v)) + '</td>';
   const rows = S.slice().reverse().map(s => '<tr><th scope="row" data-label="' + esc(t(lang, 'c_day')) + '"><time datetime="' + s.d + '">' + esc(fdt(s.d, lang)) + '</time></th>' + [s.added, s.total, s.markets, s.countries, s.ships, s.deploys].map((v, i) => cell(v).replace('<td', '<td data-label="' + esc(t(lang, ['c_added', 'c_total', 'c_mk', 'c_co', 'c_ships', 'c_dep'][i])) + '"')).join('') + '</tr>').join('');
@@ -294,7 +296,7 @@ export async function page(req, u, env, ctx, shell, inner) {
     pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size > 900) BODY.clear(); BODY.set(k, pg); }
   } else {
     let D; try { D = await progData(env, inner); } catch (e) { return null; }
-    if (kind === 'progress') { const sm = await sitemapUrls(env, inner, ctx); pg = progressPage(D, lang, sm != null ? sm : (D.days[0] && D.days[0].sitemap_urls) || null); }
+    if (kind === 'progress') { const sm = await sitemapUrls(env, inner, ctx); const rec = sm == null && D.days[0] && D.days[0].sitemap_urls ? D.days[0] : null; pg = progressPage(D, lang, sm != null ? sm : rec ? rec.sitemap_urls : null, rec && rec.d); }
     else pg = improvementsPage(D, lang);
   }
   const sh = await shell(pre(lang) + '/how-we-score/');
@@ -328,7 +330,7 @@ async function api(req, u, env, inner, ctx) {
   const H = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(JSON.stringify({ error: 'method' }), { status: 405, headers: Object.assign({}, H, { 'cache-control': 'no-store' }) });
   let D; try { D = await progData(env, inner); } catch (e) { return new Response(JSON.stringify({ error: 'not_built_yet' }), { status: 503, headers: Object.assign({}, H, { 'cache-control': 'no-store' }) }); }
-  const sm = await sitemapUrls(env, inner, ctx, /\/today\/?$/.test(u.pathname)), L = D.live, now = new Date();
+  const sm = await sitemapUrls(env, inner, ctx, true), L = D.live, now = new Date();
   if (/\/today\/?$/.test(u.pathname)) return new Response(JSON.stringify({ d: day(now), at: now.toISOString().slice(0, 19) + 'Z', projects: L.projects, markets: L.markets, countries: L.countries, sources: L.sources, claims_total: L.claims_total, data_points: L.data_points, sitemap_urls: sm, ships_7d: L.ships_7d, deploys_7d: L.deploys_7d, data_updated: L.data_updated }), { headers: Object.assign({}, H, { 'cache-control': 'no-store' }) });
   return new Response(JSON.stringify({ page: ORIGIN + PROG_P, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', at: now.toISOString().slice(0, 19) + 'Z',
     live: Object.assign({ sitemap_urls: sm }, L), per_day: D.series, daily_records: D.days, improvements: { updated: D.itemsUpd, counts: D.cnt, page: ORIGIN + IMP_P, file: ORIGIN + '/data/progress.json' },
