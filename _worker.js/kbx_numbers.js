@@ -56,6 +56,9 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const m = PAGE.exec(u.pathname); if (!m) return null;
   if (!u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
   const lang = m[1] || 'en', L = T[lang], path = pre(lang) + '/numbers/', canon = ORIGIN + path;
+  // the figures take a few seconds to compute from scratch (sitemaps, transparency index): the page is kept at the edge for 15 minutes
+  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v1/' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x') + '/' + lang) : null;
+  if (ck) { try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'content-language': lang, 'x-numbers-cache': 'hit' } }); } catch (e) {} }
   const { F, up, today } = await figures(env, inner);
   const b = s => lang === 'ar' ? '<bdi>' + s + '</bdi>' : s;
   const row = f => '<tr><th scope="row">' + esc(L[f.id]) + '</th><td class="knum-v">' + b(nf(f.v, lang, f.dec)) + '</td><td><a href="' + f.src + '">' + b(esc(f.src)) + '</a></td><td>' + esc(fd(f.at, lang)) + '</td></tr>';
@@ -72,5 +75,6 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const pg = { title: L.title + ' | Kolaboro', desc: L.lead, canon, body, ld, lastmod: up, alt: l => ORIGIN + pre(l) + '/numbers/' };
   if (shell === 'test') return pg;
   const html = await N.assemble(pg, lang, await shell(pre(lang) + '/how-we-score/'));
+  if (ck) { try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=900' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {} }
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'content-language': lang } });
 }
