@@ -5,6 +5,7 @@
 //                                                 "Delivery and delay record" section of a named project page
 // Everything comes from /data/promises.json and the project's research record (the same dates the page already lists, each with
 // its source). A period (2027, 2027-Q2, 2027-H1, 2027-08) is placed on its last day, and the entry says so. No AI, nothing stored.
+import { hcode } from './kbx_hdate.js';   // n25t
 export const PATHS = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -58,6 +59,7 @@ export function span(d) {
   if ((m = s.match(/^(\d{4})-(\d{2})$/)) && +m[2] >= 1 && +m[2] <= 12) return mk(+m[1], +m[2], 1, +m[2], lastDay(+m[1], +m[2]), s);
   if ((m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/)) && +m[2] >= 1 && +m[2] <= 12 && +m[3] >= 1 && +m[3] <= lastDay(+m[1], +m[2])) return mk(+m[1], +m[2], +m[3], +m[2], +m[3], s);
   if ((m = s.match(/^([A-Za-z]+) (\d{4})$/)) && MONTHS[m[1].toLowerCase()]) { const mo = MONTHS[m[1].toLowerCase()]; return mk(+m[2], mo, 1, mo, lastDay(+m[2], mo), m[2] + '-' + p2(mo)); }
+  const hc = hcode(s); if (hc && hc !== s) return span(hc);   // n25t: "Q1 2027", "1er semestre 2027", "2027-10 (portal)" and other wordings
   return null;
 }
 // the dated promises of one project: the promise tracker first, then the research record for kinds the tracker does not hold

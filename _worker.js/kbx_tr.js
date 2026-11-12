@@ -18,6 +18,7 @@
 // Sumba rows link to nothing but the right of reply, and the rest of the site's Sumba handling is unchanged (no project pages).
 // Possible matches on official lists are never published and count exactly like "not checked" (left out of the total).
 import { TRS } from './kbx_tr_i18n.js';
+import { hdisp } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 
 const ORIGIN = 'https://kolaboro.com';
@@ -196,11 +197,11 @@ function tick(lang, st) { const sym = { yes: '✓', part: '◐', no: '○', nc: 
 function srcA(lang, u, isSumba) {
   if (!u || isSumba && /^https?:/.test(u)) return '';
   // n24s: the website-health source is our domain check API; its path ("/api/x/fraud/...") is shown as kolaboro.com, so no verdict word appears as text
-  const lbl = /^https?:/.test(u) && !/gleif\.org/.test(u) ? t(lang, 'src_dev') : /gleif\.org/.test(u) ? 'GLEIF' : /^\/api\/x\/fraud\//.test(u) ? 'kolaboro.com' : u.replace(/\?.*$/, '');
+  const lbl = /^https?:/.test(u) && !/gleif\.org/.test(u) ? t(lang, 'src_dev') : /gleif\.org/.test(u) ? 'GLEIF' : /^\//.test(u) ? 'kolaboro.com' : u.replace(/\?.*$/, '');   // n25t: every page or file of ours reads kolaboro.com (no English path words as link text)
   return '<a class="k-src" href="' + esc(u) + '"' + (/^https?:/.test(u) ? ' rel="noopener nofollow" target="_blank"' : '') + '>' + (/^\//.test(lbl) ? '<bdi>' + esc(lbl) + '</bdi>' : esc(lbl)) + '</a>';
 }
 function compText(lang, k, q) {
-  const v = q.v != null ? bdi(q.v) : '';
+  const v = q.v != null ? bdi(k === 'date' || k === 'record' ? hdisp(q.v, lang) : q.v) : '';   // n25t: handover dates localized
   switch (k) {
     case 'legal': return q.st === 'yes' ? th(lang, 'v_legal_y', { v }) : esc(t(lang, 'v_legal_n'));
     case 'register': return q.st === 'yes' ? th(lang, 'v_reg_y', { v }) : q.st === 'nc' ? esc(t(lang, 'st_nc')) : esc(t(lang, 'v_reg_n'));

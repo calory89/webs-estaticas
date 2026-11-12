@@ -22,14 +22,14 @@ const S = {
   es: { b: 'Opiniones de {n}', s1: ': ', s2: ', ', t_h: 'entrega {h}', t_pn: 'licencia publicada', t_f: 'Opiniones y datos de {n}',
     d_lead: 'Opiniones y datos de {n}{by}, {place}.', d_h: 'Entrega según lo publicado: {h}.', d_h0: 'Sin fecha de entrega publicada.', d_pn1: 'Número de licencia publicado.', d_pn0: 'Número de licencia no publicado.', d_tr: 'Puntuación de transparencia {s}/100.', d_nr: 'Aún sin revisar; solo hechos con fuente.', d_chk: 'Revisado el {d}.',
     qa_w0: '{n} es un proyecto inmobiliario en {place}.', qa_w0d: '{n} es un proyecto inmobiliario en {place}, del promotor {dev}.', qa_pn1: 'Se publica un número de licencia.', qa_pn0: 'No se publica ningún número de licencia.',
-    qa_tr: 'Puntuación de transparencia: {s} sobre 100, puesto {r} de {m} en {p}.', qa_tr1: 'Puntuación de transparencia: {s} sobre 100.', qa_cl: 'Confirmadas {v} de {c} afirmaciones del promotor que comprobamos.', qa_chk: 'Última revisión: {d}.',
+    qa_tr: 'Puntuación de transparencia: {s} sobre 100, puesto {r} de {m} en {p}.', qa_tr1: 'Puntuación de transparencia: {s} sobre 100.', qa_cl: 'De las {c} afirmaciones del promotor que comprobamos, {v} están confirmadas.', qa_chk: 'Última revisión: {d}.',
     h_when: '¿Cuándo se entrega {n}?', h_cost: '¿Cuánto cuesta {n}?', h_who: '¿Quién es el promotor de {n}?', h_legit: '¿Es fiable {n}? Lo que pudimos comprobar', h_where: '¿Dónde está {n}?',
     toc_legit: 'Lo que pudimos comprobar', toc_where: 'Ubicación',
     lg_intro: 'Lo que se publica y se puede comprobar sobre {n}, punto por punto, con la fuente de cada uno. No es un veredicto: Kolaboro no etiqueta proyectos ni promotores. "No publicado" significa que no encontramos ninguna fuente pública.',
-    lg_sum: 'Publicado o confirmado: {a} de {b} puntos que pudimos comprobar.', lg_m: 'Cómo se calcula la puntuación de transparencia', lg_nr: 'Esta lista se calcula con hechos públicos; nuestra propia revisión de este proyecto aún no está hecha.',
+    lg_sum: 'Publicado o confirmado: {a} de {b} puntos que pudimos comprobar.', lg_m: 'Cómo se calcula la puntuación de transparencia', lg_nr: 'Esta lista se calcula con hechos públicos; todavía no hemos hecho nuestra propia revisión de este proyecto.',
     c_read: 'Precios y plan de pagos tal como se publican en las páginas que leímos (copia del {d}).', c_price0: 'Precio: no publicado en las páginas que leímos.', c_plan0: 'Plan de pagos: no publicado en las páginas que leímos.', c_plan: 'Plan de pagos publicado', c_dep: 'Depósito',
     w_sum0: 'Fecha de entrega registrada: {h}. Sin cambios en nuestros registros.', w_sum: 'Fecha de entrega registrada: {h}. Primera fecha registrada: {a}. Cambios registrados: {k}.', w_none: 'Fecha de entrega: no publicada en las fuentes que leímos.',
-    who_l: '{n} lo desarrolla {dev}, según las páginas que leímos.', who_k: 'Proyectos de {dev} que seguimos: {k}.', who_none: 'El promotor no aparece en las fuentes que leímos.',
+    who_l: 'El promotor de {n} es {dev}, según las páginas que leímos.', who_k: 'Proyectos de {dev} que seguimos: {k}.', who_none: 'El promotor no aparece en las fuentes que leímos.',
     wh_place: 'Zona publicada: {place}.', wh_pin_a: 'Punto en el mapa: a partir de una dirección o coordenadas publicadas, con unos {a} m de precisión.', wh_pin: 'Punto en el mapa: a partir de una dirección o coordenadas publicadas.', wh_nopin: 'Punto en el mapa: ninguno, porque no se publica una dirección ni coordenadas con precisión suficiente.',
     wh_around: 'Qué hay alrededor de la parcela', wh_map: 'Abrir el punto en OpenStreetMap', wh_mk: 'Todos los proyectos en {mk}', wh_rank: 'Ranking de transparencia: {p}',
     r6_h: 'Proyectos relacionados', r6_dev: 'mismo promotor', r6_mk: 'también en {mk}', r6_y: 'entrega {y}',
@@ -41,17 +41,17 @@ const S = {
     h_when: 'Quand {n} sera-t-il livré ?', h_cost: 'Combien coûte {n} ?', h_who: 'Qui est le promoteur de {n} ?', h_legit: '{n} est-il fiable ? Ce que nous avons pu vérifier', h_where: 'Où se trouve {n} ?',
     toc_legit: 'Ce que nous avons pu vérifier', toc_where: 'Emplacement',
     lg_intro: 'Ce qui est publié et vérifiable sur {n}, point par point, avec la source de chacun. Ce n’est pas un verdict : Kolaboro ne colle pas d’étiquette aux projets ni aux promoteurs. « Non publié » signifie que nous n’avons trouvé aucune source publique.',
-    lg_sum: 'Publié ou confirmé : {a} des {b} points que nous avons pu vérifier.', lg_m: 'Comment le score de transparence est calculé', lg_nr: 'Cette liste est calculée à partir de faits publics ; notre propre examen de ce projet n’est pas encore fait.',
+    lg_sum: 'Publié ou confirmé : {a} des {b} points que nous avons pu vérifier.', lg_m: 'Comment le score de transparence est calculé', lg_nr: 'Cette liste est calculée à partir de faits publics ; nous n’avons pas encore fait notre propre examen de ce projet.',
     c_read: 'Prix et échéancier tels que publiés sur les pages lues (copie du {d}).', c_price0: 'Prix : non publié sur les pages lues.', c_plan0: 'Échéancier de paiement : non publié sur les pages lues.', c_plan: 'Échéancier publié', c_dep: 'Acompte',
     w_sum0: 'Date de livraison enregistrée : {h}. Inchangée dans nos relevés.', w_sum: 'Date de livraison enregistrée : {h}. Première date enregistrée : {a}. Changements relevés : {k}.', w_none: 'Date de livraison : non publiée dans les sources lues.',
-    who_l: '{n} est développé par {dev}, selon les pages lues.', who_k: 'Projets de {dev} que nous suivons : {k}.', who_none: 'Le promoteur n’est pas nommé dans les sources lues.',
+    who_l: 'Le promoteur de {n} est {dev}, d’après les pages consultées.', who_k: 'Projets de {dev} que nous suivons : {k}.', who_none: 'Le promoteur n’est pas nommé dans les sources lues.',
     wh_place: 'Zone publiée : {place}.', wh_pin_a: 'Repère sur la carte : d’après une adresse ou des coordonnées publiées, précis à environ {a} m.', wh_pin: 'Repère sur la carte : d’après une adresse ou des coordonnées publiées.', wh_nopin: 'Repère sur la carte : aucun, car aucune adresse ni coordonnées assez précises ne sont publiées.',
-    wh_around: 'Ce qui se trouve autour du terrain', wh_map: 'Ouvrir le repère sur OpenStreetMap', wh_mk: 'Tous les projets à {mk}', wh_rank: 'Classement de transparence : {p}',
-    r6_h: 'Projets liés', r6_dev: 'même promoteur', r6_mk: 'aussi à {mk}', r6_y: 'livraison {y}',
+    wh_around: 'Ce qui se trouve autour du terrain', wh_map: 'Ouvrir le repère sur OpenStreetMap', wh_mk: 'Tous les projets : {mk}', wh_rank: 'Classement de transparence : {p}',
+    r6_h: 'Projets liés', r6_dev: 'même promoteur', r6_mk: 'même marché : {mk}', r6_y: 'livraison {y}',
     q_tr: 'Quel est le score de transparence de {n} ?', a_tr_x: 'Il compte ce qui est publié et vérifiable, pas la qualité.', q_plan: 'Quel est l’échéancier de paiement de {n} ?', a_plan: 'Échéancier publié : {p}. Demandez les conditions actuelles au promoteur avant de payer.', a_price0: 'Aucun prix n’est publié sur les pages lues. Demandez la grille de prix actuelle au promoteur.' },
   de: { b: '{n} Erfahrungen', s1: ': ', s2: ', ', t_h: 'Fertigstellung {h}', t_pn: 'Genehmigung veröffentlicht', t_f: '{n} Erfahrungen und Fakten',
     d_lead: '{n} Erfahrungen und Fakten{by}, {place}.', d_h: 'Übergabe laut Veröffentlichung: {h}.', d_h0: 'Kein Übergabetermin veröffentlicht.', d_pn1: 'Genehmigungsnummer veröffentlicht.', d_pn0: 'Genehmigungsnummer nicht veröffentlicht.', d_tr: 'Transparenzwert {s}/100.', d_nr: 'Noch nicht geprüft; nur belegte Fakten.', d_chk: 'Geprüft am {d}.',
-    qa_w0: '{n} ist ein Immobilienprojekt in {place}.', qa_w0d: '{n} ist ein Immobilienprojekt in {place}, Bauträger {dev}.', qa_pn1: 'Eine Genehmigungsnummer ist veröffentlicht.', qa_pn0: 'Keine Genehmigungsnummer ist veröffentlicht.',
+    qa_w0: '{n} ist ein Immobilienprojekt in {place}.', qa_w0d: '{n} ist ein Immobilienprojekt in {place}, Bauträger {dev}.', qa_pn1: 'Eine Genehmigungsnummer ist veröffentlicht.', qa_pn0: 'Es ist keine Genehmigungsnummer veröffentlicht.',
     qa_tr: 'Transparenzwert: {s} von 100, Platz {r} von {m} in {p}.', qa_tr1: 'Transparenzwert: {s} von 100.', qa_cl: '{v} von {c} geprüften Angaben des Bauträgers sind bestätigt.', qa_chk: 'Zuletzt geprüft: {d}.',
     h_when: 'Wann wird {n} fertiggestellt?', h_cost: 'Was kostet {n}?', h_who: 'Wer ist der Bauträger von {n}?', h_legit: 'Ist {n} seriös? Was wir prüfen konnten', h_where: 'Wo liegt {n}?',
     toc_legit: 'Was wir prüfen konnten', toc_where: 'Lage',
@@ -71,7 +71,7 @@ const S = {
     h_when: 'Wanneer wordt {n} opgeleverd?', h_cost: 'Wat kost {n}?', h_who: 'Wie is de ontwikkelaar van {n}?', h_legit: 'Is {n} betrouwbaar? Wat we konden controleren', h_where: 'Waar ligt {n}?',
     toc_legit: 'Wat we konden controleren', toc_where: 'Locatie',
     lg_intro: 'Wat er over {n} gepubliceerd en controleerbaar is, punt voor punt, met de bron van elk. Dit is geen oordeel: Kolaboro plakt geen labels op projecten of ontwikkelaars. "Niet gepubliceerd" betekent dat we geen openbare bron vonden.',
-    lg_sum: 'Gepubliceerd of bevestigd: {a} van de {b} punten die we konden controleren.', lg_m: 'Hoe de transparantiescore wordt berekend', lg_nr: 'Deze lijst is berekend uit openbare feiten; onze eigen beoordeling van dit project is nog niet gedaan.',
+    lg_sum: 'Gepubliceerd of bevestigd: {a} van de {b} punten die we konden controleren.', lg_m: 'Hoe de transparantiescore wordt berekend', lg_nr: 'Deze lijst is berekend uit openbare feiten; onze eigen beoordeling van dit project volgt nog.',
     c_read: 'Prijzen en betalingsschema zoals gepubliceerd op de pagina’s die we lazen (kopie van {d}).', c_price0: 'Prijs: niet gepubliceerd op de pagina’s die we lazen.', c_plan0: 'Betalingsschema: niet gepubliceerd op de pagina’s die we lazen.', c_plan: 'Gepubliceerd betalingsschema', c_dep: 'Aanbetaling',
     w_sum0: 'Opleverdatum in ons dossier: {h}. Niet verschoven in onze gegevens.', w_sum: 'Opleverdatum in ons dossier: {h}. Eerste datum in ons dossier: {a}. Geregistreerde verschuivingen: {k}.', w_none: 'Opleverdatum: niet gepubliceerd in de bronnen die we lazen.',
     who_l: '{n} wordt ontwikkeld door {dev}, volgens de pagina’s die we lazen.', who_k: 'Projecten van {dev} die we volgen: {k}.', who_none: 'De ontwikkelaar wordt niet genoemd in de bronnen die we lazen.',
@@ -82,7 +82,7 @@ const S = {
   ru: { b: '{n}: отзывы', s1: ', ', s2: ', ', t_h: 'сдача {h}', t_pn: 'разрешение опубликовано', t_f: '{n}: отзывы и факты',
     d_lead: '{n}: отзывы и факты{by}, {place}.', d_h: 'Срок сдачи по публикации: {h}.', d_h0: 'Срок сдачи не опубликован.', d_pn1: 'Номер разрешения опубликован.', d_pn0: 'Номер разрешения не опубликован.', d_tr: 'Оценка прозрачности {s}/100.', d_nr: 'Ещё не проверен нами; только факты с источниками.', d_chk: 'Проверено {d}.',
     qa_w0: '{n}: проект недвижимости, {place}.', qa_w0d: '{n}: проект недвижимости, {place}, застройщик {dev}.', qa_pn1: 'Номер разрешения опубликован.', qa_pn0: 'Номер разрешения не опубликован.',
-    qa_tr: 'Оценка прозрачности: {s} из 100, место {r} из {m}: {p}.', qa_tr1: 'Оценка прозрачности: {s} из 100.', qa_cl: 'Подтверждено заявлений застройщика из проверенных нами: {v} из {c}.', qa_chk: 'Последняя проверка: {d}.',
+    qa_tr: 'Оценка прозрачности: {s} из 100, место {r} из {m} в рейтинге «{p}».', qa_tr1: 'Оценка прозрачности: {s} из 100.', qa_cl: 'Подтверждено заявлений застройщика из проверенных нами: {v} из {c}.', qa_chk: 'Последняя проверка: {d}.',
     h_when: 'Когда сдадут {n}?', h_cost: 'Сколько стоит {n}?', h_who: 'Кто застройщик {n}?', h_legit: 'Можно ли доверять {n}? Что мы смогли проверить', h_where: 'Где находится {n}?',
     toc_legit: 'Что мы смогли проверить', toc_where: 'Расположение',
     lg_intro: 'Что опубликовано и проверяемо о {n}, пункт за пунктом, с источником для каждого. Это не вердикт: Kolaboro не присваивает ярлыков проектам и застройщикам. «Не опубликовано» значит, что мы не нашли публичного источника.',
@@ -97,12 +97,12 @@ const S = {
   zh: { b: '{n}评价', s1: '：', s2: '，', t_h: '交付 {h}', t_pn: '许可证已公布', t_f: '{n}评价与事实',
     d_lead: '{n}评价与事实{by}，{place}。', d_h: '公布的交付时间：{h}。', d_h0: '未公布交付时间。', d_pn1: '已公布许可证编号。', d_pn0: '未公布许可证编号。', d_tr: '透明度评分 {s}/100。', d_nr: '尚未审核；仅列出有来源的事实。', d_chk: '核查于 {d}。',
     qa_w0: '{n}是位于{place}的房地产项目。', qa_w0d: '{n}是位于{place}的房地产项目，开发商为{dev}。', qa_pn1: '已公布许可证编号。', qa_pn0: '未公布许可证编号。',
-    qa_tr: '透明度评分：{s}/100，在{p}排名第 {r}（共 {m} 个）。', qa_tr1: '透明度评分：{s}/100。', qa_cl: '我们核查的开发商声明中，已确认 {v} 项，共 {c} 项。', qa_chk: '最近核查：{d}。',
+    qa_tr: '透明度评分：{s}/100，在{p}排名第 {r}（共 {m} 个）。', qa_tr1: '透明度评分：{s}/100。', qa_cl: '在我们核查的 {c} 项开发商声明中，已确认 {v} 项。', qa_chk: '最近核查：{d}。',
     h_when: '{n}何时交付？', h_cost: '{n}多少钱？', h_who: '{n}的开发商是谁？', h_legit: '{n}可靠吗？我们能核查的内容', h_where: '{n}在哪里？',
     toc_legit: '我们能核查的内容', toc_where: '位置',
     lg_intro: '关于{n}已公布且可核查的内容，逐项列出，每项附来源。这不是结论：Kolaboro 不给项目或开发商贴标签。“未公布”表示我们没有找到公开来源。',
-    lg_sum: '已公布或已确认：{a} 项，共 {b} 项可核查。', lg_m: '透明度评分的计算方法', lg_nr: '此清单根据公开事实计算；我们对该项目的审核尚未完成。',
-    c_read: '价格和付款计划以我们阅读的页面所公布的为准（{d} 的副本）。', c_price0: '价格：我们阅读的页面未公布。', c_plan0: '付款计划：我们阅读的页面未公布。', c_plan: '公布的付款计划', c_dep: '定金',
+    lg_sum: '在我们能核查的 {b} 项中，已公布或已确认 {a} 项。', lg_m: '透明度评分的计算方法', lg_nr: '此清单根据公开事实计算；我们对该项目的审核尚未完成。',
+    c_read: '价格和付款计划均按我们所读页面的公布内容列出（{d} 的存档副本）。', c_price0: '价格：我们阅读的页面未公布。', c_plan0: '付款计划：我们阅读的页面未公布。', c_plan: '公布的付款计划', c_dep: '定金',
     w_sum0: '记录的交付时间：{h}。我们的记录中未变更。', w_sum: '记录的交付时间：{h}。最早记录的时间：{a}。记录的变更次数：{k}。', w_none: '交付时间：我们阅读的来源未公布。',
     who_l: '根据我们阅读的页面，{n}的开发商为{dev}。', who_k: '我们跟踪的{dev}项目数：{k}。', who_none: '我们阅读的来源未写明开发商。',
     wh_place: '公布的区域：{place}。', wh_pin_a: '地图标记：依据公布的地址或坐标，精度约 {a} 米。', wh_pin: '地图标记：依据公布的地址或坐标。', wh_nopin: '地图标记：无，因为没有公布足够精确的地址或坐标。',
@@ -112,11 +112,11 @@ const S = {
   ar: { b: 'آراء {n}', s1: ': ', s2: '، ', t_h: 'التسليم {h}', t_pn: 'الترخيص منشور', t_f: 'آراء وحقائق عن {n}',
     d_lead: 'آراء وحقائق عن {n}{by}، {place}.', d_h: 'التسليم كما نُشر: {h}.', d_h0: 'لا يوجد موعد تسليم منشور.', d_pn1: 'رقم الترخيص منشور.', d_pn0: 'رقم الترخيص غير منشور.', d_tr: 'درجة الشفافية {s}/100.', d_nr: 'لم نراجعه بعد؛ حقائق موثّقة المصدر فقط.', d_chk: 'آخر فحص {d}.',
     qa_w0: '{n} مشروع عقاري في {place}.', qa_w0d: '{n} مشروع عقاري في {place}، المطوّر {dev}.', qa_pn1: 'رقم الترخيص منشور.', qa_pn0: 'لا يوجد رقم ترخيص منشور.',
-    qa_tr: 'درجة الشفافية: {s} من 100، المرتبة {r} من {m} في {p}.', qa_tr1: 'درجة الشفافية: {s} من 100.', qa_cl: 'تأكّد {v} من {c} ادعاءات المطوّر التي فحصناها.', qa_chk: 'آخر فحص: {d}.',
+    qa_tr: 'درجة الشفافية: {s} من 100، المرتبة {r} من {m} في {p}.', qa_tr1: 'درجة الشفافية: {s} من 100.', qa_cl: 'من بين ادعاءات المطوّر التي فحصناها ({c})، تأكّد منها: {v}.', qa_chk: 'آخر فحص: {d}.',
     h_when: 'متى يُسلَّم {n}؟', h_cost: 'كم سعر {n}؟', h_who: 'من هو مطوّر {n}؟', h_legit: 'هل {n} موثوق؟ ما الذي استطعنا التحقق منه', h_where: 'أين يقع {n}؟',
     toc_legit: 'ما استطعنا التحقق منه', toc_where: 'الموقع',
     lg_intro: 'ما هو منشور وقابل للتحقق عن {n}، بندًا بندًا، مع مصدر كل بند. هذا ليس حكمًا: لا تضع Kolaboro تصنيفات على المشاريع أو المطوّرين. "غير منشور" يعني أننا لم نجد مصدرًا عامًا.',
-    lg_sum: 'منشور أو مؤكَّد: {a} من {b} بنود استطعنا التحقق منها.', lg_m: 'كيف تُحسب درجة الشفافية', lg_nr: 'تُحسب هذه القائمة من حقائق عامة؛ مراجعتنا الخاصة لهذا المشروع لم تتم بعد.',
+    lg_sum: 'منشور أو مؤكَّد: {a} من أصل {b} من البنود التي استطعنا التحقق منها.', lg_m: 'كيف تُحسب درجة الشفافية', lg_nr: 'تُحسب هذه القائمة من حقائق عامة؛ مراجعتنا الخاصة لهذا المشروع لم تتم بعد.',
     c_read: 'الأسعار وخطة الدفع كما نُشرت في الصفحات التي قرأناها (نسخة {d}).', c_price0: 'السعر: غير منشور في الصفحات التي قرأناها.', c_plan0: 'خطة الدفع: غير منشورة في الصفحات التي قرأناها.', c_plan: 'خطة الدفع المنشورة', c_dep: 'الدفعة المقدمة',
     w_sum0: 'موعد التسليم المسجّل: {h}. لم يتغير في سجلاتنا.', w_sum: 'موعد التسليم المسجّل: {h}. أول موعد مسجّل: {a}. عدد التغييرات المسجّلة: {k}.', w_none: 'موعد التسليم: غير منشور في المصادر التي قرأناها.',
     who_l: 'مطوّر {n} هو {dev}، وفق الصفحات التي قرأناها.', who_k: 'عدد مشاريع {dev} التي نتابعها: {k}.', who_none: 'لم يُذكر اسم المطوّر في المصادر التي قرأناها.',
@@ -127,7 +127,7 @@ const S = {
 };
 export function q(lang, k, v) {
   const s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k];
-  return v ? String(s).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s;
+  return v ? String(s).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s;   // n25t: no "г.." when a date ends the sentence
 }
 export const QA_LANGS = Object.keys(S);
 const len = s => [...String(s)].length;
@@ -143,7 +143,21 @@ export function qaTitle(lang, f) {
   if (n2 && n2 !== f.n) { const b2 = q(lang, 'b', { n: n2 }); if (facts.length) C.push(b2 + q(lang, 's1') + facts[0] + ' | Kolaboro', b2 + q(lang, 's1') + facts[0]); C.push(b2 + ' | Kolaboro', b2); }
   const n3 = (n2 || String(f.n)).split(/,\s|\s[-\u2013]\s|\s\//)[0].trim();   // still too long: the name up to its first comma, dash or slash
   if (n3 && n3 !== n2 && n3 !== f.n) C.push(q(lang, 'b', { n: n3 }) + ' | Kolaboro', q(lang, 'b', { n: n3 }));
-  return C.find(t => len(t) <= 60) || base;
+  const hit = C.find(t => len(t) <= 60); if (hit) return hit;
+  // n25t: names of 50+ characters: drop the developer's name inside the project name, then words that describe rather than name
+  // ("Private", "Resort and", "under construction"), then cut at a word boundary (never ending on "at", "in", "near"...).
+  // The searched word ("reviews", "opiniones", "Erfahrungen"...) always stays.
+  const nm = n2 || String(f.n), V = [];
+  const dv = String(f.dv || '').replace(/\s+(global|group|properties|property|developments?|holdings?|land|bhd|berhad|ltd|llc|inc|plc|sa|sl|pjsc|psc|real estate)\.?$/i, '').trim();
+  const drop = (t, rx) => t.replace(rx, ' ').replace(/\s{2,}/g, ' ').replace(/\s+([,)])/g, '$1').trim();
+  let v = nm; if (dv.length > 3 && v.toLowerCase().includes(dv.toLowerCase()) && v.toLowerCase() !== dv.toLowerCase()) { v = drop(v, new RegExp(dv.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i')); V.push(v); }
+  for (const rx of [/\bunder construction\b/i, /\bresort and\b/i, /\bprivate\b/i]) { const w = drop(v, rx); if (w !== v && w.split(' ').length >= 2) { v = w; V.push(v); } }
+  for (const w of V) C.push(q(lang, 'b', { n: w }) + ' | Kolaboro', q(lang, 'b', { n: w }));
+  const hit2 = C.find(t => len(t) <= 60); if (hit2) return hit2;
+  const room = 60 - (len(q(lang, 'b', { n: '' })));
+  const W = v.split(' '), STOP = /^(at|in|near|by|on|of|the|and|with|from|for|under|to|de|del|la|el|y|-|–|,)$/i;
+  for (let k = W.length - 1; k >= 2; k--) { const t = W.slice(0, k).join(' ').replace(/[,;:(]+$/, ''); if (STOP.test(W[k - 1]) || len(t) > room) continue; return q(lang, 'b', { n: t }); }
+  return base;
 }
 // Description under 155 characters, most useful facts first; shorter place, then fewer facts until it fits.
 export function qaDesc(lang, f) {

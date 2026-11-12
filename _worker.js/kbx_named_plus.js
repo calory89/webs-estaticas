@@ -20,7 +20,7 @@ const ES = {"muni_q":"Q2 2026","prov_q":"Q2 2026","muni":{"Almería":[2398,1796]
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const src = (u, label) => ' <a class="src" href="' + esc(u) + '" rel="nofollow noopener" target="_blank">' + esc(label) + '</a>';
 const norm = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
-const fmt = n => Math.round(n).toLocaleString('en-GB');
+const fmt = n => { try { return Math.round(n).toLocaleString(LOCALE[lang] || 'en-GB'); } catch (e) { return String(Math.round(n)); } };   // n25t: numbers in the page's locale
 const pct = (lang, a, b) => { const d = Math.round((a / b - 1) * 100); return d === 0 ? tl(lang, 'ppm_same') : tl(lang, d > 0 ? 'ppm_above' : 'ppm_below', { d: Math.abs(d) }); };
 
 // ---------------------------------------------------------------- price per m2

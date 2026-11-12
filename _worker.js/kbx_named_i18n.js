@@ -165,7 +165,7 @@ const de = {
   v_pub: 'veröffentlicht', v_notpub: 'nicht veröffentlicht', v_none: 'in den gelesenen Quellen nicht gefunden', v_dev_none: 'in den gelesenen Quellen nicht genannt', v_stated: 'angegeben', v_notstated: 'nicht angegeben',
   st_offplan: 'Off-Plan (vor Baubeginn)', st_construction: 'im Bau', st_completed: 'fertiggestellt', st_unknown: 'Phase nicht veröffentlicht',
   s_glance: 'Kurz gesagt',
-  g_listed: '{n} ist als {stage} in {place} gelistet.', g_listed_dev: '{n} ist als {stage} in {place} gelistet, Bauträger {dev}.',
+  g_listed: '{n} in {place} ist mit dem Status „{stage}“ gelistet.', g_listed_dev: '{n} in {place} ist mit dem Status „{stage}“ gelistet, Bauträger {dev}.',
   g_h: 'Der erfasste Übergabetermin ist {h}.', g_h_none: 'In den gelesenen Quellen ist kein Übergabetermin veröffentlicht.',
   g_pn: 'Eine Genehmigungs- oder Lizenznummer ist veröffentlicht.', g_pn_none: 'In den gelesenen Quellen ist keine Genehmigungs- oder Lizenznummer veröffentlicht.',
   g_claims: 'Von {c} geprüften Angaben des Bauträgers sind {v} durch ein Register oder eine unabhängige Quelle bestätigt, {u} noch nicht überprüft und {x} durch eine andere Quelle widerlegt.',
@@ -311,7 +311,7 @@ const nl = {
   v_pub: 'gepubliceerd', v_notpub: 'niet gepubliceerd', v_none: 'niet gevonden in de gelezen bronnen', v_dev_none: 'niet genoemd in de gelezen bronnen', v_stated: 'vermeld', v_notstated: 'niet vermeld',
   st_offplan: 'op plan', st_construction: 'in aanbouw', st_completed: 'opgeleverd', st_unknown: 'fase niet gepubliceerd',
   s_glance: 'In het kort',
-  g_listed: '{n} staat vermeld als {stage} in {place}.', g_listed_dev: '{n} staat vermeld als {stage} in {place}, van {dev}.',
+  g_listed: '{n} in {place} staat vermeld met de status ‘{stage}’.', g_listed_dev: '{n} in {place} staat vermeld met de status ‘{stage}’, ontwikkelaar {dev}.',
   g_h: 'De geregistreerde opleverdatum is {h}.', g_h_none: 'In de gelezen bronnen is geen opleverdatum gepubliceerd.',
   g_pn: 'Er is een vergunnings- of licentienummer gepubliceerd.', g_pn_none: 'In de gelezen bronnen is geen vergunnings- of licentienummer gepubliceerd.',
   g_claims: 'Van {c} gecontroleerde beweringen van de ontwikkelaar zijn er {v} bevestigd door een register of onafhankelijke bron, {u} nog niet geverifieerd en {x} weersproken door een andere bron.',
@@ -737,4 +737,17 @@ const B19 = {
   ar: { g_over2: 'وفق سجلاتنا، مضى على هذا الموعد {m} شهرًا.', g_moved_1: 'تغيّر موعد التسليم في سجلاتنا مرة واحدة، بمقدار {mm} شهرًا.', pr_moved_1: 'تأجّل مرة واحدة، بمقدار {mm} شهرًا', g_d_1: 'نتابع مشروعًا واحدًا لـ {dev} في {mks}.' }
 };
 for (const [l, o] of Object.entries(B19)) Object.assign({ en, es, de, fr, nl, ru, zh, ar }[l], o);
+// Batch 25 (n25t, 12 Nov 2026): the label for the handover wording quoted as published next to the localized date
+// and the Dataset name and description in the JSON-LD (they were English on every page)
+const B25 = {
+  en: { as_pub: 'as published', ds_name: 'Kolaboro record: {n}', ds_rv: 'Sourced facts about {n} ({place}): developer claims tested, six buyer checks with verification level, dated promises and change history. Kolaboro public id {id}.', ds_nr: 'Sourced facts about {n} ({place}) as published, with links. Not yet reviewed by Kolaboro; no checks or score. Kolaboro public id {id}.' },
+  es: { as_pub: 'tal como se publicó', ds_name: 'Ficha de Kolaboro: {n}', ds_rv: 'Datos con fuente sobre {n} ({place}): afirmaciones del promotor contrastadas, seis comprobaciones para compradores con su nivel de verificación, promesas fechadas e historial de cambios. Identificador público de Kolaboro: {id}.', ds_nr: 'Datos con fuente sobre {n} ({place}) tal como se publicaron, con enlaces. Kolaboro aún no lo ha revisado; sin comprobaciones ni puntuación. Identificador público de Kolaboro: {id}.' },
+  de: { as_pub: 'wie veröffentlicht', ds_name: 'Kolaboro-Datensatz: {n}', ds_rv: 'Belegte Fakten zu {n} ({place}): geprüfte Angaben des Bauträgers, sechs Käufer-Prüfungen mit Verifizierungsgrad, datierte Zusagen und Änderungsverlauf. Öffentliche Kolaboro-ID {id}.', ds_nr: 'Belegte Fakten zu {n} ({place}) wie veröffentlicht, mit Links. Noch nicht von Kolaboro geprüft; keine Prüfungen und kein Wert. Öffentliche Kolaboro-ID {id}.' },
+  fr: { as_pub: 'tel que publié', ds_name: 'Fiche Kolaboro : {n}', ds_rv: 'Faits sourcés sur {n} ({place}) : affirmations du promoteur vérifiées, six contrôles acheteur avec leur niveau de vérification, promesses datées et historique des changements. Identifiant public Kolaboro {id}.', ds_nr: 'Faits sourcés sur {n} ({place}) tels que publiés, avec liens. Pas encore examiné par Kolaboro ; ni contrôles ni score. Identifiant public Kolaboro {id}.' },
+  nl: { as_pub: 'zoals gepubliceerd', ds_name: 'Kolaboro-dossier: {n}', ds_rv: 'Feiten met bron over {n} ({place}): geteste claims van de ontwikkelaar, zes kopercontroles met verificatieniveau, gedateerde beloften en wijzigingsgeschiedenis. Openbare Kolaboro-ID {id}.', ds_nr: 'Feiten met bron over {n} ({place}) zoals gepubliceerd, met links. Nog niet door Kolaboro beoordeeld; geen controles of score. Openbare Kolaboro-ID {id}.' },
+  ru: { as_pub: 'как опубликовано', ds_name: 'Запись Kolaboro: {n}', ds_rv: 'Факты с источниками о {n} ({place}): проверенные заявления застройщика, шесть проверок для покупателя с уровнем подтверждения, датированные обещания и история изменений. Публичный идентификатор Kolaboro: {id}.', ds_nr: 'Факты с источниками о {n} ({place}) в опубликованном виде, со ссылками. Kolaboro ещё не проверял этот проект; проверок и оценки нет. Публичный идентификатор Kolaboro: {id}.' },
+  zh: { as_pub: '原文', ds_name: 'Kolaboro 记录：{n}', ds_rv: '关于 {n}（{place}）的有来源事实：已核查的开发商声明、六项购房者检查及其核实级别、有日期的承诺和变更历史。Kolaboro 公开编号 {id}。', ds_nr: '关于 {n}（{place}）的有来源事实，按发布原文并附链接。Kolaboro 尚未审核；没有检查结果或评分。Kolaboro 公开编号 {id}。' },
+  ar: { as_pub: 'كما نُشر', ds_name: 'سجل Kolaboro: {n}', ds_rv: 'حقائق موثّقة بمصادرها عن {n} ({place}): ادعاءات المطوّر التي اختُبرت، وستة فحوص للمشتري مع مستوى التحقق، والوعود المؤرّخة وسجل التغييرات. المعرّف العام في Kolaboro: {id}.', ds_nr: 'حقائق موثّقة بمصادرها عن {n} ({place}) كما نُشرت، مع الروابط. لم تراجعه Kolaboro بعد؛ لا فحوص ولا درجة. المعرّف العام في Kolaboro: {id}.' }
+};
+for (const [l, o] of Object.entries(B25)) Object.assign({ en, es, de, fr, nl, ru, zh, ar }[l], o);
 export const T = { en, es, de, fr, nl, ru, zh, ar };

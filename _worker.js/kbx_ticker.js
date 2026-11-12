@@ -30,8 +30,17 @@ export function mergeShips(items, ships) {
   return a.sort((x, y) => String(y.d).localeCompare(String(x.d))).slice(0, 24);
 }
 
-export async function tickerHtml(env) {
-  if (C.h !== null && Date.now() - C.t < 300000) return C.h;
+// n25t (batch 25): the bar in the page language. Each line carries its own "tl" translations (written in the same commit as the
+// change); the date and the DATA / SHIPPED labels come from Intl and this table. As in site.js (which refreshes the bar with live
+// numbers after load), a line without a translation is left out on translated pages.
+const TL_LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
+const LBL = { en: ['DATA', 'SHIPPED'], es: ['DATOS', 'NOVEDAD'], de: ['DATEN', 'NEU'], fr: ['DONNÉES', 'NOUVEAU'], nl: ['DATA', 'NIEUW'], ru: ['ДАННЫЕ', 'НОВОЕ'], zh: ['数据', '新功能'], ar: ['بيانات', 'جديد'] };   // same labels as site.js (SHIPL)
+const LOCT = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
+const dayL = (s, lang) => { if (lang === 'en') return day(s); const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); if (isNaN(x)) return ''; try { return new Intl.DateTimeFormat(LOCT[lang], { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(x); } catch (e) { return day(s); } };
+export async function tickerHtml(env, lang) {
+  lang = TL_LANGS.includes(lang) ? lang : 'en';
+  if (C.h !== null && Date.now() - C.t < 300000 && C.h[lang] != null) return C.h[lang];
+  if (C.h === null || Date.now() - C.t >= 300000) C = { t: Date.now(), h: {} };
   const [T, S] = await Promise.all([file(env, 'ticker.json'), file(env, 'shipping.json')]);
   const items = [];
   for (const x of (T && T.items) || []) if (x && x.text && x.date) items.push(x);
@@ -39,8 +48,10 @@ export async function tickerHtml(env) {
   const seen = new Set(), out = [];
   items.sort((a, b) => String(b.date).localeCompare(String(a.date)));
   for (const x of items) { const k = x.text.toLowerCase().trim(); if (seen.has(k)) continue; seen.add(k); out.push(x); if (out.length >= 16) break; }
-  const h = out.map(x => '<span class="si"><b>' + esc(day(x.date)) + '</b><em class="' + (x.kind === 'data' ? 'k-data">DATA' : 'k-feature">SHIPPED') + '</em>' + esc(x.text) + '</span>').join('');
-  C = { t: Date.now(), h };
+  const L = LBL[lang];
+  const h = out.map(x => { const t = lang === 'en' ? x.text : x.tl && x.tl[lang]; if (!t) return '';
+    return '<span class="si"><b>' + esc(dayL(x.date, lang)) + '</b><em class="' + (x.kind === 'data' ? 'k-data">' + L[0] : 'k-feature">' + L[1]) + '</em>' + esc(t) + '</span>'; }).join('');
+  C.h[lang] = h;
   return h;
 }
 
@@ -53,9 +64,9 @@ function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
-    const h = await tickerHtml(env);
+    const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
     let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
-    if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
+    if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('.ship-v[lang="en"]', { element(e) { if (lm) e.setAttribute('lang', lm[1]); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
     return rw.transform(r);
   } catch (e) { return r; }
 }
