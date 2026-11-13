@@ -46,7 +46,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v75';   // v75: developer's dated promises next to the developer, link to the buying guide of the place (n27c); v74: DLD and RAK RERA register facts and developer-page quotes for the 150 most searched projects in UAE, Middle East, Europe and Africa (n27r1); v73: overdue notice, updated date, titles with the year, shorter repeated notes (n27g); v72: "did you buy here?" in the quick answer, developer reply under each buyer report, moderation link (n27t); v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
+const CACHE_V = 'named-v76';   // v76: latest dated handover on record (phased or moved), n27g; v75: developer's dated promises next to the developer, link to the buying guide of the place (n27c); v74: DLD and RAK RERA register facts and developer-page quotes for the 150 most searched projects in UAE, Middle East, Europe and Africa (n27r1); v73: overdue notice, updated date, titles with the year, shorter repeated notes (n27g); v72: "did you buy here?" in the quick answer, developer reply under each buyer report, moderation link (n27t); v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
 //   // v64: market source label is the full /m/<market>/ path, not the 404 path kolaboro.com/m (n25e); v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
@@ -202,9 +202,31 @@ const reviewed = c => !!(c && c.verified && Object.values(c.verified).some(v => 
 // portals and agents: the page we read there is a listing, not the developer's own site
 const PORTAL_RX = /(^|\.)(propertyfinder|bayut|thepreplan|imovirtual|idealista|fotocasa|rumavi|a1properties|dubizzle|lucasfox|kyero|rightmove|zoopla|realtor|zillow|redfin|ddproperty|hipflat|fazwaz|propertyguru|iproperty|lamudi|dotproperty|99acres|magicbricks|sahibinden|hepsiemlak|emlakjet|inmuebles24|vivanuncios|encuentra24|point2homes|jamesedition|sothebysrealty|knightfrank|savills|cbre|jll|engelvoelkers|remax|century21|coldwellbanker|eurovilla|suprimmo|benoit|terra|regent|luxinmo|tranio|prian|realting|ziprealty|propertyfinder|realtyna|thailand-property|homify|offplan|uaepropertychecker|dubairealestateiq|joshsteinrealtor|malaysiaproperty4u|newhomes|properstar|green-acres|immobilienscout24|immowelt|funda|seloger|leboncoin|logic-immo|bienici|casa|immobiliare|tecnocasa|engel)\./i;
 const isListing = u => { const h = host(u); return !!h && PORTAL_RX.test('.' + h); };
+// n27g (batch 27): the handover on record is the LATEST dated handover we hold. A promise whose stored date is older than a date in
+// its own dated history, its research date (rd) or the developer's current published date (fx) was moved or is phased ("phase 1
+// September 2024, last phase September 2027"): the later date is used, and a "kept" status (it described the earlier date or phase)
+// becomes "pending" when the later date is ahead and "unknown" when it has passed. Flag ph marks such a promise.
+const HO_ADJ = new WeakMap();
+const hstart = d => { const P = hparse(d); if (!P) return null; const v = P.a; const m = v.m || (v.q ? v.q * 3 - 2 : v.h ? v.h * 6 - 5 : v.p ? { b: 1, m: 4, l: 9, e: 10 }[v.p] : v.s ? { sp: 3, su: 6, au: 9, wi: 12 }[v.s] : 1); return v.y + '-' + String(m).padStart(2, '0'); };
 function handoverOf(ix, x) {
   const pr = ix.prom[x.id] || [], h = pr.find(p => p.k === 'handover');
-  if (h) return { d: h.d, p: h };
+  if (h) {
+    let A = HO_ADJ.get(h);
+    if (A === undefined) {
+      A = null; const k0 = hkey(h.d);
+      if (k0) {
+        let best = null, bk = k0;
+        // a later date must start after the stored period ends: "2027-08" and "Q3 2027", or "June 2026" and "2026", are the same date
+        // hist entries count only when seen on or after the stored date was first seen; the research date (rd) and the developer's
+        // current published date (fx) always count; a gap under 3 months between two sources is read as the same date
+        const seen0 = ((h.hist || []).find(e => e && e.d === h.d) || {}).seen || '', mi = k => { const [y, m] = k.split('-').map(Number); return y * 12 + m; };
+        for (const d of [...(h.hist || []).filter(e => e && e.seen >= seen0).map(e => e.d), h.rd, (x.fx || {}).handover_promised]) { const k = d && hkey(d), s0 = d && hstart(d); if (k && s0 && mi(s0) >= mi(k0) + 3 && k > bk) { bk = k; best = d; } }
+        if (best) { const now = new Date(), cur = now.getUTCFullYear() + '-' + String(now.getUTCMonth() + 1).padStart(2, '0'); A = Object.assign({}, h, { d: best, st: bk >= cur ? 'pending' : 'unknown', ph: true, d0: h.d, st0: h.st }); }
+      }
+      HO_ADJ.set(h, A);
+    }
+    return A ? { d: A.d, p: A } : { d: h.d, p: h };
+  }
   const f = (x.fx || {}).handover_promised; if (f) return { d: f, p: null };
   const c = ix.caseBy.get(x.id); if (c && c.done) return { d: String(c.done), p: null };
   return null;
@@ -311,7 +333,7 @@ export const LL_CSS = '<style>.kll{padding:28px 0;border-top:1px solid var(--lin
 // /api/seo/urls (summary), llms-full.txt and the answer files.
 function qaSentences(ix, x, lang, tp, o) {
   const c = ix.caseBy.get(x.id) || {}, cl = c.claims || { verified: 0, unverified: 0, contradicted: 0 }, cN = (cl.verified || 0) + (cl.unverified || 0) + (cl.contradicted || 0), rvd = reviewed(c);
-  const ho = handoverOf(ix, x), hand = (ix.prom[x.id] || []).find(p => p.k === 'handover'), name = x.n, checked = (o && o.checked) || lastmod(ix, x), rvN = o ? o.rvN : undefined;
+  const ho = handoverOf(ix, x), hand = ho && ho.p ? ho.p : (ix.prom[x.id] || []).find(p => p.k === 'handover'), name = x.n, checked = (o && o.checked) || lastmod(ix, x), rvN = o ? o.rvN : undefined;
   const place0 = [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), place2 = [x.mk, x.co !== x.mk ? x.co : null].filter(Boolean).join(', ');
   const coL = (lg, p) => placeName(p, lg);   // n25t: country (and a market named like a country) in the page language
   const rk = tp ? (tp.ranks.find(r => r.ranked) || null) : null, ovq = overdueOf(ix, x);   // n27g: overdue computed now, not at build time
@@ -339,7 +361,7 @@ function projectPage(ix, x, lang, extra) {
   const c = ix.caseBy.get(x.id), ck = c.checks || {}, vf = c.verified || {}, cl = c.claims || { verified: 0, unverified: 0, contradicted: 0 };
   const name = x.n, place = placeName([x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), lang);   // n25t: country localized
   const stage = tr(lang, stageKey(c.stage || x.st)), ho = handoverOf(ix, x), checked = lastmod(ix, x);
-  const page = x.url, pr = (ix.prom[x.id] || []).slice(0, 12), hand = pr.find(p => p.k === 'handover');
+  const page = x.url, pr = (ix.prom[x.id] || []).slice(0, 12).map(p => p.k === 'handover' && handoverOf(ix, x) && handoverOf(ix, x).p && handoverOf(ix, x).p.ph ? handoverOf(ix, x).p : p), hand = pr.find(p => p.k === 'handover');   // n27g: latest dated handover
   const ov = overdueOf(ix, x), ovN = ov ? ov.m : 0;   // n27g: months since the handover date on record passed (null: not overdue)
   const cN = cl.verified + cl.unverified + cl.contradicted, rvd = reviewed(c), nrB = tr(lang, 'nr_badge', { d: fd(x.ad || c.checked, lang) });
   const canon = pUrl(lang, x.s), devPage = x.dvs && ix.devs.has(x.dvs) ? dUrl(lang, x.dvs) : null, rec = '/api/open/projects/' + encodeURIComponent(x.id);
@@ -535,6 +557,7 @@ function projectPage(ix, x, lang, extra) {
   // s15a: more of the questions people search, each answered only from the facts on this page
   FAQ.splice(1, 0, [qa(lang, 'h_where', { n: name }), tr(lang, 'a_where', { n: name, place }) + ' ' + pinLine]);
   FAQ.splice(3, 0, [tr(lang, 'q_delay', { n: name }), ovN ? tr(lang, 'g_over', { m: ovN }) + (ho ? ' ' + tr(lang, 'a_delay_latest', { h: fd(ho.d, lang) }) : '')
+    : hand && hand.ph ? qa(lang, 'ph_t', { h: fd(hand.d, lang), a: fd(hand.d0, lang) })   // n27g: a later date or last phase on record
     : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) + ' ' + tr(lang, 'a_delay_latest', { h: fd(hand.d, lang) })
     : hand && hand.st === 'pending' ? tr(lang, 'a_delay_ahead', { h: fd(hand.d, lang) }) : hand ? tr(lang, 'a_delay_rec', { h: fd(hand.d, lang), st: tr(lang, 'ps_' + hand.st) }) : ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'a_deliv_none')]);
   // n24s: the price question is always answered ("not published" when no price), the payment plan when one is published
