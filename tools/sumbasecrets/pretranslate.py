@@ -3,7 +3,7 @@ import re, concurrent.futures as cf, translate
 from guides3 import GUIDES3
 from guides4 import GUIDES4
 from ui3 import EXTRA_UI3
-import native
+import native, guides_add
 from build_langs import LANGS2
 def parts(h): return [x for x in re.split(r'(?=<h2>)', h) if x]
 def strings():
@@ -11,6 +11,8 @@ def strings():
     for g in GUIDES3 + GUIDES4:
         acc += [g["t"], g["d"]] + parts(g["b"])
         for q, a in g.get("faq", []): acc += [q, a]
+    for v in guides_add.ADD.values(): acc += parts(v)
+    for f in guides_add.FAQ.values(): acc += [x for q in f for x in q]
     for v in EXTRA_UI3.values(): acc += v if isinstance(v, list) else [v]
     e = native.INTRO["en"]; acc += [e["t"], e["d"], e["i"]] + [x for f in e["faq"] for x in f] + list(native.LINKS["en"])
     return acc

@@ -278,6 +278,30 @@ function guidesPage(l) {
   return page(l, "/guides/", { title: u.guides, body });
 }
 
+function guideExtra(l, g) {
+  const u = D.ui[l], u2 = D.ui2[l], en = (g.en && g.en.b) || "";
+  const seen = []; (en.match(/\/place\/([a-z0-9-]+)\//g) || []).forEach(m => { const x = m.split("/")[2]; if (!seen.includes(x)) seen.push(x); });
+  const pls = seen.map(x => D.places.find(p => p.s === x)).filter(Boolean);
+  let h = "";
+  const CATG = { "best-beaches-in-sumba": "beach", "sumba-waterfalls": "waterfall", "traditional-villages-sumba": "village", "surf-sumba": "beach", "best-sunsets-in-sumba": "viewpoint" };
+  if (/^itinerary-/.test(g.s) && pls.length > 1) {
+    h += `<h2>🚗 ${esc(u2.gx_legs_t)}</h2><div class="tblw"><table class="tbl"><thead><tr><th>${esc(u2.gx_leg)}</th><th>${esc(u2.gt_drive)}</th></tr></thead><tbody>${pls.slice(1).map((p, i) => { const a = pls[i], k = km(a.ll, p.ll), [rk, t] = driveH(l, k); return `<tr><td>${esc(P(a, l).n)} → ${esc(P(p, l).n)}</td><td>~${rk} km · ${esc(t)}</td></tr>`; }).join("")}</tbody></table></div><p class="note">${esc(u2.gx_legs_note)}</p>`;
+  }
+  if (pls.length >= 3) {
+    h += `<h2>📍 ${esc(u2.gx_places_t)}</h2><div class="tblw"><table class="tbl"><thead><tr><th>${esc(u2.gx_place)}</th><th>${esc(u2.gx_region)}</th><th>${esc(u2.gx_type)}</th><th>${esc(u2.gx_air)}</th></tr></thead><tbody>${pls.map(p => { const [ak, ap] = nearestOf(p.ll, D.airports), [, t] = driveH(l, ak); return `<tr><td><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></td><td>${esc(u.reg[p.r])}</td><td>${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</td><td>✈ ${ap.code} · ${Math.round(ak)} km · ${esc(t)}</td></tr>`; }).join("")}</tbody></table></div>`;
+  }
+  const cg = CATG[g.s];
+  if (cg) {
+    const all = D.places.filter(p => p.c === cg);
+    h += `<h2>${CAT_ICON[cg]} ${esc(tpl(u2.gx_all_t, { c: u.cat[cg].toLowerCase() }))}</h2><ul class="chk">${all.map(p => { const t = P(p, l); return `<li><a href="/${l}/place/${p.s}/"><b>${esc(t.n)}</b></a> (${esc(u.reg[p.r])}). ${esc(t.t.split(/(?<=[.!?。])\s*/)[0])}</li>`; }).join("")}</ul>`;
+  }
+  if (["best-time-weather", "is-sumba-worth-it", "east-vs-west-sumba"].includes(g.s)) {
+    let mf; try { mf = new Intl.DateTimeFormat(l, { month: "short", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }); }
+    const tb = k => { const cl = D.climate[k]; return `<h3>${esc(CLIM_NAME[k])}</h3><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(u2.clim_m)}</th>${cl.map(r => `<th>${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</th>`).join("")}</tr></thead><tbody><tr><td>${esc(u2.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_rain)}</td>${cl.map(r => `<td>${r[3]}</td>`).join("")}</tr></tbody></table></div>`; };
+    h += `<h2>🌦️ ${esc(u2.gx_clim_t)}</h2>${tb("waingapu")}${tb("waikabubak")}<p class="note">${esc(tpl(u2.clim_note, { s: "Waingapu, Waikabubak" }))} <a href="/${l}/guide/sumba-weather-by-month/">→</a></p>`;
+  }
+  return h;
+}
 function guidePage(l, g) {
   const u = D.ui[l], t = gtxt(g, l), h = ghero(g), cr = h.cr; const isItin = /^itinerary-/.test(g.s);
   let k = 0; const toc = []; const b2 = (t.b || "").replace(/<h2>(.*?)<\/h2>/g, (_, x) => { k++; toc.push([k, x.replace(/<[^>]+>/g, "")]); return `<h2 id="s${k}">${x}</h2>`; });
@@ -289,7 +313,7 @@ function guidePage(l, g) {
 <p class="gmeta">⏱ ${mins} min · <time datetime="${MOD(`/guide/${g.s}/`)}">${esc(D.ui2[l].updated)}: ${MOD(`/guide/${g.s}/`)}</time> · <a href="/${l}/map/">🗺️ ${esc(u.map)}</a></p>
 ${isItin ? `<p class="noprint"><button class="btn" onclick="print()">🖨 ${esc(D.ui2[l].print)}</button> <a class="btn alt2" href="/${l}/map/#route-${g.s}">🗺️ ${esc(D.ui2[l].fullmap)}</a></p>` : ""}<figure class="fig"><img src="${h.b}" alt="${esc(t.t)}" width="1280" height="720" fetchpriority="high"><figcaption>${esc(u.photo)}: ${esc(cr[0])} · <a href="${cr[2]}" rel="nofollow">${esc(cr[1])}</a>, Wikimedia Commons</figcaption></figure>
 ${toc.length > 3 ? `<nav class="toc" aria-label="Contents"><details open><summary>☰ ${toc.length}</summary><ol>${toc.map(x => `<li><a href="#s${x[0]}">${esc(x[1])}</a></li>`).join("")}</ol></details></nav>` : ""}
-<div class="body">${b2}</div>
+<div class="body">${b2}${guideExtra(l, g)}</div>
 ${faq.length ? `<section class="faq"><h2 class="sec h2s">FAQ</h2>${faq.map(f => `<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join("")}</section>` : ""}
 <p class="near-cta"><a class="btn" href="/${l}/map/">🗺️ ${esc(u.map)} →</a><a class="btn alt2" href="/${l}/secret-spots/">★ ${esc(u.secrets)}</a></p>
 <h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${rel.map(x => guideCard(x, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(D.ui2[l].see_all)} →</a></p></article></div>`;
@@ -948,8 +972,9 @@ async function indexNow(env) {
   const urls = []; for (const l of L) for (const p of SITE_PATHS()) urls.push(`${BASE}/${l}${p}`);
   const out = [];
   for (let i = 0; i < urls.length; i += 9000) {
-    const r = await fetch("https://api.indexnow.org/indexnow", { method: "POST", headers: { "content-type": "application/json; charset=utf-8" }, body: JSON.stringify({ host: "sumbasecrets.com", key: D.indexnow, keyLocation: `${BASE}/${D.indexnow}.txt`, urlList: urls.slice(i, i + 9000) }) });
-    out.push(r.status);
+    for (const ep of ["https://www.bing.com/indexnow", "https://yandex.com/indexnow", "https://api.indexnow.org/indexnow"]) {
+    const r = await fetch(ep, { method: "POST", headers: { "content-type": "application/json; charset=utf-8" }, body: JSON.stringify({ host: "sumbasecrets.com", key: D.indexnow, keyLocation: `${BASE}/${D.indexnow}.txt`, urlList: urls.slice(i, i + 9000) }) });
+    out.push(ep.split("/")[2] + ":" + r.status); }
   }
   return Response.json({ urls: urls.length, status: out });
 }

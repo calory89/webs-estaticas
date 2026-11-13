@@ -35,4 +35,11 @@ EXTRA_UI3 = {
  "route_gm": "Open the route in Google Maps",
  "route_share": "Share this list",
  "route_empty": "Save places with the ☆ button on any place page and they will appear here, ordered as a route.",
+ "gx_places_t": "Places in this guide at a glance",
+ "gx_place": "Place", "gx_region": "Region", "gx_type": "Type", "gx_air": "Nearest airport",
+ "gx_legs_t": "Driving times on this route",
+ "gx_leg": "Stage",
+ "gx_legs_note": "Estimated road distance and time between consecutive stops, at about 35 km/h on average. Real times vary with road works, weather and stops.",
+ "gx_all_t": "Every {c} on our map",
+ "gx_clim_t": "Climate by month: real data",
 }

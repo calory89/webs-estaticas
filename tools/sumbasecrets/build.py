@@ -64,7 +64,15 @@ for g in GUIDES2 + GUIDES3:
         if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))
         ng[l] = tr
     GUIDES_ALL.append(ng)
-import native, guides4
+import native, guides4, guides_add
+for g in GUIDES_ALL:  # extra sections for the shorter existing guides
+    add = guides_add.ADD.get(g["s"]); fq = guides_add.FAQ.get(g["s"], [])
+    if not add and not fq: continue
+    for l in LANGS:
+        if l not in g: continue
+        a = add if l == "en" else ("".join(tr_tree(_parts(add), l)) if add else "")
+        g[l] = dict(g[l], b=(g[l].get("b") or "") + a)
+        if fq: g[l]["faq"] = (g[l].get("faq") or []) + (fq if l == "en" else tr_tree(fq, l))
 for g in guides4.GUIDES4:
     e = {"t": g["t"], "d": g["d"], "b": g["b"]}
     if g.get("faq"): e["faq"] = g["faq"]
