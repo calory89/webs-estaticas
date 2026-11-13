@@ -100,7 +100,7 @@
     css();
     if (!el) return null;
     if (el.tagName !== 'DETAILS') { var d = document.createElement('details'); d.className = el.className; if (el.id) d.id = el.id; Array.prototype.forEach.call(el.attributes, function (a) { if (/^data-/.test(a.name)) d.setAttribute(a.name, a.value); }); el.parentNode.replaceChild(d, el); el = d; }
-    var rect = el.getBoundingClientRect(); if (rect.left > innerWidth / 2) el.classList.add('kvb-r');
+    var el0 = el; requestAnimationFrame(function () { var rect = el0.getBoundingClientRect(); if (rect.left > innerWidth / 2) el0.classList.add('kvb-r'); });   // n27u: measured in the next frame (reading it here forced a layout of the whole page)
     if (r && typeof r.then === 'function') { paint(el, null, o); r.then(function (x) { paint(el, x, o); }, function () { paint(el, { state: 'error', why: 'The check could not run.' }, o); }); }
     else paint(el, r || null, o);
     return el;
