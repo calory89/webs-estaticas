@@ -40,7 +40,7 @@ MODULES = [seo_extra, reader_tools, pages_live, press]   # extra page modules: e
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
-SB_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw"
+SB_ANON = "sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X"
 CONTACT = "info@ecobeachcity.com"
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 NOW = datetime.datetime.now(WITA)

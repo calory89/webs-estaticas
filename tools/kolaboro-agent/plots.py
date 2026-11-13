@@ -9,7 +9,7 @@ import json, os, io, math, tarfile, datetime, urllib.request, urllib.parse, base
 from PIL import Image, ImageDraw
 
 SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/'
-AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+AK = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
 TOKEN_URL = 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token'
 PROCESS_URL = 'https://sh.dataspace.copernicus.eu/api/v1/process'
 HALF = 0.0027  # ~300 m each way

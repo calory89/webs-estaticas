@@ -3,7 +3,7 @@
 plus every evidence file (photos, documents, satellite images) stored once by its SHA-256. Usage: backup.py OUTDIR   Env: KB_MACHINE_KEY"""
 import json, os, sys, gzip, base64, datetime, urllib.request
 SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/'
-AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+AK = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
 KEY = os.environ['KB_MACHINE_KEY']; out = sys.argv[1]
 def rpc(action, payload):
     r = urllib.request.Request(SB + 'kolaboro_machine', json.dumps({'p_key': KEY, 'p_action': action, 'p_payload': payload}).encode(), {'apikey': AK, 'Authorization': 'Bearer ' + AK, 'Content-Type': 'application/json'})

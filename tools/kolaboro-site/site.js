@@ -52,7 +52,7 @@
 
   // lead forms
   var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
-  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var KEY = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X';
   var COPY = {
     buyer: ['Where are you buying?', 'City and country', 'Project name or link', 'e.g. the developer or project website', 'What stage are you at, and what worries you most?'],
     agent: ['Which city do you live in?', 'Your city and country', 'LinkedIn or website (optional)', 'Anything that shows your work', 'What do you do today, and why would you be a great agent?'],
@@ -178,7 +178,7 @@
 /* newsletter + exit offer (round 3) */
 (function () {
   var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
-  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var KEY = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X';
   document.querySelectorAll('form[data-news]').forEach(function (f) {
     f.addEventListener('submit', function (e) {
       e.preventDefault(); var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim();

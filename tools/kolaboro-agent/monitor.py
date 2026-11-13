@@ -4,7 +4,7 @@ On failure: emails hello@kolaboro.com (through the database outbox) and exits 1 
 Env: KB_MACHINE_KEY"""
 import json, os, sys, time, urllib.request
 SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/'
-AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+AK = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
 UA = {'User-Agent': 'Mozilla/5.0 (kolaboro-monitor)'}
 PAGES = [('/', 'Protect my purchase'), ('/technology/', 'id="certificate"'), ('/check/', 'kolaboro'), ('/cases/', 'id="cgrid"'), ('/portal/demo/', 'kolaboro'),
          ('/login/', 'kolaboro'), ('/agents/', 'kolaboro'), ('/verify/', 'id="chain"'), ('/status/', 'kolaboro'), ('/k/site.css', '.x-ev'), ('/k/case.js', 'KBX'), ('/data/image-index.json', '"items"')]

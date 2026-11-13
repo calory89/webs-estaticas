@@ -537,7 +537,7 @@ def main():
 
 
 SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_machine'
-AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+AK = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
 
 
 def machine(action, payload):

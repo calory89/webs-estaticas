@@ -99,6 +99,6 @@ out = os.path.join(HERE, 'data', 'graph.json'); json.dump(G, open(out, 'w'), ind
 print('nodes', len(nodes), 'edges', len(edges), G['counts'], 'alerts', len(alerts))
 if '--upload' in sys.argv:
     key = os.environ.get('KB_MACHINE_KEY') or open(os.path.join(HERE, '..', 'machine_key.txt')).read().strip()
-    AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+    AK = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
     r = urllib.request.Request('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_machine', data=json.dumps(dict(p_key=key, p_action='graph_put', p_payload=dict(graph=G))).encode(), headers={'apikey': AK, 'Authorization': 'Bearer ' + AK, 'content-type': 'application/json'})
     print(urllib.request.urlopen(r, timeout=60).read().decode()[:200])

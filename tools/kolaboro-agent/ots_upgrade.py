@@ -2,7 +2,7 @@
 """Upgrade pending OpenTimestamps proofs once Bitcoin has confirmed them; record the block height. Env KB_STAMP_UPGRADE_KEY."""
 import os, json, base64, subprocess, tempfile, re, urllib.request
 RPC = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/'
-ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'
+ANON = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'
 def rpc(fn, args):
     r = urllib.request.Request(RPC + fn, json.dumps(args).encode(), {'apikey': ANON, 'authorization': 'Bearer ' + ANON, 'content-type': 'application/json'})
     return json.load(urllib.request.urlopen(r, timeout=60))

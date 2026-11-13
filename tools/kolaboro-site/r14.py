@@ -70,7 +70,7 @@ ANALYZE_JS = '''<script>
 (function(){
   var $ = function(i){ return document.getElementById(i); };
   var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
-  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var KEY = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X';
   var PAY = 'https://www.paypal.com/ncp/payment/32ENX4QK833GE';
   var url = '';
   function show(n){ ['az-1','az-2','az-3','az-4'].forEach(function(id, i){ $(id).classList.toggle('on', i === n - 1); }); $('az').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
