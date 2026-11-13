@@ -391,7 +391,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2027,
    "title": "leasehold",
@@ -402,7 +402,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -414,11 +414,11 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": "28 Oct 2026",
@@ -433,13 +433,13 @@
     "permit": "none",
     "escrow": "none",
     "progress": "none",
-    "plans": "none",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 7,
     "contradicted": 3
    },
@@ -4431,12 +4431,12 @@
     "progress": "none",
     "plans": "none",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
-    "unverified": 10,
+    "verified": 1,
+    "unverified": 11,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -5954,7 +5954,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -13912,7 +13912,7 @@
    "checks": {
     "permit": 2,
     "escrow": null,
-    "progress": "updates",
+    "progress": 26.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -13948,7 +13948,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 1
    },
@@ -14158,13 +14158,19 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14
+   "profile": 14,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "filed, not approved",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "BKK-005",
@@ -14247,7 +14253,7 @@
    "checks": {
     "permit": 1,
     "escrow": null,
-    "progress": 11,
+    "progress": 13.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -14283,7 +14289,7 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 8,
     "contradicted": 1
    },
@@ -14312,7 +14318,7 @@
    "checks": {
     "permit": 2,
     "escrow": null,
-    "progress": null,
+    "progress": 2.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -14325,7 +14331,7 @@
      "returns_ok"
     ]
    },
-   "score": 4,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -14342,14 +14348,14 @@
    "verified": {
     "permit": "registry",
     "escrow": "none",
-    "progress": "none",
+    "progress": "developer",
     "plans": "developer",
     "record": "independent",
     "returns_ok": "developer"
    },
    "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 0
    },
@@ -14453,8 +14459,8 @@
    "market": "Bangkok",
    "country": "Thailand",
    "region": "Bangkok",
-   "docs": false,
-   "plans": false,
+   "docs": true,
+   "plans": true,
    "band": "Price not stated",
    "done": 2029,
    "title": null,
@@ -14462,10 +14468,10 @@
    "yield": null,
    "units": 933,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
-    "progress": 10,
-    "plans": false,
+    "progress": 10.0,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -14477,38 +14483,45 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "progress": "developer",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "BKK-010",
@@ -28078,9 +28091,9 @@
     "unverified": 7,
     "contradicted": 4
    },
-   "stage": "under construction",
+   "stage": "completed",
    "delay": null,
-   "overdue": 2,
+   "overdue": null,
    "profile": 15,
    "fp": {
     "sha256": "f2f798fad50edee5f094e426c707141a630cedc5fa1d82a7a089cd0ab53888dd",
@@ -51595,7 +51608,7 @@
    "market": "Hua Hin",
    "country": "Thailand",
    "region": "Hua Hin",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$200k to $400k",
    "done": 2026,
@@ -51604,7 +51617,7 @@
    "yield": null,
    "units": 251,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": 98,
     "plans": true,
@@ -51619,7 +51632,7 @@
      "returns_ok"
     ]
    },
-   "score": 4,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -51628,31 +51641,38 @@
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "developer",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "developer",
     "record": "independent",
     "returns_ok": "developer"
    },
-   "vscore": 2,
+   "vscore": 3,
    "claims": {
-    "verified": 5,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 2
    },
-   "stage": "under construction",
+   "stage": "completed",
    "delay": null,
-   "overdue": 2,
+   "overdue": null,
    "profile": 15,
    "fp": {
     "sha256": "cdf0702578f9adfd4bf04115db77a879ba6b6bef51a1576017b3283d7fac00d6",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -56976,8 +56996,8 @@
    "units": 495,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
+    "escrow": true,
+    "progress": 7.76,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -56990,38 +57010,43 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-005",
@@ -57215,7 +57240,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2030,
    "title": null,
@@ -57224,9 +57249,9 @@
    "units": 606,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 1.24,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57238,11 +57263,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57250,27 +57275,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2030: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-009",
@@ -57278,7 +57308,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2029,
    "title": null,
@@ -57287,9 +57317,9 @@
    "units": 1618,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 21.24,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57301,11 +57331,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57313,27 +57343,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-010",
@@ -57341,7 +57376,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
    "title": null,
@@ -57350,9 +57385,9 @@
    "units": 1140,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 23.5,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57364,11 +57399,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57376,27 +57411,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 5,
     "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-011",
@@ -57404,7 +57444,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2030,
    "title": null,
@@ -57413,9 +57453,9 @@
    "units": 1544,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 5.0,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57427,11 +57467,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57439,27 +57479,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2030: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-012",
@@ -57467,7 +57512,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
    "title": null,
@@ -57476,9 +57521,9 @@
    "units": 619,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 72.12,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57490,11 +57535,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57502,27 +57547,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-013",
@@ -57530,7 +57580,7 @@
    "country": "Malaysia",
    "region": "Kuala Lumpur",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
    "title": null,
@@ -57539,9 +57589,9 @@
    "units": 1248,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 92.5,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -57553,11 +57603,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -57565,27 +57615,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 8,
     "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "KUA-014",
@@ -64008,7 +64063,7 @@
    "units": 588,
    "checks": {
     "permit": 2,
-    "escrow": null,
+    "escrow": true,
     "progress": 37.5,
     "plans": true,
     "record": true,
@@ -64022,7 +64077,7 @@
      "returns_ok"
     ]
    },
-   "score": 5,
+   "score": 6,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -64033,20 +64088,19 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
-    "escrow": "none",
+    "escrow": "registry",
     "progress": "registry",
     "plans": "registry",
     "record": "registry",
     "returns_ok": "none"
    },
-   "vscore": 4,
+   "vscore": 5,
    "claims": {
-    "verified": 7,
+    "verified": 11,
     "unverified": 3,
     "contradicted": 2
    },
@@ -64062,6 +64116,12 @@
    "fp": {
     "sha256": "246dfe0b7fcc536b9d64827df920175b26fb67e5f26d58907eb0b062d627c050",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
    },
    "history": [
     {
@@ -64673,7 +64733,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 9,
+    "verified": 13,
     "unverified": 2,
     "contradicted": 1
    },
@@ -64689,6 +64749,12 @@
    "fp": {
     "sha256": "9f3becd4034c8f3122dbac426e7668f78dfd1fb149e4a6bbc12f567dd590912f",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -65013,7 +65079,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 12,
     "unverified": 2,
     "contradicted": 1
    },
@@ -65024,6 +65090,12 @@
    "fp": {
     "sha256": "899f7902d2e0bd20890759b41fc3e5ba30992e49575a3ef6cde6e256b610462d",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -65346,7 +65418,7 @@
    "country": "Malaysia",
    "region": "Malaysia",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2027,
    "title": null,
@@ -65355,9 +65427,9 @@
    "units": 999,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 42.7,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -65369,11 +65441,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65381,27 +65453,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-025",
@@ -65418,8 +65495,8 @@
    "units": 231,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
+    "escrow": true,
+    "progress": 20.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -65432,11 +65509,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65444,27 +65521,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-026",
@@ -65472,7 +65554,7 @@
    "country": "Malaysia",
    "region": "Malaysia",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2029,
    "title": null,
@@ -65481,9 +65563,9 @@
    "units": 494,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 5.0,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -65495,11 +65577,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65507,27 +65589,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-027",
@@ -65535,7 +65622,7 @@
    "country": "Malaysia",
    "region": "Malaysia",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2030,
    "title": null,
@@ -65544,9 +65631,9 @@
    "units": 1733,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 13.63,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -65558,11 +65645,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65570,27 +65657,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2030: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 8,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-028",
@@ -65598,7 +65690,7 @@
    "country": "Malaysia",
    "region": "Malaysia",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": 2027,
    "title": null,
@@ -65607,9 +65699,9 @@
    "units": 1526,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 92.18,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -65621,11 +65713,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65633,27 +65725,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-029",
@@ -65661,7 +65758,7 @@
    "country": "Malaysia",
    "region": "Malaysia",
    "docs": true,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
    "title": null,
@@ -65670,9 +65767,9 @@
    "units": 500,
    "checks": {
     "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
+    "escrow": true,
+    "progress": 64.1,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -65684,11 +65781,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -65696,27 +65793,32 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "developer",
     "record": "none",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 4,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "MYS-030",
@@ -69804,7 +69906,7 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "independent",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "none",
@@ -69813,7 +69915,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 2
    },
@@ -69824,6 +69926,12 @@
    "fp": {
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -69831,7 +69939,7 @@
    "market": "Miami",
    "country": "USA",
    "region": "Miami",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
@@ -69840,7 +69948,7 @@
    "yield": null,
    "units": 399,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": 75,
     "plans": true,
@@ -69855,21 +69963,22 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "independent",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "developer",
@@ -69878,7 +69987,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 3
    },
@@ -69889,6 +69998,12 @@
    "fp": {
     "sha256": "27083355bb5613f5293776fb08e4b0d09d03b969eecceb55e17037aac1b2b719",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -69896,7 +70011,7 @@
    "market": "Miami",
    "country": "USA",
    "region": "Miami",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2027,
@@ -69905,80 +70020,10 @@
    "yield": null,
    "units": 397,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": "updates",
     "plans": false,
-    "record": true,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 3,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "mixed",
-   "read": true,
-   "checked": "5 Nov 2026",
-   "invited": null,
-   "q": [
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ],
-   "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "independent",
-    "plans": "none",
-    "record": "independent",
-    "returns_ok": "none"
-   },
-   "vscore": 2,
-   "claims": {
-    "verified": 5,
-    "unverified": 3,
-    "contradicted": 2
-   },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 15,
-   "sat": {
-    "status": "visible change",
-    "changed_pct": 18.9,
-    "date": "2026-11-05"
-   },
-   "fp": {
-    "sha256": "86fb9359b1d73ab7446899abcfa3b250eabd420c9884260da3917aa291edd780",
-    "date": "2026-11-05"
-   }
-  },
-  {
-   "id": "MIA-004",
-   "market": "Miami",
-   "country": "USA",
-   "region": "Miami",
-   "docs": false,
-   "plans": true,
-   "band": "$400k and up",
-   "done": 2030,
-   "title": "freehold condominium",
-   "lease": null,
-   "yield": null,
-   "units": 533,
-   "checks": {
-    "permit": 0,
-    "escrow": true,
-    "progress": null,
-    "plans": true,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -69999,20 +70044,98 @@
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "independent",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 3,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 15,
+   "sat": {
+    "status": "visible change",
+    "changed_pct": 18.9,
+    "date": "2026-11-05"
+   },
+   "fp": {
+    "sha256": "86fb9359b1d73ab7446899abcfa3b250eabd420c9884260da3917aa291edd780",
+    "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "id": "MIA-004",
+   "market": "Miami",
+   "country": "USA",
+   "region": "Miami",
+   "docs": true,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2030,
+   "title": "freehold condominium",
+   "lease": null,
+   "yield": null,
+   "units": 533,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 5,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "developer",
     "progress": "independent",
     "plans": "none",
     "record": "independent",
     "returns_ok": "none"
    },
-   "vscore": 2,
+   "vscore": 3,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 4
    },
@@ -70028,6 +70151,12 @@
    "fp": {
     "sha256": "0205793ca9f582d7e8792c9faa8d18f3c70228be8caec1080cd15867fe7624d1",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    },
    "history": [
     {
@@ -70097,7 +70226,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 5,
     "contradicted": 2
    },
@@ -70113,6 +70242,12 @@
    "fp": {
     "sha256": "70d0f30e0fc4fe52d1a3fdba0dda6a64850ef2a293a8c083db181000bdab7893",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70168,7 +70303,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 4,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 2
    },
@@ -70180,6 +70315,12 @@
     "status": "visible change",
     "changed_pct": 6.3,
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70235,7 +70376,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 1
    },
@@ -70246,6 +70387,12 @@
    "fp": {
     "sha256": "aed09fb2bb49a6b2342d76349c2a954576022d4b2ce7ee7bc8d76d6ac134b7e2",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70301,7 +70448,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 1
    },
@@ -70317,6 +70464,12 @@
    "fp": {
     "sha256": "0b8a5cece8afddb5b7d671e3a2b4845833d0e34c3bdd2e395e85ccca5919f6ab",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70372,7 +70525,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 2
    },
@@ -70383,6 +70536,12 @@
    "fp": {
     "sha256": "fae48d2775264c9772368168ff8821eef0259623c0fc9c28b6818c66a12c6273",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70441,7 +70600,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 5,
     "contradicted": 2
    },
@@ -70452,6 +70611,12 @@
    "fp": {
     "sha256": "759e87719e7d11baef228d1398dfe09032e67433b6f0bf4819e4bf878c3119fd",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70459,7 +70624,7 @@
    "market": "Miami",
    "country": "USA",
    "region": "Miami",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
@@ -70468,7 +70633,7 @@
    "yield": null,
    "units": 360,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": "updates",
     "plans": false,
@@ -70483,21 +70648,22 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "independent",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "none",
@@ -70506,7 +70672,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 7,
+    "verified": 9,
     "unverified": 4,
     "contradicted": 0
    },
@@ -70517,6 +70683,12 @@
    "fp": {
     "sha256": "10285b399b2c1bdfb7c21d8b503d7ddfd79eaf42d33d6357b07f66a7880e17ae",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70524,7 +70696,7 @@
    "market": "Miami",
    "country": "USA",
    "region": "Miami",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
@@ -70533,7 +70705,7 @@
    "yield": null,
    "units": 195,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": "updates",
     "plans": false,
@@ -70548,7 +70720,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -70557,21 +70729,22 @@
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 1,
+   "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 5,
     "contradicted": 0
    },
@@ -70582,6 +70755,12 @@
    "fp": {
     "sha256": "aae79869d914e843117317a85d651ae3fee2bddc32c2c7f8778249e2c5a97983",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -70589,7 +70768,7 @@
    "market": "Miami",
    "country": "USA",
    "region": "Miami",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2027,
@@ -70598,7 +70777,7 @@
    "yield": null,
    "units": 152,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": "updates",
     "plans": false,
@@ -70613,30 +70792,31 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "independent",
     "plans": "none",
     "record": "developer",
     "returns_ok": "none"
    },
-   "vscore": 1,
+   "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 5,
     "contradicted": 1
    },
@@ -70647,6 +70827,12 @@
    "fp": {
     "sha256": "25408fb9afe4e03800d6cbd4df70196f3cbef65510ac113999f1002bbba609a0",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Florida DBPR condominium filings",
+    "item": "condominium developer filing",
+    "status": "listed as approved project",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -80876,7 +81062,7 @@
    "market": "Pattaya",
    "country": "Thailand",
    "region": "Pattaya",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
@@ -80885,7 +81071,7 @@
    "yield": 6.75,
    "units": 611,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": 57.5,
     "plans": false,
@@ -80900,21 +81086,22 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "independent",
+    "permit": "registry",
     "escrow": "none",
     "progress": "developer",
     "plans": "none",
@@ -80923,7 +81110,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 2
    },
@@ -80934,6 +81121,12 @@
    "fp": {
     "sha256": "3170122a6cf9fa72c4cc05cf1bf77c466bcf20179262af4cac9b7401f975b40e",
     "date": "2026-11-05"
+   },
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "checked": "2026-11-13"
    }
   },
   {
@@ -81408,7 +81601,7 @@
    "market": "Pattaya",
    "country": "Thailand",
    "region": "Pattaya",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -81417,9 +81610,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
-    "progress": 73,
+    "progress": 73.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -81432,7 +81625,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -81441,29 +81634,36 @@
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
-    "progress": "none",
+    "progress": "developer",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "PER-001",
@@ -84456,7 +84656,7 @@
    "checks": {
     "permit": 1,
     "escrow": null,
-    "progress": null,
+    "progress": 11.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -84469,11 +84669,11 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
@@ -84485,14 +84685,14 @@
    "verified": {
     "permit": "developer",
     "escrow": "none",
-    "progress": "none",
+    "progress": "developer",
     "plans": "developer",
     "record": "developer",
     "returns_ok": "developer"
    },
    "vscore": 0,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 8,
     "contradicted": 0
    },
@@ -85369,14 +85569,14 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 13,
    "fp": {
     "sha256": "68dadb2f51d5fa42864d3a3752877be8c93f694a260e82148cd03c665e90b04f",
     "date": "2026-11-05"
@@ -85844,7 +86044,7 @@
    "market": "Phuket",
    "country": "Thailand",
    "region": "Phuket",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$100k to $200k",
    "done": 2026,
@@ -85853,7 +86053,7 @@
    "yield": null,
    "units": 859,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -85868,38 +86068,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "register": {
+    "register": "Thailand ONEP EIA register",
+    "item": "environmental approval",
+    "status": "approved",
+    "checked": "2026-11-13"
+   }
   },
   {
    "id": "PHK-029",
@@ -86016,8 +86223,8 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
-    "unverified": 4,
+    "verified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -86079,7 +86286,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -86140,8 +86347,8 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
-    "unverified": 3,
+    "verified": 1,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -98530,7 +98737,7 @@
    "country": "Sri Lanka",
    "region": "Sri Lanka",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": null,
    "title": null,
@@ -98541,7 +98748,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -98553,11 +98760,11 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
@@ -98570,14 +98777,14 @@
     "permit": "none",
     "escrow": "none",
     "progress": "none",
-    "plans": "none",
+    "plans": "developer",
     "record": "none",
     "returns_ok": "none"
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
-    "unverified": 5,
+    "verified": 1,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -100960,7 +101167,7 @@
    "market": "Tokyo",
    "country": "Japan",
    "region": "Tokyo",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -100969,7 +101176,7 @@
    "yield": null,
    "units": 36,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -100984,22 +101191,23 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "developer",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
@@ -101008,7 +101216,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 3,
     "contradicted": 0
    },
@@ -106217,37 +106425,37 @@
   "projects": 1595,
   "markets": 181,
   "countries": 94,
-  "sources": 7445,
-  "data_points": 40618,
+  "sources": 7472,
+  "data_points": 40674,
   "claims": {
-   "verified": 2816,
-   "unverified": 7064,
+   "verified": 2928,
+   "unverified": 7072,
    "contradicted": 1370
   },
-  "claims_total": 11250,
+  "claims_total": 11370,
   "deep_profiles": 1595,
   "checks_by_level": {
-   "registry": 798,
-   "independent": 487,
-   "developer": 1995,
+   "registry": 850,
+   "independent": 483,
+   "developer": 2027,
    "contradicted": 103,
-   "none": 6187
+   "none": 6107
   },
   "checks_rated": 9570,
   "stages": {
    "off-plan": 676,
-   "under construction": 861,
-   "completed": 12
+   "under construction": 859,
+   "completed": 14
   },
-  "all_six_public": 64,
+  "all_six_public": 65,
   "with_flags": 46,
-  "overdue": 37,
-  "overdue_avg_months": 6.7,
+  "overdue": 35,
+  "overdue_avg_months": 6.9,
   "delayed": 105,
   "changes_detected": 564,
   "sat_watched": 93,
   "sat_no_change": 26,
-  "register_watched": 32
+  "register_watched": 67
  },
  "seal": {
   "date": "2026-11-07",

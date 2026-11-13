@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/registers/",
+   "text": "150 most searched projects in Asia and the Americas checked against official registers",
+   "tl": {
+    "es": "Los 150 proyectos más buscados de Asia y América, cotejados con registros oficiales",
+    "fr": "Les 150 projets les plus recherchés d’Asie et des Amériques vérifiés dans les registres officiels",
+    "de": "Die 150 meistgesuchten Projekte in Asien und Amerika mit amtlichen Registern abgeglichen",
+    "nl": "De 150 meest gezochte projecten in Azië en Amerika gecontroleerd in officiële registers",
+    "ru": "150 самых востребованных проектов Азии и Америки сверены с официальными реестрами",
+    "zh": "亚洲和美洲搜索量最高的 150 个项目已与官方登记册核对",
+    "ar": "مطابقة أكثر 150 مشروعًا بحثًا في آسيا والأمريكتين مع السجلات الرسمية"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "url": "/guides/buying-off-plan/",
    "text": "Buying off-plan guides for 8 places, each step linked to official sources",
    "tl": {
