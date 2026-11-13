@@ -23,7 +23,7 @@
 </style>
 </head><body><!--email_off--><div class="ap-auth"><div class="ap-auth-l"><a class="ap-brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
 <div style="position:relative;z-index:1"><h1 id="th-h1">Thank you for your order.</h1><ul style="padding-left:1.1em">
-<li><b>Live case file.</b> Every step your local agent takes, with dates.</li>
+<li><b>Live case file.</b> Every step of your case, with dates.</li>
 <li><b>Direct chat</b> with the Kolaboro team about your project.</li>
 <li class="ap-auth-hide"><b>Your money.</b> We tell you whether the evidence supports paying the next instalment.</li>
 <li class="ap-auth-hide"><b>Your report</b> to download the day it's ready. Refund in full if we can't take your case.</li></ul></div>
@@ -51,13 +51,13 @@
 
   <div id="th-what">
     <h3 id="th-wh">What you ordered</h3>
-    <p style="margin:0" id="th-wp"><b>Kolaboro full pre-purchase check, €490 per property.</b> The land certificate checked at the land office, the building permit confirmed in the official system, a site visit by a local agent with GPS-stamped photos, and a written report with a clear verdict.</p>
+    <p style="margin:0" id="th-wp"><b>Kolaboro full pre-purchase check, €490 per property.</b> The land certificate checked at the land office, the building permit confirmed in the official system, a site visit by a local agent with GPS-stamped photos (being set up: we confirm an agent for your location first), and a written report with a clear verdict.</p>
     <h3>What happens next</h3>
     <ol class="th-tl" id="th-tl">
       <li id="tl1"><b>PayPal confirms the payment.</b> <span class="th-small">Your case switches to paid automatically once the payment and your confirmed email match.</span></li>
       <li id="tl2"><b>Your case starts.</b> <span class="th-small">You see every step with dates in your portal, and you can write to us in the case chat.</span></li>
       <li id="tl3"><b>Within 2 days: documents.</b> <span class="th-small">You (or the developer) share the land certificate, permit and contract in your case. Our reader flags what does not match.</span></li>
-      <li id="tl4"><b>Within 5 days: land office and site visit.</b> <span class="th-small">Your agent checks the title at the land office and films the plot with GPS- and time-stamped photos.</span></li>
+      <li id="tl4"><b>Within 5 days: land office and site visit.</b> <span class="th-small">Your agent checks the title at the land office and films the plot with GPS- and time-stamped photos. Site visits are being set up: on day one we tell you whether an agent can cover your location, and if not, you get a full refund.</span></li>
       <li id="tl5"><b>Usually within 7 days: your written report.</b> <span class="th-small">The due date shows on your case. Full refund if we can't take your case.</span></li>
     </ol>
     <p class="th-small">Questions? Write to us in your case chat or at <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.</p>
@@ -84,7 +84,7 @@ var KB = (function(){
   var pendingPP = /^pending$/.test(st);
   var token = KB.get('kb-token-as') || KB.get('kb-token'); if (KB.get('kb-role') === 'agent') token = null;
   var here = location.pathname + location.search;
-  if (paid === 'visit') { $('th-wp').innerHTML = '<b>Site visit as part of the Kolaboro full check, €490 per property.</b> A local agent visits the project and records GPS-stamped photos, together with the land certificate checked at the land office, the building permit confirmed in the official system, and a written report with a clear verdict.'; }
+  if (paid === 'visit') { $('th-wp').innerHTML = '<b>Site visit as part of the Kolaboro full check, €490 per property.</b> Site visits are being set up (we are recruiting our first agents). When an agent can cover your location, they visit the project and record GPS-stamped photos, together with the land certificate checked at the land office, the building permit confirmed in the official system, and a written report with a clear verdict.'; }
   try { if (!sessionStorage.getItem('kb-pr')) { sessionStorage.setItem('kb-pr','1'); KB.rpc('kolaboro_event', { p_kind: cancelled ? 'paypal_cancel' : 'paypal_return', p_ref: location.search.slice(0,200), p_page: location.pathname }); if (!cancelled && window.gtag) gtag('event','purchase',{ currency:'EUR', value:490, items:[{ item_name:'Pre-purchase check' }] }); } } catch(x){}
 
   function fmt(t){ if (!t) return ''; var d = new Date(t); return isNaN(d) ? '' : d.toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' }); }

@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/pricing/",
+   "text": "Every page now says plainly that site visits are being set up",
+   "tl": {
+    "es": "Todas las páginas dicen claramente que las visitas a la obra están en preparación",
+    "fr": "Chaque page indique clairement que les visites de chantier sont en préparation",
+    "de": "Jede Seite sagt klar, dass Baustellenbesuche im Aufbau sind",
+    "nl": "Elke pagina zegt duidelijk dat bouwplaatsbezoeken in voorbereiding zijn",
+    "ru": "Все страницы прямо говорят, что выезды на объекты готовятся к запуску",
+    "zh": "所有页面都已明确说明现场走访正在筹备中",
+    "ar": "كل الصفحات تقول بوضوح إن الزيارات الميدانية قيد الإعداد"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "url": "/registers/",
    "text": "150 most searched projects in Asia and the Americas checked against official registers",
    "tl": {

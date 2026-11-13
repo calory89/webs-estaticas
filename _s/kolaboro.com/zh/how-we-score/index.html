@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="https://kolaboro.com/k/og/how-we-score.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "服务海外购房者的本地买方代理网络，经 AI 培训，在实地经受检验。"}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "为在海外购买期房的人提供独立核查：将开发商的说法与官方登记记录对照。由本地买方代理进行的现场走访正在筹备中。"}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "Kolaboro Trust Score 如何运作", "item": "https://kolaboro.com/zh/how-we-score/"}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Kolaboro：我们的更新" href="/feed.xml">
@@ -48,9 +48,9 @@
 </header>
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/zh/">Kolaboro</a> / Trust Score</p><h1>Trust Score 如何运作</h1><p class="lead">每个项目和开发商一个 0 到 100 的分数，建立在证据而非营销之上。以下是我们的具体计算方法。</p></div></section><section class="sec"><div class="wrap prose">
-<div class="note-box" style="margin:0 0 28px"><b>开源。</b> 为<a href="/zh/database/">数据库</a>中每个项目打分的规则（六项公开检查、确认分数、等级、逾期月数和市场透明度指数）以可运行代码的形式公开：<a href="/open/scoring.py">scoring.py</a>（MIT 许可）。这些规则使用的数据通过<a href="/docs/api/#open">开放 API</a> 免费提供，任何人都可以复现分数。下面的 Trust Score 是我们的代理在付费核查中使用的更深入方法。</div>
+<div class="note-box" style="margin:0 0 28px"><b>开源。</b> 为<a href="/zh/database/">数据库</a>中每个项目打分的规则（六项公开检查、确认分数、等级、逾期月数和市场透明度指数）以可运行代码的形式公开：<a href="/open/scoring.py">scoring.py</a>（MIT 许可）。这些规则使用的数据通过<a href="/docs/api/#open">开放 API</a> 免费提供，任何人都可以复现分数。下面的 Trust Score 是付费核查使用的更深入方法，包括由本地代理进行的现场走访（筹备中）。</div>
 <h2>九项检查，加权计算</h2>
-<p>每项检查由经过培训的当地代理根据所列证据打出 0 到 100 分。总分为加权平均值。</p>
+<p>在付费核查中，每一项将由经过培训的当地代理根据所列证据打出 0 到 100 分；现场走访正在筹备中，我们正在招募首批代理。总分为加权平均值。</p>
 <table><thead><tr><th>检查</th><th>权重</th><th>典型证据</th></tr></thead><tbody><tr><td>产权与土地</td><td>15%</td><td>登记摘录、公证人信函</td></tr><tr><td>许可证</td><td>12%</td><td>建筑许可（PBG）副本</td></tr><tr><td>交付记录</td><td>15%</td><td>实地查看 6 个过往项目、买家记录</td></tr><tr><td>进度与计划对比</td><td>12%</td><td>带 GPS 标记的现场视频、14 张照片</td></tr><tr><td>资金安全</td><td>14%</td><td>4 位买家的付款收据</td></tr><tr><td>合同公平性</td><td>10%</td><td>由 Kolaboro AI 和代理审查合同</td></tr><tr><td>透明度</td><td>8%</td><td>公司登记摘录</td></tr><tr><td>买家声音</td><td>8%</td><td>经核实的买家调查</td></tr><tr><td>承诺是否现实</td><td>6%</td><td>将收益与当地租赁数据对比</td></tr></tbody></table>
 <h2>危险信号会限制分数</h2>
 <p>有些问题比其他一切都重要。一旦发现，无论其他方面多好，总分都不能超过上限。</p>

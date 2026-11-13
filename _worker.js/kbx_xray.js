@@ -504,7 +504,7 @@ async function finish(cards, inp, started, t0, opts, emit, allSources) {
     seal: { root_sha256: root, lines, method: 'root_sha256 = SHA-256 of the sorted lines joined by a newline; a card line is "card_id SHA-256(JCS(card without its sha256 field))", the meta line hashes JCS(meta). JCS = RFC 8785 canonical JSON.' },
     ai: opts.desk ? 'The existing desk review ran (partner key).' : 'No AI model was called by the X-ray. Every card is a fixed rule, a public source or our own data.' };
   const res = { version: VERSION, root, url: ORIGIN + '/x/' + root + '/', meta: metaObj, cards, proof, lang: opts.lang || 'en',
-    disclaimer: 'Every item is what the named source returned or what the page says, with its link. "Not found" or "not published" is not proof of a problem, and "found" is not proof the project is sound. A Kolaboro agent at the land office and on site checks what no website can.' };
+    disclaimer: 'Every item is what the named source returned or what the page says, with its link. "Not found" or "not published" is not proof of a problem, and "found" is not proof the project is sound. A check at the land office, and on site once site visits start (being set up), covers what no website can.' };
   // OpenTimestamps through the existing stamp path (Bitcoin calendars), best effort
   try {
     const r = await kbApi(new Request(ORIGIN + '/api/kb/stamp', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': req.headers.get('cf-connecting-ip') || 'x' }, body: JSON.stringify({ hash: root, source: 'xray' }) }), new URL(ORIGIN + '/api/kb/stamp'), env, ctx);

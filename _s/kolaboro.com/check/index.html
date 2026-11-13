@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://kolaboro.com/k/og/check.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=68f27c0597">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "Independent checks for people buying off-plan property abroad: developer claims against official registers. Site visits by local buyer's agents are being set up."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Check a property project", "item": "https://kolaboro.com/check/"}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
@@ -100,7 +100,7 @@
   <div><h2>Request a verification</h2><p class="lead">We'll look for it in our records and reply within two working days with what we know and what a full check would cost.</p></div>
   <div><form id="checkform" data-lead data-default-role="buyer" data-source="yc-check" novalidate>
   <input type="hidden" name="role" value="buyer">
-  <div class="perk perk-buyer"><b>What you get:</b> the land title, permits and developer checked by a local agent, GPS-stamped video before every payment, and a clear "go" or "hold". From €490.</div>
+  <div class="perk perk-buyer"><b>What you get:</b> the land title, permits and developer checked, and a clear "go" or "hold". Site visits by a local agent, with GPS-stamped video before every payment, are being set up. From €490.</div>
   <div class="perk perk-agent"><b>What you earn:</b> €150 per pre-purchase check, €40 per monthly site visit, and 40% of Kolaboro's buyer's agent fee on purchases you work on. Paid by Kolaboro, never by developers. Free training, no degree needed. <a href="/agents">How agents work</a></div>
   <div class="perk perk-developer"><b>What you get:</b> an independent Trust Score page, a live "Verified by Kolaboro" badge for your website and listings, and visibility to international buyers who check projects on Kolaboro. Free: developers never pay Kolaboro. Buyers fund every check. <a href="/developers">How verification works</a></div>
   <div class="perk perk-investor"><b>We reply personally</b> with our deck and latest numbers.</div>
@@ -391,7 +391,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
     $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + (e === 'blocked' ? 'This website blocked our reader' : e === 'empty' ? 'We could not read enough of this page' : 'We will take it from here') + '</h2><p class="lead">' + m + '</p>' + (e === 'empty' ? pagesFound(d.pages_found, 'Pages on this site that may hold the offer:') : '') + cta();
     show(4); ev('desk_error', { e: e || '' }); if (window.kbLog) kbLog('desk_error', url + ' | ' + (e || ''));
   }
-  function cta(){ setTimeout(bindReq, 0); return '<div class="az-cta" id="azreq"><div><b>Get the full check: €490</b><p>Land certificate checked at the land office, building permit confirmed in the official system, site visit with GPS-stamped photos and a contract review. Written report in 7 days. Full refund if we can\'t take your case.</p></div><button class="btn btn-hi" type="button" id="azreq-go" data-ev="req_open">Request this check</button></div>'; }
+  function cta(){ setTimeout(bindReq, 0); return '<div class="az-cta" id="azreq"><div><b>Get the full check: €490</b><p>Land certificate checked at the land office, building permit confirmed in the official system, a site visit with GPS-stamped photos (being set up) and a contract review. Written report in 7 days. Full refund if we can\'t take your case.</p></div><button class="btn btn-hi" type="button" id="azreq-go" data-ev="req_open">Request this check</button></div>'; }
   function bindReq(){ var b = $('azreq-go'); if (!b) return; b.onclick = function(){
     var box = $('azreq'); box.classList.add('open');
     box.innerHTML = '<form class="az-reqf" id="azreqf"><b>Request a full check of ' + esc(new URL(url).hostname.replace(/^www\./, '')) + '</b>' +
@@ -418,7 +418,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
       function done(){
       ev('generate_lead', { role: 'check_request' });
       box.innerHTML = '<div class="az-done"><p class="az-k">Request received · ' + ref + '</p><b>Thanks, ' + esc(n.split(' ')[0]) + '. We have your request.</b>' +
-        '<ol><li>We check that we can cover this project and reply to <b>' + esc(em) + '</b>, usually the same day.</li><li>Once you pay, your agent starts with the land office and the permit.</li><li>You get a login to follow the case, and the written report within 7 days.</li></ol>' +
+        '<ol><li>We check that we can cover this project and reply to <b>' + esc(em) + '</b>, usually the same day.</li><li>Once you pay, the check starts with the land office and the permit; site visits are being set up, so we first confirm an agent for your location.</li><li>You get a login to follow the case, and the written report within 7 days.</li></ol>' +
         '<div class="row"><a class="btn btn-hi" href="' + PAY + '" rel="noopener" data-ev="pay_check_desk">Pay €490 now and start today</a><a class="btn btn-line" href="/report/sample">See a sample report</a></div>' +
         '<p class="muted" style="font-size:.82rem;margin:10px 0 0">PayPal or card. Full refund if we can\'t take your case. Keep your reference: ' + ref + '.</p></div>';
       }
@@ -509,6 +509,6 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   }
 })();
 </script>
-<script>(function(){try{var a=JSON.parse(localStorage.getItem('kb-attr')||'{}');var q=new URLSearchParams(location.search);if(a.src!=='realhunt'&&q.get('utm_source')!=='realhunt')return;var h=document.querySelector('.phero h1'),l=document.querySelector('.phero .lead');if(h)h.textContent='Check this home before you pay a deposit.';if(l)l.textContent='We read the listing you came from and tell you what to verify: who is selling, the title and land register, charges and the building\'s condition. If you want certainty, a local agent checks it on site.';}catch(e){}})();</script>
+<script>(function(){try{var a=JSON.parse(localStorage.getItem('kb-attr')||'{}');var q=new URLSearchParams(location.search);if(a.src!=='realhunt'&&q.get('utm_source')!=='realhunt')return;var h=document.querySelector('.phero h1'),l=document.querySelector('.phero .lead');if(h)h.textContent='Check this home before you pay a deposit.';if(l)l.textContent='We read the listing you came from and tell you what to verify: who is selling, the title and land register, charges and the building\'s condition. For certainty, checks on site by a local agent are being set up: we are recruiting our first agents.';}catch(e){}})();</script>
 <!--/email_off--></body>
 </html>
