@@ -201,7 +201,33 @@
     "https://www.teus-group.com/news/amani-melasti----september-2026",
     "https://www.teus-group.com/news/wyndham-approves-the-amani-melasti-show-unit"
    ],
-   "verified_score": 0
+   "verified_score": 0,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.teus-group.com/amani-melasti"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "The developer page read on 13 Nov 2026 prints no date; the date on record (2027-Q2) comes from the sources listed on the page.",
+     "https://www.teus-group.com/amani-melasti"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "portal",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "anjuna-bay",
@@ -1178,7 +1204,33 @@
     "https://www.linkedin.com/posts/augustin-misson-agus-58408a233_cocohills-cocodevelopment-balirealestate-activity-7331305681926414336-Vx5x",
     "https://www.linkedin.com/posts/rasmusiholst_the-countdown-is-officially-on-after-activity-7463139164054650882-YxJ7"
    ],
-   "verified_score": 0
+   "verified_score": 0,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://cocodevelopmentgroup.com/coco-hills-resort-bali/"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "The developer page read on 13 Nov 2026 prints no date; the date on record (2027-Q3) comes from the sources listed on the page.",
+     "https://cocodevelopmentgroup.com/coco-hills-resort-bali/"
+    ],
+    "sq": {
+     "handover": "press",
+     "permit": "developer",
+     "price": "developer",
+     "developer": null
+    }
+   }
   },
   {
    "slug": "core-villas",
@@ -2750,7 +2802,33 @@
     "https://www.balitecture.com/portfolio/dasa-uluwatu"
    ],
    "verified_score": 0,
-   "invited": "2026-10-28"
+   "invited": "2026-10-28",
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.balitecture.com/developments/nara-villas"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2027-Q4; developer page read on 13 Nov 2026: \"to 3 Price From $269,000 USD Build 153 to 226 sqm Land 105 to 188 sqm Lease 30 + 30 years Completion Q4 2027 Choose Your Villa Villa Types 2 Bedroom\"",
+     "https://www.balitecture.com/developments/nara-villas"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": null
+    }
+   }
   },
   {
    "slug": "natha-loka",
@@ -3948,7 +4026,7 @@
     "completion": "2027-Q3",
     "permit_claim": false,
     "permit_number": null,
-    "plans_published": false,
+    "plans_published": true,
     "escrow": null,
     "progress_pct": null,
     "developer_delivered": null,
@@ -3961,21 +4039,27 @@
     "permit": false,
     "escrow": false,
     "progress": false,
-    "plans": false,
+    "plans": true,
     "record": false,
     "no_guaranteed_returns": true,
-    "score": 1,
+    "score": 2,
     "all_six": false
    },
    "verification": {
     "permit": "none",
     "escrow": "none",
     "progress": "none",
-    "plans": "none",
+    "plans": "developer",
     "record": "none",
-    "returns": "none"
+    "returns": "developer"
    },
    "claims": [
+    {
+     "claim": "Developer page (marked last updated May 2026): 25 villas, Q3 2027 handover, entry price Rp 2.3 billion",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.globalbalihome.com/project-serenity-village.html"
+    },
     {
      "claim": "Handover Q3 2027",
      "status": "unverified",
@@ -4079,9 +4163,9 @@
     "permit": null,
     "escrow": "Allianz construction insurance (contractors all-risk, property, liability) stated; no escrow, bank guarantee or deposit insurance",
     "progress": "Only 'Last updated: May 2026' page stamp; no construction updates",
-    "plans": "No floor plans; 'Layouts & Interiors' is a photo gallery",
+    "plans": "Developer page has a Layouts and Interiors section and a unit table (opened 13 Nov 2026)",
     "record": "About page: 'three years on the ground', '42 villas designed & under development'; partner contractors' past resorts listed, no completed Global Bali Home project",
-    "returns": "Homepage '10-15% annual yield', '~80% projected occupancy'; no guarantee wording"
+    "returns": "No guaranteed-return wording on the developer page (opened 13 Nov 2026)"
    },
    "positives": [
     "Notarized lease with extension rights stated",
@@ -4097,7 +4181,33 @@
     "https://www.globalbalihome.com/project-serenity-village.html"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.globalbalihome.com/project-serenity-village.html"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2027-Q3; checked against: Developer page (marked last updated May 2026): 25 villas, Q3 2027 handover, entry price Rp 2.3 billion",
+     "https://www.globalbalihome.com/project-serenity-village.html"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "suku-residences",
@@ -4282,7 +4392,33 @@
     "https://www.balitecture.com/portfolio"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.balitecture.com/developments/suku-residences"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2027-Q2; developer page read on 13 Nov 2026: \"0 Build Area 108 to 312 sqm Land Area 105 to 358 sqm Lease 30 + 30 years Start Early 2026 Completion Mid 2027 Choose Your Villa Villa Types 3 Bedroom\"",
+     "https://www.balitecture.com/developments/suku-residences"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": null
+    }
+   }
   },
   {
    "slug": "temple-heights",
@@ -4479,7 +4615,33 @@
     "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://investlandbali.com/listing/temple-heights"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2027-Q1; developer page read on 13 Nov 2026: \"iverside, Sold, 15 100 2 Riverside, Sold, Project Timeline 40 % Start of Construction Handover in January 2027 Payment Plan 1 10% Booking Fee Due Dili\"",
+     "https://investlandbali.com/listing/temple-heights"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "vodopad",
@@ -4864,7 +5026,33 @@
     "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://avalonbali.com/projects/om"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2026; developer page read on 13 Nov 2026: \"ᐉ Off-Plan Apartments in Bali from $199,000 | OM Club House Completion 2026 from $199 000 from 3\"",
+     "https://avalonbali.com/projects/om"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "avalon-buddha-club-house",
@@ -5056,7 +5244,33 @@
     "https://www.avalonbali.com/news/buddha-club-house-a-new-project-in-berawa"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://avalonbali.com/projects/buddha"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2028; developer page read on 13 Nov 2026: \"ᐉ Off-Plan Apartments in Bali Prime Location | BUDDHA Completion 2028 from $84 900 from 1\"",
+     "https://avalonbali.com/projects/buddha"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "amari-villas-iii",
@@ -5835,7 +6049,33 @@
     "https://kinnisvara24.ee/en/blogi/estonian-real-estate-developers-building-large-vacation-resort-in-bali"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://investlandbali.com/listing/sanuuri"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "The developer page read on 13 Nov 2026 prints no date; the date on record (2027-Q4) comes from the sources listed on the page.",
+     "https://investlandbali.com/listing/sanuuri"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "press",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "breig-edem-i-villas",
@@ -6429,7 +6669,33 @@
     "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://ubuddream.com/"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2027-Q3; developer page read on 13 Nov 2026: \"Payment schedule Construction completion Q3 2027 Contribution amount Payment purpose Pla\"",
+     "https://ubuddream.com/"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "press"
+    }
+   }
   },
   {
    "slug": "lb-xo-pandawa",
@@ -6617,7 +6883,33 @@
     "https://xo-project.com/pandawa"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://xo-project.com/pandawa"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "The developer page read on 13 Nov 2026 prints no date; the date on record (2026) comes from the sources listed on the page.",
+     "https://xo-project.com/pandawa"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": null,
+     "developer": null
+    }
+   }
   },
   {
    "slug": "kaluna-umalas-reserve",
@@ -6805,7 +7097,33 @@
     "https://newhomes.id/kaluna-development/"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://kalunadevelopment.com/projects/umalas-reserve/"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "no date published",
+     null
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "press",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "kaluna-berawa-signature",
@@ -6988,7 +7306,33 @@
     "https://kalunadevelopment.com/projects/berawa-signature/"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://kalunadevelopment.com/projects/berawa-signature/"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "no date published",
+     null
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "kaluna-tumbak-signature",
@@ -7170,7 +7514,33 @@
     "https://kalunadevelopment.com/projects/tumbak-signature/"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://kalunadevelopment.com/projects/tumbak-signature/"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "no date published",
+     null
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "samani-villa-pecatu-phase-2",
@@ -7606,9 +7976,21 @@
     "progress": "none",
     "plans": "none",
     "record": "none",
-    "returns": "none"
+    "returns": "developer"
    },
    "claims": [
+    {
+     "claim": "Developer page states completion 2028 and prices from US$89,900 (IDR 1.6 billion)",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://avalonbali.com/projects/tao"
+    },
+    {
+     "claim": "Developer page says real estate investments in Bali \"provide up to 20% returns per year\" (general statement, not a guarantee for this project)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://avalonbali.com/projects/tao"
+    },
     {
      "claim": "Completion in 2028",
      "status": "unverified",
@@ -7718,7 +8100,7 @@
     "progress": "Only a presentation news item (21 Mar 2025); no construction updates in news feed as of 31 Oct 2026",
     "plans": "Unit sizes only",
     "record": "OM Club House is Avalon's first residential project and is not yet handed over; the only operating Avalon businesses named are a gaming club (Cyberpunk) and a restaurant (Lula Kebab)",
-    "returns": "'12% Projected ROI', unit cards 14%; no guarantee wording"
+    "returns": "No guaranteed-return wording on the developer page; it makes a general claim of up to 20% returns per year in Bali (opened 13 Nov 2026)"
    },
    "positives": [
     "Lease term and extension stated (32+32)",
@@ -7734,7 +8116,33 @@
     "https://www.avalonbali.com/news/avalon-ribas-strategic-partnership"
    ],
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://avalonbali.com/projects/tao"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2028; checked against: Developer page states completion 2028 and prices from US$89,900 (IDR 1.6 billion)",
+     "https://avalonbali.com/projects/tao"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "serenity-estates-ubud",
@@ -8534,7 +8942,33 @@
    "market": "Bali",
    "added": "2026-10-28",
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://lb-dreams.com/pandawadream"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "The developer page read on 13 Nov 2026 prints no date; the date on record (2027-Q4) comes from the sources listed on the page.",
+     "https://lb-dreams.com/pandawadream"
+    ],
+    "sq": {
+     "handover": "press",
+     "permit": "press",
+     "price": "press",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "loyo-melasti-arcade",
@@ -8979,6 +9413,12 @@
    },
    "claims": [
     {
+     "claim": "Developer page (marked last updated May 2026) still shows \"Q2 2026 Handover\" when read on 13 Nov 2026, after that date; it announces no completion and no new date",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.globalbalihome.com/project-serenity-villas.html"
+    },
+    {
      "claim": "12 villas, 3 available, Rp 6.15B-6.87B",
      "status": "unverified",
      "by": "none",
@@ -9098,7 +9538,33 @@
    "market": "Bali",
    "added": "2026-10-28",
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.globalbalihome.com/project-serenity-villas.html"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "passed-unconfirmed",
+     "late (date on record Q2 2026 has passed; the developer page still shows it and announces no completion; no satellite series because there is no plot pin)",
+     "https://www.globalbalihome.com/project-serenity-villas.html"
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "portal",
+     "price": "developer",
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "alex-villas-laguna-complex-7",
@@ -9305,7 +9771,33 @@
    "market": "Bali",
    "added": "2026-10-28",
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://alexvillasgroup.com/developments/complex-7"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "none",
+     "no date published",
+     null
+    ],
+    "sq": {
+     "handover": "developer",
+     "permit": "developer",
+     "price": null,
+     "developer": "developer"
+    }
+   }
   },
   {
    "slug": "lb-pandawa-hills",
@@ -9494,7 +9986,33 @@
    "market": "Bali",
    "added": "2026-10-28",
    "verified_score": 0,
-   "permit_number": null
+   "permit_number": null,
+   "review": {
+    "d": "2026-11-13",
+    "v": "n27-2",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://pandawahills.com/en"
+    ],
+    "register": [
+     "no public per-project search",
+     "see kolaboro.com/registers/ for Indonesia",
+     "https://kolaboro.com/registers/"
+    ],
+    "company": null,
+    "handover": [
+     "future",
+     "date on record 2026-Q4; developer page read on 13 Nov 2026: \"Roomtour Completion: Q4 2026 2 Rooftop ocean view cinema restaurant\"",
+     "https://pandawahills.com/en"
+    ],
+    "sq": {
+     "handover": "press",
+     "permit": "press",
+     "price": "developer",
+     "developer": "press"
+    }
+   }
   }
  ]
 }
