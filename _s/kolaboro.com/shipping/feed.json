@@ -13,17 +13,31 @@
  ],
  "items": [
   {
-   "id": "https://kolaboro.com/shipping/#d-2026-11-12",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-12",
-   "title": "12 November 2026: 13 changes shipped so far",
-   "content_text": "- Transparency rankings (n23): consent box before the button, \"page we read\" as the source label (some tracked pages are sales pages)\n- N22e ticker line covers the later fixes of the sweep (broken links on translated pages, weekly file list on the verify page)\n- Transparency rankings layout (n23): score details in a full-width row, no horizontal scroll on phones\n- Transparency rankings (n23): phone cards with the project name as title, score and bar together\n- 27 new projects in 11 countries (1,294 tracked), not yet reviewed, every fact sourced (n22h)\n- 60 new projects in 17 countries (1,234 tracked), not yet reviewed, every fact sourced\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Transparency rankings (n23): consent box before the button, &quot;page we read&quot; as the source label (some tracked pages are sales pages)</li><li>N22e ticker line covers the later fixes of the sweep (broken links on translated pages, weekly file list on the verify page)</li><li>Transparency rankings layout (n23): score details in a full-width row, no horizontal scroll on phones</li><li>Transparency rankings (n23): phone cards with the project name as title, score and bar together</li><li>27 new projects in 11 countries (1,294 tracked), not yet reviewed, every fact sourced (n22h)</li><li>60 new projects in 17 countries (1,234 tracked), not yet reviewed, every fact sourced</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
-   "date_published": "2026-11-12T00:00:00Z",
-   "date_modified": "2026-11-12T02:19:10Z",
+   "id": "https://kolaboro.com/shipping/#d-2026-11-13",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-13",
+   "title": "13 November 2026: 26 changes shipped so far",
+   "content_text": "- Faster first paint on 235 pages (page height read after load), home below-the-fold sections rendered on demand, calculator converts the price to the tax currency (n27u)\n- No page claims site visits work today; they are marked \"being set up\" in 8 languages, pricing shows the status, hero line reads cleanly on phones (n27z)\n- Handover on record is the latest dated handover we hold, so moved or phased projects are not shown as kept or overdue (82 projects corrected, n27g)\n- Most searched projects list updated from the review batch; Place and GeoCoordinates item marked done on /progress/improvements/ (n27g)\n- The 150 most searched projects in UAE, Middle East, Europe and Africa reviewed against official registers and developer pages (n27r1)\n- Buying off-plan guides for Bali, Dubai, Phuket, Costa del Sol, Lisbon, Cyprus, Miami and Tulum in 8 languages (n27c, items 10 and 11)\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Faster first paint on 235 pages (page height read after load), home below-the-fold sections rendered on demand, calculator converts the price to the tax currency (n27u)</li><li>No page claims site visits work today; they are marked &quot;being set up&quot; in 8 languages, pricing shows the status, hero line reads cleanly on phones (n27z)</li><li>Handover on record is the latest dated handover we hold, so moved or phased projects are not shown as kept or overdue (82 projects corrected, n27g)</li><li>Most searched projects list updated from the review batch; Place and GeoCoordinates item marked done on /progress/improvements/ (n27g)</li><li>The 150 most searched projects in UAE, Middle East, Europe and Africa reviewed against official registers and developer pages (n27r1)</li><li>Buying off-plan guides for Bali, Dubai, Phuket, Costa del Sol, Lisbon, Cyprus, Miami and Tulum in 8 languages (n27c, items 10 and 11)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-13T00:00:00Z",
+   "date_modified": "2026-11-13T01:44:29Z",
    "_kolaboro": {
-    "ships": 13,
-    "data_updates": 1,
+    "ships": 26,
+    "data_updates": 0,
     "method": "so-far"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-12",
+   "url": "https://kolaboro.com/changelog/2026-11-12/",
+   "title": "12 November 2026: 49 changes shipped",
+   "content_text": "- Named project titles: a very long project name falls back to its part before the first comma, dash or slash so the title stays under 60 characters (n24s)\n- /handover/, /areas/ and /vs/ pages answer 503 (retry) instead of falling to 404 if a data file fails to load; comparison table fits phones (n26s)\n- Translation sweep (n25t): handover dates in words and country names localized, ticker and Dataset JSON-LD in the page language, long titles fit\n- /progress/ (daily counters, projects added per day, 300 improvements), press figures per place, moderation policy, team and method (n26y)\n- Transparency rankings (n23): consent box before the button, \"page we read\" as the source label (some tracked pages are sales pages)\n- Named project pages answer what people search (n24s): quick answer, question headings, checklist, where, related six, search titles\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Named project titles: a very long project name falls back to its part before the first comma, dash or slash so the title stays under 60 characters (n24s)</li><li>/handover/, /areas/ and /vs/ pages answer 503 (retry) instead of falling to 404 if a data file fails to load; comparison table fits phones (n26s)</li><li>Translation sweep (n25t): handover dates in words and country names localized, ticker and Dataset JSON-LD in the page language, long titles fit</li><li>/progress/ (daily counters, projects added per day, 300 improvements), press figures per place, moderation policy, team and method (n26y)</li><li>Transparency rankings (n23): consent box before the button, &quot;page we read&quot; as the source label (some tracked pages are sales pages)</li><li>Named project pages answer what people search (n24s): quick answer, question headings, checklist, where, related six, search titles</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-12T00:00:00Z",
+   "date_modified": "2026-11-12T21:12:38Z",
+   "_kolaboro": {
+    "ships": 49,
+    "data_updates": 9,
+    "method": "deterministic"
    }
   },
   {
