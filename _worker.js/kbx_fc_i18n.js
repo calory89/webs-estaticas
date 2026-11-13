@@ -4,7 +4,7 @@ export const FT = {
   en: {
     excl1: 'The promised date has passed and we hold no dated evidence either way, so this project is left out of the estimate and has no forecast.',
     fc_h: 'Delivery forecast',
-    fc_intro: 'An estimate from the dated handover history of comparable projects (Kaplan-Meier survival estimate). It describes what happened to other projects, not a finding about this one.',
+    fc_intro: 'Estimate from the dated handover history of comparable projects (Kaplan-Meier), not a finding about this one.',
     fc_first: 'First promised handover in our records: {d}.', fc_cur: 'Currently promised: {d}.',
     th_by: 'Handed over by', th_p: 'Estimated chance', th_ci: '95% range',
     g_mk: 'Based on {n} projects in {g} whose first promised handover has passed; {k} recorded as handed over.',
@@ -62,7 +62,7 @@ export const FT = {
   es: {
     excl1: 'La fecha prometida ya pasó y no tenemos pruebas fechadas en ningún sentido, así que este proyecto queda fuera de la estimación y no tiene previsión.',
     fc_h: 'Previsión de entrega',
-    fc_intro: 'Una estimación a partir del historial fechado de entregas de proyectos comparables (estimador de supervivencia de Kaplan-Meier). Describe lo que pasó con otros proyectos, no es una conclusión sobre este.',
+    fc_intro: 'Estimación a partir del historial de entregas de proyectos comparables (Kaplan-Meier), no una conclusión sobre este.',
     fc_first: 'Primera entrega prometida en nuestros registros: {d}.', fc_cur: 'Fecha prometida ahora: {d}.',
     th_by: 'Entregado antes de', th_p: 'Probabilidad estimada', th_ci: 'Rango del 95%',
     g_mk: 'Basado en {n} proyectos en {g} cuya primera entrega prometida ya pasó; {k} constan como entregados.',
@@ -120,7 +120,7 @@ export const FT = {
   fr: {
     excl1: 'La date promise est passée et nous n\u2019avons aucune preuve datée dans un sens ou dans l\u2019autre ; ce projet est donc exclu de l\u2019estimation et n\u2019a pas de prévision.',
     fc_h: 'Prévision de livraison',
-    fc_intro: 'Une estimation tirée de l’historique daté des livraisons de projets comparables (estimateur de survie de Kaplan-Meier). Elle décrit ce qui est arrivé à d’autres projets, ce n’est pas un constat sur celui-ci.',
+    fc_intro: 'Estimation tirée de l’historique des livraisons de projets comparables (Kaplan-Meier), pas un constat sur celui-ci.',
     fc_first: 'Première livraison promise dans nos dossiers : {d}.', fc_cur: 'Date promise actuellement : {d}.',
     th_by: 'Livré avant', th_p: 'Probabilité estimée', th_ci: 'Intervalle à 95 %',
     g_mk: 'Sur la base de {n} projets à {g} dont la première livraison promise est passée ; {k} enregistrés comme livrés.',
@@ -178,7 +178,7 @@ export const FT = {
   de: {
     excl1: 'Der versprochene Termin ist vorbei und wir haben keinen datierten Beleg in die eine oder andere Richtung; das Projekt ist daher nicht in der Schätzung und hat keine Prognose.',
     fc_h: 'Übergabeprognose',
-    fc_intro: 'Eine Schätzung aus der datierten Übergabehistorie vergleichbarer Projekte (Kaplan-Meier-Überlebensschätzer). Sie beschreibt, was mit anderen Projekten geschah, und ist keine Feststellung über dieses.',
+    fc_intro: 'Schätzung aus der Übergabehistorie vergleichbarer Projekte (Kaplan-Meier), keine Feststellung über dieses.',
     fc_first: 'Erste versprochene Übergabe in unseren Daten: {d}.', fc_cur: 'Derzeit versprochen: {d}.',
     th_by: 'Übergeben bis', th_p: 'Geschätzte Wahrscheinlichkeit', th_ci: '95-%-Bereich',
     g_mk: 'Grundlage: {n} Projekte in {g}, deren erste versprochene Übergabe vorbei ist; {k} als übergeben erfasst.',
@@ -236,7 +236,7 @@ export const FT = {
   nl: {
     excl1: 'De beloofde datum is voorbij en we hebben geen gedateerd bewijs in welke richting ook; dit project valt daarom buiten de schatting en heeft geen prognose.',
     fc_h: 'Opleveringsprognose',
-    fc_intro: 'Een schatting op basis van de gedateerde opleveringsgeschiedenis van vergelijkbare projecten (Kaplan-Meier-overlevingsschatter). Ze beschrijft wat er met andere projecten gebeurde en is geen bevinding over dit project.',
+    fc_intro: 'Schatting op basis van de opleveringsgeschiedenis van vergelijkbare projecten (Kaplan-Meier), geen bevinding over dit project.',
     fc_first: 'Eerste beloofde oplevering in onze gegevens: {d}.', fc_cur: 'Nu beloofd: {d}.',
     th_by: 'Opgeleverd vóór', th_p: 'Geschatte kans', th_ci: '95%-bereik',
     g_mk: 'Op basis van {n} projecten in {g} waarvan de eerste beloofde oplevering voorbij is; {k} geregistreerd als opgeleverd.',
@@ -294,7 +294,7 @@ export const FT = {
   ru: {
     excl1: 'Обещанный срок прошёл, а датированных доказательств в любую сторону у нас нет, поэтому проект не входит в оценку и прогноза нет.',
     fc_h: 'Прогноз сдачи',
-    fc_intro: 'Оценка по датированной истории сдачи сопоставимых проектов (оценка выживаемости Каплана-Мейера). Она описывает то, что произошло с другими проектами, и не является выводом об этом проекте.',
+    fc_intro: 'Оценка по истории сдачи сопоставимых проектов (Каплан-Мейер), а не вывод об этом проекте.',
     fc_first: 'Первый обещанный срок сдачи в наших данных: {d}.', fc_cur: 'Обещано сейчас: {d}.',
     th_by: 'Сдан до', th_p: 'Оценка вероятности', th_ci: 'Диапазон 95%',
     g_mk: 'На основе {n} проектов в {g}, у которых первый обещанный срок сдачи прошёл; {k} отмечены как сданные.',
@@ -352,7 +352,7 @@ export const FT = {
   zh: {
     excl1: '承诺日期已过,而我们没有任何方向的带日期证据,因此该项目不计入估计,也没有预测。',
     fc_h: '交付预测',
-    fc_intro: '根据可比项目带日期的交付记录得出的估计(Kaplan-Meier 生存估计)。它描述的是其他项目的情况,不是对本项目的结论。',
+    fc_intro: '根据可比项目的交付记录得出的估计（Kaplan-Meier），不是对本项目的结论。',
     fc_first: '我们记录中最早承诺的交付时间:{d}。', fc_cur: '目前承诺:{d}。',
     th_by: '交付时间不晚于', th_p: '估计概率', th_ci: '95% 区间',
     g_mk: '基于{g}的 {n} 个首次承诺交付日期已过的项目;其中 {k} 个记录为已交付。',
@@ -410,7 +410,7 @@ export const FT = {
   ar: {
     excl1: 'مرّ الموعد الموعود ولا نملك دليلًا مؤرخًا في أي اتجاه، لذلك يُستبعد هذا المشروع من التقدير ولا يوجد له توقع.',
     fc_h: 'توقع التسليم',
-    fc_intro: 'تقدير مبني على السجل المؤرخ لتسليم مشاريع مماثلة (مقدّر البقاء لكابلان-ماير). يصف ما حدث لمشاريع أخرى، وليس استنتاجًا عن هذا المشروع.',
+    fc_intro: 'تقدير من سجل تسليم مشاريع مماثلة (كابلان-ماير)، وليس استنتاجًا عن هذا المشروع.',
     fc_first: 'أول موعد تسليم موعود في سجلاتنا: {d}.', fc_cur: 'الموعد الحالي: {d}.',
     th_by: 'تم التسليم بحلول', th_p: 'الاحتمال المقدَّر', th_ci: 'نطاق 95%',
     g_mk: 'بناءً على {n} مشروعًا في {g} مرّ أول موعد تسليم موعود لها؛ {k} منها مسجلة كمسلَّمة.',

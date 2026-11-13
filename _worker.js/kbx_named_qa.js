@@ -125,6 +125,61 @@ const S = {
     r6_h: 'مشاريع ذات صلة', r6_dev: 'المطوّر نفسه', r6_mk: 'أيضًا في {mk}', r6_y: 'التسليم {y}',
     q_tr: 'ما درجة الشفافية لـ {n}؟', a_tr_x: 'تقيس ما هو منشور وقابل للتحقق، لا الجودة.', q_plan: 'ما خطة الدفع لـ {n}؟', a_plan: 'خطة الدفع المنشورة: {p}. اسأل المطوّر عن الشروط الحالية قبل الدفع.', a_price0: 'لا يوجد سعر منشور في الصفحات التي قرأناها. اطلب من المطوّر قائمة الأسعار الحالية.' }
 };
+
+// n27g (batch 27): search titles with the searched word and the year ("<project> reviews 2026: handover date, permit and developer"),
+// an overdue handover in the title where it fits, descriptions that open with the fact few other pages give (handover date passed N
+// months ago, date moved N times, no permit published), the dated overdue notice on project pages and developer titles with the year.
+const S27 = {
+  en: { b_y: '{n} reviews {y}', t_lab: 'handover date, permit and developer', t_lab2: 'handover, permit, developer', t_ov: 'handover {mm} late', t_ov2: 'handover date passed',
+    d_ov: 'Handover promised for {h}; that date passed {mm} ago.', d_mv: 'Handover date moved {k} times.', d_mv1: 'Handover date moved once.',
+    ov_h: 'Handover date passed', ov_t: 'Promised for {h}. That date passed {mm} ago (as of {d}).', ov_st: 'Our latest research record (checked {c}): {st}.', ov_more: 'Overdue handovers in {p}', ov_all: 'All overdue handovers', upd_on: 'Updated {d}',
+    td_y: '{dev} reviews {y}: projects, permits, delivery record', td_y2: '{dev} reviews {y}: projects and permits' },
+  es: { b_y: '{n} opiniones {y}', t_lab: 'fecha de entrega, permiso y promotor', t_lab2: 'entrega, permiso, promotor', t_ov: 'entrega con {mm} de retraso', t_ov2: 'fecha de entrega vencida',
+    d_ov: 'Entrega prometida para {h}; esa fecha pasó hace {mm}.', d_mv: 'Fecha de entrega aplazada {k} veces.', d_mv1: 'Fecha de entrega aplazada una vez.',
+    ov_h: 'Fecha de entrega vencida', ov_t: 'Prometida para {h}. Esa fecha pasó hace {mm} (a {d}).', ov_st: 'Nuestro último registro de investigación (revisado el {c}): {st}.', ov_more: 'Entregas vencidas en {p}', ov_all: 'Todas las entregas vencidas', upd_on: 'Actualizado el {d}',
+    td_y: '{dev} opiniones {y}: proyectos, licencias y entregas', td_y2: '{dev} opiniones {y}: proyectos y licencias' },
+  fr: { b_y: 'Avis {n} {y}', t_lab: 'date de livraison, permis et promoteur', t_lab2: 'livraison, permis, promoteur', t_ov: 'livraison en retard de {mm}', t_ov2: 'date de livraison dépassée',
+    d_ov: 'Livraison promise pour {h} ; cette date est passée depuis {mm}.', d_mv: 'Date de livraison repoussée {k} fois.', d_mv1: 'Date de livraison repoussée une fois.',
+    ov_h: 'Date de livraison dépassée', ov_t: 'Promise pour {h}. Cette date est passée depuis {mm} (au {d}).', ov_st: 'Notre dernière fiche de recherche (vérifiée le {c}) : {st}.', ov_more: 'Livraisons en retard : {p}', ov_all: 'Toutes les livraisons en retard', upd_on: 'Mis à jour le {d}',
+    td_y: 'Avis {dev} {y} : projets, permis, livraisons', td_y2: 'Avis {dev} {y} : projets et permis' },
+  de: { b_y: '{n} Erfahrungen {y}', t_lab: 'Übergabetermin, Genehmigung und Bauträger', t_lab2: 'Übergabe, Genehmigung, Bauträger', t_ov: 'Übergabe {mm} überfällig', t_ov2: 'Übergabetermin verstrichen',
+    d_ov: 'Übergabe versprochen für {h}; der Termin ist seit {mm} verstrichen.', d_mv: 'Übergabetermin {k}-mal verschoben.', d_mv1: 'Übergabetermin einmal verschoben.',
+    ov_h: 'Übergabetermin verstrichen', ov_t: 'Versprochen für {h}. Dieser Termin ist seit {mm} verstrichen (Stand {d}).', ov_st: 'Unser letzter Recherchestand (geprüft am {c}): {st}.', ov_more: 'Überfällige Übergaben: {p}', ov_all: 'Alle überfälligen Übergaben', upd_on: 'Aktualisiert am {d}',
+    td_y: '{dev} Erfahrungen {y}: Projekte, Genehmigungen, Übergaben', td_y2: '{dev} Erfahrungen {y}: Projekte und Genehmigungen' },
+  nl: { b_y: '{n} ervaringen {y}', t_lab: 'opleverdatum, vergunning en ontwikkelaar', t_lab2: 'oplevering, vergunning, ontwikkelaar', t_ov: 'oplevering {mm} te laat', t_ov2: 'opleverdatum verstreken',
+    d_ov: 'Oplevering beloofd voor {h}; die datum is {mm} geleden verstreken.', d_mv: 'Opleverdatum {k} keer verschoven.', d_mv1: 'Opleverdatum één keer verschoven.',
+    ov_h: 'Opleverdatum verstreken', ov_t: 'Beloofd voor {h}. Die datum is {mm} geleden verstreken (stand {d}).', ov_st: 'Ons laatste onderzoeksverslag (gecontroleerd op {c}): {st}.', ov_more: 'Te late opleveringen in {p}', ov_all: 'Alle te late opleveringen', upd_on: 'Bijgewerkt op {d}',
+    td_y: '{dev} ervaringen {y}: projecten, vergunningen, opleveringen', td_y2: '{dev} ervaringen {y}: projecten en vergunningen' },
+  ru: { b_y: '{n}: отзывы {y}', t_lab: 'срок сдачи, разрешение и застройщик', t_lab2: 'сдача, разрешение, застройщик', t_ov: 'сдача просрочена на {mm}', t_ov2: 'срок сдачи прошёл',
+    d_ov: 'Сдача обещана на {h}; этот срок прошёл {mm} назад.', d_mv: 'Переносов срока сдачи: {k}.', d_mv1: 'Переносов срока сдачи: 1.',
+    ov_h: 'Срок сдачи прошёл', ov_t: 'Обещанный срок: {h}. Он прошёл {mm} назад (на {d}).', ov_st: 'Наша последняя запись исследования (проверено {c}): {st}.', ov_more: 'Просроченная сдача: {p}', ov_all: 'Все просроченные сроки сдачи', upd_on: 'Обновлено {d}',
+    td_y: '{dev}: отзывы {y}, проекты, разрешения, сроки сдачи', td_y2: '{dev}: отзывы {y}, проекты и разрешения' },
+  zh: { b_y: '{n} {y}年评价', t_lab: '交付日期、许可证与开发商', t_lab2: '交付、许可证、开发商', t_ov: '交付逾期{mm}', t_ov2: '交付日期已过',
+    d_ov: '承诺交付时间为{h}，该日期已过去{mm}。', d_mv: '交付日期已推迟 {k} 次。', d_mv1: '交付日期已推迟 1 次。',
+    ov_h: '交付日期已过', ov_t: '承诺交付时间：{h}。该日期已过去{mm}（截至 {d}）。', ov_st: '我们最新的调研记录（核查于 {c}）：{st}。', ov_more: '{p}逾期交付的项目', ov_all: '所有逾期交付的项目', upd_on: '更新于 {d}',
+    td_y: '{dev} {y}年评价：项目、许可证与交付记录', td_y2: '{dev} {y}年评价：项目与许可证' },
+  ar: { b_y: 'آراء {n} {y}', t_lab: 'موعد التسليم والترخيص والمطوّر', t_lab2: 'التسليم والترخيص والمطوّر', t_ov: 'موعد التسليم فات منذ {mm}', t_ov2: 'موعد التسليم فات',
+    d_ov: 'التسليم الموعود: {h}، وقد مضى على هذا الموعد {mm}.', d_mv: 'عدد مرات تأجيل موعد التسليم: {k}.', d_mv1: 'عدد مرات تأجيل موعد التسليم: 1.',
+    ov_h: 'موعد التسليم فات', ov_t: 'الموعد الموعود: {h}. مضى على هذا الموعد {mm} (حتى {d}).', ov_st: 'سجل بحثنا الأحدث (فُحص في {c}): {st}.', ov_more: 'مواعيد تسليم فائتة في {p}', ov_all: 'كل مواعيد التسليم الفائتة', upd_on: 'آخر تحديث {d}',
+    td_y: 'آراء {dev} {y}: المشاريع والتراخيص وسجل التسليم', td_y2: 'آراء {dev} {y}: المشاريع والتراخيص' }
+};
+for (const l of Object.keys(S27)) S[l] = Object.assign({}, S[l] || {}, S27[l]);
+// "26 months" in the page language; cs: 'dat' for German "seit 26 Monaten", 'gen' for Arabic after "منذ"; f formats the number
+const PR = {};
+export function months(lang, m, cs, f) {
+  const n = f ? f(m) : String(m);
+  if (lang === 'es') return m === 1 ? n + ' mes' : n + ' meses';
+  if (lang === 'fr') return n + ' mois';
+  if (lang === 'de') return m === 1 ? n + ' Monat' : n + (cs === 'dat' ? ' Monaten' : ' Monate');
+  if (lang === 'nl') return m === 1 ? n + ' maand' : n + ' maanden';
+  if (lang === 'zh') return n + '个月';
+  if (lang === 'ru' || lang === 'ar') {
+    let k = 'other'; try { k = (PR[lang] = PR[lang] || new Intl.PluralRules(lang)).select(m); } catch (e) {}
+    if (lang === 'ru') return n + (k === 'one' ? ' месяц' : k === 'few' ? ' месяца' : ' месяцев');
+    return k === 'one' ? 'شهر واحد' : k === 'two' ? (cs === 'gen' ? 'شهرين' : 'شهران') : k === 'few' ? n + ' أشهر' : k === 'many' ? n + ' شهرًا' : n + ' شهر';
+  }
+  return m === 1 ? n + ' month' : n + ' months';
+}
 export function q(lang, k, v) {
   const s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k];
   return v ? String(s).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s;   // n25t: no "г.." when a date ends the sentence
@@ -137,7 +192,14 @@ const len = s => [...String(s)].length;
 export function qaTitle(lang, f) {
   const base = q(lang, 'b', { n: f.n }), facts = [f.h ? q(lang, 't_h', { h: f.h }) : null, f.pn ? q(lang, 't_pn') : null].filter(Boolean);
   const C = [];
-  for (let k = facts.length; k >= 1; k--) { const t = base + q(lang, 's1') + facts.slice(0, k).join(q(lang, 's2')); C.push(t + ' | Kolaboro', t); }
+  // n27g: "<name> reviews <year>: <overdue handover | handover date, permit and developer>", longest form that fits first
+  const by = f.y ? q(lang, 'b_y', { n: f.n, y: f.y }) : base;
+  if (f.y) {
+    const lab = f.ov ? [q(lang, 't_ov', { mm: months(lang, f.ov, lang === 'ar' ? 'gen' : 'nom', f.nf) }), q(lang, 't_ov2')] : [q(lang, 't_lab'), q(lang, 't_lab2')];
+    for (const l of lab) C.push(by + q(lang, 's1') + l + ' | Kolaboro', by + q(lang, 's1') + l);
+  }
+  for (let k = facts.length; k >= 1; k--) { const t = by + q(lang, 's1') + facts.slice(0, k).join(q(lang, 's2')); C.push(t + ' | Kolaboro', t); }
+  if (f.y) C.push(by + ' | Kolaboro', by);
   C.push(q(lang, 't_f', { n: f.n }) + ' | Kolaboro', base + ' | Kolaboro', base);
   const n2 = String(f.n).replace(/\s*\([^)]*\)/g, '').trim();   // a long name without its bracketed part ("Meriva Collection (Gardens / Signature)")
   if (n2 && n2 !== f.n) { const b2 = q(lang, 'b', { n: n2 }); if (facts.length) C.push(b2 + q(lang, 's1') + facts[0] + ' | Kolaboro', b2 + q(lang, 's1') + facts[0]); C.push(b2 + ' | Kolaboro', b2); }
@@ -162,11 +224,17 @@ export function qaTitle(lang, f) {
 // Description under 155 characters, most useful facts first; shorter place, then fewer facts until it fits.
 export function qaDesc(lang, f) {
   const lead = (pl, by) => q(lang, 'd_lead', { n: f.n, by: by && f.by ? f.by : '', place: pl });
-  const tail = [f.h ? q(lang, 'd_h', { h: f.h }) : q(lang, 'd_h0'), q(lang, f.pn ? 'd_pn1' : 'd_pn0'), f.s != null ? q(lang, 'd_tr', { s: f.s }) : null, f.rv ? null : q(lang, 'd_nr'), q(lang, 'd_chk', { d: f.d })].filter(Boolean);
-  const sp = lang === 'zh' ? '' : ' ';
-  for (const pl of [f.place, f.place2]) for (const by of [true, false]) for (let k = tail.length; k >= 2; k--) {
-    const t = [lead(pl, by)].concat(tail.slice(0, k)).join(sp); if (len(t) <= 155) return t;
+  // n27g: the description opens with the fact few other pages give: a handover date that passed, a date moved, no permit published
+  const ov = f.ov && f.h ? q(lang, 'd_ov', { h: f.h, mm: months(lang, f.ov, lang === 'de' ? 'dat' : 'nom', f.nf) }) : null;
+  const mv = !ov && f.mv ? q(lang, f.mv === 1 ? 'd_mv1' : 'd_mv', { k: f.nf ? f.nf(f.mv) : f.mv }) : null;
+  const first = ov || mv || (f.pn ? null : q(lang, 'd_pn0'));
+  const tail = [ov ? null : f.h ? q(lang, 'd_h', { h: f.h }) : q(lang, 'd_h0'), first && !ov && !mv ? null : q(lang, f.pn ? 'd_pn1' : 'd_pn0'), f.s != null ? q(lang, 'd_tr', { s: f.s }) : null, f.rv ? null : q(lang, 'd_nr'), q(lang, 'd_chk', { d: f.d })].filter(Boolean);
+  const sp = lang === 'zh' ? '' : ' ', head = first ? [first] : [];
+  const leads = [lead(f.place, true), lead(f.place, false), lead(f.place2, true), lead(f.place2, false), q(lang, 'b', { n: f.n }) + (lang === 'zh' ? '。' : '.')];
+  for (const ld of leads) for (let k = tail.length; k >= 1; k--) {
+    const t = head.concat([ld], tail.slice(0, k)).join(sp); if (len(t) <= 155) return t;
   }
+  for (let k = tail.length; k >= 1; k--) { const t = head.concat(tail.slice(0, k)).join(sp); if (head.length && len(t) <= 155) return t; }
   const t = [lead(f.place2, false)].concat(tail.slice(0, 2)).join(sp);
   return len(t) <= 155 ? t : [...t].slice(0, 154).join('').replace(/\s+\S*$/, '') + '.';
 }

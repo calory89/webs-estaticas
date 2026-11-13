@@ -19,9 +19,11 @@
 //   GET /areas/<place>/<area>/              one neighbourhood
 //   GET /vs/<slug-a>-vs-<slug-b>/           two projects in the same place with a handover date in the same year (500 pairs at most);
 //                                           the older /vs/<id>-vs-<id>/ pairs of kbx_seo.js stay as they are
+//   GET /handover/overdue/[<place>/]         n27g (batch 27): overdue handovers by place, a dated monthly report per place with 2+
+//                                           (rule: overdueOf in kbx_named.js), citable, Dataset + FAQPage JSON-LD
 //   GET /handover/sitemap.xml               every URL above with hreflang alternates (listed in /sitemap_index.xml by kbx_seo.js)
 // Conflict of interest: Sumba projects are not named (kbx_named.js drops them) and Eco Beach City / Equinox never appear.
-import { data as namedData, handoverOf, fd, esc, pre, lastmod, okHttp, host, reviewed } from './kbx_named.js';
+import { data as namedData, handoverOf, fd, esc, pre, lastmod, okHttp, host, reviewed, overdueOf, OV_MIN } from './kbx_named.js';
 import { trData } from './kbx_tr.js';
 import { mkName, placeName, coName, hyear, hkey } from './kbx_hdate.js';
 import { FS } from './kbx_facets_i18n.js';
@@ -29,7 +31,7 @@ import { FS } from './kbx_facets_i18n.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:handover(?:\/(20\d\d)\/([a-z0-9-]{2,60}))?|areas(?:\/([a-z0-9-]{2,60})\/([a-z0-9-]{2,80}))?|vs\/([a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200}))(\/?)$/;
+export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:handover\/overdue(?:\/[a-z0-9-]{2,60})?|handover(?:\/(20\d\d)\/([a-z0-9-]{2,60}))?|areas(?:\/([a-z0-9-]{2,60})\/([a-z0-9-]{2,80}))?|vs\/([a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200}))(\/?)$/;
 export const SITEMAP = '/handover/sitemap.xml';
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const MIN_YEAR = 3, MIN_AREA = 5, MAX_PAIRS = 500, MIN_DELAY = 5, EMPTY = 'e3b0c44298fc1c14';
@@ -78,7 +80,7 @@ export async function facetsData(env) {
   const ix = await namedData(env);
   const [tri, drift, dage, regs, ot] = await Promise.all([trData(env).catch(() => null), load(env, 'promise-drift.json'), load(env, 'domain-age.json'), load(env, 'register-checks.json'), load(env, 'on-time.json')]);
   const key = [ix, tri, drift, dage, regs, ot];
-  if (FIX && FIX.key.every((v, i) => v === key[i])) return FIX;
+  if (FIX && FIX.key.every((v, i) => v === key[i]) && FIX.ovMonth === new Date().toISOString().slice(0, 7)) return FIX;
   const P = ix.P.filter(x => !COI_RX.test(String(x.n || '')) && !COI_RX.test(String(x.dv || '')));
   const score = id => { const r = tri && tri.rows.get(id); return r ? r.score : null; };
   const yr = new Map(), yg = new Map(), ag = new Map();
@@ -110,9 +112,14 @@ export async function facetsData(env) {
   const REG = (regs && regs.registers) || [];
   const DA = (dage && dage.projects) || {};
   const DR = (drift && drift.projects) || {};
+  // n27g: overdue handovers now (same rule as the project pages), grouped by market; projects with a handover date per market
+  const ovL = [], ovG = new Map(), withD = new Map();
+  for (const x of P) { if (handoverOf(ix, x)) withD.set(x.mk, (withD.get(x.mk) || 0) + 1); const o = overdueOf(ix, x); if (!o) continue; ovL.push({ x, o }); const k = slugA(x.mk); if (!ovG.has(k)) ovG.set(k, { mk: x.mk, s: k, L: [] }); ovG.get(k).L.push({ x, o }); }
+  for (const g of ovG.values()) { g.L.sort((a, b) => b.o.m - a.o.m || String(a.x.n).localeCompare(String(b.x.n))); g.n = withD.get(g.mk) || g.L.length; }
+  const ovMonth = new Date().toISOString().slice(0, 7);
   const updated = String(ix.updated || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
-  FIX = { key, ix, P, score, yr, years, yOf, areas, aOf, pairs, pOf, dl, dev, done, OT, REG, regDate: regs && regs.updated, DA, daDate: dage && dage.updated, DR, drDate: drift && drift.updated, otDate: ot && ot.generated, updated,
-    v: updated + '|' + P.length + '|' + years.size + '|' + areas.size + '|' + pairs.size + '|' + (tri ? tri.v : '') };
+  FIX = { key, ix, P, ovL, ovG, ovMonth, score, yr, years, yOf, areas, aOf, pairs, pOf, dl, dev, done, OT, REG, regDate: regs && regs.updated, DA, daDate: dage && dage.updated, DR, drDate: drift && drift.updated, otDate: ot && ot.generated, updated,
+    v: updated + '|' + ovMonth + '|' + ovL.length + '|' + P.length + '|' + years.size + '|' + areas.size + '|' + pairs.size + '|' + (tri ? tri.v : '') };
   return FIX;
 }
 
@@ -439,7 +446,7 @@ function yearHub(F, lang) {
   const body = '<div class="kfa"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(cr) + '<h1>' + te(lang, 'hub_title') + '</h1><p class="lead">' + te(lang, 'hub_lead') + '</p></div>' +
     ys.map(y => '<h2 id="y' + y + '">' + te(lang, 'hub_y', { y }) + '</h2><ul class="kfa-l">' + byY.get(y).sort((a, b) => b.L.length - a.L.length).map(g => '<li><a href="' + pre(lang) + '/handover/' + g.y + '/' + g.s + '/">' + bdi(mkName(g.mk, lang)) + ' (' + nf(lang, g.L.length) + ')</a></li>').join('') + '</ul>').join('') +
     '<h2 id="delay">' + te(lang, 'dl_h') + '</h2><p>' + te(lang, 'dl_intro', { n: nf(lang, MIN_DELAY) }) + '</p>' + dt + '<p class="k-small k-muted">' + te(lang, 'dl_rule') + ' <a href="/index/delays/">' + te(lang, 'dl_idx') + '</a></p>' +
-    '<p class="kfa-l"><a href="' + pre(lang) + '/areas/">' + te(lang, 'cr_ar') + '</a> <a href="/vs/">' + te(lang, 'cr_vs') + '</a> <a href="' + pre(lang) + '/rankings/transparency/">' + te(lang, 'tr_link') + '</a></p>' + dataLine(F, lang, lm) + replyBox(lang) + '</div></section></div>';
+    '<p class="kfa-l">' + (F.ovL.length ? '<a href="' + pre(lang) + '/handover/overdue/">' + te(lang, 'ovh_t2') + '</a> ' : '') + '<a href="' + pre(lang) + '/areas/">' + te(lang, 'cr_ar') + '</a> <a href="/vs/">' + te(lang, 'cr_vs') + '</a> <a href="' + pre(lang) + '/rankings/transparency/">' + te(lang, 'tr_link') + '</a></p>' + dataLine(F, lang, lm) + replyBox(lang) + '</div></section></div>';
   const url = PUB(lang, path);
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'Dataset', name: t(lang, 'dl_h'), description: t(lang, 'dl_rule'), url: url + '#delay', isAccessibleForFree: true, dateModified: lm, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/promises.json' }] }, crumbLd(cr)];
@@ -459,18 +466,76 @@ function areaHub(F, lang) {
   return { title, desc, body, ld, path, lm };
 }
 
+// ------------------------------------------------------------------------------------------------ overdue handovers (n27g, batch 27)
+const ovStats = g => { const ms = g.L.map(r => r.o.m); return { k: g.L.length, n: g.n, med: median(ms), max: ms.length ? Math.max(...ms) : 0 }; };
+const stgT = (lang, st) => te(lang, 'stg_' + String(st || 'unknown').replace(/[\s-]+/g, ''));
+const ovPages = F => [...F.ovG.values()].filter(g => g.L.length >= OV_MIN);
+function ovPage(F, s, lang) {
+  const g = F.ovG.get(s); if (!g || g.L.length < OV_MIN) return null;
+  const ix = F.ix, p = mkName(g.mk, lang), mo = fd(F.ovMonth, lang), path = '/handover/overdue/' + s + '/', st = ovStats(g);
+  const lm = g.L.map(r => lastmod(ix, r.x)).sort().pop() || F.updated, today = new Date().toISOString().slice(0, 10), dT = fd(today, lang);
+  const title = fitT(t(lang, 'ov_t', { p, mo }), t(lang, 'ov_t2', { p, mo }), t(lang, 'ov_t3', { p }));
+  const desc = fitD(t(lang, 'ov_d', { p, d: dT, k: nf(lang, st.k), n: nf(lang, st.n) }));
+  const cr = [['Kolaboro', pre(lang) + '/'], [t(lang, 'cr_hy'), pre(lang) + '/handover/'], [t(lang, 'ov_back'), pre(lang) + '/handover/overdue/'], [title, pre(lang) + path]];
+  const cols = t(lang, 'ov_cols');
+  const rows = g.L.map(({ x, o }) => { const cells = [
+    '<a href="' + pre(lang) + '/projects/' + x.s + '/#overdue">' + bdi(x.n) + '</a>',
+    x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : te(lang, 'np'),
+    esc(fd(o.d, lang)) + src(x.url), '<b>' + nf(lang, o.m) + '</b>', stgT(lang, o.st), esc(fd(lastmod(ix, x), lang))];
+    return '<tr>' + cells.map((c, i) => '<td' + (i === 3 ? ' class="k-n"' : '') + ' data-label="' + esc(cols[i]) + '">' + c + '</td>').join('') + '</tr>'; }).join('');
+  const top = g.L[0], url = PUB(lang, path);
+  const Q = [[t(lang, 'ov_q1', { p }), t(lang, 'ov_a1', { d: dT, k: nf(lang, st.k), n: nf(lang, st.n) })], [t(lang, 'ov_q2', { p }), t(lang, 'ov_a2', { x: top.x.n, h: fd(top.o.d, lang), m: nf(lang, top.o.m) })], [t(lang, 'ov_q3'), t(lang, 'ov_a3')]];
+  const yrs = [...F.years.values()].filter(o => o.mk === g.mk).sort((a, b) => a.y - b.y);
+  const body = '<div class="kfa"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(cr) + '<h1>' + th(lang, 'ov_t', { p: bdi(p), mo: esc(mo) }) + '</h1><p class="lead">' + th(lang, 'ov_lead', { p: bdi(p) }) + '</p><p class="k-small k-muted"><time datetime="' + today + '">' + esc(dT) + '</time></p></div>' +
+    kv([[nf(lang, st.k), t(lang, 'kv_ov')], [nf(lang, st.n), t(lang, 'kv_wd')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'kv_med')], [nf(lang, st.max), t(lang, 'kv_max')]]) +
+    '<h2 id="projects">' + te(lang, 'ov_h2') + '</h2><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+    '<p class="k-small k-muted">' + te(lang, 'ov_data', { d: fd(lm, lang) }) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a> · <a href="/data/bali-cases.json">bali-cases.json</a></p>' +
+    '<h2 id="method">' + te(lang, 'ov_rule_h') + '</h2><p>' + te(lang, 'ov_rule', { mo }) + '</p>' +
+    '<h2 id="cite">' + te(lang, 'ov_cite_h') + '</h2><p><code>' + te(lang, 'ov_cite', { t: title, u: url, d: dT }) + '</code></p>' +
+    '<p class="kfa-l"><a href="' + pre(lang) + '/handover/overdue/">' + te(lang, 'ov_back') + '</a>' + (yrs.length ? '<span>' + th(lang, 'ov_years', { p: bdi(p) }) + ':</span>' + yrs.map(o => '<a href="' + pre(lang) + '/handover/' + o.y + '/' + o.s + '/">' + o.y + '</a>').join('') : '') + '<a href="/m/' + slugM(g.mk) + '/">' + th(lang, 'ov_mk', { p: bdi(p) }) + '</a></p>' +
+    faqHtml(lang, Q) + replyBox(lang) + '</div></section></div>';
+  const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+    { '@type': 'Dataset', '@id': url + '#data', name: title, description: desc, url, isAccessibleForFree: true, dateModified: lm, temporalCoverage: F.ovMonth, spatialCoverage: { '@type': 'Place', name: g.mk }, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' },
+      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/promises.json' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/named.json' }] },
+    { '@type': 'ItemList', name: title, numberOfItems: st.k, itemListElement: g.L.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: r.x.n, url: PUB(lang, '/projects/' + r.x.s + '/') })) }, crumbLd(cr), faqLd(Q)];
+  return { title, desc, body, ld, path, lm };
+}
+function ovHub(F, lang) {
+  const ix = F.ix, mo = fd(F.ovMonth, lang), path = '/handover/overdue/', today = new Date().toISOString().slice(0, 10), dT = fd(today, lang);
+  const G = [...F.ovG.values()].sort((a, b) => b.L.length - a.L.length || a.mk.localeCompare(b.mk)), big = G.filter(g => g.L.length >= OV_MIN), one = G.filter(g => g.L.length < OV_MIN);
+  const title = fitT(t(lang, 'ovh_t', { mo }), t(lang, 'ovh_t2')), desc = fitD(t(lang, 'ovh_d', { d: dT, k: nf(lang, F.ovL.length), c: nf(lang, G.length) }));
+  const cr = [['Kolaboro', pre(lang) + '/'], [t(lang, 'cr_hy'), pre(lang) + '/handover/'], [title, pre(lang) + path]];
+  const cols = t(lang, 'ovh_cols');
+  const rows = big.map(g => { const st = ovStats(g); return '<tr><td data-label="' + esc(cols[0]) + '"><a href="' + pre(lang) + path + g.s + '/">' + bdi(mkName(g.mk, lang)) + '</a></td><td class="k-n" data-label="' + esc(cols[1]) + '"><b>' + nf(lang, st.k) + '</b></td><td class="k-n" data-label="' + esc(cols[2]) + '">' + nf(lang, st.n) + '</td><td class="k-n" data-label="' + esc(cols[3]) + '">' + nf(lang, st.max) + '</td></tr>'; }).join('');
+  const lm = F.ovL.map(r => lastmod(ix, r.x)).sort().pop() || F.updated, url = PUB(lang, path);
+  const body = '<div class="kfa"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(cr) + '<h1>' + te(lang, 'ovh_t', { mo }) + '</h1><p class="lead">' + te(lang, 'ovh_lead', { n: nf(lang, OV_MIN) }) + '</p><p class="k-small k-muted"><time datetime="' + today + '">' + esc(dT) + '</time></p></div>' +
+    kv([[nf(lang, F.ovL.length), t(lang, 'kv_ov')], [nf(lang, G.length), cols[0]]]) +
+    (rows ? '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' : '') +
+    (one.length ? '<h2 id="one">' + te(lang, 'ovh_one') + '</h2><ul class="fl">' + one.map(g => { const r = g.L[0]; return '<li>' + bdi(mkName(g.mk, lang)) + ': <a href="' + pre(lang) + '/projects/' + r.x.s + '/#overdue">' + bdi(r.x.n) + '</a> <small class="k-muted">' + esc(fd(r.o.d, lang)) + ' · ' + nf(lang, r.o.m) + '</small></li>'; }).join('') + '</ul>' : '') +
+    '<h2 id="method">' + te(lang, 'ov_rule_h') + '</h2><p>' + te(lang, 'ov_rule', { mo }) + '</p>' +
+    '<h2 id="cite">' + te(lang, 'ov_cite_h') + '</h2><p><code>' + te(lang, 'ov_cite', { t: title, u: url, d: dT }) + '</code></p>' +
+    '<p class="kfa-l"><a href="' + pre(lang) + '/handover/">' + te(lang, 'cr_hy') + '</a> <a href="/index/delays/">' + te(lang, 'dl_idx') + '</a> <a href="' + pre(lang) + '/rankings/transparency/">' + te(lang, 'tr_link') + '</a></p>' + replyBox(lang) + '</div></section></div>';
+  const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+    { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: lm, temporalCoverage: F.ovMonth, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/promises.json' }] },
+    { '@type': 'ItemList', name: title, numberOfItems: big.length, itemListElement: big.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.mk, url: PUB(lang, path + g.s + '/') })) }, crumbLd(cr)];
+  return { title, desc, body, ld, path, lm };
+}
+
 // every page path with its lastmod (sitemap, llms and tests)
-export function allPaths(F) {
+export function allPaths(F, sm) {   // sm (n27g): for the sitemap, without the /vs/ pairs (kept live, left out of the sitemaps)
   const out = [];
+  if (F.ovL.length) { out.push(['/handover/overdue/', F.ovL.map(r => lastmod(F.ix, r.x)).sort().pop()]); for (const g of ovPages(F)) out.push(['/handover/overdue/' + g.s + '/', g.L.map(r => lastmod(F.ix, r.x)).sort().pop()]); }
   const lmH = [...F.years.values()].map(g => groupStats(F, g.L).lm).sort().pop() || F.updated, lmA = [...F.areas.values()].map(g => groupStats(F, g.L).lm).sort().pop() || F.updated;
   out.push(['/handover/', lmH]); for (const g of F.years.values()) out.push(['/handover/' + g.y + '/' + g.s + '/', groupStats(F, g.L).lm]);
   if (F.areas.size) { out.push(['/areas/', lmA]); for (const g of F.areas.values()) out.push(['/areas/' + g.s + '/', groupStats(F, g.L).lm]); }
-  for (const pr of F.pairs.values()) out.push(['/vs/' + pr.k + '/', [lastmod(F.ix, pr.a), lastmod(F.ix, pr.b)].sort().pop()]);
+  if (!sm) for (const pr of F.pairs.values()) out.push(['/vs/' + pr.k + '/', [lastmod(F.ix, pr.a), lastmod(F.ix, pr.b)].sort().pop()]);
   return out;
 }
 export function renderPath(F, path, lang) {   // for the local test and page()
   let m;
   if (path === '/handover/') return yearHub(F, lang);
+  if (path === '/handover/overdue/') return F.ovL.length ? ovHub(F, lang) : null;
+  if ((m = /^\/handover\/overdue\/([a-z0-9-]+)\/$/.exec(path))) return ovPage(F, m[1], lang);
   if (path === '/areas/') return F.areas.size ? areaHub(F, lang) : null;
   if ((m = /^\/handover\/(20\d\d)\/([a-z0-9-]+)\/$/.exec(path))) return yearPage(F, m[1], m[2], lang);
   if ((m = /^\/areas\/([a-z0-9-]+\/[a-z0-9-]+)\/$/.exec(path))) return areaPage(F, m[1], lang);
@@ -510,6 +575,6 @@ export async function page(req, u, env, ctx, shell) {
 async function sitemap(env) {
   let F; try { F = await facetsData(env); } catch (e) { return new Response('Not ready', { status: 503 }); }
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
-  const urls = allPaths(F).flatMap(([p, lm]) => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + (lm || F.updated) + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'));
+  const urls = allPaths(F, true).flatMap(([p, lm]) => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + (lm || F.updated) + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'));
   return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }

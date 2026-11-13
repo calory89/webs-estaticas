@@ -59,7 +59,7 @@ async function named(inner) {
       for (const it of list) {
         const loc = it.loc || it.url; if (!loc || !/^https:\/\/kolaboro\.com\//.test(loc)) continue;
         const type = it.type || (/\/developers\//.test(loc) ? 'developer' : /\/projects\//.test(loc) ? 'project' : 'page');
-        const e = { loc, lastmod: it.lastmod || it.updated || null, type, id: it.id || it.public_id || it.code || null, name: it.name || it.title || null, developer: it.developer || it.developer_name || null, developer_url: it.developer_url || null, lang: it.lang || 'en', alternates: it.alternates || it.alt || null, summary: it.summary || null };
+        const e = { loc, lastmod: it.lastmod || it.updated || null, type, id: it.id || it.public_id || it.code || null, name: it.name || it.title || null, developer: it.developer || it.developer_name || null, developer_url: it.developer_url || null, lang: it.lang || 'en', alternates: it.alternates || it.alt || null, summary: it.summary || null, sm: it.sm !== false };
         v.all.push(e);
         if (type === 'project' && e.id && (e.lang === 'en' || !v.projects.has(e.id))) v.projects.set(e.id, e);
         if (type === 'developer' && e.lang === 'en') v.developers.push(e);
@@ -484,7 +484,7 @@ async function hubUrls(B) {
   return out;
 }
 function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates; lastmod = last real data change (kbx_lastmod.js)
-  const list = B.N.all.filter(e => e.type === type); const byBase = new Map(), T = B.T;
+  const list = B.N.all.filter(e => e.type === type && e.sm !== false); const byBase = new Map(), T = B.T;
   const all = T ? [...T.project.values()].sort() : [], newest = all[all.length - 1] || null;
   const tlm = (e, b) => { if (!T) return null; if (type === 'project' && e.id) return T.project.get(e.id) || null; if (type === 'developer') { const m = /^\/developers\/([^/]+)\/$/.exec(b); return m ? T.developer.get(m[1]) || null : null; } if (type === 'index') return newest; return null; };
   for (const e of list) { const p = e.loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p), b = m ? m[2] : p; if (!byBase.has(b)) byBase.set(b, []); byBase.get(b).push(Object.assign({ l: m ? m[1] : (e.lang || 'en') }, e)); }
@@ -500,7 +500,7 @@ async function sitemaps(env, B, name) {
   const anon = B.all.filter(c => !B.N.projects.has(c.id) && /^[A-Za-z0-9-]{3,20}$/.test(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: tl(B, c) }));
   const S = { ['pages-en']: pages.filter(p => p.lang === 'en') };
   for (const l of LANGS.slice(1)) S['pages-' + l] = pages.filter(p => p.lang === l);
-  Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon });
+  Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare' && h.loc === SITE + '/vs/'), markets: mk, 'projects-anonymous': [] });   // n27g: sitemap diet: the /vs/<id>-vs-<id>/ pairs and the anonymous /p/ pages stay live but are not listed (anon: kept for the count only)
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   S.images = await imageUrls(env, B, NP, ND, pages);
@@ -511,9 +511,13 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml']) {   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
-      let ok = MEMO['__ext' + x]; if (!ok || Date.now() - ok.t > 600000) { let v = null; try { const r = B.inner ? await B.inner(x) : null; if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); v = { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length }; } } catch (e) { v = null; } ok = MEMO['__ext' + x] = { t: Date.now(), v }; }
-      if (ok.v && ok.v.n) ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (ok.v.last ? '<lastmod>' + ok.v.last + '</lastmod>' : '') + '</sitemap>');
+    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml']) {   // n27e: + weekly changes per place;   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
+      // n27g: listed always. The check by fetching each one (up to 5,000 URLs to build) did not finish inside this request, so since
+      // batch 26 none of the four reached the index; a lastmod read on an earlier request is used when we have one, else the data date
+      let ok = MEMO['__ext' + x];
+      if ((!ok || Date.now() - ok.t > 600000) && B.inner && B.ctx && B.ctx.waitUntil) { MEMO['__ext' + x] = ok = { t: Date.now(), v: ok ? ok.v : null }; B.ctx.waitUntil((async () => { try { const r = await B.inner(x); if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); MEMO['__ext' + x] = { t: Date.now(), v: { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length } }; } } catch (e) {} })()); }
+      const lmx = (ok && ok.v && ok.v.last) || String(up || '').slice(0, 10);
+      ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (/^\d{4}-\d{2}-\d{2}$/.test(lmx) ? '<lastmod>' + lmx + '</lastmod>' : '') + '</sitemap>');
     }
     return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + keys.map(k => '<sitemap><loc>' + SITE + '/sitemaps/' + k + '.xml</loc><lastmod>' + last(k) + '</lastmod></sitemap>').concat(ext).join('\n') + '\n</sitemapindex>\n', { headers: XHDR });
   }
@@ -606,7 +610,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v1/' + env.CF_PAGES_COMMIT_SHA + p) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
-  if (p === '/sitemap_index.xml') { B.inner = inner; return sitemaps(env, B, 'index'); }
+  if (p === '/sitemap_index.xml') { B.inner = inner; B.ctx = ctx; return sitemaps(env, B, 'index'); }
   let m = /^\/sitemaps\/([a-z0-9-]+)\.xml$/.exec(p); if (m) return sitemaps(env, B, m[1]);
   if (p === '/llms.txt' || p === '/llms-full.txt') return llms(env, B, p === '/llms-full.txt');
   if ((m = /^\/press\/delivery-index\/(\d{4}-\d{2})\.csv$/.exec(p))) { const c = diCsv(B, m[1]); return c ? new Response(c, { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'inline; filename="kolaboro-delivery-index-' + m[1] + '.csv"', 'link': '<https://kolaboro.com/press/delivery-index/' + m[1] + '/>; rel="describedby"', 'cache-control': 'public, max-age=86400' } }) : new Response('Not found', { status: 404 }); }

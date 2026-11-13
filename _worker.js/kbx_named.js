@@ -16,7 +16,7 @@
 // Legal rules: facts only, each with its source link; no opinion words and no verdicts about a named company in any language;
 // no Review or AggregateRating schema (no verified reviews exist yet); private individuals are never named (named.py drops them).
 import { T, LANGS, LOCALE } from './kbx_named_i18n.js';
-import { hparse, hdisp, hnote, coName, mkName, placeName, CO_ISO2 } from './kbx_hdate.js';   // n25t: handover dates in words, localized
+import { hparse, hdisp, hnote, hkey, coName, mkName, placeName, CO_ISO2 } from './kbx_hdate.js';   // n25t: handover dates in words, localized
 import { rpc } from './kolaboro.js';
 import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';
 import { nextStep, NX_CSS, NX_JS, filterBar, KF_CSS, KF_JS, t26 } from './kbx_u26.js';   // n26u: "What next" block with compare, save, alert, ask and share; filters and sorting on /projects/   // batch 9 (b9a): watch button, instant search, feeds (UI parts; endpoints in kbx_follow.js)
@@ -36,7 +36,7 @@ import { landData, landHtml, histHtml, landToc, landHeading, histToc, histHeadin
 import { calHtml, CAL_CSS } from './kbx_cal.js';   // batch 21 (n21d): where it should be by now, promised dates as a calendar file
 import { aroundData, aroundPin, aroundHtml, climateHtml, aroundToc, aroundHeading, climateToc, climateHeading } from './kbx_around.js';   // batch 21 (n21b): around the site and distance claims (#around), climate at the plot (#climate)
 import { trProject } from './kbx_tr.js';   // batch 23 (n23): rank of the project in the transparency rankings of its island or city; n24s: score, ranks and checklist in one read
-import { q as qa, qaTitle, qaDesc, words, QA_CSS } from './kbx_named_qa.js';   // batch 24 (n24s): quick answer, question headings, search titles
+import { q as qa, qaTitle, qaDesc, words, QA_CSS, months } from './kbx_named_qa.js';   // batch 24 (n24s): quick answer, question headings, search titles
 import { facetsData, projFacets, devFacets, facetT } from './kbx_facets.js';   // batch 26 (n26s): what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual
 import { leadMap, leadify, dlLine, devDash } from './kbx_n27lead.js';   // batch 27 (n27a): dated, sourced lead line per section; record downloads
 import { secZ, lightHtml, checklistHtml, Z_CSS, U27V, t27 } from './kbx_u27.js';   // batch 27 (n27u): two-level project page, six-check light, checklist, one cached client script
@@ -45,7 +45,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v72';   // v72: "did you buy here?" in the quick answer, developer reply under each buyer report, moderation link (n27t); v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
+const CACHE_V = 'named-v73';   // v73: overdue notice, updated date, titles with the year, shorter repeated notes (n27g); v72: "did you buy here?" in the quick answer, developer reply under each buyer report, moderation link (n27t); v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
 //   // v64: market source label is the full /m/<market>/ path, not the 404 path kolaboro.com/m (n25e); v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
@@ -208,6 +208,22 @@ function handoverOf(ix, x) {
   const c = ix.caseBy.get(x.id); if (c && c.done) return { d: String(c.done), p: null };
   return null;
 }
+// n27g (batch 27): an overdue handover, computed when the page is built. The handover date on record (the one the page shows) ended
+// before the current month and the project is not recorded as completed; a promise recorded as kept is left out (the event was shown
+// done). Months count from the last month of the period ("Q3 2026" ends in September). The same rule feeds the notice on project
+// pages, the quick answer, the titles and descriptions, and the /handover/overdue/ reports (kbx_facets.js).
+export function overdueOf(ix, x, now) {
+  const ho = handoverOf(ix, x); if (!ho) return null;
+  const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st;
+  if (st === 'completed' || (ho.p && ho.p.st === 'kept')) return null;
+  const k = hkey(ho.d); if (!k) return null;
+  const d = now || new Date(), [y, m] = k.split('-').map(Number), n = d.getUTCFullYear() * 12 + d.getUTCMonth() + 1 - (y * 12 + m);
+  return n >= 1 ? { m: n, d: ho.d, end: k, st } : null;
+}
+// overdue projects per market (for the link to /handover/overdue/<place>/, which exists from 2 projects)
+const OVM = new WeakMap();
+export function overdueByMarket(ix) { let M = OVM.get(ix); if (!M) { M = new Map(); for (const x of ix.P) if (overdueOf(ix, x)) M.set(x.mk, (M.get(x.mk) || 0) + 1); OVM.set(ix, M); } return M; }
+export const OV_MIN = 2;
 function lastmod(ix, x) {
   const c = ix.caseBy.get(x.id) || {}, f = ix.find[x.id] || {};
   const ds = [iso(c.checked), iso(f.checked), iso(x.sealed), iso((c.fp || {}).date)].filter(Boolean).sort();
@@ -297,12 +313,12 @@ function qaSentences(ix, x, lang, tp, o) {
   const ho = handoverOf(ix, x), hand = (ix.prom[x.id] || []).find(p => p.k === 'handover'), name = x.n, checked = (o && o.checked) || lastmod(ix, x), rvN = o ? o.rvN : undefined;
   const place0 = [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), place2 = [x.mk, x.co !== x.mk ? x.co : null].filter(Boolean).join(', ');
   const coL = (lg, p) => placeName(p, lg);   // n25t: country (and a market named like a country) in the page language
-  const rk = tp ? (tp.ranks.find(r => r.ranked) || null) : null;
+  const rk = tp ? (tp.ranks.find(r => r.ranked) || null) : null, ovq = overdueOf(ix, x);   // n27g: overdue computed now, not at build time
   const parts = (lg, pl) => {
     const place = coL(lg, pl || place0), st = c.stage || x.st, stg = tr(lg, stageKey(st)), unk = stageKey(st) === 'st_unknown';
     return [['what', unk ? qa(lg, x.dv ? 'qa_w0d' : 'qa_w0', { n: name, place, dev: x.dv }) : tr(lg, x.dv ? 'g_listed_dev' : 'g_listed', { n: name, stage: stg, place, dev: x.dv })],
       ['h', ho ? tr(lg, 'g_h', { h: fd(ho.d, lg) }) : tr(lg, 'g_h_none')],
-      ['mv', c.overdue ? tr(lg, ho ? 'g_over2' : 'g_over', { m: c.overdue }) : hand && hand.mv ? tr(lg, 'g_moved', { k: hand.mv, mm: hand.mm }) : ''],
+      ['mv', ovq ? tr(lg, 'g_over2', { m: ovq.m }) : hand && hand.mv ? tr(lg, 'g_moved', { k: hand.mv, mm: hand.mm }) : ''],
       ['pn', qa(lg, x.pn ? 'qa_pn1' : 'qa_pn0')],
       ['tr', tp ? (rk ? qa(lg, 'qa_tr', { s: num(tp.score, lg), r: num(rk.r, lg), m: num(rk.m, lg), p: rk.p }) : qa(lg, 'qa_tr1', { s: num(tp.score, lg) })) : ''],
       ['rv', rvd ? (cN ? qa(lg, 'qa_cl', { v: num(cl.verified || 0, lg), c: num(cN, lg) }) : '') : tr(lg, 'nr_badge', { d: fd(x.ad || c.checked, lg) }) + (lg === 'zh' ? '。' : '.')],
@@ -323,6 +339,7 @@ function projectPage(ix, x, lang, extra) {
   const name = x.n, place = placeName([x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), lang);   // n25t: country localized
   const stage = tr(lang, stageKey(c.stage || x.st)), ho = handoverOf(ix, x), checked = lastmod(ix, x);
   const page = x.url, pr = (ix.prom[x.id] || []).slice(0, 12), hand = pr.find(p => p.k === 'handover');
+  const ov = overdueOf(ix, x), ovN = ov ? ov.m : 0;   // n27g: months since the handover date on record passed (null: not overdue)
   const cN = cl.verified + cl.unverified + cl.contradicted, rvd = reviewed(c), nrB = tr(lang, 'nr_badge', { d: fd(x.ad || c.checked, lang) });
   const canon = pUrl(lang, x.s), devPage = x.dvs && ix.devs.has(x.dvs) ? dUrl(lang, x.dvs) : null, rec = '/api/open/projects/' + encodeURIComponent(x.id);
   // s15a: the description answers the search ("<project> reviews / opiniones / avis ...") with our data, in the page's language
@@ -332,15 +349,17 @@ function projectPage(ix, x, lang, extra) {
   const tp = extra.trp || null, rk = tp ? (tp.ranks.find(r => r.ranked) || null) : null, tpS = tp ? num(tp.score, lang) : null;
   const place2 = placeName([x.mk, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), lang), bdq = t => bidi(lang, esc(t), [name]);
   // n24s: search title under 60 characters and description under 155, with the searched word and the most clicked fact
-  const title = qaTitle(lang, { n: name, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, dv: x.dv });
-  const desc = dot(qaDesc(lang, { n: name, by: dv0.by, place, place2, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, s: tp ? tpS : null, rv: rvd, d: fd(checked, lang) }));
+  // n27g: with the year, an overdue handover where it fits, and the description opening with the overdue date, the moves or no permit
+  const nfL = v => num(v, lang), yNow = new Date().getUTCFullYear();
+  const title = qaTitle(lang, { n: name, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, dv: x.dv, y: yNow, ov: ovN, nf: nfL });
+  const desc = dot(qaDesc(lang, { n: name, by: dv0.by, place, place2, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, s: tp ? tpS : null, rv: rvd, d: fd(checked, lang), ov: ovN, mv: hand && hand.mv ? hand.mv : 0, nf: nfL }));
 
   // in short (answer-ready summary)
   const g = [];
   if (!rvd) g.push('<li class="knote">' + esc(nrB) + '. ' + esc(tr(lang, 'nr_txt')) + '</li>');
   g.push(fact(esc(x.dv ? tr(lang, 'g_listed_dev', { n: name, stage, place, dev: x.dv }) : tr(lang, 'g_listed', { n: name, stage, place })), page));
   g.push(fact(esc(ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none')), page));
-  if (c.overdue) g.push(fact(esc(tr(lang, ho ? 'g_over2' : 'g_over', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')));   // n19f: next to the date it is about
+  if (ovN) g.push(fact(esc(tr(lang, 'g_over2', { m: ovN })), '/promises/', tr(lang, 'm_promises')));   // n19f: next to the date it is about
   else if (hand && hand.mv) g.push(fact(esc(tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm })), '/promises/', tr(lang, 'm_promises')));
   g.push(fact(esc(x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none')), x.du || page));
   if (cN && rvd) g.push(fact(esc(tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted })), rec, tr(lang, 'k_record')));
@@ -377,7 +396,7 @@ function projectPage(ix, x, lang, extra) {
   // n24s: "How much does it cost?": prices and payment plan as published, the date of the copy we read, "not published" when missing
   const readD = fd(x.sealed || x.ad || checked, lang);
   const costTop = fact(esc(qa(lang, 'c_read', { d: readD })), page) + (fx.price_min ? '' : '<li>' + esc(qa(lang, 'c_price0')) + '</li>') + (fx.payment_plan ? '' : '<li>' + esc(qa(lang, 'c_plan0')) + '</li>');
-  const promised = '<p class="ki">' + esc(tr(lang, 'promise_intro')) + '</p><ul class="fl">' + costTop +
+  const promised = '<ul class="fl">' + costTop +   // n27g: the generic intro line was dropped (repeated on every page; each fact carries its source)
     F.filter(f => cleanOk(f[1])).map(f => fact('<b>' + esc(f[0]) + ':</b> ' + (f[2] != null ? f[2] : en(f[1])), page)).join('') +
     (x.dl || []).filter(cleanOk).map(t => fact(en(t), x.du || page)).join('') + '</ul>';
 
@@ -393,7 +412,7 @@ function projectPage(ix, x, lang, extra) {
   const h0 = hand && ((hand.hist || []).find(h => h && h.d) || null);
   const whenTop = ho ? fact(esc(hand && hand.mv ? qa(lang, 'w_sum', { h: fd(ho.d, lang), a: fd(h0 && h0.d !== ho.d ? h0.d : (fx.original_handover || ho.d), lang), k: num(hand.mv, lang) }) : qa(lang, 'w_sum0', { h: fd(ho.d, lang) })), hand ? '/promises/' : page, hand ? tr(lang, 'm_promises') : undefined) : '<li>' + esc(qa(lang, 'w_none')) + '</li>';
   const delivery = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises/', tr(lang, 'm_promises')) }) + '</p><ul class="fl">' + whenTop + (prLi || '<li>' + esc(tr(lang, 'no_promises')) + '</li>') +
-    (c.overdue ? fact(esc(tr(lang, 'over_line', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')) : '') +
+    (ovN ? fact(esc(tr(lang, 'over_line', { m: ovN })), '/promises/', tr(lang, 'm_promises')) : '') +
     (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>' + (extra.fc ? fcProjectHtml(extra.fc, x, lang, extra.fdg) : '')
     + (h => h ? '<style id="kcal-css">' + CAL_CSS + '</style>' + h : '')(calHtml(x, ix.prom[x.id], lang, k => tr(lang, 'pk_' + k), d => fd(d, lang)));   // n21d
 
@@ -499,19 +518,19 @@ function projectPage(ix, x, lang, extra) {
 
   // FAQ built from the data above
   const factsTxt = [rvd ? '' : nrB + '.', x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), cN && rvd ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '', ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'),
-    c.overdue ? tr(lang, ho ? 'g_over2' : 'g_over', { m: c.overdue }) : '', FL.length ? FL.map(f => tr(lang, 'rc_' + f[0])).join('; ') + '.' : tr(lang, 'no_reports')].filter(Boolean).join(' ');
+    ovN ? tr(lang, 'g_over2', { m: ovN }) : '', FL.length ? FL.map(f => tr(lang, 'rc_' + f[0])).join('; ') + '.' : tr(lang, 'no_reports')].filter(Boolean).join(' ');
   // n24s: the checklist count and the transparency score join the "is it legit" answer (facts, no verdict)
   const tpYes = tp ? tp.items.filter(i => i.st === 'yes').length : 0, tpAll = tp ? tp.items.filter(i => i.st !== 'nc').length : 0;
   const trLine = tp ? (rk ? qa(lang, 'qa_tr', { s: tpS, r: num(rk.r, lang), m: num(rk.m, lang), p: rk.p }) : qa(lang, 'qa_tr1', { s: tpS })) : '';
   const factsTx2 = factsTxt + (tp ? ' ' + qa(lang, 'lg_sum', { a: num(tpYes, lang), b: num(tpAll, lang) }) + ' ' + trLine : '');
   const FAQ = [[tr(lang, 'q_legit', { n: name }), tr(lang, 'a_legit', { facts: factsTx2 })],
-    [qa(lang, 'h_when', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (c.overdue ? ' ' + tr(lang, 'g_over2', { m: c.overdue }) : '') : tr(lang, 'a_deliv_none')],
+    [qa(lang, 'h_when', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (ovN ? ' ' + tr(lang, 'g_over2', { m: ovN }) : '') : tr(lang, 'a_deliv_none')],
     [qa(lang, 'h_who', { n: name }), x.dv ? tr(lang, 'a_dev', { dev: x.dv }) + (devN > 1 ? ' ' + qa(lang, 'who_k', { dev: x.dv, k: num(devN, lang) }) : '') : tr(lang, 'a_dev_none')],
     [tr(lang, 'q_permit', { n: name }), vf.permit === 'registry' ? tr(lang, 'a_permit_reg') : x.pn ? tr(lang, 'a_permit_pn', { pn: x.pn }) : tr(lang, 'a_permit_none')],
     [tr(lang, 'q_rev2', { n: name }), rv.approved_total ? tr(lang, 'rev_some', { k: rv.approved_total }) : tr(lang, 'a_rev')]];
   // s15a: more of the questions people search, each answered only from the facts on this page
   FAQ.splice(1, 0, [qa(lang, 'h_where', { n: name }), tr(lang, 'a_where', { n: name, place }) + ' ' + pinLine]);
-  FAQ.splice(3, 0, [tr(lang, 'q_delay', { n: name }), c.overdue ? tr(lang, 'g_over', { m: c.overdue }) + (ho ? ' ' + tr(lang, 'a_delay_latest', { h: fd(ho.d, lang) }) : '')
+  FAQ.splice(3, 0, [tr(lang, 'q_delay', { n: name }), ovN ? tr(lang, 'g_over', { m: ovN }) + (ho ? ' ' + tr(lang, 'a_delay_latest', { h: fd(ho.d, lang) }) : '')
     : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) + ' ' + tr(lang, 'a_delay_latest', { h: fd(hand.d, lang) })
     : hand && hand.st === 'pending' ? tr(lang, 'a_delay_ahead', { h: fd(hand.d, lang) }) : hand ? tr(lang, 'a_delay_rec', { h: fd(hand.d, lang), st: tr(lang, 'ps_' + hand.st) }) : ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'a_deliv_none')]);
   // n24s: the price question is always answered ("not published" when no price), the payment plan when one is published
@@ -540,7 +559,14 @@ function projectPage(ix, x, lang, extra) {
     (ph && ph.n > 1 ? '<span>' + esc(tr(lang, 'upd_ver', { n: ph.n, a: fd(ph.first, lang), c: ph.changed })) + '</span>' : '') + (ph && ph.n ? '<span><a href="' + chg + '">' + esc(tr(lang, 'upd_log')) + '</a></span>' : '') +
     '<span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span>' +
     '<span><a class="kbought" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '" data-ev="seo_bought">' + esc(tt27(lang, 'np_bought')) + '</a></span>';   // n27t: item 22
-  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + bidi(lang, esc(dot(aS.join(' '))), [name, place, x.dv || '']) + '</p><p class="kans-u">' + fresh + '</p></div>';
+  // n27g (batch 27): the overdue handover in a dated notice above the short answer, with its source and the place's overdue report;
+  // "Updated <date>" under the title (the date of the last real data change, replaced after seoLd, see updLine)
+  const ovP = ov ? overdueByMarket(ix).get(x.mk) || 0 : 0, today = new Date().toISOString().slice(0, 10);
+  const ovHtml = ov ? '<div class="kovd" id="overdue" role="note"><p><b>' + esc(qa(lang, 'ov_h')) + '</b> ' + bidi(lang, esc(qa(lang, 'ov_t', { h: fd(ov.d, lang), mm: months(lang, ov.m, lang === 'de' ? 'dat' : 'nom', nfL), d: fd(today, lang) })) +
+    (stageKey(ov.st) !== 'st_unknown' ? ' ' + esc(qa(lang, 'ov_st', { c: fd(checked, lang), st: tr(lang, stageKey(ov.st)) })) : ''), [name]) + srcA(page) + ' <a class="kovd-l" href="' + pre(lang) + '/handover/overdue/' + (ovP >= OV_MIN ? slugA(x.mk) + '/' : '') + '">' +
+    esc(ovP >= OV_MIN ? qa(lang, 'ov_more', { p: mkName(x.mk, lang) }) : qa(lang, 'ov_all')) + '</a></p></div>' : '';
+  const updHtml = '<p class="kupd"><time datetime="' + esc(checked) + '">' + esc(qa(lang, 'upd_on', { d: fd(checked, lang) })) + '</time></p>';
+  const answer = ovHtml + '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + bidi(lang, esc(dot(aS.join(' '))), [name, place, x.dv || '']) + '</p><p class="kans-u">' + fresh + '</p></div>';
 
   // s15a: related pages (same developer, same area, similar, side-by-side, market and country hubs)
   // n24s: six related projects for every page (thin "not yet reviewed" pages included): same developer, same market, same handover
@@ -568,7 +594,7 @@ function projectPage(ix, x, lang, extra) {
   // n27u: the six-check light under the quick answer (data-u27 carries the price and currency for the currency selector and calculator)
   const light = lightHtml(lang, { tp, c, pn: x.pn, ho, ev: x.ev, ids: toc.map(t => t[0]), data: Object.assign({ id: x.id }, fx.price_min > 0 && fx.currency ? { p: +fx.price_min, p2: fx.price_max > fx.price_min ? +fx.price_max : undefined, c: String(fx.currency).toUpperCase() } : {}) });
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, -1).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + bidi(lang, esc(tr(lang, 'lead_p', { n: name, place })), [name, place]) + '</p>' + answer + light + '<details class="kz-kf"><summary>' + esc(t27(lang, 'kf_h')) + '</summary>' + keys + '</details>' + (extra.trb || '') + watchBox(lang, x.id, name, '/projects/' + x.s + '/', { score: c.score || 0, vscore: c.vscore || 0, stage: c.stage || null, overdue: c.overdue || 0, claims: { verified: cl.verified || 0, unverified: cl.unverified || 0, contradicted: cl.contradicted || 0 }, flags: (c.flags || []).length, history: (c.history || []).length }) + (extra.coh || '') + '</div></section>' +
+    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1>' + updHtml + '<p class="lead">' + bidi(lang, esc(tr(lang, 'lead_p', { n: name, place })), [name, place]) + '</p>' + answer + light + '<details class="kz-kf"><summary>' + esc(t27(lang, 'kf_h')) + '</summary>' + keys + '</details>' + (extra.trb || '') + watchBox(lang, x.id, name, '/projects/' + x.s + '/', { score: c.score || 0, vscore: c.vscore || 0, stage: c.stage || null, overdue: c.overdue || 0, claims: { verified: cl.verified || 0, unverified: cl.unverified || 0, contradicted: cl.contradicted || 0 }, flags: (c.flags || []).length, history: (c.history || []).length }) + (extra.coh || '') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k, lbl]) => '<a href="#' + i + '">' + esc(lbl || (k ? tr(lang, k) : satToc(lang))) + '</a>').join('') + '</nav>' +
     sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + bidi(lang, g.join(''), [name, place, x.dv || '']) + '</ul>') + (FX ? sec('changed', esc(FX.h.changed), FX.changed) : '') + (legitSec ? sec('legit', bdq(qa(lang, 'h_legit', { n: name })), legitSec) : '') + sec('promise', bdq(qa(lang, 'h_cost', { n: name })), bidi(lang, promised, [name])) + (FX ? sec('buycost', bdq(FX.h.cost), FX.cost) : '') + (priceH ? sec('prices', esc(paperHeading(lang, 'ph_h')), '<style>' + PAPER_CSS + '</style>' + priceH) : '') + (moneyH ? sec('money', esc(moneyHeading(lang)), moneyH) : '') + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', bdq(qa(lang, 'h_when', { n: name })), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') + (seeSec ? sec('ground', esc(seeHeading(lang)), seeSec) : '') + (histH ? sec('maphist', esc(histHeading(lang)), histH) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + (planH ? sec('planning', esc(paperHeading(lang, 'pl_h')), (priceH ? '' : '<style>' + PAPER_CSS + '</style>') + planH) : '') + (landH ? sec('land', esc(landHeading(lang)), landH) : '') + sec('where', bdq(qa(lang, 'h_where', { n: name })), bidi(lang, whereSec, [name, place, x.mk])) + (aroundH ? sec('around', esc(aroundHeading(lang)), aroundH) : '') + (climateH ? sec('climate', esc(climateHeading(lang)), climateH) : '') + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
@@ -595,7 +621,7 @@ function projectPage(ix, x, lang, extra) {
       distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + rec }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/v1/projects/' + x.s }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/api/v1/projects/' + x.s + '.csv' }] },
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
     { '@type': 'FAQPage', '@id': canon + '#faq', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] };
-  return { title, desc, canon, body: leadify(body, leadMap(ix, x, lang, tp, checked, { esc, fd, host, okHttp, fixU, handoverOf, reviewed })), ld, lastmod: checked, alt: l => pUrl(l, x.s), feed: { path: '/projects/' + x.s + '/', name }, images: imgs };
+  return { title, desc, canon, body: leadify(body, leadMap(ix, x, lang, tp, checked, { esc, fd, host, okHttp, fixU, handoverOf, reviewed })), ld, lastmod: checked, alt: l => pUrl(l, x.s), feed: { path: '/projects/' + x.s + '/', name }, images: imgs, upd: { html: updHtml, lang } };
 }
 
 // ------------------------------------------------------------------------------------------------ developer page
@@ -623,7 +649,9 @@ function devPage(ix, dv, lang, extra) {
   const pn = L.filter(x => x.pn).length, P = L.flatMap(x => ix.prom[x.id] || []);
   const cnt = st => P.filter(p => p.st === st).length, moved = P.filter(p => p.mv).length;
   // n25t: developer titles were 70 to 95 characters; the longest form that fits 60 (searched words first, brand last)
-  const title = [tr(lang, 'title_d', { dev: name }), tr(lang, 'title_d2', { dev: name }) + ' | Kolaboro', tr(lang, 'title_d2', { dev: name }), qa(lang, 'b', { n: name }) + ' | Kolaboro', qa(lang, 'b', { n: name })].find(t => [...t].length <= 60) || qa(lang, 'b', { n: name });
+  // n27g (batch 27): the searched word and the year first ("<developer> reviews 2026: projects, permits, delivery record")
+  const yD = new Date().getUTCFullYear(), tdy = k => qa(lang, k, { dev: name, y: yD });
+  const title = [tdy('td_y') + ' | Kolaboro', tdy('td_y'), tdy('td_y2') + ' | Kolaboro', tdy('td_y2'), qa(lang, 'b_y', { n: name, y: yD }) + ' | Kolaboro', tr(lang, 'title_d', { dev: name }), tr(lang, 'title_d2', { dev: name }) + ' | Kolaboro', tr(lang, 'title_d2', { dev: name }), qa(lang, 'b', { n: name }) + ' | Kolaboro', qa(lang, 'b', { n: name })].find(t => [...t].length <= 60) || ((b, a) => a.length <= 60 ? b : a.slice(0, 60).join('').replace(/\s+\S*$/, ''))(qa(lang, 'b', { n: name }), [...qa(lang, 'b', { n: name })]);   // n27g: a 60+ character name is cut at a word
   // n25t: markets in the page language; the description stays within 155 characters (fewer markets named, then whole sentences)
   const dsc = n => dot(tr(lang, 'desc_d2', { dev: name, k: L.length, mks: mks.slice(0, n).map(m => mkName(m, lang)).join(', ') + (mks.length > n ? ' +' + (mks.length - n) : ''), pn, p: P.length, mv: moved, d: fd(checked, lang) }));
   let desc = dsc(mks.length); for (const n of [3, 2, 1]) if ([...desc].length > 155 && mks.length > n) desc = dsc(n);
@@ -633,7 +661,7 @@ function devPage(ix, dv, lang, extra) {
   const g = [fact(esc(tr(lang, 'g_d', { k: L.length, dev: name, mks: mks.map(m => mkName(m, lang)).join(', ') })), first.url), fact(esc(tr(lang, 'g_d_pn', { pn, k: L.length })), first.du || first.url)];
   if (P.length) g.push(fact(esc(tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') })), '/promises/', tr(lang, 'm_promises')));
   if (FD) g.push(fact(FD.active, '/data/on-time.json', 'kolaboro.com/data/on-time.json'));
-  const rows = L.map(x => { const c = ix.caseBy.get(x.id), h = handoverOf(ix, x); return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a></td><td>' + esc(mkName(x.mk, lang)) + '</td><td>' + esc(tr(lang, stageKey(c.stage))) + '</td><td>' + esc(h ? fd(h.d, lang) : '-') + (c.overdue ? ' <span class="kpill p-broken">+' + c.overdue + '</span>' : '') + '</td><td>' + esc(x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub')) + '</td><td>' + (reviewed(c) ? c.score + '/' + c.max : esc(tr(lang, 'nr_short'))) + '</td></tr>'; }).join('');
+  const rows = L.map(x => { const c = ix.caseBy.get(x.id), h = handoverOf(ix, x); return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a></td><td>' + esc(mkName(x.mk, lang)) + '</td><td>' + esc(tr(lang, stageKey(c.stage))) + '</td><td>' + esc(h ? fd(h.d, lang) : '-') + ((o => o ? ' <span class="kpill p-broken">+' + o.m + '</span>' : '')(overdueOf(ix, x))) + '</td><td>' + esc(x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub')) + '</td><td>' + (reviewed(c) ? c.score + '/' + c.max : esc(tr(lang, 'nr_short'))) + '</td></tr>'; }).join('');
   const projects = '<div class="tw"><table><thead><tr><th>' + ['th_project', 'th_market', 'th_stage', 'th_hand', 'th_permit', 'th_checks'].map(k => esc(tr(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   const recLi = L.flatMap(x => (ix.prom[x.id] || []).filter(p => p.k === 'handover' || p.st === 'broken' || p.mv).slice(0, 3).map(p => fact('<a href="' + pre(lang) + '/projects/' + x.s + '/#delivery">' + esc(x.n) + '</a>: ' + esc(tr(lang, 'pk_' + p.k)) + ' ' + esc(fd(p.d, lang)) + ' <span class="kpill p-' + esc(p.st) + '">' + esc(tr(lang, 'ps_' + p.st)) + '</span>' + (p.mv ? ' · ' + esc(tr(lang, 'pr_moved', { k: p.mv, mm: p.mm })) : ''), x.url))).slice(0, 30).join('');
   const record = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises/', tr(lang, 'm_promises')) }) + '</p><ul class="fl">' + (recLi || '<li>' + esc(tr(lang, 'drec_none')) + '</li>') + '</ul>';
@@ -740,6 +768,7 @@ const D12CSS = '<style id="kd12b-css">' +
   '.kmkt summary{list-style:none;display:flex;align-items:center;gap:8px}.kmkt summary::-webkit-details-marker{display:none}.kmkt summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kmkt[open] summary::after{transform:rotate(-135deg) translateY(-2px)}.kmkt a{border-radius:var(--k-r-md,10px)}' +
   '.kans-u .kbought{font-weight:700}.kr-rep{margin:-4px 0 14px;padding:8px 12px;border-inline-start:3px solid var(--k-sea,#155C75)}' +
   '.kans{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);background:var(--card,var(--paper));max-width:80ch}.kans p{margin:0}.kans-t{font-size:1.04rem;line-height:1.55;text-wrap:pretty}.kans-l{display:block;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:4px}.kans-u{margin-top:10px!important;font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 18px}.kans-u a{color:var(--ink-2);font-weight:600}' +
+  '.kupd{margin:6px 0 0;font-size:.86rem;color:var(--muted)}.kovd{margin:18px 0 0;padding:14px 18px;border:1px solid var(--k-warn,#8A5300);border-inline-start-width:4px;border-radius:var(--k-r-lg,14px);background:var(--k-warn-bg,#FBF0D8);color:var(--ink);max-width:80ch}.kovd p{margin:0;line-height:1.55}.kovd b{display:block;color:var(--k-warn,#8A5300);font-size:.9rem}.kovd-l{font-weight:600;margin-inline-start:8px}' +   // n27g
   '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
 
 // n20p: sections far from the screen are not laid out or painted until the reader gets near them (a project page has 20 to 25
@@ -901,6 +930,7 @@ export async function handle(req, u, env, ctx, shell) {
   const t1 = Date.now(), shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {});   // the page shell loads while the page is rendered
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (pg && key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
+  updLine(pg);
   const t2 = Date.now(), sh = await shP;
   if (!pg) {
     const nf = { title: tr(lang, 'nf_h') + ' | Kolaboro', desc: tr(lang, 'nf_p'), canon: ORIGIN + p, noindex: true, body: (await import('./kbx_404.js')).helpBody(lang, tr(lang, 'nf_h'), tr(lang, 'nf_p')), ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: tr(lang, 'nf_h') }, lastmod: '', alt: l => ORIGIN + pre(l) + '/projects/' };
@@ -909,6 +939,12 @@ export async function handle(req, u, env, ctx, shell) {
   const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
   if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
+}
+// n27g: "Updated <date>" under the title shows the date of the last real data change (seoLd sets pg.lastmod, the JSON-LD dateModified)
+function updLine(pg) {
+  if (!pg || !pg.upd || !pg.lastmod || !iso(pg.lastmod)) return;
+  const d = iso(pg.lastmod), l = pg.upd.lang;
+  pg.body = pg.body.replace(pg.upd.html, '<p class="kupd"><time datetime="' + d + '">' + esc(qa(l, 'upd_on', { d: fd(d, l) })) + '</time></p>');
 }
 // the parsed files the lastmod date of one page is computed from (all already in memory after a render); null if one is missing
 async function lmFiles(ix, env) {
@@ -932,11 +968,20 @@ async function refresh(copy, fk, p, kind, key, lang, env, ctx, shell) {
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (!pg) return caches.default.delete(fk);   // the project or developer is no longer published
   if (key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
+  updLine(pg);
   if (pg.nocache) return;
   const html = await assemble(pg, lang, await shell(pre(lang) + '/how-we-score/'));
   return fastPut(fk, html, ver, new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString());
 }
 
+// n27g (batch 27): sitemap diet. Every page stays live and indexable; the sitemaps list a project page when it holds at least 2 of 6
+// basic facts (developer named, handover date, permit or licence number, price, area or pin, the developer's own page rather than a
+// listing portal), and a developer page when the developer has 2 or more tracked projects (a one-project developer page repeats the
+// project page). sm=false entries stay in this list for every other use.
+function facts6(ix, x) {
+  const fx = x.fx || {};
+  return [!!x.dv, !!handoverOf(ix, x), !!x.pn, !!fx.price_min, !!(x.ar && x.ar !== x.mk) || (typeof fx.lat === 'number' && typeof fx.lng === 'number'), okHttp(x.url) && !isListing(x.url)].filter(Boolean).length;
+}
 async function urls(env) {
   let ix; try { ix = await data(env); } catch (e) { return jsonOut({ error: 'data' }, 503, { 'cache-control': 'no-store' }); }
   const alt = f => Object.fromEntries(LANGS.map(l => [l, f(l)]).concat([['x-default', f('en')]]));
@@ -946,9 +991,9 @@ async function urls(env) {
   let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
   // n24s: the English quick answer of each project (as on the page, without the buyer-review sentence) for llms.txt and answer engines
   const tps = await Promise.all(ix.P.map(x => trProject(env, x.id, 'en').catch(() => null)));
-  ix.P.forEach((x, i) => add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)) }, lastmod(ix, x), { summary: quickAnswer(ix, x, 'en', tps[i]), images: projImages(x, 'en', pUrl('en', x.s), PIN_HOLD[x.id] ? null : sat).map(i => ({ loc: i.contentUrl, title: i.name, caption: i.caption })), added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co  }));
-  for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byId.get(i))).sort(); add('developer', l => dUrl(l, d.s), {}, lm[lm.length - 1], { name: d.n, projects: d.ids }); }
-  return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: 'One entry per URL and language. English project entries carry images (share card and, where we have one, the monthly satellite strip) with captions for an image sitemap. The English entry carries the hreflang alternates and the names; the others share its path under /<lang>/. reviewed=false: not yet reviewed by Kolaboro, show facts only, no score, checks or label.',
+  ix.P.forEach((x, i) => add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)), facts: facts6(ix, x), sm: facts6(ix, x) >= 2 }, lastmod(ix, x), { summary: quickAnswer(ix, x, 'en', tps[i]), images: projImages(x, 'en', pUrl('en', x.s), PIN_HOLD[x.id] ? null : sat).map(i => ({ loc: i.contentUrl, title: i.name, caption: i.caption })), added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co  }));
+  for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byId.get(i))).sort(); add('developer', l => dUrl(l, d.s), { sm: d.ids.length >= 2 }, lm[lm.length - 1], { name: d.n, projects: d.ids }); }
+  return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: 'One entry per URL and language. sm=false: kept live and indexable, left out of the XML sitemaps (fewer than 2 of 6 basic facts, or a developer with one tracked project). English project entries carry images (share card and, where we have one, the monthly satellite strip) with captions for an image sitemap. The English entry carries the hreflang alternates and the names; the others share its path under /<lang>/. reviewed=false: not yet reviewed by Kolaboro, show facts only, no score, checks or label.',
     counts: { projects: ix.P.length, developers: ix.devs.size, languages: LANGS.length, urls: out.length }, redirects: [{ from: '/p/{id}/', to: '/projects/{slug}/', status: 301 }], urls: out });
 }
 

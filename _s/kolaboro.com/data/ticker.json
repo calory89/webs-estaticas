@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/handover/overdue/",
+   "text": "Monthly overdue handover reports per place, dated overdue notices, leaner sitemaps",
+   "tl": {
+    "es": "Informes mensuales de entregas vencidas por lugar, avisos fechados y sitemaps más ligeros",
+    "fr": "Rapports mensuels des livraisons en retard par lieu, avis datés, sitemaps allégés",
+    "de": "Monatsberichte zu überfälligen Übergaben je Ort, datierte Hinweise, schlankere Sitemaps",
+    "nl": "Maandrapporten over te late opleveringen per plaats, gedateerde meldingen, lichtere sitemaps",
+    "ru": "Ежемесячные отчёты о просроченной сдаче по местам, датированные пометки, лёгкие карты сайта",
+    "zh": "按地点的每月逾期交付报告、带日期的逾期提示和精简的站点地图",
+    "ar": "تقارير شهرية عن مواعيد التسليم الفائتة حسب المكان، وتنبيهات مؤرخة، وخرائط موقع أخف"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "text": "Trust pages: dated corrections log, contact with response times, how to cite, ranking CSV and transparency badge",
    "tl": {
     "es": "Páginas de confianza: registro de correcciones con fecha, contacto con plazos de respuesta, cómo citar, CSV del ranking e insignia de transparencia",

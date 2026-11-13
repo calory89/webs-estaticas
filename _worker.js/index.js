@@ -54,7 +54,7 @@ let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/
 let k27a = null; const K27A = /^\/answers\/(?:place|developer)\/[a-z0-9-]{1,90}\.md$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\.csv$|^\/corrections\.(?:json|md)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?developers\/[a-z0-9-]{1,90}\/dashboard\/?$|^\/yc\/?$|^\/api\/open\/(?:usage|rv)\/?$/;   // n27a: keep equal to PATHS in kbx_n27a.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
-let kfa = null; const KFA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|areas(?:\/[a-z0-9-]{2,60}\/[a-z0-9-]{2,80})?|vs\/[a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200})\/?$|^\/handover\/sitemap\.xml$/;   // n26s (batch 26): handover year and place, neighbourhoods, same-year comparisons (see kbx_facets.js)
+let kfa = null; const KFA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:handover\/overdue(?:\/[a-z0-9-]{2,60})?|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|areas(?:\/[a-z0-9-]{2,60}\/[a-z0-9-]{2,80})?|vs\/[a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200})\/?$|^\/handover\/sitemap\.xml$/;   // n26s (batch 26): handover year and place, neighbourhoods, same-year comparisons (see kbx_facets.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kbix = null; const KBIX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;   // n21d (batch 21): bulk check against the public index, in the browser, 8 languages (keep equal to PAGE in kbx_bulkix.js)
 let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   // n21d (batch 21): promised dates of a named project as an iCalendar file (keep equal to PATHS in kbx_cal.js)
@@ -287,10 +287,12 @@ async function rhMedia(req, u) {
 // n26i (batch 26): home page and hubs carry links to the project pages the fewest other project pages link to (kbx_named.js)
 async function llInject(req, u, env, ctx, r) {
   if (req.method !== 'GET' || !r || r.status !== 200 || u.search || !LLP.test(u.pathname) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
-  try { if (!knm) knm = await import('./kbx_named.js'); const lb = knm.leastReady(env, ctx, LLP.exec(u.pathname)[1] || 'en'); if (lb) return new HTMLRewriter().on('main', { element(e) { e.append(lb, { html: true }); } }).transform(r); } catch (e) {}
+  try { if (!knm) knm = await import('./kbx_named.js'); const lg = LLP.exec(u.pathname)[1] || 'en'; let lb = knm.leastReady(env, ctx, lg);
+    try { if (!kg27) kg27 = await import('./kbx_g27.js'); lb = kg27.topReady(env, ctx, lg, u.pathname) + lb; } catch (e) {}   // n27g (batch 27): links to the 300 most searched projects
+    if (lb) return new HTMLRewriter().on('main', { element(e) { e.append(lb, { html: true }); } }).transform(r); } catch (e) {}
   return r;
 }
-let kTick = null, kbots = null;
+let kTick = null, kbots = null, kg27 = null;
 export default {
   async fetch(req, env, ctx) {
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
@@ -526,8 +528,10 @@ export default {
       const sr = await kb.ssr(base, u, isP ? 'p' : 'm', env);
       if (isP || sr.status !== 200) return sr;
       // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
-      try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr); } catch (e) {}
-      return sr;
+      // n27g (batch 27): dated figures for the 50 biggest markets and links to the market's most searched projects (kbx_g27.js), above the market file
+      let sr2 = sr; try { if (!kg27) kg27 = await import('./kbx_g27.js'); const gh = await kg27.marketBlock(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (gh) sr2 = new HTMLRewriter().on('#mk-body', { element(e) { e.before(gh, { html: true }); } }).transform(sr); } catch (e) {}
+      try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2); } catch (e) {}
+      return sr2;
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)
