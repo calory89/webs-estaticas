@@ -75,6 +75,34 @@ def dev_primary(raw):
     return s
 
 
+# Review checklist (n27, 13 Nov 2026). A project's "review" record is written by a person-run review pass, never by the page.
+# It passes (ok=true) only when ALL of these hold on the review date:
+#  1. primary source read that day: the developer's own page or document, or the official register entry (Dubai DLD project
+#     register, RAK RERA project list), and the project is named there;
+#  2. official register: where kolaboro.com/registers/ lists a public per-project search for the market (Dubai DLD, RAK RERA list),
+#     the project was looked up and the result recorded (found / listed); elsewhere the record says "no public per-project search";
+#     a project NOT found on a register that should list it fails;
+#  3. handover status resolved against the date on record: future / phased / passed-late (register shows work still in progress) /
+#     passed-unconfirmed (date passed, no source confirms delivery) / changed (developer now prints another date) / none (no date published);
+#  4. source quality recorded per field (handover, permit, price, developer): registry, developer, press or portal, from the sources held;
+#  5. every new fact carries its source link and the date read; no opinion words, no private individuals.
+# The record never changes the score by itself: the score and the "reviewed" label still follow the verification levels
+# (kbx_named.js `reviewed`: at least one check with evidence above "none").
+REVIEW_RULES = ('Review checklist n27: primary source (developer page or official register) read on the review date; official per-project '
+                'register looked up where one is public (Dubai DLD, RAK RERA list), result recorded; handover status resolved against the date on '
+                'record; source quality recorded per field (registry, developer, press, portal); every fact with its source and date read.')
+
+
+def review_out(r):
+    """Compact public form of the review record: date, pass, primary source kind, register result, handover status, source quality per field."""
+    if not isinstance(r, dict) or not r.get('d'):
+        return None
+    reg, ho, pr = r.get('register') or [None, None, None], r.get('handover') or [None, None, None], r.get('primary') or [None, None]
+    keep = lambda t: clean(t, 400) if t and ok_text(t) else None
+    return {'d': r['d'], 'ok': bool(r.get('ok')), 'pr': pr[0], 'reg': [reg[0], keep(reg[1]), reg[2]], 'ho': [ho[0], keep(ho[1]), ho[2]],
+            'co': (r.get('company') or None), 'sq': {k: v for k, v in (r.get('sq') or {}).items() if v}, 'miss': [m for m in (r.get('miss') or []) if ok_text(m)] or None}
+
+
 def main(cases_path, out_path):
     projects = json.load(open(os.path.join(HERE, 'projects.json')))['projects'] + json.load(open(os.path.join(HERE, 'projects-world.json'))).get('projects', [])
     latest = json.load(open(os.path.join(DATA, 'latest.json'))) if os.path.exists(os.path.join(DATA, 'latest.json')) else {}
@@ -132,12 +160,14 @@ def main(cases_path, out_path):
                     'dl': [t for t in (keep(x) for x in (p.get('docs_listed') or [])) if t][:14], 'ev': ev, 'cl': cl[:24], 'fl': fl[:8], 'fx': fx,
                     'src': [u for u in (p.get('sources') or []) if isinstance(u, str) and u.startswith('http')][:30], 'ad': p.get('added'),
                     'sha': lt.get('sha256'), 'sealed': lt.get('sealed') or lt.get('checked'),
-                    'rw': {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'code', 'checked')} if rw else None})
+                    'rw': {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'code', 'checked')} if rw else None,
+                    'rvw': review_out(p.get('review'))})
     devs = {}
     for x in out:
         if x['dvs']: devs.setdefault(x['dvs'], {'n': x['dv'], 'p': []})['p'].append(x['id'])
     res = {'version': 'named-1', 'updated': json.load(open(cases_path)).get('updated'), 'count': len(out), 'developers': len(devs), 'dropped': dropped,
-           'rules': 'Facts only, each with its source link. Items naming a person or using opinion words are dropped before publishing.', 'projects': out}
+           'rules': 'Facts only, each with its source link. Items naming a person or using opinion words are dropped before publishing.', 'review_rules': REVIEW_RULES,
+           'reviewed_n27': sum(1 for x in out if x.get('rvw') and x['rvw']['ok']), 'projects': out}
     json.dump(res, open(out_path, 'w'), ensure_ascii=False, separators=(',', ':'))
     print('named index:', len(out), 'projects,', len(devs), 'developers, dropped', dropped)
 
