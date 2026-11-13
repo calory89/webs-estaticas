@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/guides/buying-off-plan/",
+   "text": "Buying off-plan guides for 8 places, each step linked to official sources",
+   "tl": {
+    "es": "Guías para comprar sobre plano en 8 lugares, cada paso con su fuente oficial",
+    "fr": "Guides d’achat sur plan pour 8 lieux, chaque étape avec sa source officielle",
+    "de": "Off-Plan-Kaufleitfäden für 8 Orte, jeder Schritt mit amtlicher Quelle",
+    "nl": "Gidsen voor off-plan kopen op 8 plaatsen, elke stap met officiële bron",
+    "ru": "Руководства по покупке новостроек в 8 местах, каждый шаг с официальным источником",
+    "zh": "8 个地方的期房购买指南，每一步都附官方来源",
+    "ar": "أدلة الشراء على الخارطة في 8 أماكن، لكل خطوة مصدرها الرسمي"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "url": "/registers/",
    "text": "150 most searched projects in Dubai, the Gulf, Europe and Africa checked against official registers",
    "tl": {
