@@ -189,13 +189,13 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
 })();
 </script>
 <script>
-(function(){
+addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
   if (document.body.scrollHeight < window.innerHeight * 3) return;
   var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
-})();
+}, 0); });
 </script>
 <script>(function(){var b=document.getElementById('rl-live'),out=[];function e(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}function put(){b.innerHTML='<ul style="margin:0">'+out.join('')+'</ul>'}
 Promise.all([fetch('/data/restore.json',{cache:'no-store'}).then(function(r){return r.json()}).catch(function(){return null}),fetch('/api/open/uptime').then(function(r){return r.json()}).catch(function(){return null}),fetch('/data/qa.json',{cache:'no-store'}).then(function(r){return r.json()}).catch(function(){return null})]).then(function(a){var rs=a[0],up=a[1],qa=a[2];

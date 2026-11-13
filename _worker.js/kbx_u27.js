@@ -13,7 +13,7 @@
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27a';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
+export const U27V = 'u27b';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -280,13 +280,15 @@ function client() {
   var FX = null, FXP = null, ECB = ['USD', 'GBP', 'JPY', 'CHF', 'AUD', 'CAD', 'THB', 'IDR', 'MYR', 'PHP', 'MXN', 'TRY', 'SGD', 'HKD', 'CNY', 'INR', 'BRL', 'ZAR', 'NZD', 'KRW', 'CZK', 'PLN', 'SEK', 'NOK', 'DKK', 'HUF', 'RON', 'ISK', 'ILS', 'BGN'];
   function rates(list) {   // ECB reference rates per EUR (AED from the USD peg), last 20 days, cached by the worker for 12 h
     var need = list.filter(function (c) { return c && c !== 'EUR'; }).map(function (c) { return c === 'AED' ? 'USD' : c; }).filter(function (c, i, a) { return ECB.indexOf(c) >= 0 && a.indexOf(c) === i; }).slice(0, 6);
-    if (FXP) return FXP;
+    if (FXP && need.every(function (c) { return FX ? FX[c] : FXP.want.indexOf(c) >= 0; })) return FXP;
+    if (FX) need = need.concat(['USD', 'GBP', 'AED', 'IDR', 'THB'].filter(function (c) { return FX[c] && need.indexOf(c) < 0; })).filter(function (c, i, a) { return ECB.indexOf(c) >= 0 && a.indexOf(c) === i; }).slice(0, 6);
     var from = new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10);
     FXP = fetch('/api/x/x/fx?c=' + (need.length ? need.join(',') : 'USD') + '&from=' + from).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
       if (!j || !j.rates || !j.dates || !j.dates.length) return null;
       var o = { EUR: 1, d: j.dates[j.dates.length - 1] }; for (var k in j.rates) { var a = j.rates[k]; for (var i = a.length - 1; i >= 0; i--) if (a[i] != null) { o[k] = a[i]; break; } }
       if (o.USD) o.AED = o.USD * 3.6725; FX = o; return o;
     }).catch(function () { FXP = null; return null; });
+    FXP.want = need;
     return FXP;
   }
   function conv(v, from, to) { if (!FX || from === to) return from === to ? v : null; var a = FX[from], b = FX[to]; return a && b ? v / a * b : null; }

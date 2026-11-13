@@ -191,13 +191,13 @@
 <script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <script>
-(function(){
+addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
   if (document.body.scrollHeight < window.innerHeight * 3) return;
   var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
-})();
+}, 0); });
 </script>
 
 </body>

@@ -213,13 +213,13 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
 })();
 </script>
 <script>
-(function(){
+addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
   if (document.body.scrollHeight < window.innerHeight * 3) return;
   var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
-})();
+}, 0); });
 </script>
 <script src="/tools/agent-check/ac.js?v=09c3326bc0" defer></script>
 </body>
