@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/registers/",
+   "text": "150 most searched projects in Dubai, the Gulf, Europe and Africa checked against official registers",
+   "tl": {
+    "es": "Los 150 proyectos más buscados de Dubái, el Golfo, Europa y África, cotejados con registros oficiales",
+    "fr": "Les 150 projets les plus recherchés à Dubaï, dans le Golfe, en Europe et en Afrique vérifiés dans les registres officiels",
+    "de": "Die 150 meistgesuchten Projekte in Dubai, am Golf, in Europa und Afrika mit amtlichen Registern abgeglichen",
+    "nl": "De 150 meest gezochte projecten in Dubai, de Golf, Europa en Afrika gecontroleerd in officiële registers",
+    "ru": "150 самых востребованных проектов Дубая, Персидского залива, Европы и Африки сверены с официальными реестрами",
+    "zh": "迪拜、海湾地区、欧洲和非洲搜索量最高的 150 个项目已与官方登记册核对",
+    "ar": "مطابقة أكثر 150 مشروعًا بحثًا في دبي والخليج وأوروبا وأفريقيا مع السجلات الرسمية"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "url": "/handover/overdue/",
    "text": "Monthly overdue handover reports per place, dated overdue notices, leaner sitemaps",
    "tl": {

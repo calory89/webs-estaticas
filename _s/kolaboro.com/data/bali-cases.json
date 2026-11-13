@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "markets": 181,
  "countries": 94,
  "note": "Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.",
@@ -13632,7 +13632,7 @@
    "vscore": 1,
    "claims": {
     "verified": 1,
-    "unverified": 10,
+    "unverified": 11,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -22457,7 +22457,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -22518,7 +22518,7 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -22777,7 +22777,7 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -24113,7 +24113,7 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -24177,7 +24177,7 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -24246,7 +24246,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -24315,7 +24315,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -24384,7 +24384,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -24454,7 +24454,7 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -26171,7 +26171,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -26233,7 +26233,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -28700,7 +28700,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 1
    },
@@ -28765,8 +28765,8 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
-    "unverified": 3,
+    "verified": 9,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -28830,11 +28830,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
-    "unverified": 3,
+    "verified": 8,
+    "unverified": 4,
     "contradicted": 1
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 13,
@@ -28895,7 +28895,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 9,
+    "verified": 10,
     "unverified": 2,
     "contradicted": 0
    },
@@ -28924,7 +28924,7 @@
    "checks": {
     "permit": 2,
     "escrow": true,
-    "progress": "updates",
+    "progress": 0.0,
     "plans": false,
     "record": true,
     "returns_ok": true,
@@ -28960,7 +28960,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 9,
+    "verified": 10,
     "unverified": 2,
     "contradicted": 1
    },
@@ -29025,7 +29025,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 1
    },
@@ -29090,7 +29090,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 3
    },
@@ -29155,7 +29155,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 1
    },
@@ -29220,7 +29220,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 1
    },
@@ -29285,7 +29285,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 1
    },
@@ -29355,8 +29355,8 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
-    "unverified": 3,
+    "verified": 9,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -29420,7 +29420,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 3,
     "contradicted": 0
    },
@@ -29485,7 +29485,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 1
    },
@@ -29550,7 +29550,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 0
    },
@@ -29620,7 +29620,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 1
    },
@@ -29690,7 +29690,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 1
    },
@@ -29760,7 +29760,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 0
    },
@@ -29830,7 +29830,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 0
    },
@@ -29895,7 +29895,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 3,
     "contradicted": 0
    },
@@ -29960,8 +29960,8 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
-    "unverified": 3,
+    "verified": 8,
+    "unverified": 4,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -30025,7 +30025,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 2
    },
@@ -30095,7 +30095,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 3
    },
@@ -30160,7 +30160,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 4,
     "contradicted": 1
    },
@@ -30291,11 +30291,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 3
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": 9.0,
    "overdue": null,
    "profile": 19,
@@ -30356,11 +30356,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 4
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 17,
@@ -30465,11 +30465,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 4,
     "contradicted": 2
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 17,
@@ -30674,7 +30674,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 1,
     "contradicted": 3
    },
@@ -30753,7 +30753,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 3
    },
@@ -30883,7 +30883,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 1
    },
@@ -30986,7 +30986,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 1
    },
@@ -31052,7 +31052,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 0
    },
@@ -31142,11 +31142,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": null,
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 19,
@@ -31207,14 +31207,14 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 1
    },
-   "stage": null,
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 14,
    "fp": {
     "sha256": "24552defa6dbb4e3cf5091b0328508f2b59fe8ae94b6eed0e98e905c1ce61e09",
     "date": "2026-11-05"
@@ -31272,11 +31272,11 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 4,
-    "unverified": 3,
+    "verified": 5,
+    "unverified": 4,
     "contradicted": 1
    },
-   "stage": null,
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 17,
@@ -31402,7 +31402,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 2,
     "contradicted": 3
    },
@@ -31475,7 +31475,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 1
    },
@@ -31540,7 +31540,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 3
    },
@@ -31601,7 +31601,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 1,
     "contradicted": 3
    },
@@ -31680,7 +31680,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 2
    },
@@ -31745,7 +31745,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 1
    },
@@ -31830,7 +31830,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 1,
     "contradicted": 2
    },
@@ -31848,7 +31848,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": 2027,
@@ -31857,9 +31857,9 @@
    "yield": null,
    "units": 168,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -31872,30 +31872,30 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 6,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
     "permit": "contradicted",
-    "escrow": "none",
-    "progress": "none",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "developer",
     "record": "registry",
     "returns_ok": "developer"
    },
-   "vscore": 1,
+   "vscore": 3,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 6,
     "contradicted": 2
    },
@@ -31960,7 +31960,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 0
    },
@@ -32028,7 +32028,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 2
    },
@@ -32090,7 +32090,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 2
    },
@@ -32154,7 +32154,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 3
    },
@@ -32219,11 +32219,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 1
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 15,
@@ -32352,7 +32352,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 2
    },
@@ -32521,7 +32521,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 2
    },
@@ -32586,7 +32586,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 1
    },
@@ -32651,7 +32651,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 0,
     "contradicted": 5
    },
@@ -32716,7 +32716,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 4,
     "contradicted": 1
    },
@@ -32781,7 +32781,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 4,
     "contradicted": 0
    },
@@ -32846,7 +32846,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 4,
     "contradicted": 0
    },
@@ -32937,7 +32937,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 9,
+    "verified": 10,
     "unverified": 2,
     "contradicted": 0
    },
@@ -33016,11 +33016,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 2,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 12,
@@ -33101,11 +33101,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
-    "unverified": 3,
+    "verified": 7,
+    "unverified": 4,
     "contradicted": 1
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 13,
@@ -33166,11 +33166,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 13,
@@ -33245,11 +33245,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 9,
+    "verified": 10,
     "unverified": 2,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 15,
@@ -33336,7 +33336,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 0
    },
@@ -33401,11 +33401,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 8,
+    "verified": 9,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 12,
@@ -33466,8 +33466,8 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
-    "unverified": 2,
+    "verified": 8,
+    "unverified": 3,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -33531,11 +33531,11 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 2,
     "contradicted": 1
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 11,
@@ -33616,7 +33616,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 3,
     "contradicted": 1
    },
@@ -33719,8 +33719,8 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
-    "unverified": 2,
+    "verified": 7,
+    "unverified": 3,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -33737,7 +33737,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2027,
@@ -33746,9 +33746,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 7.24,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -33761,38 +33761,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "df55434f256987eb0807de27369965192a2de15d72f719ff34ed598d309d8a9b",
     "date": "2026-11-06"
@@ -33803,7 +33803,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2027,
@@ -33812,9 +33812,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -33827,38 +33827,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "fca536e7938f2a03d8cedb2f596d1cad699a6663535eb5278630488c105d1d39",
     "date": "2026-11-06"
@@ -33869,7 +33869,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -33878,9 +33878,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 21.04,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -33893,38 +33893,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "5c66734b9f5d587b71461701997483418fda7298a1b8bdecf410c794a58ce98c",
     "date": "2026-11-06"
@@ -33935,7 +33935,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -33944,9 +33944,9 @@
    "yield": 8,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -33959,37 +33959,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "f2865eb2f9ea44691eb1c9d17676eeda3abde378c81300b789c4878d4b1b691c",
     "date": "2026-11-06"
@@ -34066,7 +34066,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2029,
@@ -34075,9 +34075,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 2.5,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -34090,38 +34090,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "3d37232160e2fbed2438828be2dde40cf9e5b1e0936c4d2d352e97a21fcd4ba9",
     "date": "2026-11-06"
@@ -34198,7 +34198,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2028,
@@ -34207,9 +34207,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 9.59,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -34222,38 +34222,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "ce0e6ae169a031c0381d1aa33b9ebe237301c8d6698c6a64c2a9f6e53d0f6785",
     "date": "2026-11-06"
@@ -34330,7 +34330,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -34339,9 +34339,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 55.58,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -34354,38 +34354,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "a1b21b65d6d541a041e19e1485319d60f72f810bfef988fbf07b4d20d04fda98",
     "date": "2026-11-06"
@@ -34462,7 +34462,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2029,
@@ -34471,9 +34471,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.19,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -34486,38 +34486,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "568fcb1011dc74e3dec2cae948167a491932a4d08f61e8d535ef4a75e8faf9e6",
     "date": "2026-11-06"
@@ -34528,7 +34528,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -34537,9 +34537,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 21.81,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -34552,38 +34552,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "68a9ddca7809b425833af5725e8a9b1a5ef378403b3d4e33fa1383fcac2758eb",
     "date": "2026-11-06"
@@ -34660,7 +34660,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2029,
@@ -34669,9 +34669,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 26.66,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -34684,38 +34684,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "8c32aa34f30a0750f0d3531335764c26ac36455ee3ae2f66bc2d740b3fad719f",
     "date": "2026-11-06"
@@ -34726,7 +34726,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$200k to $400k",
    "done": 2029,
@@ -34735,9 +34735,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 1.48,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -34750,38 +34750,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "a672836903c6d4efb2e26ab599befde82122aa401c8582678d8f0f8974f403c0",
     "date": "2026-11-06"
@@ -34792,7 +34792,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": 2028,
@@ -34801,9 +34801,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 38.71,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -34816,38 +34816,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "778d334184178d08c39a30dfb9ea1cdd718c9e57dbb8211a6d6357e25d31ffc6",
     "date": "2026-11-06"
@@ -34858,7 +34858,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -34867,9 +34867,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 12.12,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -34882,37 +34882,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "d06baeae03578ac881738e7cdf17ce7647a17c1281ac793254062c8ff560eb6c",
     "date": "2026-11-06"
@@ -34988,7 +34988,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2027,
@@ -34997,9 +34997,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.09,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35012,38 +35012,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "36e5d5654d028176006dcea174d4fce744a0f2fb6eb73af2c47a13e8fd506326",
     "date": "2026-11-06"
@@ -35054,7 +35054,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -35063,9 +35063,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 35.43,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35078,37 +35078,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "fad04aff364e1092b6a4f05f62080167686f5fe51468e0a1a0f775084db94260",
     "date": "2026-11-06"
@@ -35119,7 +35119,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -35128,9 +35128,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35143,37 +35143,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "6c77ffe94847e85844f44683a88850cf41747cb60e218f2d356fa0dff5145a1b",
     "date": "2026-11-06"
@@ -35184,7 +35184,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -35193,9 +35193,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35208,37 +35208,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "2e67c39cbbf4ae172ec87d33c366e65f467b6b23dd81af8c2af181892f136530",
     "date": "2026-11-06"
@@ -35249,7 +35249,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2027,
@@ -35258,9 +35258,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 7.04,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35273,38 +35273,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "e444372b2675423b9b968bf708a009ff8b2a63dd6e5be568eb4994b90ee00d57",
     "date": "2026-11-06"
@@ -35315,7 +35315,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -35324,9 +35324,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 60.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35339,37 +35339,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "dcb1c3526d77aa4687aa5de0806939af4c2e6f0a648494cf7ed7f0701e06cfe0",
     "date": "2026-11-06"
@@ -35380,7 +35380,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": null,
@@ -35389,9 +35389,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35404,37 +35404,37 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "3933e6857532e19ed7c72062eed5a7ffb7692641a9139e0fc0d7bed4729b37e9",
     "date": "2026-11-06"
@@ -35445,7 +35445,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -35454,9 +35454,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.08,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35469,38 +35469,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "23e902fcc7bafd9d66aa2a84032243af3a8747e8003b4f4cd004c7dd536076f3",
     "date": "2026-11-06"
@@ -35511,7 +35511,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2029,
@@ -35520,9 +35520,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.14,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35535,37 +35535,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "f826a02763c33834d36b2c98b84d4c4e951f6019cc5c03b4fb72086a44f1baad",
     "date": "2026-11-06"
@@ -35576,7 +35576,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -35585,9 +35585,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 21.45,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35600,38 +35600,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "79b2c25872cdd3875b410088b07453f3b7bbaf49d592465a25fc2b96291c1c74",
     "date": "2026-11-06"
@@ -35642,7 +35642,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$400k and up",
    "done": 2029,
@@ -35651,9 +35651,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -35666,38 +35666,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "00805c8c56893a39e840f91791b3775d7b3a4258c95505e0a720ff1ec890a56a",
     "date": "2026-11-06"
@@ -35708,7 +35708,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -35717,9 +35717,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 52.05,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35732,37 +35732,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
-   "overdue": null,
-   "profile": null,
+   "overdue": 5,
+   "profile": 2,
    "fp": {
     "sha256": "afd20e1608f5e7271c17567896e1f1e9599e82a9b5a5b2e0c1d718e058e39104",
     "date": "2026-11-06"
@@ -35773,7 +35773,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2029,
@@ -35782,9 +35782,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 2.38,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35797,38 +35797,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "76059d0fd3e5c0fa99ab25f4e5d51904abd37c86c485aa7c959697fa97f49c31",
     "date": "2026-11-06"
@@ -35970,7 +35970,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -35979,9 +35979,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 18.11,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -35994,37 +35994,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "4a67114f0b1847b0fe38e5c1cb905a722475303f689dc8782253c5ddc28eb268",
     "date": "2026-11-06"
@@ -36230,7 +36230,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2028,
@@ -36239,9 +36239,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.95,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -36254,38 +36254,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "b780f6f11aade3a3c47f5ab3510ece9d8c3a94a1db634c9605457e9c2b4afbd5",
     "date": "2026-11-06"
@@ -36296,7 +36296,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2029,
@@ -36305,9 +36305,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 6.52,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36320,38 +36320,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "1b6eb84035745437c1c2fb14d8f3ccbee2ffbb76e1f0c5084d6017331a026335",
     "date": "2026-11-06"
@@ -36362,7 +36362,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
@@ -36371,9 +36371,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 50.04,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36386,38 +36386,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "7629c1e26c478edf72ce8e88a78ac246cafcc8718df0ee0cacf6ab853d3d1328",
     "date": "2026-11-06"
@@ -36428,7 +36428,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2027,
@@ -36437,9 +36437,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 40.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36452,38 +36452,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "2b9f034e0c97de08a56fa808193ad32348747a438d37982c2bd9f0cb28a435b8",
     "date": "2026-11-06"
@@ -36494,7 +36494,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
@@ -36503,9 +36503,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 16.32,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36518,38 +36518,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "01de71bba05cc2ac615d59a25b2be24ab77e69358500efdaac3058128b61ec33",
     "date": "2026-11-06"
@@ -36560,7 +36560,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -36569,9 +36569,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 2.2,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36584,37 +36584,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "7ba05cd0743b494f41ba58f923a044c7bcbf063e1545b28f0c29da24c2b2e019",
     "date": "2026-11-06"
@@ -36625,7 +36625,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -36634,9 +36634,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 3.01,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36649,37 +36649,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "3182a01fb1028c98ef6800314426540a8e9ed3598e3a6ce5b3a98202a46efe71",
     "date": "2026-11-06"
@@ -36690,7 +36690,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Price not stated",
    "done": 2028,
@@ -36699,9 +36699,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 14.63,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -36714,38 +36714,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
-    "unverified": 0,
+    "verified": 2,
+    "unverified": 1,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "86d1b903d3fb0f61b4ba143070d41ec00762dab3a77708f83b63296d2ac6bacd",
     "date": "2026-11-06"
@@ -36756,7 +36756,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$200k to $400k",
    "done": 2029,
@@ -36765,9 +36765,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": true,
     "record": false,
     "returns_ok": true,
@@ -36780,38 +36780,38 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 5,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "6 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "3d94cadfe06b601d23bf09cb92ac266c3c6360b80c255b181a37ff17a9866706",
     "date": "2026-11-06"
@@ -36822,7 +36822,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -36831,9 +36831,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 7.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36846,45 +36846,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "DXB-120",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -36893,9 +36893,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 47,
+    "permit": 2,
+    "escrow": true,
+    "progress": 26.32,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36908,31 +36908,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -36946,7 +36946,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -36955,9 +36955,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.85,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -36970,45 +36970,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 4,
+    "verified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "DXB-122",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
@@ -37017,9 +37017,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 3.17,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37032,45 +37032,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "11 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "DXB-123",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
@@ -37079,9 +37079,9 @@
    "yield": null,
    "units": 436,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 14,
+    "permit": 2,
+    "escrow": true,
+    "progress": 10.45,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37094,32 +37094,32 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 5,
+    "verified": 1,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -37132,7 +37132,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2027,
@@ -37141,9 +37141,9 @@
    "yield": null,
    "units": 98,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 23,
+    "permit": 2,
+    "escrow": true,
+    "progress": 16.29,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37156,32 +37156,32 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 6,
+    "verified": 1,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -37194,7 +37194,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -37203,9 +37203,9 @@
    "yield": null,
    "units": 108,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 34,
+    "permit": 2,
+    "escrow": true,
+    "progress": 23.53,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37218,32 +37218,32 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 5,
+    "verified": 1,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -37256,7 +37256,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -37265,9 +37265,9 @@
    "yield": null,
    "units": 112,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 77,
+    "permit": 2,
+    "escrow": true,
+    "progress": 53.22,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37280,31 +37280,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -37380,7 +37380,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$100k to $200k",
    "done": 2028,
@@ -37389,9 +37389,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 15.19,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37404,45 +37404,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "DXB-129",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -37451,9 +37451,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 4.04,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37466,45 +37466,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 5,
+    "verified": 1,
+    "unverified": 6,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "DXB-130",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -37513,9 +37513,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 4.6,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37528,45 +37528,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 5,
+    "verified": 1,
+    "unverified": 6,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "DXB-131",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -37575,9 +37575,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 21.24,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37590,45 +37590,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "DXB-132",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
@@ -37637,9 +37637,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 8.91,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37652,38 +37652,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "DXB-133",
@@ -37813,7 +37813,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -37822,9 +37822,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 90,
+    "permit": 2,
+    "escrow": true,
+    "progress": 70.2,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37837,31 +37837,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -37875,7 +37875,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -37884,9 +37884,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 81,
+    "permit": 2,
+    "escrow": true,
+    "progress": 60.04,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37899,31 +37899,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -37937,7 +37937,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -37946,9 +37946,9 @@
    "yield": null,
    "units": 63,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 78,
+    "permit": 2,
+    "escrow": true,
+    "progress": 53.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -37961,31 +37961,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -37999,7 +37999,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38008,9 +38008,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 58,
+    "permit": 2,
+    "escrow": true,
+    "progress": 44.53,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38023,31 +38023,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -38061,7 +38061,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38070,9 +38070,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 23,
+    "permit": 2,
+    "escrow": true,
+    "progress": 16.06,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38085,31 +38085,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -38123,7 +38123,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -38132,9 +38132,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": 95,
+    "permit": 2,
+    "escrow": true,
+    "progress": 82.01,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38147,31 +38147,31 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
@@ -38185,7 +38185,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -38194,9 +38194,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 11.84,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38209,45 +38209,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 5,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "DXB-142",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$200k to $400k",
    "done": 2028,
@@ -38256,9 +38256,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.12,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38271,45 +38271,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 3,
+    "verified": 1,
+    "unverified": 4,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 4
   },
   {
    "id": "DXB-143",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38318,9 +38318,9 @@
    "yield": null,
    "units": 619,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 17.06,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38333,45 +38333,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 4,
+    "verified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-144",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -38380,9 +38380,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 22.4,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38395,31 +38395,93 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "DXB-145",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 1552,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 32.6,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "12 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -38429,73 +38491,11 @@
    "profile": 3
   },
   {
-   "id": "DXB-145",
-   "market": "Dubai",
-   "country": "UAE",
-   "region": "Dubai",
-   "docs": false,
-   "plans": false,
-   "band": "Price not stated",
-   "done": 2026,
-   "title": null,
-   "lease": null,
-   "yield": null,
-   "units": 1552,
-   "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
-    "record": false,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 1,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "caution",
-   "read": true,
-   "checked": "12 Nov 2026",
-   "invited": null,
-   "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ],
-   "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
-    "record": "none",
-    "returns_ok": "none"
-   },
-   "vscore": 0,
-   "claims": {
-    "verified": 0,
-    "unverified": 3,
-    "contradicted": 0
-   },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 2
-  },
-  {
    "id": "DXB-146",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -38504,9 +38504,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 50.21,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38519,45 +38519,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 4,
+    "verified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-147",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -38566,9 +38566,9 @@
    "yield": null,
    "units": 1426,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 65.25,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38581,37 +38581,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "DXB-148",
@@ -38679,7 +38679,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": null,
@@ -38688,9 +38688,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38703,37 +38703,37 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "DXB-150",
@@ -38801,7 +38801,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38810,9 +38810,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 14.17,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38825,45 +38825,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-152",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38872,9 +38872,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 40.52,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38887,45 +38887,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-153",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38934,9 +38934,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 6.36,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -38949,45 +38949,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-154",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -38996,9 +38996,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 6.36,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39011,45 +39011,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-155",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -39058,9 +39058,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 21.5,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39073,45 +39073,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-156",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -39120,9 +39120,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 26.43,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39135,45 +39135,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-157",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2026,
@@ -39182,9 +39182,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 80.35,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39197,38 +39197,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2026: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-158",
@@ -39297,7 +39297,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39306,9 +39306,9 @@
    "yield": null,
    "units": 50,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 9.41,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39321,45 +39321,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-160",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2029,
@@ -39368,9 +39368,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.21,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39383,38 +39383,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
-    "unverified": 2,
+    "verified": 1,
+    "unverified": 3,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-161",
@@ -39483,7 +39483,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39492,9 +39492,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 64.31,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39507,45 +39507,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-163",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39554,9 +39554,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 36.3,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39569,45 +39569,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-164",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39616,9 +39616,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 36.41,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39631,45 +39631,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-165",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39678,9 +39678,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 42.15,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39693,38 +39693,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-166",
@@ -39855,7 +39855,7 @@
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2027,
@@ -39864,9 +39864,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 19.7,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39879,45 +39879,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-169",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
@@ -39926,9 +39926,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 33.55,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -39941,45 +39941,45 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DXB-170",
    "market": "Dubai",
    "country": "UAE",
    "region": "Dubai",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Price not stated",
    "done": 2028,
@@ -39988,9 +39988,9 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
+    "permit": 2,
+    "escrow": true,
+    "progress": 30.3,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -40003,38 +40003,38 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "clear",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 3,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
-   "stage": "off-plan",
+   "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "DUB-001",
@@ -41418,7 +41418,7 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "off-plan",
@@ -41575,7 +41575,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -41821,7 +41821,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -45334,7 +45334,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -46308,7 +46308,7 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -48905,7 +48905,7 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -49119,7 +49119,7 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -49701,7 +49701,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -51901,7 +51901,7 @@
    "vscore": 3,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -59168,7 +59168,7 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -61976,7 +61976,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 3,
     "contradicted": 2
    },
@@ -62298,8 +62298,8 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
-    "unverified": 4,
+    "verified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -63523,13 +63523,13 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 15,
    "fp": {
     "sha256": "bf2f31bdbc91d2a7972db13f87b6b628aec5772238fb076cc4ea7fd7da28e2e0",
     "date": "2026-11-05"
@@ -66480,7 +66480,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -68499,7 +68499,7 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -76746,7 +76746,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": null,
@@ -76929,7 +76929,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -78512,7 +78512,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -90416,8 +90416,8 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 3,
-    "unverified": 5,
+    "verified": 4,
+    "unverified": 6,
     "contradicted": 2
    },
    "stage": "off-plan",
@@ -90481,7 +90481,7 @@
    "yield": null,
    "units": 163,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -90519,7 +90519,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 7,
     "contradicted": 3
    },
@@ -90585,7 +90585,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 5,
     "contradicted": 2
    },
@@ -90664,7 +90664,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 6,
     "contradicted": 2
    },
@@ -90691,7 +90691,7 @@
    "yield": null,
    "units": 151,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": true,
     "progress": 2,
     "plans": true,
@@ -90720,16 +90720,16 @@
     "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "developer",
     "progress": "developer",
     "plans": "developer",
     "record": "independent",
     "returns_ok": "developer"
    },
-   "vscore": 1,
+   "vscore": 2,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 7,
     "contradicted": 1
    },
@@ -90794,7 +90794,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 2,
     "contradicted": 2
    },
@@ -90974,7 +90974,7 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 3,
     "contradicted": 2
    },
@@ -91039,7 +91039,7 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 5,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 3
    },
@@ -91135,8 +91135,8 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 3,
-    "unverified": 4,
+    "verified": 4,
+    "unverified": 5,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -91200,7 +91200,7 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 5,
     "contradicted": 4
    },
@@ -91378,7 +91378,7 @@
    "yield": null,
    "units": 411,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91407,16 +91407,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "contradicted",
     "plans": "developer",
     "record": "none",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 5,
     "contradicted": 2
    },
@@ -91443,7 +91443,7 @@
    "yield": null,
    "units": 282,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91472,16 +91472,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "developer",
     "record": "none",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 4,
     "contradicted": 3
    },
@@ -91508,7 +91508,7 @@
    "yield": null,
    "units": 158,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": "updates",
     "plans": false,
@@ -91537,16 +91537,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "developer",
     "plans": "none",
     "record": "none",
     "returns_ok": "developer"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 1
    },
@@ -91612,7 +91612,7 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -91634,7 +91634,7 @@
    "yield": null,
    "units": 180,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91672,7 +91672,7 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 6,
     "contradicted": 2
    },
@@ -91695,7 +91695,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91725,16 +91725,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -91761,7 +91761,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91791,16 +91791,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -91827,7 +91827,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -91857,16 +91857,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -91893,7 +91893,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91923,16 +91923,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -91959,7 +91959,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -91989,16 +91989,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -92025,7 +92025,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -92055,16 +92055,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 1,
+    "verified": 2,
     "unverified": 0,
     "contradicted": 0
    },
@@ -92156,7 +92156,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -92186,17 +92186,17 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 0,
-    "unverified": 3,
+    "verified": 1,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -92218,7 +92218,7 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -92248,16 +92248,16 @@
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
-    "permit": "none",
+    "permit": "registry",
     "escrow": "none",
     "progress": "none",
     "plans": "none",
     "record": "none",
     "returns_ok": "none"
    },
-   "vscore": 0,
+   "vscore": 1,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -96248,7 +96248,7 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 3
    },
    "stage": "off-plan",
@@ -97045,7 +97045,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": null,
@@ -105708,7 +105708,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -106213,35 +106213,35 @@
   }
  ],
  "db": {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "projects": 1595,
   "markets": 181,
   "countries": 94,
-  "sources": 7357,
-  "data_points": 40204,
+  "sources": 7445,
+  "data_points": 40618,
   "claims": {
-   "verified": 2648,
-   "unverified": 6996,
+   "verified": 2816,
+   "unverified": 7064,
    "contradicted": 1370
   },
-  "claims_total": 11014,
+  "claims_total": 11250,
   "deep_profiles": 1595,
   "checks_by_level": {
-   "registry": 547,
+   "registry": 798,
    "independent": 487,
    "developer": 1995,
    "contradicted": 103,
-   "none": 6438
+   "none": 6187
   },
   "checks_rated": 9570,
   "stages": {
-   "off-plan": 717,
-   "under construction": 817,
+   "off-plan": 676,
+   "under construction": 861,
    "completed": 12
   },
-  "all_six_public": 63,
+  "all_six_public": 64,
   "with_flags": 46,
-  "overdue": 36,
+  "overdue": 37,
   "overdue_avg_months": 6.7,
   "delayed": 105,
   "changes_detected": 564,
