@@ -213,7 +213,7 @@ async function dashboard(env, ix, dv, lang) {
     '<h2 id="how">' + esc(dt(lang, 'h_how')) + '</h2><ol>' + dt(lang, 'how').map(s => '<li>' + esc(s) + '</li>').join('') + '</ol>' +
     '<p class="k27-lk"><a href="' + pre(lang) + '/developers/' + dv.s + '/">' + esc(dt(lang, 'page')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(dt(lang, 'm')) + '</a><a href="/answers/developer/' + dv.s + '.md">Markdown</a></p><p class="muted">' + esc(dt(lang, 'note', { d: fdate(today, lang) })) + '</p>';
   const name = dv.n || dv.s;
-  return { path: '/developers/' + dv.s + '/dashboard/', title: dt(lang, 'title', { d: name }), h1: dt(lang, 'title', { d: name }), lead: dt(lang, 'lead'), body, updated: today, noindex: true,
+  return { path: '/developers/' + dv.s + '/dashboard/', title: dt(lang, 'title', { d: name }), h1: dt(lang, 'title', { d: name }), h1h: esc(dt(lang, 'title', { d: '\u0001' })).replace('\u0001', bdi(name)), lead: dt(lang, 'lead'), body, updated: today, noindex: true,
     crumbs: [['Kolaboro', '/'], [name, '/developers/' + dv.s + '/'], [dt(lang, 'title', { d: '' }).replace(/^[:：\s]+/, ''), '/developers/' + dv.s + '/dashboard/']] };
 }
 
@@ -244,7 +244,7 @@ async function shellPage(shell, lang, o) {
   const tags = '<title>' + esc(o.title) + ' | Kolaboro</title><meta name="description" content="' + esc(o.lead) + '"><link rel="canonical" href="' + canon + '">' + alts +
     '<meta name="robots" content="' + (o.noindex ? 'noindex, follow' : 'index, follow') + '"><meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(o.title) + '"><meta property="og:description" content="' + esc(o.lead) + '"><meta property="og:url" content="' + canon + '"><meta property="og:image" content="' + ORIGIN + '/k/og/home.png"><meta name="twitter:card" content="summary_large_image">' +
     '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
-  const main = '<section class="phero"><div class="wrap"><p class="crumb">' + crumbs.map((c, i) => i < crumbs.length - 1 ? '<a href="' + esc(c[1].replace(ORIGIN, '')) + '">' + bdi(c[0]) + '</a>' : bdi(c[0])).join(' / ') + '</p><h1>' + esc(o.h1) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><section class="sec k27"><div class="wrap k-prose" style="max-width:none">' + o.body + '</div></section>';
+  const main = '<section class="phero"><div class="wrap"><p class="crumb">' + crumbs.map((c, i) => i < crumbs.length - 1 ? '<a href="' + esc(c[1].replace(ORIGIN, '')) + '">' + bdi(c[0]) + '</a>' : bdi(c[0])).join(' / ') + '</p><h1>' + (o.h1h || esc(o.h1)) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><section class="sec k27"><div class="wrap k-prose" style="max-width:none">' + o.body + '</div></section>';
   const sh = await shell(pre(lang) + '/how-we-score/');
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
