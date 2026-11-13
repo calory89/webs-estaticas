@@ -2,7 +2,7 @@
 
 > RealHunt (https://realhunt.co) is where foreigners find, check and buy property: homes for sale around the world, each checked by a person and graded from 70 to 98 against every other home on the site, with buying rules, taxes and costs by country. It is not an estate agent; every home links to its original listing. Legal and tax notes are general information, not advice.
 
-Updated 2026-11-12. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
+Updated 2026-11-13. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
 
 
 ---
@@ -50,11 +50,11 @@ It is not a survey or a valuation. Photos can flatter and listings go out of dat
 
 
 ---
-Source: https://realhunt.co/research/prices (updated 2026-11-12)
+Source: https://realhunt.co/research/prices (updated 2026-11-13)
 
 ## What a cheap home costs, country by country
 
-From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-12. Free to quote with a link to this page.
+From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-13. Free to quote with a link to this page.
 
 Country | Homes | Median €/m² | Median price | Cheapest | Median score
 [Japan](https://realhunt.co/homes/japan) | 30 | €340 | €39,560 | €7,400 | 86
