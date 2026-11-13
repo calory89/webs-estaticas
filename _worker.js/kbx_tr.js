@@ -20,6 +20,7 @@
 import { TRS } from './kbx_tr_i18n.js';
 import { hdisp } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
+import { E as E27 } from './kbx_e27_i18n.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -285,7 +286,7 @@ function crumbHtml(lang, list) { return '<p class="k-crumb">' + list.map((x, i) 
 const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: list.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
 const year = () => new Date().getUTCFullYear();
 function linksHtml(lang, slug) {
-  return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">' + esc(t(lang, 'all_places')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a><a href="/api/x/transparency' + (slug ? '/' + slug : '') + '">' + esc(t(lang, 'json')) + '</a><a href="/rankings/">' + esc(t(lang, 'crumb_r')) + '</a></p>';
+  return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">' + esc(t(lang, 'all_places')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a><a href="/api/x/transparency' + (slug ? '/' + slug : '') + '">' + esc(t(lang, 'json')) + '</a><a href="/rankings/">' + esc(t(lang, 'crumb_r')) + '</a>' + (slug && TR_PLACES.some(q => q.s === slug && !q.coi) ? '<a href="' + pre(lang) + '/weekly/' + slug + '/">' + esc((E27[lang] || E27.en).wk_t.replace('{p}', TR_PLACES.find(q => q.s === slug).n)) + '</a>' : '') + '</p>';   // n27e: weekly changes of the place
 }
 
 // n26i (batch 26): projects with almost nothing published yet stay on their own pages and are grouped here too, in short rows with a

@@ -484,6 +484,9 @@ export function stateOf(c, drift) {
 const fmt = v => v === true ? 'yes' : v === false ? 'no' : v == null ? 'not known' : String(v);
 export function diffOf(a, b) {   // plain-language list of what changed, most important first
   const L = [];
+  // n27e (item 79): the developer company appears in an official gazette notice of insolvency or dissolution (states saved before this
+  // field existed have no 'lists' and only record it, so the first run after the change sends nothing for old notices)
+  if (a.lists && b.lists && b.lists.n > a.lists.n && b.lists.last) L.push('Official notice about the developer company: ' + b.lists.last.t + ' (' + b.lists.last.s + ', ' + b.lists.last.d + ')');
   if (a.score !== b.score || a.max !== b.max) L.push('Checks public: ' + a.score + ' of ' + a.max + ' → ' + b.score + ' of ' + b.max);
   b.flags.filter(f => a.flags.indexOf(f) < 0).forEach(f => L.push('New: ' + f));
   a.flags.filter(f => b.flags.indexOf(f) < 0).forEach(f => L.push('No longer reported: ' + f));
@@ -521,9 +524,10 @@ async function pushRun(req, env, ctx) {
   const by = {}; (d.cases || []).forEach(c => { by[c.id] = c; });
   const prev = job.states || {}, subs = job.subs || [], watched = new Set(); subs.forEach(s => (s.projects || []).forEach(p => watched.add(p)));
   const states = {}, changes = {};
+  let nst = {}; try { nst = await (await import('./kbx_e27.js')).noticeStates(env, [...watched]); } catch (e) { nst = {}; }   // n27e: official notices about the developer company
   watched.forEach(id => {
     const c = by[id]; if (!c) return;
-    const now = stateOf(c, drift); if (wst[id]) now.web = wst[id]; states[id] = now;
+    const now = stateOf(c, drift); if (wst[id]) now.web = wst[id]; if (nst[id]) now.lists = nst[id]; states[id] = now;
     if (prev[id]) { const L = diffOf(prev[id], now); if (L.length) changes[id] = L; }   // first sight of a project only records its state
   });
   let sent = 0, failed = 0; const gone = [], okIds = [];

@@ -66,7 +66,16 @@
     }).join('');
   }).catch(function(){ document.getElementById('mtu').textContent = 'Could not load the numbers right now. Try again in a minute.'; });
 })();
-</script><section class="sec"><div class="wrap"><h2>Buyer accounts and cases</h2><p class="muted" style="font-size:.9rem">Free accounts, saved projects, share links and how fast we answer, from the same database.</p><div id="mx-tot" class="st-grid"></div></div></section></main>
+</script><section class="sec"><div class="wrap"><h2>Buyer accounts and cases</h2><p class="muted" style="font-size:.9rem">Free accounts, saved projects, share links and how fast we answer, from the same database.</p><div id="mx-tot" class="st-grid"></div></div></section><section class="sec" id="watch-signups"><div class="wrap"><h2>Which project pages bring email watchers</h2><p class="muted" style="font-size:.9rem">Confirmed email watchers (double opt-in) per project page, from the same counters the project pages use. A page is listed only from 3 watchers; below 3 the number is not shown to anyone. No email address or other personal data is read. <a href="/api/x/e27/signups">JSON</a></p><p id="su-tot">Loading...</p><div id="su-l"></div></div></section>
+<script>
+(function(){
+  var esc=function(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
+  fetch('/api/x/e27/signups').then(function(r){return r.json();}).then(function(j){
+    document.getElementById('su-tot').textContent='Confirmed email watchers in total: '+(j.confirmed_watchers_total==null?'not available':j.confirmed_watchers_total)+'. Project pages checked today: '+j.projects_checked_today+' of '+j.projects_total+' (40 more each time this page is opened).';
+    document.getElementById('su-l').innerHTML=j.projects.length?'<table class="mt-t"><thead><tr><th scope="col">Project page</th><th scope="col">Market</th><th scope="col">Watchers</th></tr></thead><tbody>'+j.projects.map(function(p){return '<tr><td><a href="'+esc(p.page)+'">'+esc(p.name)+'</a></td><td>'+esc(p.market)+'</td><td>'+p.watchers+'</td></tr>';}).join('')+'</tbody></table>':'<p>No project page checked so far has 3 or more confirmed watchers.</p>';
+  }).catch(function(){document.getElementById('su-tot').textContent='Could not load the numbers right now. Try again in a minute.';});
+})();
+</script></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
   <div class="wrap">

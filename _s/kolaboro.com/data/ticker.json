@@ -4,6 +4,20 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "text": "Free project report as PDF and a weekly page of what changed in each island and city",
+   "tl": {
+    "es": "Informe gratuito del proyecto en PDF y página semanal de lo que cambió en cada isla y ciudad",
+    "fr": "Rapport gratuit du projet en PDF et page hebdomadaire des changements dans chaque île et ville",
+    "de": "Kostenloser Projektbericht als PDF und eine Wochenseite mit allen Änderungen je Insel und Stadt",
+    "nl": "Gratis projectrapport als PDF en een weekpagina met wat er per eiland en stad veranderde",
+    "ru": "Бесплатный PDF-отчёт о проекте и недельная страница изменений по каждому острову и городу",
+    "zh": "免费项目 PDF 报告，以及每个岛屿和城市的每周变化页面",
+    "ar": "تقرير مجاني عن المشروع بصيغة PDF وصفحة أسبوعية لما تغيّر في كل جزيرة ومدينة"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "text": "Answer files per place and developer, project CSV downloads, developer dashboards and public usage counts",
    "tl": {
     "es": "Respuestas por lugar y promotor, descargas CSV por proyecto, panel del promotor y uso público",

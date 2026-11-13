@@ -511,7 +511,7 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml']) {   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
+    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml']) {   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
       let ok = MEMO['__ext' + x]; if (!ok || Date.now() - ok.t > 600000) { let v = null; try { const r = B.inner ? await B.inner(x) : null; if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); v = { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length }; } } catch (e) { v = null; } ok = MEMO['__ext' + x] = { t: Date.now(), v }; }
       if (ok.v && ok.v.n) ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (ok.v.last ? '<lastmod>' + ok.v.last + '</lastmod>' : '') + '</sitemap>');
     }

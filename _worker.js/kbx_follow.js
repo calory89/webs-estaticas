@@ -14,6 +14,7 @@
 // for kbx_named.js.
 
 import { t26 } from './kbx_u26.js';
+import { E as E27 } from './kbx_e27_i18n.js';   // n27e: free PDF report offered in the watch box
 const ORIGIN = 'https://kolaboro.com';
 const LANGS9 = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -66,7 +67,7 @@ export function watchBox(lang, id, name, path, snap) {
     '<p class="kw-as" data-kw-as hidden><span></span> <button type="button" class="kw-lnk" data-kw-change>' + esc(t9(lang, 'w_change')) + '</button></p>' +
     '<form class="kw-f" novalidate hidden><label for="kw-e">' + esc(t9(lang, 'w_email')) + '</label><div><input id="kw-e" type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>' +
     '<input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="kw-hp"><button type="submit" class="k-btn k-btn--dark kbtn">' + esc(t9(lang, 'w_go')) + '</button></div></form>' +
-    '<p class="kw-out" role="status" aria-live="polite"></p><p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p>' +
+    '<p class="kw-out" role="status" aria-live="polite"></p>' + (path.indexOf('/projects/') === 0 ? '<p class="kw-rp">' + esc((E27[lang] || E27.en).of_line.replace('{n}', name)) + ' <a href="' + pre(lang) + esc(path) + 'report/" data-kw-rp hidden>' + esc((E27[lang] || E27.en).of_dl) + '</a></p>' : '') + '<p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p>' +
     (snap ? '<p class="kw-s"><button type="button" class="kw-sb" data-kw-save aria-pressed="false"><span aria-hidden="true">\u2606</span> <span>' + esc(t9(lang, 's_btn')) + '</span></button> <span class="kw-sv" role="status" aria-live="polite"></span></p>' : '') + '</div>' + feedLinks(lang, path, name) + '</div>';
 }
 export function searchBox(lang, np, nd) {
@@ -77,7 +78,7 @@ export function searchBox(lang, np, nd) {
 export const W9CSS = '<style id="kfollow-css">.kwatch{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px 24px;margin:18px 0 0;padding:16px 18px;border:2px solid var(--ink);border-radius:18px;background:var(--card,var(--paper))}' +
   '.kw-t p{margin:4px 0 0;color:var(--ink-2);font-size:.95rem}.kw-a .kbtn{margin-top:0!important}.kw-as{margin:8px 0 0;font-size:.88rem;color:var(--ink-2)}.kw-lnk{background:none;border:0;padding:0 2px;color:inherit;text-decoration:underline;cursor:pointer;font:inherit;min-height:32px}' +
   '.kw-f label{display:block;font-size:.85rem;font-weight:700;margin:2px 0 4px}.kw-f div{display:flex;gap:8px;flex-wrap:wrap}.kw-f input[type=email]{flex:1 1 200px;min-width:0;min-height:46px;padding:0 12px;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:var(--paper,#fff);color:var(--ink)}' +
-  '.kw-s{margin:10px 0 0;font-size:.88rem;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}.kw-sb{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:12px;background:none;color:var(--ink);font:inherit;font-weight:700;cursor:pointer}.kw-sb:hover{border-color:var(--ink)}.kw-sb[aria-pressed=true] span:first-child{color:#B8860B}.kw-sv a{font-weight:700}' +
+  '.kw-rp{margin:8px 0 0;font-size:.88rem;color:var(--ink-2)}.kw-rp a{display:inline-block;font-weight:700;min-height:32px}' + '.kw-s{margin:10px 0 0;font-size:.88rem;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}.kw-sb{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:12px;background:none;color:var(--ink);font:inherit;font-weight:700;cursor:pointer}.kw-sb:hover{border-color:var(--ink)}.kw-sb[aria-pressed=true] span:first-child{color:#B8860B}.kw-sv a{font-weight:700}' +
   '.kw-hp{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);opacity:0;pointer-events:none}.kw-out{margin:8px 0 0;font-weight:700;min-height:1.2em}.kw-out.err{color:#9A2A0A}[data-theme=dark] .kw-out.err{color:#FFC9B8}.kw-n{margin:4px 0 0;font-size:.8rem;color:var(--muted)}' +
   '.kfeeds{grid-column:1/-1;margin:2px 0 0;font-size:.85rem;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}.kfeeds a{font-weight:700}' +
   '.kx{margin:22px 0 0;max-width:760px}.kx label{display:block;font-weight:700;margin:0 0 6px}.kx input{width:100%;box-sizing:border-box;min-height:52px;padding:0 16px;border:2px solid var(--ink);border-radius:14px;font-family:inherit;font-size:1.05rem;background:var(--paper,#fff);color:var(--ink)}' +
@@ -89,10 +90,10 @@ export const W9CSS = '<style id="kfollow-css">.kwatch{display:grid;grid-template
 export const W9JS = "(function(){function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}" +
   "document.querySelectorAll('[data-kw]').forEach(function(w){var M=JSON.parse(w.getAttribute('data-kw')),b=w.querySelector('[data-kw-btn]'),f=w.querySelector('form'),inp=f.querySelector('input[type=email]'),out=w.querySelector('.kw-out'),as=w.querySelector('[data-kw-as]'),known=ls('kb-follow-email')||ls('kb-desk-email')||'';" +
   "function say(t,bad){out.textContent=t;out.className='kw-out'+(bad?' err':'');}" +
-  "if(ls('kb-watch-'+M.id)){say(M.ok);b.hidden=true;}" +
+  "var rp=w.querySelector('[data-kw-rp]');function rpo(){if(rp)rp.hidden=false;}if(ls('kb-watch-'+M.id)||ls('kb-follow-email')){rpo();}if(ls('kb-watch-'+M.id)){say(M.ok);b.hidden=true;}" +
   "function showAs(){if(!b.hidden&&known&&/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(known)){as.hidden=false;as.querySelector('span').textContent=M.as.replace('%E%',known);}}showAs();" +
   "function send(em,btn){btn.disabled=true;say('…');fetch('/api/v1/watch',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({project:M.id,email:em,hp:f.hp.value})}).then(function(r){return r.json().then(function(j){j._s=r.status;return j;});}).then(function(j){btn.disabled=false;" +
-  "if(j&&j.ok){ls('kb-follow-email',em);known=em;f.hidden=true;as.hidden=true;b.hidden=true;if(j.confirmed){ls('kb-watch-'+M.id,'1');say(M.ok);}else say(M.sent.replace('%E%',em));try{if(window.kbEvent)kbEvent('named_watch',M.id);}catch(e){}return;}" +
+  "if(j&&j.ok){ls('kb-follow-email',em);known=em;rpo();f.hidden=true;as.hidden=true;b.hidden=true;if(j.confirmed){ls('kb-watch-'+M.id,'1');say(M.ok);}else say(M.sent.replace('%E%',em));try{if(window.kbEvent)kbEvent('named_watch',M.id);}catch(e){}return;}" +
   "say(j&&j.error==='email'?M.bad:j&&(j._s===429||j.error==='busy'||j.error==='rate')?M.busy:M.err,true);if(j&&j.error==='email'){f.hidden=false;b.hidden=true;inp.focus();}}).catch(function(){btn.disabled=false;say(M.err,true);});}" +
   "b.addEventListener('click',function(){if(known&&!as.hidden)send(known,b);else{f.hidden=false;b.hidden=true;inp.focus();}});" +
   "w.querySelector('[data-kw-change]').addEventListener('click',function(){as.hidden=true;f.hidden=false;b.hidden=true;inp.value='';inp.focus();});" +
