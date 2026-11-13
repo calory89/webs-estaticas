@@ -291,7 +291,15 @@ export function projFacets(F, ix, x, lang, o) {
   if (bytes() > 4400) alt = altHtml(F, ix, x, lang, 1);   // then the developer's project count, which the developer page also shows
   const act = bytes() > 4500 ? '' : active;
   return { changed: ch.html, chN: ch.n, chSum: ch.sum, cost: cost.html, costFaq: cost.faq, reg, alt, dom, active: act, delay,
-    h: { changed: t(lang, 'ch_h'), cost: t(lang, 'co_h', { n: x.n }), alt: t(lang, 'al_h', { n: x.n }), tocChanged: t(lang, 'toc_ch'), tocCost: t(lang, 'toc_co'), tocAlt: t(lang, 'toc_al') } };
+    h: { changed: t(lang, 'ch_h'), cost: t(lang, 'co_h', { n: x.n }), alt: t(lang, 'al_h', { n: x.n }), tocChanged: t(lang, 'toc_ch'), tocCost: t(lang, 'toc_co'), tocAlt: t(lang, 'toc_al') },
+    regs: regFor(F, x).filter(r => r.url).slice(0, 3).map(r => ({ n: r.register, u: r.url })) };   // n27u: the "before you sign" checklist links the same registers
+}
+// n27u (batch 27): the cost calculator inside the project page asks /api/v1/cost for the same tax and fee rows as the table above,
+// for the price the reader types (same functions, so the page and the calculator never disagree). Null where we have no country row.
+export function costCalc(x, p, lang) {
+  const T = tcFor(x); if (!T) return null;
+  const rows = T.rows.map(r => ({ label: t(lang, r.k), rate: rt(r, lang), amount: p > 0 ? Math.round(r.f(p)) : null, src: TC_SRC[r.s[0]] ? TC_SRC[r.s[0]][1] : null }));
+  return { cur: T.cur, rows, part: T.part ? t(lang, T.part) : null, note: T.note ? t(lang, T.note) : null, tool: '/tools/total-cost/?country=' + T.tool };
 }
 
 // developer page: promised vs actual (item 4), active projects (95), website domain ages (93)

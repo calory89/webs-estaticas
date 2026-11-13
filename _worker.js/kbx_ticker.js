@@ -8,7 +8,7 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null };
-const SITE_V = 'n27a1'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+const SITE_V = 'n27u1'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
@@ -24,7 +24,8 @@ export async function tickerItems(env) {
 }
 // /api/open/summary ships list (read by site.js for the live bar): hand lines first, then the automatic agent entries, newest first
 export function mergeShips(items, ships) {
-  const a = items.map(x => ({ d: String(x.date).slice(0, 10), k: x.kind === 'data' ? 'data' : 'feature', t: x.text, tl: x.tl || undefined, u: x.url || undefined }));
+  const a = items.map(x => ({ d: String(x.date).slice(0, 10), k: x.kind === 'data' ? 'data' : 'feature', t: x.text, tl: x.tl || undefined, u: x.url || undefined, id: tickId(x),
+    s: shortOf(x, 'en'), sl: x.tl ? Object.fromEntries(Object.keys(x.tl).map(l => [l, shortOf(x, l)])) : undefined }));   // n27u: short forms and the /updates/ anchor for site.js
   const seen = new Set(a.map(x => x.t.toLowerCase()));
   for (const s of ships) if (s && s.t && !seen.has(s.t.toLowerCase())) a.push(s);
   return a.sort((x, y) => String(y.d).localeCompare(String(x.d))).slice(0, 24);
@@ -34,6 +35,18 @@ export function mergeShips(items, ships) {
 // change); the date and the DATA / SHIPPED labels come from Intl and this table. As in site.js (which refreshes the bar with live
 // numbers after load), a line without a translation is left out on translated pages.
 const TL_LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
+// n27u (batch 27): one short line per item in the bar (at most 12 words visible, 24 characters in Chinese): the line's own "short" /
+// "tls" text if it has one, else the text cut at the first colon, semicolon or bracket when that comes within 12 words, else after 12
+// words with an ellipsis. Each line links to its full text on /updates/ (id from the date and a hash of the English text, stable).
+export function shortLine(t, lang) {
+  const s = String(t || '').trim(); if (!s) return s;
+  if (lang === 'zh') { const c = s.split(/[：:；;（(]/)[0]; return c.length >= 10 && c.length <= 24 ? c + (c.length < s.length ? '…' : '') : s.length <= 24 ? s : s.slice(0, 22) + '…'; }
+  const W = s.split(/\s+/), cut = s.split(/[:;(]|\s[-–]\s/)[0].trim().split(/\s+/);
+  if (cut.length <= 12 && cut.length >= 6) return cut.join(' ').replace(/[,.]$/, '') + (cut.length < W.length ? '…' : '');
+  return W.length <= 12 ? s : W.slice(0, 12).join(' ').replace(/[,.:;]$/, '') + '…';
+}
+export function tickId(x) { let h = 2166136261; for (const ch of String(x.text || '')) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; } return 'u-' + String(x.date || '').slice(0, 10) + '-' + h.toString(36).slice(0, 6); }
+const shortOf = (x, lang) => { const own = lang === 'en' ? x.short : x.tls && x.tls[lang]; return own || shortLine(lang === 'en' ? x.text : x.tl && x.tl[lang], lang); };
 const LBL = { en: ['DATA', 'SHIPPED'], es: ['DATOS', 'NOVEDAD'], de: ['DATEN', 'NEU'], fr: ['DONNÉES', 'NOUVEAU'], nl: ['DATA', 'NIEUW'], ru: ['ДАННЫЕ', 'НОВОЕ'], zh: ['数据', '新功能'], ar: ['بيانات', 'جديد'] };   // same labels as site.js (SHIPL)
 const LOCT = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const dayL = (s, lang) => { if (lang === 'en') return day(s); const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); if (isNaN(x)) return ''; try { return new Intl.DateTimeFormat(LOCT[lang], { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(x); } catch (e) { return day(s); } };
@@ -49,8 +62,9 @@ export async function tickerHtml(env, lang) {
   items.sort((a, b) => String(b.date).localeCompare(String(a.date)));
   for (const x of items) { const k = x.text.toLowerCase().trim(); if (seen.has(k)) continue; seen.add(k); out.push(x); if (out.length >= 16) break; }
   const L = LBL[lang];
+  const up = (lang === 'en' ? '' : '/' + lang) + '/updates/#';
   const h = out.map(x => { const t = lang === 'en' ? x.text : x.tl && x.tl[lang]; if (!t) return '';
-    return '<span class="si"><b>' + esc(dayL(x.date, lang)) + '</b><em class="' + (x.kind === 'data' ? 'k-data">' + L[0] : 'k-feature">' + L[1]) + '</em>' + esc(t) + '</span>'; }).join('');
+    return '<a class="si" href="' + up + tickId(x) + '"><b>' + esc(dayL(x.date, lang)) + '</b><em class="' + (x.kind === 'data' ? 'k-data">' + L[0] : 'k-feature">' + L[1]) + '</em>' + esc(shortOf(x, lang)) + '</a>'; }).join('');
   C.h[lang] = h;
   return h;
 }

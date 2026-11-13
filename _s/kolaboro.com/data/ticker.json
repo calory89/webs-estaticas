@@ -4,6 +4,21 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "url": "/map/",
+   "text": "Project pages open with a six-check traffic light and folded sections; new map, currency selector, cost calculator and checklist.",
+   "tl": {
+    "es": "Las fichas empiezan con un semáforo de seis comprobaciones y secciones plegadas; nuevo mapa, selector de moneda, calculadora de costes y checklist.",
+    "fr": "Les fiches s’ouvrent sur un feu de six vérifications et des sections repliées ; nouvelle carte, choix de devise, calculateur de coûts et liste.",
+    "de": "Projektseiten beginnen mit einer Ampel aus sechs Prüfungen und eingeklappten Abschnitten; neue Karte, Währungswahl, Kostenrechner und Checkliste.",
+    "nl": "Projectpagina’s openen met een stoplicht van zes controles en ingeklapte secties; nieuwe kaart, valutakeuze, kostencalculator en checklist.",
+    "ru": "Страницы проектов начинаются со светофора из шести проверок и свёрнутых разделов; новая карта, выбор валюты, калькулятор затрат и чек-лист.",
+    "zh": "项目页面以六项检查信号灯和折叠章节开头；新增地图、币种选择、成本计算器和清单。",
+    "ar": "تبدأ صفحات المشاريع بإشارة من ستة فحوص وأقسام مطوية؛ وخريطة جديدة واختيار العملة وحاسبة التكاليف وقائمة تحقق."
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "text": "Free project report as PDF and a weekly page of what changed in each island and city",
    "tl": {
     "es": "Informe gratuito del proyecto en PDF y página semanal de lo que cambió en cada isla y ciudad",

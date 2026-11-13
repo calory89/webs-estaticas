@@ -54,8 +54,8 @@ export function leadify(body, leads) {
     const a = body.indexOf('</h2>', i), so = body.indexOf('<summary', i), b = so >= 0 ? body.indexOf('</summary>', so) : -1;
     const useS = b >= 0 && (a < 0 || so < a);   // a heading inside a folded <summary>: the lead goes after the summary, into the open body
     if (!useS && a < 0) continue;
-    const end = useS ? b + 10 : a + 5;
-    if (body.slice(end, end + 40).includes('class="klead"')) continue;
+    const end = useS ? b : a + 5;   // n27u: in a folded section the lead goes at the end of the <summary>, under the heading, so it shows while folded
+    if (body.slice(end, end + 40).includes('class="klead"') || (useS && body.slice(so, b).includes('class="klead"'))) continue;
     body = body.slice(0, end) + '<p class="klead">' + html + '</p>' + body.slice(end); n++;
   }
   return n ? body.replace('<div class="wrap kwrap">', LEAD_CSS + '<div class="wrap kwrap">') : body;
