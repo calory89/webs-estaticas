@@ -6,7 +6,7 @@ EXTRA_UI3 = {
  "gt_note": "Drive times are estimates for a car with a driver, at about 35 km/h on average including stops and slow village stretches. Allow more time in the rainy season and on the last unpaved section.",
  "u_h": "h", "u_min": "min",
  "sun_t": "Sunrise and sunset",
- "sun_b": "At {n} the sun rises between {r1} and {r2} and sets between {s1} and {s2}, local time (WITA, UTC+8), depending on the month. So close to the equator, days last about 12 hours all year, and it gets dark quickly after sunset.",
+ "sun_b": "Sunrise here is between {r1} and {r2} and sunset between {s1} and {s2}, local time (WITA, UTC+8), depending on the month. So close to the equator, days last about 12 hours all year, and it gets dark quickly after sunset.",
  "clim_t": "Climate near {n} by month",
  "clim_m": "Month", "clim_max": "Max °C", "clim_min": "Min °C", "clim_rain": "Rain mm", "clim_days": "Rain days",
  "clim_note": "Monthly averages for 2015 to 2024 from Open-Meteo historical weather data (ERA5 reanalysis, a weather model) for the nearest area: {s}. Treat rainfall as approximate: models tend to overestimate it in dry areas.",
