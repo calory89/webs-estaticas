@@ -3,6 +3,127 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'news',
+ 'slug': 'east-sumba-malaria-250-cases-2026-illegal-gold-pits',
+ 'date': '2026-11-14',
+ 'time': '07:10',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'img_key': 'illegal-gold-panning-east-sumba-paberiwai',
+ 'slugs': {'es': 'sumba-oriental-250-casos-malaria-2026-minas-oro-ilegales', 'id': 'malaria-sumba-timur-250-kasus-2026-lubang-tambang-emas-ilegal'},
+ 'keywords': {'en': ['malaria Sumba', 'East Sumba malaria cases 2026', 'malaria risk Sumba travellers', 'illegal gold mining Sumba', 'Melolo Umalulu malaria'],
+              'es': ['malaria en Sumba', 'casos de malaria Sumba Oriental 2026', 'riesgo de malaria Sumba viajeros', 'minería ilegal de oro Sumba', 'malaria Melolo Umalulu'],
+              'id': ['malaria Sumba Timur', 'kasus malaria Sumba Timur 2026', 'risiko malaria wisatawan Sumba', 'tambang emas ilegal Sumba', 'malaria Melolo Umalulu']},
+ 'en': {'title': 'East Sumba logs 250 malaria cases in 2026, up from 46 in 2025',
+        'dek': 'The health office suspects abandoned pits from illegal gold panning are breeding mosquitoes; most cases are around Melolo and Umalulu.',
+        'answer': 'East Sumba recorded 250 malaria cases in 2026, more than five times the 46 of 2025, the regency health office said on Thursday 12 November 2026, according to Pos-Kupang.com on 13 '
+                  'November. Officials suspect abandoned pits at illegal gold-panning sites, but the link is preliminary. Travellers should keep using mosquito protection and ask a doctor about '
+                  'prevention.',
+        'keys': ['The East Sumba Health Office counted 250 malaria cases in 2026 against 46 in 2025, with cases rising since July 2026.',
+                 '56% of cases come from the Puskesmas Melolo area; Umalulu district alone has 47 cases.',
+                 'Officials say abandoned gold-panning pits in Matawai La Pawu and nearby areas may breed the mosquitoes; they call this a preliminary finding and have identified 81 people from '
+                 'panning sites.',
+                 'Two other health centres have high incidence rates: Kambata Mapambuhang (7.9) and Kananggar (6.6).'],
+        'visitors': 'Malaria is present in East Sumba and the reported rise is centred on the Melolo and Umalulu area, a rural zone south-east of Waingapu that few visitors cross. Use repellent, '
+                    'cover up at dusk and ask a doctor or travel clinic about prophylaxis before you fly; our <a href="/en/getting-here/sumba-travel-safety-health/">Sumba health and safety guide</a> '
+                    'covers medical care on the island.',
+        'body': '<p>East Sumba has recorded 250 malaria cases so far in 2026, more than five times the 46 cases of 2025, according to Pos-Kupang.com, which reported on Friday 13 November 2026 on '
+                'remarks by the regency health office. Rambu Hamueti Ndapanandjar, head of the Disease Prevention and Control Division, spoke on Thursday 12 November at a planning event on AIDS, '
+                'tuberculosis and malaria at Hotel Padadita in Waingapu. Times are WITA (UTC+8).</p><h2>How many malaria cases has East Sumba recorded in 2026?</h2><p>Ndapanandjar said cases have '
+                'been rising since July 2026 and that the average is about 10 positive cases per 1,000 residents, as reported. More than half, 56%, come from the Puskesmas Melolo area (puskesmas '
+                'means community health centre), and 47 cases were found in Umalulu district. Two other health centres show high incidence: Kambata Mapambuhang at 7.9 and Kananggar at 6.6 on the '
+                'Annual Parasite Incidence scale.</p><p>These numbers cannot be directly compared with the regency figure of 0.84 cases per 1,000 people through the third quarter that officials gave '
+                'at a forum on 11 November, which we covered in our <a href="/en/living/east-sumba-targets-end-of-aids-tb-malaria-malaria-rate-0-84/">earlier report on the elimination plan</a>. The '
+                'two reports appear to use different measures, and the article does not explain the difference.</p><h2>Are illegal gold pits behind the rise?</h2><p>The health office suspects so. '
+                'Its initial investigation points to gold-panning sites in Matawai La Pawu and nearby areas, where abandoned pits can hold water and breed mosquitoes. Officials say 81 people from '
+                'the sites have been identified across several districts. Residents of Umalulu reportedly stay at the sites for four to five days, leaving on Monday and returning on Saturday, which '
+                'could carry the disease between villages. The office describes this as a preliminary finding of an investigation still under way, not a confirmed cause.</p><p>Unlicensed panning in '
+                'the regency has been reported before: see our story on <a href="/en/news/illegal-gold-panning-east-sumba-paberiwai/">farmers leaving fields for the rivers in Paberiwai '
+                'district</a>.</p><h2>What is the health office doing about malaria?</h2><p>The office listed six priorities: finding cases, epidemiological investigation, mapping areas where the '
+                'disease can spread, combining malaria care with maternal and child health services, monitoring the movement of people, and prevention education.</p><h2>What it means</h2><p>For '
+                'travellers, malaria in East Sumba is a real but manageable risk, and the rise is concentrated in a rural area rather than in Waingapu town or the main tourist routes, according to '
+                'the figures reported. For anyone living in or investing around East Sumba, the story links public health to unlicensed mining and land use. Anyone with fever after time in a rural '
+                'area should get a malaria test at a puskesmas or hospital, and tell the doctor about any trip to Sumba after returning home. See the <a href="/en/places/east-sumba-regency/">East '
+                'Sumba regency page</a> for the area.</p>',
+        'faq': [['Is there malaria in Sumba in 2026?',
+                 'Yes. East Sumba recorded 250 cases in 2026 against 46 in 2025, the regency health office said on 12 November 2026, with most cases around Melolo and Umalulu.'],
+                ['What causes the rise in malaria in East Sumba?',
+                 'Officials suspect abandoned pits at illegal gold-panning sites breed mosquitoes, but they describe this as a preliminary finding from an ongoing investigation.']]},
+ 'es': {'title': 'Sumba Oriental suma 250 casos de malaria en 2026, frente a 46 en 2025',
+        'dek': 'Sanidad sospecha que las fosas abandonadas de la minería ilegal de oro crían mosquitos; la mayoría de los casos, en Melolo y Umalulu.',
+        'answer': 'Sumba Oriental ha registrado 250 casos de malaria en 2026, más de cinco veces los 46 de 2025, según la oficina de salud de la regencia el jueves 12 de noviembre de 2026, recogido '
+                  'por Pos-Kupang.com el 13 de noviembre. Las autoridades sospechan de las fosas abandonadas de la minería ilegal de oro, aunque el vínculo es preliminar. Los viajeros deben seguir '
+                  'protegiéndose de los mosquitos y consultar a un médico.',
+        'keys': ['La oficina de salud de Sumba Oriental contó 250 casos de malaria en 2026 frente a 46 en 2025, con aumento desde julio de 2026.',
+                 'El 56% de los casos procede del área del centro de salud (puskesmas) de Melolo; solo el distrito de Umalulu suma 47.',
+                 'Las autoridades creen que las fosas abandonadas de bateo de oro en Matawai La Pawu y alrededores pueden criar mosquitos; lo consideran un hallazgo preliminar y han identificado a '
+                 '81 personas de esos lugares.',
+                 'Otros dos centros de salud tienen incidencias altas: Kambata Mapambuhang (7,9) y Kananggar (6,6).'],
+        'visitors': 'La malaria existe en Sumba Oriental y el aumento se concentra en la zona de Melolo y Umalulu, un área rural al sureste de Waingapu que pocos visitantes atraviesan. Usa '
+                    'repelente, cúbrete al atardecer y consulta a un médico o a un centro de viajeros sobre la profilaxis antes de volar; nuestra <a '
+                    'href="/en/getting-here/sumba-travel-safety-health/">guía de salud y seguridad en Sumba</a> explica la atención médica en la isla.',
+        'body': '<p>Sumba Oriental ha registrado 250 casos de malaria en lo que va de 2026, más de cinco veces los 46 de 2025, según Pos-Kupang.com, que informó el viernes 13 de noviembre de 2026 de '
+                'las declaraciones de la oficina de salud de la regencia. Rambu Hamueti Ndapanandjar, jefa de la división de prevención y control de enfermedades, habló el jueves 12 de noviembre en '
+                'un acto de planificación sobre sida, tuberculosis y malaria en el hotel Padadita de Waingapu. Las horas son WITA (UTC+8).</p><h2>¿Cuántos casos de malaria hay en Sumba Oriental en '
+                '2026?</h2><p>Ndapanandjar explicó que los casos suben desde julio de 2026 y que la media es de unos 10 positivos por cada 1.000 habitantes, según lo publicado. Más de la mitad, el '
+                '56%, procede del área del puskesmas (centro de salud comunitario) de Melolo, y en el distrito de Umalulu se detectaron 47 casos. Otros dos centros muestran una incidencia alta: '
+                'Kambata Mapambuhang, con 7,9, y Kananggar, con 6,6, en la escala de incidencia parasitaria anual.</p><p>Estas cifras no se pueden comparar sin más con la de 0,84 casos por 1.000 '
+                'habitantes hasta el tercer trimestre que las autoridades dieron en un foro el 11 de noviembre, que contamos en nuestra <a '
+                'href="/en/living/east-sumba-targets-end-of-aids-tb-malaria-malaria-rate-0-84/">crónica anterior sobre el plan de eliminación</a>. Parecen usar medidas distintas y el artículo no '
+                'explica la diferencia.</p><h2>¿Están detrás las fosas ilegales de oro?</h2><p>La oficina de salud lo sospecha. Su investigación inicial apunta a los lugares de bateo de oro en '
+                'Matawai La Pawu y alrededores, donde las fosas abandonadas pueden acumular agua y criar mosquitos. Según las autoridades, se ha identificado a 81 personas de esos lugares en varios '
+                'distritos. Vecinos de Umalulu permanecen allí, según se informa, de cuatro a cinco días: salen el lunes y vuelven el sábado, lo que podría llevar la enfermedad de un pueblo a otro. '
+                'La oficina lo presenta como un hallazgo preliminar de una investigación en curso, no como una causa confirmada.</p><p>Ya se había informado del bateo de oro sin licencia en la '
+                'regencia: lea nuestra crónica sobre <a href="/en/news/illegal-gold-panning-east-sumba-paberiwai/">los agricultores que dejan los campos por los ríos en el distrito de '
+                'Paberiwai</a>.</p><h2>¿Qué hace Sanidad contra la malaria?</h2><p>La oficina enumeró seis prioridades: detectar casos, investigación epidemiológica, cartografiar las zonas donde '
+                'puede propagarse la enfermedad, integrar la atención de la malaria con los servicios de salud materno-infantil, vigilar los desplazamientos de personas y educar en '
+                'prevención.</p><h2>Qué significa</h2><p>Para los viajeros, la malaria en Sumba Oriental es un riesgo real pero manejable, y según las cifras publicadas el aumento se concentra en '
+                'una zona rural, no en la ciudad de Waingapu ni en las rutas turísticas principales. Para quienes viven o invierten en Sumba Oriental, la noticia une salud pública, minería sin '
+                'licencia y uso del suelo. Quien tenga fiebre tras pasar tiempo en una zona rural debe hacerse una prueba de malaria en un puskesmas o un hospital, y decir al médico, al volver a '
+                'casa, que ha estado en Sumba. Consulta la <a href="/en/places/east-sumba-regency/">ficha de la regencia de Sumba Oriental</a>.</p>',
+        'faq': [['¿Hay malaria en Sumba en 2026?',
+                 'Sí. Sumba Oriental registró 250 casos en 2026 frente a 46 en 2025, según la oficina de salud de la regencia el 12 de noviembre de 2026, la mayoría en torno a Melolo y Umalulu.'],
+                ['¿Por qué sube la malaria en Sumba Oriental?',
+                 'Las autoridades sospechan que las fosas abandonadas de la minería ilegal de oro crían mosquitos, pero lo presentan como un hallazgo preliminar de una investigación en curso.']]},
+ 'id': {'title': 'Sumba Timur catat 250 kasus malaria 2026, naik dari 46 pada 2025',
+        'dek': 'Dinas Kesehatan menduga lubang bekas pendulangan emas ilegal menjadi sarang nyamuk; kasus terbanyak di sekitar Melolo dan Umalulu.',
+        'answer': 'Kabupaten Sumba Timur mencatat 250 kasus malaria sepanjang 2026, lebih dari lima kali lipat dibanding 46 kasus pada 2025, kata Dinas Kesehatan pada Kamis 12 November 2026 seperti '
+                  'diberitakan Pos-Kupang.com pada 13 November. Petugas menduga lubang bekas pendulangan emas ilegal berperan, tetapi dugaan itu masih awal. Wisatawan tetap perlu melindungi diri '
+                  'dari gigitan nyamuk dan berkonsultasi dengan dokter.',
+        'keys': ['Dinas Kesehatan Sumba Timur mencatat 250 kasus malaria pada 2026, dibanding 46 kasus pada 2025, dengan tren naik sejak Juli 2026.',
+                 'Sebanyak 56 persen kasus berasal dari wilayah Puskesmas Melolo; Kecamatan Umalulu saja menyumbang 47 kasus.',
+                 'Petugas menduga lubang bekas pendulangan emas di Matawai La Pawu dan sekitarnya menjadi sarang nyamuk; temuan ini masih awal dan 81 orang dari lokasi pendulangan sudah '
+                 'teridentifikasi.',
+                 'Dua puskesmas lain ber-API tinggi: Kambata Mapambuhang (7,9) dan Kananggar (6,6).'],
+        'visitors': 'Malaria ada di Sumba Timur dan kenaikan yang dilaporkan terpusat di wilayah Melolo dan Umalulu, kawasan pedesaan di tenggara Waingapu yang jarang dilewati wisatawan. Gunakan '
+                    'losion antinyamuk, kenakan pakaian tertutup saat senja, dan tanyakan kepada dokter tentang profilaksis sebelum berangkat; <a '
+                    'href="/en/getting-here/sumba-travel-safety-health/">panduan kesehatan dan keselamatan Sumba</a> kami membahas layanan medis di pulau ini.',
+        'body': '<p>Kabupaten Sumba Timur mencatat 250 kasus malaria sepanjang 2026, lebih dari lima kali lipat dibanding 46 kasus pada 2025, menurut Pos-Kupang.com yang memberitakan pada Jumat 13 '
+                'November 2026 pernyataan Dinas Kesehatan kabupaten. Kepala Bidang Pencegahan dan Pengendalian Penyakit, Rambu Hamueti Ndapanandjar, berbicara pada Kamis 12 November dalam acara '
+                'penyusunan program penanggulangan AIDS, tuberkulosis, dan malaria di Hotel Padadita, Waingapu. Waktu dalam WITA (UTC+8).</p><h2>Berapa kasus malaria di Sumba Timur pada '
+                '2026?</h2><p>Menurut Ndapanandjar, kasus naik sejak Juli 2026 dengan rata-rata sekitar 10 kasus positif per 1.000 penduduk, sebagaimana diberitakan. Lebih dari separuh, yakni 56 '
+                'persen, berasal dari wilayah Puskesmas Melolo, dan 47 kasus ditemukan di Kecamatan Umalulu. Dua puskesmas lain menunjukkan angka tinggi: Kambata Mapambuhang 7,9 dan Kananggar 6,6 '
+                'pada skala Annual Parasite Incidence (API).</p><p>Angka ini tidak bisa langsung dibandingkan dengan API 0,84 per 1.000 penduduk hingga triwulan III yang disampaikan pada forum 11 '
+                'November, yang kami muat dalam <a href="/en/living/east-sumba-targets-end-of-aids-tb-malaria-malaria-rate-0-84/">berita sebelumnya tentang rencana eliminasi</a>. Keduanya tampaknya '
+                'memakai ukuran berbeda, dan artikel tidak menjelaskan perbedaannya.</p><h2>Apakah lubang tambang emas ilegal penyebabnya?</h2><p>Dinas Kesehatan menduga demikian. Penyelidikan awal '
+                'mengarah ke lokasi pendulangan emas di Matawai La Pawu dan sekitarnya, tempat lubang bekas galian dapat menampung air dan menjadi sarang nyamuk. Menurut petugas, 81 orang dari '
+                'lokasi tersebut telah teridentifikasi di beberapa kecamatan. Warga Umalulu dilaporkan menetap di lokasi selama empat sampai lima hari, berangkat Senin dan pulang Sabtu, yang bisa '
+                'membawa penyakit antardesa. Dinas menyebutnya temuan awal dari penyelidikan yang masih berjalan, bukan penyebab yang sudah dipastikan.</p><p>Pendulangan emas tanpa izin di kabupaten '
+                'ini pernah kami laporkan: baca <a href="/en/news/illegal-gold-panning-east-sumba-paberiwai/">warga petani meninggalkan ladang demi mendulang di sungai Kecamatan '
+                'Paberiwai</a>.</p><h2>Apa langkah Dinas Kesehatan menekan malaria?</h2><p>Dinas menyebut enam prioritas: penemuan kasus, penyelidikan epidemiologi, pemetaan wilayah reseptif dan '
+                'vektor, integrasi layanan malaria dengan kesehatan ibu dan anak (KIA), pengawasan perpindahan penduduk, dan edukasi pencegahan.</p><h2>Apa artinya</h2><p>Bagi wisatawan, malaria di '
+                'Sumba Timur adalah risiko nyata namun bisa dikelola, dan menurut angka yang diberitakan kenaikannya terpusat di kawasan pedesaan, bukan di Kota Waingapu atau jalur wisata utama. '
+                'Bagi warga dan investor di Sumba Timur, berita ini menghubungkan kesehatan masyarakat dengan pertambangan tanpa izin dan tata guna lahan. Siapa pun yang demam setelah berada di '
+                'daerah pedesaan sebaiknya memeriksakan diri ke puskesmas atau rumah sakit, dan memberi tahu dokter tentang perjalanan ke Sumba setelah pulang. Lihat <a '
+                'href="/en/places/east-sumba-regency/">halaman Kabupaten Sumba Timur</a>.</p>',
+        'faq': [['Apakah ada malaria di Sumba pada 2026?',
+                 'Ada. Sumba Timur mencatat 250 kasus pada 2026 dibanding 46 pada 2025, kata Dinas Kesehatan pada 12 November 2026, terbanyak di sekitar Melolo dan Umalulu.'],
+                ['Mengapa malaria naik di Sumba Timur?',
+                 'Petugas menduga lubang bekas pendulangan emas ilegal menjadi sarang nyamuk, tetapi menyebutnya temuan awal dari penyelidikan yang masih berjalan.']]},
+ 'sources': [['Pos-Kupang.com: Lubang Tambang Emas Ilegal di Sumba Timur Diduga Picu Lonjakan Kasus Malaria (13 Nov 2026)',
+              'https://kupang.tribunnews.com/regional-ntt/986949/lubang-tambang-emas-ilegal-di-sumba-timur-diduga-picu-lonjakan-kasus-malaria'],
+             ['Pos-Kupang.com: Pemkab Sumba Timur Bertekad Eliminasi AIDS, TBC dan Malaria (12 Nov 2026)',
+              'https://kupang.tribunnews.com/regional-ntt/986787/pemkab-sumba-timur-bertekad-eliminasi-aids-tbc-dan-malaria']]},
 {
  "section": "projects",
  "slug": "waingapu-shrimp-farm-nearly-20-percent-built-2028",
