@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-13",
+   "kind": "shipped",
+   "text": "Answer files per place and developer, project CSV downloads, developer dashboards and public usage counts",
+   "tl": {
+    "es": "Respuestas por lugar y promotor, descargas CSV por proyecto, panel del promotor y uso público",
+    "fr": "Réponses par lieu et promoteur, CSV par projet, tableau de bord promoteur et usage public",
+    "de": "Antworten je Ort und Bauträger, CSV je Projekt, Bauträger-Übersicht und öffentliche Nutzungszahlen",
+    "nl": "Antwoorden per plaats en ontwikkelaar, CSV per project, ontwikkelaarsdashboard en openbaar gebruik",
+    "ru": "Ответы по местам и застройщикам, CSV по проектам, панель застройщика и открытая статистика",
+    "zh": "按地点和开发商的答案文件、项目 CSV 下载、开发商面板和公开使用数据",
+    "ar": "ملفات إجابات لكل مكان ومطوّر، تنزيل CSV لكل مشروع، لوحة المطوّر وأرقام استخدام عامة"
+   }
+  },
+  {
+   "date": "2026-11-13",
    "kind": "data",
    "text": "100 more projects added in 15 countries of the Americas and Asia-Pacific: the USA (Miami, Austin), Thailand, Indonesia (Bali), Vietnam, Malaysia, Brazil (Balneário Camboriú), the Philippines, Cambodia, Japan, Australia, Canada, Uruguay, Paraguay, Costa Rica and the Dominican Republic (1,595 tracked in total): 97 have a delivery or completion date as published, every fact links to the page it came from, and none is reviewed or scored yet",
    "tl": {

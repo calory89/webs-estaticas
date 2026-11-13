@@ -571,6 +571,13 @@
     };
     (window.kbWhenActive || function (f) { f(); })(function () {
     var seen = false; try { seen = !!sessionStorage.getItem('kb-visit'); sessionStorage.setItem('kb-visit', '1'); } catch (e) { seen = true; }
+    // n27a (13 Nov 2026): return visits, only for visitors who accepted analytics cookies and send no Global Privacy Control signal.
+    // The browser keeps the date of its first visit (no id); once per session one bucket name is sent, nothing else.
+    try { if (!seen && /(?:^|;\s*)eq_consent=all(?:;|$)/.test(document.cookie) && !navigator.globalPrivacyControl && navigator.sendBeacon && !/^\/(admin|portal|agents\/me)/.test(location.pathname)) {
+      var fv = localStorage.getItem('kb-fv'), td = new Date().toISOString().slice(0, 10), bk = 'new';
+      if (fv && /^\d{4}-\d{2}-\d{2}$/.test(fv)) { var dd = Math.floor((Date.parse(td) - Date.parse(fv)) / 864e5); bk = dd < 1 ? 'd0' : dd <= 7 ? 'd1_7' : dd <= 30 ? 'd8_30' : 'd31p'; } else localStorage.setItem('kb-fv', td);
+      if (bk) navigator.sendBeacon('/api/open/rv?b=' + bk);
+    } } catch (e) {}
     if (!seen && !/^\/(admin|portal|agents\/me)/.test(location.pathname) && !/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)) rpc('kolaboro_event', { p_kind: 'visit', p_page: location.pathname.slice(0, 200), p_data: { src: a.src, medium: a.medium, campaign: a.campaign, ref: a.ref } }).catch(function(){});
     });
   } catch (e) {}

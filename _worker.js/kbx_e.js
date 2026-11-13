@@ -149,6 +149,17 @@ const TOOLS = [
     inputSchema: { type: 'object', additionalProperties: false, properties: {
       slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' }, id: { type: 'string', pattern: '^[A-Za-z0-9-]{3,20}$' }, lang: { type: 'string', enum: ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], default: 'en' } } },
     annotations: Object.assign({ title: 'Quick answer about one named project' }, RO) },
+  { name: 'compare_projects', title: 'Compare named projects',
+    description: 'Compare 2 to 5 named projects side by side (by page slug like unsere-flora-berlin or id like BER-001): developer, place, stage, handover date on record and how often it moved, months past the first handover date, permit number published, deposit protection stated, transparency score, last checked, links. Facts only, no verdict; the same rows as https://kolaboro.com/compare/.',
+    inputSchema: { type: 'object', additionalProperties: false, required: ['projects'], properties: {
+      projects: { type: 'array', minItems: 2, maxItems: 5, items: { type: 'string', pattern: '^[A-Za-z0-9-]{1,90}$' }, description: 'Page slugs or ids' } } },
+    annotations: Object.assign({ title: 'Compare named projects' }, RO) },
+  { name: 'list_by_handover_year', title: 'Named projects by handover year',
+    description: 'Named projects whose handover date on record falls in a given year, optionally in one market (e.g. "Dubai") or country, with the same fact rows as compare_projects. Dates are as published or as last seen on the developer page; past-due months are counted from the first date on record.',
+    inputSchema: { type: 'object', additionalProperties: false, required: ['year'], properties: {
+      year: { type: 'integer', minimum: 2020, maximum: 2040 }, market: { type: 'string', maxLength: 60 }, country: { type: 'string', maxLength: 60 },
+      limit: { type: 'integer', minimum: 1, maximum: 100, default: 25 }, offset: { type: 'integer', minimum: 0, maximum: 10000, default: 0 } } },
+    annotations: Object.assign({ title: 'Named projects by handover year' }, RO) },
   { name: 'market_stats', title: 'Market statistics',
     description: 'Per-market statistics: projects tracked, average checks public and confirmed, share with a public permit, share with deposit protection (escrow), projects with all six public, flagged projects, and the transparency index (0-100, markets with 3+ projects). Without filters returns GET /api/open/markets as published.',
     inputSchema: { type: 'object', additionalProperties: false, properties: {
@@ -208,6 +219,16 @@ async function runTool(env, name, a) {
       checklist: tp ? tp.items.map(i => ({ item: i.label, status: i.st, text: i.text })) : [], last_checked: N.lastmod(ix, x), answers: 'https://kolaboro.com/answers/' + x.s + '.md', sections: [url + '#answer', url + '#legit', url + '#delivery', url + '#promise', url + '#developer', url + '#where'],
       rules: 'Facts only, each with its source on the page. Kolaboro gives no verdict about a named company. The transparency score counts what is published and checkable, not quality.' }, null, 1);
     return [await signed(env, body, url + '#answer')];
+  }
+  if (name === 'compare_projects') {   // n27a (batch 27)
+    const L = a.projects; if (!Array.isArray(L) || L.length < 2 || L.length > 5 || L.some(v => typeof v !== 'string' || !/^[A-Za-z0-9-]{1,90}$/.test(v))) throw argErr('projects must be 2 to 5 page slugs or ids');
+    const K = await import('./kbx_n27a.js'), d = await K.mcpCompare(env, L.map(v => /^[A-Z]/.test(v) ? v : v.toLowerCase()));
+    return [await signed(env, JSON.stringify(d, null, 1), d.compare_page || 'https://kolaboro.com/compare/')];
+  }
+  if (name === 'list_by_handover_year') {   // n27a (batch 27)
+    const year = int(a, 'year', 2020, 2040, null); if (year == null) throw argErr('year is required');
+    const K = await import('./kbx_n27a.js'), d = await K.mcpByYear(env, { year, market: str(a, 'market'), country: str(a, 'country'), limit: int(a, 'limit', 1, 100, 25), offset: int(a, 'offset', 0, 10000, 0) });
+    return [await signed(env, JSON.stringify(d, null, 1), 'https://kolaboro.com/data/named.json (handover year ' + year + ')')];
   }
   if (name === 'market_stats') {
     const m = str(a, 'market'), c = str(a, 'country'), r = await openCall(env, '/api/open/markets');
