@@ -21,6 +21,7 @@ import { TRS } from './kbx_tr_i18n.js';
 import { hdisp } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E as E27 } from './kbx_e27_i18n.js';
+import { t27 } from './kbx_t27_i18n.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -286,7 +287,9 @@ function crumbHtml(lang, list) { return '<p class="k-crumb">' + list.map((x, i) 
 const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: list.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
 const year = () => new Date().getUTCFullYear();
 function linksHtml(lang, slug) {
-  return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">' + esc(t(lang, 'all_places')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a><a href="/api/x/transparency' + (slug ? '/' + slug : '') + '">' + esc(t(lang, 'json')) + '</a><a href="/rankings/">' + esc(t(lang, 'crumb_r')) + '</a>' + (slug && TR_PLACES.some(q => q.s === slug && !q.coi) ? '<a href="' + pre(lang) + '/weekly/' + slug + '/">' + esc((E27[lang] || E27.en).wk_t.replace('{p}', TR_PLACES.find(q => q.s === slug).n)) + '</a>' : '') + '</p>';   // n27e: weekly changes of the place
+  return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">' + esc(t(lang, 'all_places')) + '</a><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a><a href="/api/x/transparency' + (slug ? '/' + slug : '') + '">' + esc(t(lang, 'json')) + '</a><a href="/rankings/">' + esc(t(lang, 'crumb_r')) + '</a>' + (slug && TR_PLACES.some(q => q.s === slug && !q.coi) ? '<a href="' + pre(lang) + '/weekly/' + slug + '/">' + esc((E27[lang] || E27.en).wk_t.replace('{p}', TR_PLACES.find(q => q.s === slug).n)) + '</a>' : '') +
+    // n27t (batch 27): the same figures as CSV (CC BY 4.0) and the badge for projects scoring 70 or more (kbx_t27.js)
+    (slug ? '<a href="/rankings/transparency/' + slug + '.csv" download>' + esc(t27(lang, 'csv_place')) + '</a>' : '') + '<a href="/rankings/transparency.csv" download>' + esc(t27(lang, 'csv_all')) + '</a><a href="' + pre(lang) + '/transparency-badge/">' + esc(t27(lang, 'csv_badge')) + '</a></p>';   // n27e: weekly changes of the place
 }
 
 // n26i (batch 26): projects with almost nothing published yet stay on their own pages and are grouped here too, in short rows with a
@@ -333,7 +336,7 @@ function placePage(ix, slug, lang) {
   const ld = [
     { '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: P.n, address: { '@type': 'PostalAddress', addressCountry: P.cc } } },
     { '@type': 'ItemList', name: title, numberOfItems: pl.n, itemListOrder: pl.ranked ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: items },
-    { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, spatialCoverage: { '@type': 'Place', name: P.n }, variableMeasured: t('en', 'name') + ' (0-100)', measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency/' + slug }] },
+    { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, spatialCoverage: { '@type': 'Place', name: P.n }, variableMeasured: t('en', 'name') + ' (0-100)', measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency/' + slug }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/rankings/transparency/' + slug + '.csv' }] },
     crumbLd(lang, cr)];
   return { title, desc, body, ld, path };
 }
@@ -352,7 +355,7 @@ function hubPage(ix, lang) {
   const url = PUB(lang, path), all = [...ix.places.values()];
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'ItemList', name: title, numberOfItems: all.length, itemListElement: all.map((pl, i) => ({ '@type': 'ListItem', position: i + 1, name: pl.P.n, url: PUB(lang, '/rankings/transparency/' + pl.P.s + '/') })) },
-    { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency' }] },
+    { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/rankings/transparency.csv' }] },
     crumbLd(lang, cr)];
   return { title, desc, body, ld, path };
 }

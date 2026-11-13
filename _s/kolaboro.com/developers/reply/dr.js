@@ -27,6 +27,10 @@
   var q = new URLSearchParams(location.search).get('id');
   if (q && /^[A-Za-z]{2,5}-\d{3,4}$/.test(q)) {
     q = q.toUpperCase(); $('dr-id').value = q; if ($('rp-id')) $('rp-id').value = q;
+    // n27t (batch 27): opened from a buyer report on the project page: the reply starts with the report it answers, so the project
+    // page can show it next to that report (no new storage)
+    var rep = new URLSearchParams(location.search).get('report');
+    if (rep && /^\d{1,9}$/.test(rep)) ['drf', 'rpf'].forEach(function (f) { var fm = $(f); if (!fm) return; var ta = fm.querySelector('textarea[name="reply"]'), sel = fm.querySelector('select[name="topic"]'); if (ta && !ta.value) ta.value = 'About buyer report #' + rep + ': '; if (sel) sel.value = 'Something else'; });
     fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function (r) { return r.json(); }).then(function (d) {
       var c = (d.cases || []).filter(function (x) { return x.id === q; })[0]; if (!c) return; var b = $('rp-case'); b.hidden = false;
       b.innerHTML = '<b>' + esc(c.id) + '</b>: ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + ', ' + esc(c.country) + '. Public checks ' + c.score + '/6, confirmed ' + (c.vscore || 0) + '/6' + (c.claims && c.claims.contradicted ? ', ' + c.claims.contradicted + ' contradicted claims' : '') + (c.invited ? '. Developer invited to verify on ' + esc(c.invited) : '') + '. <a href="/p/?id=' + encodeURIComponent(c.id) + '">Open the project file</a>.';

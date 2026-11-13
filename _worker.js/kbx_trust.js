@@ -18,6 +18,7 @@
 import { TS } from './kbx_trust_i18n.js';
 import { trData } from './kbx_tr.js';
 import { placeName } from './kbx_hdate.js';
+import { t27 } from './kbx_t27_i18n.js';   // n27t: funding and conflicts of interest on /team/
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -129,8 +130,8 @@ const CSS = '<style id="kpg-css">.kpg h2{margin-top:var(--k-7,48px)}.kpg .k-grid
 const ST_BADGE = { done: 'ok', doing: 'info', next: 'plain', planned: 'plain' };
 const badge = (lang, st) => '<span class="k-badge k-badge--' + (ST_BADGE[st] || 'plain') + '">' + esc(t(lang, 'st_' + st)) + '</span>';
 const crumb = (lang, list) => '<p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + list.map((x, i) => i < list.length - 1 ? '<a href="' + x[1] + '">' + esc(x[0]) + '</a>' : '<span>' + esc(x[0]) + '</span>').join(' / ') + '</p>';
-const head = (lang, list, h1, lead, extra) => '<section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, list) + '<h1>' + h1 + '</h1><p class="lead">' + lead + '</p>' + (extra || '') + '</div>';
-const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', pre(lang) + '/']].concat(list).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
+export const head = (lang, list, h1, lead, extra) => '<section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, list) + '<h1>' + h1 + '</h1><p class="lead">' + lead + '</p>' + (extra || '') + '</div>';
+export const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', pre(lang) + '/']].concat(list).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
 const stat = (lang, v, k, src) => '<div class="kpg-st"><b>' + (v == null ? '<span class="k-muted">' + esc(t(lang, 'none')) + '</span>' : esc(nf(lang, v))) + '</b><span>' + esc(t(lang, k)) + '</span>' + (src ? '<small>' + src + '</small>' : '') + '</div>';
 const srcA = (href, label) => '<a class="k-src" href="' + esc(href) + '">' + esc(label || href) + '</a>';
 const PROG_P = '/progress/', IMP_P = '/progress/improvements/', MOD_P = '/moderation/', TEAM_P = '/team/', PRESS_P = '/press/places/';
@@ -274,6 +275,9 @@ function teamPage(lang) {
     '<h2 id="method">' + esc(t(lang, 'tm_how_h')) + '</h2>' + how +
     '<h2 id="roles">' + esc(t(lang, 'tm_roles_h')) + '</h2><ul>' + t(lang, 'tm_roles').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
     '<h2 id="not">' + esc(t(lang, 'tm_not_h')) + '</h2><ul>' + t(lang, 'tm_not').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
+    // n27t (batch 27): who pays for Kolaboro and the conflicts of interest, from what /pricing/, /independence/ and the footer already say
+    '<h2 id="funding">' + esc(t27(lang, 'tm_fund_h')) + '</h2><ul>' + t27(lang, 'tm_fund').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a class="k-src" href="' + pre(lang) + '/pricing/">' + esc(t27(lang, 'l_price')) + '</a></p>' +
+    '<h2 id="conflicts">' + esc(t27(lang, 'tm_coi_h')) + '</h2><ul>' + t27(lang, 'tm_coi').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a class="k-src" href="/independence/">' + esc(t27(lang, 'l_ind')) + '</a> · <a class="k-src" href="' + pre(lang) + '/contact/">' + esc(t27(lang, 'l_contact')) + '</a> · <a class="k-src" href="' + pre(lang) + '/corrections/">' + esc(t27(lang, 'l_corr')) + '</a></p>' +
     '<h2 id="review">' + esc(t(lang, 'tm_rev_h')) + '</h2><p>' + esc(tx(lang, 'tm_rev', { d: fdt(REVIEWED, lang) })) + '</p>' +
     linkList(lang, [[pre(lang) + '/how-we-score/', 'l_score'], [pre(lang) + '/methods/transparency-score/', 'l_tsm'], ['/registers/', 'l_reg'], [pre(lang) + MOD_P, 'l_mod'], ['/independence/', 'l_ind'], ['/corrections/', 'l_corr'], ['/changelog/', 'l_chg']]) + '</div></div></section></div>';
   const title = t(lang, 'tm_title'), desc = t(lang, 'tm_desc'), url = ORIGIN + pre(lang) + TEAM_P;
@@ -299,6 +303,10 @@ export async function page(req, u, env, ctx, shell, inner) {
     if (kind === 'progress') { const sm = await sitemapUrls(env, inner, ctx); const rec = sm == null && D.days[0] && D.days[0].sitemap_urls ? D.days[0] : null; pg = progressPage(D, lang, sm != null ? sm : rec ? rec.sitemap_urls : null, rec && rec.d); }
     else pg = improvementsPage(D, lang);
   }
+  return trustRender(lang, pg, shell);
+}
+// n27t (batch 27): the same page frame for the trust pages of kbx_t27.js (/corrections/, /buyer-cases/, /cite/, /contact/, /transparency-badge/)
+export async function trustRender(lang, pg, shell) {
   const sh = await shell(pre(lang) + '/how-we-score/');
   const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + pg.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
   const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +
@@ -313,7 +321,7 @@ export async function page(req, u, env, ctx, shell, inner) {
     .on('main', { element(e) { e.setInnerContent(pg.body, { html: true }); } })
     .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + pg.path); } })
     .transform(new Response(sh.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
-  return new Response(await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+  return new Response(await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=' + (pg.ttl || 600) } });
 }
 
 async function sitemapXml(env) {
@@ -321,6 +329,10 @@ async function sitemapXml(env) {
   let lm = { [PROG_P]: day(new Date()), [IMP_P]: '2026-11-13', [MOD_P]: REVIEWED, [TEAM_P]: REVIEWED, [PRESS_P]: null };
   try { const ix = await trData(env); lm[PRESS_P] = ix.updated; for (const pl of pressPlaces(ix)) if (pl.n >= MIN_PRESS) { paths.push(PRESS_P + pl.P.s + '/'); lm[PRESS_P + pl.P.s + '/'] = ix.updated; } } catch (e) {}
   try { const p = await opt(env, 'progress.json'); if (p && p.items_updated) lm[IMP_P] = p.items_updated; } catch (e) {}
+  // n27t (batch 27): the trust pages of kbx_t27.js
+  for (const p of ['/corrections/', '/buyer-cases/', '/cite/', '/contact/', '/transparency-badge/']) { paths.push(p); lm[p] = REVIEWED; }
+  try { const c = await opt(env, 'corrections.json'); if (c && c.updated) lm['/corrections/'] = c.updated; } catch (e) {}
+  if (lm[PRESS_P]) lm['/transparency-badge/'] = lm[PRESS_P];
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc>' + (lm[p] ? '<lastmod>' + lm[p] + '</lastmod>' : '') + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
 }

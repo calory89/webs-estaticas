@@ -79,13 +79,16 @@ function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\
 // one footer line after "Changelog", and a line under the /changelog/ heading (the changelog file itself is edited by the lead only)
 const PROG_L = {"en": "Progress", "es": "Avances", "fr": "Avancement", "de": "Fortschritt", "nl": "Voortgang", "ru": "Прогресс", "zh": "进展", "ar": "التقدّم"};
 const PROG_C = {"en": "Daily counters, the chart of projects added and the 300 improvements with their status:", "es": "Contadores diarios, el gráfico de proyectos añadidos y las 300 mejoras con su estado:", "fr": "Compteurs quotidiens, graphique des projets ajoutés et les 300 améliorations avec leur statut :", "de": "Tägliche Zähler, die Grafik der neu aufgenommenen Projekte und die 300 Verbesserungen mit ihrem Stand:", "nl": "Dagelijkse tellers, de grafiek van toegevoegde projecten en de 300 verbeteringen met hun status:", "ru": "Ежедневные счётчики, график добавленных проектов и 300 улучшений со статусом:", "zh": "每日计数、新增项目图表，以及 300 项改进及其状态：", "ar": "العدّادات اليومية، ورسم المشاريع المضافة، والتحسينات الـ300 مع حالتها:"};
+const FT27 = { en: ['Contact', 'How to cite'], es: ['Contacto', 'Cómo citar'], fr: ['Contact', 'Comment citer'], de: ['Kontakt', 'Zitieren'], nl: ['Contact', 'Citeren'], ru: ['Контакты', 'Как ссылаться'], zh: ['联系我们', '如何引用'], ar: ['اتصل بنا', 'كيف تستشهد بنا'] };
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
     let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
     const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;
-    rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } });
+    rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } })
+      // n27t (batch 27): the corrections log, contact (with response times) and how to cite, in the page language, in the footer's Trust column
+      .on('footer a[href="/corrections/"]', { element(e) { const lp = lm ? '/' + pl : ''; e.setAttribute('href', lp + '/corrections/'); e.after('</li><li><a href="' + lp + '/contact/">' + esc(FT27[pl][0]) + '</a></li><li><a href="' + lp + '/cite/">' + esc(FT27[pl][1]) + '</a>', { html: true }); } });
     if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
     if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('.ship-v[lang="en"]', { element(e) { if (lm) e.setAttribute('lang', lm[1]); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
     return rw.transform(r);

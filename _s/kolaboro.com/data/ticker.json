@@ -4,6 +4,20 @@
   {
    "date": "2026-11-13",
    "kind": "shipped",
+   "text": "Trust pages: dated corrections log, contact with response times, how to cite, ranking CSV and transparency badge",
+   "tl": {
+    "es": "Páginas de confianza: registro de correcciones con fecha, contacto con plazos de respuesta, cómo citar, CSV del ranking e insignia de transparencia",
+    "fr": "Pages de confiance : journal des corrections daté, contact avec délais de réponse, comment citer, CSV du classement et badge de transparence",
+    "de": "Vertrauensseiten: datiertes Korrekturprotokoll, Kontakt mit Antwortzeiten, Zitierhinweise, Ranking als CSV und Transparenz-Siegel",
+    "nl": "Vertrouwenspagina's: gedateerde correctielog, contact met antwoordtermijnen, citeren, ranking als CSV en transparantiebadge",
+    "ru": "Страницы доверия: журнал исправлений с датами, контакты со сроками ответа, как ссылаться, рейтинг в CSV и знак прозрачности",
+    "zh": "信任页面：带日期的更正记录、附答复时间的联系方式、引用说明、排名 CSV 和透明度徽章",
+    "ar": "صفحات الثقة: سجل تصحيحات مؤرّخ، وتواصل مع مواعيد الرد، وكيفية الاستشهاد، والتصنيف بصيغة CSV، وشارة الشفافية"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "shipped",
    "url": "/map/",
    "text": "Project pages open with a six-check traffic light and folded sections; new map, currency selector, cost calculator and checklist.",
    "tl": {

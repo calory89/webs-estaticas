@@ -40,11 +40,12 @@ import { q as qa, qaTitle, qaDesc, words, QA_CSS } from './kbx_named_qa.js';   /
 import { facetsData, projFacets, devFacets, facetT } from './kbx_facets.js';   // batch 26 (n26s): what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual
 import { leadMap, leadify, dlLine, devDash } from './kbx_n27lead.js';   // batch 27 (n27a): dated, sourced lead line per section; record downloads
 import { secZ, lightHtml, checklistHtml, Z_CSS, U27V, t27 } from './kbx_u27.js';   // batch 27 (n27u): two-level project page, six-check light, checklist, one cached client script
+import { t27 as tt27 } from './kbx_t27_i18n.js';   // batch 27 (n27t): "did you buy here?", developer reply per buyer report, moderation link
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v71';   // v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
+const CACHE_V = 'named-v72';   // v72: "did you buy here?" in the quick answer, developer reply under each buyer report, moderation link (n27t); v71: two-level project page (sections folded), six-check traffic light, before-you-sign checklist, page scripts in one cached file (n27u); v70: watch box offers the free project report and PDF (n27e); v69: dated, sourced lead line per section, record downloads, developer dashboard link (n27a); v68: what changed, total cost, official register, alternatives, comparisons, domain age, delay index, promised vs actual (n26s); v67: /projects/ carries the least-linked project pages (n26i); v66: My projects link without a direction arrow (RTL) (n26u); v65: "What next" block (compare, save, alert, ask, share), filters and sorting on /projects/, watch box titled "Alert me if the date or price changes" (n26u)
 //   // v64: market source label is the full /m/<market>/ path, not the 404 path kolaboro.com/m (n25e); v63: developer titles and descriptions fit, source wording marked in FAQ (n25t); v62: countries on developer pages, breadcrumbs (n25t, n25e); v61: handover dates in words and country names localized, Dataset JSON-LD translated, long titles fit (n25t); v60: very long project names shortened in the title (n24s)   // was
 //   'named-v59';   // v59: quick answer, question headings, checklist, where, related six, search titles (n24s)   // was
 //   'named-v58';   // v58: rank in the transparency rankings under the key facts (n23)   // was
@@ -462,10 +463,20 @@ function projectPage(ix, x, lang, extra) {
     ((ms.rv || 0) >= 8 && iso(ix.updated) ? '<p><a class="more" href="' + pre(lang) + '/stories/' + iso(ix.updated).slice(0, 7) + '/' + slugA(x.mk) + '/">' + esc(tr(lang, 'rel_story', { mk: x.mk, mo: fd(iso(ix.updated).slice(0, 7), lang) })) + '</a></p>' : '');
 
   // reviews (verified, moderated)
-  const reviews = (rv.approved_total ? '<p>' + esc(tr(lang, 'rev_some', { k: rv.approved_total })) + '</p><div class="ugc" data-ugc>' + (rv.reports || []).slice(0, 10).map(r => '<blockquote lang="en">' + esc(r.body || r.text || '') + '</blockquote>').join('') + '</div>' : '<p>' + esc(tr(lang, 'rev_none', { n: name })) + '</p>') +
-    '<p class="ki">' + esc(tr(lang, 'rev_pending')) + '</p><p><a class="btn btn-line kbtn" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'rev_btn')) + '</a></p>';
+  // n27t (batch 27): the developer's right of reply next to each buyer report. A reply answers a report when its text starts with
+  // "About buyer report #<ref>" (the developer reply form fills that line in when opened from the report's link); it is shown under
+  // that report and not repeated in the general replies below. No new storage: the same approved replies as before.
+  const DR0 = (extra.replies || []).filter(r => r && r.reply), repRx = /^\s*About buyer report #(\d+)\b[:.]?\s*/i, byRep = new Map();
+  for (const r of DR0) { const mm = repRx.exec(String(r.reply)); if (mm && !byRep.has(mm[1])) byRep.set(mm[1], r); }
+  const repReply = r => { const d = r.ref != null ? byRep.get(String(r.ref)) : null;
+    return d ? '<div class="kreply kr-rep"><p><b>' + esc(tt27(lang, 'np_dr_h')) + '</b> <small>' + esc(fd(d.approved, lang)) + (d.official && d.domain ? ' &middot; ' + esc(tr(lang, 'dr_badge', { d: d.domain })) : '') + '</small></p><p class="kreply-t" lang="en">' + esc(String(d.reply).replace(repRx, '')) + '</p></div>'
+      : '<p class="ki"><small>' + esc(tt27(lang, 'np_dr_none')) + ' <a href="/developers/reply/?id=' + encodeURIComponent(x.id) + (r.ref != null ? '&amp;report=' + encodeURIComponent(r.ref) : '') + '">' + esc(tt27(lang, 'np_dr_b')) + '</a></small></p>'; };
+  const modL = '<p class="ki"><a href="' + pre(lang) + '/moderation/">' + esc(tt27(lang, 'np_mod')) + '</a></p>';   // item 35
+  const reviews = (rv.approved_total ? '<p>' + esc(tr(lang, 'rev_some', { k: rv.approved_total })) + '</p><div class="ugc" data-ugc>' + (rv.reports || []).slice(0, 10).map(r => '<blockquote lang="en">' + esc(r.body || r.text || '') + '</blockquote>' + repReply(r)).join('') + '</div>' : '<p>' + esc(tr(lang, 'rev_none', { n: name })) + '</p>') +
+    '<p class="ki">' + esc(tr(lang, 'rev_pending')) + '</p><p><a class="btn btn-line kbtn" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'rev_btn')) + '</a></p>' + modL;
 
-  const DR = (extra.replies || []).filter(r => r && r.reply);
+  const shownRep = new Set((rv.approved_total ? (rv.reports || []).slice(0, 10) : []).map(r => r.ref != null && byRep.get(String(r.ref))).filter(Boolean));
+  const DR = DR0.filter(r => !shownRep.has(r));
   const drHtml = DR.length ? '<div class="ugc" data-replies>' + DR.slice(0, 10).map(r => {
     const badge = r.official && r.domain ? '<span class="kpill c-verified kvbadge">' + esc(tr(lang, 'dr_badge', { d: r.domain })) + '</span>' : '<span class="kpill">' + esc(tr(lang, 'dr_badge_plain')) + '</span>';
     const docs = (r.docs || []).length ? '<small>' + esc(tr(lang, 'dr_docs')) + ': ' + r.docs.slice(0, 12).map(k => esc(k.kind) + ' <code>' + esc(String(k.sha256).slice(0, 16)) + '...</code>').join(', ') + '</small><br>' : '';
@@ -527,7 +538,8 @@ function projectPage(ix, x, lang, extra) {
   const aS = qaSentences(ix, x, lang, tp, { rvN, checked });
   const fresh = '<span><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time></span>' +
     (ph && ph.n > 1 ? '<span>' + esc(tr(lang, 'upd_ver', { n: ph.n, a: fd(ph.first, lang), c: ph.changed })) + '</span>' : '') + (ph && ph.n ? '<span><a href="' + chg + '">' + esc(tr(lang, 'upd_log')) + '</a></span>' : '') +
-    '<span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span>';
+    '<span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span>' +
+    '<span><a class="kbought" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '" data-ev="seo_bought">' + esc(tt27(lang, 'np_bought')) + '</a></span>';   // n27t: item 22
   const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + bidi(lang, esc(dot(aS.join(' '))), [name, place, x.dv || '']) + '</p><p class="kans-u">' + fresh + '</p></div>';
 
   // s15a: related pages (same developer, same area, similar, side-by-side, market and country hubs)
@@ -726,6 +738,7 @@ const D12CSS = '<style id="kd12b-css">' +
   '.kwrap>.ktoc a{min-height:36px;border:0;border-radius:8px;padding:0 12px;background:none;border-inline-start:2px solid var(--line);border-radius:0;white-space:normal;line-height:1.25;padding-block:6px}.kwrap>.ktoc a:hover{color:var(--ink);border-inline-start-color:var(--ink)}.kwrap>.ktoc a[aria-current]{background:none;color:var(--ink);font-weight:700;border-inline-start-color:var(--k-sea,#155C75)}.kwrap:has(>.ktoc)>:not(.ktoc){grid-column:2}}' +
   '.ks h2 small{font-size:.5em;font-weight:500;color:var(--muted);margin-inline-start:8px;font-variant-numeric:tabular-nums;letter-spacing:0}[data-kx-lists] .lk{list-style:none;padding:0;column-gap:40px}[data-kx-lists] .lk li{margin:0;padding:7px 0;break-inside:avoid;border-bottom:1px solid var(--line)}[data-kx-lists] .lk small{display:block;font-size:.84rem;margin-top:1px}[data-kx-lists] .ks{padding-top:36px}' +
   '.kmkt summary{list-style:none;display:flex;align-items:center;gap:8px}.kmkt summary::-webkit-details-marker{display:none}.kmkt summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kmkt[open] summary::after{transform:rotate(-135deg) translateY(-2px)}.kmkt a{border-radius:var(--k-r-md,10px)}' +
+  '.kans-u .kbought{font-weight:700}.kr-rep{margin:-4px 0 14px;padding:8px 12px;border-inline-start:3px solid var(--k-sea,#155C75)}' +
   '.kans{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);background:var(--card,var(--paper));max-width:80ch}.kans p{margin:0}.kans-t{font-size:1.04rem;line-height:1.55;text-wrap:pretty}.kans-l{display:block;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:4px}.kans-u{margin-top:10px!important;font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 18px}.kans-u a{color:var(--ink-2);font-weight:600}' +
   '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
 
