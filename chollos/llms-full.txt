@@ -1,16 +1,16 @@
 # Happy Low Cost: chollos de vuelos activos (13 nov 2026)
 
-> 26 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-13T12:10:46Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 25 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-13T19:39:27Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
 ## Desde Alicante (España)
 - [Alicante → Dublín (Irlanda): 47 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-dublin-47-euros-2026-12-21/), Ryanair, directo, 21 dic 2026 a 1 ene 2027. Precio habitual 120 € (−61 %). Comprobado el 13 nov 2026.
-- [Alicante → Oslo (Noruega): 61 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-oslo-61-euros-2026-12-21/), Ryanair, directo, 21 dic 2026 a 31 dic 2026. Precio habitual 120 € (−49 %). Comprobado el 12 nov 2026.
-- [Alicante → Estocolmo (Suecia): 78 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-estocolmo-78-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 6 feb 2027. Precio habitual 140 € (−44 %). Comprobado el 12 nov 2026.
+- [Alicante → Oslo (Noruega): 61 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-oslo-61-euros-2026-12-21/), Ryanair, directo, 21 dic 2026 a 31 dic 2026. Precio habitual 120 € (−49 %). Comprobado el 13 nov 2026.
+- [Alicante → Estocolmo (Suecia): 78 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-estocolmo-78-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 6 feb 2027. Precio habitual 140 € (−44 %). Comprobado el 13 nov 2026.
 
 ## Desde Barcelona (España)
-- [Barcelona → Edimburgo (Reino Unido): 59 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-edimburgo-59-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 29 ene 2027. Precio habitual 120 € (−51 %). Comprobado el 12 nov 2026.
+- [Barcelona → Edimburgo (Reino Unido): 59 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-edimburgo-59-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 29 ene 2027. Precio habitual 120 € (−51 %). Comprobado el 13 nov 2026.
 - [Barcelona → São Paulo (Brasil): 645 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-sao-paulo-645-euros-2026-11-24/), TAP Portugal, 24 nov 2026 a 29 nov 2026. Precio habitual 1110 € (−42 %). Comprobado el 13 nov 2026.
 
 ## Desde Gran Canaria (España)
@@ -20,11 +20,11 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Madrid → Catania (Italia): 50 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-catania-50-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 16 dic 2026. Precio habitual 90 € (−44 %). Comprobado el 13 nov 2026.
 
 ## Desde Málaga (España)
-- [Málaga → Hamburgo (Alemania): 74 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-hamburgo-74-euros-2027-01-28/), Ryanair, directo, 28 ene 2027 a 4 feb 2027. Precio habitual 170 € (−56 %). Comprobado el 12 nov 2026.
-- [Málaga → Riga (Letonia): 96 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-riga-96-euros-2027-02-04/), Ryanair, directo, 4 feb 2027 a 8 feb 2027. Precio habitual 160 € (−40 %). Comprobado el 12 nov 2026.
+- [Málaga → Hamburgo (Alemania): 74 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-hamburgo-74-euros-2027-01-28/), Ryanair, directo, 28 ene 2027 a 4 feb 2027. Precio habitual 170 € (−56 %). Comprobado el 13 nov 2026.
+- [Málaga → Riga (Letonia): 96 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-riga-96-euros-2027-02-04/), Ryanair, directo, 4 feb 2027 a 8 feb 2027. Precio habitual 160 € (−40 %). Comprobado el 13 nov 2026.
 
 ## Desde Palma de Mallorca (España)
-- [Palma de Mallorca → Berlín (Alemania): 60 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-berlin-60-euros-2026-12-19/), Ryanair, directo, 19 dic 2026 a 31 dic 2026. Precio habitual 110 € (−45 %). Comprobado el 12 nov 2026.
+- [Palma de Mallorca → Berlín (Alemania): 60 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-berlin-60-euros-2026-12-19/), Ryanair, directo, 19 dic 2026 a 31 dic 2026. Precio habitual 110 € (−45 %). Comprobado el 13 nov 2026.
 - [Palma de Mallorca → Estocolmo (Suecia): 61 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-estocolmo-61-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 14 dic 2026. Precio habitual 130 € (−53 %). Comprobado el 13 nov 2026.
 - [Palma de Mallorca → Hamburgo (Alemania): 64 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-hamburgo-64-euros-2027-01-30/), Eurowings, directo, 30 ene 2027 a 31 ene 2027. Precio habitual 140 € (−54 %). Comprobado el 13 nov 2026.
 - [Palma de Mallorca → Salzburgo (Austria): 108 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-salzburgo-108-euros-2026-12-23/), Eurowings, directo, 23 dic 2026 a 1 ene 2027. Precio habitual 220 € (−51 %). Comprobado el 13 nov 2026.
@@ -34,14 +34,14 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Santiago de Compostela → Zúrich (Suiza): 85 € ida y vuelta](https://www.happylowcost.com/chollos/santiago-de-compostela-zurich-85-euros-2026-12-25/), Vueling, directo, 25 dic 2026 a 6 ene 2027. Precio habitual 190 € (−55 %). Comprobado el 13 nov 2026.
 
 ## Desde Sevilla (España)
-- [Sevilla → París (Francia): 49 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-paris-49-euros-2026-12-21/), Transavia France, directo, 21 dic 2026 a 1 ene 2027. Precio habitual 110 € (−55 %). Comprobado el 12 nov 2026.
+- [Sevilla → París (Francia): 49 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-paris-49-euros-2026-12-21/), Transavia France, directo, 21 dic 2026 a 1 ene 2027. Precio habitual 110 € (−55 %). Comprobado el 13 nov 2026.
 - [Sevilla → Bruselas (Bélgica): 68 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-bruselas-68-euros-2027-01-16/), Ryanair, directo, 16 ene 2027 a 22 ene 2027. Precio habitual 140 € (−51 %). Comprobado el 13 nov 2026.
 - [Sevilla → Nápoles (Italia): 71 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-napoles-71-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 8 feb 2027. Precio habitual 140 € (−49 %). Comprobado el 13 nov 2026.
 - [Sevilla → Cagliari (Italia): 72 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-cagliari-72-euros-2027-02-05/), Ryanair, directo, 5 feb 2027 a 8 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 13 nov 2026.
 - [Sevilla → Edimburgo (Reino Unido): 72 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-edimburgo-72-euros-2026-11-28/), Ryanair, directo, 28 nov 2026 a 7 dic 2026. Precio habitual 150 € (−52 %). Comprobado el 13 nov 2026.
 
 ## Desde Zaragoza (España)
-- [Zaragoza → Londres (Reino Unido): 55 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-55-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 3 feb 2027. Precio habitual 130 € (−58 %). Comprobado el 12 nov 2026.
+- [Zaragoza → Londres (Reino Unido): 55 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-55-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 3 feb 2027. Precio habitual 130 € (−58 %). Comprobado el 13 nov 2026.
 
 ## Desde Brisbane (Australia)
 - [Brisbane → Los Ángeles (Estados Unidos): 676 € ida y vuelta](https://www.happylowcost.com/chollos/brisbane-los-angeles-676-euros-2026-11-13/), Fiji Airways, 13 nov 2026 a 26 nov 2026. Precio habitual 1170 € (−42 %). Comprobado el 13 nov 2026.
@@ -50,10 +50,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Dubái → Montreal (Canadá): 442 € ida y vuelta](https://www.happylowcost.com/chollos/dubai-montreal-442-euros-2026-12-17/), Air Transat, 17 dic 2026 a 31 dic 2026. Precio habitual 1070 € (−59 %). Comprobado el 13 nov 2026.
 
 ## Desde Miami (Estados Unidos)
-- [Miami → Guayaquil (Ecuador): 273 € ida y vuelta](https://www.happylowcost.com/chollos/miami-guayaquil-273-euros-2027-01-14/), Copa Airlines, 14 ene 2027 a 21 ene 2027. Precio habitual 580 € (−53 %). Comprobado el 12 nov 2026.
+- [Miami → Guayaquil (Ecuador): 273 € ida y vuelta](https://www.happylowcost.com/chollos/miami-guayaquil-273-euros-2027-01-14/), Copa Airlines, 14 ene 2027 a 21 ene 2027. Precio habitual 580 € (−53 %). Comprobado el 13 nov 2026.
 
 ## Desde Perth (Australia)
 - [Perth → Ámsterdam (Países Bajos): 867 € ida y vuelta](https://www.happylowcost.com/chollos/perth-amsterdam-867-euros-2026-11-22/), AirAsia, 22 nov 2026 a 2 dic 2026. Precio habitual 1440 € (−40 %). Comprobado el 13 nov 2026.
-
-## Desde Ámsterdam (Países Bajos)
-- [Ámsterdam → Bonaire (Bonaire): 447 € ida y vuelta](https://www.happylowcost.com/chollos/amsterdam-bonaire-447-euros-2026-11-17/), Corendon Dutch Airlines B.V., directo, 17 nov 2026 a 1 dic 2026. Precio habitual 790 € (−43 %). Comprobado el 13 nov 2026.
