@@ -106,6 +106,13 @@ function flat(o, p, out) {
 const MON = { jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06', jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12' };
 const unent = s => String(s).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&rarr;/g, '→').replace(/\s+/g, ' ').trim();
 async function corrections(env, shellFetch) {
+  // n27t: one source for the page and for machines: /data/corrections.json (the page /corrections/ renders from it, kbx_t27.js);
+  // the HTML list below is read only if that file cannot be loaded
+  try {
+    const r = env && env.ASSETS ? await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/corrections.json')) : null;
+    if (r && r.ok) { const C = await r.json(); return (C.entries || []).map(e => ({ date: e.date || null, project_id: e.id || null, link: e.id ? ORIGIN + '/p/?id=' + encodeURIComponent(e.id) : null,
+      correction: e.kind === 'pin' ? 'Map pin ' + e.after + '. ' + e.why : e.what + ': ' + (e.before ? 'changed from ' + e.before + ' to ' + e.after : 'changed to ' + e.after) + '. ' + e.why })); }
+  } catch (e) {}
   let html = '';
   try { const r = await shellFetch('/corrections/'); if (r && r.ok) html = await r.text(); } catch (e) { html = ''; }
   const E = [];
