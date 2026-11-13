@@ -13,7 +13,7 @@
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27b';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
+export const U27V = 'u27c';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -316,13 +316,15 @@ function client() {
     var ch = document.querySelector('#buycost .kz-d') || document.querySelector('#promise .kz-d');
     if (ch) {
       var C = el('div', 'kca'), h = el('h3', null, f('kh')); C.appendChild(h);
-      var fld = function (k, v, step) { var l = el('label'), s = el('span', null, f(k) + (k === 'kp' && D.c ? ' (' + D.c + ')' : '')), i = el('input'); i.type = 'number'; i.min = '0'; i.step = step || 'any'; i.inputMode = 'decimal'; if (v) i.value = v; l.appendChild(s); l.appendChild(i); C.appendChild(l); return i; };
+      var fld = function (k, v, step) { var l = el('label'), s = el('span', null, f(k)), i = el('input'); i._lab = s; i._k = k; i.type = 'number'; i.min = '0'; i.step = step || 'any'; i.inputMode = 'decimal'; if (v) i.value = v; l.appendChild(s); l.appendChild(i); C.appendChild(l); return i; };
       var iP = fld('kp', D.p > 0 ? D.p : '', '1000'), iT = null, iR = fld('kr', '', '50'), iC = fld('kc', '', '100'), iM = fld('km', '12', '1');
       iM.max = '12';
       var rowsEl = el('ul', 'kca-r'), res = el('dl', 'kca-o'); res.setAttribute('aria-live', 'polite');
       C.insertBefore(rowsEl, iR.parentNode); C.appendChild(res); C.appendChild(el('p', 'k-small', f('kno')));
       ch.appendChild(C);
       var tax = 0, cur = D.c || '', tm = null, ask = 0;
+      var relabel = function () { [iP, iR, iC].forEach(function (i) { i._lab.textContent = f(i._k) + (cur ? ' (' + cur + ')' : ''); }); };
+      relabel();
       var calc = function () {
         var p = +iP.value || 0, t = iT ? (+iT.value || 0) : tax, tot = p + t, r = (+iR.value || 0) * Math.min(12, Math.max(0, +iM.value || 0)), c = +iC.value || 0;
         res.innerHTML = ''; var add = function (k, v) { var dt = el('dt', null, f(k)), dd = el('dd', null, v); res.appendChild(dt); res.appendChild(dd); };
@@ -336,8 +338,8 @@ function client() {
           rowsEl.innerHTML = '';
           if (!j || !j.calc) { if (!iT) { iT = fld('kt0', '', '100'); C.insertBefore(iT.parentNode, rowsEl); iT.addEventListener('input', calc); } tax = 0; calc(); return; }
           if (j.calc.cur !== cur && !iP._cv) {   // the country's tax rows are in another currency than the published price: convert once (ECB)
-            iP._cv = 1; var pv = +iP.value || 0, lab0 = iP.previousSibling;
-            rates([cur, j.calc.cur]).then(function () { var v = pv ? conv(pv, cur, j.calc.cur) : null; cur = j.calc.cur; if (lab0) lab0.textContent = f('kp') + ' (' + cur + ')'; iP.value = v ? Math.round(v) : ''; rows(); });
+            iP._cv = 1; var pv = +iP.value || 0;
+            rates([cur, j.calc.cur]).then(function () { var v = pv ? conv(pv, cur, j.calc.cur) : null; cur = j.calc.cur; relabel(); iP.value = v ? Math.round(v) : ''; rows(); });
             return;
           }
           cur = j.calc.cur; tax = 0;
