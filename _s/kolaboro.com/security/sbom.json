@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.5",
- "serialNumber": "urn:uuid:d4f0de25-03b8-4058-b58a-62d8c90636c2",
+ "serialNumber": "urn:uuid:c779726a-344f-4f8e-bda4-9220cf8b8d9f",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-05T07:24:02.968Z",
+  "timestamp": "2026-11-13T14:59:19.940Z",
   "tools": {
    "components": [
     {
@@ -33,15 +33,15 @@
   "properties": [
    {
     "name": "kolaboro:method",
-    "value": "Observed, not declared: scripts, stylesheets and fonts loaded by Chromium on 20 key pages at 390 and 1440 px, plus every <script src> and <link rel=stylesheet|preload> tag in the HTML of the 199 sitemap pages (199 fetched), plus the worker source files. Each file was downloaded once to compute its hashes."
+    "value": "Observed, not declared: scripts, stylesheets and fonts loaded by Chromium on 20 key pages at 390 and 1440 px, plus every <script src> and <link rel=stylesheet|preload> tag in the HTML of the 220 sitemap pages (220 fetched), plus the worker source files. Each file was downloaded once to compute its hashes."
    },
    {
     "name": "kolaboro:sitemap_pages",
-    "value": "199"
+    "value": "220"
    },
    {
     "name": "kolaboro:sitemap_pages_fetched",
-    "value": "199"
+    "value": "220"
    },
    {
     "name": "kolaboro:third_party_components",
@@ -57,7 +57,7 @@
    },
    {
     "name": "kolaboro:worker_note",
-    "value": "The kolaboro.com part of the Cloudflare worker (36 files: the shared router index.js, kolaboro.js and the kbx feature modules) is plain ES modules with no npm imports. The same worker also serves other sites from separately built bundles that are loaded only for those hosts; they are outside this bill of materials, and hosts called only by the shared router are not listed as services."
+    "value": "The kolaboro.com part of the Cloudflare worker (105 files: the shared router index.js, kolaboro.js and the kbx feature modules) is plain ES modules with no npm imports. The same worker also serves other sites from separately built bundles that are loaded only for those hosts; they are outside this bill of materials, and hosts called only by the shared router are not listed as services."
    }
   ]
  },
@@ -341,11 +341,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "20"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -391,11 +391,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "0c70c96a9740b5c4c2399f0db847a39d6d129244986faa03259cec5d0b8d4f7ff06c0fb9cfc6aa51c15602bf9cadf6a2"
+     "content": "1351ebcceacc75c588c3f0632db0878fa2989eb91d1d671d4df8d70a3a079161ce94c771e08bda615c3566d746fc381c"
     },
     {
      "alg": "SHA-256",
-     "content": "336a8851f39315e2954a41b7bc3589a4936e829cac133c41fa9fc6705b823168"
+     "content": "fc985cf1a1af6db4b666949747f82139f5ae3dc776f840529c1b5c994b38a942"
     }
    ],
    "externalReferences": [
@@ -419,15 +419,15 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "20"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
-     "value": "40"
+     "value": "28"
     },
     {
      "name": "kolaboro:sri_on_tag",
@@ -439,11 +439,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-DHDJapdAtcTCOZ8NuEejnW0SkkSYb6oDJZzsXQuNT3/wbA+5z8aqUcFWAr+crfai"
+     "value": "sha384-E1HrzOrMdcWIw/BjLbCHj6KYnrkdHWcdTfjXCjoHkWHOlMdx4IvaYVw1ZtdG/Dgc"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "6273"
+     "value": "6246"
     },
     {
      "name": "kolaboro:licence",
@@ -585,11 +585,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "2"
+     "value": "1"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/milestones/ /satellite/plot/"
+     "value": "/milestones/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -627,11 +627,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "a78a9215b0d97161c2cfb7eb932b972323ea5421c3beba21e03129539b814eda0c68fe52dca2c5f1ab8f3631275313f9"
+     "content": "d76f30207dd5fbc94b2bb282a52225b035bbb99282ba3654057b90546f738240f9837d8fd78cff4314c7efb60cb93eb9"
     },
     {
      "alg": "SHA-256",
-     "content": "bc96e162762e71482790ed75635afd38470f9a06070b4737741e6bfa83974e70"
+     "content": "15df55a66c28aee2725b3b6d3307e1b6bf84768f17db484ddff3cb78af25d11d"
     }
    ],
    "externalReferences": [
@@ -641,15 +641,15 @@
     },
     {
      "type": "distribution",
-     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b31"
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6bb1"
     },
     {
      "type": "distribution",
-     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b31h1"
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6bc0h2"
     },
     {
      "type": "distribution",
-     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b40h2"
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6bb1h1"
     }
    ],
    "properties": [
@@ -663,15 +663,15 @@
     },
     {
      "name": "kolaboro:found_by",
-     "value": "browser,html"
+     "value": "browser"
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "28"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -687,11 +687,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-p4qSFbDZcWHCz7frkyuXIyPqVCHDvroh4DEpU5uBTtoMaP5S3KLF8auPNjEnUxP5"
+     "value": "sha384-128wIH3V+8lLK7KCpSIlsDW7uZKCujZUBXuQVG9zgkD5g32P14z/QxTH77YMuT65"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "540684"
+     "value": "542258"
     },
     {
      "name": "kolaboro:licence",
@@ -1201,24 +1201,24 @@
    "bom-ref": "site-3p-14",
    "type": "library",
    "name": "Microsoft Clarity",
-   "version": "0.8.75",
+   "version": "0.8.80-beta",
    "supplier": {
     "name": "Microsoft"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "049e3101b7b517c94a6eb883b8caad0259944dec4a0da14c4795997afc75e02e7ed6ffebe6a570b676e4f3c2c496297f"
+     "content": "de734ed07f2db8d0992227907b1bf1e7f363034cd7cf78f9413a24b9cd03d55e3b76866adaabc5f92efdda7f4f36cff4"
     },
     {
      "alg": "SHA-256",
-     "content": "be831b2aee555d51f37a1a402f785e03358dc0c914e1fd34fdb9df546eda225e"
+     "content": "f28e8fd7f52fbdfcf8180629072d97ce90ed2dba356b092ffae48d8a6b107a99"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://scripts.clarity.ms/0.8.75/clarity.js"
+     "url": "https://scripts.clarity.ms/0.8.80-beta/clarity.js"
     }
    ],
    "properties": [
@@ -1236,11 +1236,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "20"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -1256,11 +1256,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-BJ4xAbe1F8lKbriDuMqtAlmUTexKDaFMR5WZevx14C5+1v/r5qVwtnbk88LElil/"
+     "value": "sha384-3nNO0H8tuNCZIieQexvx5/NjA0zXz3j5QTokuc0D1V47doZq2qvF+S792n9PNs/0"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "73256"
+     "value": "74002"
     },
     {
      "name": "kolaboro:licence",
@@ -1278,11 +1278,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "f4a37426dcb444c78dbdf459a59884087f2100e8fdf23b1e147ac08905625936bd9e0fd3f7def78063d0d3d9562ebd51"
+     "content": "6272f8fd22752c335efc6eb4e05ca65247b2cfa9530741023c08391937b756d91e6ae4ead260943c1806cb35794381d7"
     },
     {
      "alg": "SHA-256",
-     "content": "445f407c1cb843e619afcd178c3f23d1924323b684aab96ecc0d4ffee38acbf0"
+     "content": "dcf0fd3fbfec88667ac59df8e00e0a4ed8a16e9b1566f10e43ac4682a2e77de2"
     }
    ],
    "externalReferences": [
@@ -1306,11 +1306,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "20"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -1326,11 +1326,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-9KN0Jty0RMeNvfRZpZiECH8hAOj98jseFHrAiQViWTa9ng/T9973gGPQ09lWLr1R"
+     "value": "sha384-YnL4/SJ1LDNe/G604FymUkeyz6lTB0ECPAg5GTe3VtkeauTq0mCUPBgGyzV5Q4HX"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "726"
+     "value": "731"
     },
     {
      "name": "kolaboro:licence",
@@ -1853,24 +1853,24 @@
    "type": "file",
    "name": "/compare/compare.js",
    "group": "kolaboro.com",
-   "version": "da5ca9580e",
+   "version": "b7a275e24e",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "fe483aed870a01c41cbfd7d4d2e8c33179f318ececd50df8e3832127e8e87aa6aec96cf569173756b7e0207958994b0a"
+     "content": "3047bc4dc185749d6721a28c8c261ce1fc027a7a925335ac563092ffa60a5878fc607284451c2090ad4e316956bdffd2"
     },
     {
      "alg": "SHA-256",
-     "content": "63f34b93632fd5f7cfe0be2657c02a90671c8ca0201d87e1aea473654f99f8c5"
+     "content": "5ba42cd2e6b36a62b78cdd0a4dcf517b535a6e86646da37d7b25f3e637fcc98d"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/compare/compare.js?v=da5ca9580e"
+     "url": "https://kolaboro.com/compare/compare.js?v=b7a275e24e"
     }
    ],
    "properties": [
@@ -1908,11 +1908,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-/kg67YcKAcQcv9fU0ujDMXnzGOzs1Q3444MhJ+joeqauyWz1aRc3VrfgIHlYmUsK"
+     "value": "sha384-MEe8TcGFdJ1nIaKMjCYc4fwCenqSUzWsVjCS/6YKWHj8YHKERRwgkK1OMWlWvf/S"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "13145"
+     "value": "13135"
     }
    ]
   },
@@ -1989,24 +1989,24 @@
    "type": "file",
    "name": "/developers/reply/dr.js",
    "group": "kolaboro.com",
-   "version": "93877050c7",
+   "version": "n27t1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "7f7ad4154ee8358c1fb2225905eb0da2cc814d1f1fb3b1bec5ad1ea229c24e6dd01d3646471c7800c37dec8647398d31"
+     "content": "1dcbf8b27dd7dcd713fc0680fbafd73acc13c1c1fdacb302a7ea52162a6bf61c4776a4305372238a1bb984c2a579d780"
     },
     {
      "alg": "SHA-256",
-     "content": "b7a46bc11280a84f8ae023e40a5c73a5ff7b137a350841842981bdebd8236eb1"
+     "content": "7cabd9616f00f6eef5c662c68235a8703db8558639dd44fc77ee1c5779a7ab96"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/developers/reply/dr.js?v=93877050c7"
+     "url": "https://kolaboro.com/developers/reply/dr.js?v=n27t1"
     }
    ],
    "properties": [
@@ -2044,11 +2044,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-f3rUFU7oNYwfsiJZBesNosyBTR8fs7G+xa0eoinCTm3QHTZGRxx4AMN97IZHOY0x"
+     "value": "sha384-Hcv4sn3X3NcT/AaA+6/XOswTwcH9rLMCp+pSFipr9hxHdqQwU3Ijihu5hMKledeA"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "15217"
+     "value": "17538"
     }
    ]
   },
@@ -2123,74 +2123,6 @@
   {
    "bom-ref": "site-file-27",
    "type": "file",
-   "name": "/disc/p-hook.js",
-   "group": "kolaboro.com",
-   "version": "a672bab87e",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "39b97fb05bb0d891a774187c6360b060f0ce3c406d86ddd877b8716ffeff5c3c3a5f5dd379cdb4db4a0caa1143654dbb"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "04c288c317e63ca48c7ac5b1f4c78d2b7f057f759cde77847cc0b50c455595e9"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/disc/p-hook.js?v=a672bab87e"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "script"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "browser"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/p/BALI-014"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-Obl/sFuw2JGndBh8Y2CwYPDOPEBtht3Yd7hxb/7/XDw6X13Tec2020oMqhFDZU27"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "4809"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-28",
-   "type": "file",
    "name": "/docs/mcp/try.js",
    "group": "kolaboro.com",
    "version": "50c1a71d83",
@@ -2257,7 +2189,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-29",
+   "bom-ref": "site-file-28",
    "type": "file",
    "name": "/docs/webhooks/hooks.js",
    "group": "kolaboro.com",
@@ -2325,7 +2257,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-30",
+   "bom-ref": "site-file-29",
    "type": "file",
    "name": "/graph/global/gg.js",
    "group": "kolaboro.com",
@@ -2393,7 +2325,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-31",
+   "bom-ref": "site-file-30",
    "type": "file",
    "name": "/graph/graph.js",
    "group": "kolaboro.com",
@@ -2461,7 +2393,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-32",
+   "bom-ref": "site-file-31",
    "type": "file",
    "name": "/hazards/hz.css",
    "group": "kolaboro.com",
@@ -2529,7 +2461,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-33",
+   "bom-ref": "site-file-32",
    "type": "file",
    "name": "/hazards/hz.js",
    "group": "kolaboro.com",
@@ -2597,7 +2529,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-34",
+   "bom-ref": "site-file-33",
    "type": "file",
    "name": "/hazards/hzu.css",
    "group": "kolaboro.com",
@@ -2665,7 +2597,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-35",
+   "bom-ref": "site-file-34",
    "type": "file",
    "name": "/hazards/hzu.js",
    "group": "kolaboro.com",
@@ -2733,7 +2665,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-36",
+   "bom-ref": "site-file-35",
    "type": "file",
    "name": "/index/delays/dl.css",
    "group": "kolaboro.com",
@@ -2801,28 +2733,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-37",
+   "bom-ref": "site-file-36",
    "type": "file",
    "name": "/index/delays/dl.js",
    "group": "kolaboro.com",
-   "version": "f6e3372f71",
+   "version": "27e3a9d067",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "b1c70ff073f98b5a6b14e9749187d2ad53a7ee8182d626215f2c6c0c9238636d4b4e57f73446ecad7a0430b460f1e63f"
+     "content": "a7b416fbb22e98420411e0851a13cf3d56b6b212c9c5b0637a7dabc2c4829959ce8132b8c55c0c9c545ba517f61fd646"
     },
     {
      "alg": "SHA-256",
-     "content": "24a54738abc9b560e61b268c7848dd3c929b1cc8054b811c7210886eeec68590"
+     "content": "ab269a5a4a4cd48a8413814c7fa54dcc48089b20162c7a5af958b2fa7225e983"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/index/delays/dl.js?v=f6e3372f71"
+     "url": "https://kolaboro.com/index/delays/dl.js?v=27e3a9d067"
     }
    ],
    "properties": [
@@ -2860,16 +2792,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-sccP8HP5i1prFOl0kYfSrVOn7oGC1iYhXyxsDJI4Y21LTlf3NEbsrXoEMLRg8eY/"
+     "value": "sha384-p7QW+7IumEIEEeCFGhPPPVa2shLJxbBjen2rwsSCmVnOgTK4xVwMnFRbpRf2H9ZG"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "21794"
+     "value": "21761"
     }
    ]
   },
   {
-   "bom-ref": "site-file-38",
+   "bom-ref": "site-file-37",
    "type": "file",
    "name": "/index/prices/pi.css",
    "group": "kolaboro.com",
@@ -2937,7 +2869,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-39",
+   "bom-ref": "site-file-38",
    "type": "file",
    "name": "/index/prices/pi.js",
    "group": "kolaboro.com",
@@ -3005,28 +2937,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-40",
+   "bom-ref": "site-file-39",
    "type": "file",
    "name": "/investors/dossier/dossier.js",
    "group": "kolaboro.com",
-   "version": "17161fa0d1",
+   "version": "c4f7e7e3ec",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "1ac67454634da204807d40be6518e8799f1edbc5f423545a0be05948d1895c94a1943ad8a97fcb39d5511e08f801ce8c"
+     "content": "8338e8fae523dc6a651786da85624034adb925347565eaa3c37b3f2db4ceb3561ae9e5eb27f8739bfd72c44dbc2b0e41"
     },
     {
      "alg": "SHA-256",
-     "content": "bad5688d59fcee7f9faf3530087dbc029693fddc34b1804fb459cffc20a10a44"
+     "content": "8b1ebe9f423552aafea49d0892e084d6a6a929c3f9d7fccead185f3462de71b9"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/investors/dossier/dossier.js?v=17161fa0d1"
+     "url": "https://kolaboro.com/investors/dossier/dossier.js?v=c4f7e7e3ec"
     }
    ],
    "properties": [
@@ -3064,11 +2996,79 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-GsZ0VGNNogSAfUC+ZRjoeZ8e28X0I1RaC+BZSNGJXJShlDrYqX/LOdVRHgj4Ac6M"
+     "value": "sha384-gzjo+uUj3GplF4bahWJANK25JTR1Zeqjw3s/LbTOs1Ya6eXrJ/hzm/1yxE28Kw5B"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "5883"
+     "value": "5894"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-40",
+   "type": "file",
+   "name": "/k/acct.js",
+   "group": "kolaboro.com",
+   "version": "n20b58f8",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "d58ec5acfeeb0abbec03b95b25cf10b02afe166ac09300bc71afb0394bc2eec23fd8e6d3bc1a3a371fcedbe922586ceb"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "974266e2ca1f094fe408bd95202974de3148f9db41602ea520c844b7488b221f"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/acct.js?v=n20b58f8"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/verify/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-1Y7FrP7rCrvsA7lbJc8QsCr+FmrAkwC8ca+wOUvC7sI/2ObTvBo6Nx/O2+kiWGzr"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "35077"
     }
    ]
   },
@@ -3077,24 +3077,24 @@
    "type": "file",
    "name": "/k/app.css",
    "group": "kolaboro.com",
-   "version": "474023111b",
+   "version": "n19f2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "4979b818dc6071ebdfe9739e02b48c65a04c1726ba69d1e084362f788c9bd1ce9ccb321635704c18fe0b52baa1d62977"
+     "content": "3168171ebc97e9428f2f81442ccfcf689dbfc04b276b305756a09e59919470f2dbc4bfd47ac8d5584c01f9088bcd76da"
     },
     {
      "alg": "SHA-256",
-     "content": "d3e909598e278bec2bc0240317c6ab87167fb1dd2de3c0c5c62d5e430311fb97"
+     "content": "b642c78b18283f415ec05a3bcd3f728d984507941aca8f0139c6aee176ee4d34"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/app.css?v=474023111b"
+     "url": "https://kolaboro.com/k/app.css?v=n19f2"
     }
    ],
    "properties": [
@@ -3132,11 +3132,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-SXm4GNxgcevf6XOeArSMZaBMFya6adHghDYveIyb0c6cyzIWNXBMGP4LUrqh1il3"
+     "value": "sha384-MWgXHryX6UKPL4FELM/PaJ2/wEsnazBXVqCeWZGUcPLbxL/UesjVWEwB+QiLzXba"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "25723"
+     "value": "26153"
     }
    ]
   },
@@ -3180,11 +3180,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "59"
+     "value": "64"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/api-keys/ /ar/database/ /ask-developer/ /ask/ /buyer-reports/"
+     "value": "/accessibility/ /api-keys/ /ar/database/ /ask-developer/ /ask/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -3213,24 +3213,24 @@
    "type": "file",
    "name": "/k/cases.js",
    "group": "kolaboro.com",
-   "version": "bfba44cc3f",
+   "version": "3213fdd0a9",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "850edb6a81cb8fd59406597eb226922d57cf2a54021ec0df510ec8123e0328a753c73fbe4a7d327ac763fd7b0e5f7d79"
+     "content": "e9c9827cb1f0106615ff98100dccfaf496850727c4399cdf369252c96d3287c865a6edf67d49208f92aed9e2be45d591"
     },
     {
      "alg": "SHA-256",
-     "content": "474706a916c9d30a5c5baa8d7058e21ea788a621e54900ca485b860b7c7e2869"
+     "content": "60eaf5aff004dc1cf21fede7cac275e248e94c3dcdfc979188eafb451fcd68d7"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/cases.js?v=bfba44cc3f"
+     "url": "https://kolaboro.com/k/cases.js?v=3213fdd0a9"
     }
    ],
    "properties": [
@@ -3268,11 +3268,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-hQ7baoHLj9WUBll+siaSLVfPKlQCHsDfUQ7IEj4DKKdTxz++Sn0yesdj/XsOX315"
+     "value": "sha384-6cmCfLHwEGYV/5gQDcz69JaFByfEOZzfNpJSyW0yh8hlpu32fUkgj5Ku2eK+RdWR"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "23263"
+     "value": "24743"
     }
    ]
   },
@@ -3347,6 +3347,346 @@
   {
    "bom-ref": "site-file-45",
    "type": "file",
+   "name": "/k/currency.js",
+   "group": "kolaboro.com",
+   "version": "0868bcd341",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "41c2ff91a1730bd59aabad57cb6d3d24015a3e1a6e8df41e01b05c151b97b89109b55c8c733e6ff2343bdac95db29aaf"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "0868bcd341737f9e503955656db0500b2ca2357d6f6a745b63c4fea2333620ba"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/currency.js?v=0868bcd341"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "2"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/cases/ /compare/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-QcL/kaFzC9Waq61Xy209JAFaPhpujfQeAbBcFRuXuJEJtVyMcz5v8jQ72sldspqv"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "13469"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-46",
+   "type": "file",
+   "name": "/k/cycle.js",
+   "group": "kolaboro.com",
+   "version": "1db0eaf9-s13",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "a40ca6ec89bc75defd56bcef07b8db5abea2a4b85b74f20941e3f9c288f65ffce4040d621c3955e576002b1fbec73099"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "3f66b8d2dc93ef0fcd2e53634f15fc95c82fca10a25fe7f40ae1d3bba30c5d9e"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/cycle.js?v=1db0eaf9-s13"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/check/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-pAym7Im8dd79VrzvB7jbWr6ipLhbdPIJQeP5woj2X/zkBA1iHDlV5XYAKx++xzCZ"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "63855"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-47",
+   "type": "file",
+   "name": "/k/ds-site.css",
+   "group": "kolaboro.com",
+   "version": "2a099a898b",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "59e31ac7b4b84d8649f553d99349e6493204664dadc8b488eda6143b94ba8447cfade3503668e69312279c8d5078d2c8"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "95c1f9d48e1794345cfe12b7ea723a45486dffe362af57166b8d294be0234869"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/ds-site.css?v=2a099a898b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "stylesheet"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "221"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ /about/ /academy/ /academy/1/ /academy/10/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-WeMax7S4TYZJ9VPZk0nmSTIEZk2tyLSI7aYUO5S6hEfPreNQNmjmkxInnI1QeNLI"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "48583"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-48",
+   "type": "file",
+   "name": "/k/ds.css",
+   "group": "kolaboro.com",
+   "version": "2a099a898b",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "c1e7a16ef2b2a819a010f98190cfa7f5178626eebabe8fb88b8db24868535dd05651192a4925f18b4c3e6f5263dcf29b"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "0121addbd75d2cd777ccb7bebcd22e9f32262be999e8b79517afb0b991ddf5b5"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/ds.css?v=2a099a898b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "stylesheet"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "2"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/portal/demo/ /visit/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-weehbvKyqBmgEPmBkM+n9ReGJu66vo+4i42ySGhTXdBWURkqSSXxi0w+b1Jj3PKb"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "51791"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-49",
+   "type": "file",
+   "name": "/k/ds.js",
+   "group": "kolaboro.com",
+   "version": "1",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "67aa075336d2caf82a135dac8c3bcdbfd799e4308a63bf0f5423d5d4a17d03b918a583a76d0ecf1dbb663e596bb02dd4"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "ed132f86d99ac16c692ec47f2f4c298fdfc08ff0171575e7c74eb64d2711b989"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/ds.js?v=1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/extension/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-Z6oHUzbSyvgqE12sjDvNv9eZ5DCKY78PVCPV1KF9A7kYpYOnbQ7PHbtmPllrsC3U"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "4117"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-50",
+   "type": "file",
    "name": "/k/fe.js",
    "group": "kolaboro.com",
    "version": "a050305d8d",
@@ -3413,7 +3753,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-46",
+   "bom-ref": "site-file-51",
    "type": "file",
    "name": "/k/fonts/archivo-latin.woff2",
    "group": "kolaboro.com",
@@ -3451,7 +3791,7 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "199"
+     "value": "222"
     },
     {
      "name": "kolaboro:seen_on_sample",
@@ -3480,7 +3820,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-47",
+   "bom-ref": "site-file-52",
    "type": "file",
    "name": "/k/live.js",
    "group": "kolaboro.com",
@@ -3548,28 +3888,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-48",
+   "bom-ref": "site-file-53",
    "type": "file",
    "name": "/k/palette.js",
    "group": "kolaboro.com",
-   "version": "29f5606649",
+   "version": "eb77aad428",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "a1b1bbe726c21817631b26d9b8b6b4a537a3e91ac1dfce6b4008973be50c476c6cd99e6a7ccca9548919f90c953a8821"
+     "content": "30d6718dd6e59e3ffd73e0da691b65a5effc10b03c5b570092b989cda4df8ba6c53d4fbdd951b0e00edb801d902f6f25"
     },
     {
      "alg": "SHA-256",
-     "content": "1fad19d276132b8e3a11ef3dbc33396292c88281761c312d62972df471857ccb"
+     "content": "eb77aad42821f83e4474f08d12b9f317f2d535706593b8908f32f703a65856e1"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/palette.js?v=29f5606649"
+     "url": "https://kolaboro.com/k/palette.js?v=eb77aad428"
     }
    ],
    "properties": [
@@ -3587,11 +3927,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "20"
+     "value": "22"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /about/ /bali/ /cases/ /check/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -3607,37 +3947,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-obG75ybCGBdjGybZuLa0pTej6RrB385rQAiXO+UMR2xs2Z5qfMypVIkZ+QyVOogh"
+     "value": "sha384-MNZxjdblnj/9c+DaaRtlpe/8ELA8W1cAkrmJzaTfi6bFPU+92VGw4A7bgB2QL28l"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "19288"
+     "value": "33713"
     }
    ]
   },
   {
-   "bom-ref": "site-file-49",
+   "bom-ref": "site-file-54",
    "type": "file",
    "name": "/k/pipeline.js",
    "group": "kolaboro.com",
-   "version": "c1da74b911",
+   "version": "e0202822da",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "90d64d409348d6dccd119d92dd2f283d2a854785533bcbe2391d46b4d29bcb75c7429be04ba79d22a04bc902e892b6e6"
+     "content": "ba38f65054d82b5ce513a50d9fa50401ed0426d5b081a2a3e4fd529217c749b0d5d1f695b1301cf4dd2269e12ed126e0"
     },
     {
      "alg": "SHA-256",
-     "content": "cf79b2870b0f058fb4b0af42c2145f14f1ac8ac67a91e58c5eecbfe79d2f1179"
+     "content": "4108d26fee59823a8589bf01ecdd024102347b6b080a2bb050a208188b3f538d"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/pipeline.js?v=c1da74b911"
+     "url": "https://kolaboro.com/k/pipeline.js?v=e0202822da"
     }
    ],
    "properties": [
@@ -3655,11 +3995,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "59"
+     "value": "64"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/api-keys/ /ar/database/ /ask-developer/ /ask/ /buyer-reports/"
+     "value": "/accessibility/ /api-keys/ /ar/database/ /ask-developer/ /ask/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -3675,37 +4015,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-kNZNQJNI1tzNEZ2S3S8oPSqFR4VTO8viOR1GtNKby3XHQpvgS6edIqBLyQLokrbm"
+     "value": "sha384-ujj2UFTYK1zlE6UNn6UEAe0EJtWwgaKj5P1SkhfHSbDV0faVsTAc9N0iaeEu0Sbg"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "2293"
+     "value": "12117"
     }
    ]
   },
   {
-   "bom-ref": "site-file-50",
+   "bom-ref": "site-file-55",
    "type": "file",
    "name": "/k/prov.js",
    "group": "kolaboro.com",
-   "version": "84ab22bafb",
+   "version": "369ff51a4c",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "de4911081ab2590066977fc233ece410354de7e503f06344c0d8d38bbaa6c65706141943052cff68bb17e8b202ef03df"
+     "content": "1ba1f23ee4c430779773cae2ddd265a579abd9d54d14d2a04d4995900799d029a98b1de6bb205a5c8ab04a79f2922001"
     },
     {
      "alg": "SHA-256",
-     "content": "7424033568285fa404a4f1e4f0bfc2b543305dbc1c708699d9b6608e89db024e"
+     "content": "2d08d566ac61395a2e421c1583277f3b4e6f458888173f3fe58dad45e7cedfd8"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/prov.js?v=84ab22bafb"
+     "url": "https://kolaboro.com/k/prov.js?v=369ff51a4c"
     }
    ],
    "properties": [
@@ -3723,7 +4063,7 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "177"
+     "value": "200"
     },
     {
      "name": "kolaboro:seen_on_sample",
@@ -3743,41 +4083,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-3kkRCBqyWQBml3/CM+zkEDVN5+UD8GNEwNjTi7qmxlcGFBlDBSz/aLsX6LIC7wPf"
+     "value": "sha384-G6HyPuTEMHeXc8ri3dJlpXmr2dVNFNKgTUmVkAeZ0Cmpix3muyBaXIqwSnnykiAB"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "21095"
+     "value": "21170"
     }
    ]
   },
   {
-   "bom-ref": "site-file-51",
+   "bom-ref": "site-file-56",
    "type": "file",
    "name": "/k/site.css",
    "group": "kolaboro.com",
-   "version": "19bd3287d2",
+   "version": "1c6b335e3f",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "817801ad1311799a3fe5a98adf2e50264c71f99defe246330143d8c137be6fa075d4ce2ae8e38f0f1c44c22e5a2524a7"
+     "content": "61a8d1d45d9accb01bcd6500fb383a384aee8931cef1997277e81e50508b81600df2300d80e1f05618e220f4f0b4bea0"
     },
     {
      "alg": "SHA-256",
-     "content": "4f8304c2713afcc4a31b6751eb80a02810a6809ad841f8760c91cbf913208be4"
+     "content": "ea67a3b02da238f857d4451b7d506daf5b8f38d415950cb166f1c75a76c34499"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/site.css?v=19bd3287d2"
-    },
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/k/site.css?v=68f27c0597"
+     "url": "https://kolaboro.com/k/site.css?v=1c6b335e3f"
     }
    ],
    "properties": [
@@ -3795,7 +4131,7 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "198"
+     "value": "221"
     },
     {
      "name": "kolaboro:seen_on_sample",
@@ -3803,7 +4139,7 @@
     },
     {
      "name": "kolaboro:url_variants",
-     "value": "2"
+     "value": "1"
     },
     {
      "name": "kolaboro:sri_on_tag",
@@ -3815,45 +4151,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-gXgBrRMReZo/5amK3y5QJkxx+Z3v4kYzAUPYwTe+b6B11M4q6OOPDxxEwi5aJSSn"
+     "value": "sha384-YajR1F2azLAbzWUA+zg6OEruiTHO8Zlyd+geUFCLgWAN8jANgOHwVhjiIPTwtL6g"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "130606"
+     "value": "144873"
     }
    ]
   },
   {
-   "bom-ref": "site-file-52",
+   "bom-ref": "site-file-57",
    "type": "file",
    "name": "/k/site.js",
    "group": "kolaboro.com",
-   "version": "d376a5d53b",
+   "version": "n27u2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "3fd643edbd9ca14acc533778f9a725a5c61b2bd7222d2237d7e0467dbe324e3cddd8c489454300555ef779b9272c6fe3"
+     "content": "86e857e8e66d8bc4a5b4d2eb617949b97d1bbc17946ed4f42450c7f9f431195f2636c2eb70390ace07b62e75ffe661e0"
     },
     {
      "alg": "SHA-256",
-     "content": "0ca6518a0ce946c0d73dcbbb50009a6bbdbf0d469ab184fbedef80a56f3c8b7e"
+     "content": "7aad04c85dd7ce114faf6805128a9cea50de9b398e63a236cab81256c7f4a954"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/site.js?v=5aa4e8443f"
-    },
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/k/site.js?v=5aa4e8443f"
-    },
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/k/site.js?v=5aa4e8443f"
+     "url": "https://kolaboro.com/k/site.js?v=n27u2"
     }
    ],
    "properties": [
@@ -3871,7 +4199,7 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "198"
+     "value": "221"
     },
     {
      "name": "kolaboro:seen_on_sample",
@@ -3879,7 +4207,7 @@
     },
     {
      "name": "kolaboro:url_variants",
-     "value": "3"
+     "value": "1"
     },
     {
      "name": "kolaboro:sri_on_tag",
@@ -3891,37 +4219,109 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-P9ZD7b2coUrMUzd4+aclpcYbK9ciLSI31+BGfb4yTjzd2MSJRUMAVV73ebknLG/j"
+     "value": "sha384-huhX6OZti8SltNLrYXlJuX0bvBeUbtT0JFDH+fQxGV8mNsLrcDkKzge2LnX/5mHg"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "50812"
+     "value": "104612"
     }
    ]
   },
   {
-   "bom-ref": "site-file-53",
+   "bom-ref": "site-file-58",
    "type": "file",
-   "name": "/k/verify-badge.js",
+   "name": "/k/u27.js",
    "group": "kolaboro.com",
-   "version": "d6fef3de86",
+   "version": "v79.u27d",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "d52f7dc52fc70b2493861ddf6e13dc2b768c9ad0629e984a1d0b81813c5b4e4b1d170733a516950b1f6909c92975f260"
+     "content": "a0943259b118bfb377002a9df4f74798e2225d9896cb8fc9041cd72067a5cf4c18357ee9124d997ab68ad3bac6e58d42"
     },
     {
      "alg": "SHA-256",
-     "content": "eb85c62c3f583eacf557df16c7518d534ecf0c4b4ae6c611cf080101ea1db8bb"
+     "content": "2ec0f740712afc94b82622c141fdecdf4c0868c67d11f66876cc2bd8916562d3"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/verify-badge.js?v=d6fef3de86"
+     "url": "https://kolaboro.com/k/u27.js?v=v79.u27d"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "3"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ar/projects/moon-gate-hotel-spa-antigua/ /map/ /projects/amani-melasti/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-oJQyWbEYv7N3ACqd9PdHmOIiXZiWy4/JBBzXIGelz0wYNX7pEk2ZeraK07rG5Y1C"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "50092"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-59",
+   "type": "file",
+   "name": "/k/verify-badge.js",
+   "group": "kolaboro.com",
+   "version": "n27u1",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "0296e1f8bd7e75b9800163d6ca52f7b5729dcfe212facbe1f99b287ab0455a7f257edfbe28a6dbad1023707b104f1fd8"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "609c60984f47c09ca165d2cb3bdd8c986ab26986f315a6196c9bd99b9249853c"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/verify-badge.js?v=n27u1"
+    },
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/verify-badge.js?v=6b61413c9f"
     }
    ],
    "properties": [
@@ -3939,15 +4339,15 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "3"
+     "value": "2"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /p/BALI-014 /verify/"
+     "value": "/ /verify/"
     },
     {
      "name": "kolaboro:url_variants",
-     "value": "1"
+     "value": "2"
     },
     {
      "name": "kolaboro:sri_on_tag",
@@ -3959,16 +4359,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-1S99xS/HCySThh3fbhPcK3aMmtBinphKHQuBgTxbTksdFwczpRaVCx9pCckpdfJg"
+     "value": "sha384-Apbh+L1+dbmAAWPWylL3tXKdz+IS+svh+ZsoerBFWn8lft++KKbbrRAjcHsQTx/Y"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "9547"
+     "value": "12530"
     }
    ]
   },
   {
-   "bom-ref": "site-file-54",
+   "bom-ref": "site-file-60",
    "type": "file",
    "name": "/k/vitals.js",
    "group": "kolaboro.com",
@@ -4007,11 +4407,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "18"
+     "value": "20"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /bali/ /cases/ /check/ /checklist/"
+     "value": "/ /about/ /ar/projects/moon-gate-hotel-spa-antigua/ /bali/ /cases/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -4036,7 +4436,143 @@
    ]
   },
   {
-   "bom-ref": "site-file-55",
+   "bom-ref": "site-file-61",
+   "type": "file",
+   "name": "/k/xray-cta.js",
+   "group": "kolaboro.com",
+   "version": "n22e1",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "85dc0f8d7a00a79476c032eb7f273ce3522b1e16a53f64f7ab86cd8c21b9d608bc0886dd25ab0fe288b119d55df0565c"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "98f9176a079de566ac351ba7ad0b03ecad14273c22c41c9654ed2ac689363031"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/xray-cta.js?v=n22e1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "8"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ar/check/ /check/ /de/check/ /es/check/ /fr/check/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-hdwPjXoAp5R2wDLrfyc841IrHhalP2T3q4bNjCG51gi8CIbdJasP4oixGdVd8FZc"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "117502"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-62",
+   "type": "file",
+   "name": "/k/xray.js",
+   "group": "kolaboro.com",
+   "version": "n22e1",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "f51a221659e4af339b9ab76ffae852a7bccc1b571962b24b2391b73c4ebfb71a43c1d9ea56763187fd27ffa4c96a1a11"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "320383eb04e126bda590b9d025d9a7bdef11f83ac88f077221d328311eca9163"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/k/xray.js?v=n22e1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "8"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ar/check/ /check/ /de/check/ /es/check/ /fr/check/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-9RoiFlnkrzObmrdv+uhSp7zMG1cZYrJLI5G3PE6/txpDwdnqVnYxh/0n/6TJahoR"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "98611"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-63",
    "type": "file",
    "name": "/lawyers/lw.js",
    "group": "kolaboro.com",
@@ -4047,11 +4583,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "4ebe32cc5d51bbf25a888db40551ed9a7ff8456b6c388564b6cc4c66aad7d4a7d308ff76d4d36cb38c6f67ec808135f3"
+     "content": "84c175de611d526dcadb7d0140bed3171f1251b6db59653fed5c6677d4a63b3c8717fbb1a89e7e1262d94deb2d09f156"
     },
     {
      "alg": "SHA-256",
-     "content": "06d88b3b004d3016a67f69f3e1a9ab97a1596946fa5f5c19ee1a3c2830f85b87"
+     "content": "1d91999c3c94ff3cf8b2973769799fc68102c1c49d1ee4004834913f259e6461"
     }
    ],
    "externalReferences": [
@@ -4095,27 +4631,27 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-Tr4yzF1Ru/JaiI20BVHtmn/4RWtsOIVktsxMZqrX1KfTCP921NNss4xvZ+yAgTXz"
+     "value": "sha384-hMF13mEdUm3K230BQL7TFx8SUbbbWWU/7Vxmd9SmOzyHF/uxqJ5+EmLZTestCfFW"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "2598"
+     "value": "2436"
     }
    ]
   },
   {
-   "bom-ref": "site-file-56",
+   "bom-ref": "site-file-64",
    "type": "file",
    "name": "/live.css",
    "group": "kolaboro.com",
-   "version": "4d226bf161",
+   "version": "69f3727858",
    "supplier": {
     "name": "Kolaboro"
    },
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/live.css?v=4d226bf161"
+     "url": "https://kolaboro.com/live.css?v=69f3727858"
     }
    ],
    "properties": [
@@ -4158,7 +4694,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-57",
+   "bom-ref": "site-file-65",
    "type": "file",
    "name": "/live.js",
    "group": "kolaboro.com",
@@ -4212,7 +4748,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-58",
+   "bom-ref": "site-file-66",
    "type": "file",
    "name": "/log/witnesses/w.js",
    "group": "kolaboro.com",
@@ -4280,28 +4816,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-59",
+   "bom-ref": "site-file-67",
    "type": "file",
    "name": "/m/m.css",
    "group": "kolaboro.com",
-   "version": "ffbfb14533",
+   "version": "e99138045a",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "05871173e0362b3b07b7504b2a688c8f3263f9fd3a3fe24199dccf9b498ceafd1a29fd06bbf424989458272fb3976234"
+     "content": "d8c452abb3bc2b42a977697b16dccdcc65348b8f21ec0f631db4fa2fb5b264da27b6584e94c67428e150134392379d4c"
     },
     {
      "alg": "SHA-256",
-     "content": "8183d3cf0c99790ddde196d77e26c40f884674d98909eaa785f2712cf61311f4"
+     "content": "8d6f1ff8480dd8a8f0408c8c63d29999036f883dd66aa6f8b74b5c63dc570ccd"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/m/m.css?v=ffbfb14533"
+     "url": "https://kolaboro.com/m/m.css?v=e99138045a"
     }
    ],
    "properties": [
@@ -4339,37 +4875,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-BYcRc+A2KzsHt1BLKmiMjzJj+f06P+JBmdzPm0mM6v0aKf0Gu/QkmJRYJy+zl2I0"
+     "value": "sha384-2MRSq7O8K0Kpd2l7FtzNzGU0i48h7A9jHbT6L7WyZNontlhOlMZ0KOFQE0OSN51M"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "8773"
+     "value": "8779"
     }
    ]
   },
   {
-   "bom-ref": "site-file-60",
+   "bom-ref": "site-file-68",
    "type": "file",
    "name": "/m/m.js",
    "group": "kolaboro.com",
-   "version": "0224fa6dbc",
+   "version": "n25e1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "45b66f5b53d015c49a11a3dec5a3e2c44002d8d274881d7319322d778dd9bae1096e70269729c69a0eb2de39f45c8148"
+     "content": "9521a275f27a14332d3daeafeada578c0464b92d958462721b5e7545f5fb693a337d9a37075efa0c85a99d56e312e67b"
     },
     {
      "alg": "SHA-256",
-     "content": "32227df109836ea8417c1fd6a188c23c2e3ba77e7025405812d4351773b54558"
+     "content": "b16800e326836caa4ee3752da5a270e53ae45d38713b9f1e2fa0a81ec7d6dff9"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/m/m.js?v=0224fa6dbc"
+     "url": "https://kolaboro.com/m/m.js?v=n25e1"
     }
    ],
    "properties": [
@@ -4407,16 +4943,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-RbZvW1PQFcSaEaPexaPixEAC2NJ0iB1zGTItd43ZuuEJbnAmlynGmg6y3jn0XIFI"
+     "value": "sha384-lSGidfJ6FDMtPa6v6tpXjARkuS2VhGJyG151RfX7aTozfZo3B176DIWpnVbjEuZ7"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "22116"
+     "value": "22436"
     }
    ]
   },
   {
-   "bom-ref": "site-file-61",
+   "bom-ref": "site-file-69",
    "type": "file",
    "name": "/milestones/ms.css",
    "group": "kolaboro.com",
@@ -4484,7 +5020,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-62",
+   "bom-ref": "site-file-70",
    "type": "file",
    "name": "/milestones/ms.js",
    "group": "kolaboro.com",
@@ -4552,7 +5088,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-63",
+   "bom-ref": "site-file-71",
    "type": "file",
    "name": "/mystery-shopper/ms.js",
    "group": "kolaboro.com",
@@ -4620,7 +5156,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-64",
+   "bom-ref": "site-file-72",
    "type": "file",
    "name": "/open/kolaboro-verify.js",
    "group": "kolaboro.com",
@@ -4692,211 +5228,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-65",
-   "type": "file",
-   "name": "/p/p.css",
-   "group": "kolaboro.com",
-   "version": "849ee954e8",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "1203e25da3cced21e6b6018ee410f0dffc9c573a2ea443f3defc9a12ea25ba2d6fd6e8b83ec71e33f0b08ffb553cb41e"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "634f477b3cf882fbb77cf4fc90c9699f4bb81768e5a4dafa200bfb0c41a4a837"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/p/p.css?v=849ee954e8"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "stylesheet"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "browser"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/p/BALI-014"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-EgPiXaPM7SHmtgGO5BDw3/ycVzoupEPz3vyaEuolui1v1ui4PsceM/Cwj/tVPLQe"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "16693"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-66",
-   "type": "file",
-   "name": "/p/p.js",
-   "group": "kolaboro.com",
-   "version": "4cc7ff7391",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "87beaaa8d7026557ef40fd84e277becab9c8a12509598b167474a0f1ba2839c392167c977c8d756d6d94ee6266b5d048"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "062c8e0be0167af4e152c61ee01ebae415b1dce1696f2fb860780c536656e218"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/p/p.js?v=4cc7ff7391"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "script"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "browser"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/p/BALI-014"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-h76qqNcCZVfvQP2E4ne+yrnIoSUJWYsWdHSg8booOcOSFnyXfI11bW2U7mJmtdBI"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "48810"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-67",
-   "type": "file",
-   "name": "/p/whatif.js",
-   "group": "kolaboro.com",
-   "version": "617ebe5805",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "8b59b7d3be9f290610a719b025a9e511f98cf6cb28f9710c1666a9704d885fae5fdda3af5c42f0a5eaa8d1647b01cacd"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "5ed80da0b6a0439aa1bd54c554c5b6f7f61d4f8497da7dea9a0875a7324456e4"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/p/whatif.js?v=617ebe5805"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "script"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "browser"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/p/BALI-014"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-i1m3076fKQYQpxmwJanlEfmM9sso+XEMFmapcE2IX65f3aOvXELwpeqo0WR7AcrN"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "5693"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-68",
+   "bom-ref": "site-file-73",
    "type": "file",
    "name": "/pq.js",
    "group": "kolaboro.com",
@@ -4950,7 +5282,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-69",
+   "bom-ref": "site-file-74",
    "type": "file",
    "name": "/press/data/dd-core.js",
    "group": "kolaboro.com",
@@ -5018,7 +5350,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-70",
+   "bom-ref": "site-file-75",
    "type": "file",
    "name": "/press/data/dd.css",
    "group": "kolaboro.com",
@@ -5086,7 +5418,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-71",
+   "bom-ref": "site-file-76",
    "type": "file",
    "name": "/press/data/dd.js",
    "group": "kolaboro.com",
@@ -5154,7 +5486,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-72",
+   "bom-ref": "site-file-77",
    "type": "file",
    "name": "/press/monthly/pm.css",
    "group": "kolaboro.com",
@@ -5222,7 +5554,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-73",
+   "bom-ref": "site-file-78",
    "type": "file",
    "name": "/prices/checks.js",
    "group": "kolaboro.com",
@@ -5290,7 +5622,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-74",
+   "bom-ref": "site-file-79",
    "type": "file",
    "name": "/prices/h.css",
    "group": "kolaboro.com",
@@ -5358,7 +5690,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-75",
+   "bom-ref": "site-file-80",
    "type": "file",
    "name": "/prices/prices.js",
    "group": "kolaboro.com",
@@ -5426,7 +5758,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-76",
+   "bom-ref": "site-file-81",
    "type": "file",
    "name": "/promises/pr.js",
    "group": "kolaboro.com",
@@ -5494,7 +5826,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-77",
+   "bom-ref": "site-file-82",
    "type": "file",
    "name": "/promises/y.css",
    "group": "kolaboro.com",
@@ -5533,11 +5865,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "3"
+     "value": "5"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ask-developer/ /promises/ /search-alerts/"
+     "value": "/ask-developer/ /digest/ /explain/ /promises/ /search-alerts/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -5562,96 +5894,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-78",
+   "bom-ref": "site-file-83",
    "type": "file",
-   "name": "/registers/registers.css",
+   "name": "/registers/maplookup.js",
    "group": "kolaboro.com",
-   "version": "2054982a23",
+   "version": "2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "07e5c208e3bf495a0e05094e890e5e90c787f57164dda7040c4557568d5682bc7d1c00ecd7c5d8ccce6272e5c006ce85"
+     "content": "98b7825325de5879d75a304cd6c0e2d9f389595215578fde6308318d82033ab44bc6e3db638acc42b2aa66bad1e1c40f"
     },
     {
      "alg": "SHA-256",
-     "content": "e8c36fb0b9574054efb9cce5a3c15468d168cb218387b90d369f0ef2050145d6"
+     "content": "0f482e94d5b6a536e75b4cf184f04e9c0ab606666ebb606e59e671e0b0f5897b"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/registers/registers.css?v=2054982a23"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "stylesheet"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "html"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/registers/"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-B+XCCOO/SVoOBQlOiQ5ekMeH9XFk3acEDEVXVo1Wgrx9HADs18XYzM5icuXABs6F"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "7174"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-79",
-   "type": "file",
-   "name": "/registers/registers.js",
-   "group": "kolaboro.com",
-   "version": "1",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "ce4c2e9a990f989049738d5a64c6dd4f87d3bed51630b9ad6f466b610dd74a03d343dee6acc1d4093050a0226fd7baba"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "62d911a1e0fc59af7c506915ea29e408fc262722180f65c7d87304040698c2b2"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/registers/registers.js?v=1"
+     "url": "https://kolaboro.com/registers/maplookup.js?v=2"
     }
    ],
    "properties": [
@@ -5689,16 +5953,152 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-zkwumpkPmJBJc41aZMbdT4fTvtUWMLmtb0ZrYQ3XSgPTQ97mrMHUCTBQoCJv17q6"
+     "value": "sha384-mLeCUyXeWHnXWjBM1sDi2fOJWVIVV4/eYwgxjYIDOrRLxuPbY4rMQrKqZrrR4cQP"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "2844"
+     "value": "11692"
     }
    ]
   },
   {
-   "bom-ref": "site-file-80",
+   "bom-ref": "site-file-84",
+   "type": "file",
+   "name": "/registers/registers.css",
+   "group": "kolaboro.com",
+   "version": "ml3",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "c42666b3388a90e5275f04cf1745c3f3d3952d973807e4928e238cdb2f709073a36237df042a5ffc61ed059ab990fc4f"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "42c0348aab8a1d23defe37e175aa8219dacce1308cb8ad6157ce20688be593f1"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/registers/registers.css?v=ml3"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "stylesheet"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/registers/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-xCZmsziKkOUnXwTPF0XD89OVLZc4B+SSjiOM2y9wkHOjYjffBCpf/GHtBZq5kPxP"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "11646"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-85",
+   "type": "file",
+   "name": "/registers/registers.js",
+   "group": "kolaboro.com",
+   "version": "2",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "1ab1721d59740c0687f36111a2eb87ac031b8af070282f21568de6b0c292517c3a1fddb417ba4524812e0ae24cd85d30"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "770d721f85d28525831c0d5bbfd8e720fcc2e50aef5ecc3e207f223036283cfd"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/registers/registers.js?v=2"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/registers/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-GrFyHVl0DAaH82ERouuHrAMbivBwKC8hVo3msMKSUXw6H920F7pFJIEuCuJM2F0w"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "3358"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-86",
    "type": "file",
    "name": "/regulators/rg.js",
    "group": "kolaboro.com",
@@ -5766,7 +6166,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-81",
+   "bom-ref": "site-file-87",
    "type": "file",
    "name": "/risk/risk.js",
    "group": "kolaboro.com",
@@ -5834,7 +6234,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-82",
+   "bom-ref": "site-file-88",
    "type": "file",
    "name": "/roadmap/sync.js",
    "group": "kolaboro.com",
@@ -5902,7 +6302,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-83",
+   "bom-ref": "site-file-89",
    "type": "file",
    "name": "/satellite/night/night.css",
    "group": "kolaboro.com",
@@ -5970,7 +6370,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-84",
+   "bom-ref": "site-file-90",
    "type": "file",
    "name": "/satellite/night/night.js",
    "group": "kolaboro.com",
@@ -6038,7 +6438,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-85",
+   "bom-ref": "site-file-91",
    "type": "file",
    "name": "/satellite/opt.js",
    "group": "kolaboro.com",
@@ -6106,7 +6506,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-86",
+   "bom-ref": "site-file-92",
    "type": "file",
    "name": "/satellite/plot/plot-core.js",
    "group": "kolaboro.com",
@@ -6174,7 +6574,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-87",
+   "bom-ref": "site-file-93",
    "type": "file",
    "name": "/satellite/plot/plot.css",
    "group": "kolaboro.com",
@@ -6242,28 +6642,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-88",
+   "bom-ref": "site-file-94",
    "type": "file",
    "name": "/satellite/plot/plot.js",
    "group": "kolaboro.com",
-   "version": "714690bb73",
+   "version": "n19d-2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "3b4bc60f53b7fbb5fce7b260818944946e71e8735e0584ff002a73d661ca8bdd9770eb49e88a26152c699c51ae840d1a"
+     "content": "c3b0a1cc2d3a582f389e4af741b41aa3d7358f472c7ae1e00e6138922be44cf5613dcfdf3c6127c3db695801bd8a9d97"
     },
     {
      "alg": "SHA-256",
-     "content": "6ea0f8b6a0608aa407e23c8bcf9a7737ef905340c4c0026f6fc3fd5c01122a6a"
+     "content": "932f78501795542aeb9a24e5d307dbae668ca6fb8fde17b808c5b12d4563c6d5"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/satellite/plot/plot.js?v=714690bb73"
+     "url": "https://kolaboro.com/satellite/plot/plot.js?v=n19d-2"
     }
    ],
    "properties": [
@@ -6301,16 +6701,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-O0vGD1O3+7X857JggYlElG5x6HNeBYT/ACpz1mHKi92XcOtJ6IomFSxpnFGuhA0a"
+     "value": "sha384-w7ChzC06WC84nkr3QbQao9c1j0cseuHgDmE4kivkTPVhPc/fPGEnw9tpWAG9ip2X"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "13927"
+     "value": "19474"
     }
    ]
   },
   {
-   "bom-ref": "site-file-89",
+   "bom-ref": "site-file-95",
    "type": "file",
    "name": "/satellite/sat.css",
    "group": "kolaboro.com",
@@ -6378,7 +6778,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-90",
+   "bom-ref": "site-file-96",
    "type": "file",
    "name": "/satellite/sat.js",
    "group": "kolaboro.com",
@@ -6446,7 +6846,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-91",
+   "bom-ref": "site-file-97",
    "type": "file",
    "name": "/sdk/kolaboro-0.1.0.mjs",
    "group": "kolaboro.com",
@@ -6513,18 +6913,18 @@
    ]
   },
   {
-   "bom-ref": "site-file-92",
+   "bom-ref": "site-file-98",
    "type": "file",
    "name": "/search-alerts/sa.js",
    "group": "kolaboro.com",
-   "version": "7e06f53648",
+   "version": "0772168834",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "1945f287a099c5fd38ff45b1b9b23f0dd98481d5bbce367d2bd8e822d52485cc036c5355890a578547a32a8e7ea433e1"
+     "content": "3c1a0c80d947ba763047f707cadb47bd89afc284c08f63f48177241006a01547f7d08cec4af086a91787f372e2a4b737"
     },
     {
      "alg": "SHA-256",
@@ -6572,16 +6972,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-GUXyh6CZxf04/0WxubI/DdmEgdW7zjZ9K9joItUkhcwDbFNViQpXhUejKo5+pDPh"
+     "value": "sha384-PBoMgNlHunYwR/cHyttHvYmvwoTAj2P0gXckEAagFUf30IzsSvCGqReH83LipLc3"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "6395"
+     "value": "6495"
     }
    ]
   },
   {
-   "bom-ref": "site-file-93",
+   "bom-ref": "site-file-99",
    "type": "file",
    "name": "/security/bounty.js",
    "group": "kolaboro.com",
@@ -6649,7 +7049,75 @@
    ]
   },
   {
-   "bom-ref": "site-file-94",
+   "bom-ref": "site-file-100",
+   "type": "file",
+   "name": "/shipping/ship.js",
+   "group": "kolaboro.com",
+   "version": "4b4686ed6a",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "a59941eeb396600bae8b00420e902c192a21cf2df60d74ae9f2bb2f0b986c6fb1241d265619aa22b4f623ba7da2463f5"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "1a0b30e622f45c6847b2924af983831b5951d0b37069c2f3f390c3276709dd53"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/shipping/ship.js?v=4b4686ed6a"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/shipping/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-pZlB7rOWYAuuiwBCDpAsGSohzy32DXSunyuy8LmGxvsSQdJlYZqiK09iO6faJGP1"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "14679"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-101",
    "type": "file",
    "name": "/sop.css",
    "group": "kolaboro.com",
@@ -6703,7 +7171,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-95",
+   "bom-ref": "site-file-102",
    "type": "file",
    "name": "/sop.js",
    "group": "kolaboro.com",
@@ -6757,7 +7225,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-96",
+   "bom-ref": "site-file-103",
    "type": "file",
    "name": "/sql/sql.js",
    "group": "kolaboro.com",
@@ -6825,7 +7293,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-97",
+   "bom-ref": "site-file-104",
    "type": "file",
    "name": "/standard/standard.js",
    "group": "kolaboro.com",
@@ -6893,28 +7361,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-98",
+   "bom-ref": "site-file-105",
    "type": "file",
    "name": "/status/lighthouse.js",
    "group": "kolaboro.com",
-   "version": "67bf456e34",
+   "version": "5137c99a8d",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "6d04d3113097a8dc3e87535e14e0c6e6a84369b45a8d3ccfed3f5d7e85935ebb6c0af1c1fed69222b5e8328024f21d8d"
+     "content": "18c53843ca0ffd7261cbd89e80516078da86652835dcf3c5190047b265c2907ba8b3266336fd58b6e8487c7ffca00a0d"
     },
     {
      "alg": "SHA-256",
-     "content": "3cbe95ba06e80a8293cad805868dd0b8315882d7eb9e12b2097f5ce9018f49ee"
+     "content": "7af569fc3e6bdcf854d43e28395186f6ed7f32c0b35f4e16709230451a93a5ef"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/status/lighthouse.js?v=67bf456e34"
+     "url": "https://kolaboro.com/status/lighthouse.js?v=5137c99a8d"
     }
    ],
    "properties": [
@@ -6952,16 +7420,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-bQTTETCXqNw+h1NeFODG5qhDabRajTzP7T9dfoWTXrtsCvHB/taSIrXoMoAk8h2N"
+     "value": "sha384-GMU4Q8oP/XJhy9iegFFgeNqGZSg13PPFGQBHsmXCkHuosyZjNv1YtuhIfH/8oAoN"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "3964"
+     "value": "4080"
     }
    ]
   },
   {
-   "bom-ref": "site-file-99",
+   "bom-ref": "site-file-106",
    "type": "file",
    "name": "/status/reliability.js",
    "group": "kolaboro.com",
@@ -7029,7 +7497,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-100",
+   "bom-ref": "site-file-107",
    "type": "file",
    "name": "/status/slo.js",
    "group": "kolaboro.com",
@@ -7097,7 +7565,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-101",
+   "bom-ref": "site-file-108",
    "type": "file",
    "name": "/tools/agent-check/ac.js",
    "group": "kolaboro.com",
@@ -7165,7 +7633,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-102",
+   "bom-ref": "site-file-109",
    "type": "file",
    "name": "/tools/build-cost/bc.js",
    "group": "kolaboro.com",
@@ -7233,7 +7701,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-103",
+   "bom-ref": "site-file-110",
    "type": "file",
    "name": "/tools/build-cost/mx.css",
    "group": "kolaboro.com",
@@ -7301,7 +7769,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-104",
+   "bom-ref": "site-file-111",
    "type": "file",
    "name": "/tools/contract-check/cc.css",
    "group": "kolaboro.com",
@@ -7369,28 +7837,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-105",
+   "bom-ref": "site-file-112",
    "type": "file",
    "name": "/tools/contract-check/cc.js",
    "group": "kolaboro.com",
-   "version": "e2e2c3eb4e",
+   "version": "1c18b6fa2d",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "148b9b4a2857ae465caea771d8173bd29a47a79c54b27db8074733170de38d060025941548cdf65583153d6c3df5cd3c"
+     "content": "9129a6c9178df80a3b5a05d6e502b560f882c84033b1ff98688f829dfa6e2e5614e017b8122f104e27db48a5ae7f6bbd"
     },
     {
      "alg": "SHA-256",
-     "content": "1af5aa711441e8d6303ab9dae0b41b61b54cc22c928d157c7f77e8efceeb35ce"
+     "content": "9d1e2ba8303b56e02f74bff92f94743163a21ab2fcd625b4293b885b807aea5b"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/contract-check/cc.js?v=e2e2c3eb4e"
+     "url": "https://kolaboro.com/tools/contract-check/cc.js?v=1c18b6fa2d"
     }
    ],
    "properties": [
@@ -7428,16 +7896,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-FIubSihXrkZcrqdx2Bc70ppHp5xUsn24B0czFw3jjQYAJZQVSM32VYMVPWw99c08"
+     "value": "sha384-kSmmyReN+Ao7WgXW5QK1YPiCyEAzsf+YaI+CnfpuLlYU4Be4Ei8QTifbSKWuf2u9"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "33670"
+     "value": "35052"
     }
    ]
   },
   {
-   "bom-ref": "site-file-106",
+   "bom-ref": "site-file-113",
    "type": "file",
    "name": "/tools/currency-risk/cr-hist.js",
    "group": "kolaboro.com",
@@ -7505,7 +7973,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-107",
+   "bom-ref": "site-file-114",
    "type": "file",
    "name": "/tools/currency-risk/cr.js",
    "group": "kolaboro.com",
@@ -7573,7 +8041,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-108",
+   "bom-ref": "site-file-115",
    "type": "file",
    "name": "/tools/currency-risk/mx.css",
    "group": "kolaboro.com",
@@ -7641,7 +8109,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-109",
+   "bom-ref": "site-file-116",
    "type": "file",
    "name": "/tools/delay-compensation/dc.js",
    "group": "kolaboro.com",
@@ -7709,7 +8177,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-110",
+   "bom-ref": "site-file-117",
    "type": "file",
    "name": "/tools/delay-compensation/mx.css",
    "group": "kolaboro.com",
@@ -7777,7 +8245,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-111",
+   "bom-ref": "site-file-118",
    "type": "file",
    "name": "/tools/deposit-protection/dp.js",
    "group": "kolaboro.com",
@@ -7845,7 +8313,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-112",
+   "bom-ref": "site-file-119",
    "type": "file",
    "name": "/tools/deposit-protection/kreg.js",
    "group": "kolaboro.com",
@@ -7913,28 +8381,32 @@
    ]
   },
   {
-   "bom-ref": "site-file-113",
+   "bom-ref": "site-file-120",
    "type": "file",
    "name": "/tools/ft.css",
    "group": "kolaboro.com",
-   "version": "9ea14c8196",
+   "version": "59eb1eb608",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "e04c034c49c04238df9057671a84a93fb226e08004d1b2d65a215853d76d3b6504924eaf309fbc9e2bdc740bbb7f53dc"
+     "content": "ab7c96a646f5c5725b153b0d230ffd8262f53a6111ac36769339efcd03499b39b100d2d4e3c491af6858b749b7012944"
     },
     {
      "alg": "SHA-256",
-     "content": "cdd784bd62c5621ab95b5642fa64f8d861bab0015d5ee48bb6891084e9e6ee6e"
+     "content": "59eb1eb608f9c84432f435343df1c43c06949d1a0da3d61de64dbc00090967b2"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/ft.css?v=9ea14c8196"
+     "url": "https://kolaboro.com/tools/ft.css?v=59eb1eb608"
+    },
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/tools/ft.css?v=b10a1"
     }
    ],
    "properties": [
@@ -7952,15 +8424,15 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "7"
+     "value": "6"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/tools/ /tools/contract-check/ /tools/iban-check/ /tools/image-check/ /tools/law/"
+     "value": "/tools/ /tools/contract-check/ /tools/image-check/ /tools/law/ /tools/pdf-check/"
     },
     {
      "name": "kolaboro:url_variants",
-     "value": "1"
+     "value": "2"
     },
     {
      "name": "kolaboro:sri_on_tag",
@@ -7972,105 +8444,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-4EwDTEnAQjjfkFdnGoSpP7Im4IAE0bLWWiFYU9dtO2UEkk6vMJ+8nivcdAu7f1Pc"
+     "value": "sha384-q3yWpkb1xXJbFTsNIw/9gmL1OmERrDZ2kznvzQNJmzmxANLU48SRr2hYt0m3ASlE"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "7734"
+     "value": "8454"
     }
    ]
   },
   {
-   "bom-ref": "site-file-114",
-   "type": "file",
-   "name": "/tools/iban-check/iban.js",
-   "group": "kolaboro.com",
-   "version": "16b46009fb",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "d38f338e05e44374b50910040e72432b10d2734c16d59ce02e1371ba9d0567c722a414bb187aa51791763729b66b509a"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "4e563c477ceb24f171366f1c59875295577e9ea5450d0ce692391d3a12510a43"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/tools/iban-check/iban.js?v=16b46009fb"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "script"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "html"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/tools/iban-check/"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-048zjgXkQ3S1CRAEDnJDKxDSc0wW1ZzgLhNxup0FZ8cipBS7GHqlF5F2Nym2a1Ca"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "15671"
-    }
-   ]
-  },
-  {
-   "bom-ref": "site-file-115",
+   "bom-ref": "site-file-121",
    "type": "file",
    "name": "/tools/image-check/ic.js",
    "group": "kolaboro.com",
-   "version": "eb0414a6a7",
+   "version": "7718d413b0",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "582690a1cd6404f5d0b9c1f8c4bbde9346635d5c6e4ca3fe6d15489eddd7fdeddbabcb18d853f0718151c401c5e49119"
+     "content": "2380ef2c94e0800136f1920c6063ee67a0ad715d02abb04add916c37a3e45dadf1e9046209bbe3cf69cc7b8f2003aebb"
     },
     {
      "alg": "SHA-256",
-     "content": "c150eb1f9fcfcc2b666b284ccdda16bf9a48864fd7863972be52c1973d89a255"
+     "content": "31f4fe8dc548e006a1ded61f68f2446c565524fcd150703d71e1560f7a148bf1"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/image-check/ic.js?v=eb0414a6a7"
+     "url": "https://kolaboro.com/tools/image-check/ic.js?v=7718d413b0"
     }
    ],
    "properties": [
@@ -8108,16 +8512,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-WCaQoc1kBPXQucH4xLvek0ZjXVxuTKP+bRVInt3X/e3bq8sY2FPwcYFRxAHF5JEZ"
+     "value": "sha384-I4DvLJTggAE28ZIMYGPuZ6CtcV0Cq7BK3ZFsN6PkXa3x6QRiCbvjz2nMe48gA667"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "8692"
+     "value": "8627"
     }
    ]
   },
   {
-   "bom-ref": "site-file-116",
+   "bom-ref": "site-file-122",
    "type": "file",
    "name": "/tools/image-check/kdh.js",
    "group": "kolaboro.com",
@@ -8185,11 +8589,79 @@
    ]
   },
   {
-   "bom-ref": "site-file-117",
+   "bom-ref": "site-file-123",
+   "type": "file",
+   "name": "/tools/image-check/photo.js",
+   "group": "kolaboro.com",
+   "version": "fin11c",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "e87596cd11e7559f75b97a66a7662ebd633608b04749c0d9d4459721f72aa4e3f6f24d4cec8f10420bda9b599949c68a"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "4d0289b5c93d68447ecc1699e98be8ed27b960aa6f08f13f3e31c614b37ac7b7"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/tools/image-check/photo.js?v=fin11c"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "9"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ar/check/ /check/ /de/check/ /es/check/ /fr/check/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-6HWWzRHnVZ91uXpmp2YuvWM2CLBHScDZ1EWXIfcqpOP28k1M7I8QQgvam1mZScaK"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "50395"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-124",
    "type": "file",
    "name": "/tools/image-check/prov.js",
    "group": "kolaboro.com",
-   "version": "e7f3b38b42",
+   "version": "85080e1313",
    "supplier": {
     "name": "Kolaboro"
    },
@@ -8206,7 +8678,7 @@
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/image-check/prov.js?v=e7f3b38b42"
+     "url": "https://kolaboro.com/tools/image-check/prov.js?v=85080e1313"
     }
    ],
    "properties": [
@@ -8253,7 +8725,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-118",
+   "bom-ref": "site-file-125",
    "type": "file",
    "name": "/tools/insolvency-check/ic.js",
    "group": "kolaboro.com",
@@ -8321,7 +8793,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-119",
+   "bom-ref": "site-file-126",
    "type": "file",
    "name": "/tools/late-handover/lh.js",
    "group": "kolaboro.com",
@@ -8389,7 +8861,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-120",
+   "bom-ref": "site-file-127",
    "type": "file",
    "name": "/tools/late-handover/mx.css",
    "group": "kolaboro.com",
@@ -8457,7 +8929,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-121",
+   "bom-ref": "site-file-128",
    "type": "file",
    "name": "/tools/market-match/mm.css",
    "group": "kolaboro.com",
@@ -8525,7 +8997,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-122",
+   "bom-ref": "site-file-129",
    "type": "file",
    "name": "/tools/market-match/mm.js",
    "group": "kolaboro.com",
@@ -8593,7 +9065,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-123",
+   "bom-ref": "site-file-130",
    "type": "file",
    "name": "/tools/my-checklist/mc.js",
    "group": "kolaboro.com",
@@ -8661,7 +9133,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-124",
+   "bom-ref": "site-file-131",
    "type": "file",
    "name": "/tools/payment-risk/pr.css",
    "group": "kolaboro.com",
@@ -8729,7 +9201,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-125",
+   "bom-ref": "site-file-132",
    "type": "file",
    "name": "/tools/payment-risk/pr.js",
    "group": "kolaboro.com",
@@ -8797,28 +9269,96 @@
    ]
   },
   {
-   "bom-ref": "site-file-126",
+   "bom-ref": "site-file-133",
+   "type": "file",
+   "name": "/tools/pdf-check/inline.js",
+   "group": "kolaboro.com",
+   "version": "kpdf1",
+   "supplier": {
+    "name": "Kolaboro"
+   },
+   "hashes": [
+    {
+     "alg": "SHA-384",
+     "content": "e298702c01d3bcf67063f7e215e75b4e3706a0d49ab3722d0045aa64dbbbaaf23c646f1d714fac16a05957693366cc80"
+    },
+    {
+     "alg": "SHA-256",
+     "content": "f11eb7c95d11afa15a045581fcd7da3990e96a8c12d409593cdf0fda8210211e"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://kolaboro.com/tools/pdf-check/inline.js?v=kpdf1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:kind",
+     "value": "script"
+    },
+    {
+     "name": "kolaboro:found_by",
+     "value": "browser,html"
+    },
+    {
+     "name": "kolaboro:seen_on_count",
+     "value": "8"
+    },
+    {
+     "name": "kolaboro:seen_on_sample",
+     "value": "/ar/check/ /check/ /de/check/ /es/check/ /fr/check/"
+    },
+    {
+     "name": "kolaboro:url_variants",
+     "value": "1"
+    },
+    {
+     "name": "kolaboro:sri_on_tag",
+     "value": "false"
+    },
+    {
+     "name": "kolaboro:versioned_url",
+     "value": "true"
+    },
+    {
+     "name": "kolaboro:sri",
+     "value": "sha384-4phwLAHTvPZwY/fiFedbTjcGoNSas3ItAEWqZNu7qvI8ZG8dcU+sFqBZV2kzZsyA"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "52484"
+    }
+   ]
+  },
+  {
+   "bom-ref": "site-file-134",
    "type": "file",
    "name": "/tools/pdf-check/pc.js",
    "group": "kolaboro.com",
-   "version": "aa4f8f5d1a",
+   "version": "b10a1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "b8c81efdf4df15f3f716a8e2eb5bb1086c044d1056710b3c9505ceece027ed713b94fe5def2276ed5280ea062e915159"
+     "content": "d5c2cd303a4ac07118a0bbdadb7d7b452b4a6fe33eac40cccaf37e8ebb395eb9a4c79b1969fa9ab01a74ca2ae6359ee1"
     },
     {
      "alg": "SHA-256",
-     "content": "79b615b97a3d4c32622a5d1312755eb0a988fc0a975d9ed540058a77d95191a6"
+     "content": "aadeef823f74e9ff94ba9b14a90143d6ddec4c1d8557f5ff8a7784cca26e6e0b"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/pdf-check/pc.js?v=aa4f8f5d1a"
+     "url": "https://kolaboro.com/tools/pdf-check/pc.js?v=b10a1"
     }
    ],
    "properties": [
@@ -8856,37 +9396,37 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-uMge/fTfFfP3Fqji61uxCGwETRBWcQs8lQXO7OAn7XE7lP5d7yJ27VKA6gYukVFZ"
+     "value": "sha384-1cLNMDpKwHEYoLva2317RStKb+M+rEDMyvN+jrs5Xrmkx5sZafqasBp0yirmNZ7h"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "26715"
+     "value": "29040"
     }
    ]
   },
   {
-   "bom-ref": "site-file-127",
+   "bom-ref": "site-file-135",
    "type": "file",
    "name": "/tools/pdf-check/pdfx.js",
    "group": "kolaboro.com",
-   "version": "de3ef4fb41",
+   "version": "b10a1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "ccabc73f4e1f16f68449a3baa12384a98df36bb14ccfcd9490d13fc9ed173f73945391439634db6582b6ab06b44f7bc2"
+     "content": "ced0bf4f243767dbdf93f2cd1b73c07a2a21fd9374fc64b654013405580fc6ffb854df01c5446a6116988223d5958d69"
     },
     {
      "alg": "SHA-256",
-     "content": "9f409af1ad69c533ad5fb8b36f84522dfe97d0cba0ffb1879e9a2903d82965c5"
+     "content": "e7cc9fecfbd62783e4f5a530a2a56a90e997c7ee19e73e5307ffc45b695a0dfd"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/pdf-check/pdfx.js?v=de3ef4fb41"
+     "url": "https://kolaboro.com/tools/pdf-check/pdfx.js?v=b10a1"
     }
    ],
    "properties": [
@@ -8924,16 +9464,16 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-zKvHP04fFvaESaO6oSOEqY3za7FMz82UkNE/ye0XP3OUU5FDljTbZYK2qwa0T3vC"
+     "value": "sha384-ztC/TyQ3Z9vfk/LNG3PAeioh/ZN0/GS2VAE0BVgPxv+4VN8BxURqYRaYgiPVlY1p"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "37491"
+     "value": "44606"
     }
    ]
   },
   {
-   "bom-ref": "site-file-128",
+   "bom-ref": "site-file-136",
    "type": "file",
    "name": "/tools/permit-check/pq.js",
    "group": "kolaboro.com",
@@ -9001,7 +9541,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-129",
+   "bom-ref": "site-file-137",
    "type": "file",
    "name": "/tools/refund-tracker/rt.js",
    "group": "kolaboro.com",
@@ -9069,7 +9609,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-130",
+   "bom-ref": "site-file-138",
    "type": "file",
    "name": "/tools/resale-exit/mx.css",
    "group": "kolaboro.com",
@@ -9137,7 +9677,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-131",
+   "bom-ref": "site-file-139",
    "type": "file",
    "name": "/tools/resale-exit/rx.js",
    "group": "kolaboro.com",
@@ -9205,7 +9745,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-132",
+   "bom-ref": "site-file-140",
    "type": "file",
    "name": "/tools/total-cost/tc.css",
    "group": "kolaboro.com",
@@ -9273,7 +9813,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-133",
+   "bom-ref": "site-file-141",
    "type": "file",
    "name": "/tools/total-cost/tc.js",
    "group": "kolaboro.com",
@@ -9341,7 +9881,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-134",
+   "bom-ref": "site-file-142",
    "type": "file",
    "name": "/transparency-index/ti-core.js",
    "group": "kolaboro.com",
@@ -9376,7 +9916,7 @@
     },
     {
      "name": "kolaboro:found_by",
-     "value": "browser,html"
+     "value": "html"
     },
     {
      "name": "kolaboro:seen_on_count",
@@ -9384,7 +9924,7 @@
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/m/ /p/BALI-014 /tools/market-match/ /transparency-index/"
+     "value": "/compare/markets/ /m/ /tools/market-match/ /transparency-index/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -9409,7 +9949,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-135",
+   "bom-ref": "site-file-143",
    "type": "file",
    "name": "/transparency-index/ti.css",
    "group": "kolaboro.com",
@@ -9477,7 +10017,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-136",
+   "bom-ref": "site-file-144",
    "type": "file",
    "name": "/transparency-index/ti.js",
    "group": "kolaboro.com",
@@ -9545,7 +10085,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-137",
+   "bom-ref": "site-file-145",
    "type": "file",
    "name": "/trust/trust.js",
    "group": "kolaboro.com",
@@ -9613,28 +10153,28 @@
    ]
   },
   {
-   "bom-ref": "site-file-138",
+   "bom-ref": "site-file-146",
    "type": "file",
    "name": "/verify/n.js",
    "group": "kolaboro.com",
-   "version": "f0fe88a993",
+   "version": "be8058e633",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "58a92359707c3b8da986a461800f633902792a1be784e28634ea919da60ea6c2942b36a3023f06e63337d2bab284cc98"
+     "content": "bd7085a3ef8c31771c23d58a8fee9221c263b262700f294f0f91a84823274f22fc9ad2ed87381b3c4cff9b214181cd03"
     },
     {
      "alg": "SHA-256",
-     "content": "a0b122aa6db291474c0bcd2050be62d7944e4a87555efac60343ae58e81a779b"
+     "content": "92764b7d755251b665f0fcf762382020cde0de39b70f045ce81ba6ca1d4ecdb4"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/verify/n.js?v=f0fe88a993"
+     "url": "https://kolaboro.com/verify/n.js?v=be8058e633"
     }
    ],
    "properties": [
@@ -9672,7 +10212,7 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-WKkjWXB8O42phqRhgA9jOQJ5KhvnhOKGNOqRnaYOpsKUKzajAj8G5jM30rqyhMyY"
+     "value": "sha384-vXCFo++MMXccI9WKj+6SIcJjsmJwDylPD5GoSCMnTyL8mtLthzgbPEz/myFBgc0D"
     },
     {
      "name": "kolaboro:bytes",
@@ -9681,7 +10221,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-139",
+   "bom-ref": "site-file-147",
    "type": "file",
    "name": "/visit/app.js",
    "group": "kolaboro.com",
@@ -9749,7 +10289,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-140",
+   "bom-ref": "site-file-148",
    "type": "file",
    "name": "/visual/vd.css",
    "group": "kolaboro.com",
@@ -9817,7 +10357,7 @@
    ]
   },
   {
-   "bom-ref": "site-file-141",
+   "bom-ref": "site-file-149",
    "type": "file",
    "name": "/visual/vd.js",
    "group": "kolaboro.com",
@@ -9885,74 +10425,6 @@
    ]
   },
   {
-   "bom-ref": "site-file-142",
-   "type": "file",
-   "name": "/watchlist/wl.js",
-   "group": "kolaboro.com",
-   "version": "bfac98fd",
-   "supplier": {
-    "name": "Kolaboro"
-   },
-   "hashes": [
-    {
-     "alg": "SHA-384",
-     "content": "7f7756ea23d9812e60c24345601d88edcaf364a02f9c0c52c901188dc222095ad9074cdef840694a49887e7b110eb46a"
-    },
-    {
-     "alg": "SHA-256",
-     "content": "7cb682c8276024660838375209a283392fe96eaaa18637ccc2d6200ea4fda2aa"
-    }
-   ],
-   "externalReferences": [
-    {
-     "type": "distribution",
-     "url": "https://kolaboro.com/watchlist/wl.js?v=bfac98fd"
-    }
-   ],
-   "properties": [
-    {
-     "name": "kolaboro:scope",
-     "value": "first-party"
-    },
-    {
-     "name": "kolaboro:kind",
-     "value": "script"
-    },
-    {
-     "name": "kolaboro:found_by",
-     "value": "browser"
-    },
-    {
-     "name": "kolaboro:seen_on_count",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:seen_on_sample",
-     "value": "/p/BALI-014"
-    },
-    {
-     "name": "kolaboro:url_variants",
-     "value": "1"
-    },
-    {
-     "name": "kolaboro:sri_on_tag",
-     "value": "false"
-    },
-    {
-     "name": "kolaboro:versioned_url",
-     "value": "true"
-    },
-    {
-     "name": "kolaboro:sri",
-     "value": "sha384-f3dW6iPZgS5gwkNFYB2I7crzZKAvnAxSyQEYjcIiCVrZB0ze+EBpSkmIfnsRDrRq"
-    },
-    {
-     "name": "kolaboro:bytes",
-     "value": "3446"
-    }
-   ]
-  },
-  {
    "bom-ref": "worker-file-0",
    "type": "file",
    "name": "_worker.js/index.js",
@@ -9960,7 +10432,7 @@
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "189ddefab41be912142849e6f85112c5d5e732918d41a1ac343b25d6e15f8c9e"
+     "content": "2af90b95c6c43a85dcc3c10af1163a3c569466528fcf3558cd160c1136ccbfeb"
     }
    ],
    "properties": [
@@ -9970,7 +10442,7 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "57888"
+     "value": "107219"
     }
    ]
   },
@@ -9982,7 +10454,7 @@
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "8450398bb6d8baf08569280880e577bc82d468bc967331ed8bef50a698982ec5"
+     "content": "aac424fcdd0beff48138f26fa332c9ab44d77e3e6a02c14e090455f62c06582b"
     }
    ],
    "properties": [
@@ -9992,19 +10464,19 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "3821"
+     "value": "6671"
     }
    ]
   },
   {
    "bom-ref": "worker-file-2",
    "type": "file",
-   "name": "_worker.js/kbx_a.js",
+   "name": "_worker.js/kbx_404.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "33460c5f72c71bc2d62960d276f0b0b656ba48a846817aa7d9aa7a68cf599962"
+     "content": "8f3ad98d91014c8b951f4d4cc6aa58e93950fb4cacd37031782a9bcf42332370"
     }
    ],
    "properties": [
@@ -10014,19 +10486,19 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "13106"
+     "value": "13121"
     }
    ]
   },
   {
    "bom-ref": "worker-file-3",
    "type": "file",
-   "name": "_worker.js/kbx_b.js",
+   "name": "_worker.js/kbx_a.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "09b572a7c3eee3daf287bbe81c0c0f005373ae545cc440d763cceb45b666381c"
+     "content": "138136f03cde30079a88084c59d32e5d7225056e58d57dec29f1fadcd963a8ec"
     }
    ],
    "properties": [
@@ -10036,12 +10508,210 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "14652"
+     "value": "13349"
     }
    ]
   },
   {
    "bom-ref": "worker-file-4",
+   "type": "file",
+   "name": "_worker.js/kbx_acct.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "ad60f716af9b1c507a33a9feb50c41f6bcc704b5a3c54b8e9f2fe6cbf9a12bb1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "23305"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-5",
+   "type": "file",
+   "name": "_worker.js/kbx_around.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0572b4253a6de895849011e4bb70f85b6ae8dcfd525a1c653714c5cb6e46cf26"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "58978"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-6",
+   "type": "file",
+   "name": "_worker.js/kbx_b.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "18fcb0b4fee5c0a40da8a360abd0bc9ad10774244ff46d5d8b054bcd8835a78e"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "14705"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-7",
+   "type": "file",
+   "name": "_worker.js/kbx_bots.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7c7b064dbf7e9d18b40a4fd07b680621122c9db8a34e8be26ab3b35b438f7dbf"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "7118"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-8",
+   "type": "file",
+   "name": "_worker.js/kbx_bulk.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "975750bb88a2cd378aa808fd519f6b4f73ff1fa09dc59d3fcda8ee76c0303978"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "20932"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-9",
+   "type": "file",
+   "name": "_worker.js/kbx_bulkix.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0d39b85c49f02f3dfe4e5adf03767387bbdb80fc6342b2a64773695c3e4ccbf9"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "63673"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-10",
+   "type": "file",
+   "name": "_worker.js/kbx_buy.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "fb4e581b7e47b6701a6ecf611df7164a621f5a35019af69a60ba815f1efd7a35"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "35056"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-11",
+   "type": "file",
+   "name": "_worker.js/kbx_buy_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0f866961daa9ec1153491fa7a9bb212df3e2045872f8b24ce6254d51f0db8fc1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "63387"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-12",
+   "type": "file",
+   "name": "_worker.js/kbx_buy_notes.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f02294d1ac8d148cc76e59f2319c377fd61b53f4cad7b028efc35cc674f48a0a"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "86829"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-13",
    "type": "file",
    "name": "_worker.js/kbx_c.js",
    "group": "kolaboro.com worker",
@@ -10063,7 +10733,117 @@
    ]
   },
   {
-   "bom-ref": "worker-file-5",
+   "bom-ref": "worker-file-14",
+   "type": "file",
+   "name": "_worker.js/kbx_cal.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "162f50dc57e3e7231e65935616523dd343dbcf8ab7eb6606222efbf8005e8d91"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "22820"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-15",
+   "type": "file",
+   "name": "_worker.js/kbx_cite.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "b7c656dd478cff31cb2859df692185ac20a1e889bab7c167c9faf745924f9faa"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "55860"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-16",
+   "type": "file",
+   "name": "_worker.js/kbx_cite_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "e6a4f00080ee0652dd06d163846e613d667712f1a608fef942773b89e3b9f670"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "55695"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-17",
+   "type": "file",
+   "name": "_worker.js/kbx_cohort.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "3f595cb75948d5d44f39c0724d31faecf26690e07f26d679c1e71befaac64968"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "22359"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-18",
+   "type": "file",
+   "name": "_worker.js/kbx_cohort_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "60a88e8fa9d675559884f0f5eb7d07e6ffe6d514b49ed882db62116ab0dcaad6"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "40867"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-19",
    "type": "file",
    "name": "_worker.js/kbx_d.js",
    "group": "kolaboro.com worker",
@@ -10085,7 +10865,7 @@
    ]
   },
   {
-   "bom-ref": "worker-file-6",
+   "bom-ref": "worker-file-20",
    "type": "file",
    "name": "_worker.js/kbx_data.js",
    "group": "kolaboro.com worker",
@@ -10107,7 +10887,7 @@
    ]
   },
   {
-   "bom-ref": "worker-file-7",
+   "bom-ref": "worker-file-21",
    "type": "file",
    "name": "_worker.js/kbx_disc.js",
    "group": "kolaboro.com worker",
@@ -10129,14 +10909,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-8",
+   "bom-ref": "worker-file-22",
    "type": "file",
    "name": "_worker.js/kbx_e.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "d60aca656a85b18831b4962685e65b1781e5a3350c73e86ade94b67d523ef405"
+     "content": "685af9dc9fab25e3856d235758da2f64f22676a0b7fe57580f27adb3a7bd5c0d"
     }
    ],
    "properties": [
@@ -10146,12 +10926,56 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "27710"
+     "value": "33498"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-9",
+   "bom-ref": "worker-file-23",
+   "type": "file",
+   "name": "_worker.js/kbx_e27.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7145a2c972b4a4f681e9ff53cc535989cd80106e456d504389644430438c3e9e"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "43901"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-24",
+   "type": "file",
+   "name": "_worker.js/kbx_e27_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "688bb40be380b75c352fa214b8a9ed274c76f8a039753fd637b5059b20ff6946"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "35352"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-25",
    "type": "file",
    "name": "_worker.js/kbx_f.js",
    "group": "kolaboro.com worker",
@@ -10173,14 +10997,168 @@
    ]
   },
   {
-   "bom-ref": "worker-file-10",
+   "bom-ref": "worker-file-26",
+   "type": "file",
+   "name": "_worker.js/kbx_facets.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "57ed8d5529e790d16ba5dd10a6489ab87f91c289f95d9df64826ef995e77e0dc"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "70611"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-27",
+   "type": "file",
+   "name": "_worker.js/kbx_facets_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "b12e3e1ada54cb7b4ca701ee75e6109813f2c27c17fa7dcaa2f1874c0a7eaff5"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "137282"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-28",
+   "type": "file",
+   "name": "_worker.js/kbx_fc.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "1b55d831ef82bff425df4808c57a8b8e904b10e3638bc9bbaae31875a45beea9"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "61508"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-29",
+   "type": "file",
+   "name": "_worker.js/kbx_fc_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "2810813b6f775c9ed14c9486dc10499ec0a915d7bd41f0383536078251a9363a"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "68837"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-30",
+   "type": "file",
+   "name": "_worker.js/kbx_filings.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7f0e90fd04486026ad045c115fa8e037eacfb538176fd8799b80c88c3abbcd90"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "17145"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-31",
+   "type": "file",
+   "name": "_worker.js/kbx_follow.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "a73a6a96ab5fd027e20f72d03790bc44dc2fdb7861698617926b04695eaaf7d2"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "49687"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-32",
+   "type": "file",
+   "name": "_worker.js/kbx_fraud.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "72ddb333aa054d91bc78b933bacce144999907519f9a9d64221519bf6f0d3293"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "12725"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-33",
    "type": "file",
    "name": "_worker.js/kbx_g.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "485ebf26031728248a82664400fd4a084d7c1e6af6f84052f3ab44e6b60cd41b"
+     "content": "fa48aa25e6179ad9fb0243633d6c555c4bd64e3fdcbce4550602385fe4231dee"
     }
    ],
    "properties": [
@@ -10190,19 +11168,63 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "7458"
+     "value": "15888"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-11",
+   "bom-ref": "worker-file-34",
+   "type": "file",
+   "name": "_worker.js/kbx_g27.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "5e97c27f378d7e0fdeaf058ce2d9c4d73bd33c06ef8f277d6acfbb0faa7b3b8c"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "36761"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-35",
+   "type": "file",
+   "name": "_worker.js/kbx_gaz.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7c3dcea62e794d09191847cb09548ebe7bbad962d4f3b3103532c4a2a30700cf"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "27108"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-36",
    "type": "file",
    "name": "_worker.js/kbx_h.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "c1e9c0dda655ffd9e746090d40f99b9b5e6f0cd8a5a7b7c060e8a2957de282ee"
+     "content": "042889a4d008154f330265fd7ef975ad2da2734793f398332c86bacadd609af0"
     }
    ],
    "properties": [
@@ -10212,19 +11234,41 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "12378"
+     "value": "12398"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-12",
+   "bom-ref": "worker-file-37",
+   "type": "file",
+   "name": "_worker.js/kbx_hdate.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "672dbc1f58ca68e5cfbc09a2b8c4656312afec29113b8cd73297ba6de2cf65e7"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "18138"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-38",
    "type": "file",
    "name": "_worker.js/kbx_i.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "934567e5ee935915e6b05ede33c5ae5eb88fd312f0bbb76727d8bc8d1f245d28"
+     "content": "1e24d2d04affc1d15a9b6477a6451fe7996cccbbb9df8464141fa50072101a3c"
     }
    ],
    "properties": [
@@ -10234,12 +11278,12 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "14067"
+     "value": "19678"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-13",
+   "bom-ref": "worker-file-39",
    "type": "file",
    "name": "_worker.js/kbx_ins.js",
    "group": "kolaboro.com worker",
@@ -10261,14 +11305,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-14",
+   "bom-ref": "worker-file-40",
    "type": "file",
    "name": "_worker.js/kbx_j.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "1a778c3ae3e1a96a3b05ace05a37127d3fd5d7fbe29aef2e4fe633f1bc0a0c64"
+     "content": "830e89c8d6957f2de957b462e92621890fcb9c79e9f0670d9354768d67ae15b4"
     }
    ],
    "properties": [
@@ -10278,19 +11322,19 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "38559"
+     "value": "47165"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-15",
+   "bom-ref": "worker-file-41",
    "type": "file",
    "name": "_worker.js/kbx_j_map.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "8b6695a58156da0d69f61bd7848dec50fc164ca73ccfd003cb7050bef6fbe5e6"
+     "content": "2422c5de3a9850d079ceed7c419313cd2ed4fde8b8156fc0c2e60eae81382230"
     }
    ],
    "properties": [
@@ -10300,12 +11344,12 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "42810"
+     "value": "48355"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-16",
+   "bom-ref": "worker-file-42",
    "type": "file",
    "name": "_worker.js/kbx_k.js",
    "group": "kolaboro.com worker",
@@ -10327,14 +11371,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-17",
+   "bom-ref": "worker-file-43",
    "type": "file",
    "name": "_worker.js/kbx_l.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "9db4ebabce871811aa67fcb5dbaa0bf592e2d5940e6f58188294058e4e1b2f1c"
+     "content": "a52972aa5f6b733bae0318046d34a2828892bb0b55d4b536bb4346edd10ebe2e"
     }
    ],
    "properties": [
@@ -10344,12 +11388,100 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "30242"
+     "value": "30398"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-18",
+   "bom-ref": "worker-file-44",
+   "type": "file",
+   "name": "_worker.js/kbx_land.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "8d927d43b2ac8d721dd4c49485f8558e44c2f2f70cff38563961f781221d4814"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "69255"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-45",
+   "type": "file",
+   "name": "_worker.js/kbx_lastmod.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "ff44a5d82fd9870d95fcfc5a7a945fa7341ca5e51b5527d0a845851b80f43e51"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "10482"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-46",
+   "type": "file",
+   "name": "_worker.js/kbx_live.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "33844205efbd233aefbeded2b1a83816502a5260c8d4dd4ae38b802d568f7048"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "10228"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-47",
+   "type": "file",
+   "name": "_worker.js/kbx_lookup.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "90c12dd6a5ff7dc37ae55ac417ee8b1a77490cde9c9bdadf11c1923cf77c7238"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "62566"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-48",
    "type": "file",
    "name": "_worker.js/kbx_m.js",
    "group": "kolaboro.com worker",
@@ -10371,7 +11503,29 @@
    ]
   },
   {
-   "bom-ref": "worker-file-19",
+   "bom-ref": "worker-file-49",
+   "type": "file",
+   "name": "_worker.js/kbx_money.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "1e0db0576043678ac7beaf36cd20bb5d7b855211bbc9afe14a8d0db67763c9e7"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "48163"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-50",
    "type": "file",
    "name": "_worker.js/kbx_n.js",
    "group": "kolaboro.com worker",
@@ -10393,14 +11547,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-20",
+   "bom-ref": "worker-file-51",
    "type": "file",
-   "name": "_worker.js/kbx_o.js",
+   "name": "_worker.js/kbx_n27a.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "c42b9316e61d967cc43ad76d8055c37f5d0dce80de79838b081a4facf6fab495"
+     "content": "8faead163143b1b0f189a7e7d6c7b651d4d73a68cc6d124160bfa09ede8be610"
     }
    ],
    "properties": [
@@ -10410,12 +11564,298 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "23104"
+     "value": "49765"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-21",
+   "bom-ref": "worker-file-52",
+   "type": "file",
+   "name": "_worker.js/kbx_n27lead.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "b1cbf30455eaf5dcecf5bc70a78128eeffab1a026fde9c7473372cb9c2f02f15"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "11533"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-53",
+   "type": "file",
+   "name": "_worker.js/kbx_named.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "dbd671c99f73a92a926e7ea3fbec62c536d06932ff5b7d236143ffb5ee6c521e"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "144099"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-54",
+   "type": "file",
+   "name": "_worker.js/kbx_named_diff.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "1bdbebfda75613d2dacde733e16d3973a61e63fd0eb93a9879952ac41491ceda"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "18222"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-55",
+   "type": "file",
+   "name": "_worker.js/kbx_named_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "4877197b97a0d5d0dae6af30719fabf3b5e4bff1692ebf087bac933c6d394dcd"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "214557"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-56",
+   "type": "file",
+   "name": "_worker.js/kbx_named_plus.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "a29d5a42effcd8acade2418e69a66a2aacc9eed1106f91699e232368d353dcd0"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "73831"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-57",
+   "type": "file",
+   "name": "_worker.js/kbx_named_qa.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "16fefe278967e46f29cf61bfdb8e0e686f4c64f6278e8c368896005162e353ae"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "45630"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-58",
+   "type": "file",
+   "name": "_worker.js/kbx_named_sat.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7611f0ecb025f5e917835af5c0282f29d2116f26d13bba3e2f4d3e4a86aade7b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "51743"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-59",
+   "type": "file",
+   "name": "_worker.js/kbx_net.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "520a49173c99883e976ea10f4c290e4382ea1a690ce893be594c17b794a001a1"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "91618"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-60",
+   "type": "file",
+   "name": "_worker.js/kbx_net_land.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "9028d5b32c6ad8ccebe19ad1500103e91e6b943b24a9988c4c6b0c089ac391a7"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "5091"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-61",
+   "type": "file",
+   "name": "_worker.js/kbx_numbers.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "9c3a6564570196353b8e5e373fcec06c744165419cd226055f96dcc1f6435217"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "20922"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-62",
+   "type": "file",
+   "name": "_worker.js/kbx_o.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "6545c05d0c3f2cbd6c70ae51488f0f23ab14389c8097fa7d868ef2bd384b71b0"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "23161"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-63",
+   "type": "file",
+   "name": "_worker.js/kbx_og.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "b9e6fca1634b724512bdc8273168b816deb85eefa173f618840d61009fd56a4f"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "13115"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-64",
+   "type": "file",
+   "name": "_worker.js/kbx_og_font.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "c3e717f6059c964da7e24e9778f8b1552e1915eb79c5d2bb4671b901f7c31eda"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "173206"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-65",
    "type": "file",
    "name": "_worker.js/kbx_p.js",
    "group": "kolaboro.com worker",
@@ -10437,7 +11877,7 @@
    ]
   },
   {
-   "bom-ref": "worker-file-22",
+   "bom-ref": "worker-file-66",
    "type": "file",
    "name": "_worker.js/kbx_p_hz.js",
    "group": "kolaboro.com worker",
@@ -10459,14 +11899,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-23",
+   "bom-ref": "worker-file-67",
    "type": "file",
-   "name": "_worker.js/kbx_q.js",
+   "name": "_worker.js/kbx_paper.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "b52541c27f5a37765356606ffd1a8668929076ef78cc3d06861ded92c4a2f203"
+     "content": "a2b5bb5160744fa2c717ff2318231dc1419640abc761f015b320e0b1946f5537"
     }
    ],
    "properties": [
@@ -10476,12 +11916,100 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "14660"
+     "value": "118139"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-24",
+   "bom-ref": "worker-file-68",
+   "type": "file",
+   "name": "_worker.js/kbx_pay.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "29fed335105dcf95ca598a13ff1258cba917931ddc91dcbf90ad6609eb37fb1b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "2781"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-69",
+   "type": "file",
+   "name": "_worker.js/kbx_plot.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0e3e775b66e9ef3ca9b1f4e0fd2c4dd018d115894d33c6263b22825687bc7521"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "64918"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-70",
+   "type": "file",
+   "name": "_worker.js/kbx_pp.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "20982c15dfcec2cc574f455e763b3099039d9cad26c434ed068fb788e64f7292"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "85026"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-71",
+   "type": "file",
+   "name": "_worker.js/kbx_q.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "01101f68925c134f2ab5dce9304758f955ce7859a7b0d8396a3b406e23f82c67"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "14598"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-72",
    "type": "file",
    "name": "_worker.js/kbx_qa.js",
    "group": "kolaboro.com worker",
@@ -10503,7 +12031,7 @@
    ]
   },
   {
-   "bom-ref": "worker-file-25",
+   "bom-ref": "worker-file-73",
    "type": "file",
    "name": "_worker.js/kbx_r.js",
    "group": "kolaboro.com worker",
@@ -10525,7 +12053,29 @@
    ]
   },
   {
-   "bom-ref": "worker-file-26",
+   "bom-ref": "worker-file-74",
+   "type": "file",
+   "name": "_worker.js/kbx_rules.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "fdd8cbe23030f95a7a6d9782024e7bfb86868ea1952eca1268a270097a656fba"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "41933"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-75",
    "type": "file",
    "name": "_worker.js/kbx_s.js",
    "group": "kolaboro.com worker",
@@ -10547,7 +12097,51 @@
    ]
   },
   {
-   "bom-ref": "worker-file-27",
+   "bom-ref": "worker-file-76",
+   "type": "file",
+   "name": "_worker.js/kbx_see.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "bd1e9708129d547255cac48d712b0cf0210423bb8fa0f133d2c32cd841f78959"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "45423"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-77",
+   "type": "file",
+   "name": "_worker.js/kbx_seo.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "c85a5f9273c3f4a9392156353f4a5a411d2111134d883e7d1207af97e1bc8147"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "122244"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-78",
    "type": "file",
    "name": "_worker.js/kbx_ship.js",
    "group": "kolaboro.com worker",
@@ -10569,7 +12163,51 @@
    ]
   },
   {
-   "bom-ref": "worker-file-28",
+   "bom-ref": "worker-file-79",
+   "type": "file",
+   "name": "_worker.js/kbx_space.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "6cf6f7a091981c1294e9b26d699ea91b4d4c8e644eb0b32eb76aa1278526651e"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "49139"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-80",
+   "type": "file",
+   "name": "_worker.js/kbx_stage.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "e777b297ffa2976227d0fa01f1a4ac643d229b2b1faed3a74d6d921245146244"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "94793"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-81",
    "type": "file",
    "name": "_worker.js/kbx_t.js",
    "group": "kolaboro.com worker",
@@ -10591,7 +12229,183 @@
    ]
   },
   {
-   "bom-ref": "worker-file-29",
+   "bom-ref": "worker-file-82",
+   "type": "file",
+   "name": "_worker.js/kbx_t27.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "3918dc1e9652dab64a66b4da511e7da6f4c8c23e64b444c003a6446901600889"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "24764"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-83",
+   "type": "file",
+   "name": "_worker.js/kbx_t27_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "73e60e57a3df73b33c9d9db2fab05f4fba935f4a6c4e6a9e81b6fc71d41c127b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "94010"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-84",
+   "type": "file",
+   "name": "_worker.js/kbx_ticker.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "c3da214f24a588494be68bddecf3cf119b05010c649ec57cd7cb379e1a14879c"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "10691"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-85",
+   "type": "file",
+   "name": "_worker.js/kbx_tr.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "6f90231cb35d47e376f5f466c614d80209ec22341717068d34d71624e7a8f66b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "58960"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-86",
+   "type": "file",
+   "name": "_worker.js/kbx_tr_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "873bd90be95dde13dcc05bacf7a5cf220d474da5cd74805ef8766b86ea1282b6"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "101684"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-87",
+   "type": "file",
+   "name": "_worker.js/kbx_tr_places.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "286d8703d57fa4eec7e6b4af38bf95b26d5bd879d66e65282b9fd2d3dd72058a"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "8258"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-88",
+   "type": "file",
+   "name": "_worker.js/kbx_trust.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f59b9a6f4806f1b8228854e4edbb49252e5e71f5eedf6dfdbf99f1801193e5e0"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "43172"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-89",
+   "type": "file",
+   "name": "_worker.js/kbx_trust_i18n.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f01fec444201fdc9c81f05e380e0f6008d0a971405837e5a6915022d1cf14fef"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "118145"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-90",
    "type": "file",
    "name": "_worker.js/kbx_u.js",
    "group": "kolaboro.com worker",
@@ -10613,7 +12427,51 @@
    ]
   },
   {
-   "bom-ref": "worker-file-30",
+   "bom-ref": "worker-file-91",
+   "type": "file",
+   "name": "_worker.js/kbx_u26.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7fd93d03d77655c997e820c3b1b3d3ac8d20a8832f276144b43a3bd24f7f6639"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "58212"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-92",
+   "type": "file",
+   "name": "_worker.js/kbx_u27.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "9f108cc1a8a935f2f9850e63c1a2a32be49e6d75e460afe41104a44a248e7f3b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "90186"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-93",
    "type": "file",
    "name": "_worker.js/kbx_v.js",
    "group": "kolaboro.com worker",
@@ -10635,7 +12493,7 @@
    ]
   },
   {
-   "bom-ref": "worker-file-31",
+   "bom-ref": "worker-file-94",
    "type": "file",
    "name": "_worker.js/kbx_w.js",
    "group": "kolaboro.com worker",
@@ -10657,14 +12515,58 @@
    ]
   },
   {
-   "bom-ref": "worker-file-32",
+   "bom-ref": "worker-file-95",
+   "type": "file",
+   "name": "_worker.js/kbx_watch.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "6776fa98ab5bfe4dec2d23782fea925b164d47f270753bb35e13fd5ca154d60f"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "52362"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-96",
+   "type": "file",
+   "name": "_worker.js/kbx_web.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "90013782009460d80ff5958371260206b68530e509da45df6bce5f7ddca921bf"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "52848"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-97",
    "type": "file",
    "name": "_worker.js/kbx_x.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "9ace7210da6fbc94572db60ff8fc2e9797442bba351611bec3b0522677f4b9ed"
+     "content": "97f13a62dbe0de9288f02014d6725e571e25ba4a635ac8f4552638f731a9d225"
     }
    ],
    "properties": [
@@ -10674,19 +12576,107 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "5807"
+     "value": "7480"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-33",
+   "bom-ref": "worker-file-98",
+   "type": "file",
+   "name": "_worker.js/kbx_xc.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7473b95fca21f9f890da585177530700140ae5f0a10334b3851ea7378b078ac7"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "36649"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-99",
+   "type": "file",
+   "name": "_worker.js/kbx_xray.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "60449852f0575c5aeee6cf836784c59f32056f82ff3ad5d8a1bf0dc14d878ad6"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "79550"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-100",
+   "type": "file",
+   "name": "_worker.js/kbx_xray_ev.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "e119140c57a8447c48e41ac7e8466330e727a8fce3355141b797c38c0a822e4e"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "92551"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-101",
+   "type": "file",
+   "name": "_worker.js/kbx_xray_jpeg.js",
+   "group": "kolaboro.com worker",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "88090ef610f77e71eb61773c44f286f74aeb7fb52f86ce11bfd665ee82dabc64"
+    }
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:scope",
+     "value": "first-party"
+    },
+    {
+     "name": "kolaboro:bytes",
+     "value": "40805"
+    }
+   ]
+  },
+  {
+   "bom-ref": "worker-file-102",
    "type": "file",
    "name": "_worker.js/kbx_y.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "ab2848b8db19719ef718a76b5814322a90656f3226849a7647e5b27150904372"
+     "content": "8cf9c37d6387488877b6236488dccd451859bc7bde4cdeebff015f04d325c8f4"
     }
    ],
    "properties": [
@@ -10696,12 +12686,12 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "35917"
+     "value": "37464"
     }
    ]
   },
   {
-   "bom-ref": "worker-file-34",
+   "bom-ref": "worker-file-103",
    "type": "file",
    "name": "_worker.js/kbx_z.js",
    "group": "kolaboro.com worker",
@@ -10723,14 +12713,14 @@
    ]
   },
   {
-   "bom-ref": "worker-file-35",
+   "bom-ref": "worker-file-104",
    "type": "file",
    "name": "_worker.js/kolaboro.js",
    "group": "kolaboro.com worker",
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "126845f7f695754b75bc965cf9a6dc713593098c08719dfa5aff6f75c24e65db"
+     "content": "e67de2a801e526213705cb67f16d76fb63208f7bfc6f37924471de5c7a9240f4"
     }
    ],
    "properties": [
@@ -10740,7 +12730,7 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "159004"
+     "value": "172977"
     }
    ]
   }
@@ -10774,6 +12764,45 @@
   },
   {
    "bom-ref": "svc-2",
+   "name": "api.certspotter.com",
+   "endpoints": [
+    "https://api.certspotter.com"
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:called_from",
+     "value": "worker (server side fetch)"
+    }
+   ]
+  },
+  {
+   "bom-ref": "svc-3",
+   "name": "api.dubaipulse.gov.ae",
+   "endpoints": [
+    "https://api.dubaipulse.gov.ae"
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:called_from",
+     "value": "worker (server side fetch)"
+    }
+   ]
+  },
+  {
+   "bom-ref": "svc-4",
+   "name": "api.gleif.org",
+   "endpoints": [
+    "https://api.gleif.org"
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:called_from",
+     "value": "worker (server side fetch)"
+    }
+   ]
+  },
+  {
+   "bom-ref": "svc-5",
    "name": "api.telegram.org",
    "endpoints": [
     "https://api.telegram.org"
@@ -10786,7 +12815,20 @@
    ]
   },
   {
-   "bom-ref": "svc-3",
+   "bom-ref": "svc-6",
+   "name": "cloudflare-dns.com",
+   "endpoints": [
+    "https://cloudflare-dns.com"
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:called_from",
+     "value": "worker (server side fetch)"
+    }
+   ]
+  },
+  {
+   "bom-ref": "svc-7",
    "name": "ipnpb.paypal.com",
    "endpoints": [
     "https://ipnpb.paypal.com"
@@ -10799,7 +12841,7 @@
    ]
   },
   {
-   "bom-ref": "svc-4",
+   "bom-ref": "svc-8",
    "name": "rekor.sigstore.dev",
    "endpoints": [
     "https://rekor.sigstore.dev"
@@ -10812,7 +12854,7 @@
    ]
   },
   {
-   "bom-ref": "svc-5",
+   "bom-ref": "svc-9",
    "name": "token.actions.githubusercontent.com",
    "endpoints": [
     "https://token.actions.githubusercontent.com"
@@ -10825,7 +12867,20 @@
    ]
   },
   {
-   "bom-ref": "svc-6",
+   "bom-ref": "svc-10",
+   "name": "web.archive.org",
+   "endpoints": [
+    "https://web.archive.org"
+   ],
+   "properties": [
+    {
+     "name": "kolaboro:called_from",
+     "value": "worker (server side fetch)"
+    }
+   ]
+  },
+  {
+   "bom-ref": "svc-11",
    "name": "www.courtlistener.com",
    "endpoints": [
     "https://www.courtlistener.com"
@@ -10985,6 +13040,13 @@
     "site-file-140",
     "site-file-141",
     "site-file-142",
+    "site-file-143",
+    "site-file-144",
+    "site-file-145",
+    "site-file-146",
+    "site-file-147",
+    "site-file-148",
+    "site-file-149",
     "worker-file-0",
     "worker-file-1",
     "worker-file-2",
@@ -11020,7 +13082,76 @@
     "worker-file-32",
     "worker-file-33",
     "worker-file-34",
-    "worker-file-35"
+    "worker-file-35",
+    "worker-file-36",
+    "worker-file-37",
+    "worker-file-38",
+    "worker-file-39",
+    "worker-file-40",
+    "worker-file-41",
+    "worker-file-42",
+    "worker-file-43",
+    "worker-file-44",
+    "worker-file-45",
+    "worker-file-46",
+    "worker-file-47",
+    "worker-file-48",
+    "worker-file-49",
+    "worker-file-50",
+    "worker-file-51",
+    "worker-file-52",
+    "worker-file-53",
+    "worker-file-54",
+    "worker-file-55",
+    "worker-file-56",
+    "worker-file-57",
+    "worker-file-58",
+    "worker-file-59",
+    "worker-file-60",
+    "worker-file-61",
+    "worker-file-62",
+    "worker-file-63",
+    "worker-file-64",
+    "worker-file-65",
+    "worker-file-66",
+    "worker-file-67",
+    "worker-file-68",
+    "worker-file-69",
+    "worker-file-70",
+    "worker-file-71",
+    "worker-file-72",
+    "worker-file-73",
+    "worker-file-74",
+    "worker-file-75",
+    "worker-file-76",
+    "worker-file-77",
+    "worker-file-78",
+    "worker-file-79",
+    "worker-file-80",
+    "worker-file-81",
+    "worker-file-82",
+    "worker-file-83",
+    "worker-file-84",
+    "worker-file-85",
+    "worker-file-86",
+    "worker-file-87",
+    "worker-file-88",
+    "worker-file-89",
+    "worker-file-90",
+    "worker-file-91",
+    "worker-file-92",
+    "worker-file-93",
+    "worker-file-94",
+    "worker-file-95",
+    "worker-file-96",
+    "worker-file-97",
+    "worker-file-98",
+    "worker-file-99",
+    "worker-file-100",
+    "worker-file-101",
+    "worker-file-102",
+    "worker-file-103",
+    "worker-file-104"
    ]
   }
  ]
