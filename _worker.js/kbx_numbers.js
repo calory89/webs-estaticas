@@ -57,7 +57,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (!u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
   const lang = m[1] || 'en', L = T[lang], path = pre(lang) + '/numbers/', canon = ORIGIN + path;
   // the figures take a few seconds to compute from scratch (sitemaps, transparency index): the page is kept at the edge for 15 minutes
-  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v1/' + ((env && env.CF_PAGES_COMMIT_SHA) || 'x') + '/' + lang) : null;
+  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v2/' + lang) : null;
   // n28a: a cold build took 8.6 s (measured 14 Nov 2026). The copy is now kept a day and served at once; after 15 minutes it is
   // rebuilt in the background on the next view (stale-while-revalidate), so visitors no longer wait for the build
   if (ck) { try { const hit = await caches.default.match(ck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0);

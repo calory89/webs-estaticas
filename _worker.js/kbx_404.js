@@ -80,7 +80,8 @@ export async function page(r, u, status, env) {
   const title = (gone ? L.g : L.t) + ' | Kolaboro'; let seenLsw = false;
   // n28c: language buttons of a missing page lead to that language's home (also on the English static 404)
   let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } });
+    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } })
+    .on('link[rel="canonical"],meta[property="og:url"]', { element(e) { e.remove(); } });   // n28a: a missing page has no canonical (the English shell pointed every 404 at /404.html, itself a 308)
   // n28c: the translated shell is read straight from the static files, so its scripts carried no nonce and the enforced CSP of this
   // response blocked all of them (ticker, menu, search: 6 to 10 console errors per page). Stamp this response's nonce, as kbHeaders does.
   const nm = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/);

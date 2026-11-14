@@ -117,6 +117,7 @@ function kbHeaders(r, u) {
   // n20s (9 Nov 2026): script-src-attr 'none' is enforced (no inline on*= handlers are left on the site), so markup injected into a page cannot carry a handler
   h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : embed ? "*" : "'self'") + "; base-uri 'self'; object-src 'none'; script-src-attr 'none'; form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co; upgrade-insecure-requests");
   if (!h.has('referrer-policy')) h.set('referrer-policy', 'strict-origin-when-cross-origin');
+  if (!h.has('content-language')) h.set('content-language', /^\/agents\/id(\/|$)/.test(u.pathname) ? 'id' : (/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [0, 'en'])[1]);   // n28a: only 2 page types sent it; Bing reads it for the page language
   if (!h.has('x-content-type-options')) h.set('x-content-type-options', 'nosniff');
   h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
   // Strict CSP trial (report-only): a fresh nonce per response is stamped on every <script> of our own static HTML, with
@@ -159,7 +160,7 @@ function kbHeaders(r, u) {
   // here, with the nonce and held until the first interaction like on every other page; analytics-all then sees it and adds nothing.
   let ga = false, gaTail = '';
   // n28a: 146 static pages have Open Graph tags but no og:locale (shared links were read as English); it is added from the path language
-  let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || 'en_GB';
+  let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || (/^\/agents\/id(\/|$)/.test(u.pathname) ? 'id_ID' : 'en_GB');
   return new HTMLRewriter().on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
