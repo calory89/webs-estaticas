@@ -61,7 +61,25 @@ const RH_KNOWN = new Set(["__k", "es", "__sb", "about", "account", "admin", "age
 function asset(env, req, path) {
   return env.ASSETS.fetch(new Request(new URL(path, req.url), { method: req.method === 'HEAD' ? 'HEAD' : 'GET', headers: req.headers, redirect: 'manual' }));
 }
+/* rh-redir-1 (14 Nov 2026): old addresses answer 301 (or 410) from /redirects.json, a flat { "/old": "/new" } map written by the site build; read once per 5 minutes */
+let RH_REDIR = null, RH_REDIR_AT = 0;
+async function redirMap(env, req) {
+  if (RH_REDIR && Date.now() - RH_REDIR_AT < 300000) return RH_REDIR;
+  try {
+    const r = await env.ASSETS.fetch(new Request(new URL('/redirects.json', req.url)));
+    if (r.status === 200) { const j = await r.json(); if (j && typeof j === 'object') { RH_REDIR = j; RH_REDIR_AT = Date.now(); } }
+    else if (!RH_REDIR) { RH_REDIR = {}; RH_REDIR_AT = Date.now(); }
+  } catch (e) { if (!RH_REDIR) { RH_REDIR = {}; RH_REDIR_AT = Date.now(); } }
+  return RH_REDIR || {};
+}
 async function pages(req, env, u) {
+  if ((req.method === 'GET' || req.method === 'HEAD') && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
+    const m = await redirMap(env, req);
+    const k = u.pathname.length > 1 ? u.pathname.replace(/\/+$/, '') : '/';
+    const to = Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null;
+    if (to === '410') return new Response('Gone', { status: 410, headers: { 'content-type': 'text/plain; charset=utf-8', 'x-robots-tag': 'noindex' } });
+    if (typeof to === 'string' && to.startsWith('/') && to !== k) return new Response(null, { status: 301, headers: { location: to + u.search, 'cache-control': 'public, max-age=3600' } });
+  }
   if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await asset(env, req, '/__q/' + k + '=' + v + '/'); if (q.status === 200) return q; } } }
   if (u.pathname === '/finds' || u.pathname === '/finds/') return new Response(null, { status: 301, headers: { location: '/' + u.search } });
   if (u.pathname.length > 1 && u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: '/' + u.pathname.replace(/\/+$/, '').replace(/^[\/\\]+/, '') + u.search } });
