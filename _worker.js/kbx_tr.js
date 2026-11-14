@@ -23,6 +23,7 @@ import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E as E27 } from './kbx_e27_i18n.js';
 import { t27 } from './kbx_t27_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
+import { methodLine, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): method version and date (item 58), who is accountable (56)
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -247,7 +248,7 @@ function tableHtml(lang, pl) {
 }
 function kvHtml(lang, pl, ix) {
   const it = [[nf(lang, pl.n), t(lang, 'kv_n')], [pl.med == null ? '-' : nf(lang, pl.med), t(lang, 'kv_med')], [nf(lang, pct(pl.permit, pl.n)) + '%', t(lang, 'kv_permit')], [nf(lang, pct(pl.date, pl.n)) + '%', t(lang, 'kv_date')], [nf(lang, pct(pl.deposit, pl.n)) + '%', t(lang, 'kv_dep')]];
-  return '<div class="ktr-kv">' + it.map(([b, s]) => '<div><b>' + esc(b) + '</b><span>' + esc(s) + '</span></div>').join('') + '</div><p class="k-small k-muted">' + esc(t(lang, 'read_on', { d: fdt(ix.updated, lang) })) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a></p>';
+  return '<div class="ktr-kv">' + it.map(([b, s]) => '<div><b>' + esc(b) + '</b><span>' + esc(s) + '</span></div>').join('') + '</div><p class="k-small k-muted">' + esc(t(lang, 'read_on', { d: fdt(ix.updated, lang) })) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a>' + methodLine(lang) + '</p>';
 }
 function assignHtml(lang, P) {
   if (!P.a) return '<p class="ktr-assign">' + th(lang, 'assign_m', { m: P.m.map(bdi).join(', ') }) + '</p>';
@@ -350,7 +351,7 @@ function hubTable(lang, ix, kind) {
 function hubPage(ix, lang) {
   const path = '/rankings/transparency/', title = t(lang, 'hub_title'), desc = t(lang, 'hub_desc');
   const cr = [['Kolaboro', pre(lang) + '/', 'Kolaboro'], [t(lang, 'crumb_r'), '/rankings/', esc(t(lang, 'crumb_r'))], [t(lang, 'crumb_t'), pre(lang) + path, esc(t(lang, 'crumb_t'))]];
-  const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(t(lang, 'hub_h1')) + '</h1><p class="lead">' + esc(t(lang, 'hub_lead')) + '</p><p class="k-small k-muted">' + esc(t(lang, 'read_on', { d: fdt(ix.updated, lang) })) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a></p></div>' +
+  const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(t(lang, 'hub_h1')) + '</h1><p class="lead">' + esc(t(lang, 'hub_lead')) + '</p><p class="k-small k-muted">' + esc(t(lang, 'read_on', { d: fdt(ix.updated, lang) })) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'm_link')) + '</a>' + methodLine(lang) + '</p></div>' +
     '<h2 id="islands">' + esc(t(lang, 'islands')) + '</h2>' + hubTable(lang, ix, 'i') + '<h2 id="cities">' + esc(t(lang, 'cities')) + '</h2>' + hubTable(lang, ix, 'c') +
     '<p class="k-small">' + esc(t(lang, 'hub_excl')) + ' <a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a></p>' + replyBox(lang, null) + linksHtml(lang, null) + '</div></section></div>';
   const url = PUB(lang, path), all = [...ix.places.values()];
@@ -367,7 +368,7 @@ function methodPage(ix, lang) {
   const rows = KEYS.map(k => '<tr><th scope="row" data-label="' + esc(cols[0]) + '">' + esc(t(lang, 'c_' + k)) + '</th><td class="k-n" data-label="' + esc(cols[1]) + '">' + nf(lang, MAX[k]) + '</td><td data-label="' + esc(cols[2]) + '">' + esc(W[k]) + '</td><td data-label="' + esc(cols[3]) + '"><bdi>' + esc(S[k]) + '</bdi></td></tr>').join('');
   const places = TR_PLACES.map(P => '<li><a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + bdi(P.n) + '</a> <span class="k-muted">(' + bdi(P.cc) + '): ' + th(lang, 'mt_rule_m', { m: P.m.map(bdi).join(', ') }) + (P.a ? '; ' + th(lang, 'mt_rule_a', { a: bdi(P.an || P.a.source) }) + ((P.am || []).length ? ' (' + P.am.map(bdi).join(', ') + ')' : '') : '') + '</span></li>').join('');
   const D = ix.dates, dl = [['/data/named.json', D.named], ['/data/bali-cases.json', D.cases], ['/data/on-time.json', D.ontime], ['/data/web-health.json', D.web], ['/data/lookalikes.json', D.look], ['/data/sanctions.json', D.sanctions], ['/data/gleif-family.json', D.gleif]].map(([f, d]) => '<li><a href="' + f + '"><bdi>' + f + '</bdi></a>' + (d ? ' <span class="k-muted">' + esc(fdt(String(d).slice(0, 10), lang)) + '</span>' : '') + '</li>').join('');
-  const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap k-prose"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'mt_lead')) + '</p></div>' +
+  const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap k-prose"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'mt_lead')) + '</p><p class="k-small k-muted">' + methodLine(lang).trim() + '</p>' + accLine(lang) + '</div>' +
     '<h2 id="weights">' + esc(t(lang, 'mt_w_h')) + '</h2><div class="k-table-wrap ktr-tw"><table class="k-table k-table--dense k-table--stack ktr-mt"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '<tr><th scope="row">' + esc(t(lang, 'name')) + '</th><td class="k-n"><b>100</b></td><td></td><td></td></tr></tbody></table></div>' +
     '<h2 id="rules">' + esc(t(lang, 'mt_rules_h')) + '</h2><ul>' + t(lang, 'mt_rules').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
     '<h2 id="not">' + esc(t(lang, 'mt_not_h')) + '</h2><p>' + esc(t(lang, 'mt_not')) + '</p>' +

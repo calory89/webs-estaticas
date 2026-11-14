@@ -64,6 +64,7 @@ let kbix = null; const KBIX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-che
 let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   // n21d (batch 21): promised dates of a named project as an iCalendar file (keep equal to PATHS in kbx_cal.js)
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
 let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
+let ke29 = null, ke29l = null; const KE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:editorial-policy|how-we-work|sources|buyer-protection-law|countries\/foreign-buyers)\/?$/;   // n29e (batch 29): trust pages (kbx_e29.js)
 let kt27 = null; const KT27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:corrections|buyer-cases|cite|contact|transparency-badge)\/?$|^\/embed\/transparency\/[a-z0-9-]{1,90}\.svg$|^\/rankings\/transparency(?:\/[a-z0-9-]{2,40})?\.csv$/;   // n27t (batch 27): corrections log, buyer cases, how to cite, contact, transparency badge, ranking CSV (kbx_t27.js)
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
 let k404 = null;   // n25e: 301 map, 410 and the translated 404 page (kbx_404.js)
@@ -86,6 +87,7 @@ async function viaTop3(req, env, ctx) {
   return r;
 }
 // kolaboro.com: browser security headers (no framing of private pages, camera and location only for our own pages)
+const KB_CITE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:numbers|press\/delivery-index\/\d{4}-\d{2})\/$/;   // n29e (batch 29): pages whose figures get a "Cite" button (/k/cite29.js)
 function kbHeaders(r, u) {
   const ct = r.headers.get('content-type') || '';
   if (!/text\/html/.test(ct)) {
@@ -161,6 +163,7 @@ function kbHeaders(r, u) {
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
+    .on('body', { element(e) { if (KB_CITE29.test(u.pathname)) e.append('<script nonce="' + nonce + '" src="/k/cite29.js?v=1" defer></script>', { html: true }); } })   // n29e: "Cite" buttons on report figures (item 74)
     .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
 }
 // n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
@@ -355,6 +358,10 @@ export default {
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
     let r = await this.fetch0(req, env, ctx);
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (!u0.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|rankings\/transparency|handover|handover\/overdue|developers|countries)\/$/.test(u0.pathname)) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); r = await k29i.hubInject(req, u0, env, r, h => ruPlaces(kbRu(h))); } catch (e) {} } }   // n29i: key figures and Q&A on the hubs (items 93, 95)
+    // n29e (batch 29): every CSV and JSON data download says its licence (Link rel=license), as /editorial-policy/ states
+    if (r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const ct = r.headers.get('content-type') || '', pth = new URL(req.url).pathname;
+      if ((/text\/csv/.test(ct) || (/json/.test(ct) && /^\/(data|api\/open|api\/v1|api\/x\/transparency|rankings|stories|press)\//.test(pth))) && !/rel="?license/.test(r.headers.get('link') || '')) {
+        try { const h = new Headers(r.headers), lk = h.get('link'); h.set('link', (lk ? lk + ', ' : '') + '<https://creativecommons.org/licenses/by/4.0/>; rel="license"'); r = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {} } }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
       // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
       if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
@@ -496,6 +503,13 @@ export default {
     }
     // n26u: the database server's 5-minute uptime probe of /api/kb/health also refreshes the key-page sweep shown on /status/
     if (host === 'kolaboro.com' && u.pathname === '/api/kb/health' && req.method === 'GET') { try { if (!ku26) ku26 = await import('./kbx_u26.js'); ku26.warm(env, ctx); } catch (e) {} }
+    // kolaboro.com (n29e, batch 29): /editorial-policy/, /how-we-work/, /sources/, /buyer-protection-law/, /countries/foreign-buyers/ in 8 languages (kbx_e29.js); before kbx_seo.js's /countries/<c>/
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KE29.test(u.pathname)) {
+      if (!ke29) ke29 = await import('./kbx_e29.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await ke29.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     // kolaboro.com (n27t, batch 27): /corrections/, /buyer-cases/, /cite/, /contact/, /transparency-badge/ in 8 languages, the badge SVG and the ranking CSV (see kbx_t27.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KT27.test(u.pathname)) {
       if (!kt27) kt27 = await import('./kbx_t27.js');
@@ -624,6 +638,7 @@ export default {
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)
       if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) { const pg = await k404.page(kr, u, fx === 'gone' ? 410 : 404, env); return /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.test(u.pathname) ? kbHeaders(pg, u) : pg; } }   // n28a: the translated 404 shell is a raw file: it needs this response's script nonce, ds.css and style dedupe
+      if (req.method === 'GET' && kr.status === 200 && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?about\/$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!ke29l) ke29l = await import('./kbx_e29_lines.js'); const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en', ab = ke29l.ABOUT_CSS + ke29l.aboutBox(lg); kr = new HTMLRewriter().on('main', { element(e) { e.append(ab, { html: true }); } }).transform(kr); } catch (e) {} }   // n29e: entity facts on /about/ (item 62)
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/metrics/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); const mh = await k27a.metricsHtml(); if (mh) kr = new HTMLRewriter().on('main', { element(e) { e.append(mh, { html: true }); } }).transform(kr); } catch (e) {} }   // n27a: usage by page type and return visits on /metrics/
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/engineering/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); const bh = await kbots.html(req); kr = new HTMLRewriter().on('main', { element(e) { e.append(bh, { html: true }); } }).transform(kr); } catch (e) {} }   // n26i: AI crawler visits on /engineering/
       // n26i (batch 26): the home page and the hubs link the project pages the fewest other project pages link to (kbx_named.js)

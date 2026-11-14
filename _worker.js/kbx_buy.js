@@ -18,6 +18,8 @@ import { hdisp, mkName } from './kbx_hdate.js';
 import { data as namedData } from './kbx_named.js';
 import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
+import { guideNext, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): next review (item 64), who is accountable (56)
+import { e29t } from './kbx_e29_i18n.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = BUY_LANGS;
@@ -248,12 +250,13 @@ function guidePage(G, slug, lang, lease) {
   const rel = [];
   if (P.tr && D.ranked) rel.push([pre(lang) + '/rankings/transparency/' + P.tr + '/', tx(lang, 'l_rank', { p: name })]);
   if (COUNTRY[P.cc]) rel.push(['/countries/' + COUNTRY[P.cc] + '/how-to-check/', tx(lang, 'l_country', { c: P.c })]);
+  rel.push([pre(lang) + '/buyer-protection-law/#' + P.s, e29t(lang, 'l_bp')], [pre(lang) + '/countries/foreign-buyers/#' + P.s, e29t(lang, 'l_fb')]);   // n29e (batch 29)
   if (LAWPAGE[P.cc]) rel.push(['/tools/law/', t(lang, 'l_law')]);
   if (DEST[slug]) rel.push([DEST[slug], tx(lang, 'l_dest', { in: inP })]);
   rel.push([pre(lang) + '/guides/short-let-rules/', t(lang, 'l_short')], ['/checklist/', t(lang, 'l_list')], ['/check/', t(lang, 'l_check')]);
   const note2 = '<div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p><p>' + te(lang, 'reply', { in: esc(inP) }) + ' <a class="k-btn k-btn--sm" href="/corrections/">' + esc(t(lang, 'reply_btn')) + '</a></p></div>';
   const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + te(lang, 'lead', vIn) + '</p>' +
-    '<p class="k-small k-muted"><time datetime="' + revOf(slug) + '">' + esc(tx(lang, 'upd', { d: fdt(revOf(slug), lang), d2: fdt(G.updated, lang) })) + '</time></p></div>' +
+    '<p class="k-small k-muted"><time datetime="' + revOf(slug) + '">' + esc(tx(lang, 'upd', { d: fdt(revOf(slug), lang), d2: fdt(G.updated, lang) })) + '</time>' + guideNext(lang, revOf(slug)) + '</p>' + accLine(lang) + '</div>' +
     '<div class="k-prose">' + sum + toc + steps + table(lang, G, D) + questions(lang, slug, P) + faqHtml + note2 +
     '<h2 id="related">' + esc(t(lang, 'rel_h')) + '</h2><ul>' + rel.map(([h, l]) => '<li><a href="' + esc(h) + '">' + esc(l) + '</a></li>').join('') + '</ul><h3>' + esc(t(lang, 'l_other')) + '</h3><ul>' + others + '</ul></div></div></section></div>';
   let desc = tx(lang, 'desc', vT); if ([...desc].length > 155) desc = tx(lang, 'desc2', vT);   // n29h2: shorter wording before cutting
@@ -269,9 +272,11 @@ function hubPage(G, lang) {
   const rows = BUY_PLACES.map(P => { const D = G.places.get(P.s); return '<tr><td><a href="' + pre(lang) + BASE + P.s + '/">' + esc(tx(lang, 'guide_link', { in: pin(P, lang) })) + '</a></td><td>' + esc(nf(lang, D.n)) + '</td><td>' + esc(nf(lang, D.permit)) + '</td><td>' + esc(nf(lang, D.past)) + '</td></tr>'; }).join('');
   const title = t(lang, 'hub_title'), desc = t(lang, 'hub_desc'), url = ORIGIN + pre(lang) + BASE;
   const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'hub_lead')) + '</p>' +
-    '<p class="k-small k-muted"><time datetime="' + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + '</time></p></div><div class="k-prose">' +
+    '<p class="k-small k-muted"><time datetime="' + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + '</time>' + guideNext(lang, REVIEWED) + '</p>' + accLine(lang) + '</div><div class="k-prose">' +
     '<div class="k-table-wrap"><table class="k-table"><thead><tr><th>' + ['h_guide', 'h_n', 'h_permit', 'h_past'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-    '<p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p><div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p></div></div></div></section></div>';
+    '<p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p>' +
+    // n29e (batch 29): the two comparison pages built from these guides' notes
+    '<p><a href="' + pre(lang) + '/buyer-protection-law/">' + esc(e29t(lang, 'l_bp')) + '</a> · <a href="' + pre(lang) + '/countries/foreign-buyers/">' + esc(e29t(lang, 'l_fb')) + '</a></p><div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p></div></div></div></section></div>';
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD, hasPart: BUY_PLACES.map(P => ({ '@type': 'Article', headline: tx(lang, 'title', { in: pin(P, lang) }), url: ORIGIN + pre(lang) + BASE + P.s + '/' })) }, crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE]])];
   return { path: BASE, title, desc, body, ld };
 }

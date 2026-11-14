@@ -15,6 +15,8 @@
 // /data/shipping.json (changes shipped per day), /data/deploys.json (deploys the guard checked live), /data/progress.json (items, days).
 // Sumba projects never get a press page (the transparency ranking keeps its own disclosure); counts include every tracked project,
 // exactly like /api/open/stats.
+import { e29t } from './kbx_e29_i18n.js';
+import { REVIEWED as E29_REV } from './kbx_e29_lines.js';
 import { TS } from './kbx_trust_i18n.js';
 import { trData } from './kbx_tr.js';
 import { placeName } from './kbx_hdate.js';
@@ -280,7 +282,9 @@ function teamPage(lang) {
     '<h2 id="funding">' + esc(t27(lang, 'tm_fund_h')) + '</h2><ul>' + t27(lang, 'tm_fund').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a class="k-src" href="' + pre(lang) + '/pricing/">' + esc(t27(lang, 'l_price')) + '</a></p>' +
     '<h2 id="conflicts">' + esc(t27(lang, 'tm_coi_h')) + '</h2><ul>' + t27(lang, 'tm_coi').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a class="k-src" href="/independence/">' + esc(t27(lang, 'l_ind')) + '</a> · <a class="k-src" href="' + pre(lang) + '/contact/">' + esc(t27(lang, 'l_contact')) + '</a> · <a class="k-src" href="' + pre(lang) + '/corrections/">' + esc(t27(lang, 'l_corr')) + '</a></p>' +
     '<h2 id="review">' + esc(t(lang, 'tm_rev_h')) + '</h2><p>' + esc(tx(lang, 'tm_rev', { d: fdt(REVIEWED, lang) })) + '</p>' +
-    linkList(lang, [[pre(lang) + '/how-we-score/', 'l_score'], [pre(lang) + '/methods/transparency-score/', 'l_tsm'], ['/registers/', 'l_reg'], [pre(lang) + MOD_P, 'l_mod'], ['/independence/', 'l_ind'], ['/corrections/', 'l_corr'], ['/changelog/', 'l_chg']]) + '</div></div></section></div>';
+    linkList(lang, [[pre(lang) + '/how-we-score/', 'l_score'], [pre(lang) + '/methods/transparency-score/', 'l_tsm'], ['/registers/', 'l_reg'], [pre(lang) + MOD_P, 'l_mod'], ['/independence/', 'l_ind'], ['/corrections/', 'l_corr'], ['/changelog/', 'l_chg']]) +
+    // n29e (batch 29): editorial policy, daily process and sources per country
+    '<p>' + [['/editorial-policy/', 'l_ep'], ['/how-we-work/', 'l_hw'], ['/sources/', 'l_src']].map(([h, k]) => '<a href="' + pre(lang) + h + '">' + esc(e29t(lang, k)) + '</a>').join(' · ') + '</p></div></div></section></div>';
   const title = t(lang, 'tm_title'), desc = t(lang, 'tm_desc'), url = ORIGIN + pre(lang) + TEAM_P;
   return { path: TEAM_P, title, desc, body, ld: [{ '@type': 'AboutPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, lastReviewed: REVIEWED, about: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/', founder: FOUNDERS.map(([n]) => ({ '@type': 'Person', name: n })) } }, crumbLd(lang, [[t(lang, 'tm_h1'), pre(lang) + TEAM_P]])] };
 }
@@ -332,6 +336,8 @@ async function sitemapXml(env) {
   try { const p = await opt(env, 'progress.json'); if (p && p.items_updated) lm[IMP_P] = p.items_updated; } catch (e) {}
   // n27t (batch 27): the trust pages of kbx_t27.js
   for (const p of ['/corrections/', '/buyer-cases/', '/cite/', '/contact/', '/transparency-badge/']) { paths.push(p); lm[p] = REVIEWED; }
+  // n29e (batch 29): editorial policy, how we work, sources, buyer protection compared, foreign buyers compared (kbx_e29.js)
+  for (const p of ['/editorial-policy/', '/how-we-work/', '/sources/', '/buyer-protection-law/', '/countries/foreign-buyers/']) { paths.push(p); lm[p] = E29_REV; }
   try { const c = await opt(env, 'corrections.json'); if (c && c.updated) lm['/corrections/'] = c.updated; } catch (e) {}
   if (lm[PRESS_P]) lm['/transparency-badge/'] = lm[PRESS_P];
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc>' + (lm[p] ? '<lastmod>' + lm[p] + '</lastmod>' : '') + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
