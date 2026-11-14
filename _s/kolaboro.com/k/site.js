@@ -115,7 +115,7 @@
   if (document.querySelector('[data-db]')) {
     getData().then(function (d) {
       if (!d || !d.projects) return; var db = d.db || {}; var v = { projects: d.projects, markets: d.markets, countries: d.countries, claims_total: db.claims_total, contradicted: (db.claims || {}).contradicted, all_six_public: db.all_six_public, with_flags: db.with_flags, sources: db.sources, data_points: db.data_points };
-      document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString('en'); });
+      document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString((document.documentElement.lang || 'en') + '-u-nu-latn'); });   // n28a: 1.595 in de, 1 595 in fr, not 1,595 everywhere
     });
   }
   // shipping log ticker strings for the translated pages (regexes match the agent's fixed English templates)

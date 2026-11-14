@@ -203,7 +203,7 @@ const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','tou
   "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(done||held||!v||typeof v!=='object')return;held=v;var real;" +
   "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return done?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
   // n28a: a table wider than its box scrolls sideways, so keyboard users must be able to focus it (axe scrollable-region-focusable); read after load, off the critical path
-  "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('.k-table-wrap,.tw').forEach(function(t){if(!t.hasAttribute('tabindex')&&t.scrollWidth>t.clientWidth+1)t.tabIndex=0})},600)});" +
+  "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('.k-table-wrap,.tw,.h-tw,.pi-tw,.api-b,pre').forEach(function(t){if(!t.hasAttribute('tabindex')&&t.scrollWidth>t.clientWidth+1)t.tabIndex=0})},600)});" +
   "})(window,document);";
 // kolaboro.com (seoT, batch 8): every public static page gets a BreadcrumbList (and a WebPage node when it has no JSON-LD at all).
 // Parent crumbs are only linked when that folder has a page; the check is cached per isolate.
