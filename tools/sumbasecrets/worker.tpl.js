@@ -1091,6 +1091,7 @@ export default {
     if (p === "/lib/leaflet.css" || p === "/lib/leaflet.js") return libFile(p, ctx);
     { const lm = p.match(/^\/lib\/images\/([a-z0-9-]+\.(png|svg))$/); if (lm) return cached("lib-img-" + lm[1], 31536000, async () => { const o = await fetch(`https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/${lm[1]}`); return o.ok ? new Response(o.body, { headers: { "content-type": lm[2] === "svg" ? "image/svg+xml" : "image/png" } }) : o; }, ctx); }
     if (p === "/api/wx") return apiWx(ctx);
+    if (p === "/BingSiteAuth.xml") return new Response('<?xml version="1.0"?>\n<users>\n\t<user>05B8339A86426AD018D8A40369B078EF</user>\n</users>', { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
     if (p === "/sumba-places.kml") return new Response(geoExport("kml"), { headers: { "content-type": "application/vnd.google-earth.kml+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.kml", "cache-control": "public, max-age=86400" } });
     if (p === "/sumba-places.gpx") return new Response(geoExport("gpx"), { headers: { "content-type": "application/gpx+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.gpx", "cache-control": "public, max-age=86400" } });
     if (p === "/embed/map") return new Response(embedMap(url.searchParams.get("l") || "en"), { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600", "content-security-policy": "frame-ancestors *", "x-robots-tag": "noindex" } });
