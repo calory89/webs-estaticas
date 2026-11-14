@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free showers in Rotterdam", "description": "44 places in Rotterdam, Kingdom of the Netherlands, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/rotterdam-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Rotterdam", "containedInPlace": {"@type": "Country", "name": "Kingdom of the Netherlands"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Rotterdam", "item": "https://supportnear.com/c/rotterdam"}, {"@type": "ListItem", "position": 3, "name": "Free showers in Rotterdam", "item": "https://supportnear.com/c/rotterdam-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free showers in Rotterdam", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Got2Go", "geo": {"@type": "GeoCoordinates", "latitude": 51.91829, "longitude": 4.48015}, "url": "https://supportnear.com/#p=node/6789422754@51.91829,4.48015"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Diergaarde Blijdorp", "geo": {"@type": "GeoCoordinates", "latitude": 51.92868, "longitude": 4.44948}, "url": "https://supportnear.com/#p=node/10172225963@51.92868,4.44948"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Diergaarde Blijdorp", "geo": {"@type": "GeoCoordinates", "latitude": 51.92799, "longitude": 4.44405}, "url": "https://supportnear.com/#p=node/3487972842@51.92799,4.44405"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Toiletten zuidplein", "geo": {"@type": "GeoCoordinates", "latitude": 51.88727, "longitude": 4.49127}, "url": "https://supportnear.com/#p=node/3115678270@51.88727,4.49127"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Urinoir", "geo": {"@type": "GeoCoordinates", "latitude": 51.90143, "longitude": 4.40671}, "url": "https://supportnear.com/#p=node/5875438158@51.90143,4.40671"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "2theloo", "address": "Poolsterstraat 76, 3067LX, Rotterdam", "geo": {"@type": "GeoCoordinates", "latitude": 51.95003, "longitude": 4.55435}, "url": "https://supportnear.com/#p=node/6661279884@51.95003,4.55435"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="rotterdam">All free help in Rotterdam</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="rotterdam">All free help in Rotterdam</a></header><main>
 <h1>Free showers in Rotterdam</h1>
 <p class="lede">44 places within 10 km of the centre of Rotterdam where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Rotterdam&amp;cc=NL&amp;need=hygiene">Open the map of Rotterdam</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Rotterdam&amp;cc=NL&amp;need=hygiene">Open the map of Rotterdam</a>
 <a class="btn" href="rotterdam.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

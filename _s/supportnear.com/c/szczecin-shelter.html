@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Schroniska dla bezdomnych — Szczecin", "description": "Szczecin, Polska — 6 miejsc z adresem, godzinami i telefonem, jeśli są znane. Darmowa mapa, bez konta, działa bez zasięgu.", "inLanguage": "pl", "url": "https://supportnear.com/c/szczecin-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Szczecin", "containedInPlace": {"@type": "Country", "name": "Polska"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Szczecin", "item": "https://supportnear.com/c/szczecin"}, {"@type": "ListItem", "position": 3, "name": "Schroniska dla bezdomnych — Szczecin", "item": "https://supportnear.com/c/szczecin-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Schroniska dla bezdomnych — Szczecin", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Schronisko dla bezdomnych mężczyzn", "telephone": "+48 91 462 45 03", "geo": {"@type": "GeoCoordinates", "latitude": 53.41897, "longitude": 14.56103}, "url": "https://supportnear.com/#p=node/6483936742@53.41897,14.56103"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Szczecińskie Centrum Profilaktyki Uzależnień", "telephone": "+48 501 029 510; +48 91 483 69 23", "openingHours": "Mo 16:15-17:45; Tu 16:00-18:15; We 18:00-20:00; Th 07:00-15:00", "geo": {"@type": "GeoCoordinates", "latitude": 53.41585, "longitude": 14.53604}, "url": "https://supportnear.com/#p=node/5318605279@53.41585,14.53604"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Szczecińskie Stowarzyszenie „Złoty Wiek” – Schronisko dla Bezdomnych", "address": "Stanisława Hryniewieckiego 9", "geo": {"@type": "GeoCoordinates", "latitude": 53.41965, "longitude": 14.57884}, "url": "https://supportnear.com/#p=way/61315270@53.41965,14.57884"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Schronisko dla bezdomnych mężczyzn - Strzałowska", "address": "Strzałowska 24", "telephone": "+48 91 421 49 21", "geo": {"@type": "GeoCoordinates", "latitude": 53.46893, "longitude": 14.58965}, "url": "https://supportnear.com/#p=way/58702822@53.46893,14.58965"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Schronisko Piotra Prymy", "geo": {"@type": "GeoCoordinates", "latitude": 53.49281, "longitude": 14.59886}, "url": "https://supportnear.com/#p=node/6662228656@53.49281,14.59886"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Stowarzyszenie Feniks", "geo": {"@type": "GeoCoordinates", "latitude": 53.49569, "longitude": 14.61266}, "url": "https://supportnear.com/#p=way/477550402@53.49569,14.61266"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="szczecin">Szczecin — cała darmowa pomoc</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="szczecin">Szczecin — cała darmowa pomoc</a></header><main>
 <h1>Schroniska dla bezdomnych — Szczecin</h1>
 <p class="lede">6 miejsc w promieniu 10 km od centrum (Szczecin), gdzie to jest za darmo. Z otwartej mapy, aktualizowanej przez wolontariuszy. Otwórz mapę, żeby zobaczyć wszystkie i jak tam dojść.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Szczecin&amp;cc=PL&amp;need=shelter">Otwórz mapę: Szczecin</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Szczecin&amp;cc=PL&amp;need=shelter">Otwórz mapę: Szczecin</a>
 <a class="btn" href="szczecin.cartel">Wydrukuj plakat dla tego miasta</a>
 <a class="btn" href="./">Wszystkie miasta</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

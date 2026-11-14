@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Gaborone", "description": "9 places in Gaborone, Botswana, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/gaborone-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Gaborone", "containedInPlace": {"@type": "Country", "name": "Botswana"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Gaborone", "item": "https://supportnear.com/c/gaborone"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Gaborone", "item": "https://supportnear.com/c/gaborone-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Gaborone", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Blood Transfusion", "geo": {"@type": "GeoCoordinates", "latitude": -24.65863, "longitude": 25.91436}, "url": "https://supportnear.com/#p=node/11443647269@-24.65863,25.91436"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Princess Marina Referral Hospital", "geo": {"@type": "GeoCoordinates", "latitude": -24.65683, "longitude": 25.9247}, "url": "https://supportnear.com/#p=way/604970193@-24.65683,25.92470"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "MDR-TB Clinic and TB Research Laboratory", "geo": {"@type": "GeoCoordinates", "latitude": -24.66829, "longitude": 25.92576}, "url": "https://supportnear.com/#p=way/801308525@-24.66829,25.92576"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Diagnofirm", "geo": {"@type": "GeoCoordinates", "latitude": -24.64243, "longitude": 25.9208}, "url": "https://supportnear.com/#p=node/13585915501@-24.64243,25.92080"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Maruapula Health", "address": "7886B, gaborone", "geo": {"@type": "GeoCoordinates", "latitude": -24.64196, "longitude": 25.92965}, "url": "https://supportnear.com/#p=node/10867112732@-24.64196,25.92965"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Kalafhi Day Hospital", "geo": {"@type": "GeoCoordinates", "latitude": -24.68356, "longitude": 25.91118}, "url": "https://supportnear.com/#p=node/14061389755@-24.68356,25.91118"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Life Gaborone Private Hospital", "address": "Segoditshane Road, Gaborone", "geo": {"@type": "GeoCoordinates", "latitude": -24.6294, "longitude": 25.93358}, "url": "https://supportnear.com/#p=way/415636863@-24.62940,25.93358"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Cheshire Foundation", "openingHours": "Mo-Fr 07:30-16:30", "geo": {"@type": "GeoCoordinates", "latitude": -24.61891, "longitude": 25.85596}, "url": "https://supportnear.com/#p=way/783850117@-24.61891,25.85596"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gaborone">All free help in Gaborone</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gaborone">All free help in Gaborone</a></header><main>
 <h1>Clinics and hospitals in Gaborone</h1>
 <p class="lede">9 places within 10 km of the centre of Gaborone where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gaborone&amp;cc=BW&amp;need=health">Open the map of Gaborone</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gaborone&amp;cc=BW&amp;need=health">Open the map of Gaborone</a>
 <a class="btn" href="gaborone.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

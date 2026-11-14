@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Социальные службы — Саратов", "description": "Саратов, Россия — 4 мест с адресом, часами и телефоном, если известны. Бесплатная карта, без регистрации, работает без связи.", "inLanguage": "ru", "url": "https://supportnear.com/c/saratov-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Саратов", "containedInPlace": {"@type": "Country", "name": "Россия"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Саратов", "item": "https://supportnear.com/c/saratov"}, {"@type": "ListItem", "position": 3, "name": "Социальные службы — Саратов", "item": "https://supportnear.com/c/saratov-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Социальные службы — Саратов", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Фонд социального страхования", "geo": {"@type": "GeoCoordinates", "latitude": 51.53504, "longitude": 46.01385}, "url": "https://supportnear.com/#p=node/10779585669@51.53504,46.01385"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Центр социальной адаптации для БОМЖ", "geo": {"@type": "GeoCoordinates", "latitude": 51.54927, "longitude": 46.03674}, "url": "https://supportnear.com/#p=way/693923346@51.54927,46.03674"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Школа-интернат", "address": "Селекционный проезд 3, 410010", "telephone": "+7 8452 646922", "geo": {"@type": "GeoCoordinates", "latitude": 51.57048, "longitude": 46.00114}, "url": "https://supportnear.com/#p=way/304978671@51.57048,46.00114"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Энгельсский психоневрологический интернат", "geo": {"@type": "GeoCoordinates", "latitude": 51.49069, "longitude": 46.15601}, "url": "https://supportnear.com/#p=way/140567224@51.49069,46.15601"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="saratov">Саратов — вся бесплатная помощь</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="saratov">Саратов — вся бесплатная помощь</a></header><main>
 <h1>Социальные службы — Саратов</h1>
 <p class="lede">4 мест в радиусе 10 км от центра (Саратов), где это бесплатно. С открытой карты, которую обновляют волонтёры. Открой карту, чтобы увидеть все и как дойти пешком.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Saratov&amp;cc=RU&amp;need=social">Открыть карту: Саратов</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Saratov&amp;cc=RU&amp;need=social">Открыть карту: Саратов</a>
 <a class="btn" href="saratov.cartel">Распечатать плакат для этого города</a>
 <a class="btn" href="./">Все города</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

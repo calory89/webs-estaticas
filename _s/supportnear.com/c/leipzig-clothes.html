@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free clothes in Leipzig", "description": "7 places in Leipzig, Germany, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/leipzig-clothes", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Leipzig", "containedInPlace": {"@type": "Country", "name": "Germany"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Leipzig", "item": "https://supportnear.com/c/leipzig"}, {"@type": "ListItem", "position": 3, "name": "Free clothes in Leipzig", "item": "https://supportnear.com/c/leipzig-clothes"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free clothes in Leipzig", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Kleiderkammer der Leipziger Oase", "address": "Nürnberger Straße 37, 04103, Leipzig", "telephone": "+49 341 14990113", "geo": {"@type": "GeoCoordinates", "latitude": 51.33443, "longitude": 12.3837}, "url": "https://supportnear.com/#p=node/11191096906@51.33443,12.38370"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Schönefelder Kleiderkammer", "address": "Clara-Wieck-Straße 8, 04347, Leipzig", "telephone": "+49 341 35 20 99 06", "openingHours": "Mo-Th 09:00-18:00; Fr 09:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.35513, "longitude": 12.41226}, "url": "https://supportnear.com/#p=node/7850106345@51.35513,12.41226"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Kleiderkammer Passgenau", "address": "Georg-Schumann-Straße 172, 04159, Leipzig", "telephone": "+49 341 9265730", "geo": {"@type": "GeoCoordinates", "latitude": 51.3668, "longitude": 12.34724}, "url": "https://supportnear.com/#p=node/3732174492@51.36680,12.34724"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Kleiderkammer Leipzig", "address": "Friederikenstraße, 04279, Leipzig", "telephone": "+49 341 33611474", "openingHours": "Mo-Fr 08:00-13:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.29337, "longitude": 12.40032}, "url": "https://supportnear.com/#p=node/11516049067@51.29337,12.40032"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Kleiderkammer", "address": "Südblick, 04329, Leipzig", "telephone": "+49 341 2518880", "openingHours": "Mo,We,Th 10:00-15:00; Tu,Fr 10:00-13:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.35115, "longitude": 12.45528}, "url": "https://supportnear.com/#p=node/10998045932@51.35115,12.45528"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "DRK Sozialmarkt Wiederitzsch", "telephone": "+49 341 52038326", "geo": {"@type": "GeoCoordinates", "latitude": 51.39543, "longitude": 12.37344}, "url": "https://supportnear.com/#p=node/13366749643@51.39543,12.37344"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Kleiderkammer Taucha", "telephone": "+49 1525 1093108", "geo": {"@type": "GeoCoordinates", "latitude": 51.37646, "longitude": 12.48644}, "url": "https://supportnear.com/#p=node/11935486466@51.37646,12.48644"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leipzig">All free help in Leipzig</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leipzig">All free help in Leipzig</a></header><main>
 <h1>Free clothes in Leipzig</h1>
 <p class="lede">7 places within 10 km of the centre of Leipzig where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Leipzig&amp;cc=DE&amp;need=clothes">Open the map of Leipzig</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Leipzig&amp;cc=DE&amp;need=clothes">Open the map of Leipzig</a>
 <a class="btn" href="leipzig.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

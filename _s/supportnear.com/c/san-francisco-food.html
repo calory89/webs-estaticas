@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in San Francisco", "description": "14 places in San Francisco, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/san-francisco-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "San Francisco", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "San Francisco", "item": "https://supportnear.com/c/san-francisco"}, {"@type": "ListItem", "position": 3, "name": "Free food places in San Francisco", "item": "https://supportnear.com/c/san-francisco-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in San Francisco", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Project Open Hand", "address": "Polk Street 730, 94109, San Francisco", "telephone": "+1 415 4472300", "geo": {"@type": "GeoCoordinates", "latitude": 37.78394, "longitude": -122.41921}, "url": "https://supportnear.com/#p=node/9956258784@37.78394,-122.41921"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Fraternite Notre Dame Mary of Nazareth House", "geo": {"@type": "GeoCoordinates", "latitude": 37.78342, "longitude": -122.41007}, "url": "https://supportnear.com/#p=node/11699762308@37.78342,-122.41007"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Martin de Porres House of Hospitality", "geo": {"@type": "GeoCoordinates", "latitude": 37.76659, "longitude": -122.40736}, "url": "https://supportnear.com/#p=node/10713395426@37.76659,-122.40736"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Little Free Library", "geo": {"@type": "GeoCoordinates", "latitude": 37.7913, "longitude": -122.42194}, "url": "https://supportnear.com/#p=node/12834574583@37.79130,-122.42194"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Kain Na", "address": "4th Street 1340", "geo": {"@type": "GeoCoordinates", "latitude": 37.77135, "longitude": -122.39143}, "url": "https://supportnear.com/#p=node/10897941831@37.77135,-122.39143"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "San Francisco-Marin Food Bank", "address": "Pennsylvania Avenue 900, 94107, San Francisco", "telephone": "+1-415-282-1900", "openingHours": "Mo-Fr 08:30-17:00; Sa 08:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 37.75456, "longitude": -122.39354}, "url": "https://supportnear.com/#p=way/97638171@37.75456,-122.39354"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "I. T. Bookman Community Center", "address": "Randolph Street 446", "geo": {"@type": "GeoCoordinates", "latitude": 37.71449, "longitude": -122.46689}, "url": "https://supportnear.com/#p=way/283204706@37.71449,-122.46689"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Outer Sunset Trinket Trade", "geo": {"@type": "GeoCoordinates", "latitude": 37.75424, "longitude": -122.50777}, "url": "https://supportnear.com/#p=node/14016899377@37.75424,-122.50777"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-francisco">All free help in San Francisco</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-francisco">All free help in San Francisco</a></header><main>
 <h1>Free food places in San Francisco</h1>
 <p class="lede">14 places within 10 km of the centre of San Francisco where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Francisco&amp;cc=US&amp;need=food">Open the map of San Francisco</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Francisco&amp;cc=US&amp;need=food">Open the map of San Francisco</a>
 <a class="btn" href="san-francisco.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

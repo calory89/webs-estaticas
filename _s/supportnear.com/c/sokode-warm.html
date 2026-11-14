@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Lieux où se poser au chaud à Sokodé", "description": "5 lieux à Sokodé, Togo, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/sokode-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Sokodé", "containedInPlace": {"@type": "Country", "name": "Togo"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Sokodé", "item": "https://supportnear.com/c/sokode"}, {"@type": "ListItem", "position": 3, "name": "Lieux où se poser au chaud à Sokodé", "item": "https://supportnear.com/c/sokode-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Lieux où se poser au chaud à Sokodé", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Librairie Evangelique", "geo": {"@type": "GeoCoordinates", "latitude": 8.98767, "longitude": 1.14033}, "url": "https://supportnear.com/#p=node/4209505568@8.98767,1.14033"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Bibliothèque de Sokodé", "geo": {"@type": "GeoCoordinates", "latitude": 8.98298, "longitude": 1.13827}, "url": "https://supportnear.com/#p=node/6258414186@8.98298,1.13827"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Affaires Sociales", "geo": {"@type": "GeoCoordinates", "latitude": 8.98706, "longitude": 1.13489}, "url": "https://supportnear.com/#p=way/268725220@8.98706,1.13489"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Source de Vie", "geo": {"@type": "GeoCoordinates", "latitude": 8.98745, "longitude": 1.1344}, "url": "https://supportnear.com/#p=node/4183095037@8.98745,1.13440"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "CEG Bariki", "geo": {"@type": "GeoCoordinates", "latitude": 8.9765, "longitude": 1.12736}, "url": "https://supportnear.com/#p=way/268664875@8.97650,1.12736"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sokode">Toute l’aide gratuite à Sokodé</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sokode">Toute l’aide gratuite à Sokodé</a></header><main>
 <h1>Lieux où se poser au chaud à Sokodé</h1>
 <p class="lede">5 lieux à moins de 10 km du centre de Sokodé où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Sokod%C3%A9&amp;cc=TG&amp;need=warm">Ouvrir la carte de Sokodé</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Sokod%C3%A9&amp;cc=TG&amp;need=warm">Ouvrir la carte de Sokodé</a>
 <a class="btn" href="sokode.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

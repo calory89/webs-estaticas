@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Trujillo", "description": "5 sitios en Trujillo, Perú, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/trujillo-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Trujillo", "containedInPlace": {"@type": "Country", "name": "Perú"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Trujillo", "item": "https://supportnear.com/c/trujillo"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Trujillo", "item": "https://supportnear.com/c/trujillo-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Trujillo", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Casa del Niño Trujillano Eulogia Martínez Córdova", "address": "Jirón Fransisco Pizarro 174, 13001, Trujillo", "geo": {"@type": "GeoCoordinates", "latitude": -8.11497, "longitude": -79.03035}, "url": "https://supportnear.com/#p=way/1040947794@-8.11497,-79.03035"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Cruz Roja Peruana", "address": "Avenida España, Trujillo", "geo": {"@type": "GeoCoordinates", "latitude": -8.10654, "longitude": -79.029}, "url": "https://supportnear.com/#p=node/5037463512@-8.10654,-79.02900"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centro Juvenil de Diagnóstico y Rehabilitación Trujillo", "address": "Santa Cruz", "geo": {"@type": "GeoCoordinates", "latitude": -8.11704, "longitude": -79.01893}, "url": "https://supportnear.com/#p=way/522592404@-8.11704,-79.01893"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "ONG Hilo Rojo", "geo": {"@type": "GeoCoordinates", "latitude": -8.06071, "longitude": -79.04877}, "url": "https://supportnear.com/#p=way/685851088@-8.06071,-79.04877"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centro Social Laredo", "geo": {"@type": "GeoCoordinates", "latitude": -8.09191, "longitude": -78.9604}, "url": "https://supportnear.com/#p=node/13568788304@-8.09191,-78.96040"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="trujillo">Toda la ayuda gratis en Trujillo</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="trujillo">Toda la ayuda gratis en Trujillo</a></header><main>
 <h1>Servicios sociales en Trujillo</h1>
 <p class="lede">5 sitios a menos de 10 km del centro de Trujillo donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Trujillo&amp;cc=PE&amp;need=social">Abrir el mapa de Trujillo</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Trujillo&amp;cc=PE&amp;need=social">Abrir el mapa de Trujillo</a>
 <a class="btn" href="trujillo.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

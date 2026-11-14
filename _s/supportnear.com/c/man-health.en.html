@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Man", "description": "8 places in Man, Ivory Coast, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/man-health.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Man", "containedInPlace": {"@type": "Country", "name": "Ivory Coast"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Man", "item": "https://supportnear.com/c/man"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Man", "item": "https://supportnear.com/c/man-health.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Man", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centre de Santé Urbain PMI", "address": "Dioulabougou", "telephone": "+22547374174", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 7.40979, "longitude": -7.55209}, "url": "https://supportnear.com/#p=way/786559791@7.40979,-7.55209"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "PMI MAN", "geo": {"@type": "GeoCoordinates", "latitude": 7.41059, "longitude": -7.55249}, "url": "https://supportnear.com/#p=node/8103782620@7.41059,-7.55249"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centre Hospitalier Régional de Man", "address": "Thérèse", "telephone": "+22533780385", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 7.40638, "longitude": -7.54781}, "url": "https://supportnear.com/#p=way/786544752@7.40638,-7.54781"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Criemosse man", "address": "Camp sea", "telephone": "+22502906137", "openingHours": "Mo-Fr 08:00-12:00,14:00-17:30", "geo": {"@type": "GeoCoordinates", "latitude": 7.40435, "longitude": -7.55402}, "url": "https://supportnear.com/#p=way/786529438@7.40435,-7.55402"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Grandes Endemies", "geo": {"@type": "GeoCoordinates", "latitude": 7.39604, "longitude": -7.55103}, "url": "https://supportnear.com/#p=way/426314641@7.39604,-7.55103"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centre de santé urbain de Gbêpleu(HKB)", "address": "Domoraud", "telephone": "+22507370780", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 7.41066, "longitude": -7.56536}, "url": "https://supportnear.com/#p=way/786554313@7.41066,-7.56536"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Centre de santé urbain grand gbapleu", "address": "Grand Gbapleu sur la route de facobly", "telephone": "+22507716321", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 7.40908, "longitude": -7.52981}, "url": "https://supportnear.com/#p=way/786536795@7.40908,-7.52981"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Centre Hostpitalier Régional de Man", "geo": {"@type": "GeoCoordinates", "latitude": 7.38202, "longitude": -7.57609}, "url": "https://supportnear.com/#p=way/1043671925@7.38202,-7.57609"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="man.en">All free help in Man</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="man.en">All free help in Man</a></header><main>
 <h1>Clinics and hospitals in Man</h1>
 <p class="lede">8 places within 10 km of the centre of Man where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Man&amp;cc=CI&amp;need=health">Open the map of Man</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Man&amp;cc=CI&amp;need=health">Open the map of Man</a>
 <a class="btn" href="man.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

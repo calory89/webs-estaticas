@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Serviços sociais em São Luís", "description": "8 sítios em São Luís, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/sao-luis-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "São Luís", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "São Luís", "item": "https://supportnear.com/c/sao-luis"}, {"@type": "ListItem", "position": 3, "name": "Serviços sociais em São Luís", "item": "https://supportnear.com/c/sao-luis-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Serviços sociais em São Luís", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Fórum de Desenvolvimento Local Sustentável do Jaracati", "geo": {"@type": "GeoCoordinates", "latitude": -2.51268, "longitude": -44.293}, "url": "https://supportnear.com/#p=way/906705977@-2.51268,-44.29300"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "CRAS - Liberdade", "geo": {"@type": "GeoCoordinates", "latitude": -2.52951, "longitude": -44.27754}, "url": "https://supportnear.com/#p=way/1055552504@-2.52951,-44.27754"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CRAS", "geo": {"@type": "GeoCoordinates", "latitude": -2.51094, "longitude": -44.25852}, "url": "https://supportnear.com/#p=way/804063549@-2.51094,-44.25852"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "CRAS", "geo": {"@type": "GeoCoordinates", "latitude": -2.52827, "longitude": -44.24856}, "url": "https://supportnear.com/#p=way/808966295@-2.52827,-44.24856"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Secretaria Municipal da Criança e Assistência Social", "geo": {"@type": "GeoCoordinates", "latitude": -2.50585, "longitude": -44.22711}, "url": "https://supportnear.com/#p=node/13719667312@-2.50585,-44.22711"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Instituto Antonio Brunno", "address": "Rua 15, 65058-130, São Luís", "geo": {"@type": "GeoCoordinates", "latitude": -2.53882, "longitude": -44.21555}, "url": "https://supportnear.com/#p=node/13020823009@-2.53882,-44.21555"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "CREAS -Centro de Referência Especializado em Assistência Social", "geo": {"@type": "GeoCoordinates", "latitude": -2.50635, "longitude": -44.21799}, "url": "https://supportnear.com/#p=way/1223090684@-2.50635,-44.21799"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "CRAS - Cohab", "geo": {"@type": "GeoCoordinates", "latitude": -2.54299, "longitude": -44.21526}, "url": "https://supportnear.com/#p=way/1409345714@-2.54299,-44.21526"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sao-luis">Toda a ajuda gratuita em São Luís</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sao-luis">Toda a ajuda gratuita em São Luís</a></header><main>
 <h1>Serviços sociais em São Luís</h1>
 <p class="lede">8 sítios a menos de 10 km do centro de São Luís onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=S%C3%A3o%20Lu%C3%ADs&amp;cc=BR&amp;need=social">Abrir o mapa de São Luís</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=S%C3%A3o%20Lu%C3%ADs&amp;cc=BR&amp;need=social">Abrir o mapa de São Luís</a>
 <a class="btn" href="sao-luis.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

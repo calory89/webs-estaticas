@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free showers in Washington", "description": "67 places in Washington, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/washington-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Washington", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Washington", "item": "https://supportnear.com/c/washington"}, {"@type": "ListItem", "position": 3, "name": "Free showers in Washington", "item": "https://supportnear.com/c/washington-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free showers in Washington", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Capital one", "geo": {"@type": "GeoCoordinates", "latitude": 38.90532, "longitude": -77.06104}, "url": "https://supportnear.com/#p=node/10906317773@38.90532,-77.06104"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Family Restroom", "geo": {"@type": "GeoCoordinates", "latitude": 38.86898, "longitude": -77.01348}, "url": "https://supportnear.com/#p=node/13143061268@38.86898,-77.01348"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Throne", "geo": {"@type": "GeoCoordinates", "latitude": 38.8839, "longitude": -76.9952}, "url": "https://supportnear.com/#p=node/12026098603@38.88390,-76.99520"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Throne", "geo": {"@type": "GeoCoordinates", "latitude": 38.93036, "longitude": -77.0324}, "url": "https://supportnear.com/#p=node/11958790038@38.93036,-77.03240"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Congressional Cemetery", "geo": {"@type": "GeoCoordinates", "latitude": 38.88248, "longitude": -76.97888}, "url": "https://supportnear.com/#p=way/171416201@38.88248,-76.97888"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Women's Restroom North", "geo": {"@type": "GeoCoordinates", "latitude": 38.84799, "longitude": -77.05137}, "url": "https://supportnear.com/#p=way/585144944@38.84799,-77.05137"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Men's Restroom North", "geo": {"@type": "GeoCoordinates", "latitude": 38.84798, "longitude": -77.05142}, "url": "https://supportnear.com/#p=way/585144577@38.84798,-77.05142"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="washington">All free help in Washington</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="washington">All free help in Washington</a></header><main>
 <h1>Free showers in Washington</h1>
 <p class="lede">67 places within 10 km of the centre of Washington where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Washington&amp;cc=US&amp;need=hygiene">Open the map of Washington</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Washington&amp;cc=US&amp;need=hygiene">Open the map of Washington</a>
 <a class="btn" href="washington.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

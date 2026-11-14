@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Bouaké", "description": "8 places in Bouaké, Ivory Coast, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/bouake-health.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Bouaké", "containedInPlace": {"@type": "Country", "name": "Ivory Coast"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Bouaké", "item": "https://supportnear.com/c/bouake"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Bouaké", "item": "https://supportnear.com/c/bouake-health.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Bouaké", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centre Hospitalier Universitaire de Bouaké", "geo": {"@type": "GeoCoordinates", "latitude": 7.69965, "longitude": -5.03636}, "url": "https://supportnear.com/#p=way/315450061@7.69965,-5.03636"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Institut de Cardiologie de Bouaké", "geo": {"@type": "GeoCoordinates", "latitude": 7.70194, "longitude": -5.03679}, "url": "https://supportnear.com/#p=way/1085873083@7.70194,-5.03679"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centre Anti-Tuberculeux de Bouaké", "geo": {"@type": "GeoCoordinates", "latitude": 7.70245, "longitude": -5.03789}, "url": "https://supportnear.com/#p=way/786210496@7.70245,-5.03789"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hôpital Psychiatrique de Bouaké", "geo": {"@type": "GeoCoordinates", "latitude": 7.67579, "longitude": -5.04181}, "url": "https://supportnear.com/#p=way/786208273@7.67579,-5.04181"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "CHR de Bouaké", "geo": {"@type": "GeoCoordinates", "latitude": 7.69713, "longitude": -4.99815}, "url": "https://supportnear.com/#p=way/1085847205@7.69713,-4.99815"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Formation Sanitaire Urbaine de Dar Es Salam", "geo": {"@type": "GeoCoordinates", "latitude": 7.71956, "longitude": -5.03476}, "url": "https://supportnear.com/#p=way/802864994@7.71956,-5.03476"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Maternité Bethesda", "geo": {"@type": "GeoCoordinates", "latitude": 7.703, "longitude": -5.06383}, "url": "https://supportnear.com/#p=node/9956254912@7.70300,-5.06383"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Hôpital Materno-Infantile Akwaba-Catalunya", "geo": {"@type": "GeoCoordinates", "latitude": 7.73653, "longitude": -5.0092}, "url": "https://supportnear.com/#p=way/802880170@7.73653,-5.00920"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bouake.en">All free help in Bouaké</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bouake.en">All free help in Bouaké</a></header><main>
 <h1>Clinics and hospitals in Bouaké</h1>
 <p class="lede">8 places within 10 km of the centre of Bouaké where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Bouak%C3%A9&amp;cc=CI&amp;need=health">Open the map of Bouaké</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Bouak%C3%A9&amp;cc=CI&amp;need=health">Open the map of Bouaké</a>
 <a class="btn" href="bouake.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

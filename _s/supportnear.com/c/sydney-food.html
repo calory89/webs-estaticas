@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in Sydney", "description": "6 places in Sydney, Australia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/sydney-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Sydney", "containedInPlace": {"@type": "Country", "name": "Australia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Sydney", "item": "https://supportnear.com/c/sydney"}, {"@type": "ListItem", "position": 3, "name": "Free food places in Sydney", "item": "https://supportnear.com/c/sydney-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in Sydney", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "St Canice’s Kitchen", "geo": {"@type": "GeoCoordinates", "latitude": -33.8754, "longitude": 151.22614}, "url": "https://supportnear.com/#p=node/11712134846@-33.87540,151.22614"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Addi Road Food Pantry", "geo": {"@type": "GeoCoordinates", "latitude": -33.88495, "longitude": 151.17779}, "url": "https://supportnear.com/#p=node/9201565676@-33.88495,151.17779"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Sydney City Lifestyle & Mission Centre", "address": "Parramatta Road 181, 2038, Annandale", "telephone": "+61 449 844 006", "openingHours": "Tu 12:00-15:30; Fr 08:30-13:30", "geo": {"@type": "GeoCoordinates", "latitude": -33.88797, "longitude": 151.16503}, "url": "https://supportnear.com/#p=node/9201565677@-33.88797,151.16503"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Addi Road Food Pantry", "address": "Addison Road 142, 2204, Marrickville", "openingHours": "Mo-Fr 12:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": -33.90293, "longitude": 151.16107}, "url": "https://supportnear.com/#p=way/608947506@-33.90293,151.16107"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Loaves And Fishes Restaurant", "geo": {"@type": "GeoCoordinates", "latitude": -33.89016, "longitude": 151.12711}, "url": "https://supportnear.com/#p=way/1186458629@-33.89016,151.12711"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Community Food Pantry", "geo": {"@type": "GeoCoordinates", "latitude": -33.89121, "longitude": 151.12146}, "url": "https://supportnear.com/#p=node/11019698355@-33.89121,151.12146"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sydney">All free help in Sydney</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sydney">All free help in Sydney</a></header><main>
 <h1>Free food places in Sydney</h1>
 <p class="lede">6 places within 10 km of the centre of Sydney where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Sydney&amp;cc=AU&amp;need=food">Open the map of Sydney</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Sydney&amp;cc=AU&amp;need=food">Open the map of Sydney</a>
 <a class="btn" href="sydney.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

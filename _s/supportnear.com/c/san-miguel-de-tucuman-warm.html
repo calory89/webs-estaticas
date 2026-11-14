@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sitios donde estar en San Miguel de Tucumán", "description": "7 sitios en San Miguel de Tucumán, Argentina, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/san-miguel-de-tucuman-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "San Miguel de Tucumán", "containedInPlace": {"@type": "Country", "name": "Argentina"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "San Miguel de Tucumán", "item": "https://supportnear.com/c/san-miguel-de-tucuman"}, {"@type": "ListItem", "position": 3, "name": "Sitios donde estar en San Miguel de Tucumán", "item": "https://supportnear.com/c/san-miguel-de-tucuman-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sitios donde estar en San Miguel de Tucumán", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Casa Caminantes", "address": "San Lorenzo 1342, 4000", "geo": {"@type": "GeoCoordinates", "latitude": -26.83132, "longitude": -65.21837}, "url": "https://supportnear.com/#p=node/4879725422@-26.83132,-65.21837"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Ciipres Tucuman", "address": "Marina Alfaro 1214, T4002IBQ", "openingHours": "Mo-Fr 08:00-12:00", "geo": {"@type": "GeoCoordinates", "latitude": -26.84903, "longitude": -65.20166}, "url": "https://supportnear.com/#p=node/4306767290@-26.84903,-65.20166"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CIC", "geo": {"@type": "GeoCoordinates", "latitude": -26.78378, "longitude": -65.2151}, "url": "https://supportnear.com/#p=node/4208101777@-26.78378,-65.21510"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centro Vecinal", "address": "4178, Alderetes", "geo": {"@type": "GeoCoordinates", "latitude": -26.8144, "longitude": -65.14776}, "url": "https://supportnear.com/#p=way/1130840856@-26.81440,-65.14776"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca Lizondo Borda", "geo": {"@type": "GeoCoordinates", "latitude": -26.77704, "longitude": -65.20996}, "url": "https://supportnear.com/#p=node/2868011486@-26.77704,-65.20996"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CIC Vial III", "address": "Benigno Vallejo 3800, 4000, San Miguel de Tucumán", "telephone": "+543814395030", "geo": {"@type": "GeoCoordinates", "latitude": -26.85324, "longitude": -65.25836}, "url": "https://supportnear.com/#p=node/3417429606@-26.85324,-65.25836"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Punto Digital Yerba Buena", "address": "Juan Bautista Alberdi 75, T4107FGA, Yerba Buena", "openingHours": "Mo-Fr 08:00-13:00,15:00-20:00; Sa 08:00-12:00", "geo": {"@type": "GeoCoordinates", "latitude": -26.79531, "longitude": -65.25925}, "url": "https://supportnear.com/#p=node/9029863143@-26.79531,-65.25925"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-miguel-de-tucuman">Toda la ayuda gratis en San Miguel de Tucumán</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-miguel-de-tucuman">Toda la ayuda gratis en San Miguel de Tucumán</a></header><main>
 <h1>Sitios donde estar en San Miguel de Tucumán</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de San Miguel de Tucumán donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Miguel%20de%20Tucum%C3%A1n&amp;cc=AR&amp;need=warm">Abrir el mapa de San Miguel de Tucumán</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Miguel%20de%20Tucum%C3%A1n&amp;cc=AR&amp;need=warm">Abrir el mapa de San Miguel de Tucumán</a>
 <a class="btn" href="san-miguel-de-tucuman.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

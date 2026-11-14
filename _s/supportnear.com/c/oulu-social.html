@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Oulu", "description": "7 places in Oulu, Finland, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/oulu-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Oulu", "containedInPlace": {"@type": "Country", "name": "Finland"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Oulu", "item": "https://supportnear.com/c/oulu"}, {"@type": "ListItem", "position": 3, "name": "Social services in Oulu", "item": "https://supportnear.com/c/oulu-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Oulu", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Help Centre Ukraine Oulu", "address": "Torikatu 12, 90100, Oulu", "geo": {"@type": "GeoCoordinates", "latitude": 65.01355, "longitude": 25.46965}, "url": "https://supportnear.com/#p=node/11397002776@65.01355,25.46965"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Byströmin Ohjaamo Oulu", "address": "Hallituskatu 5, 90100, Oulu", "telephone": "+358 50 599 2293", "openingHours": "Mo-Fr 09:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": 65.01456, "longitude": 25.4692}, "url": "https://supportnear.com/#p=node/8652105479@65.01456,25.46920"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "D-asema Oulu", "address": "Valtatie 53, 90500, Oulu", "geo": {"@type": "GeoCoordinates", "latitude": 65.02545, "longitude": 25.47902}, "url": "https://supportnear.com/#p=node/13982415233@65.02545,25.47902"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Kestävän Kehityksen Keskus, Lounaskahvila Omakuppi", "address": "Sorvarintie 18, 90530, Oulu", "geo": {"@type": "GeoCoordinates", "latitude": 65.0294, "longitude": 25.47528}, "url": "https://supportnear.com/#p=way/292929399@65.02940,25.47528"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Onnelan lastenkoti", "address": "Onnelantie 6", "geo": {"@type": "GeoCoordinates", "latitude": 65.00499, "longitude": 25.54643}, "url": "https://supportnear.com/#p=way/495045750@65.00499,25.54643"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Maikkulan monitoimitalo", "geo": {"@type": "GeoCoordinates", "latitude": 64.98254, "longitude": 25.57096}, "url": "https://supportnear.com/#p=way/126995162@64.98254,25.57096"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Pohjolan lapsi- ja perhepalvelut", "address": "Kotimetsäntie 6, 90420, Oulu", "geo": {"@type": "GeoCoordinates", "latitude": 64.95049, "longitude": 25.55267}, "url": "https://supportnear.com/#p=way/64971934@64.95049,25.55267"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="oulu">All free help in Oulu</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="oulu">All free help in Oulu</a></header><main>
 <h1>Social services in Oulu</h1>
 <p class="lede">7 places within 10 km of the centre of Oulu where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Oulu&amp;cc=FI&amp;need=social">Open the map of Oulu</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Oulu&amp;cc=FI&amp;need=social">Open the map of Oulu</a>
 <a class="btn" href="oulu.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

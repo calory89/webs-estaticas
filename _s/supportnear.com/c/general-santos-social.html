@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in General Santos", "description": "7 places in General Santos, Philippines, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/general-santos-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "General Santos", "containedInPlace": {"@type": "Country", "name": "Philippines"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "General Santos", "item": "https://supportnear.com/c/general-santos"}, {"@type": "ListItem", "position": 3, "name": "Social services in General Santos", "item": "https://supportnear.com/c/general-santos-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in General Santos", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Philippine Red Cross", "address": "9500, General Santos", "geo": {"@type": "GeoCoordinates", "latitude": 6.11392, "longitude": 125.17121}, "url": "https://supportnear.com/#p=way/275377588@6.11392,125.17121"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "PWD Center", "address": "Senior Citizens Street, 9500, General Santos City", "geo": {"@type": "GeoCoordinates", "latitude": 6.11434, "longitude": 125.17188}, "url": "https://supportnear.com/#p=node/5692115721@6.11434,125.17188"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Senior Citizens Office", "address": "Senior Citizens Street, 9500, General Santos City", "geo": {"@type": "GeoCoordinates", "latitude": 6.11443, "longitude": 125.1722}, "url": "https://supportnear.com/#p=way/630200061@6.11443,125.17220"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Social Development Center", "address": "Udtog Matalam Street, 9500, General Santos", "geo": {"@type": "GeoCoordinates", "latitude": 6.11462, "longitude": 125.17271}, "url": "https://supportnear.com/#p=way/275379194@6.11462,125.17271"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "American Heart Association", "address": "Digos-Makar Road, 9500, General Santos City", "geo": {"@type": "GeoCoordinates", "latitude": 6.119, "longitude": 125.15913}, "url": "https://supportnear.com/#p=node/13247716153@6.11900,125.15913"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "General Santos Habitat Community Association Inc.", "address": "9500, General Santos", "geo": {"@type": "GeoCoordinates", "latitude": 6.16861, "longitude": 125.15783}, "url": "https://supportnear.com/#p=node/4292225399@6.16861,125.15783"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Social Health, Environment and Development Foundation", "address": "Quirino Avenue, 9500, General Santos City", "telephone": "+63 83 553 8979", "geo": {"@type": "GeoCoordinates", "latitude": 6.06499, "longitude": 125.12268}, "url": "https://supportnear.com/#p=node/7300918385@6.06499,125.12268"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="general-santos">All free help in General Santos</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="general-santos">All free help in General Santos</a></header><main>
 <h1>Social services in General Santos</h1>
 <p class="lede">7 places within 10 km of the centre of General Santos where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=General%20Santos&amp;cc=PH&amp;need=social">Open the map of General Santos</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=General%20Santos&amp;cc=PH&amp;need=social">Open the map of General Santos</a>
 <a class="btn" href="general-santos.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

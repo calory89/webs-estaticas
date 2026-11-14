@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Pohang: 6 free showers and 21+ clinics and hospitals", "description": "6 free showers, 21+ clinics and hospitals and 4 social services within 10 km of the centre of Pohang, South Korea. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/pohang", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Pohang", "containedInPlace": {"@type": "Country", "name": "South Korea"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Pohang", "item": "https://supportnear.com/c/pohang"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "포항성모병원", "address": "대잠동길 17, 37661, 포항시", "telephone": "+82 54 272 0151", "geo": {"@type": "GeoCoordinates", "latitude": 36.01611, "longitude": 129.33925}, "url": "https://supportnear.com/#p=way/662012260@36.01611,129.33925"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "대한정형외과의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.01944, "longitude": 129.34899}, "url": "https://supportnear.com/#p=node/368833403@36.01944,129.34899"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "책이랑글이랑 어린이도서관", "geo": {"@type": "GeoCoordinates", "latitude": 36.02504, "longitude": 129.34141}, "url": "https://supportnear.com/#p=node/368658322@36.02504,129.34141"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "조익피부과의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.02211, "longitude": 129.34999}, "url": "https://supportnear.com/#p=node/368833627@36.02211,129.34999"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "이동약국", "geo": {"@type": "GeoCoordinates", "latitude": 36.02566, "longitude": 129.34143}, "url": "https://supportnear.com/#p=node/4636805885@36.02566,129.34143"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "태백한의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.02172, "longitude": 129.35198}, "url": "https://supportnear.com/#p=node/368832465@36.02172,129.35198"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "이창우내과의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.02155, "longitude": 129.35236}, "url": "https://supportnear.com/#p=node/368834088@36.02155,129.35236"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "사랑한의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.02136, "longitude": 129.35253}, "url": "https://supportnear.com/#p=node/368834195@36.02136,129.35253"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "오학윤정형외과의원", "geo": {"@type": "GeoCoordinates", "latitude": 36.02262, "longitude": 129.35213}, "url": "https://supportnear.com/#p=node/368833643@36.02262,129.35213"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "오학윤정형외과", "geo": {"@type": "GeoCoordinates", "latitude": 36.0225, "longitude": 129.35228}, "url": "https://supportnear.com/#p=node/368833299@36.02250,129.35228"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Pohang&amp;cc=KR">Open the live map of Pohang</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Pohang&amp;cc=KR">Open the live map of Pohang</a></header><main>
 <h1>Free help in Pohang <small style="font-weight:400;color:var(--ink-3)">· 포항시</small></h1>
 <p class="lede">6 free showers, 21+ clinics and hospitals and 4 social services within 10 km of the centre of Pohang, South Korea, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Pohang&amp;cc=KR">Open the map of Pohang</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/pohang">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

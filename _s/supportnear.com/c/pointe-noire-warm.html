@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Lieux où se poser au chaud à Pointe-Noire", "description": "6 lieux à Pointe-Noire, Congo-Brazzaville, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/pointe-noire-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Pointe-Noire", "containedInPlace": {"@type": "Country", "name": "Congo-Brazzaville"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Pointe-Noire", "item": "https://supportnear.com/c/pointe-noire"}, {"@type": "ListItem", "position": 3, "name": "Lieux où se poser au chaud à Pointe-Noire", "item": "https://supportnear.com/c/pointe-noire-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Lieux où se poser au chaud à Pointe-Noire", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Maison de la presse", "geo": {"@type": "GeoCoordinates", "latitude": -4.7988, "longitude": 11.8463}, "url": "https://supportnear.com/#p=node/4530850340@-4.79880,11.84630"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Horus mo", "geo": {"@type": "GeoCoordinates", "latitude": -4.79406, "longitude": 11.85911}, "url": "https://supportnear.com/#p=way/733637126@-4.79406,11.85911"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centre de Formation ILOGS", "geo": {"@type": "GeoCoordinates", "latitude": -4.8053, "longitude": 11.84336}, "url": "https://supportnear.com/#p=node/4736086821@-4.80530,11.84336"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Institut Français", "geo": {"@type": "GeoCoordinates", "latitude": -4.79261, "longitude": 11.85964}, "url": "https://supportnear.com/#p=way/647964070@-4.79261,11.85964"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Institut Français du Congo", "geo": {"@type": "GeoCoordinates", "latitude": -4.79266, "longitude": 11.85967}, "url": "https://supportnear.com/#p=node/6871450756@-4.79266,11.85967"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="pointe-noire">Toute l’aide gratuite à Pointe-Noire</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="pointe-noire">Toute l’aide gratuite à Pointe-Noire</a></header><main>
 <h1>Lieux où se poser au chaud à Pointe-Noire</h1>
 <p class="lede">6 lieux à moins de 10 km du centre de Pointe-Noire où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Pointe-Noire&amp;cc=CG&amp;need=warm">Ouvrir la carte de Pointe-Noire</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Pointe-Noire&amp;cc=CG&amp;need=warm">Ouvrir la carte de Pointe-Noire</a>
 <a class="btn" href="pointe-noire.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

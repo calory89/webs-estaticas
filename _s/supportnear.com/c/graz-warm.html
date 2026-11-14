@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Graz", "description": "7 places in Graz, Austria, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/graz-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Graz", "containedInPlace": {"@type": "Country", "name": "Austria"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Graz", "item": "https://supportnear.com/c/graz"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Graz", "item": "https://supportnear.com/c/graz-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Graz", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Neue Galerie Zeitschriftensammlung", "address": "Sackstraße 16, 8010, Graz", "telephone": "+43 316 829155 9313", "geo": {"@type": "GeoCoordinates", "latitude": 47.07245, "longitude": 15.43688}, "url": "https://supportnear.com/#p=node/1826031383@47.07245,15.43688"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Steirisches Volksliedwerk", "address": "Sporgasse 23, 8010, Graz", "telephone": "+43 316 908635 52", "geo": {"@type": "GeoCoordinates", "latitude": 47.07277, "longitude": 15.43916}, "url": "https://supportnear.com/#p=node/1824598060@47.07277,15.43916"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Dom im Berg", "address": "Schloßbergplatz 1, 8010, Graz", "geo": {"@type": "GeoCoordinates", "latitude": 47.07348, "longitude": 15.43807}, "url": "https://supportnear.com/#p=way/243274640@47.07348,15.43807"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hörbibliothek Mariahilf", "address": "Mariahilferplatz 3, 8020, Graz", "telephone": "+43 316 713169 40", "openingHours": "We 14:00-18:30; Fr 08:00-11:00; Su 10:00-11:00", "geo": {"@type": "GeoCoordinates", "latitude": 47.07247, "longitude": 15.43325}, "url": "https://supportnear.com/#p=node/1826031381@47.07247,15.43325"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Kultum", "address": "Mariahilferplatz 3, 8020, Graz", "telephone": "+43 316 71 11 33", "geo": {"@type": "GeoCoordinates", "latitude": 47.07254, "longitude": 15.43275}, "url": "https://supportnear.com/#p=node/12698863544@47.07254,15.43275"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Hauptbibliothek Zanklhof", "address": "Belgiergasse 16, 8020, Graz", "telephone": "+43 316 872 4970", "openingHours": "Mo-Fr 11:00-18:00; Tu,Th 08:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 47.06983, "longitude": 15.43152}, "url": "https://supportnear.com/#p=node/359589988@47.06983,15.43152"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Frauenservice", "address": "Lendplatz 38, 8020, Graz", "telephone": "+43 316 71 60 22", "openingHours": "We 15:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 47.07553, "longitude": 15.43084}, "url": "https://supportnear.com/#p=node/8294731663@47.07553,15.43084"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="graz">All free help in Graz</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="graz">All free help in Graz</a></header><main>
 <h1>Warm places to sit in Graz</h1>
 <p class="lede">7 places within 10 km of the centre of Graz where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Graz&amp;cc=AT&amp;need=warm">Open the map of Graz</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Graz&amp;cc=AT&amp;need=warm">Open the map of Graz</a>
 <a class="btn" href="graz.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

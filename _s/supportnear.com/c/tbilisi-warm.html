@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Tbilisi", "description": "9 places in Tbilisi, Georgia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/tbilisi-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Tbilisi", "containedInPlace": {"@type": "Country", "name": "Georgia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Tbilisi", "item": "https://supportnear.com/c/tbilisi"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Tbilisi", "item": "https://supportnear.com/c/tbilisi-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Tbilisi", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "ჯიუ ბიბლიოთეკა", "geo": {"@type": "GeoCoordinates", "latitude": 41.73208, "longitude": 44.82184}, "url": "https://supportnear.com/#p=way/1262672837@41.73208,44.82184"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "№ 31", "address": "გიორგი ჩიტაიას ქუჩა", "geo": {"@type": "GeoCoordinates", "latitude": 41.71185, "longitude": 44.80373}, "url": "https://supportnear.com/#p=node/14041398601@41.71185,44.80373"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "ილია ჭავჭავაძის სახელობის ბიბლიოთეკა №23", "geo": {"@type": "GeoCoordinates", "latitude": 41.70831, "longitude": 44.79844}, "url": "https://supportnear.com/#p=node/11832975547@41.70831,44.79844"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Institut Français de Géorgie. Médiathèque", "geo": {"@type": "GeoCoordinates", "latitude": 41.69714, "longitude": 44.80105}, "url": "https://supportnear.com/#p=node/11366199377@41.69714,44.80105"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Deutsche Bibliothek Wilhelm von Humboldt", "address": "ლადო გუდიაშვილის ქუჩა 7, 0107, თბილისი", "telephone": "+995 32 298 75 80", "geo": {"@type": "GeoCoordinates", "latitude": 41.69719, "longitude": 44.80092}, "url": "https://supportnear.com/#p=node/916895312@41.69719,44.80092"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "ბიბლიოთეკა 3", "geo": {"@type": "GeoCoordinates", "latitude": 41.68686, "longitude": 44.83422}, "url": "https://supportnear.com/#p=node/4776294633@41.68686,44.83422"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "N29 ფილიალი", "address": "ცოტნე დადიანის ქუჩა 34/2ა, თბილისი", "telephone": "+995 32 266 30 22", "geo": {"@type": "GeoCoordinates", "latitude": 41.7326, "longitude": 44.79644}, "url": "https://supportnear.com/#p=node/11638912191@41.73260,44.79644"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "იურიდიული ბიბლიოთეკა", "geo": {"@type": "GeoCoordinates", "latitude": 41.69912, "longitude": 44.79451}, "url": "https://supportnear.com/#p=node/11260341992@41.69912,44.79451"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tbilisi">All free help in Tbilisi</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tbilisi">All free help in Tbilisi</a></header><main>
 <h1>Warm places to sit in Tbilisi</h1>
 <p class="lede">9 places within 10 km of the centre of Tbilisi where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Tbilisi&amp;cc=GE&amp;need=warm">Open the map of Tbilisi</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Tbilisi&amp;cc=GE&amp;need=warm">Open the map of Tbilisi</a>
 <a class="btn" href="tbilisi.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

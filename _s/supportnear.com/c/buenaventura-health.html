@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Centros de salud y hospitales en Buenaventura", "description": "6 sitios en Buenaventura, Colombia, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/buenaventura-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Buenaventura", "containedInPlace": {"@type": "Country", "name": "Colombia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Buenaventura", "item": "https://supportnear.com/c/buenaventura"}, {"@type": "ListItem", "position": 3, "name": "Centros de salud y hospitales en Buenaventura", "item": "https://supportnear.com/c/buenaventura-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Centros de salud y hospitales en Buenaventura", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Eps S.o.s", "address": "Calle 3 2-60, Buenaventura", "geo": {"@type": "GeoCoordinates", "latitude": 3.89007, "longitude": -77.07828}, "url": "https://supportnear.com/#p=node/12095938635@3.89007,-77.07828"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Hospital Luis Ablanque de la Plata", "address": "Calle 5 4-04, Buenaventura", "geo": {"@type": "GeoCoordinates", "latitude": 3.88223, "longitude": -77.06486}, "url": "https://supportnear.com/#p=node/8060549949@3.88223,-77.06486"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Ips Nueva Eps", "address": "Carrera 19C, 764501, Buenaventura", "geo": {"@type": "GeoCoordinates", "latitude": 3.88239, "longitude": -77.06359}, "url": "https://supportnear.com/#p=node/8210110384@3.88239,-77.06359"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hospital Luis Ablanque De La Plata", "geo": {"@type": "GeoCoordinates", "latitude": 3.87965, "longitude": -77.02062}, "url": "https://supportnear.com/#p=way/1424644988@3.87965,-77.02062"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Clinica Santa Sofia", "geo": {"@type": "GeoCoordinates", "latitude": 3.88052, "longitude": -77.0201}, "url": "https://supportnear.com/#p=way/935940713@3.88052,-77.02010"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centro de Salud La Independencia", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 3.87639, "longitude": -77.0045}, "url": "https://supportnear.com/#p=way/175528903@3.87639,-77.00450"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="buenaventura">Toda la ayuda gratis en Buenaventura</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="buenaventura">Toda la ayuda gratis en Buenaventura</a></header><main>
 <h1>Centros de salud y hospitales en Buenaventura</h1>
 <p class="lede">6 sitios a menos de 10 km del centro de Buenaventura donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Buenaventura&amp;cc=CO&amp;need=health">Abrir el mapa de Buenaventura</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Buenaventura&amp;cc=CO&amp;need=health">Abrir el mapa de Buenaventura</a>
 <a class="btn" href="buenaventura.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

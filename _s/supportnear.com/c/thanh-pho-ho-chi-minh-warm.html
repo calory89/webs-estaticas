@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Ho Chi Minh City", "description": "7 places in Ho Chi Minh City, Vietnam, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/thanh-pho-ho-chi-minh-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ho Chi Minh City", "containedInPlace": {"@type": "Country", "name": "Vietnam"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Ho Chi Minh City", "item": "https://supportnear.com/c/thanh-pho-ho-chi-minh"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Ho Chi Minh City", "item": "https://supportnear.com/c/thanh-pho-ho-chi-minh-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Ho Chi Minh City", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "ThuVienDaiHocBachKhoa", "geo": {"@type": "GeoCoordinates", "latitude": 10.77311, "longitude": 106.66019}, "url": "https://supportnear.com/#p=node/1728789740@10.77311,106.66019"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Thư viện Trung học phổ thông Nguyễn Thị Minh Khai", "geo": {"@type": "GeoCoordinates", "latitude": 10.77959, "longitude": 106.68739}, "url": "https://supportnear.com/#p=way/1086980072@10.77959,106.68739"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Thư quán Văn Lang", "geo": {"@type": "GeoCoordinates", "latitude": 10.75728, "longitude": 106.66896}, "url": "https://supportnear.com/#p=way/1456717240@10.75728,106.66896"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Thư quán Công viên Văn Lang", "geo": {"@type": "GeoCoordinates", "latitude": 10.75665, "longitude": 106.66852}, "url": "https://supportnear.com/#p=way/1456717255@10.75665,106.66852"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Thư viện Khoa học Tổng hợp Thành phố Hồ Chí Minh", "address": "Lý Tự Trọng 69, 71009", "openingHours": "Mo-Th 07:30-19:00; Sa,Su 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 10.77503, "longitude": 106.69887}, "url": "https://supportnear.com/#p=way/802105041@10.77503,106.69887"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Idecaf", "address": "Thái Văn Lung 31", "geo": {"@type": "GeoCoordinates", "latitude": 10.78011, "longitude": 106.70325}, "url": "https://supportnear.com/#p=way/372139571@10.78011,106.70325"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="thanh-pho-ho-chi-minh">All free help in Ho Chi Minh City</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="thanh-pho-ho-chi-minh">All free help in Ho Chi Minh City</a></header><main>
 <h1>Warm places to sit in Ho Chi Minh City</h1>
 <p class="lede">7 places within 10 km of the centre of Ho Chi Minh City where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;cc=VN&amp;need=warm">Open the map of Ho Chi Minh City</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh&amp;cc=VN&amp;need=warm">Open the map of Ho Chi Minh City</a>
 <a class="btn" href="thanh-pho-ho-chi-minh.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

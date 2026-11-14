@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Cologne", "description": "8 places in Cologne, Germany, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/koln-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Cologne", "containedInPlace": {"@type": "Country", "name": "Germany"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Cologne", "item": "https://supportnear.com/c/koln"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Cologne", "item": "https://supportnear.com/c/koln-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Cologne", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Dombauarchiv", "address": "Roncalliplatz 2, 50667, Köln", "telephone": "+49 221 17940300", "openingHours": "Mo-Fr 10:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": 50.94014, "longitude": 6.95866}, "url": "https://supportnear.com/#p=node/13943161966@50.94014,6.95866"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Kunst- und Museumsbibliothek (Lesesaal)", "address": "50667", "telephone": "+49 221 22122626", "geo": {"@type": "GeoCoordinates", "latitude": 50.94067, "longitude": 6.95954}, "url": "https://supportnear.com/#p=node/579538541@50.94067,6.95954"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Bibliothek/Mediathek der Kunsthochschule für Medien Köln", "address": "Peter-Welter-Platz 2, 50676", "telephone": "+49 221 201890", "geo": {"@type": "GeoCoordinates", "latitude": 50.93413, "longitude": 6.96069}, "url": "https://supportnear.com/#p=node/591538577@50.93413,6.96069"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "WDR-Bibliothek", "geo": {"@type": "GeoCoordinates", "latitude": 50.93961, "longitude": 6.9528}, "url": "https://supportnear.com/#p=node/3482450180@50.93961,6.95280"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bibliothek des NS-Dokumentationszentrum", "address": "50667", "geo": {"@type": "GeoCoordinates", "latitude": 50.94066, "longitude": 6.95024}, "url": "https://supportnear.com/#p=node/1572582913@50.94066,6.95024"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Museum Schnütgen, Bibliothek", "address": "Leonhard-Tietz-Straße 10, 50676, Köln", "geo": {"@type": "GeoCoordinates", "latitude": 50.93439, "longitude": 6.95071}, "url": "https://supportnear.com/#p=node/3639413325@50.93439,6.95071"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Bibliothek des Rautenstrauch-Joest-Museums", "openingHours": "Tu-Su 10:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 50.93434, "longitude": 6.95055}, "url": "https://supportnear.com/#p=node/1514253044@50.93434,6.95055"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Theodor Wonja Michael Bibliothek", "address": "Poller Kirchweg 78-90, 51105, Köln", "telephone": "+49 15730164028", "geo": {"@type": "GeoCoordinates", "latitude": 50.94511, "longitude": 6.95295}, "url": "https://supportnear.com/#p=node/11638699116@50.94511,6.95295"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="koln">All free help in Cologne</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="koln">All free help in Cologne</a></header><main>
 <h1>Warm places to sit in Cologne</h1>
 <p class="lede">8 places within 10 km of the centre of Cologne where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=K%C3%B6ln&amp;cc=DE&amp;need=warm">Open the map of Cologne</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=K%C3%B6ln&amp;cc=DE&amp;need=warm">Open the map of Cologne</a>
 <a class="btn" href="koln.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

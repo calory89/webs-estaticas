@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "جای گرم برای ماندن در اراک", "description": "20 مکان در اراک، ایران، با نشانی، ساعت کار و تلفن در صورت مشخص بودن. نقشهٔ رایگان، بدون حساب کاربری، بدون اینترنت هم کار می‌کند.", "inLanguage": "fa", "url": "https://supportnear.com/c/arak-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "اراک", "containedInPlace": {"@type": "Country", "name": "ایران"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "اراک", "item": "https://supportnear.com/c/arak"}, {"@type": "ListItem", "position": 3, "name": "جای گرم برای ماندن در اراک", "item": "https://supportnear.com/c/arak-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "جای گرم برای ماندن در اراک", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "کانون فرهنگی محبین الائمه(ع)", "geo": {"@type": "GeoCoordinates", "latitude": 34.08814, "longitude": 49.68967}, "url": "https://supportnear.com/#p=node/6296124846@34.08814,49.68967"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "کانون فرهنگی شهید سلیمانی", "geo": {"@type": "GeoCoordinates", "latitude": 34.08295, "longitude": 49.68826}, "url": "https://supportnear.com/#p=node/7766874327@34.08295,49.68826"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "کتابخانه قلم چی", "geo": {"@type": "GeoCoordinates", "latitude": 34.08958, "longitude": 49.6841}, "url": "https://supportnear.com/#p=way/444950790@34.08958,49.68410"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "کانون فرهنگی رجعت", "geo": {"@type": "GeoCoordinates", "latitude": 34.08269, "longitude": 49.68331}, "url": "https://supportnear.com/#p=node/3621395369@34.08269,49.68331"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "کانون فرهنگی شهید مقیمی", "geo": {"@type": "GeoCoordinates", "latitude": 34.09067, "longitude": 49.68142}, "url": "https://supportnear.com/#p=node/7766874328@34.09067,49.68142"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "خانه فرهنگ اراک", "geo": {"@type": "GeoCoordinates", "latitude": 34.08966, "longitude": 49.69982}, "url": "https://supportnear.com/#p=way/687398767@34.08966,49.69982"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "کتابخانه نابینایان و کم‌بینایان دکتر خزائلی", "address": "خ امام خمینی - روبروی بیمارستان طالقانی", "geo": {"@type": "GeoCoordinates", "latitude": 34.09205, "longitude": 49.68043}, "url": "https://supportnear.com/#p=node/5629038464@34.09205,49.68043"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "کانون فرهنگی اصحاب المسجد", "geo": {"@type": "GeoCoordinates", "latitude": 34.08786, "longitude": 49.6778}, "url": "https://supportnear.com/#p=node/6296150885@34.08786,49.67780"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "مجتمع پارس", "geo": {"@type": "GeoCoordinates", "latitude": 34.08638, "longitude": 49.70139}, "url": "https://supportnear.com/#p=node/4581502402@34.08638,49.70139"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "کانون فرهنگی شهید زین الدین", "geo": {"@type": "GeoCoordinates", "latitude": 34.076, "longitude": 49.68348}, "url": "https://supportnear.com/#p=node/6681165398@34.07600,49.68348"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arak">همهٔ کمک‌های رایگان در اراک</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arak">همهٔ کمک‌های رایگان در اراک</a></header><main>
 <h1>جای گرم برای ماندن در اراک</h1>
 <p class="lede">20 مکان در کمتر از ۱۰ کیلومتری مرکز اراک که این‌جا رایگان است. از نقشهٔ باز که داوطلبان به‌روزش می‌کنند. نقشه را باز کن تا همه را ببینی و راه پیاده را بدانی.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Arak&amp;cc=IR&amp;need=warm">نقشهٔ اراک را باز کن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Arak&amp;cc=IR&amp;need=warm">نقشهٔ اراک را باز کن</a>
 <a class="btn" href="arak.cartel">چاپ پوستر برای این شهر</a>
 <a class="btn" href="./">همهٔ شهرها</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

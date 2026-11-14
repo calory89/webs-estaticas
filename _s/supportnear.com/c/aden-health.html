@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "رعاية صحية في عدن", "description": "21+ أماكن في عدن، اليمن، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/aden-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "عدن", "containedInPlace": {"@type": "Country", "name": "اليمن"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "عدن", "item": "https://supportnear.com/c/aden"}, {"@type": "ListItem", "position": 3, "name": "رعاية صحية في عدن", "item": "https://supportnear.com/c/aden-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "رعاية صحية في عدن", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مستوصف الحكمة", "geo": {"@type": "GeoCoordinates", "latitude": 12.77879, "longitude": 45.03818}, "url": "https://supportnear.com/#p=node/4285409390@12.77879,45.03818"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مستشفى عدن العام", "geo": {"@type": "GeoCoordinates", "latitude": 12.782, "longitude": 45.0417}, "url": "https://supportnear.com/#p=node/1218233822@12.78200,45.04170"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مستشفى بابل", "address": "خط صيرة", "geo": {"@type": "GeoCoordinates", "latitude": 12.77983, "longitude": 45.0438}, "url": "https://supportnear.com/#p=node/4040613545@12.77983,45.04380"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مستوصف الشعب (الصين) للولادة", "geo": {"@type": "GeoCoordinates", "latitude": 12.77679, "longitude": 45.04125}, "url": "https://supportnear.com/#p=node/4285425190@12.77679,45.04125"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مستشفى الشعب", "geo": {"@type": "GeoCoordinates", "latitude": 12.77673, "longitude": 45.04165}, "url": "https://supportnear.com/#p=node/6937224386@12.77673,45.04165"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "مستشفى الجمهورية", "geo": {"@type": "GeoCoordinates", "latitude": 12.80588, "longitude": 45.03806}, "url": "https://supportnear.com/#p=way/173088502@12.80588,45.03806"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "مستوصف الكرامة التخصصي", "telephone": "+967 2-232496", "geo": {"@type": "GeoCoordinates", "latitude": 12.80859, "longitude": 45.03797}, "url": "https://supportnear.com/#p=node/6323209287@12.80859,45.03797"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "مستشفى خليج عدن الدولي", "geo": {"@type": "GeoCoordinates", "latitude": 12.79198, "longitude": 45.00661}, "url": "https://supportnear.com/#p=node/6308113385@12.79198,45.00661"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "المركز الصحي بالقلوعة", "address": "الطريق الدائري", "geo": {"@type": "GeoCoordinates", "latitude": 12.78469, "longitude": 45.00084}, "url": "https://supportnear.com/#p=node/6385668569@12.78469,45.00084"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "المستشفى الجمهوري", "geo": {"@type": "GeoCoordinates", "latitude": 12.82021, "longitude": 45.03236}, "url": "https://supportnear.com/#p=node/1218235660@12.82021,45.03236"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="aden">كل المساعدة المجانية في عدن</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="aden">كل المساعدة المجانية في عدن</a></header><main>
 <h1>رعاية صحية في عدن</h1>
 <p class="lede">21+ أماكن على بعد أقل من ١٠ كم من وسط عدن حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Aden&amp;cc=YE&amp;need=health">افتح خريطة عدن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Aden&amp;cc=YE&amp;need=health">افتح خريطة عدن</a>
 <a class="btn" href="aden.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

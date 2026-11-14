@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Palembang", "description": "6 places in Palembang, Indonesia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/palembang-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Palembang", "containedInPlace": {"@type": "Country", "name": "Indonesia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Palembang", "item": "https://supportnear.com/c/palembang"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Palembang", "item": "https://supportnear.com/c/palembang-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Palembang", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Perpustakaan Islam Masjid Agung Palembang", "address": "Jalan Jenderal Sudirman, 30111, Palembang", "geo": {"@type": "GeoCoordinates", "latitude": -2.98812, "longitude": 104.76031}, "url": "https://supportnear.com/#p=way/881612532@-2.98812,104.76031"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Taman Bacaan dan Balai Masyarakat Berpenghasilan Rendah (MBR)", "geo": {"@type": "GeoCoordinates", "latitude": -2.99985, "longitude": 104.7565}, "url": "https://supportnear.com/#p=way/604805813@-2.99985,104.75650"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Perpustakaan Daerah Provinsi Sumatera Selatan", "geo": {"@type": "GeoCoordinates", "latitude": -2.97682, "longitude": 104.72597}, "url": "https://supportnear.com/#p=node/9834987241@-2.97682,104.72597"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Gedung Serbaguna PT. Pusri", "address": "Jalan Mayor Zen, Palembang", "geo": {"@type": "GeoCoordinates", "latitude": -2.97113, "longitude": 104.79886}, "url": "https://supportnear.com/#p=node/4146177017@-2.97113,104.79886"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Lembaga Dakwah Islam Indonesia", "geo": {"@type": "GeoCoordinates", "latitude": -3.00182, "longitude": 104.81698}, "url": "https://supportnear.com/#p=way/611543691@-3.00182,104.81698"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="palembang">All free help in Palembang</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="palembang">All free help in Palembang</a></header><main>
 <h1>Warm places to sit in Palembang</h1>
 <p class="lede">6 places within 10 km of the centre of Palembang where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Palembang&amp;cc=ID&amp;need=warm">Open the map of Palembang</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Palembang&amp;cc=ID&amp;need=warm">Open the map of Palembang</a>
 <a class="btn" href="palembang.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

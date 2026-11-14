@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Houston", "description": "7 places in Houston, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/houston-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Houston", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Houston", "item": "https://supportnear.com/c/houston"}, {"@type": "ListItem", "position": 3, "name": "Social services in Houston", "item": "https://supportnear.com/c/houston-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Houston", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Homer O. Gainer Building", "address": "Southmore Boulevard 1415, Houston", "geo": {"@type": "GeoCoordinates", "latitude": 29.72628, "longitude": -95.38325}, "url": "https://supportnear.com/#p=way/425634935@29.72628,-95.38325"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "U Court", "geo": {"@type": "GeoCoordinates", "latitude": 29.71824, "longitude": -95.40126}, "url": "https://supportnear.com/#p=node/8398624587@29.71824,-95.40126"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Captain Graduate Student Lounge", "geo": {"@type": "GeoCoordinates", "latitude": 29.71799, "longitude": -95.40216}, "url": "https://supportnear.com/#p=node/8398624589@29.71799,-95.40216"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Women's Resource Center", "geo": {"@type": "GeoCoordinates", "latitude": 29.71789, "longitude": -95.40217}, "url": "https://supportnear.com/#p=node/8398624574@29.71789,-95.40217"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Houston Welcomes Refugees", "address": "West 17th Street 946, 77008, Houston", "geo": {"@type": "GeoCoordinates", "latitude": 29.80038, "longitude": -95.41541}, "url": "https://supportnear.com/#p=way/821249147@29.80038,-95.41541"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Lone Star Social Club", "address": "West T C Jester Boulevard 1985", "geo": {"@type": "GeoCoordinates", "latitude": 29.80205, "longitude": -95.43215}, "url": "https://supportnear.com/#p=node/7299566675@29.80205,-95.43215"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "West University Lodge No. 1292 AF&AM", "address": "Edloe Street 6125, 77005-2817", "openingHours": "Tu 18:00-21:15", "geo": {"@type": "GeoCoordinates", "latitude": 29.7161, "longitude": -95.43365}, "url": "https://supportnear.com/#p=node/13842519001@29.71610,-95.43365"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="houston">All free help in Houston</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="houston">All free help in Houston</a></header><main>
 <h1>Social services in Houston</h1>
 <p class="lede">7 places within 10 km of the centre of Houston where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Houston&amp;cc=US&amp;need=social">Open the map of Houston</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Houston&amp;cc=US&amp;need=social">Open the map of Houston</a>
 <a class="btn" href="houston.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

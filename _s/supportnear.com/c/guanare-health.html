@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Centros de salud y hospitales en Guanare", "description": "3 sitios en Guanare, Venezuela, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/guanare-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Guanare", "containedInPlace": {"@type": "Country", "name": "Venezuela"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Guanare", "item": "https://supportnear.com/c/guanare"}, {"@type": "ListItem", "position": 3, "name": "Centros de salud y hospitales en Guanare", "item": "https://supportnear.com/c/guanare-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Centros de salud y hospitales en Guanare", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Módulo de El Progreso", "geo": {"@type": "GeoCoordinates", "latitude": 9.03041, "longitude": -69.74696}, "url": "https://supportnear.com/#p=way/372056642@9.03041,-69.74696"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Módulo El Progreso", "geo": {"@type": "GeoCoordinates", "latitude": 9.03033, "longitude": -69.74688}, "url": "https://supportnear.com/#p=way/372056657@9.03033,-69.74688"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Hospital Universitario Dr. Miguel Oraá", "geo": {"@type": "GeoCoordinates", "latitude": 9.05145, "longitude": -69.73446}, "url": "https://supportnear.com/#p=way/862846507@9.05145,-69.73446"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="guanare">Toda la ayuda gratis en Guanare</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="guanare">Toda la ayuda gratis en Guanare</a></header><main>
 <h1>Centros de salud y hospitales en Guanare</h1>
 <p class="lede">3 sitios a menos de 10 km del centro de Guanare donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Guanare&amp;cc=VE&amp;need=health">Abrir el mapa de Guanare</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Guanare&amp;cc=VE&amp;need=health">Abrir el mapa de Guanare</a>
 <a class="btn" href="guanare.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

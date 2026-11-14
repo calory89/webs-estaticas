@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Jambi", "description": "4 places in Jambi, Indonesia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/jambi-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Jambi", "containedInPlace": {"@type": "Country", "name": "Indonesia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Jambi", "item": "https://supportnear.com/c/jambi"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Jambi", "item": "https://supportnear.com/c/jambi-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Jambi", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Perpustakaan Umum Kota Jambi", "address": "Jalan Prof. Dr. Soemantri Brojonegoro", "telephone": "+6282180007422", "openingHours": "Mo-Th 08:00-15:30; Fr 08:00-11:00; Sa 08:00-13:30", "geo": {"@type": "GeoCoordinates", "latitude": -1.61109, "longitude": 103.59537}, "url": "https://supportnear.com/#p=way/643624002@-1.61109,103.59537"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Gedung Serbaguna Puti Junjung Sirih", "geo": {"@type": "GeoCoordinates", "latitude": -1.60641, "longitude": 103.60353}, "url": "https://supportnear.com/#p=way/644290802@-1.60641,103.60353"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Dharma Wanita Persatuan Provinsi Jambi", "geo": {"@type": "GeoCoordinates", "latitude": -1.58994, "longitude": 103.61829}, "url": "https://supportnear.com/#p=way/717959032@-1.58994,103.61829"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Maulidia Convention Center", "geo": {"@type": "GeoCoordinates", "latitude": -1.59902, "longitude": 103.56571}, "url": "https://supportnear.com/#p=way/980456226@-1.59902,103.56571"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="jambi">All free help in Jambi</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="jambi">All free help in Jambi</a></header><main>
 <h1>Warm places to sit in Jambi</h1>
 <p class="lede">4 places within 10 km of the centre of Jambi where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Jambi&amp;cc=ID&amp;need=warm">Open the map of Jambi</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Jambi&amp;cc=ID&amp;need=warm">Open the map of Jambi</a>
 <a class="btn" href="jambi.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

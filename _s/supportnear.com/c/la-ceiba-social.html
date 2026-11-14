@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en La Ceiba", "description": "3 sitios en La Ceiba, Honduras, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/la-ceiba-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "La Ceiba", "containedInPlace": {"@type": "Country", "name": "Honduras"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "La Ceiba", "item": "https://supportnear.com/c/la-ceiba"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en La Ceiba", "item": "https://supportnear.com/c/la-ceiba-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en La Ceiba", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Fundación Monserrath", "geo": {"@type": "GeoCoordinates", "latitude": 15.78942, "longitude": -86.79274}, "url": "https://supportnear.com/#p=node/4203619277@15.78942,-86.79274"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Cruz Roja Hondureño", "geo": {"@type": "GeoCoordinates", "latitude": 15.77417, "longitude": -86.78231}, "url": "https://supportnear.com/#p=node/3469851594@15.77417,-86.78231"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Fundación Parque Nacional Pico Bonito", "geo": {"@type": "GeoCoordinates", "latitude": 15.75357, "longitude": -86.83723}, "url": "https://supportnear.com/#p=node/5667470421@15.75357,-86.83723"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="la-ceiba">Toda la ayuda gratis en La Ceiba</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="la-ceiba">Toda la ayuda gratis en La Ceiba</a></header><main>
 <h1>Servicios sociales en La Ceiba</h1>
 <p class="lede">3 sitios a menos de 10 km del centro de La Ceiba donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=La%20Ceiba&amp;cc=HN&amp;need=social">Abrir el mapa de La Ceiba</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=La%20Ceiba&amp;cc=HN&amp;need=social">Abrir el mapa de La Ceiba</a>
 <a class="btn" href="la-ceiba.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

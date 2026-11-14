@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Drinking water points in Helsinki", "description": "7 places in Helsinki, Finland, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/helsinki-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Helsinki", "containedInPlace": {"@type": "Country", "name": "Finland"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Helsinki", "item": "https://supportnear.com/c/helsinki"}, {"@type": "ListItem", "position": 3, "name": "Drinking water points in Helsinki", "item": "https://supportnear.com/c/helsinki-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Drinking water points in Helsinki", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "HSY vesiposti: Fredrikintori", "address": "Fredrikintori, Helsinki", "geo": {"@type": "GeoCoordinates", "latitude": 60.16215, "longitude": 24.93985}, "url": "https://supportnear.com/#p=node/9955629259@60.16215,24.93985"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "HSY vesiposti: Kauppatori", "address": "Kauppatori, Helsinki", "geo": {"@type": "GeoCoordinates", "latitude": 60.16741, "longitude": 24.95415}, "url": "https://supportnear.com/#p=node/9955629260@60.16741,24.95415"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "HSY vesiposti: Hakaniemen torikatu 1", "address": "Hakaniemen torikatu 1, 00530, Helsinki", "geo": {"@type": "GeoCoordinates", "latitude": 60.17932, "longitude": 24.95205}, "url": "https://supportnear.com/#p=node/9955629262@60.17932,24.95205"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "HSY vesiposti: Sandelsinkatu 1", "address": "Sandelsinkatu 1, 00260, Helsinki", "geo": {"@type": "GeoCoordinates", "latitude": 60.17885, "longitude": 24.92392}, "url": "https://supportnear.com/#p=node/9955629258@60.17885,24.92392"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "HSY vesiposti: Hiekkarannantie 15", "address": "Hiekkarannantie 15, 00100, Helsinki", "geo": {"@type": "GeoCoordinates", "latitude": 60.17249, "longitude": 24.9045}, "url": "https://supportnear.com/#p=node/9955629257@60.17249,24.90450"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="helsinki">All free help in Helsinki</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="helsinki">All free help in Helsinki</a></header><main>
 <h1>Drinking water points in Helsinki</h1>
 <p class="lede">7 places within 10 km of the centre of Helsinki where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Helsinki&amp;cc=FI&amp;need=water">Open the map of Helsinki</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Helsinki&amp;cc=FI&amp;need=water">Open the map of Helsinki</a>
 <a class="btn" href="helsinki.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

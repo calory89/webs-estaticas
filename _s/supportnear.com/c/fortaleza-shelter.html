@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Albergues em Fortaleza", "description": "3 sítios em Fortaleza, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/fortaleza-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Fortaleza", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Fortaleza", "item": "https://supportnear.com/c/fortaleza"}, {"@type": "ListItem", "position": 3, "name": "Albergues em Fortaleza", "item": "https://supportnear.com/c/fortaleza-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Albergues em Fortaleza", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Casa de Passagem Para Homens", "address": "Avenida da Universidade;Rua Manuelito Moreira 1885;115, 60025-210, Fortaleza", "geo": {"@type": "GeoCoordinates", "latitude": -3.73498, "longitude": -38.53329}, "url": "https://supportnear.com/#p=way/1161342916@-3.73498,-38.53329"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Abrigo para Homens", "address": "Avenida Francisco Sá 1833, 60010-450, Fortaleza", "geo": {"@type": "GeoCoordinates", "latitude": -3.72316, "longitude": -38.54243}, "url": "https://supportnear.com/#p=node/10147407815@-3.72316,-38.54243"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Casa da Tia Julia", "address": "Rua Monsenhor Salviano;Rua Guilherme Perdigão 217;305, 60720-420, Fortaleza", "geo": {"@type": "GeoCoordinates", "latitude": -3.77524, "longitude": -38.57281}, "url": "https://supportnear.com/#p=relation/16166725@-3.77524,-38.57281"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="fortaleza">Toda a ajuda gratuita em Fortaleza</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="fortaleza">Toda a ajuda gratuita em Fortaleza</a></header><main>
 <h1>Albergues em Fortaleza</h1>
 <p class="lede">3 sítios a menos de 10 km do centro de Fortaleza onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Fortaleza&amp;cc=BR&amp;need=shelter">Abrir o mapa de Fortaleza</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Fortaleza&amp;cc=BR&amp;need=shelter">Abrir o mapa de Fortaleza</a>
 <a class="btn" href="fortaleza.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

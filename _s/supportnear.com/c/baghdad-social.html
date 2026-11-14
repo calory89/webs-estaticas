@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "خدمات اجتماعية في بغداد", "description": "6 أماكن في بغداد، العراق، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/baghdad-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "بغداد", "containedInPlace": {"@type": "Country", "name": "العراق"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "بغداد", "item": "https://supportnear.com/c/baghdad"}, {"@type": "ListItem", "position": 3, "name": "خدمات اجتماعية في بغداد", "item": "https://supportnear.com/c/baghdad-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "خدمات اجتماعية في بغداد", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Unhcr", "geo": {"@type": "GeoCoordinates", "latitude": 33.31871, "longitude": 44.4051}, "url": "https://supportnear.com/#p=node/10277669468@33.31871,44.40510"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مخبم الاتحاد الثقافي", "address": "409-8, حي الزهراء", "geo": {"@type": "GeoCoordinates", "latitude": 33.35782, "longitude": 44.3501}, "url": "https://supportnear.com/#p=node/12521740373@33.35782,44.35010"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "دار الحنان لرعاية الايتام", "geo": {"@type": "GeoCoordinates", "latitude": 33.36135, "longitude": 44.35234}, "url": "https://supportnear.com/#p=way/91323221@33.36135,44.35234"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مركز شباب حي العدل", "geo": {"@type": "GeoCoordinates", "latitude": 33.33265, "longitude": 44.30165}, "url": "https://supportnear.com/#p=way/85932834@33.33265,44.30165"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "جمعية الليزر العراقية", "address": "بغداد", "geo": {"@type": "GeoCoordinates", "latitude": 33.36407, "longitude": 44.40417}, "url": "https://supportnear.com/#p=node/5862304191@33.36407,44.40417"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Iraqi translators Socity", "geo": {"@type": "GeoCoordinates", "latitude": 33.36961, "longitude": 44.40475}, "url": "https://supportnear.com/#p=node/3718504467@33.36961,44.40475"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="baghdad">كل المساعدة المجانية في بغداد</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="baghdad">كل المساعدة المجانية في بغداد</a></header><main>
 <h1>خدمات اجتماعية في بغداد</h1>
 <p class="lede">6 أماكن على بعد أقل من ١٠ كم من وسط بغداد حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Baghdad&amp;cc=IQ&amp;need=social">افتح خريطة بغداد</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Baghdad&amp;cc=IQ&amp;need=social">افتح خريطة بغداد</a>
 <a class="btn" href="baghdad.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

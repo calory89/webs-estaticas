@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Quito", "description": "11 places in Quito, Ecuador, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/quito-warm.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Quito", "containedInPlace": {"@type": "Country", "name": "Ecuador"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Quito", "item": "https://supportnear.com/c/quito"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Quito", "item": "https://supportnear.com/c/quito-warm.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Quito", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Biblioteca del Conservatorio Superior Nacional de Música - Quito", "geo": {"@type": "GeoCoordinates", "latitude": -0.17094, "longitude": -78.47287}, "url": "https://supportnear.com/#p=node/4779932121@-0.17094,-78.47287"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Biblioteca FLACSO", "address": "San Salvador", "geo": {"@type": "GeoCoordinates", "latitude": -0.19412, "longitude": -78.48686}, "url": "https://supportnear.com/#p=way/432267155@-0.19412,-78.48686"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Guarderia Kikirikids", "address": "Jorge Adoum Kikirids", "geo": {"@type": "GeoCoordinates", "latitude": -0.20166, "longitude": -78.45496}, "url": "https://supportnear.com/#p=node/4100764790@-0.20166,-78.45496"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca USFQ", "geo": {"@type": "GeoCoordinates", "latitude": -0.19599, "longitude": -78.43602}, "url": "https://supportnear.com/#p=node/7173786977@-0.19599,-78.43602"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca Hayek USFQ", "geo": {"@type": "GeoCoordinates", "latitude": -0.19914, "longitude": -78.43626}, "url": "https://supportnear.com/#p=node/7173786976@-0.19914,-78.43626"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centro de Información y Biblioteca de la Universidad Andina Simón Bolívar", "geo": {"@type": "GeoCoordinates", "latitude": -0.21181, "longitude": -78.488}, "url": "https://supportnear.com/#p=node/4079552019@-0.21181,-78.48800"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Sede Quito de las Bibliotecas del Ministerio de Cultura y Patrimonio del Ecuador", "address": "Reina Victoria N21-35, Quito", "telephone": "+593 22505948", "openingHours": "Mo-Fr 08:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": -0.207, "longitude": -78.49482}, "url": "https://supportnear.com/#p=node/4079552020@-0.20700,-78.49482"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Eugenio Espejo", "geo": {"@type": "GeoCoordinates", "latitude": -0.21052, "longitude": -78.49559}, "url": "https://supportnear.com/#p=node/347292366@-0.21052,-78.49559"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quito.en">All free help in Quito</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quito.en">All free help in Quito</a></header><main>
 <h1>Warm places to sit in Quito</h1>
 <p class="lede">11 places within 10 km of the centre of Quito where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Quito&amp;cc=EC&amp;need=warm">Open the map of Quito</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Quito&amp;cc=EC&amp;need=warm">Open the map of Quito</a>
 <a class="btn" href="quito.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

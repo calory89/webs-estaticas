@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Cebu City", "description": "8 places in Cebu City, Philippines, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/cebu-city-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Cebu City", "containedInPlace": {"@type": "Country", "name": "Philippines"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Cebu City", "item": "https://supportnear.com/c/cebu-city"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Cebu City", "item": "https://supportnear.com/c/cebu-city-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Cebu City", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "St. Theresa's College of Cebu Library", "geo": {"@type": "GeoCoordinates", "latitude": 10.31265, "longitude": 123.89646}, "url": "https://supportnear.com/#p=node/8504701817@10.31265,123.89646"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Rizal Memorial Library and Museum", "openingHours": "Mo-Fr 08:30-20:00", "geo": {"@type": "GeoCoordinates", "latitude": 10.31204, "longitude": 123.89201}, "url": "https://supportnear.com/#p=way/230288049@10.31204,123.89201"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "College Library", "geo": {"@type": "GeoCoordinates", "latitude": 10.2951, "longitude": 123.88043}, "url": "https://supportnear.com/#p=way/631704054@10.29510,123.88043"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "UP Cebu Library", "geo": {"@type": "GeoCoordinates", "latitude": 10.32142, "longitude": 123.89795}, "url": "https://supportnear.com/#p=way/460167838@10.32142,123.89795"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "PLTC-National Office", "address": "Ramon Duterte Street", "geo": {"@type": "GeoCoordinates", "latitude": 10.31492, "longitude": 123.88185}, "url": "https://supportnear.com/#p=node/4485026990@10.31492,123.88185"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Sugbu Study Center", "address": "Pope John Paul Ⅱ Avenue 377, 6000", "telephone": "+63 32 231 1983", "geo": {"@type": "GeoCoordinates", "latitude": 10.32164, "longitude": 123.91044}, "url": "https://supportnear.com/#p=node/4534105890@10.32164,123.91044"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Mandaue City Public Library", "address": "S.B. Cabahug Street", "geo": {"@type": "GeoCoordinates", "latitude": 10.32679, "longitude": 123.94257}, "url": "https://supportnear.com/#p=node/8568417606@10.32679,123.94257"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Josef Baumgartner Learning Resource Center", "geo": {"@type": "GeoCoordinates", "latitude": 10.35443, "longitude": 123.90933}, "url": "https://supportnear.com/#p=way/459923311@10.35443,123.90933"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cebu-city">All free help in Cebu City</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cebu-city">All free help in Cebu City</a></header><main>
 <h1>Warm places to sit in Cebu City</h1>
 <p class="lede">8 places within 10 km of the centre of Cebu City where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Cebu%20City&amp;cc=PH&amp;need=warm">Open the map of Cebu City</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Cebu%20City&amp;cc=PH&amp;need=warm">Open the map of Cebu City</a>
 <a class="btn" href="cebu-city.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

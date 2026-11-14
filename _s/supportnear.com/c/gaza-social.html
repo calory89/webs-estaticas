@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "خدمات اجتماعية في غزة", "description": "5 أماكن في غزة، الأراضي الفلسطينية، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/gaza-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "غزة", "containedInPlace": {"@type": "Country", "name": "الأراضي الفلسطينية"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "غزة", "item": "https://supportnear.com/c/gaza"}, {"@type": "ListItem", "position": 3, "name": "خدمات اجتماعية في غزة", "item": "https://supportnear.com/c/gaza-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "خدمات اجتماعية في غزة", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Al-Dameer Association for Human Rights", "geo": {"@type": "GeoCoordinates", "latitude": 31.51888, "longitude": 34.43711}, "url": "https://supportnear.com/#p=way/41254861@31.51888,34.43711"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Norwegian Refugee Council (NRC)", "geo": {"@type": "GeoCoordinates", "latitude": 31.524, "longitude": 34.43664}, "url": "https://supportnear.com/#p=node/1195062826@31.52400,34.43664"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Gaza Immediate Voluntary Relief Effort", "geo": {"@type": "GeoCoordinates", "latitude": 31.52403, "longitude": 34.43661}, "url": "https://supportnear.com/#p=node/504262956@31.52403,34.43661"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Norwegian people's aid", "address": "Habosh Street, Gaza", "geo": {"@type": "GeoCoordinates", "latitude": 31.52433, "longitude": 34.43629}, "url": "https://supportnear.com/#p=node/2406699617@31.52433,34.43629"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "نادي الفروسية", "geo": {"@type": "GeoCoordinates", "latitude": 31.56066, "longitude": 34.46824}, "url": "https://supportnear.com/#p=way/41245019@31.56066,34.46824"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gaza">كل المساعدة المجانية في غزة</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gaza">كل المساعدة المجانية في غزة</a></header><main>
 <h1>خدمات اجتماعية في غزة</h1>
 <p class="lede">5 أماكن على بعد أقل من ١٠ كم من وسط غزة حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gaza&amp;cc=PS&amp;need=social">افتح خريطة غزة</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gaza&amp;cc=PS&amp;need=social">افتح خريطة غزة</a>
 <a class="btn" href="gaza.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Samarinda", "description": "8 places in Samarinda, Indonesia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/samarinda-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Samarinda", "containedInPlace": {"@type": "Country", "name": "Indonesia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Samarinda", "item": "https://supportnear.com/c/samarinda"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Samarinda", "item": "https://supportnear.com/c/samarinda-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Samarinda", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "KONI Kaltim", "geo": {"@type": "GeoCoordinates", "latitude": -0.49098, "longitude": 117.1476}, "url": "https://supportnear.com/#p=way/309155872@-0.49098,117.14760"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Perpustakaan Samarinda", "geo": {"@type": "GeoCoordinates", "latitude": -0.49006, "longitude": 117.14787}, "url": "https://supportnear.com/#p=way/308996110@-0.49006,117.14787"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "WALHI Kalimantan Timur", "address": "Gitar No. 30-B, 75123", "telephone": "+62 54-1742986", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": -0.48739, "longitude": 117.15042}, "url": "https://supportnear.com/#p=node/4827919321@-0.48739,117.15042"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Temindung Creative Hub (Former Temindung Airport Terminal)", "geo": {"@type": "GeoCoordinates", "latitude": -0.48222, "longitude": 117.15665}, "url": "https://supportnear.com/#p=way/144883538@-0.48222,117.15665"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Perpustakaan Daerah Kaltim", "address": "Ir. H. Juanda, Samarinda", "geo": {"@type": "GeoCoordinates", "latitude": -0.47292, "longitude": 117.13784}, "url": "https://supportnear.com/#p=way/326054246@-0.47292,117.13784"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Rektorat Polnes", "geo": {"@type": "GeoCoordinates", "latitude": -0.53355, "longitude": 117.12428}, "url": "https://supportnear.com/#p=node/4328671189@-0.53355,117.12428"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Perumahan PIMA", "address": "Jl. Syahrani Dahlan", "geo": {"@type": "GeoCoordinates", "latitude": -0.54642, "longitude": 117.11926}, "url": "https://supportnear.com/#p=node/4898616421@-0.54642,117.11926"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Taman Baca Bu Agus", "geo": {"@type": "GeoCoordinates", "latitude": -0.46645, "longitude": 117.19226}, "url": "https://supportnear.com/#p=way/355928559@-0.46645,117.19226"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="samarinda">All free help in Samarinda</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="samarinda">All free help in Samarinda</a></header><main>
 <h1>Warm places to sit in Samarinda</h1>
 <p class="lede">8 places within 10 km of the centre of Samarinda where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Samarinda&amp;cc=ID&amp;need=warm">Open the map of Samarinda</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Samarinda&amp;cc=ID&amp;need=warm">Open the map of Samarinda</a>
 <a class="btn" href="samarinda.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

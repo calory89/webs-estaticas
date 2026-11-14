@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Shelters in Mannheim", "description": "4 places in Mannheim, Germany, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/mannheim-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Mannheim", "containedInPlace": {"@type": "Country", "name": "Germany"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Mannheim", "item": "https://supportnear.com/c/mannheim"}, {"@type": "ListItem", "position": 3, "name": "Shelters in Mannheim", "item": "https://supportnear.com/c/mannheim-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Shelters in Mannheim", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Freezone", "address": "I7 23, 68159", "openingHours": "Mo-Fr 08:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 49.49332, "longitude": 8.46281}, "url": "https://supportnear.com/#p=node/11483467969@49.49332,8.46281"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Ökumenische Bahnhofsmission", "address": "Hauptbahnhof, 68161, Mannheim", "telephone": "+49 621 26300", "openingHours": "Mo-Fr 07:00-21:00; Sa 07:00-21:00; Su 08:00-21:00", "geo": {"@type": "GeoCoordinates", "latitude": 49.47906, "longitude": 8.4708}, "url": "https://supportnear.com/#p=node/1412601907@49.47906,8.47080"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Frauenhaus Lu e.V. Außenstelle Stube", "telephone": "+49 621 521969", "geo": {"@type": "GeoCoordinates", "latitude": 49.48575, "longitude": 8.43717}, "url": "https://supportnear.com/#p=node/3024013869@49.48575,8.43717"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Flüchtlingsunterkunft Festplatz Benderstraße", "address": "Meergartenweg 26, 67227, Frankenthal (Pfalz)", "geo": {"@type": "GeoCoordinates", "latitude": 49.53138, "longitude": 8.3623}, "url": "https://supportnear.com/#p=way/125788179@49.53138,8.36230"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="mannheim">All free help in Mannheim</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="mannheim">All free help in Mannheim</a></header><main>
 <h1>Shelters in Mannheim</h1>
 <p class="lede">4 places within 10 km of the centre of Mannheim where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Mannheim&amp;cc=DE&amp;need=shelter">Open the map of Mannheim</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Mannheim&amp;cc=DE&amp;need=shelter">Open the map of Mannheim</a>
 <a class="btn" href="mannheim.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

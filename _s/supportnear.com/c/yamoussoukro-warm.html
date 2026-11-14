@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Lieux où se poser au chaud à Yamoussoukro", "description": "7 lieux à Yamoussoukro, Côte d’Ivoire, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/yamoussoukro-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Yamoussoukro", "containedInPlace": {"@type": "Country", "name": "Côte d’Ivoire"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Yamoussoukro", "item": "https://supportnear.com/c/yamoussoukro"}, {"@type": "ListItem", "position": 3, "name": "Lieux où se poser au chaud à Yamoussoukro", "item": "https://supportnear.com/c/yamoussoukro-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Lieux où se poser au chaud à Yamoussoukro", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centre Social de Yamoussoukro", "geo": {"@type": "GeoCoordinates", "latitude": 6.82224, "longitude": -5.27638}, "url": "https://supportnear.com/#p=node/11233408638@6.82224,-5.27638"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Alliance Franco-Ivoirienne", "geo": {"@type": "GeoCoordinates", "latitude": 6.82666, "longitude": -5.27037}, "url": "https://supportnear.com/#p=way/1208455321@6.82666,-5.27037"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Bibliothèque", "openingHours": "Mo-Sa 08:30-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 6.82669, "longitude": -5.27021}, "url": "https://supportnear.com/#p=node/4323513893@6.82669,-5.27021"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centre Culturel Okassou", "geo": {"@type": "GeoCoordinates", "latitude": 6.82895, "longitude": -5.2701}, "url": "https://supportnear.com/#p=way/1313013120@6.82895,-5.27010"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Espace Evènementiel Anayah", "geo": {"@type": "GeoCoordinates", "latitude": 6.82712, "longitude": -5.25427}, "url": "https://supportnear.com/#p=node/6449377585@6.82712,-5.25427"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centre Culturel Yaouré", "geo": {"@type": "GeoCoordinates", "latitude": 6.83572, "longitude": -5.24397}, "url": "https://supportnear.com/#p=way/1144510329@6.83572,-5.24397"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Bibliothèque INP-HB Centre", "geo": {"@type": "GeoCoordinates", "latitude": 6.88137, "longitude": -5.2299}, "url": "https://supportnear.com/#p=way/689943358@6.88137,-5.22990"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="yamoussoukro">Toute l’aide gratuite à Yamoussoukro</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="yamoussoukro">Toute l’aide gratuite à Yamoussoukro</a></header><main>
 <h1>Lieux où se poser au chaud à Yamoussoukro</h1>
 <p class="lede">7 lieux à moins de 10 km du centre de Yamoussoukro où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Yamoussoukro&amp;cc=CI&amp;need=warm">Ouvrir la carte de Yamoussoukro</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Yamoussoukro&amp;cc=CI&amp;need=warm">Ouvrir la carte de Yamoussoukro</a>
 <a class="btn" href="yamoussoukro.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

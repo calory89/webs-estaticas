@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Kara", "description": "17 places in Kara, Togo, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/kara-health.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Kara", "containedInPlace": {"@type": "Country", "name": "Togo"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Kara", "item": "https://supportnear.com/c/kara"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Kara", "item": "https://supportnear.com/c/kara-health.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Kara", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Clinique Tout est grâce", "geo": {"@type": "GeoCoordinates", "latitude": 9.55205, "longitude": 1.20379}, "url": "https://supportnear.com/#p=node/1292960067@9.55205,1.20379"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Clinique Ma Vie", "geo": {"@type": "GeoCoordinates", "latitude": 9.55367, "longitude": 1.19083}, "url": "https://supportnear.com/#p=node/8939306520@9.55367,1.19083"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Hôpital Gotta Lafia", "geo": {"@type": "GeoCoordinates", "latitude": 9.5545, "longitude": 1.18554}, "url": "https://supportnear.com/#p=node/12908461817@9.55450,1.18554"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centre hospitalier Régional", "geo": {"@type": "GeoCoordinates", "latitude": 9.56145, "longitude": 1.20272}, "url": "https://supportnear.com/#p=way/800758668@9.56145,1.20272"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "CMS Agnaram", "geo": {"@type": "GeoCoordinates", "latitude": 9.53388, "longitude": 1.20335}, "url": "https://supportnear.com/#p=way/113982089@9.53388,1.20335"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CHU Kara", "geo": {"@type": "GeoCoordinates", "latitude": 9.556, "longitude": 1.18292}, "url": "https://supportnear.com/#p=node/8591785617@9.55600,1.18292"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Hôpital Mère et Enfants SOS", "geo": {"@type": "GeoCoordinates", "latitude": 9.5616, "longitude": 1.21044}, "url": "https://supportnear.com/#p=way/102858259@9.56160,1.21044"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "A T B E F", "geo": {"@type": "GeoCoordinates", "latitude": 9.54733, "longitude": 1.17966}, "url": "https://supportnear.com/#p=way/800718845@9.54733,1.17966"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "Croix Rouge", "geo": {"@type": "GeoCoordinates", "latitude": 9.56306, "longitude": 1.21836}, "url": "https://supportnear.com/#p=node/1291724394@9.56306,1.21836"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "Soeur de la Providence de Saint Paul", "geo": {"@type": "GeoCoordinates", "latitude": 9.52645, "longitude": 1.1833}, "url": "https://supportnear.com/#p=node/13455820439@9.52645,1.18330"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kara.en">All free help in Kara</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kara.en">All free help in Kara</a></header><main>
 <h1>Clinics and hospitals in Kara</h1>
 <p class="lede">17 places within 10 km of the centre of Kara where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Kara&amp;cc=TG&amp;need=health">Open the map of Kara</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Kara&amp;cc=TG&amp;need=health">Open the map of Kara</a>
 <a class="btn" href="kara.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

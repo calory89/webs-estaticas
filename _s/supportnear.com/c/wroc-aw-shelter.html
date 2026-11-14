@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Schroniska dla bezdomnych — Wrocław", "description": "Wrocław, Polska — 7 miejsc z adresem, godzinami i telefonem, jeśli są znane. Darmowa mapa, bez konta, działa bez zasięgu.", "inLanguage": "pl", "url": "https://supportnear.com/c/wroc-aw-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Wrocław", "containedInPlace": {"@type": "Country", "name": "Polska"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Wrocław", "item": "https://supportnear.com/c/wroc-aw"}, {"@type": "ListItem", "position": 3, "name": "Schroniska dla bezdomnych — Wrocław", "item": "https://supportnear.com/c/wroc-aw-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Schroniska dla bezdomnych — Wrocław", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Wrocławski Ośrodek Pomocy Osobom Nietrzeźwym", "geo": {"@type": "GeoCoordinates", "latitude": 51.11138, "longitude": 17.01918}, "url": "https://supportnear.com/#p=way/1061356767@51.11138,17.01918"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Noclegownia Świętego Brata Alberta", "address": "Stanisława Małachowskiego 15, 50-084, Wrocław", "geo": {"@type": "GeoCoordinates", "latitude": 51.09787, "longitude": 17.04244}, "url": "https://supportnear.com/#p=node/6609791250@51.09787,17.04244"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Ogrzewalnia Świętego Brata Alberta dla Osób Bezdomnych", "geo": {"@type": "GeoCoordinates", "latitude": 51.09661, "longitude": 17.01431}, "url": "https://supportnear.com/#p=node/11775648270@51.09661,17.01431"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Dom Pomocy Społecznej Sióstr Franciszkanek", "geo": {"@type": "GeoCoordinates", "latitude": 51.11518, "longitude": 17.07044}, "url": "https://supportnear.com/#p=way/1101723081@51.11518,17.07044"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Schronisko Świętego Brata Alberta dla Bezdomnych Mężczyzn", "geo": {"@type": "GeoCoordinates", "latitude": 51.08238, "longitude": 17.06644}, "url": "https://supportnear.com/#p=way/1192641395@51.08238,17.06644"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Schronisko św. Brata Alberta dla Bezdomnych Kobiet", "telephone": "+48 71 355 44 66", "geo": {"@type": "GeoCoordinates", "latitude": 51.14078, "longitude": 17.07425}, "url": "https://supportnear.com/#p=way/101666190@51.14078,17.07425"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Noclegownia Świętego Brata Alberta dla Osób w Kryzysie Bezdomności", "geo": {"@type": "GeoCoordinates", "latitude": 51.06834, "longitude": 17.08702}, "url": "https://supportnear.com/#p=way/1276197926@51.06834,17.08702"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wroc-aw">Wrocław — cała darmowa pomoc</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wroc-aw">Wrocław — cała darmowa pomoc</a></header><main>
 <h1>Schroniska dla bezdomnych — Wrocław</h1>
 <p class="lede">7 miejsc w promieniu 10 km od centrum (Wrocław), gdzie to jest za darmo. Z otwartej mapy, aktualizowanej przez wolontariuszy. Otwórz mapę, żeby zobaczyć wszystkie i jak tam dojść.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Wroc%C5%82aw&amp;cc=PL&amp;need=shelter">Otwórz mapę: Wrocław</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Wroc%C5%82aw&amp;cc=PL&amp;need=shelter">Otwórz mapę: Wrocław</a>
 <a class="btn" href="wroc-aw.cartel">Wydrukuj plakat dla tego miasta</a>
 <a class="btn" href="./">Wszystkie miasta</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

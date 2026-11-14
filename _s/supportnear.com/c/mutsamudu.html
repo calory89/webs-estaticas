@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Aide gratuite à Mutsamudu : 2 soins médicaux et 1 service social", "description": "2 soins médicaux et 1 service social à moins de 10 km du centre de Mutsamudu, Comores. Adresse, horaires et téléphone quand on les connaît. Sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/mutsamudu", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Mutsamudu", "containedInPlace": {"@type": "Country", "name": "Comores"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Toutes les villes", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Mutsamudu", "item": "https://supportnear.com/c/mutsamudu"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Les lieux nommés les plus proches", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Polyclinique du Croissant Rouge Iranien", "geo": {"@type": "GeoCoordinates", "latitude": -12.16289, "longitude": 44.40069}, "url": "https://supportnear.com/#p=node/2716272375@-12.16289,44.40069"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Alliance Franco-Comorienne", "geo": {"@type": "GeoCoordinates", "latitude": -12.16334, "longitude": 44.40271}, "url": "https://supportnear.com/#p=node/2716272604@-12.16334,44.40271"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Mutsamudu&amp;cc=KM">Ouvrir la carte en direct de Mutsamudu</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Mutsamudu&amp;cc=KM">Ouvrir la carte en direct de Mutsamudu</a></header><main>
 <h1>Aide gratuite à Mutsamudu</h1>
 <p class="lede">2 soins médicaux et 1 service social à moins de 10 km du centre de Mutsamudu, Comores, et plus : vêtements, aide sociale, aide juridique et soins. Depuis la carte ouverte, tenue à jour par des bénévoles, vérifiables un par un. Il y a encore peu de choses sur la carte ici. Si tu connais un lieu, ajoute-le sur OpenStreetMap et il apparaîtra ici.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Mutsamudu&amp;cc=KM">Ouvrir la carte de Mutsamudu</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit presse</a>
 <a class="btn" href="./">Toutes les villes</a>
 <a class="btn" href="../t/mutsamudu">Version texte (vieux téléphones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

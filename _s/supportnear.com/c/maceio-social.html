@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Serviços sociais em Maceió", "description": "5 sítios em Maceió, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/maceio-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Maceió", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Maceió", "item": "https://supportnear.com/c/maceio"}, {"@type": "ListItem", "position": 3, "name": "Serviços sociais em Maceió", "item": "https://supportnear.com/c/maceio-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Serviços sociais em Maceió", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centro de Atendimento às Pessoas com Surdez - Professora Joelina Alves Cerqueira", "address": "Avenida Presidente Castelo Branco", "geo": {"@type": "GeoCoordinates", "latitude": -9.65272, "longitude": -35.71164}, "url": "https://supportnear.com/#p=way/410679963@-9.65272,-35.71164"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "CRAS Cacilda Costa Sampaio", "address": "Ruas das Flores", "geo": {"@type": "GeoCoordinates", "latitude": -9.66244, "longitude": -35.7598}, "url": "https://supportnear.com/#p=way/265285172@-9.66244,-35.75980"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Creas", "address": "Rua Senador Rui Palmeira 62", "geo": {"@type": "GeoCoordinates", "latitude": -9.652, "longitude": -35.70365}, "url": "https://supportnear.com/#p=node/1994819931@-9.65200,-35.70365"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "CAPSI - Centro de Assistencia Psico", "address": "Rua José Bezerra Júnior, 57046-185, Maceió", "geo": {"@type": "GeoCoordinates", "latitude": -9.60222, "longitude": -35.71982}, "url": "https://supportnear.com/#p=way/516239577@-9.60222,-35.71982"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Associação Pestalozzi", "geo": {"@type": "GeoCoordinates", "latitude": -9.61984, "longitude": -35.69256}, "url": "https://supportnear.com/#p=way/286523333@-9.61984,-35.69256"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="maceio">Toda a ajuda gratuita em Maceió</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="maceio">Toda a ajuda gratuita em Maceió</a></header><main>
 <h1>Serviços sociais em Maceió</h1>
 <p class="lede">5 sítios a menos de 10 km do centro de Maceió onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Macei%C3%B3&amp;cc=BR&amp;need=social">Abrir o mapa de Maceió</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Macei%C3%B3&amp;cc=BR&amp;need=social">Abrir o mapa de Maceió</a>
 <a class="btn" href="maceio.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

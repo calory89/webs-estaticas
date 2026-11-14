@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Centros de salud y hospitales en Cumaná", "description": "7 sitios en Cumaná, Venezuela, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/cumana-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Cumaná", "containedInPlace": {"@type": "Country", "name": "Venezuela"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Cumaná", "item": "https://supportnear.com/c/cumana"}, {"@type": "ListItem", "position": 3, "name": "Centros de salud y hospitales en Cumaná", "item": "https://supportnear.com/c/cumana-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Centros de salud y hospitales en Cumaná", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hospital Julio Rodríguez SAO", "geo": {"@type": "GeoCoordinates", "latitude": 10.45058, "longitude": -64.16936}, "url": "https://supportnear.com/#p=way/358267124@10.45058,-64.16936"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Hospital Antonio Patricio de Alcalá", "address": "Calle Bolívar, Cumaná", "geo": {"@type": "GeoCoordinates", "latitude": 10.46938, "longitude": -64.1618}, "url": "https://supportnear.com/#p=relation/19986709@10.46938,-64.16180"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Ambulatorio Fe y Alegría", "geo": {"@type": "GeoCoordinates", "latitude": 10.443, "longitude": -64.18186}, "url": "https://supportnear.com/#p=way/374558743@10.44300,-64.18186"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hospital Marítimo “Salvador Allende”", "address": "Avenida Perimetral, 6101, Cumaná", "geo": {"@type": "GeoCoordinates", "latitude": 10.47305, "longitude": -64.14811}, "url": "https://supportnear.com/#p=way/982218575@10.47305,-64.14811"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Ambulatorio de Cantarrana", "geo": {"@type": "GeoCoordinates", "latitude": 10.43332, "longitude": -64.13184}, "url": "https://supportnear.com/#p=way/366142658@10.43332,-64.13184"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Modulo de El Peñón", "geo": {"@type": "GeoCoordinates", "latitude": 10.4536, "longitude": -64.09331}, "url": "https://supportnear.com/#p=node/4315974667@10.45360,-64.09331"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cumana">Toda la ayuda gratis en Cumaná</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cumana">Toda la ayuda gratis en Cumaná</a></header><main>
 <h1>Centros de salud y hospitales en Cumaná</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de Cumaná donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Cuman%C3%A1&amp;cc=VE&amp;need=health">Abrir el mapa de Cumaná</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Cuman%C3%A1&amp;cc=VE&amp;need=health">Abrir el mapa de Cumaná</a>
 <a class="btn" href="cumana.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

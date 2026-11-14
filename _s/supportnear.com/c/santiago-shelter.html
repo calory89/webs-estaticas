@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Albergues en Santiago", "description": "8 sitios en Santiago, Chile, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/santiago-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Santiago", "containedInPlace": {"@type": "Country", "name": "Chile"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Santiago", "item": "https://supportnear.com/c/santiago"}, {"@type": "ListItem", "position": 3, "name": "Albergues en Santiago", "item": "https://supportnear.com/c/santiago-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Albergues en Santiago", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centro de Acogida Día", "address": "Club Hípico 618, Santiago", "geo": {"@type": "GeoCoordinates", "latitude": -33.45559, "longitude": -70.66475}, "url": "https://supportnear.com/#p=way/682970499@-33.45559,-70.66475"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Hogar de Cristo", "geo": {"@type": "GeoCoordinates", "latitude": -33.43268, "longitude": -70.6779}, "url": "https://supportnear.com/#p=node/4048567178@-33.43268,-70.67790"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Fundación Villa Padre Hurtado", "address": "Vecinal 2603, Pedro Aguirre Cerda", "telephone": "+56228226100", "openingHours": "Mo-Fr 09:00-14:00,15:00-17:30", "geo": {"@type": "GeoCoordinates", "latitude": -33.50109, "longitude": -70.67209}, "url": "https://supportnear.com/#p=way/319699082@-33.50109,-70.67209"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Casa Nacional del Niño SENAME", "address": "Las Encinas 2725, Ñuñoa", "geo": {"@type": "GeoCoordinates", "latitude": -33.46923, "longitude": -70.60394}, "url": "https://supportnear.com/#p=way/1508286957@-33.46923,-70.60394"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Fundación Cristo de la Noche", "geo": {"@type": "GeoCoordinates", "latitude": -33.39828, "longitude": -70.72798}, "url": "https://supportnear.com/#p=way/1200985849@-33.39828,-70.72798"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Fundación Regazo", "address": "Santa Teresa de Los Andes 4141", "geo": {"@type": "GeoCoordinates", "latitude": -33.4932, "longitude": -70.58886}, "url": "https://supportnear.com/#p=way/1408674569@-33.49320,-70.58886"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Aldeas SOS", "address": "Avenida El Líbano 5414", "geo": {"@type": "GeoCoordinates", "latitude": -33.50165, "longitude": -70.59172}, "url": "https://supportnear.com/#p=way/701396850@-33.50165,-70.59172"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="santiago">Toda la ayuda gratis en Santiago</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="santiago">Toda la ayuda gratis en Santiago</a></header><main>
 <h1>Albergues en Santiago</h1>
 <p class="lede">8 sitios a menos de 10 km del centro de Santiago donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Santiago&amp;cc=CL&amp;need=shelter">Abrir el mapa de Santiago</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Santiago&amp;cc=CL&amp;need=shelter">Abrir el mapa de Santiago</a>
 <a class="btn" href="santiago.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

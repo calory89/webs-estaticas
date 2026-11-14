@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Ar-Raqqa: 5 clinics and hospitals and 2 warm places to sit", "description": "5 clinics and hospitals and 2 warm places to sit within 10 km of the centre of Ar-Raqqa, Syria. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/ar-raqqa.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ar-Raqqa", "containedInPlace": {"@type": "Country", "name": "Syria"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Ar-Raqqa", "item": "https://supportnear.com/c/ar-raqqa"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "المشفى الوطني", "address": "الرقة", "geo": {"@type": "GeoCoordinates", "latitude": 35.95021, "longitude": 39.00385}, "url": "https://supportnear.com/#p=way/203877279@35.95021,39.00385"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مشفى التوليد", "geo": {"@type": "GeoCoordinates", "latitude": 35.95389, "longitude": 39.00791}, "url": "https://supportnear.com/#p=way/302518543@35.95389,39.00791"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مشفى الطب الحديث", "geo": {"@type": "GeoCoordinates", "latitude": 35.95225, "longitude": 39.00212}, "url": "https://supportnear.com/#p=way/302466384@35.95225,39.00212"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "الفرات", "geo": {"@type": "GeoCoordinates", "latitude": 35.94119, "longitude": 38.99488}, "url": "https://supportnear.com/#p=node/6035931386@35.94119,38.99488"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ar-Raqqa&amp;cc=SY">Open the live map of Ar-Raqqa</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ar-Raqqa&amp;cc=SY">Open the live map of Ar-Raqqa</a></header><main>
 <h1>Free help in Ar-Raqqa <small style="font-weight:400;color:var(--ink-3)">· الرقة</small></h1>
 <p class="lede">5 clinics and hospitals and 2 warm places to sit within 10 km of the centre of Ar-Raqqa, Syria, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one. There is not much mapped here yet. If you know a place, add it on OpenStreetMap and it appears here.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ar-Raqqa&amp;cc=SY">Open the map of Ar-Raqqa</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/ar-raqqa">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

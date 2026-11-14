@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Münster", "description": "7 places in Münster, Germany, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/munster-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Münster", "containedInPlace": {"@type": "Country", "name": "Germany"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Münster", "item": "https://supportnear.com/c/munster"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Münster", "item": "https://supportnear.com/c/munster-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Münster", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Philosophikum", "address": "Domplatz 23", "geo": {"@type": "GeoCoordinates", "latitude": 51.96257, "longitude": 7.62322}, "url": "https://supportnear.com/#p=node/13666270501@51.96257,7.62322"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Seminar für Alte Kirchengeschichte", "telephone": "+49 251 8322624", "geo": {"@type": "GeoCoordinates", "latitude": 51.96254, "longitude": 7.62246}, "url": "https://supportnear.com/#p=node/2122568644@51.96254,7.62246"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Aula der KSHG", "address": "Frauenstraße 3-6, 48143, Münster", "geo": {"@type": "GeoCoordinates", "latitude": 51.9633, "longitude": 7.62171}, "url": "https://supportnear.com/#p=node/13567515048@51.96330,7.62171"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Bonni Jugendtreff", "address": "An der Apostelkirche 5, 48143, Münster", "telephone": "+49 251 45385", "openingHours": "Mo-Th 15:00-20:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.96506, "longitude": 7.62738}, "url": "https://supportnear.com/#p=node/846014303@51.96506,7.62738"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bibliothek im Haus der Niederlande", "openingHours": "Mo-Fr 09:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.96323, "longitude": 7.62991}, "url": "https://supportnear.com/#p=node/2386447451@51.96323,7.62991"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Stadtbücherei", "address": "Alter Steinweg 11, 48143, Münster", "telephone": "+49 251 4924242", "geo": {"@type": "GeoCoordinates", "latitude": 51.96293, "longitude": 7.63091}, "url": "https://supportnear.com/#p=way/720585886@51.96293,7.63091"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Katholische Öffentliche Bücherei St. Martini", "address": "Martinikirchhof 13, 48143, Münster", "openingHours": "Su 11:30-12:30", "geo": {"@type": "GeoCoordinates", "latitude": 51.96574, "longitude": 7.63001}, "url": "https://supportnear.com/#p=node/4724551941@51.96574,7.63001"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="munster">All free help in Münster</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="munster">All free help in Münster</a></header><main>
 <h1>Warm places to sit in Münster</h1>
 <p class="lede">7 places within 10 km of the centre of Münster where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=M%C3%BCnster&amp;cc=DE&amp;need=warm">Open the map of Münster</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=M%C3%BCnster&amp;cc=DE&amp;need=warm">Open the map of Münster</a>
 <a class="btn" href="munster.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

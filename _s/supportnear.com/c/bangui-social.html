@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Services sociaux à Bangui", "description": "3 lieux à Bangui, République centrafricaine, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/bangui-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Bangui", "containedInPlace": {"@type": "Country", "name": "République centrafricaine"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Bangui", "item": "https://supportnear.com/c/bangui"}, {"@type": "ListItem", "position": 3, "name": "Services sociaux à Bangui", "item": "https://supportnear.com/c/bangui-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Services sociaux à Bangui", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centre de Formation - ONG Thabita", "address": "ONG Thabita - Centre de Formation", "geo": {"@type": "GeoCoordinates", "latitude": 4.3672, "longitude": 18.56047}, "url": "https://supportnear.com/#p=node/4733960506@4.36720,18.56047"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Cordaid RCA", "geo": {"@type": "GeoCoordinates", "latitude": 4.38, "longitude": 18.56624}, "url": "https://supportnear.com/#p=way/188499832@4.38000,18.56624"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Finn Church Aid", "geo": {"@type": "GeoCoordinates", "latitude": 4.38143, "longitude": 18.56578}, "url": "https://supportnear.com/#p=node/3199936617@4.38143,18.56578"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bangui">Toute l’aide gratuite à Bangui</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bangui">Toute l’aide gratuite à Bangui</a></header><main>
 <h1>Services sociaux à Bangui</h1>
 <p class="lede">3 lieux à moins de 10 km du centre de Bangui où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Bangui&amp;cc=CF&amp;need=social">Ouvrir la carte de Bangui</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Bangui&amp;cc=CF&amp;need=social">Ouvrir la carte de Bangui</a>
 <a class="btn" href="bangui.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Suez: 1 free shower and 5 clinics and hospitals", "description": "1 free shower, 5 clinics and hospitals and 3 warm places to sit within 10 km of the centre of Suez, Egypt. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/suez.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Suez", "containedInPlace": {"@type": "Country", "name": "Egypt"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Suez", "item": "https://supportnear.com/c/suez"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مركز شباب الجزيرة", "geo": {"@type": "GeoCoordinates", "latitude": 29.97705, "longitude": 32.5545}, "url": "https://supportnear.com/#p=node/9433135716@29.97705,32.55450"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مستشفى التأمين الصحى الشامل", "address": "شباب اكتوبر", "geo": {"@type": "GeoCoordinates", "latitude": 29.96925, "longitude": 32.5176}, "url": "https://supportnear.com/#p=way/1057797224@29.96925,32.51760"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "المركز الطبي للبترول", "address": "السخنة", "geo": {"@type": "GeoCoordinates", "latitude": 29.95663, "longitude": 32.5064}, "url": "https://supportnear.com/#p=node/4424820093@29.95663,32.50640"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Project Land", "geo": {"@type": "GeoCoordinates", "latitude": 30.02903, "longitude": 32.54196}, "url": "https://supportnear.com/#p=way/1340811929@30.02903,32.54196"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Project Land", "geo": {"@type": "GeoCoordinates", "latitude": 30.02948, "longitude": 32.54266}, "url": "https://supportnear.com/#p=node/12402732939@30.02948,32.54266"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "شركة النصر للاسمدة", "geo": {"@type": "GeoCoordinates", "latitude": 29.94153, "longitude": 32.4634}, "url": "https://supportnear.com/#p=node/10844709705@29.94153,32.46340"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Suez&amp;cc=EG">Open the live map of Suez</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Suez&amp;cc=EG">Open the live map of Suez</a></header><main>
 <h1>Free help in Suez <small style="font-weight:400;color:var(--ink-3)">· السويس</small></h1>
 <p class="lede">1 free shower, 5 clinics and hospitals and 3 warm places to sit within 10 km of the centre of Suez, Egypt, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one. There is not much mapped here yet. If you know a place, add it on OpenStreetMap and it appears here.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Suez&amp;cc=EG">Open the map of Suez</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/suez">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

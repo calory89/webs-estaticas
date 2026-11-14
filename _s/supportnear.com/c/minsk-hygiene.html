@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Бесплатные душевые — Минск", "description": "Минск, Беларусь — 28 мест с адресом, часами и телефоном, если известны. Бесплатная карта, без регистрации, работает без связи.", "inLanguage": "ru", "url": "https://supportnear.com/c/minsk-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Минск", "containedInPlace": {"@type": "Country", "name": "Беларусь"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Минск", "item": "https://supportnear.com/c/minsk"}, {"@type": "ListItem", "position": 3, "name": "Бесплатные душевые — Минск", "item": "https://supportnear.com/c/minsk-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Бесплатные душевые — Минск", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Туалет", "geo": {"@type": "GeoCoordinates", "latitude": 53.90645, "longitude": 27.557}, "url": "https://supportnear.com/#p=node/7525890589@53.90645,27.55700"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Центрополь", "geo": {"@type": "GeoCoordinates", "latitude": 53.89383, "longitude": 27.55594}, "url": "https://supportnear.com/#p=node/11061469905@53.89383,27.55594"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Общественный", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 53.89387, "longitude": 27.57589}, "url": "https://supportnear.com/#p=node/6467816085@53.89387,27.57589"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Лидо", "openingHours": "Mo-Su 09:00-21:00", "geo": {"@type": "GeoCoordinates", "latitude": 53.91892, "longitude": 27.58088}, "url": "https://supportnear.com/#p=node/4561758189@53.91892,27.58088"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Лидо", "geo": {"@type": "GeoCoordinates", "latitude": 53.917, "longitude": 27.58502}, "url": "https://supportnear.com/#p=node/5074994421@53.91700,27.58502"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Душ", "geo": {"@type": "GeoCoordinates", "latitude": 53.96341, "longitude": 27.57258}, "url": "https://supportnear.com/#p=node/14156786601@53.96341,27.57258"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "РУП \"Белоруснефть-Минскавтозаправка\"", "geo": {"@type": "GeoCoordinates", "latitude": 53.82754, "longitude": 27.57904}, "url": "https://supportnear.com/#p=node/7138686867@53.82754,27.57904"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="minsk">Минск — вся бесплатная помощь</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="minsk">Минск — вся бесплатная помощь</a></header><main>
 <h1>Бесплатные душевые — Минск</h1>
 <p class="lede">28 мест в радиусе 10 км от центра (Минск), где это бесплатно. С открытой карты, которую обновляют волонтёры. Открой карту, чтобы увидеть все и как дойти пешком.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Minsk&amp;cc=BY&amp;need=hygiene">Открыть карту: Минск</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Minsk&amp;cc=BY&amp;need=hygiene">Открыть карту: Минск</a>
 <a class="btn" href="minsk.cartel">Распечатать плакат для этого города</a>
 <a class="btn" href="./">Все города</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

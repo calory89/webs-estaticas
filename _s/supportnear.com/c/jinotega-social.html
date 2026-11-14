@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Jinotega", "description": "7 sitios en Jinotega, Nicaragua, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/jinotega-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Jinotega", "containedInPlace": {"@type": "Country", "name": "Nicaragua"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Jinotega", "item": "https://supportnear.com/c/jinotega"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Jinotega", "item": "https://supportnear.com/c/jinotega-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Jinotega", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Movimiento de Cursillo de Cristiandad - De Colores", "address": "Jinotega", "geo": {"@type": "GeoCoordinates", "latitude": 13.09161, "longitude": -86.00256}, "url": "https://supportnear.com/#p=way/278143530@13.09161,-86.00256"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "ProMujer", "address": "Jinotega", "geo": {"@type": "GeoCoordinates", "latitude": 13.09348, "longitude": -86.00102}, "url": "https://supportnear.com/#p=node/4428334020@13.09348,-86.00102"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Alcoholicos Anonimos", "address": "4a Calle Norte, Jinotega", "geo": {"@type": "GeoCoordinates", "latitude": 13.0951, "longitude": -86.00103}, "url": "https://supportnear.com/#p=way/417945687@13.09510,-86.00103"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Comunidad Indígena de Jinotega", "geo": {"@type": "GeoCoordinates", "latitude": 13.09589, "longitude": -86.003}, "url": "https://supportnear.com/#p=node/6577637920@13.09589,-86.00300"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Los Pipitos", "geo": {"@type": "GeoCoordinates", "latitude": 13.09112, "longitude": -85.99847}, "url": "https://supportnear.com/#p=node/4428032207@13.09112,-85.99847"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Organización de Ciegos de Nicaragua “Marisela Toledo”", "address": "5a Calle Sur, Jinotega", "geo": {"@type": "GeoCoordinates", "latitude": 13.08709, "longitude": -85.99812}, "url": "https://supportnear.com/#p=way/416218580@13.08709,-85.99812"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Vida Joven", "geo": {"@type": "GeoCoordinates", "latitude": 13.05275, "longitude": -85.95938}, "url": "https://supportnear.com/#p=node/5991701945@13.05275,-85.95938"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="jinotega">Toda la ayuda gratis en Jinotega</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="jinotega">Toda la ayuda gratis en Jinotega</a></header><main>
 <h1>Servicios sociales en Jinotega</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de Jinotega donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Jinotega&amp;cc=NI&amp;need=social">Abrir el mapa de Jinotega</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Jinotega&amp;cc=NI&amp;need=social">Abrir el mapa de Jinotega</a>
 <a class="btn" href="jinotega.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

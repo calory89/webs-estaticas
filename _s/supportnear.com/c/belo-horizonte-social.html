@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Serviços sociais em Belo Horizonte", "description": "6 sítios em Belo Horizonte, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/belo-horizonte-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Belo Horizonte", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Belo Horizonte", "item": "https://supportnear.com/c/belo-horizonte"}, {"@type": "ListItem", "position": 3, "name": "Serviços sociais em Belo Horizonte", "item": "https://supportnear.com/c/belo-horizonte-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Serviços sociais em Belo Horizonte", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Instituto de Oportunidades e Empoderamento Social", "geo": {"@type": "GeoCoordinates", "latitude": -19.9125, "longitude": -43.92661}, "url": "https://supportnear.com/#p=node/11879129276@-19.91250,-43.92661"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Centro de Apoio e Convivência - CAC", "address": "Rua Juscelino Barbosa 30, Belo Horizonte", "geo": {"@type": "GeoCoordinates", "latitude": -19.92546, "longitude": -43.97981}, "url": "https://supportnear.com/#p=way/1093056156@-19.92546,-43.97981"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Humanizar - BH", "geo": {"@type": "GeoCoordinates", "latitude": -19.92777, "longitude": -43.98074}, "url": "https://supportnear.com/#p=way/1105928064@-19.92777,-43.98074"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centro Social do Conjunto Henrique Silva Araújo", "address": "Rua Vereador Júlio Ferreira 180, 30510-090, Belo Horizonte", "geo": {"@type": "GeoCoordinates", "latitude": -19.93793, "longitude": -43.98965}, "url": "https://supportnear.com/#p=way/466212032@-19.93793,-43.98965"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centro de Anúncio São Sebastião", "geo": {"@type": "GeoCoordinates", "latitude": -19.96822, "longitude": -43.98438}, "url": "https://supportnear.com/#p=node/1909022337@-19.96822,-43.98438"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Associação dos Surdos de MG", "address": "Rua Elisa Felippeto Ricaldoni 90, 30840-480, Belo Horizonte", "geo": {"@type": "GeoCoordinates", "latitude": -19.89073, "longitude": -43.99868}, "url": "https://supportnear.com/#p=node/8487504784@-19.89073,-43.99868"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="belo-horizonte">Toda a ajuda gratuita em Belo Horizonte</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="belo-horizonte">Toda a ajuda gratuita em Belo Horizonte</a></header><main>
 <h1>Serviços sociais em Belo Horizonte</h1>
 <p class="lede">6 sítios a menos de 10 km do centro de Belo Horizonte onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Belo%20Horizonte&amp;cc=BR&amp;need=social">Abrir o mapa de Belo Horizonte</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Belo%20Horizonte&amp;cc=BR&amp;need=social">Abrir o mapa de Belo Horizonte</a>
 <a class="btn" href="belo-horizonte.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

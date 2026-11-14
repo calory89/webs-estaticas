@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Medellín", "description": "40 sitios en Medellín, Colombia, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/medellin-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Medellín", "containedInPlace": {"@type": "Country", "name": "Colombia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Medellín", "item": "https://supportnear.com/c/medellin"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Medellín", "item": "https://supportnear.com/c/medellin-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Medellín", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centro", "geo": {"@type": "GeoCoordinates", "latitude": 6.24832, "longitude": -75.58704}, "url": "https://supportnear.com/#p=node/9112370405@6.24832,-75.58704"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Zonal ICBF", "geo": {"@type": "GeoCoordinates", "latitude": 6.25075, "longitude": -75.56899}, "url": "https://supportnear.com/#p=node/11207817848@6.25075,-75.56899"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Oficina de la Familia", "geo": {"@type": "GeoCoordinates", "latitude": 6.25082, "longitude": -75.59557}, "url": "https://supportnear.com/#p=way/787962300@6.25082,-75.59557"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centro Cristiano Cenfol Belen", "geo": {"@type": "GeoCoordinates", "latitude": 6.23567, "longitude": -75.59726}, "url": "https://supportnear.com/#p=way/785177351@6.23567,-75.59726"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Sede Social", "geo": {"@type": "GeoCoordinates", "latitude": 6.23736, "longitude": -75.59817}, "url": "https://supportnear.com/#p=way/785171813@6.23736,-75.59817"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "La Ermita de Jesús", "geo": {"@type": "GeoCoordinates", "latitude": 6.23744, "longitude": -75.59854}, "url": "https://supportnear.com/#p=way/785171475@6.23744,-75.59854"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Junta de Acción Comunal Barrio Trinidad", "geo": {"@type": "GeoCoordinates", "latitude": 6.22557, "longitude": -75.58512}, "url": "https://supportnear.com/#p=node/7415652816@6.22557,-75.58512"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "La Casita de María", "geo": {"@type": "GeoCoordinates", "latitude": 6.23508, "longitude": -75.59841}, "url": "https://supportnear.com/#p=way/793331263@6.23508,-75.59841"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "Manos  Activas", "geo": {"@type": "GeoCoordinates", "latitude": 6.25848, "longitude": -75.59876}, "url": "https://supportnear.com/#p=node/9130264001@6.25848,-75.59876"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "Sede Social Barrio Cristóbal", "geo": {"@type": "GeoCoordinates", "latitude": 6.24693, "longitude": -75.60581}, "url": "https://supportnear.com/#p=node/3797240205@6.24693,-75.60581"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="medellin">Toda la ayuda gratis en Medellín</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="medellin">Toda la ayuda gratis en Medellín</a></header><main>
 <h1>Servicios sociales en Medellín</h1>
 <p class="lede">40 sitios a menos de 10 km del centro de Medellín donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Medell%C3%ADn&amp;cc=CO&amp;need=social">Abrir el mapa de Medellín</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Medell%C3%ADn&amp;cc=CO&amp;need=social">Abrir el mapa de Medellín</a>
 <a class="btn" href="medellin.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

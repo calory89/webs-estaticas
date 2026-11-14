@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Niigata", "description": "8 places in Niigata, Japan, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/niigata-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Niigata", "containedInPlace": {"@type": "Country", "name": "Japan"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Niigata", "item": "https://supportnear.com/c/niigata"}, {"@type": "ListItem", "position": 3, "name": "Social services in Niigata", "item": "https://supportnear.com/c/niigata-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Niigata", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "新潟少年鑑別所", "geo": {"@type": "GeoCoordinates", "latitude": 37.91236, "longitude": 139.03443}, "url": "https://supportnear.com/#p=way/331946885@37.91236,139.03443"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "新潟県看護協会", "geo": {"@type": "GeoCoordinates", "latitude": 37.91151, "longitude": 139.03034}, "url": "https://supportnear.com/#p=way/355575037@37.91151,139.03034"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "日本赤十字社新潟県支部", "geo": {"@type": "GeoCoordinates", "latitude": 37.91686, "longitude": 139.02623}, "url": "https://supportnear.com/#p=way/343657945@37.91686,139.02623"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "アルシェふるまち", "geo": {"@type": "GeoCoordinates", "latitude": 37.93107, "longitude": 139.04575}, "url": "https://supportnear.com/#p=node/13736021846@37.93107,139.04575"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "地域生活サポートセンター　ミナと", "geo": {"@type": "GeoCoordinates", "latitude": 37.93211, "longitude": 139.04362}, "url": "https://supportnear.com/#p=node/13736021847@37.93211,139.04362"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "恵松園", "geo": {"@type": "GeoCoordinates", "latitude": 37.92842, "longitude": 139.1152}, "url": "https://supportnear.com/#p=way/660090887@37.92842,139.11520"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="niigata">All free help in Niigata</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="niigata">All free help in Niigata</a></header><main>
 <h1>Social services in Niigata</h1>
 <p class="lede">8 places within 10 km of the centre of Niigata where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Niigata&amp;cc=JP&amp;need=social">Open the map of Niigata</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Niigata&amp;cc=JP&amp;need=social">Open the map of Niigata</a>
 <a class="btn" href="niigata.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

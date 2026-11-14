@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Antwerp", "description": "44 places in Antwerp, Belgium, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/antwerp-social.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Antwerp", "containedInPlace": {"@type": "Country", "name": "Belgium"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Antwerp", "item": "https://supportnear.com/c/antwerp"}, {"@type": "ListItem", "position": 3, "name": "Social services in Antwerp", "item": "https://supportnear.com/c/antwerp-social.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Antwerp", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Dienstencentrum De Oever", "geo": {"@type": "GeoCoordinates", "latitude": 51.21759, "longitude": 4.39715}, "url": "https://supportnear.com/#p=way/1419582685@51.21759,4.39715"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Dienstencentrum De Oever", "geo": {"@type": "GeoCoordinates", "latitude": 51.21662, "longitude": 4.3968}, "url": "https://supportnear.com/#p=node/12368556640@51.21662,4.39680"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Dagcentrum Terninck", "geo": {"@type": "GeoCoordinates", "latitude": 51.21144, "longitude": 4.40285}, "url": "https://supportnear.com/#p=way/789151278@51.21144,4.40285"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Antwerp Seafarer's Centre", "address": "Italiëlei 72, 2000", "geo": {"@type": "GeoCoordinates", "latitude": 51.22323, "longitude": 4.41522}, "url": "https://supportnear.com/#p=node/2159720716@51.22323,4.41522"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Salaam vrede", "geo": {"@type": "GeoCoordinates", "latitude": 51.22223, "longitude": 4.41668}, "url": "https://supportnear.com/#p=node/7366336420@51.22223,4.41668"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "De Vinken", "geo": {"@type": "GeoCoordinates", "latitude": 51.20481, "longitude": 4.40411}, "url": "https://supportnear.com/#p=node/7302403301@51.20481,4.40411"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Atlas", "address": "Carnotstraat 110, 2060, Antwerpen", "geo": {"@type": "GeoCoordinates", "latitude": 51.21775, "longitude": 4.42669}, "url": "https://supportnear.com/#p=node/3001148045@51.21775,4.42669"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Dom Srca", "openingHours": "Tu,Th 10:00-16:00; Sa 12:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": 51.22546, "longitude": 4.42761}, "url": "https://supportnear.com/#p=node/13820125902@51.22546,4.42761"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "Onze Woning", "geo": {"@type": "GeoCoordinates", "latitude": 51.20258, "longitude": 4.40284}, "url": "https://supportnear.com/#p=way/791886283@51.20258,4.40284"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "Cetrum voor Geestelijke gezondheidszorg", "geo": {"@type": "GeoCoordinates", "latitude": 51.20378, "longitude": 4.4165}, "url": "https://supportnear.com/#p=node/7403996436@51.20378,4.41650"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="antwerp.en">All free help in Antwerp</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="antwerp.en">All free help in Antwerp</a></header><main>
 <h1>Social services in Antwerp</h1>
 <p class="lede">44 places within 10 km of the centre of Antwerp where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Antwerp&amp;cc=BE&amp;need=social">Open the map of Antwerp</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Antwerp&amp;cc=BE&amp;need=social">Open the map of Antwerp</a>
 <a class="btn" href="antwerp.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

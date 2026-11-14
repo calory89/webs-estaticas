@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Aide gratuite à Muhanga : 12 soins médicaux", "description": "12 soins médicaux à moins de 10 km du centre de Muhanga, Burundi. Adresse, horaires et téléphone quand on les connaît. Sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/muhanga", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Muhanga", "containedInPlace": {"@type": "Country", "name": "Burundi"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Toutes les villes", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Muhanga", "item": "https://supportnear.com/c/muhanga"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Les lieux nommés les plus proches", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Muhanga I", "geo": {"@type": "GeoCoordinates", "latitude": -3.02798, "longitude": 29.83378}, "url": "https://supportnear.com/#p=way/786225180@-3.02798,29.83378"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "CDS Muhanga II", "geo": {"@type": "GeoCoordinates", "latitude": -3.02973, "longitude": 29.84117}, "url": "https://supportnear.com/#p=way/786216108@-3.02973,29.84117"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CDS Makaba", "geo": {"@type": "GeoCoordinates", "latitude": -2.99251, "longitude": 29.83151}, "url": "https://supportnear.com/#p=way/573967246@-2.99251,29.83151"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "CDS Mubogora", "geo": {"@type": "GeoCoordinates", "latitude": -3.06896, "longitude": 29.81787}, "url": "https://supportnear.com/#p=way/786216064@-3.06896,29.81787"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Ceyerezi", "geo": {"@type": "GeoCoordinates", "latitude": -3.02008, "longitude": 29.76828}, "url": "https://supportnear.com/#p=way/786216733@-3.02008,29.76828"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CDS Nzove", "geo": {"@type": "GeoCoordinates", "latitude": -3.09986, "longitude": 29.84514}, "url": "https://supportnear.com/#p=way/790430624@-3.09986,29.84514"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "CDS Rwisabi", "geo": {"@type": "GeoCoordinates", "latitude": -3.09507, "longitude": 29.87048}, "url": "https://supportnear.com/#p=way/790430508@-3.09507,29.87048"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "CDS Ruyaga", "geo": {"@type": "GeoCoordinates", "latitude": -3.01126, "longitude": 29.91045}, "url": "https://supportnear.com/#p=way/787538035@-3.01126,29.91045"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "CDS Mugomera", "geo": {"@type": "GeoCoordinates", "latitude": -2.98047, "longitude": 29.89891}, "url": "https://supportnear.com/#p=way/787537441@-2.98047,29.89891"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "CDS Shango", "geo": {"@type": "GeoCoordinates", "latitude": -2.94584, "longitude": 29.83379}, "url": "https://supportnear.com/#p=way/787536530@-2.94584,29.83379"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Muhanga&amp;cc=BI">Ouvrir la carte en direct de Muhanga</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Muhanga&amp;cc=BI">Ouvrir la carte en direct de Muhanga</a></header><main>
 <h1>Aide gratuite à Muhanga</h1>
 <p class="lede">12 soins médicaux à moins de 10 km du centre de Muhanga, Burundi, et plus : vêtements, aide sociale, aide juridique et soins. Depuis la carte ouverte, tenue à jour par des bénévoles, vérifiables un par un. Il y a encore peu de choses sur la carte ici. Si tu connais un lieu, ajoute-le sur OpenStreetMap et il apparaîtra ici.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Muhanga&amp;cc=BI">Ouvrir la carte de Muhanga</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit presse</a>
 <a class="btn" href="./">Toutes les villes</a>
 <a class="btn" href="../t/muhanga">Version texte (vieux téléphones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

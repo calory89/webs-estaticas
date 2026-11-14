@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Lieux où se poser au chaud à Maroua", "description": "7 lieux à Maroua, Cameroun, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/maroua-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Maroua", "containedInPlace": {"@type": "Country", "name": "Cameroun"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Maroua", "item": "https://supportnear.com/c/maroua"}, {"@type": "ListItem", "position": 3, "name": "Lieux où se poser au chaud à Maroua", "item": "https://supportnear.com/c/maroua-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Lieux où se poser au chaud à Maroua", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centre Culturel de Musulman pour le Développement", "geo": {"@type": "GeoCoordinates", "latitude": 10.60407, "longitude": 14.3261}, "url": "https://supportnear.com/#p=way/417886180@10.60407,14.32610"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Salle Polyvalente de Maroua", "geo": {"@type": "GeoCoordinates", "latitude": 10.59645, "longitude": 14.31826}, "url": "https://supportnear.com/#p=way/1521435652@10.59645,14.31826"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Espace de divertissement", "geo": {"@type": "GeoCoordinates", "latitude": 10.59045, "longitude": 14.3227}, "url": "https://supportnear.com/#p=way/416941666@10.59045,14.32270"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Alliance Biblique du Cameroun", "geo": {"@type": "GeoCoordinates", "latitude": 10.59406, "longitude": 14.31728}, "url": "https://supportnear.com/#p=way/417886170@10.59406,14.31728"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Djabbama", "address": "Avion me laisse", "geo": {"@type": "GeoCoordinates", "latitude": 10.59261, "longitude": 14.3147}, "url": "https://supportnear.com/#p=node/4254982289@10.59261,14.31470"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centre lingustique de Maroua", "geo": {"@type": "GeoCoordinates", "latitude": 10.59293, "longitude": 14.30212}, "url": "https://supportnear.com/#p=way/417893826@10.59293,14.30212"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Cercle municipale", "geo": {"@type": "GeoCoordinates", "latitude": 10.58769, "longitude": 14.29183}, "url": "https://supportnear.com/#p=way/417853526@10.58769,14.29183"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="maroua">Toute l’aide gratuite à Maroua</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="maroua">Toute l’aide gratuite à Maroua</a></header><main>
 <h1>Lieux où se poser au chaud à Maroua</h1>
 <p class="lede">7 lieux à moins de 10 km du centre de Maroua où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Maroua&amp;cc=CM&amp;need=warm">Ouvrir la carte de Maroua</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Maroua&amp;cc=CM&amp;need=warm">Ouvrir la carte de Maroua</a>
 <a class="btn" href="maroua.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

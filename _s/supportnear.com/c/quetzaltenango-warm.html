@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sitios donde estar en Quetzaltenango", "description": "7 sitios en Quetzaltenango, Guatemala, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/quetzaltenango-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Quetzaltenango", "containedInPlace": {"@type": "Country", "name": "Guatemala"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Quetzaltenango", "item": "https://supportnear.com/c/quetzaltenango"}, {"@type": "ListItem", "position": 3, "name": "Sitios donde estar en Quetzaltenango", "item": "https://supportnear.com/c/quetzaltenango-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sitios donde estar en Quetzaltenango", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centro Intercultural de Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.84548, "longitude": -91.52402}, "url": "https://supportnear.com/#p=way/39353345@14.84548,-91.52402"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Alianza Francesa de Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.83609, "longitude": -91.51967}, "url": "https://supportnear.com/#p=node/8809485417@14.83609,-91.51967"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Casa Noj", "address": "7a Calle 12-12", "geo": {"@type": "GeoCoordinates", "latitude": 14.83385, "longitude": -91.51894}, "url": "https://supportnear.com/#p=way/129560936@14.83385,-91.51894"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "La Casona Cultural de Xela", "address": "13 Avenida 7-19, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.83355, "longitude": -91.51929}, "url": "https://supportnear.com/#p=node/1583223320@14.83355,-91.51929"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Geo Liberí y Papeleria", "geo": {"@type": "GeoCoordinates", "latitude": 14.86593, "longitude": -91.51653}, "url": "https://supportnear.com/#p=way/1378468606@14.86593,-91.51653"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Alcaldia Comunitaria de Pacaja Bajo", "address": "4 Avenida 4, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.83555, "longitude": -91.54107}, "url": "https://supportnear.com/#p=way/448861783@14.83555,-91.54107"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Salon Comunal", "geo": {"@type": "GeoCoordinates", "latitude": 14.89379, "longitude": -91.44663}, "url": "https://supportnear.com/#p=node/5430306820@14.89379,-91.44663"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quetzaltenango">Toda la ayuda gratis en Quetzaltenango</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quetzaltenango">Toda la ayuda gratis en Quetzaltenango</a></header><main>
 <h1>Sitios donde estar en Quetzaltenango</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de Quetzaltenango donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Quetzaltenango&amp;cc=GT&amp;need=warm">Abrir el mapa de Quetzaltenango</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Quetzaltenango&amp;cc=GT&amp;need=warm">Abrir el mapa de Quetzaltenango</a>
 <a class="btn" href="quetzaltenango.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

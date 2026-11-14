@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Jadłodajnie — Katowice", "description": "Katowice, Polska — 3 miejsc z adresem, godzinami i telefonem, jeśli są znane. Darmowa mapa, bez konta, działa bez zasięgu.", "inLanguage": "pl", "url": "https://supportnear.com/c/katowice-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Katowice", "containedInPlace": {"@type": "Country", "name": "Polska"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Katowice", "item": "https://supportnear.com/c/katowice"}, {"@type": "ListItem", "position": 3, "name": "Jadłodajnie — Katowice", "item": "https://supportnear.com/c/katowice-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Jadłodajnie — Katowice", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Znicze do ponownego wykorzystania", "geo": {"@type": "GeoCoordinates", "latitude": 50.27651, "longitude": 19.0142}, "url": "https://supportnear.com/#p=node/10750670546@50.27651,19.01420"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Lodówka Społeczna (Jadłodzielnia)", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 50.31088, "longitude": 19.00371}, "url": "https://supportnear.com/#p=node/9554846562@50.31088,19.00371"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Jadłodzielnia", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 50.28006, "longitude": 19.13233}, "url": "https://supportnear.com/#p=node/13411064786@50.28006,19.13233"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="katowice">Katowice — cała darmowa pomoc</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="katowice">Katowice — cała darmowa pomoc</a></header><main>
 <h1>Jadłodajnie — Katowice</h1>
 <p class="lede">3 miejsc w promieniu 10 km od centrum (Katowice), gdzie to jest za darmo. Z otwartej mapy, aktualizowanej przez wolontariuszy. Otwórz mapę, żeby zobaczyć wszystkie i jak tam dojść.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Katowice&amp;cc=PL&amp;need=food">Otwórz mapę: Katowice</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Katowice&amp;cc=PL&amp;need=food">Otwórz mapę: Katowice</a>
 <a class="btn" href="katowice.cartel">Wydrukuj plakat dla tego miasta</a>
 <a class="btn" href="./">Wszystkie miasta</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

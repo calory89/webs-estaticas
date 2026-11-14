@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Ad Da'ein: 3 free showers and 2 clinics and hospitals", "description": "3 free showers, 2 clinics and hospitals and 11 drinking water points within 10 km of the centre of Ad Da'ein, Sudan. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/ad-da-ein.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ad Da'ein", "containedInPlace": {"@type": "Country", "name": "Sudan"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Ad Da'ein", "item": "https://supportnear.com/c/ad-da-ein"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "متجر الملابس", "geo": {"@type": "GeoCoordinates", "latitude": 11.46167, "longitude": 26.13159}, "url": "https://supportnear.com/#p=node/4945613221@11.46167,26.13159"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "المسيد للخدمات", "geo": {"@type": "GeoCoordinates", "latitude": 11.46064, "longitude": 26.13042}, "url": "https://supportnear.com/#p=node/7419260085@11.46064,26.13042"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مستشفى الضعين التعليمي", "geo": {"@type": "GeoCoordinates", "latitude": 11.4631, "longitude": 26.12547}, "url": "https://supportnear.com/#p=node/7431203085@11.46310,26.12547"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "الدونكي الجنوبي", "geo": {"@type": "GeoCoordinates", "latitude": 11.45229, "longitude": 26.13445}, "url": "https://supportnear.com/#p=node/4946589421@11.45229,26.13445"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "بقالة", "geo": {"@type": "GeoCoordinates", "latitude": 11.44887, "longitude": 26.13454}, "url": "https://supportnear.com/#p=node/7669463387@11.44887,26.13454"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "مركز التضامن الصحي", "geo": {"@type": "GeoCoordinates", "latitude": 11.45835, "longitude": 26.14807}, "url": "https://supportnear.com/#p=node/7706581286@11.45835,26.14807"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "دونكي الإنقاذ", "geo": {"@type": "GeoCoordinates", "latitude": 11.44286, "longitude": 26.14596}, "url": "https://supportnear.com/#p=node/4948718921@11.44286,26.14596"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "أم سكينة", "geo": {"@type": "GeoCoordinates", "latitude": 11.47261, "longitude": 26.10787}, "url": "https://supportnear.com/#p=node/7545143285@11.47261,26.10787"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ad%20Da%27ein&amp;cc=SD">Open the live map of Ad Da&#x27;ein</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ad%20Da%27ein&amp;cc=SD">Open the live map of Ad Da&#x27;ein</a></header><main>
 <h1>Free help in Ad Da&#x27;ein <small style="font-weight:400;color:var(--ink-3)">· الضعين</small></h1>
 <p class="lede">3 free showers, 2 clinics and hospitals and 11 drinking water points within 10 km of the centre of Ad Da&#x27;ein, Sudan, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ad%20Da%27ein&amp;cc=SD">Open the map of Ad Da&#x27;ein</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/ad-da-ein">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

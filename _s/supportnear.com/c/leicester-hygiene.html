@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free showers in Leicester", "description": "34 places in Leicester, United Kingdom, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/leicester-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Leicester", "containedInPlace": {"@type": "Country", "name": "United Kingdom"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Leicester", "item": "https://supportnear.com/c/leicester"}, {"@type": "ListItem", "position": 3, "name": "Free showers in Leicester", "item": "https://supportnear.com/c/leicester-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free showers in Leicester", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Leicester City Council", "geo": {"@type": "GeoCoordinates", "latitude": 52.63173, "longitude": -1.13488}, "url": "https://supportnear.com/#p=node/3995551759@52.63173,-1.13488"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Leicester City Council", "geo": {"@type": "GeoCoordinates", "latitude": 52.64564, "longitude": -1.13578}, "url": "https://supportnear.com/#p=node/4506055129@52.64564,-1.13578"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Leicester Tigers", "geo": {"@type": "GeoCoordinates", "latitude": 52.62353, "longitude": -1.13194}, "url": "https://supportnear.com/#p=way/543561749@52.62353,-1.13194"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Leicester City Council", "geo": {"@type": "GeoCoordinates", "latitude": 52.6344, "longitude": -1.10435}, "url": "https://supportnear.com/#p=way/463841105@52.63440,-1.10435"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Motorway Services", "geo": {"@type": "GeoCoordinates", "latitude": 52.61938, "longitude": -1.20508}, "url": "https://supportnear.com/#p=node/768670021@52.61938,-1.20508"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Motorway Services", "geo": {"@type": "GeoCoordinates", "latitude": 52.61894, "longitude": -1.20612}, "url": "https://supportnear.com/#p=node/768670019@52.61894,-1.20612"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leicester">All free help in Leicester</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leicester">All free help in Leicester</a></header><main>
 <h1>Free showers in Leicester</h1>
 <p class="lede">34 places within 10 km of the centre of Leicester where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Leicester&amp;cc=GB&amp;need=hygiene">Open the map of Leicester</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Leicester&amp;cc=GB&amp;need=hygiene">Open the map of Leicester</a>
 <a class="btn" href="leicester.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

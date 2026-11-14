@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Brussels", "description": "9 places in Brussels, Belgium, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/brussel-warm.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Brussels", "containedInPlace": {"@type": "Country", "name": "Belgium"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Brussels", "item": "https://supportnear.com/c/brussel"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Brussels", "item": "https://supportnear.com/c/brussel-warm.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Brussels", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Muntpunt", "telephone": "+32 2 278 11 11", "openingHours": "Mo-Sa 11:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 50.84931, "longitude": 4.35389}, "url": "https://supportnear.com/#p=way/1035966231@50.84931,4.35389"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Cedom - Madoc", "telephone": "+32 2 217 93 69", "geo": {"@type": "GeoCoordinates", "latitude": 50.85289, "longitude": 4.35192}, "url": "https://supportnear.com/#p=node/9331475309@50.85289,4.35192"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Bédéthèque du Centre Belge de la Bande Dessinée", "geo": {"@type": "GeoCoordinates", "latitude": 50.85128, "longitude": 4.3601}, "url": "https://supportnear.com/#p=node/12089256304@50.85128,4.36010"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centre Bruxellois de Documentation Pédagogique", "geo": {"@type": "GeoCoordinates", "latitude": 50.85112, "longitude": 4.36046}, "url": "https://supportnear.com/#p=node/12674171937@50.85112,4.36046"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bibliothèque Artistique", "openingHours": "Mo,Th 08:00-19:45; Tu,We 08:00-19:00; Fr 08:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 50.84373, "longitude": 4.34731}, "url": "https://supportnear.com/#p=node/10039707841@50.84373,4.34731"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "RoSa", "telephone": "+32 2 513 05 11", "geo": {"@type": "GeoCoordinates", "latitude": 50.84798, "longitude": 4.34076}, "url": "https://supportnear.com/#p=node/6490985103@50.84798,4.34076"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Bibliothèque royale de Belgique - Koninklijke Bibliotheek van België", "openingHours": "Mo-Fr 09:00-19:00; Sa 09:00-17:00,10:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 50.84328, "longitude": 4.35676}, "url": "https://supportnear.com/#p=node/2514192461@50.84328,4.35676"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Centre de Littérature de Jeunesse", "geo": {"@type": "GeoCoordinates", "latitude": 50.85814, "longitude": 4.35155}, "url": "https://supportnear.com/#p=node/12696021624@50.85814,4.35155"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="brussel.en">All free help in Brussels</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="brussel.en">All free help in Brussels</a></header><main>
 <h1>Warm places to sit in Brussels</h1>
 <p class="lede">9 places within 10 km of the centre of Brussels where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Brussel&amp;cc=BE&amp;need=warm">Open the map of Brussels</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Brussel&amp;cc=BE&amp;need=warm">Open the map of Brussels</a>
 <a class="btn" href="brussel.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

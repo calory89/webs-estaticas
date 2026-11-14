@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Arica", "description": "3 sitios en Arica, Chile, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/arica-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Arica", "containedInPlace": {"@type": "Country", "name": "Chile"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Arica", "item": "https://supportnear.com/c/arica"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Arica", "item": "https://supportnear.com/c/arica-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Arica", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hospedería Noche Digna", "geo": {"@type": "GeoCoordinates", "latitude": -18.47236, "longitude": -70.30121}, "url": "https://supportnear.com/#p=node/9810017060@-18.47236,-70.30121"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Establecimiento de Larga Estadía de Adultos Mayores (ELEAM) Arica", "address": "Volcán Cotacotani 131, Arica", "geo": {"@type": "GeoCoordinates", "latitude": -18.49824, "longitude": -70.30985}, "url": "https://supportnear.com/#p=way/780931754@-18.49824,-70.30985"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Escuela de educación especial Los Ibiscos", "geo": {"@type": "GeoCoordinates", "latitude": -18.47321, "longitude": -70.29744}, "url": "https://supportnear.com/#p=way/457921515@-18.47321,-70.29744"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arica">Toda la ayuda gratis en Arica</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arica">Toda la ayuda gratis en Arica</a></header><main>
 <h1>Servicios sociales en Arica</h1>
 <p class="lede">3 sitios a menos de 10 km del centro de Arica donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Arica&amp;cc=CL&amp;need=social">Abrir el mapa de Arica</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Arica&amp;cc=CL&amp;need=social">Abrir el mapa de Arica</a>
 <a class="btn" href="arica.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

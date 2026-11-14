@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sitios donde estar en León (Nicaragua)", "description": "10 sitios en León, Nicaragua, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/leon-nicaragua-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "León", "containedInPlace": {"@type": "Country", "name": "Nicaragua"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "León", "item": "https://supportnear.com/c/leon-nicaragua"}, {"@type": "ListItem", "position": 3, "name": "Sitios donde estar en León", "item": "https://supportnear.com/c/leon-nicaragua-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sitios donde estar en León", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Decoraciones y Fiestas Elisa's", "geo": {"@type": "GeoCoordinates", "latitude": 12.43492, "longitude": -86.87611}, "url": "https://supportnear.com/#p=way/417907698@12.43492,-86.87611"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Facultad Derecho UNAN León", "geo": {"@type": "GeoCoordinates", "latitude": 12.43902, "longitude": -86.88228}, "url": "https://supportnear.com/#p=node/4603791196@12.43902,-86.88228"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Mariano Fiallos", "geo": {"@type": "GeoCoordinates", "latitude": 12.4388, "longitude": -86.8827}, "url": "https://supportnear.com/#p=way/564161345@12.43880,-86.88270"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "León Plaza", "geo": {"@type": "GeoCoordinates", "latitude": 12.4464, "longitude": -86.87575}, "url": "https://supportnear.com/#p=way/416185629@12.44640,-86.87575"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "\"La casona\"", "geo": {"@type": "GeoCoordinates", "latitude": 12.42414, "longitude": -86.88787}, "url": "https://supportnear.com/#p=node/4444384590@12.42414,-86.88787"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centro Infantil Comunitario Villa Austria", "geo": {"@type": "GeoCoordinates", "latitude": 12.426, "longitude": -86.90898}, "url": "https://supportnear.com/#p=node/4710701392@12.42600,-86.90898"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Cementerio", "geo": {"@type": "GeoCoordinates", "latitude": 12.52162, "longitude": -86.86453}, "url": "https://supportnear.com/#p=node/4921508924@12.52162,-86.86453"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leon-nicaragua">Toda la ayuda gratis en León</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leon-nicaragua">Toda la ayuda gratis en León</a></header><main>
 <h1>Sitios donde estar en León</h1>
 <p class="lede">10 sitios a menos de 10 km del centro de León donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Le%C3%B3n&amp;cc=NI&amp;need=warm">Abrir el mapa de León</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Le%C3%B3n&amp;cc=NI&amp;need=warm">Abrir el mapa de León</a>
 <a class="btn" href="leon-nicaragua.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

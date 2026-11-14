@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Savannakhet", "description": "7 places in Savannakhet, Laos, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/savannakhet-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Savannakhet", "containedInPlace": {"@type": "Country", "name": "Laos"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Savannakhet", "item": "https://supportnear.com/c/savannakhet"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Savannakhet", "item": "https://supportnear.com/c/savannakhet-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Savannakhet", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Kaysone Phomvihane Community Hospital", "address": "13000, Savannakhet", "geo": {"@type": "GeoCoordinates", "latitude": 16.57123, "longitude": 104.76132}, "url": "https://supportnear.com/#p=way/409410637@16.57123,104.76132"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "ໂຮງໝໍແຂວງ ສະຫວັນນະເຂດ", "address": "Khantabouli Road, 13000, Savannakhet", "geo": {"@type": "GeoCoordinates", "latitude": 16.55073, "longitude": 104.7464}, "url": "https://supportnear.com/#p=way/238984212@16.55073,104.74640"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Savannakhet Beijing Hospital", "geo": {"@type": "GeoCoordinates", "latitude": 16.54343, "longitude": 104.76127}, "url": "https://supportnear.com/#p=way/1449864758@16.54343,104.76127"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Princ Mukdahan Hospital", "geo": {"@type": "GeoCoordinates", "latitude": 16.56463, "longitude": 104.72145}, "url": "https://supportnear.com/#p=way/1452323689@16.56463,104.72145"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "โรงพยาบาลมุกดาหาร", "address": "ถนนพิทักษ์พนมเขต 24, 49000", "geo": {"@type": "GeoCoordinates", "latitude": 16.54169, "longitude": 104.72698}, "url": "https://supportnear.com/#p=way/822493453@16.54169,104.72698"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "โรงพยาบาลมุกดาหาร อินเตอร์เนชั่นแนล", "geo": {"@type": "GeoCoordinates", "latitude": 16.53153, "longitude": 104.73289}, "url": "https://supportnear.com/#p=node/7683754708@16.53153,104.73289"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Mukdahan International Hospital", "geo": {"@type": "GeoCoordinates", "latitude": 16.53133, "longitude": 104.73268}, "url": "https://supportnear.com/#p=way/1453430895@16.53133,104.73268"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="savannakhet">All free help in Savannakhet</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="savannakhet">All free help in Savannakhet</a></header><main>
 <h1>Clinics and hospitals in Savannakhet</h1>
 <p class="lede">7 places within 10 km of the centre of Savannakhet where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Savannakhet&amp;cc=LA&amp;need=health">Open the map of Savannakhet</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Savannakhet&amp;cc=LA&amp;need=health">Open the map of Savannakhet</a>
 <a class="btn" href="savannakhet.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

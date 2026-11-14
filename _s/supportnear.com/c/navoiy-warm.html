@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Navoiy", "description": "8 places in Navoiy, Uzbekistan, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/navoiy-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Navoiy", "containedInPlace": {"@type": "Country", "name": "Uzbekistan"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Navoiy", "item": "https://supportnear.com/c/navoiy"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Navoiy", "item": "https://supportnear.com/c/navoiy-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Navoiy", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Детский центр <Barkamol avlod>", "geo": {"@type": "GeoCoordinates", "latitude": 40.1006, "longitude": 65.37333}, "url": "https://supportnear.com/#p=node/4688489790@40.10060,65.37333"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Центр <ДРУЖБЫ НАРОДОВ> Навоийской области", "geo": {"@type": "GeoCoordinates", "latitude": 40.0939, "longitude": 65.37068}, "url": "https://supportnear.com/#p=node/4676899192@40.09390,65.37068"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "NKMK Bolalar ijodiyot markazi", "geo": {"@type": "GeoCoordinates", "latitude": 40.09338, "longitude": 65.37445}, "url": "https://supportnear.com/#p=node/4676879799@40.09338,65.37445"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Farhod kutubxonasi", "address": "Xalqlar Do'stligi shox ko'chasi", "geo": {"@type": "GeoCoordinates", "latitude": 40.09408, "longitude": 65.38042}, "url": "https://supportnear.com/#p=node/4397072093@40.09408,65.38042"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Yoshlar Markazi", "address": "Navoiy", "geo": {"@type": "GeoCoordinates", "latitude": 40.11214, "longitude": 65.36336}, "url": "https://supportnear.com/#p=way/353034334@40.11214,65.36336"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "ДК \"Ширин\"", "address": "Me`morlar ko'chasi 4 А, Navoiy", "geo": {"@type": "GeoCoordinates", "latitude": 40.11279, "longitude": 65.36095}, "url": "https://supportnear.com/#p=relation/7335827@40.11279,65.36095"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Farhod kutubxonasi", "geo": {"@type": "GeoCoordinates", "latitude": 40.08361, "longitude": 65.37783}, "url": "https://supportnear.com/#p=node/12473253700@40.08361,65.37783"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="navoiy">All free help in Navoiy</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="navoiy">All free help in Navoiy</a></header><main>
 <h1>Warm places to sit in Navoiy</h1>
 <p class="lede">8 places within 10 km of the centre of Navoiy where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Navoiy&amp;cc=UZ&amp;need=warm">Open the map of Navoiy</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Navoiy&amp;cc=UZ&amp;need=warm">Open the map of Navoiy</a>
 <a class="btn" href="navoiy.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

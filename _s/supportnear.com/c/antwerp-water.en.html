@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Drinking water points in Antwerp", "description": "15 places in Antwerp, Belgium, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/antwerp-water.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Antwerp", "containedInPlace": {"@type": "Country", "name": "Belgium"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Antwerp", "item": "https://supportnear.com/c/antwerp"}, {"@type": "ListItem", "position": 3, "name": "Drinking water points in Antwerp", "item": "https://supportnear.com/c/antwerp-water.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Drinking water points in Antwerp", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.22102, "longitude": 4.39997}, "url": "https://supportnear.com/#p=node/4691143377@51.22102,4.39997"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Antwerp Cathedral", "geo": {"@type": "GeoCoordinates", "latitude": 51.22051, "longitude": 4.40228}, "url": "https://supportnear.com/#p=node/1504407611@51.22051,4.40228"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.22389, "longitude": 4.40732}, "url": "https://supportnear.com/#p=node/4691206256@51.22389,4.40732"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.2149, "longitude": 4.39671}, "url": "https://supportnear.com/#p=node/727523586@51.21490,4.39671"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.21264, "longitude": 4.40747}, "url": "https://supportnear.com/#p=node/4691196293@51.21264,4.40747"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Waterlink", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 51.22476, "longitude": 4.4175}, "url": "https://supportnear.com/#p=node/4948360963@51.22476,4.41750"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.22587, "longitude": 4.41733}, "url": "https://supportnear.com/#p=node/5164403717@51.22587,4.41733"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Waterlink", "geo": {"@type": "GeoCoordinates", "latitude": 51.21319, "longitude": 4.41457}, "url": "https://supportnear.com/#p=node/8540425495@51.21319,4.41457"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="antwerp.en">All free help in Antwerp</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="antwerp.en">All free help in Antwerp</a></header><main>
 <h1>Drinking water points in Antwerp</h1>
 <p class="lede">15 places within 10 km of the centre of Antwerp where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Antwerp&amp;cc=BE&amp;need=water">Open the map of Antwerp</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Antwerp&amp;cc=BE&amp;need=water">Open the map of Antwerp</a>
 <a class="btn" href="antwerp.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

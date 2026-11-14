@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "خدمات اجتماعی در مشهد", "description": "4 مکان در مشهد، ایران، با نشانی، ساعت کار و تلفن در صورت مشخص بودن. نقشهٔ رایگان، بدون حساب کاربری، بدون اینترنت هم کار می‌کند.", "inLanguage": "fa", "url": "https://supportnear.com/c/mashhad-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "مشهد", "containedInPlace": {"@type": "Country", "name": "ایران"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "مشهد", "item": "https://supportnear.com/c/mashhad"}, {"@type": "ListItem", "position": 3, "name": "خدمات اجتماعی در مشهد", "item": "https://supportnear.com/c/mashhad-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "خدمات اجتماعی در مشهد", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "سازمان بهزیستی استان خراسان رضوی", "geo": {"@type": "GeoCoordinates", "latitude": 36.29839, "longitude": 59.61509}, "url": "https://supportnear.com/#p=way/55905695@36.29839,59.61509"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "اداره بهزیستی شهرستان مشهد", "geo": {"@type": "GeoCoordinates", "latitude": 36.27489, "longitude": 59.59269}, "url": "https://supportnear.com/#p=node/3880667416@36.27489,59.59269"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "کانون فرهنگی تبلیغی راه نور", "address": "کوثر ۸/۱, مشهد", "telephone": "+98518388234", "geo": {"@type": "GeoCoordinates", "latitude": 36.31698, "longitude": 59.52139}, "url": "https://supportnear.com/#p=node/7904284027@36.31698,59.52139"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "ترک اعتیاد سفیر سلامت", "address": "بولوار توس بین توس 32 و 34 ۱, مشهد", "geo": {"@type": "GeoCoordinates", "latitude": 36.36248, "longitude": 59.55031}, "url": "https://supportnear.com/#p=node/14008498055@36.36248,59.55031"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="mashhad">همهٔ کمک‌های رایگان در مشهد</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="mashhad">همهٔ کمک‌های رایگان در مشهد</a></header><main>
 <h1>خدمات اجتماعی در مشهد</h1>
 <p class="lede">4 مکان در کمتر از ۱۰ کیلومتری مرکز مشهد که این‌جا رایگان است. از نقشهٔ باز که داوطلبان به‌روزش می‌کنند. نقشه را باز کن تا همه را ببینی و راه پیاده را بدانی.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Mashhad&amp;cc=IR&amp;need=social">نقشهٔ مشهد را باز کن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Mashhad&amp;cc=IR&amp;need=social">نقشهٔ مشهد را باز کن</a>
 <a class="btn" href="mashhad.cartel">چاپ پوستر برای این شهر</a>
 <a class="btn" href="./">همهٔ شهرها</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

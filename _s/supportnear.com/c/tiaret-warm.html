@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "أماكن دافئة للجلوس في تيارت", "description": "10 أماكن في تيارت، الجزائر، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/tiaret-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "تيارت", "containedInPlace": {"@type": "Country", "name": "الجزائر"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "تيارت", "item": "https://supportnear.com/c/tiaret"}, {"@type": "ListItem", "position": 3, "name": "أماكن دافئة للجلوس في تيارت", "item": "https://supportnear.com/c/tiaret-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "أماكن دافئة للجلوس في تيارت", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Librairie El Amel Benzerfa", "telephone": "0771620246", "geo": {"@type": "GeoCoordinates", "latitude": 35.37071, "longitude": 1.32077}, "url": "https://supportnear.com/#p=node/12405219678@35.37071,1.32077"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "قاعة المحاضرات مصطفى مكي", "address": "14000, Tiaret", "geo": {"@type": "GeoCoordinates", "latitude": 35.3718, "longitude": 1.31993}, "url": "https://supportnear.com/#p=node/3171510252@35.37180,1.31993"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "المركز الثقافي الاسلامي", "geo": {"@type": "GeoCoordinates", "latitude": 35.35964, "longitude": 1.33612}, "url": "https://supportnear.com/#p=way/338891324@35.35964,1.33612"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مكتبة البلدية", "geo": {"@type": "GeoCoordinates", "latitude": 35.37333, "longitude": 1.34319}, "url": "https://supportnear.com/#p=way/981875344@35.37333,1.34319"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مكتبة الحقوق والعلوم السياسية", "geo": {"@type": "GeoCoordinates", "latitude": 35.33734, "longitude": 1.30384}, "url": "https://supportnear.com/#p=way/376316215@35.33734,1.30384"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "مكتبة علوم اقتصادية وتجارية و علوم التسيير", "openingHours": "Su-Th 10:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 35.33692, "longitude": 1.30337}, "url": "https://supportnear.com/#p=way/376316205@35.33692,1.30337"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tiaret">كل المساعدة المجانية في تيارت</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tiaret">كل المساعدة المجانية في تيارت</a></header><main>
 <h1>أماكن دافئة للجلوس في تيارت</h1>
 <p class="lede">10 أماكن على بعد أقل من ١٠ كم من وسط تيارت حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Tiaret&amp;cc=DZ&amp;need=warm">افتح خريطة تيارت</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Tiaret&amp;cc=DZ&amp;need=warm">افتح خريطة تيارت</a>
 <a class="btn" href="tiaret.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Quetzaltenango", "description": "6 sitios en Quetzaltenango, Guatemala, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/quetzaltenango-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Quetzaltenango", "containedInPlace": {"@type": "Country", "name": "Guatemala"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Quetzaltenango", "item": "https://supportnear.com/c/quetzaltenango"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Quetzaltenango", "item": "https://supportnear.com/c/quetzaltenango-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Quetzaltenango", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Asociacion de Desarrollo Agricola y Microempresarial", "address": "19 Avenida Zona 3 19-08, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.85029, "longitude": -91.52262}, "url": "https://supportnear.com/#p=way/402986786@14.85029,-91.52262"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Usaid Nexos Locales", "address": "12 Avenida Zona 3 1-49, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.84147, "longitude": -91.51512}, "url": "https://supportnear.com/#p=way/404153379@14.84147,-91.51512"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centro Integral de Adicciones Renovacion", "geo": {"@type": "GeoCoordinates", "latitude": 14.85391, "longitude": -91.52657}, "url": "https://supportnear.com/#p=way/402969499@14.85391,-91.52657"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Red Cross", "address": "8a Avenida, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.83287, "longitude": -91.51677}, "url": "https://supportnear.com/#p=way/406507027@14.83287,-91.51677"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Grupo de A.A.", "address": "5a Avenida, Quetzaltenango", "geo": {"@type": "GeoCoordinates", "latitude": 14.84174, "longitude": -91.50205}, "url": "https://supportnear.com/#p=node/4072367446@14.84174,-91.50205"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Asociacion Guatemalteca para el sindrome de Down", "geo": {"@type": "GeoCoordinates", "latitude": 14.8408, "longitude": -91.53773}, "url": "https://supportnear.com/#p=way/1422551862@14.84080,-91.53773"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quetzaltenango">Toda la ayuda gratis en Quetzaltenango</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="quetzaltenango">Toda la ayuda gratis en Quetzaltenango</a></header><main>
 <h1>Servicios sociales en Quetzaltenango</h1>
 <p class="lede">6 sitios a menos de 10 km del centro de Quetzaltenango donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Quetzaltenango&amp;cc=GT&amp;need=social">Abrir el mapa de Quetzaltenango</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Quetzaltenango&amp;cc=GT&amp;need=social">Abrir el mapa de Quetzaltenango</a>
 <a class="btn" href="quetzaltenango.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

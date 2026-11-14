@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Shelters in Montréal", "description": "4 places in Montréal, Canada, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/montreal-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Montréal", "containedInPlace": {"@type": "Country", "name": "Canada"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Montréal", "item": "https://supportnear.com/c/montreal"}, {"@type": "ListItem", "position": 3, "name": "Shelters in Montréal", "item": "https://supportnear.com/c/montreal-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Shelters in Montréal", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Mission Bon Accueil", "geo": {"@type": "GeoCoordinates", "latitude": 45.49312, "longitude": -73.57084}, "url": "https://supportnear.com/#p=way/313630035@45.49312,-73.57084"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Resilience Montreal", "address": "Rue Sainte-Catherine Ouest 4000, H3Z 1P1, Westmount", "geo": {"@type": "GeoCoordinates", "latitude": 45.48894, "longitude": -73.58453}, "url": "https://supportnear.com/#p=way/340583697@45.48894,-73.58453"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Maison Marie-Gérin-Lajoie", "address": "Rue Laurendeau 5685, Montréal", "geo": {"@type": "GeoCoordinates", "latitude": 45.46138, "longitude": -73.58832}, "url": "https://supportnear.com/#p=way/1124282484@45.46138,-73.58832"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "NDG'S homeless shelter", "address": "Avenue Somerled 6505, H4V 1S7, Montreal", "telephone": "+1-514-483-4680", "openingHours": "Mo-Su 08:00-23:00", "geo": {"@type": "GeoCoordinates", "latitude": 45.46783, "longitude": -73.63853}, "url": "https://supportnear.com/#p=node/12012672511@45.46783,-73.63853"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="montreal">All free help in Montréal</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="montreal">All free help in Montréal</a></header><main>
 <h1>Shelters in Montréal</h1>
 <p class="lede">4 places within 10 km of the centre of Montréal where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Montr%C3%A9al&amp;cc=CA&amp;need=shelter">Open the map of Montréal</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Montr%C3%A9al&amp;cc=CA&amp;need=shelter">Open the map of Montréal</a>
 <a class="btn" href="montreal.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

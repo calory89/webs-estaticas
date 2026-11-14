@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Delhi", "description": "6 places in Delhi, India, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/delhi-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Delhi", "containedInPlace": {"@type": "Country", "name": "India"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Delhi", "item": "https://supportnear.com/c/delhi"}, {"@type": "ListItem", "position": 3, "name": "Social services in Delhi", "item": "https://supportnear.com/c/delhi-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Delhi", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Community Centre Laxi Bai Nagar", "geo": {"@type": "GeoCoordinates", "latitude": 28.58018, "longitude": 77.2034}, "url": "https://supportnear.com/#p=node/14046155170@28.58018,77.20340"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Compassionate Missionaries", "geo": {"@type": "GeoCoordinates", "latitude": 28.6672, "longitude": 77.22975}, "url": "https://supportnear.com/#p=way/351583992@28.66720,77.22975"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "International Committee of the Red Cross", "address": "Vasant Marg 49, 110057, New Delhi", "geo": {"@type": "GeoCoordinates", "latitude": 28.56303, "longitude": 77.16205}, "url": "https://supportnear.com/#p=node/12375808283@28.56303,77.16205"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "LifeHover", "geo": {"@type": "GeoCoordinates", "latitude": 28.54821, "longitude": 77.21603}, "url": "https://supportnear.com/#p=node/4553821189@28.54821,77.21603"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "yoga & health center", "geo": {"@type": "GeoCoordinates", "latitude": 28.53441, "longitude": 77.22209}, "url": "https://supportnear.com/#p=node/5960910787@28.53441,77.22209"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Rising Stars", "geo": {"@type": "GeoCoordinates", "latitude": 28.59036, "longitude": 77.11838}, "url": "https://supportnear.com/#p=node/11954029504@28.59036,77.11838"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="delhi">All free help in Delhi</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="delhi">All free help in Delhi</a></header><main>
 <h1>Social services in Delhi</h1>
 <p class="lede">6 places within 10 km of the centre of Delhi where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Delhi&amp;cc=IN&amp;need=social">Open the map of Delhi</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Delhi&amp;cc=IN&amp;need=social">Open the map of Delhi</a>
 <a class="btn" href="delhi.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

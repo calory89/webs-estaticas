@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Regina", "description": "6 places in Regina, Canada, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/regina-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Regina", "containedInPlace": {"@type": "Country", "name": "Canada"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Regina", "item": "https://supportnear.com/c/regina"}, {"@type": "ListItem", "position": 3, "name": "Social services in Regina", "item": "https://supportnear.com/c/regina-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Regina", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Regina Open Door Society Inc.", "geo": {"@type": "GeoCoordinates", "latitude": 50.4505, "longitude": -104.6143}, "url": "https://supportnear.com/#p=node/12180797783@50.45050,-104.61430"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Canadian Red Cross", "address": "Cornwall Street 2050, S4P 2K5, Regina", "telephone": "+1-306-721-1600", "geo": {"@type": "GeoCoordinates", "latitude": 50.44606, "longitude": -104.61265}, "url": "https://supportnear.com/#p=way/427863057@50.44606,-104.61265"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "AIDS Program South Saskatchewan", "address": "Albert Street 1325", "geo": {"@type": "GeoCoordinates", "latitude": 50.45775, "longitude": -104.61773}, "url": "https://supportnear.com/#p=way/288668582@50.45775,-104.61773"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "AIDS Programs South Saskatchewan", "geo": {"@type": "GeoCoordinates", "latitude": 50.45775, "longitude": -104.61784}, "url": "https://supportnear.com/#p=node/12324518828@50.45775,-104.61784"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="regina">All free help in Regina</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="regina">All free help in Regina</a></header><main>
 <h1>Social services in Regina</h1>
 <p class="lede">6 places within 10 km of the centre of Regina where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Regina&amp;cc=CA&amp;need=social">Open the map of Regina</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Regina&amp;cc=CA&amp;need=social">Open the map of Regina</a>
 <a class="btn" href="regina.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

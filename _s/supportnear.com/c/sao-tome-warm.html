@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sítios onde estar em São Tomé", "description": "5 sítios em São Tomé, São Tomé e Príncipe, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/sao-tome-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "São Tomé", "containedInPlace": {"@type": "Country", "name": "São Tomé e Príncipe"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "São Tomé", "item": "https://supportnear.com/c/sao-tome"}, {"@type": "ListItem", "position": 3, "name": "Sítios onde estar em São Tomé", "item": "https://supportnear.com/c/sao-tome-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sítios onde estar em São Tomé", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Biblioteca Nacional", "geo": {"@type": "GeoCoordinates", "latitude": 0.34004, "longitude": 6.73703}, "url": "https://supportnear.com/#p=way/314939486@0.34004,6.73703"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Alliance Française", "geo": {"@type": "GeoCoordinates", "latitude": 0.34253, "longitude": 6.73626}, "url": "https://supportnear.com/#p=node/7950401785@0.34253,6.73626"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Biblioteca da Trindade", "geo": {"@type": "GeoCoordinates", "latitude": 0.29733, "longitude": 6.68311}, "url": "https://supportnear.com/#p=way/561569506@0.29733,6.68311"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca Paroquial de Santana", "geo": {"@type": "GeoCoordinates", "latitude": 0.25765, "longitude": 6.74256}, "url": "https://supportnear.com/#p=node/5414644196@0.25765,6.74256"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca Municipal de Cantagalo", "geo": {"@type": "GeoCoordinates", "latitude": 0.25673, "longitude": 6.74271}, "url": "https://supportnear.com/#p=way/561537788@0.25673,6.74271"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sao-tome">Toda a ajuda gratuita em São Tomé</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sao-tome">Toda a ajuda gratuita em São Tomé</a></header><main>
 <h1>Sítios onde estar em São Tomé</h1>
 <p class="lede">5 sítios a menos de 10 km do centro de São Tomé onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=S%C3%A3o%20Tom%C3%A9&amp;cc=ST&amp;need=warm">Abrir o mapa de São Tomé</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=S%C3%A3o%20Tom%C3%A9&amp;cc=ST&amp;need=warm">Abrir o mapa de São Tomé</a>
 <a class="btn" href="sao-tome.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Centros de saúde e hospitais em Caluquembe", "description": "8 sítios em Caluquembe, Angola, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/caluquembe-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Caluquembe", "containedInPlace": {"@type": "Country", "name": "Angola"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Caluquembe", "item": "https://supportnear.com/c/caluquembe"}, {"@type": "ListItem", "position": 3, "name": "Centros de saúde e hospitais em Caluquembe", "item": "https://supportnear.com/c/caluquembe-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Centros de saúde e hospitais em Caluquembe", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Centro Medico DE Caluquembe Sede", "geo": {"@type": "GeoCoordinates", "latitude": -13.78879, "longitude": 14.68682}, "url": "https://supportnear.com/#p=node/13273509548@-13.78879,14.68682"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Hospital Municipal DE Caluquembe", "geo": {"@type": "GeoCoordinates", "latitude": -13.77417, "longitude": 14.68387}, "url": "https://supportnear.com/#p=node/13273508454@-13.77417,14.68387"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Hospital Evangélico de Caluquembe", "geo": {"@type": "GeoCoordinates", "latitude": -13.81351, "longitude": 14.6789}, "url": "https://supportnear.com/#p=way/1167110233@-13.81351,14.67890"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hospital DA Iesa", "geo": {"@type": "GeoCoordinates", "latitude": -13.81375, "longitude": 14.67843}, "url": "https://supportnear.com/#p=node/13273475751@-13.81375,14.67843"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Hospital Sanatório Evangélico de Caluquembe", "geo": {"@type": "GeoCoordinates", "latitude": -13.816, "longitude": 14.67585}, "url": "https://supportnear.com/#p=way/1168926178@-13.81600,14.67585"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Hospital Materno Infantil DE Caluquembe", "geo": {"@type": "GeoCoordinates", "latitude": -13.76626, "longitude": 14.71788}, "url": "https://supportnear.com/#p=node/13273415398@-13.76626,14.71788"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="caluquembe">Toda a ajuda gratuita em Caluquembe</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="caluquembe">Toda a ajuda gratuita em Caluquembe</a></header><main>
 <h1>Centros de saúde e hospitais em Caluquembe</h1>
 <p class="lede">8 sítios a menos de 10 km do centro de Caluquembe onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Caluquembe&amp;cc=AO&amp;need=health">Abrir o mapa de Caluquembe</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Caluquembe&amp;cc=AO&amp;need=health">Abrir o mapa de Caluquembe</a>
 <a class="btn" href="caluquembe.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

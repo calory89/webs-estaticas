@@ -58,6 +58,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -75,7 +78,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
 
 section+section{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)} h2{font-size:17px;margin:20px 0 6px} p{line-height:1.7}
 h2.h1{font-size:28px;margin:0 0 10px;border:0;padding:0}</style></head>
-<body><div class="wrap" role="main"><a class="backlink" href="./">&larr; Open the map · Abrir el mapa</a>
+<body><div class="wrap"><main><a class="backlink" href="./">&larr; Open the map · Abrir el mapa</a>
 <section lang="en">
 <h1>Who is behind SupportNear</h1>
 <p class="lede">SupportNear is a non-profit project: a map of free help (food, a bed, a shower, clothes, a doctor, paperwork) for whoever needs it today. No account, no cost, no ads.</p>
@@ -108,5 +111,5 @@ h2.h1{font-size:28px;margin:0 0 10px;border:0;padding:0}</style></head>
 <h2>Cómo ayudar</h2>
 <p>Comprueba un sitio que conozcas y corrige el horario o el teléfono en OpenStreetMap; imprime el cartel de tu ciudad y pégalo donde haga falta; enséñale la web a alguien que la necesite. Si eres una entidad, puedes <a href="incrustar">incrustar el mapa</a> en tu web gratis.</p>
 </section>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div></body></html>

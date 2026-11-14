@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Iloilo City", "description": "7 places in Iloilo City, Philippines, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/iloilo-city-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Iloilo City", "containedInPlace": {"@type": "Country", "name": "Philippines"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Iloilo City", "item": "https://supportnear.com/c/iloilo-city"}, {"@type": "ListItem", "position": 3, "name": "Social services in Iloilo City", "item": "https://supportnear.com/c/iloilo-city-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Iloilo City", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Tiu-Gan Association", "address": "Arroyo Street", "geo": {"@type": "GeoCoordinates", "latitude": 10.69687, "longitude": 122.5706}, "url": "https://supportnear.com/#p=node/942493180@10.69687,122.57060"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Iloilo Harbor Pilots Association", "address": "New Iloilo Ferry Terminal Access Road, 5000", "geo": {"@type": "GeoCoordinates", "latitude": 10.70013, "longitude": 122.57493}, "url": "https://supportnear.com/#p=node/2117351482@10.70013,122.57493"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Iloilo Province Pantawid Operations Office", "address": "Huervana Street, 5000, Iloilo", "geo": {"@type": "GeoCoordinates", "latitude": 10.7102, "longitude": 122.57023}, "url": "https://supportnear.com/#p=node/5769552030@10.71020,122.57023"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Iloilo-Korean United Community Association", "geo": {"@type": "GeoCoordinates", "latitude": 10.71783, "longitude": 122.54814}, "url": "https://supportnear.com/#p=node/12591784127@10.71783,122.54814"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Guimaras Provincial Crisis Center for Children and Women", "address": "Jordan – Rizal Wharf Road", "telephone": "+6333 5812172", "geo": {"@type": "GeoCoordinates", "latitude": 10.66142, "longitude": 122.5913}, "url": "https://supportnear.com/#p=node/6016951587@10.66142,122.59130"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CPU Parent-Teacher Association", "address": "Acacia Road", "geo": {"@type": "GeoCoordinates", "latitude": 10.73086, "longitude": 122.55125}, "url": "https://supportnear.com/#p=node/10826471172@10.73086,122.55125"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Senior Citizen and PWD office", "address": "Lopez Jaena Street", "geo": {"@type": "GeoCoordinates", "latitude": 10.73596, "longitude": 122.54648}, "url": "https://supportnear.com/#p=node/5938108521@10.73596,122.54648"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="iloilo-city">All free help in Iloilo City</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="iloilo-city">All free help in Iloilo City</a></header><main>
 <h1>Social services in Iloilo City</h1>
 <p class="lede">7 places within 10 km of the centre of Iloilo City where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Iloilo%20City&amp;cc=PH&amp;need=social">Open the map of Iloilo City</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Iloilo%20City&amp;cc=PH&amp;need=social">Open the map of Iloilo City</a>
 <a class="btn" href="iloilo-city.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

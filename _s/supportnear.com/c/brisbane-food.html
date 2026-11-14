@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in Brisbane", "description": "6 places in Brisbane, Australia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/brisbane-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Brisbane", "containedInPlace": {"@type": "Country", "name": "Australia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Brisbane", "item": "https://supportnear.com/c/brisbane"}, {"@type": "ListItem", "position": 3, "name": "Free food places in Brisbane", "item": "https://supportnear.com/c/brisbane-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in Brisbane", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Brisbane Food Not Bombs", "address": "Vulture Street 68, 4101, West End", "openingHours": "Fr 18:30-20:00", "geo": {"@type": "GeoCoordinates", "latitude": -27.48074, "longitude": 153.0112}, "url": "https://supportnear.com/#p=node/12041540098@-27.48074,153.01120"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Caring Cuisine", "address": "Guilfoyle Street 23, 4067, Brisbane", "geo": {"@type": "GeoCoordinates", "latitude": -27.49772, "longitude": 152.99632}, "url": "https://supportnear.com/#p=way/523195956@-27.49772,152.99632"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Crosby Park Meals on Wheels", "address": "Crosby Road 69, 4010, Albion", "telephone": "+61 7 3256 0788", "geo": {"@type": "GeoCoordinates", "latitude": -27.43423, "longitude": 153.04656}, "url": "https://supportnear.com/#p=way/1343592836@-27.43423,153.04656"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Meals on Wheels", "geo": {"@type": "GeoCoordinates", "latitude": -27.51447, "longitude": 153.06022}, "url": "https://supportnear.com/#p=way/37552710@-27.51447,153.06022"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Stafford Meals On Wheels", "geo": {"@type": "GeoCoordinates", "latitude": -27.4081, "longitude": 153.00781}, "url": "https://supportnear.com/#p=way/46227214@-27.40810,153.00781"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Meals on Wheels Kedron", "address": "Mawson Street 39, 4031, Brisbane", "geo": {"@type": "GeoCoordinates", "latitude": -27.401, "longitude": 153.02392}, "url": "https://supportnear.com/#p=way/1223715128@-27.40100,153.02392"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="brisbane">All free help in Brisbane</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="brisbane">All free help in Brisbane</a></header><main>
 <h1>Free food places in Brisbane</h1>
 <p class="lede">6 places within 10 km of the centre of Brisbane where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Brisbane&amp;cc=AU&amp;need=food">Open the map of Brisbane</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Brisbane&amp;cc=AU&amp;need=food">Open the map of Brisbane</a>
 <a class="btn" href="brisbane.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

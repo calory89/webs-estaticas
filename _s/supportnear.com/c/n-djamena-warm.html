@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Lieux où se poser au chaud à N'Djamena", "description": "6 lieux à N'Djamena, Tchad, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/n-djamena-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "N'Djamena", "containedInPlace": {"@type": "Country", "name": "Tchad"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "N'Djamena", "item": "https://supportnear.com/c/n-djamena"}, {"@type": "ListItem", "position": 3, "name": "Lieux où se poser au chaud à N'Djamena", "item": "https://supportnear.com/c/n-djamena-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Lieux où se poser au chaud à N'Djamena", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Institut Français du Tchad المعهد الفرنسي تشاد", "address": "انجمينا", "geo": {"@type": "GeoCoordinates", "latitude": 12.09917, "longitude": 15.05565}, "url": "https://supportnear.com/#p=node/4148891490@12.09917,15.05565"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Bibliothèque المكتبة", "geo": {"@type": "GeoCoordinates", "latitude": 12.09933, "longitude": 15.05624}, "url": "https://supportnear.com/#p=way/279721365@12.09933,15.05624"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Bibliothèque Nationale مكتبة الوطنية", "address": "انجمينا", "openingHours": "Mo-Fr 08:30-20:00", "geo": {"@type": "GeoCoordinates", "latitude": 12.12597, "longitude": 15.07688}, "url": "https://supportnear.com/#p=way/199599927@12.12597,15.07688"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "bibliotheque", "geo": {"@type": "GeoCoordinates", "latitude": 12.09176, "longitude": 15.06086}, "url": "https://supportnear.com/#p=node/2139000058@12.09176,15.06086"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Alliance biblique du Tchad", "geo": {"@type": "GeoCoordinates", "latitude": 12.08907, "longitude": 15.09759}, "url": "https://supportnear.com/#p=node/4543040898@12.08907,15.09759"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centre Catholique Universitaire", "geo": {"@type": "GeoCoordinates", "latitude": 12.12281, "longitude": 14.99034}, "url": "https://supportnear.com/#p=way/286028137@12.12281,14.99034"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="n-djamena">Toute l’aide gratuite à N&#x27;Djamena</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="n-djamena">Toute l’aide gratuite à N&#x27;Djamena</a></header><main>
 <h1>Lieux où se poser au chaud à N&#x27;Djamena</h1>
 <p class="lede">6 lieux à moins de 10 km du centre de N&#x27;Djamena où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=N%27Djamena&amp;cc=TD&amp;need=warm">Ouvrir la carte de N&#x27;Djamena</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=N%27Djamena&amp;cc=TD&amp;need=warm">Ouvrir la carte de N&#x27;Djamena</a>
 <a class="btn" href="n-djamena.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

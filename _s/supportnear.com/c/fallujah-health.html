@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "رعاية صحية في الفلوجة", "description": "10 أماكن في الفلوجة، العراق، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/fallujah-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "الفلوجة", "containedInPlace": {"@type": "Country", "name": "العراق"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "الفلوجة", "item": "https://supportnear.com/c/fallujah"}, {"@type": "ListItem", "position": 3, "name": "رعاية صحية في الفلوجة", "item": "https://supportnear.com/c/fallujah-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "رعاية صحية في الفلوجة", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مستشفى الفلوجة التعليمي", "geo": {"@type": "GeoCoordinates", "latitude": 33.35528, "longitude": 43.79241}, "url": "https://supportnear.com/#p=node/4499121889@33.35528,43.79241"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مستشفى الدكتور طالب الجنابي", "geo": {"@type": "GeoCoordinates", "latitude": 33.35556, "longitude": 43.8048}, "url": "https://supportnear.com/#p=node/5969053585@33.35556,43.80480"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مركز صحي الجمهورية", "geo": {"@type": "GeoCoordinates", "latitude": 33.35715, "longitude": 43.76993}, "url": "https://supportnear.com/#p=node/4547006390@33.35715,43.76993"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مركز صحي الجولان", "geo": {"@type": "GeoCoordinates", "latitude": 33.36387, "longitude": 43.77231}, "url": "https://supportnear.com/#p=node/4592674091@33.36387,43.77231"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مركز صحي السمنت", "geo": {"@type": "GeoCoordinates", "latitude": 33.36304, "longitude": 43.80471}, "url": "https://supportnear.com/#p=node/4595780289@33.36304,43.80471"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Fallujah General Hospital", "geo": {"@type": "GeoCoordinates", "latitude": 33.35057, "longitude": 43.75571}, "url": "https://supportnear.com/#p=way/255879413@33.35057,43.75571"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "مستشفى الفلوجة", "geo": {"@type": "GeoCoordinates", "latitude": 33.35423, "longitude": 43.72403}, "url": "https://supportnear.com/#p=node/2486321852@33.35423,43.72403"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="fallujah">كل المساعدة المجانية في الفلوجة</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="fallujah">كل المساعدة المجانية في الفلوجة</a></header><main>
 <h1>رعاية صحية في الفلوجة</h1>
 <p class="lede">10 أماكن على بعد أقل من ١٠ كم من وسط الفلوجة حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Fallujah&amp;cc=IQ&amp;need=health">افتح خريطة الفلوجة</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Fallujah&amp;cc=IQ&amp;need=health">افتح خريطة الفلوجة</a>
 <a class="btn" href="fallujah.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

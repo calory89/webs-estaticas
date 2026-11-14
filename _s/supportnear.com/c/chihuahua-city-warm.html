@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sitios donde estar en Chihuahua City", "description": "7 sitios en Chihuahua City, México, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/chihuahua-city-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Chihuahua City", "containedInPlace": {"@type": "Country", "name": "México"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Chihuahua City", "item": "https://supportnear.com/c/chihuahua-city"}, {"@type": "ListItem", "position": 3, "name": "Sitios donde estar en Chihuahua City", "item": "https://supportnear.com/c/chihuahua-city-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sitios donde estar en Chihuahua City", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Mediateca Municipal", "address": "Avenida Teófilo Borunda 1617, 31205", "telephone": "+52 614 415 5257", "geo": {"@type": "GeoCoordinates", "latitude": 28.64065, "longitude": -106.08218}, "url": "https://supportnear.com/#p=way/164975826@28.64065,-106.08218"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Biblioteca Municipal Miguel de Cervantes", "address": "Avenida Melchor Ocampo 80, 31000, Chihuahua, Chihuahua", "telephone": "+52 614 415 0037", "geo": {"@type": "GeoCoordinates", "latitude": 28.6308, "longitude": -106.07472}, "url": "https://supportnear.com/#p=way/469339090@28.63080,-106.07472"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Biblioteca Central Universitaria Carlos Montemayor", "telephone": "+52 614 214 4800", "geo": {"@type": "GeoCoordinates", "latitude": 28.65254, "longitude": -106.08658}, "url": "https://supportnear.com/#p=way/306097588@28.65254,-106.08658"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca Los Pinos", "address": "Avenida De Los Pinos S/N, 31416", "telephone": "+52 614 452 1276", "geo": {"@type": "GeoCoordinates", "latitude": 28.59665, "longitude": -106.09947}, "url": "https://supportnear.com/#p=way/1491896159@28.59665,-106.09947"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centro de Información", "geo": {"@type": "GeoCoordinates", "latitude": 28.70798, "longitude": -106.10619}, "url": "https://supportnear.com/#p=way/466959232@28.70798,-106.10619"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centro Comunitario Valle Dorado", "geo": {"@type": "GeoCoordinates", "latitude": 28.59022, "longitude": -106.00684}, "url": "https://supportnear.com/#p=way/617207044@28.59022,-106.00684"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="chihuahua-city">Toda la ayuda gratis en Chihuahua City</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="chihuahua-city">Toda la ayuda gratis en Chihuahua City</a></header><main>
 <h1>Sitios donde estar en Chihuahua City</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de Chihuahua City donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Chihuahua%20City&amp;cc=MX&amp;need=warm">Abrir el mapa de Chihuahua City</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Chihuahua%20City&amp;cc=MX&amp;need=warm">Abrir el mapa de Chihuahua City</a>
 <a class="btn" href="chihuahua-city.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

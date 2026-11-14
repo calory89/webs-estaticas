@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Adana", "description": "7 places in Adana, Turkey, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/adana-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Adana", "containedInPlace": {"@type": "Country", "name": "Turkey"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Adana", "item": "https://supportnear.com/c/adana"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Adana", "item": "https://supportnear.com/c/adana-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Adana", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Mustafa Rıfat Gülek Kütüphanesi", "geo": {"@type": "GeoCoordinates", "latitude": 36.98628, "longitude": 35.33153}, "url": "https://supportnear.com/#p=node/10694591471@36.98628,35.33153"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Karacaoğlan Edebiyat Müze Kütüphanesi", "telephone": "+90 322 352 29 44", "geo": {"@type": "GeoCoordinates", "latitude": 36.97976, "longitude": 35.32956}, "url": "https://supportnear.com/#p=way/1303370518@36.97976,35.32956"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Adana İl Müftülüğü Kütüphanesi", "geo": {"@type": "GeoCoordinates", "latitude": 36.99163, "longitude": 35.33333}, "url": "https://supportnear.com/#p=way/120586688@36.99163,35.33333"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "İnce Memed Halk Kütüphanesi̇", "openingHours": "Mo-Sa 08:30-22:00", "geo": {"@type": "GeoCoordinates", "latitude": 37.03581, "longitude": 35.31228}, "url": "https://supportnear.com/#p=node/14245540101@37.03581,35.31228"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Nöbetçi Kütüphane", "geo": {"@type": "GeoCoordinates", "latitude": 37.03839, "longitude": 35.31381}, "url": "https://supportnear.com/#p=node/14181018496@37.03839,35.31381"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "ATÜ Kütüphane", "geo": {"@type": "GeoCoordinates", "latitude": 37.03964, "longitude": 35.38731}, "url": "https://supportnear.com/#p=way/1482592598@37.03964,35.38731"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Nobel Kitabevi", "geo": {"@type": "GeoCoordinates", "latitude": 37.05561, "longitude": 35.35934}, "url": "https://supportnear.com/#p=node/628953361@37.05561,35.35934"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="adana">All free help in Adana</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="adana">All free help in Adana</a></header><main>
 <h1>Warm places to sit in Adana</h1>
 <p class="lede">7 places within 10 km of the centre of Adana where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Adana&amp;cc=TR&amp;need=warm">Open the map of Adana</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Adana&amp;cc=TR&amp;need=warm">Open the map of Adana</a>
 <a class="btn" href="adana.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

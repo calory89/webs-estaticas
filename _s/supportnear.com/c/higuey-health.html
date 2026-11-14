@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Centros de salud y hospitales en Higüey", "description": "3 sitios en Higüey, República Dominicana, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/higuey-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Higüey", "containedInPlace": {"@type": "Country", "name": "República Dominicana"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Higüey", "item": "https://supportnear.com/c/higuey"}, {"@type": "ListItem", "position": 3, "name": "Centros de salud y hospitales en Higüey", "item": "https://supportnear.com/c/higuey-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Centros de salud y hospitales en Higüey", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hospital General Y De Especialidades Nuestra Señora De La Altagracia (HGENSA)", "geo": {"@type": "GeoCoordinates", "latitude": 18.62017, "longitude": -68.71698}, "url": "https://supportnear.com/#p=way/866493920@18.62017,-68.71698"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Clinica Dr. Reyes", "geo": {"@type": "GeoCoordinates", "latitude": 18.6042, "longitude": -68.71511}, "url": "https://supportnear.com/#p=node/8065939096@18.60420,-68.71511"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Policlínica de los Rosales", "geo": {"@type": "GeoCoordinates", "latitude": 18.61137, "longitude": -68.72342}, "url": "https://supportnear.com/#p=node/4190034518@18.61137,-68.72342"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="higuey">Toda la ayuda gratis en Higüey</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="higuey">Toda la ayuda gratis en Higüey</a></header><main>
 <h1>Centros de salud y hospitales en Higüey</h1>
 <p class="lede">3 sitios a menos de 10 km del centro de Higüey donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Hig%C3%BCey&amp;cc=DO&amp;need=health">Abrir el mapa de Higüey</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Hig%C3%BCey&amp;cc=DO&amp;need=health">Abrir el mapa de Higüey</a>
 <a class="btn" href="higuey.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

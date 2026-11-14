@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "درمان در اراک", "description": "11 مکان در اراک، ایران، با نشانی، ساعت کار و تلفن در صورت مشخص بودن. نقشهٔ رایگان، بدون حساب کاربری، بدون اینترنت هم کار می‌کند.", "inLanguage": "fa", "url": "https://supportnear.com/c/arak-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "اراک", "containedInPlace": {"@type": "Country", "name": "ایران"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "اراک", "item": "https://supportnear.com/c/arak"}, {"@type": "ListItem", "position": 3, "name": "درمان در اراک", "item": "https://supportnear.com/c/arak-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "درمان در اراک", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "بیمارستان ولیعصر", "geo": {"@type": "GeoCoordinates", "latitude": 34.08514, "longitude": 49.70012}, "url": "https://supportnear.com/#p=way/525871845@34.08514,49.70012"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "بیمارستان خصوصی قدس", "geo": {"@type": "GeoCoordinates", "latitude": 34.0956, "longitude": 49.6861}, "url": "https://supportnear.com/#p=way/332625759@34.09560,49.68610"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "بیمارستان طالقانی", "geo": {"@type": "GeoCoordinates", "latitude": 34.09187, "longitude": 49.67978}, "url": "https://supportnear.com/#p=way/342059216@34.09187,49.67978"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "بیمارستان امیرکبیر", "geo": {"@type": "GeoCoordinates", "latitude": 34.07436, "longitude": 49.7066}, "url": "https://supportnear.com/#p=relation/10279997@34.07436,49.70660"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مرکز دیالیز حامی و مجتمع بیماران ام اس", "telephone": "+98 86 3477 9080", "geo": {"@type": "GeoCoordinates", "latitude": 34.06708, "longitude": 49.68031}, "url": "https://supportnear.com/#p=way/515894982@34.06708,49.68031"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "بیمارستان امام خمینی", "address": "کمربندی جنوبی, اراک", "geo": {"@type": "GeoCoordinates", "latitude": 34.06225, "longitude": 49.68351}, "url": "https://supportnear.com/#p=relation/9894082@34.06225,49.68351"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "بیمارستان آیت الله خوانساری", "geo": {"@type": "GeoCoordinates", "latitude": 34.10632, "longitude": 49.71428}, "url": "https://supportnear.com/#p=way/349790018@34.10632,49.71428"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "بیمارستان تخصصی و فوق تخصصی پرتوی و سوانح سوختگی", "geo": {"@type": "GeoCoordinates", "latitude": 34.08486, "longitude": 49.64432}, "url": "https://supportnear.com/#p=way/1303865494@34.08486,49.64432"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "بیمارستان فوق تخصصی زنان و زایمان سینا رضایی آشتیانی", "geo": {"@type": "GeoCoordinates", "latitude": 34.08482, "longitude": 49.6435}, "url": "https://supportnear.com/#p=way/1303865495@34.08482,49.64350"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "بیمارستان امیرالمومنین ع", "geo": {"@type": "GeoCoordinates", "latitude": 34.0835, "longitude": 49.64297}, "url": "https://supportnear.com/#p=way/326965940@34.08350,49.64297"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arak">همهٔ کمک‌های رایگان در اراک</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="arak">همهٔ کمک‌های رایگان در اراک</a></header><main>
 <h1>درمان در اراک</h1>
 <p class="lede">11 مکان در کمتر از ۱۰ کیلومتری مرکز اراک که این‌جا رایگان است. از نقشهٔ باز که داوطلبان به‌روزش می‌کنند. نقشه را باز کن تا همه را ببینی و راه پیاده را بدانی.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Arak&amp;cc=IR&amp;need=health">نقشهٔ اراک را باز کن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Arak&amp;cc=IR&amp;need=health">نقشهٔ اراک را باز کن</a>
 <a class="btn" href="arak.cartel">چاپ پوستر برای این شهر</a>
 <a class="btn" href="./">همهٔ شهرها</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Gbarnga", "description": "4 places in Gbarnga, Liberia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/gbarnga-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Gbarnga", "containedInPlace": {"@type": "Country", "name": "Liberia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Gbarnga", "item": "https://supportnear.com/c/gbarnga"}, {"@type": "ListItem", "position": 3, "name": "Social services in Gbarnga", "item": "https://supportnear.com/c/gbarnga-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Gbarnga", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Caritas Gbarnga", "address": "Gbarnga", "openingHours": "Mo-Sa 09:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 6.99289, "longitude": -9.46833}, "url": "https://supportnear.com/#p=node/5054041626@6.99289,-9.46833"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "LEGIT Bong Office", "address": "kokoyah Road, Gbarnga", "telephone": "0777951739", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 6.99198, "longitude": -9.47003}, "url": "https://supportnear.com/#p=node/5054040058@6.99198,-9.47003"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Red Cross", "address": "Gbarnga", "openingHours": "Mo-Sa 08:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 7.00687, "longitude": -9.47476}, "url": "https://supportnear.com/#p=node/5069071966@7.00687,-9.47476"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Cardno-USAID Office", "address": "Collins street, Gbarnga", "telephone": "0888398479", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 7.00455, "longitude": -9.46178}, "url": "https://supportnear.com/#p=way/486378655@7.00455,-9.46178"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gbarnga">All free help in Gbarnga</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gbarnga">All free help in Gbarnga</a></header><main>
 <h1>Social services in Gbarnga</h1>
 <p class="lede">4 places within 10 km of the centre of Gbarnga where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gbarnga&amp;cc=LR&amp;need=social">Open the map of Gbarnga</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gbarnga&amp;cc=LR&amp;need=social">Open the map of Gbarnga</a>
 <a class="btn" href="gbarnga.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

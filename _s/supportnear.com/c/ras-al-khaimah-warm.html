@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "أماكن دافئة للجلوس في رأس الخيمة", "description": "7 أماكن في رأس الخيمة، الإمارات العربية المتحدة، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/ras-al-khaimah-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "رأس الخيمة", "containedInPlace": {"@type": "Country", "name": "الإمارات العربية المتحدة"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "رأس الخيمة", "item": "https://supportnear.com/c/ras-al-khaimah"}, {"@type": "ListItem", "position": 3, "name": "أماكن دافئة للجلوس في رأس الخيمة", "item": "https://supportnear.com/c/ras-al-khaimah-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "أماكن دافئة للجلوس في رأس الخيمة", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Al Maha Grand Ballroom", "geo": {"@type": "GeoCoordinates", "latitude": 25.76917, "longitude": 55.94016}, "url": "https://supportnear.com/#p=way/337133205@25.76917,55.94016"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Wedding Hall", "geo": {"@type": "GeoCoordinates", "latitude": 25.78097, "longitude": 55.94004}, "url": "https://supportnear.com/#p=way/144968154@25.78097,55.94004"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مركز رأس الخيمة للدراسات والتوثيق", "geo": {"@type": "GeoCoordinates", "latitude": 25.79975, "longitude": 55.94858}, "url": "https://supportnear.com/#p=node/1593483711@25.79975,55.94858"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مكتبة يقه زكريا", "geo": {"@type": "GeoCoordinates", "latitude": 25.747, "longitude": 55.92553}, "url": "https://supportnear.com/#p=node/5686530723@25.74700,55.92553"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Auditorium", "geo": {"@type": "GeoCoordinates", "latitude": 25.79809, "longitude": 55.96374}, "url": "https://supportnear.com/#p=way/338736508@25.79809,55.96374"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Indian Association", "geo": {"@type": "GeoCoordinates", "latitude": 25.80986, "longitude": 55.97879}, "url": "https://supportnear.com/#p=way/342425102@25.80986,55.97879"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="ras-al-khaimah">كل المساعدة المجانية في رأس الخيمة</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="ras-al-khaimah">كل المساعدة المجانية في رأس الخيمة</a></header><main>
 <h1>أماكن دافئة للجلوس في رأس الخيمة</h1>
 <p class="lede">7 أماكن على بعد أقل من ١٠ كم من وسط رأس الخيمة حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ras%20Al%20Khaimah&amp;cc=AE&amp;need=warm">افتح خريطة رأس الخيمة</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Ras%20Al%20Khaimah&amp;cc=AE&amp;need=warm">افتح خريطة رأس الخيمة</a>
 <a class="btn" href="ras-al-khaimah.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

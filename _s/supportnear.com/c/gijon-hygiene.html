@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Duchas públicas en Gijón", "description": "23 sitios en Gijón, España, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/gijon-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Gijón", "containedInPlace": {"@type": "Country", "name": "España"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Gijón", "item": "https://supportnear.com/c/gijon"}, {"@type": "ListItem", "position": 3, "name": "Duchas públicas en Gijón", "item": "https://supportnear.com/c/gijon-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Duchas públicas en Gijón", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "ALSA", "geo": {"@type": "GeoCoordinates", "latitude": 43.539, "longitude": -5.66759}, "url": "https://supportnear.com/#p=node/1279321307@43.53900,-5.66759"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Ayuntamiento de Gijon/Xixon", "geo": {"@type": "GeoCoordinates", "latitude": 43.53779, "longitude": -5.64108}, "url": "https://supportnear.com/#p=node/983911585@43.53779,-5.64108"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Ayuntamientu de Gijón/Xixón", "geo": {"@type": "GeoCoordinates", "latitude": 43.53124, "longitude": -5.6369}, "url": "https://supportnear.com/#p=node/147132522@43.53124,-5.63690"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Ayuntamientu de Gijón/Xixón", "geo": {"@type": "GeoCoordinates", "latitude": 43.53238, "longitude": -5.63649}, "url": "https://supportnear.com/#p=node/3705553217@43.53238,-5.63649"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Ayuntamiento de Gijon/Xixon", "geo": {"@type": "GeoCoordinates", "latitude": 43.53839, "longitude": -5.63489}, "url": "https://supportnear.com/#p=node/1006225784@43.53839,-5.63489"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Duchas", "geo": {"@type": "GeoCoordinates", "latitude": 43.54812, "longitude": -5.63943}, "url": "https://supportnear.com/#p=node/7047764524@43.54812,-5.63943"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gijon">Toda la ayuda gratis en Gijón</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gijon">Toda la ayuda gratis en Gijón</a></header><main>
 <h1>Duchas públicas en Gijón</h1>
 <p class="lede">23 sitios a menos de 10 km del centro de Gijón donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gij%C3%B3n&amp;cc=ES&amp;need=hygiene">Abrir el mapa de Gijón</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gij%C3%B3n&amp;cc=ES&amp;need=hygiene">Abrir el mapa de Gijón</a>
 <a class="btn" href="gijon.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

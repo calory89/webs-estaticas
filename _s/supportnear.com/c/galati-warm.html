@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Locuri calde unde să stai în Galați", "description": "7 locuri în Galați, România, cu adresă, program și telefon acolo unde se știu. Hartă gratuită, fără cont, merge fără semnal.", "inLanguage": "ro", "url": "https://supportnear.com/c/galati-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Galați", "containedInPlace": {"@type": "Country", "name": "România"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Galați", "item": "https://supportnear.com/c/galati"}, {"@type": "ListItem", "position": 3, "name": "Locuri calde unde să stai în Galați", "item": "https://supportnear.com/c/galati-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Locuri calde unde să stai în Galați", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Libraria Donaris", "address": "Strada Nicolae Bălcescu 22, 800001, Galați", "geo": {"@type": "GeoCoordinates", "latitude": 45.43684, "longitude": 28.05297}, "url": "https://supportnear.com/#p=node/9929388726@45.43684,28.05297"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Alexandria", "address": "Strada Domnească, 800008, Galați", "geo": {"@type": "GeoCoordinates", "latitude": 45.43992, "longitude": 28.05668}, "url": "https://supportnear.com/#p=way/1267186108@45.43992,28.05668"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Cladire Atena", "address": "Strada Șoimului, 827100", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 45.42606, "longitude": 28.04667}, "url": "https://supportnear.com/#p=node/4510972491@45.42606,28.04667"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca V. A. Urechia", "address": "Strada Mihai Bravu 16, 800222, Galați", "geo": {"@type": "GeoCoordinates", "latitude": 45.44534, "longitude": 28.05716}, "url": "https://supportnear.com/#p=way/45373928@45.44534,28.05716"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca V.A. Urechia - filiala 1", "geo": {"@type": "GeoCoordinates", "latitude": 45.42951, "longitude": 28.03874}, "url": "https://supportnear.com/#p=node/615031872@45.42951,28.03874"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Evidenta Populatiei Galați", "address": "Strada Domnească 102", "telephone": "0236310144", "geo": {"@type": "GeoCoordinates", "latitude": 45.44681, "longitude": 28.05484}, "url": "https://supportnear.com/#p=node/4477496890@45.44681,28.05484"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="galati">Tot ajutorul gratuit din Galați</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="galati">Tot ajutorul gratuit din Galați</a></header><main>
 <h1>Locuri calde unde să stai în Galați</h1>
 <p class="lede">7 locuri la mai puțin de 10 km de centrul orașului Galați unde asta este gratuit. De pe harta deschisă, ținută la zi de voluntari. Deschide harta ca să le vezi pe toate și cum ajungi pe jos.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gala%C8%9Bi&amp;cc=RO&amp;need=warm">Deschide harta orașului Galați</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gala%C8%9Bi&amp;cc=RO&amp;need=warm">Deschide harta orașului Galați</a>
 <a class="btn" href="galati.cartel">Tipărește un afiș pentru acest oraș</a>
 <a class="btn" href="./">Toate orașele</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

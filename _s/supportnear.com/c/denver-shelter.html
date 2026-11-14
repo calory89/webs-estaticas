@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Shelters in Denver", "description": "6 places in Denver, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/denver-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Denver", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Denver", "item": "https://supportnear.com/c/denver"}, {"@type": "ListItem", "position": 3, "name": "Shelters in Denver", "item": "https://supportnear.com/c/denver-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Shelters in Denver", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Ronald McDonald House", "address": "East 21st Avenue 1300, 80205, Denver", "geo": {"@type": "GeoCoordinates", "latitude": 39.74787, "longitude": -104.97183}, "url": "https://supportnear.com/#p=node/3381853765@39.74787,-104.97183"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "St. Francis Center", "address": "Curtis Street 2323, 80205, Denver", "telephone": "+1-303-297-1577", "openingHours": "Mo-Tu 07:00-15:00; We 07:00-13:00; Th-Fr 07:00-15:00; Sa-Su 07:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 39.75432, "longitude": -104.98608}, "url": "https://supportnear.com/#p=node/13281196401@39.75432,-104.98608"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Denver Rescue Mission", "address": "Park Avenue West 1130, 80205, Denver", "geo": {"@type": "GeoCoordinates", "latitude": 39.75476, "longitude": -104.988}, "url": "https://supportnear.com/#p=node/3087320614@39.75476,-104.98800"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Samaritan House Catholic Charities", "address": "Lawrence Street 2301, 80205, Denver", "geo": {"@type": "GeoCoordinates", "latitude": 39.75558, "longitude": -104.9882}, "url": "https://supportnear.com/#p=node/1705214239@39.75558,-104.98820"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Franciscan Friends of the Poor", "address": "Lipan Street 707, 80204, Denver", "geo": {"@type": "GeoCoordinates", "latitude": 39.72754, "longitude": -105.00185}, "url": "https://supportnear.com/#p=node/3493430357@39.72754,-105.00185"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Father Woody's Haven of Hope", "address": "West 7th Avenue 1101, 80204, Denver", "geo": {"@type": "GeoCoordinates", "latitude": 39.72748, "longitude": -105.00206}, "url": "https://supportnear.com/#p=node/3493424226@39.72748,-105.00206"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="denver">All free help in Denver</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="denver">All free help in Denver</a></header><main>
 <h1>Shelters in Denver</h1>
 <p class="lede">6 places within 10 km of the centre of Denver where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Denver&amp;cc=US&amp;need=shelter">Open the map of Denver</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Denver&amp;cc=US&amp;need=shelter">Open the map of Denver</a>
 <a class="btn" href="denver.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

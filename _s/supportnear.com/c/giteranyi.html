@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Aide gratuite à Giteranyi : 6 soins médicaux et 1 lieu où se poser au chaud", "description": "6 soins médicaux et 1 lieu où se poser au chaud à moins de 10 km du centre de Giteranyi, Burundi. Adresse, horaires et téléphone quand on les connaît. Sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/giteranyi", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Giteranyi", "containedInPlace": {"@type": "Country", "name": "Burundi"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Toutes les villes", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Giteranyi", "item": "https://supportnear.com/c/giteranyi"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Les lieux nommés les plus proches", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "CDS Mika", "geo": {"@type": "GeoCoordinates", "latitude": -2.54593, "longitude": 30.45057}, "url": "https://supportnear.com/#p=way/790432883@-2.54593,30.45057"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "CDS Nonwe", "geo": {"@type": "GeoCoordinates", "latitude": -2.49892, "longitude": 30.42683}, "url": "https://supportnear.com/#p=way/786503718@-2.49892,30.42683"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CDS Kibazi", "geo": {"@type": "GeoCoordinates", "latitude": -2.53493, "longitude": 30.38898}, "url": "https://supportnear.com/#p=way/788516021@-2.53493,30.38898"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "CDS Kinyami", "geo": {"@type": "GeoCoordinates", "latitude": -2.46574, "longitude": 30.51217}, "url": "https://supportnear.com/#p=way/786482723@-2.46574,30.51217"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "CDS Mugano", "geo": {"@type": "GeoCoordinates", "latitude": -2.58782, "longitude": 30.43362}, "url": "https://supportnear.com/#p=way/790432738@-2.58782,30.43362"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CDS Buhoro", "geo": {"@type": "GeoCoordinates", "latitude": -2.49676, "longitude": 30.37911}, "url": "https://supportnear.com/#p=node/5277794159@-2.49676,30.37911"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Mukabenga sub-villlage", "geo": {"@type": "GeoCoordinates", "latitude": -2.49349, "longitude": 30.53731}, "url": "https://supportnear.com/#p=node/8445010017@-2.49349,30.53731"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Giteranyi&amp;cc=BI">Ouvrir la carte en direct de Giteranyi</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Giteranyi&amp;cc=BI">Ouvrir la carte en direct de Giteranyi</a></header><main>
 <h1>Aide gratuite à Giteranyi</h1>
 <p class="lede">6 soins médicaux et 1 lieu où se poser au chaud à moins de 10 km du centre de Giteranyi, Burundi, et plus : vêtements, aide sociale, aide juridique et soins. Depuis la carte ouverte, tenue à jour par des bénévoles, vérifiables un par un. Il y a encore peu de choses sur la carte ici. Si tu connais un lieu, ajoute-le sur OpenStreetMap et il apparaîtra ici.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Giteranyi&amp;cc=BI">Ouvrir la carte de Giteranyi</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit presse</a>
 <a class="btn" href="./">Toutes les villes</a>
 <a class="btn" href="../t/giteranyi">Version texte (vieux téléphones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Calamba", "description": "14 places in Calamba, Philippines, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/calamba-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Calamba", "containedInPlace": {"@type": "Country", "name": "Philippines"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Calamba", "item": "https://supportnear.com/c/calamba"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Calamba", "item": "https://supportnear.com/c/calamba-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Calamba", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Fortezza Clubhouse", "geo": {"@type": "GeoCoordinates", "latitude": 14.23915, "longitude": 121.12542}, "url": "https://supportnear.com/#p=way/587204460@14.23915,121.12542"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Clubhouse", "geo": {"@type": "GeoCoordinates", "latitude": 14.20092, "longitude": 121.1074}, "url": "https://supportnear.com/#p=way/560487924@14.20092,121.10740"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Makiling Hills", "telephone": "+639753561128", "geo": {"@type": "GeoCoordinates", "latitude": 14.14483, "longitude": 121.15055}, "url": "https://supportnear.com/#p=way/577351311@14.14483,121.15055"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Casa Esperanza", "address": "J. P. Rizal Street", "geo": {"@type": "GeoCoordinates", "latitude": 14.2697, "longitude": 121.12642}, "url": "https://supportnear.com/#p=node/4723641590@14.26970,121.12642"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "XDE Village", "telephone": "+639753561128", "geo": {"@type": "GeoCoordinates", "latitude": 14.17292, "longitude": 121.08907}, "url": "https://supportnear.com/#p=node/4912376123@14.17292,121.08907"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Venare Central Park, Nuvali", "geo": {"@type": "GeoCoordinates", "latitude": 14.19029, "longitude": 121.07815}, "url": "https://supportnear.com/#p=node/5791181153@14.19029,121.07815"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Mirala Clubhouse", "geo": {"@type": "GeoCoordinates", "latitude": 14.18308, "longitude": 121.07663}, "url": "https://supportnear.com/#p=way/533026301@14.18308,121.07663"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Vicar Farm", "address": "8534 Vicar Farm, Rockville Subd., 4030", "geo": {"@type": "GeoCoordinates", "latitude": 14.18119, "longitude": 121.23784}, "url": "https://supportnear.com/#p=node/6688135985@14.18119,121.23784"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="calamba">All free help in Calamba</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="calamba">All free help in Calamba</a></header><main>
 <h1>Warm places to sit in Calamba</h1>
 <p class="lede">14 places within 10 km of the centre of Calamba where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Calamba&amp;cc=PH&amp;need=warm">Open the map of Calamba</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Calamba&amp;cc=PH&amp;need=warm">Open the map of Calamba</a>
 <a class="btn" href="calamba.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

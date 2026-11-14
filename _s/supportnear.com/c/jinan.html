@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Jinan: 18 free showers and 21+ clinics and hospitals", "description": "18 free showers, 21+ clinics and hospitals and 4 drinking water points within 10 km of the centre of Jinan, People's Republic of China. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/jinan", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Jinan", "containedInPlace": {"@type": "Country", "name": "People's Republic of China"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Jinan", "item": "https://supportnear.com/c/jinan"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "山东省立医院东院", "geo": {"@type": "GeoCoordinates", "latitude": 36.66246, "longitude": 117.11569}, "url": "https://supportnear.com/#p=way/534415098@36.66246,117.11569"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "济南德仁堂中医院", "geo": {"@type": "GeoCoordinates", "latitude": 36.6608, "longitude": 117.10475}, "url": "https://supportnear.com/#p=node/11408846892@36.66080,117.10475"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "物业管理处", "geo": {"@type": "GeoCoordinates", "latitude": 36.66935, "longitude": 117.12074}, "url": "https://supportnear.com/#p=way/910580240@36.66935,117.12074"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "雅校图书馆", "geo": {"@type": "GeoCoordinates", "latitude": 36.67053, "longitude": 117.12164}, "url": "https://supportnear.com/#p=node/8455872865@36.67053,117.12164"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "黄金时代社区诊所", "geo": {"@type": "GeoCoordinates", "latitude": 36.6696, "longitude": 117.12523}, "url": "https://supportnear.com/#p=node/8498378667@36.66960,117.12523"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "雅居园社区诊所", "geo": {"@type": "GeoCoordinates", "latitude": 36.67239, "longitude": 117.11914}, "url": "https://supportnear.com/#p=node/8480420774@36.67239,117.11914"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "泉城书房", "geo": {"@type": "GeoCoordinates", "latitude": 36.67181, "longitude": 117.12426}, "url": "https://supportnear.com/#p=node/11341782509@36.67181,117.12426"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "泉城书房", "geo": {"@type": "GeoCoordinates", "latitude": 36.67076, "longitude": 117.12883}, "url": "https://supportnear.com/#p=node/11341782510@36.67076,117.12883"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "济南华圣医院", "geo": {"@type": "GeoCoordinates", "latitude": 36.66383, "longitude": 117.08555}, "url": "https://supportnear.com/#p=way/663187661@36.66383,117.08555"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "中国人民武装警察部队山东省总队医院", "geo": {"@type": "GeoCoordinates", "latitude": 36.65583, "longitude": 117.08135}, "url": "https://supportnear.com/#p=way/664622581@36.65583,117.08135"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Jinan&amp;cc=CN">Open the live map of Jinan</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Jinan&amp;cc=CN">Open the live map of Jinan</a></header><main>
 <h1>Free help in Jinan <small style="font-weight:400;color:var(--ink-3)">· 济南市</small></h1>
 <p class="lede">18 free showers, 21+ clinics and hospitals and 4 drinking water points within 10 km of the centre of Jinan, People&#x27;s Republic of China, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Jinan&amp;cc=CN">Open the map of Jinan</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/jinan">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

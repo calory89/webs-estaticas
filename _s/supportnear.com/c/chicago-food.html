@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in Chicago", "description": "8 places in Chicago, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/chicago-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Chicago", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Chicago", "item": "https://supportnear.com/c/chicago"}, {"@type": "ListItem", "position": 3, "name": "Free food places in Chicago", "item": "https://supportnear.com/c/chicago-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in Chicago", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Clothing Drop Box", "geo": {"@type": "GeoCoordinates", "latitude": 41.90709, "longitude": -87.65062}, "url": "https://supportnear.com/#p=node/9620022189@41.90709,-87.65062"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Breakthrough Fresh Market", "address": "West Carroll Avenue 3334, 60624, Chicago", "openingHours": "Tu 02:00-16:00; Th 10:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 41.8876, "longitude": -87.7101}, "url": "https://supportnear.com/#p=node/8618919604@41.88760,-87.71010"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "WIC Grocery", "address": "East 43rd Street 416, 60653, Chicago", "telephone": "+1-773-924-7041", "openingHours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 41.81682, "longitude": -87.61556}, "url": "https://supportnear.com/#p=node/9708102152@41.81682,-87.61556"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "WIC Food Center", "address": "West Armitage Avenue 3110, 60647, Chicago", "geo": {"@type": "GeoCoordinates", "latitude": 41.91762, "longitude": -87.70589}, "url": "https://supportnear.com/#p=node/5136890523@41.91762,-87.70589"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Casa Catalina", "address": "South Ashland Avenue 4537, 60609, Chicago", "geo": {"@type": "GeoCoordinates", "latitude": 41.81119, "longitude": -87.66476}, "url": "https://supportnear.com/#p=node/4641398471@41.81119,-87.66476"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Nourishing Hope", "address": "North Sheridan Road 3945, 60613, Chicago", "geo": {"@type": "GeoCoordinates", "latitude": 41.954, "longitude": -87.65411}, "url": "https://supportnear.com/#p=way/210330504@41.95400,-87.65411"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Love Fridge at Augustana Lutheran Church", "address": "5500 S Woodlawn Ave", "geo": {"@type": "GeoCoordinates", "latitude": 41.79493, "longitude": -87.59743}, "url": "https://supportnear.com/#p=node/10908746383@41.79493,-87.59743"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="chicago">All free help in Chicago</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="chicago">All free help in Chicago</a></header><main>
 <h1>Free food places in Chicago</h1>
 <p class="lede">8 places within 10 km of the centre of Chicago where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Chicago&amp;cc=US&amp;need=food">Open the map of Chicago</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Chicago&amp;cc=US&amp;need=food">Open the map of Chicago</a>
 <a class="btn" href="chicago.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

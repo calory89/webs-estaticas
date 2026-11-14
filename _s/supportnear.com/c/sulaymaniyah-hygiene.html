@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "دشّات مجانية في سلێمانی", "description": "3 أماكن في سلێمانی، العراق، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/sulaymaniyah-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "سلێمانی", "containedInPlace": {"@type": "Country", "name": "العراق"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "سلێمانی", "item": "https://supportnear.com/c/sulaymaniyah"}, {"@type": "ListItem", "position": 3, "name": "دشّات مجانية في سلێمانی", "item": "https://supportnear.com/c/sulaymaniyah-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "دشّات مجانية في سلێمانی", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "پێشانگای یاسین", "telephone": "+964 770 165 7374", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 35.55445, "longitude": 45.44068}, "url": "https://supportnear.com/#p=node/5778544053@35.55445,45.44068"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Googlecomputer", "geo": {"@type": "GeoCoordinates", "latitude": 35.56854, "longitude": 45.45354}, "url": "https://supportnear.com/#p=node/5405255521@35.56854,45.45354"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "کەمال ستۆر", "geo": {"@type": "GeoCoordinates", "latitude": 35.58037, "longitude": 45.40786}, "url": "https://supportnear.com/#p=node/11580312472@35.58037,45.40786"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sulaymaniyah">كل المساعدة المجانية في سلێمانی</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sulaymaniyah">كل المساعدة المجانية في سلێمانی</a></header><main>
 <h1>دشّات مجانية في سلێمانی</h1>
 <p class="lede">3 أماكن على بعد أقل من ١٠ كم من وسط سلێمانی حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Sulaymaniyah&amp;cc=IQ&amp;need=hygiene">افتح خريطة سلێمانی</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Sulaymaniyah&amp;cc=IQ&amp;need=hygiene">افتح خريطة سلێمانی</a>
 <a class="btn" href="sulaymaniyah.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

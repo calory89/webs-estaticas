@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Albergues en Cochabamba", "description": "4 sitios en Cochabamba, Bolivia, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/cochabamba-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Cochabamba", "containedInPlace": {"@type": "Country", "name": "Bolivia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Cochabamba", "item": "https://supportnear.com/c/cochabamba"}, {"@type": "ListItem", "position": 3, "name": "Albergues en Cochabamba", "item": "https://supportnear.com/c/cochabamba-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Albergues en Cochabamba", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Albergue Sonrisa", "address": "Avenida Aniceto Arce, Cochabamba", "geo": {"@type": "GeoCoordinates", "latitude": -17.38872, "longitude": -66.15006}, "url": "https://supportnear.com/#p=node/13967294683@-17.38872,-66.15006"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Casa del Migrante Sumaj P'unchay", "address": "Calle República de Haití, Cochabamba", "telephone": "+591 69438900", "openingHours": "Mo-Su 18:00-21:00", "geo": {"@type": "GeoCoordinates", "latitude": -17.40024, "longitude": -66.14187}, "url": "https://supportnear.com/#p=way/975818800@-17.40024,-66.14187"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Albergue Padre Calixto", "address": "Avenida Rubén Darío, Cochabamba", "geo": {"@type": "GeoCoordinates", "latitude": -17.38494, "longitude": -66.14152}, "url": "https://supportnear.com/#p=way/931849367@-17.38494,-66.14152"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Residencia Universitaria Femenina Los Molles", "address": "Plaza Tarija 1275, Cochabamba", "telephone": "+591 4 4480505", "geo": {"@type": "GeoCoordinates", "latitude": -17.37439, "longitude": -66.14322}, "url": "https://supportnear.com/#p=way/901405552@-17.37439,-66.14322"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cochabamba">Toda la ayuda gratis en Cochabamba</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cochabamba">Toda la ayuda gratis en Cochabamba</a></header><main>
 <h1>Albergues en Cochabamba</h1>
 <p class="lede">4 sitios a menos de 10 km del centro de Cochabamba donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Cochabamba&amp;cc=BO&amp;need=shelter">Abrir el mapa de Cochabamba</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Cochabamba&amp;cc=BO&amp;need=shelter">Abrir el mapa de Cochabamba</a>
 <a class="btn" href="cochabamba.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

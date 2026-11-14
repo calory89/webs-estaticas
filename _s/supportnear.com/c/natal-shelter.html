@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Albergues em Natal", "description": "5 sítios em Natal, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/natal-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Natal", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Natal", "item": "https://supportnear.com/c/natal"}, {"@type": "ListItem", "position": 3, "name": "Albergues em Natal", "item": "https://supportnear.com/c/natal-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Albergues em Natal", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Albergue Municipal José Augusto da Costa", "address": "Rua Princesa Isabel 834, Natal", "geo": {"@type": "GeoCoordinates", "latitude": -5.7898, "longitude": -35.20788}, "url": "https://supportnear.com/#p=way/938227967@-5.78980,-35.20788"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Albergue Noturno de Natal", "address": "Rua General Gustavo Cordeiro de Farias 377, Natal", "geo": {"@type": "GeoCoordinates", "latitude": -5.7804, "longitude": -35.19821}, "url": "https://supportnear.com/#p=way/1481630501@-5.78040,-35.19821"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centro POP - Centro de Referência Especializado para População em Situação de Rua", "geo": {"@type": "GeoCoordinates", "latitude": -5.78022, "longitude": -35.19807}, "url": "https://supportnear.com/#p=way/1481630504@-5.78022,-35.19807"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="natal">Toda a ajuda gratuita em Natal</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="natal">Toda a ajuda gratuita em Natal</a></header><main>
 <h1>Albergues em Natal</h1>
 <p class="lede">5 sítios a menos de 10 km do centro de Natal onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Natal&amp;cc=BR&amp;need=shelter">Abrir o mapa de Natal</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Natal&amp;cc=BR&amp;need=shelter">Abrir o mapa de Natal</a>
 <a class="btn" href="natal.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

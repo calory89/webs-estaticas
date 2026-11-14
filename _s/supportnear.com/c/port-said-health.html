@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "رعاية صحية في بورسعيد", "description": "5 أماكن في بورسعيد، مصر، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/port-said-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "بورسعيد", "containedInPlace": {"@type": "Country", "name": "مصر"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "بورسعيد", "item": "https://supportnear.com/c/port-said"}, {"@type": "ListItem", "position": 3, "name": "رعاية صحية في بورسعيد", "item": "https://supportnear.com/c/port-said-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "رعاية صحية في بورسعيد", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "ال سليمان", "geo": {"@type": "GeoCoordinates", "latitude": 31.26951, "longitude": 32.29238}, "url": "https://supportnear.com/#p=node/13593159801@31.26951,32.29238"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مستشفى بورفواد", "geo": {"@type": "GeoCoordinates", "latitude": 31.24402, "longitude": 32.32027}, "url": "https://supportnear.com/#p=node/4643646691@31.24402,32.32027"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مستشفى النصر", "geo": {"@type": "GeoCoordinates", "latitude": 31.2679, "longitude": 32.27768}, "url": "https://supportnear.com/#p=node/13593146701@31.26790,32.27768"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Alglaa Pharmacy portsaid - صيدلية الجلاء بورسعيد", "telephone": "002-066-3666912", "geo": {"@type": "GeoCoordinates", "latitude": 31.26753, "longitude": 32.27034}, "url": "https://supportnear.com/#p=node/7022378617@31.26753,32.27034"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مستشفى بورسعيد للصحة النفسية وعلاج الإدمان", "telephone": "+20 663670454", "geo": {"@type": "GeoCoordinates", "latitude": 31.25131, "longitude": 32.26193}, "url": "https://supportnear.com/#p=node/13907396658@31.25131,32.26193"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="port-said">كل المساعدة المجانية في بورسعيد</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="port-said">كل المساعدة المجانية في بورسعيد</a></header><main>
 <h1>رعاية صحية في بورسعيد</h1>
 <p class="lede">5 أماكن على بعد أقل من ١٠ كم من وسط بورسعيد حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Port%20Said&amp;cc=EG&amp;need=health">افتح خريطة بورسعيد</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Port%20Said&amp;cc=EG&amp;need=health">افتح خريطة بورسعيد</a>
 <a class="btn" href="port-said.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

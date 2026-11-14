@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Aide gratuite à Boké : 2 soins médicaux et 1 service social", "description": "2 soins médicaux, 1 service social et 1 point d’eau potable à moins de 10 km du centre de Boké, Guinée. Adresse, horaires et téléphone quand on les connaît. Sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/boke", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Boké", "containedInPlace": {"@type": "Country", "name": "Guinée"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Toutes les villes", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Boké", "item": "https://supportnear.com/c/boke"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Les lieux nommés les plus proches", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hôpital Régional de Boké", "geo": {"@type": "GeoCoordinates", "latitude": 10.93515, "longitude": -14.28795}, "url": "https://supportnear.com/#p=way/544921141@10.93515,-14.28795"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Salle de lecture", "geo": {"@type": "GeoCoordinates", "latitude": 10.93379, "longitude": -14.28955}, "url": "https://supportnear.com/#p=node/6206774056@10.93379,-14.28955"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Bibliothèque Universitaire", "geo": {"@type": "GeoCoordinates", "latitude": 10.97517, "longitude": -14.27161}, "url": "https://supportnear.com/#p=node/6249891417@10.97517,-14.27161"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Infirmerie de ISMGB", "telephone": "622448318", "geo": {"@type": "GeoCoordinates", "latitude": 10.97552, "longitude": -14.26883}, "url": "https://supportnear.com/#p=node/6258536058@10.97552,-14.26883"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centre Culturel de Boké", "geo": {"@type": "GeoCoordinates", "latitude": 10.93188, "longitude": -14.29418}, "url": "https://supportnear.com/#p=node/6230929110@10.93188,-14.29418"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Centre Islamique Orphelina", "geo": {"@type": "GeoCoordinates", "latitude": 10.90676, "longitude": -14.29605}, "url": "https://supportnear.com/#p=node/6341900985@10.90676,-14.29605"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Bok%C3%A9&amp;cc=GN">Ouvrir la carte en direct de Boké</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Bok%C3%A9&amp;cc=GN">Ouvrir la carte en direct de Boké</a></header><main>
 <h1>Aide gratuite à Boké</h1>
 <p class="lede">2 soins médicaux, 1 service social et 1 point d’eau potable à moins de 10 km du centre de Boké, Guinée, et plus : vêtements, aide sociale, aide juridique et soins. Depuis la carte ouverte, tenue à jour par des bénévoles, vérifiables un par un. Il y a encore peu de choses sur la carte ici. Si tu connais un lieu, ajoute-le sur OpenStreetMap et il apparaîtra ici.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Bok%C3%A9&amp;cc=GN">Ouvrir la carte de Boké</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit presse</a>
 <a class="btn" href="./">Toutes les villes</a>
 <a class="btn" href="../t/boke">Version texte (vieux téléphones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

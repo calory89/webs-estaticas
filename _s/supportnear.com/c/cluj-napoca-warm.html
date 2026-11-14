@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Locuri calde unde să stai în Cluj-Napoca", "description": "8 locuri în Cluj-Napoca, România, cu adresă, program și telefon acolo unde se știu. Hartă gratuită, fără cont, merge fără semnal.", "inLanguage": "ro", "url": "https://supportnear.com/c/cluj-napoca-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Cluj-Napoca", "containedInPlace": {"@type": "Country", "name": "România"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Cluj-Napoca", "item": "https://supportnear.com/c/cluj-napoca"}, {"@type": "ListItem", "position": 3, "name": "Locuri calde unde să stai în Cluj-Napoca", "item": "https://supportnear.com/c/cluj-napoca-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Locuri calde unde să stai în Cluj-Napoca", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Societatea Muzeului Ardelean", "address": "Strada Napoca 2-4, 400009, Cluj-Napoca", "telephone": "+40 264 595 176", "geo": {"@type": "GeoCoordinates", "latitude": 46.76868, "longitude": 23.58954}, "url": "https://supportnear.com/#p=node/3349545394@46.76868,23.58954"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Casa Parohială Romano-Catolică", "geo": {"@type": "GeoCoordinates", "latitude": 46.76964, "longitude": 23.58851}, "url": "https://supportnear.com/#p=way/1338939218@46.76964,23.58851"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centrul pentru Tineret", "address": "Strada Iuliu Maniu 1, Cluj-Napoca", "telephone": "+40743318507", "geo": {"@type": "GeoCoordinates", "latitude": 46.7703, "longitude": 23.59091}, "url": "https://supportnear.com/#p=node/11443021734@46.77030,23.59091"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca de Filosofie", "address": "Strada Mihail Kogălniceanu 1, 400084, Cluj-Napoca", "openingHours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 46.76793, "longitude": 23.59191}, "url": "https://supportnear.com/#p=node/2135937764@46.76793,23.59191"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca de Studii Germane Georg Weber", "geo": {"@type": "GeoCoordinates", "latitude": 46.7689, "longitude": 23.59501}, "url": "https://supportnear.com/#p=node/5153294632@46.76890,23.59501"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Biblioteca Centrală Universitară „Lucian Blaga”", "openingHours": "Mo-Fr 08:00-19:45; Sa 08:00-14:45", "geo": {"@type": "GeoCoordinates", "latitude": 46.76707, "longitude": 23.58481}, "url": "https://supportnear.com/#p=way/108068967@46.76707,23.58481"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Biblioteca Valeriu Bologa", "geo": {"@type": "GeoCoordinates", "latitude": 46.76505, "longitude": 23.58489}, "url": "https://supportnear.com/#p=node/8821300795@46.76505,23.58489"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Bibliotecă de Iudaistică și Studiu al Holocaustului", "geo": {"@type": "GeoCoordinates", "latitude": 46.77543, "longitude": 23.59231}, "url": "https://supportnear.com/#p=node/3834467157@46.77543,23.59231"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cluj-napoca">Tot ajutorul gratuit din Cluj-Napoca</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cluj-napoca">Tot ajutorul gratuit din Cluj-Napoca</a></header><main>
 <h1>Locuri calde unde să stai în Cluj-Napoca</h1>
 <p class="lede">8 locuri la mai puțin de 10 km de centrul orașului Cluj-Napoca unde asta este gratuit. De pe harta deschisă, ținută la zi de voluntari. Deschide harta ca să le vezi pe toate și cum ajungi pe jos.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Cluj-Napoca&amp;cc=RO&amp;need=warm">Deschide harta orașului Cluj-Napoca</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Cluj-Napoca&amp;cc=RO&amp;need=warm">Deschide harta orașului Cluj-Napoca</a>
 <a class="btn" href="cluj-napoca.cartel">Tipărește un afiș pentru acest oraș</a>
 <a class="btn" href="./">Toate orașele</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Albergues en San Miguel de Tucumán", "description": "3 sitios en San Miguel de Tucumán, Argentina, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/san-miguel-de-tucuman-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "San Miguel de Tucumán", "containedInPlace": {"@type": "Country", "name": "Argentina"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "San Miguel de Tucumán", "item": "https://supportnear.com/c/san-miguel-de-tucuman"}, {"@type": "ListItem", "position": 3, "name": "Albergues en San Miguel de Tucumán", "item": "https://supportnear.com/c/san-miguel-de-tucuman-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Albergues en San Miguel de Tucumán", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Comedor Infantil San Cayetano", "geo": {"@type": "GeoCoordinates", "latitude": -26.84723, "longitude": -65.19729}, "url": "https://supportnear.com/#p=node/3813350644@-26.84723,-65.19729"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Hogar Eva Perón", "address": "Avenida Benjamín Aráoz 851", "geo": {"@type": "GeoCoordinates", "latitude": -26.83562, "longitude": -65.18415}, "url": "https://supportnear.com/#p=node/10985647265@-26.83562,-65.18415"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Hogar de Menores General Manuel Belgranno", "address": "Avenida Francisco de Aguirre, 4000, San Miguel de Tucumán", "geo": {"@type": "GeoCoordinates", "latitude": -26.79591, "longitude": -65.19414}, "url": "https://supportnear.com/#p=node/12894917214@-26.79591,-65.19414"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-miguel-de-tucuman">Toda la ayuda gratis en San Miguel de Tucumán</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-miguel-de-tucuman">Toda la ayuda gratis en San Miguel de Tucumán</a></header><main>
 <h1>Albergues en San Miguel de Tucumán</h1>
 <p class="lede">3 sitios a menos de 10 km del centro de San Miguel de Tucumán donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Miguel%20de%20Tucum%C3%A1n&amp;cc=AR&amp;need=shelter">Abrir el mapa de San Miguel de Tucumán</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Miguel%20de%20Tucum%C3%A1n&amp;cc=AR&amp;need=shelter">Abrir el mapa de San Miguel de Tucumán</a>
 <a class="btn" href="san-miguel-de-tucuman.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

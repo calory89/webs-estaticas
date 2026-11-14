@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "درمان در سنندج", "description": "13 مکان در سنندج، ایران، با نشانی، ساعت کار و تلفن در صورت مشخص بودن. نقشهٔ رایگان، بدون حساب کاربری، بدون اینترنت هم کار می‌کند.", "inLanguage": "fa", "url": "https://supportnear.com/c/sanandaj-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "سنندج", "containedInPlace": {"@type": "Country", "name": "ایران"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "سنندج", "item": "https://supportnear.com/c/sanandaj"}, {"@type": "ListItem", "position": 3, "name": "درمان در سنندج", "item": "https://supportnear.com/c/sanandaj-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "درمان در سنندج", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "بیمارستان بعثت", "geo": {"@type": "GeoCoordinates", "latitude": 35.31494, "longitude": 46.98823}, "url": "https://supportnear.com/#p=way/251313829@35.31494,46.98823"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "اورژانس", "geo": {"@type": "GeoCoordinates", "latitude": 35.30516, "longitude": 47.00281}, "url": "https://supportnear.com/#p=node/2559414502@35.30516,47.00281"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مرکز بهداشت سمیه", "geo": {"@type": "GeoCoordinates", "latitude": 35.32275, "longitude": 46.9925}, "url": "https://supportnear.com/#p=node/2580400240@35.32275,46.99250"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "بیمارستان ۵۰ تختی شهید قاضی", "geo": {"@type": "GeoCoordinates", "latitude": 35.29937, "longitude": 46.99809}, "url": "https://supportnear.com/#p=way/320900625@35.29937,46.99809"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "بیمارستان دکتر سیدالشهدائی", "geo": {"@type": "GeoCoordinates", "latitude": 35.31393, "longitude": 46.97596}, "url": "https://supportnear.com/#p=way/251899971@35.31393,46.97596"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "آزمايشگاه تصویربرداریmri", "address": "بلوار شبلی", "geo": {"@type": "GeoCoordinates", "latitude": 35.31661, "longitude": 46.97306}, "url": "https://supportnear.com/#p=node/6804222685@35.31661,46.97306"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "بیمارستان توحید", "address": "بلوار کردستان, شهر سنندج", "geo": {"@type": "GeoCoordinates", "latitude": 35.30067, "longitude": 47.01863}, "url": "https://supportnear.com/#p=way/320664946@35.30067,47.01863"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "بیمارستان قدس", "address": "sanandaj", "geo": {"@type": "GeoCoordinates", "latitude": 35.28717, "longitude": 46.99982}, "url": "https://supportnear.com/#p=way/320906261@35.28717,46.99982"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "بیمارستان کوثر", "geo": {"@type": "GeoCoordinates", "latitude": 35.28265, "longitude": 46.9981}, "url": "https://supportnear.com/#p=way/529033403@35.28265,46.99810"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "بیمارستان پیامبر رحمت ۵۲۴ ارتش", "geo": {"@type": "GeoCoordinates", "latitude": 35.33901, "longitude": 46.9793}, "url": "https://supportnear.com/#p=way/529059130@35.33901,46.97930"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sanandaj">همهٔ کمک‌های رایگان در سنندج</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="sanandaj">همهٔ کمک‌های رایگان در سنندج</a></header><main>
 <h1>درمان در سنندج</h1>
 <p class="lede">13 مکان در کمتر از ۱۰ کیلومتری مرکز سنندج که این‌جا رایگان است. از نقشهٔ باز که داوطلبان به‌روزش می‌کنند. نقشه را باز کن تا همه را ببینی و راه پیاده را بدانی.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Sanandaj&amp;cc=IR&amp;need=health">نقشهٔ سنندج را باز کن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Sanandaj&amp;cc=IR&amp;need=health">نقشهٔ سنندج را باز کن</a>
 <a class="btn" href="sanandaj.cartel">چاپ پوستر برای این شهر</a>
 <a class="btn" href="./">همهٔ شهرها</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

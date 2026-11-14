@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Nacala: 2 clinics and hospitals and 1 social service", "description": "2 clinics and hospitals, 1 social service and 24+ drinking water points within 10 km of the centre of Nacala, Mozambique. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/nacala.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Nacala", "containedInPlace": {"@type": "Country", "name": "Mozambique"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Nacala", "item": "https://supportnear.com/c/nacala"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hospital Antiga da Baixa", "geo": {"@type": "GeoCoordinates", "latitude": -14.54644, "longitude": 40.68257}, "url": "https://supportnear.com/#p=way/805486522@-14.54644,40.68257"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Serviço Distrital de Saúde, Mulher e Acção Social de Nacala-Porto", "geo": {"@type": "GeoCoordinates", "latitude": -14.54083, "longitude": 40.67195}, "url": "https://supportnear.com/#p=node/6476246656@-14.54083,40.67195"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Centro de Saude de Nacala-A-Velha", "geo": {"@type": "GeoCoordinates", "latitude": -14.5513, "longitude": 40.62193}, "url": "https://supportnear.com/#p=node/6476253082@-14.55130,40.62193"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Nacala&amp;cc=MZ">Open the live map of Nacala</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Nacala&amp;cc=MZ">Open the live map of Nacala</a></header><main>
 <h1>Free help in Nacala</h1>
 <p class="lede">2 clinics and hospitals, 1 social service and 24+ drinking water points within 10 km of the centre of Nacala, Mozambique, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Nacala&amp;cc=MZ">Open the map of Nacala</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/nacala">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

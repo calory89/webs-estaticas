@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Ulsan: 21+ clinics and hospitals and 3 social services", "description": "21+ clinics and hospitals, 3 social services and 10 warm places to sit within 10 km of the centre of Ulsan, South Korea. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/ulsan", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ulsan", "containedInPlace": {"@type": "Country", "name": "South Korea"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Ulsan", "item": "https://supportnear.com/c/ulsan"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "아름다운울들병원", "geo": {"@type": "GeoCoordinates", "latitude": 35.53749, "longitude": 129.3126}, "url": "https://supportnear.com/#p=node/368774440@35.53749,129.31260"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "박원대내과의원", "geo": {"@type": "GeoCoordinates", "latitude": 35.54206, "longitude": 129.31106}, "url": "https://supportnear.com/#p=node/368777593@35.54206,129.31106"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "센텀요양병원", "geo": {"@type": "GeoCoordinates", "latitude": 35.53621, "longitude": 129.3134}, "url": "https://supportnear.com/#p=node/368773888@35.53621,129.31340"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "에이치엠 병원", "geo": {"@type": "GeoCoordinates", "latitude": 35.53531, "longitude": 129.31125}, "url": "https://supportnear.com/#p=node/368774503@35.53531,129.31125"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "우리학문병원;공업탑", "geo": {"@type": "GeoCoordinates", "latitude": 35.53531, "longitude": 129.31125}, "url": "https://supportnear.com/#p=node/368774920@35.53531,129.31125"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "동서지압척추교정원", "geo": {"@type": "GeoCoordinates", "latitude": 35.54401, "longitude": 129.30921}, "url": "https://supportnear.com/#p=node/368777533@35.54401,129.30921"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "김민수산부인과", "geo": {"@type": "GeoCoordinates", "latitude": 35.53455, "longitude": 129.32213}, "url": "https://supportnear.com/#p=node/368779405@35.53455,129.32213"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "울산남부도서관", "geo": {"@type": "GeoCoordinates", "latitude": 35.53597, "longitude": 129.29498}, "url": "https://supportnear.com/#p=node/368655874@35.53597,129.29498"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "하얀얼굴예쁜몸매", "geo": {"@type": "GeoCoordinates", "latitude": 35.55325, "longitude": 129.30987}, "url": "https://supportnear.com/#p=node/368775487@35.55325,129.30987"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Place", "name": "우정병원", "geo": {"@type": "GeoCoordinates", "latitude": 35.55379, "longitude": 129.30875}, "url": "https://supportnear.com/#p=node/368774909@35.55379,129.30875"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ulsan&amp;cc=KR">Open the live map of Ulsan</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ulsan&amp;cc=KR">Open the live map of Ulsan</a></header><main>
 <h1>Free help in Ulsan <small style="font-weight:400;color:var(--ink-3)">· 울산광역시</small></h1>
 <p class="lede">21+ clinics and hospitals, 3 social services and 10 warm places to sit within 10 km of the centre of Ulsan, South Korea, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ulsan&amp;cc=KR">Open the map of Ulsan</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/ulsan">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

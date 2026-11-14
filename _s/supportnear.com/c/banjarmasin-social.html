@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Social services in Banjarmasin", "description": "4 places in Banjarmasin, Indonesia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/banjarmasin-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Banjarmasin", "containedInPlace": {"@type": "Country", "name": "Indonesia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Banjarmasin", "item": "https://supportnear.com/c/banjarmasin"}, {"@type": "ListItem", "position": 3, "name": "Social services in Banjarmasin", "item": "https://supportnear.com/c/banjarmasin-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Social services in Banjarmasin", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "PMI Provinsi Kalimantan Selatan", "address": "Jln. S. Parman No. 14 Banjarmasin", "telephone": "+62 511 6747500", "geo": {"@type": "GeoCoordinates", "latitude": -3.31345, "longitude": 114.58922}, "url": "https://supportnear.com/#p=node/12394097243@-3.31345,114.58922"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "POSKO PMI Provinsi Kalimantan Selatan", "address": "Jl. S. Parman No. 14", "telephone": "+62 852 4878 3014", "geo": {"@type": "GeoCoordinates", "latitude": -3.31333, "longitude": 114.5894}, "url": "https://supportnear.com/#p=node/12394097238@-3.31333,114.58940"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Panti Asuhan Putra Muhammadiyah Bonang", "geo": {"@type": "GeoCoordinates", "latitude": -3.31706, "longitude": 114.6043}, "url": "https://supportnear.com/#p=way/578061442@-3.31706,114.60430"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Rumah Yatim", "geo": {"@type": "GeoCoordinates", "latitude": -3.32141, "longitude": 114.57819}, "url": "https://supportnear.com/#p=node/6630505537@-3.32141,114.57819"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="banjarmasin">All free help in Banjarmasin</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="banjarmasin">All free help in Banjarmasin</a></header><main>
 <h1>Social services in Banjarmasin</h1>
 <p class="lede">4 places within 10 km of the centre of Banjarmasin where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Banjarmasin&amp;cc=ID&amp;need=social">Open the map of Banjarmasin</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Banjarmasin&amp;cc=ID&amp;need=social">Open the map of Banjarmasin</a>
 <a class="btn" href="banjarmasin.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

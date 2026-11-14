@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Puebla", "description": "7 sitios en Puebla, México, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/puebla-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Puebla", "containedInPlace": {"@type": "Country", "name": "México"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Puebla", "item": "https://supportnear.com/c/puebla"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Puebla", "item": "https://supportnear.com/c/puebla-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Puebla", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Instituto Poblano de las Mujeres", "address": "Calle 2 Sur 902, 72000, Puebla", "telephone": "+55 222 309 0900", "openingHours": "Mo-Fr 09:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 19.0404, "longitude": -98.19879}, "url": "https://supportnear.com/#p=way/484085662@19.04040,-98.19879"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Casa de Servicios y Atención a las Mujeres", "address": "Segunda Central 604, 72000, Puebla Centro", "telephone": "+52 2222242663", "openingHours": "Mo-Fr 09:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 19.04853, "longitude": -98.1898}, "url": "https://supportnear.com/#p=node/4768252427@19.04853,-98.18980"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Terraformar", "address": "Calle 15 sur 904, 72410, Puebla", "telephone": "+52 220 103 7020", "geo": {"@type": "GeoCoordinates", "latitude": 19.04635, "longitude": -98.21068}, "url": "https://supportnear.com/#p=node/12599870944@19.04635,-98.21068"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centro de Justicia para las Mujeres", "address": "Avenida 17 Poniente 1919, 72410, Puebla", "telephone": "+52 22 224 05214", "geo": {"@type": "GeoCoordinates", "latitude": 19.04582, "longitude": -98.21677}, "url": "https://supportnear.com/#p=node/6329930085@19.04582,-98.21677"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centro comunitario ADA", "address": "Avenida Humboldt 204, 72370, Puebla", "geo": {"@type": "GeoCoordinates", "latitude": 19.04334, "longitude": -98.17862}, "url": "https://supportnear.com/#p=node/11381751186@19.04334,-98.17862"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Club Britania", "geo": {"@type": "GeoCoordinates", "latitude": 19.0651, "longitude": -98.24664}, "url": "https://supportnear.com/#p=node/4795498384@19.06510,-98.24664"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Centro de Desarrollo Comunitario Habitat SNTE", "geo": {"@type": "GeoCoordinates", "latitude": 18.9652, "longitude": -98.24061}, "url": "https://supportnear.com/#p=node/7033852963@18.96520,-98.24061"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="puebla">Toda la ayuda gratis en Puebla</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="puebla">Toda la ayuda gratis en Puebla</a></header><main>
 <h1>Servicios sociales en Puebla</h1>
 <p class="lede">7 sitios a menos de 10 km del centro de Puebla donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Puebla&amp;cc=MX&amp;need=social">Abrir el mapa de Puebla</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Puebla&amp;cc=MX&amp;need=social">Abrir el mapa de Puebla</a>
 <a class="btn" href="puebla.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

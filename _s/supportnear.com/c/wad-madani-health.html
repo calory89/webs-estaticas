@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "رعاية صحية في ود مدني", "description": "5 أماكن في ود مدني، السودان، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/wad-madani-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "ود مدني", "containedInPlace": {"@type": "Country", "name": "السودان"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "ود مدني", "item": "https://supportnear.com/c/wad-madani"}, {"@type": "ListItem", "position": 3, "name": "رعاية صحية في ود مدني", "item": "https://supportnear.com/c/wad-madani-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "رعاية صحية في ود مدني", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مستشفي الشرطة", "geo": {"@type": "GeoCoordinates", "latitude": 14.39836, "longitude": 33.53302}, "url": "https://supportnear.com/#p=way/787391482@14.39836,33.53302"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مستشفي ود مدني", "geo": {"@type": "GeoCoordinates", "latitude": 14.3965, "longitude": 33.52654}, "url": "https://supportnear.com/#p=node/4662886971@14.39650,33.52654"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مركز ثريا لغسيل  الكلى", "geo": {"@type": "GeoCoordinates", "latitude": 14.4014, "longitude": 33.50557}, "url": "https://supportnear.com/#p=way/732360313@14.40140,33.50557"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مستشفي التاهيلي مدني", "geo": {"@type": "GeoCoordinates", "latitude": 14.42049, "longitude": 33.48611}, "url": "https://supportnear.com/#p=way/742171179@14.42049,33.48611"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Alsoriba Health care center", "geo": {"@type": "GeoCoordinates", "latitude": 14.31679, "longitude": 33.50201}, "url": "https://supportnear.com/#p=way/816240428@14.31679,33.50201"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wad-madani">كل المساعدة المجانية في ود مدني</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wad-madani">كل المساعدة المجانية في ود مدني</a></header><main>
 <h1>رعاية صحية في ود مدني</h1>
 <p class="lede">5 أماكن على بعد أقل من ١٠ كم من وسط ود مدني حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Wad%20Madan%C4%AB&amp;cc=SD&amp;need=health">افتح خريطة ود مدني</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Wad%20Madan%C4%AB&amp;cc=SD&amp;need=health">افتح خريطة ود مدني</a>
 <a class="btn" href="wad-madani.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

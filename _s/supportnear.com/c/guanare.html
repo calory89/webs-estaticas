@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Ayuda gratis en Guanare: 3 centros de salud y hospitales y 1 sitio donde estar", "description": "3 centros de salud y hospitales y 1 sitio donde estar a menos de 10 km del centro de Guanare, Venezuela. Dirección, horario y teléfono cuando se saben. Sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/guanare", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Guanare", "containedInPlace": {"@type": "Country", "name": "Venezuela"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Todas las ciudades", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Guanare", "item": "https://supportnear.com/c/guanare"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Los sitios con nombre más cercanos", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Prevención del Delito", "geo": {"@type": "GeoCoordinates", "latitude": 9.044, "longitude": -69.75045}, "url": "https://supportnear.com/#p=node/4395882400@9.04400,-69.75045"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Módulo de El Progreso", "geo": {"@type": "GeoCoordinates", "latitude": 9.03041, "longitude": -69.74696}, "url": "https://supportnear.com/#p=way/372056642@9.03041,-69.74696"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Módulo El Progreso", "geo": {"@type": "GeoCoordinates", "latitude": 9.03033, "longitude": -69.74688}, "url": "https://supportnear.com/#p=way/372056657@9.03033,-69.74688"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Hospital Universitario Dr. Miguel Oraá", "geo": {"@type": "GeoCoordinates", "latitude": 9.05145, "longitude": -69.73446}, "url": "https://supportnear.com/#p=way/862846507@9.05145,-69.73446"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Guanare&amp;cc=VE">Abrir el mapa en vivo de Guanare</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Guanare&amp;cc=VE">Abrir el mapa en vivo de Guanare</a></header><main>
 <h1>Ayuda gratis en Guanare</h1>
 <p class="lede">3 centros de salud y hospitales y 1 sitio donde estar a menos de 10 km del centro de Guanare, Venezuela, y más: ropa, ayuda social, asesoría legal y atención médica. Del mapa abierto, actualizado por voluntarios, comprobables uno a uno. Aquí todavía hay poco en el mapa. Si conoces un sitio, añádelo en OpenStreetMap y aparecerá aquí.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Guanare&amp;cc=VE">Abrir el mapa de Guanare</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit de prensa</a>
 <a class="btn" href="./">Todas las ciudades</a>
 <a class="btn" href="../t/guanare">Versión de texto (móviles antiguos)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

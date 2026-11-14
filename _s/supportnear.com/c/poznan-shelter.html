@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Schroniska dla bezdomnych — Poznań", "description": "Poznań, Polska — 7 miejsc z adresem, godzinami i telefonem, jeśli są znane. Darmowa mapa, bez konta, działa bez zasięgu.", "inLanguage": "pl", "url": "https://supportnear.com/c/poznan-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Poznań", "containedInPlace": {"@type": "Country", "name": "Polska"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Poznań", "item": "https://supportnear.com/c/poznan"}, {"@type": "ListItem", "position": 3, "name": "Schroniska dla bezdomnych — Poznań", "item": "https://supportnear.com/c/poznan-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Schroniska dla bezdomnych — Poznań", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Dom Charytatywny Przystań", "address": "Krańcowa 10, 61-021, Poznań", "telephone": "+48 61 879 28 98", "geo": {"@type": "GeoCoordinates", "latitude": 52.41864, "longitude": 16.97533}, "url": "https://supportnear.com/#p=way/742039459@52.41864,16.97533"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Dom Readaptacji Społecznej dla Osób Eksmitowanych", "address": "Starołęcka 36/38, 61-361, Poznań", "telephone": "+48618793354", "openingHours": "Mo-Tu 10:00-14:00; Th-Fr 10:00-14:00", "geo": {"@type": "GeoCoordinates", "latitude": 52.37065, "longitude": 16.93324}, "url": "https://supportnear.com/#p=way/131705042@52.37065,16.93324"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Stowarzyszenie Pomocy Bliźniemu \"Mar-Kot\"", "address": "Pogodna 55, 60-104, Poznań", "telephone": "+48 61 861 45 80", "geo": {"@type": "GeoCoordinates", "latitude": 52.38902, "longitude": 16.87838}, "url": "https://supportnear.com/#p=way/164864963@52.38902,16.87838"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Dom Nadziei Sióstr Elżbietanek im. św. Elżbiety", "address": "Pokrzywno 2, 61-315, Poznań", "geo": {"@type": "GeoCoordinates", "latitude": 52.367, "longitude": 16.97905}, "url": "https://supportnear.com/#p=way/832674615@52.36700,16.97905"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Ośrodek dla Bezdomnych nr 1", "telephone": "+48 61 879 82 12", "geo": {"@type": "GeoCoordinates", "latitude": 52.37221, "longitude": 17.01101}, "url": "https://supportnear.com/#p=way/582058873@52.37221,17.01101"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Markot Poznań Borówki", "telephone": "+48618768838", "geo": {"@type": "GeoCoordinates", "latitude": 52.38905, "longitude": 17.03195}, "url": "https://supportnear.com/#p=way/997550941@52.38905,17.03195"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Schronisko św. Brata Alberta", "address": "Widłakowa 3, 61-680, Poznań", "telephone": "+48 61 820 64 81", "geo": {"@type": "GeoCoordinates", "latitude": 52.47225, "longitude": 16.94639}, "url": "https://supportnear.com/#p=way/165493081@52.47225,16.94639"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="poznan">Poznań — cała darmowa pomoc</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="poznan">Poznań — cała darmowa pomoc</a></header><main>
 <h1>Schroniska dla bezdomnych — Poznań</h1>
 <p class="lede">7 miejsc w promieniu 10 km od centrum (Poznań), gdzie to jest za darmo. Z otwartej mapy, aktualizowanej przez wolontariuszy. Otwórz mapę, żeby zobaczyć wszystkie i jak tam dojść.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Pozna%C5%84&amp;cc=PL&amp;need=shelter">Otwórz mapę: Poznań</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Pozna%C5%84&amp;cc=PL&amp;need=shelter">Otwórz mapę: Poznań</a>
 <a class="btn" href="poznan.cartel">Wydrukuj plakat dla tego miasta</a>
 <a class="btn" href="./">Wszystkie miasta</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Бесплатные душевые — Волгоград", "description": "Волгоград, Россия — 26 мест с адресом, часами и телефоном, если известны. Бесплатная карта, без регистрации, работает без связи.", "inLanguage": "ru", "url": "https://supportnear.com/c/volgograd-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Волгоград", "containedInPlace": {"@type": "Country", "name": "Россия"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Волгоград", "item": "https://supportnear.com/c/volgograd"}, {"@type": "ListItem", "position": 3, "name": "Бесплатные душевые — Волгоград", "item": "https://supportnear.com/c/volgograd-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Бесплатные душевые — Волгоград", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "ЦПКиО", "geo": {"@type": "GeoCoordinates", "latitude": 48.72831, "longitude": 44.5442}, "url": "https://supportnear.com/#p=way/1532747324@48.72831,44.54420"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Пивзавод", "geo": {"@type": "GeoCoordinates", "latitude": 48.68575, "longitude": 44.48348}, "url": "https://supportnear.com/#p=node/1338487691@48.68575,44.48348"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Туалет", "geo": {"@type": "GeoCoordinates", "latitude": 48.7064, "longitude": 44.56238}, "url": "https://supportnear.com/#p=node/12810655314@48.70640,44.56238"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="volgograd">Волгоград — вся бесплатная помощь</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="volgograd">Волгоград — вся бесплатная помощь</a></header><main>
 <h1>Бесплатные душевые — Волгоград</h1>
 <p class="lede">26 мест в радиусе 10 км от центра (Волгоград), где это бесплатно. С открытой карты, которую обновляют волонтёры. Открой карту, чтобы увидеть все и как дойти пешком.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Volgograd&amp;cc=RU&amp;need=hygiene">Открыть карту: Волгоград</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Volgograd&amp;cc=RU&amp;need=hygiene">Открыть карту: Волгоград</a>
 <a class="btn" href="volgograd.cartel">Распечатать плакат для этого города</a>
 <a class="btn" href="./">Все города</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

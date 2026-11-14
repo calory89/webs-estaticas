@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Drinking water points in Calgary", "description": "7 places in Calgary, Canada, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/calgary-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Calgary", "containedInPlace": {"@type": "Country", "name": "Canada"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Calgary", "item": "https://supportnear.com/c/calgary"}, {"@type": "ListItem", "position": 3, "name": "Drinking water points in Calgary", "item": "https://supportnear.com/c/calgary-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Drinking water points in Calgary", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "City of Calgary", "geo": {"@type": "GeoCoordinates", "latitude": 51.04365, "longitude": -114.04036}, "url": "https://supportnear.com/#p=node/12439514191@51.04365,-114.04036"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "City Of Calgary", "geo": {"@type": "GeoCoordinates", "latitude": 51.05508, "longitude": -114.07327}, "url": "https://supportnear.com/#p=node/12955106904@51.05508,-114.07327"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "City of Calgary", "geo": {"@type": "GeoCoordinates", "latitude": 51.04096, "longitude": -114.02776}, "url": "https://supportnear.com/#p=node/14015597427@51.04096,-114.02776"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="calgary">All free help in Calgary</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="calgary">All free help in Calgary</a></header><main>
 <h1>Drinking water points in Calgary</h1>
 <p class="lede">7 places within 10 km of the centre of Calgary where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Calgary&amp;cc=CA&amp;need=water">Open the map of Calgary</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Calgary&amp;cc=CA&amp;need=water">Open the map of Calgary</a>
 <a class="btn" href="calgary.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

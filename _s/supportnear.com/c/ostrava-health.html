@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Ostrava", "description": "7 places in Ostrava, Czech Republic, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/ostrava-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ostrava", "containedInPlace": {"@type": "Country", "name": "Czech Republic"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Ostrava", "item": "https://supportnear.com/c/ostrava"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Ostrava", "item": "https://supportnear.com/c/ostrava-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Ostrava", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Kardioplus s.r.o.", "telephone": "+420595626886", "geo": {"@type": "GeoCoordinates", "latitude": 49.8319, "longitude": 18.27688}, "url": "https://supportnear.com/#p=node/4435726799@49.83190,18.27688"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Městská nemocnice Ostrava Fifejdy", "geo": {"@type": "GeoCoordinates", "latitude": 49.8336, "longitude": 18.27468}, "url": "https://supportnear.com/#p=way/55835663@49.83360,18.27468"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Vítkovická nemocnice", "geo": {"@type": "GeoCoordinates", "latitude": 49.8153, "longitude": 18.27056}, "url": "https://supportnear.com/#p=way/79062319@49.81530,18.27056"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Léčebna dlouhodobě nemocných", "geo": {"@type": "GeoCoordinates", "latitude": 49.81865, "longitude": 18.35258}, "url": "https://supportnear.com/#p=way/49150691@49.81865,18.35258"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bohumínská městská nemocnice", "geo": {"@type": "GeoCoordinates", "latitude": 49.91806, "longitude": 18.337}, "url": "https://supportnear.com/#p=way/152296185@49.91806,18.33700"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Fakultní nemocnice Ostrava", "geo": {"@type": "GeoCoordinates", "latitude": 49.82837, "longitude": 18.1577}, "url": "https://supportnear.com/#p=way/78232386@49.82837,18.15770"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="ostrava">All free help in Ostrava</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="ostrava">All free help in Ostrava</a></header><main>
 <h1>Clinics and hospitals in Ostrava</h1>
 <p class="lede">7 places within 10 km of the centre of Ostrava where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ostrava&amp;cc=CZ&amp;need=health">Open the map of Ostrava</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Ostrava&amp;cc=CZ&amp;need=health">Open the map of Ostrava</a>
 <a class="btn" href="ostrava.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

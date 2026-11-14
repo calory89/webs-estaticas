@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "أماكن دافئة للجلوس في طرابلس (لبنان)", "description": "6 أماكن في طرابلس، لبنان، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/tripoli-lebanon-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "طرابلس", "containedInPlace": {"@type": "Country", "name": "لبنان"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "طرابلس", "item": "https://supportnear.com/c/tripoli-lebanon"}, {"@type": "ListItem", "position": 3, "name": "أماكن دافئة للجلوس في طرابلس", "item": "https://supportnear.com/c/tripoli-lebanon-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "أماكن دافئة للجلوس في طرابلس", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مكتبة المدينة", "geo": {"@type": "GeoCoordinates", "latitude": 34.43681, "longitude": 35.84211}, "url": "https://supportnear.com/#p=node/8346372422@34.43681,35.84211"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "المعارف", "geo": {"@type": "GeoCoordinates", "latitude": 34.43684, "longitude": 35.84222}, "url": "https://supportnear.com/#p=node/8346372423@34.43684,35.84222"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "مكتبة هاجر", "geo": {"@type": "GeoCoordinates", "latitude": 34.42118, "longitude": 35.83037}, "url": "https://supportnear.com/#p=node/8346440966@34.42118,35.83037"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "AL Sadir", "geo": {"@type": "GeoCoordinates", "latitude": 34.44903, "longitude": 35.81677}, "url": "https://supportnear.com/#p=node/8158767299@34.44903,35.81677"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "AL nasor", "geo": {"@type": "GeoCoordinates", "latitude": 34.44983, "longitude": 35.81732}, "url": "https://supportnear.com/#p=node/8680663312@34.44983,35.81732"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Issam Fares Library Learning Center", "telephone": "+961 6931958", "geo": {"@type": "GeoCoordinates", "latitude": 34.36607, "longitude": 35.78191}, "url": "https://supportnear.com/#p=way/1409970864@34.36607,35.78191"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tripoli-lebanon">كل المساعدة المجانية في طرابلس</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tripoli-lebanon">كل المساعدة المجانية في طرابلس</a></header><main>
 <h1>أماكن دافئة للجلوس في طرابلس</h1>
 <p class="lede">6 أماكن على بعد أقل من ١٠ كم من وسط طرابلس حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Tripoli&amp;cc=LB&amp;need=warm">افتح خريطة طرابلس</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Tripoli&amp;cc=LB&amp;need=warm">افتح خريطة طرابلس</a>
 <a class="btn" href="tripoli-lebanon.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

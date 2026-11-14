@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Drinking water points in Kaohsiung", "description": "15 places in Kaohsiung, Taiwan, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/kaohsiung-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Kaohsiung", "containedInPlace": {"@type": "Country", "name": "Taiwan"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Kaohsiung", "item": "https://supportnear.com/c/kaohsiung"}, {"@type": "ListItem", "position": 3, "name": "Drinking water points in Kaohsiung", "item": "https://supportnear.com/c/kaohsiung-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Drinking water points in Kaohsiung", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "文化中心圖書館", "geo": {"@type": "GeoCoordinates", "latitude": 22.62588, "longitude": 120.3182}, "url": "https://supportnear.com/#p=node/7203906658@22.62588,120.31820"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "高雄師範大學", "geo": {"@type": "GeoCoordinates", "latitude": 22.62412, "longitude": 120.321}, "url": "https://supportnear.com/#p=node/7203906648@22.62412,120.32100"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Pathways Hostel 旅圖青年旅館飲水機", "openingHours": "Mo-Su 08:00-22:00", "geo": {"@type": "GeoCoordinates", "latitude": 22.61969, "longitude": 120.30195}, "url": "https://supportnear.com/#p=node/4125218389@22.61969,120.30195"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "高雄師範大學", "geo": {"@type": "GeoCoordinates", "latitude": 22.62625, "longitude": 120.32045}, "url": "https://supportnear.com/#p=node/6435566966@22.62625,120.32045"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "賀眾", "openingHours": "Mo-Su 08:30-23:00", "geo": {"@type": "GeoCoordinates", "latitude": 22.61106, "longitude": 120.31697}, "url": "https://supportnear.com/#p=node/7205437500@22.61106,120.31697"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "賀眾", "geo": {"@type": "GeoCoordinates", "latitude": 22.60785, "longitude": 120.3095}, "url": "https://supportnear.com/#p=node/4068051904@22.60785,120.30950"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "賀眾牌", "geo": {"@type": "GeoCoordinates", "latitude": 22.60491, "longitude": 120.30468}, "url": "https://supportnear.com/#p=node/6810254616@22.60491,120.30468"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "高雄火車站", "geo": {"@type": "GeoCoordinates", "latitude": 22.63948, "longitude": 120.30262}, "url": "https://supportnear.com/#p=node/4193219005@22.63948,120.30262"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kaohsiung">All free help in Kaohsiung</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kaohsiung">All free help in Kaohsiung</a></header><main>
 <h1>Drinking water points in Kaohsiung</h1>
 <p class="lede">15 places within 10 km of the centre of Kaohsiung where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Kaohsiung&amp;cc=TW&amp;need=water">Open the map of Kaohsiung</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Kaohsiung&amp;cc=TW&amp;need=water">Open the map of Kaohsiung</a>
 <a class="btn" href="kaohsiung.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

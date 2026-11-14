@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in San Jose (United States)", "description": "8 places in San Jose, United States, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/san-jose-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "San Jose", "containedInPlace": {"@type": "Country", "name": "United States"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "San Jose", "item": "https://supportnear.com/c/san-jose"}, {"@type": "ListItem", "position": 3, "name": "Free food places in San Jose", "item": "https://supportnear.com/c/san-jose-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in San Jose", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Peace Pantry", "geo": {"@type": "GeoCoordinates", "latitude": 37.33828, "longitude": -121.88337}, "url": "https://supportnear.com/#p=node/13105138590@37.33828,-121.88337"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "The Jerry Larson FOODBasket", "geo": {"@type": "GeoCoordinates", "latitude": 37.32998, "longitude": -121.91126}, "url": "https://supportnear.com/#p=node/4946490422@37.32998,-121.91126"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Choicelunch", "address": "Remuda Lane 1615, 95112, San Jose", "geo": {"@type": "GeoCoordinates", "latitude": 37.37208, "longitude": -121.90871}, "url": "https://supportnear.com/#p=node/7094806054@37.37208,-121.90871"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "San Jose Unified School District Nutrition Services", "address": "Unified Way 2222, 95125, San Jose", "openingHours": "Mo-Fr 06:00-20:00", "geo": {"@type": "GeoCoordinates", "latitude": 37.29649, "longitude": -121.87267}, "url": "https://supportnear.com/#p=node/8562598601@37.29649,-121.87267"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Second Harvest Curtner Center", "address": "Curtner Avenue 750, 95125, San Jose", "geo": {"@type": "GeoCoordinates", "latitude": 37.29168, "longitude": -121.87721}, "url": "https://supportnear.com/#p=way/43519110@37.29168,-121.87721"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CCC Food Pantry", "address": "South Capitol Avenue 990, 95127, San Jose", "geo": {"@type": "GeoCoordinates", "latitude": 37.3522, "longitude": -121.82682}, "url": "https://supportnear.com/#p=node/9998294791@37.35220,-121.82682"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Campbell Senior Nutrition Program", "address": "West Campbell Avenue 1, 95008, Campbell", "geo": {"@type": "GeoCoordinates", "latitude": 37.2887, "longitude": -121.95156}, "url": "https://supportnear.com/#p=node/8748792871@37.28870,-121.95156"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Saint Victor Food Pantry", "address": "Sierra Road 3150, 95132, San Jose", "geo": {"@type": "GeoCoordinates", "latitude": 37.39689, "longitude": -121.851}, "url": "https://supportnear.com/#p=node/8258759695@37.39689,-121.85100"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-jose">All free help in San Jose</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="san-jose">All free help in San Jose</a></header><main>
 <h1>Free food places in San Jose</h1>
 <p class="lede">8 places within 10 km of the centre of San Jose where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Jose&amp;cc=US&amp;need=food">Open the map of San Jose</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=San%20Jose&amp;cc=US&amp;need=food">Open the map of San Jose</a>
 <a class="btn" href="san-jose.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

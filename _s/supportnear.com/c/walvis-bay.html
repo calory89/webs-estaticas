@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free help in Walvis Bay: 4 free showers and 2 clinics and hospitals", "description": "4 free showers, 2 clinics and hospitals and 3 warm places to sit within 10 km of the centre of Walvis Bay, Namibia. Address, hours and phone where they are known. No account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/walvis-bay", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Walvis Bay", "containedInPlace": {"@type": "Country", "name": "Namibia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "All cities", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Walvis Bay", "item": "https://supportnear.com/c/walvis-bay"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "The closest places with a name", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Public Library", "address": "Walvis Bay", "openingHours": "Mo-Th 09:00-13:00,14:00-17:00; Fr 09:00-13:00,14:00-16:30; Sa 10:00-12:00", "geo": {"@type": "GeoCoordinates", "latitude": -22.95794, "longitude": 14.50715}, "url": "https://supportnear.com/#p=node/4993478754@-22.95794,14.50715"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Welwitschia Private Hospital", "address": "Dr. Putch Harries Drive, 13013, Walvis Bay", "geo": {"@type": "GeoCoordinates", "latitude": -22.95714, "longitude": 14.51004}, "url": "https://supportnear.com/#p=way/485398251@-22.95714,14.51004"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Lapelus", "geo": {"@type": "GeoCoordinates", "latitude": -22.94968, "longitude": 14.50803}, "url": "https://supportnear.com/#p=node/4432805394@-22.94968,14.50803"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Walvis Bay District Hospital", "address": "Tom Swemmer Street, 13013, Walvis Bay", "geo": {"@type": "GeoCoordinates", "latitude": -22.96515, "longitude": 14.50156}, "url": "https://supportnear.com/#p=way/439913826@-22.96515,14.50156"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Narraville Community Hall", "address": "Walvis Bay", "geo": {"@type": "GeoCoordinates", "latitude": -22.94995, "longitude": 14.53922}, "url": "https://supportnear.com/#p=way/542719077@-22.94995,14.53922"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Walvis%20Bay&amp;cc=NA">Open the live map of Walvis Bay</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Walvis%20Bay&amp;cc=NA">Open the live map of Walvis Bay</a></header><main>
 <h1>Free help in Walvis Bay</h1>
 <p class="lede">4 free showers, 2 clinics and hospitals and 3 warm places to sit within 10 km of the centre of Walvis Bay, Namibia, and more: clothes, social help, legal aid and health care. From the open map, updated by volunteers, checkable one by one. There is not much mapped here yet. If you know a place, add it on OpenStreetMap and it appears here.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Walvis%20Bay&amp;cc=NA">Open the map of Walvis Bay</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Press kit</a>
 <a class="btn" href="./">All cities</a>
 <a class="btn" href="../t/walvis-bay">Text-only version (old phones)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

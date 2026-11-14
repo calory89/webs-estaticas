@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Córdoba (Argentina)", "description": "6 sitios en Córdoba, Argentina, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/cordoba-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Córdoba", "containedInPlace": {"@type": "Country", "name": "Argentina"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Córdoba", "item": "https://supportnear.com/c/cordoba"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Córdoba", "item": "https://supportnear.com/c/cordoba-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Córdoba", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Asociación española de S. Mutuos", "geo": {"@type": "GeoCoordinates", "latitude": -31.40971, "longitude": -64.18467}, "url": "https://supportnear.com/#p=node/14271755701@-31.40971,-64.18467"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "La Casa de Ronald Mc Donald", "geo": {"@type": "GeoCoordinates", "latitude": -31.42623, "longitude": -64.16961}, "url": "https://supportnear.com/#p=way/482842489@-31.42623,-64.16961"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "UME Unión de Mujeres Empoderadas", "geo": {"@type": "GeoCoordinates", "latitude": -31.40499, "longitude": -64.21125}, "url": "https://supportnear.com/#p=node/11331669770@-31.40499,-64.21125"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Fundación José Gabriel Condorcanqui", "geo": {"@type": "GeoCoordinates", "latitude": -31.42465, "longitude": -64.24591}, "url": "https://supportnear.com/#p=node/3279622061@-31.42465,-64.24591"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Centro de jubilados y Hogar de día Barrio Belgrano", "address": "Fernando Abramo 2595, 5012, Córdoba", "geo": {"@type": "GeoCoordinates", "latitude": -31.37092, "longitude": -64.13494}, "url": "https://supportnear.com/#p=way/338713297@-31.37092,-64.13494"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cordoba">Toda la ayuda gratis en Córdoba</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="cordoba">Toda la ayuda gratis en Córdoba</a></header><main>
 <h1>Servicios sociales en Córdoba</h1>
 <p class="lede">6 sitios a menos de 10 km del centro de Córdoba donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=C%C3%B3rdoba&amp;cc=AR&amp;need=social">Abrir el mapa de Córdoba</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=C%C3%B3rdoba&amp;cc=AR&amp;need=social">Abrir el mapa de Córdoba</a>
 <a class="btn" href="cordoba.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

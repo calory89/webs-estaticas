@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Medan", "description": "6 places in Medan, Indonesia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/medan-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Medan", "containedInPlace": {"@type": "Country", "name": "Indonesia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Medan", "item": "https://supportnear.com/c/medan"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Medan", "item": "https://supportnear.com/c/medan-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Medan", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Dinas Perpustakaan dan Kearsipan Medan", "address": "Jalan Iskandar Muda 270, 20112, Medan", "geo": {"@type": "GeoCoordinates", "latitude": 3.58537, "longitude": 98.66168}, "url": "https://supportnear.com/#p=node/10294661752@3.58537,98.66168"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "USU", "geo": {"@type": "GeoCoordinates", "latitude": 3.57535, "longitude": 98.68549}, "url": "https://supportnear.com/#p=node/3239160616@3.57535,98.68549"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Perpustakaan UMSU", "geo": {"@type": "GeoCoordinates", "latitude": 3.61453, "longitude": 98.67568}, "url": "https://supportnear.com/#p=node/9644757003@3.61453,98.67568"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Perpustakaan USU", "geo": {"@type": "GeoCoordinates", "latitude": 3.55948, "longitude": 98.65723}, "url": "https://supportnear.com/#p=relation/9957753@3.55948,98.65723"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Perpustakaan Cabang MIPA - Universitas Sumatera Utara", "address": "Jalan Bioteknologi 1, 20222, Medan", "geo": {"@type": "GeoCoordinates", "latitude": 3.56045, "longitude": 98.65454}, "url": "https://supportnear.com/#p=way/549768932@3.56045,98.65454"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Perpustakaan Universitas Katolik Santo Thomas SU", "address": "Jalan Setia Budi 479-F, 20133, Medan Selayang", "geo": {"@type": "GeoCoordinates", "latitude": 3.54348, "longitude": 98.62209}, "url": "https://supportnear.com/#p=way/636563305@3.54348,98.62209"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="medan">All free help in Medan</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="medan">All free help in Medan</a></header><main>
 <h1>Warm places to sit in Medan</h1>
 <p class="lede">6 places within 10 km of the centre of Medan where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Medan&amp;cc=ID&amp;need=warm">Open the map of Medan</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Medan&amp;cc=ID&amp;need=warm">Open the map of Medan</a>
 <a class="btn" href="medan.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

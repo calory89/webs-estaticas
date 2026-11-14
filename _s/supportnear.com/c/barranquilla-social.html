@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Servicios sociales en Barranquilla", "description": "8 sitios en Barranquilla, Colombia, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/barranquilla-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Barranquilla", "containedInPlace": {"@type": "Country", "name": "Colombia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Barranquilla", "item": "https://supportnear.com/c/barranquilla"}, {"@type": "ListItem", "position": 3, "name": "Servicios sociales en Barranquilla", "item": "https://supportnear.com/c/barranquilla-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Servicios sociales en Barranquilla", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Comfamiliar Sede Norte", "geo": {"@type": "GeoCoordinates", "latitude": 10.99338, "longitude": -74.81543}, "url": "https://supportnear.com/#p=way/1101797720@10.99338,-74.81543"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Centro de Vida Las Flores", "address": "109A, Barranquilla", "geo": {"@type": "GeoCoordinates", "latitude": 11.03869, "longitude": -74.82657}, "url": "https://supportnear.com/#p=way/675272087@11.03869,-74.82657"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Comfamiliar - Sede Simón Bolívar", "address": "Avenida Calle 30 2B-106, Barranquilla", "geo": {"@type": "GeoCoordinates", "latitude": 10.93875, "longitude": -74.78138}, "url": "https://supportnear.com/#p=way/979843306@10.93875,-74.78138"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Troya Billar y Piscina", "address": "Calle 120, BARRANQUILLA", "geo": {"@type": "GeoCoordinates", "latitude": 10.96185, "longitude": -74.84393}, "url": "https://supportnear.com/#p=way/1274731012@10.96185,-74.84393"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bienestar Universitario", "geo": {"@type": "GeoCoordinates", "latitude": 11.01972, "longitude": -74.84813}, "url": "https://supportnear.com/#p=node/9526086235@11.01972,-74.84813"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Combarranquilla - Unidad Mario Santodomingo", "address": "Calle 34 36-24, Soledad", "geo": {"@type": "GeoCoordinates", "latitude": 10.93373, "longitude": -74.77951}, "url": "https://supportnear.com/#p=way/979876205@10.93373,-74.77951"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Combarranquilla - Salones de Eventos", "address": "Calle 33, Soledad", "geo": {"@type": "GeoCoordinates", "latitude": 10.93381, "longitude": -74.7791}, "url": "https://supportnear.com/#p=way/979876207@10.93381,-74.77910"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Aula Confusio", "geo": {"@type": "GeoCoordinates", "latitude": 11.01951, "longitude": -74.85063}, "url": "https://supportnear.com/#p=node/9528426716@11.01951,-74.85063"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="barranquilla">Toda la ayuda gratis en Barranquilla</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="barranquilla">Toda la ayuda gratis en Barranquilla</a></header><main>
 <h1>Servicios sociales en Barranquilla</h1>
 <p class="lede">8 sitios a menos de 10 km del centro de Barranquilla donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Barranquilla&amp;cc=CO&amp;need=social">Abrir el mapa de Barranquilla</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Barranquilla&amp;cc=CO&amp;need=social">Abrir el mapa de Barranquilla</a>
 <a class="btn" href="barranquilla.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

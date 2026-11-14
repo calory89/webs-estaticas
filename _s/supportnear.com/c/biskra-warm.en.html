@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Biskra", "description": "11 places in Biskra, Algeria, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/biskra-warm.en", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Biskra", "containedInPlace": {"@type": "Country", "name": "Algeria"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Biskra", "item": "https://supportnear.com/c/biskra"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Biskra", "item": "https://supportnear.com/c/biskra-warm.en"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Biskra", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مكتبة خلوط (النصر)", "address": "شارع عائلة بن ديدي, 07000", "openingHours": "Sa-Th 08:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 34.85231, "longitude": 5.7239}, "url": "https://supportnear.com/#p=node/6970253285@34.85231,5.72390"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Bibliothèque communale;المكتبة البلدية", "geo": {"@type": "GeoCoordinates", "latitude": 34.8467, "longitude": 5.73278}, "url": "https://supportnear.com/#p=node/2690182765@34.84670,5.73278"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Maison de jeunes Ben Nedjar;دار شباب بن نجار", "geo": {"@type": "GeoCoordinates", "latitude": 34.84652, "longitude": 5.72304}, "url": "https://supportnear.com/#p=way/905617556@34.84652,5.72304"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Maison de jeunes;دار الشباب", "address": "Biskra", "geo": {"@type": "GeoCoordinates", "latitude": 34.85143, "longitude": 5.71617}, "url": "https://supportnear.com/#p=way/338363838@34.85143,5.71617"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مكتبة نوميديا", "geo": {"@type": "GeoCoordinates", "latitude": 34.8527, "longitude": 5.74889}, "url": "https://supportnear.com/#p=node/5122677521@34.85270,5.74889"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "CEIL de l'Université de Biskra;مركز التعليم المكثف للغات سابقا قسم الإنجليزية قاعات الدراسة", "geo": {"@type": "GeoCoordinates", "latitude": 34.84614, "longitude": 5.74884}, "url": "https://supportnear.com/#p=node/6707644009@34.84614,5.74884"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Salle des Fêtes les Jasmins", "geo": {"@type": "GeoCoordinates", "latitude": 34.83564, "longitude": 5.71499}, "url": "https://supportnear.com/#p=way/338418744@34.83564,5.71499"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Dar Tidjani", "geo": {"@type": "GeoCoordinates", "latitude": 34.86358, "longitude": 5.70985}, "url": "https://supportnear.com/#p=node/6831478385@34.86358,5.70985"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Place", "name": "Maison de jeunes", "address": "Biskra", "geo": {"@type": "GeoCoordinates", "latitude": 34.82352, "longitude": 5.69212}, "url": "https://supportnear.com/#p=way/576914500@34.82352,5.69212"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="biskra.en">All free help in Biskra</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="biskra.en">All free help in Biskra</a></header><main>
 <h1>Warm places to sit in Biskra</h1>
 <p class="lede">11 places within 10 km of the centre of Biskra where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Biskra&amp;cc=DZ&amp;need=warm">Open the map of Biskra</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Biskra&amp;cc=DZ&amp;need=warm">Open the map of Biskra</a>
 <a class="btn" href="biskra.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

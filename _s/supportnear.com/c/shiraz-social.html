@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "خدمات اجتماعی در شیراز", "description": "5 مکان در شیراز، ایران، با نشانی، ساعت کار و تلفن در صورت مشخص بودن. نقشهٔ رایگان، بدون حساب کاربری، بدون اینترنت هم کار می‌کند.", "inLanguage": "fa", "url": "https://supportnear.com/c/shiraz-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "شیراز", "containedInPlace": {"@type": "Country", "name": "ایران"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "شیراز", "item": "https://supportnear.com/c/shiraz"}, {"@type": "ListItem", "position": 3, "name": "خدمات اجتماعی در شیراز", "item": "https://supportnear.com/c/shiraz-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "خدمات اجتماعی در شیراز", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "کلینیک درمان اعتیاد رستاک", "telephone": "07138255379", "geo": {"@type": "GeoCoordinates", "latitude": 29.59337, "longitude": 52.52285}, "url": "https://supportnear.com/#p=node/12410281096@29.59337,52.52285"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "بهزیستی استادیان", "address": "بلوار رحمت شرقی", "geo": {"@type": "GeoCoordinates", "latitude": 29.58813, "longitude": 52.53391}, "url": "https://supportnear.com/#p=way/459453279@29.58813,52.53391"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "اداره کل بهزیستی استان فارس", "geo": {"@type": "GeoCoordinates", "latitude": 29.62852, "longitude": 52.56391}, "url": "https://supportnear.com/#p=node/4404767691@29.62852,52.56391"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "اردوگاه مراقبتی شیراز", "geo": {"@type": "GeoCoordinates", "latitude": 29.56129, "longitude": 52.56488}, "url": "https://supportnear.com/#p=way/487110029@29.56129,52.56488"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مرکز توانبخشی سالمندان شبنم و شب چراغ زندگی ویژه آقایان", "geo": {"@type": "GeoCoordinates", "latitude": 29.64208, "longitude": 52.45482}, "url": "https://supportnear.com/#p=node/6888519659@29.64208,52.45482"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="shiraz">همهٔ کمک‌های رایگان در شیراز</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="shiraz">همهٔ کمک‌های رایگان در شیراز</a></header><main>
 <h1>خدمات اجتماعی در شیراز</h1>
 <p class="lede">5 مکان در کمتر از ۱۰ کیلومتری مرکز شیراز که این‌جا رایگان است. از نقشهٔ باز که داوطلبان به‌روزش می‌کنند. نقشه را باز کن تا همه را ببینی و راه پیاده را بدانی.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Shiraz&amp;cc=IR&amp;need=social">نقشهٔ شیراز را باز کن</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Shiraz&amp;cc=IR&amp;need=social">نقشهٔ شیراز را باز کن</a>
 <a class="btn" href="shiraz.cartel">چاپ پوستر برای این شهر</a>
 <a class="btn" href="./">همهٔ شهرها</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

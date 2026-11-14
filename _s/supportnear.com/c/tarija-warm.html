@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Sitios donde estar en Tarija", "description": "8 sitios en Tarija, Bolivia, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/tarija-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Tarija", "containedInPlace": {"@type": "Country", "name": "Bolivia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Tarija", "item": "https://supportnear.com/c/tarija"}, {"@type": "ListItem", "position": 3, "name": "Sitios donde estar en Tarija", "item": "https://supportnear.com/c/tarija-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Sitios donde estar en Tarija", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Biblioteca pública de Tarija", "address": "Calle General Trigo", "openingHours": "Mo-Fr 08:00-16:00", "geo": {"@type": "GeoCoordinates", "latitude": -21.53464, "longitude": -64.7349}, "url": "https://supportnear.com/#p=node/13418601501@-21.53464,-64.73490"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Bibliotecas Conventuales Franciscanas", "address": "Calle Colón 641, Tarija", "geo": {"@type": "GeoCoordinates", "latitude": -21.53383, "longitude": -64.73207}, "url": "https://supportnear.com/#p=node/5744341862@-21.53383,-64.73207"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Secretaria de la mujer y la Familia", "geo": {"@type": "GeoCoordinates", "latitude": -21.52643, "longitude": -64.73658}, "url": "https://supportnear.com/#p=node/5750508632@-21.52643,-64.73658"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca Municipal Luz Aparicio de Fuentes", "address": "Calle Hermanos Ruiloba", "geo": {"@type": "GeoCoordinates", "latitude": -21.54168, "longitude": -64.74928}, "url": "https://supportnear.com/#p=node/14097365551@-21.54168,-64.74928"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Biblioteca Central", "geo": {"@type": "GeoCoordinates", "latitude": -21.54705, "longitude": -64.72342}, "url": "https://supportnear.com/#p=node/4953746372@-21.54705,-64.72342"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Biblioteca Juan XXlll", "address": "Calle Porvenir, 0601, Tarija", "geo": {"@type": "GeoCoordinates", "latitude": -21.5391, "longitude": -64.71306}, "url": "https://supportnear.com/#p=way/504461504@-21.53910,-64.71306"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Sede Del Barrio Nuevo Amanecer", "address": "Calle El Ocaso, Tarija", "geo": {"@type": "GeoCoordinates", "latitude": -21.53516, "longitude": -64.68923}, "url": "https://supportnear.com/#p=node/14122905828@-21.53516,-64.68923"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tarija">Toda la ayuda gratis en Tarija</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="tarija">Toda la ayuda gratis en Tarija</a></header><main>
 <h1>Sitios donde estar en Tarija</h1>
 <p class="lede">8 sitios a menos de 10 km del centro de Tarija donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Tarija&amp;cc=BO&amp;need=warm">Abrir el mapa de Tarija</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Tarija&amp;cc=BO&amp;need=warm">Abrir el mapa de Tarija</a>
 <a class="btn" href="tarija.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Shelters in Baguio", "description": "7 places in Baguio, Philippines, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/baguio-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Baguio", "containedInPlace": {"@type": "Country", "name": "Philippines"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Baguio", "item": "https://supportnear.com/c/baguio"}, {"@type": "ListItem", "position": 3, "name": "Shelters in Baguio", "item": "https://supportnear.com/c/baguio-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Shelters in Baguio", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "DSWD Silungan Center", "geo": {"@type": "GeoCoordinates", "latitude": 16.40853, "longitude": 120.60051}, "url": "https://supportnear.com/#p=way/475602868@16.40853,120.60051"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Indigent Shelter", "geo": {"@type": "GeoCoordinates", "latitude": 16.40087, "longitude": 120.59661}, "url": "https://supportnear.com/#p=way/485246771@16.40087,120.59661"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Gibraltar Evacuation Center", "geo": {"@type": "GeoCoordinates", "latitude": 16.41822, "longitude": 120.62334}, "url": "https://supportnear.com/#p=way/574871548@16.41822,120.62334"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Social Development Center", "address": "Balenben Road, Baguio", "geo": {"@type": "GeoCoordinates", "latitude": 16.42077, "longitude": 120.55911}, "url": "https://supportnear.com/#p=node/5500096044@16.42077,120.55911"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Benguet Provincial Evacuation Center", "geo": {"@type": "GeoCoordinates", "latitude": 16.45567, "longitude": 120.57057}, "url": "https://supportnear.com/#p=node/6601596193@16.45567,120.57057"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="baguio">All free help in Baguio</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="baguio">All free help in Baguio</a></header><main>
 <h1>Shelters in Baguio</h1>
 <p class="lede">7 places within 10 km of the centre of Baguio where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Baguio&amp;cc=PH&amp;need=shelter">Open the map of Baguio</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Baguio&amp;cc=PH&amp;need=shelter">Open the map of Baguio</a>
 <a class="btn" href="baguio.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

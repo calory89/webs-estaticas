@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "أماكن دافئة للجلوس في وهران", "description": "4 أماكن في وهران، الجزائر، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/oran-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "وهران", "containedInPlace": {"@type": "Country", "name": "الجزائر"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "وهران", "item": "https://supportnear.com/c/oran"}, {"@type": "ListItem", "position": 3, "name": "أماكن دافئة للجلوس في وهران", "item": "https://supportnear.com/c/oran-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "أماكن دافئة للجلوس في وهران", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مكتبة وهران", "address": "نهج حمو بوتليليس, 31000, وهران", "geo": {"@type": "GeoCoordinates", "latitude": 35.70038, "longitude": -0.64635}, "url": "https://supportnear.com/#p=way/368976141@35.70038,-0.64635"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "bibliotheque ibn sina", "geo": {"@type": "GeoCoordinates", "latitude": 35.68212, "longitude": -0.61827}, "url": "https://supportnear.com/#p=node/2808001914@35.68212,-0.61827"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "م", "geo": {"@type": "GeoCoordinates", "latitude": 35.66251, "longitude": -0.63243}, "url": "https://supportnear.com/#p=node/5627228423@35.66251,-0.63243"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Bibliothèque municipale", "geo": {"@type": "GeoCoordinates", "latitude": 35.64817, "longitude": -0.61872}, "url": "https://supportnear.com/#p=way/442049612@35.64817,-0.61872"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="oran">كل المساعدة المجانية في وهران</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="oran">كل المساعدة المجانية في وهران</a></header><main>
 <h1>أماكن دافئة للجلوس في وهران</h1>
 <p class="lede">4 أماكن على بعد أقل من ١٠ كم من وسط وهران حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Oran&amp;cc=DZ&amp;need=warm">افتح خريطة وهران</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Oran&amp;cc=DZ&amp;need=warm">افتح خريطة وهران</a>
 <a class="btn" href="oran.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

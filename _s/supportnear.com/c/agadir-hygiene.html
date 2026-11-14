@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "دشّات مجانية في أكادير", "description": "17 أماكن في أكادير، المغرب، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/agadir-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "أكادير", "containedInPlace": {"@type": "Country", "name": "المغرب"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "أكادير", "item": "https://supportnear.com/c/agadir"}, {"@type": "ListItem", "position": 3, "name": "دشّات مجانية في أكادير", "item": "https://supportnear.com/c/agadir-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "دشّات مجانية في أكادير", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Toilettes", "geo": {"@type": "GeoCoordinates", "latitude": 30.41795, "longitude": -9.60482}, "url": "https://supportnear.com/#p=node/6438760684@30.41795,-9.60482"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Toilettes Publiques", "geo": {"@type": "GeoCoordinates", "latitude": 30.40098, "longitude": -9.59958}, "url": "https://supportnear.com/#p=way/709321829@30.40098,-9.59958"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Toilettes Publiques", "geo": {"@type": "GeoCoordinates", "latitude": 30.39583, "longitude": -9.59761}, "url": "https://supportnear.com/#p=way/710678797@30.39583,-9.59761"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="agadir">كل المساعدة المجانية في أكادير</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="agadir">كل المساعدة المجانية في أكادير</a></header><main>
 <h1>دشّات مجانية في أكادير</h1>
 <p class="lede">17 أماكن على بعد أقل من ١٠ كم من وسط أكادير حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Agadir&amp;cc=MA&amp;need=hygiene">افتح خريطة أكادير</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Agadir&amp;cc=MA&amp;need=hygiene">افتح خريطة أكادير</a>
 <a class="btn" href="agadir.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

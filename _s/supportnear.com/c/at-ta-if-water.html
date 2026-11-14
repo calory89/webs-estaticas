@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "نقاط مياه شرب في الطائف", "description": "4 أماكن في الطائف، المملكة العربية السعودية، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/at-ta-if-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "الطائف", "containedInPlace": {"@type": "Country", "name": "المملكة العربية السعودية"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "الطائف", "item": "https://supportnear.com/c/at-ta-if"}, {"@type": "ListItem", "position": 3, "name": "نقاط مياه شرب في الطائف", "item": "https://supportnear.com/c/at-ta-if-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "نقاط مياه شرب في الطائف", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مصنع شهار لتحلية المياه", "geo": {"@type": "GeoCoordinates", "latitude": 21.26279, "longitude": 40.40932}, "url": "https://supportnear.com/#p=node/10203564785@21.26279,40.40932"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "مركز الكوثر لتحلية", "geo": {"@type": "GeoCoordinates", "latitude": 21.25709, "longitude": 40.41814}, "url": "https://supportnear.com/#p=node/10203564786@21.25709,40.41814"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "محطة عودة لتحلية المياه", "geo": {"@type": "GeoCoordinates", "latitude": 21.25606, "longitude": 40.40206}, "url": "https://supportnear.com/#p=node/10203564784@21.25606,40.40206"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "ماء", "geo": {"@type": "GeoCoordinates", "latitude": 21.2221, "longitude": 40.41097}, "url": "https://supportnear.com/#p=node/10203564783@21.22210,40.41097"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="at-ta-if">كل المساعدة المجانية في الطائف</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="at-ta-if">كل المساعدة المجانية في الطائف</a></header><main>
 <h1>نقاط مياه شرب في الطائف</h1>
 <p class="lede">4 أماكن على بعد أقل من ١٠ كم من وسط الطائف حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=At%20Ta%27if&amp;cc=SA&amp;need=water">افتح خريطة الطائف</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=At%20Ta%27if&amp;cc=SA&amp;need=water">افتح خريطة الطائف</a>
 <a class="btn" href="at-ta-if.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

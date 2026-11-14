@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Warm places to sit in Gqeberha", "description": "8 places in Gqeberha, South Africa, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/gqeberha-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Gqeberha", "containedInPlace": {"@type": "Country", "name": "South Africa"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Gqeberha", "item": "https://supportnear.com/c/gqeberha"}, {"@type": "ListItem", "position": 3, "name": "Warm places to sit in Gqeberha", "item": "https://supportnear.com/c/gqeberha-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Warm places to sit in Gqeberha", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Gqeberha Main Public Library", "address": "Gqeberha", "geo": {"@type": "GeoCoordinates", "latitude": -33.96209, "longitude": 25.62272}, "url": "https://supportnear.com/#p=way/239011414@-33.96209,25.62272"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "North End Library", "geo": {"@type": "GeoCoordinates", "latitude": -33.94742, "longitude": 25.60352}, "url": "https://supportnear.com/#p=way/1547787434@-33.94742,25.60352"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Walmer Library", "geo": {"@type": "GeoCoordinates", "latitude": -33.9781, "longitude": 25.58438}, "url": "https://supportnear.com/#p=way/1389157830@-33.97810,25.58438"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Gqebera Public Library", "address": "Wesleyan Street, Gqeberha", "geo": {"@type": "GeoCoordinates", "latitude": -33.98924, "longitude": 25.59001}, "url": "https://supportnear.com/#p=way/1018235804@-33.98924,25.59001"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Newton Park Library", "address": "Hurd Street, Gqeberha", "geo": {"@type": "GeoCoordinates", "latitude": -33.94974, "longitude": 25.56516}, "url": "https://supportnear.com/#p=way/39270730@-33.94974,25.56516"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Nelson Mandela University", "geo": {"@type": "GeoCoordinates", "latitude": -34.0091, "longitude": 25.66717}, "url": "https://supportnear.com/#p=way/29426386@-34.00910,25.66717"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Linton Grange Library", "geo": {"@type": "GeoCoordinates", "latitude": -33.94391, "longitude": 25.51535}, "url": "https://supportnear.com/#p=way/809849418@-33.94391,25.51535"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gqeberha">All free help in Gqeberha</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="gqeberha">All free help in Gqeberha</a></header><main>
 <h1>Warm places to sit in Gqeberha</h1>
 <p class="lede">8 places within 10 km of the centre of Gqeberha where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Gqeberha&amp;cc=ZA&amp;need=warm">Open the map of Gqeberha</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Gqeberha&amp;cc=ZA&amp;need=warm">Open the map of Gqeberha</a>
 <a class="btn" href="gqeberha.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

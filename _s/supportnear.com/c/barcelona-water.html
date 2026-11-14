@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Fuentes de agua potable en Barcelona (España)", "description": "17 sitios en Barcelona, España, con dirección, horario y teléfono cuando se saben. Mapa gratis, sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/barcelona-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Barcelona", "containedInPlace": {"@type": "Country", "name": "España"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Barcelona", "item": "https://supportnear.com/c/barcelona"}, {"@type": "ListItem", "position": 3, "name": "Fuentes de agua potable en Barcelona", "item": "https://supportnear.com/c/barcelona-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Fuentes de agua potable en Barcelona", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.387, "longitude": 2.16954}, "url": "https://supportnear.com/#p=node/5404661529@41.38700,2.16954"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38738, "longitude": 2.17015}, "url": "https://supportnear.com/#p=node/5404664105@41.38738,2.17015"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38422, "longitude": 2.1689}, "url": "https://supportnear.com/#p=node/4850200621@41.38422,2.16890"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38596, "longitude": 2.16441}, "url": "https://supportnear.com/#p=node/4370090295@41.38596,2.16441"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38391, "longitude": 2.16964}, "url": "https://supportnear.com/#p=node/4333618132@41.38391,2.16964"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38484, "longitude": 2.16479}, "url": "https://supportnear.com/#p=node/12847436966@41.38484,2.16479"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38327, "longitude": 2.16495}, "url": "https://supportnear.com/#p=node/12846434843@41.38327,2.16495"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Ajuntament de Barcelona", "geo": {"@type": "GeoCoordinates", "latitude": 41.38708, "longitude": 2.17596}, "url": "https://supportnear.com/#p=node/8482304117@41.38708,2.17596"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="barcelona">Toda la ayuda gratis en Barcelona</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="barcelona">Toda la ayuda gratis en Barcelona</a></header><main>
 <h1>Fuentes de agua potable en Barcelona</h1>
 <p class="lede">17 sitios a menos de 10 km del centro de Barcelona donde esto es gratis. Del mapa abierto, actualizado por voluntarios. Abre el mapa para verlos todos y cómo llegar andando.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Barcelona&amp;cc=ES&amp;need=water">Abrir el mapa de Barcelona</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Barcelona&amp;cc=ES&amp;need=water">Abrir el mapa de Barcelona</a>
 <a class="btn" href="barcelona.cartel">Imprimir un cartel para esta ciudad</a>
 <a class="btn" href="./">Todas las ciudades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

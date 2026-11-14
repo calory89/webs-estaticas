@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Shelters in Leipzig", "description": "10 places in Leipzig, Germany, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/leipzig-shelter", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Leipzig", "containedInPlace": {"@type": "Country", "name": "Germany"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Leipzig", "item": "https://supportnear.com/c/leipzig"}, {"@type": "ListItem", "position": 3, "name": "Shelters in Leipzig", "item": "https://supportnear.com/c/leipzig-shelter"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Shelters in Leipzig", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Stadt Leipzig", "address": "Arno-Nitzsche-Straße 43", "telephone": "+49 157 39475675", "geo": {"@type": "GeoCoordinates", "latitude": 51.30996, "longitude": 12.39271}, "url": "https://supportnear.com/#p=way/1056644636@51.30996,12.39271"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Haus Alt-Schönefeld", "address": "Theklaer Straße 11, 04347, Leipzig", "telephone": "+49 341 234190", "geo": {"@type": "GeoCoordinates", "latitude": 51.36154, "longitude": 12.41971}, "url": "https://supportnear.com/#p=way/30043392@51.36154,12.41971"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Advent-Wohlfahrtswerk e.V.", "address": "Georg-Schumann-Straße 268, 04159, Leipzig", "telephone": "+49 341 420920 ext. 0", "geo": {"@type": "GeoCoordinates", "latitude": 51.37109, "longitude": 12.33446}, "url": "https://supportnear.com/#p=way/206151027@51.37109,12.33446"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Übernachtungshaus für wohnungslose Männer", "address": "Rückmarsdorfer Straße 7, 04179, Leipzig", "telephone": "+49 341 123 ext. 4504", "geo": {"@type": "GeoCoordinates", "latitude": 51.3476, "longitude": 12.31238}, "url": "https://supportnear.com/#p=way/66555694@51.34760,12.31238"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Asyl-Erstaufnahme Leipzig-Mockau I", "address": "Am alten Flughafen 8", "geo": {"@type": "GeoCoordinates", "latitude": 51.38943, "longitude": 12.39551}, "url": "https://supportnear.com/#p=way/1219273082@51.38943,12.39551"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Asyl-Erstaufnahme Leipzig-Mockau II", "address": "Graf-Zeppelin-Ring 15, 04356, Leipzig", "geo": {"@type": "GeoCoordinates", "latitude": 51.39075, "longitude": 12.39528}, "url": "https://supportnear.com/#p=way/903224785@51.39075,12.39528"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Asyl-Erstaufnahme Leipzig-Mockau III", "address": "Graf-Zeppelin-Ring 6, 04356, Leipzig", "geo": {"@type": "GeoCoordinates", "latitude": 51.39197, "longitude": 12.39558}, "url": "https://supportnear.com/#p=way/903224787@51.39197,12.39558"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Gemeinschaftsunterkunft der Stadt Leipzig", "geo": {"@type": "GeoCoordinates", "latitude": 51.37965, "longitude": 12.43396}, "url": "https://supportnear.com/#p=node/13319541170@51.37965,12.43396"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leipzig">All free help in Leipzig</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="leipzig">All free help in Leipzig</a></header><main>
 <h1>Shelters in Leipzig</h1>
 <p class="lede">10 places within 10 km of the centre of Leipzig where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Leipzig&amp;cc=DE&amp;need=shelter">Open the map of Leipzig</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Leipzig&amp;cc=DE&amp;need=shelter">Open the map of Leipzig</a>
 <a class="btn" href="leipzig.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

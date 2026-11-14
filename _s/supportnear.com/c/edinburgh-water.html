@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Drinking water points in Edinburgh", "description": "17 places in Edinburgh, United Kingdom, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/edinburgh-water", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Edinburgh", "containedInPlace": {"@type": "Country", "name": "United Kingdom"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Edinburgh", "item": "https://supportnear.com/c/edinburgh"}, {"@type": "ListItem", "position": 3, "name": "Drinking water points in Edinburgh", "item": "https://supportnear.com/c/edinburgh-water"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Drinking water points in Edinburgh", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Refill", "geo": {"@type": "GeoCoordinates", "latitude": 55.95447, "longitude": -3.18854}, "url": "https://supportnear.com/#p=node/11196118841@55.95447,-3.18854"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Top Up Tap", "geo": {"@type": "GeoCoordinates", "latitude": 55.9475, "longitude": -3.19625}, "url": "https://supportnear.com/#p=node/8337206514@55.94750,-3.19625"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Top Up Tap", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 55.95156, "longitude": -3.17377}, "url": "https://supportnear.com/#p=node/6036729041@55.95156,-3.17377"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Top Up Tap", "geo": {"@type": "GeoCoordinates", "latitude": 55.95005, "longitude": -3.20746}, "url": "https://supportnear.com/#p=node/8247957008@55.95005,-3.20746"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Top Up Tap", "geo": {"@type": "GeoCoordinates", "latitude": 55.94078, "longitude": -3.19444}, "url": "https://supportnear.com/#p=node/10706739719@55.94078,-3.19444"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Top Up Tap", "geo": {"@type": "GeoCoordinates", "latitude": 55.96482, "longitude": -3.20428}, "url": "https://supportnear.com/#p=node/11470090627@55.96482,-3.20428"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Top Up Tap", "geo": {"@type": "GeoCoordinates", "latitude": 55.9705, "longitude": -3.165}, "url": "https://supportnear.com/#p=node/7995895418@55.97050,-3.16500"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Edinburgh University", "geo": {"@type": "GeoCoordinates", "latitude": 55.92204, "longitude": -3.17661}, "url": "https://supportnear.com/#p=node/6244354385@55.92204,-3.17661"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="edinburgh">All free help in Edinburgh</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="edinburgh">All free help in Edinburgh</a></header><main>
 <h1>Drinking water points in Edinburgh</h1>
 <p class="lede">17 places within 10 km of the centre of Edinburgh where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Edinburgh&amp;cc=GB&amp;need=water">Open the map of Edinburgh</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Edinburgh&amp;cc=GB&amp;need=water">Open the map of Edinburgh</a>
 <a class="btn" href="edinburgh.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

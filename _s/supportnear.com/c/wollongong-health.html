@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Clinics and hospitals in Wollongong", "description": "5 places in Wollongong, Australia, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/wollongong-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Wollongong", "containedInPlace": {"@type": "Country", "name": "Australia"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Wollongong", "item": "https://supportnear.com/c/wollongong"}, {"@type": "ListItem", "position": 3, "name": "Clinics and hospitals in Wollongong", "item": "https://supportnear.com/c/wollongong-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Clinics and hospitals in Wollongong", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Victoria Street Private Hospital", "address": "Victoria Street 2", "geo": {"@type": "GeoCoordinates", "latitude": -34.42203, "longitude": 150.89297}, "url": "https://supportnear.com/#p=way/1302173816@-34.42203,150.89297"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Wollongong Hospital", "address": "Crown Street 348, 2500, Wollongong", "geo": {"@type": "GeoCoordinates", "latitude": -34.42452, "longitude": 150.88297}, "url": "https://supportnear.com/#p=way/444675754@-34.42452,150.88297"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Taylor Made Outcomes", "telephone": "+61 2 4208 0442", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": -34.37277, "longitude": 150.89714}, "url": "https://supportnear.com/#p=node/9488805078@-34.37277,150.89714"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Port Kembla Hospital", "address": "Cowper Street 89-91, 2502, Warrawong", "telephone": "+61 2 4223 8000", "geo": {"@type": "GeoCoordinates", "latitude": -34.48609, "longitude": 150.88121}, "url": "https://supportnear.com/#p=way/688094275@-34.48609,150.88121"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Bulli District Hospital", "geo": {"@type": "GeoCoordinates", "latitude": -34.33669, "longitude": 150.90737}, "url": "https://supportnear.com/#p=way/72046204@-34.33669,150.90737"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wollongong">All free help in Wollongong</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="wollongong">All free help in Wollongong</a></header><main>
 <h1>Clinics and hospitals in Wollongong</h1>
 <p class="lede">5 places within 10 km of the centre of Wollongong where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Wollongong&amp;cc=AU&amp;need=health">Open the map of Wollongong</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Wollongong&amp;cc=AU&amp;need=health">Open the map of Wollongong</a>
 <a class="btn" href="wollongong.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

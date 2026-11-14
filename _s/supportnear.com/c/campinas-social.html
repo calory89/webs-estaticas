@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Serviços sociais em Campinas", "description": "4 sítios em Campinas, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/campinas-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Campinas", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Campinas", "item": "https://supportnear.com/c/campinas"}, {"@type": "ListItem", "position": 3, "name": "Serviços sociais em Campinas", "item": "https://supportnear.com/c/campinas-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Serviços sociais em Campinas", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Rotary International", "address": "Avenida Benjamin Constant 1704", "geo": {"@type": "GeoCoordinates", "latitude": -22.90139, "longitude": -47.05569}, "url": "https://supportnear.com/#p=node/1713465451@-22.90139,-47.05569"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Centro Social Bertoni", "geo": {"@type": "GeoCoordinates", "latitude": -22.9409, "longitude": -47.05644}, "url": "https://supportnear.com/#p=way/1053169584@-22.94090,-47.05644"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CRAS - Bairro Santa Cruz", "geo": {"@type": "GeoCoordinates", "latitude": -22.96878, "longitude": -46.99911}, "url": "https://supportnear.com/#p=way/147965013@-22.96878,-46.99911"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Cafeq", "geo": {"@type": "GeoCoordinates", "latitude": -22.82112, "longitude": -47.06514}, "url": "https://supportnear.com/#p=way/1190902780@-22.82112,-47.06514"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="campinas">Toda a ajuda gratuita em Campinas</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="campinas">Toda a ajuda gratuita em Campinas</a></header><main>
 <h1>Serviços sociais em Campinas</h1>
 <p class="lede">4 sítios a menos de 10 km do centro de Campinas onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Campinas&amp;cc=BR&amp;need=social">Abrir o mapa de Campinas</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Campinas&amp;cc=BR&amp;need=social">Abrir o mapa de Campinas</a>
 <a class="btn" href="campinas.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

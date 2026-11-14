@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Соціальні служби — Запоріжжя", "description": "Запоріжжя, Україна — 8 місць з адресою, годинами та телефоном, якщо відомі. Безкоштовна мапа, без реєстрації, працює без зв’язку.", "inLanguage": "uk", "url": "https://supportnear.com/c/zaporizhzhia-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Запоріжжя", "containedInPlace": {"@type": "Country", "name": "Україна"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Запоріжжя", "item": "https://supportnear.com/c/zaporizhzhia"}, {"@type": "ListItem", "position": 3, "name": "Соціальні служби — Запоріжжя", "item": "https://supportnear.com/c/zaporizhzhia-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Соціальні служби — Запоріжжя", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Відділення соціальної допомоги вдома", "telephone": "+380 612 22 9910", "geo": {"@type": "GeoCoordinates", "latitude": 47.85262, "longitude": 35.12361}, "url": "https://supportnear.com/#p=node/6234262906@47.85262,35.12361"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Відділення денного перебування", "telephone": "+380 612 22 9906", "geo": {"@type": "GeoCoordinates", "latitude": 47.85259, "longitude": 35.12365}, "url": "https://supportnear.com/#p=node/6234262905@47.85259,35.12365"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Управління соціального захисту населення Запорізької міської ради", "address": "проспект Маяковського 3, 69035", "telephone": "+380 612 36 1590", "geo": {"@type": "GeoCoordinates", "latitude": 47.8437, "longitude": 35.12748}, "url": "https://supportnear.com/#p=node/6234262901@47.84370,35.12748"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Товариство Червоного Хреста України", "geo": {"@type": "GeoCoordinates", "latitude": 47.8433, "longitude": 35.10615}, "url": "https://supportnear.com/#p=node/13758160024@47.84330,35.10615"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Центр обліку бездомних осіб", "geo": {"@type": "GeoCoordinates", "latitude": 47.86053, "longitude": 35.10899}, "url": "https://supportnear.com/#p=node/6234262902@47.86053,35.10899"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Запорізький міський територіальний центр соціального обслуговування", "address": "Рекордна вулиця 9-А, 69032", "telephone": "+380 612 36 9820", "geo": {"@type": "GeoCoordinates", "latitude": 47.86062, "longitude": 35.10908}, "url": "https://supportnear.com/#p=way/312042851@47.86062,35.10908"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Запорізький обласний центр соціальної реабілітації дітей-інвалідів", "address": "Червонополянська вулиця 2, 69034", "telephone": "+380 6176 90 443", "geo": {"@type": "GeoCoordinates", "latitude": 47.85411, "longitude": 35.19598}, "url": "https://supportnear.com/#p=node/6234262908@47.85411,35.19598"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="zaporizhzhia">Запоріжжя — уся безкоштовна допомога</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="zaporizhzhia">Запоріжжя — уся безкоштовна допомога</a></header><main>
 <h1>Соціальні служби — Запоріжжя</h1>
 <p class="lede">8 місць у радіусі 10 км від центру (Запоріжжя), де це безкоштовно. З відкритої мапи, яку оновлюють волонтери. Відкрий мапу, щоб побачити всі та як дійти пішки.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Zaporizhzhia&amp;cc=UA&amp;need=social">Відкрити мапу: Запоріжжя</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Zaporizhzhia&amp;cc=UA&amp;need=social">Відкрити мапу: Запоріжжя</a>
 <a class="btn" href="zaporizhzhia.cartel">Роздрукувати плакат для цього міста</a>
 <a class="btn" href="./">Усі міста</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

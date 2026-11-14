@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Distributions de repas à Rennes", "description": "7 lieux à Rennes, France, avec adresse, horaires et téléphone quand on les connaît. Carte gratuite, sans compte, marche sans réseau.", "inLanguage": "fr", "url": "https://supportnear.com/c/rennes-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Rennes", "containedInPlace": {"@type": "Country", "name": "France"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Rennes", "item": "https://supportnear.com/c/rennes"}, {"@type": "ListItem", "position": 3, "name": "Distributions de repas à Rennes", "item": "https://supportnear.com/c/rennes-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Distributions de repas à Rennes", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Magasin gratuit", "geo": {"@type": "GeoCoordinates", "latitude": 48.10711, "longitude": -1.67271}, "url": "https://supportnear.com/#p=node/7685474426@48.10711,-1.67271"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Les Restaurants du Cœur", "address": "Rue de l'Alma 118, 35000, Rennes", "telephone": "+33 2 23 30 28 50", "geo": {"@type": "GeoCoordinates", "latitude": 48.0968, "longitude": -1.67514}, "url": "https://supportnear.com/#p=node/5094651198@48.09680,-1.67514"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Restos du cœur", "geo": {"@type": "GeoCoordinates", "latitude": 48.12956, "longitude": -1.68582}, "url": "https://supportnear.com/#p=way/80259113@48.12956,-1.68582"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Espace de gratuité", "address": "35132, Vezin-le-Coquet", "geo": {"@type": "GeoCoordinates", "latitude": 48.12247, "longitude": -1.74095}, "url": "https://supportnear.com/#p=node/8142389728@48.12247,-1.74095"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Grainothèque", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 48.07336, "longitude": -1.70971}, "url": "https://supportnear.com/#p=node/9325623712@48.07336,-1.70971"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Cabane à Dons", "openingHours": "Mo-Su 00:00-23:59", "geo": {"@type": "GeoCoordinates", "latitude": 48.11787, "longitude": -1.75104}, "url": "https://supportnear.com/#p=way/1296707593@48.11787,-1.75104"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Banque alimentaire de Rennes", "address": "Rue Jean-Marie Tullou 3, 35740, Pacé", "telephone": "+33 2 23 35 17 30", "geo": {"@type": "GeoCoordinates", "latitude": 48.14604, "longitude": -1.76688}, "url": "https://supportnear.com/#p=way/67399075@48.14604,-1.76688"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="rennes">Toute l’aide gratuite à Rennes</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="rennes">Toute l’aide gratuite à Rennes</a></header><main>
 <h1>Distributions de repas à Rennes</h1>
 <p class="lede">7 lieux à moins de 10 km du centre de Rennes où c’est gratuit. Depuis la carte ouverte, tenue à jour par des bénévoles. Ouvre la carte pour tout voir et savoir comment y aller à pied.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Rennes&amp;cc=FR&amp;need=food">Ouvrir la carte de Rennes</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Rennes&amp;cc=FR&amp;need=food">Ouvrir la carte de Rennes</a>
 <a class="btn" href="rennes.cartel">Imprimer une affiche pour cette ville</a>
 <a class="btn" href="./">Toutes les villes</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

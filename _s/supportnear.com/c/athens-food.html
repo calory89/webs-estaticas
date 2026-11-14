@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Free food places in Athens", "description": "8 places in Athens, Greece, with address, hours and phone where they are known. Free map, no account, works with no signal.", "inLanguage": "en", "url": "https://supportnear.com/c/athens-food", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Athens", "containedInPlace": {"@type": "Country", "name": "Greece"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Athens", "item": "https://supportnear.com/c/athens"}, {"@type": "ListItem", "position": 3, "name": "Free food places in Athens", "item": "https://supportnear.com/c/athens-food"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Free food places in Athens", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Κέντρο Σίτισης Δήμου Αθηναίων", "address": "Σοφοκλέους 70, Αθήνα", "geo": {"@type": "GeoCoordinates", "latitude": 37.98207, "longitude": 23.72392}, "url": "https://supportnear.com/#p=node/4675545391@37.98207,23.72392"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Victoria Social Centre", "address": "Γκυιλφόρδου 14", "geo": {"@type": "GeoCoordinates", "latitude": 37.99269, "longitude": 23.73047}, "url": "https://supportnear.com/#p=node/5162658695@37.99269,23.73047"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Κοινωνικό Συσσίτιο Δήμου Μοσχάτου-Ταύρου", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 37.96592, "longitude": 23.69733}, "url": "https://supportnear.com/#p=node/13036338988@37.96592,23.69733"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Κοινωνικό Παντοπωλείο Δήμου Μοσχάτου-Ταύρου", "telephone": "+30 210 3454283", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 37.96594, "longitude": 23.6973}, "url": "https://supportnear.com/#p=node/13036338989@37.96594,23.69730"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Η Αλληλεγγύη", "geo": {"@type": "GeoCoordinates", "latitude": 38.04348, "longitude": 23.75645}, "url": "https://supportnear.com/#p=node/6782732596@38.04348,23.75645"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Κοινωνικό Παντοπωλείο Πειραιά", "address": "Φίλωνος 31", "telephone": "+30 21 04117607", "geo": {"@type": "GeoCoordinates", "latitude": 37.94508, "longitude": 23.6466}, "url": "https://supportnear.com/#p=node/3768685165@37.94508,23.64660"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="athens">All free help in Athens</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="athens">All free help in Athens</a></header><main>
 <h1>Free food places in Athens</h1>
 <p class="lede">8 places within 10 km of the centre of Athens where you can get this for free. From the open map, updated by volunteers. Open the map to see them all and how to walk there.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Athens&amp;cc=GR&amp;need=food">Open the map of Athens</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Athens&amp;cc=GR&amp;need=food">Open the map of Athens</a>
 <a class="btn" href="athens.cartel">Print a poster for this city</a>
 <a class="btn" href="./">All cities</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

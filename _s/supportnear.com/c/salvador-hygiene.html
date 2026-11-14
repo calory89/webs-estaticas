@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Duchas públicas em Salvador", "description": "6 sítios em Salvador, Brasil, com morada, horário e telefone quando se sabem. Mapa gratuito, sem conta, funciona sem rede.", "inLanguage": "pt", "url": "https://supportnear.com/c/salvador-hygiene", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Salvador", "containedInPlace": {"@type": "Country", "name": "Brasil"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Salvador", "item": "https://supportnear.com/c/salvador"}, {"@type": "ListItem", "position": 3, "name": "Duchas públicas em Salvador", "item": "https://supportnear.com/c/salvador-hygiene"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Duchas públicas em Salvador", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Rodoviaria Salvador", "geo": {"@type": "GeoCoordinates", "latitude": -12.97726, "longitude": -38.46574}, "url": "https://supportnear.com/#p=node/1157490403@-12.97726,-38.46574"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Banjo e tosa", "geo": {"@type": "GeoCoordinates", "latitude": -13.00755, "longitude": -38.5001}, "url": "https://supportnear.com/#p=node/13544205305@-13.00755,-38.50010"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Douche de plage free", "geo": {"@type": "GeoCoordinates", "latitude": -13.01082, "longitude": -38.49674}, "url": "https://supportnear.com/#p=node/13544200430@-13.01082,-38.49674"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="salvador">Toda a ajuda gratuita em Salvador</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="salvador">Toda a ajuda gratuita em Salvador</a></header><main>
 <h1>Duchas públicas em Salvador</h1>
 <p class="lede">6 sítios a menos de 10 km do centro de Salvador onde isto é gratuito. Do mapa aberto, atualizado por voluntários. Abre o mapa para os ver todos e como chegar a pé.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Salvador&amp;cc=BR&amp;need=hygiene">Abrir o mapa de Salvador</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Salvador&amp;cc=BR&amp;need=hygiene">Abrir o mapa de Salvador</a>
 <a class="btn" href="salvador.cartel">Imprimir um cartaz para esta cidade</a>
 <a class="btn" href="./">Todas as cidades</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

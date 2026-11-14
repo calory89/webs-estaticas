@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "رعاية صحية في البيضاء", "description": "7 أماكن في البيضاء، ليبيا، مع العنوان والمواعيد والهاتف عند معرفتها. خريطة مجانية، بدون حساب، وتعمل بدون شبكة.", "inLanguage": "ar", "url": "https://supportnear.com/c/bayda-health", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "البيضاء", "containedInPlace": {"@type": "Country", "name": "ليبيا"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "البيضاء", "item": "https://supportnear.com/c/bayda"}, {"@type": "ListItem", "position": 3, "name": "رعاية صحية في البيضاء", "item": "https://supportnear.com/c/bayda-health"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "رعاية صحية في البيضاء", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "مستشفى البيضاء", "geo": {"@type": "GeoCoordinates", "latitude": 32.75898, "longitude": 21.74779}, "url": "https://supportnear.com/#p=way/772507549@32.75898,21.74779"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "المركز الليبي للعلاج الطبيعي والليزري", "openingHours": "Mo-Su 09:00-18:00", "geo": {"@type": "GeoCoordinates", "latitude": 32.77272, "longitude": 21.75851}, "url": "https://supportnear.com/#p=way/791762854@32.77272,21.75851"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "عيادة المستقبل", "geo": {"@type": "GeoCoordinates", "latitude": 32.76195, "longitude": 21.73939}, "url": "https://supportnear.com/#p=node/5175486423@32.76195,21.73939"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "مستشفى التميز", "geo": {"@type": "GeoCoordinates", "latitude": 32.76795, "longitude": 21.73784}, "url": "https://supportnear.com/#p=way/791743226@32.76795,21.73784"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "مستشفي السكرى", "geo": {"@type": "GeoCoordinates", "latitude": 32.75622, "longitude": 21.73512}, "url": "https://supportnear.com/#p=way/814991087@32.75622,21.73512"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bayda">كل المساعدة المجانية في البيضاء</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="bayda">كل المساعدة المجانية في البيضاء</a></header><main>
 <h1>رعاية صحية في البيضاء</h1>
 <p class="lede">7 أماكن على بعد أقل من ١٠ كم من وسط البيضاء حيث هذا مجاني. من الخريطة المفتوحة التي يحدّثها متطوعون. افتح الخريطة لترى كل الأماكن وكيف تصل سيراً.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Bayda&amp;cc=LY&amp;need=health">افتح خريطة البيضاء</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Bayda&amp;cc=LY&amp;need=health">افتح خريطة البيضاء</a>
 <a class="btn" href="bayda.cartel">اطبع ملصقاً لهذه المدينة</a>
 <a class="btn" href="./">كل المدن</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

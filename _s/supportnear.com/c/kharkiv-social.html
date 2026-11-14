@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Соціальні служби — Харків", "description": "Харків, Україна — 3 місць з адресою, годинами та телефоном, якщо відомі. Безкоштовна мапа, без реєстрації, працює без зв’язку.", "inLanguage": "uk", "url": "https://supportnear.com/c/kharkiv-social", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Харків", "containedInPlace": {"@type": "Country", "name": "Україна"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Харків", "item": "https://supportnear.com/c/kharkiv"}, {"@type": "ListItem", "position": 3, "name": "Соціальні служби — Харків", "item": "https://supportnear.com/c/kharkiv-social"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Соціальні служби — Харків", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Pridehub", "address": "Куликівський узвіз 13", "telephone": "+380934636363", "geo": {"@type": "GeoCoordinates", "latitude": 49.99545, "longitude": 36.24378}, "url": "https://supportnear.com/#p=node/13701328499@49.99545,36.24378"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Адміністрація надання послуг для Куп'янчан", "address": "вулиця Георгія Тарасенка 79", "geo": {"@type": "GeoCoordinates", "latitude": 49.97863, "longitude": 36.26916}, "url": "https://supportnear.com/#p=node/13307062790@49.97863,36.26916"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Реабілітаційний центр дітей-інвалідів та інвалідів дитинства «Промінь»", "address": "проспект Перемоги 77а", "geo": {"@type": "GeoCoordinates", "latitude": 50.06898, "longitude": 36.2079}, "url": "https://supportnear.com/#p=way/181587787@50.06898,36.20790"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kharkiv">Харків — уся безкоштовна допомога</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="kharkiv">Харків — уся безкоштовна допомога</a></header><main>
 <h1>Соціальні служби — Харків</h1>
 <p class="lede">3 місць у радіусі 10 км від центру (Харків), де це безкоштовно. З відкритої мапи, яку оновлюють волонтери. Відкрий мапу, щоб побачити всі та як дійти пішки.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Kharkiv&amp;cc=UA&amp;need=social">Відкрити мапу: Харків</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Kharkiv&amp;cc=UA&amp;need=social">Відкрити мапу: Харків</a>
 <a class="btn" href="kharkiv.cartel">Роздрукувати плакат для цього міста</a>
 <a class="btn" href="./">Усі міста</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

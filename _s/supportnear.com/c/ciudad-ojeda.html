@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Ayuda gratis en Ciudad Ojeda: 4 centros de salud y hospitales", "description": "4 centros de salud y hospitales a menos de 10 km del centro de Ciudad Ojeda, Venezuela. Dirección, horario y teléfono cuando se saben. Sin cuenta, funciona sin cobertura.", "inLanguage": "es", "url": "https://supportnear.com/c/ciudad-ojeda", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Ciudad Ojeda", "containedInPlace": {"@type": "Country", "name": "Venezuela"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Todas las ciudades", "item": "https://supportnear.com/c/"}, {"@type": "ListItem", "position": 3, "name": "Ciudad Ojeda", "item": "https://supportnear.com/c/ciudad-ojeda"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Los sitios con nombre más cercanos", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Hospital Pedro Garcia Clara", "geo": {"@type": "GeoCoordinates", "latitude": 10.20898, "longitude": -71.31029}, "url": "https://supportnear.com/#p=way/390606405@10.20898,-71.31029"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Clínica Médicos Asesores", "geo": {"@type": "GeoCoordinates", "latitude": 10.21198, "longitude": -71.3274}, "url": "https://supportnear.com/#p=way/260780613@10.21198,-71.32740"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "CDI Nueva Venezuela", "geo": {"@type": "GeoCoordinates", "latitude": 10.22167, "longitude": -71.30875}, "url": "https://supportnear.com/#p=way/1242539269@10.22167,-71.30875"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Centro Medico Colon", "geo": {"@type": "GeoCoordinates", "latitude": 10.21731, "longitude": -71.33138}, "url": "https://supportnear.com/#p=way/259607026@10.21731,-71.33138"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ciudad%20Ojeda&amp;cc=VE">Abrir el mapa en vivo de Ciudad Ojeda</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../?city=Ciudad%20Ojeda&amp;cc=VE">Abrir el mapa en vivo de Ciudad Ojeda</a></header><main>
 <h1>Ayuda gratis en Ciudad Ojeda</h1>
 <p class="lede">4 centros de salud y hospitales a menos de 10 km del centro de Ciudad Ojeda, Venezuela, y más: ropa, ayuda social, asesoría legal y atención médica. Del mapa abierto, actualizado por voluntarios, comprobables uno a uno. Aquí todavía hay poco en el mapa. Si conoces un sitio, añádelo en OpenStreetMap y aparecerá aquí.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ciudad%20Ojeda&amp;cc=VE">Abrir el mapa de Ciudad Ojeda</a>
@@ -133,7 +136,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <a class="btn" href="../prensa">Kit de prensa</a>
 <a class="btn" href="./">Todas las ciudades</a>
 <a class="btn" href="../t/ciudad-ojeda">Versión de texto (móviles antiguos)</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

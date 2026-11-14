@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Locuri calde unde să stai în Iași", "description": "10 locuri în Iași, România, cu adresă, program și telefon acolo unde se știu. Hartă gratuită, fără cont, merge fără semnal.", "inLanguage": "ro", "url": "https://supportnear.com/c/iasi-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Iași", "containedInPlace": {"@type": "Country", "name": "România"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Iași", "item": "https://supportnear.com/c/iasi"}, {"@type": "ListItem", "position": 3, "name": "Locuri calde unde să stai în Iași", "item": "https://supportnear.com/c/iasi-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Locuri calde unde să stai în Iași", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Biblioteca judeteana \"Gh. Asachi\"", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 47.16282, "longitude": 27.58158}, "url": "https://supportnear.com/#p=node/4438974294@47.16282,27.58158"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Zbor Hub Iași", "address": "Strada Grigore Ureche 18, 700023, Iași", "geo": {"@type": "GeoCoordinates", "latitude": 47.15876, "longitude": 27.58879}, "url": "https://supportnear.com/#p=way/1104929923@47.15876,27.58879"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "Institutul Cultural Francez", "address": "Iași", "geo": {"@type": "GeoCoordinates", "latitude": 47.16537, "longitude": 27.58045}, "url": "https://supportnear.com/#p=node/13614514612@47.16537,27.58045"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "Biblioteca UMF", "geo": {"@type": "GeoCoordinates", "latitude": 47.16612, "longitude": 27.58389}, "url": "https://supportnear.com/#p=way/51780517@47.16612,27.58389"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "Asezamant brancovenesc", "geo": {"@type": "GeoCoordinates", "latitude": 47.15424, "longitude": 27.5786}, "url": "https://supportnear.com/#p=node/4468045707@47.15424,27.57860"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Apollonia", "geo": {"@type": "GeoCoordinates", "latitude": 47.15905, "longitude": 27.59531}, "url": "https://supportnear.com/#p=way/206566160@47.15905,27.59531"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Filiala „Mihail Sadoveanu” a Bibliotecii Județene „Gh. Asachi”", "address": "Bd. Alexandru cel Bun nr. 30 H3", "telephone": "0332 143256", "openingHours": "Mo-Fr 09:00-17:00", "geo": {"@type": "GeoCoordinates", "latitude": 47.16268, "longitude": 27.56633}, "url": "https://supportnear.com/#p=node/336660646@47.16268,27.56633"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Biblioteca DAAD", "address": "Bulevardul Carol I 11 (Corpul A), 700506", "geo": {"@type": "GeoCoordinates", "latitude": 47.17407, "longitude": 27.5721}, "url": "https://supportnear.com/#p=node/6833734685@47.17407,27.57210"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="iasi">Tot ajutorul gratuit din Iași</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="iasi">Tot ajutorul gratuit din Iași</a></header><main>
 <h1>Locuri calde unde să stai în Iași</h1>
 <p class="lede">10 locuri la mai puțin de 10 km de centrul orașului Iași unde asta este gratuit. De pe harta deschisă, ținută la zi de voluntari. Deschide harta ca să le vezi pe toate și cum ajungi pe jos.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Ia%C8%99i&amp;cc=RO&amp;need=warm">Deschide harta orașului Iași</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Ia%C8%99i&amp;cc=RO&amp;need=warm">Deschide harta orașului Iași</a>
 <a class="btn" href="iasi.cartel">Tipărește un afiș pentru acest oraș</a>
 <a class="btn" href="./">Toate orașele</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>

@@ -70,6 +70,9 @@ pre code{background:none;padding:0}
   text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
   border-radius:10px;padding:10px 16px;cursor:pointer}
 .btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
 figure{margin:0 0 22px}
 figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
@@ -112,8 +115,8 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Пункти обігріву — Луганськ", "description": "Луганськ, Україна — 11 місць з адресою, годинами та телефоном, якщо відомі. Безкоштовна мапа, без реєстрації, працює без зв’язку.", "inLanguage": "uk", "url": "https://supportnear.com/c/luhansk-warm", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}, "about": {"@type": "City", "name": "Луганськ", "containedInPlace": {"@type": "Country", "name": "Україна"}}, "dateModified": "2026-10-28"}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Луганськ", "item": "https://supportnear.com/c/luhansk"}, {"@type": "ListItem", "position": 3, "name": "Пункти обігріву — Луганськ", "item": "https://supportnear.com/c/luhansk-warm"}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "Пункти обігріву — Луганськ", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Place", "name": "Дом молодежи", "geo": {"@type": "GeoCoordinates", "latitude": 48.57449, "longitude": 39.28668}, "url": "https://supportnear.com/#p=way/478618400@48.57449,39.28668"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Place", "name": "Бібліотека імені Горького", "geo": {"@type": "GeoCoordinates", "latitude": 48.56835, "longitude": 39.31712}, "url": "https://supportnear.com/#p=node/12654131005@48.56835,39.31712"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Place", "name": "ПК ім. В.І. Леніна", "geo": {"@type": "GeoCoordinates", "latitude": 48.5771, "longitude": 39.31777}, "url": "https://supportnear.com/#p=node/5489241921@48.57710,39.31777"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Place", "name": "\"Радость\"", "geo": {"@type": "GeoCoordinates", "latitude": 48.56507, "longitude": 39.27526}, "url": "https://supportnear.com/#p=node/4917759622@48.56507,39.27526"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Place", "name": "ДК Студентов", "geo": {"@type": "GeoCoordinates", "latitude": 48.56633, "longitude": 39.23465}, "url": "https://supportnear.com/#p=node/12594412219@48.56633,39.23465"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Place", "name": "Библіотека СНУ", "geo": {"@type": "GeoCoordinates", "latitude": 48.56665, "longitude": 39.37908}, "url": "https://supportnear.com/#p=node/12703910804@48.56665,39.37908"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Place", "name": "Центр творчості дітей та юнацтва Жовтневого району", "geo": {"@type": "GeoCoordinates", "latitude": 48.55854, "longitude": 39.37788}, "url": "https://supportnear.com/#p=way/255529542@48.55854,39.37788"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Place", "name": "Бібліотека для дітей", "geo": {"@type": "GeoCoordinates", "latitude": 48.57295, "longitude": 39.4036}, "url": "https://supportnear.com/#p=node/11389454375@48.57295,39.40360"}}]}]</script>
 </head>
 <body>
-<div class="wrap" role="main">
-<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="luhansk">Луганськ — уся безкоштовна допомога</a></header>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="luhansk">Луганськ — уся безкоштовна допомога</a></header><main>
 <h1>Пункти обігріву — Луганськ</h1>
 <p class="lede">11 місць у радіусі 10 км від центру (Луганськ), де це безкоштовно. З відкритої мапи, яку оновлюють волонтери. Відкрий мапу, щоб побачити всі та як дійти пішки.</p>
 <div class="btns"><a class="btn btn--p" href="../?city=Luhansk&amp;cc=UA&amp;need=warm">Відкрити мапу: Луганськ</a>
@@ -129,7 +132,7 @@ ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabu
 <div class="btns"><a class="btn btn--p" href="../?city=Luhansk&amp;cc=UA&amp;need=warm">Відкрити мапу: Луганськ</a>
 <a class="btn" href="luhansk.cartel">Роздрукувати плакат для цього міста</a>
 <a class="btn" href="./">Усі міста</a></div>
-<footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
+</main><footer>SupportNear &middot; OpenStreetMap (ODbL)</footer>
 </div>
 </body>
 </html>
