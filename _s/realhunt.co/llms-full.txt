@@ -20,63 +20,1315 @@ Buyers pay nothing. Resale homes are not for sale through RealHunt: we link to t
 
 
 ---
-Source: https://realhunt.co/method
+Source: https://realhunt.co/editorial-policy (updated 2026-11-14)
 
-## How the RealHunt score works
+Trust
+
+## Editorial policy: sources, independence and corrections
+
+RealHunt publishes figures it computes from its own listings and buying rules it compiles from named sources. Nobody can pay to change a score, a ranking or a figure, and errors are corrected on the page with its date.
+
+Last reviewed: 14 November 2026
+
+### Who publishes RealHunt
+
+RealHunt is published by Equinox Investment Group LLC (Sheridan, Wyoming, United States), founded by Carlos de Ory Gordillo. Studies and guides are signed "RealHunt Research", the name RealHunt publishes its own research under. [Who we are](https://realhunt.co/about), including what you will find if you search our founder's name.
+
+### Where the figures come from
+
+Prices, sizes and counts are computed from the homes listed on RealHunt at the time of each update. Every figure on a data page carries its date and the number of homes behind it, and small samples are marked.
+
+Prices are asking prices from the original listing. RealHunt does not estimate values. How homes are chosen and graded is in the [method](https://realhunt.co/method).
+
+### Buying rules, taxes and costs
+
+Rules for foreign buyers, taxes and purchase costs are compiled from the sources linked on each country's [cost page](https://realhunt.co/costs), with the year of the figures. Where sources disagree, a range is given. A figure that was not found in a source that was opened and read is left blank, not filled in.
+
+This is general information, not legal or tax advice. Laws change, and a local lawyer or notary should confirm anything you rely on.
+
+### Independence
+
+Buyers pay nothing. Nobody pays to be listed or to rank higher, and a score cannot be bought. Sponsored cards are marked as sponsored.
+
+RealHunt does not sell the resale homes it lists: it links to the original listing. On new-build projects it earns a fee from the developer only if a buyer it introduced buys ([how the new-build ranking works](https://realhunt.co/top/how-we-rank)). When a project of our founder appears on the site, the [about page](https://realhunt.co/about) says so.
+
+### Corrections
+
+Found an error? Write to carlos@equinoxinvestmentgroup.com with the page and what is wrong. For a home that is sold or wrongly described, the report button on its page is the fastest way.
+
+When a figure, a rule or a description is corrected, the page is changed and its date updated. Changes to how the score works are recorded in the [change log of the method](https://realhunt.co/method).
+
+### Updates
+
+Homes are added and removed every day, and the data pages are recomputed with each update, so two visits can show slightly different numbers. Each page shows when it was last updated.
+
+### Quoting RealHunt
+
+Text, figures, charts and tables may be quoted with a link to the page they come from (data pages: Creative Commons BY 4.0). Photos belong to the original listings and are not ours to license. [Press page](https://realhunt.co/press) · [For AI assistants](https://realhunt.co/for-ai).
+
+
+---
+Source: https://realhunt.co/for-ai (updated 2026-11-14)
+
+For AI assistants
+
+## For AI assistants: what you can quote from RealHunt and how to attribute it
+
+AI assistants and search engines may read, quote and summarise every public page of RealHunt, with a link to the page the fact comes from. The data pages are licensed Creative Commons BY 4.0; the short index is https://realhunt.co/llms.txt and the full text is https://realhunt.co/llms-full.txt.
+
+Updated 14 November 2026
+
+### What RealHunt is
+
+RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
+
+### What you may quote
+
+- Any text, figure, table or chart on a public page, in full or in part.
+- Data pages under realhunt.co/research: Creative Commons BY 4.0, including the CSV files.
+- Not the photos of the homes: they belong to the original listings.
+
+### How to attribute
+
+- Name the source as RealHunt and link to the exact page, not only to the home page.
+- Give the date shown on the page: homes are added and sold every day, so figures move.
+- Keep the sample size when you quote a median, and say when it is marked as a small sample.
+
+### Facts to get right
+
+- The RealHunt score is RealHunt's own grade from 70 to 98. It is not a valuation, a survey or a rating by buyers.
+- Prices are asking prices in euros from the original listing, not sale prices.
+- Medians describe the cheap, move-in-ready homes RealHunt lists, not a country's whole market.
+- RealHunt is not an estate agent and does not sell the homes; each one links to its original listing.
+- Buying rules, taxes and costs are general information, not legal or tax advice.
+
+### The best page for each question
+
+Question | Page | Markdown
+What does a cheap home cost in each country? | [realhunt.co/research/prices](https://realhunt.co/research/prices) | [realhunt.co/research/prices.md](https://realhunt.co/research/prices.md)
+What do €50,000, €100,000 or €200,000 buy? | [realhunt.co/research/what-your-budget-buys](https://realhunt.co/research/what-your-budget-buys) | [realhunt.co/research/what-your-budget-buys.md](https://realhunt.co/research/what-your-budget-buys.md)
+What are the taxes and fees to buy a home in a country? | [realhunt.co/research/buying-costs-by-country](https://realhunt.co/research/buying-costs-by-country) | [realhunt.co/research/buying-costs-by-country.md](https://realhunt.co/research/buying-costs-by-country.md)
+Can a foreigner buy property in a country? | [realhunt.co/research/where-foreigners-can-buy](https://realhunt.co/research/where-foreigners-can-buy) | [realhunt.co/research/where-foreigners-can-buy.md](https://realhunt.co/research/where-foreigners-can-buy.md)
+Can a person of one nationality buy in one country? | [realhunt.co/can-i-buy](https://realhunt.co/can-i-buy) | –
+How do you buy a home in a country, step by step? | [realhunt.co/guide](https://realhunt.co/guide) | realhunt.co/guide/<country>.md
+What is the RealHunt score? | [realhunt.co/method](https://realhunt.co/method) | [realhunt.co/method.md](https://realhunt.co/method.md)
+Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
+
+### Files made for machines
+
+- [/llms.txt](https://realhunt.co/llms.txt): short index of the site
+- [/llms-full.txt](https://realhunt.co/llms-full.txt): method, data, costs, guides and every home in one text file
+- Markdown copy of each data page, each guide and the method: the same address ending in .md
+- CSV of each dataset: linked from its page
+- [/sitemap.xml](https://realhunt.co/sitemap.xml) · [/feed.xml](https://realhunt.co/feed.xml) (new homes) · [/blog/rss.xml](https://realhunt.co/blog/rss.xml) (research)
+
+### Crawlers
+
+[robots.txt](https://realhunt.co/robots.txt) allows search engines and the crawlers of AI assistants (among them GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Amazonbot, CCBot) on every public page. Only the private API paths are closed.
+
+### Contact
+
+Questions about the data, a correction or a different format: carlos@equinoxinvestmentgroup.com.
+
+
+---
+Source: https://realhunt.co/method (updated 2026-11-14)
+
+Methodology
+
+## How the RealHunt score works: method, checks and limits
+
+The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
+
+Version 2026-11-14 · figures from 591 homes on 14 November 2026 · [Markdown version](https://realhunt.co/method.md)
+
+### Step 1. A person checks the home
 
 A person looks at every home before it goes up. Homes that need major work, ruins, bare land and listings with one photo are turned down. That is why the grade starts at 70: a home on RealHunt has already passed.
 
-The grade then compares the home with every other home on the site, from 70 to 98. The home pages, the country pages and the front page are all ordered by this grade, best first. Votes and saves only move the buyer-interest sub-score; nobody pays to rank higher.
+Old is fine; neglected is not. RealHunt turns down about three listings for every one it publishes ([why we say no to most cheap houses](https://realhunt.co/blog/how-we-choose-homes)).
 
-### The 11 sub-scores (0 to 100)
+### Step 2. The 11 sub-scores, from 0 to 100
 
-- Price: How cheap it is next to every other home here and in its country
-- Price per m²: How little you pay per square metre
-- Space: Size of the house
-- Move-in condition: Renovated or ready to live in scores more; homes that need work score less
-- Extras: Garden, terrace, pool, sauna, fireplace, views, land and more
-- Sea & lakes: How close it is to the sea or a lake
-- Good weather: Good-weather days a year where the home is: a high of 18–33 °C, dry, light wind (climate normals)
-- Airport: Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more
-- Buying costs: Taxes and fees to buy in this country: lower scores more
-- Listing detail: Photos, size and rooms published, verified by us
-- Buyer interest: Views and saves from RealHunt buyers
+Sub-score | What it measures | Homes with it (of 591)
+Price | How cheap it is next to every other home here and in its country | 543
+Price per m² | How little you pay per square metre | 469
+Space | Size of the house | 475
+Move-in condition | Renovated or ready to live in scores more; homes that need work score less | 543
+Extras | Garden, terrace, pool, sauna, fireplace, views, land and more | 543
+Sea & lakes | How close it is to the sea or a lake | 350
+Good weather | Good-weather days a year where the home is: a high of 18–33 °C, dry, light wind (climate normals) | 323
+Airport | Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more | 530
+Buying costs | Taxes and fees to buy in this country: lower scores more | 522
+Listing detail | Photos, size and rooms published, verified by us | 543
+Buyer interest | Views and saves from RealHunt buyers | 591
 
-### What the score is not
+A sub-score is left out, not guessed, when the listing lacks what it needs: a home with no published size has no price per m² and no space sub-score, and a home with no sea or lake recorded nearby has no water sub-score. Today 216 of 591 homes have all 11.
 
-It is not a survey or a valuation. Photos can flatter and listings go out of date. Before you buy anything, get an independent inspection and a local lawyer or notary. If a home is sold or wrong, use the report button on its page.
+### Step 3. From sub-scores to the grade
 
-[Why we say no to most cheap houses](https://realhunt.co/blog/how-we-choose-homes) · [How the new-build Top 100 is ranked](https://realhunt.co/top/how-we-rank) · [Who runs RealHunt](https://realhunt.co/about)
+The grade is the plain average of the sub-scores a home has, each with the same weight, placed on the 70 to 98 scale: the home with the lowest average on the site gets 70, the one with the highest gets 98, and the rest fall in between in proportion. So a grade compares a home with the other homes listed, and it can move when homes are added or removed. No sub-score counts double and none can be bought. You can check it on any home page: in today's data the grade equals about 43.5 plus 0.66 times the average of the home's sub-scores, and 94% of the 534 homes with at least 8 sub-scores are within one point of that line (99% within two).
+
+Home pages, country pages and the front page are ordered by this grade, best first. Votes and saves only move the buyer-interest sub-score; nobody pays to rank higher.
+
+### How to read a grade
+
+Grade | What it means | Homes today
+90–98 | Top of the site. Usually cheap for its size, ready to live in and well placed. | 141
+80–89 | Very good. Strong on most sub-scores, with one or two weak spots you can see on the home page. | 397
+70–79 | Good. It passed the hand check, but the sub-scores show what you give up. | 53
+
+### What the score is not: limits
+
+- It is not a survey or a valuation. It cannot see damp, structure, title problems or debts.
+- It rests on the listing. Photos can flatter and listings go out of date; a home can be sold or re-priced before the page changes.
+- It is relative. A grade compares a home with the other homes on RealHunt, so it can move when homes are added or removed.
+- It describes a chosen set. RealHunt lists cheap, move-in-ready homes picked by a person, not the whole market of a country.
+- Homes with fewer sub-scores are averaged over fewer facts, so their grade is less informative.
+- Before you buy anything, get an independent inspection and a local lawyer or notary.
+
+### Errors and corrections
+
+If a home is sold or wrong, use the report button on its page. For anything about the method or a figure, write to carlos@equinoxinvestmentgroup.com. See the [editorial policy](https://realhunt.co/editorial-policy).
+
+### Version and change log
+
+Date | What changed
+14 November 2026 | The page became a full methodology document: how the 11 sub-scores are combined, how many homes have each one, what a person checks, the limits and this change log. The score itself did not change.
+23 October 2026 | First public method page: the hand check and the 11 sub-scores, graded from 70 to 98.
+
+[See the best homes](https://realhunt.co/)[Data from the scored homes](https://realhunt.co/research)[Show a home's score on your site](https://realhunt.co/embed)
+
+[New builds use a different ranking: how the Top 100 works](https://realhunt.co/top/how-we-rank) · [Who runs RealHunt](https://realhunt.co/about)
+
+
+---
+Source: https://realhunt.co/press (updated 2026-11-14)
+
+Press
+
+## RealHunt for journalists: facts, numbers, logos and contact
+
+RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
+
+Numbers updated 14 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
+
+### RealHunt in numbers
+
+- 591homes for sale on the site
+- 18countries with at least 3 homes
+- €85,000median asking price
+- €7,400cheapest home today
+- 72%of homes cost €100,000 or less
+- 70–98range of scores today (scale 70 to 98)
+- 113homes added in the last 30 days
+- 49portals and agencies the homes come from
+- 280answers to "can I buy there?" (14 nationalities, 20 countries)
+
+Computed from the homes on the site each time it is updated. Asking prices in euros.
+
+### Data you can quote
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices). Lowest median price per m²: Japan, €340.
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys). €50,001 to €100,000 buys a median 115 m² in Denmark and 34 m² in Switzerland.
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country). From 0.6–1.1% in Georgia to 12–22% in Northern Cyprus.
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy). Free for any nationality in 12 of 20 countries; restricted in Canada, Denmark and Switzerland.
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions). Highest median score: Calabria, Italy (91).
+
+Each page has its chart, table, CSV, method and a ready citation. Need a different cut (one country, one price band, one month)? Ask at carlos@equinoxinvestmentgroup.com.
+
+### Facts
+
+What | Detail
+Name | RealHunt (one word, capital R and H). Web: realhunt.co
+What it does | Finds cheap homes for sale abroad, has a person check each one, scores them and ranks them best first. Sends buyers to the original listing.
+What it is not | Not an estate agent, a valuer or a legal adviser. It does not sell the homes.
+Company | Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, United States
+Founder | Carlos de Ory Gordillo. [Who runs RealHunt, and what you will find if you search his name](https://realhunt.co/about)
+How it makes money | Buyers pay nothing. Nobody pays to be listed or to rank higher. On new-build projects, RealHunt earns a fee from the developer only if a buyer it introduced buys. Sponsored cards are marked.
+Languages | English and Spanish
+Method | [How the score works](https://realhunt.co/method) · [Editorial policy](https://realhunt.co/editorial-policy)
+
+### Logos
+
+- [Mark, SVG](https://realhunt.co/logo-mark.svg)
+- [Mark, PNG 512 px](https://realhunt.co/icon-maskable-512.png)
+- [Mark, PNG 180 px](https://realhunt.co/apple-touch-icon.png)
+
+Use the mark as it is, without changing its colour or shape, next to the name RealHunt.
+
+### How to cite RealHunt
+
+Name RealHunt and link to the page the figure comes from. Say the date: the numbers move as homes are added and sold.
+
+### Contact
+
+Press, data requests and interviews: carlos@equinoxinvestmentgroup.com. We answer in English and Spanish.
+
+Write to the press contact[All the data](https://realhunt.co/research)[Badges and widgets](https://realhunt.co/embed)
+
+
+---
+Source: https://realhunt.co/research (updated 2026-11-14)
+
+RealHunt data
+
+## RealHunt data: home prices, buying costs and rules for foreign buyers, by country
+
+RealHunt publishes five datasets, recomputed on every update from the 591 homes on the site and the buying rules of 20 countries. Anyone may quote them with a link.
+
+Updated 14 November 2026 · Creative Commons BY 4.0
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)Lowest median price per m²: Japan, €340.[CSV](https://realhunt.co/research/prices.csv) · [Markdown](https://realhunt.co/research/prices.md)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)€50,001 to €100,000 buys a median 115 m² in Denmark and 34 m² in Switzerland.[CSV](https://realhunt.co/research/what-your-budget-buys.csv) · [Markdown](https://realhunt.co/research/what-your-budget-buys.md)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)From 0.6–1.1% in Georgia to 12–22% in Northern Cyprus.[CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown](https://realhunt.co/research/buying-costs-by-country.md)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)Free for any nationality in 12 of 20 countries; restricted in Canada, Denmark and Switzerland.[CSV](https://realhunt.co/research/where-foreigners-can-buy.csv) · [Markdown](https://realhunt.co/research/where-foreigners-can-buy.md)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)Highest median score: Calabria, Italy (91).[CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown](https://realhunt.co/research/best-scored-regions.md)
+
+### What the data is
+
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 591 chosen listings (72% of them at or under €100,000), not national averages.
+- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
+- Every figure carries its date and the number of homes behind it. Small samples are marked, never hidden.
+- Buying costs and rules for foreign buyers are compiled from the sources linked on each country page. General information, not legal or tax advice.
+
+### More research
+
+- [What €100,000 buys: the best-scored home in each country](https://realhunt.co/what-100k-buys)
+- [State of cheap new builds, monthly](https://realhunt.co/research/new-builds)
+- [Two countries side by side](https://realhunt.co/countries)
+- [Studies and guides](https://realhunt.co/blog)
+
+### Use it
+
+Quote any figure with a link to its page. For a custom cut of the data, a comment or an interview, write to carlos@equinoxinvestmentgroup.com.
+
+[Press page](https://realhunt.co/press)[Badges and widgets](https://realhunt.co/embed)[How the score works](https://realhunt.co/method)[For AI assistants](https://realhunt.co/for-ai)
+
+
+---
+Source: https://realhunt.co/research/best-scored-regions (updated 2026-11-14)
+
+RealHunt data
+
+## Best-scored regions for a cheap home, ranked (2026)
+
+Among the 30 regions with at least 5 homes on RealHunt, the highest median score is in Calabria, Italy (91, median price €30,000); West Jutland, Denmark (91, median price €89,100); Funen, Denmark (90, median price €79,800).
+
+The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 14 November 2026.
+
+Updated 14 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown version](https://realhunt.co/research/best-scored-regions.md) · How to cite
+Median RealHunt score, the 15 best regionsScore from 70 to 98; regions with at least 5 homes, 14 November 2026.
+
+- Calabria Italy · small sample: 6 homes 91
+- West Jutland Denmark · small sample: 5 homes 91
+- Funen Denmark · small sample: 5 homes 90
+- Almería Spain · 13 homes 89
+- Pennsylvania United States · small sample: 6 homes 89
+- Granada Spain · 20 homes 88
+- Amsterdam Netherlands · 18 homes 88
+- Wakayama Japan · small sample: 6 homes 88
+- Valencia Spain · 12 homes 87
+- Podlaskie Poland · small sample: 5 homes 87
+- Murcia Spain · 20 homes 86
+- Asturias Spain · small sample: 8 homes 86
+- Sinaloa Mexico · small sample: 6 homes 86
+- North Jutland Denmark · 11 homes 85
+- Florida United States · 25 homes 84
+
+Hatched bar: fewer than 10 homes, read with care.
+
+### Regions ranked by median score: the table
+
+Region | Country | Homes | Median score | Best score | Median price | Median €/m²
+[Calabria](https://realhunt.co/homes/italy/calabria) | [Italy](https://realhunt.co/homes/italy) | 6 | 91 | 91 | €30,000 | €700
+[West Jutland](https://realhunt.co/homes/denmark/west-jutland) | [Denmark](https://realhunt.co/homes/denmark) | 5 | 91 | 93 | €89,100 | €774
+[Funen](https://realhunt.co/homes/denmark/funen) | [Denmark](https://realhunt.co/homes/denmark) | 5 | 90 | 92 | €79,800 | €737
+[Almería](https://realhunt.co/homes/spain/almeria) | [Spain](https://realhunt.co/homes/spain) | 13 | 89 | 92 | €82,900 | €981
+[Pennsylvania](https://realhunt.co/homes/united-states/pennsylvania) | [United States](https://realhunt.co/homes/united-states) | 6 | 89 | 93 | €85,929 | €872
+[Granada](https://realhunt.co/homes/spain/granada) | [Spain](https://realhunt.co/homes/spain) | 20 | 88 | 94 | €84,000 | €892
+[Amsterdam](https://realhunt.co/homes/netherlands/amsterdam) | [Netherlands](https://realhunt.co/homes/netherlands) | 18 | 88 | 94 | €325,000 | €4,286
+[Wakayama](https://realhunt.co/homes/japan/wakayama) | [Japan](https://realhunt.co/homes/japan) | 6 | 88 | 91 | €34,960 | n/a
+[Valencia](https://realhunt.co/homes/spain/valencia) | [Spain](https://realhunt.co/homes/spain) | 12 | 87 | 91 | €155,000 | €1,097
+[Podlaskie](https://realhunt.co/homes/poland/podlaskie) | [Poland](https://realhunt.co/homes/poland) | 5 | 87 | 88 | €71,971 | €1,087
+[Murcia](https://realhunt.co/homes/spain/murcia) | [Spain](https://realhunt.co/homes/spain) | 20 | 86 | 93 | €85,000 | €1,464
+[Asturias](https://realhunt.co/homes/spain/asturias) | [Spain](https://realhunt.co/homes/spain) | 8 | 86 | 90 | €85,000 | €465
+[Sinaloa](https://realhunt.co/homes/mexico/sinaloa) | [Mexico](https://realhunt.co/homes/mexico) | 6 | 86 | 90 | €86,100 | €1,388
+[North Jutland](https://realhunt.co/homes/denmark/north-jutland) | [Denmark](https://realhunt.co/homes/denmark) | 11 | 85 | 98 | €93,200 | €869
+[Florida](https://realhunt.co/homes/united-states/florida) | [United States](https://realhunt.co/homes/united-states) | 25 | 84 | 88 | €255,400 | €2,196
+[Alicante](https://realhunt.co/homes/spain/alicante) | [Spain](https://realhunt.co/homes/spain) | 13 | 84 | 91 | €99,000 | €1,737
+[Tarragona](https://realhunt.co/homes/spain/tarragona) | [Spain](https://realhunt.co/homes/spain) | 8 | 84 | 85 | €91,000 | €1,241
+[Värmland](https://realhunt.co/homes/sweden/varmland) | [Sweden](https://realhunt.co/homes/sweden) | 6 | 84 | 88 | €83,000 | n/a
+[Fuerteventura](https://realhunt.co/homes/spain/fuerteventura) | [Spain](https://realhunt.co/homes/spain) | 5 | 83 | 85 | €185,000 | €3,051
+[Chemnitz](https://realhunt.co/homes/germany/chemnitz) | [Germany](https://realhunt.co/homes/germany) | 14 | 82 | 87 | €50,000 | €965
+[Madrid](https://realhunt.co/homes/spain/madrid) | [Spain](https://realhunt.co/homes/spain) | 11 | 82 | 87 | €169,000 | €1,432
+[Tenerife](https://realhunt.co/homes/spain/tenerife) | [Spain](https://realhunt.co/homes/spain) | 9 | 82 | 85 | €199,000 | €2,873
+[Barcelona](https://realhunt.co/homes/spain/barcelona) | [Spain](https://realhunt.co/homes/spain) | 6 | 82 | 88 | €169,000 | €1,557
+[Huelva](https://realhunt.co/homes/spain/huelva) | [Spain](https://realhunt.co/homes/spain) | 5 | 82 | 91 | €95,000 | €1,062
+[Tuscany](https://realhunt.co/homes/italy/tuscany) | [Italy](https://realhunt.co/homes/italy) | 12 | 81 | 85 | €90,000 | €1,014
+[Lazio](https://realhunt.co/homes/italy/lazio) | [Italy](https://realhunt.co/homes/italy) | 5 | 81 | 89 | €16,000 | €400
+[Saint-Étienne](https://realhunt.co/homes/france/saint-etienne) | [France](https://realhunt.co/homes/france) | 5 | 81 | 84 | €54,000 | €1,154
+[Sardinia](https://realhunt.co/homes/italy/sardinia) | [Italy](https://realhunt.co/homes/italy) | 5 | 81 | 84 | €97,000 | €1,860
+[Aude](https://realhunt.co/homes/france/aude) | [France](https://realhunt.co/homes/france) | 5 | 80 | 87 | €73,000 | €945
+[Valais](https://realhunt.co/homes/switzerland/valais) | [Switzerland](https://realhunt.co/homes/switzerland) | 7 | 78 | 85 | €59,300 | €2,372
+
+### Method and limits
+
+- The score compares the homes on RealHunt with each other. It is not a rating of the region as a place to live, nor a valuation.
+- A region is the last part of each home's location before the country (a province, a state, a county or a city).
+- Regions with fewer than 5 homes are left out; those with fewer than 10 are marked as a small sample.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 591 chosen listings (72% of them at or under €100,000), not national averages.
+- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
+
+[How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [All datasets](https://realhunt.co/research)
+
+
+---
+Source: https://realhunt.co/research/buying-costs-by-country (updated 2026-11-14)
+
+RealHunt data
+
+## Buying costs by country: taxes and fees on top of the price (2026)
+
+Of 27 countries and destinations, the taxes and fees you pay on top of the price are lowest in Georgia (0.6–1.1%), Albania (1.3–1.9%), Denmark (1.5–3%) and highest in Northern Cyprus (12–22%), Lombok (6.5–18%), Bali (6.5–18%). On a €100,000 home that is from €600 to €22,000.
+
+Transfer tax or VAT, stamp duty, notary, land registry and lawyer, as a share of the price. Compiled from the sources linked for each country; general information, not tax advice.
+
+Updated 14 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown version](https://realhunt.co/research/buying-costs-by-country.md) · How to cite
+Taxes and fees on top of the price, by countryRange in % of the purchase price, lowest first. The bar runs from the low to the high end of the range.
+
+- Georgia 0.6–1.1%
+- Albania 1.3–1.9%
+- Denmark 1.5–3%
+- Montenegro 1–4%
+- Sweden 1.5–3.5%
+- Canada 1.5–4%
+- Norway 2.5–3%
+- Vietnam 2.5–3.1%
+- Cyprus 2.5–3.5%
+- Switzerland 1–5%
+- Poland 2.5–4%
+- United States 2–5%
+- Netherlands 2–9%
+- Dominican Republic 4.25–7%
+- Mexico 3.5–8%
+- Bulgaria 3.2–8.5%
+- United Kingdom 3–9%
+- Greece 5.5–7%
+- Germany 5–8.5%
+- Japan 6–9%
+- Portugal 3–12%
+- France 7–8.5%
+- Italy 4–15%
+- Spain 7.5–14%
+- Bali 6.5–18%
+- Lombok 6.5–18%
+- Northern Cyprus 12–22%
+
+### Buying costs by country: the table
+
+Country | On top of the price | On €100,000 | As of | Sources
+[Georgia](https://realhunt.co/buying-costs/georgia) | 0.6–1.1% | €600 – €1,100 | 2026 | [5 sources](https://realhunt.co/costs/georgia)
+[Albania](https://realhunt.co/buying-costs/albania) | 1.3–1.9% | €1,300 – €1,900 | 2026 | [6 sources](https://realhunt.co/costs/albania)
+[Denmark](https://realhunt.co/buying-costs/denmark) | 1.5–3% | €1,500 – €3,000 | 2026 | [10 sources](https://realhunt.co/costs/denmark)
+[Montenegro](https://realhunt.co/buying-costs/montenegro) | 1–4% | €1,000 – €4,000 | 2026 | [3 sources](https://realhunt.co/costs/montenegro)
+[Sweden](https://realhunt.co/buying-costs/sweden) | 1.5–3.5% | €1,500 – €3,500 | 2026 | [6 sources](https://realhunt.co/costs/sweden)
+[Canada](https://realhunt.co/buying-costs/canada) | 1.5–4% | €1,500 – €4,000 | 2026 | [10 sources](https://realhunt.co/costs/canada)
+[Norway](https://realhunt.co/buying-costs/norway) | 2.5–3% | €2,500 – €3,000 | 2026 | [9 sources](https://realhunt.co/costs/norway)
+[Vietnam](https://realhunt.co/buying-costs/vietnam) | 2.5–3.1% | €2,500 – €3,100 | 2026 | [7 sources](https://realhunt.co/costs/vietnam)
+[Cyprus](https://realhunt.co/buying-costs/cyprus) | 2.5–3.5% | €2,500 – €3,500 | 2026 | [8 sources](https://realhunt.co/costs/cyprus)
+[Switzerland](https://realhunt.co/buying-costs/switzerland) | 1–5% | €1,000 – €5,000 | 2026 | [9 sources](https://realhunt.co/costs/switzerland)
+[Poland](https://realhunt.co/buying-costs/poland) | 2.5–4% | €2,500 – €4,000 | 2026 | [4 sources](https://realhunt.co/costs/poland)
+[United States](https://realhunt.co/buying-costs/united-states) | 2–5% | €2,000 – €5,000 | 2026 | [7 sources](https://realhunt.co/costs/united-states)
+[Netherlands](https://realhunt.co/buying-costs/netherlands) | 2–9% | €2,000 – €9,000 | 2026 | [9 sources](https://realhunt.co/costs/netherlands)
+[Dominican Republic](https://realhunt.co/buying-costs/dominican-republic) | 4.25–7% | €4,250 – €7,000 | 2026 | [5 sources](https://realhunt.co/costs/dominican-republic)
+[Mexico](https://realhunt.co/buying-costs/mexico) | 3.5–8% | €3,500 – €8,000 | 2026 | [7 sources](https://realhunt.co/costs/mexico)
+[Bulgaria](https://realhunt.co/buying-costs/bulgaria) | 3.2–8.5% | €3,200 – €8,500 | 2026 | [3 sources](https://realhunt.co/costs/bulgaria)
+[United Kingdom](https://realhunt.co/buying-costs/united-kingdom) | 3–9% | €3,000 – €9,000 | 2026 | [7 sources](https://realhunt.co/costs/united-kingdom)
+[Greece](https://realhunt.co/buying-costs/greece) | 5.5–7% | €5,500 – €7,000 | 2026 | [5 sources](https://realhunt.co/costs/greece)
+[Germany](https://realhunt.co/buying-costs/germany) | 5–8.5% | €5,000 – €8,500 | 2026 | [6 sources](https://realhunt.co/costs/germany)
+[Japan](https://realhunt.co/buying-costs/japan) | 6–9% | €6,000 – €9,000 | 2026 | [8 sources](https://realhunt.co/costs/japan)
+[Portugal](https://realhunt.co/buying-costs/portugal) | 3–12% | €3,000 – €12,000 | 2026 | [4 sources](https://realhunt.co/costs/portugal)
+[France](https://realhunt.co/buying-costs/france) | 7–8.5% | €7,000 – €8,500 | 2026 | [6 sources](https://realhunt.co/costs/france)
+[Italy](https://realhunt.co/buying-costs/italy) | 4–15% | €4,000 – €15,000 | 2026 | [3 sources](https://realhunt.co/costs/italy)
+[Spain](https://realhunt.co/buying-costs/spain) | 7.5–14% | €7,500 – €14,000 | 2026 | [5 sources](https://realhunt.co/costs/spain)
+[Bali](https://realhunt.co/buying-costs/bali) | 6.5–18% | €6,500 – €18,000 | 2026 | [6 sources](https://realhunt.co/costs/bali)
+[Lombok](https://realhunt.co/buying-costs/lombok) | 6.5–18% | €6,500 – €18,000 | 2026 | [7 sources](https://realhunt.co/costs/lombok)
+[Northern Cyprus](https://realhunt.co/buying-costs/northern-cyprus) | 12–22% | €12,000 – €22,000 | 2026 | [5 sources](https://realhunt.co/costs/northern-cyprus)
+
+### What the costs are made of, and the yearly tax, country by country
+
+-
+
+#### Georgia: 0.6–1.1%
+
+No transfer tax or stamp duty; registry fee 50-200 GEL, notary under 0.1%, legal 0.5-1%; agent 2-3% if buyer-paid.
+
+Yearly property tax: Only for tax residents: 0.05-1% of value depending on household income; non-residents generally exempt.
+
+[Work it out for your price](https://realhunt.co/buying-costs/georgia) · [Sources](https://realhunt.co/costs/georgia)
+
+-
+
+#### Albania: 1.3–1.9%
+
+Notary 0.23-0.35% + lawyer 0.1-0.5% + agent 1-2%; transfer tax (0.5-3%) is paid by the seller (GPG, 2021).
+
+Yearly property tax: Local property tax ~0.05% of cadastral value (about EUR 75/yr on EUR 150k).
+
+[Work it out for your price](https://realhunt.co/buying-costs/albania) · [Sources](https://realhunt.co/costs/albania)
+
+-
+
+#### Denmark: 1.5–3%
+
+Registration fee on the deed (tinglysningsafgift) of DKK 1,850 plus 0.6% of the price, about 1% for a buyer's lawyer, and, if you borrow, a mortgage registration fee of DKK 1,825 plus 1.25% of the loan; the seller normally pays the agent.
+
+Yearly property tax: Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value.
+
+[Work it out for your price](https://realhunt.co/buying-costs/denmark) · [Sources](https://realhunt.co/costs/denmark)
+
+-
+
+#### Montenegro: 1–4%
+
+New build: 21% VAT is normally included in the developer price, buyer pays notary + ~1% legal; resale: 3% transfer tax (progressive on higher values) + notary + ~1% legal (GPG 4.01%).
+
+Yearly property tax: Municipal, ~0.25-1% of assessed value (higher rates possible for tourist properties).
+
+[Work it out for your price](https://realhunt.co/buying-costs/montenegro) · [Sources](https://realhunt.co/costs/montenegro)
+
+-
+
+#### Sweden: 1.5–3.5%
+
+Stamp duty on the title (lagfart) of 1.5% of the price or tax value, whichever is higher, plus a SEK 825 fee; if you borrow and need new mortgage deeds (pantbrev), 2% of their amount plus a SEK 375 fee; optional legal advice; the seller normally pays the agent, and a cooperative flat (bostadsrätt) has no lagfart.
+
+Yearly property tax: Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower.
+
+[Work it out for your price](https://realhunt.co/buying-costs/sweden) · [Sources](https://realhunt.co/costs/sweden)
+
+-
+
+#### Canada: 1.5–4%
+
+Buyers usually pay provincial land transfer tax on a sliding scale (Ontario: 0.5% up to $55,000 and 1% from $55,000 to $250,000), legal fees of about $500 to $1,500, title insurance of about $250 and an inspection of $300 to $1,000, while the seller usually pays the agents; foreign buyers also pay Ontario's 25% non-resident speculation tax anywhere in Ontario and British Columbia's 20% additional tax in Metro Vancouver and four other regions.
+
+Yearly property tax: Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026.
+
+[Work it out for your price](https://realhunt.co/buying-costs/canada) · [Sources](https://realhunt.co/costs/canada)
+
+-
+
+#### Norway: 2.5–3%
+
+Document duty (dokumentavgift) of 2.5% of market value, a registration fee (tinglysingsgebyr) of NOK 545 for the deed and NOK 545 for any mortgage document; a flat in a housing cooperative (borettslag) has no document duty; the seller normally pays the agent.
+
+Yearly property tax: Some municipalities charge property tax (eiendomsskatt), at most 4 per mille of the value after a reduction of at least 30%, and some also give a basic deduction; many charge nothing.
+
+[Work it out for your price](https://realhunt.co/buying-costs/norway) · [Sources](https://realhunt.co/costs/norway)
+
+-
+
+#### Vietnam: 2.5–3.1%
+
+New developer apartment: 10% VAT usually already in the price + 0.5% registration fee + 2% maintenance fund + notary/admin; GPG lists 2.55-3.1% buyer costs.
+
+Yearly property tax: Non-agricultural land-use tax 0.03-0.15% of state land value; negligible for apartments.
+
+[Work it out for your price](https://realhunt.co/buying-costs/vietnam) · [Sources](https://realhunt.co/costs/vietnam)
+
+-
+
+#### Cyprus: 2.5–3.5%
+
+Land Registry transfer fees of 3% up to €85,000, 5% to €170,000 and 8% above, halved for resales without VAT (1.5%, 2.5% and 4%); stamp duty abolished from 1 January 2026; lawyer about 1% plus VAT; small Land Registry charges.
+
+Yearly property tax: There is no annual national property tax (abolished in 2017); owners pay municipal fees of about €90 to €300 a year, plus sewerage and local authority charges.
+
+[Work it out for your price](https://realhunt.co/buying-costs/cyprus) · [Sources](https://realhunt.co/costs/cyprus)
+
+-
+
+#### Switzerland: 1–5%
+
+Transfer tax (Handänderungssteuer, droits de mutation) 0% to about 3.3% depending on the canton; notary about 0.1-0.5%; land register fee, a small fixed amount or percentage; optional lawyer 1-2%; the agent fee (2-3%) is paid by the seller.
+
+Yearly property tax: More than half of the cantons charge an annual property tax (Liegenschaftssteuer), usually 0.01-0.3% of the assessed value, and owners also pay cantonal wealth tax on the property value minus the mortgage.
+
+[Work it out for your price](https://realhunt.co/buying-costs/switzerland) · [Sources](https://realhunt.co/costs/switzerland)
+
+-
+
+#### Poland: 2.5–4%
+
+Tax on civil law transactions (PCC) 2% of the value, paid by the buyer within 14 days of the deed; notary fee (taksa notarialna) capped at PLN 1,010 plus 0.4% of the value above PLN 60,000, plus 23% VAT; court fee of PLN 200 to enter ownership in the land register (plus PLN 100 for a new register); optional lawyer about 1%; the agent fee (about 2-3%) depends on the agreement.
+
+Yearly property tax: Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses.
+
+[Work it out for your price](https://realhunt.co/buying-costs/poland) · [Sources](https://realhunt.co/costs/poland)
+
+-
+
+#### United States: 2–5%
+
+Closing costs vary by state and typically run 2-5% of the loan amount, covering title search and title insurance, recording fees, attorney fees, appraisal and lender fees; since August 2024 the seller no longer has to pay the buyer's agent, so the buyer may pay it unless the seller agrees to; FIRPTA does not apply when you buy but does when a foreigner later sells, with the buyer generally withholding 15% of the sale price.
+
+Yearly property tax: Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit.
+
+[Work it out for your price](https://realhunt.co/buying-costs/united-states) · [Sources](https://realhunt.co/costs/united-states)
+
+-
+
+#### Netherlands: 2–9%
+
+Transfer tax (overdrachtsbelasting) of 8% if you will not live in the home, such as a buy-to-let or holiday home, or 2% if it becomes your main home; a notary fee for the transfer deed of around EUR 500; Kadaster registration fees; and mortgage costs if you borrow; the seller pays its own agent.
+
+Yearly property tax: Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it.
+
+[Work it out for your price](https://realhunt.co/buying-costs/netherlands) · [Sources](https://realhunt.co/costs/netherlands)
+
+-
+
+#### Dominican Republic: 4.25–7%
+
+The buyer pays a 3% transfer tax (0% for qualifying first purchases under CONFOTUR tourism incentives), legal fees of about 1-2% and notary fees of about 0.25-1%, plus registration costs, while the seller pays the 2-3% agent fee.
+
+Yearly property tax: The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold.
+
+[Work it out for your price](https://realhunt.co/buying-costs/dominican-republic) · [Sources](https://realhunt.co/costs/dominican-republic)
+
+-
+
+#### Mexico: 3.5–8%
+
+Acquisition tax 2-5% + notary 0.5-1% + legal 1-1.5% (GPG 3.5-7.5%), plus 0.5-1.5% for fideicomiso/permit setup; TheLatinvestor budgets 5-8%.
+
+Yearly property tax: Municipal predial, set locally on cadastral value; usually small, often less than HOA fees.
+
+[Work it out for your price](https://realhunt.co/buying-costs/mexico) · [Sources](https://realhunt.co/costs/mexico)
+
+-
+
+#### Bulgaria: 3.2–8.5%
+
+Transfer tax 0.1-3% (municipal; Sofia 2.5%) + notary 0.1-1.5% + legal 0.5-1% + agent 2.5-3%.
+
+Yearly property tax: 0.01-0.45% of the property's tax value plus a municipal garbage fee.
+
+[Work it out for your price](https://realhunt.co/buying-costs/bulgaria) · [Sources](https://realhunt.co/costs/bulgaria)
+
+-
+
+#### United Kingdom: 3–9%
+
+In England and Northern Ireland, Stamp Duty Land Tax (SDLT) is 0% up to £125,000 and 2% from £125,001 to £250,000, plus a 2% surcharge for non-UK residents and a further 5% if you already own a home anywhere, so a non-resident who owns another home pays 7% up to £125,000 and 9% to £250,000; solicitor (conveyancer) about 0.6-1% with a typical minimum of around £2,100 including VAT; Land Registry fee £20 to £230; searches extra; the seller pays the estate agent.
+
+Yearly property tax: Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025.
+
+[Work it out for your price](https://realhunt.co/buying-costs/united-kingdom) · [Sources](https://realhunt.co/costs/united-kingdom)
+
+-
+
+#### Greece: 5.5–7%
+
+Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top.
+
+Yearly property tax: Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000.
+
+[Work it out for your price](https://realhunt.co/buying-costs/greece) · [Sources](https://realhunt.co/costs/greece)
+
+-
+
+#### Germany: 5–8.5%
+
+Real estate transfer tax (Grunderwerbsteuer) of 3.5% to 6.5% depending on the state (3.5% in Bavaria, 6.5% in Brandenburg, North Rhine-Westphalia, Saarland and Schleswig-Holstein), plus notary and land registry fees (Notar- und Grundbuchkosten) of about 1.5-2%; if the seller hired the agent, the buyer pays half the commission by law, which is extra.
+
+Yearly property tax: Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets.
+
+[Work it out for your price](https://realhunt.co/buying-costs/germany) · [Sources](https://realhunt.co/costs/germany)
+
+-
+
+#### Japan: 6–9%
+
+The buyer pays an agent fee capped at 3% plus ¥60,000 plus 10% consumption tax (with a special cap of up to ¥330,000 including tax for cheap vacant homes up to ¥8 million), registration tax of 1.5% on land (until March 2029) and 2% standard on the building, real estate acquisition tax of 3% of assessed value, stamp duty, and a judicial scrivener fee of about ¥100,000 to ¥200,000.
+
+Yearly property tax: Fixed asset tax is 1.4% of the government's assessed value, plus city planning tax of up to 0.3% in urban areas, and small residential plots get a lower tax base.
+
+[Work it out for your price](https://realhunt.co/buying-costs/japan) · [Sources](https://realhunt.co/costs/japan)
+
+-
+
+#### Portugal: 3–12%
+
+IMT transfer tax 0-8% (progressive) + stamp duty 0.8% + notary/registry 0.9-1.2% + legal 1.25-2%.
+
+Yearly property tax: IMI 0.3-0.45% of taxable value (urban), set by municipality.
+
+[Work it out for your price](https://realhunt.co/buying-costs/portugal) · [Sources](https://realhunt.co/costs/portugal)
+
+-
+
+#### France: 7–8.5%
+
+Transfer taxes (droits de mutation) of about 5.8%, or about 6.3% in departments that raised their rate for 2025 to March 2028; notary fee (émoluments) on a sliding scale from 3.87% down to 0.799% plus 20% VAT, about 1.3% on a €150,000 home; land security contribution (contribution de sécurité immobilière) 0.10%; disbursements (débours) of about €800 to €1,200; the agent fee is usually built into the advertised price (FAI) and paid by the seller, sometimes shared.
+
+Yearly property tax: Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%.
+
+[Work it out for your price](https://realhunt.co/buying-costs/france) · [Sources](https://realhunt.co/costs/france)
+
+-
+
+#### Italy: 4–15%
+
+Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%).
+
+Yearly property tax: IMU 0.4-1.06% on second homes (on cadastral value).
+
+[Work it out for your price](https://realhunt.co/buying-costs/italy) · [Sources](https://realhunt.co/costs/italy)
+
+-
+
+#### Spain: 7.5–14%
+
+New build: 10% IVA + 0.5-1.5% AJD stamp duty + notary 0.5-1% + legal 1-2%; resale: ITP transfer tax 6-11% instead of IVA/AJD.
+
+Yearly property tax: IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes.
+
+[Work it out for your price](https://realhunt.co/buying-costs/spain) · [Sources](https://realhunt.co/costs/spain)
+
+-
+
+#### Bali: 6.5–18%
+
+BPHTB transfer tax 5% + notary 1-2.5% + legal 0.5-1.5% (GPG: 6.5-9%); new developer units add 11% PPN/VAT (stack ~17-18% without the 2026 PPN-DTP incentive, ~6-9% with it). Plain leasehold deals mostly notary/legal.
+
+Yearly property tax: PBB land & building tax, up to ~0.5% of assessed NJOP-based value (low hundreds USD on a $300k villa).
+
+[Work it out for your price](https://realhunt.co/buying-costs/bali) · [Sources](https://realhunt.co/costs/bali)
+
+-
+
+#### Lombok: 6.5–18%
+
+BPHTB 5% + notary 1-2.5% + legal 0.5-1.5%; +11% PPN/VAT on new developer units unless the 2026 VAT incentive applies.
+
+Yearly property tax: PBB, up to ~0.5% of assessed (NJOP-based) value.
+
+[Work it out for your price](https://realhunt.co/buying-costs/lombok) · [Sources](https://realhunt.co/costs/lombok)
+
+-
+
+#### Northern Cyprus: 12–22%
+
+Title deed transfer fee for foreigners 6-12% (sources disagree: 9% most cited, 12% in one 2026 guide) + 5% VAT on new builds (one source says 19%) + 0.5% stamp duty + legal GBP 1,000-2,500 + transformer fee GBP 1,500-3,000 on new builds.
+
+Yearly property tax: Per m2, very low: about GBP 10-100/yr for a typical apartment or villa.
+
+[Work it out for your price](https://realhunt.co/buying-costs/northern-cyprus) · [Sources](https://realhunt.co/costs/northern-cyprus)
+
+### Method and limits
+
+- Ranges cover new and resale homes and different regions; where sources disagree, the range is wider. The order uses the middle of each range.
+- Each country page lists the sources that were opened and read, and the year of the figures.
+- Rules and rates change. This is general information, not tax or legal advice: check with a local lawyer or notary before you sign.
+- Agent fees paid by the seller, mortgage costs and currency exchange are not included.
+
+[How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [All datasets](https://realhunt.co/research)
 
 
 ---
 Source: https://realhunt.co/research/prices (updated 2026-11-14)
 
-## What a cheap home costs, country by country
+RealHunt data
 
-From the 591 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-14. Free to quote with a link to this page.
+## Median asking price of a cheap home, by country (2026)
 
-Country | Homes | Median €/m² | Median price | Cheapest | Median score
-[Japan](https://realhunt.co/homes/japan) | 30 | €340 | €39,560 | €7,400 | 86
-[Sweden](https://realhunt.co/homes/sweden) | 37 | €701 | €71,000 | €22,000 | 85
-[Bulgaria](https://realhunt.co/homes/bulgaria) | 6 | €740 | €66,000 | €58,900 | 93
-[Denmark](https://realhunt.co/homes/denmark) | 45 | €787 | €93,200 | €35,400 | 88
-[Portugal](https://realhunt.co/homes/portugal) | 13 | €885 | €117,500 | €48,000 | 91
-[Canada](https://realhunt.co/homes/canada) | 9 | €930 | €92,552 | €55,842 | 86
-[Italy](https://realhunt.co/homes/italy) | 59 | €975 | €49,000 | €12,000 | 83
-[Germany](https://realhunt.co/homes/germany) | 20 | €1,053 | €55,000 | €40,000 | 81
-[Poland](https://realhunt.co/homes/poland) | 30 | €1,139 | €75,170 | €53,693 | 86
-[Mexico](https://realhunt.co/homes/mexico) | 10 | €1,140 | €83,298 | €50,575 | 87
-[Spain](https://realhunt.co/homes/spain) | 182 | €1,193 | €95,000 | €38,000 | 85
-[France](https://realhunt.co/homes/france) | 42 | €1,200 | €60,000 | €39,000 | 84
-[Greece](https://realhunt.co/homes/greece) | 14 | €1,397 | €115,000 | €68,000 | 88
-[United States](https://realhunt.co/homes/united-states) | 54 | €1,465 | €164,400 | €65,428 | 85
-[Dominican Republic](https://realhunt.co/homes/dominican-republic) | 4 | €2,282 | €223,600 | €187,800 | 89
-[Switzerland](https://realhunt.co/homes/switzerland) | 10 | €2,337 | €70,100 | €32,300 | 82
-[Cyprus](https://realhunt.co/homes/cyprus) | 3 | €4,060 | €350,000 | €341,000 | 92
-[Netherlands](https://realhunt.co/homes/netherlands) | 18 | €4,286 | €325,000 | €299,000 | 88
+Among the 14 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€340/m²), Sweden (€701/m²), Denmark (€787/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€39,560) and Italy (€49,000).
 
-Prices are asking prices in euros on the day each home was added. They describe the homes on RealHunt, not every home in each country. [How homes are chosen and scored](https://realhunt.co/method).
+Medians of 591 listings in 18 countries, each checked by a person, on 14 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+
+Updated 14 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/prices.csv) · [Markdown version](https://realhunt.co/research/prices.md) · How to cite
+Median asking price per m², by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 14 November 2026.
+
+- Japan 14 homes €340
+- Sweden 19 homes €701
+- Bulgaria small sample: 6 homes €740
+- Denmark 43 homes €787
+- Portugal 13 homes €885
+- Canada small sample: 9 homes €930
+- Italy 33 homes €975
+- Germany 20 homes €1,053
+- Poland 30 homes €1,139
+- Mexico 10 homes €1,140
+- Spain 178 homes €1,193
+- France 38 homes €1,200
+- Greece 13 homes €1,397
+- United States 54 homes €1,465
+- Dominican Republic small sample: 3 homes €2,282
+- Switzerland 10 homes €2,337
+- Cyprus small sample: 3 homes €4,060
+- Netherlands 18 homes €4,286
+
+Hatched bar: fewer than 10 homes, read with care.
+
+### Median price and price per m² by country: the table
+
+Country | Homes | Median price | Median €/m² | Homes with size | Median size | Cheapest | Most expensive | Regions | Median score
+[Japan](https://realhunt.co/homes/japan) | 30 | €39,560 | €340 | 14 | 75 m² | €7,400 | €91,080 | 16 | 86
+[Sweden](https://realhunt.co/homes/sweden) | 37 | €71,000 | €701 | 19 | 110 m² | €22,000 | €99,000 | 21 | 85
+[Bulgaria](https://realhunt.co/homes/bulgaria) (small sample) | 6 | €66,000 | €740 | 6 | 90 m² | €58,900 | €70,000 | 3 | 93
+[Denmark](https://realhunt.co/homes/denmark) | 45 | €93,200 | €787 | 43 | 115 m² | €35,400 | €99,900 | 20 | 88
+[Portugal](https://realhunt.co/homes/portugal) | 13 | €117,500 | €885 | 13 | 126 m² | €48,000 | €183,000 | 9 | 91
+[Canada](https://realhunt.co/homes/canada) (small sample) | 9 | €92,552 | €930 | 9 | 83 m² | €55,842 | €99,500 | 4 | 86
+[Italy](https://realhunt.co/homes/italy) | 59 | €49,000 | €975 | 33 | 69 m² | €12,000 | €195,000 | 19 | 83
+[Germany](https://realhunt.co/homes/germany) | 20 | €55,000 | €1,053 | 20 | 51 m² | €40,000 | €60,000 | 7 | 81
+[Poland](https://realhunt.co/homes/poland) | 30 | €75,170 | €1,139 | 30 | 62 m² | €53,693 | €79,968 | 18 | 86
+[Mexico](https://realhunt.co/homes/mexico) | 10 | €83,298 | €1,140 | 10 | 68 m² | €50,575 | €98,621 | 3 | 87
+[Spain](https://realhunt.co/homes/spain) | 182 | €95,000 | €1,193 | 178 | 85 m² | €38,000 | €348,000 | 48 | 85
+[France](https://realhunt.co/homes/france) | 42 | €60,000 | €1,200 | 38 | 71 m² | €39,000 | €285,000 | 27 | 84
+[Greece](https://realhunt.co/homes/greece) | 14 | €115,000 | €1,397 | 13 | 72 m² | €68,000 | €159,990 | 11 | 88
+[United States](https://realhunt.co/homes/united-states) | 54 | €164,400 | €1,465 | 54 | 111 m² | €65,428 | €447,600 | 18 | 85
+[Dominican Republic](https://realhunt.co/homes/dominican-republic) (small sample) | 4 | €223,600 | €2,282 | 3 | 98 m² | €187,800 | €223,600 | 2 | 89
+[Switzerland](https://realhunt.co/homes/switzerland) | 10 | €70,100 | €2,337 | 10 | 40 m² | €32,300 | €88,400 | 4 | 82
+[Cyprus](https://realhunt.co/homes/cyprus) (small sample) | 3 | €350,000 | €4,060 | 3 | 85 m² | €341,000 | €470,000 | 2 | 92
+[Netherlands](https://realhunt.co/homes/netherlands) | 18 | €325,000 | €4,286 | 18 | 74 m² | €299,000 | €339,500 | 1 | 88
+
+### Method and limits
+
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 591 chosen listings (72% of them at or under €100,000), not national averages.
+- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
+- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
+- Countries with fewer than 10 homes are shown and marked as a small sample; with fewer than 3 they are left out.
+- Price per m² uses only the homes whose listing gives a size; the column "Homes with size" says how many.
+- In some countries every home is in one region, so the figure describes that region: Netherlands (Amsterdam).
+- The score is RealHunt's own grade from 70 to 98; it is explained in the method.
+
+[How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [All datasets](https://realhunt.co/research)
+
+
+---
+Source: https://realhunt.co/research/what-your-budget-buys (updated 2026-11-14)
+
+RealHunt data
+
+## What €50,000, €100,000 and €200,000 buy, country by country (2026)
+
+Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), the United States (median 95 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 6 countries, most of them in Italy (33), Japan (19), Germany (10).
+
+From 591 listings checked by a person, 14 November 2026. A home counts in one price band only.
+
+Updated 14 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/what-your-budget-buys.csv) · [Markdown version](https://realhunt.co/research/what-your-budget-buys.md) · How to cite
+Median size of a home priced €50,001 to €100,000Square metres, largest first. Countries with at least 5 homes with a known size in this band, 14 November 2026.
+
+- Denmark 43 homes 115 m²
+- Sweden 18 homes 110 m²
+- United States 19 homes 95 m²
+- Bulgaria small sample: 6 homes 90 m²
+- Canada small sample: 9 homes 83 m²
+- Spain 105 homes 79 m²
+- Italy small sample: 6 homes 69 m²
+- Mexico 10 homes 68 m²
+- Greece small sample: 5 homes 64 m²
+- Poland 30 homes 62 m²
+- Germany 10 homes 57 m²
+- France 22 homes 52 m²
+- Switzerland small sample: 8 homes 34 m²
+
+Hatched bar: fewer than 10 homes, read with care.
+
+### What up to €50,000 buys, by country
+
+Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
+[Italy](https://realhunt.co/homes/italy) | 33 | 50 m² | €600 | 1 | [Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+€29,000 · 55 m² · score 91
+[Japan](https://realhunt.co/homes/japan) | 19 | 70 m² | €284 | 2 | [Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929)
+€11,380 · 53 m² · score 91
+[Germany](https://realhunt.co/homes/germany) | 10 | 49 m² | €976 | 1 | [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045)
+€40,000 · 54 m² · score 87
+[France](https://realhunt.co/homes/france) | 6 | 116 m² | €431 | 3 | [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775)
+€39,950 · 171 m² · score 92
+[Spain](https://realhunt.co/homes/spain) | 5 | 86 m² | €570 | 2 | [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809)
+€38,000 · 150 m² · score 94
+[Sweden](https://realhunt.co/homes/sweden) | 3 | n/a | n/a | 3 | [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb)
+€25,960 · score 93
+[Switzerland](https://realhunt.co/homes/switzerland) | 2 | n/a | n/a | 2 | [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130)
+€32,300 · 70 m² · score 92
+[Denmark](https://realhunt.co/homes/denmark) | 1 | n/a | n/a | n/a | [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX)
+€35,400 · score 91
+[Portugal](https://realhunt.co/homes/portugal) | 1 | n/a | n/a | 3 | [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
+€48,000 · 100 m² · score 84
+
+### What €50,001 to €100,000 buys, by country
+
+Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
+[Spain](https://realhunt.co/homes/spain) | 109 | 79 m² | €1,067 | 2 | [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380)
+€55,000 · 120 m² · score 94
+[Denmark](https://realhunt.co/homes/denmark) | 44 | 115 m² | €787 | 3 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+€79,800 · 198 m² · score 98
+[Sweden](https://realhunt.co/homes/sweden) | 34 | 110 m² | €800 | 3 | [Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989)
+€62,300 · 102 m² · score 93
+[Poland](https://realhunt.co/homes/poland) | 30 | 62 m² | €1,139 | 3 | [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977)
+€57,120 · 127 m² · score 96
+[France](https://realhunt.co/homes/france) | 25 | 52 m² | €1,250 | 2 | [Four-room 71 m² flat with two balconies in Mulhouse](https://realhunt.co/deal/fr-mulhouse-52k-754748)
+€51,800 · 71 m² · score 90
+[United States](https://realhunt.co/homes/united-states) | 19 | 95 m² | €872 | 2 | [Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875)
+€82,875 · 176 m² · score 95
+[Italy](https://realhunt.co/homes/italy) | 16 | 69 m² | €1,444 | 2 | [Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133)
+€95,000 · 60 m² · score 91
+[Japan](https://realhunt.co/homes/japan) | 11 | 120 m² | €758 | 4 | [Hillside kominka with sea views over the Kyoto coast](https://realhunt.co/deal/Da7vZIFDIuo)
+€54,280 · score 86
+[Mexico](https://realhunt.co/homes/mexico) | 10 | 68 m² | €1,140 | 2 | [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+€50,575 · 49 m² · score 93
+[Germany](https://realhunt.co/homes/germany) | 10 | 57 m² | €1,078 | 1 | [65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680)
+€55,000 · 65 m² · score 84
+[Canada](https://realhunt.co/homes/canada) | 9 | 83 m² | €930 | 2 | [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962)
+€86,962 · 124 m² · score 94
+[Switzerland](https://realhunt.co/homes/switzerland) | 8 | 34 m² | €2,372 | 1 | [Holiday cottage with winter garden by a bathing lake in Salgesch](https://realhunt.co/deal/ch-salgesch-49k-76547)
+€52,800 · 40 m² · score 85
+[Bulgaria](https://realhunt.co/homes/bulgaria) | 6 | 90 m² | €740 | 2 | [Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698)
+€66,000 · 90 m² · score 94
+[Greece](https://realhunt.co/homes/greece) | 6 | 64 m² | €1,250 | 2 | [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
+€68,000 · 80 m² · score 90
+[Portugal](https://realhunt.co/homes/portugal) | 3 | 134 m² | €633 | 2 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027)
+€68,500 · 75 m² · score 91
+
+### What €100,001 to €200,000 buys, by country
+
+Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
+[Spain](https://realhunt.co/homes/spain) | 56 | 120 m² | €1,347 | 3 | [Country house with pool on a 5,500 m² plot near Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146)
+€155,000 · 151 m² · score 91
+[United States](https://realhunt.co/homes/united-states) | 11 | 117 m² | €1,364 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k)
+€151,000 · 199 m² · score 90
+[Italy](https://realhunt.co/homes/italy) | 10 | 86 m² | €1,795 | 2 | [Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k)
+€195,000 · 80 m² · score 91
+[France](https://realhunt.co/homes/france) | 10 | 106 m² | €1,390 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454)
+€148,400 · 106 m² · score 91
+[Portugal](https://realhunt.co/homes/portugal) | 9 | 126 m² | €1,151 | 2 | [Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372)
+€110,000 · 176 m² · score 91
+[Greece](https://realhunt.co/homes/greece) | 8 | 84 m² | €2,079 | 2 | [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
+€109,000 · 116 m² · score 93
+[Dominican Republic](https://realhunt.co/homes/dominican-republic) | 1 | n/a | n/a | 2 | [Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359)
+€187,800 · 82 m² · score 89
+
+### Method and limits
+
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 591 chosen listings (72% of them at or under €100,000), not national averages.
+- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
+- Price bands do not overlap: up to €50,000; €50,001 to €100,000; €100,001 to €200,000.
+- Size and price per m² are shown when at least 3 homes in the band give their size. An empty band means RealHunt lists no home there today, not that none exists in the country.
+- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
+
+[How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [All datasets](https://realhunt.co/research)
+
+
+---
+Source: https://realhunt.co/research/where-foreigners-can-buy (updated 2026-11-14)
+
+RealHunt data
+
+## Where foreigners can and cannot buy a home: the rules in 20 countries (2026)
+
+Of 20 countries, 12 let a buyer of any nationality buy a home on the same terms as locals (Dominican Republic, France, Germany, Italy, Japan, Netherlands, Norway, Portugal, Spain, Sweden, United Kingdom, United States), 5 allow it with conditions such as a permit, a trust or a limit on land, and 3 restrict it for most people who do not live there (Canada, Denmark, Switzerland). EU citizens buy without conditions in 16 of them.
+
+Rules as of November 2026, for 14 nationalities. General information, not legal advice.
+
+Updated 14 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/where-foreigners-can-buy.csv) · [Markdown version](https://realhunt.co/research/where-foreigners-can-buy.md) · How to cite
+Can a buyer from outside the EU buy a home there?Number of countries, out of 20, by the rule for buyers who are not EU citizens.
+
+- Yes 12
+- Yes, with conditions 5
+- Restricted 3
+
+### Who can buy a home where: the rule in each country
+
+-
+
+#### Bulgaria
+
+EU citizens
+✓ Yes
+
+Other nationalities
+! Yes, with conditions
+
+Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Bulgaria](https://realhunt.co/guide/bulgaria)
+
+-
+
+#### Canada
+
+EU citizens
+✕ Restricted
+
+Other nationalities
+✕ Restricted
+
+Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Canada](https://realhunt.co/guide/canada)
+
+-
+
+#### Cyprus
+
+EU citizens
+✓ Yes
+
+Other nationalities
+! Yes, with conditions
+
+EU citizens buy without restrictions. Non-EU buyers need permission from the Council of Ministers, applied for through the District Officer, and are normally limited to one home or a plot of up to 4,014 m².
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Cyprus](https://realhunt.co/guide/cyprus)
+
+-
+
+#### Denmark
+
+EU citizens
+! Yes, with conditions
+
+Other nationalities
+✕ Restricted
+
+Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Denmark](https://realhunt.co/guide/denmark)
+
+-
+
+#### Dominican Republic
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in the Dominican Republic](https://realhunt.co/guide/dominican-republic)
+
+-
+
+#### France
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in France](https://realhunt.co/guide/france)
+
+-
+
+#### Germany
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Germany](https://realhunt.co/guide/germany)
+
+-
+
+#### Greece
+
+EU citizens
+✓ Yes
+
+Other nationalities
+! Yes, with conditions
+
+Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Greece](https://realhunt.co/guide/greece)
+
+-
+
+#### Italy
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify).
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Italy](https://realhunt.co/guide/italy)
+
+-
+
+#### Japan
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Japan](https://realhunt.co/guide/japan)
+
+-
+
+#### Mexico
+
+EU citizens
+! Yes, with conditions
+
+Other nationalities
+! Yes, with conditions
+
+Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Mexico](https://realhunt.co/guide/mexico)
+
+-
+
+#### Netherlands
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming).
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in the Netherlands](https://realhunt.co/guide/netherlands)
+
+-
+
+#### Norway
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. Anyone with the funds can buy property in Norway, and a built plot of up to 2 decares normally needs no concession (konsesjon) or self-declaration; owning property gives no right to live there.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Norway](https://realhunt.co/guide/norway)
+
+-
+
+#### Poland
+
+EU citizens
+✓ Yes
+
+Other nationalities
+! Yes, with conditions
+
+EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Poland](https://realhunt.co/guide/poland)
+
+-
+
+#### Portugal
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025).
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Portugal](https://realhunt.co/guide/portugal)
+
+-
+
+#### Spain
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Spain](https://realhunt.co/guide/spain)
+
+-
+
+#### Sweden
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Sweden](https://realhunt.co/guide/sweden)
+
+-
+
+#### Switzerland
+
+EU citizens
+✕ Restricted
+
+Other nationalities
+✕ Restricted
+
+Under the Lex Koller law, EU/EFTA citizens living in Switzerland and holders of a C permit buy like Swiss citizens, and non-EU holders of a B permit can buy a home they live in. People living abroad need a cantonal permit and can usually only buy one holiday home in a tourist area, within national quotas; a proposed tightening was under consultation in 2026.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in Switzerland](https://realhunt.co/guide/switzerland)
+
+-
+
+#### United Kingdom
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in the United Kingdom](https://realhunt.co/guide/united-kingdom)
+
+-
+
+#### United States
+
+EU citizens
+✓ Yes
+
+Other nationalities
+✓ Yes
+
+Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China.
+
+[By nationality](https://realhunt.co/can-i-buy) · [How to buy in the United States](https://realhunt.co/guide/united-states)
+
+### By nationality: the full grid
+
+✓ Yes ! Yes, with conditions ✕ Restricted · home country
+
+Country | American | British | Canadian | Australian | German | Dutch | Swedish | Danish | Norwegian | French | Spanish | Italian | Swiss | Irish
+Bulgaria | [!](https://realhunt.co/can-i-buy/american-in-bulgaria) | [!](https://realhunt.co/can-i-buy/british-in-bulgaria) | [!](https://realhunt.co/can-i-buy/canadian-in-bulgaria) | [!](https://realhunt.co/can-i-buy/australian-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/german-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/dutch-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/swedish-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/danish-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/norwegian-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/french-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/spanish-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/italian-in-bulgaria) | [!](https://realhunt.co/can-i-buy/swiss-in-bulgaria) | [✓](https://realhunt.co/can-i-buy/irish-in-bulgaria)
+Canada | [✕](https://realhunt.co/can-i-buy/american-in-canada) | [✕](https://realhunt.co/can-i-buy/british-in-canada) | · | [✕](https://realhunt.co/can-i-buy/australian-in-canada) | [✕](https://realhunt.co/can-i-buy/german-in-canada) | [✕](https://realhunt.co/can-i-buy/dutch-in-canada) | [✕](https://realhunt.co/can-i-buy/swedish-in-canada) | [✕](https://realhunt.co/can-i-buy/danish-in-canada) | [✕](https://realhunt.co/can-i-buy/norwegian-in-canada) | [✕](https://realhunt.co/can-i-buy/french-in-canada) | [✕](https://realhunt.co/can-i-buy/spanish-in-canada) | [✕](https://realhunt.co/can-i-buy/italian-in-canada) | [✕](https://realhunt.co/can-i-buy/swiss-in-canada) | [✕](https://realhunt.co/can-i-buy/irish-in-canada)
+Cyprus | [!](https://realhunt.co/can-i-buy/american-in-cyprus) | [!](https://realhunt.co/can-i-buy/british-in-cyprus) | [!](https://realhunt.co/can-i-buy/canadian-in-cyprus) | [!](https://realhunt.co/can-i-buy/australian-in-cyprus) | [✓](https://realhunt.co/can-i-buy/german-in-cyprus) | [✓](https://realhunt.co/can-i-buy/dutch-in-cyprus) | [✓](https://realhunt.co/can-i-buy/swedish-in-cyprus) | [✓](https://realhunt.co/can-i-buy/danish-in-cyprus) | [✓](https://realhunt.co/can-i-buy/norwegian-in-cyprus) | [✓](https://realhunt.co/can-i-buy/french-in-cyprus) | [✓](https://realhunt.co/can-i-buy/spanish-in-cyprus) | [✓](https://realhunt.co/can-i-buy/italian-in-cyprus) | [!](https://realhunt.co/can-i-buy/swiss-in-cyprus) | [✓](https://realhunt.co/can-i-buy/irish-in-cyprus)
+Denmark | [✕](https://realhunt.co/can-i-buy/american-in-denmark) | [✕](https://realhunt.co/can-i-buy/british-in-denmark) | [✕](https://realhunt.co/can-i-buy/canadian-in-denmark) | [✕](https://realhunt.co/can-i-buy/australian-in-denmark) | [!](https://realhunt.co/can-i-buy/german-in-denmark) | [!](https://realhunt.co/can-i-buy/dutch-in-denmark) | [!](https://realhunt.co/can-i-buy/swedish-in-denmark) | · | [!](https://realhunt.co/can-i-buy/norwegian-in-denmark) | [!](https://realhunt.co/can-i-buy/french-in-denmark) | [!](https://realhunt.co/can-i-buy/spanish-in-denmark) | [!](https://realhunt.co/can-i-buy/italian-in-denmark) | [✕](https://realhunt.co/can-i-buy/swiss-in-denmark) | [!](https://realhunt.co/can-i-buy/irish-in-denmark)
+Dominican Republic | [✓](https://realhunt.co/can-i-buy/american-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/british-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/canadian-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/australian-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/german-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/dutch-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/swedish-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/danish-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/norwegian-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/french-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/spanish-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/italian-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/swiss-in-dominican-republic) | [✓](https://realhunt.co/can-i-buy/irish-in-dominican-republic)
+France | [✓](https://realhunt.co/can-i-buy/american-in-france) | [✓](https://realhunt.co/can-i-buy/british-in-france) | [✓](https://realhunt.co/can-i-buy/canadian-in-france) | [✓](https://realhunt.co/can-i-buy/australian-in-france) | [✓](https://realhunt.co/can-i-buy/german-in-france) | [✓](https://realhunt.co/can-i-buy/dutch-in-france) | [✓](https://realhunt.co/can-i-buy/swedish-in-france) | [✓](https://realhunt.co/can-i-buy/danish-in-france) | [✓](https://realhunt.co/can-i-buy/norwegian-in-france) | · | [✓](https://realhunt.co/can-i-buy/spanish-in-france) | [✓](https://realhunt.co/can-i-buy/italian-in-france) | [✓](https://realhunt.co/can-i-buy/swiss-in-france) | [✓](https://realhunt.co/can-i-buy/irish-in-france)
+Germany | [✓](https://realhunt.co/can-i-buy/american-in-germany) | [✓](https://realhunt.co/can-i-buy/british-in-germany) | [✓](https://realhunt.co/can-i-buy/canadian-in-germany) | [✓](https://realhunt.co/can-i-buy/australian-in-germany) | · | [✓](https://realhunt.co/can-i-buy/dutch-in-germany) | [✓](https://realhunt.co/can-i-buy/swedish-in-germany) | [✓](https://realhunt.co/can-i-buy/danish-in-germany) | [✓](https://realhunt.co/can-i-buy/norwegian-in-germany) | [✓](https://realhunt.co/can-i-buy/french-in-germany) | [✓](https://realhunt.co/can-i-buy/spanish-in-germany) | [✓](https://realhunt.co/can-i-buy/italian-in-germany) | [✓](https://realhunt.co/can-i-buy/swiss-in-germany) | [✓](https://realhunt.co/can-i-buy/irish-in-germany)
+Greece | [!](https://realhunt.co/can-i-buy/american-in-greece) | [!](https://realhunt.co/can-i-buy/british-in-greece) | [!](https://realhunt.co/can-i-buy/canadian-in-greece) | [!](https://realhunt.co/can-i-buy/australian-in-greece) | [✓](https://realhunt.co/can-i-buy/german-in-greece) | [✓](https://realhunt.co/can-i-buy/dutch-in-greece) | [✓](https://realhunt.co/can-i-buy/swedish-in-greece) | [✓](https://realhunt.co/can-i-buy/danish-in-greece) | [✓](https://realhunt.co/can-i-buy/norwegian-in-greece) | [✓](https://realhunt.co/can-i-buy/french-in-greece) | [✓](https://realhunt.co/can-i-buy/spanish-in-greece) | [✓](https://realhunt.co/can-i-buy/italian-in-greece) | [✓](https://realhunt.co/can-i-buy/swiss-in-greece) | [✓](https://realhunt.co/can-i-buy/irish-in-greece)
+Italy | [✓](https://realhunt.co/can-i-buy/american-in-italy) | [✓](https://realhunt.co/can-i-buy/british-in-italy) | [✓](https://realhunt.co/can-i-buy/canadian-in-italy) | [✓](https://realhunt.co/can-i-buy/australian-in-italy) | [✓](https://realhunt.co/can-i-buy/german-in-italy) | [✓](https://realhunt.co/can-i-buy/dutch-in-italy) | [✓](https://realhunt.co/can-i-buy/swedish-in-italy) | [✓](https://realhunt.co/can-i-buy/danish-in-italy) | [✓](https://realhunt.co/can-i-buy/norwegian-in-italy) | [✓](https://realhunt.co/can-i-buy/french-in-italy) | [✓](https://realhunt.co/can-i-buy/spanish-in-italy) | · | [✓](https://realhunt.co/can-i-buy/swiss-in-italy) | [✓](https://realhunt.co/can-i-buy/irish-in-italy)
+Japan | [✓](https://realhunt.co/can-i-buy/american-in-japan) | [✓](https://realhunt.co/can-i-buy/british-in-japan) | [✓](https://realhunt.co/can-i-buy/canadian-in-japan) | [✓](https://realhunt.co/can-i-buy/australian-in-japan) | [✓](https://realhunt.co/can-i-buy/german-in-japan) | [✓](https://realhunt.co/can-i-buy/dutch-in-japan) | [✓](https://realhunt.co/can-i-buy/swedish-in-japan) | [✓](https://realhunt.co/can-i-buy/danish-in-japan) | [✓](https://realhunt.co/can-i-buy/norwegian-in-japan) | [✓](https://realhunt.co/can-i-buy/french-in-japan) | [✓](https://realhunt.co/can-i-buy/spanish-in-japan) | [✓](https://realhunt.co/can-i-buy/italian-in-japan) | [✓](https://realhunt.co/can-i-buy/swiss-in-japan) | [✓](https://realhunt.co/can-i-buy/irish-in-japan)
+Mexico | [!](https://realhunt.co/can-i-buy/american-in-mexico) | [!](https://realhunt.co/can-i-buy/british-in-mexico) | [!](https://realhunt.co/can-i-buy/canadian-in-mexico) | [!](https://realhunt.co/can-i-buy/australian-in-mexico) | [!](https://realhunt.co/can-i-buy/german-in-mexico) | [!](https://realhunt.co/can-i-buy/dutch-in-mexico) | [!](https://realhunt.co/can-i-buy/swedish-in-mexico) | [!](https://realhunt.co/can-i-buy/danish-in-mexico) | [!](https://realhunt.co/can-i-buy/norwegian-in-mexico) | [!](https://realhunt.co/can-i-buy/french-in-mexico) | [!](https://realhunt.co/can-i-buy/spanish-in-mexico) | [!](https://realhunt.co/can-i-buy/italian-in-mexico) | [!](https://realhunt.co/can-i-buy/swiss-in-mexico) | [!](https://realhunt.co/can-i-buy/irish-in-mexico)
+Netherlands | [✓](https://realhunt.co/can-i-buy/american-in-netherlands) | [✓](https://realhunt.co/can-i-buy/british-in-netherlands) | [✓](https://realhunt.co/can-i-buy/canadian-in-netherlands) | [✓](https://realhunt.co/can-i-buy/australian-in-netherlands) | [✓](https://realhunt.co/can-i-buy/german-in-netherlands) | · | [✓](https://realhunt.co/can-i-buy/swedish-in-netherlands) | [✓](https://realhunt.co/can-i-buy/danish-in-netherlands) | [✓](https://realhunt.co/can-i-buy/norwegian-in-netherlands) | [✓](https://realhunt.co/can-i-buy/french-in-netherlands) | [✓](https://realhunt.co/can-i-buy/spanish-in-netherlands) | [✓](https://realhunt.co/can-i-buy/italian-in-netherlands) | [✓](https://realhunt.co/can-i-buy/swiss-in-netherlands) | [✓](https://realhunt.co/can-i-buy/irish-in-netherlands)
+Norway | [✓](https://realhunt.co/can-i-buy/american-in-norway) | [✓](https://realhunt.co/can-i-buy/british-in-norway) | [✓](https://realhunt.co/can-i-buy/canadian-in-norway) | [✓](https://realhunt.co/can-i-buy/australian-in-norway) | [✓](https://realhunt.co/can-i-buy/german-in-norway) | [✓](https://realhunt.co/can-i-buy/dutch-in-norway) | [✓](https://realhunt.co/can-i-buy/swedish-in-norway) | [✓](https://realhunt.co/can-i-buy/danish-in-norway) | · | [✓](https://realhunt.co/can-i-buy/french-in-norway) | [✓](https://realhunt.co/can-i-buy/spanish-in-norway) | [✓](https://realhunt.co/can-i-buy/italian-in-norway) | [✓](https://realhunt.co/can-i-buy/swiss-in-norway) | [✓](https://realhunt.co/can-i-buy/irish-in-norway)
+Poland | [!](https://realhunt.co/can-i-buy/american-in-poland) | [!](https://realhunt.co/can-i-buy/british-in-poland) | [!](https://realhunt.co/can-i-buy/canadian-in-poland) | [!](https://realhunt.co/can-i-buy/australian-in-poland) | [✓](https://realhunt.co/can-i-buy/german-in-poland) | [✓](https://realhunt.co/can-i-buy/dutch-in-poland) | [✓](https://realhunt.co/can-i-buy/swedish-in-poland) | [✓](https://realhunt.co/can-i-buy/danish-in-poland) | [✓](https://realhunt.co/can-i-buy/norwegian-in-poland) | [✓](https://realhunt.co/can-i-buy/french-in-poland) | [✓](https://realhunt.co/can-i-buy/spanish-in-poland) | [✓](https://realhunt.co/can-i-buy/italian-in-poland) | [✓](https://realhunt.co/can-i-buy/swiss-in-poland) | [✓](https://realhunt.co/can-i-buy/irish-in-poland)
+Portugal | [✓](https://realhunt.co/can-i-buy/american-in-portugal) | [✓](https://realhunt.co/can-i-buy/british-in-portugal) | [✓](https://realhunt.co/can-i-buy/canadian-in-portugal) | [✓](https://realhunt.co/can-i-buy/australian-in-portugal) | [✓](https://realhunt.co/can-i-buy/german-in-portugal) | [✓](https://realhunt.co/can-i-buy/dutch-in-portugal) | [✓](https://realhunt.co/can-i-buy/swedish-in-portugal) | [✓](https://realhunt.co/can-i-buy/danish-in-portugal) | [✓](https://realhunt.co/can-i-buy/norwegian-in-portugal) | [✓](https://realhunt.co/can-i-buy/french-in-portugal) | [✓](https://realhunt.co/can-i-buy/spanish-in-portugal) | [✓](https://realhunt.co/can-i-buy/italian-in-portugal) | [✓](https://realhunt.co/can-i-buy/swiss-in-portugal) | [✓](https://realhunt.co/can-i-buy/irish-in-portugal)
+Spain | [✓](https://realhunt.co/can-i-buy/american-in-spain) | [✓](https://realhunt.co/can-i-buy/british-in-spain) | [✓](https://realhunt.co/can-i-buy/canadian-in-spain) | [✓](https://realhunt.co/can-i-buy/australian-in-spain) | [✓](https://realhunt.co/can-i-buy/german-in-spain) | [✓](https://realhunt.co/can-i-buy/dutch-in-spain) | [✓](https://realhunt.co/can-i-buy/swedish-in-spain) | [✓](https://realhunt.co/can-i-buy/danish-in-spain) | [✓](https://realhunt.co/can-i-buy/norwegian-in-spain) | [✓](https://realhunt.co/can-i-buy/french-in-spain) | · | [✓](https://realhunt.co/can-i-buy/italian-in-spain) | [✓](https://realhunt.co/can-i-buy/swiss-in-spain) | [✓](https://realhunt.co/can-i-buy/irish-in-spain)
+Sweden | [✓](https://realhunt.co/can-i-buy/american-in-sweden) | [✓](https://realhunt.co/can-i-buy/british-in-sweden) | [✓](https://realhunt.co/can-i-buy/canadian-in-sweden) | [✓](https://realhunt.co/can-i-buy/australian-in-sweden) | [✓](https://realhunt.co/can-i-buy/german-in-sweden) | [✓](https://realhunt.co/can-i-buy/dutch-in-sweden) | · | [✓](https://realhunt.co/can-i-buy/danish-in-sweden) | [✓](https://realhunt.co/can-i-buy/norwegian-in-sweden) | [✓](https://realhunt.co/can-i-buy/french-in-sweden) | [✓](https://realhunt.co/can-i-buy/spanish-in-sweden) | [✓](https://realhunt.co/can-i-buy/italian-in-sweden) | [✓](https://realhunt.co/can-i-buy/swiss-in-sweden) | [✓](https://realhunt.co/can-i-buy/irish-in-sweden)
+Switzerland | [✕](https://realhunt.co/can-i-buy/american-in-switzerland) | [✕](https://realhunt.co/can-i-buy/british-in-switzerland) | [✕](https://realhunt.co/can-i-buy/canadian-in-switzerland) | [✕](https://realhunt.co/can-i-buy/australian-in-switzerland) | [✕](https://realhunt.co/can-i-buy/german-in-switzerland) | [✕](https://realhunt.co/can-i-buy/dutch-in-switzerland) | [✕](https://realhunt.co/can-i-buy/swedish-in-switzerland) | [✕](https://realhunt.co/can-i-buy/danish-in-switzerland) | [✕](https://realhunt.co/can-i-buy/norwegian-in-switzerland) | [✕](https://realhunt.co/can-i-buy/french-in-switzerland) | [✕](https://realhunt.co/can-i-buy/spanish-in-switzerland) | [✕](https://realhunt.co/can-i-buy/italian-in-switzerland) | · | [✕](https://realhunt.co/can-i-buy/irish-in-switzerland)
+United Kingdom | [✓](https://realhunt.co/can-i-buy/american-in-united-kingdom) | · | [✓](https://realhunt.co/can-i-buy/canadian-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/australian-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/german-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/dutch-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/swedish-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/danish-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/norwegian-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/french-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/spanish-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/italian-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/swiss-in-united-kingdom) | [✓](https://realhunt.co/can-i-buy/irish-in-united-kingdom)
+United States | · | [✓](https://realhunt.co/can-i-buy/british-in-united-states) | [✓](https://realhunt.co/can-i-buy/canadian-in-united-states) | [✓](https://realhunt.co/can-i-buy/australian-in-united-states) | [✓](https://realhunt.co/can-i-buy/german-in-united-states) | [✓](https://realhunt.co/can-i-buy/dutch-in-united-states) | [✓](https://realhunt.co/can-i-buy/swedish-in-united-states) | [✓](https://realhunt.co/can-i-buy/danish-in-united-states) | [✓](https://realhunt.co/can-i-buy/norwegian-in-united-states) | [✓](https://realhunt.co/can-i-buy/french-in-united-states) | [✓](https://realhunt.co/can-i-buy/spanish-in-united-states) | [✓](https://realhunt.co/can-i-buy/italian-in-united-states) | [✓](https://realhunt.co/can-i-buy/swiss-in-united-states) | [✓](https://realhunt.co/can-i-buy/irish-in-united-states)
+
+Yes: same terms as locals or no permit needed. With conditions: possible with a permit, a trust, a company or a limit. Restricted: not possible for most buyers who do not live there.
+
+### Method and limits
+
+- The status is a summary. The page of each nationality and country explains the condition (permit, trust, company, land limit) and the residency rules.
+- Owning a home does not by itself give the right to live in a country.
+- Compiled from the sources listed on each country's cost page and public government sources. Rules change: general information, not legal advice.
+- EU citizens here also covers Norway, Iceland and Liechtenstein unless the detail page says otherwise; Swiss buyers follow the rule for other nationalities unless a country treats them differently.
+
+[How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [All datasets](https://realhunt.co/research)
 
 
 ---
@@ -13591,6 +14843,41 @@ Source: https://realhunt.co/best
 - [Best homes in Bulgaria](https://realhunt.co/homes/bulgaria): Furnished two-bedroom flat with a sea view in a gated complex in Kavarna, €66,000
 - [Best homes in Dominican Republic](https://realhunt.co/homes/dominican-republic): Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views, €223,600
 - [Best homes in Cyprus](https://realhunt.co/homes/cyprus): Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views, €341,000
+
+
+---
+Source: https://realhunt.co/embed (updated 2026-11-14)
+
+For your site
+
+## RealHunt badges and widgets: show a score or the best homes on your site
+
+Paste one of these snippets into a listing, a blog post or a forum signature to show a home's RealHunt score or the best homes in a country. They are plain HTML with an image and a link, with no script and no tracking, and the image updates by itself.
+
+Free to use on any site. Keep the link to RealHunt as it is.
+
+### RealHunt score badge for a home
+
+For sellers and agents whose home is on RealHunt: show its score on your own listing. Paste the address of the home on RealHunt and copy the code.
+
+Example: the best-scored home today.
+
+### Best homes in a country: a card for your page
+
+For blogs, forums and guides about moving or buying abroad: the three best-scored homes in a country, always current.
+
+### "Data: RealHunt" badge and link
+
+For articles that use a figure from the [RealHunt data pages](https://realhunt.co/research).
+
+### Good to know
+
+- No script, no cookies, no tracking: an image and a link. It works in WordPress, Squarespace, Wix, Ghost, Substack and most forums that allow images.
+- The images are redrawn every time RealHunt is updated, so a score or a list never goes stale. If a home is sold and leaves RealHunt, its badge stops showing.
+- The score is RealHunt's own grade, not an endorsement of the seller or a valuation. Do not edit the image or present it as something else.
+- A badge cannot be bought and showing one does not change a home's score.
+
+[How the score works](https://realhunt.co/method) · [Data to quote](https://realhunt.co/research) · [Press page](https://realhunt.co/press) · Questions: carlos@equinoxinvestmentgroup.com
 
 
 ## Every home on RealHunt (title | country | price | size | score | page)

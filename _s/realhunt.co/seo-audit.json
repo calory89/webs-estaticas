@@ -1,14 +1,14 @@
 {
  "summary": {
-  "pages": 3292,
-  "indexable": 2826,
-  "noindex": 466,
+  "pages": 3346,
+  "indexable": 2844,
+  "noindex": 502,
   "noindex_by_polish": 456,
   "duplicate_homes": 2,
   "title_over_60": 1039,
   "desc_over_155": 0,
-  "desc_under_120": 66,
-  "desc_out_of_range": 66,
+  "desc_under_120": 67,
+  "desc_out_of_range": 67,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 2804,
+  "pages_with_hreflang": 2822,
   "thin_under_150_words": 29,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 2302,
+  "with_lastmod": 2366,
   "redirects": 628,
   "moved_stubs": 140
  },
@@ -85,7 +85,7 @@
    "pages": 16,
    "indexable": 16,
    "noindex": 0,
-   "median_words": 1112,
+   "median_words": 1176,
    "title_over_60": 9,
    "desc_out_of_range": 7,
    "inlinks_under_3": 0
@@ -216,6 +216,33 @@
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
+  "/editorial-policy": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 482,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/embed": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 421,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/embed/*/*": {
+   "pages": 18,
+   "indexable": 0,
+   "noindex": 18,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/": {
    "pages": 1,
    "indexable": 1,
@@ -265,7 +292,7 @@
    "pages": 16,
    "indexable": 16,
    "noindex": 0,
-   "median_words": 1228,
+   "median_words": 1294,
    "title_over_60": 13,
    "desc_out_of_range": 6,
    "inlinks_under_3": 0
@@ -378,6 +405,42 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/es/editorial-policy": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 530,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/embed": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 453,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/embed/*/*": {
+   "pages": 18,
+   "indexable": 0,
+   "noindex": 18,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/for-ai": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 583,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/guide": {
    "pages": 1,
    "indexable": 1,
@@ -391,7 +454,7 @@
    "pages": 20,
    "indexable": 20,
    "noindex": 0,
-   "median_words": 648,
+   "median_words": 723,
    "title_over_60": 1,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -427,7 +490,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 355,
+   "median_words": 958,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -441,6 +504,15 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/es/press": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 747,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/price-drops": {
    "pages": 1,
    "indexable": 0,
@@ -450,11 +522,20 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
-  "/es/research/*": {
+  "/es/research": {
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 269,
+   "median_words": 401,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/research/*": {
+   "pages": 5,
+   "indexable": 5,
+   "noindex": 0,
+   "median_words": 1520,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -463,7 +544,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 160,
+   "median_words": 205,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -540,6 +621,15 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/for-ai": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 544,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/guide": {
    "pages": 1,
    "indexable": 1,
@@ -553,7 +643,7 @@
    "pages": 20,
    "indexable": 20,
    "noindex": 0,
-   "median_words": 575,
+   "median_words": 646,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -625,7 +715,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 330,
+   "median_words": 866,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -675,6 +765,15 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/press": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 679,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/price-drops": {
    "pages": 1,
    "indexable": 0,
@@ -684,11 +783,20 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
-  "/research/*": {
-   "pages": 2,
-   "indexable": 2,
+  "/research": {
+   "pages": 1,
+   "indexable": 1,
    "noindex": 0,
-   "median_words": 197,
+   "median_words": 349,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/research/*": {
+   "pages": 6,
+   "indexable": 6,
+   "noindex": 0,
+   "median_words": 1289,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -697,7 +805,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 187,
+   "median_words": 233,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -804,7 +912,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 2826,
+   "pages with JSON-LD changed": 2844,
    "RealEstateListing: datePosted added": 591,
    "ItemList: items removed or renumbered": 6
   },
@@ -903,7 +1011,7 @@
    "/legal/cookies",
    "/legal/privacy",
    "/legal/takedown",
-   "... 6 more"
+   "... 7 more"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -974,7 +1082,7 @@
   ]
  },
  "spanish": {
-  "twins": 805,
+  "twins": 803,
   "groups": {
    "homes": {
     "pages": 591,
@@ -994,16 +1102,17 @@
    "pages": {
     "pages": 41,
     "twins": 8,
-    "words": 3120,
+    "words": 2733,
     "english": 418,
-    "by_hand": 1,
-    "spanish_pct": 86.6
+    "by_hand": 2,
+    "spanish_pct": 84.71
    },
    "content": {
     "pages": 548,
     "twins": 547,
-    "words": 440467,
+    "words": 440268,
     "english": 0,
+    "by_hand": 1,
     "spanish_pct": 100
    },
    "top": {
@@ -1016,25 +1125,25 @@
   }
  },
  "sitemaps": {
-  "sitemap-main.xml": 12,
+  "sitemap-main.xml": 16,
   "sitemap-countries.xml": 140,
   "sitemap-prices.xml": 54,
   "sitemap-cheap-houses.xml": 57,
   "sitemap-guides.xml": 21,
   "sitemap-costs.xml": 56,
-  "sitemap-blog.xml": 19,
+  "sitemap-blog.xml": 24,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 154,
   "sitemap-homes.xml": 590,
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 44,
-  "sitemap-es-main.xml": 9,
+  "sitemap-es-main.xml": 13,
   "sitemap-es-countries.xml": 140,
   "sitemap-es-prices.xml": 54,
   "sitemap-es-cheap-houses.xml": 57,
   "sitemap-es-guides.xml": 21,
   "sitemap-es-costs.xml": 56,
-  "sitemap-es-blog.xml": 18,
+  "sitemap-es-blog.xml": 23,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 154,
   "sitemap-es-homes.xml": 590,

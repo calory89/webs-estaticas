@@ -20,6 +20,21 @@ Today: 591 homes in 18 countries. Updated 2026-11-14.
 - [Site map](https://realhunt.co/sitemap)
 - [Full reference text](https://realhunt.co/llms-full.txt): method, costs, guides and every home in one file.
 
+## Data to quote (CC BY 4.0, with a link)
+
+- [All datasets](https://realhunt.co/research)
+- [Median asking price and price per m² by country](https://realhunt.co/research/prices): [Markdown](https://realhunt.co/research/prices.md), [CSV](https://realhunt.co/research/prices.csv)
+- [What €50,000, €100,000 and €200,000 buy, by country](https://realhunt.co/research/what-your-budget-buys): [Markdown](https://realhunt.co/research/what-your-budget-buys.md), [CSV](https://realhunt.co/research/what-your-budget-buys.csv)
+- [Taxes and fees on top of the price, ranked](https://realhunt.co/research/buying-costs-by-country): [Markdown](https://realhunt.co/research/buying-costs-by-country.md), [CSV](https://realhunt.co/research/buying-costs-by-country.csv)
+- [Who can buy where, by nationality](https://realhunt.co/research/where-foreigners-can-buy): [Markdown](https://realhunt.co/research/where-foreigners-can-buy.md), [CSV](https://realhunt.co/research/where-foreigners-can-buy.csv)
+- [Regions ranked by median score](https://realhunt.co/research/best-scored-regions): [Markdown](https://realhunt.co/research/best-scored-regions.md), [CSV](https://realhunt.co/research/best-scored-regions.csv)
+- [How the score works: method, limits, change log](https://realhunt.co/method) ([Markdown](https://realhunt.co/method.md))
+- [For AI assistants: what to quote and how to attribute](https://realhunt.co/for-ai)
+- [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+- [Press page: facts, numbers, contact](https://realhunt.co/press)
+- [Badges and widgets](https://realhunt.co/embed)
+- Buying guides in Markdown: https://realhunt.co/guide/<country>.md
+
 ## Countries
 
 - [Spain](https://realhunt.co/homes/spain): 182 homes
