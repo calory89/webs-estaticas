@@ -97,7 +97,7 @@ async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'')
  if(BOT.test(ua)){const b=AIB.find(x=>ua.includes(x[0]));if(!b)return;const kb='sb/'+new Date().toISOString().slice(0,10);let o={b:{},p:{}};const vb=await env.IMG.get(kb);if(vb){try{o=JSON.parse(vb)}catch(e){}}
   o.b[b[1]]=(o.b[b[1]]||0)+1;if(/gpt|oai|claude|perplexity/.test(b[0])){const pp=p.replace(/index\.html$/,'');if(o.p[pp]||Object.keys(o.p).length<300)o.p[pp]=(o.p[pp]||0)+1}
   if(Math.random()<0.34||!vb)await env.IMG.put(kb,JSON.stringify(o),{expirationTtl:86400*120});return}
- if((req.headers.get('sec-fetch-dest')||'document')!=='document'||(req.headers.get('purpose')||req.headers.get('sec-purpose')||'').includes('prefetch'))return;
+ if(req.headers.get('sec-fetch-mode')!=='navigate'||!req.headers.get('accept-language')||(req.headers.get('sec-fetch-dest')||'document')!=='document'||(req.headers.get('purpose')||req.headers.get('sec-purpose')||'').includes('prefetch'))return;
  const k='st/'+new Date().toISOString().slice(0,10);let d={pv:0,l:{},p:{},c:{},r:{},s:{}};const v=await env.IMG.get(k);if(v){try{d=JSON.parse(v)}catch(e){}}
  if(d.pv>20000&&Math.random()>0.1)return;const w=d.pv>20000?10:1;const inc=(o,key)=>{if(o[key]||Object.keys(o).length<400)o[key]=(o[key]||0)+w};
  d.pv+=w;const m=p.match(/^\/(en|es|id)\//);inc(d.l,m?m[1]:'-');inc(d.p,p.replace(/index\.html$/,''));inc(d.c,(req.cf&&req.cf.country)||'-');
