@@ -109,7 +109,8 @@ def seo_title(t):
     if len(core) <= 60: return core
     if ":" in core and len(core.split(":")[0]) >= 18:
         h = core.split(":")[0]
-        cut = re.sub(r"(,| and| y| dan| e| or| o| atau)$", "", core[:60].rsplit(" ", 1)[0].rstrip(" ,;:"))
+        cut = core[:60].rsplit(" ", 1)[0]
+        for _ in range(4): cut = re.sub(r"[ ,;:]+(and|or|what|how|when|where|to|the|a|of|in|for|with|y|e|o|u|qué|cómo|cuándo|dónde|de|del|la|el|los|las|en|con|por|para|dan|atau|apa|cara|kapan|di|ke|yang|untuk|dengan|dari)$", "", cut.rstrip(" ,;:"))
         if len(cut) >= len(h) + 10: return cut
         if len(h) + len(SUF) <= 60: return h + SUF
         if len(h) <= 60: return h
