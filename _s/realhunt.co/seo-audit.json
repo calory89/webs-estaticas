@@ -1,0 +1,1043 @@
+{
+ "summary": {
+  "pages": 3292,
+  "indexable": 2826,
+  "noindex": 466,
+  "noindex_by_polish": 456,
+  "duplicate_homes": 2,
+  "title_over_60": 1039,
+  "desc_over_155": 0,
+  "desc_under_120": 66,
+  "desc_out_of_range": 66,
+  "duplicate_titles": 0,
+  "duplicate_descriptions": 0,
+  "h1_not_one": 0,
+  "broken_links": 0,
+  "healed_links": 0,
+  "orphans": 0,
+  "inlinks_under_3": 0,
+  "hreflang_problems": 0,
+  "pages_with_hreflang": 2804,
+  "thin_under_150_words": 29,
+  "mixed_content": 0,
+  "no_lang": 0,
+  "with_lastmod": 2302,
+  "redirects": 628,
+  "moved_stubs": 140
+ },
+ "failures": [],
+ "groups": {
+  "/": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 635,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/about": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 90,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/agents": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/alerts": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 51,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/best": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 313,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/blog": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 630,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/blog/*": {
+   "pages": 16,
+   "indexable": 16,
+   "noindex": 0,
+   "median_words": 1112,
+   "title_over_60": 9,
+   "desc_out_of_range": 7,
+   "inlinks_under_3": 0
+  },
+  "/buying-costs": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 202,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/buying-costs/*": {
+   "pages": 27,
+   "indexable": 27,
+   "noindex": 0,
+   "median_words": 206,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/can-i-buy": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 2555,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/can-i-buy/*": {
+   "pages": 268,
+   "indexable": 268,
+   "noindex": 0,
+   "median_words": 821,
+   "title_over_60": 41,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/cheap-houses": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 686,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/cheap-houses/*": {
+   "pages": 56,
+   "indexable": 56,
+   "noindex": 0,
+   "median_words": 1534,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/contact": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 15,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/costs": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 252,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/costs/*": {
+   "pages": 27,
+   "indexable": 27,
+   "noindex": 0,
+   "median_words": 443,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/countries": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 1038,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/countries/*": {
+   "pages": 153,
+   "indexable": 153,
+   "noindex": 0,
+   "median_words": 483,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/deal/*": {
+   "pages": 591,
+   "indexable": 590,
+   "noindex": 1,
+   "median_words": 868,
+   "title_over_60": 421,
+   "desc_out_of_range": 18,
+   "inlinks_under_3": 0
+  },
+  "/developers": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/ecobeachcity": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/es/": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 697,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/about": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 95,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/alerts": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 55,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/best": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 376,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/es/blog": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 694,
+   "title_over_60": 1,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/es/blog/*": {
+   "pages": 16,
+   "indexable": 16,
+   "noindex": 0,
+   "median_words": 1228,
+   "title_over_60": 13,
+   "desc_out_of_range": 6,
+   "inlinks_under_3": 0
+  },
+  "/es/buying-costs": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 259,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/buying-costs/*": {
+   "pages": 27,
+   "indexable": 27,
+   "noindex": 0,
+   "median_words": 243,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/can-i-buy": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 2672,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/can-i-buy/*": {
+   "pages": 268,
+   "indexable": 268,
+   "noindex": 0,
+   "median_words": 935,
+   "title_over_60": 47,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/cheap-houses": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 812,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/cheap-houses/*": {
+   "pages": 56,
+   "indexable": 56,
+   "noindex": 0,
+   "median_words": 1737,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/contact": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 15,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/es/costs": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 204,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/costs/*": {
+   "pages": 27,
+   "indexable": 27,
+   "noindex": 0,
+   "median_words": 510,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/countries": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 1075,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/countries/*": {
+   "pages": 153,
+   "indexable": 153,
+   "noindex": 0,
+   "median_words": 559,
+   "title_over_60": 2,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/deal/*": {
+   "pages": 591,
+   "indexable": 590,
+   "noindex": 1,
+   "median_words": 276,
+   "title_over_60": 491,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/guide": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 225,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/guide/*": {
+   "pages": 20,
+   "indexable": 20,
+   "noindex": 0,
+   "median_words": 648,
+   "title_over_60": 1,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/homes/*": {
+   "pages": 21,
+   "indexable": 18,
+   "noindex": 3,
+   "median_words": 2323,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/homes/*/*": {
+   "pages": 176,
+   "indexable": 176,
+   "noindex": 0,
+   "median_words": 1556,
+   "title_over_60": 12,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/map": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 48,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/es/method": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 355,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/new": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 1449,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/price-drops": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/research/*": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 269,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/sitemap": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 160,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/sitemap/*": {
+   "pages": 10,
+   "indexable": 10,
+   "noindex": 0,
+   "median_words": 657,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/sources": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 285,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/sources/*": {
+   "pages": 27,
+   "indexable": 22,
+   "noindex": 5,
+   "median_words": 477,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/what-100k-buys": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 493,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/extension": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/extension/*": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/find-my-home": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/find-my-home/*": {
+   "pages": 12,
+   "indexable": 0,
+   "noindex": 12,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/guide": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 219,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/guide/*": {
+   "pages": 20,
+   "indexable": 20,
+   "noindex": 0,
+   "median_words": 575,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/help-buying": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/homes/*": {
+   "pages": 21,
+   "indexable": 18,
+   "noindex": 3,
+   "median_words": 2113,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/homes/*/*": {
+   "pages": 176,
+   "indexable": 176,
+   "noindex": 0,
+   "median_words": 1389,
+   "title_over_60": 1,
+   "desc_out_of_range": 15,
+   "inlinks_under_3": 0
+  },
+  "/insider": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/leaderboard": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/legal/*": {
+   "pages": 4,
+   "indexable": 4,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 4,
+   "inlinks_under_3": 0
+  },
+  "/map": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 47,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/method": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 330,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/network": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 43,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/network/*": {
+   "pages": 4,
+   "indexable": 1,
+   "noindex": 3,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/new": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 1269,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/new-builds": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 1,
+   "inlinks_under_3": 0
+  },
+  "/new-builds/*": {
+   "pages": 8,
+   "indexable": 0,
+   "noindex": 8,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/price-drops": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/research/*": {
+   "pages": 2,
+   "indexable": 2,
+   "noindex": 0,
+   "median_words": 197,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/sitemap": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 187,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/sitemap/*": {
+   "pages": 11,
+   "indexable": 11,
+   "noindex": 0,
+   "median_words": 458,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/sources": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 281,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/sources/*": {
+   "pages": 27,
+   "indexable": 22,
+   "noindex": 5,
+   "median_words": 409,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/swipe": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/top": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 50,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/top/*": {
+   "pages": 6,
+   "indexable": 6,
+   "noindex": 0,
+   "median_words": 917,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/top/*/*": {
+   "pages": 417,
+   "indexable": 0,
+   "noindex": 417,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/weather": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/what-100k-buys": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 402,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/winners": {
+   "pages": 1,
+   "indexable": 0,
+   "noindex": 1,
+   "median_words": 0,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  }
+ },
+ "noindex_by_polish": {
+  "app screen": 5,
+  "portal list": 10,
+  "form, contract or demo": 4,
+  "home finder, city copy": 12,
+  "new builds, country copy": 8,
+  "new-build project page": 417
+ },
+ "healed_links": {},
+ "json_ld": {
+  "notes": {
+   "pages with JSON-LD changed": 2826,
+   "RealEstateListing: datePosted added": 591,
+   "ItemList: items removed or renumbered": 6
+  },
+  "missing": {}
+ },
+ "lists": {
+  "thin_under_150_words": [
+   "/about",
+   "/agents",
+   "/alerts",
+   "/buying-costs/albania",
+   "/buying-costs/bulgaria",
+   "/buying-costs/lombok",
+   "/contact",
+   "/costs/montenegro",
+   "/ecobeachcity",
+   "/es/about",
+   "/es/alerts",
+   "/es/contact",
+   "/es/map",
+   "/extension",
+   "/find-my-home",
+   "/help-buying",
+   "/legal/cookies",
+   "/legal/privacy",
+   "/legal/takedown",
+   "/legal/terms",
+   "/map",
+   "/network",
+   "/network/reservation-contract",
+   "/new-builds",
+   "/research/new-builds",
+   "/top/how-we-rank",
+   "/top",
+   "/weather",
+   "/sitemap/new-builds"
+  ],
+  "desc_under_120": [
+   "/agents",
+   "/best",
+   "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
+   "/blog/best-new-builds-bali-scored-2026",
+   "/blog/best-new-builds-batumi-scored-2026",
+   "/blog/best-new-builds-phuket-scored-2026",
+   "/blog/best-new-builds-tulum-scored-2026",
+   "/blog/cheap-houses-japan-move-in-ready",
+   "/blog",
+   "/blog/property-scams-buying-abroad",
+   "/contact",
+   "/deal/DZzpJ7UDSZB",
+   "/deal/DbbD15oDKLz",
+   "/deal/Dc1cyxRDM9Y",
+   "/deal/Dc32k2tDKLf",
+   "/deal/Dc82VcSjAIe",
+   "/deal/Dc8TyIDkexU",
+   "/deal/DceAZ_xjMzt",
+   "/deal/Dcgta8yjCAR",
+   "/deal/DcjBmxJjKHY",
+   "/deal/DclJGYkDf8l",
+   "/deal/DclLv7qjKAR",
+   "/deal/Dclv5CJDdhi",
+   "/deal/DcoUnwBDDxF",
+   "/deal/DcyzSIdjOz6",
+   "/deal/DdPBLT2CLlb",
+   "/deal/DdTjQGviJh9",
+   "/deal/DdUZvbGkTvh",
+   "/deal/es-roses-97k-57061",
+   "/ecobeachcity",
+   "/es/best",
+   "/es/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
+   "/es/blog/best-new-builds-bali-scored-2026",
+   "/es/blog/best-new-builds-batumi-scored-2026",
+   "/es/blog/best-new-builds-phuket-scored-2026",
+   "/es/blog/best-new-builds-tulum-scored-2026",
+   "/es/blog/cheap-houses-sweden-under-100000",
+   "/es/blog",
+   "/es/contact",
+   "/es/map",
+   "/guide",
+   "/help-buying",
+   "/homes/bulgaria/kavarna-black-sea",
+   "/homes/denmark/4-bedroom",
+   "/homes/germany/chemnitz/under-50000",
+   "/homes/italy/tuscany/under-150000",
+   "/homes/netherlands/2-bedroom",
+   "/homes/netherlands/3-bedroom",
+   "/homes/spain/4-bedroom",
+   "/homes/spain/madrid/under-200000",
+   "/homes/spain/valencia/under-150000",
+   "/homes/united-states/3-bedroom",
+   "/homes/united-states/under-100000",
+   "/homes/united-states/under-150000",
+   "/homes/united-states/under-200000",
+   "/homes/united-states/under-300000",
+   "/homes/united-states/under-80000",
+   "/legal/cookies",
+   "/legal/privacy",
+   "/legal/takedown",
+   "... 6 more"
+  ],
+  "title_over_60": [
+   "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
+   "/blog/best-home-deals-this-week-2026-w45",
+   "/blog/best-new-builds-batumi-scored-2026",
+   "/blog/best-new-builds-phuket-scored-2026",
+   "/blog/best-new-builds-tulum-scored-2026",
+   "/blog/italy-houses-by-the-sea-under-50000",
+   "/blog/top-10-deals-near-miami-under-300000",
+   "/blog/viewing-checklist-cheap-house",
+   "/blog/what-50000-euros-buys-2026",
+   "/can-i-buy/american-in-bulgaria",
+   "/can-i-buy/australian-in-bulgaria",
+   "/can-i-buy/australian-in-cyprus",
+   "/can-i-buy/australian-in-dominican-republic",
+   "/can-i-buy/australian-in-greece",
+   "/can-i-buy/australian-in-mexico",
+   "/can-i-buy/australian-in-poland",
+   "/can-i-buy/british-in-bulgaria",
+   "/can-i-buy/british-in-cyprus",
+   "/can-i-buy/british-in-dominican-republic",
+   "/can-i-buy/british-in-greece",
+   "/can-i-buy/british-in-mexico",
+   "/can-i-buy/british-in-poland",
+   "/can-i-buy/british-in-switzerland",
+   "/can-i-buy/canadian-in-bulgaria",
+   "/can-i-buy/danish-in-dominican-republic",
+   "/can-i-buy/danish-in-mexico",
+   "/can-i-buy/dutch-in-denmark",
+   "/can-i-buy/dutch-in-dominican-republic",
+   "/can-i-buy/dutch-in-mexico",
+   "/can-i-buy/french-in-denmark",
+   "/can-i-buy/french-in-dominican-republic",
+   "/can-i-buy/french-in-mexico",
+   "/can-i-buy/irish-in-denmark",
+   "/can-i-buy/irish-in-dominican-republic",
+   "/can-i-buy/irish-in-mexico",
+   "/can-i-buy/norwegian-in-denmark",
+   "/can-i-buy/spanish-in-denmark",
+   "/can-i-buy/spanish-in-dominican-republic",
+   "/can-i-buy/spanish-in-mexico",
+   "/can-i-buy/spanish-in-switzerland",
+   "/can-i-buy/spanish-in-united-kingdom",
+   "/can-i-buy/swedish-in-denmark",
+   "/can-i-buy/swedish-in-dominican-republic",
+   "/can-i-buy/swedish-in-mexico",
+   "/can-i-buy/swedish-in-switzerland",
+   "/can-i-buy/swedish-in-united-kingdom",
+   "/can-i-buy/swiss-in-bulgaria",
+   "/can-i-buy/swiss-in-cyprus",
+   "/can-i-buy/swiss-in-dominican-republic",
+   "/can-i-buy/swiss-in-mexico",
+   "/deal/DZzpJ7UDSZB",
+   "/deal/Da7vZIFDIuo",
+   "/deal/Db59YYrjN5h",
+   "/deal/DbA4_hKEThx",
+   "/deal/DbQ_FfViI4l",
+   "/deal/Dbk8HHgCAHX",
+   "/deal/Dbr13CDil3R",
+   "/deal/Dc-RMNwIPpv",
+   "/deal/Dc-hu2ajorQ",
+   "/deal/Dc-oopNDU4y",
+   "... 979 more"
+  ],
+  "title_under_20": [
+   "/contact",
+   "/sitemap"
+  ]
+ },
+ "spanish": {
+  "twins": 805,
+  "groups": {
+   "homes": {
+    "pages": 591,
+    "twins": 591,
+    "words": 0,
+    "english": 0,
+    "by_hand": 591,
+    "spanish_pct": 0
+   },
+   "places": {
+    "pages": 251,
+    "twins": 251,
+    "words": 508237,
+    "english": 0,
+    "spanish_pct": 100
+   },
+   "pages": {
+    "pages": 41,
+    "twins": 8,
+    "words": 3120,
+    "english": 418,
+    "by_hand": 1,
+    "spanish_pct": 86.6
+   },
+   "content": {
+    "pages": 548,
+    "twins": 547,
+    "words": 440467,
+    "english": 0,
+    "spanish_pct": 100
+   },
+   "top": {
+    "pages": 434,
+    "twins": 0,
+    "words": 39631,
+    "english": 4351,
+    "spanish_pct": 89.02
+   }
+  }
+ },
+ "sitemaps": {
+  "sitemap-main.xml": 12,
+  "sitemap-countries.xml": 140,
+  "sitemap-prices.xml": 54,
+  "sitemap-cheap-houses.xml": 57,
+  "sitemap-guides.xml": 21,
+  "sitemap-costs.xml": 56,
+  "sitemap-blog.xml": 19,
+  "sitemap-can-i-buy.xml": 269,
+  "sitemap-compare.xml": 154,
+  "sitemap-homes.xml": 590,
+  "sitemap-new-builds.xml": 8,
+  "sitemap-more.xml": 44,
+  "sitemap-es-main.xml": 9,
+  "sitemap-es-countries.xml": 140,
+  "sitemap-es-prices.xml": 54,
+  "sitemap-es-cheap-houses.xml": 57,
+  "sitemap-es-guides.xml": 21,
+  "sitemap-es-costs.xml": 56,
+  "sitemap-es-blog.xml": 18,
+  "sitemap-es-can-i-buy.xml": 269,
+  "sitemap-es-compare.xml": 154,
+  "sitemap-es-homes.xml": 590,
+  "sitemap-es-more.xml": 34
+ }
+}
