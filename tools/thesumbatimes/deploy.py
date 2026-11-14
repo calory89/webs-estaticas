@@ -23,7 +23,7 @@ const BOT=/bot|crawl|spider|slurp|facebookexternalhit|embedly|preview|whatsapp|t
 const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',svg:'image/svg+xml',png:'image/png',woff2:'font/woff2',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg',js:'application/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
 const SEC={'x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin','strict-transport-security':'max-age=31536000; includeSubDomains','permissions-policy':'camera=(), microphone=(), geolocation=()','x-frame-options':'SAMEORIGIN'};
 function hdr(ext,cache){return Object.assign({'content-type':CT[ext]||'application/octet-stream','cache-control':cache},SEC);}
-function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=(ext==='woff2'||ext==='css')?'public, max-age=31536000, immutable':ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
+function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=(ext==='woff2'||ext==='css'||p.startsWith('/j.'))?'public, max-age=31536000, immutable':ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
  const h=hdr(ext,cache);if(p.startsWith('/widget/')){delete h['x-frame-options'];h['content-security-policy']='frame-ancestors *';}if(f.b64){const b=Uint8Array.from(atob(f.b64),c=>c.charCodeAt(0));return new Response(b,{status,headers:h});}return new Response(f.t,{status,headers:h});}
 
 const AI_URL='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/sumba-ai';
@@ -91,13 +91,18 @@ async function nl(req,env,u){const H=Object.assign({'content-type':'application/
  return new Response('{}',{status:404,headers:H})}
 // Own first-party page counter (no cookies, no IPs stored): one KV record per UTC day with totals by language, page,
 // country and referrer host. Bots are skipped. Read by claude-ops jobs/tst_metrics.py for the weekly panel.
-async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'').toLowerCase();if(!ua||BOT.test(ua)||req.method!=='GET')return;
+const AIB=[['gptbot','GPTBot'],['oai-searchbot','OAI-SearchBot'],['chatgpt-user','ChatGPT-User'],['claudebot','ClaudeBot'],['claude-user','Claude-User'],['claude-searchbot','Claude-SearchBot'],['perplexitybot','PerplexityBot'],['perplexity-user','Perplexity-User'],['google-extended','Google-Extended'],['googlebot','Googlebot'],['bingbot','bingbot'],['applebot','Applebot'],['bytespider','Bytespider'],['ccbot','CCBot'],['amazonbot','Amazonbot'],['meta-externalagent','Meta-ExternalAgent'],['duckduckbot','DuckDuckBot'],['yandex','Yandex']];
+function refGroup(h){if(!h)return'';if(/(^|\.)google\./.test(h))return'google';if(/bing\.com$/.test(h))return'bing';if(/chatgpt\.com$|openai\.com$/.test(h))return'chatgpt';if(/perplexity\.ai$/.test(h))return'perplexity';if(/copilot\.microsoft\.com$/.test(h))return'copilot';if(/gemini\.google\.com$/.test(h))return'gemini';if(/claude\.ai$/.test(h))return'claude';if(/duckduckgo\.com$|yandex\.|yahoo\.|ecosia\.org$|brave\.com$/.test(h))return'other-search';if(/facebook\.com$|instagram\.com$|t\.co$|x\.com$|tiktok\.com$|pinterest\.|youtube\.com$|linkedin\.com$|reddit\.com$|wa\.me$|whatsapp\.com$|t\.me$/.test(h))return'social';return'other-site'}
+async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'').toLowerCase();if(!ua||req.method!=='GET')return;
+ if(BOT.test(ua)){const b=AIB.find(x=>ua.includes(x[0]));if(!b)return;const kb='sb/'+new Date().toISOString().slice(0,10);let o={b:{},p:{}};const vb=await env.IMG.get(kb);if(vb){try{o=JSON.parse(vb)}catch(e){}}
+  o.b[b[1]]=(o.b[b[1]]||0)+1;if(/gpt|oai|claude|perplexity/.test(b[0])){const pp=p.replace(/index\.html$/,'');if(o.p[pp]||Object.keys(o.p).length<300)o.p[pp]=(o.p[pp]||0)+1}
+  if(Math.random()<0.34||!vb)await env.IMG.put(kb,JSON.stringify(o),{expirationTtl:86400*120});return}
  if((req.headers.get('sec-fetch-dest')||'document')!=='document'||(req.headers.get('purpose')||req.headers.get('sec-purpose')||'').includes('prefetch'))return;
  const k='st/'+new Date().toISOString().slice(0,10);let d={pv:0,l:{},p:{},c:{},r:{},s:{}};const v=await env.IMG.get(k);if(v){try{d=JSON.parse(v)}catch(e){}}
  if(d.pv>20000&&Math.random()>0.1)return;const w=d.pv>20000?10:1;const inc=(o,key)=>{if(o[key]||Object.keys(o).length<400)o[key]=(o[key]||0)+w};
  d.pv+=w;const m=p.match(/^\/(en|es|id)\//);inc(d.l,m?m[1]:'-');inc(d.p,p.replace(/index\.html$/,''));inc(d.c,(req.cf&&req.cf.country)||'-');
- let rh='';try{rh=new URL(req.headers.get('referer')||'').hostname.replace(/^www\./,'')}catch(e){}if(rh&&rh!=='thesumbatimes.com')inc(d.r,rh);
- const us=u.searchParams.get('utm_source');if(us)inc(d.s,us.slice(0,30).toLowerCase());
+ const us_=u.searchParams.get('utm_source');let rh='';try{rh=new URL(req.headers.get('referer')||'').hostname.replace(/^www\./,'')}catch(e){}if(rh&&rh!=='thesumbatimes.com'){inc(d.r,rh);d.g=d.g||{};inc(d.g,refGroup(rh))}else if(!rh){d.g=d.g||{};inc(d.g,us_?'campaign':'direct')}
+ if(us_)inc(d.s,us_.slice(0,30).toLowerCase());
  await env.IMG.put(k,JSON.stringify(d),{expirationTtl:86400*120})}catch(e){}}
 export default{async fetch(req,env,ctx){const u=new URL(req.url);
  if(u.pathname.startsWith('/api/nl/'))return nl(req,env,u);

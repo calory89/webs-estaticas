@@ -101,12 +101,16 @@ X["id"]["sdesc"]["projects"] = "Hotel, jalan, pelabuhan dan pembangunan baru di 
 def esc(s): return html.escape(str(s), quote=True)
 SUF = " · The Sumba Times"
 def seo_title(t):
-    """Keep <title> under ~65 chars: drop the subtitle after a colon, then the brand suffix, then cut on a word."""
-    if not t.endswith(SUF) or len(t) <= 65: return t if len(t) <= 70 else t[:67].rsplit(" ", 1)[0] + "…"
+    """Keep <title> at 60 characters or fewer (what Google shows): drop the subtitle after a colon, then the brand suffix, then cut on a word."""
+    if len(t) <= 60: return t
+    if not t.endswith(SUF): return t[:59].rsplit(" ", 1)[0] + "…"
     core = t[:-len(SUF)]
-    if ":" in core and len(core.split(":")[0]) >= 18: core = core.split(":")[0]
-    if len(core) + len(SUF) <= 65: return core + SUF
-    return core if len(core) <= 70 else core[:67].rsplit(" ", 1)[0] + "…"
+    if len(core) <= 60: return core
+    if ":" in core and len(core.split(":")[0]) >= 18:
+        core = core.split(":")[0]
+        if len(core) + len(SUF) <= 60: return core + SUF
+        if len(core) <= 60: return core
+    return core[:59].rsplit(" ", 1)[0] + "…"
 def seo_desc(d):
     d = re.sub(r"\s+", " ", d).strip()
     return d if len(d) <= 158 else d[:155].rsplit(" ", 1)[0].rstrip(",;:") + "…"
@@ -280,6 +284,7 @@ article p:first-of-type .dl+*{}
 .sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
 @media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
 @media print{.sa{display:none}}
+footer .links.l2{font-size:14px;margin-top:10px;opacity:.9}.pn{display:flex;justify-content:space-between;gap:16px;margin:26px 0 0;border-top:1px solid var(--line);padding-top:14px;font-family:Inter,Arial,sans-serif;font-size:14px}.pn a{flex:1;text-decoration:none;color:var(--ink)}.pn a b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.2;margin-top:3px}.pn a:last-child{text-align:right}.pn a:hover b{text-decoration:underline}.smp h2{margin:22px 0 6px}.smp ul{columns:2;column-gap:28px;padding-left:18px}.smp li{break-inside:avoid;margin:0 0 5px}@media(max-width:700px){.smp ul{columns:1}}
 .rtb{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 4px}
 .tags{margin:18px 0 0;font-family:Inter,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
 .pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:Inter,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}
@@ -323,6 +328,12 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
     xdef = "/" if P(path_tpl, "en") == "/en/" else P(path_tpl, "en")
     alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{xdef}">'
     url = BASE + P(path_tpl, l)
+    if "application/ld+json" not in extra and not noindex:
+        _name = title[:-len(SUF)] if title.endswith(SUF) else title
+        _ld = {"@context": "https://schema.org", "@type": "WebPage", "name": _name, "description": desc, "url": url, "inLanguage": l, "isPartOf": {"@type": "WebSite", "name": "The Sumba Times", "url": BASE + "/"},
+               "publisher": {"@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE + "/"},
+               "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Sumba Times", "item": f"{BASE}/{l}/"}] + ([{"@type": "ListItem", "position": 2, "name": _name, "item": url}] if url != f"{BASE}/{l}/" else [])}}
+        extra += f'<script type="application/ld+json">{json.dumps(_ld, ensure_ascii=False)}</script>'
     title = seo_title(title); desc = seo_desc(desc)
     og = image or (BASE + "/og.png")
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">'
@@ -382,11 +393,29 @@ w.remove();var s=z[0],j=z[1];if(s===200&&j.text){{add('assistant',j.text);H.push
 else if(s===429)add('assistant',TX.limit+'\n\n→ '+document.title.split(' · ')[0]+' | https://thesumbatimes.com/'+L+'/plan/');
 else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://thesumbatimes.com/'+L+'/plan/');else add('assistant',TX.err)}}).catch(function(){{w.remove();add('assistant',TX.err)}}).then(function(){{busy=false}});return false}};}})();</script>"""
 
+FOOT = [("/{l}/plan/", {"en": "Plan your trip", "es": "Planifica tu viaje", "id": "Rencanakan perjalanan"}), ("/{l}/flights/", {"en": "Flights to Sumba", "es": "Vuelos a Sumba", "id": "Penerbangan ke Sumba"}),
+        ("/{l}/travel-status/", {"en": "Travel status today", "es": "Estado del viaje hoy", "id": "Kondisi perjalanan hari ini"}), ("/{l}/events/", {"en": "Events calendar", "es": "Calendario de eventos", "id": "Kalender acara"}),
+        ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
+        ("/{l}/press/", {"en": "Press", "es": "Prensa", "id": "Pers"}), ("/{l}/sitemap/", {"en": "Site map", "es": "Mapa del sitio", "id": "Peta situs"})]
+_FJS = {}
+def footer_scripts(l):
+    """Shared footer scripts (newsletter, saved list, assistant, service worker) go to one cached file per language instead of being repeated in every page."""
+    if l not in _FJS:
+        import hashlib
+        raw = sub_js(l) + reader_tools.saved_js(l) + assistant(l) + "<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})</script>"
+        js = ";\n".join(re.findall(r"<script>(.*?)</script>", raw, re.S)); htm = re.sub(r"<script>.*?</script>", "", raw, flags=re.S)
+        path = f"/j.{l}.{hashlib.sha1(js.encode()).hexdigest()[:10]}.js"
+        _FJS[l] = (htm + f'<script src="{path}" defer></script>', path, js)
+    return _FJS[l][0]
+def foot_links(l):
+    rows = list(FOOT)
+    for m in MODULES: rows += getattr(m, "FOOTER", [])
+    return "".join(f'<a href="{t.format(l=l)}">{esc(n[l])}</a>' for t, n in rows)
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
-    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
-<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{reader_tools.saved_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
+    return f"""<div class="w"><footer><div class="links">{links}</div><div class="links l2">{foot_links(l)}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{footer_scripts(l)}</body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
     im = img_of(a)
@@ -464,11 +493,19 @@ def share(a, l):
 <button type="button" onclick="window.print()">PDF</button><button type="button" onclick="var b=this;if(navigator.share){{navigator.share({{title:{esc(json.dumps(t))},url:'{u}'}}).catch(function(){{}})}}else{{navigator.clipboard.writeText('{u}').then(function(){{b.textContent={esc(json.dumps(x['copied']))}}})}}">{x["copy"]}</button></div>"""
 
 def related(a, l):
-    items = [b for b in all_items() if b is not a]
-    same = [b for b in items if group_of(b) == group_of(a)]
-    rest = [b for b in items if b not in same]
-    pick = (same + rest)[:3]
+    """Six related pieces: same topics first (shared topic tags), then same section, newest first."""
+    ta = set(seo_extra.tags_of(a)); pool = [b for b in all_items() if b is not a and kind_of(b) != "letter"]
+    def score(b): return (len(ta & set(seo_extra.tags_of(b))) * 3 + (2 if b["section"] == a["section"] else 0) + (1 if group_of(b) == group_of(a) else 0) + (1 if kind_of(b) != kind_of(a) else 0))
+    pick = sorted(pool, key=lambda b: (-score(b), -dt(b).timestamp()))[:6]
     return f'<section class="block"><div class="hd"><h2>{X[l]["related"]}</h2></div><div class="grid">{"".join(card(b,l) for b in pick)}</div></section>'
+PN = {"en": ("Previous", "Next"), "es": ("Anterior", "Siguiente"), "id": ("Sebelumnya", "Berikutnya")}
+def prev_next(a, l):
+    """Previous / next piece of the same kind and section (chronological), for readers and for crawl paths."""
+    same = sorted([b for b in all_items() if b["section"] == a["section"] and kind_of(b) == kind_of(a)], key=dt)
+    if a not in same or len(same) < 2: return ""
+    i = same.index(a); pv = same[i - 1] if i > 0 else None; nx = same[i + 1] if i < len(same) - 1 else None
+    f = lambda b, lab, arrow_l, arrow_r: f'<a href="{url_of(b, l)}">{arrow_l}{lab}{arrow_r}<b>{esc(b[l]["title"])}</b></a>' if b else "<span></span>"
+    return f'<nav class="pn" aria-label="{PN[l][0]} / {PN[l][1]}">{f(pv, PN[l][0], "← ", "")}{f(nx, PN[l][1], "", " →")}</nav>'
 
 def gmaps(pl): return f"https://www.google.com/maps/search/?api=1&query={pl['lat']},{pl['lon']}"
 
@@ -650,7 +687,7 @@ def article_page(a, l):
 <div class="rtb">{reader_tools.listen_button(l)}{reader_tools.save_button(l)}</div>
 {picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
-<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
+{prev_next(a, l)}<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
     write(tpl[l], s)
 
 PAGER = {"en": ("Newer", "Older", "Page"), "es": ("Más recientes", "Anteriores", "Página"), "id": ("Lebih baru", "Sebelumnya", "Halaman")}
@@ -921,6 +958,16 @@ def root():
 <body><h1>The Sumba Times</h1><p><a href="/en/">English</a><a href="/es/">Español</a><a href="/id/">Bahasa Indonesia</a></p></body></html>"""
     write("/", s)
 
+SMAP = {"en": ("Site map", "Every page of The Sumba Times, by section.", "Services and tools"), "es": ("Mapa del sitio", "Todas las páginas de The Sumba Times, por secciones.", "Servicios y herramientas"), "id": ("Peta situs", "Semua halaman The Sumba Times, per rubrik.", "Layanan dan alat")}
+def html_sitemap(l):
+    t, d, sv = SMAP[l]; tpl = "/{l}/sitemap/"; secs = {}
+    for a in all_items(): secs.setdefault(a["section"], []).append(a)
+    body = f'<h2>{sv}</h2><ul>{"".join(f"<li>{x}</li>" for x in foot_links(l).replace("</a>", "</a>|").split("|") if x)}</ul>'
+    for sec in sorted(secs, key=lambda k: -len(secs[k])):
+        body += f'<h2><a href="/{l}/{GROUP.get(sec, sec) if sec not in LEGACY and sec != "places" else sec}/">{esc(sec_name(l, sec))}</a> <small>({len(secs[sec])})</small></h2><ul>' + "".join(f'<li><a href="{url_of(a, l)}">{esc(a[l]["title"])}</a></li>' for a in sorted(secs[sec], key=lambda a: a[l]["title"])) + "</ul>"
+    pg = head(l, t + SUF, d, tpl) + masthead(l, tpl) + f'<main id="main" class="w"><div class="nar smp"><div class="crumbs"><a href="/{l}/">{X[l]["home"]}</a></div><h1>{t}</h1><p class="dek">{d}</p>{body}</div></main>' + footer(l)
+    write(tpl.format(l=l), pg)
+
 def sitemaps():
     urls = []
     def add(tpl, lastmod=None):
@@ -929,6 +976,7 @@ def sitemaps():
         for l in LANGS: urls.append(f"<url><loc>{BASE}{P(tpl, l)}</loc>{lm}{alts}</url>")
     add("/{l}/", NOW.date().isoformat())
     add("/{l}/week/", NOW.date().isoformat())
+    add("/{l}/sitemap/", NOW.date().isoformat())
     add("/{l}/newsletter/", NOW.date().isoformat())
     for ed in sorted(glob.glob(os.path.join(OUT, "en", "newsletter", "20*"))): add("/{l}/newsletter/" + os.path.basename(ed) + "/")
     for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
@@ -997,6 +1045,8 @@ SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting
 
 def assets():
     write("/sw.js", SW_JS)
+    for l in LANGS:
+        footer_scripts(l); write(_FJS[l][1], _FJS[l][2])
     write("/BingSiteAuth.xml", '<?xml version="1.0"?>\n<users>\n\t<user>05B8339A86426AD018D8A40369B078EF</user>\n</users>')  # Bing Webmaster Tools verification (12 Nov 2026)
     write(f"/s.{css_hash()}.css", css_all())
     import shutil
@@ -1037,6 +1087,7 @@ if __name__ == "__main__":
         for a in all_items(): article_page(a, l)
     newsletter.build(globals())
     for m in MODULES: m.build(globals())
+    for l in LANGS: html_sitemap(l)
     write("/_og.json", json.dumps(OGJ, ensure_ascii=False))
     root(); sitemaps(); redirects(); assets()
     n = sum(len(f) for _, _, f in os.walk(OUT)); print("files", n)
