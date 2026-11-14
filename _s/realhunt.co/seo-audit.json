@@ -1,14 +1,14 @@
 {
  "summary": {
-  "pages": 3346,
-  "indexable": 2844,
-  "noindex": 502,
+  "pages": 3406,
+  "indexable": 2880,
+  "noindex": 526,
   "noindex_by_polish": 456,
   "duplicate_homes": 2,
   "title_over_60": 1039,
   "desc_over_155": 0,
-  "desc_under_120": 67,
-  "desc_out_of_range": 67,
+  "desc_under_120": 70,
+  "desc_out_of_range": 70,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 2822,
-  "thin_under_150_words": 29,
+  "pages_with_hreflang": 2858,
+  "thin_under_150_words": 26,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 2410,
+  "with_lastmod": 2506,
   "redirects": 628,
   "moved_stubs": 140
  },
@@ -94,7 +94,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 202,
+   "median_words": 876,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -103,7 +103,7 @@
    "pages": 27,
    "indexable": 27,
    "noindex": 0,
-   "median_words": 206,
+   "median_words": 826,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -235,9 +235,9 @@
    "inlinks_under_3": 0
   },
   "/embed/*/*": {
-   "pages": 18,
+   "pages": 30,
    "indexable": 0,
-   "noindex": 18,
+   "noindex": 30,
    "median_words": 0,
    "title_over_60": 0,
    "desc_out_of_range": 0,
@@ -301,7 +301,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 259,
+   "median_words": 993,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -310,7 +310,7 @@
    "pages": 27,
    "indexable": 27,
    "noindex": 0,
-   "median_words": 243,
+   "median_words": 896,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -424,9 +424,9 @@
    "inlinks_under_3": 0
   },
   "/es/embed/*/*": {
-   "pages": 18,
+   "pages": 30,
    "indexable": 0,
-   "noindex": 18,
+   "noindex": 30,
    "median_words": 0,
    "title_over_60": 0,
    "desc_out_of_range": 0,
@@ -508,7 +508,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 747,
+   "median_words": 890,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -526,16 +526,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 401,
+   "median_words": 583,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/research/*": {
-   "pages": 5,
-   "indexable": 5,
+   "pages": 10,
+   "indexable": 10,
    "noindex": 0,
-   "median_words": 1520,
+   "median_words": 959,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -544,7 +544,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 205,
+   "median_words": 215,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -572,6 +572,24 @@
    "indexable": 22,
    "noindex": 5,
    "median_words": 477,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/tools": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 614,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/tools/*": {
+   "pages": 12,
+   "indexable": 12,
+   "noindex": 0,
+   "median_words": 941,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -769,7 +787,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 679,
+   "median_words": 806,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -787,16 +805,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 349,
+   "median_words": 507,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/research/*": {
-   "pages": 6,
-   "indexable": 6,
+   "pages": 11,
+   "indexable": 11,
    "noindex": 0,
-   "median_words": 1289,
+   "median_words": 835,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -805,7 +823,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 233,
+   "median_words": 242,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -814,7 +832,7 @@
    "pages": 11,
    "indexable": 11,
    "noindex": 0,
-   "median_words": 458,
+   "median_words": 496,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -844,6 +862,24 @@
    "median_words": 0,
    "title_over_60": 0,
    "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/tools": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 567,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/tools/*": {
+   "pages": 12,
+   "indexable": 12,
+   "noindex": 0,
+   "median_words": 853,
+   "title_over_60": 0,
+   "desc_out_of_range": 3,
    "inlinks_under_3": 0
   },
   "/top": {
@@ -912,7 +948,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 2844,
+   "pages with JSON-LD changed": 2880,
    "RealEstateListing: datePosted added": 591,
    "ItemList: items removed or renumbered": 6
   },
@@ -923,9 +959,6 @@
    "/about",
    "/agents",
    "/alerts",
-   "/buying-costs/albania",
-   "/buying-costs/bulgaria",
-   "/buying-costs/lombok",
    "/contact",
    "/costs/montenegro",
    "/ecobeachcity",
@@ -1011,7 +1044,7 @@
    "/legal/cookies",
    "/legal/privacy",
    "/legal/takedown",
-   "... 7 more"
+   "... 10 more"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -1082,7 +1115,7 @@
   ]
  },
  "spanish": {
-  "twins": 803,
+  "twins": 775,
   "groups": {
    "homes": {
     "pages": 591,
@@ -1108,11 +1141,11 @@
     "spanish_pct": 84.69
    },
    "content": {
-    "pages": 548,
-    "twins": 547,
-    "words": 440219,
+    "pages": 561,
+    "twins": 560,
+    "words": 433498,
     "english": 0,
-    "by_hand": 1,
+    "by_hand": 42,
     "spanish_pct": 100
    },
    "top": {
@@ -1125,28 +1158,28 @@
   }
  },
  "sitemaps": {
-  "sitemap-main.xml": 16,
+  "sitemap-main.xml": 17,
   "sitemap-countries.xml": 140,
   "sitemap-prices.xml": 54,
   "sitemap-cheap-houses.xml": 57,
   "sitemap-guides.xml": 21,
   "sitemap-costs.xml": 56,
-  "sitemap-blog.xml": 24,
+  "sitemap-blog.xml": 29,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 154,
   "sitemap-homes.xml": 590,
   "sitemap-new-builds.xml": 8,
-  "sitemap-more.xml": 44,
-  "sitemap-es-main.xml": 13,
+  "sitemap-more.xml": 56,
+  "sitemap-es-main.xml": 14,
   "sitemap-es-countries.xml": 140,
   "sitemap-es-prices.xml": 54,
   "sitemap-es-cheap-houses.xml": 57,
   "sitemap-es-guides.xml": 21,
   "sitemap-es-costs.xml": 56,
-  "sitemap-es-blog.xml": 23,
+  "sitemap-es-blog.xml": 28,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 154,
   "sitemap-es-homes.xml": 590,
-  "sitemap-es-more.xml": 34
+  "sitemap-es-more.xml": 46
  }
 }

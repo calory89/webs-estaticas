@@ -1,14 +1,14 @@
 {
  "noindex_copies": 4,
  "written_by_hand": {
-  "pages": 603,
-  "words": 235275,
+  "pages": 649,
+  "words": 282085,
   "english": 0,
   "failed": []
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 803,
+ "twins": 775,
  "groups": {
   "homes": {
    "pages": 591,
@@ -34,11 +34,11 @@
    "spanish_pct": 84.69
   },
   "content": {
-   "pages": 548,
-   "twins": 547,
-   "words": 440219,
+   "pages": 561,
+   "twins": 560,
+   "words": 433498,
    "english": 0,
-   "by_hand": 1,
+   "by_hand": 42,
    "spanish_pct": 100
   },
   "top": {

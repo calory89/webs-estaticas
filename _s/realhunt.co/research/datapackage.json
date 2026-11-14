@@ -1,0 +1,535 @@
+{
+ "name": "realhunt-research",
+ "title": "RealHunt data: cheap homes, buying costs and rules for foreign buyers",
+ "homepage": "https://realhunt.co/research",
+ "version": "2026-11-14",
+ "created": "2026-11-14",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "RealHunt",
+   "path": "https://realhunt.co",
+   "role": "author"
+  }
+ ],
+ "resources": [
+  {
+   "name": "prices",
+   "title": "Median asking price of a cheap home, by country (2026)",
+   "path": "https://realhunt.co/research/prices.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Median asking price, price per m² and cheapest home in 18 countries, from 591 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "homes"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "median_eur_per_sqm"
+     },
+     {
+      "name": "homes_with_size"
+     },
+     {
+      "name": "median_size_sqm"
+     },
+     {
+      "name": "cheapest_eur"
+     },
+     {
+      "name": "most_expensive_eur"
+     },
+     {
+      "name": "regions"
+     },
+     {
+      "name": "median_score"
+     },
+     {
+      "name": "small_sample"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/prices"
+    }
+   ]
+  },
+  {
+   "name": "what-your-budget-buys",
+   "title": "What €50,000, €100,000 and €200,000 buy, country by country (2026)",
+   "path": "https://realhunt.co/research/what-your-budget-buys.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "How many homes, how big and at what price per m² you find for up to €50,000, €100,000 and €200,000 in 18 countries. Chart, tables and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "band_from_eur"
+     },
+     {
+      "name": "band_to_eur"
+     },
+     {
+      "name": "homes"
+     },
+     {
+      "name": "homes_with_size"
+     },
+     {
+      "name": "median_size_sqm"
+     },
+     {
+      "name": "median_eur_per_sqm"
+     },
+     {
+      "name": "median_bedrooms"
+     },
+     {
+      "name": "best_home_url"
+     },
+     {
+      "name": "best_home_price_eur"
+     },
+     {
+      "name": "best_home_score"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/what-your-budget-buys"
+    }
+   ]
+  },
+  {
+   "name": "buying-costs-by-country",
+   "title": "Buying costs by country: taxes and fees on top of the price (2026)",
+   "path": "https://realhunt.co/research/buying-costs-by-country.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "What you pay on top of the price when you buy a home in 27 countries, ranked from 0.6–1.1% to 12–22%, with yearly property tax and sources. Chart, table and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "costs_low_pct"
+     },
+     {
+      "name": "costs_high_pct"
+     },
+     {
+      "name": "on_100000_low_eur"
+     },
+     {
+      "name": "on_100000_high_eur"
+     },
+     {
+      "name": "breakdown"
+     },
+     {
+      "name": "annual_property_tax"
+     },
+     {
+      "name": "rental_income_tax"
+     },
+     {
+      "name": "as_of"
+     },
+     {
+      "name": "page"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/buying-costs-by-country"
+    }
+   ]
+  },
+  {
+   "name": "where-foreigners-can-buy",
+   "title": "Where foreigners can and cannot buy a home: the rules in 20 countries (2026)",
+   "path": "https://realhunt.co/research/where-foreigners-can-buy.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Which of 20 countries let foreigners buy a home freely, which set conditions and which restrict it, for EU citizens, non-EU buyers and 14 nationalities.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "eu_citizens"
+     },
+     {
+      "name": "other_nationalities"
+     },
+     {
+      "name": "american"
+     },
+     {
+      "name": "british"
+     },
+     {
+      "name": "canadian"
+     },
+     {
+      "name": "australian"
+     },
+     {
+      "name": "german"
+     },
+     {
+      "name": "dutch"
+     },
+     {
+      "name": "swedish"
+     },
+     {
+      "name": "danish"
+     },
+     {
+      "name": "norwegian"
+     },
+     {
+      "name": "french"
+     },
+     {
+      "name": "spanish"
+     },
+     {
+      "name": "italian"
+     },
+     {
+      "name": "swiss"
+     },
+     {
+      "name": "irish"
+     },
+     {
+      "name": "rule"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/where-foreigners-can-buy"
+    }
+   ]
+  },
+  {
+   "name": "best-scored-regions",
+   "title": "Best-scored regions for a cheap home, ranked (2026)",
+   "path": "https://realhunt.co/research/best-scored-regions.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "30 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "region"
+     },
+     {
+      "name": "country"
+     },
+     {
+      "name": "homes"
+     },
+     {
+      "name": "median_score"
+     },
+     {
+      "name": "best_score"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "median_eur_per_sqm"
+     },
+     {
+      "name": "page"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/best-scored-regions"
+    }
+   ]
+  },
+  {
+   "name": "homes-under-50000",
+   "title": "Where the homes under €50,000 are: countries and regions (2026)",
+   "path": "https://realhunt.co/research/homes-under-50000.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "80 homes at or under €50,000, checked by a person: how many each country and region has, the cheapest and the median size. Chart, tables and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "level"
+     },
+     {
+      "name": "country"
+     },
+     {
+      "name": "region"
+     },
+     {
+      "name": "homes_at_or_under_50000"
+     },
+     {
+      "name": "share_of_country_pct"
+     },
+     {
+      "name": "homes_at_or_under_30000"
+     },
+     {
+      "name": "cheapest_eur"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "page"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/homes-under-50000"
+    }
+   ]
+  },
+  {
+   "name": "years-of-salary",
+   "title": "How many years of average net pay a cheap home costs, by country (2026)",
+   "path": "https://realhunt.co/research/years-of-salary.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "The median asking price of the homes on RealHunt divided by Eurostat's average net earnings, in 11 European countries: from 1.5 to 8 years. Chart and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "years_of_net_earnings"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "annual_net_earnings_eur"
+     },
+     {
+      "name": "earnings_year"
+     },
+     {
+      "name": "homes"
+     },
+     {
+      "name": "small_sample"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/years-of-salary"
+    }
+   ]
+  },
+  {
+   "name": "flood-indicator",
+   "title": "Cheap homes and flood risk: share with a medium or high indicator, by country (2026)",
+   "path": "https://realhunt.co/research/flood-indicator.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "9% of 551 cheap homes carry a medium or high flood indicator. The share in each country, what the indicator is and what it is not. Chart and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country"
+     },
+     {
+      "name": "homes_with_indicator"
+     },
+     {
+      "name": "low"
+     },
+     {
+      "name": "medium"
+     },
+     {
+      "name": "high"
+     },
+     {
+      "name": "medium_or_high_pct"
+     },
+     {
+      "name": "with_official_zone"
+     },
+     {
+      "name": "small_sample"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/flood-indicator"
+    }
+   ]
+  },
+  {
+   "name": "price-by-airport-distance",
+   "title": "How the price of a cheap home changes with the distance to the airport (2026)",
+   "path": "https://realhunt.co/research/price-by-airport-distance.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Median price and price per m² of 578 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "level"
+     },
+     {
+      "name": "name"
+     },
+     {
+      "name": "from_km"
+     },
+     {
+      "name": "to_km"
+     },
+     {
+      "name": "homes"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "median_eur_per_sqm"
+     },
+     {
+      "name": "homes_with_size"
+     },
+     {
+      "name": "median_score"
+     },
+     {
+      "name": "median_distance_km"
+     },
+     {
+      "name": "under_60_km_pct"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/price-by-airport-distance"
+    }
+   ]
+  },
+  {
+   "name": "new-build-prices",
+   "title": "New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)",
+   "path": "https://realhunt.co/research/new-build-prices.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Median starting price per m² of 417 new-build projects in 5 destinations, from €1,366 in Batumi to €3,661 in Phuket. Chart, table and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "destination"
+     },
+     {
+      "name": "projects"
+     },
+     {
+      "name": "with_price_per_sqm"
+     },
+     {
+      "name": "median_eur_per_sqm"
+     },
+     {
+      "name": "lowest_eur_per_sqm"
+     },
+     {
+      "name": "highest_eur_per_sqm"
+     },
+     {
+      "name": "median_from_price_eur"
+     },
+     {
+      "name": "cheapest_eur"
+     },
+     {
+      "name": "page"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/new-build-prices"
+    }
+   ]
+  },
+  {
+   "name": "homes",
+   "title": "The homes behind the figures, one row each",
+   "path": "https://realhunt.co/research/homes.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8"
+  },
+  {
+   "name": "monthly-series",
+   "title": "Monthly price series since November 2026",
+   "path": "https://realhunt.co/research/monthly-series.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8"
+  }
+ ]
+}

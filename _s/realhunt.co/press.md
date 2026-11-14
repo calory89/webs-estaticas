@@ -27,6 +27,11 @@ Computed from the homes on the site each time it is updated. Asking prices in eu
 - [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country). From 0.6–1.1% in Georgia to 12–22% in Northern Cyprus.
 - [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy). Free for any nationality in 12 of 20 countries; restricted in Canada, Denmark and Switzerland.
 - [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions). Highest median score: Calabria, Italy (91).
+- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000). 80 homes at or under €50,000; most in Italy (33).
+- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary). 1.5 years of net pay in Germany, 8 in the Netherlands.
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 9% of 551 homes are marked medium or high; 13 are marked high.
+- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,464/m² under 30 km from an airport, €1,008/m² between 30 and 60 km.
+- [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices). From €1,366/m² in Batumi to €3,661/m² in Phuket.
 
 Each page has its chart, table, CSV, method and a ready citation. Need a different cut (one country, one price band, one month)? Ask at carlos@equinoxinvestmentgroup.com.
 
