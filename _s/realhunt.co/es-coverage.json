@@ -8,7 +8,7 @@
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1024,
+ "twins": 1025,
  "groups": {
   "homes": {
    "pages": 591,
@@ -19,9 +19,9 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 500,
-   "twins": 500,
-   "words": 1031157,
+   "pages": 501,
+   "twins": 501,
+   "words": 1033384,
    "english": 0,
    "spanish_pct": 100
   },

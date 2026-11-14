@@ -1,7 +1,7 @@
 {
  "summary": {
-  "pages": 3986,
-  "indexable": 3454,
+  "pages": 3988,
+  "indexable": 3456,
   "noindex": 532,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3436,
+  "pages_with_hreflang": 3438,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3092,
+  "with_lastmod": 3094,
   "redirects": 1180,
   "moved_stubs": 142
  },
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1574,
+   "median_words": 1577,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 266,
-   "indexable": 266,
+   "pages": 267,
+   "indexable": 267,
    "noindex": 0,
    "median_words": 1494,
    "title_over_60": 7,
@@ -337,14 +337,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1926,
+   "median_words": 1931,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 266,
-   "indexable": 266,
+   "pages": 267,
+   "indexable": 267,
    "noindex": 0,
    "median_words": 1754,
    "title_over_60": 78,
@@ -967,7 +967,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3454,
+   "pages with JSON-LD changed": 3456,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
    "Article: author, date, headline or image missing": 52
@@ -1131,7 +1131,7 @@
   ]
  },
  "spanish": {
-  "twins": 1024,
+  "twins": 1025,
   "groups": {
    "homes": {
     "pages": 591,
@@ -1142,9 +1142,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 500,
-    "twins": 500,
-    "words": 1031157,
+    "pages": 501,
+    "twins": 501,
+    "words": 1033384,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1175,8 +1175,8 @@
  },
  "tech": {
   "summary": {
-   "checked": 3986,
-   "indexable": 3454,
+   "checked": 3988,
+   "indexable": 3456,
    "max_depth": 3,
    "titles_changed_since_last_build": 0,
    "external_link_hosts": 135,
@@ -1280,7 +1280,7 @@
   "depth": {
    "0": 2,
    "1": 132,
-   "2": 3043,
+   "2": 3045,
    "3": 277
   },
   "noindex": {
@@ -1329,7 +1329,7 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 20.4,
+     "html_kb": 20.5,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 77.9,
      "route_js_kb": 393.5,
@@ -1341,7 +1341,7 @@
     },
     "band": {
      "path": "/homes/bulgaria/under-80000",
-     "html_kb": 11.2,
+     "html_kb": 11.3,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 77.9,
      "route_js_kb": 393.5,
@@ -1370,7 +1370,7 @@
   "sitemap-main.xml": 17,
   "sitemap-countries.xml": 178,
   "sitemap-prices.xml": 55,
-  "sitemap-cheap-houses.xml": 267,
+  "sitemap-cheap-houses.xml": 268,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 29,
@@ -1382,7 +1382,7 @@
   "sitemap-es-main.xml": 14,
   "sitemap-es-countries.xml": 178,
   "sitemap-es-prices.xml": 55,
-  "sitemap-es-cheap-houses.xml": 267,
+  "sitemap-es-cheap-houses.xml": 268,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 28,
