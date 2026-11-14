@@ -14,14 +14,16 @@
 import { BS, PL, BUY_PLACES, BUY_LANGS, buyPlaceOf } from './kbx_buy_i18n.js';
 import { NT } from './kbx_buy_notes.js';
 import { trData } from './kbx_tr.js';
-import { hdisp } from './kbx_hdate.js';
-import { NT29, SRC29, PLAN29, COUNTRY29 } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
+import { hdisp, mkName } from './kbx_hdate.js';
+import { data as namedData } from './kbx_named.js';
+import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = BUY_LANGS;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/buying-off-plan(?:\/([a-z-]{2,30}))?(\/?)$/;
 export const SITEMAP = '/guides/buying-off-plan/sitemap.xml';
+export const GL_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?glossary\/(escrow|leasehold|payment-plan)(\/?)$/;   // n29h2 (item 27)
 const BASE = '/guides/buying-off-plan/';
 const REVIEWED = '2026-11-13';   // date the guide text and the sources below were last read
 const REVIEWED29 = '2026-11-14';  // n29h2: country guides (sources read that day) and the printable questions added to every guide
@@ -208,6 +210,9 @@ function table(lang, G, D) {
     '<div class="k-table-wrap"><table class="k-table k-table--dense"><thead><tr><th>' + ['th_proj', 'th_dev', 'th_permit', 'th_rec', 'th_devrec'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' + more;
 }
 
+// n29h2 (item 27): links from the land and money steps to the glossary pages with the table by market
+const GL_STEP = { land: [['leasehold', 'lease_h1']], money: [['escrow', 'escrow_h1'], ['payment-plan', 'pp_h1']] };
+const glLinks = (lang, k) => GL_STEP[k] ? '<p class="k-small">' + GL_STEP[k].map(([x, h]) => '<a href="' + pre(lang) + '/glossary/' + x + '/">' + esc(GL29[lang] && GL29[lang][h] || GL29.en[h]) + '</a>').join(' · ') + '</p>' : '';
 // n29h2 (item 28): printable questions for the developer, one per step, each with the official sources of that step on this guide
 function questions(lang, slug, P) {
   const plan = PLAN[slug] || {};
@@ -225,7 +230,7 @@ function guidePage(G, slug, lang, lease) {
     const notes = plan[k] || [];
     return '<section class="kby-step" id="step-' + k + '"><h2>' + esc(tx(lang, 'step', { n: i + 1 })) + (lang === 'zh' ? '：' : ': ') + esc(t(lang, 'st_' + k)) + '</h2><p>' + esc(t(lang, 'g_' + k)) + '</p>' +
       (notes.length ? '<h3>' + te(lang, 'rules') + '</h3><ul class="kby-rl">' + notes.map(([nk, ids]) => '<li>' + esc(note(nk, lang)) + srcLinks(lang, ids) + '</li>').join('') + '</ul>' : '') +
-      stepData(lang, G, D, k, k === 'land' ? lease : 0) + '</section>';
+      stepData(lang, G, D, k, k === 'land' ? lease : 0) + glLinks(lang, k) + '</section>';
   }).join('');
   const sum = '<h2 id="figures">' + te(lang, 'sum_h', { p: esc(name) }) + '</h2><div class="k-grid">' + stat(lang, D.n, 's_n') + stat(lang, D.permit, 's_permit') + stat(lang, D.deposit, 's_dep') + stat(lang, D.past, 's_past') + stat(lang, D.moved, 's_moved') + (D.med != null ? stat(lang, D.med, 's_med') : '') + '</div><p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p>';
   const toc = '<nav class="kby-toc" aria-label="' + esc(t(lang, 'toc')) + '"><h2 id="toc">' + esc(t(lang, 'toc')) + '</h2><ol>' + STEPS.map(k => '<li><a href="#step-' + k + '">' + esc(t(lang, 'st_' + k)) + '</a></li>').join('') + '<li><a href="#projects">' + esc(tx(lang, 'tbl_h', { in: inP })) + '</a></li><li><a href="#questions">' + esc(tx(lang, 'qs_h', { in: inP })) + '</a></li><li><a href="#faq">' + esc(t(lang, 'faq_h')) + '</a></li></ol></nav>';
@@ -270,17 +275,90 @@ function hubPage(G, lang) {
   return { path: BASE, title, desc, body, ld };
 }
 
+
+// ------------------------------------------------------------------------------------------------ glossary terms (n29h2, item 27)
+// /glossary/<escrow|leasehold|payment-plan>/ in 8 languages: definition, the rules we read (links to the guide steps), and a table by
+// market computed from named.json (fx.foreign_ownership, fx.deposit_pct, fx.payment_plan) and the transparency index (deposit
+// protection stated). Markets with 5+ projects in the count only. Sumba and the founder's companies are excluded as in trData.
+const GL_MIN = 5;
+const g = (lang, k) => (GL29[lang] && GL29[lang][k] != null) ? GL29[lang][k] : GL29.en[k];
+const gf = (lang, k, v) => fill(g(lang, k), v);
+const COI = /eco\s*beach\s*city|\bequinox\b/i;
+const med = a => { const b = a.slice().sort((x, y) => x - y), n = b.length; return n ? (n % 2 ? b[(n - 1) / 2] : (b[n / 2 - 1] + b[n / 2]) / 2) : null; };
+const OWN_NS = /^\s*(not (stated|published|disclosed)|unknown|n\/a|-)/i, OWN_L = /lease/i, OWN_F = /freehold|fee simple|pleno dominio|propriedade plena|direct ownership|full ownership|plena propiedad/i;
+let GLD = null;
+async function glData(env) {
+  const [G, ix] = await Promise.all([guideData(env), namedData(env)]);
+  if (GLD && GLD.v === G.v && GLD.ix === ix) return GLD;
+  const fx = new Map((ix.P || []).map(x => [x.id, x.fx || {}]));
+  const by = new Map();
+  for (const r of G.ix.rows.values()) {
+    if (r.sumba || COI.test(String(r.n || '')) || COI.test(String(r.dv || ''))) continue;
+    const f = fx.get(r.id); if (!f) continue;
+    const m = by.get(r.mk) || { mk: r.mk, n: 0, dep: 0, own: 0, fh: 0, lh: 0, oth: 0, yrs: [], pct: [], plan: 0 }; m.n++;
+    if (r.comp.deposit.st === 'yes') m.dep++;
+    const o = String(f.foreign_ownership || '').trim();
+    if (o && !OWN_NS.test(o)) { m.own++; if (OWN_L.test(o)) { m.lh++; const y = /(\d{2,3})\s*-?\s*(?:years?|yrs?|jahre|años|ans)/i.exec(o); if (y && +y[1] >= 10 && +y[1] <= 999) m.yrs.push(+y[1]); } else if (OWN_F.test(o)) m.fh++; else m.oth++; }
+    if (isFinite(+f.deposit_pct) && +f.deposit_pct > 0 && +f.deposit_pct <= 100) m.pct.push(+f.deposit_pct);
+    if (f.payment_plan) m.plan++;
+    by.set(r.mk, m);
+  }
+  GLD = { v: G.v, ix, G, by: [...by.values()], updated: G.updated };
+  return GLD;
+}
+const pctS = (lang, v) => nf(lang, Math.round(v * 10) / 10) + '%';
+function glPage(D, term, lang) {
+  const path = '/glossary/' + term + '/', url = ORIGIN + pre(lang) + path, M = D.by;
+  let rows = [], head = [], q2 = '', a2 = '', step = 'money';
+  const mkC = (m) => '<td>' + bdi(mkName(m.mk, lang)) + '</td>';
+  if (term === 'escrow') {
+    const L = M.filter(m => m.n >= GL_MIN).sort((a, b) => b.dep / b.n - a.dep / a.n || b.n - a.n);
+    head = ['g_mk', 'g_n', 'escrow_c', 'escrow_s'];
+    rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + '</td><td>' + nf(lang, m.dep) + '</td><td>' + pctS(lang, 100 * m.dep / m.n) + '</td></tr>');
+    q2 = g(lang, 'escrow_q2'); a2 = gf(lang, 'escrow_a2', { list: L.filter(m => m.dep).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.dep) + '/' + nf(lang, m.n)).join('; ') });
+  } else if (term === 'leasehold') {
+    step = 'land';
+    const L = M.filter(m => m.own >= GL_MIN).sort((a, b) => b.lh / b.own - a.lh / a.own || b.own - a.own);
+    head = ['g_mk', 'lease_c', 'lease_f', 'lease_l', 'lease_o', 'lease_y'];
+    rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.own) + '</td><td>' + nf(lang, m.fh) + '</td><td>' + nf(lang, m.lh) + '</td><td>' + nf(lang, m.oth) + '</td><td>' + (m.yrs.length ? nf(lang, Math.min(...m.yrs)) + '-' + nf(lang, Math.max(...m.yrs)) : '-') + '</td></tr>');
+    q2 = g(lang, 'lease_q2'); a2 = gf(lang, 'lease_a2', { list: L.filter(m => m.lh).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.lh) + '/' + nf(lang, m.own)).join('; ') });
+  } else {
+    const L = M.filter(m => m.pct.length >= GL_MIN).sort((a, b) => med(a.pct) - med(b.pct) || b.pct.length - a.pct.length);
+    head = ['g_mk', 'g_n', 'pp_c', 'pp_med', 'pp_rng', 'pp_plan'];
+    rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + '</td><td>' + nf(lang, m.pct.length) + '</td><td>' + pctS(lang, med(m.pct)) + '</td><td>' + pctS(lang, Math.min(...m.pct)) + ' - ' + pctS(lang, Math.max(...m.pct)) + '</td><td>' + nf(lang, m.plan) + '</td></tr>');
+    q2 = g(lang, 'pp_q2'); a2 = gf(lang, 'pp_a2', { list: L.slice().sort((a, b) => b.pct.length - a.pct.length).slice(0, 4).map(m => mkName(m.mk, lang) + ' ' + pctS(lang, med(m.pct))).join('; ') });
+  }
+  const k = term === 'payment-plan' ? 'pp' : term === 'leasehold' ? 'lease' : 'escrow';
+  const title = g(lang, k + '_t'), h1 = g(lang, k + '_h1'), def = g(lang, k + '_def');
+  let desc = g(lang, k + '_d'); if ([...desc].length > 155) desc = [...desc].slice(0, 154).join('').replace(/[\s,;:]+\S*$/, '') + '.';
+  const guides = BUY_PLACES.filter(P => (PLAN[P.s] || {})[step]).map(P => '<li><a href="' + pre(lang) + BASE + P.s + '/#step-' + step + '">' + esc(gf(lang, step === 'land' ? 'g_guide_l' : 'g_guide', { in: pin(P, lang) })) + '</a></li>').join('');
+  const tbl = '<div class="k-table-wrap"><table class="k-table k-table--dense"><thead><tr><th>' + head.map(x => esc(g(lang, x))).join('</th><th>') + '</th></tr></thead><tbody>' + rows.join('') + '</tbody></table></div><p class="k-small k-muted">' + esc(g(lang, 'g_note')) + '</p>';
+  const faq = [[gf(lang, 'q1', { term: GL_NAME[term][lang] || GL_NAME[term].en }), def], [q2, a2]];
+  const crumbs = [[g(lang, 'g_crumb'), '/glossary/'], [h1, pre(lang) + path]];
+  const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, crumbs) + '<h1>' + esc(h1) + '</h1><p class="lead">' + esc(def) + '</p>' +
+    '<p class="k-small k-muted"><time datetime="' + MOD + '">' + esc(gf(lang, 'g_upd', { d: fdt(MOD, lang), d2: fdt(D.updated, lang) })) + '</time></p></div><div class="k-prose">' + tbl +
+    (guides ? '<h2 id="rules">' + esc(g(lang, 'g_rules')) + '</h2><ul>' + guides + '</ul>' : '') +
+    '<section class="kby-faq"><h2 id="faq">' + esc(g(lang, 'g_faq')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section>' +
+    '<p><a href="/glossary/">' + esc(g(lang, 'g_all')) + '</a> · <a href="' + pre(lang) + BASE + '">' + esc(t(lang, 'hub')) + '</a></p></div></div></section></div>';
+  const ld = [{ '@type': 'DefinedTerm', '@id': url + '#term', name: h1, description: def, inLanguage: lang, url, inDefinedTermSet: ORIGIN + '/glossary/' },
+    { '@type': 'Dataset', name: title, description: desc, url, inLanguage: lang, dateModified: D.updated > MOD ? D.updated : MOD, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true },
+    crumbLd(lang, crumbs), { '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
+  return { path, title, desc, body, ld, og: 'website' };
+}
+
 // ------------------------------------------------------------------------------------------------ page entry (routed in index.js)
 const BODY = new Map();
 export async function page(req, u, env, ctx, shell) {
   if (u.pathname === SITEMAP) return new Response(sitemapXml(), { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
-  const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;
-  const lang = m[1] || 'en', slug = m[2] || null;
+  const gm = u.pathname.match(GL_RX);
+  const m = gm || u.pathname.match(PAGE_RX); if (!m || !shell) return null;
+  const lang = m[1] || 'en', slug = gm ? null : (m[2] || null);
   if (slug && !PL[slug]) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let G; try { G = await guideData(env); } catch (e) { return null; }
-  const k = lang + '|' + (slug || '#') + '|' + G.v;
+  const k = lang + '|' + (gm ? 'g:' + gm[2] : (slug || '#')) + '|' + G.v;
   let pg = BODY.get(k);
+  if (!pg && gm) { let D; try { D = await glData(env); } catch (e) { return null; } pg = glPage(D, gm[2], lang); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
   if (!pg) {
     const lease = slug ? await leaseCount(env, G.places.get(slug).L.map(r => r.id)) : 0;
     pg = slug ? guidePage(G, slug, lang, lease) : hubPage(G, lang); if (!pg) return null;
@@ -304,9 +382,9 @@ export async function page(req, u, env, ctx, shell) {
 }
 
 function sitemapXml() {
-  const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'));
+  const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => '/glossary/' + x + '/'));
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + MOD + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
 }
 
-export { guidePage, hubPage, guideData, SRC, PLAN };   // for the local test
+export { guidePage, hubPage, guideData, glData, glPage, SRC, PLAN };   // for the local test

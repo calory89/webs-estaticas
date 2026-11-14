@@ -1,7 +1,7 @@
 {
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
-  {"date": "2026-11-14", "kind": "shipped", "url": "/guides/buying-off-plan/", "text": "Buying guides for 8 more countries, 56 new neighbourhood pages", "tl": {"es": "Guías de compra para 8 países más y 56 páginas de barrio nuevas", "fr": "Guides d’achat pour 8 pays de plus, 56 nouvelles pages de quartier", "de": "Kaufratgeber für 8 weitere Länder, 56 neue Viertelseiten", "nl": "Koopgidsen voor 8 extra landen, 56 nieuwe buurtpagina’s", "ru": "Гиды покупки ещё для 8 стран, 56 новых страниц районов", "zh": "新增 8 个国家购房指南和 56 个街区页面", "ar": "أدلة شراء لـ8 دول إضافية و56 صفحة أحياء جديدة"}},
+  {"date": "2026-11-14", "kind": "shipped", "url": "/guides/buying-off-plan/", "text": "Buying guides for 8 more countries, 56 neighbourhood pages, 3 glossary tables", "tl": {"es": "Guías de compra de 8 países más, 56 barrios y 3 tablas de glosario", "fr": "Guides d’achat pour 8 pays de plus, 56 quartiers, 3 tableaux du glossaire", "de": "Kaufratgeber für 8 weitere Länder, 56 Viertelseiten, 3 Glossartabellen", "nl": "Koopgidsen voor 8 extra landen, 56 buurtpagina’s, 3 woordenlijsttabellen", "ru": "Гиды покупки ещё для 8 стран, 56 районов, 3 таблицы глоссария", "zh": "新增 8 个国家购房指南、56 个街区页面和 3 个术语数据表", "ar": "أدلة شراء لـ8 دول إضافية و56 صفحة أحياء و3 جداول في المسرد"}},
   {
    "date": "2026-11-14",
    "kind": "shipped",
