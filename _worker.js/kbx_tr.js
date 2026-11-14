@@ -18,7 +18,7 @@
 // Sumba rows link to nothing but the right of reply, and the rest of the site's Sumba handling is unchanged (no project pages).
 // Possible matches on official lists are never published and count exactly like "not checked" (left out of the total).
 import { TRS } from './kbx_tr_i18n.js';
-import { hdisp } from './kbx_hdate.js';
+import { hdisp, mkName } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E as E27 } from './kbx_e27_i18n.js';
 import { t27 } from './kbx_t27_i18n.js';
@@ -168,7 +168,7 @@ export async function trBadge(env, id, lang) {
     if (pl.P.coi || !pl.L.includes(r)) continue;
     const B = BADGE[lang] || BADGE.en, link = pre(lang) + '/rankings/transparency/' + s + '/';
     const txt = pl.ranked ? B[0].replace('{r}', nf(lang, r['rk_' + s])).replace('{m}', nf(lang, pl.n)) : B[1].replace('{s}', nf(lang, r.score));
-    out.push('<a href="' + link + '">' + esc(txt).replace('{p}', bdi(pl.P.n)) + '</a>');
+    out.push('<a href="' + link + '">' + esc(txt).replace('{p}', bdi(mkName(pl.P.n, lang))) + '</a>');
   }
   return out.length ? '<p class="k-small ktr-badge" id="transparency-rank">' + out.join(' · ') + '</p>' : '';
 }
@@ -257,9 +257,9 @@ function replyBox(lang, id) {
   return '<div class="ktr-box" id="reply"><h2>' + esc(t(lang, 'rr_h')) + '</h2><p>' + esc(t(lang, 'rr_t')) + '</p><a class="k-btn" href="' + (id ? replyHref(id) : '/developers/reply/') + '">' + esc(t(lang, 'rr_btn')) + '</a> <a class="k-btn k-btn--ghost" href="/corrections/">' + esc({ en: 'Corrections', es: 'Correcciones', fr: 'Corrections', de: 'Korrekturen', nl: 'Correcties', ru: 'Исправления', zh: '更正', ar: 'التصحيحات' }[lang]) + '</a></div>';
 }
 function emailBox(lang, P) {
-  const p = bdi(P.n);
+  const p = bdi(mkName(P.n, lang));
   return '<div class="ktr-box ktr-em" id="get-analysis"><h2>' + th(lang, 'em_h', { p }) + '</h2><p>' + esc(t(lang, 'em_t')) + '</p>' +
-    '<form id="ktr-form" novalidate data-place="' + esc(P.s) + '" data-lang="' + lang + '" data-m=\'' + esc(JSON.stringify({ ok: t(lang, 'em_ok', { p: P.n }), bad: t(lang, 'em_bad'), need: t(lang, 'em_need'), err: t(lang, 'em_err'), busy: t(lang, 'em_busy') })) + '\'>' +
+    '<form id="ktr-form" novalidate data-place="' + esc(P.s) + '" data-lang="' + lang + '" data-m=\'' + esc(JSON.stringify({ ok: t(lang, 'em_ok', { p: mkName(P.n, lang) }), bad: t(lang, 'em_bad'), need: t(lang, 'em_need'), err: t(lang, 'em_err'), busy: t(lang, 'em_busy') })) + '\'>' +
     '<div class="k-field"><label class="k-label" for="ktr-email">' + esc(t(lang, 'em_lbl')) + '</label><input class="k-input" id="ktr-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" dir="ltr"></div>' +
     '<label class="ktr-cons"><input type="checkbox" name="consent" id="ktr-cons" required><span>' + th(lang, 'em_cons', { p }) + ' <a href="/legal/privacy/">' + esc(t(lang, 'em_priv')) + '</a></span></label>' +
     '<button class="k-btn k-btn--primary" type="submit">' + esc(t(lang, 'em_btn')) + '</button>' +
@@ -275,7 +275,7 @@ const FORM_JS = '<script>(function(){var f=document.getElementById("ktr-form");i
   'fetch("/api/x/transparency/lead",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({email:em,consent:true,place:f.getAttribute("data-place"),lang:f.getAttribute("data-lang"),website:f.website.value,ref:document.referrer.slice(0,200)})}).then(function(r){return r.json();}).then(function(j){busy=false;b.disabled=false;' +
   'if(j&&j.ok){say(M.ok);f.reset();try{if(window.kbEvent)kbEvent("transparency_lead",f.getAttribute("data-place"));}catch(x){}return;}say(j&&j.error==="email"?M.bad:M.err,1);}).catch(function(){busy=false;b.disabled=false;say(M.err,1);});});})();</script>';
 function faqList(lang, pl, ix) {
-  const P = pl.P, p = P.n, n = pl.n, nn = nf(lang, n), top = pl.ranked ? pl.L[0] : null;
+  const P = pl.P, p = mkName(P.n, lang), n = pl.n, nn = nf(lang, n), top = pl.ranked ? pl.L[0] : null;
   const f = [[t(lang, 'q1', { p }), t(lang, 'a1', { n: nn, d: fdt(ix.updated, lang) })]];
   if (pl.med != null) f.push([t(lang, 'q2', { p }), t(lang, 'a2', { m: nf(lang, pl.med) })]);
   f.push([t(lang, 'q3', { p }), t(lang, 'a3', { a: nf(lang, pl.permit), n: nn, pc: nf(lang, pct(pl.permit, n)) })]);
@@ -318,10 +318,10 @@ function thinHtml(lang, pl) {
 // ------------------------------------------------------------------------------------------------ pages
 function placePage(ix, slug, lang) {
   const pl = ix.places.get(slug); if (!pl) return null;
-  const P = pl.P, p = bdi(P.n), path = '/rankings/transparency/' + slug + '/';
-  const title = t(lang, pl.ranked ? 't_ranked' : 't_list', { p: P.n, y: year() }), h1 = th(lang, pl.ranked ? 'h1_ranked' : 'h1_list', { p });
-  const desc = t(lang, 'desc', { n: nf(lang, pl.n), p: P.n, m: pl.med == null ? '-' : nf(lang, pl.med), d: fdt(ix.updated, lang) });
-  const cr = [['Kolaboro', pre(lang) + '/', 'Kolaboro'], [t(lang, 'crumb_r'), '/rankings/', esc(t(lang, 'crumb_r'))], [t(lang, 'crumb_t'), pre(lang) + '/rankings/transparency/', esc(t(lang, 'crumb_t'))], [P.n, pre(lang) + path, p]];
+  const P = pl.P, p = bdi(mkName(P.n, lang)), pN = mkName(P.n, lang), path = '/rankings/transparency/' + slug + '/';
+  const title = t(lang, pl.ranked ? 't_ranked' : 't_list', { p: pN, y: year() }), h1 = th(lang, pl.ranked ? 'h1_ranked' : 'h1_list', { p });
+  const desc = t(lang, 'desc', { n: nf(lang, pl.n), p: pN, m: pl.med == null ? '-' : nf(lang, pl.med), d: fdt(ix.updated, lang) });
+  const cr = [['Kolaboro', pre(lang) + '/', 'Kolaboro'], [t(lang, 'crumb_r'), '/rankings/', esc(t(lang, 'crumb_r'))], [t(lang, 'crumb_t'), pre(lang) + '/rankings/transparency/', esc(t(lang, 'crumb_t'))], [pN, pre(lang) + path, p]];
   const faq = faqList(lang, pl, ix);
   let body = '<div class="ktr"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + h1 + '</h1><p class="lead">' + esc(t(lang, 'lead')) + '</p></div>';
   if (P.coi) body += '<div class="k-alert k-alert--warn ktr-coi" role="note" id="disclosure"><b>' + esc(t(lang, 'coi')) + '</b> <span><a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a>. ' + esc(t(lang, 'coi_rows')) + '</span></div>';
@@ -334,7 +334,7 @@ function placePage(ix, slug, lang) {
   const url = PUB(lang, path);
   const items = pl.L.slice(0, 200).map((r, i) => Object.assign({ '@type': 'ListItem', position: pl.ranked ? r['rk_' + slug] : i + 1, name: r.n }, r.sumba ? {} : { url: PUB(lang, '/projects/' + r.s + '/') }));
   const ld = [
-    { '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: P.n, address: { '@type': 'PostalAddress', addressCountry: P.cc } } },
+    { '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: pN, alternateName: P.n !== pN ? P.n : undefined, address: { '@type': 'PostalAddress', addressCountry: P.cc } } },
     { '@type': 'ItemList', name: title, numberOfItems: pl.n, itemListOrder: pl.ranked ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: items },
     { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, spatialCoverage: { '@type': 'Place', name: P.n }, variableMeasured: t('en', 'name') + ' (0-100)', measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency/' + slug }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/rankings/transparency/' + slug + '.csv' }] },
     crumbLd(lang, cr)];
@@ -344,7 +344,7 @@ function hubTable(lang, ix, kind) {
   const L = [...ix.places.values()].filter(pl => pl.P.k === kind).sort((a, b) => b.n - a.n || a.P.n.localeCompare(b.P.n));
   const cols = [t(lang, 'c_place'), t(lang, 'c_n'), t(lang, 'c_med'), t(lang, 'h_permit'), t(lang, 'h_date'), t(lang, 'c_dep')];
   return '<div class="k-table-wrap ktr-tw ktr-hub"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
-    L.map(pl => '<tr><td data-label="' + esc(cols[0]) + '"><a href="' + pre(lang) + '/rankings/transparency/' + pl.P.s + '/">' + bdi(pl.P.n) + '</a>' + (pl.ranked ? '' : '<br><small class="k-muted">' + esc(t(lang, 'unranked')) + '</small>') + '</td><td class="k-n" data-label="' + esc(cols[1]) + '">' + nf(lang, pl.n) + '</td><td class="k-n" data-label="' + esc(cols[2]) + '">' + (pl.med == null ? '-' : nf(lang, pl.med)) + '</td><td class="k-n" data-label="' + esc(cols[3]) + '">' + nf(lang, pct(pl.permit, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[4]) + '">' + nf(lang, pct(pl.date, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[5]) + '">' + nf(lang, pct(pl.deposit, pl.n)) + '%</td></tr>').join('') + '</tbody></table></div>';
+    L.map(pl => '<tr><td data-label="' + esc(cols[0]) + '"><a href="' + pre(lang) + '/rankings/transparency/' + pl.P.s + '/">' + bdi(mkName(pl.P.n, lang)) + '</a>' + (pl.ranked ? '' : '<br><small class="k-muted">' + esc(t(lang, 'unranked')) + '</small>') + '</td><td class="k-n" data-label="' + esc(cols[1]) + '">' + nf(lang, pl.n) + '</td><td class="k-n" data-label="' + esc(cols[2]) + '">' + (pl.med == null ? '-' : nf(lang, pl.med)) + '</td><td class="k-n" data-label="' + esc(cols[3]) + '">' + nf(lang, pct(pl.permit, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[4]) + '">' + nf(lang, pct(pl.date, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[5]) + '">' + nf(lang, pct(pl.deposit, pl.n)) + '%</td></tr>').join('') + '</tbody></table></div>';
 }
 function hubPage(ix, lang) {
   const path = '/rankings/transparency/', title = t(lang, 'hub_title'), desc = t(lang, 'hub_desc');
@@ -354,7 +354,7 @@ function hubPage(ix, lang) {
     '<p class="k-small">' + esc(t(lang, 'hub_excl')) + ' <a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a></p>' + replyBox(lang, null) + linksHtml(lang, null) + '</div></section></div>';
   const url = PUB(lang, path), all = [...ix.places.values()];
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
-    { '@type': 'ItemList', name: title, numberOfItems: all.length, itemListElement: all.map((pl, i) => ({ '@type': 'ListItem', position: i + 1, name: pl.P.n, url: PUB(lang, '/rankings/transparency/' + pl.P.s + '/') })) },
+    { '@type': 'ItemList', name: title, numberOfItems: all.length, itemListElement: all.map((pl, i) => ({ '@type': 'ListItem', position: i + 1, name: mkName(pl.P.n, lang), url: PUB(lang, '/rankings/transparency/' + pl.P.s + '/') })) },
     { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: ix.updated, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, measurementTechnique: ORIGIN + '/methods/transparency-score/', distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/transparency' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/rankings/transparency.csv' }] },
     crumbLd(lang, cr)];
   return { title, desc, body, ld, path };

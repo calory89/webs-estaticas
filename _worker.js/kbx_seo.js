@@ -513,7 +513,7 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml', '/guides/buying-off-plan/sitemap.xml', '/reports/sitemap.xml']) {   // n29h1: + place data pages (kbx_h29.js)
+    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml', '/guides/buying-off-plan/sitemap.xml', '/reports/sitemap.xml', '/m/sitemap.xml']) {   // n29i: translated market files;   // n29h1: + place data pages (kbx_h29.js)
         // n27e: + weekly changes per place;   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
       // n27g: listed always. The check by fetching each one (up to 5,000 URLs to build) did not finish inside this request, so since
       // batch 26 none of the four reached the index; a lastmod read on an earlier request is used when we have one, else the data date
@@ -542,7 +542,7 @@ async function llms(env, B, full) {
   // n26i (batch 26): the same named projects with their quick answer in each language, and one file per country
   if (np.length) {
     const cn = new Map(); for (const e of np) { const c = byId.get(e.id); if (c && c.country) cn.set(c.country, (cn.get(c.country) || 0) + 1); }
-    L.push('', '## Per language and per country', '- Every named project with the quick answer of its page, in the page language: ' + ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].map(l => '[' + l + '](' + SITE + '/' + l + '/llms.txt)').join(', ') + '; English: ' + SITE + '/llms-full.txt and ' + SITE + '/llms-projects.txt.', '- One answer file per project (quick answer, dated promises, permit, developer, changes, sources): ' + SITE + '/answers/<slug>.md', '- Per country (English): ' + [...cn.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([c, n]) => '[' + c + '](' + SITE + '/llms/' + slug(c) + '.txt) ' + n).join(', '));
+    L.push('', '## Per language and per country', '- Every named project with the quick answer of its page, in the page language: ' + ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].map(l => '[' + l + '](' + SITE + '/' + l + '/llms.txt)').join(', ') + '; English: ' + SITE + '/llms-full.txt and ' + SITE + '/llms-projects.txt.', '- One answer file per project (quick answer, dated promises, permit, developer, changes, sources): ' + SITE + '/answers/<slug>.md', '- Per country, full answer of every project in one file (English): ' + SITE + '/llms-full/<country>.txt (same country slugs as below)', '- Questions about off-plan projects answered from our data, by market, country and developer: ' + SITE + '/answers/questions.md (JSON: ' + SITE + '/answers/questions.json)', '- Per country (English): ' + [...cn.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([c, n]) => '[' + c + '](' + SITE + '/llms/' + slug(c) + '.txt) ' + n).join(', '));
   }
   // n27a (batch 27): one answer file per place and per developer, the corrections log for machines, the MCP tools
   if (np.length) {

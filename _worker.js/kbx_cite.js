@@ -23,7 +23,7 @@ import { coName, mkName } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;
 const MIN_STORY = 8;   // reviewed named projects a market needs for a monthly story (the delay index itself needs 5)
 const esc = N.esc, pre = N.pre;
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
@@ -370,7 +370,7 @@ async function llmsLang(X, env, lang, only) {
   const tps = trP ? await Promise.all(P.map(x => trP(env, x.id, lang).catch(() => null))) : P.map(() => null);
   const tpOf = new Map(P.map((x, i) => [x.id, tps[i]]));
   const L = ['# ' + llT(lang, 0) + (only ? ': ' + coName(only.co, lang) : ''), '', '> ' + llT(lang, 1, { d: fdate(X.today, lang) }), ''];
-  L.push('## ' + llT(lang, 2), '', '- ' + ORIGIN + '/llms.txt', '- ' + ORIGIN + '/llms-full.txt', '- ' + ORIGIN + '/llms-projects.txt', ...LANGS.filter(l => l !== 'en' && l !== lang).map(l => '- ' + ORIGIN + '/' + l + '/llms.txt'), '- ' + ORIGIN + '/llms/<country>.txt (' + llmsCountries(X).slice(0, 6).map(c => c.s).join(', ') + ', ...)', '- ' + ORIGIN + '/answers/<slug>.md', '');
+  L.push('## ' + llT(lang, 2), '', '- ' + ORIGIN + '/llms.txt', '- ' + ORIGIN + '/llms-full.txt', '- ' + ORIGIN + '/llms-projects.txt', ...LANGS.filter(l => l !== 'en' && l !== lang).map(l => '- ' + ORIGIN + '/' + l + '/llms.txt'), '- ' + ORIGIN + '/llms/<country>.txt (' + llmsCountries(X).slice(0, 6).map(c => c.s).join(', ') + ', ...)', '- ' + ORIGIN + '/llms-full/<country>.txt (the same countries, full answer of every project)', '- ' + ORIGIN + '/answers/<slug>.md', '');
   const byCo = new Map(); for (const x of P) { const c = x.co || '-'; if (!byCo.has(c)) byCo.set(c, new Map()); const m = byCo.get(c); if (!m.has(x.mk)) m.set(x.mk, []); m.get(x.mk).push(x); }
   for (const [co, M] of [...byCo.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
     if (!only) L.push('## ' + coName(co, lang) + ' (' + llT(lang, 3, { n: [...M.values()].reduce((a, v) => a + v.length, 0) }) + ')', '');
@@ -424,6 +424,18 @@ export async function handle(req, u, env, ctx, shell) {
   if (p === '/llms-projects.txt') return txt(llmsProjects(X), 'text/plain; charset=utf-8');
   if ((m = /^\/(es|de|fr|nl|ru|zh|ar)\/llms\.txt$/.exec(p))) return txt(await llmsLang(X, env, m[1], null), 'text/plain; charset=utf-8', { 'content-language': m[1], 'x-robots-tag': 'noindex' });
   if ((m = /^\/llms\/([a-z0-9-]{2,60})\.txt$/.exec(p))) { const c = llmsCountries(X).find(z => z.s === m[1]); if (!c) return nf(); return txt(await llmsLang(X, env, 'en', c), 'text/plain; charset=utf-8', { 'x-robots-tag': 'noindex' }); }
+  // n29i (batch 29, item 94): the full answer file of every project of one country in one file, after the short /llms/<country>.txt
+  if ((m = /^\/llms-full\/([a-z0-9-]{2,60})\.txt$/.exec(p))) {
+    const c = llmsCountries(X).find(z => z.s === m[1]); if (!c) return nf();
+    const k = 'full|' + c.s + '|' + X.today + '|' + X.ix.P.length; if (LLD[k]) return txt(LLD[k], 'text/plain; charset=utf-8', { 'x-robots-tag': 'noindex' });
+    let trP = null; try { trP = (await import('./kbx_tr.js')).trProject; } catch (e) { trP = null; }
+    const L = c.L.slice().sort((a, b) => String(a.mk).localeCompare(String(b.mk)) || a.n.localeCompare(b.n)), tps = trP ? await Promise.all(L.map(x => trP(env, x.id, 'en').catch(() => null))) : L.map(() => null);
+    const mks = [...new Set(L.map(x => x.mk))];
+    const out = ['# Kolaboro: every named off-plan project in ' + c.co + ', full answers', '', '> ' + L.length + ' projects in ' + mks.length + ' market' + (mks.length === 1 ? '' : 's') + ' (' + mks.join(', ') + '). For each project: quick answer, dated handover promises, permit, developer, changes and sources, the same text as ' + ORIGIN + '/answers/<slug>.md. Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Short version: ' + ORIGIN + '/llms/' + c.s + '.txt', '',
+      ...L.map((x, i) => answers(X, x, tps[i]).replace(/^# /, '# [' + x.mk + '] ') + '\n---\n')].join('\n');
+    if (Object.keys(LLD).filter(z => z.startsWith('full|')).length < 8) LLD[k] = out;   // a few MB at most per isolate
+    return txt(out, 'text/plain; charset=utf-8', { 'x-robots-tag': 'noindex' });
+  }
   if (p === '/stories/sitemap.xml') return txt(citeSitemap(X), 'application/xml; charset=utf-8');
   if (p === '/changes/feed.atom') return txt(changesAtom(X), 'application/atom+xml; charset=utf-8');
   if ((m = /^\/stories\/(\d{4}-\d{2})\/([a-z0-9-]{1,60})\.csv$/.exec(p))) {

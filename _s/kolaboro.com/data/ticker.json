@@ -20,6 +20,21 @@
   {
    "date": "2026-11-14",
    "kind": "shipped",
+   "url": "/es/m/dubai/",
+   "text": "Market files in 8 languages, native place names, hub key figures",
+   "tl": {
+    "es": "Fichas de mercado en 8 idiomas, nombres locales y cifras clave",
+    "fr": "Fiches marché en 8 langues, noms locaux et chiffres clés",
+    "de": "Marktseiten in 8 Sprachen, lokale Ortsnamen und Kennzahlen",
+    "nl": "Marktpagina’s in 8 talen, lokale plaatsnamen en kerncijfers",
+    "ru": "Страницы рынков на 8 языках, местные названия и ключевые цифры",
+    "zh": "8 种语言的市场页面、本地地名和关键数据",
+    "ar": "صفحات الأسواق بثماني لغات وأسماء محلية وأرقام رئيسية"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "shipped",
    "url": "/",
    "text": "Search, menus and forms fixed for phones, dark mode and Arabic",
    "tl": {

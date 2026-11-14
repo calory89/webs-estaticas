@@ -13,7 +13,7 @@
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27f';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
+export const U27V = 'u27g';   // u27g: currency pre-selected by page language (n29i)   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -324,18 +324,20 @@ function client() {
     var host = document.querySelector('#promise .kz-d') || document.querySelector('#promise');
     if (host && D.p > 0) {
       var box = el('div', 'kcu'), lab = el('label', null, f('cu') + ' '), sel = el('select'), out = el('p', 'kcu-o'); out.setAttribute('aria-live', 'polite');
-      var opts = [D.c].concat(['EUR', 'USD', 'GBP', 'AED'].filter(function (c) { return c !== D.c; }));
+      // n29i (item 87): a reader's usual currency by page language is offered and pre-selected until they pick one (stored choice wins)
+      var DEF = { es: 'EUR', fr: 'EUR', de: 'EUR', nl: 'EUR', ru: 'USD', zh: 'CNY', ar: 'AED' }[LG];
+      var opts = [D.c].concat(['EUR', 'USD', 'GBP', 'AED'].concat(DEF && ['EUR', 'USD', 'GBP', 'AED'].indexOf(DEF) < 0 ? [DEF] : []).filter(function (c) { return c !== D.c; }));
       opts.forEach(function (c, i) { var o = el('option', null, c + (i === 0 ? ' (' + f('cuo') + ')' : '')); o.value = c; sel.appendChild(o); });
-      var saved = ls('kb-cur'); if (saved && opts.indexOf(saved) >= 0) sel.value = saved;
+      var saved = ls('kb-cur'); if (saved && opts.indexOf(saved) >= 0) sel.value = saved; else if (DEF && opts.indexOf(DEF) >= 0) sel.value = DEF;
       lab.appendChild(sel); box.appendChild(lab); box.appendChild(out);
       var sum = host.querySelector('summary'); if (sum && sum.nextSibling) host.insertBefore(box, sum.nextSibling); else host.appendChild(box);
       var show = function () {
-        var to = sel.value; ls('kb-cur', to);
+        var to = sel.value; if (!show.auto) ls('kb-cur', to); show.auto = false;
         if (to === D.c) { out.textContent = ''; return; }
         rates([D.c, to]).then(function () { if (!FX) { out.textContent = f('cuf'); return; } var a = conv(D.p, D.c, to), b = D.p2 ? conv(D.p2, D.c, to) : null; if (a == null) { out.textContent = f('cuf'); return; }
           out.textContent = '≈ ' + money(to, Math.round(a)) + (b ? ' - ' + money(to, Math.round(b)) : '') + ' · ' + money(D.c, D.p) + (D.p2 ? ' - ' + money(D.c, D.p2) : '') + '. ' + f('cun', { d: FX.d }); });
       };
-      sel.addEventListener('change', show); if (sel.value !== D.c) show();
+      sel.addEventListener('change', show); if (sel.value !== D.c) { show.auto = !saved; show(); }
     }
     // total cost and yield calculator (rows from /api/v1/cost, the same functions as the table on the page)
     var ch = document.querySelector('#buycost .kz-d') || document.querySelector('#promise .kz-d');

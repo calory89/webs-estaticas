@@ -1,4 +1,5 @@
 
+import { ruPlaces } from './kbx_hdate.js';   // n29i: Russian place names in the right case after "в" (see kbx_hdate.js)
 const SITES = new Set(["52startupsin52weeks.com", "bestsalesclosers.com", "biohackingisland.com", "collectivecolab.com", "createats.com", "equinoxinvestmentgroup.com", "felicityisland.com", "founderspassport.com", "gayrail.com", "jobersity.com", "jurimatch.com", "kindaoclub.com", "kingofstreets.com", "klipstay.com", "kolaboro.com", "landbanky.com", "landstockmarket.com", "leadpoolclub.com", "luxurybeachresidence.com", "monkeyranking.com", "nomadsseasons.com", "persohna.com", "publicscores.com", "reelrole.com", "sevenfounders.com", "sovereign195.com", "thecoreisland.com", "transparently.us", "usersland.com", "voyanoble.com", "yogaecocity.com", "realhunt.co", "lacliniqueswiss.com", "thecigaretteindex.com", "theglampings.com", "sportpassportclub.com", "surfranking.com", "longevityisland.org", "walkwar.com", "voxera.app", "grownomads.com", "aibeachcity.com", "beyondsoma.com", "blacknomadcard.com", "bootcamp.jobersity.com", "fitnessbeachcity.com", "go.realhunt.co", "onlybeachfronthomes.com", "spain.happylowcost.com", "thenomaduniversity.com", "thestartupisland.com", "happysocialclub.com", "levelshotels.com", "thesumbatimes.com"]);
 
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co';
@@ -48,6 +49,7 @@ let ke27 = null; const KE27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a
 let ku27 = null; const KU27 = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;   // n27u (batch 27): client script of named pages, cost rows, map of all projects, full ticker lines (keep equal to PATHS in kbx_u27.js)
 let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
+let k29i = null; const K29I = /^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;   // n29i (batch 29): translated market files, their sitemap, questions answered from data (keep equal to PATHS in kbx_n29i.js)
 let kbuy = null; const KBUY = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buying-off-plan(?:\/[a-z-]{2,30})?\/?$|^\/guides\/buying-off-plan\/sitemap\.xml$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?glossary\/(?:escrow|leasehold|payment-plan)\/?$/;   // n27c (batch 27): buying off-plan guides by place (see kbx_buy.js)
 let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules\/?$/;   // n21c (batch 21): short-let rules by city (see kbx_rules.js)
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
@@ -61,7 +63,7 @@ let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|devel
 let kbix = null; const KBIX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;   // n21d (batch 21): bulk check against the public index, in the browser, 8 languages (keep equal to PAGE in kbx_bulkix.js)
 let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   // n21d (batch 21): promised dates of a named project as an iCalendar file (keep equal to PATHS in kbx_cal.js)
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
-let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
+let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
 let kt27 = null; const KT27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:corrections|buyer-cases|cite|contact|transparency-badge)\/?$|^\/embed\/transparency\/[a-z0-9-]{1,90}\.svg$|^\/rankings\/transparency(?:\/[a-z0-9-]{2,40})?\.csv$/;   // n27t (batch 27): corrections log, buyer cases, how to cite, contact, transparency badge, ranking CSV (kbx_t27.js)
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
 let k404 = null;   // n25e: 301 map, 410 and the translated 404 page (kbx_404.js)
@@ -143,7 +145,7 @@ function kbHeaders(r, u) {
   // n21e: Russian pages get the right noun form after a number ("2 проекта", "1 проект"; the templates only carry "проектов")
   const ru = r.status === 200 && r.body && /^\/ru(\/|$)/.test(u.pathname);
   if (ru) h.delete('content-length');
-  const out = new Response(ru ? new ReadableStream({ async start(c) { try { c.enqueue(new TextEncoder().encode(kbRu(await r.text()))); c.close(); } catch (e) { c.error(e); } } }) : r.body, { status: r.status, statusText: r.statusText, headers: h });
+  const out = new Response(ru ? new ReadableStream({ async start(c) { try { c.enqueue(new TextEncoder().encode(ruPlaces(kbRu(await r.text())))); c.close(); } catch (e) { c.error(e); } } }) : r.body, { status: r.status, statusText: r.statusText, headers: h });
   // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
   let ds = false; const styleIds = new Set(); const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
   // n20p: pages that load site.css get /k/ds-site.css, the same rules without the :has() page test (see that file's first lines)
@@ -312,7 +314,8 @@ export default {
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
-    const r = await this.fetch0(req, env, ctx);
+    let r = await this.fetch0(req, env, ctx);
+    if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (!u0.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|rankings\/transparency|handover|handover\/overdue|developers|countries)\/$/.test(u0.pathname)) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); r = await k29i.hubInject(req, u0, env, r, h => ruPlaces(kbRu(h))); } catch (e) {} } }   // n29i: key figures and Q&A on the hubs (items 93, 95)
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kTick) kTick = await import('./kbx_ticker.js'); return await kTick.kbTick(req, r, env); } catch (e) { return r; } }
     return r;
   },
@@ -485,6 +488,13 @@ export default {
       const r = await h29Inject(req, u, env, await kfa.page(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
+    // kolaboro.com (n29i, batch 29): /<lang>/m/<market>/ (5+ named projects), /m/sitemap.xml, /answers/questions.md|json (see kbx_n29i.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K29I.test(u.pathname)) {
+      if (!k29i) k29i = await import('./kbx_n29i.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await k29i.page(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     // kolaboro.com (n27c, batch 27): /guides/buying-off-plan/[<place>/] in 8 languages and its sitemap (see kbx_buy.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KBUY.test(u.pathname)) {
       if (!kbuy) kbuy = await import('./kbx_buy.js');
@@ -560,7 +570,8 @@ export default {
       if (isP || sr.status !== 200) return sr;
       // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
       // n27g (batch 27): dated figures for the 50 biggest markets and links to the market's most searched projects (kbx_g27.js), above the market file
-      let sr2 = sr; try { if (!kg27) kg27 = await import('./kbx_g27.js'); const gh = await kg27.marketBlock(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (gh) sr2 = new HTMLRewriter().on('#mk-body', { element(e) { e.before(gh, { html: true }); } }).transform(sr); } catch (e) {}
+      let sr1 = sr; try { if (!k29i) k29i = await import('./kbx_n29i.js'); const al = await k29i.mAlternates(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (al) sr1 = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(al, { html: true }); } }).transform(sr); } catch (e) {}   // n29i: hreflang to the translated market files
+      let sr2 = sr1; try { if (!kg27) kg27 = await import('./kbx_g27.js'); const gh = await kg27.marketBlock(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (gh) sr2 = new HTMLRewriter().on('#mk-body', { element(e) { e.before(gh, { html: true }); } }).transform(sr1); } catch (e) {}
       try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return h29Inject(req, u, env, new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2)); } catch (e) {}
       return h29Inject(req, u, env, sr2);
     }
