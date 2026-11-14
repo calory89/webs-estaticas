@@ -190,7 +190,7 @@ T["en"] = [
   "c": "Low. It is one of the quiet shoulder months.",
   "p": "The lightest clothes you own, serious sun protection, a rain shell from mid-month and modest dress for the villages."},
  {"v": "November is the turn of the season: hot, with the first real rain greening the hills within days. A quiet month for flexible travellers.",
-  "w": "About 120 mm on both sides in our averages, on 18 to 21 days, first as short afternoon storms. In many years the east stays dry well into the month while the west breaks earlier. Days are around 31.5 C and nights around 25 C, the warmest of the year.",
+  "w": "About 120 mm on both sides in our averages, on 18 to 21 days, first as short afternoon storms. In many years the east stays dry well into the month while the west breaks earlier, but on average it catches up fast: Waingapu goes from about 45 mm in October to about 120 mm in November. Days are around 31.5 C and nights around 25 C, the warmest of the year.",
   "s": "Sea about 29.5 C. Late-season surf can be clean and uncrowded, and around November and December the rights of Wanukaka tend to work on south-east swell, though the paddle-out crosses boulders.",
   "o": "Wulla Poddu continues in West Sumba and usually reaches its climax, Kalango Loddo, a night of dances and songs that runs into the morning. There are no national holidays this month.",
   "d": "East early in the month, while the dry weather lasts. In the west, plan the mornings outdoors and keep the afternoons loose.",
@@ -319,3 +319,222 @@ for _i, _t in enumerate([
  "Merece la pena fijarse en cómo cambian las colinas. Las primeras lluvias reverdecen la sabana en cuestión de días, de modo que un viaje de dos semanas puede fotografiar las dos caras de la isla. Conviene dejar un día comodín y descargar mapas sin conexión antes de salir de la ciudad, porque la cobertura es irregular y hay cortes de luz y de red.",
  "Lo mejor es sumarse a las fiestas en lugar de pelearse con ellas. Las playas cercanas a las ciudades se animan los fines de semana y los vuelos van llenos en torno a la Navidad. Los trayectos largos, mejor antes de que empiecen las vacaciones escolares; los últimos días, para lugares cercanos al alojamiento.",
 ]): T["es"][_i]["t"] = _t
+
+T["id"] = [
+ {"v": "Januari adalah bulan paling basah dan paling hijau di Sumba. Bulan ini cocok bagi pelancong yang luwes, yang mencari jalan lengang, bukit hijau pekat, dan air terjun deras, serta siap menghadapi hujan hampir setiap hari dan perjalanan yang lebih lambat.",
+  "w": "Monsun barat laut sedang kuat-kuatnya. Rata-rata 2015-2024 yang kami olah menunjukkan curah hujan sekitar 260 mm, baik di sekitar Tambolaka maupun Waingapu, dengan hujan pada kira-kira 26 dari 31 hari. Hujan biasanya turun lebat pada sore dan malam, diselingi cuaca cerah. Suhu siang berkisar 30 °C dan malam hari nyaris tidak turun dari 25 °C. Sungai meluap dan keruh, sementara jalan tanah menuju pantai dan kampung terpencil bisa tak dapat dilalui selama berhari-hari.",
+  "s": "Air laut hangat, sekitar 29,5 °C, tetapi ini paruh tahun yang lemah bagi peselancar: ombak lebih kecil dan kurang rapi, sedangkan angin berbalik dari barat dan barat laut. Karang di tenggara, di sekitar Kalala, menjadi pilihan yang lebih baik. Air terjun sedang deras-derasnya, sering kali terlalu keruh dan terlalu kuat untuk didekati.",
+  "o": "Tidak ada acara tetap pada Januari. Hari-hari pertama masih termasuk libur sekolah, yang di Nusa Tenggara Timur berlangsung sampai 2 Januari 2027, sehingga pantai di dekat kota dipenuhi keluarga. Di barat orang mulai membicarakan Pasola, tetapi para Rato baru mengumumkan tanggalnya beberapa pekan sebelumnya.",
+  "d": "Tak ada pesisir yang luput dari hujan: angka untuk barat dan timur hampir sama. Pilihlah berdasarkan kondisi jalan, bukan langit. Menginaplah di dekat Waingapu atau Waikabubak, tempat objek utama berada di tepi jalan beraspal: lekuk hijau Wairinding, Walakiri saat air surut, dan kampung adat di perbukitan sekitar Waikabubak. Tunda perjalanan jauh seperti ke Tarimbang sampai musim berganti.",
+  "c": "Selepas Tahun Baru, ini salah satu bulan paling sepi. Kamar dan sopir mudah didapat.",
+  "p": "Jas hujan yang layak, tas kedap air untuk kamera dan ponsel, sandal bersol kesat, pakaian cepat kering, dan obat antinyamuk secukupnya. Bawalah uang tunai dan sisakan hari cadangan."},
+ {"v": "Februari adalah bulan Pasola pertama. Datanglah demi ritualnya, bukan demi cuacanya: hujan turun hampir sebanyak Januari dan rencana perlu kelonggaran.",
+  "w": "Curah hujan sekitar 250 sampai 260 mm di kedua pesisir, tersebar dalam kira-kira 25 hari. Suhu siang rata-rata 29 sampai 30 °C, paling rendah di antara bulan-bulan basah. Hujan cenderung terbentuk selepas tengah hari sehingga banyak pagi masih bisa dimanfaatkan. Pulau ini hijau pekat dan air terjun mengalir penuh.",
+  "s": "Suhu laut sekitar 29 °C. Ombak masih kecil dan terganggu angin barat dan barat laut, yang menguntungkan titik selancar terlindung atau yang menghadap tenggara di Sumba Timur. Pada pagi hari Pasola, pantai di Kodi dan Lamboya bukan tempat berenang: saat fajar para Rato mengumpulkan cacing laut nyale di tepi pantai dan membaca pertanda panen darinya.",
+  "o": "Pasola dibuka di barat, yakni di Lamboya (Sumba Barat) dan putaran pertama di Kodi (Sumba Barat Daya). Pada 2026 putaran Kodi dimulai 9 Februari dan Lamboya menyusul pada 10 Februari. Para tetua menetapkan tiap tanggal beberapa pekan sebelumnya berdasarkan bulan dan nyale, jadi sediakan hari cadangan dan pantau kalender Pasola kami.",
+  "d": "Barat, tanpa ragu. Terbanglah ke Tambolaka dan menginap di antara Kodi dan Waikabubak: arena Pasola, Ratenggaro, dan kampung-kampung di perbukitan dapat dicapai dalam setengah hari berkendara. Di timur hujannya sama saja dan tidak ada Pasola.",
+  "c": "Sepi, kecuali di sekitar hari Pasola, ketika kamar dan mobil sewaan di barat habis dan arena dipadati penonton. Tetaplah di pinggir kerumunan: Pasola Wanokaka 2026 dihentikan setelah terjadi keributan di antara penonton.",
+  "p": "Jas hujan dan tas kedap air, pakaian sopan untuk kampung adat (bahu dan lutut tertutup), topi untuk berjam-jam di lapangan terbuka, uang pecahan kecil untuk buku tamu, dan kesabaran."},
+ {"v": "Maret menutup musim Pasola dan memperlihatkan Sumba pada puncak hijaunya. Hujan masih sering, tetapi makin singkat menjelang akhir bulan.",
+  "w": "Rata-rata curah hujan sekitar 245 mm di barat dan 250 mm di timur, dengan hujan pada kira-kira 27 hari: jumlah hari basahnya menyamai Januari, meski hujan sedikit mereda di akhir bulan. Suhu nyaris tak berubah, 29 sampai 30 °C pada siang hari dan 24 °C pada malam hari. Bukit yang biasa dikenal keemasan kini berwarna padi muda.",
+  "s": "Suhu laut sekitar 29,5 °C. Sejumlah panduan selancar menilai awal musim, kira-kira Maret sampai Juni, sebagai masa ombak paling rapi sebelum angin pasat tenggara menguat. Air terjun mencapai puncaknya: Matayangu menjelma dinding air yang dicapai lewat jalan setapak berlumpur dan licin, sedangkan Lapopu mengalir cokelat dan deras.",
+  "o": "Putaran kedua Pasola Kodi serta Pasola Wanokaka dan Gaura di Sumba Barat menutup musim; pada 2026 semuanya berlangsung 9 sampai 14 Maret. Pada 2027 Idul Fitri jatuh pada 10 dan 11 Maret, di tengah pekan-pekan Pasola, dan Jumat Agung pada 26 Maret, sehingga tiket pesawat cepat habis di sekitar kedua tanggal itu.",
+  "d": "Barat pada paruh pertama bulan, demi Pasola. Setelah itu timur layak didatangi: inilah saatnya melihat Wairinding dan Tanarara yang menghijau. Jalan utama Waikabubak-Waingapu beraspal, sekitar 130 km atau 3,5 sampai 4,5 jam.",
+  "c": "Ramai di barat pada hari Pasola dan di sekitar hari libur 2027, lengang di luar itu.",
+  "p": "Sama seperti Februari, ditambah sepatu yang tak sayang bila rusak di jalur air terjun dan kartu memori cadangan: Sumba yang hijau sangat fotogenik."},
+ {"v": "April adalah masa peralihan yang digemari banyak fotografer: bukit masih hijau, hujan jelas berkurang, dan pengunjung sedikit.",
+  "w": "Kedua pesisir mulai berbeda. Barat masih menerima rata-rata sekitar 175 mm dalam 24 hari, sedangkan timur turun menjadi sekitar 140 mm dalam 18 hari. Hujan makin singkat dan jalan mulai mengering. Suhu siang sekitar 30 °C dan malam sekitar 24 °C.",
+  "s": "Musim selancar dimulai seiring datangnya alun dari belahan bumi selatan ke pesisir selatan dan barat. Statistik prakiraan untuk Marosi menempatkan April di antara bulan dengan ombak paling rapi. Suhu laut masih sekitar 29,5 °C. Air terjun tetap deras dan mulai jernih.",
+  "o": "Tidak ada acara adat yang tetap pada April, dan justru di situ daya tariknya: kampung adat menerima tamu tanpa keramaian upacara. Tanggal Paskah berubah tiap tahun; pada 2027 Jumat Agung jatuh pada 26 Maret dan Minggu Paskah pada 28 Maret, sehingga April 2027 tidak memiliki libur panjang.",
+  "d": "Timur untuk hijau yang paling kering: Wairinding, Tanggedu, dan pesisir utara dekat Waingapu. Barat bila air terjun menjadi tujuan utama, karena Lapopu dan Matayangu masih penuh. Menyeberang dari Tambolaka ke Waingapu, 4 sampai 5 jam dengan mobil, memperlihatkan keduanya dalam satu perjalanan.",
+  "c": "Sepi. Ini salah satu bulan paling tenang dan pemesanan mudah.",
+  "p": "Jas hujan ringan, pakaian renang, tabir surya karena matahari mulai terik, obat antinyamuk, dan alas kaki untuk jalur basah."},
+ {"v": "Mei termasuk bulan terbaik untuk segala keperluan: langit musim kemarau sudah datang ketika pulau masih sebagian hijau, sementara musim liburan belum tiba.",
+  "w": "Hujan merosot tajam di timur, menjadi sekitar 35 mm dalam 9 hari. Barat masih menerima sekitar 65 mm dalam 18 hari, umumnya hujan singkat. Malam mulai sejuk, sekitar 23,5 °C, sedangkan siang tetap mendekati 30 °C. Warna keemasan pertama muncul di sabana timur, sementara lembah masih hijau.",
+  "s": "Alun barat daya yang teratur dan angin awal musim yang lemah menjadikan Mei bulan selancar yang bagus di pesisir Kodi, teluk-teluk Lamboya, dan Tarimbang. Suhu laut sekitar 28,5 °C. Lapopu dan Tanggedu mulai jernih dan lebih aman untuk berenang ketimbang saat musim hujan.",
+  "o": "Kenaikan Yesus Kristus, hari libur nasional, jatuh pada 6 Mei 2027. Di pesisir utara, matahari kini terbenam cukup jauh di barat laut sehingga turun ke arah laut di lepas Walakiri dan Puru Kambera, pemandangan yang bertahan kira-kira sampai Agustus.",
+  "d": "Dua-duanya. Bila harus memilih, timur lebih kering dan cerah, sedangkan barat lebih hijau dengan air terjun yang lebih deras. Sepekan cukup untuk menyeberang dari satu bandara ke bandara lain tanpa terburu-buru.",
+  "c": "Sedang. Ketersediaan kamar masih seperti di musim peralihan.",
+  "p": "Topi, tabir surya, baju lapis tipis untuk sore yang berangin, pakaian renang, dan jaket hujan tipis untuk wilayah barat."},
+ {"v": "Juni adalah musim kemarau sepenuhnya: cerah, sejuk, dan serba mudah. Untuk kunjungan pertama sulit dicari tandingannya, terutama pada tiga pekan pertama.",
+  "w": "Timur menerima rata-rata sekitar 20 mm dalam 6 hari dan barat sekitar 40 mm dalam 13 hari, sehingga hujan sekilas di perbukitan barat masih mungkin. Suhu siang mendekati 30 °C dan malam sekitar 23 °C. Juni mencatat waktu matahari terbenam paling awal sepanjang tahun, sekitar pukul 17.45 sampai 17.50 WITA, jadi berangkatlah pagi dan tibalah di lokasi senja sebelum pukul 17.00.",
+  "s": "Puncak musim selancar, dengan ombak yang konsisten di pesisir selatan dan barat serta angin pasat tenggara yang bertiup dari darat di banyak titik. Suhu laut turun ke sekitar 27,5 °C. Danau Weekuri sedang bagus-bagusnya untuk berenang, dan dari Juni sampai Juli matahari terbenam tepat di antara dua tebing di Mandorak.",
+  "o": "Tidak ada acara tetap. Libur sekolah biasanya dimulai pada akhir bulan dan arus wisatawan domestik ikut meningkat.",
+  "d": "Kedua sisi pulau sedang dalam kondisi terbaik. Pemburu senja sebaiknya memilih pesisir barat di Kodi dan pesisir utara dekat Waingapu, tempat matahari bertemu laut pada masa ini; perbukitan timur indah pada pagi maupun sore hari.",
+  "c": "Mulai ramai. Pesan kamar dan mobil beserta sopir jauh-jauh hari untuk pekan terakhir Juni.",
+  "p": "Pelindung matahari, jaket tipis untuk malam dan puncak bukit, sepatu air untuk danau, dan senter karena hari cepat gelap."},
+ {"v": "Juli adalah puncak musim kunjungan: kering, sejuk pada malam hari, dan paling ramai sepanjang tahun, meski tetap lengang bila dibandingkan dengan Bali.",
+  "w": "Sekitar 15 mm dalam 4 hari di timur dan 40 mm dalam 10 hari di barat. Malam termasuk yang paling sejuk sepanjang tahun, sekitar 22 °C, sedangkan siang bertahan di kisaran 29,5 °C. Sabana kian menguning dari pekan ke pekan di bawah matahari yang terus bersinar.",
+  "s": "Inilah jantung musim ombak: hari-hari berombak besar hanya cocok untuk peselancar berpengalaman, dan ombak besar juga berarti arus kuat di pantai terbuka, jadi berenanglah di tempat warga biasa berenang. Suhu laut sekitar 27 °C. Tempat terlindung seperti Danau Weekuri dan perairan dangkal Walakiri tetap tenang.",
+  "o": "Tahun ajaran di Nusa Tenggara Timur dimulai 13 Juli pada 2026, sehingga paruh pertama bulan masih masa liburan. Parade Kuda Sandelwood yang disertai pameran tenun ikat pernah digelar di Sumba Timur pada Juli; edisi terakhir yang dapat kami pastikan berlangsung pada 2019 dan kami tidak menemukan pengumuman terbaru, jadi jangan menyusun perjalanan berdasarkan acara ini.",
+  "d": "Mana saja. Barat menawarkan ombak, danau, dan kampung-kampung Kodi; timur menyuguhkan sabana luas dan kuda-kuda Puru Kambera. Dengan waktu sepekan atau lebih, datangi keduanya.",
+  "c": "Paling ramai sepanjang tahun karena libur wisatawan asing dan libur sekolah Indonesia bertepatan. Penerbangan dan kamar yang terbatas cepat penuh: pesan mobil dan penginapan beberapa pekan sebelumnya.",
+  "p": "Pakaian hangat untuk malam dan subuh, pelindung matahari, pelembap bibir karena angin, dan salinan luring semua pesanan Anda."},
+ {"v": "Agustus adalah Sumba yang keemasan: bulan paling kering, dengan sabana yang sepenuhnya menguning dan cahaya yang termasuk paling indah sepanjang tahun.",
+  "w": "Timur menerima rata-rata sekitar 10 mm dalam 4 hari, barat sekitar 25 mm dalam 9 hari. Suhu malam turun ke sekitar 22 °C, terendah sepanjang tahun, sedangkan siang bertahan di 30 °C. Angin pasat tenggara bertiup dan rumput kering berdesir di setiap bukit.",
+  "s": "Air laut sedang paling sejuk, sekitar 26,5 °C. Ombak tetap konsisten, dan pagi hari menjadi waktu paling bersih sebelum angin menguat. Air terjun lebih kecil tetapi jernih, dan beberapa di pedalaman bisa nyaris kering.",
+  "o": "Hari Kemerdekaan, 17 Agustus, adalah libur nasional yang diperingati di seluruh pulau. Festival Seni Budaya Sumba Barat, agenda tahunan berisi pertunjukan seni, kuliner tradisional, dan kerajinan tanpa tiket masuk, berlangsung 25 sampai 29 Agustus pada 2026.",
+  "d": "Timur untuk pemandangan klasik: Wairinding, Puru Kambera dengan kuda-kuda yang dilepas bebas, dan Walakiri ketika air surut bertepatan dengan senja. Barat juga sedang paling kering dan cocok untuk pantai serta kampung adat.",
+  "c": "Masih ramai; kamar dan mobil dipesan jauh hari. Pada Agustus sepeda motor sewaan bisa habis dipesan dua pekan sebelumnya.",
+  "p": "Kacamata hitam, syal untuk menahan debu di jalan tanah, jaket tipis untuk subuh di perbukitan, dan lensa tele bila ingin memotret kuda."},
+ {"v": "September mempertahankan cuaca kering dan kehilangan keramaiannya. Untuk menikmati lanskap keemasan tanpa saingan, inilah pilihan terbaik sepanjang tahun.",
+  "w": "Sekitar 15 mm dalam 4 hari di timur dan 35 mm dalam 11 hari di barat. Panas meningkat: suhu siang mencapai sekitar 31 °C dan malam sekitar 22,5 °C. Bersama Juli dan Agustus, September mencatat hari hujan paling sedikit di timur, hanya sekitar 4 hari sebulan. Rumput rapuh, dan menjelang sore langit bisa berkabut asap akibat kebakaran padang.",
+  "s": "Suhu laut sekitar 27 °C dan ombak tetap datang teratur sepanjang bulan. Air terjun kecil di pedalaman bisa nyaris kering; yang besar, seperti Lapopu, mengalir kecil tetapi jernih dengan kolam yang tenang.",
+  "o": "Tidak ada acara tetap. Ini bulan terakhir sebelum Wulla Poddu, bulan suci penganut Marapu di Sumba Barat, yang biasanya jatuh sekitar Oktober dan November.",
+  "d": "Timur untuk sabana dan jalan panjang yang lengang, barat untuk bersantai di danau dan menikmati senja Kodi. Matahari terbit makin awal: pada akhir bulan sekitar pukul 05.45 di Waingapu, kabar baik bagi yang ingin mendaki Wairinding atau Tanarara saat fajar.",
+  "c": "Sepi begitu liburan usai. Kamar tersedia di mana-mana.",
+  "p": "Pakaian untuk cuaca panas, topi, air minum yang cukup di mobil, dan syal atau masker bila terganggu asap."},
+ {"v": "Oktober adalah bulan terpanas dan tampak paling gersang. Bulan ini disukai peselancar dan mereka yang ingin mengenal ritual Marapu, tetapi kurang cocok bagi pencari pemandangan hijau.",
+  "w": "Suhu siang rata-rata 31,5 sampai 32 °C, tertinggi sepanjang tahun, dan hujan pertama mulai kembali: sekitar 80 mm dalam 14 hari di barat dan 45 mm dalam 9 hari di timur, terutama pada akhir bulan dan di perbukitan. Di sela hujan, bentang alam sedang paling gundul dan berdebu.",
+  "s": "Dari Oktober sampai Desember peselancar kerap mendapati laut tenang bak kaca dengan ombak yang cukup besar dan sedikit orang di air. Suhu laut naik ke sekitar 28 °C.",
+  "o": "Wulla Poddu, bulan suci penganut Marapu, biasanya berlangsung sekitar Oktober dan November di Sumba Barat: di kampung-kampung Loli (Tambera, Tarung, Bondo Maroto, Gollu), Lamboya, Wanokaka, dan Tana Righu. Selama berlangsung, warga pantang bekerja di ladang, menggelar pemakaman, dan berpesta. Rangkaian ini ditutup dengan Kalango Loddo, malam tarian dan nyanyian. Datanglah bersama pemandu dan ikuti arahan warga.",
+  "d": "Timur lebih lama kering, sehingga lebih aman untuk hari-hari tanpa gangguan hujan. Pilih barat bila tujuan perjalanan adalah Wulla Poddu atau selancar, dengan kemungkinan hujan sesekali pada sore hari.",
+  "c": "Sepi. Ini termasuk bulan peralihan yang tenang.",
+  "p": "Pakaian paling ringan, pelindung matahari yang serius, jaket hujan mulai pertengahan bulan, dan busana sopan untuk kampung adat."},
+ {"v": "November adalah masa pergantian musim: panas, dengan hujan pertama yang menghijaukan bukit dalam hitungan hari. Bulan yang tenang bagi pelancong yang luwes.",
+  "w": "Sekitar 120 mm di kedua sisi menurut rata-rata kami, dalam 18 sampai 21 hari, mula-mula berupa hujan singkat pada sore hari. Pada banyak tahun, timur tetap kering sampai jauh memasuki bulan ini, sedangkan di barat cuaca berubah lebih dulu. Namun, secara rata-rata timur cepat menyusul: Waingapu naik dari sekitar 45 mm pada Oktober menjadi sekitar 120 mm pada November. Suhu siang sekitar 31,5 °C dan malam sekitar 25 °C, malam terhangat sepanjang tahun.",
+  "s": "Suhu laut sekitar 29,5 °C. Ombak akhir musim bisa rapi dan sepi, dan sekitar November-Desember ombak kanan di Wanukaka cenderung bekerja saat alun datang dari tenggara, meski jalur keluarnya melewati bebatuan.",
+  "o": "Wulla Poddu berlanjut di Sumba Barat dan biasanya mencapai puncaknya pada Kalango Loddo, malam tarian dan nyanyian yang berlanjut sampai pagi. Tidak ada libur nasional pada bulan ini.",
+  "d": "Timur pada awal bulan, selagi cuaca masih kering. Di barat, gunakan pagi untuk kegiatan luar ruang dan biarkan sore tetap longgar.",
+  "c": "Termasuk yang paling sepi sepanjang tahun, dengan harga yang lebih rendah.",
+  "p": "Jas hujan lagi, tas kedap air, obat antinyamuk, dan baju lengan panjang tipis untuk petang."},
+ {"v": "Desember membawa hujan yang rutin dan libur Natal. Bulan ini cocok bagi yang mencari bukit hijau dan suasana perayaan setempat, tetapi kurang ideal untuk liburan pantai pertama.",
+  "w": "Sekitar 210 mm dalam 25 hari di barat dan 230 mm di timur. Dibandingkan November, curah hujan hampir berlipat dua di kedua pesisir. Hujan tak lagi sesekali, melainkan rutin, dan suhu siang turun ke sekitar 30,5 °C. Bukit kembali hijau dan air terjun terisi lagi.",
+  "s": "Suhu laut sekitar 29,5 °C. Ombak masuk ke pola musim hujan: lebih kecil, kurang rapi, dengan angin dari barat. Setelah hujan lebat, sungai mengeruhkan air di sekitar muara.",
+  "o": "Hari Raya Natal, 25 Desember, adalah libur nasional dan banyak keluarga pulang ke Sumba; pada 2027 ada cuti bersama pada Jumat, 24 Desember. Libur akhir semester di Nusa Tenggara Timur berlangsung 21 Desember 2026 sampai 2 Januari 2027.",
+  "d": "Tetaplah di dekat kota dan jalan beraspal. Timur punya Walakiri dan perbukitan yang berjarak kurang dari 45 menit dari Waingapu; barat punya kampung adat di sekitar Waikabubak. Jalan tanah ke tempat terpencil menjadi sulit.",
+  "c": "Sepi sampai libur sekolah dimulai, lalu ramai oleh keluarga yang pulang; pantai lokal seperti Walakiri penuh pada akhir pekan. Pesan tiket pesawat lebih awal.",
+  "p": "Perlengkapan hujan, tas kedap air, obat antinyamuk, dan uang tunai yang cukup selama liburan untuk berjaga-jaga bila ATM kosong atau luring."},
+]
+for _i, _t in enumerate([
+ "Berangkatlah saat hari mulai terang. Pagi adalah waktu paling kering: tempuh 25 km dari Waingapu ke Wairinding (30 sampai 45 menit) untuk melihat bukit hijau ketika awan tersibak, lalu kembali ke kota sebelum hujan sore.",
+ "Pada hari Pasola, berangkatlah sebelum fajar untuk menyaksikan upacara nyale di pantai, lalu ikuti rombongan ke arena. Sewalah sopir setempat yang tahu arena mana yang dipakai: tempat dan tanggal baru pasti setelah diumumkan para Rato.",
+ "Selepas Pasola terakhir, berkendaralah ke timur dan singgah di Wairinding sebelum masuk Waingapu: sekitar 110 km atau 3 sampai 4 jam dari Waikabubak. Tibalah satu jam sebelum matahari terbenam, ketika cahaya dari samping menegaskan lekuk-lekuk bukit yang hijau.",
+ "Padukan air terjun dan pantai selagi keduanya sedang bagus. Dari Waingapu, Tanggedu berjarak sekitar 50 km atau 1,5 sampai 2 jam, disambung berjalan kaki; di barat, Lapopu cocok digabung dengan pesisir Lamboya, tempat ombak rapi pertama musim ini tiba di Marosi. Berangkatlah pagi: jalan tanah mengering menjelang siang dan hujan masih bisa turun pada sore hari.",
+ "Inilah bulan untuk berenang di bawah air terjun. Lapopu, air terjun bertingkat setinggi 90 meter, menjernih selepas musim hujan dan kolamnya menjadi tenang, begitu pula Tanggedu di timur. Tutup hari di pesisir utara, tempat matahari kini terbenam searah laut di Walakiri: periksa tabel pasang surut Waingapu dan tibalah sekitar pukul 16.30, sebab bakau menari hanya tampak saat air surut.",
+ "Susun satu sore di Kodi. Berenanglah di Danau Weekuri selepas makan siang (selama ini tutup sekitar pukul 17.00), lalu berkendara sebentar ke Mandorak, tempat matahari turun di antara dua tebing pada Juni dan Juli, atau ke Pero untuk senja di laut lepas. Dari Bondo Kodi ke Weekuri sekitar 20 km atau 30 sampai 45 menit.",
+ "Hindari keramaian dengan membalik jadwal harian. Sambut matahari terbit di Wairinding atau Tanarara sekitar pukul 06.15, ketika bukit masih sejuk dan nyaris kosong; beristirahatlah saat cahaya siang sedang keras; lalu habiskan sore di Puru Kambera, 45 sampai 60 menit dari Waingapu, tempat kuda merumput di atas pantai yang tenang.",
+ "Atur hari mengikuti angin dan cahaya. Kunjungi pantai dan cek ombak pada pagi hari sebelum angin menguat, lalu sisakan dua jam terakhir untuk sabana. Di Waingapu matahari terbenam sekitar pukul 17.57 dan kira-kira dua puluh menit kemudian hari sudah gelap, jadi bawalah senter untuk jalan turun.",
+ "Manfaatkan jalan yang lengang untuk perjalanan jauh yang melelahkan pada musim ramai. Tarimbang, sekitar 85 sampai 90 km atau 3 sampai 4 jam dari Waingapu dengan ruas terakhir yang lambat, masih menerima ombak teratur di ombak kanannya yang panjang. Isi tangki penuh sebelum meninggalkan kota: di luar kota SPBU jarang.",
+ "Berangkatlah pagi dan beristirahat pada tengah hari. Bila mengunjungi kampung adat selama Wulla Poddu, tanyakan dulu kepada pemandu apakah tamu diterima hari itu, berpakaianlah sopan, pelankan suara di dekat rumah adat yang disakralkan, dan jangan memotret ritual tanpa izin yang jelas.",
+ "Amati bukit yang berubah warna. Hujan pertama menghijaukan sabana dalam hitungan hari, sehingga perjalanan dua pekan bisa memotret dua wajah pulau ini. Sisakan satu hari cadangan dan unduh peta luring sebelum meninggalkan kota, sebab sinyal tidak merata dan listrik maupun jaringan kadang padam.",
+ "Nikmati suasana liburan alih-alih menghindarinya. Pantai di dekat kota ramai pada akhir pekan dan penerbangan padat di sekitar Natal. Tuntaskan perjalanan jauh sebelum libur sekolah dimulai dan gunakan hari-hari terakhir untuk tempat yang dekat dengan penginapan.",
+]): T["id"][_i]["t"] = _t
+
+# =====================================================================================================================
+# BUILD
+# =====================================================================================================================
+def esc(s): return html.escape(str(s), quote=True)
+def _ld(*objs): return "".join(f'<script type="application/ld+json">{json.dumps(o, ensure_ascii=False)}</script>' for o in objs)
+def _n(x, l, d=1):
+    s = f"{x:.{d}f}" if isinstance(x, float) else str(x)
+    return s if l == "en" else s.replace(".", ",")
+def _tm(t, l): return t.replace(":", ".") if l == "id" else t
+def _rng(a, b, l): return _tm(a, l) if a == b else f"{_tm(a, l)}-{_tm(b, l)}"
+def _days(i):
+    m = MONTHS[i][0]; return 28 if m == 2 else 30 if m in (4, 6, 9, 11) else 31
+def _item(g, slug):
+    for a in g["all_items"]():
+        if a["slug"] == slug: return a
+    return None
+def _link(g, slug, l):
+    a = _item(g, slug)
+    return f'<a href="{g["url_of"](a, l)}">{esc(a[l]["title"])}</a>' if a else ""
+def _path(i): return "/{l}/sumba-in/" + SLUGS[i] + "/"
+def _fmt(s, l, i, **kw):
+    u = UI[l]; m = u["months"][i]
+    return s.format(m=m, M=m[0].upper() + m[1:], **kw)
+def _bc(g, l, items):
+    el = [{"@type": "ListItem", "position": 1, "name": g["X"][l]["home"], "item": f"{BASE}/{l}/"}]
+    for n, (name, tpl) in enumerate(items): el.append({"@type": "ListItem", "position": n + 2, "name": name, "item": BASE + tpl.format(l=l)})
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": el}
+def _page(g, l, tpl, title, desc, crumbs, body, ld):
+    pg = g["head"](l, title + " · The Sumba Times", desc, tpl, extra=_ld(*ld)) + g["masthead"](l, tpl, "travel")
+    pg += f'<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{g["X"][l]["home"]}</a> › {crumbs}</div>{body}</div></main>' + g["footer"](l)
+    g["write"](tpl.format(l=l), pg)
+
+H_T = {"en": "A good day in {m}", "es": "Un buen día de {m}", "id": "Saran untuk satu hari pada {m}"}
+SRC_H = {"en": "Sources", "es": "Fuentes", "id": "Sumber"}
+OTHER_SRC = {"en": "Events, seasons, surf and sea temperature: the guides and the events calendar linked on this page, with their own sources.",
+             "es": "Fiestas, estaciones, surf y temperatura del mar: las guías y el calendario de eventos enlazados en esta página, con sus propias fuentes.",
+             "id": "Acara, musim, selancar, dan suhu laut: panduan dan kalender acara yang ditautkan di halaman ini, masing-masing dengan sumbernya."}
+
+def faq_of(l, i):
+    u = UI[l]; _, w, e, sw, se, _sea = MONTHS[i]; t = T[l][i]
+    return [(_fmt(u["q_good"], l, i), t["v"]),
+            (_fmt(u["q_rain"], l, i), _fmt(u["a_rain"], l, i, rw=w[2], dw=w[3], re=e[2], de=e[3])),
+            (_fmt(u["q_on"], l, i), t["o"]),
+            (_fmt(u["q_sun"], l, i), _fmt(u["a_sun"], l, i, r1=_tm(se[0], l), r2=_tm(se[1], l), s1=_tm(se[2], l), s2=_tm(se[3], l)))]
+
+def month_page(g, l, i):
+    u = UI[l]; _, w, e, sw, se, sea = MONTHS[i]; t = T[l][i]; tpl = _path(i); deg = " C" if l == "en" else " °C"
+    title = _fmt(u["title"], l, i)
+    desc = _fmt(u["desc"], l, i, rw=w[2], re=e[2], tx=_n(round((w[0] + e[0]) / 2), l), ss=_tm(se[2], l))
+    nd = _days(i)
+    def row(lab, a, b): return f"<tr><td>{lab}</td><td>{a}</td><td>{b}</td></tr>"
+    def one(lab, a): return f'<tr><td>{lab}</td><td colspan="2">{a}</td></tr>'
+    tb = (row(u["r_tmax"], _n(w[0], l) + deg, _n(e[0], l) + deg) + row(u["r_tmin"], _n(w[1], l) + deg, _n(e[1], l) + deg)
+          + row(u["r_rain"], f"{w[2]} mm", f"{e[2]} mm") + row(u["r_days"], u["days_u"].format(n=w[3], t=nd), u["days_u"].format(n=e[3], t=nd))
+          + row(u["r_rise"], _rng(sw[0], sw[1], l), _rng(se[0], se[1], l)) + row(u["r_set"], _rng(sw[2], sw[3], l), _rng(se[2], se[3], l))
+          + one(u["r_sea"], _n(sea, l) + deg) + one(u["r_crowd"], u["crowd"][CROWD[i]]))
+    note = u["note"].format(src=f'<a href="{SOURCE_URL}" rel="noopener nofollow">{SOURCE}</a>', ye=f'{YEAR_RAIN["east"]:,}' if l == "en" else f'{YEAR_RAIN["east"]:,}'.replace(",", "."))
+    table = f'<table class="mo"><thead><tr><th></th><th>{u["west"]}</th><th>{u["east"]}</th></tr></thead><tbody>{tb}</tbody><caption>{note}</caption></table>'
+    p, n = (i - 1) % 12, (i + 1) % 12
+    nav = (f'<nav class="mo-nav" aria-label="{esc(u["name"])}"><a href="{_path(p).format(l=l)}" rel="prev">‹ {u["prev"]}: {esc(_fmt("{M}", l, p))}</a>'
+           f'<a href="{_path(n).format(l=l)}" rel="next">{u["next"]}: {esc(_fmt("{M}", l, n))} ›</a></nav>')
+    places = "".join(f"<li>{x}</li>" for x in (_link(g, s, l) for s in PLACES[i]) if x)
+    more = "".join(f"<li>{x}</li>" for x in (_link(g, s, l) for s in GUIDES) if x)
+    more += f'<li><a href="/{l}/events/">{u["events"]}</a></li><li><a href="/{l}/sumba-in/">{u["all"]}</a></li>'
+    faq = faq_of(l, i)
+    body = f'<h1>{esc(title)}</h1><p class="dek">{esc(t["v"])}</p>'
+    body += f'<h2>{_fmt(u["h_data"], l, i)}</h2>{table}'
+    for k, h in (("w", u["h_w"]), ("s", u["h_s"]), ("o", u["h_o"]), ("d", u["h_d"]), ("c", u["h_c"]), ("t", H_T[l]), ("p", u["h_p"])):
+        body += f'<h2>{_fmt(h, l, i)}</h2><p>{esc(t[k])}</p>'
+    body += nav
+    if places: body += f'<h2>{_fmt(u["h_pl"], l, i)}</h2><ul>{places}</ul>'
+    body += f'<h2>{u["h_more"]}</h2><ul>{more}</ul>'
+    body += f'<section class="faq"><h2 id="faq">{_fmt(u["faq"], l, i)}</h2>' + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faq) + "</section>"
+    body += f'<div class="src"><b>{SRC_H[l]}</b><ol><li><a href="{SOURCE_URL}" rel="noopener nofollow">{SOURCE}</a></li><li>{OTHER_SRC[l]}</li></ol></div>'
+    body += f'<div style="margin-top:26px">{g["subscribe"](l, False, "travel", "month")}</div>'
+    url = BASE + tpl.format(l=l)
+    ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "inLanguage": l, "url": url,
+           "isPartOf": {"@type": "WebPage", "url": f"{BASE}/{l}/sumba-in/", "name": u["i_title"]}, "about": {"@type": "Place", "name": "Sumba", "address": {"@type": "PostalAddress", "addressRegion": "East Nusa Tenggara", "addressCountry": "ID"}}},
+          {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+          _bc(g, l, [(g["sec_name"](l, "travel"), "/{l}/travel/"), (u["name"], "/{l}/sumba-in/"), (_fmt("{M}", l, i), tpl)])]
+    crumbs = f'<a href="/{l}/travel/">{esc(g["sec_name"](l, "travel"))}</a> › <a href="/{l}/sumba-in/">{u["name"]}</a>'
+    _page(g, l, tpl, title, desc, crumbs, body, ld)
+
+def index_page(g, l):
+    u = UI[l]; tpl = "/{l}/sumba-in/"; deg = " C" if l == "en" else " °C"
+    rows = ""
+    for i, (_, w, e, sw, se, sea) in enumerate(MONTHS):
+        rows += (f'<tr><td><a href="{_path(i).format(l=l)}">{esc(_fmt("{M}", l, i))}</a></td><td>{_n(w[0], l)} / {_n(w[1], l)}{deg}</td><td>{w[2]} mm, {w[3]} {u["i_dn"]}</td>'
+                 f'<td>{_n(e[0], l)} / {_n(e[1], l)}{deg}</td><td>{e[2]} mm, {e[3]} {u["i_dn"]}</td><td>{_rng(se[2], se[3], l)}</td><td>{u["crowd"][CROWD[i]]}</td></tr>')
+    th = lambda v: f"{v:,}" if l == "en" else f"{v:,}".replace(",", ".")
+    note = u["note"].format(src=f'<a href="{SOURCE_URL}" rel="noopener nofollow">{SOURCE}</a>', ye=th(YEAR_RAIN["east"]))
+    table = f'<table class="mo"><thead><tr>{"".join(f"<th>{c}</th>" for c in u["i_c"])}</tr></thead><tbody>{rows}</tbody><caption>{note}</caption></table>'
+    lst = "".join(f'<li><a href="{_path(i).format(l=l)}">{esc(_fmt(u["title"], l, i))}</a><br>{esc(T[l][i]["v"])}</li>' for i in range(12))
+    more = "".join(f"<li>{x}</li>" for x in (_link(g, s, l) for s in GUIDES) if x) + f'<li><a href="/{l}/events/">{u["events"]}</a></li>'
+    body = f'<h1>{esc(u["i_title"])}</h1><p class="dek">{esc(u["i_dek"])}</p><h2>{u["i_h"]}</h2>{table}'
+    body += f'<h2>{u["i_how_h"]}</h2><p>{esc(u["i_how"].format(yw=th(YEAR_RAIN["west"]), ye=th(YEAR_RAIN["east"])))}</p>'
+    body += f'<h2>{u["all"]}</h2><ul>{lst}</ul><h2>{u["h_more"]}</h2><ul>{more}</ul>'
+    body += f'<div class="src"><b>{SRC_H[l]}</b><ol><li><a href="{SOURCE_URL}" rel="noopener nofollow">{SOURCE}</a></li><li>{OTHER_SRC[l]}</li></ol></div>'
+    body += f'<div style="margin-top:26px">{g["subscribe"](l, False, "travel", "months")}</div>'
+    url = BASE + tpl.format(l=l)
+    ds = {"@context": "https://schema.org", "@type": "Dataset", "name": u["ds_name"], "description": u["ds_desc"], "url": url, "inLanguage": l,
+          "creator": {"@type": "Organization", "name": "The Sumba Times", "url": BASE}, "isBasedOn": SOURCE_URL, "temporalCoverage": "2015-01-01/2024-12-31",
+          "keywords": ["Sumba", "climate", "rainfall", "temperature", "Waingapu", "Tambolaka"], "isAccessibleForFree": True,
+          "spatialCoverage": [{"@type": "Place", "name": "Tambolaka, Southwest Sumba, Indonesia", "geo": {"@type": "GeoCoordinates", "latitude": -9.41, "longitude": 119.24}},
+                              {"@type": "Place", "name": "Waingapu, East Sumba, Indonesia", "geo": {"@type": "GeoCoordinates", "latitude": -9.656, "longitude": 120.264}}],
+          "variableMeasured": [{"@type": "PropertyValue", "name": "Mean daily maximum temperature", "unitText": "°C"}, {"@type": "PropertyValue", "name": "Mean daily minimum temperature", "unitText": "°C"},
+                               {"@type": "PropertyValue", "name": "Mean monthly precipitation", "unitText": "mm"}, {"@type": "PropertyValue", "name": "Mean days per month with 1 mm of precipitation or more", "unitText": "days"}]}
+    il = {"@context": "https://schema.org", "@type": "ItemList", "name": u["i_title"], "inLanguage": l, "numberOfItems": 12,
+          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": _fmt(u["title"], l, i), "url": BASE + _path(i).format(l=l)} for i in range(12)]}
+    ld = [ds, il, _bc(g, l, [(g["sec_name"](l, "travel"), "/{l}/travel/"), (u["name"], tpl)])]
+    crumbs = f'<a href="/{l}/travel/">{esc(g["sec_name"](l, "travel"))}</a>'
+    _page(g, l, tpl, u["i_title"], u["i_desc"], crumbs, body, ld)
+
+def build(g):
+    for l in g["LANGS"]:
+        index_page(g, l)
+        for i in range(12): month_page(g, l, i)
