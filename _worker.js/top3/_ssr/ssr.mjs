@@ -20727,7 +20727,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(city.city),
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 ? `${city.city}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : city.city),
 		description: x.desc(city.city, names),
 		path,
 		body,
@@ -21120,7 +21120,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(city.city),
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 ? `${city.city}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : city.city),
 		description: x.desc(city.city, names),
 		path,
 		body,
