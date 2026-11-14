@@ -17,7 +17,7 @@ export const dlLine = (lang, s) => '<p class="ki">' + (DL[lang] || DL.en) + ': <
 // item 96: link from the developer page to its read-only dashboard
 const DD = { en: 'Developer dashboard: your score and what is missing', es: 'Panel del promotor: su puntuación y lo que falta', de: 'Bauträger-Übersicht: Ihr Wert und was fehlt', fr: 'Tableau de bord du promoteur : votre score et ce qui manque', nl: 'Dashboard voor ontwikkelaars: uw score en wat ontbreekt', ru: 'Панель застройщика: ваша оценка и чего не хватает', zh: '开发商面板：您的评分和缺少的内容', ar: 'لوحة المطوّر: درجتك وما ينقص' };
 export const devDash = (lang, s) => '<p><a href="' + (lang === 'en' ? '' : '/' + lang) + '/developers/' + s + '/dashboard/">' + (DD[lang] || DD.en) + '</a></p>';
-export const LEAD_CSS = '<style>.klead{margin:0 0 12px;font-weight:600;line-height:1.45}.klead .k-src{font-weight:400}</style>';
+export const LEAD_CSS = '<style>.klead{margin:0 0 12px;font-weight:600;line-height:1.45}.klead .k-src{font-weight:400}.klead-s{margin:0 0 10px;font-size:.86rem}</style>';
 const ISO = /^\d{4}-\d{2}-\d{2}/;
 // h: { esc, fd, host, okHttp, fixU, handoverOf, reviewed } from kbx_named.js; tp: transparency (kbx_tr.js) or null
 export function leadMap(ix, x, lang, tp, checked, h) {
@@ -56,6 +56,13 @@ export function leadify(body, leads) {
     if (!useS && a < 0) continue;
     const end = useS ? b : a + 5;   // n27u: in a folded section the lead goes at the end of the <summary>, under the heading, so it shows while folded
     if (body.slice(end, end + 40).includes('class="klead"') || (useS && body.slice(so, b).includes('class="klead"'))) continue;
+    if (useS) {   // n28b: no links inside a <summary> (a link in the toggle is a nested control for screen readers, and a tap on it also toggles): the
+      // lead stays under the heading as text and its source links open the folded body
+      const links = html.match(/<a\b[^>]*>[\s\S]*?<\/a>/g) || [];
+      const txt = html.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/g, (m, at, inner) => '<span class="k-src">' + inner + '</span>');
+      body = body.slice(0, end) + '<p class="klead">' + txt + '</p></summary>' + (links.length ? '<p class="klead-s">' + links.join(' ') + '</p>' : '') + body.slice(end + 10); n++;
+      continue;
+    }
     body = body.slice(0, end) + '<p class="klead">' + html + '</p>' + body.slice(end); n++;
   }
   return n ? body.replace('<div class="wrap kwrap">', LEAD_CSS + '<div class="wrap kwrap">') : body;

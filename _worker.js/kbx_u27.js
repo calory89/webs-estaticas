@@ -13,7 +13,7 @@
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27d';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
+export const U27V = 'u27e';   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -184,7 +184,14 @@ export function lightHtml(lang, o) {
   const n = it.notices; P.push(['lists', 'legit', n === 'yes' ? ['ok', 'l_yes'] : n === 'part' ? ['ok', 'l_part'] : ['nc', 'l_nc']]);
   return '<div class="klt" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + '"><p class="klt-h">' + esc(t27(lang, 'lt_h')) + '</p><ul class="klt-l">' +
     P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +
-    '</ul><details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary><p>' + esc(t27(lang, 'lt_key')) + '</p></details></div>';
+    '</ul><details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary>' + keyHtml(lang) + '</details></div>';
+}
+
+// n28b: the colour key as four rows, each with its own dot, then "facts, not a verdict" (split from the one sentence each language has)
+function keyHtml(lang) {
+  const P = String(t27(lang, 'lt_key')).split(/(?<=[.。])\s*/).map(x => x.trim()).filter(Boolean);
+  if (P.length < 5) return '<p>' + esc(t27(lang, 'lt_key')) + '</p>';
+  return '<ul class="klt-kl">' + ['ok', 'part', 'no', 'nc'].map((k, i) => '<li class="klt-' + k + '"><i aria-hidden="true"></i>' + esc(P[i]) + '</li>').join('') + '</ul><p>' + esc(P.slice(4).join(' ')) + '</p>';
 }
 
 // the "before you sign" checklist for the project's country: steps that apply everywhere, plus the official registers of that
@@ -208,8 +215,9 @@ export const Z_CSS = '<style id="kz-css">.kz-d>summary{list-style:none;cursor:po
   '.klt{margin:16px 0 0;max-width:80ch}.klt-h{margin:0 0 8px;font-size:.82rem;font-weight:700;color:var(--muted)}.klt-l{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:8px}@media(min-width:700px){.klt-l{grid-template-columns:repeat(3,minmax(0,1fr))}}' +
   '.klt-l a{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:8px;min-height:48px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card,var(--paper));color:inherit;text-decoration:none;line-height:1.3}.klt-l a:hover{border-color:var(--ink)}' +
   '.klt-l i{-webkit-print-color-adjust:exact;print-color-adjust:exact;flex:none;width:12px;height:12px;border-radius:50%;background:currentColor;align-self:center}.klt-l b{font-size:.92rem}.klt-l span{flex-basis:100%;padding-inline-start:20px;font-size:.84rem;color:var(--ink-2)}.klt-ok i{color:#1C7C4A}.klt-part i{color:#B26A00;background:linear-gradient(90deg,currentColor 50%,transparent 50%);box-shadow:inset 0 0 0 2px currentColor}[dir=rtl] .klt-part i{background:linear-gradient(270deg,currentColor 50%,transparent 50%)}.klt-no i{color:#B3261E}.klt-nc i{color:var(--muted);background:none;box-shadow:inset 0 0 0 2px currentColor}' +
-  '.klt-k{margin-top:6px;font-size:.84rem;color:var(--muted)}.klt-k summary{cursor:pointer;min-height:32px;display:inline-flex;align-items:center}.klt-k p{margin:4px 0 0}.kz-kf{margin:12px 0 0}.kz-kf>summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none}.kz-kf>summary::-webkit-details-marker{display:none}.kz-kf>summary::after{content:"";width:8px;height:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kz-kf[open]>summary::after{transform:rotate(-135deg)}' +
-  '.kck{margin:8px 0 18px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card,var(--paper))}.kck h3{margin:0 0 6px}.kck-l{margin:10px 0 0;padding-inline-start:0;list-style:none;counter-reset:k}.kck-l li{border-top:1px solid var(--line)}.kck-l label{display:flex;gap:10px;align-items:flex-start;padding:10px 0;cursor:pointer;line-height:1.45}.kck-l input{width:22px;height:22px;flex:0 0 22px;margin-top:1px}.kck-l input:checked+span{color:var(--muted);text-decoration:line-through}.kck-n{font-weight:700}.kck-r{min-height:40px;margin-top:6px;border:0;background:none;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}' +
+  '.klt-k{margin-top:4px;font-size:.86rem;color:var(--ink-2)}.klt-k summary{cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px;list-style:none;text-decoration:underline;text-underline-offset:3px}.klt-k summary::-webkit-details-marker{display:none}.klt-k summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.klt-k[open] summary::after{transform:rotate(-135deg)}.klt-k p{margin:4px 0 0}.klt-kl{list-style:none;margin:0;padding:0;display:grid;gap:4px}.klt-kl li{display:flex;align-items:center;gap:8px}.klt-kl i{flex:none;width:12px;height:12px;border-radius:50%;background:currentColor}.kz-kf{margin:12px 0 0}.kz-kf>summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center;gap:10px;list-style:none}.kz-kf>summary::-webkit-details-marker{display:none}.kz-kf>summary::after{content:"";width:8px;height:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kz-kf[open]>summary::after{transform:rotate(-135deg)}' +
+  '.kck{margin:8px 0 18px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card,var(--paper))}.kck h3{margin:0 0 6px}.kck-l{margin:10px 0 0;padding-inline-start:0;list-style:none;counter-reset:k}.kck-l li{border-top:1px solid var(--line)}.kck-l label{display:flex;gap:10px;align-items:flex-start;padding:10px 0;cursor:pointer;line-height:1.45}.kck-l input{width:22px;height:22px;flex:0 0 22px;margin-top:1px}.kck-l input:checked+span{color:var(--muted);text-decoration:line-through}.kck-n{font-weight:700}.kck-r{min-height:44px;margin-top:6px;border:0;background:none;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}' +
+  '.kwrap a.more{display:inline-flex;align-items:center;min-height:44px}' +
   '@media print{.kz-d>summary::after,.kz-all,.klt-k,.kwatch,.ktoc,.knx,#reply .bts,#cta .bts,.kck-r,.ship,header,footer,.totop,.kfeeds,.klive button{display:none!important}section.phero.kp{display:block!important;padding:0 0 8px!important}.kz-d>:not(style):not(script){display:block!important}details:not([open])>:not(summary):not(style):not(script){display:block!important}details::details-content{content-visibility:visible;display:block}' +
   'body{background:#fff!important;color:#000!important;font-size:11pt}a{color:#000!important;text-decoration:none}.kwrap section.ks{break-inside:auto;padding:10px 0;content-visibility:visible!important}.ks h2{break-after:avoid}.kp h1{font-size:22pt;max-width:none}.klt-l{grid-template-columns:repeat(3,1fr)}.klt-l a{border-color:#999;min-height:0}.kwrap{display:block!important}img,canvas,figure{max-width:100%!important;break-inside:avoid}.ksee,.ksat-strip,#ktm{display:none!important}a.src[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;word-break:break-all}}' +
   '@media(prefers-reduced-motion:reduce){.kz-d>summary::after{transition:none}}</style>';
@@ -255,6 +263,16 @@ function client() {
       ktot: 'التكلفة الإجمالية للشراء', kg: 'العائد الإجمالي', kn: 'العائد الصافي بعد التكاليف', kno: 'أرقامك الخاصة، محسوبة في متصفحك. ليست توقعًا ولا نصيحة؛ لا يُرسل شيء ولا يُحفظ. الإيجار تقديرك أنت لا تقدير المطوّر.', ke: 'تعذّر تحميل الضرائب. أدخل رقمك الخاص.',
       cmp: 'قارن', cms: 'المحدد: {k}', cmg: 'قارن جنبًا إلى جنب', cmx: 'حتى 3 مشاريع', cmc: 'مسح', sg: 'اقتراحات', sgd: 'المطوّر', sgp: 'عدد المشاريع: {k}', mpk: 'عدد المشاريع في هذا العرض: {k}', mpa: 'مشاريع أخرى في {m} بلا عنوان منشور: {k}', mpo: 'افتح', mpm: 'اعرض المزيد', mpe: 'تعذّر تحميل الخريطة. القائمة أدناه ما زالت تعمل.' }
   };
+  // n28b (14 Nov 2026): loading line of the calculator, empty map result and its reset
+  var W2 = { en: { kld: 'Loading the taxes and fees…', mp0: 'No project matches these filters.', mpr: 'Clear filters' },
+    es: { kld: 'Cargando impuestos y gastos…', mp0: 'Ningún proyecto cumple estos filtros.', mpr: 'Quitar filtros' },
+    fr: { kld: 'Chargement des taxes et frais…', mp0: 'Aucun projet ne correspond à ces filtres.', mpr: 'Effacer les filtres' },
+    de: { kld: 'Steuern und Gebühren werden geladen…', mp0: 'Kein Projekt passt zu diesen Filtern.', mpr: 'Filter zurücksetzen' },
+    nl: { kld: 'Belastingen en kosten laden…', mp0: 'Geen project past bij deze filters.', mpr: 'Filters wissen' },
+    ru: { kld: 'Загружаем налоги и сборы…', mp0: 'Ни один проект не подходит под эти фильтры.', mpr: 'Сбросить фильтры' },
+    zh: { kld: '正在加载税费…', mp0: '没有符合这些筛选条件的项目。', mpr: '清除筛选' },
+    ar: { kld: 'جارٍ تحميل الضرائب والرسوم…', mp0: 'لا يوجد مشروع يطابق هذه المرشحات.', mpr: 'امسح المرشحات' } };
+  for (var w2 in W2) for (var w3 in W2[w2]) W[w2][w3] = W2[w2][w3];
   var T = W[LG] || W.en, f = function (k, v) { var s = T[k] || W.en[k]; if (v) for (var a in v) s = s.split('{' + a + '}').join(v[a]); return s; };
   var LOC = { en: 'en-GB', es: 'es-ES', fr: 'fr-FR', de: 'de-DE', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[LG] || 'en-GB';
   var nf = function (n, d) { try { return Number(n).toLocaleString(LOC, { maximumFractionDigits: d || 0, numberingSystem: 'latn' }); } catch (e) { return String(Math.round(n)); } };
@@ -267,7 +285,7 @@ function client() {
     addEventListener('hashchange', function () { openFor(location.hash.slice(1)); });
     document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) openFor(a.getAttribute('href').slice(1)); }, true);
     var toc = document.querySelector('.kwrap>.ktoc'), all = el('button', 'kz-all', f('oa')); all.type = 'button'; all.setAttribute('aria-expanded', 'false');
-    all.addEventListener('click', function () { var o = all.getAttribute('aria-expanded') !== 'true'; Z.forEach(function (d) { d.open = o; }); all.setAttribute('aria-expanded', o ? 'true' : 'false'); all.textContent = f(o ? 'ca' : 'oa'); });
+    all.addEventListener('click', function () { var o = all.getAttribute('aria-expanded') !== 'true'; if (o) document.documentElement.classList.add('kb-h'); Z.forEach(function (d) { d.open = o; }); all.setAttribute('aria-expanded', o ? 'true' : 'false'); all.textContent = f(o ? 'ca' : 'oa'); });
     var first = document.querySelector('.kwrap>section.kz'); if (first) first.parentNode.insertBefore(all, first);
     var was = []; addEventListener('beforeprint', function () { was = []; document.querySelectorAll('details').forEach(function (d) { was.push([d, d.open]); d.open = true; }); });
     addEventListener('afterprint', function () { was.forEach(function (p) { p[0].open = p[1]; }); was = []; });
@@ -294,6 +312,10 @@ function client() {
   function money(c, v) { return (c ? c + ' ' : '') + nf(v); }
 
   if (D && D.c) {
+    var cst = el('style'); cst.textContent = '.kcu{margin:0 0 12px}.kcu label{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;font-weight:600}.kcu select,.kca input{box-sizing:border-box;min-height:44px;padding:0 12px;border:1.5px solid var(--line,#d5d3cc);border-radius:10px;background:var(--paper,#fff);color:inherit;font:inherit;font-weight:500}.kcu select:focus-visible,.kca input:focus-visible{outline:3px solid var(--k-sea,#155C75);outline-offset:1px}' +
+      '.kca{margin:18px 0 6px;padding:16px;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,var(--paper,#fff))}.kca h3{margin:0 0 12px}.kca label{display:flex;flex-direction:column;gap:4px;margin:0 0 12px;font-weight:600;font-size:.9rem}.kca input{width:100%;max-width:360px}' +
+      '.kca-r{list-style:none;margin:0 0 12px;padding:0}.kca-r li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line,#d5d3cc);font-size:.9rem}.kca-r b{white-space:nowrap;font-variant-numeric:tabular-nums}.kca-o{display:grid;grid-template-columns:auto auto;justify-content:start;gap:6px 16px;margin:6px 0 10px}.kca-o dt{color:var(--ink-2)}.kca-o dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums}';
+    document.head.appendChild(cst);
     // currency selector next to the prices as published (kept in this browser, key shared with the older price-band converter)
     var host = document.querySelector('#promise .kz-d') || document.querySelector('#promise');
     if (host && D.p > 0) {
@@ -332,6 +354,7 @@ function client() {
       };
       var rows = function () {
         var p = +iP.value || 0, n = ++ask;
+        if (!rowsEl.children.length) rowsEl.appendChild(el('li', 'k-small', f('kld')));
         fetch('/api/v1/cost?id=' + encodeURIComponent(D.id) + '&p=' + Math.round(p) + '&lang=' + LG).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
           if (n !== ask) return;
           rowsEl.innerHTML = '';
@@ -368,25 +391,31 @@ function client() {
   var LISTS = document.querySelector('[data-kx-lists]');
   if (LISTS && /\/projects\/?$/.test(location.pathname)) {
     var sel3 = [], bar = el('div', 'kcm'), bt = el('span', 'kcm-t'), go2 = el('a', 'kcm-g', f('cmg')), clr = el('button', 'kcm-c', f('cmc'));
+    try { var s0 = JSON.parse(sessionStorage.getItem('kb-cmp3') || '[]'); if (Array.isArray(s0)) sel3 = s0.filter(function (v) { return /^[a-z0-9-]{1,90}$/.test(v); }).slice(0, 3); } catch (e) {}
     clr.type = 'button'; bar.hidden = true; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', f('cmp')); bar.appendChild(bt); bar.appendChild(go2); bar.appendChild(clr); document.body.appendChild(bar);
-    var css = el('style'); css.textContent = '.kcmb{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin-inline-end:6px;vertical-align:middle}.kcmb input{width:20px;height:20px;margin:0;cursor:pointer}.kcm{position:fixed;inset-inline:12px;bottom:12px;z-index:60;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;max-width:640px;margin:0 auto;padding:10px 14px;border-radius:14px;background:var(--ink,#17212B);color:#fff;box-shadow:0 12px 30px rgba(23,33,43,.3)}.kcm[hidden]{display:none}.kcm-t{font-weight:700}.kcm-g{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:10px;background:#fff;color:#17212B;font-weight:700;text-decoration:none}.kcm-g[aria-disabled=true]{opacity:.55;pointer-events:none}.kcm-c{min-height:44px;border:0;background:none;color:#fff;text-decoration:underline;font:inherit;cursor:pointer}';
+    var css = el('style'); css.textContent = '.kcmb{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-block:-12px;margin-inline:-10px -6px;vertical-align:middle;cursor:pointer}[data-kx-lists] .lk li,.kf-out li{position:relative}[data-kx-lists] .lk li>a::after,.kf-out li>a::after{content:"";position:absolute;inset:0}.kcm-on .mcta{display:none!important}body.kcm-on{padding-bottom:150px}.kcmb input{width:20px;height:20px;margin:0;cursor:pointer}.kcm{position:fixed;inset-inline:12px;bottom:12px;z-index:60;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;max-width:640px;margin:0 auto;padding:10px 14px;border-radius:14px;background:var(--ink,#17212B);color:#fff;box-shadow:0 12px 30px rgba(23,33,43,.3)}.kcm[hidden]{display:none}.kcm-t{font-weight:700}.kcm-g{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:10px;background:#fff;color:#17212B;font-weight:700;text-decoration:none}.kcm-g[aria-disabled=true]{opacity:.55;pointer-events:none}.kcm-c{min-height:44px;border:0;background:none;color:#fff;text-decoration:underline;font:inherit;cursor:pointer}';
     document.head.appendChild(css);
     var slugOf = function (a) { var m = /\/projects\/([a-z0-9-]+)\/?$/.exec(a.getAttribute('href') || ''); return m ? m[1] : null; };
     var refresh = function () {
+      try { if (sel3.length) sessionStorage.setItem('kb-cmp3', JSON.stringify(sel3)); else sessionStorage.removeItem('kb-cmp3'); } catch (e) {}
+      document.body.classList.toggle('kcm-on', sel3.length > 0);
       bar.hidden = !sel3.length; bt.textContent = f('cms', { k: sel3.length }) + (sel3.length >= 3 ? ' · ' + f('cmx') : '');
       go2.href = PRE + '/compare/?p=' + sel3.join(','); go2.setAttribute('aria-disabled', sel3.length < 2 ? 'true' : 'false');
-      document.querySelectorAll('.kcmb input').forEach(function (i) { i.checked = sel3.indexOf(i.value) >= 0; i.disabled = !i.checked && sel3.length >= 3; });
+      document.querySelectorAll('.kcmb input').forEach(function (i) { i.checked = sel3.indexOf(i.value) >= 0; i.disabled = !i.checked && sel3.length >= 3; i.parentNode.title = i.disabled ? f('cmx') : ''; });
     };
     var add = function (li) {
       if (li.querySelector('.kcmb')) return; var a = li.querySelector('a[href*="/projects/"]'); if (!a) return; var s = slugOf(a); if (!s) return;
-      var w = el('span', 'kcmb'), i = el('input'); i.type = 'checkbox'; i.value = s; i.setAttribute('aria-label', f('cmp') + ': ' + a.textContent); w.appendChild(i); li.insertBefore(w, li.firstChild);
-      if (sel3.indexOf(s) >= 0) i.checked = true; if (!i.checked && sel3.length >= 3) i.disabled = true;
+      var w = el('label', 'kcmb'), i = el('input'); i.type = 'checkbox'; i.value = s; i.setAttribute('aria-label', f('cmp') + ': ' + a.textContent); w.appendChild(i); li.insertBefore(w, li.firstChild);
+      if (sel3.indexOf(s) >= 0) i.checked = true; if (!i.checked && sel3.length >= 3) { i.disabled = true; w.title = f('cmx'); }
     };
     document.addEventListener('change', function (e) { var i = e.target; if (!i.closest || !i.closest('.kcmb')) return; var k = sel3.indexOf(i.value); if (i.checked && k < 0 && sel3.length < 3) sel3.push(i.value); if (!i.checked && k >= 0) sel3.splice(k, 1); refresh(); });
     clr.addEventListener('click', function () { sel3 = []; refresh(); });
+    go2.addEventListener('click', function (e) { if (sel3.length < 2) e.preventDefault(); });   // aria-disabled alone does not stop Enter on a link
+    bt.setAttribute('aria-live', 'polite');
     var LI = Array.prototype.slice.call(LISTS.querySelectorAll('.lk li')), pos = 0;
     var chunk = function (dl) { var end = Math.min(LI.length, pos + 250); for (; pos < end; pos++) add(LI[pos]); if (pos < LI.length) (window.requestIdleCallback || function (fn) { setTimeout(fn, 40); })(chunk); };
     (window.requestIdleCallback || function (fn) { setTimeout(fn, 200); })(chunk);
+    if (sel3.length) refresh();
     var kf = document.querySelector('.kf-out'); if (kf && window.MutationObserver) new MutationObserver(function () { kf.querySelectorAll('li').forEach(add); }).observe(kf, { childList: true });
   }
 
@@ -434,7 +463,7 @@ function client() {
     var draw = function () {
       if (!data) return; var R = data.p.filter(pass), pins = R.filter(function (p) { return p[4] != null; }), byMk = {};
       R.forEach(function (p) { if (p[4] == null && data.mk[p[2]]) { (byMk[p[2]] = byMk[p[2]] || []).push(p); } });
-      cnt.textContent = f('mpk', { k: nf(R.length) });
+      cnt.textContent = f('mpk', { k: nf(R.length) }); var e0 = MP.querySelector('.kmp-0'); if (e0) e0.hidden = R.length > 0; if (rs) rs.hidden = !['co', 'yr', 'pm', 'sc'].some(function (k) { return q(k); });
       var h = '', esc2 = function (s) { var x = document.createElement('i'); x.textContent = s; return x.innerHTML; };
       R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + '</small></li>'; });
       listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
@@ -446,8 +475,12 @@ function client() {
         m.bindPopup('<b>' + esc2(f('mpa', { k: L2.length, m: k })) + '</b><br>' + L2.slice(0, 12).map(function (p) { return '<a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a>'; }).join('<br>') + (L2.length > 12 ? '<br>…' : '')); m.addTo(layer); B.push([c[0], c[1]]); });
       if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12 });
     };
-    fetch('/api/v1/map?lang=' + LG).then(function (r) { return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
-      var yy = fm.elements.yr; if (yy && yy.options.length < 3) { j.yr.forEach(function (y) { var o = el('option', null, y); o.value = y; yy.insertBefore(o, yy.lastElementChild); }); if (params.get('yr')) yy.value = params.get('yr'); } draw(); }).catch(function () {});
+    var rs = el('button', 'kmp-r', f('mpr')); rs.type = 'button'; rs.hidden = true; fm.appendChild(rs);
+    var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); listEl.parentNode.insertBefore(e0, listEl);
+    var reset = function () { ['co', 'yr', 'pm', 'sc'].forEach(function (k) { if (fm.elements[k]) fm.elements[k].value = ''; }); lim = 60; draw(); };
+    rs.addEventListener('click', reset); e0b.addEventListener('click', function () { reset(); fm.elements.co && fm.elements.co.focus(); });
+    fetch('/api/v1/map?lang=' + LG).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
+      var yy = fm.elements.yr; if (yy && yy.options.length < 3) { j.yr.forEach(function (y) { var o = el('option', null, y); o.value = y; yy.insertBefore(o, yy.lastElementChild); }); if (params.get('yr')) yy.value = params.get('yr'); } draw(); }).catch(function () { cnt.textContent = f('mpe'); if (!map) mapEl.textContent = f('mpe'); });
     fm.addEventListener('change', function () { lim = 60; draw(); }); fm.addEventListener('submit', function (e) { e.preventDefault(); });
     var mb = MP.querySelector('.kmp-more'); if (mb) mb.addEventListener('click', function () { lim += 120; draw(); });
     var boot = function () { if (map) return; var cs = el('link'); cs.rel = 'stylesheet'; cs.href = M.css; document.head.appendChild(cs); var s = el('script'); s.src = M.js; s.onload = function () { Lf = window.L; mapEl.textContent = ''; map = Lf.map(mapEl, { scrollWheelZoom: false, worldCopyJump: true, minZoom: innerWidth < 700 ? 1 : 2 }).setView([20, 20], 2);
@@ -492,7 +525,7 @@ async function mapPage(req, u, env, ctx, shell, lang) {
     '<p class="k-small k-muted">' + esc(t27(lang, 'mp_src')) + '</p><h2>' + esc(t27(lang, 'mp_list')) + '</h2><ul class="kmp-l lk"></ul><button type="button" class="kmp-more" hidden>' + esc(W_MORE[lang] || W_MORE.en) + '</button>' +
     '<p><a href="' + P + '/api/v1/map">/api/v1/map</a> · <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p></div>' +
     '<style>.kmp-f{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 14px;margin:18px 0 10px}.kmp-f label{display:flex;flex-direction:column;gap:4px;font-size:.84rem;font-weight:600;min-width:0}.kmp-f select{min-height:44px;width:100%;min-width:0;border:1.5px solid var(--line,#d5d3cc);border-radius:10px;padding:0 10px;background:var(--paper,#fff);color:inherit;font:inherit;font-weight:500}' +
-    '.kmp-n{font-weight:700;margin:6px 0 10px}.kmp-m{height:min(70vh,560px);min-height:340px;}@media(max-width:700px){.kmp-m{height:440px}}.kmp-m{border:1px solid var(--line,#d5d3cc);border-radius:14px;overflow:hidden;background:var(--concrete,#F1EFE9);display:grid;place-items:center;color:var(--muted)}.kmp-l{columns:2 300px;padding:0;list-style:none}.kmp-l li{padding:7px 0;border-bottom:1px solid var(--line,#d5d3cc);break-inside:avoid}.kmp-l small{display:block;color:var(--muted)}.kmp-more{min-height:44px;margin:10px 0;padding:0 14px;border:1.5px solid var(--ink,#17212B);border-radius:10px;background:none;color:inherit;font:inherit;font-weight:600;cursor:pointer}.kmp .leaflet-container{font:inherit}</style>';
+    '.kmp-n{font-weight:700;margin:6px 0 10px}.kmp-m{height:min(70vh,560px);min-height:340px;}@media(max-width:700px){.kmp-m{height:440px}}.kmp-m{border:1px solid var(--line,#d5d3cc);border-radius:14px;overflow:hidden;background:var(--concrete,#F1EFE9);display:grid;place-items:center;color:var(--muted)}.kmp-l{columns:2 300px;padding:0;list-style:none}.kmp-l li{padding:7px 0;border-bottom:1px solid var(--line,#d5d3cc);break-inside:avoid}.kmp-l small{display:block;color:var(--muted)}.kmp-more{min-height:44px;margin:10px 0;padding:0 14px;border:1.5px solid var(--ink,#17212B);border-radius:10px;background:none;color:inherit;font:inherit;font-weight:600;cursor:pointer}.kmp .leaflet-container{font:inherit}.kmp-m{position:relative;z-index:0;isolation:isolate}@media(pointer:coarse){.kmp .leaflet-touch .leaflet-bar a{width:44px;height:44px;line-height:44px;font-size:22px}}.kmp-l li{position:relative}.kmp-l li>a::after{content:"";position:absolute;inset:0}.kmp-r{min-height:44px;padding:0 14px;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;align-self:end;justify-self:start}.kmp-0{font-weight:600;margin:10px 0}.kmp-0[hidden]{display:none}</style>';
   const pg = { title: t27(lang, 'mp_t') + ' | Kolaboro', desc: t27(lang, 'mp_d'), canon, body, alt: l => ORIGIN + pre(l) + '/map/',
     ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'mp_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: t27(lang, 'mp_h1'), item: canon }] }] } };

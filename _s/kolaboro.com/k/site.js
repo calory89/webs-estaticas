@@ -946,6 +946,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     if (cur === last) return; last = cur;
     links.forEach(function (a, i) { if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
     var a = links[cur]; if (a && !side) { var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect(); if (r.left < tr.left || r.right > tr.right) toc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' }); }
+    else if (a && side && toc.scrollHeight > toc.clientHeight + 2) { var r2 = a.getBoundingClientRect(), t2 = toc.getBoundingClientRect(); if (r2.top < t2.top || r2.bottom > t2.bottom) toc.scrollTop += r2.top - t2.top - t2.height / 2; }   // n28b: the side list scrolls when it is taller than the screen
   };
   // long lists: first 6 shown, the rest behind one button (everything stays in the page for search engines and Ctrl+F)
   D.querySelectorAll('.kwrap ul.fl:not(.glance), .kwrap ol.srcs, .kwrap .tw tbody, [data-kx-lists] ul.lk').forEach(function (ul) {

@@ -2,6 +2,21 @@
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
   {
+   "date": "2026-11-14",
+   "kind": "shipped",
+   "url": "/projects/",
+   "text": "Project pages, lists, compare and map: 35 fixes for phones and keyboards",
+   "tl": {
+    "es": "Fichas, listas, comparador y mapa: 35 arreglos para móvil y teclado",
+    "fr": "Fiches, listes, comparateur et carte : 35 corrections pour mobile et clavier",
+    "de": "Projektseiten, Listen, Vergleich und Karte: 35 Verbesserungen für Handy und Tastatur",
+    "nl": "Projectpagina's, lijsten, vergelijker en kaart: 35 verbeteringen voor mobiel en toetsenbord",
+    "ru": "Страницы проектов, списки, сравнение и карта: 35 исправлений для телефона и клавиатуры",
+    "zh": "项目页、列表、对比和地图：为手机和键盘做了 35 项改进",
+    "ar": "صفحات المشاريع والقوائم والمقارنة والخريطة: 35 تحسينًا للهاتف ولوحة المفاتيح"
+   }
+  },
+  {
    "date": "2026-11-13",
    "kind": "shipped",
    "url": "/pricing/",
