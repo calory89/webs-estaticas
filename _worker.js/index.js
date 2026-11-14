@@ -270,7 +270,8 @@ function kbCaseFix(u) {
 const KB_BOT_UA = /Googlebot|bingbot|Applebot|DuckDuckBot|YandexBot|Baiduspider|GPTBot|OAI-SearchBot|ClaudeBot|Claude-SearchBot|PerplexityBot|CCBot|Amazonbot|SeznamBot|Yeti|NaverBot|PetalBot|Qwantbot|MojeekBot|KolaboroSEOAudit/i;
 async function kbCond(req, r) {
   if (r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '') || /no-store/.test(r.headers.get('cache-control') || '')) return r;
-  const t = await r.text(), norm = t.replace(/ nonce="[A-Za-z0-9+/=]*"/g, '').replace(/'nonce-[A-Za-z0-9+/=]*'/g, '');
+  const c = r.clone(); let t; try { t = await c.text(); } catch (e) { return r; }   // n29t: a body that fails to read is passed on untouched (a read error must never become a 500)
+  const norm = t.replace(/ nonce="[A-Za-z0-9+/=]*"/g, '').replace(/'nonce-[A-Za-z0-9+/=]*'/g, '');
   const d = new Uint8Array(await crypto.subtle.digest('SHA-1', new TextEncoder().encode(norm))), tag = 'W/"' + [...d.slice(0, 10)].map(x => x.toString(16).padStart(2, '0')).join('') + '"';
   const h = new Headers(r.headers); h.set('etag', tag); h.delete('content-length');
   const inm = req.headers.get('if-none-match');
