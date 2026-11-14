@@ -177,7 +177,7 @@ async function shellOut(shell, R, cacheHdr) {
     .on('title', { element(e) { e.remove(); } })
     .on('meta[name="description"],meta[name="robots"],link[rel="canonical"],meta[property="og:title"],meta[property="og:description"],meta[property="og:url"],meta[name="twitter:title"],meta[name="twitter:description"],meta[name="twitter:image"],meta[property="og:image"],meta[property="og:image:width"],meta[property="og:image:height"],script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append(R.head + '<meta property="og:image" content="' + SITE + '/og.png"><meta name="twitter:image" content="' + SITE + '/og.png">', { html: true }); } })
+    .on('head', { element(e) { e.append(R.head + '<meta property="og:image" content="' + SITE + '/k/og.png"><meta name="twitter:image" content="' + SITE + '/k/og.png">', { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(R.main, { html: true }); } })
     .transform(s);
   const h = new Headers(res.headers); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag'); if (cacheHdr) h.set('cache-control', cacheHdr);

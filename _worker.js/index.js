@@ -151,12 +151,14 @@ function kbHeaders(r, u) {
   // nonce and without waiting (that was every strict-CSP report: about 35 page types). Pages without the tag now get the same tag from
   // here, with the nonce and held until the first interaction like on every other page; analytics-all then sees it and adds nothing.
   let ga = false, gaTail = '';
-  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
+  // n28a: 146 static pages have Open Graph tags but no og:locale (shared links were read as English); it is added from the path language
+  let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || 'en_GB';
+  return new HTMLRewriter().on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
-    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
+    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
 }
 // n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
 // wants the genitive singular ("2 проекта") and after 1 (21, 31...) the nominative singular ("1 проект"). Left alone: 5 to 20, numbers
@@ -203,7 +205,7 @@ const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','tou
   "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(done||held||!v||typeof v!=='object')return;held=v;var real;" +
   "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return done?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
   // n28a: a table wider than its box scrolls sideways, so keyboard users must be able to focus it (axe scrollable-region-focusable); read after load, off the critical path
-  "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('.k-table-wrap,.tw,.h-tw,.pi-tw,.api-b,pre').forEach(function(t){if(!t.hasAttribute('tabindex')&&t.scrollWidth>t.clientWidth+1)t.tabIndex=0})},600)});" +
+  "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('pre,[class*=\"tw\"],[class*=\"scroll\"],[class*=\"table\"],[class*=\"code\"]').forEach(function(t){if(t.hasAttribute('tabindex')||t.scrollWidth<=t.clientWidth+1)return;var o=getComputedStyle(t).overflowX;if(o==='auto'||o==='scroll')t.tabIndex=0})},600)});" +
   "})(window,document);";
 // kolaboro.com (seoT, batch 8): every public static page gets a BreadcrumbList (and a WebPage node when it has no JSON-LD at all).
 // Parent crumbs are only linked when that folder has a page; the check is cached per isolate.
