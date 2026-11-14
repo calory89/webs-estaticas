@@ -538,6 +538,8 @@ export default {
       const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
       const sr = await kb.ssr(base, u, isP ? 'p' : 'm', env);
+      // n28a: an unknown /m/<market>/ or /p/<id>/ answered 404 with the hub page inside (its title, h1 and canonical to /m/ or /p/); it now gets the 404 page
+      if (sr.status === 404) { try { const nu = new URL('/__kb_missing__/', u); const nf = kbHeaders(await this.site(new Request(nu, req), env, ctx, nu, host), nu); if (nf.status === 404 && /text\/html/.test(nf.headers.get('content-type') || '')) { if (!k404) k404 = await import('./kbx_404.js'); return await k404.page(nf, u, 404, env); } } catch (e) {} return sr; }
       if (isP || sr.status !== 200) return sr;
       // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
       // n27g (batch 27): dated figures for the 50 biggest markets and links to the market's most searched projects (kbx_g27.js), above the market file

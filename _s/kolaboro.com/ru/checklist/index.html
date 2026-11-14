@@ -150,7 +150,7 @@
   upd();
 })();
 </script>
-<div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>Мы используем аналитические cookie, чтобы улучшать Kolaboro. <a href="/legal/privacy/">Конфиденциальность</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Только необходимые</button><button class="btn btn-hi btn-sm" data-cc="yes">Принять</button></div></div>
+<div class="cc" id="cc" role="dialog" aria-label="Файлы cookie" hidden><p>Мы используем аналитические cookie, чтобы улучшать Kolaboro. <a href="/legal/privacy/">Конфиденциальность</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Только необходимые</button><button class="btn btn-hi btn-sm" data-cc="yes">Принять</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
 fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
 b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
