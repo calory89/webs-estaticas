@@ -281,7 +281,9 @@ const list = (lang, items) => { try { return new Intl.ListFormat(LOC[lang] || 'e
 function marketPage(D, m, lang) {
   const { mk, L, st } = m, ix = D.ix, isC = m.kind === 'c', p = isC ? coName(m.co, lang) : mkName(mk, lang), co = L[0].co, d = fd(D.d, lang), path = isC ? '/countries/' + m.s + '/' : '/m/' + slugM(mk) + '/';
   const v = { p, n: nf(lang, st.n), dv: nf(lang, st.dv), d };
-  const title = t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
+  // n29q: a country with a market file of the same name (Malaysia, Vietnam, Costa Rica...) had the same title on both pages (255 pairs)
+  const CT = { en: '{p}: off-plan projects by market and developer', es: '{p}: obra nueva sobre plano por mercado y promotor', fr: '{p} : programmes sur plan par marché et promoteur', de: '{p}: Off-Plan-Projekte nach Markt und Bauträger', nl: '{p}: projecten op plan per markt en ontwikkelaar', ru: '{p}: новостройки по рынкам и застройщикам', zh: '{p}期房项目：按市场与开发商', ar: '{p}: مشاريع على الخارطة حسب السوق والمطوّر' };
+  const title = isC && (D.M.has(slugM(mk)) || [...D.M.values()].some(o => mkName(o.mk, lang) === p)) ? (CT[lang] || CT.en).replace('{p}', p) : t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
   const TRP = TR_PLACES.filter(P => !P.coi && (isC ? (CO_AL[P.co] || P.co) === m.co : P.m.includes(mk)) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
   const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
   const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {
@@ -296,11 +298,13 @@ function marketPage(D, m, lang) {
   const links = [];
   for (const P of TRP) links.push('<a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + th(lang, 'l_tr', { p: mkName(P.n, lang) }) + '</a>');
   if (isC) for (const g of [...new Set(L.map(x => x.mk))].map(k => D.M.get(slugM(k))).filter(Boolean).sort((a, b) => b.L.length - a.L.length)) links.push('<a href="' + pre(lang) + '/m/' + slugM(g.mk) + '/">' + bdi(mkName(g.mk, lang)) + ' (' + nf(lang, g.L.length) + ')</a>');
-  for (const P of BUY) links.push('<a href="' + pre(lang) + '/guides/buying-off-plan/' + P.s + '/">' + th(lang, 'l_buy', { p: isC ? mkName(P.m[0], lang) : mkName(mk, lang) }) + '</a>');
+  for (const P of BUY) links.push('<a href="' + pre(lang) + '/guides/buying-off-plan/' + P.s + '/">' + th(lang, 'l_buy', { p: isC ? (P.m ? mkName(P.m[0], lang) : coName(P.c, lang)) : mkName(mk, lang) }) + '</a>');
   if (!isC && st.ov >= OV_MIN) links.push('<a href="' + pre(lang) + '/handover/overdue/' + slugA(mk) + '/">' + th(lang, 'l_ov', { p }) + '</a>');
   if (!isC) for (const [y, k] of [...st.ys.entries()].filter(e => e[1] >= 3).sort((a, b) => a[0] - b[0]).slice(0, 4)) links.push('<a href="' + pre(lang) + '/handover/' + y + '/' + slugA(mk) + '/">' + th(lang, 'l_hy', { y }) + '</a>');
   links.push('<a href="' + path + '" hreflang="en">' + esc(t(lang, isC ? 'l_enc' : 'l_en')) + '</a>', '<a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'l_mt')) + '</a>');
-  const cr = [['Kolaboro', pre(lang) + '/'], isC ? [t(lang, 'crumb_c'), pre(lang) + '/countries/'] : [t(lang, 'crumb'), pre(lang) + '/projects/'], [p, pre(lang) + path]];
+  // n29q: market files use the same trail as the English /m/ page (Countries / <country> / <market>), the country page in this language when it exists
+  const coS = co ? slugA(co) : null, coU = coS ? (D.C.has(coS) ? pre(lang) : '') + '/countries/' + coS + '/' : null;
+  const cr = isC ? [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + '/countries/'], [p, pre(lang) + path]] : [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + '/countries/']].concat(coU && co !== mk ? [[coName(co, lang), coU]] : []).concat([[p, pre(lang) + path]]);
   const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb">' + cr.map((c, i) => i < cr.length - 1 ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span>' + bdi(c[0]) + '</span>').join(' / ') + '</p>' +
     '<h1>' + th(lang, 'm_h1', { p: H(bdi(p)) }) + '</h1><p class="lead">' + th(lang, 'm_lead', { p: H(bdi(p)), d }) + '</p></div>' +
     kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [nf(lang, st.pn) + ' (' + nf(lang, pct(st.pn, st.n)) + '%)', t(lang, 'k_pn')], [nf(lang, st.h) + ' (' + nf(lang, pct(st.h, st.n)) + '%)', t(lang, 'k_h')],
@@ -309,8 +313,9 @@ function marketPage(D, m, lang) {
     faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace('<section class="k29-q"><div class="k-wrap wrap">', '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a></p></div></section></div>';
   const url = ORIGIN + pre(lang) + path;
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: st.lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
-      about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@type': 'Place', name: p, alternateName: p !== mk ? mk : undefined, containedInPlace: co ? { '@type': 'Country', name: coName(co, lang) } : undefined }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
+      about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@id': url + '#place' }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
     { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: ORIGIN + c[1] })) }, faqLd(Q)];
+  if (!isC) ld.splice(1, 0, { '@type': 'Place', '@id': url + '#place', name: p, alternateName: p !== mk ? mk : undefined, containedInPlace: co ? { '@type': 'Country', name: coName(co, lang), url: coU ? ORIGIN + coU : undefined } : undefined });   // n29q: Place node as on the English /m/ page
   return { path, title, desc, body, ld, lm: st.lm };
 }
 // English /m/<market>/: hreflang alternates when the market has translated files (index.js appends them to <head>)
@@ -342,7 +347,8 @@ function hubParts(D, kind, lang) {
   }
   if (kind === 'rankings/transparency') {
     if (!D.tri) return null;
-    const R = [...D.tri.places.values()].filter(pl => !pl.P.coi && pl.ranked && pl.med != null).sort((a, b) => b.med - a.med || b.n - a.n);
+    const R = [...D.tri.places.values()].filter(pl => pl.ranked && pl.med != null)   // n29q: Sumba is ranked on this page (owner decision), so it counts here as on /numbers/
+   .sort((a, b) => b.med - a.med || b.n - a.n);
     if (!R.length) return null; const hi = R[0], lo = R[R.length - 1], scored = new Set(); for (const pl of R) for (const r of pl.L) scored.add(r.id);
     const k = [[N(R.length), t(lang, 'k_pl')], [N(scored.size), t(lang, 'k_sc')], [esc(mkName(hi.P.n, lang)) + ' · ' + N(hi.med), t(lang, 'k_top')], [esc(d), t(lang, 'k_d')]];
     const Q = [[t(lang, 'ht_q1'), t(lang, 'ht_a1', { p: mkName(hi.P.n, lang), s: N(hi.med), n: N(hi.n), d })], [t(lang, 'ht_q2'), t(lang, 'ht_a2', { p: mkName(lo.P.n, lang), s: N(lo.med), n: N(lo.n) })], [t(lang, 'ht_q3'), t(lang, 'ht_a3')]];
@@ -361,8 +367,18 @@ function hubParts(D, kind, lang) {
     const ms = A.OV.map(e => e[1].m), mx = A.OV.slice().sort((a, b) => b[1].m - a[1].m)[0], byMk = new Map(); for (const [x] of A.OV) byMk.set(x.mk, (byMk.get(x.mk) || 0) + 1);
     const top = [...byMk.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
     const k = [[N(A.ov), t(lang, 'k_ov')], [N([...byMk.values()].filter(v => v >= OV_MIN).length), t(lang, 'k_ovp')], [N(med(ms)), t(lang, 'k_ovm')], [N(mx[1].m), t(lang, 'k_ovx')], [esc(d), t(lang, 'k_d')]];
+    // n29q: /numbers/ and /api/open/stats show a smaller overdue count (first date in the data file); say why the two differ
+    const HON = { en: '{a}Kolaboro in numbers{b} counts projects past the first handover date in the data file; this page uses the handover date shown on each project page and the current month, so the two counts differ.',
+      es: '{a}Kolaboro en cifras{b} cuenta los proyectos que pasaron la primera fecha de entrega del archivo de datos; esta página usa la fecha de entrega que muestra cada ficha y el mes actual, por eso las dos cifras difieren.',
+      fr: '{a}Kolaboro en chiffres{b} compte les projets qui ont dépassé la première date de livraison du fichier de données ; cette page utilise la date de livraison affichée sur chaque fiche et le mois en cours, d’où l’écart entre les deux chiffres.',
+      de: '{a}Kolaboro in Zahlen{b} zählt Projekte nach dem ersten Übergabetermin in der Datendatei; diese Seite nutzt den Übergabetermin, den jede Projektseite zeigt, und den aktuellen Monat. Daher weichen die Zahlen ab.',
+      nl: '{a}Kolaboro in cijfers{b} telt projecten voorbij de eerste opleverdatum in het gegevensbestand; deze pagina gebruikt de opleverdatum op elke projectpagina en de huidige maand, daarom verschillen de twee aantallen.',
+      ru: '{a}Kolaboro в цифрах{b} считает проекты, у которых прошла первая дата сдачи в файле данных; эта страница берёт дату сдачи со страницы каждого проекта и текущий месяц, поэтому числа различаются.',
+      zh: '{a}Kolaboro 数据一览{b}统计的是已超过数据文件中首个交付日期的项目；本页使用每个项目页显示的交付日期和当前月份，因此两个数字不同。',
+      ar: 'تحسب صفحة {a}Kolaboro بالأرقام{b} المشاريع التي تجاوزت أول موعد تسليم في ملف البيانات؛ أما هذه الصفحة فتستخدم موعد التسليم الظاهر في صفحة كل مشروع والشهر الحالي، لذلك يختلف العددان.' };
+    const note = esc(HON[lang] || HON.en).replace('{a}', '<a href="' + pre(lang) + '/numbers/">').replace('{b}', '</a>');
     const Q = [[t(lang, 'ho_q1'), t(lang, 'ho_a1', { ov: N(A.ov), m: N(med(ms)), d })], [t(lang, 'ho_q2'), t(lang, 'ho_a2', { l: list(lang, top.map(([m, n]) => mkName(m, lang) + ' (' + N(n) + ')')) })], [t(lang, 'ho_q3'), t(lang, 'ho_a3')]];
-    return { k, Q };
+    return { k, Q, note };
   }
   if (kind === 'developers') {
     const DV = [...ix.devs.values()].sort((a, b) => b.ids.length - a.ids.length || a.n.localeCompare(b.n)), d5 = DV.filter(v => v.ids.length >= 5).length;
@@ -387,7 +403,7 @@ export async function hubInject(req, u, env, r, fix) {
   if (pt === undefined) { try { pt = hubParts(D, kind, lang); } catch (e) { pt = null; } D.body.set(key, pt); }
   if (!pt) return r;
   const fx = lang === 'ru' && fix ? fix : (h => h);
-  const top = CSS + '<div class="k29-k"><h2>' + esc(t(lang, 'hub_k')) + '</h2>' + kvHtml(pt.k) + '</div>', top2 = fx(top);
+  const top = CSS + '<div class="k29-k"><h2>' + esc(t(lang, 'hub_k')) + '</h2>' + kvHtml(pt.k) + (pt.note ? '<p class="k-small k-muted">' + pt.note + '</p>' : '') + '</div>', top2 = fx(top);
   const qa = '<section class="k29-q" id="hub-questions"><div class="k-wrap wrap">' + faqHtml(t(lang, 'hub_q'), pt.Q).replace('<h2 id="questions">', '<h2>') + '</div></section><script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': [faqLd(pt.Q)] }).replace(/</g, '\\u003c') + '</script>';
   let done = false;
   return new HTMLRewriter()

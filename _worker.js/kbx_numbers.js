@@ -48,7 +48,10 @@ async function figures(env, inner) {
   }
   if (ix) { const d = (ix.updated || up); add('pages', 'named', ix.P.length, '/projects/', d); add('pages', 'devs', ix.devs.size, '/developers/', d); add('pages', 'langs', LANGS.length, '/projects/', d); add('pages', 'answers', ix.P.length, '/llms.txt', d); }
   if (tr) add('pages', 'places', [...tr.places.values()].filter(p => p.ranked).length, '/rankings/transparency/', tr.updated);
-  if (seo) add('pages', 'urls', Object.values(seo).reduce((a, b) => a + b, 0), '/sitemap_index.xml', today);
+  // n29q: sitemapStats counts only the sitemaps kbx_seo builds (16,689 on 14 Nov), not the 8 module sitemaps in the index; the SEO audit
+  // counts every URL of every sitemap in /sitemap_index.xml (20,508 on 14 Nov), so it is the figure shown, with its own date
+  const au = await get('/data/seo-audit.json'), aun = au && au.summary && au.summary.in_sitemaps;
+  if (aun) add('pages', 'urls', aun, '/engineering/seo/', au.generated_at); else if (seo) add('pages', 'urls', Object.values(seo).reduce((a, b) => a + b, 0), '/sitemap_index.xml', today);
   const v = { F, up, today }; MEMO = { t: Date.now(), v }; return v;
 }
 
@@ -57,7 +60,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (!u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
   const lang = m[1] || 'en', L = T[lang], path = pre(lang) + '/numbers/', canon = ORIGIN + path;
   // the figures take a few seconds to compute from scratch (sitemaps, transparency index): the page is kept at the edge for 15 minutes
-  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v2/' + lang) : null;
+  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v3/' + lang) : null;
   // n28a: a cold build took 8.6 s (measured 14 Nov 2026). The copy is now kept a day and served at once; after 15 minutes it is
   // rebuilt in the background on the next view (stale-while-revalidate), so visitors no longer wait for the build
   if (ck) { try { const hit = await caches.default.match(ck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0);

@@ -67,7 +67,7 @@
 <li>Cost is estimated from the token counts the model API returned, at list prices (Haiku US$1 / US$5, Sonnet US$3 / US$15 per million input / output tokens).</li>
 </ul>
 <h2>Run it on your own system</h2>
-<p>The cases and pages are at <a href="/open/evals/cases.json">/open/evals/cases.json</a> and <a href="/open/evals/fixtures/e1-bali-leasehold.html">/open/evals/fixtures/</a>. The scorer is one open file, <a href="/benchmark/kolaboro-bench.mjs">kolaboro-bench.mjs</a> (MIT, Node 18+, no dependency), with the same checks and the same quote matching as our daily evaluation. The visible text of each page, as our code extracts it, is in <a href="/benchmark/visible.json">visible.json</a>.</p>
+<p>The cases and pages are at <a href="/open/evals/cases.json">/open/evals/cases.json</a> and <a href="/open/evals/fixtures/e1-bali-leasehold">/open/evals/fixtures/</a>. The scorer is one open file, <a href="/benchmark/kolaboro-bench.mjs">kolaboro-bench.mjs</a> (MIT, Node 18+, no dependency), with the same checks and the same quote matching as our daily evaluation. The visible text of each page, as our code extracts it, is in <a href="/benchmark/visible.json">visible.json</a>.</p>
 <div class="bm-code">node kolaboro-bench.mjs fetch                 # cases, pages and visible text into ./kolaboro-bench-data/
 # run YOUR pipeline on each page, save {"case id": answer, ...} as answers.json (answer fields: see the top of the script)
 node kolaboro-bench.mjs score answers.json    # PASS/FAIL per case, totals per kind

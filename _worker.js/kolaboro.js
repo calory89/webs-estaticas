@@ -1476,7 +1476,7 @@ async function openRoutes(req, u, path, L, env) {
   if (m) { const c = cases.find(x => x.id.toLowerCase() === m[1].toLowerCase()); return c ? openResp({ ...meta, project: openProject(c), questions: c.q || [], flags: c.flags || [], notes: c.notes || [] }) : new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } }); }
   if (path === '/feed/alerts.xml' || ((path === '/feed.xml' || path === '/feed.json') && u.searchParams.get('market'))) {
     const mk = (u.searchParams.get('market') || '').toLowerCase();
-    const pool = cases.filter(c => !mk || c.market.toLowerCase() === mk || (c.country || '').toLowerCase() === mk);
+    const pool = cases.filter(c => !/^sumba$/i.test(c.market || '') && (!mk || c.market.toLowerCase() === mk || (c.country || '').toLowerCase() === mk));   // n29q: Sumba only in the transparency ranking
     const items = [];
     // n28a: items link the project page itself; /p/?id= answered a 301 for every item (Sumba ids keep /p/<id>/, they have no named page)
     let SL = {}; try { const ix = await (await import('./kbx_named.js')).data(env); for (const [id, x] of ix.byId) SL[id] = x.s; } catch (e) { SL = {}; }

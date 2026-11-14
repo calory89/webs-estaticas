@@ -420,7 +420,7 @@ export const H = {
     rp_q2: 'Wat is de mediane instapprijs van off-planprojecten in {p}?', rp_a2: '{m} over {k} projecten met een prijs in {c} (gegevens van {d}).',
     rp_q3: 'Wanneer worden off-planprojecten in {p} opgeleverd?', rp_a3: 'Het meest voorkomende geregistreerde opleverjaar is {y} ({k} projecten); {z} projecten publiceren geen datum.',
     rph_t: 'Off-planmarktrapporten per plaats, {mo}', rph_lead: 'Plaatsen met minstens 15 gevolgde projecten. Elk rapport wordt herberekend als de gegevens veranderen.', rph_cols: ['Plaats', 'Projecten', 'Nieuw in {mo}', 'Mediane instapprijs'],
-    vs_t: '{a} vs {b} in {p}', vs_t2: '{a} vs {b}',
+    vs_t: 'Vergelijking {a} en {b} in {p}', vs_t2: 'Vergelijking {a} en {b}',   // n29q: was the English title word for word
     vs_d: '{a} en {b} naast elkaar in {p}: projecten, transparantiescores, vergunningen, geregistreerde opleverdata en prijzen, uit onze open gegevens van {d}.',
     vs_lead: 'Twee ontwikkelaars met elk 5 of meer off-planprojecten in {p}, vergeleken op wat ze publiceren. Alleen feiten en berekende cijfers, geen oordeel.',
     vs_rows: ['Gevolgde projecten in {p}', 'Mediane transparantiescore', 'Score van het beste project', 'Projecten met vergunningsnummer', 'Projecten met opleverdatum', 'Opleverdatum minstens eens verschoven', 'Opleverdatum verstreken, niet opgeleverd', 'Mediane instapprijs', 'Geregistreerde voltooide projecten (alle plaatsen)'],

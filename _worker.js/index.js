@@ -402,6 +402,8 @@ export default {
     // (or 503 on /countries/UAE/); it now gets a 301 to the lowercase, single-slash form. Only page sections whose URLs are all
     // lowercase; ids that keep capitals (/p/DXB-009/, /embed/, /api/, files) and percent escapes are left as they are.
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD')) { const kc = kbCaseFix(u); if (kc) return new Response(null, { status: 301, headers: { location: kc, 'cache-control': 'public, max-age=3600' } }); }
+    // n29q: Sumba (conflict of interest) is shown only in the transparency ranking: its market file and anonymous project pages point there
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/sumba|p\/sum-\d{1,4})\/?$/i.test(u.pathname)) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1]; return new Response(null, { status: 301, headers: { location: (lg ? '/' + lg : '') + '/rankings/transparency/sumba/', 'cache-control': 'public, max-age=3600' } }); }
     // kolaboro.com (seoT, batch 8): HEAD answers exactly like GET (status and headers, no body) for every page, incl. worker-rendered ones
     if (host === 'kolaboro.com' && env && env.KB_WKEY) { if (!kb) kb = await import('./kolaboro.js'); kb.useEnv(env); }   // sec13: worker key from the Cloudflare secret when Carlos sets it
     if (host === 'kolaboro.com' && req.method === 'HEAD' && !/^\/(api|mcp)(\/|$)/.test(u.pathname)) { const g = await this.fetch(new Request(req.url, { method: 'GET', headers: req.headers }), env, ctx); return new Response(null, { status: g.status, statusText: g.statusText, headers: g.headers }); }
@@ -624,8 +626,19 @@ export default {
       if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { headers: req.headers }), env, ctx, su, host); };
       const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
-      let r = await h29Inject(req, u, env, await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner)));
-      if (r && r.status === 200 && req.method === 'GET' && /^\/(?:countries|rankings)\/(?:[a-z0-9-]{2,60}\/)?$/.test(u.pathname) && /text\/html/.test(r.headers.get('content-type') || '')) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); const al = await k29i.crAlternates(env, u.pathname); if (al) r = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(al, { html: true }); } }).transform(r); } catch (e) {} }   // n29i: hreflang to the language versions
+      // n29q: the English country pages took about 7 s on a cold build (and one 524 on /countries/uae/, 14 Nov 2026). They are now kept
+      // at the edge for a day and served at once; after 15 minutes the next view rebuilds them in the background, like /numbers/.
+      // The copy is taken before kbHeaders, so every response still gets its own CSP nonce.
+      const make = async () => {
+        let r = await h29Inject(req, u, env, await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner)));
+        if (r && r.status === 200 && req.method === 'GET' && /^\/(?:countries|rankings)\/(?:[a-z0-9-]{2,60}\/)?$/.test(u.pathname) && /text\/html/.test(r.headers.get('content-type') || '')) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); const al = await k29i.crAlternates(env, u.pathname); if (al) r = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(al, { html: true }); } }).transform(r); } catch (e) {} }   // n29i: hreflang to the language versions
+        return r;
+      };
+      const kck = !u.search && typeof caches !== 'undefined' && /^\/countries\/(?:[a-z0-9-]{2,60}\/(?:[a-z-]{3,30}\/)?)?$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/v1' + u.pathname) : null;
+      const keep = async (r0) => { if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0; const t = await r0.text(), h = new Headers(r0.headers); h.delete('content-length'); h.set('x-built', String(Date.now())); h.set('cache-control', 'public, max-age=86400'); try { await caches.default.put(kck, new Response(t, { headers: h })); } catch (e) {} const h2 = new Headers(r0.headers); h2.delete('content-length'); return new Response(t, { status: 200, headers: h2 }); };
+      let r = null;
+      if (kck) { try { const hit = await caches.default.match(kck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0); if (age > 900e3 && ctx && ctx.waitUntil) ctx.waitUntil(make().then(keep).catch(() => {})); const h = new Headers(hit.headers); h.delete('x-built'); h.set('x-seo-cache', age > 900e3 ? 'stale' : 'hit'); r = new Response(hit.body, { status: 200, headers: h }); } } catch (e) { r = null; } }
+      if (!r) r = kck ? await keep(await make()) : await make();
       return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u, req);

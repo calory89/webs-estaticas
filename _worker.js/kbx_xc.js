@@ -266,7 +266,7 @@ function embedDoc() {
     '<meta name="description" content="One script tag adds an X-ray this project button to any listing page. No cookies, no visitor tracking, only a click count."><link rel="canonical" href="https://kolaboro.com/embed/xray/">' +
     '<link rel="stylesheet" href="/k/site.css"><style>body{background:var(--paper,#F6F6F3);color:var(--ink,#17212B);margin:0}.xcw{max-width:760px;margin:0 auto;padding:32px 16px 60px}.xcc{background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:16px;padding:22px}' +
     '.xcb{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:var(--hivis,#FF5B14);color:#111;font:inherit;font-weight:800;cursor:pointer}.xcb:focus-visible{outline:3px solid #2563EB;outline-offset:2px}.muted{color:var(--muted,#59626B)}code{overflow-wrap:anywhere}.xcc h2{margin:22px 0 6px}.xcc p{margin:8px 0}</style></head>' +
-    '<body><main class="xcw"><p><a href="/">kolaboro</a> / <a href="/docs/api">API</a> / X-ray button</p><div class="xcc">' + inner + '</div></main>' +
+    '<body><main class="xcw"><p><a href="/">kolaboro</a> / <a href="/docs/api/">API</a> / X-ray button</p><div class="xcc">' + inner + '</div></main>' +
     '<script>document.getElementById("cp").onclick=function(){var t=' + JSON.stringify(snip).replace(/</g, '\\u003c') + ',b=this;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select the text above";});};</script>' +
     '<script src="/embed/xray.js" async></script></body></html>';
   return new Response(h, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-content-type-options': 'nosniff' } });
