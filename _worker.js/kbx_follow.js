@@ -271,13 +271,13 @@ async function feed(req, N, ix, kind, slug, fmt) {
   const tag = e => 'tag:kolaboro.com,2026:' + e.key;
   const hh = { 'last-modified': new Date(upd).toUTCString() };
   if (fmt === 'json') {
-    const o = { version: 'https://jsonfeed.org/version/1.1', title, home_page_url: home, feed_url: self, description: about, language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }], icon: ORIGIN + '/icon-512.png', favicon: ORIGIN + '/k/favicon.svg',
+    const o = { version: 'https://jsonfeed.org/version/1.1', title, home_page_url: home, feed_url: self, description: about, language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }], icon: ORIGIN + '/k/favicon.svg', favicon: ORIGIN + '/k/favicon.svg',
       _kolaboro: { license: 'CC BY 4.0', api: ORIGIN + '/api/v1/' + kind + '/' + slug, watch_by_email: kind === 'projects' ? home + '#watch' : null },
       items: E.map(e => ({ id: tag(e), url: e.url, external_url: e.src || undefined, title: e.title, content_text: e.text + (e.src ? ' Source: ' + e.src : ''), content_html: '<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : ''), date_published: e.d })) };
     return out(req, JSON.stringify(o), 'application/feed+json; charset=utf-8', hh, 1800);
   }
   const x = '<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>' + xe(title) + '</title><subtitle>' + xe(about) + '</subtitle><id>' + xe(home) + '</id>' +
-    '<link rel="self" type="application/atom+xml" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + xe(home) + '"/><updated>' + upd + '</updated><author><name>Kolaboro</name><uri>' + ORIGIN + '/</uri></author><rights>CC BY 4.0</rights><icon>' + ORIGIN + '/icon-512.png</icon>' +
+    '<link rel="self" type="application/atom+xml" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + xe(home) + '"/><updated>' + upd + '</updated><author><name>Kolaboro</name><uri>' + ORIGIN + '/</uri></author><rights>CC BY 4.0</rights><icon>' + ORIGIN + '/k/favicon.svg</icon>' +
     E.map(e => '<entry><title>' + xe(e.title) + '</title><id>' + xe(tag(e)) + '</id><link rel="alternate" type="text/html" href="' + xe(e.url) + '"/>' + (e.src ? '<link rel="related" href="' + xe(e.src) + '"/>' : '') + '<updated>' + e.d + '</updated><published>' + e.d + '</published>' +
       '<summary type="text">' + xe(e.text) + '</summary><content type="html">' + xe('<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : '')) + '</content></entry>').join('') + '</feed>';
   return out(req, x, 'application/atom+xml; charset=utf-8', hh, 1800);

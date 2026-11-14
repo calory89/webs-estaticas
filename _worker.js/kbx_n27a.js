@@ -110,7 +110,8 @@ async function corrections(env, shellFetch) {
   // the HTML list below is read only if that file cannot be loaded
   try {
     const r = env && env.ASSETS ? await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/corrections.json')) : null;
-    if (r && r.ok) { const C = await r.json(); return (C.entries || []).map(e => ({ date: e.date || null, project_id: e.id || null, link: e.id ? ORIGIN + '/p/?id=' + encodeURIComponent(e.id) : null,
+    let SL = {}; try { const ix = await N.data(env); for (const [id, x] of ix.byId) SL[id] = x.s; } catch (e) { SL = {}; }   // n28a: link the project page, not the /p/?id= redirect
+    if (r && r.ok) { const C = await r.json(); return (C.entries || []).map(e => ({ date: e.date || null, project_id: e.id || null, link: e.id ? (SL[e.id] ? ORIGIN + '/projects/' + SL[e.id] + '/' : ORIGIN + '/p/' + encodeURIComponent(e.id) + '/') : null,
       correction: e.kind === 'pin' ? 'Map pin ' + e.after + '. ' + e.why : e.what + ': ' + (e.before ? 'changed from ' + e.before + ' to ' + e.after : 'changed to ' + e.after) + '. ' + e.why })); }
   } catch (e) {}
   let html = '';

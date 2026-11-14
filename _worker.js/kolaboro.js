@@ -1478,11 +1478,14 @@ async function openRoutes(req, u, path, L, env) {
     const mk = (u.searchParams.get('market') || '').toLowerCase();
     const pool = cases.filter(c => !mk || c.market.toLowerCase() === mk || (c.country || '').toLowerCase() === mk);
     const items = [];
+    // n28a: items link the project page itself; /p/?id= answered a 301 for every item (Sumba ids keep /p/<id>/, they have no named page)
+    let SL = {}; try { const ix = await (await import('./kbx_named.js')).data(env); for (const [id, x] of ix.byId) SL[id] = x.s; } catch (e) { SL = {}; }
+    const pU = id => SL[id] ? 'https://kolaboro.com/projects/' + SL[id] + '/' : 'https://kolaboro.com/p/' + encodeURIComponent(id) + '/';
     pool.forEach(c => {
-      (c.history || []).forEach((h, i) => items.push({ id: c.id + '-h' + h.d + '-' + i, date: h.d, title: c.id + ' (' + c.market + '): ' + h.f + ' changed from ' + (h.from === null ? 'not stated' : h.from) + ' to ' + (h.to === null ? 'not stated' : h.to), url: 'https://kolaboro.com/p/?id=' + c.id }));
-      if (c.overdue >= 6) items.push({ id: c.id + '-od-' + c.overdue, date: d.updated, title: c.id + ' (' + c.market + '): ' + c.overdue + ' months past the promised handover', url: 'https://kolaboro.com/p/?id=' + c.id });
-      if (c.sat && c.sat.status === 'no visible change' && c.stage === 'under construction') items.push({ id: c.id + '-sat-' + c.sat.date, date: c.sat.date, title: c.id + ' (' + c.market + '): sold as under construction, almost no change visible from space in a year', url: 'https://kolaboro.com/p/?id=' + c.id });
-      if (c.register && c.register.status !== 'approved') items.push({ id: c.id + '-reg-' + c.register.checked, date: c.register.checked, title: c.id + ' (' + c.market + '): ' + c.register.register + ', ' + c.register.item + ': ' + c.register.status, url: 'https://kolaboro.com/p/?id=' + c.id });
+      (c.history || []).forEach((h, i) => items.push({ id: c.id + '-h' + h.d + '-' + i, date: h.d, title: c.id + ' (' + c.market + '): ' + h.f + ' changed from ' + (h.from === null ? 'not stated' : h.from) + ' to ' + (h.to === null ? 'not stated' : h.to), url: pU(c.id) }));
+      if (c.overdue >= 6) items.push({ id: c.id + '-od-' + c.overdue, date: d.updated, title: c.id + ' (' + c.market + '): ' + c.overdue + ' months past the promised handover', url: pU(c.id) });
+      if (c.sat && c.sat.status === 'no visible change' && c.stage === 'under construction') items.push({ id: c.id + '-sat-' + c.sat.date, date: c.sat.date, title: c.id + ' (' + c.market + '): sold as under construction, almost no change visible from space in a year', url: pU(c.id) });
+      if (c.register && c.register.status !== 'approved') items.push({ id: c.id + '-reg-' + c.register.checked, date: c.register.checked, title: c.id + ' (' + c.market + '): ' + c.register.register + ', ' + c.register.item + ': ' + c.register.status, url: pU(c.id) });
     });
     const alertsOnly = path === '/feed/alerts.xml';
     const list = items.filter(x => !alertsOnly || /past the promised|from space|not approved|not in the approved/.test(x.title)).sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
