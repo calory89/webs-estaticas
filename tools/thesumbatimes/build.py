@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust
-MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs
+MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -399,7 +399,7 @@ else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://the
 
 FOOT = [("/{l}/plan/", {"en": "Plan your trip", "es": "Planifica tu viaje", "id": "Rencanakan perjalanan"}), ("/{l}/flights/", {"en": "Flights to Sumba", "es": "Vuelos a Sumba", "id": "Penerbangan ke Sumba"}),
         ("/{l}/travel-status/", {"en": "Travel status today", "es": "Estado del viaje hoy", "id": "Kondisi perjalanan hari ini"}), ("/{l}/events/", {"en": "Events calendar", "es": "Calendario de eventos", "id": "Kalender acara"}),
-        ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
+        ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/best/", {"en": "Best of Sumba", "es": "Lo mejor de Sumba", "id": "Terbaik di Sumba"}), ("/{l}/faq/", {"en": "FAQ", "es": "Preguntas frecuentes", "id": "Tanya jawab"}), ("/{l}/glossary/", {"en": "Glossary", "es": "Glosario", "id": "Glosarium"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
         ("/{l}/press/", {"en": "Press", "es": "Prensa", "id": "Pers"}), ("/{l}/sitemap/", {"en": "Site map", "es": "Mapa del sitio", "id": "Peta situs"})]
 _FJS = {}
 def footer_scripts(l):
@@ -690,7 +690,7 @@ def article_page(a, l):
     if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
     s = head(l, (c.get("seo_title") or c["title"]) + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
-    b, toc = with_toc(ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l)
+    b, toc = with_toc(pages_hubs.glossary_links(globals(), ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])}.</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l, a)
@@ -702,7 +702,7 @@ def article_page(a, l):
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}{seo_extra.reviewed_html(globals(), a, l)}<span>{mins(a,l)} {x["min"]}</span></div>
 <div class="rtb">{reader_tools.listen_button(l)}{reader_tools.save_button(l)}</div>
-{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
+{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{pages_hubs.nearby_html(globals(), a, l)}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 {prev_next(a, l)}<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
     write(tpl[l], s)
