@@ -193,3 +193,27 @@ Pedido de Carlos: «revisa fallos que haya, hazla mucho mas rapida, hazla mas us
   `qa_r22/mk_manifest.py` (que cambio respecto a lo publicado, en trozos .tgz).
 
 **Publicado:** `pub/_wp` 37207f7 (R22) y 604f637 (R22b, la marca triple). 8.613 + 8.560 ficheros.
+
+
+## Ronda 23 (14-nov-2026): fallos
+
+Pedido de Carlos: «arregla fallos que veas en SupportNear» (y una lista de 100 mejoras por prioridad, en el doc
+«SupportNear: 100 mejoras por prioridad» de Claude Docs).
+
+**Arreglado** (`qa_r23/patch_r23a_app.py` + cambios a mano en `seo_common.py`, `page.css.txt`, `city_pages.py`):
+- Mapa: `S.viewWait` + `firstView()`: no se piden teselas hasta la primera vista de verdad. Con `?city=` o `#p=`
+  se sueltan al terminar el salto (`moveend`) o a los 1,5 s. `showTiles()` y `setLite()` respetan `S.viewWait`.
+- `ohHuman()`: el texto entre comillas se guarda aparte y vuelve tal cual; la palabra suelta «open» se quita.
+- `shutForGood()` en `addPlaces()`: fuera los sitios con horario «closed»/«off» sin ninguna hora.
+- `partners@supportnear.com` (no existe) -> `hello@supportnear.com` en los 20 idiomas.
+- `page.css.txt`: en oscuro, `.btn--p` con letra `#04221B` (contraste 8,6; era 1,96).
+- `seo_common.add_main()`: si la caja lleva `<header>`/`<footer>`, `<main>` va entre los dos.
+- `/t/` con `<h1>`; `/huecos` sin cabecera de tabla vacia.
+
+**Ojo al reconstruir:** `city_pages.py` pone a cada pagina la fecha de hoy si cambia su contenido (huella en
+`pages_lastmod.json`), y un cambio de CSS cuenta. En la R23 se devolvieron a mano las fechas antiguas (la de los
+datos) a las 5.941 paginas cuyo texto no cambio. `SN_BUILT` no afecta a `city_pages.py`.
+
+**Publicado:** `pub/_wp` 6b4c1c4 (5.969 ficheros, todos bajo `_s/supportnear.com`). Comprobado byte a byte en vivo
+(5.969/5.969). Pruebas en vivo sin fallos: smoke 27, features 42, R22 38, R23 41 (`tests_r23/r23.py`), CSP limpia.
+Arbol: `qa_r23/stage_r23.py` (parte de `stage_r22`, que es lo publicado en la R22b) y `qa_r23/mk_manifest.py`.

@@ -884,7 +884,7 @@ table{{width:100%;border-collapse:collapse;font-size:14.5px}} td,th{{border-bott
 <h1>Where free help is missing on the map</h1>
 <p class="lede">These {len(_gap_rows)} cities have <b>nothing</b> mapped within 10 km for at least one basic need. Often the help exists but nobody has put it on OpenStreetMap. If you know a soup kitchen, a shelter, public showers or a free clinic in one of them, add it — it will show up here, and in every other app that uses the open map.</p>
 <p><a class="btn btn--p" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">How to add a place on OpenStreetMap</a></p>
-<div class="tw"><table><tr><th>City</th><th>Country</th><th>Missing within 10 km</th><th></th></tr>{_gtab}</table></div>
+<div class="tw"><table><tr><th>City</th><th>Country</th><th>Missing within 10 km</th><th>Add it</th></tr>{_gtab}</table></div>
 <footer>SupportNear &middot; a non-profit project &middot; data from OpenStreetMap (ODbL) &middot; updated {DATEMARK}</footer>
 </div></body></html>""")
 urls.append(('https://supportnear.com/huecos', 0.5))
@@ -906,7 +906,8 @@ save('t/index.html', 'https://supportnear.com/t/',
     '<link rel="canonical" href="https://supportnear.com/t/">'
     '<meta name="description" content="Free food, shelter, showers and clothes, city by city, in plain text: under 5 KB a page, for an old phone or a connection that keeps dropping.">'
     '<style>body{font:16px/1.6 sans-serif;margin:12px;max-width:40em}h2{font-size:17px;margin:14px 0 2px}a{display:inline-block;margin:0 8px 2px 0;padding:6px 2px;min-height:32px}</style></head><body>'
-    '<p><b>SupportNear</b> - text version for old phones. Free help: food, shelter, showers, clothes, health.</p>'
+    '<h1 style="font-size:20px;margin:6px 0">SupportNear: free help by city, text only</h1>'
+    '<p>Text version for old phones. Free help: food, shelter, showers, clothes, health.</p>'
     '<p><a href="../">Open the full map</a></p>' + _li + '</body></html>')
 print('version de texto:', len(lite_idx), 'ciudades')
 

@@ -97,6 +97,22 @@ def add_main(html):
     principal; si no, se envuelve el contenido en <main>."""
     if '<main' in html or 'role="main"' in html or '<body' not in html:
         return html
+    # R23: si la caja lleva dentro la cabecera (<header>) o el pie (<footer>), la zona principal va
+    # entre los dos y no en la caja entera: un <header>/<footer> dentro de la zona principal deja de
+    # ser cabecera y pie para los lectores de pantalla (axe: landmark-*-is-top-level, 5.939 paginas).
+    m = re.search(r'<body[^>]*>\s*<div class="(?:wrap|w)"[^>]*>', html)
+    if m:
+        rest = html[m.end():]
+        fpos = rest.find('<footer')
+        hend = rest.find('</header>')
+        if fpos >= 0 or hend >= 0:
+            a = (hend + len('</header>')) if (hend >= 0 and (fpos < 0 or hend < fpos)) else 0
+            b = fpos if fpos > a else -1
+            if b < 0:
+                end = re.search(r'</div>\s*(?:<script\b[^>]*>.*?</script>\s*)*</body>', rest, re.S)
+                b = end.start() if end and end.start() > a else -1
+            if b > a:
+                return html[:m.end()] + rest[:a] + '<main>' + rest[a:b] + '</main>' + rest[b:]
     h2 = re.sub(r'(<body[^>]*>\s*<div class="(?:wrap|w)")', lambda m: m.group(1) + ' role="main"', html, count=1)
     if h2 != html:
         return h2
