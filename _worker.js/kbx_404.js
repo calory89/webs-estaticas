@@ -11,7 +11,7 @@ const LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI = new Set(['sumba']);
 // old static paths -> current page (one table; a path here must answer 200 at the target)
 const MAP = {
-  '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/countries/',
+  '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/guides/buying-off-plan/',
   '/data/visual-tests.json': '/data/quality.json', '/data/page-weight.json': '/data/quality.json',
   '/open/evals/': '/engineering/evals/',
   '/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles', '/data/benchmark/': '/data/#benchmark'
@@ -76,13 +76,19 @@ export async function page(r, u, status, env) {
   if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/' + lang + '/how-we-score/index.html')); if (s.ok && /text\/html/.test(s.headers.get('content-type') || 'text/html')) src = s; } catch (e) { src = r; }
   const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag');
   const out = new Response(src.body, { status: gone ? 410 : 404, headers: h });
-  const title = (gone ? L.g : L.t) + ' | Kolaboro';
-  let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } });
+  const title = (gone ? L.g : L.t) + ' | Kolaboro'; let seenLsw = false;
+  // n28c: every language button of a missing page leads to that language's home (the English one pointed at the missing URL itself)
+  let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
+    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } });
+  // n28c: the translated shell is read straight from the static files, so its scripts carried no nonce and the enforced CSP of this
+  // response blocked all of them (ticker, menu, search: 6 to 10 console errors per page). Stamp this response's nonce, as kbHeaders does.
+  const nm = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/);
+  if (src !== r && nm) rw = rw.on('script', { element(e) { e.setAttribute('nonce', nm[1]); } });
   if (src !== r) rw = rw
     .on('link[rel="canonical"],link[rel="alternate"][hreflang],script[type="application/ld+json"],meta[property^="og:"],meta[name^="twitter:"]', { element(e) { e.remove(); } })
     .on('meta[name="description"]', { element(e) { e.setAttribute('content', L.l); } })
     .on('meta[name="robots"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append('<meta name="robots" content="noindex">', { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } });
+    .on('style[id="lsw-css"]', { element(e) { if (seenLsw) e.remove(); seenLsw = true; } });
   return rw.transform(out);
 }

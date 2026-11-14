@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=eb77aad428', verify: '/k/verify-badge.js?v=n27u1' }, P = {};
+  var V = { palette: '/k/palette.js?v=n28c1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -401,14 +401,14 @@
   var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
   var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
   // monthly newsletter in the footer: messages in the page language, one request at a time (a double click used to send two)
-  var NWL = { en: ['Add a valid email address.', 'Subscribing…', "You're subscribed. Check your inbox once a month.", 'Could not subscribe. Check your connection and try again.'],
-    es: ['Escribe un email válido.', 'Suscribiendo…', 'Listo, estás suscrito. Te escribimos una vez al mes.', 'No se pudo suscribir. Revisa tu conexión e inténtalo de nuevo.'],
-    de: ['Bitte eine gültige E-Mail-Adresse eingeben.', 'Wird abonniert…', 'Erledigt. Sie erhalten einmal im Monat eine E-Mail.', 'Abonnieren fehlgeschlagen. Verbindung prüfen und erneut versuchen.'],
-    fr: ['Saisissez une adresse e-mail valide.', 'Inscription…', 'C’est fait. Vous recevrez un e-mail par mois.', 'Inscription impossible. Vérifiez votre connexion et réessayez.'],
-    nl: ['Vul een geldig e-mailadres in.', 'Aanmelden…', 'Gelukt. U krijgt één e-mail per maand.', 'Aanmelden mislukt. Controleer uw verbinding en probeer opnieuw.'],
-    ru: ['Введите корректный email.', 'Подписываем…', 'Готово. Мы пишем раз в месяц.', 'Не удалось подписаться. Проверьте соединение и попробуйте ещё раз.'],
-    zh: ['请输入有效的邮箱地址。', '正在订阅…', '订阅成功。我们每月发一封邮件。', '订阅失败。请检查网络后重试。'],
-    ar: ['أدخل بريدًا إلكترونيًا صحيحًا.', 'جارٍ الاشتراك…', 'تم الاشتراك. نراسلك مرة واحدة في الشهر.', 'تعذّر الاشتراك. تحقّق من اتصالك وحاول مجددًا.'] };
+  var NWL = { en: ['Add a valid email address.', 'Subscribing…', "You're on the list. Email sending is not open yet: the first note goes out when it opens, then at most one a month.", 'Could not subscribe. Check your connection and try again.'],
+    es: ['Escribe un email válido.', 'Suscribiendo…', 'Listo, estás en la lista. El envío de emails aún no está activo: la primera nota saldrá cuando se active, y después como mucho una al mes.', 'No se pudo suscribir. Revisa tu conexión e inténtalo de nuevo.'],
+    de: ['Bitte eine gültige E-Mail-Adresse eingeben.', 'Wird abonniert…', 'Erledigt, Sie stehen auf der Liste. Der E-Mail-Versand ist noch nicht aktiv: Die erste Ausgabe kommt, sobald er startet, danach höchstens eine pro Monat.', 'Abonnieren fehlgeschlagen. Verbindung prüfen und erneut versuchen.'],
+    fr: ['Saisissez une adresse e-mail valide.', 'Inscription…', 'C’est fait, vous êtes inscrit. L’envoi des e-mails n’est pas encore ouvert : la première note partira à son ouverture, puis une par mois au plus.', 'Inscription impossible. Vérifiez votre connexion et réessayez.'],
+    nl: ['Vul een geldig e-mailadres in.', 'Aanmelden…', 'Gelukt, u staat op de lijst. Het verzenden van e-mail is nog niet gestart: de eerste notitie komt zodra dat zo is, daarna hooguit één per maand.', 'Aanmelden mislukt. Controleer uw verbinding en probeer opnieuw.'],
+    ru: ['Введите корректный email.', 'Подписываем…', 'Готово, вы в списке. Рассылка писем ещё не запущена: первое письмо придёт после запуска, дальше не чаще раза в месяц.', 'Не удалось подписаться. Проверьте соединение и попробуйте ещё раз.'],
+    zh: ['请输入有效的邮箱地址。', '正在订阅…', '已加入名单。邮件发送功能尚未开通：开通后发出第一封，之后每月最多一封。', '订阅失败。请检查网络后重试。'],
+    ar: ['أدخل بريدًا إلكترونيًا صحيحًا.', 'جارٍ الاشتراك…', 'تمت إضافتك إلى القائمة. إرسال البريد لم يبدأ بعد: تصلك أول رسالة عند بدئه، ثم رسالة واحدة في الشهر على الأكثر.', 'تعذّر الاشتراك. تحقّق من اتصالك وحاول مجددًا.'] };
   document.querySelectorAll('form[data-news]').forEach(function (f) {
     var lg = (document.documentElement.lang || 'en').slice(0, 2), NM = NWL[lg] || NWL.en, busy = false;
     f.addEventListener('submit', function (e) {
@@ -673,7 +673,14 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     '.kx-sh-s{min-height:1.3em;margin-top:8px;font-size:.88rem;color:var(--ok);font-weight:600}' +
     '.kx-off{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:18px;font-size:.9rem;color:var(--muted)}.kx-off .btn{padding:.6rem 1.05rem;font-size:.9rem}' +
     '.kx-offbar{position:sticky;top:0;z-index:25;background:var(--t-amb-bg,#FFF0C7);color:var(--t-amb,#7A5300);font-size:.9rem;font-weight:600;text-align:center;padding:8px 16px}' +
-    '.kx-share-link{margin-inline-start:8px}';
+    '.kx-share-link{margin-inline-start:8px}' +
+    // n28c: dark mode. The "fictional project" notice on the home hero card kept a light background but its text turned light too
+    // (unreadable), and the three home paths kept a white card behind light text.
+    ':root[data-theme=dark] .insp-fic{background:#FFF1C9!important;color:#17212B!important}' +
+    ':root[data-theme=dark] .h3p a{background:var(--card,#1B242D);border-color:var(--line,rgba(255,255,255,.18));color:var(--ink,#F2F4F5)}:root[data-theme=dark] .h3p small{opacity:.85}' +
+    '.share a,.share button{min-width:44px;justify-content:center}' +
+    // n28c: Arabic home, "how it works" on phones: the dashed timeline stayed on the left and ran through the right-aligned text
+    '@media (max-width:700px){[dir=rtl] .track::before{left:auto!important;right:19px!important}}';
   D.head.appendChild(css);
 
   /* ---------- dark mode: the inline head snippet sets data-theme before the first paint; this adds the toggle ---------- */

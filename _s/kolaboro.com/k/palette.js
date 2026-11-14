@@ -83,21 +83,23 @@
       st: { 'under construction': 'in aanbouw', 'off-plan': 'off-plan', completed: 'opgeleverd' }, none: function (q) { return 'Niets gevonden voor ‘' + q + '’. Probeer een markt (Bali, Dubai), een project-id (BALI-014) of een pagina (prijzen).'; }, ld: 'Projectindex laden…',
       dr: ['Desk review van ', 'Tool · leest de pagina en somt op wat ze belooft en weglaat'], ft: ['projecten', 'markten', 'pagina’s', 'pagina’s (projecten laden)', 'gezocht in', 'ms in uw browser', 'offline opgeslagen', 'indexhandtekening geverifieerd', 'indexhandtekening'], kb: ['bewegen', 'openen', 'sluiten'] },
     ru: { pg: ['Проверить сайт проекта', 'База строящихся проектов', 'Отслеживаемые проекты', 'Цены', 'Как работает Trust Score', 'Чек-лист перед подписанием', 'О Kolaboro', 'Главная'], ty: { Tool: 'Инструмент', Page: 'Страница' },
-      ph: 'Поиск проектов, рынков, страниц…', al: 'Поиск проектов, рынков и страниц', dl: 'Поиск по Kolaboro', cl: 'Закрыть поиск', rs: 'Результаты', mk: 'Рынок', pj: ['проект', 'проектов'], ck: 'из 6 проверок открыто', pr: ['публичная проблема', 'публичных проблем'], fl: ['сигнал', 'сигналов'],
-      st: { 'under construction': 'строится', 'off-plan': 'на этапе котлована', completed: 'сдан' }, none: function (q) { return 'Ничего не найдено по запросу «' + q + '». Попробуйте рынок (Bali, Dubai), ID проекта (BALI-014) или страницу (цены).'; }, ld: 'Загружаем индекс проектов…',
+      ph: 'Поиск проектов, рынков, страниц…', al: 'Поиск проектов, рынков и страниц', dl: 'Поиск по Kolaboro', cl: 'Закрыть поиск', rs: 'Результаты', mk: 'Рынок', pj: ['проект', 'проекта', 'проектов'], ck: 'из 6 проверок открыто', pr: ['публичная проблема', 'публичные проблемы', 'публичных проблем'], fl: ['сигнал', 'сигнала', 'сигналов'], fw: [['проект', 'проекта', 'проектов'], ['рынок', 'рынка', 'рынков'], ['страница', 'страницы', 'страниц']],
+      st: { 'under construction': 'строится', 'off-plan': 'на этапе котлована', completed: 'сдан' }, none: function (q) { return 'Ничего не найдено по запросу «' + q + '». Попробуйте рынок (Бали, Дубай), ID проекта (BALI-014) или страницу (цены).'; }, ld: 'Загружаем индекс проектов…',
       dr: ['Проверка сайта ', 'Инструмент · читает страницу и показывает, что она обещает и о чём молчит'], ft: ['проектов', 'рынков', 'страниц', 'страниц (проекты загружаются)', 'поиск за', 'мс в вашем браузере', 'сохранено для работы офлайн', 'подпись индекса проверена', 'подпись индекса'], kb: ['перейти', 'открыть', 'закрыть'] },
     zh: { pg: ['核查项目网站', '期房项目数据库', '跟踪中的案例', '价格', 'Trust Score 如何计算', '签约前清单', '关于 Kolaboro', '首页'], ty: { Tool: '工具', Page: '页面' },
       ph: '搜索项目、市场、页面…', al: '搜索项目、市场和页面', dl: '搜索 Kolaboro', cl: '关闭搜索', rs: '结果', mk: '市场', pj: ['个项目', '个项目'], ck: '/6 项核查公开', pr: ['个公开问题', '个公开问题'], fl: ['个警示', '个警示'],
-      st: { 'under construction': '在建', 'off-plan': '期房', completed: '已竣工' }, none: function (q) { return '没有与“' + q + '”匹配的结果。试试市场（Bali、Dubai）、项目编号（BALI-014）或页面（价格）。'; }, ld: '正在加载项目索引…',
+      st: { 'under construction': '在建', 'off-plan': '期房', completed: '已竣工' }, none: function (q) { return '没有与“' + q + '”匹配的结果。试试市场（巴厘岛、迪拜）、项目编号（BALI-014）或页面（价格）。'; }, ld: '正在加载项目索引…',
       dr: ['对以下网站做案头审查：', '工具 · 读取页面，列出它承诺了什么、遗漏了什么'], ft: ['个项目', '个市场', '个页面', '个页面（项目加载中）', '搜索用时', '毫秒，在您的浏览器中完成', '已保存供离线使用', '索引签名已验证', '索引签名'], kb: ['移动', '打开', '关闭'] },
     ar: { pg: ['افحص موقع مشروع', 'قاعدة بيانات المشاريع على الخارطة', 'الحالات قيد المتابعة', 'الأسعار', 'كيف يعمل Trust Score', 'قائمة ما قبل التوقيع', 'عن Kolaboro', 'الرئيسية'], ty: { Tool: 'أداة', Page: 'صفحة' },
       ph: 'ابحث في المشاريع والأسواق والصفحات…', al: 'ابحث في المشاريع والأسواق والصفحات', dl: 'البحث في Kolaboro', cl: 'إغلاق البحث', rs: 'النتائج', mk: 'سوق', pj: ['مشروع', 'مشاريع'], ck: 'من 6 فحوص منشورة', pr: ['مشكلة علنية', 'مشكلات علنية'], fl: ['تنبيه', 'تنبيهات'],
-      st: { 'under construction': 'قيد الإنشاء', 'off-plan': 'على الخارطة', completed: 'مكتمل' }, none: function (q) { return 'لا توجد نتائج لـ «' + q + '». جرّب سوقًا (Bali، Dubai) أو رقم مشروع (BALI-014) أو صفحة (الأسعار).'; }, ld: 'جارٍ تحميل فهرس المشاريع…',
+      st: { 'under construction': 'قيد الإنشاء', 'off-plan': 'على الخارطة', completed: 'مكتمل' }, none: function (q) { return 'لا توجد نتائج لـ «' + q + '». جرّب سوقًا (بالي، دبي) أو رقم مشروع (BALI-014) أو صفحة (الأسعار).'; }, ld: 'جارٍ تحميل فهرس المشاريع…',
       dr: ['مراجعة مكتبية لـ ', 'أداة · تقرأ الصفحة وتسرد ما تعد به وما تغفله'], ft: ['مشروع', 'سوق', 'صفحات', 'صفحات (المشاريع قيد التحميل)', 'البحث استغرق', 'مللي ثانية في متصفحك', 'محفوظ للاستخدام دون اتصال', 'تم التحقق من توقيع الفهرس', 'توقيع الفهرس'], kb: ['تنقّل', 'فتح', 'إغلاق'] }
   }[LG] || null;
   if (TL) PAGES = [['/check', 'desk review ai analyze url link scan free', 'Tool', 0], ['/database', 'all projects table filter download data', 'Page', 1], ['/cases', 'projects tracked list', 'Page', 2], ['/pricing', 'price cost fee 490 99 monitoring check', 'Page', 3],
     ['/how-we-score', 'scoring method score six checks methodology', 'Page', 4], ['/checklist', 'checklist before sign contract', 'Page', 5], ['/about', 'about team founders', 'Page', 6], ['', 'home start', 'Page', 7]].map(function (p) { return [TL.pg[p[3]], '/' + LG + p[0] + '/', p[1] + ' ' + norm(TL.pg[p[3]]), TL.ty[p[2]]]; });
-  var pn = function (n, f) { return n === 1 ? f[0] : f[1]; };
+  // n28c: plural forms by the page language (Russian has three: 1 проект, 2 проекта, 5 проектов)
+  var PR = null; try { PR = new Intl.PluralRules(LG); } catch (e) {}
+  var pn = function (n, f) { if (f.length < 3 || !PR) return n === 1 ? f[0] : f[1]; var c = PR.select(n); return c === 'one' ? f[0] : c === 'few' ? f[1] : f[2]; };
   function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim(); }
   var items = [], ready = false, meta = { n: 0, markets: 0, updated: '', offline: false, verified: null };
   PAGES.forEach(function (p) { items.push({ t: 'page', title: p[0], sub: p[3] + ' · kolaboro.com' + p[1], href: p[1], h: norm(p[0] + ' ' + p[2] + ' ' + p[1].replace(/[\/-]/g, ' ')), w: 3 }); });
@@ -115,13 +117,13 @@
   // 6 Nov 2026 (b9a): named projects and developers. /api/v1/search-index gives the public name, developer and named page of every
   // project except the anonymous ones (Sumba, conflict of interest); project rows get their name and open the named page in the page language.
   var NX = null, NLS = 'kb-sx-named-v1', NL = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(LG) >= 0 ? '/' + LG : '';
-  var DVL = { en: ['Developer', 'project', 'projects'], es: ['Promotora', 'proyecto', 'proyectos'], de: ['Bauträger', 'Projekt', 'Projekte'], fr: ['Promoteur', 'projet', 'projets'], nl: ['Ontwikkelaar', 'project', 'projecten'], ru: ['Застройщик', 'проект', 'проектов'], zh: ['开发商', '个项目', '个项目'], ar: ['مطوّر', 'مشروع', 'مشاريع'] }[LG] || ['Developer', 'project', 'projects'];
+  var DVL = { en: ['Developer', 'project', 'projects'], es: ['Promotora', 'proyecto', 'proyectos'], de: ['Bauträger', 'Projekt', 'Projekte'], fr: ['Promoteur', 'projet', 'projets'], nl: ['Ontwikkelaar', 'project', 'projecten'], ru: ['Застройщик', ['проект', 'проекта', 'проектов']], zh: ['开发商', '个项目', '个项目'], ar: ['مطوّر', 'مشروع', 'مشاريع'] }[LG] || ['Developer', 'project', 'projects'];
   function named(nx) {
     var by = {}; (nx.p || []).forEach(function (p) { by[p[2]] = p; });
     for (var i = pageCount; i < items.length; i++) { var it = items[i];
       if (it.t === 'project' && !it.nm && by[it.title]) { var p = by[it.title]; it.nm = 1; it.id = it.title; it.sub = it.title + ' · ' + (p[3] ? p[3] + ' · ' : '') + it.sub; it.h += ' ' + norm(p[1] + ' ' + p[3]); it.title = p[1]; it.href = NL + '/projects/' + p[0] + '/'; it.w = 2; }
       if (it.t === 'dev') { items.length = i; break; } }
-    (nx.d || []).forEach(function (d) { items.push({ t: 'dev', title: d[1], sub: DVL[0] + ' · ' + d[2] + (LG === 'zh' ? '' : ' ') + (d[2] === 1 ? DVL[1] : DVL[2]) + (d[3] ? ' · ' + d[3] : ''), href: NL + '/developers/' + d[0] + '/', h: norm(d[1] + ' developer promotora ' + d[3]), w: 2 }); });
+    (nx.d || []).forEach(function (d) { items.push({ t: 'dev', title: d[1], sub: DVL[0] + ' · ' + d[2] + (LG === 'zh' ? '' : ' ') + (Array.isArray(DVL[1]) ? pn(d[2], DVL[1]) : d[2] === 1 ? DVL[1] : DVL[2]) + (d[3] ? ' · ' + (TL ? String(d[3]).split(', ').map(pl).join(LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') : d[3]) : ''), href: NL + '/developers/' + d[0] + '/', h: norm(d[1] + ' developer promotora ' + d[3]), w: 2 }); });
     meta.devs = (nx.d || []).length;
   }
   function loadNamed() {
@@ -191,14 +193,17 @@
     '.kxp-e{padding:22px 16px;color:#59626B;font-size:.92rem}' +
     '.kxp-f{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;padding:9px 14px;border-top:1px solid rgba(23,33,43,.12);font-size:.74rem;color:#59626B;background:#FAFAF8}.kxp-f kbd{font:600 .7rem ui-monospace,Menlo,monospace;border:1px solid rgba(23,33,43,.2);border-bottom-width:2px;border-radius:4px;padding:0 4px;background:#fff}' +
     '[dir=rtl] .kxp-l li[aria-selected=true]{box-shadow:inset -3px 0 0 #FF5B14}' +
-    '@media (max-width:600px){.kxp{padding:0;align-items:stretch}.kxp-b{max-height:none;height:100%;border-radius:0}.kxp-f .kb{display:none}}';
+    '@media (max-width:600px){.kxp{padding:0;align-items:stretch}.kxp-b{max-height:none;height:100%;border-radius:0}.kxp-f .kb{display:none}}' +
+    '@media (max-width:600px),(pointer:coarse){.kxp-x{min-width:44px;min-height:44px;font-size:0;line-height:0;border-radius:10px}.kxp-x::before{content:"\\00d7";font-size:1.6rem;line-height:1;font-weight:500}}';
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function hl(text, q) {
     var e = esc(text), qs = norm(q).split(' ').filter(function (x) { return x.length > 1; });
     qs.forEach(function (w) { var k = norm(text).indexOf(w); if (k >= 0 && norm(text).length === text.length) { var raw = text.substr(k, w.length); e = e.replace(esc(raw), '<mark>' + esc(raw) + '</mark>'); } });
     return e;
   }
-  var IC = { page: 'PG', project: 'ID', market: 'MK', action: 'GO', dev: 'DV' };
+  // n28c: the type badges were English letters (PG, ID, MK, GO, DV) in every language; drawn icons read the same everywhere
+  var SV = function (d) { return '<svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="' + d + '"/></svg>'; };
+  var IC = { page: SV('M5 2.5h7l3 3v12H5zM12 2.5v3h3M8 10h5M8 13.5h5'), project: SV('M3 17.5h14M5 17.5V8l5-4 5 4v9.5M8.5 17.5v-4h3v4'), market: SV('M10 18s-5.5-5-5.5-9.5a5.5 5.5 0 0 1 11 0C15.5 13 10 18 10 18zM10 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'), action: SV('M4 10h11M11 5.5 15.5 10 11 14.5'), dev: SV('M3 17.5h14M4.5 17.5V6h6v11.5M10.5 9.5h5v8M7 9h1.5M7 12h1.5M13 12.5h.5') };
   function render() {
     var q = input.value, r = search(q); last = r; active = 0;
     if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? (TL ? esc(TL.none(q)) : 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).') : (TL ? TL.ld : 'Loading the project index…')) + '</li>'; input.setAttribute('aria-activedescendant', ''); }
@@ -211,7 +216,7 @@
     if (!footEl) return;
     if (TL) { var F = TL.ft, nloc = LG === 'ar' || LG === 'zh' ? 'en' : LG, vv = meta.verified === 'ok' ? ' · ' + F[7] : meta.verified ? ' · ' + F[8] + ': ' + meta.verified : '';
       var cm = LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ';
-      footEl.innerHTML = '<span>' + (ready ? meta.n.toLocaleString(nloc) + ' ' + F[0] + cm + meta.markets + ' ' + F[1] + cm + PAGES.length + ' ' + F[2] : PAGES.length + ' ' + F[3]) + ' · ' + F[4] + ' ' + (last.ms != null ? last.ms.toLocaleString(nloc, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '0') + ' ' + F[5] + (meta.offline ? ' · ' + F[6] : '') + vv + '</span><span class="kb"><kbd>↑</kbd> <kbd>↓</kbd> ' + TL.kb[0] + ' · <kbd>Enter</kbd> ' + TL.kb[1] + ' · <kbd>Esc</kbd> ' + TL.kb[2] + '</span>'; return; }
+      footEl.innerHTML = '<span>' + (ready ? meta.n.toLocaleString(nloc) + ' ' + (TL.fw ? pn(meta.n, TL.fw[0]) : F[0]) + cm + meta.markets + ' ' + (TL.fw ? pn(meta.markets, TL.fw[1]) : F[1]) + cm + PAGES.length + ' ' + (TL.fw ? pn(PAGES.length, TL.fw[2]) : F[2]) : PAGES.length + ' ' + F[3]) + ' · ' + F[4] + ' ' + (last.ms != null ? last.ms.toLocaleString(nloc, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '0') + ' ' + F[5] + (meta.offline ? ' · ' + F[6] : '') + vv + '</span><span class="kb"><kbd>↑</kbd> <kbd>↓</kbd> ' + TL.kb[0] + ' · <kbd>Enter</kbd> ' + TL.kb[1] + ' · <kbd>Esc</kbd> ' + TL.kb[2] + '</span>'; return; }
     var v = meta.verified === 'ok' ? ' · index signature verified' : meta.verified && meta.verified !== 'ok' ? ' · index signature: ' + meta.verified : '';
     footEl.innerHTML = '<span>' + (ready ? meta.n.toLocaleString('en') + ' projects, ' + meta.markets + ' markets, ' + PAGES.length + ' pages' : PAGES.length + ' pages (projects loading)') + ' · searched in ' + (last.ms != null ? last.ms.toFixed(1) : '0') + ' ms in your browser' + (meta.offline ? ' · saved for offline use' : '') + v + '</span><span class="kb"><kbd>↑</kbd> <kbd>↓</kbd> move · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close</span>';
   }

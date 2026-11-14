@@ -66,7 +66,7 @@
     '.kvb-wait i{background:none;border:2px solid #AEB6BE;border-top-color:transparent;animation:kvbspin .9s linear infinite;box-sizing:border-box}@keyframes kvbspin{to{transform:rotate(360deg)}}' +
     '@media (prefers-reduced-motion:reduce){.kvb-wait i{animation:none}}' +
     '.kvb-p{position:absolute;z-index:40;top:calc(100% + 6px);left:0;width:min(340px,calc(100vw - 32px));padding:12px 14px;border-radius:12px;background:#fff;color:#17212B;border:1px solid rgba(23,33,43,.16);box-shadow:0 12px 30px rgba(23,33,43,.18);font:500 .8rem/1.45 Archivo,system-ui,sans-serif;white-space:normal;text-align:left}' +
-    '.kvb-p code{font:500 .72rem/1.4 ui-monospace,Menlo,monospace;word-break:break-all;background:#F2F3F1;padding:1px 4px;border-radius:4px}.kvb-p a{color:#B83A05;font-weight:700}' +
+    '.kvb-p code{font:500 .72rem/1.4 ui-monospace,Menlo,monospace;word-break:break-all;background:#F2F3F1;padding:1px 4px;border-radius:4px}.kvb-p a{color:#B83A05;font-weight:700;display:inline-block;padding:12px 0 4px;min-height:44px;box-sizing:border-box}' +
     '.kvb-r .kvb-p{left:auto;right:0}';
   function css() { if (document.getElementById('kvb-css')) return; var s = document.createElement('style'); s.id = 'kvb-css'; s.textContent = CSS; document.head.appendChild(s); }
   var LBL = { ok: 'Verified in your browser', bad: 'Signature check failed', unsigned: 'Not signed', unsupported: 'Browser cannot check signature', error: 'Signature not checked', wait: 'Checking signature' };
@@ -90,9 +90,9 @@
     var st = r ? r.state : 'wait', what = (o && o.what) || (S ? S.data : 'this data');
     el.className = (el.className || '').replace(/\bkvb(-\w+)?\b/g, '').trim() + ' kvb kvb-' + st;
     var p = S ? (st === 'wait' ? S.dl + esc(what) + S.inb
-      : '<b>' + esc(LBL[st]) + '.</b> ' + esc(whyEs(r.why)) + (r.sha256 ? '<br>' + S.body + ' <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>' + S.chk + (+r.ms).toLocaleString('es-ES') + S.on + esc(what) + S.ns : '') + '<br><a href="/verify#sig">' + S.how + '</a>')
+      : '<b>' + esc(LBL[st]) + '.</b> ' + esc(whyEs(r.why)) + (r.sha256 ? '<br>' + S.body + ' <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>' + S.chk + (+r.ms).toLocaleString('es-ES') + S.on + esc(what) + S.ns : '') + '<br><a href="/verify/#sig">' + S.how + '</a>')
       : st === 'wait' ? 'Downloading the public key and checking the Ed25519 signature of ' + esc(what) + ' in this browser.'
-      : '<b>' + esc(LBL[st]) + '.</b> ' + esc(r.why) + (r.sha256 ? '<br>Body SHA-256: <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>Checked in ' + r.ms + ' ms, on ' + esc(what) + ', nothing sent to us.' : '') + '<br><a href="/verify#sig">How to check it yourself</a>';
+      : '<b>' + esc(LBL[st]) + '.</b> ' + esc(r.why) + (r.sha256 ? '<br>Body SHA-256: <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>Checked in ' + r.ms + ' ms, on ' + esc(what) + ', nothing sent to us.' : '') + '<br><a href="/verify/#sig">How to check it yourself</a>';
     el.innerHTML = '<summary aria-label="' + esc(LBL[st] + ': ' + what) + '"><i aria-hidden="true"></i>' + esc((o && o.label && st === 'ok') ? o.label : LBL[st]) + '</summary><div class="kvb-p" role="note">' + p + '</div>';
     el.setAttribute('data-kvb-state', st);
   }

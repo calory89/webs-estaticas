@@ -38,11 +38,11 @@ const fdt = (iso, lang) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''
 const tm = (iso, lang) => '<time datetime="' + esc(iso) + '">' + esc(fdt(iso, lang)) + '</time>';
 const mail = (a, subj) => '<a href="mailto:' + a + (subj ? '?subject=' + encodeURIComponent(subj) : '') + '"><bdi>' + a + '</bdi></a>';
 const ul = L => '<ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
-const links = (lang, L) => '<h2>' + esc(t27(lang, 'related')) + '</h2><ul>' + L.map(([h, k]) => '<li><a href="' + h + '">' + esc(t27(lang, k)) + '</a></li>').join('') + '</ul>';
+const links = (lang, L) => '<h2>' + esc(t27(lang, 'related')) + '</h2><ul class="k27-rel">' + L.map(([h, k]) => '<li><a href="' + h + '">' + esc(t27(lang, k)) + '</a></li>').join('') + '</ul>';
 const reviewed = lang => '<p class="k-small k-muted">' + fill(esc(t27(lang, 'rev')), { d: tm(REVIEWED, lang) }) + '</p>';
 const CSS27 = '<style id="k27-css">.k27-tw{overflow-x:auto;border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);margin:var(--k-4,16px) 0}.k27-tw table{width:100%;min-width:560px;border-collapse:collapse}.k27-tw th,.k27-tw td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--k-line)}.k27-tw th{font-size:var(--k-fs-xs,13px);font-weight:600}' +
   '.k27-log{list-style:none;padding:0!important}.k27-log li{padding:12px 0;border-bottom:1px solid var(--k-line);margin:0!important}.k27-log small{display:block;color:var(--k-muted)}.k27-code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--k-sunken);border-radius:var(--k-r-sm,6px);padding:var(--k-3,12px);font-size:var(--k-fs-xs,13px)}' +
-  '.k27-empty{border:1px dashed var(--k-line-2);border-radius:var(--k-r-md,10px);padding:var(--k-4,16px)}@media (max-width:640px){.k27-tw table{min-width:0}.k27-tw thead{display:none}.k27-tw tr{display:block;border-bottom:1px solid var(--k-line);padding:8px 0}.k27-tw td{display:block;border:0;padding:4px 12px}}</style>';
+  '.k27-empty{border:1px dashed var(--k-line-2);border-radius:var(--k-r-md,10px);padding:var(--k-4,16px)}@media (max-width:640px){.k27-tw table{min-width:0}.k27-tw thead{display:none}.k27-tw tr{display:block;border-bottom:1px solid var(--k-line);padding:8px 0}.k27-tw td{display:block;border:0;padding:4px 12px}}.k27-rel{padding-inline-start:18px}.k27-rel a{display:inline-block;padding:12px 0;min-height:44px;box-sizing:border-box}</style>';
 
 // ------------------------------------------------------------------------------------------------ data
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});

@@ -26,7 +26,7 @@ const T = {
 const t = (lang, k, v) => { let s = (T[lang] || T.en)[k] || T.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s; };
 const bdi = s => '<bdi>' + esc(s) + '</bdi>';
 const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same as kbx_facets.js
-const CSS = '<style id="kg27-css">.kg27{padding:28px 0;border-top:1px solid var(--line)}.kg27 h2{font-size:1.25rem;margin:0 0 4px}.kg27-s{color:var(--muted);margin:0 0 12px;max-width:72ch}.kg27-l{columns:3 220px;padding-inline-start:18px;margin:0}.kg27-l li{margin:0 0 8px;break-inside:avoid}.kg27-l small{color:var(--muted)}.kg27 h3{font-size:1rem;margin:16px 0 6px}.kg27-p{max-width:78ch;line-height:1.6}.kg27-p a.src{font-size:.8rem}</style>';
+const CSS = '<style id="kg27-css">.kg27{padding:28px 0;border-top:1px solid var(--line)}.kg27 h2{font-size:1.25rem;margin:0 0 4px}.kg27-s{color:var(--muted);margin:0 0 12px;max-width:72ch}.kg27-l{columns:3 220px;padding-inline-start:18px;margin:0}.kg27-l li{margin:0 0 8px;break-inside:avoid}.kg27-l small{color:var(--muted)}.kg27 h3{font-size:1rem;margin:16px 0 6px}.kg27-p{max-width:78ch;line-height:1.6}.kg27-p a.src{font-size:.8rem}@media (max-width:600px),(pointer:coarse){.kg27-l li{margin:0}.kg27-l a{display:inline-block;padding:12px 0;min-height:44px;box-sizing:border-box}}</style>';
 
 let IX = null, TOP = null, LOADING = null;
 let EMB = null;

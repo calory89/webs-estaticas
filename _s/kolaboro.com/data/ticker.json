@@ -4,6 +4,21 @@
   {
    "date": "2026-11-14",
    "kind": "shipped",
+   "url": "/",
+   "text": "Search, menus and forms fixed for phones, dark mode and Arabic",
+   "tl": {
+    "es": "Búsqueda, menús y formularios corregidos para móvil, modo oscuro y árabe",
+    "fr": "Recherche, menus et formulaires corrigés pour mobile, mode sombre et arabe",
+    "de": "Suche, Menüs und Formulare für Handy, Dunkelmodus und Arabisch korrigiert",
+    "nl": "Zoeken, menu’s en formulieren verbeterd voor mobiel, donkere modus en Arabisch",
+    "ru": "Поиск, меню и формы исправлены для телефонов, тёмной темы и арабского",
+    "zh": "搜索、菜单和表单已针对手机、深色模式和阿拉伯语修复",
+    "ar": "إصلاح البحث والقوائم والنماذج للهاتف والوضع الداكن والعربية"
+    }
+   },
+   {
+    "date": "2026-11-14",
+    "kind": "shipped",
    "url": "/projects/",
    "text": "Project pages, lists, compare and map: 35 fixes for phones and keyboards",
    "tl": {
