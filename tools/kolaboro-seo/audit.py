@@ -129,6 +129,14 @@ def audit_one(url):
     rob = ' '.join(attrs(x).get('content', '') for x in re.findall(r'<meta[^>]+name="robots"[^>]*>', head)) + ' ' + h.get('x-robots-tag', '')
     r['noindex'] = 'noindex' in rob.lower()
     r['hreflang'] = [(a.get('hreflang'), a.get('href')) for a in (attrs(x) for x in re.findall(r'<link[^>]+hreflang=[^>]*>', head))]
+    # n29t (batch 29, item 36): internal links of the page body, for the orphan check (pages in a sitemap that no crawled page links to)
+    body_t = t[t.find('</head>'):] if '</head>' in t else t
+    lk = set()
+    for hf in re.findall(r'<a\s[^>]*?href="([^"]*)"', body_t):
+        hf = html.unescape(hf).split('#')[0].split('?')[0]
+        if hf.startswith('/') and not hf.startswith('//'): lk.add(BASE + hf)
+        elif hf.startswith(BASE + '/'): lk.add(hf)
+    lk.discard(url); r['links'] = sorted(lk)
     blocks = re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', t, re.S)
     r['ld_errors'], r['ld_types'], r['ld_valid'] = check_ld(blocks)
     r['ld_blocks'] = len(blocks)
@@ -189,6 +197,17 @@ def main(out_dir):
                 o = by.get(x)
                 if o and o.get('status') == 200 and o.get('hreflang') is not None and u not in [y for _, y in o['hreflang']]: S['hreflang_errors'] += 1; P(u, 'hreflang %s -> %s is not reciprocal' % (c, x))
         if r['status'] == 200 and len(can) == 1 and can[0] == u and not r['noindex']: S['indexable'] += 1
+    # n29t (item 36): orphan pages. Inbound = number of crawled pages whose body links the URL. Only URLs whose possible linking pages
+    # were all crawled are judged: every sitemap except the sampled translated project and developer sitemaps (those are listed as
+    # not judged). An orphan is a sitemap page no crawled page links to; a weak page has exactly one.
+    inbound = {}
+    for r in res:
+        for x in r.get('links') or []: inbound[x] = inbound.get(x, 0) + 1
+    sampled = lambda v: bool(re.match(r'(projects|developers)-(es|de|fr|ru|nl|ar|zh)\.xml$', v['sitemap']))
+    judged = [u for u, v in urls.items() if not sampled(v) and by.get(u, {}).get('status') == 200]
+    orph = sorted(u for u in judged if not inbound.get(u)); weak = sorted(u for u in judged if inbound.get(u) == 1)
+    S['orphans'] = len(orph); S['weakly_linked'] = len(weak); S['links_judged'] = len(judged)
+    for u in orph[:200]: P(u, 'orphan: in a sitemap, but no crawled page links to it')
     for t, us in titles.items():
         if len(us) > 1: S['duplicate_titles'] += len(us); P(us[0], 'title shared with %d other URL(s): %s' % (len(us) - 1, t[:80]))
     # image sitemap (batch 15): every listed page must be in another sitemap; a sample of images must answer 200 with an image type
@@ -215,13 +234,29 @@ def main(out_dir):
         if st == 200: prev = json.loads(b)
     except Exception: pass
     now = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ')
-    hist = (prev.get('history') or [])[-59:] + [{'at': now, 'crawled': S['crawled'], 'indexable': S['indexable'], 'schema_valid_pages': S['schema_valid_pages'], 'problems': len(problems)}]
+    hist = (prev.get('history') or [])[-59:] + [{'at': now, 'crawled': S['crawled'], 'indexable': S['indexable'], 'schema_valid_pages': S['schema_valid_pages'], 'problems': len(problems), 'orphans': S['orphans']}]
     by_map = {}
     for u, v in urls.items(): by_map[v['sitemap']] = by_map.get(v['sitemap'], 0) + 1
+    # n29t (item 50): coverage per sitemap: listed, crawled, answered 200, indexable (200, self-canonical, not noindex), noindex, other status
+    cov = {}
+    for u, v in urls.items():
+        c = cov.setdefault(v['sitemap'], {'listed': 0, 'crawled': 0, 'ok_200': 0, 'indexable': 0, 'canonical_elsewhere': 0, 'noindex': 0, 'not_200': 0})
+        c['listed'] += 1; r = by.get(u)
+        if not r: continue
+        c['crawled'] += 1
+        if r['status'] != 200: c['not_200'] += 1; continue
+        c['ok_200'] += 1
+        if 'title' not in r: continue
+        can = r.get('canonical') or []
+        if r.get('noindex'): c['noindex'] += 1
+        elif len(can) != 1 or can[0] != u: c['canonical_elsewhere'] += 1
+        else: c['indexable'] += 1
     extrap = round(S['indexable'] + sum(1 for u, v in urls.items() if v.get('skip')) * (sum(1 for r in res if r['url'] in urls and urls[r['url']]['sitemap'][:9] in ('projects-', 'developer') and not urls[r['url']]['sitemap'].endswith('-en.xml') and r['status'] == 200) / max(1, sum(1 for r in res if r['url'] in urls and urls[r['url']]['sitemap'][:9] in ('projects-', 'developer') and not urls[r['url']]['sitemap'].endswith('-en.xml')))))
-    out = {'version': 'seo-audit-1', 'generated_at': now, 'base': BASE, 'crawler': UA, 'sitemaps': maps, 'urls_by_sitemap': by_map, 'summary': S, 'indexable_estimate_all': extrap, 'sampled_note': 'Translated named pages are sampled (KB_SAMPLE per sitemap); indexable_estimate_all applies the sample pass rate to the URLs not fetched.',
+    out = {'version': 'seo-audit-1', 'generated_at': now, 'base': BASE, 'crawler': UA, 'sitemaps': maps, 'urls_by_sitemap': by_map, 'coverage': cov, 'summary': S, 'indexable_estimate_all': extrap, 'sampled_note': 'Translated named pages are sampled (KB_SAMPLE per sitemap); indexable_estimate_all applies the sample pass rate to the URLs not fetched.',
            'schema_types': sorted({t for r in res for t in r.get('ld_types', [])}), 'problems': problems[:500], 'exclude': exclude,
-           'lastmod': lastmods(static), 'history': hist,
+           'lastmod': lastmods(static) or prev.get('lastmod') or {}, 'history': hist,   # n29t: a run without GitHub access keeps the last known dates
+           'internal_links': {'judged': S['links_judged'], 'orphans': orph[:500], 'weakly_linked': weak[:300], 'not_judged': sorted({v['sitemap'] for v in urls.values() if sampled(v)}),
+                              'method': 'Inbound links counted from the <body> of every crawled page (header, footer and in-page links; hreflang and canonical tags do not count). Judged only where every page that could link was crawled.'},
            'method': 'GET and HEAD on every sitemap URL, redirects not followed. Indexable = 200, exactly one canonical equal to the URL, no noindex. Valid structured data = every JSON-LD block parses, has a schema.org context and @type on every node, required properties present, no Review, AggregateRating or ClaimReview.'}
     json.dump(out, open(os.path.join(out_dir, 'seo-audit.json'), 'w'), indent=1)
     print(json.dumps(S))
