@@ -5,6 +5,9 @@ User-agent: *
 Allow: /
 Disallow: /__sb/
 Disallow: /api/
+# Searches typed into the site (/?q=...): endless addresses for the same homes. The lists to index are /homes/...
+Disallow: /*?q=
+Disallow: /*&q=
 
 # Search engines
 User-agent: Googlebot
@@ -14,6 +17,8 @@ User-agent: Applebot
 User-agent: YandexBot
 Allow: /
 Disallow: /__sb/
+Disallow: /*?q=
+Disallow: /*&q=
 
 # AI search and assistants (answers that cite and link to us)
 User-agent: OAI-SearchBot
@@ -32,6 +37,8 @@ User-agent: MistralAI-User
 User-agent: CCBot
 Allow: /
 Disallow: /__sb/
+Disallow: /*?q=
+Disallow: /*&q=
 
 # Link previews
 User-agent: Twitterbot

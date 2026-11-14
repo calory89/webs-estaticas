@@ -1,14 +1,14 @@
 {
  "summary": {
   "pages": 3986,
-  "indexable": 3458,
-  "noindex": 528,
-  "noindex_by_polish": 456,
+  "indexable": 3454,
+  "noindex": 532,
+  "noindex_by_polish": 460,
   "duplicate_homes": 2,
   "title_over_60": 1134,
   "desc_over_155": 0,
-  "desc_under_120": 77,
-  "desc_out_of_range": 77,
+  "desc_under_120": 73,
+  "desc_out_of_range": 73,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -18,11 +18,11 @@
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
   "pages_with_hreflang": 3436,
-  "thin_under_150_words": 26,
+  "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
   "with_lastmod": 3092,
-  "redirects": 1000,
+  "redirects": 1180,
   "moved_stubs": 142
  },
  "failures": [],
@@ -731,11 +731,11 @@
   },
   "/legal/*": {
    "pages": 4,
-   "indexable": 4,
-   "noindex": 0,
+   "indexable": 0,
+   "noindex": 4,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 4,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/map": {
@@ -960,13 +960,14 @@
   "portal list": 10,
   "form, contract or demo": 4,
   "home finder, city copy": 12,
+  "legal page": 4,
   "new builds, country copy": 8,
   "new-build project page": 417
  },
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3458,
+   "pages with JSON-LD changed": 3454,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
    "Article: author, date, headline or image missing": 52
@@ -988,10 +989,6 @@
    "/extension",
    "/find-my-home",
    "/help-buying",
-   "/legal/cookies",
-   "/legal/privacy",
-   "/legal/takedown",
-   "/legal/terms",
    "/map",
    "/network",
    "/network/reservation-contract",
@@ -1063,7 +1060,7 @@
    "/homes/sweden/4-bedroom",
    "/homes/united-states/3-bedroom",
    "/homes/united-states/under-100000",
-   "... 17 more"
+   "... 13 more"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -1176,6 +1173,199 @@
    }
   }
  },
+ "tech": {
+  "summary": {
+   "checked": 3986,
+   "indexable": 3454,
+   "max_depth": 3,
+   "titles_changed_since_last_build": 0,
+   "external_link_hosts": 135,
+   "no_text_without_javascript": 9,
+   "fake_urgency": 2,
+   "legal_page_without_disclaimer": 3,
+   "keyword_stuffing": 4,
+   "year_in_title": 2,
+   "near_identical_pages": 511,
+   "region_used_as_country": 2,
+   "em_dash_in_home_data": 4,
+   "fixed_here": 53,
+   "pages_with_em_dash_replaced": 53
+  },
+  "failures": [],
+  "lists": {
+   "no_text_without_javascript": [
+    "/agents (26 words)",
+    "/contact (15 words)",
+    "/ecobeachcity (39 words)",
+    "/es/contact (15 words)",
+    "/find-my-home (37 words)",
+    "/help-buying (19 words)",
+    "/network/reservation-contract (26 words)",
+    "/new-builds (19 words)",
+    "/research/new-builds (31 words)"
+   ],
+   "fake_urgency": [
+    "/deal/dr-las-terrenas-201k-439030: (about €201,200), marked as a limited-time offer. Is €201,200 a good price for",
+    "/es/deal/dr-las-terrenas-201k-439030: os 201.200 €), anunciado como oferta por tiempo limitado. Anunciada en supercasas.com."
+   ],
+   "legal_page_without_disclaimer": [
+    "/es/guide/buying",
+    "/guide/buying",
+    "/guide/questions"
+   ],
+   "keyword_stuffing": [
+    "/es/guide/questions: \"pasos para comprar\" 20 times, 18% of the words",
+    "/es/tools/residency-by-buying-a-home: \"comprar una vivienda\" 19 times, 9% of the words",
+    "/guide/questions/do-i-need-a-lawyer: \"realhunt country file\" 12 times, 13% of the words",
+    "/guide/questions: \"costs and sources\" 20 times, 18% of the words"
+   ],
+   "year_in_title": [
+    "/es/tools/portugal-imt: Calculadora del IMT de Portugal 2026 · RealHunt",
+    "/tools/portugal-imt: Portugal IMT calculator 2026: property transfer tax"
+   ],
+   "near_identical_pages": [
+    "/can-i-buy/american-in-greece ~ /can-i-buy/canadian-in-greece (92%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/danish-in-canada (92%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/dutch-in-canada (94%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/french-in-canada (95%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/irish-in-canada (95%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/swedish-in-canada (92%)",
+    "/can-i-buy/british-in-denmark ~ /can-i-buy/canadian-in-denmark (92%)",
+    "/can-i-buy/british-in-greece ~ /can-i-buy/canadian-in-greece (94%)",
+    "/can-i-buy/british-in-sweden ~ /can-i-buy/canadian-in-sweden (92%)",
+    "/can-i-buy/british-in-switzerland ~ /can-i-buy/canadian-in-switzerland (94%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/dutch-in-united-states (92%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/french-in-united-states (95%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/german-in-united-states (92%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/irish-in-united-states (95%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/swedish-in-united-states (94%)",
+    "/can-i-buy/canadian-in-dominican-republic ~ /can-i-buy/danish-in-dominican-republic (92%)",
+    "/can-i-buy/canadian-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (92%)",
+    "/can-i-buy/canadian-in-united-kingdom ~ /can-i-buy/danish-in-united-kingdom (94%)",
+    "/can-i-buy/canadian-in-united-kingdom ~ /can-i-buy/dutch-in-united-kingdom (94%)",
+    "/can-i-buy/canadian-in-united-kingdom ~ /can-i-buy/french-in-united-kingdom (95%)",
+    "/can-i-buy/canadian-in-united-kingdom ~ /can-i-buy/german-in-united-kingdom (92%)",
+    "/can-i-buy/canadian-in-united-kingdom ~ /can-i-buy/swedish-in-united-kingdom (92%)",
+    "/can-i-buy/canadian-in-united-states ~ /can-i-buy/french-in-united-states (92%)",
+    "/can-i-buy/canadian-in-united-states ~ /can-i-buy/irish-in-united-states (92%)",
+    "/can-i-buy/danish-in-bulgaria ~ /can-i-buy/dutch-in-bulgaria (92%)",
+    "/can-i-buy/danish-in-bulgaria ~ /can-i-buy/french-in-bulgaria (98%)",
+    "/can-i-buy/danish-in-bulgaria ~ /can-i-buy/german-in-bulgaria (97%)",
+    "/can-i-buy/danish-in-bulgaria ~ /can-i-buy/irish-in-bulgaria (97%)",
+    "/can-i-buy/danish-in-bulgaria ~ /can-i-buy/swedish-in-bulgaria (95%)",
+    "/can-i-buy/danish-in-canada ~ /can-i-buy/dutch-in-canada (92%)",
+    "/can-i-buy/danish-in-canada ~ /can-i-buy/french-in-canada (95%)",
+    "/can-i-buy/danish-in-canada ~ /can-i-buy/irish-in-canada (95%)",
+    "/can-i-buy/danish-in-canada ~ /can-i-buy/swedish-in-canada (92%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/dutch-in-cyprus (97%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/french-in-cyprus (100%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/german-in-cyprus (97%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/irish-in-cyprus (97%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/italian-in-cyprus (92%)",
+    "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
+    "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
+    "... 471 more"
+   ],
+   "region_used_as_country": [
+    "Dc-hu2ajorQ: Scandinavia",
+    "Dcky5gADEHo: Scandinavia"
+   ],
+   "em_dash_in_home_data": [
+    "Dc8TyIDkexU",
+    "Da7vZIFDIuo",
+    "DbA4_hKEThx",
+    "DbQ_FfViI4l"
+   ]
+  },
+  "depth": {
+   "0": 2,
+   "1": 132,
+   "2": 3043,
+   "3": 277
+  },
+  "noindex": {
+   "app screen": 5,
+   "set by its template": 70,
+   "portal list": 10,
+   "form, contract or demo": 4,
+   "home finder, city copy": 12,
+   "legal page": 4,
+   "new builds, country copy": 8,
+   "new-build project page": 417
+  },
+  "external": {
+   "scripts": [
+    "realhunt.co"
+   ],
+   "frames": [],
+   "link_hosts": 135
+  },
+  "perf": {
+   "goal": "The main photo (or the first text of a list) is on screen in under 2.5 seconds on a phone with a 4G connection, on home pages and on listing pages. Layout shift under 0.1. Measured with seo/tech/measure.cjs (Chrome, 1.6 Mbit/s, 150 ms latency, 4x slower processor).",
+   "pages": {
+    "home": {
+     "path": "/",
+     "html_kb": 8.6,
+     "blocking_css_kb": 23.3,
+     "entry_js_kb": 77.9,
+     "route_js_kb": 393.5,
+     "requests_in_html": 14,
+     "high_priority_images": 2,
+     "eager_images": 2,
+     "lazy_images": 22,
+     "problems": []
+    },
+    "deal": {
+     "path": "/deal/DZ-9LczExWp",
+     "html_kb": 11.1,
+     "blocking_css_kb": 23.3,
+     "entry_js_kb": 77.9,
+     "route_js_kb": 393.5,
+     "requests_in_html": 13,
+     "high_priority_images": 1,
+     "eager_images": 1,
+     "lazy_images": 2,
+     "problems": []
+    },
+    "country": {
+     "path": "/homes/spain",
+     "html_kb": 20.4,
+     "blocking_css_kb": 23.3,
+     "entry_js_kb": 77.9,
+     "route_js_kb": 393.5,
+     "requests_in_html": 15,
+     "high_priority_images": 3,
+     "eager_images": 3,
+     "lazy_images": 27,
+     "problems": []
+    },
+    "band": {
+     "path": "/homes/bulgaria/under-80000",
+     "html_kb": 11.2,
+     "blocking_css_kb": 23.3,
+     "entry_js_kb": 77.9,
+     "route_js_kb": 393.5,
+     "requests_in_html": 15,
+     "high_priority_images": 3,
+     "eager_images": 3,
+     "lazy_images": 3,
+     "problems": []
+    },
+    "map": {
+     "path": "/map",
+     "html_kb": 5.7,
+     "blocking_css_kb": 23.3,
+     "entry_js_kb": 77.9,
+     "route_js_kb": 442.5,
+     "requests_in_html": 15,
+     "high_priority_images": 0,
+     "eager_images": 0,
+     "lazy_images": 0,
+     "problems": []
+    }
+   }
+  }
+ },
  "sitemaps": {
   "sitemap-main.xml": 17,
   "sitemap-countries.xml": 178,
@@ -1188,7 +1378,7 @@
   "sitemap-compare.xml": 154,
   "sitemap-homes.xml": 590,
   "sitemap-new-builds.xml": 8,
-  "sitemap-more.xml": 56,
+  "sitemap-more.xml": 52,
   "sitemap-es-main.xml": 14,
   "sitemap-es-countries.xml": 178,
   "sitemap-es-prices.xml": 55,
