@@ -179,7 +179,8 @@ const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } 
 const ia = (ts, url) => 'https://web.archive.org/web/' + ts + '/' + url;
 const ltr = t => '<bdi dir="ltr">' + esc(t) + '</bdi>';
 // n19f: the words around a price are a cut of the page text; drop markdown asterisks and mark the cut ends with an ellipsis
-const ctxClean = c => { let t = String(c).replace(/(?:\s*\*){2,}\s*/g, ' ').replace(/\s+/g, ' ').trim(); if (/^[a-z0-9]/.test(t)) t = '…' + t; if (!/[.!?)\]]$/.test(t)) t += '…'; return t; };
+const ctxClean = c => { let t = String(c).replace(/(?:\s*\*){2,}\s*/g, ' ').replace(/\s+/g, ' ').trim(); const wd = t.split(' ').length > 5;   // n28a: the window is cut by characters, so its first and last words are often halves ("…illion, 1-bedroom ... with pr…"): drop them
+  if (/^[a-z0-9]/.test(t)) t = '…' + (wd ? t.replace(/^[^\s\[]+\s+/, '') : t); if (!/[.!?)\]]$/.test(t)) t = (wd ? t.replace(/\s+[^\s\]]+$/, '') : t) + '…'; return t; };
 
 // the source link of one dated copy
 function copyHref(x, p, url) { return p.src === 'copy' ? '/projects/' + x.s + '/changes/' + p.ref + '.txt' : ia(p.ref, url); }
