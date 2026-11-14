@@ -1,8 +1,8 @@
 {
  "summary": {
-  "pages": 3406,
-  "indexable": 2880,
-  "noindex": 526,
+  "pages": 3488,
+  "indexable": 2960,
+  "noindex": 528,
   "noindex_by_polish": 456,
   "duplicate_homes": 2,
   "title_over_60": 1039,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 2858,
+  "pages_with_hreflang": 2938,
   "thin_under_150_words": 26,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 2506,
+  "with_lastmod": 2590,
   "redirects": 628,
   "moved_stubs": 140
  },
@@ -445,17 +445,26 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 225,
+   "median_words": 255,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/guide/*": {
-   "pages": 20,
-   "indexable": 20,
+   "pages": 23,
+   "indexable": 23,
    "noindex": 0,
-   "median_words": 723,
+   "median_words": 793,
    "title_over_60": 1,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/guide/*/*": {
+   "pages": 38,
+   "indexable": 37,
+   "noindex": 1,
+   "median_words": 912,
+   "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -553,7 +562,7 @@
    "pages": 10,
    "indexable": 10,
    "noindex": 0,
-   "median_words": 657,
+   "median_words": 697,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -652,16 +661,25 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 219,
+   "median_words": 247,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/guide/*": {
-   "pages": 20,
-   "indexable": 20,
+   "pages": 23,
+   "indexable": 23,
    "noindex": 0,
-   "median_words": 646,
+   "median_words": 726,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/guide/*/*": {
+   "pages": 38,
+   "indexable": 37,
+   "noindex": 1,
+   "median_words": 849,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -832,7 +850,7 @@
    "pages": 11,
    "indexable": 11,
    "noindex": 0,
-   "median_words": 496,
+   "median_words": 569,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -948,8 +966,9 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 2880,
+   "pages with JSON-LD changed": 2960,
    "RealEstateListing: datePosted added": 591,
+   "Article: author, date, headline or image missing": 52,
    "ItemList: items removed or renumbered": 6
   },
   "missing": {}
@@ -1162,7 +1181,7 @@
   "sitemap-countries.xml": 140,
   "sitemap-prices.xml": 54,
   "sitemap-cheap-houses.xml": 57,
-  "sitemap-guides.xml": 21,
+  "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 29,
   "sitemap-can-i-buy.xml": 269,
@@ -1174,7 +1193,7 @@
   "sitemap-es-countries.xml": 140,
   "sitemap-es-prices.xml": 54,
   "sitemap-es-cheap-houses.xml": 57,
-  "sitemap-es-guides.xml": 21,
+  "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 28,
   "sitemap-es-can-i-buy.xml": 269,
