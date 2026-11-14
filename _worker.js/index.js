@@ -56,6 +56,7 @@ let k27a = null; const K27A = /^\/answers\/(?:place|developer)\/[a-z0-9-]{1,90}\
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
 let kfa = null; const KFA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:handover\/overdue(?:\/[a-z0-9-]{2,60})?|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|areas(?:\/[a-z0-9-]{2,60}\/[a-z0-9-]{2,80})?|vs\/[a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200})\/?$|^\/handover\/sitemap\.xml$/;   // n26s (batch 26): handover year and place, neighbourhoods, same-year comparisons (see kbx_facets.js)
+let kh29 = null; const KH29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/developers(?:\/[a-z0-9-]{2,60})?|permits(?:\/[a-z0-9-]{2,60})?|price-ranges(?:\/[a-z0-9-]{2,60})?|ownership(?:\/[a-z-]{2,30})?|golden-visa(?:\/[a-z-]{2,30})?|airports(?:\/[a-z]{3})?|reports(?:\/[a-z0-9-]{2,60})?|developers\/[a-z0-9-]{2,100}-vs-[a-z0-9-]{2,100})\/?$|^\/reports\/sitemap\.xml$/;   // n29h1 (batch 29): place data pages, developer comparisons (keep equal to PATHS in kbx_h29.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kbix = null; const KBIX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;   // n21d (batch 21): bulk check against the public index, in the browser, 8 languages (keep equal to PAGE in kbx_bulkix.js)
 let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   // n21d (batch 21): promised dates of a named project as an iCalendar file (keep equal to PATHS in kbx_cal.js)
@@ -297,6 +298,14 @@ async function llInject(req, u, env, ctx, r) {
     if (lb) return new HTMLRewriter().on('main', { element(e) { e.append(lb, { html: true }); } }).transform(r); } catch (e) {}
   return r;
 }
+// n29h1 (batch 29): links from existing pages (market files, handover, transparency, guides, developer pages, /new/, /rankings/) to the
+// place data pages of kbx_h29.js, appended to <main>; never blocks the page
+const H29L = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|rankings(?:\/transparency(?:\/[a-z0-9-]{2,40})?)?|new|guides\/buying-off-plan(?:\/[a-z-]{2,30})?|developers\/[a-z0-9-]{1,90})\/?$/;
+async function h29Inject(req, u, env, r) {
+  if (req.method !== 'GET' || !r || r.status !== 200 || !H29L.test(u.pathname) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+  try { if (!kh29) kh29 = await import('./kbx_h29.js'); const h = await kh29.linksFor(env, u.pathname); if (h) return new HTMLRewriter().on('main', { element(e) { e.append(h, { html: true }); } }).transform(r); } catch (e) {}
+  return r;
+}
 let kTick = null, kbots = null, kg27 = null;
 export default {
   async fetch(req, env, ctx) {
@@ -454,10 +463,18 @@ export default {
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n23, batch 23): /rankings/transparency/[<place>/] and /methods/transparency-score/ in 8 languages (see kbx_tr.js); before the /rankings/ hubs of kbx_seo.js
+    // kolaboro.com (n29h1, batch 29): /reports/, /rankings/developers/, /permits/, /price-ranges/, /ownership/, /golden-visa/, /airports/
+    // [<place>/] and /developers/<a>-vs-<b>/ in 8 languages (see kbx_h29.js); a path that is not one of these pages falls through
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KH29.test(u.pathname)) {
+      if (!kh29) kh29 = await import('./kbx_h29.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kh29.page(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KTR.test(u.pathname)) {
       if (!ktr) ktr = await import('./kbx_tr.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await llInject(req, u, env, ctx, await ktr.page(req, u, env, ctx, shell));
+      const r = await h29Inject(req, u, env, await llInject(req, u, env, ctx, await ktr.page(req, u, env, ctx, shell)));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n26s, batch 26): /handover/[<year>/<place>/], /areas/[<place>/<area>/], /vs/<slug>-vs-<slug>/ in 8 languages (see kbx_facets.js);
@@ -465,14 +482,14 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KFA.test(u.pathname)) {
       if (!kfa) kfa = await import('./kbx_facets.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await kfa.page(req, u, env, ctx, shell);
+      const r = await h29Inject(req, u, env, await kfa.page(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n27c, batch 27): /guides/buying-off-plan/[<place>/] in 8 languages and its sitemap (see kbx_buy.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KBUY.test(u.pathname)) {
       if (!kbuy) kbuy = await import('./kbx_buy.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await kbuy.page(req, u, env, ctx, shell);
+      const r = await h29Inject(req, u, env, await kbuy.page(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n21c, batch 21): /guides/short-let-rules/ in 8 languages (see kbx_rules.js)
@@ -500,7 +517,7 @@ export default {
     if (host === 'kolaboro.com' && req.method === 'GET' && KNM.test(u.pathname)) {
       if (!knm) knm = await import('./kbx_named.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await knm.handle(req, u, env, ctx, shell);
+      const r = await h29Inject(req, u, env, await knm.handle(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || (/^\/p\/?$/.test(u.pathname) && u.searchParams.has('id')))) { if (!knm) knm = await import('./kbx_named.js'); const rd = await knm.redirectP(u, env); if (rd) return rd; }
@@ -528,7 +545,7 @@ export default {
       if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { headers: req.headers }), env, ctx, su, host); };
       const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
-      const r = await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner));
+      const r = await h29Inject(req, u, env, await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner)));
       return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u, req);
@@ -544,8 +561,8 @@ export default {
       // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
       // n27g (batch 27): dated figures for the 50 biggest markets and links to the market's most searched projects (kbx_g27.js), above the market file
       let sr2 = sr; try { if (!kg27) kg27 = await import('./kbx_g27.js'); const gh = await kg27.marketBlock(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (gh) sr2 = new HTMLRewriter().on('#mk-body', { element(e) { e.before(gh, { html: true }); } }).transform(sr); } catch (e) {}
-      try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2); } catch (e) {}
-      return sr2;
+      try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return h29Inject(req, u, env, new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2)); } catch (e) {}
+      return h29Inject(req, u, env, sr2);
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)

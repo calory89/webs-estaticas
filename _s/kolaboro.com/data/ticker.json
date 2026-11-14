@@ -5,6 +5,21 @@
   {
    "date": "2026-11-14",
    "kind": "shipped",
+   "url": "/reports/",
+   "text": "New place pages: developer rankings, permits, prices, airports, monthly reports",
+   "tl": {
+    "es": "Nuevas páginas por lugar: promotores, permisos, precios, aeropuertos, informes mensuales",
+    "fr": "Nouvelles pages par lieu : promoteurs, permis, prix, aéroports, rapports mensuels",
+    "de": "Neue Ortsseiten: Bauträger-Rankings, Genehmigungen, Preise, Flughäfen, Monatsberichte",
+    "nl": "Nieuwe plaatspagina's: ontwikkelaars, vergunningen, prijzen, luchthavens, maandrapporten",
+    "ru": "Новые страницы мест: девелоперы, разрешения, цены, аэропорты, ежемесячные обзоры",
+    "zh": "新增地点页面：开发商排名、许可证、价格、机场、月度报告",
+    "ar": "صفحات أماكن جديدة: ترتيب المطوّرين والرخص والأسعار والمطارات والتقارير الشهرية"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "shipped",
    "url": "/",
    "text": "Search, menus and forms fixed for phones, dark mode and Arabic",
    "tl": {
@@ -15,11 +30,11 @@
     "ru": "Поиск, меню и формы исправлены для телефонов, тёмной темы и арабского",
     "zh": "搜索、菜单和表单已针对手机、深色模式和阿拉伯语修复",
     "ar": "إصلاح البحث والقوائم والنماذج للهاتف والوضع الداكن والعربية"
-    }
-   },
-   {
-    "date": "2026-11-14",
-    "kind": "shipped",
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "shipped",
    "url": "/projects/",
    "text": "Project pages, lists, compare and map: 35 fixes for phones and keyboards",
    "tl": {
