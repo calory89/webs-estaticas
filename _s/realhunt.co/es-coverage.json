@@ -1,31 +1,14 @@
 {
- "noindex_copies": 74,
+ "noindex_copies": 4,
  "written_by_hand": {
-  "pages": 610,
-  "words": 241829,
-  "english": 2,
-  "failed": [
-   {
-    "url": "https://realhunt.co/es/deal/fr-saint-vaury-136k-559424",
-    "english": 1,
-    "words": 440,
-    "hits": [
-     "near"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/homes/france",
-    "english": 1,
-    "words": 1358,
-    "hits": [
-     "near"
-    ]
-   }
-  ]
+  "pages": 592,
+  "words": 223079,
+  "english": 0,
+  "failed": []
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 704,
+ "twins": 805,
  "groups": {
   "homes": {
    "pages": 591,
@@ -36,27 +19,26 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 156,
-   "twins": 153,
-   "words": 70897,
-   "english": 4,
-   "by_hand": 18,
-   "spanish_pct": 99.99
+   "pages": 251,
+   "twins": 251,
+   "words": 508237,
+   "english": 0,
+   "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
-   "twins": 7,
-   "words": 3119,
-   "english": 419,
+   "twins": 8,
+   "words": 3120,
+   "english": 418,
    "by_hand": 1,
-   "spanish_pct": 86.57
+   "spanish_pct": 86.6
   },
   "content": {
-   "pages": 644,
-   "twins": 563,
-   "words": 542994,
-   "english": 715,
-   "spanish_pct": 99.87
+   "pages": 548,
+   "twins": 547,
+   "words": 440559,
+   "english": 0,
+   "spanish_pct": 100
   },
   "top": {
    "pages": 434,
@@ -66,49 +48,8 @@
    "spanish_pct": 89.02
   }
  },
- "not_published": 552,
+ "not_published": 468,
  "not_published_sample": [
-  {
-   "url": "https://realhunt.co/homes/france/under-150000",
-   "english": 1,
-   "words": 1331,
-   "hits": [
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/homes/france/village-houses",
-   "english": 1,
-   "words": 871,
-   "hits": [
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/homes/france/creuse",
-   "english": 2,
-   "words": 205,
-   "hits": [
-    "near",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/bienici-com",
-   "english": 1,
-   "words": 983,
-   "hits": [
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/new",
-   "english": 1,
-   "words": 1000,
-   "hits": [
-    "near"
-   ]
-  },
   {
    "url": "https://realhunt.co/extension",
    "english": 13,
@@ -299,983 +240,6 @@
    "words": 25,
    "hits": [
     "(no static body)"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses",
-   "english": 19,
-   "words": 742,
-   "hits": [
-    "Cheap",
-    "houses",
-    "for",
-    "by",
-    "what",
-    "you",
-    "are",
-    "looking",
-    "for",
-    "Every",
-    "homes",
-    "scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea",
-   "english": 7,
-   "words": 2348,
-   "hits": [
-    "homes",
-    "by",
-    "the",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-spain",
-   "english": 4,
-   "words": 1846,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-italy",
-   "english": 4,
-   "words": 1094,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-united-states",
-   "english": 4,
-   "words": 967,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-denmark",
-   "english": 4,
-   "words": 1188,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-sweden",
-   "english": 4,
-   "words": 724,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-japan",
-   "english": 4,
-   "words": 1166,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-greece",
-   "english": 4,
-   "words": 918,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-mexico",
-   "english": 4,
-   "words": 691,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-canada",
-   "english": 4,
-   "words": 652,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-bulgaria",
-   "english": 4,
-   "words": 733,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake",
-   "english": 6,
-   "words": 2351,
-   "hits": [
-    "homes",
-    "near",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-italy",
-   "english": 4,
-   "words": 923,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-united-states",
-   "english": 4,
-   "words": 1045,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-denmark",
-   "english": 4,
-   "words": 612,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-sweden",
-   "english": 4,
-   "words": 954,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-japan",
-   "english": 4,
-   "words": 662,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-poland",
-   "english": 46,
-   "words": 647,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "on",
-    "notary",
-    "about",
-    "to",
-    "fees",
-    "the",
-    "buyer"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-canada",
-   "english": 4,
-   "words": 598,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden",
-   "english": 6,
-   "words": 2165,
-   "hits": [
-    "homes",
-    "with",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-spain",
-   "english": 4,
-   "words": 1808,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-italy",
-   "english": 4,
-   "words": 951,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-united-states",
-   "english": 4,
-   "words": 1188,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-denmark",
-   "english": 4,
-   "words": 1049,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-france",
-   "english": 4,
-   "words": 874,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-sweden",
-   "english": 4,
-   "words": 1116,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-japan",
-   "english": 4,
-   "words": 584,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-poland",
-   "english": 46,
-   "words": 597,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "on",
-    "notary",
-    "about",
-    "to",
-    "fees",
-    "the",
-    "buyer"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-germany",
-   "english": 4,
-   "words": 583,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-greece",
-   "english": 4,
-   "words": 626,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-switzerland",
-   "english": 34,
-   "words": 666,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "to",
-    "on",
-    "the",
-    "notary",
-    "and",
-    "about",
-    "to"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-sauna",
-   "english": 6,
-   "words": 721,
-   "hits": [
-    "homes",
-    "with",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-sauna-in-sweden",
-   "english": 4,
-   "words": 557,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses",
-   "english": 8,
-   "words": 2123,
-   "hits": [
-    "homes",
-    "made",
-    "of",
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses-in-spain",
-   "english": 4,
-   "words": 684,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses-in-italy",
-   "english": 4,
-   "words": 1095,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses-in-united-states",
-   "english": 4,
-   "words": 616,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses-in-france",
-   "english": 5,
-   "words": 884,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/stone-houses-in-greece",
-   "english": 4,
-   "words": 732,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages",
-   "english": 5,
-   "words": 2013,
-   "hits": [
-    "and",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain",
-   "english": 4,
-   "words": 689,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-italy",
-   "english": 4,
-   "words": 571,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states",
-   "english": 4,
-   "words": 753,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-denmark",
-   "english": 4,
-   "words": 563,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden",
-   "english": 4,
-   "words": 804,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan",
-   "english": 4,
-   "words": 760,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-switzerland",
-   "english": 34,
-   "words": 649,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "to",
-    "on",
-    "the",
-    "notary",
-    "and",
-    "about",
-    "to"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-canada",
-   "english": 4,
-   "words": 551,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace",
-   "english": 6,
-   "words": 2118,
-   "hits": [
-    "homes",
-    "with",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-spain",
-   "english": 4,
-   "words": 1930,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-italy",
-   "english": 4,
-   "words": 1638,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-united-states",
-   "english": 4,
-   "words": 1157,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-denmark",
-   "english": 4,
-   "words": 875,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-france",
-   "english": 4,
-   "words": 945,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-sweden",
-   "english": 4,
-   "words": 681,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-japan",
-   "english": 4,
-   "words": 553,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-poland",
-   "english": 46,
-   "words": 865,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "on",
-    "notary",
-    "about",
-    "to",
-    "fees",
-    "the",
-    "buyer"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-germany",
-   "english": 4,
-   "words": 683,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-netherlands",
-   "english": 48,
-   "words": 1036,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "on",
-    "home",
-    "you",
-    "will",
-    "in",
-    "for",
-    "buyers"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-greece",
-   "english": 4,
-   "words": 833,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-portugal",
-   "english": 4,
-   "words": 594,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-switzerland",
-   "english": 34,
-   "words": 580,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "tax",
-    "to",
-    "on",
-    "the",
-    "notary",
-    "and",
-    "about",
-    "to"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-bulgaria",
-   "english": 4,
-   "words": 697,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses",
-   "english": 6,
-   "words": 2192,
-   "hits": [
-    "homes",
-    "in",
-    "from",
-    "Checked",
-    "by",
-    "updated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-spain",
-   "english": 5,
-   "words": 1865,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-italy",
-   "english": 5,
-   "words": 1857,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-united-states",
-   "english": 6,
-   "words": 1204,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-denmark",
-   "english": 5,
-   "words": 1672,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-france",
-   "english": 6,
-   "words": 1445,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-sweden",
-   "english": 5,
-   "words": 1269,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-japan",
-   "english": 5,
-   "words": 1252,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-greece",
-   "english": 5,
-   "words": 595,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-portugal",
-   "english": 5,
-   "words": 1014,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-switzerland",
-   "english": 35,
-   "words": 877,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in",
-    "tax",
-    "to",
-    "on",
-    "the",
-    "notary",
-    "and",
-    "about"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-mexico",
-   "english": 5,
-   "words": 537,
-   "hits": [
-    "from",
-    "Checked",
-    "by",
-    "updated",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/under-75000-in-poland",
-   "english": 42,
-   "words": 1051,
-   "hits": [
-    "tax",
-    "on",
-    "notary",
-    "about",
-    "to",
-    "fees",
-    "the",
-    "buyer",
-    "to",
-    "some",
-    "listings",
-    "can"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/under-75000-in-switzerland",
-   "english": 30,
-   "words": 750,
-   "hits": [
-    "tax",
-    "to",
-    "on",
-    "the",
-    "notary",
-    "and",
-    "about",
-    "to",
-    "from",
-    "the",
-    "need",
-    "and"
    ]
   },
   {
@@ -5978,6 +4942,1355 @@
    "url": "https://realhunt.co/top/tulum/waye-aldea-zama-tulum",
    "english": 9,
    "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/soul-living-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/senzik-tulum-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/gran-tulum-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zelen-akumal-tulum",
+   "english": 9,
+   "words": 71,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/baikal-residences-akumal-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xatum-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/green-view-tulum-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/d-j-vu-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/babel-tulum-holistika-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/nhoa-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/carey-tulum-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/attha-holistika-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi",
+   "english": 61,
+   "words": 844,
+   "hits": [
+    "Ranked",
+    "by",
+    "score",
+    "from",
+    "price",
+    "price",
+    "and",
+    "then",
+    "buyer",
+    "and",
+    "questions",
+    "from"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/status-house-by-elt-building-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/lemongarden-residence-spa-airport-batumi",
+   "english": 9,
+   "words": 101,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/dar-tower-khimshiashvili-batumi",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/palm-residence-airport-batumi",
+   "english": 9,
+   "words": 101,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/real-palace-blue-airport-batumi",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/giorgi-antsukhelidze-st-81-airport-batumi",
+   "english": 9,
+   "words": 99,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/red-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/angisa-development-angisa-st-47-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sea-zone-makhinjauri-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/life-style-airport-batumi",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/gwg-batumi-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ande-metropolis-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/queen-s-residence-airport-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/royal-residence-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aleksandre-sulaberidze-st-84-javakhishvili-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/prime-residence-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aqua-hotel-apartments-airport-batumi",
+   "english": 9,
+   "words": 97,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/oxy-residence-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/angisa-1st-lane-12a-20-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 104,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ande-tower-2-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/monogram-airport-batumi",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/next-magnolia-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bana-development-makhinjauri-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sport-city-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/skylux-batumi-residence-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/white-house-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/arcon-batumi-residence-khimshiashvili-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bluesky-tower-khimshiashvili-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/stay-rent-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/geobuilding-gorgasali-rustaveli-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aisi-batumi-airport-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/semira-tolia-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bagrationi-residence-batumi-javakhishvili-batumi",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/artex-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/guru-status-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/a-sector-megobroba-makhinjauri-batumi",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sunway-suites-airport-batumi",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/niko-pirosmani-st-15-khimshiashvili-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/tbel-abuseridze-st-24a-batumi-batumi",
+   "english": 13,
+   "words": 99,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/grand-tower-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/lux-golden-wave-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sea-hills-makhinjauri-batumi",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/horizon-grand-residence-airport-batumi",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/accent-javakhishvili-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/gate-by-artex-airport-batumi",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ikon-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/semira-time-agmashenebeli-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/origami-town-bagrationi-batumi",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/one-khimshiashvili-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/elysium-kakhaberi-batumi",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/vertikal-khimshiashvili-batumi",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/thalassa-group-makhinjauri-batumi",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/maisi-batumi-batumi",
+   "english": 13,
+   "words": 79,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/kutkhe-batumi-batumi",
+   "english": 13,
+   "words": 82,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/metro-city-residence-airport-batumi",
+   "english": 9,
+   "words": 100,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/avangard-seaside-area-airport-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/jm-tower-bagrationi-batumi",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/history-home-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/the-parallel-batumi-batumi",
+   "english": 13,
+   "words": 84,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/uniq-residence-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/modern-ultra-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/next-address-khimshiashvili-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/serenade-airport-batumi",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/well-home-batumi-batumi",
+   "english": 13,
+   "words": 76,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/nbg-duo-khimshiashvili-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/marina-club-airport-batumi",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/villa-makhinjauri-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/dest-asatiani-batumi-batumi",
+   "english": 13,
+   "words": 79,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/parkside-villas-airport-batumi",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/summer-365-airport-batumi",
+   "english": 9,
+   "words": 81,
    "hits": [
     "Ranked",
     "in",
