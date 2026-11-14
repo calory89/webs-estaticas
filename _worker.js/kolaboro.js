@@ -1637,6 +1637,7 @@ export async function ssr(base, u, kind, env) {
     mcrumb = '<a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a><span id="mk-crumb"> / ' + hesc(m) + '</span>';
     mfeed = '<link rel="alternate" type="application/rss+xml" title="' + hesc('Kolaboro: ' + m) + '" href="/feed.xml?market=' + encodeURIComponent(m) + '">';
     if (title.length > 60) title = title.replace(/ \| Kolaboro$/, '');
+    if (title.length > 60) title = 'Off-plan projects in ' + m + ': what developers publish';
   }
   const nm = ((base.headers.get('content-security-policy-report-only') || '') + ' ' + (base.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
   // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section
