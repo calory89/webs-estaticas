@@ -58,6 +58,27 @@ Today: 591 homes in 18 countries. Updated 2026-11-14.
 - https://realhunt.co/tools/spain-non-resident-tax
 - https://realhunt.co/tools/uk-stamp-duty-non-resident
 
+## Files for machines (no account, no key)
+
+- [OpenAPI description of every file](https://realhunt.co/openapi.json)
+- [Countries: key figures and the address of each country file](https://realhunt.co/data/countries/index.json)
+- Per country: https://realhunt.co/data/countries/<country>.json (key facts, rules, every home), .md (clean text), .pdf (one-page fact sheet)
+- [Property portals by country: a directory with a link to each one](https://realhunt.co/research/property-portals)
+- [Key facts by country, in dated sentences that can be quoted](https://realhunt.co/research/country-facts)
+- [Open data: the files, the licence and how to read them](https://realhunt.co/research/open-data)
+- [What changed in the data, day by day](https://realhunt.co/research/data-changelog)
+- [Find homes by country and price: ?country=bulgaria&max=30000](https://realhunt.co/research/find-homes)
+- [Property portals by country](https://realhunt.co/research/property-portals.json) ([CSV](https://realhunt.co/research/property-portals.csv))
+- [Every home with coordinates (GeoJSON)](https://realhunt.co/data/realhunt-homes.geojson); [best homes by country (KML)](https://realhunt.co/data/realhunt-best-homes.kml)
+- Feeds: https://realhunt.co/feed.xml (RSS), https://realhunt.co/feed.atom, https://realhunt.co/feed.json; research: https://realhunt.co/blog/rss.xml, https://realhunt.co/blog/atom.xml, https://realhunt.co/blog/feed.json
+- Licence of text and figures: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); photos belong to the original listings
+
+## Other languages
+
+- [Índice en español](https://realhunt.co/es/llms.txt)
+- [Deutsch](https://realhunt.co/de/llms.txt)
+- [Русский](https://realhunt.co/ru/llms.txt)
+
 ## Countries
 
 - [Spain](https://realhunt.co/homes/spain): 182 homes

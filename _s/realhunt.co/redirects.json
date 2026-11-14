@@ -930,7 +930,10 @@
  "/es/homes/spain/valencia/under-100000": "/es/homes/spain/valencia",
  "/homes/spain/valencia/under-150000": "/homes/spain/valencia",
  "/es/homes/spain/valencia/under-150000": "/es/homes/spain/valencia",
+ "/api": "/research/open-data",
  "/browse": "/",
+ "/changelog": "/research/data-changelog",
+ "/country-facts": "/research/country-facts",
  "/country/bulgaria": "/homes/bulgaria",
  "/country/canada": "/homes/canada",
  "/country/cyprus": "/homes/cyprus",
@@ -1048,6 +1051,7 @@
  "/deal/live-pisos-xpjygk": "/deal/live-pisos-a4dw9a",
  "/deal/marsala-34000": "/homes/italy",
  "/deal/us-aventura-18181-804-279k": "/homes/united-states",
+ "/developers/api": "/research/open-data",
  "/es/country/bulgaria": "/es/homes/bulgaria",
  "/es/country/canada": "/es/homes/canada",
  "/es/country/cyprus": "/es/homes/cyprus",
@@ -1160,6 +1164,10 @@
  "/es/deal/dz-9lczexwp": "/es/deal/DZ-9LczExWp",
  "/es/deal/dzzpj7udszb": "/es/deal/DZzpJ7UDSZB",
  "/es/deal/live-pisos-xpjygk": "/es/deal/live-pisos-a4dw9a",
+ "/find": "/research/find-homes",
  "/finds": "/",
- "/heatmap": "/weather"
+ "/heatmap": "/weather",
+ "/open-data": "/research/open-data",
+ "/portals": "/research/property-portals",
+ "/property-portals": "/research/property-portals"
 }

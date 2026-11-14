@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 3920,
-  "indexable": 3386,
+  "pages": 3930,
+  "indexable": 3396,
   "noindex": 534,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
-  "title_over_60": 1124,
+  "title_over_60": 1127,
   "desc_over_155": 0,
   "desc_under_120": 70,
   "desc_out_of_range": 70,
@@ -17,12 +17,12 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3368,
+  "pages_with_hreflang": 3378,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3024,
-  "redirects": 1163,
+  "with_lastmod": 3035,
+  "redirects": 1171,
   "moved_stubs": 215
  },
  "failures": [],
@@ -148,7 +148,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 15,
+   "median_words": 28,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -436,7 +436,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 583,
+   "median_words": 637,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -535,17 +535,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 583,
+   "median_words": 658,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/research/*": {
-   "pages": 10,
-   "indexable": 10,
+   "pages": 15,
+   "indexable": 15,
    "noindex": 0,
    "median_words": 959,
-   "title_over_60": 0,
+   "title_over_60": 2,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -652,7 +652,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 544,
+   "median_words": 594,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -823,17 +823,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 507,
+   "median_words": 582,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/research/*": {
-   "pages": 11,
-   "indexable": 11,
+   "pages": 16,
+   "indexable": 16,
    "noindex": 0,
-   "median_words": 835,
-   "title_over_60": 0,
+   "median_words": 843,
+   "title_over_60": 1,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -967,7 +967,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3386,
+   "pages with JSON-LD changed": 3396,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
    "Article: author, date, headline or image missing": 52
@@ -1123,7 +1123,7 @@
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
    "/deal/DbA4_hKEThx",
-   "... 1064 more"
+   "... 1067 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1175,15 +1175,15 @@
  },
  "tech": {
   "summary": {
-   "checked": 3920,
-   "indexable": 3386,
+   "checked": 3930,
+   "indexable": 3396,
    "max_depth": 3,
    "titles_changed_since_last_build": 310,
-   "external_link_hosts": 134,
+   "external_link_hosts": 314,
    "no_text_without_javascript": 9,
    "fake_urgency": 2,
    "legal_page_without_disclaimer": 3,
-   "keyword_stuffing": 4,
+   "keyword_stuffing": 5,
    "year_in_title": 2,
    "near_identical_pages": 512,
    "region_used_as_country": 2,
@@ -1196,7 +1196,7 @@
   "lists": {
    "no_text_without_javascript": [
     "/agents (26 words)",
-    "/contact (15 words)",
+    "/contact (28 words)",
     "/ecobeachcity (39 words)",
     "/es/contact (15 words)",
     "/find-my-home (37 words)",
@@ -1218,7 +1218,8 @@
     "/es/guide/questions: \"pasos para comprar\" 20 times, 18% of the words",
     "/es/tools/residency-by-buying-a-home: \"comprar una vivienda\" 19 times, 9% of the words",
     "/guide/questions/do-i-need-a-lawyer: \"realhunt country file\" 12 times, 13% of the words",
-    "/guide/questions: \"costs and sources\" 20 times, 18% of the words"
+    "/guide/questions: \"costs and sources\" 20 times, 18% of the words",
+    "/research/property-portals: \"median asking price\" 17 times, 7% of the words"
    ],
    "year_in_title": [
     "/es/tools/portugal-imt: Calculadora del IMT de Portugal 2026 · RealHunt",
@@ -1281,8 +1282,8 @@
   "depth": {
    "0": 2,
    "1": 128,
-   "2": 2937,
-   "3": 319
+   "2": 2939,
+   "3": 327
   },
   "noindex": {
    "app screen": 5,
@@ -1299,17 +1300,17 @@
     "realhunt.co"
    ],
    "frames": [],
-   "link_hosts": 134
+   "link_hosts": 314
   },
   "perf": {
    "goal": "The main photo (or the first text of a list) is on screen in under 2.5 seconds on a phone with a 4G connection, on home pages and on listing pages. Layout shift under 0.1. Measured with seo/tech/measure.cjs (Chrome, 1.6 Mbit/s, 150 ms latency, 4x slower processor).",
    "pages": {
     "home": {
      "path": "/",
-     "html_kb": 8.5,
+     "html_kb": 8.8,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78,
-     "route_js_kb": 395.4,
+     "entry_js_kb": 78.1,
+     "route_js_kb": 395.7,
      "requests_in_html": 14,
      "high_priority_images": 2,
      "eager_images": 2,
@@ -1318,10 +1319,10 @@
     },
     "deal": {
      "path": "/deal/DZ-9LczExWp",
-     "html_kb": 11.1,
+     "html_kb": 11.4,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78,
-     "route_js_kb": 395.4,
+     "entry_js_kb": 78.1,
+     "route_js_kb": 395.7,
      "requests_in_html": 13,
      "high_priority_images": 1,
      "eager_images": 1,
@@ -1330,10 +1331,10 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 20.6,
+     "html_kb": 20.9,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78,
-     "route_js_kb": 395.4,
+     "entry_js_kb": 78.1,
+     "route_js_kb": 395.7,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1342,10 +1343,10 @@
     },
     "band": {
      "path": "/homes/bulgaria/under-80000",
-     "html_kb": 11,
+     "html_kb": 11.3,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78,
-     "route_js_kb": 395.4,
+     "entry_js_kb": 78.1,
+     "route_js_kb": 395.7,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1354,10 +1355,10 @@
     },
     "map": {
      "path": "/map",
-     "html_kb": 5.7,
+     "html_kb": 5.9,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78,
-     "route_js_kb": 444.4,
+     "entry_js_kb": 78.1,
+     "route_js_kb": 444.7,
      "requests_in_html": 15,
      "high_priority_images": 0,
      "eager_images": 0,
@@ -1374,7 +1375,7 @@
   "sitemap-cheap-houses.xml": 252,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
-  "sitemap-blog.xml": 29,
+  "sitemap-blog.xml": 34,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 154,
   "sitemap-homes.xml": 590,
@@ -1386,7 +1387,7 @@
   "sitemap-es-cheap-houses.xml": 252,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
-  "sitemap-es-blog.xml": 28,
+  "sitemap-es-blog.xml": 33,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 154,
   "sitemap-es-homes.xml": 590,
