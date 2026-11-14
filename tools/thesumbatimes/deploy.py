@@ -2,7 +2,7 @@
 # Builds the Cloudflare Worker module for thesumbatimes.com from out/ (run build.py first).
 # python3 deploy.py -> worker/index.js + worker/metadata.json
 # Upload (Composio workbench): PUT /accounts/<acct>/workers/scripts/thesumbatimes as multipart (index.js + metadata), see README.md.
-import os, json, base64
+import os, json, base64, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(HERE, "out"); W = os.path.join(HERE, "worker")
 KV_NAMESPACE_ID = "f0aa5acc53a44f3194e7e428071161e2"   # Workers KV "thesumbatimes-img": img/<slug>-640.webp, img/<slug>-1280.webp, og/<slug>.jpg
 TEXT = (".html", ".xml", ".txt", ".svg", ".json", ".webmanifest", ".js", ".css")
@@ -11,7 +11,8 @@ for root, _, files in os.walk(OUT):
     for f in files:
         fp = os.path.join(root, f); p = "/" + os.path.relpath(fp, OUT).replace(os.sep, "/")
         if p.startswith("/img/"): continue
-        if f.endswith(TEXT): F[p] = {"t": open(fp, encoding="utf-8").read()}
+        if f.endswith(TEXT):
+            _t = open(fp, encoding="utf-8").read(); F[p] = {"t": _t, "e": hashlib.sha1(_t.encode()).hexdigest()[:16]}
         else: F[p] = {"b64": base64.b64encode(open(fp, "rb").read()).decode()}
 OGF = {}
 if "/_og.json" in F:
@@ -109,7 +110,8 @@ export default{async fetch(req,env,ctx){const u=new URL(req.url);
  if(u.pathname==='/api/ask')return ask(req,env);
  if(u.pathname==='/api/question')return question(req,env);
  if(u.hostname.startsWith('www.')){u.hostname=u.hostname.slice(4);return Response.redirect(u.toString(),301);}
- let p=decodeURIComponent(u.pathname);
+ let p;try{p=decodeURIComponent(u.pathname)}catch(e){p='/404-bad-url'}
+ if(p.endsWith('/index.html')&&p!=='/index.html'){return Response.redirect(u.origin+p.slice(0,-10)+u.search,301);}
  if(p==='/'||p==='/index.html'){const ua=req.headers.get('user-agent')||'';
   if(!BOT.test(ua)){const ck=(req.headers.get('cookie')||'').match(/(?:^|;\s*)st_lang=(en|es|id)/);
    let l=ck?ck[1]:null;if(!l){const c=(req.cf&&req.cf.country)||req.headers.get('cf-ipcountry')||'';l=ES.has(c)?'es':(c==='ID'?'id':null);}
@@ -117,9 +119,9 @@ export default{async fetch(req,env,ctx){const u=new URL(req.url);
    return new Response(null,{status:302,headers:Object.assign({'location':'/'+l+'/'+u.search,'cache-control':'private, no-store','vary':'Cookie, Accept-Language'},SEC)});}}
  if(RD[p]||RD[p+'/']){return Response.redirect(u.origin+(RD[p]||RD[p+'/'])+u.search,301);}
  if(p.startsWith('/pdf/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:Object.assign({'content-type':'application/pdf','cache-control':'public, max-age=86400','x-robots-tag':'noindex'},SEC)});}const m=p.match(/-(en|es|id)\.pdf$/);return Response.redirect(u.origin+'/'+(m?m[1]:'en')+'/guide/sumba-7-days/',302);}
- if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),p.startsWith('/og/')?'public, max-age=86400':'public, max-age=2592000')});}const fb=OGF[p.slice(4)];if(fb){const v2=await env.IMG.get('og/'+fb+'.jpg',{type:'arrayBuffer'});if(v2)return new Response(v2,{headers:hdr('jpg','public, max-age=3600')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
+ if(p.startsWith('/img/')||p.startsWith('/og/')){const ck=new Request(u.origin+p);try{const ch=await caches.default.match(ck);if(ch)return ch}catch(e){}const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){const R=new Response(v,{headers:hdr(k.split('.').pop(),p.startsWith('/og/')?'public, max-age=86400':'public, max-age=2592000')});if(ctx)ctx.waitUntil(caches.default.put(ck,R.clone()).catch(()=>{}));return R;}const fb=OGF[p.slice(4)];if(fb){const v2=await env.IMG.get('og/'+fb+'.jpg',{type:'arrayBuffer'});if(v2)return new Response(v2,{headers:hdr('jpg','public, max-age=3600')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
- if(F[p]){if(p.endsWith('.html')&&env.IMG&&ctx)ctx.waitUntil(hit(req,env,u,p));return resp(p,200);}
+ if(F[p]){const et=F[p].e?'"'+F[p].e+'"':null;if(et&&(req.headers.get('if-none-match')||'').replace(/^W\//,'')===et){return new Response(null,{status:304,headers:Object.assign({'etag':et,'cache-control':'public, max-age=300'},SEC)});}if(p.endsWith('.html')&&env.IMG&&ctx)ctx.waitUntil(hit(req,env,u,p));const r0=resp(p,200);if(et)r0.headers.set('etag',et);if(p.endsWith('.json'))r0.headers.set('x-robots-tag','noindex');return r0;}
  if(!/\.[a-z0-9]{2,12}$/i.test(p)&&F[p+'/index.html']){return Response.redirect(u.origin+u.pathname+'/'+u.search,301);}
  const m=p.match(/^\/(en|es|id)\//);return resp(m&&F['/'+m[1]+'/404.html']?'/'+m[1]+'/404.html':'/404.html',404);}};
 """

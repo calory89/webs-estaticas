@@ -35,7 +35,7 @@ UI = {
         "disclosure":"The Sumba Times es una publicación de Eco Beach City, empresa que gestiona Villa Eco Beach en Sumba. Cubrimos toda la isla, incluidos otros hoteles y proyectos.",
         "privacy":"Solo usamos tu correo para enviarte la carta. Puedes darte de baja con un clic.","updated":"Publicado","coming":"Cada día publicamos noticias nuevas."},
  "id": {"tagline": "Berita, budaya, dan perjalanan dari Pulau Sumba, Indonesia",
-        "sections": {"news":"Berita","getting-here":"Cara ke Sumba","things-to-do":"Wisata","culture":"Budaya & tradisi","where-to-stay":"Tempat menginap","projects":"Proyek","low-tide":"Air Surut"},
+        "sections": {"news":"Berita","getting-here":"Cara ke Sumba","things-to-do":"Aktivitas wisata","culture":"Budaya & tradisi","where-to-stay":"Tempat menginap","projects":"Proyek","low-tide":"Air Surut"},
         "section_desc": {"news":"Kabar terkini dari Sumba: penerbangan, jalan, festival, dan kebijakan yang berdampak pada pulau ini.",
                          "getting-here":"Penerbangan, bandara, dan saran praktis untuk menuju Sumba dan berkeliling pulau.",
                          "things-to-do":"Pantai, laguna, air terjun, dan bukit yang layak dikunjungi.",

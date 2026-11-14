@@ -101,16 +101,19 @@ X["id"]["sdesc"]["projects"] = "Hotel, jalan, pelabuhan dan pembangunan baru di 
 def esc(s): return html.escape(str(s), quote=True)
 SUF = " · The Sumba Times"
 def seo_title(t):
-    """Keep <title> at 60 characters or fewer (what Google shows): drop the subtitle after a colon, then the brand suffix, then cut on a word."""
+    """<title> of 60 characters or fewer. Order of preference: full title with brand; full title without brand (keeps the
+    searched subtitle, e.g. 'how to get there'); main part before the colon with brand; cut on a word."""
     if len(t) <= 60: return t
     if not t.endswith(SUF): return t[:59].rsplit(" ", 1)[0] + "…"
     core = t[:-len(SUF)]
     if len(core) <= 60: return core
     if ":" in core and len(core.split(":")[0]) >= 18:
-        core = core.split(":")[0]
-        if len(core) + len(SUF) <= 60: return core + SUF
-        if len(core) <= 60: return core
-    return core[:59].rsplit(" ", 1)[0] + "…"
+        h = core.split(":")[0]
+        cut = re.sub(r"(,| and| y| dan| e| or| o| atau)$", "", core[:60].rsplit(" ", 1)[0].rstrip(" ,;:"))
+        if len(cut) >= len(h) + 10: return cut
+        if len(h) + len(SUF) <= 60: return h + SUF
+        if len(h) <= 60: return h
+    return core[:59].rsplit(" ", 1)[0].rstrip(",;:") + "…"
 def seo_desc(d):
     d = re.sub(r"\s+", " ", d).strip()
     return d if len(d) <= 158 else d[:155].rsplit(" ", 1)[0].rstrip(",;:") + "…"
@@ -284,15 +287,15 @@ article p:first-of-type .dl+*{}
 .sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
 @media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
 @media print{.sa{display:none}}
-footer .links.l2{font-size:14px;margin-top:10px;opacity:.9}.pn{display:flex;justify-content:space-between;gap:16px;margin:26px 0 0;border-top:1px solid var(--line);padding-top:14px;font-family:Inter,Arial,sans-serif;font-size:14px}.pn a{flex:1;text-decoration:none;color:var(--ink)}.pn a b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.2;margin-top:3px}.pn a:last-child{text-align:right}.pn a:hover b{text-decoration:underline}.smp h2{margin:22px 0 6px}.smp ul{columns:2;column-gap:28px;padding-left:18px}.smp li{break-inside:avoid;margin:0 0 5px}@media(max-width:700px){.smp ul{columns:1}}
+footer .links.l2{font-size:14px;margin-top:10px;opacity:.9}.pn{display:flex;justify-content:space-between;gap:16px;margin:26px 0 0;border-top:1px solid var(--line);padding-top:14px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:14px}.pn a{flex:1;text-decoration:none;color:var(--ink)}.pn a b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.2;margin-top:3px}.pn a:last-child{text-align:right}.pn a:hover b{text-decoration:underline}.smp h2{margin:22px 0 6px}.smp ul{columns:2;column-gap:28px;padding-left:18px}.smp li{break-inside:avoid;margin:0 0 5px}@media(max-width:700px){.smp ul{columns:1}}
 .rtb{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 4px}
-.tags{margin:18px 0 0;font-family:Inter,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
-.pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:Inter,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}
+.tags{margin:18px 0 0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}
 .pop{position:fixed;inset:0;background:rgba(20,18,15,.55);z-index:90;display:flex;align-items:center;justify-content:center;padding:16px}.pop[hidden]{display:none}
 .pop-b{background:var(--bg);color:var(--ink);max-width:460px;width:100%;padding:26px 24px 18px;border:1px solid var(--ink);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}.pop-b h3{font-size:26px;margin:0 0 8px;line-height:1.15}.pop-b form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 8px}.pop-b input[type=email]{flex:1;min-width:180px;padding:12px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit}.pop-b form button{padding:12px 16px;background:var(--ink);color:var(--bg);border:0;font:inherit;cursor:pointer}
 .pop-x{position:absolute;top:6px;right:8px;border:0;background:none;font-size:26px;line-height:1;cursor:pointer;color:var(--ink);min-width:44px;min-height:44px}.pop-no{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;padding:8px 0}
 .nlg{list-style:none;padding:0;margin:14px 0 22px}.nlg li{padding:9px 0 9px 28px;border-bottom:1px solid var(--line);position:relative}.nlg li:before{content:"✓";position:absolute;left:4px;color:var(--accent);font-weight:700}
-.tpc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tpc label{border:1px solid currentColor;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:15px;display:inline-flex;gap:7px;align-items:center;min-height:40px;font-family:Inter,Arial,sans-serif}.tpc input[type=checkbox]{width:16px!important;height:16px!important;min-height:0!important;padding:0!important;margin:0;flex:none!important;accent-color:var(--accent)}
+.tpc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tpc label{border:1px solid currentColor;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:15px;display:inline-flex;gap:7px;align-items:center;min-height:40px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}.tpc input[type=checkbox]{width:16px!important;height:16px!important;min-height:0!important;padding:0!important;margin:0;flex:none!important;accent-color:var(--accent)}
 .ed h2{font-size:24px;margin:26px 0 8px;border-top:1px solid var(--ink);padding-top:14px}.ed .it{padding:10px 0;border-bottom:1px solid var(--line)}.ed .it h3{margin:0 0 4px;font-size:20px}.ed .it p{margin:0}
 .btnp{display:inline-block;background:var(--accent);color:#fff;padding:13px 20px;text-decoration:none;border-radius:4px;border:0;font:inherit;cursor:pointer}.btnp:hover{opacity:.9;color:#fff}
 @media print{.m,.bar,nav,footer,.sa,.pop,.np,.ticker{display:none!important}body{background:#fff;padding:0}.gpdf h2{break-after:avoid}.gpdf section{break-inside:auto}a{text-decoration:none;color:#000}}
@@ -325,7 +328,7 @@ def css_hash():
     return _CSSH[0]
 def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noindex=False):
     alts = "".join(f'<link rel="alternate" hreflang="{x}" href="{BASE}{P(path_tpl, x)}">' for x in LANGS)
-    xdef = "/" if P(path_tpl, "en") == "/en/" else P(path_tpl, "en")
+    xdef = P(path_tpl, "en")
     alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{xdef}">'
     url = BASE + P(path_tpl, l)
     if "application/ld+json" not in extra and not noindex:
@@ -583,7 +586,7 @@ def fix_links(b):
 def article_ld(a, l, url, imgs, grp):
     c = a[l]; x = X[l]; kind = kind_of(a)
     mod = a.get("updated") or a["date"]
-    art = {"@context": "https://schema.org", "@type": "NewsArticle" if kind == "brief" else "Article", "headline": c["title"][:110], "description": c["dek"], "inLanguage": l,
+    art = {"@context": "https://schema.org", "@type": "NewsArticle" if kind == "brief" else "Article", "headline": c["title"] if len(c["title"]) <= 110 else c["title"][:109].rsplit(" ", 1)[0], "description": c["dek"], "inLanguage": l,
            "datePublished": iso(a), "dateModified": (mod + "T" + tm(a) + ":00+08:00") if a.get("updated") else iso(a), "mainEntityOfPage": url, "image": imgs,
            "articleSection": sec_name(l, grp), "wordCount": words(a, l),
            "author": {"@type": "Organization", "name": "The Sumba Times", "url": BASE + f"/{l}/about/"},
@@ -600,11 +603,12 @@ def article_ld(a, l, url, imgs, grp):
     if kw: art["keywords"] = kw if isinstance(kw, str) else ", ".join(kw)
     im = img_of(a)
     if im:
-        art["image"] = [{"@type": "ImageObject", "url": u, "caption": im["caption"][l], "creditText": im.get("credit", ""), "license": im.get("license_url") or None,
-                         "acquireLicensePage": im.get("page") or None, "width": 1280 if "-1280" in u else 1200, "height": 853 if "-1280" in u else 630} for u in imgs]
+        art["image"] = [{"@type": "ImageObject", "url": u, "caption": im["caption"][l], "creditText": im.get("credit", ""), **({"license": im["license_url"]} if im.get("license_url") else {}),
+                         **({"acquireLicensePage": im["page"]} if im.get("page") else {}), "creator": {"@type": "Person", "name": im.get("credit") or "The Sumba Times"},
+                         "width": 1280 if "-1280" in u else 1200, "height": 853 if "-1280" in u else 630} for u in imgs]
         art["thumbnailUrl"] = f"{BASE}/img/{img_key(a)}-640.webp"
     ments = [x for x in all_items() if x is not a and x["section"] == "places" and url_of(x, l) in (c.get("body") or "") + place_links(fix_links(body_raw(a, l)), a, l)]
-    if ments: art["mentions"] = [{"@type": "TouristAttraction", "name": re.split(r"[,:]", x[l]["title"])[0], "url": BASE + url_of(x, l)} for x in ments[:8]]
+    if ments: art["mentions"] = [{"@type": "City" if x["slug"] in ("waingapu-town", "tambolaka-town", "waikabubak-town", "waibakul-town", "melolo-town", "kodi") else "TouristAttraction", "name": re.split(r"[,:]", x[l]["title"])[0], "url": BASE + url_of(x, l)} for x in ments[:8]]
     if c.get("answer"):
         art["abstract"] = c["answer"]
         art["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": [".ans p", "h1", ".dek"]}
@@ -668,10 +672,10 @@ def article_page(a, l):
     _ds = seo_extra.dataset_ld(a, l, url)
     if _ds: ld = (ld if isinstance(ld, list) else [ld]) + [_ds]
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><meta property="article:published_time" content="{iso(a)}"><meta property="article:section" content="{esc(sec_name(l,grp))}">'
-    if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
+    if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}T{tm(a)}:00+08:00">'
     kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
     if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
-    s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
+    s = head(l, (c.get("seo_title") or c["title"]) + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l)
     if a.get("dateline"):
@@ -942,12 +946,12 @@ def notfound(l):
 
 def feed(l):
     its = ""
-    for a in all_items():
+    for a in sorted(all_items(), key=dt, reverse=True)[:60]:
         im = img_of(a)
-        enc = f'<enclosure url="{BASE}/img/{img_key(a)}-1280.webp" type="image/webp" length="0"/>' if im else ""
+        enc = f'<enclosure url="{BASE}/img/{img_key(a)}-1280.webp" type="image/webp" length="150000"/>' if im else ""
         full = "<![CDATA[" + (f'<p><img src="{BASE}/img/{img_key(a)}-1280.webp" alt=""></p>' if im else "") + body_raw(a, l).replace("]]>", "") + "]]>"
         its += f"<item><title>{esc(a[l]['title'])}</title><link>{BASE}{url_of(a,l)}</link><guid>{BASE}{url_of(a,l)}</guid><description>{esc(a[l]['dek'])}</description><content:encoded>{full}</content:encoded><category>{esc(sec_name(l,group_of(a)))}</category><pubDate>{dt(a).strftime('%a, %d %b %Y %H:%M:00 +0800')}</pubDate>{enc}</item>"
-    write(f"/{l}/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The Sumba Times</title><link>{BASE}/{l}/</link><description>{esc(UI[l]["tagline"])}</description><language>{l}</language>{its}</channel></rss>')
+    write(f"/{l}/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Sumba Times</title><link>{BASE}/{l}/</link><atom:link href="{BASE}/{l}/feed.xml" rel="self" type="application/rss+xml"/><lastBuildDate>{NOW.strftime("%a, %d %b %Y %H:%M:%S +0800")}</lastBuildDate><description>{esc(UI[l]["tagline"])}</description><language>{l}</language>{its}</channel></rss>')
 
 def root():
     s = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Sumba Times · News, culture and travel from Sumba, Indonesia</title>
@@ -976,13 +980,13 @@ def sitemaps():
         for l in LANGS: urls.append(f"<url><loc>{BASE}{P(tpl, l)}</loc>{lm}{alts}</url>")
     add("/{l}/", NOW.date().isoformat())
     add("/{l}/week/", NOW.date().isoformat())
-    add("/{l}/sitemap/", NOW.date().isoformat())
-    add("/{l}/newsletter/", NOW.date().isoformat())
+    add("/{l}/sitemap/")
+    add("/{l}/newsletter/")
     for ed in sorted(glob.glob(os.path.join(OUT, "en", "newsletter", "20*"))): add("/{l}/newsletter/" + os.path.basename(ed) + "/")
-    for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
+    for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s == "news" else None)
     add("/{l}/about/")
     for m in MODULES:
-        for t in getattr(m, "SITEMAP", []): add(t, NOW.date().isoformat())
+        for t in getattr(m, "SITEMAP", []): add(t, NOW.date().isoformat() if t in getattr(m, "DAILY", ()) else None)
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
     imgs = []
     for a in all_items():
@@ -1041,10 +1045,10 @@ def redirects():
             for o in (a.get("old_slugs") or {}).get(l, []): r[f"/{l}/{a['section']}/{o}/"] = url_of(a, l)
     write("/_redirects.json", json.dumps(r))
 
-SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});\nself.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/'))return;\n if(u.pathname.startsWith('/img/')){e.respondWith(caches.open(V).then(c=>c.match(r).then(m=>m||fetch(r).then(x=>{if(x.ok)c.put(r,x.clone());return x}))));return}\n if(r.mode==='navigate'||(r.headers.get('accept')||'').includes('text/html')){e.respondWith(fetch(r).then(x=>{if(x.ok){const y=x.clone();caches.open(V).then(c=>c.put(r,y))}return x}).catch(()=>caches.match(r).then(m=>m||caches.match('/'+(u.pathname.split('/')[1]||'en')+'/plan/')||new Response('<h1>Offline</h1>',{headers:{'content-type':'text/html'}}))))}});"
+SW_JS = "const V='tst-__V__';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});\nself.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/'))return;\n if(u.pathname.startsWith('/img/')){e.respondWith(caches.open(V).then(c=>c.match(r).then(m=>m||fetch(r).then(x=>{if(x.ok)c.put(r,x.clone());return x}))));return}\n if(r.mode==='navigate'||(r.headers.get('accept')||'').includes('text/html')){e.respondWith(fetch(r).then(x=>{if(x.ok){const y=x.clone();caches.open(V).then(c=>c.put(r,y))}return x}).catch(()=>caches.match(r).then(m=>m||caches.match('/'+(u.pathname.split('/')[1]||'en')+'/plan/')||new Response('<h1>Offline</h1>',{headers:{'content-type':'text/html'}}))))}});"
 
 def assets():
-    write("/sw.js", SW_JS)
+    write("/sw.js", SW_JS.replace("__V__", css_hash()))
     for l in LANGS:
         footer_scripts(l); write(_FJS[l][1], _FJS[l][2])
     write("/BingSiteAuth.xml", '<?xml version="1.0"?>\n<users>\n\t<user>05B8339A86426AD018D8A40369B078EF</user>\n</users>')  # Bing Webmaster Tools verification (12 Nov 2026)

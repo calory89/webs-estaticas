@@ -37,9 +37,9 @@ TAGS = {
  "west-sumba": (["tambolaka", "waikabubak", "kodi", "southwest-sumba", "west-sumba", "sumba-barat", "suroccidental", "occidental"], {"en": "Tambolaka and West Sumba", "es": "Tambolaka y el oeste de Sumba", "id": "Tambolaka dan Sumba bagian barat"},
   {"en": "News and guides from Tambolaka, Waikabubak and Kodi: lagoons, traditional villages and the Pasola fields.", "es": "Noticias y guías de Tambolaka, Waikabubak y Kodi: lagunas, pueblos tradicionales y campos de Pasola.", "id": "Berita dan panduan dari Tambolaka, Waikabubak, dan Kodi: laguna, kampung adat, dan arena Pasola."}),
 }
-T = {"en": {"topics": "Topics", "all": "All topics", "desc": "Browse The Sumba Times by topic.", "reviewed": "Reviewed by the newsroom on"},
-     "es": {"topics": "Temas", "all": "Todos los temas", "desc": "Explora The Sumba Times por temas.", "reviewed": "Revisado por la redacción el"},
-     "id": {"topics": "Topik", "all": "Semua topik", "desc": "Jelajahi The Sumba Times berdasarkan topik.", "reviewed": "Ditinjau redaksi pada"}}
+T = {"en": {"topics": "Topics", "all": "All topics", "desc": "Browse The Sumba Times by topic: Pasola, ikat, flights, ferries, beaches, weather, land and more, with every story and guide on each.", "reviewed": "Reviewed by the newsroom on"},
+     "es": {"topics": "Temas", "all": "Todos los temas", "desc": "Explora The Sumba Times por temas: Pasola, ikat, vuelos, ferris, playas, tiempo, tierra y más, con todas las noticias y guías de cada uno.", "reviewed": "Revisado por la redacción el"},
+     "id": {"topics": "Topik", "all": "Semua topik", "desc": "Jelajahi The Sumba Times berdasarkan topik: Pasola, tenun ikat, penerbangan, feri, pantai, cuaca, tanah, dan lainnya, lengkap dengan semua berita dan panduan.", "reviewed": "Ditinjau redaksi pada"}}
 _cache = {}
 
 def tags_of(a):
@@ -67,8 +67,8 @@ def reviewed_html(g, a, l):
     d = a.get("updated") or a["date"]
     return f'<span>{T[l]["reviewed"]} <time datetime="{d}">{g["fdate"](dict(a, date=d), l, False)}</time></span>'
 
-CSS = """.tags{margin:18px 0 0;font-family:Inter,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
-.pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:Inter,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}"""
+CSS = """.tags{margin:18px 0 0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}"""
 SITEMAP = ["/{l}/topic/"] + ["/{l}/topic/" + t + "/" for t in TAGS]
 
 def build(g):
@@ -80,7 +80,7 @@ def build(g):
             tpl = "/{l}/topic/" + t + "/"
             ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": names[l], "description": intros[l], "inLanguage": l, "url": BASE + tpl.format(l=l),
                   "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": BASE + g["url_of"](a, l), "name": a[l]["title"]} for i, a in enumerate(its[:50])]}}
-            pg = g["head"](l, f'{names[l]} · The Sumba Times', intros[l], tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + g["masthead"](l, tpl)
+            pg = g["head"](l, {"en": f"{names[l]}: news and guides", "es": f"{names[l]}: noticias y guías", "id": f"{names[l]}: berita dan panduan"}[l] + " · The Sumba Times", intros[l], tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + g["masthead"](l, tpl)
             pg += f'<main id="main" class="w"><div class="crumbs"><a href="/{l}/">{g["X"][l]["home"]}</a> › <a href="/{l}/topic/">{T[l]["topics"]}</a></div><div class="sec-h"><h1>{esc(names[l])}</h1><p>{esc(intros[l])}</p></div><div class="grid">{"".join(g["card"](a, l) for a in its)}</div><div class="nar" style="margin-top:26px">{g["subscribe"](l, False, None, "topic")}</div></main>' + g["footer"](l)
             g["write"](tpl.format(l=l), pg)
             idx += f'<article class="wk"><h2><a href="/{l}/topic/{t}/">{esc(names[l])}</a> <small>({len(its)})</small></h2><p>{esc(intros[l])}</p></article>'

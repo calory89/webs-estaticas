@@ -8,6 +8,7 @@ no hotel names; never the em or en dash. To update the flights page: re-open eac
 import json, datetime, html, re
 
 BASE = "https://thesumbatimes.com"
+DAILY = ("/{l}/travel-status/", "/{l}/flights/")
 SITEMAP = ["/{l}/flights/", "/{l}/events/", "/{l}/travel-status/"]
 CSS = """.lv-upd{font:14px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--muted);margin:0 0 1em}
 .lv td,.lv th{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.lv th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
