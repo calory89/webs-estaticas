@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs
-MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months
+MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -399,7 +399,7 @@ else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://the
 
 FOOT = [("/{l}/plan/", {"en": "Plan your trip", "es": "Planifica tu viaje", "id": "Rencanakan perjalanan"}), ("/{l}/flights/", {"en": "Flights to Sumba", "es": "Vuelos a Sumba", "id": "Penerbangan ke Sumba"}),
         ("/{l}/travel-status/", {"en": "Travel status today", "es": "Estado del viaje hoy", "id": "Kondisi perjalanan hari ini"}), ("/{l}/events/", {"en": "Events calendar", "es": "Calendario de eventos", "id": "Kalender acara"}),
-        ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/best/", {"en": "Best of Sumba", "es": "Lo mejor de Sumba", "id": "Terbaik di Sumba"}), ("/{l}/faq/", {"en": "FAQ", "es": "Preguntas frecuentes", "id": "Tanya jawab"}), ("/{l}/glossary/", {"en": "Glossary", "es": "Glosario", "id": "Glosarium"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
+        ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/best/", {"en": "Best of Sumba", "es": "Lo mejor de Sumba", "id": "Terbaik di Sumba"}), ("/{l}/sumba-in/", {"en": "Sumba month by month", "es": "Sumba mes a mes", "id": "Sumba bulan demi bulan"}), ("/{l}/faq/", {"en": "FAQ", "es": "Preguntas frecuentes", "id": "Tanya jawab"}), ("/{l}/glossary/", {"en": "Glossary", "es": "Glosario", "id": "Glosarium"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
         ("/{l}/press/", {"en": "Press", "es": "Prensa", "id": "Pers"}), ("/{l}/sitemap/", {"en": "Site map", "es": "Mapa del sitio", "id": "Peta situs"})]
 _FJS = {}
 def footer_scripts(l):
