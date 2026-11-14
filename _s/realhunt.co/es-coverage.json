@@ -1,44 +1,61 @@
 {
- "noindex_copies": 77,
+ "noindex_copies": 74,
  "written_by_hand": {
-  "pages": 580,
-  "words": 227284,
-  "english": 0,
-  "failed": []
+  "pages": 610,
+  "words": 241829,
+  "english": 2,
+  "failed": [
+   {
+    "url": "https://realhunt.co/es/deal/fr-saint-vaury-136k-559424",
+    "english": 1,
+    "words": 440,
+    "hits": [
+     "near"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/homes/france",
+    "english": 1,
+    "words": 1358,
+    "hits": [
+     "near"
+    ]
+   }
+  ]
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
  "twins": 704,
  "groups": {
   "homes": {
-   "pages": 561,
-   "twins": 561,
+   "pages": 591,
+   "twins": 591,
    "words": 0,
    "english": 0,
-   "by_hand": 561,
+   "by_hand": 591,
    "spanish_pct": 0
   },
   "places": {
-   "pages": 151,
-   "twins": 151,
-   "words": 68021,
-   "english": 0,
+   "pages": 156,
+   "twins": 153,
+   "words": 70897,
+   "english": 4,
    "by_hand": 18,
-   "spanish_pct": 100
+   "spanish_pct": 99.99
   },
   "pages": {
    "pages": 41,
-   "twins": 8,
-   "words": 3133,
-   "english": 418,
+   "twins": 7,
+   "words": 3119,
+   "english": 419,
    "by_hand": 1,
-   "spanish_pct": 86.66
+   "spanish_pct": 86.57
   },
   "content": {
-   "pages": 641,
-   "twins": 564,
-   "words": 536327,
-   "english": 701,
+   "pages": 644,
+   "twins": 563,
+   "words": 542994,
+   "english": 715,
    "spanish_pct": 99.87
   },
   "top": {
@@ -49,8 +66,49 @@
    "spanish_pct": 89.02
   }
  },
- "not_published": 544,
+ "not_published": 552,
  "not_published_sample": [
+  {
+   "url": "https://realhunt.co/homes/france/under-150000",
+   "english": 1,
+   "words": 1331,
+   "hits": [
+    "near"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/homes/france/village-houses",
+   "english": 1,
+   "words": 871,
+   "hits": [
+    "near"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/homes/france/creuse",
+   "english": 2,
+   "words": 205,
+   "hits": [
+    "near",
+    "near"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/sources/bienici-com",
+   "english": 1,
+   "words": 983,
+   "hits": [
+    "near"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/new",
+   "english": 1,
+   "words": 1000,
+   "hits": [
+    "near"
+   ]
+  },
   {
    "url": "https://realhunt.co/extension",
    "english": 13,
@@ -246,7 +304,7 @@
   {
    "url": "https://realhunt.co/cheap-houses",
    "english": 19,
-   "words": 728,
+   "words": 742,
    "hits": [
     "Cheap",
     "houses",
@@ -500,7 +558,7 @@
   {
    "url": "https://realhunt.co/cheap-houses/with-garden-in-spain",
    "english": 4,
-   "words": 1764,
+   "words": 1808,
    "hits": [
     "from",
     "Checked",
@@ -542,9 +600,9 @@
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-sweden",
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-france",
    "english": 4,
-   "words": 1116,
+   "words": 874,
    "hits": [
     "from",
     "Checked",
@@ -553,9 +611,9 @@
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-france",
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-sweden",
    "english": 4,
-   "words": 635,
+   "words": 1116,
    "hits": [
     "from",
     "Checked",
@@ -660,8 +718,8 @@
   },
   {
    "url": "https://realhunt.co/cheap-houses/stone-houses",
-   "english": 7,
-   "words": 1800,
+   "english": 8,
+   "words": 2123,
    "hits": [
     "homes",
     "made",
@@ -669,13 +727,14 @@
     "from",
     "Checked",
     "by",
-    "updated"
+    "updated",
+    "near"
    ]
   },
   {
    "url": "https://realhunt.co/cheap-houses/stone-houses-in-spain",
    "english": 4,
-   "words": 639,
+   "words": 684,
    "hits": [
     "from",
     "Checked",
@@ -707,13 +766,14 @@
   },
   {
    "url": "https://realhunt.co/cheap-houses/stone-houses-in-france",
-   "english": 4,
-   "words": 565,
+   "english": 5,
+   "words": 884,
    "hits": [
     "from",
     "Checked",
     "by",
-    "updated"
+    "updated",
+    "near"
    ]
   },
   {
@@ -838,7 +898,7 @@
   {
    "url": "https://realhunt.co/cheap-houses/with-a-terrace",
    "english": 6,
-   "words": 2112,
+   "words": 2118,
    "hits": [
     "homes",
     "with",
@@ -851,7 +911,7 @@
   {
    "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-spain",
    "english": 4,
-   "words": 1873,
+   "words": 1930,
    "hits": [
     "from",
     "Checked",
@@ -893,9 +953,9 @@
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-sweden",
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-france",
    "english": 4,
-   "words": 681,
+   "words": 945,
    "hits": [
     "from",
     "Checked",
@@ -904,9 +964,9 @@
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-france",
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-sweden",
    "english": 4,
-   "words": 755,
+   "words": 681,
    "hits": [
     "from",
     "Checked",
@@ -986,6 +1046,17 @@
    ]
   },
   {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-portugal",
+   "english": 4,
+   "words": 594,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
    "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-switzerland",
    "english": 34,
    "words": 580,
@@ -1031,7 +1102,7 @@
   {
    "url": "https://realhunt.co/cheap-houses/village-houses-in-spain",
    "english": 5,
-   "words": 1813,
+   "words": 1865,
    "hits": [
     "from",
     "Checked",
@@ -1078,21 +1149,22 @@
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-sweden",
-   "english": 5,
-   "words": 1269,
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-france",
+   "english": 6,
+   "words": 1445,
    "hits": [
     "from",
     "Checked",
     "by",
     "updated",
-    "in"
+    "in",
+    "near"
    ]
   },
   {
-   "url": "https://realhunt.co/cheap-houses/village-houses-in-france",
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-sweden",
    "english": 5,
-   "words": 999,
+   "words": 1269,
    "hits": [
     "from",
     "Checked",
@@ -1117,6 +1189,18 @@
    "url": "https://realhunt.co/cheap-houses/village-houses-in-greece",
    "english": 5,
    "words": 595,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-portugal",
+   "english": 5,
+   "words": 1014,
    "hits": [
     "from",
     "Checked",
@@ -5894,118 +5978,6 @@
    "url": "https://realhunt.co/top/tulum/waye-aldea-zama-tulum",
    "english": 9,
    "words": 84,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/soul-living-tulum-la-veleta-tulum",
-   "english": 9,
-   "words": 93,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/senzik-tulum-tulum",
-   "english": 9,
-   "words": 80,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/gran-tulum-aldea-zama-tulum",
-   "english": 9,
-   "words": 84,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/zelen-akumal-tulum",
-   "english": 9,
-   "words": 71,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/baikal-residences-akumal-tulum",
-   "english": 9,
-   "words": 83,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/xatum-aldea-zama-tulum",
-   "english": 9,
-   "words": 84,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/tulum/green-view-tulum-tulum",
-   "english": 9,
-   "words": 86,
    "hits": [
     "Ranked",
     "in",
