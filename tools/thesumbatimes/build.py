@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live, press
-MODULES = [seo_extra, reader_tools, pages_live, press]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust
+MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -419,6 +419,7 @@ def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><footer><div class="links">{links}</div><div class="links l2">{foot_links(l)}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+{pages_trust.trust_footer_links(l)}<br>
 <a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{footer_scripts(l)}</body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
@@ -591,7 +592,7 @@ def article_ld(a, l, url, imgs, grp):
            "datePublished": iso(a), "dateModified": (mod + "T" + tm(a) + ":00+08:00") if a.get("updated") else iso(a), "mainEntityOfPage": url, "image": imgs,
            "articleSection": sec_name(l, grp), "wordCount": words(a, l),
            "author": {"@type": "Organization", "name": "The Sumba Times", "url": BASE + f"/{l}/about/"},
-           "publisher": {"@type": "Organization", "name": "The Sumba Times", "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}},
+           "publisher": {"@type": "NewsMediaOrganization", "@id": BASE + "/#organization", "name": "The Sumba Times", "url": BASE + "/", "publishingPrinciples": pages_trust.publishing_principles(l), "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}},
            "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"}}
     if a.get("sources"): art["citation"] = [h for _, h in a["sources"]]
     art["isAccessibleForFree"] = True
@@ -775,7 +776,7 @@ def home(l):
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "The Sumba Times", "url": BASE + f"/{l}/", "inLanguage": l,
            "potentialAction": {"@type": "SearchAction", "target": BASE + f"/{l}/search/?q={{search_term_string}}", "query-input": "required name=search_term_string"}},
           {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE, "logo": BASE + "/apple-touch-icon.png",
-           "publishingPrinciples": BASE + f"/{l}/about/", "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
+           **pages_trust.org_ld_extra(l), "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
     tk = img_key(top)
     pre = f'<link rel="preload" as="image" href="/img/{tk}-1280.webp" imagesrcset="/img/{tk}-640.webp 640w, /img/{tk}-1280.webp 1280w" imagesizes="(max-width: 980px) 100vw, 620px">'
     s = head(l, "The Sumba Times · " + u["tagline"], u["tagline"] + ". " + x["daily"] + ".", tpl, extra=pre + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, front=True)

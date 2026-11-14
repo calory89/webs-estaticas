@@ -175,7 +175,7 @@ def org_ld(g, l):
             "areaServed": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"},
             "contactPoint": {"@type": "ContactPoint", "contactType": "press", "email": c, "availableLanguage": ["English", "Spanish", "Indonesian"]},
             "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"},
-            "publishingPrinciples": f"{BASE}/{l}/about/", "correctionsPolicy": f"{BASE}/{l}/about/", "ownershipFundingInfo": f"{BASE}/{l}/about/"}
+            **__import__("pages_trust").org_ld_extra(l)}
 
 def page(g, l):
     s = S[l]; c = g["CONTACT"]; st = stats(g); tpl = SITEMAP[0]
