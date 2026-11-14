@@ -1445,6 +1445,1576 @@ if(mq&&mq.addEventListener)mq.addEventListener('change',all);
 /* external links opened in a new tab never get access to this page */
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[target=_blank]'):null;if(a){var r=(a.getAttribute('rel')||'');if(!/noopener/.test(r))a.setAttribute('rel',(r+' noopener').trim())}},true);
 })();`;
+var city_names_default = {
+	"a-coruna-spain": {
+		"da": "La Coruña",
+		"es": "La Coruña",
+		"fr": "La Corogne",
+		"it": "La Coruña",
+		"pt": "Corunha"
+	},
+	"aachen-germany": {
+		"es": "Aquisgrán",
+		"fr": "Aix-la-Chapelle",
+		"it": "Aquisgrana"
+	},
+	"aalst-belgium": { "fr": "Alost" },
+	"abidjan-ivory-coast": { "es": "Abiyán" },
+	"abu-dhabi-unitedarabemirates": { "fr": "Abou Dabi" },
+	"abuja-nigeria": { "es": "Abuya" },
+	"accra-ghana": {
+		"es": "Acra",
+		"pt": "Acra"
+	},
+	"addis-ababa-ethiopia": {
+		"de": "Addis Abeba",
+		"es": "Adís Abeba",
+		"fr": "Addis-Abeba",
+		"it": "Addis Abeba",
+		"pt": "Adis Abeba"
+	},
+	"adelaide-australia": {
+		"es": "Adelaida",
+		"fr": "Adélaïde"
+	},
+	"agrigento-italy": {
+		"de": "Agrigent",
+		"fr": "Agrigente"
+	},
+	"ajman-united-arab-emirates": {
+		"de": "Adschman",
+		"it": "Ajmān"
+	},
+	"alessandria-italy": {
+		"fr": "Alexandrie",
+		"pt": "Alexandria"
+	},
+	"algeciras-spain": { "fr": "Algésiras" },
+	"almaty-kazakhstan": { "es": "Alma Ata" },
+	"almeria-spain": { "pt": "Almeria" },
+	"altea-spain": { "fr": "Altée" },
+	"amman-jordan": {
+		"es": "Amán",
+		"pt": "Amã"
+	},
+	"amsterdam-netherlands": {
+		"es": "Ámsterdam",
+		"pt": "Amesterdão"
+	},
+	"ancona-italy": { "fr": "Ancône" },
+	"andorra-la-vella-andorra": {
+		"es": "Andorra la Vieja",
+		"fr": "Andorre-la-Vieille",
+		"pt": "Andorra-a-Velha"
+	},
+	"antwerp-belgium": {
+		"da": "Antwerpen",
+		"de": "Antwerpen",
+		"es": "Amberes",
+		"fr": "Anvers",
+		"it": "Anversa",
+		"pt": "Antuérpia"
+	},
+	"aqaba-jordan": {
+		"da": "Akaba",
+		"es": "Áqaba"
+	},
+	"arcachon-france": { "es": "Arcachón" },
+	"arles-france": { "es": "Arlés" },
+	"arnhem-netherlands": { "de": "Arnheim" },
+	"arras-france": { "es": "Arrás" },
+	"assisi-italy": {
+		"es": "Asís",
+		"fr": "Assise",
+		"pt": "Assis"
+	},
+	"astana-kazakhstan": { "es": "Astaná" },
+	"asuncion-paraguay": {
+		"da": "Asunción",
+		"de": "Asunción",
+		"es": "Asunción",
+		"it": "Asunción",
+		"pt": "Assunção"
+	},
+	"aswan-egypt": {
+		"de": "Assuan",
+		"es": "Asuán",
+		"fr": "Assouan",
+		"it": "Assuan",
+		"pt": "Assuão"
+	},
+	"athens-greece": {
+		"da": "Athen",
+		"de": "Athen",
+		"es": "Atenas",
+		"fr": "Athènes",
+		"it": "Atene",
+		"pt": "Atenas"
+	},
+	"atyrau-kazakhstan": { "fr": "Atyraou" },
+	"auburn-alabama-united-states": {
+		"da": "Auburn",
+		"de": "Auburn",
+		"es": "Auburn",
+		"fr": "Auburn",
+		"it": "Auburn",
+		"pt": "Auburn"
+	},
+	"augsburg-germany": {
+		"es": "Augsburgo",
+		"fr": "Augsbourg",
+		"it": "Augusta",
+		"pt": "Augsburgo"
+	},
+	"aurangabad-india": { "fr": "Aurangābād" },
+	"avignon-france": {
+		"es": "Aviñón",
+		"it": "Avignone",
+		"pt": "Avinhão"
+	},
+	"avila-spain": { "it": "Avila" },
+	"bad-homburg-vor-der-hohe-germany": { "es": "Bad Homburg" },
+	"baghdad-iraq": {
+		"da": "Bagdad",
+		"de": "Bagdad",
+		"es": "Bagdad",
+		"fr": "Bagdad",
+		"pt": "Bagdá"
+	},
+	"bahia-blanca-argentina": {
+		"da": "Bahía Blanca",
+		"de": "Bahía Blanca",
+		"es": "Bahía Blanca",
+		"fr": "Bahía Blanca",
+		"it": "Bahía Blanca",
+		"pt": "Bahía Blanca"
+	},
+	"balneario-camboriu-brazil": {
+		"de": "Balneário Camboriú",
+		"es": "Balneario Camboriú",
+		"fr": "Balneário Camboriú",
+		"it": "Balneário Camboriú",
+		"pt": "Balneário Camboriú"
+	},
+	"baltimore-united-states": { "it": "Baltimora" },
+	"bangkok-thailand": { "pt": "Banguecoque" },
+	barcelona: {
+		"fr": "Barcelone",
+		"it": "Barcellona"
+	},
+	"basel-switzerland": {
+		"es": "Basilea",
+		"fr": "Bâle",
+		"it": "Basilea",
+		"pt": "Basileia"
+	},
+	"battambang-cambodia": { "es": "Ciudad de Battambang" },
+	"batumi-georgia": { "fr": "Batoumi" },
+	"bayonne-france": {
+		"es": "Bayona",
+		"pt": "Baiona"
+	},
+	"beijing-china": {
+		"de": "Peking",
+		"es": "Pekín",
+		"fr": "Pékin",
+		"it": "Pechino",
+		"pt": "Pequim"
+	},
+	"beirut-lebanon": {
+		"fr": "Beyrouth",
+		"pt": "Beirute"
+	},
+	"belem-brazil": {
+		"da": "Belém",
+		"de": "Belém",
+		"es": "Belém",
+		"fr": "Belém",
+		"it": "Belém",
+		"pt": "Belém"
+	},
+	"belgrade-serbia": {
+		"da": "Beograd",
+		"de": "Belgrad",
+		"es": "Belgrado",
+		"it": "Belgrado",
+		"pt": "Belgrado"
+	},
+	"benicassim-spain": {
+		"es": "Benicasim",
+		"it": "Benicasim",
+		"pt": "Benicasim"
+	},
+	"bergamo-italy": {
+		"es": "Bérgamo",
+		"fr": "Bergame",
+		"pt": "Bérgamo"
+	},
+	"berlin-germany": {
+		"es": "Berlín",
+		"it": "Berlino",
+		"pt": "Berlim"
+	},
+	"bern-switzerland": {
+		"es": "Berna",
+		"fr": "Berne",
+		"it": "Berna",
+		"pt": "Berna"
+	},
+	"besancon-france": { "es": "Besanzón" },
+	"bielsko-biaa-poland": { "de": "Bielitz-Biala" },
+	"bikaner-india": { "fr": "Bîkâner" },
+	"birmingham-alabama-united-states": {
+		"da": "Birmingham",
+		"de": "Birmingham",
+		"es": "Birmingham",
+		"fr": "Birmingham",
+		"it": "Birmingham",
+		"pt": "Birmingham"
+	},
+	"blankenberge-belgium": { "fr": "Blanckenberghe" },
+	"bogor-indonesia": { "es": "Bógor" },
+	"bogota-colombia": {
+		"fr": "Bogota",
+		"it": "Bogotà"
+	},
+	"bologna-italy": {
+		"es": "Bolonia",
+		"fr": "Bologne",
+		"pt": "Bolonha"
+	},
+	"bolzano-italy": { "de": "Bozen" },
+	"bonn-germany": { "pt": "Bona" },
+	"bordeaux-france": {
+		"es": "Burdeos",
+		"pt": "Bordéus"
+	},
+	"braganca-portugal": {
+		"da": "Braganca",
+		"es": "Braganza",
+		"fr": "Bragance",
+		"it": "Braganza"
+	},
+	"brasilia-brazil": {
+		"es": "Brasilia",
+		"fr": "Brasilia",
+		"it": "Brasilia"
+	},
+	"breda-netherlands": { "fr": "Bréda" },
+	"bregenz-austria": { "fr": "Brégence" },
+	"bremen-germany": {
+		"fr": "Brême",
+		"it": "Brema"
+	},
+	"brescia-italy": { "pt": "Bréscia" },
+	"brindisi-italy": { "es": "Bríndisi" },
+	"bruges-belgium": {
+		"da": "Brugge",
+		"de": "Brügge",
+		"es": "Brujas"
+	},
+	"bucharest-romania": {
+		"da": "Bukarest",
+		"de": "Bukarest",
+		"es": "Bucarest",
+		"fr": "Bucarest",
+		"it": "Bucarest",
+		"pt": "Bucareste"
+	},
+	"budapest-hungary": { "pt": "Budapeste" },
+	"budva-montenegro": { "it": "Budua" },
+	"buffalo-united-states": { "es": "Búfalo" },
+	"busan-southkorea": { "fr": "Pusan" },
+	"cadiz-spain": {
+		"fr": "Cadix",
+		"it": "Cadice",
+		"pt": "Cádis"
+	},
+	"cairo-egypt": {
+		"da": "Kairo",
+		"de": "Kairo",
+		"es": "El Cairo",
+		"fr": "Le Caire",
+		"it": "Il Cairo"
+	},
+	"cali-colombia": {
+		"da": "Santiago de Cali",
+		"pt": "Cáli"
+	},
+	"cambridge-massachusetts-united-states": {
+		"da": "Cambridge",
+		"de": "Cambridge",
+		"es": "Cambridge",
+		"fr": "Cambridge",
+		"it": "Cambridge",
+		"pt": "Cambridge"
+	},
+	"can-tho-vietnam": {
+		"de": "Cần Thơ",
+		"es": "Cần Thơ",
+		"fr": "Cần Thơ",
+		"it": "Cần Thơ"
+	},
+	"canberra-australia": { "pt": "Camberra" },
+	"cape-coral-united-states": { "es": "Cabo Coral" },
+	"cape-town-southafrica": {
+		"de": "Kapstadt",
+		"es": "Ciudad del Cabo",
+		"fr": "Le Cap",
+		"it": "Città del Capo",
+		"pt": "Cidade do Cabo"
+	},
+	"carcassonne-france": { "es": "Carcasona" },
+	"cartagena-spain": { "fr": "Carthagène" },
+	"cascais-portugal": { "es": "Cascaes" },
+	"caserta-italy": { "fr": "Caserte" },
+	"catania-italy": {
+		"fr": "Catane",
+		"pt": "Catânia"
+	},
+	"cayenne-french-guiana": {
+		"es": "Cayena",
+		"it": "Caienna",
+		"pt": "Caiena"
+	},
+	"cebu-city-philippines": {
+		"es": "Cebú",
+		"fr": "Cebu",
+		"it": "Cebu",
+		"pt": "Cidade de Cebu"
+	},
+	"cefalu-italy": { "es": "Cefalú" },
+	"chania-greece": {
+		"es": "La Canea",
+		"fr": "La Canée",
+		"it": "La Canea"
+	},
+	"cherkasy-ukraine": {
+		"da": "Tjerkassy",
+		"de": "Tscherkassy",
+		"fr": "Tcherkassy",
+		"it": "Čerkasy",
+		"pt": "Tcherkássi"
+	},
+	"chernivtsi-ukraine": {
+		"da": "Tjernivtsi",
+		"de": "Czernowitz",
+		"es": "Chernivetsi",
+		"fr": "Tchernivtsi",
+		"it": "Černivci"
+	},
+	"chisinau-moldova": {
+		"da": "Chișinău",
+		"de": "Kischinau",
+		"es": "Chisináu",
+		"fr": "Chișinău",
+		"it": "Chișinău",
+		"pt": "Chișinău"
+	},
+	"chorzow-poland": {
+		"da": "Chorzów",
+		"de": "Chorzów",
+		"es": "Chorzów",
+		"fr": "Chorzów",
+		"it": "Chorzów",
+		"pt": "Chorzów"
+	},
+	"ciudad-real-spain": { "pt": "Cidade Real" },
+	"coimbra-portugal": { "es": "Coímbra" },
+	"cologne-germany": {
+		"da": "Köln",
+		"de": "Köln",
+		"es": "Colonia",
+		"it": "Colonia",
+		"pt": "Colónia"
+	},
+	"comayagua-honduras": { "de": "Ciudad de Comayagua" },
+	"como-italy": { "fr": "Côme" },
+	"concepcion-chile": {
+		"da": "Concepción",
+		"de": "Concepción",
+		"es": "Concepción",
+		"fr": "Concepción",
+		"it": "Concepción",
+		"pt": "Concepción"
+	},
+	"constanta-romania": {
+		"da": "Constanța",
+		"de": "Constanța",
+		"es": "Constanza",
+		"fr": "Constanța",
+		"it": "Costanza",
+		"pt": "Constança"
+	},
+	"copenhagen-denmark": {
+		"da": "København",
+		"de": "Kopenhagen",
+		"es": "Copenhague",
+		"fr": "Copenhague",
+		"it": "Copenaghen",
+		"pt": "Copenhaga"
+	},
+	"cordoba-argentina": { "pt": "Córdova" },
+	"cordoba-mexico": {
+		"de": "Córdoba",
+		"es": "Córdoba",
+		"fr": "Córdoba",
+		"it": "Córdoba",
+		"pt": "Córdoba"
+	},
+	"cordoba-spain": {
+		"fr": "Cordoue",
+		"it": "Cordova",
+		"pt": "Córdova"
+	},
+	"corfu-greece": {
+		"da": "Korfu",
+		"de": "Korfu",
+		"es": "Corfú",
+		"fr": "Corfou",
+		"it": "Corfù"
+	},
+	"cotonou-benin": {
+		"es": "Cotonú",
+		"pt": "Cotonu"
+	},
+	"cremona-italy": { "fr": "Crémone" },
+	"cuiaba-brazil": {
+		"da": "Cuiabá",
+		"de": "Cuiabá",
+		"es": "Cuiabá",
+		"fr": "Cuiabá",
+		"it": "Cuiabá",
+		"pt": "Cuiabá"
+	},
+	"culiacan-mexico": {
+		"da": "Culiacán",
+		"de": "Culiacán",
+		"es": "Culiacán",
+		"fr": "Culiacán",
+		"it": "Culiacán",
+		"pt": "Culiacán"
+	},
+	"cuneo-italy": { "fr": "Coni" },
+	"cusco-peru": { "fr": "Cuzco" },
+	"da-nang-vietnam": {
+		"de": "Đà Nẵng",
+		"es": "Đà Nẵng",
+		"fr": "Đà Nẵng",
+		"pt": "Đà Nẵng"
+	},
+	"dakar-senegal": { "pt": "Dacar" },
+	"dar-es-salaam-tanzania": {
+		"da": "Dar es-Salaam",
+		"de": "Daressalam",
+		"es": "Dar es-Salaam",
+		"fr": "Dar es Salam"
+	},
+	"denia-spain": { "es": "Denia" },
+	"denpasar-indonesia": { "pt": "Dempassar" },
+	"detroit-united-states": { "fr": "Détroit" },
+	"dijon-france": { "it": "Digione" },
+	"dresden-germany": {
+		"es": "Dresde",
+		"fr": "Dresde",
+		"it": "Dresda"
+	},
+	dubai: {
+		"es": "Dubái",
+		"fr": "Dubaï"
+	},
+	"dublin-ireland": {
+		"es": "Dublín",
+		"it": "Dublino"
+	},
+	"dubrovnik-croatia": { "it": "Ragusa" },
+	"duisburg-germany": {
+		"es": "Duisburgo",
+		"fr": "Duisbourg",
+		"pt": "Duisburgo"
+	},
+	"edinburgh-unitedkingdom": {
+		"es": "Edimburgo",
+		"fr": "Édimbourg",
+		"it": "Edimburgo",
+		"pt": "Edimburgo"
+	},
+	"erfurt-germany": { "es": "Érfurt" },
+	"essaouira-morocco": { "es": "Esauira" },
+	"estoril-portugal": { "it": "Freguesia de Estoril" },
+	"fatima-portugal": { "da": "Fatima" },
+	"ferrara-italy": { "fr": "Ferrare" },
+	"figueres-spain": { "es": "Figueras" },
+	"flensburg-germany": {
+		"da": "Flensborg",
+		"es": "Flensburgo",
+		"fr": "Flensbourg",
+		"pt": "Flensburgo"
+	},
+	"florence-italy": {
+		"da": "Firenze",
+		"de": "Florenz",
+		"es": "Florencia",
+		"it": "Firenze",
+		"pt": "Florença"
+	},
+	"frankfurt-germany": {
+		"da": "Frankfurt am Main",
+		"de": "Frankfurt am Main",
+		"es": "Fráncfort del Meno",
+		"fr": "Francfort-sur-le-Main",
+		"it": "Francoforte sul Meno",
+		"pt": "Frankfurt am Main"
+	},
+	"fribourg-switzerland": {
+		"de": "Freiburg im Üechtland",
+		"es": "Friburgo",
+		"it": "Friburgo",
+		"pt": "Friburgo"
+	},
+	"gaeta-italy": { "fr": "Gaète" },
+	"gandia-spain": {
+		"da": "Gandia",
+		"de": "Gandia",
+		"fr": "Gandia",
+		"it": "Gandia",
+		"pt": "Gandia"
+	},
+	"gdansk-poland": {
+		"de": "Danzig",
+		"es": "Gdansk",
+		"it": "Danzica",
+		"pt": "Gdansk"
+	},
+	"geneva-switzerland": {
+		"da": "Genève",
+		"de": "Genf",
+		"es": "Ginebra",
+		"fr": "Genève",
+		"it": "Ginevra",
+		"pt": "Genebra"
+	},
+	"genoa-italy": {
+		"da": "Genova",
+		"de": "Genua",
+		"es": "Génova",
+		"fr": "Gênes",
+		"it": "Genova",
+		"pt": "Génova"
+	},
+	"ghent-belgium": {
+		"da": "Gent",
+		"de": "Gent",
+		"es": "Gante",
+		"fr": "Gand",
+		"it": "Gand",
+		"pt": "Gante"
+	},
+	"girona-spain": {
+		"es": "Gerona",
+		"fr": "Gérone",
+		"it": "Gerona"
+	},
+	"gliwice-poland": { "de": "Gleiwitz" },
+	"gothenburg-sweden": {
+		"da": "Göteborg",
+		"de": "Göteborg",
+		"es": "Gotemburgo",
+		"fr": "Göteborg",
+		"it": "Göteborg",
+		"pt": "Gotemburgo"
+	},
+	"gottingen-germany": {
+		"es": "Gotinga",
+		"it": "Gottinga"
+	},
+	"granada-spain": { "fr": "Grenade" },
+	"groningen-netherlands": {
+		"es": "Groninga",
+		"fr": "Groningue",
+		"it": "Groninga",
+		"pt": "Groninga"
+	},
+	"guangzhou-china": {
+		"es": "Cantón",
+		"fr": "Canton",
+		"it": "Canton",
+		"pt": "Cantão"
+	},
+	"ha-long-vietnam": { "fr": "Hạ Long" },
+	"hamburg-germany": {
+		"da": "Hamborg",
+		"es": "Hamburgo",
+		"fr": "Hambourg",
+		"it": "Amburgo",
+		"pt": "Hamburgo"
+	},
+	"hanoi-vietnam": {
+		"es": "Hanói",
+		"fr": "Hanoï",
+		"pt": "Hanói"
+	},
+	"helsinki-finland": {
+		"da": "Helsingfors",
+		"pt": "Helsínquia"
+	},
+	"ho-chi-minh-city-vietnam": {
+		"da": "Ho Chi Minh-byen",
+		"de": "Ho-Chi-Minh-Stadt",
+		"es": "Ciudad Ho Chi Minh",
+		"fr": "Hô Chi Minh-Ville",
+		"it": "Ho Chi Minh",
+		"pt": "Cidade de Ho Chi Minh"
+	},
+	"hondarribia-spain": {
+		"es": "Fuenterrabía",
+		"fr": "Fontarrabie"
+	},
+	"hua-hin-thailand": {
+		"de": "Amphoe Hua Hin",
+		"it": "Distretto di Hua Hin"
+	},
+	"hue-vietnam": {
+		"da": "Huế",
+		"de": "Huế",
+		"es": "Huế",
+		"fr": "Huế",
+		"it": "Huế"
+	},
+	"hurghada-egypt": { "es": "Hurgada" },
+	"hyderabad-india": {
+		"es": "Haidrābād",
+		"it": "Haidrābād"
+	},
+	"hyeres-france": { "pt": "Hyères, França" },
+	"ierapetra-greece": {
+		"da": "Lerapetra",
+		"es": "Ierápetra",
+		"fr": "Ierápetra",
+		"pt": "Ierápetra"
+	},
+	"imola-italy": { "pt": "Ímola" },
+	"imperia-italy": { "pt": "Impéria" },
+	"indianapolis-united-states": {
+		"es": "Indianápolis",
+		"pt": "Indianápolis"
+	},
+	"ioannina-greece": {
+		"es": "Ioánina",
+		"fr": "Ioánnina",
+		"it": "Giannina",
+		"pt": "Janina"
+	},
+	"jackson-wyoming-united-states": {
+		"da": "Jackson",
+		"de": "Jackson",
+		"es": "Jackson",
+		"fr": "Jackson",
+		"it": "Jackson",
+		"pt": "Jackson"
+	},
+	"jakarta-indonesia": {
+		"es": "Yakarta",
+		"it": "Giacarta",
+		"pt": "Jacarta"
+	},
+	"jeddah-saudiarabia": {
+		"de": "Dschidda",
+		"es": "Yeda",
+		"fr": "Djeddah",
+		"it": "Gedda",
+		"pt": "Jidá"
+	},
+	"johannesburg-southafrica": {
+		"es": "Johannesburgo",
+		"fr": "Johannesbourg",
+		"pt": "Joanesburgo"
+	},
+	"karachi-pakistan": {
+		"de": "Karatschi",
+		"pt": "Carachi"
+	},
+	"kathmandu-nepal": {
+		"da": "Katmandu",
+		"es": "Katmandú",
+		"fr": "Katmandou",
+		"it": "Katmandu",
+		"pt": "Catmandu"
+	},
+	"kigali-rwanda": { "pt": "Quigali" },
+	"knokke-heist-belgium": { "fr": "Knocke-Heyst" },
+	"kobe-japan": {
+		"de": "Kōbe",
+		"es": "Kōbe",
+		"it": "Kōbe",
+		"pt": "Kōbe"
+	},
+	"koblenz-germany": {
+		"es": "Coblenza",
+		"fr": "Coblence",
+		"it": "Coblenza",
+		"pt": "Coblença"
+	},
+	"kolkata-india": {
+		"es": "Calcuta",
+		"fr": "Calcutta",
+		"it": "Colcata",
+		"pt": "Calcutá"
+	},
+	"kortrijk-belgium": {
+		"es": "Cortrique",
+		"fr": "Courtrai",
+		"it": "Courtrai",
+		"pt": "Courtrai"
+	},
+	"kosice-slovakia": {
+		"da": "Košice",
+		"de": "Košice",
+		"es": "Košice",
+		"fr": "Košice",
+		"it": "Košice",
+		"pt": "Košice"
+	},
+	"kotor-montenegro": { "it": "Cattaro" },
+	"krakow-poland": {
+		"de": "Krakau",
+		"es": "Cracovia",
+		"fr": "Cracovie",
+		"it": "Cracovia",
+		"pt": "Cracóvia"
+	},
+	"krynica-zdroj-poland": {
+		"da": "Krynica-Zdrój",
+		"de": "Krynica-Zdrój",
+		"es": "Krynica-Zdrój",
+		"fr": "Krynica-Zdrój",
+		"it": "Krynica-Zdrój",
+		"pt": "Krynica-Zdrój"
+	},
+	"kyoto-japan": {
+		"de": "Kyōto",
+		"es": "Kioto",
+		"pt": "Quioto"
+	},
+	"la-rochelle-france": { "es": "La Rochela" },
+	"larnaca-cyprus": {
+		"de": "Larnaka",
+		"es": "Lárnaca"
+	},
+	"las-palmas-de-gran-canaria-spain": { "fr": "Las Palmas de Grande Canarie" },
+	"lausanne-switzerland": {
+		"es": "Lausana",
+		"it": "Losanna",
+		"pt": "Lausana"
+	},
+	"le-havre-france": { "es": "El Havre" },
+	"leeuwarden-netherlands": { "fr": "Leuvarde" },
+	"lefkada-greece": {
+		"da": "Lefkas",
+		"es": "Léucade",
+		"fr": "Leucade",
+		"it": "Leucade",
+		"pt": "Levkas"
+	},
+	"leipzig-germany": { "it": "Lipsia" },
+	"leiria-portugal": { "es": "Leiría" },
+	"leon-spain": { "pt": "Leão" },
+	"leuven-belgium": {
+		"de": "Löwen",
+		"es": "Lovaina",
+		"fr": "Louvain",
+		"it": "Lovanio",
+		"pt": "Lovaina"
+	},
+	"liege-belgium": {
+		"de": "Lüttich",
+		"es": "Lieja",
+		"it": "Liegi"
+	},
+	"liepaja-latvia": {
+		"da": "Liepāja",
+		"de": "Libau",
+		"es": "Liepāja",
+		"fr": "Liepāja",
+		"it": "Liepāja",
+		"pt": "Liepāja"
+	},
+	"lijiang-china": { "pt": "Cidade Antiga de Lijiang" },
+	"limassol-cyprus": { "es": "Limasol" },
+	"lisbon-portugal": {
+		"da": "Lissabon",
+		"de": "Lissabon",
+		"es": "Lisboa",
+		"fr": "Lisbonne",
+		"it": "Lisbona",
+		"pt": "Lisboa"
+	},
+	"livorno-italy": { "fr": "Livourne" },
+	"ljubljana-slovenia": {
+		"es": "Liubliana",
+		"it": "Lubiana",
+		"pt": "Liubliana"
+	},
+	"lleida-spain": {
+		"es": "Lérida",
+		"fr": "Lérida",
+		"pt": "Lérida"
+	},
+	london: {
+		"es": "Londres",
+		"fr": "Londres",
+		"it": "Londra",
+		"pt": "Londres"
+	},
+	"los-angeles-unitedstates": { "es": "Los Ángeles" },
+	"loutraki-greece": { "fr": "Loutráki" },
+	"luang-prabang-laos": { "es": "Lūang Phabāng" },
+	"lubeck-germany": { "it": "Lubecca" },
+	"lublin-poland": { "it": "Lublino" },
+	"lucca-italy": { "fr": "Lucques" },
+	"lucerne-switzerland": {
+		"da": "Luzern",
+		"de": "Luzern",
+		"es": "Lucerna",
+		"it": "Lucerna",
+		"pt": "Lucerna"
+	},
+	"ludwigsburg-germany": {
+		"fr": "Louisbourg",
+		"pt": "Ludwigsburgo"
+	},
+	"ludwigshafen-am-rhein-germany": {
+		"es": "Ludwigshafen",
+		"fr": "Ludwigshafen-sur-le-Rhin"
+	},
+	"luxembourg-city-luxembourg": {
+		"da": "Luxembourg",
+		"de": "Luxemburg",
+		"es": "Luxemburgo",
+		"fr": "Luxembourg",
+		"it": "Lussemburgo",
+		"pt": "Luxemburgo"
+	},
+	"luxor-egypt": { "fr": "Louxor" },
+	"lyon-france": { "it": "Lione" },
+	"mainz-germany": {
+		"es": "Maguncia",
+		"fr": "Mayence",
+		"it": "Magonza"
+	},
+	"makarska-croatia": { "it": "Macarsca" },
+	"malaga-spain": {
+		"fr": "Malaga",
+		"it": "Malaga"
+	},
+	"male-maldives": { "it": "Male" },
+	"malmo-sweden": { "da": "Malmø" },
+	"manchester-unitedkingdom": { "es": "Mánchester" },
+	"manila-philippines": { "fr": "Manille" },
+	"marseille-france": {
+		"es": "Marsella",
+		"it": "Marsiglia",
+		"pt": "Marselha"
+	},
+	"mechelen-belgium": {
+		"es": "Malinas",
+		"fr": "Malines",
+		"it": "Malines"
+	},
+	"menton-france": { "it": "Mentone" },
+	"merano-italy": {
+		"da": "Meran",
+		"de": "Meran",
+		"fr": "Mérano"
+	},
+	"messina-italy": {
+		"es": "Mesina",
+		"fr": "Messine"
+	},
+	"mexico-city-mexico": {
+		"de": "Mexiko-Stadt",
+		"es": "Ciudad de México",
+		"fr": "Mexico",
+		"it": "Città del Messico",
+		"pt": "Cidade do México"
+	},
+	"miedzyzdroje-poland": {
+		"es": "Miendzyzdroje",
+		"fr": "Miendzyzdroje",
+		"it": "Miendzyzdroje",
+		"pt": "Miendzyzdroje"
+	},
+	"milan-italy": {
+		"da": "Milano",
+		"de": "Mailand",
+		"es": "Milán",
+		"it": "Milano",
+		"pt": "Milão"
+	},
+	"modena-italy": {
+		"es": "Módena",
+		"fr": "Modène",
+		"pt": "Módena"
+	},
+	"modica-italy": { "pt": "Módica" },
+	"mombasa-kenya": { "pt": "Mombaça" },
+	"monterey-united-states": { "es": "Monterrey" },
+	"monterrey-mexico": { "pt": "Monterrei" },
+	"montevideo-uruguay": { "pt": "Montevidéu" },
+	"montreal-canada": {
+		"fr": "Montréal",
+		"it": "Montréal"
+	},
+	"mui-ne-vietnam": {
+		"de": "Mũi Né",
+		"fr": "Mũi Né"
+	},
+	"mulhouse-france": { "de": "Mülhausen" },
+	"munich-germany": {
+		"da": "München",
+		"de": "München",
+		"es": "Múnich",
+		"it": "Monaco di Baviera",
+		"pt": "Munique"
+	},
+	"murcia-spain": {
+		"fr": "Murcie",
+		"pt": "Múrcia"
+	},
+	"muscat-oman": {
+		"de": "Maskat",
+		"es": "Mascate",
+		"fr": "Mascate",
+		"it": "Mascate",
+		"pt": "Mascate"
+	},
+	"mytilene-greece": {
+		"da": "Mytilini",
+		"de": "Mytilini",
+		"es": "Mitilene",
+		"fr": "Mytilène",
+		"it": "Mitilene",
+		"pt": "Mitilene"
+	},
+	"nafplio-greece": {
+		"es": "Nauplia",
+		"fr": "Nauplie",
+		"it": "Nauplia",
+		"pt": "Náuplia"
+	},
+	"nagoya-japan": { "pt": "Nagoia" },
+	"nairobi-kenya": { "pt": "Nairóbi" },
+	"nanjing-china": {
+		"es": "Nankín",
+		"fr": "Nankin",
+		"it": "Nanchino",
+		"pt": "Nanquim"
+	},
+	"naples-florida-united-states": {
+		"da": "Naples",
+		"de": "Naples",
+		"es": "Naples",
+		"fr": "Naples",
+		"it": "Naples",
+		"pt": "Naples"
+	},
+	"naples-italy": {
+		"da": "Napoli",
+		"de": "Neapel",
+		"es": "Nápoles",
+		"it": "Napoli",
+		"pt": "Nápoles"
+	},
+	"narbonne-france": {
+		"es": "Narbona",
+		"it": "Narbona",
+		"pt": "Narbona"
+	},
+	"new-delhi-india": {
+		"de": "Neu-Delhi",
+		"es": "Nueva Delhi",
+		"it": "Nuova Delhi",
+		"pt": "Nova Deli"
+	},
+	"new-orleans-unitedstates": {
+		"es": "Nueva Orleans",
+		"fr": "La Nouvelle-Orléans",
+		"pt": "Nova Orleães"
+	},
+	"newport-rhode-island-united-states": {
+		"da": "Newport",
+		"de": "Newport",
+		"es": "Newport",
+		"fr": "Newport",
+		"it": "Newport",
+		"pt": "Newport"
+	},
+	"nice-france": {
+		"de": "Nizza",
+		"es": "Niza",
+		"it": "Nizza"
+	},
+	"nicosia-cyprus": {
+		"de": "Nikosia",
+		"fr": "Nicosie",
+		"pt": "Nicósia"
+	},
+	"nijmegen-netherlands": {
+		"es": "Nimega",
+		"fr": "Nimègue",
+		"it": "Nimega",
+		"pt": "Nimega"
+	},
+	"nimes-france": { "es": "Nimes" },
+	"odz-poland": { "es": "Lodz" },
+	"ohrid-northmacedonia": { "it": "Ocrida" },
+	"oia-greece": { "de": "Ia" },
+	"opatija-croatia": { "it": "Abbazia" },
+	"oristano-italy": { "es": "Oristán" },
+	"orleans-france": {
+		"es": "Orleans",
+		"pt": "Orleães"
+	},
+	"ostend-belgium": {
+		"da": "Oostende",
+		"de": "Ostende",
+		"es": "Ostende",
+		"fr": "Ostende",
+		"it": "Ostenda",
+		"pt": "Oostende"
+	},
+	"ourense-spain": { "es": "Orense" },
+	"pakse-laos": {
+		"da": "Pakxe",
+		"es": "Pāksē",
+		"fr": "Pakxé",
+		"it": "Pāksē",
+		"pt": "Pakxe"
+	},
+	"palermo-italy": { "fr": "Palerme" },
+	"palma-spain": {
+		"da": "Palma de Mallorca",
+		"es": "Palma de Mallorca",
+		"it": "Palma di Maiorca",
+		"pt": "Palma de Maiorca"
+	},
+	"pamplona-spain": { "fr": "Pampelune" },
+	"panama-city-panama": {
+		"de": "Panama-Stadt",
+		"es": "Ciudad de Panamá",
+		"fr": "Panama",
+		"it": "Panama",
+		"pt": "Cidade do Panamá"
+	},
+	"paphos-cyprus": {
+		"da": "Pafos",
+		"es": "Pafos",
+		"it": "Pafo",
+		"pt": "Pafos"
+	},
+	paris: {
+		"es": "París",
+		"it": "Parigi"
+	},
+	"parma-italy": { "fr": "Parme" },
+	"passau-germany": { "it": "Passavia" },
+	"perpignan-france": {
+		"es": "Perpiñán",
+		"it": "Perpignano",
+		"pt": "Perpinhã"
+	},
+	"perugia-italy": {
+		"fr": "Pérouse",
+		"pt": "Perúgia"
+	},
+	"pesaro-italy": { "es": "Pésaro" },
+	"philadelphia-unitedstates": {
+		"es": "Filadelfia",
+		"fr": "Philadelphie",
+		"it": "Filadelfia",
+		"pt": "Filadélfia"
+	},
+	"phnom-penh-cambodia": { "es": "Nom Pen" },
+	"piacenza-italy": {
+		"fr": "Plaisance",
+		"pt": "Placência"
+	},
+	"pisa-italy": { "fr": "Pise" },
+	"plasencia-spain": { "fr": "Plasence" },
+	"plovdiv-bulgaria": { "de": "Plowdiw" },
+	"pompei-italy": {
+		"es": "Pompeya",
+		"fr": "Pompéi",
+		"pt": "Pompeia"
+	},
+	"porec-croatia": {
+		"it": "Parenzo",
+		"pt": "Porec"
+	},
+	"porto-portugal": { "es": "Oporto" },
+	"porto-vecchio-france": {
+		"es": "Porto Vecchio",
+		"it": "Porto Vecchio"
+	},
+	"poznan-poland": { "de": "Posen" },
+	"pula-croatia": { "it": "Pola" },
+	"quebec-city-canada": {
+		"da": "Québec",
+		"de": "Québec",
+		"es": "Quebec",
+		"fr": "Québec",
+		"it": "Québec",
+		"pt": "Quebec"
+	},
+	"quedlinburg-germany": { "fr": "Quedlinbourg" },
+	"ragusa-italy": { "fr": "Raguse" },
+	"ravenna-italy": {
+		"es": "Ravena",
+		"fr": "Ravenne",
+		"pt": "Ravena"
+	},
+	"regensburg-germany": {
+		"es": "Ratisbona",
+		"fr": "Ratisbonne",
+		"it": "Ratisbona",
+		"pt": "Ratisbona"
+	},
+	"reggio-emilia-italy": {
+		"de": "Reggio nell'Emilia",
+		"fr": "Reggio d'Émilie"
+	},
+	"rethymno-greece": {
+		"da": "Rethimno",
+		"fr": "Réthymnon",
+		"pt": "Retimno"
+	},
+	"reykjavik-iceland": {
+		"da": "Reykjavik",
+		"es": "Reikiavik",
+		"fr": "Reykjavik"
+	},
+	"rhodes-greece": {
+		"da": "Rhodos",
+		"de": "Rhodos",
+		"es": "Rodas",
+		"it": "Rodi",
+		"pt": "Rodes"
+	},
+	"rio-de-janeiro-brazil": { "es": "Río de Janeiro" },
+	"riyadh-saudiarabia": {
+		"de": "Riad",
+		"es": "Riad",
+		"fr": "Riyad",
+		"it": "Riad",
+		"pt": "Riade"
+	},
+	rome: {
+		"da": "Rom",
+		"de": "Rom",
+		"es": "Roma",
+		"it": "Roma",
+		"pt": "Roma"
+	},
+	"roses-spain": { "es": "Rosas" },
+	"rotterdam-netherlands": {
+		"es": "Róterdam",
+		"pt": "Roterdão"
+	},
+	"rouen-france": {
+		"es": "Ruan",
+		"pt": "Ruão"
+	},
+	"rovinj-croatia": {
+		"es": "Roviño",
+		"it": "Rovigno"
+	},
+	"rzeszow-poland": {
+		"es": "Resovia",
+		"it": "Resovia"
+	},
+	"saarbrucken-germany": {
+		"es": "Sarrebruck",
+		"fr": "Sarrebruck"
+	},
+	"saint-jean-de-luz-france": { "es": "San Juan de Luz" },
+	"salalah-oman": { "de": "Salala" },
+	"salamanca-spain": { "fr": "Salamanque" },
+	"salerno-italy": { "fr": "Salerne" },
+	"salzburg-austria": {
+		"es": "Salzburgo",
+		"fr": "Salzbourg",
+		"it": "Salisburgo",
+		"pt": "Salzburgo"
+	},
+	"san-cristobal-de-las-casas-mexico": {
+		"es": "San Cristóbal de Las Casas",
+		"fr": "San Cristóbal de Las Casas",
+		"it": "San Cristóbal de Las Casas"
+	},
+	"san-francisco-unitedstates": { "pt": "São Francisco" },
+	"san-jose-united-states": {
+		"de": "San José",
+		"es": "San José",
+		"fr": "San José",
+		"pt": "São José"
+	},
+	"san-sebastian-spain": {
+		"de": "Donostia-San Sebastián",
+		"fr": "Saint-Sébastien"
+	},
+	"santa-cruz-de-tenerife-spain": { "fr": "Santa Cruz de Ténérife" },
+	"santa-fe-argentina": { "pt": "Santa Fé" },
+	"santiago-chile": {
+		"da": "Santiago de Chile",
+		"de": "Santiago de Chile",
+		"es": "Santiago de Chile",
+		"it": "Santiago del Cile"
+	},
+	"santiago-de-compostela-spain": {
+		"fr": "Saint-Jacques-de-Compostelle",
+		"it": "Santiago di Compostela"
+	},
+	"santo-domingo-dominicanrepublic": {
+		"fr": "Saint-Domingue",
+		"pt": "São Domingos"
+	},
+	"sao-paulo-brazil": { "it": "San Paolo" },
+	"sarande-albania": {
+		"de": "Saranda",
+		"fr": "Saranda",
+		"it": "Saranda"
+	},
+	"segovia-spain": {
+		"fr": "Ségovie",
+		"pt": "Segóvia"
+	},
+	"seoul-southkorea": {
+		"es": "Seúl",
+		"fr": "Séoul",
+		"it": "Seul",
+		"pt": "Seul"
+	},
+	"seville-spain": {
+		"da": "Sevilla",
+		"de": "Sevilla",
+		"es": "Sevilla",
+		"fr": "Séville",
+		"it": "Siviglia",
+		"pt": "Sevilha"
+	},
+	"shanghai-china": {
+		"es": "Shanghái",
+		"fr": "Shanghaï",
+		"pt": "Xangai"
+	},
+	"sharjah-unitedarabemirates": {
+		"de": "Schardscha",
+		"es": "Sarja",
+		"fr": "Charjah",
+		"it": "Sharja",
+		"pt": "Xarja"
+	},
+	"sharm-el-sheikh-egypt": {
+		"da": "Sharm el-Sheikh",
+		"de": "Scharm asch-Schaich",
+		"es": "Sharm el-Sheij",
+		"fr": "Charm el-Cheikh",
+		"it": "Sharm el-Sheikh",
+		"pt": "Sharm el-Sheikh"
+	},
+	"sibenik-croatia": { "it": "Sebenico" },
+	"siem-reap-cambodia": { "es": "Siem Riep" },
+	"siena-italy": { "fr": "Sienne" },
+	"siliguri-india": {
+		"de": "Shiliguri",
+		"pt": "Shiliguri"
+	},
+	"skopje-northmacedonia": { "es": "Skopie" },
+	"sofia-bulgaria": {
+		"es": "Sofía",
+		"pt": "Sófia"
+	},
+	"soria-spain": { "pt": "Sória" },
+	"sorrento-italy": {
+		"de": "Sorrent",
+		"fr": "Sorrente"
+	},
+	"split-croatia": { "it": "Spalato" },
+	"spoleto-italy": { "fr": "Spolète" },
+	"st-gallen-switzerland": {
+		"da": "Sankt Gallen",
+		"es": "San Galo",
+		"fr": "Saint-Gall",
+		"it": "San Gallo",
+		"pt": "São Galo"
+	},
+	"st-john-s-canada": {
+		"es": "San Juan de Terranova",
+		"fr": "Saint-Jean de Terre-Neuve",
+		"pt": "São João da Terra Nova"
+	},
+	"stockholm-sweden": {
+		"es": "Estocolmo",
+		"it": "Stoccolma",
+		"pt": "Estocolmo"
+	},
+	"strasbourg-france": {
+		"de": "Straßburg",
+		"es": "Estrasburgo",
+		"it": "Strasburgo",
+		"pt": "Estrasburgo"
+	},
+	"stuttgart-germany": {
+		"it": "Stoccarda",
+		"pt": "Estugarda"
+	},
+	"surabaya-indonesia": { "pt": "Surabaia" },
+	"swinoujscie-poland": { "de": "Swinemünde" },
+	"sydney-australia": { "es": "Sídney" },
+	"syracuse-italy": {
+		"da": "Siracusa",
+		"de": "Syrakus",
+		"es": "Siracusa",
+		"it": "Siracusa",
+		"pt": "Siracusa"
+	},
+	"szczecin-poland": {
+		"da": "Stettin",
+		"de": "Stettin",
+		"it": "Stettino",
+		"pt": "Estetino"
+	},
+	"ta-if-saudi-arabia": {
+		"es": "Taif",
+		"fr": "Taëf",
+		"pt": "Ta’if"
+	},
+	"taipei-taiwan": {
+		"de": "Taipeh",
+		"es": "Taipéi",
+		"pt": "Taipé"
+	},
+	"tallinn-estonia": { "es": "Tallin" },
+	"tangier-morocco": {
+		"da": "Tanger",
+		"de": "Tanger",
+		"es": "Tánger",
+		"fr": "Tanger",
+		"it": "Tangeri",
+		"pt": "Tânger"
+	},
+	"taormina-italy": { "fr": "Taormine" },
+	"taranto-italy": {
+		"de": "Tarent",
+		"es": "Tarento",
+		"fr": "Tarente",
+		"pt": "Tarento"
+	},
+	"tarragona-spain": { "fr": "Tarragone" },
+	"tbilisi-georgia": {
+		"de": "Tiflis",
+		"es": "Tiflis",
+		"fr": "Tbilissi",
+		"pt": "Tiblíssi"
+	},
+	"tel-aviv-israel": { "de": "Tel Aviv-Jaffa" },
+	"terrassa-spain": { "es": "Tarrasa" },
+	"the-hague-netherlands": {
+		"da": "Haag",
+		"de": "Den Haag",
+		"es": "La Haya",
+		"fr": "La Haye",
+		"it": "L'Aia",
+		"pt": "Haia"
+	},
+	"thessaloniki-greece": {
+		"es": "Salónica",
+		"fr": "Thessalonique",
+		"it": "Salonicco",
+		"pt": "Salonica"
+	},
+	"thun-switzerland": {
+		"fr": "Thoune",
+		"pt": "Tune"
+	},
+	"tilburg-netherlands": {
+		"fr": "Tilbourg",
+		"pt": "Tilburgo"
+	},
+	tokyo: {
+		"de": "Tokio",
+		"es": "Tokio",
+		"pt": "Tóquio"
+	},
+	"toledo-spain": { "fr": "Tolède" },
+	"torshavn-faroe-islands": { "da": "Thorshavn" },
+	"torun-poland": { "es": "Torún" },
+	"toulouse-france": { "it": "Tolosa" },
+	"trapani-italy": { "pt": "Trápani" },
+	"trento-italy": {
+		"de": "Trient",
+		"fr": "Trente"
+	},
+	"treviso-italy": { "fr": "Trévise" },
+	"trieste-italy": { "de": "Triest" },
+	"trogir-croatia": { "it": "Traù" },
+	"truro-unitedkingdom": { "it": "Trurone" },
+	"tubingen-germany": {
+		"es": "Tubinga",
+		"it": "Tubinga",
+		"pt": "Tubinga"
+	},
+	"tunis-tunisia": {
+		"es": "Túnez",
+		"it": "Tunisi",
+		"pt": "Tunes"
+	},
+	"turin-italy": {
+		"da": "Torino",
+		"es": "Turín",
+		"it": "Torino",
+		"pt": "Turim"
+	},
+	"turku-finland": { "da": "Åbo" },
+	"ulaanbaatar-mongolia": {
+		"da": "Ulan Bator",
+		"es": "Ulán Bator",
+		"fr": "Oulan-Bator",
+		"it": "Ulan Bator",
+		"pt": "Ulã Bator"
+	},
+	"uppsala-sweden": { "es": "Upsala" },
+	"ushuaia-argentina": { "fr": "Ushuaïa" },
+	"utrecht-netherlands": { "pt": "Utreque" },
+	"valencia-spain": {
+		"fr": "Valence",
+		"pt": "Valência"
+	},
+	"valletta-malta": {
+		"es": "La Valeta",
+		"fr": "La Valette",
+		"it": "La Valletta",
+		"pt": "Valeta"
+	},
+	"varanasi-india": {
+		"es": "Benarés",
+		"fr": "Bénarès"
+	},
+	"venice-italy": {
+		"da": "Venedig",
+		"de": "Venedig",
+		"es": "Venecia",
+		"fr": "Venise",
+		"it": "Venezia",
+		"pt": "Veneza"
+	},
+	"verona-italy": { "fr": "Vérone" },
+	"victoria-canada": { "pt": "Vitória" },
+	"vienna-austria": {
+		"da": "Wien",
+		"de": "Wien",
+		"es": "Viena",
+		"fr": "Vienne",
+		"pt": "Viena"
+	},
+	"vientiane-laos": {
+		"es": "Vientián",
+		"pt": "Vienciana"
+	},
+	"villach-austria": { "it": "Villaco" },
+	"vilnius-lithuania": { "es": "Vilna" },
+	"viseu-portugal": { "es": "Viseo" },
+	"viterbo-italy": { "fr": "Viterbe" },
+	"vitoria-gasteiz-spain": {
+		"es": "Vitoria",
+		"it": "Vitoria"
+	},
+	"vodice-croatia": { "it": "Vodizze" },
+	"volos-greece": {
+		"fr": "Vólos",
+		"it": "Volo",
+		"pt": "Vólos"
+	},
+	"warsaw-poland": {
+		"da": "Warszawa",
+		"de": "Warschau",
+		"es": "Varsovia",
+		"fr": "Varsovie",
+		"it": "Varsavia",
+		"pt": "Varsóvia"
+	},
+	"wilmington-north-carolina-united-states": {
+		"da": "Wilmington",
+		"de": "Wilmington",
+		"es": "Wilmington",
+		"fr": "Wilmington",
+		"it": "Wilmington",
+		"pt": "Wilmington"
+	},
+	"wrocaw-poland": {
+		"de": "Breslau",
+		"es": "Breslavia",
+		"it": "Breslavia",
+		"pt": "Breslávia"
+	},
+	"wurzburg-germany": {
+		"es": "Wurzburgo",
+		"fr": "Wurtzbourg",
+		"pt": "Wurtzburgo"
+	},
+	"yangon-myanmar": {
+		"de": "Rangun",
+		"es": "Rangún",
+		"fr": "Rangoun",
+		"pt": "Rangum"
+	},
+	"yaounde-cameroon": {
+		"da": "Yaoundé",
+		"de": "Yaoundé",
+		"es": "Yaundé",
+		"fr": "Yaoundé",
+		"it": "Yaoundé",
+		"pt": "Iaundé"
+	},
+	"yerevan-armenia": {
+		"da": "Jerevan",
+		"de": "Jerewan",
+		"es": "Ereván",
+		"fr": "Erevan",
+		"it": "Erevan",
+		"pt": "Erevã"
+	},
+	"yogyakarta-indonesia": { "pt": "Joguejacarta" },
+	"zadar-croatia": { "it": "Zara" },
+	"zagreb-croatia": { "it": "Zagabria" },
+	"zakynthos-greece": {
+		"es": "Zacinto",
+		"it": "Zante"
+	},
+	"zanzibar-city-tanzania": {
+		"da": "Zanzibar by",
+		"de": "Sansibar Stadt",
+		"es": "Zanzíbar",
+		"fr": "Zanzibar",
+		"it": "Zanzibar",
+		"pt": "Zanzibar"
+	},
+	"zaragoza-spain": {
+		"de": "Saragossa",
+		"fr": "Saragosse",
+		"it": "Saragozza",
+		"pt": "Saragoça"
+	},
+	"zurich-switzerland": {
+		"da": "Zürich",
+		"de": "Zürich",
+		"es": "Zúrich",
+		"it": "Zurigo",
+		"pt": "Zurique"
+	}
+};
+/** Localized city names (es/de/fr/it/pt/da) from Wikidata labels, built by tools/city-names/build.py.
+*  Only stored when different from the English name; anything missing falls back to English. */
 /** Date of the last real content change (picks, templates, texts). Used as <lastmod> in the sitemaps
 *  instead of the old data-snapshot date, so search engines re-crawl after real changes only. */
 var CONTENT_DATE = "2026-11-14";
@@ -1595,6 +3165,8 @@ var HOME_EXTRA = {
 		]
 	}
 };
+var CN = city_names_default;
+var cityName = (c, L) => L === "en" ? c.city : CN[c.id]?.[L] ?? c.city;
 var js = (o) => o;
 var Y = {
 	en: {
@@ -19984,7 +21556,7 @@ async function comparePicksPage(L, slug) {
 	const f = await cityFull(slug);
 	if (!f || f.hotels.length < 3) return null;
 	const t = td(L);
-	const c = f.ix.city;
+	const c = cityName(f.ix, L);
 	const hs = f.hotels;
 	const row = (label, fn) => `<tr><th scope="row">${label}</th>${hs.map((h) => `<td>${fn(h)}</td>`).join("")}</tr>`;
 	const list = (a) => a?.length ? `<ul style="margin:0;padding-left:18px">${a.slice(0, 3).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
@@ -20038,7 +21610,7 @@ async function nearPage(L, slug, sight) {
 	const s = sights.find((x) => slugify(x.name) === sight);
 	if (!s) return null;
 	const t = td(L);
-	const c = f.ix.city;
+	const c = cityName(f.ix, L);
 	const rows = nearRows(f, s);
 	if (!rows.length) return null;
 	const walk = (d) => Math.round(d * 1.3 * 60 / 4.8);
@@ -20674,6 +22246,7 @@ async function gymCityPage(urlSlug, Lx) {
 	const L = Lx === "es" ? "es" : "en";
 	const x = TX$1[L];
 	const ic = byId.get(id);
+	const cn = ic ? cityName(ic, L) : city.city;
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
 	const path = `/gyms/${slug}`;
 	const picks = TIERS$1.map((t) => [t, city.tiers[t]]);
@@ -20690,7 +22263,7 @@ async function gymCityPage(urlSlug, Lx) {
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
 	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
-<h1>${esc(x.h1(city.city))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
 <div class="gcards">${picks.map(([t, p]) => card$2(t, p, city, L, cityImg, slug, p ? priceFor$1(prices, p) : void 0)).join("")}</div>
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
@@ -20727,8 +22300,8 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 ? `${city.city}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : city.city),
-		description: x.desc(city.city, names),
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		description: x.desc(cn, names),
 		path,
 		body,
 		scripts: CARD_CLICK,
@@ -20741,7 +22314,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 		ld: [{
 			"@context": "https://schema.org",
 			"@type": "ItemList",
-			name: x.h1(city.city),
+			name: x.h1(cn),
 			url: `${SITE}${P(L, path)}`,
 			itemListElement: items
 		}, {
@@ -21067,6 +22640,7 @@ async function poolCityPage(urlSlug, Lx) {
 	const L = Lx === "es" ? "es" : "en";
 	const x = TX[L];
 	const ic = byId.get(id);
+	const cn = ic ? cityName(ic, L) : city.city;
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
 	const path = `/pools/${slug}`;
 	const picks = TIERS.map((t) => [t, city.tiers[t]]);
@@ -21083,7 +22657,7 @@ async function poolCityPage(urlSlug, Lx) {
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
 	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/pools")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
-<h1>${esc(x.h1(city.city))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
 <div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
@@ -21120,8 +22694,8 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 ? `${city.city}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : city.city),
-		description: x.desc(city.city, names),
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		description: x.desc(cn, names),
 		path,
 		body,
 		scripts: CARD_CLICK,
@@ -21134,7 +22708,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 		ld: [{
 			"@context": "https://schema.org",
 			"@type": "ItemList",
-			name: x.h1(city.city),
+			name: x.h1(cn),
 			url: `${SITE}${P(L, path)}`,
 			itemListElement: items
 		}, {
@@ -22244,7 +23818,11 @@ function mapScript(hs, sights) {
 	return `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" media="print" onload="this.media='all'">
 <script>(function(){var P=${json(pts)},S=${json(ss)},el=document.getElementById('map');if(!el)return;var go=function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js';s.onload=function(){var dark=matchMedia('(prefers-color-scheme: dark)').matches;var m=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/'+(dark?'dark':'positron'),center:[P[0].lng,P[0].lat],zoom:12,attributionControl:{compact:true},cooperativeGestures:true});m.addControl(new maplibregl.NavigationControl({showCompass:false}));var b=new maplibregl.LngLatBounds();P.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:30px;height:30px;border-radius:50%;background:'+p.c+';color:#fff;font:700 14px system-ui;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 3px 10px #0005';d.textContent=p.n;new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:18}).setText(p.name)).addTo(m);b.extend([p.lng,p.lat])});var cx=P.reduce(function(t,p){return t+p.lng},0)/P.length,cy=P.reduce(function(t,p){return t+p.lat},0)/P.length;S.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:12px;height:12px;border-radius:50%;background:#46566a;border:2px solid #fff';new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:10}).setText(p.name)).addTo(m);var dk=Math.hypot((p.lng-cx)*Math.cos(cy*Math.PI/180),p.lat-cy)*111;if(dk<=3)b.extend([p.lng,p.lat])});m.fitBounds(b,{padding:50,maxZoom:15,duration:0})};document.head.appendChild(s)};if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();go()}},{rootMargin:'300px'});io.observe(el)}else go()})();<\/script>`;
 }
-async function cityPage(city, L) {
+async function cityPage(city0, L) {
+	const city = {
+		...city0,
+		city: cityName(city0, L)
+	};
 	const hpRows = await hotelPagesList();
 	const hpLive = new Set(hpRows.map((x) => x.slug));
 	const hpL = new Map(hpRows.map((x) => [x.slug, hpLangs(x)]));
@@ -22265,7 +23843,7 @@ async function cityPage(city, L) {
 	const o0 = budget.offer ?? {};
 	const sample = budget.candidateCount;
 	const cname = countryName(city, L);
-	const homonym = (await data()).index.some((x) => x.city === city.city && x.id !== city.id);
+	const homonym = (await data()).index.some((x) => x.city === city0.city && x.id !== city.id);
 	const title = t.title(homonym ? `${city.city}, ${cname}` : city.city);
 	const description = t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
@@ -22579,7 +24157,10 @@ async function countryPage(cslug, L) {
 	const t = T[L];
 	const cname = countryName(list[0], L);
 	const rows = await Promise.all(list.map(async (c) => ({
-		c,
+		c: {
+			...c,
+			city: cityName(c, L)
+		},
 		d: await cityData(c.id)
 	})));
 	const path = `/country/${cslug}`;
@@ -22613,7 +24194,7 @@ async function countryPage(cslug, L) {
 		itemListElement: list.map((c, i) => ({
 			"@type": "ListItem",
 			position: i + 1,
-			name: t.h1(c.city),
+			name: t.h1(cityName(c, L)),
 			url: `${SITE}${P(L, "/" + c.slug)}`
 		}))
 	}];
@@ -22655,7 +24236,7 @@ async function destinationsPage(L) {
 	const countries = [...byCountry.entries()].sort((a, b) => countryName(a[1][0], L).localeCompare(countryName(b[1][0], L), L));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(t.allDest)}</p><h1>${esc(t.destH1(index.length))}<em>.</em></h1>
 <p class="lead">${esc(t.destLead(countries.length))}</p>
-<section class="countries">${countries.map(([cs, list]) => `<h2><a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)}</a></li>`).join("")}</ul>`).join("")}</section>`;
+<section class="countries">${countries.map(([cs, list]) => `<h2><a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul>`).join("")}</section>`;
 	return page({
 		L,
 		title: t.destTitle(index.length),
@@ -23342,7 +24923,7 @@ async function homeExtra(L) {
 	const { index, byCountry } = await data();
 	const top = [...index].sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0)).slice(0, 36);
 	const cs = [...byCountry.entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 24);
-	return `<section><h2>${esc(hx.cities)}</h2><ul class="grid">${top.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(T[L].h1(c.city))}</a></li>`).join("")}</ul></section>
+	return `<section><h2>${esc(hx.cities)}</h2><ul class="grid">${top.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(T[L].h1(cityName(c, L)))}</a></li>`).join("")}</ul></section>
 <section><h2>${esc(hx.countries)}</h2><ul class="grid">${cs.map(([k, v]) => `<li><a href="${P(L, "/country/" + k)}">${esc(countryName(v[0], L))} <span>${v.length}</span></a></li>`).join("")}</ul></section>
 <section><h2>${esc(hx.how)}</h2><ol>${hx.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol><p><a href="/how-we-choose">→</a></p></section>
 <section><h2>${esc(hx.faqH)}</h2>${hx.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>`;
