@@ -237,7 +237,7 @@ const T = {
     hd_q3: 'هل يمكن للمطوّر تصحيح صفحته؟', hd_a3: 'نعم. يمكن للمطوّرين الرد بالمستندات عبر حق الرد؛ وتُنشر التصحيحات مؤرّخة في صفحة التصحيحات.',
     hc_q1: 'في كم دولة تتابع Kolaboro مشاريع على الخارطة؟', hc_a1: '{c} دولة، {n} مشروعًا باسمه (بيانات {d}).', hc_q2: 'ما الدول التي فيها أكبر عدد من المشاريع المتابَعة؟', hc_a2: '{l}.' }
 };
-const t = (lang, k, v) => { let s = (T[lang] && T[lang][k] != null) ? T[lang][k] : T.en[k]; if (v) s = String(s).replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s.replace(/\.\.(?=\s|$)/g, '.'); };   // "2026 г.."
+const t = (lang, k, v) => { let s = (T[lang] && T[lang][k] != null) ? T[lang][k] : T.en[k]; if (Array.isArray(s)) return s; if (v) s = String(s).replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s.replace(/\.\.(?=\s|$)/g, '.'); };   // "2026 г.."
 const th = (lang, k, v) => { const e = {}; for (const a in (v || {})) e[a] = v[a] && v[a].__html ? v[a].__html : esc(v[a]); return t(lang, k, e); };   // template with escaped values; {__html} values pass as HTML
 const H = s => ({ __html: s });
 
