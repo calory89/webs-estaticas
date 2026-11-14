@@ -1,6 +1,6 @@
-# Happy Low Cost: chollos de vuelos activos (13 nov 2026)
+# Happy Low Cost: chollos de vuelos activos (14 nov 2026)
 
-> 25 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-13T19:39:27Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 24 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-14T00:53:17Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -38,16 +38,15 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Sevilla → Bruselas (Bélgica): 68 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-bruselas-68-euros-2027-01-16/), Ryanair, directo, 16 ene 2027 a 22 ene 2027. Precio habitual 140 € (−51 %). Comprobado el 13 nov 2026.
 - [Sevilla → Nápoles (Italia): 71 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-napoles-71-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 8 feb 2027. Precio habitual 140 € (−49 %). Comprobado el 13 nov 2026.
 - [Sevilla → Cagliari (Italia): 72 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-cagliari-72-euros-2027-02-05/), Ryanair, directo, 5 feb 2027 a 8 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 13 nov 2026.
-- [Sevilla → Edimburgo (Reino Unido): 72 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-edimburgo-72-euros-2026-11-28/), Ryanair, directo, 28 nov 2026 a 7 dic 2026. Precio habitual 150 € (−52 %). Comprobado el 13 nov 2026.
+
+## Desde Valencia (España)
+- [Valencia → Dubái (Emiratos Árabes Unidos): 252 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-dubai-252-euros-2027-02-23/), Vueling, 23 feb 2027 a 1 mar 2027. Precio habitual 520 € (−52 %). Comprobado el 13 nov 2026.
 
 ## Desde Zaragoza (España)
 - [Zaragoza → Londres (Reino Unido): 55 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-55-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 3 feb 2027. Precio habitual 130 € (−58 %). Comprobado el 13 nov 2026.
 
-## Desde Brisbane (Australia)
-- [Brisbane → Los Ángeles (Estados Unidos): 676 € ida y vuelta](https://www.happylowcost.com/chollos/brisbane-los-angeles-676-euros-2026-11-13/), Fiji Airways, 13 nov 2026 a 26 nov 2026. Precio habitual 1170 € (−42 %). Comprobado el 13 nov 2026.
-
 ## Desde Dubái (Emiratos Árabes Unidos)
-- [Dubái → Montreal (Canadá): 442 € ida y vuelta](https://www.happylowcost.com/chollos/dubai-montreal-442-euros-2026-12-17/), Air Transat, 17 dic 2026 a 31 dic 2026. Precio habitual 1070 € (−59 %). Comprobado el 13 nov 2026.
+- [Dubái → Montreal (Canadá): 442 € ida y vuelta](https://www.happylowcost.com/chollos/dubai-montreal-442-euros-2026-12-17/), Air Transat, 17 dic 2026 a 31 dic 2026. Precio habitual 1070 € (−59 %). Comprobado el 14 nov 2026.
 
 ## Desde Miami (Estados Unidos)
 - [Miami → Guayaquil (Ecuador): 273 € ida y vuelta](https://www.happylowcost.com/chollos/miami-guayaquil-273-euros-2027-01-14/), Copa Airlines, 14 ene 2027 a 21 ene 2027. Precio habitual 580 € (−53 %). Comprobado el 13 nov 2026.
