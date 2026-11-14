@@ -2,8 +2,7 @@
 # The Sumba Times: trip-planning guides (island combos, budget, luxury, honeymoon, sunsets). Written 2026-11-10.
 
 G1 = {
-"section": "things-to-do", "slug": "sumba-and-flores-trip", "date": "2026-11-10", "time": "08:00", "kind": "guide",
-"img_key": "waikelo-sape-ferry-reopens",
+"section": "things-to-do", "slug": "sumba-and-flores-trip", "date": "2026-11-10", "time": "08:00", "kind": "guide", 
 "slugs": {"es": "viaje-sumba-y-flores", "id": "perjalanan-sumba-dan-flores"},
 "en": {
  "title": "Sumba and Flores in one trip: flights, ferries and a 10-14 day plan",
@@ -238,8 +237,7 @@ G1 = {
 }
 
 G2 = {
-"section": "things-to-do", "slug": "sumba-and-bali-trip", "date": "2026-11-10", "time": "09:00", "kind": "guide",
-"img_key": "illegal-gold-panning-east-sumba-paberiwai",
+"section": "things-to-do", "slug": "sumba-and-bali-trip", "date": "2026-11-10", "time": "09:00", "kind": "guide", 
 "slugs": {"es": "viaje-sumba-y-bali", "id": "perjalanan-sumba-dan-bali"},
 "en": {
  "title": "Sumba and Bali in one trip: how to split your days and a 10-day plan",
@@ -485,8 +483,7 @@ G2 = {
 }
 
 G3 = {
-"section": "things-to-do", "slug": "sumba-on-a-budget", "date": "2026-11-10", "time": "10:00", "kind": "guide",
-"img_key": "east-sumba-visitor-numbers-2025",
+"section": "things-to-do", "slug": "sumba-on-a-budget", "date": "2026-11-10", "time": "10:00", "kind": "guide", 
 "slugs": {"es": "sumba-con-poco-dinero", "id": "liburan-hemat-ke-sumba"},
 "en": {
  "title": "Sumba on a budget: homestays, scooters and real daily costs",
@@ -719,8 +716,7 @@ G3 = {
 }
 
 G4 = {
-"section": "things-to-do", "slug": "luxury-travel-sumba", "date": "2026-11-10", "time": "11:00", "kind": "guide",
-"img_key": "what-is-being-built-in-sumba",
+"section": "things-to-do", "slug": "luxury-travel-sumba", "date": "2026-11-10", "time": "11:00", "kind": "guide", 
 "slugs": {"es": "viaje-de-lujo-a-sumba", "id": "wisata-mewah-di-sumba"},
 "en": {
  "title": "Luxury travel in Sumba: private drivers, villas and rare experiences",
@@ -958,8 +954,7 @@ G4 = {
 }
 
 G5 = {
-"section": "things-to-do", "slug": "honeymoon-in-sumba", "date": "2026-11-10", "time": "12:00", "kind": "guide",
-"img_key": "beaches-lagoons-waterfalls",
+"section": "things-to-do", "slug": "honeymoon-in-sumba", "date": "2026-11-10", "time": "12:00", "kind": "guide", 
 "slugs": {"es": "luna-de-miel-en-sumba", "id": "bulan-madu-di-sumba"},
 "en": {
  "title": "Honeymoon in Sumba: a romantic itinerary, best months and sunsets",
@@ -1227,8 +1222,7 @@ G5 = {
 }
 
 G6 = {
-"section": "things-to-do", "slug": "sumba-sunsets-sunrises", "date": "2026-11-10", "time": "13:00", "kind": "guide",
-"img_key": "where-to-stay-in-sumba",
+"section": "things-to-do", "slug": "sumba-sunsets-sunrises", "date": "2026-11-10", "time": "13:00", "kind": "guide", 
 "slugs": {"es": "atardeceres-y-amaneceres-en-sumba", "id": "matahari-terbenam-dan-terbit-di-sumba"},
 "en": {
  "title": "The best sunsets and sunrises in Sumba: 16 spots, times and seasons",

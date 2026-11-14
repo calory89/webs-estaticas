@@ -202,8 +202,7 @@ ADAT_ID = """<p>Melintasi Sumba Timur pada musim kemarau, tanahnya seolah tak be
 
 GUIDES.append({
  "section": "culture", "slug": "customary-adat-land-sumba-explained", "date": "2026-11-10", "time": "08:00", "kind": "guide",
- "slugs": {"es": "tierra-consuetudinaria-adat-en-sumba", "id": "tanah-adat-di-sumba-dijelaskan"},
- "img_key": "east-sumba-first-customary-land-certificate",
+ "slugs": {"es": "tierra-consuetudinaria-adat-en-sumba", "id": "tanah-adat-di-sumba-dijelaskan"}, 
  "en": {
   "title": "Customary (adat) land in Sumba explained: clans, rights and disputes",
   "dek": "Why most of Sumba's land belongs to clans rather than certificates, what masyarakat hukum adat means, and what it changes for buyers and visitors.",
@@ -494,8 +493,7 @@ VISA_ID = """<p>Pesawat baling-baling kecil turun menuju Tambolaka di atas petak
 
 GUIDES.append({
  "section": "getting-here", "slug": "indonesia-visa-for-sumba-explained", "date": "2026-11-10", "time": "08:30", "kind": "guide",
- "slugs": {"es": "visado-de-indonesia-para-viajar-a-sumba", "id": "visa-indonesia-untuk-ke-sumba"},
- "img_key": "how-to-get-to-sumba-from-bali",
+ "slugs": {"es": "visado-de-indonesia-para-viajar-a-sumba", "id": "visa-indonesia-untuk-ke-sumba"}, 
  "en": {
   "title": "Indonesia visa for Sumba: VoA, e-VoA, visa-free entry and extensions",
   "dek": "What you need to enter Indonesia for a trip to Sumba, what it costs, how long you can stay and how to extend, checked on the official site on 10 November 2026.",
@@ -720,8 +718,7 @@ CER_ID = """<p>Upacara kematian di Sumba terdengar sebelum terlihat: tabuhan gon
 
 GUIDES.append({
  "section": "culture", "slug": "sumba-weddings-funerals-ceremonies", "date": "2026-11-10", "time": "09:00", "kind": "guide",
- "slugs": {"es": "bodas-funerales-y-ceremonias-en-sumba", "id": "pernikahan-kematian-dan-upacara-adat-sumba"},
- "img_key": "marapu-ikat-traditional-villages",
+ "slugs": {"es": "bodas-funerales-y-ceremonias-en-sumba", "id": "pernikahan-kematian-dan-upacara-adat-sumba"}, 
  "en": {
   "title": "Weddings, funerals and ceremonies in Sumba: what to do if you are invited",
   "dek": "Gifts, dress, betel nut, animal sacrifice and photo etiquette: how to be a good guest at the most important moments of Sumbanese family life.",
@@ -984,8 +981,7 @@ VOL_ID = """<p>Cukup beberapa hari di pedesaan Sumba untuk melihat dua wajah pul
 
 GUIDES.append({
  "section": "things-to-do", "slug": "volunteering-in-sumba-responsibly", "date": "2026-11-10", "time": "09:30", "kind": "guide",
- "slugs": {"es": "voluntariado-en-sumba-de-forma-responsable", "id": "menjadi-relawan-di-sumba-secara-bertanggung-jawab"},
- "img_key": "east-sumba-visitor-numbers-2025",
+ "slugs": {"es": "voluntariado-en-sumba-de-forma-responsable", "id": "menjadi-relawan-di-sumba-secara-bertanggung-jawab"}, 
  "en": {
   "title": "Volunteering in Sumba responsibly: what helps, what harms, how to check",
   "dek": "Why orphanage visits do harm, which placements genuinely help, the questions to ask any organisation, and the visa volunteers need in Indonesia.",
@@ -1247,8 +1243,7 @@ HIKE_ID = """<p>Saat fajar di jalan sebelah barat Waingapu, perbukitan tampak se
 
 GUIDES.append({
  "section": "things-to-do", "slug": "hiking-in-sumba", "date": "2026-11-10", "time": "10:00", "kind": "guide",
- "slugs": {"es": "senderismo-en-sumba", "id": "hiking-dan-trekking-di-sumba"},
- "img_key": "where-to-stay-in-sumba",
+ "slugs": {"es": "senderismo-en-sumba", "id": "hiking-dan-trekking-di-sumba"}, 
  "en": {
   "title": "Hiking in Sumba: national parks, Mount Wanggameti and savanna hills",
   "dek": "Forest trails and waterfalls in Manupeu Tanah Daru, the 1,225 m summit of Wanggameti, golden savanna walks near Waingapu, and how to hike safely.",
@@ -1504,8 +1499,7 @@ DIVE_ID = """<p>Mengapung telungkup di tepi teluk yang tenang di pantai utara Su
 
 GUIDES.append({
  "section": "things-to-do", "slug": "diving-snorkelling-sumba", "date": "2026-11-10", "time": "10:30", "kind": "guide",
- "slugs": {"es": "buceo-y-snorkel-en-sumba", "id": "menyelam-dan-snorkeling-di-sumba"},
- "img_key": "magnitude-6-1-earthquake-southwest-sumba",
+ "slugs": {"es": "buceo-y-snorkel-en-sumba", "id": "menyelam-dan-snorkeling-di-sumba"}, 
  "en": {
   "title": "Diving and snorkelling in Sumba: an honest guide to reefs and seasons",
   "dek": "Little dive infrastructure, powerful Indian Ocean swell and a few sheltered snorkelling spots: what we could verify about Sumba underwater, and what we could not.",
@@ -1743,8 +1737,7 @@ HIST_ID = """<p>Berdirilah di pelabuhan Waingapu menjelang senja, ketika perahu 
 
 GUIDES.append({
  "section": "culture", "slug": "short-history-of-sumba", "date": "2026-11-10", "time": "11:00", "kind": "guide",
- "slugs": {"es": "breve-historia-de-sumba", "id": "sejarah-singkat-sumba"},
- "img_key": "waingapu-port-drug-checks-ferry-passengers",
+ "slugs": {"es": "breve-historia-de-sumba", "id": "sejarah-singkat-sumba"}, 
  "en": {
   "title": "A short history of Sumba: sandalwood, horses, slaves and the Dutch",
   "dek": "From megalithic clans and Majapahit to the sandalwood and horse trades, the slave raids, Dutch rule from 1906 and today's four regencies: a timeline.",
@@ -1982,8 +1975,7 @@ CMP_ID = """<p>Bayangkan empat pagi di Indonesia timur. Di Lombok, Anda berdiri 
 
 GUIDES.append({
  "section": "things-to-do", "slug": "sumba-vs-lombok-komodo-raja-ampat", "date": "2026-11-10", "time": "11:30", "kind": "guide",
- "slugs": {"es": "sumba-frente-a-lombok-komodo-y-raja-ampat", "id": "sumba-dibandingkan-lombok-komodo-raja-ampat"},
- "img_key": "what-is-being-built-in-sumba",
+ "slugs": {"es": "sumba-frente-a-lombok-komodo-y-raja-ampat", "id": "sumba-dibandingkan-lombok-komodo-raja-ampat"}, 
  "en": {
   "title": "Sumba vs Lombok, Komodo and Raja Ampat: which island suits you?",
   "dek": "Volcano treks, dragons, coral reefs or living megalithic culture: how Sumba compares with three of eastern Indonesia's big names, and how to combine them.",
@@ -2241,8 +2233,7 @@ LAND_ID = """<p>Biasanya semuanya berawal dari pemandangan: sebuah tanjung di at
 
 GUIDES.append({
  "section": "business", "slug": "buying-land-property-sumba-foreigner", "date": "2026-11-10", "time": "12:00", "kind": "guide",
- "slugs": {"es": "comprar-terreno-o-casa-en-sumba-siendo-extranjero", "id": "membeli-tanah-atau-properti-di-sumba-bagi-wna"},
- "img_key": "illegal-gold-panning-east-sumba-paberiwai",
+ "slugs": {"es": "comprar-terreno-o-casa-en-sumba-siendo-extranjero", "id": "membeli-tanah-atau-properti-di-sumba-bagi-wna"}, 
  "en": {
   "title": "Buying land or property in Sumba as a foreigner: Hak Pakai, PT PMA, risks",
   "dek": "What Indonesian law allows foreigners to hold, why nominee deals are dangerous, and the extra checks that customary land demands on Sumba. Not legal advice.",

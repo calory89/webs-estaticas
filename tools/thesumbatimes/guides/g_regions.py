@@ -684,8 +684,7 @@ GUIDES = [
   ["Wejewa (Weyewa) language, Omniglot, accessed Nov 2026", "https://omniglot.com/writing/wejewa.htm"],
   ["Karitas Hospital, Southwest Sumba, Faculty of Medicine Universitas Indonesia", "https://fk.ui.ac.id/uncategorized/karitas-hospital.html"],
   ["Pertamina menyalurkan 2.500 kl BBM memperkuat pasokan di wilayah Sumba, ANTARA Kupang, 28 Oct 2026", "https://kupang.antaranews.com/berita/203679/pertamina-menyalurkan-2500-kl-bbm-memperkuat-pasokan-di-wilayah-sumba"],
- ],
- "img_key": "weekuri-lagoon", "image_candidate": None,
+ ],  "image_candidate": None,
 },
 # ---------------------------------------------------------------------------
 # 4) CENTRAL SUMBA REGENCY

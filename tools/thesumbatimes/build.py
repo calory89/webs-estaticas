@@ -335,7 +335,7 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
     if "application/ld+json" not in extra and not noindex:
         _name = title[:-len(SUF)] if title.endswith(SUF) else title
         _ld = {"@context": "https://schema.org", "@type": "WebPage", "name": _name, "description": desc, "url": url, "inLanguage": l, "isPartOf": {"@type": "WebSite", "name": "The Sumba Times", "url": BASE + "/"},
-               "publisher": {"@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE + "/"},
+               "publisher": {"@type": "NewsMediaOrganization", "@id": BASE + "/#organization", "name": "The Sumba Times", "url": BASE + "/"},
                "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Sumba Times", "item": f"{BASE}/{l}/"}] + ([{"@type": "ListItem", "position": 2, "name": _name, "item": url}] if url != f"{BASE}/{l}/" else [])}}
         extra += f'<script type="application/ld+json">{json.dumps(_ld, ensure_ascii=False)}</script>'
     title = seo_title(title); desc = seo_desc(desc)
@@ -786,7 +786,7 @@ def home(l):
     feat = next((g for g in guides if g["slug"] == "best-time-to-visit-sumba"), guides[0])
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "The Sumba Times", "url": BASE + f"/{l}/", "inLanguage": l,
            "potentialAction": {"@type": "SearchAction", "target": BASE + f"/{l}/search/?q={{search_term_string}}", "query-input": "required name=search_term_string"}},
-          {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE, "logo": BASE + "/apple-touch-icon.png",
+          {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "@id": BASE + "/#organization", "name": "The Sumba Times", "url": BASE + "/", "logo": BASE + "/apple-touch-icon.png",
            **pages_trust.org_ld_extra(l), "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
     tk = img_key(top)
     pre = f'<link rel="preload" as="image" href="/img/{tk}-1280.webp" imagesrcset="/img/{tk}-640.webp 640w, /img/{tk}-1280.webp 1280w" imagesizes="(max-width: 980px) 100vw, 620px">'

@@ -130,8 +130,7 @@ BRIEFS = [
  "date": "2026-11-11",
  "time": "06:30",
  "dateline": "WAINGAPU",
- "kind": "brief",
- "img_key": "waikelo-sape-ferry-reopens",
+ "kind": "brief", 
  "slugs": {
   "es": "granja-camarones-waingapu-casi-20-por-ciento-obra-2028",
   "id": "tambak-udang-waingapu-hampir-20-persen-beroperasi-2028"
@@ -273,8 +272,7 @@ BRIEFS = [
 },
 {
  "section": "living", "slug": "waingapu-fuel-queues-continue-202-motorbikes-seized", "date": "2026-11-10", "time": "07:00",
- "dateline": "WAINGAPU", "kind": "brief",
- "img_key": "pertamina-fuel-shipment-sumba-queues",
+ "dateline": "WAINGAPU", "kind": "brief", 
  "slugs": {"es": "colas-gasolina-waingapu-policia-devuelve-202-motos", "id": "antrean-bbm-waingapu-polisi-kembalikan-202-motor"},
  "keywords": {
   "en": ["Sumba fuel shortage", "Waingapu petrol queues", "Sumba fuel quota 2026", "Pertalite Sumba", "driving in Sumba fuel", "East Sumba fuel"],

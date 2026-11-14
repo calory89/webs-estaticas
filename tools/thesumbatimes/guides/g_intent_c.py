@@ -202,8 +202,7 @@ _TTD_ID = """
 
 GUIDES.append({
  "section": "things-to-do", "slug": "things-to-do-in-sumba", "date": "2026-11-14", "time": "14:10", "kind": "guide",
- "slugs": {"es": "que-ver-y-hacer-en-sumba", "id": "tempat-wisata-di-sumba"},
- "img_key": "beaches-lagoons-waterfalls",
+ "slugs": {"es": "que-ver-y-hacer-en-sumba", "id": "tempat-wisata-di-sumba"}, 
  "en": {
   "title": "Things to do in Sumba: 25 experiences from west to east",
   "dek": "From Weekuri Lagoon to the royal villages of Melolo: 25 things to do in Sumba, in road order, with where, when and how for each.",
@@ -383,8 +382,7 @@ _EW_ID = """
 
 GUIDES.append({
  "section": "things-to-do", "slug": "east-sumba-or-west-sumba", "date": "2026-11-14", "time": "14:25", "kind": "guide",
- "slugs": {"es": "sumba-oriental-u-occidental-que-lado-elegir", "id": "sumba-timur-atau-sumba-barat"},
- "img_key": "where-to-stay-in-sumba",
+ "slugs": {"es": "sumba-oriental-u-occidental-que-lado-elegir", "id": "sumba-timur-atau-sumba-barat"}, 
  "en": {
   "title": "East Sumba or West Sumba: which side should you choose?",
   "dek": "Savanna and silence in the east, villages and waterfalls in the west: an honest comparison of Sumba's two sides, with a table.",
@@ -602,8 +600,7 @@ _BA_ID = """
 
 GUIDES.append({
  "section": "things-to-do", "slug": "bali-alternatives-why-sumba", "date": "2026-11-14", "time": "14:40", "kind": "guide",
- "slugs": {"es": "alternativas-a-bali-por-que-sumba", "id": "alternatif-bali-mengapa-sumba"},
- "img_key": "east-sumba-first-customary-land-certificate",
+ "slugs": {"es": "alternativas-a-bali-por-que-sumba", "id": "alternatif-bali-mengapa-sumba"}, 
  "en": {
   "title": "Bali alternatives: why Sumba, and who should skip it",
   "dek": "Looking for Bali alternatives? What Sumba offers, what it lacks (nightlife, transport, hospitals) and who should and should not go.",
@@ -854,8 +851,7 @@ _MT_ID = """
 
 GUIDES.append({
  "section": "culture", "slug": "sumba-megalithic-tombs", "date": "2026-11-14", "time": "14:55", "kind": "guide",
- "slugs": {"es": "tumbas-megaliticas-de-sumba", "id": "kubur-batu-megalitik-sumba"},
- "img_key": "marapu-ikat-traditional-villages",
+ "slugs": {"es": "tumbas-megaliticas-de-sumba", "id": "kubur-batu-megalitik-sumba"}, 
  "en": {
   "title": "Sumba's megalithic tombs: where to see them, what they mean",
   "dek": "Sumba still drags stone slabs of many tonnes to bury its dead. What the megalithic tombs mean, the villages to visit and how to behave.",

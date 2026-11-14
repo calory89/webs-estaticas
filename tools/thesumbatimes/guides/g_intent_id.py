@@ -7,8 +7,7 @@ Every figure comes from a page opened on 14 Nov 2026 (see "sources") or from gui
 # 1. Itinerary Sumba 4 hari 3 malam
 # =====================================================================================================================
 G1 = {
- "section": "things-to-do", "slug": "sumba-itinerary-4-days-3-nights", "date": "2026-11-14", "time": "16:05", "kind": "guide",
- "img_key": "east-sumba-visitor-numbers-2025",
+ "section": "things-to-do", "slug": "sumba-itinerary-4-days-3-nights", "date": "2026-11-14", "time": "16:05", "kind": "guide", 
  "slugs": {"es": "itinerario-sumba-4-dias-3-noches", "id": "itinerary-sumba-4-hari-3-malam"},
  "id": {
   "title": "Itinerary Sumba 4 hari 3 malam: rute Tambolaka-Waingapu",
@@ -196,8 +195,7 @@ G1 = {
 # 2. Itinerary Sumba 3 hari 2 malam
 # =====================================================================================================================
 G2 = {
- "section": "things-to-do", "slug": "sumba-itinerary-3-days-2-nights", "date": "2026-11-14", "time": "16:10", "kind": "guide",
- "img_key": "beaches-lagoons-waterfalls",
+ "section": "things-to-do", "slug": "sumba-itinerary-3-days-2-nights", "date": "2026-11-14", "time": "16:10", "kind": "guide", 
  "slugs": {"es": "itinerario-sumba-3-dias-2-noches", "id": "itinerary-sumba-3-hari-2-malam"},
  "id": {
   "title": "Itinerary Sumba 3 hari 2 malam: pilih barat atau timur",
@@ -385,8 +383,7 @@ G2 = {
 # 3. Biaya liburan ke Sumba dari Jakarta
 # =====================================================================================================================
 G3 = {
- "section": "getting-here", "slug": "sumba-trip-cost-from-jakarta", "date": "2026-11-14", "time": "16:15", "kind": "guide",
- "img_key": "how-to-get-to-sumba-from-bali",
+ "section": "getting-here", "slug": "sumba-trip-cost-from-jakarta", "date": "2026-11-14", "time": "16:15", "kind": "guide", 
  "slugs": {"es": "cuanto-cuesta-viajar-a-sumba-desde-yakarta", "id": "biaya-liburan-ke-sumba-dari-jakarta"},
  "id": {
   "title": "Biaya liburan ke Sumba dari Jakarta: rincian 4 hari 3 malam",
@@ -593,8 +590,7 @@ G3 = {
 # 4. Open trip Sumba
 # =====================================================================================================================
 G4 = {
- "section": "things-to-do", "slug": "sumba-open-trip-how-to-choose", "date": "2026-11-14", "time": "16:20", "kind": "guide",
- "img_key": "illegal-gold-panning-east-sumba-paberiwai",
+ "section": "things-to-do", "slug": "sumba-open-trip-how-to-choose", "date": "2026-11-14", "time": "16:20", "kind": "guide", 
  "slugs": {"es": "open-trip-sumba-viajes-en-grupo", "id": "open-trip-sumba"},
  "id": {
   "title": "Open trip Sumba: cara kerja, isi paket, dan tips memilih",
@@ -809,8 +805,7 @@ G4 = {
 # 5. Harga tiket masuk wisata Sumba
 # =====================================================================================================================
 G5 = {
- "section": "things-to-do", "slug": "sumba-entrance-fees", "date": "2026-11-14", "time": "16:25", "kind": "guide",
- "img_key": "marapu-ikat-traditional-villages",
+ "section": "things-to-do", "slug": "sumba-entrance-fees", "date": "2026-11-14", "time": "16:25", "kind": "guide", 
  "slugs": {"es": "precios-de-entrada-en-sumba", "id": "harga-tiket-masuk-wisata-sumba"},
  "id": {
   "title": "Harga tiket masuk wisata Sumba: tarif dan donasi terbaru",
@@ -1047,8 +1042,7 @@ G5 = {
 # 6. Wisata Sumba Barat Daya (hub)
 # =====================================================================================================================
 G6 = {
- "section": "things-to-do", "slug": "things-to-do-southwest-sumba", "date": "2026-11-14", "time": "16:30", "kind": "guide",
- "img_key": "magnitude-6-1-earthquake-southwest-sumba",
+ "section": "things-to-do", "slug": "things-to-do-southwest-sumba", "date": "2026-11-14", "time": "16:30", "kind": "guide", 
  "slugs": {"es": "que-ver-en-sumba-suroccidental", "id": "wisata-sumba-barat-daya"},
  "id": {
   "title": "Wisata Sumba Barat Daya: 11 tempat dan cara menyusunnya",
@@ -1251,8 +1245,7 @@ G6 = {
 # 7. Wisata Sumba Timur (hub)
 # =====================================================================================================================
 G7 = {
- "section": "things-to-do", "slug": "things-to-do-east-sumba", "date": "2026-11-14", "time": "16:35", "kind": "guide",
- "img_key": "east-sumba-first-customary-land-certificate",
+ "section": "things-to-do", "slug": "things-to-do-east-sumba", "date": "2026-11-14", "time": "16:35", "kind": "guide", 
  "slugs": {"es": "que-ver-en-sumba-oriental", "id": "wisata-sumba-timur"},
  "id": {
   "title": "Wisata Sumba Timur: 22 tempat dari Waingapu, per arah",
@@ -1459,8 +1452,7 @@ G7 = {
 # 8. Sumba di layar lebar
 # =====================================================================================================================
 G8 = {
- "section": "culture", "slug": "sumba-in-films", "date": "2026-11-14", "time": "16:40", "kind": "guide",
- "img_key": "where-to-stay-in-sumba",
+ "section": "culture", "slug": "sumba-in-films", "date": "2026-11-14", "time": "16:40", "kind": "guide", 
  "slugs": {"es": "sumba-en-el-cine", "id": "film-yang-syuting-di-sumba"},
  "id": {
   "title": "Film yang syuting di Sumba: dari Marlina sampai Susah Sinyal",

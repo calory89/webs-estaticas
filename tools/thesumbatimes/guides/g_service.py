@@ -210,8 +210,7 @@ FERRY_ID = """<p>Malam turun di Pelabuhan Waingapu bersama bunyi panjang klakson
 
 GUIDES.append({
  "section": "getting-here", "slug": "ferries-to-sumba", "date": "2026-11-10", "time": "07:00", "kind": "guide",
- "slugs": {"es": "ferris-a-sumba", "id": "kapal-feri-ke-sumba"},
- "img_key": "waingapu-port-drug-checks-ferry-passengers",
+ "slugs": {"es": "ferris-a-sumba", "id": "kapal-feri-ke-sumba"}, 
  "en": {
   "title": "Ferries to and from Sumba: routes, ports, schedules and tickets",
   "dek": "Waikelo to Sape, Waingapu to Flores and Kupang, Pelni loops to Bali and Makassar: how to reach Sumba by sea in 2026, and where to check before you sail.",
