@@ -146,8 +146,10 @@ function kbHeaders(r, u) {
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
   // n21e: Russian pages get the right noun form after a number ("2 проекта", "1 проект"; the templates only carry "проектов")
   const ru = r.status === 200 && r.body && /^\/ru(\/|$)/.test(u.pathname);
-  if (ru) h.delete('content-length');
-  const out = new Response(ru ? new ReadableStream({ async start(c) { try { c.enqueue(new TextEncoder().encode(ruPlaces(kbRu(await r.text())))); c.close(); } catch (e) { c.error(e); } } }) : r.body, { status: r.status, statusText: r.statusText, headers: h });
+  // n28a: "1 months", "1 meses", "1 Monate", "1 maanden" (templates written for plural numbers) become singular in en, es, de and nl
+  const u1 = !ru && r.status === 200 && r.body ? KB_U1[(/^\/(es|de|nl|fr|zh|ar)(\/|$)/.exec(u.pathname) || [0, 'en'])[1]] : null;
+  if (ru || u1) h.delete('content-length');
+  const out = new Response(ru || u1 ? new ReadableStream({ async start(c) { try { const t = await r.text(); c.enqueue(new TextEncoder().encode(ru ? ruPlaces(kbRu(t)) : kbOne(t, u1))); c.close(); } catch (e) { c.error(e); } } }) : r.body, { status: r.status, statusText: r.statusText, headers: h });
   // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
   let ds = false; const styleIds = new Set(); const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
   // n20p: pages that load site.css get /k/ds-site.css, the same rules without the :has() page test (see that file's first lines)
@@ -191,6 +193,10 @@ function kbRu(html) {
     return num + gap + adj + KB_RU_N[noun][0];
   });
 }
+const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year' }, es: { meses: 'mes', 'días': 'día', semanas: 'semana', 'años': 'año' },
+  de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
+const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
+function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
 const KB_SITE_CSS_V = '218b336d7f', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';

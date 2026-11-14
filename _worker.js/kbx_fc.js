@@ -14,6 +14,7 @@
 // Sumba projects are left out everywhere (conflict of interest), the same rule as the named pages.
 import { FT } from './kbx_fc_i18n.js';
 import { LOCALE } from './kbx_named_i18n.js';
+import { placeName } from './kbx_hdate.js';   // n28a: market and country names in the page language
 import { rpc } from './kolaboro.js';
 
 const ORIGIN = 'https://kolaboro.com';
@@ -178,7 +179,7 @@ export function fcProjectHtml(fc, x, lang, devGroup) {
     if (o.group) b += '<p>' + esc(gLine(o.group, lang)) + '</p>' + cond + (rowsTable(o.rows, lang, false, { first: mi(o.first) }) || '');
     else {
       const m = o.market;
-      b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: m.name, n: nf(m.n, lang), k: nf(m.k, lang), N: MIN_N, K: MIN_K })) + '</span></div>';
+      b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: placeName(m.name, lang), n: nf(m.n, lang), k: nf(m.k, lang), N: MIN_N, K: MIN_K })) + '</span></div>';
       return b + methodLink(lang) + '</div>' + FC_CSS;   // named pages show no pooled figure: the all-markets context lives on the method and market pages
     }
     if (o.beyond != null && o.rows.length) b += '<p class="kfc-fine">' + esc(t(lang, 'beyond', { m: o.beyond })) + '</p>';

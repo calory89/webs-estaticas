@@ -44,7 +44,7 @@ const N = {
     ph_intro: 'Prices printed on the page we track ({host}), by date of our copy. Currency as printed; we convert nothing.',
     ph_first: 'First headline price we hold: {p} ({d}).', ph_last: 'Latest: {p} ({d}).', ph_same: 'The headline price is the same in all {n} dated copies.',
     ph_chg: 'Change from the first to the latest copy, in {cur}: {pct}.', ph_cur2: 'Copies show the headline in more than one currency, so we do not compute a change.',
-    ph_none: 'None of our {n} dated copies of this page ({a} to {b}) shows a price. No prices published.', ph_nocopy: 'We hold no dated copy of this page yet, so we cannot show its prices over time.',
+    ph_none: 'None of our {n} dated copies of this page ({a} to {b}) shows a price. No prices published.', ph_none1: 'Our one dated copy of this page ({a}) shows no price. No prices published.', ph_nocopy: 'We hold no dated copy of this page yet, so we cannot show its prices over time.',
     ph_th: ['Date', 'Copy', 'Headline price as printed', 'Other prices printed'], ph_copy: 'Our sealed copy', ph_ia: 'Internet Archive', ph_open: 'open copy', ph_noprice: 'no price printed',
     ph_rule: 'Headline: the first price printed after a word like "from" or "price". Portal pages can list other projects too; the words around each price show what it refers to.',
     ph_src: 'Copies used: {a} of ours (SHA-256 sealed) and {b} from the Internet Archive.', ph_chart: 'Headline price in {cur} by date of copy. Each point opens its copy.', ph_json: 'Data as JSON',
@@ -60,7 +60,7 @@ const N = {
     ph_intro: 'Precios impresos en la página que seguimos ({host}), por fecha de nuestra copia. Moneda tal como aparece; no convertimos nada.',
     ph_first: 'Primer precio destacado que tenemos: {p} ({d}).', ph_last: 'Último: {p} ({d}).', ph_same: 'El precio destacado es el mismo en las {n} copias fechadas.',
     ph_chg: 'Cambio de la primera a la última copia, en {cur}: {pct}.', ph_cur2: 'Las copias muestran el precio en más de una moneda, así que no calculamos un cambio.',
-    ph_none: 'Ninguna de nuestras {n} copias fechadas de esta página ({a} a {b}) muestra un precio. No se publican precios.', ph_nocopy: 'Aún no tenemos ninguna copia fechada de esta página, así que no podemos mostrar sus precios en el tiempo.',
+    ph_none: 'Ninguna de nuestras {n} copias fechadas de esta página ({a} a {b}) muestra un precio. No se publican precios.', ph_none1: 'Nuestra única copia fechada de esta página ({a}) no muestra ningún precio. No se publican precios.', ph_nocopy: 'Aún no tenemos ninguna copia fechada de esta página, así que no podemos mostrar sus precios en el tiempo.',
     ph_th: ['Fecha', 'Copia', 'Precio destacado tal como aparece', 'Otros precios impresos'], ph_copy: 'Nuestra copia sellada', ph_ia: 'Internet Archive', ph_open: 'abrir copia', ph_noprice: 'sin precio',
     ph_rule: 'Precio destacado: el primero que aparece tras palabras como "desde" o "precio". Los portales pueden listar otros proyectos; el texto alrededor de cada precio muestra a qué se refiere.',
     ph_src: 'Copias usadas: {a} nuestras (selladas con SHA-256) y {b} del Internet Archive.', ph_chart: 'Precio destacado en {cur} por fecha de copia. Cada punto abre su copia.', ph_json: 'Datos en JSON',
@@ -76,7 +76,7 @@ const N = {
     ph_intro: 'Prix imprimés sur la page que nous suivons ({host}), par date de notre copie. Devise telle qu\'imprimée ; nous ne convertissons rien.',
     ph_first: 'Premier prix affiché que nous avons : {p} ({d}).', ph_last: 'Dernier : {p} ({d}).', ph_same: 'Le prix affiché est le même dans les {n} copies datées.',
     ph_chg: 'Variation de la première à la dernière copie, en {cur} : {pct}.', ph_cur2: 'Les copies affichent le prix dans plusieurs devises ; nous ne calculons donc pas de variation.',
-    ph_none: 'Aucune de nos {n} copies datées de cette page ({a} au {b}) ne montre de prix. Aucun prix publié.', ph_nocopy: 'Nous n\'avons encore aucune copie datée de cette page ; impossible de montrer ses prix dans le temps.',
+    ph_none: 'Aucune de nos {n} copies datées de cette page ({a} au {b}) ne montre de prix. Aucun prix publié.', ph_none1: 'Notre unique copie datée de cette page ({a}) ne montre aucun prix. Aucun prix publié.', ph_nocopy: 'Nous n\'avons encore aucune copie datée de cette page ; impossible de montrer ses prix dans le temps.',
     ph_th: ['Date', 'Copie', 'Prix affiché tel qu\'imprimé', 'Autres prix imprimés'], ph_copy: 'Notre copie scellée', ph_ia: 'Internet Archive', ph_open: 'ouvrir la copie', ph_noprice: 'aucun prix',
     ph_rule: 'Prix affiché : le premier prix imprimé après un mot comme « à partir de » ou « prix ». Les portails listent parfois d\'autres projets ; le texte autour de chaque prix montre à quoi il se rapporte.',
     ph_src: 'Copies utilisées : {a} des nôtres (scellées SHA-256) et {b} de l\'Internet Archive.', ph_chart: 'Prix affiché en {cur} par date de copie. Chaque point ouvre sa copie.', ph_json: 'Données JSON',
@@ -92,7 +92,7 @@ const N = {
     ph_intro: 'Preise, die auf der von uns verfolgten Seite ({host}) stehen, nach Datum unserer Kopie. Währung wie angegeben; wir rechnen nichts um.',
     ph_first: 'Erster angezeigter Preis in unseren Kopien: {p} ({d}).', ph_last: 'Neuester: {p} ({d}).', ph_same: 'Der angezeigte Preis ist in allen {n} datierten Kopien gleich.',
     ph_chg: 'Änderung von der ersten zur neuesten Kopie, in {cur}: {pct}.', ph_cur2: 'Die Kopien zeigen den Preis in mehr als einer Währung, daher berechnen wir keine Änderung.',
-    ph_none: 'Keine unserer {n} datierten Kopien dieser Seite ({a} bis {b}) zeigt einen Preis. Keine Preise veröffentlicht.', ph_nocopy: 'Wir haben noch keine datierte Kopie dieser Seite und können keine Preise im Zeitverlauf zeigen.',
+    ph_none: 'Keine unserer {n} datierten Kopien dieser Seite ({a} bis {b}) zeigt einen Preis. Keine Preise veröffentlicht.', ph_none1: 'Unsere einzige datierte Kopie dieser Seite ({a}) zeigt keinen Preis. Keine Preise veröffentlicht.', ph_nocopy: 'Wir haben noch keine datierte Kopie dieser Seite und können keine Preise im Zeitverlauf zeigen.',
     ph_th: ['Datum', 'Kopie', 'Angezeigter Preis wie angegeben', 'Weitere Preise auf der Seite'], ph_copy: 'Unsere versiegelte Kopie', ph_ia: 'Internet Archive', ph_open: 'Kopie öffnen', ph_noprice: 'kein Preis',
     ph_rule: 'Angezeigter Preis: der erste Preis nach einem Wort wie „ab“ oder „Preis“. Portale listen oft weitere Projekte; der Text um jeden Preis zeigt, worauf er sich bezieht.',
     ph_src: 'Verwendete Kopien: {a} eigene (mit SHA-256 versiegelt) und {b} aus dem Internet Archive.', ph_chart: 'Angezeigter Preis in {cur} nach Datum der Kopie. Jeder Punkt öffnet seine Kopie.', ph_json: 'Daten als JSON',
@@ -108,7 +108,7 @@ const N = {
     ph_intro: 'Prijzen die op de pagina staan die we volgen ({host}), per datum van onze kopie. Valuta zoals vermeld; we rekenen niets om.',
     ph_first: 'Eerste getoonde prijs in onze kopieën: {p} ({d}).', ph_last: 'Laatste: {p} ({d}).', ph_same: 'De getoonde prijs is gelijk in alle {n} gedateerde kopieën.',
     ph_chg: 'Verandering van de eerste naar de laatste kopie, in {cur}: {pct}.', ph_cur2: 'De kopieën tonen de prijs in meer dan één valuta, dus we berekenen geen verandering.',
-    ph_none: 'Geen van onze {n} gedateerde kopieën van deze pagina ({a} tot {b}) toont een prijs. Geen prijzen gepubliceerd.', ph_nocopy: 'We hebben nog geen gedateerde kopie van deze pagina, dus we kunnen geen prijzen door de tijd tonen.',
+    ph_none: 'Geen van onze {n} gedateerde kopieën van deze pagina ({a} tot {b}) toont een prijs. Geen prijzen gepubliceerd.', ph_none1: 'Onze enige gedateerde kopie van deze pagina ({a}) toont geen prijs. Geen prijzen gepubliceerd.', ph_nocopy: 'We hebben nog geen gedateerde kopie van deze pagina, dus we kunnen geen prijzen door de tijd tonen.',
     ph_th: ['Datum', 'Kopie', 'Getoonde prijs zoals vermeld', 'Andere vermelde prijzen'], ph_copy: 'Onze verzegelde kopie', ph_ia: 'Internet Archive', ph_open: 'kopie openen', ph_noprice: 'geen prijs',
     ph_rule: 'Getoonde prijs: de eerste prijs na een woord als "vanaf" of "prijs". Portalen tonen soms ook andere projecten; de tekst rond elke prijs laat zien waar die bij hoort.',
     ph_src: 'Gebruikte kopieën: {a} van ons (verzegeld met SHA-256) en {b} uit het Internet Archive.', ph_chart: 'Getoonde prijs in {cur} per datum van de kopie. Elk punt opent zijn kopie.', ph_json: 'Gegevens als JSON',
@@ -124,7 +124,7 @@ const N = {
     ph_intro: 'Цены, напечатанные на странице, которую мы отслеживаем ({host}), по дате нашей копии. Валюта как на странице; мы ничего не пересчитываем.',
     ph_first: 'Первая заявленная цена в наших копиях: {p} ({d}).', ph_last: 'Последняя: {p} ({d}).', ph_same: 'Заявленная цена одинакова во всех {n} датированных копиях.',
     ph_chg: 'Изменение от первой до последней копии, в {cur}: {pct}.', ph_cur2: 'В копиях цена указана в разных валютах, поэтому изменение не считаем.',
-    ph_none: 'Ни одна из наших {n} датированных копий этой страницы ({a} – {b}) не показывает цену. Цены не опубликованы.', ph_nocopy: 'У нас пока нет датированной копии этой страницы, поэтому показать цены во времени нельзя.',
+    ph_none: 'Ни одна из наших {n} датированных копий этой страницы ({a} – {b}) не показывает цену. Цены не опубликованы.', ph_none1: 'Наша единственная датированная копия этой страницы ({a}) не показывает цену. Цены не опубликованы.', ph_nocopy: 'У нас пока нет датированной копии этой страницы, поэтому показать цены во времени нельзя.',
     ph_th: ['Дата', 'Копия', 'Заявленная цена как на странице', 'Другие цены на странице'], ph_copy: 'Наша запечатанная копия', ph_ia: 'Internet Archive', ph_open: 'открыть копию', ph_noprice: 'цены нет',
     ph_rule: 'Заявленная цена: первая цена после слов вроде «от» или «цена». Порталы могут показывать и другие проекты; текст вокруг каждой цены показывает, к чему она относится.',
     ph_src: 'Использованные копии: {a} наших (запечатаны SHA-256) и {b} из Internet Archive.', ph_chart: 'Заявленная цена в {cur} по дате копии. Каждая точка открывает свою копию.', ph_json: 'Данные в JSON',
@@ -140,7 +140,7 @@ const N = {
     ph_intro: '我们跟踪的页面（{host}）上印出的价格，按我们副本的日期排列。货币按原样显示，我们不做换算。',
     ph_first: '我们最早的标价：{p}（{d}）。', ph_last: '最新：{p}（{d}）。', ph_same: '所有 {n} 份带日期的副本中标价相同。',
     ph_chg: '从最早到最新副本的变化（{cur}）：{pct}。', ph_cur2: '各副本的标价使用了不同货币，因此我们不计算变化。',
-    ph_none: '我们对该页面的 {n} 份带日期副本（{a} 至 {b}）都没有显示价格。未公布价格。', ph_nocopy: '我们还没有该页面的带日期副本，因此无法显示价格变化。',
+    ph_none: '我们对该页面的 {n} 份带日期副本（{a} 至 {b}）都没有显示价格。未公布价格。', ph_none1: '我们对该页面仅有的一份带日期副本（{a}）没有显示价格。未公布价格。', ph_nocopy: '我们还没有该页面的带日期副本，因此无法显示价格变化。',
     ph_th: ['日期', '副本', '原样标价', '页面上的其他价格'], ph_copy: '我们的封存副本', ph_ia: 'Internet Archive', ph_open: '打开副本', ph_noprice: '无价格',
     ph_rule: '标价：在“起”或“价格”等词之后出现的第一个价格。门户页面也可能列出其他项目；每个价格周围的文字说明它指的是什么。',
     ph_src: '使用的副本：我们的 {a} 份（SHA-256 封存）和 Internet Archive 的 {b} 份。', ph_chart: '按副本日期显示的 {cur} 标价。点击每个点可打开对应副本。', ph_json: 'JSON 数据',
@@ -156,7 +156,7 @@ const N = {
     ph_intro: 'الأسعار المطبوعة على الصفحة التي نتابعها ({host})، حسب تاريخ نسختنا. العملة كما طُبعت؛ لا نحوّل شيئًا.',
     ph_first: 'أول سعر رئيسي لدينا: {p} ({d}).', ph_last: 'الأحدث: {p} ({d}).', ph_same: 'السعر الرئيسي نفسه في جميع النسخ المؤرخة وعددها {n}.',
     ph_chg: 'التغير من أول نسخة إلى أحدث نسخة، بعملة {cur}: {pct}.', ph_cur2: 'تعرض النسخ السعر بأكثر من عملة، لذا لا نحسب التغير.',
-    ph_none: 'لا تعرض أي من نسخنا المؤرخة لهذه الصفحة ({n} نسخة، من {a} إلى {b}) سعرًا. لا أسعار منشورة.', ph_nocopy: 'لا نملك بعد نسخة مؤرخة من هذه الصفحة، لذا لا يمكننا عرض أسعارها عبر الزمن.',
+    ph_none: 'لا تعرض أي من نسخنا المؤرخة لهذه الصفحة ({n} نسخة، من {a} إلى {b}) سعرًا. لا أسعار منشورة.', ph_none1: 'نسختنا المؤرخة الوحيدة لهذه الصفحة ({a}) لا تعرض أي سعر. لا أسعار منشورة.', ph_nocopy: 'لا نملك بعد نسخة مؤرخة من هذه الصفحة، لذا لا يمكننا عرض أسعارها عبر الزمن.',
     ph_th: ['التاريخ', 'النسخة', 'السعر الرئيسي كما طُبع', 'أسعار أخرى مطبوعة'], ph_copy: 'نسختنا المختومة', ph_ia: 'Internet Archive', ph_open: 'افتح النسخة', ph_noprice: 'لا سعر',
     ph_rule: 'السعر الرئيسي: أول سعر يأتي بعد كلمة مثل «ابتداءً من» أو «السعر». قد تعرض صفحات البوابات مشاريع أخرى؛ النص المحيط بكل سعر يبيّن ما يخصه.',
     ph_src: 'النسخ المستخدمة: {a} من نسخنا (مختومة بـ SHA-256) و{b} من Internet Archive.', ph_chart: 'السعر الرئيسي بعملة {cur} حسب تاريخ النسخة. كل نقطة تفتح نسختها.', ph_json: 'البيانات بصيغة JSON',
@@ -214,7 +214,7 @@ export function pricesHtml(pd, x, lang) {
   const nC = pts.filter(p => p.src === 'copy').length, nI = pts.filter(p => p.src === 'ia').length;
   const intro = '<p class="ki">' + esc(nt(lang, 'ph_intro', { host: hostOf(url) || '-' })) + '</p>';
   const withP = pts.filter(p => p.head), anyP = pts.some(p => (p.all || []).some(a => a.k === 'price'));
-  if (!anyP) return intro + '<ul class="fl"><li class="kfact">' + esc(nt(lang, 'ph_none', { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
+  if (!anyP) return intro + '<ul class="fl"><li class="kfact">' + esc(nt(lang, pts.length === 1 ? 'ph_none1' : 'ph_none', { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
     ' <a class="src" href="' + esc(copyHref(x, pts[pts.length - 1], url)) + '"' + (pts[pts.length - 1].src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, 'ph_open')) + '</a></li></ul><p class="k-small k-muted">' + esc(nt(lang, 'ph_src', { a: nC, b: nI })) + json + '</p>';
   const first = withP[0] || null, last = withP[withP.length - 1] || null;
   const curs = [...new Set(withP.map(p => p.head.cur))];
