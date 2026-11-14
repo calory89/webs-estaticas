@@ -13,4 +13,4 @@ export function ogKind(path) {
   return null;
 }
 // absolute URL of the share image for a page path; the generic image when the page has no kind
-export const ogImg = path => { const k = ogKind(path); return 'https://kolaboro.com' + (k ? '/og/type/' + k + '.png' : '/og.png'); };
+export const ogImg = path => { const k = ogKind(path); return 'https://kolaboro.com' + (k ? '/og/type/' + k + '.png' : '/k/og.png'); };
