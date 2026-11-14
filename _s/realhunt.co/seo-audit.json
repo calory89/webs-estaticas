@@ -1,14 +1,14 @@
 {
  "summary": {
-  "pages": 3488,
-  "indexable": 2960,
+  "pages": 3986,
+  "indexable": 3458,
   "noindex": 528,
   "noindex_by_polish": 456,
   "duplicate_homes": 2,
-  "title_over_60": 1039,
+  "title_over_60": 1134,
   "desc_over_155": 0,
-  "desc_under_120": 70,
-  "desc_out_of_range": 70,
+  "desc_under_120": 77,
+  "desc_out_of_range": 77,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 2938,
+  "pages_with_hreflang": 3436,
   "thin_under_150_words": 26,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 2590,
-  "redirects": 628,
-  "moved_stubs": 140
+  "with_lastmod": 3092,
+  "redirects": 1000,
+  "moved_stubs": 142
  },
  "failures": [],
  "groups": {
@@ -130,17 +130,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 686,
+   "median_words": 1574,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 56,
-   "indexable": 56,
+   "pages": 266,
+   "indexable": 266,
    "noindex": 0,
-   "median_words": 1467,
-   "title_over_60": 0,
+   "median_words": 1494,
+   "title_over_60": 7,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -337,17 +337,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 812,
+   "median_words": 1926,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 56,
-   "indexable": 56,
+   "pages": 266,
+   "indexable": 266,
    "noindex": 0,
-   "median_words": 1676,
-   "title_over_60": 0,
+   "median_words": 1754,
+   "title_over_60": 78,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -472,17 +472,17 @@
    "pages": 21,
    "indexable": 18,
    "noindex": 3,
-   "median_words": 2323,
+   "median_words": 2412,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 176,
-   "indexable": 176,
+   "pages": 215,
+   "indexable": 215,
    "noindex": 0,
-   "median_words": 1556,
-   "title_over_60": 12,
+   "median_words": 1670,
+   "title_over_60": 22,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -562,7 +562,7 @@
    "pages": 10,
    "indexable": 10,
    "noindex": 0,
-   "median_words": 697,
+   "median_words": 1398,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -697,18 +697,18 @@
    "pages": 21,
    "indexable": 18,
    "noindex": 3,
-   "median_words": 2113,
+   "median_words": 2181,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 176,
-   "indexable": 176,
+   "pages": 215,
+   "indexable": 215,
    "noindex": 0,
-   "median_words": 1389,
+   "median_words": 1413,
    "title_over_60": 1,
-   "desc_out_of_range": 15,
+   "desc_out_of_range": 22,
    "inlinks_under_3": 0
   },
   "/insider": {
@@ -850,7 +850,7 @@
    "pages": 11,
    "indexable": 11,
    "noindex": 0,
-   "median_words": 569,
+   "median_words": 725,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -966,10 +966,10 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 2960,
+   "pages with JSON-LD changed": 3458,
+   "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
-   "Article: author, date, headline or image missing": 52,
-   "ItemList: items removed or renumbered": 6
+   "Article: author, date, headline or image missing": 52
   },
   "missing": {}
  },
@@ -1052,18 +1052,18 @@
    "/homes/netherlands/2-bedroom",
    "/homes/netherlands/3-bedroom",
    "/homes/spain/4-bedroom",
+   "/homes/spain/alicante/under-100000",
+   "/homes/spain/alicante/under-150000",
+   "/homes/spain/costa-calida/under-100000",
+   "/homes/spain/granada/under-100000",
    "/homes/spain/madrid/under-200000",
+   "/homes/spain/murcia/under-100000",
+   "/homes/spain/valencia/under-100000",
    "/homes/spain/valencia/under-150000",
+   "/homes/sweden/4-bedroom",
    "/homes/united-states/3-bedroom",
    "/homes/united-states/under-100000",
-   "/homes/united-states/under-150000",
-   "/homes/united-states/under-200000",
-   "/homes/united-states/under-300000",
-   "/homes/united-states/under-80000",
-   "/legal/cookies",
-   "/legal/privacy",
-   "/legal/takedown",
-   "... 10 more"
+   "... 17 more"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -1116,17 +1116,17 @@
    "/can-i-buy/swiss-in-cyprus",
    "/can-i-buy/swiss-in-dominican-republic",
    "/can-i-buy/swiss-in-mexico",
+   "/cheap-houses/good-weather-in-italy",
+   "/cheap-houses/good-weather-in-spain",
+   "/cheap-houses/most-space-for-the-money-in-poland",
+   "/cheap-houses/most-space-for-the-money-in-united-states",
+   "/cheap-houses/quiet-location-in-bulgaria",
+   "/cheap-houses/turnkey-under-100000-in-united-states",
+   "/cheap-houses/with-garden-under-100000-in-united-states",
    "/deal/DZzpJ7UDSZB",
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
-   "/deal/DbA4_hKEThx",
-   "/deal/DbQ_FfViI4l",
-   "/deal/Dbk8HHgCAHX",
-   "/deal/Dbr13CDil3R",
-   "/deal/Dc-RMNwIPpv",
-   "/deal/Dc-hu2ajorQ",
-   "/deal/Dc-oopNDU4y",
-   "... 979 more"
+   "... 1074 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1134,7 +1134,7 @@
   ]
  },
  "spanish": {
-  "twins": 775,
+  "twins": 1024,
   "groups": {
    "homes": {
     "pages": 591,
@@ -1145,9 +1145,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 251,
-    "twins": 251,
-    "words": 507538,
+    "pages": 500,
+    "twins": 500,
+    "words": 1031157,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1178,9 +1178,9 @@
  },
  "sitemaps": {
   "sitemap-main.xml": 17,
-  "sitemap-countries.xml": 140,
-  "sitemap-prices.xml": 54,
-  "sitemap-cheap-houses.xml": 57,
+  "sitemap-countries.xml": 178,
+  "sitemap-prices.xml": 55,
+  "sitemap-cheap-houses.xml": 267,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 29,
@@ -1190,9 +1190,9 @@
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 56,
   "sitemap-es-main.xml": 14,
-  "sitemap-es-countries.xml": 140,
-  "sitemap-es-prices.xml": 54,
-  "sitemap-es-cheap-houses.xml": 57,
+  "sitemap-es-countries.xml": 178,
+  "sitemap-es-prices.xml": 55,
+  "sitemap-es-cheap-houses.xml": 267,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 28,
