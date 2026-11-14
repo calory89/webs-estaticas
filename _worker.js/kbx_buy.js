@@ -15,6 +15,7 @@ import { BS, PL, BUY_PLACES, BUY_LANGS, buyPlaceOf } from './kbx_buy_i18n.js';
 import { NT } from './kbx_buy_notes.js';
 import { trData } from './kbx_tr.js';
 import { hdisp } from './kbx_hdate.js';
+import { NT29, SRC29, PLAN29, COUNTRY29 } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = BUY_LANGS;
@@ -23,6 +24,9 @@ export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/buying-off-plan(
 export const SITEMAP = '/guides/buying-off-plan/sitemap.xml';
 const BASE = '/guides/buying-off-plan/';
 const REVIEWED = '2026-11-13';   // date the guide text and the sources below were last read
+const REVIEWED29 = '2026-11-14';  // n29h2: country guides (sources read that day) and the printable questions added to every guide
+const MOD = '2026-11-14';         // last change of any guide page (sitemap lastmod, dateModified floor)
+const revOf = slug => slug && PLAN29[slug] ? REVIEWED29 : REVIEWED;
 const TABLE_MAX = 30;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -84,6 +88,7 @@ const SRC = {
   mx_rpca: { n: 'PROFECO contract register (RPCA)', u: 'https://rpca.profeco.gob.mx/', d: REVIEWED },
   mx_reglist: { n: 'Kolaboro register guide: Mexico', u: '/registers/#mexico', d: REVIEWED, own: 1 }
 };
+Object.assign(SRC, SRC29); Object.assign(NT, NT29);
 // place -> step -> [note, [sources]]. Steps without a place note show the generic paragraph and our figures only.
 const STEPS = ['company', 'land', 'permit', 'money', 'sale', 'date'];
 const PLAN = {
@@ -96,7 +101,8 @@ const PLAN = {
   miami: { company: [['n_us_sunbiz', ['us_sunbiz', 'us_reglist']]], permit: [['n_us_permit', ['us_md', 'us_reglist']], ['n_us_dbpr', ['us_dbpr']]], money: [['n_us_escrow', ['us_718202']]], sale: [['n_us_15', ['us_718503']]] },
   tulum: { land: [['n_mx_trust', ['mx_lie']], ['n_mx_rpp', ['mx_reglist']]], permit: [['n_mx_lic', ['mx_reglist']]], sale: [['n_mx_nom', ['mx_nom']], ['n_mx_rpca', ['mx_rpca']]] }
 };
-const COUNTRY = { ID: 'indonesia', AE: 'uae', TH: 'thailand', ES: 'spain', PT: 'portugal', CY: 'cyprus', US: 'usa', MX: 'mexico' };
+Object.assign(PLAN, PLAN29);
+const COUNTRY = Object.assign({ ID: 'indonesia', AE: 'uae', TH: 'thailand', ES: 'spain', PT: 'portugal', CY: 'cyprus', US: 'usa', MX: 'mexico' }, COUNTRY29);
 const LAWPAGE = { ID: 1, AE: 1, TH: 1, ES: 1, PT: 1 };
 const DEST = { bali: '/bali/', dubai: '/dubai/', phuket: '/phuket/', tulum: '/tulum/' };
 // projects people look up most (the 300 picked by n27r1/n27r2 for review, n27/top300-ids.txt, 13 Nov 2026): listed first in the tables
@@ -117,7 +123,7 @@ async function guideData(env) {
   }
   const places = new Map();
   for (const P of BUY_PLACES) {
-    const L = rows.filter(r => !r.sumba && buyPlaceOf(r.mk, r.ar) === P).sort((a, b) => b.score - a.score || a.n.localeCompare(b.n));
+    const L = rows.filter(r => !r.sumba && buyPlaceOf(r.mk, r.ar, r.co) === P).sort((a, b) => b.score - a.score || a.n.localeCompare(b.n));
     const cnt = (k, st) => L.filter(r => r.comp[k].st === (st || 'yes')).length;
     const past = L.filter(r => r.comp.record.r === 'past').length, moved = L.filter(r => r.comp.record.r === 'moved').length;
     const sc = L.map(r => r.score).sort((a, b) => a - b), med = sc.length ? (sc.length % 2 ? sc[(sc.length - 1) / 2] : Math.round((sc[sc.length / 2 - 1] + sc[sc.length / 2]) / 2)) : null;
@@ -140,13 +146,14 @@ async function leaseCount(env, ids) {
 // ------------------------------------------------------------------------------------------------ HTML parts
 const CSS = '<style id="kby-css">.kby h2{margin-top:var(--k-7,48px)}.kby .k-grid{--k-min:140px}.kby h2,.kby-step{scroll-margin-top:96px}.kby-st{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);padding:var(--k-4,16px)}.kby-st b{display:block;font-size:var(--k-fs-2xl,28px);line-height:1.15}.kby-st span{display:block;color:var(--k-ink-2)}' +
   '.kby-toc ol{columns:2 240px;padding-inline-start:1.2em}.kby-step h3{margin-top:var(--k-5,24px);font-size:var(--k-fs-md,17px)}.kby-rl{list-style:none;padding:0;margin:0}.kby-rl li{padding:10px 0;border-top:1px solid var(--k-line)}.kby-rl li:first-child{border-top:0}.kby-s{display:block;margin-top:4px;font-size:var(--k-fs-xs,13px);color:var(--k-muted);overflow-wrap:anywhere}.kby-s a{color:inherit}' +
-  '.kby-ex{padding-inline-start:1.2em}.kby-ex li{margin:4px 0}.kby .k-table td small{display:block;color:var(--k-muted)}.kby-faq h3{font-size:var(--k-fs-md,17px);margin:var(--k-5,24px) 0 4px}.kby-note{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-sunken);padding:var(--k-4,16px);margin-top:var(--k-6,32px)}.kby-num{counter-reset:none}</style>';
+  '.kby-ex{padding-inline-start:1.2em}.kby-ex li{margin:4px 0}.kby .k-table td small{display:block;color:var(--k-muted)}.kby-faq h3{font-size:var(--k-fs-md,17px);margin:var(--k-5,24px) 0 4px}.kby-note{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-sunken);padding:var(--k-4,16px);margin-top:var(--k-6,32px)}.kby-num{counter-reset:none}.kby-qs ol{padding-inline-start:1.4em}.kby-qs li{margin:0 0 14px;break-inside:avoid}.kby-qs .kby-a{display:block;margin-top:6px;min-height:2.2em;border-bottom:1px dashed var(--k-line);color:var(--k-muted);font-size:var(--k-fs-xs,13px)}' +
+  '@media print{header,footer,nav,.k-crumb,.lsw,.kby-note,.kby-pr{display:none!important}.kby a{color:inherit;text-decoration:none}body:has(#questions:target) .k-prose>:not(.kby-qs),body:has(#questions:target) .k-phead{display:none!important}}</style>';
 const crumb = (lang, list) => '<p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + list.map((x, i) => i < list.length - 1 ? '<a href="' + x[1] + '">' + esc(x[0]) + '</a>' : '<span>' + esc(x[0]) + '</span>').join(' / ') + '</p>';
 const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', pre(lang) + '/']].concat(list).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
 const stat = (lang, v, k) => '<div class="kby-st"><b>' + (v == null ? '-' : esc(nf(lang, v))) + '</b><span>' + esc(t(lang, k)) + '</span></div>';
 function srcLinks(lang, ids) {
   return '<span class="kby-s">' + ids.map(id => { const s = SRC[id]; if (!s) return '';
-    return '<a href="' + esc(s.u) + '"' + (s.own ? '' : ' rel="noopener"') + '><bdi>' + esc(s.n) + '</bdi></a>' + (s.d ? ' (' + esc(tx(lang, s.own ? 'opened' : 'read', { d: fdt(s.d, lang) })) + ')' : '') +
+    return '<a href="' + esc(s.u) + '"' + (s.own ? '' : ' rel="noopener"') + '><bdi>' + esc(s.n) + '</bdi></a>' + (s.d ? ' (' + esc(tx(lang, s.own || s.op ? 'opened' : 'read', { d: fdt(s.d, lang) })) + ')' : '') +
       (s.law ? ' · <a href="/tools/law/#' + esc(s.law) + '">' + esc(t(lang, 'lawnote')) + '</a>' : s.lh ? ' · <a href="/tools/late-handover/">' + esc(t(lang, 'lawnote')) + '</a>' : '');
   }).filter(Boolean).join(' · ') + '</span>';
 }
@@ -201,11 +208,19 @@ function table(lang, G, D) {
     '<div class="k-table-wrap"><table class="k-table k-table--dense"><thead><tr><th>' + ['th_proj', 'th_dev', 'th_permit', 'th_rec', 'th_devrec'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' + more;
 }
 
+// n29h2 (item 28): printable questions for the developer, one per step, each with the official sources of that step on this guide
+function questions(lang, slug, P) {
+  const plan = PLAN[slug] || {};
+  const li = STEPS.map(k => { const ids = [...new Set((plan[k] || []).flatMap(x => x[1]))];
+    return '<li><b>' + esc(t(lang, 'qq_' + k)) + '</b>' + (ids.length ? ' <span class="kby-s">' + esc(t(lang, 'qs_src')) + ' ' + ids.map(id => SRC[id] ? '<bdi>' + esc(SRC[id].n) + '</bdi>' : '').filter(Boolean).join(' · ') + '</span>' : '') + '<span class="kby-a">' + esc(t(lang, 'qs_ans')) + '</span></li>'; }).join('');
+  return '<section class="kby-qs" id="questions"><h2>' + te(lang, 'qs_h', { in: esc(pin(P, lang)) }) + '</h2><p>' + esc(t(lang, 'qs_p')) + ' <a class="kby-pr" href="#questions">' + esc(t(lang, 'qs_print')) + '</a></p><ol>' + li + '</ol></section>';
+}
+
 function guidePage(G, slug, lang, lease) {
   const D = G.places.get(slug); if (!D) return null;
   const P = D.P, plan = PLAN[slug] || {}, inP = pin(P, lang), name = pn(P, lang), path = BASE + slug + '/';
   const vIn = { in: esc(inP), p: esc(name), n: esc(nf(lang, D.n)) };
-  const title = tx(lang, 'title', { in: inP });
+  const title = tx(lang, 'title', { in: (PL[slug].tin && PL[slug].tin[lang]) || inP });   // n29h2: shorter form where the title would pass 60 characters
   const steps = STEPS.map((k, i) => {
     const notes = plan[k] || [];
     return '<section class="kby-step" id="step-' + k + '"><h2>' + esc(tx(lang, 'step', { n: i + 1 })) + (lang === 'zh' ? '：' : ': ') + esc(t(lang, 'st_' + k)) + '</h2><p>' + esc(t(lang, 'g_' + k)) + '</p>' +
@@ -213,13 +228,13 @@ function guidePage(G, slug, lang, lease) {
       stepData(lang, G, D, k, k === 'land' ? lease : 0) + '</section>';
   }).join('');
   const sum = '<h2 id="figures">' + te(lang, 'sum_h', { p: esc(name) }) + '</h2><div class="k-grid">' + stat(lang, D.n, 's_n') + stat(lang, D.permit, 's_permit') + stat(lang, D.deposit, 's_dep') + stat(lang, D.past, 's_past') + stat(lang, D.moved, 's_moved') + (D.med != null ? stat(lang, D.med, 's_med') : '') + '</div><p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p>';
-  const toc = '<nav class="kby-toc" aria-label="' + esc(t(lang, 'toc')) + '"><h2 id="toc">' + esc(t(lang, 'toc')) + '</h2><ol>' + STEPS.map(k => '<li><a href="#step-' + k + '">' + esc(t(lang, 'st_' + k)) + '</a></li>').join('') + '<li><a href="#projects">' + esc(tx(lang, 'tbl_h', { in: inP })) + '</a></li><li><a href="#faq">' + esc(t(lang, 'faq_h')) + '</a></li></ol></nav>';
+  const toc = '<nav class="kby-toc" aria-label="' + esc(t(lang, 'toc')) + '"><h2 id="toc">' + esc(t(lang, 'toc')) + '</h2><ol>' + STEPS.map(k => '<li><a href="#step-' + k + '">' + esc(t(lang, 'st_' + k)) + '</a></li>').join('') + '<li><a href="#projects">' + esc(tx(lang, 'tbl_h', { in: inP })) + '</a></li><li><a href="#questions">' + esc(tx(lang, 'qs_h', { in: inP })) + '</a></li><li><a href="#faq">' + esc(t(lang, 'faq_h')) + '</a></li></ol></nav>';
   // FAQ: only questions answered on this page
   const txt = (k, v) => fill(t(lang, k), v);
   const notesOf = k => (plan[k] || []).map(([nk]) => note(nk, lang)).filter(Boolean);
   const vT = { in: inP, p: name, n: nf(lang, D.n) };
   const faq = [[txt('q_what', vT), txt('a_what', { steps: STEPS.map(k => t(lang, 'st_' + k)).join('; ') })]];
-  if (notesOf('land').length) faq.push([txt('q_own', vT), notesOf('land').join(' ')]);
+  if (notesOf('land').length && P.own !== false) faq.push([txt('q_own', vT), notesOf('land').join(' ')]);
   if (notesOf('money').length) faq.push([txt('q_dep', vT), notesOf('money').join(' ')]);
   if (D.n) { faq.push([txt('q_permit', vT), txt('d_permit', Object.assign({ a: nf(lang, D.permit) }, vT))]); faq.push([txt('q_late', vT), txt('d_date', Object.assign({ a: nf(lang, D.past), b: nf(lang, D.moved) }, vT))]); }
   const faqHtml = '<section class="kby-faq"><h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section>';
@@ -232,12 +247,13 @@ function guidePage(G, slug, lang, lease) {
   rel.push([pre(lang) + '/guides/short-let-rules/', t(lang, 'l_short')], ['/checklist/', t(lang, 'l_list')], ['/check/', t(lang, 'l_check')]);
   const note2 = '<div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p><p>' + te(lang, 'reply', { in: esc(inP) }) + ' <a class="k-btn k-btn--sm" href="/corrections/">' + esc(t(lang, 'reply_btn')) + '</a></p></div>';
   const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + te(lang, 'lead', vIn) + '</p>' +
-    '<p class="k-small k-muted"><time datetime="' + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + '</time></p></div>' +
-    '<div class="k-prose">' + sum + toc + steps + table(lang, G, D) + faqHtml + note2 +
+    '<p class="k-small k-muted"><time datetime="' + revOf(slug) + '">' + esc(tx(lang, 'upd', { d: fdt(revOf(slug), lang), d2: fdt(G.updated, lang) })) + '</time></p></div>' +
+    '<div class="k-prose">' + sum + toc + steps + table(lang, G, D) + questions(lang, slug, P) + faqHtml + note2 +
     '<h2 id="related">' + esc(t(lang, 'rel_h')) + '</h2><ul>' + rel.map(([h, l]) => '<li><a href="' + esc(h) + '">' + esc(l) + '</a></li>').join('') + '</ul><h3>' + esc(t(lang, 'l_other')) + '</h3><ul>' + others + '</ul></div></div></section></div>';
-  let desc = tx(lang, 'desc', vT); if ([...desc].length > 155) { const c = [...desc].slice(0, 154).join(''); desc = c.replace(/[\s,;:]+\S*$/, '') + '.'; }
+  let desc = tx(lang, 'desc', vT); if ([...desc].length > 155) desc = tx(lang, 'desc2', vT);   // n29h2: shorter wording before cutting
+  if ([...desc].length > 155) { const c = [...desc].slice(0, 154).join(''); desc = c.replace(/[\s,;:]+\S*$/, '') + '.'; }
   const url = ORIGIN + pre(lang) + path;
-  const ld = [{ '@type': 'Article', '@id': url + '#guide', url, headline: title, description: desc, inLanguage: lang, datePublished: '2026-11-13', dateModified: G.updated > REVIEWED ? G.updated : REVIEWED, author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: PL[slug].n.en }, mainEntityOfPage: url },
+  const ld = [{ '@type': 'Article', '@id': url + '#guide', url, headline: title, description: desc, inLanguage: lang, datePublished: PLAN29[slug] ? REVIEWED29 : '2026-11-13', dateModified: G.updated > MOD ? G.updated : MOD, author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: PL[slug].n.en }, mainEntityOfPage: url },
     crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]),
     { '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
   return { path, title, desc, body, ld };
@@ -250,7 +266,7 @@ function hubPage(G, lang) {
     '<p class="k-small k-muted"><time datetime="' + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + '</time></p></div><div class="k-prose">' +
     '<div class="k-table-wrap"><table class="k-table"><thead><tr><th>' + ['h_guide', 'h_n', 'h_permit', 'h_past'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
     '<p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p><div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p></div></div></div></section></div>';
-  const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, hasPart: BUY_PLACES.map(P => ({ '@type': 'Article', headline: tx(lang, 'title', { in: pin(P, lang) }), url: ORIGIN + pre(lang) + BASE + P.s + '/' })) }, crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE]])];
+  const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD, hasPart: BUY_PLACES.map(P => ({ '@type': 'Article', headline: tx(lang, 'title', { in: pin(P, lang) }), url: ORIGIN + pre(lang) + BASE + P.s + '/' })) }, crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE]])];
   return { path: BASE, title, desc, body, ld };
 }
 
@@ -289,7 +305,7 @@ export async function page(req, u, env, ctx, shell) {
 
 function sitemapXml() {
   const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'));
-  const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + REVIEWED + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
+  const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + MOD + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
 }
 

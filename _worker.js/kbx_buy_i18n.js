@@ -1,6 +1,7 @@
 // kolaboro.com batch 27 (agent n27c, 13 Nov 2026): strings for the "Buying off-plan in <place>: what to check" guides (kbx_buy.js).
 // UI strings (BS), place names (PL) and the place-specific rule notes (NT), in en es fr de nl ru zh ar. Every note restates an official
 // source listed in kbx_buy.js SRC (law text, register or government page) with the date it was read; nothing here is advice.
+import { PLACES29, PL29, BS29 } from './kbx_buy_c29.js';   // batch 29 (n29h2): country guides and the printable questions
 export const BUY_LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 
 // place slug -> markets and area rule (same rule as the transparency ranking places in kbx_tr_places.js), names and locative forms
@@ -14,8 +15,10 @@ export const BUY_PLACES = [
   { s: 'miami', tr: 'miami', cc: 'US', c: 'USA', m: ['Miami'] },
   { s: 'tulum', tr: 'tulum', cc: 'MX', c: 'Mexico', m: ['Riviera Maya'], a: /Tulum/i }
 ];
-export function buyPlaceOf(mk, ar) {
+BUY_PLACES.push(...PLACES29);   // n29h2: country guides match on the project's country (co), after the place guides above
+export function buyPlaceOf(mk, ar, co) {
   for (const P of BUY_PLACES) {
+    if (P.co) { if (co && P.co.includes(co)) return P; continue; }
     if (!P.m.includes(mk)) continue;
     if (P.a && (!P.am || P.am.includes(mk)) && !P.a.test(String(ar || ''))) continue;
     return P;
@@ -62,7 +65,7 @@ export const BS = {
     reply: 'Are you a developer {in} and something here is missing or wrong? Send documents and we correct the data after moderation.', reply_btn: 'Send a correction',
     rel_h: 'Related', l_rank: 'Transparency ranking: {p}', l_country: 'How to check a project in {c} (registers and questions)', l_check: 'Free live check of a project', l_list: 'Before-you-sign checklist', l_law: 'Buyer protection law notes', l_short: 'Can you short-let? Rules by city', l_other: 'Guides for other places', l_dest: 'Kolaboro {in}',
     hub_title: 'Buying off-plan abroad: what to check, place by place', hub_lead: 'Step-by-step guides for the places where we track the most off-plan projects, each step linked to the official source and to real project pages.',
-    hub_desc: 'What to check before buying off-plan in Bali, Dubai, Phuket, the Costa del Sol, Lisbon, Cyprus, Miami and Tulum: official sources, permits, deposits, dates.',
+    hub_desc: 'What to check before buying off-plan in 16 places and countries, from Bali, Dubai and Miami to France, Japan and Canada: official sources, permits, deposits.',
     h_guide: 'Guide', h_n: 'Projects tracked', h_permit: 'Permit published', h_past: 'Past handover date', guide_link: 'Buying off-plan {in}: what to check'
   },
   es: {
@@ -93,7 +96,7 @@ export const BS = {
     reply: '¿Eres promotor {in} y aquí falta algo o hay un error? Envía documentos y corregimos los datos tras la moderación.', reply_btn: 'Enviar una corrección',
     rel_h: 'Relacionado', l_rank: 'Ranking de transparencia: {p}', l_country: 'Cómo comprobar un proyecto en {c} (registros y preguntas)', l_check: 'Comprobación gratuita en vivo de un proyecto', l_list: 'Lista de comprobación antes de firmar', l_law: 'Notas legales de protección del comprador', l_short: '¿Se puede alquilar por días? Normas por ciudad', l_other: 'Guías de otros lugares', l_dest: 'Kolaboro {in}',
     hub_title: 'Comprar sobre plano en el extranjero: qué comprobar, lugar por lugar', hub_lead: 'Guías paso a paso para los lugares donde seguimos más proyectos sobre plano, con cada paso enlazado a la fuente oficial y a fichas de proyectos reales.',
-    hub_desc: 'Qué comprobar antes de comprar sobre plano en Bali, Dubái, Phuket, la Costa del Sol, Lisboa, Chipre, Miami y Tulum: fuentes oficiales, licencias, pagos y fechas.',
+    hub_desc: 'Qué comprobar antes de comprar sobre plano en 16 lugares y países, de Bali, Dubái y Miami a Francia, Japón y Canadá: fuentes oficiales, licencias y pagos.',
     h_guide: 'Guía', h_n: 'Proyectos seguidos', h_permit: 'Licencia publicada', h_past: 'Fecha de entrega vencida', guide_link: 'Comprar sobre plano {in}: qué comprobar'
   },
   fr: {
@@ -124,7 +127,7 @@ export const BS = {
     reply: 'Vous êtes promoteur {in} et une information manque ou est erronée ? Envoyez vos documents : nous corrigeons les données après modération.', reply_btn: 'Envoyer une correction',
     rel_h: 'À voir aussi', l_rank: 'Classement de transparence : {p}', l_country: 'Vérifier un projet : {c} (registres et questions)', l_check: 'Vérification gratuite en direct d’un projet', l_list: 'Liste de contrôle avant de signer', l_law: 'Notes juridiques sur la protection des acheteurs', l_short: 'Location courte durée : règles par ville', l_other: 'Guides pour d’autres lieux', l_dest: 'Kolaboro {in}',
     hub_title: 'Acheter sur plan à l’étranger : ce qu’il faut vérifier, lieu par lieu', hub_lead: 'Des guides pas à pas pour les lieux où nous suivons le plus de projets sur plan, chaque étape reliée à la source officielle et à de vraies fiches de projets.',
-    hub_desc: 'Que vérifier avant d’acheter sur plan à Bali, Dubaï, Phuket, sur la Costa del Sol, à Lisbonne, Chypre, Miami et Tulum : sources officielles, permis, paiements.',
+    hub_desc: 'Que vérifier avant d’acheter sur plan dans 16 lieux et pays, de Bali, Dubaï et Miami à la France, au Japon et au Canada : sources officielles, permis, paiements.',
     h_guide: 'Guide', h_n: 'Projets suivis', h_permit: 'Permis publié', h_past: 'Date de livraison dépassée', guide_link: 'Acheter sur plan {in} : que vérifier'
   },
   de: {
@@ -155,7 +158,7 @@ export const BS = {
     reply: 'Sie sind Bauträger {in} und hier fehlt etwas oder ist falsch? Senden Sie Unterlagen, wir korrigieren die Daten nach Prüfung.', reply_btn: 'Korrektur senden',
     rel_h: 'Siehe auch', l_rank: 'Transparenz-Rangliste: {p}', l_country: 'Ein Projekt prüfen: {c} (Register und Fragen)', l_check: 'Kostenlose Live-Prüfung eines Projekts', l_list: 'Checkliste vor der Unterschrift', l_law: 'Rechtsnotizen zum Käuferschutz', l_short: 'Kurzzeitvermietung: Regeln nach Stadt', l_other: 'Leitfäden für andere Orte', l_dest: 'Kolaboro {in}',
     hub_title: 'Off-Plan im Ausland kaufen: was Sie prüfen sollten, Ort für Ort', hub_lead: 'Leitfäden Schritt für Schritt für die Orte, an denen wir die meisten Off-Plan-Projekte verfolgen, jeder Schritt mit der amtlichen Quelle und echten Projektseiten verknüpft.',
-    hub_desc: 'Was Sie vor einem Off-Plan-Kauf auf Bali, in Dubai, auf Phuket, an der Costa del Sol, in Lissabon, auf Zypern, in Miami und Tulum prüfen sollten.',
+    hub_desc: 'Was Sie vor einem Off-Plan-Kauf an 16 Orten und in Ländern prüfen sollten, von Bali, Dubai und Miami bis Frankreich, Japan und Kanada: amtliche Quellen.',
     h_guide: 'Leitfaden', h_n: 'Verfolgte Projekte', h_permit: 'Genehmigung veröffentlicht', h_past: 'Übergabetermin überschritten', guide_link: 'Off-Plan kaufen {in}: was Sie prüfen sollten'
   },
   nl: {
@@ -186,7 +189,7 @@ export const BS = {
     reply: 'Bent u ontwikkelaar {in} en ontbreekt hier iets of klopt iets niet? Stuur documenten, dan corrigeren we de gegevens na moderatie.', reply_btn: 'Correctie sturen',
     rel_h: 'Zie ook', l_rank: 'Transparantieranglijst: {p}', l_country: 'Een project controleren: {c} (registers en vragen)', l_check: 'Gratis live controle van een project', l_list: 'Checklist vóór ondertekening', l_law: 'Juridische notities over kopersbescherming', l_short: 'Kortverhuur: regels per stad', l_other: 'Gidsen voor andere plaatsen', l_dest: 'Kolaboro {in}',
     hub_title: 'Off-plan kopen in het buitenland: wat u moet controleren, per plaats', hub_lead: 'Gidsen stap voor stap voor de plaatsen waar we de meeste off-planprojecten volgen, elke stap gekoppeld aan de officiële bron en aan echte projectpagina’s.',
-    hub_desc: 'Wat u controleert vóór een off-plan aankoop op Bali, in Dubai, op Phuket, aan de Costa del Sol, in Lissabon, op Cyprus, in Miami en Tulum.',
+    hub_desc: 'Wat u controleert vóór een off-plan aankoop op 16 plaatsen en in landen, van Bali, Dubai en Miami tot Frankrijk, Japan en Canada: officiële bronnen.',
     h_guide: 'Gids', h_n: 'Gevolgde projecten', h_permit: 'Vergunning gepubliceerd', h_past: 'Voorbij opleverdatum', guide_link: 'Off-plan kopen {in}: wat u moet controleren'
   },
   ru: {
@@ -217,7 +220,7 @@ export const BS = {
     reply: 'Вы застройщик {in}, и здесь чего-то не хватает или есть ошибка? Пришлите документы, и мы исправим данные после модерации.', reply_btn: 'Отправить исправление',
     rel_h: 'См. также', l_rank: 'Рейтинг прозрачности: {p}', l_country: 'Как проверить проект: {c} (реестры и вопросы)', l_check: 'Бесплатная онлайн-проверка проекта', l_list: 'Чек-лист перед подписанием', l_law: 'Правовые заметки о защите покупателя', l_short: 'Краткосрочная аренда: правила по городам', l_other: 'Руководства по другим местам', l_dest: 'Kolaboro {in}',
     hub_title: 'Покупка новостройки за рубежом: что проверить, место за местом', hub_lead: 'Пошаговые руководства для мест, где мы отслеживаем больше всего проектов на стадии строительства; каждый шаг связан с официальным источником и реальными страницами проектов.',
-    hub_desc: 'Что проверить перед покупкой новостройки на Бали, в Дубае, на Пхукете, на Коста-дель-Соль, в Лиссабоне, на Кипре, в Майами и Тулуме.',
+    hub_desc: 'Что проверить перед покупкой новостройки в 16 местах и странах, от Бали, Дубая и Майами до Франции, Японии и Канады: официальные источники, разрешения.',
     h_guide: 'Руководство', h_n: 'Отслеживаемых проектов', h_permit: 'Разрешение опубликовано', h_past: 'Срок сдачи прошёл', guide_link: 'Покупка новостройки {in}: что проверить'
   },
   zh: {
@@ -248,7 +251,7 @@ export const BS = {
     reply: '您是{in}的开发商，发现这里有遗漏或错误？请发送文件，我们审核后更正数据。', reply_btn: '发送更正',
     rel_h: '相关内容', l_rank: '透明度排名：{p}', l_country: '如何核查项目：{c}（登记机构和问题）', l_check: '免费在线核查项目', l_list: '签约前核查清单', l_law: '买家保护法律说明', l_short: '能否短租？各城市规定', l_other: '其他地方的指南', l_dest: 'Kolaboro {in}',
     hub_title: '在海外购买期房：需要核实什么，逐地说明', hub_lead: '针对我们跟踪期房项目最多的地方的逐步指南，每一步都链接到官方来源和真实的项目页面。',
-    hub_desc: '在巴厘岛、迪拜、普吉岛、太阳海岸、里斯本、塞浦路斯、迈阿密和图卢姆购买期房前应核实什么：官方来源、许可、付款和日期。',
+    hub_desc: '在 16 个地方和国家购买期房前应核实什么，从巴厘岛、迪拜、迈阿密到法国、日本和加拿大：官方来源、许可、付款和日期。',
     h_guide: '指南', h_n: '跟踪的项目', h_permit: '已公布许可', h_past: '已过交付日期', guide_link: '{in}购买期房：需要核实什么'
   },
   ar: {
@@ -279,14 +282,18 @@ export const BS = {
     reply: 'هل أنت مطوّر {in} وهناك نقص أو خطأ هنا؟ أرسل المستندات وسنصحّح البيانات بعد المراجعة.', reply_btn: 'إرسال تصحيح',
     rel_h: 'ذو صلة', l_rank: 'ترتيب الشفافية: {p}', l_country: 'كيف تتحقق من مشروع: {c} (السجلات والأسئلة)', l_check: 'تحقّق مجاني مباشر من مشروع', l_list: 'قائمة التحقق قبل التوقيع', l_law: 'ملاحظات قانونية عن حماية المشتري', l_short: 'هل يمكن التأجير القصير؟ القواعد حسب المدينة', l_other: 'أدلة لأماكن أخرى', l_dest: 'Kolaboro {in}',
     hub_title: 'الشراء على الخارطة في الخارج: ما الذي يجب التحقق منه، مكاناً بمكان', hub_lead: 'أدلة خطوة بخطوة للأماكن التي نتابع فيها أكبر عدد من المشاريع على الخارطة، وكل خطوة مرتبطة بالمصدر الرسمي وبصفحات مشاريع حقيقية.',
-    hub_desc: 'ما الذي يجب التحقق منه قبل الشراء على الخارطة في بالي ودبي وبوكيت وكوستا ديل سول ولشبونة وقبرص وميامي وتولوم: مصادر رسمية وتراخيص ودفعات.',
+    hub_desc: 'ما الذي يجب التحقق منه قبل الشراء على الخارطة في 16 مكاناً وبلداً، من بالي ودبي وميامي إلى فرنسا واليابان وكندا: مصادر رسمية وتراخيص ودفعات.',
     h_guide: 'الدليل', h_n: 'المشاريع المتابعة', h_permit: 'ترخيص منشور', h_past: 'تجاوز موعد التسليم', guide_link: 'الشراء على الخارطة {in}: ما الذي يجب التحقق منه'
   }
 };
 
-// link from a named project page to the guide of its place (kbx_named.js); null outside the eight places
-export function guideLink(mk, ar, lang) {
-  const P = buyPlaceOf(mk, ar); if (!P) return null;
+// link from a named project page to the guide of its place or country (kbx_named.js); null elsewhere
+export function guideLink(mk, ar, lang, co) {
+  const P = buyPlaceOf(mk, ar, co); if (!P) return null;
   const b = BS[lang] || BS.en, loc = PL[P.s].in[lang] || PL[P.s].in.en;
   return { href: (lang === 'en' ? '' : '/' + lang) + '/guides/buying-off-plan/' + P.s + '/', text: String(b.guide_link || BS.en.guide_link).replace('{in}', loc) };
 }
+
+// n29h2: countries and strings of the printable questions
+Object.assign(PL, PL29);
+for (const l of Object.keys(BS29)) Object.assign(BS[l], BS29[l]);

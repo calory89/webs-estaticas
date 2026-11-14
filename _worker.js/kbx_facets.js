@@ -71,6 +71,11 @@ async function load(env, name) {
   return p;
 }
 // first part of the area as published ("Dubai Islands, Dubai", "Dubai Islands (Island A)" -> "Dubai Islands"), for grouping
+// n29h2: area parts that are not places (generic words, plot or unit notes)
+const AREA_SKIP = /^(centro|center|centre|city cent(?:re|er)|downtown area|old town|north|south|east|west|beachfront|seafront|off-plan|phase \w+|tower \w+|block \w+|plot \w+|near .*|also listed as.*)$/i;
+// n29h2: letters NFKD does not split (Wrocław, Başakşehir's dotless i) and one spelling variant of the same subdistrict
+const slugAr = v => slugA(String(v || '').replace(/[łŁ]/g, 'l').replace(/ı/g, 'i'));
+const AREA_ALIAS = { cherngtalay: 'Choeng Thale' };
 const areaKey = a => String(a || '').split(/[,(/;]/)[0].trim().replace(/^the\s+/i, '');
 const yearOf = (ix, x) => { const h = handoverOf(ix, x); if (!h) return null; const y = hyear(h.d) || +((/(20\d\d)/.exec(String(h.d)) || [])[1] || 0); return y || null; };
 const handP = (ix, x) => (ix.prom[x.id] || []).find(p => p.k === 'handover') || null;
@@ -88,13 +93,33 @@ export async function facetsData(env) {
     const y = yearOf(ix, x); yr.set(x.id, y);
     if (y) { const k = y + '|' + x.mk; if (!yg.has(k)) yg.set(k, { y, mk: x.mk, s: slugA(x.mk), L: [] }); yg.get(k).L.push(x); }
     const ak = x.ar && x.ar !== x.mk ? areaKey(x.ar) : '';
-    if (ak && ak.length >= 3 && slugA(ak) !== slugA(x.mk)) { const k = x.mk + '|' + slugA(ak); if (!ag.has(k)) ag.set(k, { mk: x.mk, s: slugA(x.mk) + '/' + slugA(ak), names: new Map(), L: [] }); const g = ag.get(k); g.L.push(x); g.names.set(ak, (g.names.get(ak) || 0) + 1); }
+    // n29h2 (item 34): every named part of the published area ("Pererenan, Canggu" -> Pererenan and Canggu), not only the first,
+    // so towns and districts written second get a page once 5+ projects name them; the first part stays the project's main area
+    const parts = [...new Set([ak].concat(String(x.ar || '').split(/[,(/;)]/).slice(1).map(v => v.trim().replace(/^the\s+/i, ''))))];
+    for (const a0 of parts) {
+      const an = AREA_ALIAS[slugAr(a0)] || a0;
+      if (!an || an.length < 3 || slugAr(an) === slugAr(x.mk) || slugAr(an) === slugAr(x.co) || AREA_SKIP.test(an) || /\d{3,}/.test(an)) continue;
+      const k = x.mk + '|' + slugAr(an); if (!ag.has(k)) ag.set(k, { mk: x.mk, s: slugA(x.mk) + '/' + slugAr(an), names: new Map(), L: [], first: 0 }); const g = ag.get(k);
+      if (!g.L.includes(x)) { g.L.push(x); if (a0 === ak) g.first++; } g.names.set(an, (g.names.get(an) || 0) + 1);
+    }
   }
   const byScore = (a, b) => (score(b.id) ?? -1) - (score(a.id) ?? -1) || String(a.n).localeCompare(String(b.n));
   const years = new Map(), yOf = new Map();
   for (const g of yg.values()) { g.L.sort(byScore); if (g.L.length >= MIN_YEAR) { years.set(g.y + '/' + g.s, g); for (const x of g.L) yOf.set(x.id, g); } }
-  const areas = new Map(), aOf = new Map();
-  for (const g of ag.values()) { if (g.L.length < MIN_AREA) continue; g.n = [...g.names.entries()].sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0][0]; g.L.sort(byScore); areas.set(g.s, g); for (const x of g.L) aOf.set(x.id, g); }
+  const areas = new Map(), aOf = new Map(), aMore = new Map();
+  // n29h2: groups with 5+ projects; a group whose projects are nearly the same as a bigger kept one (Jaccard >= 0.8, e.g. two spellings
+  // of one place) is dropped so no two area pages show the same list. Main area of a project: the group of its first part, else the
+  // smallest group that holds it; aMore: one more area page that holds it.
+  const cand = [...ag.values()].filter(g => g.L.length >= MIN_AREA).sort((a, b) => (b.first > 0) - (a.first > 0) || b.L.length - a.L.length || a.s.localeCompare(b.s));
+  const kept = [];
+  for (const g of cand) { const S = new Set(g.L.map(x => x.id)); if (kept.some(k => { const i = k.L.filter(x => S.has(x.id)).length; return i / (S.size + k.L.length - i) >= 0.8; })) continue; kept.push(g); }
+  for (const g of kept) { g.n = [...g.names.entries()].sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0][0]; g.L.sort(byScore); areas.set(g.s, g); }
+  const bySize = [...areas.values()].sort((a, b) => a.L.length - b.L.length);
+  for (const x of P) {
+    const ak = x.ar && x.ar !== x.mk ? areaKey(x.ar) : '', g0 = ak ? areas.get(slugA(x.mk) + '/' + slugAr(AREA_ALIAS[slugAr(ak)] || ak)) : null;
+    const hold = bySize.filter(g => g.L.includes(x)); const main = g0 && g0.L.includes(x) ? g0 : hold[0];
+    if (main) { aOf.set(x.id, main); const more = hold.find(g => g !== main); if (more) aMore.set(x.id, more); }
+  }
   // pairs: same place and same handover year; neighbours by transparency score, first (0,1),(2,3)... in every group, then (1,2),(3,4)...
   const groups = [...yg.values()].filter(g => g.L.length >= 2).sort((a, b) => b.L.length - a.L.length || a.mk.localeCompare(b.mk) || a.y - b.y);
   const pairs = new Map(), pOf = new Map();
@@ -118,7 +143,7 @@ export async function facetsData(env) {
   for (const g of ovG.values()) { g.L.sort((a, b) => b.o.m - a.o.m || String(a.x.n).localeCompare(String(b.x.n))); g.n = withD.get(g.mk) || g.L.length; }
   const ovMonth = new Date().toISOString().slice(0, 7);
   const updated = String(ix.updated || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
-  FIX = { key, ix, P, ovL, ovG, ovMonth, score, yr, years, yOf, areas, aOf, pairs, pOf, dl, dev, done, OT, REG, regDate: regs && regs.updated, DA, daDate: dage && dage.updated, DR, drDate: drift && drift.updated, otDate: ot && ot.generated, updated,
+  FIX = { key, ix, P, ovL, ovG, ovMonth, score, yr, years, yOf, areas, aOf, aMore, pairs, pOf, dl, dev, done, OT, REG, regDate: regs && regs.updated, DA, daDate: dage && dage.updated, DR, drDate: drift && drift.updated, otDate: ot && ot.generated, updated,
     v: updated + '|' + ovMonth + '|' + ovL.length + '|' + P.length + '|' + years.size + '|' + areas.size + '|' + pairs.size + '|' + (tri ? tri.v : '') };
   return FIX;
 }
@@ -260,7 +285,7 @@ function altHtml(F, ix, x, lang, nAlt) {
   const links = [];
   for (const pr of (F.pOf.get(x.id) || []).slice(0, 2)) { const o = pr.a.id === x.id ? pr.b : pr.a; links.push('<li><a href="' + pre(lang) + '/vs/' + pr.k + '/">' + th(lang, 'vs_o', { b: bdi(o.n) }) + '</a></li>'); }
   const yg = F.yOf.get(x.id); if (yg) links.push('<li><a href="' + pre(lang) + '/handover/' + yg.y + '/' + yg.s + '/">' + th(lang, 'yp_l', { k: nf(lang, yg.L.length), y: yg.y, mk: bdi(mk) }) + '</a></li>');
-  const ag = F.aOf.get(x.id); if (ag) links.push('<li><a href="' + pre(lang) + '/areas/' + ag.s + '/">' + th(lang, 'ar_l', { k: nf(lang, ag.L.length), a: bdi(ag.n) }) + '</a></li>');
+  for (const ag of [F.aOf.get(x.id), F.aMore && F.aMore.get(x.id)]) if (ag) links.push('<li><a href="' + pre(lang) + '/areas/' + ag.s + '/">' + th(lang, 'ar_l', { k: nf(lang, ag.L.length), a: bdi(ag.n) }) + '</a></li>');   // n29h2: main area and one more
   return intro + list + (links.length ? '<h3>' + te(lang, 'al_more') + '</h3><ul class="lk">' + links.join('') + '</ul>' : '');
 }
 

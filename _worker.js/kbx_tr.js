@@ -137,7 +137,7 @@ export async function trData(env) {
       got += q.pts; avail += MAX[k];
     }
     const score = avail ? Math.round(got / avail * 100) : 0;
-    rows.set(x.id, { id: x.id, s: x.s, n: cleanName(x.n) || x.id, dv: x.dv || null, dvs: x.dvs || null, mk: x.mk, ar: x.ar, url: page, rv: !!(c.verified && Object.values(c.verified).some(v => v && v !== 'none')), comp, got, avail, score, sumba: String(x.mk || '').toLowerCase() === 'sumba' });
+    rows.set(x.id, { id: x.id, s: x.s, n: cleanName(x.n) || x.id, dv: x.dv || null, dvs: x.dvs || null, mk: x.mk, ar: x.ar, co: x.co || null, url: page, rv: !!(c.verified && Object.values(c.verified).some(v => v && v !== 'none')), comp, got, avail, score, sumba: String(x.mk || '').toLowerCase() === 'sumba' });
   }
   const places = new Map();
   for (const P of TR_PLACES) {
