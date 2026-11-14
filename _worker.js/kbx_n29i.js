@@ -26,7 +26,7 @@ const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', r
 const MIN_MK = 5;
 const CO_AL = { 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia', 'United States': 'USA', 'United Arab Emirates': 'UAE' };   // same country names as the country hubs (kbx_seo.js)
 export const PAGE_RX = /^\/(es|de|fr|nl|ru|zh|ar)\/m\/([^/.]{2,60})(\/?)$/;
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(?:russia|china|gulf))?\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:countries|rankings)(?:\/[a-z0-9-]{2,60})?\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(?:russia|china|gulf))?\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;
 const slugM = m => encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-'));
 const slugA = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const bdi = s => '<bdi>' + esc(s) + '</bdi>';
@@ -36,7 +36,8 @@ const med = a => { const s = a.filter(v => v != null).sort((x, y) => x - y); ret
 
 // ------------------------------------------------------------------------------------------------ words (8 languages)
 const T = {
-  en: { m_t: 'Off-plan projects in {p}: developers and handover dates', m_h1: 'Off-plan projects in {p}', m_lead: 'Every named off-plan project we track in {p}, with what its developer publishes. Facts only, each with its source on the project page. Data of {d}.',
+  en: { crumb_c: 'Countries', l_enc: 'Country page in English (registers, delays, full detail)', ch_h: 'Off-plan projects by country', ch_t: 'Off-plan projects by country: {c} countries, {n} projects', ch_lead: 'Every country where we track at least {k} named off-plan projects, with what developers publish there. Data of {d}.', c_co: 'Country', rk_t: 'Off-plan rankings and place reports', rk_lead: 'Rankings and reports computed from our data, every figure with its source, in your language.', rk: ["Transparency rankings by place", "Developers ranked by transparency, by place", "Projects with a published permit, by place", "Projects by published price range", "Freehold or leasehold for foreigners, by country", "Projects above residence-visa thresholds", "Projects near airports", "Monthly market reports by place", "Projects by handover year and place", "Overdue handovers by place", "Projects by neighbourhood", "What changed this week, by place", "Kolaboro in numbers"],
+    m_t: 'Off-plan projects in {p}: developers and handover dates', m_h1: 'Off-plan projects in {p}', m_lead: 'Every named off-plan project we track in {p}, with what its developer publishes. Facts only, each with its source on the project page. Data of {d}.',
     m_desc: '{n} off-plan projects in {p} from {dv} developers: permit numbers, handover dates on record and transparency scores. Data of {d}.',
     k_n: 'projects tracked', k_dv: 'developers', k_pn: 'publish a permit or licence number', k_h: 'publish a handover date', k_mv: 'handover date moved later', k_ov: 'handover date passed, not completed', k_med: 'median transparency score (0-100)', k_d: 'data date',
     tb: 'Projects', c_p: 'Project', c_dv: 'Developer', c_ar: 'Area', c_h: 'Handover on record', c_pn: 'Permit number', c_s: 'Score', yes: 'published', no: 'not published', np: 'not published',
@@ -60,7 +61,8 @@ const T = {
     k_d5: 'developers with 5+ projects', hd_q1: 'How many developers does Kolaboro track?', hd_a1: '{dv} developers with {n} named off-plan projects (data of {d}).', hd_q2: 'Which developers have the most tracked projects?', hd_a2: '{l}.',
     hd_q3: 'Can a developer correct its page?', hd_a3: 'Yes. Developers can reply with documents through the right of reply; corrections are dated on the corrections page.',
     hc_q1: 'In how many countries does Kolaboro track off-plan projects?', hc_a1: '{c} countries, {n} named projects (data of {d}).', hc_q2: 'Which countries have the most tracked projects?', hc_a2: '{l}.' },
-  es: { m_t: 'Obra nueva sobre plano en {p}: promotores y entregas', m_h1: 'Proyectos sobre plano en {p}', m_lead: 'Cada proyecto sobre plano con nombre que seguimos en {p}, con lo que publica su promotor. Solo hechos, cada uno con su fuente en la ficha. Datos del {d}.',
+  es: { crumb_c: 'Países', l_enc: 'Ficha del país en inglés (registros, retrasos, detalle completo)', ch_h: 'Proyectos sobre plano por país', ch_t: 'Obra nueva sobre plano por país: {c} países, {n} proyectos', ch_lead: 'Cada país donde seguimos al menos {k} proyectos sobre plano con nombre, con lo que publican allí los promotores. Datos del {d}.', c_co: 'País', rk_t: 'Rankings e informes sobre plano', rk_lead: 'Rankings e informes calculados con nuestros datos, cada cifra con su fuente, en tu idioma.', rk: ["Rankings de transparencia por lugar", "Promotores por transparencia, por lugar", "Proyectos con permiso publicado, por lugar", "Proyectos por rango de precio publicado", "Plena propiedad o arrendamiento para extranjeros, por país", "Proyectos por encima de los umbrales de visado de residencia", "Proyectos cerca de aeropuertos", "Informes mensuales del mercado por lugar", "Proyectos por año de entrega y lugar", "Entregas vencidas por lugar", "Proyectos por barrio", "Qué cambió esta semana, por lugar", "Kolaboro en cifras"],
+    m_t: 'Obra nueva sobre plano en {p}: promotores y entregas', m_h1: 'Proyectos sobre plano en {p}', m_lead: 'Cada proyecto sobre plano con nombre que seguimos en {p}, con lo que publica su promotor. Solo hechos, cada uno con su fuente en la ficha. Datos del {d}.',
     m_desc: '{n} proyectos sobre plano en {p} de {dv} promotores: números de licencia, fechas de entrega registradas y puntuación de transparencia. Datos del {d}.',
     k_n: 'proyectos seguidos', k_dv: 'promotores', k_pn: 'publican un número de licencia o permiso', k_h: 'publican fecha de entrega', k_mv: 'fecha de entrega retrasada', k_ov: 'fecha de entrega vencida, sin terminar', k_med: 'puntuación de transparencia mediana (0-100)', k_d: 'fecha de los datos',
     tb: 'Proyectos', c_p: 'Proyecto', c_dv: 'Promotor', c_ar: 'Zona', c_h: 'Entrega registrada', c_pn: 'Nº de licencia', c_s: 'Puntuación', yes: 'publicado', no: 'no publicado', np: 'no publicado',
@@ -84,7 +86,8 @@ const T = {
     k_d5: 'promotores con 5+ proyectos', hd_q1: '¿Cuántos promotores sigue Kolaboro?', hd_a1: '{dv} promotores con {n} proyectos sobre plano con nombre (datos del {d}).', hd_q2: '¿Qué promotores tienen más proyectos seguidos?', hd_a2: '{l}.',
     hd_q3: '¿Puede un promotor corregir su ficha?', hd_a3: 'Sí. Los promotores pueden responder con documentos mediante el derecho de réplica; las correcciones quedan fechadas en la página de correcciones.',
     hc_q1: '¿En cuántos países sigue Kolaboro proyectos sobre plano?', hc_a1: '{c} países, {n} proyectos con nombre (datos del {d}).', hc_q2: '¿Qué países tienen más proyectos seguidos?', hc_a2: '{l}.' },
-  fr: { m_t: 'Programmes neufs sur plan à {p} : promoteurs, livraisons', m_h1: 'Projets sur plan à {p}', m_lead: 'Chaque projet sur plan nommé que nous suivons à {p}, avec ce que publie son promoteur. Des faits seulement, chacun avec sa source sur la fiche. Données du {d}.',
+  fr: { crumb_c: 'Pays', l_enc: 'Fiche du pays en anglais (registres, retards, détail complet)', ch_h: 'Projets sur plan par pays', ch_t: 'Programmes neufs sur plan par pays : {c} pays, {n} projets', ch_lead: 'Chaque pays où nous suivons au moins {k} projets sur plan nommés, avec ce qu’y publient les promoteurs. Données du {d}.', c_co: 'Pays', rk_t: 'Classements et rapports sur plan', rk_lead: 'Classements et rapports calculés à partir de nos données, chaque chiffre avec sa source, dans votre langue.', rk: ["Classements de transparence par lieu", "Promoteurs classés par transparence, par lieu", "Projets avec permis publié, par lieu", "Projets par tranche de prix publiée", "Pleine propriété ou bail pour les étrangers, par pays", "Projets au-dessus des seuils de visa de résidence", "Projets près des aéroports", "Rapports mensuels du marché par lieu", "Projets par année de livraison et lieu", "Livraisons en retard par lieu", "Projets par quartier", "Ce qui a changé cette semaine, par lieu", "Kolaboro en chiffres"],
+    m_t: 'Programmes neufs sur plan à {p} : promoteurs, livraisons', m_h1: 'Projets sur plan à {p}', m_lead: 'Chaque projet sur plan nommé que nous suivons à {p}, avec ce que publie son promoteur. Des faits seulement, chacun avec sa source sur la fiche. Données du {d}.',
     m_desc: '{n} projets sur plan à {p} de {dv} promoteurs : numéros de permis, dates de livraison enregistrées et scores de transparence. Données du {d}.',
     k_n: 'projets suivis', k_dv: 'promoteurs', k_pn: 'publient un numéro de permis ou de licence', k_h: 'publient une date de livraison', k_mv: 'date de livraison repoussée', k_ov: 'date de livraison dépassée, non achevé', k_med: 'score de transparence médian (0-100)', k_d: 'date des données',
     tb: 'Projets', c_p: 'Projet', c_dv: 'Promoteur', c_ar: 'Zone', c_h: 'Livraison enregistrée', c_pn: 'N° de permis', c_s: 'Score', yes: 'publié', no: 'non publié', np: 'non publié',
@@ -108,7 +111,8 @@ const T = {
     k_d5: 'promoteurs avec 5+ projets', hd_q1: 'Combien de promoteurs Kolaboro suit-il ?', hd_a1: '{dv} promoteurs avec {n} projets sur plan nommés (données du {d}).', hd_q2: 'Quels promoteurs ont le plus de projets suivis ?', hd_a2: '{l}.',
     hd_q3: 'Un promoteur peut-il corriger sa fiche ?', hd_a3: 'Oui. Les promoteurs peuvent répondre avec des documents via le droit de réponse ; les corrections sont datées sur la page des corrections.',
     hc_q1: 'Dans combien de pays Kolaboro suit-il des projets sur plan ?', hc_a1: '{c} pays, {n} projets nommés (données du {d}).', hc_q2: 'Quels pays comptent le plus de projets suivis ?', hc_a2: '{l}.' },
-  de: { m_t: 'Off-Plan-Neubau in {p}: Bauträger und Übergabe', m_h1: 'Off-Plan-Projekte in {p}', m_lead: 'Jedes namentlich erfasste Off-Plan-Projekt, das wir in {p} verfolgen, mit dem, was sein Bauträger veröffentlicht. Nur Fakten, jede mit Quelle auf der Projektseite. Datenstand {d}.',
+  de: { crumb_c: 'Länder', l_enc: 'Länderseite auf Englisch (Register, Verzögerungen, alle Details)', ch_h: 'Off-Plan-Projekte nach Land', ch_t: 'Off-Plan-Neubau nach Land: {c} Länder, {n} Projekte', ch_lead: 'Jedes Land, in dem wir mindestens {k} namentlich erfasste Off-Plan-Projekte verfolgen, mit dem, was Bauträger dort veröffentlichen. Datenstand {d}.', c_co: 'Land', rk_t: 'Off-Plan-Ranglisten und Ortsberichte', rk_lead: 'Ranglisten und Berichte aus unseren Daten, jede Zahl mit Quelle, in Ihrer Sprache.', rk: ["Transparenz-Ranglisten nach Ort", "Bauträger nach Transparenz, nach Ort", "Projekte mit veröffentlichter Genehmigung, nach Ort", "Projekte nach veröffentlichter Preisspanne", "Volleigentum oder Pacht für Ausländer, nach Land", "Projekte über den Schwellen für Aufenthaltsvisa", "Projekte in Flughafennähe", "Monatliche Marktberichte nach Ort", "Projekte nach Übergabejahr und Ort", "Überfällige Übergaben nach Ort", "Projekte nach Viertel", "Was sich diese Woche geändert hat, nach Ort", "Kolaboro in Zahlen"],
+    m_t: 'Off-Plan-Neubau in {p}: Bauträger und Übergabe', m_h1: 'Off-Plan-Projekte in {p}', m_lead: 'Jedes namentlich erfasste Off-Plan-Projekt, das wir in {p} verfolgen, mit dem, was sein Bauträger veröffentlicht. Nur Fakten, jede mit Quelle auf der Projektseite. Datenstand {d}.',
     m_desc: '{n} Off-Plan-Projekte in {p} von {dv} Bauträgern: Genehmigungsnummern, erfasste Übergabetermine und Transparenzwerte. Datenstand {d}.',
     k_n: 'verfolgte Projekte', k_dv: 'Bauträger', k_pn: 'veröffentlichen eine Genehmigungs- oder Lizenznummer', k_h: 'veröffentlichen einen Übergabetermin', k_mv: 'Übergabetermin verschoben', k_ov: 'Übergabetermin verstrichen, nicht fertig', k_med: 'mittlerer Transparenzwert (0-100)', k_d: 'Datenstand',
     tb: 'Projekte', c_p: 'Projekt', c_dv: 'Bauträger', c_ar: 'Lage', c_h: 'Erfasste Übergabe', c_pn: 'Genehmigungsnr.', c_s: 'Wert', yes: 'veröffentlicht', no: 'nicht veröffentlicht', np: 'nicht veröffentlicht',
@@ -132,7 +136,8 @@ const T = {
     k_d5: 'Bauträger mit 5+ Projekten', hd_q1: 'Wie viele Bauträger verfolgt Kolaboro?', hd_a1: '{dv} Bauträger mit {n} namentlich erfassten Off-Plan-Projekten (Datenstand {d}).', hd_q2: 'Welche Bauträger haben die meisten verfolgten Projekte?', hd_a2: '{l}.',
     hd_q3: 'Kann ein Bauträger seine Seite korrigieren?', hd_a3: 'Ja. Bauträger können über das Recht auf Gegendarstellung mit Dokumenten antworten; Korrekturen stehen datiert auf der Korrekturseite.',
     hc_q1: 'In wie vielen Ländern verfolgt Kolaboro Off-Plan-Projekte?', hc_a1: '{c} Länder, {n} namentlich erfasste Projekte (Datenstand {d}).', hc_q2: 'Welche Länder haben die meisten verfolgten Projekte?', hc_a2: '{l}.' },
-  nl: { m_t: 'Nieuwbouw op plan in {p}: ontwikkelaars en oplevering', m_h1: 'Nieuwbouwprojecten op plan in {p}', m_lead: 'Elk project op plan met naam dat we volgen in {p}, met wat de ontwikkelaar publiceert. Alleen feiten, elk met bron op de projectpagina. Gegevens van {d}.',
+  nl: { crumb_c: 'Landen', l_enc: 'Landenpagina in het Engels (registers, vertragingen, alle details)', ch_h: 'Projecten op plan per land', ch_t: 'Nieuwbouw op plan per land: {c} landen, {n} projecten', ch_lead: 'Elk land waar we minstens {k} projecten op plan met naam volgen, met wat ontwikkelaars daar publiceren. Gegevens van {d}.', c_co: 'Land', rk_t: 'Ranglijsten en rapporten over projecten op plan', rk_lead: 'Ranglijsten en rapporten berekend uit onze gegevens, elk cijfer met bron, in uw taal.', rk: ["Transparantieranglijsten per plaats", "Ontwikkelaars naar transparantie, per plaats", "Projecten met gepubliceerde vergunning, per plaats", "Projecten per gepubliceerde prijsklasse", "Volle eigendom of erfpacht voor buitenlanders, per land", "Projecten boven de drempels voor verblijfsvisa", "Projecten bij luchthavens", "Maandelijkse marktrapporten per plaats", "Projecten per opleverjaar en plaats", "Te late opleveringen per plaats", "Projecten per wijk", "Wat er deze week veranderde, per plaats", "Kolaboro in cijfers"],
+    m_t: 'Nieuwbouw op plan in {p}: ontwikkelaars en oplevering', m_h1: 'Nieuwbouwprojecten op plan in {p}', m_lead: 'Elk project op plan met naam dat we volgen in {p}, met wat de ontwikkelaar publiceert. Alleen feiten, elk met bron op de projectpagina. Gegevens van {d}.',
     m_desc: '{n} projecten op plan in {p} van {dv} ontwikkelaars: vergunningsnummers, geregistreerde opleverdata en transparantiescores. Gegevens van {d}.',
     k_n: 'gevolgde projecten', k_dv: 'ontwikkelaars', k_pn: 'publiceren een vergunnings- of licentienummer', k_h: 'publiceren een opleverdatum', k_mv: 'opleverdatum uitgesteld', k_ov: 'opleverdatum verstreken, niet klaar', k_med: 'mediane transparantiescore (0-100)', k_d: 'datum gegevens',
     tb: 'Projecten', c_p: 'Project', c_dv: 'Ontwikkelaar', c_ar: 'Gebied', c_h: 'Geregistreerde oplevering', c_pn: 'Vergunningsnr.', c_s: 'Score', yes: 'gepubliceerd', no: 'niet gepubliceerd', np: 'niet gepubliceerd',
@@ -156,7 +161,8 @@ const T = {
     k_d5: 'ontwikkelaars met 5+ projecten', hd_q1: 'Hoeveel ontwikkelaars volgt Kolaboro?', hd_a1: '{dv} ontwikkelaars met {n} projecten op plan met naam (gegevens van {d}).', hd_q2: 'Welke ontwikkelaars hebben de meeste gevolgde projecten?', hd_a2: '{l}.',
     hd_q3: 'Kan een ontwikkelaar zijn pagina corrigeren?', hd_a3: 'Ja. Ontwikkelaars kunnen met documenten reageren via het recht op weerwoord; correcties staan gedateerd op de correctiepagina.',
     hc_q1: 'In hoeveel landen volgt Kolaboro projecten op plan?', hc_a1: '{c} landen, {n} projecten met naam (gegevens van {d}).', hc_q2: 'Welke landen hebben de meeste gevolgde projecten?', hc_a2: '{l}.' },
-  ru: { m_t: 'Новостройки {p}: застройщики, сроки сдачи, разрешения', m_h1: 'Новостройки {p}', m_lead: 'Все строящиеся проекты с названием, которые мы отслеживаем в {p}, и то, что публикует застройщик. Только факты, у каждого источник на странице проекта. Данные на {d}.',
+  ru: { crumb_c: 'Страны', l_enc: 'Страница страны на английском (реестры, задержки, все подробности)', ch_h: 'Новостройки по странам', ch_t: 'Новостройки за рубежом по странам: {c} стран, {n} проектов', ch_lead: 'Все страны, где мы отслеживаем не менее {k} строящихся проектов с названием, и что там публикуют застройщики. Данные на {d}.', c_co: 'Страна', rk_t: 'Рейтинги и отчёты по новостройкам', rk_lead: 'Рейтинги и отчёты по нашим данным, у каждой цифры есть источник, на вашем языке.', rk: ["Рейтинги прозрачности по местам", "Застройщики по прозрачности, по местам", "Проекты с опубликованным разрешением, по местам", "Проекты по опубликованному диапазону цен", "Собственность или аренда для иностранцев, по странам", "Проекты выше порогов для вида на жительство", "Проекты рядом с аэропортами", "Ежемесячные отчёты о рынке по местам", "Проекты по году сдачи и месту", "Просроченная сдача по местам", "Проекты по районам", "Что изменилось на этой неделе, по местам", "Kolaboro в цифрах"],
+    m_t: 'Новостройки {p}: застройщики, сроки сдачи, разрешения', m_h1: 'Новостройки {p}', m_lead: 'Все строящиеся проекты с названием, которые мы отслеживаем в {p}, и то, что публикует застройщик. Только факты, у каждого источник на странице проекта. Данные на {d}.',
     m_desc: '{n} строящихся проектов в {p} от {dv} застройщиков: номера разрешений, сроки сдачи и оценки прозрачности. Данные на {d}.',
     k_n: 'проектов отслеживается', k_dv: 'застройщиков', k_pn: 'публикуют номер разрешения или лицензии', k_h: 'публикуют срок сдачи', k_mv: 'срок сдачи переносился', k_ov: 'срок сдачи прошёл, не завершены', k_med: 'медианная оценка прозрачности (0-100)', k_d: 'дата данных',
     tb: 'Проекты', c_p: 'Проект', c_dv: 'Застройщик', c_ar: 'Район', c_h: 'Срок сдачи по данным', c_pn: 'Номер разрешения', c_s: 'Оценка', yes: 'опубликован', no: 'не опубликован', np: 'не опубликовано',
@@ -180,7 +186,8 @@ const T = {
     k_d5: 'застройщиков с 5+ проектами', hd_q1: 'Сколько застройщиков отслеживает Kolaboro?', hd_a1: '{dv} застройщиков, {n} строящихся проектов с названием (данные на {d}).', hd_q2: 'У каких застройщиков больше всего отслеживаемых проектов?', hd_a2: '{l}.',
     hd_q3: 'Может ли застройщик исправить свою страницу?', hd_a3: 'Да. Застройщики могут ответить с документами через право на ответ; исправления с датой публикуются на странице исправлений.',
     hc_q1: 'В скольких странах Kolaboro отслеживает новостройки?', hc_a1: '{c} стран, {n} проектов с названием (данные на {d}).', hc_q2: 'В каких странах больше всего отслеживаемых проектов?', hc_a2: '{l}.' },
-  zh: { m_t: '{p}期房项目：开发商、交付日期与许可证', m_h1: '{p}期房项目', m_lead: '我们在{p}跟踪的每个有名称的期房项目，以及开发商公布的内容。只列事实，每项事实在项目页面上都有来源。数据日期：{d}。',
+  zh: { crumb_c: '国家', l_enc: '英文国家页面（登记、延期、完整详情）', ch_h: '按国家查看期房项目', ch_t: '按国家查看海外期房：{c} 个国家，{n} 个项目', ch_lead: '我们跟踪至少 {k} 个有名称期房项目的每个国家，以及开发商在当地公布的内容。数据日期：{d}。', c_co: '国家', rk_t: '期房排名与地区报告', rk_lead: '根据我们的数据计算的排名和报告，每个数字都有来源，以您的语言呈现。', rk: ["各地透明度排名", "各地开发商透明度排名", "各地公布许可证的项目", "按公布价格区间查看项目", "各国外国人永久产权或租赁权", "高于居留签证门槛的项目", "机场附近的项目", "各地每月市场报告", "按交付年份和地点查看项目", "各地逾期交付", "按社区查看项目", "本周有哪些变化（按地点）", "Kolaboro 数据一览"],
+    m_t: '{p}期房项目：开发商、交付日期与许可证', m_h1: '{p}期房项目', m_lead: '我们在{p}跟踪的每个有名称的期房项目，以及开发商公布的内容。只列事实，每项事实在项目页面上都有来源。数据日期：{d}。',
     m_desc: '{p}的 {n} 个期房项目，来自 {dv} 家开发商：许可证编号、记录的交付日期和透明度评分。数据日期：{d}。',
     k_n: '个跟踪项目', k_dv: '家开发商', k_pn: '公布许可证或执照编号', k_h: '公布交付日期', k_mv: '交付日期推迟过', k_ov: '交付日期已过且未完工', k_med: '透明度评分中位数（0-100）', k_d: '数据日期',
     tb: '项目', c_p: '项目', c_dv: '开发商', c_ar: '区域', c_h: '记录的交付日期', c_pn: '许可证编号', c_s: '评分', yes: '已公布', no: '未公布', np: '未公布',
@@ -204,7 +211,8 @@ const T = {
     k_d5: '拥有 5 个以上项目的开发商', hd_q1: 'Kolaboro 跟踪多少家开发商？', hd_a1: '{dv} 家开发商，{n} 个有名称的期房项目（数据日期 {d}）。', hd_q2: '哪些开发商被跟踪的项目最多？', hd_a2: '{l}。',
     hd_q3: '开发商可以更正自己的页面吗？', hd_a3: '可以。开发商可以通过答复权提交文件回应；更正会注明日期并列在更正页面上。',
     hc_q1: 'Kolaboro 在多少个国家跟踪期房项目？', hc_a1: '{c} 个国家，{n} 个有名称项目（数据日期 {d}）。', hc_q2: '哪些国家跟踪的项目最多？', hc_a2: '{l}。' },
-  ar: { m_t: 'مشاريع على الخارطة في {p}: المطوّرون ومواعيد التسليم', m_h1: 'مشاريع على الخارطة في {p}', m_lead: 'كل مشروع على الخارطة باسمه نتابعه في {p}، مع ما ينشره مطوّره. حقائق فقط، لكلٍّ منها مصدره في صفحة المشروع. بيانات {d}.',
+  ar: { crumb_c: 'الدول', l_enc: 'صفحة الدولة بالإنجليزية (السجلات والتأخير والتفاصيل الكاملة)', ch_h: 'مشاريع على الخارطة حسب الدولة', ch_t: 'مشاريع على الخارطة حسب الدولة: {c} دولة، {n} مشروعًا', ch_lead: 'كل دولة نتابع فيها {k} مشاريع على الخارطة بأسمائها على الأقل، مع ما ينشره المطوّرون هناك. بيانات {d}.', c_co: 'الدولة', rk_t: 'تصنيفات وتقارير المشاريع على الخارطة', rk_lead: 'تصنيفات وتقارير محسوبة من بياناتنا، لكل رقم مصدره، بلغتك.', rk: ["تصنيفات الشفافية حسب المكان", "المطوّرون حسب الشفافية، حسب المكان", "مشاريع بترخيص منشور، حسب المكان", "المشاريع حسب نطاق السعر المنشور", "التملّك الحر أو الإيجار للأجانب، حسب الدولة", "مشاريع فوق عتبات تأشيرة الإقامة", "مشاريع قرب المطارات", "تقارير السوق الشهرية حسب المكان", "المشاريع حسب سنة التسليم والمكان", "مواعيد تسليم فائتة حسب المكان", "المشاريع حسب الحي", "ما الذي تغيّر هذا الأسبوع، حسب المكان", "Kolaboro بالأرقام"],
+    m_t: 'مشاريع على الخارطة في {p}: المطوّرون ومواعيد التسليم', m_h1: 'مشاريع على الخارطة في {p}', m_lead: 'كل مشروع على الخارطة باسمه نتابعه في {p}، مع ما ينشره مطوّره. حقائق فقط، لكلٍّ منها مصدره في صفحة المشروع. بيانات {d}.',
     m_desc: '{n} مشروعًا على الخارطة في {p} من {dv} مطوّرًا: أرقام التراخيص ومواعيد التسليم المسجّلة ودرجات الشفافية. بيانات {d}.',
     k_n: 'مشروعًا نتابعه', k_dv: 'مطوّرًا', k_pn: 'تنشر رقم ترخيص أو تصريح', k_h: 'تنشر موعد تسليم', k_mv: 'تأجّل موعد تسليمها', k_ov: 'فات موعد تسليمها ولم تكتمل', k_med: 'وسيط درجة الشفافية (0-100)', k_d: 'تاريخ البيانات',
     tb: 'المشاريع', c_p: 'المشروع', c_dv: 'المطوّر', c_ar: 'المنطقة', c_h: 'التسليم المسجّل', c_pn: 'رقم الترخيص', c_s: 'الدرجة', yes: 'منشور', no: 'غير منشور', np: 'غير منشور',
@@ -253,7 +261,9 @@ async function mdata(env) {
     return { n, devs, dv: devs.size, pn: L.filter(permit).length, permit, h: H.length, ys, yTop, mv, OV, ov: OV.length, med: med(L.map(x => score(x.id))), lm };
   };
   const M = new Map(); for (const [mk, L] of g) if (L.length >= MIN_MK) M.set(slugM(mk), { mk, L, st: stats(L) });
-  MD = { ix, tri, g, M, score, stats, all: stats(ix.P), day: new Date().toISOString().slice(0, 10), body: new Map(), d: String(ix.updated || '').slice(0, 10) };
+  const CG = new Map(); for (const x of ix.P) if (x.co) { const c = CO_AL[x.co] || x.co; if (!CG.has(c)) CG.set(c, []); CG.get(c).push(x); }
+  const C = new Map(); for (const [co, L] of CG) if (L.length >= MIN_MK) C.set(slugA(co), { kind: 'c', co, s: slugA(co), mk: co, L, st: stats(L) });
+  MD = { ix, tri, g, M, C, score, stats, all: stats(ix.P), day: new Date().toISOString().slice(0, 10), body: new Map(), d: String(ix.updated || '').slice(0, 10) };
   return MD;
 }
 const findMk = (D, key) => { const k = String(key || '').toLowerCase(); let m = D.M.get(k); if (m) return m; try { m = D.M.get(slugM(decodeURIComponent(k))); } catch (e) { m = null; } return m || null; };
@@ -269,11 +279,11 @@ const list = (lang, items) => { try { return new Intl.ListFormat(LOC[lang] || 'e
 
 // ------------------------------------------------------------------------------------------------ item 88: translated market file
 function marketPage(D, m, lang) {
-  const { mk, L, st } = m, ix = D.ix, p = mkName(mk, lang), co = L[0].co, d = fd(D.d, lang), path = '/m/' + slugM(mk) + '/';
+  const { mk, L, st } = m, ix = D.ix, isC = m.kind === 'c', p = isC ? coName(m.co, lang) : mkName(mk, lang), co = L[0].co, d = fd(D.d, lang), path = isC ? '/countries/' + m.s + '/' : '/m/' + slugM(mk) + '/';
   const v = { p, n: nf(lang, st.n), dv: nf(lang, st.dv), d };
   const title = t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
-  const TRP = TR_PLACES.filter(P => !P.coi && P.m.includes(mk) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
-  const BUY = BUY_PLACES.filter(P => TRP.some(q => q.s === P.s) || slugA(mk) === P.s);
+  const TRP = TR_PLACES.filter(P => !P.coi && (isC ? (CO_AL[P.co] || P.co) === m.co : P.m.includes(mk)) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
+  const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
   const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {
     const h = handoverOf(ix, x), s = D.score(x.id);
     return '<tr><td data-label="' + esc(t(lang, 'c_p')) + '"><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></td><td data-label="' + esc(t(lang, 'c_dv')) + '">' +
@@ -285,11 +295,12 @@ function marketPage(D, m, lang) {
     [t(lang, 'q4', v), t(lang, 'a4', Object.assign({}, v, { ov: nf(lang, st.ov), mv: nf(lang, st.mv) }))]];
   const links = [];
   for (const P of TRP) links.push('<a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + th(lang, 'l_tr', { p: mkName(P.n, lang) }) + '</a>');
-  for (const P of BUY) links.push('<a href="' + pre(lang) + '/guides/buying-off-plan/' + P.s + '/">' + th(lang, 'l_buy', { p: mkName(mk, lang) }) + '</a>');
-  if (st.ov >= OV_MIN) links.push('<a href="' + pre(lang) + '/handover/overdue/' + slugA(mk) + '/">' + th(lang, 'l_ov', { p }) + '</a>');
-  for (const [y, k] of [...st.ys.entries()].filter(e => e[1] >= 3).sort((a, b) => a[0] - b[0]).slice(0, 4)) links.push('<a href="' + pre(lang) + '/handover/' + y + '/' + slugA(mk) + '/">' + th(lang, 'l_hy', { y }) + '</a>');
-  links.push('<a href="' + path + '" hreflang="en">' + esc(t(lang, 'l_en')) + '</a>', '<a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'l_mt')) + '</a>');
-  const cr = [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb'), pre(lang) + '/projects/'], [p, pre(lang) + path]];
+  if (isC) for (const g of [...new Set(L.map(x => x.mk))].map(k => D.M.get(slugM(k))).filter(Boolean).sort((a, b) => b.L.length - a.L.length)) links.push('<a href="' + pre(lang) + '/m/' + slugM(g.mk) + '/">' + bdi(mkName(g.mk, lang)) + ' (' + nf(lang, g.L.length) + ')</a>');
+  for (const P of BUY) links.push('<a href="' + pre(lang) + '/guides/buying-off-plan/' + P.s + '/">' + th(lang, 'l_buy', { p: isC ? mkName(P.m[0], lang) : mkName(mk, lang) }) + '</a>');
+  if (!isC && st.ov >= OV_MIN) links.push('<a href="' + pre(lang) + '/handover/overdue/' + slugA(mk) + '/">' + th(lang, 'l_ov', { p }) + '</a>');
+  if (!isC) for (const [y, k] of [...st.ys.entries()].filter(e => e[1] >= 3).sort((a, b) => a[0] - b[0]).slice(0, 4)) links.push('<a href="' + pre(lang) + '/handover/' + y + '/' + slugA(mk) + '/">' + th(lang, 'l_hy', { y }) + '</a>');
+  links.push('<a href="' + path + '" hreflang="en">' + esc(t(lang, isC ? 'l_enc' : 'l_en')) + '</a>', '<a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'l_mt')) + '</a>');
+  const cr = [['Kolaboro', pre(lang) + '/'], isC ? [t(lang, 'crumb_c'), pre(lang) + '/countries/'] : [t(lang, 'crumb'), pre(lang) + '/projects/'], [p, pre(lang) + path]];
   const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb">' + cr.map((c, i) => i < cr.length - 1 ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span>' + bdi(c[0]) + '</span>').join(' / ') + '</p>' +
     '<h1>' + th(lang, 'm_h1', { p: H(bdi(p)) }) + '</h1><p class="lead">' + th(lang, 'm_lead', { p: H(bdi(p)), d }) + '</p></div>' +
     kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [nf(lang, st.pn) + ' (' + nf(lang, pct(st.pn, st.n)) + '%)', t(lang, 'k_pn')], [nf(lang, st.h) + ' (' + nf(lang, pct(st.h, st.n)) + '%)', t(lang, 'k_h')],
@@ -298,7 +309,7 @@ function marketPage(D, m, lang) {
     faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace('<section class="k29-q"><div class="k-wrap wrap">', '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a></p></div></section></div>';
   const url = ORIGIN + pre(lang) + path;
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: st.lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
-      about: { '@type': 'Place', name: p, alternateName: p !== mk ? mk : undefined, containedInPlace: co ? { '@type': 'Country', name: coName(co, lang) } : undefined }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
+      about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@type': 'Place', name: p, alternateName: p !== mk ? mk : undefined, containedInPlace: co ? { '@type': 'Country', name: coName(co, lang) } : undefined }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
     { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: ORIGIN + c[1] })) }, faqLd(Q)];
   return { path, title, desc, body, ld, lm: st.lm };
 }
@@ -312,6 +323,7 @@ export function mHas(mk) { return !!(MD && MD.M.has(slugM(mk))); }
 function mSitemap(D) {
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const urls = [...D.M.values()].flatMap(m => { const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<url><loc>' + xe(ORIGIN + pre(l) + p) + '</loc><lastmod>' + m.st.lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(ORIGIN + pre(a) + p) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'); });
+  for (const p of ['/countries/', '/rankings/'].concat([...D.C.values()].map(c => '/countries/' + c.s + '/'))) { const c = D.C.get(p.split('/')[2]), lm = c ? c.st.lm : D.d; for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'); }
   for (const g of GROUPS) { const p = '/guides/buyers-from/' + g + '/', lm = BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop(); for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'); }
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n';
 }
@@ -563,6 +575,39 @@ export function buyerLinks(lang, mkOrGuide) {
   const P = BPL.find(q => q.s === mkOrGuide || q.mk === mkOrGuide); if (!P) return '';
   return '<section class="k29-q"><div class="k-wrap wrap"><h2>' + esc(bt(lang, 'hub')) + '</h2><p>' + esc(bt(lang, 'hubl')) + '</p><ul class="k29-l">' + GROUPS.map(x => '<li><a href="' + pre(lang) + '/guides/buyers-from/' + x + '/#' + P.s + '">' + esc(bt(lang, 'h1', { g: bt(lang, 'g_' + x) })) + '</a></li>').join('') + '</ul></div></section>';
 }
+
+// ------------------------------------------------------------------------------------------------ lead's request (14 Nov): /<lang>/countries/ and /<lang>/rankings/
+// The English /countries/ pages (kbx_seo.js) carry much more (registers, delay tables); the language versions carry the figures,
+// the project table and the links, from the same data, for countries with 5+ named projects. /<lang>/rankings/ lists the rankings
+// and place reports that already exist in every language.
+export const CR_RX = /^\/(es|de|fr|nl|ru|zh|ar)\/(countries|rankings)(?:\/([a-z0-9-]{2,60}))?(\/?)$/;
+const RK = ['/rankings/transparency/', '/rankings/developers/', '/permits/', '/price-ranges/', '/ownership/', '/golden-visa/', '/airports/', '/reports/', '/handover/', '/handover/overdue/', '/areas/', '/weekly/', '/numbers/'];
+function countriesHub(D, lang) {
+  const C = [...D.C.values()].sort((a, b) => b.L.length - a.L.length || a.co.localeCompare(b.co)), d = fd(D.d, lang), N = n => nf(lang, n), path = '/countries/';
+  const n = C.reduce((a, c) => a + c.L.length, 0), title = t(lang, 'ch_t', { c: N(C.length), n: N(n) }), desc = t(lang, 'ch_lead', { k: MIN_MK, d });
+  const rows = C.map(c => '<tr><td data-label="' + esc(t(lang, 'c_co')) + '"><a href="' + pre(lang) + '/countries/' + c.s + '/">' + bdi(coName(c.co, lang)) + '</a></td><td data-label="' + esc(t(lang, 'k_n')) + '">' + N(c.st.n) + '</td><td data-label="' + esc(t(lang, 'k_pn')) + '">' + N(c.st.pn) + ' (' + N(pct(c.st.pn, c.st.n)) + '%)</td><td data-label="' + esc(t(lang, 'k_ov')) + '">' + N(c.st.ov) + '</td><td data-label="' + esc(t(lang, 'k_med')) + '">' + (c.st.med == null ? '-' : N(c.st.med)) + '</td></tr>').join('');
+  const cr = [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + path]];
+  const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <span>' + esc(t(lang, 'crumb_c')) + '</span></p><h1>' + esc(t(lang, 'ch_h')) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
+    kvHtml([[N(C.length), t(lang, 'k_co')], [N(n), t(lang, 'k_n')], [esc(d), t(lang, 'k_d')]]) +
+    '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + ['c_co', 'k_n', 'k_pn', 'k_ov', 'k_med'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+    '<ul class="k29-l"><li><a href="/countries/" hreflang="en">' + esc(t(lang, 'l_enc')) + '</a></li><li><a href="' + pre(lang) + '/rankings/">' + esc(t(lang, 'rk_t')) + '</a></li></ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + '</p></div></section></div>';
+  const url = ORIGIN + pre(lang) + path, lm = C.map(c => c.st.lm).sort().pop();
+  return { path, title, desc, body, lm, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: lm, mainEntity: { '@type': 'ItemList', numberOfItems: C.length, itemListElement: C.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: coName(c.co, lang), url: ORIGIN + pre(lang) + '/countries/' + c.s + '/' })) } }, { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: ORIGIN + c[1] })) }] };
+}
+function rankingsHub(D, lang) {
+  const path = '/rankings/', title = t(lang, 'rk_t'), desc = t(lang, 'rk_lead'), L = t(lang, 'rk'), d = fd(D.d, lang);
+  const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <span>' + esc(title) + '</span></p><h1>' + esc(title) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
+    '<ul class="k-list">' + RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
+    '<ul class="k29-l"><li><a href="' + pre(lang) + '/countries/">' + esc(t(lang, 'ch_h')) + '</a></li><li><a href="/rankings/" hreflang="en">English</a></li></ul><p class="k-small k-muted">' + esc(t(lang, 'k_d')) + ': ' + esc(d) + '</p></div></section></div>';
+  const url = ORIGIN + pre(lang) + path;
+  return { path, title, desc, body, lm: D.d, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: D.d, mainEntity: { '@type': 'ItemList', numberOfItems: RK.length, itemListElement: RK.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: L[i], url: ORIGIN + pre(lang) + r })) } }] };
+}
+// English /countries/, /countries/<c>/ and /rankings/: hreflang to the language versions (index.js)
+export async function crAlternates(env, path) {
+  let ok = path === '/rankings/' || path === '/countries/';
+  if (!ok) { const m = /^\/countries\/([a-z0-9-]{2,60})\/$/.exec(path); if (m) { let D; try { D = await mdata(env); } catch (e) { return ''; } ok = D.C.has(m[1]); } }
+  return ok ? LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + path + '">' : '';
+}
 // ------------------------------------------------------------------------------------------------ routing
 const txt = (b, ct, h) => new Response(b, { headers: Object.assign({ 'content-type': ct, 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' }, h || {}) });
 export async function page(req, u, env, ctx, shell) {
@@ -571,6 +616,16 @@ export async function page(req, u, env, ctx, shell) {
   if (p === '/m/sitemap.xml') return txt(mSitemap(D), 'application/xml; charset=utf-8');
   if (p === '/answers/questions.md') return txt(questionsMd(D), 'text/markdown; charset=utf-8', { 'x-robots-tag': 'noindex' });
   if (p === '/answers/questions.json') return txt(JSON.stringify({ about: 'Questions about off-plan projects answered from Kolaboro data (no estimates). Each answer links the page with the facts and their sources.', licence: 'CC BY 4.0, attribute "Kolaboro"', updated: D.d, count: questions(D).length, questions: questions(D) }), 'application/json; charset=utf-8');
+  const cm = CR_RX.exec(p);
+  if (cm) {
+    const lang = cm[1], kind = cm[2], slug = cm[3];
+    if (kind === 'rankings' && slug) return null;
+    const cc = slug ? D.C.get(slug) : null; if (slug && !cc) return null;   // other pages under /<lang>/countries/ belong to other modules
+    if (!cm[4]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+    const key = 'c|' + lang + '|' + kind + '|' + (slug || ''); let pg = D.body.get(key);
+    if (!pg) { pg = kind === 'rankings' ? rankingsHub(D, lang) : cc ? marketPage(D, cc, lang) : countriesHub(D, lang); D.body.set(key, pg); }
+    return render(req, lang, pg, await shell(pre(lang) + '/how-we-score/'));
+  }
   const bm = BUYER_RX.exec(p);
   if (bm) {
     const lang = bm[1] || 'en', g = bm[2]; if (!g) return new Response(null, { status: 301, headers: { location: pre(lang) + '/guides/buyers-from/russia/', 'cache-control': 'public, max-age=3600' } });
