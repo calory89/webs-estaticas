@@ -81,8 +81,10 @@ export function watchBox(lang, id, name, path, snap) {
     '<p class="kw-out" role="status" aria-live="polite"></p>' + (path.indexOf('/projects/') === 0 ? '<p class="kw-rp">' + esc((H28[lang] || H28.en).of.replace('{n}', name)) + ' <a href="' + pre(lang) + esc(path) + 'report/" data-kw-rp hidden>' + esc((E27[lang] || E27.en).of_dl) + '</a></p>' : '') + '<p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p>' +
     (snap ? '<p class="kw-s"><button type="button" class="kw-sb" data-kw-save aria-pressed="false"><span aria-hidden="true">\u2606</span> <span>' + esc(t9(lang, 's_btn')) + '</span></button> <span class="kw-sv" role="status" aria-live="polite"></span></p>' : '') + '</div>' + feedLinks(lang, path, name) + '</div>';
 }
+// n28b: counts in the page language (1,590 / 1.590 / 1 590), Latin digits as elsewhere on the site
+export const nf28 = (lang, n) => { try { return Number(n).toLocaleString({ zh: 'zh-CN', ar: 'ar' }[lang] || lang, { numberingSystem: 'latn' }); } catch (e) { return String(n); } };
 export function searchBox(lang, np, nd) {
-  const m = { pre: pre(lang), none: t9(lang, 'sx_none', { q: '%Q%' }), chk: t9(lang, 'sx_chk'), dev: t9(lang, 'sx_dev'), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, 'sx_res', { k: '%K%' }), res1: t9(lang, 'sx_res1'), cnt: t9(lang, 'sx_cnt', { p: np, d: nd }) };
+  const m = { pre: pre(lang), none: t9(lang, 'sx_none', { q: '%Q%' }), chk: t9(lang, 'sx_chk'), dev: t9(lang, 'sx_dev'), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, 'sx_res', { k: '%K%' }), res1: t9(lang, 'sx_res1'), cnt: t9(lang, 'sx_cnt', { p: nf28(lang, np), d: nf28(lang, nd) }) };
   return '<div class="kx" role="search" data-kx="' + esc(JSON.stringify(m)) + '"><label for="kx-q">' + esc(t9(lang, 'sx_lbl')) + '</label><input id="kx-q" type="search" autocomplete="off" spellcheck="false" placeholder="' + esc(t9(lang, 'sx_ph')) + '" aria-describedby="kx-st" aria-controls="kx-out">' +
     '<p class="kx-st" id="kx-st" aria-live="polite">' + esc(m.cnt) + '</p><ul class="kx-out" id="kx-out" hidden></ul></div>';
 }
