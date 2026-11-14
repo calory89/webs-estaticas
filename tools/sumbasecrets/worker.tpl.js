@@ -314,7 +314,7 @@ function weatherPage(l) {
 }
 
 function guideTopic(s) {
-  if (/^itinerary-/.test(s) || /airport|ferry|bali-to|getting|money|packing|driver|safe|health|practical|budget|weather|rainy|best-time|kids|where-to-stay|travel-guide|pasola-dates/.test(s)) return "plan";
+  if (/^itinerary-/.test(s) || /airport|ferry|bali-to|getting|money|packing|driver|safe|health|practical|budget|weather|rainy|best-time|kids|where-to-stay|travel-guide|pasola-dates|nomads|drones|snorkel/.test(s)) return "plan";
   if (/-vs-|worth/.test(s)) return "compare";
   if (/marapu|ikat|village|houses|tombs|horses|pasola|etiquette|food/.test(s)) return "culture";
   return "places";
