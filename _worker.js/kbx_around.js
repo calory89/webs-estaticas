@@ -318,3 +318,16 @@ export async function handle(req, u, env) {
       climate: ad.cl ? { updated: ad.cl.updated, source: ad.cl.source, periods: ad.cl.periods, scenarios: ad.cl.scenarios, indicators: ad.cl.indicators, values: ad.cl.values, method: ad.cl.method, limits: ad.cl.limits } : null,
       distance_claims: ad.dc ? { updated: ad.dc.updated, source: ad.dc.source, method: ad.dc.method, limits: ad.dc.limits, fields: ad.dc.fields } : null } }, 200, 3600);
 }
+
+// n29p (batch 29, item 3): nearest beach, airport and hospital measured from the pin, as [label, text] pairs for the one-line summary
+// in "Where is it?" and the FAQ (same records and rounding as the #around section; [] when the project has no record)
+export function aroundSum(ad, x, lang) {
+  const r = ad && ad.ar && ad.ar.projects && ad.ar.projects[x.id]; if (!r) return [];
+  const out = [];
+  for (const k of ['beach', 'airport', 'hospital']) {
+    const o = r[k]; if (!o || o.same) continue;
+    if (o.d == null) { if (o.none != null) out.push([t(lang, k), t(lang, 'none', { km: num(o.none, lang) }).replace(/\.$/, '').replace(/^\p{Lu}(?=\p{Ll})/u, c => c.toLowerCase())]); continue; }
+    out.push([t(lang, k), (k === 'airport' && o.n ? o.n + (o.iata ? ' (' + o.iata + ')' : '') + ' ' : '') + dist(o.d, lang)]);
+  }
+  return out;
+}

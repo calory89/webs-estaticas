@@ -1,6 +1,21 @@
 {
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
+  {
+   "date": "2026-11-14",
+   "kind": "shipped",
+   "url": "/projects/sobha-solis/#payment-plan",
+   "text": "Project pages: payment plan, unit sizes, foreign ownership and short-let rules",
+   "tl": {
+    "es": "Fichas: plan de pagos, tamaños, propiedad para extranjeros y alquiler turístico",
+    "fr": "Fiches : échéancier, surfaces, propriété des étrangers et location courte",
+    "de": "Projektseiten: Zahlungsplan, Größen, Eigentum für Ausländer und Kurzzeitmiete",
+    "nl": "Projectpagina's: betalingsplan, oppervlaktes, eigendom buitenlanders en kortverhuur",
+    "ru": "Страницы проектов: график платежей, площади, права иностранцев и аренда",
+    "zh": "项目页：付款计划、面积、外国人产权与短租规则",
+    "ar": "صفحات المشاريع: خطة الدفع والمساحات وتملّك الأجانب والتأجير القصير"
+   }
+  },
   {"date": "2026-11-14", "kind": "shipped", "url": "/guides/buying-off-plan/", "text": "Buying guides for 8 more countries, 56 neighbourhood pages, 3 glossary tables", "tl": {"es": "Guías de compra de 8 países más, 56 barrios y 3 tablas de glosario", "fr": "Guides d’achat pour 8 pays de plus, 56 quartiers, 3 tableaux du glossaire", "de": "Kaufratgeber für 8 weitere Länder, 56 Viertelseiten, 3 Glossartabellen", "nl": "Koopgidsen voor 8 extra landen, 56 buurtpagina’s, 3 woordenlijsttabellen", "ru": "Гиды покупки ещё для 8 стран, 56 районов, 3 таблицы глоссария", "zh": "新增 8 个国家购房指南、56 个街区页面和 3 个术语数据表", "ar": "أدلة شراء لـ8 دول إضافية و56 صفحة أحياء و3 جداول في المسرد"}},
   {
    "date": "2026-11-14",

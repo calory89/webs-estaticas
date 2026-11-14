@@ -259,3 +259,13 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
   const stg = stageHtml(est, lang, fd, id);
   return CSS + (strip ? TM_CSS : '') + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + tmach + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + stg + '</div>';
 }
+
+// n29p (batch 29, item 13): the change verdict of the section in one sentence, for the line under the quick answer
+// ('' when the series is too short to say). Same index and band as the section, so the two never disagree.
+export function satLine(meta, id, lang, fd) {
+  const rec = meta && meta.projects && meta.projects[id];
+  if (!rec || !rec.n || !rec.m0) return '';
+  const ix = index(rec); if (!ix) return '';
+  const m0 = mi(rec.m0);
+  return t(lang, Math.abs(ix.now) >= BAND ? 'vis' : 'novis', { base: fd(ym(m0 + ix.first[0])) });
+}
