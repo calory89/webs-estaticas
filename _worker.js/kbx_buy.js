@@ -16,7 +16,8 @@ import { NT } from './kbx_buy_notes.js';
 import { trData } from './kbx_tr.js';
 import { hdisp, mkName } from './kbx_hdate.js';
 import { data as namedData } from './kbx_named.js';
-import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
+import { tcFor, TC_SOURCES, TC_SETS, costCalc } from './kbx_facets.js';   // n29h2 (item 29): tax rows of /tools/total-cost/
+import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME, TC29, TCPL, TCPL_T, TCS } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { guideNext, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): next review (item 64), who is accountable (56)
 import { e29t } from './kbx_e29_i18n.js';
@@ -26,6 +27,7 @@ const LANGS = BUY_LANGS;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/buying-off-plan(?:\/([a-z-]{2,30}))?(\/?)$/;
 export const SITEMAP = '/guides/buying-off-plan/sitemap.xml';
+export const TC_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/total-cost\/(dubai|costa-del-sol|portugal|thailand|indonesia|england|turkey)(\/?)$/;   // n29h2 (item 29)
 export const GL_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?glossary\/(escrow|leasehold|payment-plan)(\/?)$/;   // n29h2 (item 27)
 const BASE = '/guides/buying-off-plan/';
 const REVIEWED = '2026-11-13';   // date the guide text and the sources below were last read
@@ -253,6 +255,7 @@ function guidePage(G, slug, lang, lease) {
   rel.push([pre(lang) + '/buyer-protection-law/#' + P.s, e29t(lang, 'l_bp')], [pre(lang) + '/countries/foreign-buyers/#' + P.s, e29t(lang, 'l_fb')]);   // n29e (batch 29)
   if (LAWPAGE[P.cc]) rel.push(['/tools/law/', t(lang, 'l_law')]);
   if (DEST[slug]) rel.push([DEST[slug], tx(lang, 'l_dest', { in: inP })]);
+  { const cs = GUIDE_TC[slug]; if (cs) rel.push([pre(lang) + '/tools/total-cost/' + cs + '/', cf(lang, 'c_t', { in: (TCPL_T[cs] && TCPL_T[cs][lang]) || cin(cs, lang) })]); }   // n29h2: cost page of the place
   rel.push([pre(lang) + '/guides/short-let-rules/', t(lang, 'l_short')], ['/checklist/', t(lang, 'l_list')], ['/check/', t(lang, 'l_check')]);
   const note2 = '<div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p><p>' + te(lang, 'reply', { in: esc(inP) }) + ' <a class="k-btn k-btn--sm" href="/corrections/">' + esc(t(lang, 'reply_btn')) + '</a></p></div>';
   const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + te(lang, 'lead', vIn) + '</p>' +
@@ -352,19 +355,80 @@ function glPage(D, term, lang) {
   return { path, title, desc, body, ld, og: 'website' };
 }
 
+
+// ------------------------------------------------------------------------------------------------ cost pages (n29h2, item 29)
+// /tools/total-cost/<place>/: the sourced tax rows of the calculator for one place, applied to the quartiles of the published "from"
+// prices (same currency only, nothing converted) of the projects we track there. A page exists only with 5+ such prices.
+const TC_MIN = 5;
+const GUIDE_TC = { dubai: 'dubai', 'costa-del-sol': 'costa-del-sol', bali: 'indonesia', phuket: 'thailand', lisbon: 'portugal', 'united-kingdom': 'england' };
+const c = (lang, k) => (TCS[lang] && TCS[lang][k] != null) ? TCS[lang][k] : TCS.en[k];
+const cf = (lang, k, v) => fill(c(lang, k), v);
+const cin = (s, lang) => (TCPL[s] && (TCPL[s][lang] || TCPL[s].en)) || (PL[s] ? pin({ s }, lang) : s);
+const money = (lang, cur, v) => { try { return new Intl.NumberFormat(LOC[lang] || 'en-GB', { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(v); } catch (e) { return cur + ' ' + nf(lang, Math.round(v)); } };
+const qtl = (a, q) => { const b = a.slice().sort((x, y) => x - y), i = (b.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i); return b[lo] + (b[hi] - b[lo]) * (i - lo); };
+let TCD = null;
+async function tcData(env) {
+  const ix = await namedData(env);
+  if (TCD && TCD.ix === ix) return TCD;
+  const by = new Map();
+  for (const x of ix.P || []) {
+    if (String(x.mk || '').toLowerCase() === 'sumba' || COI.test(String(x.n || '')) || COI.test(String(x.dv || ''))) continue;
+    const T = tcFor(x); if (!T) continue;
+    const E = TC29.find(e => TC_SETS[e.k] === T); if (!E) continue;
+    const f = x.fx || {}, p = +f.price_min;
+    const d = by.get(E.s) || { E, T, n: 0, L: [] }; d.n++;
+    if (p > 0 && String(f.currency || '').toUpperCase() === T.cur) d.L.push({ x, p });
+    by.set(E.s, d);
+  }
+  for (const d of by.values()) if (d.L.length < TC_MIN) by.delete(d.E.s);
+  TCD = { ix, by, updated: (ix.updated || MOD) };
+  return TCD;
+}
+function tcPage(D, s, lang) {
+  const d = D.by.get(s); if (!d) return null;
+  const { E, T, L } = d, inP = cin(s, lang), path = '/tools/total-cost/' + s + '/', url = ORIGIN + pre(lang) + path;
+  const ps = L.map(o => o.p), k = nf(lang, L.length);
+  const tot = p => (costCalc(L[0].x, p, lang).rows || []).reduce((a, r) => a + (r.amount || 0), 0);
+  const C0 = costCalc(L[0].x, 1, lang);
+  const srcOf = i => T.rows[i] ? T.rows[i].s.map(q => TC_SOURCES[q]).filter(Boolean) : [];   // costCalc keeps the order of T.rows
+  const rowsH = C0.rows.map((r, i) => '<tr><td>' + esc(r.label) + '</td><td>' + bdi(r.rate) + '</td><td>' + srcOf(i).map(([n, u]) => '<a href="' + esc(u) + '" rel="noopener"><bdi>' + esc(n) + '</bdi></a>').join(' · ') + '</td></tr>').join('');
+  const pts = [['c_q1', qtl(ps, 0.25)], ['c_q2', qtl(ps, 0.5)], ['c_q3', qtl(ps, 0.75)]].map(([kk, p]) => [kk, Math.round(p)]);
+  const exH = pts.map(([kk, p]) => '<tr><td>' + esc(c(lang, kk)) + '</td><td>' + esc(money(lang, T.cur, p)) + '</td><td>' + esc(money(lang, T.cur, tot(p))) + '</td></tr>').join('');
+  const mp = pts[1][1];
+  const near = L.slice().sort((a, b) => Math.abs(a.p - mp) - Math.abs(b.p - mp) || String(a.x.n).localeCompare(String(b.x.n))).slice(0, 6)
+    .map(o => '<li><a href="' + pre(lang) + '/projects/' + esc(o.x.s) + '/">' + bdi(o.x.n) + '</a>: ' + esc(money(lang, T.cur, o.p)) + ' + ' + esc(money(lang, T.cur, tot(o.p))) + '</li>').join('');
+  const title = cf(lang, 'c_t', { in: (TCPL_T[s] && TCPL_T[s][lang]) || inP });
+  const rowsTxt = C0.rows.map(r => r.label + ' ' + r.rate).join('; ') + (C0.part ? '; ' + C0.part : '');
+  const faq = [[cf(lang, 'c_q', { in: inP }), cf(lang, 'c_a', { rows: rowsTxt, p: money(lang, T.cur, mp), tot: money(lang, T.cur, tot(mp)) })]];
+  let desc = cf(lang, 'c_lead', { in: inP, k }); if ([...desc].length > 155) desc = [...desc].slice(0, 154).join('').replace(/[\s,;:]+\S*$/, '') + '.';
+  const crumbs = [[t(lang, 'guides'), pre(lang) + BASE], [title, pre(lang) + path]];
+  const body = '<div class="kby"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumb(lang, crumbs) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(cf(lang, 'c_lead', { in: inP, k })) + '</p>' +
+    '<p class="k-small k-muted"><time datetime="' + MOD + '">' + esc(cf(lang, 'c_upd', { d: fdt(D.updated > MOD ? D.updated : MOD, lang) })) + '</time></p></div><div class="k-prose">' +
+    '<h2 id="rows">' + esc(c(lang, 'c_rows')) + '</h2><div class="k-table-wrap"><table class="k-table"><thead><tr><th>' + ['c_tax', 'c_rate', 'c_src'].map(z => esc(c(lang, z))).join('</th><th>') + '</th></tr></thead><tbody>' + rowsH + '</tbody></table></div>' +
+    (C0.part ? '<p>' + esc(C0.part) + '</p>' : '') + (C0.note ? '<p>' + esc(C0.note) + '</p>' : '') +
+    '<h2 id="examples">' + esc(c(lang, 'c_ex')) + '</h2><p>' + esc(cf(lang, 'c_exp', { k, in: inP, cur: T.cur })) + '</p><div class="k-table-wrap"><table class="k-table"><thead><tr><th>' + ['c_pt', 'c_price', 'c_tot'].map(z => esc(c(lang, z))).join('</th><th>') + '</th></tr></thead><tbody>' + exH + '</tbody></table></div>' +
+    '<h3>' + esc(c(lang, 'c_near')) + '</h3><ul>' + near + '</ul>' +
+    '<p><a class="k-btn k-btn--sm" href="/tools/total-cost/?country=' + E.tool + '">' + esc(c(lang, 'c_tool')) + '</a>' + (PL[s] ? ' · <a href="' + pre(lang) + BASE + s + '/">' + esc(tx(lang, 'guide_link', { in: pin({ s }, lang) })) + '</a>' : '') + '</p>' +
+    '<section class="kby-faq"><h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section><div class="kby-note"><p>' + esc(c(lang, 'c_note')) + '</p></div></div></div></section></div>';
+  const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD }, crumbLd(lang, crumbs),
+    { '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
+  return { path, title, desc, body, ld };
+}
+
 // ------------------------------------------------------------------------------------------------ page entry (routed in index.js)
 const BODY = new Map();
 export async function page(req, u, env, ctx, shell) {
-  if (u.pathname === SITEMAP) return new Response(sitemapXml(), { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
-  const gm = u.pathname.match(GL_RX);
+  if (u.pathname === SITEMAP) return new Response(await sitemapXml(env), { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  const cm = u.pathname.match(TC_RX), gm = cm || u.pathname.match(GL_RX);
   const m = gm || u.pathname.match(PAGE_RX); if (!m || !shell) return null;
   const lang = m[1] || 'en', slug = gm ? null : (m[2] || null);
   if (slug && !PL[slug]) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let G; try { G = await guideData(env); } catch (e) { return null; }
-  const k = lang + '|' + (gm ? 'g:' + gm[2] : (slug || '#')) + '|' + G.v;
+  const k = lang + '|' + (cm ? 'c:' + cm[2] : gm ? 'g:' + gm[2] : (slug || '#')) + '|' + G.v;
   let pg = BODY.get(k);
-  if (!pg && gm) { let D; try { D = await glData(env); } catch (e) { return null; } pg = glPage(D, gm[2], lang); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
+  if (!pg && cm) { let D; try { D = await tcData(env); } catch (e) { return null; } pg = tcPage(D, cm[2], lang); if (!pg) return null; if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
+  else if (!pg && gm) { let D; try { D = await glData(env); } catch (e) { return null; } pg = glPage(D, gm[2], lang); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
   if (!pg) {
     const lease = slug ? await leaseCount(env, G.places.get(slug).L.map(r => r.id)) : 0;
     pg = slug ? guidePage(G, slug, lang, lease) : hubPage(G, lang); if (!pg) return null;
@@ -387,10 +451,11 @@ export async function page(req, u, env, ctx, shell) {
   return new Response(req.method === 'HEAD' ? null : await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
 }
 
-function sitemapXml() {
-  const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => '/glossary/' + x + '/'));
+async function sitemapXml(env) {
+  let cs = []; try { cs = [...(await tcData(env)).by.keys()]; } catch (e) { cs = []; }   // cost pages that exist (5+ published prices)
+  const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => '/glossary/' + x + '/'), cs.map(x => '/tools/total-cost/' + x + '/'));
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + MOD + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
 }
 
-export { guidePage, hubPage, guideData, glData, glPage, SRC, PLAN };   // for the local test
+export { guidePage, hubPage, guideData, glData, glPage, tcData, tcPage, SRC, PLAN };   // for the local test

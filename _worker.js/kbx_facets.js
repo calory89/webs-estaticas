@@ -28,6 +28,9 @@ import { trData } from './kbx_tr.js';
 import { mkName, placeName, coName, hyear, hkey } from './kbx_hdate.js';
 import { FS } from './kbx_facets_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
+import { TCS, TCPL, TCPL_T } from './kbx_buy_c29.js';   // n29h2: link to /tools/total-cost/<place>/
+import { PL as BPL } from './kbx_buy_i18n.js';
+const TCSLUG = { ae: 'dubai', esA: 'costa-del-sol', pt: 'portugal', th: 'thailand', id: 'indonesia', uk: 'england' };
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -195,7 +198,8 @@ function costHtml(F, x, lang) {
   const rows = T.rows.map(r => { const a = p ? r.f(p) : null; if (a != null) tot += a; return li('<b>' + te(lang, r.k) + ':</b> <bdi dir="ltr">' + esc(rt(r, lang)) + '</bdi>' + (a != null && !r.fixed ? ' · ' + money(lang, T.cur, Math.round(a)) : ''), used.has(r.s[0]) ? null : (used.add(r.s[0]), TC_SRC[r.s[0]][1]), TC_SRC[r.s[0]][0]);  }).join('');
   const L = [rows, T.part ? '<li>' + te(lang, T.part) + '</li>' : '', T.note ? '<li>' + te(lang, T.note) + '</li>' : '', '<li>' + te(lang, 'co_other') + '</li>'].join('');
   const ex = p && T.rows.length ? '<p>' + th(lang, 'co_ex', { p: money(lang, T.cur, p), t: money(lang, T.cur, Math.round(tot)), s: money(lang, T.cur, Math.round(p + tot)) }) + '</p>' : (T.rows.length ? '<p class="ki">' + te(lang, fx.price_min > 0 ? 'co_cur' : 'co_noprice') + '</p>' : '');
-  const html = '<p class="ki">' + te(lang, 'co_intro', { c: co }) + '</p><ul class="fl">' + L + '</ul>' + ex + '<p><a class="more" href="/tools/total-cost/?country=' + T.tool + '">' + te(lang, 'co_tool') + '</a></p>';
+  const cs = TCSLUG[Object.keys(TC).find(k => TC[k] === T)], cIn = cs && (((TCPL_T[cs] || TCPL[cs] || {})[lang]) || (BPL[cs] && (BPL[cs].in[lang] || BPL[cs].in.en)));   // n29h2: the place's cost page
+  const html = '<p class="ki">' + te(lang, 'co_intro', { c: co }) + '</p><ul class="fl">' + L + '</ul>' + ex + '<p><a class="more" href="/tools/total-cost/?country=' + T.tool + '">' + te(lang, 'co_tool') + '</a>' + (cIn ? ' · <a href="' + pre(lang) + '/tools/total-cost/' + cs + '/">' + esc(String(TCS[lang].c_t).replace('{in}', cIn)) + '</a>' : '') + '</p>';
   const faqA = T.rows.length ? T.rows.map(r => t(lang, r.k) + ': ' + rt(r, lang)).join('; ') + '.' + (T.part ? ' ' + t(lang, T.part) : '') : t(lang, T.part || 'co_other');
   return { html, faq: [t(lang, 'q_cost', { n: x.n }), faqA] };
 }
@@ -605,3 +609,4 @@ async function sitemap(env) {
   return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 export const FA_KIT = { CSS, crumbHtml, crumbLd, kv, faqLd, replyBox, regFor };   // n29h1 (batch 29): shared page parts for kbx_h29.js
+export { tcFor, TC_SRC as TC_SOURCES, TC as TC_SETS };   // n29h2: for the per-country cost pages in kbx_buy.js
