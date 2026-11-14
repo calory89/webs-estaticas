@@ -1602,7 +1602,7 @@ export async function ssr(base, u, kind, env) {
   let SL = {}; if (kind !== 'p') try { const ix = await (await import('./kbx_named.js')).data(env); for (const [id, x] of ix.byId) SL[id] = x.s; } catch (e) { SL = {}; }
   const pHref = id => SL[id] ? '/projects/' + SL[id] + '/' : '/p/' + encodeURIComponent(id) + '/';
   const cs = d.cases || [], key = decodeURIComponent(u.pathname.split('/')[2] || '');
-  let title, desc, canon, body, ld;
+  let title, desc, canon, body, ld, mcrumb = '', mfeed = '';
   if (kind === 'p') {
     const c = cs.find(x => x.id.toLowerCase() === key.toLowerCase());
     if (!c) return new Response(base.body, { status: 404, headers: base.headers });
@@ -1631,7 +1631,12 @@ export async function ssr(base, u, kind, env) {
     body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="' + pHref(x.id) + '">' + hesc(x.id) + '</a>: ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>';
     const cs8 = String(L[0].country === 'Puerto Rico (USA)' ? 'Puerto Rico' : L[0].country === 'St Lucia' ? 'Saint Lucia' : L[0].country).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same slug as /countries/<c>/ (kbx_seo.js)
     body = '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + '</a> · <a href="/countries/' + cs8 + '/how-to-check/">How to check a project in ' + hesc(L[0].country) + '</a> · <a href="/rankings/most-delayed/">Most delayed projects</a> · <a href="/registers/">Official registers</a>' + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
-    ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
+    // n29t (items 52, 53, 48, 46): the place itself as a Place inside its Country; the visible breadcrumb of the page (the shell's) shows
+    // the same path as the BreadcrumbList; the market's own change feed is linked in <head>; the title fits in 60 characters
+    ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated, about: { '@id': canon + '#place' } }, { '@type': 'Place', '@id': canon + '#place', name: m, containedInPlace: { '@type': 'Country', name: L[0].country, url: 'https://kolaboro.com/countries/' + cs8 + '/' } }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
+    mcrumb = '<a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a><span id="mk-crumb"> / ' + hesc(m) + '</span>';
+    mfeed = '<link rel="alternate" type="application/rss+xml" title="' + hesc('Kolaboro: ' + m) + '" href="/feed.xml?market=' + encodeURIComponent(m) + '">';
+    if (title.length > 60) title = title.replace(/ \| Kolaboro$/, '');
   }
   const nm = ((base.headers.get('content-security-policy-report-only') || '') + ' ' + (base.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
   // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section
@@ -1645,7 +1650,10 @@ export async function ssr(base, u, kind, env) {
     .on('link[rel="canonical"]', { element(e) { e.remove(); } })
     .on('meta[property="og:title"],meta[property="og:description"],meta[property="og:url"]', { element(e) { e.remove(); } })
     .on('meta[name="robots"]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append(tags, { html: true }); } })
+    .on('head', { element(e) { e.append(tags + mfeed, { html: true }); } })
+    .on('script#mk-ld', { element(e) { if (mcrumb) e.remove(); } })
+    .on('meta[property="og:image"],meta[name="twitter:image"]', { element(e) { if (mcrumb) e.setAttribute('content', 'https://kolaboro.com/og/type/markets.png'); } })   // n29t (item 43)   // n29t: the /m/ index page's own WebPage node does not describe a market page
+    .on('p.crumb', { element(e) { if (mcrumb) e.setInnerContent(mcrumb, { html: true }); } })
     .on('main', { element(e) { e.prepend('<section class="sec ssr-only" id="ssr"><div class="wrap">' + body + '</div></section>', { html: true }); } })
     .on('body', { element(e) { if (kind !== 'p') { const mine = {}; for (const c of cs) if (SL[c.id] && (slugM(c.market) === slugM(key) || c.market.toLowerCase() === key.toLowerCase())) mine[c.id] = SL[c.id]; e.append('<script type="application/json" id="kb-slugs">' + JSON.stringify(mine).replace(/</g, '\\u003c') + '</script>', { html: true }); } } })
     .transform(base);

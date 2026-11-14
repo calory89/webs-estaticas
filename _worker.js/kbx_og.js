@@ -7,8 +7,9 @@
 // and no image (404); "not yet reviewed" projects carry that badge and never a score; the image shows no score for any project.
 import { FONT, LOGO } from './kbx_og_font.js';
 import { data, handoverOf, reviewed, fd, tr } from './kbx_named.js';
+import { OG_KINDS } from './kbx_ogt.js';
 
-export const PATHS = /^\/og\/(projects|developers)\/([a-z0-9-]{1,90})\.png$/;
+export const PATHS = /^\/og\/(projects|developers|type)\/([a-z0-9-]{1,90})\.png$/;   // n29t: + /og/type/<kind>.png (one image per page type, kbx_ogt.js)
 const W = 1200, H = 630, V = 'og-v1';
 const BG = LOGO.bg, INK = [23, 33, 43], INK2 = [42, 53, 65], MUTED = [94, 104, 114], HI = [255, 91, 20], CARD = [246, 246, 243], LINE = [200, 198, 190];
 
@@ -149,6 +150,14 @@ function projectCard(ix, x) {
     facts: [['Handover promised', ho ? fd(ho.d, 'en') : 'Not published'], ['Permit number', x.pn ? 'Published' : 'Not published'], ['Stage', stage]],
     badge: reviewed(c) ? null : 'Not yet reviewed by Kolaboro', path: '/projects/' + x.s + '/' };
 }
+// n29t (item 43): page-type cards. Live counts from the same data as the site totals (every tracked project, Sumba included, as on the home page)
+const TYPE_CARD = { rankings: ['Ranking', 'Off-plan rankings', 'Delays, changed promises and transparency, computed from public sources'], guides: ['Buyer guide', 'Buying off-plan: what to check', 'Official registers, laws and questions to ask, country by country'],
+  reports: ['Data report', 'Off-plan data reports', 'Overdue handovers, delay index and market data, dated and citable'], countries: ['Country files', 'Off-plan property by country', 'Permits, deposit protection and delays in every country we track'],
+  markets: ['Market file', 'Off-plan market files', 'What developers publish in each market, checked against registers'], compare: ['Comparison', 'Off-plan projects side by side', 'Permits, handover dates and delays compared on the same facts'] };
+function typeCard(ix, kind) {
+  const C = [...ix.caseBy.values()], mk = new Set(C.map(c => c.market)).size, co = new Set(C.map(c => c.country)).size, T = TYPE_CARD[kind];
+  return { kind: T[0], name: T[1], sub: T[2], facts: [['Projects tracked', C.length.toLocaleString('en-US')], ['Markets and countries', mk + ' in ' + co], ['Data of', fd(String(ix.updated || '').slice(0, 10), 'en')]], badge: null, path: '/' };
+}
 function devCard(ix, dv) {
   const L = dv.ids.map(i => ix.byId.get(i)).filter(Boolean), mks = [...new Set(L.map(x => x.mk))], pn = L.filter(x => x.pn).length, P = L.flatMap(x => ix.prom[x.id] || []), mv = P.filter(p => p.mv).length;
   return { kind: 'Developer record', name: dv.n, sub: 'Projects tracked in ' + (mks.length > 4 ? mks.slice(0, 4).join(', ') + ' and ' + (mks.length - 4) + ' more' : mks.join(', ')),
@@ -159,12 +168,12 @@ function devCard(ix, dv) {
 export async function handle(req, u, env, ctx) {
   const m = u.pathname.match(PATHS); if (!m) return null;
   let ix; try { ix = await data(env); } catch (e) { return new Response('data unavailable', { status: 503, headers: { 'cache-control': 'no-store' } }); }
-  const ent = m[1] === 'projects' ? ix.bySlug.get(m[2]) : ix.devs.get(m[2]);
+  const ent = m[1] === 'type' ? (OG_KINDS.includes(m[2]) ? m[2] : null) : m[1] === 'projects' ? ix.bySlug.get(m[2]) : ix.devs.get(m[2]);
   if (!ent) return new Response('not found', { status: 404, headers: { 'content-type': 'text/plain', 'cache-control': 'public, max-age=3600' } });
   const key = new Request('https://kolaboro.com/__og/' + V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.updated || '')) + u.pathname);
   const hdr = { 'content-type': 'image/png', 'cache-control': 'public, max-age=86400, stale-while-revalidate=604800', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   try { const hit = await caches.default.match(key); if (hit) return new Response(hit.body, { headers: Object.assign({ 'x-og-cache': 'hit' }, hdr) }); } catch (e) {}
-  const bytes = await draw(m[1] === 'projects' ? projectCard(ix, ent) : devCard(ix, ent));
+  const bytes = await draw(m[1] === 'type' ? typeCard(ix, ent) : m[1] === 'projects' ? projectCard(ix, ent) : devCard(ix, ent));
   let perr = '';
   try { await caches.default.put(key, new Response(bytes.slice(0), { headers: { 'content-type': 'image/png', 'cache-control': 'public, max-age=604800' } })); } catch (e) { perr = String(e && e.message || e).slice(0, 120); }
   return new Response(req.method === 'HEAD' ? null : bytes, { headers: Object.assign({ 'x-og-cache': perr ? 'miss; put failed: ' + perr.replace(/[^\x20-\x7e]/g, '') : 'miss', 'content-length': String(bytes.length) }, hdr) });

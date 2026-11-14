@@ -27,6 +27,7 @@ import { data as namedData, handoverOf, fd, esc, pre, lastmod, okHttp, host, rev
 import { trData } from './kbx_tr.js';
 import { mkName, placeName, coName, hyear, hkey } from './kbx_hdate.js';
 import { FS } from './kbx_facets_i18n.js';
+import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -584,7 +585,7 @@ export async function page(req, u, env, ctx, shell) {
   const sh = await shell(pre(lang) + '/how-we-score/');
   const url = PUB(lang, pg.path), alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + PUB(l, pg.path) + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
   const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og.png"><meta name="twitter:card" content="summary_large_image">' +
+    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ogImg(url) + '"><meta name="twitter:card" content="summary_large_image">' +
     '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': pg.ld }).replace(/</g, '\\u003c') + '</script>' + CSS;
   const res = new HTMLRewriter()
     .on('html', { element(e) { e.setAttribute('lang', lang); if (lang === 'ar') e.setAttribute('dir', 'rtl'); else e.removeAttribute('dir'); } })

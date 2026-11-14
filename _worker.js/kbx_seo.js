@@ -18,6 +18,7 @@ import * as KB from './kolaboro.js';
 import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';
 import { BUY_PLACES, PL as BUY_PL } from './kbx_buy_i18n.js';   // batch 27 (n27c): step-by-step buying guides per place
 import { placesForCountry } from './kbx_tr_places.js';   // batch 23 (n23): links to the transparency rankings of a country's islands and cities   // batch 15 (s15b): date of the last real data change per project
+import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 const { openData } = KB;
 
 const SITE = 'https://kolaboro.com';
@@ -161,15 +162,27 @@ function tableWrap(head, rows) {   // d12b: each cell carries its column name (d
   const L = head.map(h => String(h).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;'));
   const R = rows.map(r => { let i = 0; return r.replace(/<td(\s[^>]*)?>/g, (m, a) => '<td' + (a || '') + ' data-l="' + (L[i++] || '') + '">'); });
   return '<div class="sx-tw"><table class="ptable"><thead><tr>' + head.map(h => '<th scope="col">' + h + '</th>').join('') + '</tr></thead><tbody>' + R.join('') + '</tbody></table></div>'; }
+// n29t (item 40): a list page (CollectionPage) without an ItemList gets one, built from the rows it shows: the first link of each
+// table row, or else the links of its lists. Up to 100 items, in page order, so the structured data says what the page lists.
+const unesc = t => String(t).replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+function listLd(body) {
+  let m = [...String(body).matchAll(/<tr><td[^>]*><a href="(\/[^"#]*)">([\s\S]*?)<\/a>/g)];
+  if (m.length < 2) m = [...String(body).matchAll(/<li><a href="(\/[^"#]*)">([\s\S]*?)<\/a>/g)];
+  const seen = new Set(), it = []; for (const x of m) { if (seen.has(x[1])) continue; seen.add(x[1]); it.push({ '@type': 'ListItem', position: it.length + 1, name: unesc(x[2]).trim(), url: SITE + x[1] }); if (it.length >= 100) break; }
+  return it.length >= 2 ? { '@type': 'ItemList', numberOfItems: it.length, itemListElement: it } : null;
+}
 function render(P) {
   const canon = SITE + P.path;
+  if ((P.type || '') === 'CollectionPage' && !(P.pageLd && P.pageLd.mainEntity) && !(P.ld || []).some(x => x && x['@type'] === 'ItemList')) { const il = listLd(P.body); if (il) P.pageLd = Object.assign({}, P.pageLd || {}, { mainEntity: il }); }
+  if (P.title && P.title.length > 60) P.title = P.title.replace(/ \| Kolaboro( engineering)?$/, '');   // n29t (item 46): titles of hubs and rankings fit in 60 characters where the brand suffix is what overflows
   const ld = { '@context': 'https://schema.org', '@graph': [Object.assign({ '@type': P.type || 'WebPage', '@id': canon + '#page', url: canon, name: P.h1 || P.title, description: P.desc, inLanguage: 'en', dateModified: (HLM && HLM.get(P.path)) || P.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: SITE + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' } }, P.pageLd || {}), crumbLd(P.crumbs)].concat(P.ld || []) };
   const head = '<title>' + esc(P.title) + '</title><meta name="description" content="' + esc(P.desc) + '"><link rel="canonical" href="' + canon + '">' +
     (P.noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"><link rel="alternate" hreflang="en" href="' + canon + '"><link rel="alternate" hreflang="x-default" href="' + canon + '">') +
     '<meta property="og:title" content="' + esc(P.title) + '"><meta property="og:description" content="' + esc(P.desc) + '"><meta property="og:url" content="' + canon + '"><meta name="twitter:title" content="' + esc(P.title) + '"><meta name="twitter:description" content="' + esc(P.desc) + '">' +
+    (P.feed ? '<link rel="alternate" type="application/rss+xml" title="' + esc(P.feed[0]) + '" href="' + esc(P.feed[1]) + '">' : '') +   // n29t (item 48): the place's own change feed
     '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
   const main = '<section class="phero"><div class="wrap">' + crumbs(P.crumbs) + '<h1>' + esc(P.h1 || P.title) + '</h1>' + (P.lead ? '<p class="lead">' + P.lead + '</p>' : '') + '</div></section><section class="sec sx"><div class="wrap">' + P.body + '</div></section>';
-  return { head, main, status: P.status || 200 };
+  return { head, main, status: P.status || 200, og: ogImg(P.path) };
 }
 async function shellOut(shell, R, cacheHdr) {
   const s = await shell('/glossary/');
@@ -177,7 +190,7 @@ async function shellOut(shell, R, cacheHdr) {
     .on('title', { element(e) { e.remove(); } })
     .on('meta[name="description"],meta[name="robots"],link[rel="canonical"],meta[property="og:title"],meta[property="og:description"],meta[property="og:url"],meta[name="twitter:title"],meta[name="twitter:description"],meta[name="twitter:image"],meta[property="og:image"],meta[property="og:image:width"],meta[property="og:image:height"],script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append(R.head + '<meta property="og:image" content="' + SITE + '/k/og.png"><meta name="twitter:image" content="' + SITE + '/k/og.png">', { html: true }); } })
+    .on('head', { element(e) { e.append(R.head + '<meta property="og:image" content="' + (R.og || SITE + '/og.png') + '"><meta name="twitter:image" content="' + (R.og || SITE + '/og.png') + '">', { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(R.main, { html: true }); } })
     .transform(s);
   const h = new Headers(res.headers); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag'); if (cacheHdr) h.set('cache-control', cacheHdr);
@@ -240,7 +253,7 @@ function pCountry(B, x) {
   if (regs.length) faq.push(['Which official registers can I use to check a project in ' + C + '?', regs.flatMap(r => r.items.map(i => i.name)).slice(0, 6).join('; ') + '.']);
   body += faqHtml(faq);
   body += h2('related', 'Related') + '<ul class="sx-chips">' + related(B, x).map(o => '<li><a href="/countries/' + o.s + '/">' + esc(o.c) + '</a></li>').join('') + '<li><a href="/countries/">All countries</a></li></ul>' + REPLY;
-  return render({ path: '/countries/' + S + '/', title: 'Off-plan projects in ' + C + ': ' + n + ' checked, permits, delays, registers | Kolaboro', h1: 'Off-plan projects in ' + C, lead: 'Facts from ' + n + ' tracked project' + (n === 1 ? '' : 's') + ': what developers publish, what registers confirm, and how late handovers are.', desc: n + ' off-plan projects in ' + C + ' checked: ' + pct(st.pub.permit, n) + '% publish a permit number, ' + pct(st.pub.escrow, n) + '% deposit protection, ' + lates.length + ' past the first handover date. Data of ' + longDate(up) + '.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Countries', '/countries/'], [C, '/countries/' + S + '/']], body,
+  return render({ path: '/countries/' + S + '/', title: 'Off-plan projects in ' + C + ': ' + n + ' checked, permits, delays, registers | Kolaboro', h1: 'Off-plan projects in ' + C, lead: 'Facts from ' + n + ' tracked project' + (n === 1 ? '' : 's') + ': what developers publish, what registers confirm, and how late handovers are.', desc: n + ' off-plan projects in ' + C + ' checked: ' + pct(st.pub.permit, n) + '% publish a permit number, ' + pct(st.pub.escrow, n) + '% deposit protection, ' + lates.length + ' past the first handover date. Data of ' + longDate(up) + '.', updated: up, type: 'CollectionPage', feed: ['Kolaboro: ' + C, '/feed.xml?market=' + encodeURIComponent(C)], crumbs: [['Kolaboro', '/'], ['Countries', '/countries/'], [C, '/countries/' + S + '/']], body,
     pageLd: { about: { '@type': 'Country', name: C }, mainEntity: { '@type': 'ItemList', numberOfItems: n, itemListElement: L.slice(0, 100).map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: pname(B, c), url: SITE + plink(B, c) })) } }, ld: [faqLd(faq)] });
 }
 function related(B, x) {   // countries sharing a register region or, failing that, of similar size
@@ -315,7 +328,7 @@ function pDelayed(B, market) {
   body += h2('markets', 'By market') + '<ul class="sx-chips">' + (market ? '<li><a href="/rankings/most-delayed/">All markets</a></li>' : '') + mw.filter(([m]) => m !== market).map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">' + esc(m) + ' (' + n + ')</a></li>').join('') + '</ul>' + REPLY;
   const path = market ? '/rankings/most-delayed/' + slug(market) + '/' : '/rankings/most-delayed/';
   const cr = [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Most delayed', '/rankings/most-delayed/']]; if (market) cr.push([market, path]);
-  return render({ path, title: 'Most delayed off-plan projects' + (market ? ' in ' + market : '') + ': ' + L.length + ' past the first handover date | Kolaboro', h1: 'Most delayed off-plan projects' + (market ? ' in ' + market : ''), lead: 'Projects furthest past the first handover date on record, from advertised dates we track every day.', desc: L.length + ' off-plan projects' + (market ? ' in ' + market : '') + ' are past the first handover date on record' + (L.length ? ', up to ' + L[0].lm.late + ' months' : '') + '. Dates, sources and method. Data of ' + longDate(up) + '.', updated: up, type: 'CollectionPage', crumbs: cr, body,
+  return render({ path, title: 'Most delayed off-plan projects' + (market ? ' in ' + market : '') + ': ' + L.length + ' past handover date | Kolaboro', h1: 'Most delayed off-plan projects' + (market ? ' in ' + market : ''), lead: 'Projects furthest past the first handover date on record, from advertised dates we track every day.', desc: L.length + ' off-plan projects' + (market ? ' in ' + market : '') + ' are past the first handover date on record' + (L.length ? ', up to ' + L[0].lm.late + ' months' : '') + '. Dates, sources and method. Data of ' + longDate(up) + '.', updated: up, type: 'CollectionPage', crumbs: cr, body,
     pageLd: { mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListOrder: 'https://schema.org/ItemListOrderDescending', itemListElement: L.slice(0, 50).map((o, i) => ({ '@type': 'ListItem', position: i + 1, name: pname(B, o.c), url: SITE + plink(B, o.c) })) } } });
 }
 function pChanged(B) {
@@ -326,9 +339,11 @@ function pChanged(B) {
   if (B.N.projects.size) { const m = new Map(); for (const o of rows) { const e = B.N.projects.get(o.c.id); if (!e || !e.developer) continue; const k = e.developer; const v = m.get(k) || { name: k, url: e.developer_url, projects: 0, changes: 0, mm: 0 }; v.projects++; v.changes += o.n; v.mm += o.mm; m.set(k, v); } devs = [...m.values()].sort((a, b) => b.changes - a.changes || b.mm - a.mm).slice(0, 30); }
   let body = '<div class="sx-sum" id="summary"><p><b>' + rows.length + ' tracked off-plan projects changed what their own pages promise</b> since we started keeping daily copies on ' + longDate(B.drift.first_day) + ' (' + B.drift.counts.changes + ' changes found in ' + B.drift.counts.projects + ' projects read daily), or moved a dated promise such as the handover.</p><p>A change is a difference between two dated copies of the developer page, each fingerprinted with SHA-256; it can be a correction, an update or a new promise. Fields read: ' + B.drift.fields.join(', ') + '.</p></div>';
   if (devs.length) body += h2('developers', 'Developers with the most changed promises') + tableWrap(['Developer', 'Projects with changes', 'Changes on their pages', 'Months handover dates moved'], devs.map(v => '<tr><td>' + (v.url ? '<a href="' + esc(v.url.replace(SITE, '')) + '">' + esc(v.name) + '</a>' : esc(v.name)) + '</td><td>' + v.projects + '</td><td>' + v.changes + '</td><td>' + v.mm + '</td></tr>'));
-  body += h2('projects', 'Projects with the most changes') + tableWrap(['Project', 'Market', 'Changes on the page', 'What changed', 'Months handover dates moved'], rows.slice(0, 150).map(o => '<tr><td><a href="' + plink(B, o.c) + '">' + esc(pname(B, o.c)) + '</a></td><td>' + esc(o.c.market) + '</td><td>' + o.n + '</td><td>' + esc(o.f.join(', ') || 'dated promise moved') + '</td><td>' + o.mm + '</td></tr>'));
+  const cpRow = o => '<tr><td><a href="' + plink(B, o.c) + '">' + esc(pname(B, o.c)) + '</a></td><td>' + esc(o.c.market) + '</td><td>' + o.n + '</td><td>' + esc(o.f.join(', ') || 'dated promise moved') + '</td><td>' + o.mm + '</td></tr>', CPH = ['Project', 'Market', 'Changes on the page', 'What changed', 'Months handover dates moved'];
+  // n29t (item 38): every project of the ranking is linked from it (before, rows past 150 were cut); the rest sit in a folded table
+  body += h2('projects', 'Projects with the most changes') + tableWrap(CPH, rows.slice(0, 150).map(cpRow)) + (rows.length > 150 ? '<details><summary>' + (rows.length - 150) + ' more projects with changes (' + 151 + ' to ' + rows.length + ')</summary>' + tableWrap(CPH, rows.slice(150).map(cpRow)) + '</details>' : '');
   body += '<p class="sx-src">Sources: <a href="/data/promise-drift.json">/data/promise-drift.json</a> (daily page copies), <a href="/data/promises.json">/data/promises.json</a> (dated promises, each an exact quote). See <a href="/promises/">the promise tracker</a>.</p>' + REPLY;
-  return render({ path: '/rankings/changed-promises/', title: 'Off-plan developers and projects with the most changed promises | Kolaboro', h1: 'Most changed off-plan promises', lead: 'What developers changed on their own pages, found by comparing dated copies we keep every day.', desc: rows.length + ' off-plan projects changed advertised promises (handover date, price, permit, guaranteed returns) since ' + longDate(B.drift.first_day) + '. Dated copies, SHA-256 fingerprints.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Changed promises', '/rankings/changed-promises/']], body });
+  return render({ path: '/rankings/changed-promises/', title: 'Most changed promises: off-plan developers and projects', h1: 'Most changed off-plan promises', lead: 'What developers changed on their own pages, found by comparing dated copies we keep every day.', desc: rows.length + ' off-plan projects changed advertised promises (handover date, price, permit, guaranteed returns) since ' + longDate(B.drift.first_day) + '. Dated copies, SHA-256 fingerprints.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Changed promises', '/rankings/changed-promises/']], body });
 }
 function addedDates(B) {   // first day a project appears in our daily page copies or dated promises; undefined = added after those files were built
   const P = (B.drift && B.drift.projects) || {}, PR = (B.promises && B.promises.projects) || {}, out = new Map();
@@ -374,7 +389,7 @@ function pVs(B, key) {
 function pRankings(B) {
   const mw = marketsWithDelays(B);
   const body = '<ul class="sx-l"><li><a href="/rankings/most-delayed/">Most delayed off-plan projects</a>: past the first handover date on record, all markets</li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + '<li><a href="/rankings/changed-promises/">Most changed promises</a>: what developers changed on their own pages</li><li><a href="/new/">New this month</a></li><li><a href="/rankings/transparency/">Transparency rankings: 30 islands and 30 cities</a>: every project scored 0 to 100 on what is published and checkable</li><li><a href="/transparency-index/">Transparency index by market</a></li><li><a href="/vs/">Project comparisons</a></li><li><a href="/handover/">Projects by handover year and place</a>: with the delay index by place</li><li><a href="/areas/">Projects by neighbourhood</a></li></ul>';
-  return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency | Kolaboro', h1: 'Off-plan rankings', desc: 'Data-driven lists of off-plan projects: most delayed by market, most changed promises, new projects, transparency by market.', updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
+  return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency', h1: 'Off-plan rankings', desc: 'Data-driven lists of off-plan projects: most delayed by market, most changed promises, new projects, transparency by market.', updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
 }
 
 // ---------- citeable monthly report: one frozen permalink per month from the delay index history ----------
@@ -433,7 +448,7 @@ function pWidgets(B) {
   if (ex) body += h2('project', 'Fact card for one project') + ifr('/embed/project/' + ex.id.toLowerCase() + '/', 330, 'Kolaboro project facts') + code(ifr('/embed/project/' + ex.id.toLowerCase() + '/', 330, 'Kolaboro project facts') + '\n<p><a href="' + SITE + plink(B, ex) + '">' + pname(B, ex) + ' on Kolaboro: facts and sources</a></p>') + '<p>Replace the id with any project id from <a href="/database/">the database</a>.</p>';
   body += h2('stories', 'Monthly data stories and change log') + '<ul class="sx-l"><li><a href="/stories/">Market data stories</a>: each month, per market, the delay index, permits published and advertised vs registered prices, with a CSV and a citation line</li><li><a href="/changes/">What changed this month</a>: changes found on developer pages, from dated copies (also as an <a href="/changes/feed.atom">Atom feed</a>)</li>' + (ex && B.N.projects.get(ex.id) ? '<li>Per-project <a href="/embed/card/' + esc(B.N.projects.get(ex.id).loc.replace(SITE + '/projects/', '').replace(/\/$/, '')) + '/">fact card</a> and delivery tracker embeds in 8 languages</li>' : '') + '</ul>';
   body += h2('more', 'More for the press') + '<ul class="sx-l"><li><a href="/press/data/">Data desk</a>: quotable facts, PNG and CSV charts</li><li><a href="/press/monthly/">Monthly off-plan data release</a></li><li><a href="/index/delays/">Delivery-delay index</a></li><li><a href="/embed/">Transparency index widget</a></li></ul>';
-  return render({ path: '/embed/widgets/', title: 'Embeddable off-plan data widgets: delay index and project fact cards | Kolaboro', h1: 'Embed Kolaboro data', desc: 'Free embeddable cards: off-plan delivery-delay index per market and project fact cards, live from the open dataset, CC BY 4.0.', updated: B.d.updated, crumbs: [['Kolaboro', '/'], ['Press', '/press/'], ['Widgets', '/embed/widgets/']], body });
+  return render({ path: '/embed/widgets/', title: 'Embeddable off-plan data widgets: delay index, fact cards', h1: 'Embed Kolaboro data', desc: 'Free embeddable cards: off-plan delivery-delay index per market and project fact cards, live from the open dataset, CC BY 4.0.', updated: B.d.updated, crumbs: [['Kolaboro', '/'], ['Press', '/press/'], ['Widgets', '/embed/widgets/']], body });
 }
 
 // ---------- sitemaps ----------
@@ -494,6 +509,7 @@ function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with 
   for (const [b, g] of byBase) { const alt = g.length > 1 ? g.map(e => [e.l, e.loc]).concat([['x-default', SITE + b]]) : null; const en = g.find(e => e.l === 'en') || g[0], d = tlm(en, b); for (const e of g) out.push({ loc: e.loc, lastmod: d || (e.lastmod || '').slice(0, 10) || null, alt, id: en.id, base: b }); }
   return out;
 }
+const EXT_MAPS = ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml', '/guides/buying-off-plan/sitemap.xml', '/reports/sitemap.xml', '/m/sitemap.xml'];
 async function sitemaps(env, B, name) {
   const audit = await file(env, '/data/seo-audit.json');
   const pages = await staticPages(env, audit), hubs = await hubUrls(B), up = B.d.updated;
@@ -513,7 +529,7 @@ async function sitemaps(env, B, name) {
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
     // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
-    for (const x of ['/stories/sitemap.xml', '/rankings/transparency/sitemap.xml', '/progress/sitemap.xml', '/handover/sitemap.xml', '/weekly/sitemap.xml', '/guides/buying-off-plan/sitemap.xml', '/reports/sitemap.xml', '/m/sitemap.xml']) {   // n29i: translated market files;   // n29h1: + place data pages (kbx_h29.js)
+    for (const x of EXT_MAPS) {   // n29i: translated market files;   // n29h1: + place data pages (kbx_h29.js)
         // n27e: + weekly changes per place;   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
       // n27g: listed always. The check by fetching each one (up to 5,000 URLs to build) did not finish inside this request, so since
       // batch 26 none of the four reached the index; a lastmod read on an earlier request is used when we have one, else the data date
@@ -567,10 +583,16 @@ async function pSeo(env, B) {
   const audit = await file(env, '/data/seo-audit.json'), cnt = await sitemaps(env, B, 'stats'), lh = await file(env, '/data/lighthouse.json'), inow = await file(env, '/data/indexnow.json'), daily = await file(env, '/data/seo-daily.json');
   const total = Object.values(cnt).reduce((a, b) => a + b, 0);
   let body = '<div class="sx-sum" id="summary"><p><b>' + fmt(total) + ' URLs are listed in our sitemaps right now</b> (computed live from <a href="/sitemap_index.xml">/sitemap_index.xml</a>). ' + (audit ? 'Last crawl ' + esc(audit.generated_at) + ': ' + fmt(audit.summary.crawled) + ' URLs fetched' + (audit.summary.in_sitemaps ? ' of ' + fmt(audit.summary.in_sitemaps) + ' listed (translated project and developer pages are sampled)' : '') + ', ' + fmt(audit.summary.indexable) + ' indexable, ' + fmt(audit.summary.schema_valid_pages) + ' with valid structured data' + (audit.indexable_estimate_all ? '; about ' + fmt(audit.indexable_estimate_all) + ' indexable across all listed URLs at the sample pass rate' : '') + '.' : 'The first crawl result is not published yet.') + '</p><p>Search Console and Bing Webmaster figures (clicks, impressions, index coverage) will appear here once the site owner connects them; we do not estimate them.</p></div>';
-  body += h2('sitemaps', 'Sitemap coverage') + tableWrap(['Sitemap', 'URLs'], Object.entries(cnt).map(([k, v]) => '<tr><td>' + (v ? '<a href="/sitemaps/' + k + '.xml">' + k + '</a>' : k) + '</td><td>' + v + '</td></tr>'));
+  const extN = await Promise.all(EXT_MAPS.map(async x => { const m = MEMO['__ext' + x]; if (m && m.v) return [x, m.v]; if (!B.inner) return [x, null];
+    try { const v = await Promise.race([B.inner(x).then(r => r && r.ok ? r.text() : '').then(t => t ? { n: (t.match(/<url>/g) || []).length, last: null } : null), new Promise(r => setTimeout(() => r(null), 2500))]); return [x, v]; } catch (e) { return [x, null]; } }));   // n29t (item 50): the sitemaps other modules publish, with their URL counts when read
+  body += h2('sitemaps', 'Sitemap coverage') + tableWrap(['Sitemap', 'URLs'], Object.entries(cnt).map(([k, v]) => '<tr><td>' + (v ? '<a href="/sitemaps/' + k + '.xml">' + k + '</a>' : k) + '</td><td>' + v + '</td></tr>').concat(extN.map(([x, v]) => '<tr><td><a href="' + x + '">' + x.replace(/^\//, '').replace(/\/sitemap\.xml$/, '') + '</a></td><td>' + (v && v.n != null ? v.n : 'not read yet') + '</td></tr>')));
   if (audit) {
     const s = audit.summary;
     body += h2('crawl', 'Crawl audit') + '<p class="muted">Crawler: tools/kolaboro-seo/audit.py on main (user agent KolaboroSEOAudit/1.0). It fetches every sitemap URL with GET and HEAD and checks status codes, canonicals, hreflang reciprocity and JSON-LD.</p><div class="sx-kv">' + [['crawled', 'URLs crawled'], ['ok_200', 'answered 200'], ['indexable', 'indexable (200, self-canonical, not noindex)'], ['schema_valid_pages', 'pages with valid JSON-LD'], ['schema_errors', 'JSON-LD errors'], ['head_mismatch', 'HEAD differs from GET'], ['canonical_mismatch', 'canonical points elsewhere'], ['hreflang_errors', 'hreflang errors'], ['redirects', 'sitemap URLs that redirect'], ['errors_4xx_5xx', '4xx or 5xx'], ['image_sitemap_images', 'images in the image sitemap'], ['image_errors', 'image sitemap errors'], ['lastmod_future', 'lastmod dates in the future']].filter(([k]) => s[k] != null).map(([k, t]) => '<div><b>' + fmt(s[k]) + '</b><span>' + t + '</span></div>').join('') + '</div>';
+    // n29t (items 50, 36): coverage per sitemap (listed, crawled, 200, indexable, canonical elsewhere, noindex) and the orphan check
+    if (audit.coverage) body += '<h3 id="coverage">Coverage by sitemap</h3>' + tableWrap(['Sitemap', 'Listed', 'Crawled', 'Answered 200', 'Indexable', 'Canonical elsewhere', 'Noindex', 'Not 200'], Object.entries(audit.coverage).map(([k, c]) => '<tr><td>' + esc(k) + '</td><td>' + fmt(c.listed) + '</td><td>' + fmt(c.crawled) + '</td><td>' + fmt(c.ok_200) + '</td><td>' + fmt(c.indexable) + '</td><td>' + fmt(c.canonical_elsewhere) + '</td><td>' + fmt(c.noindex) + '</td><td>' + fmt(c.not_200) + '</td></tr>')) + '<p class="muted">Translated project and developer sitemaps are sampled, so "crawled" is lower than "listed" there.</p>';
+    if (audit.internal_links) { const il = audit.internal_links; body += '<h3 id="orphans">Orphan pages</h3><p>' + fmt(il.judged) + ' sitemap pages judged: <b>' + fmt(s.orphans || 0) + '</b> that no crawled page links to, ' + fmt(s.weakly_linked || 0) + ' linked from exactly one page. ' + esc(il.method || '') + (il.not_judged && il.not_judged.length ? ' Not judged (sampled): ' + esc(il.not_judged.join(', ')) + '.' : '') + '</p>' + ((il.orphans || []).length ? '<details><summary>Orphan pages (' + fmt(il.orphans.length) + ')</summary><ul class="sx-l">' + il.orphans.slice(0, 200).map(x => '<li><a href="' + esc(x.replace(SITE, '')) + '">' + esc(x.replace(SITE, '')) + '</a></li>').join('') + '</ul></details>' : ''); }
+    else body += '<h3 id="orphans">Orphan pages</h3><p>The weekly crawl counts, for every sitemap page, how many crawled pages link to it; the first run with this check has not been published yet.</p>';
     if ((audit.problems || []).length) body += '<h3>Open problems (first 40)</h3><ul class="sx-l">' + audit.problems.slice(0, 40).map(p => '<li><code>' + esc(p.url.replace(SITE, '')) + '</code>: ' + esc(p.issue) + '</li>').join('') + '</ul>';
     if ((audit.history || []).length) body += '<h3>History</h3>' + tableWrap(['Run', 'Crawled', 'Indexable', 'Valid schema', 'Problems'], audit.history.slice(-14).reverse().map(h => '<tr><td>' + esc(h.at) + '</td><td>' + h.crawled + '</td><td>' + h.indexable + '</td><td>' + h.schema_valid_pages + '</td><td>' + h.problems + '</td></tr>'));
   }
@@ -637,7 +659,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   else if (p === '/vs/') R = pVs(B, null);
   else if ((m = /^\/vs\/([a-z0-9-]+)\/$/.exec(p))) R = pVs(B, m[1]);
   else if (p === '/embed/widgets/') R = pWidgets(B);
-  else if (p === '/engineering/seo/') R = await pSeo(env, B);
+  else if (p === '/engineering/seo/') { B.inner = inner; R = await pSeo(env, B); }
   else if (p === '/press/delivery-index/') R = pDeliveryIndex(B, null);
   else if ((m = /^\/press\/delivery-index\/(\d{4}-\d{2})\/$/.exec(p))) R = pDeliveryIndex(B, m[1]);
   if (!R) return nf();

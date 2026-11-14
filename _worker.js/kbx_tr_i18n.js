@@ -3,7 +3,7 @@
 export const TRS = {
   en: {
     name: 'Transparency score', crumb_r: 'Rankings', crumb_t: 'Transparency',
-    hub_title: 'Transparency rankings of off-plan projects: 30 islands and 30 cities', hub_h1: 'Off-plan transparency rankings: 30 islands and 30 cities',
+    hub_title: 'Off-plan transparency rankings: 30 islands and 30 cities', hub_h1: 'Off-plan transparency rankings: 30 islands and 30 cities',
     hub_desc: 'Off-plan projects in 30 islands and 30 cities scored 0 to 100 on what is published and checkable: permit, handover date and its record, deposit protection, location, website, official lists. Method and data public.',
     hub_lead: 'For each place, every project we track gets a transparency score from 0 to 100, built only from facts we hold with a source. It measures what is published and checkable, not quality, safety or value.',
     islands: 'Islands', cities: 'Cities', c_place: 'Place', c_n: 'Projects', c_med: 'Median score', h_permit: 'Permit published', h_date: 'Handover date published', c_dep: 'Deposit protection stated', c_top: 'Highest score',
@@ -52,7 +52,7 @@ export const TRS = {
   },
   es: {
     name: 'Puntuación de transparencia', crumb_r: 'Rankings', crumb_t: 'Transparencia',
-    hub_title: 'Rankings de transparencia de proyectos sobre plano: 30 islas y 30 ciudades', hub_h1: 'Rankings de transparencia sobre plano: 30 islas y 30 ciudades',
+    hub_title: 'Transparencia sobre plano: ranking de 30 islas y 30 ciudades', hub_h1: 'Rankings de transparencia sobre plano: 30 islas y 30 ciudades',
     hub_desc: 'Proyectos sobre plano en 30 islas y 30 ciudades puntuados de 0 a 100 según lo que está publicado y se puede comprobar: licencia, fecha de entrega y su historial, protección del depósito, ubicación, web, listas oficiales. Método y datos públicos.',
     hub_lead: 'En cada lugar, cada proyecto que seguimos recibe una puntuación de transparencia de 0 a 100, hecha solo con datos que tenemos con fuente. Mide lo que está publicado y se puede comprobar, no la calidad, la seguridad ni el valor.',
     islands: 'Islas', cities: 'Ciudades', c_place: 'Lugar', c_n: 'Proyectos', c_med: 'Puntuación mediana', h_permit: 'Publican licencia', h_date: 'Publican fecha de entrega', c_dep: 'Declaran protección del depósito', c_top: 'Puntuación más alta',
@@ -101,7 +101,7 @@ export const TRS = {
   },
   fr: {
     name: 'Score de transparence', crumb_r: 'Classements', crumb_t: 'Transparence',
-    hub_title: 'Classements de transparence des projets sur plan : 30 îles et 30 villes', hub_h1: 'Classements de transparence sur plan : 30 îles et 30 villes',
+    hub_title: 'Classements de transparence sur plan : 30 îles et 30 villes', hub_h1: 'Classements de transparence sur plan : 30 îles et 30 villes',
     hub_desc: 'Projets sur plan dans 30 îles et 30 villes notés de 0 à 100 selon ce qui est publié et vérifiable : permis, date de livraison et son historique, protection du dépôt, emplacement, site web, listes officielles. Méthode et données publiques.',
     hub_lead: 'Dans chaque lieu, chaque projet que nous suivons reçoit un score de transparence de 0 à 100, construit uniquement à partir de faits sourcés. Il mesure ce qui est publié et vérifiable, pas la qualité, la sécurité ni la valeur.',
     islands: 'Îles', cities: 'Villes', c_place: 'Lieu', c_n: 'Projets', c_med: 'Score médian', h_permit: 'Permis publié', h_date: 'Date de livraison publiée', c_dep: 'Protection du dépôt indiquée', c_top: 'Score le plus haut',
@@ -150,7 +150,7 @@ export const TRS = {
   },
   de: {
     name: 'Transparenzwert', crumb_r: 'Ranglisten', crumb_t: 'Transparenz',
-    hub_title: 'Transparenz-Ranglisten für Off-Plan-Projekte: 30 Inseln und 30 Städte', hub_h1: 'Off-Plan-Transparenz-Ranglisten: 30 Inseln und 30 Städte',
+    hub_title: 'Off-Plan-Transparenz-Ranglisten: 30 Inseln und 30 Städte', hub_h1: 'Off-Plan-Transparenz-Ranglisten: 30 Inseln und 30 Städte',
     hub_desc: 'Off-Plan-Projekte auf 30 Inseln und in 30 Städten, bewertet von 0 bis 100 danach, was veröffentlicht und überprüfbar ist: Genehmigung, Übergabetermin und sein Verlauf, Einlagenschutz, Lage, Website, amtliche Listen. Methode und Daten öffentlich.',
     hub_lead: 'An jedem Ort erhält jedes Projekt, das wir verfolgen, einen Transparenzwert von 0 bis 100, gebildet nur aus Fakten mit Quelle. Er misst, was veröffentlicht und überprüfbar ist, nicht Qualität, Sicherheit oder Wert.',
     islands: 'Inseln', cities: 'Städte', c_place: 'Ort', c_n: 'Projekte', c_med: 'Medianwert', h_permit: 'Genehmigung veröffentlicht', h_date: 'Übergabetermin veröffentlicht', c_dep: 'Einlagenschutz angegeben', c_top: 'Höchster Wert',
@@ -199,7 +199,7 @@ export const TRS = {
   },
   nl: {
     name: 'Transparantiescore', crumb_r: 'Ranglijsten', crumb_t: 'Transparantie',
-    hub_title: 'Transparantieranglijsten van off-planprojecten: 30 eilanden en 30 steden', hub_h1: 'Off-plan transparantieranglijsten: 30 eilanden en 30 steden',
+    hub_title: 'Off-plan transparantieranglijsten: 30 eilanden en 30 steden', hub_h1: 'Off-plan transparantieranglijsten: 30 eilanden en 30 steden',
     hub_desc: 'Off-planprojecten op 30 eilanden en in 30 steden gescoord van 0 tot 100 op wat gepubliceerd en controleerbaar is: vergunning, opleverdatum en de geschiedenis ervan, aanbetalingsbescherming, locatie, website, officiële lijsten. Methode en data openbaar.',
     hub_lead: 'Op elke plek krijgt elk project dat we volgen een transparantiescore van 0 tot 100, alleen opgebouwd uit feiten met een bron. Hij meet wat gepubliceerd en controleerbaar is, niet kwaliteit, veiligheid of waarde.',
     islands: 'Eilanden', cities: 'Steden', c_place: 'Plaats', c_n: 'Projecten', c_med: 'Mediane score', h_permit: 'Vergunning gepubliceerd', h_date: 'Opleverdatum gepubliceerd', c_dep: 'Aanbetalingsbescherming vermeld', c_top: 'Hoogste score',
@@ -297,7 +297,7 @@ export const TRS = {
   },
   zh: {
     name: '透明度评分', crumb_r: '排名', crumb_t: '透明度',
-    hub_title: '期房项目透明度排名：30 个岛屿和 30 个城市', hub_h1: '期房透明度排名：30 个岛屿和 30 个城市',
+    hub_title: '期房透明度排名：30 个岛屿和 30 个城市', hub_h1: '期房透明度排名：30 个岛屿和 30 个城市',
     hub_desc: '30 个岛屿和 30 个城市的期房项目，按公开且可核实的内容评分 0 至 100：许可证、交付日期及其记录、定金保护、位置、网站、官方名单。方法和数据公开。',
     hub_lead: '在每个地方，我们跟踪的每个项目都有 0 至 100 的透明度评分，只用有来源的事实计算。它衡量公开且可核实的内容，而不是质量、安全或价值。',
     islands: '岛屿', cities: '城市', c_place: '地点', c_n: '项目', c_med: '评分中位数', h_permit: '公布许可证', h_date: '公布交付日期', c_dep: '说明定金保护', c_top: '最高评分',
@@ -346,7 +346,7 @@ export const TRS = {
   },
   ar: {
     name: 'درجة الشفافية', crumb_r: 'التصنيفات', crumb_t: 'الشفافية',
-    hub_title: 'تصنيفات الشفافية لمشاريع البيع على الخارطة: 30 جزيرة و30 مدينة', hub_h1: 'تصنيفات الشفافية للبيع على الخارطة: 30 جزيرة و30 مدينة',
+    hub_title: 'تصنيفات الشفافية للبيع على الخارطة: 30 جزيرة و30 مدينة', hub_h1: 'تصنيفات الشفافية للبيع على الخارطة: 30 جزيرة و30 مدينة',
     hub_desc: 'مشاريع على الخارطة في 30 جزيرة و30 مدينة بدرجة من 0 إلى 100 وفق ما هو منشور وقابل للتحقق: الترخيص، وموعد التسليم وسجله، وحماية الدفعة، والموقع، والموقع الإلكتروني، والقوائم الرسمية. المنهجية والبيانات علنية.',
     hub_lead: 'في كل مكان، يحصل كل مشروع نتابعه على درجة شفافية من 0 إلى 100، مبنية فقط على وقائع لدينا مصدرها. تقيس ما هو منشور وقابل للتحقق، لا الجودة ولا الأمان ولا القيمة.',
     islands: 'الجزر', cities: 'المدن', c_place: 'المكان', c_n: 'المشاريع', c_med: 'الدرجة الوسيطة', h_permit: 'نشر الترخيص', h_date: 'نشر موعد التسليم', c_dep: 'ذكر حماية الدفعة', c_top: 'أعلى درجة',

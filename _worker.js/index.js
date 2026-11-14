@@ -38,7 +38,7 @@ let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
 const KXR_V = 'n22e1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
-let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
+let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers|type)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
 let kpp = null; const KPP = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo\/?$/;   // n17d: permit photo reader (keep equal to PATHS in kbx_pp.js)
 let kca = null; const KCA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum\/?$/;   // n18d: contract addendum builder (keep equal to TOOL_RX in kbx_paper.js)
@@ -218,18 +218,57 @@ async function kbLd(r, u, env) {
   if (r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '') || u.pathname === '/' || /^\/(admin|portal|login|agents\/me|shared|saved|watchlist|reset|confirm-email|thanks)(\/|$)/.test(u.pathname)) return r;
   const segs = u.pathname.split('/').filter(Boolean), canon = 'https://kolaboro.com/' + segs.join('/') + (segs.length ? '/' : ''), crumbs = [['Kolaboro', 'https://kolaboro.com/']];
   for (let i = 1; i < segs.length; i++) { const p = '/' + segs.slice(0, i).join('/') + '/'; if (await kbParent(env, p)) crumbs.push([KB_LN[segs[i - 1]] || segs[i - 1].replace(/-/g, ' ').replace(/^./, c => c.toUpperCase()), 'https://kolaboro.com' + p]); }
-  let title = '', ld = '', nonce = kbNonce(r);
+  let title = '', ld = '', nonce = kbNonce(r), need = false, name = '', vis = [], cur = null, crumbDone = false;
+  const tag = g => '<script' + nonce + ' type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': g }).replace(/</g, '\\u003c') + '</script>';
+  const bc = list => ({ '@type': 'BreadcrumbList', itemListElement: list.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) });
+  const ent = t => String(t).replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  // n29t (item 53): the BreadcrumbList follows the breadcrumb the page shows (its first p.crumb: the linked steps, then the page itself),
+  // so the data and the visible path are the same; pages without a visible breadcrumb keep the path-based list. Written at the end of
+  // <body> once the visible breadcrumb has been read (JSON-LD is valid anywhere in the document).
   return new HTMLRewriter()
     .on('head title', { text(t) { title += t.text; } })
     .on('head script[type="application/ld+json"]', { text(t) { ld += t.text || ' '; } })
     .on('head', { element(e) { e.onEndTag(end => {
       if (/BreadcrumbList/.test(ld)) return;
-      const name = title.replace(/\s*\|\s*Kolaboro.*$/, '').replace(/&amp;/g, '&').trim() || segs[segs.length - 1];
-      const g = [{ '@type': 'BreadcrumbList', itemListElement: crumbs.concat([[name, canon]]).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }];
-      if (!ld.trim()) g.unshift({ '@type': 'WebPage', '@id': canon + '#page', url: canon, name, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: 'https://kolaboro.com/' } });
-      end.before('<script' + nonce + ' type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': g }).replace(/</g, '\\u003c') + '</script>', { html: true });
+      need = true; name = ent(title.replace(/\s*\|\s*Kolaboro.*$/, '')) || segs[segs.length - 1];
+      if (!ld.trim()) end.before(tag([{ '@type': 'WebPage', '@id': canon + '#page', url: canon, name, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: 'https://kolaboro.com/' } }]), { html: true });
+    }); } })
+    .on('p.crumb', { element(e) { if (crumbDone || !need) return; e.onEndTag(() => { crumbDone = true; }); } })
+    .on('p.crumb a', { element(e) { if (crumbDone || !need) return; const h = e.getAttribute('href') || ''; if (/^\/[^/]/.test(h) || h === '/') { cur = [ '', 'https://kolaboro.com' + h.split('#')[0] ]; vis.push(cur); } else cur = null; }, text(t) { if (cur && !crumbDone) cur[0] += t.text; } })
+    .on('body', { element(e) { e.onEndTag(end => {
+      if (!need) return;
+      const v = vis.map(x => [ent(x[0]), x[1]]).filter(x => x[0] && x[1] !== canon);
+      end.before(tag([bc((v.length ? v : crumbs).concat([[name, canon]]))]), { html: true });
     }); } })
     .transform(r);
+}
+// n29t (item 49): lowercase, single-slash form of a page URL typed with capitals or "//", or null when the URL is already right or
+// belongs to a section whose URLs keep capitals or are files (ids such as /p/DXB-009/, /embed/project/<ID>/, /api/, /k/, /data/ ...)
+const KB_CASE_KEEP = new Set(['p', 'k', 'data', 'embed', 'api', 'mcp', 'og', 'assets', '__l5e', '__k', '__sb', 'fonts', 'brand', 'social', 'sdk', 'r', 'x', '.well-known', 'answers', 'cdn-cgi', 'sat']);
+function kbCaseFix(u) {
+  const p = u.pathname; if (!/[A-Z]|\/\//.test(p.replace(/%[0-9A-Fa-f]{2}/g, ''))) return null;
+  let q = p.replace(/\/{2,}/g, '/');
+  const s = q.split('/'), i = /^(es|de|fr|nl|ru|zh|ar)$/i.test(s[1] || '') ? 2 : 1, last = s[s.length - 1] || '';
+  if (KB_CASE_KEEP.has(String(s[i] || '').toLowerCase()) || /\.[A-Za-z0-9]{1,5}$/.test(last)) q = i === 2 && /[A-Z]/.test(s[1]) ? '/' + s[1].toLowerCase() + p.slice(s[1].length + 1) : p;
+  else q = q.replace(/%[0-9A-Fa-f]{2}|[^%]+/g, m => m[0] === '%' ? m : m.toLowerCase());
+  return q !== p ? q + u.search : null;
+}
+// n29t (item 44): conditional requests for search and answer engine crawlers. The HTML carries a fresh script nonce per response, so
+// the ETag is a hash of the page with the nonces taken out: same page content, same tag. A crawler that sends it back in If-None-Match
+// gets a 304 without a body, so it can spend its crawl on pages that changed. The 304 carries no CSP header: a cache keeps the stored
+// policy, whose nonce matches the stored body. Browsers are left alone (their pages keep streaming; Lighthouse is not affected).
+const KB_BOT_UA = /Googlebot|bingbot|Applebot|DuckDuckBot|YandexBot|Baiduspider|GPTBot|OAI-SearchBot|ClaudeBot|Claude-SearchBot|PerplexityBot|CCBot|Amazonbot|SeznamBot|Yeti|NaverBot|PetalBot|Qwantbot|MojeekBot|KolaboroSEOAudit/i;
+async function kbCond(req, r) {
+  if (r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '') || /no-store/.test(r.headers.get('cache-control') || '')) return r;
+  const t = await r.text(), norm = t.replace(/ nonce="[A-Za-z0-9+/=]*"/g, '').replace(/'nonce-[A-Za-z0-9+/=]*'/g, '');
+  const d = new Uint8Array(await crypto.subtle.digest('SHA-1', new TextEncoder().encode(norm))), tag = 'W/"' + [...d.slice(0, 10)].map(x => x.toString(16).padStart(2, '0')).join('') + '"';
+  const h = new Headers(r.headers); h.set('etag', tag); h.delete('content-length');
+  const inm = req.headers.get('if-none-match');
+  if (inm && inm.split(',').some(x => { x = x.trim(); return x === '*' || x.replace(/^W\//, '') === tag.replace(/^W\//, ''); })) {
+    const h3 = new Headers(); for (const k of ['etag', 'last-modified', 'cache-control', 'vary', 'date', 'x-robots-tag']) if (h.get(k)) h3.set(k, h.get(k));
+    return new Response(null, { status: 304, headers: h3 });
+  }
+  return new Response(t, { status: 200, statusText: r.statusText, headers: h });
 }
 // scripts added after kbHeaders (HTMLRewriter append) carry the same nonce as the response's CSP header
 const kbNonce = r => { const m = ((r.headers.get('content-security-policy-report-only') || '') + ' ' + (r.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/); return m ? ' nonce="' + m[1] + '"' : ''; };
@@ -316,7 +355,10 @@ export default {
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
     let r = await this.fetch0(req, env, ctx);
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (!u0.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|rankings\/transparency|handover|handover\/overdue|developers|countries)\/$/.test(u0.pathname)) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); r = await k29i.hubInject(req, u0, env, r, h => ruPlaces(kbRu(h))); } catch (e) {} } }   // n29i: key figures and Q&A on the hubs (items 93, 95)
-    if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kTick) kTick = await import('./kbx_ticker.js'); return await kTick.kbTick(req, r, env); } catch (e) { return r; } }
+    if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
+      // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
+      if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
+      return r2; }
     return r;
   },
   async fetch0(req, env, ctx) {
@@ -341,6 +383,10 @@ export default {
       }
     }
     if (u.pathname.startsWith('/__sb/')) return sbProxy(req, u);
+    // n29t (item 49): one URL per page. A page path typed with capitals (/Projects/x/, /ES/...) or with a doubled slash answered 404
+    // (or 503 on /countries/UAE/); it now gets a 301 to the lowercase, single-slash form. Only page sections whose URLs are all
+    // lowercase; ids that keep capitals (/p/DXB-009/, /embed/, /api/, files) and percent escapes are left as they are.
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD')) { const kc = kbCaseFix(u); if (kc) return new Response(null, { status: 301, headers: { location: kc, 'cache-control': 'public, max-age=3600' } }); }
     // kolaboro.com (seoT, batch 8): HEAD answers exactly like GET (status and headers, no body) for every page, incl. worker-rendered ones
     if (host === 'kolaboro.com' && env && env.KB_WKEY) { if (!kb) kb = await import('./kolaboro.js'); kb.useEnv(env); }   // sec13: worker key from the Cloudflare secret when Carlos sets it
     if (host === 'kolaboro.com' && req.method === 'HEAD' && !/^\/(api|mcp)(\/|$)/.test(u.pathname)) { const g = await this.fetch(new Request(req.url, { method: 'GET', headers: req.headers }), env, ctx); return new Response(null, { status: g.status, statusText: g.statusText, headers: g.headers }); }
