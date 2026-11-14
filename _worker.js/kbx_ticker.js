@@ -82,7 +82,7 @@ const PROG_C = {"en": "Daily counters, the chart of projects added and the 300 i
 const FT27 = { en: ['Contact', 'How to cite'], es: ['Contacto', 'Cómo citar'], fr: ['Contact', 'Comment citer'], de: ['Kontakt', 'Zitieren'], nl: ['Contact', 'Citeren'], ru: ['Контакты', 'Как ссылаться'], zh: ['联系我们', '如何引用'], ar: ['اتصل بنا', 'كيف تستشهد بنا'] };
 export async function kbTick(req, r, env) {
   try {
-    if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+    if (req.method !== 'GET' || !r || (r.status !== 200 && r.status !== 404 && r.status !== 410) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
     let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
     const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;

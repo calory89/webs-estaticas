@@ -183,7 +183,7 @@ function kbRu(html) {
     return num + gap + adj + KB_RU_N[noun][0];
   });
 }
-const KB_SITE_CSS_V = '1c6b335e3f', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '218b336d7f', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
@@ -202,6 +202,8 @@ const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','tou
   "d.addEventListener('submit',function(e){var f=e.target;if(f&&f.hasAttribute&&f.hasAttribute('data-kb-nosubmit'))e.preventDefault()},true);" +
   "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(done||held||!v||typeof v!=='object')return;held=v;var real;" +
   "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return done?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
+  // n28a: a table wider than its box scrolls sideways, so keyboard users must be able to focus it (axe scrollable-region-focusable); read after load, off the critical path
+  "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('.k-table-wrap,.tw').forEach(function(t){if(!t.hasAttribute('tabindex')&&t.scrollWidth>t.clientWidth+1)t.tabIndex=0})},600)});" +
   "})(window,document);";
 // kolaboro.com (seoT, batch 8): every public static page gets a BreadcrumbList (and a WebPage node when it has no JSON-LD at all).
 // Parent crumbs are only linked when that folder has a page; the check is cached per isolate.
@@ -543,7 +545,7 @@ export default {
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)
-      if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) return await k404.page(kr, u, fx === 'gone' ? 410 : 404, env); }
+      if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) { const pg = await k404.page(kr, u, fx === 'gone' ? 410 : 404, env); return /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.test(u.pathname) ? kbHeaders(pg, u) : pg; } }   // n28a: the translated 404 shell is a raw file: it needs this response's script nonce, ds.css and style dedupe
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/metrics/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); const mh = await k27a.metricsHtml(); if (mh) kr = new HTMLRewriter().on('main', { element(e) { e.append(mh, { html: true }); } }).transform(kr); } catch (e) {} }   // n27a: usage by page type and return visits on /metrics/
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/engineering/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); const bh = await kbots.html(req); kr = new HTMLRewriter().on('main', { element(e) { e.append(bh, { html: true }); } }).transform(kr); } catch (e) {} }   // n26i: AI crawler visits on /engineering/
       // n26i (batch 26): the home page and the hubs link the project pages the fewest other project pages link to (kbx_named.js)

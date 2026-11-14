@@ -114,7 +114,7 @@ export function nextStep(lang, x, name, cmp) {
     ((cmp || []).length ? '<li><a href="' + esc(cmpHref) + '" data-ev="next_compare"><span aria-hidden="true">⇆</span>' + esc(t26(lang, 'nx_cmp')) + '</a></li>' : '') +
     '<li><button type="button" data-kn-save aria-pressed="false"><span aria-hidden="true">☆</span><span>' + esc(t26(lang, 'nx_save')) + '</span></button></li>' +
     '<li><a href="#watch" data-kn-alert><span aria-hidden="true">✉</span>' + esc(t26(lang, 'nx_alert')) + '</a></li>' +
-    '<li><a href="' + P + '/ask-developer/?id=' + encodeURIComponent(x.id) + '"><span aria-hidden="true">?</span>' + esc(t26(lang, 'nx_ask')) + '</a></li></ul>' +
+    '<li><a href="/ask-developer/?id=' + encodeURIComponent(x.id) + '"><span aria-hidden="true">?</span>' + esc(t26(lang, 'nx_ask')) + '</a></li></ul>' +
     '<p class="knx-s"><span>' + esc(t26(lang, 'sh')) + ':</span> <a href="' + esc(wa) + '" target="_blank" rel="noopener nofollow">WhatsApp</a> <button type="button" data-kn-copy>' + esc(t26(lang, 'sh_copy')) + '</button> <button type="button" data-kn-share hidden>' + esc(t26(lang, 'sh_more')) + '</button> <span class="knx-o" role="status" aria-live="polite"></span>' +
     ' <a class="knx-my" href="/watchlist/">' + esc(t26(lang, 'nx_my')) + '</a></p></section>';
 }
