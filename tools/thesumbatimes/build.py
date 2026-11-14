@@ -628,6 +628,17 @@ def article_ld(a, l, url, imgs, grp):
     fq = (a.get("faq") or {}).get(l)
     if fq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an in fq]})
+    if a["section"] == "places" and a.get("places"):
+        p0 = a["places"][0]; k = ptype(dict(p0, name=a["en"]["title"] + " " + p0["name"]))
+        sub = {"beach": "Beach", "water": "Waterfall", "village": "LandmarksOrHistoricalBuildings", "view": "Mountain", "nature": "Park"}.get(k)
+        ent = {"@context": "https://schema.org", "@type": ["City"] if k == "town" else ["TouristAttraction"] + ([sub] if sub else []), "@id": url + "#place",
+               "name": re.split(r"[,:]", c["title"])[0], "description": c.get("answer") or c["dek"], "url": url, "inLanguage": l,
+               "geo": {"@type": "GeoCoordinates", "latitude": p0["lat"], "longitude": p0["lon"]}, "hasMap": f"https://www.openstreetmap.org/?mlat={p0['lat']}&mlon={p0['lon']}#map=13/{p0['lat']}/{p0['lon']}",
+               "address": {"@type": "PostalAddress", "addressLocality": p0.get("area") or "Sumba", "addressRegion": "Nusa Tenggara Timur", "addressCountry": "ID"},
+               "containedInPlace": {"@type": "Place", "name": "Sumba, East Nusa Tenggara, Indonesia"}}
+        if img_of(a): ent["image"] = f"{BASE}/img/{img_key(a)}-1280.webp"
+        ld.append(ent)
+        if isinstance(ld[0], dict): ld[0]["about"] = {"@id": url + "#place"}
     if a.get("places"):
         ld.append({"@context": "https://schema.org", "@type": "ItemList", "name": T[l]["places_t"], "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "item": {"@type": "TouristAttraction", "name": p["name"], "geo": {"@type": "GeoCoordinates", "latitude": p["lat"], "longitude": p["lon"]},
