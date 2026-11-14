@@ -28,10 +28,10 @@ Tax on rental income: Long-term: 25% flat for non-residents; short-term (AL) und
 
 ### Best homes in Portugal
 
+- [€68,500 · Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · score 91 · 75 m² · 2 bed
 - [€110,000 · Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372) · Silvares, Fundão, Castelo Branco · score 91 · 176 m² · 5 bed
 - [€150,000 · Renovated two-bedroom house with air conditioning in the historic quarter of Estremoz](https://realhunt.co/deal/pt-estremoz-150k-259126) · Estremoz, Évora · score 91 · 110 m² · 2 bed
 - [€145,000 · Fully remodelled three-storey house 50 metres from the town gates of Castelo de Vide](https://realhunt.co/deal/pt-castelo-de-vide-145k-284590) · Castelo de Vide, Portalegre · score 91 · 126 m² · 2 bed
-- [€68,500 · Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · score 91 · 75 m² · 2 bed
 - [€125,000 · Detached five-bedroom house with garden, garage and central heating in Brunhoso, Mogadouro](https://realhunt.co/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · score 91 · 170 m² · 5 bed
 - [€100,000 · Five-bedroom house with garage and balconies in a Trás-os-Montes village near Miranda do Douro](https://realhunt.co/deal/pt-miranda-do-douro-100k-350867) · São Pedro da Silva, Miranda do Douro, Bragança · score 91 · 158 m² · 5 bed
 
