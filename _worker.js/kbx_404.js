@@ -64,7 +64,8 @@ export function helpBody(lang, h1, lead) {
     '<label for="nf-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">' + esc(L.s) + '</label>' +
     '<input id="nf-q" name="q" type="search" required placeholder="' + esc(L.ph) + '" style="flex:1 1 240px;min-width:0;min-height:46px;padding:10px 14px;border:1px solid #C9D0D6;border-radius:10px;font:inherit">' +
     '<button class="btn btn-hi" type="submit">' + esc(L.b) + '</button></form>' +
-    '<ul class="nf-links">' + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
+    // n28c: long words (nl "Transparantierankings", de compounds) widened the 1fr columns past the screen on phones
+    '<style>.nf-links{grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:700px){.nf-links{grid-template-columns:repeat(2,minmax(0,1fr))}}.nf-links b{overflow-wrap:anywhere;hyphens:auto}</style><ul class="nf-links">' + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
 }
 
 export async function page(r, u, status, env) {
@@ -77,7 +78,7 @@ export async function page(r, u, status, env) {
   const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag');
   const out = new Response(src.body, { status: gone ? 410 : 404, headers: h });
   const title = (gone ? L.g : L.t) + ' | Kolaboro'; let seenLsw = false;
-  // n28c: every language button of a missing page leads to that language's home (the English one pointed at the missing URL itself)
+  // n28c: language buttons of a missing page lead to that language's home (also on the English static 404)
   let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
     .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } });
   // n28c: the translated shell is read straight from the static files, so its scripts carried no nonce and the enforced CSP of this
