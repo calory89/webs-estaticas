@@ -1490,6 +1490,7 @@ var city_names_default = {
 		"pt": "Alexandria"
 	},
 	"algeciras-spain": { "fr": "Algésiras" },
+	"alghero-italy": { "es": "Alguer" },
 	"almaty-kazakhstan": { "es": "Alma Ata" },
 	"almeria-spain": { "pt": "Almeria" },
 	"altea-spain": { "fr": "Altée" },
@@ -1573,6 +1574,7 @@ var city_names_default = {
 		"pt": "Avinhão"
 	},
 	"avila-spain": { "it": "Avila" },
+	"bacolod-philippines": { "es": "Bacólod" },
 	"bad-homburg-vor-der-hohe-germany": { "es": "Bad Homburg" },
 	"baghdad-iraq": {
 		"da": "Bagdad",
@@ -1588,6 +1590,10 @@ var city_names_default = {
 		"fr": "Bahía Blanca",
 		"it": "Bahía Blanca",
 		"pt": "Bahía Blanca"
+	},
+	"baku-azerbaijan": {
+		"es": "Bakú",
+		"fr": "Bakou"
 	},
 	"balneario-camboriu-brazil": {
 		"de": "Balneário Camboriú",
@@ -1640,6 +1646,10 @@ var city_names_default = {
 		"it": "Belgrado",
 		"pt": "Belgrado"
 	},
+	"benevento-italy": {
+		"de": "Benevent",
+		"fr": "Bénévent"
+	},
 	"benicassim-spain": {
 		"es": "Benicasim",
 		"it": "Benicasim",
@@ -1664,6 +1674,7 @@ var city_names_default = {
 	"besancon-france": { "es": "Besanzón" },
 	"bielsko-biaa-poland": { "de": "Bielitz-Biala" },
 	"bikaner-india": { "fr": "Bîkâner" },
+	"bilbao-spain": { "pt": "Bilbau" },
 	"birmingham-alabama-united-states": {
 		"da": "Birmingham",
 		"de": "Birmingham",
@@ -1713,6 +1724,14 @@ var city_names_default = {
 		"de": "Brügge",
 		"es": "Brujas"
 	},
+	"brussels-belgium": {
+		"da": "Bruxelles",
+		"de": "Brüssel",
+		"es": "Bruselas",
+		"fr": "Bruxelles",
+		"it": "Bruxelles",
+		"pt": "Bruxelas"
+	},
 	"bucharest-romania": {
 		"da": "Bukarest",
 		"de": "Bukarest",
@@ -1749,6 +1768,14 @@ var city_names_default = {
 		"it": "Cambridge",
 		"pt": "Cambridge"
 	},
+	"camden-united-states": { "da": "Lexington" },
+	"campos-do-jordao-brazil": {
+		"de": "Campos do Jordão",
+		"es": "Campos do Jordão",
+		"fr": "Campos do Jordão",
+		"it": "Campos do Jordão",
+		"pt": "Campos do Jordão"
+	},
 	"can-tho-vietnam": {
 		"de": "Cần Thơ",
 		"es": "Cần Thơ",
@@ -1756,6 +1783,7 @@ var city_names_default = {
 		"it": "Cần Thơ"
 	},
 	"canberra-australia": { "pt": "Camberra" },
+	"canterbury-united-kingdom": { "pt": "Cantuária" },
 	"cape-coral-united-states": { "es": "Cabo Coral" },
 	"cape-town-southafrica": {
 		"de": "Kapstadt",
@@ -1768,6 +1796,11 @@ var city_names_default = {
 	"cartagena-spain": { "fr": "Carthagène" },
 	"cascais-portugal": { "es": "Cascaes" },
 	"caserta-italy": { "fr": "Caserte" },
+	"castellon-de-la-plana-spain": {
+		"de": "Castelló de la Plana",
+		"fr": "Castelló de la Plana",
+		"pt": "Castelló de la Plana"
+	},
 	"catania-italy": {
 		"fr": "Catane",
 		"pt": "Catânia"
@@ -1820,6 +1853,10 @@ var city_names_default = {
 		"pt": "Chorzów"
 	},
 	"ciudad-real-spain": { "pt": "Cidade Real" },
+	"coeur-d-alene-united-states": {
+		"de": "Coeur d’Alene",
+		"fr": "Coeur d’Alene"
+	},
 	"coimbra-portugal": { "es": "Coímbra" },
 	"cologne-germany": {
 		"da": "Köln",
@@ -1828,6 +1865,7 @@ var city_names_default = {
 		"it": "Colonia",
 		"pt": "Colónia"
 	},
+	"columbia-united-states": { "pt": "Colúmbia" },
 	"comayagua-honduras": { "de": "Ciudad de Comayagua" },
 	"como-italy": { "fr": "Côme" },
 	"concepcion-chile": {
@@ -2058,6 +2096,13 @@ var city_names_default = {
 		"da": "Helsingfors",
 		"pt": "Helsínquia"
 	},
+	"heraklion-greece": {
+		"da": "Iraklio",
+		"es": "Heraclión",
+		"fr": "Héraklion",
+		"it": "Candia",
+		"pt": "Heraclião"
+	},
 	"ho-chi-minh-city-vietnam": {
 		"da": "Ho Chi Minh-byen",
 		"de": "Ho-Chi-Minh-Stadt",
@@ -2065,6 +2110,12 @@ var city_names_default = {
 		"fr": "Hô Chi Minh-Ville",
 		"it": "Ho Chi Minh",
 		"pt": "Cidade de Ho Chi Minh"
+	},
+	"hoi-an-vietnam": {
+		"de": "Hội An",
+		"es": "Hội An",
+		"fr": "Hội An",
+		"pt": "Cidade Antiga de Hoi An"
 	},
 	"hondarribia-spain": {
 		"es": "Fuenterrabía",
@@ -2240,6 +2291,7 @@ var city_names_default = {
 		"pt": "Liepāja"
 	},
 	"lijiang-china": { "pt": "Cidade Antiga de Lijiang" },
+	"lille-france": { "it": "Lilla" },
 	"limassol-cyprus": { "es": "Limasol" },
 	"lisbon-portugal": {
 		"da": "Lissabon",
@@ -2315,6 +2367,14 @@ var city_names_default = {
 		"es": "Marsella",
 		"it": "Marsiglia",
 		"pt": "Marselha"
+	},
+	"mazatlan-mexico": {
+		"da": "Mazatlán",
+		"de": "Mazatlán",
+		"es": "Mazatlán",
+		"fr": "Mazatlán",
+		"it": "Mazatlán",
+		"pt": "Mazatlán"
 	},
 	"mechelen-belgium": {
 		"es": "Malinas",
@@ -2441,6 +2501,10 @@ var city_names_default = {
 		"fr": "La Nouvelle-Orléans",
 		"pt": "Nova Orleães"
 	},
+	"new-york-unitedstates": {
+		"es": "Nueva York",
+		"pt": "Nova Iorque"
+	},
 	"newport-rhode-island-united-states": {
 		"da": "Newport",
 		"de": "Newport",
@@ -2466,6 +2530,13 @@ var city_names_default = {
 		"pt": "Nimega"
 	},
 	"nimes-france": { "es": "Nimes" },
+	"nuremberg-germany": {
+		"da": "Nürnberg",
+		"de": "Nürnberg",
+		"es": "Núremberg",
+		"it": "Norimberga",
+		"pt": "Nuremberga"
+	},
 	"odz-poland": { "es": "Lodz" },
 	"ohrid-northmacedonia": { "it": "Ocrida" },
 	"oia-greece": { "de": "Ia" },
@@ -2483,6 +2554,7 @@ var city_names_default = {
 		"it": "Ostenda",
 		"pt": "Oostende"
 	},
+	"oulu-finland": { "da": "Uleåborg" },
 	"ourense-spain": { "es": "Orense" },
 	"pakse-laos": {
 		"da": "Pakxe",
@@ -2567,6 +2639,13 @@ var city_names_default = {
 		"pt": "Quebec"
 	},
 	"quedlinburg-germany": { "fr": "Quedlinbourg" },
+	"quy-nhon-vietnam": {
+		"de": "Quy Nhơn",
+		"es": "Quy Nhơn",
+		"fr": "Quy Nhơn",
+		"it": "Qui Nhon",
+		"pt": "Qui Nhơn"
+	},
 	"ragusa-italy": { "fr": "Raguse" },
 	"ravenna-italy": {
 		"es": "Ravena",
@@ -2600,6 +2679,7 @@ var city_names_default = {
 		"it": "Rodi",
 		"pt": "Rodes"
 	},
+	"rimini-italy": { "es": "Rímini" },
 	"rio-de-janeiro-brazil": { "es": "Río de Janeiro" },
 	"riyadh-saudiarabia": {
 		"de": "Riad",
@@ -2662,8 +2742,14 @@ var city_names_default = {
 		"de": "Donostia-San Sebastián",
 		"fr": "Saint-Sébastien"
 	},
+	"sanremo-italy": { "es": "San Remo" },
+	"santa-barbara-united-states": {
+		"es": "Santa Bárbara",
+		"pt": "Santa Bárbara"
+	},
 	"santa-cruz-de-tenerife-spain": { "fr": "Santa Cruz de Ténérife" },
 	"santa-fe-argentina": { "pt": "Santa Fé" },
+	"santa-fe-united-states": { "pt": "Santa Fé" },
 	"santiago-chile": {
 		"da": "Santiago de Chile",
 		"de": "Santiago de Chile",
@@ -2729,6 +2815,12 @@ var city_names_default = {
 		"de": "Shiliguri",
 		"pt": "Shiliguri"
 	},
+	"singapore-singapore": {
+		"de": "Singapur",
+		"es": "Singapur",
+		"fr": "Singapour",
+		"pt": "Singapura"
+	},
 	"skopje-northmacedonia": { "es": "Skopie" },
 	"sofia-bulgaria": {
 		"es": "Sofía",
@@ -2741,6 +2833,12 @@ var city_names_default = {
 	},
 	"split-croatia": { "it": "Spalato" },
 	"spoleto-italy": { "fr": "Spolète" },
+	"st-albans-unitedkingdom": { "de": "St. Albans" },
+	"st-andrews-united-kingdom": {
+		"es": "Saint Andrews",
+		"it": "Saint Andrews",
+		"pt": "St. Andrews"
+	},
 	"st-gallen-switzerland": {
 		"da": "Sankt Gallen",
 		"es": "San Galo",
@@ -2768,6 +2866,7 @@ var city_names_default = {
 		"it": "Stoccarda",
 		"pt": "Estugarda"
 	},
+	"sunderland-united-kingdom": { "it": "City of Sunderland" },
 	"surabaya-indonesia": { "pt": "Surabaia" },
 	"swinoujscie-poland": { "de": "Swinemünde" },
 	"sydney-australia": { "es": "Sídney" },
@@ -2795,6 +2894,7 @@ var city_names_default = {
 		"pt": "Taipé"
 	},
 	"tallinn-estonia": { "es": "Tallin" },
+	"tampere-finland": { "da": "Tammerfors" },
 	"tangier-morocco": {
 		"da": "Tanger",
 		"de": "Tanger",
@@ -2849,6 +2949,10 @@ var city_names_default = {
 	"toledo-spain": { "fr": "Tolède" },
 	"torshavn-faroe-islands": { "da": "Thorshavn" },
 	"torun-poland": { "es": "Torún" },
+	"toulon-france": {
+		"es": "Tolón",
+		"it": "Tolone"
+	},
 	"toulouse-france": { "it": "Tolosa" },
 	"trapani-italy": { "pt": "Trápani" },
 	"trento-italy": {
@@ -2876,6 +2980,7 @@ var city_names_default = {
 		"pt": "Turim"
 	},
 	"turku-finland": { "da": "Åbo" },
+	"udine-italy": { "es": "Údine" },
 	"ulaanbaatar-mongolia": {
 		"da": "Ulan Bator",
 		"es": "Ulán Bator",
@@ -2886,10 +2991,12 @@ var city_names_default = {
 	"uppsala-sweden": { "es": "Upsala" },
 	"ushuaia-argentina": { "fr": "Ushuaïa" },
 	"utrecht-netherlands": { "pt": "Utreque" },
+	"vaasa-finland": { "da": "Vasa" },
 	"valencia-spain": {
 		"fr": "Valence",
 		"pt": "Valência"
 	},
+	"valkenburg-netherlands": { "fr": "Fauquemont" },
 	"valletta-malta": {
 		"es": "La Valeta",
 		"fr": "La Valette",
@@ -2900,6 +3007,8 @@ var city_names_default = {
 		"es": "Benarés",
 		"fr": "Bénarès"
 	},
+	"varese-italy": { "fr": "Varèse" },
+	"varna-bulgaria": { "de": "Warna" },
 	"venice-italy": {
 		"da": "Venedig",
 		"de": "Venedig",
@@ -2909,6 +3018,11 @@ var city_names_default = {
 		"pt": "Veneza"
 	},
 	"verona-italy": { "fr": "Vérone" },
+	"versailles-france": {
+		"es": "Versalles",
+		"pt": "Versalhes"
+	},
+	"vicenza-italy": { "fr": "Vicence" },
 	"victoria-canada": { "pt": "Vitória" },
 	"vienna-austria": {
 		"da": "Wien",
@@ -2951,6 +3065,7 @@ var city_names_default = {
 		"it": "Wilmington",
 		"pt": "Wilmington"
 	},
+	"wolfsburg-germany": { "es": "Wolfsburgo" },
 	"wrocaw-poland": {
 		"de": "Breslau",
 		"es": "Breslavia",
@@ -2985,6 +3100,7 @@ var city_names_default = {
 		"pt": "Erevã"
 	},
 	"yogyakarta-indonesia": { "pt": "Joguejacarta" },
+	"york-unitedkingdom": { "pt": "Iorque" },
 	"zadar-croatia": { "it": "Zara" },
 	"zagreb-croatia": { "it": "Zagabria" },
 	"zakynthos-greece": {
