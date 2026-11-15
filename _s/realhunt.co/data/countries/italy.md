@@ -185,7 +185,7 @@ https://realhunt.co/deal/Dc6Y4UKDLyc
 
 €34,000 · Como area, Italy · RealHunt score 85 · added 2026-09-23
 
-A surprisingly large independent Italian home in one of Northern Italy’s most desirable regions — for just €34,000. Want the full listing, exact location and my detailed property analysis? Curated Italian properties under €100,000.
+A surprisingly large independent Italian home in one of Northern Italy’s most desirable regions, for just €34,000. Want the full listing, exact location and my detailed property analysis? Curated Italian properties under €100,000.
 
 https://realhunt.co/deal/Dc8TyIDkexU
 

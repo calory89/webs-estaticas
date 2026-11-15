@@ -29,9 +29,9 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 ### Mejores casas en Italia
 
 - [95.000 € · Casa de piedra reformada con balcón con vistas al lago de Como](https://realhunt.co/es/deal/it-san-siro-95k-057133) · San Siro, Lago de Como · nota 91 · 60 m² · 2 dorm.
-- [115.000 € · Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lago de Como, Lombardía · nota 91 · 85 m² · 2 dorm.
 - [29.000 € · Apartamento vacacional con una gran terraza con vistas al mar y jardín en Calabria](https://realhunt.co/es/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · nota 91 · 55 m² · 1 dorm.
 - [30.000 € · Apartamento junto al mar amueblado a pocos pasos de la playa en Acqualadrone, Mesina](https://realhunt.co/es/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicilia · nota 91 · 40 m² · 1 dorm.
+- [115.000 € · Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lago de Como, Lombardía · nota 91 · 85 m² · 2 dorm.
 - [30.000 € · Casa de pueblo con balcón con vistas al mar en Pollina, a 30 minutos de Cefalù](https://realhunt.co/es/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicilia · nota 91 · 50 m² · 1 dorm.
 - [195.000 € · Piso en el lago Como renovado con balcón con vistas al lago, a 100 m de la orilla](https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lago de Como, Lombardía · nota 91 · 80 m² · 1 dorm.
 

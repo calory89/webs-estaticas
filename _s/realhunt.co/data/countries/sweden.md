@@ -189,7 +189,7 @@ https://realhunt.co/deal/DckAJqaChuR
 
 €75,440 · Linneryd, Småland, Sweden · RealHunt score 85 · added 2026-09-23
 
-A 1917 Swedish cottage in Småland called Skogshyttan — the Forest Cottage — with a forest literally at the back door and a swimming lake five minutes away. Växjövägen 8 sits in Linneryd, Tingsryds kommun, on a generous 16,000 sq ft lot with the road out front and old-growth forest behind.
+A 1917 Swedish cottage in Småland called Skogshyttan, the Forest Cottage, with a forest literally at the back door and a swimming lake five minutes away. Växjövägen 8 sits in Linneryd, Tingsryds kommun, on a generous 16,000 sq ft lot with the road out front and old-growth forest behind.
 
 https://realhunt.co/deal/DbQ_FfViI4l
 

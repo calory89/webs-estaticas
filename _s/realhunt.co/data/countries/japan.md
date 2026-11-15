@@ -183,7 +183,7 @@ https://realhunt.co/deal/DcjKIfMDIaB
 
 €54,280 · Maizuru, Kyoto, Japan · RealHunt score 86 · added 2026-09-23
 
-Imagine sipping your morning coffee on the engawa (wooden veranda), the Sea of Japan spread out below you — in a proper old kominka for under $60k. This one sits high on a hillside in Maizuru, up on the Kyoto coast, a couple hours from Kyoto city itself.
+Imagine sipping your morning coffee on the engawa (wooden veranda), the Sea of Japan spread out below you, in a proper old kominka for under $60k. This one sits high on a hillside in Maizuru, up on the Kyoto coast, a couple hours from Kyoto city itself.
 
 https://realhunt.co/deal/Da7vZIFDIuo
 
@@ -279,7 +279,7 @@ https://realhunt.co/deal/jp-shimizu-81k-591487
 
 €91,080 · Yugawara, Kanagawa, Japan · RealHunt score 81 · added 2026-09-23
 
-A pure Japanese-style single-story home with a wide engawa opening onto its own garden — in one of Japan's most famous hot spring towns, about 90 minutes from Tokyo. This one's in Yugawara, Kanagawa, a coastal onsen town people have escaped to for a century.
+A pure Japanese-style single-story home with a wide engawa opening onto its own garden, in one of Japan's most famous hot spring towns, about 90 minutes from Tokyo. This one's in Yugawara, Kanagawa, a coastal onsen town people have escaped to for a century.
 
 https://realhunt.co/deal/DbA4_hKEThx
 

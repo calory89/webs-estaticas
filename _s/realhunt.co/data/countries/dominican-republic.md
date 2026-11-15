@@ -76,6 +76,6 @@ https://realhunt.co/deal/dr-juan-dolio-224k-447078
 
 €201,200 · Las Terrenas, Samaná · 2 bedrooms · RealHunt score 87 · added 2026-10-12
 
-A 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula. Sold fully furnished with an equipped kitchen, ready to live in or rent out straight away. The residence has a large pool in tropical gardens, 24-hour security and power, private parking, laundry and housekeeping, a few minutes from the town centre. About 30 minutes from El Catey airport. Asking US$225,000 (about €201,200), marked as a limited-time offer.
+A 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula. Sold fully furnished with an equipped kitchen, ready to live in or rent out straight away. The residence has a large pool in tropical gardens, 24-hour security and power, private parking, laundry and housekeeping, a few minutes from the town centre. About 30 minutes from El Catey airport. Asking US$225,000 (about €201,200).
 
 https://realhunt.co/deal/dr-las-terrenas-201k-439030

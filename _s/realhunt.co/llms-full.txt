@@ -1358,7 +1358,7 @@ Country | Homes | From | Pages by top price | File
 [Denmark](https://realhunt.co/homes/denmark) | 45 | €35,400 | [€80,000](https://realhunt.co/homes/denmark/under-80000) · [€100,000](https://realhunt.co/homes/denmark/under-100000) | [JSON](https://realhunt.co/data/countries/denmark.json)
 [France](https://realhunt.co/homes/france) | 42 | €39,000 | [€50,000](https://realhunt.co/homes/france/under-50000) · [€80,000](https://realhunt.co/homes/france/under-80000) · [€150,000](https://realhunt.co/homes/france/under-150000) | [JSON](https://realhunt.co/data/countries/france.json)
 [Sweden](https://realhunt.co/homes/sweden) | 37 | €22,000 | [€50,000](https://realhunt.co/homes/sweden/under-50000) · [€60,000](https://realhunt.co/homes/sweden/under-60000) · [€80,000](https://realhunt.co/homes/sweden/under-80000) · [€100,000](https://realhunt.co/homes/sweden/under-100000) | [JSON](https://realhunt.co/data/countries/sweden.json)
-[Japan](https://realhunt.co/homes/japan) | 30 | €7,400 | [€20,000](https://realhunt.co/homes/japan/under-20000) · [€30,000](https://realhunt.co/homes/japan/under-30000) · [€40,000](https://realhunt.co/homes/japan/under-40000) · [€50,000](https://realhunt.co/homes/japan/under-50000) · [€60,000](https://realhunt.co/homes/japan/under-60000) · [€80,000](https://realhunt.co/homes/japan/under-80000) | [JSON](https://realhunt.co/data/countries/japan.json)
+[Japan](https://realhunt.co/homes/japan) | 30 | €7,400 | [€20,000](https://realhunt.co/homes/japan/under-20000) · [€30,000](https://realhunt.co/homes/japan/under-30000) · [€40,000](https://realhunt.co/homes/japan/under-40000) · [€50,000](https://realhunt.co/homes/japan/under-50000) · [€80,000](https://realhunt.co/homes/japan/under-80000) | [JSON](https://realhunt.co/data/countries/japan.json)
 [Poland](https://realhunt.co/homes/poland) | 30 | €53,693 | [€60,000](https://realhunt.co/homes/poland/under-60000) · [€80,000](https://realhunt.co/homes/poland/under-80000) | [JSON](https://realhunt.co/data/countries/poland.json)
 [Germany](https://realhunt.co/homes/germany) | 20 | €40,000 | [€50,000](https://realhunt.co/homes/germany/under-50000) · [€80,000](https://realhunt.co/homes/germany/under-80000) | [JSON](https://realhunt.co/data/countries/germany.json)
 [Netherlands](https://realhunt.co/homes/netherlands) | 18 | €299,000 | – | [JSON](https://realhunt.co/data/countries/netherlands.json)
@@ -3217,9 +3217,9 @@ Every tourist let needs a national CIN code shown on listings and at the propert
 ### Homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
 - [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
+- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 - [€28,000 · Furnished beachfront studio 50 m from a sandy beach in Calabria](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771) · Falerna Marina, Calabria · score 91 · 40 m² · 1 bed
@@ -6493,10 +6493,10 @@ This page is laid out for paper: print it from your browser, or save it as a PDF
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133)
 San Siro, Lake Como · 60 m² · score 91
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
-San Siro, Lake Como, Lombardy · 85 m² · score 91
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
 Torremezzo, Falconara Albanese, Calabria · 55 m² · score 91
+- [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
+Acqualadrone, Messina, Sicily · 40 m² · score 91
 
 [All 59 homes in Italy](https://realhunt.co/homes/italy)
 
@@ -7552,9 +7552,9 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
 - [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
+- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
@@ -9892,8 +9892,8 @@ Prices describe the homes on RealHunt, each checked by a person, not every home 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
+- [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
 
 [All 59 homes in Italy](https://realhunt.co/homes/italy) · [How to buy in Italy](https://realhunt.co/guide/italy) · [Costs and sources](https://realhunt.co/costs/italy)
 
@@ -10484,8 +10484,8 @@ Prices describe the homes on RealHunt, each checked by a person, not every home 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
+- [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
 
 [All 59 homes in Italy](https://realhunt.co/homes/italy) · [How to buy in Italy](https://realhunt.co/guide/italy) · [Costs and sources](https://realhunt.co/costs/italy)
 
@@ -11039,8 +11039,8 @@ Prices describe the homes on RealHunt, each checked by a person, not every home 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
+- [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
 
 [All 59 homes in Italy](https://realhunt.co/homes/italy) · [How to buy in Italy](https://realhunt.co/guide/italy) · [Costs and sources](https://realhunt.co/costs/italy)
 
@@ -11557,8 +11557,8 @@ Prices describe the homes on RealHunt, each checked by a person, not every home 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
+- [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
 
 [All 59 homes in Italy](https://realhunt.co/homes/italy) · [How to buy in Italy](https://realhunt.co/guide/italy) · [Costs and sources](https://realhunt.co/costs/italy)
 
@@ -15261,9 +15261,9 @@ Italy is in the Schengen area: with an American passport you can usually stay up
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
 - [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
+- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
@@ -17056,9 +17056,9 @@ Italy is in the Schengen area: with an Australian passport you can usually stay 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
 - [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
+- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
@@ -18045,7 +18045,7 @@ Source: https://realhunt.co/cheap-houses
 
 ## Cheap houses for sale, by what you are looking for
 
-516 homes in 16 countries, split into 465 searches: by budget, by the sea, in villages, with a garden or a pool, and by country. Every page lists real homes with photo, price, size and score.
+514 homes in 16 countries, split into 461 searches: by budget, by the sea, in villages, with a garden or a pool, and by country. Every page lists real homes with photo, price, size and score.
 
 ### In season
 
@@ -18053,11 +18053,11 @@ For the winter [With a fireplace 72](https://realhunt.co/cheap-houses/with-firep
 
 ### In every country
 
-By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 197](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 366](https://realhunt.co/cheap-houses/under-100000)
+By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 196](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 364](https://realhunt.co/cheap-houses/under-100000)
 
-In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 293](https://realhunt.co/cheap-houses/under-100000-dollars)
+In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 291](https://realhunt.co/cheap-houses/under-100000-dollars)
 
-By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 263](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 171](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 94](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
+By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 261](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 170](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 93](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
 
 By feature and budget [Sea view under €100,000 30](https://realhunt.co/cheap-houses/with-sea-view-under-100000) [With a pool under €100,000 16](https://realhunt.co/cheap-houses/with-pool-under-100000) [Sea view under €50,000 11](https://realhunt.co/cheap-houses/with-sea-view-under-50000)
 
@@ -18067,9 +18067,9 @@ Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [
 
 ### By country
 
-#### [Spain](https://realhunt.co/homes/spain) · 134 homes
+#### [Spain](https://realhunt.co/homes/spain) · 133 homes
 
-[Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 78](https://realhunt.co/homes/spain/under-100000) [Under €150,000 94](https://realhunt.co/homes/spain/under-150000) [Under €200,000 123](https://realhunt.co/homes/spain/under-200000) [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 51](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain) [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 76](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town) [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 13](https://realhunt.co/homes/spain/green-spain) [Apartments 61](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses) [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 30](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom) [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 90](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain) [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain) [Move-in ready under €100,000 70](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 30](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
+[Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 77](https://realhunt.co/homes/spain/under-100000) [Under €150,000 93](https://realhunt.co/homes/spain/under-150000) [Under €200,000 122](https://realhunt.co/homes/spain/under-200000) [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 50](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain) [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 75](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town) [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 12](https://realhunt.co/homes/spain/green-spain) [Apartments 60](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses) [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 29](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom) [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 89](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain) [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain) [Move-in ready under €100,000 69](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 29](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
 
 #### [Italy](https://realhunt.co/homes/italy) · 56 homes
 
@@ -18095,9 +18095,9 @@ Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [
 
 [Under €60,000 3](https://realhunt.co/homes/poland/under-60000) [Under €80,000 30](https://realhunt.co/homes/poland/under-80000) [With a garden 3](https://realhunt.co/cheap-houses/with-garden-in-poland) [With a terrace 10](https://realhunt.co/cheap-houses/with-a-terrace-in-poland) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-poland) [Near an airport 6](https://realhunt.co/cheap-houses/near-an-airport-in-poland) [Score 90+ 7](https://realhunt.co/cheap-houses/score-90-plus-in-poland) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-poland) [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-poland) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-poland)
 
-#### [Japan](https://realhunt.co/homes/japan) · 29 homes
+#### [Japan](https://realhunt.co/homes/japan) · 28 homes
 
-[Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €60,000 24](https://realhunt.co/homes/japan/under-60000) [Under €80,000 27](https://realhunt.co/homes/japan/under-80000) [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 19](https://realhunt.co/homes/japan/village-houses) [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 11](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai) [Houses 24](https://realhunt.co/homes/japan/houses) [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom) [3 bedrooms 5](https://realhunt.co/homes/japan/3-bedroom) [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [Cabins and cottages 6](https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 5](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan) [Most space for the money 14](https://realhunt.co/cheap-houses/most-space-for-the-money-in-japan) [Village houses under €30,000 10](https://realhunt.co/cheap-houses/village-houses-under-30000-in-japan) [Houses under €50,000 16](https://realhunt.co/cheap-houses/houses-under-50000-in-japan) [Village houses under €50,000 14](https://realhunt.co/cheap-houses/village-houses-under-50000-in-japan) [By the sea under €50,000 6](https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-japan)
+[Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €80,000 26](https://realhunt.co/homes/japan/under-80000) [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 18](https://realhunt.co/homes/japan/village-houses) [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 10](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai) [Houses 24](https://realhunt.co/homes/japan/houses) [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom) [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [Cabins and cottages 6](https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 4](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan) [Village houses under €30,000 10](https://realhunt.co/cheap-houses/village-houses-under-30000-in-japan) [Houses under €50,000 16](https://realhunt.co/cheap-houses/houses-under-50000-in-japan) [Village houses under €50,000 14](https://realhunt.co/cheap-houses/village-houses-under-50000-in-japan) [By the sea under €50,000 6](https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-japan)
 
 #### [Germany](https://realhunt.co/homes/germany) · 20 homes
 
@@ -18137,12 +18137,12 @@ Source: https://realhunt.co/cheap-houses/apartments-under-100000-in-spain (updat
 
 ## Cheap apartments for sale in Spain under €100,000
 
-Updated 14 November 2026. Newest home added 30 October 2026.
+Updated 15 November 2026. Newest home added 30 October 2026.
 
-RealHunt lists 30 apartments for sale in Spain under €100,000 today, priced from €61,990 to €99,900. The cheapest costs €61,990: [2-bedroom flat with patio in Manresa](https://realhunt.co/deal/es-manresa-61k-18808), in Manresa (55 m², 2 bedrooms). The median price is €91,000 (€1,561/m²), against €98,000 (€1,217/m²) for the 134 homes we list in Spain.
+RealHunt lists 29 apartments for sale in Spain under €100,000 today, priced from €61,990 to €99,900. The cheapest costs €61,990: [2-bedroom flat with patio in Manresa](https://realhunt.co/deal/es-manresa-61k-18808), in Manresa (55 m², 2 bedrooms). The median price is €91,000 (€1,561/m²), against €98,000 (€1,225/m²) for the 133 homes we list in Spain.
 
 Homes
-30
+29
 
 From
 €61,990
@@ -18154,12 +18154,12 @@ Median per m²
 €1,561/m²
 
 Median size
-61 m²
+60 m²
 
 Top score
 93
 
-### The 30 homes, best score first
+### The 29 homes, best score first
 
 - [Score 93€73,0002-bedroom flat with terrace in CartagenaCartagena, Murcia85 m² · 2 bed · €859/m²€73,000 for 85 m² and 2 bedrooms in Cartagena (Murcia), about €859/m².](https://realhunt.co/deal/es-cartagena-73k-74761)
 - [Score 91€65,000Sunny three-bedroom flat with sea and mountain views in CariñoCariño, A Coruña92 m² · 3 bed · €707/m²A roomy 92 m² furnished flat in the middle of Cariño, about 180 m from the beach and promenade: a hallway with a built-in wardrobe, a large…](https://realhunt.co/deal/es-carino-65k-186545953)
@@ -18167,7 +18167,6 @@ Top score
 - [Score 90€68,500Bright top-floor flat with a sea-view balcony in Corme Porto, Costa da MorteCorme Porto, A Coruña80 m² · 3 bed · €856/m²A well-kept three-bedroom flat in the centre of Corme, one of the prettiest fishing villages on the Costa da Morte: a separate kitchen, a pantry…](https://realhunt.co/deal/es-ponteceso-corme-68k-189908571)
 - [Score 87€88,0002-bedroom flat in MazaricosMazaricos, A Coruña109 m² · 2 bed · €807/m²€88,000 for 109 m² and 2 bedrooms in Mazaricos (A Coruña), about €807/m².](https://realhunt.co/deal/es-mazaricos-88k-64288)
 - [Score 87€79,9002-bedroom apartment with sea views in CartagenaCartagena, Murcia56 m² · 2 bed · €1,427/m²€79,900 for 56 m² and 2 bedrooms in Cartagena (Murcia), about €1,427/m².](https://realhunt.co/deal/es-cartagena-79k-19964)
-- [Score 86€85,0003-bedroom flat in San Martín del Rey AurelioSan Martín del Rey Aurelio, Asturias89 m² · 3 bed · €955/m²€85,000 for 89 m² and 3 bedrooms in San Martín del Rey Aurelio (Asturias), about €955/m².](https://realhunt.co/deal/es-san-martin-del-rey-aurelio-85k-66374)
 - [Score 85€91,0001-bedroom top-floor flat with pool in AlbuñolAlbuñol, Granada75 m² · 1 bed · €1,213/m²€91,000 for 75 m² and 1 bedroom in Albuñol (Granada), about €1,213/m².](https://realhunt.co/deal/es-albunol-91k-41469)
 - [Score 85€88,0002-bedroom flat with patio in CartagenaCartagena, Murcia60 m² · 2 bed · €1,467/m²€88,000 for 60 m² and 2 bedrooms in Cartagena (Murcia), about €1,467/m².](https://realhunt.co/deal/es-cartagena-88k-38250)
 - [Score 85€91,0001-bedroom flat with pool in Sant Jaume d'EnvejaSant Jaume d'Enveja, Tarragona68 m² · 1 bed · €1,338/m²€91,000 for 68 m² and 1 bedroom in Sant Jaume d'Enveja (Tarragona), about €1,338/m².](https://realhunt.co/deal/es-sant-jaume-d-enveja-91k-15282)
@@ -18192,7 +18191,7 @@ Top score
 - [Score 81€65,0002-bedroom flat with terrace in BejísBejís, Castellón69 m² · 2 bed · €942/m²€65,000 for 69 m² and 2 bedrooms in Bejís (Castellón), about €942/m².](https://realhunt.co/deal/es-bejis-65k-97644)
 - [Score 80€98,0001-bedroom flat with terrace in MoguerMoguer, Huelva48 m² · 1 bed · €2,042/m²€98,000 for 48 m² and 1 bedroom in Moguer (Huelva), about €2,042/m².](https://realhunt.co/deal/es-moguer-98k-75562)
 
-### Compare the 30 homes, cheapest first
+### Compare the 29 homes, cheapest first
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [2-bedroom flat with patio in Manresa](https://realhunt.co/deal/es-manresa-61k-18808) | Manresa, Barcelona | €61,990 | 55 m² | €1,127/m² | 2 | 81 | 1 Oct 2026
@@ -18207,7 +18206,6 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [1-bedroom apartment with sea views in Vícar](https://realhunt.co/deal/es-vicar-82k-27426) | Vícar, Almería | €82,900 | 47 m² | €1,764/m² | 1 | 84 | 1 Oct 2026
 [1-bedroom apartment in Murcia](https://realhunt.co/deal/es-murcia-85k-23435) | Murcia | €85,000 | 46 m² | €1,848/m² | 1 | 82 | 1 Oct 2026
 [3-bedroom flat with mountain views in Reinosa](https://realhunt.co/deal/es-reinosa-85k-84223) | Reinosa, Cantabria | €85,000 | 80 m² | €1,063/m² | 3 | 81 | 1 Oct 2026
-[3-bedroom flat in San Martín del Rey Aurelio](https://realhunt.co/deal/es-san-martin-del-rey-aurelio-85k-66374) | San Martín del Rey Aurelio, Asturias | €85,000 | 89 m² | €955/m² | 3 | 86 | 1 Oct 2026
 [2-bedroom flat with patio in Cartagena](https://realhunt.co/deal/es-cartagena-88k-38250) | Cartagena, Murcia | €88,000 | 60 m² | €1,467/m² | 2 | 85 | 1 Oct 2026
 [2-bedroom flat in Mazaricos](https://realhunt.co/deal/es-mazaricos-88k-64288) | Mazaricos, A Coruña | €88,000 | 109 m² | €807/m² | 2 | 87 | 1 Oct 2026
 [1-bedroom top-floor flat with pool in Albuñol](https://realhunt.co/deal/es-albunol-91k-41469) | Albuñol, Granada | €91,000 | 75 m² | €1,213/m² | 1 | 85 | 1 Oct 2026
@@ -18226,13 +18224,13 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [2-bedroom flat with garden in Murcia](https://realhunt.co/deal/es-murcia-99k-61734) | Murcia | €99,900 | 64 m² | €1,561/m² | 2 | 84 | 1 Oct 2026
 [1-bedroom apartment with pool in Torrevieja](https://realhunt.co/deal/es-torrevieja-99k-86111) | Torrevieja, Alicante | €99,900 | 47 m² | €2,126/m² | 1 | 83 | 1 Oct 2026
 
-### The 30 homes in numbers
+### The 29 homes in numbers
 
-- Size: half of them have 61 m² or more. The largest has 109 m²: [2-bedroom flat in Mazaricos](https://realhunt.co/deal/es-mazaricos-88k-64288).
-- Bedrooms: 10 with 1 bedroom, 13 with 2, 5 with 3; 2 listings do not say.
-- Type: 30 apartments.
-- Setting: 15 by the sea, 10 in villages, 5 in towns.
-- Where: Murcia (8), Alicante (5), A Coruña (3), Almería (3), Asturias (2), Tarragona (2).
+- Size: half of them have 60 m² or more. The largest has 109 m²: [2-bedroom flat in Mazaricos](https://realhunt.co/deal/es-mazaricos-88k-64288).
+- Bedrooms: 10 with 1 bedroom, 13 with 2, 4 with 3; 2 listings do not say.
+- Type: 29 apartments.
+- Setting: 15 by the sea, 9 in villages, 5 in towns.
+- Where: Murcia (8), Alicante (5), A Coruña (3), Almería (3), Tarragona (2), Asturias (1).
 - Extras named in the listings: 4 with a garden, 21 with a terrace, 4 with a garage, 6 with a pool, 1 with a fireplace.
 - Scores: 80 to 93 out of 98. The best rated: [2-bedroom flat with terrace in Cartagena](https://realhunt.co/deal/es-cartagena-73k-74761).
 - Newest, added 30 October 2026: [Studio with communal pool 950 m from La Mata beach, Torrevieja](https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k). 1 of these homes was added in the last 30 days.
@@ -18243,7 +18241,7 @@ Can foreigners buy? Yes, no restrictions at present; the government has proposed
 
 Taxes and fees add about 7.5 to 14% to the price: New build: 10% IVA + 0.5-1.5% AJD stamp duty + notary 0.5-1% + legal 1-2%; resale: ITP transfer tax 6-11% instead of IVA/AJD. On the median home on this page (€91,000) that is €6,825 to €12,740, so €97,825 to €103,740 in all.
 
-To keep the whole purchase within €100,000, look at asking prices up to about €87,700: 13 of these 30 homes fit.
+To keep the whole purchase within €100,000, look at asking prices up to about €87,700: 12 of these 29 homes fit.
 
 [Buying-cost calculator for a home in Spain](https://realhunt.co/buying-costs/spain) · [All costs and taxes](https://realhunt.co/costs/spain) · [How to buy, step by step](https://realhunt.co/guide/spain) · [Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -18251,15 +18249,15 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
-- 6 of 30 sit where our rough flood check reads medium or high. Each home page links the official flood map.
-- 2 of 30 are close to a motorway, a railway or an airport (high on our noise check).
+- 6 of 29 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 1 of 29 is close to a motorway, a railway or an airport (high on our noise check).
 - As a group these homes score lowest on buying costs (28/100 on average) and highest on move-in condition (89/100).
 
 ### Questions buyers ask
 
 #### How much does an apartment for sale in Spain under €100,000 cost?
 
-Asking prices run from €61,990 to €99,900 across 30 homes. The median is €91,000, or €1,561/m².
+Asking prices run from €61,990 to €99,900 across 29 homes. The median is €91,000, or €1,561/m².
 
 #### What is the cheapest apartment for sale in Spain under €100,000?
 
@@ -18267,39 +18265,39 @@ Asking prices run from €61,990 to €99,900 across 30 homes. The median is €
 
 #### Where are the apartments for sale in Spain under €100,000?
 
-Mostly in Murcia (8), Alicante (5), A Coruña (3), Almería (3), Asturias (2).
+Mostly in Murcia (8), Alicante (5), A Coruña (3), Almería (3), Tarragona (2).
 
 #### How big are the apartments for sale in Spain under €100,000?
 
-The median is 61 m², and 2 bedrooms is the most common layout. The largest has 109 m², in Mazaricos.
+The median is 60 m², and 2 bedrooms is the most common layout. The largest has 109 m², in Mazaricos.
 
 ### More searches in Spain
 
-By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 78](https://realhunt.co/homes/spain/under-100000) [Under €150,000 94](https://realhunt.co/homes/spain/under-150000) [Under €200,000 123](https://realhunt.co/homes/spain/under-200000)
+By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 77](https://realhunt.co/homes/spain/under-100000) [Under €150,000 93](https://realhunt.co/homes/spain/under-150000) [Under €200,000 122](https://realhunt.co/homes/spain/under-200000)
 
-By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 76](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
+By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 75](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
 
-By type [Apartments 61](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
+By type [Apartments 60](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
 
-By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 30](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
+By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 29](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
 
-By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Asturias 5](https://realhunt.co/homes/spain/asturias) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
+By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Asturias 4](https://realhunt.co/homes/spain/asturias) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
 
-By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 13](https://realhunt.co/homes/spain/green-spain)
+By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 12](https://realhunt.co/homes/spain/green-spain)
 
-By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 90](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
+By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 89](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain)
 
-By feature and budget [Move-in ready under €100,000 70](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
+By feature and budget [Move-in ready under €100,000 69](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
 
-In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 51](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
+In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 50](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
 
 Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 37](https://realhunt.co/cheap-houses/near-alicante) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville)
 
-These listings come from fotocasa.es (29), sell-2-go.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from fotocasa.es (28), sell-2-go.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[All 134 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain&max=100000) · [Filter and sort these homes](https://realhunt.co/?country=Spain&price=100000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[All 133 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain&max=100000) · [Filter and sort these homes](https://realhunt.co/?country=Spain&price=100000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -18307,7 +18305,7 @@ Source: https://realhunt.co/cheap-houses/apartments-under-20000-in-italy (update
 
 ## Cheap apartments for sale in Italy under €20,000
 
-Updated 14 November 2026. Newest home added 23 September 2026.
+Updated 15 November 2026. Newest home added 23 September 2026.
 
 RealHunt lists 3 apartments for sale in Italy under €20,000 today, priced from €16,000 to €20,000. The cheapest costs €16,000: [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp), in Fiamignano (40 m², 2 bedrooms). The median price is €16,000 (€392/m²), against €46,000 (€750/m²) for the 56 homes we list in Italy.
 
@@ -18418,7 +18416,7 @@ Source: https://realhunt.co/cheap-houses/apartments-under-50000-in-italy (update
 
 ## Cheap apartments for sale in Italy under €50,000
 
-Updated 14 November 2026. Newest home added 2 November 2026.
+Updated 15 November 2026. Newest home added 2 November 2026.
 
 RealHunt lists 9 apartments for sale in Italy under €50,000 today, priced from €16,000 to €49,000. The cheapest costs €16,000: [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp), in Fiamignano (40 m², 2 bedrooms). The median price is €29,000 (€527/m²), against €46,000 (€750/m²) for the 56 homes we list in Italy.
 
@@ -18545,9 +18543,9 @@ Source: https://realhunt.co/cheap-houses/by-the-sea (updated 2026-11-14)
 
 ## Cheap homes by the sea
 
-Updated 14 November 2026. Newest home added 14 November 2026.
+Updated 15 November 2026. Newest home added 14 November 2026.
 
-RealHunt lists 108 homes by the sea today, priced from €19,320 to €470,000. The cheapest costs €19,320: [Japanese home with a sakura garden](https://realhunt.co/deal/DbbD15oDKLz), in Usuki. The median price is €93,200 (€1,364/m²), against €84,000 (€1,139/m²) for the 516 homes on RealHunt in 20 countries.
+RealHunt lists 108 homes by the sea today, priced from €19,320 to €470,000. The cheapest costs €19,320: [Japanese home with a sakura garden](https://realhunt.co/deal/DbbD15oDKLz), in Usuki. The median price is €93,200 (€1,364/m²), against €84,000 (€1,140/m²) for the 514 homes on RealHunt in 20 countries.
 
 Homes
 108
@@ -18586,10 +18584,10 @@ Top score
 - [Score 92€66,000Ready-to-move-in two-bedroom flat with a sea-view terrace in KavarnaKavarna Paradise, Kavarna (Black Sea)87 m² · 2 bed · €759/m²An 86.5 m² flat on the ground floor of a well-maintained 2007 complex, a 3-minute walk from the beach: an entrance hall, a living room with a…](https://realhunt.co/deal/bg-kavarna-66k-89682)
 - [Score 92€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m²A well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso.](https://realhunt.co/deal/ca-mulgrave-90k-623450)
 - [Score 92€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m²A flexible 156 m² house that can be one generous home or keep its current setup of two separate 3-room living areas, one per floor.](https://realhunt.co/deal/Dc-RMNwIPpv)
-- [Score 91New€159,900Renovated two-floor house with terrace in Piles, a quiet Valencian town by the seaPiles, Valencia109 m² · 2 bed · €1,467/m²A renovated house in the centre of Piles, ready to move into.](https://realhunt.co/deal/es-piles-159k-831466)
-- [Score 91New€178,000Penthouse in Puerto Naos with a sun terrace bigger than the flatPuerto Naos, La Palma29 m² · 1 bed · €6,138/m²A modern top-floor flat of 29 m² (27 m² usable) in Puerto Naos, on the sunny west coast of La Palma (Canary Islands), with a private sun terrace…](https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889)
 - [Score 91New€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m²A 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
 - [Score 91New€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m²A 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
+- [Score 91New€159,900Renovated two-floor house with terrace in Piles, a quiet Valencian town by the seaPiles, Valencia109 m² · 2 bed · €1,467/m²A renovated house in the centre of Piles, ready to move into.](https://realhunt.co/deal/es-piles-159k-831466)
+- [Score 91New€178,000Penthouse in Puerto Naos with a sun terrace bigger than the flatPuerto Naos, La Palma29 m² · 1 bed · €6,138/m²A modern top-floor flat of 29 m² (27 m² usable) in Puerto Naos, on the sunny west coast of La Palma (Canary Islands), with a private sun terrace…](https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889)
 - [Score 91New€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m²A 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
 - [Score 91New€19,910Wood-lined holiday home in a seaside estate with a pool and tennis courts, WakayamaInami, Wakayama70 m² · 2 bed · €284/m²A 1996 two-storey holiday home of 70 m² in the Kinosato estate in Inami, Wakayama, popular with sea anglers.](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430)
 - [Score 91New€27,300Bungalow 3 minutes' walk from the beach in Wakayama, new facade in 2025Kirime, Wakayama59 m² · 3 bed · €463/m²A 2000 steel-frame bungalow of 59 m² with 3 rooms on a 116 m² freehold plot, a 3-minute walk from Kirime beach and 1 km from the station.](https://realhunt.co/deal/jp-inami-beach-bungalow-27k-272502)
@@ -18715,19 +18713,19 @@ The median is 79 m², and 2 bedrooms is the most common layout. The largest has 
 
 #### How many homes by the sea are there?
 
-108, as of 14 November 2026, out of the 516 homes on RealHunt in 20 countries. 18 were added in the last 30 days.
+108, as of 15 November 2026, out of the 514 homes on RealHunt in 20 countries. 18 were added in the last 30 days.
 
 ### More searches
 
-By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 197](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 366](https://realhunt.co/cheap-houses/under-100000)
+By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 196](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 364](https://realhunt.co/cheap-houses/under-100000)
 
-By feature [Village houses 263](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 171](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 94](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
+By feature [Village houses 261](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 170](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 93](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money)
 
 By feature and budget [Sea view under €100,000 30](https://realhunt.co/cheap-houses/with-sea-view-under-100000) [With a pool under €100,000 16](https://realhunt.co/cheap-houses/with-pool-under-100000) [Sea view under €50,000 11](https://realhunt.co/cheap-houses/with-sea-view-under-50000)
 
-In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 293](https://realhunt.co/cheap-houses/under-100000-dollars)
+In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 291](https://realhunt.co/cheap-houses/under-100000-dollars)
 
 Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 37](https://realhunt.co/cheap-houses/near-alicante) [Near Málaga 10](https://realhunt.co/cheap-houses/near-malaga) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville) [Near Milan 8](https://realhunt.co/cheap-houses/near-milan) [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon) [Near Copenhagen 17](https://realhunt.co/cheap-houses/near-copenhagen) [Near Aarhus 13](https://realhunt.co/cheap-houses/near-aarhus) [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
@@ -18743,9 +18741,9 @@ Source: https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain (updat
 
 ## Cheap homes by the sea in Spain under €100,000
 
-Updated 14 November 2026. Newest home added 30 October 2026.
+Updated 15 November 2026. Newest home added 30 October 2026.
 
-RealHunt lists 20 homes by the sea in Spain under €100,000 today, priced from €49,000 to €99,950. The cheapest costs €49,000: [Fully renovated Alpujarra village house with a sea-view terrace in Murtas](https://realhunt.co/deal/es-murtas-49k-185398398), in Murtas (86 m², 2 bedrooms). The median price is €97,000 (€1,467/m²), against €98,000 (€1,217/m²) for the 134 homes we list in Spain.
+RealHunt lists 20 homes by the sea in Spain under €100,000 today, priced from €49,000 to €99,950. The cheapest costs €49,000: [Fully renovated Alpujarra village house with a sea-view terrace in Murtas](https://realhunt.co/deal/es-murtas-49k-185398398), in Murtas (86 m², 2 bedrooms). The median price is €97,000 (€1,467/m²), against €98,000 (€1,225/m²) for the 133 homes we list in Spain.
 
 Homes
 20
@@ -18861,31 +18859,31 @@ The median is 60 m², and 2 bedrooms is the most common layout. The largest has 
 
 ### More searches in Spain
 
-By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 78](https://realhunt.co/homes/spain/under-100000) [Under €150,000 94](https://realhunt.co/homes/spain/under-150000) [Under €200,000 123](https://realhunt.co/homes/spain/under-200000)
+By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 77](https://realhunt.co/homes/spain/under-100000) [Under €150,000 93](https://realhunt.co/homes/spain/under-150000) [Under €200,000 122](https://realhunt.co/homes/spain/under-200000)
 
-By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 76](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
+By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 75](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
 
-By type [Apartments 61](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
+By type [Apartments 60](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
 
-By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 30](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
+By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 29](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
 
-By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Asturias 5](https://realhunt.co/homes/spain/asturias) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
+By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Asturias 4](https://realhunt.co/homes/spain/asturias) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
 
-By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 13](https://realhunt.co/homes/spain/green-spain)
+By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 12](https://realhunt.co/homes/spain/green-spain)
 
-By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 90](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
+By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 89](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain)
 
-By feature and budget [Move-in ready under €100,000 70](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 30](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
+By feature and budget [Move-in ready under €100,000 69](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 29](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
 
-In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 51](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
+In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 50](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
 
 Near a city [Near Alicante 37](https://realhunt.co/cheap-houses/near-alicante) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville)
 
 These listings come from fotocasa.es (18), idealista.com (1), sell-2-go.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[All 134 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain&max=100000) · [Filter and sort these homes](https://realhunt.co/?country=Spain&price=100000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[All 133 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain&max=100000) · [Filter and sort these homes](https://realhunt.co/?country=Spain&price=100000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -18893,7 +18891,7 @@ Source: https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-italy (update
 
 ## Cheap homes by the sea in Italy under €50,000
 
-Updated 14 November 2026. Newest home added 2 November 2026.
+Updated 15 November 2026. Newest home added 2 November 2026.
 
 RealHunt lists 7 homes by the sea in Italy under €50,000 today, priced from €28,000 to €49,000. The cheapest costs €28,000: [Furnished beachfront studio 50 m from a sandy beach in Calabria](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771), in Falerna Marina (40 m², 1 bedroom). The median price is €39,000 (€750/m²), against €46,000 (€750/m²) for the 56 homes we list in Italy.
 
@@ -19018,9 +19016,9 @@ Source: https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-japan (update
 
 ## Cheap homes by the sea in Japan under €50,000
 
-Updated 14 November 2026. Newest home added 2 November 2026.
+Updated 15 November 2026. Newest home added 2 November 2026.
 
-RealHunt lists 6 homes by the sea in Japan under €50,000 today, priced from €19,320 to €49,680. The cheapest costs €19,320: [Japanese home with a sakura garden](https://realhunt.co/deal/DbbD15oDKLz), in Usuki. The median price is €34,960, against €39,560 for the 29 homes we list in Japan.
+RealHunt lists 6 homes by the sea in Japan under €50,000 today, priced from €19,320 to €49,680. The cheapest costs €19,320: [Japanese home with a sakura garden](https://realhunt.co/deal/DbbD15oDKLz), in Usuki. The median price is €34,960, against €39,560 for the 28 homes we list in Japan.
 
 Homes
 6
@@ -19098,21 +19096,19 @@ Mostly in Wakayama (3), Kagawa (1), Kyoto (1), Oita (1).
 
 ### More searches in Japan
 
-By budget [Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €60,000 24](https://realhunt.co/homes/japan/under-60000) [Under €80,000 27](https://realhunt.co/homes/japan/under-80000)
+By budget [Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €80,000 26](https://realhunt.co/homes/japan/under-80000)
 
-By setting [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 19](https://realhunt.co/homes/japan/village-houses)
+By setting [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 18](https://realhunt.co/homes/japan/village-houses)
 
 By type [Houses 24](https://realhunt.co/homes/japan/houses)
 
-By bedrooms [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom) [3 bedrooms 5](https://realhunt.co/homes/japan/3-bedroom)
+By bedrooms [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom)
 
-By region [Wakayama 6](https://realhunt.co/homes/japan/wakayama) [Gifu 3](https://realhunt.co/homes/japan/gifu) [Shizuoka 3](https://realhunt.co/homes/japan/shizuoka)
+By region [Wakayama 6](https://realhunt.co/homes/japan/wakayama) [Gifu 3](https://realhunt.co/homes/japan/gifu)
 
-By area [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 11](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai)
+By area [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 10](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai)
 
-By feature [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [Cabins and cottages 6](https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 5](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan)
-
-Rankings [Most space for the money 14](https://realhunt.co/cheap-houses/most-space-for-the-money-in-japan)
+By feature [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [Cabins and cottages 6](https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 4](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan)
 
 By feature and budget [Houses under €50,000 16](https://realhunt.co/cheap-houses/houses-under-50000-in-japan) [Village houses under €50,000 14](https://realhunt.co/cheap-houses/village-houses-under-50000-in-japan)
 
@@ -19120,7 +19116,7 @@ By the sea under €50,000 in other countries [Italy 7](https://realhunt.co/chea
 
 These listings come from instagram.com (3), athome.co.jp (2), usuki-c44206.akiya-athome.jp (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[All 29 homes in Japan](https://realhunt.co/homes/japan) · [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan&max=50000) · [Filter and sort these homes](https://realhunt.co/?country=Japan&price=50000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[All 28 homes in Japan](https://realhunt.co/homes/japan) · [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan&max=50000) · [Filter and sort these homes](https://realhunt.co/?country=Japan&price=50000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -19128,9 +19124,9 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages (updated 2026-11-08
 
 ## Cheap cabins and cottages
 
-Updated 14 November 2026. Newest home added 8 November 2026.
+Updated 15 November 2026. Newest home added 8 November 2026.
 
-RealHunt lists 39 cabins and cottages today, priced from €7,400 to €188,000. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €73,000 (€1,280/m²), against €84,000 (€1,139/m²) for the 516 homes on RealHunt in 20 countries.
+RealHunt lists 39 cabins and cottages today, priced from €7,400 to €188,000. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €73,000 (€1,280/m²), against €84,000 (€1,140/m²) for the 514 homes on RealHunt in 20 countries.
 
 Homes
 39
@@ -19169,7 +19165,7 @@ Top score
 - [Score 85€159,100Scandinavian-style log cabin with a stone fireplace on 10 acresSaxon, Wisconsin (Lake Superior region)133 m² · 3 bed · €1,196/m²A large custom-built Scandinavian-style log cabin from 1998 on a quiet country road in Saxon, Wisconsin, near Lake Superior: 1,430 sq ft (133 m²)…](https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k)
 - [Score 85€52,800Holiday cottage with winter garden by a bathing lake in SalgeschSalgesch, Valais40 m² · 1 bed · €1,320/m²About 40 m² on a plot of around 180 m² at Camping Swissplage, with a winter garden, an outdoor seating area for barbecues and a garden shed.](https://realhunt.co/deal/ch-salgesch-49k-76547)
 - [Score 85€60,000Traditional timber cottage with sauna on 2,547 m² of natureBäckhammar, Värmland50 m² · 1 bed · €1,200/m²Surrounded by nature on a generous plot, this is the kind of place where mornings begin with birdsong, afternoons are spent in the garden and…](https://realhunt.co/deal/DckAJqaChuR)
-- [Score 85€75,4401917 Forest Cottage with a swimming lake five minutes awayLinneryd, SmålandA 1917 Swedish cottage in Småland called Skogshyttan — the Forest Cottage — with a forest literally at the back door and a swimming lake five…](https://realhunt.co/deal/DbQ_FfViI4l)
+- [Score 85€75,4401917 Forest Cottage with a swimming lake five minutes awayLinneryd, SmålandA 1917 Swedish cottage in Småland called Skogshyttan, the Forest Cottage, with a forest literally at the back door and a swimming lake five…](https://realhunt.co/deal/DbQ_FfViI4l)
 - [Score 84€88,600Porch cottage on a big lot next to the park in the OzarksOxford, Arkansas81 m² · 2 bed · €1,094/m²Two bedrooms and one bath in about 81 m² on a 0.65-acre lot in the middle of Oxford, Arkansas.](https://realhunt.co/deal/us-oxford-88k-030224)
 - [Score 84€159,990Brand-new 2025 cottage with a pergola deck 400 m from the sea in HalkidikiKallikrateia, Halkidiki72 m² · 3 bed · €2,222/m²A new-build 72 m² house from 2025 in Kallikrateia, Halkidiki, energy class A and sold furnished: three bedrooms, a living room, a kitchen and…](https://realhunt.co/deal/gr-halkidiki-new-house-160k)
 - [Score 84€53,000House on 7,600 m² with a new guest cabinVärmlandsnäs, VärmlandSet on nearly 7,600 m² of private land, this house offers peaceful surroundings, a spacious terrace, and a newly built guest cabin that’s perfect…](https://realhunt.co/deal/DbC0D4RoLzc)
@@ -19278,19 +19274,19 @@ The median is 81 m², and 2 bedrooms is the most common layout. The largest has 
 
 #### How many cabins and cottages are there?
 
-39, as of 14 November 2026, out of the 516 homes on RealHunt in 20 countries. 11 were added in the last 30 days.
+39, as of 15 November 2026, out of the 514 homes on RealHunt in 20 countries. 11 were added in the last 30 days.
 
 ### More searches
 
-By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 197](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 366](https://realhunt.co/cheap-houses/under-100000)
+By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 196](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 364](https://realhunt.co/cheap-houses/under-100000)
 
-By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 263](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 171](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 94](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
+By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 261](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 170](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 93](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money)
 
 By feature and budget [Sea view under €100,000 30](https://realhunt.co/cheap-houses/with-sea-view-under-100000) [With a pool under €100,000 16](https://realhunt.co/cheap-houses/with-pool-under-100000) [Sea view under €50,000 11](https://realhunt.co/cheap-houses/with-sea-view-under-50000)
 
-In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 293](https://realhunt.co/cheap-houses/under-100000-dollars)
+In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 291](https://realhunt.co/cheap-houses/under-100000-dollars)
 
 Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 37](https://realhunt.co/cheap-houses/near-alicante) [Near Málaga 10](https://realhunt.co/cheap-houses/near-malaga) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville) [Near Milan 8](https://realhunt.co/cheap-houses/near-milan) [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon) [Near Copenhagen 17](https://realhunt.co/cheap-houses/near-copenhagen) [Near Aarhus 13](https://realhunt.co/cheap-houses/near-aarhus) [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
@@ -19306,7 +19302,7 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-denmark (updated
 
 ## Cheap cabins and cottages in Denmark
 
-Updated 14 November 2026. Newest home added 5 October 2026.
+Updated 15 November 2026. Newest home added 5 October 2026.
 
 RealHunt lists 3 cabins and cottages in Denmark today, priced from €35,400 to €93,200. The cheapest costs €35,400: [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX), in Bønderby. The median price is €79,800, against €93,200 for the 45 homes we list in Denmark.
 
@@ -19404,9 +19400,9 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan (updated 2
 
 ## Cheap cabins and cottages in Japan
 
-Updated 14 November 2026. Newest home added 2 November 2026.
+Updated 15 November 2026. Newest home added 2 November 2026.
 
-RealHunt lists 6 cabins and cottages in Japan today, priced from €7,400 to €54,280. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €22,750 (€215/m²), against €39,560 (€340/m²) for the 29 homes we list in Japan.
+RealHunt lists 6 cabins and cottages in Japan today, priced from €7,400 to €54,280. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €22,750 (€215/m²), against €39,560 (€303/m²) for the 28 homes we list in Japan.
 
 Homes
 6
@@ -19492,21 +19488,19 @@ The median is 75 m², and 2 bedrooms is the most common layout. The largest has 
 
 ### More searches in Japan
 
-By budget [Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €60,000 24](https://realhunt.co/homes/japan/under-60000) [Under €80,000 27](https://realhunt.co/homes/japan/under-80000)
+By budget [Under €15,000 3](https://realhunt.co/homes/japan/under-15000) [Under €20,000 9](https://realhunt.co/homes/japan/under-20000) [Under €30,000 13](https://realhunt.co/homes/japan/under-30000) [Under €40,000 15](https://realhunt.co/homes/japan/under-40000) [Under €50,000 18](https://realhunt.co/homes/japan/under-50000) [Under €80,000 26](https://realhunt.co/homes/japan/under-80000)
 
-By setting [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 19](https://realhunt.co/homes/japan/village-houses)
+By setting [By the sea 12](https://realhunt.co/homes/japan/by-the-sea) [Village houses 18](https://realhunt.co/homes/japan/village-houses)
 
 By type [Houses 24](https://realhunt.co/homes/japan/houses)
 
-By bedrooms [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom) [3 bedrooms 5](https://realhunt.co/homes/japan/3-bedroom)
+By bedrooms [2 bedrooms 6](https://realhunt.co/homes/japan/2-bedroom)
 
-By region [Wakayama 6](https://realhunt.co/homes/japan/wakayama) [Gifu 3](https://realhunt.co/homes/japan/gifu) [Shizuoka 3](https://realhunt.co/homes/japan/shizuoka)
+By region [Wakayama 6](https://realhunt.co/homes/japan/wakayama) [Gifu 3](https://realhunt.co/homes/japan/gifu)
 
-By area [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 11](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai)
+By area [Kanto 3](https://realhunt.co/homes/japan/kanto) [Chubu 10](https://realhunt.co/homes/japan/chubu) [Kansai 10](https://realhunt.co/homes/japan/kansai)
 
-By feature [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 5](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan)
-
-Rankings [Most space for the money 14](https://realhunt.co/cheap-houses/most-space-for-the-money-in-japan)
+By feature [Near a lake 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-japan) [With a terrace 7](https://realhunt.co/cheap-houses/with-a-terrace-in-japan) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-japan) [Sea view 6](https://realhunt.co/cheap-houses/with-sea-view-in-japan) [With a garage 4](https://realhunt.co/cheap-houses/with-garage-in-japan) [Near an airport 10](https://realhunt.co/cheap-houses/near-an-airport-in-japan) [Under €500/m² 12](https://realhunt.co/cheap-houses/under-500-per-sqm-in-japan) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-japan) [Single-storey 9](https://realhunt.co/cheap-houses/single-storey-in-japan) [Quiet location 5](https://realhunt.co/cheap-houses/quiet-location-in-japan)
 
 By feature and budget [Houses under €50,000 16](https://realhunt.co/cheap-houses/houses-under-50000-in-japan) [Village houses under €50,000 14](https://realhunt.co/cheap-houses/village-houses-under-50000-in-japan) [Village houses under €30,000 10](https://realhunt.co/cheap-houses/village-houses-under-30000-in-japan) [By the sea under €50,000 6](https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-japan)
 
@@ -19514,7 +19508,7 @@ Cabins and cottages in other countries [Sweden 10](https://realhunt.co/cheap-hou
 
 These listings come from athome.co.jp (4), instagram.com (1), resort-estate.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[All 29 homes in Japan](https://realhunt.co/homes/japan) · [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan) · [Filter and sort these homes](https://realhunt.co/?country=Japan#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[All 28 homes in Japan](https://realhunt.co/homes/japan) · [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan) · [Filter and sort these homes](https://realhunt.co/?country=Japan#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -19522,9 +19516,9 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain (updated 2
 
 ## Cabins and cottages in Spain
 
-Updated 14 November 2026. Newest home added 8 November 2026.
+Updated 15 November 2026. Newest home added 8 November 2026.
 
-RealHunt lists 3 cabins and cottages in Spain today, priced from €125,000 to €188,000. The cheapest costs €125,000: [Mountain chalet with pool, two en-suite bedrooms and big views](https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921), in Villar del Arzobispo (198 m², 2 bedrooms). The median price is €169,000 (€1,225/m²), against €98,000 (€1,217/m²) for the 134 homes we list in Spain.
+RealHunt lists 3 cabins and cottages in Spain today, priced from €125,000 to €188,000. The cheapest costs €125,000: [Mountain chalet with pool, two en-suite bedrooms and big views](https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921), in Villar del Arzobispo (198 m², 2 bedrooms). The median price is €169,000 (€1,225/m²), against €98,000 (€1,225/m²) for the 133 homes we list in Spain.
 
 Homes
 3
@@ -19603,25 +19597,25 @@ The median is 138 m², and 2 bedrooms is the most common layout. The largest has
 
 ### More searches in Spain
 
-By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 78](https://realhunt.co/homes/spain/under-100000) [Under €150,000 94](https://realhunt.co/homes/spain/under-150000) [Under €200,000 123](https://realhunt.co/homes/spain/under-200000)
+By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 36](https://realhunt.co/homes/spain/under-80000) [Under €100,000 77](https://realhunt.co/homes/spain/under-100000) [Under €150,000 93](https://realhunt.co/homes/spain/under-150000) [Under €200,000 122](https://realhunt.co/homes/spain/under-200000)
 
-By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 76](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
+By setting [By the sea 39](https://realhunt.co/homes/spain/by-the-sea) [Village houses 75](https://realhunt.co/homes/spain/village-houses) [In town 18](https://realhunt.co/homes/spain/in-town)
 
-By type [Apartments 61](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
+By type [Apartments 60](https://realhunt.co/homes/spain/apartments) [Houses 68](https://realhunt.co/homes/spain/houses)
 
-By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 30](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
+By bedrooms [1 bedroom 28](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 50](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 29](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 22](https://realhunt.co/homes/spain/4-bedroom)
 
-By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Asturias 5](https://realhunt.co/homes/spain/asturias) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
+By region [Alicante 18](https://realhunt.co/homes/spain/alicante) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Granada 15](https://realhunt.co/homes/spain/granada) [Almería 11](https://realhunt.co/homes/spain/almeria) [Madrid 10](https://realhunt.co/homes/spain/madrid) [Tenerife 8](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Fuerteventura 5](https://realhunt.co/homes/spain/fuerteventura) [A Coruña 4](https://realhunt.co/homes/spain/a-coruna) [Asturias 4](https://realhunt.co/homes/spain/asturias) [Cádiz 4](https://realhunt.co/homes/spain/cadiz) [Huelva 4](https://realhunt.co/homes/spain/huelva) [Sevilla 4](https://realhunt.co/homes/spain/sevilla) [Barcelona 3](https://realhunt.co/homes/spain/barcelona) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Málaga 3](https://realhunt.co/homes/spain/malaga)
 
-By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 13](https://realhunt.co/homes/spain/green-spain)
+By area [Costa Blanca 8](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 7](https://realhunt.co/homes/spain/costa-calida) [Costa de Almería 3](https://realhunt.co/homes/spain/costa-de-almeria) [Canary Islands 15](https://realhunt.co/homes/spain/canary-islands) [Green Spain 12](https://realhunt.co/homes/spain/green-spain)
 
-By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 90](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
+By feature [With a garden 32](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 31](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 5](https://realhunt.co/cheap-houses/stone-houses-in-spain) [With a terrace 101](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 89](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 15](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 3](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 30](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 19](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Near an airport 44](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 27](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 15](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 21](https://realhunt.co/cheap-houses/new-this-month-in-spain) [Single-storey 6](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 50](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 74](https://realhunt.co/cheap-houses/quiet-location-in-spain)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain)
 
-By feature and budget [Move-in ready under €100,000 70](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 30](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
+By feature and budget [Move-in ready under €100,000 69](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 44](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 29](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 20](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain)
 
-In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 51](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
+In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 50](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
 
 Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville)
 
@@ -19629,7 +19623,7 @@ Cabins and cottages in other countries [Sweden 10](https://realhunt.co/cheap-hou
 
 These listings come from fotocasa.es (2), pisos.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[All 134 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain) · [Filter and sort these homes](https://realhunt.co/?country=Spain#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[All 133 homes in Spain](https://realhunt.co/homes/spain) · [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain) · [Filter and sort these homes](https://realhunt.co/?country=Spain#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -19637,7 +19631,7 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden (updated 
 
 ## Cheap cabins and cottages in Sweden
 
-Updated 14 November 2026. Newest home added 23 September 2026.
+Updated 15 November 2026. Newest home added 23 September 2026.
 
 RealHunt lists 10 cabins and cottages in Sweden today, priced from €53,000 to €93,823. The cheapest costs €53,000: [House on 7,600 m² with a new guest cabin](https://realhunt.co/deal/DbC0D4RoLzc), in Värmlandsnäs. The median price is €71,000 (€1,280/m²), against €73,000 (€800/m²) for the 36 homes we list in Sweden.
 
@@ -19663,7 +19657,7 @@ Top score
 
 - [Score 93€54,000Cottage on 6,148 m² of garden and woodland near two lakesEringsboda, Blekinge148 m² · 3 bed · €365/m²The kind of place where you could slow down a little.](https://realhunt.co/deal/DcNI1r5oM57)
 - [Score 85€60,000Traditional timber cottage with sauna on 2,547 m² of natureBäckhammar, Värmland50 m² · 1 bed · €1,200/m²Surrounded by nature on a generous plot, this is the kind of place where mornings begin with birdsong, afternoons are spent in the garden and…](https://realhunt.co/deal/DckAJqaChuR)
-- [Score 85€75,4401917 Forest Cottage with a swimming lake five minutes awayLinneryd, SmålandA 1917 Swedish cottage in Småland called Skogshyttan — the Forest Cottage — with a forest literally at the back door and a swimming lake five…](https://realhunt.co/deal/DbQ_FfViI4l)
+- [Score 85€75,4401917 Forest Cottage with a swimming lake five minutes awayLinneryd, SmålandA 1917 Swedish cottage in Småland called Skogshyttan, the Forest Cottage, with a forest literally at the back door and a swimming lake five…](https://realhunt.co/deal/DbQ_FfViI4l)
 - [Score 84€53,000House on 7,600 m² with a new guest cabinVärmlandsnäs, VärmlandSet on nearly 7,600 m² of private land, this house offers peaceful surroundings, a spacious terrace, and a newly built guest cabin that’s perfect…](https://realhunt.co/deal/DbC0D4RoLzc)
 - [Score 84€64,000Simple lakeside holiday cottage with extra sleeping cabinsNordanede, Medelpad50 m² · 1 bed · €1,280/m²Set near the lake Mellansjön and surrounded by forest, the property has a simple main cottage, extra sleeping spaces in separate outbuildings and…](https://realhunt.co/deal/DczrZZlCl9L)
 - [Score 83€64,000Sea-view cabin with swimming access and boat mooringHornön, Västernorrland36 m² · €1,778/m²A compact cabin all about its setting.](https://realhunt.co/deal/DdP0Csyilzz)
@@ -19764,7 +19758,7 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-switzerland (upd
 
 ## Cheap cabins and cottages in Switzerland
 
-Updated 14 November 2026. Newest home added 4 October 2026.
+Updated 15 November 2026. Newest home added 4 October 2026.
 
 RealHunt lists 4 cabins and cottages in Switzerland today, priced from €52,800 to €80,700. The cheapest costs €52,800: [Holiday cottage with winter garden by a bathing lake in Salgesch](https://realhunt.co/deal/ch-salgesch-49k-76547), in Salgesch (40 m², 1 bedroom). The median price is €74,900 (€1,614/m²), against €70,100 (€2,337/m²) for the 10 homes we list in Switzerland.
 
@@ -19868,7 +19862,7 @@ Source: https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states (u
 
 ## Cabins and cottages in the United States
 
-Updated 14 November 2026. Newest home added 16 October 2026.
+Updated 15 November 2026. Newest home added 16 October 2026.
 
 RealHunt lists 7 cabins and cottages in the United States today, priced from €83,700 to €177,700. The cheapest costs €83,700: [Blue 1907 cottage with 9-foot ceilings and a new kitchen](https://realhunt.co/deal/us-freeport-83k-605154), in Freeport (83 m², 2 bedrooms). The median price is €137,700 (€1,196/m²), against €164,400 (€1,465/m²) for the 54 homes we list in the United States.
 
@@ -19987,11 +19981,11 @@ Source: https://realhunt.co/cheap-houses/cheapest (updated 2026-11-02)
 
 ## The 20 cheapest homes for sale on RealHunt
 
-Updated 14 November 2026. Newest home added 2 November 2026.
+Updated 15 November 2026. Newest home added 2 November 2026.
 
-The 20 cheapest homes for sale that RealHunt lists today cost from €7,400 to €25,960. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €18,770 (€284/m²), against €84,000 (€1,139/m²) for the 516 homes on RealHunt in 20 countries.
+The 20 cheapest homes for sale that RealHunt lists today cost from €7,400 to €25,960. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €18,770 (€284/m²), against €84,000 (€1,140/m²) for the 514 homes on RealHunt in 20 countries.
 
-These are the 20 lowest asking prices among the 516 homes on RealHunt in 20 countries, cheapest first. The list changes whenever a home is added, sold or repriced.
+These are the 20 lowest asking prices among the 514 homes on RealHunt in 20 countries, cheapest first. The list changes whenever a home is added, sold or repriced.
 
 Homes
 20
@@ -20060,7 +20054,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 
 ### The 20 homes in numbers
 
-- The cut-off today is €25,960: [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb) is number 20 of 516.
+- The cut-off today is €25,960: [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb) is number 20 of 514.
 - Size: half of them have 66 m² or more. The largest has 108 m²: [Four-level village house with sea and mountain views in Sangineto, Calabria](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976).
 - Bedrooms: 4 with 1 bedroom, 8 with 2, 3 with 3; 5 listings do not say.
 - Type: 3 apartments and 14 houses.
@@ -20105,15 +20099,15 @@ On RealHunt today: Japan (11), Italy (7), Sweden (2).
 
 ### More searches
 
-By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 197](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 366](https://realhunt.co/cheap-houses/under-100000)
+By budget [Under €20,000 14](https://realhunt.co/cheap-houses/under-20000) [Under €30,000 28](https://realhunt.co/cheap-houses/under-30000) [Under €50,000 75](https://realhunt.co/cheap-houses/under-50000) [Under €75,000 196](https://realhunt.co/cheap-houses/under-75000) [Under €100,000 364](https://realhunt.co/cheap-houses/under-100000)
 
-By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 263](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 171](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 94](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
+By feature [By the sea 108](https://realhunt.co/cheap-houses/by-the-sea) [Village houses 261](https://realhunt.co/cheap-houses/village-houses) [Near a lake 42](https://realhunt.co/cheap-houses/near-a-lake) [With a garden 135](https://realhunt.co/cheap-houses/with-garden) [With a pool 59](https://realhunt.co/cheap-houses/with-pool) [With a sauna 7](https://realhunt.co/cheap-houses/with-sauna) [Stone houses 44](https://realhunt.co/cheap-houses/stone-houses) [Cabins and cottages 39](https://realhunt.co/cheap-houses/cabins-and-cottages) [With a terrace 269](https://realhunt.co/cheap-houses/with-a-terrace) [Move-in ready 170](https://realhunt.co/cheap-houses/turnkey) [Sea view 48](https://realhunt.co/cheap-houses/with-sea-view) [500 m from the sea 11](https://realhunt.co/cheap-houses/near-the-beach) [With land 32](https://realhunt.co/cheap-houses/with-land) [With a fireplace 72](https://realhunt.co/cheap-houses/with-fireplace) [With a garage 93](https://realhunt.co/cheap-houses/with-garage) [On an island 48](https://realhunt.co/cheap-houses/on-an-island) [In the mountains 31](https://realhunt.co/cheap-houses/in-the-mountains) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines) [Near an airport 175](https://realhunt.co/cheap-houses/near-an-airport) [Under €500/m² 44](https://realhunt.co/cheap-houses/under-500-per-sqm) [Over 100 m² under €50,000 7](https://realhunt.co/cheap-houses/over-100-sqm-under-50000) [Score 90+ 128](https://realhunt.co/cheap-houses/score-90-plus) [Hand-picked 48](https://realhunt.co/cheap-houses/editors-picks) [New this month 111](https://realhunt.co/cheap-houses/new-this-month) [Single-storey 21](https://realhunt.co/cheap-houses/single-storey) [Period features 44](https://realhunt.co/cheap-houses/with-period-features) [Good weather 56](https://realhunt.co/cheap-houses/good-weather) [Quiet location 200](https://realhunt.co/cheap-houses/quiet-location) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings)
 
 Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money)
 
 By feature and budget [Sea view under €100,000 30](https://realhunt.co/cheap-houses/with-sea-view-under-100000) [With a pool under €100,000 16](https://realhunt.co/cheap-houses/with-pool-under-100000) [Sea view under €50,000 11](https://realhunt.co/cheap-houses/with-sea-view-under-50000)
 
-In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 293](https://realhunt.co/cheap-houses/under-100000-dollars)
+In pounds and dollars [Under £50,000 123](https://realhunt.co/cheap-houses/under-50000-pounds) [Under $50,000 58](https://realhunt.co/cheap-houses/under-50000-dollars) [Under $100,000 291](https://realhunt.co/cheap-houses/under-100000-dollars)
 
 Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 37](https://realhunt.co/cheap-houses/near-alicante) [Near Málaga 10](https://realhunt.co/cheap-houses/near-malaga) [Near Seville 10](https://realhunt.co/cheap-houses/near-seville) [Near Milan 8](https://realhunt.co/cheap-houses/near-milan) [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon) [Near Copenhagen 17](https://realhunt.co/cheap-houses/near-copenhagen) [Near Aarhus 13](https://realhunt.co/cheap-houses/near-aarhus) [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
@@ -20125,108 +20119,108 @@ These listings come from athome.co.jp (8), instagram.com (6), idealista.it (3), 
 
 
 ---
-Source: https://realhunt.co/cheap-houses/near-a-lake-in-canada (updated 2026-09-23)
+Source: https://realhunt.co/cheap-houses/good-weather-in-italy (updated 2026-10-05)
 
-## Cheap houses near a lake in Canada
+## Cheap homes with 150 or more good-weather days a year in Italy
 
-Updated 14 November 2026. Newest home added 23 September 2026.
+Updated 15 November 2026. Newest home added 5 October 2026.
 
-RealHunt lists 3 houses near a lake in Canada today, priced from €86,962 to €99,323. The cheapest costs €86,962: [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962), in Glace Bay (124 m², 2 bedrooms). The median price is €93,111 (€991/m²), against €92,552 (€930/m²) for the 9 homes we list in Canada.
+RealHunt lists 3 homes with 150 or more good-weather days a year in Italy today, priced from €12,000 to €65,000. The cheapest costs €12,000: [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF), in Lazio (1 bedroom). The median price is €49,000, against €46,000 for the 56 homes we list in Italy.
+
+On this list: homes in places with 150 or more good-weather days a year, counted from climate normals: a high of 18 to 33 °C, dry and with light wind.
 
 Homes
 3
 
 From
-€86,962
+€12,000
 
 Median price
-€93,111
-
-Median per m²
-€991/m²
-
-Median size
-94 m²
+€49,000
 
 Top score
-94
+89
 
 ### The 3 homes, best score first
 
-- [Score 94€86,962Updated 2-bed house in Glace Bay, Nova ScotiaGlace Bay, Nova Scotia124 m² · 2 bed · €701/m²124 m² (1,334 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/glace-bay-86962)
-- [Score 86€93,111Renovated 2-bed house in Astle, New BrunswickAstle, New Brunswick94 m² · 2 bed · €991/m²94 m² (1,016 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/astle-93111)
-- [Score 85€99,323Move-in ready 2-bed house in Shearstown, NewfoundlandShearstown, Newfoundland79 m² · 2 bed · €1,257/m²79 m² (855 sq ft), 2 bed, 1 bath, built 1945.](https://realhunt.co/deal/shearstown-99323)
+- [Score 89€12,000Stone house in a hill town 55 min from RomeLazio1 bed1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.](https://realhunt.co/deal/DcoUnwBDDxF)
+- [Score 83€49,000Duplex in Acquedolci, MessinaAcquedolci, Sicily81 m² · €605/m²€605/m² · 81 m² · 4 rooms.](https://realhunt.co/deal/acquedolci-49000)
+- [Score 75€65,000Vaulted stone home with terrace in Cisternino's old townCisternino, Apulia45 m² · 1 bed · €1,444/m²In the white historic centre of Cisternino, Puglia: about 45 m² under stone vaults with an entrance hall, living room with sofa bed, kitchenette…](https://realhunt.co/deal/it-cisternino-65k-4hcrku)
 
 ### Compare the 3 homes, cheapest first
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
-[Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962) | Glace Bay, Nova Scotia | €86,962 | 124 m² | €701/m² | 2 | 94 | 23 Sep 2026
-[Renovated 2-bed house in Astle, New Brunswick](https://realhunt.co/deal/astle-93111) | Astle, New Brunswick | €93,111 | 94 m² | €991/m² | 2 | 86 | 23 Sep 2026
-[Move-in ready 2-bed house in Shearstown, Newfoundland](https://realhunt.co/deal/shearstown-99323) | Shearstown, Newfoundland | €99,323 | 79 m² | €1,257/m² | 2 | 85 | 23 Sep 2026
+[Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF) | Lazio | €12,000 | · | · | 1 | 89 | 23 Sep 2026
+[Duplex in Acquedolci, Messina](https://realhunt.co/deal/acquedolci-49000) | Acquedolci, Sicily | €49,000 | 81 m² | €605/m² | · | 83 | 22 Sep 2026
+[Vaulted stone home with terrace in Cisternino's old town](https://realhunt.co/deal/it-cisternino-65k-4hcrku) | Cisternino, Apulia | €65,000 | 45 m² | €1,444/m² | 1 | 75 | 5 Oct 2026
 
 ### The 3 homes in numbers
 
-- Size: half of them have 94 m² or more. The largest has 124 m²: [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962).
-- Bedrooms: 3 with 2 bedrooms.
-- Type: 3 houses.
-- Setting: 2 by the sea, 1 in towns.
-- Where: New Brunswick (1), Newfoundland (1), Nova Scotia (1).
-- Extras named in the listings: 1 with a garden, 1 with a terrace.
-- Scores: 85 to 94 out of 98. The best rated: [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962).
-- Newest, added 23 September 2026: [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962).
+- Good-weather days: a median of 155 a year. The most, 157: [Duplex in Acquedolci, Messina](https://realhunt.co/deal/acquedolci-49000).
+- Bedrooms: 2 with 1 bedroom; 1 listing does not say.
+- Type: 1 apartment and 1 house.
+- Setting: 3 in villages.
+- Where: Apulia (1), Lazio (1), Sicily (1).
+- Scores: 75 to 89 out of 98. The best rated: [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF).
+- Newest, added 5 October 2026: [Vaulted stone home with terrace in Cisternino's old town](https://realhunt.co/deal/it-cisternino-65k-4hcrku).
 
-### Buying costs and rules for foreigners in Canada
+### Buying costs and rules for foreigners in Italy
 
-Can foreigners buy? Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied.
+Can foreigners buy? Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify).
 
-Taxes and fees add about 1.5 to 4% to the price: Buyers usually pay provincial land transfer tax on a sliding scale (Ontario: 0.5% up to $55,000 and 1% from $55,000 to $250,000), legal fees of about $500 to $1,500, title insurance of about $250 and an inspection of $300 to $1,000, while the seller usually pays the agents; foreign buyers also pay Ontario's 25% non-resident speculation tax anywhere in Ontario and British Columbia's 20% additional tax in Metro Vancouver and four other regions. On the median home on this page (€93,111) that is €1,397 to €3,724, so €94,508 to €96,835 in all.
+Taxes and fees add about 4 to 15% to the price: Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%). On the median home on this page (€49,000) that is €1,960 to €7,350, so €50,960 to €56,350 in all.
 
-[Buying-cost calculator for a home in Canada](https://realhunt.co/buying-costs/canada) · [All costs and taxes](https://realhunt.co/costs/canada) · [How to buy, step by step](https://realhunt.co/guide/canada) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Italy](https://realhunt.co/buying-costs/italy) · [All costs and taxes](https://realhunt.co/costs/italy) · [How to buy, step by step](https://realhunt.co/guide/italy) · [Rules by nationality](https://realhunt.co/can-i-buy)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
-- 1 of 3 is close to a motorway, a railway or an airport (high on our noise check).
-- As a group these homes score lowest on price (40/100 on average) and highest on distance to the sea or a lake (90/100).
+- 1 of the 3 listings gives no floor area, so its price per m² cannot be compared.
+- 1 of 3 shows an approximate map position: the listing names the town, not the street.
+- As a group these homes score lowest on buying costs (20/100 on average) and highest on distance to an airport (84/100).
 
 ### Questions buyers ask
 
-#### How much does a house near a lake in Canada cost?
+#### How much does a home with 150 or more good-weather days a year in Italy cost?
 
-Asking prices run from €86,962 to €99,323 across 3 homes. The median is €93,111, or €991/m².
+Asking prices run from €12,000 to €65,000 across 3 homes. The median is €49,000.
 
-#### What is the cheapest house near a lake in Canada?
+#### What is the cheapest home with 150 or more good-weather days a year in Italy?
 
-Updated 2-bed house in Glace Bay, Nova Scotia in Glace Bay, listed at €86,962, 124 m², 2 bedrooms. Its RealHunt score is 94.
+Stone house in a hill town 55 min from Rome in Lazio, listed at €12,000, 1 bedroom. Its RealHunt score is 89.
 
-#### Where are the houses near a lake in Canada?
+#### Where are the homes with 150 or more good-weather days a year in Italy?
 
-Mostly in New Brunswick (1), Newfoundland (1), Nova Scotia (1).
+Mostly in Apulia (1), Lazio (1), Sicily (1).
 
-#### How big are the houses near a lake in Canada?
+### More searches in Italy
 
-The median is 94 m², and 2 bedrooms is the most common layout. The largest has 124 m², in Glace Bay.
+By budget [Under €20,000 5](https://realhunt.co/homes/italy/under-20000) [Under €30,000 13](https://realhunt.co/homes/italy/under-30000) [Under €40,000 22](https://realhunt.co/homes/italy/under-40000) [Under €50,000 33](https://realhunt.co/homes/italy/under-50000) [Under €60,000 37](https://realhunt.co/homes/italy/under-60000) [Under €80,000 42](https://realhunt.co/homes/italy/under-80000) [Under €100,000 48](https://realhunt.co/homes/italy/under-100000)
 
-### More searches in Canada
+By setting [By the sea 9](https://realhunt.co/homes/italy/by-the-sea) [Village houses 41](https://realhunt.co/homes/italy/village-houses)
 
-By budget [Under €100,000 9](https://realhunt.co/homes/canada/under-100000)
+By type [Apartments 11](https://realhunt.co/homes/italy/apartments) [Houses 32](https://realhunt.co/homes/italy/houses)
 
-By setting [By the sea 5](https://realhunt.co/homes/canada/by-the-sea) [In town 4](https://realhunt.co/homes/canada/in-town)
+By bedrooms [1 bedroom 17](https://realhunt.co/homes/italy/1-bedroom) [2 bedrooms 20](https://realhunt.co/homes/italy/2-bedroom) [3 bedrooms 6](https://realhunt.co/homes/italy/3-bedroom)
 
-By bedrooms [2 bedrooms 7](https://realhunt.co/homes/canada/2-bedroom)
+By region [Tuscany 10](https://realhunt.co/homes/italy/tuscany) [Calabria 7](https://realhunt.co/homes/italy/calabria) [Lazio 6](https://realhunt.co/homes/italy/lazio) [Sicily 6](https://realhunt.co/homes/italy/sicily) [Lake Como 5](https://realhunt.co/homes/italy/lake-como) [Sardinia 5](https://realhunt.co/homes/italy/sardinia) [Apulia 4](https://realhunt.co/homes/italy/apulia) [Umbria 4](https://realhunt.co/homes/italy/umbria) [Lombardy 3](https://realhunt.co/homes/italy/lombardy)
 
-By region [New Brunswick 3](https://realhunt.co/homes/canada/new-brunswick)
+By area [Southern Italy 24](https://realhunt.co/homes/italy/southern-italy) [Abruzzo and Marche 3](https://realhunt.co/homes/italy/abruzzo-and-marche)
 
-By area [Atlantic Canada 7](https://realhunt.co/homes/canada/atlantic-canada)
+By feature [Near a lake 11](https://realhunt.co/cheap-houses/near-a-lake-in-italy) [With a garden 10](https://realhunt.co/cheap-houses/with-garden-in-italy) [Stone houses 17](https://realhunt.co/cheap-houses/stone-houses-in-italy) [With a terrace 29](https://realhunt.co/cheap-houses/with-a-terrace-in-italy) [Move-in ready 8](https://realhunt.co/cheap-houses/turnkey-in-italy) [Sea view 10](https://realhunt.co/cheap-houses/with-sea-view-in-italy) [With a fireplace 13](https://realhunt.co/cheap-houses/with-fireplace-in-italy) [With a garage 4](https://realhunt.co/cheap-houses/with-garage-in-italy) [On an island 11](https://realhunt.co/cheap-houses/on-an-island-in-italy) [In the mountains 5](https://realhunt.co/cheap-houses/in-the-mountains-in-italy) [Near an airport 17](https://realhunt.co/cheap-houses/near-an-airport-in-italy) [Under €500/m² 5](https://realhunt.co/cheap-houses/under-500-per-sqm-in-italy) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-italy) [Hand-picked 10](https://realhunt.co/cheap-houses/editors-picks-in-italy) [New this month 14](https://realhunt.co/cheap-houses/new-this-month-in-italy) [Period features 7](https://realhunt.co/cheap-houses/with-period-features-in-italy) [Quiet location 30](https://realhunt.co/cheap-houses/quiet-location-in-italy)
 
-By feature [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-canada)
+Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-italy)
 
-Near a lake in other countries [Italy 11](https://realhunt.co/cheap-houses/near-a-lake-in-italy) [United States 9](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [Sweden 8](https://realhunt.co/cheap-houses/near-a-lake-in-sweden) [Japan 4](https://realhunt.co/cheap-houses/near-a-lake-in-japan)
+By feature and budget [Houses under €100,000 27](https://realhunt.co/cheap-houses/houses-under-100000-in-italy) [Village houses under €50,000 21](https://realhunt.co/cheap-houses/village-houses-under-50000-in-italy) [Houses under €50,000 19](https://realhunt.co/cheap-houses/houses-under-50000-in-italy) [Apartments under €50,000 9](https://realhunt.co/cheap-houses/apartments-under-50000-in-italy) [Sea view under €100,000 8](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-italy) [By the sea under €50,000 7](https://realhunt.co/cheap-houses/by-the-sea-under-50000-in-italy) [Village houses under €30,000 7](https://realhunt.co/cheap-houses/village-houses-under-30000-in-italy) [With a garden under €100,000 7](https://realhunt.co/cheap-houses/with-garden-under-100000-in-italy) [Move-in ready under €100,000 7](https://realhunt.co/cheap-houses/turnkey-under-100000-in-italy) [Stone houses under €50,000 5](https://realhunt.co/cheap-houses/stone-houses-under-50000-in-italy) [Apartments under €20,000 3](https://realhunt.co/cheap-houses/apartments-under-20000-in-italy) [With a garden under €50,000 3](https://realhunt.co/cheap-houses/with-garden-under-50000-in-italy)
 
-These listings come from redfin.ca (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+In pounds and dollars [Under $50,000 28](https://realhunt.co/cheap-houses/under-50000-dollars-in-italy)
 
-[All 9 homes in Canada](https://realhunt.co/homes/canada) · [Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+Good weather in other countries [Spain 50](https://realhunt.co/cheap-houses/good-weather-in-spain)
+
+These listings come from green-acres.it (1), idealista.it (1), immobiliare.it (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+
+[All 56 homes in Italy](https://realhunt.co/homes/italy) · [Email me new homes in Italy](https://realhunt.co/alerts?country=Italy) · [Filter and sort these homes](https://realhunt.co/?country=Italy#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
 
 
 ---
@@ -20353,20 +20347,20 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Village house renovated in 2024 with a roof terrace and sierra views in Vélez-Blanco | Spain | €89,000 | 150 m² | 91 | https://realhunt.co/deal/es-velez-blanco-89k-797484
 - Renovated two-floor house with terrace in Piles, a quiet Valencian town by the sea | Spain | €159,900 | 109 m² | 91 | https://realhunt.co/deal/es-piles-159k-831466
 - House fully renovated in 2024 with terrace and castle views in Santa Olalla del Cala, Sierra de Huelva | Spain | €155,000 | 83 m² | 91 | https://realhunt.co/deal/es-santa-olalla-del-cala-155k-340784
-- Furnished log cabin on stilts with a deck in the Hida forest | Japan | €11,380 | 53 m² | 91 | https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929
-- Mountain chalet with a wood stove and a loft in the Hida forest | Japan | €7,400 | 94 m² | 91 | https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056
-- Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, Teruel | Spain | €63,000 | 256 m² | 91 | https://realhunt.co/deal/es-torre-los-negros-63k-028057
-- Penthouse in Puerto Naos with a sun terrace bigger than the flat | Spain | €178,000 | 29 m² | 91 | https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889
 - Holiday flat with a big sea-view terrace and garden in Calabria | Italy | €29,000 | 55 m² | 91 | https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544
 - Furnished seaside flat a few steps from the beach at Acqualadrone, Messina | Italy | €30,000 | 40 m² | 91 | https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356
+- Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, Teruel | Spain | €63,000 | 256 m² | 91 | https://realhunt.co/deal/es-torre-los-negros-63k-028057
+- Furnished log cabin on stilts with a deck in the Hida forest | Japan | €11,380 | 53 m² | 91 | https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929
+- Mountain chalet with a wood stove and a loft in the Hida forest | Japan | €7,400 | 94 m² | 91 | https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056
+- Penthouse in Puerto Naos with a sun terrace bigger than the flat | Spain | €178,000 | 29 m² | 91 | https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889
 - Renovated two-bedroom mountain house with a vine-covered terrace in Tocón de Quéntar, Granada | Spain | €105,000 | 72 m² | 91 | https://realhunt.co/deal/es-tocon-de-quentar-105k-063140
 - Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù | Italy | €30,000 | 50 m² | 91 | https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163
 - Mountain cabin with hot-spring water on tap, a big deck and a far sea view in Izu | Japan | €10,240 | 66 m² | 91 | https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694
 - Renovated Lake Como flat with a lake-view balcony, 100 m from the shore | Italy | €195,000 | 80 m² | 91 | https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k
 - Single-storey house renovated four years ago with a pool in a 120 m² patio in Madrigueras, Albacete | Spain | €139,000 | 180 m² | 91 | https://realhunt.co/deal/es-madrigueras-139k-939136
 - Furnished beachfront studio 50 m from a sandy beach in Calabria | Italy | €28,000 | 40 m² | 91 | https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771
-- Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama | Japan | €19,910 | 70 m² | 91 | https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430
 - Four-level village house with sea and mountain views in Sangineto, Calabria | Italy | €22,000 | 108 m² | 91 | https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976
+- Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama | Japan | €19,910 | 70 m² | 91 | https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430
 - Renovated four-bedroom Alpujarra house with a sunny porch and sea and mountain views in Nechite | Spain | €145,000 | 210 m² | 91 | https://realhunt.co/deal/es-nechite-145k-256936
 - Wooden villa in Kita-Karuizawa that you can rent out as a holiday home | Japan | €25,600 | 60 m² | 91 | https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770
 - Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room | Japan | €22,750 | 75 m² | 91 | https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004
@@ -20459,7 +20453,6 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Front-line beach flat in Juan Dolio with pool and jacuzzi | Dominican Republic | €223,600 | 105 m² | 88 | https://realhunt.co/deal/dr-juan-dolio-224k-447078
 - Charming 141 m² villa with energy label C and a heat pump | Denmark | €93,600 | 141 m² | 88 | https://realhunt.co/deal/dk-tystofte-94k-acb84b
 - Renovated 220 m² town house with a roof terrace with views and a wine cellar | Spain | €165,000 | 220 m² | 88 | https://realhunt.co/deal/es-capellades-165k-203609
-- Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa | United States | €291,200 | 210 m² | 88 | https://realhunt.co/deal/us-tampa-8105-325k
 - Charming 1952 Cape Cod with fall colours on a 1.1-acre lot | United States | €155,500 | 174 m² | 88 | https://realhunt.co/deal/us-maryland-cape-cod-autumn-175k
 - Lake-country home with a wood stove, deck and pool near Big Wolf Lake | United States | €173,300 | 144 m² | 88 | https://realhunt.co/deal/us-michigan-big-wolf-lake-195k
 - Fairy-tale house with a gazebo and stone BBQ in the Pelion forest | Greece | €95,000 | 68 m² | 88 | https://realhunt.co/deal/gr-pelion-fairytale-house-95k
@@ -20473,6 +20466,7 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Three-room flat with a 15 m² south balcony and free views in Nellestein | Netherlands | €325,000 | 75 m² | 88 | https://realhunt.co/deal/nl-amsterdam-325k-562301
 - Four-room flat with a balcony and cellar in Bielsk Podlaski | Poland | €55,978 | 61 m² | 88 | https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418
 - Traditional corner house in Agiasos, Lesbos' mountain village | Greece | €70,000 | size n/a | 88 | https://realhunt.co/deal/gr-agiasos-70k-s5k3nl
+- Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa | United States | €291,200 | 210 m² | 88 | https://realhunt.co/deal/us-tampa-8105-325k
 - 3-bedroom house with garden in Gáldar | Spain | €70,000 | 54 m² | 88 | https://realhunt.co/deal/es-galdar-70k-15615
 - 5-bedroom house with terrace in Cehegín | Spain | €59,900 | 200 m² | 88 | https://realhunt.co/deal/es-cehegin-59k-77832
 - 3-bedroom house with terrace in Castalla | Spain | €85,000 | 90 m² | 88 | https://realhunt.co/deal/es-castalla-85k-41639
@@ -20506,8 +20500,6 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Newly renovated Mediterranean chalet with a home office, sold furnished | Spain | €167,000 | 124 m² | 87 | https://realhunt.co/deal/es-sueca-167k-027159
 - House in upper Llíria with a pool terrace, panoramic views and a two-car garage | Spain | €179,900 | 164 m² | 87 | https://realhunt.co/deal/es-lliria-180k-695737
 - Single-storey country house with pool, garden, barbecue and two outbuildings | Spain | €179,990 | 185 m² | 87 | https://realhunt.co/deal/es-estremera-180k-760516
-- Dual-unit investment property with rental income in Belmont Heights, Tampa | United States | €237,400 | 158 m² | 87 | https://realhunt.co/deal/us-tampa-4811-265k
-- Mid-century ranch with open floor plan and mature oaks in Herchel Heights, Tampa | United States | €279,600 | 177 m² | 87 | https://realhunt.co/deal/us-tampa-8009-312k
 - Furnished Cretan house with a shared pool for just four homes | Greece | €158,000 | 76 m² | 87 | https://realhunt.co/deal/gr-crete-drapanos-pool-158k
 - Single-storey house with a private pool on a 1,000 m² plot near Seville | Spain | €145,000 | 120 m² | 87 | https://realhunt.co/deal/es-los-palacios-pool-145k-190022882
 - Fully renovated three-bedroom house with an 80 m² roof terrace in Alzira | Spain | €91,000 | 113 m² | 87 | https://realhunt.co/deal/es-alzira-renovated-91k-189401106
@@ -20523,6 +20515,8 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Character flat in a 1930s brick townhouse in central Hajnówka | Poland | €75,398 | 77 m² | 87 | https://realhunt.co/deal/pl-hajnowka-75k-883552
 - Corner three-bed condo with three balconies in Downtown Hollywood | United States | €259,800 | 141 m² | 87 | https://realhunt.co/deal/us-hollywood-140-501-290k
 - Top-floor two-bed condo in a gated resort-style community in Doral | United States | €223,100 | 111 m² | 87 | https://realhunt.co/deal/us-doral-8215-502-249k
+- Dual-unit investment property with rental income in Belmont Heights, Tampa | United States | €237,400 | 158 m² | 87 | https://realhunt.co/deal/us-tampa-4811-265k
+- Mid-century ranch with open floor plan and mature oaks in Herchel Heights, Tampa | United States | €279,600 | 177 m² | 87 | https://realhunt.co/deal/us-tampa-8009-312k
 - 3-bedroom house with terrace in Bicorp | Spain | €90,000 | 173 m² | 87 | https://realhunt.co/deal/es-bicorp-90k-04086
 - 2-bedroom flat in Mazaricos | Spain | €88,000 | 109 m² | 87 | https://realhunt.co/deal/es-mazaricos-88k-64288
 - 2-bedroom apartment with sea views in Cartagena | Spain | €79,900 | 56 m² | 87 | https://realhunt.co/deal/es-cartagena-79k-19964
@@ -20539,7 +20533,6 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Modern rustic Ozarks cabin minutes from the river | United States | €84,500 | 104 m² | 86 | https://realhunt.co/deal/us-dora-84k-329130
 - Red-brick country house with four bedrooms and a closed garden | Denmark | €99,900 | 132 m² | 86 | https://realhunt.co/deal/dk-kippinge-100k-b3d56b
 - Country house with pool, fireplace and valley views, 30 minutes from Valencia | Spain | €169,000 | 138 m² | 86 | https://realhunt.co/deal/es-casinos-169k-742027
-- Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort Lauderdale | United States | €134,400 | 81 m² | 86 | https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k
 - New 2-bed condo with rooftop and terrace in Mazatlán, ready now | Mexico | €86,100 | 68 m² | 86 | https://realhunt.co/deal/mx-mazatlan-86k-809756
 - Sea-view flat between two seas in La Manga, with pool and parking | Spain | €179,900 | 104 m² | 86 | https://realhunt.co/deal/es-la-manga-veneziola-sea-view-pool-180k
 - Remodelled three-bedroom penthouse with a 40 m² private roof terrace in Santomera | Spain | €145,000 | 145 m² | 86 | https://realhunt.co/deal/es-santomera-penthouse-145k-161987047
@@ -20560,6 +20553,7 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - 3-bedroom stone house with Lake Como views | Italy | €89,000 | 160 m² | 86 | https://realhunt.co/deal/lake-como-plesio-89000
 - Corner lakefront townhouse with a tropical garden in Westview, Pembroke Pines | United States | €237,400 | 97 m² | 86 | https://realhunt.co/deal/us-pembroke-pines-8982-265k
 - Townhouse with a screened patio three blocks from Young Circle, Hollywood | United States | €241,900 | 121 m² | 86 | https://realhunt.co/deal/us-hollywood-2200-6-270k
+- Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort Lauderdale | United States | €134,400 | 81 m² | 86 | https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k
 - Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca Raton | United States | €389,800 | 158 m² | 86 | https://realhunt.co/deal/us-boca-raton-18102-435k
 - 1-bedroom house with patio in Arcos de la Frontera | Spain | €52,000 | 45 m² | 86 | https://realhunt.co/deal/es-arcos-de-la-frontera-52k-51177
 - 3-bedroom flat in San Martín del Rey Aurelio | Spain | €85,000 | 89 m² | 86 | https://realhunt.co/deal/es-san-martin-del-rey-aurelio-85k-66374
@@ -20695,7 +20689,6 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Renovated, furnished flat in a garden resort with pool near Tavira | Portugal | €183,000 | 68 m² | 83 | https://realhunt.co/deal/pt-tavira-183k-300012
 - 1920 house on the main square of Corpa with four bedrooms and a terrace | Spain | €173,000 | 145 m² | 83 | https://realhunt.co/deal/es-corpa-173k-599473
 - Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste | Spain | €155,000 | 116 m² | 83 | https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484
-- Bright four-bedroom apartment with community pool in Palmete, Sevilla | Spain | €197,000 | 105 m² | 83 | https://realhunt.co/deal/live-pisos-m1zujj
 - Restored 1925 village house with beams, fireplace and a private patio | Spain | €169,000 | 118 m² | 83 | https://realhunt.co/deal/es-villa-del-prado-169k-315730
 - Character house with panoramic views in Treignac | France | €66,600 | 88 m² | 83 | https://realhunt.co/deal/fr-treignac-66k-6l5r27
 - Brand-new 2024 log cabin surrounded by farmland in Kentucky | United States | €155,500 | 114 m² | 83 | https://realhunt.co/deal/us-kentucky-new-log-cabin-175k
@@ -20709,6 +20702,7 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Bright pre-war flat with three bedrooms and a garden in Boguszów-Gorce | Poland | €75,398 | 70 m² | 83 | https://realhunt.co/deal/pl-boguszow-gorce-75k-675678
 - Fully renovated flat with a fireplace and three bedrooms in Lubsko | Poland | €75,170 | 67 m² | 83 | https://realhunt.co/deal/pl-lubsko-75k-060638
 - Stone town house with three bedrooms and a modern shower | France | €69,000 | size n/a | 83 | https://realhunt.co/deal/fr-auzances-69k-3pkknx
+- Bright four-bedroom apartment with community pool in Palmete, Sevilla | Spain | €197,000 | 105 m² | 83 | https://realhunt.co/deal/live-pisos-m1zujj
 - Lakefront three-bedroom house with a screened patio in Country Park, Boca Raton | United States | €447,600 | 150 m² | 83 | https://realhunt.co/deal/us-boca-raton-8353-500k
 - High-floor two-bedroom with city views at Commodore Plaza, Aventura | United States | €232,100 | 100 m² | 83 | https://realhunt.co/deal/us-aventura-2750-2404-259k
 - Renovated high-floor two-bedroom with skyline and sunset views in Aventura | United States | €313,600 | 149 m² | 83 | https://realhunt.co/deal/us-aventura-18011-1904-350k
@@ -20741,9 +20735,9 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Renovated, furnished studio in Golf del Sur with pool and gardens | Spain | €158,000 | 55 m² | 82 | https://realhunt.co/deal/es-golf-del-sur-158k-368775
 - Two-level beach flat in Antigua Bay, freshly done up, with pool and sea views | Spain | €180,000 | 59 m² | 82 | https://realhunt.co/deal/es-caleta-de-fuste-180k-465927
 - 134 m² flat a few steps from Chinchón's famous Plaza Mayor | Spain | €165,000 | 134 m² | 82 | https://realhunt.co/deal/es-chinchon-165k-004043
+- Spacious five-bedroom apartment in the heart of Vejer de la Frontera | Spain | €290,000 | 191 m² | 82 | https://realhunt.co/deal/live-pisos-a4dw9a
 - Forest house with a 45 m² terrace, hot tub and fireplace | Spain | €179,000 | 115 m² | 82 | https://realhunt.co/deal/es-mediona-179k-850907
 - Log-and-stone mountain house among pines, sold furnished | Spain | €174,000 | 110 m² | 82 | https://realhunt.co/deal/es-piera-174k-821120
-- Spacious five-bedroom apartment in the heart of Vejer de la Frontera | Spain | €290,000 | 191 m² | 82 | https://realhunt.co/deal/live-pisos-a4dw9a
 - Summer cottage on a 980 m² garden plot 2 km from the beach | Greece | €158,000 | 62 m² | 82 | https://realhunt.co/deal/gr-gargaliani-garden-sea-158k
 - Log cabin at Canadohta Lake with a duck pond out front | United States | €177,700 | 93 m² | 82 | https://realhunt.co/deal/us-pennsylvania-lake-cabin-200k
 - Cosy mountain townhouse near the Abetone ski slopes, sold furnished | Italy | €159,000 | 127 m² | 82 | https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k
@@ -20775,8 +20769,8 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Charming renovated flat by Parque Taoro with its own street entrance | Spain | €173,000 | 66 m² | 81 | https://realhunt.co/deal/es-puerto-de-la-cruz-173k-078511
 - Bright 2-bed flat with open views and a palm-fringed pool in Cumbre del Sol | Spain | €190,000 | 85 m² | 81 | https://realhunt.co/deal/es-cumbre-del-sol-190k-901839
 - Designer-renovated flat with a big shaded terrace in Costa del Silencio | Spain | €189,900 | 56 m² | 81 | https://realhunt.co/deal/es-costa-del-silencio-190k-930174
-- 2012 house with 4 bedrooms, renovated, near the coast in Shizuoka | Japan | €81,900 | 92 m² | 81 | https://realhunt.co/deal/jp-shimizu-81k-591487
 - Spacious five-bedroom apartment in the heart of Vejer de la Frontera | Spain | €290,000 | 191 m² | 81 | https://realhunt.co/deal/live-pisos-xpjygk
+- 2012 house with 4 bedrooms, renovated, near the coast in Shizuoka | Japan | €81,900 | 92 m² | 81 | https://realhunt.co/deal/jp-shimizu-81k-591487
 - Studio with communal pool 950 m from La Mata beach, Torrevieja | Spain | €99,000 | 29 m² | 81 | https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k
 - Sea-view villa with two covered verandas 1 km from Vignola beach | Italy | €160,000 | 86 m² | 81 | https://realhunt.co/deal/it-sardinia-vignola-sea-view-160k
 - Renovated Umbrian country home with an annexe, vines and an orchard | Italy | €160,000 | 114 m² | 81 | https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k
@@ -20810,15 +20804,15 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Cosy stone house with pellet stove and views near Limoux | France | €69,900 | 74 m² | 80 | https://realhunt.co/deal/fr-limoux-69k-vdt9re
 - Corralejo flat with a sunny terrace over three pools and palm gardens | Spain | €199,950 | 57 m² | 80 | https://realhunt.co/deal/es-corralejo-200k-385108
 - Modern 2009 duplex in the mountains of the Sierra Oeste, ready to move in | Spain | €169,000 | 96 m² | 80 | https://realhunt.co/deal/es-robledondo-169k-614624
-- Bright renovated three-bedroom flat with modern kitchen in Bellavista, Sevilla | Spain | €199,000 | 100 m² | 80 | https://realhunt.co/deal/live-pisos-huy007
 - Renovated granite stazzo with flower boxes in a Sardinian village | Italy | €97,000 | 70 m² | 80 | https://realhunt.co/deal/it-sardinia-luras-stazzo-97k
-- Renovated four-bedroom house with terrace in Palmete, Seville | Spain | €188,000 | 130 m² | 80 | https://realhunt.co/deal/live-pisos-4ds0f1
 - Hillside house with a sea-view veranda 1 km from Porto Ottiolu beach | Italy | €158,000 | 64 m² | 80 | https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k
 - Studio with a view over the port of Marseille, gated residence | France | €54,000 | 28 m² | 80 | https://realhunt.co/deal/fr-marseille-54k-r-4563
 - Renovated one-bedroom flat in central Roubaix, near Lille | France | €57,000 | 43 m² | 80 | https://realhunt.co/deal/fr-roubaix-57k-230014
 - Modern two-room flat with an open kitchen near the universities, Saint-Étienne | France | €54,000 | 40 m² | 80 | https://realhunt.co/deal/fr-saint-etienne-54k-729815
 - Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commission | Germany | €40,000 | 41 m² | 80 | https://realhunt.co/deal/de-chemnitz-40k-587336
 - Four-room flat with open kitchen and city views in Wałbrzych | Poland | €79,740 | 57 m² | 80 | https://realhunt.co/deal/pl-walbrzych-80k-970297
+- Bright renovated three-bedroom flat with modern kitchen in Bellavista, Sevilla | Spain | €199,000 | 100 m² | 80 | https://realhunt.co/deal/live-pisos-huy007
+- Renovated four-bedroom house with terrace in Palmete, Seville | Spain | €188,000 | 130 m² | 80 | https://realhunt.co/deal/live-pisos-4ds0f1
 - 1-bedroom flat with terrace in Moguer | Spain | €98,000 | 48 m² | 80 | https://realhunt.co/deal/es-moguer-98k-75562
 - Renovated, furnished stone home with mezzanine and private garden in Tuscany | Italy | €83,000 | size n/a | 80 | https://realhunt.co/deal/DdDyY8OgGIP
 - Woodland summer cabin with guesthouse and swimming lakes nearby | Sweden | €71,000 | size n/a | 80 | https://realhunt.co/deal/DdSVb-ainBZ
@@ -20876,9 +20870,9 @@ For articles that use a figure from the [RealHunt data pages](https://realhunt.c
 - Cosy, fully kept village house below the Montagne Noire | France | €73,000 | 50 m² | 73 | https://realhunt.co/deal/fr-saint-denis-73k-bk6670
 - Little stone farmhouse with terrace in an Umbrian village | Italy | €46,000 | 40 m² | 73 | https://realhunt.co/deal/DcndWlcGwtG
 - 3-bed stone village house in a quiet hamlet | Italy | €55,000 | size n/a | 73 | https://realhunt.co/deal/DcLIqCsHD3H
-- Bright duplex apartment with exposed brick in central Madrid | Spain | €348,000 | 71 m² | 72 | https://realhunt.co/deal/live-pisos-402uzp
 - Designer-renovated furnished studio in Magdeburg, no commission | Germany | €60,000 | 39 m² | 72 | https://realhunt.co/deal/de-magdeburg-60k-478460
 - Studio with a balcony over the trees in Bremen-Kattenesch, vacant | Germany | €60,000 | 34 m² | 72 | https://realhunt.co/deal/de-bremen-60k-206993
-- Renovated two-bedroom flat with modern finishes in Embajadores-Lavapiés, Madrid | Spain | €255,000 | 50 m² | 71 | https://realhunt.co/deal/live-pisos-laeuee
+- Bright duplex apartment with exposed brick in central Madrid | Spain | €348,000 | 71 m² | 72 | https://realhunt.co/deal/live-pisos-402uzp
 - Modernised studio with a new kitchen near Gelsenkirchen centre | Germany | €60,000 | 30 m² | 71 | https://realhunt.co/deal/de-gelsenkirchen-60k-424740
+- Renovated two-bedroom flat with modern finishes in Embajadores-Lavapiés, Madrid | Spain | €255,000 | 50 m² | 71 | https://realhunt.co/deal/live-pisos-laeuee
 - Like-new furnished camping house in the sunny Upper Valais | Switzerland | €88,400 | 34 m² | 70 | https://realhunt.co/deal/ch-raron-82k-76555

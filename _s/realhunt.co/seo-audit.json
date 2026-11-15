@@ -1,7 +1,7 @@
 {
  "summary": {
-  "pages": 3930,
-  "indexable": 3396,
+  "pages": 3922,
+  "indexable": 3388,
   "noindex": 534,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3378,
+  "pages_with_hreflang": 3370,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3035,
-  "redirects": 1171,
-  "moved_stubs": 215
+  "with_lastmod": 3061,
+  "redirects": 1179,
+  "moved_stubs": 223
  },
  "failures": [],
  "groups": {
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1475,
+   "median_words": 1463,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 251,
-   "indexable": 251,
+   "pages": 250,
+   "indexable": 250,
    "noindex": 0,
    "median_words": 1492,
    "title_over_60": 6,
@@ -337,16 +337,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1800,
+   "median_words": 1787,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 251,
-   "indexable": 251,
+   "pages": 250,
+   "indexable": 250,
    "noindex": 0,
-   "median_words": 1754,
+   "median_words": 1737,
    "title_over_60": 70,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -391,7 +391,7 @@
    "pages": 153,
    "indexable": 153,
    "noindex": 0,
-   "median_words": 559,
+   "median_words": 558,
    "title_over_60": 2,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -463,7 +463,7 @@
    "pages": 38,
    "indexable": 37,
    "noindex": 1,
-   "median_words": 912,
+   "median_words": 907,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -478,10 +478,10 @@
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 198,
-   "indexable": 198,
+   "pages": 195,
+   "indexable": 195,
    "noindex": 0,
-   "median_words": 1656,
+   "median_words": 1640,
    "title_over_60": 21,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -562,7 +562,7 @@
    "pages": 10,
    "indexable": 10,
    "noindex": 0,
-   "median_words": 1294,
+   "median_words": 1280,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -697,16 +697,16 @@
    "pages": 20,
    "indexable": 16,
    "noindex": 4,
-   "median_words": 2874,
+   "median_words": 2784,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 198,
-   "indexable": 198,
+   "pages": 195,
+   "indexable": 195,
    "noindex": 0,
-   "median_words": 1438,
+   "median_words": 1436,
    "title_over_60": 1,
    "desc_out_of_range": 19,
    "inlinks_under_3": 0
@@ -967,7 +967,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3396,
+   "pages with JSON-LD changed": 3388,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
    "Article: author, date, headline or image missing": 52
@@ -1131,7 +1131,7 @@
   ]
  },
  "spanish": {
-  "twins": 990,
+  "twins": 986,
   "groups": {
    "homes": {
     "pages": 591,
@@ -1142,9 +1142,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 466,
-    "twins": 466,
-    "words": 962841,
+    "pages": 462,
+    "twins": 462,
+    "words": 953917,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1159,7 +1159,7 @@
    "content": {
     "pages": 561,
     "twins": 560,
-    "words": 433498,
+    "words": 433413,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1175,21 +1175,19 @@
  },
  "tech": {
   "summary": {
-   "checked": 3930,
-   "indexable": 3396,
+   "checked": 3922,
+   "indexable": 3388,
    "max_depth": 3,
-   "titles_changed_since_last_build": 310,
+   "titles_changed_since_last_build": 43,
    "external_link_hosts": 314,
    "no_text_without_javascript": 9,
-   "fake_urgency": 2,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 5,
    "year_in_title": 2,
-   "near_identical_pages": 512,
+   "near_identical_pages": 511,
    "region_used_as_country": 2,
-   "em_dash_in_home_data": 4,
-   "fixed_here": 55,
-   "pages_with_em_dash_replaced": 53,
+   "title_changed_twice_in_28_days": 39,
+   "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
   "failures": [],
@@ -1204,10 +1202,6 @@
     "/network/reservation-contract (26 words)",
     "/new-builds (19 words)",
     "/research/new-builds (31 words)"
-   ],
-   "fake_urgency": [
-    "/deal/dr-las-terrenas-201k-439030: (about €201,200), marked as a limited-time offer. Is €201,200 a good price for",
-    "/es/deal/dr-las-terrenas-201k-439030: os 201.200 €), anunciado como oferta por tiempo limitado. Anunciada en supercasas.com."
    ],
    "legal_page_without_disclaimer": [
     "/es/guide/buying",
@@ -1266,24 +1260,59 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/italian-in-cyprus (92%)",
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
-    "... 472 more"
+    "... 471 more"
    ],
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
    ],
-   "em_dash_in_home_data": [
-    "Dc8TyIDkexU",
-    "Da7vZIFDIuo",
-    "DbA4_hKEThx",
-    "DbQ_FfViI4l"
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/apartments-under-100000-in-spain: Cheap apartments for sale in Spain under €100,000 (29)",
+    "/cheap-houses/turnkey: Cheap move-in ready homes (170, from €15,930) · RealHunt",
+    "/cheap-houses/turnkey-in-spain: Cheap move-in ready homes in Spain (89, from €39,000)",
+    "/cheap-houses/turnkey-under-100000-in-spain: Cheap move-in ready homes in Spain under €100,000 (69)",
+    "/cheap-houses/under-100000: Cheap houses for sale under €100,000 (364, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (291, from €7,400)",
+    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (50) · RealHunt",
+    "/cheap-houses/under-75000: Cheap homes for sale under €75,000 (196, from €7,400)",
+    "/cheap-houses/village-houses: Cheap village houses (261, from €7,400) · RealHunt",
+    "/cheap-houses/with-garage: Cheap homes with a garage (93, from €18,770) · RealHunt",
+    "/es/cheap-houses/apartments-under-100000-in-spain: Pisos baratos en venta en España por menos de 100.000 € (29)",
+    "/es/cheap-houses/turnkey: Viviendas baratas para entrar a vivir en venta (170)",
+    "/es/cheap-houses/under-100000: Casas baratas en venta por menos de 100.000 € (364)",
+    "/es/cheap-houses/under-75000: Viviendas baratas en venta por menos de 75.000 € (196)",
+    "/es/cheap-houses/village-houses: Casas de pueblo baratas en venta (261, desde 7.400 €)",
+    "/es/cheap-houses/with-garage: Viviendas baratas con garaje en venta (93, desde 18.770 €)",
+    "/es/homes/japan: Casas en venta en Japón (28, desde 7.400 €) · RealHunt",
+    "/es/homes/japan/under-80000: Casas baratas en venta en Japón por menos de 80.000 € (26)",
+    "/es/homes/japan/village-houses: Casas de pueblo en venta en Japón (18, desde 7.400 €)",
+    "/es/homes/spain/3-bedroom: Casas de 3 dormitorios en venta en España (29) · RealHunt",
+    "/es/homes/spain/apartments: Pisos en venta en España (60, desde 61.990 €) · RealHunt",
+    "/es/homes/spain/asturias: Casas en venta en Asturias (España) (4, desde 64.900 €)",
+    "/es/homes/spain/green-spain: Viviendas baratas en venta en la España Verde (12)",
+    "/es/homes/spain: Viviendas en venta en España (133, desde 39.000 €)",
+    "/es/homes/spain/under-150000: Viviendas en venta en España por menos de 150.000 € (93)",
+    "/es/homes/spain/under-200000: Viviendas en venta en España por menos de 200.000 € (122)",
+    "/es/homes/spain/village-houses: Casas de pueblo en venta en España (75, desde 39.000 €)",
+    "/homes/japan: Houses for sale in Japan (28, from €7,400) · RealHunt",
+    "/homes/japan/under-80000: Cheap houses for sale in Japan under €80,000 (26) · RealHunt",
+    "/homes/japan/village-houses: Village houses in Japan (18, from €7,400) · RealHunt",
+    "/homes/spain/3-bedroom: 3-bedroom houses for sale in Spain (29, from €39,000)",
+    "/homes/spain/apartments: Apartments for sale in Spain (60, from €61,990) · RealHunt",
+    "/homes/spain/asturias: Houses for sale in Asturias, Spain (4, from €64,900)",
+    "/homes/spain/green-spain: Cheap homes for sale in Green Spain (12, from €64,900)",
+    "/homes/spain: Homes for sale in Spain (133, from €39,000) · RealHunt",
+    "/homes/spain/under-100000: Cheap homes for sale in Spain under €100,000 (77) · RealHunt",
+    "/homes/spain/under-150000: Homes for sale in Spain under €150,000 (93, from €39,000)",
+    "/homes/spain/under-200000: Homes for sale in Spain under €200,000 (122, from €39,000)",
+    "/homes/spain/village-houses: Village houses in Spain (75, from €39,000) · RealHunt"
    ]
   },
   "depth": {
    "0": 2,
    "1": 128,
-   "2": 2939,
-   "3": 327
+   "2": 2929,
+   "3": 329
   },
   "noindex": {
    "app screen": 5,
@@ -1370,9 +1399,9 @@
  },
  "sitemaps": {
   "sitemap-main.xml": 17,
-  "sitemap-countries.xml": 164,
-  "sitemap-prices.xml": 50,
-  "sitemap-cheap-houses.xml": 252,
+  "sitemap-countries.xml": 162,
+  "sitemap-prices.xml": 49,
+  "sitemap-cheap-houses.xml": 251,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 34,
@@ -1382,9 +1411,9 @@
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 52,
   "sitemap-es-main.xml": 14,
-  "sitemap-es-countries.xml": 164,
-  "sitemap-es-prices.xml": 50,
-  "sitemap-es-cheap-houses.xml": 252,
+  "sitemap-es-countries.xml": 162,
+  "sitemap-es-prices.xml": 49,
+  "sitemap-es-cheap-houses.xml": 251,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 33,

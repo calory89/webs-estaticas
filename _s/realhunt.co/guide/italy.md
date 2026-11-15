@@ -29,9 +29,9 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 ### Best homes in Italy
 
 - [€95,000 · Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133) · San Siro, Lake Como · score 91 · 60 m² · 2 bed
-- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€29,000 · Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) · Torremezzo, Falconara Albanese, Calabria · score 91 · 55 m² · 1 bed
 - [€30,000 · Furnished seaside flat a few steps from the beach at Acqualadrone, Messina](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) · Acqualadrone, Messina, Sicily · score 91 · 40 m² · 1 bed
+- [€115,000 · Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633) · San Siro, Lake Como, Lombardy · score 91 · 85 m² · 2 bed
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
