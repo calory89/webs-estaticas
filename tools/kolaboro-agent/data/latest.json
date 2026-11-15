@@ -5166,47 +5166,61 @@
  },
  "ramada-batumi-archi": {
   "name": "Ramada Batumi by Archi",
-  "url": "https://metropolitan.realestate/batumi/ramada-batumi-archi-properties-batumi-georgia/",
+  "url": "https://archi.ge/en/block/ramada-hotel-and-suites-by-wyndham",
   "market": "Georgia",
   "claims": {
-   "price_from": 90885,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2028,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Purchasing a room in the Ramada Hotel and Suites by Wyndham is an excellent investment",
+    "Rooms in branded hotels like this can be rented at rates up to 10 times higher than standard apartments",
+    "Even if your room is not directly rented, Wyndham's hotel pool system ensures steady income by evenly distributing revenues among all owners"
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 403: Forbidden"
+  "source": "ai",
+  "hash": "405c1292f3ac32cf",
+  "sha256": "405c1292f3ac32cf0c06148016b39cd828affeddaae6efd1e72cf070414b5a71",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "archi-universe-tbilisi": {
   "name": "Archi Universe",
-  "url": "https://metropolitan.realestate/tbilisi/archi-universe-tbilisi-georgia/",
+  "url": "https://archi.ge/en/complex/archi-universe",
   "market": "Georgia",
   "claims": {
-   "price_from": 75600,
-   "currency": "USD",
+   "price_from": null,
+   "currency": "GEL",
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2027,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Boasting 26 stories, Archi Universe comprises 257 apartments",
+    "a remarkable 40% reduction in energy consumption for heating or cooling purposes",
+    "Block A Ongoing 65 %"
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 403: Forbidden"
+  "source": "ai",
+  "hash": "61959781c185f422",
+  "sha256": "61959781c185f422c693eb3c3c34492c6c0aababe98ba4518b30b8ac879eae8a",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "abora-adeje-tenerife": {
   "name": "Abora",
@@ -7217,7 +7231,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+  "last_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
  },
  "comfort-by-orbi-orbi-group": {
   "name": "Comfort by Orbi",
@@ -11200,22 +11214,25 @@
   "url": "https://www.taomonterocella.com/",
   "market": "Los Cabos",
   "claims": {
-   "price_from": 299000,
-   "currency": "USD",
-   "title_type": "fideicomiso (restricted zone)",
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": null,
    "advertised_yield_pct": null,
-   "completion_year": 2026,
-   "permit_claim": false,
+   "completion_year": null,
+   "permit_claim": null,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": null,
    "escrow_or_guarantee": null,
    "quotes": []
   },
-  "source": "seed",
-  "last_error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000)>"
+  "source": "ai",
+  "hash": "e3b0c44298fc1c14",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "cora-sur-los-cabos-grupo-habitat": {
   "name": "Cora Sur",
@@ -11588,12 +11605,12 @@
  },
  "sora-denia-taylor-wimpey": {
   "name": "Sora",
-  "url": "https://www.rightmove.co.uk/properties/169260455",
+  "url": "https://taylorwimpeyspain.com/property/sora-denia/",
   "market": "Costa Blanca",
   "claims": {
    "price_from": 399000,
    "currency": "EUR",
-   "title_type": "freehold",
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
@@ -11603,10 +11620,17 @@
    "permit_number": null,
    "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Estimated completion date: February 2028",
+    "The south-facing aspect and these views guarantee plenty of natural light all day long",
+    "For sale directly from Taylor Wimpey España."
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 404: Not Found"
+  "source": "ai",
+  "hash": "54d4d31a62fc9d4a",
+  "sha256": "54d4d31a62fc9d4a2602a379d6a600c1df6e58fedd7eff034ce46bb038819be3",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "salvia-san-pedro-grupo-abu-nvoga": {
   "name": "Salvia",
@@ -21126,7 +21150,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "HTTP Error 404: Not Found"
+  "last_error": "<urlopen error [Errno -2] Name or service not known>"
  },
  "one-lady-bird-lake-related-texas": {
   "name": "One Lady Bird Lake",
@@ -21754,12 +21778,12 @@
  },
  "lunara-on-the-strand-rak-properties": {
   "name": "Lunara on The Strand",
-  "url": "https://opr.ae/projects/lunara-the-strand-al-marjan-rak",
+  "url": "https://www.rakproperties.ae/news/rak-properties-announces-sales-for-lunara-on-the-strand-a-new-destination-community-at-marjan-beach/",
   "market": "Ras Al Khaimah",
   "claims": {
    "price_from": 1280000,
    "currency": "AED",
-   "title_type": "freehold",
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
@@ -21769,10 +21793,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "with competitive prices starting from AED 1.28m.",
+    "Construction is scheduled to begin in Q4 2026 with an anticipated completion date of Q1 2029.",
+    "Lunara on The Strand will consist of 583 homes across a collection of three connected towers."
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 404: Not Found"
+  "source": "ai",
+  "hash": "e3ffc4d237c2c849",
+  "sha256": "e3ffc4d237c2c849f6870c9b123bf914a92a0522640a553c10f4708b1cdfe478",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "fortune-bay-residences-topero": {
   "name": "Fortune Bay Residences",
@@ -25582,7 +25613,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+  "last_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>"
  },
  "masaka-views-eco-estate-kigali": {
   "name": "Masaka Views Eco Estate",
@@ -25738,7 +25769,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "robots.txt disallows this page"
+  "last_error": "<urlopen error [Errno -2] Name or service not known>"
  },
  "valora-estate-namibia": {
   "name": "Valora Estate",
@@ -25804,7 +25835,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "robots.txt disallows this page"
+  "last_error": "<urlopen error [Errno -2] Name or service not known>"
  },
  "sovereign-bay-at-gulf-of-goa-estate-villas-goa": {
   "name": "Sovereign Bay at Gulf of Goa (Estate Villas)",
@@ -26380,22 +26411,29 @@
   "url": "https://panorama.az/en",
   "market": "Baku",
   "claims": {
-   "price_from": 135000,
-   "currency": "USD",
-   "title_type": "Panorama by ELIE SAAB",
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2030,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Azerbaijan's first branded residence, created for those who appreciate impeccable taste and timeless elegance.",
+    "27-story modern residential building. A contemporary project rising along the coastline",
+    "Located within walking distance of the Caspian Sea"
+   ]
   },
-  "source": "seed",
-  "last_error": "<urlopen error [Errno -2] Name or service not known>"
+  "source": "ai",
+  "hash": "a7835cb32f7417da",
+  "sha256": "a7835cb32f7417daf8824550023d823474689d2c0c08f5d4a9b71637c5c44263",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "reportage-heights-baku": {
   "name": "Reportage Heights",
@@ -27778,22 +27816,29 @@
   "url": "https://www.montagecayresidences.com/",
   "market": "Bahamas",
   "claims": {
-   "price_from": 9000000,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2026,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Discover a new measure of private island living in The Bahamas.",
+    "The 46-slip deep-water luxury Marina is unparalleled in The Abacos, exclusive to owners.",
+    "No governmental agency has judged the merits or value, if any, of the development."
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 403: Forbidden"
+  "source": "ai",
+  "hash": "2a90308d29895cd8",
+  "sha256": "2a90308d29895cd8661844f30ae98b2a06023e34be39aaecbaf798c4e550b08a",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "banyan-tree-bimini-resort-residences-rockwell-island-bahamas": {
   "name": "Banyan Tree Bimini Resort & Residences (Rockwell Island)",
@@ -31725,52 +31770,66 @@
   "url": "https://augustxing.com/projects/le-reve/",
   "market": "Lagos",
   "claims": {
-   "price_from": 550000,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2026,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Speak to our team about available units, pricing and the purchase process.",
+    "View Floor Plan →",
+    "Floor Plans Layouts and Configurations"
+   ]
   },
-  "source": "seed",
-  "last_error": "spend budget reached"
+  "source": "ai",
+  "hash": "a794dfa1f1b0a345",
+  "sha256": "a794dfa1f1b0a3452cdef885d7e22bb204dcf966b94de7c7b726660d5b533d52",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "caspian-heights-lagos": {
   "name": "Caspian Heights",
   "url": "https://arklandproperties.com/locations/caspian-heights/",
   "market": "Lagos",
   "claims": {
-   "price_from": 250392,
-   "currency": "USD",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2026,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Caspian Heights is a 24-floor development featuring an exclusive collection of 1, 2, 3, and 4-bedroom residences",
+    "Residents enjoy premium amenities including a swimming pool, fitness centre, landscaped surroundings, advanced security",
+    "two private parking spaces per apartment"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "69b676ba58bf5aa7",
+  "sha256": "69b676ba58bf5aa7cea7178f3cd643b8dab09e7ed2c4be1cf6a1cfd85de2e4e9",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "syncord-tower-lagos": {
   "name": "Syncord Tower",
   "url": "https://arklandproperties.com/locations/",
   "market": "Lagos",
   "claims": {
-   "price_from": 918606909,
-   "currency": "NGN",
+   "price_from": null,
+   "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
@@ -31783,8 +31842,11 @@
    "escrow_or_guarantee": null,
    "quotes": []
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "fa4f287b5ae3fb06",
+  "sha256": "fa4f287b5ae3fb06ce386a3464740dcb0b13166456374a58f0626643c51ef2a1",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "the-highgrove": {
   "name": "The Highgrove",
@@ -31803,10 +31865,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "COMPLETION DATE Q4 2027",
+    "UNIT TYPES One, two and three bedroom apartments",
+    "20% at the time of booking"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "3ed191a27a2e0548",
+  "sha256": "3ed191a27a2e054868ae6e274b99af7e9b491b63a21c10b0375ca21b5ea9607f",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "costa-mare": {
   "name": "Costa Mare",
@@ -31825,10 +31894,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "HANDOVER Q3 2028",
+    "20% at the time of booking + AED 3,000 RERA registration fee",
+    "this amount is earmarked specifically to cover expenses related to the title deed registration process"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "9ac9c1aea86dfc5a",
+  "sha256": "9ac9c1aea86dfc5ae9a8abdfb72f145f99703d3efcaf4f42e00731bc20c6b755",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "fahid-beach-residences": {
   "name": "Fahid Beach Residences",
@@ -31849,15 +31925,18 @@
    "escrow_or_guarantee": null,
    "quotes": []
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "e5c62c3e31735435",
+  "sha256": "e5c62c3e3173543585129a4e93691a7291365b0cd65fbc9e365842f44c04c4cd",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "bermondsey-place": {
   "name": "Bermondsey Place",
   "url": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place",
   "market": "London",
   "claims": {
-   "price_from": 557500,
+   "price_from": 550000,
    "currency": "GBP",
    "title_type": null,
    "lease_years_base": null,
@@ -31867,12 +31946,19 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "New homes from: £550,000",
+    "Phase One Now Over 70% Sold!",
+    "Site Plans / Site Maps are indicative only and subject to change"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "7b51b0d0a68f522f",
+  "sha256": "7b51b0d0a68f522fb9ee80b863aaa9d68073d162ae21fc08273396f736028771",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "celere-sunrise": {
   "name": "Célere Sunrise",
@@ -31889,12 +31975,19 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "From €412,100",
+    "Works progress 81%",
+    "¡Obras iniciadas!"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "57c22ed2fccfeace",
+  "sha256": "57c22ed2fccfeacec15f1c7e1b8c8fcca90927bdd5566a9d021ac32b47d6e468",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "luz-altear": {
   "name": "Luz Altear",
@@ -31911,12 +32004,19 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": null,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "A new project has arrived in Alta de Lisboa: LUZ ALTEAR.",
+    "The condominium includes 165 residences spread over 5 blocks.",
+    "Under sale"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "ca98796cd8bb4e44",
+  "sha256": "ca98796cd8bb4e449f84ab3a0819c7054e055ea239461cc38c47ac4dc3675e81",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "marina-village-residences-visterija-and-jasmin-residences": {
   "name": "Marina Village Residences (Visterija and Jasmin Residences)",
@@ -31929,16 +32029,23 @@
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": true,
-   "advertised_yield_pct": null,
+   "advertised_yield_pct": 4,
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Enquire about 2-bedroom apartments at Visterija & Jasmin which include a 4% guaranteed return on investment for 3 years",
+    "INVEST NOW WITH JUST A 20% DOWNPAYMENT",
+    "Interest-free payment plan, which allows for moving in or renting out the residence before full payment is settled"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "6f4bfb9cdf82757d",
+  "sha256": "6f4bfb9cdf82757dec1c2cf5b18792112771e3be5be15bc77a9acb8820a7295d",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "thalassa-residences-2": {
   "name": "Thalassa Residences 2",
@@ -31957,10 +32064,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Newly Launched",
+    "29 studios, one and two-bedroom apartments 150m from the sea and city-centre",
+    "A rating energy performance certificate"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "bac360af43a57173",
+  "sha256": "bac360af43a57173ce93b9665987e1a517877350c0346fc9452360be623fe00a",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "aktea-residences-4": {
   "name": "Aktea Residences 4",
@@ -31979,32 +32093,46 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Aktea Residences 4 Limassol, Cyprus – Residential, Current From €510,000",
+    "100% of apartments at Aktea Residences 1, 2 and 3 sold",
+    "A rating energy performance certificate"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "53340b143cfaa8dc",
+  "sha256": "53340b143cfaa8dcef2c4911d47a04c755f274ec4898c3ec6d94ae2eed57cab4",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "trilogy-limassol-seafront": {
   "name": "Trilogy Limassol Seafront",
   "url": "https://www.cybarco.com/project/trilogy-limassol-seafront/",
   "market": "Cyprus",
   "claims": {
-   "price_from": 710000,
+   "price_from": 840000,
    "currency": "EUR",
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2026,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Limassol, Cyprus – from €840,000",
+    "It is the largest mixed-use sky-rise development in the Mediterranean region",
+    "The masterplan"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "a58826ee4dd32d74",
+  "sha256": "a58826ee4dd32d743ebd3cf1139c659e6507d95e638f7ddf384c0cb7b76d691d",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "isle-waterfront-newstead": {
   "name": "Isle Waterfront Newstead",
@@ -32023,10 +32151,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "with completion anticipated November 2026",
+    "Enquire now for more information on this final and rare opportunity",
+    "last release of 1, 2 and 3 bedroom residences and 3 & 4 bedroom pavilions now selling"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "bf495553e2fc94be",
+  "sha256": "bf495553e2fc94be9e26e70c2f86a10bcdeae2b6e6728302e85d156a1ca513c5",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "sands-residences": {
   "name": "Sands Residences",
@@ -32045,10 +32180,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Price starts at PHP 6,000,000 - PHP 17,500,000",
+    "Pre-selling Your Coastal Retreat Awaits",
+    "Choose from spacious studios and 1- or 2-Bedroom units, each crafted with an emphasis on comfort"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "7323a2bca1e114b8",
+  "sha256": "7323a2bca1e114b8bbd919c8cec71930e3bb686c7b821fb59e740cfc4bccee07",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "se-ruma-eco-sanctuary": {
   "name": "SE.RUMA (Eco Sanctuary)",
@@ -32057,20 +32199,27 @@
   "claims": {
    "price_from": 250000,
    "currency": "MYR",
-   "title_type": "leasehold 99 years (expiry 09/11/2110)",
-   "lease_years_base": null,
+   "title_type": "leasehold",
+   "lease_years_base": 99,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2029,
    "permit_claim": true,
-   "permit_number": "14050-10/01-2028/0045(A)-(S)",
-   "plans_published": false,
+   "permit_number": "MPKL/JKB/2/2/15/2023(A)(12)",
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Land Tenure: Leasehold (99 Years - Expiry 09/11/2110)",
+    "Minimum Price: RM250,000, Maximum Price: RM1,143,100",
+    "Expected Completion Date: July 2029"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "80237c8c1f324386",
+  "sha256": "80237c8c1f324386b5d6b2d4c64ad9ef6df650496bea9e4696929082de29838d",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "serenity-view": {
   "name": "Serenity View",
@@ -32082,17 +32231,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du 2 pièces au 4 pièces à partir de 325 000 €",
+    "Livraison à partir du 4 ème trimestre 2028",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "2b8dc8d3bf2697e6",
+  "sha256": "2b8dc8d3bf2697e608b8fbc2a454791ee8dc4852850348d320dc9b0f6f26aac9",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "les-terrasses-d-ella": {
   "name": "Les Terrasses d'Ella",
@@ -32104,17 +32260,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du 2 pièces au 3 pièces à partir de 270 000 €",
+    "Livraison à partir du 2 ème trimestre 2028",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "e071c64801db41a9",
+  "sha256": "e071c64801db41a9a4594483c59e797c48de5b950d5f8c1f528aa93f17074e7a",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "cove-edition-5-by-imtiaz": {
   "name": "Cove Edition 5 by Imtiaz",
@@ -32131,12 +32294,19 @@
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "ESTIMATED COMPLETION DATE Q2 - 2027",
+    "the remaining 30% payable post-handover over 3 years at 2.5% per quarter",
+    "We offer two flexible, investment-friendly payment options"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "688c50266a368445",
+  "sha256": "688c50266a368445135bf506bb4b0e4a2865e7d6125c2319d9eb67c62beea3c9",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "fioresta-costa-blanca": {
   "name": "Fioresta",
@@ -32155,10 +32325,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "AEDAS Homes ofrece en San Juan de Alicante 51 exclusivos pisos nuevos de 2 y 3 dormitorios",
+    "Dossier comercial Fioresta - AEDAS Homes",
+    "Además, dispone de 114 plazas de garaje y 51 trasteros en el sótano."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "113690475df00d8b",
+  "sha256": "113690475df00d8b9a6567235f142581b5a8a79bef95a94fa2de045ce7441651",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "maia-mont-kiara": {
   "name": "MAIA Mont Kiara",
@@ -32180,7 +32357,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-11-11"
+  "checked": "2026-11-11",
+  "last_error": "HTTP Error 403: Forbidden"
  },
  "the-connaught-one": {
   "name": "The Connaught One",
@@ -32202,7 +32380,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-11-11"
+  "checked": "2026-11-11",
+  "last_error": "HTTP Error 403: Forbidden"
  },
  "residensi-zig": {
   "name": "Residensi ZIG",
@@ -32224,7 +32403,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-11-11"
+  "checked": "2026-11-11",
+  "last_error": "HTTP Error 403: Forbidden"
  },
  "xt-10-ekkamai": {
   "name": "XT 10 Ekkamai",
@@ -32238,15 +32418,22 @@
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
-   "completion_year": 2029,
+   "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "A popular expat residential area with strong rental demand, ideal for both living and investment",
+    "This prime location attracts a strong and consistent urban and expatriate tenant base.",
+    "ensuring excellent connectivity and long-term investment potential."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "c28615c95a24f372",
+  "sha256": "c28615c95a24f372b20533e92568a9ee1fa9c360614bc6aa1d510bcec86f57b8",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "love-charoen-nakhon": {
   "name": "LOVE Charoen Nakhon",
@@ -32261,14 +32448,21 @@
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2029,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "LOVE Charoen Nakhon Update : 10 November 2026 15% Overall construction work completed Expected completion date: February 2029",
+    "The environmental impact assessment has been approved. A construction permit has already been issued.",
+    "Showing 9 of 12 projects"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "4ff4e8fa9bfa486e",
+  "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "the-base-wongsawang": {
   "name": "THE BASE Wongsawang",
@@ -32283,14 +32477,21 @@
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2027,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "A construction permit has already been issued.",
+    "The environmental impact assessment has been approved.",
+    "Expected completion date: June 2027"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "4ff4e8fa9bfa486e",
+  "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "dcondo-cove-phuket": {
   "name": "dcondo cove Phuket",
@@ -32305,14 +32506,21 @@
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2027,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Expected completion date: September 2027",
+    "The environmental impact assessment has been approved.",
+    "A construction permit has already been issued."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "4ff4e8fa9bfa486e",
+  "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "wickside-london": {
   "name": "Wickside",
@@ -32331,10 +32539,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "from £499,000 / Off-plan",
+    "Soon to be home to 63 private apartments alongside various retail offerings",
+    "Brand new canal-side neighbourhood in East London"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "7691c26986f7d66b",
+  "sha256": "7691c26986f7d66bbfc8152f82bd5d27dde941262d04e66fc54f7bc2b5f01100",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "st-paul-s-quarter": {
   "name": "St Paul's Quarter",
@@ -32349,14 +32564,21 @@
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": null,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "has planning permission for residential, commercial, and amenity space",
+    "planning for 422 high-quality residential units",
+    "Birmingham, B3 1TH / Coming soon"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "405a5a1617a5e3f7",
+  "sha256": "405a5a1617a5e3f776367d6a82809a47c74d97ef9eae8307bc3a5d4ec9945189",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "june-egypt": {
   "name": "June",
@@ -32373,12 +32595,19 @@
    "completion_year": 2030,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Starting price From 25,204,000 EGP Area Range 101 m² – 237 m²",
+    "Delivery Date Q3 2030",
+    "Parcel 1: Structural works are 100% complete with overall progress at 60%"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "68f38f9f860d3fb5",
+  "sha256": "68f38f9f860d3fb584602219d7bd706651a2082e23071a2fdc7c3e8a8867180b",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "caesar-egypt": {
   "name": "Caesar",
@@ -32395,12 +32624,19 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Starting price From 27,530,000 EGP",
+    "Area Range 141 m² – 546 m²",
+    "Built on terraced levels for uninterrupted views of the Mediterranean"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "2e94a9aa7e489d6c",
+  "sha256": "2e94a9aa7e489d6ce7d36fb230dfba7c4c567d77735848c81f610ec147526b0f",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "255-east-77th-street": {
   "name": "255 East 77th Street",
@@ -32419,10 +32655,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "255 East 77th Street's anticipated completion date is slated for fall 2026, as noted on site.",
+    "A finalized set of renderings has yet to be revealed.",
+    "Naftali Group purchased the property for $73 million in 2021 and received $236 million in construction financing"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "bb9413d2af18b5cf",
+  "sha256": "bb9413d2af18b5cf7ecd0eb48aca61653bdcca373a64fa86bf9f900169bf1315",
+  "sealed": "2026-11-15",
+  "checked": "2026-11-15"
  },
  "the-courtyards-the-ellinikon-little-athens": {
   "name": "The Courtyards (The Ellinikon, Little Athens)",
@@ -32444,7 +32687,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-11-11"
+  "checked": "2026-11-11",
+  "last_error": "spend budget reached"
  },
  "pavilion-terraces-the-ellinikon-little-athens": {
   "name": "Pavilion Terraces (The Ellinikon, Little Athens)",
