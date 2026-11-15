@@ -1,8 +1,8 @@
 # Cheap homes in Switzerland: key facts and every home on RealHunt
 
-On 14 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
+On 15 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/switzerland · Updated 14 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/switzerland · Updated 15 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/switzerland.json · PDF: https://realhunt.co/data/countries/switzerland.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/switzerland.json · PDF: https:
 | Taxes and fees to buy | 1–5% of the price (as of 2026) |
 | Can foreigners buy? | Under the Lex Koller law, EU/EFTA citizens living in Switzerland and holders of a C permit buy like Swiss citizens, and non-EU holders of a B permit can buy a home they live in. People living abroad need a cantonal permit and can usually only buy one holiday home in a tourist area, within national quotas; a proposed tightening was under consultation in 2026. |
 | Yearly property tax | More than half of the cantons charge an annual property tax (Liegenschaftssteuer), usually 0.01-0.3% of the assessed value, and owners also pay cantonal wealth tax on the property value minus the mortgage. |
-| Date of these figures | 14 November 2026 |
+| Date of these figures | 15 November 2026 |
 
 ## Costs and taxes
 

@@ -4,7 +4,7 @@ For AI assistants
 
 AI assistants and search engines may read, quote and summarise every public page of RealHunt, with a link to the page the fact comes from. The data pages are licensed Creative Commons BY 4.0; the short index is https://realhunt.co/llms.txt and the full text is https://realhunt.co/llms-full.txt.
 
-Updated 14 November 2026
+Updated 15 November 2026
 
 ### What RealHunt is
 
@@ -59,4 +59,4 @@ Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
 Questions about the data, a correction or a different format: carlos@equinoxinvestmentgroup.com.
 
 ---
-Source: https://realhunt.co/for-ai (RealHunt, 2026-11-14)
+Source: https://realhunt.co/for-ai (RealHunt, 2026-11-15)

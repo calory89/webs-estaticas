@@ -1,8 +1,8 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 14 de noviembre de 2026, RealHunt publica 37 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 37 casas es de 71.000 € (701 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 15 de noviembre de 2026, RealHunt publica 37 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 37 casas es de 71.000 € (701 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 14 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 15 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https:/
 | Impuestos y gastos de compra | 1,5–3,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay normas de ciudadanía o residencia para comprar una vivienda en Suecia, pero necesitas un número de identidad personal sueco o número de coordinación (samordningsnummer) para registrar la propiedad. |
 | Impuesto anual sobre la vivienda | Las casas pagan una tasa municipal sobre la propiedad (kommunal fastighetsavgift) de 10.425 SEK en 2026, o el 0,75% del valor fiscal si es menor. |
-| Fecha de estas cifras | 14 de noviembre de 2026 |
+| Fecha de estas cifras | 15 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

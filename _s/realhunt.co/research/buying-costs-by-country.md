@@ -4,7 +4,7 @@ Of 27 countries and destinations, the taxes and fees you pay on top of the price
 
 Transfer tax or VAT, stamp duty, notary, land registry and lawyer, as a share of the price. Compiled from the sources linked for each country; general information, not tax advice.
 
-Updated 14 November 2026. Source: RealHunt, https://realhunt.co/research/buying-costs-by-country (CC BY 4.0). CSV: https://realhunt.co/research/buying-costs-by-country.csv
+Updated 15 November 2026. Source: RealHunt, https://realhunt.co/research/buying-costs-by-country (CC BY 4.0). CSV: https://realhunt.co/research/buying-costs-by-country.csv
 
 ## The table
 

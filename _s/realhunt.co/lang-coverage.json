@@ -1,5 +1,5 @@
 {
- "total": 479,
+ "total": 2095,
  "max_total": 2500,
  "langs": {
   "de": {
@@ -47,264 +47,176 @@
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 13,
+   "pages": 231,
    "by_kind": {
-    "country": 2,
-    "band": 5,
-    "beds": 1,
-    "setting": 2,
-    "region": 2
+    "country": 16,
+    "gband": 5,
+    "ccyBand": 11,
+    "band": 50,
+    "setting": 20,
+    "ptype": 11,
+    "beds": 26,
+    "area": 16,
+    "region": 50,
+    "regionBand": 24,
+    "town": 1
    },
    "by_country": {
-    "greece": 9,
-    "bulgaria": 3
+    "spain": 50,
+    "italy": 33,
+    "united-states": 18,
+    "denmark": 16,
+    "sweden": 18,
+    "france": 14,
+    "poland": 5,
+    "japan": 22,
+    "germany": 7,
+    "netherlands": 5,
+    "greece": 10,
+    "portugal": 5,
+    "switzerland": 6,
+    "canada": 7,
+    "bulgaria": 3,
+    "dominican-republic": 3,
+    "all countries": 8
    },
    "homes": 516,
-   "homes_with_title": 21,
-   "not_published": 207,
-   "not_published_sample": [
-    {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/by-the-sea",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/north-jutland",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/funen",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/west-jutland",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/falster",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/mors",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/jutland",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/jutland/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/lolland-falster",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/poland",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/poland/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/poland/under-60000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/poland/podlaskie",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/poland/lodz",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/under-300000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/in-town",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/florida",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/pennsylvania",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/maine",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/apartments",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/florida/aventura",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-states/florida/under-300000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-60000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/by-the-sea",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/in-town",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/madrid",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/tenerife",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/asturias",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/fuerteventura",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/a-coruna",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/cadiz",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/huelva",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/sevilla",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    }
-   ],
+   "homes_with_title": 516,
+   "not_published": 0,
+   "not_published_sample": [],
    "sitemap": "sitemap-ru.xml"
+  },
+  "fr": {
+   "pages": 466,
+   "by_kind": {
+    "country": 16,
+    "gband": 5,
+    "ccyBand": 11,
+    "gfeature": 32,
+    "band": 50,
+    "feature": 154,
+    "setting": 20,
+    "combo": 40,
+    "ptype": 11,
+    "beds": 26,
+    "near": 9,
+    "area": 16,
+    "region": 50,
+    "regionBand": 24,
+    "town": 1
+   },
+   "by_country": {
+    "spain": 80,
+    "italy": 65,
+    "united-states": 37,
+    "denmark": 31,
+    "sweden": 32,
+    "france": 33,
+    "poland": 13,
+    "japan": 39,
+    "germany": 14,
+    "netherlands": 7,
+    "greece": 26,
+    "portugal": 8,
+    "switzerland": 11,
+    "canada": 9,
+    "bulgaria": 4,
+    "dominican-republic": 4,
+    "all countries": 52
+   },
+   "homes": 516,
+   "homes_with_title": 516,
+   "not_published": 0,
+   "not_published_sample": [],
+   "sitemap": "sitemap-fr.xml"
+  },
+  "nl": {
+   "pages": 466,
+   "by_kind": {
+    "country": 16,
+    "gband": 5,
+    "ccyBand": 11,
+    "gfeature": 32,
+    "band": 50,
+    "feature": 154,
+    "setting": 20,
+    "combo": 40,
+    "ptype": 11,
+    "beds": 26,
+    "near": 9,
+    "area": 16,
+    "region": 50,
+    "regionBand": 24,
+    "town": 1
+   },
+   "by_country": {
+    "spain": 80,
+    "italy": 65,
+    "united-states": 37,
+    "denmark": 31,
+    "sweden": 32,
+    "france": 33,
+    "poland": 13,
+    "japan": 39,
+    "germany": 14,
+    "netherlands": 7,
+    "greece": 26,
+    "portugal": 8,
+    "switzerland": 11,
+    "canada": 9,
+    "bulgaria": 4,
+    "dominican-republic": 4,
+    "all countries": 52
+   },
+   "homes": 516,
+   "homes_with_title": 516,
+   "not_published": 0,
+   "not_published_sample": [],
+   "sitemap": "sitemap-nl.xml"
+  },
+  "pl": {
+   "pages": 466,
+   "by_kind": {
+    "country": 16,
+    "gband": 5,
+    "ccyBand": 11,
+    "gfeature": 32,
+    "band": 50,
+    "feature": 154,
+    "setting": 20,
+    "combo": 40,
+    "ptype": 11,
+    "beds": 26,
+    "near": 9,
+    "area": 16,
+    "region": 50,
+    "regionBand": 24,
+    "town": 1
+   },
+   "by_country": {
+    "spain": 80,
+    "italy": 65,
+    "united-states": 37,
+    "denmark": 31,
+    "sweden": 32,
+    "france": 33,
+    "poland": 13,
+    "japan": 39,
+    "germany": 14,
+    "netherlands": 7,
+    "greece": 26,
+    "portugal": 8,
+    "switzerland": 11,
+    "canada": 9,
+    "bulgaria": 4,
+    "dominican-republic": 4,
+    "all countries": 52
+   },
+   "homes": 516,
+   "homes_with_title": 516,
+   "not_published": 0,
+   "not_published_sample": [],
+   "sitemap": "sitemap-pl.xml"
   }
  },
  "hreflang": {

@@ -1331,7 +1331,7 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 20.9,
+     "html_kb": 21,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 78.1,
      "route_js_kb": 395.7,
@@ -1343,7 +1343,7 @@
     },
     "band": {
      "path": "/homes/bulgaria/under-80000",
-     "html_kb": 11.3,
+     "html_kb": 11.4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 78.1,
      "route_js_kb": 395.7,

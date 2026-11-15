@@ -1,8 +1,8 @@
 # Cheap homes in Poland: key facts and every home on RealHunt
 
-On 14 November 2026, RealHunt lists 30 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 30 homes is €75,170 (€1,139 per m², from the 30 homes with a known size); the cheapest costs €53,693 and the most expensive €79,968. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
+On 15 November 2026, RealHunt lists 30 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 30 homes is €75,170 (€1,139 per m², from the 30 homes with a known size); the cheapest costs €53,693 and the most expensive €79,968. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/poland · Updated 14 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/poland · Updated 15 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://rea
 | Taxes and fees to buy | 2.5–4% of the price (as of 2026) |
 | Can foreigners buy? | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land. |
 | Yearly property tax | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses. |
-| Date of these figures | 14 November 2026 |
+| Date of these figures | 15 November 2026 |
 
 ## Costs and taxes
 

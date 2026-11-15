@@ -1,8 +1,8 @@
 # Cheap homes in Cyprus: key facts and every home on RealHunt
 
-On 14 November 2026, RealHunt lists 3 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 3 homes is €350,000 (€4,060 per m², from the 3 homes with a known size); the cheapest costs €341,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 3 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 15 November 2026, RealHunt lists 3 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 3 homes is €350,000 (€4,060 per m², from the 3 homes with a known size); the cheapest costs €341,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 3 homes this is a small sample, so the median for Cyprus is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/cyprus · Updated 14 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/cyprus · Updated 15 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://rea
 | Taxes and fees to buy | 2.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | EU citizens buy without restrictions. Non-EU buyers need permission from the Council of Ministers, applied for through the District Officer, and are normally limited to one home or a plot of up to 4,014 m². |
 | Yearly property tax | There is no annual national property tax (abolished in 2017); owners pay municipal fees of about €90 to €300 a year, plus sewerage and local authority charges. |
-| Date of these figures | 14 November 2026 |
+| Date of these figures | 15 November 2026 |
 
 ## Costs and taxes
 

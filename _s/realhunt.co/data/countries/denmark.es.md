@@ -1,8 +1,8 @@
 # Casas baratas en Dinamarca: datos clave y todas las casas de RealHunt
 
-A 14 de noviembre de 2026, RealHunt publica 45 casas en venta en Dinamarca, revisadas una a una por una persona. En Dinamarca, el precio de salida mediano de esas 45 casas es de 93.200 € (787 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 35.400 € y la más cara, 99.900 €. Los impuestos y gastos de compra suman alrededor del 1,5–3% del precio de una casa en Dinamarca (cifras de 2026).
+A 15 de noviembre de 2026, RealHunt publica 45 casas en venta en Dinamarca, revisadas una a una por una persona. En Dinamarca, el precio de salida mediano de esas 45 casas es de 93.200 € (787 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 35.400 € y la más cara, 99.900 €. Los impuestos y gastos de compra suman alrededor del 1,5–3% del precio de una casa en Dinamarca (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/denmark · Actualizado el 14 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/denmark · Actualizado el 15 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://realhunt.co/data/countries/denmark.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/denmark.json · PDF: https:
 | Impuestos y gastos de compra | 1,5–3% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sin domicilio danés o 5 años de residencia anterior necesitas permiso del Departamento de Asuntos Civiles (Civilstyrelsen); los ciudadanos de la UE/EEE que viven y están registrados en Dinamarca pueden comprar una vivienda permanente sin permiso firmando una declaración ante el Tribunal de Registro de Tierras. Las casas de vacaciones (sommerhuse) necesitan permiso, que solo se concede a personas con vínculos particularmente fuertes con Dinamarca, como muchos años de vacaciones allí. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan el impuesto sobre el valor de la vivienda (ejendomsværdiskat) del 0,51% sobre el 80% de la valoración oficial (1,4% por encima de 9,2 millones de DKK) más el impuesto municipal sobre el suelo (grundskyld) al tipo que fija cada municipio, con un máximo del 30 por mil del valor del suelo. |
-| Fecha de estas cifras | 14 de noviembre de 2026 |
+| Fecha de estas cifras | 15 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
