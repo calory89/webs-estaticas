@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-14",
+   "url": "https://kolaboro.com/changelog/2026-11-14/",
+   "title": "14 November 2026: 34 changes shipped",
+   "content_text": "- /countries/ (58 countries with 5+ named projects) and /rankings/ in 7 more languages with hreflang from the English pages, in /m/sitemap.xml (n29i)\n- True lastmod pins and IndexNow 2026-11-14T14:43 (run by hand: the scheduled job was cancelled by the daily Actions budget on 12 and 13 Nov) (n29t)\n- Feeds link project pages instead of /p/?id= redirects, feed icon that exists, corrections.json links, Arabic skip link override removed (n28a)\n- /numbers/ served from a day-long edge copy refreshed in the background (cold build 8.6 s), quoted price context without half words (n28a)\n- [name] /m/ and /p/ get the 404 page, chart heights on /press/monthly/, Russian cookie label, Arabic arrows (n28a)\n- No canonical on 404 pages, Content-Language on every page, /numbers/ copy survives deploys, ticker line (n28a)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>/countries/ (58 countries with 5+ named projects) and /rankings/ in 7 more languages with hreflang from the English pages, in /m/sitemap.xml (n29i)</li><li>True lastmod pins and IndexNow 2026-11-14T14:43 (run by hand: the scheduled job was cancelled by the daily Actions budget on 12 and 13 Nov) (n29t)</li><li>Feeds link project pages instead of /p/?id= redirects, feed icon that exists, corrections.json links, Arabic skip link override removed (n28a)</li><li>/numbers/ served from a day-long edge copy refreshed in the background (cold build 8.6 s), quoted price context without half words (n28a)</li><li>[name] /m/ and /p/ get the 404 page, chart heights on /press/monthly/, Russian cookie label, Arabic arrows (n28a)</li><li>No canonical on 404 pages, Content-Language on every page, /numbers/ copy survives deploys, ticker line (n28a)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-14T00:00:00Z",
+   "date_modified": "2026-11-14T16:42:09Z",
+   "_kolaboro": {
+    "ships": 34,
+    "data_updates": 11,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-13",
    "url": "https://kolaboro.com/changelog/2026-11-13/",
    "title": "13 November 2026: 26 changes shipped",
