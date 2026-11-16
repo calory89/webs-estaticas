@@ -1,10 +1,10 @@
 {
- "date": "2026-11-08",
- "drill_at": "2026-11-09T11:32:10Z",
- "backup_file": "2026-11-08.json.gz",
- "backup_sha256": "c7db9da6866f58e5502e64b91c049c5d4dbde19e1c77200b7405b408b28160de",
+ "date": "2026-11-15",
+ "drill_at": "2026-11-16T11:17:37Z",
+ "backup_file": "2026-11-15.json.gz",
+ "backup_sha256": "f1dd50c9056d87fe02ca68991c379192fec9e612267b0c2ba5e0991663556246",
  "backup_age_days": 1,
- "postgres": "16.15 (Debian 16.15-1.pgdg13+2)",
+ "postgres": "16.16 (Debian 16.16-1.pgdg13+1)",
  "tables": [
   {
    "name": "cases",
@@ -23,7 +23,7 @@
   },
   {
    "name": "watch",
-   "rows": 1,
+   "rows": 6,
    "ok": true
   },
   {
@@ -33,12 +33,12 @@
   },
   {
    "name": "stamps",
-   "rows": 571,
+   "rows": 1099,
    "ok": true
   },
   {
    "name": "history",
-   "rows": 4901,
+   "rows": 6847,
    "ok": true
   },
   {
@@ -48,7 +48,7 @@
   },
   {
    "name": "evidence",
-   "rows": 8,
+   "rows": 9,
    "ok": true
   },
   {
@@ -63,25 +63,25 @@
   },
   {
    "name": "events_30d",
-   "rows": 7343,
+   "rows": 23574,
    "ok": true
   },
   {
    "name": "files_index",
-   "rows": 6,
+   "rows": 7,
    "ok": true
   },
   {
    "name": "applications",
-   "rows": 23,
+   "rows": 24,
    "ok": true
   }
  ],
- "rows_total": 12874,
- "evidence_files_checked": 6,
+ "rows_total": 31587,
+ "evidence_files_checked": 7,
  "evidence_missing": 0,
  "evidence_bad_hash": 0,
  "evidence_ok": true,
  "ok": true,
- "duration_s": 2.69
+ "duration_s": 2.76
 }
