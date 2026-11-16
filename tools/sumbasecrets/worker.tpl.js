@@ -328,7 +328,7 @@ function guidesPage(l) {
   const body = `<section><div class="w"><h1 class="h1">${esc(u.guides)}</h1>
 <input class="gq" type="search" id="gq" placeholder="🔎 ${esc(u2.filter_guides)}" aria-label="${esc(u2.filter_guides)}" enterkeyhint="search">
 <div class="tpf" role="group">${[["all", u2.tp_all], ["plan", u2.tp_plan], ["places", u2.tp_places], ["culture", u2.tp_culture], ["compare", u2.tp_compare]].map(([k, t], i) => `<button data-tp="${k}" class="${i ? "" : "on"}" aria-pressed="${i ? "false" : "true"}">${esc(t)}</button>`).join("")}</div>
-<h2 class="sec h2s">${esc(u2.itins)}</h2><div class="grid gl" style="grid-template-columns:1fr">${it.map(wrap).join("")}</div><h2 class="sec h2s">${esc(u2.guides_more)}</h2><div class="grid gl" style="grid-template-columns:1fr">${ot.map(wrap).join("")}</div></div></section>`;
+<h2 class="sec h2s">${esc(u2.itins)}</h2><div class="grid gl" style="grid-template-columns:1fr">${it.map(wrap).join("")}</div><h2 class="sec h2s">${esc(u2.guides_more)}</h2><div class="grid gl" style="grid-template-columns:1fr">${ot.map(wrap).join("")}</div><h2 class="sec h2s">🗓️ ${esc(u2.months_t)}</h2><div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip" href="/${l}/month/${m}/">${esc(D.months[l][j].t.split(/[:：]/)[0])}</a>`).join("")}</div></div></section>`;
   const js = "var cur='all',q=document.getElementById('gq');function f(){var v=(q.value||'').toLowerCase().trim();document.querySelectorAll('.gl>a').forEach(function(a){var ok=(cur==='all'||a.dataset.tp===cur)&&(!v||a.dataset.q.indexOf(v)>-1);a.style.display=ok?'':'none'})}document.querySelectorAll('.tpf button').forEach(function(b){b.onclick=function(){cur=b.dataset.tp;document.querySelectorAll('.tpf button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});f()}});q.oninput=f;";
   return page(l, "/guides/", { title: u.guides, body, js });
 }
@@ -442,9 +442,9 @@ function regionPage(l, r) {
 <div id="map" style="height:440px;margin-bottom:24px"></div><h2 class="sec h2s">${esc(u2.in_region)} (${items.length})</h2><div class="grid">${items.map(p => card(p, l)).join("")}</div>${(() => { const c0 = [items.reduce((a, p) => a + p.ll[0], 0) / items.length, items.reduce((a, p) => a + p.ll[1], 0) / items.length]; const ck = Object.keys(CLIM_PTS).map(k => [km(CLIM_PTS[k], c0), k]).sort((a, b) => a[0] - b[0])[0][1], cl = D.climate[ck], uu = D.ui2[l]; let mf; try { mf = new Intl.DateTimeFormat(l, { month: "short", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }); }
   return `<h2 class="sec h2s">🌦️ ${esc(uu.gx_clim_t)}</h2><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(uu.clim_m)}</th>${cl.map((r, i) => `<th><a href="/${l}/month/${MON_SLUGS[i]}/">${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</a></th>`).join("")}</tr></thead><tbody><tr><td>${esc(uu.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(uu.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(uu.clim_rain)}</td>${cl.map(r => `<td${r[3] < 60 ? ' class="dry"' : ""}>${r[3]}</td>`).join("")}</tr></tbody></table></div><p class="note">${esc(tpl(uu.clim_note, { s: CLIM_NAME[ck] }))}</p>`; })()}
 ${catRegionCombos().some(x => x[1] === r) ? `<h2 class="sec h2s">${esc(D.ui2[l].by_type)}</h2><div class="chips">${catRegionCombos().filter(x => x[1] === r).map(([cc, rr, n]) => `<a class="chip" href="${catPath(l, cc)}${D.rslug[rr]}/">${CAT_ICON[cc]} ${esc(u.cat[cc])} (${n})</a>`).join("")}</div>` : ""}
-<h2 class="sec h2s">${esc(u2.zones)}</h2><div class="chips">${Object.keys(D.rslug).filter(x => x !== r).map(x => `<a class="chip" href="${regionPath(l, x)}">${esc(u.reg[x])}</a>`).join("")}</div></div></section>`;
+${faqBlock(l, regFaq(l, r, items))}<h2 class="sec h2s">${esc(u2.zones)}</h2><div class="chips">${Object.keys(D.rslug).filter(x => x !== r).map(x => `<a class="chip" href="${regionPath(l, x)}">${esc(u.reg[x])}</a>`).join("")}</div></div></section>`;
   const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[r], regionPath(l, r)]]),
-    { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r) }];
+    { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r), containedInPlace: { "@type": "TouristDestination", name: "Sumba" } }, faqLD(regFaq(l, r, items))];
   const ph = items.map(p => photos(p)[0]).find(Boolean);
   return page(l, regionPath(l, r).slice(3), { home: true, title: `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
     js: mapJS(l, items, { fit: true, region: r }) });
@@ -457,10 +457,10 @@ function catPage(l, c) {
 <div id="map" style="height:420px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
 ${(() => { const ms = D.months.en.map((m, i) => m.best.includes(c) ? i : -1).filter(i => i > -1); return ms.length ? `<h2 class="sec h2s">🗓️ ${esc(D.ui2[l].cat_months)}</h2><div class="chips">${ms.map(i => `<a class="chip" href="/${l}/month/${MON_SLUGS[i]}/">${esc(D.months[l][i].t.split(/[:：]/)[0])}</a>`).join("")}</div>` : ""; })()}
 ${catRegionCombos().some(x => x[0] === c) ? `<h2 class="sec h2s">${esc(D.ui2[l].by_region)}</h2><div class="chips">${catRegionCombos().filter(x => x[0] === c).map(([cc, rr, n]) => `<a class="chip" href="${catPath(l, cc)}${D.rslug[rr]}/">${esc(u.reg[rr])} (${n})</a>`).join("")}</div>` : ""}
-<h2 class="sec h2s">${esc(u2.categories)}</h2><div class="chips">${Object.keys(D.cslug).filter(x => x !== c).map(x => `<a class="chip" href="${catPath(l, x)}">${CAT_ICON[x]} ${esc(u.cat[x])}</a>`).join("")}</div></div></section>`;
+${faqBlock(l, catFaq(l, c, items))}<h2 class="sec h2s">${esc(u2.categories)}</h2><div class="chips">${Object.keys(D.cslug).filter(x => x !== c).map(x => `<a class="chip" href="${catPath(l, x)}">${CAT_ICON[x]} ${esc(u.cat[x])}</a>`).join("")}</div></div></section>`;
   const ph = items.map(p => photos(p)[0]).find(Boolean);
   return page(l, catPath(l, c).slice(3), { home: true, title: `${items.length} ${u.cat[c].toLowerCase()} · Sumba: ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`, desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
-    ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)]])], js: mapJS(l, items, { fit: true }) });
+    ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)]]), faqLD(catFaq(l, c, items))], js: mapJS(l, items, { fit: true }) });
 }
 
 function itinerary(l) {
@@ -615,10 +615,26 @@ function monthPage(l, i) {
   const body = `<div class="w"><article class="pl"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/guide/sumba-weather-by-month/">${esc(u2.months_t)}</a></nav><h1>${esc(mo.t)}</h1>${nav}
 <div class="body"><p class="lead1">${esc(mo.b)}</p></div>
 <h2 class="sec h2s">🌦️ ${esc(tpl(u2.month_clim, { m: mn }))}</h2><div class="tblw"><table class="tbl"><thead><tr><th>${esc(u2.gx_region)}</th><th>${esc(u2.clim_max)}</th><th>${esc(u2.clim_min)}</th><th>${esc(u2.month_rain_l)}</th></tr></thead><tbody>${rows}</tbody></table></div><p class="note">${esc(tpl(u2.clim_note, { s: "Waingapu, Waikabubak, Tambolaka, " + CLIM_NAME.south }))}</p>
+<p>🌅 ${esc(tpl(u2.m_sun, { m: mn, r: hhmm(sunTimes(-9.65, 120.26, i * 30.4 + 15)[0]), s: hhmm(sunTimes(-9.65, 120.26, i * 30.4 + 15)[1]) }))}</p>
 ${ev}<h2 class="sec h2s">✅ ${esc(u2.month_best)}</h2><div class="grid">${best.map(p => card(p, l)).join("")}</div>
+<nav class="gnav noprint"><a href="/${l}/month/${MON_SLUGS[(i + 11) % 12]}/"><small>← ${esc(u2.prev)}</small><b>${esc(D.months[l][(i + 11) % 12].t.split(/[:：]/)[0])}</b></a><a class="nx" href="/${l}/month/${MON_SLUGS[(i + 1) % 12]}/"><small>${esc(u2.next)} →</small><b>${esc(D.months[l][(i + 1) % 12].t.split(/[:：]/)[0])}</b></a></nav>
 <p class="near-cta"><a class="btn" href="/${l}/guide/sumba-weather-by-month/">${esc(u2.months_t)} →</a> <a class="btn alt2" href="/${l}/weather/">${esc(u.weather)} →</a></p></article></div>`;
   const ld = [{ "@context": "https://schema.org", "@type": "Article", headline: mo.t, description: mo.b.slice(0, 200), inLanguage: l, author: { "@type": "Organization", name: "Sumba Secrets", url: BASE }, dateModified: D.built, mainEntityOfPage: `${BASE}/${l}/month/${MON_SLUGS[i]}/` }, itemListLD(l, best), crumbsLD([["Sumba Secrets", `/${l}/`], [u2.months_t, `/${l}/guide/sumba-weather-by-month/`], [mn, `/${l}/month/${MON_SLUGS[i]}/`]])];
   return page(l, `/month/${MON_SLUGS[i]}/`, { title: mo.t, desc: mo.b, body, ld });
+}
+function faqBlock(l, faq) { if (!faq.length) return ""; return `<h2 class="sec h2s">${esc(D.ui2[l].faq)}</h2><div class="faq">${faq.map(([q, a], i) => `<details${i ? "" : " open"}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`; }
+function faqLD(faq) { return { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(f => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) }; }
+function catFaq(l, c, items) {
+  const u = D.ui[l], u2 = D.ui2[l], cn = u.cat[c].toLowerCase(), regs = [...new Set(items.map(p => u.reg[p.r]))];
+  const out = [[tpl(u2.fq_c1, { c: cn }), tpl(u2.fa_c1, { n: items.length, c: cn, r: regs.join(", "), list: items.slice(0, 4).map(p => P(p, l).n).join(", ") })]];
+  D.airports.forEach(a => { const [k, x] = items.map(p => [km(a.ll, p.ll), p]).sort((q, w) => q[0] - w[0])[0]; out.push([tpl(u2.fq_c2, { c: cn, ap: a.n }), tpl(u2.fa_c2, { x: P(x, l).n, k: Math.round(k), ap: a.n, h: driveH(l, k)[1] })]); });
+  return out;
+}
+function regFaq(l, r, items) {
+  const u = D.ui[l], u2 = D.ui2[l], cats = [...new Set(items.map(p => p.c))].map(c => `${items.filter(p => p.c === c).length} ${u.cat[c].toLowerCase()}`).join(", ");
+  const avg = a => items.reduce((s, p) => s + km(a.ll, p.ll), 0) / items.length;
+  const best = D.airports.map(a => [avg(a), a]).sort((q, w) => q[0] - w[0])[0];
+  return [[tpl(u2.fq_r1, { r: u.reg[r] }), tpl(u2.fa_r1, { n: items.length, r: u.reg[r], cats, list: items.slice(0, 4).map(p => P(p, l).n).join(", ") })], [tpl(u2.fq_r2, { r: u.reg[r] }), tpl(u2.fa_r2, { ap: best[1].n, r: u.reg[r], k: Math.round(best[0]) })]];
 }
 function catRegionCombos() { const out = []; Object.keys(D.cslug).forEach(c => Object.keys(D.rslug).forEach(r => { const n = D.places.filter(p => p.c === c && p.r === r).length; if (n >= 3) out.push([c, r, n]); })); return out; }
 function catRegionPage(l, c, r) {
@@ -627,8 +643,8 @@ function catRegionPage(l, c, r) {
   const desc = tpl(u2.cr_desc, { c: u.cat[c].toLowerCase(), r: u.reg[r], list: items.slice(0, 4).map(p => P(p, l).n).join(", ") });
   const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${catPath(l, c)}">${esc(u.cat[c])}</a> › ${esc(u.reg[r])}</nav><h1 class="h1">${CAT_ICON[c]} ${esc(title)}</h1><p class="lead">${esc(D.ctxt[c][l])} ${esc(D.rtxt[r][l])}</p>
 <div id="map" style="height:400px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
-<h2 class="sec h2s">${esc(u2.by_region)}</h2><div class="chips">${catRegionCombos().filter(x => x[0] === c).map(([cc, rr, n]) => `<a class="chip${rr === r ? " on" : ""}" href="${catPath(l, cc)}${D.rslug[rr]}/">${esc(u.reg[rr])} (${n})</a>`).join("")}<a class="chip" href="${catPath(l, c)}">${esc(u.cat[c])} · Sumba</a></div></div></section>`;
-  return page(l, `${catPath(l, c).slice(3)}${D.rslug[r]}/`, { title, desc, body, leaflet: true, ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)], [u.reg[r], `${catPath(l, c)}${D.rslug[r]}/`]])], js: mapJS(l, items, { fit: true }) });
+${faqBlock(l, catFaq(l, c, items).slice(1))}<h2 class="sec h2s">${esc(u2.by_region)}</h2><div class="chips">${catRegionCombos().filter(x => x[0] === c).map(([cc, rr, n]) => `<a class="chip${rr === r ? " on" : ""}" href="${catPath(l, cc)}${D.rslug[rr]}/">${esc(u.reg[rr])} (${n})</a>`).join("")}<a class="chip" href="${catPath(l, c)}">${esc(u.cat[c])} · Sumba</a></div></div></section>`;
+  return page(l, `${catPath(l, c).slice(3)}${D.rslug[r]}/`, { title, desc, body, leaflet: true, ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)], [u.reg[r], `${catPath(l, c)}${D.rslug[r]}/`]]), faqLD(catFaq(l, c, items).slice(1))], js: mapJS(l, items, { fit: true }) });
 }
 function placePage(l, p) {
   const u = D.ui[l], u2 = U2(l), t = P(p, l);
@@ -667,7 +683,7 @@ ${tipForm(l, p)}</article>
 <script type="application/json" id="lbd">${JSON.stringify(ph.map(x => [x.b, `${x.a} · ${x.l}`]))}</script>`;
   const ld = [{ "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, inLanguage: l, isAccessibleForFree: true, touristType: u2["gf_" + p.c],
       geo: { "@type": "GeoCoordinates", latitude: p.ll[0], longitude: p.ll[1] }, address: { "@type": "PostalAddress", addressRegion: u.reg[p.r], addressCountry: "ID" },
-      containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, image: ph.map(x => x.b) },
+      containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, image: ph.map(x => x.b), hasMap: `https://www.google.com/maps/search/?api=1&query=${p.ll[0]},${p.ll[1]}`, subjectOf: D.guides.filter(g => ((g.en && g.en.b) || "").includes(`/place/${p.s}/`)).slice(0, 5).map(g => ({ "@type": "Article", name: gtxt(g, l).t, url: `${BASE}/${l}/guide/${g.s}/` })) },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
     crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]]), ...vids.map(v => videoLD(v, l))];
   return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u2.jl_get.toLowerCase()}, ${u.tip.toLowerCase()} & ${u.map.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
@@ -942,7 +958,8 @@ function townPage(l, t) {
   const ph = photos(near[0][1])[0];
   const body = `<div class="w"><article class="pl"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/towns/">${esc(u2.towns_t)}</a></nav><h1>${esc(x.t)}</h1><p class="lead" style="font-size:19px">${esc(x.d)}</p>
 <div class="body">${x.b}</div><h2 class="sec h2s">${esc(u.now)} · ${esc(t.n)}</h2>${wxBoxes(l, [t])}<h2 class="sec h2s">${esc(u.map)}</h2><div id="map" class="mapsm"></div>
-<h2 class="sec h2s">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, p]) => card(p, l)).join("")}</div></article></div>`;
+<h2 class="sec h2s">✈️ ${esc(u2.air_t)}</h2><ul class="chk">${D.airports.map(a => { const k = km(a.ll, t.ll), [rk, h] = driveH(l, k); return `<li><b>${esc(a.n)}</b>: ${Math.round(k)} km · ~${rk} km · ${esc(h)}</li>`; }).join("")}</ul>
+<h2 class="sec h2s">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, p]) => card(p, l)).join("")}</div><h2 class="sec h2s">🗓️ ${esc(u2.months_t)}</h2><div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip" href="/${l}/month/${m}/">${esc(D.months[l][j].t.split(/[:：]/)[0])}</a>`).join("")}</div></article></div>`;
   const ld = [{ "@context": "https://schema.org", "@type": "City", name: t.n, description: x.d, geo: { "@type": "GeoCoordinates", latitude: t.ll[0], longitude: t.ll[1] }, containedInPlace: { "@type": "Place", name: "Sumba, Indonesia" } }, crumbsLD([["Sumba Secrets", `/${l}/`], [u2.towns_t, `/${l}/towns/`], [t.n, `/${l}/town/${t.s}/`]])];
   return page(l, `/town/${t.s}/`, { title: /Sumba/.test(x.t) ? x.t : `${x.t} · Sumba`, desc: x.d, ogimg: ph && ph.b, body, leaflet: true, ld, js: mapJS(l, near.map(n => n[1]), { fit: true }) + wxJS(l, [t], true) });
 }
