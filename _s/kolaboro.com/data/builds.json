@@ -11,8 +11,19 @@
   "The worker source repository is private, so only people with access can rebuild and compare this bundle. The verifiers, scoring rules and transparency index are public at https://github.com/calory89/kolaboro-open (MIT).",
   "Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download."
  ],
- "updated": "2026-11-09T13:02:00Z",
+ "updated": "2026-11-16T12:54:47Z",
  "builds": [
+  {
+   "worker_tree": "511d88475904e3039c3d586cac995c78b38314ba",
+   "first_commit": "2062f62a5c9473a9bb1a5a99da07f053a4ef2869",
+   "commit_time": "2026-11-16T11:18:49Z",
+   "built_at": "2026-11-16T12:54:47Z",
+   "sha256": "e12b9ceb6e9e56a3788e069899cd2ee1bc5fb48475b58279100bece72b8e77ae",
+   "bytes": 25476526,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "43870794117"
+  },
   {
    "worker_tree": "8324bb05548c6a5c57e8e552155c95bb915ba0fc",
    "first_commit": "1ee0bdf4362886921577530a10065ecd777358c6",
