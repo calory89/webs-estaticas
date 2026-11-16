@@ -1,29 +1,22 @@
 {
  "version": "seo-daily-1",
- "generated_at": "2026-11-14T16:07Z",
+ "generated_at": "2026-11-16T19:54Z",
  "base": "https://kolaboro.com",
- "seed": "2026-11-14",
+ "seed": "2026-11-16",
  "summary": {
   "pages": 48,
   "pages_ok": 48,
   "ld_pages": 48,
   "ld_valid": 48,
   "page_problems": 0,
-  "links_checked": 285,
-  "links_ok": 284,
-  "redirects": 1,
+  "links_checked": 283,
+  "links_ok": 283,
+  "redirects": 0,
   "broken": 0
  },
  "problems": [],
  "broken": [],
- "redirects": [
-  {
-   "url": "/tools/iban-check/",
-   "status": 301,
-   "to": "/tools/account-check/",
-   "found_on": "/changelog/"
-  }
- ],
+ "redirects": [],
  "pages": [
   {
    "url": "/vs/",
@@ -36,7 +29,7 @@
    "ok": true
   },
   {
-   "url": "/countries/oman/",
+   "url": "/countries/greece/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -47,7 +40,7 @@
    "ok": true
   },
   {
-   "url": "/ar/developers/capitaland-development/",
+   "url": "/ar/developers/jds-development-group/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -60,7 +53,7 @@
    "ok": true
   },
   {
-   "url": "/de/developers/galliard-homes/",
+   "url": "/de/developers/dar-global/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -73,7 +66,7 @@
    "ok": true
   },
   {
-   "url": "/developers/kolter-urban/",
+   "url": "/developers/howard-hughes-communities/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -86,7 +79,7 @@
    "ok": true
   },
   {
-   "url": "/es/developers/fg-empreendimentos/",
+   "url": "/es/developers/vip-property-development-co-ltd/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -99,7 +92,7 @@
    "ok": true
   },
   {
-   "url": "/fr/developers/sodic/",
+   "url": "/fr/developers/mitsui-fudosan-residential/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -112,7 +105,7 @@
    "ok": true
   },
   {
-   "url": "/nl/developers/rak-properties-pjsc/",
+   "url": "/nl/developers/banyan-group-residences/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -125,7 +118,7 @@
    "ok": true
   },
   {
-   "url": "/ru/developers/aldar-properties-pjsc/",
+   "url": "/ru/developers/pro-kapital-eesti-as/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -138,7 +131,7 @@
    "ok": true
   },
   {
-   "url": "/zh/developers/jendela-mayang-sdn-bhd/",
+   "url": "/zh/developers/wesgroup-properties/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -151,7 +144,7 @@
    "ok": true
   },
   {
-   "url": "/countries/aruba/how-to-check/",
+   "url": "/countries/saint-lucia/how-to-check/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -162,7 +155,7 @@
    "ok": true
   },
   {
-   "url": "/m/tangier/",
+   "url": "/m/palm-beach-county/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -175,7 +168,18 @@
    "ok": true
   },
   {
-   "url": "/ar/tools/bulk-check/",
+   "url": "/ar/numbers/",
+   "kind": "page",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/de/tools/contract-addendum/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -185,47 +189,51 @@
    "ok": true
   },
   {
-   "url": "/de/live/xrays/",
+   "url": "/log/",
    "kind": "page",
    "status": 200,
    "ld_types": [
+    "BreadcrumbList",
     "WebPage"
    ],
    "ok": true
   },
   {
-   "url": "/changelog/",
-   "kind": "page",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Organization"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/es/check/",
-   "kind": "page",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Organization"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/fr/open/",
+   "url": "/es/database/",
    "kind": "page",
    "status": 200,
    "ld_types": [
     "BreadcrumbList",
     "Dataset",
-    "WebPage"
+    "FAQPage",
+    "Organization"
    ],
    "ok": true
   },
   {
-   "url": "/nl/checklist/",
+   "url": "/fr/methods/construction-stage/",
+   "kind": "page",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "TechArticle"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/nl/database/",
+   "kind": "page",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "Organization"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/ru/checklist/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -235,7 +243,7 @@
    "ok": true
   },
   {
-   "url": "/ru/cases/",
+   "url": "/zh/how-we-score/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -245,17 +253,7 @@
    "ok": true
   },
   {
-   "url": "/zh/checklist/",
-   "kind": "page",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Organization"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/ar/projects/centropolitan-by-cordia-bucharest/",
+   "url": "/ar/projects/ramada-batumi-archi/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -270,7 +268,7 @@
    "ok": true
   },
   {
-   "url": "/de/projects/habitat-jardines-de-lemos/",
+   "url": "/de/projects/enchanted-garden-resort-phase-2-damai/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -285,7 +283,7 @@
    "ok": true
   },
   {
-   "url": "/projects/wellness-longevity-tower-costa-del-este/",
+   "url": "/projects/miru-residences-hakuba-shc-ecclesia/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -300,7 +298,7 @@
    "ok": true
   },
   {
-   "url": "/es/projects/rosae-france/",
+   "url": "/es/projects/city-walk-love-lane-liverpool-habitia/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -315,22 +313,7 @@
    "ok": true
   },
   {
-   "url": "/fr/projects/promenade-budva-minder/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/nl/projects/dos-piedras-residences-cabo-corridor/",
+   "url": "/fr/projects/eclipse-sant-elm-balearics/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -345,22 +328,7 @@
    "ok": true
   },
   {
-   "url": "/ru/projects/infinity-paguera-taylor-wimpey/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/zh/projects/mayaliah-tulum-mgallery-branded-residences/",
+   "url": "/nl/projects/mandarin-oriental-residences-grand-cayman-melkonian-ral/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -375,17 +343,48 @@
    "ok": true
   },
   {
-   "url": "/rankings/most-delayed/",
+   "url": "/ru/projects/damac-islands-dubai/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/zh/projects/the-koro-fiji-nadi-bay-investments/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/press/delivery-index/2026-11/",
    "kind": "page",
    "status": 200,
    "ld_types": [
     "BreadcrumbList",
-    "CollectionPage"
+    "Dataset",
+    "WebPage"
    ],
    "ok": true
   },
   {
-   "url": "/fr/m/bangkok/",
+   "url": "/zh/m/poland/",
    "kind": "page",
    "status": 200,
    "ld_types": [
@@ -397,22 +396,7 @@
    "ok": true
   },
   {
-   "url": "/fr/projects/amanzira-aquasol/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/es/developers/laser-tower-sdn-bhd/",
+   "url": "/de/developers/rak-properties/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -425,112 +409,7 @@
    "ok": true
   },
   {
-   "url": "/projects/costa-mare/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/de/projects/the-blossoms-blossoms-residence-accra/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/zh/projects/vinhomes-global-gate/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/ar/projects/lago-altear/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/fr/projects/villa-magna-eco-resort-algarve/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/es/projects/the-gem-at-cap-cana/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/fr/projects/rhea-by-sansiri/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "Residence",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/zh/developers/sansiri-pcl/",
+   "url": "/de/developers/aman-group/",
    "kind": "developer",
    "status": 200,
    "ld_types": [
@@ -543,7 +422,7 @@
    "ok": true
   },
   {
-   "url": "/de/projects/1-market-square-inlet-district/",
+   "url": "/ar/projects/thomson-reserve-singapore/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -558,7 +437,7 @@
    "ok": true
   },
   {
-   "url": "/fr/projects/jenna-aljada-sharjah/",
+   "url": "/nl/projects/piramal-revanta-rayansh-tower-mumbai/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -573,82 +452,7 @@
    "ok": true
   },
   {
-   "url": "/ar/projects/sondris-arthaland/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/ru/projects/mistral-costa-mujeres-evalor/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/ru/projects/forma-east-tower-of-the-mirvish-gehry-complex-toronto/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/ar/projects/sky-gate-tower-tiger/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/fr/projects/couture-by-cavalli/",
-   "kind": "project",
-   "status": 200,
-   "ld_types": [
-    "ApartmentComplex",
-    "BreadcrumbList",
-    "Dataset",
-    "FAQPage",
-    "ImageObject",
-    "Organization",
-    "WebPage"
-   ],
-   "ok": true
-  },
-  {
-   "url": "/nl/projects/kaluna-umalas-reserve/",
+   "url": "/zh/projects/tortuga-bay-phase-ii-schaible/",
    "kind": "project",
    "status": 200,
    "ld_types": [
@@ -659,6 +463,199 @@
     "Organization",
     "Residence",
     "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/fr/projects/santorini-residences-westlands-nairobi/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/nl/projects/the-fullton/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/es/projects/vr-krtsanisi-resort-residence-vr-holding/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/ar/projects/binghatti-luxuria-dubai/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/fr/projects/the-highgrove/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/ru/projects/elit-manta-helios-and-calypso-towers-ecuador/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/nl/projects/guayacan-santa-maria-valor-udg/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/es/projects/coralia-dominican-republic/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/nl/projects/miru-residences-hakuba-shc-ecclesia/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/de/projects/sky-gardens-tower-gj-properties/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/es/projects/naya-at-district-one-meydan/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "Residence",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/zh/projects/costaterra-golf-ocean-club-discovery-land/",
+   "kind": "project",
+   "status": 200,
+   "ld_types": [
+    "ApartmentComplex",
+    "BreadcrumbList",
+    "Dataset",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "WebPage"
+   ],
+   "ok": true
+  },
+  {
+   "url": "/fr/developers/mitsubishi-jisho-residence/",
+   "kind": "developer",
+   "status": 200,
+   "ld_types": [
+    "BreadcrumbList",
+    "FAQPage",
+    "ImageObject",
+    "Organization",
+    "ProfilePage"
    ],
    "ok": true
   }
@@ -686,6 +683,18 @@
    "links_checked": 285,
    "links_ok": 284,
    "redirects": 1,
+   "broken": 0
+  },
+  {
+   "at": "2026-11-16T19:54Z",
+   "pages": 48,
+   "pages_ok": 48,
+   "ld_pages": 48,
+   "ld_valid": 48,
+   "page_problems": 0,
+   "links_checked": 283,
+   "links_ok": 283,
+   "redirects": 0,
    "broken": 0
   }
  ],
