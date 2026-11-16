@@ -3,6 +3,130 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'business',
+ 'slug': 'east-sumba-table-tennis-pon-2028-hapu-mbay-hall-waingapu',
+ 'date': '2026-11-17',
+ 'time': '06:50',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'slugs': {'es': 'sumba-oriental-tenis-de-mesa-pon-2028-sala-hapu-mbay-waingapu', 'id': 'sumba-timur-tenis-meja-pon-2028-gedung-hapu-mbay-waingapu'},
+ 'img_key': 'waingapu-town',
+ 'keywords': {'en': ['East Sumba PON 2028', 'Waingapu table tennis', 'Hapu Mbay Hall', 'National Sports Week 2028 NTT', 'Sumba sport tourism', 'KONI Marciano Norman Sumba'],
+              'es': ['Sumba Oriental PON 2028', 'tenis de mesa Waingapu', 'sala Hapu Mbay', 'Juegos Nacionales 2028 NTT', 'turismo deportivo Sumba', 'KONI Marciano Norman Sumba'],
+              'id': ['Sumba Timur PON 2028', 'tenis meja Waingapu', 'Gedung Hapu Mbay', 'PON XXII 2028 NTT', 'sport tourism Sumba', 'KONI Marciano Norman Sumba']},
+ 'en': {'title': 'East Sumba to host PON 2028 table tennis in Waingapu',
+        'dek': 'KONI says the 2028 National Sports Week will reuse existing venues; Hapu Mbay Hall will stage table tennis, with athlete lodging still to be organised.',
+        'answer': 'East Sumba will host only table tennis at the 22nd National Sports Week (PON XXII) in 2028, at Hapu Mbay Hall in Waingapu, according to reports by ANTARA and Waingapu.Com in November 2026. '
+                  'Regent Umbu Lili Pekuwali met KONI chairman Marciano Norman in Jakarta, and KONI says the games will use existing venues, so the renovation bill falls on the host regions. The reports give no dates for the games.',
+        'keys': ['PON XXII in 2028 is co-hosted by West Nusa Tenggara (NTB) and East Nusa Tenggara (NTT); East Sumba is planned to host table tennis only, at Hapu Mbay Hall in Waingapu.',
+                 'ANTARA reported on Thursday 12 November 2026 that KONI Pusat chairman Marciano Norman said central policy is to use existing facilities rather than build new arenas, leaving renovation to the regions.',
+                 'Waingapu.Com reported on Saturday 14 November 2026 that Regent Umbu Lili Pekuwali sees the games as a way to lift the local economy and tourism.',
+                 'None of the reports published the dates of PON 2028, the number of athletes or a budget for the Waingapu hall.'],
+        'visitors': 'There is nothing to plan around yet: no dates have been published. If you are thinking of visiting Waingapu in 2028, check the official PON schedule once it is released, because hotels, flights and cars '
+                    'around a national event can fill quickly. For general planning, see our Waingapu airport guide.',
+        'body': '<p>East Sumba is planned to host table tennis at the 22nd National Sports Week (<i>Pekan Olahraga Nasional</i>, PON) in 2028, at Hapu Mbay Hall in Waingapu. Regent Umbu Lili Pekuwali met the '
+                'chairman of the National Sports Committee of Indonesia (KONI), retired lieutenant general Marciano Norman, in Jakarta to discuss readiness, according to ANTARA on Thursday 12 November 2026 and '
+                'Waingapu.Com on Saturday 14 November 2026. PON is held every four years and brings together contingents from all of Indonesia\'s provinces.</p>'
+                '<h2>What East Sumba will host at PON 2028</h2><p>The games are shared by two provinces: West Nusa Tenggara (NTB) and East Nusa Tenggara (NTT), which were named joint hosts at a KONI extraordinary '
+                'national conference in September 2022. According to ANTARA and Waingapu.Com, East Sumba\'s part is table tennis only, played at Hapu Mbay Hall. Pos-Kupang reported on 21 July 2026 that it will be '
+                'the first time the sport is held in NTT. Marciano Norman visited the hall on Sunday 19 July 2026 and called it a very suitable venue with a good atmosphere for athletes, ANTARA reported. KONI will ask '
+                'the national table tennis federation (PB PTMSI) to inspect the hall and recommend improvements to the arena.</p>'
+                '<h2>Existing venues, renovated by the regions</h2><p>Norman told the Regent that the readiness of regional heads comes first: "Kesiapan kepala daerah yang utama." He said central policy for PON 2028 is '
+                'to use existing sports facilities instead of building new arenas, so regional governments are responsible for renovating them. KONI deputy chairman Suwarno said regional budgets (APBD) should focus on '
+                'renovating competition venues, and that housing athletes and contingents once they arrive is the host\'s job. He described East Sumba\'s role as limited but historic.</p>'
+                '<p>Local officials say they are preparing. East Sumba Regional Secretary Umbu Ngadu Ndamu said in July that the regency has confirmed enough lodging and supporting facilities for athletes, officials and '
+                'visitors, according to ANTARA. Ali Oemar Fadaq, deputy chair of the regency council (DPRD), said the council is ready to process financial support, Pos-Kupang reported. The Regent said the moment should '
+                'be used to improve sporting achievement and, beyond sport, to draw visitors and business to the regency.</p>'
+                '<h2>What is still unknown</h2><p>The reports do not give the dates of PON 2028 or of the table tennis events, the number of athletes and officials expected, the capacity of Hapu Mbay Hall, or the '
+                'budget for renovation. We will update this report when those figures are published. For background on the town, see <a href="/en/places/waingapu-town/">our Waingapu guide</a>, and for another large '
+                'project in the same town, <a href="/en/projects/waingapu-shrimp-farm-nearly-20-percent-built-2028/">the shrimp farm due to open in 2028</a>.</p>'
+                '<h2>What it means for visitors, residents and investors</h2><p>Visitors: no rule or schedule has changed, and no dates are published. If you plan a 2028 trip to <a href="/en/places/east-sumba-regency/">East '
+                'Sumba</a>, check the official schedule when it appears, and read the <a href="/en/getting-here/waingapu-airport-guide/">Waingapu airport guide</a> for how people reach the town. Residents: the regency '
+                'will have to find money for renovation and lodging, so watch the regional budget. Investors and small businesses: the stated aim is to benefit hotels, restaurants and small enterprises, but no '
+                'figures have been published, so any estimate of demand would be speculation.</p>',
+        'faq': [['Where will table tennis be played at PON 2028?',
+                 'At Hapu Mbay Hall in Waingapu, East Sumba, according to ANTARA and Waingapu.Com in November 2026.'],
+                ['When is PON 2028?',
+                 'The reports checked by The Sumba Times do not give dates. PON XXII is co-hosted by NTB and NTT in 2028.']]},
+ 'es': {'title': 'Sumba Oriental acogerá el tenis de mesa de los PON 2028',
+        'dek': 'La KONI dice que los Juegos Nacionales de 2028 usarán instalaciones ya existentes; la sala Hapu Mbay de Waingapu será sede de tenis de mesa.',
+        'answer': 'Sumba Oriental acogerá solo el tenis de mesa en la XXII Semana Nacional del Deporte (PON XXII) de 2028, en la sala Hapu Mbay de Waingapu, según ANTARA y Waingapu.Com en noviembre de 2026. '
+                  'El regente Umbu Lili Pekuwali se reunió en Yakarta con el presidente de la KONI, Marciano Norman, y la KONI recuerda que se usarán instalaciones existentes, de modo que la renovación corre a cargo de '
+                  'las regiones. Las fuentes no dan fechas de los Juegos.',
+        'keys': ['La PON XXII de 2028 se celebra conjuntamente en Nusa Tenggara Occidental (NTB) y Nusa Tenggara Oriental (NTT); Sumba Oriental acogerá solo tenis de mesa, en la sala Hapu Mbay de Waingapu.',
+                 'ANTARA informó el jueves 12 de noviembre de 2026 de que Marciano Norman, presidente de la KONI Pusat, dijo que la política central es aprovechar las instalaciones existentes en lugar de construir '
+                 'nuevos pabellones, y que la renovación queda en manos de las regiones.',
+                 'Waingapu.Com informó el sábado 14 de noviembre de 2026 de que el regente Umbu Lili Pekuwali ve los Juegos como una oportunidad para impulsar la economía local y el turismo.',
+                 'Ninguna de las fuentes publica las fechas de la PON 2028, el número de deportistas ni el presupuesto de la sala de Waingapu.'],
+        'visitors': 'Por ahora no hay nada que planificar: no se han publicado fechas. Si piensa viajar a Waingapu en 2028, consulte el calendario oficial de la PON cuando salga, porque los hoteles, los vuelos '
+                    'y los coches pueden agotarse rápido en torno a un evento nacional. Para organizar el viaje en general, consulte nuestra guía del aeropuerto de Waingapu.',
+        'body': '<p>Sumba Oriental acogerá el tenis de mesa de la XXII Semana Nacional del Deporte (<i>Pekan Olahraga Nasional</i>, PON) de 2028, en la sala Hapu Mbay de Waingapu. El regente Umbu Lili Pekuwali '
+                'se reunió en Yakarta con el presidente del Comité Nacional de Deportes de Indonesia (KONI), el teniente general retirado Marciano Norman, para tratar los preparativos, según ANTARA (jueves 12 de '
+                'noviembre de 2026) y Waingapu.Com (sábado 14 de noviembre de 2026). La PON se celebra cada cuatro años y reúne a delegaciones de todas las provincias del país.</p>'
+                '<h2>Qué acogerá Sumba Oriental en la PON 2028</h2><p>Los Juegos se reparten entre dos provincias: Nusa Tenggara Occidental (NTB) y Nusa Tenggara Oriental (NTT), designadas sedes conjuntas en una '
+                'conferencia nacional extraordinaria de la KONI en septiembre de 2022. Según ANTARA y Waingapu.Com, la parte de Sumba Oriental es solo el tenis de mesa, que se jugará en la sala Hapu Mbay. Pos-Kupang '
+                'informó el 21 de julio de 2026 de que será la primera vez que este deporte se celebre en NTT. Marciano Norman visitó la sala el domingo 19 de julio de 2026 y la calificó de sede muy adecuada, con buen '
+                'ambiente para los deportistas, según ANTARA. La KONI pedirá a la federación nacional de tenis de mesa (PB PTMSI) que inspeccione el recinto y recomiende mejoras.</p>'
+                '<h2>Instalaciones existentes, renovadas por las regiones</h2><p>Norman dijo al regente que lo primero es que los dirigentes regionales estén preparados: «Kesiapan kepala daerah yang utama». Explicó '
+                'que la política central para la PON 2028 es usar instalaciones deportivas existentes en lugar de construir pabellones nuevos, por lo que los gobiernos regionales deben renovarlas. El vicepresidente '
+                'de la KONI, Suwarno, señaló que los presupuestos regionales (APBD) deben centrarse en renovar las sedes de competición y que alojar a deportistas y delegaciones cuando lleguen es tarea del anfitrión. '
+                'Calificó el papel de Sumba Oriental de limitado, pero histórico.</p>'
+                '<p>Las autoridades locales dicen que se están preparando. El secretario regional de Sumba Oriental, Umbu Ngadu Ndamu, afirmó en julio que la regencia ha confirmado alojamiento e instalaciones de apoyo '
+                'suficientes para deportistas, oficiales y visitantes, según ANTARA. Ali Oemar Fadaq, vicepresidente del consejo regencial (DPRD), dijo que la cámara está dispuesta a tramitar apoyo financiero, informó '
+                'Pos-Kupang. El regente defendió aprovechar la ocasión para mejorar el rendimiento deportivo y, más allá del deporte, atraer visitantes y negocio a la regencia.</p>'
+                '<h2>Lo que aún se desconoce</h2><p>Las fuentes no indican las fechas de la PON 2028 ni de las pruebas de tenis de mesa, cuántos deportistas y oficiales se esperan, la capacidad de la sala Hapu Mbay '
+                'ni el presupuesto de renovación. Actualizaremos esta información cuando se publiquen esos datos. Para conocer la ciudad, consulte <a href="/es/places/waingapu-town/">nuestra guía de Waingapu</a>; '
+                'y para otro gran proyecto en la misma ciudad, <a href="/es/projects/waingapu-shrimp-farm-nearly-20-percent-built-2028/">la granja de camarones que debe abrir en 2028</a>.</p>'
+                '<h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: no ha cambiado ninguna norma ni calendario y no hay fechas publicadas. Si planea viajar en 2028 a <a href="/es/places/east-sumba-regency/">Sumba '
+                'Oriental</a>, consulte el calendario oficial cuando aparezca y lea la <a href="/es/getting-here/waingapu-airport-guide/">guía del aeropuerto de Waingapu</a> para saber cómo se llega a la ciudad. '
+                'Residentes: la regencia tendrá que encontrar fondos para la renovación y el alojamiento, así que conviene seguir el presupuesto regional. Inversores y pequeños negocios: el objetivo declarado es '
+                'beneficiar a hoteles, restaurantes y pequeñas empresas, pero no se ha publicado ninguna cifra, así que cualquier estimación de demanda sería pura especulación.</p>',
+        'faq': [['¿Dónde se jugará el tenis de mesa de la PON 2028?',
+                 'En la sala Hapu Mbay de Waingapu, en Sumba Oriental, según ANTARA y Waingapu.Com en noviembre de 2026.'],
+                ['¿Cuándo es la PON 2028?',
+                 'Las fuentes consultadas por The Sumba Times no dan fechas. La PON XXII se celebra conjuntamente en NTB y NTT en 2028.']]},
+ 'id': {'title': 'Sumba Timur Tuan Rumah Tenis Meja PON 2028 di Waingapu',
+        'dek': 'KONI menegaskan PON 2028 memakai arena yang sudah ada; Gedung Hapu Mbay di Waingapu disiapkan untuk cabor tenis meja.',
+        'answer': 'Kabupaten Sumba Timur direncanakan menjadi tuan rumah cabor tenis meja pada PON XXII tahun 2028 di Gedung Hapu Mbay, Waingapu, menurut ANTARA dan Waingapu.Com pada November 2026. Bupati Umbu Lili '
+                  'Pekuwali bertemu Ketua Umum KONI Pusat Marciano Norman di Jakarta, dan KONI menegaskan PON memakai fasilitas yang ada sehingga renovasi menjadi tanggung jawab daerah. Jadwal pertandingan belum '
+                  'diumumkan.',
+        'keys': ['PON XXII 2028 digelar bersama oleh Nusa Tenggara Barat (NTB) dan Nusa Tenggara Timur (NTT); Sumba Timur direncanakan hanya menggelar tenis meja di Gedung Hapu Mbay, Waingapu.',
+                 'ANTARA pada Kamis 12 November 2026 melaporkan Ketua Umum KONI Pusat Marciano Norman menyebut kebijakan pusat adalah memakai fasilitas yang ada, bukan membangun arena baru, sehingga renovasi menjadi '
+                 'tugas daerah.',
+                 'Waingapu.Com pada Sabtu 14 November 2026 melaporkan Bupati Umbu Lili Pekuwali melihat PON sebagai peluang menggerakkan ekonomi dan pariwisata daerah.',
+                 'Tidak ada laporan yang memuat jadwal PON 2028, jumlah atlet, atau anggaran renovasi gedung di Waingapu.'],
+        'visitors': 'Belum ada yang perlu direncanakan karena jadwal belum diumumkan. Jika Anda berencana ke Waingapu pada 2028, periksa jadwal resmi PON setelah dirilis, sebab hotel, tiket pesawat, dan mobil '
+                    'sewaan biasanya cepat penuh saat ada acara nasional. Untuk perencanaan umum, baca panduan bandara Waingapu kami.',
+        'body': '<p>Kabupaten Sumba Timur direncanakan menjadi tuan rumah cabang olahraga tenis meja pada Pekan Olahraga Nasional (PON) XXII tahun 2028, bertempat di Gedung Hapu Mbay, Waingapu. Bupati Sumba Timur '
+                'Umbu Lili Pekuwali bertemu Ketua Umum Komite Olahraga Nasional Indonesia (KONI) Pusat, Letjen TNI (Purn.) Marciano Norman, di Jakarta untuk membahas kesiapan daerah, menurut ANTARA pada Kamis 12 '
+                'November 2026 dan Waingapu.Com pada Sabtu 14 November 2026. PON digelar setiap empat tahun dan mempertemukan kontingen dari seluruh provinsi di Indonesia.</p>'
+                '<h2>Cabor yang digelar di Sumba Timur pada PON 2028</h2><p>PON 2028 diselenggarakan di dua provinsi: Nusa Tenggara Barat (NTB) dan Nusa Tenggara Timur (NTT), yang ditetapkan sebagai tuan rumah bersama '
+                'dalam musyawarah olahraga nasional luar biasa KONI pada September 2022. Menurut ANTARA dan Waingapu.Com, Sumba Timur hanya kebagian tenis meja di Gedung Hapu Mbay. Pos-Kupang pada 21 Juli 2026 '
+                'melaporkan bahwa ini pertama kalinya cabor tersebut digelar di NTT. Marciano Norman meninjau gedung itu pada Minggu 19 Juli 2026 dan menyebutnya lokasi yang sangat layak dengan suasana yang baik bagi '
+                'atlet, menurut ANTARA. KONI akan meminta Pengurus Besar PTMSI memeriksa gedung dan memberi rekomendasi perbaikan arena.</p>'
+                '<h2>Pakai fasilitas yang ada, renovasi oleh daerah</h2><p>Kepada Bupati, Norman menegaskan bahwa kesiapan kepala daerah menjadi yang utama: "Kesiapan kepala daerah yang utama." Ia menjelaskan '
+                'kebijakan pemerintah pusat untuk PON 2028 adalah memanfaatkan fasilitas olahraga yang sudah ada, bukan membangun arena baru, sehingga pemerintah daerah bertanggung jawab merenovasinya. Wakil Ketua '
+                'Umum I KONI Pusat, Suwarno, mengatakan APBD sebaiknya difokuskan untuk merenovasi arena pertandingan, dan menjamu atlet serta kontingen setelah mereka tiba adalah tanggung jawab tuan rumah. Ia '
+                'menilai peran Sumba Timur memang terbatas, tetapi bersejarah.</p>'
+                '<p>Pemerintah daerah mengaku sedang bersiap. Sekretaris Daerah Sumba Timur Umbu Ngadu Ndamu pada Juli menyatakan kabupaten telah memastikan penginapan dan fasilitas pendukung yang memadai bagi atlet, '
+                'ofisial, dan pengunjung, menurut ANTARA. Wakil Ketua II DPRD Sumba Timur Ali Oemar Fadaq mengatakan dewan siap memproses dukungan anggaran, lapor Pos-Kupang. Bupati menyebut momentum ini harus '
+                'dimanfaatkan untuk meningkatkan prestasi olahraga, sekaligus mendatangkan wisatawan dan menggerakkan usaha di daerah.</p>'
+                '<h2>Yang belum diketahui</h2><p>Laporan-laporan itu tidak memuat jadwal PON 2028 maupun pertandingan tenis meja, jumlah atlet dan ofisial yang diperkirakan datang, kapasitas Gedung Hapu Mbay, atau '
+                'anggaran renovasi. Kami akan memperbarui berita ini setelah data tersebut dipublikasikan. Untuk mengenal kotanya, baca <a href="/id/places/waingapu-town/">panduan Waingapu kami</a>; untuk proyek '
+                'besar lain di kota yang sama, lihat <a href="/id/projects/waingapu-shrimp-farm-nearly-20-percent-built-2028/">tambak udang yang ditargetkan beroperasi pada 2028</a>.</p>'
+                '<h2>Apa artinya bagi wisatawan, warga, dan investor</h2><p>Wisatawan: belum ada aturan atau jadwal yang berubah dan belum ada jadwal resmi. Jika Anda berencana ke <a href="/id/places/east-sumba-regency/">Sumba '
+                'Timur</a> pada 2028, periksa jadwal resmi saat dirilis dan baca <a href="/id/getting-here/waingapu-airport-guide/">panduan Bandara Waingapu</a> untuk cara menuju kota. Warga: kabupaten harus '
+                'mencari dana renovasi dan penginapan, jadi anggaran daerah patut dipantau. Investor dan pelaku usaha kecil: tujuan yang dinyatakan adalah menguntungkan hotel, restoran, dan usaha kecil, tetapi belum '
+                'ada angka yang dipublikasikan, sehingga perkiraan permintaan apa pun hanyalah dugaan.</p>',
+        'faq': [['Di mana tenis meja PON 2028 digelar?',
+                 'Di Gedung Hapu Mbay, Waingapu, Sumba Timur, menurut ANTARA dan Waingapu.Com pada November 2026.'],
+                ['Kapan PON 2028 digelar?',
+                 'Laporan yang diperiksa The Sumba Times tidak memuat jadwal. PON XXII 2028 digelar bersama oleh NTB dan NTT.']]},
+ 'sources': [['ANTARA: KONI ingatkan kepala daerah soal kesiapan PON 2028 (12 Nov 2026)', 'https://www.antaranews.com/berita/5849627/koni-ingatkan-kepala-daerah-soal-kesiapan-pon-2028'],
+             ['Waingapu.Com: Sumba Timur bersiap sambut kontingen tenis meja PON 2028 (14 Nov 2026)', 'https://www.waingapu.com/sumba-timur-bersiap-sambut-kontingen-tenin-meja-pon-2028-bupati-ulp-bidik-dampak-ekonomi-bagi-masyarakat/'],
+             ['ANTARA: PON 2028 jadikan Sumba Timur etalase sport tourism (20 Jul 2026)', 'https://www.antaranews.com/berita/5657040/pon-2028-jadikan-sumba-timur-etalase-sport-tourism'],
+             ['Pos-Kupang.com: Cabor tenis meja PON XXII 2028 digelar di Waingapu, DPRD dukung siapkan dana (21 Jul 2026)', 'https://kupang.tribunnews.com/regional-ntt/972641/cabor-tenis-meja-pon-xxii-2028-digelar-di-waingapu-dprd-dukung-siapkan-dana'],
+             ['Medcom: NTB, NTT named joint hosts of 2028 PON Games (14 Sep 2022)', 'https://www.medcom.id/english/national/xkEjyzpK-ntb-ntt-named-joint-hosts-of-2028-pon-games']]},
 {'section': 'travel',
  'slug': 'bmkg-moderate-waves-sumba-strait-savu-sea-17-20-november-2026',
  'date': '2026-11-17',
