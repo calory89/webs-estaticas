@@ -147,6 +147,7 @@ section{padding:64px 0}
 @media(max-width:980px){.exp{grid-template-columns:repeat(5,72%);overflow-x:auto;scroll-snap-type:x mandatory}.ex{scroll-snap-align:start;aspect-ratio:4/5}.mos{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}.mo.big{grid-column:span 2}.why3,.steps,.itc,.vids{grid-template-columns:1fr}.regs,.nm{grid-template-columns:repeat(2,1fr)}.sod-in,.mapcta-in,.pl2{grid-template-columns:1fr}.pl2-side .qf:first-child{position:static}.hx-in{bottom:110px}.hx-live{gap:8px;font-size:12px;bottom:18px}.hx-sc{display:none}.fab-map span{display:none}.gal2{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.itc{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto}}
 
 /* UX round 14-nov */
+.nowm{margin:10px 0 0}.nowm a{color:#fff;font-weight:700;background:rgba(0,0,0,.35);padding:8px 14px;border-radius:999px;text-decoration:none;display:inline-block;backdrop-filter:blur(4px)}
 .skip{position:absolute;left:-999px;top:8px;z-index:9999;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px}.skip:focus{left:8px}
 .net a{display:inline-flex;align-items:center;min-height:34px}
 .crumbs a{display:inline-block;padding:6px 0}
@@ -212,7 +213,7 @@ function page(l, path, o) {
   const nav = [["/secret-spots/", "★ " + u.secrets], ["/places/", u.places], ["/guides/", u.guides], ["/towns/", D.ui2[l].towns_t], ["/weather/", u.weather], ["/map/", "🗺️ " + u.map]]
     .map(([p, t]) => `<a href="/${l}${p}"${p === path || (p !== "/" && path.startsWith(p.replace(/s\/$/, "/"))) ? ' class="on" aria-current="page"' : ""}>${esc(t)}</a>`).join("") + `<a href="${TIMES}/${D.tl[l]}/">${esc(u.news)} ↗</a>`;
   const opts = L.map(x => `<option value="/${x}${path}"${x === l ? " selected" : ""}>${esc(D.lname[x])}</option>`).join("");
-  const title = cut60(o.title ? (o.title.length <= 43 ? `${o.title} · Sumba Secrets` : o.title) : `Sumba Secrets: ${u.tag}`); o.desc = fixDesc(o.desc || u.hero_d, l);
+  const title = cut60(o.title ? (o.title.length <= 43 ? `${o.title} · Sumba Secrets` : o.title) : tpl(D.ui2[l].home_title, { y: String(D.built).slice(0, 4) })); o.desc = fixDesc(o.desc || u.hero_d, l);
   const ogimg = o.ogimgOwn || o.ogimg || (o.img ? img(o.img, 1280) : img("magnitude-6-1-earthquake-southwest-sumba", 1280));
   return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(o.desc || u.hero_d)}">${o.robots ? `<meta name="robots" content="${o.robots}">` : ""}<link rel="canonical" href="${BASE}/${l}${path}">${alts}
@@ -225,7 +226,7 @@ ${o.leaflet ? '<link rel="stylesheet" href="/lib/leaflet.css"><link rel="preconn
 <header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
 <a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆<span class="bdg" hidden></span></a>${langPicker(l, path, false)}</div></header>
 <main id="main" tabindex="-1">${o.body}</main><nav class="bnav" aria-label="Mobile">${[["/", "🏝️", "Sumba"], ["/secret-spots/", "★", u.secrets], ["/guides/", "📖", u.guides], ["/map/", "🗺️", u.map], ["/saved/", "☆", D.ui2[l].saved]].map(([p, i, t]) => `<a href="/${l}${p}"${p === path ? ' class="on" aria-current="page"' : ""}><span>${i}</span><small>${esc(t)}</small>${p === "/saved/" ? '<i class="bdg" hidden></i>' : ""}</a>`).join("")}</nav><a class="fab-map" href="/${l}/map/" aria-label="${esc(u.map)}">🗺️ <span>${esc(u.map)}</span></a><button class="totop" aria-label="${esc(D.ui2[l].back_top)}" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
-${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a> · <a href="/${l}/mamboro/">🏡 ${esc(NT(l).t)}</a></p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
+${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a> · <a href="/${l}/mamboro/">🏡 ${esc(NT(l).t)}</a></p><p>${esc(D.ui2[l].pop_guides)}: ${["sumba-travel-guide", "things-to-do-in-sumba", "best-beaches-in-sumba", "itinerary-7-days", "sumba-weather-by-month", "bali-to-sumba", "tambolaka-airport", "pasola-dates"].map(s => D.guides.find(g => g.s === s)).filter(Boolean).map(g => `<a href="/${l}/guide/${g.s}/">${esc(gtxt(g, l).t.split(":")[0])}</a>`).join(" · ")}</p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
 <p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a> · <a href="/${l}/places/#tools">${esc(D.ui2[l].tools_t)}: KML · GPX · Embed</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
 ${o.leaflet ? '<script defer src="/lib/leaflet.js"></script>' : ""}${o.js ? `<script>addEventListener("DOMContentLoaded",function(){${o.js}})</script>` : ""}<script>${COMMONJS(l)}</script></body></html>`;
 }
@@ -309,6 +310,7 @@ function listPage(l, path, title, lead, items, withMap) {
 function weatherPage(l) {
   const u = D.ui[l]; const g = D.guides[0]; const t = gtxt(g, l);
   const body = `<section><div class="w"><h1 class="sec" style="font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);margin:0">${esc(u.weather)} · Sumba</h1><p class="lead">${esc(u.weather_d)}</p>${wxBoxes(l, D.towns)}</div></section>
+<section><div class="w"><h2 class="sec h2s">🗓️ ${esc(D.ui2[l].months_t)}</h2><div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip" href="/${l}/month/${m}/">${esc(D.months[l][j].t.split(":")[0])}</a>`).join("")}</div></div></section>
 <section class="band"><div class="w"><article class="pl"><h2 class="sec">${esc(u.season_t)}</h2><div class="body">${t.b}</div></article></div></section>`;
   return page(l, "/weather/", { title: `${u.weather} Sumba`, desc: u.weather_d, body, js: wxJS(l, D.towns, true) });
 }
@@ -357,6 +359,7 @@ function guideExtra(l, g) {
 }
 function guidePage(l, g) {
   const u = D.ui[l], t = gtxt(g, l), h = ghero(g), cr = h.cr; const isItin = /^itinerary-/.test(g.s);
+  const ttl = /^(sumba-travel-guide|best-beaches-in-sumba|things-to-do-in-sumba|places-to-visit-in-sumba|itinerary-7-days|sumba-weather-by-month)$/.test(g.s) && !/20\d\d/.test(t.t) ? (() => { const y = String(D.built).slice(0, 4), i = t.t.indexOf(":"); if (i < 0) return `${t.t} (${y})`; const x = `${t.t.slice(0, i)} ${y}${t.t.slice(i)}`; return x.length <= 62 ? x : `${t.t.slice(0, i)} ${y}`; })() : t.t;
   let k = 0; const toc = []; const b2 = (t.b || "").replace(/<h2>(.*?)<\/h2>/g, (_, x) => { k++; toc.push([k, x.replace(/<[^>]+>/g, "")]); return `<h2 id="s${k}">${x}<a class="anc" href="#s${k}" aria-label="#">#</a></h2>`; });
   const gi = D.guides.indexOf(g), gp = D.guides[(gi - 1 + D.guides.length) % D.guides.length], gn = D.guides[(gi + 1) % D.guides.length];
   const words = (t.b || "").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length + (t.faq || []).reduce((n, f) => n + (f[0] + " " + f[1]).split(/\s+/).length, 0);
@@ -373,8 +376,9 @@ ${faq.length ? `<section class="faq"><h2 class="sec h2s">FAQ</h2>${faq.map(f => 
 <p class="near-cta"><a class="btn" href="/${l}/map/">🗺️ ${esc(u.map)} →</a><a class="btn alt2" href="/${l}/secret-spots/">★ ${esc(u.secrets)}</a></p>
 <h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${rel.map(x => guideCard(x, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(D.ui2[l].see_all)} →</a></p></article></div>`;
   const ld = [{ "@context": "https://schema.org", "@type": isItin ? "TouristTrip" : "Article", ...(isItin ? { name: t.t } : { headline: t.t }), description: t.d, inLanguage: l, image: h.b, author: { "@type": "Organization", name: "Sumba Secrets", url: BASE }, publisher: { "@type": "Organization", name: "Sumba Secrets", logo: { "@type": "ImageObject", url: `${BASE}/icon.svg` } }, datePublished: g.en && g.en.faq ? "2026-11-13" : "2026-11-11", dateModified: MOD(`/guide/${g.s}/`), wordCount: words, mainEntityOfPage: `${BASE}/${l}/guide/${g.s}/` }, crumbsLD([["Sumba Secrets", `/${l}/`], [u.guides, `/${l}/guides/`], [t.t, `/${l}/guide/${g.s}/`]])];
+  { const sl = []; ((g.en && g.en.b) || "").replace(/\/place\/([a-z0-9-]+)\//g, (_, x) => { if (!sl.includes(x)) sl.push(x); return _; }); const pl = sl.map(x => D.places.find(p => p.s === x)).filter(Boolean); if (pl.length >= 3) ld.push(Object.assign(itemListLD(l, pl), { name: t.t })); }
   if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(f => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
-  return page(l, `/guide/${g.s}/`, { title: t.t, desc: t.d, ogimg: `${BASE}/og/guide-${g.s}.jpg`, body, ld, js: "document.querySelectorAll('.anc').forEach(function(a){a.addEventListener('click',function(){var u=location.origin+location.pathname+a.getAttribute('href');try{navigator.clipboard.writeText(u)}catch(e){}if(window.ssToast)ssToast('🔗 '+a.parentNode.firstChild.textContent)})});var pb=document.createElement('div');pb.className='rprog';document.body.appendChild(pb);var ar=document.querySelector('article.pl');function rp(){var r=ar.getBoundingClientRect(),h=r.height-innerHeight;pb.style.width=Math.max(0,Math.min(100,(-r.top)/Math.max(1,h)*100))+'%'}addEventListener('scroll',rp,{passive:true});rp();if(innerWidth<760){var td=document.querySelector('.toc details');if(td)td.open=false}" });
+  return page(l, `/guide/${g.s}/`, { title: ttl, desc: t.d, ogimg: `${BASE}/og/guide-${g.s}.jpg`, body, ld, js: "document.querySelectorAll('.anc').forEach(function(a){a.addEventListener('click',function(){var u=location.origin+location.pathname+a.getAttribute('href');try{navigator.clipboard.writeText(u)}catch(e){}if(window.ssToast)ssToast('🔗 '+a.parentNode.firstChild.textContent)})});var pb=document.createElement('div');pb.className='rprog';document.body.appendChild(pb);var ar=document.querySelector('article.pl');function rp(){var r=ar.getBoundingClientRect(),h=r.height-innerHeight;pb.style.width=Math.max(0,Math.min(100,(-r.top)/Math.max(1,h)*100))+'%'}addEventListener('scroll',rp,{passive:true});rp();if(innerWidth<760){var td=document.querySelector('.toc details');if(td)td.open=false}" });
 }
 
 function aboutPage(l) {
@@ -435,7 +439,9 @@ function regionPage(l, r) {
   const u = D.ui[l], u2 = U2(l), items = D.places.filter(p => p.r === r);
   const rph = items.map(p => photos(p)[0]).find(Boolean);
   const body = `${bannerHero(rph.b.replace("/ph/1280/", "/ph/960/"), "📍 " + esc(u2.zones), esc(u.reg[r]), esc(D.rtxt[r][l]))}<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.zones)} › ${esc(u.reg[r])}</nav>
-<div id="map" style="height:440px;margin-bottom:24px"></div><h2 class="sec h2s">${esc(u2.in_region)} (${items.length})</h2><div class="grid">${items.map(p => card(p, l)).join("")}</div>
+<div id="map" style="height:440px;margin-bottom:24px"></div><h2 class="sec h2s">${esc(u2.in_region)} (${items.length})</h2><div class="grid">${items.map(p => card(p, l)).join("")}</div>${(() => { const c0 = [items.reduce((a, p) => a + p.ll[0], 0) / items.length, items.reduce((a, p) => a + p.ll[1], 0) / items.length]; const ck = Object.keys(CLIM_PTS).map(k => [km(CLIM_PTS[k], c0), k]).sort((a, b) => a[0] - b[0])[0][1], cl = D.climate[ck], uu = D.ui2[l]; let mf; try { mf = new Intl.DateTimeFormat(l, { month: "short", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }); }
+  return `<h2 class="sec h2s">🌦️ ${esc(uu.gx_clim_t)}</h2><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(uu.clim_m)}</th>${cl.map((r, i) => `<th><a href="/${l}/month/${MON_SLUGS[i]}/">${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</a></th>`).join("")}</tr></thead><tbody><tr><td>${esc(uu.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(uu.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(uu.clim_rain)}</td>${cl.map(r => `<td${r[3] < 60 ? ' class="dry"' : ""}>${r[3]}</td>`).join("")}</tr></tbody></table></div><p class="note">${esc(tpl(uu.clim_note, { s: CLIM_NAME[ck] }))}</p>`; })()}
+${catRegionCombos().some(x => x[1] === r) ? `<h2 class="sec h2s">${esc(D.ui2[l].by_type)}</h2><div class="chips">${catRegionCombos().filter(x => x[1] === r).map(([cc, rr, n]) => `<a class="chip" href="${catPath(l, cc)}${D.rslug[rr]}/">${CAT_ICON[cc]} ${esc(u.cat[cc])} (${n})</a>`).join("")}</div>` : ""}
 <h2 class="sec h2s">${esc(u2.zones)}</h2><div class="chips">${Object.keys(D.rslug).filter(x => x !== r).map(x => `<a class="chip" href="${regionPath(l, x)}">${esc(u.reg[x])}</a>`).join("")}</div></div></section>`;
   const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[r], regionPath(l, r)]]),
     { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r) }];
@@ -449,9 +455,11 @@ function catPage(l, c) {
   const cph = items.map(p => photos(p)[0]).find(Boolean);
   const body = `${bannerHero(cph.b.replace("/ph/1280/", "/ph/960/"), CAT_ICON[c] + " " + esc(u2.categories), esc(u.cat[c]) + " · Sumba", esc(D.ctxt[c][l]))}<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u.cat[c])}</nav><p class="lead">${esc(D.season[c][l])}</p>
 <div id="map" style="height:420px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
+${(() => { const ms = D.months.en.map((m, i) => m.best.includes(c) ? i : -1).filter(i => i > -1); return ms.length ? `<h2 class="sec h2s">🗓️ ${esc(D.ui2[l].cat_months)}</h2><div class="chips">${ms.map(i => `<a class="chip" href="/${l}/month/${MON_SLUGS[i]}/">${esc(D.months[l][i].t.split(/[:：]/)[0])}</a>`).join("")}</div>` : ""; })()}
+${catRegionCombos().some(x => x[0] === c) ? `<h2 class="sec h2s">${esc(D.ui2[l].by_region)}</h2><div class="chips">${catRegionCombos().filter(x => x[0] === c).map(([cc, rr, n]) => `<a class="chip" href="${catPath(l, cc)}${D.rslug[rr]}/">${esc(u.reg[rr])} (${n})</a>`).join("")}</div>` : ""}
 <h2 class="sec h2s">${esc(u2.categories)}</h2><div class="chips">${Object.keys(D.cslug).filter(x => x !== c).map(x => `<a class="chip" href="${catPath(l, x)}">${CAT_ICON[x]} ${esc(u.cat[x])}</a>`).join("")}</div></div></section>`;
   const ph = items.map(p => photos(p)[0]).find(Boolean);
-  return page(l, catPath(l, c).slice(3), { home: true, title: `${u.cat[c]} in Sumba (${items.length}): ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`.replace(" in Sumba", l === "en" ? " in Sumba" : " · Sumba"), desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
+  return page(l, catPath(l, c).slice(3), { home: true, title: `${items.length} ${u.cat[c].toLowerCase()} · Sumba: ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`, desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
     ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)]])], js: mapJS(l, items, { fit: true }) });
 }
 
@@ -496,7 +504,7 @@ function home(l) {
   const vids = D.videos._home || [];
   const body = `<section class="hx" aria-label="Sumba">
 <div class="hx-sl">${heroSl.map((c, i) => i ? `<img data-src="${gthumb(c, 960)}" data-src2="${gthumb(c, 1280)}" alt="">` : `<picture><source media="(min-width:900px)" srcset="${gthumb(c, 1280)}"><img src="${gthumb(c, 960)}" fetchpriority="high" alt="" class="on"></picture>`).join("")}</div>
-<div class="hx-sh"></div><div class="w hx-in"><p class="kick">✦ ${esc(u2.kicker)}</p><h1>${esc(u.hero_t)}</h1>
+<div class="hx-sh"></div><div class="w hx-in"><p class="kick">✦ ${esc(u2.kicker)}</p><h1>${esc(u2.home_h1 || u.hero_t)}</h1><p class="nowm"><a id="nowm" href="/${l}/guide/sumba-weather-by-month/">🗓️ ${esc(u2.now_month)} →</a></p><script>(function(){var M=${JSON.stringify(D.months[l].map((m, i) => [MON_SLUGS[i], m.t.split(/[:：]/)[0]]))},a=document.getElementById('nowm'),x=M[new Date().getMonth()];a.href='/${l}/month/'+x[0]+'/';a.textContent='🗓️ '+x[1]+' →'})()</script>
 <p class="hx-rot" aria-live="polite"><span id="rot">${esc(words[0])}</span></p><p class="hx-d">${esc(u.hero_d)}</p>
 <form class="hx-q" action="/${l}/search/" role="search" onsubmit="var v=this.q.value.trim().toLowerCase(),M=${esc(JSON.stringify(Object.fromEntries(D.places.map(p => [P(p, l).n.toLowerCase(), p.s]))))};if(M[v]){location.href='/${l}/place/'+M[v]+'/';return false}"><input name="q" type="search" list="pl-names" autocomplete="off" placeholder="🔎 ${esc(u2.hsearch)}" aria-label="${esc(u2.hsearch)}"><datalist id="pl-names">${D.places.map(p => `<option value="${esc(P(p, l).n)}">`).join("")}</datalist><button>${esc(u2.hgo)}</button></form>
 <p><a class="btn big" href="/${l}/secret-spots/">${esc(u2.cta1)} →</a><a class="btn big ghost" href="/${l}/guide/itinerary-5-days/">${esc(u2.cta2)}</a></p></div>
@@ -535,6 +543,7 @@ ${vids.length ? `<section class="dark rv"><div class="w"><h2 class="sec xl">▶ 
 <section class="band rv"><div class="w two"><div><h2 class="sec">${esc(D.ui2[l].guides_more)}</h2><div class="grid" style="grid-template-columns:1fr">${D.guides.filter(g => !/^itinerary-/.test(g.s)).sort((a, b) => (b.en.faq ? 1 : 0) - (a.en.faq ? 1 : 0)).slice(0, 6).map(g => guideCard(g, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(u2.see_all)} →</a></p></div>
 <div><h2 class="sec" style="font-size:26px">${esc(u.latest)}</h2>${newsBox(l)}</div></div></section>`;
   const ld = [{ "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" }, potentialAction: { "@type": "SearchAction", target: `${BASE}/${l}/search/?q={q}`, "query-input": "required name=q" } },
+    { "@context": "https://schema.org", "@type": "Organization", name: "Sumba Secrets", url: BASE, logo: `${BASE}/icon.svg`, email: "info@ecobeachcity.com", parentOrganization: { "@type": "Organization", name: "Eco Beach City" }, sameAs: [TIMES, "https://sumbahomes.com/"] },
     { "@context": "https://schema.org", "@type": "TouristDestination", name: "Sumba", description: u.hero_d, geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 }, containsPlace: D.places.map(p => ({ "@type": "TouristAttraction", name: P(p, l).n, url: `${BASE}/${l}/place/${p.s}/` })) },
     ...vids.map(v => videoLD(v, l))];
   const js = `(function(){var W=${JSON.stringify(words)},i=0,el=document.getElementById('rot');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){i=(i+1)%W.length;el.style.opacity=0;setTimeout(function(){el.textContent=W[i];el.style.opacity=1},350)},2600);
@@ -554,7 +563,7 @@ function videoLD(v, l) {
   return { "@context": "https://schema.org", "@type": "VideoObject", name: t, description: t + " (Sumba, Indonesia)", thumbnailUrl: `https://i.ytimg.com/vi/${v}/hqdefault.jpg`, embedUrl: `https://www.youtube-nocookie.com/embed/${v}`, contentUrl: `https://www.youtube.com/watch?v=${v}`, uploadDate: "2026-01-01" };
 }
 
-function driveH(l, k) { const u2 = D.ui2[l]; const road = k * 1.35, m = Math.max(15, Math.round((road / 35 * 60 + 10) / 15) * 15); const h = Math.floor(m / 60), mm = m % 60; return [Math.round(road / 5) * 5, (h ? h + " " + u2.u_h : "") + (h && mm ? " " : "") + (mm ? mm + " " + u2.u_min : "")]; }
+function driveH(l, k) { const u2 = D.ui2[l]; const road = k * 1.35, m = Math.max(15, Math.round((road / 35 * 60 + 10) / 15) * 15); const h = Math.floor(m / 60), mm = m % 60; return [road < 10 ? Math.max(1, Math.round(road)) : Math.round(road / 5) * 5, (h ? h + " " + u2.u_h : "") + (h && mm ? " " : "") + (mm ? mm + " " + u2.u_min : "")]; }
 function sunTimes(lat, lon, n) { const r = Math.PI / 180, g = 2 * Math.PI / 365 * (n - 1), eq = 229.18 * (.000075 + .001868 * Math.cos(g) - .032077 * Math.sin(g) - .014615 * Math.cos(2 * g) - .040849 * Math.sin(2 * g)), dc = .006918 - .399912 * Math.cos(g) + .070257 * Math.sin(g) - .006758 * Math.cos(2 * g) + .000907 * Math.sin(2 * g) - .002697 * Math.cos(3 * g) + .00148 * Math.sin(3 * g), ha = Math.acos(Math.cos(90.833 * r) / (Math.cos(lat * r) * Math.cos(dc)) - Math.tan(lat * r) * Math.tan(dc)) / r; return [720 - 4 * (lon + ha) - eq + 480, 720 - 4 * (lon - ha) - eq + 480]; }
 const hhmm = m => { m = Math.round(m); return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0"); };
 function sunRange(ll) { const a = [], b = []; for (let n = 1; n <= 365; n += 7) { const t = sunTimes(ll[0], ll[1], n); a.push(t[0]); b.push(t[1]); } return [hhmm(Math.min(...a)), hhmm(Math.max(...a)), hhmm(Math.min(...b)), hhmm(Math.max(...b))]; }
@@ -577,6 +586,50 @@ ${plan.length ? `<h2 class="sec h2s">✅ ${esc(u2.pv_t)}</h2><ul class="chk">${p
 <h2 class="sec h2s">🌦️ ${esc(tpl(u2.clim_t, { n: t.n }))}</h2><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(u2.clim_m)}</th>${cl.map(r => `<th>${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</th>`).join("")}</tr></thead><tbody>
 <tr><td>${esc(u2.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_rain)}</td>${cl.map(r => `<td${r[3] < 60 ? ' class="dry"' : ""}>${r[3]}</td>`).join("")}</tr></tbody></table></div><p class="note">${esc(u2.dry_note)} ${esc(tpl(u2.clim_note, { s: CLIM_NAME[ck] }))}</p>`;
 }
+function placeTimeAndGuides(l, p) {
+  const u2 = D.ui2[l];
+  const ck = Object.keys(CLIM_PTS).map(k => [km(CLIM_PTS[k], p.ll), k]).sort((a, b) => a[0] - b[0])[0][1], cl = D.climate[ck];
+  let mf; try { mf = new Intl.DateTimeFormat(l, { month: "long", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "long", timeZone: "UTC" }); }
+  const dry = cl.slice().sort((a, b) => a[3] - b[3]).slice(0, 4).map(r => r[0]).sort((a, b) => a - b);
+  const mlink = m => `<a href="/${l}/month/${D.months.en[m - 1].m}/">${esc(mf.format(new Date(Date.UTC(2026, m - 1, 15))))}</a>`;
+  const gs = D.guides.filter(g => ((g.en && g.en.b) || "").includes(`/place/${p.s}/`)).slice(0, 6);
+  const u = D.ui[l];
+  const sim = D.places.filter(x => x.s !== p.s && x.c === p.c).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 3);
+  const nn = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 2);
+  let day = "";
+  if (nn.length === 2 && nn[1][0] < 40) { const [k1, h1] = driveH(l, nn[0][0]), [k2, h2] = driveH(l, km(nn[0][1].ll, nn[1][1].ll)); day = `<h2 class="sec h2s">🧭 ${esc(u2.day_t)}</h2><p>${tpl(esc(u2.day_b), { a: `<b>${esc(P(p, l).n)}</b>`, b: `<a href="/${l}/place/${nn[0][1].s}/">${esc(P(nn[0][1], l).n)}</a>`, c: `<a href="/${l}/place/${nn[1][1].s}/">${esc(P(nn[1][1], l).n)}</a>`, k1, h1: esc(h1), k2, h2: esc(h2) })}</p>`; }
+  const combo = catRegionCombos().find(x => x[0] === p.c && x[1] === p.r);
+  const simH = sim.length ? `<h2 class="sec h2s">${CAT_ICON[p.c]} ${esc(u2.sim_t)}</h2><div class="grid">${sim.map(([d, x]) => card(x, l)).join("")}</div>${combo ? `<p><a class="btn alt2" href="${catPath(l, p.c)}${D.rslug[p.r]}/">${esc(tpl(u2.combo_link, { c: u.cat[p.c].toLowerCase(), r: u.reg[p.r], n: combo[2] }))} →</a></p>` : ""}` : "";
+  return day + simH + `<h2 class="sec h2s">🗓️ ${esc(u2.best_time_t)}</h2><p>${tpl(esc(u2.best_time_b), { m: dry.map(mlink).join(", ") })}</p>` +
+    (gs.length ? `<h2 class="sec h2s">📚 ${esc(u2.rel_guides)}</h2><ul class="chk">${gs.map(g => `<li><a href="/${l}/guide/${g.s}/">${esc(gtxt(g, l).t)}</a></li>`).join("")}</ul>` : "");
+}
+const MON_SLUGS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+function monthPage(l, i) {
+  const u = D.ui[l], u2 = D.ui2[l], mo = D.months[l][i], en = D.months.en[i];
+  let mf; try { mf = new Intl.DateTimeFormat(l, { month: "long", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "long", timeZone: "UTC" }); }
+  const mn = mf.format(new Date(Date.UTC(2026, i, 15)));
+  const rows = Object.keys(CLIM_PTS).map(k => { const r = D.climate[k][i]; return `<tr><td>${esc(CLIM_NAME[k])}</td><td>${Math.round(r[1])} °C</td><td>${Math.round(r[2])} °C</td><td${r[3] < 60 ? ' class="dry"' : ""}>${r[3]}</td></tr>`; }).join("");
+  const best = D.places.filter(p => en.best.includes(p.c)).sort((a, b) => (b.sec ? 1 : 0) - (a.sec ? 1 : 0)).slice(0, 9);
+  const ev = (i === 1 || i === 2) ? `<h2 class="sec h2s">🐎 ${esc(u2.month_ev)}</h2><p>${esc(u2.month_ev_pasola)} <a href="/${l}/guide/pasola-dates/">→</a></p>` : "";
+  const nav = `<div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip${j === i ? " on" : ""}" href="/${l}/month/${m}/"${j === i ? ' aria-current="page"' : ""}>${esc(mf.format(new Date(Date.UTC(2026, j, 15))))}</a>`).join("")}</div>`;
+  const body = `<div class="w"><article class="pl"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/guide/sumba-weather-by-month/">${esc(u2.months_t)}</a></nav><h1>${esc(mo.t)}</h1>${nav}
+<div class="body"><p class="lead1">${esc(mo.b)}</p></div>
+<h2 class="sec h2s">🌦️ ${esc(tpl(u2.month_clim, { m: mn }))}</h2><div class="tblw"><table class="tbl"><thead><tr><th>${esc(u2.gx_region)}</th><th>${esc(u2.clim_max)}</th><th>${esc(u2.clim_min)}</th><th>${esc(u2.month_rain_l)}</th></tr></thead><tbody>${rows}</tbody></table></div><p class="note">${esc(tpl(u2.clim_note, { s: "Waingapu, Waikabubak, Tambolaka, " + CLIM_NAME.south }))}</p>
+${ev}<h2 class="sec h2s">✅ ${esc(u2.month_best)}</h2><div class="grid">${best.map(p => card(p, l)).join("")}</div>
+<p class="near-cta"><a class="btn" href="/${l}/guide/sumba-weather-by-month/">${esc(u2.months_t)} →</a> <a class="btn alt2" href="/${l}/weather/">${esc(u.weather)} →</a></p></article></div>`;
+  const ld = [{ "@context": "https://schema.org", "@type": "Article", headline: mo.t, description: mo.b.slice(0, 200), inLanguage: l, author: { "@type": "Organization", name: "Sumba Secrets", url: BASE }, dateModified: D.built, mainEntityOfPage: `${BASE}/${l}/month/${MON_SLUGS[i]}/` }, itemListLD(l, best), crumbsLD([["Sumba Secrets", `/${l}/`], [u2.months_t, `/${l}/guide/sumba-weather-by-month/`], [mn, `/${l}/month/${MON_SLUGS[i]}/`]])];
+  return page(l, `/month/${MON_SLUGS[i]}/`, { title: mo.t, desc: mo.b, body, ld });
+}
+function catRegionCombos() { const out = []; Object.keys(D.cslug).forEach(c => Object.keys(D.rslug).forEach(r => { const n = D.places.filter(p => p.c === c && p.r === r).length; if (n >= 3) out.push([c, r, n]); })); return out; }
+function catRegionPage(l, c, r) {
+  const u = D.ui[l], u2 = D.ui2[l], items = D.places.filter(p => p.c === c && p.r === r);
+  const title = tpl(u2.cr_title, { c: u.cat[c], r: u.reg[r], n: items.length });
+  const desc = tpl(u2.cr_desc, { c: u.cat[c].toLowerCase(), r: u.reg[r], list: items.slice(0, 4).map(p => P(p, l).n).join(", ") });
+  const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${catPath(l, c)}">${esc(u.cat[c])}</a> › ${esc(u.reg[r])}</nav><h1 class="h1">${CAT_ICON[c]} ${esc(title)}</h1><p class="lead">${esc(D.ctxt[c][l])} ${esc(D.rtxt[r][l])}</p>
+<div id="map" style="height:400px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
+<h2 class="sec h2s">${esc(u2.by_region)}</h2><div class="chips">${catRegionCombos().filter(x => x[0] === c).map(([cc, rr, n]) => `<a class="chip${rr === r ? " on" : ""}" href="${catPath(l, cc)}${D.rslug[rr]}/">${esc(u.reg[rr])} (${n})</a>`).join("")}<a class="chip" href="${catPath(l, c)}">${esc(u.cat[c])} · Sumba</a></div></div></section>`;
+  return page(l, `${catPath(l, c).slice(3)}${D.rslug[r]}/`, { title, desc, body, leaflet: true, ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)], [u.reg[r], `${catPath(l, c)}${D.rslug[r]}/`]])], js: mapJS(l, items, { fit: true }) });
+}
 function placePage(l, p) {
   const u = D.ui[l], u2 = U2(l), t = P(p, l);
   const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 6);
@@ -597,6 +650,7 @@ function placePage(l, p) {
 ${ph.length > 1 ? `<h2 class="sec h2s" id="photos">📷 ${esc(u2.gallery)}</h2><div class="gal2">${ph.map((x, i) => `<button data-lb="${i}" aria-label="${esc(u2.gallery)} ${i + 1}"><img src="${x.s}" alt="${esc(t.n)} (${i + 1})" loading="lazy" width="500" height="333"></button>`).join("")}</div><p class="crs">${ph.map(x => `${x.fp ? esc(u2.file) + " · " : ""}${esc(x.a)} (<a href="${x.f}" rel="nofollow noopener" target="_blank">${esc(x.l)}</a>)`).join(" · ")}, Wikimedia Commons</p>` : ""}
 ${vids.length ? `<h2 class="sec h2s">▶ ${esc(u2.videos_t)}</h2><div class="vids one">${vids.map(v => ytFacade(v, l)).join("")}</div>` : ""}
 ${placeExtra(l, p, t)}
+${placeTimeAndGuides(l, p)}
 <h2 class="sec h2s" id="faq">${esc(u2.faq)}</h2><div class="faq">${faq.map(([q, a], i) => `<details${i ? "" : " open"}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
 ${tipForm(l, p)}</article>
 <aside class="pl2-side"><div class="qf"><h2>${esc(u2.quick)}</h2><dl>
@@ -616,7 +670,7 @@ ${tipForm(l, p)}</article>
       containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, image: ph.map(x => x.b) },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
     crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]]), ...vids.map(v => videoLD(v, l))];
-  return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()} & ${u.map.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
+  return page(l, `/place/${p.s}/`, { home: true, preload: hero.b.replace("/ph/1280/", "/ph/960/"), ogimgOwn: `${BASE}/og/${p.s}.jpg`, title: `${t.n}, Sumba: ${u2.jl_get.toLowerCase()}, ${u.tip.toLowerCase()} & ${u.map.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), body, leaflet: true, ld,
     js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) + `document.addEventListener('keydown',function(e){if(/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName||'')||e.altKey||e.ctrlKey||e.metaKey)return;var lb=document.getElementById('lb');if(lb&&!lb.hidden)return;if(e.key==='ArrowLeft')location.href='/${l}/place/${prev.s}/';if(e.key==='ArrowRight')location.href='/${l}/place/${next.s}/'});` });
 }
 
@@ -829,7 +883,7 @@ addEventListener('resize',function(){clearTimeout(window._rz);window._rz=setTime
 
 function SITE_PATHS() {
   return ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
-    .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.towns.map(t => `/town/${t.s}/`), ["/towns/"], D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`));
+    .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.towns.map(t => `/town/${t.s}/`), ["/towns/"], D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`), MON_SLUGS.map(m => `/month/${m}/`), catRegionCombos().map(([c, r]) => `/${D.cslug[c]}/${D.rslug[r]}/`));
 }
 function sitemap(l) {
   const imgs = p => { const m = p.match(/^\/place\/([a-z0-9-]+)\/$/); if (!m) return ""; const pl = D.places.find(x => x.s === m[1]); const t = P(pl, l); return photos(pl).map(x => `<image:image><image:loc>${esc(x.b)}</image:loc><image:title>${esc(t.n)}, Sumba</image:title></image:image>`).join(""); };
@@ -838,7 +892,7 @@ function sitemap(l) {
 }
 
 function llms() {
-  return `# Sumba Secrets\n\n> Travel guide to the island of Sumba (East Nusa Tenggara, Indonesia): interactive map, secret spots, live weather and guides in English, Spanish, Indonesian, German, French and Dutch. Sister site of The Sumba Times (${TIMES}), the island's daily news.\n\n## Key pages\n- Interactive map: ${BASE}/map\n- Secret spots: ${BASE}/en/secret-spots/\n- Weather: ${BASE}/en/weather/\n${Object.values(D.rslug).map(r => `- ${r}: ${BASE}/en/region/${r}/`).join("\n")}\n\n## Places\n${D.places.map(p => `- [${p.en.n}](${BASE}/en/place/${p.s}/): ${p.en.t.split(". ")[0]}. (${p.ll[0]}, ${p.ll[1]})`).join("\n")}\n\n## Guides\n${D.guides.map(g => `- [${g.en.t}](${BASE}/en/guide/${g.s}/)`).join("\n")}\n`;
+  return `# Sumba Secrets\n\n> Independent travel guide to the island of Sumba (East Nusa Tenggara, Indonesia), published by Eco Beach City (Mamboro, Central Sumba): interactive map of ${D.places.length} checked places, live weather, climate data, drive times and ${D.guides.length} guides, in ${L.length} languages (${L.join(", ")}). Sister site of The Sumba Times (${TIMES}). No paid placements; hotels are not ranked.\n\n## Key pages\n- Interactive map: ${BASE}/map\n- Sumba travel guide: ${BASE}/en/guide/sumba-travel-guide/\n- All places by region: ${BASE}/en/guide/places-to-visit-in-sumba/\n- Weather by month: ${BASE}/en/guide/sumba-weather-by-month/\n- Secret spots: ${BASE}/en/secret-spots/\n- Live weather: ${BASE}/en/weather/\n- Data downloads: ${BASE}/sumba-places.kml, ${BASE}/sumba-places.gpx\n${Object.values(D.rslug).map(r => `- ${r}: ${BASE}/en/region/${r}/`).join("\n")}\n\n## Places\n${D.places.map(p => `- [${p.en.n}](${BASE}/en/place/${p.s}/): ${p.en.t.split(". ")[0]}. (${p.ll[0]}, ${p.ll[1]})`).join("\n")}\n\n## Guides\n${D.guides.map(g => `- [${g.en.t}](${BASE}/en/guide/${g.s}/): ${g.en.d}`).join("\n")}\n\n## Months\n${MON_SLUGS.map((m, i) => `- [${D.months.en[i].t}](${BASE}/en/month/${m}/)`).join("\n")}\n`;
 }
 
 const ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e6f66"/><path d="M10 42c8-6 14-6 22 0s14 6 22 0" stroke="#f7f2e8" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="44" cy="22" r="7" fill="#e0ad55"/></svg>`;
@@ -890,7 +944,7 @@ function townPage(l, t) {
 <div class="body">${x.b}</div><h2 class="sec h2s">${esc(u.now)} · ${esc(t.n)}</h2>${wxBoxes(l, [t])}<h2 class="sec h2s">${esc(u.map)}</h2><div id="map" class="mapsm"></div>
 <h2 class="sec h2s">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, p]) => card(p, l)).join("")}</div></article></div>`;
   const ld = [{ "@context": "https://schema.org", "@type": "City", name: t.n, description: x.d, geo: { "@type": "GeoCoordinates", latitude: t.ll[0], longitude: t.ll[1] }, containedInPlace: { "@type": "Place", name: "Sumba, Indonesia" } }, crumbsLD([["Sumba Secrets", `/${l}/`], [u2.towns_t, `/${l}/towns/`], [t.n, `/${l}/town/${t.s}/`]])];
-  return page(l, `/town/${t.s}/`, { title: x.t, desc: x.d, ogimg: ph && ph.b, body, leaflet: true, ld, js: mapJS(l, near.map(n => n[1]), { fit: true }) + wxJS(l, [t], true) });
+  return page(l, `/town/${t.s}/`, { title: /Sumba/.test(x.t) ? x.t : `${x.t} · Sumba`, desc: x.d, ogimg: ph && ph.b, body, leaflet: true, ld, js: mapJS(l, near.map(n => n[1]), { fit: true }) + wxJS(l, [t], true) });
 }
 function townsPage(l) {
   const u2 = D.ui2[l];
@@ -902,7 +956,11 @@ function searchPage(l) {
   const u2 = D.ui2[l];
   const idx = D.places.map(p => { const t = P(p, l); return { u: `/${l}/place/${p.s}/`, n: t.n, d: t.t, k: D.ui[l].cat[p.c] + " " + D.ui[l].reg[p.r] }; })
     .concat(D.guides.map(g => { const t = gtxt(g, l); return { u: `/${l}/guide/${g.s}/`, n: t.t, d: t.d, k: D.ui[l].guides }; }))
-    .concat(D.towns.map(t => { const x = Object.assign({}, D.towntxt[t.s].en, D.towntxt[t.s][l]); return { u: `/${l}/town/${t.s}/`, n: x.t, d: x.d, k: u2.town_l }; }));
+    .concat(D.towns.map(t => { const x = Object.assign({}, D.towntxt[t.s].en, D.towntxt[t.s][l]); return { u: `/${l}/town/${t.s}/`, n: x.t, d: x.d, k: u2.town_l }; }))
+    .concat(Object.keys(D.rslug).map(r => ({ u: regionPath(l, r), n: D.ui[l].reg[r], d: D.rtxt[r][l], k: u2.zones })))
+    .concat(Object.keys(D.cslug).map(c => ({ u: catPath(l, c), n: D.ui[l].cat[c], d: D.ctxt[c][l], k: u2.categories })))
+    .concat(D.months[l].map((m, i) => ({ u: `/${l}/month/${MON_SLUGS[i]}/`, n: m.t, d: m.b, k: u2.months_t })))
+    .concat(catRegionCombos().map(([c, r, n]) => ({ u: `${catPath(l, c)}${D.rslug[r]}/`, n: tpl(u2.cr_title, { c: D.ui[l].cat[c], r: D.ui[l].reg[r], n }), d: D.ctxt[c][l], k: u2.categories })));
   const body = `<section><div class="w srch"><h1 class="h1">🔎 ${esc(u2.search_site)}</h1><input id="sq" type="search" autofocus enterkeyhint="search" autocomplete="off" placeholder="${esc(u2.search_site)}" aria-label="${esc(u2.search_site)}"><p id="sc" class="note" aria-live="polite"></p><div id="sr" class="news" style="margin-top:8px"></div></div></section>`;
   const js = `(function(){var I=${JSON.stringify(idx)},q=document.getElementById('sq'),r=document.getElementById('sr'),NO=${JSON.stringify(u2.no_results)},PO=${JSON.stringify(u2.popular)},RS=${JSON.stringify(u2.recent)},POP=${JSON.stringify(["weekuri-lagoon", "wairinding-hill", "walakiri-beach", "ratenggaro", "tanggedu-waterfall", "mandorak-beach"].map(s => D.places.find(p => p.s === s)).filter(Boolean).map(p => [`/${l}/place/${p.s}/`, P(p, l).n]))};function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
 function n(s){return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}var SY=[['beach','playa','pantai','plage','strand','spiaggia','praia','ビーチ','海滩','해변','пляж'],['waterfall','cascada','air terjun','wasserfall','cascade','waterval','cascata','滝','瀑布','폭포','водопад'],['village','aldea','pueblo','kampung','dorf','dorp','villaggio','aldeia','村','마을','деревня'],['hill','colina','bukit','hügel','colline','heuvel','collina','丘','언덕','холм'],['lagoon','laguna','danau','lagune','lagoa','ラグーン','泻湖','석호','лагуна'],['airport','aeropuerto','bandara','flughafen','aéroport','luchthaven','aeroporto','空港','机场','공항','аэропорт']];
@@ -1035,7 +1093,8 @@ function feed(l) {
   const u = D.ui[l];
   const items = D.guides.map(g => { const t = gtxt(g, l); return { t: t.t, d: t.d, u: `${BASE}/${l}/guide/${g.s}/`, m: MOD(`/guide/${g.s}/`) }; })
     .concat(D.places.map(p => { const t = P(p, l); return { t: t.n, d: t.t, u: `${BASE}/${l}/place/${p.s}/`, m: MOD(`/place/${p.s}/`) }; }))
-    .sort((a, b) => b.m.localeCompare(a.m)).slice(0, 60);
+    .concat(D.months[l].map((m, i) => ({ t: m.t, d: m.b, u: `${BASE}/${l}/month/${MON_SLUGS[i]}/`, m: D.built })))
+    .sort((a, b) => b.m.localeCompare(a.m)).slice(0, 80);
   return `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumba Secrets (${l.toUpperCase()})</title><link>${BASE}/${l}/</link><description>${esc(u.hero_d)}</description><language>${l}</language><atom:link href="${BASE}/${l}/feed.xml" rel="self" type="application/rss+xml"/>${items.map(x => `<item><title>${esc(x.t)}</title><link>${x.u}</link><guid>${x.u}</guid><description>${esc(x.d)}</description><pubDate>${new Date(x.m + "T08:00:00Z").toUTCString()}</pubDate></item>`).join("")}</channel></rss>`;
 }
 async function indexNow(env) {
@@ -1048,7 +1107,7 @@ async function indexNow(env) {
   }
   return Response.json({ urls: urls.length, status: out });
 }
-const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600, stale-while-revalidate=86400", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
+const H = { "last-modified": new Date(D.built + "T00:00:00Z").toUTCString(), "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600, stale-while-revalidate=86400", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
 const pickLang = req => { const al = (req.headers.get("accept-language") || "").toLowerCase(); return al.split(",").map(x => x.trim().slice(0, 2)).find(x => L.includes(x)) || "en"; };
 
 function route(req, url) {
@@ -1074,6 +1133,8 @@ function route(req, url) {
   mm = rest.match(/^\/guide\/([a-z0-9-]+)\/$/); if (mm) { const g = D.guides.find(x => x.s === mm[1]); if (g) return [200, guidePage(l, g)]; }
   mm = rest.match(/^\/region\/([a-z-]+)\/$/); if (mm) { const r = Object.keys(D.rslug).find(k => D.rslug[k] === mm[1]); if (r) return [200, regionPage(l, r)]; }
   mm = rest.match(/^\/([a-z]+)\/$/); if (mm) { const c = Object.keys(D.cslug).find(k => D.cslug[k] === mm[1]); if (c) return [200, catPage(l, c)]; }
+  mm = rest.match(/^\/month\/([a-z]+)\/$/); if (mm) { const i = MON_SLUGS.indexOf(mm[1]); if (i > -1) return [200, monthPage(l, i)]; }
+  mm = rest.match(/^\/([a-z]+)\/([a-z-]+)\/$/); if (mm) { const c = Object.keys(D.cslug).find(k => D.cslug[k] === mm[1]), r = Object.keys(D.rslug).find(k => D.rslug[k] === mm[2]); if (c && r && catRegionCombos().some(x => x[0] === c && x[1] === r)) return [200, catRegionPage(l, c, r)]; }
   return [404, notFound(l)];
 }
 

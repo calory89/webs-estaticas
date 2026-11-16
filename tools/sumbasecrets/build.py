@@ -64,6 +64,10 @@ for g in GUIDES2 + GUIDES3:
         if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))
         ng[l] = tr
     GUIDES_ALL.append(ng)
+from months import MONTHS
+MONTHS_ALL = {}
+for l in LANGS:
+    MONTHS_ALL[l] = [dict(x) if l == "en" else dict(x, **tr_tree({"t": x["t"], "b": x["b"]}, l)) for x in MONTHS]
 import native, guides4, guides_add
 for g in GUIDES_ALL:  # extra sections for the shorter existing guides
     add = guides_add.ADD.get(g["s"]); fq = guides_add.FAQ.get(g["s"], [])
@@ -113,7 +117,7 @@ assert not any(b in blob for b in bad), "hotel photo in gallery"
 data = {"langs": LANGS, "lname": LNAME, "tl": TIMES_LANG, "ui": UI, "ui2": UI2, "wx": WX, "places": PLACES, "towns": TOWNS, "towntxt": TOWNS_ALL,
         "guides": GUIDES_ALL, "credits": CREDITS, "rtxt": REGION_TXT, "rslug": REGION_SLUG, "cslug": CAT_SLUG, "ctxt": CAT_TXT, "season": SEASON,
         "gallery": GALLERY, "airports": AIRPORTS, "regions": json.load(open("regions.json")), "indexnow": "5f0c3b7e9a2d4c18b6e1a7f3d9c2e0b4",
-        "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "climate": json.load(open("climate.json")), "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
+        "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "climate": json.load(open("climate.json")), "months": MONTHS_ALL, "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
 # ---- real lastmod per page: date changes only when that page's content changes ----
 import hashlib, os
 _lm = json.load(open("lastmod.json")) if os.path.exists("lastmod.json") else {}
