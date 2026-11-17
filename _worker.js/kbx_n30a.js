@@ -15,7 +15,7 @@
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 
-export const N30V = 'a4';
+export const N30V = 'a5';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -215,8 +215,8 @@ export function radarSvg(lang, cols) {   // cols: [{ name, st: ['ok'|'part'|'no'
   for (let i = 0; i < n; i++) { const [x, y] = pt(i, R); g += '<line class="g" x1="' + cx + '" y1="' + cy + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>'; const [lx, ly] = pt(i, R + 22); g += '<text x="' + lx.toFixed(1) + '" y="' + (ly + 4).toFixed(1) + '" text-anchor="' + (Math.abs(lx - cx) < 8 ? 'middle' : lx > cx ? 'start' : 'end') + '">' + esc(L[i]) + '</text>'; }
   cols.forEach((c, j) => { const P = c.st.map((s, i) => pt(i, Math.max(6, R * (RV[s] || 0) / 3))); g += '<polygon class="p" style="stroke:' + RC[j] + ';fill:' + RC[j] + '" points="' + P.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ') + '"><title>' + esc(c.name) + '</title></polygon>' + P.map(p => '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3.5" style="fill:' + RC[j] + '"/>').join(''); });
   const leg = '<ul class="n30rl">' + cols.map((c, j) => '<li><i style="background:' + RC[j] + '"></i>' + bdi(lang, c.name) + '</li>').join('') + '</ul>';
-  return '<figure class="n30r"><figcaption><b>' + esc(t30(lang, 'cp_radar')) + '</b></figcaption><div dir="ltr"><svg viewBox="-60 0 480 340" role="img" aria-label="' + esc(t30(lang, 'cp_radar') + ': ' + cols.map(c => c.name + ' ' + c.st.map((s, i) => L[i] + ' ' + t30(lang, 'st')[s]).join(', ')).join('; ')) + '">' + g + '</svg></div>' + leg + '<p class="k-muted">' + esc(t30(lang, 'cp_radar_n')) + '</p></figure>' +
-    '<style>.n30r{margin:18px 0;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);padding:14px}.n30r svg{width:100%;max-width:520px;display:block;margin:0 auto}.n30r .g{fill:none;stroke:var(--line,#d5d3cc);stroke-width:1}.n30r .p{fill-opacity:.12;stroke-width:2.5}.n30r text{font-size:13px;fill:var(--ink,#17212B)}.n30rl{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:8px 0}.n30rl i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}</style>';
+  return '<figure class="n30r"><figcaption><b>' + esc(t30(lang, 'cp_radar')) + '</b></figcaption><div dir="ltr"><svg viewBox="-90 -6 540 352" role="img" aria-label="' + esc(t30(lang, 'cp_radar') + ': ' + cols.map(c => c.name + ' ' + c.st.map((s, i) => L[i] + ' ' + t30(lang, 'st')[s]).join(', ')).join('; ')) + '">' + g + '</svg></div>' + leg + '<p class="k-muted">' + esc(t30(lang, 'cp_radar_n')) + '</p></figure>' +
+    '<style>.n30r{margin:18px 0;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);padding:14px}.n30r svg{width:100%;max-width:520px;display:block;margin:0 auto}.n30r .g{fill:none;stroke:var(--line,#d5d3cc);stroke-width:1}.n30r .p{fill-opacity:.12;stroke-width:2.5}.n30r text{font-size:17px;fill:var(--ink,#17212B)}.n30rl{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:8px 0}.n30rl i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}</style>';
 }
 export const stLabel = (lang, s) => t30(lang, 'st')[s] || s;
 
@@ -281,7 +281,7 @@ function crClient() {
       S.forEach(function (s, j) { re.lastIndex = 0; var n = (s.t.match(re) || []).length; if (n) { var v = vals(s.t); hits.push({ s: s, j: j, sc: n * 2 + (v.length ? 3 : 0) + (s.t.length < 400 ? 1 : 0), v: v }); } });
       hits.sort(function (a, b) { return b.sc - a.sc || a.j - b.j; });
       if (hits.length) found++;
-      var li = function (h) { return '<li><span class="pg">' + esc(label || f(M.page, { p: h.s.p })) + '</span>' + mark(h.s.t, re) + (h.v.length ? '<span class="vals">' + esc(M.vals) + ': ' + h.v.map(esc).join(' · ') + '</span>' : '') + '</li>'; };
+      var li = function (h) { return '<li dir="auto"><span class="pg" dir="auto">' + esc(label || f(M.page, { p: h.s.p })) + '</span>' + mark(h.s.t, re) + (h.v.length ? '<span class="vals" dir="auto">' + esc(M.vals) + ': ' + h.v.map(esc).join(' · ') + '</span>' : '') + '</li>'; };
       html += '<section class="n30k ' + (hits.length ? 'is-ok' : 'is-none') + '"><h3>' + esc(c[1]) + ' <small>' + esc(hits.length === 1 ? M.k1 : hits.length ? f(M.k, { k: hits.length }) : '') + '</small></h3><p>' + esc(hits.length ? c[2] : M.none) + '</p>' +
         (hits.length ? '<ol>' + hits.slice(0, 4).map(li).join('') + '</ol>' + (hits.length > 4 ? '<button type="button" data-more="' + c[0] + '">' + esc(f(M.more, { k: hits.length - 4 })) + '</button><ol hidden data-rest="' + c[0] + '" start="5">' + hits.slice(4, 40).map(li).join('') + '</ol>' : '') : '') + '</section>';
     });

@@ -14,7 +14,7 @@ import { t30 } from './kbx_n30a.js';   // n30a (batch 30): contract reader link 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27i';   // u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V = 'u27j';   // u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
 export const U27V_OLD = 'u27g';   // u27g: currency pre-selected by page language (n29i)   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
