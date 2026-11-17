@@ -1178,7 +1178,7 @@
    "checked": 3902,
    "indexable": 3366,
    "max_depth": 3,
-   "titles_changed_since_last_build": 5,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 314,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1186,7 +1186,6 @@
    "year_in_title": 2,
    "near_identical_pages": 518,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 5,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1265,13 +1264,6 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (295, from €7,400)",
-    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (54) · RealHunt",
-    "/cheap-houses/under-100000-dollars-in-sweden: Cheap homes for sale in Sweden under $100,000 (31)",
-    "/cheap-houses/under-50000-pounds: Cheap homes for sale under £50,000 (135, from €7,400)",
-    "/es/cheap-houses/under-50000-pounds: Viviendas baratas en venta por menos de 50.000 libras (135)"
    ]
   },
   "depth": {
