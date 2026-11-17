@@ -2,6 +2,7 @@
 // WRI Aqueduct, OpenStreetMap, EEA Natura 2000) stay as published.
 export const S = {
   en: {
+    es_k50: 'Median answer, 7 days', es_k95: '95% of answers faster than, 7 days',
     cr_eng: 'Engineering', cr_tools: 'Tools', es_vdb: 'database server, every 5 minutes', es_vgh: 'GitHub runners, every hour, OIDC-signed',
     // pin check (named pages, #land)
     pc_h: 'Pin check: land, protected areas, flood', pc_i: 'Open data read at the project pin (accurate to about {a} m). These are readings of map layers, not a verdict on the land.',
@@ -44,7 +45,7 @@ export const S = {
     es_vt: 'Vantage point', es_pr: 'Probes, 7 days', es_ut: 'Up', es_md: 'Median', es_inc: 'Failed probes in the record: {n}. Latest: {l}.',
     es_lat: 'Latency at the edge', es_lat1: 'The 20 key pages fetched from the Cloudflare edge as a visitor would, at {t} on commit {c}: {up} of {n} up. p50 {p50} ms, p95 {p95} ms.',
     es_pg: 'Page', es_hs: 'HTTP', es_ms: 'Time', es_kb: 'Size',
-    es_dep: 'Deploy and build times', es_dep1: '{n} deploys in the guard record since {s}: {ok} passed the smoke checks first time, {rb} rolled back automatically. Time from push to live: p50 {p50} s, p95 {p95} s.',
+    es_dep: 'Deploy and build times', es_dep1: '{n} deploys in the guard record since {s}: {ok} passed the smoke checks, {rb} rolled back automatically. Time from push to live: p50 {p50} s, p95 {p95} s.',
     es_bld: 'Worker bundle, built twice from clean folders for each live worker tree: latest {b} ({d}), {r}. {k} builds recorded.', es_rep: 'byte-identical both times', es_nrep: 'not byte-identical',
     es_w: 'Bundle size per template', es_w1: 'One page of each template, fetched just now from the edge: HTML as sent and our own scripts it loads (uncompressed bytes).',
     es_tp: 'Template', es_html: 'HTML', es_js: 'Our scripts', es_tot: 'Total', es_n: 'Scripts',
@@ -57,6 +58,7 @@ export const S = {
     mpk: '{k} projects in this view', mpa: '{k} more in {m}, without a published address', mpo: 'Open', mpe: 'The map did not load. The list below still works.', mpr: 'Clear filters', mp0: 'No project matches these filters.'
   },
   es: {
+    es_k50: 'Respuesta mediana, 7 días', es_k95: 'El 95 % de las respuestas, más rápidas que, 7 días',
     cr_eng: 'Ingeniería', cr_tools: 'Herramientas', es_vdb: 'servidor de base de datos, cada 5 minutos', es_vgh: 'runners de GitHub, cada hora, firmados con OIDC',
     pc_h: 'Revisión del pin: tierra, zonas protegidas, inundación', pc_i: 'Datos abiertos leídos en el pin del proyecto (precisión de unos {a} m). Son lecturas de capas de mapa, no un veredicto sobre el terreno.',
     pc_land: '¿Está el pin en tierra?', pc_up: 'La altura del terreno en el pin es de {m} m sobre el nivel del mar, así que en este modelo de elevación el pin está en tierra.',
@@ -94,7 +96,7 @@ export const S = {
     es_vt: 'Punto de medida', es_pr: 'Sondeos, 7 días', es_ut: 'Disponible', es_md: 'Mediana', es_inc: 'Sondeos fallidos en el registro: {n}. Último: {l}.',
     es_lat: 'Latencia en el edge', es_lat1: 'Las 20 páginas clave pedidas desde el edge de Cloudflare como lo haría un visitante, a las {t} en el commit {c}: {up} de {n} disponibles. p50 {p50} ms, p95 {p95} ms.',
     es_pg: 'Página', es_hs: 'HTTP', es_ms: 'Tiempo', es_kb: 'Tamaño',
-    es_dep: 'Tiempos de despliegue y compilación', es_dep1: '{n} despliegues en el registro de la guarda desde el {s}: {ok} pasaron las pruebas a la primera, {rb} se revirtieron solos. Tiempo de push a publicado: p50 {p50} s, p95 {p95} s.',
+    es_dep: 'Tiempos de despliegue y compilación', es_dep1: '{n} despliegues en el registro de la guarda desde el {s}: {ok} pasaron las pruebas, {rb} se revirtieron solos. Tiempo de push a publicado: p50 {p50} s, p95 {p95} s.',
     es_bld: 'Paquete del worker, compilado dos veces en carpetas limpias para cada versión publicada: último {b} ({d}), {r}. {k} compilaciones registradas.', es_rep: 'idéntico byte a byte', es_nrep: 'no idéntico byte a byte',
     es_w: 'Peso por plantilla', es_w1: 'Una página de cada plantilla, pedida ahora mismo al edge: el HTML tal como se envía y nuestros propios scripts que carga (bytes sin comprimir).',
     es_tp: 'Plantilla', es_html: 'HTML', es_js: 'Nuestros scripts', es_tot: 'Total', es_n: 'Scripts',
@@ -106,6 +108,7 @@ export const S = {
     mpk: '{k} proyectos en esta vista', mpa: '{k} más en {m}, sin dirección publicada', mpo: 'Abrir', mpe: 'El mapa no se pudo cargar. La lista de abajo sigue funcionando.', mpr: 'Quitar filtros', mp0: 'Ningún proyecto cumple estos filtros.'
   },
   fr: {
+    es_k50: 'Réponse médiane, 7 jours', es_k95: '95 % des réponses plus rapides que, 7 jours',
     cr_eng: 'Ingénierie', cr_tools: 'Outils', es_vdb: 'serveur de base de données, toutes les 5 minutes', es_vgh: 'runners GitHub, toutes les heures, signés OIDC',
     pc_h: 'Contrôle du repère : terre, zones protégées, inondation', pc_i: 'Données ouvertes lues au repère du projet (précis à environ {a} m). Ce sont des lectures de couches cartographiques, pas un verdict sur le terrain.',
     pc_land: 'Le repère est-il sur la terre ferme ?', pc_up: 'L’altitude du sol au repère est de {m} m au-dessus du niveau de la mer : sur ce modèle d’élévation, le repère est sur la terre ferme.',
@@ -143,7 +146,7 @@ export const S = {
     es_vt: 'Point de mesure', es_pr: 'Sondes, 7 jours', es_ut: 'Disponible', es_md: 'Médiane', es_inc: 'Sondes en échec dans le registre : {n}. Dernière : {l}.',
     es_lat: 'Latence en bordure', es_lat1: 'Les 20 pages clés demandées depuis la bordure Cloudflare comme le ferait un visiteur, à {t} sur le commit {c} : {up} sur {n} disponibles. p50 {p50} ms, p95 {p95} ms.',
     es_pg: 'Page', es_hs: 'HTTP', es_ms: 'Durée', es_kb: 'Taille',
-    es_dep: 'Durées de déploiement et de build', es_dep1: '{n} déploiements dans le registre de la garde depuis le {s} : {ok} ont passé les tests du premier coup, {rb} annulés automatiquement. Du push à la mise en ligne : p50 {p50} s, p95 {p95} s.',
+    es_dep: 'Durées de déploiement et de build', es_dep1: '{n} déploiements dans le registre de la garde depuis le {s} : {ok} ont passé les tests, {rb} annulés automatiquement. Du push à la mise en ligne : p50 {p50} s, p95 {p95} s.',
     es_bld: 'Bundle du worker, construit deux fois dans des dossiers vierges pour chaque version en ligne : dernier {b} ({d}), {r}. {k} builds enregistrés.', es_rep: 'identique à l’octet près', es_nrep: 'pas identique à l’octet près',
     es_w: 'Poids par gabarit', es_w1: 'Une page de chaque gabarit, demandée à l’instant à la bordure : le HTML tel qu’envoyé et nos propres scripts chargés (octets non compressés).',
     es_tp: 'Gabarit', es_html: 'HTML', es_js: 'Nos scripts', es_tot: 'Total', es_n: 'Scripts',
@@ -155,6 +158,7 @@ export const S = {
     mpk: '{k} projets dans cette vue', mpa: '{k} de plus à {m}, sans adresse publiée', mpo: 'Ouvrir', mpe: 'La carte n’a pas pu être chargée. La liste ci-dessous fonctionne toujours.', mpr: 'Effacer les filtres', mp0: 'Aucun projet ne correspond à ces filtres.'
   },
   de: {
+    es_k50: 'Mittlere Antwortzeit, 7 Tage', es_k95: '95 % der Antworten schneller als, 7 Tage',
     cr_eng: 'Technik', cr_tools: 'Werkzeuge', es_vdb: 'Datenbankserver, alle 5 Minuten', es_vgh: 'GitHub-Runner, stündlich, OIDC-signiert',
     pc_h: 'Pin-Prüfung: Land, Schutzgebiete, Hochwasser', pc_i: 'Offene Daten, am Projekt-Pin gelesen (genau auf etwa {a} m). Das sind Ablesungen von Kartenebenen, kein Urteil über das Grundstück.',
     pc_land: 'Liegt der Pin an Land?', pc_up: 'Die Geländehöhe am Pin beträgt {m} m über dem Meeresspiegel, nach diesem Höhenmodell liegt der Pin also an Land.',
@@ -192,7 +196,7 @@ export const S = {
     es_vt: 'Messpunkt', es_pr: 'Proben, 7 Tage', es_ut: 'Verfügbar', es_md: 'Median', es_inc: 'Fehlgeschlagene Proben im Protokoll: {n}. Zuletzt: {l}.',
     es_lat: 'Latenz am Edge', es_lat1: 'Die 20 wichtigsten Seiten, vom Cloudflare-Edge wie von einem Besucher abgerufen, um {t} auf Commit {c}: {up} von {n} verfügbar. p50 {p50} ms, p95 {p95} ms.',
     es_pg: 'Seite', es_hs: 'HTTP', es_ms: 'Zeit', es_kb: 'Größe',
-    es_dep: 'Deploy- und Build-Zeiten', es_dep1: '{n} Deploys im Wächter-Protokoll seit {s}: {ok} bestanden die Prüfungen beim ersten Mal, {rb} automatisch zurückgerollt. Vom Push bis live: p50 {p50} s, p95 {p95} s.',
+    es_dep: 'Deploy- und Build-Zeiten', es_dep1: '{n} Deploys im Wächter-Protokoll seit {s}: {ok} bestanden die Prüfungen, {rb} automatisch zurückgerollt. Vom Push bis live: p50 {p50} s, p95 {p95} s.',
     es_bld: 'Worker-Bundle, für jede live gegangene Version zweimal in leeren Ordnern gebaut: zuletzt {b} ({d}), {r}. {k} Builds erfasst.', es_rep: 'beide Male byte-identisch', es_nrep: 'nicht byte-identisch',
     es_w: 'Größe pro Vorlage', es_w1: 'Eine Seite je Vorlage, eben vom Edge abgerufen: HTML wie gesendet und unsere eigenen geladenen Skripte (unkomprimierte Bytes).',
     es_tp: 'Vorlage', es_html: 'HTML', es_js: 'Eigene Skripte', es_tot: 'Gesamt', es_n: 'Skripte',
@@ -204,6 +208,7 @@ export const S = {
     mpk: '{k} Projekte in dieser Ansicht', mpa: '{k} weitere in {m}, ohne veröffentlichte Adresse', mpo: 'Öffnen', mpe: 'Die Karte konnte nicht geladen werden. Die Liste unten funktioniert weiter.', mpr: 'Filter löschen', mp0: 'Kein Projekt passt zu diesen Filtern.'
   },
   nl: {
+    es_k50: 'Mediaan antwoord, 7 dagen', es_k95: '95% van de antwoorden sneller dan, 7 dagen',
     cr_eng: 'Techniek', cr_tools: 'Hulpmiddelen', es_vdb: 'databaseserver, elke 5 minuten', es_vgh: 'GitHub-runners, elk uur, met OIDC ondertekend',
     pc_h: 'Pincontrole: land, beschermd gebied, overstroming', pc_i: 'Open data gelezen bij de pin van het project (nauwkeurig tot ongeveer {a} m). Dit zijn aflezingen van kaartlagen, geen oordeel over de grond.',
     pc_land: 'Ligt de pin op land?', pc_up: 'De grondhoogte bij de pin is {m} m boven zeeniveau, dus volgens dit hoogtemodel ligt de pin op land.',
@@ -241,7 +246,7 @@ export const S = {
     es_vt: 'Meetpunt', es_pr: 'Metingen, 7 dagen', es_ut: 'Beschikbaar', es_md: 'Mediaan', es_inc: 'Mislukte metingen in het logboek: {n}. Laatste: {l}.',
     es_lat: 'Latentie aan de edge', es_lat1: 'De 20 belangrijkste pagina’s, opgehaald vanaf de Cloudflare-edge zoals een bezoeker dat doet, om {t} op commit {c}: {up} van {n} beschikbaar. p50 {p50} ms, p95 {p95} ms.',
     es_pg: 'Pagina', es_hs: 'HTTP', es_ms: 'Tijd', es_kb: 'Grootte',
-    es_dep: 'Deploy- en buildtijden', es_dep1: '{n} deploys in het logboek van de bewaker sinds {s}: {ok} slaagden in één keer voor de controles, {rb} automatisch teruggedraaid. Van push tot live: p50 {p50} s, p95 {p95} s.',
+    es_dep: 'Deploy- en buildtijden', es_dep1: '{n} deploys in het logboek van de bewaker sinds {s}: {ok} slaagden voor de controles, {rb} automatisch teruggedraaid. Van push tot live: p50 {p50} s, p95 {p95} s.',
     es_bld: 'Worker-bundel, twee keer gebouwd in schone mappen voor elke live versie: laatste {b} ({d}), {r}. {k} builds geregistreerd.', es_rep: 'beide keren byte-identiek', es_nrep: 'niet byte-identiek',
     es_w: 'Grootte per sjabloon', es_w1: 'Eén pagina per sjabloon, zojuist van de edge gehaald: HTML zoals verzonden en onze eigen scripts die hij laadt (ongecomprimeerde bytes).',
     es_tp: 'Sjabloon', es_html: 'HTML', es_js: 'Eigen scripts', es_tot: 'Totaal', es_n: 'Scripts',
@@ -253,6 +258,7 @@ export const S = {
     mpk: '{k} projecten in deze weergave', mpa: 'nog {k} in {m}, zonder gepubliceerd adres', mpo: 'Openen', mpe: 'De kaart kon niet laden. De lijst hieronder werkt nog.', mpr: 'Filters wissen', mp0: 'Geen project voldoet aan deze filters.'
   },
   ru: {
+    es_k50: 'Медианный ответ, 7 дней', es_k95: '95% ответов быстрее, 7 дней',
     cr_eng: 'Инженерия', cr_tools: 'Инструменты', es_vdb: 'сервер базы данных, каждые 5 минут', es_vgh: 'раннеры GitHub, каждый час, с подписью OIDC',
     pc_h: 'Проверка точки: суша, охраняемые зоны, затопление', pc_i: 'Открытые данные в точке проекта (точность около {a} м). Это показания слоёв карты, а не заключение о земле.',
     pc_land: 'Точка на суше?', pc_up: 'Высота рельефа в точке: {m} м над уровнем моря, по этой модели рельефа точка на суше.',
@@ -290,7 +296,7 @@ export const S = {
     es_vt: 'Точка измерения', es_pr: 'Проверок за 7 дней', es_ut: 'Доступно', es_md: 'Медиана', es_inc: 'Неудачных проверок в журнале: {n}. Последняя: {l}.',
     es_lat: 'Задержка на edge', es_lat1: '20 ключевых страниц, запрошенных с edge Cloudflare, как это делает посетитель, в {t}, коммит {c}: доступно {up} из {n}. p50 {p50} мс, p95 {p95} мс.',
     es_pg: 'Страница', es_hs: 'HTTP', es_ms: 'Время', es_kb: 'Размер',
-    es_dep: 'Время выкладки и сборки', es_dep1: 'Выкладок в журнале защиты с {s}: {n}; с первого раза прошли проверки: {ok}, автоматически откачены: {rb}. От push до публикации: p50 {p50} с, p95 {p95} с.',
+    es_dep: 'Время выкладки и сборки', es_dep1: 'Выкладок в журнале защиты с {s}: {n}; прошли проверки: {ok}, автоматически откачены: {rb}. От push до публикации: p50 {p50} с, p95 {p95} с.',
     es_bld: 'Сборка worker, дважды в чистых папках для каждой опубликованной версии: последняя {b} ({d}), {r}. Сборок в записи: {k}.', es_rep: 'побайтно одинаковы', es_nrep: 'побайтно не совпали',
     es_w: 'Размер по шаблонам', es_w1: 'Одна страница каждого шаблона, только что запрошенная с edge: HTML как отправлен и наши собственные скрипты, которые она грузит (байты без сжатия).',
     es_tp: 'Шаблон', es_html: 'HTML', es_js: 'Наши скрипты', es_tot: 'Всего', es_n: 'Скрипты',
@@ -302,6 +308,7 @@ export const S = {
     mpk: 'Проектов в этой области: {k}', mpa: 'Ещё в {m} без опубликованного адреса: {k}', mpo: 'Открыть', mpe: 'Карта не загрузилась. Список ниже работает.', mpr: 'Сбросить фильтры', mp0: 'Нет проектов под эти фильтры.'
   },
   zh: {
+    es_k50: '响应中位数，7 天', es_k95: '95% 的响应快于，7 天',
     cr_eng: '工程', cr_tools: '工具', es_vdb: '数据库服务器，每 5 分钟', es_vgh: 'GitHub 运行器，每小时，OIDC 签名',
     pc_h: '定位检查：陆地、保护区、洪水', pc_i: '在项目定位点读取的公开数据（精度约 {a} 米）。这些是地图图层的读数，不是对土地的结论。',
     pc_land: '定位点在陆地上吗？', pc_up: '定位点的地面高度为海拔 {m} 米，按此高程模型，定位点位于陆地上。',
@@ -339,7 +346,7 @@ export const S = {
     es_vt: '测量点', es_pr: '7 天探测次数', es_ut: '可用', es_md: '中位数', es_inc: '记录中的失败探测：{n}。最近一次：{l}。',
     es_lat: '边缘延迟', es_lat1: '像访客一样从 Cloudflare 边缘获取 20 个关键页面，时间 {t}，提交 {c}：{n} 个中 {up} 个可用。p50 {p50} 毫秒，p95 {p95} 毫秒。',
     es_pg: '页面', es_hs: 'HTTP', es_ms: '时间', es_kb: '大小',
-    es_dep: '部署和构建时间', es_dep1: '自 {s} 起部署守护记录中有 {n} 次部署：{ok} 次一次通过检查，{rb} 次自动回滚。从推送到上线：p50 {p50} 秒，p95 {p95} 秒。',
+    es_dep: '部署和构建时间', es_dep1: '自 {s} 起部署守护记录中有 {n} 次部署：{ok} 次通过检查，{rb} 次自动回滚。从推送到上线：p50 {p50} 秒，p95 {p95} 秒。',
     es_bld: 'Worker 打包文件，每个上线版本在干净目录中构建两次：最新 {b}（{d}），{r}。共记录 {k} 次构建。', es_rep: '两次逐字节一致', es_nrep: '两次不完全一致',
     es_w: '各模板大小', es_w1: '每种模板一个页面，刚刚从边缘获取：发送的 HTML 以及它加载的我们自己的脚本（未压缩字节）。',
     es_tp: '模板', es_html: 'HTML', es_js: '我们的脚本', es_tot: '合计', es_n: '脚本',
@@ -351,6 +358,7 @@ export const S = {
     mpk: '此视图中有 {k} 个项目', mpa: '{m} 另有 {k} 个项目未公布地址', mpo: '打开', mpe: '地图未能加载，下方列表仍可使用。', mpr: '清除筛选', mp0: '没有符合这些筛选条件的项目。'
   },
   ar: {
+    es_k50: 'الاستجابة الوسيطة، 7 أيام', es_k95: '95% من الاستجابات أسرع من، 7 أيام',
     cr_eng: 'الهندسة', cr_tools: 'الأدوات', es_vdb: 'خادم قاعدة البيانات، كل 5 دقائق', es_vgh: 'مشغّلات GitHub، كل ساعة، موقّعة بـ OIDC',
     pc_h: 'فحص الدبوس: يابسة، مناطق محمية، فيضانات', pc_i: 'بيانات مفتوحة قُرئت عند دبوس المشروع (دقته نحو {a} م). هذه قراءات لطبقات خرائط، وليست حكمًا على الأرض.',
     pc_land: 'هل الدبوس على اليابسة؟', pc_up: 'ارتفاع الأرض عند الدبوس {m} م فوق سطح البحر، فالدبوس على اليابسة وفق نموذج الارتفاع هذا.',
@@ -388,7 +396,7 @@ export const S = {
     es_vt: 'نقطة القياس', es_pr: 'الفحوص خلال 7 أيام', es_ut: 'متاح', es_md: 'الوسيط', es_inc: 'الفحوص الفاشلة في السجل: {n}. آخرها: {l}.',
     es_lat: 'زمن الاستجابة على الحافة', es_lat1: 'الصفحات الأساسية العشرون مطلوبة من حافة Cloudflare كما يطلبها الزائر، في {t} على الإصدار {c}: {up} من {n} متاحة. p50 {p50} مللي ثانية، p95 {p95} مللي ثانية.',
     es_pg: 'الصفحة', es_hs: 'HTTP', es_ms: 'الوقت', es_kb: 'الحجم',
-    es_dep: 'أوقات النشر والبناء', es_dep1: 'عدد عمليات النشر في سجل الحارس منذ {s}: {n}؛ نجحت في الفحوص من أول مرة: {ok}، وتراجعت تلقائيًا: {rb}. من الدفع إلى النشر: p50 {p50} ثانية، p95 {p95} ثانية.',
+    es_dep: 'أوقات النشر والبناء', es_dep1: 'عدد عمليات النشر في سجل الحارس منذ {s}: {n}؛ نجحت في الفحوص: {ok}، وتراجعت تلقائيًا: {rb}. من الدفع إلى النشر: p50 {p50} ثانية، p95 {p95} ثانية.',
     es_bld: 'حزمة الـ worker، تُبنى مرتين في مجلدات نظيفة لكل إصدار منشور: الأحدث {b} ({d})، {r}. عدد عمليات البناء المسجلة: {k}.', es_rep: 'متطابقة بايتًا ببايت', es_nrep: 'غير متطابقة بايتًا ببايت',
     es_w: 'الحجم لكل قالب', es_w1: 'صفحة واحدة من كل قالب، طُلبت الآن من الحافة: HTML كما يُرسل وسكربتاتنا الخاصة التي يحمّلها (بايتات غير مضغوطة).',
     es_tp: 'القالب', es_html: 'HTML', es_js: 'سكربتاتنا', es_tot: 'المجموع', es_n: 'السكربتات',

@@ -11,7 +11,7 @@
 // Equinox never listed; 8 languages, Arabic RTL; no Review/AggregateRating schema.
 import * as N from './kbx_named.js';
 import { S, t, esc, num, LANGS, slugMk, pinRecord, phMarkets, PH_MIN } from './kbx_n30c_named.js';
-import { mkName } from './kbx_hdate.js';
+import { mkName, coName } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -129,7 +129,7 @@ function lateOf(ot, x) {
 }
 function widget(D, x, lang, theme, size) {
   const c = D.ix.caseBy.get(x.id) || {}, rev = N.reviewed(c), ho = N.handoverOf(D.ix, x), lm = lateOf(D.ot, x), row = D.tr && D.tr.rows && D.tr.rows.get(x.id);
-  const P = pre(lang), url = ORIGIN + P + '/projects/' + x.s + '/', place = [x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang), x.co !== x.mk ? x.co : null].filter(Boolean).join(', ');
+  const P = pre(lang), url = ORIGIN + P + '/projects/' + x.s + '/', place = [x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang), x.co !== x.mk ? coName(x.co, lang) : null].filter(Boolean).join(', ');
   const rows = [];
   rows.push([t(lang, 'w_ho'), ho ? esc(N.fd(ho.d, lang)) + (lm > 0 ? ' <span class="k">' + esc(t(lang, 'w_late', { m: lm })) + '</span>' : '') : esc(t(lang, 'w_np'))]);
   rows.push([t(lang, 'w_pm'), x.pn ? '<code>' + esc(x.pn) + '</code>' : (c.checks || {}).permit === 2 ? esc(t(lang, 'w_st')) : esc(t(lang, 'w_np'))]);
@@ -206,7 +206,7 @@ async function engStatus(u, env, ctx, shell, lang) {
   let b = '<div class="n3-kv">';
   if (up) b += '<div><b>' + num(up.uptime_7d, lang, 3) + '%</b><span>' + esc(t(lang, 'es_up')) + ' (7d)</span></div>';
   const swMs = sw && (sw.pages || []).filter(p => p.ms != null).map(p => p.ms);
-  if (swMs && swMs.length) b += '<div><b>' + ms(quant(swMs, .5)) + '</b><span>p50</span></div><div><b>' + ms(quant(swMs, .95)) + '</b><span>p95</span></div>';
+  if (up && up.median_ms_7d != null) b += '<div><b>' + ms(up.median_ms_7d) + '</b><span>p50 · ' + esc(t(lang, 'es_k50')) + '</span></div><div><b>' + ms(up.p95_ms_7d) + '</b><span>p95 · ' + esc(t(lang, 'es_k95')) + '</span></div>';
   const D30 = dep && (dep.deploys || []).filter(d => d.at && Date.now() - Date.parse(d.at) < 30 * 864e5), W = D30 ? D30.filter(d => typeof d.wait_s === 'number' && d.result === 'pass').map(d => d.wait_s) : [];
   if (W.length) b += '<div><b>' + num(Math.round(quant(W, .5)), lang) + ' s</b><span>' + esc(t(lang, 'es_dep')) + ' (p50)</span></div>';
   b += '</div>';
