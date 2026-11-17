@@ -526,7 +526,7 @@ export const NL_JS = '(' + nlClient.toString().replace('__C__', JSON.stringify(C
 // appended to /k/u27.js: loads /k/n30a.js on the home search box and on /projects/ only
 export const LOADER = "(function(){var p=location.pathname;if(document.querySelector('form[data-check] #hero-url')||(/\\/projects\\/?$/.test(p)&&document.querySelector('[data-kx-lists]'))){var s=document.createElement('script');s.src='/k/n30a.js?v=" + N30V + "';s.async=true;document.head.appendChild(s);}})();";
 // the time machine's "Compare two dates" button (kbx_named_sat.js): queue the call and load the script once
-export const BA_BTN_JS = "var ba=f.querySelector('[data-n30ba]');if(ba)ba.addEventListener('click',function(){on();var a=[f,d,im,T];if(window.N30&&window.N30.ba){window.N30.ba.apply(null,a);return}window.N30_BA_Q=a;if(!document.querySelector('script[data-n30]')){var s=document.createElement('script');s.src='/k/n30a.js?v=" + N30V + "';s.setAttribute('data-n30','');document.head.appendChild(s)}});";
+export const BA_BTN_JS = ";var ba=f.querySelector('[data-n30ba]');if(ba)ba.addEventListener('click',function(){on();var a=[f,d,im,T];if(window.N30&&window.N30.ba){window.N30.ba.apply(null,a);return}window.N30_BA_Q=a;if(!document.querySelector('script[data-n30]')){var s=document.createElement('script');s.src='/k/n30a.js?v=" + N30V + "';s.setAttribute('data-n30','');document.head.appendChild(s)}});";
 export const baButton = lang => '<button type="button" class="k-btn k-btn--sm k-btn--ghost" data-n30ba>' + esc((C[lang] || C.en).ba) + '</button>';
 
 // ------------------------------------------------------------------------------------------------ routes

@@ -3,7 +3,7 @@
 // Client words (natural-language search, before/after slider, contract reader results) are sent to the browser in data attributes.
 export const S = {
   en: {
-    sl_t: 'Handover slippage by market', sl_d: 'How many months tracked off-plan projects are past the first handover date on record, per market: median, middle half, range and sample size, computed from our dated records.',
+    tl_s: 'Timeline', sl_t: 'Handover slippage by market', sl_d: 'How many months tracked off-plan projects are past the first handover date on record, per market: median, middle half, range and sample size, computed from our dated records.',
     sl_h1: 'Handover slippage by market', sl_lead: 'For each market: how many months tracked projects are past the first handover date we have on record, among those whose date has passed and that are not recorded as completed. Computed on {d} from {k} projects. A historical statistic from our records, not a forecast and not a verdict about any developer.',
     sl_all: 'All markets', sl_th: ['Market', 'Past the first date', 'Median months past', 'Middle half (25th to 75th percentile)', 'Range', 'Not yet due', 'Completed'],
     sl_few: 'Markets with fewer than {n} projects past their first date are counted in "All markets" only.', sl_m_h: 'Method', sl_lim_h: 'Limits', sl_tab_h: 'Months past the first handover date, per market',
@@ -31,7 +31,7 @@ export const S = {
     lt: ['Permit', 'Company', 'Handover date', 'Construction', 'Website', 'Official lists'], st: { ok: 'published or confirmed', part: 'partly', no: 'not published or date passed', nc: 'not checked yet' },
   },
   es: {
-    sl_t: 'Retraso de entrega por mercado', sl_d: 'Cuántos meses llevan los proyectos sobre plano que seguimos pasados de la primera fecha de entrega registrada, por mercado: mediana, mitad central, rango y tamaño de muestra, calculados con nuestros registros fechados.',
+    tl_s: 'Cronología', sl_t: 'Retraso de entrega por mercado', sl_d: 'Cuántos meses llevan los proyectos sobre plano que seguimos pasados de la primera fecha de entrega registrada, por mercado: mediana, mitad central, rango y tamaño de muestra, calculados con nuestros registros fechados.',
     sl_h1: 'Retraso de entrega por mercado', sl_lead: 'Para cada mercado: cuántos meses llevan los proyectos que seguimos pasados de la primera fecha de entrega que tenemos registrada, entre los que ya superaron esa fecha y no figuran como terminados. Calculado el {d} con {k} proyectos. Es una estadística histórica de nuestros registros, no una previsión ni un veredicto sobre ninguna promotora.',
     sl_all: 'Todos los mercados', sl_th: ['Mercado', 'Pasados de la primera fecha', 'Mediana de meses', 'Mitad central (percentiles 25 a 75)', 'Rango', 'Aún no vencidos', 'Terminados'],
     sl_few: 'Los mercados con menos de {n} proyectos pasados de su primera fecha solo cuentan en "Todos los mercados".', sl_m_h: 'Método', sl_lim_h: 'Límites', sl_tab_h: 'Meses pasados de la primera fecha de entrega, por mercado',
@@ -59,7 +59,7 @@ export const S = {
     lt: ['Permiso', 'Empresa', 'Fecha de entrega', 'Obra', 'Web', 'Listas oficiales'], st: { ok: 'publicado o confirmado', part: 'en parte', no: 'no publicado o fecha vencida', nc: 'aún sin comprobar' },
   },
   fr: {
-    sl_t: 'Retards de livraison par marché', sl_d: 'Combien de mois les projets sur plan que nous suivons ont dépassé la première date de livraison enregistrée, par marché : médiane, moitié centrale, étendue et taille de l’échantillon, calculées à partir de nos relevés datés.',
+    tl_s: 'Chronologie', sl_t: 'Retards de livraison par marché', sl_d: 'Combien de mois les projets sur plan que nous suivons ont dépassé la première date de livraison enregistrée, par marché : médiane, moitié centrale, étendue et taille de l’échantillon, calculées à partir de nos relevés datés.',
     sl_h1: 'Retards de livraison par marché', sl_lead: 'Pour chaque marché : combien de mois les projets suivis ont dépassé la première date de livraison que nous avons enregistrée, parmi ceux dont la date est passée et qui ne sont pas enregistrés comme achevés. Calculé le {d} sur {k} projets. Une statistique historique de nos relevés, ni une prévision ni un verdict sur un promoteur.',
     sl_all: 'Tous les marchés', sl_th: ['Marché', 'Première date dépassée', 'Médiane des mois', 'Moitié centrale (25e au 75e centile)', 'Étendue', 'Pas encore échus', 'Achevés'],
     sl_few: 'Les marchés comptant moins de {n} projets ayant dépassé leur première date ne figurent que dans « Tous les marchés ».', sl_m_h: 'Méthode', sl_lim_h: 'Limites', sl_tab_h: 'Mois après la première date de livraison, par marché',
@@ -87,7 +87,7 @@ export const S = {
     lt: ['Permis', 'Société', 'Date de livraison', 'Chantier', 'Site web', 'Listes officielles'], st: { ok: 'publié ou confirmé', part: 'en partie', no: 'non publié ou date dépassée', nc: 'pas encore vérifié' },
   },
   de: {
-    sl_t: 'Übergabeverzug nach Markt', sl_d: 'Wie viele Monate die von uns verfolgten Off-Plan-Projekte über dem ersten erfassten Übergabetermin liegen, je Markt: Median, mittlere Hälfte, Spannweite und Stichprobengröße, berechnet aus unseren datierten Aufzeichnungen.',
+    tl_s: 'Zeitleiste', sl_t: 'Übergabeverzug nach Markt', sl_d: 'Wie viele Monate die von uns verfolgten Off-Plan-Projekte über dem ersten erfassten Übergabetermin liegen, je Markt: Median, mittlere Hälfte, Spannweite und Stichprobengröße, berechnet aus unseren datierten Aufzeichnungen.',
     sl_h1: 'Übergabeverzug nach Markt', sl_lead: 'Für jeden Markt: wie viele Monate die verfolgten Projekte über dem ersten bei uns erfassten Übergabetermin liegen, unter denen, deren Termin verstrichen ist und die nicht als fertiggestellt erfasst sind. Berechnet am {d} aus {k} Projekten. Eine historische Statistik aus unseren Aufzeichnungen, keine Prognose und kein Urteil über einen Bauträger.',
     sl_all: 'Alle Märkte', sl_th: ['Markt', 'Erster Termin verstrichen', 'Median Monate', 'Mittlere Hälfte (25. bis 75. Perzentil)', 'Spannweite', 'Noch nicht fällig', 'Fertiggestellt'],
     sl_few: 'Märkte mit weniger als {n} Projekten über dem ersten Termin zählen nur unter „Alle Märkte“.', sl_m_h: 'Methode', sl_lim_h: 'Grenzen', sl_tab_h: 'Monate nach dem ersten Übergabetermin, je Markt',
@@ -115,7 +115,7 @@ export const S = {
     lt: ['Genehmigung', 'Unternehmen', 'Übergabetermin', 'Bau', 'Website', 'Amtliche Listen'], st: { ok: 'veröffentlicht oder bestätigt', part: 'teilweise', no: 'nicht veröffentlicht oder Termin verstrichen', nc: 'noch nicht geprüft' },
   },
   nl: {
-    sl_t: 'Opleververtraging per markt', sl_d: 'Hoeveel maanden de projecten op plan die we volgen voorbij de eerste vastgelegde opleverdatum zijn, per markt: mediaan, middelste helft, spreiding en steekproefgrootte, berekend uit onze gedateerde gegevens.',
+    tl_s: 'Tijdlijn', sl_t: 'Opleververtraging per markt', sl_d: 'Hoeveel maanden de projecten op plan die we volgen voorbij de eerste vastgelegde opleverdatum zijn, per markt: mediaan, middelste helft, spreiding en steekproefgrootte, berekend uit onze gedateerde gegevens.',
     sl_h1: 'Opleververtraging per markt', sl_lead: 'Per markt: hoeveel maanden gevolgde projecten voorbij de eerste opleverdatum zijn die we hebben vastgelegd, onder de projecten waarvan die datum voorbij is en die niet als opgeleverd zijn vastgelegd. Berekend op {d} uit {k} projecten. Een historische statistiek uit onze gegevens, geen voorspelling en geen oordeel over een ontwikkelaar.',
     sl_all: 'Alle markten', sl_th: ['Markt', 'Eerste datum voorbij', 'Mediaan maanden', 'Middelste helft (25e tot 75e percentiel)', 'Spreiding', 'Nog niet verlopen', 'Opgeleverd'],
     sl_few: 'Markten met minder dan {n} projecten voorbij hun eerste datum tellen alleen mee in "Alle markten".', sl_m_h: 'Methode', sl_lim_h: 'Beperkingen', sl_tab_h: 'Maanden na de eerste opleverdatum, per markt',
@@ -143,7 +143,7 @@ export const S = {
     lt: ['Vergunning', 'Bedrijf', 'Opleverdatum', 'Bouw', 'Website', 'Officiële lijsten'], st: { ok: 'gepubliceerd of bevestigd', part: 'deels', no: 'niet gepubliceerd of datum verstreken', nc: 'nog niet gecontroleerd' },
   },
   ru: {
-    sl_t: 'Задержки сдачи по рынкам', sl_d: 'На сколько месяцев отслеживаемые новостройки вышли за первую зафиксированную дату сдачи, по рынкам: медиана, средняя половина, разброс и размер выборки по нашим датированным записям.',
+    tl_s: 'Хронология', sl_t: 'Задержки сдачи по рынкам', sl_d: 'На сколько месяцев отслеживаемые новостройки вышли за первую зафиксированную дату сдачи, по рынкам: медиана, средняя половина, разброс и размер выборки по нашим датированным записям.',
     sl_h1: 'Задержки сдачи по рынкам', sl_lead: 'По каждому рынку: на сколько месяцев отслеживаемые проекты вышли за первую дату сдачи в наших записях, среди тех, у кого эта дата прошла и кто не отмечен как сданный. Рассчитано {d} по {k} проектам. Это историческая статистика наших записей, а не прогноз и не оценка какого-либо застройщика.',
     sl_all: 'Все рынки', sl_th: ['Рынок', 'Первая дата прошла', 'Медиана, месяцев', 'Средняя половина (25–75-й процентиль)', 'Разброс', 'Срок ещё не наступил', 'Сданы'],
     sl_few: 'Рынки, где первая дата прошла менее чем у {n} проектов, учитываются только в строке «Все рынки».', sl_m_h: 'Метод', sl_lim_h: 'Ограничения', sl_tab_h: 'Месяцы после первой даты сдачи по рынкам',
@@ -171,7 +171,7 @@ export const S = {
     lt: ['Разрешение', 'Компания', 'Дата сдачи', 'Стройка', 'Сайт', 'Официальные списки'], st: { ok: 'опубликовано или подтверждено', part: 'частично', no: 'не опубликовано или дата прошла', nc: 'ещё не проверено' },
   },
   zh: {
-    sl_t: '各市场交房延期统计', sl_d: '我们跟踪的期房项目超过首个记录交房日期的月数，按市场统计：中位数、中间一半、范围和样本量，根据我们的带日期记录计算。',
+    tl_s: '时间线', sl_t: '各市场交房延期统计', sl_d: '我们跟踪的期房项目超过首个记录交房日期的月数，按市场统计：中位数、中间一半、范围和样本量，根据我们的带日期记录计算。',
     sl_h1: '各市场交房延期统计', sl_lead: '每个市场中，首个记录交房日期已过且未记录为已交付的跟踪项目，超过该日期多少个月。{d} 根据 {k} 个项目计算。这是来自我们记录的历史统计，不是预测，也不是对任何开发商的评判。',
     sl_all: '全部市场', sl_th: ['市场', '已过首个日期', '月数中位数', '中间一半（第 25 至第 75 百分位）', '范围', '尚未到期', '已交付'],
     sl_few: '已过首个日期的项目少于 {n} 个的市场，只计入"全部市场"。', sl_m_h: '方法', sl_lim_h: '局限', sl_tab_h: '各市场超过首个交房日期的月数',
@@ -199,7 +199,7 @@ export const S = {
     lt: ['许可', '公司', '交房日期', '施工', '网站', '官方名单'], st: { ok: '已公布或已确认', part: '部分', no: '未公布或日期已过', nc: '尚未检查' },
   },
   ar: {
-    sl_t: 'تأخر التسليم حسب السوق', sl_d: 'كم شهرًا تجاوزت المشاريع على الخارطة التي نتابعها أول موعد تسليم مسجل، حسب السوق: الوسيط والنصف الأوسط والمدى وحجم العينة، محسوبة من سجلاتنا المؤرخة.',
+    tl_s: 'الخط الزمني', sl_t: 'تأخر التسليم حسب السوق', sl_d: 'كم شهرًا تجاوزت المشاريع على الخارطة التي نتابعها أول موعد تسليم مسجل، حسب السوق: الوسيط والنصف الأوسط والمدى وحجم العينة، محسوبة من سجلاتنا المؤرخة.',
     sl_h1: 'تأخر التسليم حسب السوق', sl_lead: 'لكل سوق: كم شهرًا تجاوزت المشاريع المتابعة أول موعد تسليم مسجل لدينا، بين المشاريع التي مضى موعدها ولم تُسجل مكتملة. حُسب في {d} من بيانات {k} من المشاريع. هذه إحصائية تاريخية من سجلاتنا، وليست توقعًا ولا حكمًا على أي مطور.',
     sl_all: 'كل الأسواق', sl_th: ['السوق', 'تجاوزت الموعد الأول', 'وسيط الأشهر', 'النصف الأوسط (المئين 25 إلى 75)', 'المدى', 'لم يحن موعدها', 'مكتملة'],
     sl_few: 'الأسواق التي يقل فيها عدد المشاريع المتجاوزة لموعدها الأول عن {n} تُحسب في "كل الأسواق" فقط.', sl_m_h: 'المنهجية', sl_lim_h: 'الحدود', sl_tab_h: 'الأشهر بعد أول موعد تسليم، حسب السوق',

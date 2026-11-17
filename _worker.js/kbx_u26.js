@@ -301,7 +301,7 @@ async function comparePage(req, u, env, ctx, shell, lang) {
   const cell = v => v ? bdi(lang, v) : '<span class="kc-np">' + esc(t26(lang, 'np')) + '</span>';
   const rows = [['r_dev', o => o.dev ? (o.devHref ? '<a href="' + o.devHref + '">' + bdi(lang, o.dev) + '</a>' : bdi(lang, o.dev)) : cell(null)], ['r_loc', o => cell(o.loc)], ['r_st', o => esc(o.st)], ['r_ho', o => cell(o.ho)], ['r_pm', o => cell(o.pm)], ['r_pr', o => cell(o.price)],
     ['r_tr', o => o.sc != null ? '<b class="kc-sc">' + esc(t26(lang, 'of100', { s: nf(o.sc) })) + '</b><span class="kc-bar"><i style="width:' + o.sc + '%"></i></span>' : cell(null)], ['r_rk', o => cell(o.rk)], ['r_ck', o => esc(N.fd(o.ck, lang))],
-    ['r_src', o => '<a href="' + P + '/projects/' + o.x.s + '/#sources">' + esc(t26(lang, 'c_open')) + '</a>']];
+    ['r_src', o => '<a href="' + P + '/projects/' + o.x.s + '/#sources">' + esc(t26(lang, 'c_open')) + '</a> · <a href="' + P + '/projects/' + o.x.s + '/timeline/">' + esc(t30(lang, 'tl_s')) + '</a>']];
   // n30a: one row per check of the six-check light, placed after the transparency rank; rows equal in every column carry kc-same
   const six = [0, 1, 2, 3, 4, 5].map(i => ['lt6_' + i, o => { const s = o.L6[i][2]; return '<span class="kc6 kc6-' + s[0] + '"><i aria-hidden="true"></i>' + esc(U27.t27(lang, s[1], s[2])) + '</span>'; }, o => U27.t27(lang, 'lt_' + o.L6[i][0])]);
   rows.splice(rows.findIndex(r => r[0] === 'r_rk') + 1, 0, ...six);
