@@ -1,8 +1,8 @@
 # Casas baratas en Chipre: datos clave y todas las casas de RealHunt
 
-A 15 de noviembre de 2026, RealHunt publica 3 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 3 casas es de 350.000 € (4.060 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 341.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 3 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
+A 17 de noviembre de 2026, RealHunt publica 3 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 3 casas es de 350.000 € (4.060 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 341.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 3 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/cyprus · Actualizado el 15 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/cyprus · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https:/
 | Impuestos y gastos de compra | 2,5–3,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Los ciudadanos de la UE compran sin restricciones. Los compradores no ciudadanos de la UE necesitan permiso del Consejo de Ministros, solicitado a través del Oficial de Distrito, y normalmente están limitados a una vivienda o una parcela de hasta 4.014 m². |
 | Impuesto anual sobre la vivienda | No hay impuesto nacional anual sobre la propiedad (se suprimió en 2017); los propietarios pagan tasas municipales de unos 90 € a 300 € al año, más tasas de alcantarillado y de la administración local. |
-| Fecha de estas cifras | 15 de noviembre de 2026 |
+| Fecha de estas cifras | 17 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

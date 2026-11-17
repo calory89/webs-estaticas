@@ -2,9 +2,9 @@
 
 Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 110 m²) y Estados Unidos (mediana de 95 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 6 países, sobre todo en Italia (33), Japón (19) y Alemania (10).
 
-A partir de 591 anuncios revisados por una persona, a 15 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
+A partir de 591 anuncios revisados por una persona, a 17 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
 
-Actualizado el 15 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
+Actualizado el 17 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
 
 ## La tabla
 
@@ -49,7 +49,7 @@ Actualizado el 15 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | --- | --- | --- | --- | --- | --- |
 | España | 56 | 120 m² | 1.347 € | 3 | [Casa de campo con piscina en una finca de 5.500 m² cerca de Valdunciel, Salamanca](https://realhunt.co/es/deal/es-canedo-valdunciel-155k-154146), 155.000 €, nota 91 |
 | Estados Unidos | 11 | 117 m² | 1.364 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 151.000 €, nota 90 |
-| Italia | 10 | 86 m² | 1.795 € | 2 | [Piso en el lago Como renovado con balcón con vistas al lago, a 100 m de la orilla](https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k), 195.000 €, nota 91 |
+| Italia | 10 | 86 m² | 1.795 € | 2 | [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633), 115.000 €, nota 91 |
 | Francia | 10 | 106 m² | 1.390 € | 3 | [Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois](https://realhunt.co/es/deal/fr-ohain-148k-150454), 148.400 €, nota 91 |
 | Portugal | 9 | 126 m² | 1.151 € | 2 | [Casa de cinco dormitorios con dos cocinas, calefacción central y tejado nuevo en Silvares, Fundão](https://realhunt.co/es/deal/pt-silvares-110k-271372), 110.000 €, nota 91 |
 | Grecia | 8 | 84 m² | 2.079 € | 2 | [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k), 109.000 €, nota 93 |

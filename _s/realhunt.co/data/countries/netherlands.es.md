@@ -1,8 +1,8 @@
 # Casas baratas en los Países Bajos: datos clave y todas las casas de RealHunt
 
-A 15 de noviembre de 2026, RealHunt publica 18 casas en venta en los Países Bajos, revisadas una a una por una persona. En los Países Bajos, el precio de salida mediano de esas 18 casas es de 325.000 € (4.286 € por m², calculado con las 18 casas de superficie conocida); la más barata cuesta 299.000 € y la más cara, 339.500 €. Los impuestos y gastos de compra suman alrededor del 2–9% del precio de una casa en los Países Bajos (cifras de 2026).
+A 17 de noviembre de 2026, RealHunt publica 18 casas en venta en los Países Bajos, revisadas una a una por una persona. En los Países Bajos, el precio de salida mediano de esas 18 casas es de 325.000 € (4.286 € por m², calculado con las 18 casas de superficie conocida); la más barata cuesta 299.000 € y la más cara, 339.500 €. Los impuestos y gastos de compra suman alrededor del 2–9% del precio de una casa en los Países Bajos (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/netherlands · Actualizado el 15 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/netherlands · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/netherlands.json · PDF: https://realhunt.co/data/countries/netherlands.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/netherlands.json · PDF: ht
 | Impuestos y gastos de compra | 2–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay normas de nacionalidad o residencia y sin recargo para compradores extranjeros. Algunas ciudades, como La Haya, restringen alquilar viviendas más baratas después de la compra sin permiso (opkoopbescherming). |
 | Impuesto anual sobre la vivienda | Los propietarios pagan el impuesto municipal sobre bienes inmuebles (onroerendezaakbelasting, OZB) sobre el valor oficial WOZ, a un tipo que fija cada municipio y que en la práctica es una cifra por mil; los inquilinos de viviendas no lo pagan. |
-| Fecha de estas cifras | 15 de noviembre de 2026 |
+| Fecha de estas cifras | 17 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

@@ -2,7 +2,7 @@
 
 This is a directory of 179 property portals in 54 countries: the national portals, the large classified sites and the portals made for foreign buyers, each with its web address. They are in the order RealHunt checks them when it looks for homes in that country. Being listed here is not a recommendation or a rating.
 
-Updated 15 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
+Updated 17 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
 
 ## Spain
 

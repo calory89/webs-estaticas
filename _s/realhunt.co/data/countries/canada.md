@@ -1,8 +1,8 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 15 November 2026, RealHunt lists 9 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 9 homes is €92,552 (€930 per m², from the 9 homes with a known size); the cheapest costs €55,842 and the most expensive €99,500. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026). With 9 homes this is a small sample, so the median for Canada is a rough guide.
+On 17 November 2026, RealHunt lists 9 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 9 homes is €92,552 (€930 per m², from the 9 homes with a known size); the cheapest costs €55,842 and the most expensive €99,500. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026). With 9 homes this is a small sample, so the median for Canada is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/canada · Updated 15 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/canada · Updated 17 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
 | Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied. |
 | Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026. |
-| Date of these figures | 15 November 2026 |
+| Date of these figures | 17 November 2026 |
 
 ## Costs and taxes
 

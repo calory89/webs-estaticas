@@ -2,9 +2,9 @@
 
 Homes on RealHunt less than 30 km from an airport have a median asking price of €1,464/m² (180 homes); between 30 and 60 km it is €1,008/m² (190 homes), 31% less, and between 60 and 100 km €975/m² (133 homes). The median price of a whole home goes from €97,000 to €83,700 and €76,000.
 
-578 homes with a known distance, 15 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
+578 homes with a known distance, 17 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
 
-Updated 15 November 2026. Source: RealHunt, https://realhunt.co/research/price-by-airport-distance (CC BY 4.0). CSV: https://realhunt.co/research/price-by-airport-distance.csv
+Updated 17 November 2026. Source: RealHunt, https://realhunt.co/research/price-by-airport-distance (CC BY 4.0). CSV: https://realhunt.co/research/price-by-airport-distance.csv
 
 ## The table
 

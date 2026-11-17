@@ -2,9 +2,9 @@
 
 Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), the United States (median 95 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 6 countries, most of them in Italy (33), Japan (19), Germany (10).
 
-From 591 listings checked by a person, 15 November 2026. A home counts in one price band only.
+From 591 listings checked by a person, 17 November 2026. A home counts in one price band only.
 
-Updated 15 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
+Updated 17 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
 
 ## The table
 
@@ -49,7 +49,7 @@ Updated 15 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | --- | --- | --- | --- | --- | --- |
 | Spain | 56 | 120 m² | €1,347 | 3 | [Country house with pool on a 5,500 m² plot near Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146), €155,000, score 91 |
 | United States | 11 | 117 m² | €1,364 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k), €151,000, score 90 |
-| Italy | 10 | 86 m² | €1,795 | 2 | [Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k), €195,000, score 91 |
+| Italy | 10 | 86 m² | €1,795 | 2 | [Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633), €115,000, score 91 |
 | France | 10 | 106 m² | €1,390 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454), €148,400, score 91 |
 | Portugal | 9 | 126 m² | €1,151 | 2 | [Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372), €110,000, score 91 |
 | Greece | 8 | 84 m² | €2,079 | 2 | [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k), €109,000, score 93 |

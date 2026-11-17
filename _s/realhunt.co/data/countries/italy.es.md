@@ -1,8 +1,8 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 15 de noviembre de 2026, RealHunt publica 59 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 59 casas es de 49.000 € (975 € por m², calculado con las 33 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 17 de noviembre de 2026, RealHunt publica 59 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 59 casas es de 49.000 € (975 € por m², calculado con las 33 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 15 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciprocidad (EE.UU., Reino Unido, Canadá, Australia califican). |
 | Impuesto anual sobre la vivienda | IMU 0,4-1,06% en segundas viviendas (sobre el valor catastral). |
-| Fecha de estas cifras | 15 de noviembre de 2026 |
+| Fecha de estas cifras | 17 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
@@ -269,14 +269,6 @@ https://realhunt.co/es/deal/Dcsm9sZoDMp
 
 https://realhunt.co/es/deal/Dcq2xGyDDey
 
-### Casa abovedada cerca de la costa de Apulia
-
-49.000 € · Puglia, Italy · nota RealHunt 83 · añadida el 2026-09-23
-
-1 dormitorio · 1 baño · 19 min a la playa · 39 min al aeropuerto de Brindisi.
-
-https://realhunt.co/es/deal/DceAZ_xjMzt
-
 ### Dúplex en Acquedolci, Messina
 
 49.000 € · Acquedolci, Messina, Italy · 81 m² · nota RealHunt 83 · añadida el 2026-09-22
@@ -284,6 +276,14 @@ https://realhunt.co/es/deal/DceAZ_xjMzt
 605 €/m² · 81 m² · 4 habitaciones. En pleno centro de Acquedolci vendemos un piso en dos plantas, reformado recientemente en gran parte y para entrar a vivir ya.
 
 https://realhunt.co/es/deal/acquedolci-49000
+
+### Casa abovedada cerca de la costa de Apulia
+
+49.000 € · Puglia, Italy · nota RealHunt 83 · añadida el 2026-09-23
+
+1 dormitorio · 1 baño · 19 min a la playa · 39 min al aeropuerto de Brindisi.
+
+https://realhunt.co/es/deal/DceAZ_xjMzt
 
 ### Casa de piedra con terraza y vistas a la montaña
 
