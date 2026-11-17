@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-05T12:42:32.711Z",
+ "generated": "2026-11-17T13:43:36.325Z",
  "tool": "Lighthouse 13.5.0",
- "run": "https://github.com/calory89/webs-estaticas/actions/runs/42027919019",
+ "run": "https://github.com/calory89/webs-estaticas/actions/runs/44093727363",
  "method": "One Lighthouse run per page and form factor on a GitHub Actions runner (ubuntu-latest), mobile with Lighthouse's default throttling and desktop with --preset=desktop. Scores move a few points between runs, so each threshold is the first measured score minus a margin.",
- "pages": 20,
+ "pages": 22,
  "baseline": false,
  "thresholds_margin": {
   "performance": 10,
@@ -14,536 +14,820 @@
  "summary": {
   "mobile": {
    "performance": {
-    "average": 78,
-    "lowest": 61,
+    "average": 94,
+    "lowest": 79,
     "pages_at_100": 0
    },
    "accessibility": {
     "average": 100,
-    "lowest": 97,
-    "pages_at_100": 18
+    "lowest": 100,
+    "pages_at_100": 22
    },
    "best-practices": {
-    "average": 77,
+    "average": 99,
     "lowest": 77,
-    "pages_at_100": 0
+    "pages_at_100": 21
    },
    "seo": {
-    "average": 100,
-    "lowest": 100,
-    "pages_at_100": 20
+    "average": 67,
+    "lowest": 66,
+    "pages_at_100": 0
    }
   },
   "desktop": {
    "performance": {
-    "average": 99,
-    "lowest": 91,
-    "pages_at_100": 6
+    "average": 100,
+    "lowest": 98,
+    "pages_at_100": 17
    },
    "accessibility": {
     "average": 100,
-    "lowest": 97,
-    "pages_at_100": 19
+    "lowest": 100,
+    "pages_at_100": 22
    },
    "best-practices": {
-    "average": 77,
-    "lowest": 77,
-    "pages_at_100": 0
-   },
-   "seo": {
     "average": 100,
     "lowest": 100,
-    "pages_at_100": 20
+    "pages_at_100": 22
+   },
+   "seo": {
+    "average": 67,
+    "lowest": 66,
+    "pages_at_100": 0
    }
   }
  },
- "flags": [],
+ "flags": [
+  {
+   "page": "/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/check/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/database/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/pricing/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/cases/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/about/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/verify/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/log/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/docs/api/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/status/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/engineering/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/security/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/how-we-score/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/checklist/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/trust/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/prices/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/bali/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/research/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/tools/",
+   "form_factor": "mobile",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/check/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/database/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/pricing/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/cases/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/about/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/verify/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/log/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/docs/api/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/status/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 69,
+   "threshold": 97
+  },
+  {
+   "page": "/engineering/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/security/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/how-we-score/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/checklist/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/trust/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/prices/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/bali/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/research/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  },
+  {
+   "page": "/tools/",
+   "form_factor": "desktop",
+   "category": "seo",
+   "score": 66,
+   "threshold": 97
+  }
+ ],
  "runs": [
   {
    "page": "/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 78,
+    "performance": 86,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 2028,
-    "fcp_ms": 1908,
-    "tbt_ms": 872,
-    "cls": 0.001,
-    "si_ms": 1908
+    "lcp_ms": 2474,
+    "fcp_ms": 2124,
+    "tbt_ms": 390,
+    "cls": 0,
+    "si_ms": 2124
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/check/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 77,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2724,
-    "fcp_ms": 1937,
-    "tbt_ms": 724,
+    "lcp_ms": 2478,
+    "fcp_ms": 1985,
+    "tbt_ms": 71,
     "cls": 0.001,
-    "si_ms": 1937
+    "si_ms": 1985
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/database/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 76,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2421,
-    "fcp_ms": 1875,
-    "tbt_ms": 903,
-    "cls": 0.001,
-    "si_ms": 1875
+    "lcp_ms": 2429,
+    "fcp_ms": 2094,
+    "tbt_ms": 34,
+    "cls": 0,
+    "si_ms": 2094
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/pricing/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 79,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2403,
-    "fcp_ms": 1668,
-    "tbt_ms": 721,
-    "cls": 0.02,
-    "si_ms": 1668
+    "lcp_ms": 2515,
+    "fcp_ms": 1809,
+    "tbt_ms": 20,
+    "cls": 0,
+    "si_ms": 1809
    },
    "failing_audits": [
-    "third-party-cookies",
-    "td-has-header",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/cases/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 75,
+    "performance": 91,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 2359,
-    "fcp_ms": 1966,
-    "tbt_ms": 946,
-    "cls": 0.047,
-    "si_ms": 1966
+    "lcp_ms": 2578,
+    "fcp_ms": 2133,
+    "tbt_ms": 215,
+    "cls": 0,
+    "si_ms": 2133
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/about/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 79,
+    "performance": 97,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2357,
-    "fcp_ms": 1690,
-    "tbt_ms": 658,
-    "cls": 0.076,
-    "si_ms": 1690
+    "lcp_ms": 2269,
+    "fcp_ms": 1819,
+    "tbt_ms": 17,
+    "cls": 0.001,
+    "si_ms": 1819
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
-   "page": "/p/BALI-014",
+   "page": "/projects/amani-melasti/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 78,
-    "accessibility": 97,
-    "best-practices": 77,
-    "seo": 100
+    "performance": 95,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2315,
-    "fcp_ms": 1822,
-    "tbt_ms": 801,
-    "cls": 0.001,
-    "si_ms": 1822
+    "lcp_ms": 2641,
+    "fcp_ms": 1985,
+    "tbt_ms": 18,
+    "cls": 0,
+    "si_ms": 2530
    },
    "failing_audits": [
-    "third-party-cookies",
-    "definition-list",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/verify/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 79,
+    "performance": 95,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2561,
-    "fcp_ms": 2009,
-    "tbt_ms": 663,
+    "lcp_ms": 2531,
+    "fcp_ms": 2063,
+    "tbt_ms": 79,
     "cls": 0.001,
-    "si_ms": 2009
+    "si_ms": 2063
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/log/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 78,
+    "performance": 95,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2508,
-    "fcp_ms": 2029,
-    "tbt_ms": 690,
-    "cls": 0.001,
-    "si_ms": 2029
+    "lcp_ms": 2691,
+    "fcp_ms": 1960,
+    "tbt_ms": 24,
+    "cls": 0.012,
+    "si_ms": 1960
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/docs/api/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 74,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 2220,
-    "fcp_ms": 1685,
-    "tbt_ms": 776,
-    "cls": 0.143,
-    "si_ms": 1685
+    "lcp_ms": 2467,
+    "fcp_ms": 1849,
+    "tbt_ms": 8,
+    "cls": 0,
+    "si_ms": 1849
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/status/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 61,
-    "accessibility": 97,
+    "performance": 79,
+    "accessibility": 100,
     "best-practices": 77,
-    "seo": 100
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 2654,
-    "fcp_ms": 2011,
-    "tbt_ms": 715,
-    "cls": 0.329,
-    "si_ms": 2011
+    "lcp_ms": 3070,
+    "fcp_ms": 2176,
+    "tbt_ms": 524,
+    "cls": 0.038,
+    "si_ms": 2176
    },
    "failing_audits": [
     "third-party-cookies",
-    "target-size",
     "td-has-header",
-    "inspector-issues"
+    "inspector-issues",
+    "is-crawlable"
    ]
   },
   {
    "page": "/engineering/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 80,
+    "performance": 95,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2425,
-    "fcp_ms": 1707,
-    "tbt_ms": 655,
-    "cls": 0.001,
-    "si_ms": 1707
+    "lcp_ms": 2703,
+    "fcp_ms": 1970,
+    "tbt_ms": 18,
+    "cls": 0,
+    "si_ms": 2361
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/security/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 75,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2382,
-    "fcp_ms": 1658,
-    "tbt_ms": 671,
-    "cls": 0.149,
-    "si_ms": 1658
+    "lcp_ms": 2477,
+    "fcp_ms": 1987,
+    "tbt_ms": 34,
+    "cls": 0.001,
+    "si_ms": 1987
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/how-we-score/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 75,
+    "performance": 97,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2402,
-    "fcp_ms": 1696,
-    "tbt_ms": 675,
-    "cls": 0.134,
-    "si_ms": 1696
+    "lcp_ms": 2220,
+    "fcp_ms": 1886,
+    "tbt_ms": 0,
+    "cls": 0.001,
+    "si_ms": 1886
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/checklist/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 81,
+    "performance": 97,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2350,
-    "fcp_ms": 1642,
-    "tbt_ms": 656,
+    "lcp_ms": 2481,
+    "fcp_ms": 1777,
+    "tbt_ms": 13,
     "cls": 0.001,
-    "si_ms": 1642
+    "si_ms": 1777
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/trust/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 81,
+    "performance": 95,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2382,
-    "fcp_ms": 1620,
-    "tbt_ms": 651,
-    "cls": 0.001,
-    "si_ms": 1620
+    "lcp_ms": 2604,
+    "fcp_ms": 1859,
+    "tbt_ms": 9,
+    "cls": 0.007,
+    "si_ms": 2930
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/prices/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 77,
+    "performance": 95,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2574,
-    "fcp_ms": 1796,
-    "tbt_ms": 788,
-    "cls": 0.001,
-    "si_ms": 1796
+    "lcp_ms": 2627,
+    "fcp_ms": 1885,
+    "tbt_ms": 69,
+    "cls": 0,
+    "si_ms": 1885
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/bali/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 82,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2385,
-    "fcp_ms": 1677,
-    "tbt_ms": 608,
+    "lcp_ms": 2563,
+    "fcp_ms": 1887,
+    "tbt_ms": 0,
     "cls": 0.001,
-    "si_ms": 1677
+    "si_ms": 1887
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/research/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 77,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2565,
-    "fcp_ms": 1729,
-    "tbt_ms": 798,
-    "cls": 0.013,
-    "si_ms": 1729
+    "lcp_ms": 2498,
+    "fcp_ms": 1998,
+    "tbt_ms": 8,
+    "cls": 0.001,
+    "si_ms": 1998
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/tools/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 88,
+    "performance": 96,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 2370,
-    "fcp_ms": 1850,
-    "tbt_ms": 374,
+    "lcp_ms": 2524,
+    "fcp_ms": 1703,
+    "tbt_ms": 0,
     "cls": 0.001,
-    "si_ms": 1850
+    "si_ms": 1703
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
+   ]
+  },
+  {
+   "page": "/developers/teus-group/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+   },
+   "metrics": {
+    "lcp_ms": 2372,
+    "fcp_ms": 2009,
+    "tbt_ms": 9,
+    "cls": 0,
+    "si_ms": 3155
+   },
+   "failing_audits": [
+    "is-crawlable"
+   ]
+  },
+  {
+   "page": "/ar/projects/moon-gate-hotel-spa-antigua/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 93,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+   },
+   "metrics": {
+    "lcp_ms": 2722,
+    "fcp_ms": 2178,
+    "tbt_ms": 77,
+    "cls": 0,
+    "si_ms": 3470
+   },
+   "failing_audits": [
+    "is-crawlable"
    ]
   },
   {
    "page": "/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 777,
-    "fcp_ms": 543,
-    "tbt_ms": 50,
-    "cls": 0.016,
-    "si_ms": 858
+    "lcp_ms": 728,
+    "fcp_ms": 530,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 764
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable",
+    "bf-cache"
    ]
   },
   {
    "page": "/check/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 743,
-    "fcp_ms": 547,
-    "tbt_ms": 58,
-    "cls": 0.003,
-    "si_ms": 549
+    "lcp_ms": 797,
+    "fcp_ms": 531,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 564
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/database/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 786,
-    "fcp_ms": 562,
-    "tbt_ms": 41,
-    "cls": 0.005,
-    "si_ms": 585
+    "lcp_ms": 805,
+    "fcp_ms": 497,
+    "tbt_ms": 0,
+    "cls": 0.004,
+    "si_ms": 572
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
@@ -552,84 +836,78 @@
    "scores": {
     "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 629,
-    "fcp_ms": 455,
-    "tbt_ms": 51,
-    "cls": 0.007,
-    "si_ms": 458
+    "lcp_ms": 704,
+    "fcp_ms": 478,
+    "tbt_ms": 0,
+    "cls": 0.005,
+    "si_ms": 924
    },
    "failing_audits": [
-    "third-party-cookies",
-    "td-has-header",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/cases/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 98,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 636,
-    "fcp_ms": 547,
-    "tbt_ms": 52,
-    "cls": 0.068,
-    "si_ms": 611
+    "lcp_ms": 615,
+    "fcp_ms": 540,
+    "tbt_ms": 0,
+    "cls": 0.074,
+    "si_ms": 1148
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/about/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 91,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 633,
-    "fcp_ms": 515,
-    "tbt_ms": 240,
-    "cls": 0.03,
-    "si_ms": 581
+    "lcp_ms": 649,
+    "fcp_ms": 494,
+    "tbt_ms": 0,
+    "cls": 0.021,
+    "si_ms": 802
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
-   "page": "/p/BALI-014",
+   "page": "/projects/amani-melasti/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 98,
-    "accessibility": 97,
-    "best-practices": 77,
-    "seo": 100
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 1068,
-    "fcp_ms": 489,
-    "tbt_ms": 83,
-    "cls": 0.005,
-    "si_ms": 605
+    "lcp_ms": 675,
+    "fcp_ms": 546,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 927
    },
    "failing_audits": [
-    "third-party-cookies",
-    "definition-list",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
@@ -638,146 +916,139 @@
    "scores": {
     "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 733,
-    "fcp_ms": 530,
-    "tbt_ms": 59,
-    "cls": 0.004,
+    "lcp_ms": 686,
+    "fcp_ms": 552,
+    "tbt_ms": 0,
+    "cls": 0.003,
     "si_ms": 576
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/log/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 97,
+    "performance": 99,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 740,
-    "fcp_ms": 527,
-    "tbt_ms": 137,
-    "cls": 0.005,
-    "si_ms": 539
+    "lcp_ms": 713,
+    "fcp_ms": 539,
+    "tbt_ms": 0,
+    "cls": 0.009,
+    "si_ms": 939
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/docs/api/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 685,
-    "fcp_ms": 507,
-    "tbt_ms": 73,
-    "cls": 0.038,
-    "si_ms": 528
+    "lcp_ms": 653,
+    "fcp_ms": 506,
+    "tbt_ms": 0,
+    "cls": 0.048,
+    "si_ms": 598
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/status/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 96,
+    "performance": 98,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 69
    },
    "metrics": {
-    "lcp_ms": 858,
-    "fcp_ms": 559,
-    "tbt_ms": 49,
-    "cls": 0.107,
+    "lcp_ms": 1035,
+    "fcp_ms": 540,
+    "tbt_ms": 0,
+    "cls": 0.008,
     "si_ms": 679
    },
    "failing_audits": [
-    "third-party-cookies",
     "td-has-header",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/engineering/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 709,
-    "fcp_ms": 509,
-    "tbt_ms": 89,
-    "cls": 0.005,
-    "si_ms": 698
+    "lcp_ms": 716,
+    "fcp_ms": 561,
+    "tbt_ms": 0,
+    "cls": 0.004,
+    "si_ms": 804
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/security/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 98,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 620,
-    "fcp_ms": 511,
-    "tbt_ms": 52,
-    "cls": 0.045,
-    "si_ms": 511
+    "lcp_ms": 741,
+    "fcp_ms": 533,
+    "tbt_ms": 0,
+    "cls": 0.082,
+    "si_ms": 549
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/how-we-score/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 633,
-    "fcp_ms": 484,
-    "tbt_ms": 89,
-    "cls": 0.034,
-    "si_ms": 506
+    "lcp_ms": 665,
+    "fcp_ms": 495,
+    "tbt_ms": 0,
+    "cls": 0.039,
+    "si_ms": 598
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
@@ -786,61 +1057,58 @@
    "scores": {
     "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 610,
-    "fcp_ms": 506,
-    "tbt_ms": 60,
-    "cls": 0.007,
-    "si_ms": 506
+    "lcp_ms": 724,
+    "fcp_ms": 569,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 618
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/trust/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 666,
-    "fcp_ms": 507,
-    "tbt_ms": 72,
-    "cls": 0.005,
-    "si_ms": 603
+    "lcp_ms": 747,
+    "fcp_ms": 536,
+    "tbt_ms": 0,
+    "cls": 0.004,
+    "si_ms": 623
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/prices/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 98,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 698,
+    "lcp_ms": 620,
     "fcp_ms": 484,
-    "tbt_ms": 101,
-    "cls": 0.057,
-    "si_ms": 504
+    "tbt_ms": 1,
+    "cls": 0.051,
+    "si_ms": 607
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
@@ -849,40 +1117,38 @@
    "scores": {
     "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 675,
-    "fcp_ms": 493,
-    "tbt_ms": 51,
-    "cls": 0.005,
-    "si_ms": 507
+    "lcp_ms": 661,
+    "fcp_ms": 464,
+    "tbt_ms": 0,
+    "cls": 0.004,
+    "si_ms": 520
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
    "page": "/research/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 663,
-    "fcp_ms": 449,
-    "tbt_ms": 88,
-    "cls": 0.052,
-    "si_ms": 504
+    "lcp_ms": 688,
+    "fcp_ms": 538,
+    "tbt_ms": 0,
+    "cls": 0.02,
+    "si_ms": 560
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
    ]
   },
   {
@@ -891,19 +1157,59 @@
    "scores": {
     "performance": 100,
     "accessibility": 100,
-    "best-practices": 77,
-    "seo": 100
+    "best-practices": 100,
+    "seo": 66
    },
    "metrics": {
-    "lcp_ms": 685,
-    "fcp_ms": 498,
-    "tbt_ms": 6,
-    "cls": 0.005,
-    "si_ms": 557
+    "lcp_ms": 691,
+    "fcp_ms": 490,
+    "tbt_ms": 0,
+    "cls": 0.004,
+    "si_ms": 522
    },
    "failing_audits": [
-    "third-party-cookies",
-    "inspector-issues"
+    "is-crawlable"
+   ]
+  },
+  {
+   "page": "/developers/teus-group/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+   },
+   "metrics": {
+    "lcp_ms": 684,
+    "fcp_ms": 573,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 785
+   },
+   "failing_audits": [
+    "is-crawlable"
+   ]
+  },
+  {
+   "page": "/ar/projects/moon-gate-hotel-spa-antigua/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+   },
+   "metrics": {
+    "lcp_ms": 729,
+    "fcp_ms": 609,
+    "tbt_ms": 0,
+    "cls": 0.007,
+    "si_ms": 646
+   },
+   "failing_audits": [
+    "is-crawlable",
+    "bf-cache"
    ]
   }
  ]
