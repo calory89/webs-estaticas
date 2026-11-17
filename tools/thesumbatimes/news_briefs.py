@@ -4,6 +4,126 @@
 WA = "https://www.waingapu.com/"
 BRIEFS = [
 {'section': 'business',
+ 'slug': 'salura-island-jetty-rp50-billion-east-sumba-regent-visit-2026',
+ 'date': '2026-11-18',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'embarcadero-isla-salura-50000-millones-rupias-regente-sumba-oriental-2026', 'id': 'dermaga-pulau-salura-rp50-miliar-bupati-sumba-timur-2026'},
+ 'keywords': {'en': ['Salura island', 'Salura jetty', 'East Sumba outer islands', 'Cyclone Seroja Sumba', 'Waingapu KSOP', 'Sumba investment 2026'],
+              'es': ['isla de Salura', 'embarcadero de Salura', 'islas exteriores de Sumba Oriental', 'ciclón Seroja Sumba', 'inversión en Sumba 2026'],
+              'id': ['Pulau Salura', 'dermaga Salura', 'pulau terluar Sumba Timur', 'Badai Seroja Sumba', 'KSOP Waingapu', 'investasi Sumba Timur 2026']},
+ 'en': {'title': 'East Sumba regent heads to Salura island over Rp50 billion jetty repair',
+        'dek': 'The Transport Ministry has approved Rp50 billion for the jetty damaged by Cyclone Seroja, but no start date has been announced.',
+        'answer': 'East Sumba regent Umbu Lili Pekuwali was due to visit Salura island on Tuesday 17 November 2026 to check its jetty, which has needed repair since Cyclone Seroja in 2021, '
+                  'Waingapu.com reported. The Transport Ministry has approved Rp50 billion for the rehabilitation, the paper says; no start or completion date is given.',
+        'keys': ['The regent planned to go by road from Waingapu to Nggongi and then by boat from Katundu beach with a small group; deputy regent Yonathan Hani visited on 16 November.',
+                 'The Transport Ministry approved Rp50 billion for the jetty; the regency and the Waingapu harbour master asked for Rp60 billion in 2025.',
+                 'The jetty has needed repair since Cyclone Seroja in 2021; no start date, contractor or completion date has been published.',
+                 'Waingapu.com says the scenery of Salura, Kotak and Mengkudu is drawing tourism investor interest but names none; both reports come from one outlet.'],
+        'visitors': 'Salura needs a drive to Nggongi and a boat from Katundu beach; the reports mention no regular passenger service, so ask a local operator and check sea conditions first.',
+        'body': "<p>East Sumba regent Umbu Lili Pekuwali was due to travel to Salura island on Tuesday 17 November 2026 to check on the island's jetty, according to Waingapu.com. The same report "
+                'says the Transport Ministry has approved Rp50 billion to rehabilitate it. No start date, contractor or completion date has been published, and the reports available do not yet say '
+                'what the regent found on arrival.</p><h2>The trip and the jetty</h2><p>Waingapu.com reports that the regent told journalists on Monday 16 November that he would travel with a small '
+                'group by road from Waingapu to Nggongi and then by boat from Katundu beach to Salura, in the south of East Sumba. Deputy regent Yonathan Hani had already visited the island on 16 '
+                'November. The paper says the jetty has needed repair since Cyclone Seroja hit in 2021, and it describes Salura as an outer island next to Australian waters.</p><p>On the money, the '
+                "paper reports that the Transport Ministry approved Rp50 billion for the rehabilitation. The regency and the head of the Waingapu harbour master's office (KSOP Class IV), Fadly Afand "
+                "Djafar, had asked for Rp60 billion in 2025. Djafar is reported as saying that this time the central government's presence is more than talk. How and when the money will be spent is "
+                "not stated.</p><h2>Squid, seaweed and tourism interest</h2><p>Waingapu.com lists squid and seaweed as the island's main economic potential and says the scenery of Salura, Kotak and "
+                'Mengkudu islands is starting to attract prospective tourism investors, without naming any. Its earlier report of 1 November covers an exploration trip to the three islands by the '
+                'travel company Pesona Alam Timur. Both reports come from one outlet, so treat the investor interest as unconfirmed. Salura is run by an acting village head after the previous one '
+                "died; an election is waiting for rule changes.</p><h2>What it means for visitors, residents and investors</h2><p>Visitors: going by the regent's route, Salura needs a drive to "
+                'Nggongi and a boat from Katundu beach; the reports mention no regular passenger service, so ask a local operator and check sea conditions first (see <a '
+                'href="/en/travel/bmkg-moderate-waves-sumba-strait-savu-sea-17-20-november-2026/">our wave outlook to 20 November</a>). Residents: a repaired jetty should improve boat access for '
+                'islanders, whose economy rests on squid and seaweed according to the report, but no works have a date. Investors: the Rp50 billion is public money for a jetty, not a tourism '
+                'concession; the reports name no investor, land or permits, so check land status and approvals before acting.</p>',
+        'faq': [['How much money is approved for the Salura jetty?',
+                 'Waingapu.com reports Rp50 billion from the Transport Ministry, against the Rp60 billion first requested in 2025. No start or completion date has been announced.'],
+                ['How do you get to Salura island?',
+                 'On the route the regent announced: by road from Waingapu to Nggongi, then by boat from Katundu beach. The reports mention no scheduled passenger service.']]},
+ 'es': {'title': 'El regente de Sumba Oriental viaja a Salura por su embarcadero',
+        'dek': 'El Ministerio de Transportes ha aprobado 50.000 millones de rupias para el embarcadero dañado por el ciclón Seroja, pero no hay fecha de inicio.',
+        'answer': 'El regente de Sumba Oriental, Umbu Lili Pekuwali, tenía previsto visitar la isla de Salura el martes 17 de noviembre de 2026 para comprobar su embarcadero, que necesita reparación '
+                  'desde el ciclón Seroja de 2021, informó Waingapu.com. El Ministerio de Transportes ha aprobado 50.000 millones de rupias para rehabilitarlo, según el medio; no se da fecha de '
+                  'inicio ni de finalización.',
+        'keys': ['El regente pensaba ir por carretera de Waingapu a Nggongi y después en barca desde la playa de Katundu con un grupo reducido; el vicerregente, Yonathan Hani, visitó la isla el 16 '
+                 'de noviembre.',
+                 'El Ministerio de Transportes aprobó 50.000 millones de rupias para el embarcadero; la regencia y la capitanía del puerto de Waingapu habían pedido 60.000 millones en 2025.',
+                 'El embarcadero necesita reparación desde el ciclón Seroja de 2021; no se ha publicado fecha de inicio, contratista ni fecha de finalización.',
+                 'Waingapu.com dice que el paisaje de Salura, Kotak y Mengkudu despierta interés de inversores turísticos, pero no nombra a ninguno; ambas informaciones son del mismo medio.'],
+        'visitors': 'Llegar a Salura exige un trayecto por carretera hasta Nggongi y una barca desde la playa de Katundu; las informaciones no mencionan un servicio regular de pasajeros, así que '
+                    'consulte a un operador local y revise antes el estado del mar.',
+        'body': '<p>El regente de Sumba Oriental, Umbu Lili Pekuwali, tenía previsto viajar el martes 17 de noviembre de 2026 a la isla de Salura para comprobar el estado de su embarcadero, según '
+                'Waingapu.com. El mismo medio informa de que el Ministerio de Transportes ha aprobado 50.000 millones de rupias (Rp50 miliar) para rehabilitarlo. No se ha publicado fecha de inicio, '
+                'contratista ni fecha de finalización, y las informaciones disponibles aún no cuentan qué encontró el regente al llegar.</p><h2>El viaje y el embarcadero</h2><p>Waingapu.com cuenta '
+                'que el regente anunció el lunes 16 de noviembre que viajaría con un grupo reducido por carretera de Waingapu a Nggongi y después en barca desde la playa de Katundu hasta Salura, en '
+                'el sur de Sumba Oriental. El vicerregente, Yonathan Hani, ya había visitado la isla ese lunes. Según el medio, el embarcadero necesita reparación desde que el ciclón Seroja golpeó '
+                'la zona en 2021, y describe Salura como una isla exterior junto a aguas australianas.</p><p>En cuanto al dinero, el medio informa de que el Ministerio de Transportes aprobó 50.000 '
+                'millones de rupias para la rehabilitación. La regencia y el jefe de la capitanía del puerto de Waingapu (KSOP Clase IV), Fadly Afand Djafar, habían pedido 60.000 millones en 2025. '
+                'Según el medio, Djafar sostiene que esta vez la presencia del Gobierno central va más allá de las palabras. No se detalla cómo ni cuándo se gastará el dinero.</p><h2>Calamar, algas '
+                'y turismo</h2><p>Waingapu.com cita el calamar y las algas como principal potencial económico de la isla y afirma que el paisaje de Salura, Kotak y Mengkudu empieza a atraer a '
+                'posibles inversores turísticos, sin nombrar a ninguno. Su crónica anterior, del 1 de noviembre, cuenta una expedición de la agencia de viajes Pesona Alam Timur a las tres islas. '
+                'Ambas informaciones proceden de un solo medio, así que el interés inversor debe tomarse como no confirmado. Salura tiene un jefe de aldea en funciones desde la muerte del anterior; '
+                'las elecciones esperan a que se ajuste la normativa.</p><h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: según la ruta del regente, llegar a Salura '
+                'exige un trayecto por carretera hasta Nggongi y una barca desde la playa de Katundu; las informaciones no mencionan un servicio regular de pasajeros, así que consulte a un operador '
+                'local y revise antes el estado del mar (véase <a href="/es/travel/bmkg-oleaje-moderado-estrecho-sumba-mar-savu-17-20-noviembre-2026/">nuestro parte de oleaje hasta el 20 de '
+                'noviembre</a>). Residentes: un embarcadero reparado debería mejorar el acceso en barca de los isleños, cuya economía descansa en el calamar y las algas según el medio, pero ninguna '
+                'obra tiene fecha. Inversores: los 50.000 millones de rupias son dinero público para un embarcadero, no una concesión turística; las informaciones no nombran inversor, terreno ni '
+                'permisos, así que compruebe la situación de la tierra y las autorizaciones antes de actuar.</p>',
+        'faq': [['¿Cuánto dinero está aprobado para el embarcadero de Salura?',
+                 'Waingapu.com informa de 50.000 millones de rupias del Ministerio de Transportes, frente a los 60.000 millones que se pidieron en 2025. No se ha anunciado fecha de inicio ni de '
+                 'finalización.'],
+                ['¿Cómo se llega a la isla de Salura?',
+                 'Por la ruta que anunció el regente: por carretera de Waingapu a Nggongi y después en barca desde la playa de Katundu. Las informaciones no mencionan un servicio regular de '
+                 'pasajeros.']]},
+ 'id': {'title': 'Bupati Sumba Timur ke Pulau Salura, dermaga disetujui Rp50 miliar',
+        'dek': 'Kementerian Perhubungan menyetujui Rp50 miliar untuk dermaga yang rusak akibat Badai Seroja, tetapi tanggal mulai belum diumumkan.',
+        'answer': 'Bupati Sumba Timur Umbu Lili Pekuwali dijadwalkan mengunjungi Pulau Salura pada Selasa 17 November 2026 untuk meninjau dermaga yang rusak sejak Badai Seroja 2021, lapor '
+                  'Waingapu.com. Kementerian Perhubungan menyetujui Rp50 miliar untuk rehabilitasi, menurut media itu; tanggal mulai dan selesai belum disebut.',
+        'keys': ['Bupati berencana menempuh jalan darat dari Waingapu ke Nggongi lalu naik perahu dari Pantai Katundu bersama rombongan terbatas; Wakil Bupati Yonathan Hani mengunjungi pulau itu '
+                 'pada 16 November.',
+                 'Kementerian Perhubungan menyetujui Rp50 miliar untuk dermaga; Pemkab dan KSOP Waingapu mengusulkan Rp60 miliar sejak 2025.',
+                 'Dermaga rusak sejak Badai Seroja 2021; belum ada tanggal mulai, kontraktor, atau target selesai yang dipublikasikan.',
+                 'Waingapu.com menyebut keindahan Salura, Kotak, dan Mengkudu mulai menarik minat calon investor wisata tanpa menyebut nama; kedua laporan berasal dari satu media.'],
+        'visitors': 'Ke Salura harus naik mobil sampai Nggongi lalu perahu dari Pantai Katundu; laporan tidak menyebut layanan penumpang reguler, jadi tanyakan ke operator lokal dan periksa kondisi '
+                    'laut lebih dulu.',
+        'body': '<p>Bupati Sumba Timur Umbu Lili Pekuwali dijadwalkan bertolak ke Pulau Salura pada Selasa 17 November 2026 untuk meninjau dermaga di pulau itu, menurut Waingapu.com. Laporan yang '
+                'sama menyebut Kementerian Perhubungan telah menyetujui anggaran Rp50 miliar untuk merehabilitasinya. Belum ada tanggal mulai, kontraktor, atau target selesai yang dipublikasikan, '
+                'dan laporan yang tersedia belum menceritakan apa yang dilihat bupati setibanya di sana.</p><h2>Perjalanan dan dermaga</h2><p>Waingapu.com melaporkan bahwa bupati menyampaikan kepada '
+                'wartawan pada Senin 16 November bahwa ia bersama rombongan terbatas akan menempuh jalan darat dari Waingapu ke Nggongi, lalu naik perahu dari Pantai Katundu ke Salura, di selatan '
+                'Sumba Timur. Wakil Bupati Yonathan Hani sudah lebih dulu mengunjungi pulau itu pada 16 November. Dermaga disebut rusak sejak Badai Seroja pada 2021, dan Waingapu.com menggambarkan '
+                'Salura sebagai pulau terluar yang berbatasan dengan perairan Australia.</p><p>Soal dana, media itu melaporkan Kementerian Perhubungan menyetujui Rp50 miliar untuk rehabilitasi. '
+                'Pemkab dan Kepala KSOP Kelas IV Waingapu, Fadly Afand Djafar, mengusulkannya sejak 2025 dengan nilai awal Rp60 miliar. Menurut laporan itu, Fadly menyatakan kehadiran pemerintah '
+                'pusat kali ini bukan sekadar wacana. Bagaimana dan kapan dana dipakai tidak dirinci.</p><h2>Cumi-cumi, rumput laut, dan minat wisata</h2><p>Waingapu.com menyebut cumi-cumi dan '
+                'rumput laut sebagai potensi ekonomi utama pulau, dan mengatakan keindahan kawasan Salura, Kotak, dan Mengkudu mulai menarik calon investor pariwisata, tanpa menyebut nama. Liputan '
+                'sebelumnya, 1 November, memuat eksplorasi perusahaan perjalanan Pesona Alam Timur ke tiga pulau itu. Keduanya berasal dari satu media, jadi minat investor perlu dibaca sebagai belum '
+                'terkonfirmasi. Jabatan Kepala Desa Salura kini diisi penjabat setelah kepala desa sebelumnya meninggal; pemilihan definitif menunggu penyesuaian regulasi.</p><h2>Apa artinya bagi '
+                'pengunjung, penduduk, dan investor</h2><p>Pengunjung: menurut rute bupati, ke Salura harus naik mobil sampai Nggongi lalu perahu dari Pantai Katundu; laporan tidak menyebut layanan '
+                'penumpang reguler, jadi tanyakan ke operator lokal dan periksa kondisi laut lebih dulu (lihat <a '
+                'href="/id/travel/bmkg-gelombang-sedang-selat-sumba-laut-sawu-17-20-november-2026/">prakiraan gelombang kami hingga 20 November</a>). Penduduk: dermaga yang diperbaiki seharusnya '
+                'memperlancar akses perahu bagi warga pulau, yang ekonominya bertumpu pada cumi-cumi dan rumput laut menurut laporan, tetapi belum ada tanggal pengerjaan. Investor: Rp50 miliar '
+                'adalah dana publik untuk dermaga, bukan konsesi wisata; laporan tidak menyebut investor, lahan, atau izin, jadi periksa status tanah dan perizinan sebelum bertindak.</p>',
+        'faq': [['Berapa dana yang disetujui untuk dermaga Salura?',
+                 'Waingapu.com melaporkan Rp50 miliar dari Kementerian Perhubungan, dari usulan awal Rp60 miliar pada 2025. Tanggal mulai dan selesai belum diumumkan.'],
+                ['Bagaimana cara ke Pulau Salura?',
+                 'Menurut rute yang disampaikan bupati: jalan darat dari Waingapu ke Nggongi, lalu perahu dari Pantai Katundu. Laporan tidak menyebut layanan penumpang terjadwal.']]},
+ 'sources': [['Waingapu.Com: Hari Ini Bupati Sumba Timur Bertolak ke Pulau Salura, Ini Agenda Penting yang Dibawa (17 Nov 2026)',
+              'https://www.waingapu.com/hari-ini-bupati-sumba-timur-bertolak-ke-pulau-salura-ini-agenda-penting-yang-dibawa/'],
+             ['Waingapu.Com: Salura, Kotak, dan Mangkudu Jadi Perhatian Pesona Alam Timur, Membuka Cerita Baru Wisata Sumba (1 Nov 2026)',
+              'https://www.waingapu.com/salura-kotak-dan-mangkudu-jadi-perhatian-pesona-alam-timur-membuka-cerita-baru-wisata-sumba/']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': '06Ivonne',
+           'license': 'CC BY-SA 4.0',
+           'license_url': 'https://creativecommons.org/licenses/by-sa/4.0',
+           'page': 'https://commons.wikimedia.org/wiki/File:Stranded_boat_at_Walakeri_Beach.jpg',
+           'ai': False,
+           'caption': {'en': 'File photo: a blue fishing boat on the sand at Walakeri Beach, East Sumba, 2018. It does not show Salura or its jetty.',
+                       'es': 'Foto de archivo: una barca de pesca azul sobre la arena en la playa de Walakeri, Sumba Oriental, 2018. No muestra Salura ni su embarcadero.',
+                       'id': 'Foto arsip: perahu nelayan biru di atas pasir Pantai Walakeri, Sumba Timur, 2018. Foto ini tidak menunjukkan Salura atau dermaganya.'}}},
+
+{'section': 'business',
  'slug': 'east-sumba-table-tennis-pon-2028-hapu-mbay-hall-waingapu',
  'date': '2026-11-17',
  'time': '06:50',
@@ -133,7 +253,6 @@ BRIEFS = [
  'time': '06:00',
  'dateline': 'JAKARTA',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'bmkg-oleaje-moderado-estrecho-sumba-mar-savu-17-20-noviembre-2026', 'id': 'bmkg-gelombang-sedang-selat-sumba-laut-sawu-17-20-november-2026'},
  'keywords': {'en': ['Sumba weather', 'Sumba Strait waves', 'Savu Sea waves', 'BMKG warning NTT', 'Sumba ferry weather', 'Indonesia cyclone seed November 2026'],
               'es': ['tiempo en Sumba', 'oleaje estrecho de Sumba', 'oleaje mar de Savu', 'aviso BMKG NTT', 'ferri Sumba tiempo', 'semilla ciclónica Indonesia noviembre 2026'],
