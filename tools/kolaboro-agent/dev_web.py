@@ -67,6 +67,8 @@ def get_json(url, timeout=20, accept='application/json, application/rdap+json'):
 
 # ---------------------------------------------------------------------------------------------------------- RDAP / DNS / TLS
 _BOOT = {}
+_REGD = {}   # n30b: domain -> registration date (RDAP)
+_TLSI = {}   # n30b: host -> (issuer organisation, notBefore YYYY-MM-DD) from the TLS handshake
 
 
 def rdap_expiry(d):
@@ -81,6 +83,9 @@ def rdap_expiry(d):
     j = get_json(base.rstrip('/') + '/domain/' + d)
     if not j:
         return None, 'not_found'
+    for ev in j.get('events') or []:   # n30b (17 Nov 2026): keep the registration date too (domain age on developer pages)
+        if (ev.get('eventAction') or '').lower() == 'registration' and ev.get('eventDate'):
+            _REGD[d] = ev['eventDate'][:10]
     for ev in j.get('events') or []:
         if (ev.get('eventAction') or '').lower() == 'expiration' and ev.get('eventDate'):
             return ev['eventDate'][:10], 'ok'
@@ -105,6 +110,11 @@ def tls_cert(host):
             with ctx.wrap_socket(s, server_hostname=host) as t:
                 c = t.getpeercert()
         na = datetime.strptime(c['notAfter'], '%b %d %H:%M:%S %Y %Z').strftime('%Y-%m-%d')
+        try:   # n30b: issuer and issue date of the certificate served
+            iss = dict(x[0] for x in c.get('issuer', ()))
+            _TLSI[host] = ((iss.get('organizationName') or iss.get('commonName') or '')[:60], datetime.strptime(c['notBefore'], '%b %d %H:%M:%S %Y %Z').strftime('%Y-%m-%d'))
+        except Exception:
+            pass
         return na, sorted({v.lower() for k, v in c.get('subjectAltName', ()) if k == 'DNS'})
     except ssl.SSLCertVerificationError as e:
         return 'invalid', []
@@ -333,6 +343,8 @@ def check(d, st):
         na, san = tls_cert(host)
         if na:
             h['ce'] = na
+        if _TLSI.get(host) and _TLSI[host][0]:
+            h['ci'], h['cb'] = _TLSI[host]   # n30b: certificate issuer and issue date
         others = sorted({reg_domain(x) for x in san} - {d})
         if others:
             ids['cert'] = others   # other domains on the same certificate: compared with our tracked domains in main()
@@ -346,8 +358,12 @@ def check(d, st):
     if week_old('rd') or (st.get('de') and st['de'] <= (NOW + timedelta(days=45)).strftime('%Y-%m-%d')):
         de, why = rdap_expiry(d)
         st['de'], st['rd_why'], st['rd_at'] = de, why, TODAY
+        if _REGD.get(d):
+            st['dr'] = _REGD[d]
     if st.get('de'):
         h['de'] = st['de']
+    if st.get('dr'):
+        h['dr'], h['drr'] = st['dr'], st.get('rd_at')   # n30b: registration date and the day RDAP was read
     # sitemap freshness (weekly)
     if not blocked and a and week_old('sm'):
         sm, smu = sitemap_newest(base, st.get('sms'))
@@ -432,6 +448,8 @@ def main():
                     h.pop(k, None)
         if 'ce' not in h and p.get('ce') and (LOCAL or h.get('s') is None):
             h['ce'] = p['ce']   # certificate not read today: keep the last date we read
+        if 'ci' not in h and p.get('ci') and (LOCAL or h.get('s') is None):
+            h['ci'], h['cb'] = p['ci'], p.get('cb')   # n30b: same for the certificate issuer
         h['dv'] = D[d]['url'].strip('/').split('/')[-1]
         H[d] = h
     health = {
@@ -439,7 +457,7 @@ def main():
         'runner_ok': runner_ok, 'n': len(H),
         'legend': {'h': 'one character per daily check, oldest first, matching days: u answered (HTTP status below 400), b answered with a 4xx status (often a bot wall), x server error (5xx), 0 no answer (DNS, connection, TLS or timeout), - not checked (robots.txt asks robots not to fetch the homepage, or our runner had a network problem that day)',
                    's': 'HTTP status of the homepage today (0 no answer)', 'ms': 'response time in milliseconds', 'st': 'consecutive daily checks with an answer',
-                   'ce': 'TLS certificate expiry date (from the TLS handshake)', 'de': 'domain registration expiry date (registry RDAP, through the IANA bootstrap)',
+                   'ce': 'TLS certificate expiry date (from the TLS handshake)', 'de': 'domain registration expiry date (registry RDAP, through the IANA bootstrap)', 'dr': 'domain registration date (registry RDAP), read on drr', 'ci': 'issuer of the TLS certificate served (from the handshake)', 'cb': 'its issue date (notBefore)',
                    'lm': 'Last-Modified header of the homepage', 'sm': 'newest <lastmod> in the site\'s sitemap', 'to': 'the homepage redirects to this other domain',
                    'rb': '1 when robots.txt asks robots not to fetch the homepage: we then only read DNS, the TLS certificate and RDAP', 'dns': '1 when the domain resolves', 'gen': 'generator meta tag',
                    'dv': 'developer page slug (/developers/<dv>/)'},
