@@ -15,7 +15,7 @@
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 
-export const N30V = 'a3';
+export const N30V = 'a4';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
