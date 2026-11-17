@@ -6,9 +6,9 @@
  "day_rule": "one entry per UTC day on which the file was published: the last version published that day; a day whose file is byte-identical to the day before gets no entry",
  "copies": "each copy is the gzip (RFC 1952, mtime 0) of the exact bytes; gunzip it and its SHA-256 equals sha256",
  "note": "Entries up to 2026-11-16 were rebuilt on 2026-11-17 from the version history of the published file. Later entries are added by the snapshot script after a publish; until then /api/v1/snapshots shows a newer live file as a provisional tip.",
- "updated": "2026-11-15",
- "count": 6,
- "tip": "79765ee63139564f76c8aa365a5d0572247afad886e73fbe29bae9668b80e391",
+ "updated": "2026-11-17",
+ "count": 7,
+ "tip": "4daf5607fe665d51180e0965d429c1ffde4d098839d2d0b45fc677a1305e2d61",
  "entries": [
   {
    "day": "2026-11-07",
@@ -92,6 +92,20 @@
    "copy": "/data/snapshots/2026-11-15/named.json.gz",
    "copy_sha256": "e1b470be0119fe89b98f023c6fc97f1afe29e9815a1d54bce79f579bac588dab",
    "copy_bytes": 1064731,
+   "added": "2026-11-17"
+  },
+  {
+   "day": "2026-11-17",
+   "published_at": "2026-11-17T02:06:37Z",
+   "commit": "7a8f8ae30bf8",
+   "bytes": 5299008,
+   "sha256": "4f2af79bff82a2f4f9213e6934f01106ff0572f2dc2b120a84f698723b8b800f",
+   "projects": 1745,
+   "prev": "79765ee63139564f76c8aa365a5d0572247afad886e73fbe29bae9668b80e391",
+   "head": "4daf5607fe665d51180e0965d429c1ffde4d098839d2d0b45fc677a1305e2d61",
+   "copy": "/data/snapshots/2026-11-17/named.json.gz",
+   "copy_sha256": "7129d16a3c076a2ee8ec4c43ca7936c202cd416372e16b0343ffe0a4a403503a",
+   "copy_bytes": 1090776,
    "added": "2026-11-17"
   }
  ]
