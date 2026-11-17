@@ -21,8 +21,8 @@ async function loadOne(env, name) {
   MEMO[name] = { t: Date.now(), v }; return v;
 }
 export async function landData(env) {
-  const [lr, mh] = await Promise.all([loadOne(env, 'land-rules.json'), loadOne(env, 'map-history.json')]);
-  return { lr, mh, v: ((lr && lr.updated) || '') + '/' + ((mh && mh.updated) || '') };
+  const [lr, mh, hz] = await Promise.all([loadOne(env, 'land-rules.json'), loadOne(env, 'map-history.json'), loadOne(env, 'hazards.json')]);   // n30c: hazards for the pin check
+  return { lr, mh, hz, v: ((lr && lr.updated) || '') + '/' + ((mh && mh.updated) || '') + '/' + ((hz && hz.updated) || '') };
 }
 
 // ------------------------------------------------------------------------------------------------ strings (8 languages)

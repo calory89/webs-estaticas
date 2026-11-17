@@ -15,7 +15,8 @@
 //   GET /__k/kwatch-admin.js             admin CRM tab "Screening" (index.js injects it on /admin)
 // Developer pages: kbx_named.js calls watchDevHtml() for the section #watch.
 import { LOCALE } from './kbx_named_i18n.js';
-import { warnDevHtml } from './kbx_gaz.js';   // n21a (batch 21): regulator warning lists line, gazette notices data
+import { warnDevHtml } from './kbx_gaz.js';
+import { t as I30 } from './kbx_n30c_named.js';   // n30c: link to the image reuse page   // n21a (batch 21): regulator warning lists line, gazette notices data
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -203,6 +204,7 @@ function pageBody(la, lang) {
     : '<div class="k-empty"><strong>' + esc(t(lang, 'p_empty')) + '</strong></div>';
   const srcs = ((la && la.sources) || []).map(s => '<li><a href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.name) + '</a> <span class="k-muted">(' + esc(s.licence) + ')</span></li>').join('');
   return '<div class="kwa-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p><p class="kwa-cav">' + esc(t(lang, 'p_cav')) + '</p>' +
+    '<p><a href="' + pre(lang) + '/watch/lookalikes/images/">' + esc(I30(lang, 'ir_t')) + '</a></p>' +   // n30c (item 16): pictures shared by two projects
     (la ? '<p><b>' + esc(t(lang, 'p_count', { n: items.length, k, w: la.watched || 0 })) + '</b> <span class="k-muted">' + esc(t(lang, 'p_upd', { d: fdt(la.updated, lang) })) + '</span></p>' : '') + '</div>' + table + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'p_mh')) + '</h2><p>' + esc(t(lang, 'p_m')) + '</p><h3>' + esc(t(lang, 'p_src')) + '</h3><ul class="kwa-src">' + srcs + '</ul><p><a href="/api/x/watch/lookalikes">/api/x/watch/lookalikes</a> · <a href="/data/lookalikes.json">/data/lookalikes.json</a> · <a href="' + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div></section></div>';
 }

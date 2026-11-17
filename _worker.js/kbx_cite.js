@@ -19,7 +19,8 @@ import * as N from './kbx_named.js';
 import { rpc } from './kolaboro.js';
 import { S } from './kbx_cite_i18n.js';
 import { coName, mkName } from './kbx_hdate.js';
-import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
+import { ogImg } from './kbx_ogt.js';
+import { t as W30 } from './kbx_n30c_named.js';   // n30c: widget v2 builder link   // n29t: share image per page type
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -155,6 +156,7 @@ function codesPage(X, x, lang, vr) {
   b += '<p class="h">' + esc(t(lang, 'e_tracker')) + '</p>' + ifr(trk, rv ? 380 : 190, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(trk, rv ? 380 : 190, 'Kolaboro: ' + x.n) + back);
   b += '<p class="h">' + esc(t(lang, 'e_badge')) + '</p><p>' + esc(t(lang, 'e_badge_txt')) + '</p>' + (vr && vr.domain ? '<p>' + esc(t(lang, 'e_badge_yes', { d: vr.domain })) + '</p><p><img src="' + bdg + '" alt="Tracked by Kolaboro"/></p>' + code('<a href="' + pUrl('en', x) + '"><img src="' + bdg + '" alt="Tracked by Kolaboro" height="22"></a>')
     : '<p>' + esc(t(lang, 'e_badge_no')) + ' <a href="' + ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id) + '" target="_top">' + esc(t(lang, 'e_reply')) + '</a></p>');
+  b += '<p class="h"><a href="' + ORIGIN + pre(lang) + '/tools/widget/?p=' + x.s + '" target="_top">' + esc(W30(lang, 'w_t')) + '</a></p><p>' + esc(W30(lang, 'w_d')) + '</p>';   // n30c (item 19): widget v2
   b += '<p class="f">' + esc(t(lang, 'e_lang')) + ' ' + esc(t(lang, 'e_lic')) + ' <a href="' + pUrl(lang, x) + '" target="_top">' + esc(t(lang, 'open')) + '</a></p>';
   return embedPage(lang, t(lang, 'e_title', { n: x.n }), b, ORIGIN + '/embed/p/' + x.s + '/');
 }

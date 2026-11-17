@@ -47,6 +47,7 @@ let kplot = null; const KPLOT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?satellite\/pl
 let kwat = null; const KWAT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?watch\/lookalikes\/?$|^\/__k\/kwatch-admin\.js$/;   // n19a (batch 19): lookalike websites feed, admin Screening tab (see kbx_watch.js)
 let ke27 = null; const KE27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/report(?:\/|\.pdf)?|weekly(?:\/[a-z0-9-]{2,40})?\/?)$|^\/weekly\/(?:[a-z0-9-]{2,40}\/feed\.(?:atom|json)|sitemap\.xml)$|^\/api\/x\/e27\/(?:mail\/(?:review|delays)|signups|notices\/[A-Za-z0-9-]{3,20})\/?$/;   // n27e (batch 27): project report + PDF, weekly changes per place, mail previews, sign-ups, notices (keep equal to PATHS in kbx_e27.js)
 let ku27 = null; const KU27 = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;   // n27u (batch 27): client script of named pages, cost rows, map of all projects, full ticker lines (keep equal to PATHS in kbx_u27.js)
+let k30c = null; const K30C = /^\/k\/n30c-map\.js$|^\/api\/v1\/pin\/[A-Za-z0-9-]{3,20}$|^\/embed\/v2(?:\.js|\/[a-z0-9-]{1,90}\/?)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:prices\/history(?:\/[a-z0-9-]{2,60})?|watch\/lookalikes\/images|tools\/widget|engineering\/status)\/?$/;   // n30c (batch 30): map client, pin check, widget v2, price history by place, image reuse, engineering status (keep equal to PATHS in kbx_n30c.js)
 let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
 let k29i = null; const K29I = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:countries|rankings)(?:\/[a-z0-9-]{2,60})?\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(?:russia|china|gulf))?\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;   // n29i (batch 29): translated market files, their sitemap, questions answered from data (keep equal to PATHS in kbx_n29i.js)
@@ -495,6 +496,13 @@ export default {
       if (!ke27) ke27 = await import('./kbx_e27.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const r = await ke27.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // kolaboro.com (n30c, batch 30): /k/n30c-map.js, /api/v1/pin/<ID>, /embed/v2/<slug>/, /embed/v2.js, /[lang/]prices/history/[<place>/], /[lang/]watch/lookalikes/images/, /[lang/]tools/widget/, /[lang/]engineering/status/ (see kbx_n30c.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K30C.test(u.pathname)) {
+      if (!k30c) k30c = await import('./kbx_n30c.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await k30c.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n26u, batch 26): /compare/?p=<slugs> (named, 8 languages, noindex), /api/v1/facets, /api/v1/followers, /api/x/status/pages (see kbx_u26.js)
