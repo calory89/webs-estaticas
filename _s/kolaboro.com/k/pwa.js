@@ -24,7 +24,7 @@
   if (!D.querySelector('meta[name="theme-color"]')) { var m = D.createElement('meta'); m.name = 'theme-color'; m.content = '#17212B'; D.head.appendChild(m); }
   // 3) offline banner
   var bar = null;
-  function fmt(iso) { try { return new Date(iso).toLocaleDateString(H.lang || lang, { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return String(iso).slice(0, 10); } }
+  function fmt(iso) { try { return new Date(iso).toLocaleDateString({ en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[lang], { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return String(iso).slice(0, 10); } }
   function savedAt() {
     if (!('caches' in W)) return Promise.resolve(null);
     var p = location.pathname + location.search;
