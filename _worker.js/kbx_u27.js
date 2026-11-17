@@ -10,10 +10,12 @@
 //   GET /[<lang>/]map/                  map of all projects with filters (Leaflet, OpenStreetMap tiles, loaded when the map is near)
 //   GET /[<lang>/]updates/              the full text of every line of the "Shipping daily" bar (the bar shows a short form)
 // Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
+import { t30 } from './kbx_n30a.js';   // n30a (batch 30): contract reader link in the checklist
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27g';   // u27g: currency pre-selected by page language (n29i)   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
+export const U27V = 'u27h';   // u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V_OLD = 'u27g';   // u27g: currency pre-selected by page language (n29i)   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -159,6 +161,13 @@ export const secZ = (id, h, inner, lead) => '<section class="ks kz" id="' + id +
 // the six-check traffic light, from fields we already hold: transparency ledger items (kbx_tr.js), the case's satellite line and
 // stage, overdue months. Each check links to its section (folded sections open on the link). Colours carry words too.
 export function lightHtml(lang, o) {
+  const P = light6(o);
+  return '<div class="klt" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + '"><p class="klt-h">' + esc(t27(lang, 'lt_h')) + '</p><ul class="klt-l">' +
+    P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +
+    '</ul><details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary>' + keyHtml(lang) + '</details></div>';
+}
+// n30a (batch 30): the six states on their own, also used by the compare page (radar and one row per check)
+export function light6(o) {
   const it = {}; for (const i of ((o.tp && o.tp.items) || [])) it[i.k] = i.st;
   const c = o.c || {}, ck = c.checks || {}, has = id => o.ids.includes(id);
   const P = [];
@@ -182,9 +191,7 @@ export function lightHtml(lang, o) {
   const w = it.web; P.push(['web', has('web') ? 'web' : 'legit', w === 'yes' ? ['ok', 'w_yes'] : w === 'part' ? ['part', 'w_part'] : w === 'no' ? ['no', 'w_no'] : ['nc', 'w_nc']]);
   // official lists (public "no match" only; anything else is "not screened")
   const n = it.notices; P.push(['lists', 'legit', n === 'yes' ? ['ok', 'l_yes'] : n === 'part' ? ['ok', 'l_part'] : ['nc', 'l_nc']]);
-  return '<div class="klt" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + '"><p class="klt-h">' + esc(t27(lang, 'lt_h')) + '</p><ul class="klt-l">' +
-    P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +
-    '</ul><details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary>' + keyHtml(lang) + '</details></div>';
+  return P;
 }
 
 // n28b: the colour key as four rows, each with its own dot, then "facts, not a verdict" (split from the one sentence each language has)
@@ -201,7 +208,7 @@ export function checklistHtml(lang, o) {
   L.push(esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co)));
   if ((o.regs || []).length) for (const r of o.regs) L.push(esc(t27(lang, 'ck2r', { r: '\u0000' })).replace('\u0000', '<a href="' + esc(r.u) + '" rel="noopener nofollow" target="_blank"><bdi>' + esc(r.n) + '</bdi></a>'));
   else L.push(esc(t27(lang, 'ck2')) + ' <a href="/registers/">kolaboro.com/registers</a>');
-  for (const k of ['ck3', 'ck4', 'ck5', 'ck6', 'ck7']) L.push(esc(t27(lang, k)));
+  for (const k of ['ck3', 'ck4', 'ck5', 'ck6', 'ck7']) L.push(esc(t27(lang, k)) + (k === 'ck5' ? ' <a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t30(lang, 'cr_h1')) + '</a>' : ''));   // n30a: the contract reader
   L.push(esc(t27(lang, 'ck8', { co: '\u0000' })).replace('\u0000', bdi(lang, co)) + (o.cost ? ' <a href="#buycost">' + esc(o.costLbl || '') + '</a>' : ''));
   return '<div class="kck" data-u27k="' + esc(o.id) + '"><h3>' + esc(t27(lang, 'ck_h', { co })) + '</h3><p class="ki">' + esc(t27(lang, 'ck_i')) + ' <span class="kck-n" data-n="' + esc(t27(lang, 'ck_n')) + '" aria-live="polite"></span></p><ol class="kck-l">' +
     L.map((h, i) => '<li><label><input type="checkbox" value="' + i + '"><span>' + h + '</span></label></li>').join('') + '</ol><button type="button" class="kck-r" hidden>' + esc(t27(lang, 'ck_r')) + '</button></div>';
@@ -233,35 +240,35 @@ function client() {
     en: { oa: 'Open all sections', ca: 'Close all sections', cu: 'Show prices in', cuo: 'as published', cun: 'Converted at the European Central Bank reference rate of {d}. The price as published stays the reference.', cuf: 'Rates could not load right now.',
       kh: 'Your figures: total cost and yield', kp: 'Purchase price', kr: 'Expected rent per month', kc: 'Yearly running costs (service charge, management, insurance)', km: 'Months rented per year', kt: 'Taxes and fees ({c})', kt0: 'Taxes and fees (your own figure)',
       ktot: 'Total cost to buy', kg: 'Gross yield', kn: 'Net yield after running costs', kno: 'Your own figures, worked out in your browser. Not a forecast and not advice; nothing is sent or stored. The rent is your estimate, not the developer’s.', ke: 'Tax rows could not load. Add your own figure.',
-      cmp: 'Compare', cms: '{k} selected', cmg: 'Compare side by side', cmx: 'Up to 3 projects', cmc: 'Clear', sg: 'Suggestions', sgd: 'Developer', sgp: '{k} projects', mpk: '{k} projects in this view', mpa: '{k} more in {m}, without a published address', mpo: 'Open', mpm: 'Show more', mpe: 'The map did not load. The list below still works.' },
+      cmp: 'Compare', cms: '{k} selected', cmg: 'Compare side by side', cmx: 'Up to 4 projects', cmc: 'Clear', sg: 'Suggestions', sgd: 'Developer', sgp: '{k} projects', mpk: '{k} projects in this view', mpa: '{k} more in {m}, without a published address', mpo: 'Open', mpm: 'Show more', mpe: 'The map did not load. The list below still works.' },
     es: { oa: 'Abrir todas las secciones', ca: 'Cerrar todas las secciones', cu: 'Ver precios en', cuo: 'como se publica', cun: 'Convertido al tipo de referencia del Banco Central Europeo del {d}. El precio publicado sigue siendo la referencia.', cuf: 'No se pudieron cargar los tipos de cambio.',
       kh: 'Tus cifras: coste total y rentabilidad', kp: 'Precio de compra', kr: 'Alquiler esperado al mes', kc: 'Gastos anuales (comunidad, gestión, seguro)', km: 'Meses alquilado al año', kt: 'Impuestos y gastos ({c})', kt0: 'Impuestos y gastos (tu propia cifra)',
       ktot: 'Coste total de compra', kg: 'Rentabilidad bruta', kn: 'Rentabilidad neta tras gastos', kno: 'Tus propias cifras, calculadas en tu navegador. No es una previsión ni un consejo; no se envía ni se guarda nada. El alquiler es tu estimación, no la del promotor.', ke: 'No se pudieron cargar los impuestos. Pon tu propia cifra.',
-      cmp: 'Comparar', cms: '{k} seleccionados', cmg: 'Comparar lado a lado', cmx: 'Hasta 3 proyectos', cmc: 'Borrar', sg: 'Sugerencias', sgd: 'Promotora', sgp: '{k} proyectos', mpk: '{k} proyectos en esta vista', mpa: '{k} más en {m}, sin dirección publicada', mpo: 'Abrir', mpm: 'Ver más', mpe: 'El mapa no se pudo cargar. La lista de abajo sigue funcionando.' },
+      cmp: 'Comparar', cms: '{k} seleccionados', cmg: 'Comparar lado a lado', cmx: 'Hasta 4 proyectos', cmc: 'Borrar', sg: 'Sugerencias', sgd: 'Promotora', sgp: '{k} proyectos', mpk: '{k} proyectos en esta vista', mpa: '{k} más en {m}, sin dirección publicada', mpo: 'Abrir', mpm: 'Ver más', mpe: 'El mapa no se pudo cargar. La lista de abajo sigue funcionando.' },
     fr: { oa: 'Ouvrir toutes les sections', ca: 'Fermer toutes les sections', cu: 'Afficher les prix en', cuo: 'tel que publié', cun: 'Converti au taux de référence de la Banque centrale européenne du {d}. Le prix publié reste la référence.', cuf: 'Les taux n’ont pas pu être chargés.',
       kh: 'Vos chiffres : coût total et rendement', kp: 'Prix d’achat', kr: 'Loyer attendu par mois', kc: 'Charges annuelles (copropriété, gestion, assurance)', km: 'Mois loués par an', kt: 'Taxes et frais ({c})', kt0: 'Taxes et frais (votre propre chiffre)',
       ktot: 'Coût total d’achat', kg: 'Rendement brut', kn: 'Rendement net après charges', kno: 'Vos propres chiffres, calculés dans votre navigateur. Ni une prévision ni un conseil ; rien n’est envoyé ni enregistré. Le loyer est votre estimation, pas celle du promoteur.', ke: 'Les taxes n’ont pas pu être chargées. Saisissez votre propre chiffre.',
-      cmp: 'Comparer', cms: '{k} sélectionnés', cmg: 'Comparer côte à côte', cmx: 'Jusqu’à 3 projets', cmc: 'Effacer', sg: 'Suggestions', sgd: 'Promoteur', sgp: '{k} projets', mpk: '{k} projets dans cette vue', mpa: '{k} de plus à {m}, sans adresse publiée', mpo: 'Ouvrir', mpm: 'Voir plus', mpe: 'La carte n’a pas pu être chargée. La liste ci-dessous fonctionne toujours.' },
+      cmp: 'Comparer', cms: '{k} sélectionnés', cmg: 'Comparer côte à côte', cmx: 'Jusqu’à 4 projets', cmc: 'Effacer', sg: 'Suggestions', sgd: 'Promoteur', sgp: '{k} projets', mpk: '{k} projets dans cette vue', mpa: '{k} de plus à {m}, sans adresse publiée', mpo: 'Ouvrir', mpm: 'Voir plus', mpe: 'La carte n’a pas pu être chargée. La liste ci-dessous fonctionne toujours.' },
     de: { oa: 'Alle Abschnitte öffnen', ca: 'Alle Abschnitte schließen', cu: 'Preise anzeigen in', cuo: 'wie veröffentlicht', cun: 'Umgerechnet zum Referenzkurs der Europäischen Zentralbank vom {d}. Maßgeblich bleibt der veröffentlichte Preis.', cuf: 'Die Kurse konnten gerade nicht geladen werden.',
       kh: 'Ihre Zahlen: Gesamtkosten und Rendite', kp: 'Kaufpreis', kr: 'Erwartete Miete pro Monat', kc: 'Jährliche laufende Kosten (Hausgeld, Verwaltung, Versicherung)', km: 'Vermietete Monate pro Jahr', kt: 'Steuern und Gebühren ({c})', kt0: 'Steuern und Gebühren (eigener Betrag)',
       ktot: 'Gesamtkosten des Kaufs', kg: 'Bruttorendite', kn: 'Nettorendite nach laufenden Kosten', kno: 'Ihre eigenen Zahlen, im Browser berechnet. Keine Prognose und keine Beratung; nichts wird gesendet oder gespeichert. Die Miete ist Ihre Schätzung, nicht die des Bauträgers.', ke: 'Die Steuerzeilen konnten nicht geladen werden. Tragen Sie einen eigenen Betrag ein.',
-      cmp: 'Vergleichen', cms: '{k} ausgewählt', cmg: 'Nebeneinander vergleichen', cmx: 'Bis zu 3 Projekte', cmc: 'Leeren', sg: 'Vorschläge', sgd: 'Bauträger', sgp: '{k} Projekte', mpk: '{k} Projekte in dieser Ansicht', mpa: '{k} weitere in {m}, ohne veröffentlichte Adresse', mpo: 'Öffnen', mpm: 'Mehr zeigen', mpe: 'Die Karte konnte nicht geladen werden. Die Liste unten funktioniert weiter.' },
+      cmp: 'Vergleichen', cms: '{k} ausgewählt', cmg: 'Nebeneinander vergleichen', cmx: 'Bis zu 4 Projekte', cmc: 'Leeren', sg: 'Vorschläge', sgd: 'Bauträger', sgp: '{k} Projekte', mpk: '{k} Projekte in dieser Ansicht', mpa: '{k} weitere in {m}, ohne veröffentlichte Adresse', mpo: 'Öffnen', mpm: 'Mehr zeigen', mpe: 'Die Karte konnte nicht geladen werden. Die Liste unten funktioniert weiter.' },
     nl: { oa: 'Alle secties openen', ca: 'Alle secties sluiten', cu: 'Prijzen tonen in', cuo: 'zoals gepubliceerd', cun: 'Omgerekend tegen de referentiekoers van de Europese Centrale Bank van {d}. De gepubliceerde prijs blijft de referentie.', cuf: 'De koersen konden nu niet laden.',
       kh: 'Uw cijfers: totale kosten en rendement', kp: 'Koopprijs', kr: 'Verwachte huur per maand', kc: 'Jaarlijkse kosten (servicekosten, beheer, verzekering)', km: 'Maanden verhuurd per jaar', kt: 'Belastingen en kosten ({c})', kt0: 'Belastingen en kosten (uw eigen bedrag)',
       ktot: 'Totale aankoopkosten', kg: 'Brutorendement', kn: 'Nettorendement na kosten', kno: 'Uw eigen cijfers, berekend in uw browser. Geen voorspelling en geen advies; er wordt niets verzonden of opgeslagen. De huur is uw schatting, niet die van de ontwikkelaar.', ke: 'De belastingregels konden niet laden. Vul uw eigen bedrag in.',
-      cmp: 'Vergelijken', cms: '{k} geselecteerd', cmg: 'Naast elkaar vergelijken', cmx: 'Tot 3 projecten', cmc: 'Wissen', sg: 'Suggesties', sgd: 'Ontwikkelaar', sgp: '{k} projecten', mpk: '{k} projecten in deze weergave', mpa: 'nog {k} in {m}, zonder gepubliceerd adres', mpo: 'Openen', mpm: 'Meer tonen', mpe: 'De kaart kon niet laden. De lijst hieronder werkt nog.' },
+      cmp: 'Vergelijken', cms: '{k} geselecteerd', cmg: 'Naast elkaar vergelijken', cmx: 'Tot 4 projecten', cmc: 'Wissen', sg: 'Suggesties', sgd: 'Ontwikkelaar', sgp: '{k} projecten', mpk: '{k} projecten in deze weergave', mpa: 'nog {k} in {m}, zonder gepubliceerd adres', mpo: 'Openen', mpm: 'Meer tonen', mpe: 'De kaart kon niet laden. De lijst hieronder werkt nog.' },
     ru: { oa: 'Открыть все разделы', ca: 'Свернуть все разделы', cu: 'Цены в валюте', cuo: 'как опубликовано', cun: 'Пересчитано по справочному курсу Европейского центрального банка на {d}. Опорной остаётся опубликованная цена.', cuf: 'Курсы сейчас не загрузились.',
       kh: 'Ваши цифры: полная стоимость и доходность', kp: 'Цена покупки', kr: 'Ожидаемая аренда в месяц', kc: 'Годовые расходы (обслуживание, управление, страховка)', km: 'Месяцев аренды в году', kt: 'Налоги и сборы ({c})', kt0: 'Налоги и сборы (ваша сумма)',
       ktot: 'Полная стоимость покупки', kg: 'Валовая доходность', kn: 'Чистая доходность после расходов', kno: 'Ваши собственные цифры, расчёт в браузере. Это не прогноз и не совет; ничего не отправляется и не сохраняется. Аренда: это ваша оценка, а не застройщика.', ke: 'Налоги не загрузились. Укажите свою сумму.',
-      cmp: 'Сравнить', cms: 'Выбрано: {k}', cmg: 'Сравнить рядом', cmx: 'Не больше 3 проектов', cmc: 'Сбросить', sg: 'Подсказки', sgd: 'Застройщик', sgp: 'Проектов: {k}', mpk: 'Проектов в этой области: {k}', mpa: 'Ещё в {m} без опубликованного адреса: {k}', mpo: 'Открыть', mpm: 'Показать ещё', mpe: 'Карта не загрузилась. Список ниже работает.' },
+      cmp: 'Сравнить', cms: 'Выбрано: {k}', cmg: 'Сравнить рядом', cmx: 'Не больше 4 проектов', cmc: 'Сбросить', sg: 'Подсказки', sgd: 'Застройщик', sgp: 'Проектов: {k}', mpk: 'Проектов в этой области: {k}', mpa: 'Ещё в {m} без опубликованного адреса: {k}', mpo: 'Открыть', mpm: 'Показать ещё', mpe: 'Карта не загрузилась. Список ниже работает.' },
     zh: { oa: '展开全部章节', ca: '收起全部章节', cu: '价格显示为', cuo: '按公布币种', cun: '按欧洲中央银行 {d} 的参考汇率换算。以公布的价格为准。', cuf: '暂时无法加载汇率。',
       kh: '按您的数字：总成本和收益率', kp: '购买价格', kr: '预计月租金', kc: '每年运营成本（物业费、管理费、保险）', km: '每年出租月数', kt: '税费（{c}）', kt0: '税费（您自己的数字）',
       ktot: '购买总成本', kg: '毛收益率', kn: '扣除运营成本后的净收益率', kno: '这是您自己的数字，在浏览器中计算。不是预测，也不是建议；不发送也不保存任何内容。租金是您的估计，不是开发商的。', ke: '无法加载税费，请填写您自己的数字。',
-      cmp: '对比', cms: '已选 {k} 个', cmg: '并排对比', cmx: '最多 3 个项目', cmc: '清除', sg: '建议', sgd: '开发商', sgp: '{k} 个项目', mpk: '此视图中有 {k} 个项目', mpa: '{m} 另有 {k} 个项目未公布地址', mpo: '打开', mpm: '显示更多', mpe: '地图未能加载，下方列表仍可使用。' },
+      cmp: '对比', cms: '已选 {k} 个', cmg: '并排对比', cmx: '最多 4 个项目', cmc: '清除', sg: '建议', sgd: '开发商', sgp: '{k} 个项目', mpk: '此视图中有 {k} 个项目', mpa: '{m} 另有 {k} 个项目未公布地址', mpo: '打开', mpm: '显示更多', mpe: '地图未能加载，下方列表仍可使用。' },
     ar: { oa: 'افتح كل الأقسام', ca: 'أغلق كل الأقسام', cu: 'اعرض الأسعار بـ', cuo: 'كما نُشرت', cun: 'محوَّل بسعر الصرف المرجعي للبنك المركزي الأوروبي بتاريخ {d}. يبقى السعر المنشور هو المرجع.', cuf: 'تعذّر تحميل أسعار الصرف الآن.',
       kh: 'أرقامك: التكلفة الإجمالية والعائد', kp: 'سعر الشراء', kr: 'الإيجار المتوقع شهريًا', kc: 'التكاليف السنوية (رسوم الخدمة، الإدارة، التأمين)', km: 'أشهر الإيجار في السنة', kt: 'الضرائب والرسوم ({c})', kt0: 'الضرائب والرسوم (رقمك الخاص)',
       ktot: 'التكلفة الإجمالية للشراء', kg: 'العائد الإجمالي', kn: 'العائد الصافي بعد التكاليف', kno: 'أرقامك الخاصة، محسوبة في متصفحك. ليست توقعًا ولا نصيحة؛ لا يُرسل شيء ولا يُحفظ. الإيجار تقديرك أنت لا تقدير المطوّر.', ke: 'تعذّر تحميل الضرائب. أدخل رقمك الخاص.',
-      cmp: 'قارن', cms: 'المحدد: {k}', cmg: 'قارن جنبًا إلى جنب', cmx: 'حتى 3 مشاريع', cmc: 'مسح', sg: 'اقتراحات', sgd: 'المطوّر', sgp: 'عدد المشاريع: {k}', mpk: 'عدد المشاريع في هذا العرض: {k}', mpa: 'مشاريع أخرى في {m} بلا عنوان منشور: {k}', mpo: 'افتح', mpm: 'اعرض المزيد', mpe: 'تعذّر تحميل الخريطة. القائمة أدناه ما زالت تعمل.' }
+      cmp: 'قارن', cms: 'المحدد: {k}', cmg: 'قارن جنبًا إلى جنب', cmx: 'حتى 4 مشاريع', cmc: 'مسح', sg: 'اقتراحات', sgd: 'المطوّر', sgp: 'عدد المشاريع: {k}', mpk: 'عدد المشاريع في هذا العرض: {k}', mpa: 'مشاريع أخرى في {m} بلا عنوان منشور: {k}', mpo: 'افتح', mpm: 'اعرض المزيد', mpe: 'تعذّر تحميل الخريطة. القائمة أدناه ما زالت تعمل.' }
   };
   // n28b (14 Nov 2026): loading line of the calculator, empty map result and its reset
   var W2 = { en: { kld: 'Loading the taxes and fees…', mp0: 'No project matches these filters.', mpr: 'Clear filters' },
@@ -397,7 +404,7 @@ function client() {
   var LISTS = document.querySelector('[data-kx-lists]');
   if (LISTS && /\/projects\/?$/.test(location.pathname)) {
     var sel3 = [], bar = el('div', 'kcm'), bt = el('span', 'kcm-t'), go2 = el('a', 'kcm-g', f('cmg')), clr = el('button', 'kcm-c', f('cmc'));
-    try { var s0 = JSON.parse(sessionStorage.getItem('kb-cmp3') || '[]'); if (Array.isArray(s0)) sel3 = s0.filter(function (v) { return /^[a-z0-9-]{1,90}$/.test(v); }).slice(0, 3); } catch (e) {}
+    try { var s0 = JSON.parse(sessionStorage.getItem('kb-cmp3') || '[]'); if (Array.isArray(s0)) sel3 = s0.filter(function (v) { return /^[a-z0-9-]{1,90}$/.test(v); }).slice(0, 4); } catch (e) {}
     clr.type = 'button'; bar.hidden = true; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', f('cmp')); bar.appendChild(bt); bar.appendChild(go2); bar.appendChild(clr); document.body.appendChild(bar);
     var css = el('style'); css.textContent = '.kcmb{position:absolute;z-index:1;inset-inline-start:-10px;top:50%;margin-top:-22px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;cursor:pointer}[data-kx-lists] .lk li,.kf-out li{position:relative;padding-inline-start:34px}[data-kx-lists] .lk li>a::after,.kf-out li>a::after{content:"";position:absolute;inset:0}.kcm-on .mcta{display:none!important}body.kcm-on{padding-bottom:150px}.kcmb input{width:20px;height:20px;margin:0;cursor:pointer}.kcm{position:fixed;inset-inline:12px;bottom:12px;z-index:60;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;max-width:640px;margin:0 auto;padding:10px 14px;border-radius:14px;background:var(--ink,#17212B);color:#fff;box-shadow:0 12px 30px rgba(23,33,43,.3)}.kcm[hidden]{display:none}.kcm-t{font-weight:700}.kcm-g{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:10px;background:#fff;color:#17212B;font-weight:700;text-decoration:none}.kcm-g[aria-disabled=true]{opacity:.55;pointer-events:none}.kcm-c{min-height:44px;border:0;background:none;color:#fff;text-decoration:underline;font:inherit;cursor:pointer}';
     document.head.appendChild(css);
@@ -405,16 +412,16 @@ function client() {
     var refresh = function () {
       try { if (sel3.length) sessionStorage.setItem('kb-cmp3', JSON.stringify(sel3)); else sessionStorage.removeItem('kb-cmp3'); } catch (e) {}
       document.body.classList.toggle('kcm-on', sel3.length > 0);
-      bar.hidden = !sel3.length; bt.textContent = f('cms', { k: sel3.length }) + (sel3.length >= 3 ? ' · ' + f('cmx') : '');
+      bar.hidden = !sel3.length; bt.textContent = f('cms', { k: sel3.length }) + (sel3.length >= 4 ? ' · ' + f('cmx') : '');
       go2.href = PRE + '/compare/?p=' + sel3.join(','); go2.setAttribute('aria-disabled', sel3.length < 2 ? 'true' : 'false');
-      document.querySelectorAll('.kcmb input').forEach(function (i) { i.checked = sel3.indexOf(i.value) >= 0; i.disabled = !i.checked && sel3.length >= 3; i.parentNode.title = i.disabled ? f('cmx') : ''; });
+      document.querySelectorAll('.kcmb input').forEach(function (i) { i.checked = sel3.indexOf(i.value) >= 0; i.disabled = !i.checked && sel3.length >= 4; i.parentNode.title = i.disabled ? f('cmx') : ''; });
     };
     var add = function (li) {
       if (li.querySelector('.kcmb')) return; var a = li.querySelector('a[href*="/projects/"]'); if (!a) return; var s = slugOf(a); if (!s) return;
       var w = el('label', 'kcmb'), i = el('input'); i.type = 'checkbox'; i.value = s; i.setAttribute('aria-label', f('cmp') + ': ' + a.textContent); w.appendChild(i); li.insertBefore(w, li.firstChild);
-      if (sel3.indexOf(s) >= 0) i.checked = true; if (!i.checked && sel3.length >= 3) { i.disabled = true; w.title = f('cmx'); }
+      if (sel3.indexOf(s) >= 0) i.checked = true; if (!i.checked && sel3.length >= 4) { i.disabled = true; w.title = f('cmx'); }
     };
-    document.addEventListener('change', function (e) { var i = e.target; if (!i.closest || !i.closest('.kcmb')) return; var k = sel3.indexOf(i.value); if (i.checked && k < 0 && sel3.length < 3) sel3.push(i.value); if (!i.checked && k >= 0) sel3.splice(k, 1); refresh(); });
+    document.addEventListener('change', function (e) { var i = e.target; if (!i.closest || !i.closest('.kcmb')) return; var k = sel3.indexOf(i.value); if (i.checked && k < 0 && sel3.length < 4) sel3.push(i.value); if (!i.checked && k >= 0) sel3.splice(k, 1); refresh(); });
     clr.addEventListener('click', function () { sel3 = []; refresh(); });
     go2.addEventListener('click', function (e) { if (sel3.length < 2) e.preventDefault(); });   // aria-disabled alone does not stop Enter on a link
     bt.setAttribute('aria-live', 'polite');
@@ -571,7 +578,7 @@ export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
   if (p === '/k/u27.js') {
     const N = await import('./kbx_named.js'), v = N.U27_SRC_V;
-    const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS;
+    const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS + '\n' + (await import('./kbx_n30a.js')).LOADER;   // n30a: natural-language search, loaded on the home box and /projects/ only
     return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === v ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
   }
   if (p === '/api/v1/cost') {

@@ -48,6 +48,7 @@ let kwat = null; const KWAT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?watch\/lookalik
 let ke27 = null; const KE27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/report(?:\/|\.pdf)?|weekly(?:\/[a-z0-9-]{2,40})?\/?)$|^\/weekly\/(?:[a-z0-9-]{2,40}\/feed\.(?:atom|json)|sitemap\.xml)$|^\/api\/x\/e27\/(?:mail\/(?:review|delays)|signups|notices\/[A-Za-z0-9-]{3,20})\/?$/;   // n27e (batch 27): project report + PDF, weekly changes per place, mail previews, sign-ups, notices (keep equal to PATHS in kbx_e27.js)
 let ku27 = null; const KU27 = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;   // n27u (batch 27): client script of named pages, cost rows, map of all projects, full ticker lines (keep equal to PATHS in kbx_u27.js)
 let k30c = null; const K30C = /^\/k\/n30c-map\.js$|^\/api\/v1\/pin\/[A-Za-z0-9-]{3,20}$|^\/embed\/v2(?:\.js|\/[a-z0-9-]{1,90}\/?)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:prices\/history(?:\/[a-z0-9-]{2,60})?|watch\/lookalikes\/images|tools\/widget|engineering\/status)\/?$/;   // n30c (batch 30): map client, pin check, widget v2, price history by place, image reuse, engineering status (keep equal to PATHS in kbx_n30c.js)
+let kn30 = null; const KN30 = /^\/k\/n30a(?:-cr)?\.js$|^\/api\/v1\/slippage(?:\.csv)?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/contract-reader|methods\/handover-slippage|projects\/[a-z0-9-]{1,90}\/timeline)\/?$/;   // n30a (batch 30): NL search and slider script, contract reader, handover slippage, project timeline (keep equal to PATHS in kbx_n30a.js)
 let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
 let k29i = null; const K29I = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:countries|rankings)(?:\/[a-z0-9-]{2,60})?\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(?:russia|china|gulf))?\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;   // n29i (batch 29): translated market files, their sitemap, questions answered from data (keep equal to PATHS in kbx_n29i.js)
@@ -169,7 +170,7 @@ function kbHeaders(r, u) {
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
     .on('body', { element(e) { if (KB_CITE29.test(u.pathname)) e.append('<script nonce="' + nonce + '" src="/k/cite29.js?v=1" defer></script>', { html: true }); } })   // n29e: "Cite" buttons on report figures (item 74)
-    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
+    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } if (KB_SPEC_OK(u.pathname)) t.before(KB_SPEC.replace('{N}', nonce), { html: true }); }); } }).transform(out);
 }
 // n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
 // wants the genitive singular ("2 проекта") and after 1 (21, 31...) the nominative singular ("1 проект"). Left alone: 5 to 20, numbers
@@ -210,6 +211,18 @@ const KB_DSS_V = '2a099a898b';   // the ds.css version /k/ds-site.css was genera
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
+// n30a (batch 30, item 5): instant navigation. Speculation Rules: same-site pages are prefetched when the pointer rests on a link
+// (moderate eagerness: about 200 ms of hover, or touch start on phones), project pages are prerendered the same way; links with a query,
+// a fragment, a file extension, a download, a new tab, nofollow, and every action or account path (/check, /api, /x, /portal, /pay,
+// /book, login and confirm links) are never fetched ahead. Prefetch and prerender requests carry Sec-Purpose, so the usage counters
+// leave them out (kbx_n27a.js). View Transitions: a short cross-fade between same-site pages (none with reduced motion).
+const KB_SPEC_NO = "a[href*='?'],a[href*='#'],a[download],a[target=_blank],a[rel~=nofollow],a[href*='/api/'],a[href*='/check'],a[href*='/x/'],a[href*='/portal'],a[href*='/account'],a[href*='/acct'],a[href*='/admin'],a[href*='/login'],a[href*='/logout'],a[href*='/confirm'],a[href*='/unsubscribe'],a[href*='/pay'],a[href*='/book'],a[href*='/data/'],a[href*='/k/'],a[href*='/__'],a[href$='.pdf'],a[href$='.json'],a[href$='.csv'],a[href$='.ics'],a[href$='.xml'],a[href$='.txt'],a[href$='.atom'],a[href$='.md'],a[href$='.png'],a[href$='.jpg'],a[href$='.zip'],a[href$='.gif']";
+const KB_SPEC_PR = ['', '/es', '/de', '/fr', '/nl', '/ru', '/zh', '/ar'].map(l => "a[href^='" + l + "/projects/']").join(',');
+const KB_SPEC = '<script type="speculationrules" nonce="{N}">' + JSON.stringify({
+  prerender: [{ source: 'document', where: { and: [{ selector_matches: KB_SPEC_PR }, { not: { selector_matches: KB_SPEC_NO + ",a[href*='.'],a[href*='/changes/'],a[href*='/report'],a[href*='/timeline']" } }] }, eagerness: 'moderate' }],
+  prefetch: [{ source: 'document', where: { and: [{ href_matches: '/*' }, { not: { selector_matches: KB_SPEC_NO } }] }, eagerness: 'moderate' }] }) +
+  '</script><style id="kb-vt">@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:.18s}@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}</style>';
+const KB_SPEC_OK = p => !/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:check|portal|admin|account|acct|pay|book|login|confirm|x)(?:\/|$)/.test(p);
 const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','touchstart','scroll','wheel','mousemove'],o={passive:true,capture:true};" +
   "function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});var f;while((f=q.shift()))try{f()}catch(x){}}" +
   "ev.forEach(function(e){w.addEventListener(e,go,o)});function arm(){setTimeout(go,8000)}d.readyState==='complete'?arm():w.addEventListener('load',arm);" +
@@ -513,6 +526,13 @@ export default {
       const r = await k30c.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
+    // kolaboro.com (n30a, batch 30): /k/n30a.js, /k/n30a-cr.js, /api/v1/slippage[.csv], /[lang/]tools/contract-reader/, /[lang/]methods/handover-slippage/, /[lang/]projects/<slug>/timeline/ (see kbx_n30a.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN30.test(u.pathname)) {
+      if (!kn30) kn30 = await import('./kbx_n30a.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kn30.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     // kolaboro.com (n26u, batch 26): /compare/?p=<slugs> (named, 8 languages, noindex), /api/v1/facets, /api/v1/followers, /api/x/status/pages (see kbx_u26.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KU26.test(u.pathname)) {
       if (!ku26) ku26 = await import('./kbx_u26.js');
@@ -578,7 +598,9 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K29I.test(u.pathname)) {
       if (!k29i) k29i = await import('./kbx_n29i.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await k29i.page(req, u, env, ctx, shell);
+      let r = await k29i.page(req, u, env, ctx, shell);
+      const mm30 = /^\/(es|de|fr|nl|ru|zh|ar)\/m\/([^/.]{2,60})\/?$/.exec(u.pathname);   // n30a: handover slippage of the market, in the page language
+      if (r && mm30 && r.status === 200 && req.method === 'GET') { try { if (!kn30) kn30 = await import('./kbx_n30a.js'); const sb = await kn30.slipBlock(env, decodeURIComponent(mm30[2]), mm30[1]); if (sb) r = new HTMLRewriter().on('main', { element(e) { e.append(sb, { html: true }); } }).transform(r); } catch (e) {} }
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n27c, batch 27): /guides/buying-off-plan/[<place>/] in 8 languages and its sitemap (see kbx_buy.js)
@@ -672,6 +694,7 @@ export default {
       let sr1 = sr; try { if (!k29i) k29i = await import('./kbx_n29i.js'); const al = await k29i.mAlternates(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (al) sr1 = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(al, { html: true }); } }).transform(sr); } catch (e) {}   // n29i: hreflang to the translated market files
       let sr2 = sr1; try { if (!kg27) kg27 = await import('./kbx_g27.js'); const gh = await kg27.marketBlock(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (gh) sr2 = new HTMLRewriter().on('#mk-body', { element(e) { e.before(gh, { html: true }); } }).transform(sr1); } catch (e) {}
       try { const mk0 = decodeURIComponent(u.pathname.split('/')[2] || '').toLowerCase(); if (['dubai', 'bali', 'phuket', 'cyprus'].includes(mk0)) { if (!k29i) k29i = await import('./kbx_n29i.js'); const bl = k29i.buyerLinks('en', mk0); if (bl) sr2 = new HTMLRewriter().on('main', { element(e) { e.append(bl, { html: true }); } }).transform(sr2); } } catch (e) {}   // n29i: buyers by nationality
+      try { if (!kn30) kn30 = await import('./kbx_n30a.js'); const sb = await kn30.slipBlock(env, decodeURIComponent(u.pathname.split('/')[2] || ''), 'en'); if (sb) sr2 = new HTMLRewriter().on('main', { element(e) { e.append(sb, { html: true }); } }).transform(sr2); } catch (e) {}   // n30a: handover slippage of the market
       try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return h29Inject(req, u, env, new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2)); } catch (e) {}
       return h29Inject(req, u, env, sr2);
     }
