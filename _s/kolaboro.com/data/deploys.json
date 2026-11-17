@@ -1,6 +1,29 @@
 {
  "deploys": [
   {
+   "at": "2026-11-17T16:26:54Z",
+   "commit": "6069578b6516b6b8141b5457439b73aaee04ed56",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/44125624485",
+   "result": "pass",
+   "wait_s": 0,
+   "changes": [
+    "a60f6d79833c",
+    "743866533e9e",
+    "90101f12d476",
+    "4ee378c2bc28",
+    "9b122c37a4af",
+    "9880bf8bd0df",
+    "7a8f8ae30bf8",
+    "79db5b0e18e3",
+    "93e07449494e",
+    "3d2bd6beb301",
+    "594bf8487f6f"
+   ]
+  },
+  {
    "at": "2026-11-15T14:17:32Z",
    "commit": "475959b6c2e2b5f57a246433d316a07c319a447c",
    "checks_passed": 32,
@@ -2878,18 +2901,6 @@
     "afb62f6d9aee",
     "f29578322036"
    ]
-  },
-  {
-   "at": "2026-11-03T22:34:43Z",
-   "commit": "a07b62baf91ccf194e1e5423e62fdf0d1e08e32a",
-   "result": "not_deployed",
-   "checks_passed": 0,
-   "checks_total": 0,
-   "failed": [
-    "commit not live after 12 minutes"
-   ],
-   "wait_s": 729,
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41729872000"
   }
  ],
  "drills": [],
@@ -2897,83 +2908,83 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-15T14:17:32.138Z",
-  "commit": "475959b6c2e2b5f57a246433d316a07c319a447c",
+  "at": "2026-11-17T16:26:54.589Z",
+  "commit": "6069578b6516b6b8141b5457439b73aaee04ed56",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 475959b6c2e2"
+    "detail": "live 6069578b6516"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 84234 bytes"
+    "detail": "200, 86102 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 77519 bytes"
+    "detail": "200, 77467 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 40431 bytes"
+    "detail": "200, 42299 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 36080 bytes"
+    "detail": "200, 37948 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 117712 bytes"
+    "detail": "200, 120405 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 33733 bytes"
+    "detail": "200, 35601 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 49898 bytes"
+    "detail": "200, 52217 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 51911 bytes"
+    "detail": "200, 53945 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 97878 bytes"
+    "detail": "200, 103421 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 27859 bytes"
+    "detail": "200, 30199 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 54386 bytes"
+    "detail": "200, 56254 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 30522 bytes"
+    "detail": "200, 32390 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 28043 bytes"
+    "detail": "200, 29911 bytes"
    },
    {
     "name": "api /api/open/stats",
     "ok": true,
-    "detail": "1595 projects"
+    "detail": "1745 projects"
    },
    {
     "name": "api /api/open/projects",
@@ -2988,12 +2999,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 14"
+    "detail": "tree size 16"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":10,\"warn\":0,\"fail\":1,\"stale\":2,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":9,\"warn\":1,\"fail\":0,\"stale\":3,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -3062,7 +3073,7 @@
    }
   ]
  },
- "last_checked": "475959b6c2e2b5f57a246433d316a07c319a447c",
- "last_good": "475959b6c2e2b5f57a246433d316a07c319a447c",
- "updated": "2026-11-15T14:17:32Z"
+ "last_checked": "6069578b6516b6b8141b5457439b73aaee04ed56",
+ "last_good": "6069578b6516b6b8141b5457439b73aaee04ed56",
+ "updated": "2026-11-17T16:26:54Z"
 }
