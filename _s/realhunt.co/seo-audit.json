@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 3908,
-  "indexable": 3372,
+  "pages": 3902,
+  "indexable": 3366,
   "noindex": 536,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
-  "title_over_60": 1126,
+  "title_over_60": 1125,
   "desc_over_155": 0,
   "desc_under_120": 70,
   "desc_out_of_range": 70,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3354,
+  "pages_with_hreflang": 3348,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3045,
-  "redirects": 1161,
-  "moved_stubs": 224
+  "with_lastmod": 3039,
+  "redirects": 1167,
+  "moved_stubs": 230
  },
  "failures": [],
  "groups": {
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1436,
+   "median_words": 1427,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 246,
-   "indexable": 246,
+   "pages": 243,
+   "indexable": 243,
    "noindex": 0,
    "median_words": 1485,
    "title_over_60": 6,
@@ -337,17 +337,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1754,
+   "median_words": 1739,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 246,
-   "indexable": 246,
+   "pages": 243,
+   "indexable": 243,
    "noindex": 0,
-   "median_words": 1753,
-   "title_over_60": 69,
+   "median_words": 1744,
+   "title_over_60": 68,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -481,7 +481,7 @@
    "pages": 192,
    "indexable": 192,
    "noindex": 0,
-   "median_words": 1639,
+   "median_words": 1634,
    "title_over_60": 21,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -706,7 +706,7 @@
    "pages": 192,
    "indexable": 192,
    "noindex": 0,
-   "median_words": 1441,
+   "median_words": 1438,
    "title_over_60": 1,
    "desc_out_of_range": 19,
    "inlinks_under_3": 0
@@ -967,7 +967,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3372,
+   "pages with JSON-LD changed": 3366,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 591,
    "Article: author, date, headline or image missing": 52
@@ -1123,7 +1123,7 @@
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
    "/deal/DbA4_hKEThx",
-   "... 1066 more"
+   "... 1065 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1131,7 +1131,7 @@
   ]
  },
  "spanish": {
-  "twins": 978,
+  "twins": 975,
   "groups": {
    "homes": {
     "pages": 591,
@@ -1142,9 +1142,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 454,
-    "twins": 454,
-    "words": 940169,
+    "pages": 451,
+    "twins": 451,
+    "words": 934291,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1175,10 +1175,10 @@
  },
  "tech": {
   "summary": {
-   "checked": 3908,
-   "indexable": 3372,
+   "checked": 3902,
+   "indexable": 3366,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 5,
    "external_link_hosts": 314,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1186,6 +1186,7 @@
    "year_in_title": 2,
    "near_identical_pages": 518,
    "region_used_as_country": 2,
+   "title_changed_twice_in_28_days": 5,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1264,12 +1265,19 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (295, from €7,400)",
+    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (54) · RealHunt",
+    "/cheap-houses/under-100000-dollars-in-sweden: Cheap homes for sale in Sweden under $100,000 (31)",
+    "/cheap-houses/under-50000-pounds: Cheap homes for sale under £50,000 (135, from €7,400)",
+    "/es/cheap-houses/under-50000-pounds: Viviendas baratas en venta por menos de 50.000 libras (135)"
    ]
   },
   "depth": {
    "0": 2,
    "1": 126,
-   "2": 2913,
+   "2": 2907,
    "3": 331
   },
   "noindex": {
@@ -1359,7 +1367,7 @@
   "sitemap-main.xml": 17,
   "sitemap-countries.xml": 160,
   "sitemap-prices.xml": 47,
-  "sitemap-cheap-houses.xml": 247,
+  "sitemap-cheap-houses.xml": 244,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 34,
@@ -1371,7 +1379,7 @@
   "sitemap-es-main.xml": 14,
   "sitemap-es-countries.xml": 160,
   "sitemap-es-prices.xml": 47,
-  "sitemap-es-cheap-houses.xml": 247,
+  "sitemap-es-cheap-houses.xml": 244,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 33,
