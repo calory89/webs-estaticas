@@ -40,6 +40,30 @@
   ]
  },
  {
+  "a": "beach-walk-residences-4-imtiaz",
+  "b": "beach-walk-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-grand-imtiaz",
+  "b": "cove-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "binghatti-skyflame-1",
+  "b": "binghatti-skyflame-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "tw-almazara-gardens-istan",
   "b": "almazara-views-3",
   "market": "Costa del Sol",
@@ -80,6 +104,14 @@
   ]
  },
  {
+  "a": "time-square-8-phnom-penh",
+  "b": "time-square-10",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "trump-plaza-jeddah-dar-global",
   "b": "trump-tower-jeddah",
   "market": "Saudi Arabia",
@@ -96,11 +128,51 @@
   ]
  },
  {
+  "a": "bay-residences-dubai-islands-nakheel",
+  "b": "bay-villas-dubai-islands",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "oystra-richmind",
   "b": "fortune-bay-residences-topero",
   "market": "Ras Al Khaimah",
   "why": [
    "0 m apart"
+  ]
+ },
+ {
+  "a": "etherna-homes-ii-estepona-neinor",
+  "b": "etherna-homes",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "creative-homes-bulevar-iii-malaga-neinor",
+  "b": "creative-homes-bulevar",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "creative-homes-bulevar-iii-malaga-neinor",
+  "b": "creative-homes-bulevar-ii",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "noba-homes-v-esplugues-neinor",
+  "b": "no-ba-homes-iv",
+  "market": "Spain",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -128,6 +200,14 @@
   ]
  },
  {
+  "a": "samana-greenfield-dubai",
+  "b": "samana-greenfield-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "samana-hills-south-dubai",
   "b": "samana-hills-south-3",
   "market": "Dubai",
@@ -138,6 +218,70 @@
  {
   "a": "cove-edition-6-dubai",
   "b": "cove-edition-5-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-6-dubai",
+  "b": "cove-edition-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-6-dubai",
+  "b": "cove-edition-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-6-dubai",
+  "b": "cove-edition-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-5-by-imtiaz",
+  "b": "cove-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-5-by-imtiaz",
+  "b": "cove-edition-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-5-by-imtiaz",
+  "b": "cove-edition-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-5-by-imtiaz",
+  "b": "cove-edition-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-5-by-imtiaz",
+  "b": "cove-edition-iii-by-imtiaz",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -165,6 +309,14 @@
   "market": "Dubai",
   "why": [
    "68 m apart"
+  ]
+ },
+ {
+  "a": "cove-boulevard-by-imtiaz",
+  "b": "cove-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -224,8 +376,24 @@
   ]
  },
  {
+  "a": "beach-walk-grand-2-by-imtiaz",
+  "b": "beach-walk-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "beach-walk-grand-by-imtiaz",
   "b": "beach-walk-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-grand-by-imtiaz",
+  "b": "beach-walk-2-by-imtiaz",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -264,6 +432,14 @@
   ]
  },
  {
+  "a": "samana-ivy-gardens-2",
+  "b": "samana-ivy-gardens",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "atrium-gardens-the-ellinikon-little-athens",
   "b": "trinity-gardens-the-ellinikon-little-athens",
   "market": "Greece",
@@ -296,6 +472,14 @@
   ]
  },
  {
+  "a": "sunset-bay-2-by-imtiaz",
+  "b": "cotier-house-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "126 m apart"
+  ]
+ },
+ {
   "a": "sunset-bay-3-by-imtiaz",
   "b": "sunset-bay-4-by-imtiaz",
   "market": "Dubai",
@@ -320,8 +504,32 @@
   ]
  },
  {
+  "a": "cotier-house-2-by-imtiaz",
+  "b": "cotier-house-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beach-walk-iii-by-imtiaz",
+  "b": "beach-walk-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "ege-yapi-gokturk",
   "b": "ege-yapi-beyoglu",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "ege-yapi-gokturk",
+  "b": "ege-yapi-sile",
   "market": "Istanbul",
   "why": [
    "similar name"
@@ -408,9 +616,154 @@
   ]
  },
  {
+  "a": "time-square-6",
+  "b": "time-square-10",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "time-square-11",
   "b": "time-square-7",
   "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-11",
+  "b": "time-square-10",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "time-square-7",
+  "b": "time-square-10",
+  "market": "Cambodia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-by-imtiaz",
+  "b": "cove-edition-2-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-by-imtiaz",
+  "b": "cove-edition-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-by-imtiaz",
+  "b": "cove-edition-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-2-by-imtiaz",
+  "b": "cove-edition-4-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-2-by-imtiaz",
+  "b": "cove-edition-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-2-by-imtiaz",
+  "b": "cove-edition-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-4-by-imtiaz",
+  "b": "cove-edition-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-4-by-imtiaz",
+  "b": "cove-edition-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "cove-edition-by-imtiaz",
+  "b": "cove-edition-iii-by-imtiaz",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "samana-avenue",
+  "b": "samana-barari-avenue",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "samana-ocean-pearl",
+  "b": "samana-ocean-pearl-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "samana-south-haven",
+  "b": "samana-south-haven-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "samana-waves",
+  "b": "samana-waves-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "creative-homes-bulevar",
+  "b": "creative-homes-bulevar-ii",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name",
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "australy-aures",
+  "b": "australy-aures-ii",
+  "market": "Costa del Sol",
   "why": [
    "similar name"
   ]
