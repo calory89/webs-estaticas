@@ -1,41 +1,27 @@
 {
- "date": "2026-11-10T12:56:49Z",
+ "date": "2026-11-17T13:47:53Z",
  "tool": "OWASP ZAP baseline (passive scan, spider 3 minutes)",
  "target": "https://kolaboro.com",
  "zap_version": "2.17.0",
  "by_risk": {
-  "high": 1,
-  "medium": 7,
-  "low": 6,
+  "high": 0,
+  "medium": 5,
+  "low": 7,
   "informational": 9
  },
- "ok": false,
+ "ok": true,
  "alerts": [
-  {
-   "risk": "high",
-   "name": "PII Disclosure",
-   "instances": 12,
-   "cwe": "359",
-   "rule": "10062"
-  },
   {
    "risk": "medium",
    "name": "CSP: Wildcard Directive",
-   "instances": 3,
-   "cwe": "693",
-   "rule": "10055"
-  },
-  {
-   "risk": "medium",
-   "name": "CSP: script-src unsafe-inline",
-   "instances": 3,
+   "instances": 4,
    "cwe": "693",
    "rule": "10055"
   },
   {
    "risk": "medium",
    "name": "CSP: style-src unsafe-inline",
-   "instances": 3,
+   "instances": 4,
    "cwe": "693",
    "rule": "10055"
   },
@@ -49,13 +35,6 @@
   {
    "risk": "medium",
    "name": "Source Code Disclosure - Python",
-   "instances": 3,
-   "cwe": "540",
-   "rule": "10099"
-  },
-  {
-   "risk": "medium",
-   "name": "Source Code Disclosure - Shell Script",
    "instances": 1,
    "cwe": "540",
    "rule": "10099"
@@ -66,6 +45,13 @@
    "instances": 1,
    "cwe": "345",
    "rule": "90003"
+  },
+  {
+   "risk": "low",
+   "name": "CSP: Notices",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "10055"
   },
   {
    "risk": "low",
@@ -112,7 +98,7 @@
   {
    "risk": "informational",
    "name": "Authentication Request Identified",
-   "instances": 4,
+   "instances": 1,
    "cwe": "-1",
    "rule": "10111"
   },
@@ -133,7 +119,7 @@
   {
    "risk": "informational",
    "name": "Information Disclosure - Suspicious Comments",
-   "instances": 11,
+   "instances": 14,
    "cwe": "615",
    "rule": "10027"
   },
@@ -147,14 +133,14 @@
   {
    "risk": "informational",
    "name": "Re-examine Cache-control Directives",
-   "instances": 5,
+   "instances": 4,
    "cwe": "525",
    "rule": "10015"
   },
   {
    "risk": "informational",
    "name": "Retrieved from Cache",
-   "instances": 6,
+   "instances": 1,
    "cwe": "525",
    "rule": "10050"
   },
