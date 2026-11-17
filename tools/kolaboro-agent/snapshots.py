@@ -47,7 +47,7 @@ idx = {'version': 'kolaboro-snapshots-v1', 'file': '/data/named.json', 'licence'
        'head_rule': 'head = SHA-256 hex of the UTF-8 text "kolaboro-snapshot-v1|" + day + "|/data/named.json|" + sha256 + "|" + bytes + "|" + prev, where prev is the head of the entry before (the first entry uses "genesis")',
        'day_rule': 'one entry per UTC day on which the file was published: the last version published that day; a day whose file is byte-identical to the day before gets no entry',
        'copies': 'each copy is the gzip (RFC 1952, mtime 0) of the exact bytes; gunzip it and its SHA-256 equals sha256',
-       'note': 'Entries up to 2026-11-16 were rebuilt on 2026-11-17 from the version history of the published file; later entries are added when the file is published.',
+       'note': 'Entries up to 2026-11-16 were rebuilt on 2026-11-17 from the version history of the published file. Later entries are added by the snapshot script after a publish; until then /api/v1/snapshots shows a newer live file as a provisional tip.',
        'updated': entries[-1]['day'] if entries else None, 'count': len(entries), 'tip': entries[-1]['head'] if entries else None, 'entries': entries}
 os.makedirs(OUT, exist_ok=True)
 json.dump(idx, open(idx_path, 'w'), indent=1)
