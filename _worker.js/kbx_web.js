@@ -12,11 +12,13 @@
 //   GET /api/x/web/project/<ID>   health of the project's own website(s)
 //   GET /api/x/web/dev/<slug>     health of a developer's websites and the identifiers they share with other developers
 import { LOCALE } from './kbx_named_i18n.js';
+import { T as T30 } from './kbx_n30b_i18n.js';   // n30b: domain registration and TLS issuer lines
 
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/web\/(?:project\/[A-Za-z0-9-]{3,20}|dev\/[a-z0-9-]{1,90})$/;
 
 let MEMO = null;
+let FZ = {};   // n30b (batch 30): /data/web-forensics.json by domain: rg registration date (RDAP), iss TLS issuer, cb issued (certificate transparency)
 async function loadOne(env, name) {
   const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && (sh.a || Date.now() - sh.t < 600000)) return sh.v;   // n20p: reuse the copy kbx_named.js already parsed (named.json is 3.9 MB)
   let r = null;
@@ -26,14 +28,15 @@ async function loadOne(env, name) {
 }
 export async function webData(env) {
   if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
-  const [health, links, named] = await Promise.all([loadOne(env, 'web-health.json'), loadOne(env, 'dev-links.json'), loadOne(env, 'named.json')]);
+  const [health, links, named, forensics] = await Promise.all([loadOne(env, 'web-health.json'), loadOne(env, 'dev-links.json'), loadOne(env, 'named.json'), loadOne(env, 'web-forensics.json')]);   // n30b: + domain registration and TLS issuer
+  FZ = (forensics && forensics.d) || {};
   const byDev = new Map();
   for (const g of ((links && links.groups) || [])) for (const s of g.dv || []) { if (!byDev.has(s)) byDev.set(s, []); byDev.get(s).push(g); }
   const domDev = new Map(); for (const [d, h] of Object.entries((health && health.d) || {})) domDev.set(d, h.dv);
   const devName = new Map(); const devDoms = new Map();
   for (const x of ((named && named.projects) || [])) if (x.dvs && x.dv) devName.set(x.dvs, x.dv);
   for (const [d, s] of domDev) { if (!devDoms.has(s)) devDoms.set(s, []); devDoms.get(s).push(d); }
-  const v = { health, links, byDev, devName, devDoms, named, v: ((health && health.generated_at) || '') + '/' + ((links && links.updated) || '') };
+  const v = { health, links, forensics, byDev, devName, devDoms, named, v: ((health && health.generated_at) || '') + '/' + ((links && links.updated) || '') };
   MEMO = { t: Date.now(), v }; return v;
 }
 
@@ -219,9 +222,18 @@ function siteFacts(health, d, h, lang) {
   else if (h.ce) { const n = daysTo(h.ce, today); F.push(li(n < 0 ? tt(lang, 'ce_past', { d: fdt(h.ce, lang) }) : n <= 30 ? tt(lang, 'ce_soon', { d: fdt(h.ce, lang), n }) : tt(lang, 'ce', { d: fdt(h.ce, lang) }), ct, tt(lang, 's_ct'))); }
   if (h.de) { const n = daysTo(h.de, today); F.push(li(n < 0 ? tt(lang, 'de_past', { d: fdt(h.de, lang) }) : n <= 60 ? tt(lang, 'de_soon', { d: fdt(h.de, lang), n }) : tt(lang, 'de', { d: fdt(h.de, lang) }), rd, tt(lang, 's_rdap'))); }
   if (h.lm && h.lm <= today) F.push(li(tt(lang, 'lm', { d: fdt(h.lm, lang) }), home, tt(lang, 's_home')));
+  F.push(...forensicLines(d, h, today, lang, rd));   // n30b
   if (h.sm) F.push(li(tt(lang, 'sm', { d: fdt(h.sm, lang) }), home + 'sitemap.xml', 'sitemap'));
   return '<ul class="fl">' + F.join('') + '</ul>' + (h.rb ? '' : strip(health, h, lang));
 }
+// n30b (batch 30): domain age from the registry RDAP and the issuer of the newest certificate in the certificate transparency logs
+function forensicLines(d, h, today, lang, rd) {
+  const z = FZ[d] || {}, L = T30[lang] || T30.en, F = [], rg = h.dr || z.rg, iss = h.ci || z.iss, cb = h.cb || z.cb;
+  if (rg && rg <= today) { const y = Math.floor((Date.parse(today) - Date.parse(rg)) / (365.25 * 864e5)); F.push(li(fill30(L.ws_reg, { d: fdt(rg, lang), y: y < 1 ? L.ws_m : y === 1 ? L.ws_y1 : fill30(L.ws_y, { n: y }), r: fdt(h.dr ? h.ck : (z.rr || today), lang) }), rd, tt(lang, 's_rdap'))); }
+  if (iss && cb) F.push(li(fill30(L.ws_iss, { i: iss, d: fdt(cb, lang), r: fdt(h.ci ? h.ck : (z.cr || today), lang) }), 'https://crt.sh/?q=' + encodeURIComponent(d), 'crt.sh'));
+  return F;
+}
+const fill30 = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
 const methodLine = (health, lang) => '<p class="k-xs">' + esc(tt(lang, 'upd', { d: fdt(health.updated, lang) })) + ' <a href="/data/web-health.json">' + esc(tt(lang, 'method')) + '</a>: ' + esc(lang !== 'en' && (S[lang] || {}).mth ? S[lang].mth : (health.method || '')) + '</p>';
 export function projectDomains(wd, x) {
   const H = (wd && wd.health && wd.health.d) || {};
@@ -243,6 +255,7 @@ export function webDevHealthHtml(wd, slug, lang) {
     return '<tr><td data-label="' + esc(th[0]) + '"><a class="kw-dom" href="https://' + esc(d) + '/" rel="nofollow noopener" target="_blank">' + esc(d) + '</a></td><td data-label="' + esc(th[1]) + '">' + esc(now) + '</td><td data-label="' + esc(th[2]) + '">' + esc(h.rb || w.n < 3 ? '-' : w.bad ? tt(lang, 't_bad', { k: w.bad, n: w.n }) : tt(lang, 'allok', { n: w.n })) + '</td><td data-label="' + esc(th[3]) + '">' + esc(ce) + '</td><td data-label="' + esc(th[4]) + '">' + esc(de) + '</td></tr>';
   }).join('');
   return WEB_CSS + '<p class="ki">' + esc(tt(lang, 'intro')) + '</p><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + th.map(x => '<th>' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+    (() => { const fz = doms.map(d => { const L = forensicLines(d, H[d], today, lang, 'https://client.rdap.org/?type=domain&object=' + encodeURIComponent(d)); return L.length ? '<li><b>' + esc(d) + '</b><ul class="fl">' + L.join('') + '</ul></li>' : ''; }).join(''); return fz ? '<ul class="kw-fz">' + fz + '</ul>' : ''; })() +   // n30b: registration date and certificate issuer per domain
     '<p class="k-xs">' + esc(tt(lang, 'th')[3]) + ': <a href="https://crt.sh/" rel="nofollow noopener" target="_blank">crt.sh</a>. ' + esc(tt(lang, 'th')[4]) + ': <a href="https://client.rdap.org/" rel="nofollow noopener" target="_blank">RDAP</a>.</p>' + methodLine(wd.health, lang);
 }
 export function webDevLinksHtml(wd, slug, lang) {

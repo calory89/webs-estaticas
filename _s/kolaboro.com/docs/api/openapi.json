@@ -18597,6 +18597,753 @@
      }
     }
    }
+  },
+  "/api/v1/changes": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "Every dated change since a moment (incremental sync)",
+    "description": "Oldest first: projects added, dates on record and their moves, changes seen on developer pages, register checks, sealed copies, satellite comparisons. Each change has a stable id. Keep the \"at\" of the last change you stored and call again with since=<that at>, or follow \"next\" while has_more is true. ETag and Last-Modified; If-None-Match or If-Modified-Since answer 304 when nothing is new.",
+    "operationId": "v1_changes",
+    "security": [],
+    "parameters": [
+     {
+      "name": "since",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "example": "2026-11-15",
+      "description": "YYYY-MM-DD or ISO 8601 date-time; changes strictly after it"
+     },
+     {
+      "name": "cursor",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "next_cursor of the previous page"
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "minimum": 1,
+       "maximum": 1000,
+       "default": 500
+      }
+     },
+     {
+      "name": "project",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "slug or id of one project"
+     },
+     {
+      "name": "market",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "market or country name"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       },
+       "Last-Modified": {
+        "description": "Time of the newest change; send If-Modified-Since to get 304.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "api": {
+           "type": "string",
+           "example": "kolaboro-changes-v1"
+          },
+          "count": {
+           "type": "integer"
+          },
+          "has_more": {
+           "type": "boolean"
+          },
+          "next_cursor": {
+           "type": [
+            "string",
+            "null"
+           ]
+          },
+          "next": {
+           "type": [
+            "string",
+            "null"
+           ]
+          },
+          "last_change_at": {
+           "type": "string"
+          },
+          "changes": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "at": {
+              "type": "string",
+              "format": "date-time"
+             },
+             "kind": {
+              "type": "string"
+             },
+             "project": {
+              "type": "object"
+             },
+             "title": {
+              "type": "string"
+             },
+             "text": {
+              "type": "string"
+             },
+             "source": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "url": {
+              "type": "string"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/changes/feed.json": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "The newest 100 changes as JSON Feed 1.1",
+    "description": "Same records as /api/v1/changes, newest first, in JSON Feed 1.1 for feed readers.",
+    "operationId": "v1_changes_feed",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       },
+       "Last-Modified": {
+        "description": "Time of the newest change; send If-Modified-Since to get 304.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/feed+json": {
+        "schema": {
+         "type": "object",
+         "properties": {}
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/projects/{slug}/certificate": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "Verification certificate of one project",
+    "description": "The facts on record as canonical JSON (keys sorted, no spaces) with their SHA-256, the SHA-256 of the dataset files they come from, the head of the daily snapshot chain and a link to the live check. signature.value is base64 Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the canonical JSON of \"certificate\" (public keys: /.well-known/kolaboro-keys.json); alg \"none\" means hash only. Not a verdict about the project and not a guarantee.",
+    "operationId": "v1_certificate",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "coco-hills"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "certificate": {
+           "type": "object",
+           "properties": {
+            "type": {
+             "type": "string",
+             "example": "kolaboro-project-certificate-v1"
+            },
+            "issued": {
+             "type": "string",
+             "format": "date"
+            },
+            "facts": {
+             "type": "object"
+            },
+            "facts_sha256": {
+             "type": "string"
+            },
+            "dataset": {
+             "type": "object"
+            },
+            "live_check": {
+             "type": "string"
+            }
+           }
+          },
+          "signature": {
+           "type": "object",
+           "properties": {
+            "alg": {
+             "type": "string",
+             "enum": [
+              "Ed25519",
+              "none"
+             ]
+            },
+            "kid": {
+             "type": "string"
+            },
+            "value": {
+             "type": "string"
+            },
+            "certificate_sha256": {
+             "type": "string"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/developers/{slug}/website": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "A developer's websites: daily health, certificate, domain registration",
+    "description": "Per domain: the daily homepage check (status, response time, 30-day history, TLS expiry, domain expiry, Last-Modified, newest sitemap date) and forensics: registration date and registrar from the registry RDAP, issuer and issue date of the newest unexpired certificate from the certificate transparency logs, each with the date it was read.",
+    "operationId": "v1_developer_website",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "coco-development-group",
+      "description": "Developer slug as in /developers/{slug}/"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {}
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/snapshots": {
+   "get": {
+    "tags": [
+     "Open data"
+    ],
+    "summary": "Daily dataset hash chain",
+    "description": "One entry per UTC day on which /data/named.json was published: SHA-256 and size of the exact bytes, the previous head and this head = SHA-256 of \"kolaboro-snapshot-v1|day|/data/named.json|sha256|bytes|prev\", and a gzip copy of that day's file. provisional_tip is the file served now when it is newer than the last entry. Signed in x-kolaboro-signature.",
+    "operationId": "v1_snapshots",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       },
+       "x-kolaboro-signature": {
+        "description": "base64 Ed25519 over 'kolaboro-sig-v1\\n' + SHA-256 hex of the body (when the signing key is configured)",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "x-kolaboro-key-id": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {}
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/data-quality": {
+   "get": {
+    "tags": [
+     "Open data"
+    ],
+    "summary": "Coverage and freshness of every field, by market",
+    "description": "Share of named projects with each field (with its source), days since each project was last checked, and the same by market (10+ projects). Computed from the published dataset; method in the answer.",
+    "operationId": "v1_data_quality",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {}
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
+  },
+  "/api/v1/openapi.json": {
+   "get": {
+    "tags": [
+     "Open data"
+    ],
+    "summary": "OpenAPI 3.1 description of API v1",
+    "description": "The /api/v1 part of this file, served with the v1 limits.",
+    "operationId": "v1_openapi",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit-Policy": {
+        "description": "IETF draft format: \"ip\";q=120;w=60",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "RateLimit": {
+        "description": "IETF draft format: \"ip\";r=<remaining>;t=<seconds to reset>",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {}
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified"
+     },
+     "429": {
+      "description": "Rate limited; see Retry-After"
+     }
+    }
+   }
   }
  },
  "components": {

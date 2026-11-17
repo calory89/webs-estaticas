@@ -145,7 +145,7 @@ async function rate(req, ctx, bucket, max) {   // per IP per minute: in-isolate 
   try { const p = caches.default.put(ck, new Response(String(n), { headers: { 'cache-control': 'max-age=120' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
   return { ok: n <= max, remaining: Math.max(0, max - n), retry: 60 - Math.floor(Date.now() / 1000) % 60 };
 }
-const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, HEAD, OPTIONS', 'access-control-allow-headers': 'if-none-match, accept', 'access-control-expose-headers': 'etag, x-ratelimit-limit, x-ratelimit-remaining, retry-after, last-modified', 'access-control-max-age': '86400' };
+const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, HEAD, OPTIONS', 'access-control-allow-headers': 'if-none-match, accept', 'access-control-expose-headers': 'etag, ratelimit, ratelimit-policy, x-ratelimit-limit, x-ratelimit-remaining, retry-after, last-modified', 'access-control-max-age': '86400' };
 async function sha16(s) { const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(d)].slice(0, 16).map(b => b.toString(16).padStart(2, '0')).join(''); }
 async function out(req, body, type, extra, maxAge) {   // body + strong ETag; 304 when If-None-Match matches
   const etag = '"' + await sha16(body) + '"';
@@ -169,7 +169,7 @@ export async function handle(req, u, env, ctx) {
   const fm = p.match(/^\/(projects|developers)\/([a-z0-9-]{1,90})\/feed\.(atom|json)$/);
   if (fm) return feed(req, N, ix, fm[1], fm[2], fm[3]);
   // API: rate limit, then answer
-  const rl = await rate(req, ctx, 'api9', 120), rh = { 'x-ratelimit-limit': '120;w=60', 'x-ratelimit-remaining': String(rl.remaining) };
+  const rl = await rate(req, ctx, 'api9', 120), rh = { 'x-ratelimit-limit': '120;w=60', 'x-ratelimit-remaining': String(rl.remaining), 'ratelimit-policy': '"ip";q=120;w=60', ratelimit: '"ip";r=' + rl.remaining + ';t=' + rl.retry };   // n30b: + IETF draft RateLimit headers
   if (!rl.ok) return jerr({ error: 'rate_limited', limit_per_minute: 120, retry_after_s: rl.retry }, 429, Object.assign(rh, { 'retry-after': String(rl.retry) }));
   // n21e: ?f=ids is the small id -> slug list site.js uses to point /p/<ID>/ links straight at the named page
   if (p === '/api/v1/search-index' && u.searchParams.get('f') === 'ids') { const ids = {}; for (const [id, x] of ix.byId) if (x && x.s) ids[id] = x.s; return out(req, JSON.stringify({ version: 'named-ids-1', ids }), JT, rh, 3600); }
@@ -233,7 +233,7 @@ function listProjects(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.up
 function listDevelopers(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.devs.size, developers: [...ix.devs.values()].map(v => ({ slug: v.s, name: v.n, projects: v.ids.length, api: ORIGIN + '/api/v1/developers/' + v.s })) }; }
 
 // ------------------------------------------------------------------------------------------------ feeds
-function events(N, ix, x) {
+export function events(N, ix, x) {   // n30b: exported for /api/v1/changes (kbx_n30b.js)
   const c = ix.caseBy.get(x.id) || {}, page = N.okHttp(x.url) ? N.fixU(x.url) : null, E = [], base = ORIGIN + '/projects/' + x.s + '/';
   const add = (d, key, title, text, src, anchor) => { const i = N.iso(d); if (!i || !N.cleanOk(title) || (text && !N.cleanOk(text))) return; let dt = i + 'T00:00:00Z'; if (/T\d/.test(String(d))) { const z = new Date(d); if (!isNaN(z)) dt = z.toISOString().replace(/\.\d{3}Z$/, 'Z'); } E.push({ d: dt, key: x.id + '/' + key, title, text: text || title, src: src || page, url: base + (anchor ? '#' + anchor : '') }); };
   if (x.ad) add(x.ad, 'added', 'Added to the projects Kolaboro tracks', 'Kolaboro started tracking ' + x.n + ' (' + [x.ar, x.mk, x.co].filter(Boolean).join(', ') + ').', page, '');

@@ -56,6 +56,7 @@ let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-l
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
 let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
 let k27a = null; const K27A = /^\/answers\/(?:place|developer)\/[a-z0-9-]{1,90}\.md$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\.csv$|^\/corrections\.(?:json|md)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?developers\/[a-z0-9-]{1,90}\/dashboard\/?$|^\/yc\/?$|^\/api\/open\/(?:usage|rv)\/?$/;   // n27a: keep equal to PATHS in kbx_n27a.js
+let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
 let kfa = null; const KFA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:handover\/overdue(?:\/[a-z0-9-]{2,60})?|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|areas(?:\/[a-z0-9-]{2,60}\/[a-z0-9-]{2,80})?|vs\/[a-z0-9-]{3,200}-vs-[a-z0-9-]{2,200})\/?$|^\/handover\/sitemap\.xml$/;   // n26s (batch 26): handover year and place, neighbourhoods, same-year comparisons (see kbx_facets.js)
@@ -415,6 +416,13 @@ export default {
     // kolaboro.com (b9a, batch 9): public named-facts API /api/v1/projects/<slug>, search index, Atom/JSON feeds, email watch (see kbx_follow.js)
     // kolaboro.com (b10b, batch 10): DID document for did:web:kolaboro.com, the issuer of Kolaboro's W3C verifiable credentials (see kbx_acct.js)
     if (host === 'kolaboro.com' && u.pathname === '/.well-known/did.json' && (req.method === 'GET' || req.method === 'HEAD')) { const ka = await import('./kbx_acct.js'); return ka.did(env); }
+    // kolaboro.com (n30b, batch 30): /data/snapshots/, /api/docs/, /engineering/data-quality/, /projects/<slug>/certificate/, /offline/, /manifest.webmanifest,
+    // /api/v1/{snapshots,openapi.json,data-quality,changes,changes/feed.json,projects/<slug>/certificate,developers/<slug>/website} (see kbx_n30b.js)
+    if (host === 'kolaboro.com' && KN30B.test(u.pathname)) {
+      if (!kn30b) kn30b = await import('./kbx_n30b.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn30b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
     // kolaboro.com (n27a, batch 27): answer files per place and developer, per-project CSV, /corrections.json, developer dashboards, /yc/, usage counters (see kbx_n27a.js)
     if (host === 'kolaboro.com' && K27A.test(u.pathname)) {
       if (!k27a) k27a = await import('./kbx_n27a.js');

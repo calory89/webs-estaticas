@@ -562,6 +562,9 @@
 <tr data-id="undescribed-seo-audit-json"><td><a href="#undescribed-seo-audit-json">seo-audit.json</a></td><td>none</td><td class="kd-age">7.1 h</td><td class="kd-st"><span class="kd-pill kd-na">no schedule</span></td></tr>
 </tbody></table></div></div></section>
 <section class="sec" id="machine"><div class="wrap"><h2>Machine-readable</h2><ul class="kd-ml">
+<li><a href="/data/snapshots/">/data/snapshots/</a>: one SHA-256 per day of the project dataset /data/named.json in a hash chain, with a gzip copy of each day's file and an in-browser verifier (<a href="/api/v1/snapshots">JSON</a>).</li>
+<li><a href="/api/v1/changes">/api/v1/changes?since=</a>: every dated change to tracked projects, oldest first, for incremental sync with ETag and Last-Modified; the newest 100 as a <a href="/api/v1/changes/feed.json">JSON Feed</a>.</li>
+<li><a href="/engineering/data-quality/">Data quality</a>: coverage of each field and freshness, by market.</li>
 <li><a href="/data/catalog.jsonld">/data/catalog.jsonld</a>: DCAT-AP catalog (JSON-LD) with one dcat:Dataset per dataset, distributions with byte size and SHA-256 (spdx:checksum), licence and update frequency (EU frequency vocabulary).</li>
 <li><a href="/data/catalog.json">/data/catalog.json</a>: the same catalog in plain JSON, with freshness and contract results.</li>
 <li><a href="/data/contracts.json">/data/contracts.json</a>: contract results per file and per API operation.</li>

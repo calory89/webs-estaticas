@@ -823,6 +823,8 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     }); }); } };
   function register() { return navigator.serviceWorker.register('/sw.js', { scope: '/' }); }
   if (canOff) caches.has(SC).then(function (h) { if (h) register().catch(function () {}); }).catch(function () {});   // keep the worker for people who saved something
+  // n30b (17 Nov 2026): installable app, offline copies of My projects and recent comparisons, offline banner in 8 languages (k/pwa.js, loaded when idle)
+  (function () { function go() { var s = D.createElement('script'); s.src = '/k/pwa.js?v=n30b1'; s.defer = true; D.head.appendChild(s); } if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 4000 }); else setTimeout(go, 2500); })();
   function assets() {
     var A = {}, add = function (u) { try { var x = new URL(u, location.href); if (x.origin !== location.origin) return; if (/^\/(api\/kb|api\/geo|api\/open\/log|cdn-cgi|__k)\b/.test(x.pathname) || /\.(mp4|pdf|zip)$/i.test(x.pathname)) return; A[norm(x.href)] = 1; } catch (e) {} };
     D.querySelectorAll('link[rel=stylesheet][href],script[src],link[rel=preload][href],link[rel=icon][href]').forEach(function (e) { add(e.href || e.src); });
