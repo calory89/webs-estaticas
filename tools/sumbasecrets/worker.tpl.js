@@ -48,6 +48,7 @@ header.top .w{display:flex;align-items:center;gap:16px;min-height:64px}
 .logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:24px;color:var(--ink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}.logo span{color:var(--teal)}
 nav.main{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}nav.main::-webkit-scrollbar{display:none}
 nav.main a{padding:10px 12px;border-radius:999px;text-decoration:none;color:var(--ink);font-size:15px;white-space:nowrap}nav.main a:hover,nav.main a.on{background:var(--bg)}
+@media(min-width:900px) and (max-width:1400px){nav.main{gap:0}nav.main a{padding:10px 9px;font-size:14.5px}}
 select.lang{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
 .hero{position:relative;color:#fff;background:#0b3b37}.hero img{width:100%;height:min(62vh,560px);object-fit:cover;opacity:.75}
 .hero .in{position:absolute;inset:auto 0 0 0;padding:32px 0;background:linear-gradient(transparent,rgba(0,0,0,.65))}
@@ -112,7 +113,8 @@ section.dark{background:#0f1714;color:#ece6d8}section.dark .lead{color:#a9b3ac}.
 .ph-in{position:absolute;left:0;right:0;bottom:44px}.ph-hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(40px,6.5vw,84px);line-height:1;letter-spacing:-.03em;margin:10px 0 8px;text-shadow:0 2px 30px rgba(0,0,0,.35)}.ph-sub{font-size:19px;max-width:60ch;opacity:.95;margin:0 0 16px}.ph-cr{position:absolute;right:12px;bottom:8px;font-size:11px;opacity:.75;margin:0}
 .crumbs.light,.crumbs.light a{color:rgba(255,255,255,.85)}
 .pl2{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;padding-top:34px;padding-bottom:30px}.pl2-side{position:relative}.pl2-side .qf{position:static;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:var(--shadow)}.pl2-side .qf:first-child{position:sticky;top:84px}
-.qf h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 10px}.qf dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0 0 12px;font-size:15px}.qf dt{color:var(--mute)}.qf dd{margin:0;font-weight:600}.cp{border:0;background:none;font:inherit;font-weight:600;color:var(--teal);cursor:pointer;padding:0}
+.qf h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 10px}
+.tlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px;margin:10px 0}.tlg label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:14px;min-width:0}.tlg input,.tlg select{font:inherit;font-weight:400;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:inherit;min-height:44px;width:100%;box-sizing:border-box}.tlo{font-size:17px;margin:10px 0;display:flex;flex-wrap:wrap;gap:6px 18px}.tlp{list-style:none;padding:0;columns:2 260px}.tlp li{break-inside:avoid;padding:6px 0}.tlp input,.tlq input{width:20px;height:20px;vertical-align:middle;margin-right:6px}.tlq{border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:10px 14px}.tlq legend{font-weight:700;padding:0 6px}.tlq label{display:block;padding:7px 0;cursor:pointer}.qf dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:0 0 12px;font-size:15px}.qf dt{color:var(--mute)}.qf dd{margin:0;font-weight:600}.cp{border:0;background:none;font:inherit;font-weight:600;color:var(--teal);cursor:pointer;padding:0}
 .qf .acts .btn{margin:4px 4px 0 0;padding:10px 14px;font-size:14px}.lead1 p{font-size:21px;line-height:1.55;font-family:Fraunces,Georgia,serif;font-weight:400}
 .gal2{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.gal2 button{border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:none}.gal2 img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .4s}.gal2 button:hover img{transform:scale(1.05)}.crs{font-size:12px;color:var(--mute)}
 .hs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.hs>*{scroll-snap-align:start}
@@ -211,7 +213,7 @@ function page(l, path, o) {
   const u = D.ui[l];
   const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}${path}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/en${path}">`;
   const nav = [["/secret-spots/", "★ " + u.secrets], ["/places/", u.places], ["/guides/", u.guides], ["/towns/", D.ui2[l].towns_t], ["/weather/", u.weather], ["/map/", "🗺️ " + u.map]]
-    .map(([p, t]) => `<a href="/${l}${p}"${p === path || (p !== "/" && path.startsWith(p.replace(/s\/$/, "/"))) ? ' class="on" aria-current="page"' : ""}>${esc(t)}</a>`).join("") + `<a href="${TIMES}/${D.tl[l]}/">${esc(u.news)} ↗</a>`;
+    .map(([p, t]) => `<a href="/${l}${p}"${p === path || (p !== "/" && path.startsWith(p.replace(/s\/$/, "/"))) ? ' class="on" aria-current="page"' : ""}>${esc(t)}</a>`).join("");
   const opts = L.map(x => `<option value="/${x}${path}"${x === l ? " selected" : ""}>${esc(D.lname[x])}</option>`).join("");
   const title = cut60(o.title ? (o.title.length <= 43 ? `${o.title} · Sumba Secrets` : o.title) : tpl(D.ui2[l].home_title, { y: String(D.built).slice(0, 4) })); o.desc = fixDesc(o.desc || u.hero_d, l);
   const ogimg = o.ogimgOwn || o.ogimg || (o.img ? img(o.img, 1280) : img("magnitude-6-1-earthquake-southwest-sumba", 1280));
@@ -224,7 +226,7 @@ ${o.leaflet ? '<link rel="stylesheet" href="/lib/leaflet.css"><link rel="preconn
 <style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body${(() => { const c = [o.home && path === "/" ? "home" : "", o.leaflet ? "hasmap" : ""].filter(Boolean).join(" "); return c ? ` class="${c}"` : ""; })()}><a class="skip" href="#main">${esc(D.ui2[l].skip)}</a>
 <div class="net"><div class="w"><b>${esc(u.network)}:</b><a href="${TIMES}/${D.tl[l]}/">The Sumba Times<span class="d"> · ${esc(u.times_d)}</span></a><a href="/${l}/"><b>Sumba Secrets</b><span class="d"> · ${esc(u.secrets_n)}</span></a></div></div>
 <header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
-<a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆<span class="bdg" hidden></span></a>${langPicker(l, path, false)}</div></header>
+<a class="ico" href="/${l}/tools/" aria-label="${esc(D.ui2[l].tl_t)}" title="${esc(D.ui2[l].tl_t)}">🧰</a><a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆<span class="bdg" hidden></span></a>${langPicker(l, path, false)}</div></header>
 <main id="main" tabindex="-1">${o.body}</main><nav class="bnav" aria-label="Mobile">${[["/", "🏝️", "Sumba"], ["/secret-spots/", "★", u.secrets], ["/guides/", "📖", u.guides], ["/map/", "🗺️", u.map], ["/saved/", "☆", D.ui2[l].saved]].map(([p, i, t]) => `<a href="/${l}${p}"${p === path ? ' class="on" aria-current="page"' : ""}><span>${i}</span><small>${esc(t)}</small>${p === "/saved/" ? '<i class="bdg" hidden></i>' : ""}</a>`).join("")}</nav><a class="fab-map" href="/${l}/map/" aria-label="${esc(u.map)}">🗺️ <span>${esc(u.map)}</span></a><button class="totop" aria-label="${esc(D.ui2[l].back_top)}" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 ${o.nonews ? "" : newsletterBox(l)}<footer><div class="w"><p>${D.towns.map(t => `<a href="/${l}/town/${t.s}/">${esc(t.n)}</a>`).join(" · ")} · <a href="https://happylowcost.com/" rel="noopener">✈ ${esc(D.ui2[l].flights)}</a> · <a href="/${l}/guide/itinerary-3-days/">${esc(D.ui2[l].itins)}</a> · <a href="/${l}/mamboro/">🏡 ${esc(NT(l).t)}</a></p><p>${esc(D.ui2[l].pop_guides)}: ${["sumba-travel-guide", "things-to-do-in-sumba", "best-beaches-in-sumba", "itinerary-7-days", "sumba-weather-by-month", "bali-to-sumba", "tambolaka-airport", "pasola-dates"].map(s => D.guides.find(g => g.s === s)).filter(Boolean).map(g => `<a href="/${l}/guide/${g.s}/">${esc(gtxt(g, l).t.split(":")[0])}</a>`).join(" · ")}</p><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p><p>${[["editorial-policy", "f_editorial"], ["contact", "f_contact"], ["corrections", "f_corr"], ["privacy-policy", "f_privacy"], ["use-our-maps", "f_use"], ["sumba-quick-answers", "f_quick"]].map(([s, k]) => `<a href="/${l}/guide/${s}/">${esc(D.ui2[l][k])}</a>`).join(" · ")}</p>
 <p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a> · <a href="/${l}/places/#tools">${esc(D.ui2[l].tools_t)}: KML · GPX · Embed</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
@@ -307,6 +309,50 @@ function listPage(l, path, title, lead, items, withMap) {
   return page(l, path, { home: true, title, desc: lead, body, leaflet: withMap, js: withMap ? mapJS(l, items, { fit: true }) : "" });
 }
 
+function toolsPage(l) {
+  const u = D.ui[l], u2 = D.ui2[l];
+  const pts = [].concat(D.airports.map(a => ["✈ " + a.n, a.ll]), D.towns.map(x => ["🏘 " + x.n, x.ll]), D.places.map(p => [CAT_ICON[p.c] + " " + P(p, l).n, p.ll]).sort((a, b) => a[0].localeCompare(b[0])));
+  const opts = pts.map((x, i) => `<option value="${i}">${esc(x[0])}</option>`).join("");
+  const S = k => esc(u2[k] || k);
+  const pack = ["tl_p1", "tl_p2", "tl_p3", "tl_p4", "tl_p5", "tl_p6", "tl_p7", "tl_p8", "tl_p9", "tl_p10", "tl_p11", "tl_p12"];
+  const quiz = [["tl_q1", ["tl_q1a", "tl_q1b", "tl_q1c"]], ["tl_q2", ["tl_q2a", "tl_q2b", "tl_q2c"]], ["tl_q3", ["tl_q3a", "tl_q3b", "tl_q3c"]], ["tl_q4", ["tl_q4a", "tl_q4b", "tl_q4c"]]];
+  const res = [["tl_r1", "/region/" + D.rslug.sbd + "/", "guide/best-beaches-in-sumba/"], ["tl_r2", "/region/" + D.rslug.sb + "/", "guide/traditional-villages-sumba/"], ["tl_r3", "/region/" + D.rslug.st + "/", "guide/central-sumba-guide/"], ["tl_r4", "/region/" + D.rslug.stim + "/", "guide/east-vs-west-sumba/"]];
+  const body = `<div class="w"><article class="pl"><div class="crumbs"><a href="/${l}/">Sumba Secrets</a> › ${S("tl_t")}</div><h1>🧰 ${S("tl_t")}</h1><p class="lead">${S("tl_d")}</p>
+<nav class="chips">${[["dist", "🚗", "tl_dist"], ["budget", "💰", "tl_budget"], ["fx", "💱", "tl_fx"], ["pack", "🎒", "tl_pack"], ["quiz", "🧭", "tl_quiz"], ["plan", "🤝", "tl_plan"], ["off", "📴", "tl_off"]].map(([a, i, k]) => `<a class="chip" href="#${a}">${i} ${S(k)}</a>`).join("")}</nav>
+<section class="qf" id="dist"><h2>🚗 ${S("tl_dist")}</h2><p>${S("tl_dist_d")}</p><div class="tlg"><label>${S("tl_from")}<select id="d1">${opts}</select></label><label>${S("tl_to")}<select id="d2">${opts}</select></label></div><p class="tlo" id="dout" aria-live="polite"></p><p class="note">${S("tl_dist_n")}</p></section>
+<section class="qf" id="budget"><h2>💰 ${S("tl_budget")}</h2><p>${S("tl_budget_d")}</p><div class="tlg">${[["b_days", "tl_days", 7], ["b_ppl", "tl_people", 2], ["b_car", "tl_car", ""], ["b_room", "tl_room", ""], ["b_food", "tl_food", ""], ["b_fly", "tl_fly", ""], ["b_other", "tl_other", ""]].map(([id, k, v]) => `<label>${S(k)}<input id="${id}" type="number" min="0" inputmode="decimal" value="${v}" placeholder="0"></label>`).join("")}<label>${S("tl_cur")}<select id="b_cur">${["IDR", "USD", "EUR", "AUD", "GBP", "SGD", "JPY", "CNY", "KRW"].map(c => `<option>${c}</option>`).join("")}</select></label></div><p class="tlo" id="bout" aria-live="polite"></p><p class="note">${S("tl_budget_n")}</p></section>
+<section class="qf" id="fx"><h2>💱 ${S("tl_fx")}</h2><div class="tlg"><label>${S("tl_amount")}<input id="fx_a" type="number" min="0" value="100000" inputmode="decimal"></label><label>${S("tl_cur")}<select id="fx_c">${["IDR", "USD", "EUR", "AUD", "GBP", "SGD", "JPY", "CNY", "KRW", "CHF", "NZD", "CAD", "RUB", "BRL"].map(c => `<option>${c}</option>`).join("")}</select></label></div><div class="tlo" id="fxout" aria-live="polite">…</div><p class="note" id="fxn">${S("tl_fx_n")}</p></section>
+<section class="qf" id="pack"><h2>🎒 ${S("tl_pack")}</h2><p>${S("tl_pack_d")}</p><ul class="tlp">${pack.map((k, i) => `<li><label><input type="checkbox" data-i="${i}"> ${S(k)}</label></li>`).join("")}</ul><p><a href="/${l}/guide/sumba-packing-list/">${S("tl_pack_more")} →</a></p></section>
+<section class="qf" id="quiz"><h2>🧭 ${S("tl_quiz")}</h2><p>${S("tl_quiz_d")}</p>${quiz.map(([q, as], i) => `<fieldset class="tlq"><legend>${i + 1}. ${S(q)}</legend>${as.map((a, j) => `<label><input type="radio" name="q${i}" value="${j}"> ${S(a)}</label>`).join("")}</fieldset>`).join("")}<p><button class="btn" id="qbtn" type="button">${S("tl_quiz_go")}</button></p><div class="tlo" id="qout" aria-live="polite"></div><template id="qres">${res.map(([k, r, g]) => `<div><p><b>${S(k)}</b></p><p><a class="btn alt2" href="/${l}${r}">🗺️ ${S("tl_see")}</a> <a class="btn alt2" href="/${l}/${g}">📖 ${S("tl_read")}</a></p></div>`).join("")}</template></section>
+<section class="qf" id="plan"><h2>🤝 ${S("tl_plan")}</h2><p>${S("tl_plan_d")}</p><form id="pf" class="tlg" onsubmit="return false"><label>${S("tl_name")}<input name="n" autocomplete="name"></label><label>Email<input name="e" type="email" required autocomplete="email"></label><label>${S("tl_when")}<input name="d" placeholder="2027-05"></label><label>${S("tl_people")}<input name="p" type="number" min="1" value="2"></label><label style="grid-column:1/-1">${S("tl_int")}<input name="i" placeholder="${S("tl_int_ph")}"></label><label style="grid-column:1/-1">${S("tl_msg")}<textarea name="t" rows="4" style="font:inherit;padding:10px;border:1px solid var(--line);border-radius:10px"></textarea></label><p style="grid-column:1/-1;margin:0"><button class="btn" type="submit">✉️ ${S("tl_send")}</button></p></form><p class="tlo" id="pout" aria-live="polite"></p><p class="note">${S("tl_plan_n")}</p></section>
+<section class="qf" id="off"><h2>📴 ${S("tl_off")}</h2><p>${S("tl_off_d")}</p><p><button class="btn" id="obtn" type="button">⬇️ ${S("tl_off_btn")}</button></p><p class="tlo" id="oout" aria-live="polite"></p><p class="note">${S("tl_off_n")} <a href="/sumba-places.gpx" download>GPX</a> · <a href="/sumba-places.kml" download>KML</a></p></section>
+</article></div><script type="application/json" id="tld">${JSON.stringify({ p: pts.map(x => x[1]), h: u2.u_h, m: u2.u_min, r: u2.tl_road, s: u2.tl_line, tot: u2.tl_total, pp: u2.tl_pp, pd: u2.tl_pd, ok: u2.tl_off_ok, err: u2.tl_off_err, sent: u2.tl_sent, bad: u2.tl_bad, fxu: u2.tl_fx_upd, l }).replace(/</g, "\\u003c")}</script>`;
+  const js = "var T=JSON.parse(document.getElementById('tld').textContent),$=function(i){return document.getElementById(i)};" +
+    "function km(p,q){var R=6371,t=function(x){return x*Math.PI/180},a=t(q[0]-p[0]),b=t(q[1]-p[1]),h=Math.sin(a/2)*Math.sin(a/2)+Math.cos(t(p[0]))*Math.cos(t(q[0]))*Math.sin(b/2)*Math.sin(b/2);return 2*R*Math.asin(Math.sqrt(h))}" +
+    "function dist(){var a=T.p[$('d1').value],b=T.p[$('d2').value],k=km(a,b),road=k*1.35,m=Math.max(15,Math.round((road/35*60+10)/15)*15),h=Math.floor(m/60),mm=m%60;$('dout').textContent=T.s+': '+Math.round(k)+' km · '+T.r+': ~'+(road<10?Math.max(1,Math.round(road)):Math.round(road/5)*5)+' km · ~'+(h?h+' '+T.h:'')+(h&&mm?' ':'')+(mm?mm+' '+T.m:'');try{history.replaceState(null,'','#dist='+$('d1').value+'-'+$('d2').value)}catch(e){}}" +
+    "var mh=location.hash.match(/dist=(\\d+)-(\\d+)/);var wk=[].findIndex.call($('d2').options,function(o){return /Weekuri/.test(o.text)});$('d1').selectedIndex=0;$('d2').selectedIndex=wk>0?wk:Math.min(4,T.p.length-1);if(mh){$('d1').value=mh[1];$('d2').value=mh[2]}$('d1').onchange=$('d2').onchange=dist;dist();" +
+    "var RATES=null;function fmt(v,c){try{return new Intl.NumberFormat(T.l,{style:'currency',currency:c,maximumFractionDigits:c==='IDR'||c==='JPY'||c==='KRW'?0:2}).format(v)}catch(e){return Math.round(v)+' '+c}}" +
+    "function N(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0}" +
+    "function bud(){var d=N('b_days')||1,p=N('b_ppl')||1,c=$('b_cur').value,tot=N('b_car')*d+N('b_room')*d+N('b_food')*d*p+N('b_fly')*p+N('b_other');var x='<b>'+T.tot+': '+fmt(tot,c)+'</b> · '+T.pp+': '+fmt(tot/p,c)+' · '+T.pd+': '+fmt(tot/p/d,c);if(RATES&&RATES[c]&&c!=='IDR')x+=' · ≈ '+fmt(tot/RATES[c],'IDR');if(RATES&&c==='IDR'&&RATES.EUR)x+=' · ≈ '+fmt(tot*RATES.EUR,'EUR')+' · '+fmt(tot*RATES.USD,'USD');$('bout').innerHTML=x;try{localStorage.setItem('ss_bud',JSON.stringify(['b_days','b_ppl','b_car','b_room','b_food','b_fly','b_other','b_cur'].map(function(i){return $(i).value})))}catch(e){}}" +
+    "try{var sv=JSON.parse(localStorage.getItem('ss_bud')||'null');if(sv)['b_days','b_ppl','b_car','b_room','b_food','b_fly','b_other','b_cur'].forEach(function(i,j){if(sv[j]!=null)$(i).value=sv[j]})}catch(e){}" +
+    "document.querySelectorAll('#budget input,#budget select').forEach(function(e){e.oninput=e.onchange=bud});bud();" +
+    "function fx(){if(!RATES){return}var a=parseFloat($('fx_a').value)||0,c=$('fx_c').value,idr=c==='IDR'?a:a/RATES[c];var L=['IDR','USD','EUR','AUD','GBP','SGD','JPY','CNY','KRW'].filter(function(x){return x!==c});$('fxout').innerHTML=L.map(function(x){return '<div><b>'+fmt(x==='IDR'?idr:idr*RATES[x],x)+'</b></div>'}).join('')}" +
+    "$('fx_a').oninput=$('fx_c').onchange=fx;fetch('/api/fx').then(function(r){return r.json()}).then(function(j){if(j&&j.rates){RATES=j.rates;if(j.t)$('fxn').textContent+=' '+T.fxu+': '+j.t;fx();bud()}else $('fxout').textContent='–'}).catch(function(){$('fxout').textContent='–'});" +
+    "var pk={};try{pk=JSON.parse(localStorage.getItem('ss_pack')||'{}')}catch(e){}document.querySelectorAll('.tlp input').forEach(function(c){c.checked=!!pk[c.dataset.i];c.onchange=function(){pk[c.dataset.i]=c.checked;try{localStorage.setItem('ss_pack',JSON.stringify(pk))}catch(e){}}});" +
+    "$('qbtn').onclick=function(){var sc=[0,0,0,0];for(var i=0;i<4;i++){var r=document.querySelector('input[name=q'+i+']:checked');if(!r)continue;var v=+r.value;var M=[[0,1,3],[0,2,3],[0,1,3],[2,1,0]][i];sc[M[v]]+=2}var b=sc.indexOf(Math.max.apply(null,sc));var tp=document.getElementById('qres').content.children[b];$('qout').innerHTML='';$('qout').appendChild(tp.cloneNode(true));try{gtag('event','quiz_done',{r:b})}catch(e){}};" +
+    "$('pf').onsubmit=function(){var f=$('pf'),o={l:T.l};['n','e','d','p','i','t'].forEach(function(k){o[k]=f.elements[k].value});if(!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(o.e)){$('pout').textContent=T.bad;return false}$('pout').textContent='…';fetch('/api/plan',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(o)}).then(function(r){return r.json()}).then(function(j){if(j.ok){$('pout').textContent='✅ '+T.sent;f.reset();try{gtag('event','generate_lead',{form:'plan'})}catch(e){}}else $('pout').textContent=T.bad}).catch(function(){$('pout').textContent=T.bad});return false};" +
+    "$('obtn').onclick=function(){if(!('caches' in window)){$('oout').textContent=T.err;return}var L=['/'+T.l+'/','/'+T.l+'/map/','/'+T.l+'/places/','/'+T.l+'/guides/','/'+T.l+'/guide/sumba-practical-tips/','/'+T.l+'/guide/getting-around-sumba/','/'+T.l+'/guide/indonesian-phrases-sumba/','/'+T.l+'/guide/health-safety/','/'+T.l+'/saved/','/lib/leaflet.js','/lib/leaflet.css'];$('oout').textContent='…';caches.open('ss-v4').then(function(c){return Promise.all(L.map(function(u){return fetch(u).then(function(r){if(r.ok)return c.put(u,r)}).catch(function(){})}))}).then(function(){$('oout').textContent='✅ '+T.ok+' ('+L.length+')'}).catch(function(){$('oout').textContent=T.err})};";
+  return page(l, "/tools/", { title: u2.tl_title, desc: u2.tl_d, body, js, ld: [{ "@context": "https://schema.org", "@type": "WebApplication", name: u2.tl_title, url: `${BASE}/${l}/tools/`, applicationCategory: "TravelApplication", operatingSystem: "Any", inLanguage: l, offers: { "@type": "Offer", price: 0, priceCurrency: "USD" } }, crumbsLD([["Sumba Secrets", `/${l}/`], [u2.tl_t, `/${l}/tools/`]])] });
+}
+async function apiFx(ctx) {
+  const ck = new Request("https://sumbasecrets.com/__fx_v1");
+  const hit = await caches.default.match(ck); if (hit) return hit;
+  let body = '{"rates":null}';
+  try { const r = await fetch("https://open.er-api.com/v6/latest/IDR", { cf: { cacheTtl: 21600 } }); const j = await r.json(); if (j && j.rates) body = JSON.stringify({ rates: j.rates, t: (j.time_last_update_utc || "").slice(5, 16) }); } catch (e) {}
+  const res = new Response(body, { headers: { "content-type": "application/json", "cache-control": "public, max-age=21600" } });
+  if (body.length > 20) ctx.waitUntil(caches.default.put(ck, res.clone()));
+  return res;
+}
 function weatherPage(l) {
   const u = D.ui[l]; const g = D.guides[0]; const t = gtxt(g, l);
   const body = `<section><div class="w"><h1 class="sec" style="font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);margin:0">${esc(u.weather)} · Sumba</h1><p class="lead">${esc(u.weather_d)}</p>${wxBoxes(l, D.towns)}</div></section>
@@ -898,7 +944,7 @@ addEventListener('resize',function(){clearTimeout(window._rz);window._rz=setTime
 }
 
 function SITE_PATHS() {
-  return ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
+  return ["/", "/map/", "/mamboro/", "/secret-spots/", "/places/", "/weather/", "/tools/", "/guides/", "/about/"]
     .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.towns.map(t => `/town/${t.s}/`), ["/towns/"], D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`), MON_SLUGS.map(m => `/month/${m}/`), catRegionCombos().map(([c, r]) => `/${D.cslug[c]}/${D.rslug[r]}/`));
 }
 function sitemap(l) {
@@ -1052,6 +1098,15 @@ async function apiSubscribe(req, env) {
   await env.DATA.put(`sub:${b.e.toLowerCase()}`, JSON.stringify({ e: b.e.toLowerCase(), l: String(b.l || "").slice(0, 5), k: String(b.k || "").slice(0, 10), p: String(b.p || "").slice(0, 120), t: new Date().toISOString(), c: req.cf && req.cf.country }));
   return Response.json({ ok: true });
 }
+async function apiPlan(req, env) {
+  let b = {}; try { b = await req.json(); } catch (e) {}
+  if (!okEmail(b.e) || String(b.t || "").length > 2000) return Response.json({ ok: false }, { status: 400 });
+  if (!env.DATA) return Response.json({ ok: false }, { status: 503 });
+  const ip = req.headers.get("cf-connecting-ip") || ""; const rk = `rlp:${ip}:${new Date().toISOString().slice(0, 13)}`; const n = +(await env.DATA.get(rk) || 0); if (n > 5) return Response.json({ ok: false }, { status: 429 });
+  await env.DATA.put(rk, String(n + 1), { expirationTtl: 7200 });
+  await env.DATA.put(`plan:pending:${Date.now()}`, JSON.stringify({ n: String(b.n || "").slice(0, 80), e: b.e, d: String(b.d || "").slice(0, 60), p: String(b.p || "").slice(0, 10), i: String(b.i || "").slice(0, 200), t: String(b.t || ""), l: String(b.l || "").slice(0, 5), at: new Date().toISOString(), c: req.cf && req.cf.country }));
+  return Response.json({ ok: true });
+}
 async function apiTip(req, env) {
   let b = {}; try { b = await req.json(); } catch (e) {}
   const t = String(b.t || "").trim(); if (t.length < 5 || t.length > 1500 || !D.places.find(p => p.s === b.s)) return Response.json({ ok: false }, { status: 400 });
@@ -1139,6 +1194,7 @@ function route(req, url) {
   if (rest === "/secret-spots/") return [200, listPage(l, rest, u.secrets, u.secrets_d, D.places.filter(x => x.sec), true)];
   if (rest === "/places/") return [200, listPage(l, rest, u.places, u.map_d, D.places, true)];
   if (rest === "/weather/") return [200, weatherPage(l)];
+  if (rest === "/tools/") return [200, toolsPage(l)];
   if (rest === "/guides/") return [200, guidesPage(l)];
   if (rest === "/about/") return [200, aboutPage(l)];
   if (rest === "/towns/") return [200, townsPage(l)];
@@ -1169,6 +1225,7 @@ export default {
     if (p === "/lib/leaflet.css" || p === "/lib/leaflet.js") return libFile(p, ctx);
     { const lm = p.match(/^\/lib\/images\/([a-z0-9-]+\.(png|svg))$/); if (lm) return cached("lib-img-" + lm[1], 31536000, async () => { const o = await fetch(`https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/${lm[1]}`); return o.ok ? new Response(o.body, { headers: { "content-type": lm[2] === "svg" ? "image/svg+xml" : "image/png" } }) : o; }, ctx); }
     if (p === "/api/wx") return apiWx(ctx);
+    if (p === "/api/fx") return apiFx(ctx);
     if (p === "/BingSiteAuth.xml") return new Response('<?xml version="1.0"?>\n<users>\n\t<user>05B8339A86426AD018D8A40369B078EF</user>\n</users>', { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
     if (p === "/sumba-places.kml") return new Response(geoExport("kml"), { headers: { "content-type": "application/vnd.google-earth.kml+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.kml", "cache-control": "public, max-age=86400" } });
     if (p === "/sumba-places.gpx") return new Response(geoExport("gpx"), { headers: { "content-type": "application/gpx+xml; charset=utf-8", "content-disposition": "attachment; filename=sumba-places.gpx", "cache-control": "public, max-age=86400" } });
@@ -1184,6 +1241,7 @@ export default {
     if (p === "/sw.js") return new Response(SW, { headers: { "content-type": "application/javascript", "cache-control": "no-cache" } });
     if (p === "/api/subscribe" && req.method === "POST") return apiSubscribe(req, env);
     if (p === "/api/tip" && req.method === "POST") return apiTip(req, env);
+    if (p === "/api/plan" && req.method === "POST") return apiPlan(req, env);
     if (p === "/api/tr" && req.method === "POST") return apiTr(req, env);
     if (p === "/sumba-secrets-guide.pdf" || p.startsWith("/og/")) { const k = p === "/sumba-secrets-guide.pdf" ? "pdf:guide-en" : "og:" + p.slice(4).replace(/\.jpg$/, ""); const v = env.OG ? await env.OG.get(k, "arrayBuffer") : null;
       if (v) return new Response(v, { headers: { "content-type": p.endsWith(".pdf") ? "application/pdf" : "image/jpeg", "cache-control": "public, max-age=86400" } });
