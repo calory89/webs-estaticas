@@ -21,6 +21,7 @@ import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME, TC29, TCPL, TC
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { guideNext, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): next review (item 64), who is accountable (56)
 import { e29t } from './kbx_e29_i18n.js';
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = BUY_LANGS;
@@ -376,7 +377,7 @@ async function tcData(env) {
     if (String(x.mk || '').toLowerCase() === 'sumba' || COI.test(String(x.n || '')) || COI.test(String(x.dv || ''))) continue;
     const T = tcFor(x); if (!T) continue;
     const E = TC29.find(e => TC_SETS[e.k] === T); if (!E) continue;
-    const f = x.fx || {}, p = +f.price_min;
+    const f = x.fx || {}, p = regSale(x) ? 0 : +f.price_min;
     const d = by.get(E.s) || { E, T, n: 0, L: [] }; d.n++;
     if (p > 0 && String(f.currency || '').toUpperCase() === T.cur) d.L.push({ x, p });
     by.set(E.s, d);

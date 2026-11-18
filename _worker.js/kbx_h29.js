@@ -28,6 +28,7 @@ import { handoverOf, overdueOf, fd, esc, pre, lastmod, okHttp, host } from './kb
 import { mkName, placeName, coName } from './kbx_hdate.js';
 import { NT } from './kbx_buy_notes.js';
 import { H } from './kbx_h29_i18n.js';
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -80,7 +81,7 @@ async function load(env, name) {
 // price ranges per currency: round numbers near USD 250k, 500k and 1M (AED: 1M, 2M, 4M, so the UAE golden visa threshold is a bound)
 const BANDS = { USD: [250e3, 5e5, 1e6], EUR: [250e3, 5e5, 1e6], GBP: [250e3, 5e5, 1e6], AED: [1e6, 2e6, 4e6], SAR: [1e6, 2e6, 4e6], QAR: [1e6, 2e6, 4e6], THB: [5e6, 1e7, 2e7], IDR: [4e9, 8e9, 16e9], MYR: [1e6, 2e6, 4e6], PHP: [1e7, 25e6, 5e7], EGP: [1e7, 25e6, 5e7], MXN: [5e6, 1e7, 2e7], AUD: [5e5, 1e6, 2e6], CAD: [5e5, 1e6, 2e6], BRL: [1e6, 2e6, 4e6], OMR: [1e5, 2e5, 4e5], BHD: [1e5, 2e5, 4e5], JPY: [5e7, 1e8, 2e8], PLN: [5e5, 1e6, 2e6], LKR: [5e7, 1e8, 2e8], INR: [1e7, 2e7, 4e7] };
 const curOf = x => String((x.fx && x.fx.currency) || '').toUpperCase().trim();
-const pmin = x => (x.fx && +x.fx.price_min > 0) ? +x.fx.price_min : null;
+const pmin = x => (x.fx && +x.fx.price_min > 0 && !regSale(x)) ? +x.fx.price_min : null;
 const pmax = x => (x.fx && +x.fx.price_max > 0) ? +x.fx.price_max : null;
 
 // official sources (n: name, u: URL, d: date read). Law notes of kbx_buy_notes.js keep the sources and dates of kbx_buy.js.

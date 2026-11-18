@@ -24,6 +24,7 @@ import { E as E27 } from './kbx_e27_i18n.js';
 import { t27 } from './kbx_t27_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { methodLine, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): method version and date (item 58), who is accountable (56)
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -118,7 +119,7 @@ export async function trData(env) {
     // 7. deposit protection stated, 8. location precise enough for a pin, 11. price
     comp.deposit = ck.escrow === true ? { st: 'yes', src: page } : { st: 'no', src: page };
     comp.location = (isFinite(fx.lat) && isFinite(fx.lng) && fx.lat !== null && fx.lng !== null) ? { st: 'yes', src: page } : { st: 'no', src: page };
-    comp.price = fx.price_min > 0 ? { st: 'yes', src: page } : { st: 'no', src: page };
+    comp.price = fx.price_min > 0 && !regSale(x) ? { st: 'yes', src: page } : { st: 'no', src: page };
     // 9. website health (only websites we monitor; others are "not checked")
     const h = host(x.url), w = h && WH[h];
     if (w) {

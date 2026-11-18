@@ -12,6 +12,7 @@
 // UI parts exported for kbx_named.js: nextStep() (the "What next" block with compare, save, alert, ask and share), filterBar() for
 // /projects/, CSS and JS. Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
 import { t30, radarSvg } from './kbx_n30a.js';   // n30a (batch 30): timeline link, compare radar of the six checks
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -205,7 +206,7 @@ async function facets(env, lang) {
   for (const x of ix.P) {
     if (COI_RX.test(String(x.n || '')) || COI_RX.test(String(x.dv || ''))) continue;
     const ho = N.handoverOf(ix, x), r = tr && tr.rows.get(x.id);
-    const cc = ix.caseBy.get(x.id) || {}, f = x.fx || {}, pr = +f.price_min > 0 ? +f.price_min : null, cu = pr && f.currency ? String(f.currency).toUpperCase() : null;
+    const cc = ix.caseBy.get(x.id) || {}, f = x.fx || {}, pr = +f.price_min > 0 && !regSale(x) ? +f.price_min : null, cu = pr && f.currency ? String(f.currency).toUpperCase() : null;
     const pu = pr && cu ? (cu === 'USD' ? pr : fx && fx.r[cu] ? Math.round(pr / fx.r[cu]) : null) : null;
     p.push([x.s, x.n, x.dv || '', x.co || '', H.coName(x.co, lang) || x.co || '', x.mk || '', H.mkName(x.mk, lang), ho ? H.hyear(ho.d) : null, ho ? H.hkey(ho.d) : null, ho ? H.hdisp(ho.d, lang) : '',
       (x.pn || (cc.checks || {}).permit === 2) ? 1 : 0, r ? r.score : null, N.lastmod(ix, x), typesOf(f.unit_types), pr, cu, pu, cc.stage || x.st || null, x.ar && x.ar !== x.mk ? x.ar : null]);
@@ -307,7 +308,7 @@ async function comparePage(req, u, env, ctx, shell, lang) {
   const href = arr => P + '/compare/?p=' + arr.join(',');
   const col = L.map((x, i) => {
     const c = ix.caseBy.get(x.id) || {}, fx = x.fx || {}, ho = N.handoverOf(ix, x), t = trs[i];
-    const price = fx.price_min > 0 ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min) + (fx.price_max > fx.price_min ? ' – ' + nf(fx.price_max) : '') : null;
+    const RS = regSale(x), price = RS ? rsText(lang, RS) : fx.price_min > 0 ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min) + (fx.price_max > fx.price_min ? ' – ' + nf(fx.price_max) : '') : null;
     const rk = t && t.ranks && t.ranks.length ? t.ranks.map(r => r.ranked ? t26(lang, 'rk', { r: nf(r.r), m: nf(r.m), p: r.p }) : r.p + ': ' + t26(lang, 'unr')).join('; ') : null;
     const L6 = U27.light6({ tp: t, c, pn: x.pn, ho, ev: x.ev, ids: [] });   // n30a: the six checks, same rules as the project page
     return { x, c, L6, dev: x.dv, devHref: x.dvs && ix.devs.has(x.dvs) ? P + '/developers/' + x.dvs + '/' : null, loc: H.placeName([x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), lang),

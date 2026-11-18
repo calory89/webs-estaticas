@@ -31,6 +31,7 @@ import { FS } from './kbx_facets_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { TCS, TCPL, TCPL_T } from './kbx_buy_c29.js';   // n29h2: link to /tools/total-cost/<place>/
 import { PL as BPL } from './kbx_buy_i18n.js';
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 const TCSLUG = { ae: 'dubai', esA: 'costa-del-sol', pt: 'portugal', th: 'thailand', id: 'indonesia', uk: 'england' };
 
 const ORIGIN = 'https://kolaboro.com';
@@ -194,7 +195,7 @@ const rt = (r, lang) => typeof r.r === 'function' ? r.r(lang) : r.r;
 function costHtml(F, x, lang) {
   const T = tcFor(x), co = coName(x.co, lang) || x.co, fx = x.fx || {};
   if (!T) return { html: '<p class="ki">' + te(lang, 'co_none', { c: co }) + ' <a href="/tools/total-cost/">' + te(lang, 'co_tool') + '</a></p>', faq: null };
-  const p = fx.price_min > 0 && String(fx.currency || '').toUpperCase() === T.cur ? +fx.price_min : null;
+  const p = fx.price_min > 0 && !regSale(x) && String(fx.currency || '').toUpperCase() === T.cur ? +fx.price_min : null;
   let tot = 0; const used = new Set();
   const rows = T.rows.map(r => { const a = p ? r.f(p) : null; if (a != null) tot += a; return li('<b>' + te(lang, r.k) + ':</b> <bdi dir="ltr">' + esc(rt(r, lang)) + '</bdi>' + (a != null && !r.fixed ? ' · ' + money(lang, T.cur, Math.round(a)) : ''), used.has(r.s[0]) ? null : (used.add(r.s[0]), TC_SRC[r.s[0]][1]), TC_SRC[r.s[0]][0]);  }).join('');
   const L = [rows, T.part ? '<li>' + te(lang, T.part) + '</li>' : '', T.note ? '<li>' + te(lang, T.note) + '</li>' : '', '<li>' + te(lang, 'co_other') + '</li>'].join('');
@@ -280,7 +281,7 @@ function changedHtml(F, ix, x, lang, ph, paper, checked, nCh) {
 
 // ------------------------------------------------------------------------------------------------ alternatives and links (items 7, 8, 2, 3)
 function altHtml(F, ix, x, lang, nAlt) {
-  const fx = x.fx || {}, cur = String(fx.currency || '').toUpperCase(), p0 = +fx.price_min || 0, s0 = F.score(x.id);
+  const fx = x.fx || {}, cur = String(fx.currency || '').toUpperCase(), p0 = regSale(x) ? 0 : +fx.price_min || 0, s0 = F.score(x.id);   // n31d: asking prices only
   let L = [];
   if (p0 > 0 && cur && s0 != null) L = F.P.filter(o => o.id !== x.id && o.mk === x.mk && String((o.fx || {}).currency || '').toUpperCase() === cur && +(o.fx || {}).price_min > 0 && Math.abs(+(o.fx || {}).price_min - p0) / p0 <= 0.3 && (F.score(o.id) ?? -1) > s0)
     .sort((a, b) => F.score(b.id) - F.score(a.id) || Math.abs(+a.fx.price_min - p0) - Math.abs(+b.fx.price_min - p0)).slice(0, nAlt || 3);
@@ -447,7 +448,7 @@ function vsPage(F, k, lang) {
     ['vs_ho', x => { const h = handoverOf(ix, x); return h ? esc(fd(h.d, lang)) : te(lang, 'np'); }],
     ['vs_mv', x => { const h = handP(ix, x); return h && h.mv ? te(lang, 'mv_k', { k: nf(lang, h.mv), m: nf(lang, h.mm || 0) }) : h ? te(lang, 'mv_0') : '-'; }],
     ['vs_pn', x => x.pn ? '<bdi dir="ltr">' + esc(x.pn) + '</bdi>' : te(lang, 'np')],
-    ['vs_price', x => { const fx = x.fx || {}; return fx.price_min > 0 ? money(lang, fx.currency || '', +fx.price_min) : te(lang, 'np'); }],
+    ['vs_price', x => { const fx = x.fx || {}, R = regSale(x); if (R) return esc(rsText(lang, R)); return fx.price_min > 0 ? money(lang, fx.currency || '', +fx.price_min) : te(lang, 'np'); }],
     ['vs_sc', x => { const s = F.score(x.id); return s == null ? '-' : '<b>' + nf(lang, s) + '</b> / 100'; }],
     ['vs_dom', x => { const d = F.DA[x.id]; return d && d.site === 'own' && d.reg ? esc(fd(d.reg, lang)) : te(lang, 'np'); }],
     ['vs_chk', x => esc(fd(lastmod(ix, x), lang))]];

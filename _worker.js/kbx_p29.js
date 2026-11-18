@@ -13,6 +13,7 @@
 //     JSON-LD         alternateName with the name in Thai as printed in the official ONEP EIA register (item 10)
 //   Developer pages (devPage): a 40 to 60 word quick answer (item 15), filters on the projects table (item 7), company registers (14).
 // Strings in 8 languages (en es fr de nl ru zh ar). No em dashes.
+import { regSale } from './kbx_n31d_rs.js';   // n31d: registered sale prices are not asking prices
 import { NT } from './kbx_buy_notes.js';
 import { rulesFor } from './kbx_rules.js';
 import { words } from './kbx_named_qa.js';
@@ -187,7 +188,7 @@ export const localName = x => LOCAL[x.id] || null;
 
 // ------------------------------------------------------------------------------------------------ price per m2 against the place (item 6)
 const MED = new WeakMap();
-export const ppmOf = x => { const fx = x.fx || {}, p = +fx.price_min, s = +fx.size_min_m2; return p > 0 && s >= 15 && s <= 5000 && fx.currency ? p / s : null; };
+export const ppmOf = x => { if (regSale(x)) return null; const fx = x.fx || {}, p = +fx.price_min, s = +fx.size_min_m2; return p > 0 && s >= 15 && s <= 5000 && fx.currency ? p / s : null; };
 export function medians(ix) {
   let M = MED.get(ix); if (M) return M;
   const G = new Map();

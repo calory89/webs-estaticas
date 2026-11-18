@@ -22,6 +22,7 @@
 import * as N from './kbx_named.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E } from './kbx_e27_i18n.js';
+import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -144,7 +145,7 @@ async function reportData(env, x, lang) {
   const ix = await N.data(env), X = await extra(env), c = ix.caseBy.get(x.id) || {}, fx = x.fx || {}, page = N.okHttp(x.url) ? N.fixU(x.url) : null;
   let tp = null; try { const TR = await import('./kbx_tr.js'); tp = await TR.trProject(env, x.id, lang); } catch (e) { tp = null; }
   const ho = N.handoverOf(ix, x), NP = N.tr(lang, 'v_notpub');
-  const price = fx.price_min != null ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min, lang) + (fx.price_max != null && fx.price_max !== fx.price_min ? ' - ' + nf(fx.price_max, lang) : '') : null;
+  const RS = regSale(x), price = RS ? rsText(lang, RS) : fx.price_min != null ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min, lang) + (fx.price_max != null && fx.price_max !== fx.price_min ? ' - ' + nf(fx.price_max, lang) : '') : null;
   const F = [
     [N.tr(lang, 'k_dev'), x.dv || N.tr(lang, 'v_notstated'), page],
     [N.tr(lang, 'k_loc'), [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), page],
