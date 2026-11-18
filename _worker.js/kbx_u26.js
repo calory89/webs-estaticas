@@ -253,7 +253,22 @@ async function sweep(env) {
     }
     return { p, status, ok, ms: Date.now() - t0, bytes };
   }));
-  return { at, commit, ok: res.every(r => r.ok), up: res.filter(r => r.ok).length, n: res.length, pages: res };
+  // n31t (batch 31, item 251): the paying path, checked the way a buyer reaches it: the booking page links the PayPal checkout and that
+  // checkout page opens (a GET of the hosted payment page; nothing is paid, no order is created)
+  const flow = await checkoutFlow().catch(e => ({ ok: false, err: String(e && e.name || 'error') }));
+  return { at, commit, ok: res.every(r => r.ok) && flow.ok, up: res.filter(r => r.ok).length, n: res.length, pages: res, checkout: flow };
+}
+async function checkoutFlow() {
+  const t0 = Date.now(), H = { 'user-agent': 'kolaboro-keypages/1.0 (+https://kolaboro.com/status/)', accept: 'text/html' };
+  const b = await fetch(ORIGIN + '/book/', { headers: H, signal: AbortSignal.timeout(10000) }), bt = await b.text();
+  const m = /href="(https:\/\/www\.paypal\.com\/ncp\/payment\/[A-Z0-9]{6,20})"/.exec(bt);
+  if (b.status !== 200 || !m) return { ok: false, step: 'booking page', status: b.status, link: !!m, ms: Date.now() - t0 };
+  let st = 0;
+  for (let a = 0; a < 2 && !(st >= 200 && st < 400); a++) {
+    if (a) await new Promise(r => setTimeout(r, 800));
+    try { const r = await fetch(m[1], { headers: H, redirect: 'manual', signal: AbortSignal.timeout(10000) }); st = r.status; try { await r.body.cancel(); } catch (e) {} } catch (e) { st = 0; }
+  }
+  return { ok: st >= 200 && st < 400, step: 'checkout page', booking: b.status, checkout: st, url: m[1], ms: Date.now() - t0, note: 'Opens the hosted checkout only; nothing is paid.' };
 }
 async function sweepCached(env, ctx, force) {
   const commit = String(env.CF_PAGES_COMMIT_SHA || '').slice(0, 12) || 'unknown';

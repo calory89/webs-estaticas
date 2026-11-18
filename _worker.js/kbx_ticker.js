@@ -8,7 +8,8 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null };
-const SITE_V = 'n30b3'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
+const SITE_V = 'n31t1'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
@@ -60,7 +61,8 @@ export async function tickerHtml(env, lang) {
   if (items.length < 8) for (const d of ((S && S.days) || []).slice(-3).reverse()) for (const l of ((d.summary || {}).lines || []).slice(0, 4)) if (l && l.text) items.push({ date: d.date, kind: 'shipped', text: l.text });
   const seen = new Set(), out = [];
   items.sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  for (const x of items) { const k = x.text.toLowerCase().trim(); if (seen.has(k)) continue; seen.add(k); out.push(x); if (out.length >= 16) break; }
+  // n31t (batch 31, item 16): three lines only (the newest that exist in the page language); the full log is one click away on /updates/
+  for (const x of items) { const k = x.text.toLowerCase().trim(); if (seen.has(k)) continue; seen.add(k); if (lang !== 'en' && !(x.tl && x.tl[lang])) continue; out.push(x); if (out.length >= SHIP_N) break; }
   const L = LBL[lang];
   const up = (lang === 'en' ? '' : '/' + lang) + '/updates/#';
   const h = out.map(x => { const t = lang === 'en' ? x.text : x.tl && x.tl[lang]; if (!t) return '';
@@ -86,13 +88,18 @@ export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || (r.status !== 200 && r.status !== 404 && r.status !== 410) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
-    let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
+    let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref })
+      // n31t (batch 31, item 277): five entries at most in the main menu; "Live cases" stays in the footer (Data column)
+      .on('nav#menu > a[href$="/cases/"]', { element(e) { e.remove(); } });
     const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;
     rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } })
       // n27t (batch 27): the corrections log, contact (with response times) and how to cite, in the page language, in the footer's Trust column
       .on('footer a[href="/corrections/"]', { element(e) { const lp = lm ? '/' + pl : ''; e.setAttribute('href', lp + '/corrections/'); e.after('</li><li><a href="' + lp + '/contact/">' + esc(FT27[pl][0]) + '</a></li><li><a href="' + lp + '/cite/">' + esc(FT27[pl][1]) + '</a></li><li><a href="' + lp + '/editorial-policy/">' + esc(FT29[pl][0]) + '</a></li><li><a href="' + lp + '/how-we-work/">' + esc(FT29[pl][1]) + '</a>', { html: true }); } });
     if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
-    if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('.ship-v[lang="en"]', { element(e) { if (lm) e.setAttribute('lang', lm[1]); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
+    // n31t (batch 31, item 16): the second copy of the lines exists only for the endless scroll; it is now left empty in the HTML (no
+    // duplicate text for readers, screen readers or search engines) and site.js adds it, inert and hidden from assistive tech, only
+    // when the three lines are wider than the bar
+    if (h) rw = rw.on('.ship-g', { element(e) { if (e.getAttribute('aria-hidden') === 'true') { e.setInnerContent(''); e.setAttribute('inert', ''); } else e.setInnerContent(h, { html: true }); } }).on('.ship-v[lang="en"]', { element(e) { if (lm) e.setAttribute('lang', lm[1]); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
     return rw.transform(r);
   } catch (e) { return r; }
 }

@@ -140,7 +140,14 @@
   var shipT = document.getElementById('shipT');
   if (shipT) {
     // measured in the next frame, when the browser has laid the page out anyway (measuring here forced an extra layout of the whole page)
-    var shipDur = function () { requestAnimationFrame(function () { var g = shipT.firstElementChild; if (g) shipT.style.setProperty('--ship-dur', Math.max(30, Math.round(g.scrollWidth / 55)) + 's'); }); };
+    // n31t (batch 31, items 16 and 278): three lines; the inert copy for the endless scroll is added only when they are wider than
+    // the bar, so readers, screen readers and search engines get each line once (phones show one static line, see site.css)
+    var shipDur = function () { requestAnimationFrame(function () { var g = shipT.firstElementChild, v = shipT.closest('.ship-v') || shipT.parentNode; if (!g) return;
+      var c = g.nextElementSibling, wide = g.scrollWidth > (v.clientWidth || 0) + 4 && !(window.matchMedia && matchMedia('(max-width:640px)').matches);
+      if (wide && c && !c.firstChild) { c.innerHTML = g.innerHTML.replace(/<a /g, '<a tabindex="-1" '); c.setAttribute('aria-hidden', 'true'); c.setAttribute('inert', ''); }
+      if (!wide && c) c.innerHTML = '';
+      shipT.classList.toggle('ship-run', wide);
+      shipT.style.setProperty('--ship-dur', Math.max(30, Math.round(g.scrollWidth / 45)) + 's'); }); };
     shipDur();
     getData().then(function (d) {
       if (!d || !d.ships || !d.ships.length) return;
@@ -154,13 +161,13 @@
       var db = d.db || {}, cl = db.claims || {}, n = function (x) { return (x || 0).toLocaleString(SX && SL !== 'ar' ? LOC : 'en'); };
       var L5 = SX ? SX.h : ['LIVE', 'projects', 'countries', 'claims tested', 'contradicted'];
       var pw = function (w, k) { if (typeof w === 'string') return w; var c = 'other'; try { c = new Intl.PluralRules(LOC || 'en').select(k || 0); } catch (e) {} return w[{ one: 0, few: 1 }[c] != null ? { one: 0, few: 1 }[c] : 2]; };   // n25t: Russian 1 / 2-4 / 5+ forms
-      var h = '<span class="si"><em class="k-live">' + L5[0] + '</em><s>' + n(d.projects) + '</s> ' + pw(L5[1], d.projects) + ' &middot; <s>' + n(d.countries) + '</s> ' + pw(L5[2], d.countries) + ' &middot; <s>' + n(db.claims_total) + '</s> ' + pw(L5[3], db.claims_total) + ' &middot; <s>' + n(cl.contradicted) + '</s> ' + pw(L5[4], cl.contradicted) + '</span>';
+      var h = '', hn = 0;   // n31t (batch 31): the live counters line left the bar (the same numbers are on the home page and /database/)
       var PLm = window.KBL && KBL.pl, P2 = function (x) { return PLm ? x.split(', ').map(function (y) { return PLm[y] || y; }).join(SL === 'zh' ? '、' : SL === 'ar' ? '، ' : ', ') : x; };
       var tr = function (t) { if (!SX) return t; for (var i = 0; i < SX.r.length; i++) { var m = t.match(SX.r[i][0]); if (m) { if (m[2]) m[2] = P2(m[2]); return SX.r[i][1](m, n); } } return null; };
       // n27u: one short line per item (the worker sends the short form and the anchor of the full text on /updates/)
-      d.ships.slice(0, 16).forEach(function (x) { var tt = (x.tl && x.tl[SL]) || tr(x.t); if (tt == null) return; if (x.id) tt = (SX ? x.sl && x.sl[SL] : x.s) || tt; var u = x.id ? (SX ? '/' + SL : '') + '/updates/#' + x.id : x.u && SX && /^\/database\/?$/.test(x.u) ? '/' + SL + '/database/' : x.u; var inner = '<b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || T.feature) + '</em>' + esc(tt); h += u && /^\/[^\/]/.test(u) ? '<a class="si" href="' + esc(u) + '">' + inner + '</a>' : '<span class="si">' + inner + '</span>'; });
+      d.ships.slice(0, 24).forEach(function (x) { if (hn >= 3) return; var tt = (x.tl && x.tl[SL]) || tr(x.t); if (tt == null) return; hn++; if (x.id) tt = (SX ? x.sl && x.sl[SL] : x.s) || tt; var u = x.id ? (SX ? '/' + SL : '') + '/updates/#' + x.id : x.u && SX && /^\/database\/?$/.test(x.u) ? '/' + SL + '/database/' : x.u; var inner = '<b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || T.feature) + '</em>' + esc(tt); h += u && /^\/[^\/]/.test(u) ? '<a class="si" href="' + esc(u) + '">' + inner + '</a>' : '<span class="si">' + inner + '</span>'; });
       if (SX) { var sv = shipT.closest('.ship-v') || shipT; if (sv.getAttribute('lang') === 'en') sv.setAttribute('lang', SL); }
-      shipT.innerHTML = '<div class="ship-g">' + h + '</div><div class="ship-g" aria-hidden="true">' + h.replace(/<a /g, '<a tabindex="-1" ') + '</div>';
+      if (h) shipT.innerHTML = '<div class="ship-g">' + h + '</div><div class="ship-g" aria-hidden="true" inert></div>';
       shipDur();
     });
   }

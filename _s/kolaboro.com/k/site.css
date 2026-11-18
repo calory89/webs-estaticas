@@ -1385,3 +1385,11 @@ main details>summary{min-height:44px!important}
 /* n21e: keyboard focus was invisible on the main buttons (a later rule removed the ring) and faint on the big search box */
 .btn:focus-visible,.k-btn:focus-visible,.kbtn:focus-visible,.kmore:focus-visible{outline:2px solid #fff!important;outline-offset:0!important;box-shadow:0 0 0 2px #fff,0 0 0 5px var(--k-sea,#155C75)!important}
 .k-omni:focus-within{box-shadow:0 0 0 3px var(--k-sea,#155C75)!important}
+
+/* n31t (batch 31, items 16 and 278): three lines in the shipping bar; it scrolls only when they are wider than the bar (site.js adds
+   the inert copy then); on phones one static line, smaller, so the bar no longer takes the first look */
+.ship-t{animation:none}
+.ship-t.ship-run{animation:shipRun var(--ship-dur,60s) linear infinite}
+.ship-g:empty{display:none}
+@media (prefers-reduced-motion:reduce){.ship-t.ship-run{animation:none}}
+@media (max-width:640px){.ship{height:26px;font-size:11.5px}.ship-l{padding-left:12px}.ship-v{overflow:hidden}.ship-t{width:100%}.ship-g{width:100%;min-width:0}.ship-g .si~.si{display:none}.ship .si{display:block;min-height:0;line-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 12px 0 0}.ship .si em{display:none}.ship .si b{margin-right:6px}}
