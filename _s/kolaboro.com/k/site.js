@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=n28c1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
+  var V = { palette: '/k/palette.js?v=n31a1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -14,7 +14,26 @@
   function ev(name, params) {
     try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
     try { if (window.clarity) clarity('event', name); } catch (e) {}
+    try { fn(name, params); } catch (e) {}
   }
+  // n31a (18 Nov 2026): first-party funnel. One step name per browser session to /api/open/fn (counted per day at the edge, no cookie,
+  // id or address kept), and a project save once per browser to /api/open/sv. Shown on /funnel/.
+  var FN = { seo_check: 'project_cta', seo_book: 'project_cta', n31_cta: 'project_cta', cta_sticky: 'project_cta', desk_url: 'check_start', check_project: 'check_start', desk_done: 'check_done', generate_lead: 'lead' };
+  function fnSend(step) {
+    try { if (/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent) || sessionStorage.getItem('kb-fn-' + step)) return; sessionStorage.setItem('kb-fn-' + step, '1'); } catch (e) { return; }
+    try { if (!(navigator.sendBeacon && navigator.sendBeacon('/api/open/fn?s=' + step))) fetch('/api/open/fn?s=' + step, { method: 'POST', keepalive: true }); } catch (e) {}
+  }
+  window.kbFunnel = fnSend;
+  function fn(name, params) {
+    var st = FN[name];
+    if (st === 'project_cta' && !/^\/(?:[a-z]{2}\/)?projects\/[a-z0-9-]+\/$/.test(location.pathname)) return;
+    if (st) fnSend(st);
+    if (name === 'named_save' && typeof params === 'string' && /^[A-Za-z0-9-]{3,20}$/.test(params)) {
+      try { var k = 'kb-n31-sv', a = JSON.parse(localStorage.getItem(k) || '[]'); if (a.indexOf(params) >= 0) return; a.push(params); localStorage.setItem(k, JSON.stringify(a.slice(-500))); if (navigator.sendBeacon) navigator.sendBeacon('/api/open/sv?id=' + encodeURIComponent(params)); } catch (e) {}
+    }
+  }
+  if (/^\/book\/?$/.test(location.pathname)) fnSend('book');
+  if (/^\/thanks/.test(location.pathname)) fnSend('pay_return');
   window.kbEvent = ev;
 
   // nav shadow + mobile menu
@@ -304,6 +323,27 @@
     var quiz = form.querySelector('.quiz');
     var draftKey = 'kb-draft-' + (form.id || 'f');
     var lbl = function (n) { return form.querySelector('[data-l="' + n + '"]'); };
+    // n31a (18 Nov 2026, items 29 and 36): buyers send only an email and the project; name, place, phone, message, when and budget
+    // are optional and folded behind one button. Other roles keep the full form.
+    var QS = { en: ['More details (optional)', 'When do you plan to buy?', ['Within 3 months', '3 to 12 months', 'Later than 12 months', 'I already signed'], 'Budget', ['Under €200,000', '€200,000 to €500,000', '€500,000 to €1 million', 'Over €1 million'], 'Choose'],
+      es: ['Más detalles (opcional)', '¿Cuándo piensas comprar?', ['En menos de 3 meses', 'De 3 a 12 meses', 'En más de 12 meses', 'Ya firmé'], 'Presupuesto', ['Menos de 200.000 €', 'De 200.000 a 500.000 €', 'De 500.000 € a 1 millón', 'Más de 1 millón de €'], 'Elige'],
+      de: ['Weitere Angaben (optional)', 'Wann möchten Sie kaufen?', ['Innerhalb von 3 Monaten', 'In 3 bis 12 Monaten', 'In mehr als 12 Monaten', 'Ich habe schon unterschrieben'], 'Budget', ['Unter 200.000 €', '200.000 bis 500.000 €', '500.000 € bis 1 Million', 'Über 1 Million €'], 'Auswählen'],
+      fr: ['Plus de détails (facultatif)', 'Quand pensez-vous acheter ?', ['Dans les 3 mois', 'Dans 3 à 12 mois', 'Dans plus de 12 mois', 'J’ai déjà signé'], 'Budget', ['Moins de 200 000 €', '200 000 à 500 000 €', '500 000 € à 1 million', 'Plus de 1 million €'], 'Choisir'],
+      nl: ['Meer details (optioneel)', 'Wanneer wilt u kopen?', ['Binnen 3 maanden', 'Over 3 tot 12 maanden', 'Over meer dan 12 maanden', 'Ik heb al getekend'], 'Budget', ['Onder € 200.000', '€ 200.000 tot € 500.000', '€ 500.000 tot € 1 miljoen', 'Boven € 1 miljoen'], 'Kies'],
+      ru: ['Подробнее (необязательно)', 'Когда планируете покупку?', ['В течение 3 месяцев', 'Через 3–12 месяцев', 'Позже чем через 12 месяцев', 'Я уже подписал договор'], 'Бюджет', ['До 200 000 €', 'От 200 000 до 500 000 €', 'От 500 000 € до 1 млн', 'Более 1 млн €'], 'Выберите'],
+      zh: ['更多信息（选填）', '您打算何时购买？', ['3 个月内', '3 到 12 个月', '12 个月以后', '我已经签约'], '预算', ['低于 20 万欧元', '20 万至 50 万欧元', '50 万至 100 万欧元', '超过 100 万欧元'], '请选择'],
+      ar: ['تفاصيل إضافية (اختياري)', 'متى تنوي الشراء؟', ['خلال 3 أشهر', 'بعد 3 إلى 12 شهرًا', 'بعد أكثر من 12 شهرًا', 'وقّعت بالفعل'], 'الميزانية', ['أقل من 200,000 يورو', 'من 200,000 إلى 500,000 يورو', 'من 500,000 يورو إلى مليون', 'أكثر من مليون يورو'], 'اختر'] };
+    var QV = [['soon', '3-12m', '12m+', 'signed'], ['<200k', '200-500k', '500k-1m', '1m+']];
+    var Q = QS[(document.documentElement.lang || 'en').slice(0, 2)] || QS.en, qx = null, qt = null;
+    if (form.querySelector('.step2') && form.name && !form.querySelector('.kbq-x')) {
+      if (!document.getElementById('kbq-css')) { var qc = document.createElement('style'); qc.id = 'kbq-css'; qc.textContent = 'form.kb-short .step-next{display:none!important}form.kb-short .step2{display:grid}form.kb-short:not(.kb-more) label.f:has(> input[name=name]),form.kb-short:not(.kb-more) label.f:has(> input[name=place]),form.kb-short:not(.kb-more) label.f:has(> input[name=phone]),form.kb-short:not(.kb-more) label.f:has(> textarea[name=msg]),form.kb-short:not(.kb-more) .kbq-x{display:none}form:not(.kb-short) .kbq-x,form:not(.kb-short) .kbq-t,form.kb-more .kbq-t{display:none}.kbq-t{justify-self:start;min-height:44px;padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:600;text-decoration:underline;cursor:pointer}'; document.head.appendChild(qc); }
+      var sel = function (nm, lab, opts, vals) { return '<label class="f">' + lab + '<select name="' + nm + '"><option value="">' + Q[5] + '</option>' + opts.map(function (o, i) { return '<option value="' + vals[i] + '">' + o + '</option>'; }).join('') + '</select></label>'; };
+      qx = document.createElement('div'); qx.className = 'two kbq-x'; qx.innerHTML = sel('kb_when', Q[1], Q[2], QV[0]) + sel('kb_budget', Q[3], Q[4], QV[1]);
+      var pj = form.project && form.project.closest('.two'); if (pj) pj.parentNode.insertBefore(qx, pj.nextSibling);
+      qt = document.createElement('button'); qt.type = 'button'; qt.className = 'kbq-t'; qt.textContent = Q[0]; qt.setAttribute('aria-expanded', 'false');
+      var cs = form.querySelector('label.consent'); if (cs) cs.parentNode.insertBefore(qt, cs);
+      qt.addEventListener('click', function () { form.classList.add('kb-more'); qt.setAttribute('aria-expanded', 'true'); if (form.place) form.place.focus(); });
+    }
 
     function role() { var r = form.querySelector('input[name=role]:checked'); return r ? r.value : (form.dataset.defaultRole || 'buyer'); }
     function setRole(r) {
@@ -314,6 +354,7 @@
       if (lbl('msg')) lbl('msg').textContent = c[4];
       if (quiz) quiz.classList.toggle('on', r === 'agent');
       form.setAttribute('data-r', r);
+      if (qx) { form.classList.toggle('kb-short', r === 'buyer'); var s2 = form.querySelector('.step2'); if (r === 'buyer' && s2) s2.classList.add('on'); }
     }
     form.addEventListener('change', function (e) { if (e.target.name === 'role') setRole(e.target.value); });
     document.querySelectorAll('a[data-role],button[data-role]').forEach(function (a) { a.addEventListener('click', function () { setRole(a.dataset.role); }); });
@@ -355,24 +396,27 @@
       var f = new FormData(form), g = function (k) { return String(f.get(k) || '').trim(); };
       var r = role(), bad = null;
       ['name', 'email', 'place', 'msg'].forEach(function (k) { fieldErr(k, ''); });
-      if (!g('name')) { fieldErr('name', MSG.name); bad = bad || 'name'; }
+      var short = form.classList.contains('kb-short');
+      if (!g('name') && !short) { fieldErr('name', MSG.name); bad = bad || 'name'; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('email'))) { fieldErr('email', MSG.email); bad = bad || 'email'; }
-      if (g('place').length < 2) { fieldErr('place', MSG.place); bad = bad || 'place'; }
-      if (g('msg').length < 3) { fieldErr('msg', MSG.msg); bad = bad || 'msg'; }
+      if (g('place').length < 2 && !short) { fieldErr('place', MSG.place); bad = bad || 'place'; }
+      if (g('msg').length < 3 && !short) { fieldErr('msg', MSG.msg); bad = bad || 'msg'; }
       if (bad) { form[bad].focus(); err.textContent = MSG.check; return; }
       if (!f.get('consent')) { err.textContent = MSG.consent; return; }
       if (g('company') || Date.now() - started < 2500) { err.textContent = MSG.bot; return; }
 
       var extra = [];
       if (g('project')) extra.push('Project: ' + g('project'));
+      if (g('kb_when')) extra.push('When: ' + g('kb_when'));
+      if (g('kb_budget')) extra.push('Budget: ' + g('kb_budget'));
       if (r === 'agent' && quiz) ['q_live', 'q_bg', 'q_lang'].forEach(function (k) { if (g(k)) extra.push(k.replace('q_', '') + ': ' + g(k)); });
       var source = [form.dataset.source || 'yc-home', qs.get('utm_source'), qs.get('utm_campaign'), document.referrer && new URL(document.referrer).host].filter(Boolean).join(' | ').slice(0, 200);
       send.disabled = true; var label = send.textContent; send.textContent = MSG.sending;
       fetch(URL_, {
         method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ p_name: g('name'), p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
-          p_who: r + ' | ' + g('place'), p_bring: (g('msg') + (extra.length ? '\n\n' + extra.join('\n') : '')).slice(0, 4000),
-          p_learn: g('project').slice(0, 300), p_week: '', p_lang: 'en', p_source: source, p_plan: ('yc-' + r).slice(0, 20) })
+        body: JSON.stringify({ p_name: g('name') || 'Check request', p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
+          p_who: r + ' | ' + g('place'), p_bring: ((g('msg') || (short ? 'Short check request' : '')) + (extra.length ? '\n\n' + extra.join('\n') : '')).slice(0, 4000),
+          p_learn: g('project').slice(0, 300), p_week: g('kb_when'), p_lang: 'en', p_source: source, p_plan: ('yc-' + r).slice(0, 20) })
       }).then(function (res) { return res.json(); }).then(function (d) {
         if (d === 'ok') {
           form.classList.add('sent'); try { st && st.removeItem(draftKey); } catch (e) {}
@@ -538,7 +582,7 @@
   var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_event', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
   function log(kind, ref){ try { fetch(SB, { method:'POST', keepalive:true, headers:{ apikey:K, Authorization:'Bearer '+K, 'Content-Type':'application/json' }, body: JSON.stringify({ p_kind:kind, p_ref:ref||null, p_page:location.pathname }) }); } catch(e){} }
   window.kbLog = log;
-  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href*="paypal.com"]'); if (a) log('pay_click', a.getAttribute('data-ev') || a.textContent.trim().slice(0,60)); }, true);
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href*="paypal.com"]'); if (a) { log('pay_click', a.getAttribute('data-ev') || a.textContent.trim().slice(0,60)); try { if (window.kbFunnel) kbFunnel('pay_click'); } catch (x) {} } }, true);
   if (/^\/thanks/.test(location.pathname)) { try { if (!sessionStorage.getItem('kb-pr')) { sessionStorage.setItem('kb-pr','1'); log('paypal_return', location.search.slice(0,200)); } } catch(e){ log('paypal_return'); } }
 })();
 
