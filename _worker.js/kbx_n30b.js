@@ -341,7 +341,8 @@ const DOCS_JS = "(function(){var R=document.getElementById('ad');if(!R)return;va
 const MANIFEST = { name: 'Kolaboro: check off-plan property projects', short_name: 'Kolaboro', id: '/', start_url: '/', scope: '/', display: 'standalone', background_color: '#F6F6F3', theme_color: '#17212B', lang: 'en', dir: 'auto',
   description: 'Sourced facts, dates and official register checks for off-plan property projects. Projects you save and comparisons you open stay readable offline.',
   icons: [{ src: '/k/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, { src: '/k/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }, { src: '/k/icon-512m.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }, { src: '/k/favicon.svg', sizes: 'any', type: 'image/svg+xml' }],
-  shortcuts: [{ name: 'Projects', url: '/projects/' }, { name: 'My projects', url: '/watchlist/' }, { name: 'Compare', url: '/compare/' }] };
+  shortcuts: [{ name: 'Projects', url: '/projects/' }, { name: 'My projects', url: '/watchlist/' }, { name: 'Compare', url: '/compare/' }, { name: 'Find a listing', short_name: 'Find', url: '/tools/find-listing/' }, { name: 'Tools', url: '/tools/' }],   // n31e: two more shortcuts
+  categories: ['business', 'finance', 'utilities'], launch_handler: { client_mode: 'navigate-existing' }, prefer_related_applications: false };   // n31e (batch 31, item 166)
 async function offPage(req, u, env, ctx, shell, lang) {
   const L = T[lang], P = pre(lang), canonU = ORIGIN + P + '/offline/';
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h1>' + esc(L.of_h1) + '</h1><p class="lead">' + esc(L.of_lead) + '</p><p><button type="button" class="btn" id="of-retry">' + esc(L.of_retry) + '</button></p></div></section>' +
@@ -397,4 +398,4 @@ export async function handle(req, u, env, ctx, shell) {
   if ((m = RX.certP.exec(p))) return certPage(req, u, env, ctx, shell, m[1] || 'en', m[2]);
   return null;
 }
-export { canon, chain, quality, allChanges };
+export { canon, chain, quality, allChanges, certificate };   // certificate: n31e (batch 31) MCP tool get_certificate
