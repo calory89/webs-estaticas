@@ -1,4 +1,5 @@
 // kolaboro.com batch 31 (n31s, 18 Nov 2026): SEO and AI items of the 300 list. No model calls, no keys, nothing stored.
+// Strings: /data/n31s-i18n.json (moved out of the worker on 18 Nov 2026, Pages 25 MiB limit).
 //   GET /<lang>/tools/                      item 186: the /tools/ hub in 7 more languages (built from the English hub, so a tool
 //                                           added there shows up here at once, in English until it is translated)
 //   GET /<lang>/glossary/                   item 186: the glossary in 7 more languages
@@ -16,11 +17,20 @@
 //                                           "Follow changes" line; one dated, citable sentence under the h1 of handover and ranking hubs
 // Rules kept: facts with source and date; Sumba, Eco Beach City and Equinox never listed; 8 languages, Arabic RTL; no Review schema.
 import * as N from './kbx_named.js';
-import { S, TOOLS, GL } from './kbx_n31s_i18n.js';
 import { mkName } from './kbx_hdate.js';
 import { TR_PLACES } from './kbx_tr_places.js';
 
 const ORIGIN = 'https://kolaboro.com';
+// strings live in /data/n31s-i18n.json (static asset, read once per isolate) to keep the worker bundle small
+let S = { en: {} }, TOOLS = {}, GL = {}, I18N = false;
+async function loadI18n(env) {
+  if (I18N) return true;
+  let j = null;
+  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n31s-i18n.json')); if (r.ok) j = await r.json(); } catch (e) {}
+  if (!j) { try { const r = await fetch(ORIGIN + '/data/n31s-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) j = await r.json(); } catch (e) {} }
+  if (j && j.S) { S = j.S; TOOLS = j.TOOLS || {}; GL = j.GL || {}; I18N = true; }
+  return I18N;
+}
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -131,6 +141,7 @@ async function glossaryPage(u, env, shell, lang) {
 }
 // the English static /tools/ and /glossary/: hreflang to the 7 new languages, and the project examples on /glossary/
 export async function enStatic(u, r, env) {
+  if (!(await loadI18n(env))) return r;
   if (!r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
   const p = u.pathname, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '">';
   let rw = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(alts, { html: true }); } });
@@ -238,6 +249,7 @@ function placeOf(p) {   // { mks, tr } for a place hub path (language prefix rem
 }
 export async function inject(req, u, env, r) {
   if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+  if (!(await loadI18n(env))) return r;
   const lm = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), lang = lm[1] || 'en', p = '/' + lm[2].replace(/\/?$/, '/');
   if (/^\/developers\//.test(p)) return r;   // developer pages keep their own feeds
   let pl = null; try { pl = placeOf(p); } catch (e) {}
@@ -257,6 +269,7 @@ export async function inject(req, u, env, r) {
 // ------------------------------------------------------------------------------------------------ routes
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
+  if (!/\.md$/.test(p) && !(await loadI18n(env))) return null;
   let m = /^\/projects\/([a-z0-9-]{1,90})\.md$/.exec(p);
   if (m) {
     const C = await import('./kbx_cite.js'), au = new URL('/answers/' + m[1] + '.md', u);
