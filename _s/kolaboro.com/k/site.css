@@ -1400,19 +1400,3 @@ main details>summary{min-height:44px!important}
 :root[data-theme=dark] .lv-t em{color:#C9D0D6}
 :root[data-theme=dark] span.kvb{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);color:#E9E7E0}
 :root[data-theme=dark] .n30q button{color:#11181F}
-/* n31t (batch 31, item 284): on phones, running text and form fields are at least 16 px (1rem); bigger text keeps its size */
-@media (max-width:640px){main :is(p,li,dd,td,summary,label,blockquote){font-size:max(1rem,1em)}main :is(p.ki,p.klead,p.k-small,p.k-xs,p.kw-rp,p.fd-x,p.per,p.mk-note,p.kfc-fine,p.k-muted,li,dd,td,.perk){font-size:max(1rem,1em)!important}input,select,textarea{font-size:max(16px,1em)}}
-/* n31t (batch 31, item 294): country, ranking, place and list pages print cleanly: wide tables fit the page, maps and interactive
-   controls are left out, links stay readable (site.js opens folded sections before printing and closes them after) */
-@media print{
-  html,body{background:#fff!important;color:#000!important}
-  .ship,.k31-lo,.kcm,.kxp,.kmn,.lsw,.burger,.nav-cta-m,.leaflet-container,.kmap,canvas,video,iframe,button,[role="search"],form.news,.mcta,.totop{display:none!important}
-  main [class*="-tw"],main .tw,main [style*="overflow-x:auto"],main [style*="overflow:auto"]{overflow:visible!important;border:0!important}
-  main table{min-width:0!important;width:100%!important;font-size:9.5pt!important;border-collapse:collapse}
-  main th,main td{padding:4px 6px!important;border-bottom:1px solid #bbb!important}
-  main tr,main li,main figure,main .card,main section>h2{break-inside:avoid}
-  main h1,main h2,main h3{break-after:avoid;color:#000!important}
-  main a{color:#000!important;text-decoration:underline}
-  main details>summary{list-style:none}
-  @page{margin:14mm}
-}

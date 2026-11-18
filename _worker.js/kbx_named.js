@@ -122,13 +122,6 @@ function cleanName(n) {
 }
 let IDX = null;
 const RAWN = new WeakMap();
-let STALE = { t: 0, v: false };
-async function staleIsolate(env) {   // n31t: is a newer deployment live than the one running this code? (checked at most every 30 s)
-  if (Date.now() - STALE.t < 30000) return STALE.v;
-  let v = false; const mine = String((env && env.CF_PAGES_COMMIT_SHA) || '');
-  if (mine) { try { const r = await fetch(ORIGIN + '/api/open/build?i=' + Date.now(), { headers: { accept: 'application/json' }, cf: { cacheTtl: 0 }, signal: AbortSignal.timeout(3000) }); if (r.ok) { const c = String((await r.json()).commit || ''); v = !!c && c !== mine; } } catch (e) {} }
-  STALE = { t: Date.now(), v }; return v;
-}
 async function data(env) {
   const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(env, 'bali-cases.json')]);
   if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
@@ -1037,10 +1030,6 @@ export async function handle(req, u, env, ctx, shell) {
   const t2 = Date.now(), sh = await shP;
   if (!pg) {
     const nf = { title: tr(lang, 'nf_h') + ' | Kolaboro', desc: tr(lang, 'nf_p'), canon: ORIGIN + p, noindex: true, body: (await import('./kbx_404.js')).helpBody(lang, tr(lang, 'nf_h'), tr(lang, 'nf_p')), ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: tr(lang, 'nf_h') }, lastmod: '', alt: l => ORIGIN + pre(l) + '/projects/' };
-    // n31t (batch 31, item 264): right after a deploy, a request can reach an isolate that still runs the previous deployment, whose data
-    // does not have the newest projects yet (seen as a 404 on the first load of new pages). When this isolate's commit differs from the
-    // live one, an unknown page answers 503 with Retry-After instead of 404, so browsers and crawlers come back instead of dropping it.
-    if (key && await staleIsolate(env)) return new Response(await assemble(nf, lang, sh), { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'retry-after': '30', 'x-robots-tag': 'noindex' } });
     return new Response(await assemble(nf, lang, sh), { status: 404, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
   }
   const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
