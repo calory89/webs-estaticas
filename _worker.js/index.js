@@ -388,7 +388,7 @@ export default {
     // n31t (batch 31, item 273): maintenance mode. Off unless the environment setting KB_MAINT is "1": then every kolaboro.com page
     // answers with a short notice in its language (503, Retry-After); data files, APIs, scripts and /status/ keep working.
     if (env && env.KB_MAINT === '1' && (req.method === 'GET' || req.method === 'HEAD') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) {
-      try { if (!kn31t) kn31t = await import('./kbx_n31t.js'); const u0 = new URL(req.url); if (!kn31t.MAINT_SKIP.test(u0.pathname)) return kn31t.maintPage(u0); } catch (e) {}
+      try { if (!kn31t) kn31t = await import('./kbx_n31t.js'); const u0 = new URL(req.url); if (!kn31t.MAINT_SKIP.test(u0.pathname)) return await kn31t.maintPage(u0, env); } catch (e) {}
     }
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)

@@ -12,7 +12,15 @@
 //   GET /<l>/press/, /[l/]press/cases/, /[l/]press/data-journalism/, /<l>/press/monthly/   press pages in 8 languages (244, 249, 250)
 //   GET /api/v1/alerts                     what is wrong right now: key pages, checkout page, model spend over 1 USD a day, last deploy check (251, 271)
 //   countErrs()                            aggregate of the browser errors /api/kb/err already receives, counted in the edge cache (262)
-import { T } from './kbx_n31t_i18n.js';
+// strings in 8 languages live in /data/n31t-i18n.json (static asset, read once per isolate) to keep the worker bundle small
+let T = null;
+const MT = { en: ['Kolaboro is down for a short maintenance', 'We are updating the site. Please try again in about {m} minutes. The open data API and the status page keep working.', 'System status'] };
+async function loadT(env) {
+  if (T) return T;
+  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n31t-i18n.json')); if (r.ok) T = await r.json(); } catch (e) {}
+  if (!T) { try { const r = await fetch(ORIGIN + '/data/n31t-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) T = await r.json(); } catch (e) {} }
+  return T;
+}
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -20,7 +28,7 @@ const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', r
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const t = (l, k) => { const a = T[l] && T[l][k]; return a != null ? a : T.en[k]; };
+const t = (l, k) => { const a = T && T[l] && T[l][k]; return a != null ? a : T ? T.en[k] : ''; };
 const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
 const nf = (n, l, d) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { maximumFractionDigits: d == null ? 0 : d, numberingSystem: 'latn' }).format(n); } catch (e) { return String(n); } };
 const fd = (d, l) => { if (!d) return ''; try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(String(d).slice(0, 10) + 'T12:00:00Z')); } catch (e) { return String(d).slice(0, 10); } };
@@ -232,16 +240,17 @@ async function vdPage(shell, l) {
   return page(shell, l, { path: '/security/disclosure/', h1: t(l, 'vd_t'), lead: t(l, 'vd_l'), body: b, updated: '2026-11-18', crumb: [['Security', '/security/']] });
 }
 const MAINT_MIN = 15;
-export function maintPage(u) {   // the whole response when KB_MAINT=1: no database, no data files, no other module
+export async function maintPage(u, env) {
+  try { await loadT(env); } catch (e) {}   // the whole response when KB_MAINT=1: no database, no data files, no other module
   const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname), l = lm ? lm[1] : 'en';
-  const h = '<!doctype html><html lang="' + l + '"' + (l === 'ar' ? ' dir="rtl"' : '') + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>' + esc(t(l, 'mt_h')) + ' | Kolaboro</title>' +
+  const h = '<!doctype html><html lang="' + l + '"' + (l === 'ar' ? ' dir="rtl"' : '') + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>' + esc(t(l, 'mt_h') || MT.en[0]) + ' | Kolaboro</title>' +
     '<style>body{margin:0;font:17px/1.6 Archivo,system-ui,sans-serif;background:#F6F6F3;color:#17212B}main{max-width:620px;margin:12vh auto;padding:24px 16px}h1{font-size:1.7rem;line-height:1.25}a{color:#155C75}@media(prefers-color-scheme:dark){body{background:#11181F;color:#E9E7E0}a{color:#7CC4DD}}</style></head><body><main>' +
-    '<p><b>kolaboro</b></p><h1>' + esc(t(l, 'mt_h')) + '</h1><p>' + esc(fill(t(l, 'mt_p'), { m: MAINT_MIN })) + '</p><p><a href="/status/">' + esc(t(l, 'mt_s')) + '</a> · <a href="/api/open/stats">API</a></p></main></body></html>';
+    '<p><b>kolaboro</b></p><h1>' + esc(t(l, 'mt_h') || MT.en[0]) + '</h1><p>' + esc(fill(t(l, 'mt_p') || MT.en[1], { m: MAINT_MIN })) + '</p><p><a href="/status/">' + esc(t(l, 'mt_s') || MT.en[2]) + '</a> · <a href="/api/open/stats">API</a></p></main></body></html>';
   return new Response(h, { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': String(MAINT_MIN * 60), 'cache-control': 'no-store', 'x-robots-tag': 'noindex', 'content-language': l } });
 }
 export const MAINT_SKIP = /^\/(?:api|data|k|open|\.well-known|status|engineering\/maintenance|_s)(?:\/|$)|\.[a-z0-9]{2,5}$/i;
 async function mtPage(shell, l) {
-  const b = '<div class="n31-al" style="max-width:620px"><h2 style="margin-top:0">' + esc(t(l, 'mt_h')) + '</h2><p>' + esc(fill(t(l, 'mt_p'), { m: MAINT_MIN })) + '</p><p><a href="/status/">' + esc(t(l, 'mt_s')) + '</a></p></div><p>' + esc(t(l, 'mt_how')) + '</p>' + relHtml(l, '');
+  const b = '<div class="n31-al" style="max-width:620px"><h2 style="margin-top:0">' + esc(t(l, 'mt_h') || MT.en[0]) + '</h2><p>' + esc(fill(t(l, 'mt_p') || MT.en[1], { m: MAINT_MIN })) + '</p><p><a href="/status/">' + esc(t(l, 'mt_s') || MT.en[2]) + '</a></p></div><p>' + esc(t(l, 'mt_how')) + '</p>' + relHtml(l, '');
   return page(shell, l, { path: '/engineering/maintenance/', h1: t(l, 'mt_t'), lead: t(l, 'mt_l'), body: b, updated: '2026-11-18', noindex: true });
 }
 
@@ -303,6 +312,7 @@ const json = (o, s, extra) => new Response(JSON.stringify(o, null, 1), { status:
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname; let m;
   if (!PATHS.test(p)) return null;
+  if (!(await loadT(env))) return null;
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
   if (p === '/security.txt') return new Response(null, { status: 301, headers: { location: '/.well-known/security.txt', 'cache-control': 'public, max-age=86400' } });
   if (p === '/api/v1/alerts') { try { return json(await alerts(env)); } catch (e) { return json({ error: 'unavailable' }, 503); } }
