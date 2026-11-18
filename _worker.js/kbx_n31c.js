@@ -48,14 +48,14 @@ export function aliasesFor(slug) { return [...new Set(Object.entries(DEV_ALIAS).
 
 // ------------------------------------------------------------------------------------------------ 121-123: DLD register line
 const DL = {
-  en: { k: 'DLD register', no: 'project {n}', built: '{p} % built at the DLD inspection of {d}', bank: 'escrow bank: {b}', units: '{u} units', comp: 'completion date on the register: {d}', reg: 'registered with the DLD: {d}', start: 'start date on the register: {d}' },
-  es: { k: 'Registro DLD', no: 'proyecto {n}', built: '{p} % construido en la inspección del DLD del {d}', bank: 'banco de la cuenta escrow: {b}', units: '{u} unidades', comp: 'fecha de terminación en el registro: {d}', reg: 'inscrito en el DLD: {d}', start: 'fecha de inicio en el registro: {d}' },
-  de: { k: 'DLD-Register', no: 'Projekt {n}', built: '{p} % gebaut bei der DLD-Inspektion vom {d}', bank: 'Treuhandbank: {b}', units: '{u} Einheiten', comp: 'Fertigstellungsdatum im Register: {d}', reg: 'beim DLD registriert: {d}', start: 'Baubeginn laut Register: {d}' },
-  fr: { k: 'Registre DLD', no: 'projet {n}', built: '{p} % construit à l’inspection DLD du {d}', bank: 'banque du compte séquestre : {b}', units: '{u} logements', comp: 'date d’achèvement au registre : {d}', reg: 'enregistré auprès du DLD : {d}', start: 'date de début au registre : {d}' },
-  nl: { k: 'DLD-register', no: 'project {n}', built: '{p} % gebouwd bij de DLD-inspectie van {d}', bank: 'escrowbank: {b}', units: '{u} eenheden', comp: 'opleverdatum in het register: {d}', reg: 'geregistreerd bij het DLD: {d}', start: 'startdatum in het register: {d}' },
-  ru: { k: 'Реестр DLD', no: 'проект {n}', built: 'построено {p} % по инспекции DLD от {d}', bank: 'банк эскроу-счёта: {b}', units: '{u} объектов', comp: 'дата завершения в реестре: {d}', reg: 'зарегистрирован в DLD: {d}', start: 'дата начала в реестре: {d}' },
-  zh: { k: 'DLD 登记', no: '项目 {n}', built: 'DLD {d} 检查时完工 {p}%', bank: '托管账户银行：{b}', units: '{u} 套', comp: '登记的竣工日期：{d}', reg: 'DLD 登记日期：{d}', start: '登记的开工日期：{d}' },
-  ar: { k: 'سجل دائرة الأراضي والأملاك', no: 'المشروع {n}', built: 'نسبة الإنجاز {p}٪ في فحص الدائرة بتاريخ {d}', bank: 'بنك حساب الضمان: {b}', units: '{u} وحدة', comp: 'تاريخ الإنجاز في السجل: {d}', reg: 'تاريخ التسجيل لدى الدائرة: {d}', start: 'تاريخ البدء في السجل: {d}' }
+  en: { k: 'DLD register', no: 'project {n}', built: '{p} % built at the DLD inspection of {d}', bank: 'escrow bank: {b}', units: '{u} units', comp: 'completion date on the register: {d}' },
+  es: { k: 'Registro DLD', no: 'proyecto {n}', built: '{p} % construido en la inspección del DLD del {d}', bank: 'banco de la cuenta escrow: {b}', units: '{u} unidades', comp: 'fecha de terminación en el registro: {d}' },
+  de: { k: 'DLD-Register', no: 'Projekt {n}', built: '{p} % gebaut bei der DLD-Inspektion vom {d}', bank: 'Treuhandbank: {b}', units: '{u} Einheiten', comp: 'Fertigstellungsdatum im Register: {d}' },
+  fr: { k: 'Registre DLD', no: 'projet {n}', built: '{p} % construit à l’inspection DLD du {d}', bank: 'banque du compte séquestre : {b}', units: '{u} logements', comp: 'date d’achèvement au registre : {d}' },
+  nl: { k: 'DLD-register', no: 'project {n}', built: '{p} % gebouwd bij de DLD-inspectie van {d}', bank: 'escrowbank: {b}', units: '{u} eenheden', comp: 'opleverdatum in het register: {d}' },
+  ru: { k: 'Реестр DLD', no: 'проект {n}', built: 'построено {p} % по инспекции DLD от {d}', bank: 'банк эскроу-счёта: {b}', units: '{u} объектов', comp: 'дата завершения в реестре: {d}' },
+  zh: { k: 'DLD 登记', no: '项目 {n}', built: 'DLD {d} 检查时完工 {p}%', bank: '托管账户银行：{b}', units: '{u} 套', comp: '登记的竣工日期：{d}' },
+  ar: { k: 'سجل دائرة الأراضي والأملاك', no: 'المشروع {n}', built: 'نسبة الإنجاز {p}٪ في فحص الدائرة بتاريخ {d}', bank: 'بنك حساب الضمان: {b}', units: '{u} وحدة', comp: 'تاريخ الإنجاز في السجل: {d}' }
 };
 export function dldKf(x, lang) {   // one key-facts tile, or ''
   const r = x && x.fx && x.fx.dld; if (!r || !r.src) return '';
@@ -65,7 +65,6 @@ export function dldKf(x, lang) {   // one key-facts tile, or ''
   if (r.bank) parts.push(esc(fill(L.bank, { b: '' })) + '<span lang="en" dir="ltr">' + esc(r.bank) + '</span>');
   if (r.units) parts.push(esc(fill(L.units, { u: nf(r.units, lang) })));
   if (r.comp) parts.push(esc(fill(L.comp, { d: fdt(r.comp, lang) })));
-  if (r.reg || r.start) parts.push([r.reg ? esc(fill(L.reg, { d: fdt(r.reg, lang) })) : '', r.start ? esc(fill(L.start, { d: fdt(r.start, lang) })) : ''].filter(Boolean).join(' · '));   // item 120
   if (!parts.length) return '';
   let h = ''; try { h = new URL(r.src).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
   return '<div class="kf kdld"><dt>' + esc(L.k) + '</dt><dd>' + parts.join('<br>') + ' <a class="src" href="' + esc(r.src) + '" rel="nofollow noopener" target="_blank">' + esc(h) + '</a></dd></div>';

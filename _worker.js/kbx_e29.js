@@ -258,4 +258,5 @@ export async function handle(req, u, env, ctx, shell) {
   return trustRender(lang, Object.assign({}, pg, { body: dots(pg.body).replace('<div class="kpg">', CSS29 + '<div class="kpg">') }), shell);
 }
 // sitemap rows (kbx_trust.js sitemapXml): path -> lastmod
+export function sitemapRows() { return PAGES.map(p => [p, REVIEWED]); }
 export { editorialPage, workPage, sourcesPage, protectPage, foreignPage, sourcesData, cronText, JOBS, buyMods };   // for the local test

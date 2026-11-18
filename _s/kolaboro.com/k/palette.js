@@ -5,6 +5,8 @@
 (function () {
   if (window.KBPalette) return;
   var LS = 'kb-sx-v1', RK = 'kb-sx-recent';
+  // n31a (18 Nov 2026, item 17): a search with no result offers to ask us for the project (the existing lead form, /request-project/)
+  var RQ = { en: 'Not here? Ask us to add this project', es: '¿No está? Pídenos este proyecto', de: 'Nicht dabei? Projekt hinzufügen lassen', fr: 'Absent ? Demandez-nous ce projet', nl: 'Staat het er niet bij? Vraag ons het toe te voegen', ru: 'Нет в списке? Попросите добавить проект', zh: '没有找到？请我们添加这个项目', ar: 'غير موجود؟ اطلب منا إضافة هذا المشروع' };
   var PAGES = [
     ['Check a project website', '/check', 'desk review ai analyze url link scan free', 'Tool'],
     ['Database of off-plan projects', '/database', 'all projects table filter download data', 'Page'],
@@ -206,7 +208,7 @@
   var IC = { page: SV('M5 2.5h7l3 3v12H5zM12 2.5v3h3M8 10h5M8 13.5h5'), project: SV('M3 17.5h14M5 17.5V8l5-4 5 4v9.5M8.5 17.5v-4h3v4'), market: SV('M10 18s-5.5-5-5.5-9.5a5.5 5.5 0 0 1 11 0C15.5 13 10 18 10 18zM10 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'), action: SV('M4 10h11M11 5.5 15.5 10 11 14.5'), dev: SV('M3 17.5h14M4.5 17.5V6h6v11.5M10.5 9.5h5v8M7 9h1.5M7 12h1.5M13 12.5h.5') };
   function render() {
     var q = input.value, r = search(q); last = r; active = 0;
-    if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? (TL ? esc(TL.none(q)) : 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).') : (TL ? TL.ld : 'Loading the project index…')) + '</li>'; input.setAttribute('aria-activedescendant', ''); }
+    if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? (TL ? esc(TL.none(q)) : 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).') + (ready && q.trim().length > 2 ? ' <a href="' + (LG && LG !== 'en' ? '/' + LG : '') + '/request-project/?q=' + encodeURIComponent(q.trim().slice(0, 200)) + '" data-ev="palette_request">' + esc(RQ[LG] || RQ.en) + '</a>' : '') : (TL ? TL.ld : 'Loading the project index…')) + '</li>'; input.setAttribute('aria-activedescendant', ''); }
     else list.innerHTML = r.list.map(function (x, i) { var it = x.it; return '<li role="option" id="kxp-o' + i + '" aria-selected="' + (i === 0) + '" data-i="' + i + '"><span class="ic ' + it.t + '" aria-hidden="true">' + IC[it.t] + '</span><span class="tx"><b>' + hl(it.title, q) + '</b><small>' + esc(it.sub) + '</small></span>' + (it.flags ? '<span class="fl">' + it.flags + ' ' + (TL ? pn(it.flags, TL.fl) : 'flag' + (it.flags > 1 ? 's' : '')) + '</span>' : '') + '</li>'; }).join('');
     if (r.list.length) input.setAttribute('aria-activedescendant', 'kxp-o0');
     input.setAttribute('aria-expanded', r.list.length ? 'true' : 'false');

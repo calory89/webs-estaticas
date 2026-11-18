@@ -7,9 +7,8 @@ export const PATHS = /^\/api\/x\/k\//;
 const ASK_MODEL = 'claude-haiku-5-5';
 const ASK_PER_HOUR = 10;
 const KEY_CREATE_PER_HOUR = 3;
-const KEY_PER_MIN = 60;   // n31t: burst limit per free key
 const PLANS = [
-  { plan: 'free', daily_quota: 1000, per_minute: 60, price: null, how: 'self-serve on this page' },
+  { plan: 'free', daily_quota: 1000, price: null, how: 'self-serve on this page' },
   { plan: 'partner', daily_quota: null, price: null, how: 'higher limits by agreement: write to hello@kolaboro.com' }
 ];
 const cors = r => { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); h.set('access-control-expose-headers', 'x-ratelimit-limit, x-ratelimit-remaining, x-kolaboro-signature, x-kolaboro-key-id, x-kolaboro-dataset-sha256, etag'); return new Response(r.body, { status: r.status, headers: h }); };
@@ -81,21 +80,13 @@ async function metered(req, u, env, ctx) {
   const st = await keyStatus();
   if (!st.open) return cors(json({ error: 'keys_opening_soon', note: 'Keys are not open yet. The same data needs no key at /api/open/*.', open: 'https://kolaboro.com/api/open' }, 503));
   const k = keyOf(req); if (!k) return cors(json({ error: 'missing_key', how: 'https://kolaboro.com/api-keys/' }, 401));
-  // n31t (batch 31, item 266): a per-minute burst limit per free key on top of the daily quota (counted in the edge cache before the
-  // database is asked, so a runaway client cannot hammer it); a free key gets KEY_PER_MIN calls a minute
-  const kh = await sha(k), mn = Math.floor(Date.now() / 60000), bk = new Request('https://kolaboro.com/__kx_rl/keymin/' + kh.slice(0, 24) + '/' + mn);
-  let used = 0; try { const hit = await caches.default.match(bk); used = hit ? (+(await hit.text()) || 0) : 0; } catch (e) {}
-  const reset = 60 - Math.floor(Date.now() / 1000) % 60;
-  if (used >= KEY_PER_MIN) { const r429 = cors(json({ error: 'rate_limited', per_minute: KEY_PER_MIN, retry_after_s: reset }, 429)); r429.headers.set('retry-after', String(reset)); r429.headers.set('ratelimit-policy', '"key-minute";q=' + KEY_PER_MIN + ';w=60'); r429.headers.set('ratelimit', '"key-minute";r=0;t=' + reset); return r429; }
-  try { ctx.waitUntil(caches.default.put(bk, new Response(String(used + 1), { headers: { 'cache-control': 'max-age=120' } }))); } catch (e) {}
   const rest = u.pathname.replace(/^\/api\/x\/k\/m/, '') || '';
   const ep = ('/api/open' + rest).replace(/\/projects\/[^/]+/, '/projects/{id}').replace(/\/[0-9a-f]{64}$/, '/{sha256}').replace(/\/(proof|receipt)\/[^/]+$/, '/$1/{id}').replace(/\d{4}-\d{2}-\d{2}/g, '{day}').slice(0, 80);
-  let a; try { a = await rpc('kolaboro_k_key_use', { p_wkey: KB.WKEY, p_hash: kh, p_endpoint: ep }); } catch (e) { return cors(json({ error: 'db' }, 503)); }
+  let a; try { a = await rpc('kolaboro_k_key_use', { p_wkey: KB.WKEY, p_hash: await sha(k), p_endpoint: ep }); } catch (e) { return cors(json({ error: 'db' }, 503)); }
   if (!a || a.error) return cors(json({ error: (a && a.error) || 'db', daily_quota: a && a.daily_quota }, a && a.error === 'quota' ? 429 : 401));
   const u2 = new URL('https://kolaboro.com/api/open' + rest + u.search);
   const res = await open(new Request(u2, { method: 'GET', headers: req.headers }), u2, env);
   const out = cors(res); out.headers.set('x-ratelimit-limit', String(a.daily_quota)); out.headers.set('x-ratelimit-remaining', String(a.remaining)); out.headers.set('cache-control', 'no-store');
-  out.headers.set('ratelimit-policy', '"key-day";q=' + a.daily_quota + ';w=86400, "key-minute";q=' + KEY_PER_MIN + ';w=60'); out.headers.set('ratelimit', '"key-minute";r=' + Math.max(0, KEY_PER_MIN - used - 1) + ';t=' + reset);
   return out;
 }
 

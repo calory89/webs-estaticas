@@ -296,12 +296,7 @@ async function placePage(req, u, env, ctx, shell, lang, s) {
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', '@id': canon + '#page', url: canon, name: t(lang, 'wk_h1', { p: pn }), inLanguage: lang, dateModified: last, about: { '@type': 'Place', name: pn }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'wk_hub'), item: ORIGIN + pre(lang) + '/weekly/' }, { '@type': 'ListItem', position: 3, name: pn, item: canon }] }] };
   let desc = t(lang, 'wk_desc', { p: pn, e: nf(nowE.length, lang), k: nf(nowK, lang), w: N.fd(wk.w0, lang) }); if ([...desc].length > 155) desc = [...desc].slice(0, 152).join('').replace(/\s+\S*$/, '') + '...';
-  let title = t(lang, 'wk_t', { p: pn });
-  // n31s (item 185): the ISO week in the title, so each week's log reads as that week's report ("week 47, 2026")
-  try { const d = new Date(wk.w0 + 'T00:00:00Z'), th = new Date(d.getTime() + 3 * 864e5), y = th.getUTCFullYear(), w = 1 + Math.round((th - new Date(Date.UTC(y, 0, 4))) / 6048e5 - (3 - ((new Date(Date.UTC(y, 0, 4)).getUTCDay() + 6) % 7)) / 7);
-    const WL = { en: 'week {w}, {y}', es: 'semana {w} de {y}', de: 'KW {w}/{y}', fr: 'semaine {w}, {y}', nl: 'week {w}, {y}', ru: '{w}-я неделя {y}', zh: '{y}年第{w}周', ar: 'الأسبوع {w}، {y}' };
-    const wl = (WL[lang] || WL.en).replace('{w}', w).replace('{y}', y), t2 = title + (lang === 'zh' ? '（' + wl + '）' : ' (' + wl + ')'); if ([...t2].length <= 60) title = t2; } catch (e) {}
-  if ([...title].length + 11 <= 60) title += ' | Kolaboro';
+  let title = t(lang, 'wk_t', { p: pn }); if ([...title].length + 11 <= 60) title += ' | Kolaboro';
   return htmlPage(env, ctx, shell, lang, { title, desc, canon, body, ld, lastmod: last, alt: l => ORIGIN + pre(l) + '/weekly/' + s + '/', feed: null }, false);
 }
 async function hubPage(req, u, env, ctx, shell, lang) {
