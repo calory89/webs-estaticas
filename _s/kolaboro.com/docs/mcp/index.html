@@ -94,8 +94,6 @@ console.log(await c.callTool({ name: "get_project", arguments: { id: "BALI-014" 
 <tr><td><code>project_quick_answer</code></td><td>The quick answer at the top of a named project page, in 8 languages, with its transparency score, ranks and checklist.</td></tr>
 <tr><td><code>compare_projects</code></td><td>2 to 5 named projects side by side: handover date on record and its moves, months past the first date, permit, deposit protection, transparency score.</td></tr>
 <tr><td><code>list_by_handover_year</code></td><td>Named projects with a handover date on record in one year, optionally in one market or country.</td></tr>
-<tr><td><code>search_text</code></td><td>Free-text search over named projects (name, developer or place in any order), with a link to each project&#39;s dated handover history.</td></tr>
-<tr><td><code>get_certificate</code></td><td>The verification certificate of one named project: its facts in canonical JSON, their SHA-256 fingerprint and the dataset snapshot hash.</td></tr>
 <tr><td><code>database_stats</code></td><td>Totals: projects, markets, countries, claims tested by result, verification levels, overdue and delayed projects.</td></tr>
 <tr><td><code>public_log</code></td><td>The signed checkpoint of the <a href="/log/">public log</a> and its latest daily heads.</td></tr>
 <tr><td><code>dataset_files</code></td><td>The daily Parquet files of the whole database, with SHA-256 re-checked by the server. Same files as <a href="/sql/">SQL in your browser</a>.</td></tr>
