@@ -61,6 +61,9 @@
       <li id="tl5"><b>Usually within 7 days: your written report.</b> <span class="th-small">The due date shows on your case. Full refund if we can't take your case.</span></li>
     </ol>
     <p class="th-small">Questions? Write to us in your case chat or at <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.</p>
+    <script>/* n31t (item 295): the steps above with calendar dates, counted from today (the day of payment) in the visitor's time zone */
+    (function(){try{var d0=new Date(),f=function(n){var d=new Date(d0.getTime()+n*864e5);return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});};
+    [['tl3',2],['tl4',5],['tl5',7]].forEach(function(x){var b=document.querySelector('#'+x[0]+' b');if(!b)return;var s=document.createElement('span');s.className='th-small';s.textContent=' (around '+f(x[1])+' if you paid today)';b.parentNode.insertBefore(s,b.nextSibling);});}catch(e){}})();</script>
   </div>
 </div></div></div>
 <script>

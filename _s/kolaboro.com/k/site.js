@@ -1088,6 +1088,41 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   if (D.readyState === 'complete') lvRun(); else addEventListener('load', lvRun);
 })();
 
+/* n31t (batch 31, items 290 and 294): with "reduce motion" set, scripted scrolling jumps instead of gliding (every smooth scroll on the
+   site goes through these two calls, including lazily loaded tools); before printing, folded sections open so the paper copy is complete,
+   and close again after */
+(function () {
+  try {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var fix = function (o) { if (o && typeof o === 'object' && o.behavior === 'smooth') { o = Object.assign({}, o); o.behavior = 'auto'; } return o; };
+      var siv = Element.prototype.scrollIntoView; Element.prototype.scrollIntoView = function (o) { return siv.call(this, fix(o)); };
+      var st = window.scrollTo; window.scrollTo = function (a, b) { return typeof a === 'object' ? st.call(window, fix(a)) : st.call(window, a, b); };
+      var sb = window.scrollBy; window.scrollBy = function (a, b) { return typeof a === 'object' ? sb.call(window, fix(a)) : sb.call(window, a, b); };
+    }
+  } catch (e) {}
+  var opened = [];
+  addEventListener('beforeprint', function () { opened = [].slice.call(document.querySelectorAll('main details:not([open])')); opened.forEach(function (d) { d.open = true; }); });
+  addEventListener('afterprint', function () { opened.forEach(function (d) { d.open = false; }); opened = []; });
+})();
+
+/* n31t (batch 31, item 289): a progress bar above the live steps of the free check (/check/ in 8 languages): steps done out of steps
+   shown, updated as the steps change; it says only what the steps list already says */
+(function () {
+  var L = document.getElementById('az-prog'); if (!L || !window.MutationObserver) return;
+  var LG = (document.documentElement.lang || 'en').slice(0, 2), T = { en: ['Progress of the check', '{k} of {n} steps done'], es: ['Progreso de la comprobación', '{k} de {n} pasos hechos'], de: ['Fortschritt der Prüfung', '{k} von {n} Schritten erledigt'], fr: ['Avancement de la vérification', '{k} étapes sur {n} faites'], nl: ['Voortgang van de check', '{k} van {n} stappen klaar'], ru: ['Ход проверки', 'Готово шагов: {k} из {n}'], zh: ['核查进度', '已完成 {k}/{n} 步'], ar: ['تقدّم الفحص', 'اكتمل {k} من {n} خطوات'] }[LG] || ['Progress of the check', '{k} of {n} steps done'];
+  var w = document.createElement('div'); w.className = 'k31-pg'; w.setAttribute('role', 'progressbar'); w.setAttribute('aria-label', T[0]); w.setAttribute('aria-valuemin', '0'); w.setAttribute('aria-valuemax', '100'); w.hidden = true;
+  w.innerHTML = '<i></i><span></span>';
+  var st = document.createElement('style'); st.textContent = '.k31-pg{position:relative;height:28px;margin:8px 0;border-radius:99px;background:rgba(23,33,43,.08);overflow:hidden}.k31-pg i{position:absolute;inset-block:0;inset-inline-start:0;width:0;background:#0B7A55;border-radius:99px;transition:width .3s}.k31-pg span{position:relative;display:block;padding:0 12px;line-height:28px;font-size:.9rem;font-weight:700}:root[data-theme=dark] .k31-pg{background:rgba(255,255,255,.12)}:root[data-theme=dark] .k31-pg i{background:#1E8E63}@media (prefers-reduced-motion:reduce){.k31-pg i{transition:none}}';
+  document.head.appendChild(st); L.parentNode.insertBefore(w, L);
+  var upd = function () {
+    var li = [].slice.call(L.children).filter(function (x) { return x.tagName === 'LI' && !x.classList.contains('tot'); }), n = li.length;
+    if (n < 2) { w.hidden = true; return; }
+    var k = li.filter(function (x) { return /\b(ok|done|warn|bad|fail|skip)\b/.test(x.className); }).length, p = Math.round(100 * k / n);
+    w.hidden = false; w.firstChild.style.width = p + '%'; w.setAttribute('aria-valuenow', String(p)); w.lastChild.textContent = T[1].replace('{k}', k).replace('{n}', n);
+  };
+  new MutationObserver(upd).observe(L, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] }); upd();
+})();
+
 /* n31t (batch 31, items 287 and 291): "?" opens the keyboard shortcuts page; on English pages, a visitor whose browser asks for one of
    our other languages is offered this page in that language (only when it exists here: the page's own hreflang link). Nothing is
    stored except the choice to hide the offer (localStorage, try/catch). */

@@ -208,7 +208,7 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = 'e8b66bbf08', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '3a6e94c8e7', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
@@ -395,6 +395,13 @@ export default {
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
     let r = await this.fetch0(req, env, ctx);
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (!u0.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|rankings\/transparency|handover|handover\/overdue)\/$/.test(u0.pathname)) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); r = await k29i.hubInject(req, u0, env, r, h => ruPlaces(kbRu(h))); } catch (e) {} } }   // n29i: key figures and Q&A on the hubs (items 93, 95)
+    // n31t (batch 31, item 274): every /api/v1 JSON answer up to 512 KB is signed like /api/open/*: header x-kolaboro-signature = Ed25519
+    // over "kolaboro-sig-v1\n" + SHA-256 hex of the exact body, key id in x-kolaboro-key-id, keys at /.well-known/kolaboro-keys.json
+    if (req.method === 'GET' && r && r.status === 200 && !r.headers.has('x-kolaboro-signature') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /^\/api\/v1\//.test(new URL(req.url).pathname) && /json/.test(r.headers.get('content-type') || '') && +(r.headers.get('content-length') || 0) <= 524288) {
+      try { const body = await r.text(); const h = new Headers(r.headers);
+        if (body.length <= 524288) { if (!kb) kb = await import('./kolaboro.js'); const sg = await kb.signBody(env, body); if (sg) { h.set('x-kolaboro-signature', sg); h.set('x-kolaboro-key-id', (env && env.KB_SIGN_KID) || 'kb'); h.set('access-control-expose-headers', [h.get('access-control-expose-headers'), 'x-kolaboro-signature, x-kolaboro-key-id'].filter(Boolean).join(', ')); } }
+        r = new Response(body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {}
+    }
     // n29e (batch 29): every CSV and JSON data download says its licence (Link rel=license), as /editorial-policy/ states
     if (r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const ct = r.headers.get('content-type') || '', pth = new URL(req.url).pathname;
       if ((/text\/csv/.test(ct) || (/json/.test(ct) && /^\/(data|api\/open|api\/v1|api\/x\/transparency|rankings|stories|press)\//.test(pth))) && !/rel="?license/.test(r.headers.get('link') || '')) {
