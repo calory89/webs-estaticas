@@ -14,7 +14,7 @@ import { t30 } from './kbx_n30a.js';   // n30a (batch 30): contract reader link 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27j';   // u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V = 'u27k';   // u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
 export const U27V_OLD = 'u27g';   // u27g: currency pre-selected by page language (n29i)   // bump when the client script below changes (kbx_named.js adds CACHE_V to the ?v=)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -576,9 +576,10 @@ async function updatesPage(req, u, env, ctx, shell, lang) {
 
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
+  if (p === '/k/n31d.js') return (await import('./kbx_n31d.js')).handle(req, u);   // n31d (batch 31): project-page client script per language
   if (p === '/k/u27.js') {
     const N = await import('./kbx_named.js'), v = N.U27_SRC_V;
-    const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS + '\n' + (await import('./kbx_n30a.js')).LOADER;   // n30a: natural-language search, loaded on the home box and /projects/ only
+    const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS + '\n' + (await import('./kbx_n30a.js')).LOADER + '\n' + (await import('./kbx_n31d.js')).LOADER;   // n31d: project-page client, idle-loaded   // n30a: natural-language search, loaded on the home box and /projects/ only
     return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === v ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
   }
   if (p === '/api/v1/cost') {

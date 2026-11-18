@@ -187,8 +187,8 @@ export const localName = x => LOCAL[x.id] || null;
 
 // ------------------------------------------------------------------------------------------------ price per m2 against the place (item 6)
 const MED = new WeakMap();
-const ppmOf = x => { const fx = x.fx || {}, p = +fx.price_min, s = +fx.size_min_m2; return p > 0 && s >= 15 && s <= 5000 && fx.currency ? p / s : null; };
-function medians(ix) {
+export const ppmOf = x => { const fx = x.fx || {}, p = +fx.price_min, s = +fx.size_min_m2; return p > 0 && s >= 15 && s <= 5000 && fx.currency ? p / s : null; };
+export function medians(ix) {
   let M = MED.get(ix); if (M) return M;
   const G = new Map();
   for (const x of ix.P) { const v = ppmOf(x); if (v == null) continue; const k = x.mk + '|' + String(x.fx.currency).toUpperCase(); if (!G.has(k)) G.set(k, []); G.get(k).push(v); }

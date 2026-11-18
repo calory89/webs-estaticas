@@ -196,12 +196,12 @@ function winBytes(s) {
 }
 const wOf = (bytes, size, bold) => bytes.reduce((a, c) => a + (c >= 32 && c <= 126 ? HW[c - 32] : 556), 0) * size / 1000 * (bold ? 1.07 : 1);
 const pdfStr = bytes => '(' + bytes.map(c => c === 40 || c === 41 || c === 92 ? '\\' + String.fromCharCode(c) : c < 32 || c > 126 ? '\\' + c.toString(8).padStart(3, '0') : String.fromCharCode(c)).join('') + ')';
-export function pdfDoc(title, blocks) {   // blocks: {t, size, bold, gap, indent, color}
+export function pdfDoc(title, blocks, first) {   // blocks: {t, size, bold, gap, indent, color, rm}; first (n31d): raw drawing operators for page 1 (the certificate QR)
   const W = 595.28, H = 841.89, M = 50, pages = [[]];
   let y = H - M;
   const line = (bytes, size, bold, x, col) => { if (y - size < M) { pages.push([]); y = H - M; } y -= size * 1.3; pages[pages.length - 1].push('BT ' + (col || '0 0 0') + ' rg /' + (bold ? 'F2' : 'F1') + ' ' + size + ' Tf ' + x.toFixed(1) + ' ' + y.toFixed(1) + ' Td ' + pdfStr(bytes) + ' Tj ET'); };
   for (const b of blocks) {
-    const size = b.size || 10, x = M + (b.indent || 0), maxW = W - M - x;
+    const size = b.size || 10, x = M + (b.indent || 0), maxW = W - M - x - (b.rm || 0);
     y -= b.gap || 0;
     const words = winBytes(b.t).reduce((acc, c) => { if (c === 32) acc.push([]); else acc[acc.length - 1].push(c); return acc; }, [[]]).filter(w => w.length);
     let cur = [];
@@ -217,7 +217,7 @@ export function pdfDoc(title, blocks) {   // blocks: {t, size, bold, gap, indent
   const kids = [];
   pages.forEach((ops, i) => {
     const foot = 'BT 0.35 0.38 0.42 rg /F1 8 Tf ' + M + ' 28 Td ' + pdfStr(winBytes('kolaboro.com  |  ' + (i + 1) + ' / ' + pages.length)) + ' Tj ET';
-    const content = ops.concat([foot]).join('\n');
+    const content = (i === 0 && first ? [first] : []).concat(ops, [foot]).join('\n');
     const cs = add('<< /Length ' + content.length + ' >>\nstream\n' + content + '\nendstream');
     kids.push(add('<< /Type /Page /Parent ' + pgs + ' 0 R /MediaBox [0 0 ' + W + ' ' + H + '] /Resources << /Font << /F1 ' + f1 + ' 0 R /F2 ' + f2 + ' 0 R >> >> /Contents ' + cs + ' 0 R >>'));
   });
@@ -233,9 +233,9 @@ export function pdfDoc(title, blocks) {   // blocks: {t, size, bold, gap, indent
 async function reportPdf(env, lang0, x) {
   const lang = PDF_LANGS.has(lang0) ? lang0 : 'en', R = await reportData(env, x, lang), B = [];
   const GREY = '0.35 0.38 0.42';
-  B.push({ t: t(lang, 'rp_h1', { n: x.n }), size: 18, bold: true });
-  B.push({ t: t(lang, 'rp_sub', { d: N.fd(R.today, lang) }), size: 9, color: GREY, gap: 2 });
-  if (R.qa) { B.push({ t: N.tr(lang, 's_glance'), size: 12, bold: true, gap: 12 }); B.push({ t: R.qa, size: 10 }); }
+  B.push({ t: t(lang, 'rp_h1', { n: x.n }), size: 18, bold: true, rm: 96 });
+  B.push({ t: t(lang, 'rp_sub', { d: N.fd(R.today, lang) }), size: 9, color: GREY, gap: 2, rm: 96 });
+  if (R.qa) { B.push({ t: N.tr(lang, 's_glance'), size: 12, bold: true, gap: 12, rm: 96 }); B.push({ t: R.qa, size: 10, rm: 96 }); }
   B.push({ t: t(lang, 'rp_facts'), size: 12, bold: true, gap: 12 });
   for (const f of R.F) { B.push({ t: f[0] + ': ' + f[1], size: 10, gap: 2 }); if (f[2] && f[2] !== f[1]) B.push({ t: t(lang, 'src') + ': ' + f[2], size: 8, color: GREY, indent: 12 }); }
   if (R.tp) {
@@ -251,7 +251,18 @@ async function reportPdf(env, lang0, x) {
   for (const s of R.srcs) B.push({ t: s, size: 8, gap: 1 });
   B.push({ t: t(lang, 'rp_note', { u: R.live }), size: 9, gap: 14, color: GREY });
   B.push({ t: t(lang, 'rp_lic'), size: 9, color: GREY });
-  return pdfDoc(t(lang, 'rp_h1', { n: x.n }), B);
+  return pdfDoc(t(lang, 'rp_h1', { n: x.n }), B, await certQr(ORIGIN + (lang === 'en' ? '' : '/' + lang) + '/projects/' + x.s + '/certificate/', CERT_L[lang] || CERT_L.en));
+}
+// n31d (item 154): the QR code of the project's verification certificate page (kbx_n30b.js), drawn as filled squares, 80 pt wide,
+// top right of page 1, with a two-word caption under it
+const CERT_L = { en: 'Certificate', es: 'Certificado', de: 'Zertifikat', fr: 'Certificat', nl: 'Certificaat' };
+async function certQr(url, cap) {
+  try {
+    const Q = (await import('./kbx_qrgen.js')).default, q = Q(0, 'M'); q.addData(url); q.make();
+    const n = q.getModuleCount(), S = 80, c = S / (n + 8), x0 = 595.28 - 50 - S, y0 = 841.89 - 42 - S, R = [];
+    for (let r = 0; r < n; r++) for (let k = 0; k < n; k++) if (q.isDark(r, k)) R.push(((x0 + (k + 4) * c).toFixed(2)) + ' ' + ((y0 + S - (r + 5) * c).toFixed(2)) + ' ' + c.toFixed(2) + ' ' + c.toFixed(2) + ' re');
+    return '1 1 1 rg ' + x0.toFixed(2) + ' ' + y0.toFixed(2) + ' ' + S + ' ' + S + ' re f 0 0 0 rg ' + R.join(' ') + ' f BT 0.35 0.38 0.42 rg /F1 7 Tf ' + (x0 + 4 * c).toFixed(2) + ' ' + (y0 - 6).toFixed(2) + ' Td ' + pdfStr(winBytes(cap)) + ' Tj ET';
+  } catch (e) { return ''; }
 }
 
 // ------------------------------------------------------------------------------------------------ weekly pages (item 78)

@@ -106,10 +106,10 @@ const stK = s => s === 'off-plan' ? 'st_offplan' : s === 'under construction' ? 
 
 // ------------------------------------------------------------------------------------------------ "What next" block on a project page
 // cmp: slugs of up to two similar projects (same place first) for the compare link
-export function nextStep(lang, x, name, cmp) {
+export function nextStep(lang, x, name, cmp, txt) {   // txt (n31d, item 148): the share text with the project's key facts
   const P = pre(lang), url = ORIGIN + P + '/projects/' + x.s + '/';
   const cmpHref = P + '/compare/?p=' + [x.s].concat(cmp || []).slice(0, 4).join(',');
-  const wa = 'https://wa.me/?text=' + encodeURIComponent(name + ' ' + url);
+  const wa = 'https://wa.me/?text=' + encodeURIComponent((txt || name) + ' ' + url);
   const m = { ok: t26(lang, 'sh_ok'), saved: t26(lang, 'nx_saved'), save: t26(lang, 'nx_save'), url, title: name };
   return '<section class="ks knx" id="next" data-kn="' + esc(JSON.stringify(m)) + '"><h2>' + esc(t26(lang, 'nx_h')) + '</h2><ul class="knx-a">' +
     ((cmp || []).length ? '<li><a href="' + esc(cmpHref) + '" data-ev="next_compare"><span aria-hidden="true">⇆</span>' + esc(t26(lang, 'nx_cmp')) + '</a></li>' : '') +
@@ -129,7 +129,7 @@ export const NX_JS = "(function(){var N=document.querySelector('[data-kn]');if(!
   "sync();if(star){sv.addEventListener('click',function(){star.click();setTimeout(sync,400);setTimeout(sync,1500);});new MutationObserver(sync).observe(star,{attributes:true,attributeFilter:['aria-pressed']});}" +
   "var al=N.querySelector('[data-kn-alert]');if(al)al.addEventListener('click',function(e){var b=document.querySelector('[data-kw-btn]');var w=document.getElementById('watch');if(!w)return;e.preventDefault();w.scrollIntoView({block:'center'});if(b&&!b.hidden)setTimeout(function(){b.focus();},300);else{var i=w.querySelector('input[type=email]');if(i&&!i.closest('[hidden]'))i.focus();}});" +
   "N.querySelector('[data-kn-copy]').addEventListener('click',function(){var done=function(){o.textContent=M.ok;setTimeout(function(){o.textContent='';},2500);};try{navigator.clipboard.writeText(M.url).then(done,function(){prompt('',M.url);});}catch(e){prompt('',M.url);}try{if(window.kbEvent)kbEvent('share_copy');}catch(e){}});" +
-  "var sh=N.querySelector('[data-kn-share]');if(navigator.share){sh.hidden=false;sh.addEventListener('click',function(){navigator.share({title:M.title,url:M.url}).catch(function(){});try{if(window.kbEvent)kbEvent('share_native');}catch(e){}});}" +
+  "var sh=N.querySelector('[data-kn-share]');if(navigator.share){sh.hidden=false;sh.addEventListener('click',function(){navigator.share({title:M.title,text:(function(){try{var w=N.querySelector('.knx-s a'),t=new URL(w.href).searchParams.get('text')||'';return t.replace(M.url,'').trim()||undefined;}catch(e){return undefined;}})(),url:M.url}).catch(function(){});try{if(window.kbEvent)kbEvent('share_native');}catch(e){}});}" +
   "var W=document.querySelector('[data-kw]');if(W&&'IntersectionObserver'in window){var id=JSON.parse(W.getAttribute('data-kw')).id,io=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;io.disconnect();fetch('/api/v1/followers?id='+encodeURIComponent(id)).then(function(r){return r.ok?r.json():null;}).then(function(j){if(!j||!j.followers||!j.text)return;var p=document.createElement('p');p.className='kw-fol';p.textContent=j.text;var t=W.querySelector('.kw-t');(t||W).appendChild(p);}).catch(function(){});},{rootMargin:'200px'});io.observe(W);}" +
   "})();";
 
