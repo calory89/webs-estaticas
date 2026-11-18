@@ -1,6 +1,6 @@
 # Casas baratas en la República Dominicana: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 4 casas en venta en la República Dominicana, revisadas una a una por una persona. En la República Dominicana, el precio de salida mediano de esas 4 casas es de 223.600 € (2.282 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 187.800 € y la más cara, 223.600 €. Los impuestos y gastos de compra suman alrededor del 4,25–7% del precio de una casa en la República Dominicana (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de la República Dominicana es solo orientativa.
+A 18 de noviembre de 2026, RealHunt publica 5 casas en venta en la República Dominicana, revisadas una a una por una persona. En la República Dominicana, el precio de salida mediano de esas 5 casas es de 201.200 € (2.282 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.000 € y la más cara, 223.600 €. Los impuestos y gastos de compra suman alrededor del 4,25–7% del precio de una casa en la República Dominicana (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de la República Dominicana es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/dominican-republic · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF: https://realhunt.co/data/countries/dominican-republic.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/dominican-republic.json · 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 4 (muestra pequeña) |
-| Precio de salida mediano | 223.600 € |
-| Precio mediano por m² | 2.282 € (3 casas de superficie conocida) |
-| Superficie mediana | 98 m² |
-| La más barata y la más cara | 187.800 € · 223.600 € |
-| Nota RealHunt mediana (de 70 a 98) | 89 |
+| Casas en RealHunt | 5 (muestra pequeña) |
+| Precio de salida mediano | 201.200 € |
+| Precio mediano por m² | 2.282 € (4 casas de superficie conocida) |
+| Superficie mediana | 103 m² |
+| La más barata y la más cara | 150.000 € · 223.600 € |
+| Nota RealHunt mediana (de 70 a 98) | 88 |
 | Impuestos y gastos de compra | 4,25–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros tienen los mismos derechos que los ciudadanos dominicanos para comprar tierra y viviendas, sin restricciones. |
 | Impuesto anual sobre la vivienda | El impuesto anual IPI es del 1% de la parte del valor total de los inmuebles de una persona en la República Dominicana, según la tasación de la DGII (la administración tributaria), que supere 10.695.494 RD$ en 2026, así que una sola vivienda barata a menudo queda por debajo del umbral. |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/dominican-republic
 
-## Las 4 casas, de mejor a peor nota
+## Las 5 casas, de mejor a peor nota
 
 ### Piso de 3 dormitorios frente al mar en Juan Dolio con vistas abiertas al Caribe
 
@@ -79,3 +79,11 @@ https://realhunt.co/es/deal/dr-juan-dolio-224k-447078
 Apartamento de 2 dormitorios en Bonita Village con acceso directo a Playa Las Ballenas, una de las mejores playas de Las Terrenas, en la península de Samaná. Se vende totalmente amueblado y con la cocina equipada, listo para vivir o alquilar desde el primer día. La residencia tiene una gran piscina entre jardines tropicales, seguridad y electricidad 24 horas, parking privado, lavandería y servicio de limpieza, a pocos minutos del centro. A unos 30 minutos del aeropuerto de El Catey. Piden 225.000 US$ (unos 201.200 €).
 
 https://realhunt.co/es/deal/dr-las-terrenas-201k-439030
+
+### Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata
+
+150.000 € · Puerto Plata, Puerto Plata · 103 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
+
+Asking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa Dorada beach. It has two bedrooms, two bathrooms, a living and dining room, a kitchen with an island and a balcony. The building has a swimming pool, one assigned parking space and visitor parking. The price includes the washer-dryer, fridge, cooker and extractor hood, so it is close to ready to live in. Maintenance fee US$127, stated without a period, probably monthly.
+
+https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k

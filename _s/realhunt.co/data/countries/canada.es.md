@@ -1,6 +1,6 @@
 # Casas baratas en Canadá: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 9 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 9 casas es de 92.552 € (930 € por m², calculado con las 9 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 99.500 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026). Con 9 casas la muestra es pequeña, así que la mediana de Canadá es solo orientativa.
+A 18 de noviembre de 2026, RealHunt publica 11 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 11 casas es de 93.111 € (963 € por m², calculado con las 11 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 9 (muestra pequeña) |
-| Precio de salida mediano | 92.552 € |
-| Precio mediano por m² | 930 € (9 casas de superficie conocida) |
-| Superficie mediana | 83 m² |
-| La más barata y la más cara | 55.842 € · 99.500 € |
+| Casas en RealHunt | 11 |
+| Precio de salida mediano | 93.111 € |
+| Precio mediano por m² | 963 € (11 casas de superficie conocida) |
+| Superficie mediana | 94 m² |
+| La más barata y la más cara | 55.842 € · 190.700 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 1,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Mayormente no por ahora: una prohibición federal impide que no canadienses compren viviendas en ciudades y pueblos grandes hasta el 1 de enero de 2027, con excepciones como titulares de permiso de trabajo y cónyuges de ciudadanos o residentes permanentes. La prohibición no cubre áreas rurales y pueblos pequeños, y el gobierno ha dicho que no tiene previsto simplemente extenderla, pero se está estudiando un sustituto. |
@@ -51,7 +51,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/canada
 
-## Las 9 casas, de mejor a peor nota
+## Las 11 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia
 
@@ -101,6 +101,14 @@ Casa de planta y media y unos 107 m² en Grande-Anse, en la costa acadiana de Nu
 
 https://realhunt.co/es/deal/ca-grande-anse-99k-148091
 
+### Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia
+
+127.100 € · Pictou, Nova Scotia · 132 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-18
+
+Asking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the Northumberland Strait. The kitchen is brand new, with white units, wood counters and an island, and opens to a bright dining room with exposed beams. There is a large bathroom with laundry on the ground floor, and three bedrooms plus an office upstairs. The fenced back garden has a big new deck, a shed and a wired workshop. Downtown shops, cafes, the marina and the waterfront are a few steps away.
+
+https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k
+
 ### Casa de 2 dormitorios lista para entrar a vivir en Shearstown, Terranova
 
 99.323 € · Shearstown, Newfoundland · 79 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
@@ -116,6 +124,14 @@ https://realhunt.co/es/deal/shearstown-99323
 83 m² (896 sq ft), 2 dormitorios, 1 baño. Precio: 159.900 C$. El anuncio menciona: garaje independiente nuevo, terrazas de madera actualizadas, bomba de calor eficiente sin conductos, jardín terminado.
 
 https://realhunt.co/es/deal/minto-99323
+
+### Four-bedroom house on about five acres in St. Andrews by-the-Sea, New Brunswick
+
+190.700 € · Saint Andrews, New Brunswick · 150 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
+
+Asking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of St. Andrews by-the-Sea, a well-known coastal resort town in New Brunswick. It has four bedrooms and two full bathrooms, two bedrooms on the main level and two below, a bright living room with wood floors, a kitchen with wood cabinets and large decks. The land is mostly lawn and trees, with a storage shed, and the aerial photos show the bay in the distance. Downtown shops, restaurants and the waterfront are minutes away. Yearly property tax C$3,679.
+
+https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 
 ### Casa de 2 dormitorios actualizada en Hughes Brook, Terranova
 

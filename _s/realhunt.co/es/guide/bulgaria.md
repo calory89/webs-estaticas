@@ -36,9 +36,9 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 - [58.900 € · Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u) · Byala, Varna · nota 92 · 53 m² · 1 dorm.
 - [66.000 € · Piso de dos dormitorios listo para entrar con terraza con vistas al mar en Kavarna](https://realhunt.co/es/deal/bg-kavarna-66k-89682) · Kavarna Paradise, Kavarna (mar Negro) · nota 92 · 87 m² · 2 dorm.
 
-[Las 6 casas en Bulgaria](https://realhunt.co/es/homes/bulgaria)
+[Las 7 casas en Bulgaria](https://realhunt.co/homes/bulgaria)
 
-[Gastos, impuestos y fuentes de Bulgaria](https://realhunt.co/es/costs/bulgaria) · [Calculadora de gastos de compra para Bulgaria](https://realhunt.co/es/buying-costs/bulgaria) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
+[Gastos, impuestos y fuentes de Bulgaria](https://realhunt.co/costs/bulgaria) · [Calculadora de gastos de compra para Bulgaria](https://realhunt.co/es/buying-costs/bulgaria) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara Bulgaria
 
@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 - [Bulgaria vs Dinamarca](https://realhunt.co/es/countries/bulgaria-vs-denmark)
 - [Bulgaria vs Francia](https://realhunt.co/es/countries/bulgaria-vs-france)
 - [Bulgaria vs Suecia](https://realhunt.co/es/countries/bulgaria-vs-sweden)
-- [Bulgaria vs Polonia](https://realhunt.co/es/countries/bulgaria-vs-poland)
 - [Bulgaria vs Japón](https://realhunt.co/es/countries/bulgaria-vs-japan)
+- [Bulgaria vs Polonia](https://realhunt.co/es/countries/bulgaria-vs-poland)
 
 ### Fuentes
 

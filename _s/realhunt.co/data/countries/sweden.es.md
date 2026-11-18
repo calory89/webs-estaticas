@@ -1,6 +1,6 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 37 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 37 casas es de 71.000 € (701 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 39 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 39 casas es de 72.000 € (680 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 37 |
-| Precio de salida mediano | 71.000 € |
-| Precio mediano por m² | 701 € (19 casas de superficie conocida) |
+| Casas en RealHunt | 39 |
+| Precio de salida mediano | 72.000 € |
+| Precio mediano por m² | 680 € (21 casas de superficie conocida) |
 | Superficie mediana | 110 m² |
 | La más barata y la más cara | 22.000 € · 99.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/sweden
 
-## Las 37 casas, de mejor a peor nota
+## Las 39 casas, de mejor a peor nota
 
 ### Villa acogedora con sauna, a 100 m del río
 
@@ -153,6 +153,14 @@ Vistas al lago, el bosque a la puerta y una casa que ya viene con algunas mejora
 
 https://realhunt.co/es/deal/DcIDShNij6M
 
+### 1920s villa with geothermal heating and a private garden in central Vansbro, Dalarna
+
+77.000 € · Vansbro, Dalarna · 122 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
+
+A 1920s house in the middle of Vansbro, on the Västerdal river in Dalarna, with a sheltered 1,651 m² plot next to a playground. 122 m² with five rooms, three of them bedrooms, a separate dining room, a bright living room with a stove and a bathroom between the two upstairs bedrooms. Geothermal heating was installed in 2019, the incoming water pipe was renewed in 2023 and the windows are triple glazed. School, shops, pharmacy, swimming pool and the bus and railway station are within walking distance. Freehold. Asking 850,000 SEK (about €77,000), around €630/m².
+
+https://realhunt.co/es/deal/se-vansbro-1920s-villa-geothermal-850k-sek
+
 ### Adosado familiar con jardín y galería acristalada en Eslöv
 
 94.100 € · Eslöv, Skåne (about 55 min from Copenhagen) · 117 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
@@ -224,6 +232,14 @@ https://realhunt.co/es/deal/DbC0D4RoLzc
 Cerca del lago Mellansjön y rodeada de bosque, la propiedad tiene una casita principal sencilla, más sitio para dormir en construcciones anexas independientes y mucho espacio fuera para bañarse, pescar y no hacer nada. La ha usado la misma familia durante muchos años, y las cabañas hacen que sea un montaje relajado para recibir a amigos o familia.
 
 https://realhunt.co/es/deal/DczrZZlCl9L
+
+### Red wooden three-bedroom house with conservatory and greenhouse in Arbrå, Hälsingland
+
+72.000 € · Arbrå, Gävleborg · 108 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
+
+A classic red wooden house with white corners in a central, child-friendly part of Arbrå, in Hälsingland. 108 m² on one and a half floors with four rooms, three of them bedrooms, a modern fully equipped kitchen, a shower room downstairs and a bathroom with bath upstairs. Surfaces have been renovated over time, two sides of the facade were painted in 2025 and the dishwasher is new in 2026. Glazed conservatory, greenhouse and carport on a 515 m² plot, district heating. Freehold. Asking 795,000 SEK (about €72,000), around €670/m². Running costs 37,524 SEK a year (about €3,400) plus property fee 4,920 SEK.
+
+https://realhunt.co/es/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 
 ### Cabaña con vistas al mar, acceso para bañarse y amarre para barco
 

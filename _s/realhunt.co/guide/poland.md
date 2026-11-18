@@ -36,7 +36,7 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 - [€68,316 · Five-room flat in a 1904 building next to the medical university in Zabrze](https://realhunt.co/deal/pl-zabrze-68k-033339) · Centrum, Zabrze · score 92 · 77 m² · 4 bed
 - [€72,885 · Spacious 89 m² townhouse flat with wood floors in Wałbrzych](https://realhunt.co/deal/pl-walbrzych-73k-831228) · Stary Zdrój, Wałbrzych · score 90 · 89 m² · 3 bed
 
-[All 30 homes in Poland](https://realhunt.co/homes/poland)
+[All 31 homes in Poland](https://realhunt.co/homes/poland)
 
 [Costs, taxes and sources for Poland](https://realhunt.co/costs/poland) · [Buying-cost calculator for Poland](https://realhunt.co/buying-costs/poland) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

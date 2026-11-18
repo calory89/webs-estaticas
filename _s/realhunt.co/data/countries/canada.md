@@ -1,6 +1,6 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 9 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 9 homes is €92,552 (€930 per m², from the 9 homes with a known size); the cheapest costs €55,842 and the most expensive €99,500. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026). With 9 homes this is a small sample, so the median for Canada is a rough guide.
+On 18 November 2026, RealHunt lists 11 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 11 homes is €93,111 (€963 per m², from the 11 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/canada · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 9 (small sample) |
-| Median asking price | €92,552 |
-| Median price per m² | €930 (9 homes with a known size) |
-| Median size | 83 m² |
-| Cheapest and most expensive | €55,842 · €99,500 |
+| Homes on RealHunt | 11 |
+| Median asking price | €93,111 |
+| Median price per m² | €963 (11 homes with a known size) |
+| Median size | 94 m² |
+| Cheapest and most expensive | €55,842 · €190,700 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
 | Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied. |
@@ -51,7 +51,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/canada
 
-## The 9 homes, best score first
+## The 11 homes, best score first
 
 ### Updated 2-bed house in Glace Bay, Nova Scotia
 
@@ -101,6 +101,14 @@ A 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian co
 
 https://realhunt.co/deal/ca-grande-anse-99k-148091
 
+### Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia
+
+€127,100 · Pictou, Nova Scotia · 132 m² · 3 bedrooms · RealHunt score 86 · added 2026-11-18
+
+Asking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the Northumberland Strait. The kitchen is brand new, with white units, wood counters and an island, and opens to a bright dining room with exposed beams. There is a large bathroom with laundry on the ground floor, and three bedrooms plus an office upstairs. The fenced back garden has a big new deck, a shed and a wired workshop. Downtown shops, cafes, the marina and the waterfront are a few steps away.
+
+https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k
+
 ### Move-in ready 2-bed house in Shearstown, Newfoundland
 
 €99,323 · Shearstown, Newfoundland · 79 m² · 2 bedrooms · RealHunt score 85 · added 2026-09-23
@@ -116,6 +124,14 @@ https://realhunt.co/deal/shearstown-99323
 83 m² (896 sq ft), 2 bed, 1 bath. Asking C$159,900. The listing mentions: new detached garage, updated decks, efficient ductless heat pump, completed landscaping.
 
 https://realhunt.co/deal/minto-99323
+
+### Four-bedroom house on about five acres in St. Andrews by-the-Sea, New Brunswick
+
+€190,700 · Saint Andrews, New Brunswick · 150 m² · 4 bedrooms · RealHunt score 82 · added 2026-11-18
+
+Asking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of St. Andrews by-the-Sea, a well-known coastal resort town in New Brunswick. It has four bedrooms and two full bathrooms, two bedrooms on the main level and two below, a bright living room with wood floors, a kitchen with wood cabinets and large decks. The land is mostly lawn and trees, with a storage shed, and the aerial photos show the bay in the distance. Downtown shops, restaurants and the waterfront are minutes away. Yearly property tax C$3,679.
+
+https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 
 ### Updated 2-bed house in Hughes Brook, Newfoundland
 

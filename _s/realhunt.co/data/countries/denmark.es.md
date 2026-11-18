@@ -1,6 +1,6 @@
 # Casas baratas en Dinamarca: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 45 casas en venta en Dinamarca, revisadas una a una por una persona. En Dinamarca, el precio de salida mediano de esas 45 casas es de 93.200 € (787 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 35.400 € y la más cara, 99.900 €. Los impuestos y gastos de compra suman alrededor del 1,5–3% del precio de una casa en Dinamarca (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 46 casas en venta en Dinamarca, revisadas una a una por una persona. En Dinamarca, el precio de salida mediano de esas 46 casas es de 93.200 € (790 € por m², calculado con las 44 casas de superficie conocida); la más barata cuesta 35.400 € y la más cara, 160.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3% del precio de una casa en Dinamarca (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/denmark · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://realhunt.co/data/countries/denmark.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/denmark.json · PDF: https:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 45 |
+| Casas en RealHunt | 46 |
 | Precio de salida mediano | 93.200 € |
-| Precio mediano por m² | 787 € (43 casas de superficie conocida) |
+| Precio mediano por m² | 790 € (44 casas de superficie conocida) |
 | Superficie mediana | 115 m² |
-| La más barata y la más cara | 35.400 € · 99.900 € |
+| La más barata y la más cara | 35.400 € · 160.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 88 |
 | Impuestos y gastos de compra | 1,5–3% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sin domicilio danés o 5 años de residencia anterior necesitas permiso del Departamento de Asuntos Civiles (Civilstyrelsen); los ciudadanos de la UE/EEE que viven y están registrados en Dinamarca pueden comprar una vivienda permanente sin permiso firmando una declaración ante el Tribunal de Registro de Tierras. Las casas de vacaciones (sommerhuse) necesitan permiso, que solo se concede a personas con vínculos particularmente fuertes con Dinamarca, como muchos años de vacaciones allí. |
@@ -51,7 +51,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/denmark
 
-## Las 45 casas, de mejor a peor nota
+## Las 46 casas, de mejor a peor nota
 
 ### Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €
 
@@ -412,3 +412,11 @@ https://realhunt.co/es/deal/dk-tylstrup-80k-3cfe80
 Adosado bien cuidado de 79 m² de 1979, modernizado y listo para entrar, en un barrio tranquilo de Herborg, cerca de Videbæk. Jardín frondoso, cocina abierta luminosa y poco mantenimiento. Precio: 665.000 coronas danesas. Los ciudadanos de la UE que se mudan a Dinamarca pueden comprar libremente; el resto necesita permiso del Ministerio de Justicia.
 
 https://realhunt.co/es/deal/dk-herborg-89k-d18595
+
+### Move-in ready villa with modern kitchen, big terrace and open field views near Høng
+
+160.000 € · Sæby near Høng, West Zealand · 101 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
+
+A bright, well-kept villa in the village of Sæby, a short drive from Høng in West Zealand, registered as a villa for year-round living and described as ready to move into. 101 m² from 1948 with a modern white handle-free kitchen open to the dining area, a roomy living room, three rooms including a first floor with skylights, and a bathroom with a separate shower. Outside there is a large wooden terrace, an easy green garden on a 491 m² plot, a carport and open views over the fields. Asking 1,195,000 DKK (about €160,000), around €1,585/m². Owner costs 1,291 DKK a month (about €173).
+
+https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk

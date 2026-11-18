@@ -36,7 +36,7 @@ Tax on rental income: A non-resident who rents out a Danish home is taxed in Den
 - [€93,200 · Six-room country villa from 1877 with a heat pump in Hjerm](https://realhunt.co/deal/dk-hjerm-93k-04870b) · Hjerm, West Jutland · score 93 · 177 m² · 5 bed
 - [€93,000 · Bright 130 m² villa with a big garden in Døjringe, Mid-Zealand](https://realhunt.co/deal/dk-munke-bjergby-93k-1947) · Døjringe, Munke Bjergby (about 60 min from Copenhagen) · score 93 · 130 m² · 3 bed
 
-[All 45 homes in Denmark](https://realhunt.co/homes/denmark)
+[All 46 homes in Denmark](https://realhunt.co/homes/denmark)
 
 [Costs, taxes and sources for Denmark](https://realhunt.co/costs/denmark) · [Buying-cost calculator for Denmark](https://realhunt.co/buying-costs/denmark) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +47,8 @@ Tax on rental income: A non-resident who rents out a Danish home is taxed in Den
 - [Denmark vs United States](https://realhunt.co/countries/denmark-vs-united-states)
 - [Denmark vs France](https://realhunt.co/countries/denmark-vs-france)
 - [Denmark vs Sweden](https://realhunt.co/countries/denmark-vs-sweden)
-- [Denmark vs Poland](https://realhunt.co/countries/denmark-vs-poland)
 - [Denmark vs Japan](https://realhunt.co/countries/denmark-vs-japan)
+- [Denmark vs Poland](https://realhunt.co/countries/denmark-vs-poland)
 - [Denmark vs Germany](https://realhunt.co/countries/denmark-vs-germany)
 
 ### Sources

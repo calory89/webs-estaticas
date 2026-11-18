@@ -36,7 +36,7 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 - [€68,984 · 3-bed apartment in Cuautlancingo, Puebla](https://realhunt.co/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · score 87 · 78 m² · 3 bed
 - [€86,100 · New 2-bed condo with rooftop and terrace in Mazatlán, ready now](https://realhunt.co/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · score 86 · 68 m² · 2 bed
 
-[All 10 homes in Mexico](https://realhunt.co/homes/mexico)
+[All 12 homes in Mexico](https://realhunt.co/homes/mexico)
 
 [Costs, taxes and sources for Mexico](https://realhunt.co/costs/mexico) · [Buying-cost calculator for Mexico](https://realhunt.co/buying-costs/mexico) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 - [Mexico vs Denmark](https://realhunt.co/countries/denmark-vs-mexico)
 - [Mexico vs France](https://realhunt.co/countries/france-vs-mexico)
 - [Mexico vs Sweden](https://realhunt.co/countries/mexico-vs-sweden)
-- [Mexico vs Poland](https://realhunt.co/countries/mexico-vs-poland)
 - [Mexico vs Japan](https://realhunt.co/countries/japan-vs-mexico)
+- [Mexico vs Poland](https://realhunt.co/countries/mexico-vs-poland)
 
 ### Sources
 

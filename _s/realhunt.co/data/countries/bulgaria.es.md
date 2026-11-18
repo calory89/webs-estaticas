@@ -1,6 +1,6 @@
 # Casas baratas en Bulgaria: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 6 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 6 casas es de 66.000 € (740 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 70.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
+A 18 de noviembre de 2026, RealHunt publica 7 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 7 casas es de 66.000 € (740 € por m², calculado con las 7 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 89.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/bulgaria · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 6 (muestra pequeña) |
+| Casas en RealHunt | 7 (muestra pequeña) |
 | Precio de salida mediano | 66.000 € |
-| Precio mediano por m² | 740 € (6 casas de superficie conocida) |
-| Superficie mediana | 90 m² |
-| La más barata y la más cara | 58.900 € · 70.000 € |
+| Precio mediano por m² | 740 € (7 casas de superficie conocida) |
+| Superficie mediana | 87 m² |
+| La más barata y la más cara | 58.900 € · 89.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 93 |
 | Impuestos y gastos de compra | 3,2–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, edificios y apartamentos, con derechos similares a los locales; según GPG, los extranjeros no pueden ser propietarios de tierra directamente, por lo que una empresa búlgara es la ruta habitual. |
@@ -44,7 +44,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/bulgaria
 
-## Las 6 casas, de mejor a peor nota
+## Las 7 casas, de mejor a peor nota
 
 ### Piso de dos dormitorios con vistas panorámicas al mar en primera línea en Pomorie
 
@@ -93,3 +93,11 @@ https://realhunt.co/es/deal/bg-byala-58k-fbw62u
 Piso de 86,5 m² en planta baja de un complejo cuidado de 2007, a 3 minutos andando de la playa: recibidor, salón con cocina equipada y comedor, dos dormitorios amueblados, baño y terraza con vistas al mar. La orientación suroeste da luz todo el día. Se vende totalmente amueblado y equipado, en muy buen estado y sin necesidad de reforma; sirve para vacaciones o para vivir todo el año. Precio 66.000 €, unos 759 €/m².
 
 https://realhunt.co/es/deal/bg-kavarna-66k-89682
+
+### Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas
+
+89.000 € · Sveti Vlas, Burgas · 64 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
+
+A furnished 64 m² flat (57 m² net) on the 2nd floor of a small three-storey building in Sveti Vlas, about 300 m from the beach. Living room, separate kitchen, one bedroom, bathroom and two balconies, south-facing with a sea view. Owners share an outdoor pool, green areas and a barbecue corner. The building has its Act 16 permit and, unusually for this coast, the advert states there is no maintenance fee. Inverter air conditioning, energy class A. Asking €89,000, about €1,390/m².
+
+https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034

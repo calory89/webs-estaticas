@@ -1,6 +1,6 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 182 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 182 casas es de 95.000 € (1.193 € por m², calculado con las 178 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 186 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 186 casas es de 96.000 € (1.208 € por m², calculado con las 182 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 182 |
-| Precio de salida mediano | 95.000 € |
-| Precio mediano por m² | 1.193 € (178 casas de superficie conocida) |
+| Casas en RealHunt | 186 |
+| Precio de salida mediano | 96.000 € |
+| Precio mediano por m² | 1.208 € (182 casas de superficie conocida) |
 | Superficie mediana | 85 m² |
 | La más barata y la más cara | 38.000 € · 348.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/spain
 
-## Las 182 casas, de mejor a peor nota
+## Las 186 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios con terraza en Alpujarra de la Sierra
 
@@ -1000,6 +1000,14 @@ Bajo amueblado en el residencial La Caleta, en Parque Holandés: 2 dormitorios, 
 
 https://realhunt.co/es/deal/es-la-caleta-170k-006586
 
+### Furnished five-bedroom mountain house with Ubiñas views in Quirós, Asturias
+
+180.000 € · Ricabo, Quirós, Asturias · 145 m² · 5 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
+
+A house of 145 m2 in the village of Ricabo, inside the Las Ubiñas-La Mesa Natural Park, with a patio terrace looking straight at the peaks. Renovated inside with redone wiring and plumbing and a new water heater, and sold furnished. Ground floor with living room and fireplace, kitchen, a bedroom, bathroom, cellar and workshop, three more bedrooms and a second living room upstairs, plus an attic. A closed garage and a nearby plot with a vegetable garden are included. Radiators are in place but the heating is not yet connected. Pola de Lena is about 20 minutes away.
+
+https://realhunt.co/es/deal/es-asturias-quiros-ricabo-mountain-house-180k
+
 ### Apartamento con vistas al mar junto al puerto deportivo, con terraza en esquina y piscina climatizada
 
 250.000 € · Golf del Sur, Tenerife · 91 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-11
@@ -1079,6 +1087,14 @@ https://realhunt.co/es/deal/es-san-pedro-del-pinatar-99k-91782
 Dúplex para entrar a vivir en tres niveles en Cadalso de los Vidrios: salón comedor luminoso con chimenea y salida a un patio privado, cocina independiente y aseo, dos dormitorios con armarios empotrados y baño, y una buhardilla con dos dormitorios más y un segundo baño completo. 116 m², 4 dormitorios.
 
 https://realhunt.co/es/deal/es-cadalso-de-los-vidrios-155k-995484
+
+### Three-bedroom townhouse with two terraces in La Marina, Costa Blanca
+
+160.000 € · La Marina, Elche, Alicante · 116 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
+
+A townhouse of 116 m2 in the La Marina urbanisation on the southern Costa Blanca, extended upwards to give three bedrooms and two bathrooms, including an extra-large main bedroom. It faces east for morning sun and is described as ready to move into. The photos show a tiled front terrace with awning, a first-floor balcony, a fitted kitchen with dishwasher, a long living and dining room with air conditioning and a small roof solarium. At about 1,380 euros per m2 it is well below most homes on this stretch of coast. Community fees are not stated in the advert.
+
+https://realhunt.co/es/deal/es-costa-blanca-la-marina-townhouse-160k
 
 ### Casa de pueblo de 1925 restaurada, con vigas, chimenea y patio privado
 
@@ -1448,6 +1464,14 @@ Dúplex muy luminoso en Terrassa, a 22 km de Barcelona, con 2 dormitorios, baño
 
 https://realhunt.co/es/deal/es-terrassa-169k-923454
 
+### Two-bedroom duplex with private garden and shared pool in Costa de Antigua
+
+180.000 € · Costa de Antigua, Fuerteventura · 61 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
+
+A two-floor home of about 61 m2 in the Los Soles complex on the east coast of Fuerteventura, a few minutes from Caleta de Fuste and its beaches. Downstairs is a bright living room with an open modern kitchen and a guest toilet, upstairs two bedrooms and a full bathroom. The private rear terrace garden opens towards the communal pool, which the advert says was recently renovated and has showers and toilets. Described as in excellent condition and ready to move into. Community fees are not stated in the advert, so ask before making an offer.
+
+https://realhunt.co/es/deal/es-fuerteventura-costa-antigua-duplex-pool-180k
+
 ### Apartamento reformado con mucho gusto a pocos pasos de Montaña Amarilla
 
 199.000 € · Costa del Silencio, Tenerife · 58 m² · 1 dormitorios · nota RealHunt 79 · añadida el 2026-10-11
@@ -1463,6 +1487,14 @@ https://realhunt.co/es/deal/es-costa-del-silencio-199k-024468
 85.000 € por 63 m² y 1 dormitorio en Biar (Alicante), unos 1.349 €/m². Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-biar-85k-66151
+
+### One-bedroom flat with a sunny terrace, shared pool and sea views in Almuñécar
+
+149.000 € · Almuñécar, Granada · 45 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
+
+A 45 m² flat in Los Pinos, a hillside residential area of Almuñécar on the Costa Tropical, in a small white complex of only five homes. One bedroom, one bathroom, an open kitchen behind a brick arch and a living room with air conditioning that opens onto a wide tiled terrace. A few steps away are the shared pool and a covered barbecue area, both looking straight out over the Mediterranean and the coast. Terracotta floors, sold empty and clean. The price has been cut by about 10% to €149,000. Community fees are not stated in the advert.
+
+https://realhunt.co/es/deal/es-almunecar-los-pinos-sea-view-pool-flat-149k
 
 ### Piso reformado hace menos de un año en el centro de Aranjuez
 

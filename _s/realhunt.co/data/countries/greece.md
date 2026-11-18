@@ -1,6 +1,6 @@
 # Cheap homes in Greece: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 14 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 14 homes is €115,000 (€1,397 per m², from the 13 homes with a known size); the cheapest costs €68,000 and the most expensive €159,990. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 18 November 2026, RealHunt lists 20 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 20 homes is €125,000 (€1,364 per m², from the 19 homes with a known size); the cheapest costs €68,000 and the most expensive €175,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/greece · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 14 |
-| Median asking price | €115,000 |
-| Median price per m² | €1,397 (13 homes with a known size) |
-| Median size | 72 m² |
-| Cheapest and most expensive | €68,000 · €159,990 |
-| Median RealHunt score (70 to 98) | 88 |
+| Homes on RealHunt | 20 |
+| Median asking price | €125,000 |
+| Median price per m² | €1,364 (19 homes with a known size) |
+| Median size | 80 m² |
+| Cheapest and most expensive | €68,000 · €175,000 |
+| Median RealHunt score (70 to 98) | 87 |
 | Taxes and fees to buy | 5.5–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026. |
 | Yearly property tax | Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000. |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/greece
 
-## The 14 homes, best score first
+## The 20 homes, best score first
 
 ### Three-bedroom village house with a vine-covered terrace and sea views in Messinia
 
@@ -80,6 +80,14 @@ A 110 m² stone maisonette in Paleo Klima, Glossa, on the Mamma Mia island of Sk
 
 https://realhunt.co/deal/gr-skopelos-sea-view-150k
 
+### Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos
+
+€170,000 · Othos, Karpathos · 165 m² · 4 bedrooms · RealHunt score 89 · added 2026-11-18
+
+A three-floor house of 165 m² in Othos, the highest village on Karpathos, renovated in 2014. Four bedrooms and four bathrooms, a large separate kitchen with a breakfast bar and a bright tiled living room. The top floor opens onto a wide terrace that looks over the white village, the hills and the Aegean. It is connected to mains water and sewage, and the village centre is a walk away. The advert puts Pigadia, the island capital and ferry port, 12 km away and Sikelao beach 8 km away. Asking €170,000, about €1,030/m², low for an island house this size.
+
+https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k
+
 ### Traditional corner house in Agiasos, Lesbos' mountain village
 
 €70,000 · Agiasos, Lesbos · 2 bedrooms · RealHunt score 88 · added 2026-10-05
@@ -112,6 +120,14 @@ Surrounded by towering trees in the mountain village of Chania in Pelion, a 68 m
 
 https://realhunt.co/deal/gr-pelion-fairytale-house-95k
 
+### Renovated single-storey country house among olive groves near Gytheio
+
+€85,000 · Near Gytheio, Laconia · 82 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-18
+
+A single-storey house of 82 m2 on an 845 m2 hillside plot with 17 olive trees, a citrus tree and a vine pergola, recently renovated: new floor tiles inside and out, new kitchen cupboards, restored timber roof, shutters and doors, fresh paint. Living room, kitchen with WC, two bedrooms, an extra room for dining or office, and a bathroom with bath. Two covered terraces look over the olive groves. Air conditioning in three rooms, mains water and electricity, septic tank. Sold largely furnished. Only three other houses nearby, so it is very quiet and you will need a car.
+
+https://realhunt.co/deal/gr-laconia-gytheio-renovated-country-house-85k
+
 ### Furnished Cretan house with a shared pool for just four homes
 
 €158,000 · Drapanos, Apokoronas, Crete · 76 m² · 2 bedrooms · RealHunt score 87 · added 2026-10-16
@@ -119,6 +135,14 @@ https://realhunt.co/deal/gr-pelion-fairytale-house-95k
 Villa Dionysos: a fully furnished 76 m² two-bedroom house over two floors in a small, quiet complex in Drapanos, near Chania. A bright open-plan living room with a corner sofa and fireplace opens onto a covered private terrace; the kitchen and dining area look out over the pool, shared by only four houses and backed by open countryside. Upstairs, two double bedrooms, each with its own terrace, the master with sea views. Asking €158,000, about €2,079/m².
 
 https://realhunt.co/deal/gr-crete-drapanos-pool-158k
+
+### Renovated stone village house with courtyards in Karydi, eastern Crete
+
+€175,000 · Karydi, Agios Nikolaos, Crete · 160 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-18
+
+A stone house of 160 m2 on two levels in the hill village of Karydi, renovated in two stages, 2010 and 2024, and sold fully furnished. The ground floor has an open kitchen with a sitting corner by the fireplace, a large living and dining room, a double bedroom and a big bathroom with laundry area opening to the yard. Upstairs is a second bedroom with two balconies. Front and back yards, a store room, solar water heating and air conditioning in the living room and both bedrooms. About 20 to 25 minutes by car from Elounda and Neapoli, and an hour from Heraklion airport.
+
+https://realhunt.co/deal/gr-crete-karydi-renovated-stone-house-175k
 
 ### Furnished two-bedroom flat with a sea view in Pefki, North Evia
 
@@ -135,6 +159,22 @@ https://realhunt.co/deal/gr-evia-pefki-80k-19672601
 An 84 m² detached house in Paradeisi on Rhodes, in very good condition, modern, bright and sold furnished: a stylish kitchen with a breakfast bar and pendant lights, a living room, two bedrooms and a bathroom. Air conditioning, a solar water heater, aluminium frames and tiled floors, with no shared expenses. Close to the sea, shops, cafés and the island's airport. Asking €155,000, about €1,845/m².
 
 https://realhunt.co/deal/gr-rhodes-paradeisi-modern-155k
+
+### Stone-built three-bedroom house with gulf views in Ano Volos, at the foot of Pelion
+
+€167,000 · Ano Volos, Magnesia · 114 m² · 3 bedrooms · RealHunt score 85 · added 2026-11-18
+
+A stone-faced house built in 2004 in Agios Georgios, an old quarter of Ano Volos on the road up to Portaria. 114 m² on three levels with three bedrooms, two bathrooms, two kitchens and a living room with a fireplace. A veranda and a small garden face west over Volos and the Pagasetic Gulf. Oil central heating with radiators, new air conditioning units, a solar water heater, a storage room and private parking. Sold partly furnished. The advert puts the Volos waterfront 6.5 km away and Anavros beach 6 km away. Asking €167,000, about €1,465/m².
+
+https://realhunt.co/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k
+
+### Restored 1881 stone mansion with castle views in Volissos, Chios
+
+€175,000 · Volissos, Chios · 129 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-18
+
+A stone house from 1881 in Volissos, in the north-west of Chios, once the village courthouse and later its school. Fully restored in 1998 and upgraded again in 2015: insulation, double glazing, a new tiled roof, solar hot water, renewed wiring and plumbing. 129 m² on two floors plus an attic bedroom under exposed beams, with two kitchens with marble worktops, two fireplaces and two bathrooms. The upper balcony looks over the village to the Genoese castle. The ground floor can work as a separate studio for guests. Asking €175,000, about €1,360/m².
+
+https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k
 
 ### Brand-new 2025 cottage with a pergola deck 400 m from the sea in Halkidiki
 
@@ -159,3 +199,11 @@ https://realhunt.co/deal/gr-trikeri-sea-terrace-120k
 A 62 m² house on a flat plot of 980 m² among olive trees and just a few neighbours, near Marathopolis: a sitting area with a wood stove, an open kitchen, a bedroom and a shower room downstairs, and a wooden staircase up to an attic with a balcony and extra beds. A garden with paths, a storeroom and a built-in BBQ. 2 km to Lagouvardos beach, 15 minutes to Gialova and its golf courses, 25 to Pylos. Asking €158,000, about €2,548/m².
 
 https://realhunt.co/deal/gr-gargaliani-garden-sea-158k
+
+### Furnished one-bedroom ground-floor flat with a private yard in Elounda, Crete
+
+€125,000 · Elounda, Crete · 35 m² · 1 bedrooms · RealHunt score 79 · added 2026-11-18
+
+A ground-floor flat of 35.5 m² in Elounda, one of the best-known resort towns in Crete, sold fully furnished and ready to use. An open kitchen and living room with air conditioning opens onto a front balcony, and the double bedroom gives straight onto a private walled yard with a tree and a seating area. Modern shower room, solar panels for hot water and a 20 m² basement storage room. The advert puts Agios Nikolaos under 10 minutes away by car and Heraklion airport about an hour away. Asking €125,000, a low entry price for Elounda.
+
+https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k

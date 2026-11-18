@@ -1,6 +1,6 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 54 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 54 casas es de 164.400 € (1.465 € por m², calculado con las 54 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 57 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 57 casas es de 173.300 € (1.465 € por m², calculado con las 57 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 54 |
-| Precio de salida mediano | 164.400 € |
-| Precio mediano por m² | 1.465 € (54 casas de superficie conocida) |
-| Superficie mediana | 111 m² |
+| Casas en RealHunt | 57 |
+| Precio de salida mediano | 173.300 € |
+| Precio mediano por m² | 1.465 € (57 casas de superficie conocida) |
+| Superficie mediana | 114 m² |
 | La más barata y la más cara | 65.428 € · 447.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
 | Impuestos y gastos de compra | 2–5% del precio (cifras de 2026) |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-states
 
-## Las 54 casas, de mejor a peor nota
+## Las 57 casas, de mejor a peor nota
 
 ### Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental
 
@@ -97,6 +97,14 @@ https://realhunt.co/es/deal/cleveland-68917
 Entra en el encanto de la histórica Savage House, una casa victoriana preciosa de 1900 en Scotland Neck, Carolina del Norte: 199 m² con tres dormitorios y dos baños, molduras de encaje de madera, porche al que se llega por un camino de ladrillo, techos altos e interiores recién arreglados con suelos de madera, en una parcela grande con sombra. Precio 169.900 $ (unos 151.000 €), unos 759 €/m².
 
 https://realhunt.co/es/deal/us-north-carolina-victorian-170k
+
+### Victorian house with original oak woodwork opposite a park in Marietta, Ohio
+
+200.000 € · Marietta, Ohio · 191 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-18
+
+Asking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio. The oak staircase, pocket doors, glazed French doors and wide trim are all still in place. It has three bedrooms, two bathrooms (one on the ground floor), an eat-in kitchen, a separate dining room, ground-floor laundry and a floored walk-up attic. Outside there is a front porch, rear deck, fenced back garden and a one-car detached garage. A city park, the library and the river trail are across the street or close by. Yearly property tax US$2,127, no HOA fee.
+
+https://realhunt.co/es/deal/us-marietta-oh-victorian-oak-woodwork-220k
 
 ### Casa de 3 dormitorios actualizada en Clairton, Pensilvania
 
@@ -153,6 +161,14 @@ https://realhunt.co/es/deal/us-tampa-8105-325k
 95 m² (1.024 sq ft), 2 dormitorios, 1 baño, construida en 1890. Precio: 94.900 $.
 
 https://realhunt.co/es/deal/east-palestine-82788
+
+### Well-kept three-bedroom colonial with a metal roof in Geneva, Finger Lakes
+
+218.100 € · Geneva, New York · 128 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
+
+Asking US$239,900 (about €218,100) for a move-in ready colonial of about 128 m² in Geneva, a small lakeside city in the Finger Lakes region of upstate New York. It has three bedrooms and two full bathrooms, one with a clawfoot tub, plus an enclosed front porch, a large kitchen with a gas range and a generously sized dining area. The furnace, tankless water heater and central air are new, and the vinyl siding and metal roof keep upkeep low. The back garden is private and has a big shed. The photos show a tidy, furnished home. Yearly property tax US$2,919, no HOA fee.
+
+https://realhunt.co/es/deal/us-geneva-ny-finger-lakes-colonial-240k
 
 ### Condo de dos dormitorios en última planta en comunidad cerrada estilo resort en Doral
 
@@ -217,6 +233,14 @@ https://realhunt.co/es/deal/us-ashland-89k-672054
 Renovado con acabados modernos, espacios luminosos y acceso exterior privado en la primera planta. Ubicado a minutos de la playa, centro de Fort Lauderdale y restaurantes de Las Olas. Comunidad de propietarios-ocupantes con ocupación estable que apoya financiamiento convencional. Posesión flexible disponible.
 
 https://realhunt.co/es/deal/us-fort-lauderdale-2455-e102-150k
+
+### Fully renovated brick rowhouse with a fenced yard in Lancaster, Pennsylvania
+
+213.600 € · Lancaster, Pennsylvania · 127 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-18
+
+Asking US$235,000 (about €213,600) for a brick rowhouse of about 127 m² that has been redone from top to bottom. The main floor is open plan with 9-foot ceilings and vinyl plank floors, and the new kitchen has white cabinets, butcher block counters, gas cooking and all appliances. Upstairs are three bedrooms and two new bathrooms with tiled showers, one of them en suite. Gas heating, central air, a usable basement and a fenced back garden complete it. Lancaster is a historic small city in Pennsylvania Dutch country. Yearly property tax US$1,744, no HOA fee.
+
+https://realhunt.co/es/deal/us-lancaster-pa-renovated-brick-rowhouse-235k
 
 ### Casa adosada de esquina junto a lago con jardín tropical en Westview, Pembroke Pines
 

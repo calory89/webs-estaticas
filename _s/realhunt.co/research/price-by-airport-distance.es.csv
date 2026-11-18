@@ -1,21 +1,23 @@
 ﻿tipo,nombre,desde_km,hasta_km,casas,precio_mediano_eur,mediana_eur_m2,casas_con_superficie,nota_mediana,distancia_mediana_km,a_menos_de_60_km_pct
-tramo,menos de 30 km,0,30,200,97000,1464,180,86,,
-tramo,de 30 a 60 km,30,60,215,83700,1008,190,85,,
-tramo,de 60 a 100 km,60,100,147,76000,975,133,84,,
-tramo,100 km o más,100,,16,83800,1159,12,84,,
+tramo,menos de 30 km,0,30,217,99000,1456,197,86,,
+tramo,de 30 a 60 km,30,60,235,85000,1037,210,85,,
+tramo,de 60 a 100 km,60,100,158,79900,991,144,84,,
+tramo,100 km o más,100,,18,83800,1094,14,84,,
 pais,Países Bajos,,,18,,,,,14,100
-pais,México,,,10,,,,,21,100
-pais,Grecia,,,14,,,,,28,100
-pais,Estados Unidos,,,54,,,,,29,78
-pais,España,,,182,,,,,38,78
-pais,Dinamarca,,,45,,,,,40,69
-pais,Japón,,,29,,,,,43,79
-pais,Italia,,,54,,,,,45,65
-pais,Bulgaria,,,6,,,,,47,100
-pais,Francia,,,42,,,,,47,64
-pais,Canadá,,,9,,,,,49,67
-pais,Suecia,,,32,,,,,49,75
-pais,Portugal,,,13,,,,,65,46
+pais,Chipre,,,5,,,,,18,100
+pais,México,,,12,,,,,21,100
+pais,Dominican Republic,,,5,,,,,25,100
+pais,Grecia,,,20,,,,,28,100
+pais,Estados Unidos,,,57,,,,,29,77
+pais,España,,,186,,,,,38,78
+pais,Dinamarca,,,46,,,,,43,70
+pais,Japón,,,31,,,,,43,77
+pais,Francia,,,45,,,,,45,64
+pais,Italia,,,64,,,,,46,64
+pais,Bulgaria,,,7,,,,,47,100
+pais,Suecia,,,34,,,,,49,74
+pais,Canadá,,,11,,,,,54,55
+pais,Portugal,,,18,,,,,58,56
 pais,Alemania,,,20,,,,,66,25
-pais,Polonia,,,30,,,,,68,47
+pais,Polonia,,,31,,,,,68,45
 pais,Suiza,,,10,,,,,71,30

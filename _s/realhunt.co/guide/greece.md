@@ -33,10 +33,10 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [€115,000 · Whitewashed Cretan village house with a roof terrace and spiral stairs](https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, near Neapoli, Crete · score 91 · 93 m² · 2 bed
 - [€68,000 · Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330) · Agia Triada, Marathokampos, Samos (Greece) · score 90 · 80 m² · 2 bed
 - [€150,000 · Stone island house with blue doors and a sea view over to Skiathos](https://realhunt.co/deal/gr-skopelos-sea-view-150k) · Glossa, Skopelos (Sporades) · score 89 · 110 m² · 2 bed
+- [€170,000 · Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · score 89 · 165 m² · 4 bed
 - [€95,000 · Fairy-tale house with a gazebo and stone BBQ in the Pelion forest](https://realhunt.co/deal/gr-pelion-fairytale-house-95k) · Chania, Pelion (near Portaria) · score 88 · 68 m² · 2 bed
-- [€76,000 · Renovated stone house with a Libyan Sea view in Agios Vasileios, Crete](https://realhunt.co/deal/gr-crete-viannos-76k-20595936) · Agios Vasileios, Viannos, Crete (Greece) · score 88 · 61 m² · 2 bed
 
-[All 14 homes in Greece](https://realhunt.co/homes/greece)
+[All 20 homes in Greece](https://realhunt.co/homes/greece)
 
 [Costs, taxes and sources for Greece](https://realhunt.co/costs/greece) · [Buying-cost calculator for Greece](https://realhunt.co/buying-costs/greece) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [Greece vs Denmark](https://realhunt.co/countries/denmark-vs-greece)
 - [Greece vs France](https://realhunt.co/countries/france-vs-greece)
 - [Greece vs Sweden](https://realhunt.co/countries/greece-vs-sweden)
-- [Greece vs Poland](https://realhunt.co/countries/greece-vs-poland)
 - [Greece vs Japan](https://realhunt.co/countries/greece-vs-japan)
+- [Greece vs Poland](https://realhunt.co/countries/greece-vs-poland)
 
 ### Sources
 

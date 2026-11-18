@@ -36,7 +36,7 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 - [€73,000 · 2-bedroom flat with terrace in Cartagena](https://realhunt.co/deal/es-cartagena-73k-74761) · Cartagena, Murcia, Spain · score 93 · 85 m² · 2 bed
 - [€63,500 · 2-bedroom country house with terrace in Benizalón](https://realhunt.co/deal/es-benizalon-63k-44767) · Benizalón, Almería, Spain · score 92 · 114 m² · 2 bed
 
-[All 182 homes in Spain](https://realhunt.co/homes/spain)
+[All 186 homes in Spain](https://realhunt.co/homes/spain)
 
 [Costs, taxes and sources for Spain](https://realhunt.co/costs/spain) · [Buying-cost calculator for Spain](https://realhunt.co/buying-costs/spain) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +47,8 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 - [Spain vs Denmark](https://realhunt.co/countries/denmark-vs-spain)
 - [Spain vs France](https://realhunt.co/countries/france-vs-spain)
 - [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
-- [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
 - [Spain vs Japan](https://realhunt.co/countries/japan-vs-spain)
+- [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
 - [Spain vs Germany](https://realhunt.co/countries/germany-vs-spain)
 
 ### Sources

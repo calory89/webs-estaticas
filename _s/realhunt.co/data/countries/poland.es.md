@@ -1,6 +1,6 @@
 # Casas baratas en Polonia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 30 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 30 casas es de 75.170 € (1.139 € por m², calculado con las 30 casas de superficie conocida); la más barata cuesta 53.693 € y la más cara, 79.968 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 31 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 31 casas es de 75.170 € (1.139 € por m², calculado con las 31 casas de superficie conocida); la más barata cuesta 53.693 € y la más cara, 90.600 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/poland · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 30 |
+| Casas en RealHunt | 31 |
 | Precio de salida mediano | 75.170 € |
-| Precio mediano por m² | 1.139 € (30 casas de superficie conocida) |
+| Precio mediano por m² | 1.139 € (31 casas de superficie conocida) |
 | Superficie mediana | 62 m² |
-| La más barata y la más cara | 53.693 € · 79.968 € |
-| Nota RealHunt mediana (de 70 a 98) | 86 |
+| La más barata y la más cara | 53.693 € · 90.600 € |
+| Nota RealHunt mediana (de 70 a 98) | 84 |
 | Impuestos y gastos de compra | 2,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Los ciudadanos de la UE, EEE e Islandia compran en los mismos términos que los polacos. Otros extranjeros pueden comprar un apartamento sin permiso, pero normalmente necesitan un permiso del Ministerio del Interior (MSWiA) para comprar una casa o terreno. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto local sobre bienes inmuebles (podatek od nieruchomości) que fija el municipio, con un máximo en 2026 de 1,25 PLN por m² de superficie útil en pisos y casas. |
@@ -45,7 +45,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/poland
 
-## Las 30 casas, de mejor a peor nota
+## Las 31 casas, de mejor a peor nota
 
 ### Piso de 127 m² con cuatro estancias, logia y despensa en Bytom
 
@@ -278,6 +278,14 @@ https://realhunt.co/es/deal/pl-kolo-80k-024273
 57 m² en la 6ª de 10 plantas, con ascensor: cocina abierta al salón, tres dormitorios y baño reformado. La agencia lo describe como sin gastos pendientes y listo para entrar ya. Precio 349.000 zł (unos 79.740 €). A unos 1.399 €/m² está un 18% por encima de la mediana de pisos en Wałbrzych (5.207 zł/m²), el precio de su estado.
 
 https://realhunt.co/es/deal/pl-walbrzych-80k-970297
+
+### Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze
+
+90.600 € · Szklarska Poręba, Lower Silesia · 71 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
+
+A sunny 71 m² ground-floor flat in a quiet part of Szklarska Poręba, a mountain resort in the Karkonosze, in a building that was thermally modernised a few years ago. Two rooms, kitchen and bathroom, with a garden and terrace, a large wooden balcony off the bedroom, a garage, a cellar and a store room. Heated by a fireplace and electric heating. The advert says it can be lived in as it is or freshened up. Separate ownership with its own land register entry. Asking 399,000 zł (about €90,600). Fee to the owners association: 600 zł a month (about €136).
+
+https://realhunt.co/es/deal/pl-szklarska-poreba-garden-flat-91k-543867
 
 ### Piso de cuatro estancias amueblado con dos logias en Łobez
 

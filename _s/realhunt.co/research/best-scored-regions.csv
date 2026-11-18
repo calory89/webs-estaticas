@@ -1,31 +1,33 @@
 ﻿region,country,homes,median_score,best_score,median_price_eur,median_eur_per_sqm,page
-Calabria,Italy,6,91,91,30000,700,https://realhunt.co/homes/italy/calabria
 West Jutland,Denmark,5,91,93,89100,774,https://realhunt.co/homes/denmark/west-jutland
 Funen,Denmark,5,90,92,79800,737,https://realhunt.co/homes/denmark/funen
 Almería,Spain,13,89,92,82900,981,https://realhunt.co/homes/spain/almeria
-Pennsylvania,United States,6,89,93,85929,872,https://realhunt.co/homes/united-states/pennsylvania
-Granada,Spain,20,88,94,84000,892,https://realhunt.co/homes/spain/granada
+Granada,Spain,21,88,94,84000,898,https://realhunt.co/homes/spain/granada
 Amsterdam,Netherlands,18,88,94,325000,4286,https://realhunt.co/homes/netherlands/amsterdam
+Calabria,Italy,7,88,91,30000,700,https://realhunt.co/homes/italy/calabria
+Pennsylvania,United States,7,88,93,85929,872,https://realhunt.co/homes/united-states/pennsylvania
 Wakayama,Japan,6,88,91,34960,,https://realhunt.co/homes/japan/wakayama
 Valencia,Spain,12,87,91,155000,1097,https://realhunt.co/homes/spain/valencia
 Podlaskie,Poland,5,87,88,71971,1087,https://realhunt.co/homes/poland/podlaskie
 Murcia,Spain,20,86,93,85000,1464,https://realhunt.co/homes/spain/murcia
-Asturias,Spain,8,86,90,85000,465,https://realhunt.co/homes/spain/asturias
-Sinaloa,Mexico,6,86,90,86100,1388,https://realhunt.co/homes/mexico/sinaloa
+Asturias,Spain,9,86,90,85000,465,https://realhunt.co/homes/spain/asturias
+Sinaloa,Mexico,7,86,90,86100,1388,https://realhunt.co/homes/mexico/sinaloa
 North Jutland,Denmark,11,85,98,93200,869,https://realhunt.co/homes/denmark/north-jutland
 Florida,United States,25,84,88,255400,2196,https://realhunt.co/homes/united-states/florida
-Alicante,Spain,13,84,91,99000,1737,https://realhunt.co/homes/spain/alicante
+Alicante,Spain,14,84,91,99000,1379,https://realhunt.co/homes/spain/alicante
 Tarragona,Spain,8,84,85,91000,1241,https://realhunt.co/homes/spain/tarragona
 Värmland,Sweden,6,84,88,83000,,https://realhunt.co/homes/sweden/varmland
-Fuerteventura,Spain,5,83,85,185000,3051,https://realhunt.co/homes/spain/fuerteventura
+Sicily,Italy,5,84,91,45000,600,https://realhunt.co/homes/italy/sicily
+Fuerteventura,Spain,6,83,85,185000,3051,https://realhunt.co/homes/spain/fuerteventura
 Chemnitz,Germany,14,82,87,50000,965,https://realhunt.co/homes/germany/chemnitz
 Madrid,Spain,11,82,87,169000,1432,https://realhunt.co/homes/spain/madrid
 Tenerife,Spain,9,82,85,199000,2873,https://realhunt.co/homes/spain/tenerife
 Barcelona,Spain,6,82,88,169000,1557,https://realhunt.co/homes/spain/barcelona
 Huelva,Spain,5,82,91,95000,1062,https://realhunt.co/homes/spain/huelva
-Tuscany,Italy,12,81,85,90000,1014,https://realhunt.co/homes/italy/tuscany
+Sardinia,Italy,6,81,84,150000,1860,https://realhunt.co/homes/italy/sardinia
 Lazio,Italy,5,81,89,16000,400,https://realhunt.co/homes/italy/lazio
 Saint-Étienne,France,5,81,84,54000,1154,https://realhunt.co/homes/france/saint-etienne
-Sardinia,Italy,5,81,84,97000,1860,https://realhunt.co/homes/italy/sardinia
+Umbria,Italy,5,81,88,46000,1404,https://realhunt.co/homes/italy/umbria
+Tuscany,Italy,13,80,85,90000,1252,https://realhunt.co/homes/italy/tuscany
 Aude,France,5,80,87,73000,945,https://realhunt.co/homes/france/aude
 Valais,Switzerland,7,78,85,59300,2372,https://realhunt.co/homes/switzerland/valais

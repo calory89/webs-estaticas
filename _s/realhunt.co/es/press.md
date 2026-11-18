@@ -8,29 +8,29 @@ Cifras actualizadas el 18 de noviembre de 2026 · Contacto de prensa: carlos@equ
 
 ### RealHunt en cifras
 
-- 591casas en venta en la web
-- 18países con al menos 3 casas
-- 85.000 €precio de salida mediano
+- 641casas en venta en la web
+- 19países con al menos 3 casas
+- 86.962 €precio de salida mediano
 - 7.400 €la casa más barata hoy
-- 72%de las casas cuesta 100.000 € o menos
+- 68%de las casas cuesta 100.000 € o menos
 - 70–98rango de notas hoy (escala de 70 a 98)
-- 85casas añadidas en los últimos 30 días
-- 49portales y agencias de los que salen las casas
+- 135casas añadidas en los últimos 30 días
+- 57portales y agencias de los que salen las casas
 - 280respuestas a «¿puedo comprar allí?» (14 nacionalidades, 20 países)
 
 Calculadas con las casas de la web cada vez que se actualiza. Precios de salida en euros.
 
 ### Datos que puedes citar
 
-- [Precio de salida mediano de una casa barata, por país (2026)](https://realhunt.co/es/research/prices). Precio mediano por m² más bajo: Japón, 340 €.
+- [Precio de salida mediano de una casa barata, por país (2026)](https://realhunt.co/es/research/prices). Precio mediano por m² más bajo: Japón, 398 €.
 - [Qué casa se compra con 50.000, 100.000 y 200.000 €, país por país (2026)](https://realhunt.co/es/research/what-your-budget-buys). Con 50.001 a 100.000 € se compra una mediana de 115 m² en Dinamarca y de 34 m² en Suiza.
 - [Gastos de compra de una vivienda por país: impuestos y gastos además del precio (2026)](https://realhunt.co/es/research/buying-costs-by-country). Del 0,6–1,1% en Georgia al 12–22% en el norte de Chipre.
 - [Dónde puede y dónde no puede comprar casa un extranjero: las normas de 20 países (2026)](https://realhunt.co/es/research/where-foreigners-can-buy). Libre para cualquier nacionalidad en 12 de 20 países; restringido en Canadá, Dinamarca y Suiza.
-- [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Calabria, Italia (91).
+- [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Jutlandia Occidental, Dinamarca (91).
 - [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 80 casas de 50.000 € o menos; la mayoría en Italia (33).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
 - [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 9 % de 551 casas está marcado como medio o alto; 13, como alto.
-- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.464 €/m² a menos de 30 km de un aeropuerto, 1.008 €/m² entre 30 y 60 km.
+- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.456 €/m² a menos de 30 km de un aeropuerto, 1.037 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
 
 Cada página tiene su gráfico, tabla, CSV, método y una cita lista para copiar. ¿Necesitas otro corte (un país, un tramo de precio, un mes)? Pídelo en carlos@equinoxinvestmentgroup.com.

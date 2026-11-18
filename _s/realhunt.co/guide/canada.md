@@ -34,9 +34,9 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 - [€55,842 · Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842) · Bulyea, Saskatchewan · score 88 · 62 m² · 2 bed
 - [€68,327 · Updated 2-bed house in Avonlea, Saskatchewan](https://realhunt.co/deal/avonlea-68327) · Avonlea, Saskatchewan · score 88 · 77 m² · 2 bed
 - [€99,500 · Acadian coast house with 4 bedrooms and a new bathroom](https://realhunt.co/deal/ca-grande-anse-99k-148091) · Grande-Anse, New Brunswick · score 86 · 107 m² · 4 bed
-- [€93,111 · Renovated 2-bed house in Astle, New Brunswick](https://realhunt.co/deal/astle-93111) · Astle, New Brunswick · score 86 · 94 m² · 2 bed
+- [€127,100 · Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k) · Pictou, Nova Scotia · score 86 · 132 m² · 3 bed
 
-[All 9 homes in Canada](https://realhunt.co/homes/canada)
+[All 11 homes in Canada](https://realhunt.co/homes/canada)
 
 [Costs, taxes and sources for Canada](https://realhunt.co/costs/canada) · [Buying-cost calculator for Canada](https://realhunt.co/buying-costs/canada) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 - [Canada vs Denmark](https://realhunt.co/countries/canada-vs-denmark)
 - [Canada vs France](https://realhunt.co/countries/canada-vs-france)
 - [Canada vs Sweden](https://realhunt.co/countries/canada-vs-sweden)
-- [Canada vs Poland](https://realhunt.co/countries/canada-vs-poland)
 - [Canada vs Japan](https://realhunt.co/countries/canada-vs-japan)
+- [Canada vs Poland](https://realhunt.co/countries/canada-vs-poland)
 
 ### Sources
 

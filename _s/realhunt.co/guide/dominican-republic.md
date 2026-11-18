@@ -33,8 +33,9 @@ Tax on rental income: Rent paid abroad to a non-resident is generally subject to
 - [€187,800 · Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359) · Juan Dolio, San Pedro de Macorís · score 89 · 82 m² · 2 bed
 - [€223,600 · Front-line beach flat in Juan Dolio with pool and jacuzzi](https://realhunt.co/deal/dr-juan-dolio-224k-447078) · Juan Dolio, San Pedro de Macorís · score 88 · 105 m² · 2 bed
 - [€201,200 · Furnished beachfront flat on Playa Las Ballenas, Las Terrenas](https://realhunt.co/deal/dr-las-terrenas-201k-439030) · Las Terrenas, Samaná · score 87 · 2 bed
+- [€150,000 · Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k) · Puerto Plata, Puerto Plata · score 84 · 103 m² · 2 bed
 
-[All 4 homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic)
+[All 5 homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic)
 
 [Costs, taxes and sources for Dominican Republic](https://realhunt.co/costs/dominican-republic) · [Buying-cost calculator for Dominican Republic](https://realhunt.co/buying-costs/dominican-republic) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -46,8 +47,8 @@ Tax on rental income: Rent paid abroad to a non-resident is generally subject to
 - [Dominican Republic vs Denmark](https://realhunt.co/countries/denmark-vs-dominican-republic)
 - [Dominican Republic vs France](https://realhunt.co/countries/dominican-republic-vs-france)
 - [Dominican Republic vs Sweden](https://realhunt.co/countries/dominican-republic-vs-sweden)
-- [Dominican Republic vs Poland](https://realhunt.co/countries/dominican-republic-vs-poland)
 - [Dominican Republic vs Japan](https://realhunt.co/countries/dominican-republic-vs-japan)
+- [Dominican Republic vs Poland](https://realhunt.co/countries/dominican-republic-vs-poland)
 
 ### Sources
 

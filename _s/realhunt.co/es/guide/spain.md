@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: UE/EEE 19% sobre el ren
 - [73.000 € · Piso de 2 dormitorios con terraza en Cartagena](https://realhunt.co/es/deal/es-cartagena-73k-74761) · Cartagena, Murcia, España · nota 93 · 85 m² · 2 dorm.
 - [63.500 € · Casa de campo de 2 dormitorios con terraza en Benizalón](https://realhunt.co/es/deal/es-benizalon-63k-44767) · Benizalón, Almería, España · nota 92 · 114 m² · 2 dorm.
 
-[Las 182 casas en España](https://realhunt.co/es/homes/spain)
+[Las 186 casas en España](https://realhunt.co/homes/spain)
 
 [Gastos, impuestos y fuentes de España](https://realhunt.co/es/costs/spain) · [Calculadora de gastos de compra para España](https://realhunt.co/es/buying-costs/spain) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -47,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: No residentes: UE/EEE 19% sobre el ren
 - [España vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-spain)
 - [España vs Francia](https://realhunt.co/es/countries/france-vs-spain)
 - [España vs Suecia](https://realhunt.co/es/countries/spain-vs-sweden)
-- [España vs Polonia](https://realhunt.co/es/countries/poland-vs-spain)
 - [España vs Japón](https://realhunt.co/es/countries/japan-vs-spain)
+- [España vs Polonia](https://realhunt.co/es/countries/poland-vs-spain)
 - [España vs Alemania](https://realhunt.co/es/countries/germany-vs-spain)
 
 ### Fuentes

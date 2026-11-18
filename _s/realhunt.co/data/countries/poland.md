@@ -1,6 +1,6 @@
 # Cheap homes in Poland: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 30 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 30 homes is €75,170 (€1,139 per m², from the 30 homes with a known size); the cheapest costs €53,693 and the most expensive €79,968. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
+On 18 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/poland · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 30 |
+| Homes on RealHunt | 31 |
 | Median asking price | €75,170 |
-| Median price per m² | €1,139 (30 homes with a known size) |
+| Median price per m² | €1,139 (31 homes with a known size) |
 | Median size | 62 m² |
-| Cheapest and most expensive | €53,693 · €79,968 |
-| Median RealHunt score (70 to 98) | 86 |
+| Cheapest and most expensive | €53,693 · €90,600 |
+| Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 2.5–4% of the price (as of 2026) |
 | Can foreigners buy? | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land. |
 | Yearly property tax | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses. |
@@ -45,7 +45,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/poland
 
-## The 30 homes, best score first
+## The 31 homes, best score first
 
 ### 127 m² four-room flat with a loggia and pantry in Bytom
 
@@ -278,6 +278,14 @@ https://realhunt.co/deal/pl-kolo-80k-024273
 57 m² on the 6th of 10 floors, with a lift: an open kitchen and living room, three bedrooms and a renovated bathroom. The agent describes it as needing no spending and ready to move in now. Asking 349,000 zł (about €79,740). At about €1,399/m² it is about 18% above the median for flats in Wałbrzych (5,207 zł/m²), the price of its condition.
 
 https://realhunt.co/deal/pl-walbrzych-80k-970297
+
+### Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze
+
+€90,600 · Szklarska Poręba, Lower Silesia · 71 m² · 1 bedrooms · RealHunt score 80 · added 2026-11-18
+
+A sunny 71 m² ground-floor flat in a quiet part of Szklarska Poręba, a mountain resort in the Karkonosze, in a building that was thermally modernised a few years ago. Two rooms, kitchen and bathroom, with a garden and terrace, a large wooden balcony off the bedroom, a garage, a cellar and a store room. Heated by a fireplace and electric heating. The advert says it can be lived in as it is or freshened up. Separate ownership with its own land register entry. Asking 399,000 zł (about €90,600). Fee to the owners association: 600 zł a month (about €136).
+
+https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867
 
 ### Furnished four-room flat with two loggias in Łobez
 

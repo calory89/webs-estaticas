@@ -1,6 +1,6 @@
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 42 homes for sale in France, each one checked by a person. In France, the median asking price of those 42 homes is €60,000 (€1,200 per m², from the 38 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 18 November 2026, RealHunt lists 45 homes for sale in France, each one checked by a person. In France, the median asking price of those 45 homes is €65,000 (€1,154 per m², from the 41 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/france · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 42 |
-| Median asking price | €60,000 |
-| Median price per m² | €1,200 (38 homes with a known size) |
-| Median size | 71 m² |
+| Homes on RealHunt | 45 |
+| Median asking price | €65,000 |
+| Median price per m² | €1,154 (41 homes with a known size) |
+| Median size | 74 m² |
 | Cheapest and most expensive | €39,000 · €285,000 |
 | Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 7–8.5% of the price (as of 2026) |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/france
 
-## The 42 homes, best score first
+## The 45 homes, best score first
 
 ### 171 m² house with a former shop in the centre of Bussière-Poitevine
 
@@ -177,6 +177,14 @@ Stone house in the center of a village : Le Lonzac, Nouvelle-Aquitaine Right in 
 
 https://realhunt.co/deal/Dc-ogTBIKeI
 
+### Fully renovated four-bedroom house with balcony and garden in Bergerac, Dordogne
+
+€139,000 · Bergerac, Dordogne · 150 m² · 4 bedrooms · RealHunt score 86 · added 2026-11-18
+
+A 150 m² stone house in Bergerac, on the Dordogne river, on a plot of about 270 m² and close to shops and services. The advert describes a total renovation with an energy rating of C and ducted reversible heating and cooling. Five rooms including four bedrooms, two bathrooms and three WCs, plus a balcony, a garden and two parking spaces. It is one of two lots in a small co-ownership with no running charges, as stated in the advert. Asking €139,000, about €927/m², which is low for a renovated house of this size in the Dordogne.
+
+https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k
+
 ### 66 m² flat with open views and a lift in Dijon
 
 €57,000 · Fontaine d'Ouche, Dijon · 66 m² · 1 bedrooms · RealHunt score 85 · added 2026-10-13
@@ -289,6 +297,14 @@ A 50 m² town house at the edge of the historic Saint-Mathieu quarter, with a li
 
 https://realhunt.co/deal/fr-perpignan-60k-990769
 
+### Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy
+
+€119,500 · La Charité-sur-Loire, Burgundy · 156 m² · 4 bedrooms · RealHunt score 81 · added 2026-11-18
+
+A renovated town house in the centre of La Charité-sur-Loire, the old priory town on the Loire, with shops, schools and transport close by. 156 m² with six rooms, four of them bedrooms, arranged around a central patio, plus a redone 27 m² studio-type space with a new roof and a large cellar. Electrics redone, full insulation carried out in 2011, double glazing, mains gas heating, mains drainage and fibre available. Asking €119,500, about €766/m². Property tax €970 a year; the advert gives gas at about €1,200 and electricity about €1,000 a year.
+
+https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k
+
 ### Studio with a view over the port of Marseille, gated residence
 
 €54,000 · La Cabucelle, Marseille · 28 m² · RealHunt score 80 · added 2026-10-13
@@ -328,6 +344,14 @@ https://realhunt.co/deal/fr-limoux-69k-vdt9re
 A three-storey village house of 58 m² in Durban-Corbières, in the wine hills behind Narbonne: living room with a modern open kitchen, two bedrooms, an office and two cellars. The Mediterranean beaches are about 30 minutes away.
 
 https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6
+
+### 19th-century stone village house with wisteria courtyard and terrace in Frayssinet, Lot
+
+€125,000 · Frayssinet, Lot · 113 m² · 3 bedrooms · RealHunt score 80 · added 2026-11-18
+
+A 19th-century stone house on a quiet lane in a peaceful village in the Lot, in Occitanie. About 113 m² with a generous sitting room, a kitchen diner with modern appliances, three bedrooms, one of them on the ground floor, and two shower rooms. The agent describes it as comfortable and habitable as it stands. Behind stone walls there is a private courtyard shaded by mature wisteria and a raised terrace. Glazing and heating could be upgraded over time, as the advert says. Shops are about 10 minutes away and a larger town with a railway station 20 minutes. Asking €125,000 including fees, about €1,106/m².
+
+https://realhunt.co/deal/fr-frayssinet-lot-stone-village-house-125k
 
 ### Furnished loft-style studio with a new bathroom in the hyper-centre, Saint-Étienne
 

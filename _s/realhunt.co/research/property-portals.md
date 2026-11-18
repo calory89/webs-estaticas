@@ -15,7 +15,7 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/propert
 7. [ThinkSPAIN](https://www.thinkspain.com/)
 8. [Kyero](https://www.kyero.com/)
 
-RealHunt: 182 checked homes, https://realhunt.co/homes/spain
+RealHunt: 186 checked homes, https://realhunt.co/homes/spain
 
 ## Portugal
 
@@ -26,7 +26,7 @@ RealHunt: 182 checked homes, https://realhunt.co/homes/spain
 5. [OLX](https://www.olx.pt/)
 6. [RE/MAX PT](https://www.remax.pt/)
 
-RealHunt: 13 checked homes, https://realhunt.co/homes/portugal
+RealHunt: 18 checked homes, https://realhunt.co/homes/portugal
 
 ## Italy
 
@@ -38,7 +38,7 @@ RealHunt: 13 checked homes, https://realhunt.co/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 59 checked homes, https://realhunt.co/homes/italy
+RealHunt: 69 checked homes, https://realhunt.co/homes/italy
 
 ## France
 
@@ -50,7 +50,7 @@ RealHunt: 59 checked homes, https://realhunt.co/homes/italy
 6. [Green-Acres](https://www.green-acres.fr/)
 7. [Superimmo](https://www.superimmo.com/)
 
-RealHunt: 42 checked homes, https://realhunt.co/homes/france
+RealHunt: 45 checked homes, https://realhunt.co/homes/france
 
 ## Germany
 
@@ -69,6 +69,8 @@ RealHunt: 20 checked homes, https://realhunt.co/homes/germany
 3. [OnTheMarket](https://www.onthemarket.com/)
 4. [PrimeLocation](https://www.primelocation.com/)
 5. [Purplebricks](https://www.purplebricks.co.uk/)
+
+RealHunt: 4 checked homes, https://realhunt.co/homes/united-kingdom
 
 ## Ireland
 
@@ -110,14 +112,14 @@ RealHunt: 10 checked homes, https://realhunt.co/homes/switzerland
 3. [home](https://home.dk/)
 4. [EDC](https://www.edc.dk/)
 
-RealHunt: 45 checked homes, https://realhunt.co/homes/denmark
+RealHunt: 46 checked homes, https://realhunt.co/homes/denmark
 
 ## Sweden
 
 1. [Hemnet](https://www.hemnet.se/)
 2. [Booli](https://www.booli.se/)
 
-RealHunt: 37 checked homes, https://realhunt.co/homes/sweden
+RealHunt: 39 checked homes, https://realhunt.co/homes/sweden
 
 ## Norway
 
@@ -136,7 +138,7 @@ RealHunt: 37 checked homes, https://realhunt.co/homes/sweden
 3. [Morizon](https://www.morizon.pl/)
 4. [Gratka](https://gratka.pl/)
 
-RealHunt: 30 checked homes, https://realhunt.co/homes/poland
+RealHunt: 31 checked homes, https://realhunt.co/homes/poland
 
 ## Czechia
 
@@ -160,7 +162,7 @@ RealHunt: 30 checked homes, https://realhunt.co/homes/poland
 2. [Homes.bg](https://www.homes.bg/)
 3. [Imoti.net](https://www.imoti.net/)
 
-RealHunt: 6 checked homes, https://realhunt.co/homes/bulgaria
+RealHunt: 7 checked homes, https://realhunt.co/homes/bulgaria
 
 ## Greece
 
@@ -168,7 +170,7 @@ RealHunt: 6 checked homes, https://realhunt.co/homes/bulgaria
 2. [XE.gr](https://www.xe.gr/)
 3. [Tospitimou](https://www.tospitimou.gr/)
 
-RealHunt: 14 checked homes, https://realhunt.co/homes/greece
+RealHunt: 20 checked homes, https://realhunt.co/homes/greece
 
 ## Croatia
 
@@ -186,7 +188,7 @@ RealHunt: 14 checked homes, https://realhunt.co/homes/greece
 1. [Bazaraki](https://www.bazaraki.com/)
 2. [Home.cy](https://www.home.cy/)
 
-RealHunt: 3 checked homes, https://realhunt.co/homes/cyprus
+RealHunt: 5 checked homes, https://realhunt.co/homes/cyprus
 
 ## Malta
 
@@ -211,7 +213,7 @@ RealHunt: 3 checked homes, https://realhunt.co/homes/cyprus
 7. [Century 21](https://www.century21.com/)
 8. [RE/MAX](https://www.remax.com/)
 
-RealHunt: 54 checked homes, https://realhunt.co/homes/united-states
+RealHunt: 57 checked homes, https://realhunt.co/homes/united-states
 
 ## Canada
 
@@ -220,7 +222,7 @@ RealHunt: 54 checked homes, https://realhunt.co/homes/united-states
 3. [RE/MAX CA](https://www.remax.ca/)
 4. [Point2](https://www.point2homes.com/)
 
-RealHunt: 9 checked homes, https://realhunt.co/homes/canada
+RealHunt: 11 checked homes, https://realhunt.co/homes/canada
 
 ## Mexico
 
@@ -229,6 +231,8 @@ RealHunt: 9 checked homes, https://realhunt.co/homes/canada
 3. [Lamudi MX](https://www.lamudi.com.mx/)
 4. [Propiedades.com](https://propiedades.com/)
 5. [Century 21 México](https://century21mexico.com/)
+
+RealHunt: 12 checked homes, https://realhunt.co/homes/mexico
 
 ## Colombia
 
@@ -289,7 +293,7 @@ RealHunt: 9 checked homes, https://realhunt.co/homes/canada
 2. [Corotos](https://www.corotos.com.do/)
 3. [RE/MAX RD](https://www.remaxrd.com/)
 
-RealHunt: 4 checked homes, https://realhunt.co/homes/dominican-republic
+RealHunt: 5 checked homes, https://realhunt.co/homes/dominican-republic
 
 ## United Arab Emirates
 
@@ -364,7 +368,7 @@ RealHunt: 4 checked homes, https://realhunt.co/homes/dominican-republic
 3. [at home](https://www.athome.co.jp/)
 4. [Real Estate Japan](https://realestate.co.jp/)
 
-RealHunt: 30 checked homes, https://realhunt.co/homes/japan
+RealHunt: 32 checked homes, https://realhunt.co/homes/japan
 
 ## Iceland
 

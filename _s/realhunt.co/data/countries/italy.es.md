@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 59 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 59 casas es de 49.000 € (975 € por m², calculado con las 33 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 69 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 69 casas es de 59.000 € (1.014 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 59 |
-| Precio de salida mediano | 49.000 € |
-| Precio mediano por m² | 975 € (33 casas de superficie conocida) |
-| Superficie mediana | 69 m² |
+| Casas en RealHunt | 69 |
+| Precio de salida mediano | 59.000 € |
+| Precio mediano por m² | 1.014 € (43 casas de superficie conocida) |
+| Superficie mediana | 76 m² |
 | La más barata y la más cara | 12.000 € · 195.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 83 |
+| Nota RealHunt mediana (de 70 a 98) | 82 |
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciprocidad (EE.UU., Reino Unido, Canadá, Australia califican). |
 | Impuesto anual sobre la vivienda | IMU 0,4-1,06% en segundas viviendas (sobre el valor catastral). |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 59 casas, de mejor a peor nota
+## Las 69 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -253,6 +253,14 @@ Casa con vistas al mar por 49.000 € en Sicilia, Italia 87 m² · 2 dormitorios
 
 https://realhunt.co/es/deal/Dclv5CJDdhi
 
+### Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, Calabria
+
+85.000 € · Torremezzo, Falconara Albanese, Calabria · 101 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
+
+A semi-detached house of 101 m² in Torremezzo, the seaside part of Falconara Albanese on the Tyrrhenian coast of Calabria. The advert gives its condition as excellent: four rooms on the ground floor with a separate fitted kitchen, three bedrooms and two bathrooms. Outside there is a covered veranda with room for a table and armchairs, a large paved courtyard with a garden corner, and a bedroom annex with a timber ceiling. The photos show it furnished and well kept, with tiled floors and wooden shutters. Asking €85,000, about €840/m². Energy class G.
+
+https://realhunt.co/es/deal/it-calabria-torremezzo-three-bed-courtyard-85k
+
 ### Piso de dos dormitorios con dos balcones en un pueblo histórico
 
 16.000 € · Fiamignano, Rieti, Lazio, Italy · 40 m² · nota RealHunt 83 · añadida el 2026-09-23
@@ -301,6 +309,14 @@ https://realhunt.co/es/deal/Dc_kLRrDKqS
 
 https://realhunt.co/es/deal/lake-como-peglio-85000
 
+### Four-bedroom village house with a guest flat and covered terrace in Secinaro, Abruzzo
+
+95.000 € · Secinaro, Abruzzo · 171 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
+
+A large house in the mountain village of Secinaro, made by joining three small flats, 171 m² in all. One part still works as a separate guest flat with its own living room, kitchen, bathroom and a bedroom with a balcony. The main home has vaulted ceilings, a kitchen with a dining room, a living room with a fireplace, further bedrooms and bathrooms, and balconies looking over the valley. A covered terrace at the entrance faces the village and the mountains. Furnished and lived in, with several entrances. The Sirente-Velino park starts at the edge of the village. Asking €95,000, about €555/m².
+
+https://realhunt.co/es/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
+
 ### Piso de dos dormitorios con terraza en un pueblo histórico toscano
 
 16.000 € · Montieri, Grosseto, Tuscany, Italy · 51 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-09-23
@@ -348,6 +364,22 @@ https://realhunt.co/es/deal/DclJGYkDf8l
 Llena de encanto rústico, esta casa tradicional de piedra en Colfelice, Frosinone, tiene una acogedora chimenea, estancias amplias y un bonito balcón con vistas al paisaje de alrededor. Un patio privado y varias dependencias anexas muy prácticas suman mucho espacio y potencial, ya sea como almacén, taller o para futuros proyectos.
 
 https://realhunt.co/es/deal/Dc26pZMj0VD
+
+### Beamed stone duplex with a lake-view garden and garage above Lake Iseo, Parzanica
+
+100.000 € · Parzanica, Lake Iseo, Lombardy · 80 m² · 1 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
+
+A two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo. The ground floor has a living room under exposed beams, an eat-in kitchen with a fireplace and a guest toilet. A timber staircase leads to a double bedroom and a shower room below a pitched wooden ceiling. A small private garden looks straight down on the lake and Monte Isola, and a single garage is included. Built in 2000, energy class G. Asking €100,000 after a price cut of about 17%.
+
+https://realhunt.co/es/deal/it-lake-iseo-parzanica-beamed-duplex-100k
+
+### Bright three-floor house with terraces facing Lake Omodeo in Soddì, Sardinia
+
+150.000 € · Soddì, Oristano, Sardinia · 150 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
+
+A large, light house in Soddì, a village of about 100 people in central Sardinia, facing Lake Omodeo. About 150 m2 on three floors: hall, kitchen, living room and bathroom at entry level, a main bedroom with a lake-view balcony, two smaller bedrooms and a second bathroom upstairs, and two cellar rooms below, one set up with sofas, a fireplace and a pizza oven. Two terraces, two air conditioning units, and the advert states the roof is in perfect condition with no leaks and the paperwork in order. The rear terrace needs a refresh.
+
+https://realhunt.co/es/deal/it-sardinia-soddi-lake-omodeo-view-house-150k
 
 ### Villa con vistas al mar y dos verandas cubiertas a 1 km de la playa de Vignola
 
@@ -405,6 +437,22 @@ Un stazzo tradicional de Gallura en el centro histórico de Luras, al norte de C
 
 https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k
 
+### Four-level town house ready to live in at Collesano, in the Madonie hills near Cefalù
+
+115.000 € · Collesano, Sicily · 200 m² · 4 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
+
+A terraced house on four levels in the centre of Collesano, a town inside the Madonie Park near Cefalù. The advert describes it as bright, in excellent condition and ready to live in at once. Two big storerooms with two toilets on the ground floor, two large rooms and a bathroom on the first, a bedroom, a master bedroom and a bathroom on the second, and on top a kitchen and living room under timber ceilings with a balcony facing the mountains. The agent gives about 220 m² in the text and 200 m² in the details. Asking €115,000, under €600/m².
+
+https://realhunt.co/es/deal/it-sicily-collesano-madonie-four-bed-house-115k
+
+### Renovated one-bedroom country house on 4,000 m² of land near Francavilla Fontana, Puglia
+
+139.000 € · Francavilla Fontana, Puglia · 85 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
+
+A single-storey country house of about 85 m² on 4,000 m² of gated private land with olive trees, around 10 minutes from Francavilla Fontana. The inside has been redone in a modern style: an open living room with a fitted kitchen and breakfast bar, a double bedroom, a tiled shower room with washer and dryer, air conditioning and a wood stove. Outside there are gravel terraces, a hammock under the trees and a sun-lounger corner. The owner puts Brindisi airport 25 to 30 minutes away, with both the Adriatic and Ionian coasts in easy reach. Private sale. Asking €139,000.
+
+https://realhunt.co/es/deal/it-puglia-francavilla-fontana-country-home-139k
+
 ### Casa en la colina con veranda y vistas al mar a 1 km de la playa de Porto Ottiolu
 
 158.000 € · Ludduì, Budoni, Sardinia · 64 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-10-16
@@ -445,6 +493,22 @@ En un tranquilo pueblo en lo alto de una colina en la Toscana, esta casa luminos
 
 https://realhunt.co/es/deal/DdLhHoAESiS
 
+### Restored brick house with courtyard in the old centre of Amandola, Le Marche
+
+109.000 € · Amandola, Le Marche · 85 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
+
+An independent brick house in the historic centre of Amandola, at the foot of the Sibillini mountains, fully restored with an anti-seismic structure according to the advert. About 85 m2 over four levels: a living and dining room with kitchenette and a shower room on the entry floor, two double bedrooms and a second bathroom above, an attic used as a studio and a cellar with a cave cut into the rock. It has a small private courtyard, double glazing and radiators on town gas. The upper floor has its own street door. Energy class G.
+
+https://realhunt.co/es/deal/it-marche-amandola-restored-brick-house-109k
+
+### Detached stone house with garden and valley views near Cascia, Umbria
+
+130.000 € · Colforcella, Cascia, Umbria · 84 m² · 1 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
+
+A detached stone house built in 2006, so it has the look of an old Umbrian cottage without the old-house problems. It stands at the edge of the hamlet of Colforcella, about 3 km from Cascia, on roughly 600 m2 of its own land with open views over the valley and hills. Inside are about 84 m2 on two floors: two living areas with fireplaces, a fitted kitchen, one double bedroom and two bathrooms, with beams and terracotta floors. Gas heating, private parking and a small store. Sold fully furnished by the owner and described as ready to use.
+
+https://realhunt.co/es/deal/it-umbria-cascia-stone-house-valley-view-130k
+
 ### Casa en Ventimiglia di Sicilia, Palermo
 
 35.000 € · Ventimiglia di Sicilia, Palermo, Italy · 48 m² · nota RealHunt 77 · añadida el 2026-09-22
@@ -468,6 +532,22 @@ https://realhunt.co/es/deal/Dc-oopNDU4y
 En un pueblo con encanto en lo alto de una colina, esta casa toscana llena de carácter combina siglos de historia con vistas impresionantes al valle de alrededor.
 
 https://realhunt.co/es/deal/DcdKWJrleVQ
+
+### Renovated village home with sea views below the castle in Rosignano Marittimo, Tuscany
+
+125.000 € · Rosignano Marittimo, Tuscany · 58 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
+
+A recently renovated home of 58 m² in the medieval centre of Rosignano Marittimo, at the foot of the castle, with its own street door and windows on all four sides. Beamed ceilings, an open living room with a fitted kitchen that is included in the price, a double bedroom with a storage mezzanine and a large shower room. Several windows look across the rooftops to the Tyrrhenian Sea. Heat pump for heating and cooling, new double-glazed windows, residents' parking a short walk away. Ready to move into. Asking €125,000. The advert states there are no condominium fees.
+
+https://realhunt.co/es/deal/it-rosignano-marittimo-sea-view-village-flat-125k
+
+### Sea-view flat with two balconies near the Aregai marina in Cipressa, Liguria
+
+170.000 € · Cipressa, Imperia, Liguria · 73 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
+
+A second-floor flat of about 73 m2 in a small three-storey building with shared gardens near the port of Aregai, on the western Ligurian coast. The advert places it a short walk from the beaches and the coastal cycle path, and the photos show open sea from the balconies. Hall, bright living room with kitchen, double bedroom, bathroom and a store cupboard, with a balcony off both main rooms. A cellar and an outdoor parking space are included. There is no heating installed, only the pipework for radiators, so budget for that. Condominium fees about 700 euros a year.
+
+https://realhunt.co/es/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
 
 ### Casita toscana con jardín de olivos a 5 minutos de las termas de Saturnia
 

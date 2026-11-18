@@ -1,21 +1,23 @@
 ﻿level,name,from_km,to_km,homes,median_price_eur,median_eur_per_sqm,homes_with_size,median_score,median_distance_km,under_60_km_pct
-band,under 30 km,0,30,200,97000,1464,180,86,,
-band,30 to 60 km,30,60,215,83700,1008,190,85,,
-band,60 to 100 km,60,100,147,76000,975,133,84,,
-band,100 km or more,100,,16,83800,1159,12,84,,
+band,under 30 km,0,30,217,99000,1456,197,86,,
+band,30 to 60 km,30,60,235,85000,1037,210,85,,
+band,60 to 100 km,60,100,158,79900,991,144,84,,
+band,100 km or more,100,,18,83800,1094,14,84,,
 country,Netherlands,,,18,,,,,14,100
-country,Mexico,,,10,,,,,21,100
-country,Greece,,,14,,,,,28,100
-country,United States,,,54,,,,,29,78
-country,Spain,,,182,,,,,38,78
-country,Denmark,,,45,,,,,40,69
-country,Japan,,,29,,,,,43,79
-country,Italy,,,54,,,,,45,65
-country,Bulgaria,,,6,,,,,47,100
-country,France,,,42,,,,,47,64
-country,Canada,,,9,,,,,49,67
-country,Sweden,,,32,,,,,49,75
-country,Portugal,,,13,,,,,65,46
+country,Cyprus,,,5,,,,,18,100
+country,Mexico,,,12,,,,,21,100
+country,Dominican Republic,,,5,,,,,25,100
+country,Greece,,,20,,,,,28,100
+country,United States,,,57,,,,,29,77
+country,Spain,,,186,,,,,38,78
+country,Denmark,,,46,,,,,43,70
+country,Japan,,,31,,,,,43,77
+country,France,,,45,,,,,45,64
+country,Italy,,,64,,,,,46,64
+country,Bulgaria,,,7,,,,,47,100
+country,Sweden,,,34,,,,,49,74
+country,Canada,,,11,,,,,54,55
+country,Portugal,,,18,,,,,58,56
 country,Germany,,,20,,,,,66,25
-country,Poland,,,30,,,,,68,47
+country,Poland,,,31,,,,,68,45
 country,Switzerland,,,10,,,,,71,30

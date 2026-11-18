@@ -26,7 +26,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median asking price, price per m² and cheapest home in 18 countries, from 591 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
+   "description": "Median asking price, price per m² and cheapest home in 19 countries, from 641 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
    "schema": {
     "fields": [
      {
@@ -78,7 +78,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "How many homes, how big and at what price per m² you find for up to €50,000, €100,000 and €200,000 in 18 countries. Chart, tables and CSV.",
+   "description": "How many homes, how big and at what price per m² you find for up to €50,000, €100,000 and €200,000 in 19 countries. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {
@@ -252,7 +252,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "30 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
+   "description": "32 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
    "schema": {
     "fields": [
      {
@@ -341,7 +341,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "The median asking price of the homes on RealHunt divided by Eurostat's average net earnings, in 11 European countries: from 1.5 to 8 years. Chart and CSV.",
+   "description": "The median asking price of the homes on RealHunt divided by Eurostat's average net earnings, in 12 European countries: from 1.5 to 8 years. Chart and CSV.",
    "schema": {
     "fields": [
      {
@@ -424,7 +424,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median price and price per m² of 578 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
+   "description": "Median price and price per m² of 628 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {

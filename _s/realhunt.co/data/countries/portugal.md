@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 13 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 13 homes is €117,500 (€885 per m², from the 13 homes with a known size); the cheapest costs €48,000 and the most expensive €183,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 18 November 2026, RealHunt lists 18 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 18 homes is €125,000 (€1,352 per m², from the 18 homes with a known size); the cheapest costs €48,000 and the most expensive €183,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 13 |
-| Median asking price | €117,500 |
-| Median price per m² | €885 (13 homes with a known size) |
-| Median size | 126 m² |
+| Homes on RealHunt | 18 |
+| Median asking price | €125,000 |
+| Median price per m² | €1,352 (18 homes with a known size) |
+| Median size | 110 m² |
 | Cheapest and most expensive | €48,000 · €183,000 |
 | Median RealHunt score (70 to 98) | 91 |
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 13 homes, best score first
+## The 18 homes, best score first
 
 ### Restored single-storey Alentejo house with reed ceilings near Mértola
 
@@ -134,6 +134,14 @@ A T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: k
 
 https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q
 
+### Renovated stone house with Douro valley views in Samodães, Lamego, sold furnished
+
+€99,000 · Samodães, Lamego, Viseu · 70 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-18
+
+A traditional house in Samodães, above the Douro near Lamego, fully rebuilt and renovated in 2025 and sold furnished and equipped. 70 m² on two floors: a living room with exposed schist walls, new beams, a kitchenette and a dining table downstairs, two bedrooms and a shower room upstairs. The windows look across terraced vineyards to a bend of the river. It already holds a local lodging licence (AL), so it can be used as a home or let to visitors. Freshly whitewashed outside with new wooden shutters. Private sale. Asking €99,000, about €1,415/m².
+
+https://realhunt.co/deal/pt-douro-lamego-samodaes-river-view-house-99k
+
 ### Freshly painted three-bedroom village house near the Sabor lakes
 
 €48,000 · Brunhoso, Mogadouro · 100 m² · 3 bedrooms · RealHunt score 84 · added 2026-10-14
@@ -149,3 +157,35 @@ https://realhunt.co/deal/pt-mogadouro-48k-19109522
 A 68 m² flat in the Colina Verde Resort in Moncarapacho, among olive trees, palms and lawns a few kilometres from the Algarve coast between Tavira and Olhão. Recently renovated and sold fully furnished: a large, bright living and dining room flowing into an open kitchen, a bedroom and a bathroom, with the resort's pool and gardens outside. Faro airport is 25 minutes away.
 
 https://realhunt.co/deal/pt-tavira-183k-300012
+
+### Renovated detached house with open hill views in the eastern Algarve, near Alcoutim
+
+€130,000 · Alcoutim e Pereiro, Alcoutim, Faro · 77 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-18
+
+A detached single-storey house with a new tiled roof and an Algarve chimney at the edge of a small hill village, about 15 km from Alcoutim. Recently renovated and ready to move into: 77 m² with an open kitchen and living room, white units with dark worktops and built-in appliances, a bedroom plus a second room, and a shower room with glass bricks. Open views over the hills of the eastern Algarve. The advert puts Mértola and Vila Real de Santo António around 30 km away. Asking €130,000, about €1,690/m², low for a finished house in the Algarve.
+
+https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k
+
+### Fully renovated three-bedroom granite house in a quiet village near Tábua
+
+€169,000 · Espadanal, Tábua, Coimbra · 125 m² · 3 bedrooms · RealHunt score 80 · added 2026-11-18
+
+A granite village house rebuilt inside from top to bottom, about 5 km from the town of Tábua. The advert lists new windows, doors and shutters, new wiring and plumbing, rock-wool insulation on the inner walls, recessed lighting and a new fitted kitchen, so there is nothing left to do. Ground floor with open kitchen, living room and WC, and a first floor with three bedrooms, a full bathroom and a spare room for laundry or office. About 142 m2 of built area, 125 m2 useful. Energy class C, which is unusual for a stone house at this price.
+
+https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k
+
+### Renovated two-bedroom whitewashed cottage in Alcaria Ruiva, near Mértola, Alentejo
+
+€95,000 · Alcaria Ruiva, Mértola, Beja · 46 m² · 2 bedrooms · RealHunt score 77 · added 2026-11-18
+
+A single-storey Alentejo cottage with blue trim and a red door on a cobbled street in Alcaria Ruiva. It was renovated in 2025 with a new white fitted kitchen, a new shower room, new wiring and new plumbing, so it is ready to use. About 46 m² with a living and dining room, two bedrooms and one bathroom. The village is quiet but lived in, and travelling sellers bring bread, vegetables and fish to the door. Mértola and Castro Verde are both under 30 minutes away by car for supermarkets and restaurants. Asking €95,000.
+
+https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k
+
+### Fully restored granite house with a private garden in Bravães, Ponte da Barca
+
+€156,000 · Bravães, Ponte da Barca, Viana do Castelo · 74 m² · 2 bedrooms · RealHunt score 76 · added 2026-11-18
+
+A traditional Minho house in Bravães, a few minutes from the centre of Ponte da Barca, restored from top to bottom with a completely new roof. The works kept the exposed granite walls and the stone window seats and added a white fitted kitchen, pine ceilings, new floors and two bathrooms. Two bedrooms plus an extra room that can serve as an office, 74 m² in all, and a walled private garden with lawn. Good sun and quick access to the IC28 towards Viana do Castelo, Braga and Galicia. Built in 1937, energy certificate E. Asking €156,000.
+
+https://realhunt.co/deal/pt-minho-bravaes-restored-stone-house-156k

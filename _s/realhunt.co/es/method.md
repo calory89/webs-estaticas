@@ -4,7 +4,7 @@ Metodología
 
 La nota RealHunt es una calificación de 70 a 98 que lleva cada casa de RealHunt. Primero una persona decide si la casa se publica; después la nota promedia hasta 11 notas parciales de 0 a 100, todas con el mismo peso, y compara la casa con todas las demás de la web.
 
-Versión 2026-11-14 · cifras de 591 casas a 18 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
+Versión 2026-11-14 · cifras de 641 casas a 18 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
 
 ### Paso 1. Una persona revisa la casa
 
@@ -14,33 +14,33 @@ Que sea antigua no importa; que esté abandonada, sí. RealHunt descarta unos tr
 
 ### Paso 2. Las 11 notas parciales, de 0 a 100
 
-Nota parcial | Qué mide | Casas que la tienen (de 591)
-Precio | Lo barata que es frente a las demás casas de la web y de su país | 543
-Precio por m² | Lo poco que pagas por metro cuadrado | 469
-Espacio | Tamaño de la casa | 475
-Para entrar a vivir | Reformada o lista para vivir puntúa más; si necesita obra, menos | 543
-Extras | Jardín, terraza, piscina, sauna, chimenea, vistas, terreno y más | 543
-Mar y lagos | Lo cerca que está del mar o de un lago | 350
+Nota parcial | Qué mide | Casas que la tienen (de 641)
+Precio | Lo barata que es frente a las demás casas de la web y de su país | 593
+Precio por m² | Lo poco que pagas por metro cuadrado | 519
+Espacio | Tamaño de la casa | 525
+Para entrar a vivir | Reformada o lista para vivir puntúa más; si necesita obra, menos | 593
+Extras | Jardín, terraza, piscina, sauna, chimenea, vistas, terreno y más | 593
+Mar y lagos | Lo cerca que está del mar o de un lago | 374
 Buen tiempo | Días de buen tiempo al año donde está la casa: máxima de 18–33 °C, seco y poco viento (normales climáticas) | 323
-Aeropuerto | Aeropuerto con vuelos regulares más cercano: a 20 km o menos puntúa 100 y baja de forma pareja hasta 0 a 200 km o más | 530
-Gastos de compra | Impuestos y gastos de compra en este país: cuanto más bajos, más nota | 522
-Detalle del anuncio | Fotos, tamaño y habitaciones publicados, verificado por nosotros | 543
-Interés de compradores | Visitas y guardados de compradores de RealHunt | 591
+Aeropuerto | Aeropuerto con vuelos regulares más cercano: a 20 km o menos puntúa 100 y baja de forma pareja hasta 0 a 200 km o más | 580
+Gastos de compra | Impuestos y gastos de compra en este país: cuanto más bajos, más nota | 566
+Detalle del anuncio | Fotos, tamaño y habitaciones publicados, verificado por nosotros | 593
+Interés de compradores | Visitas y guardados de compradores de RealHunt | 641
 
-Una nota parcial se deja fuera, no se inventa, cuando al anuncio le falta el dato necesario: una casa sin superficie publicada no tiene nota de precio por m² ni de espacio, y una casa sin mar ni lago registrados cerca no tiene nota de agua. Hoy 216 de 591 casas tienen las 11.
+Una nota parcial se deja fuera, no se inventa, cuando al anuncio le falta el dato necesario: una casa sin superficie publicada no tiene nota de precio por m² ni de espacio, y una casa sin mar ni lago registrados cerca no tiene nota de agua. Hoy 216 de 641 casas tienen las 11.
 
 ### Paso 3. De las notas parciales a la nota
 
-La nota es la media simple de las notas parciales que tiene la casa, todas con el mismo peso, llevada a la escala de 70 a 98: la casa con la media más baja del sitio recibe un 70, la de la media más alta un 98 y el resto queda entre medias en proporción. Por eso la nota compara cada casa con las demás publicadas y puede moverse cuando entran o salen casas. Ninguna nota parcial cuenta doble y ninguna se puede comprar. Se puede comprobar en la página de cualquier casa: con los datos de hoy, la nota equivale más o menos a 43,5 más 0,66 veces la media de las notas parciales de la casa, y el 94% de las 534 casas con al menos 8 notas parciales queda a un punto o menos de esa recta (el 99%, a dos o menos).
+La nota es la media simple de las notas parciales que tiene la casa, todas con el mismo peso, llevada a la escala de 70 a 98: la casa con la media más baja del sitio recibe un 70, la de la media más alta un 98 y el resto queda entre medias en proporción. Por eso la nota compara cada casa con las demás publicadas y puede moverse cuando entran o salen casas. Ninguna nota parcial cuenta doble y ninguna se puede comprar. Se puede comprobar en la página de cualquier casa: con los datos de hoy, la nota equivale más o menos a 44,4 más 0,64 veces la media de las notas parciales de la casa, y el 93% de las 584 casas con al menos 8 notas parciales queda a un punto o menos de esa recta (el 100%, a dos o menos).
 
 Las páginas de casas, las de países y la portada se ordenan por esta nota, de mejor a peor. Los votos y los guardados solo mueven la nota parcial de interés de compradores; nadie paga por subir puestos.
 
 ### Cómo leer una nota
 
 Nota | Qué significa | Casas hoy
-90–98 | Lo mejor de la web. Suele ser barata para su tamaño, lista para vivir y bien situada. | 141
-80–89 | Muy buena. Fuerte en casi todas las notas parciales, con uno o dos puntos débiles que se ven en la página de la casa. | 397
-70–79 | Buena. Pasó la revisión, pero las notas parciales muestran a qué renuncias. | 53
+90–98 | Lo mejor de la web. Suele ser barata para su tamaño, lista para vivir y bien situada. | 142
+80–89 | Muy buena. Fuerte en casi todas las notas parciales, con uno o dos puntos débiles que se ven en la página de la casa. | 435
+70–79 | Buena. Pasó la revisión, pero las notas parciales muestran a qué renuncias. | 64
 
 ### Qué no es la nota: límites
 

@@ -36,7 +36,7 @@ Tax on rental income: Non-residents: 10% final tax on gross rent, paid quarterly
 - [€58,900 · Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u) · Byala, Varna · score 92 · 53 m² · 1 bed
 - [€66,000 · Ready-to-move-in two-bedroom flat with a sea-view terrace in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89682) · Kavarna Paradise, Kavarna (Black Sea) · score 92 · 87 m² · 2 bed
 
-[All 6 homes in Bulgaria](https://realhunt.co/homes/bulgaria)
+[All 7 homes in Bulgaria](https://realhunt.co/homes/bulgaria)
 
 [Costs, taxes and sources for Bulgaria](https://realhunt.co/costs/bulgaria) · [Buying-cost calculator for Bulgaria](https://realhunt.co/buying-costs/bulgaria) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents: 10% final tax on gross rent, paid quarterly
 - [Bulgaria vs Denmark](https://realhunt.co/countries/bulgaria-vs-denmark)
 - [Bulgaria vs France](https://realhunt.co/countries/bulgaria-vs-france)
 - [Bulgaria vs Sweden](https://realhunt.co/countries/bulgaria-vs-sweden)
-- [Bulgaria vs Poland](https://realhunt.co/countries/bulgaria-vs-poland)
 - [Bulgaria vs Japan](https://realhunt.co/countries/bulgaria-vs-japan)
+- [Bulgaria vs Poland](https://realhunt.co/countries/bulgaria-vs-poland)
 
 ### Sources
 

@@ -1,8 +1,8 @@
 ﻿tipo,pais,region,casas_hasta_50000,parte_del_pais_pct,casas_hasta_30000,mas_barata_eur,precio_mediano_eur,pagina
-pais,Italia,,33,56,13,12000,,https://realhunt.co/homes/italy/under-50000
-pais,Japón,,19,63,13,7400,,https://realhunt.co/homes/japan/under-50000
+pais,Italia,,33,48,13,12000,,https://realhunt.co/homes/italy/under-50000
+pais,Japón,,19,59,13,7400,,https://realhunt.co/homes/japan/under-50000
 pais,Alemania,,10,50,0,40000,,https://realhunt.co/homes/germany/under-50000
-pais,Francia,,6,14,0,39000,,https://realhunt.co/homes/france/under-50000
+pais,Francia,,6,13,0,39000,,https://realhunt.co/homes/france/under-50000
 pais,España,,5,3,0,38000,,https://realhunt.co/homes/spain/under-50000
 pais,Suecia,,3,8,2,22000,,https://realhunt.co/homes/sweden/under-50000
 region,Alemania,Chemnitz,8,,,,50000,https://realhunt.co/homes/germany/chemnitz

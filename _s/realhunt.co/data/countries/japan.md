@@ -1,6 +1,6 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 30 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 30 homes is €39,560 (€340 per m², from the 14 homes with a known size); the cheapest costs €7,400 and the most expensive €91,080. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 18 November 2026, RealHunt lists 32 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 32 homes is €43,240 (€398 per m², from the 16 homes with a known size); the cheapest costs €7,400 and the most expensive €91,080. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/japan · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 30 |
-| Median asking price | €39,560 |
-| Median price per m² | €340 (14 homes with a known size) |
-| Median size | 75 m² |
+| Homes on RealHunt | 32 |
+| Median asking price | €43,240 |
+| Median price per m² | €398 (16 homes with a known size) |
+| Median size | 88 m² |
 | Cheapest and most expensive | €7,400 · €91,080 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/japan
 
-## The 30 homes, best score first
+## The 32 homes, best score first
 
 ### Mountain chalet with a wood stove and a loft in the Hida forest
 
@@ -259,6 +259,14 @@ Built in 2001 and renovated inside and out: 3 bedrooms plus a storage room in 87
 
 https://realhunt.co/deal/jp-fuji-66k-852751
 
+### Misawa-built family house with a partial sea view on Awaji Island, Hyogo
+
+€54,300 · Fukakusa, Awaji, Hyogo · 91 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-18
+
+Built in October 2000 by Misawa Homes and, according to the agent, carefully used inside. 91 m² with three bedrooms, a living room of over 15 tatami and a wooden deck in the garden, on a 152 m² freehold plot in a holiday-home area of Fukakusa on Awaji Island. The outer walls and roof were redone in 2015. Part of the sea can be seen from the upper floor and Shintoshi bathing beach is about 3.8 km away. Immediate handover. Asking ¥9,500,000 (about €54,300), around €600/m².
+
+https://realhunt.co/deal/jp-awaji-misawa-house-54k-788413
+
 ### Nine-room 1960s farmhouse with an earthen kura near Lake Biwa
 
 €62,560 · Takashima, Shiga, Japan · RealHunt score 81 · added 2026-09-23
@@ -282,6 +290,14 @@ https://realhunt.co/deal/jp-shimizu-81k-591487
 A pure Japanese-style single-story home with a wide engawa opening onto its own garden, in one of Japan's most famous hot spring towns, about 90 minutes from Tokyo. This one's in Yugawara, Kanagawa, a coastal onsen town people have escaped to for a century.
 
 https://realhunt.co/deal/DbA4_hKEThx
+
+### House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie
+
+€84,500 · Ago-cho Tategami, Shima, Mie · 106 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-18
+
+A two-storey wooden house finished in January 2018, far newer than most homes at this price. 106 m² with two bedrooms plus a storage room and a living, dining and kitchen space of over 20 tatami, on a 1,181 m² freehold plot in Ago-cho Tategami, in the Ise-Shima area of Mie. The advert lists the sea within 2 km, mountain views, a supermarket within a 10 minute walk and parking for three or more cars. Water comes from a well and there is a septic tank. Asking ¥14,800,000 (about €84,500), roughly €800/m².
+
+https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
 
 ### Mt. Fuji cabin with sauna deck, cold plunge and a guest cabin
 

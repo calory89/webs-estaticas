@@ -1,6 +1,6 @@
 # Cheap homes in Denmark: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 45 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 45 homes is €93,200 (€787 per m², from the 43 homes with a known size); the cheapest costs €35,400 and the most expensive €99,900. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
+On 18 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/denmark · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://realhunt.co/data/countries/denmark.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://re
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 45 |
+| Homes on RealHunt | 46 |
 | Median asking price | €93,200 |
-| Median price per m² | €787 (43 homes with a known size) |
+| Median price per m² | €790 (44 homes with a known size) |
 | Median size | 115 m² |
-| Cheapest and most expensive | €35,400 · €99,900 |
+| Cheapest and most expensive | €35,400 · €160,000 |
 | Median RealHunt score (70 to 98) | 88 |
 | Taxes and fees to buy | 1.5–3% of the price (as of 2026) |
 | Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. |
@@ -51,7 +51,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/denmark
 
-## The 45 homes, best score first
+## The 46 homes, best score first
 
 ### 198 m² family villa near the Limfjord for under €80k
 
@@ -412,3 +412,11 @@ https://realhunt.co/deal/dk-tylstrup-80k-3cfe80
 A well-kept 79 m² terraced house from 1979, modernised and ready to move in, in a quiet neighbourhood of Herborg near Videbæk. Lush garden, bright open kitchen and low upkeep. Listed at DKK 665,000. EU citizens who move to Denmark can buy freely; others need permission from the Ministry of Justice.
 
 https://realhunt.co/deal/dk-herborg-89k-d18595
+
+### Move-in ready villa with modern kitchen, big terrace and open field views near Høng
+
+€160,000 · Sæby near Høng, West Zealand · 101 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-18
+
+A bright, well-kept villa in the village of Sæby, a short drive from Høng in West Zealand, registered as a villa for year-round living and described as ready to move into. 101 m² from 1948 with a modern white handle-free kitchen open to the dining area, a roomy living room, three rooms including a first floor with skylights, and a bathroom with a separate shower. Outside there is a large wooden terrace, an easy green garden on a 491 m² plot, a carport and open views over the fields. Asking 1,195,000 DKK (about €160,000), around €1,585/m². Owner costs 1,291 DKK a month (about €173).
+
+https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk

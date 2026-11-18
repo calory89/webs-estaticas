@@ -36,7 +36,7 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [€123,000 · Fully renovated 19th-century longère on one level with garage in Lencloître, Vienne](https://realhunt.co/deal/fr-lencloitre-123k-157528) · Lencloître, Vienne · score 91 · 102 m² · 2 bed
 - [€139,000 · Former level-crossing keeper's house renovated in 2023 on 1,824 m² in Bergerac, Dordogne](https://realhunt.co/deal/fr-bergerac-139k-175736) · Bergerac, Dordogne · score 91 · 77 m² · 2 bed
 
-[All 42 homes in France](https://realhunt.co/homes/france)
+[All 45 homes in France](https://realhunt.co/homes/france)
 
 [Costs, taxes and sources for France](https://realhunt.co/costs/france) · [Buying-cost calculator for France](https://realhunt.co/buying-costs/france) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +47,8 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [France vs United States](https://realhunt.co/countries/france-vs-united-states)
 - [France vs Denmark](https://realhunt.co/countries/denmark-vs-france)
 - [France vs Sweden](https://realhunt.co/countries/france-vs-sweden)
-- [France vs Poland](https://realhunt.co/countries/france-vs-poland)
 - [France vs Japan](https://realhunt.co/countries/france-vs-japan)
+- [France vs Poland](https://realhunt.co/countries/france-vs-poland)
 - [France vs Germany](https://realhunt.co/countries/france-vs-germany)
 
 ### Sources

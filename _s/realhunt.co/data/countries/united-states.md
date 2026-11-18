@@ -1,6 +1,6 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 54 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 54 homes is €164,400 (€1,465 per m², from the 54 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 18 November 2026, RealHunt lists 57 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 57 homes is €173,300 (€1,465 per m², from the 57 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 54 |
-| Median asking price | €164,400 |
-| Median price per m² | €1,465 (54 homes with a known size) |
-| Median size | 111 m² |
+| Homes on RealHunt | 57 |
+| Median asking price | €173,300 |
+| Median price per m² | €1,465 (57 homes with a known size) |
+| Median size | 114 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 54 homes, best score first
+## The 57 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -97,6 +97,14 @@ https://realhunt.co/deal/cleveland-68917
 Step into the charm of the historic Savage House, a beautiful 1900 Victorian in Scotland Neck, North Carolina: 2,143 sq ft (199 m²) with three bedrooms and two bathrooms, gingerbread trim, a front porch reached by a brick path, high ceilings and freshly finished interiors with wood floors, on a large shaded lot. Asking $169,900 (about €151,000), about €759/m².
 
 https://realhunt.co/deal/us-north-carolina-victorian-170k
+
+### Victorian house with original oak woodwork opposite a park in Marietta, Ohio
+
+€200,000 · Marietta, Ohio · 191 m² · 3 bedrooms · RealHunt score 90 · added 2026-11-18
+
+Asking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio. The oak staircase, pocket doors, glazed French doors and wide trim are all still in place. It has three bedrooms, two bathrooms (one on the ground floor), an eat-in kitchen, a separate dining room, ground-floor laundry and a floored walk-up attic. Outside there is a front porch, rear deck, fenced back garden and a one-car detached garage. A city park, the library and the river trail are across the street or close by. Yearly property tax US$2,127, no HOA fee.
+
+https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k
 
 ### Updated 3-bed house in Clairton, Pennsylvania
 
@@ -153,6 +161,14 @@ https://realhunt.co/deal/us-tampa-8105-325k
 95 m² (1,024 sq ft), 2 bed, 1 bath, built 1890. Asking $94,900.
 
 https://realhunt.co/deal/east-palestine-82788
+
+### Well-kept three-bedroom colonial with a metal roof in Geneva, Finger Lakes
+
+€218,100 · Geneva, New York · 128 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-18
+
+Asking US$239,900 (about €218,100) for a move-in ready colonial of about 128 m² in Geneva, a small lakeside city in the Finger Lakes region of upstate New York. It has three bedrooms and two full bathrooms, one with a clawfoot tub, plus an enclosed front porch, a large kitchen with a gas range and a generously sized dining area. The furnace, tankless water heater and central air are new, and the vinyl siding and metal roof keep upkeep low. The back garden is private and has a big shed. The photos show a tidy, furnished home. Yearly property tax US$2,919, no HOA fee.
+
+https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k
 
 ### Top-floor two-bed condo in a gated resort-style community in Doral
 
@@ -217,6 +233,14 @@ https://realhunt.co/deal/us-ashland-89k-672054
 Renovated with modern finishes, light-filled spaces, and private outdoor access on the first floor. Located minutes from the beach, downtown Fort Lauderdale, and Las Olas dining. Owner-occupied community with stable occupancy supports conventional financing. Flexible possession available.
 
 https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k
+
+### Fully renovated brick rowhouse with a fenced yard in Lancaster, Pennsylvania
+
+€213,600 · Lancaster, Pennsylvania · 127 m² · 3 bedrooms · RealHunt score 86 · added 2026-11-18
+
+Asking US$235,000 (about €213,600) for a brick rowhouse of about 127 m² that has been redone from top to bottom. The main floor is open plan with 9-foot ceilings and vinyl plank floors, and the new kitchen has white cabinets, butcher block counters, gas cooking and all appliances. Upstairs are three bedrooms and two new bathrooms with tiled showers, one of them en suite. Gas heating, central air, a usable basement and a fenced back garden complete it. Lancaster is a historic small city in Pennsylvania Dutch country. Yearly property tax US$1,744, no HOA fee.
+
+https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k
 
 ### Corner lakefront townhouse with a tropical garden in Westview, Pembroke Pines
 

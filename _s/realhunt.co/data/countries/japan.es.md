@@ -1,6 +1,6 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 30 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 30 casas es de 39.560 € (340 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 91.080 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 18 de noviembre de 2026, RealHunt publica 32 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 32 casas es de 43.240 € (398 € por m², calculado con las 16 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 91.080 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 30 |
-| Precio de salida mediano | 39.560 € |
-| Precio mediano por m² | 340 € (14 casas de superficie conocida) |
-| Superficie mediana | 75 m² |
+| Casas en RealHunt | 32 |
+| Precio de salida mediano | 43.240 € |
+| Precio mediano por m² | 398 € (16 casas de superficie conocida) |
+| Superficie mediana | 88 m² |
 | La más barata y la más cara | 7.400 € · 91.080 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/japan
 
-## Las 30 casas, de mejor a peor nota
+## Las 32 casas, de mejor a peor nota
 
 ### Chalet de montaña con estufa de leña y altillo en el bosque de Hida
 
@@ -259,6 +259,14 @@ Construida en 2001 y reformada por dentro y por fuera: 3 dormitorios más traste
 
 https://realhunt.co/es/deal/jp-fuji-66k-852751
 
+### Misawa-built family house with a partial sea view on Awaji Island, Hyogo
+
+54.300 € · Fukakusa, Awaji, Hyogo · 91 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
+
+Built in October 2000 by Misawa Homes and, according to the agent, carefully used inside. 91 m² with three bedrooms, a living room of over 15 tatami and a wooden deck in the garden, on a 152 m² freehold plot in a holiday-home area of Fukakusa on Awaji Island. The outer walls and roof were redone in 2015. Part of the sea can be seen from the upper floor and Shintoshi bathing beach is about 3.8 km away. Immediate handover. Asking ¥9,500,000 (about €54,300), around €600/m².
+
+https://realhunt.co/es/deal/jp-awaji-misawa-house-54k-788413
+
 ### Casa de campo de los años 60 con nueve habitaciones y un kura de barro cerca del lago Biwa
 
 62.560 € · Takashima, Shiga, Japan · nota RealHunt 81 · añadida el 2026-09-23
@@ -282,6 +290,14 @@ https://realhunt.co/es/deal/jp-shimizu-81k-591487
 Una auténtica casa de estilo japonés de una sola planta con un amplio engawa que se abre a su propio jardín, en una de las ciudades de aguas termales más famosas de Japón, a unos 90 minutos de Tokio. Esta está en Yugawara, Kanagawa, una ciudad onsen costera a la que la gente ha acudido durante un siglo.
 
 https://realhunt.co/es/deal/DbA4_hKEThx
+
+### House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie
+
+84.500 € · Ago-cho Tategami, Shima, Mie · 106 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
+
+A two-storey wooden house finished in January 2018, far newer than most homes at this price. 106 m² with two bedrooms plus a storage room and a living, dining and kitchen space of over 20 tatami, on a 1,181 m² freehold plot in Ago-cho Tategami, in the Ise-Shima area of Mie. The advert lists the sea within 2 km, mountain views, a supermarket within a 10 minute walk and parking for three or more cars. Water comes from a well and there is a septic tank. Asking ¥14,800,000 (about €84,500), roughly €800/m².
+
+https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
 
 ### Cabaña en el monte Fuji con terraza para sauna, baño de agua fría y cabaña de invitados
 

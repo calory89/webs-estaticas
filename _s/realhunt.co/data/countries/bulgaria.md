@@ -1,6 +1,6 @@
 # Cheap homes in Bulgaria: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €66,000 (€740 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €70,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 18 November 2026, RealHunt lists 7 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 7 homes is €66,000 (€740 per m², from the 7 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 7 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/bulgaria · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 6 (small sample) |
+| Homes on RealHunt | 7 (small sample) |
 | Median asking price | €66,000 |
-| Median price per m² | €740 (6 homes with a known size) |
-| Median size | 90 m² |
-| Cheapest and most expensive | €58,900 · €70,000 |
+| Median price per m² | €740 (7 homes with a known size) |
+| Median size | 87 m² |
+| Cheapest and most expensive | €58,900 · €89,000 |
 | Median RealHunt score (70 to 98) | 93 |
 | Taxes and fees to buy | 3.2–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route. |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/bulgaria
 
-## The 6 homes, best score first
+## The 7 homes, best score first
 
 ### Two-bedroom flat with a panoramic sea view on the first line in Pomorie
 
@@ -93,3 +93,11 @@ https://realhunt.co/deal/bg-byala-58k-fbw62u
 An 86.5 m² flat on the ground floor of a well-maintained 2007 complex, a 3-minute walk from the beach: an entrance hall, a living room with a fully fitted kitchen and dining area, two furnished bedrooms, a bathroom and a terrace with sea views. South-west exposure brings light all day. Sold fully furnished and equipped, in very good condition with no renovation needed; suits holidays or year-round living. Asking €66,000, about €759/m².
 
 https://realhunt.co/deal/bg-kavarna-66k-89682
+
+### Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas
+
+€89,000 · Sveti Vlas, Burgas · 64 m² · 1 bedrooms · RealHunt score 84 · added 2026-11-18
+
+A furnished 64 m² flat (57 m² net) on the 2nd floor of a small three-storey building in Sveti Vlas, about 300 m from the beach. Living room, separate kitchen, one bedroom, bathroom and two balconies, south-facing with a sea view. Owners share an outdoor pool, green areas and a barbecue corner. The building has its Act 16 permit and, unusually for this coast, the advert states there is no maintenance fee. Inverter air conditioning, energy class A. Asking €89,000, about €1,390/m².
+
+https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034

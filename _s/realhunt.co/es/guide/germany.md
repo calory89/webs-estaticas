@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 - [Alemania vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-germany)
 - [Alemania vs Francia](https://realhunt.co/es/countries/france-vs-germany)
 - [Alemania vs Suecia](https://realhunt.co/es/countries/germany-vs-sweden)
-- [Alemania vs Polonia](https://realhunt.co/es/countries/germany-vs-poland)
 - [Alemania vs Japón](https://realhunt.co/es/countries/germany-vs-japan)
+- [Alemania vs Polonia](https://realhunt.co/es/countries/germany-vs-poland)
 
 ### Fuentes
 

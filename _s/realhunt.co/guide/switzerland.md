@@ -47,8 +47,8 @@ Tax on rental income: Non-residents pay tax on net Swiss rental income at ordina
 - [Switzerland vs Denmark](https://realhunt.co/countries/denmark-vs-switzerland)
 - [Switzerland vs France](https://realhunt.co/countries/france-vs-switzerland)
 - [Switzerland vs Sweden](https://realhunt.co/countries/sweden-vs-switzerland)
-- [Switzerland vs Poland](https://realhunt.co/countries/poland-vs-switzerland)
 - [Switzerland vs Japan](https://realhunt.co/countries/japan-vs-switzerland)
+- [Switzerland vs Poland](https://realhunt.co/countries/poland-vs-switzerland)
 
 ### Sources
 

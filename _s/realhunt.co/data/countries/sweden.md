@@ -1,6 +1,6 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €71,000 (€701 per m², from the 19 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 18 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/sweden · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 37 |
-| Median asking price | €71,000 |
-| Median price per m² | €701 (19 homes with a known size) |
+| Homes on RealHunt | 39 |
+| Median asking price | €72,000 |
+| Median price per m² | €680 (21 homes with a known size) |
 | Median size | 110 m² |
 | Cheapest and most expensive | €22,000 · €99,000 |
 | Median RealHunt score (70 to 98) | 85 |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/sweden
 
-## The 37 homes, best score first
+## The 39 homes, best score first
 
 ### Cosy villa with sauna, 100 m from the river
 
@@ -153,6 +153,14 @@ Lake views, forest on the doorstep and a house that already comes with some surp
 
 https://realhunt.co/deal/DcIDShNij6M
 
+### 1920s villa with geothermal heating and a private garden in central Vansbro, Dalarna
+
+€77,000 · Vansbro, Dalarna · 122 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-18
+
+A 1920s house in the middle of Vansbro, on the Västerdal river in Dalarna, with a sheltered 1,651 m² plot next to a playground. 122 m² with five rooms, three of them bedrooms, a separate dining room, a bright living room with a stove and a bathroom between the two upstairs bedrooms. Geothermal heating was installed in 2019, the incoming water pipe was renewed in 2023 and the windows are triple glazed. School, shops, pharmacy, swimming pool and the bus and railway station are within walking distance. Freehold. Asking 850,000 SEK (about €77,000), around €630/m².
+
+https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek
+
 ### Family townhouse with a garden and a glass room in Eslöv
 
 €94,100 · Eslöv, Skåne (about 55 min from Copenhagen) · 117 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-14
@@ -224,6 +232,14 @@ https://realhunt.co/deal/DbC0D4RoLzc
 Set near the lake Mellansjön and surrounded by forest, the property has a simple main cottage, extra sleeping spaces in separate outbuildings and plenty of room outside for swimming, fishing and idling. Used by the same family for many years, with the cabins making a relaxed setup for hosting friends or family.
 
 https://realhunt.co/deal/DczrZZlCl9L
+
+### Red wooden three-bedroom house with conservatory and greenhouse in Arbrå, Hälsingland
+
+€72,000 · Arbrå, Gävleborg · 108 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-18
+
+A classic red wooden house with white corners in a central, child-friendly part of Arbrå, in Hälsingland. 108 m² on one and a half floors with four rooms, three of them bedrooms, a modern fully equipped kitchen, a shower room downstairs and a bathroom with bath upstairs. Surfaces have been renovated over time, two sides of the facade were painted in 2025 and the dishwasher is new in 2026. Glazed conservatory, greenhouse and carport on a 515 m² plot, district heating. Freehold. Asking 795,000 SEK (about €72,000), around €670/m². Running costs 37,524 SEK a year (about €3,400) plus property fee 4,920 SEK.
+
+https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 
 ### Sea-view cabin with swimming access and boat mooring
 

@@ -1,11 +1,11 @@
 {
  "built": "2026-11-18",
- "indexable": 5390,
- "pages_given_a_date": 4832,
+ "indexable": 5370,
+ "pages_given_a_date": 5065,
  "video_pages": 0,
  "llms": {
   "en": true,
-  "es": 18
+  "es": 17
  },
  "sitemaps": {
   "news": 0,
@@ -20,7 +20,6 @@
   "feed.json",
   "blog/atom.xml",
   "blog/feed.json",
-  "es/feed.xml",
   "es/blog/rss.xml",
   "es/llms.txt",
   "sitemap-news.xml",

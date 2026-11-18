@@ -27,7 +27,27 @@ Yearly property tax: Owners or occupiers pay council tax to the local council, a
 
 Tax on rental income: Non-resident landlords pay UK income tax on rent at 20%, 40% or 45%, with 20% deducted at source by the agent or tenant unless HMRC approves gross payment, and the rates on property income are set to rise to 22%, 42% and 47% from April 2027.
 
+### Best homes in the United Kingdom
+
+- [€82,600 · Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165) · Shildon, County Durham · score 89 · 72 m² · 2 bed
+- [€88,500 · Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241) · Blyth, Northumberland · score 88 · 1 bed
+- [€126,500 · Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k) · Macduff, Aberdeenshire · score 83 · 70 m² · 2 bed
+- [€121,000 · Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k) · Whithorn, Dumfries and Galloway · score 81 · 67 m² · 2 bed
+
+[All 4 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom)
+
 [Costs, taxes and sources for United Kingdom](https://realhunt.co/costs/united-kingdom) · [Buying-cost calculator for United Kingdom](https://realhunt.co/buying-costs/united-kingdom) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
+
+### Compare United Kingdom
+
+- [United Kingdom vs Spain](https://realhunt.co/countries/spain-vs-united-kingdom)
+- [United Kingdom vs Italy](https://realhunt.co/countries/italy-vs-united-kingdom)
+- [United Kingdom vs United States](https://realhunt.co/countries/united-kingdom-vs-united-states)
+- [United Kingdom vs Denmark](https://realhunt.co/countries/denmark-vs-united-kingdom)
+- [United Kingdom vs France](https://realhunt.co/countries/france-vs-united-kingdom)
+- [United Kingdom vs Sweden](https://realhunt.co/countries/sweden-vs-united-kingdom)
+- [United Kingdom vs Japan](https://realhunt.co/countries/japan-vs-united-kingdom)
+- [United Kingdom vs Poland](https://realhunt.co/countries/poland-vs-united-kingdom)
 
 ### Sources
 

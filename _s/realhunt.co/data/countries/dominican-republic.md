@@ -1,6 +1,6 @@
 # Cheap homes in the Dominican Republic: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 4 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 4 homes is €223,600 (€2,282 per m², from the 3 homes with a known size); the cheapest costs €187,800 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 4 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
+On 18 November 2026, RealHunt lists 5 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 5 homes is €201,200 (€2,282 per m², from the 4 homes with a known size); the cheapest costs €150,000 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 5 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/dominican-republic · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF: https://realhunt.co/data/countries/dominican-republic.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF:
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 4 (small sample) |
-| Median asking price | €223,600 |
-| Median price per m² | €2,282 (3 homes with a known size) |
-| Median size | 98 m² |
-| Cheapest and most expensive | €187,800 · €223,600 |
-| Median RealHunt score (70 to 98) | 89 |
+| Homes on RealHunt | 5 (small sample) |
+| Median asking price | €201,200 |
+| Median price per m² | €2,282 (4 homes with a known size) |
+| Median size | 103 m² |
+| Cheapest and most expensive | €150,000 · €223,600 |
+| Median RealHunt score (70 to 98) | 88 |
 | Taxes and fees to buy | 4.25–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions. |
 | Yearly property tax | The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold. |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/dominican-republic
 
-## The 4 homes, best score first
+## The 5 homes, best score first
 
 ### Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views
 
@@ -79,3 +79,11 @@ https://realhunt.co/deal/dr-juan-dolio-224k-447078
 A 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula. Sold fully furnished with an equipped kitchen, ready to live in or rent out straight away. The residence has a large pool in tropical gardens, 24-hour security and power, private parking, laundry and housekeeping, a few minutes from the town centre. About 30 minutes from El Catey airport. Asking US$225,000 (about €201,200).
 
 https://realhunt.co/deal/dr-las-terrenas-201k-439030
+
+### Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata
+
+€150,000 · Puerto Plata, Puerto Plata · 103 m² · 2 bedrooms · RealHunt score 84 · added 2026-11-18
+
+Asking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa Dorada beach. It has two bedrooms, two bathrooms, a living and dining room, a kitchen with an island and a balcony. The building has a swimming pool, one assigned parking space and visitor parking. The price includes the washer-dryer, fridge, cooker and extractor hood, so it is close to ready to live in. Maintenance fee US$127, stated without a period, probably monthly.
+
+https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k
