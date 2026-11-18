@@ -581,13 +581,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 11,
+    "unverified": 12,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "1609bcffaaa03f2bfd22853637d2bc6cbdbf913c8888a60b45c9854eaff81be3",
     "date": "2026-11-05"
@@ -661,13 +661,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 11,
+    "unverified": 12,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "85f51c5a6257b681faad191a115135d179f454a91c123aac33e31afe8f795838",
     "date": "2026-11-05"
@@ -4105,13 +4105,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "fd09f54c6a82aff7dae1421920fb627cab884083a30372cd28f63e8ce35b59f1",
     "date": "2026-11-05"
@@ -4193,13 +4193,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": 9.0,
    "overdue": null,
-   "profile": 17,
+   "profile": 19,
    "fp": {
     "sha256": "4a18a4d16330483b722bb012ad70c5f72d9f193ac741713c1d7a3a75507930d8",
     "date": "2026-11-05"
@@ -4821,13 +4821,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "ff45098ef8601a9b405d251e299cbddc9981176da9f31233399993d5e2f976dc",
     "date": "2026-11-05"
@@ -5999,13 +5999,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 11,
+    "unverified": 12,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "da0303dbc453735f82fef0b0e59823c2570fc12f98d362affdb81867d14000ed",
     "date": "2026-11-01"
@@ -10380,13 +10380,13 @@
    "vscore": 0,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "9e7e8744bec6720552201119558ea391a6b954f4f2b573ea40ffc3e9472eaea3",
     "date": "2026-11-05"
@@ -11629,13 +11629,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "09626e5dddffad112b8d5e3190700530bf9075c9bd223f60e378baf97ae60c7e",
     "date": "2026-11-07"
@@ -13630,13 +13630,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 5,
+   "profile": 7,
    "fp": {
     "sha256": "9d8aa01dcd47c00fb6a721e90df04ba54b68d9278572493e0fcbea938c741324",
     "date": "2026-11-06"
@@ -21745,13 +21745,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "fb0bd1053566b0441e92de3ff9d92256c9bed84c4aa897871f5ffd0b76a098ad",
     "date": "2026-11-05"
@@ -23645,13 +23645,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "fp": {
     "sha256": "0c310b3795c6bef17ee727b52ea942d530ca6f0f2f01cff86d8e8b0111c8bf19",
     "date": "2026-11-06"
@@ -26807,13 +26807,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "3b397395e5e6254d0d29297a123e916b2a35696db9a02858bb8352571e4d7dbe",
     "date": "2026-11-05"
@@ -27392,13 +27392,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 6,
    "fp": {
     "sha256": "57c22ed2fccfeacec15f1c7e1b8c8fcca90927bdd5566a9d021ac32b47d6e468",
     "date": "2026-11-15"
@@ -27519,13 +27519,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "CDS-030",
@@ -27581,13 +27581,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "CDS-031",
@@ -30808,13 +30808,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "4ef18011940b6dc0c805d6c1bfc5f2db0360badaffc69033b7bacf8e744ce210",
     "date": "2026-11-05"
@@ -34554,13 +34554,13 @@
    "vscore": 4,
    "claims": {
     "verified": 16,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 15,
+   "profile": 17,
    "fp": {
     "sha256": "3abbbf580f37c997ba23aa5d883b43f59f01f6e2c49fcaa28386581f46cbb047",
     "date": "2026-11-05"
@@ -69855,13 +69855,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 3
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "0873887716944c0ed7b577c66a5aea54fd5c51f29901f79c173c92aeca5290f7",
     "date": "2026-11-05"
@@ -69920,13 +69920,13 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": 9.0,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "10bdc4ff1a4d6212162895bafc3a85017deb4398d48b46deae9d49b2615b11f7",
     "date": "2026-11-01"
@@ -70687,13 +70687,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 5
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 18,
+   "profile": 20,
    "fp": {
     "sha256": "405c1292f3ac32cf0c06148016b39cd828affeddaae6efd1e72cf070414b5a71",
     "date": "2026-11-15"
@@ -70752,13 +70752,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 17,
+   "profile": 19,
    "fp": {
     "sha256": "61959781c185f422c693eb3c3c34492c6c0aababe98ba4518b30b8ac879eae8a",
     "date": "2026-11-15"
@@ -71794,13 +71794,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "GEO-016",
@@ -74751,13 +74751,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "GRC-019",
@@ -77676,13 +77676,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6,
+   "profile": 8,
    "fp": {
     "sha256": "97640329143dffd06dfc65e6f517de684dc55b2de2b3cbebf68051ee5f9c81f9",
     "date": "2026-11-07"
@@ -77937,13 +77937,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "IST-019",
@@ -77999,13 +77999,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "IST-020",
@@ -78689,13 +78689,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "IZM-004",
@@ -78751,13 +78751,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "JAC-001",
@@ -83786,13 +83786,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": 43.0,
    "overdue": null,
-   "profile": 15,
+   "profile": 17,
    "fp": {
     "sha256": "ec992df226a92899a9819e9ad345402a1869a02a2a6ff0257832258edaf4155a",
     "date": "2026-11-05"
@@ -86753,13 +86753,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 3
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "0a1a409ea02b56ed3b0627110e4150409acb107a6555eae6bd689b6a5f5f67df",
     "date": "2026-11-05"
@@ -87961,13 +87961,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 4,
    "fp": {
     "sha256": "7b51b0d0a68f522fb9ee80b863aaa9d68073d162ae21fc08273396f736028771",
     "date": "2026-11-15"
@@ -96762,13 +96762,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "64d34405c91768a343bbd43062fe9840cc6724e87def7bf11be907a69f7f9079",
     "date": "2026-11-06"
@@ -99523,13 +99523,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "fp": {
     "sha256": "5e915d1bcbda7760a8e577e03285ab28dc870351a0cdd0706e588d1c7fc011a3",
     "date": "2026-11-06"
@@ -99590,13 +99590,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 6,
    "fp": {
     "sha256": "1511e1419ed80c2da6ea301df86b8b578d46125b8b5b6e9dde7ababb4de150bb",
     "date": "2026-11-06"
@@ -99851,13 +99851,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 3
    },
    "stage": "off-plan",
    "delay": 18.0,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "5a5b45ad5b7f1d37bf63d4e37f1bc005fd60e78c5db7c8c933383b4956a06411",
     "date": "2026-11-05"
@@ -102145,13 +102145,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "8cd3d6c4be149aa25680202bab1c94cc48ef6ff6484792bc1fc5a772601be6c5",
     "date": "2026-11-05"
@@ -108104,13 +108104,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6,
+   "profile": 8,
    "fp": {
     "sha256": "e18ba59e679d835ec7f545df8076d3d236c0fc4b0ef5bf23f0b8224b145f80ff",
     "date": "2026-11-06"
@@ -108170,13 +108170,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 15,
+   "profile": 17,
    "fp": {
     "sha256": "c1bb747bf997fd315772a492711f6acb595cc1338eae354f91de8a323dcf2401",
     "date": "2026-11-05"
@@ -109125,13 +109125,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 5,
    "fp": {
     "sha256": "7323a2bca1e114b8bbd919c8cec71930e3bb686c7b821fb59e740cfc4bccee07",
     "date": "2026-11-15"
@@ -110317,13 +110317,13 @@
    "vscore": 3,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "6e2b83d39f250e3d21bf5ea005aa68415dab4ec44a6b933166eeaeefc595c5e3",
     "date": "2026-11-05"
@@ -110545,13 +110545,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 5
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "7396ca76103b7045f2796319afb7376945fa5d5f122e6d277fffff750827f595",
     "date": "2026-11-05"
@@ -111845,13 +111845,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 2,
    "fp": {
     "sha256": "b10d7a434cb9ad08332a92b9c61c59d1cccaef38f1db4f538b0a219648c1bb04",
     "date": "2026-11-06"
@@ -115829,13 +115829,13 @@
    "vscore": 1,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "591ecc709792a383c3e363ee8c527aadbf10947d39376785c896f4a4d226d437",
     "date": "2026-11-05"
@@ -120245,13 +120245,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 3
    },
    "stage": "completed",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "03d7b9c99f2f3802c587214d9491be49c583be753fab87c18163c83ade3ab48c",
     "date": "2026-11-05"
@@ -120444,13 +120444,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "completed",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "fd2ce7c6a63067c32e6247ed08141b02a6d143b399d7273b79713d6da8b64c18",
     "date": "2026-11-05"
@@ -121299,13 +121299,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "RMY-023",
@@ -122210,13 +122210,13 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "918c169b4af30233cff7cfa0b48953a4ba4ed412f83440bfafa082e6a507ebf0",
     "date": "2026-11-05"
@@ -122981,13 +122981,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "7350e3025cdbb03787d65ced0bcbd07f4abf33ce7b0eb1440ec6488dfc25e7d3",
     "date": "2026-11-05"
@@ -124890,13 +124890,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "ESP-016",
@@ -128241,13 +128241,13 @@
    "vscore": 1,
    "claims": {
     "verified": 1,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 9,
    "fp": {
     "sha256": "2bd9f078f2f0241835e60e85023579c8db874be2ac48ad7be60f4e41cb55fa1c",
     "date": "2026-11-06"
@@ -133772,13 +133772,13 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "e2c91093b273ca69f4872789240f72a1740b76179e9634180fc7d126060ec1cd",
     "date": "2026-11-05"
@@ -134348,13 +134348,13 @@
   "markets": 182,
   "countries": 94,
   "sources": 7940,
-  "data_points": 51132,
+  "data_points": 51234,
   "claims": {
    "verified": 6172,
-   "unverified": 7906,
+   "unverified": 7957,
    "contradicted": 1370
   },
-  "claims_total": 15448,
+  "claims_total": 15499,
   "deep_profiles": 1999,
   "checks_by_level": {
    "registry": 1792,

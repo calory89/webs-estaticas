@@ -16,7 +16,7 @@
 //   14 GET /manifest.webmanifest, /[lang/]offline/ installable app and the page the service worker (/sw.js) shows offline
 // Every JSON answer: CORS, ETag + If-None-Match 304, RateLimit-Policy / RateLimit (IETF draft) and X-RateLimit-*, edge cache headers.
 import { T } from './kbx_n30b_i18n.js';
-import { dqExtra, dqJson } from './kbx_n31c.js';   // n31c (batch 31): gaps by place, automatic checks, stable ids
+import { dqExtra, dqJson, loadT as n31cT } from './kbx_n31c.js';   // n31c (batch 31): gaps by place, automatic checks, stable ids
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -226,7 +226,7 @@ async function dqPage(req, u, env, ctx, shell, lang) {
     '<h2>' + esc(L.dq_f_h) + ' <small>(' + ar(lang, nf(q.projects, lang)) + ')</small></h2><div class="n30-tw"><table class="n30-t"><thead><tr>' + L.dq_th_f.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + frows + '</tbody></table></div>' +
     '<h2>' + esc(L.dq_fr_h) + '</h2>' + fr +
     '<h2>' + esc(L.dq_m_h) + '</h2><div class="n30-tw"><table class="n30-t n30-sm"><thead><tr>' + L.dq_th_m.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + mrows + '</tbody></table></div>' +
-    (await (async () => { try { return dqExtra(await (await N()).data(env), lang); } catch (e) { return ''; } })()) +
+    (await (async () => { try { await n31cT(env); return dqExtra(await (await N()).data(env), lang); } catch (e) { return ''; } })()) +
     '<p class="k-xs" lang="en" dir="ltr">' + esc(q.method) + '</p><p><a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a> · <a href="' + P + '/api/docs/">API v1</a> · <a href="/engineering/">' + esc(L.eng) + '</a></p></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', url: canonU, name: L.dq_h1, description: L.dq_lead, inLanguage: lang, dateModified: q.data_updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: L.eng, item: ORIGIN + '/engineering/' }, { '@type': 'ListItem', position: 3, name: L.dq_h1, item: canonU }] }] };

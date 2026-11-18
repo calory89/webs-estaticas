@@ -8,7 +8,7 @@
 // Routes:
 //   GET /api/x/filings            every matched developer (public JSON)
 //   GET /api/x/filings?dev=<slug> one developer
-import { finRtHtml } from './kbx_n31c.js';   // n31c (items 129, 130)
+import { finRtHtml, loadT as n31cT } from './kbx_n31c.js';   // n31c (items 129, 130)
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/filings\/?$/;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -18,6 +18,7 @@ const fdt = (d, l) => { if (!d) return ''; try { return new Date(d + 'T00:00:00Z
 
 let MEMO = null;
 export async function filingsData(env) {
+  await n31cT(env).catch(() => {});   // n31c strings for the results and ratings lines
   if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
   let r = null; const path = '/data/listed-developers.json';
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); } catch (e) { r = null; }
