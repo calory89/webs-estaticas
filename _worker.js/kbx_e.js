@@ -160,6 +160,15 @@ const TOOLS = [
       year: { type: 'integer', minimum: 2020, maximum: 2040 }, market: { type: 'string', maxLength: 60 }, country: { type: 'string', maxLength: 60 },
       limit: { type: 'integer', minimum: 1, maximum: 100, default: 25 }, offset: { type: 'integer', minimum: 0, maximum: 10000, default: 0 } } },
     annotations: Object.assign({ title: 'Named projects by handover year' }, RO) },
+  { name: 'search_text', title: 'Search named projects by free text',   // n31e (batch 31, item 173)
+    description: 'Free-text search over named project pages: a project name, developer or place in any order (e.g. "damac bay", "marina dubai", "flora berlin"). Returns up to 25 projects with developer, place, stage, handover date on record, last checked, page URL and a link to its dated handover history. Facts only, no verdict.',
+    inputSchema: { type: 'object', additionalProperties: false, required: ['query'], properties: {
+      query: { type: 'string', minLength: 2, maxLength: 120 }, limit: { type: 'integer', minimum: 1, maximum: 25, default: 10 } } },
+    annotations: Object.assign({ title: 'Search named projects by free text' }, RO) },
+  { name: 'get_certificate', title: 'Verification certificate of a project',   // n31e (batch 31, item 173)
+    description: 'The verification certificate of one named project (by page slug, e.g. unsere-flora-berlin): the facts as published today in canonical JSON, their SHA-256 fingerprint, the hash of the daily dataset snapshot they come from, and the signature where a signing key is configured. Same as GET /api/v1/projects/<slug>/certificate.',
+    inputSchema: { type: 'object', additionalProperties: false, required: ['slug'], properties: { slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' } } },
+    annotations: Object.assign({ title: 'Verification certificate of a project' }, RO) },
   { name: 'market_stats', title: 'Market statistics',
     description: 'Per-market statistics: projects tracked, average checks public and confirmed, share with a public permit, share with deposit protection (escrow), projects with all six public, flagged projects, and the transparency index (0-100, markets with 3+ projects). Without filters returns GET /api/open/markets as published.',
     inputSchema: { type: 'object', additionalProperties: false, properties: {
@@ -229,6 +238,17 @@ async function runTool(env, name, a) {
     const year = int(a, 'year', 2020, 2040, null); if (year == null) throw argErr('year is required');
     const K = await import('./kbx_n27a.js'), d = await K.mcpByYear(env, { year, market: str(a, 'market'), country: str(a, 'country'), limit: int(a, 'limit', 1, 100, 25), offset: int(a, 'offset', 0, 10000, 0) });
     return [await signed(env, JSON.stringify(d, null, 1), 'https://kolaboro.com/data/named.json (handover year ' + year + ')')];
+  }
+  if (name === 'search_text') {   // n31e (batch 31)
+    const q = str(a, 'query', 120); if (!q || q.length < 2) throw argErr('query must be at least 2 characters');
+    const K = await import('./kbx_n31e.js'), d = await K.mcpFind(env, q, int(a, 'limit', 1, 25, 10));
+    return [await signed(env, JSON.stringify(d, null, 1), 'https://kolaboro.com/api/v1/find?q=' + encodeURIComponent(q))];
+  }
+  if (name === 'get_certificate') {   // n31e (batch 31)
+    const slug = str(a, 'slug', 90); if (!slug || !/^[a-z0-9-]{1,90}$/.test(slug)) throw argErr('slug must be lowercase letters, digits and hyphens');
+    const B = await import('./kbx_n30b.js'), c = await B.certificate(env, slug);
+    if (!c) return [{ status: 404, local: true, body: JSON.stringify({ error: 'no named project with this slug', hint: 'Use search_text to find the slug. Projects in Sumba are never named (see /independence/).' }, null, 1), source: 'https://kolaboro.com/projects/' }];
+    return [await signed(env, JSON.stringify({ certificate: c.cert, signature: c.signature || null, page: 'https://kolaboro.com/projects/' + slug + '/certificate/', api: 'https://kolaboro.com/api/v1/projects/' + slug + '/certificate' }, null, 1), 'https://kolaboro.com/api/v1/projects/' + slug + '/certificate')];
   }
   if (name === 'market_stats') {
     const m = str(a, 'market'), c = str(a, 'country'), r = await openCall(env, '/api/open/markets');

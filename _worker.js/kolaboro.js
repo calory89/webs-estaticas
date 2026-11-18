@@ -1625,10 +1625,11 @@ export async function ssr(base, u, kind, env) {
     const LR = L.filter(rv8).length ? L.filter(rv8) : L;
     const m = L[0].market, n = L.length, avg = f => (LR.reduce((a, x) => a + (f(x) || 0), 0) / LR.length);
     const pct = f => Math.round(LR.filter(f).length / LR.length * 100);
-    title = 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
+    const same31 = String(m).toLowerCase() === String(L[0].country).toLowerCase();   // n31s (item 200): a market named like its country (Cyprus, Portugal, Malaysia) said "Cyprus, Cyprus" and took the title of /countries/<c>/
+    title = same31 ? m + ' off-plan market file: what developers publish | Kolaboro' : 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
     desc = !L.some(rv8) ? n + ' off-plan projects tracked in ' + m + ', not yet reviewed by Kolaboro. Updated ' + d.updated + '.' : n + ' off-plan projects tracked in ' + m + (LR.length < n ? ' (' + (n - LR.length) + ' not yet reviewed)' : '') + '. Of the reviewed ones, on average ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public; ' + pct(x => (x.checks || {}).permit === 2) + '% publish a permit number and ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + d.updated + '.';
     canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
-    body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="' + pHref(x.id) + '">' + hesc(x.id) + '</a>: ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>';
+    body = '<h2>Off-plan projects in ' + hesc(m) + (same31 ? '' : ', ' + hesc(L[0].country)) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="' + pHref(x.id) + '">' + hesc(x.id) + '</a>: ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>';
     const cs8 = String(L[0].country === 'Puerto Rico (USA)' ? 'Puerto Rico' : L[0].country === 'St Lucia' ? 'Saint Lucia' : L[0].country).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same slug as /countries/<c>/ (kbx_seo.js)
     body = '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + '</a> · <a href="/countries/' + cs8 + '/how-to-check/">How to check a project in ' + hesc(L[0].country) + '</a> · <a href="/rankings/most-delayed/">Most delayed projects</a> · <a href="/registers/">Official registers</a>' + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
     // n29t (items 52, 53, 48, 46): the place itself as a Place inside its Country; the visible breadcrumb of the page (the shell's) shows
@@ -1637,7 +1638,7 @@ export async function ssr(base, u, kind, env) {
     mcrumb = '<a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a><span id="mk-crumb"> / ' + hesc(m) + '</span>';
     mfeed = '<link rel="alternate" type="application/rss+xml" title="' + hesc('Kolaboro: ' + m) + '" href="/feed.xml?market=' + encodeURIComponent(m) + '">';
     if (title.length > 60) title = title.replace(/ \| Kolaboro$/, '');
-    if (title.length > 60) title = 'Off-plan projects in ' + m + ': what developers publish';
+    if (title.length > 60) title = same31 ? m + ' off-plan market file' : 'Off-plan projects in ' + m + ': what developers publish';
   }
   const nm = ((base.headers.get('content-security-policy-report-only') || '') + ' ' + (base.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
   // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section

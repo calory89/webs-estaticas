@@ -93,7 +93,7 @@ const GL_RX = {
 let GX = null;
 async function glossaryExamples(env) {
   const ix = await N.data(env); if (GX && GX.ix === ix) return GX.M;
-  let top = []; try { top = (await import('./kbx_g27.js')).TOP_IDS.split(/\s+/); } catch (e) {}
+  let top = []; try { const T = (await import('./kbx_g27.js')).TOP_IDS; top = Array.isArray(T) ? T : String(T).split(/\s+/); } catch (e) {}
   const rank = new Map(top.map((id, i) => [id, i]));
   const P = ix.P.filter(x => x.n && !COI_RX.test(x.n + ' ' + x.dv)).sort((a, b) => (rank.has(a.id) ? rank.get(a.id) : 1e6) - (rank.has(b.id) ? rank.get(b.id) : 1e6) || String(a.id).localeCompare(b.id));
   const M = new Map();
@@ -224,16 +224,16 @@ const GUIDE = { bali: ['Bali'], dubai: ['Dubai'], phuket: ['Phuket'], 'costa-del
 let TOPM = null;
 async function topByMk(env) {
   const ix = await N.data(env); if (TOPM && TOPM.ix === ix) return TOPM.M;
-  let ids = []; try { ids = (await import('./kbx_g27.js')).TOP_IDS.split(/\s+/); } catch (e) {}
+  let ids = []; try { const T = (await import('./kbx_g27.js')).TOP_IDS; ids = Array.isArray(T) ? T : String(T).split(/\s+/); } catch (e) {}
   const M = new Map(); for (const id of ids) { const x = ix.byId.get(id); if (!x || COI_RX.test(String(x.n) + ' ' + String(x.dv))) continue; if (!M.has(x.mk)) M.set(x.mk, []); M.get(x.mk).push(x); }
   TOPM = { ix, M }; return M;
 }
 function placeOf(p) {   // { mks, tr } for a place hub path (language prefix removed)
   let m;
-  if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && P.m.some(k => mks.includes(k))), name: mks[0] }; }
+  if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && !P.a && P.s === slugA(mks[0])) || TR_PLACES.find(P => !P.coi && !P.a && P.m.some(k => mks.includes(k))), name: mks[0] }; }
   if ((m = /^\/rankings\/transparency\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return P ? { mks: P.m, tr: P, name: P.n } : null; }
   if ((m = /^\/handover\/20\d\d\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return { slug: m[1], tr: P, mks: P ? P.m : null, name: P ? P.n : null }; }
-  if ((m = /^\/m\/([^/]+)\/$/.exec(p))) { let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {} const P = TR_PLACES.find(q => !q.coi && q.m.some(x => slugA(x) === slugA(k))); return { tr: P, mks: null, name: null, mOnly: true }; }
+  if ((m = /^\/m\/([^/]+)\/$/.exec(p))) { let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {} const P = TR_PLACES.find(q => !q.coi && !q.a && q.s === slugA(k)) || TR_PLACES.find(q => !q.coi && !q.a && q.m.some(x => slugA(x) === slugA(k))); return { tr: P, mks: null, name: null, mOnly: true }; }
   return null;
 }
 export async function inject(req, u, env, r) {

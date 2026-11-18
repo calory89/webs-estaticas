@@ -110,12 +110,13 @@ async function xrIndex(env) {
   if (XR.ix === ix) return XR;
   const { regDomain } = await import('./kbx_xray.js');
   const host = u => { try { return new URL(u).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return ''; } };
+  let TRD = null; try { TRD = await (await import('./kbx_tr.js')).trData(env); } catch (e) { TRD = null; }   // n31e (batch 31, item 157): transparency score in the extension panel
   const refs = {}, keys = new Map(), add = (k, s, r) => { const kk = k + '|' + s; if (!keys.has(kk)) keys.set(kk, new Set()); keys.get(kk).add(r); };
   const devCountry = new Map();
   for (const x of ix.P) {
     const c = ix.caseBy.get(x.id) || {}, rv = NM.reviewed(c), h = NM.handoverOf(ix, x), dv = x.dvs && ix.devs.has(x.dvs) ? x.dvs : null;
     refs['p:' + x.s] = { t: 'p', s: x.s, n: x.n, dv: x.dv || null, dvs: dv, mk: x.mk || null, co: x.co || null, ar: x.ar || null, st: c.stage || x.st || null,
-      ho: h ? String(h.d) : null, ov: c.overdue || null, ck: c.checked || null, rv, sc: rv ? c.score : null, mx: rv ? c.max : null };
+      ho: h ? String(h.d) : null, ov: c.overdue || null, ck: c.checked || null, rv, sc: rv ? c.score : null, mx: rv ? c.max : null, ts: TRD && TRD.rows.get(x.id) ? TRD.rows.get(x.id).score : null };
     if (dv) { if (!devCountry.has(dv)) devCountry.set(dv, new Set()); if (x.co) devCountry.get(dv).add(x.co); }
     const names = new Set(), full = xNorm(x.n);
     names.add(full); names.add(xNorm(String(x.n).replace(/\([^)]*\)/g, ' '))); names.add(xNorm(String(x.n).replace(/\s+by\s+.+$/i, '')));

@@ -48,6 +48,7 @@ let kwat = null; const KWAT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?watch\/lookalik
 let ke27 = null; const KE27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/report(?:\/|\.pdf)?|weekly(?:\/[a-z0-9-]{2,40})?\/?)$|^\/weekly\/(?:[a-z0-9-]{2,40}\/feed\.(?:atom|json)|sitemap\.xml)$|^\/api\/x\/e27\/(?:mail\/(?:review|delays)|signups|notices\/[A-Za-z0-9-]{3,20})\/?$/;   // n27e (batch 27): project report + PDF, weekly changes per place, mail previews, sign-ups, notices (keep equal to PATHS in kbx_e27.js)
 let ku27 = null; const KU27 = /^\/k\/(?:u27|n31d)\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;   // n27u (batch 27): client script of named pages, cost rows, map of all projects, full ticker lines (keep equal to PATHS in kbx_u27.js)
 let k30c = null; const K30C = /^\/k\/n30c-map\.js$|^\/api\/v1\/pin\/[A-Za-z0-9-]{3,20}$|^\/embed\/v2(?:\.js|\/[a-z0-9-]{1,90}\/?)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:prices\/history(?:\/[a-z0-9-]{2,60})?|watch\/lookalikes\/images|tools\/widget|engineering\/status)\/?$/;   // n30c (batch 30): map client, pin check, widget v2, price history by place, image reuse, engineering status (keep equal to PATHS in kbx_n30c.js)
+let kn31e = null; const KN31E = /^\/k\/n31e\.js$|^\/api\/v1\/(?:find|new-websites(?:\.json)?|handover-history\/[a-z0-9-]{1,90})$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/(?:find-listing|handover-history|visa-by-investment|compare-countries|on-time|request-documents|inheritance|foreign-mortgages|area-report|translate|receipt-check|payment-vs-progress)|satellite\/monthly|watch\/new-websites|app)\/?$/;   // n31e (batch 31): buyer tools (keep equal to PATHS in kbx_n31e.js)
 let kn30 = null; const KN30 = /^\/k\/n30a(?:-cr)?\.js$|^\/api\/v1\/slippage(?:\.csv)?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/contract-reader|methods\/handover-slippage|projects\/[a-z0-9-]{1,90}\/timeline)\/?$/;   // n30a (batch 30): NL search and slider script, contract reader, handover slippage, project timeline (keep equal to PATHS in kbx_n30a.js)
 let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
@@ -557,6 +558,12 @@ export default {
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const r = await ke27.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // kolaboro.com (n31e, batch 31): buyer tools, satellite loop, new developer websites, install page (see kbx_n31e.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN31E.test(u.pathname)) {
+      if (!kn31e) kn31e = await import('./kbx_n31e.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn31e.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n30c, batch 30): /k/n30c-map.js, /api/v1/pin/<ID>, /embed/v2/<slug>/, /embed/v2.js, /[lang/]prices/history/[<place>/], /[lang/]watch/lookalikes/images/, /[lang/]tools/widget/, /[lang/]engineering/status/ (see kbx_n30c.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K30C.test(u.pathname)) {

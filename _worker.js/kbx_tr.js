@@ -186,7 +186,9 @@ export async function trProject(env, id, lang) {
   const ranks = [];
   for (const [s, pl] of ix.places) if (!pl.P.coi && pl.L.includes(r)) ranks.push({ s, p: pl.P.n, r: pl.ranked ? r['rk_' + s] : null, m: pl.n, ranked: pl.ranked });
   const plain = h => String(h).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-  const items = KEYS.map(k => ({ k, st: r.comp[k].st, label: t(lang, 'c_' + k), text: plain(compText(lang, k, r.comp[k])) }));
+  // n31e (batch 31, item 174): points the score would gain if this component were published and checkable (others unchanged)
+  const gain = k => { const q = r.comp[k]; if (k === 'notices' || q.st === 'yes') return 0; const add = q.st === 'nc' ? MAX[k] : MAX[k] - (q.pts || 0), av = r.avail + (q.st === 'nc' ? MAX[k] : 0); return av ? Math.max(0, Math.round((r.got + add) / av * 100) - r.score) : 0; };
+  const items = KEYS.map(k => ({ k, st: r.comp[k].st, label: t(lang, 'c_' + k), text: plain(compText(lang, k, r.comp[k])), gain: gain(k) }));
   return { score: r.score, rv: r.rv, ranks, items, badge: await trBadge(env, id, lang), ledger: ledger(lang, r), method: pre(lang) + '/methods/transparency-score/', updated: ix.updated };
 }
 
