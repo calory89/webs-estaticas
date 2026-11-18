@@ -2,6 +2,7 @@
 // it was read. Every figure is computed at request time from the same functions that serve /api/open/stats, the sitemaps and the
 // named pages, so the page can never disagree with them. No paid AI, no database writes. The daily history of these counters lives
 // on /progress/ (linked, not repeated here); operational metrics live on /metrics/.
+import { t31 } from './kbx_n31b_page.js';   // n31b (batch 31): review share paragraph (item 67)
 import * as N from './kbx_named.js';
 
 export const PAGE = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;
@@ -52,7 +53,9 @@ async function figures(env, inner) {
   // counts every URL of every sitemap in /sitemap_index.xml (20,508 on 14 Nov), so it is the figure shown, with its own date
   const au = await get('/data/seo-audit.json'), aun = au && au.summary && au.summary.in_sitemaps;
   if (aun) add('pages', 'urls', aun, '/engineering/seo/', au.generated_at); else if (seo) add('pages', 'urls', Object.values(seo).reduce((a, b) => a + b, 0), '/sitemap_index.xml', today);
-  const v = { F, up, today }; MEMO = { t: Date.now(), v }; return v;
+  // n31b (item 67): how much is reviewed, from the same named data (register lookup field rw, review checklist rvw.ok)
+  const rev = ix ? { n: ix.P.length, a: ix.P.filter(x => x.rw).length, b: ix.P.filter(x => x.rvw && x.rvw.ok).length, d: ix.updated || up } : null;
+  const v = { F, up, today, rev }; MEMO = { t: Date.now(), v }; return v;
 }
 
 export async function handle(req, u, env, ctx, shell, inner) {
@@ -60,7 +63,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (!u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
   const lang = m[1] || 'en', L = T[lang], path = pre(lang) + '/numbers/', canon = ORIGIN + path;
   // the figures take a few seconds to compute from scratch (sitemaps, transparency index): the page is kept at the edge for 15 minutes
-  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v3/' + lang) : null;
+  const ck = shell !== 'test' && typeof caches !== 'undefined' && !u.search ? new Request(ORIGIN + '/__numbers/v4/' + lang) : null;
   // n28a: a cold build took 8.6 s (measured 14 Nov 2026). The copy is now kept a day and served at once; after 15 minutes it is
   // rebuilt in the background on the next view (stale-while-revalidate), so visitors no longer wait for the build
   if (ck) { try { const hit = await caches.default.match(ck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0);
@@ -70,13 +73,13 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const html = await build();
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'content-language': lang } });
   async function build() {
-  const { F, up, today } = await figures(env, inner);
+  const { F, up, today, rev } = await figures(env, inner);
   const b = s => lang === 'ar' ? '<bdi>' + s + '</bdi>' : s;
   const row = f => '<tr><th scope="row">' + esc(L[f.id]) + '</th><td class="knum-v">' + b(nf(f.v, lang, f.dec)) + '</td><td><a href="' + f.src + '">' + b(esc(f.src)) + '</a></td><td>' + esc(fd(f.at, lang)) + '</td></tr>';
   const tbl = g => { const R = F.filter(f => f.g === g); return R.length ? '<h2 id="' + g + '">' + esc(L['g_' + g]) + '</h2><div class="knum-w"><table class="knum"><thead><tr>' + L.th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + R.map(row).join('') + '</tbody></table></div>' : ''; };
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h1>' + esc(L.h1) + '</h1><p class="lead">' + esc(L.lead) + '</p></div></section><div class="wrap knumw"' + (lang === 'ar' ? ' dir="rtl"' : '') + '>' +
     '<style>.knumw{padding-bottom:40px}.knum-w{overflow-x:auto}.knum{width:100%;border-collapse:collapse;margin:8px 0 24px}.knum th,.knum td{text-align:start;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}.knum thead th{font-size:.85rem;color:var(--muted)}.knum-v{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}@media (max-width:560px){.knum thead{display:none}.knum tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}.knum th,.knum td{display:block;border:0;padding:2px 0}}</style>' +
-    tbl('db') + tbl('pages') +
+    tbl('db') + tbl('pages') + (rev && rev.n ? (pc => '<h2 id="reviewed">' + esc(t31(lang, 'nb_h')) + '</h2><p>' + esc(t31(lang, 'nb_t', { a: nf(rev.a, lang), n: nf(rev.n, lang), ap: nf(pc(rev.a), lang, 1), b: nf(rev.b, lang), bp: nf(pc(rev.b), lang, 1) })) + ' <a href="' + pre(lang) + '/editorial-policy/">' + esc(t31(lang, 'nb_l')) + '</a> · <a href="/data/named.json">/data/named.json</a> (' + esc(fd(rev.d, lang)) + ')</p>')(v => Math.round(v / rev.n * 1000) / 10) : '') +
     '<h2 id="cite">' + esc(L.cite_h) + '</h2><p>' + esc(L.cite).replace('{u}', b('<a href="' + path + '">' + canon + '</a>')).replace('{d}', esc(fd(up, lang))) + '</p>' +
     '<h2 id="more">' + esc(L.more_h) + '</h2><ul class="lk"><li><a href="/progress/">' + esc(L.progress) + '</a></li><li><a href="/metrics/">' + esc(L.metrics) + '</a></li><li><a href="/api/open/stats">' + esc(L.api) + '</a></li><li><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(L.method) + '</a></li></ul></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [

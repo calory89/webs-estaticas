@@ -12,6 +12,7 @@
 //   GET /rankings/transparency.csv       every place of the transparency ranking, one row per project and place (CC BY 4.0)
 //   GET /rankings/transparency/<place>.csv   one place
 // Static fallback: if a data file cannot be read, /corrections/ falls through to the static page.
+import { t31 } from './kbx_n31b_page.js';   // n31b (batch 31): labels of the corrections of recorded facts and of removals (item 69)
 import { t27 } from './kbx_t27_i18n.js';
 import { trData } from './kbx_tr.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
@@ -60,7 +61,7 @@ const eligible = ix => [...ix.rows.values()].filter(r => !r.sumba && r.score >= 
 function corrPage(C, lang, id, SL) {
   const st = v => v == null ? '' : esc(t27(lang, 'st_' + v) || v);
   const E = (C.entries || []).filter(e => !id || e.id === id);
-  const row = e => '<li><b>' + tm(e.date, lang) + '</b> · ' + (SL[e.id] ? '<a href="' + pre(lang) + '/projects/' + SL[e.id].s + '/"><bdi>' + esc(SL[e.id].n) + '</bdi></a> <span class="k-muted k-small" dir="ltr">' + esc(e.id) + '</span>' : '<bdi>' + esc(e.id) + '</bdi>') + ' · ' + esc(t27(lang, e.kind === 'pin' ? 'co_k_pin' : 'co_k_claim')) + '<br>' +
+  const row = e => '<li><b>' + tm(e.date, lang) + '</b> · ' + (SL[e.id] ? '<a href="' + pre(lang) + '/projects/' + SL[e.id].s + '/"><bdi>' + esc(SL[e.id].n) + '</bdi></a> <span class="k-muted k-small" dir="ltr">' + esc(e.id) + '</span>' : '<bdi>' + esc(e.id) + '</bdi>') + ' · ' + esc(e.kind === 'field' || e.kind === 'removal' ? t31(lang, 'co_k_' + e.kind) : t27(lang, e.kind === 'pin' ? 'co_k_pin' : 'co_k_claim')) + '<br>' +
     (e.kind === 'pin' ? esc(t27(lang, 'co_k_pin')) + ': ' + st(e.after) + '.' : e.before ? te(lang, 'co_from', { what: '<span lang="en">' + esc(e.what) + '</span>', b: st(e.before), a: st(e.after) }) : te(lang, 'co_to', { what: '<span lang="en">' + esc(e.what) + '</span>', a: st(e.after) })) + '<small lang="en">' + esc(e.why) + '</small></li>';
   const A = (C.audits || []).map(a => '<p>' + te(lang, 'co_audit', { d: tm(a.date, lang), n: nf(lang, a.sample_projects), c: nf(lang, a.claims), s: nf(lang, a.supported), w: nf(lang, a.wrong), u: nf(lang, a.unchecked), r: Number(a.error_rate_pct).toLocaleString(LOC[lang] || 'en-GB'), k: nf(lang, a.claims - a.unchecked) }) + '</p><p class="k-small k-muted">' + esc(t27(lang, 'co_audit_note')) + '</p>' +
     (a.method ? '<p class="k-small">' + esc(t27(lang, 'co_method')) + ' <a class="k-src" href="' + esc(a.method.replace(ORIGIN, '')) + '">' + esc(a.method.replace(ORIGIN, '').replace(/^\//, '')) + '</a></p>' : '')).join('');

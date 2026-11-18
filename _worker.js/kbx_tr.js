@@ -17,6 +17,7 @@
 // City or Equinox) are excluded from every ranking. Sumba is ranked by decision of the owner (12 Nov 2026) with a disclosure at the top;
 // Sumba rows link to nothing but the right of reply, and the rest of the site's Sumba handling is unchanged (no project pages).
 // Possible matches on official lists are never published and count exactly like "not checked" (left out of the total).
+import { t31 } from './kbx_n31b_page.js';   // n31b (batch 31): worked example on the method page (item 82)
 import { TRS } from './kbx_tr_i18n.js';
 import { hdisp, mkName } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
@@ -362,6 +363,18 @@ function hubPage(ix, lang) {
     crumbLd(lang, cr)];
   return { title, desc, body, ld, path };
 }
+// n31b (item 82): the score of one real project, step by step, from its current data (the project of case study 1; another reviewed
+// project if it is missing). Uses the same ledger as the ranking pages, so the example can never disagree with them.
+const MX_IDS = ['DXB-021', 'PHK-001', 'MYS-004'];
+function exampleHtml(ix, lang) {
+  const r = MX_IDS.map(i => ix.rows.get(i)).find(Boolean); if (!r) return '';
+  const nc = KEYS.filter(k => r.comp[k].st === 'nc').map(k => t(lang, 'c_' + k));
+  const pl = [...ix.places.values()].find(p => p.L.includes(r));
+  const P = pre(lang) + '/projects/' + r.s + '/';
+  return '<h2 id="example">' + esc(t31(lang, 'mx_h', { n: r.n })) + '</h2><p>' + esc(t31(lang, 'mx_lead')) + ' <a href="' + P + '">' + bdi(r.n) + '</a></p><p>' + esc(t31(lang, 'mx_s1')) + '</p>' + ledger(lang, r) +
+    '<p>' + esc(nc.length ? t31(lang, 'mx_s2', { nc: nc.join(', ') }) : t31(lang, 'mx_s2n')) + '</p><p><b>' + esc(t31(lang, 'mx_s3', { g: nf(lang, r.got), a: nf(lang, r.avail), s: nf(lang, r.score) })) + '</b></p>' +
+    (pl ? '<p>' + esc(t31(lang, 'mx_s4', { p: pl.P.n })) + ' <a href="' + pre(lang) + '/rankings/transparency/' + pl.P.s + '/">' + bdi(pl.P.n) + '</a></p>' : '');
+}
 function methodPage(ix, lang) {
   const path = '/methods/transparency-score/', title = t(lang, 'mt_title'), desc = t(lang, 'mt_desc');
   const cr = [['Kolaboro', pre(lang) + '/', 'Kolaboro'], [t(lang, 'crumb_t'), pre(lang) + '/rankings/transparency/', esc(t(lang, 'crumb_t'))], [title, pre(lang) + path, esc(title)]];
@@ -371,6 +384,7 @@ function methodPage(ix, lang) {
   const D = ix.dates, dl = [['/data/named.json', D.named], ['/data/bali-cases.json', D.cases], ['/data/on-time.json', D.ontime], ['/data/web-health.json', D.web], ['/data/lookalikes.json', D.look], ['/data/sanctions.json', D.sanctions], ['/data/gleif-family.json', D.gleif]].map(([f, d]) => '<li><a href="' + f + '"><bdi>' + f + '</bdi></a>' + (d ? ' <span class="k-muted">' + esc(fdt(String(d).slice(0, 10), lang)) + '</span>' : '') + '</li>').join('');
   const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap k-prose"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'mt_lead')) + '</p><p class="k-small k-muted">' + methodLine(lang).trim() + '</p>' + accLine(lang) + '</div>' +
     '<h2 id="weights">' + esc(t(lang, 'mt_w_h')) + '</h2><div class="k-table-wrap ktr-tw"><table class="k-table k-table--dense k-table--stack ktr-mt"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '<tr><th scope="row">' + esc(t(lang, 'name')) + '</th><td class="k-n"><b>100</b></td><td></td><td></td></tr></tbody></table></div>' +
+    exampleHtml(ix, lang) +   // n31b (batch 31, item 82): one real project scored step by step
     '<h2 id="rules">' + esc(t(lang, 'mt_rules_h')) + '</h2><ul>' + t(lang, 'mt_rules').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
     '<h2 id="not">' + esc(t(lang, 'mt_not_h')) + '</h2><p>' + esc(t(lang, 'mt_not')) + '</p>' +
     '<h2 id="coi">' + esc(t(lang, 'coi_link')) + '</h2><p>' + esc(t(lang, 'hub_excl')) + ' ' + esc(t(lang, 'coi')) + ' <a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a></p>' +

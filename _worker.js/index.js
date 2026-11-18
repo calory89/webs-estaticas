@@ -60,6 +60,7 @@ let k27a = null; const K27A = /^\/answers\/(?:place|developer)\/[a-z0-9-]{1,90}\
 let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^\/api\/v1\/stalled$/;   // n31c (batch 31): keep equal to PATHS in kbx_n31c.js
 const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;   // n31a (batch 31): keep equal to PATHS in kbx_n31a.js
+let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
@@ -450,6 +451,13 @@ export default {
         if (!KN31X.test(u.pathname)) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; const r0 = await this.site(req, env, ctx, u, host); if (r0 && r0.status === 200) return kbHeaders(await kn31x.pricingOffers(r0, lg, env), u); }
         else { const r = await kn31x.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; }
       } catch (e) {}
+    }
+    // kolaboro.com (n31b, batch 31): /case-studies/, /conflicts-of-interest/, /what-we-cannot-know/, /data-removal/, /report-fraud/, /transparency-report/2026/,
+    // /registers/captures/, /score-history/ in 8 languages, /k/n31b.js, /data/cases/aykon-city-3.json (see kbx_n31b.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN31B.test(u.pathname)) {
+      if (!kn31b) kn31b = await import('./kbx_n31b.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n30b, batch 30): /data/snapshots/, /api/docs/, /engineering/data-quality/, /projects/<slug>/certificate/, /offline/, /manifest.webmanifest,
     // /api/v1/{snapshots,openapi.json,data-quality,changes,changes/feed.json,projects/<slug>/certificate,developers/<slug>/website} (see kbx_n30b.js)
