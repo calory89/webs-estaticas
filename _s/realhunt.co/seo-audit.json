@@ -1171,7 +1171,7 @@
    "checked": 4127,
    "indexable": 3587,
    "max_depth": 3,
-   "titles_changed_since_last_build": 10,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 315,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1180,7 +1180,6 @@
    "near_identical_pages": 527,
    "region_used_as_country": 2,
    "link_through_redirect": 1,
-   "title_changed_twice_in_28_days": 6,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1264,14 +1263,6 @@
    ],
    "link_through_redirect": [
     "/es -> /es/homes/canada"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (232)",
-    "/cheap-houses/quiet-location-in-france: Homes away from motorways and railways in France (12)",
-    "/cheap-houses/quiet-location-in-italy: Cheap homes away from motorways and railways in Italy (37)",
-    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (78)",
-    "/cheap-houses/quiet-location-in-sweden: Cheap homes away from motorways and railways in Sweden (15)",
-    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (305, from €7,400)"
    ]
   },
   "depth": {
