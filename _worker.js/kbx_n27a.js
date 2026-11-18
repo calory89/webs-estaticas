@@ -228,33 +228,6 @@ async function dashboard(env, ix, dv, lang) {
     crumbs: [['Kolaboro', '/'], [name, '/developers/' + dv.s + '/'], [dt(lang, 'title', { d: '' }).replace(/^[:：\s]+/, ''), '/developers/' + dv.s + '/dashboard/']] };
 }
 
-// n31t (batch 31, items 296 and 298): the weekly main metric (visits and paid checks, zeros shown) and a weekly chart of projects
-// tracked, visits, leads and paid checks for the last 8 weeks. Same sources as below: kolaboro_metrics_public (weeks start Monday,
-// UTC) and /api/x/progress (projects tracked per day). An SVG with the numbers written on it, and the same numbers as a table.
-function ycWeekly(W, days, T) {
-  const wk = W.slice(-8); if (!wk.length) return '';
-  const endOf = w => { const e = new Date(Date.parse(w + 'T00:00:00Z') + 7 * 864e5).toISOString().slice(0, 10); let v = null; for (const d of days) if (d.d < e) v = d.total; return v; };
-  const rows = wk.map(w => ({ w: w.week, p: endOf(w.week), v: w.visits || 0, l: w.leads || 0, c: w.paid_checks || 0, r: w.revenue_eur || 0 }));
-  const cur = rows[rows.length - 1], prev = rows[rows.length - 2];
-  const sd = d => { try { return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); } catch (e) { return d; } };
-  const S = [['p', 'Projects tracked (end of week)', '#155C75'], ['v', 'Visits', '#FF5B14'], ['l', 'Leads', '#7A5AF8'], ['c', 'Paid checks', '#0B7A55']];
-  const pw = 230, ph = 150, gap = 16, bw = (pw - 20) / rows.length;
-  const panel = (k, label, col, i) => {
-    const max = Math.max(1, ...rows.map(r => r[k] || 0)), x0 = i * (pw + gap);
-    return '<g transform="translate(' + x0 + ',0)"><text x="0" y="14" font-size="13" font-weight="700" fill="currentColor">' + esc(label) + '</text>' +
-      rows.map((r, j) => { const v = r[k] || 0, h = v ? Math.max(2, Math.round((ph - 50) * v / max)) : 0, x = 10 + j * bw, y = ph - 18 - h;
-        return '<rect x="' + (x + 2) + '" y="' + y + '" width="' + (bw - 4) + '" height="' + h + '" fill="' + col + '" rx="2"/>' + '<text x="' + (x + bw / 2) + '" y="' + (y - 4) + '" font-size="9.5" text-anchor="middle" fill="currentColor">' + (r[k] == null ? '' : num(v, 'en')) + '</text>' +
-          (j % 2 === rows.length % 2 ? '' : '<text x="' + (x + bw / 2) + '" y="' + (ph - 4) + '" font-size="9" text-anchor="middle" fill="currentColor" opacity=".7">' + esc(sd(r.w)) + '</text>'); }).join('') +
-      '<line x1="10" y1="' + (ph - 18) + '" x2="' + (pw - 10) + '" y2="' + (ph - 18) + '" stroke="currentColor" opacity=".3"/></g>';
-  };
-  const svg = '<svg viewBox="0 0 ' + (4 * pw + 3 * gap) + ' ' + ph + '" role="img" aria-labelledby="ycw-t" style="width:100%;min-width:640px;height:auto;display:block"><title id="ycw-t">Weekly: projects tracked, visits, leads and paid checks, last ' + rows.length + ' weeks</title>' + S.map((x, i) => panel(x[0], x[1], x[2], i)).join('') + '</svg>';
-  const tbl = '<details><summary>The same numbers as a table</summary><div class="k27-tw"><table><thead><tr><th scope="col">Week from</th><th scope="col">Projects tracked</th><th scope="col">Visits</th><th scope="col">Leads</th><th scope="col">Paid checks</th><th scope="col">Revenue (euros)</th></tr></thead><tbody>' +
-    rows.slice().reverse().map(r => '<tr><td>' + esc(fdate(r.w, 'en')) + '</td><td class="k27-n">' + (r.p == null ? 'n/a' : num(r.p, 'en')) + '</td><td class="k27-n">' + num(r.v, 'en') + '</td><td class="k27-n">' + num(r.l, 'en') + '</td><td class="k27-n">' + num(r.c, 'en') + '</td><td class="k27-n">' + num(r.r, 'en') + '</td></tr>').join('') + '</tbody></table></div></details>';
-  return '<h2 id="weekly">The number we watch every week</h2><p class="k27-sum"><b>Week from ' + esc(fdate(cur.w, 'en')) + ' (so far): ' + num(cur.v, 'en') + ' visits and ' + num(cur.c, 'en') + ' paid checks (' + num(cur.r, 'en') + ' euros).</b>' +
-    (prev ? ' Week before: ' + num(prev.v, 'en') + ' visits, ' + num(prev.c, 'en') + ' paid checks.' : '') + ' Paid checks so far: ' + num(T.paid_checks || 0, 'en') + '. We show the zeros: converting visits into paid checks is the work in front of us.</p>' +
-    '<div style="overflow-x:auto;margin:10px 0 6px;color:var(--ink,#17212B)">' + svg + '</div><p class="k-small">Weeks start on Monday (UTC); the current week is not complete. Visits: one per browser session, bots left out. Projects tracked: our published count at the end of each week (/progress/). Source: the same counters as <a href="/metrics/">/metrics/</a>.</p>' + tbl;
-}
-
 // ------------------------------------------------------------------------------------------------ 98: /yc/ one-minute summary (English, noindex)
 async function ycPage(env, inner) {
   const j = async p => { try { const r = await inner(p); return r && r.ok ? await r.json() : null; } catch (e) { return null; } };
@@ -263,7 +236,7 @@ async function ycPage(env, inner) {
   const W = (mt && mt.weeks) || [], last = W.slice(-4), sumW = k => last.reduce((a, w) => a + (w[k] || 0), 0), T = (mt && mt.totals) || {};
   const live = (pg && pg.live) || {}, f = n => n == null ? 'n/a' : num(n, 'en');
   const days = ((pg && pg.per_day) || []).filter(d => d.total > 0), first = days[0];
-  const b = ycWeekly(W, days, T) + '<h2 id="problem">The problem</h2><p>People buying property off-plan abroad pay deposits for buildings that do not exist yet, in a country whose registers, language and law they do not know. Developer pages are marketing; the facts that matter (permit, company, handover date record, deposit protection) are scattered across official registers.</p>' +
+  const b = '<h2 id="problem">The problem</h2><p>People buying property off-plan abroad pay deposits for buildings that do not exist yet, in a country whose registers, language and law they do not know. Developer pages are marketing; the facts that matter (permit, company, handover date record, deposit protection) are scattered across official registers.</p>' +
     '<h2 id="product">What Kolaboro does</h2><p>For every off-plan project we track, a public page with what the developer promises, what official registers and independent sources show, and what we could not verify, each fact with its source and date. Buyers who want certainty pay for a check (from 490 euros) or monthly construction monitoring (99 euros a month). Developers never pay us.</p>' +
     '<h2 id="data">The data today</h2><ul><li>' + f(st && st.projects) + ' projects in ' + f(st && st.markets) + ' markets and ' + f(st && st.countries) + ' countries' + (first ? ', up from ' + f(first.total) + ' on ' + fdate(first.d, 'en') : '') + '.</li><li>' + f(st && st.claims_total) + ' developer claims tested against registers, courts and press; ' + f(st && st.claims && st.claims.contradicted) + ' contradicted by another source.</li><li>' + f(st && st.sources) + ' sources, ' + f(st && st.data_points) + ' data points, ' + f(live.sitemap_urls) + ' public URLs in 8 languages.</li><li>Open API, MCP server, signed daily dataset: <a href="/docs/api/">/docs/api/</a>, <a href="/docs/mcp/">/docs/mcp/</a>.</li></ul>' +
     '<h2 id="shipping">Shipping daily</h2><p>' + f(live.ships_7d) + ' changes shipped and ' + f(live.deploys_7d) + ' deploys in the last 7 days. Every change is listed with its date: <a href="/progress/">/progress/</a> and <a href="/changelog/">/changelog/</a>.</p>' +

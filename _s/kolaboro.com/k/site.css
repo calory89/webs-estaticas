@@ -1393,10 +1393,3 @@ main details>summary{min-height:44px!important}
 .ship-g:empty{display:none}
 @media (prefers-reduced-motion:reduce){.ship-t.ship-run{animation:none}}
 @media (max-width:640px){.ship{height:26px;font-size:11.5px}.ship-l{padding-left:12px}.ship-v{overflow:hidden}.ship-t{width:100%}.ship-g{width:100%;min-width:0}.ship-g .si~.si{display:none}.ship .si{display:block;min-height:0;line-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 12px 0 0}.ship .si em{display:none}.ship .si b{margin-right:6px}}
-/* n31t (batch 31, item 283): dark theme fixes found by axe on the pages of 17 Nov: home live feed cards, plain-language search button */
-:root[data-theme=dark] .lv-l a{background:var(--card,#1B242D)}
-:root[data-theme=dark] .lv-l li.new a{background:rgba(255,91,20,.14)}
-:root[data-theme=dark] .lv-sk{background:rgba(255,255,255,.06)}
-:root[data-theme=dark] .lv-t em{color:#C9D0D6}
-:root[data-theme=dark] span.kvb{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);color:#E9E7E0}
-:root[data-theme=dark] .n30q button{color:#11181F}

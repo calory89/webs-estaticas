@@ -9,8 +9,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null };
 export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
-const SC_L = { en: 'Keyboard shortcuts', es: 'Atajos de teclado', de: 'Tastenkürzel', fr: 'Raccourcis clavier', nl: 'Sneltoetsen', ru: 'Горячие клавиши', zh: '键盘快捷键', ar: 'اختصارات لوحة المفاتيح' };
-const SITE_V = 'n31t3'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+const SITE_V = 'n31a2'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
@@ -91,9 +90,7 @@ export async function kbTick(req, r, env) {
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
     let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref })
       // n31t (batch 31, item 277): five entries at most in the main menu; "Live cases" stays in the footer (Data column)
-      .on('nav#menu > a[href$="/cases/"]', { element(e) { e.remove(); } })
-      // n31t (item 291): keyboard shortcuts next to Accessibility in the footer, in the page language
-      .on('footer a[href="/accessibility/"]', { element(e) { const lp = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname); e.after('</li><li><a href="' + (lp ? '/' + lp[1] : '') + '/shortcuts/">' + esc(SC_L[lp ? lp[1] : 'en']) + '</a>', { html: true }); } });
+      .on('nav#menu > a[href$="/cases/"]', { element(e) { e.remove(); } });
     const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;
     rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } })
       // n27t (batch 27): the corrections log, contact (with response times) and how to cite, in the page language, in the footer's Trust column

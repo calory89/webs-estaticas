@@ -1165,7 +1165,6 @@ async function clientErr(req, env, ctx) {
   if (b && b.kind === 'js') (Array.isArray(b.errors) ? b.errors : []).slice(0, 5).forEach(e => items.push({ kind: 'js', page: pathOf(b.page), msg: clean(e.msg, 300), src: pathOf(e.src), line: +e.line || null }));
   const ua = req.headers.get('user-agent') || '', fam = /bot|crawl|spider|headless/i.test(ua) ? 'bot' : /Edg\//.test(ua) ? 'edge' : /Chrome\//.test(ua) ? 'chrome' : /Firefox\//.test(ua) ? 'firefox' : /Safari\//.test(ua) ? 'safari' : 'other';
   if (items.length && fam !== 'bot') ctx.waitUntil(rpc('kolaboro_client_error', { p_wkey: WKEY, p_items: items.map(x => Object.assign(x, { ua: fam })) }).catch(() => {}));
-  if (items.length && fam !== 'bot') { try { ctx.waitUntil(import('./kbx_n31t.js').then(m => m.countErrs(items, ctx)).catch(() => {})); } catch (e) {} }   // n31t: public aggregate on /engineering/checks/
   return new Response(null, { status: 204 });
 }
 

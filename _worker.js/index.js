@@ -62,7 +62,6 @@ let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^
 const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;   // n31a (batch 31): keep equal to PATHS in kbx_n31a.js
 let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
-let kn31t = null; const KN31T = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:engineering\/(?:architecture|modules|rollback|licenses|checks|maintenance)|shortcuts|security\/disclosure|press\/cases|press\/data-journalism)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/press(?:\/monthly)?\/?$|^\/api\/v1\/alerts$|^\/security\.txt$/;   // n31t (batch 31): keep equal to PATHS in kbx_n31t.js
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
@@ -208,7 +207,7 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = 'e8b66bbf08', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '762890e191', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
@@ -384,12 +383,6 @@ async function h29Inject(req, u, env, r) {
 let kTick = null, kbots = null, kg27 = null;
 export default {
   async fetch(req, env, ctx) {
-    const t0 = Date.now();   // n31t (batch 31, item 258): worker time to response headers, sent as Server-Timing on kolaboro.com HTML
-    // n31t (batch 31, item 273): maintenance mode. Off unless the environment setting KB_MAINT is "1": then every kolaboro.com page
-    // answers with a short notice in its language (503, Retry-After); data files, APIs, scripts and /status/ keep working.
-    if (env && env.KB_MAINT === '1' && (req.method === 'GET' || req.method === 'HEAD') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) {
-      try { if (!kn31t) kn31t = await import('./kbx_n31t.js'); const u0 = new URL(req.url); if (!kn31t.MAINT_SKIP.test(u0.pathname)) return kn31t.maintPage(u0); } catch (e) {}
-    }
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
@@ -402,7 +395,6 @@ export default {
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
       // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
       if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
-      try { if (r2 && /text\/html/.test(r2.headers.get('content-type') || '')) { const h = new Headers(r2.headers), st = h.get('server-timing'); h.set('server-timing', (st ? st + ', ' : '') + 'edge;dur=' + (Date.now() - t0) + ';desc="worker to headers"'); r2 = new Response(r2.body, { status: r2.status, statusText: r2.statusText, headers: h }); } } catch (e) {}
       return r2; }
     return r;
   },
@@ -467,13 +459,6 @@ export default {
       if (!kn31b) kn31b = await import('./kbx_n31b.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
-    }
-    // kolaboro.com (n31t, batch 31): engineering pages (architecture, modules, rollback, licences, checks, maintenance preview), /shortcuts/,
-    // /security/disclosure/, press pages in 8 languages, /api/v1/alerts (see kbx_n31t.js)
-    if (host === 'kolaboro.com' && KN31T.test(u.pathname)) {
-      if (!kn31t) kn31t = await import('./kbx_n31t.js');
-      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      try { const r = await kn31t.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n30b, batch 30): /data/snapshots/, /api/docs/, /engineering/data-quality/, /projects/<slug>/certificate/, /offline/, /manifest.webmanifest,
     // /api/v1/{snapshots,openapi.json,data-quality,changes,changes/feed.json,projects/<slug>/certificate,developers/<slug>/website} (see kbx_n30b.js)

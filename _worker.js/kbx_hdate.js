@@ -168,6 +168,7 @@ export function hkey(s) {
   const m = v.m || (v.q ? v.q * 3 : v.h ? v.h * 6 : v.p ? { b: 3, m: 6, l: 10, e: 12 }[v.p] : v.s ? { sp: 5, su: 8, au: 11, wi: 12 }[v.s] : 12);
   return v.y + '-' + String(m).padStart(2, '0');
 }
+export const HDATE_V = 1;
 
 // n25t: country names as we store them (English) shown in the page language, from Intl.DisplayNames (CLDR). English pages keep
 // the stored name exactly. Unknown names stay as stored.
@@ -231,6 +232,7 @@ const PLN_RAW = {
 };
 const PLL = ['es', 'fr', 'de', 'nl', 'ru', 'zh', 'ar'], PLN = {};
 for (const [k, v] of Object.entries(PLN_RAW)) { const a = v.split('|'); PLN[k] = {}; PLL.forEach((l, i) => { if (a[i]) PLN[k][l] = a[i]; }); }
+export const PLACE_NAMES = PLN;
 // a market or place part in the page language: a country name (Intl), a place with a name in use in that language, else as stored;
 // "Zanzibar (Unguja)" style names translate both parts
 export const mkName = (mk, lang) => {
