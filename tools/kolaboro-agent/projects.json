@@ -1552,6 +1552,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://breig-property.com/projects/elysium-eco-city"
+    },
+    {
+     "claim": "Pin: -8.6452045, 115.1212514 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://breig-property.com/projects/elysium-eco-city"
     }
    ],
    "facts": {
@@ -1592,8 +1598,8 @@
      "riverside walk",
      "eco garden"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.6452045,
+    "lng": 115.1212514,
     "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -3154,6 +3160,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://breig-property.com/about-us/"
+    },
+    {
+     "claim": "Pin: -8.6607496, 115.1369311 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://breig-property.com/projects/oasis-iii"
     }
    ],
    "facts": {
@@ -3189,8 +3201,8 @@
      "ocean view",
      "furnished turnkey"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.6607496,
+    "lng": 115.1369311,
     "permit_authority": "Kabupaten Badung government (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -6208,6 +6220,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://breig-property.com/projects/edem-i-villas"
+    },
+    {
+     "claim": "Pin: -8.8270876, 115.202804 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://breig-property.com/projects/edem-i-villas"
     }
    ],
    "facts": {
@@ -6241,8 +6259,8 @@
      "rooftop",
      "ocean and hill views"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.8270876,
+    "lng": 115.202804,
     "permit_authority": "Badung Regency (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -6403,6 +6421,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://breig-property.com/projects/edem-ii-santorini"
+    },
+    {
+     "claim": "Pin: -8.8295, 115.2031111 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://breig-property.com/projects/edem-ii-santorini"
     }
    ],
    "facts": {
@@ -6444,8 +6468,8 @@
      "shared pool",
      "rooftops"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.8295,
+    "lng": 115.2031111,
     "permit_authority": "Badung Regency (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -6607,6 +6631,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://loyo-development.com/pandawadreamen"
+    },
+    {
+     "claim": "Pin: -8.505188941559933, 115.25369305524647 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ubuddream.com/"
     }
    ],
    "facts": {
@@ -6647,8 +6677,8 @@
      "concierge",
      "smart home"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.505188941559933,
+    "lng": 115.25369305524647,
     "permit_authority": "Gianyar Regency (PBG via SIMBG)",
     "brochure_url": null
    },

@@ -7292,6 +7292,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://citygatedephuket.com/"
+    },
+    {
+     "claim": "Pin: 7.9508702, 98.2882831 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://citygatedephuket.com/"
     }
    ],
    "facts": {
@@ -7327,8 +7333,8 @@
      "lagoon pool",
      "parking for about 141 cars"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 7.9508702,
+    "lng": 98.2882831,
     "permit_authority": "ONEP (EIA approval); Kamala subdistrict administration (building permit)",
     "brochure_url": "https://citygatedephuket.com/files/citygate-de-phuket-salekit-en.pdf"
    },
@@ -8473,6 +8479,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://vegacondominium.com/"
+    },
+    {
+     "claim": "Pin: 8.020916, 98.3132086 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vegacondominium.com/"
     }
    ],
    "facts": {
@@ -8510,8 +8522,8 @@
      "kids club",
      "co-working"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 8.020916,
+    "lng": 98.3132086,
     "permit_authority": "ONEP (EIA approval); Cherngtalay subdistrict administration (building permit)",
     "brochure_url": null
    },
@@ -16104,6 +16116,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.aldeatulumplus.com/"
+    },
+    {
+     "claim": "Pin: 20.1937232, -87.5305905 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aldeatulumplus.com/"
     }
    ],
    "facts": {
@@ -16143,8 +16161,8 @@
     "payment_plan": null,
     "service_charge": null,
     "brand": null,
-    "lat": null,
-    "lng": null
+    "lat": 20.1937232,
+    "lng": -87.5305905
    },
    "positives": [
     "Floor plan and finished-building photos in a dated brochure",
@@ -16724,6 +16742,12 @@
      "status": "unverified",
      "by": "independent",
      "source": "https://greentology.life/ong-y-fundaciones/vecinos-y-activistas-enfrentan-a-the-fives-por-usurpacion-del-acceso-a-playa-publica-xcalacoco/"
+    },
+    {
+     "claim": "Pin: 20.6652846, -87.03471859999999 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.residencesbythefives.com/"
     }
    ],
    "facts": {
@@ -16754,8 +16778,8 @@
      "kids club",
      "rooftop pool (Downtown)"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 20.6652846,
+    "lng": -87.03471859999999,
     "permit_authority": "Municipio de Solidaridad / Puerto Morelos",
     "brochure_url": null,
     "developer_units_delivered": null,
@@ -22709,6 +22733,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.dmcisales.com/p/fortis-residences.html"
+    },
+    {
+     "claim": "Pin: 14.542532, 121.016815 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dmcihomes.com/fortis-residences"
     }
    ],
    "facts": {
@@ -22746,8 +22776,8 @@
      "green building certification pursued",
      "near Magallanes MRT"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 14.542532,
+    "lng": 121.016815,
     "permit_authority": "DHSUD (License to Sell); Makati City (building permit)",
     "brochure_url": null
    },
@@ -29145,6 +29175,12 @@
      "status": "contradicted",
      "by": "none",
      "source": "https://avezor.ge/en/developers/archi-ramada-batumi/"
+    },
+    {
+     "claim": "Pin: 41.632095, 41.605249 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/ramada-hotel-and-suites-by-wyndham"
     }
    ],
    "facts": {
@@ -29184,8 +29220,8 @@
      "kids area",
      "underground parking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 41.632095,
+    "lng": 41.605249,
     "permit_authority": "Batumi City Hall (urban development service)",
     "brochure_url": null
    },
@@ -29383,6 +29419,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://archi.ge/en/complex/archi-universe"
+    },
+    {
+     "claim": "Pin: 41.717655, 44.727017 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/complex/archi-universe"
     }
    ],
    "facts": {
@@ -29424,8 +29466,8 @@
      "cafes",
      "underground parking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 41.717655,
+    "lng": 44.727017,
     "permit_authority": "Tbilisi City Hall, Architecture Service",
     "brochure_url": null
    },
@@ -37913,6 +37955,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://mawatu.co.id/faq"
+    },
+    {
+     "claim": "Pin: -8.4869, 119.8877 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mawatu.co.id/commercial-village"
     }
    ],
    "facts": {
@@ -37950,8 +37998,8 @@
      "beach club",
      "public beach facilities"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.4869,
+    "lng": 119.8877,
     "permit_authority": "Kabupaten Manggarai Barat (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -40935,6 +40983,12 @@
      "status": "unverified",
      "by": "none",
      "source": null
+    },
+    {
+     "claim": "Pin: 20.654075, -105.229061 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://davenuevallarta.com/"
     }
    ],
    "facts": {
@@ -40976,8 +41030,8 @@
      "24-hour security",
      "underground parking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 20.654075,
+    "lng": -105.229061,
     "permit_authority": "Municipality of Puerto Vallarta (licencia de construccion)",
     "brochure_url": null
    },
@@ -41919,6 +41973,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://crystalgardencondos.com/"
+    },
+    {
+     "claim": "Pin: 18.474358, -68.403381 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://crystalgardencondos.com/"
     }
    ],
    "facts": {
@@ -41955,8 +42015,8 @@
      "shuttle to beach",
      "condo-hotel services"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 18.474358,
+    "lng": -68.403381,
     "permit_authority": "MITUR (CONFOTUR and tourism permits), Ayuntamiento / MIVED (construction)",
     "brochure_url": null
    },
@@ -50632,6 +50692,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://montreve.co.za/faqs/"
+    },
+    {
+     "claim": "Pin: -33.91992776432616, 18.385255642357116 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://montreve.co.za/"
     }
    ],
    "facts": {
@@ -50667,8 +50733,8 @@
      "ground floor retail",
      "sea views"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -33.91992776432616,
+    "lng": 18.385255642357116,
     "permit_authority": "City of Cape Town (building plan approval)",
     "brochure_url": null
    },
@@ -63855,6 +63921,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/reportage-hills"
+    },
+    {
+     "claim": "Pin: 25.0925, 55.3065 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://reportagehills.com/"
     }
    ],
    "facts": {
@@ -63892,8 +63964,8 @@
      "parks",
      "clubhouse"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 25.0925,
+    "lng": 55.3065,
     "permit_authority": "Dubai Land Department / RERA",
     "brochure_url": null
    },
@@ -68887,6 +68959,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://malasamadevelopments.com/projects"
+    },
+    {
+     "claim": "Pin: -8.8953, 116.2833 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://malasamadevelopments.com/projects"
     }
    ],
    "facts": {
@@ -68922,8 +69000,8 @@
      "reception",
      "parking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.8953,
+    "lng": 116.2833,
     "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -73633,6 +73711,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.zmginmobiliaria.com/property/departamentos-en-preventa-en-torres-ozalia-en-temozon-norte-yucatan-temozon-norte-merida"
+    },
+    {
+     "claim": "Pin: 21.0477928, -89.6066239 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ozalia.mx/"
     }
    ],
    "facts": {
@@ -73663,8 +73747,8 @@
      "laundry",
      "bike parking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 21.0477928,
+    "lng": -89.6066239,
     "permit_authority": "Ayuntamiento de Mérida",
     "developer_company": null,
     "developer_projects_delivered": null,
@@ -92212,6 +92296,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://vefa-riviera.fr/programmes-neufs-cote-dazur/antibes/angelina/"
+    },
+    {
+     "claim": "Pin: 43.5968, 7.115166 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.marignan-immobilier.com/habiter/programmes-neufs/angelina-antibes-01097"
     }
    ],
    "facts": {
@@ -92250,8 +92340,8 @@
      "landscaped courtyard",
      "sea views from upper floors"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 43.5968,
+    "lng": 7.115166,
     "permit_authority": "Mairie d'Antibes, service urbanisme",
     "brochure_url": null
    },
@@ -92395,6 +92485,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.vefaconnect.com/program/villa-botanica-06000/"
+    },
+    {
+     "claim": "Pin: 43.71029, 7.26403 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sully-immobilier.fr/programme/482-villa-botanica/"
     }
    ],
    "facts": {
@@ -92431,8 +92527,8 @@
      "heat pump",
      "video entry"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 43.71029,
+    "lng": 7.26403,
     "permit_authority": "Ville de Nice, urbanisme",
     "brochure_url": null
    },
@@ -120386,6 +120482,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://infinityhills.com/"
+    },
+    {
+     "claim": "Pin: -6.170054855427457, 39.19499192848766 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://infinityhills.com/"
     }
    ],
    "facts": {
@@ -120426,8 +120528,8 @@
      "GEMS international school",
      "Infinity Hills Mall (phase two)"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -6.170054855427457,
+    "lng": 39.19499192848766,
     "permit_authority": "Zanzibar Department of Urban and Rural Planning; ZIPA; Condominium Board",
     "brochure_url": "https://infinityhills.com/wp-content/uploads/2026/10/Two-Bedroom-Apartment-Brochure-Infinity-Hills.pdf"
    },
@@ -120979,6 +121081,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://empathia-seychelles.com/project-facts"
+    },
+    {
+     "claim": "Pin: -4.752667, 55.478639 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://empathia-seychelles.com/"
     }
    ],
    "facts": {
@@ -121014,8 +121122,8 @@
      "sea views 50 to 100 m above sea level",
      "planned shop, restaurant and gym (portal)"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -4.752667,
+    "lng": 55.478639,
     "permit_authority": "Seychelles Planning Authority (planning permission); Government Sanction for foreign purchase under the Immovable Property (Transfer Restriction) Act",
     "brochure_url": null
    },
@@ -129678,6 +129786,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.viacelere.com/promocion/blossom-hills/"
+    },
+    {
+     "claim": "Pin: 36.60107644748667, -4.569952389504883 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/promocion/blossom-hills/"
     }
    ],
    "facts": {
@@ -129714,8 +129828,8 @@
      "gated complex",
      "two parking spaces and storage per home"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 36.60107644748667,
+    "lng": -4.569952389504883,
     "permit_authority": "Ayuntamiento de Benalmádena (licencia de obras)",
     "brochure_url": "https://www.viacelere.com/wp-content/uploads/2025/09/Dossier-BlossomHills.pdf"
    },
@@ -136272,6 +136386,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://darglobal.co.uk/neptune"
+    },
+    {
+     "claim": "Pin: 24.858787, 46.750484 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad"
     }
    ],
    "facts": {
@@ -136307,8 +136427,8 @@
      "majlis",
      "SEDRA parks, schools and mosques"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 24.858787,
+    "lng": 46.750484,
     "permit_authority": "Real Estate General Authority (REGA), Wafi off-plan programme",
     "brochure_url": null
    },
@@ -141048,6 +141168,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.thekubrick.co.nz/"
+    },
+    {
+     "claim": "Pin: -36.86238549999999, 174.7345863 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ockham.co.nz/the-kubrick/"
     }
    ],
    "facts": {
@@ -141087,8 +141213,8 @@
      "shared office and boardroom",
      "Japanese-inspired courtyard"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -36.86238549999999,
+    "lng": 174.7345863,
     "permit_authority": "Auckland Council (resource and building consent); LINZ Overseas Investment Office (foreign buyer exemption)",
     "brochure_url": null
    },
@@ -145033,6 +145159,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://villavbali.com/"
+    },
+    {
+     "claim": "Pin: -8.605754, 115.132884 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://villavbali.com/"
     }
    ],
    "facts": {
@@ -145070,8 +145202,8 @@
      "covered parking",
      "gated community"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.605754,
+    "lng": 115.132884,
     "permit_authority": "Badung Regency (PBG and SLF via SIMBG/OSS)",
     "brochure_url": null
    },
@@ -147269,6 +147401,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction"
+    },
+    {
+     "claim": "Pin: 37.120554, -8.547767 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://obranueva.aedashomes.com/en/ribamar-housing-new-construction"
     }
    ],
    "facts": {
@@ -147302,8 +147440,8 @@
      "kids' area",
      "coworking"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 37.120554,
+    "lng": -8.547767,
     "permit_authority": "Camara Municipal de Portimao",
     "brochure_url": "https://issuu.com/aedashomes/docs/dossier_y_memoria_ribamar",
     "developer_projects_delivered": null,
@@ -169394,6 +169532,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.godrejproperties.com/mumbai/residential/godrej-trilogy"
+    },
+    {
+     "claim": "Pin: 18.99024398049576, 72.81603141704993 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.godrejproperties.com/mumbai/residential/godrej-trilogy"
     }
    ],
    "facts": {
@@ -169414,8 +169558,8 @@
     "deposit_pct": null,
     "foreign_ownership": "No foreign-buyer terms seen on the developer page. NRI interest is mentioned only by portals.",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 18.99024398049576,
+    "lng": 72.81603141704993,
     "permit_authority": "MahaRERA"
    },
    "note": "Three-tower project on about 2.63 acres in Worli. Phase 1 has two towers, Seaturf and Seafront, and Godrej expects over Rs 10,000 crore of revenue. The developer page gives price on request and December 2033 possession. The Rs 17.5 Cr starting price and carpet areas of 1,765 to 2,773 sq ft come from the ORA portal, not the developer.",
@@ -169504,6 +169648,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.piramalrealty.com/new-projects-in-mumbai"
+    },
+    {
+     "claim": "Pin: 19.065721883061883, 72.82279151818953 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.piramalrealty.com/new-projects-in-mumbai"
     }
    ],
    "facts": {
@@ -169529,8 +169679,8 @@
     "deposit_pct": null,
     "foreign_ownership": "Developer says NRIs can buy under FEMA Notification 21(R)/2018-RB. Rules for foreign nationals were not seen.",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 19.065721883061883,
+    "lng": 72.82279151818953,
     "permit_authority": "MahaRERA"
    },
    "note": "12-acre township in Mulund West where the Rayansh tower is described as newly launched and under construction. Only the developer's own page was opened for this project. No second source was opened, so every field is developer-only, and the developer's separate Revanta project page was not opened.",
@@ -171072,6 +171222,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://seabreezebaku.com/reportage-heights/"
+    },
+    {
+     "claim": "Pin: 40.580161, 49.9246887 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://reportagegroup.com/projects/residential-apartments/reportage-heights/"
     }
    ],
    "facts": {
@@ -171094,8 +171250,8 @@
     "deposit_pct": 15,
     "foreign_ownership": true,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 40.580161,
+    "lng": 49.9246887,
     "permit_authority": null
    },
    "note": "Large Sea Breeze tower scheme sold to Gulf-based buyers through an Abu Dhabi sales office and agents. The developer page has a floor plans section, but no permit number, escrow wording or progress figures. Construction stage and handover date were not found.",
@@ -174569,6 +174725,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://endover.ee/en/blog/volta-skai-sai-nurgakivi/"
+    },
+    {
+     "claim": "Pin: 59.433301, 24.760007 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://endover.ee/en/blog/volta-skai-sai-nurgakivi/"
     }
    ],
    "facts": {
@@ -174589,8 +174751,8 @@
     "deposit_pct": null,
     "foreign_ownership": "Foreigners can buy from developers on the same terms as Estonians per portal geoln.com; the developer has an English blog",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 59.433301,
+    "lng": 24.760007,
     "permit_authority": null
    },
    "note": "Two 12-storey towers in Põhja-Tallinn; cornerstone laid on 7 April 2026 and, per Ehitusuudised on 2 June 2026, the developer changed the plan to build both towers at the same time. I saw the Endover pages only as search excerpts, not fully opened, so plans and sales terms are unchecked. The 8.5% yield mentioned on Endover's blog is a bond coupon for bondholders, not a return promised to apartment buyers.",
@@ -177589,6 +177751,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.urbanaperu.com.pe/belalba/"
+    },
+    {
+     "claim": "Pin: -12.078699931011606, -77.0573761433946 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.urbanaperu.com.pe/belalba/"
     }
    ],
    "facts": {
@@ -177610,8 +177778,8 @@
     "deposit_pct": null,
     "foreign_ownership": "Expat Focus says foreigners can buy with broadly the same rights as Peruvian citizens. I found no Urbana Peru statement on foreign buyers.",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -12.078699931011606,
+    "lng": -77.0573761433946,
     "permit_authority": null
    },
    "note": "Family-oriented building listed as under construction, with 1 to 3 bedroom units. Urbana Peru's pages disagree on the starting price (S/ 233,900, S/ 321,800 and S/ 315,000 at different times) and on the smallest unit (about 35 m2 vs 49.96 m2).",
@@ -177808,6 +177976,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.rvc.cl/en-verde/"
+    },
+    {
+     "claim": "Pin: -33.5151374, -70.6598656 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.rvc.cl/proyecto/edificio-santa-corina/"
     }
    ],
    "facts": {
@@ -177828,8 +178002,8 @@
     "deposit_pct": 10,
     "foreign_ownership": "No general quota for apartments and a Chilean tax ID (RUT) is needed, per third-party guides. No project-specific foreign-buyer terms seen.",
     "rental_programme": "RVC and Knockit partnership: rent collected goes toward the down-payment installments (up to 60), with free brokerage and administration for 5 years. This is not a guaranteed return.",
-    "lat": null,
-    "lng": null,
+    "lat": -33.5151374,
+    "lng": -70.6598656,
     "permit_authority": "Dirección de Obras Municipales (DOM) of La Cisterna. The permit itself was not seen."
    },
    "note": "15-floor building with 1 and 2 bed units, sold en verde with delivery promised for 2H 2028. Only RVC's own pages were found, with no independent second source. Construction status is not confirmed, and no permit number or foreign-buyer marketing was found. This project does not meet the under-construction criterion on the evidence seen.",
@@ -181936,11 +182110,17 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.hipflat.co.th/en/projects/brisa-patong-by-sansiri-l1t3t881199ce218981nen9t4192n4n9"
+    },
+    {
+     "claim": "Pin: 7.887161, 98.299587 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/"
     }
    ],
    "facts": {
-    "lat": null,
-    "lng": null,
+    "lat": 7.887161,
+    "lng": 98.299587,
     "size_min_m2": null,
     "size_max_m2": null,
     "price_min": null,
@@ -190112,11 +190292,17 @@
      "status": "verified",
      "by": "independent",
      "source": "https://floridayimby.com/2025/07/casa-bella-residences-by-bb-italia-tops-off-at-56-stories-in-downtown-miami.html"
+    },
+    {
+     "claim": "Pin: 25.7891189, -80.1895117 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.casabellaresidences.com/"
     }
    ],
    "facts": {
-    "lat": null,
-    "lng": null,
+    "lat": 25.7891189,
+    "lng": -80.1895117,
     "size_min_m2": null,
     "size_max_m2": null,
     "price_min": null,
@@ -191223,6 +191409,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.deal-tr.com/en/blog/off-plan-projects-with-government-guarantee-in-istanbul-2026"
+    },
+    {
+     "claim": "Pin: 40.986952771353565, 29.112815339491625 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dapyapi.com.tr/en/projects/dap-atasehir"
     }
    ],
    "facts": {
@@ -191244,8 +191436,8 @@
     "deposit_pct": 40,
     "foreign_ownership": "Marketed to foreign buyers as citizenship eligible by agents and portals. No foreigner-specific statement seen on the developer page.",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 40.986952771353565,
+    "lng": 29.112815339491625,
     "permit_authority": null
    },
    "note": "Low-rise boutique scheme of 173 homes in three blocks, launched for sale on 5 Feb 2026 at the land stage with Emlak Konut GYO as partner. Price figures are agent USD listings. Developer pages publish no permit number, escrow terms, floor plans or construction progress.",
@@ -192870,11 +193062,17 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.posta.com.tr/ekonomi/ilk-6-ayda-en-cok-satilan-emlak-konut-projesi-oldu-2736550"
+    },
+    {
+     "claim": "Pin: 36.9037666, 30.8362881 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://emlakkonut.com.tr/en-US/park-yasam-antalya"
     }
    ],
    "facts": {
-    "lat": null,
-    "lng": null,
+    "lat": 36.9037666,
+    "lng": 30.8362881,
     "size_min_m2": null,
     "size_max_m2": null,
     "price_min": null,
@@ -194584,6 +194782,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
+    },
+    {
+     "claim": "Pin: 51.48458, -0.06929 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.berkeleygroup.co.uk/developments/london/bermondsey/bermondsey-place"
     }
    ],
    "facts": {
@@ -194609,8 +194813,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 51.48458,
+    "lng": -0.06929,
     "permit_authority": null
    },
    "note": "Bermondsey Place by Berkeley Homes South East London Ltd in Bermondsey, London SE1 (United Kingdom). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
@@ -194709,6 +194913,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.viacelere.com/en/project/sunrise/"
+    },
+    {
+     "claim": "Pin: 36.50958658757264, -4.649375261177243 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/en/project/sunrise/"
     }
    ],
    "facts": {
@@ -194732,8 +194942,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 36.50958658757264,
+    "lng": -4.649375261177243,
     "permit_authority": null
    },
    "note": "Célere Sunrise by Vía Célere in El Chaparral, Mijas, Málaga (Spain). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
@@ -195600,6 +195810,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://smdc.com/properties/heights/sands-residences/"
+    },
+    {
+     "claim": "Pin: 14.5704594, 120.982944 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smdc.com/properties/heights/sands-residences/"
     }
    ],
    "facts": {
@@ -195624,8 +195840,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 14.5704594,
+    "lng": 120.982944,
     "permit_authority": null
    },
    "note": "Sands Residences by SM Development Corporation in Mall of Asia, Pasay City (Philippines). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
@@ -198404,6 +198620,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.itzaetulum.com/"
+    },
+    {
+     "claim": "Pin: 20.200533, -87.4722951 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.itzaetulum.com/"
     }
    ],
    "facts": {
@@ -198428,8 +198650,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 20.200533,
+    "lng": -87.4722951,
     "permit_authority": null
    },
    "note": "Itzaé Tulum by Grupo CISA in La Veleta, Tulum, Quintana Roo (Mexico). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 11 Nov 2026)",
@@ -204473,6 +204695,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://darglobal.co.uk/tierra-viva"
+    },
+    {
+     "claim": "Pin: 36.488932, -5.034781 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/tierra-viva"
     }
    ],
    "facts": {
@@ -204495,8 +204723,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 36.488932,
+    "lng": -5.034781,
     "permit_authority": null
    },
    "note": "Tierra Viva by Dar Global in Los Jaralillos, Benahavís, Málaga (Spain). Added from the official developer page: under construction; handover on record: June 2028. Not yet reviewed. (read 12 Nov 2026)",
@@ -204588,6 +204816,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://darglobal.co.uk/marea"
+    },
+    {
+     "claim": "Pin: 36.400641, -5.216633 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://darglobal.co.uk/marea"
     }
    ],
    "facts": {
@@ -204612,8 +204846,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 36.400641,
+    "lng": -5.216633,
     "permit_authority": null
    },
    "note": "Marea, Interiors by Missoni by Dar Global in Finca Cortesin, Casares, Málaga (Spain). Added from the official developer page: off-plan; handover on record: December 2027. Not yet reviewed. (read 12 Nov 2026)",
@@ -205084,6 +205318,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.viacelere.com/promocion/san-vicente-iii/"
+    },
+    {
+     "claim": "Pin: 39.455114845048534, -0.3830237731975889 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.viacelere.com/promocion/san-vicente-iii/"
     }
    ],
    "facts": {
@@ -205108,8 +205348,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 39.455114845048534,
+    "lng": -0.3830237731975889,
     "permit_authority": null
    },
    "note": "Célere San Vicente III by Vía Célere in Calle San Vicente Mártir at Pianista Amparo Iturbi, 46007 Valencia (Spain). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
@@ -206732,6 +206972,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://archi.ge/en/block/archi-central-park"
+    },
+    {
+     "claim": "Pin: 41.721186, 44.746943 (coordinates published in the page data (schema.org GeoCoordinates) of the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://archi.ge/en/block/archi-central-park"
     }
    ],
    "facts": {
@@ -206754,8 +207000,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 41.721186,
+    "lng": 44.746943,
     "permit_authority": null
    },
    "note": "Archi Central Park by Archi in 13 Tamarashvili Street, Tbilisi (Georgia). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
@@ -220661,6 +220907,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-gokturk"
+    },
+    {
+     "claim": "Pin: 41.182255, 28.879663 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-gokturk"
     }
    ],
    "facts": {
@@ -220683,8 +220935,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 41.182255,
+    "lng": 28.879663,
     "permit_authority": null
    },
    "note": "Ege Yapı Göktürk by Ege Yapı in Eyüpsultan, Istanbul (Turkey). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
@@ -220769,6 +221021,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-beyoglu"
+    },
+    {
+     "claim": "Pin: 41.042258, 28.950404 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-beyoglu"
     }
    ],
    "facts": {
@@ -220791,8 +221049,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 41.042258,
+    "lng": 28.950404,
     "permit_authority": null
    },
    "note": "Ege Yapı Beyoğlu by Ege Yapı in Beyoğlu, Istanbul (Turkey). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
@@ -220877,6 +221135,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-kordon-izmir"
+    },
+    {
+     "claim": "Pin: 38.42800341142446, 27.13491271284846 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-kordon-izmir"
     }
    ],
    "facts": {
@@ -220899,8 +221163,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 38.42800341142446,
+    "lng": 27.13491271284846,
     "permit_authority": null
    },
    "note": "Ege Yapı Kordon İzmir by Ege Yapı in Alsancak, İzmir (Turkey). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
@@ -220985,6 +221249,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-alsancak"
+    },
+    {
+     "claim": "Pin: 38.43467917286356, 27.1484307030501 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-alsancak"
     }
    ],
    "facts": {
@@ -221007,8 +221277,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 38.43467917286356,
+    "lng": 27.1484307030501,
     "permit_authority": null
    },
    "note": "Ege Yapı Alsancak by Ege Yapı in Konak, İzmir (Turkey). Added from the official developer page: off-plan; handover on record: 2027. Not yet reviewed. (read 12 Nov 2026)",
@@ -221093,6 +221363,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
+    },
+    {
+     "claim": "Pin: 40.274619575509725, 23.44189774947872 (coordinates of the project map on the developer or project page); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-oliville-halkidiki"
     }
    ],
    "facts": {
@@ -221115,8 +221391,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 40.274619575509725,
+    "lng": 23.44189774947872,
     "permit_authority": null
    },
    "note": "Ege Yapı Oliville Halkidiki by Ege Yapı in Chalkidiki, Greece (Greece). Added from the official developer page: off-plan; handover on record: 2028. Not yet reviewed. (read 12 Nov 2026)",
