@@ -416,10 +416,21 @@ def foot_links(l):
     rows = list(FOOT)
     for m in MODULES: rows += getattr(m, "FOOTER", [])
     return "".join(f'<a href="{t.format(l=l)}">{esc(n[l])}</a>' for t, n in rows)
+ESS_GUIDES = ["best-time-to-visit-sumba", "how-to-get-to-sumba-from-bali", "getting-around-sumba", "how-many-days-in-sumba", "sumba-itinerary-5-7-10-days", "where-to-stay-in-sumba-best-areas", "sumba-travel-costs", "things-to-do-in-sumba",
+              "sumba-travel-safety-health", "pasola-explained", "sumba-etiquette-mistakes", "indonesia-visa-for-sumba-explained"]
+ESS_SHORT = {"en": ["When to go", "Getting there from Bali", "Getting around", "How many days", "Itineraries", "Where to stay", "Costs", "Things to do", "Safety and health", "Pasola", "Etiquette", "Visa"],
+             "es": ["Cuándo ir", "Cómo llegar desde Bali", "Cómo moverse", "Cuántos días", "Itinerarios", "Dónde alojarse", "Costes", "Qué ver y hacer", "Seguridad y salud", "Pasola", "Normas de respeto", "Visado"],
+             "id": ["Kapan pergi", "Cara ke Sumba dari Bali", "Transportasi di Sumba", "Berapa hari", "Itinerary", "Menginap di mana", "Biaya", "Tempat dan aktivitas", "Keamanan dan kesehatan", "Pasola", "Etika", "Visa"]}
+_ESS = {}
+def essential_links(l):
+    if l not in _ESS:
+        by = {a["slug"]: a for a in all_items()}
+        _ESS[l] = "".join(f'<a href="{url_of(by[k], l)}">{n}</a>' for k, n in zip(ESS_GUIDES, ESS_SHORT[l]) if k in by)
+    return _ESS[l]
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
-    return f"""<div class="w"><footer><div class="links">{links}</div><div class="links l2">{foot_links(l)}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+    return f"""<div class="w"><footer><div class="links">{links}</div><div class="links l2" data-block="footguides">{essential_links(l)}</div><div class="links l2">{foot_links(l)}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="https://sumbasecrets.com/{l}/">Sumba Secrets: {SS_LAB[l]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
 {pages_trust.trust_footer_links(l)}<br>
 <a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{footer_scripts(l)}</body></html>"""
 
@@ -457,7 +468,17 @@ def card(a, l, img=True):
     c = a[l]
     return f'<div class="card">{thumb(a,l) if img else ""}<p class="k">{badge(a)}<a href="/{l}/{group_of(a)}/">{esc(kicker(a,l))}</a></p><h3><a href="{url_of(a,l)}">{esc(c["title"])}</a></h3><p>{esc(c["dek"])}</p><div class="when"><time datetime="{iso(a)}">{fdate(a,l,False)}</time> · {mins(a,l)} {X[l]["min"]}</div></div>'
 
+REL_TOOLS = {"flights": ["how-to-get-to-sumba-from-bali", "tambolaka-airport-guide", "waingapu-airport-guide", "jakarta-to-sumba", "getting-around-sumba", "ferries-to-sumba"],
+             "events": ["pasola-explained", "pasola-2027-dates", "sumba-weddings-funerals-ceremonies", "sumba-etiquette-mistakes", "best-time-to-visit-sumba", "ratenggaro-village"],
+             "travel-status": ["sumba-travel-safety-health", "sumba-rainy-season", "getting-around-sumba", "ferries-to-sumba", "tambolaka-airport-guide", "waingapu-airport-guide"],
+             "press": ["sumba-facts-figures", "short-history-of-sumba", "where-is-sumba", "sumba-travel-guide", "pasola-explained", "weekuri-lagoon"]}
+REL_TOOLS_T = {"en": "Related guides and places", "es": "Guías y lugares relacionados", "id": "Panduan dan tempat terkait"}
 def write(p, s):
+    m_ = re.match(r"^/(en|es|id)/(flights|events|travel-status|press)/$", p)
+    if m_ and "</main>" in s:
+        l_ = m_.group(1); by_ = {a["slug"]: a for a in all_items()}
+        li_ = "".join(f'<li><a href="{url_of(by_[k], l_)}">{esc(by_[k][l_]["title"])}</a></li>' for k in REL_TOOLS[m_.group(2)] if k in by_)
+        s = s.replace("</main>", f'<div class="nar"><section class="nearby" data-block="reltools"><h2>{REL_TOOLS_T[l_]}</h2><ul>{li_}</ul></section></div></main>', 1)
     fp = os.path.join(OUT, p.lstrip("/"))
     if fp.endswith("/"): fp += "index.html"
     os.makedirs(os.path.dirname(fp), exist_ok=True)
@@ -700,7 +721,7 @@ def article_page(a, l):
     if kind_of(a) != "letter": b = inline_sub(b, l, a)
     top_x, bot_x = extras_html(a, l)
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
-    crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a></div>'
+    crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a>' + (f' › <a href="/{l}/{a["section"]}/">{esc(sec_name(l,a["section"]))}</a>' if a["section"] != grp and a["section"] in LEGACY else "") + "</div>"
     plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta" data-block="plancta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{('<span class="ty">' + TYPE_T[l][type_of(a)] + '</span> · ') if TYPE_T[l][type_of(a)].lower() != kicker(a,l).lower() else ''}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>

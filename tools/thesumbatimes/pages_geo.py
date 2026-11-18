@@ -143,9 +143,30 @@ def place_desc(g, a, l):
     h = 0 if km(i, 0) <= km(i, 1) else 1; hk = "tmc" if h == 0 else "wgp"
     pat = {"en": "{k} km by road from {h} (about {t}).", "es": "A {k} km por carretera del {h} (unos {t}).", "id": "{k} km lewat jalan dari {h} (sekitar {t})."}[l]
     return pat.format(k=num(km(i, h), l), h=HUB[hk][l], t=drv(km(i, h), l))
+REG_PAGE = {"Southwest Sumba": "southwest-sumba-regency", "West Sumba": "west-sumba-regency", "Central Sumba": "central-sumba-regency", "East Sumba": "east-sumba-regency"}
+REG_T = {"en": ("Regency", "Every place we cover in this regency", "From west to east, with the road distance from the nearer airport."), "es": ("Regencia", "Todos los lugares que cubrimos en esta regencia", "De oeste a este, con la distancia por carretera desde el aeropuerto más cercano."),
+         "id": ("Kabupaten", "Semua tempat yang kami liput di kabupaten ini", "Dari barat ke timur, dengan jarak lewat jalan dari bandara terdekat.")}
+def regency_of(a):
+    ar = (a["places"][0].get("area") or "")
+    if "West and Central" in ar: return None
+    for k in ("Southwest Sumba", "Central Sumba", "East Sumba", "West Sumba"):
+        if k in ar: return k
+    return None
+def regency_box(g, a, l):
+    """On the four regency pages: text list of every place page of that regency."""
+    if a.get("section") != "places" or not pages_hubs._is_area(a): return ""
+    reg = next((k for k, v in REG_PAGE.items() if v == a["slug"]), None)
+    rows = [(i, b) for i, b in _place_rows(g) if regency_of(b) == reg]
+    if not rows: return ""
+    rows.sort(key=lambda r: PTS[r[0]]["lon"]); t = REG_T[l]
+    def near(i):
+        h = 0 if km(i, 0) <= km(i, 1) else 1
+        return f'{num(km(i, h), l)} km · {HUB["tmc" if h == 0 else "wgp"][l]}'
+    li = "".join(f'<li><a href="{g["url_of"](b, l)}">{esc(pages_hubs.pname(b, l))}</a><span>{near(i)}</span></li>' for i, b in rows)
+    return f'<section class="gbox" data-block="regency"><h2 id="all-places">{t[1]} ({len(rows)})</h2><p class="gcomb">{t[2]}</p><ul class="gnb">{li}</ul><p class="gnote"><a href="/{l}/map/">{S[l]["see_map"]} →</a></p></section>'
 def place_box(g, a, l):
     i = _place_idx(a)
-    if i is None or km(i, 0) is None: return ""
+    if i is None or km(i, 0) is None: return regency_box(g, a, l)
     t = S[l]; p = PTS[i]; name = pages_hubs.pname(a, l)
     rows = ""
     for hk in ("tmc", "wgp"):
@@ -157,6 +178,8 @@ def place_box(g, a, l):
         k = near[0][1]; j = IDX[k]; u = _url(g, HUB_PAGE[k], l)
         rows += f'<dt>{t["nearest"]}</dt><dd>{f"""<a href="{u}">{HUB[k][l]}</a>""" if u else HUB[k][l]}: {num(km(i, j), l)} {t["km_road"]}, {t["about"]} {drv(km(i, j), l)}</dd>'
     rows += f'<dt>{t["coords"]}</dt><dd>{p["lat"]:.4f}, {p["lon"]:.4f} · <a href="https://www.google.com/maps/search/?api=1&query={p["lat"]},{p["lon"]}" target="_blank" rel="noopener">{t["open_map"]}</a></dd>'
+    _rk = REG_PAGE.get(regency_of(a) or ""); _rp = _url(g, _rk, l) if _rk else None
+    if _rp: rows = f'<dt>{REG_T[l][0]}</dt><dd><a href="{_rp}">{esc(pages_hubs.pname(_items(g)[_rk], l))}</a></dd>' + rows
     rows += sun_row(g, p, l)
     nb = neighbours(g, a)
     comb = ""
@@ -255,6 +278,7 @@ CSS = """
 .gsent,.gcomb,.gnote{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnote{color:var(--muted);font-size:13.5px}.gnb{list-style:none;padding:0;margin:0 0 12px;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnb li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:7px 0}.gnb span{color:var(--muted);white-space:nowrap}
 .gfig{margin:10px 0}.gfig figcaption{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted);margin-top:4px}.lmap{width:100%;height:auto;display:block;background:color-mix(in srgb,var(--accent) 6%,var(--bg));border:1px solid var(--line);border-radius:6px;color:var(--ink)}
 .gtab{width:100%;border-collapse:collapse;font:14.5px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:8px 0 18px}.gtab th,.gtab td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.gtab th{font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.gtab td.n,.gtab th.n{text-align:right;white-space:nowrap}.gscroll{overflow-x:auto}
+.gupd dt{font:700 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:10px}.gupd dd{margin:2px 0 0}
 .gcalc{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px;font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gcalc label{display:inline-block;margin:0 12px 8px 0}.gcalc select{font:inherit;padding:6px;max-width:100%}.gcalc output{display:block;font-weight:700;margin-top:6px}
 @media(max-width:600px){.gbox dl{grid-template-columns:1fr}.gbox dt{margin-top:6px}}
 """
@@ -440,7 +464,33 @@ def _data(g, l):
     rows = [[f'<a href="{f}" download>{f.split("/")[-1]}</a>', str(n), esc(d[l]), esc(src)] for f, fmt, n, d, src in FILES]
     more = {"en": "Related pages", "es": "Páginas relacionadas", "id": "Halaman terkait"}[l]
     links = " · ".join(f'<a href="/{l}/{p}/">{n}</a>' for p, n in (("distances", P[l]["d_h1"]), ("map", P[l]["m_h1"]), ("earthquakes", P[l]["q_h1"]), ("sumba-in", {"en": "Sumba month by month", "es": "Sumba mes a mes", "id": "Sumba dari bulan ke bulan"}[l]), ("flights", {"en": "Flights to Sumba", "es": "Vuelos a Sumba", "id": "Penerbangan ke Sumba"}[l]), ("events", {"en": "Events", "es": "Eventos", "id": "Acara"}[l]), ("glossary", {"en": "Glossary", "es": "Glosario", "id": "Glosarium"}[l])))
-    body = (f'<p class="dek">{esc(t["x_lead"])}</p>{_table([t["x_file"], t["x_rows"], t["x_what"], t["x_src"]], rows, 9)}<h2 id="reuse">{t["x_lic"]}</h2><p>{esc(t["x_lic_p"])}</p><h2 id="pages">{more}</h2><p>{links}</p>')
+    cite = {"en": "How to cite", "es": "Cómo citar", "id": "Cara mengutip"}[l]
+    upd_t = {"en": "How each table is kept up to date", "es": "Cómo se actualiza cada tabla", "id": "Cara tiap tabel diperbarui"}[l]
+    D = lambda d: fdate(g, l, d)
+    upd = {"en": [("Flights", f"An editor re-opens the source of every route and corrects the row by hand; the flights page shows the date of the last full check ({D(pages_live.CHECKED)})."),
+                  ("Travel status", "Generated again on every publication (at least once a day) from our own news of the last 30 days; each line links the story it comes from."),
+                  ("Events", "Annual calendar. Dates set by customary elders, such as the Pasola, are added only when a source publishes them; until then the page gives the usual month."),
+                  ("Distances and maps", f"Road distances calculated once with OSRM on OpenStreetMap ({D(FETCHED)}) and recalculated when a place page is added. Driving times are our estimate at 34 to 42 km/h."),
+                  ("Earthquakes", f"USGS catalogue as downloaded on {D(QUAKES['fetched'])}; refreshed by hand, so the newest events may be missing."),
+                  ("Climate", "Fixed ten-year averages (2015-2024); they change only if we recompute the period."),
+                  ("Entrance fees", "Read from each place page on every publication; the date of each figure is on that page.")],
+           "es": [("Vuelos", f"Un editor vuelve a abrir la fuente de cada ruta y corrige la fila a mano; la página de vuelos muestra la fecha de la última comprobación completa ({D(pages_live.CHECKED)})."),
+                  ("Estado del viaje", "Se genera de nuevo en cada publicación (al menos una vez al día) con nuestras propias noticias de los últimos 30 días; cada línea enlaza la noticia de la que sale."),
+                  ("Eventos", "Calendario anual. Las fechas que fijan los ancianos tradicionales, como la Pasola, se añaden solo cuando una fuente las publica; hasta entonces la página da el mes habitual."),
+                  ("Distancias y mapas", f"Distancias por carretera calculadas una vez con OSRM sobre OpenStreetMap ({D(FETCHED)}) y recalculadas cuando se añade una ficha. Los tiempos son nuestra estimación a una media de 34 a 42 km/h."),
+                  ("Terremotos", f"Catálogo del USGS tal como se descargó el {D(QUAKES['fetched'])}; se actualiza a mano, así que pueden faltar los sismos más recientes."),
+                  ("Clima", "Medias fijas de diez años (2015-2024); solo cambian si recalculamos el periodo."),
+                  ("Entradas", "Se leen de cada ficha en cada publicación; la fecha de cada cifra está en esa ficha.")],
+           "id": [("Penerbangan", f"Editor membuka kembali sumber setiap rute dan memperbaiki barisnya secara manual; halaman penerbangan menampilkan tanggal pengecekan lengkap terakhir ({D(pages_live.CHECKED)})."),
+                  ("Status perjalanan", "Dibuat ulang setiap kali terbit (sedikitnya sekali sehari) dari berita kami sendiri dalam 30 hari terakhir; setiap baris menautkan berita asalnya."),
+                  ("Acara", "Kalender tahunan. Tanggal yang ditetapkan para tetua adat, seperti Pasola, baru ditambahkan setelah ada sumber yang memuatnya; sebelum itu halaman hanya menyebut bulan yang lazim."),
+                  ("Jarak dan peta", f"Jarak lewat jalan dihitung sekali dengan OSRM di atas OpenStreetMap ({D(FETCHED)}) dan dihitung ulang saat ada halaman tempat baru. Waktu tempuh adalah perkiraan kami dengan kecepatan 34 sampai 42 km/jam."),
+                  ("Gempa bumi", f"Katalog USGS sebagaimana diunduh pada {D(QUAKES['fetched'])}; diperbarui secara manual, sehingga gempa terbaru mungkin belum tercantum."),
+                  ("Iklim", "Rata-rata tetap sepuluh tahun (2015-2024); hanya berubah jika kami menghitung ulang periodenya."),
+                  ("Tiket masuk", "Dibaca dari halaman tiap tempat setiap kali terbit; tanggal setiap angka ada di halaman itu.")]}[l]
+    upd_html = f'<h2 id="updates">{upd_t}</h2><dl class="gupd">' + "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in upd) + "</dl>"
+    cite_txt = f"The Sumba Times ({FETCHED[:4]}). {t['x_h1']}. {B}/{l}/data/"
+    body = (f'<p class="dek">{esc(t["x_lead"])}</p>{_table([t["x_file"], t["x_rows"], t["x_what"], t["x_src"]], rows, 9)}<h2 id="reuse">{t["x_lic"]}</h2><p>{esc(t["x_lic_p"])}</p><p><b>{cite}:</b> <code>{esc(cite_txt)}</code></p>{upd_html}<h2 id="pages">{more}</h2><p>{links}</p>')
     url = B + tpl.format(l=l)
     cat = {"@context": "https://schema.org", "@type": "DataCatalog", "name": t["x_h1"], "description": t["x_desc"], "url": url, "inLanguage": l,
            "publisher": {"@type": "NewsMediaOrganization", "@id": B + "/#organization", "name": "The Sumba Times", "url": B + "/"},

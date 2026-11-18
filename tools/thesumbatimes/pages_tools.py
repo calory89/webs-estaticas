@@ -17,6 +17,7 @@ def fact(a, l, keys):
         if k in keys: return v
     return ""
 FUEL = {"pertalite": 10000, "pertamax": 15950}   # IDR per litre, Nov 2026, as sourced in the guide car-with-driver-in-sumba
+SCOOTER_DAY = (150000, 200000)                 # IDR per scooter per day, 2025-2026, as sourced in the guide sumba-by-motorbike
 CAR_DAY = (600000, 1000000)                      # IDR per day with driver, travel guides 2025-2026, same guide
 
 S = {
@@ -33,7 +34,7 @@ S = {
         "t_title": "Sumba trip tools: calculators, maps, flights and data", "t_h1": "Tools to plan a trip to Sumba", "t_desc": "Every free tool of The Sumba Times in one page: trip planner, budget, distances, rain by dates, fuel and car-share calculators, flights, events, map and open data.",
         "t_lead": "Free tools built on the data we publish. None needs an account.", "t_all": "All tools", "t_fuel": "Fuel for a drive", "t_km": "Distance (km)", "t_cons": "Consumption (litres per 100 km)", "t_price": "Fuel price (IDR per litre)",
         "t_fuel_res": "{l} litres, about IDR {c}.", "t_fuel_note": "Prices preset: Pertalite IDR {a} and Pertamax IDR {b} per litre in November 2026, as sourced in our car guide. The consumption figures are examples (a small car and a scooter): replace them with your vehicle's. Fuel stations are in the towns; fill up before long drives.",
-        "t_car": "Car with driver: cost per person", "t_day": "Price per day (IDR)", "t_days": "Days", "t_people": "People", "t_car_res": "Total IDR {t}: IDR {p} per person, IDR {d} per person per day.",
+        "t_car": "Car with driver: cost per person", "t_day": "Price per day (IDR)", "t_days": "Days", "t_people": "People", "t_car_res": "Total IDR {t}: IDR {p} per person, IDR {d} per person per day. By scooter, one each: IDR {s} per person for the same days (rental only, at IDR {sd} a day, the middle of the range in our motorbike guide).",
         "t_car_note": "Preset: the middle of the IDR {a} to {b} a day that travel guides quoted in 2025-2026 (see our car guide). Ask in writing whether fuel, the driver's meals and his room are included.",
         "t_ex_car": "small car", "t_ex_sc": "scooter", "crumb": "Tools", "kicker": "Tools"},
  "es": {"a_title": "Qué ver en Sumba: lista completa con entradas y distancias", "a_h1": "Qué ver en Sumba: la lista completa con el precio de las entradas",
@@ -49,7 +50,7 @@ S = {
         "t_title": "Herramientas para viajar a Sumba: calculadoras, mapas, vuelos y datos", "t_h1": "Herramientas para planificar un viaje a Sumba", "t_desc": "Todas las herramientas gratuitas de The Sumba Times en una página: planificador, presupuesto, distancias, lluvia por fechas, gasolina, coche compartido, vuelos, eventos, mapa y datos abiertos.",
         "t_lead": "Herramientas gratuitas hechas con los datos que publicamos. Ninguna pide cuenta.", "t_all": "Todas las herramientas", "t_fuel": "Gasolina para un trayecto", "t_km": "Distancia (km)", "t_cons": "Consumo (litros cada 100 km)", "t_price": "Precio del combustible (IDR por litro)",
         "t_fuel_res": "{l} litros, unas {c} IDR.", "t_fuel_note": "Precios preestablecidos: Pertalite {a} IDR y Pertamax {b} IDR por litro en noviembre de 2026, con la fuente en nuestra guía del coche con conductor. Los consumos son ejemplos (un coche pequeño y una moto): cámbialos por los de tu vehículo. Las gasolineras están en las ciudades; llena el depósito antes de los trayectos largos.",
-        "t_car": "Coche con conductor: coste por persona", "t_day": "Precio por día (IDR)", "t_days": "Días", "t_people": "Personas", "t_car_res": "Total {t} IDR: {p} IDR por persona, {d} IDR por persona y día.",
+        "t_car": "Coche con conductor: coste por persona", "t_day": "Precio por día (IDR)", "t_days": "Días", "t_people": "Personas", "t_car_res": "Total {t} IDR: {p} IDR por persona, {d} IDR por persona y día. En moto, una por persona: {s} IDR por persona los mismos días (solo alquiler, a {sd} IDR al día, el punto medio del rango de nuestra guía de la moto).",
         "t_car_note": "Valor preestablecido: el punto medio de las {a} a {b} IDR al día que citaban las guías de viaje en 2025-2026 (ver nuestra guía del coche). Pide por escrito si incluye el combustible, las comidas del conductor y su habitación.",
         "t_ex_car": "coche pequeño", "t_ex_sc": "moto", "crumb": "Herramientas", "kicker": "Herramientas"},
  "id": {"a_title": "Tempat wisata di Sumba: daftar lengkap, tiket masuk, dan jarak", "a_h1": "Tempat wisata di Sumba: daftar lengkap dengan harga tiket masuk",
@@ -65,7 +66,7 @@ S = {
         "t_title": "Alat bantu liburan ke Sumba: kalkulator, peta, penerbangan, dan data", "t_h1": "Alat bantu merencanakan perjalanan ke Sumba", "t_desc": "Semua alat gratis The Sumba Times dalam satu halaman: perencana perjalanan, anggaran, jarak, hujan per tanggal, kalkulator bensin dan patungan mobil, penerbangan, acara, peta, dan data terbuka.",
         "t_lead": "Alat gratis yang dibuat dari data yang kami terbitkan. Tidak perlu akun.", "t_all": "Semua alat", "t_fuel": "Bensin untuk satu perjalanan", "t_km": "Jarak (km)", "t_cons": "Konsumsi (liter per 100 km)", "t_price": "Harga BBM (Rp per liter)",
         "t_fuel_res": "{l} liter, sekitar Rp{c}.", "t_fuel_note": "Harga bawaan: Pertalite Rp{a} dan Pertamax Rp{b} per liter pada November 2026, dengan sumber di panduan sewa mobil kami. Angka konsumsi hanyalah contoh (mobil kecil dan sepeda motor): ganti dengan angka kendaraan Anda. SPBU ada di kota; isi penuh sebelum perjalanan jauh.",
-        "t_car": "Mobil dengan sopir: biaya per orang", "t_day": "Harga per hari (Rp)", "t_days": "Hari", "t_people": "Orang", "t_car_res": "Total Rp{t}: Rp{p} per orang, Rp{d} per orang per hari.",
+        "t_car": "Mobil dengan sopir: biaya per orang", "t_day": "Harga per hari (Rp)", "t_days": "Hari", "t_people": "Orang", "t_car_res": "Total Rp{t}: Rp{p} per orang, Rp{d} per orang per hari. Dengan sepeda motor, satu per orang: Rp{s} per orang untuk jumlah hari yang sama (sewa saja, Rp{sd} per hari, nilai tengah rentang di panduan sepeda motor kami).",
         "t_car_note": "Angka bawaan: nilai tengah dari Rp{a} sampai Rp{b} per hari yang disebut panduan wisata pada 2025-2026 (lihat panduan sewa mobil kami). Minta kepastian tertulis apakah BBM, makan sopir, dan penginapannya sudah termasuk.",
         "t_ex_car": "mobil kecil", "t_ex_sc": "sepeda motor", "crumb": "Alat bantu", "kicker": "Alat bantu"},
 }
@@ -147,7 +148,7 @@ def _tools(g, l):
     sep = "." if l != "en" else ","
     js = ("<script>(function(){function $(i){return document.getElementById(i)}function n(x){return Math.round(x).toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,'" + sep + "')}"
           "function f(){var l=(+$('fk').value||0)*(+$('fc').value||0)/100;$('fo').textContent=" + json.dumps(t["t_fuel_res"], ensure_ascii=False) + ".replace('{l}',(Math.round(l*10)/10).toString()" + (".replace('.',',')" if l != "en" else "") + ").replace('{c}',n(l*+$('fp').value))}"
-          "function c(){var tt=(+$('cd').value||0)*(+$('cn').value||1),p=Math.max(1,+$('cp').value||1);$('co').textContent=" + json.dumps(t["t_car_res"], ensure_ascii=False) + ".replace('{t}',n(tt)).replace('{p}',n(tt/p)).replace('{d}',n(tt/p/(+$('cn').value||1)))}"
+          "function c(){var tt=(+$('cd').value||0)*(+$('cn').value||1),p=Math.max(1,+$('cp').value||1);$('co').textContent=" + json.dumps(t["t_car_res"], ensure_ascii=False) + ".replace('{t}',n(tt)).replace('{p}',n(tt/p)).replace('{d}',n(tt/p/(+$('cn').value||1))).replace('{s}',n(" + str((SCOOTER_DAY[0] + SCOOTER_DAY[1]) // 2) + "*(+$('cn').value||1))).replace('{sd}',n(" + str((SCOOTER_DAY[0] + SCOOTER_DAY[1]) // 2) + "))}"
           "['fk','fc','fp'].forEach(function(i){$(i).oninput=$(i).onchange=f});['cd','cn','cp'].forEach(function(i){$(i).oninput=c});f();c()})()</script>")
     body = f'<p class="dek">{esc(t["t_lead"])}</p><h2 id="all">{t["t_all"]}</h2><ul class="tlist" data-block="toolslist">{li}</ul>{fuel}{car}'
     il = {"@context": "https://schema.org", "@type": "ItemList", "name": t["t_h1"], "itemListElement": [{"@type": "ListItem", "position": k + 1, "name": d[l][0], "url": pages_hubs.BASE + u.format(l=l)} for k, (u, d) in enumerate(TOOLS)]}
