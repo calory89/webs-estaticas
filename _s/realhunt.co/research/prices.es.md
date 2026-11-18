@@ -2,9 +2,9 @@
 
 Entre los 14 países con al menos 10 casas de superficie conocida en RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Japón (340 €/m²), Suecia (701 €/m²) y Dinamarca (787 €/m²), y el más alto en los Países Bajos (4.286 €/m²). El precio de salida mediano más bajo está en Japón (39.560 €) y Italia (49.000 €).
 
-Medianas de 591 anuncios en 18 países, revisados uno a uno por una persona, a 17 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
+Medianas de 591 anuncios en 18 países, revisados uno a uno por una persona, a 18 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
 
-Actualizado el 17 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
+Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
 
 ## La tabla
 

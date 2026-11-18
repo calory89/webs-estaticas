@@ -1,8 +1,8 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 17 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €71,000 (€701 per m², from the 19 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 18 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €71,000 (€701 per m², from the 19 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/sweden · Updated 17 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/sweden · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 | Taxes and fees to buy | 1.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership. |
 | Yearly property tax | Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower. |
-| Date of these figures | 17 November 2026 |
+| Date of these figures | 18 November 2026 |
 
 ## Costs and taxes
 

@@ -1,8 +1,8 @@
 # Cheap homes in the Dominican Republic: key facts and every home on RealHunt
 
-On 17 November 2026, RealHunt lists 4 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 4 homes is €223,600 (€2,282 per m², from the 3 homes with a known size); the cheapest costs €187,800 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 4 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
+On 18 November 2026, RealHunt lists 4 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 4 homes is €223,600 (€2,282 per m², from the 3 homes with a known size); the cheapest costs €187,800 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 4 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/dominican-republic · Updated 17 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/dominican-republic · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF: https://realhunt.co/data/countries/dominican-republic.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF:
 | Taxes and fees to buy | 4.25–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions. |
 | Yearly property tax | The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold. |
-| Date of these figures | 17 November 2026 |
+| Date of these figures | 18 November 2026 |
 
 ## Costs and taxes
 

@@ -1,8 +1,8 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 17 November 2026, RealHunt lists 59 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 59 homes is €49,000 (€975 per m², from the 33 homes with a known size); the cheapest costs €12,000 and the most expensive €195,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 18 November 2026, RealHunt lists 59 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 59 homes is €49,000 (€975 per m², from the 33 homes with a known size); the cheapest costs €12,000 and the most expensive €195,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/italy · Updated 17 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/italy · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
 | Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify). |
 | Yearly property tax | IMU 0.4-1.06% on second homes (on cadastral value). |
-| Date of these figures | 17 November 2026 |
+| Date of these figures | 18 November 2026 |
 
 ## Costs and taxes
 

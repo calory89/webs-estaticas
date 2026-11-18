@@ -2,7 +2,7 @@
  "openapi": "3.1.0",
  "info": {
   "title": "RealHunt open data",
-  "version": "2026-11-17",
+  "version": "2026-11-18",
   "summary": "Cheap homes for sale around the world, each checked by a person and scored, with buying rules and costs by country.",
   "description": "Read-only static files, rebuilt with every update of the site (at least daily). No key is needed. Text and figures are licensed CC BY 4.0: quote them with a link to the page they come from. Photos belong to the original listings and are not part of these files. Rules, taxes and costs are general information, not legal or tax advice. Human-readable documentation: https://realhunt.co/research/open-data",
   "license": {

@@ -2,9 +2,9 @@
 
 Among the 30 regions with at least 5 homes on RealHunt, the highest median score is in Calabria, Italy (91, median price €30,000); West Jutland, Denmark (91, median price €89,100); Funen, Denmark (90, median price €79,800).
 
-The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 17 November 2026.
+The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 18 November 2026.
 
-Updated 17 November 2026. Source: RealHunt, https://realhunt.co/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.csv
+Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.csv
 
 ## The table
 

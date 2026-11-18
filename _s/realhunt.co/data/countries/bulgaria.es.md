@@ -1,8 +1,8 @@
 # Casas baratas en Bulgaria: datos clave y todas las casas de RealHunt
 
-A 17 de noviembre de 2026, RealHunt publica 6 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 6 casas es de 66.000 € (740 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 70.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
+A 18 de noviembre de 2026, RealHunt publica 6 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 6 casas es de 66.000 € (740 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 70.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/bulgaria · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/bulgaria · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https
 | Impuestos y gastos de compra | 3,2–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, edificios y apartamentos, con derechos similares a los locales; según GPG, los extranjeros no pueden ser propietarios de tierra directamente, por lo que una empresa búlgara es la ruta habitual. |
 | Impuesto anual sobre la vivienda | 0,01-0,45% del valor fiscal del inmueble más una tasa municipal de basuras. |
-| Fecha de estas cifras | 17 de noviembre de 2026 |
+| Fecha de estas cifras | 18 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

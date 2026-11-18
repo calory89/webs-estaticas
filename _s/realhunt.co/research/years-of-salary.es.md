@@ -2,9 +2,9 @@
 
 La casa mediana de RealHunt cuesta 1,5 años de sueldo neto medio en Alemania y 8 en los Países Bajos, entre los 10 países con al menos 10 casas y datos de salarios de Eurostat. En Alemania es un precio de salida mediano de 55.000 € frente a un sueldo neto de 36.535 € al año.
 
-Precios: 466 casas de RealHunt, a 17 de noviembre de 2026. Sueldos: Eurostat, ganancia neta anual de una persona sola sin hijos con el salario medio, 2025. Son casas baratas elegidas por una persona, no la vivienda media de cada país.
+Precios: 466 casas de RealHunt, a 18 de noviembre de 2026. Sueldos: Eurostat, ganancia neta anual de una persona sola sin hijos con el salario medio, 2025. Son casas baratas elegidas por una persona, no la vivienda media de cada país.
 
-Actualizado el 17 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/years-of-salary (CC BY 4.0). CSV: https://realhunt.co/research/years-of-salary.es.csv
+Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/years-of-salary (CC BY 4.0). CSV: https://realhunt.co/research/years-of-salary.es.csv
 
 ## La tabla
 

@@ -2,9 +2,9 @@
 
 Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), the United States (median 95 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 6 countries, most of them in Italy (33), Japan (19), Germany (10).
 
-From 591 listings checked by a person, 17 November 2026. A home counts in one price band only.
+From 591 listings checked by a person, 18 November 2026. A home counts in one price band only.
 
-Updated 17 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
+Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
 
 ## The table
 
