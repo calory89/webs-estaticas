@@ -142,6 +142,10 @@ def dld_facts(p):
         if m and 'units' not in r: r['units'] = int(m.group(1).replace(',', '')); got = True
         m = re.search(r'completion date on the register (\d{1,2} [A-Z][a-z]{2} \d{4})', t) or re.search(r'registered completion (\d{1,2} [A-Z][a-z]{2} \d{4})', t)
         if m and 'comp' not in r and _dmy(m.group(1)): r['comp'] = _dmy(m.group(1)); got = True
+        m = re.search(r'\bregistered (\d{1,2} [A-Z][a-z]{2} \d{4})', t)   # item 120: date the project was registered with the DLD
+        if m and 'reg' not in r and _dmy(m.group(1)): r['reg'] = _dmy(m.group(1)); got = True
+        m = re.search(r'start date on the register (\d{1,2} [A-Z][a-z]{2} \d{4})', t)
+        if m and 'start' not in r and _dmy(m.group(1)): r['start'] = _dmy(m.group(1)); got = True
         if got and not src: src = x.get('source')
     if r.get('pct') is not None and not (0 <= r['pct'] <= 100): r.pop('pct'); r.pop('pd', None)
     if not (r.get('no') or r.get('bank') or r.get('pct') is not None): return None
