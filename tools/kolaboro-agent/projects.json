@@ -6601,12 +6601,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://ubuddream.com/"
+    },
+    {
+     "claim": "Developer entity as sourced for the same developer's other projects on kolaboro.com: PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com) (copied 18 Nov 2026 from the source linked here)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://loyo-development.com/pandawadreamen"
     }
    ],
    "facts": {
     "developer_founded": 2007.0,
     "developer_hq": "Badung, Bali, Indonesia",
-    "developer_company": null,
+    "developer_company": "PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com)",
     "developer_projects_delivered": null,
     "developer_units_delivered": null,
     "listed_or_audited": null,
@@ -6666,7 +6672,8 @@
     "https://loyobondar.com/en/",
     "https://loyobondar.com/wp-content/uploads/presentation_eng.pdf",
     "https://ubuddream.com/",
-    "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/"
+    "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/",
+    "https://loyo-development.com/pandawadreamen"
    ],
    "verified_score": 0,
    "permit_number": null,
@@ -6819,12 +6826,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://xo-project.com/pandawa"
+    },
+    {
+     "claim": "Developer entity as sourced for the same developer's other projects on kolaboro.com: PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com) (copied 18 Nov 2026 from the source linked here)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://loyo-development.com/pandawadreamen"
     }
    ],
    "facts": {
     "developer_founded": 2007.0,
     "developer_hq": "Badung, Bali, Indonesia",
-    "developer_company": null,
+    "developer_company": "PT. LOYO GROUP BALI, NPWP 50.075.629.1-907.000 (published on loyo-development.com)",
     "developer_projects_delivered": null,
     "developer_units_delivered": null,
     "listed_or_audited": null,
@@ -6880,7 +6893,8 @@
     "https://loyobondar.com/wp-content/uploads/presentation_eng.pdf",
     "https://novasia.estate/en/projects/xo-pandawa/",
     "https://www.palmera.realestate/indonesia/developer/loyo-bondar-development/",
-    "https://xo-project.com/pandawa"
+    "https://xo-project.com/pandawa",
+    "https://loyo-development.com/pandawadreamen"
    ],
    "verified_score": 0,
    "permit_number": null,
