@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Los alquileres de particulares tributa
 - [68.316 € · Piso de cinco habitaciones en un edificio de 1904 junto a la universidad de medicina de Zabrze](https://realhunt.co/es/deal/pl-zabrze-68k-033339) · Centrum, Zabrze · nota 92 · 77 m² · 4 dorm.
 - [72.885 € · Amplio piso de 89 m² con suelos de madera en Wałbrzych](https://realhunt.co/es/deal/pl-walbrzych-73k-831228) · Stary Zdrój, Wałbrzych · nota 90 · 89 m² · 3 dorm.
 
-[Las 31 casas en Polonia](https://realhunt.co/homes/poland)
+[Las 31 casas en Polonia](https://realhunt.co/es/homes/poland)
 
 [Gastos, impuestos y fuentes de Polonia](https://realhunt.co/es/costs/poland) · [Calculadora de gastos de compra para Polonia](https://realhunt.co/es/buying-costs/poland) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

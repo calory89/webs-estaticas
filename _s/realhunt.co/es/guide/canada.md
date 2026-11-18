@@ -34,11 +34,11 @@ Impuesto sobre los ingresos por alquiler: A los no residentes se les retiene el 
 - [55.842 € · Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842) · Bulyea, Saskatchewan · nota 88 · 62 m² · 2 dorm.
 - [68.327 € · Casa de 2 dormitorios actualizada en Avonlea, Saskatchewan](https://realhunt.co/es/deal/avonlea-68327) · Avonlea, Saskatchewan · nota 88 · 77 m² · 2 dorm.
 - [99.500 € · Casa en la costa acadiana con 4 dormitorios y baño nuevo](https://realhunt.co/es/deal/ca-grande-anse-99k-148091) · Grande-Anse, Nuevo Brunswick · nota 86 · 107 m² · 4 dorm.
-- [93.111 € · Casa de 2 dormitorios reformada en Astle, Nuevo Brunswick](https://realhunt.co/es/deal/astle-93111) · Astle, Nuevo Brunswick · nota 86 · 94 m² · 2 dorm.
+- [127.100 € · Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva Escocia](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k) · Pictou, Nueva Escocia · nota 86 · 132 m² · 3 dorm.
 
-[Las 9 casas en Canadá](https://realhunt.co/es/homes/canada)
+[Las 11 casas en Canadá](https://realhunt.co/homes/canada)
 
-[Gastos, impuestos y fuentes de Canadá](https://realhunt.co/es/costs/canada) · [Calculadora de gastos de compra para Canadá](https://realhunt.co/es/buying-costs/canada) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
+[Gastos, impuestos y fuentes de Canadá](https://realhunt.co/costs/canada) · [Calculadora de gastos de compra para Canadá](https://realhunt.co/es/buying-costs/canada) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara Canadá
 
@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: A los no residentes se les retiene el 
 - [Canadá vs Dinamarca](https://realhunt.co/es/countries/canada-vs-denmark)
 - [Canadá vs Francia](https://realhunt.co/es/countries/canada-vs-france)
 - [Canadá vs Suecia](https://realhunt.co/es/countries/canada-vs-sweden)
-- [Canadá vs Polonia](https://realhunt.co/es/countries/canada-vs-poland)
 - [Canadá vs Japón](https://realhunt.co/es/countries/canada-vs-japan)
+- [Canadá vs Polonia](https://realhunt.co/es/countries/canada-vs-poland)
 
 ### Fuentes
 

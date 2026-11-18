@@ -94,10 +94,10 @@ Piso de 86,5 m² en planta baja de un complejo cuidado de 2007, a 3 minutos anda
 
 https://realhunt.co/es/deal/bg-kavarna-66k-89682
 
-### Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas
+### Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti Vlas
 
 89.000 € · Sveti Vlas, Burgas · 64 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
 
-A furnished 64 m² flat (57 m² net) on the 2nd floor of a small three-storey building in Sveti Vlas, about 300 m from the beach. Living room, separate kitchen, one bedroom, bathroom and two balconies, south-facing with a sea view. Owners share an outdoor pool, green areas and a barbecue corner. The building has its Act 16 permit and, unusually for this coast, the advert states there is no maintenance fee. Inverter air conditioning, energy class A. Asking €89,000, about €1,390/m².
+Un piso amueblado de 64 m² (57 m² neto) en la 2ª planta de un pequeño edificio de tres plantas en Sveti Vlas, a unos 300 m de la playa. Salón, cocina separada, un dormitorio, baño y dos balcones, orientados al sur con vista al mar. Los propietarios comparten una piscina exterior, áreas verdes y una esquina para barbacoa. El edificio tiene permiso Act 16 y, inusualmente para esta costa, el anuncio indica que no hay cuota de mantenimiento. Aire acondicionado con inversor, clase energética A. Se pide €89,000, aproximadamente €1,390/m².
 
 https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034

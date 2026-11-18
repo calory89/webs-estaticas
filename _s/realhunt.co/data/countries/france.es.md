@@ -177,11 +177,11 @@ Casa de piedra en el centro de un pueblo: Le Lonzac, Nouvelle-Aquitaine. En plen
 
 https://realhunt.co/es/deal/Dc-ogTBIKeI
 
-### Fully renovated four-bedroom house with balcony and garden in Bergerac, Dordogne
+### Casa de cuatro dormitorios completamente renovada con balcón y jardín en Bergerac, Dordoña
 
 139.000 € · Bergerac, Dordogne · 150 m² · 4 dormitorios · nota RealHunt 86 · añadida el 2026-11-18
 
-A 150 m² stone house in Bergerac, on the Dordogne river, on a plot of about 270 m² and close to shops and services. The advert describes a total renovation with an energy rating of C and ducted reversible heating and cooling. Five rooms including four bedrooms, two bathrooms and three WCs, plus a balcony, a garden and two parking spaces. It is one of two lots in a small co-ownership with no running charges, as stated in the advert. Asking €139,000, about €927/m², which is low for a renovated house of this size in the Dordogne.
+Una casa de piedra de 150 m² en Bergerac, en el río Dordoña, en una parcela de alrededor de 270 m² y cerca de tiendas y servicios. El anuncio describe una renovación completa con una calificación energética C y calefacción y refrigeración reversible por conductos. Cinco habitaciones incluyendo cuatro dormitorios, dos baños y tres aseos, más un balcón, un jardín y dos plazas de aparcamiento. Es uno de dos lotes en una pequeña copropiedad sin gastos de funcionamiento, como se indica en el anuncio. Se pide 139.000 €, alrededor de 927 €/m², lo cual es bajo para una casa renovada de este tamaño en la Dordoña.
 
 https://realhunt.co/es/deal/fr-bergerac-stone-house-balcony-garden-139k
 
@@ -297,11 +297,11 @@ Casa de pueblo de 50 m² en la entrada del barrio histórico de Saint-Mathieu, c
 
 https://realhunt.co/es/deal/fr-perpignan-60k-990769
 
-### Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy
+### Casa urbana renovada con patio central en el centro de La Charité-sur-Loire, Borgoña
 
 119.500 € · La Charité-sur-Loire, Burgundy · 156 m² · 4 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
 
-A renovated town house in the centre of La Charité-sur-Loire, the old priory town on the Loire, with shops, schools and transport close by. 156 m² with six rooms, four of them bedrooms, arranged around a central patio, plus a redone 27 m² studio-type space with a new roof and a large cellar. Electrics redone, full insulation carried out in 2011, double glazing, mains gas heating, mains drainage and fibre available. Asking €119,500, about €766/m². Property tax €970 a year; the advert gives gas at about €1,200 and electricity about €1,000 a year.
+Una casa urbana renovada en el centro de La Charité-sur-Loire, la antigua ciudad prioral del Loira, con tiendas, escuelas y transporte cerca. 156 m² con seis habitaciones, cuatro de ellas dormitorios, dispuestas alrededor de un patio central, más un espacio tipo estudio de 27 m² reformado con techo nuevo y un gran sótano. Electrónica reformada, aislamiento completo realizado en 2011, doble acristalamiento, calefacción de gas de red, drenaje de red y fibra disponible. Precio solicitado €119.500, aproximadamente €766/m². Impuesto de propiedad €970 al año; el anuncio indica gas aproximadamente €1.200 y electricidad aproximadamente €1.000 al año.
 
 https://realhunt.co/es/deal/fr-la-charite-sur-loire-town-house-patio-119k
 
@@ -345,11 +345,11 @@ Casa de pueblo de tres plantas y 58 m² en Durban-Corbières, en las colinas de 
 
 https://realhunt.co/es/deal/fr-durban-corbieres-80k-ke4gw6
 
-### 19th-century stone village house with wisteria courtyard and terrace in Frayssinet, Lot
+### Casa de pueblo de piedra del siglo XIX con patio de glicina y terraza en Frayssinet, Lot
 
 125.000 € · Frayssinet, Lot · 113 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
 
-A 19th-century stone house on a quiet lane in a peaceful village in the Lot, in Occitanie. About 113 m² with a generous sitting room, a kitchen diner with modern appliances, three bedrooms, one of them on the ground floor, and two shower rooms. The agent describes it as comfortable and habitable as it stands. Behind stone walls there is a private courtyard shaded by mature wisteria and a raised terrace. Glazing and heating could be upgraded over time, as the advert says. Shops are about 10 minutes away and a larger town with a railway station 20 minutes. Asking €125,000 including fees, about €1,106/m².
+Una casa de piedra del siglo XIX en un callejón tranquilo en un pueblo apacible en el Lot, en Occitania. Alrededor de 113 m² con una generosa sala de estar, cocina comedor con electrodomésticos modernos, tres dormitorios, uno de ellos en la planta baja, y dos cuartos de ducha. El agente la describe como cómoda y habitable tal como está. Tras muros de piedra hay un patio privado sombreado por glicina madura y una terraza elevada. El acristalamiento y la calefacción podrían mejorarse con el tiempo, como dice el anuncio. Las tiendas están a unos 10 minutos y una localidad mayor con estación de tren a 20 minutos. Se pide 125.000 € incluyendo gastos, alrededor de 1.106 €/m².
 
 https://realhunt.co/es/deal/fr-frayssinet-lot-stone-village-house-125k
 

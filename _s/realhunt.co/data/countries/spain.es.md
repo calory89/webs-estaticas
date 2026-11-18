@@ -1000,11 +1000,11 @@ Bajo amueblado en el residencial La Caleta, en Parque Holandés: 2 dormitorios, 
 
 https://realhunt.co/es/deal/es-la-caleta-170k-006586
 
-### Furnished five-bedroom mountain house with Ubiñas views in Quirós, Asturias
+### Casa de montaña amueblada de cinco dormitorios con vistas a Ubiñas en Quirós, Asturias
 
 180.000 € · Ricabo, Quirós, Asturias · 145 m² · 5 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
 
-A house of 145 m2 in the village of Ricabo, inside the Las Ubiñas-La Mesa Natural Park, with a patio terrace looking straight at the peaks. Renovated inside with redone wiring and plumbing and a new water heater, and sold furnished. Ground floor with living room and fireplace, kitchen, a bedroom, bathroom, cellar and workshop, three more bedrooms and a second living room upstairs, plus an attic. A closed garage and a nearby plot with a vegetable garden are included. Radiators are in place but the heating is not yet connected. Pola de Lena is about 20 minutes away.
+Una casa de 145 m² en el pueblo de Ricabo, dentro del Parque Natural Las Ubiñas-La Mesa, con una terraza de patio mirando directamente a los picos. Renovada interiormente con cableado y tuberías rehecha y un calentador de agua nuevo, y vendida amueblada. Planta baja con sala de estar y chimenea, cocina, un dormitorio, baño, bodega y taller, tres dormitorios más y una segunda sala de estar arriba, más una buhardilla. Un garaje cerrado y una parcela cercana con huerta están incluidos. Radiadores están instalados pero la calefacción aún no está conectada. Pola de Lena está a aproximadamente 20 minutos de distancia.
 
 https://realhunt.co/es/deal/es-asturias-quiros-ricabo-mountain-house-180k
 
@@ -1088,11 +1088,11 @@ Dúplex para entrar a vivir en tres niveles en Cadalso de los Vidrios: salón co
 
 https://realhunt.co/es/deal/es-cadalso-de-los-vidrios-155k-995484
 
-### Three-bedroom townhouse with two terraces in La Marina, Costa Blanca
+### Casa urbana de tres dormitorios con dos terrazas en La Marina, Costa Blanca
 
 160.000 € · La Marina, Elche, Alicante · 116 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
 
-A townhouse of 116 m2 in the La Marina urbanisation on the southern Costa Blanca, extended upwards to give three bedrooms and two bathrooms, including an extra-large main bedroom. It faces east for morning sun and is described as ready to move into. The photos show a tiled front terrace with awning, a first-floor balcony, a fitted kitchen with dishwasher, a long living and dining room with air conditioning and a small roof solarium. At about 1,380 euros per m2 it is well below most homes on this stretch of coast. Community fees are not stated in the advert.
+Una casa urbana de 116 m² en la urbanización La Marina en la Costa Blanca meridional, ampliada hacia arriba para dar tres dormitorios y dos baños, incluido un dormitorio principal extra grande. Tiene orientación este para el sol de la mañana y se describe como lista para mudarse. Las fotos muestran una terraza frontal de baldosas con toldo, un balcón de primer piso, una cocina equipada con lavavajillas, una larga sala de estar y comedor con aire acondicionado y un pequeño solárium en la azotea. Con aproximadamente 1.380 euros por m² está muy por debajo de la mayoría de las casas en este tramo de costa. Las cuotas de comunidad no se indican en el anuncio.
 
 https://realhunt.co/es/deal/es-costa-blanca-la-marina-townhouse-160k
 
@@ -1464,11 +1464,11 @@ Dúplex muy luminoso en Terrassa, a 22 km de Barcelona, con 2 dormitorios, baño
 
 https://realhunt.co/es/deal/es-terrassa-169k-923454
 
-### Two-bedroom duplex with private garden and shared pool in Costa de Antigua
+### Dúplex de dos dormitorios con jardín privado y piscina compartida en Costa de Antigua
 
 180.000 € · Costa de Antigua, Fuerteventura · 61 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
 
-A two-floor home of about 61 m2 in the Los Soles complex on the east coast of Fuerteventura, a few minutes from Caleta de Fuste and its beaches. Downstairs is a bright living room with an open modern kitchen and a guest toilet, upstairs two bedrooms and a full bathroom. The private rear terrace garden opens towards the communal pool, which the advert says was recently renovated and has showers and toilets. Described as in excellent condition and ready to move into. Community fees are not stated in the advert, so ask before making an offer.
+Una vivienda de dos plantas de aproximadamente 61 m2 en el complejo Los Soles en la costa este de Fuerteventura, a pocos minutos de Caleta de Fuste y sus playas. La planta baja es un salón luminoso con una cocina moderna abierta y un aseo de invitados, la planta superior tiene dos dormitorios y un baño completo. La terraza-jardín trasera privada se abre hacia la piscina comunitaria, que según el anuncio ha sido recientemente renovada y tiene duchas y aseos. Se describe como en excelente estado y lista para entrar a vivir. Las cuotas de comunidad no se indican en el anuncio, así que pregunte antes de hacer una oferta.
 
 https://realhunt.co/es/deal/es-fuerteventura-costa-antigua-duplex-pool-180k
 
@@ -1488,11 +1488,11 @@ https://realhunt.co/es/deal/es-costa-del-silencio-199k-024468
 
 https://realhunt.co/es/deal/es-biar-85k-66151
 
-### One-bedroom flat with a sunny terrace, shared pool and sea views in Almuñécar
+### Apartamento de un dormitorio con terraza soleada, piscina compartida y vistas al mar en Almuñécar
 
 149.000 € · Almuñécar, Granada · 45 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
 
-A 45 m² flat in Los Pinos, a hillside residential area of Almuñécar on the Costa Tropical, in a small white complex of only five homes. One bedroom, one bathroom, an open kitchen behind a brick arch and a living room with air conditioning that opens onto a wide tiled terrace. A few steps away are the shared pool and a covered barbecue area, both looking straight out over the Mediterranean and the coast. Terracotta floors, sold empty and clean. The price has been cut by about 10% to €149,000. Community fees are not stated in the advert.
+Un apartamento de 45 m² en Los Pinos, una zona residencial en la ladera de Almuñécar en la Costa Tropical, en un pequeño complejo blanco de solo cinco viviendas. Un dormitorio, un baño, una cocina abierta detrás de un arco de ladrillo y una sala de estar con aire acondicionado que se abre a una amplia terraza de baldosas. A pocos pasos están la piscina compartida y un área de barbacoa cubierta, ambas con vistas directas al Mediterráneo y la costa. Suelos de barro cocido, se vende vacío y limpio. El precio ha sido rebajado aproximadamente un 10% a 149.000 €. Las cuotas de comunidad no se indican en el anuncio.
 
 https://realhunt.co/es/deal/es-almunecar-los-pinos-sea-view-pool-flat-149k
 

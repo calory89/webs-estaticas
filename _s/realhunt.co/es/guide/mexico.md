@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · nota 87 · 78 m² · 3 dorm.
 - [86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · nota 86 · 68 m² · 2 dorm.
 
-[Las 12 casas en México](https://realhunt.co/homes/mexico)
+[Las 12 casas en México](https://realhunt.co/es/homes/mexico)
 
 [Gastos, impuestos y fuentes de México](https://realhunt.co/es/costs/mexico) · [Calculadora de gastos de compra para México](https://realhunt.co/es/buying-costs/mexico) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

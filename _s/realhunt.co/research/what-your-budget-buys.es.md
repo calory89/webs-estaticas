@@ -54,12 +54,12 @@ Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Grecia | 13 | 93 m² | 1.465 € | 2 | [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k), 109.000 €, nota 93 |
 | Portugal | 12 | 125 m² | 1.364 € | 2 | [Casa de cinco dormitorios con dos cocinas, calefacción central y tejado nuevo en Silvares, Fundão](https://realhunt.co/es/deal/pt-silvares-110k-271372), 110.000 €, nota 91 |
 | Estados Unidos | 12 | 133 m² | 1.364 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 151.000 €, nota 90 |
-| Reino Unido | 2 | s. d. | s. d. | 2 | [Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k), 126.500 €, nota 83 |
+| Reino Unido | 2 | s. d. | s. d. | 2 | [Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k), 126.500 €, nota 83 |
 | Dominican Republic | 2 | s. d. | s. d. | 2 | [Piso amueblado en primera línea en Juan Dolio con balcón con vistas al mar](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359), 187.800 €, nota 89 |
-| Chipre | 2 | s. d. | s. d. | 2 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), 130.000 €, nota 83 |
-| Canadá | 2 | s. d. | s. d. | 4 | [Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k), 127.100 €, nota 86 |
-| México | 2 | s. d. | s. d. | 3 | [Three-bedroom house in a gated complex with a pool in Puerto Vallarta, Jalisco](https://realhunt.co/es/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m), 160.200 €, nota 82 |
-| Dinamarca | 1 | s. d. | s. d. | 3 | [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk), 160.000 €, nota 82 |
+| Chipre | 2 | s. d. | s. d. | 2 | [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), 130.000 €, nota 83 |
+| Canadá | 2 | s. d. | s. d. | 4 | [Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva Escocia](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k), 127.100 €, nota 86 |
+| México | 2 | s. d. | s. d. | 3 | [Casa de tres dormitorios en un complejo amurallado con piscina en Puerto Vallarta, Jalisco](https://realhunt.co/es/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m), 160.200 €, nota 82 |
+| Dinamarca | 1 | s. d. | s. d. | 3 | [Villa lista para entrar a vivir con cocina moderna, terraza grande y vistas al campo abierto cerca de Høng](https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk), 160.000 €, nota 82 |
 
 ## Método y límites
 

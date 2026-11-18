@@ -66,18 +66,18 @@ Un bungalow pareado encantador de un dormitorio, con cocina moderna, salón lumi
 
 https://realhunt.co/es/deal/uk-blyth-88k-869241
 
-### Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff
+### Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff
 
 126.500 € · Macduff, Aberdeenshire · 70 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
 
-A well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and ready to move into. 70 m² with an entrance hall, an open-plan kitchen and living room with all appliances included, two bedrooms and a fully fitted bathroom upstairs. The front bedroom looks out over the Moray Firth. Modern fittings throughout, and the advert says it works equally as a permanent home. Freehold. Asking offers over £110,000 (about €126,500), around €1,800/m². Council tax band B.
+Una casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida completamente amueblada y lista para mudarse. 70 m² con un hall de entrada, una cocina de planta abierta y sala de estar con todos los electrodomésticos incluidos, dos dormitorios y un cuarto de baño completamente equipado en la planta superior. El dormitorio delantero tiene vistas al fiordo de Moray. Acabados modernos en toda la propiedad, y el anuncio dice que funciona igual como casa permanente. Propiedad libre. Pidiendo ofertas por encima de £110,000 (aproximadamente €126,500), alrededor de €1,800/m². Banda impuesto municipal B.
 
 https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k
 
-### Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway
+### Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, Galloway
 
 121.000 € · Whithorn, Dumfries and Galloway · 67 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
 
-A traditional terraced cottage in the centre of Whithorn, in the far south-west of Scotland. 67 m² with two well-proportioned bedrooms, a living room with a wood-burning stove and a recently refurbished modern kitchen. Behind the house, steps lead up to a large enclosed garden with a kept lawn, mature planting, a raised paved sitting area, a greenhouse and a generous outbuilding. Freehold, mains water and sewerage, electric heating. Asking offers over £105,000 (about €121,000), around €1,800/m². Council tax band A, the lowest band.
+Una cottage terraced tradicional en el centro de Whithorn, en el extremo más al suroeste de Escocia. 67 m² con dos dormitorios bien proporcionados, una sala de estar con una estufa de leña y una cocina moderna recientemente reformada. Detrás de la casa, unos escalones suben a un gran jardín cerrado con césped cuidado, plantas maduras, un área de estar pavimentada elevada, un invernadero y un generoso anexo. Propiedad absoluta, agua corriente y alcantarillado de la red, calefacción eléctrica. Pidiendo ofertas superiores a 105.000 £ (aproximadamente 121.000 €), alrededor de 1.800 €/m². Banda A del impuesto municipal, la banda más baja.
 
 https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k

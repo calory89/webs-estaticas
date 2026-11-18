@@ -32,8 +32,10 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto sobre
 - [341.000 € · Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar](https://realhunt.co/es/deal/cy-coral-bay-341k-080655) · Coral Bay, Paphos · nota 93 · 84 m² · 2 dorm.
 - [350.000 € · Adosado amueblado con piscina privada a 100 m del mar en Protaras](https://realhunt.co/es/deal/cy-protaras-350k-257111) · Protaras, Famagusta · nota 92 · 94 m² · 2 dorm.
 - [470.000 € · Bajo frente al mar con terraza de 50 m² y piscina desbordante en Protaras](https://realhunt.co/es/deal/cy-protaras-470k-585375) · Protaras, Famagusta · nota 84 · 85 m² · 2 dorm.
+- [130.000 € · Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874) · Mazotos, Larnaca · nota 83 · 70 m² · 2 dorm.
+- [195.000 € · Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, Pafos](https://realhunt.co/es/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684) · Mesa Chorio, Paphos · nota 78 · 74 m² · 2 dorm.
 
-[Las 3 casas en Chipre](https://realhunt.co/es/homes/cyprus)
+[Las 5 casas en Chipre](https://realhunt.co/es/homes/cyprus)
 
 [Gastos, impuestos y fuentes de Chipre](https://realhunt.co/es/costs/cyprus) · [Calculadora de gastos de compra para Chipre](https://realhunt.co/es/buying-costs/cyprus) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -45,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto sobre
 - [Chipre vs Dinamarca](https://realhunt.co/es/countries/cyprus-vs-denmark)
 - [Chipre vs Francia](https://realhunt.co/es/countries/cyprus-vs-france)
 - [Chipre vs Suecia](https://realhunt.co/es/countries/cyprus-vs-sweden)
-- [Chipre vs Polonia](https://realhunt.co/es/countries/cyprus-vs-poland)
 - [Chipre vs Japón](https://realhunt.co/es/countries/cyprus-vs-japan)
+- [Chipre vs Polonia](https://realhunt.co/es/countries/cyprus-vs-poland)
 
 ### Fuentes
 

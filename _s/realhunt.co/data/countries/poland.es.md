@@ -279,11 +279,11 @@ https://realhunt.co/es/deal/pl-kolo-80k-024273
 
 https://realhunt.co/es/deal/pl-walbrzych-80k-970297
 
-### Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze
+### Apartamento de planta baja con jardín, terraza y garaje en Szklarska Poręba, Karkonosze
 
 90.600 € · Szklarska Poręba, Lower Silesia · 71 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
 
-A sunny 71 m² ground-floor flat in a quiet part of Szklarska Poręba, a mountain resort in the Karkonosze, in a building that was thermally modernised a few years ago. Two rooms, kitchen and bathroom, with a garden and terrace, a large wooden balcony off the bedroom, a garage, a cellar and a store room. Heated by a fireplace and electric heating. The advert says it can be lived in as it is or freshened up. Separate ownership with its own land register entry. Asking 399,000 zł (about €90,600). Fee to the owners association: 600 zł a month (about €136).
+Un soleado apartamento de planta baja de 71 m² en una parte tranquila de Szklarska Poręba, una estación de montaña en Karkonosze, en un edificio modernizado térmicamente hace algunos años. Dos habitaciones, cocina y baño, con jardín y terraza, un gran balcón de madera en el dormitorio, un garaje, una bodega y un trastero. Calefactado por chimenea y calefacción eléctrica. El anuncio dice que puede vivirse tal cual o mejorarse. Propiedad separada con su propia entrada en el registro de la tierra. Pidiendo 399.000 zł (aproximadamente 90.600 €). Cuota de la asociación de propietarios: 600 zł al mes (aproximadamente 136 €).
 
 https://realhunt.co/es/deal/pl-szklarska-poreba-garden-flat-91k-543867
 

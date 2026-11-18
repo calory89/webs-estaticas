@@ -80,11 +80,11 @@ Maisonette de piedra de 110 m² en Paleo Klima, Glossa, en Skopelos, la isla de 
 
 https://realhunt.co/es/deal/gr-skopelos-sea-view-150k
 
-### Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos
+### Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, Karpathos
 
 170.000 € · Othos, Karpathos · 165 m² · 4 dormitorios · nota RealHunt 89 · añadida el 2026-11-18
 
-A three-floor house of 165 m² in Othos, the highest village on Karpathos, renovated in 2014. Four bedrooms and four bathrooms, a large separate kitchen with a breakfast bar and a bright tiled living room. The top floor opens onto a wide terrace that looks over the white village, the hills and the Aegean. It is connected to mains water and sewage, and the village centre is a walk away. The advert puts Pigadia, the island capital and ferry port, 12 km away and Sikelao beach 8 km away. Asking €170,000, about €1,030/m², low for an island house this size.
+Una casa de tres plantas de 165 m² en Othos, el pueblo más alto de Karpathos, renovada en 2014. Cuatro dormitorios y cuatro baños, una gran cocina independiente con barra de desayuno y un luminoso salón de azulejos. La planta superior se abre a una amplia terraza que mira al pueblo blanco, las colinas y el Egeo. Está conectada a agua de red y alcantarillado, y el centro del pueblo está a un paseo. El anuncio sitúa Pigadia, la capital de la isla y puerto de ferrys, a 12 km y la playa de Sikelao a 8 km. Se pide 170.000 €, alrededor de 1.030 €/m², bajo para una casa de isla de este tamaño.
 
 https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k
 
@@ -120,11 +120,11 @@ Rodeada de árboles altísimos en el pueblo de montaña de Chania, en Pelion, un
 
 https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k
 
-### Renovated single-storey country house among olive groves near Gytheio
+### Casa de campo unifamiliar renovada entre olivos cerca de Gytheio
 
 85.000 € · Near Gytheio, Laconia · 82 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
 
-A single-storey house of 82 m2 on an 845 m2 hillside plot with 17 olive trees, a citrus tree and a vine pergola, recently renovated: new floor tiles inside and out, new kitchen cupboards, restored timber roof, shutters and doors, fresh paint. Living room, kitchen with WC, two bedrooms, an extra room for dining or office, and a bathroom with bath. Two covered terraces look over the olive groves. Air conditioning in three rooms, mains water and electricity, septic tank. Sold largely furnished. Only three other houses nearby, so it is very quiet and you will need a car.
+Una casa unifamiliar de 82 m2 en una parcela de ladera de 845 m2 con 17 olivos, un árbol cítrico y una pérgola de vid, recientemente renovada: nuevas baldosas en el suelo interior y exterior, nuevos muebles de cocina, tejado de madera restaurado, persianas y puertas restauradas, pintura fresca. Salón, cocina con WC, dos dormitorios, una habitación adicional para comedor u oficina y un baño con bañera. Dos terrazas cubiertas miran hacia los olivos. Aire acondicionado en tres habitaciones, agua y electricidad de red, fosa séptica. Se vende prácticamente amueblada. Solo hay otras tres casas cerca, por lo que es muy tranquilo y necesitará coche.
 
 https://realhunt.co/es/deal/gr-laconia-gytheio-renovated-country-house-85k
 
@@ -136,11 +136,11 @@ Villa Dionysos: casa de 76 m² y dos dormitorios en dos plantas, totalmente amue
 
 https://realhunt.co/es/deal/gr-crete-drapanos-pool-158k
 
-### Renovated stone village house with courtyards in Karydi, eastern Crete
+### Casa de pueblo de piedra renovada con patios en Karydi, Creta oriental
 
 175.000 € · Karydi, Agios Nikolaos, Crete · 160 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
 
-A stone house of 160 m2 on two levels in the hill village of Karydi, renovated in two stages, 2010 and 2024, and sold fully furnished. The ground floor has an open kitchen with a sitting corner by the fireplace, a large living and dining room, a double bedroom and a big bathroom with laundry area opening to the yard. Upstairs is a second bedroom with two balconies. Front and back yards, a store room, solar water heating and air conditioning in the living room and both bedrooms. About 20 to 25 minutes by car from Elounda and Neapoli, and an hour from Heraklion airport.
+Una casa de piedra de 160 m2 en dos plantas en el pueblo de colina de Karydi, renovada en dos fases, 2010 y 2024, y vendida completamente amueblada. La planta baja tiene una cocina abierta con una esquina de estar junto a la chimenea, un salón comedor grande, un dormitorio doble y un baño grande con área de lavandería que se abre al patio. La planta superior tiene un segundo dormitorio con dos balcones. Patios delantero y trasero, una habitación de almacenamiento, calefacción solar de agua y aire acondicionado en el salón y ambos dormitorios. A unos 20-25 minutos en coche de Elounda y Neapoli, y una hora del aeropuerto de Heraklion.
 
 https://realhunt.co/es/deal/gr-crete-karydi-renovated-stone-house-175k
 
@@ -160,19 +160,19 @@ Casa independiente de 84 m² en Paradeisi, en Rodas, en muy buen estado, moderna
 
 https://realhunt.co/es/deal/gr-rhodes-paradeisi-modern-155k
 
-### Stone-built three-bedroom house with gulf views in Ano Volos, at the foot of Pelion
+### Casa de piedra de tres dormitorios con vistas al golfo en Ano Volos, al pie del Pelion
 
 167.000 € · Ano Volos, Magnesia · 114 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-11-18
 
-A stone-faced house built in 2004 in Agios Georgios, an old quarter of Ano Volos on the road up to Portaria. 114 m² on three levels with three bedrooms, two bathrooms, two kitchens and a living room with a fireplace. A veranda and a small garden face west over Volos and the Pagasetic Gulf. Oil central heating with radiators, new air conditioning units, a solar water heater, a storage room and private parking. Sold partly furnished. The advert puts the Volos waterfront 6.5 km away and Anavros beach 6 km away. Asking €167,000, about €1,465/m².
+Una casa con fachada de piedra construida en 2004 en Agios Georgios, un barrio antiguo de Ano Volos en la carretera hacia Portaria. 114 m² en tres niveles con tres dormitorios, dos cuartos de baño, dos cocinas y una sala de estar con chimenea. Una veranda y un pequeño jardín miran al oeste hacia Volos y el Golfo Pagasético. Calefacción central de fuel con radiadores, nuevas unidades de aire acondicionado, calentador solar de agua, trastero y aparcamiento privado. Se vende parcialmente amueblado. El anuncio sitúa la orilla de Volos a 6,5 km de distancia y la playa de Anavros a 6 km de distancia. Precio solicitado €167.000, aproximadamente €1.465/m².
 
 https://realhunt.co/es/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k
 
-### Restored 1881 stone mansion with castle views in Volissos, Chios
+### Mansión de piedra de 1881 restaurada con vistas al castillo en Volissos, Quíos
 
 175.000 € · Volissos, Chios · 129 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-11-18
 
-A stone house from 1881 in Volissos, in the north-west of Chios, once the village courthouse and later its school. Fully restored in 1998 and upgraded again in 2015: insulation, double glazing, a new tiled roof, solar hot water, renewed wiring and plumbing. 129 m² on two floors plus an attic bedroom under exposed beams, with two kitchens with marble worktops, two fireplaces and two bathrooms. The upper balcony looks over the village to the Genoese castle. The ground floor can work as a separate studio for guests. Asking €175,000, about €1,360/m².
+Una casa de piedra de 1881 en Volissos, en el noroeste de Quíos, que fue antiguamente la casa consistorial del pueblo y posteriormente su escuela. Completamente restaurada en 1998 y actualizada nuevamente en 2015: aislamiento, acristalamiento doble, tejado con baldosas nuevo, agua caliente solar, cableado y tuberías renovados. 129 m² en dos plantas más un dormitorio buhardilla bajo vigas expuestas, con dos cocinas con encimeras de mármol, dos chimeneas y dos baños. El balcón superior mira hacia el pueblo y el castillo genovés. La planta baja puede funcionar como un estudio separado para huéspedes. Se pide €175,000, aproximadamente €1,360/m².
 
 https://realhunt.co/es/deal/gr-chios-volissos-1881-stone-house-175k
 
@@ -200,10 +200,10 @@ Casa de 62 m² en una parcela llana de 980 m² entre olivos y pocos vecinos, cer
 
 https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k
 
-### Furnished one-bedroom ground-floor flat with a private yard in Elounda, Crete
+### Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, Creta
 
 125.000 € · Elounda, Crete · 35 m² · 1 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
 
-A ground-floor flat of 35.5 m² in Elounda, one of the best-known resort towns in Crete, sold fully furnished and ready to use. An open kitchen and living room with air conditioning opens onto a front balcony, and the double bedroom gives straight onto a private walled yard with a tree and a seating area. Modern shower room, solar panels for hot water and a 20 m² basement storage room. The advert puts Agios Nikolaos under 10 minutes away by car and Heraklion airport about an hour away. Asking €125,000, a low entry price for Elounda.
+Un apartamento de planta baja de 35,5 m² en Elounda, uno de los pueblos turísticos más conocidos de Creta, vendido completamente amueblado y listo para usar. Una cocina abierta y sala de estar con aire acondicionado se abre a un balcón delantero, y el dormitorio doble da directamente a un patio cerrado privado con un árbol y una zona de descanso. Cuarto de ducha moderno, paneles solares para agua caliente y un trastero de 20 m² en el sótano. El anuncio sitúa Agios Nikolaos a menos de 10 minutos en coche y el aeropuerto de Heraklion aproximadamente a una hora de distancia. Precio solicitado €125.000, un precio de entrada bajo para Elounda.
 
 https://realhunt.co/es/deal/gr-crete-elounda-one-bed-private-yard-125k

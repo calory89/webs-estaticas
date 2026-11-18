@@ -130,18 +130,18 @@ Piso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlá
 
 https://realhunt.co/es/deal/mx-mazatlan-97k-889034
 
-### Three-bedroom house in a gated complex with a pool in Puerto Vallarta, Jalisco
+### Casa de tres dormitorios en un complejo amurallado con piscina en Puerto Vallarta, Jalisco
 
 160.200 € · Puerto Vallarta, Jalisco · 94 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
 
-Asking MX$3,250,000 (about €160,200), and the advert says the price is negotiable, for a two-storey house of about 94 m² in the Rosales complex in Parques Universidad, Puerto Vallarta. It has three bedrooms, one on the ground floor, two full bathrooms, a living and dining room, kitchen, service patio, front garden and parking for one car. Four air conditioning units and window bars are included, and it can be sold furnished. The walled complex has a swimming pool, terrace and gardens, which one bedroom balcony overlooks. The photos show a clean, bright home ready to use. Maintenance fee not stated.
+Precio solicitado MX$3.250.000 (aproximadamente €160.200), y el anuncio dice que el precio es negociable, por una casa de dos pisos de aproximadamente 94 m² en el complejo Rosales en Parques Universidad, Puerto Vallarta. Tiene tres dormitorios, uno en la planta baja, dos cuartos de baño completos, una sala de estar y comedor, cocina, patio de servicio, jardín delantero y aparcamiento para un coche. Incluye cuatro unidades de aire acondicionado y barras de ventana, y se puede vender amueblado. El complejo amurallado tiene una piscina, terraza y jardines, que da a un balcón de un dormitorio. Las fotos muestran una casa limpia y luminosa lista para usar. Cuota de mantenimiento no indicada.
 
 https://realhunt.co/es/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m
 
-### Three-bedroom house in a gated community with a pool in Mazatlán, Sinaloa
+### Casa de tres dormitorios en una comunidad privada con piscina en Mazatlán, Sinaloa
 
 143.000 € · Mazatlán, Sinaloa · 75 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
 
-Asking MX$2,900,000 (about €143,000) for a two-storey house of about 75 m² in Coto San Julio, a gated cluster in the Hacienda del Seminario area of Mazatlán, listed as about ten years old. It has three bedrooms with wardrobes, two bathrooms, a living room, dining area, a remodelled kitchen, a patio and one parking space. Split air conditioning and ceiling fans are fitted. Residents share a swimming pool and the entrance has security around the clock. The photos show a tidy, furnished home that looks ready to move into. Mazatlán is a Pacific beach city. Maintenance fee not stated.
+Pidiendo MX$2.900.000 (aproximadamente 143.000 €) por una casa de dos plantas de aproximadamente 75 m² en Coto San Julio, un conjunto privado en la zona Hacienda del Seminario de Mazatlán, listada como de aproximadamente diez años de antigüedad. Tiene tres dormitorios con armarios, dos baños, una sala de estar, comedor, una cocina remodelada, un patio y un espacio de aparcamiento. Se han instalado aires acondicionados divididos y ventiladores de techo. Los residentes comparten una piscina y la entrada tiene seguridad las veinticuatro horas. Las fotos muestran una casa ordenada y amueblada que parece lista para mudarse. Mazatlán es una ciudad de playa en el Pacífico. Cuota de mantenimiento no indicada.
 
 https://realhunt.co/es/deal/mx-mazatlan-three-bed-house-gated-pool-2-9m

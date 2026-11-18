@@ -80,10 +80,10 @@ Apartamento de 2 dormitorios en Bonita Village con acceso directo a Playa Las Ba
 
 https://realhunt.co/es/deal/dr-las-terrenas-201k-439030
 
-### Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata
+### Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto Plata
 
 150.000 € · Puerto Plata, Puerto Plata · 103 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
 
-Asking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa Dorada beach. It has two bedrooms, two bathrooms, a living and dining room, a kitchen with an island and a balcony. The building has a swimming pool, one assigned parking space and visitor parking. The price includes the washer-dryer, fridge, cooker and extractor hood, so it is close to ready to live in. Maintenance fee US$127, stated without a period, probably monthly.
+Se pide 165.000 dólares estadounidenses (alrededor de 150.000 €) por un piso de segunda mano de 103 m² en Puerto Plata, en la costa norte, que el anuncio sitúa muy cerca de la playa de Playa Dorada. Tiene dos dormitorios, dos baños, salón y comedor, cocina con isla y balcón. El edificio tiene una piscina, una plaza de aparcamiento asignada y aparcamiento para visitantes. El precio incluye lavadora-secadora, frigorífico, cocina y campana extractora, así que está casi listo para vivir en él. Cuota de mantenimiento 127 dólares estadounidenses, indicada sin punto, probablemente mensual.
 
 https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k

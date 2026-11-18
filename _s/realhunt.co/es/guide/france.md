@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan el impuesto fr
 - [123.000 € · Longère del siglo XIX totalmente renovada en una planta con garaje en Lencloître, Vienne](https://realhunt.co/es/deal/fr-lencloitre-123k-157528) · Lencloître, Vienne · nota 91 · 102 m² · 2 dorm.
 - [139.000 € · Antigua casa de guardabarrera renovada en 2023 con 1.824 m² en Bergerac, Dordogne](https://realhunt.co/es/deal/fr-bergerac-139k-175736) · Bergerac, Dordogne · nota 91 · 77 m² · 2 dorm.
 
-[Las 45 casas en Francia](https://realhunt.co/homes/france)
+[Las 45 casas en Francia](https://realhunt.co/es/homes/france)
 
 [Gastos, impuestos y fuentes de Francia](https://realhunt.co/es/costs/france) · [Calculadora de gastos de compra para Francia](https://realhunt.co/es/buying-costs/france) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

@@ -413,10 +413,10 @@ Adosado bien cuidado de 79 m² de 1979, modernizado y listo para entrar, en un b
 
 https://realhunt.co/es/deal/dk-herborg-89k-d18595
 
-### Move-in ready villa with modern kitchen, big terrace and open field views near Høng
+### Villa lista para entrar a vivir con cocina moderna, terraza grande y vistas al campo abierto cerca de Høng
 
 160.000 € · Sæby near Høng, West Zealand · 101 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
 
-A bright, well-kept villa in the village of Sæby, a short drive from Høng in West Zealand, registered as a villa for year-round living and described as ready to move into. 101 m² from 1948 with a modern white handle-free kitchen open to the dining area, a roomy living room, three rooms including a first floor with skylights, and a bathroom with a separate shower. Outside there is a large wooden terrace, an easy green garden on a 491 m² plot, a carport and open views over the fields. Asking 1,195,000 DKK (about €160,000), around €1,585/m². Owner costs 1,291 DKK a month (about €173).
+Una villa luminosa y bien cuidada en el pueblo de Sæby, a corta distancia en coche de Høng en Zelanda Occidental, registrada como villa para vivir todo el año y descrita como lista para entrar a vivir. 101 m² de 1948 con una moderna cocina blanca sin tiradores abierta al comedor, un espacioso salón, tres habitaciones incluyendo una planta baja con tragaluces, y un baño con ducha separada. Fuera hay una amplia terraza de madera, un jardín verde fácil en una parcela de 491 m², una cochera y vistas abiertas al campo. Se pide 1.195.000 DKK (alrededor de 160.000 €), alrededor de 1.585 €/m². Costes del propietario 1.291 DKK al mes (alrededor de 173 €).
 
 https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk

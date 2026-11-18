@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado a un no residente t
 - [25.600 € · Villa de madera en Kita-Karuizawa que puede alquilarse como casa de vacaciones](https://realhunt.co/es/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · nota 91 · 60 m² · 2 dorm.
 - [22.750 € · Cabaña forestal revestida de cedro renovada en 2023, con una plataforma y una gran habitación de altillo](https://realhunt.co/es/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · nota 91 · 75 m² · 3 dorm.
 
-[Las 32 casas en Japón](https://realhunt.co/homes/japan)
+[Las 32 casas en Japón](https://realhunt.co/es/homes/japan)
 
 [Gastos, impuestos y fuentes de Japón](https://realhunt.co/es/costs/japan) · [Calculadora de gastos de compra para Japón](https://realhunt.co/es/buying-costs/japan) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

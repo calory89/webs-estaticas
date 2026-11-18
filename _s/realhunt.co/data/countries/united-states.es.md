@@ -98,11 +98,11 @@ Entra en el encanto de la histórica Savage House, una casa victoriana preciosa 
 
 https://realhunt.co/es/deal/us-north-carolina-victorian-170k
 
-### Victorian house with original oak woodwork opposite a park in Marietta, Ohio
+### Casa victoriana con carpintería de roble original frente a un parque en Marietta, Ohio
 
 200.000 € · Marietta, Ohio · 191 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-18
 
-Asking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio. The oak staircase, pocket doors, glazed French doors and wide trim are all still in place. It has three bedrooms, two bathrooms (one on the ground floor), an eat-in kitchen, a separate dining room, ground-floor laundry and a floored walk-up attic. Outside there is a front porch, rear deck, fenced back garden and a one-car detached garage. A city park, the library and the river trail are across the street or close by. Yearly property tax US$2,127, no HOA fee.
+Precio solicitado US$220.000 (aproximadamente €200.000) por una casa victoriana de 1929 de aproximadamente 191 m² en el centro de Marietta, una histórica ciudad fluvial en el sudeste de Ohio. La escalera de roble, las puertas correderas, las puertas francesas vidriadas y los moldeos anchos están todos en su lugar. Tiene tres dormitorios, dos cuartos de baño (uno en la planta baja), una cocina con comedor, un comedor separado, lavandería en la planta baja y un ático con piso de madera. En el exterior hay un porche delantero, terraza trasera, jardín trasero cercado y un garaje separado de un coche. Un parque de la ciudad, la biblioteca y el sendero del río están enfrente o muy cerca. Impuesto de propiedad anual US$2.127, sin cuota HOA.
 
 https://realhunt.co/es/deal/us-marietta-oh-victorian-oak-woodwork-220k
 
@@ -162,11 +162,11 @@ https://realhunt.co/es/deal/us-tampa-8105-325k
 
 https://realhunt.co/es/deal/east-palestine-82788
 
-### Well-kept three-bedroom colonial with a metal roof in Geneva, Finger Lakes
+### Colonial de tres dormitorios bien cuidada con tejado de metal en Geneva, Finger Lakes
 
 218.100 € · Geneva, New York · 128 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
 
-Asking US$239,900 (about €218,100) for a move-in ready colonial of about 128 m² in Geneva, a small lakeside city in the Finger Lakes region of upstate New York. It has three bedrooms and two full bathrooms, one with a clawfoot tub, plus an enclosed front porch, a large kitchen with a gas range and a generously sized dining area. The furnace, tankless water heater and central air are new, and the vinyl siding and metal roof keep upkeep low. The back garden is private and has a big shed. The photos show a tidy, furnished home. Yearly property tax US$2,919, no HOA fee.
+Se pide US$239,900 (aproximadamente €218,100) por una colonial lista para entrar a vivir de aproximadamente 128 m² en Geneva, una pequeña ciudad junto al lago en la región de Finger Lakes en el norte del estado de Nueva York. Tiene tres dormitorios y dos baños completos, uno con bañera de patas, además un porche delantero cerrado, una cocina grande con estufa de gas y un comedor generosamente dimensionado. La caldera, el calentador de agua sin depósito y el aire acondicionado central son nuevos, y el revestimiento de vinilo y el tejado de metal mantienen bajo el mantenimiento. El jardín trasero es privado y tiene un gran cobertizo. Las fotos muestran una casa ordenada y amueblada. Impuesto inmobiliario anual US$2,919, sin cuota HOA.
 
 https://realhunt.co/es/deal/us-geneva-ny-finger-lakes-colonial-240k
 
@@ -234,11 +234,11 @@ Renovado con acabados modernos, espacios luminosos y acceso exterior privado en 
 
 https://realhunt.co/es/deal/us-fort-lauderdale-2455-e102-150k
 
-### Fully renovated brick rowhouse with a fenced yard in Lancaster, Pennsylvania
+### Casa adosada de ladrillo completamente renovada con patio cercado en Lancaster, Pennsylvania
 
 213.600 € · Lancaster, Pennsylvania · 127 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-18
 
-Asking US$235,000 (about €213,600) for a brick rowhouse of about 127 m² that has been redone from top to bottom. The main floor is open plan with 9-foot ceilings and vinyl plank floors, and the new kitchen has white cabinets, butcher block counters, gas cooking and all appliances. Upstairs are three bedrooms and two new bathrooms with tiled showers, one of them en suite. Gas heating, central air, a usable basement and a fenced back garden complete it. Lancaster is a historic small city in Pennsylvania Dutch country. Yearly property tax US$1,744, no HOA fee.
+Pidiendo US$235,000 (aproximadamente €213,600) por una casa adosada de ladrillo de aproximadamente 127 m² que ha sido completamente reformada. La planta principal es de planta abierta con techos de 9 pies y suelos de vinilo, y la cocina nueva tiene armarios blancos, encimeras de taco de carnicero, cocina de gas y todos los electrodomésticos. Arriba hay tres dormitorios y dos cuartos de baño nuevos con duchas de azulejo, uno de ellos en suite. Calefacción de gas, aire acondicionado central, un sótano utilizable y un jardín trasero cercado lo completan. Lancaster es una pequeña ciudad histórica en el país de los Pennsylvania Dutch. Impuesto inmobiliario anual US$1,744, sin cuota HOA.
 
 https://realhunt.co/es/deal/us-lancaster-pa-renovated-brick-rowhouse-235k
 

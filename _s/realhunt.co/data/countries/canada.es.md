@@ -101,11 +101,11 @@ Casa de planta y media y unos 107 m² en Grande-Anse, en la costa acadiana de Nu
 
 https://realhunt.co/es/deal/ca-grande-anse-99k-148091
 
-### Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia
+### Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva Escocia
 
 127.100 € · Pictou, Nova Scotia · 132 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-18
 
-Asking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the Northumberland Strait. The kitchen is brand new, with white units, wood counters and an island, and opens to a bright dining room with exposed beams. There is a large bathroom with laundry on the ground floor, and three bedrooms plus an office upstairs. The fenced back garden has a big new deck, a shed and a wired workshop. Downtown shops, cafes, the marina and the waterfront are a few steps away.
+Se pide C$199,900 (aproximadamente €127,100) por una casa de estilo cottage blanca de aproximadamente 132 m² en el corazón de Pictou, una histórica ciudad portuaria en el Estrecho de Northumberland. La cocina es completamente nueva, con muebles blancos, encimeras de madera e isla, y se abre a un comedor luminoso con vigas expuestas. Hay un baño grande con lavandería en la planta baja, y tres dormitorios más una oficina en la planta superior. El jardín trasero cercado tiene una gran terraza nueva, un cobertizo y un taller cableado. Las tiendas del centro, cafés, el puerto deportivo y la orilla están a pocos pasos.
 
 https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k
 
@@ -125,11 +125,11 @@ https://realhunt.co/es/deal/shearstown-99323
 
 https://realhunt.co/es/deal/minto-99323
 
-### Four-bedroom house on about five acres in St. Andrews by-the-Sea, New Brunswick
+### Casa de cuatro dormitorios en aproximadamente cinco acres en St. Andrews by-the-Sea, Nuevo Brunswick
 
 190.700 € · Saint Andrews, New Brunswick · 150 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
 
-Asking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of St. Andrews by-the-Sea, a well-known coastal resort town in New Brunswick. It has four bedrooms and two full bathrooms, two bedrooms on the main level and two below, a bright living room with wood floors, a kitchen with wood cabinets and large decks. The land is mostly lawn and trees, with a storage shed, and the aerial photos show the bay in the distance. Downtown shops, restaurants and the waterfront are minutes away. Yearly property tax C$3,679.
+Se pide C$299,900 (aproximadamente €190,700) por una casa blanca de aproximadamente 150 m² en aproximadamente cinco acres en las afueras de St. Andrews by-the-Sea, una conocida ciudad resort costera en Nuevo Brunswick. Tiene cuatro dormitorios y dos baños completos, dos dormitorios en el nivel principal y dos abajo, un salón luminoso con suelos de madera, una cocina con armarios de madera y amplias terrazas. El terreno es principalmente césped y árboles, con un cobertizo de almacenamiento, y las fotos aéreas muestran la bahía a la distancia. Las tiendas del centro, restaurantes y la orilla están a minutos. Impuesto inmobiliario anual C$3,679.
 
 https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 

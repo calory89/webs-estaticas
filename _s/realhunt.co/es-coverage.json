@@ -1,75 +1,92 @@
 {
- "noindex_copies": 3,
+ "noindex_copies": 7,
  "written_by_hand": {
-  "pages": 694,
-  "words": 346974,
-  "english": 30,
+  "pages": 744,
+  "words": 376021,
+  "english": 21,
   "failed": [
    {
-    "url": "https://realhunt.co/es/research/what-your-budget-buys",
-    "english": 27,
-    "words": 1465,
+    "url": "https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k",
+    "english": 15,
+    "words": 455,
     "hits": [
-     "Furnished",
-     "bedroom",
-     "house",
-     "with",
-     "in",
+     "by",
      "the",
-     "of",
-     "Furnished",
-     "bedroom",
-     "with",
-     "and",
-     "in"
+     "by",
+     "by",
+     "the",
+     "by",
+     "the",
+     "by",
+     "the",
+     "by",
+     "the",
+     "by"
     ]
    },
    {
-    "url": "https://realhunt.co/es/research/data-changelog",
-    "english": 3,
-    "words": 1110,
+    "url": "https://realhunt.co/es/deal/ca-grande-anse-99k-148091",
+    "english": 2,
+    "words": 399,
     "hits": [
-     "house",
-     "with",
-     "on"
+     "by",
+     "the"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/astle-93111",
+    "english": 2,
+    "words": 251,
+    "hits": [
+     "by",
+     "the"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/minto-99323",
+    "english": 2,
+    "words": 262,
+    "hits": [
+     "by",
+     "the"
     ]
    }
   ]
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 695,
+ "twins": 1031,
  "groups": {
   "homes": {
    "pages": 641,
-   "twins": 591,
-   "words": 57890,
-   "english": 5855,
-   "by_hand": 591,
-   "spanish_pct": 89.89
+   "twins": 641,
+   "words": 0,
+   "english": 0,
+   "by_hand": 641,
+   "spanish_pct": 0
   },
   "places": {
-   "pages": 262,
-   "twins": 262,
-   "words": 471977,
-   "english": 0,
-   "spanish_pct": 100
+   "pages": 494,
+   "twins": 488,
+   "words": 1032400,
+   "english": 56,
+   "spanish_pct": 99.99
   },
   "pages": {
    "pages": 41,
    "twins": 7,
-   "words": 2657,
-   "english": 604,
+   "words": 2731,
+   "english": 420,
    "by_hand": 2,
-   "spanish_pct": 77.27
+   "spanish_pct": 84.62
   },
   "content": {
    "pages": 582,
-   "twins": 470,
-   "words": 446394,
-   "english": 1020,
+   "twins": 580,
+   "words": 446732,
+   "english": 2,
    "by_hand": 42,
-   "spanish_pct": 99.77
+   "spanish_pct": 100
   },
   "top": {
    "pages": 434,
@@ -79,1210 +96,113 @@
    "spanish_pct": 89.02
   }
  },
- "not_published": 630,
+ "not_published": 476,
  "not_published_sample": [
   {
-   "url": "https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k",
-   "english": 134,
-   "words": 1279,
+   "url": "https://realhunt.co/homes/canada",
+   "english": 8,
+   "words": 1984,
    "hits": [
-    "house",
-    "with",
-    "new",
-    "near",
-    "the",
-    "in",
-    "house",
-    "with",
-    "new",
-    "near",
-    "the",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684",
-   "english": 128,
-   "words": 1244,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/es-fuerteventura-costa-antigua-duplex-pool-180k",
-   "english": 120,
-   "words": 1233,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-marche-amandola-restored-brick-house-109k",
-   "english": 119,
-   "words": 1129,
-   "hits": [
-    "house",
-    "with",
-    "in",
-    "the",
-    "of",
-    "house",
-    "with",
-    "in",
-    "the",
-    "of",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k",
-   "english": 117,
-   "words": 1147,
-   "hits": [
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "the",
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "the",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/at-neudau-renovated-semi-detached-house-149k",
-   "english": 133,
-   "words": 695,
-   "hits": [
-    "renovated",
-    "house",
-    "with",
-    "in",
-    "country",
-    "renovated",
-    "house",
-    "with",
-    "in",
-    "country",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k",
-   "english": 98,
-   "words": 1154,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "near",
-    "bedroom",
-    "with",
-    "and",
-    "near",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/mx-mazatlan-three-bed-house-gated-pool-2-9m",
-   "english": 114,
-   "words": 1221,
-   "hits": [
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k",
-   "english": 129,
-   "words": 1103,
-   "hits": [
-    "renovated",
-    "bedroom",
-    "house",
-    "in",
-    "near",
-    "renovated",
-    "bedroom",
-    "house",
-    "in",
-    "near",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k",
-   "english": 111,
-   "words": 1203,
-   "hits": [
-    "Renovated",
-    "with",
-    "in",
-    "the",
-    "of",
-    "Renovated",
-    "with",
-    "in",
-    "the",
-    "of",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pt-douro-lamego-samodaes-river-view-house-99k",
-   "english": 117,
-   "words": 1100,
-   "hits": [
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "furnished",
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "furnished",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k",
-   "english": 134,
-   "words": 1149,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "the",
-    "of",
-    "Furnished",
-    "bedroom",
-    "house",
-    "with",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k",
-   "english": 135,
-   "words": 1191,
-   "hits": [
-    "renovated",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "renovated",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k",
-   "english": 99,
-   "words": 1096,
-   "hits": [
-    "with",
-    "and",
-    "above",
-    "with",
-    "and",
-    "above",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k",
-   "english": 141,
-   "words": 1145,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-sicily-collesano-madonie-four-bed-house-115k",
-   "english": 147,
-   "words": 1070,
-   "hits": [
-    "to",
-    "in",
-    "at",
-    "in",
-    "the",
-    "near",
-    "to",
-    "in",
-    "at",
-    "in",
-    "the",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k",
-   "english": 108,
-   "words": 1130,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/gr-crete-karydi-renovated-stone-house-175k",
-   "english": 129,
-   "words": 1188,
-   "hits": [
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k",
-   "english": 100,
-   "words": 1121,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/es-costa-blanca-la-marina-townhouse-160k",
-   "english": 110,
-   "words": 1221,
-   "hits": [
-    "bedroom",
-    "with",
-    "in",
-    "bedroom",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k",
-   "english": 101,
-   "words": 1247,
-   "hits": [
-    "renovated",
-    "with",
-    "in",
-    "renovated",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-puglia-francavilla-fontana-country-home-139k",
-   "english": 127,
-   "words": 1124,
-   "hits": [
-    "Renovated",
-    "bedroom",
-    "country",
-    "house",
-    "on",
-    "of",
-    "near",
-    "Renovated",
-    "bedroom",
-    "country",
-    "house",
-    "on"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k",
-   "english": 107,
-   "words": 1276,
-   "hits": [
-    "house",
-    "with",
-    "in",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874",
-   "english": 113,
-   "words": 1176,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/fr-frayssinet-lot-stone-village-house-125k",
-   "english": 113,
-   "words": 1200,
-   "hits": [
-    "house",
-    "with",
-    "and",
-    "in",
-    "house",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pt-minho-bravaes-restored-stone-house-156k",
-   "english": 99,
-   "words": 1119,
-   "hits": [
-    "house",
-    "with",
-    "in",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-liguria-cipressa-sea-view-flat-aregai-170k",
-   "english": 118,
-   "words": 1167,
-   "hits": [
-    "with",
-    "near",
-    "the",
-    "in",
-    "with",
-    "near",
-    "the",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek",
-   "english": 115,
-   "words": 1172,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k",
-   "english": 138,
-   "words": 737,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "near",
-    "the",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "near",
-    "the",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k",
-   "english": 142,
-   "words": 1268,
-   "hits": [
-    "bedroom",
-    "house",
-    "on",
-    "about",
-    "in",
     "by",
     "the",
-    "bedroom",
-    "house",
-    "on",
-    "about",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m",
-   "english": 126,
-   "words": 1227,
-   "hits": [
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-rosignano-marittimo-sea-view-village-flat-125k",
-   "english": 130,
-   "words": 1123,
-   "hits": [
-    "Renovated",
-    "home",
-    "with",
+    "by",
     "the",
-    "in",
-    "Renovated",
-    "home",
-    "with",
+    "by",
     "the",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek",
-   "english": 103,
-   "words": 1153,
-   "hits": [
-    "with",
-    "and",
-    "in",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
+    "by",
     "the"
    ]
   },
   {
-   "url": "https://realhunt.co/deal/gr-laconia-gytheio-renovated-country-house-85k",
-   "english": 117,
-   "words": 1219,
-   "hits": [
-    "Renovated",
-    "country",
-    "house",
-    "near",
-    "Renovated",
-    "country",
-    "house",
-    "near",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867",
-   "english": 111,
-   "words": 1275,
-   "hits": [
-    "with",
-    "and",
-    "in",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/th-chiang-mai-2-bed-pool-condo-77k-5379536",
-   "english": 123,
-   "words": 770,
-   "hits": [
-    "Renovated",
-    "bedroom",
-    "with",
-    "and",
-    "near",
-    "Renovated",
-    "bedroom",
-    "with",
-    "and",
-    "near",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034",
-   "english": 102,
-   "words": 1110,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "fee",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "fee",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/es-asturias-quiros-ricabo-mountain-house-180k",
-   "english": 131,
-   "words": 1103,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "Furnished",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-sardinia-soddi-lake-omodeo-view-house-150k",
-   "english": 91,
-   "words": 1097,
-   "hits": [
-    "house",
-    "with",
-    "house",
-    "with",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the",
-    "best",
-    "homes"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606",
-   "english": 124,
-   "words": 1240,
-   "hits": [
-    "House",
-    "in",
-    "on",
-    "near",
-    "the",
-    "in",
-    "House",
-    "in",
-    "on",
-    "near",
-    "the",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k",
-   "english": 101,
-   "words": 1295,
-   "hits": [
-    "bedroom",
-    "with",
-    "in",
-    "bedroom",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k",
-   "english": 93,
-   "words": 1194,
-   "hits": [
-    "with",
-    "in",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the",
-    "best",
-    "homes"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k",
-   "english": 115,
-   "words": 1108,
-   "hits": [
-    "Renovated",
-    "bedroom",
-    "in",
-    "Renovated",
-    "bedroom",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/it-umbria-cascia-stone-house-valley-view-130k",
-   "english": 119,
-   "words": 1083,
-   "hits": [
-    "house",
-    "with",
-    "and",
-    "near",
-    "house",
-    "with",
-    "and",
-    "near",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/es-almunecar-los-pinos-sea-view-pool-flat-149k",
-   "english": 122,
-   "words": 1241,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k",
-   "english": 119,
-   "words": 1251,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/jp-awaji-misawa-house-54k-788413",
-   "english": 96,
-   "words": 1232,
-   "hits": [
-    "house",
-    "with",
-    "on",
-    "house",
-    "with",
-    "on",
-    "for",
-    "Scored",
-    "and",
-    "ranked",
-    "on",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k",
-   "english": 127,
-   "words": 1283,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "at",
-    "the",
-    "of",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "at"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk",
-   "english": 105,
-   "words": 1288,
-   "hits": [
-    "in",
-    "with",
-    "and",
-    "near",
-    "in",
-    "with",
-    "and",
-    "near",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k",
-   "english": 104,
-   "words": 1293,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "with",
-    "in",
-    "Furnished",
-    "bedroom",
-    "with",
-    "in",
-    "for",
-    "Scored",
-    "and",
-    "ranked"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/morizon-pl",
-   "english": 6,
-   "words": 976,
-   "hits": [
-    "with",
-    "and",
-    "in",
-    "with",
-    "and",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/bienici-com",
-   "english": 22,
-   "words": 1049,
-   "hits": [
-    "renovated",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "Renovated",
-    "with",
-    "in",
-    "the",
-    "of",
-    "renovated"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/coldwellbanker-com",
-   "english": 18,
-   "words": 1089,
-   "hits": [
-    "house",
-    "with",
-    "in",
-    "bedroom",
-    "with",
-    "in",
-    "renovated",
-    "with",
-    "in",
-    "house",
-    "with",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/green-acres-it",
-   "english": 90,
-   "words": 783,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "with",
-    "and",
-    "in",
-    "with",
-    "and",
-    "above"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/green-acres-gr",
-   "english": 50,
-   "words": 564,
-   "hits": [
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "Renovated",
-    "country",
-    "house",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/imovirtual-com",
-   "english": 26,
-   "words": 612,
-   "hits": [
-    "Renovated",
-    "house",
-    "with",
-    "in",
-    "furnished",
-    "renovated",
-    "bedroom",
-    "house",
-    "in",
-    "near",
-    "house",
-    "with"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/casasyterrenos-com",
-   "english": 20,
-   "words": 343,
-   "hits": [
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "bedroom",
-    "house",
-    "in",
-    "with",
-    "in",
-    "bedroom",
-    "house"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/rightmove-co-uk",
-   "english": 20,
-   "words": 386,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "Furnished",
-    "bedroom"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/suumo-jp",
-   "english": 18,
-   "words": 237,
-   "hits": [
-    "house",
-    "with",
-    "on",
-    "House",
-    "in",
-    "on",
-    "near",
-    "the",
-    "in",
-    "house",
-    "with",
-    "on"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/green-acres-es",
-   "english": 32,
-   "words": 242,
-   "hits": [
-    "Furnished",
-    "bedroom",
-    "house",
-    "with",
-    "in",
-    "bedroom",
-    "with",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/supercasas-com",
+   "url": "https://realhunt.co/homes/canada/by-the-sea",
    "english": 8,
-   "words": 239,
+   "words": 1435,
    "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "near",
-    "bedroom",
-    "with",
-    "and",
-    "near"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/bulgarianproperties-com",
-   "english": 10,
-   "words": 174,
-   "hits": [
-    "bedroom",
-    "with",
-    "and",
-    "fee",
-    "in",
-    "bedroom",
-    "with",
-    "and",
-    "fee",
-    "in"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/sources/green-acres-pt",
-   "english": 16,
-   "words": 168,
-   "hits": [
-    "Renovated",
-    "house",
-    "with",
-    "in",
+    "by",
     "the",
-    "Renovated",
-    "bedroom",
-    "in",
-    "Renovated",
-    "house",
-    "with",
-    "in"
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/homes/canada/new-brunswick",
+   "english": 12,
+   "words": 1176,
+   "hits": [
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-canada",
+   "english": 10,
+   "words": 1111,
+   "hits": [
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-canada",
+   "english": 10,
+   "words": 1191,
+   "hits": [
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/homes/canada/atlantic-canada",
+   "english": 8,
+   "words": 1507,
+   "hits": [
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
    ]
   },
   {
    "url": "https://realhunt.co/new",
-   "english": 186,
-   "words": 910,
+   "english": 2,
+   "words": 984,
    "hits": [
-    "house",
-    "with",
-    "new",
-    "near",
-    "the",
-    "in",
-    "Furnished",
-    "bedroom",
-    "with",
-    "and",
-    "in",
-    "bedroom"
+    "by",
+    "the"
    ]
   },
   {
@@ -6484,6 +5404,930 @@
    "url": "https://realhunt.co/top/batumi/giorgi-antsukhelidze-st-81-airport-batumi",
    "english": 9,
    "words": 99,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/red-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/angisa-development-angisa-st-47-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sea-zone-makhinjauri-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/life-style-airport-batumi",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/gwg-batumi-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ande-metropolis-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/queen-s-residence-airport-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/royal-residence-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aleksandre-sulaberidze-st-84-javakhishvili-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/prime-residence-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aqua-hotel-apartments-airport-batumi",
+   "english": 9,
+   "words": 97,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/oxy-residence-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/angisa-1st-lane-12a-20-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 104,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ande-tower-2-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/monogram-airport-batumi",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/next-magnolia-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bana-development-makhinjauri-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sport-city-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/skylux-batumi-residence-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/white-house-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/arcon-batumi-residence-khimshiashvili-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bluesky-tower-khimshiashvili-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/stay-rent-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/geobuilding-gorgasali-rustaveli-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/aisi-batumi-airport-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/semira-tolia-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/bagrationi-residence-batumi-javakhishvili-batumi",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/artex-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/guru-status-airport-batumi",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/a-sector-megobroba-makhinjauri-batumi",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sunway-suites-airport-batumi",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/niko-pirosmani-st-15-khimshiashvili-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/tbel-abuseridze-st-24a-batumi-batumi",
+   "english": 13,
+   "words": 99,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/grand-tower-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/lux-golden-wave-airport-batumi",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/sea-hills-makhinjauri-batumi",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/horizon-grand-residence-airport-batumi",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/accent-javakhishvili-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/gate-by-artex-airport-batumi",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/ikon-batumi-boulevard-batumi",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/semira-time-agmashenebeli-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/origami-town-bagrationi-batumi",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/one-khimshiashvili-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/elysium-kakhaberi-batumi",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/vertikal-khimshiashvili-batumi",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/thalassa-group-makhinjauri-batumi",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/maisi-batumi-batumi",
+   "english": 13,
+   "words": 79,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/kutkhe-batumi-batumi",
+   "english": 13,
+   "words": 82,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/metro-city-residence-airport-batumi",
+   "english": 9,
+   "words": 100,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/avangard-seaside-area-airport-batumi",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/jm-tower-bagrationi-batumi",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/history-home-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/the-parallel-batumi-batumi",
+   "english": 13,
+   "words": 84,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/uniq-residence-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/modern-ultra-bagrationi-batumi",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/next-address-khimshiashvili-batumi",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/serenade-airport-batumi",
+   "english": 9,
+   "words": 78,
    "hits": [
     "Ranked",
     "in",

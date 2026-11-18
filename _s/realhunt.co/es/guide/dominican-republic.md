@@ -33,8 +33,9 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado en el extranjero a 
 - [187.800 € · Piso amueblado en primera línea en Juan Dolio con balcón con vistas al mar](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359) · Juan Dolio, San Pedro de Macorís · nota 89 · 82 m² · 2 dorm.
 - [223.600 € · Piso en primera línea de playa en Juan Dolio con piscina y jacuzzi](https://realhunt.co/es/deal/dr-juan-dolio-224k-447078) · Juan Dolio, San Pedro de Macorís · nota 88 · 105 m² · 2 dorm.
 - [201.200 € · Piso amueblado frente al mar en Playa Las Ballenas, Las Terrenas](https://realhunt.co/es/deal/dr-las-terrenas-201k-439030) · Las Terrenas, Samaná · nota 87 · 2 dorm.
+- [150.000 € · Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto Plata](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k) · Puerto Plata, Puerto Plata · nota 84 · 103 m² · 2 dorm.
 
-[Las 4 casas en la República Dominicana](https://realhunt.co/es/homes/dominican-republic)
+[Las 5 casas en la República Dominicana](https://realhunt.co/es/homes/dominican-republic)
 
 [Gastos, impuestos y fuentes de República Dominicana](https://realhunt.co/es/costs/dominican-republic) · [Calculadora de gastos de compra para República Dominicana](https://realhunt.co/es/buying-costs/dominican-republic) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -46,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado en el extranjero a 
 - [República Dominicana vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-dominican-republic)
 - [República Dominicana vs Francia](https://realhunt.co/es/countries/dominican-republic-vs-france)
 - [República Dominicana vs Suecia](https://realhunt.co/es/countries/dominican-republic-vs-sweden)
-- [República Dominicana vs Polonia](https://realhunt.co/es/countries/dominican-republic-vs-poland)
 - [República Dominicana vs Japón](https://realhunt.co/es/countries/dominican-republic-vs-japan)
+- [República Dominicana vs Polonia](https://realhunt.co/es/countries/dominican-republic-vs-poland)
 
 ### Fuentes
 

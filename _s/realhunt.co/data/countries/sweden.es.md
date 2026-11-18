@@ -153,11 +153,11 @@ Vistas al lago, el bosque a la puerta y una casa que ya viene con algunas mejora
 
 https://realhunt.co/es/deal/DcIDShNij6M
 
-### 1920s villa with geothermal heating and a private garden in central Vansbro, Dalarna
+### Villa de los años 20 con calefacción geotérmica y jardín privado en el centro de Vansbro, Dalarna
 
 77.000 € · Vansbro, Dalarna · 122 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-18
 
-A 1920s house in the middle of Vansbro, on the Västerdal river in Dalarna, with a sheltered 1,651 m² plot next to a playground. 122 m² with five rooms, three of them bedrooms, a separate dining room, a bright living room with a stove and a bathroom between the two upstairs bedrooms. Geothermal heating was installed in 2019, the incoming water pipe was renewed in 2023 and the windows are triple glazed. School, shops, pharmacy, swimming pool and the bus and railway station are within walking distance. Freehold. Asking 850,000 SEK (about €77,000), around €630/m².
+Una casa de los años 20 en el centro de Vansbro, en el río Västerdal en Dalarna, con una parcela protegida de 1.651 m² al lado de un parque infantil. 122 m² con cinco habitaciones, tres de ellas dormitorios, un comedor separado, un luminoso salón con estufa y un baño entre los dos dormitorios de planta alta. Calefacción geotérmica instalada en 2019, la tubería de entrada de agua renovada en 2023 y ventanas de triple acristalamiento. Escuela, tiendas, farmacia, piscina y las estaciones de autobús y tren están a distancia de paseo. Propiedad absoluta. Se pide 850.000 SEK (alrededor de 77.000 €), alrededor de 630 €/m².
 
 https://realhunt.co/es/deal/se-vansbro-1920s-villa-geothermal-850k-sek
 
@@ -233,11 +233,11 @@ Cerca del lago Mellansjön y rodeada de bosque, la propiedad tiene una casita pr
 
 https://realhunt.co/es/deal/DczrZZlCl9L
 
-### Red wooden three-bedroom house with conservatory and greenhouse in Arbrå, Hälsingland
+### Casa de madera roja de tres dormitorios con invernadero y galería en Arbrå, Hälsingland
 
 72.000 € · Arbrå, Gävleborg · 108 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
 
-A classic red wooden house with white corners in a central, child-friendly part of Arbrå, in Hälsingland. 108 m² on one and a half floors with four rooms, three of them bedrooms, a modern fully equipped kitchen, a shower room downstairs and a bathroom with bath upstairs. Surfaces have been renovated over time, two sides of the facade were painted in 2025 and the dishwasher is new in 2026. Glazed conservatory, greenhouse and carport on a 515 m² plot, district heating. Freehold. Asking 795,000 SEK (about €72,000), around €670/m². Running costs 37,524 SEK a year (about €3,400) plus property fee 4,920 SEK.
+Una clásica casa de madera roja con esquinas blancas en una parte central y apta para niños de Arbrå, en Hälsingland. 108 m² en uno y medio pisos con cuatro habitaciones, tres de ellas dormitorios, una cocina moderna completamente equipada, un cuarto de ducha en la planta baja y un baño con bañera arriba. Las superficies han sido renovadas a lo largo del tiempo, dos lados de la fachada fueron pintados en 2025 y el lavavajillas es nuevo en 2026. Galería acristalada, invernadero y marquesina en una parcela de 515 m², calefacción por red. Propiedad absoluta. Pidiendo 795.000 SEK (aproximadamente 72.000 €), alrededor de 670 €/m². Costes de funcionamiento 37.524 SEK al año (aproximadamente 3.400 €) más cuota de propiedad 4.920 SEK.
 
 https://realhunt.co/es/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 

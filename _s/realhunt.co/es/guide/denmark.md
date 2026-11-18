@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Un no residente que alquila una vivien
 - [93.200 € · Villa de seis habitaciones de 1877 con bomba de calor en Hjerm](https://realhunt.co/es/deal/dk-hjerm-93k-04870b) · Hjerm, Jutlandia Occidental · nota 93 · 177 m² · 5 dorm.
 - [93.000 € · Villa luminosa de 130 m² con jardín grande en Døjringe, centro de Selandia](https://realhunt.co/es/deal/dk-munke-bjergby-93k-1947) · Døjringe, Munke Bjergby (a unos 60 min de Copenhague) · nota 93 · 130 m² · 3 dorm.
 
-[Las 46 casas en Dinamarca](https://realhunt.co/homes/denmark)
+[Las 46 casas en Dinamarca](https://realhunt.co/es/homes/denmark)
 
 [Gastos, impuestos y fuentes de Dinamarca](https://realhunt.co/es/costs/denmark) · [Calculadora de gastos de compra para Dinamarca](https://realhunt.co/es/buying-costs/denmark) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

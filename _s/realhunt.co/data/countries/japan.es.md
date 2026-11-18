@@ -259,11 +259,11 @@ Construida en 2001 y reformada por dentro y por fuera: 3 dormitorios más traste
 
 https://realhunt.co/es/deal/jp-fuji-66k-852751
 
-### Misawa-built family house with a partial sea view on Awaji Island, Hyogo
+### Casa familiar construida por Misawa con vista parcial al mar en la isla de Awaji, Hyogo
 
 54.300 € · Fukakusa, Awaji, Hyogo · 91 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
 
-Built in October 2000 by Misawa Homes and, according to the agent, carefully used inside. 91 m² with three bedrooms, a living room of over 15 tatami and a wooden deck in the garden, on a 152 m² freehold plot in a holiday-home area of Fukakusa on Awaji Island. The outer walls and roof were redone in 2015. Part of the sea can be seen from the upper floor and Shintoshi bathing beach is about 3.8 km away. Immediate handover. Asking ¥9,500,000 (about €54,300), around €600/m².
+Construida en octubre de 2000 por Misawa Homes y, según el agente, utilizada cuidadosamente en el interior. 91 m² con tres dormitorios, una sala de estar de más de 15 tatami y una terraza de madera en el jardín, en una parcela de 200 m² en propiedad absoluta en una zona de casas vacacionales de Fukakusa en la isla de Awaji. Las paredes exteriores y el techo fueron reformados en 2015. Parte del mar puede verse desde la planta superior y la playa de baños de Shintoshi está aproximadamente a 3,8 km de distancia. Entrega inmediata. Precio solicitado ¥9.500.000 (aproximadamente €54.300), alrededor de €600/m².
 
 https://realhunt.co/es/deal/jp-awaji-misawa-house-54k-788413
 
@@ -291,11 +291,11 @@ Una auténtica casa de estilo japonés de una sola planta con un amplio engawa q
 
 https://realhunt.co/es/deal/DbA4_hKEThx
 
-### House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie
+### Casa construida en 2018 en una parcela de 1.181 m² cerca del mar en Shima, Mie
 
 84.500 € · Ago-cho Tategami, Shima, Mie · 106 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
 
-A two-storey wooden house finished in January 2018, far newer than most homes at this price. 106 m² with two bedrooms plus a storage room and a living, dining and kitchen space of over 20 tatami, on a 1,181 m² freehold plot in Ago-cho Tategami, in the Ise-Shima area of Mie. The advert lists the sea within 2 km, mountain views, a supermarket within a 10 minute walk and parking for three or more cars. Water comes from a well and there is a septic tank. Asking ¥14,800,000 (about €84,500), roughly €800/m².
+Una casa de madera de dos plantas terminada en enero de 2018, mucho más nueva que la mayoría de casas a este precio. 106 m² con dos dormitorios más una trastería y un espacio de salón, comedor y cocina de más de 20 tatami, en una parcela de 1.181 m² en propiedad absoluta en Ago-cho Tategami, en la zona de Ise-Shima en Mie. El anuncio menciona el mar a menos de 2 km, vistas a la montaña, un supermercado a 10 minutos a pie y aparcamiento para tres o más coches. El agua proviene de un pozo y hay una fosa séptica. Se pide 14.800.000 ¥ (alrededor de 84.500 €), aproximadamente 800 €/m².
 
 https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
 

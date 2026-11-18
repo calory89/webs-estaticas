@@ -253,11 +253,11 @@ Casa con vistas al mar por 49.000 € en Sicilia, Italia 87 m² · 2 dormitorios
 
 https://realhunt.co/es/deal/Dclv5CJDdhi
 
-### Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, Calabria
+### Casa costera de tres dormitorios con patio pavimentado en Torremezzo di Falconara, Calabria
 
 85.000 € · Torremezzo, Falconara Albanese, Calabria · 101 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-18
 
-A semi-detached house of 101 m² in Torremezzo, the seaside part of Falconara Albanese on the Tyrrhenian coast of Calabria. The advert gives its condition as excellent: four rooms on the ground floor with a separate fitted kitchen, three bedrooms and two bathrooms. Outside there is a covered veranda with room for a table and armchairs, a large paved courtyard with a garden corner, and a bedroom annex with a timber ceiling. The photos show it furnished and well kept, with tiled floors and wooden shutters. Asking €85,000, about €840/m². Energy class G.
+Una casa pareada de 101 m² en Torremezzo, la parte costera de Falconara Albanese en la costa del Tirreno de Calabria. El anuncio describe su estado como excelente: cuatro habitaciones en la planta baja con cocina equipada separada, tres dormitorios y dos baños. En el exterior hay una terraza cubierta con espacio para mesa y sillones, un patio grande pavimentado con una esquina de jardín, y un anexo de dormitorio con techo de madera. Las fotos la muestran amueblada y bien cuidada, con suelos de baldosas y persianas de madera. Se pide €85,000, aproximadamente €840/m². Clase energética G.
 
 https://realhunt.co/es/deal/it-calabria-torremezzo-three-bed-courtyard-85k
 
@@ -309,11 +309,11 @@ https://realhunt.co/es/deal/Dc_kLRrDKqS
 
 https://realhunt.co/es/deal/lake-como-peglio-85000
 
-### Four-bedroom village house with a guest flat and covered terrace in Secinaro, Abruzzo
+### Casa de pueblo de cuatro dormitorios con piso de huéspedes y terraza cubierta en Secinaro, Abruzzo
 
 95.000 € · Secinaro, Abruzzo · 171 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
 
-A large house in the mountain village of Secinaro, made by joining three small flats, 171 m² in all. One part still works as a separate guest flat with its own living room, kitchen, bathroom and a bedroom with a balcony. The main home has vaulted ceilings, a kitchen with a dining room, a living room with a fireplace, further bedrooms and bathrooms, and balconies looking over the valley. A covered terrace at the entrance faces the village and the mountains. Furnished and lived in, with several entrances. The Sirente-Velino park starts at the edge of the village. Asking €95,000, about €555/m².
+Una casa grande en el pueblo de montaña de Secinaro, hecha uniendo tres pequeños pisos, 171 m² en total. Una parte sigue funcionando como piso de huéspedes separado con su propio salón, cocina, baño y un dormitorio con balcón. La vivienda principal tiene techos abovedados, una cocina con comedor, un salón con chimenea, otros dormitorios y baños, y balcones con vistas al valle. Una terraza cubierta en la entrada mira hacia el pueblo y las montañas. Amueblada y habitada, con varias entradas. El parque Sirente-Velino comienza en las afueras del pueblo. Se pide €95,000, aproximadamente €555/m².
 
 https://realhunt.co/es/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 
@@ -365,19 +365,19 @@ Llena de encanto rústico, esta casa tradicional de piedra en Colfelice, Frosino
 
 https://realhunt.co/es/deal/Dc26pZMj0VD
 
-### Beamed stone duplex with a lake-view garden and garage above Lake Iseo, Parzanica
+### Dúplex de piedra con vigas y jardín con vistas al lago y garaje encima del lago Iseo, Parzanica
 
 100.000 € · Parzanica, Lake Iseo, Lombardy · 80 m² · 1 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
 
-A two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo. The ground floor has a living room under exposed beams, an eat-in kitchen with a fireplace and a guest toilet. A timber staircase leads to a double bedroom and a shower room below a pitched wooden ceiling. A small private garden looks straight down on the lake and Monte Isola, and a single garage is included. Built in 2000, energy class G. Asking €100,000 after a price cut of about 17%.
+Un apartamento de dos pisos de 80 m² en el pueblo de piedra de Parzanica, 750 metros de altitud y, según el anuncio, a diez minutos en coche del lago Iseo. La planta baja tiene una sala de estar bajo vigas expuestas, una cocina con comedor y chimenea y un aseo de invitados. Una escalera de madera lleva a un dormitorio doble y un cuarto de ducha bajo un techo de madera inclinada. Un pequeño jardín privado mira directamente al lago y Monte Isola, e incluye un garaje individual. Construido en 2000, clase energética G. Precio solicitado €100.000 después de una rebaja de precio de aproximadamente 17%.
 
 https://realhunt.co/es/deal/it-lake-iseo-parzanica-beamed-duplex-100k
 
-### Bright three-floor house with terraces facing Lake Omodeo in Soddì, Sardinia
+### Casa luminosa de tres plantas con terrazas frente al lago Omodeo en Soddì, Cerdeña
 
 150.000 € · Soddì, Oristano, Sardinia · 150 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
 
-A large, light house in Soddì, a village of about 100 people in central Sardinia, facing Lake Omodeo. About 150 m2 on three floors: hall, kitchen, living room and bathroom at entry level, a main bedroom with a lake-view balcony, two smaller bedrooms and a second bathroom upstairs, and two cellar rooms below, one set up with sofas, a fireplace and a pizza oven. Two terraces, two air conditioning units, and the advert states the roof is in perfect condition with no leaks and the paperwork in order. The rear terrace needs a refresh.
+Una casa grande y luminosa en Soddì, un pueblo de alrededor de 100 personas en el centro de Cerdeña, frente al lago Omodeo. Alrededor de 150 m² en tres plantas: recibidor, cocina, salón y baño en la entrada, un dormitorio principal con balcón con vistas al lago, dos dormitorios más pequeños y un segundo baño arriba, y dos cuartos de sótano abajo, uno equipado con sofás, chimenea y horno de pizza. Dos terrazas, dos unidades de aire acondicionado, y el anuncio indica que el techo está en perfecto estado sin goteras y la documentación en orden. La terraza trasera necesita renovación.
 
 https://realhunt.co/es/deal/it-sardinia-soddi-lake-omodeo-view-house-150k
 
@@ -437,19 +437,19 @@ Un stazzo tradicional de Gallura en el centro histórico de Luras, al norte de C
 
 https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k
 
-### Four-level town house ready to live in at Collesano, in the Madonie hills near Cefalù
+### Casa urbana de cuatro niveles lista para vivir en Collesano, en las colinas de Madonie cerca de Cefalù
 
 115.000 € · Collesano, Sicily · 200 m² · 4 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
 
-A terraced house on four levels in the centre of Collesano, a town inside the Madonie Park near Cefalù. The advert describes it as bright, in excellent condition and ready to live in at once. Two big storerooms with two toilets on the ground floor, two large rooms and a bathroom on the first, a bedroom, a master bedroom and a bathroom on the second, and on top a kitchen and living room under timber ceilings with a balcony facing the mountains. The agent gives about 220 m² in the text and 200 m² in the details. Asking €115,000, under €600/m².
+Una casa adosada de cuatro niveles en el centro de Collesano, un pueblo dentro del Parque de Madonie cerca de Cefalù. El anuncio la describe como luminosa, en excelente estado y lista para vivir de inmediato. Dos grandes trasteros con dos aseos en la planta baja, dos habitaciones grandes y un baño en la primera, un dormitorio, un dormitorio principal y un baño en la segunda, y en la parte superior una cocina y sala de estar bajo techos de madera con un balcón orientado a las montañas. El agente indica aproximadamente 220 m² en el texto y 200 m² en los detalles. Pidiendo 115.000 €, menos de 600 €/m².
 
 https://realhunt.co/es/deal/it-sicily-collesano-madonie-four-bed-house-115k
 
-### Renovated one-bedroom country house on 4,000 m² of land near Francavilla Fontana, Puglia
+### Casa de campo renovada de un dormitorio en 4.000 m² de terreno cerca de Francavilla Fontana, Puglia
 
 139.000 € · Francavilla Fontana, Puglia · 85 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
 
-A single-storey country house of about 85 m² on 4,000 m² of gated private land with olive trees, around 10 minutes from Francavilla Fontana. The inside has been redone in a modern style: an open living room with a fitted kitchen and breakfast bar, a double bedroom, a tiled shower room with washer and dryer, air conditioning and a wood stove. Outside there are gravel terraces, a hammock under the trees and a sun-lounger corner. The owner puts Brindisi airport 25 to 30 minutes away, with both the Adriatic and Ionian coasts in easy reach. Private sale. Asking €139,000.
+Una casa de campo de una sola planta de aproximadamente 85 m² en 4.000 m² de terreno privado cercado con olivos, alrededor de 10 minutos de Francavilla Fontana. El interior ha sido reformado con un estilo moderno: una sala de estar abierta con cocina equipada y barra para desayunar, un dormitorio doble, un cuarto de ducha alicatado con lavadora y secadora, aire acondicionado y estufa de leña. En el exterior hay terrazas de grava, una hamaca bajo los árboles y una zona de tumbona. El propietario sitúa el aeropuerto de Brindisi a 25 a 30 minutos de distancia, con ambas costas, Adriática e Jónica, fácilmente accesibles. Venta privada. Precio solicitado €139.000.
 
 https://realhunt.co/es/deal/it-puglia-francavilla-fontana-country-home-139k
 
@@ -493,19 +493,19 @@ En un tranquilo pueblo en lo alto de una colina en la Toscana, esta casa luminos
 
 https://realhunt.co/es/deal/DdLhHoAESiS
 
-### Restored brick house with courtyard in the old centre of Amandola, Le Marche
+### Casa de ladrillo restaurada con patio en el centro antiguo de Amandola, Le Marche
 
 109.000 € · Amandola, Le Marche · 85 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
 
-An independent brick house in the historic centre of Amandola, at the foot of the Sibillini mountains, fully restored with an anti-seismic structure according to the advert. About 85 m2 over four levels: a living and dining room with kitchenette and a shower room on the entry floor, two double bedrooms and a second bathroom above, an attic used as a studio and a cellar with a cave cut into the rock. It has a small private courtyard, double glazing and radiators on town gas. The upper floor has its own street door. Energy class G.
+Una casa de ladrillo independiente en el centro histórico de Amandola, al pie de las montañas Sibillini, completamente restaurada con estructura antisísmica según el anuncio. Aproximadamente 85 m2 distribuidos en cuatro niveles: una sala de estar y comedor con cocina americana y cuarto de ducha en la planta de entrada, dos dormitorios dobles y un segundo baño arriba, una buhardilla utilizada como estudio y una bodega con una cueva excavada en la roca. Tiene un pequeño patio privado, ventanas de doble acristalamiento y radiadores con gas ciudad. La planta superior tiene su propia puerta de acceso a la calle. Clase energética G.
 
 https://realhunt.co/es/deal/it-marche-amandola-restored-brick-house-109k
 
-### Detached stone house with garden and valley views near Cascia, Umbria
+### Casa de piedra independiente con jardín y vistas al valle cerca de Cascia, Umbría
 
 130.000 € · Colforcella, Cascia, Umbria · 84 m² · 1 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
 
-A detached stone house built in 2006, so it has the look of an old Umbrian cottage without the old-house problems. It stands at the edge of the hamlet of Colforcella, about 3 km from Cascia, on roughly 600 m2 of its own land with open views over the valley and hills. Inside are about 84 m2 on two floors: two living areas with fireplaces, a fitted kitchen, one double bedroom and two bathrooms, with beams and terracotta floors. Gas heating, private parking and a small store. Sold fully furnished by the owner and described as ready to use.
+Una casa de piedra construida en 2006, así que tiene el aspecto de una cabaña umbra antigua sin los problemas de las casas antiguas. Está al borde de la aldea de Colforcella, alrededor de 3 km de Cascia, en aproximadamente 600 m² de terreno propio con vistas abiertas al valle y las colinas. Dentro hay alrededor de 84 m² en dos plantas: dos salones con chimeneas, una cocina equipada, un dormitorio doble y dos baños, con vigas y suelos de terracota. Calefacción de gas, aparcamiento privado y una pequeña tienda. Vendida completamente amueblada por el propietario y descrita como lista para usar.
 
 https://realhunt.co/es/deal/it-umbria-cascia-stone-house-valley-view-130k
 
@@ -533,19 +533,19 @@ En un pueblo con encanto en lo alto de una colina, esta casa toscana llena de ca
 
 https://realhunt.co/es/deal/DcdKWJrleVQ
 
-### Renovated village home with sea views below the castle in Rosignano Marittimo, Tuscany
+### Casa de pueblo renovada con vistas al mar bajo el castillo en Rosignano Marittimo, Toscana
 
 125.000 € · Rosignano Marittimo, Tuscany · 58 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
 
-A recently renovated home of 58 m² in the medieval centre of Rosignano Marittimo, at the foot of the castle, with its own street door and windows on all four sides. Beamed ceilings, an open living room with a fitted kitchen that is included in the price, a double bedroom with a storage mezzanine and a large shower room. Several windows look across the rooftops to the Tyrrhenian Sea. Heat pump for heating and cooling, new double-glazed windows, residents' parking a short walk away. Ready to move into. Asking €125,000. The advert states there are no condominium fees.
+Una casa recientemente renovada de 58 m² en el centro medieval de Rosignano Marittimo, al pie del castillo, con su propia puerta de acceso a la calle y ventanas en los cuatro lados. Techos con vigas, una sala de estar abierta con una cocina equipada que está incluida en el precio, un dormitorio doble con un altillo de almacenamiento y un amplio cuarto de ducha. Varias ventanas dan vistas sobre los tejados al mar Tirreno. Bomba de calor para calefacción y refrigeración, ventanas nuevas de doble acristalamiento, aparcamiento para residentes a poca distancia. Listo para mudarse. Pidiendo 125.000 €. El anuncio declara que no hay cuotas de comunidad.
 
 https://realhunt.co/es/deal/it-rosignano-marittimo-sea-view-village-flat-125k
 
-### Sea-view flat with two balconies near the Aregai marina in Cipressa, Liguria
+### Piso con vistas al mar y dos balcones cerca de la marina de Aregai en Cipressa, Liguria
 
 170.000 € · Cipressa, Imperia, Liguria · 73 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
 
-A second-floor flat of about 73 m2 in a small three-storey building with shared gardens near the port of Aregai, on the western Ligurian coast. The advert places it a short walk from the beaches and the coastal cycle path, and the photos show open sea from the balconies. Hall, bright living room with kitchen, double bedroom, bathroom and a store cupboard, with a balcony off both main rooms. A cellar and an outdoor parking space are included. There is no heating installed, only the pipework for radiators, so budget for that. Condominium fees about 700 euros a year.
+Un piso de segunda planta de alrededor de 73 m² en un pequeño edificio de tres plantas con jardines compartidos cerca del puerto de Aregai, en la costa occidental ligur. El anuncio lo sitúa a un corto paseo de las playas y la vía cicloturista costera, y las fotos muestran mar abierto desde los balcones. Recibidor, salón luminoso con cocina, dormitorio doble, baño y un trastero, con balcón desde ambas habitaciones principales. Se incluyen un sótano y una plaza de aparcamiento al aire libre. No hay calefacción instalada, solo la tubería para radiadores, así que presupuesta para ello. Gastos de condominio alrededor de 700 euros al año.
 
 https://realhunt.co/es/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
 

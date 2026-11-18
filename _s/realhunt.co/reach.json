@@ -1,7 +1,7 @@
 {
  "built": "2026-11-18",
- "indexable": 5370,
- "pages_given_a_date": 5065,
+ "indexable": 5754,
+ "pages_given_a_date": 5422,
  "video_pages": 0,
  "llms": {
   "en": true,
@@ -12,7 +12,7 @@
   "video": 0
  },
  "robots_lines_added": 1,
- "releases": 5,
+ "releases": 6,
  "files": [
   "openapi.json",
   "data/countries/index.json",
@@ -20,6 +20,7 @@
   "feed.json",
   "blog/atom.xml",
   "blog/feed.json",
+  "es/feed.xml",
   "es/blog/rss.xml",
   "es/llms.txt",
   "sitemap-news.xml",

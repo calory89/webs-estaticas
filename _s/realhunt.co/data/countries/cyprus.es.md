@@ -75,18 +75,18 @@ Bajo frente al mar de 2020 en Protaras, a un paso de Green Bay y la playa de Cav
 
 https://realhunt.co/es/deal/cy-protaras-470k-585375
 
-### Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca
+### Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca
 
 130.000 € · Mazotos, Larnaca · 70 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
 
-A resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca. 70 m² of covered area plus a 14 m² covered balcony, an open-plan living room with fitted kitchen, a family bathroom and a guest WC with shower, and air conditioning throughout. Sold fully furnished with an allocated covered parking bay, a storage unit and use of the communal pool. The advert gives 10 minutes to the sea and 20 minutes to Larnaca airport. Asking €130,000, about €1,860/m². Communal fees: about €1,295 a year.
+Un apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de Larnaca. 70 m² de área cubierta más un balcón cubierto de 14 m², una sala de estar de plano abierto con cocina equipada, un cuarto de baño familiar y un WC de invitados con ducha, y aire acondicionado en todas partes. Se vende completamente amueblado con una plaza de aparcamiento cubierto asignada, un trastero y uso de la piscina comunitaria. El anuncio da 10 minutos al mar y 20 minutos al aeropuerto de Larnaca. Precio solicitado €130.000, aproximadamente €1.860/m². Cuotas comunitarias: aproximadamente €1.295 al año.
 
 https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874
 
-### Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, Paphos
+### Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, Pafos
 
 195.000 € · Mesa Chorio, Paphos · 74 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
 
-A two-bedroom ground-floor apartment in Mesa Chorio, a village on the edge of Paphos, sold with its own separate title deed and with the furniture included. 74 m² inside with an open-plan kitchen, dining and living area and a bathroom with shower, plus a 19 m² covered veranda, a 3 m² open veranda and the exclusive use of a private yard. The complex has a shared swimming pool and the flat has a covered parking space. The advert places it about 250 m from the village church and 2.7 km from Paphos General Hospital. Asking €195,000, about €2,640/m². Communal fees are not stated.
+Un apartamento de planta baja de dos dormitorios en Mesa Chorio, un pueblo en las afueras de Pafos, vendido con su propia escritura de propiedad separada y con el mobiliario incluido. 74 m² interiores con una cocina abierta, comedor y salón y un baño con ducha, más una terraza cubierta de 19 m², una terraza abierta de 3 m² y el uso exclusivo de un patio privado. El complejo tiene una piscina compartida y el piso tiene una plaza de aparcamiento cubierta. El anuncio lo sitúa a unos 250 m de la iglesia del pueblo y a 2,7 km del Hospital General de Pafos. Se pide €195,000, aproximadamente €2,640/m². Las cuotas comunitarias no se indican.
 
 https://realhunt.co/es/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684
