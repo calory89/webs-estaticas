@@ -29,7 +29,7 @@ Computed from the homes on the site each time it is updated. Asking prices in eu
 - [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions). Highest median score: West Jutland, Denmark (91).
 - [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000). 80 homes at or under €50,000; most in Italy (33).
 - [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary). 1.5 years of net pay in Germany, 8 in the Netherlands.
-- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 9% of 551 homes are marked medium or high; 13 are marked high.
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 8% of 634 homes are marked medium or high; 13 are marked high.
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,456/m² under 30 km from an airport, €1,037/m² between 30 and 60 km.
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices). From €1,366/m² in Batumi to €3,661/m² in Phuket.
 

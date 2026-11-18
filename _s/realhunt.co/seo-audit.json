@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4126,
-  "indexable": 3586,
+  "pages": 4127,
+  "indexable": 3587,
   "noindex": 540,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
-  "title_over_60": 1237,
+  "title_over_60": 1236,
   "desc_over_155": 0,
   "desc_under_120": 72,
   "desc_out_of_range": 72,
@@ -21,9 +21,9 @@
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3485,
-  "redirects": 1255,
-  "moved_stubs": 227
+  "with_lastmod": 3486,
+  "redirects": 1260,
+  "moved_stubs": 229
  },
  "failures": [
   "tech: link through redirect: 1 (/es -> /es/homes/canada)"
@@ -132,14 +132,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1571,
+   "median_words": 1574,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 268,
-   "indexable": 268,
+   "pages": 269,
+   "indexable": 269,
    "noindex": 0,
    "median_words": 1530,
    "title_over_60": 7,
@@ -339,7 +339,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1914,
+   "median_words": 1917,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -348,8 +348,8 @@
    "pages": 266,
    "indexable": 266,
    "noindex": 0,
-   "median_words": 1806,
-   "title_over_60": 76,
+   "median_words": 1819,
+   "title_over_60": 75,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -825,7 +825,7 @@
    "pages": 16,
    "indexable": 16,
    "noindex": 0,
-   "median_words": 857,
+   "median_words": 876,
    "title_over_60": 1,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -960,7 +960,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3586,
+   "pages with JSON-LD changed": 3587,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 641,
    "Article: author, date, headline or image missing": 52
@@ -1116,7 +1116,7 @@
    "/deal/DZzpJ7UDSZB",
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
-   "... 1177 more"
+   "... 1176 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1135,10 +1135,10 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 494,
+    "pages": 495,
     "twins": 488,
-    "words": 1032400,
-    "english": 56,
+    "words": 1036150,
+    "english": 66,
     "spanish_pct": 99.99
    },
    "pages": {
@@ -1168,18 +1168,19 @@
  },
  "tech": {
   "summary": {
-   "checked": 4126,
-   "indexable": 3586,
+   "checked": 4127,
+   "indexable": 3587,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 10,
    "external_link_hosts": 315,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 5,
    "year_in_title": 2,
-   "near_identical_pages": 529,
+   "near_identical_pages": 527,
    "region_used_as_country": 2,
    "link_through_redirect": 1,
+   "title_changed_twice_in_28_days": 6,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1255,7 +1256,7 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/irish-in-cyprus (97%)",
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/italian-in-cyprus (94%)",
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
-    "... 489 more"
+    "... 487 more"
    ],
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
@@ -1263,12 +1264,20 @@
    ],
    "link_through_redirect": [
     "/es -> /es/homes/canada"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (232)",
+    "/cheap-houses/quiet-location-in-france: Homes away from motorways and railways in France (12)",
+    "/cheap-houses/quiet-location-in-italy: Cheap homes away from motorways and railways in Italy (37)",
+    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (78)",
+    "/cheap-houses/quiet-location-in-sweden: Cheap homes away from motorways and railways in Sweden (15)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (305, from €7,400)"
    ]
   },
   "depth": {
    "0": 2,
    "1": 130,
-   "2": 3081,
+   "2": 3082,
    "3": 373
   },
   "noindex": {
@@ -1358,7 +1367,7 @@
   "sitemap-main.xml": 17,
   "sitemap-countries.xml": 173,
   "sitemap-prices.xml": 52,
-  "sitemap-cheap-houses.xml": 269,
+  "sitemap-cheap-houses.xml": 270,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 34,

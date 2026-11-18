@@ -1,16 +1,16 @@
 {
- "total": 2168,
+ "total": 2172,
  "max_total": 2500,
  "langs": {
   "de": {
-   "pages": 483,
+   "pages": 484,
    "by_kind": {
     "country": 16,
     "gband": 5,
     "ccyBand": 10,
     "gfeature": 32,
     "band": 51,
-    "feature": 161,
+    "feature": 162,
     "setting": 20,
     "ptype": 11,
     "combo": 46,
@@ -35,7 +35,7 @@
     "canada": 13,
     "switzerland": 11,
     "bulgaria": 5,
-    "portugal": 8,
+    "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
     "all countries": 51,
@@ -155,14 +155,14 @@
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 483,
+   "pages": 484,
    "by_kind": {
     "country": 16,
     "gband": 5,
     "ccyBand": 10,
     "gfeature": 32,
     "band": 51,
-    "feature": 161,
+    "feature": 162,
     "setting": 20,
     "ptype": 11,
     "combo": 46,
@@ -187,7 +187,7 @@
     "canada": 13,
     "switzerland": 11,
     "bulgaria": 5,
-    "portugal": 8,
+    "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
     "all countries": 51,
@@ -245,14 +245,14 @@
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 483,
+   "pages": 484,
    "by_kind": {
     "country": 16,
     "gband": 5,
     "ccyBand": 10,
     "gfeature": 32,
     "band": 51,
-    "feature": 161,
+    "feature": 162,
     "setting": 20,
     "ptype": 11,
     "combo": 46,
@@ -277,7 +277,7 @@
     "canada": 13,
     "switzerland": 11,
     "bulgaria": 5,
-    "portugal": 8,
+    "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
     "all countries": 51,
@@ -335,14 +335,14 @@
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 483,
+   "pages": 484,
    "by_kind": {
     "country": 16,
     "gband": 5,
     "ccyBand": 10,
     "gfeature": 32,
     "band": 51,
-    "feature": 161,
+    "feature": 162,
     "setting": 20,
     "ptype": 11,
     "combo": 46,
@@ -367,7 +367,7 @@
     "canada": 13,
     "switzerland": 11,
     "bulgaria": 5,
-    "portugal": 8,
+    "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
     "all countries": 51,
@@ -426,7 +426,7 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 483,
+  "english_pages_linked": 484,
   "spanish_pages_linked": 477
  },
  "failures": []

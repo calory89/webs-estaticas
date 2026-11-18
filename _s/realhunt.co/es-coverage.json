@@ -2,7 +2,7 @@
  "noindex_copies": 7,
  "written_by_hand": {
   "pages": 744,
-  "words": 376021,
+  "words": 376044,
   "english": 21,
   "failed": [
    {
@@ -66,10 +66,10 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 494,
+   "pages": 495,
    "twins": 488,
-   "words": 1032400,
-   "english": 56,
+   "words": 1036150,
+   "english": 66,
    "spanish_pct": 99.99
   },
   "pages": {
@@ -96,7 +96,7 @@
    "spanish_pct": 89.02
   }
  },
- "not_published": 476,
+ "not_published": 477,
  "not_published_sample": [
   {
    "url": "https://realhunt.co/homes/canada",
@@ -186,6 +186,23 @@
    "english": 8,
    "words": 1507,
    "hits": [
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the",
+    "by",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/quiet-location-in-canada",
+   "english": 10,
+   "words": 1253,
+   "hits": [
+    "by",
+    "the",
     "by",
     "the",
     "by",
@@ -6312,22 +6329,6 @@
    "url": "https://realhunt.co/top/batumi/next-address-khimshiashvili-batumi",
    "english": 9,
    "words": 85,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/batumi/serenade-airport-batumi",
-   "english": 9,
-   "words": 78,
    "hits": [
     "Ranked",
     "in",

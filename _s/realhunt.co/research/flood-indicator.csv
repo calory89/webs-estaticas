@@ -1,16 +1,19 @@
 ﻿country,homes_with_indicator,low,medium,high,medium_or_high_pct,with_official_zone,small_sample
-United States,54,35,6,13,35,47,no
-Bulgaria,6,5,1,0,17,0,yes
-Greece,14,12,2,0,14,0,no
-Mexico,10,9,1,0,10,0,no
-Spain,170,155,15,0,9,0,no
-Denmark,45,43,2,0,4,0,no
-Sweden,34,33,1,0,3,0,no
-Japan,29,28,1,0,3,0,no
-Italy,57,57,0,0,0,0,no
-France,32,32,0,0,0,0,no
-Poland,30,30,0,0,0,0,no
+Dominican Republic,5,0,5,0,100,0,yes
+United States,57,38,6,13,33,49,no
+Greece,20,16,4,0,20,0,no
+Cyprus,5,4,1,0,20,0,yes
+Bulgaria,7,6,1,0,14,0,yes
+Spain,186,171,15,0,8,0,no
+Mexico,12,11,1,0,8,0,no
+Japan,31,29,2,0,6,0,no
+Denmark,46,44,2,0,4,0,no
+Sweden,36,35,1,0,3,0,no
+Italy,68,67,1,0,1,0,no
+France,45,45,0,0,0,0,no
+Poland,31,31,0,0,0,0,no
 Germany,20,20,0,0,0,0,no
 Netherlands,18,18,0,0,0,0,no
+Portugal,18,18,0,0,0,0,no
+Canada,11,11,0,0,0,0,no
 Switzerland,10,10,0,0,0,0,no
-Canada,9,9,0,0,0,0,yes
