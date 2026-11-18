@@ -49,7 +49,7 @@ import { light6 } from './kbx_u27.js';
 import { regSale, rsText, rsNoAsk } from './kbx_n31d_rs.js';   // n31d (lead request): DLD registered sale prices are not asking prices
 import { p29Project, distLine, satHtml29, ppmMedian, ppmOf, medians, companyRegs, regLi, localName, devAnswer, devFilter, DEV_CSS, DEV_JS, t29 } from './kbx_p29.js';   // batch 29 (n29p): payment plan, unit types, foreign ownership and short lets, distances, place median per m2, satellite line, same-place projects, company registers, local names, developer quick answer and filters
 import { slipLine } from './kbx_n30a.js';   // batch 30 (n30a): handover slippage of the market, live
-import { trustBlock, kindIco, t31 as tb31 } from './kbx_n31b_page.js';   // batch 31 (n31b): what is confirmed and how fresh, sources by kind, report an error per line
+import { trustBlock, kindIco, t31 as tb31, loadS as loadS31 } from './kbx_n31b_page.js';   // batch 31 (n31b): what is confirmed and how fresh, sources by kind, report an error per line
 import { rulesData } from './kbx_rules.js';
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
@@ -944,6 +944,7 @@ function pinOff(x) {
   };
 }
 export async function render(ix, kind, key, lang, env, ctx) {   // exported for the local test and the scan endpoint
+  try { await loadS31(env); } catch (e) {}   // n31b: trust block strings (/data/n31b-i18n.json)
   if (kind === 'i') return indexPage(ix, lang);
   if (kind === 'projects') {
     const x = ix.bySlug.get(key); if (!x) return null;

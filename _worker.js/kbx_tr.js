@@ -17,7 +17,7 @@
 // City or Equinox) are excluded from every ranking. Sumba is ranked by decision of the owner (12 Nov 2026) with a disclosure at the top;
 // Sumba rows link to nothing but the right of reply, and the rest of the site's Sumba handling is unchanged (no project pages).
 // Possible matches on official lists are never published and count exactly like "not checked" (left out of the total).
-import { t31 } from './kbx_n31b_page.js';   // n31b (batch 31): worked example on the method page (item 82)
+import { t31, loadS as loadS31 } from './kbx_n31b_page.js';   // n31b (batch 31): worked example on the method page (item 82)
 import { TRS } from './kbx_tr_i18n.js';
 import { hdisp, mkName } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
@@ -369,7 +369,7 @@ function hubPage(ix, lang) {
 // project if it is missing). Uses the same ledger as the ranking pages, so the example can never disagree with them.
 const MX_IDS = ['DXB-021', 'PHK-001', 'MYS-004'];
 function exampleHtml(ix, lang) {
-  const r = MX_IDS.map(i => ix.rows.get(i)).find(Boolean); if (!r) return '';
+  const r = MX_IDS.map(i => ix.rows.get(i)).find(Boolean); if (!r || !t31(lang, 'mx_h')) return '';
   const nc = KEYS.filter(k => r.comp[k].st === 'nc').map(k => t(lang, 'c_' + k));
   const pl = [...ix.places.values()].find(p => p.L.includes(r));
   const P = pre(lang) + '/projects/' + r.s + '/';
@@ -400,6 +400,7 @@ function methodPage(ix, lang) {
 // ------------------------------------------------------------------------------------------------ routing
 const BODY = new Map();
 export async function page(req, u, env, ctx, shell) {
+  try { await loadS31(env); } catch (e) {}   // n31b: worked example strings
   if (u.pathname === SITEMAP) return sitemap(env);
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;
   if (!m[4]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });

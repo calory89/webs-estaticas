@@ -12,7 +12,7 @@
 //   /score-history/[?d=<developer>]    item 81: developer transparency score by day (/data/score-history.json + today, live)
 //   /k/n31b.js                         item 88: "report an error in this line" buttons on project pages (kbx_n31b_page.js)
 //   /data/cases/aykon-city-3.json      the facts of case 1, machine-readable
-import { t31, N31_JS } from './kbx_n31b_page.js';
+import { t31, n31js, loadS } from './kbx_n31b_page.js';
 import { trustRender, head, crumbLd, progData } from './kbx_trust.js';
 import { trData } from './kbx_tr.js';
 import { METHOD } from './kbx_e29_lines.js';
@@ -215,7 +215,8 @@ const BODY = new Map();
 const keep = (k, f) => { let v = BODY.get(k); if (!v) { v = f(); if (BODY.size > 400) BODY.clear(); BODY.set(k, v); } return v; };
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
-  if (p === '/k/n31b.js') return new Response(N31_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=31536000, immutable', 'x-content-type-options': 'nosniff' } });
+  if (!(await loadS(env))) return null;   // strings not readable: the static page (if any) or a 404 answers
+  if (p === '/k/n31b.js') return new Response(n31js(), { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=31536000, immutable', 'x-content-type-options': 'nosniff' } });
   if (p === '/data/cases/aykon-city-3.json') return new Response(JSON.stringify(caseJson(), null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=3600' } });
   const m = RX.exec(p); if (!m || !shell) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
