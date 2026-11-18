@@ -4,15 +4,15 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-17T08:28:20Z</updated>
+<updated>2026-11-18T07:56:44Z</updated>
 <author><name>Kolaboro</name></author>
 <entry>
-<title>17 November 2026: 12 changes shipped so far</title>
-<link href="https://kolaboro.com/shipping/#d-2026-11-17"/>
+<title>17 November 2026: 12 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-17/"/>
 <id>https://kolaboro.com/shipping/#d-2026-11-17</id>
 <published>2026-11-17T00:00:00Z</published>
-<updated>2026-11-17T02:32:39Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status&lt;/li&gt;&lt;li&gt;Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers&lt;/li&gt;&lt;li&gt;Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)&lt;/li&gt;&lt;li&gt;Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)&lt;/li&gt;&lt;li&gt;Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language&lt;/li&gt;&lt;li&gt;Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+<updated>2026-11-17T17:05:56Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status&lt;/li&gt;&lt;li&gt;Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers&lt;/li&gt;&lt;li&gt;Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)&lt;/li&gt;&lt;li&gt;Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)&lt;/li&gt;&lt;li&gt;Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language&lt;/li&gt;&lt;li&gt;Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>14 November 2026: 34 changes shipped</title>

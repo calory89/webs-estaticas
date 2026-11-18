@@ -14,16 +14,16 @@
  "items": [
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-17",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-17",
-   "title": "17 November 2026: 12 changes shipped so far",
-   "content_text": "- Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status\n- Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers\n- Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)\n- Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)\n- Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language\n- Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status</li><li>Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers</li><li>Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)</li><li>Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)</li><li>Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language</li><li>Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "url": "https://kolaboro.com/changelog/2026-11-17/",
+   "title": "17 November 2026: 12 changes shipped",
+   "content_text": "- Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status\n- Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers\n- Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)\n- Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)\n- Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language\n- Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status</li><li>Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers</li><li>Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)</li><li>Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)</li><li>Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language</li><li>Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
    "date_published": "2026-11-17T00:00:00Z",
-   "date_modified": "2026-11-17T02:32:39Z",
+   "date_modified": "2026-11-17T17:05:56Z",
    "_kolaboro": {
     "ships": 12,
-    "data_updates": 0,
-    "method": "so-far"
+    "data_updates": 13,
+    "method": "deterministic"
    }
   },
   {
