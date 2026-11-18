@@ -12,7 +12,15 @@
 //   21  ctaHtml(): the sticky "Check this project" button on project pages (used by kbx_named.js)
 //   7, 23, 39, 40, 43, 44, 45, 46, 53, 58: offers that change money or promises, built behind env flags that are OFF (see OFFERS).
 // Counters live in the Cloudflare colo cache like kbx_n27a.js usage counters: lower bounds, per location, up to 35 days.
-import { T } from './kbx_n31a_i18n.js';
+// page text lives in /data/n31a-i18n.json (kept out of the worker bundle, which is near the 25 MiB Pages limit); loaded per isolate
+let T = null;
+async function loadT(env) {
+  if (T) return T;
+  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n31a-i18n.json')); if (r.ok) T = await r.json(); } catch (e) {}
+  if (!T) { try { const r = await fetch(ORIGIN + '/data/n31a-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) T = await r.json(); } catch (e) {} }
+  return T;
+}
+const CTA = {"en":["Check this project","€490 · written report usually within 7 days"],"es":["Comprobar este proyecto","490 € · informe escrito, normalmente en 7 días"],"de":["Dieses Projekt prüfen","490 € · schriftlicher Bericht meist innerhalb von 7 Tagen"],"fr":["Vérifier ce projet","490 € · rapport écrit, en général sous 7 jours"],"nl":["Dit project controleren","€ 490 · schriftelijk rapport meestal binnen 7 dagen"],"ru":["Проверить этот проект","490 € · письменный отчёт обычно за 7 дней"],"zh":["核查这个项目","490 欧元 · 书面报告通常 7 天内完成"],"ar":["افحص هذا المشروع","490 يورو · تقرير مكتوب عادةً خلال 7 أيام"]};   // item 21 button text, needed synchronously by kbx_named.js
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -193,8 +201,8 @@ async function srPage(lang, shell, env, slug) {
 
 // ------------------------------------------------------------------------------------------------ 21: sticky button on project pages
 export function ctaHtml(lang, slug) {
-  const L = T[lang] || T.en, href = lang === 'en' ? '/book/?p=' + slug : pre(lang) + '/pricing/#check';
-  return '<div class="mcta kn31c"><a class="btn btn-hi" href="' + href + '" data-ev="n31_cta"><span>' + esc(L.cta) + '</span><small>' + esc(L.cta_sub) + '</small></a></div>' +
+  const L = CTA[lang] || CTA.en, href = lang === 'en' ? '/book/?p=' + slug : pre(lang) + '/pricing/#check';
+  return '<div class="mcta kn31c"><a class="btn btn-hi" href="' + href + '" data-ev="n31_cta"><span>' + esc(L[0]) + '</span><small>' + esc(L[1]) + '</small></a></div>' +
     '<style>.kn31c .btn{display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2;padding-block:8px}.kn31c small{font-weight:500;font-size:.78rem;opacity:.92}@media (min-width:761px){.mcta.kn31c{display:block;left:auto;right:20px;bottom:20px;width:auto}.mcta.kn31c .btn{width:auto;padding-inline:20px}[dir=rtl] .mcta.kn31c{right:auto;left:20px}}@media print{.kn31c{display:none!important}}</style>' +
     '<script src="/k/n31.js?v=' + N31V + '" defer></script>';
 }
@@ -225,6 +233,7 @@ function offerCards(list, lang) {
 }
 // /pricing/: the flagged offers are appended under the plans only when at least one is on (index.js routes /pricing/ here only then)
 export async function pricingOffers(res, lang, env) {
+  if (!(await loadT(env))) return res;
   const list = offers(env).filter(o => !['volume', 'datalicence'].includes(o.k));
   if (!list.length) return res;
   const add = '<section class="sec"><div class="wrap"' + dirA(lang) + '>' + CSS + '<h2>' + esc(T[lang].of_h) + '</h2>' + offerCards(list, lang) + '</div></section>';
@@ -258,6 +267,7 @@ export async function handle(req, u, env, ctx, shell) {
   }
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
+  if (!(await loadT(env))) return null;
   let m;
   if ((m = RX.fn.exec(p))) return fnPage(m[1] || 'en', shell);
   if ((m = RX.rq.exec(p))) return rqPage(m[1] || 'en', shell);
