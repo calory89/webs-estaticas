@@ -57,6 +57,8 @@ let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-l
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
 let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
 let k27a = null; const K27A = /^\/answers\/(?:place|developer)\/[a-z0-9-]{1,90}\.md$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\.csv$|^\/corrections\.(?:json|md)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?developers\/[a-z0-9-]{1,90}\/dashboard\/?$|^\/yc\/?$|^\/api\/open\/(?:usage|rv)\/?$/;   // n27a: keep equal to PATHS in kbx_n27a.js
+let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^\/api\/v1\/stalled$/;   // n31c (batch 31): keep equal to PATHS in kbx_n31c.js
+const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
 const LLP = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency\/|countries\/|rankings\/)?$/;   // n26i: pages that carry the least-linked project block
@@ -431,6 +433,15 @@ export default {
     if (host === 'kolaboro.com' && u.pathname === '/.well-known/did.json' && (req.method === 'GET' || req.method === 'HEAD')) { const ka = await import('./kbx_acct.js'); return ka.did(env); }
     // kolaboro.com (n30b, batch 30): /data/snapshots/, /api/docs/, /engineering/data-quality/, /projects/<slug>/certificate/, /offline/, /manifest.webmanifest,
     // /api/v1/{snapshots,openapi.json,data-quality,changes,changes/feed.json,projects/<slug>/certificate,developers/<slug>/website} (see kbx_n30b.js)
+    // kolaboro.com (n31c, batch 31): a developer or project recorded twice answers with a 301 to its one stable page; /stalled/ list (see kbx_n31c.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && (KN31A.test(u.pathname) || KN31C.test(u.pathname))) {
+      if (!kn31c) kn31c = await import('./kbx_n31c.js');
+      const ar = KN31A.test(u.pathname) ? kn31c.aliasRedirect(u) : null; if (ar) return ar;
+      if (KN31C.test(u.pathname)) {
+        const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+        try { const r = await kn31c.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+      }
+    }
     if (host === 'kolaboro.com' && KN30B.test(u.pathname)) {
       if (!kn30b) kn30b = await import('./kbx_n30b.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };

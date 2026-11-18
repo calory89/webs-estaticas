@@ -75519,7 +75519,7 @@
    "units": 2052,
    "checks": {
     "permit": 2,
-    "escrow": null,
+    "escrow": true,
     "progress": "updates",
     "plans": true,
     "record": true,
@@ -75533,7 +75533,7 @@
      "returns_ok"
     ]
    },
-   "score": 5,
+   "score": 6,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -75545,27 +75545,26 @@
     "A permit number is published: does it exist in the official register and match this plot?",
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
-    "permit": "developer",
-    "escrow": "none",
+    "permit": "independent",
+    "escrow": "independent",
     "progress": "independent",
     "plans": "developer",
     "record": "independent",
-    "returns_ok": "none"
+    "returns_ok": "developer"
    },
-   "vscore": 2,
+   "vscore": 4,
    "claims": {
-    "verified": 4,
-    "unverified": 5,
+    "verified": 11,
+    "unverified": 10,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 16,
    "fp": {
     "sha256": "60a8e0bfe7160f8c8e58b109cebd7c1a4d149d1d942c5aa3a3c072acc00d9d57",
     "date": "2026-11-05"
@@ -81763,72 +81762,6 @@
    "profile": 8,
    "fp": {
     "sha256": "b10d98bd87a35c82e626dedc92d178c8f22184c5692f45585c654d375be285a5",
-    "date": "2026-11-06"
-   }
-  },
-  {
-   "id": "KUA-003",
-   "market": "Kuala Lumpur",
-   "country": "Malaysia",
-   "region": "Kuala Lumpur",
-   "docs": true,
-   "plans": true,
-   "band": "$100k to $200k",
-   "done": 2030,
-   "title": "freehold",
-   "lease": null,
-   "yield": null,
-   "units": 644,
-   "checks": {
-    "permit": 2,
-    "escrow": null,
-    "progress": null,
-    "plans": true,
-    "record": true,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 4,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "clear",
-   "read": true,
-   "checked": "6 Nov 2026",
-   "invited": null,
-   "q": [
-    "A permit number is published: does it exist in the official register and match this plot?",
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2030: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ],
-   "verified": {
-    "permit": "developer",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "developer",
-    "record": "developer",
-    "returns_ok": "none"
-   },
-   "vscore": 0,
-   "claims": {
-    "verified": 0,
-    "unverified": 3,
-    "contradicted": 0
-   },
-   "stage": "off-plan",
-   "delay": null,
-   "overdue": null,
-   "profile": 10,
-   "fp": {
-    "sha256": "2efe5e061bd8b48492184f4036fbd253611231a17fa77aec986cc02ed123024c",
     "date": "2026-11-06"
    }
   },
@@ -90824,7 +90757,7 @@
    "vscore": 4,
    "claims": {
     "verified": 9,
-    "unverified": 2,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -131446,72 +131379,6 @@
    }
   },
   {
-   "id": "VNM-008",
-   "market": "Vietnam",
-   "country": "Vietnam",
-   "region": "Vietnam",
-   "docs": true,
-   "plans": true,
-   "band": "$100k to $200k",
-   "done": 2027,
-   "title": "50-year ownership certificate for foreigners (extendable), within 30% per-tower cap; perpetual for Vietnamese",
-   "lease": 50,
-   "yield": null,
-   "units": 2000,
-   "checks": {
-    "permit": 2,
-    "escrow": true,
-    "progress": "updates",
-    "plans": true,
-    "record": true,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 6,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "clear",
-   "read": true,
-   "checked": "5 Nov 2026",
-   "invited": null,
-   "q": [
-    "A permit number is published: does it exist in the official register and match this plot?",
-    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2027: does progress on site match?"
-   ],
-   "verified": {
-    "permit": "independent",
-    "escrow": "independent",
-    "progress": "developer",
-    "plans": "developer",
-    "record": "developer",
-    "returns_ok": "developer"
-   },
-   "vscore": 2,
-   "claims": {
-    "verified": 7,
-    "unverified": 5,
-    "contradicted": 0
-   },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 15,
-   "fp": {
-    "sha256": "60a8e0bfe7160f8c8e58b109cebd7c1a4d149d1d942c5aa3a3c072acc00d9d57",
-    "date": "2026-11-05"
-   }
-  },
-  {
    "id": "VNM-009",
    "market": "Vietnam",
    "country": "Vietnam",
@@ -134477,29 +134344,29 @@
  ],
  "db": {
   "updated": "2026-11-18",
-  "projects": 2001,
+  "projects": 1999,
   "markets": 182,
   "countries": 94,
   "sources": 7940,
-  "data_points": 51143,
+  "data_points": 51081,
   "claims": {
    "verified": 5735,
    "unverified": 7882,
    "contradicted": 1370
   },
   "claims_total": 14987,
-  "deep_profiles": 2001,
+  "deep_profiles": 1999,
   "checks_by_level": {
    "registry": 1792,
    "independent": 483,
-   "developer": 2027,
+   "developer": 2020,
    "contradicted": 103,
-   "none": 7601
+   "none": 7596
   },
-  "checks_rated": 12006,
+  "checks_rated": 11994,
   "stages": {
-   "off-plan": 761,
-   "under construction": 1177,
+   "off-plan": 760,
+   "under construction": 1176,
    "completed": 17
   },
   "all_six_public": 65,

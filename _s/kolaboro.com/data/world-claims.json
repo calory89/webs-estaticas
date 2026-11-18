@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-18",
- "projects": 2001,
+ "projects": 1999,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-18",
@@ -11610,10 +11610,10 @@
    "updated": "2026-11-18",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 30,
+   "projects": 29,
    "title": {
     "leasehold": 0,
-    "known": 6
+    "known": 5
    },
    "lease": {
     "known": 0,
@@ -11634,7 +11634,7 @@
    "guaranteed_language": 0,
    "permit_claims": 12,
    "permit_numbers_published": 12,
-   "plans_published": 3,
+   "plans_published": 2,
    "price_usd": {
     "known": 28,
     "median": 142000.0,
@@ -11651,7 +11651,7 @@
     "2028": 6,
     "2029": 11,
     "2030": 2,
-    "unknown": 2
+    "unknown": 1
    },
    "runs": [
     {
@@ -23326,7 +23326,7 @@
    "updated": "2026-11-18",
    "market": "Vietnam",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 19,
+   "projects": 18,
    "title": {
     "leasehold": 2,
     "known": 4
@@ -23364,7 +23364,7 @@
    },
    "completion": {
     "2026": 2,
-    "2027": 7,
+    "2027": 6,
     "2028": 3,
     "2029": 2,
     "unknown": 5

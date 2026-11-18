@@ -24,6 +24,7 @@
 //   GET /handover/sitemap.xml               every URL above with hreflang alternates (listed in /sitemap_index.xml by kbx_seo.js)
 // Conflict of interest: Sumba projects are not named (kbx_named.js drops them) and Eco Beach City / Equinox never appear.
 import { data as namedData, handoverOf, fd, esc, pre, lastmod, okHttp, host, reviewed, overdueOf, OV_MIN } from './kbx_named.js';
+import { stalledLabel } from './kbx_n31c.js';   // n31c (item 108): link to /stalled/
 import { trData } from './kbx_tr.js';
 import { mkName, placeName, coName, hyear, hkey } from './kbx_hdate.js';
 import { FS } from './kbx_facets_i18n.js';
@@ -544,7 +545,7 @@ function ovHub(F, lang) {
     (one.length ? '<h2 id="one">' + te(lang, 'ovh_one') + '</h2><ul class="fl">' + one.map(g => { const r = g.L[0]; return '<li>' + bdi(mkName(g.mk, lang)) + ': <a href="' + pre(lang) + '/projects/' + r.x.s + '/#overdue">' + bdi(r.x.n) + '</a> <small class="k-muted">' + esc(fd(r.o.d, lang)) + ' · ' + nf(lang, r.o.m) + '</small></li>'; }).join('') + '</ul>' : '') +
     '<h2 id="method">' + te(lang, 'ov_rule_h') + '</h2><p>' + te(lang, 'ov_rule', { mo }) + '</p>' +
     '<h2 id="cite">' + te(lang, 'ov_cite_h') + '</h2><p><code>' + te(lang, 'ov_cite', { t: title, u: url, d: dT }) + '</code></p>' +
-    '<p class="kfa-l"><a href="' + pre(lang) + '/handover/">' + te(lang, 'cr_hy') + '</a> <a href="/index/delays/">' + te(lang, 'dl_idx') + '</a> <a href="' + pre(lang) + '/rankings/transparency/">' + te(lang, 'tr_link') + '</a></p>' + replyBox(lang) + '</div></section></div>';
+    '<p class="kfa-l"><a href="' + pre(lang) + '/handover/">' + te(lang, 'cr_hy') + '</a> <a href="/index/delays/">' + te(lang, 'dl_idx') + '</a> <a href="' + pre(lang) + '/stalled/">' + esc(stalledLabel(lang)) + '</a> <a href="' + pre(lang) + '/rankings/transparency/">' + te(lang, 'tr_link') + '</a></p>' + replyBox(lang) + '</div></section></div>';
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: lm, temporalCoverage: F.ovMonth, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/promises.json' }] },
     { '@type': 'ItemList', name: title, numberOfItems: big.length, itemListElement: big.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.mk, url: PUB(lang, path + g.s + '/') })) }, crumbLd(cr)];

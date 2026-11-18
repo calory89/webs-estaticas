@@ -14,6 +14,7 @@
 // for kbx_named.js.
 
 import { t26 } from './kbx_u26.js';
+import { aliasesFor } from './kbx_n31c.js';   // n31c (item 117): stable developer id and the slugs that redirect to it
 import { E as E27 } from './kbx_e27_i18n.js';   // n27e: free PDF report offered in the watch box
 const ORIGIN = 'https://kolaboro.com';
 const LANGS9 = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -225,12 +226,12 @@ function projectJson(N, ix, x) {
 function developerJson(N, ix, dv) {
   const L = dv.ids.map(i => ix.byId.get(i)).filter(Boolean), lm = L.map(x => N.lastmod(ix, x)).sort();
   return { api: 'kolaboro-named-v1', license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), attribute "Kolaboro"', rules: 'Facts only, each as published by its source. No opinions or verdicts.',
-    slug: dv.s, name: dv.n, last_checked: lm[lm.length - 1] || null, markets: [...new Set(L.map(x => x.mk))],
+    slug: dv.s, id: dv.s, aliases: aliasesFor(dv.s), names_as_published: [...new Set(L.map(x => x.dv).filter(Boolean))], last_checked: lm[lm.length - 1] || null, markets: [...new Set(L.map(x => x.mk))],
     projects: L.map(x => { const c = ix.caseBy.get(x.id) || {}, ho = N.handoverOf(ix, x); return { id: x.id, slug: x.s, name: x.n, market: x.mk, country: x.co, stage: c.stage || x.st || null, handover: ho ? ho.d : null, permit_number_published: !!x.pn, reviewed: N.reviewed(c), api: ORIGIN + '/api/v1/projects/' + x.s, page: ORIGIN + '/projects/' + x.s + '/' }; }),
     urls: { page: ORIGIN + '/developers/' + dv.s + '/', pages: LANG_URL('developers', dv.s), feed_atom: ORIGIN + '/developers/' + dv.s + '/feed.atom', feed_json: ORIGIN + '/developers/' + dv.s + '/feed.json' } };
 }
 function listProjects(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.P.length, projects: ix.P.map(x => ({ slug: x.s, id: x.id, name: x.n, market: x.mk, api: ORIGIN + '/api/v1/projects/' + x.s })) }; }
-function listDevelopers(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.devs.size, developers: [...ix.devs.values()].map(v => ({ slug: v.s, name: v.n, projects: v.ids.length, api: ORIGIN + '/api/v1/developers/' + v.s })) }; }
+function listDevelopers(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.devs.size, developers: [...ix.devs.values()].map(v => ({ slug: v.s, name: v.n, aliases: aliasesFor(v.s), projects: v.ids.length, api: ORIGIN + '/api/v1/developers/' + v.s })) }; }
 
 // ------------------------------------------------------------------------------------------------ feeds
 export function events(N, ix, x) {   // n30b: exported for /api/v1/changes (kbx_n30b.js)
