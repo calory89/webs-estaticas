@@ -5,13 +5,22 @@
 // into an RGB raster and encodes the PNG itself (CompressionStream 'deflate' = zlib, as PNG IDAT needs). The result is cached at the
 // edge per data version for a week. Same rules as the pages (kbx_named.js data()): Sumba projects are never named, so they have no page
 // and no image (404); "not yet reviewed" projects carry that badge and never a score; the image shows no score for any project.
-import { FONT, LOGO } from './kbx_og_font.js';
+// Glyph masks and logo live in /data/og-font.json (static asset, read once per isolate) to keep the worker under the Pages size limit.
+let FONT = null, LOGO = { w: 0, h: 0, bg: [227, 226, 221], data: '' }, OGENV = null;
+async function fontData() {
+  if (FONT) return;
+  let d = null;
+  try { if (OGENV && OGENV.ASSETS) { const r = await OGENV.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/og-font.json')); if (r.ok) d = await r.json(); } } catch (e) {}
+  if (!d) { try { const r = await fetch('https://kolaboro.com/data/og-font.json', { cf: { cacheTtl: 3600 } }); if (r.ok) d = await r.json(); } catch (e) {} }
+  if (!d || !d.FONT) throw new Error('og font unavailable');
+  FONT = d.FONT; LOGO = d.LOGO;
+}
 import { data, handoverOf, reviewed, fd, tr } from './kbx_named.js';
 import { OG_KINDS } from './kbx_ogt.js';
 
 export const PATHS = /^\/og\/(projects|developers|type)\/([a-z0-9-]{1,90})\.png$/;   // n29t: + /og/type/<kind>.png (one image per page type, kbx_ogt.js)
 const W = 1200, H = 630, V = 'og-v1';
-const BG = LOGO.bg, INK = [23, 33, 43], INK2 = [42, 53, 65], MUTED = [94, 104, 114], HI = [255, 91, 20], CARD = [246, 246, 243], LINE = [200, 198, 190];
+const BG = [227, 226, 221], INK = [23, 33, 43], INK2 = [42, 53, 65], MUTED = [94, 104, 114], HI = [255, 91, 20], CARD = [246, 246, 243], LINE = [200, 198, 190];
 
 // ---------- font masks (inflated once per isolate) ----------
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
@@ -19,6 +28,7 @@ async function inflate(bytes) { const s = new Blob([bytes]).stream().pipeThrough
 let FACES = null, LOGOPX = null;
 async function faces() {
   if (FACES) return FACES;
+  await fontData();
   const o = {};
   for (const k of Object.keys(FONT)) { const f = FONT[k]; o[k] = { size: f.size, asc: f.asc, desc: f.desc, g: f.g, px: await inflate(b64(f.data)) }; }
   LOGOPX = await inflate(b64(LOGO.data));
@@ -166,6 +176,7 @@ function devCard(ix, dv) {
 }
 
 export async function handle(req, u, env, ctx) {
+  OGENV = env;
   const m = u.pathname.match(PATHS); if (!m) return null;
   let ix; try { ix = await data(env); } catch (e) { return new Response('data unavailable', { status: 503, headers: { 'cache-control': 'no-store' } }); }
   const ent = m[1] === 'type' ? (OG_KINDS.includes(m[2]) ? m[2] : null) : m[1] === 'projects' ? ix.bySlug.get(m[2]) : ix.devs.get(m[2]);

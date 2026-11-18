@@ -23,7 +23,19 @@
 //   GET /[<lang>/]app/                          166: install Kolaboro on a phone or computer
 // Parts used by other modules: crBlock() (contract reader country list, kbx_n30a.js), mcpFind() and mcpCert() (MCP tools, kbx_e.js).
 // Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
-import { S, VISA, INH, MORT, CRC } from './kbx_n31e_i18n.js';
+// Strings and sourced facts in 8 languages live in /data/n31e-i18n.json (static asset, read once per isolate) to keep the worker under the Pages size limit.
+let S = { en: {} }, VISA = [], INH = [], MORT = [], CRC = { countries: [] }, LD31 = null;
+async function L31(env) {
+  if (LD31) return LD31;
+  LD31 = (async () => {
+    let d = null;
+    try { if (env && env.ASSETS) { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/n31e-i18n.json')); if (r.ok) d = await r.json(); } } catch (e) {}
+    if (!d) { try { const r = await fetch('https://kolaboro.com/data/n31e-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) d = await r.json(); } catch (e) {} }
+    if (!d || !d.S) { LD31 = null; throw new Error('n31e strings unavailable'); }
+    ({ S, VISA, INH, MORT, CRC } = d); return d;
+  })();
+  return LD31;
+}
 
 export const N31V = 'e1';
 const ORIGIN = 'https://kolaboro.com';
@@ -423,7 +435,8 @@ async function newSitesApi(env, feed) {
 }
 
 // ------------------------------------------------------------------------------------------------ 159: contract reader, what is missing by country
-export async function crBlock(lang) {
+export async function crBlock(lang, env) {
+  await L31(env);
   const w = (k, v) => t31(lang, k, v), C = CRC.countries;
   let NT = {}; try { const [a, b] = await Promise.all([import('./kbx_buy_notes.js'), import('./kbx_buy_c29.js')]); NT = Object.assign({}, a.NT, b.NT29); } catch (e) {}
   const M = Object.fromEntries(Object.entries(C).map(([cc, L]) => [cc, L.map(i => ({ k: i.k, l: (i.l[lang] || i.l.en), n: NT[i.k] ? (NT[i.k][lang] || NT[i.k].en) : null, rx: i.rx, s: i.s.map(sk => CRC.src[sk]).filter(Boolean) }))]));
@@ -434,6 +447,7 @@ export async function crBlock(lang) {
 
 // ------------------------------------------------------------------------------------------------ MCP helpers (kbx_e.js)
 export async function mcpFind(env, q, lim) {
+  await L31(env);
   const { ix, N, hits } = await findProjects(env, q, lim || 10);
   return { query: q, count: hits.length, results: hits.map(x => Object.assign(brief(ix, N, x, 'en'), { handover_history: ORIGIN + '/api/v1/handover-history/' + x.s })), search_page: ORIGIN + '/tools/handover-history/', rules: 'Named projects only (Sumba projects are never named). Matches on the project name first, then developer and place. Facts only, no verdict.' };
 }
@@ -447,6 +461,7 @@ export const PATHS = /^\/k\/n31e\.js$|^\/api\/v1\/(?:find|new-websites(?:\.json)
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
+  if (p !== '/k/n31e.js') await L31(env);
   if (p === '/k/n31e.js') { const C = await import('./kbx_n31e_client.js'); return new Response(C.JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N31V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } }); }
   try {
     if (p === '/api/v1/find') { const q = String(u.searchParams.get('q') || '').slice(0, 120); if (norm(q).length < 2) return jr({ error: 'q', note: 'q = at least 2 letters of a project, developer or place name' }, 400);
