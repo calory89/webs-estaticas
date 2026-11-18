@@ -15,7 +15,7 @@
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 
-export const N30V = 'a6';   // a6: contract text event for the country list (n31e)
+export const N30V = 'a5';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -231,7 +231,7 @@ async function readerPage(u, env, shell, lang) {
     '<div class="n30d" tabindex="0" role="button" aria-describedby="n30cr-s"><p><b>' + esc(w('cr_drop')) + '</b></p><label class="k-btn" for="n30cr-f">' + esc(w('cr_pick')) + '</label><input id="n30cr-f" type="file" accept="application/pdf,.pdf,text/plain,.txt" hidden></div>' +
     '<details class="n30px"><summary>' + esc(w('cr_or')) + '</summary><label for="n30cr-t" class="k-vh">' + esc(w('cr_or')) + '</label><textarea id="n30cr-t" rows="7" spellcheck="false"></textarea><p><button type="button" class="k-btn" id="n30cr-g">' + esc(w('cr_go')) + '</button> <button type="button" class="k-btn k-btn--ghost" id="n30cr-c">' + esc(w('cr_clear')) + '</button></p></details>' +
     '<p id="n30cr-s" class="n30s0" role="status" aria-live="polite"></p><div id="n30cr-o"></div>' +
-    (await (await import('./kbx_n31e.js')).crBlock(lang).catch(() => '')) + '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
+    '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
     '<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + '</h2><ul><li><a href="/tools/contract-check/">' + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + '</a></li><li><a href="/tools/pdf-check/">' + esc(w('cr_rel3')) + '</a></li></ul></div>' +
     '<style>.n30p{max-width:70ch}.n30d{display:grid;place-items:center;gap:10px;min-height:170px;margin:18px 0;border:2.5px dashed var(--ink,#17212B);border-radius:18px;background:var(--card,#fff);text-align:center;padding:18px;cursor:pointer}.n30d.is-over{border-color:var(--k-sea,#155C75);background:color-mix(in srgb,var(--k-sea,#155C75) 8%,var(--card,#fff))}.n30d p{margin:0}.n30d .k-btn{min-height:48px;display:inline-flex;align-items:center;cursor:pointer}' +
     '.n30px textarea{width:100%;box-sizing:border-box;border:1.5px solid var(--line,#d5d3cc);border-radius:12px;padding:10px;font:inherit;background:var(--paper,#fff);color:inherit}.n30px summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:600}.n30s0{font-weight:600;min-height:1.4em}' +
@@ -288,7 +288,6 @@ function crClient() {
     out.innerHTML = html;
     out.querySelectorAll('[data-more]').forEach(function (b) { b.addEventListener('click', function () { var r = out.querySelector('[data-rest="' + b.getAttribute('data-more') + '"]'); if (r) r.hidden = false; b.remove(); }); });
     st.textContent = f(M.done, { n: pages.length, s: S.length, ms: Math.round(performance.now() - t0), a: found });
-    try { document.dispatchEvent(new CustomEvent('n30cr:text', { detail: pages })); } catch (e) {}   // n31e (batch 31, item 159): what is missing for the country
     if (out.scrollIntoView) out.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function readPdf(buf) {
