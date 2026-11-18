@@ -2,7 +2,7 @@
 
 > General information about no-win-no-fee claims, contingency fees, litigation funding, deadlines and costs, by country.
 > Not legal advice. JuriMatch is not a law firm. Each section links to the page it comes from; cite that URL.
-> Generated 2026-11-01 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
+> Generated 2026-11-07 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
 
 ## Guides
 
@@ -236,6 +236,11 @@ URL: https://jurimatch.com/guides/united-states
 
 How legal claims work in the United States: court system overview, whether success fees and contingency fees are allowed, litigation funding, and…
 
+### Contingency fees and deadlines by US state
+URL: https://jurimatch.com/guides/us-states
+
+The ten most populous states: whether a cap applies to contingency fees, and how long you have to sue for a personal injury, with the official source.
+
 ### What happens if I lose a no-win-no-fee claim?
 URL: https://jurimatch.com/guides/what-if-i-lose
 
@@ -243,10 +248,249 @@ Losing a no-win-no-fee claim usually means no fee for your own lawyer, but you m
 
 ## Claim guides
 
+### Claims against Abanca: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/abanca
+
+Abanca is a Galician bank formed from the savings banks Caixa Galicia and Caixanova (later NCG Banco), which was among the banks in the case where the Spanish Supreme Court first ruled on floor clauses in May 2013. It now answers claims about NCG and the former savings banks' products.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Former NCG preference shares: Customers who bought preference shares (preferentes) and subordinated debt from the Galician savings banks brought mis-selling claims, and many were offered arbitration or settlements. Check what you signed before starting a new claim.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Abanca before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Claims against Aer Lingus: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/aer-lingus
+
+Aer Lingus is an Irish airline and part of International Airlines Group (IAG). Its flights are covered by Regulation 261/2004 when they depart from the EU or fly into the EU, and flights from the UK by UK261. Claims are mostly about cancellations, delays on transatlantic routes, refunds and baggage.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Ireland (contract claims): 6 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
+
+Q: Do I need a lawyer to claim compensation from Aer Lingus?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Aer Lingus have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Air Europa: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/air-europa
+
+Air Europa is a Spanish airline based in Mallorca, with a hub in Madrid and many routes to Latin America. As an EU airline, its flights are covered by Regulation 261/2004 when they depart from the EU and when they fly into the EU, including flights from Latin America to Madrid.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Air Europa?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Air Europa have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Air France: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/air-france
+
+Air France is France's flag carrier and part of the Air France-KLM group. As an EU airline, its flights are covered by Regulation 261/2004 when they depart from the EU and also when they fly into the EU from elsewhere. Claims are mostly about long delays, cancellations, missed connections on long-haul trips and refunds.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in France (contract claims): 5 years (from knowledge).
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Air France?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Air France have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Austrian Airlines: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/austrian-airlines
+
+Austrian Airlines is Austria's national airline and part of the Lufthansa Group, with its hub in Vienna. Its flights are covered by Regulation 261/2004 when they depart from the EU or fly into the EU. Claims are mostly about delays, missed connections through Vienna, cancellations and refunds.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Austria (contract claims): 3–30 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Austrian Airlines?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Austrian Airlines have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Banco Sabadell: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/banco-sabadell
+
+Banco Sabadell is one of Spain's largest banks and took over Caja de Ahorros del Mediterráneo (CAM) in 2012, so it now answers many claims about CAM mortgages and products. Like other Spanish banks, it has faced consumer claims over mortgage terms and credit products.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Former CAM products: Holders of CAM preference shares (cuotas participativas, preferentes) and subordinated debt brought mis-selling claims after the savings bank was rescued. Outcomes depended on how and when the product was sold.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Banco Sabadell before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Claims against Bank Millennium: Swiss franc mortgages
+URL: https://jurimatch.com/claims/bank-millennium
+
+Bank Millennium is a Polish bank majority-owned by Portugal's Millennium bcp. It sold Swiss franc indexed mortgages and has faced many borrower claims about the exchange-rate clauses, and it has offered settlements to convert loans into zlotys.
+
+Swiss franc mortgages (kredyty frankowe): Borrowers with mortgages indexed to or denominated in Swiss francs have claimed that the exchange-rate clauses were unfair because the bank set the rate and did not explain the currency risk. In Dziubak (C-260/18, October 2019) the Court of Justice of the EU held that a court may annul the whole contract where it cannot continue without the unfair term.
+
+What happens if the contract is annulled: Both sides return what they received: the borrower the capital, the bank the instalments. In June 2023 (C-520/21) the CJEU held that EU law precludes the bank from claiming remuneration beyond the capital it lent, and Polish courts have since applied that ruling.
+
+Settlements offered by banks: Several banks have offered settlements converting the loan into zlotys. A settlement can end the dispute, so compare it with the likely result of a court case before signing.
+
+Deadlines: In Poland, claims by consumers are generally subject to a six-year limitation period that ends on the last day of the calendar year. For Swiss franc loans, courts have held that the period for the borrower runs from when the borrower knew, or should have known, that the clause was unfair. Deadlines in these cases are still argued in court, so do not wait: gather the loan documents and get advice early. Indicative period in Poland (contract claims): 3–6 years.
+
+Sources:
+- CJEU, Dziubak, case C-260/18: https://curia.europa.eu/juris/liste.jsf?num=C-260/18
+- CJEU, Bank M., case C-520/21: https://curia.europa.eu/juris/liste.jsf?num=C-520/21
+- Rzecznik Finansowy (Polish Financial Ombudsman): https://rf.gov.pl/
+
+Q: Can I still sue Bank Millennium if I have repaid the Swiss franc loan?
+A: Often yes. Borrowers who have repaid their loan have brought claims to recover what they overpaid, but the deadline question needs checking for your dates.
+
+Q: Do lawyers take these cases on a success fee?
+A: Many Polish firms offer a fixed fee plus a success fee, or a success fee only. Ask for the agreement in writing and how the fee is calculated if the bank settles.
+
+Q: What did the CJEU decide about bank remuneration?
+A: In June 2023 (case C-520/21) the Court held that, when a loan contract is annulled because of unfair terms, EU law precludes the bank from claiming compensation beyond the return of the capital and interest on it from when the payment was demanded.
+
+### Claims against Bankinter: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/bankinter
+
+Bankinter is a Spanish bank known for its mortgage and private banking business. Besides the mortgage terms common to Spanish banks, customers have brought claims over multi-currency mortgages (hipotecas multidivisa) linked to foreign currencies such as the Swiss franc or the yen. This guide explains the usual claims and routes in Spain.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Multi-currency mortgages: Mortgages repaid in or indexed to a foreign currency. Customers have claimed that the currency risk was not explained clearly; Spanish courts have annulled the currency clause where the bank could not show it gave enough information.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Bankinter before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
 ### Claims against BBVA: floor clauses, mortgage costs and cards
 URL: https://jurimatch.com/claims/bbva
 
 BBVA is one of Spain's largest banks. It was among the banks in the case in which the Spanish Supreme Court first ruled on floor clauses in May 2013, and like other Spanish banks it has faced consumer claims over mortgage terms and credit products. This guide explains the usual claims and routes in Spain.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
 
 Q: Do I have to complain to BBVA before going to court?
 A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
@@ -256,6 +500,78 @@ A: Many do, especially floor clause and mortgage expense claims, because when th
 
 Q: Can I still claim if I have paid off the loan?
 A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Claims against Booking.com: parity clauses and hotel claims
+URL: https://jurimatch.com/claims/booking-com
+
+Booking.com, based in Amsterdam, used price parity clauses that stopped hotels offering lower prices elsewhere. In September 2024 the Court of Justice of the EU ruled (case C-264/23) that such clauses are not, in principle, an ancillary restraint exempt from competition law. Hotels in several countries have since brought or announced damages claims.
+
+Hotel damages claims: Hotels have claimed that parity clauses kept commissions and room prices higher than they would otherwise have been. The CJEU ruling answered questions referred by a Dutch court in a dispute brought by German hotels.
+
+Group claims: Associations and funded claim vehicles have organised group claims for hotels in several European countries. Check their terms and the period they cover.
+
+Deadlines: Limitation depends on the country where the claim is brought and on when the hotel knew of the infringement. Clauses differed by country and period (wide and narrow parity), so dates matter. Get the dates of your contract and of any clause changes checked early. Indicative period in Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
+
+Sources:
+- CJEU, Booking.com, case C-264/23 (parity clauses): https://curia.europa.eu/juris/liste.jsf?num=C-264/23
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can guests claim against Booking.com for parity clauses?
+A: The claims brought so far are by hotels, which paid the commissions. Guests' claims would be much harder to prove.
+
+Q: Does the CJEU ruling decide the damages?
+A: No. It answered questions of competition law; national courts decide whether there was an infringement in each case and how much damage it caused.
+
+### Claims against British Airways: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/british-airways
+
+British Airways is the UK's flag carrier and part of International Airlines Group (IAG). Flights from the UK, and BA flights into the UK, are covered by UK261, the UK copy of the EU rules with amounts in pounds; BA flights departing from the EU are covered by EU261. Claims are mostly about delays, cancellations, refunds and baggage.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
+
+Q: Do I need a lawyer to claim compensation from British Airways?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does British Airways have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Brussels Airlines: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/brussels-airlines
+
+Brussels Airlines is Belgium's main airline and part of the Lufthansa Group, with its hub at Brussels Airport and many routes to Africa. Its flights are covered by Regulation 261/2004 when they depart from the EU or fly into the EU.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Belgium (contract claims): 10 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Brussels Airlines?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Brussels Airlines have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
 
 ### When a business partner takes the money: your options
 URL: https://jurimatch.com/claims/business-partner-fraud
@@ -269,6 +585,23 @@ A: Yes, where the business or stake is valuable enough. Funders and success-fee 
 URL: https://jurimatch.com/claims/caixabank
 
 CaixaBank is one of Spain's largest banks and absorbed Bankia in 2021, so it is now the counterparty for many claims that began against Bankia. Like other Spanish banks, it has faced consumer claims over mortgage terms and credit products. This guide explains the usual claims and routes in Spain.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Former Bankia products: Retail investors brought claims over Bankia's 2011 stock market listing, and in 2016 the Supreme Court allowed retail buyers to annul their purchases because of serious inaccuracies in the prospectus. Holders of preference shares (preferentes) and subordinated debt sold by Bankia and the savings banks that formed it also brought mis-selling claims.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
 
 Q: Do I have to complain to CaixaBank before going to court?
 A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
@@ -293,10 +626,98 @@ A: Some firms work on success terms when tracing shows funds at an identifiable 
 Q: How do I spot a recovery scam?
 A: Unsolicited contact, upfront fees, claims of special access to blockchains or regulators, and pressure to act fast. Legitimate law firms are regulated and can be checked with the local bar or law society.
 
+### Claims against DAF Trucks: the trucks cartel
+URL: https://jurimatch.com/claims/daf-trucks
+
+DAF, the Dutch truck maker owned by PACCAR, was fined by the European Commission in July 2016 for the trucks cartel. DAF buyers have brought many of the leading cases, including the Spanish case that reached the CJEU in 2022.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
+
+Sources:
+- European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against DAF Trucks?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
+### Claims against Daimler Truck: the trucks cartel
+URL: https://jurimatch.com/claims/daimler-truck
+
+Daimler Truck, the German maker of Mercedes-Benz trucks, was one of the manufacturers fined by the European Commission in July 2016 for the trucks cartel. Buyers of its trucks from 1997 to 2011 have claimed damages for the overcharge, alone or in group claims.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Germany (non-contractual damages (tort)): 3 years (from knowledge).
+
+Sources:
+- European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against Daimler Truck?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
+### Claims against Deutsche Bahn: train delays and refunds
+URL: https://jurimatch.com/claims/deutsche-bahn
+
+Deutsche Bahn is Germany's national rail operator. Its long-distance and regional trains are covered by the EU rail passenger rights rules, and German law adds some rights for local transport. Claims are mostly about delays, missed connections and cancelled trains.
+
+Delay compensation: Under Regulation (EU) 2021/782, which applies since June 2023, passengers can claim 25% of the ticket price for a delay at arrival of 60 to 119 minutes and 50% for 120 minutes or more, unless the delay was caused by extraordinary circumstances such as severe weather. Operators can set a minimum amount below which nothing is paid.
+
+Refund or re-routing: If a delay of 60 minutes or more is expected, passengers can choose a refund, continuing the journey or re-routing, and are entitled to meals and, where needed, a hotel.
+
+Deadlines: Regulation 2021/782 lets operators set a time limit for compensation requests, which cannot be shorter than three months after the journey. Ask for compensation as soon as possible. A court claim after that is subject to the general limitation rules of the country where you sue. Indicative period in Germany (contract claims): 3 years (from knowledge).
+
+Sources:
+- Regulation (EU) 2021/782 on rail passengers' rights (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2021/782/oj
+
+Q: How much does Deutsche Bahn pay for a delay?
+A: Under the EU minimum rules, 25% of the ticket price for 60 to 119 minutes late and 50% for 120 minutes or more. Some operators pay more under their own commitments; check the conditions of your ticket.
+
+Q: Is a strike an extraordinary circumstance?
+A: Regulation 2021/782 lists exceptions such as extreme weather and major natural disasters; strikes by the operator's own staff are not among them. Check the facts of your case.
+
 ### Claims against easyJet: delays, cancellations and refunds
 URL: https://jurimatch.com/claims/easyjet
 
 easyJet operates through a UK company and separate European companies, so a flight can fall under the EU rules (EU261) or the UK rules (UK261) depending on the route and the operating carrier. Passenger claims are mostly about long delays, cancellations, refunds and baggage.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+EU261 or UK261?: Flights departing from the UK are covered by UK261; flights departing from the EU, or arriving in the EU on an EU-licensed airline, by EU261. Your boarding pass or booking shows which easyJet company operated the flight.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+
+Sources:
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
 
 Q: Do I need a lawyer to claim compensation from easyJet?
 A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
@@ -307,10 +728,99 @@ A: Not if the disruption was caused by extraordinary circumstances that could no
 Q: How much compensation can I get?
 A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
 
+### Claims against Eurowings: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/eurowings
+
+Eurowings is the low-cost airline of the Lufthansa Group, based in Germany. Its flights are covered by Regulation 261/2004 when they depart from the EU or fly into the EU. Claims are mostly about delays, cancellations, refunds and baggage on short-haul European routes.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Germany (contract claims): 3 years (from knowledge).
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Eurowings?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Eurowings have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Google: competition damages (Google Shopping)
+URL: https://jurimatch.com/claims/google
+
+In June 2017 the European Commission fined Google for favouring its own comparison shopping service in search results. The General Court upheld the decision in 2021 and the Court of Justice of the EU dismissed Google's final appeal in September 2024 (case C-48/22 P). Price comparison sites and other businesses have since claimed damages in national courts.
+
+Comparison shopping services: Businesses that ran comparison shopping sites in Europe have claimed lost profits caused by Google's conduct. A final infringement decision binds national courts, so these follow-on claims focus on the damage and its amount.
+
+Advertisers and other businesses: Group claims have also been brought on behalf of advertisers and other business users, arguing that Google's conduct raised prices. Whether they succeed depends on proving the harm.
+
+Deadlines: Under the Damages Directive the limitation period is at least five years and cannot start before the infringement ended and the claimant knew of it; national rules on when it starts differ. The final CJEU judgment of September 2024 is relevant to when time runs in many countries, so check the dates with a lawyer.
+
+Sources:
+- CJEU, Google and Alphabet v Commission, case C-48/22 P (Google Shopping): https://curia.europa.eu/juris/liste.jsf?num=C-48/22
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Do I have to prove that Google broke competition law?
+A: Not for the conduct covered by a final Commission decision: national courts are bound by it. You still have to prove the damage you suffered and its link to the infringement.
+
+Q: Are these claims funded?
+A: Often. Litigation funders back many competition damages claims in exchange for a share of the recovery.
+
+### Claims against Ibercaja: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/ibercaja
+
+Ibercaja is a Spanish bank based in Zaragoza, created from a savings bank, which absorbed Caja3 in 2013. Like other Spanish banks, it has faced consumer claims over floor clauses, mortgage costs, IRPH-indexed mortgages and credit cards.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Ibercaja before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
 ### Claims against Iberia: delays, cancellations and refunds
 URL: https://jurimatch.com/claims/iberia
 
 Iberia is a Spanish airline, so its flights are generally covered by EU Regulation 261/2004, including long-haul flights departing from Spain. Passenger claims are mostly about long delays, cancellations, missed connections, refunds and baggage.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Missed connections: When connecting flights are booked together and you reach the final destination more than three hours late, compensation is generally calculated on the distance to the final destination.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
 
 Q: Do I need a lawyer to claim compensation from Iberia?
 A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
@@ -343,10 +853,181 @@ A: Many do, where recovery looks realistic, for example when a regulated entity 
 Q: Should I join a group claim?
 A: Group or collective actions can share costs and make funding easier. Check who runs the claim, how fees are taken from any recovery, and whether you can leave.
 
+### Claims against ITA Airways: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/ita-airways
+
+ITA Airways is the Italian airline that started flying in October 2021, when Alitalia stopped operating. It is a separate company from Alitalia, so claims about earlier Alitalia flights are not normally brought against ITA. Its flights are covered by Regulation 261/2004 when they depart from or fly into the EU.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Italy (contract claims): 10 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from ITA Airways?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does ITA Airways have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Iveco: the trucks cartel
+URL: https://jurimatch.com/claims/iveco
+
+Iveco, the Italian truck maker, was fined by the European Commission in July 2016 for the trucks cartel. Buyers of Iveco trucks from 1997 to 2011 have claimed damages for the overcharge in Italy, Spain and other countries.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Italy (non-contractual damages (tort)): 5 years (from knowledge).
+
+Sources:
+- European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against Iveco?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
+### Claims against Jet2: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/jet2
+
+Jet2.com is a UK leisure airline based in Leeds, often sold with Jet2holidays packages. Its flights from the UK are covered by UK261 and its flights from EU airports back to the UK by EU261. Package holidaymakers also have rights against the tour operator.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
+
+Q: Do I need a lawyer to claim compensation from Jet2?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Jet2 have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against KLM: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/klm
+
+KLM Royal Dutch Airlines is the Dutch airline of the Air France-KLM group, with its hub at Amsterdam Schiphol. As an EU airline, its flights are covered by Regulation 261/2004 when they depart from the EU and when they fly into the EU. Many claims concern connections through Amsterdam, where the delay at the final destination is what counts.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Netherlands (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from KLM?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does KLM have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Kutxabank: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/kutxabank
+
+Kutxabank is a Basque bank formed from the savings banks BBK, Kutxa and Caja Vital, and it owns Cajasur in Andalusia. Customers of these banks have brought consumer claims over floor clauses, mortgage costs, IRPH-indexed mortgages and credit products.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Kutxabank before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Claims against LOT Polish Airlines: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/lot-polish-airlines
+
+LOT Polish Airlines is Poland's flag carrier, with its hub in Warsaw. As an EU airline, its flights are covered by Regulation 261/2004 when they depart from the EU and when they fly into the EU, including long-haul flights to Warsaw.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Poland (contract claims): 3–6 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from LOT Polish Airlines?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does LOT Polish Airlines have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
 ### Claims against Lufthansa: delays, cancellations and refunds
 URL: https://jurimatch.com/claims/lufthansa
 
 Lufthansa is a German airline, so its flights are generally covered by EU Regulation 261/2004, including long-haul flights departing from the EU. Passenger claims are mostly about long delays, cancellations, missed connections, refunds and baggage. In Germany, independent conciliation bodies handle passenger disputes free of charge for passengers.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Missed connections: When connecting flights are booked together and you reach the final destination more than three hours late, compensation is generally calculated on the distance to the final destination.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. In Germany, the regular limitation period is three years from the end of the year in which the claim arose. Use the limitation checker for other countries. Indicative period in Germany (contract claims): 3 years (from knowledge).
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
 
 Q: Do I need a lawyer to claim compensation from Lufthansa?
 A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
@@ -357,10 +1038,75 @@ A: Not if the disruption was caused by extraordinary circumstances that could no
 Q: How much compensation can I get?
 A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
 
+### Claims against MAN Truck & Bus: the trucks cartel
+URL: https://jurimatch.com/claims/man-truck
+
+MAN, the German truck maker in the Traton group, took part in the trucks cartel but was not fined because it revealed the cartel to the European Commission. That immunity does not protect it from damages claims: buyers of MAN trucks have also claimed for the overcharge.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Germany (non-contractual damages (tort)): 3 years (from knowledge).
+
+Sources:
+- European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against MAN Truck & Bus?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
+### Claims against mBank: Swiss franc mortgages
+URL: https://jurimatch.com/claims/mbank
+
+mBank is a Polish bank majority-owned by Germany's Commerzbank. It sold mortgages indexed to the Swiss franc before the 2008 financial crisis and has faced a large number of claims from borrowers about the exchange-rate clauses.
+
+Swiss franc mortgages (kredyty frankowe): Borrowers with mortgages indexed to or denominated in Swiss francs have claimed that the exchange-rate clauses were unfair because the bank set the rate and did not explain the currency risk. In Dziubak (C-260/18, October 2019) the Court of Justice of the EU held that a court may annul the whole contract where it cannot continue without the unfair term.
+
+What happens if the contract is annulled: Both sides return what they received: the borrower the capital, the bank the instalments. In June 2023 (C-520/21) the CJEU held that EU law precludes the bank from claiming remuneration beyond the capital it lent, and Polish courts have since applied that ruling.
+
+Settlements offered by banks: Several banks have offered settlements converting the loan into zlotys. A settlement can end the dispute, so compare it with the likely result of a court case before signing.
+
+Deadlines: In Poland, claims by consumers are generally subject to a six-year limitation period that ends on the last day of the calendar year. For Swiss franc loans, courts have held that the period for the borrower runs from when the borrower knew, or should have known, that the clause was unfair. Deadlines in these cases are still argued in court, so do not wait: gather the loan documents and get advice early. Indicative period in Poland (contract claims): 3–6 years.
+
+Sources:
+- CJEU, Dziubak, case C-260/18: https://curia.europa.eu/juris/liste.jsf?num=C-260/18
+- CJEU, Bank M., case C-520/21: https://curia.europa.eu/juris/liste.jsf?num=C-520/21
+- Rzecznik Finansowy (Polish Financial Ombudsman): https://rf.gov.pl/
+
+Q: Can I still sue mBank if I have repaid the Swiss franc loan?
+A: Often yes. Borrowers who have repaid their loan have brought claims to recover what they overpaid, but the deadline question needs checking for your dates.
+
+Q: Do lawyers take these cases on a success fee?
+A: Many Polish firms offer a fixed fee plus a success fee, or a success fee only. Ask for the agreement in writing and how the fee is calculated if the bank settles.
+
+Q: What did the CJEU decide about bank remuneration?
+A: In June 2023 (case C-520/21) the Court held that, when a loan contract is annulled because of unfair terms, EU law precludes the bank from claiming compensation beyond the return of the capital and interest on it from when the payment was demanded.
+
 ### Claims against Mercedes-Benz: diesel emissions
 URL: https://jurimatch.com/claims/mercedes-benz
 
 Owners of some Mercedes-Benz diesel cars have brought claims arguing that emissions controls worked differently on the road than in tests, for example through temperature-dependent settings. German authorities ordered recalls of some models, and the manufacturer has disputed that its vehicles contained unlawful defeat devices. This guide explains how these claims have generally worked.
+
+Damages for buyers in the EU: In March 2023 the Court of Justice of the EU ruled (case C-100/21, against Mercedes-Benz Group) that buyers can claim damages from a manufacturer that negligently installed an unlawful defeat device. Following that ruling, the German Federal Court of Justice (BGH) allowed damages for negligence, generally between 5% and 15% of the purchase price, depending on the case.
+
+Group claims in England and Wales: Group claims over diesel emissions involving several manufacturers, Mercedes-Benz among them, have been brought in the High Court in London.
+
+Which cars are affected: Claims depend on the specific engine, model and emissions class. A recall or software update letter is a useful starting point, but not every recalled car gives rise to a claim, and vice versa.
+
+Deadlines: Limitation periods depend on the country, and the start date often depends on when buyers knew or should have known about the issue. Many claims about vehicles affected in 2015 have reached or passed the ordinary limit in some countries. Group actions have their own registration or opt-in deadlines. Use the limitation checker and ask a lawyer before assuming your claim is still open. Indicative period in Germany (non-contractual damages (tort)): 3 years (from knowledge).
+
+Sources:
+- CJEU, Mercedes-Benz Group, case C-100/21: https://curia.europa.eu/juris/liste.jsf?num=C-100/21
 
 Q: Is my Mercedes affected?
 A: It depends on the engine, model and emissions class. Recall letters and official vehicle checkers are a starting point; a lawyer or claims group can check your specific car.
@@ -370,6 +1116,58 @@ A: There is no fixed amount. In Germany, courts following the 2023 CJEU ruling h
 
 Q: Do lawyers take these cases on a no-win-no-fee basis?
 A: Many do, often backed by litigation funding or legal expenses insurance. Ask how the fee is calculated and what happens if the claim fails.
+
+### Claims against Norwegian: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/norwegian
+
+Norwegian Air Shuttle is a Norwegian low-cost airline. Norway applies Regulation 261/2004 as part of the European Economic Area, so Norwegian's flights are covered in the same way as an EU airline's. Claims are mostly about delays, cancellations and refunds.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Norway (contract claims): 3 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Norwegian?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Norwegian have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against PKO Bank Polski: Swiss franc mortgages
+URL: https://jurimatch.com/claims/pko-bp
+
+PKO Bank Polski is Poland's largest bank. It is one of the banks that hold Swiss franc mortgage portfolios, and many borrowers have brought claims about the exchange-rate clauses in those loans. This guide explains how those claims generally work.
+
+Swiss franc mortgages (kredyty frankowe): Borrowers with mortgages indexed to or denominated in Swiss francs have claimed that the exchange-rate clauses were unfair because the bank set the rate and did not explain the currency risk. In Dziubak (C-260/18, October 2019) the Court of Justice of the EU held that a court may annul the whole contract where it cannot continue without the unfair term.
+
+What happens if the contract is annulled: Both sides return what they received: the borrower the capital, the bank the instalments. In June 2023 (C-520/21) the CJEU held that EU law precludes the bank from claiming remuneration beyond the capital it lent, and Polish courts have since applied that ruling.
+
+Settlements offered by banks: Several banks have offered settlements converting the loan into zlotys. A settlement can end the dispute, so compare it with the likely result of a court case before signing.
+
+Deadlines: In Poland, claims by consumers are generally subject to a six-year limitation period that ends on the last day of the calendar year. For Swiss franc loans, courts have held that the period for the borrower runs from when the borrower knew, or should have known, that the clause was unfair. Deadlines in these cases are still argued in court, so do not wait: gather the loan documents and get advice early. Indicative period in Poland (contract claims): 3–6 years.
+
+Sources:
+- CJEU, Dziubak, case C-260/18: https://curia.europa.eu/juris/liste.jsf?num=C-260/18
+- CJEU, Bank M., case C-520/21: https://curia.europa.eu/juris/liste.jsf?num=C-520/21
+- Rzecznik Finansowy (Polish Financial Ombudsman): https://rf.gov.pl/
+
+Q: Can I still sue PKO Bank Polski if I have repaid the Swiss franc loan?
+A: Often yes. Borrowers who have repaid their loan have brought claims to recover what they overpaid, but the deadline question needs checking for your dates.
+
+Q: Do lawyers take these cases on a success fee?
+A: Many Polish firms offer a fixed fee plus a success fee, or a success fee only. Ask for the agreement in writing and how the fee is calculated if the bank settles.
+
+Q: What did the CJEU decide about bank remuneration?
+A: In June 2023 (case C-520/21) the Court held that, when a loan contract is annulled because of unfair terms, EU law precludes the bank from claiming compensation beyond the return of the capital and interest on it from when the payment was demanded.
 
 ### Bad advice from a professional? Claiming for negligence
 URL: https://jurimatch.com/claims/professional-negligence
@@ -390,6 +1188,26 @@ A: Possibly, if your deposit was protected by a bank guarantee, escrow or insura
 Q: Do I need a lawyer in the country where the property is?
 A: Usually yes, because property claims are generally governed by local law and heard by local courts.
 
+### Claims against Renfe: train delays and refunds
+URL: https://jurimatch.com/claims/renfe
+
+Renfe is Spain's national rail operator, running AVE high-speed, long-distance and commuter trains. Its services are covered by the EU rail passenger rights rules, and Renfe also publishes its own punctuality commitment, which on some services is more generous than the EU minimum.
+
+Delay compensation: Under Regulation (EU) 2021/782, which applies since June 2023, passengers can claim 25% of the ticket price for a delay at arrival of 60 to 119 minutes and 50% for 120 minutes or more, unless the delay was caused by extraordinary circumstances such as severe weather. Operators can set a minimum amount below which nothing is paid.
+
+Refund or re-routing: If a delay of 60 minutes or more is expected, passengers can choose a refund, continuing the journey or re-routing, and are entitled to meals and, where needed, a hotel.
+
+Deadlines: Regulation 2021/782 lets operators set a time limit for compensation requests, which cannot be shorter than three months after the journey. Ask for compensation as soon as possible. A court claim after that is subject to the general limitation rules of the country where you sue. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- Regulation (EU) 2021/782 on rail passengers' rights (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2021/782/oj
+
+Q: How much does Renfe pay for a delay?
+A: Under the EU minimum rules, 25% of the ticket price for 60 to 119 minutes late and 50% for 120 minutes or more. Some operators pay more under their own commitments; check the conditions of your ticket.
+
+Q: Is a strike an extraordinary circumstance?
+A: Regulation 2021/782 lists exceptions such as extreme weather and major natural disasters; strikes by the operator's own staff are not among them. Check the facts of your case.
+
 ### Romance and pig-butchering scams: what victims can do
 URL: https://jurimatch.com/claims/romance-scam
 
@@ -402,6 +1220,20 @@ A: It depends on your country, how you paid and the bank's rules. Some countries
 URL: https://jurimatch.com/claims/ryanair
 
 Ryanair is an Irish airline, so its flights from or to the EU are generally covered by EU Regulation 261/2004, and flights from the UK by UK261. Most passenger claims against it are about long delays, cancellations, refunds and baggage. This guide explains how those claims usually work.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Extra charges: Some passengers have brought complaints about fees for bags, seats or check-in. These are usually treated as consumer complaints rather than EU261 claims.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Ireland (contract claims): 6 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
 
 Q: Do I need a lawyer to claim compensation from Ryanair?
 A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
@@ -417,7 +1249,273 @@ URL: https://jurimatch.com/claims/santander
 
 Banco Santander is one of Spain's largest banks and acquired Banco Popular in 2017. Like other Spanish banks, it has faced consumer claims over mortgage terms and credit products, and former Banco Popular investors brought claims after Popular's 2017 resolution. This guide explains the usual claims and routes in Spain.
 
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Banco Popular shares and bonds: Banco Popular was resolved by the European authorities in June 2017 and sold to Santander. Shareholders and bondholders who lost their investment have brought claims, mainly arguing that they were misinformed when they bought. Outcomes have depended on when and how the investment was made.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
 Q: Do I have to complain to Santander before going to court?
+A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
+
+Q: Do lawyers take these cases on a no-win-no-fee basis?
+A: Many do, especially floor clause and mortgage expense claims, because when the bank loses in full it is normally ordered to pay costs. Ask for the fee agreement (hoja de encargo) in writing, including what happens if the bank settles early.
+
+Q: Can I still claim if I have paid off the loan?
+A: Often yes. Having repaid or cancelled a mortgage does not by itself prevent a claim about an unfair term, but any later agreement or waiver you signed needs to be reviewed.
+
+### Claims against Santander Bank Polska: Swiss franc mortgages
+URL: https://jurimatch.com/claims/santander-bank-polska
+
+Santander Bank Polska, formerly Bank Zachodni WBK, is part of the Santander group. Borrowers with Swiss franc mortgages from the bank and from banks it took over have brought claims about the exchange-rate clauses.
+
+Swiss franc mortgages (kredyty frankowe): Borrowers with mortgages indexed to or denominated in Swiss francs have claimed that the exchange-rate clauses were unfair because the bank set the rate and did not explain the currency risk. In Dziubak (C-260/18, October 2019) the Court of Justice of the EU held that a court may annul the whole contract where it cannot continue without the unfair term.
+
+What happens if the contract is annulled: Both sides return what they received: the borrower the capital, the bank the instalments. In June 2023 (C-520/21) the CJEU held that EU law precludes the bank from claiming remuneration beyond the capital it lent, and Polish courts have since applied that ruling.
+
+Settlements offered by banks: Several banks have offered settlements converting the loan into zlotys. A settlement can end the dispute, so compare it with the likely result of a court case before signing.
+
+Deadlines: In Poland, claims by consumers are generally subject to a six-year limitation period that ends on the last day of the calendar year. For Swiss franc loans, courts have held that the period for the borrower runs from when the borrower knew, or should have known, that the clause was unfair. Deadlines in these cases are still argued in court, so do not wait: gather the loan documents and get advice early. Indicative period in Poland (contract claims): 3–6 years.
+
+Sources:
+- CJEU, Dziubak, case C-260/18: https://curia.europa.eu/juris/liste.jsf?num=C-260/18
+- CJEU, Bank M., case C-520/21: https://curia.europa.eu/juris/liste.jsf?num=C-520/21
+- Rzecznik Finansowy (Polish Financial Ombudsman): https://rf.gov.pl/
+
+Q: Can I still sue Santander Bank Polska if I have repaid the Swiss franc loan?
+A: Often yes. Borrowers who have repaid their loan have brought claims to recover what they overpaid, but the deadline question needs checking for your dates.
+
+Q: Do lawyers take these cases on a success fee?
+A: Many Polish firms offer a fixed fee plus a success fee, or a success fee only. Ask for the agreement in writing and how the fee is calculated if the bank settles.
+
+Q: What did the CJEU decide about bank remuneration?
+A: In June 2023 (case C-520/21) the Court held that, when a loan contract is annulled because of unfair terms, EU law precludes the bank from claiming compensation beyond the return of the capital and interest on it from when the payment was demanded.
+
+### Claims against SAS: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/sas
+
+SAS (Scandinavian Airlines) is the airline of Denmark, Norway and Sweden, headquartered near Stockholm. Its flights are covered by Regulation 261/2004 when they depart from the EU or EEA, or fly into it. Claims are mostly about delays, cancellations, refunds and baggage.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Sweden (contract claims): 10 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from SAS?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does SAS have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Scania: the trucks cartel
+URL: https://jurimatch.com/claims/scania
+
+Scania, the Swedish truck maker in the Traton group, did not settle with the European Commission and was fined separately in September 2017 for the same cartel. Its appeals were dismissed, and buyers of Scania trucks have claimed damages for the overcharge.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Sweden (non-contractual damages (tort)): 10 years.
+
+Sources:
+- European Commission: Scania decision, September 2017: https://ec.europa.eu/commission/presscorner/detail/en/IP_17_3021
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against Scania?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
+### Claims against SNCF Voyageurs: train delays and refunds
+URL: https://jurimatch.com/claims/sncf
+
+SNCF Voyageurs runs France's TGV INOUI, Ouigo, Intercités and regional trains. Its services are covered by the EU rail passenger rights rules, and SNCF also has its own delay guarantees on some services. Claims are mostly about delays, cancellations and strikes.
+
+Delay compensation: Under Regulation (EU) 2021/782, which applies since June 2023, passengers can claim 25% of the ticket price for a delay at arrival of 60 to 119 minutes and 50% for 120 minutes or more, unless the delay was caused by extraordinary circumstances such as severe weather. Operators can set a minimum amount below which nothing is paid.
+
+Refund or re-routing: If a delay of 60 minutes or more is expected, passengers can choose a refund, continuing the journey or re-routing, and are entitled to meals and, where needed, a hotel.
+
+Deadlines: Regulation 2021/782 lets operators set a time limit for compensation requests, which cannot be shorter than three months after the journey. Ask for compensation as soon as possible. A court claim after that is subject to the general limitation rules of the country where you sue. Indicative period in France (contract claims): 5 years (from knowledge).
+
+Sources:
+- Regulation (EU) 2021/782 on rail passengers' rights (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2021/782/oj
+
+Q: How much does SNCF Voyageurs pay for a delay?
+A: Under the EU minimum rules, 25% of the ticket price for 60 to 119 minutes late and 50% for 120 minutes or more. Some operators pay more under their own commitments; check the conditions of your ticket.
+
+Q: Is a strike an extraordinary circumstance?
+A: Regulation 2021/782 lists exceptions such as extreme weather and major natural disasters; strikes by the operator's own staff are not among them. Check the facts of your case.
+
+### Claims against SWISS: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/swiss
+
+Swiss International Air Lines (SWISS) is Switzerland's national airline and part of the Lufthansa Group. Switzerland applies Regulation 261/2004 under its air transport agreement with the EU, so SWISS flights from Swiss and EU airports are covered in the same way as an EU airline's.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Switzerland (contract claims): 5–10 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from SWISS?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does SWISS have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against TAP Air Portugal: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/tap-air-portugal
+
+TAP Air Portugal is Portugal's flag carrier, with its hub in Lisbon and many routes to Brazil and Africa. As an EU airline, its flights are covered by Regulation 261/2004 when they depart from the EU and when they fly into the EU, which includes flights from Brazil to Lisbon.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Portugal (contract claims): 20 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from TAP Air Portugal?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does TAP Air Portugal have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Transavia: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/transavia
+
+Transavia is the low-cost airline of the Air France-KLM group, with a Dutch company and a French company (Transavia France). Its flights are covered by Regulation 261/2004. Which company operated your flight decides where you complain, so check the flight number and your booking.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Netherlands (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Transavia?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Transavia have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Trenitalia: train delays and refunds
+URL: https://jurimatch.com/claims/trenitalia
+
+Trenitalia is Italy's main rail operator, running Frecce high-speed, Intercity and regional trains. Its services are covered by the EU rail passenger rights rules. Claims are mostly about delays, cancellations and missed connections.
+
+Delay compensation: Under Regulation (EU) 2021/782, which applies since June 2023, passengers can claim 25% of the ticket price for a delay at arrival of 60 to 119 minutes and 50% for 120 minutes or more, unless the delay was caused by extraordinary circumstances such as severe weather. Operators can set a minimum amount below which nothing is paid.
+
+Refund or re-routing: If a delay of 60 minutes or more is expected, passengers can choose a refund, continuing the journey or re-routing, and are entitled to meals and, where needed, a hotel.
+
+Deadlines: Regulation 2021/782 lets operators set a time limit for compensation requests, which cannot be shorter than three months after the journey. Ask for compensation as soon as possible. A court claim after that is subject to the general limitation rules of the country where you sue. Indicative period in Italy (contract claims): 10 years.
+
+Sources:
+- Regulation (EU) 2021/782 on rail passengers' rights (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2021/782/oj
+
+Q: How much does Trenitalia pay for a delay?
+A: Under the EU minimum rules, 25% of the ticket price for 60 to 119 minutes late and 50% for 120 minutes or more. Some operators pay more under their own commitments; check the conditions of your ticket.
+
+Q: Is a strike an extraordinary circumstance?
+A: Regulation 2021/782 lists exceptions such as extreme weather and major natural disasters; strikes by the operator's own staff are not among them. Check the facts of your case.
+
+### Claims against Turkish Airlines: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/turkish-airlines
+
+Turkish Airlines is Türkiye's flag carrier, with its hub in Istanbul. Because it is not an EU airline, Regulation 261/2004 covers its flights departing from an EU airport, but not its flights from Istanbul into the EU. Türkiye has its own air passenger rules for flights from Turkish airports.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Turkey (contract claims): 5–10 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Turkish Airlines?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Turkish Airlines have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Unicaja: floor clauses, mortgage costs and cards
+URL: https://jurimatch.com/claims/unicaja
+
+Unicaja is a Spanish bank from Málaga that merged with Liberbank in 2021, after earlier absorbing Caja España-Duero. Customers of all these banks now bring their claims against Unicaja, mostly about mortgage terms and credit products.
+
+Floor clauses (cláusulas suelo): Mortgage terms that set a minimum interest rate. Since 2013 Spanish courts have held them void where they were not transparent, and since the CJEU's December 2016 ruling banks must repay everything charged under a void clause, with interest.
+
+Mortgage set-up costs (gastos de hipoteca): Customers have claimed back part of the notary, registry, agency and valuation costs charged when the mortgage was signed, after courts held clauses passing all costs to the customer to be unfair.
+
+Revolving credit cards: Claims that the interest rate was usurious or that the cost of the card was not explained clearly. The Supreme Court has ruled on how to compare revolving rates with the market average.
+
+IRPH-indexed mortgages: Claims about mortgages indexed to IRPH instead of Euribor, where the question is whether the bank explained the index and its effect transparently.
+
+Deadlines: In Spain, the Supreme Court and the Court of Justice of the European Union (CJEU) have held that the action to declare an unfair term void in a consumer contract does not expire. The time limit to recover money already paid is more debated: the CJEU has said it cannot start running before the consumer could know the term was unfair. Deadlines differ by product and are still developing through case law, so do not wait: get documents together and take advice early. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- CJEU, Gutiérrez Naranjo, joined cases C-154/15, C-307/15 and C-308/15: https://curia.europa.eu/juris/liste.jsf?num=C-154/15
+- CJEU, Gómez del Moral Guasch, case C-125/18 (IRPH): https://curia.europa.eu/juris/liste.jsf?num=C-125/18
+- CJEU, CaixaBank and BBVA, cases C-224/19 and C-259/19 (mortgage costs): https://curia.europa.eu/juris/liste.jsf?num=C-224/19
+- Banco de España: Portal del Cliente Bancario: https://clientebancario.bde.es/
+
+Q: Do I have to complain to Unicaja before going to court?
 A: In practice, yes. A written complaint to the bank's customer service is required before you can go to the Banco de España complaints service, and since April 2025 most civil claims in Spain require a prior attempt to settle. A documented written complaint usually serves both purposes.
 
 Q: Do lawyers take these cases on a no-win-no-fee basis?
@@ -442,6 +1540,17 @@ URL: https://jurimatch.com/claims/volkswagen
 
 In September 2015 Volkswagen admitted that software in some of its diesel engines, mainly the EA189 engine used across the VW, Audi, SEAT and Skoda brands, made the cars perform differently in emissions tests than on the road. Owners in many countries have since brought individual and group claims. This guide explains how those claims have generally worked.
 
+Damages for buyers: Owners have claimed the car was worth less than they paid, or that they would not have bought it had they known. In Germany, the Federal Court of Justice (BGH) ruled in May 2020 that buyers of cars with the EA189 engine could claim damages against Volkswagen, with a deduction for the use they had of the car.
+
+Group and collective actions: Consumer associations and claimant groups have run collective cases in several countries, including a model declaratory action in Germany that ended in a settlement in 2020, and group litigation in England and Wales that settled in 2022 without an admission of liability.
+
+Other engines and brands: Claims have also been brought about other diesel engines and brands in the group. Whether a particular car is affected depends on the engine and model year.
+
+Deadlines: Limitation periods depend on the country, and the start date often depends on when buyers knew or should have known about the issue. Many claims about vehicles affected in 2015 have reached or passed the ordinary limit in some countries. Group actions have their own registration or opt-in deadlines. Use the limitation checker and ask a lawyer before assuming your claim is still open. Indicative period in Germany (non-contractual damages (tort)): 3 years (from knowledge).
+
+Sources:
+- Federal Court of Justice (BGH), VI ZR 252/19, 25 May 2020: https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&az=VI%20ZR%20252/19
+
 Q: Can I still claim against Volkswagen for dieselgate?
 A: It depends on the country, the engine, when you bought the car and whether you joined a group action. In some countries ordinary deadlines for EA189 cars have passed; in others, or for other engines, claims may still be possible. Get a deadline check before anything else.
 
@@ -451,15 +1560,104 @@ A: Not necessarily. Courts in some countries have allowed claims by buyers who h
 Q: Do lawyers take diesel claims on a no-win-no-fee basis?
 A: Many do, often with litigation funding or legal expenses insurance, because claims are numerous and similar. Read how the fee is calculated and what happens if you withdraw.
 
+### Claims against Volotea: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/volotea
+
+Volotea is a low-cost airline registered in Spain that mainly connects medium-sized European cities. As an EU airline, its flights are covered by Regulation 261/2004. Claims are mostly about cancellations, schedule changes, long delays and refunds.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
+Q: Do I need a lawyer to claim compensation from Volotea?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Volotea have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Volvo Trucks: the trucks cartel
+URL: https://jurimatch.com/claims/volvo-trucks
+
+The Swedish Volvo group, which also owns Renault Trucks, was fined by the European Commission in July 2016 for the trucks cartel. Buyers of Volvo and Renault trucks from 1997 to 2011 have claimed damages, and the CJEU's 2022 ruling on limitation came from a Spanish case against Volvo and DAF.
+
+Damages for overcharges: In July 2016 the European Commission found that MAN, Volvo/Renault, Daimler, Iveco and DAF had colluded for 14 years (1997 to 2011) on truck pricing and on passing on the costs of emissions technology, and in September 2017 it found the same about Scania. Buyers and lessees of medium and heavy trucks from that period have claimed the extra price they paid.
+
+Group claims: Many hauliers have joined group claims organised by law firms, associations or claim vehicles, often backed by litigation funders, in Spain, Germany, the Netherlands, the United Kingdom and elsewhere.
+
+How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
+
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Sweden (non-contractual damages (tort)): 10 years.
+
+Sources:
+- European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
+- CJEU, Volvo and DAF Trucks, case C-267/20 (limitation of cartel claims): https://curia.europa.eu/juris/liste.jsf?num=C-267/20
+- Directive 2014/104/EU on competition damages actions (EUR-Lex): https://eur-lex.europa.eu/eli/dir/2014/104/oj
+
+Q: Can my company still claim against Volvo Trucks?
+A: Possibly, depending on the country where you sue and when your limitation period started. After the CJEU's 2022 ruling many claims were filed, but each country's own rules decide whether yours is still open.
+
+Q: Do I need the original invoices?
+A: They help a lot. Where they are lost, registration records and bank statements can sometimes prove the purchase and its price.
+
+Q: Who pays the expert report?
+A: In group claims the funder or the law firm usually advances it and recovers it from the proceeds. In an individual claim, ask the firm how it is paid.
+
 ### Claims against Vueling: delays, cancellations and refunds
 URL: https://jurimatch.com/claims/vueling
 
 Vueling is a Spanish airline, so its flights are generally covered by EU Regulation 261/2004. Passenger claims against it are mostly about long delays, cancellations, missed connections, refunds and baggage. In Spain, the aviation safety agency AESA handles passenger complaints.
 
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Spain (contract claims): 5 years.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+
 Q: Do I need a lawyer to claim compensation from Vueling?
 A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
 
 Q: Does Vueling have to pay if the delay was caused by weather or strikes?
+A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
+
+Q: How much compensation can I get?
+A: Under EU261 the fixed amounts are 250, 400 or 600 euros depending on distance (UK261 uses pounds). Our flight compensation calculator shows which band applies. Refunds and expenses for care are separate from compensation.
+
+### Claims against Wizz Air: delays, cancellations and refunds
+URL: https://jurimatch.com/claims/wizz-air
+
+Wizz Air is a low-cost airline headquartered in Hungary, with a separate UK company for many flights from the UK. Its flights from the EU are covered by EU261 and flights operated by its UK company from or to the UK by UK261. Claims are mostly about cancellations, long delays, refunds and extra charges.
+
+Delay and cancellation compensation: Under EU Regulation 261/2004 (and its UK copy, UK261), passengers can claim fixed compensation for long delays at arrival, late cancellations and denied boarding, unless the airline shows the disruption was caused by extraordinary circumstances such as severe weather or air traffic control restrictions. The amount depends on the flight distance.
+
+Refunds and care: When a flight is cancelled, passengers are entitled to choose between a refund and re-routing, and to care (meals, and a hotel if an overnight stay is needed) while they wait. Customers have brought complaints where refunds were slow or only vouchers were offered.
+
+Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
+
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now.
+
+Sources:
+- Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
+- UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
+
+Q: Do I need a lawyer to claim compensation from Wizz Air?
+A: Usually not for the first step: you can claim directly with the airline for free. A claim company or no-win-no-fee lawyer can help if the airline refuses or does not reply, in exchange for a share of the compensation.
+
+Q: Does Wizz Air have to pay if the delay was caused by weather or strikes?
 A: Not if the disruption was caused by extraordinary circumstances that could not have been avoided with reasonable measures, such as severe weather. Courts have held that strikes by the airline's own staff are not normally extraordinary, while strikes by third parties such as air traffic controllers can be. Each case depends on its facts.
 
 Q: How much compensation can I get?
@@ -1263,6 +2461,11 @@ URL: https://jurimatch.com/maps/limitation-periods
 
 Pick a claim type to see the commonly cited limitation period in each country. Each country links to its deadline checker. Indicative only: exceptions are frequent.
 
+### Build the timeline of your case
+URL: https://jurimatch.com/tools/case-timeline
+
+Write down what happened and when in a simple table, sorted by date, then copy it, print it as PDF or start your case with the timeline already written.
+
 ### What would you actually keep?
 URL: https://jurimatch.com/tools/case-value
 
@@ -1273,6 +2476,11 @@ URL: https://jurimatch.com/tools/claim-letter
 
 Fill in a few fields and get a clear, polite complaint letter to send before starting a legal claim. Copy or download it for free.
 
+### Your claim pack
+URL: https://jurimatch.com/tools/claim-pack
+
+Put your saved tool results, deadlines, letter, document checklist and next steps on one printable page, kept only in your browser, ready to show a lawyer.
+
 ### Contingency fee calculator: what you actually keep
 URL: https://jurimatch.com/tools/contingency-fee-calculator
 
@@ -1282,6 +2490,11 @@ Free no-win-no-fee calculator: enter the amount recovered, the success fee perce
 URL: https://jurimatch.com/tools/document-checklist
 
 A free, printable checklist of the documents to gather before you speak to a no-win-no-fee lawyer, by case type: contracts, payments, messages, dates and more.
+
+### Cancel an online purchase: your 14-day deadline and letter
+URL: https://jurimatch.com/tools/eu-withdrawal-right
+
+When does your 14-day right to cancel an online purchase in the EU end? Free calculator with the excluded cases and a withdrawal letter based on the…
 
 ### Flight claim deadlines by country
 URL: https://jurimatch.com/tools/flight-claim-deadlines
@@ -1318,6 +2531,11 @@ URL: https://jurimatch.com/tools/limitation-checker
 
 Free limitation deadline checker for 39 countries. Pick a country, claim type and date to get an indicative deadline, days remaining and a calendar reminder.
 
+### Lost, damaged or delayed baggage: what the airline may owe
+URL: https://jurimatch.com/tools/lost-baggage-compensation
+
+Free calculator for lost, damaged or delayed checked baggage under the Montreal Convention: the 1,519 SDR limit in euros or pounds, complaint deadlines…
+
 ### Dismissal compensation in Spain
 URL: https://jurimatch.com/tools/spain-dismissal-compensation
 
@@ -1327,6 +2545,11 @@ Free calculator for statutory severance in Spain: unfair dismissal (33 days per 
 URL: https://jurimatch.com/tools/spain-legal-costs-cap
 
 Free calculator for the most a losing party pays towards the other side's lawyer in a Spanish civil case: one third of the value of the claim under art.
+
+### Getting your tenancy deposit back in England
+URL: https://jurimatch.com/tools/tenancy-deposit-return
+
+Free calculator for tenants in England: the 30-day deadline to protect your deposit, the 10 days to return it after agreement, the 1 to 3 times penalty…
 
 ### Terms of use for the free tools
 URL: https://jurimatch.com/tools/terms
@@ -2277,6 +3500,17 @@ A: Em primeira instância na Justiça do Trabalho, sim, pelo chamado jus postula
 Q: Quanto cobra um advogado trabalhista?
 A: Não há valor único. É comum o advogado cobrar um percentual do que for obtido, só em caso de êxito. Combine tudo por escrito, inclusive o que acontece em caso de acordo.
 
+### Bagagem extraviada ou danificada: prazos da companhia e seus direitos
+URL: https://jurimatch.com/pt-br/guias/bagagem-extraviada
+
+Quando a mala não aparece na esteira ou chega danificada, a companhia aérea tem prazos definidos pela ANAC para devolver, reparar ou indenizar. O mais importante é registrar o problema antes de sair do aeroporto. Veja o passo a passo.
+
+Q: Em quanto tempo a companhia deve devolver a mala?
+A: Pela Resolução 400 da ANAC, em até 7 dias em voos domésticos e em até 21 dias em voos internacionais. Depois disso, deve indenizar.
+
+Q: Posso comprar roupas enquanto espero a mala?
+A: Se você estiver fora da cidade onde mora, a companhia deve ressarcir as despesas de primeira necessidade. Guarde as notas fiscais e compre apenas o necessário.
+
 ### Cobrança indevida do banco: como reclamar e pedir a devolução
 URL: https://jurimatch.com/pt-br/guias/cobranca-indevida-banco
 
@@ -2290,6 +3524,72 @@ A: O Banco Central recebe reclamações e as usa na supervisão das instituiçõ
 
 Q: Posso processar o banco sem advogado?
 A: Sim, no Juizado Especial Cível, em causas de até 20 salários mínimos. Acima disso e até 40 salários mínimos, o advogado é obrigatório.
+
+### Golpe do Pix: como pedir a devolução e quando o banco responde
+URL: https://jurimatch.com/pt-br/guias/golpe-do-pix
+
+Quem fez um Pix por causa de um golpe ou teve uma transferência feita sem autorização deve agir rápido. O Banco Central criou um mecanismo para tentar bloquear e devolver o dinheiro, e em alguns casos o banco responde pelo prejuízo. Veja o que fazer.
+
+Q: O banco é obrigado a devolver o dinheiro do golpe?
+A: Não em todos os casos. O MED só devolve se houver saldo na conta de destino. O banco responde quando a fraude decorre de falha no serviço ou da segurança bancária, conforme a Súmula 479 do STJ.
+
+Q: Preciso fazer boletim de ocorrência?
+A: É recomendado. O boletim registra a fraude, ajuda na investigação e costuma ser pedido pelo banco e pelo juiz.
+
+### Horas extras não pagas: como calcular e cobrar na Justiça do Trabalho
+URL: https://jurimatch.com/pt-br/guias/horas-extras
+
+Trabalhou além da jornada e não recebeu? A Constituição e a CLT garantem o pagamento das horas extras com adicional. Veja como funciona, que provas reunir e qual é o prazo para cobrar.
+
+Q: Ainda estou no emprego. Posso cobrar as horas extras?
+A: Sim. O prazo de 2 anos só começa a contar depois do fim do contrato, e você pode cobrar os últimos 5 anos a qualquer momento antes disso.
+
+Q: Sem cartão de ponto eu consigo provar?
+A: Pode ser possível, com testemunhas, mensagens e outros registros. Em empresas com mais de 20 empregados, o registro de ponto é obrigatório, o que pesa a favor do trabalhador quando a empresa não o apresenta.
+
+### Nome negativado indevidamente: como limpar e quando cabe indenização
+URL: https://jurimatch.com/pt-br/guias/nome-negativado-indevidamente
+
+Ter o nome negativado por uma dívida que não existe, que já foi paga ou sem aviso prévio fecha portas para crédito e compras. O Código de Defesa do Consumidor e a jurisprudência do STJ dão regras claras para corrigir o problema.
+
+Q: Paguei a dívida. Em quanto tempo meu nome sai do cadastro?
+A: O credor deve pedir a exclusão em até 5 dias úteis contados do pagamento, conforme a Súmula 548 do STJ.
+
+Q: Sempre tenho direito a dano moral?
+A: Não. Se já havia outra negativação legítima antes, a Súmula 385 do STJ afasta o dano moral, embora você possa pedir o cancelamento do registro indevido.
+
+### Plano de saúde negou cobertura: como reclamar na ANS e na Justiça
+URL: https://jurimatch.com/pt-br/guias/plano-de-saude-negou-cobertura
+
+Negativas de exames, cirurgias, medicamentos ou internações estão entre as queixas mais comuns contra planos de saúde. A Lei dos Planos de Saúde e as regras da ANS dão caminhos rápidos para contestar. Veja como agir.
+
+Q: Reclamar na ANS adianta?
+A: Muitas vezes, sim. A ANS encaminha a reclamação à operadora, que deve responder em prazo curto, e boa parte dos casos se resolve nessa fase.
+
+Q: O plano pode negar porque o procedimento não está no rol da ANS?
+A: Desde a Lei 14.454/2022, o rol é a referência básica, mas tratamentos fora dele podem ter cobertura quando atendem aos critérios da lei, como comprovação de eficácia.
+
+### Produto com defeito: troca, devolução do dinheiro e prazos do CDC
+URL: https://jurimatch.com/pt-br/guias/produto-com-defeito
+
+Comprou um produto que apresentou defeito? O Código de Defesa do Consumidor dá prazos para reclamar e regras claras sobre conserto, troca e devolução do dinheiro. Veja como usar esses direitos.
+
+Q: A loja pode me mandar falar só com o fabricante?
+A: Não. Pelo art. 18 do CDC, o comerciante e o fabricante respondem juntos pelos defeitos do produto, e você pode reclamar com qualquer um deles.
+
+Q: Garantia estendida substitui a garantia legal?
+A: Não. A garantia legal do CDC vale sempre. A garantia contratual do fabricante e a garantia estendida se somam a ela.
+
+### Verbas rescisórias atrasadas ou erradas: prazos e multas da CLT
+URL: https://jurimatch.com/pt-br/guias/verbas-rescisorias
+
+Ao fim do contrato, a empresa tem prazo para pagar as verbas rescisórias. Se atrasar ou pagar errado, a lei prevê multas. Veja quais são os seus direitos e o que fazer.
+
+Q: Qual é o prazo para a empresa pagar a rescisão?
+A: Até 10 dias contados do término do contrato, pelo art. 477 da CLT. O atraso gera multa de um salário a favor do empregado.
+
+Q: Pedi demissão. Tenho direito à multa de 40% do FGTS?
+A: Não. A multa de 40% é devida na dispensa sem justa causa. Quem pede demissão recebe saldo de salário, férias com um terço e 13º proporcional, mas não saca o FGTS nem recebe a multa.
 
 ### Voo atrasado ou cancelado: seus direitos e como reclamar
 URL: https://jurimatch.com/pt-br/guias/voo-atrasado
@@ -2340,7 +3640,7 @@ JuriMatch is free to search. Claimants pay a subscription for matching only when
 ### Hand-verified firms, free to reuse
 URL: https://jurimatch.com/open-data
 
-Download the 716 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
+Download the 697 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
 
 ### Press and data
 URL: https://jurimatch.com/press

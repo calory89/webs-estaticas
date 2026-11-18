@@ -1,16 +1,62 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# RealHunt: everything public may be crawled and indexed, by search engines and by AI assistants.
+# Short index for AI: https://realhunt.co/llms.txt (Spanish: /es/llms.txt) · full reference text: https://realhunt.co/llms-full.txt
+# Data files and their description: https://realhunt.co/research/open-data · https://realhunt.co/openapi.json
+# The news sitemap is added below by the build (seo/reach) next to the main index.
 
 User-agent: *
 Allow: /
+Disallow: /__sb/
+Disallow: /api/
+# Searches typed into the site (/?q=...): endless addresses for the same homes. The lists to index are /homes/...
+Disallow: /*?q=
+Disallow: /*&q=
+
+# Search engines
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: YandexBot
+User-agent: YandexImages
+User-agent: Bravebot
+User-agent: Qwantbot
+User-agent: SeznamBot
+User-agent: MojeekBot
+User-agent: Yeti
+User-agent: PetalBot
+Allow: /
+Disallow: /__sb/
+Disallow: /*?q=
+Disallow: /*&q=
+
+# AI search and assistants (answers that cite and link to us)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+User-agent: Kagibot
+User-agent: CCBot
+Allow: /
+Disallow: /__sb/
+Disallow: /*?q=
+Disallow: /*&q=
+
+# Link previews
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: LinkedInBot
+User-agent: WhatsApp
+Allow: /
 
 Sitemap: https://realhunt.co/sitemap.xml
+Sitemap: https://realhunt.co/sitemap-news.xml

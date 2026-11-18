@@ -10,7 +10,7 @@
 const ORIGIN = 'https://jurimatch.com';
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/';
 // Public anon key (already shipped in the site's JavaScript). Row-level security applies.
-const ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+const ANON = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X';
 const CURATED = 'curated_2026_10';
 const OG_IMAGE = ORIGIN + '/og-image.png';
 const MANIFEST_TTL = 10 * 60 * 1000;
@@ -207,7 +207,7 @@ async function dynamicPage(path, m, ctx) {
 // /sitemap.xml built from the manifest (indexable pages only) plus hand-verified firm profiles
 // and blog posts from the database. Cached 1 h at the edge.
 // One URL per screen: old or duplicate paths answer with a permanent redirect.
-const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers', '/fees': '/how-it-works' };
+const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers', '/fees': '/how-it-works', '/guides': '/site-map', '/for-lawyers/founding': '/founding-firms', '/founding': '/founding-firms' };
 
 export async function route(req, u, env, ctx) {
   const to = REDIRECTS[normPath(u.pathname)];
@@ -216,7 +216,7 @@ export async function route(req, u, env, ctx) {
   const m = await loadManifest(env, u);
   if (!m) return null;
   const day = (m.generatedAt || new Date().toISOString()).slice(0, 10);
-  const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path]) => [ORIGIN + path, day]);
+  const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path, p]) => [ORIGIN + path, String(p.modified || day).slice(0, 10)]);
   const [firms, posts] = await Promise.all([
     // The API returns at most 1,000 rows per request: read the hand-verified firms in pages.
     Promise.all([0, 1000, 2000, 3000, 4000].map((o) => sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000&offset=' + o, ctx))).then((pages) => pages.flatMap((x) => x || [])),

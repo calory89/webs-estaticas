@@ -68,6 +68,8 @@
       '<div class="mk-leg">' + LV.map(function(l){ return '<span style="--c:' + l[2] + '">' + l[1] + ' <b>' + Math.round((n[l[0]] || 0) / tot * 100) + '%</b> (' + fmt(n[l[0]] || 0) + ')</span>'; }).join('') + '</div>' +
       '<p class="mk-note">' + fmt(tot) + ' checks in total: 6 per project. Registry and Confirmed mean an official register or an independent source backs what the developer says.</p>';
   }
+  // n25e: named projects link to their page directly (/p/<id>/ is a 301); the map comes from the server (#kb-slugs), Sumba ids are not in it
+  var SLUGS = {}; try { SLUGS = JSON.parse((document.getElementById('kb-slugs') || {}).textContent || '{}') || {}; } catch (e) {}
   function byScore(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (b.vscore || 0) - (a.vscore || 0) || (a.id < b.id ? -1 : 1); }
   function row(c, showMarket){
     var bd = [];
@@ -75,7 +77,7 @@
     if (contra(c)) bd.push('<span class="mk-b ct">Contradicted</span>');
     if (flagged(c)) bd.push('<span class="mk-b fl">' + (c.flags.length === 1 ? '1 flag' : c.flags.length + ' flags') + '</span>');
     var meta = [showMarket ? c.market : '', c.stage ? c.stage.charAt(0).toUpperCase() + c.stage.slice(1) : 'Stage not stated', c.band || 'Price not stated'].filter(Boolean).join(' · ');
-    return '<li><a class="mk-row" href="/p/?id=' + encodeURIComponent(c.id) + '"><span class="id">' + esc(c.id) + '</span><span class="meta">' + esc(meta) + '</span>' +
+    return '<li><a class="mk-row" href="' + (SLUGS[c.id] ? '/projects/' + SLUGS[c.id] + '/' : '/p/' + encodeURIComponent(c.id) + '/') + '"><span class="id">' + esc(c.id) + '</span><span class="meta">' + esc(meta) + '</span>' +
       '<span class="sc"><span class="mk-col">Published </span><b>' + (c.score || 0) + '</b>/' + (c.max || 6) + '</span>' +
       '<span class="cf"><span class="mk-col">Confirmed </span><b>' + (c.vscore || 0) + '</b>/' + (c.max || 6) + '</span>' +
       '<span class="bd">' + bd.join('') + '</span></a></li>';
@@ -83,7 +85,7 @@
   function listSec(C, label, showMarket){
     var top = C.slice().sort(byScore).slice(0, 4).map(function(c){ return c.id; });
     var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
-      '<p class="sub">Anonymous until a verification is finished. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
+      '<p class="sub">Each project also has its own page with its name and sourced facts. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
       '<div class="mk-tools" role="group" aria-label="Sort projects"><span class="lbl">Sort</span>' +
       '<button type="button" class="mk-sort" data-s="desc" aria-pressed="true">Score, high to low</button><button type="button" class="mk-sort" data-s="asc" aria-pressed="false">Score, low to high</button><button type="button" class="mk-sort" data-s="id" aria-pressed="false">ID</button></div>' +
       '<ol class="mk-list" id="mk-list"></ol><div class="mk-acts">';
@@ -114,13 +116,13 @@
     var cs = Object.keys(G).sort();
     var nm = 0; cs.forEach(function(c){ nm += Object.keys(G[c]).length; });
     $('mk-root').innerHTML = '<p class="eyebrow">Market files</p><h1 id="mk-h1">Every off-plan market we track</h1>' +
-      (miss ? '<p class="lead">We have no market or country called "' + esc(miss) + '" yet. Pick one below, or <a href="/check">tell us about your project</a>.</p>' : '<p class="lead">' + fmt(C.length) + ' anonymous projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>');
+      (miss ? '<p class="lead">We have no market or country called "' + esc(miss) + '" yet. Pick one below, or <a href="/check">tell us about your project</a>.</p>' : '<p class="lead">' + fmt(C.length) + ' projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>');
     $('mk-body').innerHTML = '<section class="mk-sec"><div class="wrap"><h2>Markets by country</h2><div class="mk-grp">' + cs.map(function(c){
       var ms = Object.keys(G[c]).sort(), tot = ms.reduce(function(s, m){ return s + G[c][m]; }, 0);
       return '<section><h3>' + (ms.length > 1 ? '<a href="' + clink(c) + '">' + esc(c) + '</a>' : esc(c)) + ' <small style="color:var(--muted);font-weight:600">' + tot + '</small></h3>' + chips(ms.map(function(m){ return { name: m, n: G[c][m], href: mlink(m) }; })) + '</section>';
     }).join('') + '</div></div></section>' + cta();
     setMeta(miss ? 'Market not found: all off-plan markets | Kolaboro' : 'Off-plan market files: ' + nm + ' markets, ' + cs.length + ' countries | Kolaboro',
-      'Disclosure, verification and transparency index for every off-plan property market Kolaboro tracks: ' + fmt(C.length) + ' anonymous projects in ' + nm + ' markets.', BASE);
+      'Disclosure, verification and transparency index for every off-plan property market Kolaboro tracks: ' + fmt(C.length) + ' projects in ' + nm + ' markets.', BASE);
   }
 
   function renderMarket(d, market, R){
@@ -130,21 +132,32 @@
     var sibs = Object.keys(sib).sort();
     $('mk-crumb').innerHTML = ' / ' + esc(market);
     $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
-      '<p class="lead">' + C.length + ' anonymous project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
+      '<p class="lead">' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
       '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
     var L = listSec(C, market, false);
     $('mk-body').innerHTML =
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Key numbers</p><h2>What ' + esc(market) + ' developers publish</h2>' + kpis(C) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(market) + ' against every market</h2><p class="sub">Share of projects that publish each thing a buyer needs, here and across all ' + fmt(ALL.length) + ' projects.</p>' + bars(C, ALL, market) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Verification</p><h2>Who backs what developers say</h2><p class="sub">Every check on every ' + esc(market) + ' project, by the strongest source we found.</p>' + levels(C) + '</div></section>' +
+      '<section class="mk-sec" id="indices"><div class="wrap"><p class="eyebrow">Indices</p><h2>' + esc(market) + ' on our six indices</h2><p class="sub">Delay, promises, hazards, company records, insolvency notices and asking prices for this market, each from the public file behind its page.</p><div id="mk-ind" class="mk-ind" aria-live="polite"><p class="sub">Loading the indices.</p></div></div></section>' +
       L.html +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">More</p><h2>' + (sibs.length ? 'Other markets in ' + esc(country) : 'Other markets') + '</h2>' +
       (sibs.length ? chips(sibs.map(function(m){ return { name: m, n: sib[m], href: mlink(m) }; })) + '<div class="mk-acts"><a class="btn btn-line" href="' + clink(country) + '">All of ' + esc(country) + '</a>' : '<p class="sub">' + esc(market) + ' is the only market we track in ' + esc(country) + ' so far.</p><div class="mk-acts">') +
       '<a class="btn btn-line" href="/transparency-index/">Transparency index</a><a class="btn btn-line" href="/m/">All markets</a></div></div></section>' + cta();
-    wireSort(L.draw);
+    wireSort(L.draw); indices(market);
     var t = 'Off-plan in ' + place + ': ' + C.length + ' project' + pl + ' checked | Kolaboro';
     var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + R.rows.length + ')' : '') + '.';
     setMeta(t, desc, BASE + encodeURIComponent(market.toLowerCase().replace(/\s+/g, '-')) + '/');
+  }
+
+  /* Indices block: /api/x/ins/indices (block X6) reads delay-index, promises, hazards, company graph, insolvency watch and price index */
+  function indices(market){
+    var box = $('mk-ind'); if (!box || !window.fetch) return;
+    fetch('/api/x/ins/indices?market=' + encodeURIComponent(market)).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }).then(function(o){
+      box.innerHTML = '<ul class="mk-ix">' + (o.indices || []).map(function(x){
+        return '<li class="' + (x.status === 'ok' ? 'ix-ok' : 'ix-thin') + '"><a href="' + esc(x.href) + '"><span class="k">' + esc(x.label) + '</span><b>' + (x.status === 'ok' || x.value ? esc(x.value || '') : 'Not enough data') + '</b><span class="t">' + esc(x.text) + '</span>' + (x.as_of ? '<span class="d">Data ' + esc(x.as_of) + '. Source page &rarr;</span>' : '<span class="d">Source page &rarr;</span>') + '</a></li>';
+      }).join('') + '</ul><p class="sub" style="margin-top:12px">' + esc(o.note || '') + ' JSON: <a href="/api/x/ins/indices?market=' + encodeURIComponent(market) + '">/api/x/ins/indices</a>.</p>';
+    }).catch(function(){ box.innerHTML = '<p class="sub">The indices could not load right now. Open them directly: <a href="/index/delays/">delay index</a>, <a href="/promises/">promises</a>, <a href="/hazards/">hazards</a>, <a href="/graph/global/">company graph</a>, <a href="/tools/insolvency-check/">insolvency</a>, <a href="/index/prices/">price index</a>.</p>'; });
   }
 
   function renderCountry(d, country, R){
@@ -154,7 +167,7 @@
     var RI = {}; R.rows.forEach(function(r){ RI[r.market] = r; });
     $('mk-crumb').innerHTML = ' / ' + esc(country);
     $('mk-root').innerHTML = '<p class="eyebrow">Country file</p><h1 id="mk-h1">Off-plan in ' + esc(country) + '</h1>' +
-      '<p class="lead">' + C.length + ' anonymous projects tracked across ' + ms.length + ' market' + (ms.length === 1 ? '' : 's') + ' in ' + esc(country) + '. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
+      '<p class="lead">' + C.length + ' projects tracked across ' + ms.length + ' market' + (ms.length === 1 ? '' : 's') + ' in ' + esc(country) + '. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
       '<div class="mk-tags"><span class="mk-tag"><b>' + ms.length + '</b> market' + (ms.length === 1 ? '' : 's') + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>';
     var L = listSec(C, country, true);
     $('mk-body').innerHTML =

@@ -1,0 +1,195 @@
+{
+ "version": "press-monthly-1",
+ "month": "2026-11",
+ "title": "Kolaboro off-plan data, November 2026",
+ "generated": "2026-11-04",
+ "licence": "CC BY 4.0",
+ "credit": "Kolaboro, kolaboro.com",
+ "contact": "press@kolaboro.com",
+ "headlines": [
+  {
+   "key": "share_past_first",
+   "value": 8.2,
+   "unit": "%",
+   "display": "8.2%",
+   "text": "8.2% of tracked off-plan projects with a usable handover date (62 of 755) are past the first handover date on record.",
+   "source": [
+    "https://kolaboro.com/index/delays/",
+    "https://kolaboro.com/data/delay-index.json"
+   ]
+  },
+  {
+   "key": "median_late",
+   "value": 10.5,
+   "unit": "months",
+   "display": "10.5 months",
+   "text": "Median time past the first handover date among those 62 projects: 10.5 months (90th percentile: 35 months).",
+   "source": [
+    "https://kolaboro.com/index/delays/",
+    "https://kolaboro.com/data/delay-index.json"
+   ]
+  },
+  {
+   "key": "share_past_current",
+   "value": 4.1,
+   "unit": "%",
+   "display": "4.1%",
+   "text": "4.1% (31 of 755) are past the handover date their sellers advertise today.",
+   "source": [
+    "https://kolaboro.com/index/delays/",
+    "https://kolaboro.com/data/bali-cases.json"
+   ]
+  },
+  {
+   "key": "transparency_median",
+   "value": 42.0,
+   "unit": "of 100",
+   "display": "42 of 100",
+   "text": "Median transparency index across 95 markets with 3 or more tracked projects: 42 out of 100.",
+   "source": [
+    "https://kolaboro.com/transparency-index/",
+    "https://kolaboro.com/api/open/markets"
+   ]
+  },
+  {
+   "key": "price_index",
+   "value": 100.03,
+   "unit": "index",
+   "display": "100.03",
+   "text": "Advertised asking-price index, all tracked markets: 100.03 on 2026-11-03 (base 100 on 2026-10-28, same-project pairs only).",
+   "source": [
+    "https://kolaboro.com/index/prices/",
+    "https://kolaboro.com/data/price-index.json"
+   ]
+  }
+ ],
+ "paragraph": {
+  "text": "Kolaboro data show 896 tracked projects across 144 markets in November 2026. Of these, 755 projects have a handover date that can be used for the delay index. History for the delay index starts this month. Among those 755 projects, 62 are past the first handover date, a share of 8.2%, and 31 are past the current advertised handover date, a share of 4.1%. For projects past the first handover date, the median is 10.5 months and the 90th percentile is 35.0 months. In 50 markets, at least 5 projects have a handover date. The transparency index covers 95 markets, with a median of 42.0 on a scale with a maximum of 100. The price index for all markets stands at 100.03, against a base of 100.",
+  "by": "claude-sonnet-5-5",
+  "check": {
+   "numbers_found": [
+    "896",
+    "144",
+    "2026",
+    "755",
+    "755",
+    "62",
+    "8.2",
+    "31",
+    "4.1",
+    "10.5",
+    "90",
+    "35.0",
+    "50",
+    "5",
+    "95",
+    "42.0",
+    "100",
+    "100.03",
+    "100"
+   ],
+   "all_backed": true,
+   "problems": []
+  },
+  "template_check": {
+   "numbers_found": [
+    "2026",
+    "896",
+    "144",
+    "755",
+    "62",
+    "8.2",
+    "10.5",
+    "90",
+    "35",
+    "31",
+    "4.1",
+    "95",
+    "3",
+    "42",
+    "100",
+    "100.03",
+    "2026",
+    "11",
+    "03",
+    "100",
+    "2026",
+    "10",
+    "28"
+   ],
+   "all_backed": true,
+   "problems": []
+  }
+ },
+ "ai_spend": {
+  "stop_reason": "end_turn",
+  "blocks": [
+   "thinking",
+   "text"
+  ],
+  "words": 127,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 478,
+  "output_tokens": 1062,
+  "usd_upper_bound": 0.0868
+ },
+ "charts": [
+  {
+   "file": "chart-delays.svg",
+   "title": "Share of projects past the first promised handover, by market"
+  },
+  {
+   "file": "chart-months-late.svg",
+   "title": "Months past the first promised handover, all markets"
+  },
+  {
+   "file": "chart-transparency.svg",
+   "title": "Transparency index by market"
+  }
+ ],
+ "facts": {
+  "month": "November 2026",
+  "tracked_projects": 896,
+  "markets_tracked": 144,
+  "projects_with_usable_handover_date": 755,
+  "past_first_handover": 62,
+  "share_past_first_pct": 8.2,
+  "past_current_advertised_handover": 31,
+  "share_past_current_pct": 4.1,
+  "median_months_past_first_handover": 10.5,
+  "p90_months_past_first_handover": 35.0,
+  "markets_with_at_least_5_dated_projects": 50,
+  "transparency_index_median": 42.0,
+  "markets_with_transparency_index": 95,
+  "price_index_all_markets": "100.03",
+  "price_index_base_date": "2026-10-28",
+  "price_index_date": "2026-11-03",
+  "constants": {
+   "percentile": 90,
+   "transparency_min_projects": 3,
+   "index_base": 100,
+   "transparency_scale_max": 100,
+   "min_market_sample": 5
+  }
+ },
+ "inputs": [
+  {
+   "file": "/data/bali-cases.json",
+   "sha256": "b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec",
+   "updated": "2026-11-04",
+   "projects": 896
+  },
+  {
+   "file": "/data/price-index.json",
+   "sha256": "4ce4d49efcfdd774f1e3e2485db94eb4131ef6dc65136cdbf9c5c2f137ac0fbe",
+   "generated": "2026-11-03"
+  }
+ ],
+ "rules": [
+  "Every number comes from the linked files.",
+  "No developers or projects are named.",
+  "Adjectives appear only when a number in the same sentence backs them.",
+  "An AI model may draft the paragraph from the facts above; code then checks that every number in it appears in the facts, and uses the template text if any does not."
+ ],
+ "previous": []
+}

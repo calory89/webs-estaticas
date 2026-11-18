@@ -1,0 +1,116 @@
+{
+ "generated": "2026-11-03",
+ "note": "Real records from kolaboro.com. Every check in kolaboro-verify.js must return true for these and false if any character changes.",
+ "proof": {
+  "project": "BALI-014",
+  "page_fingerprint_date": "2026-11-02",
+  "line": "BALI-014 c4bc7b793b6989228e5342b99187f49451e1572f3925ac1ba1d84323b96c9507",
+  "leaf": "eaa5235935af1bf7556f0c475b1b19f357472f34f06729884a3c2406681b480c",
+  "index": 69,
+  "leaves": 804,
+  "path": [
+   {
+    "side": "L",
+    "hash": "8961aca4151cadbde25cdfab7d9a5e5db09c599291ce837d8071c317b5a478da"
+   },
+   {
+    "side": "R",
+    "hash": "6282f97e4b2ad0d83c635982ca5d19580fb396798a0e9ac1adac512d7708d790"
+   },
+   {
+    "side": "L",
+    "hash": "c933e41274a7bad93c85bc8d167496c657f615bde848f7520149cca90bcdf4ad"
+   },
+   {
+    "side": "R",
+    "hash": "68f4fd4a6fb3b6c449ae9fc811d01aec8cec3c86e3d8bb057b3690c819a81130"
+   },
+   {
+    "side": "R",
+    "hash": "cb6ae4e7dc7264eaaea7c3b9421b848212d8ba496539cb014931f54159b09c56"
+   },
+   {
+    "side": "R",
+    "hash": "49ddb3601bcfae3330ba786fc616ee67552a8e7f26052254698e39edd69bf5b4"
+   },
+   {
+    "side": "L",
+    "hash": "7e78287b8d3b79be42750e15b95693bc2f03e1b1cad02371cbc792ec9855ed40"
+   },
+   {
+    "side": "R",
+    "hash": "50fe9abb142dbda2e53896c479569591a64870fa9f54c635aee8e35b63157d7f"
+   },
+   {
+    "side": "R",
+    "hash": "ca24b1b0de1c8737072dbf991d4adbeb41133b631c0b268d9ae02f96161669be"
+   },
+   {
+    "side": "R",
+    "hash": "3bdcb26b6364de56d0c9963561edd45727edbfabb3725d457e9e0dfeeeac5020"
+   }
+  ],
+  "projects_root": "ff6487b284ad97ad98ba593367e0b4111251d0d9e35b68e9641bc7a86f737fe4",
+  "dataset_sha256": "195e333223aa6f393bac430c6a652fb17d556a10cff6d73e979c46bc3d0617a4",
+  "updated": "2026-11-02",
+  "method": "leaf = SHA-256(0x00 || line); node = SHA-256(0x01 || left || right); an unpaired last node is promoted; lines are \"ID SHA256\" for every project with a page fingerprint, sorted. The root is recorded daily in the public log at kolaboro.com/log and timestamped in Bitcoin."
+ },
+ "log_heads": [
+  {
+   "day": "2026-11-02",
+   "head": "c49eb556dbecd8e0a641a1b264135476fe3944689000711ae7c1d2586b99e73a",
+   "prev": null,
+   "audit_head": null,
+   "audit_count": 0,
+   "audit_intact": true,
+   "evidence_root": "09c8e1969183ce404843d09763f2f5eedd6b356fae9b6a7a06b8505a342877a4",
+   "projects_root": "ff6487b284ad97ad98ba593367e0b4111251d0d9e35b68e9641bc7a86f737fe4",
+   "dataset_sha256": "195e333223aa6f393bac430c6a652fb17d556a10cff6d73e979c46bc3d0617a4",
+   "evidence_items": 7,
+   "projects_count": 804
+  }
+ ],
+ "expected": {
+  "verifyProof": true,
+  "verifyLog": true,
+  "verifyCheckpoint": true,
+  "verifyInclusion": true,
+  "verifyConsistency": true
+ },
+ "signature": {
+  "url": "/api/open/receipt/27",
+  "body": "{\n \"receipt\": \"kolaboro-evidence-receipt-v1\",\n \"kind\": \"document\",\n \"prev\": null,\n \"chain\": \"d8dbe4fd912f073284dcebac8bfad9f6c750377644dca74858365cb39a5e001a\",\n \"sha256\": \"8a96523af606e7650e95f5e5c54f3566ef3109ea5db31f630558aec3939bc8ee\",\n \"in_plot\": null,\n \"taken_at\": \"2026-10-14T07:12:00+00:00\",\n \"evidence_id\": 27,\n \"recorded_at\": \"2026-10-30T08:34:15.0809+00:00\",\n \"gps_recorded\": false,\n \"bitcoin_stamp\": null,\n \"capture_code_ok\": null,\n \"note\": \"This answer is signed by Kolaboro (x-kolaboro-signature). Check the signature with the public key at /.well-known/kolaboro-keys.json, and the file with its SHA-256.\"\n}",
+  "signature": "YC97eH76VquTaGhRz5iurC6kFHyzS5XfXT/UR0BDfJoJJcXT9k7Jr+bu8MaGz2wuSXjBWf06+4tYMrFpSJCOCQ==",
+  "key_id": "kb-f2e04da5878f8c51",
+  "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=",
+  "expected": true
+ },
+ "checkpoint": {
+  "note": "kolaboro.com/log\n2\njVdES7Sra00aolbx3XG8SsTDC/riuYpw0FmHFqS8nTI=\nday 2026-11-03\n\n— kolaboro.com/log 5bUOoq54JyVvOGgyJOeUwgO7zkVI6DFsj8PmKtkMJX91LT7MmwKO0uHOpwTNeLI2/YXy6KPGSVSH0FnuvqSFeUpEywo=\n",
+  "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw="
+ },
+ "log_inclusion": {
+  "tree_size": 2,
+  "root_hash": "8d57444bb4ab6b4d1aa256f1dd71bc4ac4c30bfae2b98a70d0598716a4bc9d32",
+  "leaf_index": 0,
+  "leaf": "2026-11-02 c49eb556dbecd8e0a641a1b264135476fe3944689000711ae7c1d2586b99e73a",
+  "path": [
+   {
+    "side": "R",
+    "hash": "9228ae3f84621c9725aecad7596f1c8732946f654e117acb7575ae0e325c539d"
+   }
+  ],
+  "leaf_hash": "SHA-256(0x00 || leaf)",
+  "node_hash": "SHA-256(0x01 || left || right)"
+ },
+ "log_consistency": {
+  "first": 1,
+  "second": 2,
+  "first_root": "8b810b13b66beb380dca42fbb7532e4ae200e2981caeecfe5d91e085650ccf50",
+  "second_root": "8d57444bb4ab6b4d1aa256f1dd71bc4ac4c30bfae2b98a70d0598716a4bc9d32",
+  "proof": [
+   "9228ae3f84621c9725aecad7596f1c8732946f654e117acb7575ae0e325c539d"
+  ],
+  "algorithm": "RFC 9162 section 2.1.4"
+ }
+}

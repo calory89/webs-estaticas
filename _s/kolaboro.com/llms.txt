@@ -1,6 +1,6 @@
 # Kolaboro
 
-> Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 878 off-plan projects in 144 markets and 76 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month.
+> Kolaboro checks off-plan property projects for people buying abroad, before each payment. Every project page shows what the developer published (company, land, permit or licence number, handover date, payment plan, construction status) against official registers and dated sources, with a right of reply. Buyers pay; developers never pay. Today the checks are desk reviews and official-register lookups online, with Sentinel-2 satellite views where we hold them; site visits by local agents are being set up, and escrow is not offered. Desk research covers 878 off-plan projects in 144 markets and 76 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Prices and what each service includes today: https://kolaboro.com/pricing/.
 
 ## Key pages
 - [Technology: the verification engine (try it live)](https://kolaboro.com/technology/)
@@ -54,15 +54,20 @@
 - [About Kolaboro](https://kolaboro.com/about/)
 - [Roadmap](https://kolaboro.com/roadmap/)
 - [Changelog](https://kolaboro.com/changelog/)
+- [What we shipped on the night of 3 to 4 November 2026, on one page](https://kolaboro.com/changelog/2026-11-04/)
+- [Engineering: how Kolaboro is built and checked](https://kolaboro.com/engineering/)
+- [Daily AI evaluation, case by case](https://kolaboro.com/engineering/evals/)
+- [Public log: signed checkpoint, proofs, Rekor](https://kolaboro.com/engineering/transparency-log/)
 - [Press kit](https://kolaboro.com/press/)
 - [Glossary for buying property abroad](https://kolaboro.com/glossary/)
 - [Pricing](https://kolaboro.com/pricing/)
 - [Jadi agen Kolaboro di Bali](https://kolaboro.com/agents/id/)
 - [20 questions to ask a property developer before you pay](https://kolaboro.com/guides/questions-to-ask-a-developer/)
 - [Seven contract clauses that protect off-plan buyers](https://kolaboro.com/guides/contract-clauses/)
+- [Short-let rules by city: licence or registration, caps and zones, night limits and building rules, each linked to the official source](https://kolaboro.com/guides/short-let-rules/)
 - [Kolaboro Research Agent: what Bali developers advertise](https://kolaboro.com/research/)
 - [Thank you](https://kolaboro.com/thanks/)
-- [Live verification pipeline: Bali off-plan projects](https://kolaboro.com/cases/)
+- [Live verification pipeline: off-plan projects worldwide](https://kolaboro.com/cases/)
 - [Kolaboro site visit: the agent field tool](https://kolaboro.com/agents/visit/)
 - [How Kolaboro chooses and pays its agents](https://kolaboro.com/agents/how-we-choose/)
 - [Kolaboro product tour](https://kolaboro.com/yc/)
@@ -73,10 +78,18 @@
 - [Technology: the verification engine](https://kolaboro.com/technology/)
 - [Verify evidence](https://kolaboro.com/verify/)
 - [Status](https://kolaboro.com/status/)
+- [Public log: daily hash-chained heads timestamped in Bitcoin](https://kolaboro.com/log/)
 - [Open data and API](https://kolaboro.com/docs/api/)
 
+
+## Citation assets (data of the day, CC BY 4.0)
+- [Every named project, one citation-ready block each](https://kolaboro.com/llms-projects.txt): handover on record, permit number published or not, buyer checks, last checked
+- Canonical answers per project in Markdown: https://kolaboro.com/answers/<slug>.md (is it legit, delivery date, permit, developer, buyer reviews, what changed, sources, how to cite); slugs in https://kolaboro.com/api/v1/projects
+- [Monthly market data stories](https://kolaboro.com/stories/): delays, dated promises, permits, advertised prices vs registered sales, page changes; each with a CSV and a citation line
+- [What changed this month](https://kolaboro.com/changes/): changes between dated, fingerprinted copies of developer pages ([Atom](https://kolaboro.com/changes/feed.atom))
+- Embeddable fact card and delivery tracker per project: https://kolaboro.com/embed/p/<slug>/
 ## Facts
-- Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
+- Prices: Kolaboro pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
 - Agents are never paid by developers. Paying for verification never changes a Trust Score.
 - Kolaboro does not currently hold client money and does not give legal or financial advice.
 
@@ -91,12 +104,53 @@
 - [Satellite watch of development areas](https://kolaboro.com/satellite/)
 - [Data desk for journalists](https://kolaboro.com/press/data/)
 - [Open data API, no key (JSON, CSV)](https://kolaboro.com/api/open)
+- [SQL in your browser: every project and market as two signed Parquet files rebuilt daily, queried with DuckDB](https://kolaboro.com/sql/)
+- [MCP server for AI agents: read-only, no key, Ed25519 signature on every answer (endpoint https://kolaboro.com/mcp)](https://kolaboro.com/docs/mcp/)
+- [Official TypeScript and Python SDKs that check the signature on every answer](https://kolaboro.com/docs/sdk/)
+- [Ask Kolaboro: answers only from our pages and open data, every sentence quoted and checked](https://kolaboro.com/ask/)
+- [Advertised prices versus registered sales (Dubai Land Department, HM Land Registry, Irish Property Price Register)](https://kolaboro.com/prices/)
+- [Risk patterns: projects unusual versus peers on public warning signs, explainable, not a fraud predictor](https://kolaboro.com/risk/)
+- [Trust center: controls checked live with evidence, mapped to SOC 2 criteria, not audited](https://kolaboro.com/trust/)
+- [Delivery-delay index and on-time odds per market, with method and back-test](https://kolaboro.com/index/delays/)
+- [Monthly press release from the open data, JSON version](https://kolaboro.com/press/monthly/release.json)
+- [Price below build cost: price per m2 against published construction cost ranges](https://kolaboro.com/tools/build-cost/)
+- [Late handover: contract clause and the law, with articles cited](https://kolaboro.com/tools/late-handover/)
+- [Court-ready evidence bundle for any project id, with an offline checker](https://kolaboro.com/court-file/)
+- [Risk feed for banks and insurers: signed, paginated, JSON Schema, sandbox key](https://kolaboro.com/docs/partners/)
+- [Kolaboro in German, French, Russian, Dutch, Arabic and Chinese (translations; the English page prevails)](https://kolaboro.com/de/check/)
+- [Ghost projects from space: night lights and stalled-site checks per project](https://kolaboro.com/satellite/night/)
+- [Promise tracker: dated developer promises followed as kept, broken, moved or pending, per project](https://kolaboro.com/promises/)
+- [Ask the developer: six standard questions tailored to what a project does not publish](https://kolaboro.com/ask-developer/)
+- [Global company graph: developers matched to GLEIF LEI records with parents and lapsed registrations, anonymised](https://kolaboro.com/graph/global/)
+- [Insolvency check: official notices from The Gazette (UK) and BORME (Spain) for a company's legal name](https://kolaboro.com/tools/insolvency-check/)
+- [Is this agent licensed: official broker registers by market](https://kolaboro.com/tools/agent-check/)
+- [Full guide for AI assistants: every dataset and endpoint](https://kolaboro.com/llms-full.txt)
+- [Open data catalog with schemas, freshness and checksums](https://kolaboro.com/data/)
+- [Shipping log: what we ship every day](https://kolaboro.com/shipping/)
+- [Weekly market digest and change heatmap](https://kolaboro.com/digest/)
+- [Explain any project's score, and ask about one project](https://kolaboro.com/explain/)
+- [World map and market comparison](https://kolaboro.com/compare/markets/)
+- [Open-source verifiers, scoring rules and transparency index (MIT), with CI that checks they match the live site](https://github.com/calory89/kolaboro-open)
+- [Natural hazards at any plot: six open sources read live (elevation, flood model, earthquakes, tsunami run-ups, volcanoes, coastline), each with its query and limits; zoning guide for Indonesia, no zone guessed](https://kolaboro.com/hazards/)
+- [Company graph: UK projects matched on Companies House, their directors' other companies, anonymised; exact-name court search](https://kolaboro.com/graph/)
+- [Mystery shopper: the standard questions for developers and how answers will be measured (not started yet)](https://kolaboro.com/mystery-shopper/)
+- [Website change watch: where developer websites visibly changed, as page geometry only](https://kolaboro.com/visual/)
+- [Off-plan asking-price index: chained same-project index of advertised prices per market, history from 28 Oct 2026](https://kolaboro.com/index/prices/)
+- [Open AI benchmark for property due diligence: public test pages, signed answers, leaderboard](https://kolaboro.com/benchmark/)
+- [Public log witnesses: open kit to check the log only grows and cosign it](https://kolaboro.com/log/witnesses/)
+- [Signed webhooks for partners: Ed25519-signed events when a project's public record changes](https://kolaboro.com/docs/webhooks/)
 - [Open-source scoring rules](https://kolaboro.com/open/scoring.py)
 - [Corrections and accuracy check](https://kolaboro.com/corrections/)
 - [How we collect data](https://kolaboro.com/data-policy/)
 - [Public roadmap](https://kolaboro.com/roadmap)
 
 ## Buyer tools
+- [All buyer tools, including PDF, image and payment account checks that run in your browser](https://kolaboro.com/tools/)
+- [Contract check with on-device AI: ten clauses with exact quotes and the matching law, nothing uploaded](https://kolaboro.com/tools/contract-check/)
+- [Property law notes for off-plan buyers, each quoting and linking the official text](https://kolaboro.com/tools/law/)
+- [Permit QR check: does the code on a permit or ad lead to the official agency](https://kolaboro.com/tools/permit-check/)
+- [Site visit app that works offline: checklist, photos with GPS and time, signed export, nothing uploaded](https://kolaboro.com/visit/)
+- [Signed buyer reports from people who bought into tracked projects (opens after setup)](https://kolaboro.com/buyer-reports/)
 - [Market match](https://kolaboro.com/tools/market-match/)
 - [Payment plan risk score](https://kolaboro.com/tools/payment-risk/)
 - [Total cost of ownership](https://kolaboro.com/tools/total-cost/)

@@ -1,0 +1,98 @@
+{
+ "id": "31251-1",
+ "nama": "RESIDENSI M ARIA",
+ "pemaju": {
+  "kod_pemaju": "31251",
+  "nama": "M ARIA SDN. BHD.",
+  "telefon": "[removed: personal contact]",
+  "telefon2": null,
+  "emel": "[removed: personal contact]",
+  "alamat_web": null,
+  "alamat_daftar": "Penthouse Suite 1,, Wisma Mah Sing,, No. 163, Jalan Sungai Besi,, 57100, Wp Kuala Lumpur",
+  "alamat_perniagaan": "Penthouse Suite 2, Wisma Mah Sing, No.163 Jalan Sungai Besi, 57100, Wp Kuala Lumpur",
+  "statusPemaju": "Aktif",
+  "mempunyaiKesalahan": null,
+  "bilanganProjek": 1,
+  "latest_lesen": {
+   "no_lesenpermit": "31251/12-2030/0307(A)",
+   "tarikh_mula": "2025-12-29",
+   "tarikh_luput": "2030-12-28"
+  }
+ },
+ "projek": {
+  "permitNo": "31251-1/01-2029/0037(A)-(S)",
+  "nama": "Residensi M Aria",
+  "kod_projek": "31251-1",
+  "daerah": "Kuala Lumpur",
+  "negeri": "Wp Kuala Lumpur",
+  "permitMula": "2026-01-14",
+  "permitTamat": "2029-01-13"
+ },
+ "unitSummary": {
+  "unit": 606,
+  "keluasan": "0 mps",
+  "bilik": "3, 4",
+  "bilikAir": "2"
+ },
+ "pjb": {
+  "jenis": "Jadual H",
+  "tempohAsal": "36 Bulan",
+  "tarikhPjbPertama": "24 Jan 2026",
+  "serahKosongIkutPjb": "24 Jan 2029",
+  "pindaanTempohSerahKosong": "Ya",
+  "tempohTambahanDiluluskan": "12 Bulan",
+  "tempohPembinaanBaharu": "48 Bulan",
+  "serahKosongBaharuIkutPjbPertama": "24 Jan 2030"
+ },
+ "status": {
+  "maklumatPembangunan": "Berfasa",
+  "keseluruhan": "Lancar",
+  "nota": "Status komponen adalah berdasarkan laporan 7(f) terkini di HIMS.",
+  "rows": [
+   {
+    "jenis": "Rumah Pangsa/Kondo",
+    "tingkat": "38",
+    "bilik": "3, 4",
+    "tandas": "2",
+    "keluasan": "0",
+    "unit": 606,
+    "hargaMin": "635,000.00",
+    "hargaMax": "750,000.00",
+    "peratus": "1.24",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   }
+  ]
+ },
+ "lesen_records": [
+  {
+   "no": "31251-1/01-2029/0037(A)-(S)",
+   "mula": "14 Jan 2026",
+   "tamat": "13 Jan 2029",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Aktif"
+  },
+  {
+   "no": "31251-1/01-2029/0037(N)-(S)",
+   "mula": "14 Jan 2026",
+   "tamat": "13 Jan 2029",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Tidak Aktif"
+  }
+ ],
+ "brochure": {
+  "dokumen_url": "https://hims.kpkt.gov.my/files/31251/P45/temp-P45-20260928-dmrTYOkxBK/IKLAN_BROSUR_01.pdf"
+ },
+ "iklan": [
+  {
+   "src": "https://hims.kpkt.gov.my/files/31251/P45/temp-P45-20260928-dmrTYOkxBK/IKLAN_BROSUR_01.pdf",
+   "caption": "Iklan Projek"
+  }
+ ],
+ "lokasi": "Kuala Lumpur, WP Kuala Lumpur",
+ "lat": "3.204454",
+ "lng": "101.676820"
+}

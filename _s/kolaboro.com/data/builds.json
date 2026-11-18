@@ -1,0 +1,138 @@
+{
+ "version": "kolaboro-builds-1",
+ "about": "Deterministic bundle of the kolaboro.com worker (_worker.js/index.js and everything it imports) for each worker source tree that went live. Built twice in two clean folders; \"reproduced\" says whether both builds gave identical bytes.",
+ "how": {
+  "esbuild": "0.24.2",
+  "command": "esbuild _worker.js/index.js --bundle --format=esm --platform=neutral --external:node:* --log-level=error --legal-comments=none --charset=utf8 --outfile=out/worker.js",
+  "cwd": "repository root at first_commit",
+  "lookup": "For any commit X: git rev-parse X:_worker.js gives the worker_tree to look up here."
+ },
+ "limits": [
+  "The worker source repository is private, so only people with access can rebuild and compare this bundle. The verifiers, scoring rules and transparency index are public at https://github.com/calory89/kolaboro-open (MIT).",
+  "Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download."
+ ],
+ "updated": "2026-11-16T12:54:47Z",
+ "builds": [
+  {
+   "worker_tree": "511d88475904e3039c3d586cac995c78b38314ba",
+   "first_commit": "2062f62a5c9473a9bb1a5a99da07f053a4ef2869",
+   "commit_time": "2026-11-16T11:18:49Z",
+   "built_at": "2026-11-16T12:54:47Z",
+   "sha256": "e12b9ceb6e9e56a3788e069899cd2ee1bc5fb48475b58279100bece72b8e77ae",
+   "bytes": 25476526,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "43870794117"
+  },
+  {
+   "worker_tree": "8324bb05548c6a5c57e8e552155c95bb915ba0fc",
+   "first_commit": "1ee0bdf4362886921577530a10065ecd777358c6",
+   "commit_time": "2026-11-09T11:33:36Z",
+   "built_at": "2026-11-09T13:02:00Z",
+   "sha256": "6cfecda074b873b8cbf605e4f931b7ecd1ddc0f868c0fa1754efd462ea1df5f9",
+   "bytes": 22938443,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "42621869647"
+  },
+  {
+   "worker_tree": "558f2f238b7826eef562df8072008d97a553d867",
+   "first_commit": "b1663fa5e0cae07a2aa23591d766b3d778a1ad1a",
+   "commit_time": "2026-11-05T18:57:51Z",
+   "built_at": "2026-11-05T19:03:57Z",
+   "sha256": "e38c920a20117840e4e955a4bcb32366b178ed0add3307a2a98768604afd7b30",
+   "bytes": 21464012,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "42090224508"
+  },
+  {
+   "worker_tree": "4f968598d7303062e2ea22c77cdbb17d2235787e",
+   "first_commit": "9b16071b17691df2816495aab951e20c0693a100",
+   "commit_time": "2026-11-05T11:30:02Z",
+   "built_at": "2026-11-05T11:37:41Z",
+   "sha256": "481cb3b86bd425692839aa64e6180efa0efa0855208cb607d10c520605b26b6a",
+   "bytes": 21164134,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "42020456204"
+  },
+  {
+   "worker_tree": "3cf3a59dc24ec81273d741e9c95bf35460e0ee01",
+   "first_commit": "dbb44f46bd36e9a17237442859d42749cb4f7edc",
+   "commit_time": "2026-11-04T21:44:10Z",
+   "built_at": "2026-11-04T23:44:51Z",
+   "sha256": "7d8454537cbc0b7268153ad85458d6986a7b75a54ec266257f61d19d69992db0",
+   "bytes": 21038519,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41936092514"
+  },
+  {
+   "worker_tree": "26d18488be40ab12154635c48e1415a7dede1e6f",
+   "first_commit": "b37b89bc52d58f0bb362aa1b74ce2dc7acc5170b",
+   "commit_time": "2026-11-04T17:51:31Z",
+   "built_at": "2026-11-04T18:02:45Z",
+   "sha256": "625ab041461516ca1cdc429b402a92df12a8d9c947576490b68b827d86ffc7bf",
+   "bytes": 21033744,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41883036671"
+  },
+  {
+   "worker_tree": "58b41ca7cc98cefec18d437a1c3f0eb4a2ab4ec8",
+   "first_commit": "741833646d3e6306452b2e4cc8d90b8f563fc095",
+   "commit_time": "2026-11-04T10:54:41+01:00",
+   "built_at": "2026-11-04T09:56:23Z",
+   "sha256": "228a0bbe1ca0af2b8a95a82f86e03db5e6a639554ff103830e8cc3daf97a7c6c",
+   "bytes": 21033336,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41810834665"
+  },
+  {
+   "worker_tree": "5b8db7d7cbf43501b16010e7d3b10b9cef957cae",
+   "first_commit": "2fa173072812600feb0b3af84d6ea4d9b97ff8b4",
+   "commit_time": "2026-11-04T08:16:24+01:00",
+   "built_at": "2026-11-04T07:19:57Z",
+   "sha256": "60a5825a6345bd9cb26d051b080ccc4a95166c5d974230904c83b0fdd3b63a06",
+   "bytes": 24542394,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41791489934"
+  },
+  {
+   "worker_tree": "0326eb486e7b8d834329d0d3c1581d8e24245472",
+   "first_commit": "09269ba62b8e4e780156101ae8e22b83b6143142",
+   "commit_time": "2026-11-04T02:21:17Z",
+   "built_at": "2026-11-04T02:46:24Z",
+   "sha256": "8bb6a7d9bab819b6cf9bae2faf84a7d7c9ee510424b29c52a312c14c992948db",
+   "bytes": 24495681,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41762869929"
+  },
+  {
+   "worker_tree": "27d19eeabfe2cb2a5fac0bfec2613f5730a8c583",
+   "first_commit": "7618bd94b3bcc708049f7d074831339d5f7cda08",
+   "commit_time": "2026-11-03T23:51:54+01:00",
+   "built_at": "2026-11-03T22:57:04Z",
+   "sha256": "837f5624c365d7232276fc0f10330b977d50cc7a75ff863bf76008aa084d525e",
+   "bytes": 24495608,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41735101781"
+  },
+  {
+   "worker_tree": "07e810aa85f83e232dc5e88b6fded866a7ffadc5",
+   "first_commit": "82a1a341092b3a04b933832eda7a06422d140ab2",
+   "commit_time": "2026-11-03T23:46:32+01:00",
+   "built_at": "2026-11-03T22:50:30Z",
+   "sha256": "fe41a86054167bfd15ba8723d791ac11a945bf01e74b74ef7ba67e47e08052bf",
+   "bytes": 24495378,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41734091587"
+  }
+ ]
+}

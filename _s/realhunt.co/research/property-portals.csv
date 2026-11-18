@@ -1,0 +1,182 @@
+﻿country,country_code,portal,domain,url,order_in_country
+Spain,ES,Idealista,idealista.com,https://www.idealista.com/,1
+Spain,ES,Fotocasa,fotocasa.es,https://www.fotocasa.es/,2
+Spain,ES,pisos.com,pisos.com,https://www.pisos.com/,3
+Spain,ES,Habitaclia,habitaclia.com,https://www.habitaclia.com/,4
+Spain,ES,Yaencontre,yaencontre.com,https://www.yaencontre.com/,5
+Spain,ES,Milanuncios,milanuncios.com,https://www.milanuncios.com/,6
+Spain,ES,ThinkSPAIN,thinkspain.com,https://www.thinkspain.com/,7
+Spain,ES,Kyero,kyero.com,https://www.kyero.com/,8
+Portugal,PT,Idealista PT,idealista.pt,https://www.idealista.pt/,1
+Portugal,PT,Imovirtual,imovirtual.com,https://www.imovirtual.com/,2
+Portugal,PT,Casa SAPO,casa.sapo.pt,https://casa.sapo.pt/,3
+Portugal,PT,SuperCasa,supercasa.pt,https://supercasa.pt/,4
+Portugal,PT,OLX,olx.pt,https://www.olx.pt/,5
+Portugal,PT,RE/MAX PT,remax.pt,https://www.remax.pt/,6
+Italy,IT,Immobiliare.it,immobiliare.it,https://www.immobiliare.it/,1
+Italy,IT,Idealista IT,idealista.it,https://www.idealista.it/,2
+Italy,IT,Casa.it,casa.it,https://www.casa.it/,3
+Italy,IT,Subito,subito.it,https://www.subito.it/,4
+Italy,IT,Wikicasa,wikicasa.it,https://www.wikicasa.it/,5
+Italy,IT,Gate-away,gate-away.com,https://www.gate-away.com/,6
+Italy,IT,Trovit IT,trovit.it,https://case.trovit.it/,7
+France,FR,SeLoger,seloger.com,https://www.seloger.com/,1
+France,FR,Leboncoin,leboncoin.fr,https://www.leboncoin.fr/,2
+France,FR,Bien'ici,bienici.com,https://www.bienici.com/,3
+France,FR,Logic-Immo,logic-immo.com,https://www.logic-immo.com/,4
+France,FR,PAP,pap.fr,https://www.pap.fr/,5
+France,FR,Green-Acres,green-acres.fr,https://www.green-acres.fr/,6
+France,FR,Superimmo,superimmo.com,https://www.superimmo.com/,7
+Germany,DE,ImmoScout24,immobilienscout24.de,https://www.immobilienscout24.de/,1
+Germany,DE,Immowelt,immowelt.de,https://www.immowelt.de/,2
+Germany,DE,Kleinanzeigen,kleinanzeigen.de,https://www.kleinanzeigen.de/,3
+Germany,DE,Immonet,immonet.de,https://www.immonet.de/,4
+Germany,DE,Ohne-Makler,ohne-makler.net,https://www.ohne-makler.net/,5
+United Kingdom,GB,Rightmove,rightmove.co.uk,https://www.rightmove.co.uk/,1
+United Kingdom,GB,Zoopla,zoopla.co.uk,https://www.zoopla.co.uk/,2
+United Kingdom,GB,OnTheMarket,onthemarket.com,https://www.onthemarket.com/,3
+United Kingdom,GB,PrimeLocation,primelocation.com,https://www.primelocation.com/,4
+United Kingdom,GB,Purplebricks,purplebricks.co.uk,https://www.purplebricks.co.uk/,5
+Ireland,IE,Daft.ie,daft.ie,https://www.daft.ie/,1
+Ireland,IE,MyHome.ie,myhome.ie,https://www.myhome.ie/,2
+Netherlands,NL,Funda,funda.nl,https://www.funda.nl/,1
+Netherlands,NL,Pararius,pararius.nl,https://www.pararius.nl/,2
+Netherlands,NL,Jaap,jaap.nl,https://www.jaap.nl/,3
+Belgium,BE,Immoweb,immoweb.be,https://www.immoweb.be/,1
+Belgium,BE,Zimmo,zimmo.be,https://www.zimmo.be/,2
+Belgium,BE,Immovlan,immovlan.be,https://immovlan.be/,3
+Switzerland,CH,Homegate,homegate.ch,https://www.homegate.ch/,1
+Switzerland,CH,ImmoScout24 CH,immoscout24.ch,https://www.immoscout24.ch/,2
+Switzerland,CH,Comparis,comparis.ch,https://en.comparis.ch/,3
+Austria,AT,Willhaben,willhaben.at,https://www.willhaben.at/,1
+Austria,AT,ImmoScout24 AT,immobilienscout24.at,https://www.immobilienscout24.at/,2
+Austria,AT,derStandard Immobilien,derstandard.at,https://immobilien.derstandard.at/,3
+Denmark,DK,Boligsiden,boligsiden.dk,https://www.boligsiden.dk/,1
+Denmark,DK,Boliga,boliga.dk,https://www.boliga.dk/,2
+Denmark,DK,home,home.dk,https://home.dk/,3
+Denmark,DK,EDC,edc.dk,https://www.edc.dk/,4
+Sweden,SE,Hemnet,hemnet.se,https://www.hemnet.se/,1
+Sweden,SE,Booli,booli.se,https://www.booli.se/,2
+Norway,NO,FINN,finn.no,https://www.finn.no/,1
+Norway,NO,Hjem.no,hjem.no,https://hjem.no/,2
+Finland,FI,Etuovi,etuovi.com,https://www.etuovi.com/,1
+Finland,FI,Oikotie,oikotie.fi,https://asunnot.oikotie.fi/,2
+Poland,PL,Otodom,otodom.pl,https://www.otodom.pl/,1
+Poland,PL,OLX,olx.pl,https://www.olx.pl/,2
+Poland,PL,Morizon,morizon.pl,https://www.morizon.pl/,3
+Poland,PL,Gratka,gratka.pl,https://gratka.pl/,4
+Czechia,CZ,Sreality,sreality.cz,https://www.sreality.cz/,1
+Czechia,CZ,Bezrealitky,bezrealitky.cz,https://www.bezrealitky.cz/,2
+Hungary,HU,Ingatlan.com,ingatlan.com,https://ingatlan.com/,1
+Hungary,HU,Otthontérkép,otthonterkep.hu,https://otthonterkep.hu/,2
+Romania,RO,Imobiliare.ro,imobiliare.ro,https://www.imobiliare.ro/,1
+Romania,RO,Storia,storia.ro,https://www.storia.ro/,2
+Romania,RO,OLX RO,olx.ro,https://www.olx.ro/,3
+Bulgaria,BG,Imot.bg,imot.bg,https://www.imot.bg/,1
+Bulgaria,BG,Homes.bg,homes.bg,https://www.homes.bg/,2
+Bulgaria,BG,Imoti.net,imoti.net,https://www.imoti.net/,3
+Greece,GR,Spitogatos,spitogatos.gr,https://www.spitogatos.gr/,1
+Greece,GR,XE.gr,xe.gr,https://www.xe.gr/,2
+Greece,GR,Tospitimou,tospitimou.gr,https://www.tospitimou.gr/,3
+Croatia,HR,Njuškalo,njuskalo.hr,https://www.njuskalo.hr/,1
+Croatia,HR,Index oglasi,index.hr,https://www.index.hr/,2
+Croatia,HR,Crozilla,crozilla.com,https://www.crozilla.com/,3
+Slovenia,SI,Nepremičnine.net,nepremicnine.net,https://www.nepremicnine.net/,1
+Slovenia,SI,Bolha,bolha.com,https://www.bolha.com/,2
+Cyprus,CY,Bazaraki,bazaraki.com,https://www.bazaraki.com/,1
+Cyprus,CY,Home.cy,home.cy,https://www.home.cy/,2
+Malta,MT,MaltaPark,maltapark.com,https://www.maltapark.com/,1
+Malta,MT,RE/MAX Malta,remax-malta.com,https://remax-malta.com/,2
+Malta,MT,Frank Salt,frank.com.mt,https://frank.com.mt/,3
+Turkey,TR,Sahibinden,sahibinden.com,https://www.sahibinden.com/,1
+Turkey,TR,Hepsiemlak,hepsiemlak.com,https://www.hepsiemlak.com/,2
+Turkey,TR,Emlakjet,emlakjet.com,https://www.emlakjet.com/,3
+United States,US,Zillow,zillow.com,https://www.zillow.com/,1
+United States,US,Realtor.com,realtor.com,https://www.realtor.com/,2
+United States,US,Redfin,redfin.com,https://www.redfin.com/,3
+United States,US,Homes.com,homes.com,https://www.homes.com/,4
+United States,US,Trulia,trulia.com,https://www.trulia.com/,5
+United States,US,Coldwell Banker,coldwellbanker.com,https://www.coldwellbanker.com/,6
+United States,US,Century 21,century21.com,https://www.century21.com/,7
+United States,US,RE/MAX,remax.com,https://www.remax.com/,8
+Canada,CA,REALTOR.ca,realtor.ca,https://www.realtor.ca/,1
+Canada,CA,Zolo,zolo.ca,https://www.zolo.ca/,2
+Canada,CA,RE/MAX CA,remax.ca,https://www.remax.ca/,3
+Canada,CA,Point2,point2homes.com,https://www.point2homes.com/,4
+Mexico,MX,Inmuebles24,inmuebles24.com,https://www.inmuebles24.com/,1
+Mexico,MX,Vivanuncios,vivanuncios.com.mx,https://www.vivanuncios.com.mx/,2
+Mexico,MX,Lamudi MX,lamudi.com.mx,https://www.lamudi.com.mx/,3
+Mexico,MX,Propiedades.com,propiedades.com,https://propiedades.com/,4
+Mexico,MX,Century 21 México,century21mexico.com,https://century21mexico.com/,5
+Colombia,CO,Finca Raíz,fincaraiz.com.co,https://www.fincaraiz.com.co/,1
+Colombia,CO,Metrocuadrado,metrocuadrado.com,https://www.metrocuadrado.com/,2
+Colombia,CO,Ciencuadras,ciencuadras.com,https://www.ciencuadras.com/,3
+Argentina,AR,Zonaprop,zonaprop.com.ar,https://www.zonaprop.com.ar/,1
+Argentina,AR,Argenprop,argenprop.com,https://www.argenprop.com/,2
+Argentina,AR,Mercado Libre Inmuebles,mercadolibre.com.ar,https://inmuebles.mercadolibre.com.ar/,3
+Chile,CL,Portal Inmobiliario,portalinmobiliario.com,https://www.portalinmobiliario.com/,1
+Chile,CL,TocToc,toctoc.com,https://www.toctoc.com/,2
+Chile,CL,Yapo,yapo.cl,https://www.yapo.cl/,3
+Peru,PE,Urbania,urbania.pe,https://urbania.pe/,1
+Peru,PE,Adondevivir,adondevivir.com,https://www.adondevivir.com/,2
+Peru,PE,Properati PE,properati.com.pe,https://www.properati.com.pe/,3
+Ecuador,EC,Plusvalía,plusvalia.com,https://www.plusvalia.com/,1
+Ecuador,EC,Properati EC,properati.com.ec,https://www.properati.com.ec/,2
+Uruguay,UY,InfoCasas,infocasas.com.uy,https://www.infocasas.com.uy/,1
+Uruguay,UY,Gallito,gallito.com.uy,https://www.gallito.com.uy/,2
+Uruguay,UY,Mercado Libre UY,mercadolibre.com.uy,https://inmuebles.mercadolibre.com.uy/,3
+Brazil,BR,ZAP Imóveis,zapimoveis.com.br,https://www.zapimoveis.com.br/,1
+Brazil,BR,VivaReal,vivareal.com.br,https://www.vivareal.com.br/,2
+Brazil,BR,Imovelweb,imovelweb.com.br,https://www.imovelweb.com.br/,3
+Brazil,BR,OLX BR,olx.com.br,https://www.olx.com.br/,4
+Costa Rica,CR,Encuentra24,encuentra24.com,https://www.encuentra24.com/,1
+Costa Rica,CR,Properati CR,properati.co.cr,https://www.properati.co.cr/,2
+Costa Rica,CR,RE/MAX CR,remax-costa-rica.com,https://www.remax-costa-rica.com/,3
+Panama,PA,Encuentra24,encuentra24.com,https://www.encuentra24.com/,1
+Panama,PA,Compreoalquile,compreoalquile.com,https://www.compreoalquile.com/,2
+Dominican Republic,DO,SuperCasas,supercasas.com,https://www.supercasas.com/,1
+Dominican Republic,DO,Corotos,corotos.com.do,https://www.corotos.com.do/,2
+Dominican Republic,DO,RE/MAX RD,remaxrd.com,https://www.remaxrd.com/,3
+United Arab Emirates,AE,Bayut,bayut.com,https://www.bayut.com/,1
+United Arab Emirates,AE,Property Finder,propertyfinder.ae,https://www.propertyfinder.ae/,2
+United Arab Emirates,AE,Dubizzle,dubizzle.com,https://dubai.dubizzle.com/,3
+South Africa,ZA,Property24,property24.com,https://www.property24.com/,1
+South Africa,ZA,Private Property,privateproperty.co.za,https://www.privateproperty.co.za/,2
+Morocco,MA,Mubawab,mubawab.ma,https://www.mubawab.ma/,1
+Morocco,MA,Avito,avito.ma,https://www.avito.ma/,2
+Morocco,MA,Sarouty,sarouty.ma,https://www.sarouty.ma/,3
+Thailand,TH,DDproperty,ddproperty.com,https://www.ddproperty.com/,1
+Thailand,TH,Hipflat,hipflat.com,https://www.hipflat.com/,2
+Thailand,TH,FazWaz,fazwaz.com,https://www.fazwaz.com/,3
+Thailand,TH,Dot Property,dotproperty.co.th,https://www.dotproperty.co.th/,4
+Indonesia,ID,Rumah123,rumah123.com,https://www.rumah123.com/,1
+Indonesia,ID,99.co,99.co,https://www.99.co/,2
+Indonesia,ID,Lamudi ID,lamudi.co.id,https://www.lamudi.co.id/,3
+Indonesia,ID,OLX ID,olx.co.id,https://www.olx.co.id/,4
+Indonesia,ID,FazWaz,fazwaz.com,https://www.fazwaz.com/,5
+Malaysia,MY,PropertyGuru,propertyguru.com.my,https://www.propertyguru.com.my/,1
+Malaysia,MY,iProperty,iproperty.com.my,https://www.iproperty.com.my/,2
+Malaysia,MY,Mudah,mudah.my,https://www.mudah.my/,3
+Philippines,PH,Lamudi PH,lamudi.com.ph,https://www.lamudi.com.ph/,1
+Philippines,PH,Dot Property PH,dotproperty.com.ph,https://www.dotproperty.com.ph/,2
+Philippines,PH,PropertyGuru PH,propertyguru.com.ph,https://www.propertyguru.com.ph/,3
+Vietnam,VN,Batdongsan,batdongsan.com.vn,https://batdongsan.com.vn/,1
+Vietnam,VN,Chợ Tốt Nhà,chotot.com,https://nha.chotot.com/,2
+Georgia,GE,SS.ge,ss.ge,https://home.ss.ge/,1
+Georgia,GE,Myhome.ge,myhome.ge,https://www.myhome.ge/,2
+Australia,AU,realestate.com.au,realestate.com.au,https://www.realestate.com.au/,1
+Australia,AU,Domain,domain.com.au,https://www.domain.com.au/,2
+Australia,AU,Allhomes,allhomes.com.au,https://www.allhomes.com.au/,3
+New Zealand,NZ,Trade Me Property,trademe.co.nz,https://www.trademe.co.nz/,1
+New Zealand,NZ,realestate.co.nz,realestate.co.nz,https://www.realestate.co.nz/,2
+New Zealand,NZ,OneRoof,oneroof.co.nz,https://www.oneroof.co.nz/,3
+Japan,JP,SUUMO,suumo.jp,https://suumo.jp/,1
+Japan,JP,LIFULL HOME'S,homes.co.jp,https://www.homes.co.jp/,2
+Japan,JP,at home,athome.co.jp,https://www.athome.co.jp/,3
+Japan,JP,Real Estate Japan,realestate.co.jp,https://realestate.co.jp/,4
+Iceland,IS,Fasteignir Vísir,fasteignir.visir.is,https://fasteignir.visir.is/,1
+Iceland,IS,mbl Fasteignir,mbl.is,https://www.mbl.is/,2
+Montenegro,ME,Realitica,realitica.com,https://www.realitica.com/,1
+Montenegro,ME,Estitor,estitor.com,https://estitor.com/,2
+Albania,AL,MerrJep,merrjep.al,https://www.merrjep.al/,1
+Albania,AL,Century 21 Albania,century21albania.com,https://www.century21albania.com/,2

@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 512 homes in 18 countries. Updated 2026-11-01.
+Today: 591 homes in 18 countries. Updated 2026-11-18.
 
 ## Key pages
 
@@ -12,28 +12,93 @@ Today: 512 homes in 18 countries. Updated 2026-11-01.
 - [Prices by country](https://realhunt.co/research/prices): median price and price per m² by country.
 - [Buying costs abroad](https://realhunt.co/costs)
 - [Buying guides by country](https://realhunt.co/guide)
+- [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
+- [Buying-cost calculator](https://realhunt.co/buying-costs)
 - [Compare two countries](https://realhunt.co/countries)
 - [New builds Top 100](https://realhunt.co/top): Bali, Phuket, Tulum, Batumi, Koh Samui.
-- [Research and guides](https://realhunt.co/blog)
+- [Research and guides](https://realhunt.co/blog) and [RSS](https://realhunt.co/blog/rss.xml)
 - [Site map](https://realhunt.co/sitemap)
+- [Full reference text](https://realhunt.co/llms-full.txt): method, costs, guides and every home in one file.
+
+## Data to quote (CC BY 4.0, with a link)
+
+- [All datasets](https://realhunt.co/research)
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices): [Markdown](https://realhunt.co/research/prices.md), [CSV](https://realhunt.co/research/prices.csv)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys): [Markdown](https://realhunt.co/research/what-your-budget-buys.md), [CSV](https://realhunt.co/research/what-your-budget-buys.csv)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country): [Markdown](https://realhunt.co/research/buying-costs-by-country.md), [CSV](https://realhunt.co/research/buying-costs-by-country.csv)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy): [Markdown](https://realhunt.co/research/where-foreigners-can-buy.md), [CSV](https://realhunt.co/research/where-foreigners-can-buy.csv)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions): [Markdown](https://realhunt.co/research/best-scored-regions.md), [CSV](https://realhunt.co/research/best-scored-regions.csv)
+- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000): [Markdown](https://realhunt.co/research/homes-under-50000.md), [CSV](https://realhunt.co/research/homes-under-50000.csv)
+- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary): [Markdown](https://realhunt.co/research/years-of-salary.md), [CSV](https://realhunt.co/research/years-of-salary.csv)
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator): [Markdown](https://realhunt.co/research/flood-indicator.md), [CSV](https://realhunt.co/research/flood-indicator.csv)
+- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance): [Markdown](https://realhunt.co/research/price-by-airport-distance.md), [CSV](https://realhunt.co/research/price-by-airport-distance.csv)
+- [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices): [Markdown](https://realhunt.co/research/new-build-prices.md), [CSV](https://realhunt.co/research/new-build-prices.csv)
+- [How the score works: method, limits, change log](https://realhunt.co/method) ([Markdown](https://realhunt.co/method.md))
+- [For AI assistants: what to quote and how to attribute](https://realhunt.co/for-ai)
+- [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+- [Press page: facts, numbers, contact](https://realhunt.co/press)
+- [Badges and widgets](https://realhunt.co/embed)
+- Buying guides in Markdown: https://realhunt.co/guide/<country>.md
+- [The homes behind the figures, one row each (CSV)](https://realhunt.co/research/homes.csv); [monthly price series (CSV)](https://realhunt.co/research/monthly-series.csv)
+
+## Free calculators (general information, not advice)
+
+- [All tools](https://realhunt.co/tools)
+- [Buying costs by country](https://realhunt.co/buying-costs): https://realhunt.co/buying-costs/<country>?p=<price>
+- https://realhunt.co/tools/area-converter
+- https://realhunt.co/tools/compare-buying-costs
+- https://realhunt.co/tools/france-notary-fees
+- https://realhunt.co/tools/germany-property-transfer-tax
+- https://realhunt.co/tools/home-running-costs
+- https://realhunt.co/tools/how-much-home-can-i-buy
+- https://realhunt.co/tools/mortgage-or-cash
+- https://realhunt.co/tools/portugal-imt
+- https://realhunt.co/tools/residency-by-buying-a-home
+- https://realhunt.co/tools/schengen-90-180
+- https://realhunt.co/tools/spain-non-resident-tax
+- https://realhunt.co/tools/uk-stamp-duty-non-resident
+
+## Files for machines (no account, no key)
+
+- [OpenAPI description of every file](https://realhunt.co/openapi.json)
+- [Countries: key figures and the address of each country file](https://realhunt.co/data/countries/index.json)
+- Per country: https://realhunt.co/data/countries/<country>.json (key facts, rules, every home), .md (clean text), .pdf (one-page fact sheet)
+- [Property portals by country: a directory with a link to each one](https://realhunt.co/research/property-portals)
+- [Key facts by country, in dated sentences that can be quoted](https://realhunt.co/research/country-facts)
+- [Open data: the files, the licence and how to read them](https://realhunt.co/research/open-data)
+- [What changed in the data, day by day](https://realhunt.co/research/data-changelog)
+- [Find homes by country and price: ?country=bulgaria&max=30000](https://realhunt.co/research/find-homes)
+- [Property portals by country](https://realhunt.co/research/property-portals.json) ([CSV](https://realhunt.co/research/property-portals.csv))
+- [Every home with coordinates (GeoJSON)](https://realhunt.co/data/realhunt-homes.geojson); [best homes by country (KML)](https://realhunt.co/data/realhunt-best-homes.kml)
+- Feeds: https://realhunt.co/feed.xml (RSS), https://realhunt.co/feed.atom, https://realhunt.co/feed.json; research: https://realhunt.co/blog/rss.xml, https://realhunt.co/blog/atom.xml, https://realhunt.co/blog/feed.json
+- Licence of text and figures: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); photos belong to the original listings
+
+## Other languages
+
+- [Índice en español](https://realhunt.co/es/llms.txt)
+- [Deutsch](https://realhunt.co/de/llms.txt)
+- [Русский](https://realhunt.co/ru/llms.txt)
+- [Français](https://realhunt.co/fr/llms.txt)
+- [Nederlands](https://realhunt.co/nl/llms.txt)
+- [Polski](https://realhunt.co/pl/llms.txt)
 
 ## Countries
 
-- [Spain](https://realhunt.co/homes/spain): 164 homes
-- [Italy](https://realhunt.co/homes/italy): 53 homes
+- [Spain](https://realhunt.co/homes/spain): 182 homes
+- [Italy](https://realhunt.co/homes/italy): 59 homes
+- [United States](https://realhunt.co/homes/united-states): 54 homes
 - [Denmark](https://realhunt.co/homes/denmark): 45 homes
+- [France](https://realhunt.co/homes/france): 42 homes
 - [Sweden](https://realhunt.co/homes/sweden): 37 homes
-- [France](https://realhunt.co/homes/france): 32 homes
 - [Poland](https://realhunt.co/homes/poland): 30 homes
-- [United States](https://realhunt.co/homes/united-states): 29 homes
-- [Japan](https://realhunt.co/homes/japan): 20 homes
+- [Japan](https://realhunt.co/homes/japan): 30 homes
 - [Germany](https://realhunt.co/homes/germany): 20 homes
 - [Netherlands](https://realhunt.co/homes/netherlands): 18 homes
 - [Greece](https://realhunt.co/homes/greece): 14 homes
+- [Portugal](https://realhunt.co/homes/portugal): 13 homes
 - [Mexico](https://realhunt.co/homes/mexico): 10 homes
 - [Switzerland](https://realhunt.co/homes/switzerland): 10 homes
 - [Canada](https://realhunt.co/homes/canada): 9 homes
 - [Bulgaria](https://realhunt.co/homes/bulgaria): 6 homes
 - [Dominican Republic](https://realhunt.co/homes/dominican-republic): 4 homes
 - [Cyprus](https://realhunt.co/homes/cyprus): 3 homes
-- [Portugal](https://realhunt.co/homes/portugal): 3 homes

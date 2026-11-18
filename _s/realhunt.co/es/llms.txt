@@ -1,0 +1,53 @@
+# RealHunt
+
+> RealHunt publica casas baratas en venta en todo el mundo (la mayoría por menos de 100.000 €), revisadas una a una por una persona y calificadas de 70 a 98 frente a todas las demás casas de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original.
+
+Hoy: 591 casas en 21 países. Actualizado el 2026-11-18. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
+
+## Páginas principales
+
+- [Las mejores casas](https://realhunt.co/es): todas las casas, de mejor a peor nota, con filtros
+- [Cómo funciona la nota](https://realhunt.co/es/method): las 11 notas parciales y qué significa la calificación
+- [Casas nuevas](https://realhunt.co/es/new): las últimas casas revisadas
+- [Datos para citar](https://realhunt.co/es/research): precios, gastos y normas por país, con CSV
+- [Precios por país](https://realhunt.co/es/research/prices): precio mediano y precio por m²
+- [Datos clave por país](https://realhunt.co/es/research/country-facts): frases con fecha que se pueden citar
+- [Portales inmobiliarios por país](https://realhunt.co/es/research/property-portals): directorio con el enlace de cada uno
+- [Datos abiertos](https://realhunt.co/es/research/open-data): archivos, licencia y cómo leerlos
+- [Cuánto cuesta comprar fuera](https://realhunt.co/es/costs): impuestos y gastos por país, con fuentes
+- [Guías de compra por país](https://realhunt.co/es/guide): los pasos, uno a uno
+- [¿Puedo comprar allí?](https://realhunt.co/es/can-i-buy): la norma según la nacionalidad
+- [Calculadora de gastos de compra](https://realhunt.co/es/buying-costs): por país y precio
+- [Calculadoras gratuitas](https://realhunt.co/es/tools): información general, no asesoramiento
+- [Comparar dos países](https://realhunt.co/es/countries): precios, gastos y normas frente a frente
+- [Estudios y guías](https://realhunt.co/es/blog): datos propios, en español
+- [Para asistentes de IA](https://realhunt.co/es/for-ai): qué se puede citar y cómo atribuirlo
+- [Política editorial y correcciones](https://realhunt.co/es/editorial-policy): cómo se revisa lo que se publica
+- [Página de prensa](https://realhunt.co/es/press): datos, cifras y contacto
+
+## Archivos para máquinas
+
+- [Descripción OpenAPI de todos los archivos](https://realhunt.co/openapi.json)
+- [Países: cifras clave y dirección de cada archivo](https://realhunt.co/data/countries/index.json)
+- Por país, en español: https://realhunt.co/data/countries/<país>.es.md (texto limpio) y https://realhunt.co/data/countries/<país>.es.pdf (hoja de datos de una página)
+- Casas nuevas en español: https://realhunt.co/es/feed.xml (RSS)
+- Estudios en español: https://realhunt.co/es/blog/rss.xml (RSS)
+- Método en Markdown: https://realhunt.co/es/method.md
+
+## Países
+
+- [Viviendas en venta en España](https://realhunt.co/es/homes/spain): 182 casas
+- [Viviendas en venta en Italia](https://realhunt.co/es/homes/italy): 59 casas
+- [Casas en venta en Estados Unidos](https://realhunt.co/es/homes/united-states): 54 casas
+- [Casas en venta en Dinamarca](https://realhunt.co/es/homes/denmark): 45 casas
+- [Viviendas en venta en Francia](https://realhunt.co/es/homes/france): 42 casas
+- [Casas en venta en Suecia](https://realhunt.co/es/homes/sweden): 37 casas
+- [Casas en venta en Japón](https://realhunt.co/es/homes/japan): 30 casas
+- [Pisos en venta en Polonia](https://realhunt.co/es/homes/poland): 30 casas
+- [Pisos en venta en Alemania](https://realhunt.co/es/homes/germany): 20 casas
+- [Pisos en venta en los Países Bajos](https://realhunt.co/es/homes/netherlands): 18 casas
+- [Casas en venta en Grecia](https://realhunt.co/es/homes/greece): 14 casas
+- [Casas en venta en Suiza](https://realhunt.co/es/homes/switzerland): 10 casas
+- [Casas en venta en Canadá](https://realhunt.co/es/homes/canada): 9 casas
+- [Pisos en venta en Bulgaria](https://realhunt.co/es/homes/bulgaria): 6 casas
+- [Pisos en venta en República Dominicana](https://realhunt.co/es/homes/dominican-republic): 4 casas

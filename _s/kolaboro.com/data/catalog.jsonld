@@ -1,0 +1,3629 @@
+{
+ "@context": {
+  "dcat": "http://www.w3.org/ns/dcat#",
+  "dct": "http://purl.org/dc/terms/",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "spdx": "http://spdx.org/rdf/terms#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "adms": "http://www.w3.org/ns/adms#"
+ },
+ "@id": "https://kolaboro.com/data/catalog.jsonld",
+ "@type": "dcat:Catalog",
+ "dct:title": "Kolaboro open data catalog",
+ "dct:description": "Every public dataset of kolaboro.com (anonymous off-plan property due diligence): what developers advertise, what registers and satellites show, and how the service itself is checked. Sizes, hashes and dates measured by a daily job.",
+ "dct:publisher": {
+  "@id": "https://kolaboro.com/#org",
+  "@type": "foaf:Agent",
+  "foaf:name": "Kolaboro",
+  "foaf:homepage": {
+   "@id": "https://kolaboro.com/"
+  }
+ },
+ "foaf:homepage": {
+  "@id": "https://kolaboro.com/data/"
+ },
+ "dct:language": {
+  "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+ },
+ "dct:modified": {
+  "@value": "2026-11-05T22:47:31Z",
+  "@type": "xsd:dateTime"
+ },
+ "dct:license": {
+  "@id": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "dcat:service": [
+  {
+   "@id": "https://kolaboro.com/api/open",
+   "@type": "dcat:DataService",
+   "dct:title": "Kolaboro public API",
+   "dcat:endpointURL": {
+    "@id": "https://kolaboro.com/api/open"
+   },
+   "dcat:endpointDescription": {
+    "@id": "https://kolaboro.com/docs/api/openapi.json"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dcat:servesDataset": [
+    {
+     "@id": "https://kolaboro.com/data/#bali-cases"
+    }
+   ]
+  }
+ ],
+ "dcat:dataset": [
+  {
+   "@id": "https://kolaboro.com/data/#bali-cases",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "bali-cases",
+   "dct:title": "Tracked off-plan projects (anonymous)",
+   "dct:description": "Every off-plan project Kolaboro tracks, one record per anonymous project id: market, country, stage, price band, promised handover year, the six public checks (permit, deposit protection, progress, plans, track record, no guaranteed returns), how far each is confirmed, claims tested, flags and the change history. Advertised claims, not verified facts. The same data is served filtered by /api/open/projects.",
+   "dcat:keyword": [
+    "off-plan",
+    "property",
+    "due diligence",
+    "developers",
+    "transparency"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#bali-cases"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#bali-cases-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Tracked off-plan projects (anonymous)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "1675416",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/bali-cases.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/bali-cases.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "8f5decbe28f61470ecd5775ca3e8403045c958ee9a03b5744fcbcd7613231606"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/bali-cases.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/bali-cases.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#world-claims",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "world-claims",
+   "dct:title": "What developers advertise, by market",
+   "dct:description": "Per market: how many tracked projects, title and lease terms advertised, guaranteed-return language, permit claims, permit numbers and plans published, and advertised USD prices. Aggregates only.",
+   "dcat:keyword": [
+    "advertising",
+    "claims",
+    "markets"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#world-claims"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#world-claims-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "What developers advertise, by market",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "405044",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/world-claims.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/world-claims.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "e6ced9db19ad9ab646d14ff4c680de2f9c3faa1608f05c5547bd3f76965df839"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/world-claims.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/world-claims.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#bali-claims",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "bali-claims",
+   "dct:title": "What developers advertise in Bali",
+   "dct:description": "The same aggregate as world-claims for the Bali market alone: title and lease terms, guaranteed-return language, permit claims and numbers, plans and advertised prices.",
+   "dcat:keyword": [
+    "Bali",
+    "advertising",
+    "claims"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#bali-claims"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#bali-claims-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "What developers advertise in Bali",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "2167",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/bali-claims.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/bali-claims.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "13d924f2ed7f923953e60db22987a916bbe4e85a792cfe2b32332adfea5e0824"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/bali-claims.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/bali-claims.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#kolaboro-parquet",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "kolaboro-parquet",
+   "dct:title": "Projects table (Parquet)",
+   "dct:description": "One row per tracked project, built from bali-cases.json: checks, confirmation levels, claims, delay, satellite status and page fingerprint, in Apache Parquet for DuckDB, pandas or Spark. Columns and row count are listed in kolaboro.parquet.json.",
+   "dcat:keyword": [
+    "parquet",
+    "duckdb",
+    "projects"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#kolaboro-parquet"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#kolaboro-parquet-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Projects table (Parquet)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/vnd.apache.parquet"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "71304",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/kolaboro.parquet"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/kolaboro.parquet"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "dcd0d097d8a1f467b5755b1f39ac3a4a7217c9f5382fb53e058e90f911eace8d"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T16:58:33Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#kolaboro-markets-parquet",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "kolaboro-markets-parquet",
+   "dct:title": "Markets table (Parquet)",
+   "dct:description": "One row per market with the same method as /api/open/markets: projects, average public and confirmed checks, permit and deposit-protection shares, flags and the transparency index.",
+   "dcat:keyword": [
+    "parquet",
+    "markets",
+    "transparency index"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#kolaboro-markets-parquet"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#kolaboro-markets-parquet-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Markets table (Parquet)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/vnd.apache.parquet"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "7713",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/kolaboro-markets.parquet"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/kolaboro-markets.parquet"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "afda06abb70077225b0ef92873f987e1fa63ccfe848f998a449206357a9e458c"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T16:58:33Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#kolaboro-parquet-manifest",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "kolaboro-parquet-manifest",
+   "dct:title": "Parquet export manifest",
+   "dct:description": "Columns, row counts, sizes and SHA-256 of the two Parquet files and the SHA-256 of the bali-cases.json they were built from. A signed copy is served by /api/x/e/parquet-manifest.",
+   "dcat:keyword": [
+    "parquet",
+    "manifest"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#kolaboro-parquet-manifest"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#kolaboro-parquet-manifest-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Parquet export manifest",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "4565",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/kolaboro.parquet.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/kolaboro.parquet.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "c36fc72f71df04d74462db6f350e0cb763e24c46118ce6d66d2f011420f18cc2"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/kolaboro-parquet-manifest.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T16:58:33Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/kolaboro-parquet-manifest.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#promises",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "promises",
+   "dct:title": "Dated developer promises",
+   "dct:description": "Every dated promise a developer made about a tracked project (handover, construction start, structure, other milestones, permits, rental programme), read from the research records, with its status today. Per project and per market.",
+   "dcat:keyword": [
+    "promises",
+    "handover",
+    "milestones"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#promises"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#promises-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Dated developer promises",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "414536",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/promises.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/promises.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a870e0c8d21e51f9c77f9063358eb7bf468599654fabb676336ccbc0339f13a0"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/promises.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/promises.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#promise-drift",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "promise-drift",
+   "dct:title": "Promise drift on developer pages",
+   "dct:description": "Day by day, which advertised values changed on each tracked developer page (handover date, prices, units and other fields), from fingerprinted page text. No URLs or names.",
+   "dcat:keyword": [
+    "changes",
+    "developer pages"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#promise-drift"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#promise-drift-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Promise drift on developer pages",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "182925",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/promise-drift.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/promise-drift.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "54091ac4c76556b14a2f2033ae652764d5fc395edc8add7ae9ff001aa727506f"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/promise-drift.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/promise-drift.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#domain-age",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "domain-age",
+   "dct:title": "Website age of project pages",
+   "dct:description": "For each project whose page is on its own website: domain registration date (RDAP) and earliest TLS certificate (Certificate Transparency), at month precision. No domains are published.",
+   "dcat:keyword": [
+    "RDAP",
+    "certificate transparency",
+    "domain age"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#domain-age"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#domain-age-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Website age of project pages",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "71381",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/domain-age.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/domain-age.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "7443d30f6560ea3c0feeb0a07204a372b1a43daea183243c32776647092c75c5"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/domain-age.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/domain-age.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#delay-index",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "delay-index",
+   "dct:title": "Delivery delay index",
+   "dct:description": "How far tracked off-plan projects are behind the first handover date on record, by market, with rules, caveats and monthly history.",
+   "dcat:keyword": [
+    "delays",
+    "handover",
+    "index"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#delay-index"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#delay-index-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Delivery delay index",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "44237",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/delay-index.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/delay-index.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "e8a9198d1cd4c8a935489d1fd9f43add0d493d2225c5342ea572e58be27e957c"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/delay-index.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/delay-index.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#on-time",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "on-time",
+   "dct:title": "On-time handover odds",
+   "dct:description": "For each project: will it hand over within 6 months of the first date on record? Estimated from closed comparable projects with a 95% interval, plus validation and the bias of the sample.",
+   "dcat:keyword": [
+    "handover",
+    "probability"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#on-time"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#on-time-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "On-time handover odds",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "158217",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/on-time.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/on-time.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "b87bc44b76536642a5ad3737ee22fb951d960de691da86d979e58ef137dbbe32"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/on-time.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/on-time.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#price-index",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "price-index",
+   "dct:title": "Asking-price index",
+   "dct:description": "Chained index of advertised asking prices (\"from\" prices on developer and listing pages) per market, with daily snapshots, rules and caveats. Not transaction prices.",
+   "dcat:keyword": [
+    "prices",
+    "index"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#price-index"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#price-index-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Asking-price index",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "160740",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/price-index.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/price-index.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "ae225a089b4143e948c9f58be896b39e958d46bb3327d764f8d7e9be1c192387"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/price-index.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/price-index.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#price-reality",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "price-reality",
+   "dct:title": "Advertised versus registered prices",
+   "dct:description": "Advertised starting prices compared with officially registered sales where a government publishes them: counts, quartiles and medians only, converted to USD at a cited rate. Lists the markets not covered.",
+   "dcat:keyword": [
+    "prices",
+    "official data"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#price-reality"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#price-reality-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Advertised versus registered prices",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "85063",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/price-reality.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/price-reality.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "ffdee2e15e9f51758803ce8baeb9749a7971c5d378aebf2a86f310a424e4aab6"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/price-reality.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/price-reality.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#risk",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "risk",
+   "dct:title": "Risk patterns",
+   "dct:description": "Which tracked projects look unusual on public warning signs compared with all others, and why, with a model card. It ranks; it does not predict. No project has a confirmed outcome to train on.",
+   "dcat:keyword": [
+    "risk",
+    "anomaly",
+    "model card"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#risk"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#risk-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Risk patterns",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "166187",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/risk.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/risk.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "8b1481584a5380cf797f9969a14910df229ea2fe8f2b83f12104da14f8ae905b"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/risk.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/risk.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#register-checks",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "register-checks",
+   "dct:title": "Official register checks",
+   "dct:description": "Every official register linked on /registers/: whether our checker could read it (time, HTTP status, size and SHA-256 of the bytes received), and per project the register result, with a hash-chained lookup archive.",
+   "dcat:keyword": [
+    "registers",
+    "permits"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#register-checks"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#register-checks-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Official register checks",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "46964",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/register-checks.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/register-checks.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "ab6c797fd5f234ff49758e271b9315ab89377972d87990fb55b1c6dc83ced181"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/register-checks.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/register-checks.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#company-graph",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "company-graph",
+   "dct:title": "Company and director graph (UK)",
+   "dct:description": "Anonymised company and director graph for tracked projects whose developer is a UK company found on Companies House by exact name. Counts and anonymised nodes only.",
+   "dcat:keyword": [
+    "companies house",
+    "directors"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#company-graph"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#company-graph-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Company and director graph (UK)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "94647",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/company-graph.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/company-graph.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a15ecdfdb67acc75cdb08802a2eea381020b51c95613dd05306ead15e0ed37f2"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/company-graph.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T13:15:03Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/company-graph.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#company-graph-global",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "company-graph-global",
+   "dct:title": "Global company graph (GLEIF)",
+   "dct:description": "For each tracked project: whether the companies named as developer have a Legal Entity Identifier, their parents and countries, as counts and booleans only. Source GLEIF (CC0).",
+   "dcat:keyword": [
+    "GLEIF",
+    "LEI",
+    "companies"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#company-graph-global"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#company-graph-global-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Global company graph (GLEIF)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "289665",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/company-graph-global.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/company-graph-global.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "c2723170643836f10f71d18a2e0f87b77f2625b506f84c6029376a3d11fe67a6"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/company-graph-global.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T09:36:15Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/company-graph-global.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#insolvency-watch",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "insolvency-watch",
+   "dct:title": "Insolvency watch",
+   "dct:description": "Daily check of UK and Spanish developer companies against insolvency notices (The Gazette, BORME). Each hit is reduced to date, source and type of notice; no company names.",
+   "dcat:keyword": [
+    "insolvency",
+    "BORME",
+    "Gazette"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#insolvency-watch"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#insolvency-watch-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Insolvency watch",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "10116",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/insolvency-watch.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/insolvency-watch.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "be93a0f6b88087b0069783de04704e1de76e48622b8abd7db7263355f591bd27"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/insolvency-watch.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T15:34:51Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/insolvency-watch.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#insolvency-es-index",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "insolvency-es-index",
+   "dct:title": "Spanish insolvency index (hashed)",
+   "dct:description": "Insolvency acts published in BORME Section One, keyed by a truncated SHA-256 of the normalised company name so the file is not a readable list of companies; anyone can test a name against it. Source BOE, reuse with attribution.",
+   "dcat:keyword": [
+    "BORME",
+    "insolvency",
+    "Spain"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#insolvency-es-index"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#insolvency-es-index-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Spanish insolvency index (hashed)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "660111",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/insolvency-es-index.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/insolvency-es-index.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "17a66fed302e24afe2defa24163e9e2200383d3945c0c5453ed0803ff3227fe8"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/insolvency-es-index.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T15:34:51Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/insolvency-es-index.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#hazards",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "hazards",
+   "dct:title": "Natural hazards at tracked projects",
+   "dct:description": "Elevation, flood depth, earthquakes, tsunamis, volcanoes and coastline distance for tracked projects with coordinates and watched areas, rounded so they cannot pinpoint a plot. Sources listed in the file.",
+   "dcat:keyword": [
+    "hazards",
+    "flood",
+    "earthquake"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#hazards"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#hazards-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Natural hazards at tracked projects",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "49805",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/hazards.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/hazards.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "add6472b886f9924fccaebfce6a3b7a02dad83564acd59b4a03ae213d90e2b28"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/hazards.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/MONTHLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/hazards.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#satellite",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "satellite",
+   "dct:title": "Satellite watch (Sentinel-2 and Sentinel-1)",
+   "dct:description": "Sentinel-2 vegetation and clearing per season and Sentinel-1 radar backscatter change for every watched site and area (boxes of about 1 km). Contains modified Copernicus Sentinel data.",
+   "dcat:keyword": [
+    "satellite",
+    "Sentinel-2",
+    "Copernicus"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#satellite"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#satellite-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Satellite watch (Sentinel-2 and Sentinel-1)",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "72851",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/satellite.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/satellite.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f2a846b0f7087d73acbd2abf3a8176ea932bf30ef2bc0a76168938c44155bd30"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/satellite.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/satellite.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#satellite-optical",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "satellite-optical",
+   "dct:title": "Monthly optical progress series",
+   "dct:description": "Per watched site and month from January 2023: cloud-masked Sentinel-2 median, built_pct (built-up or bare ground, which look alike at 10 m) and new built-up since the baseline month. Contains modified Copernicus Sentinel data.",
+   "dcat:keyword": [
+    "satellite",
+    "construction progress"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#satellite-optical"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#satellite-optical-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Monthly optical progress series",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "422384",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/satellite-optical.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/satellite-optical.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "c21006df86dbdd16d2cb945b9b3cc9ece4273788d3bbe714f491a21994a6f389"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/satellite-optical.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/satellite-optical.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#stalled-sites",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "stalled-sites",
+   "dct:title": "Stalled construction sites",
+   "dct:description": "Sentinel-2 change between clear quarters in a 150 m window around every project with coordinates, and which sites show almost no change.",
+   "dcat:keyword": [
+    "satellite",
+    "stalled"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#stalled-sites"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#stalled-sites-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Stalled construction sites",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "135819",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/stalled-sites.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/stalled-sites.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "9e647f9fb7e5b4238b05801213d45056b31c0139fa8d547f1a41eb98ebd13625"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/stalled-sites.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/stalled-sites.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#night-lights",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "night-lights",
+   "dct:title": "Night lights at finished projects",
+   "dct:description": "NASA Black Marble night-time light at projects that should be finished, compared with the surrounding ring, monthly for 36 months. Light is a proxy, not proof of occupancy.",
+   "dcat:keyword": [
+    "night lights",
+    "VIIRS"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#night-lights"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#night-lights-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Night lights at finished projects",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "4916",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/night-lights.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/night-lights.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "50839058f887712e7f0e44401e4e1242383e2fd912bb17298db64c28bce6e06f"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/night-lights.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/night-lights.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#visual-diff",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "visual-diff",
+   "dct:title": "Visual changes on developer pages",
+   "dct:description": "Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published because they would identify anonymous projects.",
+   "dcat:keyword": [
+    "visual diff",
+    "developer pages"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#visual-diff"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#visual-diff-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Visual changes on developer pages",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "50449",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/visual-diff.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/visual-diff.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "032acaab68f56c795a7aa8ba1f9bb4ddb2417e89e96bd11d34e696eff6667674"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/visual-diff.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/visual-diff.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#render-reuse",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "render-reuse",
+   "dct:title": "Reused renders across projects",
+   "dct:description": "Pairs of images that appear on the pages of two different tracked projects on different domains (CLIP image embeddings, cosine 0.85 or more, confirmed by feature matching), with what was excluded and why.",
+   "dcat:keyword": [
+    "images",
+    "reuse"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#render-reuse"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#render-reuse-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Reused renders across projects",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "2516",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/render-reuse.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/render-reuse.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "0632307d112498bd68b1150022ab0b8e0989e195296852a16df0cef62a2552f9"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/render-reuse.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T07:43:11Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/render-reuse.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#image-hashes",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "image-hashes",
+   "dct:title": "Perceptual image hashes",
+   "dct:description": "64-bit difference hashes of the images kept by the weekly render-reuse run, so anyone can check whether a picture appears on a tracked project page.",
+   "dcat:keyword": [
+    "images",
+    "hashes"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#image-hashes"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#image-hashes-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Perceptual image hashes",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "472049",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/image-hashes.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/image-hashes.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "21e5dd9598acd74177222f0794b4895a069a8538fef662ec93084c3d9fe0dc31"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/image-hashes.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T07:41:39Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/image-hashes.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#image-index",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "image-index",
+   "dct:title": "Render index",
+   "dct:description": "Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.",
+   "dcat:keyword": [
+    "images",
+    "hashes"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#image-index"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#image-index-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Render index",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "432159",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/image-index.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/image-index.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "de2f4d0050013f8d99bcf58e5f2615b094b2f502498a3b7e3d9166556dd1a784"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/image-index.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/image-index.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#similar",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "similar",
+   "dct:title": "Similar projects",
+   "dct:description": "For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.",
+   "dcat:keyword": [
+    "similarity",
+    "embeddings"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#similar"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#similar-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Similar projects",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "203262",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/similar.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/similar.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f7a3a8876d105c5514d31f2f486bd98e79fd6411507b904f4afab0948cf51b10"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/similar.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/similar.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#mystery-shopper",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "mystery-shopper",
+   "dct:title": "Mystery shopper programme",
+   "dct:description": "Questionnaire, measurement rules and status of the mystery shopper programme. It has not started; the file says why.",
+   "dcat:keyword": [
+    "mystery shopper"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#mystery-shopper"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#mystery-shopper-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Mystery shopper programme",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "4725",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/mystery-shopper.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/mystery-shopper.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "314c223e0d207569eff86651baeefddcad15071b5bdb3826b5487ed27aaa9e90"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/mystery-shopper.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-03T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/mystery-shopper.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#roadmap",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "roadmap",
+   "dct:title": "Product roadmap",
+   "dct:description": "The public product roadmap: each item with its number, theme, title, short description and status.",
+   "dcat:keyword": [
+    "roadmap"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#roadmap"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#roadmap-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Product roadmap",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "18898",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/roadmap.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/roadmap.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "362335ca86f767b7d51f05c65cfa85494eaf25752adfd48b3675a154bedea85a"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/roadmap.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-01T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/roadmap.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#projects-sample",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "projects-sample",
+   "dct:title": "Fictional sample score",
+   "dct:description": "One fictional project (marked fictional: true) used to demonstrate the score page. Not real data.",
+   "dcat:keyword": [
+    "sample"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#projects-sample"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#projects-sample-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Fictional sample score",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "2435",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/projects.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/projects.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "95dd75a834bbfe3db7f68f382e31caa5769d30d6276fb2e9be13a451dc2041d8"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/projects-sample.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/NEVER"
+   },
+   "dct:modified": {
+    "@value": "2026-10-27T00:00:00Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/projects-sample.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#progress-sample",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "progress-sample",
+   "dct:title": "Sample photo progress analysis",
+   "dct:description": "One stored example answer of the photo progress check, used on the demo page.",
+   "dcat:keyword": [
+    "sample"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#progress-sample"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#progress-sample-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Sample photo progress analysis",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "2763",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/progress-sample.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/progress-sample.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "b620feddaa71a2374e04ae7c83077c73c416a9674b39f2d78940eff62382c239"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/progress-sample.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/NEVER"
+   },
+   "dct:modified": {
+    "@value": "2026-10-29T20:41:55Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/progress-sample.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#coast-tiles",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "coast-tiles",
+   "dct:title": "Coastline outline tiles",
+   "dct:description": "Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles (published as one file per 10 degree column of longitude), quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.",
+   "dcat:keyword": [
+    "coastline",
+    "Natural Earth"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://www.naturalearthdata.com/about/terms-of-use/"
+   },
+   "dct:rights": "Public domain (Natural Earth)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#coast-tiles"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#coast-tiles-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Coastline outline tiles",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://www.naturalearthdata.com/about/terms-of-use/"
+     },
+     "dcat:byteSize": {
+      "@value": "2475460",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/#coast-tiles"
+     },
+     "dct:description": "36 files under https://kolaboro.com/data/coast/. One file per tile: coast/-10.json, coast/-100.json, coast/-110.json ...",
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "ddf78ea7cc348a03760325c95909466162c6e52fd20d1270360cc36585e82e28"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/coast-tiles.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/NEVER"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T07:18:43Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/coast-tiles.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#mangrove-tiles",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "mangrove-tiles",
+   "dct:title": "Mangrove index tiles",
+   "dct:description": "Global Mangrove Watch v3 (2020) reduced to cells of about 220 m that contain any mangrove pixel, in binary 45 degree blocks (format GMW1, see the file header description in the protected-land endpoint). Source CC BY 4.0, Bunting et al. 2022.",
+   "dcat:keyword": [
+    "mangroves",
+    "Global Mangrove Watch"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (Global Mangrove Watch v3, Bunting et al. 2022; credit Kolaboro for the reduction)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#mangrove-tiles"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#mangrove-tiles-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Mangrove index tiles",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/octet-stream"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "5523997",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/#mangrove-tiles"
+     },
+     "dct:description": "16 files under https://kolaboro.com/data/mangroves/. One file per tile: mangroves/-135_-45.bin, mangroves/-135_0.bin, mangroves/-180_-45.bin ...",
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f8bbf8d374c2f577e0ccdf8cf7a655ec4197bb5df06a6f82cf461593fd04274a"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/NEVER"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T08:57:27Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#benchmark",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "benchmark",
+   "dct:title": "AI desk review benchmark",
+   "dct:description": "Results of the desk review benchmark on fixed fictional cases, one file per model (Haiku, Sonnet), each case answer signed with the Kolaboro Ed25519 key.",
+   "dcat:keyword": [
+    "AI",
+    "benchmark"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#benchmark"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#benchmark-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "AI desk review benchmark",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "99204",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/#benchmark"
+     },
+     "dct:description": "2 files under https://kolaboro.com/data/benchmark/. One file per tile: benchmark/haiku.json, benchmark/sonnet.json ...",
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/benchmark.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-03T22:59:11Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/benchmark.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#a11y",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "a11y",
+   "dct:title": "Accessibility audit",
+   "dct:description": "axe-core audit of every page (WCAG 2.2 AA rules) with counts per rule and page and the run history.",
+   "dcat:keyword": [
+    "accessibility",
+    "WCAG"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#a11y"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#a11y-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Accessibility audit",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "25763",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/a11y.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/a11y.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "3e41f0709a34571b031565fcf8e6177d0bb472bf89aa5afd8f458dbc0085fb0a"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/a11y.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T10:00:10Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/a11y.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#lighthouse",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "lighthouse",
+   "dct:title": "Lighthouse scores",
+   "dct:description": "Lighthouse runs per page and form factor with thresholds and flags.",
+   "dcat:keyword": [
+    "performance",
+    "Lighthouse"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#lighthouse"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#lighthouse-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Lighthouse scores",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "16091",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/lighthouse.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/lighthouse.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "bbf06fe71064d14f88600b4a2275549a685bc7e91b428bd9ab2ee76715eccd61"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/lighthouse.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T12:42:32Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/lighthouse.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#qa",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "qa",
+   "dct:title": "Site QA crawl",
+   "dct:description": "Daily crawl of every page and link with the checks that ran and any problems found.",
+   "dcat:keyword": [
+    "QA",
+    "links"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#qa"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#qa-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Site QA crawl",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "3017",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/qa.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/qa.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "e8eda886e65f28dd9182079a26522bb51b60e84544c675b5ff07eda7475f32bd"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/qa.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T13:39:32Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/qa.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#journeys",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "journeys",
+   "dct:title": "Synthetic user journeys",
+   "dct:description": "A scripted buyer journey run in a real browser every week: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
+   "dcat:keyword": [
+    "monitoring",
+    "synthetic"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#journeys"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#journeys-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Synthetic user journeys",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "92448",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/journeys.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/journeys.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "899a9c236aeb1e7e2c4eb45cc695d4abcd0533646687b66056a68b5cef9ed6ac"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/journeys.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T18:56:54Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/journeys.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#verifiers",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "verifiers",
+   "dct:title": "Independent verifier run",
+   "dct:description": "Three independent implementations (JavaScript, Python, Go) check the test vectors and the live log, checkpoint, proofs and signatures.",
+   "dcat:keyword": [
+    "verification",
+    "transparency log"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#verifiers"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#verifiers-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Independent verifier run",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "1955",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/verifiers.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/verifiers.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "c72a98c05f3aa8473e6eb77fe4304c328de7c0d6b23344907f8817b4a1943c28"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/verifiers.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T16:51:53Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/verifiers.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#chaos",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "chaos",
+   "dct:title": "Chaos drills",
+   "dct:description": "Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.",
+   "dcat:keyword": [
+    "reliability",
+    "chaos"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#chaos"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#chaos-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Chaos drills",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "13451",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/chaos.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/chaos.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "1cd846ff32bcffc80cc6e43ae0846247594a91c1e71243e09ce30e4d0bddfec1"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/chaos.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-04T13:00:06Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/chaos.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#security-scan",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "security-scan",
+   "dct:title": "Security scan",
+   "dct:description": "OWASP ZAP baseline passive scan of kolaboro.com: alerts by risk.",
+   "dcat:keyword": [
+    "security",
+    "ZAP"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#security-scan"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#security-scan-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Security scan",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "3348",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/security-scan.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/security-scan.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "d26d8c3f172c1775b3cd64a97f4ed6ff0b7caae3b3f71ca33adc0c22ba996e19"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/security-scan.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-03T09:58:33Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/security-scan.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#restore",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "restore",
+   "dct:title": "Backup restore drill",
+   "dct:description": "Weekly drill: the latest database backup is restored into a clean PostgreSQL and checked table by table, and evidence files are re-hashed.",
+   "dcat:keyword": [
+    "backup",
+    "restore"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#restore"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#restore-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Backup restore drill",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "1267",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/restore.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/restore.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "0724349dbf25e6b89705b97a26a35ede865513721832f2cbd5e3323470466bb5"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/restore.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-03T09:12:58Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/restore.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#deploys",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "deploys",
+   "dct:title": "Deploy guard record",
+   "dct:description": "Each deploy of the site: smoke checks after it went live, and any automatic rollback.",
+   "dcat:keyword": [
+    "deploys",
+    "rollback"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#deploys"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#deploys-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Deploy guard record",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "46570",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/deploys.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/deploys.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "5c47acf1d402253d30bdce35547e0de9c5fb58ed5c83f0b54819633a50b85488"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/deploys.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T17:07:29Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/deploys.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#site-manifest",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "site-manifest",
+   "dct:title": "Site manifest",
+   "dct:description": "SHA-256 of every file published on kolaboro.com outside /data/, computed from the git commit the live site was serving.",
+   "dcat:keyword": [
+    "integrity",
+    "manifest"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#site-manifest"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#site-manifest-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Site manifest",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "71513",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/site-manifest.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/site-manifest.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "8873fb51d5f159150190790702524c4a0ba4de8c4b26103ddc64c2fc45248e79"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/site-manifest.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T19:03:51Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/site-manifest.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#builds",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "builds",
+   "dct:title": "Reproducible worker builds",
+   "dct:description": "Deterministic bundle of the site worker for each worker source tree that went live, built twice in clean folders; reproduced says whether both builds were identical.",
+   "dcat:keyword": [
+    "reproducible builds"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#builds"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#builds-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Reproducible worker builds",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "4710",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/builds.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/builds.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "13096dc3be16080ebdd3c8efd7950f6381d43c8e826080163635c1a495091106"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/builds.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T19:03:57Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/builds.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#property-tests",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "property-tests",
+   "dct:title": "Property-based tests of the scoring rules",
+   "dct:description": "Property-based tests and fuzzing of the open scoring rules, counted by the test run itself.",
+   "dcat:keyword": [
+    "tests",
+    "fuzzing"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#property-tests"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#property-tests-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Property-based tests of the scoring rules",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "8684",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/property-tests.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/property-tests.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a0134d50aaf7d8d75daf71d2fb0dd21a6d60d2d32cb7f360cf2ac89d9d81091a"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/property-tests.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-03T21:03:30Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/property-tests.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#shipping",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "shipping",
+   "dct:title": "Shipping log",
+   "dct:description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "dcat:keyword": [
+    "changelog",
+    "shipping"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#shipping"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#shipping-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Shipping log",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "101391",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/shipping.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/shipping.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f864c863e9f61ecd5ccd0dee24fa335fe009042c4fadc264109463177cf4be72"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/shipping.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T15:32:01Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/shipping.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#roadmap-sync",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "roadmap-sync",
+   "dct:title": "Roadmap items verified live",
+   "dct:description": "Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.",
+   "dcat:keyword": [
+    "roadmap"
+   ],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#roadmap-sync"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#roadmap-sync-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "Roadmap items verified live",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "10844",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/roadmap-sync.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/roadmap-sync.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "2e26d7540faf5b7d1ab435a9fdda5c7dd96b28ab45bfaf994b6fb57ae2effb12"
+     },
+     "dct:conformsTo": {
+      "@id": "https://kolaboro.com/api/x/data/schema/roadmap-sync.json"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T22:03:34Z",
+    "@type": "xsd:dateTime"
+   },
+   "dct:conformsTo": {
+    "@id": "https://kolaboro.com/api/x/data/schema/roadmap-sync.json"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-findings-by-project-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-findings-by-project-json",
+   "dct:title": "findings-by-project.json",
+   "dct:description": "Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-findings-by-project-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-findings-by-project-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "findings-by-project.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "169098",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/findings-by-project.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/findings-by-project.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f3731cbfa75acfacdf83682ba848caeec50178f72e70ec319cf3e829be24a5dd"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T16:46:49Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-indexnow-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-indexnow-json",
+   "dct:title": "indexnow.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-indexnow-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-indexnow-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "indexnow.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "1209870",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/indexnow.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/indexnow.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a8d661f232d46f028deb9b591c7a43efbcd47c38b39b0a675f1fe4076aabcb54"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T17:09:53Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-live-findings-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-live-findings-json",
+   "dct:title": "live-findings.json",
+   "dct:description": "Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-live-findings-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-live-findings-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "live-findings.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "136102",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/live-findings.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/live-findings.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "17872d5cfea18a0d08a17fc307d3a27fd4888254dfe4afdebda9cdbc155cc28e"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T22:12:33Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-lookup-coverage-json",
+   "dct:title": "lookup-coverage.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "lookup-coverage.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "5414",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/lookup-coverage.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/lookup-coverage.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "d3446f2e80aae4f2be760ab95e93297fce657edd726558a131bd77808ca34e2f"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-named-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-named-json",
+   "dct:title": "named.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-named-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-named-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "named.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "3875115",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/named.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/named.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a82f4e6da8d6a0bd567f941268063fa3d232ed91a49c9bb93cd1bcd9629363b7"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-quality-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-quality-json",
+   "dct:title": "quality.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-quality-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-quality-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "quality.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "386382",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/quality.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/quality.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "4b6441cc270b00d06bcbc057231217c0376798deb996aad513c1b94f923a0694"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T07:24:07Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-seo-audit-json",
+   "dct:title": "seo-audit.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "seo-audit.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "10981",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/seo-audit.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/seo-audit.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a0c9cc5afbff8e48b51ea0403157fc197f47c414cee06ce85e5f940ebad087b7"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T15:41:00Z",
+    "@type": "xsd:dateTime"
+   }
+  }
+ ]
+}

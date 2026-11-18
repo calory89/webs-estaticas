@@ -1,0 +1,1559 @@
+{
+ "updated": "2026-11-05T10:00:10.060Z",
+ "base": "https://kolaboro.com",
+ "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
+ "viewport": "1280x900",
+ "seconds": 512,
+ "goal": "0 serious or critical",
+ "ok": false,
+ "summary": {
+  "at": "2026-11-05T10:00:10.060Z",
+  "pages": 212,
+  "errors": 0,
+  "nodes_by_impact": {
+   "critical": 1,
+   "serious": 73,
+   "moderate": 0,
+   "minor": 0
+  },
+  "pages_clean": 200,
+  "pages_with_serious_or_critical": 12
+ },
+ "rules": [
+  {
+   "id": "aria-allowed-attr",
+   "impact": "critical",
+   "help": "Elements must only use supported ARIA attributes",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/shipping/"
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+   "pages": 4,
+   "nodes": 31,
+   "examples": [
+    "/portal/demo/",
+    "/report/state-of-off-plan-2026/live/",
+    "/docs/api/explorer/",
+    "/digest/"
+   ]
+  },
+  {
+   "id": "scrollable-region-focusable",
+   "impact": "serious",
+   "help": "Scrollable region must have keyboard access",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI",
+   "pages": 4,
+   "nodes": 12,
+   "examples": [
+    "/docs/api/",
+    "/docs/mcp/",
+    "/docs/webhooks/",
+    "/docs/partners/"
+   ]
+  },
+  {
+   "id": "aria-prohibited-attr",
+   "impact": "serious",
+   "help": "Elements must only use permitted ARIA attributes",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
+   "pages": 1,
+   "nodes": 25,
+   "examples": [
+    "/investors/dossier/"
+   ]
+  },
+  {
+   "id": "link-in-text-block",
+   "impact": "serious",
+   "help": "Links must be distinguishable without relying on color",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/map/"
+   ]
+  },
+  {
+   "id": "target-size",
+   "impact": "serious",
+   "help": "All touch targets must be 24px large, or leave sufficient space",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=axeAPI",
+   "pages": 1,
+   "nodes": 4,
+   "examples": [
+    "/accessibility/"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "url": "/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/sample/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/investors/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/bali/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/bali-land-titles/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/off-plan-payments/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/privacy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/terms/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/dubai/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/phuket/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tulum/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/algarve/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/lombok/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/destinations/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/survey/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/corrections/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/1/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/3/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/5/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/6/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/7/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/8/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/9/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/10/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/exam/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/demo/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/self-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/roadmap/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/changelog/2026-11-03/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/changelog/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/glossary/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/book/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/id/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/questions-to-ask-a-developer/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/contract-clauses/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/research/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/how-we-choose/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/portal/demo/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".c7-pill"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/copilot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/independence/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/technology/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/verify/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/status/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/api/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 5,
+     "targets": [
+      ".api-b:nth-child(11)",
+      ".api-b:nth-child(15)",
+      ".api-b:nth-child(18)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/metrics/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/live/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/api-pilot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/security/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/compare/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/transparency-index/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/extension/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/state-of-off-plan-2026/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/satellite/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/data/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/standard/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/templates/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/my-checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/benchmark/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/reply/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/regulators/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/data/licence/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/lawyers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/data-policy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/log/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/ai-safety/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/evals/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/transparency-log/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/signed-photos/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/reliability/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/sql/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/mcp/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".eg-code:nth-child(17)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/docs/sdk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ask/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/api-keys/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/trust/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/investors/dossier/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "aria-prohibited-attr",
+     "impact": "serious",
+     "nodes": 25,
+     "targets": [
+      "rect[y=\"15.538650306748465\"]",
+      "rect[y=\"14.97914110429447\"]",
+      "rect[aria-label=\"4 Nov 2026: 815\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/prices/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/registers/checks/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/iban-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/check/red-team/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/alerts/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/state-of-off-plan-2026/live/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 24,
+     "targets": [
+      "dd > .lv-ok:nth-child(1)",
+      ".lv-ok:nth-child(4)",
+      "tr:nth-child(1) > td:nth-child(4) > .lv-ok"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/satellite/plot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/milestones/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/hazards/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/graph/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/mystery-shopper/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/visual/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/index/prices/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/benchmark/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/log/witnesses/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/buyer-reports/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/webhooks/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 3,
+     "targets": [
+      "#wsample > .eg-code",
+      "#cjs",
+      "#cpy"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/law/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/changelog/2026-11-04/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/index/delays/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/court-file/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/partners/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 3,
+     "targets": [
+      ".eg-code:nth-child(12)",
+      ".eg-code:nth-child(13)",
+      "div[data-p=\"c\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/satellite/night/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/promises/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/search-alerts/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ask-developer/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/graph/global/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/shipping/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "aria-allowed-attr",
+     "impact": "critical",
+     "nodes": 1,
+     "targets": [
+      "button[data-d=\"2026-11-05\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/data/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/api/explorer/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "button[data-p=\"/api/open\"] > .ex-m"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/map/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "link-in-text-block",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[href$=\"leafletjs.com\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/compare/markets/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/timeline/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/digest/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 5,
+     "targets": [
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b5.c > a[data-k=\"new\"][href$=\"#list\"]",
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(3) > a[data-k=\"page\"][href$=\"#list\"]",
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(6) > a[data-k=\"register\"][href$=\"#list\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/explain/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/visual-tests/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/page-weight/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/speed/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/accessibility/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "target-size",
+     "impact": "serious",
+     "nodes": 4,
+     "targets": [
+      "a[href$=\"api/\"]",
+      "a[href$=\"mcp/\"]",
+      "a[href$=\"webhooks/\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/saved/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  }
+ ],
+ "history": [
+  {
+   "at": "2026-11-05T10:00:10.060Z",
+   "pages": 212,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 1,
+    "serious": 73,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 200,
+   "pages_with_serious_or_critical": 12
+  },
+  {
+   "at": "2026-11-04T10:00:54.195Z",
+   "pages": 190,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 0,
+    "serious": 56,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 184,
+   "pages_with_serious_or_critical": 6
+  },
+  {
+   "at": "2026-11-03T13:48:09.638Z",
+   "pages": 116,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 56,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 111,
+   "pages_with_serious_or_critical": 5
+  },
+  {
+   "at": "2026-11-03T13:32:44.351Z",
+   "pages": 116,
+   "errors": 4,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 39,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 106,
+   "pages_with_serious_or_critical": 6
+  },
+  {
+   "at": "2026-11-03T13:14:50.049Z",
+   "pages": 116,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 87,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 87,
+   "pages_with_serious_or_critical": 29
+  }
+ ]
+}

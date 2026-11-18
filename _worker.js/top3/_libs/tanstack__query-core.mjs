@@ -387,29 +387,27 @@ function replaceData(prevData, data, options) {
 }
 /**
 * Returns a new array with `item` added at the end. If that makes the array longer than `max`,
-* the first item is dropped. Only one item is dropped, so the result can still exceed `max` if
-* `items` already did.
+* excess items are removed from the start.
 * @param items - The current items.
 * @param item - The value to append.
-* @param max - The length above which an item is dropped. `0` (the default) means no limit.
+* @param max - The maximum number of items to keep. `0` (the default) means no limit.
 * @returns A new array with `item` added.
 */
 function addToEnd(items, item, max = 0) {
 	const newItems = [...items, item];
-	return max && newItems.length > max ? newItems.slice(1) : newItems;
+	return max && newItems.length > max ? newItems.slice(-max) : newItems;
 }
 /**
 * Returns a new array with `item` added at the start. If that makes the array longer than `max`,
-* the last item is dropped. Only one item is dropped, so the result can still exceed `max` if
-* `items` already did.
+* excess items are removed from the end.
 * @param items - The current items.
 * @param item - The value to prepend.
-* @param max - The length above which an item is dropped. `0` (the default) means no limit.
+* @param max - The maximum number of items to keep. `0` (the default) means no limit.
 * @returns A new array with `item` added.
 */
 function addToStart(items, item, max = 0) {
 	const newItems = [item, ...items];
-	return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
+	return max && newItems.length > max ? newItems.slice(0, max) : newItems;
 }
 /**
 * Sentinel value that can be passed as a query's `queryFn` to conditionally disable the query (equivalent
@@ -437,6 +435,7 @@ function ensureQueryFn(options, fetchOptions) {
 	if (!options.queryFn || options.queryFn === skipToken) return () => Promise.reject(/* @__PURE__ */ new Error(`Missing queryFn: '${options.queryHash}'`));
 	return options.queryFn;
 }
+var fetchSignal = Symbol();
 /**
 * Adds a lazy `signal` getter to an object, such as a query function context. The first time
 * `signal` is read, `onCancelled` is registered for the signal's `abort` event (or called right
@@ -444,20 +443,24 @@ function ensureQueryFn(options, fetchOptions) {
 * @param object - The object to add the `signal` property to.
 * @param getSignal - Returns the `AbortSignal`. Called once, when `signal` is first read.
 * @param onCancelled - Called when the signal is aborted, if `signal` was read.
+* @param internalSignal - The fetch signal to forward without consuming the getter.
 * @returns The same object, with the `signal` property added.
 */
-function addConsumeAwareSignal(object, getSignal, onCancelled) {
+function addConsumeAwareSignal(object, getSignal, onCancelled, internalSignal) {
 	let consumed = false;
 	let signal;
-	Object.defineProperty(object, "signal", {
-		enumerable: true,
-		get: () => {
-			signal ??= getSignal();
-			if (consumed) return signal;
-			consumed = true;
-			if (signal.aborted) onCancelled();
-			else signal.addEventListener("abort", onCancelled, { once: true });
-			return signal;
+	Object.defineProperties(object, {
+		[fetchSignal]: { value: internalSignal },
+		signal: {
+			enumerable: true,
+			get: () => {
+				signal ??= getSignal();
+				if (consumed) return signal;
+				consumed = true;
+				if (signal.aborted) onCancelled();
+				else signal.addEventListener("abort", onCancelled, { once: true });
+				return signal;
+			}
 		}
 	});
 	return object;
@@ -986,7 +989,7 @@ function createRetryer(config) {
 			failureCount++;
 			config.onFail?.(failureCount, error);
 			sleep(delay).then(() => {
-				return canContinue() ? void 0 : pause(canContinue);
+				return isResolved() || canContinue() ? void 0 : pause(canContinue);
 			}).then(() => {
 				if (isRetryCancelled) reject(error);
 				else run();
@@ -1078,8 +1081,9 @@ function infiniteQueryBehavior(pages) {
 		let currentPage = 0;
 		const fetchFn = async () => {
 			let cancelled = false;
+			const signalContext = context;
 			const addSignalProperty = (object) => {
-				addConsumeAwareSignal(object, () => context.signal, () => cancelled = true);
+				addConsumeAwareSignal(object, () => context.signal, () => cancelled = true, signalContext[fetchSignal]);
 			};
 			const queryFn = ensureQueryFn(context.options, context.fetchOptions);
 			const fetchPage = async (data, param, previous) => {
@@ -1183,6 +1187,7 @@ var Query = class extends Removable {
 	#cache;
 	#client;
 	#retryer;
+	#fetchPromise;
 	#defaultOptions;
 	#abortSignalConsumed;
 	constructor(config) {
@@ -1350,11 +1355,12 @@ var Query = class extends Removable {
 		return this.state.dataUpdateCount + this.state.errorUpdateCount > 0;
 	}
 	/**
-	* Returns `true` if the query has at least one observer configured with
+	* Returns `true` if the query has data and at least one observer configured with
 	* `staleTime: 'static'`, meaning it is treated as never stale.
 	* @returns `true` if the query is static.
 	*/
 	isStatic() {
+		if (this.state.data === void 0) return false;
 		if (this.getObserversCount() > 0) return this.observers.some((observer) => resolveQueryValue(observer.options.staleTime, this) === "static");
 		return false;
 	}
@@ -1391,7 +1397,7 @@ var Query = class extends Removable {
 	* @see {@link Query#isStale}
 	* @example
 	* ```ts
-	* const isStale = query.isStaleByTime(1000 * 60)
+	* const isStale = query.isStaleByTime(60 * 1000)
 	* ```
 	*/
 	isStaleByTime(staleTime = 0) {
@@ -1503,9 +1509,9 @@ var Query = class extends Removable {
 	async fetch(options, fetchOptions) {
 		if (this.state.fetchStatus !== "idle" && this.#retryer?.status() !== "rejected") {
 			if (this.state.data !== void 0 && fetchOptions?.cancelRefetch) this.cancel({ silent: true });
-			else if (this.#retryer) {
+			else if (this.#retryer && this.#fetchPromise) {
 				this.#retryer.continueRetry();
-				return this.#retryer.promise;
+				return this.#fetchPromise;
 			}
 		}
 		if (options) this.setOptions(options);
@@ -1515,11 +1521,17 @@ var Query = class extends Removable {
 		}
 		const abortController = new AbortController();
 		const addSignalProperty = (object) => {
-			Object.defineProperty(object, "signal", {
-				enumerable: true,
-				get: () => {
-					this.#abortSignalConsumed = true;
-					return abortController.signal;
+			Object.defineProperties(object, {
+				[fetchSignal]: {
+					value: abortController.signal,
+					enumerable: true
+				},
+				signal: {
+					enumerable: true,
+					get: () => {
+						this.#abortSignalConsumed = true;
+						return abortController.signal;
+					}
 				}
 			});
 		};
@@ -1586,32 +1598,42 @@ var Query = class extends Removable {
 			networkMode: context.options.networkMode,
 			canRun: () => true
 		});
-		try {
-			const data = await retryer.start();
-			if (data === void 0) throw new Error(`${this.queryHash} data is undefined`);
-			this.setData(data);
-			this.#cache.config.onSuccess?.(data, this);
-			this.#cache.config.onSettled?.(data, this.state.error, this);
-			return data;
-		} catch (error) {
-			if (error instanceof CancelledError) {
-				if (error.silent) return this.#retryer.promise;
-				else if (error.revert) {
-					if (this.state.data === void 0) throw error;
-					return this.state.data;
+		const fetchPromise = (async () => {
+			try {
+				const data = await retryer.promise;
+				if (data === void 0) throw new Error(`${this.queryHash} data is undefined`);
+				this.setData(data);
+				this.#cache.config.onSuccess?.(data, this);
+				this.#cache.config.onSettled?.(data, this.state.error, this);
+				return data;
+			} catch (error) {
+				if (error instanceof CancelledError) {
+					if (error.silent) {
+						if (this.#retryer !== retryer && this.#fetchPromise) return this.#fetchPromise;
+						throw error;
+					} else if (error.revert) {
+						if (this.state.data === void 0) throw error;
+						return this.state.data;
+					}
 				}
+				this.#dispatch({
+					type: "error",
+					error
+				});
+				this.#cache.config.onError?.(error, this);
+				this.#cache.config.onSettled?.(this.state.data, error, this);
+				throw error;
+			} finally {
+				if (this.#retryer === retryer) {
+					this.#retryer = void 0;
+					this.#fetchPromise = void 0;
+				}
+				this.scheduleGc();
 			}
-			this.#dispatch({
-				type: "error",
-				error
-			});
-			this.#cache.config.onError?.(error, this);
-			this.#cache.config.onSettled?.(this.state.data, error, this);
-			throw error;
-		} finally {
-			if (this.#retryer === retryer) this.#retryer = void 0;
-			this.scheduleGc();
-		}
+		})();
+		this.#fetchPromise = fetchPromise;
+		retryer.start();
+		return fetchPromise;
 	}
 	#dispatch(action) {
 		const reducer = (state) => {
@@ -1929,6 +1951,7 @@ var Mutation = class extends Removable {
 					isPaused
 				});
 			}
+			if (this.state.isPaused && retryer.canStart()) onContinue();
 			const data = await retryer.start();
 			await this.#mutationCache.config.onSuccess?.(data, variables, this.state.context, this, mutationFnContext);
 			await this.options.onSuccess?.(data, variables, this.state.context, mutationFnContext);
@@ -2845,13 +2868,17 @@ var QueryClient = class {
 	* have observers with a static `staleTime`), are never refetched.
 	*
 	* By default (`cancelRefetch: true`), a currently running fetch is cancelled before the new
-	* one starts. The returned promise resolves once all matching queries have settled; it does
-	* not reject on individual query failures unless `throwOnError` is set.
+	* one starts. The returned promise does not reject on individual query failures unless
+	* `throwOnError` is `true`.
+	*
+	* Initially paused fetches do not delay the returned promise. Their later errors are handled
+	* even when `throwOnError` is `true`.
 	* @param filters - The filters that select which queries to refetch. Without filters, every query
 	* in the cache is included.
 	* @param options - Set `cancelRefetch` to `false` to keep a running fetch instead of cancelling
-	* it, and `throwOnError` to `true` to reject when a refetch fails.
-	* @returns A promise that resolves once every matched query has settled.
+	* it, and `throwOnError` to `true` to reject when a refetch that was not initially paused fails.
+	* @returns A promise that resolves once all matching refetches that were not initially paused
+	* have settled.
 	* @example
 	* ```ts
 	* // refetch all active queries partially matching a query key:
@@ -2865,8 +2892,9 @@ var QueryClient = class {
 		};
 		const promises = notifyManager.batch(() => this.#queryCache.findAll(filters).filter((query) => !query.isDisabled() && !query.isStatic()).map((query) => {
 			let promise = query.fetch(void 0, fetchOptions);
-			if (!fetchOptions.throwOnError) promise = promise.catch(noop);
-			return query.state.fetchStatus === "paused" ? Promise.resolve() : promise;
+			const isPaused = query.state.fetchStatus === "paused";
+			if (!fetchOptions.throwOnError || isPaused) promise = promise.catch(noop);
+			return isPaused ? Promise.resolve() : promise;
 		}));
 		return Promise.all(promises).then(noop);
 	}

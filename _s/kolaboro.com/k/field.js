@@ -37,9 +37,25 @@
     for (var yy = 1; yy < h - 1; yy++) for (var xx = 1; xx < w - 1; xx++){ var k = yy * w + xx, l = 4 * g[k] - g[k-1] - g[k+1] - g[k-w] - g[k+w]; n++; var dl = l - m; m += dl / n; m2 += dl * (l - m); }
     return { blur: Math.round(m2 / n), light: Math.round(sum / (w * h)) };
   }
-  function prep(file){
+  // 64-bit difference hash (dHash): 9x8 grey thumbnail, one bit per horizontal neighbour comparison. Near-identical photos differ by a few bits.
+  function dhash(canvas){
+    var c = document.createElement('canvas'); c.width = 9; c.height = 8; var x = c.getContext('2d'); x.drawImage(canvas, 0, 0, 9, 8);
+    var d = x.getImageData(0, 0, 9, 8).data, g = [], bits = '', hex = '';
+    for (var i = 0; i < 72; i++) g.push(.299 * d[i*4] + .587 * d[i*4+1] + .114 * d[i*4+2]);
+    for (var yy = 0; yy < 8; yy++) for (var xx = 0; xx < 8; xx++) bits += g[yy*9+xx] > g[yy*9+xx+1] ? '1' : '0';
+    for (var k = 0; k < 64; k += 4) hex += parseInt(bits.slice(k, k + 4), 2).toString(16);
+    return hex;
+  }
+  // one-time capture code from the server, burned into the photo corner with the time, before the fingerprint is taken
+  function burn(c, code){
+    if (!code) return; var x = c.getContext('2d'), fs = Math.max(14, Math.round(c.width / 45)), t = 'KB ' + code + ' · ' + new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+    x.font = '700 ' + fs + 'px system-ui, sans-serif'; var w = x.measureText(t).width + fs;
+    x.fillStyle = 'rgba(0,0,0,.55)'; x.fillRect(c.width - w - 8, c.height - fs * 1.8 - 8, w, fs * 1.8);
+    x.fillStyle = '#fff'; x.fillText(t, c.width - w - 8 + fs / 2, c.height - fs * .6 - 8);
+  }
+  function prep(file, code){
     return new Promise(function(res, rej){
-      var r = new FileReader(); r.onload = function(){ var im = new Image(); im.onload = function(){ var s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); var q = quality(c), u = c.toDataURL('image/jpeg', .82); res({ url: u, w: c.width, h: c.height, blur: q.blur, light: q.light }); }; im.onerror = rej; im.src = r.result; }; r.onerror = rej; r.readAsDataURL(file);
+      var r = new FileReader(); r.onload = function(){ var im = new Image(); im.onload = function(){ var s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); var q = quality(c), ph = dhash(c); burn(c, code); var u = c.toDataURL('image/jpeg', .82); res({ phash: ph, url: u, w: c.width, h: c.height, blur: q.blur, light: q.light }); }; im.onerror = rej; im.src = r.result; }; r.onerror = rej; r.readAsDataURL(file);
     });
   }
   function gps(){
@@ -51,6 +67,38 @@
     var e = D.earnings || {}, q = D.quality || {};
     return '<div class="f-kpis"><div><span>To be paid</span><b>€' + (+e.approved_unpaid || 0) + '</b></div><div><span>In review</span><b>€' + (+e.pending_review || 0) + '</b></div><div><span>Paid so far</span><b>€' + (+e.paid || 0) + '</b></div><div><span>Quality score</span><b>' + (q.score == null ? '—' : q.score + '/100') + '</b></div></div>' +
       (q.score != null ? '<p class="ap-small ap-muted" style="margin:6px 0 0">' + q.photos_ok + ' of ' + q.photos + ' photos accepted' + (q.tasks_submitted ? ' · ' + q.on_time + ' of ' + q.tasks_submitted + ' visits on time · ' + q.approved + ' approved' + (q.returned ? ', ' + q.returned + ' returned' : '') : '') + '. Agents with higher scores get visits first.</p>' : '');
+  }
+  // ---------- passkey: this phone signs every photo fingerprint (Face ID / fingerprint); the private key never leaves the phone ----------
+  var PKS = (function(){ try { return !!(window.PublicKeyCredential && navigator.credentials && crypto.subtle); } catch (e) { return false; } })();
+  function u8b64u(u){ var s = ''; new Uint8Array(u).forEach(function(x){ s += String.fromCharCode(x); }); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+  function u8b64(u){ var s = ''; new Uint8Array(u).forEach(function(x){ s += String.fromCharCode(x); }); return btoa(s); }
+  function b64uU8(x){ x = x.replace(/-/g, '+').replace(/_/g, '/'); while (x.length % 4) x += '='; var s = atob(x), a = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
+  function pkId(){ try { return localStorage.getItem('kb-pk-' + (D && D.me || 'agent')); } catch (e) { return null; } }
+  function pkBox(){
+    if (!PKS) return '';
+    var id = pkId();
+    return id ? '<p class="ap-small" style="margin:10px 0 0;color:#0B5A40">🔐 Photos from this phone are signed with its passkey. <a href="/engineering/signed-photos" target="_blank">What this means</a></p>'
+      : '<div class="ap-note" style="margin-top:12px;background:#EEF6F2;border-radius:12px;padding:12px"><b>Sign your photos with this phone</b><p class="ap-small" style="margin:4px 0 8px">One tap with Face ID or your fingerprint. Each photo then carries a signature that only this phone can make, so nobody (not even Kolaboro) can put your name on a photo you did not take.</p><button class="ap-btn" id="fpk">Set up signing</button></div>';
+  }
+  function pkSetup(){
+    var uid = new Uint8Array(16); crypto.getRandomValues(uid);
+    return navigator.credentials.create({ publicKey: { challenge: crypto.getRandomValues(new Uint8Array(32)), rp: { id: 'kolaboro.com', name: 'Kolaboro' }, user: { id: uid, name: 'Kolaboro agent', displayName: 'Kolaboro agent' },
+      pubKeyCredParams: [{ type: 'public-key', alg: -7 }, { type: 'public-key', alg: -8 }, { type: 'public-key', alg: -257 }], authenticatorSelection: { authenticatorAttachment: 'platform', userVerification: 'required', residentKey: 'discouraged' }, attestation: 'none', timeout: 60000 } })
+      .then(function(c){
+        var r = c.response; if (!r.getPublicKey) throw new Error('This browser cannot export the key. Update it and try again.');
+        return call('passkey_add', { cred_id: c.id, spki: u8b64(r.getPublicKey()), alg: r.getPublicKeyAlgorithm() }).then(function(d){
+          if (!d || d.error) throw new Error(d && d.error || 'save failed');
+          try { localStorage.setItem('kb-pk-' + (D && D.me || 'agent'), c.id); } catch (e) {}
+          KB.toast('Done: your photos are now signed by this phone.'); render();
+        });
+      }).catch(function(e){ KB.toast('Signing not set up: ' + (e.message || e)); });
+  }
+  function pkSign(sha, code){
+    var id = pkId(); if (!PKS || !id) return Promise.resolve(null);
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode('kolaboro-capture-v1\n' + sha + '\n' + (code || ''))).then(function(ch){
+      return navigator.credentials.get({ publicKey: { challenge: ch, rpId: 'kolaboro.com', allowCredentials: [{ type: 'public-key', id: b64uU8(id) }], userVerification: 'required', timeout: 60000 } });
+    }).then(function(a){ var r = a.response; return { cred_id: a.id, authenticator_data: u8b64u(r.authenticatorData), client_data_json: u8b64u(r.clientDataJSON), signature: u8b64u(r.signature) }; })
+      .catch(function(){ KB.toast('Photo sent without the passkey signature.'); return null; });
   }
   function list(){
     if (!D.tasks.length) return '<div class="ap-empty">No visits assigned yet. When the team assigns you a visit you get an email and it appears here, with the address, the checklist and the questions to ask.</div>';
@@ -86,7 +134,8 @@
   function render(){
     var box = $('visits'); if (!box) return;
     var t = OPEN && D.tasks.filter(function(x){ return x.id === OPEN; })[0];
-    box.innerHTML = '<h2>Site visits</h2>' + earnings() + '<div style="margin-top:12px">' + (t ? visit(t) : list()) + '</div>';
+    box.innerHTML = '<h2>Site visits</h2>' + earnings() + pkBox() + '<div style="margin-top:12px">' + (t ? visit(t) : list()) + '</div>';
+    if ($('fpk')) $('fpk').onclick = pkSetup;
     box.querySelectorAll('[data-t]').forEach(function(b){ b.onclick = function(){ OPEN = +b.dataset.t; if (window.history) history.replaceState(null, '', '#visits'); render(); box.scrollIntoView(); gps(); var tt = D.tasks.filter(function(x){ return x.id === OPEN; })[0]; if (tt && tt.status === 'assigned') call('start', { task_id: OPEN }); }; });
     if ($('fback')) $('fback').onclick = function(){ OPEN = null; render(); };
     if (t) {
@@ -102,10 +151,11 @@
   function photo(t, step, file, label){
     var old = label.innerHTML; label.classList.add('busy'); label.firstChild && (label.lastChild.textContent = ' Checking…');
     var taken = new Date().toISOString();
-    prep(file).then(function(p){
-      return crypto.subtle.digest('SHA-256', b64bytes(p.url)).then(function(h){
-        var c = POS ? POS.coords : {}, age = POS ? (Date.now() - POS.timestamp) / 1000 : null;
-        return send('photo', { task_id: t.id, step: step, file: p.url, sha256: hex(h), lat: c.latitude, lng: c.longitude, acc: age != null && age < 120 ? c.accuracy : (c.accuracy ? c.accuracy + 500 : null), taken_at: (file.lastModified && Math.abs(Date.now() - file.lastModified) < 20 * 60000) ? new Date(file.lastModified).toISOString() : taken, blur: p.blur, light: p.light, w: p.w, h: p.h, device: navigator.userAgent.slice(0, 110) });
+    var code = null;
+    (navigator.onLine ? call('code', { task_id: t.id }).then(function(r){ code = r && r.code || null; }).catch(function(){}) : Promise.resolve()).then(function(){ return prep(file, code); }).then(function(p){
+      return crypto.subtle.digest('SHA-256', b64bytes(p.url)).then(function(h){ return pkSign(hex(h), code).then(function(sg){ return [h, sg]; }); }).then(function(hs){
+        var h = hs[0], c = POS ? POS.coords : {}, age = POS ? (Date.now() - POS.timestamp) / 1000 : null;
+        return send('photo', { passkey: hs[1] || undefined, task_id: t.id, step: step, file: p.url, sha256: hex(h), lat: c.latitude, lng: c.longitude, acc: age != null && age < 120 ? c.accuracy : (c.accuracy ? c.accuracy + 500 : null), taken_at: (file.lastModified && Math.abs(Date.now() - file.lastModified) < 20 * 60000) ? new Date(file.lastModified).toISOString() : taken, blur: p.blur, light: p.light, w: p.w, h: p.h, phash: p.phash, code: code, device: navigator.userAgent.slice(0, 110) });
       });
     }).then(function(d){ if (d) after(d); else { label.innerHTML = old; label.classList.remove('busy'); render(); } }).catch(function(e){ label.innerHTML = old; KB.toast('Could not upload: ' + (e.message || e)); });
   }

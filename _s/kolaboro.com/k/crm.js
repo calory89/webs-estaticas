@@ -12,11 +12,35 @@
   function stOf(l){ var s = l.status || 'new'; return LEGACY[s] || (ST.some(function(x){ return x[0] === s; }) ? s : 'new'); }
   function isTest(l){ return /(^|@)(test|example)\b|@example\.com$/i.test(l.email || ''); }
   function day(t){ return t ? String(t).slice(0, 10) : ''; }
-  function today(){ return new Date().toISOString().slice(0, 10); }
+  function today(){ var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }   // local date: next actions and due dates are the admin's own calendar days
   function ago(t){ if (!t) return ''; var s = (Date.now() - new Date(t)) / 1000; if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' min'; if (s < 86400) return Math.round(s / 3600) + ' h'; return Math.round(s / 86400) + ' d'; }
   function src(l){ return l.src || l.source || 'direct'; }
   function has(){ return D && D.kpi !== undefined; }
-  function act(action, payload){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: action, p_payload: payload }).then(function(d){ if (d && d.error) { alert('Not saved: ' + d.error); return; } A.reload(); }); }
+  // Priority: transparent sum of facts about the lead, shown on hover. Not a prediction.
+  function prio(l){
+    var f = [], u = userFor(l), age = (Date.now() - new Date(l.created_at)) / 864e5;
+    if (u) f.push([3, 'has a portal account']);
+    if (u && (u.cases || []).length) f.push([3, 'opened a case']);
+    if (l.paid) f.push([2, 'has paid before']);
+    if (l.phone) f.push([2, 'left a phone number']);
+    if (/^https?:\/\//.test(l.learn || '')) f.push([2, 'gave a project URL']);
+    if (/check-request|yc-buyer|account/.test(l.plan || '')) f.push([2, 'asked for a check or opened an account']);
+    if (age < 2) f.push([2, 'arrived in the last 48 h']);
+    else if (age > 30 && !notesFor(l).length) f.push([-2, 'older than 30 days, never contacted']);
+    if (DUP[(l.email || '').toLowerCase()] > 1) f.push([1, 'came back more than once']);
+    var n = f.reduce(function(a, x){ return a + x[0]; }, 0);
+    return { n: n, lvl: n >= 7 ? 'hot' : n >= 4 ? 'warm' : 'cold', why: f.map(function(x){ return (x[0] > 0 ? '+' : '') + x[0] + ' ' + x[1]; }).join('\n') || 'no signals yet' };
+  }
+  var DUP = {};
+  var TPL = [
+    ['Desk review follow-up', 'Your desk review of {project}', 'Hi {first},\n\nThanks for running a desk review on Kolaboro. A few of the points it raised can only be answered on the ground (land title, building permit, the site itself).\n\nIf you are about to make a payment, we can have someone who lives there check the project first. It takes about 7 days and costs EUR 490, refunded in full if we cannot take the case.\n\nAny questions, just reply to this email.\n\nCarlos\nKolaboro'],
+    ['Next step on your check', 'Next step on your Kolaboro check', 'Hi {first},\n\nTo start the check we only need the project website and, if you have it, the contract or reservation form. You can add both in your portal: https://kolaboro.com/portal\n\nCarlos\nKolaboro'],
+    ['Payment received', 'Your Kolaboro check has started', 'Hi {first},\n\nWe received your payment and your check has started. You will see every step, with dates, in your portal: https://kolaboro.com/portal\n\nCarlos\nKolaboro'],
+    ['Checking in', 'Still looking at {project}?', 'Hi {first},\n\nJust checking in. Are you still considering {project}? If a payment date is coming up, tell me and we will see if we can check it before then.\n\nCarlos\nKolaboro']
+  ];
+  function tpl(t, l){ var first = (l.name || '').split(' ')[0] || 'there', project = (l.learn || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '') || 'the project'; return t.replace(/\{first\}/g, first).replace(/\{project\}/g, project); }
+  var PICK = {};
+  function act(action, payload){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: action, p_payload: payload }).then(function(d){ if (d && d.error) { (window.KBUI?KBUI.toast:function(m){alert(m)})('Not saved. ' + (A.err ? A.err(d) : d.error), 'bad'); return; } A.reload(); }); }
 
   // tab + section
   var nav = document.querySelector('nav.tabs'), main = document.querySelector('main');
@@ -36,6 +60,7 @@
     '.crm-g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.crm-kv{display:grid;grid-template-columns:120px 1fr;gap:4px 10px;font-size:.86rem;margin-top:10px}.crm-kv span{color:var(--muted)}' +
     '.crm-tl{list-style:none;padding:0;margin:10px 0 0}.crm-tl li{border-left:2px solid var(--line);padding:2px 0 10px 12px;position:relative;font-size:.88rem;white-space:pre-wrap}.crm-tl li::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--line)}.crm-tl li.k-call::before{background:#3B6FD8}.crm-tl li.k-email::before{background:#1E9E6A}.crm-tl li.k-meeting::before{background:#8A4FD8}.crm-tl li.k-task::before{background:var(--hi)}.crm-tl li.k-sys::before{background:#bbb}.crm-tl li small{display:block;color:var(--muted)}.crm-tl li.done{opacity:.55}' +
     '.crm-today li{margin:4px 0}.crm-x{position:sticky;top:0;float:right;border:0;background:#F2F1EC;border-radius:10px;padding:6px 10px;cursor:pointer}.crm-warn{background:#FFF4E5;border:1px solid #F5C98B;border-radius:12px;padding:10px 12px;font-size:.88rem;margin-top:12px}' +
+    '.crm-pr{float:right;min-width:24px;text-align:center;border-radius:999px;font-size:.72rem;font-weight:800;padding:1px 6px;background:#E6E4DD;cursor:help}.crm-pr.hot{background:#FF5B14;color:#111}.crm-pr.warm{background:#FFE6D9}' +
     '.crm-src td,.crm-src th{padding:6px}.crm-bar{height:8px;background:var(--hi);border-radius:4px}' +
     '@media(max-width:700px){.crm-g2{grid-template-columns:1fr}.crm-kv{grid-template-columns:1fr}}';
   document.head.appendChild(css);
@@ -65,6 +90,7 @@
   }
 
   function render(){
+    DUP = {}; leads().forEach(function(l){ var e = (l.email || '').toLowerCase(); DUP[e] = (DUP[e] || 0) + 1; });
     var L = leads().filter(function(l){ return !isTest(l); }), k = D.kpi || {}, due = dueItems(), wk = Date.now() - 7 * 864e5;
     var users = (D.users || []).filter(function(u){ return u.email !== 'demo@kolaboro.com' && (u.role || 'buyer') === 'buyer'; });
     var paying = {}; (D.payments || []).forEach(function(p){ if (p.email) paying[p.email.toLowerCase()] = 1; });
@@ -103,7 +129,8 @@
   }
   function card(l){
     var t = today(), nd = l.next_action, u = userFor(l);
-    return '<div class="crm-card" draggable="true" data-open="' + l.id + '"><b>' + esc(l.name || l.email) + '</b><small>' + esc(l.plan || 'other') + ' · ' + esc(src(l)) + ' · ' + ago(l.created_at) + '</small>' +
+    var pr = prio(l);
+    return '<div class="crm-card" draggable="true" data-open="' + l.id + '"><span class="crm-pr ' + pr.lvl + '" title="' + esc(pr.why) + '">' + pr.n + '</span><b>' + esc(l.name || l.email) + '</b><small>' + esc(l.plan || 'other') + ' · ' + esc(src(l)) + ' · ' + ago(l.created_at) + '</small>' +
       (l.learn ? '<small style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(String(l.learn).replace(/^https?:\/\/(www\.)?/, '')) + '</small>' : '') +
       ((l.tags || []).length ? '<div>' + l.tags.map(function(x){ return '<span class="tg">' + esc(x) + '</span>'; }).join('') + '</div>' : '') +
       '<small>' + (l.value_eur ? '€' + (+l.value_eur).toLocaleString() + ' · ' : '') + (nd ? '<span class="' + (nd <= t ? 'due' : '') + '">next ' + esc(nd.slice(5)) + '</span>' : '') + (u ? ' · account' : '') + (l.paid ? ' · paid' : '') + '</small></div>';
@@ -111,7 +138,7 @@
   function body(){
     var F = filtered(), el = $('crm-body'); if (!el) return;
     if (VIEW === 'board') {
-      el.innerHTML = '<div class="crm-board">' + ST.map(function(s){ var c = F.filter(function(l){ return stOf(l) === s[0]; }); return '<div class="crm-col" data-st="' + s[0] + '"><h3><span>' + s[1] + '</span><span>' + c.length + '</span></h3>' + c.slice(0, 80).map(card).join('') + (c.length > 80 ? '<p class="muted" style="font-size:.8rem">+' + (c.length - 80) + ' more, use search</p>' : '') + '</div>'; }).join('') + '</div>';
+      el.innerHTML = '<div class="crm-board">' + ST.map(function(s){ var c = F.filter(function(l){ return stOf(l) === s[0]; }).sort(function(a, b){ return prio(b).n - prio(a).n || (a.created_at < b.created_at ? 1 : -1); }); return '<div class="crm-col" data-st="' + s[0] + '"><h3><span>' + s[1] + '</span><span>' + c.length + '</span></h3>' + c.slice(0, 80).map(card).join('') + (c.length > 80 ? '<p class="muted" style="font-size:.8rem">+' + (c.length - 80) + ' more, use search</p>' : '') + '</div>'; }).join('') + '</div>';
       el.querySelectorAll('.crm-card').forEach(function(c){ c.addEventListener('dragstart', function(e){ e.dataTransfer.setData('text/plain', c.dataset.open); }); });
       el.querySelectorAll('.crm-col').forEach(function(col){
         col.addEventListener('dragover', function(e){ e.preventDefault(); col.classList.add('drop'); });
@@ -119,11 +146,71 @@
         col.addEventListener('drop', function(e){ e.preventDefault(); col.classList.remove('drop'); var id = e.dataTransfer.getData('text/plain'); if (id) setStatus(id, col.dataset.st); });
       });
     } else {
-      el.innerHTML = '<div class="card"><div class="tw"><table><tr><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.map(function(l){ return '<tr data-open="' + l.id + '" style="cursor:pointer"><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + esc(stOf(l)) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td><td>' + esc(l.next_action || '') + '</td><td>' + (l.value_eur ? '€' + esc(l.value_eur) : '') + '</td></tr>'; }).join('') + '</table></div></div>';
+      var H = has(), stSel = function(l){ return '<select class="crm-ie" data-ie="' + l.id + '|status" aria-label="Stage of ' + esc(l.name || l.email) + '">' + ST.map(function(s){ return '<option value="' + s[0] + '"' + (stOf(l) === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select>'; };
+      el.innerHTML = '<div class="card"><div class="row crm-bulk" id="crm-bulk" style="margin-bottom:8px"><span class="muted" id="crm-bn" aria-live="polite">0 selected</span>' +
+        '<select id="crm-bs" aria-label="Move selected to stage"><option value="">Move selected to…</option>' + ST.map(function(s){ return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join('') + '</select>' +
+        (H ? '<label class="crm-bl">Next action <input type="date" id="crm-bd" aria-label="Set next action date for selected"></label><button class="btn2" id="crm-bdg" type="button">Set date</button><input id="crm-btg" placeholder="tag" aria-label="Tag to add to selected" style="width:110px"><button class="btn2" id="crm-btga" type="button">Add tag</button><button class="btn2" id="crm-btgr" type="button">Remove tag</button>' : '') +
+        '<button class="btn2" id="crm-bx" type="button">Export selected</button><button class="btn2" id="crm-bm" type="button">Email selected (BCC)</button><button class="btn2" id="crm-bc" type="button">Clear selection</button></div>' +
+        '<p class="muted crm-ieh">Stage, next action and value save as you change them. Undo from the message that appears, or Ctrl+Z.</p>' +
+        '<div class="tw"><table class="crm-lt"><tr><th><input type="checkbox" id="crm-ba" aria-label="Select all shown"></th><th>Priority</th><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.sort(function(a, b){ return prio(b).n - prio(a).n; }).map(function(l){ var pr = prio(l);
+          return '<tr data-open="' + l.id + '" style="cursor:pointer"><td><input type="checkbox" data-pick="' + l.id + '"' + (PICK[l.id] ? ' checked' : '') + ' aria-label="Select ' + esc(l.name || l.email) + '"></td><td><span class="crm-pr ' + pr.lvl + '" style="float:none" title="' + esc(pr.why) + '">' + pr.n + '</span></td><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + stSel(l) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td>' +
+            '<td>' + (H ? '<input type="date" class="crm-ie" data-ie="' + l.id + '|next_action" value="' + esc(l.next_action || '') + '" aria-label="Next action for ' + esc(l.name || l.email) + '"' + (l.next_action && l.next_action <= today() && ['won','lost'].indexOf(stOf(l)) < 0 ? ' data-due="1"' : '') + '>' : esc(l.next_action || '')) + '</td>' +
+            '<td>' + (H ? '<input type="number" min="0" step="1" class="crm-ie crm-iev" data-ie="' + l.id + '|value_eur" value="' + esc(l.value_eur || '') + '" placeholder="€" aria-label="Deal value in euros for ' + esc(l.name || l.email) + '">' : (l.value_eur ? '€' + esc(l.value_eur) : '')) + '</td></tr>'; }).join('') + '</table></div></div>';
+      var upd = function(){ var n = Object.keys(PICK).length; $('crm-bn').textContent = n + ' selected'; $('crm-bulk').classList.toggle('on', n > 0); };
+      el.querySelectorAll('[data-pick]').forEach(function(c){ c.onclick = function(e){ e.stopPropagation(); if (c.checked) PICK[c.dataset.pick] = 1; else delete PICK[c.dataset.pick]; upd(); }; });
+      el.querySelectorAll('.crm-ie').forEach(function(c){ c.addEventListener('click', function(e){ e.stopPropagation(); }); c.addEventListener('keydown', function(e){ e.stopPropagation(); if (e.key === 'Enter' && c.tagName === 'INPUT') c.blur(); }); c.addEventListener('change', function(){ var p = c.dataset.ie.split('|'), o = {}; o[p[1]] = c.value; edit([p[0]], o, 'inline'); }); });
+      $('crm-ba').onclick = function(e){ e.stopPropagation(); F.forEach(function(l){ if (e.target.checked) PICK[l.id] = 1; else delete PICK[l.id]; }); body(); };
+      var picked = function(){ var ids = Object.keys(PICK).filter(function(id){ return leads().some(function(l){ return l.id === id; }); }); if (!ids.length) toast('Select one or more leads first.', 'info'); return ids; };
+      $('crm-bs').onchange = function(){ var v = this.value, ids = picked(); this.value = ''; if (!v || !ids.length) return; edit(ids, { status: v }, 'bulk'); };
+      if (H) {
+        $('crm-bdg').onclick = function(){ var v = $('crm-bd').value, ids = picked(); if (!ids.length) return; if (!v) { toast('Pick a date first.', 'info'); $('crm-bd').focus(); return; } edit(ids, { next_action: v }, 'bulk'); };
+        var tagOp = function(add){ var t = String($('crm-btg').value || '').trim().toLowerCase().slice(0, 30), ids = picked(); if (!ids.length) return; if (!t) { toast('Type a tag first.', 'info'); $('crm-btg').focus(); return; }
+          edit(ids, function(l){ var cur = (l.tags || []).slice(); if (add && cur.indexOf(t) < 0) cur.push(t); if (!add) cur = cur.filter(function(x){ return x !== t; }); return { tags: cur }; }, 'bulk', (add ? 'added tag ' : 'removed tag ') + t); };
+        $('crm-btga').onclick = function(){ tagOp(true); }; $('crm-btgr').onclick = function(){ tagOp(false); };
+      }
+      $('crm-bx').onclick = function(){ var ids = picked(); if (ids.length) csv(leads().filter(function(l){ return PICK[l.id]; })); };
+      $('crm-bm').onclick = function(){ var em = leads().filter(function(l){ return PICK[l.id] && l.email; }).map(function(l){ return l.email; }); if (em.length) location.href = 'mailto:?bcc=' + encodeURIComponent(em.join(',')); else toast('Select one or more leads first.', 'info'); };
+      $('crm-bc').onclick = function(){ PICK = {}; body(); };
+      upd();
+      if (FOCUS) { var fe = el.querySelector('[data-ie="' + FOCUS + '"]'); FOCUS = null; if (fe) fe.focus(); }
     }
   }
+  // ---------- inline and bulk edits: optimistic, saved through lead_update (or set_status before the CRM update), undoable
+  var UNDO = [], FOCUS = null, RL = 0;
+  function toast(m, k, o){ if (window.KBUI) return KBUI.toast(m, k, o); if (k === 'bad') alert(m); }
+  function snap(l){ return { status: stOf(l), next_action: l.next_action || '', value_eur: l.value_eur == null ? '' : String(l.value_eur), tags: (l.tags || []).slice() }; }
+  function apply(l, o){ Object.keys(o).forEach(function(k){ l[k] = k === 'value_eur' ? (o[k] === '' ? null : +o[k]) : k === 'next_action' ? (o[k] || null) : o[k]; }); }
+  function save(id, o){ var H = has(); if (!H) { if (!o.status) return Promise.resolve({ error: 'needs the CRM database update' }); return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'set_status', p_payload: { id: id, status: o.status } }); }
+    var pl = { id: id }; Object.keys(o).forEach(function(k){ pl[k] = o[k]; }); return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'lead_update', p_payload: pl }); }
+  function laterReload(){ clearTimeout(RL); RL = setTimeout(function(){ var a = document.activeElement; if (a && a.closest && a.closest('#crm-body .crm-ie, .crm-drawer form')) return laterReload(); A.reload(); }, 6000); }
+  function words(o){ return Object.keys(o).map(function(k){ return k === 'status' ? 'stage ' + ((ST.filter(function(s){ return s[0] === o[k]; })[0] || [0, o[k]])[1]) : k === 'next_action' ? (o[k] ? 'next action ' + o[k] : 'next action cleared') : k === 'value_eur' ? (o[k] !== '' ? 'value €' + o[k] : 'value cleared') : 'tags ' + ((o[k] || []).join(', ') || 'none'); }).join(', '); }
+  // ids: lead ids; change: {field: value} or function(lead) -> {field: value}; how: 'inline' | 'bulk' | 'undo'
+  function edit(ids, change, how, label){
+    var L = leads(), jobs = [], before = [], after = [];
+    var a = document.activeElement; FOCUS = a && a.dataset && a.dataset.ie || null;
+    ids.forEach(function(id){ var l = L.filter(function(x){ return x.id === id; })[0]; if (!l) return; var o = typeof change === 'function' ? change(l) : change, prev = snap(l), b = {};
+      Object.keys(o).forEach(function(k){ b[k] = prev[k]; }); if (JSON.stringify(b) === JSON.stringify(o)) return; before.push({ id: id, o: b }); after.push({ id: id, o: o }); apply(l, o); });
+    if (!after.length) { if (how !== 'undo') toast('Nothing to change.', 'info'); return Promise.resolve(); }
+    if (how === 'bulk' && after.length > 1 && !confirm('Change ' + (label || words(after[0].o)) + ' on ' + after.length + ' leads?')) { before.forEach(function(x){ var l = L.filter(function(y){ return y.id === x.id; })[0]; if (l) apply(l, x.o); }); return Promise.resolve(); }
+    body();
+    after.forEach(function(x){ jobs.push(save(x.id, x.o).then(function(d){ return { id: x.id, ok: !(d && d.error), err: d && d.error && (A.err ? A.err(d) : d.error) }; }, function(){ return { id: x.id, ok: false, err: 'network' }; })); });
+    return Promise.all(jobs).then(function(r){
+      var bad = r.filter(function(x){ return !x.ok; }), good = r.filter(function(x){ return x.ok; });
+      bad.forEach(function(x){ var b = before.filter(function(y){ return y.id === x.id; })[0], l = leads().filter(function(y){ return y.id === x.id; })[0]; if (b && l) apply(l, b.o); });
+      if (bad.length) { body(); toast((good.length ? good.length + ' saved, ' : '') + bad.length + ' not saved. ' + (bad[0].err || ''), 'bad'); }
+      var ok = before.filter(function(b){ return good.some(function(g){ return g.id === b.id; }); });
+      if (good.length && how !== 'undo') { UNDO.push(ok); if (UNDO.length > 20) UNDO.shift();
+        var who = good.length === 1 ? (function(){ var l = leads().filter(function(y){ return y.id === good[0].id; })[0]; return l ? (l.name || l.email) : 'lead'; })() : good.length + ' leads';
+        toast('Saved ' + (label || words(after[0].o)) + ' for ' + who + '.', 'ok', { action: 'Undo', onAction: function(){ undo(ok); } }); }
+      if (good.length && how === 'undo') toast('Undone.', 'ok');
+      if (good.length) laterReload();
+    });
+  }
+  function undo(set){ if (!set) set = UNDO.pop(); else UNDO = UNDO.filter(function(x){ return x !== set; }); if (!set || !set.length) { toast('Nothing to undo.', 'info'); return; }
+    var by = {}; set.forEach(function(x){ by[x.id] = x.o; }); edit(Object.keys(by), function(l){ return by[l.id]; }, 'undo'); }
+  document.addEventListener('keydown', function(e){ if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key.toLowerCase() === 'z' && !sec.classList.contains('hide') && !(e.target.closest && e.target.closest('input:not([type=checkbox]),textarea,select'))) { if (UNDO.length) { e.preventDefault(); undo(); } } });
   sec.addEventListener('click', function(e){ var o = e.target.closest('[data-open]'); if (o) { e.preventDefault(); open(o.dataset.open); } });
-  function setStatus(id, s){ return act(has() ? 'lead_update' : 'set_status', { id: id, status: s }); }
+  function setStatus(id, s){ return edit([id], { status: s }, 'inline'); }
 
   function open(id, keep){
     var l = leads().filter(function(x){ return x.id === id; })[0]; if (!l) { close(); return; }
@@ -135,7 +222,7 @@
     var tl = N.map(function(n){ return { at: n.created_at, kind: n.kind, body: n.body, id: n.id, due: n.due, done: n.done }; }).concat(sys).sort(function(a, b){ return a.at < b.at ? 1 : -1; });
     var subj = encodeURIComponent('Kolaboro: your ' + (l.plan === 'yc-desk' ? 'desk review' : 'request'));
     dr.innerHTML = '<button class="crm-x" id="crm-close" aria-label="Close">Close ✕</button><p class="muted" style="margin:0">' + esc(l.plan || 'lead') + ' · ' + esc(day(l.created_at)) + '</p><h2>' + esc(l.name || l.email) + '</h2>' +
-      '<div class="row" style="margin-top:6px"><a class="btn2" href="mailto:' + esc(l.email) + '?subject=' + subj + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" rel="noopener" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') + (u ? '<button class="btn2" id="crm-as">Open their portal ↗</button>' : '') + '</div>' +
+      '<div class="row" style="margin-top:6px"><a class="btn2" href="mailto:' + esc(l.email) + '?subject=' + subj + '">Email</a>' + (wa ? '<a class="btn2" target="_blank" rel="noopener" href="https://wa.me/' + wa + '">WhatsApp</a>' : '') + (u ? '<button class="btn2" id="crm-as">Open their portal ↗</button>' : '') + '<select id="crm-tpl" style="max-width:200px"><option value="">Email template…</option>' + TPL.map(function(t, i){ return '<option value="' + i + '">' + esc(t[0]) + '</option>'; }).join('') + '</select></div>' + (function(){ var pr = prio(l); return '<p style="margin:10px 0 0;font-size:.85rem"><span class="crm-pr ' + pr.lvl + '" style="float:none">' + pr.n + '</span> <b>' + pr.lvl + '</b> <span class="muted">' + esc(pr.why.replace(/\n/g, ' · ')) + '</span></p>'; })() + (DUP[(l.email || '').toLowerCase()] > 1 ? '<p class="muted" style="margin:4px 0 0;font-size:.85rem">This email sent ' + DUP[(l.email || '').toLowerCase()] + ' forms. Search it to see all of them.</p>' : '') +
       '<div class="crm-kv"><span>Email</span><b>' + esc(l.email) + '</b>' + (l.phone ? '<span>Phone</span><b>' + esc(l.phone) + '</b>' : '') + '<span>Country</span><b>' + esc(l.country || '-') + '</b>' +
       (l.learn ? '<span>Project / URL</span><b style="word-break:break-all">' + (/^https?:\/\//.test(l.learn) ? '<a href="' + esc(l.learn) + '" target="_blank" rel="noopener">' + esc(l.learn) + '</a>' : esc(l.learn)) + '</b>' : '') +
       (l.who ? '<span>Who</span><b>' + esc(l.who) + '</b>' : '') + (l.bring ? '<span>Message</span><b style="font-weight:400;white-space:pre-wrap">' + esc(l.bring) + '</b>' : '') +
@@ -155,14 +242,19 @@
     var nf = $('crm-n'); if (nf) nf.onsubmit = function(e){ e.preventDefault(); var f = e.target, b = f.body.value.trim(); if (!b) return; act('add_note', { lead_id: l.id, user_id: u ? u.id : '', kind: f.kind.value, body: b, due: f.due.value }); };
     dr.querySelectorAll('[data-nd]').forEach(function(b){ b.onclick = function(){ act('note_done', { id: +b.dataset.nd, done: b.dataset.v === 'true' }); }; });
     dr.querySelectorAll('[data-ndel]').forEach(function(b){ b.onclick = function(){ if (confirm('Delete this note?')) act('del_note', { id: +b.dataset.ndel }); }; });
-    var as = $('crm-as'); if (as) as.onclick = function(){ A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'impersonate', p_payload: { user_id: u.id } }).then(function(d){ if (d.token) window.open('/portal?as=' + d.token, '_blank'); }); };
+    $('crm-tpl').onchange = function(){ var t = TPL[+this.value]; if (!t || this.value === '') return; location.href = 'mailto:' + encodeURIComponent(l.email) + '?subject=' + encodeURIComponent(tpl(t[1], l)) + '&body=' + encodeURIComponent(tpl(t[2], l)); if (has()) act('add_note', { lead_id: l.id, user_id: u ? u.id : '', kind: 'email', body: 'Sent template: ' + t[0] }); this.value = ''; };
+    var as = $('crm-as'); if (as) as.onclick = function(){ A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'impersonate', p_payload: { user_id: u.id } }).then(function(d){ if (d.token) window.open('/portal#as=' + d.token, '_blank', 'noopener'); }); };
   }
-  function csv(){
-    var F = filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
-    var t = c.join(',') + '\n' + F.map(function(l){ return c.map(function(k){ var v = k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]; v = String(v == null ? '' : v); if (/^[=+\-@]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
-    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([t], { type: 'text/csv' })); a.download = 'kolaboro-crm-' + today() + '.csv'; a.click();
+  function csv(rows){
+    var F = Array.isArray(rows) ? rows : filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
+    var cell = A.csvCell || function(v){ v = String(v == null ? '' : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; };
+    var t = c.join(',') + '\r\n' + F.map(function(l){ return c.map(function(k){ return cell(k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]); }).join(','); }).join('\r\n');
+    if (A.csvSave) return A.csvSave('kolaboro-crm', t);
+    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['\ufeff' + t], { type: 'text/csv;charset=utf-8' })); a.download = 'kolaboro-crm-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove();
   }
+  // other admin modules (Today, palette, saved views) use these
+  window.KBCRM = { open: function(id){ var b = document.querySelector('nav.tabs button[data-t=crm]'); if (b && !b.classList.contains('on')) b.click(); open(id); }, edit: edit, undo: undo, stOf: stOf, prio: function(l){ DUP = DUP || {}; return prio(l); }, has: has, list: function(){ VIEW = 'list'; render(); } };
   document.addEventListener('kbadm', function(e){ D = e.detail; render(); });
   if (A.D) { D = A.D; render(); }
-  try { if (localStorage.getItem('kb-adm-tab') === 'crm') tb.click(); } catch (x) {}
+  setTimeout(function(){ try { var t = localStorage.getItem('kb-adm-tab'), b = t && document.querySelector('nav.tabs button[data-t="' + t + '"]'); if (b) b.click(); } catch (x) {} }, 0);
 })();

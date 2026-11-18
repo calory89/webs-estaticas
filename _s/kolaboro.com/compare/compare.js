@@ -1,4 +1,4 @@
-/* Kolaboro compare: /compare/?ids=A,B,C. Puts 2 to 4 anonymous projects side by side from /data/bali-cases.json */
+/* Kolaboro compare: /compare/?ids=A,B,C. Puts 2 to 4 projects side by side from /data/bali-cases.json */
 (function(){
   var CK = [['permit', 'Permit or licence number'], ['escrow', 'Deposit protection'], ['progress', 'Construction progress'], ['plans', 'Site or floor plans'], ['record', 'Developer track record'], ['returns_ok', 'No guaranteed returns']];
   var LV = { registry: ['Registry', 4], independent: ['Confirmed', 3], developer: ['Not confirmed', 2], none: ['No source', 1], contradicted: ['Contradicted', 0] };
@@ -70,10 +70,12 @@
     var weak = C.filter(function(c){ return (c.flags || []).length || cl(c).x; }).sort(function(a, b){ return ((b.flags || []).length + cl(b).x) - ((a.flags || []).length + cl(a).x) || (a.score || 0) - (b.score || 0) || (a.id < b.id ? -1 : 1); }).slice(0, 3);
     return [strong, weak];
   }
-  function setCard(t, s, L){
+  function setCard(t, s, L, one){
+    if (one) L = L.filter(function(c){ return c.id !== one.id; }).slice(0, 3);
     if (!L.length) return '';
+    var set = (one ? [one] : []).concat(L).slice(0, MAX);
     return '<div class="cp-set"><h3>' + t + '</h3><p>' + s + '</p><ul>' + L.map(function(c){ return '<li><a href="/p/?id=' + encodeURIComponent(c.id) + '"><b>' + esc(c.id) + '</b><small>' + esc(c.market) + ', ' + (c.score || 0) + '/6 published, ' + (c.vscore || 0) + '/6 confirmed, ' + (c.flags || []).length + ' problems</small></a></li>'; }).join('') +
-      '</ul><a class="btn btn-line" href="?ids=' + L.map(function(c){ return encodeURIComponent(c.id); }).join(',') + '" data-set="' + L.map(function(c){ return esc(c.id); }).join(',') + '">Compare these three</a></div>';
+      '</ul><a class="btn btn-line" href="?ids=' + set.map(function(c){ return encodeURIComponent(c.id); }).join(',') + '" data-set="' + set.map(function(c){ return esc(c.id); }).join(',') + '">' + (one ? 'Compare ' + esc(one.id) + ' with these' : 'Compare these three') + '</a></div>';
   }
 
   function render(){
@@ -87,8 +89,10 @@
       html += '<p class="cp-note">Published: the developer says it in public. Verification level: the strongest source we found. Registry means an official register; Confirmed means an independent source such as a regulator, court or major newspaper; Not confirmed means only the developer or its agents say so. Best is computed per row from these data only. <a href="/how-we-score">How we score</a>.</p>';
     } else {
       var one = P[0];
-      html += '<div class="cp-empty"><h2>' + (one ? 'Add at least one more project' : 'Pick projects to compare') + '</h2><p class="sub">' + (one ? esc(one.id) + ' is ready. Search above by id or market, or start from one of these sets.' : 'Search above by id or market, or start from three projects with strong public evidence and three with problems in public reports.') + '</p>' +
-        '<div class="cp-sets">' + setCard('Strong public evidence', 'Most checks confirmed by a registry or independent source, no problems found.', sw[0]) + setCard('Problems found', 'Problems in public reports or claims contradicted by another source.', sw[1]) + '</div></div>';
+      html += '<div class="cp-empty"><h2>' + (one ? 'Add at least one more project' : 'Pick projects to compare') + '</h2>' +
+        (one ? '<p class="cp-chip"><a href="/p/?id=' + encodeURIComponent(one.id) + '"><b>' + esc(one.id) + '</b> ' + esc(place(one)) + ', ' + (one.score || 0) + '/6 published, ' + (one.vscore || 0) + '/6 confirmed</a><button type="button" class="cp-x" data-rm="' + esc(one.id) + '" aria-label="Remove ' + esc(one.id) + ' from the comparison">Remove</button></p>' : '') +
+        '<p class="sub">' + (one ? 'Search above by id or market, or add one of these sets.' : 'Search above by id or market, or start from three projects with strong public evidence and three with problems in public reports.') + '</p>' +
+        '<div class="cp-sets">' + setCard('Strong public evidence', 'Most checks confirmed by a registry or independent source, no problems found.', sw[0], one) + setCard('Problems found', 'Problems in public reports or claims contradicted by another source.', sw[1], one) + '</div></div>';
     }
     box.innerHTML = html;
   }
@@ -119,7 +123,7 @@
   res.addEventListener('click', function(e){ var b = e.target.closest('[data-add]'); if (b) { add(b.getAttribute('data-add')); qi.focus(); } });
   document.addEventListener('click', function(e){ if (!e.target.closest('.cp-add')) { res.hidden = true; qi.setAttribute('aria-expanded', 'false'); } });
   box.addEventListener('click', function(e){
-    var r = e.target.closest('[data-rm]'); if (r) { var id = r.getAttribute('data-rm'); ids = ids.filter(function(x){ return x !== id; }); render(); qi.focus(); return; }
+    var r = e.target.closest('[data-rm]'); if (r) { var id = r.getAttribute('data-rm'); ids = ids.filter(function(x){ return x !== id; }); render(); if (!matchMedia('(pointer: coarse)').matches) qi.focus(); return; }
     var s = e.target.closest('[data-set]'); if (s) { e.preventDefault(); ids = s.getAttribute('data-set').split(','); render(); box.scrollIntoView({ block: 'start' }); return; }
     if (e.target.closest('[data-focus]')) qi.focus();
   });

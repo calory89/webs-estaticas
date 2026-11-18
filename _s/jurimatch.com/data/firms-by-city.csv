@@ -1,0 +1,867 @@
+country,city,firm_name,profile_url,case_types,fee_models,on_no_win_no_fee_listings,last_checked
+Argentina,Buenos Aires,Estudio AyG Abogados,https://jurimatch.com/firms/estudio-ayg-abogados,Personal injury,Success fee,no,2026-11-01
+Argentina,Buenos Aires,Estudio Chaiman,https://jurimatch.com/firms/estudio-chaiman,Employment claim; Personal injury,,no,2026-11-01
+Argentina,Buenos Aires,Estudio Jurídico Purita,https://jurimatch.com/firms/estudio-juridico-purita,Employment claim,,yes,2026-11-01
+Argentina,Buenos Aires,Estudio Szlit & Asociados,https://jurimatch.com/firms/estudio-szlit-asociados,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Argentina,Buenos Aires,Sánchez López Abogados,https://jurimatch.com/firms/sanchez-lopez-abogados,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Argentina,Buenos Aires,WS y Asociados,https://jurimatch.com/firms/ws-y-asociados,Employment claim; Personal injury,Cuota litis (success fee),yes,2026-11-01
+Argentina,"Buenos Aires, Argentina",Camargo & Asociados,https://jurimatch.com/firms/camargo-asociados,Employment claim; Personal injury,,no,2026-11-01
+Argentina,"Buenos Aires, Argentina",Estudio Breit (ReclamáTuAccidente),https://jurimatch.com/firms/estudio-breit-reclamatuaccidente,Personal injury,,yes,2026-11-01
+Argentina,"Buenos Aires, Argentina",Estudio Posca,https://jurimatch.com/firms/estudio-posca,Personal injury; Employment claim,,yes,2026-11-01
+Argentina,"Buenos Aires, Argentina",Gonzalez Frea & Asoc. Abogados,https://jurimatch.com/firms/gonzalez-frea-asoc-abogados,Employment claim; Personal injury,,yes,2026-11-01
+Argentina,"Buenos Aires, Argentina",Montoya & Asociados,https://jurimatch.com/firms/montoya-asociados,Personal injury; Medical negligence,,yes,2026-11-01
+Argentina,"Buenos Aires, Argentina",Spoltore Abogados,https://jurimatch.com/firms/spoltore-abogados,Personal injury,,yes,2026-11-01
+Argentina,Córdoba,Estudio Dr. Pablo Rodríguez,https://jurimatch.com/firms/estudio-dr-pablo-rodriguez,Employment claim; Personal injury,Cuota litis (success fee),yes,2026-11-01
+Argentina,Rosario,Abogados Rosario,https://jurimatch.com/firms/abogados-rosario,Employment claim; Personal injury,Cuota litis (success fee),yes,2026-11-01
+Argentina,Rosario,"Serrano Alou, Zernetti, Milman y Garcia Cabello",https://jurimatch.com/firms/serrano-alou-zernetti-milman-y-garcia-cabello,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Australia,Adelaide,Grope Hamilton Lawyers,https://jurimatch.com/firms/grope-hamilton-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Johnston Withers,https://jurimatch.com/firms/johnston-withers,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,K + K Legal,https://jurimatch.com/firms/k-k-legal,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Mahony's Lawyers,https://jurimatch.com/firms/mahony-s-lawyers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,MKF Lawyers,https://jurimatch.com/firms/mkf-lawyers,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Nick Xenophon & Co. Lawyers,https://jurimatch.com/firms/nick-xenophon-co-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,PMN Lawyers,https://jurimatch.com/firms/pmn-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Scales + Partners Lawyers,https://jurimatch.com/firms/scales-partners-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Tindall Gask Bentley Lawyers,https://jurimatch.com/firms/tindall-gask-bentley-lawyers,Personal injury; Employment claim,"No win, no fee",yes,2026-11-01
+Australia,Adelaide,Websters Lawyers,https://jurimatch.com/firms/websters-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Alice Springs,Povey Stirk,https://jurimatch.com/firms/povey-stirk,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Ballarat,Fortitude Legal,https://jurimatch.com/firms/fortitude-legal,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Branxton,Shaw & Bunner Legal,https://jurimatch.com/firms/shaw-bunner-legal,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Carter Capner Law,https://jurimatch.com/firms/carter-capner-law,Class action,"No win, no fee",yes,2026-10-06
+Australia,Brisbane,Hall Payne Lawyers,https://jurimatch.com/firms/hall-payne-lawyers,Personal injury; Employment claim; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,KSC Law,https://jurimatch.com/firms/ksc-law,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Rin Kim Law,https://jurimatch.com/firms/rin-kim-law,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Sciaccas Lawyers,https://jurimatch.com/firms/sciaccas-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Shine Lawyers,https://jurimatch.com/firms/shine-lawyers,Class action; Partnership dispute,"No win, no fee; Litigation funding",yes,2026-10-06
+Australia,Brisbane,Sinnamon Lawyers,https://jurimatch.com/firms/sinnamon-lawyers,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Smith's Lawyers,https://jurimatch.com/firms/smith-s-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Brisbane,Travis Schultz & Partners,https://jurimatch.com/firms/travis-schultz-partners,Personal injury; Medical negligence; Employment claim; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Cairns,Adams McWilliam Solicitors,https://jurimatch.com/firms/adams-mcwilliam-solicitors,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Cairns,Cairns Lawyers,https://jurimatch.com/firms/cairns-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Cairns,FNQ Legal,https://jurimatch.com/firms/fnq-legal,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Canberra,Adero Law,https://jurimatch.com/firms/adero-law,Class action,"No win, no fee",yes,2026-10-06
+Australia,Canberra,Blumers Lawyers,https://jurimatch.com/firms/blumers-lawyers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Canberra,Maliganis Edwards Johnson (MEJ),https://jurimatch.com/firms/maliganis-edwards-johnson-mej,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Darwin,Jude Lawyers,https://jurimatch.com/firms/jude-lawyers,Personal injury; Insurance claim; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Erina,Remedy Law,https://jurimatch.com/firms/remedy-law,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Geelong,Ryan Carlisle Thomas Lawyers,https://jurimatch.com/firms/ryan-carlisle-thomas-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Gold Coast,Attwood Marshall Lawyers,https://jurimatch.com/firms/attwood-marshall-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Gold Coast,Gain Lawyers,https://jurimatch.com/firms/gain-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Gold Coast,ROC Legal,https://jurimatch.com/firms/roc-legal,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Gosford,Coastal Compensation Law Specialists,https://jurimatch.com/firms/coastal-compensation-law-specialists,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Gosford,Compensation Central Coast,https://jurimatch.com/firms/compensation-central-coast,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Hobart,Simmons Wolfhagen,https://jurimatch.com/firms/simmons-wolfhagen,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Melbourne,Maurice Blackburn Lawyers,https://jurimatch.com/firms/maurice-blackburn-lawyers,Class action; Partnership dispute; Investment fraud,"No win, no fee; Contingency fee; Litigation funding",yes,2026-10-06
+Australia,Melbourne,National Compensation Lawyers,https://jurimatch.com/firms/national-compensation-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Melbourne,Phi Finney McDonald,https://jurimatch.com/firms/phi-finney-mcdonald,Class action; Partnership dispute; Investment fraud,Contingency fee; Litigation funding,yes,2026-10-06
+Australia,Melbourne,Polaris Lawyers,https://jurimatch.com/firms/polaris-lawyers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Melbourne,Rightside Legal,https://jurimatch.com/firms/rightside-legal,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Melbourne,Slater and Gordon Lawyers,https://jurimatch.com/firms/slater-and-gordon-lawyers,Class action; Partnership dispute; Investment fraud,"No win, no fee; Litigation funding",yes,2026-10-06
+Australia,Melbourne,The Injury Law Group,https://jurimatch.com/firms/the-injury-law-group,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Melbourne,Zaparas Lawyers,https://jurimatch.com/firms/zaparas-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,New South Wales,Coast & Country Law,https://jurimatch.com/firms/coast-country-law,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Newcastle,Walker McDonald Lawyers,https://jurimatch.com/firms/walker-mcdonald-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Perth,CLP Legal,https://jurimatch.com/firms/clp-legal,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Foyle Legal,https://jurimatch.com/firms/foyle-legal,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Perth,Injury WA,https://jurimatch.com/firms/injury-wa,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Monaco Solicitors,https://jurimatch.com/firms/monaco-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Persich Lawyers,https://jurimatch.com/firms/persich-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Separovic Injury Lawyers,https://jurimatch.com/firms/separovic-injury-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Simon Walters,https://jurimatch.com/firms/simon-walters,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Soul Legal,https://jurimatch.com/firms/soul-legal,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Stephen Browne Personal Injury Lawyers,https://jurimatch.com/firms/stephen-browne-personal-injury-lawyers,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Perth,WA Legal,https://jurimatch.com/firms/wa-legal,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Perth,Withstand Lawyers,https://jurimatch.com/firms/withstand-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Sunshine Coast,Splatt Lawyers,https://jurimatch.com/firms/splatt-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Sydney,Aequitas Litigation Funding,https://jurimatch.com/firms/aequitas-litigation-funding,,,no,2026-11-01
+Australia,Sydney,Brydens Lawyers,https://jurimatch.com/firms/brydens-lawyers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Australia,Sydney,Court House Capital,https://jurimatch.com/firms/court-house-capital,Contract dispute,,no,2026-11-01
+Australia,Sydney,GMP Law (Gerard Malouf & Partners),https://jurimatch.com/firms/gmp-law-gerard-malouf-partners,Class action,"No win, no fee",yes,2026-10-06
+Australia,Sydney,Law Advice Compensation Lawyers,https://jurimatch.com/firms/law-advice-compensation-lawyers,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Sydney,Litigation Capital Management (LCM),https://jurimatch.com/firms/litigation-capital-management-lcm,Contract dispute; Class action; Fraud; Crypto fraud,Litigation funding,yes,2026-10-06
+Australia,Sydney,Litigation Funding Solutions,https://jurimatch.com/firms/litigation-funding-solutions,Fraud; Crypto fraud; Class action; Unpaid invoice,Litigation funding,yes,2026-10-06
+Australia,Sydney,Omni Bridgeway,https://jurimatch.com/firms/omni-bridgeway,Contract dispute; Fraud; Crypto fraud; Class action,Litigation funding,yes,2026-10-06
+Australia,Sydney,Stacks Goudkamp,https://jurimatch.com/firms/stacks-goudkamp,Personal injury; Medical negligence; Employment claim,"No win, no fee",yes,2026-11-01
+Australia,Sydney,Stacks Law Firm,https://jurimatch.com/firms/stacks-law-firm,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Sydney,Walker Law Group,https://jurimatch.com/firms/walker-law-group,Personal injury,"No win, no fee",yes,2026-11-01
+Australia,Townsville,Connolly Suthers,https://jurimatch.com/firms/connolly-suthers,Personal injury; Medical negligence; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Townsville,O'Shea Dyer Solicitors,https://jurimatch.com/firms/o-shea-dyer-solicitors,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Australia,Warrnambool,Maddens Lawyers,https://jurimatch.com/firms/maddens-lawyers,Class action,"No win, no fee",yes,2026-10-06
+Austria,Austria,Aequitas Prozessfinanzierung,https://jurimatch.com/firms/aequitas-prozessfinanzierung,Consumer claim; Investment fraud,,no,2026-11-01
+Austria,Austria,dP die Prozessfinanzierer,https://jurimatch.com/firms/dp-die-prozessfinanzierer,Contract dispute; Consumer claim,,yes,2026-11-01
+Austria,Austria,Legalist,https://jurimatch.com/firms/legalist,Consumer claim,,no,2026-11-01
+Austria,Austria,Padronus,https://jurimatch.com/firms/padronus,Class action; Consumer claim,Litigation funding; Commission on recovery,yes,2026-11-01
+Austria,Vienna,AdvoFin Prozessfinanzierung AG,https://jurimatch.com/firms/advofin-prozessfinanzierung-ag,Class action; Investment fraud; Consumer claim,Litigation funding,yes,2026-10-06
+Austria,Vienna,Bonadis,https://jurimatch.com/firms/bonadis,Consumer claim; Class action,,no,2026-11-01
+Austria,Vienna,BREITENEDER Rechtsanwalt GmbH,https://jurimatch.com/firms/breiteneder-rechtsanwalt-gmbh,Class action; Consumer claim,Litigation funding,yes,2026-10-06
+Austria,Vienna,COBIN claims,https://jurimatch.com/firms/cobin-claims,Class action,Litigation funding,yes,2026-10-06
+Austria,Vienna,GMAPT Prozessfinanzierung,https://jurimatch.com/firms/gmapt-prozessfinanzierung,Contract dispute,,yes,2026-11-01
+Austria,Vienna,Gottgeisl & Leinsmer Rechtsanwälte GmbH,https://jurimatch.com/firms/gottgeisl-leinsmer-rechtsanwalte-gmbh,Class action,Success fee; Litigation funding,yes,2026-10-06
+Austria,Vienna,JUFINA (JUNO Finanz AG),https://jurimatch.com/firms/jufina-juno-finanz-ag,Consumer claim; Contract dispute,Litigation funding,yes,2026-10-06
+Austria,Vienna,Peschel & Partner Rechtsanwälte (DeineRechte.at),https://jurimatch.com/firms/peschel-partner-rechtsanwalte-deinerechte-at,Class action,Litigation funding,yes,2026-10-06
+Austria,Vienna,Prozess-Finanz.at,https://jurimatch.com/firms/prozess-finanz-at,Personal injury; Insurance claim; Medical negligence,,yes,2026-11-01
+Austria,Vienna,Verbraucherschutzverein (VSV),https://jurimatch.com/firms/verbraucherschutzverein-vsv,Class action; Consumer claim,Litigation funding,yes,2026-10-06
+Belgium,Antwerp,CheckProcedure,https://jurimatch.com/firms/checkprocedure,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Brussels,CDC Cartel Damage Claims,https://jurimatch.com/firms/cdc-cartel-damage-claims,,"No win, no fee; Litigation funding",yes,2026-10-06
+Belgium,Brussels,Deminor,https://jurimatch.com/firms/deminor,Contract dispute; Class action; Investment fraud,"Litigation funding; No win, no fee",yes,2026-11-01
+Belgium,Brussels,LitFin (France & Benelux),https://jurimatch.com/firms/litfin-france-benelux,Contract dispute; Partnership dispute; Class action; Fraud,Litigation funding,yes,2026-10-06
+Belgium,Deinze,Be Paid,https://jurimatch.com/firms/be-paid,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Erembodegem,CMA Credit Management & Advice,https://jurimatch.com/firms/cma-credit-management-advice,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Jabbeke,Bureau Broeckaert,https://jurimatch.com/firms/bureau-broeckaert,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Jabbeke,Bureau Lampaert (DCBL),https://jurimatch.com/firms/bureau-lampaert-dcbl,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Namur,Fidusud,https://jurimatch.com/firms/fidusud,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Nivelles,Optimal Recover,https://jurimatch.com/firms/optimal-recover,Unpaid invoice,Success fee,yes,2026-10-06
+Belgium,Schoten,International Collection Services (ICS),https://jurimatch.com/firms/international-collection-services-ics,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Belgium,Tongeren-Borgloon,KLAAR Incasso,https://jurimatch.com/firms/klaar-incasso,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Belgium,Vosselaar,Trivion Incassobureau,https://jurimatch.com/firms/trivion-incassobureau,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Brazil,"Americana, São Paulo",Amanda Domingues Advocacia,https://jurimatch.com/firms/amanda-domingues-advocacia,Employment claim,,yes,2026-11-01
+Brazil,Bahia,Rodrigo da Guarda Advocacia,https://jurimatch.com/firms/rodrigo-da-guarda-advocacia,Consumer claim; Insurance claim,,no,2026-11-01
+Brazil,Belo Horizonte,Gilberto Vilaça Advocacia Trabalhista,https://jurimatch.com/firms/gilberto-vilaca-advocacia-trabalhista,Employment claim; Personal injury,,no,2026-11-01
+Brazil,Brasília,Aline Perna Advocacia,https://jurimatch.com/firms/aline-perna-advocacia,Employment claim,,no,2026-11-01
+Brazil,Brazil,Alvimar Cunha Advocacia,https://jurimatch.com/firms/alvimar-cunha-advocacia,Consumer claim,Quota litis (success fee),yes,2026-11-01
+Brazil,Brazil,Artur Vitor Advocacia,https://jurimatch.com/firms/artur-vitor-advocacia,Employment claim,,no,2026-11-01
+Brazil,Brazil,Ferreira & Scorzafava Advogados,https://jurimatch.com/firms/ferreira-scorzafava-advogados,Employment claim,,yes,2026-11-01
+Brazil,Brazil,Leonardo Nieto Advocacia,https://jurimatch.com/firms/leonardo-nieto-advocacia,Consumer claim,,no,2026-11-01
+Brazil,Brazil,Ruana de Melo Advocacia,https://jurimatch.com/firms/ruana-de-melo-advocacia,Consumer claim,,no,2026-11-01
+Brazil,Campo Grande,DR PREV,https://jurimatch.com/firms/dr-prev,Social security benefits,,no,2026-11-01
+Brazil,Caxias do Sul,Karine Paulino Advocacia,https://jurimatch.com/firms/karine-paulino-advocacia,Employment claim,,no,2026-11-01
+Brazil,Espírito Santo,Alair Ferreira Advocacia,https://jurimatch.com/firms/alair-ferreira-advocacia,Consumer claim,,no,2026-11-01
+Brazil,João Pessoa,Fábio Lopes Advocacia,https://jurimatch.com/firms/fabio-lopes-advocacia,Employment claim; Social security benefits,,no,2026-11-01
+Brazil,"Joinville, Santa Catarina","Campestrini, Pereira e Nascimento Advogados",https://jurimatch.com/firms/campestrini-pereira-e-nascimento-advogados,Employment claim,,yes,2026-11-01
+Brazil,"Lajeado, Rio Grande do Sul",Fachini Advogados,https://jurimatch.com/firms/fachini-advogados,Employment claim,,yes,2026-11-01
+Brazil,Lima,LexFinance,https://jurimatch.com/firms/lexfinance,Contract dispute,Litigation funding,yes,2026-11-01
+Brazil,Rio de Janeiro,Luciane Irmes Advocacia,https://jurimatch.com/firms/luciane-irmes-advocacia,Consumer claim; Fraud,,no,2026-11-01
+Brazil,Santo André,Lemos & Ferreira Advocacia,https://jurimatch.com/firms/lemos-ferreira-advocacia,Social security benefits,,no,2026-11-01
+Brazil,São Luís,Felipe Assunção Advocacia,https://jurimatch.com/firms/felipe-assuncao-advocacia,Employment claim,,no,2026-11-01
+Brazil,São Paulo,Alcione Amorim Advocacia,https://jurimatch.com/firms/alcione-amorim-advocacia,Employment claim,,no,2026-11-01
+Brazil,São Paulo,Barbosa & Veiga Advogados,https://jurimatch.com/firms/barbosa-veiga-advogados,Contract dispute,Quota litis (success fee),yes,2026-11-01
+Brazil,São Paulo,CP Legal Claims,https://jurimatch.com/firms/cp-legal-claims,Contract dispute,,no,2026-11-01
+Brazil,São Paulo,Feltrim Correa Advogados,https://jurimatch.com/firms/feltrim-correa-advogados,Employment claim,,no,2026-11-01
+Brazil,São Paulo,Jeferson Guilherme dos Santos Advocacia,https://jurimatch.com/firms/jeferson-guilherme-dos-santos-advocacia,Social security benefits,,no,2026-11-01
+Brazil,São Paulo,Jus Capital,https://jurimatch.com/firms/jus-capital,Contract dispute,Litigation funding,yes,2026-10-06
+Brazil,São Paulo,Lass Legal Capital,https://jurimatch.com/firms/lass-legal-capital,Contract dispute,,no,2026-11-01
+Brazil,São Paulo,Mesh Capital,https://jurimatch.com/firms/mesh-capital,Contract dispute; Partnership dispute; IP dispute,Litigation funding,yes,2026-11-01
+Brazil,São Paulo,Portes & Coelho Advogados,https://jurimatch.com/firms/portes-coelho-advogados,Employment claim,,no,2026-11-01
+Brazil,São Paulo,Rosenbaum Advogados,https://jurimatch.com/firms/rosenbaum-advogados,Consumer claim,"No win, no fee",no,2026-11-01
+Brazil,São Paulo,Terencio Advocacia,https://jurimatch.com/firms/terencio-advocacia,Social security benefits,Quota litis (success fee),yes,2026-11-01
+Brazil,São Vicente,Marcus Vinicius Chiappim Advocacia,https://jurimatch.com/firms/marcus-vinicius-chiappim-advocacia,Employment claim,,no,2026-11-01
+Brazil,Vitória da Conquista,Ricardo Mello Advocacia,https://jurimatch.com/firms/ricardo-mello-advocacia,Employment claim,Honorários somente no êxito da ação,no,2026-11-01
+Canada,"Calgary, Alberta",Bayda Disability Law,https://jurimatch.com/firms/bayda-disability-law,Insurance claim,,yes,2026-11-01
+Canada,"Calgary, Alberta",Crash Lawyers,https://jurimatch.com/firms/crash-lawyers,Personal injury,No fees unless we win your case,no,2026-11-01
+Canada,"Calgary, Alberta",Cuming & Gillespie LLP,https://jurimatch.com/firms/cuming-gillespie-llp,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+Canada,"Calgary, Alberta",Edwards Injury Law,https://jurimatch.com/firms/edwards-injury-law,Personal injury,,no,2026-11-01
+Canada,"Calgary, Alberta",Szakacs Law,https://jurimatch.com/firms/szakacs-law,Personal injury,"No win, no fee",yes,2026-11-01
+Canada,"Charlottetown, Prince Edward Island",CLG Injury Law,https://jurimatch.com/firms/clg-injury-law,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Edmonton, Alberta",Robinson LLP,https://jurimatch.com/firms/robinson-llp,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Fredericton, New Brunswick",Melanson Law,https://jurimatch.com/firms/melanson-law,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Grande Prairie, Alberta",KMSC Law LLP,https://jurimatch.com/firms/kmsc-law-llp,Personal injury,"No win, no fee",yes,2026-11-01
+Canada,"Halifax, Nova Scotia",MacGillivray Injury and Insurance Law,https://jurimatch.com/firms/macgillivray-injury-and-insurance-law,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Canada,"Halifax, Nova Scotia",McKiggan Hebert,https://jurimatch.com/firms/mckiggan-hebert,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+Canada,"Halifax, Nova Scotia",MDW Law,https://jurimatch.com/firms/mdw-law,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Halifax, Nova Scotia",NOVA Injury Law,https://jurimatch.com/firms/nova-injury-law,Personal injury,"No win, no fee",yes,2026-11-01
+Canada,"Halifax, Nova Scotia",Valent Legal,https://jurimatch.com/firms/valent-legal,Personal injury,,no,2026-11-01
+Canada,"Halifax, Nova Scotia",Wagners,https://jurimatch.com/firms/wagners,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Lethbridge, Alberta",Stringam Law,https://jurimatch.com/firms/stringam-law,Insurance claim; Personal injury,Contingency fee,yes,2026-11-01
+Canada,"London, ON",Siskinds LLP,https://jurimatch.com/firms/siskinds-llp,Class action; Investment fraud,Contingency fee,yes,2026-10-06
+Canada,"Moncton, New Brunswick",Mike Murphy Law,https://jurimatch.com/firms/mike-murphy-law,Personal injury,,no,2026-11-01
+Canada,"Montreal, QC",Consumer Law Group,https://jurimatch.com/firms/consumer-law-group,Class action,Contingency fee,yes,2026-10-06
+Canada,"Montréal, Québec",Annette Lefebvre Avocats,https://jurimatch.com/firms/annette-lefebvre-avocats,Medical negligence; Personal injury; Class action,,no,2026-11-01
+Canada,"Montréal, Québec",Lambert Avocats,https://jurimatch.com/firms/lambert-avocats,Class action; Personal injury,,no,2026-11-01
+Canada,"Montréal, Québec",LPC Avocats,https://jurimatch.com/firms/lpc-avocats,Class action; Consumer claim,,no,2026-11-01
+Canada,"Ottawa, Ontario",LMS Personal Injury Lawyers,https://jurimatch.com/firms/lms-personal-injury-lawyers,Personal injury,No fees unless we win; free consultation,no,2026-11-01
+Canada,"Ottawa, Ontario",Marc Quinn Law Firm,https://jurimatch.com/firms/marc-quinn-law-firm,Personal injury; Insurance claim,Contingency fee,yes,2026-11-01
+Canada,"Ottawa, Ontario",Van Dyke Law,https://jurimatch.com/firms/van-dyke-law,Personal injury,,yes,2026-11-01
+Canada,"Québec City, Québec",Équité Avocats,https://jurimatch.com/firms/equite-avocats,Personal injury,,yes,2026-11-01
+Canada,"Regina, Saskatchewan",Daniel Tapp Law Firm,https://jurimatch.com/firms/daniel-tapp-law-firm,Personal injury; Medical negligence,You pay nothing unless we win,no,2026-11-01
+Canada,"Saskatoon, Saskatchewan",Cuelenaere LLP,https://jurimatch.com/firms/cuelenaere-llp,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"St. John's, Newfoundland and Labrador",O'Dea Earle,https://jurimatch.com/firms/o-dea-earle,Personal injury,,no,2026-11-01
+Canada,"St. John's, Newfoundland and Labrador",Roebothan McKay Marshall,https://jurimatch.com/firms/roebothan-mckay-marshall,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"St. John's, Newfoundland and Labrador",Russell Accident Law,https://jurimatch.com/firms/russell-accident-law,Personal injury,,no,2026-11-01
+Canada,"Sudbury, Ontario",Orendorff & Associates,https://jurimatch.com/firms/orendorff-associates,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Sudbury, Ontario",Paquette & Paquette,https://jurimatch.com/firms/paquette-paquette,Personal injury,Contingency fee,yes,2026-11-01
+Canada,Toronto,Charney Lawyers,https://jurimatch.com/firms/charney-lawyers,Class action; Investment fraud,Contingency fee,yes,2026-10-06
+Canada,Toronto,Landy Marr Kats LLP,https://jurimatch.com/firms/landy-marr-kats-llp,Contract dispute; Partnership dispute; Class action; Real estate dispute,Contingency fee,yes,2026-10-06
+Canada,"Toronto, ON",Berger Montague (Canada),https://jurimatch.com/firms/berger-montague-canada,Investment fraud; Class action,Contingency fee,yes,2026-10-06
+Canada,"Toronto, ON",Rochon Genova LLP,https://jurimatch.com/firms/rochon-genova-llp,Class action; Investment fraud; Contract dispute; Partnership dispute,Contingency fee,yes,2026-10-06
+Canada,"Toronto, ON",Sotos LLP (Sotos Class Actions),https://jurimatch.com/firms/sotos-llp-sotos-class-actions,Class action; Investment fraud,Contingency fee,yes,2026-10-06
+Canada,"Toronto, Ontario",Bergel Magence LLP,https://jurimatch.com/firms/bergel-magence-llp,Personal injury,Free consultation; no fees unless we win,no,2026-11-01
+Canada,"Toronto, Ontario",Jewell Radimisis Jorge LLP,https://jurimatch.com/firms/jewell-radimisis-jorge-llp,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Toronto, Ontario",Kotak Personal Injury Law,https://jurimatch.com/firms/kotak-personal-injury-law,Personal injury; Insurance claim,Contingency fee,yes,2026-11-01
+Canada,"Toronto, Ontario",Recourse Capital,https://jurimatch.com/firms/recourse-capital,Contract dispute; Class action; Fraud,Litigation funding,no,2026-11-01
+Canada,"Toronto, Ontario",The Biking Lawyer LLP,https://jurimatch.com/firms/the-biking-lawyer-llp,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Vancouver, BC",Klein Lawyers LLP,https://jurimatch.com/firms/klein-lawyers-llp,Class action; Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+Canada,"Vancouver, British Columbia",Holness and Small Law Group,https://jurimatch.com/firms/holness-and-small-law-group,Personal injury,,yes,2026-11-01
+Canada,"Vancouver, British Columbia",KazLaw Personal Injury Lawyers,https://jurimatch.com/firms/kazlaw-personal-injury-lawyers,Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Vancouver, British Columbia",Murphy Battista LLP,https://jurimatch.com/firms/murphy-battista-llp,Class action; Personal injury,Contingency fee,yes,2026-11-01
+Canada,"Vancouver, British Columbia",Mussio Goodman LLP,https://jurimatch.com/firms/mussio-goodman-llp,Personal injury; Medical negligence; Insurance claim,Contingency fee,yes,2026-11-01
+Canada,"Vancouver, British Columbia",Stephens & Holman Law,https://jurimatch.com/firms/stephens-holman-law,Personal injury,"No win, no fee",no,2026-11-01
+Canada,"Winnipeg, Manitoba",Tapper Cuddy LLP,https://jurimatch.com/firms/tapper-cuddy-llp,Personal injury; Medical negligence; Insurance claim,Contingency fee,yes,2026-11-01
+Canada,"Woodbridge, Ontario",Trotta Law,https://jurimatch.com/firms/trotta-law,Personal injury,Contingency fee,yes,2026-11-01
+Chile,Calama,Abogados Mineros,https://jurimatch.com/firms/abogados-mineros,Employment claim; Personal injury,,no,2026-11-01
+Chile,Chile,Laboral Expertos,https://jurimatch.com/firms/laboral-expertos,Employment claim; Personal injury,Cuota litis (success fee),yes,2026-11-01
+Chile,"Concepción, Chile",Abogados Laborales en Concepción,https://jurimatch.com/firms/abogados-laborales-en-concepcion,Employment claim,,yes,2026-11-01
+Chile,"Las Condes, Santiago",Derecho del Trabajo Abogados,https://jurimatch.com/firms/derecho-del-trabajo-abogados,Employment claim,,yes,2026-11-01
+Chile,"Providencia, Santiago",AbogadoPro,https://jurimatch.com/firms/abogadopro,Employment claim,Success fee,no,2026-11-01
+Chile,Santiago,Abogados Despido Chile,https://jurimatch.com/firms/abogados-despido-chile,Employment claim,,yes,2026-11-01
+Chile,Santiago,Abogados Laborales Chile,https://jurimatch.com/firms/abogados-laborales-chile,Employment claim,,no,2026-11-01
+Chile,Santiago,Defensa Despidos,https://jurimatch.com/firms/defensa-despidos,Employment claim,,no,2026-11-01
+Chile,Santiago,DespidoInjusto.cl,https://jurimatch.com/firms/despidoinjusto-cl,Employment claim,,no,2026-11-01
+Chile,Santiago,DPH Abogados,https://jurimatch.com/firms/dph-abogados,Employment claim,,no,2026-11-01
+Chile,Santiago,LegalBox,https://jurimatch.com/firms/legalbox,Unpaid invoice,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Chile,Santiago,Por El Trabajador,https://jurimatch.com/firms/por-el-trabajador,Employment claim,Paga solo si ganas tu caso,no,2026-11-01
+Chile,"Santiago, Chile",Abogado Laboral Chile,https://jurimatch.com/firms/abogado-laboral-chile,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Chile,"Santiago, Chile",Salvadores & Rivera (Derecho Laboralista),https://jurimatch.com/firms/salvadores-rivera-derecho-laboralista,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Colombia,Bogotá,Aletta Abogados,https://jurimatch.com/firms/aletta-abogados,Personal injury,Cuota litis (success fee),yes,2026-11-01
+Colombia,Bogotá,Coface (Colombia and Peru),https://jurimatch.com/firms/coface-colombia-and-peru,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Colombia,Bogotá,Coljurídicas,https://jurimatch.com/firms/coljuridicas,Personal injury,Cuota litis (success fee),yes,2026-11-01
+Colombia,Bogotá,Legal W,https://jurimatch.com/firms/legal-w,Personal injury,,no,2026-11-01
+Colombia,Bogotá,O&P Abogados,https://jurimatch.com/firms/o-p-abogados,Personal injury; Medical negligence; Insurance claim,No cobramos hasta que usted gane,no,2026-11-01
+Colombia,"Bucaramanga, Colombia",ConmigoLegal,https://jurimatch.com/firms/conmigolegal,Personal injury,Cuota litis (success fee),yes,2026-11-01
+Colombia,Medellín,Cartera Integral S.A.S.,https://jurimatch.com/firms/cartera-integral-s-a-s,Unpaid invoice; Contract dispute,Success fee,yes,2026-10-06
+Cyprus,Cyprus,N. Rotsides & Co LLC,https://jurimatch.com/firms/n-rotsides-co-llc,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Cyprus,Larnaca,L.A Law Firm,https://jurimatch.com/firms/l-a-law-firm,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Cyprus,Limassol,Michael Legal Firm,https://jurimatch.com/firms/michael-legal-firm,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Cyprus,Nicosia,Marinos Shambartas Lawyers,https://jurimatch.com/firms/marinos-shambartas-lawyers,Personal injury,"No win, no fee",yes,2026-11-01
+Denmark,Aarhus,ErstatningsAdvokaterne,https://jurimatch.com/firms/erstatningsadvokaterne,Personal injury; Medical negligence,,no,2026-11-01
+Denmark,Aarhus,STORE TORV Erstatningsadvokater,https://jurimatch.com/firms/store-torv-erstatningsadvokater,Personal injury; Medical negligence,,no,2026-11-01
+Denmark,Denmark,Ravn Olsen Advokatfirma,https://jurimatch.com/firms/ravn-olsen-advokatfirma,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Denmark,Vejen,Erstatningsgruppen (Penta Advokater),https://jurimatch.com/firms/erstatningsgruppen-penta-advokater,Personal injury,"No win, no fee",yes,2026-11-01
+Finland,Finland,Vakuutusjuristi,https://jurimatch.com/firms/vakuutusjuristi,Insurance claim; Personal injury,Success fee,yes,2026-11-01
+Finland,Seinäjoki,Perintäritari,https://jurimatch.com/firms/perintaritari,Unpaid invoice,Commission on recovery,yes,2026-11-01
+Finland,Vantaa,Ykkös-Perintä,https://jurimatch.com/firms/ykkos-perinta,Unpaid invoice,,no,2026-11-01
+France,France,Hello Justice,https://jurimatch.com/firms/hello-justice,Contract dispute; Consumer claim,Commission on recovery,no,2026-11-01
+France,Paris,IVO Capital Partners,https://jurimatch.com/firms/ivo-capital-partners,Class action; Contract dispute; Consumer claim,,no,2026-11-01
+France,Paris,Profile Investment,https://jurimatch.com/firms/profile-investment,Contract dispute; Partnership dispute; Fraud; Crypto fraud,Litigation funding,yes,2026-10-06
+France,Steenvoorde,Cabinet D.F & Associés,https://jurimatch.com/firms/cabinet-d-f-associes,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Germany,Berlin,Gansel Rechtsanwälte,https://jurimatch.com/firms/gansel-rechtsanwalte,Investment fraud; Crypto fraud; Class action,Success fee; Litigation funding; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Germany,Berlin,Hausfeld,https://jurimatch.com/firms/hausfeld,Fraud; Class action; Contract dispute,Success fee; Contingency fee; Litigation funding; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Germany,Berlin,Rose & Partner,https://jurimatch.com/firms/rose-partner,Contract dispute; Fraud; Partnership dispute,Litigation funding; Success fee,yes,2026-10-06
+Germany,Bonn,FORIS AG,https://jurimatch.com/firms/foris-ag,Medical negligence; Contract dispute; Partnership dispute; IP dispute,Litigation funding,yes,2026-11-01
+Germany,Bremen,rightmart Rechtsanwaltsgesellschaft,https://jurimatch.com/firms/rightmart-rechtsanwaltsgesellschaft,Consumer claim; Contract dispute,"Litigation funding; No win, no fee",yes,2026-10-06
+Germany,Bremen,youleegal,https://jurimatch.com/firms/youleegal,Contract dispute,,no,2026-11-01
+Germany,Düsseldorf,helpcheck GmbH,https://jurimatch.com/firms/helpcheck-gmbh,Consumer claim,"No win, no fee",yes,2026-10-06
+Germany,Frankfurt,Qthority,https://jurimatch.com/firms/qthority,Contract dispute; Consumer claim,Commission on recovery,yes,2026-11-01
+Germany,Germany,goRecht Prozessfinanz,https://jurimatch.com/firms/gorecht-prozessfinanz,Contract dispute,,yes,2026-11-01
+Germany,Germany,iubel,https://jurimatch.com/firms/iubel,Contract dispute; Consumer claim,,yes,2026-11-01
+Germany,Germany,Jura Prozessfinanz,https://jurimatch.com/firms/jura-prozessfinanz,Consumer claim,Commission on recovery,yes,2026-11-01
+Germany,Germany,JURFIN,https://jurimatch.com/firms/jurfin,Contract dispute,,yes,2026-11-01
+Germany,Germany,Litigate,https://jurimatch.com/firms/litigate,Contract dispute; Unpaid invoice,Litigation funding,yes,2026-11-01
+Germany,Germany,PAV Prozessfinanz,https://jurimatch.com/firms/pav-prozessfinanz,Contract dispute; Consumer claim,,yes,2026-11-01
+Germany,Germany,ViaRight,https://jurimatch.com/firms/viaright,Consumer claim,,no,2026-11-01
+Germany,Grünwald,obligatio,https://jurimatch.com/firms/obligatio,Personal injury,,no,2026-11-01
+Germany,Hamburg,HAHN Rechtsanwälte,https://jurimatch.com/firms/hahn-rechtsanwalte,Investment fraud,Litigation funding; Commission on recovery,yes,2026-10-06
+Germany,Hamburg,myRight (financialright GmbH),https://jurimatch.com/firms/myright-financialright-gmbh,Class action; Consumer claim,"No win, no fee; Litigation funding; Commission on recovery",yes,2026-10-06
+Germany,Munich,LEGIAL,https://jurimatch.com/firms/legial,Contract dispute,Litigation funding,yes,2026-11-01
+Germany,Stuttgart,AKH-H Rechtsanwälte,https://jurimatch.com/firms/akh-h-rechtsanwalte,Investment fraud,Litigation funding,yes,2026-10-06
+Germany,Stuttgart,FAIRRETURN,https://jurimatch.com/firms/fairreturn,Investment fraud; Class action,,yes,2026-11-01
+Germany,Vienna,Avyana,https://jurimatch.com/firms/avyana,Contract dispute; Partnership dispute; Fraud,Litigation funding,no,2026-11-01
+Greece,Athens,Dimitropoulos & Koutsouvelis Law Firm,https://jurimatch.com/firms/dimitropoulos-koutsouvelis-law-firm,Personal injury,"No win, no fee",yes,2026-11-01
+Greece,Athens,MedLex by Monad Legal,https://jurimatch.com/firms/medlex-by-monad-legal,Medical negligence,"No win, no fee",yes,2026-11-01
+Greece,Athens,Palaiologos Law Office,https://jurimatch.com/firms/palaiologos-law-office,Personal injury,"No win, no fee",yes,2026-11-01
+Greece,Athens,Risvas & Associates Law Firm,https://jurimatch.com/firms/risvas-associates-law-firm,Personal injury,"No win, no fee",yes,2026-11-01
+Greece,Athens,Vlachopoulos & Associates,https://jurimatch.com/firms/vlachopoulos-associates,Employment claim,,no,2026-11-01
+Greece,Greece,Lysias Law Firm (Spyros Kotlitsas & Partners),https://jurimatch.com/firms/lysias-law-firm-spyros-kotlitsas-partners,Personal injury,,no,2026-11-01
+Greece,Greece,Troxaio.eu Road Accident Lawyers,https://jurimatch.com/firms/troxaio-eu-road-accident-lawyers,Personal injury,,no,2026-11-01
+Greece,Heraklion,Kostantoudakis Law Firm,https://jurimatch.com/firms/kostantoudakis-law-firm,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Greece,Thessaloniki,E-NOMIKA Law Firm,https://jurimatch.com/firms/e-nomika-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+Hong Kong,Hong Kong,Collect4U (卓譽信用管理),https://jurimatch.com/firms/collect4u,Unpaid invoice,,yes,2026-11-01
+Hong Kong,Hong Kong,Debt Hunter (United Credit Management Ltd),https://jurimatch.com/firms/debt-hunter-united-credit-management-ltd,Contract dispute,"No win, no fee",yes,2026-10-06
+Hong Kong,Hong Kong,Whole King Company Limited (灝景實業有限公司),https://jurimatch.com/firms/whole-king-company-limited,Unpaid invoice; Real estate dispute,"No win, no fee",yes,2026-11-01
+Hong Kong,Kowloon,Letsgo Probiz (力高企業管理有限公司),https://jurimatch.com/firms/letsgo-probiz,Unpaid invoice; Real estate dispute,"No win, no fee",yes,2026-11-01
+Hong Kong,Kowloon,RMS Hong Kong,https://jurimatch.com/firms/rms-hong-kong,Unpaid invoice,"No win, no fee",yes,2026-11-01
+India,Bengaluru,Kenstone Capital,https://jurimatch.com/firms/kenstone-capital,Unpaid invoice,Success fee,yes,2026-11-01
+India,Delhi,LegalPay,https://jurimatch.com/firms/legalpay,Contract dispute,Litigation funding,yes,2026-11-01
+India,Hyderabad,FundRaksha,https://jurimatch.com/firms/fundraksha,Unpaid invoice,Success fee,yes,2026-11-01
+India,India,fin.law,https://jurimatch.com/firms/fin-law,Contract dispute,,no,2026-11-01
+India,India,Lawsuit Ventures,https://jurimatch.com/firms/lawsuit-ventures,Contract dispute,Litigation funding,no,2026-11-01
+India,Mumbai,5 Rivers Capital,https://jurimatch.com/firms/5-rivers-capital,Contract dispute; Partnership dispute; Fraud; Real estate dispute,Litigation funding,yes,2026-11-01
+India,Mumbai,LitiCap,https://jurimatch.com/firms/liticap,Contract dispute,Litigation funding,no,2026-11-01
+India,Mumbai,Taurus Collection,https://jurimatch.com/firms/taurus-collection,Unpaid invoice,"No win, no fee",yes,2026-11-01
+India,Navi Mumbai,Fund My Case,https://jurimatch.com/firms/fund-my-case,Contract dispute,Litigation funding,yes,2026-10-06
+India,New Delhi,LegalFund,https://jurimatch.com/firms/legalfund,Contract dispute; Unpaid invoice; Fraud; Partnership dispute,Litigation funding,yes,2026-11-01
+India,New Delhi,MNS Credit Management Group,https://jurimatch.com/firms/mns-credit-management-group,Unpaid invoice,"No win, no fee",no,2026-11-01
+India,New Delhi,Ricapio,https://jurimatch.com/firms/ricapio,Unpaid invoice,,yes,2026-11-01
+Ireland,Dublin,Abbott Solicitors LLP,https://jurimatch.com/firms/abbott-solicitors-llp,Personal injury,"No win, no fee",yes,2026-11-01
+Ireland,Dublin,Claims Funding Europe,https://jurimatch.com/firms/claims-funding-europe,Class action,Litigation funding; Commission on recovery,yes,2026-10-06
+Ireland,Dublin,Claims Funding International,https://jurimatch.com/firms/claims-funding-international,Class action; Investment fraud,,no,2026-11-01
+Ireland,Dublin,Creditsafe Ireland,https://jurimatch.com/firms/creditsafe-ireland,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Ireland,Dublin,Gary Matthews Solicitors,https://jurimatch.com/firms/gary-matthews-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+Ireland,Dublin,Mason Hayes & Curran,https://jurimatch.com/firms/mason-hayes-curran,,Success fee,yes,2026-10-06
+Ireland,Dublin,StubbsGazette,https://jurimatch.com/firms/stubbsgazette,Unpaid invoice,"No win, no fee; Success fee",yes,2026-10-06
+Israel,Haifa,Dr. Alon Koren Meidan Law Office,https://jurimatch.com/firms/dr-alon-koren-meidan-law-office,Medical negligence,,yes,2026-11-01
+Israel,Haifa,Sami Abu Warda Law Office,https://jurimatch.com/firms/sami-abu-warda-law-office,Medical negligence; Personal injury,,yes,2026-11-01
+Israel,Israel,Hevroni Law Office,https://jurimatch.com/firms/hevroni-law-office,Personal injury; Insurance claim,,yes,2026-11-01
+Israel,Israel,Lev-Taieb Law Firm,https://jurimatch.com/firms/lev-taieb-law-firm,Insurance claim; Personal injury; Real estate dispute,Contingency fee,yes,2026-11-01
+Israel,Israel,Ron-Festinger Law Office,https://jurimatch.com/firms/ron-festinger-law-office,Medical negligence; Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+Israel,Jerusalem,Itai Givon Law Office,https://jurimatch.com/firms/itai-givon-law-office,Medical negligence; Personal injury,,yes,2026-11-01
+Israel,Petah Tikva,Convi by Netanel Roth,https://jurimatch.com/firms/convi-by-netanel-roth,Personal injury; Insurance claim,Fees charged only on a success basis,yes,2026-11-01
+Israel,Petah Tikva,Maya Shpeisman Law Office,https://jurimatch.com/firms/maya-shpeisman-law-office,Personal injury; Insurance claim,,no,2026-11-01
+Israel,Ra'anana,Guy Deutsch Law Office,https://jurimatch.com/firms/guy-deutsch-law-office,Personal injury; Insurance claim,,no,2026-11-01
+Israel,Ramat Gan,Ariel Freiberg Law Office,https://jurimatch.com/firms/ariel-freiberg-law-office,Personal injury; Medical negligence,,yes,2026-11-01
+Israel,Rishon LeZion,Elad Gueta Law Office,https://jurimatch.com/firms/elad-gueta-law-office,Personal injury; Employment claim,,yes,2026-11-01
+Italy,Arezzo,Recuperocrediti.it (Comas S.r.l.),https://jurimatch.com/firms/recuperocrediti-it-comas-s-r-l,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Italy,Brescia,Libra Finanziamento del Contenzioso,https://jurimatch.com/firms/libra-finanziamento-del-contenzioso,Class action; Contract dispute,,no,2026-11-01
+Italy,Ferrara,SG Studio Legale,https://jurimatch.com/firms/sg-studio-legale,Personal injury,,no,2026-11-01
+Italy,Italy,Studio Legale Avv. Andrea Centi,https://jurimatch.com/firms/studio-legale-avv-andrea-centi,Personal injury; Medical negligence; Unpaid invoice; Employment claim,,yes,2026-11-01
+Italy,Italy,Studio Legale Scarlino,https://jurimatch.com/firms/studio-legale-scarlino,Personal injury; Medical negligence; Professional negligence,,yes,2026-11-01
+Italy,Livorno,Multilegal,https://jurimatch.com/firms/multilegal,Personal injury; Medical negligence,,no,2026-11-01
+Italy,Milan,Be Cause,https://jurimatch.com/firms/be-cause,Contract dispute,Litigation funding,no,2026-11-01
+Italy,Milan,ConCausa,https://jurimatch.com/firms/concausa,Contract dispute; Fraud,"Litigation funding; No win, no fee",yes,2026-10-06
+Italy,Milan,Invenium,https://jurimatch.com/firms/invenium,Contract dispute,"Litigation funding; No win, no fee",yes,2026-10-06
+Italy,Milan,LexCapital,https://jurimatch.com/firms/lexcapital,Contract dispute; Investment fraud,Litigation funding,yes,2026-11-01
+Italy,Milan,Studio Legale Bordogna,https://jurimatch.com/firms/studio-legale-bordogna,Contract dispute,Contingency fee,yes,2026-10-06
+Italy,Milan,Studio Legale Cattaneo,https://jurimatch.com/firms/studio-legale-cattaneo,Personal injury; Medical negligence; Insurance claim,,no,2026-11-01
+Italy,Monte San Giovanni Campano,Studio Legale Velocci,https://jurimatch.com/firms/studio-legale-velocci,Unpaid invoice; Personal injury,,yes,2026-11-01
+Italy,Prato,Studio Legale Falusi,https://jurimatch.com/firms/studio-legale-falusi,Personal injury; Medical negligence; Unpaid invoice,,yes,2026-11-01
+Italy,Rome,Rescos S.p.A. (Società tra Avvocati),https://jurimatch.com/firms/rescos-s-p-a-societa-tra-avvocati,Contract dispute,"No win, no fee; Success fee",yes,2026-10-06
+Italy,Rome,Studio Legale Sciarra,https://jurimatch.com/firms/studio-legale-sciarra,Personal injury; Medical negligence,Commission on recovery,yes,2026-11-01
+Italy,Sassari,Nuovi Avvocati (Avv. Nicola Andrea Oggiano),https://jurimatch.com/firms/nuovi-avvocati-avv-nicola-andrea-oggiano,Contract dispute; Partnership dispute,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Italy,Turin,Studio Legale Riccio,https://jurimatch.com/firms/studio-legale-riccio,,Success fee,yes,2026-10-06
+Luxembourg,Luxembourg,Cerno Law Firm,https://jurimatch.com/firms/cerno-law-firm,Employment claim; Real estate dispute; Contract dispute,Quota litis (success fee),yes,2026-11-01
+Malta,Balzan,Debt Recovery Services (Malta) Ltd,https://jurimatch.com/firms/debt-recovery-services-malta-ltd,Unpaid invoice,"No win, no fee",no,2026-11-01
+Mexico,Cancún,Abogado Laboral Cancún,https://jurimatch.com/firms/abogado-laboral-cancun,Employment claim,,no,2026-11-01
+Mexico,"Ensenada, Baja California",Trenado Abogados,https://jurimatch.com/firms/trenado-abogados,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Mexico,Guadalajara,Coalición Montaño,https://jurimatch.com/firms/coalicion-montano,Employment claim,,no,2026-11-01
+Mexico,Mexico City,A3 & Asociados,https://jurimatch.com/firms/a3-asociados,Contract dispute,Success fee,yes,2026-11-01
+Mexico,Mexico City,Atradius Collections,https://jurimatch.com/firms/atradius-collections,Unpaid invoice,Success fee; Hybrid (fixed fee plus success fee); Commission on recovery,yes,2026-10-06
+Mexico,Mexico City,Bissu Abogados,https://jurimatch.com/firms/bissu-abogados,Contract dispute; Unpaid invoice,Contingency fee; Hybrid (fixed fee plus success fee); Cuota litis (success fee),yes,2026-10-06
+Mexico,Mexico City,BReeMaX Abogados,https://jurimatch.com/firms/breemax-abogados,Fraud; Crypto fraud,"No win, no fee; Contingency fee",yes,2026-10-06
+Mexico,Mexico City,DCS México (Debt Collection Services),https://jurimatch.com/firms/dcs-mexico-debt-collection-services,Unpaid invoice,Success fee,yes,2026-10-06
+Mexico,Mexico City,GM Abogados Laboralistas,https://jurimatch.com/firms/gm-abogados-laboralistas,Employment claim,,no,2026-11-01
+Mexico,Mexico City,LegalMex,https://jurimatch.com/firms/legalmex,Employment claim,Cuota litis (success fee),yes,2026-11-01
+Mexico,Mexico City,LEGATUS,https://jurimatch.com/firms/legatus,Insurance claim,"No win, no fee",yes,2026-10-06
+Mexico,Mexico City,LEX & Co. Abogados de Seguros,https://jurimatch.com/firms/lex-co-abogados-de-seguros,Insurance claim,"No win, no fee",yes,2026-10-06
+Mexico,Mexico City,Manuel Cojab Abogados de Seguros,https://jurimatch.com/firms/manuel-cojab-abogados-de-seguros,Insurance claim,Success fee,yes,2026-11-01
+Mexico,Mexico City,Punto Fino Abogados,https://jurimatch.com/firms/punto-fino-abogados,Insurance claim; Contract dispute; Unpaid invoice,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Mexico,Monterrey,Cappac,https://jurimatch.com/firms/cappac,Personal injury,"No win, no fee",yes,2026-11-01
+Mexico,Tijuana,HMH Legal,https://jurimatch.com/firms/hmh-legal,Unpaid invoice; Contract dispute,"No win, no fee; Contingency fee",yes,2026-10-06
+Netherlands,Amsterdam,Bierens Debt Recovery Lawyers,https://jurimatch.com/firms/bierens-debt-recovery-lawyers,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Netherlands,Amsterdam,Credifin Nederland,https://jurimatch.com/firms/credifin-nederland,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Netherlands,Amsterdam,Litigation Funding Nederland,https://jurimatch.com/firms/litigation-funding-nederland,Contract dispute,Litigation funding,yes,2026-10-06
+Netherlands,Breda,Liesker Procesfinanciering,https://jurimatch.com/firms/liesker-procesfinanciering,Contract dispute,"Litigation funding; No win, no fee",yes,2026-11-01
+Netherlands,Heerlen,Zuid Letselschade,https://jurimatch.com/firms/zuid-letselschade,Personal injury,,no,2026-11-01
+Netherlands,Netherlands,Incassobureau Justice,https://jurimatch.com/firms/incassobureau-justice,Unpaid invoice; Contract dispute,"No win, no fee",yes,2026-11-01
+Netherlands,Rotterdam,Ploum,https://jurimatch.com/firms/ploum,Class action; Contract dispute,Litigation funding,yes,2026-10-06
+Netherlands,Rotterdam,Trias Legal,https://jurimatch.com/firms/trias-legal,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+Netherlands,The Hague,Consumentenbond Claimservice,https://jurimatch.com/firms/consumentenbond-claimservice,Class action; Consumer claim,"No win, no fee; Success fee",yes,2026-10-06
+Netherlands,Tiel,JuriPro,https://jurimatch.com/firms/juripro,Unpaid invoice; Contract dispute,,yes,2026-11-01
+Netherlands,Utrecht,Litigo BV (CarClaim / Dieselgate claim),https://jurimatch.com/firms/litigo-bv-carclaim-dieselgate-claim,Class action; Consumer claim,"No win, no fee",yes,2026-10-06
+Netherlands,Woerden,Ultimoo (incasso.nl),https://jurimatch.com/firms/ultimoo-incasso-nl,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Netherlands,Zwaag,Brugman Letselschade Advocaten,https://jurimatch.com/firms/brugman-letselschade-advocaten,Personal injury,"No win, no fee",yes,2026-11-01
+New Zealand,Auckland,Cuncannon,https://jurimatch.com/firms/cuncannon,Class action; Partnership dispute; Investment fraud; Contract dispute,Litigation funding,yes,2026-10-06
+New Zealand,Auckland,McKenzie Law,https://jurimatch.com/firms/mckenzie-law,Employment claim,"No win, no fee",yes,2026-11-01
+New Zealand,Auckland,Shine Lawyers NZ,https://jurimatch.com/firms/shine-lawyers-nz,Class action,"No win, no fee",yes,2026-10-06
+New Zealand,Blenheim,Credit Recoveries Limited,https://jurimatch.com/firms/credit-recoveries-limited,Unpaid invoice,"No win, no fee; Success fee; Commission on recovery",yes,2026-10-06
+New Zealand,Christchurch,ACC SOS,https://jurimatch.com/firms/acc-sos,Personal injury; Insurance claim,"No win, no fee",yes,2026-11-01
+New Zealand,Wellington,Dalzell Wollerman,https://jurimatch.com/firms/dalzell-wollerman,Class action; Investment fraud,Litigation funding,yes,2026-10-06
+Panama,Panama City,Navarro Navarro & Asociados,https://jurimatch.com/firms/navarro-navarro-asociados,Personal injury; Employment claim; Unpaid invoice,Contingency fee,yes,2026-11-01
+Panama,"Panama City, Panama",DTR Abogados,https://jurimatch.com/firms/dtr-abogados,Unpaid invoice; Employment claim; Contract dispute,Cuota litis (success fee),yes,2026-11-01
+Poland,Białystok,Kancelaria Radców Prawnych Explico,https://jurimatch.com/firms/kancelaria-radcow-prawnych-explico,Investment fraud,Success fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Poland,Gdańsk,Kompensja,https://jurimatch.com/firms/kompensja,Personal injury; Insurance claim,Commission on recovery,no,2026-11-01
+Poland,Katowice,Kancelaria Meritum,https://jurimatch.com/firms/kancelaria-meritum,Personal injury; Insurance claim,Commission on recovery,yes,2026-11-01
+Poland,Łódź,Solvia Odszkodowania,https://jurimatch.com/firms/solvia-odszkodowania,Personal injury; Insurance claim,Commission on recovery,no,2026-11-01
+Poland,Lublin,Dyś i Wspólnicy Kancelaria Radców Prawnych,https://jurimatch.com/firms/dys-i-wspolnicy-kancelaria-radcow-prawnych,,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Poland,Lublin,Kancelaria Adwokacka Igor Achrymowicz,https://jurimatch.com/firms/kancelaria-adwokacka-igor-achrymowicz,Contract dispute,Success fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Poland,Lublin,Kancelaria Nikoniuk,https://jurimatch.com/firms/kancelaria-nikoniuk,Personal injury,Commission on recovery,no,2026-11-01
+Poland,Poland,Sprawy Frankowe Bez Opłat,https://jurimatch.com/firms/sprawy-frankowe-bez-op-at,Consumer claim,Success fee,yes,2026-11-01
+Poland,Poznań,Kancelaria Czyżewski Ostaszewski sp. k.,https://jurimatch.com/firms/kancelaria-czyzewski-ostaszewski-sp-k,Investment fraud,Success fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+Poland,Radom,Arasim Kancelaria Adwokacka,https://jurimatch.com/firms/arasim-kancelaria-adwokacka,,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Poland,Warsaw,Kancelaria Adwokacka Jacek Sosnowski,https://jurimatch.com/firms/kancelaria-adwokacka-jacek-sosnowski,,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Poland,Warsaw,Vindicat.pl,https://jurimatch.com/firms/vindicat-pl,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Poland,Wroclaw,Kaczmarski Inkasso,https://jurimatch.com/firms/kaczmarski-inkasso,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Poland,Wroclaw,Kancelaria Sobota Jachira,https://jurimatch.com/firms/kancelaria-sobota-jachira,,Hybrid (fixed fee plus success fee); Success fee; Commission on recovery,yes,2026-10-06
+Poland,Wroclaw,VOTUM Robin Lawyers,https://jurimatch.com/firms/votum-robin-lawyers,,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Portugal,Lisbon,DECO PROteste (Associação Portuguesa para a Defesa do Consumidor),https://jurimatch.com/firms/deco-proteste-associacao-portuguesa-para-a-defesa-do-consumidor,Class action; Consumer claim,"No win, no fee",yes,2026-10-06
+Portugal,Porto,ABRS Advogados,https://jurimatch.com/firms/abrs-advogados,Personal injury,Quota litis (success fee),yes,2026-11-01
+Portugal,Vila Nova de Gaia,Citizens' Voice – Consumer Advocacy Association,https://jurimatch.com/firms/citizens-voice-consumer-advocacy-association,Class action; Consumer claim,Litigation funding,yes,2026-10-06
+Singapore,Singapore,Burford Capital,https://jurimatch.com/firms/burford-capital,Contract dispute; Fraud; Crypto fraud,Litigation funding,yes,2026-10-06
+Singapore,Singapore,Coface,https://jurimatch.com/firms/coface,Unpaid invoice,Success fee; Commission on recovery,yes,2026-10-06
+Singapore,Singapore,ELF Partners,https://jurimatch.com/firms/elf-partners,Contract dispute,Litigation funding,yes,2026-10-06
+Singapore,Singapore,FDR Services (Fast Debt Recovery),https://jurimatch.com/firms/fdr-services-fast-debt-recovery,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Singapore,Singapore,Recovry,https://jurimatch.com/firms/recovry,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Singapore,Singapore,Singapore Collection Agency,https://jurimatch.com/firms/singapore-collection-agency,Unpaid invoice,"No win, no fee",yes,2026-10-06
+Singapore,Singapore,Thomas Carlington & Associates,https://jurimatch.com/firms/thomas-carlington-associates,Unpaid invoice,"No win, no fee",yes,2026-10-06
+South Africa,Alberton,Kredcor,https://jurimatch.com/firms/kredcor,Unpaid invoice,Contingency fee; Success fee,yes,2026-10-06
+South Africa,Boksburg,Hammond Pole Attorneys,https://jurimatch.com/firms/hammond-pole-attorneys,Unpaid invoice; Insurance claim,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+South Africa,Cape Town,A Batchelor & Associates,https://jurimatch.com/firms/a-batchelor-associates,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+South Africa,Cape Town,Venters Incorporated,https://jurimatch.com/firms/venters-incorporated,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+South Africa,Durban,Campbell Attorneys,https://jurimatch.com/firms/campbell-attorneys,Personal injury; Medical negligence; Contract dispute,"Contingency fee; No win, no fee",yes,2026-11-01
+South Africa,Durban,KA Khanyile Attorneys,https://jurimatch.com/firms/ka-khanyile-attorneys,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+South Africa,Johannesburg,Burger Huyser Attorneys,https://jurimatch.com/firms/burger-huyser-attorneys,Unpaid invoice; Contract dispute,"No win, no fee; Contingency fee; Commission on recovery",yes,2026-10-06
+South Africa,Johannesburg,Joseph's Inc,https://jurimatch.com/firms/joseph-s-inc,Medical negligence; Personal injury,"No win, no fee",yes,2026-11-01
+South Africa,Johannesburg,Munro Flowers & Vermaak,https://jurimatch.com/firms/munro-flowers-vermaak,Medical negligence; Personal injury; Professional negligence,"No win, no fee",yes,2026-11-01
+South Africa,Johannesburg,Onah Attorneys,https://jurimatch.com/firms/onah-attorneys,Personal injury,"No win, no fee",yes,2026-11-01
+South Africa,Johannesburg,Taurus Capital,https://jurimatch.com/firms/taurus-capital,Contract dispute; Partnership dispute; Class action; IP dispute,Litigation funding; Success fee,yes,2026-11-01
+South Africa,Krugersdorp,Allan Weideman Attorneys,https://jurimatch.com/firms/allan-weideman-attorneys,Personal injury,"No win, no fee",yes,2026-11-01
+South Africa,Pretoria,Bredell Ferreira,https://jurimatch.com/firms/bredell-ferreira,Unpaid invoice,"No win, no fee; Success fee",yes,2026-10-06
+South Africa,Randburg,A Wolmarans Inc,https://jurimatch.com/firms/a-wolmarans-inc,Personal injury,"No win, no fee",yes,2026-11-01
+South Africa,Sandton,We Fund Claims,https://jurimatch.com/firms/we-fund-claims,Unpaid invoice,Litigation funding,yes,2026-10-06
+South Africa,Somerset West,Brand Attorneys,https://jurimatch.com/firms/brand-attorneys,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+South Africa,South Africa,Mavuya Inc Attorneys,https://jurimatch.com/firms/mavuya-inc-attorneys,Personal injury,Contingency fee,yes,2026-11-01
+South Africa,Vanderbijlpark,MN Law (MNI Attorneys),https://jurimatch.com/firms/mn-law-mni-attorneys,Personal injury,"No win, no fee",yes,2026-11-01
+South Africa,Western Cape,HELP Attorneys (Fischer Malherbe Kriel Inc),https://jurimatch.com/firms/help-attorneys-fischer-malherbe-kriel-inc,Personal injury,"No win, no fee",yes,2026-11-01
+Spain,A Coruña,Caruncho y Tomé Abogados,https://jurimatch.com/firms/caruncho-y-tome-abogados,Investment fraud; Partnership dispute,Hybrid (fixed fee plus success fee); Success fee,yes,2026-10-06
+Spain,A Coruña,López Taboada Abogados,https://jurimatch.com/firms/lopez-taboada-abogados,Personal injury; Consumer claim,,yes,2026-11-01
+Spain,Alcalá de Henares,Gil Blanco Abogados,https://jurimatch.com/firms/gil-blanco-abogados,Consumer claim; Employment claim,,no,2026-11-01
+Spain,Barcelona,Arpa Legal,https://jurimatch.com/firms/arpa-legal,Personal injury,,no,2026-11-01
+Spain,Barcelona,JDV Iuris & Consultants,https://jurimatch.com/firms/jdv-iuris-consultants,Consumer claim,,no,2026-11-01
+Spain,Barcelona,Motera López Abogados,https://jurimatch.com/firms/motera-lopez-abogados,Personal injury,,no,2026-11-01
+Spain,Barcelona,Ramco Litigation Funding,https://jurimatch.com/firms/ramco-litigation-funding,Contract dispute; Class action,Litigation funding,yes,2026-11-01
+Spain,Barcelona,Salbau Abogados,https://jurimatch.com/firms/salbau-abogados,Employment claim,,no,2026-11-01
+Spain,Bilbao,A&D Abogados,https://jurimatch.com/firms/a-d-abogados,Personal injury,,no,2026-11-01
+Spain,Bilbao,Élite Abogados,https://jurimatch.com/firms/elite-abogados,Personal injury; Consumer claim,,no,2026-11-01
+Spain,Bilbao,Erreklamatu,https://jurimatch.com/firms/erreklamatu,Fraud,"No win, no fee; Contingency fee",yes,2026-10-06
+Spain,Cádiz,Ruiz Trujillo Abogados,https://jurimatch.com/firms/ruiz-trujillo-abogados,Personal injury; Consumer claim,,no,2026-11-01
+Spain,Canary Islands,Indemnización Directa,https://jurimatch.com/firms/indemnizacion-directa,Personal injury,,no,2026-11-01
+Spain,Granada,Abogados Tráfico (Muñoz & Asociados),https://jurimatch.com/firms/abogados-trafico-munoz-asociados,Personal injury,Success fee,no,2026-11-01
+Spain,La Orotava,Rigor Legal,https://jurimatch.com/firms/rigor-legal,Fraud,"No win, no fee; Contingency fee",yes,2026-10-06
+Spain,León,Reclamaciones Bancarias (León),https://jurimatch.com/firms/reclamaciones-bancarias-leon,Investment fraud,"No win, no fee; Success fee",yes,2026-10-06
+Spain,Madrid,Abogados Lesiones,https://jurimatch.com/firms/abogados-lesiones,Personal injury,,yes,2026-11-01
+Spain,Madrid,Claimbnb,https://jurimatch.com/firms/claimbnb,Contract dispute; Partnership dispute; Class action,Litigation funding,yes,2026-10-06
+Spain,Madrid,DMD Asesores,https://jurimatch.com/firms/dmd-asesores,Consumer claim,,no,2026-11-01
+Spain,Madrid,Equity & Law (Picado Gestión),https://jurimatch.com/firms/equity-law-picado-gestion,Class action; Contract dispute,Litigation funding,yes,2026-10-06
+Spain,Madrid,Grupo Intercobros,https://jurimatch.com/firms/grupo-intercobros,Contract dispute,"No win, no fee; Success fee",yes,2026-10-06
+Spain,Madrid,Justicia Médica,https://jurimatch.com/firms/justicia-medica,Medical negligence,,no,2026-11-01
+Spain,Madrid,Legalauto,https://jurimatch.com/firms/legalauto,Personal injury,,no,2026-11-01
+Spain,Madrid,Munoz Abogados,https://jurimatch.com/firms/munoz-abogados,Consumer claim,,no,2026-11-01
+Spain,Madrid,Nuño & de la Higuera Abogados,https://jurimatch.com/firms/nuno-de-la-higuera-abogados,Personal injury,,no,2026-11-01
+Spain,Madrid,Pérez Tirado Abogados,https://jurimatch.com/firms/perez-tirado-abogados,Personal injury,,no,2026-11-01
+Spain,Madrid,PLA Litigation Funding,https://jurimatch.com/firms/pla-litigation-funding,Contract dispute,Litigation funding,no,2026-11-01
+Spain,Madrid,Rafael Martín Bueno Abogados,https://jurimatch.com/firms/rafael-martin-bueno-abogados,Medical negligence,Cuota litis (success fee),yes,2026-11-01
+Spain,Madrid,Ramos Mesonero Abogados,https://jurimatch.com/firms/ramos-mesonero-abogados,Medical negligence,,no,2026-11-01
+Spain,Madrid,Reclama y Recupera,https://jurimatch.com/firms/reclama-y-recupera,Consumer claim; Investment fraud,,yes,2026-11-01
+Spain,Madrid,ReclamaGratis,https://jurimatch.com/firms/reclamagratis,Consumer claim; Unpaid invoice,,yes,2026-11-01
+Spain,Madrid,Reclamator Lawyers,https://jurimatch.com/firms/reclamator-lawyers,Employment claim; Consumer claim,,no,2026-11-01
+Spain,Madrid,Ródenas Abogados (Negligencias Dentales),https://jurimatch.com/firms/rodenas-abogados-negligencias-dentales,Medical negligence,Success fee,no,2026-11-01
+Spain,Madrid,Sotillo Abogados,https://jurimatch.com/firms/sotillo-abogados,Consumer claim,,no,2026-11-01
+Spain,Murcia,Coventia Legal,https://jurimatch.com/firms/coventia-legal,Consumer claim; Insurance claim,,yes,2026-11-01
+Spain,O Carballiño,Rúa Abogados,https://jurimatch.com/firms/rua-abogados,Class action,"Success fee; No win, no fee",yes,2026-10-06
+Spain,Ourense,Mazaira Abogados,https://jurimatch.com/firms/mazaira-abogados,Investment fraud; Partnership dispute,"No win, no fee; Contingency fee",yes,2026-10-06
+Spain,Oviedo,Sello Legal,https://jurimatch.com/firms/sello-legal,Fraud,"No win, no fee; Success fee; No money upfront to claim; success-based",yes,2026-10-06
+Spain,Pallejà,Laborley,https://jurimatch.com/firms/laborley,,"No win, no fee; Success fee",yes,2026-10-06
+Spain,Palma,MiAbogado Accidentes Tráfico,https://jurimatch.com/firms/miabogado-accidentes-trafico,Personal injury,Solo cobramos si tú cobras,no,2026-11-01
+Spain,Rivas-Vaciamadrid,WDI Abogados,https://jurimatch.com/firms/wdi-abogados,Personal injury,,no,2026-11-01
+Spain,Sabadell,Tatché Advocats,https://jurimatch.com/firms/tatche-advocats,Personal injury,,no,2026-11-01
+Spain,Santander,Grupo Alega Abogados,https://jurimatch.com/firms/grupo-alega-abogados,Personal injury,,no,2026-11-01
+Spain,Seville,Bufete Osuna,https://jurimatch.com/firms/bufete-osuna,Personal injury,,no,2026-11-01
+Spain,Seville,HL Accidentes,https://jurimatch.com/firms/hl-accidentes,Personal injury,,no,2026-11-01
+Spain,Seville,Parrilla Abogados,https://jurimatch.com/firms/parrilla-abogados,Personal injury,,no,2026-11-01
+Spain,Seville,Tráfico Ayuda,https://jurimatch.com/firms/trafico-ayuda,Personal injury,,no,2026-11-01
+Spain,Spain,ALY Abogados,https://jurimatch.com/firms/aly-abogados,Consumer claim; Investment fraud,,no,2026-11-01
+Spain,Spain,Apolo Abogados,https://jurimatch.com/firms/apolo-abogados,Consumer claim,,no,2026-11-01
+Spain,Spain,Aporcentaje Abogados,https://jurimatch.com/firms/aporcentaje-abogados,Medical negligence; Personal injury,Solo cobramos si usted gana,no,2026-11-01
+Spain,Spain,Asesority Abogados,https://jurimatch.com/firms/asesority-abogados,Consumer claim,,no,2026-11-01
+Spain,Spain,dP Abogados Consultores,https://jurimatch.com/firms/dp-abogados-consultores,Consumer claim,,no,2026-11-01
+Spain,Spain,Ézaro Legal,https://jurimatch.com/firms/ezaro-legal,Consumer claim,,no,2026-11-01
+Spain,Spain,Justalia Abogados,https://jurimatch.com/firms/justalia-abogados,Consumer claim,,no,2026-11-01
+Spain,Spain,LexReclama,https://jurimatch.com/firms/lexreclama,Consumer claim,Solo si ganas: honorarios a éxito,no,2026-11-01
+Spain,Spain,Litigios.es (NHD),https://jurimatch.com/firms/litigios-es-nhd,Consumer claim,,no,2026-11-01
+Spain,Spain,PureTech Legal,https://jurimatch.com/firms/puretech-legal,Consumer claim; Class action,,yes,2026-11-01
+Spain,Spain,Reclama Legal,https://jurimatch.com/firms/reclama-legal,Consumer claim,Cuota litis (success fee),yes,2026-11-01
+Spain,Spain,Sparta Jurídicos,https://jurimatch.com/firms/sparta-juridicos,Consumer claim,Success fee,yes,2026-11-01
+Spain,Spain,TG Online Legal Consulting,https://jurimatch.com/firms/tg-online-legal-consulting,Consumer claim,Cuota litis (success fee),yes,2026-11-01
+Spain,Spain,The Juris,https://jurimatch.com/firms/the-juris,Consumer claim,,no,2026-11-01
+Spain,Spain,Zulaika Abogados,https://jurimatch.com/firms/zulaika-abogados,Consumer claim,,no,2026-11-01
+Spain,Tenerife,Álamo & Asociados,https://jurimatch.com/firms/alamo-asociados,Employment claim; Personal injury,,no,2026-11-01
+Spain,Valencia,Abogados Valencia JC,https://jurimatch.com/firms/abogados-valencia-jc,Consumer claim,,no,2026-11-01
+Spain,Valencia,Cerciora Abogados,https://jurimatch.com/firms/cerciora-abogados,Consumer claim,,no,2026-11-01
+Spain,Valencia,GDH Abogados,https://jurimatch.com/firms/gdh-abogados,Employment claim,Success fee,no,2026-11-01
+Spain,Valencia,Juan Benet Abogados,https://jurimatch.com/firms/juan-benet-abogados,Consumer claim,,no,2026-11-01
+Spain,Valencia,Trafic Abogados,https://jurimatch.com/firms/trafic-abogados,Personal injury,,no,2026-11-01
+Spain,Valladolid,Reclama con Éxito,https://jurimatch.com/firms/reclama-con-exito,,"No win, no fee; Success fee",yes,2026-10-06
+Spain,Vigo,Acción Abogados,https://jurimatch.com/firms/accion-abogados,Personal injury,,yes,2026-11-01
+Spain,Vigo,Juris Abogados Vigo,https://jurimatch.com/firms/juris-abogados-vigo,Personal injury,,no,2026-11-01
+Spain,Vigo,SDG Abogados Vigo,https://jurimatch.com/firms/sdg-abogados-vigo,Personal injury,,no,2026-11-01
+Spain,Zaragoza,Nogués Abogados,https://jurimatch.com/firms/nogues-abogados,Consumer claim,,no,2026-11-01
+Sweden,Gothenburg,Oddcoll,https://jurimatch.com/firms/oddcoll,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Sweden,Stockholm,Litigium Capital,https://jurimatch.com/firms/litigium-capital,Contract dispute,Litigation funding,no,2026-11-01
+Switzerland,Geneva,Swiss Legal Finance,https://jurimatch.com/firms/swiss-legal-finance,Contract dispute; Fraud; Investment fraud; Crypto fraud,Litigation funding,yes,2026-10-06
+Switzerland,Kriessern,Liti-Link,https://jurimatch.com/firms/liti-link,Contract dispute,Success fee,yes,2026-11-01
+Switzerland,Steinhausen,Nivalion,https://jurimatch.com/firms/nivalion,Contract dispute,Litigation funding,no,2026-11-01
+Switzerland,Steinhausen,Nivalion AG,https://jurimatch.com/firms/nivalion-ag,Contract dispute; Fraud; Partnership dispute; Crypto fraud; Class action,Litigation funding,yes,2026-10-06
+Switzerland,Switzerland,inqasso,https://jurimatch.com/firms/inqasso,Unpaid invoice,Commission on recovery,yes,2026-11-01
+Switzerland,Switzerland,JuraPlus AG,https://jurimatch.com/firms/juraplus-ag,Contract dispute,Litigation funding,yes,2026-11-01
+Switzerland,Switzerland,KS Inkasso AG,https://jurimatch.com/firms/ks-inkasso-ag,Unpaid invoice,,yes,2026-11-01
+Switzerland,Switzerland,Trans-Inkasso & Finanz AG,https://jurimatch.com/firms/trans-inkasso-finanz-ag,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Turkey,Istanbul,Global Recovery Services (GRS),https://jurimatch.com/firms/global-recovery-services-grs,Unpaid invoice,"No win, no fee",yes,2026-11-01
+Turkey,Istanbul,Kurucuk & Associates,https://jurimatch.com/firms/kurucuk-associates,Medical negligence; Personal injury,"No win, no fee",yes,2026-11-01
+Turkey,Istanbul,MESCI Law Firm,https://jurimatch.com/firms/mesci-law-firm,Medical negligence,Contingency fee,yes,2026-11-01
+Turkey,Istanbul,Sarıoğlu & Sefer Law Office,https://jurimatch.com/firms/sar-oglu-sefer-law-office,Employment claim,,no,2026-11-01
+Turkey,Istanbul,Sezgen Law Office,https://jurimatch.com/firms/sezgen-law-office,Employment claim; Personal injury,,no,2026-11-01
+Turkey,Istanbul,Turkish Legal Centre,https://jurimatch.com/firms/turkish-legal-centre,Contract dispute; Real estate dispute,"No win, no fee",yes,2026-11-01
+Turkey,Istanbul,TurkMedLaw,https://jurimatch.com/firms/turkmedlaw,Medical negligence,"No win, no fee",yes,2026-11-01
+Turkey,Sakarya,Ozbag & Senturk Law,https://jurimatch.com/firms/ozbag-senturk-law,Personal injury,,yes,2026-11-01
+United Arab Emirates,Abu Dhabi,Ezz Law Firm (Abu Dhabi Lawyers),https://jurimatch.com/firms/ezz-law-firm-abu-dhabi-lawyers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Arab Emirates,Abu Dhabi,WinJustice,https://jurimatch.com/firms/winjustice,Contract dispute,Litigation funding,yes,2026-11-01
+United Arab Emirates,Dubai,Al Safar & Partners,https://jurimatch.com/firms/al-safar-partners,Personal injury; Medical negligence,Conditional fee agreement (CFA),yes,2026-11-01
+United Arab Emirates,Dubai,AW UAE (Al Wadi Holding),https://jurimatch.com/firms/aw-uae-al-wadi-holding,,"No win, no fee",yes,2026-10-06
+United Arab Emirates,Dubai,Awatif Mohammad Shoqi Advocates & Legal Consultancy (Al Rowaad),https://jurimatch.com/firms/awatif-mohammad-shoqi-advocates-legal-consultancy-al-rowaad,Unpaid invoice; Contract dispute,"No win, no fee",yes,2026-10-06
+United Arab Emirates,Dubai,Caveat Capital,https://jurimatch.com/firms/caveat-capital,Contract dispute,Litigation funding,no,2026-11-01
+United Arab Emirates,Dubai,Global Debt Collector,https://jurimatch.com/firms/global-debt-collector,Unpaid invoice,"No win, no fee",yes,2026-10-06
+United Arab Emirates,Dubai,Hassan Al Reyami & Muhyealdeen International Legal Consultants,https://jurimatch.com/firms/hassan-al-reyami-muhyealdeen-international-legal-consultants,Unpaid invoice; Contract dispute,"No win, no fee",yes,2026-10-06
+United Kingdom,Altrincham,FS Litigation,https://jurimatch.com/firms/fs-litigation,Professional negligence,Contingency fee,yes,2026-11-01
+United Kingdom,Altrincham,Myerson Solicitors,https://jurimatch.com/firms/myerson-solicitors,Professional negligence,"Conditional fee agreement (CFA); No win, no fee; Litigation funding",yes,2026-10-06
+United Kingdom,Annan,Hann & Co,https://jurimatch.com/firms/hann-co,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Barking,Sternberg Reed,https://jurimatch.com/firms/sternberg-reed,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Barnstaple,Brewer Harding & Rowe,https://jurimatch.com/firms/brewer-harding-rowe,Professional negligence,"No win, no fee",yes,2026-10-06
+United Kingdom,Barnstaple,Samuels Solicitors,https://jurimatch.com/firms/samuels-solicitors,Professional negligence; Contract dispute,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Belfast,Kearney Law Group,https://jurimatch.com/firms/kearney-law-group,Personal injury; Medical negligence,,no,2026-11-01
+United Kingdom,Belfast,McGee Solicitors,https://jurimatch.com/firms/mcgee-solicitors,Personal injury,,no,2026-11-01
+United Kingdom,Birmingham,CL Medilaw,https://jurimatch.com/firms/cl-medilaw,Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Blackburn,Curtis Law Solicitors,https://jurimatch.com/firms/curtis-law-solicitors,Professional negligence; Real estate dispute,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Blackburn,Farleys Solicitors,https://jurimatch.com/firms/farleys-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Blackburn,M by Mariah Legal,https://jurimatch.com/firms/m-by-mariah-legal,Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,Bolton,Fieldings Porter,https://jurimatch.com/firms/fieldings-porter,Contract dispute; Fraud; Partnership dispute; Unpaid invoice,"Conditional fee agreement (CFA); No win, no fee; Hybrid (fixed fee plus success fee)",yes,2026-10-06
+United Kingdom,Bolton,Rileys Solicitors,https://jurimatch.com/firms/rileys-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Bradford,Manor Row Solicitors,https://jurimatch.com/firms/manor-row-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Brighton,Dean Wilson LLP,https://jurimatch.com/firms/dean-wilson-llp,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Bristol,Clarke Willmott,https://jurimatch.com/firms/clarke-willmott,Investment fraud; Professional negligence,"No win, no fee; Contingency fee",yes,2026-10-06
+United Kingdom,Bristol,Enable Law,https://jurimatch.com/firms/enable-law,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Bristol,Glynns Solicitors,https://jurimatch.com/firms/glynns-solicitors,Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Bristol,Mooneerams,https://jurimatch.com/firms/mooneerams,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Bristol,Wards Solicitors,https://jurimatch.com/firms/wards-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Bury St Edmunds,Ashtons Legal,https://jurimatch.com/firms/ashtons-legal,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Cardiff,Howells Legal,https://jurimatch.com/firms/howells-legal,Medical negligence; Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Cardiff,Hugh James,https://jurimatch.com/firms/hugh-james,Investment fraud; Class action; Contract dispute,"No win, no fee",yes,2026-10-06
+United Kingdom,Cardiff,Redkite Solicitors,https://jurimatch.com/firms/redkite-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Carlisle,Bendles Solicitors,https://jurimatch.com/firms/bendles-solicitors,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Chelmsford,Gadsby Wicks,https://jurimatch.com/firms/gadsby-wicks,Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Chester,PDA Law,https://jurimatch.com/firms/pda-law,Professional negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Chester,PSR Solicitors,https://jurimatch.com/firms/psr-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Chichester,George Ide LLP,https://jurimatch.com/firms/george-ide-llp,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Coventry,Ward & Rider,https://jurimatch.com/firms/ward-rider,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Crewe,Step Legal,https://jurimatch.com/firms/step-legal,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Derby,Smith Partnership,https://jurimatch.com/firms/smith-partnership,Professional negligence; Investment fraud,"No win, no fee",yes,2026-10-06
+United Kingdom,Derby,Timms Solicitors,https://jurimatch.com/firms/timms-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Dundee,Thorntons,https://jurimatch.com/firms/thorntons,Professional negligence,"No win, no fee; Success fee",yes,2026-10-06
+United Kingdom,Edinburgh,Allan McDougall Solicitors,https://jurimatch.com/firms/allan-mcdougall-solicitors,Personal injury; Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Edinburgh,Balfour+Manson,https://jurimatch.com/firms/balfour-manson,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Edinburgh,Morton Fraser MacRoberts (MFMac),https://jurimatch.com/firms/morton-fraser-macroberts-mfmac,Contract dispute; Fraud; Crypto fraud,"Success fee; No win, no fee; Contingency fee",yes,2026-10-06
+United Kingdom,Edinburgh,Watermans Solicitors,https://jurimatch.com/firms/watermans-solicitors,Professional negligence,"No win, no fee; Success fee",yes,2026-10-06
+United Kingdom,Exeter,Stephens Scown,https://jurimatch.com/firms/stephens-scown,Professional negligence; Contract dispute,"Conditional fee agreement (CFA); Damages-based agreement (DBA); No win, no fee",yes,2026-10-06
+United Kingdom,Glasgow,Alexander McBurney Solicitors,https://jurimatch.com/firms/alexander-mcburney-solicitors,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Glossop,Progressive Solicitors,https://jurimatch.com/firms/progressive-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Grantham,Bird & Co Solicitors,https://jurimatch.com/firms/bird-co-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Huddersfield,Ramsdens Solicitors,https://jurimatch.com/firms/ramsdens-solicitors,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Hull,Hamers Solicitors,https://jurimatch.com/firms/hamers-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Hull,Williamsons Solicitors,https://jurimatch.com/firms/williamsons-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Kettering,Wilson Browne Solicitors,https://jurimatch.com/firms/wilson-browne-solicitors,Contract dispute; Professional negligence,"No win, no fee; Contingency fee; Hybrid (fixed fee plus success fee)",yes,2026-10-06
+United Kingdom,Leeds,Harris & Green Solicitors,https://jurimatch.com/firms/harris-green-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Leeds,Morrish Solicitors,https://jurimatch.com/firms/morrish-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Leeds,Paul Doran Employment Law,https://jurimatch.com/firms/paul-doran-employment-law,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Leeds,Wildwood Legal,https://jurimatch.com/firms/wildwood-legal,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Liverpool,Anderton Law,https://jurimatch.com/firms/anderton-law,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Liverpool,Bond Turner,https://jurimatch.com/firms/bond-turner,Professional negligence; Investment fraud,"No win, no fee; Conditional fee agreement (CFA)",yes,2026-10-06
+United Kingdom,Liverpool,Harrington Sinclair Law,https://jurimatch.com/firms/harrington-sinclair-law,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Liverpool,Mackrell & Thomas,https://jurimatch.com/firms/mackrell-thomas,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Liverpool,Satchell Moran Solicitors,https://jurimatch.com/firms/satchell-moran-solicitors,Real estate dispute; Personal injury,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Liverpool,Wafer Phillips Solicitors,https://jurimatch.com/firms/wafer-phillips-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Anthony Gold Solicitors,https://jurimatch.com/firms/anthony-gold-solicitors,Professional negligence; Contract dispute,"Conditional fee agreement (CFA); No win, no fee",yes,2026-10-06
+United Kingdom,London,Apex Litigation Finance,https://jurimatch.com/firms/apex-litigation-finance,Contract dispute,Conditional fee agreement (CFA); Litigation funding,yes,2026-11-01
+United Kingdom,London,Asertis,https://jurimatch.com/firms/asertis,Contract dispute; Professional negligence; Partnership dispute,Litigation funding,no,2026-11-01
+United Kingdom,London,Augusta Ventures,https://jurimatch.com/firms/augusta-ventures,Contract dispute; Class action; Consumer claim,Litigation funding,yes,2026-11-01
+United Kingdom,London,Austen Hays,https://jurimatch.com/firms/austen-hays,Investment fraud; Crypto fraud,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Carter-Ruck,https://jurimatch.com/firms/carter-ruck,Contract dispute; Professional negligence; Fraud,Conditional fee agreement (CFA); Damages-based agreement (DBA); Litigation funding,yes,2026-10-06
+United Kingdom,London,Charles Lyndon,https://jurimatch.com/firms/charles-lyndon,Investment fraud; Professional negligence,"No win, no fee",yes,2026-10-06
+United Kingdom,London,Chris & Co Solicitors,https://jurimatch.com/firms/chris-co-solicitors,Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Duncan Lewis Solicitors,https://jurimatch.com/firms/duncan-lewis-solicitors,Personal injury; Medical negligence; Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Erso Capital,https://jurimatch.com/firms/erso-capital,Contract dispute; IP dispute; Class action,Litigation funding,no,2026-11-01
+United Kingdom,London,Freeman Harris,https://jurimatch.com/firms/freeman-harris,Real estate dispute; Professional negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Go Legal,https://jurimatch.com/firms/go-legal,Contract dispute; Partnership dispute; Professional negligence,"No win, no fee; Conditional fee agreement (CFA); Damages-based agreement (DBA); Litigation funding",yes,2026-10-06
+United Kingdom,London,Greenwoods Legal LLP,https://jurimatch.com/firms/greenwoods-legal-llp,Contract dispute; Fraud; Professional negligence,"Damages-based agreement (DBA); No win, no fee",yes,2026-10-06
+United Kingdom,London,KP Law,https://jurimatch.com/firms/kp-law,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Leigh Day,https://jurimatch.com/firms/leigh-day,Class action; Investment fraud,"No win, no fee; Contingency fee; Litigation funding",yes,2026-10-06
+United Kingdom,London,Magara Law,https://jurimatch.com/firms/magara-law,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Miles and Partners,https://jurimatch.com/firms/miles-and-partners,Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,New North Litigation Capital,https://jurimatch.com/firms/new-north-litigation-capital,Partnership dispute; Contract dispute; Fraud; Professional negligence; IP dispute; Real estate dispute,Litigation funding,no,2026-11-01
+United Kingdom,London,Penningtons Manches Cooper,https://jurimatch.com/firms/penningtons-manches-cooper,Class action; Investment fraud,"No win, no fee",yes,2026-10-06
+United Kingdom,London,Richardson Hartley Law,https://jurimatch.com/firms/richardson-hartley-law,Fraud; Crypto fraud; Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Rylands Garth,https://jurimatch.com/firms/rylands-garth,Contract dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Silver Oak Solicitors,https://jurimatch.com/firms/silver-oak-solicitors,Personal injury; Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,London,Springhouse Solicitors,https://jurimatch.com/firms/springhouse-solicitors,Employment claim,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,London,Summit Law LLP,https://jurimatch.com/firms/summit-law-llp,Partnership dispute; Contract dispute,Conditional fee agreement (CFA),yes,2026-10-06
+United Kingdom,London,Taylor Rose,https://jurimatch.com/firms/taylor-rose,Class action,"No win, no fee; Litigation funding",yes,2026-10-06
+United Kingdom,London,Vitta Investments,https://jurimatch.com/firms/vitta-investments,Consumer claim; Professional negligence,Litigation funding,no,2026-11-01
+United Kingdom,Luton,Rodman Pearce Solicitors,https://jurimatch.com/firms/rodman-pearce-solicitors,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Maidenhead,KLG Law,https://jurimatch.com/firms/klg-law,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Maidstone,Brachers,https://jurimatch.com/firms/brachers,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Manchester,Alderstone Solicitors,https://jurimatch.com/firms/alderstone-solicitors,Personal injury; Medical negligence; Professional negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Manchester,Antony Hodari Solicitors,https://jurimatch.com/firms/antony-hodari-solicitors,Real estate dispute; Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Manchester,Birstall Myers Solicitors,https://jurimatch.com/firms/birstall-myers-solicitors,Personal injury,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Manchester,FDM Solicitors,https://jurimatch.com/firms/fdm-solicitors,Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,Manchester,Gowing Law,https://jurimatch.com/firms/gowing-law,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Manchester,Stephensons Solicitors LLP,https://jurimatch.com/firms/stephensons-solicitors-llp,Contract dispute; Fraud; Professional negligence; Partnership dispute,Damages-based agreement (DBA); Conditional fee agreement (CFA),yes,2026-10-06
+United Kingdom,Manchester,Treadstone Law Solicitors,https://jurimatch.com/firms/treadstone-law-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Middlesbrough,Askews Solicitors,https://jurimatch.com/firms/askews-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Middlesbrough,Watson Woodhouse,https://jurimatch.com/firms/watson-woodhouse,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Milton Keynes,Green Law Solicitors,https://jurimatch.com/firms/green-law-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Milton Keynes,Lime Solicitors,https://jurimatch.com/firms/lime-solicitors,Personal injury; Medical negligence; Professional negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Newcastle,Hay & Kilner,https://jurimatch.com/firms/hay-kilner,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Newcastle,Sintons,https://jurimatch.com/firms/sintons,Personal injury,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Newcastle,Thompson & Co Solicitors,https://jurimatch.com/firms/thompson-co-solicitors,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Newport,Hennah Haywood Law,https://jurimatch.com/firms/hennah-haywood-law,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,North Shields,TLW Solicitors,https://jurimatch.com/firms/tlw-solicitors,Investment fraud; Fraud; Crypto fraud,"No win, no fee",yes,2026-10-06
+United Kingdom,Norwich,Fosters Solicitors,https://jurimatch.com/firms/fosters-solicitors,Personal injury; Class action; Medical negligence,Conditional fee agreement (CFA),yes,2026-11-01
+United Kingdom,Norwich,Simper Law,https://jurimatch.com/firms/simper-law,Medical negligence; Personal injury,Success fee,yes,2026-11-01
+United Kingdom,Nottingham,Nelsons Solicitors,https://jurimatch.com/firms/nelsons-solicitors,Professional negligence; Class action,"Conditional fee agreement (CFA); No win, no fee",yes,2026-10-06
+United Kingdom,Nottingham,Trent Law Solicitors,https://jurimatch.com/firms/trent-law-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Oldham,Amin Haque Solicitors,https://jurimatch.com/firms/amin-haque-solicitors,Real estate dispute,"No win, no fee",yes,2026-11-01
+United Kingdom,Peterborough,Folgate Legal,https://jurimatch.com/firms/folgate-legal,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Plymouth,Chris Kallis Solicitors,https://jurimatch.com/firms/chris-kallis-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Plymouth,Russell Worth Solicitors,https://jurimatch.com/firms/russell-worth-solicitors,Personal injury,,yes,2026-11-01
+United Kingdom,Preston,Birchall Blackburn Law,https://jurimatch.com/firms/birchall-blackburn-law,Medical negligence; Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Preston,MG Legal,https://jurimatch.com/firms/mg-legal,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Preston,Simon A Holt & Co,https://jurimatch.com/firms/simon-a-holt-co,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Reading,DPH Legal,https://jurimatch.com/firms/dph-legal,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Scotland,Digby Brown,https://jurimatch.com/firms/digby-brown,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Sheffield,Howells Solicitors,https://jurimatch.com/firms/howells-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Sheffield,Irwin Mitchell,https://jurimatch.com/firms/irwin-mitchell,Contract dispute; Fraud; Partnership dispute; Class action,Conditional fee agreement (CFA); Damages-based agreement (DBA); Litigation funding,yes,2026-10-06
+United Kingdom,Shrewsbury,LB Law,https://jurimatch.com/firms/lb-law,Medical negligence; Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Southampton,Trethowans,https://jurimatch.com/firms/trethowans,Professional negligence,"Conditional fee agreement (CFA); No win, no fee; Hybrid (fixed fee plus success fee)",yes,2026-10-06
+United Kingdom,Stowmarket,Morris Liberti,https://jurimatch.com/firms/morris-liberti,Employment claim,"No win, no fee",yes,2026-11-01
+United Kingdom,Swansea,David W Harris & Co,https://jurimatch.com/firms/david-w-harris-co,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Swansea,Graham Evans & Partners,https://jurimatch.com/firms/graham-evans-partners,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Wigan,ASL Solicitors,https://jurimatch.com/firms/asl-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Willenhall,West Midlands Solicitors,https://jurimatch.com/firms/west-midlands-solicitors,Personal injury,"No win, no fee",yes,2026-11-01
+United Kingdom,Wirral,Phoenix Legal Solicitors,https://jurimatch.com/firms/phoenix-legal-solicitors,Real estate dispute; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,Wolverhampton,FBC Manby Bowdler,https://jurimatch.com/firms/fbc-manby-bowdler,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United Kingdom,York,Harrowells Solicitors,https://jurimatch.com/firms/harrowells-solicitors,Medical negligence; Professional negligence,Conditional fee agreement (CFA),yes,2026-11-01
+United States,"Albany, New York",Dreyer Boyajian LLP,https://jurimatch.com/firms/dreyer-boyajian-llp,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Albuquerque, New Mexico",Ferguson Law,https://jurimatch.com/firms/ferguson-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Albuquerque, New Mexico",Ken Wagner Law,https://jurimatch.com/firms/ken-wagner-law,Personal injury; Medical negligence; Insurance claim,Contingency fee,yes,2026-11-01
+United States,"Albuquerque, New Mexico",The Fine Law Firm,https://jurimatch.com/firms/the-fine-law-firm,Personal injury; Medical negligence,"No win, no fee",yes,2026-11-01
+United States,"Alton, IL",Simmons Hanly Conroy LLP,https://jurimatch.com/firms/simmons-hanly-conroy-llp,Contract dispute; Investment fraud; Partnership dispute,Contingency fee,yes,2026-10-06
+United States,"Anchorage, Alaska",Alexander Shunnarah Trial Attorneys,https://jurimatch.com/firms/alexander-shunnarah-trial-attorneys,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Atlanta, Georgia",Fried Goldberg LLC,https://jurimatch.com/firms/fried-goldberg-llc,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Atlanta, Georgia",Monge & Associates,https://jurimatch.com/firms/monge-associates,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Atlanta, Georgia",Montlick Injury Attorneys,https://jurimatch.com/firms/montlick-injury-attorneys,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Atlanta, Georgia",Shiver Hamilton Campbell,https://jurimatch.com/firms/shiver-hamilton-campbell,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Atlanta, Georgia",Wetherington Law Firm,https://jurimatch.com/firms/wetherington-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Aurora, Colorado",Franklin D. Azar & Associates,https://jurimatch.com/firms/franklin-d-azar-associates,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Austin, TX",Law Office of Jason S. Coomer,https://jurimatch.com/firms/law-office-of-jason-s-coomer,Contract dispute; IP dispute,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+United States,"Baltimore, Maryland",Brown & Barron,https://jurimatch.com/firms/brown-barron,Medical negligence; Personal injury,You owe no fee unless we recover for you,no,2026-11-01
+United States,"Baltimore, Maryland","Janet, Janet & Suggs",https://jurimatch.com/firms/janet-janet-suggs,Medical negligence; Personal injury,Contingency fee,yes,2026-11-01
+United States,"Baltimore, Maryland","Murphy, Falcon & Murphy",https://jurimatch.com/firms/murphy-falcon-murphy,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Bangor, Maine","Vafiades, Brountas & Kominsky (VBK Law)",https://jurimatch.com/firms/vafiades-brountas-kominsky-vbk-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Baton Rouge, Louisiana",Dudley DeBosier Injury Lawyers,https://jurimatch.com/firms/dudley-debosier-injury-lawyers,Personal injury,,no,2026-11-01
+United States,"Baton Rouge, Louisiana",Gordon McKernan Injury Attorneys,https://jurimatch.com/firms/gordon-mckernan-injury-attorneys,Personal injury,,no,2026-11-01
+United States,"Bend, Oregon",Dwyer Williams Cherkoss,https://jurimatch.com/firms/dwyer-williams-cherkoss,Personal injury,Free consultation; no fee unless we win,no,2026-11-01
+United States,"Berkley, Michigan",Olsman MacKenzie Peacock,https://jurimatch.com/firms/olsman-mackenzie-peacock,Personal injury; Medical negligence,No fees unless we are successful,yes,2026-11-01
+United States,"Birmingham, AL",The Frankowski Firm,https://jurimatch.com/firms/the-frankowski-firm,Investment fraud,"Contingency fee; No win, no fee; No fees unless you collect an award",yes,2026-10-06
+United States,"Birmingham, Alabama",Cory Watson,https://jurimatch.com/firms/cory-watson,Personal injury; Class action,,no,2026-11-01
+United States,"Birmingham, Alabama","Hare, Wynn, Newell & Newton",https://jurimatch.com/firms/hare-wynn-newell-newton,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Birmingham, Alabama","Hollis, Wright & Clay",https://jurimatch.com/firms/hollis-wright-clay,Personal injury,No fees unless we collect,no,2026-11-01
+United States,"Birmingham, Alabama","Pittman, Dutton, Hellums, Bradley & Mann",https://jurimatch.com/firms/pittman-dutton-hellums-bradley-mann,Personal injury; Class action,Contingency fee,yes,2026-11-01
+United States,"Birmingham, Alabama",Wettermark Keith,https://jurimatch.com/firms/wettermark-keith,Personal injury,You pay nothing unless we win,no,2026-11-01
+United States,"Bloomfield Hills, Michigan",Hertz Schram,https://jurimatch.com/firms/hertz-schram,Medical negligence; Personal injury,Contingency fee,yes,2026-11-01
+United States,"Bloomington, Indiana",Nunn Law Office,https://jurimatch.com/firms/nunn-law-office,Personal injury,No fee unless we win,no,2026-11-01
+United States,"Boise, Idaho",Attorneys of Idaho,https://jurimatch.com/firms/attorneys-of-idaho,Personal injury,,no,2026-11-01
+United States,"Boise, Idaho",Fulcher Koontz Law,https://jurimatch.com/firms/fulcher-koontz-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Boise, Idaho",Hepworth Holzer,https://jurimatch.com/firms/hepworth-holzer,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Boise, Idaho",Jane Gordon Law,https://jurimatch.com/firms/jane-gordon-law,Personal injury,,no,2026-11-01
+United States,"Boise, Idaho",Kluksdal Law,https://jurimatch.com/firms/kluksdal-law,Personal injury; Medical negligence,,no,2026-11-01
+United States,"Boise, Idaho",Litster Frost Injury Lawyers,https://jurimatch.com/firms/litster-frost-injury-lawyers,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Boise, Idaho",Parke Gordon Law,https://jurimatch.com/firms/parke-gordon-law,Personal injury,,no,2026-11-01
+United States,"Boise, Idaho",Swenson & Shelley Law,https://jurimatch.com/firms/swenson-shelley-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Boston, Massachusetts","Breakstone, White & Gluck",https://jurimatch.com/firms/breakstone-white-gluck,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Boston, Massachusetts",Jeffrey S. Glassman Injury Lawyers,https://jurimatch.com/firms/jeffrey-s-glassman-injury-lawyers,Personal injury,No fee unless we win,no,2026-11-01
+United States,"Boston, Massachusetts",Lubin & Meyer,https://jurimatch.com/firms/lubin-meyer,Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Boston, Massachusetts",Sweeney Merrigan,https://jurimatch.com/firms/sweeney-merrigan,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Bozeman, Montana","Beck, Amsden & Stalpes",https://jurimatch.com/firms/beck-amsden-stalpes,Personal injury; Medical negligence; Insurance claim,No fees unless we win your case,no,2026-11-01
+United States,"Brentwood, Tennessee",Law Offices of John Day,https://jurimatch.com/firms/law-offices-of-john-day,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Brookfield, Wisconsin",Cannon & Dunphy,https://jurimatch.com/firms/cannon-dunphy,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Buffalo, New York",Cellino Law,https://jurimatch.com/firms/cellino-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Charleston, West Virginia","Bailey, Javins & Carter",https://jurimatch.com/firms/bailey-javins-carter,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Charleston, West Virginia",Jacobs Law Office,https://jurimatch.com/firms/jacobs-law-office,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Charleston, West Virginia",Stewart Bell,https://jurimatch.com/firms/stewart-bell,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Charleston, West Virginia",West Law Firm,https://jurimatch.com/firms/west-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Chatham, New Jersey","Blume, Forte, Fried, Zerres & Molinari",https://jurimatch.com/firms/blume-forte-fried-zerres-molinari,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Chattanooga, Tennessee",Eric Buchanan & Associates,https://jurimatch.com/firms/eric-buchanan-associates,Insurance claim,,no,2026-11-01
+United States,Chicago,Delta Capital Management,https://jurimatch.com/firms/delta-capital-management,Contract dispute,,no,2026-11-01
+United States,"Chicago, IL",The White Law Group,https://jurimatch.com/firms/the-white-law-group,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Chicago, Illinois",Ankin Law,https://jurimatch.com/firms/ankin-law,Personal injury; Medical negligence,"Free case review, no fee unless you win",no,2026-11-01
+United States,"Chicago, Illinois",Corboy & Demetrio,https://jurimatch.com/firms/corboy-demetrio,Personal injury; Medical negligence,,yes,2026-11-01
+United States,"Chicago, Illinois",Hurley McKenna & Mertz,https://jurimatch.com/firms/hurley-mckenna-mertz,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Chicago, Illinois",Levin & Perconti,https://jurimatch.com/firms/levin-perconti,Personal injury; Medical negligence,You don't pay unless we win,no,2026-11-01
+United States,"Chicago, Illinois",Power Rogers,https://jurimatch.com/firms/power-rogers,Personal injury; Medical negligence,No fees unless we win,no,2026-11-01
+United States,"Cleveland, Ohio",Mishkind Kulwicki Law,https://jurimatch.com/firms/mishkind-kulwicki-law,Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Cleveland, Ohio","Nurenberg, Paris, Heller & McCarthy",https://jurimatch.com/firms/nurenberg-paris-heller-mccarthy,Personal injury; Medical negligence,,no,2026-11-01
+United States,"Colorado Springs, Colorado",McDivitt Law Firm,https://jurimatch.com/firms/mcdivitt-law-firm,Personal injury,No fees until we win for you,no,2026-11-01
+United States,"Columbia, Maryland","Wais, Vogelstein, Forman, Koch & Norman",https://jurimatch.com/firms/wais-vogelstein-forman-koch-norman,Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Columbia, South Carolina",Goings Law Firm,https://jurimatch.com/firms/goings-law-firm,Personal injury,,no,2026-11-01
+United States,"Columbia, South Carolina",Strom Law Firm,https://jurimatch.com/firms/strom-law-firm,Personal injury,No fee if we don't win,no,2026-11-01
+United States,"Concord, New Hampshire",Bianco Professional Association,https://jurimatch.com/firms/bianco-professional-association,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Concord, New Hampshire",Cohen & Winters,https://jurimatch.com/firms/cohen-winters,Personal injury,You don't pay unless we win,no,2026-11-01
+United States,"Coral Springs, FL",Silver Law Group,https://jurimatch.com/firms/silver-law-group,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Coral Springs, FL",Silver Miller,https://jurimatch.com/firms/silver-miller,Crypto fraud; Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Denver, Colorado",Bachus & Schanker,https://jurimatch.com/firms/bachus-schanker,Personal injury,,no,2026-11-01
+United States,"Denver, Colorado",Levine Law,https://jurimatch.com/firms/levine-law,Personal injury,No fee unless we win your case,no,2026-11-01
+United States,"Denver, Colorado",Zaner Harden Law,https://jurimatch.com/firms/zaner-harden-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Des Moines, Iowa",Baer Law Office,https://jurimatch.com/firms/baer-law-office,Personal injury,,no,2026-11-01
+United States,"Des Moines, Iowa","Keit Law Office, P.C.",https://jurimatch.com/firms/keit-law-office-p-c,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Des Moines, Iowa",Law Group of Iowa,https://jurimatch.com/firms/law-group-of-iowa,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Detroit, Michigan",Ven Johnson Law,https://jurimatch.com/firms/ven-johnson-law,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Dover, New Hampshire","Shaheen & Gordon, P.A.",https://jurimatch.com/firms/shaheen-gordon-p-a,Personal injury,Contingency fee,yes,2026-11-01
+United States,Durham,Farrin Law (Law Offices of James Scott Farrin),https://jurimatch.com/firms/farrin-law-law-offices-of-james-scott-farrin,Contract dispute; Fraud,Contingency fee,yes,2026-10-06
+United States,"Edison, New Jersey",Levinson Axelrod,https://jurimatch.com/firms/levinson-axelrod,Personal injury,Contingency fee,yes,2026-11-01
+United States,"El Segundo, California",Greene Broillet & Wheeler,https://jurimatch.com/firms/greene-broillet-wheeler,Personal injury; Medical negligence; Class action,Contingency fee,yes,2026-11-01
+United States,"Fairlawn, Ohio","Kisling, Nestico & Redick",https://jurimatch.com/firms/kisling-nestico-redick,Personal injury,"No win, no fee",yes,2026-11-01
+United States,"Fargo, North Dakota",Maring Williams Law Office,https://jurimatch.com/firms/maring-williams-law-office,Personal injury,No fees unless we win your case,no,2026-11-01
+United States,"Fargo, North Dakota",Reitan Law Office,https://jurimatch.com/firms/reitan-law-office,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Florence, South Carolina",Jebaily Law Firm,https://jurimatch.com/firms/jebaily-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,Florida,The Pendas Law Firm,https://jurimatch.com/firms/the-pendas-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Fort Lauderdale, Florida",Anidjar & Levine,https://jurimatch.com/firms/anidjar-levine,Personal injury,,no,2026-11-01
+United States,"Garden City, Idaho",Smith Horras,https://jurimatch.com/firms/smith-horras,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Georgetown, South Carolina",Bell Legal Group,https://jurimatch.com/firms/bell-legal-group,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Glendale, California","Lawyers for Justice, P.C.",https://jurimatch.com/firms/lawyers-for-justice-p-c,Employment claim; Class action,Retain service with no upfront cost,no,2026-11-01
+United States,"Greensboro, North Carolina",Ward Black Law,https://jurimatch.com/firms/ward-black-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Hartford, Connecticut",Hersh & Crockett,https://jurimatch.com/firms/hersh-crockett,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Hartford, Connecticut",Trantolo & Trantolo,https://jurimatch.com/firms/trantolo-trantolo,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Honolulu, Hawaii","Cronin, Fried, Sekiya, Kekina & Fairbanks",https://jurimatch.com/firms/cronin-fried-sekiya-kekina-fairbanks,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Honolulu, Hawaii",Law Offices of William H. Lawson,https://jurimatch.com/firms/law-offices-of-william-h-lawson,Personal injury,"No win, no fee",yes,2026-11-01
+United States,"Honolulu, Hawaii",Mattoch & Kirley,https://jurimatch.com/firms/mattoch-kirley,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Honolulu, Hawaii",Miyoshi & Hironaka,https://jurimatch.com/firms/miyoshi-hironaka,Personal injury,"No win, no fee",no,2026-11-01
+United States,"Houston, Texas",Abraham Watkins,https://jurimatch.com/firms/abraham-watkins,Personal injury,,no,2026-11-01
+United States,"Houston, Texas",Attorney 911 (Manginello Law Firm),https://jurimatch.com/firms/attorney-911-manginello-law-firm,Personal injury,,no,2026-11-01
+United States,"Houston, Texas",Zehl & Associates,https://jurimatch.com/firms/zehl-associates,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Houston, TX",Shepherd Smith Edwards & Kantas,https://jurimatch.com/firms/shepherd-smith-edwards-kantas,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Houston, TX",Susman Godfrey L.L.P.,https://jurimatch.com/firms/susman-godfrey-l-l-p,Contract dispute; Class action; Investment fraud,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+United States,"Houston, TX",The Lanier Law Firm,https://jurimatch.com/firms/the-lanier-law-firm,Contract dispute; Partnership dispute,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+United States,"Hutchinson, Kansas",Bretz Injury Law,https://jurimatch.com/firms/bretz-injury-law,Personal injury,"No win, no fee",no,2026-11-01
+United States,"Indianapolis, Indiana","Craig, Kelley & Faultless",https://jurimatch.com/firms/craig-kelley-faultless,Personal injury,"No win, no fee",no,2026-11-01
+United States,"Indianapolis, Indiana",Golitko & Daly,https://jurimatch.com/firms/golitko-daly,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Indianapolis, Indiana",Keller & Keller,https://jurimatch.com/firms/keller-keller,Personal injury,No fee until we win,no,2026-11-01
+United States,"Indianapolis, Indiana",Wilson Kehoe Winingham,https://jurimatch.com/firms/wilson-kehoe-winingham,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Jackson, Mississippi","Martin & Martin, PA",https://jurimatch.com/firms/martin-martin-pa,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Jackson, Mississippi","Pittman, Roberts & Welsh",https://jurimatch.com/firms/pittman-roberts-welsh,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Jackson, Mississippi",Sheppard Law Firm,https://jurimatch.com/firms/sheppard-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Jackson, Wyoming",Spence Law Firm,https://jurimatch.com/firms/spence-law-firm,Personal injury,,no,2026-11-01
+United States,"Kansas City, Missouri","Dollar, Burns, Becker & Hershewe",https://jurimatch.com/firms/dollar-burns-becker-hershewe,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Kansas City, MO",Stueve Siegel Hanson LLP,https://jurimatch.com/firms/stueve-siegel-hanson-llp,Contract dispute; Partnership dispute,Contingency fee,yes,2026-10-06
+United States,"Lafayette, Louisiana",The Glenn Armentor Law Corporation,https://jurimatch.com/firms/the-glenn-armentor-law-corporation,Personal injury,,no,2026-11-01
+United States,"Lansing, Michigan",Sinas Dramis Law Firm,https://jurimatch.com/firms/sinas-dramis-law-firm,Personal injury,No fee unless we win,no,2026-11-01
+United States,"Las Vegas, Nevada",Benson & Bingham,https://jurimatch.com/firms/benson-bingham,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Las Vegas, Nevada",Claggett & Sykes Law Firm,https://jurimatch.com/firms/claggett-sykes-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Las Vegas, Nevada",Eglet Law,https://jurimatch.com/firms/eglet-law,Personal injury; Class action,Contingency fee,yes,2026-11-01
+United States,"Las Vegas, Nevada",Ladah Law Firm,https://jurimatch.com/firms/ladah-law-firm,Personal injury,No fee until we win; free consultation,no,2026-11-01
+United States,"Lawrenceville, New Jersey",Stark & Stark,https://jurimatch.com/firms/stark-stark,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Little Rock, Arkansas",Minton Law Firm,https://jurimatch.com/firms/minton-law-firm,Personal injury; Insurance claim,,no,2026-11-01
+United States,"Los Angeles, California",McNicholas & McNicholas,https://jurimatch.com/firms/mcnicholas-mcnicholas,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Los Angeles, California",Wilshire Law Firm,https://jurimatch.com/firms/wilshire-law-firm,Personal injury; Employment claim; Class action,No fees unless you get paid,no,2026-11-01
+United States,"Louisville, Kentucky",Becker Law Office,https://jurimatch.com/firms/becker-law-office,Personal injury,,no,2026-11-01
+United States,"Louisville, Kentucky",Gray & White Law,https://jurimatch.com/firms/gray-white-law,Personal injury,,no,2026-11-01
+United States,"Louisville, Kentucky",Isaacs & Isaacs,https://jurimatch.com/firms/isaacs-isaacs,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Loveland, OH",Wolterman Law Office,https://jurimatch.com/firms/wolterman-law-office,Contract dispute; Partnership dispute,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Madison, Wisconsin","Gingras, Thomsen & Wachs",https://jurimatch.com/firms/gingras-thomsen-wachs,Personal injury; Medical negligence; Employment claim,Contingency fee,yes,2026-11-01
+United States,"Mayfield Heights, Ohio",Elk + Elk,https://jurimatch.com/firms/elk-elk,Personal injury,No fees unless you win,no,2026-11-01
+United States,"Mesquite, Texas",Ted B. Lyon & Associates,https://jurimatch.com/firms/ted-b-lyon-associates,Personal injury,Contingency fee,yes,2026-11-01
+United States,Miami,Business Trial Group (Morgan & Morgan),https://jurimatch.com/firms/business-trial-group-morgan-morgan,Contract dispute; Fraud; Partnership dispute,Contingency fee,yes,2026-10-06
+United States,"Miami, Florida",Leesfield Scolaro,https://jurimatch.com/firms/leesfield-scolaro,Personal injury,,no,2026-11-01
+United States,"Miami, Florida",Robles & Associates,https://jurimatch.com/firms/robles-associates,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Milford, Connecticut",Carter Mario Injury Lawyers,https://jurimatch.com/firms/carter-mario-injury-lawyers,Personal injury,,no,2026-11-01
+United States,"Milton, Massachusetts",Keches Law Group,https://jurimatch.com/firms/keches-law-group,Personal injury,You don't pay US anything unless we win,no,2026-11-01
+United States,"Milwaukee, Wisconsin",Habush Habush & Rottier,https://jurimatch.com/firms/habush-habush-rottier,Personal injury,,no,2026-11-01
+United States,"Milwaukee, Wisconsin",Hupy and Abraham,https://jurimatch.com/firms/hupy-and-abraham,Personal injury,,no,2026-11-01
+United States,"Milwaukee, Wisconsin",Murphy & Prachthauser,https://jurimatch.com/firms/murphy-prachthauser,Personal injury,,no,2026-11-01
+United States,Minneapolis,Anthony Ostlund Louwagie Dressen & Boylan P.A.,https://jurimatch.com/firms/anthony-ostlund-louwagie-dressen-boylan-p-a,Contract dispute; Fraud; Partnership dispute; Professional negligence,Contingency fee; Hybrid (fixed fee plus success fee),yes,2026-10-06
+United States,"Minneapolis, Minnesota",Ciresi Conlin,https://jurimatch.com/firms/ciresi-conlin,Medical negligence; Personal injury,Contingency fee,yes,2026-11-01
+United States,"Minneapolis, Minnesota",Meshbesher & Spence,https://jurimatch.com/firms/meshbesher-spence,Personal injury,,no,2026-11-01
+United States,"Minneapolis, Minnesota","Schwebel, Goetz & Sieben",https://jurimatch.com/firms/schwebel-goetz-sieben,Personal injury,No fee unless you win,no,2026-11-01
+United States,"Minnetonka, Minnesota",Fields Law,https://jurimatch.com/firms/fields-law,Insurance claim; Personal injury,No fee unless we win. period.,no,2026-11-01
+United States,"Murray, Utah",Siegfried & Jensen,https://jurimatch.com/firms/siegfried-jensen,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Nampa, Idaho",Skaug Law,https://jurimatch.com/firms/skaug-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Nashville, Tennessee",Hughes & Coleman,https://jurimatch.com/firms/hughes-coleman,Personal injury,No fees unless you get paid,no,2026-11-01
+United States,"Nashville, Tennessee",Rocky McElhaney Law Firm,https://jurimatch.com/firms/rocky-mcelhaney-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Nashville, Tennessee",The Higgins Firm,https://jurimatch.com/firms/the-higgins-firm,Personal injury,,no,2026-11-01
+United States,"New Haven, Connecticut",Kennedy Johnson Schwab & Roberge,https://jurimatch.com/firms/kennedy-johnson-schwab-roberge,Personal injury,Contingency fee,yes,2026-11-01
+United States,"New Orleans, Louisiana",Huber Thomas Law,https://jurimatch.com/firms/huber-thomas-law,Personal injury,,no,2026-11-01
+United States,New York,Bernstein Litowitz Berger & Grossmann (BLB&G),https://jurimatch.com/firms/bernstein-litowitz-berger-grossmann-blb-g,Fraud; Partnership dispute; Class action; Investment fraud,Contingency fee,yes,2026-10-06
+United States,New York,Lex Ferenda Litigation Funding,https://jurimatch.com/firms/lex-ferenda-litigation-funding,Contract dispute,,no,2026-11-01
+United States,New York,Validity Finance,https://jurimatch.com/firms/validity-finance,IP dispute; Contract dispute,,no,2026-11-01
+United States,"New York, New York",Hach & Rose,https://jurimatch.com/firms/hach-rose,Personal injury,,no,2026-11-01
+United States,"New York, New York","Pazer, Epstein, Jaffe, Fein & Gozenput",https://jurimatch.com/firms/pazer-epstein-jaffe-fein-gozenput,Personal injury,,no,2026-11-01
+United States,"New York, NY",MDF Law PLLC,https://jurimatch.com/firms/mdf-law-pllc,Crypto fraud; Investment fraud; Fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"New York, NY",Morelli Law Firm,https://jurimatch.com/firms/morelli-law-firm,Contract dispute; Partnership dispute; IP dispute,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"New York, NY",Napoli Shkolnik PLLC,https://jurimatch.com/firms/napoli-shkolnik-pllc,Contract dispute; Investment fraud; Partnership dispute; Class action,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"New York, NY",Sallah Astarita & Cox,https://jurimatch.com/firms/sallah-astarita-cox,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"New York, NY",Zamansky LLC,https://jurimatch.com/firms/zamansky-llc,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Newport Beach, California",Bisnar Chase,https://jurimatch.com/firms/bisnar-chase,Personal injury; Class action,No fee if we don't win,no,2026-11-01
+United States,"Norfolk, Virginia",Cooper Hurley Injury Lawyers,https://jurimatch.com/firms/cooper-hurley-injury-lawyers,Personal injury,You pay nothing until we win,no,2026-11-01
+United States,"Oklahoma City, Oklahoma",Fulmer Sill,https://jurimatch.com/firms/fulmer-sill,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Oklahoma City, Oklahoma",Hasbrook Law,https://jurimatch.com/firms/hasbrook-law,Personal injury,Free case review; no fee unless we win,no,2026-11-01
+United States,"Oklahoma City, Oklahoma",Parrish DeVaughn Injury Lawyers,https://jurimatch.com/firms/parrish-devaughn-injury-lawyers,Personal injury,You don't pay unless we win,no,2026-11-01
+United States,"Omaha, Nebraska","Hauptman, O'Brien, Wolf & Lathrop",https://jurimatch.com/firms/hauptman-o-brien-wolf-lathrop,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Omaha, Nebraska",Hope Law Firm,https://jurimatch.com/firms/hope-law-firm,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Omaha, Nebraska",Law Office of Matthew A. Lathrop,https://jurimatch.com/firms/law-office-of-matthew-a-lathrop,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Omaha, Nebraska",MSMC Injury Lawyers,https://jurimatch.com/firms/msmc-injury-lawyers,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Omaha, Nebraska",Rensch & Rensch Law,https://jurimatch.com/firms/rensch-rensch-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Orlando, Florida",Dan Newlin Injury Attorneys,https://jurimatch.com/firms/dan-newlin-injury-attorneys,Personal injury,Pay nothing until we win,no,2026-11-01
+United States,"Philadelphia, PA",Guiliano Law Group PC,https://jurimatch.com/firms/guiliano-law-group-pc,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Philadelphia, Pennsylvania",Feldman Shepherd,https://jurimatch.com/firms/feldman-shepherd,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Philadelphia, Pennsylvania",Kline & Specter,https://jurimatch.com/firms/kline-specter,Personal injury; Medical negligence; Class action,Contingency fee,yes,2026-11-01
+United States,"Philadelphia, Pennsylvania",Rosenbaum & Associates,https://jurimatch.com/firms/rosenbaum-associates,Medical negligence; Personal injury,,no,2026-11-01
+United States,"Philadelphia, Pennsylvania",Saltz Mongeluzzi & Bendesky,https://jurimatch.com/firms/saltz-mongeluzzi-bendesky,Personal injury,Our clients don't get paid unless we win,no,2026-11-01
+United States,Phoenix,McCune Law Group,https://jurimatch.com/firms/mccune-law-group,Contract dispute; Fraud; Class action,Contingency fee,yes,2026-10-06
+United States,"Phoenix, Arizona",Lerner and Rowe Injury Attorneys,https://jurimatch.com/firms/lerner-and-rowe-injury-attorneys,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Phoenix, Arizona",Phillips Law Group,https://jurimatch.com/firms/phillips-law-group,Personal injury,No fee unless we win,no,2026-11-01
+United States,"Phoenix, Arizona",The Husband & Wife Law Team (Breyer Law),https://jurimatch.com/firms/the-husband-wife-law-team-breyer-law,Personal injury,$0 fee unless we win,no,2026-11-01
+United States,"Phoenix, Arizona",Torgenson Law,https://jurimatch.com/firms/torgenson-law,Personal injury,There is no charge unless we win,no,2026-11-01
+United States,"Pikeville, Kentucky",Gary C. Johnson P.S.C.,https://jurimatch.com/firms/gary-c-johnson-p-s-c,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Pittsburgh, Pennsylvania",Edgar Snyder & Associates,https://jurimatch.com/firms/edgar-snyder-associates,Personal injury,,no,2026-11-01
+United States,Plano,Certum Group,https://jurimatch.com/firms/certum-group,Contract dispute; IP dispute; Class action; Investment fraud; Real estate dispute,Litigation funding,no,2026-11-01
+United States,"Port Washington, New York",Parker Waichman LLP,https://jurimatch.com/firms/parker-waichman-llp,Personal injury; Class action,Contingency fee,yes,2026-11-01
+United States,"Portland, Maine",Garmey Law,https://jurimatch.com/firms/garmey-law,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Portland, Maine",Law Offices of Joe Bornstein,https://jurimatch.com/firms/law-offices-of-joe-bornstein,Personal injury,,no,2026-11-01
+United States,"Portland, Oregon",Paulson Coletti Trial Attorneys,https://jurimatch.com/firms/paulson-coletti-trial-attorneys,Personal injury,Zero fees unless we win your case,no,2026-11-01
+United States,"Providence, Rhode Island",DiLibero Injury Law,https://jurimatch.com/firms/dilibero-injury-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Providence, Rhode Island",Louis W. Grande Injury Lawyer,https://jurimatch.com/firms/louis-w-grande-injury-lawyer,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Raleigh, North Carolina",Hardison & Cochran,https://jurimatch.com/firms/hardison-cochran,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Raleigh, North Carolina",Martin & Jones,https://jurimatch.com/firms/martin-jones,Personal injury; Medical negligence,No fees unless we win,no,2026-11-01
+United States,"Raleigh, North Carolina",Whitley Law Firm,https://jurimatch.com/firms/whitley-law-firm,Personal injury,,no,2026-11-01
+United States,"Richmond, Virginia",Allen & Allen,https://jurimatch.com/firms/allen-allen,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Richmond, Virginia",Marks & Harrison,https://jurimatch.com/firms/marks-harrison,Personal injury,,no,2026-11-01
+United States,"Rock Hill, South Carolina","McGowan, Hood, Felder & Phillips",https://jurimatch.com/firms/mcgowan-hood-felder-phillips,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Roseland, New Jersey",Mazie Slater Katz & Freeman,https://jurimatch.com/firms/mazie-slater-katz-freeman,Personal injury; Medical negligence; Class action,Contingency fee,yes,2026-11-01
+United States,"Salem, Oregon",The Gatti Law Firm,https://jurimatch.com/firms/the-gatti-law-firm,Personal injury,"No win, no fee",no,2026-11-01
+United States,"Salisbury, North Carolina",Wallace & Graham,https://jurimatch.com/firms/wallace-graham,Personal injury; Class action,Contingency fee,yes,2026-11-01
+United States,"Salt Lake City, Utah",Dewsnup King Olsen Worel (DKOW),https://jurimatch.com/firms/dewsnup-king-olsen-worel-dkow,Personal injury; Medical negligence,,no,2026-11-01
+United States,"Salt Lake City, Utah",Robert J. DeBry & Associates,https://jurimatch.com/firms/robert-j-debry-associates,Personal injury,No fee unless we win your case,no,2026-11-01
+United States,"Salt Lake City, Utah",Younker Hyde Macfarlane,https://jurimatch.com/firms/younker-hyde-macfarlane,Personal injury; Medical negligence,,no,2026-11-01
+United States,"San Antonio, Texas",Thomas J. Henry Law,https://jurimatch.com/firms/thomas-j-henry-law,Personal injury; Class action,"No win, no fee",yes,2026-11-01
+United States,"San Antonio, TX",Carabin Shaw,https://jurimatch.com/firms/carabin-shaw,Contract dispute; Partnership dispute,Contingency fee,yes,2026-10-06
+United States,"San Francisco, California","Walkup, Melodia, Kelly & Schoenberger",https://jurimatch.com/firms/walkup-melodia-kelly-schoenberger,Personal injury; Medical negligence,,no,2026-11-01
+United States,"Santa Ana, CA",Aitken * Aitken * Cohn,https://jurimatch.com/firms/aitken-aitken-cohn,Contract dispute; Partnership dispute,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Scottsdale, Arizona",Knapp & Roberts,https://jurimatch.com/firms/knapp-roberts,Personal injury; Medical negligence,No attorney fees unless we win,no,2026-11-01
+United States,"Seattle, Washington",Davis Law Group,https://jurimatch.com/firms/davis-law-group,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Seattle, Washington",PCVA Law,https://jurimatch.com/firms/pcva-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Seattle, Washington",Schroeter Goldmark & Bender,https://jurimatch.com/firms/schroeter-goldmark-bender,Class action; Employment claim; Consumer claim; Personal injury,Contingency fee,yes,2026-11-01
+United States,"Shrewsbury, New Jersey",Shebell & Shebell,https://jurimatch.com/firms/shebell-shebell,Personal injury; Medical negligence,No fee unless we win,no,2026-11-01
+United States,"Sioux Falls, South Dakota",Janklow Abdallah,https://jurimatch.com/firms/janklow-abdallah,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Southfield, Michigan",Fieger Law,https://jurimatch.com/firms/fieger-law,Personal injury; Medical negligence,No fees unless we win for you,no,2026-11-01
+United States,"Springfield, Vermont",Brady Donahue,https://jurimatch.com/firms/brady-donahue,Personal injury,Contingency fee,yes,2026-11-01
+United States,"St. Charles, Illinois",Meyers & Flowers,https://jurimatch.com/firms/meyers-flowers,Personal injury; Medical negligence; Class action,No fee unless we win or settle your case,no,2026-11-01
+United States,St. Louis,Brown & Crouppen,https://jurimatch.com/firms/brown-crouppen,Personal injury,Contingency fee,yes,2026-11-01
+United States,St. Louis,Hullverson Law Firm,https://jurimatch.com/firms/hullverson-law-firm,Personal injury,Contingency fee,yes,2026-11-01
+United States,St. Louis,Schultz & Myers,https://jurimatch.com/firms/schultz-myers,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Stamford, Connecticut",Silver Golub & Teitell LLP,https://jurimatch.com/firms/silver-golub-teitell-llp,Class action; Personal injury,Contingency fee,yes,2026-11-01
+United States,"Studio City, CA","Bakhtiari & Harrison, P.C.",https://jurimatch.com/firms/bakhtiari-harrison-p-c,Investment fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"Tacoma, Washington",Connelly Law Offices,https://jurimatch.com/firms/connelly-law-offices,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Tacoma, Washington",Washington Law Center,https://jurimatch.com/firms/washington-law-center,Personal injury,You pay nothing until we win,no,2026-11-01
+United States,"Timonium, Maryland",Gilman & Bedigian,https://jurimatch.com/firms/gilman-bedigian,Medical negligence,,no,2026-11-01
+United States,"Toledo, Ohio",Charles E. Boyk Law Offices,https://jurimatch.com/firms/charles-e-boyk-law-offices,Personal injury,,no,2026-11-01
+United States,"Union Springs, Alabama",Jinks Crow,https://jurimatch.com/firms/jinks-crow,Personal injury,,no,2026-11-01
+United States,"Uniondale, New York",Duffy & Duffy,https://jurimatch.com/firms/duffy-duffy,Medical negligence; Personal injury,,no,2026-11-01
+United States,"Virginia Beach, Virginia",Breit Biniazan,https://jurimatch.com/firms/breit-biniazan,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Virginia Beach, Virginia","Shapiro, Washburn & Sharp",https://jurimatch.com/firms/shapiro-washburn-sharp,Personal injury,"No win, no fee",yes,2026-11-01
+United States,"Washington, District of Columbia",Jack H. Olender & Associates,https://jurimatch.com/firms/jack-h-olender-associates,Medical negligence; Personal injury,No fee unless we win; free consultation,no,2026-11-01
+United States,"Washington, District of Columbia",Koonz McKenney Johnson & DePaolis,https://jurimatch.com/firms/koonz-mckenney-johnson-depaolis,Personal injury,,no,2026-11-01
+United States,"Washington, District of Columbia",Nace Law Group,https://jurimatch.com/firms/nace-law-group,Medical negligence; Personal injury,Contingency fee,yes,2026-11-01
+United States,"West Des Moines, Iowa","Hixson & Brown, P.C.",https://jurimatch.com/firms/hixson-brown-p-c,Medical negligence; Personal injury,No fee unless we win,no,2026-11-01
+United States,"West Palm Beach, FL","Lesser, Landy, Smith & Siegel, PLLC",https://jurimatch.com/firms/lesser-landy-smith-siegel-pllc,Contract dispute,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"West Palm Beach, Florida","Lytal, Reiter, Smith, Ivey & Fronrath",https://jurimatch.com/firms/lytal-reiter-smith-ivey-fronrath,Personal injury,No fee unless we win,no,2026-11-01
+United States,"Westlake Village, CA",Ringler Law Corporation,https://jurimatch.com/firms/ringler-law-corporation,Fraud,"Contingency fee; No win, no fee",yes,2026-10-06
+United States,"White River Junction, Vermont",Sabbeth Law,https://jurimatch.com/firms/sabbeth-law,Personal injury,Contingency fee,yes,2026-11-01
+United States,"Wichita, Kansas",Brad Pistotnik Law (Bull Attorneys),https://jurimatch.com/firms/brad-pistotnik-law-bull-attorneys,Personal injury,,no,2026-11-01
+United States,"Wichita, Kansas",DeVaughn James Injury Lawyers,https://jurimatch.com/firms/devaughn-james-injury-lawyers,Personal injury,No obligation or fees unless we win,no,2026-11-01
+United States,"Wilmington, Delaware",Daniel D. Martin & Associates,https://jurimatch.com/firms/daniel-d-martin-associates,Personal injury; Medical negligence,Contingency fee,yes,2026-11-01
+United States,"Yakima, Washington",Tamaki Law,https://jurimatch.com/firms/tamaki-law,Personal injury,Contingency fee,yes,2026-11-01

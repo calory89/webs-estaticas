@@ -1,0 +1,162 @@
+{
+ "date": "2026-11-17T13:47:53Z",
+ "tool": "OWASP ZAP baseline (passive scan, spider 3 minutes)",
+ "target": "https://kolaboro.com",
+ "zap_version": "2.17.0",
+ "by_risk": {
+  "high": 0,
+  "medium": 5,
+  "low": 7,
+  "informational": 9
+ },
+ "ok": true,
+ "alerts": [
+  {
+   "risk": "medium",
+   "name": "CSP: Wildcard Directive",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "10055"
+  },
+  {
+   "risk": "medium",
+   "name": "CSP: style-src unsafe-inline",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "10055"
+  },
+  {
+   "risk": "medium",
+   "name": "Cross-Domain Misconfiguration",
+   "instances": 5,
+   "cwe": "264",
+   "rule": "10098"
+  },
+  {
+   "risk": "medium",
+   "name": "Source Code Disclosure - Python",
+   "instances": 1,
+   "cwe": "540",
+   "rule": "10099"
+  },
+  {
+   "risk": "medium",
+   "name": "Sub Resource Integrity Attribute Missing",
+   "instances": 1,
+   "cwe": "345",
+   "rule": "90003"
+  },
+  {
+   "risk": "low",
+   "name": "CSP: Notices",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "10055"
+  },
+  {
+   "risk": "low",
+   "name": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "90004"
+  },
+  {
+   "risk": "low",
+   "name": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+   "instances": 4,
+   "cwe": "693",
+   "rule": "90004"
+  },
+  {
+   "risk": "low",
+   "name": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+   "instances": 3,
+   "cwe": "693",
+   "rule": "90004"
+  },
+  {
+   "risk": "low",
+   "name": "Information Disclosure - Debug Error Messages",
+   "instances": 12,
+   "cwe": "1295",
+   "rule": "10023"
+  },
+  {
+   "risk": "low",
+   "name": "Permissions Policy Header Not Set",
+   "instances": 5,
+   "cwe": "693",
+   "rule": "10063"
+  },
+  {
+   "risk": "low",
+   "name": "Timestamp Disclosure - Unix",
+   "instances": 5,
+   "cwe": "497",
+   "rule": "10096"
+  },
+  {
+   "risk": "informational",
+   "name": "Authentication Request Identified",
+   "instances": 1,
+   "cwe": "-1",
+   "rule": "10111"
+  },
+  {
+   "risk": "informational",
+   "name": "Content Security Policy (CSP) Report-Only Header Found",
+   "instances": 5,
+   "cwe": "693",
+   "rule": "10038"
+  },
+  {
+   "risk": "informational",
+   "name": "Information Disclosure - Sensitive Information in URL",
+   "instances": 5,
+   "cwe": "598",
+   "rule": "10024"
+  },
+  {
+   "risk": "informational",
+   "name": "Information Disclosure - Suspicious Comments",
+   "instances": 14,
+   "cwe": "615",
+   "rule": "10027"
+  },
+  {
+   "risk": "informational",
+   "name": "Modern Web Application",
+   "instances": 5,
+   "cwe": "-1",
+   "rule": "10109"
+  },
+  {
+   "risk": "informational",
+   "name": "Re-examine Cache-control Directives",
+   "instances": 4,
+   "cwe": "525",
+   "rule": "10015"
+  },
+  {
+   "risk": "informational",
+   "name": "Retrieved from Cache",
+   "instances": 1,
+   "cwe": "525",
+   "rule": "10050"
+  },
+  {
+   "risk": "informational",
+   "name": "Storable but Non-Cacheable Content",
+   "instances": 5,
+   "cwe": "524",
+   "rule": "10049"
+  },
+  {
+   "risk": "informational",
+   "name": "User Controllable HTML Element Attribute (Potential XSS)",
+   "instances": 6,
+   "cwe": "20",
+   "rule": "10031"
+  }
+ ]
+}

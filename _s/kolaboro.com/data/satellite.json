@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-01",
- "source": "Copernicus Sentinel-2 L2A, Copernicus Data Space Ecosystem",
- "processing_units": 1788.9,
+ "updated": "2026-11-05",
+ "source": "Copernicus Sentinel-2 L2A and Sentinel-1 GRD, Copernicus Data Space Ecosystem",
+ "processing_units": 2040.7,
  "sites": [
   {
    "id": "bali-seseh",
@@ -12,53 +12,79 @@
    "box_km": 1.1,
    "periods": [
     {
-     "label": "2023 dry season",
-     "key": "dry2023",
-     "from": "2023-04-01",
-     "to": "2023-09-30",
-     "vegetation_pct": 74.9,
-     "clear_pct": 100
-    },
-    {
-     "label": "2024 dry season",
-     "key": "dry2024",
-     "from": "2024-04-01",
-     "to": "2024-09-30",
-     "vegetation_pct": 70.2,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 8.8,
-     "changed_since_previous_pct": 13.7
-    },
-    {
      "label": "2025 dry season",
      "key": "dry2025",
      "from": "2025-04-01",
      "to": "2025-09-30",
      "vegetation_pct": 57.1,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 15.8,
-     "changed_since_previous_pct": 11.1
-    },
-    {
-     "label": "2026 dry season",
-     "key": "dry2026",
-     "from": "2026-04-01",
-     "to": "2026-09-30",
-     "vegetation_pct": 63.4,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 14.6,
-     "changed_since_previous_pct": 8.3
-    },
-    {
-     "label": "Last 120 days",
-     "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 70.7,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 39,
+      "vv_db": -9.95,
+      "vh_db": -16.29,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 43,
+      "vv_db": -9.52,
+      "vh_db": -15.92,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 55,
+      "vv_db": -9.47,
+      "vh_db": -16.07,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 46,
+      "vv_db": -9.26,
+      "vh_db": -15.96,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 22,
+      "vv_db": -9.7,
+      "vh_db": -16.44,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.25,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.69
+   }
   },
   {
    "id": "bali-ungasan",
@@ -97,25 +123,79 @@
      "changed_since_previous_pct": 13.8
     },
     {
-     "label": "2026 dry season",
-     "key": "dry2026",
-     "from": "2026-04-01",
-     "to": "2026-09-30",
-     "vegetation_pct": 39.8,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 12.7,
-     "changed_since_previous_pct": 17.1
-    },
-    {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 13.9,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 12.6,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 39,
+      "vv_db": -7.84,
+      "vh_db": -15.05,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 43,
+      "vv_db": -8.11,
+      "vh_db": -15.17,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 55,
+      "vv_db": -7.68,
+      "vh_db": -14.98,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 40,
+      "vv_db": -7.42,
+      "vh_db": -14.8,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 15,
+      "vv_db": -7.7,
+      "vh_db": -15.09,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.14,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.42
+   }
   },
   {
    "id": "bali-pererenan",
@@ -126,32 +206,12 @@
    "box_km": 1.1,
    "periods": [
     {
-     "label": "2023 dry season",
-     "key": "dry2023",
-     "from": "2023-04-01",
-     "to": "2023-09-30",
-     "vegetation_pct": 52.9,
-     "clear_pct": 100
-    },
-    {
-     "label": "2024 dry season",
-     "key": "dry2024",
-     "from": "2024-04-01",
-     "to": "2024-09-30",
-     "vegetation_pct": 50.8,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 6.7,
-     "changed_since_previous_pct": 8.3
-    },
-    {
      "label": "2025 dry season",
      "key": "dry2025",
      "from": "2025-04-01",
      "to": "2025-09-30",
      "vegetation_pct": 56.1,
-     "clear_pct": 100,
-     "cleared_since_first_pct": 6.5,
-     "changed_since_previous_pct": 5.2
+     "clear_pct": 100
     },
     {
      "label": "2026 dry season",
@@ -160,19 +220,83 @@
      "to": "2026-09-30",
      "vegetation_pct": 47.4,
      "clear_pct": 100,
-     "cleared_since_first_pct": 10.7,
+     "cleared_since_first_pct": 6.1,
      "changed_since_previous_pct": 6.4
     },
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 46.4,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 39,
+      "vv_db": -8.08,
+      "vh_db": -14.86,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 43,
+      "vv_db": -7.85,
+      "vh_db": -14.51,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 55,
+      "vv_db": -7.72,
+      "vh_db": -14.57,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 46,
+      "vv_db": -7.69,
+      "vh_db": -14.49,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 22,
+      "vv_db": -7.84,
+      "vh_db": -14.67,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.24,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.39
+   }
   },
   {
    "id": "dubai-dubai-south",
@@ -223,13 +347,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 0.6,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 30,
+      "vv_db": -13.95,
+      "vh_db": -23.52,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 31,
+      "vv_db": -14.36,
+      "vh_db": -23.29,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 41,
+      "vv_db": -14.27,
+      "vh_db": -23.19,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 67,
+      "vv_db": -13.5,
+      "vh_db": -22.08,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -13.34,
+      "vh_db": -22.05,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.61,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.45
+   }
   },
   {
    "id": "dubai-jvc",
@@ -280,13 +468,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 8.4,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 30,
+      "vv_db": -6.88,
+      "vh_db": -14.07,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 31,
+      "vv_db": -6.04,
+      "vh_db": -13.45,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 41,
+      "vv_db": -5.77,
+      "vh_db": -13.11,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 67,
+      "vv_db": -5.67,
+      "vh_db": -12.85,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -4.89,
+      "vh_db": -12.46,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 1.99,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 1.21
+   }
   },
   {
    "id": "abudhabi-saadiyat",
@@ -337,13 +589,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 14.6,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 14.7,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 45,
+      "vv_db": -14.94,
+      "vh_db": -21.74,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 45,
+      "vv_db": -14.84,
+      "vh_db": -21.6,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 62,
+      "vv_db": -14.87,
+      "vh_db": -21.68,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 96,
+      "vv_db": -13.77,
+      "vh_db": -19.79,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 60,
+      "vv_db": -13.84,
+      "vh_db": -19.89,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 1.1,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 1.17
+   }
   },
   {
    "id": "rak-marjan",
@@ -394,13 +710,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 0.1,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 30,
+      "vv_db": -20.77,
+      "vh_db": -31.7,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 31,
+      "vv_db": -20.99,
+      "vh_db": -31.44,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 41,
+      "vv_db": -21.05,
+      "vh_db": -30.34,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 67,
+      "vv_db": -21.24,
+      "vh_db": -30.1,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -22.05,
+      "vh_db": -30.23,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": -1.28,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.47
+   }
   },
   {
    "id": "phuket-bangtao",
@@ -451,13 +831,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 31.2,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 31.3,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 27,
+      "vv_db": -9.7,
+      "vh_db": -15.98,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 24,
+      "vv_db": -9.33,
+      "vh_db": -15.62,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 22,
+      "vv_db": -9.16,
+      "vh_db": -15.81,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 23,
+      "vv_db": -9.16,
+      "vh_db": -15.91,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 12,
+      "vv_db": -8.95,
+      "vh_db": -15.98,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.75,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.54
+   }
   },
   {
    "id": "phuket-rawai",
@@ -508,13 +952,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 36.1,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 37.0,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 27,
+      "vv_db": -8.39,
+      "vh_db": -15.1,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 24,
+      "vv_db": -8.22,
+      "vh_db": -14.91,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 22,
+      "vv_db": -7.84,
+      "vh_db": -14.75,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 23,
+      "vv_db": -7.88,
+      "vh_db": -14.83,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 12,
+      "vv_db": -7.51,
+      "vh_db": -14.59,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.88,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.51
+   }
   },
   {
    "id": "lombok-kuta",
@@ -565,13 +1073,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 15.3,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 14.2,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 24,
+      "vv_db": -10.89,
+      "vh_db": -17.91,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 28,
+      "vv_db": -11.2,
+      "vh_db": -18.29,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 40,
+      "vv_db": -10.63,
+      "vh_db": -17.49,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 38,
+      "vv_db": -11.03,
+      "vh_db": -17.84,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 18,
+      "vv_db": -11.61,
+      "vh_db": -18.37,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": -0.72,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.14
+   }
   },
   {
    "id": "tulum",
@@ -622,13 +1194,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 26.9,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 27.2,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 28,
+      "vv_db": -7.95,
+      "vh_db": -14.53,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 31,
+      "vv_db": -7.67,
+      "vh_db": -14.28,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 28,
+      "vv_db": -7.85,
+      "vh_db": -14.47,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 28,
+      "vv_db": -8.11,
+      "vh_db": -14.67,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 20,
+      "vv_db": -7.77,
+      "vh_db": -14.46,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.18,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.16
+   }
   },
   {
    "id": "playa-del-carmen",
@@ -679,13 +1315,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 37.1,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 38.1,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 28,
+      "vv_db": -8.56,
+      "vh_db": -14.39,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 31,
+      "vv_db": -8.18,
+      "vh_db": -14.0,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 28,
+      "vv_db": -8.4,
+      "vh_db": -14.09,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 28,
+      "vv_db": -8.57,
+      "vh_db": -14.17,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 20,
+      "vv_db": -8.35,
+      "vh_db": -14.04,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.21,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.01
+   }
   },
   {
    "id": "costa-del-sol-estepona",
@@ -736,13 +1436,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 20.8,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 47,
+      "vv_db": -10.7,
+      "vh_db": -17.12,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 46,
+      "vv_db": -10.59,
+      "vh_db": -17.04,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 58,
+      "vv_db": -10.37,
+      "vh_db": -16.54,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 67,
+      "vv_db": -10.27,
+      "vh_db": -16.53,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 39,
+      "vv_db": -10.57,
+      "vh_db": -16.89,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.13,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.43
+   }
   },
   {
    "id": "algarve-lagos",
@@ -793,13 +1557,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 4.5,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 46,
+      "vv_db": -7.84,
+      "vh_db": -14.62,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 45,
+      "vv_db": -7.84,
+      "vh_db": -14.64,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 60,
+      "vv_db": -7.99,
+      "vh_db": -15.05,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 67,
+      "vv_db": -7.88,
+      "vh_db": -14.93,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -7.75,
+      "vh_db": -14.82,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.09,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.04
+   }
   },
   {
    "id": "antalya-altintas",
@@ -850,13 +1678,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 16.9,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 16.7,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 47,
+      "vv_db": -9.61,
+      "vh_db": -15.94,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 45,
+      "vv_db": -9.72,
+      "vh_db": -16.02,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 59,
+      "vv_db": -9.81,
+      "vh_db": -15.95,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 70,
+      "vv_db": -9.78,
+      "vh_db": -15.83,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -9.72,
+      "vh_db": -15.87,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": -0.11,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.17
+   }
   },
   {
    "id": "istanbul-basaksehir",
@@ -907,13 +1799,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 4.4,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 4.3,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 46,
+      "vv_db": -6.6,
+      "vh_db": -14.04,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 46,
+      "vv_db": -6.7,
+      "vh_db": -14.09,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 61,
+      "vv_db": -6.58,
+      "vh_db": -13.99,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 71,
+      "vv_db": -6.48,
+      "vh_db": -13.75,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 40,
+      "vv_db": -5.95,
+      "vh_db": -13.29,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.65,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.12
+   }
   },
   {
    "id": "northern-cyprus-esentepe",
@@ -964,13 +1920,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 13.4,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 61,
+      "vv_db": -10.42,
+      "vh_db": -16.41,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 61,
+      "vv_db": -10.44,
+      "vh_db": -16.37,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 89,
+      "vv_db": -10.33,
+      "vh_db": -16.38,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 95,
+      "vv_db": -9.86,
+      "vh_db": -15.94,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 60,
+      "vv_db": -9.86,
+      "vh_db": -15.98,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.56,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.56
+   }
   },
   {
    "id": "montenegro-lustica",
@@ -1021,13 +2041,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 37.0,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 36.8,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 47,
+      "vv_db": -8.62,
+      "vh_db": -14.8,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 46,
+      "vv_db": -8.56,
+      "vh_db": -14.75,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 61,
+      "vv_db": -8.72,
+      "vh_db": -14.82,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 71,
+      "vv_db": -8.68,
+      "vh_db": -14.59,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 39,
+      "vv_db": -8.27,
+      "vh_db": -14.14,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.35,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.06
+   }
   },
   {
    "id": "ras-el-hekma",
@@ -1078,13 +2162,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 0.0,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 45,
+      "vv_db": -18.41,
+      "vh_db": -37.03,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 45,
+      "vv_db": -19.28,
+      "vh_db": -38.3,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 92,
+      "vv_db": -19.38,
+      "vh_db": -39.92,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 96,
+      "vv_db": -18.8,
+      "vh_db": -40.0,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 59,
+      "vv_db": -19.09,
+      "vh_db": -40.0,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": -0.68,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.39
+   }
   },
   {
    "id": "oman-muscat-mouj",
@@ -1135,13 +2283,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 1.8,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 30,
+      "vv_db": -8.08,
+      "vh_db": -16.32,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 29,
+      "vv_db": -8.2,
+      "vh_db": -16.49,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 41,
+      "vv_db": -8.28,
+      "vh_db": -16.34,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 61,
+      "vv_db": -7.89,
+      "vh_db": -16.12,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 35,
+      "vv_db": -8.04,
+      "vh_db": -16.3,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.04,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.19
+   }
   },
   {
    "id": "punta-cana-cap-cana",
@@ -1192,13 +2404,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 42.7,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 42,
+      "vv_db": -10.32,
+      "vh_db": -17.07,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 30,
+      "vv_db": -9.8,
+      "vh_db": -16.4,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 23,
+      "vv_db": -10.08,
+      "vh_db": -16.52,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 35,
+      "vv_db": -10.18,
+      "vh_db": -16.73,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 20,
+      "vv_db": -10.13,
+      "vh_db": -16.63,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.19,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.14
+   }
   },
   {
    "id": "danang-coast",
@@ -1249,13 +2525,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 39.5,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 24,
+      "vv_db": -8.26,
+      "vh_db": -14.55,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 23,
+      "vv_db": -8.27,
+      "vh_db": -14.65,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 37,
+      "vv_db": -8.31,
+      "vh_db": -14.58,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 41,
+      "vv_db": -8.4,
+      "vh_db": -14.57,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 26,
+      "vv_db": -8.0,
+      "vh_db": -14.28,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.26,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.14
+   }
   },
   {
    "id": "johor-forest-city",
@@ -1306,13 +2646,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-08",
+     "to": "2026-11-05",
      "vegetation_pct": 19.4,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 23,
+      "vv_db": -17.03,
+      "vh_db": -24.27,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 22,
+      "vv_db": -17.08,
+      "vh_db": -24.02,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 23,
+      "vv_db": -17.43,
+      "vh_db": -24.41,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 27,
+      "vv_db": -17.0,
+      "vh_db": -24.34,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 18,
+      "vv_db": -16.97,
+      "vh_db": -24.35,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.06,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.03
+   }
   },
   {
    "id": "kampot-cambodia",
@@ -1363,13 +2767,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 35.6,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 35.0,
      "clear_pct": 100
     }
    ],
-   "activity": "active"
+   "activity": "active",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 23,
+      "vv_db": -6.03,
+      "vh_db": -12.45,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 28,
+      "vv_db": -5.49,
+      "vh_db": -12.58,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 52,
+      "vv_db": -5.71,
+      "vh_db": -12.52,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 40,
+      "vv_db": -5.56,
+      "vh_db": -11.94,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 27,
+      "vv_db": -5.64,
+      "vh_db": -11.68,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.39,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 0.47
+   }
   },
   {
    "id": "labuan-bajo",
@@ -1420,13 +2888,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 25.4,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 24.3,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 29,
+      "vv_db": -7.98,
+      "vh_db": -14.18,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 25,
+      "vv_db": -8.06,
+      "vh_db": -14.34,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 27,
+      "vv_db": -7.95,
+      "vh_db": -14.11,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 21,
+      "vv_db": -8.14,
+      "vh_db": -14.3,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 11,
+      "vv_db": -8.67,
+      "vh_db": -14.69,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": -0.69,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": -0.16
+   }
   },
   {
    "id": "zanzibar-paje",
@@ -1477,13 +3009,77 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 17.8,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 18.1,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2023",
+      "label": "2023 dry season",
+      "from": "2023-04-01",
+      "to": "2023-09-30",
+      "acquisitions": 16,
+      "vv_db": -8.65,
+      "vh_db": -15.15,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2024",
+      "label": "2024 dry season",
+      "from": "2024-04-01",
+      "to": "2024-09-30",
+      "acquisitions": 15,
+      "vv_db": -8.26,
+      "vh_db": -14.81,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 44,
+      "vv_db": -7.54,
+      "vh_db": -14.56,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 47,
+      "vv_db": -7.12,
+      "vh_db": -14.27,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 19,
+      "vv_db": -7.34,
+      "vh_db": -14.38,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 1.31,
+    "change_from": "dry2023",
+    "change_to": "latest",
+    "dry_season_change_db": 1.53
+   }
   },
   {
    "id": "mauritius-grand-baie",
@@ -1534,13 +3130,58 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 19.4,
+     "from": "2026-07-08",
+     "to": "2026-11-05",
+     "vegetation_pct": 18.6,
      "clear_pct": 100
     }
    ],
-   "activity": "quiet"
+   "activity": "quiet",
+   "radar": {
+    "source": "Copernicus Sentinel-1 GRD, IW mode, VV+VH, sigma0, orthorectified (Copernicus DEM)",
+    "periods": [
+     {
+      "key": "dry2025",
+      "label": "2025 dry season",
+      "from": "2025-04-01",
+      "to": "2025-09-30",
+      "acquisitions": 13,
+      "vv_db": -17.04,
+      "vh_db": -25.51,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "dry2026",
+      "label": "2026 dry season",
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "acquisitions": 20,
+      "vv_db": -17.05,
+      "vh_db": -25.0,
+      "covered_pct": 100,
+      "image": true
+     },
+     {
+      "key": "latest",
+      "label": "Last 120 days",
+      "from": "2026-07-08",
+      "to": "2026-11-05",
+      "acquisitions": 10,
+      "vv_db": -16.6,
+      "vh_db": -24.65,
+      "covered_pct": 100,
+      "image": true
+     }
+    ],
+    "radar_change_db": 0.44,
+    "change_from": "dry2025",
+    "change_to": "latest",
+    "dry_season_change_db": -0.01
+   }
   }
- ]
+ ],
+ "processing_units_optical": 1705.4,
+ "processing_units_radar": 335.3,
+ "radar_method": "Sentinel-1 GRD IW, VV+VH sigma0 orthorectified, per-pixel median over all acquisitions in the window, then median VV in dB over the box. radar_change_db = latest window minus first window. Built structures usually raise VV backscatter; wet ground, crops and viewing geometry also move it."
 }

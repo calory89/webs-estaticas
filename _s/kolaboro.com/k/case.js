@@ -5,10 +5,11 @@
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function rpc(token, action, payload){ return KB.rpc('kolaboro_case', { p_token: token, p_action: action, p_payload: payload }); }
-  function fmt(t){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(undefined, { day:'numeric', month:'short', year:'numeric' }) + ' · ' + d.toTimeString().slice(0,5); }
+  function fmt(t){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(window.KB_LOCALE || 'en-GB', { day:'numeric', month:'short', year:'numeric' }) + ' · ' + d.toTimeString().slice(0,5); }
   function short(h){ return h ? h.slice(0, 10) + '…' + h.slice(-6) : ''; }
-  function load(s){ return new Promise(function(res, rej){ if (document.querySelector('script[src="' + s + '"]')) { var t = setInterval(function(){ if (window.__kbl && window.__kbl[s]) { clearInterval(t); res(); } }, 50); return; } var e = document.createElement('script'); e.src = s; e.onload = function(){ (window.__kbl = window.__kbl || {})[s] = 1; res(); }; e.onerror = rej; document.head.appendChild(e); }); }
-  function css(h){ if (document.querySelector('link[href="' + h + '"]')) return; var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; document.head.appendChild(l); }
+  var SRI = { 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js': 'sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO', 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css': 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb', 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js': 'sha384-JcnsjUPPylna1s1fvi1u12X5qjY5OL56iySh75FdtrwhO/SWXgMjoVqcKyIIWOLk', 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js': 'sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU' };
+  function load(s){ return new Promise(function(res, rej){ if (document.querySelector('script[src="' + s + '"]')) { var t = setInterval(function(){ if (window.__kbl && window.__kbl[s]) { clearInterval(t); res(); } }, 50); return; } var e = document.createElement('script'); e.src = s; if (SRI[s]) { e.integrity = SRI[s]; e.crossOrigin = 'anonymous'; } e.onload = function(){ (window.__kbl = window.__kbl || {})[s] = 1; res(); }; e.onerror = rej; document.head.appendChild(e); }); }
+  function css(h){ if (document.querySelector('link[href="' + h + '"]')) return; var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; if (SRI[h]) { l.integrity = SRI[h]; l.crossOrigin = 'anonymous'; } document.head.appendChild(l); }
   function fileUrl(f){ return new Promise(function(res){ var r = new FileReader(); r.onload = function(){ res(r.result); }; r.readAsDataURL(f); }); }
   function shrink(src, max, q){ return new Promise(function(res, rej){ var im = new Image(); im.onload = function(){ var s = Math.min(1, max / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); res(c.toDataURL('image/jpeg', q || .85)); }; im.onerror = rej; im.src = src; }); }
   var KIND = { photo: ['📷','Site photo'], document: ['📄','Document'], note: ['📝','Agent note'], satellite: ['🛰','Satellite'], plot: ['📍','Plot map'], report: ['📘','Report'] };
@@ -56,7 +57,7 @@
   function plotHtml(c, x){
     var s = x.sat_last, certArea = x.cert_area_m2 || lastCertArea(x);
     return '<section class="ap-card" id="plot"><h2>Your plot</h2><p class="ap-small ap-muted" style="margin-top:0">Put a pin on your plot (or trace its outline). Your agent\'s photos are checked against this point, and our satellite watch compares it with Sentinel-2 images every time a new cloud-free one is taken.</p>' +
-      '<div id="xmap" class="x-map"></div><div class="x-tools"><button class="ap-btn x-sm x-line" id="xpin">📍 Place pin</button><button class="ap-btn x-sm x-line" id="xdraw">✏️ Trace outline</button><button class="ap-btn x-sm x-line" id="xclr">Clear</button><input id="xsearch" placeholder="Search a place (e.g. Pecatu, Bali)"></div>' +
+      '<div id="xmap" class="x-map"></div><div class="x-tools"><button class="ap-btn x-sm x-line" id="xpin">📍 Place pin</button><button class="ap-btn x-sm x-line" id="xdraw">✏️ Trace outline</button><button class="ap-btn x-sm x-line" id="xclr">Clear</button><input id="xsearch" placeholder="Search a place (town, area or address)"></div>' +
       '<div class="x-area"><div><span>Traced on the map</span><b id="xarea">' + (x.plot_area_m2 ? Math.round(x.plot_area_m2) + ' m²' : '-') + '</b></div><div><span>On the certificate</span><b><input id="xcert" type="number" min="0" value="' + (certArea || '') + '" placeholder="m²"></b></div><div><span>Difference</span><b id="xdiff">—</b></div></div>' +
       '<button class="ap-btn" id="xsave" style="margin-top:10px">Save the plot</button>' +
       '<div class="x-sat">' + (x.lat ? (s ? '<b>🛰 Satellite watch on.</b> Last comparison ' + fmt(s.at) + ': ' + esc(s.summary || '') : '<b>🛰 Satellite watch on.</b> First comparison within 24 hours of saving the plot (Sentinel-2, 10 m per pixel).') : 'Satellite watch starts when you save the plot.') + '</div></section>';
@@ -65,7 +66,8 @@
 
   function sideHtml(c, x){
     return '<section class="ap-card" id="xreport"><h2>Case file</h2><p class="ap-small ap-muted" style="margin-top:0">A PDF of everything in your case today: status, documents read, photos with GPS and time, satellite results and the fingerprint chain, with a QR code anyone can scan to check it wasn\'t changed.</p>' +
-      '<button class="ap-btn" id="xpdf">Download case file (PDF)</button> <button class="ap-btn x-line" id="xjson">Evidence data (JSON)</button></section>' +
+      '<button class="ap-btn" id="xpdf">Download case file (PDF)</button> <button class="ap-btn x-line" id="xjson">Evidence data (JSON)</button>' +
+      '<p class="ap-small ap-muted" style="margin:12px 0 6px">For a lawyer or a court expert: an evidence bundle with an index of exhibits, each one re-hashed on this device, its Bitcoin timestamp, the chain of custody and the public log proof, plus a manifest they can check offline. Built here; only its fingerprint is registered. <a href="/court-file/#case" target="_blank" rel="noopener">What is in it</a></p><button class="ap-btn x-line" id="xcourt">Court-ready evidence bundle</button><div id="xcourtst" class="ap-small ap-muted" aria-live="polite"></div></section>' +
       '<section class="ap-card" id="xshare"><h2>Share your case</h2><p class="ap-small ap-muted" style="margin-top:0">A read-only page for your lawyer, bank or partner: stage, verdict, how many documents and photos are sealed, and the fingerprint chain. No documents, no personal details.</p><label class="ap-small" style="display:flex;gap:8px;align-items:center;margin:0 0 10px"><input type="checkbox" id="xshp" style="width:auto"> Show the project name and our note</label><button class="ap-btn x-sm" id="xshb">Create a share link</button><div id="xsho"></div></section>' +
       '<section class="ap-card"><h2>Emails</h2><form class="ap-form" id="xpref"><label>Language of your emails and reports<select name="lang">' + LANGS.map(function(l){ return '<option value="' + l[0] + '"' + (x.lang === l[0] ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('') + '</select></label>' +
       '<label class="full" style="flex-direction:row;gap:8px;align-items:center;display:flex"><input type="checkbox" name="watch"' + (x.watch ? ' checked' : '') + ' style="width:auto"> Email me when the satellite sees changes on my plot</label><div class="full"><button class="ap-btn x-sm" type="submit">Save</button></div></form></section>';
@@ -86,11 +88,12 @@
 
   function bind(c, x, token, demo){
     var ev = x.evidence || [];
-    if ($('xchk')) KBChain(c.id, ev).then(function(r){ $('xchk').innerHTML = r.ok ? '✓ chain verified in your browser' : '⚠ ' + r.bad.length + ' item(s) do not match'; $('xchk').style.color = r.ok ? '#1F8A5B' : '#B42318'; });
+    if ($('xchk')) KBChain(c.id, ev).then(function(r){ $('xchk').innerHTML = r.ok ? '✓ chain verified in your browser' : '⚠ ' + r.bad.length + ' item(s) do not match'; $('xchk').style.color = r.ok ? '#0B7A55' : '#B42318'; });
     document.querySelectorAll('[data-v]').forEach(function(btn){ btn.onclick = function(){ view(token, c.id, +btn.dataset.v); }; });
     $('xadd').onclick = function(){ addDoc(c, token, demo); };
     $('xjson').onclick = function(){ var blob = new Blob([JSON.stringify({ case: c.code, case_id: c.id, exported: new Date().toISOString(), formula: "chain = sha256((prev or 'genesis:' + case_id) + '|' + sha256 + '|' + kind + '|' + taken_at as YYYY-MM-DDTHH:MM:SSZ)", evidence: ev.map(function(e){ return { id: e.id, kind: e.kind, title: e.title, sha256: e.sha256, prev: e.prev, chain: e.chain, taken_at: e.taken_at, lat: e.lat, lng: e.lng, by: e.by, status: e.status }; }) }, null, 2)], { type: 'application/json' }); var u = URL.createObjectURL(blob), l = document.createElement('a'); l.href = u; l.download = 'kolaboro-' + c.code + '-evidence.json'; l.click(); };
     $('xpdf').onclick = function(){ pdf(c, x, token); };
+    $('xcourt').onclick = function(){ court(c, x, token); };
     $('xpref').onsubmit = function(e){ e.preventDefault(); if (demo) return KB.toast('This is the demo account: nothing is saved.'); rpc(token, 'prefs', { case_id: c.id, lang: this.lang.value, watch: this.watch.checked }).then(function(d){ if (d.case) { CACHE[c.id] = d.case; KB.toast('Saved'); } }); };
     mapInit(c, x, token, demo);
     $('xshb').onclick = function(){
@@ -182,14 +185,15 @@
   function mapInit(c, x, token, demo){
     css('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css');
     load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js').then(function(){
-      var el = $('xmap'); if (!el) return;
+      var el = $('xmap'); if (!el || el._leaflet_id) return;
+      if (L.Icon && L.Icon.Default) L.Icon.Default.imagePath = '/satellite/plot/vendor/images/';
       var center = x.lat ? [x.lat, x.lng] : [-8.65, 115.17], mode = null, pin = null, poly = null, pts = (x.plot && x.plot.coordinates) ? x.plot.coordinates.map(function(p){ return [p[1], p[0]]; }) : [];
       var map = L.map(el, { scrollWheelZoom: false }).setView(center, x.lat ? 18 : 10);
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: 'Imagery © Esri, Maxar, Earthstar Geographics' }).addTo(map);
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 }).addTo(map);
       if (x.lat) pin = L.marker(center).addTo(map);
       function redraw(){ if (poly) map.removeLayer(poly); poly = pts.length ? L.polygon(pts, { color: '#FF5B14', weight: 2 }).addTo(map) : null; var a = ringArea(pts); $('xarea').textContent = a ? Math.round(a) + ' m²' : '—'; diff(); }
-      function diff(){ var a = ringArea(pts), ce = +$('xcert').value; if (a && ce) { var d = (a - ce) / ce * 100; $('xdiff').textContent = (d > 0 ? '+' : '') + Math.round(d) + '%'; $('xdiff').style.color = Math.abs(d) > 15 ? '#B42318' : '#1F8A5B'; $('xdiff').title = Math.abs(d) > 15 ? 'More than 15% apart: ask your agent to measure the boundary pegs' : 'Within 15%: tracing from satellite is approximate'; } else $('xdiff').textContent = '—'; }
+      function diff(){ var a = ringArea(pts), ce = +$('xcert').value; if (a && ce) { var d = (a - ce) / ce * 100; $('xdiff').textContent = (d > 0 ? '+' : '') + Math.round(d) + '%'; $('xdiff').style.color = Math.abs(d) > 15 ? '#B42318' : '#0B7A55'; $('xdiff').title = Math.abs(d) > 15 ? 'More than 15% apart: ask your agent to measure the boundary pegs' : 'Within 15%: tracing from satellite is approximate'; } else $('xdiff').textContent = '—'; }
       redraw(); $('xcert').oninput = diff;
       map.on('click', function(e){ if (mode === 'pin') { if (pin) map.removeLayer(pin); pin = L.marker(e.latlng).addTo(map); } else if (mode === 'draw') { pts.push([e.latlng.lat, e.latlng.lng]); redraw(); if (!pin) pin = L.marker(e.latlng).addTo(map); } });
       function setMode(m){ mode = m; $('xpin').classList.toggle('on', m === 'pin'); $('xdraw').classList.toggle('on', m === 'draw'); el.style.cursor = m ? 'crosshair' : ''; }
@@ -219,7 +223,7 @@
         function line(t, size, bold, color){ d.setFont('helvetica', bold ? 'bold' : 'normal'); d.setFontSize(size || 10); d.setTextColor(color || '#17212B'); var ls = d.splitTextToSize(String(t || ''), W); ls.forEach(function(s){ if (y > 280) { d.addPage(); y = 18; } d.text(s, L, y); y += (size || 10) * .45 + 1.2; }); }
         d.setFillColor('#FF5B14'); d.circle(L + 2, y - 1.5, 2, 'F'); d.setFont('helvetica', 'bold'); d.setFontSize(15); d.text('kolaboro', L + 6, y); y += 10;
         line('Case file ' + c.code, 18, true); line((c.project_name || c.project_url || 'Your project') + (c.location ? ' · ' + c.location : ''), 11);
-        line('Generated ' + new Date().toUTCString(), 9, false, '#6B7A86'); y += 3;
+        line('Generated ' + new Date().toUTCString(), 9, false, '#5E6872'); y += 3;
         var STG = ['Case opened','Documents','Land & title','Building permit','Site visit','Report'], V = { pending:'In progress', safe:'No red flags', hold:'Hold payments', stop:"Don't pay yet" };
         line('Status: ' + STG[c.stage || 0] + ' · Verdict: ' + (V[c.verdict] || 'In progress'), 11, true);
         if (c.stage_note) line(c.stage_note, 10);
@@ -233,7 +237,7 @@
           if (m.result && m.result.summary) line(m.result.summary, 9);
           if (m.text) line('"' + m.text + '"', 9);
           if (e.kind === 'satellite' && m.summary) line(m.summary, 9);
-          line('file sha256 ' + e.sha256 + '   chain ' + e.chain, 7, false, '#6B7A86'); y += 1;
+          line('file sha256 ' + e.sha256 + '   chain ' + e.chain, 7, false, '#5E6872'); y += 1;
         });
         if (r.imgs.length) { d.addPage(); y = 18; line('Photos and satellite images', 13, true); var col = 0;
           r.imgs.forEach(function(im){ var p = d.getImageProperties(im.u), w = 85, h = w * p.height / p.width; if (h > 70) { h = 70; w = h * p.width / p.height; } if (y + h > 280) { d.addPage(); y = 18; col = 0; } d.addImage(im.u, 'JPEG', L + col * 92, y, w, h); d.setFontSize(7); d.setTextColor('#41505C'); d.text(d.splitTextToSize((im.e.title || '') + ' · ' + (im.e.taken_at ? new Date(im.e.taken_at).toISOString().slice(0, 16).replace('T', ' ') + ' UTC' : ''), 85), L + col * 92, y + h + 3); if (col) { y += h + 10; col = 0; } else col = 1; });
@@ -244,10 +248,29 @@
         line('Case fingerprint: ' + (head || '-'), 9, true);
         line('Scan the QR code or open kolaboro.com/verify/?hash=' + (head || '') + ' to see its timestamp. To recompute the chain, download the evidence data from the portal and drop it on kolaboro.com/verify.', 8.5, false, '#41505C');
         if (head) { var q = document.createElement('div'); new QRCode(q, { text: 'https://kolaboro.com/verify/?hash=' + head, width: 256, height: 256, correctLevel: QRCode.CorrectLevel.M }); var cv = q.querySelector('canvas'); if (cv) d.addImage(cv.toDataURL('image/png'), 'PNG', L, y + 2, 38, 38); y += 44; }
-        line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#6B7A86');
-        d.save('kolaboro-case-' + c.code + '.pdf');
-        btn.disabled = false; btn.textContent = 'Download case file (PDF)'; if (window.kbEvent) kbEvent('case_pdf');
+        line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#5E6872');
+        line('This exact file is registered with Kolaboro when it is created. To check it was not edited, drop it on kolaboro.com/verify: your browser computes its SHA-256 and looks it up.', 7.5, false, '#5E6872');
+        var bytes = d.output('arraybuffer');
+        return crypto.subtle.digest('SHA-256', bytes).then(function(hb){
+          var hx = [].map.call(new Uint8Array(hb), function(b){ return ('0' + b.toString(16)).slice(-2); }).join('');
+          return KB.rpc('kolaboro_pdf_register', { p_token: token, p_case_id: c.id, p_sha256: hx, p_head: head || '' }).catch(function(){ return null; });
+        }).then(function(){
+          var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' })); a.download = 'kolaboro-case-' + c.code + '.pdf'; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 4000);
+          btn.disabled = false; btn.textContent = 'Download case file (PDF)'; if (window.kbEvent) kbEvent('case_pdf');
+        });
       }).catch(function(e){ btn.disabled = false; btn.textContent = 'Download case file (PDF)'; KB.toast('Could not build the PDF: ' + (e.message || e)); });
+  }
+
+  // ---------- court-ready evidence bundle (k/courtfile.js, built on this device) ----------
+  function court(c, x, token){
+    var btn = $('xcourt'), st = $('xcourtst'); if (btn.disabled) return; btn.disabled = true; btn.textContent = 'Building…';
+    load('/k/courtfile.js?v=3d44dbdddb').then(function(){
+      return KBCourt.caseFile(c, x, token, { onStep: function(s){ if (st) st.textContent = s; } });
+    }).then(function(r){
+      KBCourt.save(r); var R = r.results;
+      if (st) st.innerHTML = (R.chain && R.signatures && R.log_chain && R.checkpoint && R.inclusion && R.files !== false ? '✓ ' : '⚠ ') + r.manifest.exhibits.length + ' exhibits. Chain ' + (R.chain ? 'verified' : 'does not verify') + ', files ' + (R.files === false ? 'do not all match' : 'match') + ', log proof ' + (R.inclusion ? 'verified' : 'failed') + '. PDF fingerprint <code title="' + esc(r.pdfSha) + '">' + short(r.pdfSha) + '</code>' + (r.registered ? ' registered.' : '.');
+      if (window.kbEvent) kbEvent('court_file_case');
+    }).catch(function(e){ if (st) st.textContent = 'Could not build the bundle: ' + (e && e.message || e); }).then(function(){ btn.disabled = false; btn.textContent = 'Court-ready evidence bundle'; });
   }
 
   window.KBX = function(c, D, token){

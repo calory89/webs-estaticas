@@ -23,7 +23,7 @@
         market: m.market, country: m.country, projects: m.n,
         disclosure: D, confirmed: V, noflags: F,
         pD: 100 * W_D * D, pV: 100 * W_V * V, pF: 100 * W_F * F,
-        index: Math.round(1000 * (W_D * D + W_V * V + W_F * F)) / 10,
+        index: Math.floor(1000 * (W_D * D + W_V * V + W_F * F) + 0.5 + 1e-9) / 10, // half-up with a float guard, identical to open/scoring.py
         avgChecks: m.checks / m.n,
         permitP: m.permit / m.n, escrowP: m.escrow / m.n, conf4P: m.conf4 / m.n,
         flagged: m.flagged

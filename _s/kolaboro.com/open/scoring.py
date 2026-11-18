@@ -7,6 +7,7 @@ you can download from https://kolaboro.com/api/open/projects (score, vscore, tie
 A high score means the information is public, not that it is genuine. Checking that is what our agents do.
 """
 from datetime import date
+import math
 import re
 
 LEVELS = ('registry', 'independent', 'developer', 'contradicted', 'none')
@@ -86,7 +87,8 @@ def transparency_index(cases):
     disc = sum(c['score'] / 6 for c in cases) / n
     conf = sum((c.get('vscore') or 0) / 6 for c in cases) / n
     clean = sum(0 if c.get('flags') else 1 for c in cases) / n
-    return round((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100, 1)
+    # Half-up rounding with a float guard, identical to transparency-index/ti-core.js (Python's round() rounds halves to even).
+    return math.floor((0.6 * disc + 0.3 * conf + 0.1 * clean) * 1000 + 0.5 + 1e-9) / 10
 
 
 if __name__ == '__main__':

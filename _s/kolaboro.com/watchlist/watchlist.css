@@ -1,7 +1,7 @@
 /* Watchlist page (/watchlist/) */
 .wl-hero h1{font-size:clamp(2.2rem,5.4vw,4.4rem);line-height:.98;letter-spacing:-.03em}
 .wl-hero .lead{margin-top:16px;max-width:62ch}
-.wl-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin-top:26px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.wl-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin-top:26px;padding:16px 18px;background:var(--card,#fff);border:1px solid var(--line);border-radius:16px}
 .wl-bar[hidden]{display:none}
 .wl-count{margin:0;line-height:1.4}
 .wl-tools{display:flex;flex-wrap:wrap;gap:10px}
@@ -11,7 +11,7 @@
 .wl-sec{padding:clamp(24px,4vw,48px) 0 clamp(40px,6vw,72px)}
 .wl-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
 @media(max-width:420px){.wl-list{grid-template-columns:1fr}}
-.wl-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.wl-card{background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .wl-card.changed{border-color:var(--ink);box-shadow:inset 4px 0 0 var(--hivis)}
 .wl-card.gone{background:var(--concrete)}
 .wl-h{display:flex;align-items:center;justify-content:space-between;gap:10px}
@@ -29,7 +29,7 @@
 .wl-none{margin:0;font-size:.92rem;color:var(--ink-2);line-height:1.4}
 .wl-b{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
 .wl-b .btn{min-height:44px;margin:0;font-family:inherit}
-.wl-empty{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);max-width:720px}
+.wl-empty{background:var(--card,#fff);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);max-width:720px}
 .wl-empty[hidden]{display:none}
 .wl-empty h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.02em}
 .wl-empty p{margin-top:10px;line-height:1.5}

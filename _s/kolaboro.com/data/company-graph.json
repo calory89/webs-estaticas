@@ -1,0 +1,4723 @@
+{
+ "version": "company-graph-1",
+ "updated": "2026-11-08",
+ "generated_at": "2026-11-08T12:12:20Z",
+ "register": {
+  "name": "Companies House (United Kingdom)",
+  "url": "https://find-and-update.company-information.service.gov.uk",
+  "access": "public web pages, no API key (the free REST API needs a key the owner has not created yet)",
+  "user_agent": "KolaboroRegisterCheck/1.0 (+https://kolaboro.com/graph/)",
+  "pause_seconds": 2.0
+ },
+ "coverage": {
+  "uk_projects": 25,
+  "projects_naming_a_legal_entity": 17,
+  "legal_names": 20,
+  "resolved": 18,
+  "ambiguous": 0,
+  "not_found": 2,
+  "directors": 56,
+  "appointments_read": 1767,
+  "officers_truncated": 7,
+  "network_companies": 1254,
+  "projects_with_graph": 17,
+  "requests": 312,
+  "retries": 0
+ },
+ "complete": true,
+ "archive": {
+  "lines": 312,
+  "root": "ff11c464fcdb40cde95e8e2de6f8a96996878b491ef4dcd26ed091bded34a446",
+  "line_format": "sha256 time kind (kind replaces the URL, which would identify a company)"
+ },
+ "method": [
+  "Only companies the private research record names with a legal form (Limited, Ltd, PLC, LLP) are looked up. Brand names are not guessed into companies.",
+  "A company counts as matched only when exactly one company on Companies House has the same name after normalising punctuation and Limited/Ltd. Two or more candidates are reported as ambiguous and not used.",
+  "For each matched company we read its current directors, then each director's list of appointments (up to 105 per director), then the company page of every dissolved or insolvent company in that list for its dates.",
+  "\"Dissolved within 2 years\" means the company page shows a dissolution date at most 730 days after incorporation.",
+  "Dissolution is common and lawful, for example when a single-project company is closed after completion. It is a question to ask, not a finding. Liquidation, administration and receivership are insolvency procedures.",
+  "Nothing personal is published: no names, company numbers, dates of birth or addresses. Directors are labelled A, B, C within each project only."
+ ],
+ "not_covered": [
+  {
+   "jurisdiction": "All markets outside the UK",
+   "reason": "No official register with free, open officer data was found that works without an account, captcha or paid API. OpenCorporates needs an API key and its free tier is for public-benefit projects only, so it is not used."
+  },
+  {
+   "jurisdiction": "Australia",
+   "reason": "ABN Lookup is open but lists no directors; ASIC officer extracts are paid."
+  },
+  {
+   "jurisdiction": "Ireland",
+   "reason": "CRO officer data is behind a paid extract."
+  }
+ ],
+ "projects": {
+  "BHX-001": {
+   "market": "Birmingham",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "BHX-001"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "BHX-002": {
+   "market": "Birmingham",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "BHX-002"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2025,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 5,
+     "appointments_read": 5,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 11,
+     "appointments_read": 11,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 3,
+     "appointments_read": 3,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 4,
+     "label": "4 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 6,
+     "label": "6 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 1,
+     "label": "1 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 9,
+    "dissolved": 5,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 5,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 14 other UK companies: 9 active, 5 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "BHX-003": {
+   "market": "Birmingham",
+   "named_companies": 2,
+   "resolved": 1,
+   "unresolved_reasons": [
+    "no exact match on the UK register (it may be registered abroad or under another name)"
+   ],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "BHX-003"
+    },
+    {
+     "id": "N2",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2011,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 52,
+     "appointments_read": 52,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 7,
+     "appointments_read": 7,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 41,
+     "label": "41 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 5,
+     "label": "5 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N2",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N2",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N2",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 46,
+    "dissolved": 10,
+    "dissolved_within_2y": 2,
+    "dissolved_last_5y": 4,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 2,
+   "summary": [
+    "1 of 2 named companies matched exactly one company on Companies House.",
+    "Its 2 current directors have been directors (now or in the past) of 56 other UK companies: 46 active, 10 dissolved (2 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director A of the developing company has been a director of 2 companies dissolved within 2 years of incorporation."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "EDI-001": {
+   "market": "Edinburgh",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "EDI-001"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "GLA-001": {
+   "market": "Glasgow",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "GLA-001"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2021,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 26,
+     "appointments_read": 25,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 15,
+     "appointments_read": 14,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 17,
+     "label": "17 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 10,
+     "label": "10 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 18,
+    "dissolved": 8,
+    "dissolved_within_2y": 3,
+    "dissolved_last_5y": 7,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 2,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 2 current directors have been directors (now or in the past) of 26 other UK companies: 18 active, 8 dissolved (3 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director A of the developing company has been a director of 3 companies dissolved within 2 years of incorporation."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LBA-001": {
+   "market": "Leeds",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LBA-001"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2024,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 28,
+     "appointments_read": 26,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 117,
+     "appointments_read": 102,
+     "truncated": true
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X11",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X12",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X13",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X14",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X15",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X16",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X17",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X18",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X19",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X20",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X21",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X22",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X23",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 21,
+     "label": "21 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 78,
+     "label": "78 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X11",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X12",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X13",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X14",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X15",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X16",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X22",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 83,
+    "dissolved": 23,
+    "dissolved_within_2y": 12,
+    "dissolved_last_5y": 7,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 106 other UK companies: 83 active, 23 dissolved (12 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director C of the developing company has been a director of 12 companies dissolved within 2 years of incorporation.",
+    "At least one director holds more than 105 appointments; only the first 105 per director were read."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LBA-002": {
+   "market": "Leeds",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LBA-002"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2021,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 49,
+     "appointments_read": 49,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 62,
+     "appointments_read": 56,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X11",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X12",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X13",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X14",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X15",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X16",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X17",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X18",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X19",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X20",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X21",
+     "type": "company",
+     "role": "other",
+     "status": "insolvency",
+     "short_lived": false
+    },
+    {
+     "id": "X22",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X23",
+     "type": "company",
+     "role": "other",
+     "status": "insolvency",
+     "short_lived": false
+    },
+    {
+     "id": "X24",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X25",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X26",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X27",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X28",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X29",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X30",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 35,
+     "label": "35 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 29,
+     "label": "29 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X11",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X12",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X13",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X14",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X15",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X16",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X22",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X22",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X24",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X24",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X25",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X25",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X26",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X27",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X28",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X29",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X30",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 44,
+    "dissolved": 28,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 13,
+    "insolvency": 2,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 2,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 2 current directors have been directors (now or in the past) of 74 other UK companies: 44 active, 28 dissolved (0 of them within 2 years of incorporation), 2 in liquidation, administration or receivership.",
+    "Director A of the developing company has been a director of 2 companies in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-001": {
+   "market": "London",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-001"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-002": {
+   "market": "London",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-002"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-003": {
+   "market": "London",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-003"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2022,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 46,
+     "appointments_read": 46,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 50,
+     "appointments_read": 50,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 108,
+     "appointments_read": 95,
+     "truncated": true
+    },
+    {
+     "id": "DD",
+     "type": "director",
+     "label": "Director D",
+     "corporate": false,
+     "appointments_total": 43,
+     "appointments_read": 43,
+     "truncated": false
+    },
+    {
+     "id": "DE",
+     "type": "director",
+     "label": "Director E",
+     "corporate": false,
+     "appointments_total": 4,
+     "appointments_read": 4,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "insolvency",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X11",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X12",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X13",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X14",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X15",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X16",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X17",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X18",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X19",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X20",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X21",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X22",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X23",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X24",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X25",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X26",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X27",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X28",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X29",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X30",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X31",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X32",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X33",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X34",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 43,
+     "label": "43 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 43,
+     "label": "43 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 64,
+     "label": "64 active companies"
+    },
+    {
+     "id": "ADD",
+     "type": "group",
+     "status": "active",
+     "count": 39,
+     "label": "39 active companies"
+    },
+    {
+     "id": "ADE",
+     "type": "group",
+     "status": "active",
+     "count": 3,
+     "label": "3 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DE",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X11",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X12",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X13",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X14",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X15",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X16",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X22",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X24",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X25",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X26",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X27",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X28",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X29",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X30",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X31",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X32",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X33",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X33",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X33",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X34",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X34",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X34",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X34",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "ADD",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DE",
+     "t": "ADE",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 77,
+    "dissolved": 33,
+    "dissolved_within_2y": 3,
+    "dissolved_last_5y": 11,
+    "insolvency": 1,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 5,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 5 current directors have been directors (now or in the past) of 111 other UK companies: 77 active, 33 dissolved (3 of them within 2 years of incorporation), 1 in liquidation, administration or receivership.",
+    "Director C of the developing company has been a director of 3 companies dissolved within 2 years of incorporation and 1 company in liquidation, administration or receivership.",
+    "At least one director holds more than 105 appointments; only the first 105 per director were read."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-004": {
+   "market": "London",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-004"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2024,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 18,
+     "appointments_read": 18,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 37,
+     "appointments_read": 37,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 7,
+     "appointments_read": 7,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 12,
+     "label": "12 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 28,
+     "label": "28 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 4,
+     "label": "4 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 37,
+    "dissolved": 10,
+    "dissolved_within_2y": 5,
+    "dissolved_last_5y": 10,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 47 other UK companies: 37 active, 10 dissolved (5 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director A of the developing company has been a director of 2 companies dissolved within 2 years of incorporation."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-005": {
+   "market": "London",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-005"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2010,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 57,
+     "appointments_read": 56,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DD",
+     "type": "director",
+     "label": "Director D",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DE",
+     "type": "director",
+     "label": "Director E",
+     "corporate": false,
+     "appointments_total": 69,
+     "appointments_read": 69,
+     "truncated": false
+    },
+    {
+     "id": "DF",
+     "type": "director",
+     "label": "Director F",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DG",
+     "type": "director",
+     "label": "Director G",
+     "corporate": false,
+     "appointments_total": 5,
+     "appointments_read": 5,
+     "truncated": false
+    },
+    {
+     "id": "DH",
+     "type": "director",
+     "label": "Director H",
+     "corporate": false,
+     "appointments_total": 38,
+     "appointments_read": 38,
+     "truncated": false
+    },
+    {
+     "id": "DI",
+     "type": "director",
+     "label": "Director I",
+     "corporate": false,
+     "appointments_total": 32,
+     "appointments_read": 32,
+     "truncated": false
+    },
+    {
+     "id": "DJ",
+     "type": "director",
+     "label": "Director J",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "insolvency",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X11",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X12",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X13",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X14",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X15",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X16",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X17",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X18",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X19",
+     "type": "company",
+     "role": "other",
+     "status": "closed",
+     "short_lived": false
+    },
+    {
+     "id": "X20",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X21",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X22",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X23",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X24",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X25",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X26",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 29,
+     "label": "29 active companies"
+    },
+    {
+     "id": "ADE",
+     "type": "group",
+     "status": "active",
+     "count": 66,
+     "label": "66 active companies"
+    },
+    {
+     "id": "ADG",
+     "type": "group",
+     "status": "active",
+     "count": 4,
+     "label": "4 active companies"
+    },
+    {
+     "id": "ADH",
+     "type": "group",
+     "status": "active",
+     "count": 35,
+     "label": "35 active companies"
+    },
+    {
+     "id": "ADI",
+     "type": "group",
+     "status": "active",
+     "count": 28,
+     "label": "28 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DE",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DF",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DG",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DH",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DI",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DJ",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DH",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X11",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X12",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X13",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X14",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X15",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X16",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DH",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DE",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X22",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X23",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X24",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X25",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X26",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DE",
+     "t": "ADE",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DG",
+     "t": "ADG",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DH",
+     "t": "ADH",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DI",
+     "t": "ADI",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 95,
+    "dissolved": 24,
+    "dissolved_within_2y": 1,
+    "dissolved_last_5y": 0,
+    "insolvency": 1,
+    "strike-off proposed": 0,
+    "other": 1
+   },
+   "directors": 10,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 10 current directors have been directors (now or in the past) of 121 other UK companies: 95 active, 24 dissolved (1 of them within 2 years of incorporation), 1 in liquidation, administration or receivership.",
+    "Director B of the developing company has been a director of 1 company dissolved within 2 years of incorporation and 1 company in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-006": {
+   "market": "London",
+   "named_companies": 2,
+   "resolved": 1,
+   "unresolved_reasons": [
+    "no exact match on the UK register (it may be registered abroad or under another name)"
+   ],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-006"
+    },
+    {
+     "id": "N2",
+     "type": "company",
+     "role": "named",
+     "status": "overseas entity",
+     "inc_year": 2023,
+     "short_lived": false
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N2",
+     "type": "named in research record"
+    }
+   ],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "1 of 2 named companies matched exactly one company on Companies House.",
+    "A named project company is a foreign company on the UK Register of Overseas Entities; its officers are not listed as directors there, so it adds no one to the graph.",
+    "No current directors were listed for the matched company."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LON-007": {
+   "market": "London",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LON-007"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LPL-001": {
+   "market": "Liverpool",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LPL-001"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2018,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 3,
+     "appointments_read": 3,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 1,
+     "label": "1 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 1,
+    "dissolved": 1,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 1,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 1 current director has been a director (now or in the past) of 2 other UK companies: 1 active, 1 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LPL-002": {
+   "market": "Liverpool",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LPL-002"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LPL-003": {
+   "market": "Liverpool",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LPL-003"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2022,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 7,
+     "appointments_read": 7,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 34,
+     "appointments_read": 34,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 6,
+     "label": "6 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 26,
+     "label": "26 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 32,
+    "dissolved": 6,
+    "dissolved_within_2y": 2,
+    "dissolved_last_5y": 3,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 38 other UK companies: 32 active, 6 dissolved (2 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director C of the developing company has been a director of 2 companies dissolved within 2 years of incorporation."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "LPL-004": {
+   "market": "Liverpool",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "LPL-004"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2019,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 9,
+     "appointments_read": 9,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 10,
+     "appointments_read": 10,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 8,
+     "label": "8 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 8,
+     "label": "8 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 14,
+    "dissolved": 1,
+    "dissolved_within_2y": 1,
+    "dissolved_last_5y": 1,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 15 other UK companies: 14 active, 1 dissolved (1 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director B of the developing company has been a director of 1 company dissolved within 2 years of incorporation."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-001": {
+   "market": "Manchester",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-001"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-002": {
+   "market": "Manchester",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-002"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2016,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 2,
+     "appointments_read": 2,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 305,
+     "appointments_read": 105,
+     "truncated": true
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 265,
+     "appointments_read": 105,
+     "truncated": true
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 104,
+     "label": "104 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 105,
+     "label": "105 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 163,
+    "dissolved": 2,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 2,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 165 other UK companies: 163 active, 2 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "At least one director holds more than 105 appointments; only the first 105 per director were read."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-003": {
+   "market": "Manchester",
+   "named_companies": 0,
+   "resolved": 0,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-003"
+    }
+   ],
+   "edges": [],
+   "network": {
+    "active": 0,
+    "dissolved": 0,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 0,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 0,
+   "summary": [
+    "The research record names this project's companies by brand only, without a legal entity, so there is nothing exact to look up on the register."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-004": {
+   "market": "Manchester",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-004"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2022,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 265,
+     "appointments_read": 105,
+     "truncated": true
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 25,
+     "appointments_read": 25,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 105,
+     "label": "105 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 23,
+     "label": "23 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 122,
+    "dissolved": 1,
+    "dissolved_within_2y": 1,
+    "dissolved_last_5y": 1,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 3,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 3 current directors have been directors (now or in the past) of 123 other UK companies: 122 active, 1 dissolved (1 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Director C of the developing company has been a director of 1 company dissolved within 2 years of incorporation.",
+    "At least one director holds more than 105 appointments; only the first 105 per director were read."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-005": {
+   "market": "Manchester",
+   "named_companies": 2,
+   "resolved": 2,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-005"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2008,
+     "short_lived": false
+    },
+    {
+     "id": "N2",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2023,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 65,
+     "appointments_read": 65,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 3,
+     "appointments_read": 3,
+     "truncated": false
+    },
+    {
+     "id": "DD",
+     "type": "director",
+     "label": "Director D",
+     "corporate": false,
+     "appointments_total": 58,
+     "appointments_read": 58,
+     "truncated": false
+    },
+    {
+     "id": "DE",
+     "type": "director",
+     "label": "Director E",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 59,
+     "label": "59 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 2,
+     "label": "2 active companies"
+    },
+    {
+     "id": "ADD",
+     "type": "group",
+     "status": "active",
+     "count": 53,
+     "label": "53 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "P",
+     "t": "N2",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N2",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N2",
+     "type": "current director"
+    },
+    {
+     "s": "DE",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "ADD",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 62,
+    "dissolved": 4,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 3,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 5,
+   "summary": [
+    "2 of 2 named companies matched exactly one company on Companies House.",
+    "Their 5 current directors have been directors (now or in the past) of 66 other UK companies: 62 active, 4 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-006": {
+   "market": "Manchester",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-006"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2022,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 305,
+     "appointments_read": 105,
+     "truncated": true
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 265,
+     "appointments_read": 105,
+     "truncated": true
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 20,
+     "appointments_read": 20,
+     "truncated": false
+    },
+    {
+     "id": "DD",
+     "type": "director",
+     "label": "Director D",
+     "corporate": false,
+     "appointments_total": 70,
+     "appointments_read": 70,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X3",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X4",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X5",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X6",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X7",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X8",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X9",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X11",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X12",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X13",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X14",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X15",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X16",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X17",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X18",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X19",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X20",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X21",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 104,
+     "label": "104 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 105,
+     "label": "105 active companies"
+    },
+    {
+     "id": "ADC",
+     "type": "group",
+     "status": "active",
+     "count": 19,
+     "label": "19 active companies"
+    },
+    {
+     "id": "ADD",
+     "type": "group",
+     "status": "active",
+     "count": 49,
+     "label": "49 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X3",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X4",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X5",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X6",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X7",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X8",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X9",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X11",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X12",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X13",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X14",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X15",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X16",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X17",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X18",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X19",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X20",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X21",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DC",
+     "t": "ADC",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "ADD",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 227,
+    "dissolved": 21,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 9,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 4,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 4 current directors have been directors (now or in the past) of 248 other UK companies: 227 active, 21 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "At least one director holds more than 105 appointments; only the first 105 per director were read."
+   ],
+   "partial": false,
+   "checked": true
+  },
+  "MAN-007": {
+   "market": "Manchester",
+   "named_companies": 1,
+   "resolved": 1,
+   "unresolved_reasons": [],
+   "nodes": [
+    {
+     "id": "P",
+     "type": "project",
+     "label": "MAN-007"
+    },
+    {
+     "id": "N1",
+     "type": "company",
+     "role": "named",
+     "status": "active",
+     "inc_year": 2020,
+     "short_lived": false
+    },
+    {
+     "id": "DA",
+     "type": "director",
+     "label": "Director A",
+     "corporate": false,
+     "appointments_total": 24,
+     "appointments_read": 24,
+     "truncated": false
+    },
+    {
+     "id": "DB",
+     "type": "director",
+     "label": "Director B",
+     "corporate": false,
+     "appointments_total": 33,
+     "appointments_read": 33,
+     "truncated": false
+    },
+    {
+     "id": "DC",
+     "type": "director",
+     "label": "Director C",
+     "corporate": false,
+     "appointments_total": 1,
+     "appointments_read": 1,
+     "truncated": false
+    },
+    {
+     "id": "DD",
+     "type": "director",
+     "label": "Director D",
+     "corporate": false,
+     "appointments_total": 17,
+     "appointments_read": 17,
+     "truncated": false
+    },
+    {
+     "id": "X1",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "X2",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": false
+    },
+    {
+     "id": "ADA",
+     "type": "group",
+     "status": "active",
+     "count": 21,
+     "label": "21 active companies"
+    },
+    {
+     "id": "ADB",
+     "type": "group",
+     "status": "active",
+     "count": 31,
+     "label": "31 active companies"
+    },
+    {
+     "id": "ADD",
+     "type": "group",
+     "status": "active",
+     "count": 15,
+     "label": "15 active companies"
+    }
+   ],
+   "edges": [
+    {
+     "s": "P",
+     "t": "N1",
+     "type": "named in research record"
+    },
+    {
+     "s": "DA",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DB",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DC",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DD",
+     "t": "N1",
+     "type": "current director"
+    },
+    {
+     "s": "DA",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "X1",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "X2",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DA",
+     "t": "ADA",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DB",
+     "t": "ADB",
+     "type": "director (current or past)"
+    },
+    {
+     "s": "DD",
+     "t": "ADD",
+     "type": "director (current or past)"
+    }
+   ],
+   "network": {
+    "active": 40,
+    "dissolved": 2,
+    "dissolved_within_2y": 0,
+    "dissolved_last_5y": 2,
+    "insolvency": 0,
+    "strike-off proposed": 0,
+    "other": 0
+   },
+   "directors": 4,
+   "summary": [
+    "1 of 1 named company matched exactly one company on Companies House.",
+    "Its 4 current directors have been directors (now or in the past) of 42 other UK companies: 40 active, 2 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+   ],
+   "partial": false,
+   "checked": true
+  }
+ }
+}

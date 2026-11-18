@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Log in | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
-<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
-<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
-</head><body><div class="ap-auth"><div class="ap-auth-l"><a class="ap-brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=n19f2">
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
+<script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script></head><body data-clarity-mask="True"><div class="ap-auth" role="main"><div class="ap-auth-l"><a class="ap-brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
 <div style="position:relative;z-index:1"><h1>Your case file, live.</h1><ul style="padding-left:1.1em">
 <li><b>Live case file.</b> Every step your local agent takes, with dates.</li>
 <li><b>Direct chat</b> with the Kolaboro team about your project.</li>
@@ -11,27 +11,28 @@
 <li class="ap-auth-hide"><b>Your report</b> to download the day it's ready. Refund in full if we can't take your case.</li></ul></div>
 <p class="ap-auth-hide" style="color:#7E8D9A;font-size:.85rem;position:relative;z-index:1">Kolaboro is operated by Equinox Investment Group LLC. Your data is used only for your case.</p></div>
 <div class="ap-auth-r"><div class="ap-auth-box">
-  <div class="kl-tabs" role="tablist"><button type="button" role="tab" id="t-in" aria-selected="true">Log in</button><button type="button" role="tab" id="t-up" aria-selected="false">Create free account</button></div>
-  <div id="p-in"><h2>Log in</h2><p class="ap-muted" style="margin:0">See your case, your agent's updates and your report.</p>
-  <form id="lf" novalidate>
-    <label>Email<input name="email" type="email" autocomplete="email" required></label>
-    <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required><button type="button">Show</button></span></label>
+  <div class="kl-tabs" role="tablist"><button type="button" role="tab" id="t-in" aria-selected="true" aria-controls="p-in">Log in</button><button type="button" role="tab" id="t-up" aria-selected="false" aria-controls="p-up">Create free account</button></div>
+  <div id="p-in" role="tabpanel" aria-labelledby="t-in"><h2>Log in</h2><p class="ap-muted" style="margin:0">See your case, its updates and your report.</p>
+  <form id="lf" novalidate data-fe>
+    <label>Email<input name="email" type="email" autocomplete="email" required data-msg-req="Add your email address."></label>
+    <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required data-msg-req="Enter your password."><button type="button">Show</button></span></label>
     <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Log in</button>
     <p class="ap-err" id="le" role="alert"></p>
-    <p class="ap-small ap-muted">Forgot your password? <a href="mailto:support@kolaboro.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="#signup" id="go-up">Create a free account</a>.</p>
+    <p class="ap-small ap-muted">Forgot your password? <a href="#" id="fp" role="button">Get a reset link by email</a>.<br>No account yet? <a href="#signup" id="go-up">Create a free account</a>.</p>
   </form></div>
-  <div id="p-up" hidden><h2>Create a free account</h2><p class="ap-muted" style="margin:0">Save projects on every device, get free desk reviews of developer websites and keep your payment schedule. You pay only if you ask for an on-the-ground check.</p>
-  <form id="sf" novalidate>
-    <label>Your name<input name="name" autocomplete="name" required maxlength="120"></label>
-    <label>Email<input name="email" type="email" autocomplete="email" required></label>
-    <label>Password (at least 8 characters)<span class="ap-pw"><input name="password" type="password" autocomplete="new-password" minlength="8" required><button type="button">Show</button></span></label>
+  <div id="p-up" role="tabpanel" aria-labelledby="t-up" hidden><h2>Create a free account</h2><p class="ap-muted" style="margin:0">Save projects on every device, get free desk reviews of developer websites and keep your payment schedule. You pay only if you ask for an on-the-ground check.</p>
+  <form id="sf" novalidate data-fe>
+    <label>Your name<input name="name" autocomplete="name" required maxlength="120" data-msg="Add your name."></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required data-msg-req="Add your email address."></label>
+    <label>Password (at least 8 characters)<span class="ap-pw"><input name="password" type="password" autocomplete="new-password" minlength="8" maxlength="200" required data-msg="Use at least 8 characters for the password."><button type="button">Show</button></span></label>
     <div style="height:4px;background:#ECEAE3;border-radius:3px;margin-top:6px;overflow:hidden"><div id="pm" style="height:100%;width:0;transition:width .2s"></div></div>
     <label>Country you live in (optional)<input name="country" autocomplete="country-name" maxlength="80"></label>
     <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Create account</button>
     <p class="ap-err" id="se" role="alert"></p>
-    <p class="ap-small ap-muted">By creating an account you agree to the <a href="/legal">terms and privacy policy</a>. We use your email only for your account and your cases. No newsletter unless you ask for it.</p>
+    <p class="ap-small ap-muted">By creating an account you agree to the <a href="/legal/terms/">terms</a> and the <a href="/legal/privacy/">privacy policy</a>. We use your email only for your account and your cases. No newsletter unless you ask for it.</p>
   </form></div>
 </div></div></div>
+<script src="/k/fe.js?v=a050305d8d"></script>
 <script>
 var KB = (function(){
   var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/', K = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
@@ -48,9 +49,12 @@ var KB = (function(){
 
 (function(){
   var f = document.getElementById('lf'), e = document.getElementById('le'); KB.pwToggle(f);
-  if (KB.get('kb-token')) { if (KB.get('kb-role') === 'agent') location.href = '/agents/me'; else KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = '/portal'; }); }
+  // ?next=/path: after logging in or signing up, go back to that page on this site (for example the check result you were reading)
+  var NEXT = (function(){ var n = new URLSearchParams(location.search).get('next') || ''; return /^\/(?!\/)[^\s\\]*$/.test(n) && n.length < 600 ? n : ''; })();
+  if (NEXT) { var nb = document.createElement('p'); nb.className = 'ap-small ap-muted'; nb.style.margin = '0 0 12px'; nb.textContent = /^\/check/.test(NEXT) ? 'Log in or create a free account, then you go straight back to your check, saved to your account.' : 'Log in, then you go straight back to the page you were on.'; var bx = document.querySelector('.ap-auth-box'); if (bx) bx.insertBefore(nb, bx.firstChild); }
+  if (KB.get('kb-token')) { if (KB.get('kb-role') === 'agent') location.href = '/agents/me'; else KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = NEXT || '/portal'; }); }
   var sf = document.getElementById('sf'), se = document.getElementById('se'); KB.pwToggle(sf); KB.meter(sf.password, document.getElementById('pm'));
-  function mode(up){ document.getElementById('p-in').hidden = up; document.getElementById('p-up').hidden = !up; document.getElementById('t-in').setAttribute('aria-selected', !up); document.getElementById('t-up').setAttribute('aria-selected', up); (up ? sf.name : f.email).focus(); if ((location.hash === '#signup') !== up) history.replaceState(null, '', up ? '#signup' : location.pathname); }
+  function mode(up){ document.getElementById('p-in').hidden = up; document.getElementById('p-up').hidden = !up; document.getElementById('t-in').setAttribute('aria-selected', !up); document.getElementById('t-up').setAttribute('aria-selected', up); (up ? sf.name : f.email).focus(); if ((location.hash === '#signup') !== up) history.replaceState(null, '', location.pathname + location.search + (up ? '#signup' : '')); }
   document.getElementById('t-in').onclick = function(){ mode(false); }; document.getElementById('t-up').onclick = function(){ mode(true); };
   document.getElementById('go-up').onclick = function(e){ e.preventDefault(); mode(true); };
   if (location.hash === '#signup') mode(true);
@@ -59,23 +63,30 @@ var KB = (function(){
     if (!sf.name.value.trim()) { se.textContent = 'Add your name.'; return; }
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(sf.email.value.trim())) { se.textContent = 'Check your email address.'; return; }
     if (sf.password.value.length < 8) { se.textContent = 'Use at least 8 characters for the password.'; return; }
-    var b = sf.querySelector('.ap-btn'), at = {}; b.disabled = true;
+    var b = sf.querySelector('.ap-btn'), at = {}; if (b.disabled) return; b.disabled = true; b.textContent = 'Creating your account…';
     try { at = JSON.parse(localStorage.getItem('kb-attr') || '{}') || {}; } catch (x) {}
-    KB.rpc('kolaboro_signup_free', { p_email: sf.email.value, p_password: sf.password.value, p_name: sf.name.value, p_country: sf.country.value || null, p_src: at.src || at.utm_source || null, p_landing: at.land || null }).then(function(d){
-      b.disabled = false;
-      if (d && d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', 'buyer'); try { if (window.gtag) gtag('event', 'sign_up', { method: 'email' }); } catch (x) {} location.href = '/portal?welcome=free'; return; }
+    KB.rpc('kolaboro_signup_free', { p_email: sf.email.value.trim(), p_password: sf.password.value, p_name: sf.name.value.trim(), p_country: sf.country.value.trim() || null, p_src: at.src || at.utm_source || null, p_landing: at.land || null }).then(function(d){
+      b.disabled = false; b.textContent = 'Create account';
+      if (d && d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', 'buyer'); try { if (window.gtag) gtag('event', 'sign_up', { method: 'email' }); } catch (x) {} location.href = NEXT || '/portal?welcome=free'; return; }
       var er = d && (d.error || d.code);
       se.textContent = er === 'exists' ? 'There is already an account with this email. Log in instead.' : er === 'email' ? 'Check your email address.' : er === 'password' ? 'Use at least 8 characters for the password.' : er === 'busy' ? 'Too many sign-ups right now. Try again in a few minutes.' : er === 'PGRST202' ? 'Free accounts open in a few hours. Meanwhile, start with a free desk review on /check.' : 'Could not create the account. Try again.';
+      if (window.KFE && (er === 'email' || er === 'password')) { se.textContent = ''; KFE.err(er === 'email' ? sf.email : sf.password, er === 'email' ? 'Check your email address.' : 'Use at least 8 characters for the password.'); }
       if (er === 'exists') { f.email.value = sf.email.value; setTimeout(function(){ mode(false); }, 1200); }
-    }).catch(function(){ b.disabled = false; se.textContent = 'Network error. Try again.'; });
+    }).catch(function(){ b.disabled = false; b.textContent = 'Create account'; se.textContent = 'Could not reach the server. Check your connection and try again. Nothing was lost.'; });
   });
+  var fpBusy = false;
+  document.getElementById('fp').onclick = function(ev){ ev.preventDefault(); if (fpBusy) return; var em = (f.email.value || '').trim(); e.textContent = ''; e.style.color = ''; if (window.KFE) KFE.clear(f);
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(em)) { if (window.KFE) KFE.err(f.email, 'Type your account email here, then click "Get a reset link by email" again.'); else { e.textContent = 'Type your account email above first.'; f.email.focus(); } return; }
+    fpBusy = true; e.style.color = '#5E6B76'; e.textContent = 'Sending the reset link…';
+    KB.rpc('kolaboro_pw_request', { p_email: em }).then(function(){ try { if (window.gtag) gtag('event', 'password_reset_request'); } catch (x) {} e.style.color = '#0B7A55'; e.textContent = 'If an account exists for ' + em + ', we just sent a reset link. It works for one hour. Check your spam folder too.'; }).catch(function(){ e.style.color = ''; e.textContent = 'Could not reach the server. Check your connection and try again.'; }).then(function(){ fpBusy = false; }); };
   f.addEventListener('submit', function(ev){
-    ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
-    KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
-      b.disabled = false;
-      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
-      e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
-    }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
+    ev.preventDefault(); e.textContent = ''; e.style.color = ''; var b = f.querySelector('.ap-btn'); if (b.disabled) return;
+    if (!f.email.value.trim() || !f.password.value) { if (!window.KFE) { e.textContent = !f.email.value.trim() ? 'Add your email address.' : 'Enter your password.'; } (!f.email.value.trim() ? f.email : f.password).focus(); return; } b.disabled = true; b.textContent = 'Logging in…';
+    KB.rpc('kolaboro_login', { p_email: f.email.value.trim(), p_password: f.password.value }).then(function(d){
+      if (d && d.token) { b.textContent = 'Opening your portal…'; KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); try { if (window.gtag) gtag('event', 'login', { method: 'email' }); } catch (x) {} location.href = d.role === 'agent' ? '/agents/me' : (NEXT || '/portal'); return; }
+      b.disabled = false; b.textContent = 'Log in';
+      e.textContent = d && d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : d && d.code && !d.error ? 'Log-in is not available right now. Try again in a few minutes.' : 'Wrong email or password.';
+    }).catch(function(){ b.disabled = false; b.textContent = 'Log in'; e.textContent = 'Could not reach the server. Check your connection and try again.'; });
   });
 })();
-</script><style>.kl-tabs{display:flex;gap:6px;background:#F2F1EC;border-radius:999px;padding:4px;margin-bottom:18px}.kl-tabs button{flex:1;border:0;background:none;border-radius:999px;min-height:40px;font:inherit;font-weight:700;cursor:pointer;color:#5E6B76}.kl-tabs button[aria-selected=true]{background:#fff;color:#17212B;box-shadow:0 1px 3px rgba(0,0,0,.12)}</style></body></html>
+</script><style>.kl-tabs{display:flex;gap:6px;background:#F2F1EC;border-radius:999px;padding:4px;margin-bottom:18px}.kl-tabs button{flex:1;border:0;background:none;border-radius:999px;min-height:40px;font:inherit;font-weight:700;cursor:pointer;color:#5E6B76}.kl-tabs button[aria-selected=true]{background:#fff;color:#17212B;box-shadow:0 1px 3px rgba(0,0,0,.12)}</style><script src="/k/acct.js?v=n20b58f8" defer></script></body></html>

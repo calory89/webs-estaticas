@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data desk chart | Kolaboro</title>
 <meta name="description" content="Embeddable live chart from the Kolaboro off-plan database.">
@@ -35,7 +35,7 @@ a:focus-visible{outline:3px solid #FF5B14;outline-offset:2px;border-radius:3px}
 (function(){
   var K = window.KDD, w = document.getElementById('w'), id = '';
   try { id = (new URLSearchParams(location.search).get('c') || '').trim(); } catch (e) {}
-  function foot(c, R){ return '<div class="ft"><span>Data: <a href="/press/data/' + (c ? '#c-' + c.id : '') + '" target="_blank" rel="noopener">Kolaboro</a>' + (R ? ', ' + K.esc(R.dateShort) : '') + '</span><a href="/how-we-score" target="_blank" rel="noopener">Method</a></div>'; }
+  function foot(c, R){ return '<div class="ft"><span>Data: <a href="/press/data/' + (c ? '#c-' + c.id : '') + '" target="_blank" rel="noopener">Kolaboro</a>' + (R ? ', ' + K.esc(R.dateShort) : '') + '</span><a href="/how-we-score/" target="_blank" rel="noopener">Method</a></div>'; }
   function fail(html){ w.innerHTML = '<p class="eb">Kolaboro data desk</p><p class="msg">' + html + '</p>' + foot(); }
   if (!K){ fail('The chart could not load.'); return; }
   K.load().then(function(R){

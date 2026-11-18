@@ -173,9 +173,9 @@ var en$1 = {
 	allIn: (c) => `All ${c} destinations →`,
 	footer: "Three hotels per city, chosen by public rules.",
 	disclaimer: "Independent guide. Booking links may earn us a commission at no cost to you. Reference prices, not live quotes.",
-	countryTitle: (c, n) => `Best Hotels in ${c}: ${n} Cities, 3 Picks Each | Top3Hotels`,
+	countryTitle: (c, n) => n === 1 ? `Best Hotels in ${c} (2026): Our 3 Picks` : `Best Hotels in ${c} (2026): ${n} Cities, 3 Picks Each`,
 	countryH1: (c) => `The best hotels in ${c}`,
-	countryLead: (n) => `${n} destinations. Three picks in each: Budget, Best Value and Luxury.`,
+	countryLead: (n) => `${n} ${n === 1 ? "destination" : "destinations"}. Three picks in each: Budget, Best Value and Luxury.`,
 	destTitle: (n) => `All ${n} Destinations: Best Hotels by City | Top3Hotels`,
 	destH1: (n) => `All ${n} destinations`,
 	destLead: (n) => `Every city has exactly three hotels: Budget, Best Value and Luxury. ${n} countries.`,
@@ -263,7 +263,7 @@ var T = {
 		fromLead: (a, n) => `${n} destinos con vuelo directo desde el aeropuerto de ${a}. En cada uno: un hotel económico, uno calidad-precio y uno de lujo. Notas con fuente y precios de referencia.`,
 		popular: "Destinos populares",
 		homeH1: "Los 3 mejores hoteles de cada ciudad",
-		title: (c) => `Los 3 mejores hoteles de ${c} (2026): económico, calidad-precio y lujo | Top3Hotels`,
+		title: (c) => `Mejores hoteles en ${c} (2026): económico, calidad-precio y lujo`,
 		desc: (c, co, b, v, l) => `Los 3 mejores hoteles de ${c}, ${co}: ${b} (económico), ${v} (calidad-precio) y ${l} (lujo). Notas de huéspedes con fuente y precios de referencia.`,
 		h1: (c) => `Los 3 mejores hoteles de ${c}`,
 		lead: (n) => `Uno económico, uno calidad-precio y uno de lujo${n ? `, elegidos entre ${n} hoteles de Booking.com para la misma estancia` : ""}. Sin listas infinitas: elige tu estilo y reserva.`,
@@ -308,9 +308,9 @@ var T = {
 		allIn: (c) => `Todos los destinos de ${c} →`,
 		footer: "Tres hoteles por ciudad, elegidos con reglas públicas.",
 		disclaimer: "Guía independiente. Los enlaces de reserva pueden darnos una comisión sin coste para ti. Precios de referencia, no en tiempo real.",
-		countryTitle: (c, n) => `Mejores hoteles de ${c}: ${n} ciudades, 3 opciones en cada una | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Mejores hoteles en ${c} (2026): nuestros 3 elegidos` : `Mejores hoteles en ${c} (2026): ${n} ciudades, 3 en cada una`,
 		countryH1: (c) => `Los mejores hoteles de ${c}`,
-		countryLead: (n) => `${n} destinos. Tres opciones en cada uno: económico, calidad-precio y lujo.`,
+		countryLead: (n) => `${n} ${n === 1 ? "destino" : "destinos"}. Tres opciones en ${n === 1 ? "él" : "cada uno"}: económico, calidad-precio y lujo.`,
 		destTitle: (n) => `Los ${n} destinos: Mejores hoteles por ciudad | Top3Hotels`,
 		destH1: (n) => `Los ${n} destinos`,
 		destLead: (n) => `Cada ciudad tiene exactamente tres hoteles: económico, calidad-precio y lujo. ${n} países.`,
@@ -396,7 +396,7 @@ var T = {
 		fromLead: (a, n) => `${n} Ziele mit Direktflug ab Flughafen ${a}. Für jedes: ein günstiges Hotel, eines mit bestem Preis-Leistungs-Verhältnis und ein Luxushotel.`,
 		popular: "Beliebte Reiseziele",
 		homeH1: "Die 3 besten Hotels jeder Stadt",
-		title: (c) => `Die besten Hotels in ${c} (2026): günstig, Preis-Leistung & Luxus | Top3Hotels`,
+		title: (c) => `Beste Hotels in ${c} (2026): günstig, Preis-Leistung, Luxus`,
 		desc: (c, co, b, v, l) => `Die 3 besten Hotels in ${c}, ${co}: ${b} (günstig), ${v} (Preis-Leistung) und ${l} (Luxus). Bewertungen mit Quelle und Referenzpreise.`,
 		h1: (c) => `Die 3 besten Hotels in ${c}`,
 		lead: (n) => `Ein günstiges, eines mit bestem Preis-Leistungs-Verhältnis und ein Luxushotel${n ? ` – ausgewählt aus ${n} Hotels, die Booking.com für denselben Aufenthalt anzeigte` : ""}. Keine endlose Liste.`,
@@ -441,9 +441,9 @@ var T = {
 		allIn: (c) => `Alle Reiseziele in ${c} →`,
 		footer: "Drei Hotels pro Stadt, nach öffentlichen Regeln gewählt.",
 		disclaimer: "Unabhängiger Ratgeber. Buchungslinks können uns eine Provision bringen, ohne Kosten für Sie. Referenzpreise, keine Live-Angebote.",
-		countryTitle: (c, n) => `Die besten Hotels in ${c}: ${n} Städte, je 3 Tipps | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Beste Hotels in ${c} (2026): unsere 3 Tipps` : `Beste Hotels in ${c} (2026): ${n} Städte, je 3 Tipps`,
 		countryH1: (c) => `Die besten Hotels in ${c}`,
-		countryLead: (n) => `${n} Reiseziele. Jeweils drei Tipps: günstig, Preis-Leistung und Luxus.`,
+		countryLead: (n) => `${n} ${n === 1 ? "Reiseziel" : "Reiseziele"}. Jeweils drei Tipps: günstig, Preis-Leistung und Luxus.`,
 		destTitle: (n) => `Alle ${n} Reiseziele: die besten Hotels nach Stadt | Top3Hotels`,
 		destH1: (n) => `Alle ${n} Reiseziele`,
 		destLead: (n) => `Jede Stadt hat genau drei Hotels: günstig, Preis-Leistung und Luxus. ${n} Länder.`,
@@ -529,7 +529,7 @@ var T = {
 		fromLead: (a, n) => `${n} destinations en vol direct depuis l'aéroport de ${a}. Pour chacune : un hôtel petit budget, un qualité-prix et un luxe.`,
 		popular: "Destinations populaires",
 		homeH1: "Les 3 meilleurs hôtels de chaque ville",
-		title: (c) => `Meilleurs hôtels à ${c} (2026) : petit budget, qualité-prix et luxe | Top3Hotels`,
+		title: (c) => `Meilleurs hôtels à ${c} (2026) : pas cher, qualité-prix, luxe`,
 		desc: (c, co, b, v, l) => `Les 3 meilleurs hôtels à ${c}, ${co} : ${b} (petit budget), ${v} (qualité-prix) et ${l} (luxe). Notes sourcées et prix de référence.`,
 		h1: (c) => `Les 3 meilleurs hôtels à ${c}`,
 		lead: (n) => `Un petit budget, un meilleur rapport qualité-prix et un luxe${n ? `, choisis parmi ${n} hôtels proposés par Booking.com pour le même séjour` : ""}. Pas de liste interminable.`,
@@ -574,10 +574,10 @@ var T = {
 		allIn: (c) => `Toutes les destinations en ${c} →`,
 		footer: "Trois hôtels par ville, choisis selon des règles publiques.",
 		disclaimer: "Guide indépendant. Les liens de réservation peuvent nous rapporter une commission, sans frais pour vous. Prix de référence, pas en temps réel.",
-		countryTitle: (c, n) => `Meilleurs hôtels en ${c} : ${n} villes, 3 choix chacune | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Meilleurs hôtels en ${c} (2026) : nos 3 choix` : `Meilleurs hôtels en ${c} (2026) : ${n} villes, 3 choix`,
 		countryH1: (c) => `Les meilleurs hôtels en ${c}`,
-		countryLead: (n) => `${n} destinations. Trois choix dans chacune : petit budget, qualité-prix et luxe.`,
-		destTitle: (n) => `Les ${n} destinations: meilleurs hôtels par ville | Top3Hotels`,
+		countryLead: (n) => `${n} ${n === 1 ? "destination" : "destinations"}. Trois choix ${n === 1 ? "" : "dans chacune "}: petit budget, qualité-prix et luxe.`,
+		destTitle: (n) => `Les ${n} destinations : meilleurs hôtels par ville | Top3Hotels`,
 		destH1: (n) => `Les ${n} destinations`,
 		destLead: (n) => `Chaque ville a exactement trois hôtels : petit budget, qualité-prix et luxe. ${n} pays.`,
 		notFound: "Nous ne couvrons pas encore cette ville",
@@ -662,7 +662,7 @@ var T = {
 		fromLead: (a, n) => `${n} destinazioni con volo diretto dall'aeroporto di ${a}. Per ognuna: un hotel economico, uno qualità-prezzo e uno di lusso.`,
 		popular: "Destinazioni popolari",
 		homeH1: "I 3 migliori hotel di ogni città",
-		title: (c) => `I migliori hotel a ${c} (2026): economico, qualità-prezzo e lusso | Top3Hotels`,
+		title: (c) => `Migliori hotel a ${c} (2026): economici, qualità-prezzo, lusso`,
 		desc: (c, co, b, v, l) => `I 3 migliori hotel a ${c}, ${co}: ${b} (economico), ${v} (qualità-prezzo) e ${l} (lusso). Punteggi con fonte e prezzi di riferimento.`,
 		h1: (c) => `I 3 migliori hotel a ${c}`,
 		lead: (n) => `Uno economico, uno qualità-prezzo e uno di lusso${n ? `, scelti tra ${n} hotel proposti da Booking.com per lo stesso soggiorno` : ""}. Nessuna lista infinita.`,
@@ -707,9 +707,9 @@ var T = {
 		allIn: (c) => `Tutte le destinazioni in ${c} →`,
 		footer: "Tre hotel per città, scelti con regole pubbliche.",
 		disclaimer: "Guida indipendente. I link di prenotazione possono farci guadagnare una commissione senza costi per te. Prezzi di riferimento, non in tempo reale.",
-		countryTitle: (c, n) => `I migliori hotel in ${c}: ${n} città, 3 scelte ciascuna | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Migliori hotel in ${c} (2026): le nostre 3 scelte` : `Migliori hotel in ${c} (2026): ${n} città, 3 scelte`,
 		countryH1: (c) => `I migliori hotel in ${c}`,
-		countryLead: (n) => `${n} destinazioni. Tre scelte in ognuna: economico, qualità-prezzo e lusso.`,
+		countryLead: (n) => `${n} ${n === 1 ? "destinazione" : "destinazioni"}. Tre scelte in ognuna: economico, qualità-prezzo e lusso.`,
 		destTitle: (n) => `Tutte le ${n} destinazioni: i migliori hotel per città | Top3Hotels`,
 		destH1: (n) => `Tutte le ${n} destinazioni`,
 		destLead: (n) => `Ogni città ha esattamente tre hotel: economico, qualità-prezzo e lusso. ${n} paesi.`,
@@ -795,7 +795,7 @@ var T = {
 		fromLead: (a, n) => `${n} destinos com voo direto do aeroporto de ${a}. Em cada um: um hotel económico, um de qualidade-preço e um de luxo.`,
 		popular: "Destinos populares",
 		homeH1: "Os 3 melhores hotéis de cada cidade",
-		title: (c) => `Os melhores hotéis em ${c} (2026): económico, qualidade-preço e luxo | Top3Hotels`,
+		title: (c) => `Melhores hotéis em ${c} (2026): baratos, qualidade-preço, luxo`,
 		desc: (c, co, b, v, l) => `Os 3 melhores hotéis em ${c}, ${co}: ${b} (económico), ${v} (qualidade-preço) e ${l} (luxo). Notas com fonte e preços de referência.`,
 		h1: (c) => `Os 3 melhores hotéis em ${c}`,
 		lead: (n) => `Um económico, um de melhor qualidade-preço e um de luxo${n ? `, escolhidos entre ${n} hotéis do Booking.com para a mesma estadia` : ""}. Sem listas intermináveis.`,
@@ -840,9 +840,9 @@ var T = {
 		allIn: (c) => `Todos os destinos em ${c} →`,
 		footer: "Três hotéis por cidade, escolhidos com regras públicas.",
 		disclaimer: "Guia independente. Os links de reserva podem render-nos uma comissão sem custo para si. Preços de referência, não em tempo real.",
-		countryTitle: (c, n) => `Melhores hotéis em ${c}: ${n} cidades, 3 escolhas em cada | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Melhores hotéis em ${c} (2026): as nossas 3 escolhas` : `Melhores hotéis em ${c} (2026): ${n} cidades, 3 em cada`,
 		countryH1: (c) => `Os melhores hotéis em ${c}`,
-		countryLead: (n) => `${n} destinos. Três escolhas em cada: económico, qualidade-preço e luxo.`,
+		countryLead: (n) => `${n} ${n === 1 ? "destino" : "destinos"}. Três escolhas em cada: económico, qualidade-preço e luxo.`,
 		destTitle: (n) => `Os ${n} destinos: melhores hotéis por cidade | Top3Hotels`,
 		destH1: (n) => `Os ${n} destinos`,
 		destLead: (n) => `Cada cidade tem exatamente três hotéis: económico, qualidade-preço e luxo. ${n} países.`,
@@ -928,7 +928,7 @@ var T = {
 		fromLead: (a, n) => `${n} destinationer med direkte fly fra ${a} Lufthavn. For hver: ét budgethotel, ét med mest for pengene og ét luksushotel. Kilder til bedømmelser og referencepriser.`,
 		popular: "Populære destinationer",
 		homeH1: "De 3 bedste hoteller i hver by",
-		title: (c) => `De 3 bedste hoteller i ${c} (2026): budget, mest for pengene og luksus | Top3Hotels`,
+		title: (c) => `Bedste hoteller i ${c} (2026): billige, mest for pengene, luksus`,
 		desc: (c, co, b, v, l) => `De 3 bedste hoteller i ${c}, ${co}: ${b} (budget), ${v} (mest for pengene) og ${l} (luksus). Gæsteanmeldelser med kilde og referencepriser.`,
 		h1: (c) => `De 3 bedste hoteller i ${c}`,
 		lead: (n) => `Ét budgethotel, ét med mest for pengene og ét luksushotel${n ? ` – valgt blandt ${n} hoteller, som Booking.com viste for samme ophold` : ""}. Ingen endeløs liste: vælg din stil og book.`,
@@ -973,9 +973,9 @@ var T = {
 		allIn: (c) => `Alle destinationer i ${c} →`,
 		footer: "Tre hoteller i hver by, valgt efter offentlige regler.",
 		disclaimer: "Uafhængig guide. Bookinglinks kan give os en provision uden ekstra omkostning for dig. Referencepriser, ikke live-tilbud.",
-		countryTitle: (c, n) => `De bedste hoteller i ${c}: ${n} byer, 3 valg i hver | Top3Hotels`,
+		countryTitle: (c, n) => n === 1 ? `Bedste hoteller i ${c} (2026): vores 3 valg` : `Bedste hoteller i ${c} (2026): ${n} byer, 3 i hver`,
 		countryH1: (c) => `De bedste hoteller i ${c}`,
-		countryLead: (n) => `${n} destinationer. Tre valg i hver: budget, mest for pengene og luksus.`,
+		countryLead: (n) => `${n} ${n === 1 ? "destination" : "destinationer"}. Tre valg i hver: budget, mest for pengene og luksus.`,
 		destTitle: (n) => `Alle ${n} destinationer: de bedste hoteller efter by | Top3Hotels`,
 		destH1: (n) => `Alle ${n} destinationer`,
 		destLead: (n) => `Hver by har præcis tre hoteller: budget, mest for pengene og luksus. ${n} lande.`,
@@ -1347,6 +1347,1979 @@ var X = {
 		sourcesText: "Gæstescorer, antal anmeldelser, referencepriser og hotelfotos: Booking.com. Byfotos: Wikimedia Commons. Seværdigheder: Wikipedia. Kort: OpenStreetMap."
 	}
 };
+/** Podium mark: Budget, Best Value (tallest, with the star) and Luxury. Same drawing as tools/brand/icon.svg. */
+var MARK = (size = 34, cls = "t3-mark") => `<svg class="${cls}" viewBox="0 0 64 64" width="${size}" height="${size}" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="15" fill="#0b1122"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="14.25" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="1.5"/><g transform="translate(0 2.2)"><path d="M10.5 50V35Q10.5 32 13.5 32H21Q24 32 24 35V50Z" fill="#34d399"/><path d="M25.25 50V25Q25.25 22 28.25 22H35.75Q38.75 22 38.75 25V50Z" fill="#ff4d64"/><path d="M40 50V39Q40 36 43 36H50.5Q53.5 36 53.5 39V50Z" fill="#ffc25c"/><path d="M32 6.6L33.7 10.85L38.28 11.16L34.76 14.1L35.88 18.54L32 16.1L28.12 18.54L29.24 14.1L25.72 11.16L30.3 10.85Z" fill="#fff"/><rect x="8" y="51.5" width="48" height="2.6" rx="1.3" fill="#fff" fill-opacity=".22"/></g></svg>`;
+var WORD = `<span class="t3-word">top<b>3</b>hotels</span>`;
+/** Logo link. `home` is the language home ("/", "/es", ...). */
+var BRAND_LINK = (home, label = "Top3Hotels, home", size = 34) => `<a class="logo t3-brand" href="${home}" aria-label="${label}">${MARK(size)}${WORD}</a>`;
+var OG_LANGS = [
+	"en",
+	"es",
+	"de",
+	"fr",
+	"it",
+	"pt",
+	"da"
+];
+var ogImage = (L) => `https://www.top3hotels.com/og/${OG_LANGS.includes(L) ? L : "en"}.png?v=6`;
+/** Icons live under /brand/ because the edge Worker still answers /favicon.ico, /icon.svg and /apple-touch-icon.png itself. */
+var ICON_LINKS = `<link rel="icon" href="/brand/favicon.ico?v=6" sizes="48x48"><link rel="icon" href="/brand/icon.svg?v=6" type="image/svg+xml"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png?v=6">`;
+var V6_CSS = `
+/* ---------- v6 brand ---------- */
+a.t3-brand{display:inline-flex!important;align-items:center!important;gap:10px!important;flex:none;text-decoration:none!important;color:inherit!important;letter-spacing:0!important;margin-right:clamp(18px,3vw,44px)!important;border-radius:12px}
+a.t3-brand:focus-visible{outline:3px solid #ff4d64;outline-offset:4px}
+.t3-mark{flex:none;display:block;border-radius:9px;box-shadow:0 6px 16px -8px #0b112299;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+a.t3-brand:hover .t3-mark{transform:translateY(-1px) rotate(-5deg)}
+.t3-word{font:650 23px/1 Fraunces,"Fraunces Fallback",Georgia,serif;letter-spacing:-.035em;color:var(--ink,#0b1220);white-space:nowrap}
+.t3-word b{font-weight:800;color:#e8344d;padding:0 .015em}
+footer a.t3-brand .t3-word{font-size:21px}footer a.t3-brand{margin-right:0!important}
+@media (prefers-color-scheme:dark){.t3-word{color:#eef2f8}.t3-word b{color:#ff6b7f}
+ .t3-citybar{background:rgba(19,27,39,.96)!important;border-color:#233041!important;color:#eef2f8!important}.t3-citybar .t,.t3-citybar small{color:#a8b3c1!important}.t3-citybar input,.cityq{color:#eef2f8!important;background:transparent!important}
+ .city-page-link,#city-page-link{color:#8fb8ff!important}
+ .cbar{background:#131b27!important;color:#eef2f8!important;border-color:#233041!important}.cbar a{color:#cfd8e6!important}
+ .cbar button{background:transparent!important;color:#eef2f8!important;border:1px solid #3a4a63!important}.cbar button:last-of-type{background:#eef2f8!important;color:#0b1122!important;border-color:#eef2f8!important}}
+/* ---------- v6 header: room between the logo and the menu, nothing glued, nothing cut off ---------- */
+header.top,.shell>header{gap:12px!important;min-width:0}
+header.top nav,.shell>header nav{min-width:0;margin-left:auto;gap:clamp(10px,1.6vw,22px)!important}
+header nav>a:not(.tbtn):not(.t3x-ib):not(.v3-cta):not(.cta){font-weight:550;color:var(--ink,#0b1220);opacity:.82;transition:opacity .15s}
+header nav>a:not(.tbtn):not(.t3x-ib):hover{opacity:1}
+header nav select,#v3-lang-sel{min-height:40px}
+@media (max-width:980px){header nav>a.hide-md,header nav>a[href$="/map"],header nav>a[href="/guides"]{display:none!important}}
+@media (max-width:760px){
+ header.top,.shell>header{height:64px!important;min-height:64px}
+ header nav>a:not(.tbtn):not(.t3x-ib){display:none!important}
+ header nav{gap:8px!important}
+ .t3-word{font-size:20.5px}.t3-mark{width:30px;height:30px}
+ a.t3-brand{gap:8px!important;margin-right:8px!important}
+ header nav select,label.lang select,#v3-lang-sel{width:76px!important;max-width:76px!important;padding-left:30px!important;padding-right:12px!important;background-position:9px 50%!important;text-overflow:clip}
+ header .tbtn .lbl,header .tbtn kbd{display:none!important}
+}
+@media (max-width:360px){.t3-word{font-size:18.5px}header nav .tbtn[href$="/saved"],header nav a.t3x-ib[href="/saved"]{display:none!important}}
+/* ---------- v6 cookie bar: one compact row on phones ---------- */
+@media (max-width:620px){
+ .cbar{font-size:13px!important;line-height:1.45!important;padding:12px 14px!important;gap:8px 10px!important;border-radius:16px!important;left:10px!important;right:10px!important}
+ .cbar p{flex:1 1 100%!important}
+ .cbar button{flex:1 1 0;min-height:42px!important;font-size:14px!important}
+}
+/* ---------- v6 city hero: shorter on phones (the full answer stays for search and screen readers) ---------- */
+@media (max-width:620px){
+ .hero .lead{font-size:16px!important;line-height:1.5!important}
+ .hero .lead.answer{font-size:14px!important;opacity:.78;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+ .hero .eyebrow{letter-spacing:.14em!important}
+}
+/* ---------- v6 destination lists: a compact grid instead of 30 full-width rows ---------- */
+@media (max-width:620px){
+ ul.dir-popular{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+ ul.dir-popular li{margin:0!important}
+ ul.dir-popular a{padding:11px 12px!important;font-size:13.5px!important;line-height:1.3!important;min-height:44px;display:flex!important;align-items:center}
+}
+/* ---------- v6 accessibility and comfort ---------- */
+footer li a{display:inline-block;padding:5px 0}
+@media (max-width:620px){footer li a{padding:9px 0}.crumbs a,nav[aria-label*="readcrumb"] a{display:inline-block;padding:8px 2px}}
+[id]{scroll-margin-top:84px}
+a{text-underline-offset:.18em}
+::selection{background:#ff4d6433}
+@media print{header,footer,.cbar,.skip,#v2-sticky,.sticky3,[data-pal]{display:none!important}body{background:#fff!important;color:#000!important}a{text-decoration:underline}}
+.skip{position:fixed;left:12px;top:-90px;z-index:2147483646;background:#fff;color:#0b1220;padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px #0003;font-weight:600;text-decoration:none}.skip:focus{top:12px}
+main:focus{outline:none}
+:where(a,button,select,input,summary):focus-visible{outline:3px solid #ff4d64!important;outline-offset:3px!important}
+.skip:focus{z-index:2147483646!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+h2,h3,main h1:not(#headline){text-wrap:balance}p{text-wrap:pretty}
+button,a,summary,select,label{touch-action:manipulation}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@supports (padding:max(0px)){footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}}
+`;
+/** Language menu: phones show "EN", "ES"... in the closed menu (full names when it opens), so it never overflows. */
+var V6_JS = `(function(){
+function code(v){var m=String(v||'').match(/^\\/(es|de|fr|it|pt|da)(?:\\/|$)/);return (m?m[1]:'en').toUpperCase()}
+var mq=window.matchMedia?matchMedia('(max-width:760px)'):null;
+function sel(){return document.querySelectorAll('header select')}
+function short(s){for(var i=0;i<s.options.length;i++){var o=s.options[i];if(!o.getAttribute('data-full'))o.setAttribute('data-full',o.textContent);o.textContent=(mq&&mq.matches&&o.selected)?code(o.value||location.pathname):o.getAttribute('data-full')}}
+function full(s){for(var i=0;i<s.options.length;i++){var o=s.options[i];if(o.getAttribute('data-full'))o.textContent=o.getAttribute('data-full')}}
+function all(){sel().forEach(function(s){short(s);if(s.__t3v6)return;s.__t3v6=1;s.addEventListener('focus',function(){full(s)});s.addEventListener('mousedown',function(){full(s)});s.addEventListener('blur',function(){short(s)})})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',all);else all();
+if(mq&&mq.addEventListener)mq.addEventListener('change',all);
+/* external links opened in a new tab never get access to this page */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[target=_blank]'):null;if(a){var r=(a.getAttribute('rel')||'');if(!/noopener/.test(r))a.setAttribute('rel',(r+' noopener').trim())}},true);
+})();`;
+var city_names_default = {
+	"a-coruna-spain": {
+		"da": "La Coruña",
+		"es": "La Coruña",
+		"fr": "La Corogne",
+		"it": "La Coruña",
+		"pt": "Corunha"
+	},
+	"aachen-germany": {
+		"es": "Aquisgrán",
+		"fr": "Aix-la-Chapelle",
+		"it": "Aquisgrana"
+	},
+	"aalst-belgium": { "fr": "Alost" },
+	"abidjan-ivory-coast": { "es": "Abiyán" },
+	"abu-dhabi-unitedarabemirates": { "fr": "Abou Dabi" },
+	"abuja-nigeria": { "es": "Abuya" },
+	"accra-ghana": {
+		"es": "Acra",
+		"pt": "Acra"
+	},
+	"addis-ababa-ethiopia": {
+		"de": "Addis Abeba",
+		"es": "Adís Abeba",
+		"fr": "Addis-Abeba",
+		"it": "Addis Abeba",
+		"pt": "Adis Abeba"
+	},
+	"adelaide-australia": {
+		"es": "Adelaida",
+		"fr": "Adélaïde"
+	},
+	"agrigento-italy": {
+		"de": "Agrigent",
+		"fr": "Agrigente"
+	},
+	"ajman-united-arab-emirates": {
+		"de": "Adschman",
+		"it": "Ajmān"
+	},
+	"alessandria-italy": {
+		"fr": "Alexandrie",
+		"pt": "Alexandria"
+	},
+	"algeciras-spain": { "fr": "Algésiras" },
+	"alghero-italy": { "es": "Alguer" },
+	"almaty-kazakhstan": { "es": "Alma Ata" },
+	"almeria-spain": { "pt": "Almeria" },
+	"altea-spain": { "fr": "Altée" },
+	"amman-jordan": {
+		"es": "Amán",
+		"pt": "Amã"
+	},
+	"amsterdam-netherlands": {
+		"es": "Ámsterdam",
+		"pt": "Amesterdão"
+	},
+	"ancona-italy": { "fr": "Ancône" },
+	"andorra-la-vella-andorra": {
+		"es": "Andorra la Vieja",
+		"fr": "Andorre-la-Vieille",
+		"pt": "Andorra-a-Velha"
+	},
+	"ankara-trkiye": { "pt": "Ancara" },
+	"antalya-trkiye": {
+		"it": "Adalia",
+		"pt": "Antália"
+	},
+	"antwerp-belgium": {
+		"da": "Antwerpen",
+		"de": "Antwerpen",
+		"es": "Amberes",
+		"fr": "Anvers",
+		"it": "Anversa",
+		"pt": "Antuérpia"
+	},
+	"aqaba-jordan": {
+		"da": "Akaba",
+		"es": "Áqaba"
+	},
+	"arcachon-france": { "es": "Arcachón" },
+	"arles-france": { "es": "Arlés" },
+	"arnhem-netherlands": { "de": "Arnheim" },
+	"arras-france": { "es": "Arrás" },
+	"assisi-italy": {
+		"es": "Asís",
+		"fr": "Assise",
+		"pt": "Assis"
+	},
+	"astana-kazakhstan": { "es": "Astaná" },
+	"asuncion-paraguay": {
+		"da": "Asunción",
+		"de": "Asunción",
+		"es": "Asunción",
+		"it": "Asunción",
+		"pt": "Assunção"
+	},
+	"aswan-egypt": {
+		"de": "Assuan",
+		"es": "Asuán",
+		"fr": "Assouan",
+		"it": "Assuan",
+		"pt": "Assuão"
+	},
+	"athens-greece": {
+		"da": "Athen",
+		"de": "Athen",
+		"es": "Atenas",
+		"fr": "Athènes",
+		"it": "Atene",
+		"pt": "Atenas"
+	},
+	"atyrau-kazakhstan": { "fr": "Atyraou" },
+	"auburn-alabama-united-states": {
+		"da": "Auburn",
+		"de": "Auburn",
+		"es": "Auburn",
+		"fr": "Auburn",
+		"it": "Auburn",
+		"pt": "Auburn"
+	},
+	"augsburg-germany": {
+		"es": "Augsburgo",
+		"fr": "Augsbourg",
+		"it": "Augusta",
+		"pt": "Augsburgo"
+	},
+	"aurangabad-india": { "fr": "Aurangābād" },
+	"avignon-france": {
+		"es": "Aviñón",
+		"it": "Avignone",
+		"pt": "Avinhão"
+	},
+	"avila-spain": { "it": "Avila" },
+	"bad-homburg-vor-der-hohe-germany": { "es": "Bad Homburg" },
+	"baghdad-iraq": {
+		"da": "Bagdad",
+		"de": "Bagdad",
+		"es": "Bagdad",
+		"fr": "Bagdad",
+		"pt": "Bagdá"
+	},
+	"bahia-blanca-argentina": {
+		"da": "Bahía Blanca",
+		"de": "Bahía Blanca",
+		"es": "Bahía Blanca",
+		"fr": "Bahía Blanca",
+		"it": "Bahía Blanca",
+		"pt": "Bahía Blanca"
+	},
+	"baku-azerbaijan": {
+		"es": "Bakú",
+		"fr": "Bakou"
+	},
+	"balneario-camboriu-brazil": {
+		"de": "Balneário Camboriú",
+		"es": "Balneario Camboriú",
+		"fr": "Balneário Camboriú",
+		"it": "Balneário Camboriú",
+		"pt": "Balneário Camboriú"
+	},
+	"baltimore-united-states": { "it": "Baltimora" },
+	"bangkok-thailand": { "pt": "Banguecoque" },
+	barcelona: {
+		"fr": "Barcelone",
+		"it": "Barcellona"
+	},
+	"basel-switzerland": {
+		"es": "Basilea",
+		"fr": "Bâle",
+		"it": "Basilea",
+		"pt": "Basileia"
+	},
+	"basingstoke-united-kingdom": { "de": "Wahlkreis Basingstoke" },
+	"battambang-cambodia": { "es": "Ciudad de Battambang" },
+	"batumi-georgia": { "fr": "Batoumi" },
+	"bayonne-france": {
+		"es": "Bayona",
+		"pt": "Baiona"
+	},
+	"beijing-china": {
+		"de": "Peking",
+		"es": "Pekín",
+		"fr": "Pékin",
+		"it": "Pechino",
+		"pt": "Pequim"
+	},
+	"beirut-lebanon": {
+		"fr": "Beyrouth",
+		"pt": "Beirute"
+	},
+	"belem-brazil": {
+		"da": "Belém",
+		"de": "Belém",
+		"es": "Belém",
+		"fr": "Belém",
+		"it": "Belém",
+		"pt": "Belém"
+	},
+	"belgrade-serbia": {
+		"da": "Beograd",
+		"de": "Belgrad",
+		"es": "Belgrado",
+		"it": "Belgrado",
+		"pt": "Belgrado"
+	},
+	"benevento-italy": {
+		"de": "Benevent",
+		"fr": "Bénévent"
+	},
+	"benicassim-spain": {
+		"es": "Benicasim",
+		"it": "Benicasim",
+		"pt": "Benicasim"
+	},
+	"bergamo-italy": {
+		"es": "Bérgamo",
+		"fr": "Bergame",
+		"pt": "Bérgamo"
+	},
+	"berlin-germany": {
+		"es": "Berlín",
+		"it": "Berlino",
+		"pt": "Berlim"
+	},
+	"bern-switzerland": {
+		"es": "Berna",
+		"fr": "Berne",
+		"it": "Berna",
+		"pt": "Berna"
+	},
+	"besancon-france": { "es": "Besanzón" },
+	"bielsko-biaa-poland": { "de": "Bielitz-Biala" },
+	"bikaner-india": { "fr": "Bîkâner" },
+	"bilbao-spain": { "pt": "Bilbau" },
+	"birmingham-alabama-united-states": {
+		"da": "Birmingham",
+		"de": "Birmingham",
+		"es": "Birmingham",
+		"fr": "Birmingham",
+		"it": "Birmingham",
+		"pt": "Birmingham"
+	},
+	"blankenberge-belgium": { "fr": "Blanckenberghe" },
+	"bogor-indonesia": { "es": "Bógor" },
+	"bogota-colombia": {
+		"fr": "Bogota",
+		"it": "Bogotà"
+	},
+	"bologna-italy": {
+		"es": "Bolonia",
+		"fr": "Bologne",
+		"pt": "Bolonha"
+	},
+	"bolzano-italy": { "de": "Bozen" },
+	"bonn-germany": { "pt": "Bona" },
+	"bordeaux-france": {
+		"es": "Burdeos",
+		"pt": "Bordéus"
+	},
+	"braganca-portugal": {
+		"da": "Braganca",
+		"es": "Braganza",
+		"fr": "Bragance",
+		"it": "Braganza"
+	},
+	"brasilia-brazil": {
+		"es": "Brasilia",
+		"fr": "Brasilia",
+		"it": "Brasilia"
+	},
+	"breda-netherlands": { "fr": "Bréda" },
+	"bregenz-austria": { "fr": "Brégence" },
+	"bremen-germany": {
+		"fr": "Brême",
+		"it": "Brema"
+	},
+	"brescia-italy": { "pt": "Bréscia" },
+	"brindisi-italy": { "es": "Bríndisi" },
+	"brno-czechia": { "de": "Brünn" },
+	"bruges-belgium": {
+		"da": "Brugge",
+		"de": "Brügge",
+		"es": "Brujas"
+	},
+	"bucharest-romania": {
+		"da": "Bukarest",
+		"de": "Bukarest",
+		"es": "Bucarest",
+		"fr": "Bucarest",
+		"it": "Bucarest",
+		"pt": "Bucareste"
+	},
+	"budapest-hungary": { "pt": "Budapeste" },
+	"budva-montenegro": { "it": "Budua" },
+	"buffalo-united-states": { "es": "Búfalo" },
+	"busan-southkorea": { "fr": "Pusan" },
+	"cadiz-spain": {
+		"fr": "Cadix",
+		"it": "Cadice",
+		"pt": "Cádis"
+	},
+	"cairo-egypt": {
+		"da": "Kairo",
+		"de": "Kairo",
+		"es": "El Cairo",
+		"fr": "Le Caire",
+		"it": "Il Cairo"
+	},
+	"cali-colombia": {
+		"da": "Santiago de Cali",
+		"pt": "Cáli"
+	},
+	"cambridge-massachusetts-united-states": {
+		"da": "Cambridge",
+		"de": "Cambridge",
+		"es": "Cambridge",
+		"fr": "Cambridge",
+		"it": "Cambridge",
+		"pt": "Cambridge"
+	},
+	"camden-united-states": { "da": "Lexington" },
+	"campos-do-jordao-brazil": {
+		"de": "Campos do Jordão",
+		"es": "Campos do Jordão",
+		"fr": "Campos do Jordão",
+		"it": "Campos do Jordão",
+		"pt": "Campos do Jordão"
+	},
+	"can-tho-vietnam": {
+		"de": "Cần Thơ",
+		"es": "Cần Thơ",
+		"fr": "Cần Thơ",
+		"it": "Cần Thơ"
+	},
+	"canberra-australia": { "pt": "Camberra" },
+	"canterbury-united-kingdom": { "pt": "Cantuária" },
+	"cape-coral-united-states": { "es": "Cabo Coral" },
+	"cape-town-southafrica": {
+		"de": "Kapstadt",
+		"es": "Ciudad del Cabo",
+		"fr": "Le Cap",
+		"it": "Città del Capo",
+		"pt": "Cidade do Cabo"
+	},
+	"carcassonne-france": { "es": "Carcasona" },
+	"cartagena-spain": { "fr": "Carthagène" },
+	"cascais-portugal": { "es": "Cascaes" },
+	"caserta-italy": { "fr": "Caserte" },
+	"castellon-de-la-plana-spain": {
+		"de": "Castelló de la Plana",
+		"fr": "Castelló de la Plana",
+		"pt": "Castelló de la Plana"
+	},
+	"catania-italy": {
+		"fr": "Catane",
+		"pt": "Catânia"
+	},
+	"cayenne-french-guiana": {
+		"es": "Cayena",
+		"it": "Caienna",
+		"pt": "Caiena"
+	},
+	"cebu-city-philippines": {
+		"es": "Cebú",
+		"fr": "Cebu",
+		"it": "Cebu",
+		"pt": "Cidade de Cebu"
+	},
+	"cefalu-italy": { "es": "Cefalú" },
+	"ceske-budejovice-czechia": {
+		"da": "České Budějovice",
+		"de": "Budweis",
+		"es": "České Budějovice",
+		"fr": "České Budějovice",
+		"it": "České Budějovice",
+		"pt": "České Budějovice"
+	},
+	"chania-greece": {
+		"es": "La Canea",
+		"fr": "La Canée",
+		"it": "La Canea"
+	},
+	"cherkasy-ukraine": {
+		"da": "Tjerkassy",
+		"de": "Tscherkassy",
+		"fr": "Tcherkassy",
+		"it": "Čerkasy",
+		"pt": "Tcherkássi"
+	},
+	"chernivtsi-ukraine": {
+		"da": "Tjernivtsi",
+		"de": "Czernowitz",
+		"es": "Chernivetsi",
+		"fr": "Tchernivtsi",
+		"it": "Černivci"
+	},
+	"chisinau-moldova": {
+		"da": "Chișinău",
+		"de": "Kischinau",
+		"es": "Chisináu",
+		"fr": "Chișinău",
+		"it": "Chișinău",
+		"pt": "Chișinău"
+	},
+	"chorzow-poland": {
+		"da": "Chorzów",
+		"de": "Chorzów",
+		"es": "Chorzów",
+		"fr": "Chorzów",
+		"it": "Chorzów",
+		"pt": "Chorzów"
+	},
+	"ciudad-real-spain": { "pt": "Cidade Real" },
+	"coeur-d-alene-united-states": {
+		"de": "Coeur d’Alene",
+		"fr": "Coeur d’Alene"
+	},
+	"coimbra-portugal": { "es": "Coímbra" },
+	"cologne-germany": {
+		"da": "Köln",
+		"de": "Köln",
+		"es": "Colonia",
+		"it": "Colonia",
+		"pt": "Colónia"
+	},
+	"columbia-united-states": { "pt": "Colúmbia" },
+	"comayagua-honduras": { "de": "Ciudad de Comayagua" },
+	"como-italy": { "fr": "Côme" },
+	"concepcion-chile": {
+		"da": "Concepción",
+		"de": "Concepción",
+		"es": "Concepción",
+		"fr": "Concepción",
+		"it": "Concepción",
+		"pt": "Concepción"
+	},
+	"constanta-romania": {
+		"da": "Constanța",
+		"de": "Constanța",
+		"es": "Constanza",
+		"fr": "Constanța",
+		"it": "Costanza",
+		"pt": "Constança"
+	},
+	"copenhagen-denmark": {
+		"da": "København",
+		"de": "Kopenhagen",
+		"es": "Copenhague",
+		"fr": "Copenhague",
+		"it": "Copenaghen",
+		"pt": "Copenhaga"
+	},
+	"cordoba-argentina": { "pt": "Córdova" },
+	"cordoba-mexico": {
+		"de": "Córdoba",
+		"es": "Córdoba",
+		"fr": "Córdoba",
+		"it": "Córdoba",
+		"pt": "Córdoba"
+	},
+	"cordoba-spain": {
+		"fr": "Cordoue",
+		"it": "Cordova",
+		"pt": "Córdova"
+	},
+	"corfu-greece": {
+		"da": "Korfu",
+		"de": "Korfu",
+		"es": "Corfú",
+		"fr": "Corfou",
+		"it": "Corfù"
+	},
+	"corlu-turkiye": {
+		"da": "Çorlu",
+		"de": "Çorlu",
+		"es": "Çorlu",
+		"fr": "Çorlu",
+		"it": "Çorlu",
+		"pt": "Çorlu"
+	},
+	"cotonou-benin": {
+		"es": "Cotonú",
+		"pt": "Cotonu"
+	},
+	"cremona-italy": { "fr": "Crémone" },
+	"cuiaba-brazil": {
+		"da": "Cuiabá",
+		"de": "Cuiabá",
+		"es": "Cuiabá",
+		"fr": "Cuiabá",
+		"it": "Cuiabá",
+		"pt": "Cuiabá"
+	},
+	"culiacan-mexico": {
+		"da": "Culiacán",
+		"de": "Culiacán",
+		"es": "Culiacán",
+		"fr": "Culiacán",
+		"it": "Culiacán",
+		"pt": "Culiacán"
+	},
+	"cuneo-italy": { "fr": "Coni" },
+	"cusco-peru": { "fr": "Cuzco" },
+	"da-nang-vietnam": {
+		"de": "Đà Nẵng",
+		"es": "Đà Nẵng",
+		"fr": "Đà Nẵng",
+		"pt": "Đà Nẵng"
+	},
+	"dakar-senegal": { "pt": "Dacar" },
+	"dar-es-salaam-tanzania": {
+		"da": "Dar es-Salaam",
+		"de": "Daressalam",
+		"es": "Dar es-Salaam",
+		"fr": "Dar es Salam"
+	},
+	"denia-spain": { "es": "Denia" },
+	"denpasar-indonesia": { "pt": "Dempassar" },
+	"detroit-united-states": { "fr": "Détroit" },
+	"dijon-france": { "it": "Digione" },
+	"dresden-germany": {
+		"es": "Dresde",
+		"fr": "Dresde",
+		"it": "Dresda"
+	},
+	dubai: {
+		"es": "Dubái",
+		"fr": "Dubaï"
+	},
+	"dublin-ireland": {
+		"es": "Dublín",
+		"it": "Dublino"
+	},
+	"dubrovnik-croatia": { "it": "Ragusa" },
+	"duisburg-germany": {
+		"es": "Duisburgo",
+		"fr": "Duisbourg",
+		"pt": "Duisburgo"
+	},
+	"edinburgh-unitedkingdom": {
+		"es": "Edimburgo",
+		"fr": "Édimbourg",
+		"it": "Edimburgo",
+		"pt": "Edimburgo"
+	},
+	"erfurt-germany": { "es": "Érfurt" },
+	"eskisehir-turkiye": { "pt": "Esquixequir" },
+	"essaouira-morocco": { "es": "Esauira" },
+	"estoril-portugal": { "it": "Freguesia de Estoril" },
+	"fatima-portugal": { "da": "Fatima" },
+	"ferrara-italy": { "fr": "Ferrare" },
+	"figueres-spain": { "es": "Figueras" },
+	"flensburg-germany": {
+		"da": "Flensborg",
+		"es": "Flensburgo",
+		"fr": "Flensbourg",
+		"pt": "Flensburgo"
+	},
+	"florence-italy": {
+		"da": "Firenze",
+		"de": "Florenz",
+		"es": "Florencia",
+		"it": "Firenze",
+		"pt": "Florença"
+	},
+	"frankfurt-germany": {
+		"da": "Frankfurt am Main",
+		"de": "Frankfurt am Main",
+		"es": "Fráncfort del Meno",
+		"fr": "Francfort-sur-le-Main",
+		"it": "Francoforte sul Meno",
+		"pt": "Frankfurt am Main"
+	},
+	"fribourg-switzerland": {
+		"de": "Freiburg im Üechtland",
+		"es": "Friburgo",
+		"it": "Friburgo",
+		"pt": "Friburgo"
+	},
+	"gaeta-italy": { "fr": "Gaète" },
+	"gandia-spain": {
+		"da": "Gandia",
+		"de": "Gandia",
+		"fr": "Gandia",
+		"it": "Gandia",
+		"pt": "Gandia"
+	},
+	"gaziantep-turkiye": { "pt": "Gaziantepe" },
+	"gdansk-poland": {
+		"de": "Danzig",
+		"es": "Gdansk",
+		"it": "Danzica",
+		"pt": "Gdansk"
+	},
+	"geneva-switzerland": {
+		"da": "Genève",
+		"de": "Genf",
+		"es": "Ginebra",
+		"fr": "Genève",
+		"it": "Ginevra",
+		"pt": "Genebra"
+	},
+	"genoa-italy": {
+		"da": "Genova",
+		"de": "Genua",
+		"es": "Génova",
+		"fr": "Gênes",
+		"it": "Genova",
+		"pt": "Génova"
+	},
+	"ghent-belgium": {
+		"da": "Gent",
+		"de": "Gent",
+		"es": "Gante",
+		"fr": "Gand",
+		"it": "Gand",
+		"pt": "Gante"
+	},
+	"girona-spain": {
+		"es": "Gerona",
+		"fr": "Gérone",
+		"it": "Gerona"
+	},
+	"gliwice-poland": { "de": "Gleiwitz" },
+	"gothenburg-sweden": {
+		"da": "Göteborg",
+		"de": "Göteborg",
+		"es": "Gotemburgo",
+		"fr": "Göteborg",
+		"it": "Göteborg",
+		"pt": "Gotemburgo"
+	},
+	"gottingen-germany": {
+		"es": "Gotinga",
+		"it": "Gottinga"
+	},
+	"granada-spain": { "fr": "Grenade" },
+	"groningen-netherlands": {
+		"es": "Groninga",
+		"fr": "Groningue",
+		"it": "Groninga",
+		"pt": "Groninga"
+	},
+	"guangzhou-china": {
+		"es": "Cantón",
+		"fr": "Canton",
+		"it": "Canton",
+		"pt": "Cantão"
+	},
+	"ha-long-vietnam": { "fr": "Hạ Long" },
+	"hamburg-germany": {
+		"da": "Hamborg",
+		"es": "Hamburgo",
+		"fr": "Hambourg",
+		"it": "Amburgo",
+		"pt": "Hamburgo"
+	},
+	"hanoi-vietnam": {
+		"es": "Hanói",
+		"fr": "Hanoï",
+		"pt": "Hanói"
+	},
+	"helsinki-finland": {
+		"da": "Helsingfors",
+		"pt": "Helsínquia"
+	},
+	"heraklion-greece": {
+		"da": "Iraklio",
+		"es": "Heraclión",
+		"fr": "Héraklion",
+		"it": "Candia",
+		"pt": "Heraclião"
+	},
+	"ho-chi-minh-city-vietnam": {
+		"da": "Ho Chi Minh-byen",
+		"de": "Ho-Chi-Minh-Stadt",
+		"es": "Ciudad Ho Chi Minh",
+		"fr": "Hô Chi Minh-Ville",
+		"it": "Ho Chi Minh",
+		"pt": "Cidade de Ho Chi Minh"
+	},
+	"hoi-an-vietnam": {
+		"de": "Hội An",
+		"es": "Hội An",
+		"fr": "Hội An",
+		"pt": "Cidade Antiga de Hoi An"
+	},
+	"hondarribia-spain": {
+		"es": "Fuenterrabía",
+		"fr": "Fontarrabie"
+	},
+	"hua-hin-thailand": {
+		"de": "Amphoe Hua Hin",
+		"it": "Distretto di Hua Hin"
+	},
+	"hue-vietnam": {
+		"da": "Huế",
+		"de": "Huế",
+		"es": "Huế",
+		"fr": "Huế",
+		"it": "Huế"
+	},
+	"hurghada-egypt": { "es": "Hurgada" },
+	"hyderabad-india": {
+		"es": "Haidrābād",
+		"it": "Haidrābād"
+	},
+	"hyeres-france": { "pt": "Hyères, França" },
+	"ierapetra-greece": {
+		"da": "Lerapetra",
+		"es": "Ierápetra",
+		"fr": "Ierápetra",
+		"pt": "Ierápetra"
+	},
+	"imola-italy": { "pt": "Ímola" },
+	"imperia-italy": { "pt": "Impéria" },
+	"indianapolis-united-states": {
+		"es": "Indianápolis",
+		"pt": "Indianápolis"
+	},
+	"ioannina-greece": {
+		"es": "Ioánina",
+		"fr": "Ioánnina",
+		"it": "Giannina",
+		"pt": "Janina"
+	},
+	"istanbul-trkiye": {
+		"es": "Estambul",
+		"pt": "Istambul"
+	},
+	"izmir-trkiye": {
+		"es": "Esmirna",
+		"it": "Smirne",
+		"pt": "Esmirna"
+	},
+	"jackson-wyoming-united-states": {
+		"da": "Jackson",
+		"de": "Jackson",
+		"es": "Jackson",
+		"fr": "Jackson",
+		"it": "Jackson",
+		"pt": "Jackson"
+	},
+	"jakarta-indonesia": {
+		"es": "Yakarta",
+		"it": "Giacarta",
+		"pt": "Jacarta"
+	},
+	"jeddah-saudiarabia": {
+		"de": "Dschidda",
+		"es": "Yeda",
+		"fr": "Djeddah",
+		"it": "Gedda",
+		"pt": "Jidá"
+	},
+	"johannesburg-southafrica": {
+		"es": "Johannesburgo",
+		"fr": "Johannesbourg",
+		"pt": "Joanesburgo"
+	},
+	"karachi-pakistan": {
+		"de": "Karatschi",
+		"pt": "Carachi"
+	},
+	"kathmandu-nepal": {
+		"da": "Katmandu",
+		"es": "Katmandú",
+		"fr": "Katmandou",
+		"it": "Katmandu",
+		"pt": "Catmandu"
+	},
+	"kayseri-turkiye": { "pt": "Caiseri" },
+	"kigali-rwanda": { "pt": "Quigali" },
+	"knokke-heist-belgium": { "fr": "Knocke-Heyst" },
+	"kobe-japan": {
+		"de": "Kōbe",
+		"es": "Kōbe",
+		"it": "Kōbe",
+		"pt": "Kōbe"
+	},
+	"koblenz-germany": {
+		"es": "Coblenza",
+		"fr": "Coblence",
+		"it": "Coblenza",
+		"pt": "Coblença"
+	},
+	"kolkata-india": {
+		"es": "Calcuta",
+		"fr": "Calcutta",
+		"it": "Colcata",
+		"pt": "Calcutá"
+	},
+	"kortrijk-belgium": {
+		"es": "Cortrique",
+		"fr": "Courtrai",
+		"it": "Courtrai",
+		"pt": "Courtrai"
+	},
+	"kosice-slovakia": {
+		"da": "Košice",
+		"de": "Košice",
+		"es": "Košice",
+		"fr": "Košice",
+		"it": "Košice",
+		"pt": "Košice"
+	},
+	"kotor-montenegro": { "it": "Cattaro" },
+	"krakow-poland": {
+		"de": "Krakau",
+		"es": "Cracovia",
+		"fr": "Cracovie",
+		"it": "Cracovia",
+		"pt": "Cracóvia"
+	},
+	"krynica-zdroj-poland": {
+		"da": "Krynica-Zdrój",
+		"de": "Krynica-Zdrój",
+		"es": "Krynica-Zdrój",
+		"fr": "Krynica-Zdrój",
+		"it": "Krynica-Zdrój",
+		"pt": "Krynica-Zdrój"
+	},
+	"kyoto-japan": {
+		"de": "Kyōto",
+		"es": "Kioto",
+		"pt": "Quioto"
+	},
+	"la-rochelle-france": { "es": "La Rochela" },
+	"larnaca-cyprus": {
+		"de": "Larnaka",
+		"es": "Lárnaca"
+	},
+	"las-palmas-de-gran-canaria-spain": { "fr": "Las Palmas de Grande Canarie" },
+	"lausanne-switzerland": {
+		"es": "Lausana",
+		"it": "Losanna",
+		"pt": "Lausana"
+	},
+	"le-havre-france": { "es": "El Havre" },
+	"leeuwarden-netherlands": { "fr": "Leuvarde" },
+	"lefkada-greece": {
+		"da": "Lefkas",
+		"es": "Léucade",
+		"fr": "Leucade",
+		"it": "Leucade",
+		"pt": "Levkas"
+	},
+	"leipzig-germany": { "it": "Lipsia" },
+	"leiria-portugal": { "es": "Leiría" },
+	"leon-spain": { "pt": "Leão" },
+	"leuven-belgium": {
+		"de": "Löwen",
+		"es": "Lovaina",
+		"fr": "Louvain",
+		"it": "Lovanio",
+		"pt": "Lovaina"
+	},
+	"liege-belgium": {
+		"de": "Lüttich",
+		"es": "Lieja",
+		"it": "Liegi"
+	},
+	"liepaja-latvia": {
+		"da": "Liepāja",
+		"de": "Libau",
+		"es": "Liepāja",
+		"fr": "Liepāja",
+		"it": "Liepāja",
+		"pt": "Liepāja"
+	},
+	"lijiang-china": { "pt": "Cidade Antiga de Lijiang" },
+	"lille-france": { "it": "Lilla" },
+	"limassol-cyprus": { "es": "Limasol" },
+	"lisbon-portugal": {
+		"da": "Lissabon",
+		"de": "Lissabon",
+		"es": "Lisboa",
+		"fr": "Lisbonne",
+		"it": "Lisbona",
+		"pt": "Lisboa"
+	},
+	"livorno-italy": { "fr": "Livourne" },
+	"ljubljana-slovenia": {
+		"es": "Liubliana",
+		"it": "Lubiana",
+		"pt": "Liubliana"
+	},
+	"lleida-spain": {
+		"es": "Lérida",
+		"fr": "Lérida",
+		"pt": "Lérida"
+	},
+	london: {
+		"es": "Londres",
+		"fr": "Londres",
+		"it": "Londra",
+		"pt": "Londres"
+	},
+	"los-angeles-unitedstates": { "es": "Los Ángeles" },
+	"loutraki-greece": { "fr": "Loutráki" },
+	"luang-prabang-laos": { "es": "Lūang Phabāng" },
+	"lubeck-germany": { "it": "Lubecca" },
+	"lublin-poland": { "it": "Lublino" },
+	"lucca-italy": { "fr": "Lucques" },
+	"lucerne-switzerland": {
+		"da": "Luzern",
+		"de": "Luzern",
+		"es": "Lucerna",
+		"it": "Lucerna",
+		"pt": "Lucerna"
+	},
+	"ludwigsburg-germany": {
+		"fr": "Louisbourg",
+		"pt": "Ludwigsburgo"
+	},
+	"ludwigshafen-am-rhein-germany": {
+		"es": "Ludwigshafen",
+		"fr": "Ludwigshafen-sur-le-Rhin"
+	},
+	"luxembourg-city-luxembourg": {
+		"da": "Luxembourg",
+		"de": "Luxemburg",
+		"es": "Luxemburgo",
+		"fr": "Luxembourg",
+		"it": "Lussemburgo",
+		"pt": "Luxemburgo"
+	},
+	"luxor-egypt": { "fr": "Louxor" },
+	"lyon-france": { "it": "Lione" },
+	"mainz-germany": {
+		"es": "Maguncia",
+		"fr": "Mayence",
+		"it": "Magonza"
+	},
+	"makarska-croatia": { "it": "Macarsca" },
+	"malaga-spain": {
+		"fr": "Malaga",
+		"it": "Malaga"
+	},
+	"male-maldives": { "it": "Male" },
+	"malmo-sweden": { "da": "Malmø" },
+	"manchester-unitedkingdom": { "es": "Mánchester" },
+	"manila-philippines": { "fr": "Manille" },
+	"marseille-france": {
+		"es": "Marsella",
+		"it": "Marsiglia",
+		"pt": "Marselha"
+	},
+	"mazatlan-mexico": {
+		"da": "Mazatlán",
+		"de": "Mazatlán",
+		"es": "Mazatlán",
+		"fr": "Mazatlán",
+		"it": "Mazatlán",
+		"pt": "Mazatlán"
+	},
+	"mechelen-belgium": {
+		"es": "Malinas",
+		"fr": "Malines",
+		"it": "Malines"
+	},
+	"menton-france": { "it": "Mentone" },
+	"merano-italy": {
+		"da": "Meran",
+		"de": "Meran",
+		"fr": "Mérano"
+	},
+	"messina-italy": {
+		"es": "Mesina",
+		"fr": "Messine"
+	},
+	"mexico-city-mexico": {
+		"de": "Mexiko-Stadt",
+		"es": "Ciudad de México",
+		"fr": "Mexico",
+		"it": "Città del Messico",
+		"pt": "Cidade do México"
+	},
+	"miedzyzdroje-poland": {
+		"es": "Miendzyzdroje",
+		"fr": "Miendzyzdroje",
+		"it": "Miendzyzdroje",
+		"pt": "Miendzyzdroje"
+	},
+	"milan-italy": {
+		"da": "Milano",
+		"de": "Mailand",
+		"es": "Milán",
+		"it": "Milano",
+		"pt": "Milão"
+	},
+	"modena-italy": {
+		"es": "Módena",
+		"fr": "Modène",
+		"pt": "Módena"
+	},
+	"modica-italy": { "pt": "Módica" },
+	"mombasa-kenya": { "pt": "Mombaça" },
+	"monterey-united-states": { "es": "Monterrey" },
+	"monterrey-mexico": { "pt": "Monterrei" },
+	"montevideo-uruguay": { "pt": "Montevidéu" },
+	"montreal-canada": {
+		"fr": "Montréal",
+		"it": "Montréal"
+	},
+	"mui-ne-vietnam": {
+		"de": "Mũi Né",
+		"fr": "Mũi Né"
+	},
+	"mulhouse-france": { "de": "Mülhausen" },
+	"munich-germany": {
+		"da": "München",
+		"de": "München",
+		"es": "Múnich",
+		"it": "Monaco di Baviera",
+		"pt": "Munique"
+	},
+	"murcia-spain": {
+		"fr": "Murcie",
+		"pt": "Múrcia"
+	},
+	"muscat-oman": {
+		"de": "Maskat",
+		"es": "Mascate",
+		"fr": "Mascate",
+		"it": "Mascate",
+		"pt": "Mascate"
+	},
+	"mytilene-greece": {
+		"da": "Mytilini",
+		"de": "Mytilini",
+		"es": "Mitilene",
+		"fr": "Mytilène",
+		"it": "Mitilene",
+		"pt": "Mitilene"
+	},
+	"nafplio-greece": {
+		"es": "Nauplia",
+		"fr": "Nauplie",
+		"it": "Nauplia",
+		"pt": "Náuplia"
+	},
+	"nagoya-japan": { "pt": "Nagoia" },
+	"nairobi-kenya": { "pt": "Nairóbi" },
+	"nanjing-china": {
+		"es": "Nankín",
+		"fr": "Nankin",
+		"it": "Nanchino",
+		"pt": "Nanquim"
+	},
+	"naples-florida-united-states": {
+		"da": "Naples",
+		"de": "Naples",
+		"es": "Naples",
+		"fr": "Naples",
+		"it": "Naples",
+		"pt": "Naples"
+	},
+	"naples-italy": {
+		"da": "Napoli",
+		"de": "Neapel",
+		"es": "Nápoles",
+		"it": "Napoli",
+		"pt": "Nápoles"
+	},
+	"narbonne-france": {
+		"es": "Narbona",
+		"it": "Narbona",
+		"pt": "Narbona"
+	},
+	"new-delhi-india": {
+		"de": "Neu-Delhi",
+		"es": "Nueva Delhi",
+		"it": "Nuova Delhi",
+		"pt": "Nova Deli"
+	},
+	"new-orleans-unitedstates": {
+		"es": "Nueva Orleans",
+		"fr": "La Nouvelle-Orléans",
+		"pt": "Nova Orleães"
+	},
+	"new-york-unitedstates": {
+		"es": "Nueva York",
+		"pt": "Nova Iorque"
+	},
+	"newport-rhode-island-united-states": {
+		"da": "Newport",
+		"de": "Newport",
+		"es": "Newport",
+		"fr": "Newport",
+		"it": "Newport",
+		"pt": "Newport"
+	},
+	"nice-france": {
+		"de": "Nizza",
+		"es": "Niza",
+		"it": "Nizza"
+	},
+	"nicosia-cyprus": {
+		"de": "Nikosia",
+		"fr": "Nicosie",
+		"pt": "Nicósia"
+	},
+	"nijmegen-netherlands": {
+		"es": "Nimega",
+		"fr": "Nimègue",
+		"it": "Nimega",
+		"pt": "Nimega"
+	},
+	"nimes-france": { "es": "Nimes" },
+	"nuremberg-germany": {
+		"da": "Nürnberg",
+		"de": "Nürnberg",
+		"es": "Núremberg",
+		"it": "Norimberga",
+		"pt": "Nuremberga"
+	},
+	"odz-poland": { "es": "Lodz" },
+	"ohrid-northmacedonia": { "it": "Ocrida" },
+	"oia-greece": { "de": "Ia" },
+	"opatija-croatia": { "it": "Abbazia" },
+	"oristano-italy": { "es": "Oristán" },
+	"orleans-france": {
+		"es": "Orleans",
+		"pt": "Orleães"
+	},
+	"ostend-belgium": {
+		"da": "Oostende",
+		"de": "Ostende",
+		"es": "Ostende",
+		"fr": "Ostende",
+		"it": "Ostenda",
+		"pt": "Oostende"
+	},
+	"oulu-finland": { "da": "Uleåborg" },
+	"ourense-spain": { "es": "Orense" },
+	"pakse-laos": {
+		"da": "Pakxe",
+		"es": "Pāksē",
+		"fr": "Pakxé",
+		"it": "Pāksē",
+		"pt": "Pakxe"
+	},
+	"palermo-italy": { "fr": "Palerme" },
+	"palma-spain": {
+		"da": "Palma de Mallorca",
+		"es": "Palma de Mallorca",
+		"it": "Palma di Maiorca",
+		"pt": "Palma de Maiorca"
+	},
+	"pamplona-spain": { "fr": "Pampelune" },
+	"panama-city-panama": {
+		"de": "Panama-Stadt",
+		"es": "Ciudad de Panamá",
+		"fr": "Panama",
+		"it": "Panama",
+		"pt": "Cidade do Panamá"
+	},
+	"paphos-cyprus": {
+		"da": "Pafos",
+		"es": "Pafos",
+		"it": "Pafo",
+		"pt": "Pafos"
+	},
+	paris: {
+		"es": "París",
+		"it": "Parigi"
+	},
+	"parma-italy": { "fr": "Parme" },
+	"passau-germany": { "it": "Passavia" },
+	"perpignan-france": {
+		"es": "Perpiñán",
+		"it": "Perpignano",
+		"pt": "Perpinhã"
+	},
+	"perugia-italy": {
+		"fr": "Pérouse",
+		"pt": "Perúgia"
+	},
+	"pesaro-italy": { "es": "Pésaro" },
+	"philadelphia-unitedstates": {
+		"es": "Filadelfia",
+		"fr": "Philadelphie",
+		"it": "Filadelfia",
+		"pt": "Filadélfia"
+	},
+	"phnom-penh-cambodia": { "es": "Nom Pen" },
+	"piacenza-italy": {
+		"fr": "Plaisance",
+		"pt": "Placência"
+	},
+	"pisa-italy": { "fr": "Pise" },
+	"plasencia-spain": { "fr": "Plasence" },
+	"plovdiv-bulgaria": { "de": "Plowdiw" },
+	"pompei-italy": {
+		"es": "Pompeya",
+		"fr": "Pompéi",
+		"pt": "Pompeia"
+	},
+	"porec-croatia": {
+		"it": "Parenzo",
+		"pt": "Porec"
+	},
+	"porto-portugal": { "es": "Oporto" },
+	"porto-vecchio-france": {
+		"es": "Porto Vecchio",
+		"it": "Porto Vecchio"
+	},
+	"poznan-poland": { "de": "Posen" },
+	"prague-czechia": {
+		"da": "Prag",
+		"de": "Prag",
+		"es": "Praga",
+		"it": "Praga",
+		"pt": "Praga"
+	},
+	"pula-croatia": { "it": "Pola" },
+	"quebec-city-canada": {
+		"da": "Québec",
+		"de": "Québec",
+		"es": "Quebec",
+		"fr": "Québec",
+		"it": "Québec",
+		"pt": "Quebec"
+	},
+	"quedlinburg-germany": { "fr": "Quedlinbourg" },
+	"ragusa-italy": { "fr": "Raguse" },
+	"ravenna-italy": {
+		"es": "Ravena",
+		"fr": "Ravenne",
+		"pt": "Ravena"
+	},
+	"regensburg-germany": {
+		"es": "Ratisbona",
+		"fr": "Ratisbonne",
+		"it": "Ratisbona",
+		"pt": "Ratisbona"
+	},
+	"reggio-emilia-italy": {
+		"de": "Reggio nell'Emilia",
+		"fr": "Reggio d'Émilie"
+	},
+	"rethymno-greece": {
+		"da": "Rethimno",
+		"fr": "Réthymnon",
+		"pt": "Retimno"
+	},
+	"reykjavik-iceland": {
+		"da": "Reykjavik",
+		"es": "Reikiavik",
+		"fr": "Reykjavik"
+	},
+	"rhodes-greece": {
+		"da": "Rhodos",
+		"de": "Rhodos",
+		"es": "Rodas",
+		"it": "Rodi",
+		"pt": "Rodes"
+	},
+	"rimini-italy": { "es": "Rímini" },
+	"rio-de-janeiro-brazil": { "es": "Río de Janeiro" },
+	"riyadh-saudiarabia": {
+		"de": "Riad",
+		"es": "Riad",
+		"fr": "Riyad",
+		"it": "Riad",
+		"pt": "Riade"
+	},
+	rome: {
+		"da": "Rom",
+		"de": "Rom",
+		"es": "Roma",
+		"it": "Roma",
+		"pt": "Roma"
+	},
+	"roses-spain": { "es": "Rosas" },
+	"rotterdam-netherlands": {
+		"es": "Róterdam",
+		"pt": "Roterdão"
+	},
+	"rouen-france": {
+		"es": "Ruan",
+		"pt": "Ruão"
+	},
+	"rovinj-croatia": {
+		"es": "Roviño",
+		"it": "Rovigno"
+	},
+	"rzeszow-poland": {
+		"es": "Resovia",
+		"it": "Resovia"
+	},
+	"saarbrucken-germany": {
+		"es": "Sarrebruck",
+		"fr": "Sarrebruck"
+	},
+	"saint-jean-de-luz-france": { "es": "San Juan de Luz" },
+	"salalah-oman": { "de": "Salala" },
+	"salamanca-spain": { "fr": "Salamanque" },
+	"salerno-italy": { "fr": "Salerne" },
+	"salzburg-austria": {
+		"es": "Salzburgo",
+		"fr": "Salzbourg",
+		"it": "Salisburgo",
+		"pt": "Salzburgo"
+	},
+	"samsun-turkiye": { "pt": "Samessum" },
+	"san-cristobal-de-las-casas-mexico": {
+		"es": "San Cristóbal de Las Casas",
+		"fr": "San Cristóbal de Las Casas",
+		"it": "San Cristóbal de Las Casas"
+	},
+	"san-francisco-unitedstates": { "pt": "São Francisco" },
+	"san-jose-united-states": {
+		"de": "San José",
+		"es": "San José",
+		"fr": "San José",
+		"pt": "São José"
+	},
+	"san-sebastian-spain": {
+		"de": "Donostia-San Sebastián",
+		"fr": "Saint-Sébastien"
+	},
+	"sanremo-italy": { "es": "San Remo" },
+	"santa-barbara-united-states": {
+		"es": "Santa Bárbara",
+		"pt": "Santa Bárbara"
+	},
+	"santa-cruz-de-tenerife-spain": { "fr": "Santa Cruz de Ténérife" },
+	"santa-fe-argentina": { "pt": "Santa Fé" },
+	"santa-fe-united-states": { "pt": "Santa Fé" },
+	"santiago-chile": {
+		"da": "Santiago de Chile",
+		"de": "Santiago de Chile",
+		"es": "Santiago de Chile",
+		"it": "Santiago del Cile"
+	},
+	"santiago-de-compostela-spain": {
+		"fr": "Saint-Jacques-de-Compostelle",
+		"it": "Santiago di Compostela"
+	},
+	"santo-domingo-dominicanrepublic": {
+		"fr": "Saint-Domingue",
+		"pt": "São Domingos"
+	},
+	"sao-paulo-brazil": { "it": "San Paolo" },
+	"sarande-albania": {
+		"de": "Saranda",
+		"fr": "Saranda",
+		"it": "Saranda"
+	},
+	"segovia-spain": {
+		"fr": "Ségovie",
+		"pt": "Segóvia"
+	},
+	"seoul-southkorea": {
+		"es": "Seúl",
+		"fr": "Séoul",
+		"it": "Seul",
+		"pt": "Seul"
+	},
+	"seville-spain": {
+		"da": "Sevilla",
+		"de": "Sevilla",
+		"es": "Sevilla",
+		"fr": "Séville",
+		"it": "Siviglia",
+		"pt": "Sevilha"
+	},
+	"shanghai-china": {
+		"es": "Shanghái",
+		"fr": "Shanghaï",
+		"pt": "Xangai"
+	},
+	"sharjah-unitedarabemirates": {
+		"de": "Schardscha",
+		"es": "Sarja",
+		"fr": "Charjah",
+		"it": "Sharja",
+		"pt": "Xarja"
+	},
+	"sharm-el-sheikh-egypt": {
+		"da": "Sharm el-Sheikh",
+		"de": "Scharm asch-Schaich",
+		"es": "Sharm el-Sheij",
+		"fr": "Charm el-Cheikh",
+		"it": "Sharm el-Sheikh",
+		"pt": "Sharm el-Sheikh"
+	},
+	"sibenik-croatia": { "it": "Sebenico" },
+	"side-turkiye": {
+		"fr": "Sidé",
+		"pt": "Sida"
+	},
+	"siem-reap-cambodia": { "es": "Siem Riep" },
+	"siena-italy": { "fr": "Sienne" },
+	"siliguri-india": {
+		"de": "Shiliguri",
+		"pt": "Shiliguri"
+	},
+	"singapore-singapore": {
+		"de": "Singapur",
+		"es": "Singapur",
+		"fr": "Singapour",
+		"pt": "Singapura"
+	},
+	"skopje-northmacedonia": { "es": "Skopie" },
+	"sofia-bulgaria": {
+		"es": "Sofía",
+		"pt": "Sófia"
+	},
+	"soria-spain": { "pt": "Sória" },
+	"sorrento-italy": {
+		"de": "Sorrent",
+		"fr": "Sorrente"
+	},
+	"split-croatia": { "it": "Spalato" },
+	"spoleto-italy": { "fr": "Spolète" },
+	"st-albans-unitedkingdom": { "de": "St. Albans" },
+	"st-andrews-united-kingdom": {
+		"es": "Saint Andrews",
+		"it": "Saint Andrews",
+		"pt": "St. Andrews"
+	},
+	"st-augustine-united-states": {
+		"da": "Saint Augustine",
+		"es": "San Agustín",
+		"pt": "Saint Augustine"
+	},
+	"st-gallen-switzerland": {
+		"da": "Sankt Gallen",
+		"es": "San Galo",
+		"fr": "Saint-Gall",
+		"it": "San Gallo",
+		"pt": "São Galo"
+	},
+	"st-john-s-canada": {
+		"es": "San Juan de Terranova",
+		"fr": "Saint-Jean de Terre-Neuve",
+		"pt": "São João da Terra Nova"
+	},
+	"stockholm-sweden": {
+		"es": "Estocolmo",
+		"it": "Stoccolma",
+		"pt": "Estocolmo"
+	},
+	"strasbourg-france": {
+		"de": "Straßburg",
+		"es": "Estrasburgo",
+		"it": "Strasburgo",
+		"pt": "Estrasburgo"
+	},
+	"stuttgart-germany": {
+		"it": "Stoccarda",
+		"pt": "Estugarda"
+	},
+	"sunderland-united-kingdom": { "it": "City of Sunderland" },
+	"surabaya-indonesia": { "pt": "Surabaia" },
+	"swinoujscie-poland": { "de": "Swinemünde" },
+	"sydney-australia": { "es": "Sídney" },
+	"syracuse-italy": {
+		"da": "Siracusa",
+		"de": "Syrakus",
+		"es": "Siracusa",
+		"it": "Siracusa",
+		"pt": "Siracusa"
+	},
+	"szczecin-poland": {
+		"da": "Stettin",
+		"de": "Stettin",
+		"it": "Stettino",
+		"pt": "Estetino"
+	},
+	"ta-if-saudi-arabia": {
+		"es": "Taif",
+		"fr": "Taëf",
+		"pt": "Ta’if"
+	},
+	"taipei-taiwan": {
+		"de": "Taipeh",
+		"es": "Taipéi",
+		"pt": "Taipé"
+	},
+	"tallinn-estonia": { "es": "Tallin" },
+	"tampere-finland": { "da": "Tammerfors" },
+	"tangier-morocco": {
+		"da": "Tanger",
+		"de": "Tanger",
+		"es": "Tánger",
+		"fr": "Tanger",
+		"it": "Tangeri",
+		"pt": "Tânger"
+	},
+	"taormina-italy": { "fr": "Taormine" },
+	"taranto-italy": {
+		"de": "Tarent",
+		"es": "Tarento",
+		"fr": "Tarente",
+		"pt": "Tarento"
+	},
+	"tarragona-spain": { "fr": "Tarragone" },
+	"tbilisi-georgia": {
+		"de": "Tiflis",
+		"es": "Tiflis",
+		"fr": "Tbilissi",
+		"pt": "Tiblíssi"
+	},
+	"tel-aviv-israel": { "de": "Tel Aviv-Jaffa" },
+	"terrassa-spain": { "es": "Tarrasa" },
+	"the-hague-netherlands": {
+		"da": "Haag",
+		"de": "Den Haag",
+		"es": "La Haya",
+		"fr": "La Haye",
+		"it": "L'Aia",
+		"pt": "Haia"
+	},
+	"thessaloniki-greece": {
+		"es": "Salónica",
+		"fr": "Thessalonique",
+		"it": "Salonicco",
+		"pt": "Salonica"
+	},
+	"thun-switzerland": {
+		"fr": "Thoune",
+		"pt": "Tune"
+	},
+	"tilburg-netherlands": {
+		"fr": "Tilbourg",
+		"pt": "Tilburgo"
+	},
+	tokyo: {
+		"de": "Tokio",
+		"es": "Tokio",
+		"pt": "Tóquio"
+	},
+	"toledo-spain": { "fr": "Tolède" },
+	"torshavn-faroe-islands": { "da": "Thorshavn" },
+	"torun-poland": { "es": "Torún" },
+	"toulon-france": {
+		"es": "Tolón",
+		"it": "Tolone"
+	},
+	"toulouse-france": { "it": "Tolosa" },
+	"trabzon-turkiye": {
+		"es": "Trebisonda",
+		"it": "Trebisonda",
+		"pt": "Trebizonda"
+	},
+	"trapani-italy": { "pt": "Trápani" },
+	"trento-italy": {
+		"de": "Trient",
+		"fr": "Trente"
+	},
+	"treviso-italy": { "fr": "Trévise" },
+	"trieste-italy": { "de": "Triest" },
+	"trogir-croatia": { "it": "Traù" },
+	"truro-unitedkingdom": { "it": "Trurone" },
+	"tubingen-germany": {
+		"es": "Tubinga",
+		"it": "Tubinga",
+		"pt": "Tubinga"
+	},
+	"tunis-tunisia": {
+		"es": "Túnez",
+		"it": "Tunisi",
+		"pt": "Tunes"
+	},
+	"turin-italy": {
+		"da": "Torino",
+		"es": "Turín",
+		"it": "Torino",
+		"pt": "Turim"
+	},
+	"turku-finland": { "da": "Åbo" },
+	"udine-italy": { "es": "Údine" },
+	"ulaanbaatar-mongolia": {
+		"da": "Ulan Bator",
+		"es": "Ulán Bator",
+		"fr": "Oulan-Bator",
+		"it": "Ulan Bator",
+		"pt": "Ulã Bator"
+	},
+	"uppsala-sweden": { "es": "Upsala" },
+	"ushuaia-argentina": { "fr": "Ushuaïa" },
+	"utrecht-netherlands": { "pt": "Utreque" },
+	"vaasa-finland": { "da": "Vasa" },
+	"valencia-spain": {
+		"fr": "Valence",
+		"pt": "Valência"
+	},
+	"valkenburg-netherlands": { "fr": "Fauquemont" },
+	"valletta-malta": {
+		"es": "La Valeta",
+		"fr": "La Valette",
+		"it": "La Valletta",
+		"pt": "Valeta"
+	},
+	"varanasi-india": {
+		"es": "Benarés",
+		"fr": "Bénarès"
+	},
+	"varese-italy": { "fr": "Varèse" },
+	"varna-bulgaria": { "de": "Warna" },
+	"venice-italy": {
+		"da": "Venedig",
+		"de": "Venedig",
+		"es": "Venecia",
+		"fr": "Venise",
+		"it": "Venezia",
+		"pt": "Veneza"
+	},
+	"verona-italy": { "fr": "Vérone" },
+	"vicenza-italy": { "fr": "Vicence" },
+	"victoria-canada": { "pt": "Vitória" },
+	"vienna-austria": {
+		"da": "Wien",
+		"de": "Wien",
+		"es": "Viena",
+		"fr": "Vienne",
+		"pt": "Viena"
+	},
+	"vientiane-laos": {
+		"es": "Vientián",
+		"pt": "Vienciana"
+	},
+	"villach-austria": { "it": "Villaco" },
+	"vilnius-lithuania": { "es": "Vilna" },
+	"viseu-portugal": { "es": "Viseo" },
+	"viterbo-italy": { "fr": "Viterbe" },
+	"vitoria-gasteiz-spain": {
+		"es": "Vitoria",
+		"it": "Vitoria"
+	},
+	"vodice-croatia": { "it": "Vodizze" },
+	"volos-greece": {
+		"fr": "Vólos",
+		"it": "Volo",
+		"pt": "Vólos"
+	},
+	"warsaw-poland": {
+		"da": "Warszawa",
+		"de": "Warschau",
+		"es": "Varsovia",
+		"fr": "Varsovie",
+		"it": "Varsavia",
+		"pt": "Varsóvia"
+	},
+	"wilmington-north-carolina-united-states": {
+		"da": "Wilmington",
+		"de": "Wilmington",
+		"es": "Wilmington",
+		"fr": "Wilmington",
+		"it": "Wilmington",
+		"pt": "Wilmington"
+	},
+	"wolfsburg-germany": { "es": "Wolfsburgo" },
+	"wrocaw-poland": {
+		"de": "Breslau",
+		"es": "Breslavia",
+		"it": "Breslavia",
+		"pt": "Breslávia"
+	},
+	"wurzburg-germany": {
+		"es": "Wurzburgo",
+		"fr": "Wurtzbourg",
+		"pt": "Wurtzburgo"
+	},
+	"yangon-myanmar": {
+		"de": "Rangun",
+		"es": "Rangún",
+		"fr": "Rangoun",
+		"pt": "Rangum"
+	},
+	"yaounde-cameroon": {
+		"da": "Yaoundé",
+		"de": "Yaoundé",
+		"es": "Yaundé",
+		"fr": "Yaoundé",
+		"it": "Yaoundé",
+		"pt": "Iaundé"
+	},
+	"yerevan-armenia": {
+		"da": "Jerevan",
+		"de": "Jerewan",
+		"es": "Ereván",
+		"fr": "Erevan",
+		"it": "Erevan",
+		"pt": "Erevã"
+	},
+	"yogyakarta-indonesia": { "pt": "Joguejacarta" },
+	"york-unitedkingdom": { "pt": "Iorque" },
+	"zadar-croatia": { "it": "Zara" },
+	"zagreb-croatia": { "it": "Zagabria" },
+	"zakynthos-greece": {
+		"es": "Zacinto",
+		"it": "Zante"
+	},
+	"zanzibar-city-tanzania": {
+		"da": "Zanzibar by",
+		"de": "Sansibar Stadt",
+		"es": "Zanzíbar",
+		"fr": "Zanzibar",
+		"it": "Zanzibar",
+		"pt": "Zanzibar"
+	},
+	"zaragoza-spain": {
+		"de": "Saragossa",
+		"fr": "Saragosse",
+		"it": "Saragozza",
+		"pt": "Saragoça"
+	},
+	"zurich-switzerland": {
+		"da": "Zürich",
+		"de": "Zürich",
+		"es": "Zúrich",
+		"it": "Zurigo",
+		"pt": "Zurique"
+	}
+};
+/** Localized city names (es/de/fr/it/pt/da) from Wikidata labels, built by tools/city-names/build.py.
+*  Only stored when different from the English name; anything missing falls back to English. */
+/** Date of the last real content change (picks, templates, texts). Used as <lastmod> in the sitemaps
+*  instead of the old data-snapshot date, so search engines re-crawl after real changes only. */
+var CONTENT_DATE = "2026-11-14";
+/** Country name in the page language (Romania -> Rumanía), from the ISO code stored with every city. */
+async function countryLocal(cslug, L, fallback) {
+	try {
+		const { byCountry } = await data();
+		const cc = (byCountry.get(cslug)?.[0])?.cc;
+		if (!cc || L === "en") return fallback;
+		return new Intl.DisplayNames([L], { type: "region" }).of(cc.toUpperCase()) ?? fallback;
+	} catch {
+		return fallback;
+	}
+}
+/** Keyword-first <title> and description for the language home pages (searchers type "mejores hoteles", not the brand). */
+var HOME_SEO = {
+	en: {
+		title: "Top 3 Hotels in Every City: Budget, Value & Luxury",
+		description: ""
+	},
+	es: {
+		title: "Los 3 mejores hoteles de cada ciudad (2026) | Top3Hotels",
+		description: "Los 3 mejores hoteles en 1.295 ciudades: uno económico, uno calidad-precio y uno de lujo. Notas reales de huéspedes, sin rankings pagados. Elige en 10 segundos."
+	},
+	de: {
+		title: "Die 3 besten Hotels in jeder Stadt (2026) | Top3Hotels",
+		description: "Die 3 besten Hotels in 1.295 Städten: günstig, bestes Preis-Leistungs-Verhältnis und Luxus. Echte Gästebewertungen, keine gekauften Rankings."
+	},
+	fr: {
+		title: "Les 3 meilleurs hôtels de chaque ville (2026) | Top3Hotels",
+		description: "Les 3 meilleurs hôtels dans 1 295 villes : petit budget, meilleur rapport qualité-prix et luxe. Vraies notes clients, aucun classement payé."
+	},
+	it: {
+		title: "I 3 migliori hotel di ogni città (2026) | Top3Hotels",
+		description: "I 3 migliori hotel in 1.295 città: economico, miglior rapporto qualità-prezzo e lusso. Voti reali degli ospiti, nessuna classifica a pagamento."
+	},
+	pt: {
+		title: "Os 3 melhores hotéis de cada cidade (2026) | Top3Hotels",
+		description: "Os 3 melhores hotéis em 1295 cidades: económico, melhor qualidade-preço e luxo. Notas reais de hóspedes, sem rankings pagos."
+	},
+	da: {
+		title: "De 3 bedste hoteller i hver by (2026) | Top3Hotels",
+		description: "De 3 bedste hoteller i 1.295 byer: billigt, mest for pengene og luksus. Ægte gæstekarakterer, ingen betalte placeringer."
+	}
+};
+/** Extra crawlable content for the non-English home pages (they had ~390 words and no FAQ). */
+var HOME_EXTRA = {
+	es: {
+		cities: "Ciudades más buscadas",
+		countries: "Hoteles por país",
+		how: "Cómo elegimos los 3 hoteles",
+		steps: [
+			"Miramos los hoteles que Booking.com devuelve para la misma estancia en cada ciudad.",
+			"Descartamos los que tienen pocas reseñas o nota baja (menos de 8 sobre 10).",
+			"Nos quedamos con uno económico, uno calidad-precio y uno de lujo. Nadie paga por salir."
+		],
+		faqH: "Preguntas frecuentes",
+		faq: [
+			["¿Cuáles son los mejores hoteles de una ciudad?", "Para cada una de las 1.295 ciudades elegimos tres: el económico mejor valorado, el de mejor calidad-precio y el mejor hotel de lujo, con notas reales de huéspedes."],
+			["¿Los hoteles pagan por aparecer?", "No. La selección sigue reglas públicas y ningún hotel puede pagar para entrar. Ganamos una comisión si reservas en Booking.com, sin coste extra para ti."],
+			["¿Los precios son en directo?", "Son precios de referencia de una estancia de 2 noches para 2 adultos. El precio final lo ves en Booking.com antes de pagar."],
+			["¿En cuántas ciudades hay hoteles?", "En 1.295 ciudades de más de 120 países, con páginas en español, inglés, alemán, francés, italiano, portugués y danés."]
+		]
+	},
+	de: {
+		cities: "Beliebte Städte",
+		countries: "Hotels nach Land",
+		how: "So wählen wir die 3 Hotels",
+		steps: [
+			"Wir prüfen die Hotels, die Booking.com für denselben Aufenthalt in jeder Stadt anzeigt.",
+			"Hotels mit wenigen Bewertungen oder einer Note unter 8 von 10 fallen raus.",
+			"Übrig bleiben ein günstiges, eins mit bestem Preis-Leistungs-Verhältnis und ein Luxushotel. Niemand zahlt für einen Platz."
+		],
+		faqH: "Häufige Fragen",
+		faq: [
+			["Welche Hotels sind die besten in einer Stadt?", "Für jede der 1.295 Städte wählen wir drei: das bestbewertete günstige Hotel, das mit dem besten Preis-Leistungs-Verhältnis und das beste Luxushotel."],
+			["Zahlen Hotels für ihren Platz?", "Nein. Die Auswahl folgt öffentlichen Regeln. Wir erhalten eine Provision, wenn Sie über Booking.com buchen, ohne Mehrkosten für Sie."],
+			["Sind die Preise live?", "Es sind Referenzpreise für 2 Nächte und 2 Erwachsene. Den aktuellen Preis sehen Sie bei Booking.com vor der Zahlung."],
+			["Wie viele Städte gibt es?", "1.295 Städte in über 120 Ländern."]
+		]
+	},
+	fr: {
+		cities: "Villes les plus recherchées",
+		countries: "Hôtels par pays",
+		how: "Comment nous choisissons les 3 hôtels",
+		steps: [
+			"Nous regardons les hôtels proposés par Booking.com pour le même séjour dans chaque ville.",
+			"Nous écartons ceux qui ont peu d'avis ou une note inférieure à 8 sur 10.",
+			"Nous gardons un petit budget, un meilleur rapport qualité-prix et un luxe. Personne ne paie pour figurer."
+		],
+		faqH: "Questions fréquentes",
+		faq: [
+			["Quels sont les meilleurs hôtels d'une ville ?", "Pour chacune des 1 295 villes, nous en retenons trois : le petit budget le mieux noté, le meilleur rapport qualité-prix et le meilleur hôtel de luxe."],
+			["Les hôtels paient-ils pour apparaître ?", "Non. La sélection suit des règles publiques. Nous touchons une commission si vous réservez sur Booking.com, sans surcoût pour vous."],
+			["Les prix sont-ils en direct ?", "Ce sont des prix de référence pour 2 nuits et 2 adultes. Le prix final s'affiche sur Booking.com avant de payer."],
+			["Combien de villes ?", "1 295 villes dans plus de 120 pays."]
+		]
+	},
+	it: {
+		cities: "Città più cercate",
+		countries: "Hotel per paese",
+		how: "Come scegliamo i 3 hotel",
+		steps: [
+			"Guardiamo gli hotel che Booking.com propone per lo stesso soggiorno in ogni città.",
+			"Scartiamo quelli con poche recensioni o voto sotto 8 su 10.",
+			"Teniamo un economico, uno con il miglior rapporto qualità-prezzo e uno di lusso. Nessuno paga per esserci."
+		],
+		faqH: "Domande frequenti",
+		faq: [
+			["Quali sono i migliori hotel di una città?", "Per ognuna delle 1.295 città ne scegliamo tre: l'economico meglio valutato, il miglior qualità-prezzo e il miglior hotel di lusso."],
+			["Gli hotel pagano per comparire?", "No. La selezione segue regole pubbliche. Riceviamo una commissione se prenoti su Booking.com, senza costi in più per te."],
+			["I prezzi sono in tempo reale?", "Sono prezzi di riferimento per 2 notti e 2 adulti. Il prezzo finale lo vedi su Booking.com prima di pagare."],
+			["Quante città?", "1.295 città in oltre 120 paesi."]
+		]
+	},
+	pt: {
+		cities: "Cidades mais procuradas",
+		countries: "Hotéis por país",
+		how: "Como escolhemos os 3 hotéis",
+		steps: [
+			"Vemos os hotéis que a Booking.com mostra para a mesma estadia em cada cidade.",
+			"Excluímos os que têm poucas avaliações ou nota abaixo de 8 em 10.",
+			"Ficamos com um económico, um com melhor qualidade-preço e um de luxo. Ninguém paga para aparecer."
+		],
+		faqH: "Perguntas frequentes",
+		faq: [
+			["Quais são os melhores hotéis de uma cidade?", "Para cada uma das 1295 cidades escolhemos três: o económico mais bem avaliado, o de melhor qualidade-preço e o melhor hotel de luxo."],
+			["Os hotéis pagam para aparecer?", "Não. A seleção segue regras públicas. Recebemos uma comissão se reservar na Booking.com, sem custo extra."],
+			["Os preços são em tempo real?", "São preços de referência para 2 noites e 2 adultos. O preço final aparece na Booking.com antes de pagar."],
+			["Quantas cidades?", "1295 cidades em mais de 120 países."]
+		]
+	},
+	da: {
+		cities: "Mest søgte byer",
+		countries: "Hoteller efter land",
+		how: "Sådan vælger vi de 3 hoteller",
+		steps: [
+			"Vi ser på de hoteller, Booking.com viser for samme ophold i hver by.",
+			"Vi fjerner dem med få anmeldelser eller en karakter under 8 ud af 10.",
+			"Tilbage er et billigt, et med mest for pengene og et luksushotel. Ingen betaler for en plads."
+		],
+		faqH: "Ofte stillede spørgsmål",
+		faq: [
+			["Hvilke hoteller er de bedste i en by?", "For hver af de 1.295 byer vælger vi tre: det bedst bedømte billige hotel, det med mest for pengene og det bedste luksushotel."],
+			["Betaler hotellerne for at være med?", "Nej. Udvælgelsen følger offentlige regler. Vi får provision, hvis du booker på Booking.com, uden ekstra pris for dig."],
+			["Er priserne live?", "Det er referencepriser for 2 nætter og 2 voksne. Den endelige pris ser du på Booking.com før betaling."],
+			["Hvor mange byer?", "1.295 byer i over 120 lande."]
+		]
+	}
+};
+var CN = city_names_default;
+var cityName = (c, L) => L === "en" ? c.city : CN[c.id]?.[L] ?? c.city;
 var js = (o) => o;
 var Y = {
 	en: {
@@ -2035,7 +4008,7 @@ var Z = {
 		accept: "Accept",
 		reject: "Reject",
 		more: "Cookie policy",
-		filming: (c) => `Hotels in ${c}: we're filming our ${c} picks in late October 2026`,
+		filming: (c) => `Hotels in ${c}: be part of our ${c} videos`,
 		filmingLead: "Want your hotel in our videos and featured as a labelled partner on this page? Tell us now, we confirm one hotel per category.",
 		hotelsTitle: (c) => `Run a hotel in ${c}?`,
 		hotelsLead: "Get a free badge for your website, see how travellers find you, or apply for a labelled partner feature with photos and video.",
@@ -2047,7 +4020,7 @@ var Z = {
 		accept: "Aceptar",
 		reject: "Rechazar",
 		more: "Política de cookies",
-		filming: (c) => `Hoteles de ${c}: grabamos nuestra selección de ${c} a finales de octubre de 2026`,
+		filming: (c) => `Hoteles de ${c}: aparece en nuestros vídeos de ${c}`,
 		filmingLead: "¿Quieres tu hotel en nuestros vídeos y destacado como partner (siempre etiquetado) en esta página? Escríbenos ya, confirmamos un hotel por categoría.",
 		hotelsTitle: (c) => `¿Tienes un hotel en ${c}?`,
 		hotelsLead: "Consigue un sello gratis para tu web, descubre cómo te encuentran los viajeros o solicita aparecer como partner etiquetado con fotos y vídeo.",
@@ -2059,7 +4032,7 @@ var Z = {
 		accept: "Akzeptieren",
 		reject: "Ablehnen",
 		more: "Cookie-Richtlinie",
-		filming: (c) => `Hotels in ${c}: Ende Oktober 2026 filmen wir unsere Auswahl in ${c}`,
+		filming: (c) => `Hotels in ${c}: Seien Sie in unseren Videos aus ${c} dabei`,
 		filmingLead: "Möchtest du dein Hotel in unseren Videos und als gekennzeichneten Partner auf dieser Seite? Melde dich jetzt, wir bestätigen ein Hotel pro Kategorie.",
 		hotelsTitle: (c) => `Du führst ein Hotel in ${c}?`,
 		hotelsLead: "Hol dir ein kostenloses Siegel für deine Website oder bewirb dich als gekennzeichneter Partner mit Fotos und Video.",
@@ -2071,7 +4044,7 @@ var Z = {
 		accept: "Accepter",
 		reject: "Refuser",
 		more: "Politique cookies",
-		filming: (c) => `Hôtels à ${c} : nous filmons notre sélection à ${c} fin octobre 2026`,
+		filming: (c) => `Hôtels à ${c} : apparaissez dans nos vidéos de ${c}`,
 		filmingLead: "Votre hôtel dans nos vidéos et mis en avant comme partenaire (toujours signalé) sur cette page ? Écrivez-nous, nous confirmons un hôtel par catégorie.",
 		hotelsTitle: (c) => `Vous gérez un hôtel à ${c} ?`,
 		hotelsLead: "Obtenez un badge gratuit pour votre site ou proposez-vous comme partenaire signalé, avec photos et vidéo.",
@@ -2083,7 +4056,7 @@ var Z = {
 		accept: "Accetta",
 		reject: "Rifiuta",
 		more: "Cookie policy",
-		filming: (c) => `Hotel a ${c}: a fine ottobre 2026 filmiamo la nostra selezione di ${c}`,
+		filming: (c) => `Hotel a ${c}: entra nei nostri video su ${c}`,
 		filmingLead: "Vuoi il tuo hotel nei nostri video e in evidenza come partner (sempre indicato) su questa pagina? Scrivici, confermiamo un hotel per categoria.",
 		hotelsTitle: (c) => `Gestisci un hotel a ${c}?`,
 		hotelsLead: "Ottieni un badge gratuito per il tuo sito o candidati come partner indicato, con foto e video.",
@@ -2095,7 +4068,7 @@ var Z = {
 		accept: "Aceitar",
 		reject: "Rejeitar",
 		more: "Política de cookies",
-		filming: (c) => `Hotéis em ${c}: vamos filmar a nossa seleção de ${c} no final de outubro de 2026`,
+		filming: (c) => `Hotéis em ${c}: apareça nos nossos vídeos de ${c}`,
 		filmingLead: "Quer o seu hotel nos nossos vídeos e em destaque como parceiro (sempre identificado) nesta página? Fale connosco, confirmamos um hotel por categoria.",
 		hotelsTitle: (c) => `Tem um hotel em ${c}?`,
 		hotelsLead: "Obtenha um selo gratuito para o seu site ou candidate-se a parceiro identificado, com fotos e vídeo.",
@@ -2107,7 +4080,7 @@ var Z = {
 		accept: "Accepter",
 		reject: "Afvis",
 		more: "Cookiepolitik",
-		filming: (c) => `Hoteller i ${c}: vi filmer vores udvalg i ${c} i slutningen af oktober 2026`,
+		filming: (c) => `Hoteller i ${c}: kom med i vores videoer fra ${c}`,
 		filmingLead: "Vil du have dit hotel med i vores videoer og fremhævet som (altid markeret) partner på denne side? Skriv nu, vi bekræfter ét hotel pr. kategori.",
 		hotelsTitle: (c) => `Driver du et hotel i ${c}?`,
 		hotelsLead: "Få et gratis badge til din hjemmeside, eller søg om at blive markeret partner med billeder og video.",
@@ -10147,21 +12120,53 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews."
 	} },
-	"dakar-senegal": { "Luxury": {
-		"id": 98428,
-		"name": "Pullman Dakar Teranga",
-		"area": "Dakar",
-		"address": "10 Rue Colbert",
-		"lat": 14.667689,
-		"lng": -17.430656,
-		"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
-		"score": 8.1,
-		"count": 265,
-		"stars": 5,
-		"total": 1207.4,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
-	} },
+	"dakar-senegal": {
+		"Luxury": {
+			"id": 98428,
+			"name": "Pullman Dakar Teranga",
+			"area": "Dakar",
+			"address": "10 Rue Colbert",
+			"lat": 14.667689,
+			"lng": -17.430656,
+			"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
+			"score": 8.1,
+			"count": 265,
+			"stars": 5,
+			"total": 1207.4,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
+		},
+		"Best Value": {
+			"id": 11110049,
+			"name": "Azalaï Hôtel Dakar",
+			"area": "Fann",
+			"address": "Route de la Corniche Ouest, Fann Résidence",
+			"lat": 14.678981,
+			"lng": -17.459454,
+			"url": "https://www.booking.com/hotel/sn/azalai-dakar.html",
+			"score": 8.1,
+			"count": 765,
+			"stars": 4,
+			"total": 514.36,
+			"checked": "27 Oct 2026",
+			"reason": "Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 12468493,
+			"name": "Wakola Hotel Cheikh Anta DIOP",
+			"area": "Fass, Dakar",
+			"address": "25 Avenue Cheikh Anta Diop",
+			"lat": 14.68835,
+			"lng": -17.456018,
+			"url": "https://www.booking.com/hotel/sn/wakola-cheikh-anta-diop.html",
+			"score": 8.4,
+			"count": 102,
+			"stars": 3,
+			"total": 286.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Fass, Dakar, rated 8.4 from 102 Booking.com reviews."
+		}
+	},
 	"mahon-spain": { "Luxury": {
 		"id": 6375718,
 		"name": "Cristine Bedfor Mahon Boutique Hotel",
@@ -10177,21 +12182,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews."
 	} },
-	"indianapolis-united-states": { "Luxury": {
-		"id": 42842,
-		"name": "Conrad Indianapolis",
-		"area": "Indianapolis",
-		"address": "50 West Washington Street",
-		"lat": 39.767259,
-		"lng": -86.159345,
-		"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
-		"score": 8.3,
-		"count": 131,
-		"stars": 5,
-		"total": 607.57,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
-	} },
+	"indianapolis-united-states": {
+		"Luxury": {
+			"id": 42842,
+			"name": "Conrad Indianapolis",
+			"area": "Indianapolis",
+			"address": "50 West Washington Street",
+			"lat": 39.767259,
+			"lng": -86.159345,
+			"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
+			"score": 8.3,
+			"count": 131,
+			"stars": 5,
+			"total": 607.57,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
+		},
+		"Budget": {
+			"id": 181273,
+			"name": "Holiday Inn - Indianapolis Downtown by IHG",
+			"area": "Downtown Indianapolis",
+			"address": "515 S West Street",
+			"lat": 39.760095,
+			"lng": -86.166916,
+			"url": "https://www.booking.com/hotel/us/comfort-suites-indianapolis-city-centre.html",
+			"score": 7.4,
+			"count": 501,
+			"stars": 3,
+			"total": 279.47,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews."
+		}
+	},
 	"iasi-romania": { "Luxury": {
 		"id": 178950,
 		"name": "Pleiada Boutique Hotel & Spa",
@@ -10208,64 +12230,64 @@ var overrides_default = {
 		"reason": "The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews."
 	} },
 	"hurghada-egypt": { "Luxury": {
-		"id": 8985201,
-		"name": "Pickalbatros Blu Spa Resort - Adults Friendly 16 Years Plus - Couples Only - Ultra All-Inclusive",
-		"area": "Hurghada",
-		"address": "El Corniche St., Al Mamsha El Seyahi,  . Village Road , Hurghada , Red Sea",
-		"lat": 27.182645,
-		"lng": 33.824915,
-		"url": "https://www.booking.com/hotel/eg/pickalbatros-blu-spa-resort-adults-friendly-16-years-plus.html",
-		"score": 9.6,
-		"count": 3565,
+		"id": 379692,
+		"name": "Sea Star Beau Rivage Hotel",
+		"area": "Dahar",
+		"address": "Al Hilal - Military Hospital Street",
+		"lat": 27.265616,
+		"lng": 33.804409,
+		"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
+		"score": 8,
+		"count": 230,
 		"stars": 5,
-		"total": 697.42,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Hurghada on Booking.com: 9.6/10 from 3,565 guest reviews."
+		"total": 258.11,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
 	} },
 	"taranto-italy": { "Luxury": {
-		"id": 14678,
-		"name": "Relais Histò San Pietro Sul Mar Piccolo",
-		"area": "Taranto",
-		"address": "Via Sant'Andrea, Circummarpiccolo",
-		"lat": 40.508399,
-		"lng": 17.316234,
-		"url": "https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html",
-		"score": 9.3,
-		"count": 119,
-		"stars": 5,
-		"total": 873.68,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Taranto on Booking.com: 9.3/10 from 119 guest reviews."
+		"id": 332045,
+		"name": "Hotel Europa",
+		"area": "Taranto Old Town",
+		"address": "Via Roma 2",
+		"lat": 40.47474,
+		"lng": 17.236865,
+		"url": "https://www.booking.com/hotel/it/europa-taranto.html",
+		"score": 9.1,
+		"count": 1547,
+		"stars": 4,
+		"total": 246,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
 	} },
 	"olsztyn-poland": { "Luxury": {
-		"id": 546134,
-		"name": "Hotel Marina Club",
+		"id": 440454,
+		"name": "Tiffi Boutique Hotel",
 		"area": "Olsztyn",
-		"address": "Siła 100",
-		"lat": 53.710222,
-		"lng": 20.376903,
-		"url": "https://www.booking.com/hotel/pl/marina-golf-club.html",
-		"score": 9.4,
-		"count": 2028,
-		"stars": 5,
-		"total": 329.39,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Olsztyn on Booking.com: 9.4/10 from 2,028 guest reviews."
+		"address": "ul. Żeglarska 7",
+		"lat": 53.781582,
+		"lng": 20.450318,
+		"url": "https://www.booking.com/hotel/pl/yacht-club-tiffi-olsztyn.html",
+		"score": 9,
+		"count": 757,
+		"stars": 4,
+		"total": 227.84,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews."
 	} },
 	"obidos-portugal": { "Luxury": {
-		"id": 536563,
-		"name": "The Beachfront - Praia D'El Rey Golf & Beach Resort",
-		"area": "Óbidos",
-		"address": "Avenida D. Pedro I, nº30",
-		"lat": 39.399169,
-		"lng": -9.273866,
-		"url": "https://www.booking.com/hotel/pt/the-beachfront-praia-d-el-rey-golf-beach-resort.html",
-		"score": 9,
-		"count": 373,
-		"stars": 5,
-		"total": 408.6,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Óbidos on Booking.com: 9.0/10 from 373 guest reviews."
+		"id": 385501,
+		"name": "Pousada Castelo de Obidos",
+		"area": "Medieval town",
+		"address": "Paço Real",
+		"lat": 39.363278,
+		"lng": -9.157052,
+		"url": "https://www.booking.com/hotel/pt/pousada-de-abidos-castelo-de-abidos.html",
+		"score": 8.3,
+		"count": 713,
+		"stars": 4,
+		"total": 489.6,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews."
 	} },
 	"sunderland-united-kingdom": { "Luxury": {
 		"id": 13545644,
@@ -10357,21 +12379,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews."
 	} },
-	"salalah-oman": { "Luxury": {
-		"id": 2014752,
-		"name": "Al Baleed Resort Salalah by Anantara",
-		"area": "Salalah",
-		"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
-		"lat": 17.009874,
-		"lng": 54.146817,
-		"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
-		"score": 8.9,
-		"count": 337,
-		"stars": 5,
-		"total": 724.38,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
-	} },
+	"salalah-oman": {
+		"Luxury": {
+			"id": 2014752,
+			"name": "Al Baleed Resort Salalah by Anantara",
+			"area": "Salalah",
+			"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
+			"lat": 17.009874,
+			"lng": 54.146817,
+			"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
+			"score": 8.9,
+			"count": 337,
+			"stars": 5,
+			"total": 724.38,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
+		},
+		"Budget": {
+			"id": 1461760,
+			"name": "Muscat International Hotel Plaza",
+			"area": "Salalah centre",
+			"address": "23 July St., opposite Sultan Qaboos Mosque",
+			"lat": 17.014879,
+			"lng": 54.091792,
+			"url": "https://www.booking.com/hotel/om/muscat-internatonal-plaza-salalah.html",
+			"score": 7.9,
+			"count": 409,
+			"stars": 3,
+			"total": 97.63,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Salalah centre, rated 7.9 from 409 Booking.com reviews."
+		}
+	},
 	"ponte-de-lima-portugal": { "Luxury": {
 		"id": 367480,
 		"name": "Carmo's Boutique Hotel - Small Luxury Hotels of the World",
@@ -10507,35 +12546,67 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews."
 	} },
-	"phoenix-united-states": { "Luxury": {
-		"id": 263665,
-		"name": "JW Marriott Phoenix Desert Ridge Resort & Spa",
-		"area": "Phoenix",
-		"address": "5350 East Marriott Drive",
-		"lat": 33.683452,
-		"lng": -111.966063,
-		"url": "https://www.booking.com/hotel/us/jw-marriott-phoenix-desert-ridge-resort.html",
-		"score": 8.6,
-		"count": 70,
-		"stars": 5,
-		"total": 1638.87,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Phoenix on Booking.com: 8.6/10 from 70 guest reviews."
-	} },
+	"phoenix-united-states": {
+		"Luxury": {
+			"id": 358629,
+			"name": "Renaissance Phoenix Downtown Hotel",
+			"area": "Downtown Phoenix",
+			"address": "100 N 1st St",
+			"lat": 33.44936,
+			"lng": -112.07322,
+			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
+			"score": 7.6,
+			"count": 100,
+			"stars": 5,
+			"total": 993.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 59801,
+			"name": "Best Western Downtown Phoenix",
+			"area": "Downtown Phoenix",
+			"address": "620 N 6th St",
+			"lat": 33.454982,
+			"lng": -112.066538,
+			"url": "https://www.booking.com/hotel/us/best-western-downtown-phoenix.html",
+			"score": 7.9,
+			"count": 379,
+			"stars": 3,
+			"total": 413.07,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 3206906,
+			"name": "Hampton Inn & Suites Phoenix Downtown",
+			"area": "Downtown Phoenix",
+			"address": "77 E Polk St",
+			"lat": 33.45213,
+			"lng": -112.072922,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-phoenix-downtown.html",
+			"score": 8.8,
+			"count": 766,
+			"stars": 3,
+			"total": 482.06,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"mytilene-greece": { "Luxury": {
-		"id": 265824,
-		"name": "Elysion Hotel",
-		"area": "Mytilene",
-		"address": "Neapoli",
-		"lat": 39.068865,
-		"lng": 26.593861,
-		"url": "https://www.booking.com/hotel/gr/elysion.html",
-		"score": 8.9,
-		"count": 482,
-		"stars": 5,
-		"total": 228.8,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Mytilene on Booking.com: 8.9/10 from 482 guest reviews."
+		"id": 273019,
+		"name": "Theofilos Paradise Boutique Hotel",
+		"area": "Mytilene centre",
+		"address": "Skra 7",
+		"lat": 39.106489,
+		"lng": 26.559408,
+		"url": "https://www.booking.com/hotel/gr/theofilos-paradise-boutique.html",
+		"score": 9.2,
+		"count": 579,
+		"stars": 4,
+		"total": 253.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Mytilene centre rated 9.2/10 from 579 Booking.com reviews."
 	} },
 	"balneario-camboriu-brazil": { "Luxury": {
 		"id": 11387136,
@@ -10598,19 +12669,19 @@ var overrides_default = {
 		"reason": "The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews."
 	} },
 	"nusa-penida-indonesia": { "Luxury": {
-		"id": 12077759,
-		"name": "Semaya Beach Resort",
-		"area": "Nusa Penida",
-		"address": "7J39+J3F, Suana, Nusa Penida, Klungkung Regency, Bali 80771",
-		"lat": -8.745938,
-		"lng": 115.617672,
-		"url": "https://www.booking.com/hotel/id/nusa-penida-beach-resort.html",
-		"score": 9.5,
-		"count": 775,
-		"stars": 5,
-		"total": 391.09,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Nusa Penida on Booking.com: 9.5/10 from 775 guest reviews."
+		"id": 9295885,
+		"name": "Deep Roots Dive & Yoga Resort",
+		"area": "Ped",
+		"address": "Dusun Pendem, Desa Ped",
+		"lat": -8.69052,
+		"lng": 115.513199,
+		"url": "https://www.booking.com/hotel/id/deep-roots-dive-amp-yoga-resort.html",
+		"score": 9.6,
+		"count": 269,
+		"stars": 4,
+		"total": 201.02,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews."
 	} },
 	"colima-mexico": { "Luxury": {
 		"id": 398386,
@@ -10627,21 +12698,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews."
 	} },
-	"horta-portugal": { "Luxury": {
-		"id": 16663552,
-		"name": "The Book Hotel",
-		"area": "Horta",
-		"address": "Largo do Bpo. Dom Alexandre 8",
-		"lat": 38.540761,
-		"lng": -28.623989,
-		"url": "https://www.booking.com/hotel/pt/the-book.html",
-		"score": 9.6,
-		"count": 38,
-		"stars": 5,
-		"total": 306,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
-	} },
+	"horta-portugal": {
+		"Luxury": {
+			"id": 16663552,
+			"name": "The Book Hotel",
+			"area": "Horta",
+			"address": "Largo do Bpo. Dom Alexandre 8",
+			"lat": 38.540761,
+			"lng": -28.623989,
+			"url": "https://www.booking.com/hotel/pt/the-book.html",
+			"score": 9.6,
+			"count": 38,
+			"stars": 5,
+			"total": 306,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
+		},
+		"Budget": {
+			"id": 40514,
+			"name": "Azoris Faial Garden – Resort Hotel",
+			"area": "Horta",
+			"address": "Rua Consul Dabney",
+			"lat": 38.53074,
+			"lng": -28.627726,
+			"url": "https://www.booking.com/hotel/pt/fayal-resort.html",
+			"score": 8.1,
+			"count": 1073,
+			"stars": 4,
+			"total": 117.3,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Horta, rated 8.1 from 1,073 Booking.com reviews."
+		}
+	},
 	"apia-samoa": { "Luxury": {
 		"id": 353054,
 		"name": "Sheraton Samoa Aggie Grey's Hotel & Bungalows",
@@ -10732,21 +12820,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews."
 	} },
-	"conwy-united-kingdom": { "Luxury": {
-		"id": 11956279,
-		"name": "The Manor Boutique Hotel Restaurant and Bar",
-		"area": "Conwy",
-		"address": "the manor, gorse hill caravan park, trefriw road, conwy",
-		"lat": 53.259653,
-		"lng": -3.831228,
-		"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
-		"score": 9,
-		"count": 546,
-		"stars": 5,
-		"total": 325.83,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
-	} },
+	"conwy-united-kingdom": {
+		"Luxury": {
+			"id": 11956279,
+			"name": "The Manor Boutique Hotel Restaurant and Bar",
+			"area": "Conwy",
+			"address": "the manor, gorse hill caravan park, trefriw road, conwy",
+			"lat": 53.259653,
+			"lng": -3.831228,
+			"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
+			"score": 9,
+			"count": 546,
+			"stars": 5,
+			"total": 325.83,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
+		},
+		"Best Value": {
+			"id": 231069,
+			"name": "The Quay Hotel and Spa",
+			"area": "Deganwy",
+			"address": "Deganwy Quay",
+			"lat": 53.291156,
+			"lng": -3.82865,
+			"url": "https://www.booking.com/hotel/gb/thequayhotel.html",
+			"score": 8.9,
+			"count": 3103,
+			"stars": 4,
+			"total": 317.89,
+			"checked": "27 Oct 2026",
+			"reason": "Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"preston-united-kingdom": { "Luxury": {
 		"id": 1970305,
 		"name": "No.10 Preston",
@@ -10762,21 +12867,53 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews."
 	} },
-	"naples-florida-united-states": { "Luxury": {
-		"id": 188256,
-		"name": "The Ritz-Carlton Naples",
-		"area": "Naples, Florida",
-		"address": "280 Vanderbilt Beach Road",
-		"lat": 26.251951,
-		"lng": -81.821301,
-		"url": "https://www.booking.com/hotel/us/ritz-carlton-naples.html",
-		"score": 9.3,
-		"count": 81,
-		"stars": 5,
-		"total": 3051.2,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Naples, Florida on Booking.com: 9.3/10 from 81 guest reviews."
-	} },
+	"naples-florida-united-states": {
+		"Luxury": {
+			"id": 251e3,
+			"name": "Naples Bay Resort and Marina",
+			"area": "Downtown Naples",
+			"address": "1500 5th Avenue South",
+			"lat": 26.138815,
+			"lng": -81.785397,
+			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
+			"score": 9.1,
+			"count": 261,
+			"stars": 4,
+			"total": 1144.26,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 456800,
+			"name": "La Quinta by Wyndham Naples Downtown",
+			"area": "Downtown Naples",
+			"address": "1555 5th Avenue South",
+			"lat": 26.139511,
+			"lng": -81.783377,
+			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
+			"score": 8,
+			"count": 2232,
+			"stars": 3,
+			"total": 190.66,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1067830,
+			"name": "Naples Park Central Hotel",
+			"area": "Downtown Naples",
+			"address": "40 Tamiami Trail North",
+			"lat": 26.147763,
+			"lng": -81.795395,
+			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
+			"score": 8.8,
+			"count": 2388,
+			"stars": 3,
+			"total": 266.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"mui-ne-vietnam": { "Luxury": {
 		"id": 9194505,
 		"name": "The Anam Mui Ne",
@@ -10898,19 +13035,19 @@ var overrides_default = {
 		"reason": "No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews."
 	} },
 	"dalat-vietnam": { "Luxury": {
-		"id": 1561468,
-		"name": "Swiss-Belresort Tuyen Lam",
-		"area": "Dalat",
-		"address": "Zone 7&8, Tuyen Lam Lake Tourist Area, Ward 3",
-		"lat": 11.882835,
-		"lng": 108.451771,
-		"url": "https://www.booking.com/hotel/vn/swiss-belresort-tuyen-lam.html",
-		"score": 8.9,
-		"count": 256,
-		"stars": 4,
-		"total": 125.62,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Dalat, so this is our upscale alternative: a 4-star rated 8.9/10 from 256 Booking.com reviews."
+		"id": 265264,
+		"name": "Dalat Palace Heritage Hotel",
+		"area": "Da Lat Centre",
+		"address": "02 Tran Phu, Ward 3",
+		"lat": 11.93671,
+		"lng": 108.440353,
+		"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
+		"score": 8.7,
+		"count": 177,
+		"stars": 5,
+		"total": 198.31,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
 	} },
 	"quimper-france": { "Luxury": {
 		"id": 3411582,
@@ -10972,21 +13109,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews."
 	} },
-	"boise-united-states": { "Luxury": {
-		"id": 909801,
-		"name": "The Anniversary Inn - Boise",
-		"area": "Boise",
-		"address": "1575 South Lusk Avenue",
-		"lat": 43.604001,
-		"lng": -116.214841,
-		"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
-		"score": 8.7,
-		"count": 101,
-		"stars": 4,
-		"total": 380.45,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
-	} },
+	"boise-united-states": {
+		"Luxury": {
+			"id": 909801,
+			"name": "The Anniversary Inn - Boise",
+			"area": "Boise",
+			"address": "1575 South Lusk Avenue",
+			"lat": 43.604001,
+			"lng": -116.214841,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
+			"score": 8.7,
+			"count": 101,
+			"stars": 4,
+			"total": 380.45,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 185179,
+			"name": "Hampton Inn & Suites Boise-Downtown",
+			"area": "Downtown Boise",
+			"address": "495 South Capitol Boulevard",
+			"lat": 43.612172,
+			"lng": -116.205319,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-boise-downtown.html",
+			"score": 8.8,
+			"count": 465,
+			"stars": 3,
+			"total": 473.33,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews."
+		}
+	},
 	"carmel-united-states": { "Luxury": {
 		"id": 423881,
 		"name": "La Playa Hotel",
@@ -11017,21 +13171,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews."
 	} },
-	"miskolc-hungary": { "Luxury": {
-		"id": 7162239,
-		"name": "Premier Hotel Miskolc",
-		"area": "Miskolc",
-		"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
-		"lat": 48.10773,
-		"lng": 20.787909,
-		"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
-		"score": 8.9,
-		"count": 1323,
-		"stars": 4,
-		"total": 305.05,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
-	} },
+	"miskolc-hungary": {
+		"Luxury": {
+			"id": 7162239,
+			"name": "Premier Hotel Miskolc",
+			"area": "Miskolc",
+			"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
+			"lat": 48.10773,
+			"lng": 20.787909,
+			"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
+			"score": 8.9,
+			"count": 1323,
+			"stars": 4,
+			"total": 305.05,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 75550,
+			"name": "Hotel Pannonia",
+			"area": "Miskolc centre",
+			"address": "Kossuth u. 2",
+			"lat": 48.102995,
+			"lng": 20.781707,
+			"url": "https://www.booking.com/hotel/hu/pannonia.html",
+			"score": 8.2,
+			"count": 524,
+			"stars": 2,
+			"total": 162.8,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Miskolc centre, rated 8.2 from 524 Booking.com reviews."
+		}
+	},
 	"den-bosch-netherlands": { "Luxury": {
 		"id": 171136,
 		"name": "Good Seasons Hotel Den Bosch",
@@ -11197,21 +13368,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews."
 	} },
-	"basingstoke-united-kingdom": { "Luxury": {
-		"id": 5641844,
-		"name": "Village Hotel Basingstoke",
-		"area": "Basingstoke",
-		"address": "Basing View",
-		"lat": 51.268084,
-		"lng": -1.077534,
-		"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
-		"score": 8.5,
-		"count": 2554,
-		"stars": 4,
-		"total": 620.63,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
-	} },
+	"basingstoke-united-kingdom": {
+		"Luxury": {
+			"id": 5641844,
+			"name": "Village Hotel Basingstoke",
+			"area": "Basingstoke",
+			"address": "Basing View",
+			"lat": 51.268084,
+			"lng": -1.077534,
+			"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
+			"score": 8.5,
+			"count": 2554,
+			"stars": 4,
+			"total": 620.63,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 34474,
+			"name": "Holiday Inn Basingstoke by IHG",
+			"area": "Basingstoke",
+			"address": "Grove Road",
+			"lat": 51.253808,
+			"lng": -1.080143,
+			"url": "https://www.booking.com/hotel/gb/holiday-inn.html",
+			"score": 7.4,
+			"count": 923,
+			"stars": 4,
+			"total": 379.72,
+			"checked": "27 Oct 2026",
+			"reason": "Central Basingstoke hotel rated 7.4 from 923 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"tartu-estonia": { "Luxury": {
 		"id": 1995331,
 		"name": "V Spa & Conference Hotel",
@@ -11241,95 +13429,82 @@ var overrides_default = {
 		"total": 429.6,
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."
-	} }
-};
-/* 27 Oct 2026: central replacements for airport / far-from-centre picks */
-var overrides_central_2710 = {
-	"albuquerque-united-states": {
-		"Luxury": {
-			"id": 293691,
-			"name": "Hotel Andaluz Albuquerque, Curio Collection By Hilton",
-			"area": "Downtown",
-			"address": "125 2nd St. NW",
-			"lat": 35.085002,
-			"lng": -106.649217,
-			"url": "https://www.booking.com/hotel/us/andaluz.html",
-			"score": 8.5,
-			"count": 120,
-			"stars": 4,
-			"total": 380.01,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews."
-		}
-	},
-	"alnwick-united-kingdom": {
-		"Best Value": {
-			"id": 605942,
-			"name": "The Oaks Hotel",
-			"area": "Alnwick",
-			"address": "South Road",
-			"lat": 55.408385,
-			"lng": -1.693598,
-			"url": "https://www.booking.com/hotel/gb/the-oaks.html",
-			"score": 8.5,
-			"count": 1570,
-			"stars": 3,
-			"total": 262.7,
-			"checked": "27 Oct 2026",
-			"reason": "Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"amritsar-india": {
-		"Luxury": {
-			"id": 5922875,
-			"name": "Courtyard by Marriott Amritsar",
-			"area": "Mall Road",
-			"address": "52 Mall Road",
-			"lat": 31.639831,
-			"lng": 74.888578,
-			"url": "https://www.booking.com/hotel/in/courtyard-amritsar.html",
-			"score": 8.5,
-			"count": 869,
-			"stars": 5,
-			"total": 250.62,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews."
-		}
-	},
-	"aurangabad-india": {
-		"Best Value": {
-			"id": 74209,
-			"name": "Amarpreet, Chhatrapati Sambhajinagar - AM Hotel Kollection",
-			"area": "Jalna Road",
-			"address": "Amarpreet Chowk, Jalna Road",
-			"lat": 19.875677,
-			"lng": 75.334977,
-			"url": "https://www.booking.com/hotel/in/amarpreet.html",
-			"score": 7.6,
-			"count": 150,
-			"stars": 4,
-			"total": 128.26,
-			"checked": "27 Oct 2026",
-			"reason": "Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"aurora-united-states": {
-		"Budget": {
-			"id": 391749,
-			"name": "La Quinta by Wyndham Denver Gateway Park",
-			"area": "Gateway Park",
-			"address": "4460 Peoria Street",
-			"lat": 39.777025,
-			"lng": -104.846129,
-			"url": "https://www.booking.com/hotel/us/laquinta-inn.html",
-			"score": 8.1,
-			"count": 1640,
-			"stars": 3,
-			"total": 197.16,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews."
-		}
-	},
+	} },
+	"albuquerque-united-states": { "Luxury": {
+		"id": 293691,
+		"name": "Hotel Andaluz Albuquerque, Curio Collection By Hilton",
+		"area": "Downtown",
+		"address": "125 2nd St. NW",
+		"lat": 35.085002,
+		"lng": -106.649217,
+		"url": "https://www.booking.com/hotel/us/andaluz.html",
+		"score": 8.5,
+		"count": 120,
+		"stars": 4,
+		"total": 380.01,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews."
+	} },
+	"alnwick-united-kingdom": { "Best Value": {
+		"id": 605942,
+		"name": "The Oaks Hotel",
+		"area": "Alnwick",
+		"address": "South Road",
+		"lat": 55.408385,
+		"lng": -1.693598,
+		"url": "https://www.booking.com/hotel/gb/the-oaks.html",
+		"score": 8.5,
+		"count": 1570,
+		"stars": 3,
+		"total": 262.7,
+		"checked": "27 Oct 2026",
+		"reason": "Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights."
+	} },
+	"amritsar-india": { "Luxury": {
+		"id": 5922875,
+		"name": "Courtyard by Marriott Amritsar",
+		"area": "Mall Road",
+		"address": "52 Mall Road",
+		"lat": 31.639831,
+		"lng": 74.888578,
+		"url": "https://www.booking.com/hotel/in/courtyard-amritsar.html",
+		"score": 8.5,
+		"count": 869,
+		"stars": 5,
+		"total": 250.62,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews."
+	} },
+	"aurangabad-india": { "Best Value": {
+		"id": 74209,
+		"name": "Amarpreet, Chhatrapati Sambhajinagar - AM Hotel Kollection",
+		"area": "Jalna Road",
+		"address": "Amarpreet Chowk, Jalna Road",
+		"lat": 19.875677,
+		"lng": 75.334977,
+		"url": "https://www.booking.com/hotel/in/amarpreet.html",
+		"score": 7.6,
+		"count": 150,
+		"stars": 4,
+		"total": 128.26,
+		"checked": "27 Oct 2026",
+		"reason": "Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights."
+	} },
+	"aurora-united-states": { "Budget": {
+		"id": 391749,
+		"name": "La Quinta by Wyndham Denver Gateway Park",
+		"area": "Gateway Park",
+		"address": "4460 Peoria Street",
+		"lat": 39.777025,
+		"lng": -104.846129,
+		"url": "https://www.booking.com/hotel/us/laquinta-inn.html",
+		"score": 8.1,
+		"count": 1640,
+		"stars": 3,
+		"total": 197.16,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews."
+	} },
 	"austin-unitedstates": {
 		"Luxury": {
 			"id": 4671457,
@@ -11345,59 +13520,68 @@ var overrides_central_2710 = {
 			"total": 1927.36,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Downtown Austin, rated 9.2 from 96 Booking.com reviews."
-		}
-	},
-	"bandar-seri-begawan-brunei": {
-		"Luxury": {
-			"id": 250692,
-			"name": "Radisson Hotel Brunei Darussalam",
-			"area": "City centre",
-			"address": "Jalan Tasek",
-			"lat": 4.89478,
-			"lng": 114.942076,
-			"url": "https://www.booking.com/hotel/bn/radisson-brunei-darussalam.html",
-			"score": 8.5,
-			"count": 702,
-			"stars": 4,
-			"total": 322.64,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews."
-		}
-	},
-	"bangkok-thailand": {
+		},
 		"Budget": {
-			"id": 2421306,
-			"name": "New Siam Palace Ville Hotel",
-			"area": "Bangkok Old Town",
-			"address": "56 Trok Rong Mhai, Chao Fa Rd",
-			"lat": 13.760169,
-			"lng": 100.493267,
-			"url": "https://www.booking.com/hotel/th/new-siam-palace-ville.html",
-			"score": 7.9,
-			"count": 6022,
+			"id": 9717923,
+			"name": "Fairfield Inn & Suites Austin Downtown",
+			"area": "Rainey Street, Downtown Austin",
+			"address": "76 East Avenue",
+			"lat": 30.25888,
+			"lng": -97.737936,
+			"url": "https://www.booking.com/hotel/us/fairfield-by-marriott-inn-suites-austin-downtown.html",
+			"score": 8.9,
+			"count": 67,
 			"stars": 3,
-			"total": 174.14,
+			"total": 603.08,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews."
+			"reason": "A central budget pick in Rainey Street, Downtown Austin, rated 8.9 from 67 Booking.com reviews."
 		}
 	},
-	"belem-brazil": {
-		"Best Value": {
-			"id": 292792,
-			"name": "Hotel Princesa Louçã",
-			"area": "City centre",
-			"address": "Avenida Presidente Vargas, 882",
-			"lat": -1.453572,
-			"lng": -48.494051,
-			"url": "https://www.booking.com/hotel/br/hotel-princesa-belem.html",
-			"score": 8.4,
-			"count": 4099,
-			"stars": 4,
-			"total": 174.63,
-			"checked": "27 Oct 2026",
-			"reason": "Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"bandar-seri-begawan-brunei": { "Luxury": {
+		"id": 250692,
+		"name": "Radisson Hotel Brunei Darussalam",
+		"area": "City centre",
+		"address": "Jalan Tasek",
+		"lat": 4.89478,
+		"lng": 114.942076,
+		"url": "https://www.booking.com/hotel/bn/radisson-brunei-darussalam.html",
+		"score": 8.5,
+		"count": 702,
+		"stars": 4,
+		"total": 322.64,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews."
+	} },
+	"bangkok-thailand": { "Budget": {
+		"id": 2421306,
+		"name": "New Siam Palace Ville Hotel",
+		"area": "Bangkok Old Town",
+		"address": "56 Trok Rong Mhai, Chao Fa Rd",
+		"lat": 13.760169,
+		"lng": 100.493267,
+		"url": "https://www.booking.com/hotel/th/new-siam-palace-ville.html",
+		"score": 7.9,
+		"count": 6022,
+		"stars": 3,
+		"total": 174.14,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews."
+	} },
+	"belem-brazil": { "Best Value": {
+		"id": 292792,
+		"name": "Hotel Princesa Louçã",
+		"area": "City centre",
+		"address": "Avenida Presidente Vargas, 882",
+		"lat": -1.453572,
+		"lng": -48.494051,
+		"url": "https://www.booking.com/hotel/br/hotel-princesa-belem.html",
+		"score": 8.4,
+		"count": 4099,
+		"stars": 4,
+		"total": 174.63,
+		"checked": "27 Oct 2026",
+		"reason": "Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights."
+	} },
 	"bethlehem-united-states": {
 		"Best Value": {
 			"id": 321374,
@@ -11430,23 +13614,21 @@ var overrides_central_2710 = {
 			"reason": "A central budget pick in Bethlehem, rated 8.5 from 418 Booking.com reviews."
 		}
 	},
-	"birmingham-alabama-united-states": {
-		"Luxury": {
-			"id": 11076295,
-			"name": "The Painted Lady",
-			"area": "Five Points South",
-			"address": "2143 2nd Avenue South",
-			"lat": 33.511777,
-			"lng": -86.80065,
-			"url": "https://www.booking.com/hotel/us/the-painted-lady-birmingham.html",
-			"score": 8.9,
-			"count": 197,
-			"stars": 4,
-			"total": 319.46,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews."
-		}
-	},
+	"birmingham-alabama-united-states": { "Luxury": {
+		"id": 11076295,
+		"name": "The Painted Lady",
+		"area": "Five Points South",
+		"address": "2143 2nd Avenue South",
+		"lat": 33.511777,
+		"lng": -86.80065,
+		"url": "https://www.booking.com/hotel/us/the-painted-lady-birmingham.html",
+		"score": 8.9,
+		"count": 197,
+		"stars": 4,
+		"total": 319.46,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews."
+	} },
 	"bogor-indonesia": {
 		"Best Value": {
 			"id": 1280257,
@@ -11462,59 +13644,68 @@ var overrides_central_2710 = {
 			"total": 136.72,
 			"checked": "27 Oct 2026",
 			"reason": "Central Bogor Tengah hotel rated 8.3 from 93 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bogota-colombia": {
-		"Best Value": {
-			"id": 604400,
-			"name": "Hotel Estelar Calle 100",
-			"area": "Chapinero",
-			"address": "Calle 100 N° 14 46",
-			"lat": 4.684772,
-			"lng": -74.047055,
-			"url": "https://www.booking.com/hotel/co/estelar-calle-100.html",
-			"score": 9.0,
-			"count": 953,
-			"stars": 4,
-			"total": 172.44,
-			"checked": "27 Oct 2026",
-			"reason": "Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bozeman-united-states": {
-		"Best Value": {
-			"id": 2234130,
-			"name": "SpringHill Suites by Marriott Bozeman",
-			"area": "Bozeman",
-			"address": "1601 Baxter Lane",
-			"lat": 45.698783,
-			"lng": -111.0542,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-bozeman.html",
-			"score": 8.8,
-			"count": 223,
-			"stars": 3,
-			"total": 309.57,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"braga-portugal": {
+		},
 		"Luxury": {
-			"id": 235755,
-			"name": "Meliá Braga Hotel & Spa",
-			"area": "Braga",
-			"address": "Av. General Carrilho da Silva Pinto",
-			"lat": 41.556669,
-			"lng": -8.396623,
-			"url": "https://www.booking.com/hotel/pt/melia-braga-spa.html",
-			"score": 8.8,
-			"count": 1817,
-			"stars": 5,
-			"total": 308,
+			"id": 6810833,
+			"name": "Swiss-Belinn Bogor",
+			"area": "Bogor Timur",
+			"address": "Jalan Pajajaran Indah V",
+			"lat": -6.611101,
+			"lng": 106.814593,
+			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
+			"score": 8.4,
+			"count": 106,
+			"stars": 4,
+			"total": 94.83,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
 		}
 	},
+	"bogota-colombia": { "Best Value": {
+		"id": 604400,
+		"name": "Hotel Estelar Calle 100",
+		"area": "Chapinero",
+		"address": "Calle 100 N° 14 46",
+		"lat": 4.684772,
+		"lng": -74.047055,
+		"url": "https://www.booking.com/hotel/co/estelar-calle-100.html",
+		"score": 9,
+		"count": 953,
+		"stars": 4,
+		"total": 172.44,
+		"checked": "27 Oct 2026",
+		"reason": "Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights."
+	} },
+	"bozeman-united-states": { "Best Value": {
+		"id": 2234130,
+		"name": "SpringHill Suites by Marriott Bozeman",
+		"area": "Bozeman",
+		"address": "1601 Baxter Lane",
+		"lat": 45.698783,
+		"lng": -111.0542,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-bozeman.html",
+		"score": 8.8,
+		"count": 223,
+		"stars": 3,
+		"total": 309.57,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights."
+	} },
+	"braga-portugal": { "Luxury": {
+		"id": 235755,
+		"name": "Meliá Braga Hotel & Spa",
+		"area": "Braga",
+		"address": "Av. General Carrilho da Silva Pinto",
+		"lat": 41.556669,
+		"lng": -8.396623,
+		"url": "https://www.booking.com/hotel/pt/melia-braga-spa.html",
+		"score": 8.8,
+		"count": 1817,
+		"stars": 5,
+		"total": 308,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews."
+	} },
 	"burbank-united-states": {
 		"Budget": {
 			"id": 56648,
@@ -11562,25 +13753,38 @@ var overrides_central_2710 = {
 			"total": 449.96,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Seomyeon, rated 8.9 from 2,746 Booking.com reviews."
-		}
-	},
-	"cairo-egypt": {
-		"Luxury": {
-			"id": 247640,
-			"name": "Kempinski Nile Hotel, Cairo",
-			"area": "Garden City",
-			"address": "12 Ahmed Ragheb Street, Corniche El Nil",
-			"lat": 30.038658,
-			"lng": 31.230344,
-			"url": "https://www.booking.com/hotel/eg/kempinski-nile-cairo.html",
-			"score": 8.6,
-			"count": 2926,
-			"stars": 5,
-			"total": 647.21,
+		},
+		"Best Value": {
+			"id": 5129061,
+			"name": "Avani Central Busan",
+			"area": "Seomyeon",
+			"address": "133 Jeonpo-daero, Nam-gu",
+			"lat": 35.148606,
+			"lng": 129.065627,
+			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
+			"score": 8.7,
+			"count": 888,
+			"stars": 4,
+			"total": 249.97,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews."
+			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"cairo-egypt": { "Luxury": {
+		"id": 247640,
+		"name": "Kempinski Nile Hotel, Cairo",
+		"area": "Garden City",
+		"address": "12 Ahmed Ragheb Street, Corniche El Nil",
+		"lat": 30.038658,
+		"lng": 31.230344,
+		"url": "https://www.booking.com/hotel/eg/kempinski-nile-cairo.html",
+		"score": 8.6,
+		"count": 2926,
+		"stars": 5,
+		"total": 647.21,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews."
+	} },
 	"calgary-canada": {
 		"Budget": {
 			"id": 285681,
@@ -11613,91 +13817,51 @@ var overrides_central_2710 = {
 			"reason": "Central Downtown Calgary hotel rated 8.1 from 199 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"chula-vista-united-states": {
-		"Best Value": {
-			"id": 181361,
-			"name": "Best Western Plus Marina Gateway Hotel",
-			"area": "Bayfront",
-			"address": "800 Bay Marina Drive",
-			"lat": 32.658958,
-			"lng": -117.109567,
-			"url": "https://www.booking.com/hotel/us/best-western-marina-gateway.html",
-			"score": 8.8,
-			"count": 899,
-			"stars": 3,
-			"total": 299.93,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"cincinnati-united-states": {
-		"Budget": {
-			"id": 430946,
-			"name": "Hampton Inn & Suites Newport/Cincinnati, KY",
-			"area": "Cincinnati Riverfront",
-			"address": "275 Columbia Street",
-			"lat": 39.093041,
-			"lng": -84.498109,
-			"url": "https://www.booking.com/hotel/us/travelodge-newport1.html",
-			"score": 8.7,
-			"count": 905,
-			"stars": 3,
-			"total": 218.97,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews."
-		}
-	},
-	"colorado-springs-united-states": {
-		"Best Value": {
-			"id": 8154390,
-			"name": "SpringHill Suites by Marriott Colorado Springs Downtown",
-			"area": "Downtown Colorado Springs",
-			"address": "402 South Tejon Street",
-			"lat": 38.82828,
-			"lng": -104.82401,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-colorado-springs-downtown.html",
-			"score": 8.0,
-			"count": 119,
-			"stars": 3,
-			"total": 331.69,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"conwy-united-kingdom": {
-		"Best Value": {
-			"id": 231069,
-			"name": "The Quay Hotel and Spa",
-			"area": "Deganwy",
-			"address": "Deganwy Quay",
-			"lat": 53.291156,
-			"lng": -3.82865,
-			"url": "https://www.booking.com/hotel/gb/thequayhotel.html",
-			"score": 8.9,
-			"count": 3103,
-			"stars": 4,
-			"total": 317.89,
-			"checked": "27 Oct 2026",
-			"reason": "Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"dakar-senegal": {
-		"Best Value": {
-			"id": 11110049,
-			"name": "Azalaï Hôtel Dakar",
-			"area": "Fann",
-			"address": "Route de la Corniche Ouest, Fann Résidence",
-			"lat": 14.678981,
-			"lng": -17.459454,
-			"url": "https://www.booking.com/hotel/sn/azalai-dakar.html",
-			"score": 8.1,
-			"count": 765,
-			"stars": 4,
-			"total": 514.36,
-			"checked": "27 Oct 2026",
-			"reason": "Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"chula-vista-united-states": { "Best Value": {
+		"id": 181361,
+		"name": "Best Western Plus Marina Gateway Hotel",
+		"area": "Bayfront",
+		"address": "800 Bay Marina Drive",
+		"lat": 32.658958,
+		"lng": -117.109567,
+		"url": "https://www.booking.com/hotel/us/best-western-marina-gateway.html",
+		"score": 8.8,
+		"count": 899,
+		"stars": 3,
+		"total": 299.93,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights."
+	} },
+	"cincinnati-united-states": { "Budget": {
+		"id": 430946,
+		"name": "Hampton Inn & Suites Newport/Cincinnati, KY",
+		"area": "Cincinnati Riverfront",
+		"address": "275 Columbia Street",
+		"lat": 39.093041,
+		"lng": -84.498109,
+		"url": "https://www.booking.com/hotel/us/travelodge-newport1.html",
+		"score": 8.7,
+		"count": 905,
+		"stars": 3,
+		"total": 218.97,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews."
+	} },
+	"colorado-springs-united-states": { "Best Value": {
+		"id": 8154390,
+		"name": "SpringHill Suites by Marriott Colorado Springs Downtown",
+		"area": "Downtown Colorado Springs",
+		"address": "402 South Tejon Street",
+		"lat": 38.82828,
+		"lng": -104.82401,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-colorado-springs-downtown.html",
+		"score": 8,
+		"count": 119,
+		"stars": 3,
+		"total": 331.69,
+		"checked": "27 Oct 2026",
+		"reason": "Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights."
+	} },
 	"dar-es-salaam-tanzania": {
 		"Best Value": {
 			"id": 4689454,
@@ -11713,26 +13877,39 @@ var overrides_central_2710 = {
 			"total": 194.05,
 			"checked": "27 Oct 2026",
 			"reason": "Central Upanga East hotel rated 8.3 from 929 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"doha-qatar": {
+		},
 		"Budget": {
-			"id": 9147317,
-			"name": "ibis Doha",
-			"area": "Al Muntazah",
-			"address": "Badr Street, C Ring Road",
-			"lat": 25.270102,
-			"lng": 51.514096,
-			"url": "https://www.booking.com/hotel/qa/ibis-doha.html",
-			"score": 8.8,
-			"count": 3519,
+			"id": 569734,
+			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
+			"area": "Kisutu",
+			"address": "Indira Gandhi / Morogoro Road Junction",
+			"lat": -6.818325,
+			"lng": 39.28442,
+			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
+			"score": 8.1,
+			"count": 319,
 			"stars": 3,
-			"total": 114.87,
+			"total": 169.08,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews."
+			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
 		}
 	},
-	"dubai": {
+	"doha-qatar": { "Budget": {
+		"id": 9147317,
+		"name": "ibis Doha",
+		"area": "Al Muntazah",
+		"address": "Badr Street, C Ring Road",
+		"lat": 25.270102,
+		"lng": 51.514096,
+		"url": "https://www.booking.com/hotel/qa/ibis-doha.html",
+		"score": 8.8,
+		"count": 3519,
+		"stars": 3,
+		"total": 114.87,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews."
+	} },
+	dubai: {
 		"Budget": {
 			"id": 7629108,
 			"name": "Rove City Walk",
@@ -11747,93 +13924,98 @@ var overrides_central_2710 = {
 			"total": 207.16,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Al Wasl, rated 9.1 from 8,452 Booking.com reviews."
-		}
-	},
-	"durban-southafrica": {
-		"Luxury": {
-			"id": 15401,
-			"name": "Blue Waters Hotel",
-			"area": "Golden Mile",
-			"address": "175 Snell Parade",
-			"lat": -29.840074,
-			"lng": 31.035063,
-			"url": "https://www.booking.com/hotel/za/blue-waters.html",
-			"score": 8.5,
-			"count": 19528,
-			"stars": 4,
-			"total": 256.97,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews."
-		}
-	},
-	"durham-united-states": {
+		},
 		"Best Value": {
-			"id": 713937,
-			"name": "Hilton Garden Inn Durham-University Medical Center",
-			"area": "Duke / West Main",
-			"address": "2102 West Main Street",
-			"lat": 36.007086,
-			"lng": -78.924751,
-			"url": "https://www.booking.com/hotel/us/garden-inn-durham-university-medical-center.html",
-			"score": 8.6,
-			"count": 127,
-			"stars": 3,
-			"total": 331.25,
-			"checked": "27 Oct 2026",
-			"reason": "Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"enniskillen-united-kingdom": {
-		"Best Value": {
-			"id": 37570,
-			"name": "Westville Hotel",
-			"area": "Enniskillen",
-			"address": "14-20 Tempo Road",
-			"lat": 54.343028,
-			"lng": -7.627046,
-			"url": "https://www.booking.com/hotel/gb/westville.html",
-			"score": 8.8,
-			"count": 822,
+			"id": 73581,
+			"name": "Rose Rayhaan by Rotana - Dubai",
+			"area": "Trade Centre, Dubai",
+			"address": "Sheikh Zayed Road",
+			"lat": 25.211921,
+			"lng": 55.276412,
+			"url": "https://www.booking.com/hotel/ae/rose-rotana-dubai.html",
+			"score": 8.3,
+			"count": 4794,
 			"stars": 4,
-			"total": 300.91,
+			"total": 283.74,
 			"checked": "27 Oct 2026",
-			"reason": "Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights."
+			"reason": "Central Trade Centre, Dubai hotel rated 8.3 from 4,794 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"estepona-spain": {
-		"Budget": {
-			"id": 10773215,
-			"name": "Hotel Boutique La Brisa del Mar",
-			"area": "Old town",
-			"address": "78 Calle Málaga",
-			"lat": 36.426028,
-			"lng": -5.143604,
-			"url": "https://www.booking.com/hotel/es/boutique-la-brisa-del-mar.html",
-			"score": 9.1,
-			"count": 482,
-			"stars": 3,
-			"total": 230.84,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews."
-		}
-	},
-	"faro-portugal": {
-		"Budget": {
-			"id": 179196,
-			"name": "Hotel Made inn Faro",
-			"area": "Faro City Centre",
-			"address": "Rua Miguel Bombarda 64",
-			"lat": 37.020287,
-			"lng": -7.940137,
-			"url": "https://www.booking.com/hotel/pt/residencial-afonso-iii.html",
-			"score": 8.1,
-			"count": 5025,
-			"stars": 2,
-			"total": 134,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews."
-		}
-	},
+	"durban-southafrica": { "Luxury": {
+		"id": 15401,
+		"name": "Blue Waters Hotel",
+		"area": "Golden Mile",
+		"address": "175 Snell Parade",
+		"lat": -29.840074,
+		"lng": 31.035063,
+		"url": "https://www.booking.com/hotel/za/blue-waters.html",
+		"score": 8.5,
+		"count": 19528,
+		"stars": 4,
+		"total": 256.97,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews."
+	} },
+	"durham-united-states": { "Best Value": {
+		"id": 713937,
+		"name": "Hilton Garden Inn Durham-University Medical Center",
+		"area": "Duke / West Main",
+		"address": "2102 West Main Street",
+		"lat": 36.007086,
+		"lng": -78.924751,
+		"url": "https://www.booking.com/hotel/us/garden-inn-durham-university-medical-center.html",
+		"score": 8.6,
+		"count": 127,
+		"stars": 3,
+		"total": 331.25,
+		"checked": "27 Oct 2026",
+		"reason": "Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights."
+	} },
+	"enniskillen-united-kingdom": { "Best Value": {
+		"id": 37570,
+		"name": "Westville Hotel",
+		"area": "Enniskillen",
+		"address": "14-20 Tempo Road",
+		"lat": 54.343028,
+		"lng": -7.627046,
+		"url": "https://www.booking.com/hotel/gb/westville.html",
+		"score": 8.8,
+		"count": 822,
+		"stars": 4,
+		"total": 300.91,
+		"checked": "27 Oct 2026",
+		"reason": "Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights."
+	} },
+	"estepona-spain": { "Budget": {
+		"id": 10773215,
+		"name": "Hotel Boutique La Brisa del Mar",
+		"area": "Old town",
+		"address": "78 Calle Málaga",
+		"lat": 36.426028,
+		"lng": -5.143604,
+		"url": "https://www.booking.com/hotel/es/boutique-la-brisa-del-mar.html",
+		"score": 9.1,
+		"count": 482,
+		"stars": 3,
+		"total": 230.84,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews."
+	} },
+	"faro-portugal": { "Budget": {
+		"id": 179196,
+		"name": "Hotel Made inn Faro",
+		"area": "Faro City Centre",
+		"address": "Rua Miguel Bombarda 64",
+		"lat": 37.020287,
+		"lng": -7.940137,
+		"url": "https://www.booking.com/hotel/pt/residencial-afonso-iii.html",
+		"score": 8.1,
+		"count": 5025,
+		"stars": 2,
+		"total": 134,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews."
+	} },
 	"florianopolis-brazil": {
 		"Best Value": {
 			"id": 285396,
@@ -11849,42 +14031,53 @@ var overrides_central_2710 = {
 			"total": 235.05,
 			"checked": "27 Oct 2026",
 			"reason": "Central City Centre hotel rated 9.1 from 2,970 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"forli-italy": {
-		"Luxury": {
-			"id": 87527,
-			"name": "Best Western Hotel Globus City",
-			"area": "Forlì",
-			"address": "Via Traiano Imperatore 4",
-			"lat": 44.247328,
-			"lng": 12.079119,
-			"url": "https://www.booking.com/hotel/it/globus-city.html",
-			"score": 8.6,
-			"count": 482,
-			"stars": 4,
-			"total": 308.5,
+		},
+		"Budget": {
+			"id": 718144,
+			"name": "Ibis Florianopolis",
+			"area": "Florianópolis City Centre",
+			"address": "Avenida Rio Branco 37",
+			"lat": -27.592466,
+			"lng": -48.558131,
+			"url": "https://www.booking.com/hotel/br/ibis-florianopolis.html",
+			"score": 8.7,
+			"count": 2664,
+			"stars": 3,
+			"total": 204.01,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews."
+			"reason": "A central budget pick in Florianópolis City Centre, rated 8.7 from 2,664 Booking.com reviews."
 		}
 	},
-	"foz-do-iguacu-brazil": {
-		"Luxury": {
-			"id": 244874,
-			"name": "Nadai Confort Hotel e Spa",
-			"area": "City Centre",
-			"address": "Av. República Argentina, 1332",
-			"lat": -25.534581,
-			"lng": -54.581183,
-			"url": "https://www.booking.com/hotel/br/nadai-confort.html",
-			"score": 8.8,
-			"count": 1043,
-			"stars": 4,
-			"total": 355.82,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews."
-		}
-	},
+	"forli-italy": { "Luxury": {
+		"id": 87527,
+		"name": "Best Western Hotel Globus City",
+		"area": "Forlì",
+		"address": "Via Traiano Imperatore 4",
+		"lat": 44.247328,
+		"lng": 12.079119,
+		"url": "https://www.booking.com/hotel/it/globus-city.html",
+		"score": 8.6,
+		"count": 482,
+		"stars": 4,
+		"total": 308.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews."
+	} },
+	"foz-do-iguacu-brazil": { "Luxury": {
+		"id": 244874,
+		"name": "Nadai Confort Hotel e Spa",
+		"area": "City Centre",
+		"address": "Av. República Argentina, 1332",
+		"lat": -25.534581,
+		"lng": -54.581183,
+		"url": "https://www.booking.com/hotel/br/nadai-confort.html",
+		"score": 8.8,
+		"count": 1043,
+		"stars": 4,
+		"total": 355.82,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews."
+	} },
 	"geneva-switzerland": {
 		"Budget": {
 			"id": 182052,
@@ -11917,74 +14110,51 @@ var overrides_central_2710 = {
 			"reason": "Central Saint-Gervais / Les Grottes hotel rated 7.8 from 2,036 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"hakodate-japan": {
-		"Luxury": {
-			"id": 8610484,
-			"name": "fav HAKODATE",
-			"area": "Bay area",
-			"address": "Otemachi 20-15",
-			"lat": 41.771382,
-			"lng": 140.725698,
-			"url": "https://www.booking.com/hotel/jp/fav-hakodate.html",
-			"score": 9.0,
-			"count": 1171,
-			"stars": 4,
-			"total": 351.98,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews."
-		}
-	},
-	"hyderabad-india": {
-		"Luxury": {
-			"id": 237300,
-			"name": "Hyderabad Marriott Hotel & Convention Centre",
-			"area": "Hussain Sagar",
-			"address": "Tank Bund Road, opposite Hussain Sagar Lake",
-			"lat": 17.424116,
-			"lng": 78.487642,
-			"url": "https://www.booking.com/hotel/in/hyderabad-marriott-convention-centre.html",
-			"score": 8.2,
-			"count": 715,
-			"stars": 5,
-			"total": 188.52,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews."
-		}
-	},
-	"indianapolis-united-states": {
-		"Budget": {
-			"id": 181273,
-			"name": "Holiday Inn - Indianapolis Downtown by IHG",
-			"area": "Downtown Indianapolis",
-			"address": "515 S West Street",
-			"lat": 39.760095,
-			"lng": -86.166916,
-			"url": "https://www.booking.com/hotel/us/comfort-suites-indianapolis-city-centre.html",
-			"score": 7.4,
-			"count": 501,
-			"stars": 3,
-			"total": 279.47,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews."
-		}
-	},
-	"jaipur-india": {
-		"Luxury": {
-			"id": 74714,
-			"name": "Rambagh Palace",
-			"area": "Rambagh",
-			"address": "Bhawani Singh Road",
-			"lat": 26.898158,
-			"lng": 75.808089,
-			"url": "https://www.booking.com/hotel/in/rambagh-palace.html",
-			"score": 9.2,
-			"count": 131,
-			"stars": 5,
-			"total": 1929.59,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews."
-		}
-	},
+	"hakodate-japan": { "Luxury": {
+		"id": 8610484,
+		"name": "fav HAKODATE",
+		"area": "Bay area",
+		"address": "Otemachi 20-15",
+		"lat": 41.771382,
+		"lng": 140.725698,
+		"url": "https://www.booking.com/hotel/jp/fav-hakodate.html",
+		"score": 9,
+		"count": 1171,
+		"stars": 4,
+		"total": 351.98,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews."
+	} },
+	"hyderabad-india": { "Luxury": {
+		"id": 237300,
+		"name": "Hyderabad Marriott Hotel & Convention Centre",
+		"area": "Hussain Sagar",
+		"address": "Tank Bund Road, opposite Hussain Sagar Lake",
+		"lat": 17.424116,
+		"lng": 78.487642,
+		"url": "https://www.booking.com/hotel/in/hyderabad-marriott-convention-centre.html",
+		"score": 8.2,
+		"count": 715,
+		"stars": 5,
+		"total": 188.52,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews."
+	} },
+	"jaipur-india": { "Luxury": {
+		"id": 74714,
+		"name": "Rambagh Palace",
+		"area": "Rambagh",
+		"address": "Bhawani Singh Road",
+		"lat": 26.898158,
+		"lng": 75.808089,
+		"url": "https://www.booking.com/hotel/in/rambagh-palace.html",
+		"score": 9.2,
+		"count": 131,
+		"stars": 5,
+		"total": 1929.59,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews."
+	} },
 	"johannesburg-southafrica": {
 		"Budget": {
 			"id": 2849996,
@@ -11994,7 +14164,7 @@ var overrides_central_2710 = {
 			"lat": -26.183429,
 			"lng": 28.020762,
 			"url": "https://www.booking.com/hotel/za/garden-court-milpark-braamfontein.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 2826,
 			"stars": 3,
 			"total": 131.48,
@@ -12032,144 +14202,143 @@ var overrides_central_2710 = {
 			"total": 228.22,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in BBD Bagh, rated 8.1 from 1,055 Booking.com reviews."
-		}
-	},
-	"lijiang-china": {
-		"Luxury": {
-			"id": 738700,
-			"name": "Hotel Indigo Lijiang Ancient Town by IHG",
-			"area": "Dayan Old Town",
-			"address": "111 Xing Wen Alley, Qi Yi Street",
-			"lat": 26.865415,
-			"lng": 100.238987,
-			"url": "https://www.booking.com/hotel/cn/indigo-lijiang-ancient-town.html",
-			"score": 9.3,
-			"count": 77,
-			"stars": 5,
-			"total": 292.01,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews."
-		}
-	},
-	"los-angeles-unitedstates": {
-		"Luxury": {
-			"id": 8114987,
-			"name": "Conrad Los Angeles",
-			"area": "Downtown Los Angeles",
-			"address": "100 South Grand Ave.",
-			"lat": 34.055678,
-			"lng": -118.248709,
-			"url": "https://www.booking.com/hotel/us/conrad-los-angeles.html",
-			"score": 8.7,
-			"count": 188,
-			"stars": 5,
-			"total": 902.16,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews."
-		}
-	},
-	"louisville-united-states": {
-		"Budget": {
-			"id": 1534705,
-			"name": "Holiday Inn Express & Suites Downtown Louisville by IHG",
-			"area": "Downtown Louisville",
-			"address": "800 West Market Street",
-			"lat": 38.255759,
-			"lng": -85.763614,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-downtown-louisville.html",
-			"score": 8.4,
-			"count": 653,
-			"stars": 3,
-			"total": 261.05,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews."
-		}
-	},
-	"lucca-italy": {
-		"Luxury": {
-			"id": 2523642,
-			"name": "Palazzo Dipinto",
-			"area": "Centro Storico",
-			"address": "Piazza del Palazzo Dipinto 27",
-			"lat": 43.843246,
-			"lng": 10.500416,
-			"url": "https://www.booking.com/hotel/it/palazzo-dipinto-lucca.html",
-			"score": 9.3,
-			"count": 641,
+		},
+		"Best Value": {
+			"id": 251366,
+			"name": "Peerless Hotel Kolkata",
+			"area": "Chowringhee, Kolkata",
+			"address": "12 Jawahar Lal Nehru Road",
+			"lat": 22.562288,
+			"lng": 88.351412,
+			"url": "https://www.booking.com/hotel/in/the-peerless-inn.html",
+			"score": 7.8,
+			"count": 725,
 			"stars": 4,
-			"total": 658,
+			"total": 205.88,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews."
+			"reason": "Central Chowringhee, Kolkata hotel rated 7.8 from 725 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"luxembourg-city-luxembourg": {
-		"Budget": {
-			"id": 3634565,
-			"name": "Hôtel JJ32 Luxembourg Centre Gare",
-			"area": "Gare",
-			"address": "32 Rue Joseph Junck",
-			"lat": 49.600789,
-			"lng": 6.131015,
-			"url": "https://www.booking.com/hotel/lu/jj32.html",
-			"score": 8.1,
-			"count": 2026,
-			"stars": 3,
-			"total": 333.42,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews."
-		}
-	},
-	"lynchburg-united-states": {
-		"Luxury": {
-			"id": 3122705,
-			"name": "The Virginian Lynchburg, Curio Collection By Hilton",
-			"area": "Downtown Lynchburg",
-			"address": "712 Church Street",
-			"lat": 37.415424,
-			"lng": -79.14406,
-			"url": "https://www.booking.com/hotel/us/the-virginian-lynchburg-curio-collection-by-hilton.html",
-			"score": 9.2,
-			"count": 154,
-			"stars": 4,
-			"total": 444.97,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews."
-		}
-	},
-	"male-maldives": {
-		"Budget": {
-			"id": 9854862,
-			"name": "Beehive Premier",
-			"area": "Malé",
-			"address": "Raiyvilla Hingun",
-			"lat": 4.171398,
-			"lng": 73.516294,
-			"url": "https://www.booking.com/hotel/mv/beehive-premier-male.html",
-			"score": 8.0,
-			"count": 1081,
-			"stars": 3,
-			"total": 263.26,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews."
-		}
-	},
-	"medan-indonesia": {
-		"Budget": {
-			"id": 268642,
-			"name": "Swiss-Belinn Medan",
-			"area": "Medan",
-			"address": "Jalan Surabaya No. 88",
-			"lat": 3.583357,
-			"lng": 98.685146,
-			"url": "https://www.booking.com/hotel/id/my-dream.html",
-			"score": 8.0,
-			"count": 242,
-			"stars": 3,
-			"total": 59.27,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews."
-		}
-	},
+	"lijiang-china": { "Luxury": {
+		"id": 738700,
+		"name": "Hotel Indigo Lijiang Ancient Town by IHG",
+		"area": "Dayan Old Town",
+		"address": "111 Xing Wen Alley, Qi Yi Street",
+		"lat": 26.865415,
+		"lng": 100.238987,
+		"url": "https://www.booking.com/hotel/cn/indigo-lijiang-ancient-town.html",
+		"score": 9.3,
+		"count": 77,
+		"stars": 5,
+		"total": 292.01,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews."
+	} },
+	"los-angeles-unitedstates": { "Luxury": {
+		"id": 8114987,
+		"name": "Conrad Los Angeles",
+		"area": "Downtown Los Angeles",
+		"address": "100 South Grand Ave.",
+		"lat": 34.055678,
+		"lng": -118.248709,
+		"url": "https://www.booking.com/hotel/us/conrad-los-angeles.html",
+		"score": 8.7,
+		"count": 188,
+		"stars": 5,
+		"total": 902.16,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews."
+	} },
+	"louisville-united-states": { "Budget": {
+		"id": 1534705,
+		"name": "Holiday Inn Express & Suites Downtown Louisville by IHG",
+		"area": "Downtown Louisville",
+		"address": "800 West Market Street",
+		"lat": 38.255759,
+		"lng": -85.763614,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-downtown-louisville.html",
+		"score": 8.4,
+		"count": 653,
+		"stars": 3,
+		"total": 261.05,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews."
+	} },
+	"lucca-italy": { "Luxury": {
+		"id": 2523642,
+		"name": "Palazzo Dipinto",
+		"area": "Centro Storico",
+		"address": "Piazza del Palazzo Dipinto 27",
+		"lat": 43.843246,
+		"lng": 10.500416,
+		"url": "https://www.booking.com/hotel/it/palazzo-dipinto-lucca.html",
+		"score": 9.3,
+		"count": 641,
+		"stars": 4,
+		"total": 658,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews."
+	} },
+	"luxembourg-city-luxembourg": { "Budget": {
+		"id": 3634565,
+		"name": "Hôtel JJ32 Luxembourg Centre Gare",
+		"area": "Gare",
+		"address": "32 Rue Joseph Junck",
+		"lat": 49.600789,
+		"lng": 6.131015,
+		"url": "https://www.booking.com/hotel/lu/jj32.html",
+		"score": 8.1,
+		"count": 2026,
+		"stars": 3,
+		"total": 333.42,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews."
+	} },
+	"lynchburg-united-states": { "Luxury": {
+		"id": 3122705,
+		"name": "The Virginian Lynchburg, Curio Collection By Hilton",
+		"area": "Downtown Lynchburg",
+		"address": "712 Church Street",
+		"lat": 37.415424,
+		"lng": -79.14406,
+		"url": "https://www.booking.com/hotel/us/the-virginian-lynchburg-curio-collection-by-hilton.html",
+		"score": 9.2,
+		"count": 154,
+		"stars": 4,
+		"total": 444.97,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews."
+	} },
+	"male-maldives": { "Budget": {
+		"id": 9854862,
+		"name": "Beehive Premier",
+		"area": "Malé",
+		"address": "Raiyvilla Hingun",
+		"lat": 4.171398,
+		"lng": 73.516294,
+		"url": "https://www.booking.com/hotel/mv/beehive-premier-male.html",
+		"score": 8,
+		"count": 1081,
+		"stars": 3,
+		"total": 263.26,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews."
+	} },
+	"medan-indonesia": { "Budget": {
+		"id": 268642,
+		"name": "Swiss-Belinn Medan",
+		"area": "Medan",
+		"address": "Jalan Surabaya No. 88",
+		"lat": 3.583357,
+		"lng": 98.685146,
+		"url": "https://www.booking.com/hotel/id/my-dream.html",
+		"score": 8,
+		"count": 242,
+		"stars": 3,
+		"total": 59.27,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews."
+	} },
 	"muscat-oman": {
 		"Best Value": {
 			"id": 6212367,
@@ -12202,57 +14371,6 @@ var overrides_central_2710 = {
 			"reason": "A 5-star hotel in Al Ghubra, rated 9.2 from 1,377 Booking.com reviews."
 		}
 	},
-	"nusa-penida-indonesia": {
-		"Luxury": {
-			"id": 9295885,
-			"name": "Deep Roots Dive & Yoga Resort",
-			"area": "Ped",
-			"address": "Dusun Pendem, Desa Ped",
-			"lat": -8.69052,
-			"lng": 115.513199,
-			"url": "https://www.booking.com/hotel/id/deep-roots-dive-amp-yoga-resort.html",
-			"score": 9.6,
-			"count": 269,
-			"stars": 4,
-			"total": 201.02,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews."
-		}
-	},
-	"obidos-portugal": {
-		"Luxury": {
-			"id": 385501,
-			"name": "Pousada Castelo de Obidos",
-			"area": "Medieval town",
-			"address": "Paço Real",
-			"lat": 39.363278,
-			"lng": -9.157052,
-			"url": "https://www.booking.com/hotel/pt/pousada-de-abidos-castelo-de-abidos.html",
-			"score": 8.3,
-			"count": 713,
-			"stars": 4,
-			"total": 489.6,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews."
-		}
-	},
-	"olsztyn-poland": {
-		"Luxury": {
-			"id": 440454,
-			"name": "Tiffi Boutique Hotel",
-			"area": "Olsztyn",
-			"address": "ul. Żeglarska 7",
-			"lat": 53.781582,
-			"lng": 20.450318,
-			"url": "https://www.booking.com/hotel/pl/yacht-club-tiffi-olsztyn.html",
-			"score": 9.0,
-			"count": 757,
-			"stars": 4,
-			"total": 227.84,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews."
-		}
-	},
 	"osijek-croatia": {
 		"Budget": {
 			"id": 174313,
@@ -12268,25 +14386,38 @@ var overrides_central_2710 = {
 			"total": 177.4,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Osijek, rated 8.2 from 294 Booking.com reviews."
-		}
-	},
-	"queretaro-mexico": {
+		},
 		"Luxury": {
-			"id": 1843515,
-			"name": "Hotel Criol",
-			"area": "Historic centre",
-			"address": "Río de la Loza Norte 6, Centro",
-			"lat": 20.594386,
-			"lng": -100.388585,
-			"url": "https://www.booking.com/hotel/mx/criol.html",
-			"score": 9.0,
-			"count": 840,
-			"stars": 5,
-			"total": 166.78,
+			"id": 20789,
+			"name": "Hotel Waldinger",
+			"area": "Osijek Centre",
+			"address": "Zupanijska 8",
+			"lat": 45.558718,
+			"lng": 18.675948,
+			"url": "https://www.booking.com/hotel/hr/waldinger.html",
+			"score": 9.2,
+			"count": 398,
+			"stars": 4,
+			"total": 332.8,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
 		}
 	},
+	"queretaro-mexico": { "Luxury": {
+		"id": 1843515,
+		"name": "Hotel Criol",
+		"area": "Historic centre",
+		"address": "Río de la Loza Norte 6, Centro",
+		"lat": 20.594386,
+		"lng": -100.388585,
+		"url": "https://www.booking.com/hotel/mx/criol.html",
+		"score": 9,
+		"count": 840,
+		"stars": 5,
+		"total": 166.78,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews."
+	} },
 	"regina-canada": {
 		"Best Value": {
 			"id": 534332,
@@ -12302,6 +14433,21 @@ var overrides_central_2710 = {
 			"total": 234.91,
 			"checked": "27 Oct 2026",
 			"reason": "Central Regina hotel rated 8.7 from 244 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 373473,
+			"name": "Wingate by Wyndham Regina",
+			"area": "Downtown Regina",
+			"address": "1700 Broad Street",
+			"lat": 50.451628,
+			"lng": -104.606648,
+			"url": "https://www.booking.com/hotel/ca/wingate-by-wyndham-regina.html",
+			"score": 7.7,
+			"count": 545,
+			"stars": 3,
+			"total": 188.11,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Regina, rated 7.7 from 545 Booking.com reviews."
 		}
 	},
 	"samsun-turkiye": {
@@ -12351,161 +14497,158 @@ var overrides_central_2710 = {
 			"total": 1315.87,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Downtown San Diego, rated 8.2 from 222 Booking.com reviews."
-		}
-	},
-	"san-jose-costarica": {
-		"Luxury": {
-			"id": 350607,
-			"name": "Radisson San Jose-Costa Rica",
-			"area": "Barrio Tournón",
-			"address": "Calle Central y Tercera Av 15, Barrio Tournón",
-			"lat": 9.943103,
-			"lng": -84.076918,
-			"url": "https://www.booking.com/hotel/cr/radisson-europa.html",
-			"score": 8.1,
-			"count": 2668,
-			"stars": 5,
-			"total": 283.56,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews."
-		}
-	},
-	"san-jose-united-states": {
+		},
 		"Best Value": {
-			"id": 1948003,
-			"name": "AC Hotel by Marriott San Jose Downtown",
-			"area": "Downtown San Jose",
-			"address": "350 West Santa Clara Street",
-			"lat": 37.333222,
-			"lng": -121.896161,
-			"url": "https://www.booking.com/hotel/us/ac-by-marriott-san-jose-downtown.html",
-			"score": 8.7,
-			"count": 379,
-			"stars": 3,
-			"total": 623.51,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"santa-marta-colombia": {
-		"Luxury": {
-			"id": 539417,
-			"name": "Hotel Boutique Don Pepe",
-			"area": "Centro Histórico",
-			"address": "Calle 16 No. 1C-92",
-			"lat": 11.244136,
-			"lng": -74.213304,
-			"url": "https://www.booking.com/hotel/co/boutique-don-pepe.html",
-			"score": 8.6,
-			"count": 254,
-			"stars": 5,
-			"total": 426.04,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews."
-		}
-	},
-	"shanghai-china": {
-		"Budget": {
-			"id": 6973768,
-			"name": "Shanghai Fish Inn People Square",
-			"area": "Huangpu",
-			"address": "No.135 Jiangying Road",
-			"lat": 31.229366,
-			"lng": 121.468206,
-			"url": "https://www.booking.com/hotel/cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12.html",
-			"score": 8.8,
-			"count": 300,
-			"stars": 2,
-			"total": 116.99,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews."
-		}
-	},
-	"sihanoukville-cambodia": {
-		"Luxury": {
-			"id": 1569085,
-			"name": "Queenco Entertainment Resort",
-			"area": "Victory Beach",
-			"address": "Victory Beach, Mohavithey Krong",
-			"lat": 10.637393,
-			"lng": 103.501208,
-			"url": "https://www.booking.com/hotel/kh/queenco-amp-casino-tower.html",
-			"score": 9.4,
-			"count": 193,
-			"stars": 5,
-			"total": 478.26,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews."
-		}
-	},
-	"spokane-united-states": {
-		"Luxury": {
-			"id": 1240331,
-			"name": "The Davenport Grand, Autograph Collection",
-			"area": "Downtown Spokane",
-			"address": "333 West Spokane Falls Boulevard",
-			"lat": 47.659977,
-			"lng": -117.416864,
-			"url": "https://www.booking.com/hotel/us/the-davenport-grand-autograph-collection.html",
-			"score": 8.7,
-			"count": 553,
+			"id": 263697,
+			"name": "Courtyard by Marriott San Diego Downtown",
+			"area": "Downtown San Diego",
+			"address": "530 Broadway",
+			"lat": 32.715951,
+			"lng": -117.159536,
+			"url": "https://www.booking.com/hotel/us/courtyard-san-diego-downtown.html",
+			"score": 8.3,
+			"count": 652,
 			"stars": 4,
-			"total": 316.95,
+			"total": 390.23,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews."
+			"reason": "Central Downtown San Diego hotel rated 8.3 from 652 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"taipei-taiwan": {
-		"Best Value": {
-			"id": 73014,
-			"name": "les suites taipei ching cheng",
-			"area": "Songshan",
-			"address": "No.12, Chingcheng Street",
-			"lat": 25.052679,
-			"lng": 121.545112,
-			"url": "https://www.booking.com/hotel/tw/lessuitescc.html",
-			"score": 9.0,
-			"count": 477,
-			"stars": 4,
-			"total": 399.93,
-			"checked": "27 Oct 2026",
-			"reason": "Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tilburg-netherlands": {
-		"Budget": {
-			"id": 10330,
-			"name": "ibis Tilburg",
-			"area": "Tilburg",
-			"address": "Dr. Hub van Doorneweg 105",
-			"lat": 51.541731,
-			"lng": 5.050849,
-			"url": "https://www.booking.com/hotel/nl/ibistilburg.html",
-			"score": 8.0,
-			"count": 493,
-			"stars": 3,
-			"total": 207.84,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews."
-		}
-	},
-	"toronto-canada": {
-		"Budget": {
-			"id": 13541170,
-			"name": "La TUMU",
-			"area": "Church-Wellesley Village",
-			"address": "29 Wellesley Street East",
-			"lat": 43.664923,
-			"lng": -79.382908,
-			"url": "https://www.booking.com/hotel/ca/la-tumu.html",
-			"score": 7.3,
-			"count": 103,
-			"stars": 3,
-			"total": 349.77,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews."
-		}
-	},
+	"san-jose-costarica": { "Luxury": {
+		"id": 350607,
+		"name": "Radisson San Jose-Costa Rica",
+		"area": "Barrio Tournón",
+		"address": "Calle Central y Tercera Av 15, Barrio Tournón",
+		"lat": 9.943103,
+		"lng": -84.076918,
+		"url": "https://www.booking.com/hotel/cr/radisson-europa.html",
+		"score": 8.1,
+		"count": 2668,
+		"stars": 5,
+		"total": 283.56,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews."
+	} },
+	"san-jose-united-states": { "Best Value": {
+		"id": 1948003,
+		"name": "AC Hotel by Marriott San Jose Downtown",
+		"area": "Downtown San Jose",
+		"address": "350 West Santa Clara Street",
+		"lat": 37.333222,
+		"lng": -121.896161,
+		"url": "https://www.booking.com/hotel/us/ac-by-marriott-san-jose-downtown.html",
+		"score": 8.7,
+		"count": 379,
+		"stars": 3,
+		"total": 623.51,
+		"checked": "27 Oct 2026",
+		"reason": "Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights."
+	} },
+	"santa-marta-colombia": { "Luxury": {
+		"id": 539417,
+		"name": "Hotel Boutique Don Pepe",
+		"area": "Centro Histórico",
+		"address": "Calle 16 No. 1C-92",
+		"lat": 11.244136,
+		"lng": -74.213304,
+		"url": "https://www.booking.com/hotel/co/boutique-don-pepe.html",
+		"score": 8.6,
+		"count": 254,
+		"stars": 5,
+		"total": 426.04,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews."
+	} },
+	"shanghai-china": { "Budget": {
+		"id": 6973768,
+		"name": "Shanghai Fish Inn People Square",
+		"area": "Huangpu",
+		"address": "No.135 Jiangying Road",
+		"lat": 31.229366,
+		"lng": 121.468206,
+		"url": "https://www.booking.com/hotel/cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12.html",
+		"score": 8.8,
+		"count": 300,
+		"stars": 2,
+		"total": 116.99,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews."
+	} },
+	"sihanoukville-cambodia": { "Luxury": {
+		"id": 1569085,
+		"name": "Queenco Entertainment Resort",
+		"area": "Victory Beach",
+		"address": "Victory Beach, Mohavithey Krong",
+		"lat": 10.637393,
+		"lng": 103.501208,
+		"url": "https://www.booking.com/hotel/kh/queenco-amp-casino-tower.html",
+		"score": 9.4,
+		"count": 193,
+		"stars": 5,
+		"total": 478.26,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews."
+	} },
+	"spokane-united-states": { "Luxury": {
+		"id": 1240331,
+		"name": "The Davenport Grand, Autograph Collection",
+		"area": "Downtown Spokane",
+		"address": "333 West Spokane Falls Boulevard",
+		"lat": 47.659977,
+		"lng": -117.416864,
+		"url": "https://www.booking.com/hotel/us/the-davenport-grand-autograph-collection.html",
+		"score": 8.7,
+		"count": 553,
+		"stars": 4,
+		"total": 316.95,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews."
+	} },
+	"taipei-taiwan": { "Best Value": {
+		"id": 73014,
+		"name": "les suites taipei ching cheng",
+		"area": "Songshan",
+		"address": "No.12, Chingcheng Street",
+		"lat": 25.052679,
+		"lng": 121.545112,
+		"url": "https://www.booking.com/hotel/tw/lessuitescc.html",
+		"score": 9,
+		"count": 477,
+		"stars": 4,
+		"total": 399.93,
+		"checked": "27 Oct 2026",
+		"reason": "Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights."
+	} },
+	"tilburg-netherlands": { "Budget": {
+		"id": 10330,
+		"name": "ibis Tilburg",
+		"area": "Tilburg",
+		"address": "Dr. Hub van Doorneweg 105",
+		"lat": 51.541731,
+		"lng": 5.050849,
+		"url": "https://www.booking.com/hotel/nl/ibistilburg.html",
+		"score": 8,
+		"count": 493,
+		"stars": 3,
+		"total": 207.84,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews."
+	} },
+	"toronto-canada": { "Budget": {
+		"id": 13541170,
+		"name": "La TUMU",
+		"area": "Church-Wellesley Village",
+		"address": "29 Wellesley Street East",
+		"lat": 43.664923,
+		"lng": -79.382908,
+		"url": "https://www.booking.com/hotel/ca/la-tumu.html",
+		"score": 7.3,
+		"count": 103,
+		"stars": 3,
+		"total": 349.77,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews."
+	} },
 	"tucson-united-states": {
 		"Luxury": {
 			"id": 9027265,
@@ -12536,108 +14679,83 @@ var overrides_central_2710 = {
 			"total": 164.63,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Downtown Tucson, rated 7.3 from 407 Booking.com reviews."
-		}
-	},
-	"tulum-mexico": {
-		"Luxury": {
-			"id": 2003149,
-			"name": "Una Vida",
-			"area": "Tulum Centre",
-			"address": "Avenida Tulum",
-			"lat": 20.211295,
-			"lng": -87.47483,
-			"url": "https://www.booking.com/hotel/mx/una-vida.html",
-			"score": 9.1,
-			"count": 337,
-			"stars": 5,
-			"total": 365.89,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews."
-		}
-	},
-	"ulaanbaatar-mongolia": {
-		"Luxury": {
-			"id": 1316987,
-			"name": "Shangri-La Ulaanbaatar",
-			"area": "Sukhbaatar",
-			"address": "19 Olympic Street, Sukhbaatar District",
-			"lat": 47.913189,
-			"lng": 106.920396,
-			"url": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
-			"score": 8.4,
-			"count": 118,
-			"stars": 5,
-			"total": 610.2,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews."
-		}
-	},
-	"valdosta-united-states": {
-		"Budget": {
-			"id": 296306,
-			"name": "Holiday Inn Valdosta Conference Center by IHG",
-			"area": "Valdosta",
-			"address": "1805 West Hill Avenue",
-			"lat": 30.819673,
-			"lng": -83.311032,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-valdosta-hotels.html",
-			"score": 8.6,
-			"count": 238,
-			"stars": 3,
-			"total": 223.97,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews."
-		}
-	},
-	"winnipeg-canada": {
-		"Luxury": {
-			"id": 912926,
-			"name": "Inn at the Forks",
-			"area": "The Forks",
-			"address": "75 Forks Market Road",
-			"lat": 49.887908,
-			"lng": -97.129524,
-			"url": "https://www.booking.com/hotel/ca/inn-at-the-forks-winnipeg.html",
-			"score": 8.6,
-			"count": 210,
-			"stars": 4,
-			"total": 381.73,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews."
-		}
-	},
-	"phoenix-united-states": {
-		"Budget": {
-			"id": 59801,
-			"name": "Best Western Downtown Phoenix",
-			"area": "Downtown Phoenix",
-			"address": "620 N 6th St",
-			"lat": 33.454982,
-			"lng": -112.066538,
-			"url": "https://www.booking.com/hotel/us/best-western-downtown-phoenix.html",
-			"score": 7.9,
-			"count": 379,
-			"stars": 3,
-			"total": 413.07,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews."
 		},
 		"Best Value": {
-			"id": 3206906,
-			"name": "Hampton Inn & Suites Phoenix Downtown",
-			"area": "Downtown Phoenix",
-			"address": "77 E Polk St",
-			"lat": 33.45213,
-			"lng": -112.072922,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-phoenix-downtown.html",
+			"id": 7609839,
+			"name": "Hampton Inn Tucson Downtown, Az",
+			"area": "Downtown Tucson",
+			"address": "141 South Stone Ave.",
+			"lat": 32.219838,
+			"lng": -110.970627,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
 			"score": 8.8,
-			"count": 766,
+			"count": 242,
 			"stars": 3,
-			"total": 482.06,
+			"total": 284.99,
 			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights."
+			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"tulum-mexico": { "Luxury": {
+		"id": 2003149,
+		"name": "Una Vida",
+		"area": "Tulum Centre",
+		"address": "Avenida Tulum",
+		"lat": 20.211295,
+		"lng": -87.47483,
+		"url": "https://www.booking.com/hotel/mx/una-vida.html",
+		"score": 9.1,
+		"count": 337,
+		"stars": 5,
+		"total": 365.89,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews."
+	} },
+	"ulaanbaatar-mongolia": { "Luxury": {
+		"id": 1316987,
+		"name": "Shangri-La Ulaanbaatar",
+		"area": "Sukhbaatar",
+		"address": "19 Olympic Street, Sukhbaatar District",
+		"lat": 47.913189,
+		"lng": 106.920396,
+		"url": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
+		"score": 8.4,
+		"count": 118,
+		"stars": 5,
+		"total": 610.2,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews."
+	} },
+	"valdosta-united-states": { "Budget": {
+		"id": 296306,
+		"name": "Holiday Inn Valdosta Conference Center by IHG",
+		"area": "Valdosta",
+		"address": "1805 West Hill Avenue",
+		"lat": 30.819673,
+		"lng": -83.311032,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-valdosta-hotels.html",
+		"score": 8.6,
+		"count": 238,
+		"stars": 3,
+		"total": 223.97,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews."
+	} },
+	"winnipeg-canada": { "Luxury": {
+		"id": 912926,
+		"name": "Inn at the Forks",
+		"area": "The Forks",
+		"address": "75 Forks Market Road",
+		"lat": 49.887908,
+		"lng": -97.129524,
+		"url": "https://www.booking.com/hotel/ca/inn-at-the-forks-winnipeg.html",
+		"score": 8.6,
+		"count": 210,
+		"stars": 4,
+		"total": 381.73,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews."
+	} },
 	"incheon-south-korea": {
 		"Best Value": {
 			"id": 1174077,
@@ -12653,294 +14771,7 @@ var overrides_central_2710 = {
 			"total": 307.91,
 			"checked": "27 Oct 2026",
 			"reason": "Central Songdo hotel rated 8.7 from 753 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"akron-united-states": {
-		"Best Value": {
-			"id": 1532200,
-			"name": "Courtyard by Marriott Akron Downtown",
-			"area": "Downtown Akron",
-			"address": "41 Furnace Street",
-			"lat": 41.0885,
-			"lng": -81.515,
-			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-akron-downtown.html",
-			"score": 8.1,
-			"count": 154,
-			"stars": 3,
-			"total": 392.62,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"boise-united-states": {
-		"Budget": {
-			"id": 185179,
-			"name": "Hampton Inn & Suites Boise-Downtown",
-			"area": "Downtown Boise",
-			"address": "495 South Capitol Boulevard",
-			"lat": 43.612172,
-			"lng": -116.205319,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-boise-downtown.html",
-			"score": 8.8,
-			"count": 465,
-			"stars": 3,
-			"total": 473.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews."
-		}
-	},
-	"des-moines-united-states": {
-		"Budget": {
-			"id": 1045780,
-			"name": "Hampton Inn & Suites Des Moines Downtown",
-			"area": "Downtown Des Moines",
-			"address": "120 South West Water Street",
-			"lat": 41.584195,
-			"lng": -93.617541,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-amp-suites-des-moines-downtown.html",
-			"score": 8.6,
-			"count": 279,
-			"stars": 3,
-			"total": 211.98,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews."
-		}
-	},
-	"houston-united-states": {
-		"Budget": {
-			"id": 512722,
-			"name": "Best Western Plus Downtown Inn & Suites",
-			"area": "Downtown Houston",
-			"address": "915 W Dallas Street",
-			"lat": 29.757684,
-			"lng": -95.377231,
-			"url": "https://www.booking.com/hotel/us/best-western-plus-downtown-inn-suites.html",
-			"score": 8.5,
-			"count": 902,
-			"stars": 3,
-			"total": 243.36,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews."
-		}
-	},
-	"miami-unitedstates": {
-		"Best Value": {
-			"id": 262683,
-			"name": "SpringHill Suites Miami Downtown/Medical Center",
-			"area": "Health District",
-			"address": "1311 Northwest 10th Avenue",
-			"lat": 25.786628,
-			"lng": -80.210453,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-miami-arts-health-district.html",
-			"score": 7.1,
-			"count": 417,
-			"stars": 3,
-			"total": 363.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tampa-united-states": {
-		"Best Value": {
-			"id": 4637640,
-			"name": "Hampton Inn Tampa Downtown Channel District",
-			"area": "Channel District",
-			"address": "1155 East Kennedy Boulevard",
-			"lat": 27.950163,
-			"lng": -82.44849,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tampa-downtown-channel-district-fl.html",
-			"score": 8.8,
-			"count": 1261,
-			"stars": 3,
-			"total": 592.83,
-			"checked": "27 Oct 2026",
-			"reason": "Central Channel District hotel rated 8.8 from 1,261 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"luton-unitedkingdom": {
-		"Best Value": {
-			"id": 2701360,
-			"name": "Linton Hotel Luton",
-			"area": "Luton",
-			"address": "136 Tennyson Road",
-			"lat": 51.867315,
-			"lng": -0.417531,
-			"url": "https://www.booking.com/hotel/gb/linton-luton.html",
-			"score": 7.2,
-			"count": 1377,
-			"stars": 3,
-			"total": 185.08,
-			"checked": "27 Oct 2026",
-			"reason": "Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights."
-		}
-	}
-};
-for (const [cid, v] of Object.entries(overrides_central_2710)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
-/* 27 Oct 2026 (round 2): airport-free and central replacements */
-var overrides_central_2710b = {
-	"crawley-united-kingdom": {
-		"Best Value": {
-			"id": 2055255,
-			"name": "The Maple Manor Hotel",
-			"area": "Ifield, Crawley",
-			"address": "Charlwood Road",
-			"lat": 51.143092,
-			"lng": -0.202582,
-			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
-			"score": 8.2,
-			"count": 1449,
-			"stars": 4,
-			"total": 243.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
 		},
-		"Luxury": {
-			"id": 33888,
-			"name": "Alexander House Hotel & Utopia Spa",
-			"area": "Turners Hill",
-			"address": "East Street, Turners Hill",
-			"lat": 51.107166,
-			"lng": -0.06889,
-			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
-			"score": 7.8,
-			"count": 470,
-			"stars": 5,
-			"total": 568.39,
-			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
-		},
-		"Budget": {
-			"id": 33977,
-			"name": "Reigate Manor Hotel",
-			"area": "Reigate",
-			"address": "Reigate Hill",
-			"lat": 51.249812,
-			"lng": -0.202716,
-			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
-			"score": 7.7,
-			"count": 950,
-			"stars": 3,
-			"total": 238.82,
-			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
-		}
-	},
-	"new-delhi-india": {
-		"Budget": {
-			"id": 546375,
-			"name": "Hotel Stay Well Dx",
-			"area": "Paharganj",
-			"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
-			"lat": 28.644162,
-			"lng": 77.215654,
-			"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
-			"score": 8.8,
-			"count": 622,
-			"stars": 3,
-			"total": 42.74,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
-		}
-	},
-	"columbus-united-states": {
-		"Budget": {
-			"id": 184150,
-			"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
-			"area": "Downtown Columbus",
-			"address": "175 East Town Street",
-			"lat": 39.959098,
-			"lng": -82.994806,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
-			"score": 7.7,
-			"count": 585,
-			"stars": 3,
-			"total": 262.86,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
-		}
-	},
-	"accra-ghana": {
-		"Budget": {
-			"id": 16678074,
-			"name": "FLORIA - Sky Suites",
-			"area": "Labone",
-			"address": "Palace Mall",
-			"lat": 5.571351,
-			"lng": -0.167309,
-			"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
-			"score": 8.5,
-			"count": 27,
-			"stars": 3,
-			"total": 144.48,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
-		}
-	},
-	"salt-lake-city-united-states": {
-		"Budget": {
-			"id": 283488,
-			"name": "SureStay by Best Western Salt Lake City Downtown",
-			"area": "Downtown Salt Lake City",
-			"address": "1009 S Main St",
-			"lat": 40.747105,
-			"lng": -111.890764,
-			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
-			"score": 7.0,
-			"count": 502,
-			"stars": 2,
-			"total": 193.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
-		},
-		"Best Value": {
-			"id": 907790,
-			"name": "The Anniversary Inn - South Temple",
-			"area": "South Temple",
-			"address": "678 East South Temple",
-			"lat": 40.768961,
-			"lng": -111.871393,
-			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
-			"score": 7.0,
-			"count": 121,
-			"stars": 4,
-			"total": 451.62,
-			"checked": "27 Oct 2026",
-			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"ta-if-saudi-arabia": {
-		"Best Value": {
-			"id": 312215,
-			"name": "Awaliv Hotel",
-			"area": "Shobra",
-			"address": "Abu Baker As Siddiq Street, Shobra",
-			"lat": 21.286953,
-			"lng": 40.41927,
-			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
-			"score": 9.0,
-			"count": 992,
-			"stars": 4,
-			"total": 212.61,
-			"checked": "27 Oct 2026",
-			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
-		},
-		"Luxury": {
-			"id": 9774303,
-			"name": "Le Reve Hotel Taif",
-			"area": "Shihar, Taif",
-			"address": "Shihar Road",
-			"lat": 21.248335,
-			"lng": 40.414011,
-			"url": "https://www.booking.com/hotel/sa/le-reve.html",
-			"score": 9.9,
-			"count": 1223,
-			"stars": 4,
-			"total": 310.31,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
-		}
-	},
-	"incheon-south-korea": {
 		"Budget": {
 			"id": 2914669,
 			"name": "Toyoko Inn Incheon Bupyeong",
@@ -12972,6 +14803,380 @@ var overrides_central_2710b = {
 			"reason": "A 5-star hotel in Songdo, rated 8.6 from 366 Booking.com reviews."
 		}
 	},
+	"akron-united-states": {
+		"Best Value": {
+			"id": 1532200,
+			"name": "Courtyard by Marriott Akron Downtown",
+			"area": "Downtown Akron",
+			"address": "41 Furnace Street",
+			"lat": 41.0885,
+			"lng": -81.515,
+			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-akron-downtown.html",
+			"score": 8.1,
+			"count": 154,
+			"stars": 3,
+			"total": 392.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 1181735,
+			"name": "Hilton Garden Inn Akron",
+			"area": "East Akron",
+			"address": "1307 East Market Street",
+			"lat": 41.064962,
+			"lng": -81.480215,
+			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
+			"score": 8.3,
+			"count": 291,
+			"stars": 3,
+			"total": 400.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 5657933,
+			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
+			"area": "Downtown Akron",
+			"address": "1 S. Main Street",
+			"lat": 41.084908,
+			"lng": -81.516613,
+			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
+			"score": 8.5,
+			"count": 58,
+			"stars": 4,
+			"total": 429.01,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
+		}
+	},
+	"des-moines-united-states": { "Budget": {
+		"id": 1045780,
+		"name": "Hampton Inn & Suites Des Moines Downtown",
+		"area": "Downtown Des Moines",
+		"address": "120 South West Water Street",
+		"lat": 41.584195,
+		"lng": -93.617541,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-amp-suites-des-moines-downtown.html",
+		"score": 8.6,
+		"count": 279,
+		"stars": 3,
+		"total": 211.98,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews."
+	} },
+	"houston-united-states": {
+		"Budget": {
+			"id": 512722,
+			"name": "Best Western Plus Downtown Inn & Suites",
+			"area": "Downtown Houston",
+			"address": "915 W Dallas Street",
+			"lat": 29.757684,
+			"lng": -95.377231,
+			"url": "https://www.booking.com/hotel/us/best-western-plus-downtown-inn-suites.html",
+			"score": 8.5,
+			"count": 902,
+			"stars": 3,
+			"total": 243.36,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 4989542,
+			"name": "Cambria Hotel Houston Downtown Convention Center",
+			"area": "Downtown Houston",
+			"address": "1314 Texas Avenue",
+			"lat": 29.75803,
+			"lng": -95.359582,
+			"url": "https://www.booking.com/hotel/us/cambria-houston-downtown-convention-center.html",
+			"score": 8.4,
+			"count": 1846,
+			"stars": 4,
+			"total": 305.47,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Houston hotel rated 8.4 from 1,846 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 184636,
+			"name": "Four Seasons Hotel Houston",
+			"area": "Downtown Houston",
+			"address": "1300 Lamar Street",
+			"lat": 29.754184,
+			"lng": -95.362595,
+			"url": "https://www.booking.com/hotel/us/four-seasons-houston.html",
+			"score": 9,
+			"count": 60,
+			"stars": 5,
+			"total": 1567.19,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Houston, rated 9 from 60 Booking.com reviews."
+		}
+	},
+	"miami-unitedstates": { "Best Value": {
+		"id": 262683,
+		"name": "SpringHill Suites Miami Downtown/Medical Center",
+		"area": "Health District",
+		"address": "1311 Northwest 10th Avenue",
+		"lat": 25.786628,
+		"lng": -80.210453,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-miami-arts-health-district.html",
+		"score": 7.1,
+		"count": 417,
+		"stars": 3,
+		"total": 363.12,
+		"checked": "27 Oct 2026",
+		"reason": "Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights."
+	} },
+	"tampa-united-states": {
+		"Best Value": {
+			"id": 247179,
+			"name": "The Barrymore Hotel Tampa Riverwalk",
+			"area": "Downtown Tampa",
+			"address": "111 West Fortune Street",
+			"lat": 27.953256,
+			"lng": -82.463794,
+			"url": "https://www.booking.com/hotel/us/howard-johnson-plaza-tampa.html",
+			"score": 8.3,
+			"count": 3134,
+			"stars": 3,
+			"total": 486,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Tampa hotel rated 8.3 from 3,134 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 4637639,
+			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
+			"area": "Channel District",
+			"address": "1155 East Kennedy Boulevard",
+			"lat": 27.950163,
+			"lng": -82.44849,
+			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
+			"score": 8.9,
+			"count": 503,
+			"stars": 3,
+			"total": 591.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 522035,
+			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
+			"area": "Downtown Tampa",
+			"address": "905 N. Florida Ave",
+			"lat": 27.95203,
+			"lng": -82.4586,
+			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
+			"score": 8.1,
+			"count": 235,
+			"stars": 4,
+			"total": 671.53,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
+		}
+	},
+	"luton-unitedkingdom": {
+		"Best Value": {
+			"id": 2701360,
+			"name": "Linton Hotel Luton",
+			"area": "Luton",
+			"address": "136 Tennyson Road",
+			"lat": 51.867315,
+			"lng": -.417531,
+			"url": "https://www.booking.com/hotel/gb/linton-luton.html",
+			"score": 7.2,
+			"count": 1377,
+			"stars": 3,
+			"total": 185.08,
+			"checked": "27 Oct 2026",
+			"reason": "Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 220889,
+			"name": "Thistle Express London Luton",
+			"area": "Luton Town Centre",
+			"address": "The Mall",
+			"lat": 51.879432,
+			"lng": -.414616,
+			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
+			"score": 7.8,
+			"count": 7010,
+			"stars": 3,
+			"total": 161.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 8712797,
+			"name": "Spark by Hilton Luton",
+			"area": "Luton Town Centre",
+			"address": "2/4 Mill Street",
+			"lat": 51.88262,
+			"lng": -.417606,
+			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
+			"score": 8.4,
+			"count": 1747,
+			"stars": 4,
+			"total": 217.29,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
+		}
+	},
+	"crawley-united-kingdom": {
+		"Best Value": {
+			"id": 2055255,
+			"name": "The Maple Manor Hotel",
+			"area": "Ifield, Crawley",
+			"address": "Charlwood Road",
+			"lat": 51.143092,
+			"lng": -.202582,
+			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
+			"score": 8.2,
+			"count": 1449,
+			"stars": 4,
+			"total": 243.12,
+			"checked": "27 Oct 2026",
+			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 33888,
+			"name": "Alexander House Hotel & Utopia Spa",
+			"area": "Turners Hill",
+			"address": "East Street, Turners Hill",
+			"lat": 51.107166,
+			"lng": -.06889,
+			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
+			"score": 7.8,
+			"count": 470,
+			"stars": 5,
+			"total": 568.39,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 33977,
+			"name": "Reigate Manor Hotel",
+			"area": "Reigate",
+			"address": "Reigate Hill",
+			"lat": 51.249812,
+			"lng": -.202716,
+			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
+			"score": 7.7,
+			"count": 950,
+			"stars": 3,
+			"total": 238.82,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
+		}
+	},
+	"new-delhi-india": { "Budget": {
+		"id": 546375,
+		"name": "Hotel Stay Well Dx",
+		"area": "Paharganj",
+		"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
+		"lat": 28.644162,
+		"lng": 77.215654,
+		"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
+		"score": 8.8,
+		"count": 622,
+		"stars": 3,
+		"total": 42.74,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
+	} },
+	"columbus-united-states": { "Budget": {
+		"id": 184150,
+		"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
+		"area": "Downtown Columbus",
+		"address": "175 East Town Street",
+		"lat": 39.959098,
+		"lng": -82.994806,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
+		"score": 7.7,
+		"count": 585,
+		"stars": 3,
+		"total": 262.86,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
+	} },
+	"accra-ghana": { "Budget": {
+		"id": 16678074,
+		"name": "FLORIA - Sky Suites",
+		"area": "Labone",
+		"address": "Palace Mall",
+		"lat": 5.571351,
+		"lng": -.167309,
+		"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
+		"score": 8.5,
+		"count": 27,
+		"stars": 3,
+		"total": 144.48,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
+	} },
+	"salt-lake-city-united-states": {
+		"Budget": {
+			"id": 283488,
+			"name": "SureStay by Best Western Salt Lake City Downtown",
+			"area": "Downtown Salt Lake City",
+			"address": "1009 S Main St",
+			"lat": 40.747105,
+			"lng": -111.890764,
+			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
+			"score": 7,
+			"count": 502,
+			"stars": 2,
+			"total": 193.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 907790,
+			"name": "The Anniversary Inn - South Temple",
+			"area": "South Temple",
+			"address": "678 East South Temple",
+			"lat": 40.768961,
+			"lng": -111.871393,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
+			"score": 7,
+			"count": 121,
+			"stars": 4,
+			"total": 451.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"ta-if-saudi-arabia": {
+		"Best Value": {
+			"id": 312215,
+			"name": "Awaliv Hotel",
+			"area": "Shobra",
+			"address": "Abu Baker As Siddiq Street, Shobra",
+			"lat": 21.286953,
+			"lng": 40.41927,
+			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
+			"score": 9,
+			"count": 992,
+			"stars": 4,
+			"total": 212.61,
+			"checked": "27 Oct 2026",
+			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 9774303,
+			"name": "Le Reve Hotel Taif",
+			"area": "Shihar, Taif",
+			"address": "Shihar Road",
+			"lat": 21.248335,
+			"lng": 40.414011,
+			"url": "https://www.booking.com/hotel/sa/le-reve.html",
+			"score": 9.9,
+			"count": 1223,
+			"stars": 4,
+			"total": 310.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
+		}
+	},
 	"windsor-unitedkingdom": {
 		"Budget": {
 			"id": 6685415,
@@ -12979,7 +15184,7 @@ var overrides_central_2710b = {
 			"area": "Windsor City Centre",
 			"address": "134 Peascod Street",
 			"lat": 51.482494,
-			"lng": -0.60773,
+			"lng": -.60773,
 			"url": "https://www.booking.com/hotel/gb/goswell-house.html",
 			"score": 8.6,
 			"count": 476,
@@ -12987,25 +15192,38 @@ var overrides_central_2710b = {
 			"total": 297.98,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Windsor City Centre, rated 8.6 from 476 Booking.com reviews."
-		}
-	},
-	"sanford-united-states": {
+		},
 		"Luxury": {
-			"id": 252898,
-			"name": "The Westin Lake Mary, Orlando North",
-			"area": "Lake Mary",
-			"address": "2974 International Parkway",
-			"lat": 28.788446,
-			"lng": -81.358851,
-			"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
-			"score": 8.1,
-			"count": 184,
+			"id": 200685,
+			"name": "Sir Christopher Wren Hotel",
+			"area": "Windsor City Centre",
+			"address": "Thames Street",
+			"lat": 51.485328,
+			"lng": -.607974,
+			"url": "https://www.booking.com/hotel/gb/scw.html",
+			"score": 8.4,
+			"count": 1828,
 			"stars": 4,
-			"total": 364.07,
+			"total": 481.93,
 			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Windsor City Centre rated 8.4/10 from 1,828 Booking.com reviews."
 		}
 	},
+	"sanford-united-states": { "Luxury": {
+		"id": 252898,
+		"name": "The Westin Lake Mary, Orlando North",
+		"area": "Lake Mary",
+		"address": "2974 International Parkway",
+		"lat": 28.788446,
+		"lng": -81.358851,
+		"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
+		"score": 8.1,
+		"count": 184,
+		"stars": 4,
+		"total": 364.07,
+		"checked": "27 Oct 2026",
+		"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+	} },
 	"slough-unitedkingdom": {
 		"Budget": {
 			"id": 200701,
@@ -13013,7 +15231,7 @@ var overrides_central_2710b = {
 			"area": "Slough",
 			"address": "Cippenham Lane",
 			"lat": 51.508937,
-			"lng": -0.614256,
+			"lng": -.614256,
 			"url": "https://www.booking.com/hotel/gb/copthornewindsor.html",
 			"score": 7.9,
 			"count": 3247,
@@ -13021,6 +15239,21 @@ var overrides_central_2710b = {
 			"total": 161.4,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Slough, rated 7.9 from 3,247 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 108913,
+			"name": "Holiday Inn Slough Windsor by IHG",
+			"area": "Slough centre",
+			"address": "1 Church Street, Chalvey",
+			"lat": 51.507841,
+			"lng": -.61119,
+			"url": "https://www.booking.com/hotel/gb/courtyard.html",
+			"score": 7.8,
+			"count": 3392,
+			"stars": 4,
+			"total": 213.74,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Slough centre rated 7.8/10 from 3,392 Booking.com reviews."
 		}
 	},
 	"cedar-rapids-united-states": {
@@ -13055,38 +15288,6 @@ var overrides_central_2710b = {
 			"reason": "Central Northeast Cedar Rapids hotel rated 8.2 from 100 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"luton-unitedkingdom": {
-		"Budget": {
-			"id": 220889,
-			"name": "Thistle Express London Luton",
-			"area": "Luton Town Centre",
-			"address": "The Mall",
-			"lat": 51.879432,
-			"lng": -0.414616,
-			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
-			"score": 7.8,
-			"count": 7010,
-			"stars": 3,
-			"total": 161.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 8712797,
-			"name": "Spark by Hilton Luton",
-			"area": "Luton Town Centre",
-			"address": "2/4 Mill Street",
-			"lat": 51.88262,
-			"lng": -0.417606,
-			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
-			"score": 8.4,
-			"count": 1747,
-			"stars": 4,
-			"total": 217.29,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
-		}
-	},
 	"namur-belgium": {
 		"Luxury": {
 			"id": 307315,
@@ -13102,25 +15303,38 @@ var overrides_central_2710b = {
 			"total": 278.9,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Namur Old Town rated 8.6/10 from 2,007 Booking.com reviews."
-		}
-	},
-	"cochabamba-bolivia": {
+		},
 		"Best Value": {
-			"id": 11325426,
-			"name": "Hotel Aranjuez Cochabamba",
-			"area": "Cochabamba",
-			"address": "563 Buenos Aires",
-			"lat": -17.374008,
-			"lng": -66.154396,
-			"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
-			"score": 8.4,
-			"count": 31,
-			"stars": 4,
-			"total": 161.03,
+			"id": 20171,
+			"name": "Ibis Namur Centre",
+			"area": "Namur centre",
+			"address": "Rue du Premier Lanciers 10",
+			"lat": 50.466335,
+			"lng": 4.871066,
+			"url": "https://www.booking.com/hotel/be/ibisnamur.html",
+			"score": 8.1,
+			"count": 1823,
+			"stars": 3,
+			"total": 204.08,
 			"checked": "27 Oct 2026",
-			"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+			"reason": "Central Namur centre hotel rated 8.1 from 1,823 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"cochabamba-bolivia": { "Best Value": {
+		"id": 11325426,
+		"name": "Hotel Aranjuez Cochabamba",
+		"area": "Cochabamba",
+		"address": "563 Buenos Aires",
+		"lat": -17.374008,
+		"lng": -66.154396,
+		"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
+		"score": 8.4,
+		"count": 31,
+		"stars": 4,
+		"total": 161.03,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+	} },
 	"salvador-brazil": {
 		"Luxury": {
 			"id": 1940259,
@@ -13130,150 +15344,119 @@ var overrides_central_2710b = {
 			"lat": -12.975692,
 			"lng": -38.513394,
 			"url": "https://www.booking.com/hotel/br/fera-palace.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 659,
 			"stars": 5,
 			"total": 735.55,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Historic Centre Salvador, rated 9.0 from 659 Booking.com reviews."
-		}
-	},
-	"hamilton-canada": {
+		},
 		"Budget": {
-			"id": 410506,
-			"name": "Staybridge Suites Hamilton - Downtown by IHG",
-			"area": "Downtown Hamilton",
-			"address": "20 Caroline Street South",
-			"lat": 43.257911,
-			"lng": -79.876171,
-			"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
-			"score": 8.0,
-			"count": 491,
-			"stars": 3,
-			"total": 236.82,
+			"id": 1523673,
+			"name": "Aquarena Hotel",
+			"area": "Salvador",
+			"address": "Rua Rodolfo Pimentel, 241",
+			"lat": -12.98176,
+			"lng": -38.495933,
+			"url": "https://www.booking.com/hotel/br/aquarena-suites-salvador.html",
+			"score": 8.3,
+			"count": 1603,
+			"stars": 2,
+			"total": 95.67,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+			"reason": "A central budget pick in Salvador, rated 8.3 from 1,603 Booking.com reviews."
 		}
 	},
-	"shenzhen-china": {
-		"Budget": {
-			"id": 12465143,
-			"name": "Shenzhen Jiangsu Hotel",
-			"area": "Futian",
-			"address": "2066 Caitian South Road, Futian",
-			"lat": 22.54446,
-			"lng": 114.068997,
-			"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
-			"score": 8.5,
-			"count": 40,
-			"stars": 3,
-			"total": 125.58,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
-		}
-	},
-	"osijek-croatia": {
-		"Luxury": {
-			"id": 20789,
-			"name": "Hotel Waldinger",
-			"area": "Osijek Centre",
-			"address": "Zupanijska 8",
-			"lat": 45.558718,
-			"lng": 18.675948,
-			"url": "https://www.booking.com/hotel/hr/waldinger.html",
-			"score": 9.2,
-			"count": 398,
-			"stars": 4,
-			"total": 332.8,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
-		}
-	},
-	"hurghada-egypt": {
-		"Luxury": {
-			"id": 379692,
-			"name": "Sea Star Beau Rivage Hotel",
-			"area": "Dahar",
-			"address": "Al Hilal - Military Hospital Street",
-			"lat": 27.265616,
-			"lng": 33.804409,
-			"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
-			"score": 8.0,
-			"count": 230,
-			"stars": 5,
-			"total": 258.11,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
-		}
-	},
-	"narbonne-france": {
-		"Luxury": {
-			"id": 3679500,
-			"name": "Hôtel Le C - Boutique Hôtel",
-			"area": "Narbonne Centre",
-			"address": "15 Rue de Suffren",
-			"lat": 43.184197,
-			"lng": 3.010169,
-			"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
-			"score": 8.8,
-			"count": 607,
-			"stars": 4,
-			"total": 263.24,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
-		}
-	},
-	"erfurt-germany": {
-		"Best Value": {
-			"id": 61323,
-			"name": "Hotel Alma Am Anger",
-			"area": "Erfurt Old Town",
-			"address": "Anger 50/51",
-			"lat": 50.975009,
-			"lng": 11.031769,
-			"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
-			"score": 8.5,
-			"count": 3211,
-			"stars": 4,
-			"total": 306.65,
-			"checked": "27 Oct 2026",
-			"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"essen-germany": {
-		"Luxury": {
-			"id": 3256579,
-			"name": "NH Essen",
-			"area": "Stadtkern",
-			"address": "Am Porscheplatz 9",
-			"lat": 51.458189,
-			"lng": 7.014051,
-			"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
-			"score": 8.6,
-			"count": 3015,
-			"stars": 4,
-			"total": 291.9,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
-		}
-	},
-	"chandigarh-india": {
-		"Budget": {
-			"id": 804216,
-			"name": "Hotel Icon",
-			"area": "Sector 8",
-			"address": "SCO 58-61, Sector 8C",
-			"lat": 30.734113,
-			"lng": 76.797215,
-			"url": "https://www.booking.com/hotel/in/icon.html",
-			"score": 7.8,
-			"count": 250,
-			"stars": 3,
-			"total": 110.13,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
-		}
-	},
+	"hamilton-canada": { "Budget": {
+		"id": 410506,
+		"name": "Staybridge Suites Hamilton - Downtown by IHG",
+		"area": "Downtown Hamilton",
+		"address": "20 Caroline Street South",
+		"lat": 43.257911,
+		"lng": -79.876171,
+		"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
+		"score": 8,
+		"count": 491,
+		"stars": 3,
+		"total": 236.82,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+	} },
+	"shenzhen-china": { "Budget": {
+		"id": 12465143,
+		"name": "Shenzhen Jiangsu Hotel",
+		"area": "Futian",
+		"address": "2066 Caitian South Road, Futian",
+		"lat": 22.54446,
+		"lng": 114.068997,
+		"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
+		"score": 8.5,
+		"count": 40,
+		"stars": 3,
+		"total": 125.58,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
+	} },
+	"narbonne-france": { "Luxury": {
+		"id": 3679500,
+		"name": "Hôtel Le C - Boutique Hôtel",
+		"area": "Narbonne Centre",
+		"address": "15 Rue de Suffren",
+		"lat": 43.184197,
+		"lng": 3.010169,
+		"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
+		"score": 8.8,
+		"count": 607,
+		"stars": 4,
+		"total": 263.24,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
+	} },
+	"erfurt-germany": { "Best Value": {
+		"id": 61323,
+		"name": "Hotel Alma Am Anger",
+		"area": "Erfurt Old Town",
+		"address": "Anger 50/51",
+		"lat": 50.975009,
+		"lng": 11.031769,
+		"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
+		"score": 8.5,
+		"count": 3211,
+		"stars": 4,
+		"total": 306.65,
+		"checked": "27 Oct 2026",
+		"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
+	} },
+	"essen-germany": { "Luxury": {
+		"id": 3256579,
+		"name": "NH Essen",
+		"area": "Stadtkern",
+		"address": "Am Porscheplatz 9",
+		"lat": 51.458189,
+		"lng": 7.014051,
+		"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
+		"score": 8.6,
+		"count": 3015,
+		"stars": 4,
+		"total": 291.9,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
+	} },
+	"chandigarh-india": { "Budget": {
+		"id": 804216,
+		"name": "Hotel Icon",
+		"area": "Sector 8",
+		"address": "SCO 58-61, Sector 8C",
+		"lat": 30.734113,
+		"lng": 76.797215,
+		"url": "https://www.booking.com/hotel/in/icon.html",
+		"score": 7.8,
+		"count": 250,
+		"stars": 3,
+		"total": 110.13,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
+	} },
 	"banyuwangi-indonesia": {
 		"Budget": {
 			"id": 1310599,
@@ -13313,7 +15496,7 @@ var overrides_central_2710b = {
 			"lat": -8.219769,
 			"lng": 114.352788,
 			"url": "https://www.booking.com/hotel/id/aston-banyuwangi-city.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 201,
 			"stars": 4,
 			"total": 119.99,
@@ -13321,57 +15504,36 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Giri rated 8.0/10 from 201 Booking.com reviews."
 		}
 	},
-	"bogor-indonesia": {
-		"Luxury": {
-			"id": 6810833,
-			"name": "Swiss-Belinn Bogor",
-			"area": "Bogor Timur",
-			"address": "Jalan Pajajaran Indah V",
-			"lat": -6.611101,
-			"lng": 106.814593,
-			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
-			"score": 8.4,
-			"count": 106,
-			"stars": 4,
-			"total": 94.83,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
-		}
-	},
-	"ancona-italy": {
-		"Best Value": {
-			"id": 84473,
-			"name": "Grand Hotel Passetto",
-			"area": "Passetto",
-			"address": "Via Thaon De Revel 1",
-			"lat": 43.613899,
-			"lng": 13.534616,
-			"url": "https://www.booking.com/hotel/it/grand-passetto.html",
-			"score": 8.8,
-			"count": 967,
-			"stars": 4,
-			"total": 316.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"benevento-italy": {
-		"Budget": {
-			"id": 4797664,
-			"name": "Albergo Della Corte",
-			"area": "Benevento Centre",
-			"address": "Vico Papa Vittorio III 7",
-			"lat": 41.131624,
-			"lng": 14.781024,
-			"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
-			"score": 7.9,
-			"count": 489,
-			"stars": 3,
-			"total": 170.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
-		}
-	},
+	"ancona-italy": { "Best Value": {
+		"id": 84473,
+		"name": "Grand Hotel Passetto",
+		"area": "Passetto",
+		"address": "Via Thaon De Revel 1",
+		"lat": 43.613899,
+		"lng": 13.534616,
+		"url": "https://www.booking.com/hotel/it/grand-passetto.html",
+		"score": 8.8,
+		"count": 967,
+		"stars": 4,
+		"total": 316,
+		"checked": "27 Oct 2026",
+		"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
+	} },
+	"benevento-italy": { "Budget": {
+		"id": 4797664,
+		"name": "Albergo Della Corte",
+		"area": "Benevento Centre",
+		"address": "Vico Papa Vittorio III 7",
+		"lat": 41.131624,
+		"lng": 14.781024,
+		"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
+		"score": 7.9,
+		"count": 489,
+		"stars": 3,
+		"total": 170,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
+	} },
 	"lamezia-terme-italy": {
 		"Best Value": {
 			"id": 12494,
@@ -13384,7 +15546,7 @@ var overrides_central_2710b = {
 			"score": 8.1,
 			"count": 309,
 			"stars": 4,
-			"total": 180.0,
+			"total": 180,
 			"checked": "27 Oct 2026",
 			"reason": "Central Sambiase hotel rated 8.1 from 309 Booking.com reviews: good value close to the sights."
 		},
@@ -13396,48 +15558,29 @@ var overrides_central_2710b = {
 			"lat": 38.972497,
 			"lng": 16.315784,
 			"url": "https://www.booking.com/hotel/it/savant.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 133,
 			"stars": 4,
-			"total": 220.0,
+			"total": 220,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nicastro rated 8.0/10 from 133 Booking.com reviews."
 		}
 	},
-	"latina-italy": {
-		"Budget": {
-			"id": 567307,
-			"name": "Garden Hotel",
-			"area": "Latina",
-			"address": "Via Del Lido 129",
-			"lat": 41.448645,
-			"lng": 12.890028,
-			"url": "https://www.booking.com/hotel/it/garden-latina1.html",
-			"score": 7.2,
-			"count": 501,
-			"stars": 3,
-			"total": 196.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
-		}
-	},
-	"taranto-italy": {
-		"Luxury": {
-			"id": 332045,
-			"name": "Hotel Europa",
-			"area": "Taranto Old Town",
-			"address": "Via Roma 2",
-			"lat": 40.47474,
-			"lng": 17.236865,
-			"url": "https://www.booking.com/hotel/it/europa-taranto.html",
-			"score": 9.1,
-			"count": 1547,
-			"stars": 4,
-			"total": 246.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
-		}
-	},
+	"latina-italy": { "Budget": {
+		"id": 567307,
+		"name": "Garden Hotel",
+		"area": "Latina",
+		"address": "Via Del Lido 129",
+		"lat": 41.448645,
+		"lng": 12.890028,
+		"url": "https://www.booking.com/hotel/it/garden-latina1.html",
+		"score": 7.2,
+		"count": 501,
+		"stars": 3,
+		"total": 196.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
+	} },
 	"abidjan-ivory-coast": {
 		"Luxury": {
 			"id": 6958197,
@@ -13485,25 +15628,38 @@ var overrides_central_2710b = {
 			"total": 469.99,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Bostandyk, rated 8.9 from 911 Booking.com reviews."
-		}
-	},
-	"mombasa-kenya": {
-		"Luxury": {
-			"id": 1137024,
-			"name": "Bahari Beach Hotel",
-			"area": "Nyali",
-			"address": "Mt Kenya Road, Nyali Beach",
-			"lat": -4.035322,
-			"lng": 39.71813,
-			"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
-			"score": 8.4,
-			"count": 466,
+		},
+		"Best Value": {
+			"id": 2501211,
+			"name": "Plaza Hotel Almaty",
+			"area": "Almaty centre",
+			"address": "Kozhamkulov Street 215/120",
+			"lat": 43.249356,
+			"lng": 76.916985,
+			"url": "https://www.booking.com/hotel/kz/the-plaza-almaty.html",
+			"score": 8.2,
+			"count": 426,
 			"stars": 4,
-			"total": 501.43,
+			"total": 252.55,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+			"reason": "Central Almaty centre hotel rated 8.2 from 426 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"mombasa-kenya": { "Luxury": {
+		"id": 1137024,
+		"name": "Bahari Beach Hotel",
+		"area": "Nyali",
+		"address": "Mt Kenya Road, Nyali Beach",
+		"lat": -4.035322,
+		"lng": 39.71813,
+		"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
+		"score": 8.4,
+		"count": 466,
+		"stars": 4,
+		"total": 501.43,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+	} },
 	"cancun-mexico": {
 		"Best Value": {
 			"id": 78143,
@@ -13536,74 +15692,66 @@ var overrides_central_2710b = {
 			"reason": "A 5-star hotel in Zona Hotelera (north), rated 8.8 from 3,407 Booking.com reviews."
 		}
 	},
-	"swakopmund-namibia": {
-		"Luxury": {
-			"id": 628048,
-			"name": "Hansa Hotel Swakopmund",
-			"area": "Swakopmund Centre",
-			"address": "3 Hendrik Witbooi Street",
-			"lat": -22.677085,
-			"lng": 14.5262,
-			"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
-			"score": 9.0,
-			"count": 472,
-			"stars": 4,
-			"total": 322.72,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
-		}
-	},
-	"lagos-nigeria": {
-		"Budget": {
-			"id": 12149479,
-			"name": "Presken Kuramo Waters, Victoria Island",
-			"area": "Victoria Island",
-			"address": "322a Akin Ogunlewe Road",
-			"lat": 6.425768,
-			"lng": 3.435874,
-			"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
-			"score": 7.8,
-			"count": 245,
-			"stars": 3,
-			"total": 125.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
-		}
-	},
-	"krynica-zdroj-poland": {
-		"Budget": {
-			"id": 256614,
-			"name": "Hotel NAT Krynica Zdrój",
-			"area": "Krynica Zdrój Centre",
-			"address": "Ul. Pilsudskiego 24",
-			"lat": 49.425143,
-			"lng": 20.956485,
-			"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
-			"score": 8.6,
-			"count": 463,
-			"stars": 3,
-			"total": 137.93,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
-		}
-	},
-	"braganca-portugal": {
-		"Luxury": {
-			"id": 264854,
-			"name": "Hotel Estalagem Turismo",
-			"area": "Braganca",
-			"address": "Cabeca Boa, Estrada De Turismo",
-			"lat": 41.788115,
-			"lng": -6.755613,
-			"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
-			"score": 8.1,
-			"count": 1341,
-			"stars": 4,
-			"total": 140.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
-		}
-	},
+	"swakopmund-namibia": { "Luxury": {
+		"id": 628048,
+		"name": "Hansa Hotel Swakopmund",
+		"area": "Swakopmund Centre",
+		"address": "3 Hendrik Witbooi Street",
+		"lat": -22.677085,
+		"lng": 14.5262,
+		"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
+		"score": 9,
+		"count": 472,
+		"stars": 4,
+		"total": 322.72,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
+	} },
+	"lagos-nigeria": { "Budget": {
+		"id": 12149479,
+		"name": "Presken Kuramo Waters, Victoria Island",
+		"area": "Victoria Island",
+		"address": "322a Akin Ogunlewe Road",
+		"lat": 6.425768,
+		"lng": 3.435874,
+		"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
+		"score": 7.8,
+		"count": 245,
+		"stars": 3,
+		"total": 125.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
+	} },
+	"krynica-zdroj-poland": { "Budget": {
+		"id": 256614,
+		"name": "Hotel NAT Krynica Zdrój",
+		"area": "Krynica Zdrój Centre",
+		"address": "Ul. Pilsudskiego 24",
+		"lat": 49.425143,
+		"lng": 20.956485,
+		"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
+		"score": 8.6,
+		"count": 463,
+		"stars": 3,
+		"total": 137.93,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
+	} },
+	"braganca-portugal": { "Luxury": {
+		"id": 264854,
+		"name": "Hotel Estalagem Turismo",
+		"area": "Braganca",
+		"address": "Cabeca Boa, Estrada De Turismo",
+		"lat": 41.788115,
+		"lng": -6.755613,
+		"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
+		"score": 8.1,
+		"count": 1341,
+		"stars": 4,
+		"total": 140,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
+	} },
 	"jeddah-saudiarabia": {
 		"Budget": {
 			"id": 8349726,
@@ -13636,74 +15784,36 @@ var overrides_central_2710b = {
 			"reason": "Central Al Rawda hotel rated 9.1 from 2,107 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"busan-southkorea": {
-		"Best Value": {
-			"id": 5129061,
-			"name": "Avani Central Busan",
-			"area": "Seomyeon",
-			"address": "133 Jeonpo-daero, Nam-gu",
-			"lat": 35.148606,
-			"lng": 129.065627,
-			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
-			"score": 8.7,
-			"count": 888,
-			"stars": 4,
-			"total": 249.97,
-			"checked": "27 Oct 2026",
-			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"lleida-spain": {
-		"Luxury": {
-			"id": 90710,
-			"name": "NH Lleida Pirineos",
-			"area": "Lleida Centre",
-			"address": "Passeig de Ronda 63",
-			"lat": 41.617083,
-			"lng": 0.613266,
-			"url": "https://www.booking.com/hotel/es/nhpirineos.html",
-			"score": 8.5,
-			"count": 2644,
-			"stars": 4,
-			"total": 189.92,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
-		}
-	},
-	"dar-es-salaam-tanzania": {
-		"Budget": {
-			"id": 569734,
-			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
-			"area": "Kisutu",
-			"address": "Indira Gandhi / Morogoro Road Junction",
-			"lat": -6.818325,
-			"lng": 39.28442,
-			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
-			"score": 8.1,
-			"count": 319,
-			"stars": 3,
-			"total": 169.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
-		}
-	},
-	"denizli-turkiye": {
-		"Luxury": {
-			"id": 328105,
-			"name": "North Point Hotel",
-			"area": "Denizli Centre",
-			"address": "Fevzi Cakmak Bulvari No:129",
-			"lat": 37.766049,
-			"lng": 29.100279,
-			"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
-			"score": 8.5,
-			"count": 86,
-			"stars": 4,
-			"total": 184.94,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
-		}
-	},
+	"lleida-spain": { "Luxury": {
+		"id": 90710,
+		"name": "NH Lleida Pirineos",
+		"area": "Lleida Centre",
+		"address": "Passeig de Ronda 63",
+		"lat": 41.617083,
+		"lng": .613266,
+		"url": "https://www.booking.com/hotel/es/nhpirineos.html",
+		"score": 8.5,
+		"count": 2644,
+		"stars": 4,
+		"total": 189.92,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
+	} },
+	"denizli-turkiye": { "Luxury": {
+		"id": 328105,
+		"name": "North Point Hotel",
+		"area": "Denizli Centre",
+		"address": "Fevzi Cakmak Bulvari No:129",
+		"lat": 37.766049,
+		"lng": 29.100279,
+		"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
+		"score": 8.5,
+		"count": 86,
+		"stars": 4,
+		"total": 184.94,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
+	} },
 	"trabzon-turkiye": {
 		"Best Value": {
 			"id": 1630673,
@@ -13719,6 +15829,21 @@ var overrides_central_2710b = {
 			"total": 136.99,
 			"checked": "27 Oct 2026",
 			"reason": "Central Trabzon City Center hotel rated 8.8 from 1,042 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 3588192,
+			"name": "Life Point Hotel",
+			"area": "Trabzon City Center",
+			"address": "Kemerkaya Mahallesi Halkevi Caddesi No:27",
+			"lat": 41.007035,
+			"lng": 39.727777,
+			"url": "https://www.booking.com/hotel/tr/life-point-trabzon-ili1.html",
+			"score": 8.3,
+			"count": 372,
+			"stars": 3,
+			"total": 188.1,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Trabzon City Center, rated 8.3 from 372 Booking.com reviews."
 		}
 	},
 	"abu-dhabi-unitedarabemirates": {
@@ -13760,9 +15885,9 @@ var overrides_central_2710b = {
 			"area": "Weavering, Maidstone",
 			"address": "Bearsted Road, Weavering",
 			"lat": 51.285125,
-			"lng": 0.546114,
+			"lng": .546114,
 			"url": "https://www.booking.com/hotel/gb/hilton-maidstone.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 5096,
 			"stars": 4,
 			"total": 271.89,
@@ -13775,9 +15900,9 @@ var overrides_central_2710b = {
 			"area": "Maidstone",
 			"address": "Sandling Road",
 			"lat": 51.279949,
-			"lng": 0.519793,
+			"lng": .519793,
 			"url": "https://www.booking.com/hotel/gb/innkeeper-s-lodge-maidstone.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 1232,
 			"stars": 4,
 			"total": 334.34,
@@ -13785,140 +15910,96 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Maidstone rated 8.0/10 from 1,232 Booking.com reviews."
 		}
 	},
-	"norwich-united-kingdom": {
-		"Luxury": {
-			"id": 35715,
-			"name": "Holiday Inn Norwich, Ipswich Road by IHG",
-			"area": "Norwich",
-			"address": "Ipswich Road",
-			"lat": 52.600884,
-			"lng": 1.28098,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
-			"score": 8.1,
-			"count": 1516,
-			"stars": 4,
-			"total": 339.12,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
-		}
-	},
-	"peterborough-unitedkingdom": {
-		"Luxury": {
-			"id": 222855,
-			"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
-			"area": "Peterborough City Centre",
-			"address": "Westgate",
-			"lat": 52.574544,
-			"lng": -0.241957,
-			"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
-			"score": 8.4,
-			"count": 2405,
-			"stars": 4,
-			"total": 270.82,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
-		}
-	},
-	"southampton-united-kingdom": {
-		"Budget": {
-			"id": 177869,
-			"name": "The Elizabeth House Hotel",
-			"area": "Southampton",
-			"address": "42-44 The Avenue",
-			"lat": 50.919339,
-			"lng": -1.403879,
-			"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
-			"score": 8.1,
-			"count": 2920,
-			"stars": 3,
-			"total": 214.94,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
-		}
-	},
-	"doncaster-united-kingdom": {
-		"Budget": {
-			"id": 34495,
-			"name": "Regent Hotel Doncaster",
-			"area": "Doncaster Centre",
-			"address": "Regent Square",
-			"lat": 53.521831,
-			"lng": -1.127193,
-			"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
-			"score": 7.4,
-			"count": 559,
-			"stars": 3,
-			"total": 226.88,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
-		}
-	},
-	"akron-united-states": {
-		"Budget": {
-			"id": 1181735,
-			"name": "Hilton Garden Inn Akron",
-			"area": "East Akron",
-			"address": "1307 East Market Street",
-			"lat": 41.064962,
-			"lng": -81.480215,
-			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
-			"score": 8.3,
-			"count": 291,
-			"stars": 3,
-			"total": 400.92,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 5657933,
-			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
-			"area": "Downtown Akron",
-			"address": "1 S. Main Street",
-			"lat": 41.084908,
-			"lng": -81.516613,
-			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
-			"score": 8.5,
-			"count": 58,
-			"stars": 4,
-			"total": 429.01,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
-		}
-	},
-	"atlanta-united-states": {
-		"Budget": {
-			"id": 28533,
-			"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
-			"area": "Downtown Atlanta",
-			"address": "244 North Avenue Northwest",
-			"lat": 33.770956,
-			"lng": -84.395728,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
-			"score": 8.3,
-			"count": 432,
-			"stars": 3,
-			"total": 378.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
-		}
-	},
-	"bossier-city-united-states": {
-		"Luxury": {
-			"id": 183954,
-			"name": "Hilton Shreveport",
-			"area": "Downtown Shreveport",
-			"address": "104 Market Street, Shreveport",
-			"lat": 32.51747,
-			"lng": -93.751103,
-			"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
-			"score": 8.3,
-			"count": 284,
-			"stars": 4,
-			"total": 282.31,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
-		}
-	},
+	"norwich-united-kingdom": { "Luxury": {
+		"id": 35715,
+		"name": "Holiday Inn Norwich, Ipswich Road by IHG",
+		"area": "Norwich",
+		"address": "Ipswich Road",
+		"lat": 52.600884,
+		"lng": 1.28098,
+		"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
+		"score": 8.1,
+		"count": 1516,
+		"stars": 4,
+		"total": 339.12,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
+	} },
+	"peterborough-unitedkingdom": { "Luxury": {
+		"id": 222855,
+		"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
+		"area": "Peterborough City Centre",
+		"address": "Westgate",
+		"lat": 52.574544,
+		"lng": -.241957,
+		"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
+		"score": 8.4,
+		"count": 2405,
+		"stars": 4,
+		"total": 270.82,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
+	} },
+	"southampton-united-kingdom": { "Budget": {
+		"id": 177869,
+		"name": "The Elizabeth House Hotel",
+		"area": "Southampton",
+		"address": "42-44 The Avenue",
+		"lat": 50.919339,
+		"lng": -1.403879,
+		"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
+		"score": 8.1,
+		"count": 2920,
+		"stars": 3,
+		"total": 214.94,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
+	} },
+	"doncaster-united-kingdom": { "Budget": {
+		"id": 34495,
+		"name": "Regent Hotel Doncaster",
+		"area": "Doncaster Centre",
+		"address": "Regent Square",
+		"lat": 53.521831,
+		"lng": -1.127193,
+		"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
+		"score": 7.4,
+		"count": 559,
+		"stars": 3,
+		"total": 226.88,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
+	} },
+	"atlanta-united-states": { "Budget": {
+		"id": 28533,
+		"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
+		"area": "Downtown Atlanta",
+		"address": "244 North Avenue Northwest",
+		"lat": 33.770956,
+		"lng": -84.395728,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
+		"score": 8.3,
+		"count": 432,
+		"stars": 3,
+		"total": 378.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
+	} },
+	"bossier-city-united-states": { "Luxury": {
+		"id": 183954,
+		"name": "Hilton Shreveport",
+		"area": "Downtown Shreveport",
+		"address": "104 Market Street, Shreveport",
+		"lat": 32.51747,
+		"lng": -93.751103,
+		"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
+		"score": 8.3,
+		"count": 284,
+		"stars": 4,
+		"total": 282.31,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
+	} },
 	"bradenton-united-states": {
 		"Budget": {
 			"id": 192170,
@@ -13998,57 +16079,51 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Bryan rated 9.3/10 from 29 Booking.com reviews."
 		}
 	},
-	"cape-coral-united-states": {
-		"Best Value": {
-			"id": 181379,
-			"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
-			"area": "Cape Coral",
-			"address": "619 South East 47th Terrace",
-			"lat": 26.563971,
-			"lng": -81.960074,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
-			"score": 7.8,
-			"count": 285,
-			"stars": 3,
-			"total": 248.43,
-			"checked": "27 Oct 2026",
-			"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"columbia-united-states": {
-		"Budget": {
-			"id": 13206666,
-			"name": "Tru By Hilton Columbia Downtown",
-			"area": "Downtown Columbia",
-			"address": "400 Gervais Street",
-			"lat": 33.996891,
-			"lng": -81.045771,
-			"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
-			"score": 9.0,
-			"count": 281,
-			"stars": 3,
-			"total": 232.75,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
-		}
-	},
-	"dayton-united-states": {
-		"Best Value": {
-			"id": 263428,
-			"name": "Marriott at the University of Dayton",
-			"area": "University of Dayton",
-			"address": "1414 South Patterson Boulevard",
-			"lat": 39.737332,
-			"lng": -84.191194,
-			"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
-			"score": 9.0,
-			"count": 139,
-			"stars": 3,
-			"total": 314.75,
-			"checked": "27 Oct 2026",
-			"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"cape-coral-united-states": { "Best Value": {
+		"id": 181379,
+		"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
+		"area": "Cape Coral",
+		"address": "619 South East 47th Terrace",
+		"lat": 26.563971,
+		"lng": -81.960074,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
+		"score": 7.8,
+		"count": 285,
+		"stars": 3,
+		"total": 248.43,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
+	} },
+	"columbia-united-states": { "Budget": {
+		"id": 13206666,
+		"name": "Tru By Hilton Columbia Downtown",
+		"area": "Downtown Columbia",
+		"address": "400 Gervais Street",
+		"lat": 33.996891,
+		"lng": -81.045771,
+		"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
+		"score": 9,
+		"count": 281,
+		"stars": 3,
+		"total": 232.75,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
+	} },
+	"dayton-united-states": { "Best Value": {
+		"id": 263428,
+		"name": "Marriott at the University of Dayton",
+		"area": "University of Dayton",
+		"address": "1414 South Patterson Boulevard",
+		"lat": 39.737332,
+		"lng": -84.191194,
+		"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
+		"score": 9,
+		"count": 139,
+		"stars": 3,
+		"total": 314.75,
+		"checked": "27 Oct 2026",
+		"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
+	} },
 	"daytona-beach-united-states": {
 		"Budget": {
 			"id": 300526,
@@ -14081,23 +16156,21 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Daytona Beach oceanfront rated 8.6/10 from 1,807 Booking.com reviews."
 		}
 	},
-	"fort-lauderdale-united-states": {
-		"Budget": {
-			"id": 1059164,
-			"name": "Victoria Park Hotel",
-			"area": "Victoria Park",
-			"address": "855 Northeast 20th Avenue",
-			"lat": 26.135904,
-			"lng": -80.119753,
-			"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
-			"score": 8.6,
-			"count": 994,
-			"stars": 3,
-			"total": 289.32,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
-		}
-	},
+	"fort-lauderdale-united-states": { "Budget": {
+		"id": 1059164,
+		"name": "Victoria Park Hotel",
+		"area": "Victoria Park",
+		"address": "855 Northeast 20th Avenue",
+		"lat": 26.135904,
+		"lng": -80.119753,
+		"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
+		"score": 8.6,
+		"count": 994,
+		"stars": 3,
+		"total": 289.32,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
+	} },
 	"madison-united-states": {
 		"Budget": {
 			"id": 727789,
@@ -14107,7 +16180,7 @@ var overrides_central_2710b = {
 			"lat": 43.073007,
 			"lng": -89.393299,
 			"url": "https://www.booking.com/hotel/us/johnson-street-suites-madison-downtown.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 477,
 			"stars": 3,
 			"total": 252.49,
@@ -14162,70 +16235,6 @@ var overrides_central_2710b = {
 			"reason": "Central Downtown Melbourne hotel rated 8.6 from 404 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"naples-florida-united-states": {
-		"Luxury": {
-			"id": 251000,
-			"name": "Naples Bay Resort and Marina",
-			"area": "Downtown Naples",
-			"address": "1500 5th Avenue South",
-			"lat": 26.138815,
-			"lng": -81.785397,
-			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
-			"score": 9.1,
-			"count": 261,
-			"stars": 4,
-			"total": 1144.26,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
-		},
-		"Budget": {
-			"id": 456800,
-			"name": "La Quinta by Wyndham Naples Downtown",
-			"area": "Downtown Naples",
-			"address": "1555 5th Avenue South",
-			"lat": 26.139511,
-			"lng": -81.783377,
-			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
-			"score": 8.0,
-			"count": 2232,
-			"stars": 3,
-			"total": 190.66,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
-		},
-		"Best Value": {
-			"id": 1067830,
-			"name": "Naples Park Central Hotel",
-			"area": "Downtown Naples",
-			"address": "40 Tamiami Trail North",
-			"lat": 26.147763,
-			"lng": -81.795395,
-			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
-			"score": 8.8,
-			"count": 2388,
-			"stars": 3,
-			"total": 266.33,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"phoenix-united-states": {
-		"Luxury": {
-			"id": 358629,
-			"name": "Renaissance Phoenix Downtown Hotel",
-			"area": "Downtown Phoenix",
-			"address": "100 N 1st St",
-			"lat": 33.44936,
-			"lng": -112.07322,
-			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
-			"score": 7.6,
-			"count": 100,
-			"stars": 5,
-			"total": 993.56,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
-		}
-	},
 	"richmond-united-states": {
 		"Budget": {
 			"id": 298371,
@@ -14235,7 +16244,7 @@ var overrides_central_2710b = {
 			"lat": 37.540739,
 			"lng": -77.443267,
 			"url": "https://www.booking.com/hotel/us/holiday-inn-express-richmond-downtown.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 633,
 			"stars": 2,
 			"total": 264.23,
@@ -14250,7 +16259,7 @@ var overrides_central_2710b = {
 			"lat": 37.541082,
 			"lng": -77.438903,
 			"url": "https://www.booking.com/hotel/us/moxy-richmond-downtown.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 215,
 			"stars": 3,
 			"total": 298.87,
@@ -14258,106 +16267,36 @@ var overrides_central_2710b = {
 			"reason": "Central Downtown Richmond hotel rated 8.0 from 215 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"tampa-united-states": {
-		"Budget": {
-			"id": 4637639,
-			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
-			"area": "Channel District",
-			"address": "1155 East Kennedy Boulevard",
-			"lat": 27.950163,
-			"lng": -82.44849,
-			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
-			"score": 8.9,
-			"count": 503,
-			"stars": 3,
-			"total": 591.4,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 522035,
-			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
-			"area": "Downtown Tampa",
-			"address": "905 N. Florida Ave",
-			"lat": 27.95203,
-			"lng": -82.4586,
-			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
-			"score": 8.1,
-			"count": 235,
-			"stars": 4,
-			"total": 671.53,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
-		}
-	},
-	"taos-united-states": {
-		"Best Value": {
-			"id": 301489,
-			"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
-			"area": "Taos",
-			"address": "1005 Paseo Del Pueblo Sur",
-			"lat": 36.385403,
-			"lng": -105.5851,
-			"url": "https://www.booking.com/hotel/us/don-fernando.html",
-			"score": 8.0,
-			"count": 243,
-			"stars": 4,
-			"total": 230.94,
-			"checked": "27 Oct 2026",
-			"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tucson-united-states": {
-		"Best Value": {
-			"id": 7609839,
-			"name": "Hampton Inn Tucson Downtown, Az",
-			"area": "Downtown Tucson",
-			"address": "141 South Stone Ave.",
-			"lat": 32.219838,
-			"lng": -110.970627,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
-			"score": 8.8,
-			"count": 242,
-			"stars": 3,
-			"total": 284.99,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"dalat-vietnam": {
-		"Luxury": {
-			"id": 265264,
-			"name": "Dalat Palace Heritage Hotel",
-			"area": "Da Lat Centre",
-			"address": "02 Tran Phu, Ward 3",
-			"lat": 11.93671,
-			"lng": 108.440353,
-			"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
-			"score": 8.7,
-			"count": 177,
-			"stars": 5,
-			"total": 198.31,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
-		}
-	},
-	"pune-india": {
-		"Budget": {
-			"id": 1060462,
-			"name": "Hotel Shreyas",
-			"area": "Deccan Gymkhana",
-			"address": "1242 B, Apte Road, Deccan Gymkhana",
-			"lat": 18.518179,
-			"lng": 73.84297,
-			"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
-			"score": 7.9,
-			"count": 127,
-			"stars": 3,
-			"total": 68.58,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
-		}
-	},
+	"taos-united-states": { "Best Value": {
+		"id": 301489,
+		"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
+		"area": "Taos",
+		"address": "1005 Paseo Del Pueblo Sur",
+		"lat": 36.385403,
+		"lng": -105.5851,
+		"url": "https://www.booking.com/hotel/us/don-fernando.html",
+		"score": 8,
+		"count": 243,
+		"stars": 4,
+		"total": 230.94,
+		"checked": "27 Oct 2026",
+		"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
+	} },
+	"pune-india": { "Budget": {
+		"id": 1060462,
+		"name": "Hotel Shreyas",
+		"area": "Deccan Gymkhana",
+		"address": "1242 B, Apte Road, Deccan Gymkhana",
+		"lat": 18.518179,
+		"lng": 73.84297,
+		"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
+		"score": 7.9,
+		"count": 127,
+		"stars": 3,
+		"total": 68.58,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
+	} },
 	"chesterfield-united-kingdom": {
 		"Budget": {
 			"id": 569844,
@@ -14373,12 +16312,23 @@ var overrides_central_2710b = {
 			"total": 260.91,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Chesterfield, rated 8.3 from 995 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 13929039,
+			"name": "SPIRE VIEW at THE SPREAD EAGLE",
+			"area": "Chesterfield town centre",
+			"address": "7 Beetwell Street",
+			"lat": 53.234065,
+			"lng": -1.42701,
+			"url": "https://www.booking.com/hotel/gb/spire-view-at-the-spread-eagle.html",
+			"score": 8.7,
+			"count": 550,
+			"stars": 4,
+			"total": 265.45,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chesterfield town centre rated 8.7/10 from 550 Booking.com reviews."
 		}
-	}
-};
-for (const [cid, v] of Object.entries(overrides_central_2710b)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
-/* 27 Oct 2026 (round 3): aparthotels, same-building duplicates and far picks replaced with central hotels */
-var overrides_central_2710c = {
+	},
 	"madrid-spain": {
 		"Budget": {
 			"id": 2033272,
@@ -14411,40 +16361,36 @@ var overrides_central_2710c = {
 			"reason": "Central Centro, Madrid hotel rated 9.4 from 5,834 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"amsterdam-netherlands": {
-		"Best Value": {
-			"id": 10192,
-			"name": "Hotel Estheréa",
-			"area": "Amsterdam City Centre",
-			"address": "Singel 303 - 309",
-			"lat": 52.370473,
-			"lng": 4.888491,
-			"url": "https://www.booking.com/hotel/nl/estherea.html",
-			"score": 9.1,
-			"count": 3377,
-			"stars": 4,
-			"total": 589.58,
-			"checked": "27 Oct 2026",
-			"reason": "Central Amsterdam City Centre hotel rated 9.1 from 3,377 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"aalst-belgium": {
-		"Budget": {
-			"id": 174732,
-			"name": "Hotel Royal Astrid",
-			"area": "Aalst centre",
-			"address": "Keizersplein 27",
-			"lat": 50.936861,
-			"lng": 4.035512,
-			"url": "https://www.booking.com/hotel/be/royal-astrid.html",
-			"score": 8.8,
-			"count": 359,
-			"stars": 3,
-			"total": 250.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Aalst centre, rated 8.8 from 359 Booking.com reviews."
-		}
-	},
+	"amsterdam-netherlands": { "Best Value": {
+		"id": 10192,
+		"name": "Hotel Estheréa",
+		"area": "Amsterdam City Centre",
+		"address": "Singel 303 - 309",
+		"lat": 52.370473,
+		"lng": 4.888491,
+		"url": "https://www.booking.com/hotel/nl/estherea.html",
+		"score": 9.1,
+		"count": 3377,
+		"stars": 4,
+		"total": 589.58,
+		"checked": "27 Oct 2026",
+		"reason": "Central Amsterdam City Centre hotel rated 9.1 from 3,377 Booking.com reviews: good value close to the sights."
+	} },
+	"aalst-belgium": { "Budget": {
+		"id": 174732,
+		"name": "Hotel Royal Astrid",
+		"area": "Aalst centre",
+		"address": "Keizersplein 27",
+		"lat": 50.936861,
+		"lng": 4.035512,
+		"url": "https://www.booking.com/hotel/be/royal-astrid.html",
+		"score": 8.8,
+		"count": 359,
+		"stars": 3,
+		"total": 250,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Aalst centre, rated 8.8 from 359 Booking.com reviews."
+	} },
 	"abuja-nigeria": {
 		"Budget": {
 			"id": 12752163,
@@ -14469,7 +16415,7 @@ var overrides_central_2710c = {
 			"lat": 9.068868,
 			"lng": 7.48276,
 			"url": "https://www.booking.com/hotel/ng/musada-luxury-hotels-and-suites.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 538,
 			"stars": 4,
 			"total": 143.61,
@@ -14477,176 +16423,156 @@ var overrides_central_2710c = {
 			"reason": "Central Wuse, Abuja hotel rated 8 from 538 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"aix-en-provence-france": {
-		"Budget": {
-			"id": 287944,
-			"name": "Hôtel Paul",
-			"area": "Aix-en-Provence centre",
-			"address": "10 avenue Pasteur",
-			"lat": 43.533363,
-			"lng": 5.446056,
-			"url": "https://www.booking.com/hotel/fr/paul.html",
-			"score": 8.7,
-			"count": 1630,
-			"stars": 2,
-			"total": 181.26,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Aix-en-Provence centre, rated 8.7 from 1,630 Booking.com reviews."
-		}
-	},
-	"alba-italy": {
-		"Budget": {
-			"id": 401449,
-			"name": "Albergo San Lorenzo",
-			"area": "Alba old town",
-			"address": "Piazza Rossetti 6",
-			"lat": 44.701091,
-			"lng": 8.037467,
-			"url": "https://www.booking.com/hotel/it/albergo-san-lorenzo.html",
-			"score": 8.1,
-			"count": 1134,
-			"stars": 2,
-			"total": 262.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Alba old town, rated 8.1 from 1,134 Booking.com reviews."
-		}
-	},
-	"albufeira-portugal": {
-		"Budget": {
-			"id": 171596,
-			"name": "INATEL Albufeira Hotel",
-			"area": "Albufeira centre",
-			"address": "Av. Infante D.Henrique",
-			"lat": 37.087193,
-			"lng": -8.242745,
-			"url": "https://www.booking.com/hotel/pt/inatel-albufeira.html",
-			"score": 8.2,
-			"count": 1258,
-			"stars": 3,
-			"total": 121.28,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Albufeira centre, rated 8.2 from 1,258 Booking.com reviews."
-		}
-	},
-	"bento-goncalves-brazil": {
-		"Luxury": {
-			"id": 5274469,
-			"name": "Hotel Laghetto Estação",
-			"area": "Bento Gonçalves centre",
-			"address": "Rua Dez de Novembro, 120",
-			"lat": -29.173629,
-			"lng": -51.519927,
-			"url": "https://www.booking.com/hotel/br/laghetto-viverone-estacao.html",
-			"score": 8.8,
-			"count": 2382,
-			"stars": 4,
-			"total": 132.59,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bento Gonçalves centre rated 8.8/10 from 2,382 Booking.com reviews."
-		}
-	},
-	"bhopal-india": {
-		"Budget": {
-			"id": 707666,
-			"name": "The Bhopal Grande",
-			"area": "Shyamala Hills, Bhopal",
-			"address": "30 Nadir Colony, Shyamala Hills",
-			"lat": 23.241304,
-			"lng": 77.383069,
-			"url": "https://www.booking.com/hotel/in/the-bhopal-grande.html",
-			"score": 9.0,
-			"count": 9,
-			"stars": 3,
-			"total": 50.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Shyamala Hills, Bhopal, rated 9 from 9 Booking.com reviews."
-		}
-	},
-	"bielsko-biaa-poland": {
-		"Best Value": {
-			"id": 710356,
-			"name": "Hotel Grępielnia",
-			"area": "Bielsko-Biała centre",
-			"address": "ul. Partyzantów 22",
-			"lat": 49.816631,
-			"lng": 19.043459,
-			"url": "https://www.booking.com/hotel/pl/apartamenty-grapielnia.html",
-			"score": 8.6,
-			"count": 627,
-			"stars": 4,
-			"total": 206.68,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bielsko-Biała centre hotel rated 8.6 from 627 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"binz-germany": {
-		"Budget": {
-			"id": 373876,
-			"name": "Ostsee-Rittergut-Rügen - BinzHotel & OrdensKapelle",
-			"area": "Binz",
-			"address": "Rabenstraße 5 - 5b",
-			"lat": 54.392902,
-			"lng": 13.608091,
-			"url": "https://www.booking.com/hotel/de/binzhotel-landhaus-waechter.html",
-			"score": 8.6,
-			"count": 467,
-			"stars": 3,
-			"total": 177.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Binz, rated 8.6 from 467 Booking.com reviews."
-		}
-	},
-	"birmingham-united-kingdom": {
-		"Best Value": {
-			"id": 6726551,
-			"name": "Aloft by Marriott Birmingham Eastside",
-			"area": "Eastside, Birmingham",
-			"address": "4 Woodcock Street",
-			"lat": 52.485291,
-			"lng": -1.884622,
-			"url": "https://www.booking.com/hotel/gb/aloft-birmingham-eastside.html",
-			"score": 8.7,
-			"count": 3229,
-			"stars": 4,
-			"total": 428.68,
-			"checked": "27 Oct 2026",
-			"reason": "Central Eastside, Birmingham hotel rated 8.7 from 3,229 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bournemouth-united-kingdom": {
-		"Budget": {
-			"id": 225924,
-			"name": "Applewood Hotel",
-			"area": "Bournemouth City Centre",
-			"address": "Durley Road",
-			"lat": 50.718028,
-			"lng": -1.887543,
-			"url": "https://www.booking.com/hotel/gb/kingswoodhotel.html",
-			"score": 8.8,
-			"count": 1620,
-			"stars": 3,
-			"total": 187.85,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bournemouth City Centre, rated 8.8 from 1,620 Booking.com reviews."
-		}
-	},
-	"bridgetown-barbados": {
-		"Budget": {
-			"id": 336914,
-			"name": "Coconut Court Beach Hotel",
-			"area": "Garrison, Bridgetown",
-			"address": "The Garrison Historic Area",
-			"lat": 13.075912,
-			"lng": -59.601509,
-			"url": "https://www.booking.com/hotel/bb/coconut-court-beach.html",
-			"score": 8.0,
-			"count": 390,
-			"stars": 3,
-			"total": 513.24,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Garrison, Bridgetown, rated 8 from 390 Booking.com reviews."
-		}
-	},
+	"aix-en-provence-france": { "Budget": {
+		"id": 287944,
+		"name": "Hôtel Paul",
+		"area": "Aix-en-Provence centre",
+		"address": "10 avenue Pasteur",
+		"lat": 43.533363,
+		"lng": 5.446056,
+		"url": "https://www.booking.com/hotel/fr/paul.html",
+		"score": 8.7,
+		"count": 1630,
+		"stars": 2,
+		"total": 181.26,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Aix-en-Provence centre, rated 8.7 from 1,630 Booking.com reviews."
+	} },
+	"alba-italy": { "Budget": {
+		"id": 401449,
+		"name": "Albergo San Lorenzo",
+		"area": "Alba old town",
+		"address": "Piazza Rossetti 6",
+		"lat": 44.701091,
+		"lng": 8.037467,
+		"url": "https://www.booking.com/hotel/it/albergo-san-lorenzo.html",
+		"score": 8.1,
+		"count": 1134,
+		"stars": 2,
+		"total": 262,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Alba old town, rated 8.1 from 1,134 Booking.com reviews."
+	} },
+	"albufeira-portugal": { "Budget": {
+		"id": 171596,
+		"name": "INATEL Albufeira Hotel",
+		"area": "Albufeira centre",
+		"address": "Av. Infante D.Henrique",
+		"lat": 37.087193,
+		"lng": -8.242745,
+		"url": "https://www.booking.com/hotel/pt/inatel-albufeira.html",
+		"score": 8.2,
+		"count": 1258,
+		"stars": 3,
+		"total": 121.28,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Albufeira centre, rated 8.2 from 1,258 Booking.com reviews."
+	} },
+	"bento-goncalves-brazil": { "Luxury": {
+		"id": 5274469,
+		"name": "Hotel Laghetto Estação",
+		"area": "Bento Gonçalves centre",
+		"address": "Rua Dez de Novembro, 120",
+		"lat": -29.173629,
+		"lng": -51.519927,
+		"url": "https://www.booking.com/hotel/br/laghetto-viverone-estacao.html",
+		"score": 8.8,
+		"count": 2382,
+		"stars": 4,
+		"total": 132.59,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bento Gonçalves centre rated 8.8/10 from 2,382 Booking.com reviews."
+	} },
+	"bhopal-india": { "Budget": {
+		"id": 707666,
+		"name": "The Bhopal Grande",
+		"area": "Shyamala Hills, Bhopal",
+		"address": "30 Nadir Colony, Shyamala Hills",
+		"lat": 23.241304,
+		"lng": 77.383069,
+		"url": "https://www.booking.com/hotel/in/the-bhopal-grande.html",
+		"score": 9,
+		"count": 9,
+		"stars": 3,
+		"total": 50.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Shyamala Hills, Bhopal, rated 9 from 9 Booking.com reviews."
+	} },
+	"bielsko-biaa-poland": { "Best Value": {
+		"id": 710356,
+		"name": "Hotel Grępielnia",
+		"area": "Bielsko-Biała centre",
+		"address": "ul. Partyzantów 22",
+		"lat": 49.816631,
+		"lng": 19.043459,
+		"url": "https://www.booking.com/hotel/pl/apartamenty-grapielnia.html",
+		"score": 8.6,
+		"count": 627,
+		"stars": 4,
+		"total": 206.68,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bielsko-Biała centre hotel rated 8.6 from 627 Booking.com reviews: good value close to the sights."
+	} },
+	"binz-germany": { "Budget": {
+		"id": 373876,
+		"name": "Ostsee-Rittergut-Rügen - BinzHotel & OrdensKapelle",
+		"area": "Binz",
+		"address": "Rabenstraße 5 - 5b",
+		"lat": 54.392902,
+		"lng": 13.608091,
+		"url": "https://www.booking.com/hotel/de/binzhotel-landhaus-waechter.html",
+		"score": 8.6,
+		"count": 467,
+		"stars": 3,
+		"total": 177,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Binz, rated 8.6 from 467 Booking.com reviews."
+	} },
+	"birmingham-united-kingdom": { "Best Value": {
+		"id": 6726551,
+		"name": "Aloft by Marriott Birmingham Eastside",
+		"area": "Eastside, Birmingham",
+		"address": "4 Woodcock Street",
+		"lat": 52.485291,
+		"lng": -1.884622,
+		"url": "https://www.booking.com/hotel/gb/aloft-birmingham-eastside.html",
+		"score": 8.7,
+		"count": 3229,
+		"stars": 4,
+		"total": 428.68,
+		"checked": "27 Oct 2026",
+		"reason": "Central Eastside, Birmingham hotel rated 8.7 from 3,229 Booking.com reviews: good value close to the sights."
+	} },
+	"bournemouth-united-kingdom": { "Budget": {
+		"id": 225924,
+		"name": "Applewood Hotel",
+		"area": "Bournemouth City Centre",
+		"address": "Durley Road",
+		"lat": 50.718028,
+		"lng": -1.887543,
+		"url": "https://www.booking.com/hotel/gb/kingswoodhotel.html",
+		"score": 8.8,
+		"count": 1620,
+		"stars": 3,
+		"total": 187.85,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bournemouth City Centre, rated 8.8 from 1,620 Booking.com reviews."
+	} },
+	"bridgetown-barbados": { "Budget": {
+		"id": 336914,
+		"name": "Coconut Court Beach Hotel",
+		"area": "Garrison, Bridgetown",
+		"address": "The Garrison Historic Area",
+		"lat": 13.075912,
+		"lng": -59.601509,
+		"url": "https://www.booking.com/hotel/bb/coconut-court-beach.html",
+		"score": 8,
+		"count": 390,
+		"stars": 3,
+		"total": 513.24,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Garrison, Bridgetown, rated 8 from 390 Booking.com reviews."
+	} },
 	"caldas-novas-brazil": {
 		"Budget": {
 			"id": 322556,
@@ -14679,40 +16605,36 @@ var overrides_central_2710c = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Caldas Novas centre rated 8.8/10 from 287 Booking.com reviews."
 		}
 	},
-	"cape-town-southafrica": {
-		"Budget": {
-			"id": 19243,
-			"name": "ONOMO Hotel Cape Town – Inn On The Square",
-			"area": "Cape Town CBD",
-			"address": "Greenmarket Square",
-			"lat": -33.922575,
-			"lng": 18.419669,
-			"url": "https://www.booking.com/hotel/za/onomo-hotel-cape-town.html",
-			"score": 7.6,
-			"count": 1314,
-			"stars": 3,
-			"total": 200.85,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cape Town CBD, rated 7.6 from 1,314 Booking.com reviews."
-		}
-	},
-	"cascais-portugal": {
-		"Budget": {
-			"id": 7584311,
-			"name": "Kavia Hotel do Largo",
-			"area": "Cascais centre",
-			"address": "Beco Esconso Nº2",
-			"lat": 38.698068,
-			"lng": -9.4209,
-			"url": "https://www.booking.com/hotel/pt/kavia-do-largo.html",
-			"score": 7.9,
-			"count": 1439,
-			"stars": 3,
-			"total": 180.53,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cascais centre, rated 7.9 from 1,439 Booking.com reviews."
-		}
-	},
+	"cape-town-southafrica": { "Budget": {
+		"id": 19243,
+		"name": "ONOMO Hotel Cape Town – Inn On The Square",
+		"area": "Cape Town CBD",
+		"address": "Greenmarket Square",
+		"lat": -33.922575,
+		"lng": 18.419669,
+		"url": "https://www.booking.com/hotel/za/onomo-hotel-cape-town.html",
+		"score": 7.6,
+		"count": 1314,
+		"stars": 3,
+		"total": 200.85,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cape Town CBD, rated 7.6 from 1,314 Booking.com reviews."
+	} },
+	"cascais-portugal": { "Budget": {
+		"id": 7584311,
+		"name": "Kavia Hotel do Largo",
+		"area": "Cascais centre",
+		"address": "Beco Esconso Nº2",
+		"lat": 38.698068,
+		"lng": -9.4209,
+		"url": "https://www.booking.com/hotel/pt/kavia-do-largo.html",
+		"score": 7.9,
+		"count": 1439,
+		"stars": 3,
+		"total": 180.53,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cascais centre, rated 7.9 from 1,439 Booking.com reviews."
+	} },
 	"castelldefels-spain": {
 		"Budget": {
 			"id": 280117,
@@ -14722,7 +16644,7 @@ var overrides_central_2710c = {
 			"lat": 41.281564,
 			"lng": 1.985752,
 			"url": "https://www.booking.com/hotel/es/ibis-barcelona-castelldefels.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 2563,
 			"stars": 2,
 			"total": 199.82,
@@ -14745,108 +16667,81 @@ var overrides_central_2710c = {
 			"reason": "Central Castelldefels centre hotel rated 8.4 from 6,212 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"cherkasy-ukraine": {
-		"Luxury": {
-			"id": 499493,
-			"name": "Cherkasy Palace",
-			"area": "Cherkasy centre",
-			"address": "Verhnya Gorova Street 145",
-			"lat": 49.435067,
-			"lng": 32.081399,
-			"url": "https://www.booking.com/hotel/ua/apelsin.html",
-			"score": 8.8,
-			"count": 1312,
-			"stars": 4,
-			"total": 122.72,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Cherkasy centre rated 8.8/10 from 1,312 Booking.com reviews."
-		}
-	},
-	"cluj-napoca-romania": {
-		"Best Value": {
-			"id": 265609,
-			"name": "Hotel Alexis",
-			"area": "Cluj-Napoca centre",
-			"address": "Dorobantilor 26",
-			"lat": 46.771938,
-			"lng": 23.602596,
-			"url": "https://www.booking.com/hotel/ro/alexis.html",
-			"score": 9.2,
-			"count": 527,
-			"stars": 3,
-			"total": 137.82,
-			"checked": "27 Oct 2026",
-			"reason": "Central Cluj-Napoca centre hotel rated 9.2 from 527 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"concepcion-chile": {
-		"Budget": {
-			"id": 92121,
-			"name": "Hotel Alborada",
-			"area": "Concepción centre",
-			"address": "Barros Arana 457",
-			"lat": -36.827351,
-			"lng": -73.053117,
-			"url": "https://www.booking.com/hotel/cl/alborada.html",
-			"score": 8.3,
-			"count": 2257,
-			"stars": 4,
-			"total": 119.88,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Concepción centre, rated 8.3 from 2,257 Booking.com reviews."
-		}
-	},
-	"dakar-senegal": {
-		"Budget": {
-			"id": 12468493,
-			"name": "Wakola Hotel Cheikh Anta DIOP",
-			"area": "Fass, Dakar",
-			"address": "25 Avenue Cheikh Anta Diop",
-			"lat": 14.68835,
-			"lng": -17.456018,
-			"url": "https://www.booking.com/hotel/sn/wakola-cheikh-anta-diop.html",
-			"score": 8.4,
-			"count": 102,
-			"stars": 3,
-			"total": 286.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Fass, Dakar, rated 8.4 from 102 Booking.com reviews."
-		}
-	},
-	"desenzano-del-garda-italy": {
-		"Budget": {
-			"id": 84395,
-			"name": "Hotel Europa",
-			"area": "Desenzano lakefront",
-			"address": "Lungolago C. Battisti 71",
-			"lat": 45.475644,
-			"lng": 10.538034,
-			"url": "https://www.booking.com/hotel/it/europa-desenzano-del-garda.html",
-			"score": 9.0,
-			"count": 1608,
-			"stars": 3,
-			"total": 219.65,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Desenzano lakefront, rated 9 from 1,608 Booking.com reviews."
-		}
-	},
-	"dijon-france": {
-		"Budget": {
-			"id": 46296,
-			"name": "Hôtel République",
-			"area": "Dijon Old Town",
-			"address": "3 rue du Nord",
-			"lat": 47.325701,
-			"lng": 5.044781,
-			"url": "https://www.booking.com/hotel/fr/republique-dijon.html",
-			"score": 8.1,
-			"count": 2343,
-			"stars": 2,
-			"total": 148.4,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Dijon Old Town, rated 8.1 from 2,343 Booking.com reviews."
-		}
-	},
+	"cherkasy-ukraine": { "Luxury": {
+		"id": 499493,
+		"name": "Cherkasy Palace",
+		"area": "Cherkasy centre",
+		"address": "Verhnya Gorova Street 145",
+		"lat": 49.435067,
+		"lng": 32.081399,
+		"url": "https://www.booking.com/hotel/ua/apelsin.html",
+		"score": 8.8,
+		"count": 1312,
+		"stars": 4,
+		"total": 122.72,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Cherkasy centre rated 8.8/10 from 1,312 Booking.com reviews."
+	} },
+	"cluj-napoca-romania": { "Best Value": {
+		"id": 265609,
+		"name": "Hotel Alexis",
+		"area": "Cluj-Napoca centre",
+		"address": "Dorobantilor 26",
+		"lat": 46.771938,
+		"lng": 23.602596,
+		"url": "https://www.booking.com/hotel/ro/alexis.html",
+		"score": 9.2,
+		"count": 527,
+		"stars": 3,
+		"total": 137.82,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cluj-Napoca centre hotel rated 9.2 from 527 Booking.com reviews: good value close to the sights."
+	} },
+	"concepcion-chile": { "Budget": {
+		"id": 92121,
+		"name": "Hotel Alborada",
+		"area": "Concepción centre",
+		"address": "Barros Arana 457",
+		"lat": -36.827351,
+		"lng": -73.053117,
+		"url": "https://www.booking.com/hotel/cl/alborada.html",
+		"score": 8.3,
+		"count": 2257,
+		"stars": 4,
+		"total": 119.88,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Concepción centre, rated 8.3 from 2,257 Booking.com reviews."
+	} },
+	"desenzano-del-garda-italy": { "Budget": {
+		"id": 84395,
+		"name": "Hotel Europa",
+		"area": "Desenzano lakefront",
+		"address": "Lungolago C. Battisti 71",
+		"lat": 45.475644,
+		"lng": 10.538034,
+		"url": "https://www.booking.com/hotel/it/europa-desenzano-del-garda.html",
+		"score": 9,
+		"count": 1608,
+		"stars": 3,
+		"total": 219.65,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Desenzano lakefront, rated 9 from 1,608 Booking.com reviews."
+	} },
+	"dijon-france": { "Budget": {
+		"id": 46296,
+		"name": "Hôtel République",
+		"area": "Dijon Old Town",
+		"address": "3 rue du Nord",
+		"lat": 47.325701,
+		"lng": 5.044781,
+		"url": "https://www.booking.com/hotel/fr/republique-dijon.html",
+		"score": 8.1,
+		"count": 2343,
+		"stars": 2,
+		"total": 148.4,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Dijon Old Town, rated 8.1 from 2,343 Booking.com reviews."
+	} },
 	"farnborough-united-kingdom": {
 		"Budget": {
 			"id": 103860,
@@ -14854,7 +16749,7 @@ var overrides_central_2710c = {
 			"area": "Farnborough centre",
 			"address": "68 Farnborough Road",
 			"lat": 51.281843,
-			"lng": -0.752911,
+			"lng": -.752911,
 			"url": "https://www.booking.com/hotel/gb/thefalcon.html",
 			"score": 7.1,
 			"count": 768,
@@ -14869,7 +16764,7 @@ var overrides_central_2710c = {
 			"area": "Farnborough",
 			"address": "Lynchford Road",
 			"lat": 51.273907,
-			"lng": -0.756045,
+			"lng": -.756045,
 			"url": "https://www.booking.com/hotel/gb/holiday-inn-farnborough.html",
 			"score": 8.5,
 			"count": 949,
@@ -14879,142 +16774,111 @@ var overrides_central_2710c = {
 			"reason": "Central Farnborough hotel rated 8.5 from 949 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"fribourg-switzerland": {
-		"Best Value": {
-			"id": 65279,
-			"name": "Hôtel de la Rose",
-			"area": "Fribourg Old Town",
-			"address": "Murtengasse 1",
-			"lat": 46.806567,
-			"lng": 7.161292,
-			"url": "https://www.booking.com/hotel/ch/roserribourgschweizswitzerland.html",
-			"score": 8.0,
-			"count": 1793,
-			"stars": 3,
-			"total": 301.39,
-			"checked": "27 Oct 2026",
-			"reason": "Central Fribourg Old Town hotel rated 8 from 1,793 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"geelong-australia": {
-		"Luxury": {
-			"id": 487626,
-			"name": "Novotel Geelong",
-			"area": "Geelong waterfront",
-			"address": "10-14 Eastern Beach Road",
-			"lat": -38.14496,
-			"lng": 144.363496,
-			"url": "https://www.booking.com/hotel/au/novotel-geelong.html",
-			"score": 7.7,
-			"count": 1760,
-			"stars": 4,
-			"total": 438.2,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Geelong waterfront rated 7.7/10 from 1,760 Booking.com reviews."
-		}
-	},
-	"glasgow-unitedkingdom": {
-		"Best Value": {
-			"id": 6822334,
-			"name": "Maldron Hotel Glasgow City",
-			"area": "Glasgow City Centre",
-			"address": "Renfrew Street",
-			"lat": 55.86548,
-			"lng": -4.255551,
-			"url": "https://www.booking.com/hotel/gb/maldron-glasgow.html",
-			"score": 8.7,
-			"count": 10299,
-			"stars": 4,
-			"total": 339.6,
-			"checked": "27 Oct 2026",
-			"reason": "Central Glasgow City Centre hotel rated 8.7 from 10,299 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"grenoble-france": {
-		"Budget": {
-			"id": 250266,
-			"name": "Hôtel Gloria",
-			"area": "Grenoble centre",
-			"address": "12 Rue Aristide Berges",
-			"lat": 45.191438,
-			"lng": 5.718498,
-			"url": "https://www.booking.com/hotel/fr/gallia-grenoble.html",
-			"score": 8.0,
-			"count": 484,
-			"stars": 2,
-			"total": 160.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Grenoble centre, rated 8 from 484 Booking.com reviews."
-		}
-	},
-	"hanoi-vietnam": {
-		"Budget": {
-			"id": 8307217,
-			"name": "Golden Sun Hotel",
-			"area": "Hoan Kiem Old Quarter",
-			"address": "33 Hang Quat Street",
-			"lat": 21.032656,
-			"lng": 105.849305,
-			"url": "https://www.booking.com/hotel/vn/golden-sun-amp-spa.html",
-			"score": 9.0,
-			"count": 2805,
-			"stars": 3,
-			"total": 120.99,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Hoan Kiem Old Quarter, rated 9 from 2,805 Booking.com reviews."
-		}
-	},
-	"heidelberg-germany": {
-		"Best Value": {
-			"id": 9464637,
-			"name": "ATLANTIC Hotel Heidelberg",
-			"area": "Bahnstadt, Heidelberg",
-			"address": "Europaplatz 1",
-			"lat": 49.403328,
-			"lng": 8.673722,
-			"url": "https://www.booking.com/hotel/de/atlantic-heidelberg.html",
-			"score": 8.8,
-			"count": 4523,
-			"stars": 4,
-			"total": 314.38,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bahnstadt, Heidelberg hotel rated 8.8 from 4,523 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"hersonissos-greece": {
-		"Budget": {
-			"id": 7436116,
-			"name": "Sea Breeze Hotel",
-			"area": "Limenas Hersonissou",
-			"address": "Antoniou Kassaveti & 25 Martiou, 17",
-			"lat": 35.315225,
-			"lng": 25.396684,
-			"url": "https://www.booking.com/hotel/gr/sea-breeze-hotel.html",
-			"score": 9.1,
-			"count": 439,
-			"stars": 3,
-			"total": 140.7,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Limenas Hersonissou, rated 9.1 from 439 Booking.com reviews."
-		}
-	},
-	"horta-portugal": {
-		"Budget": {
-			"id": 40514,
-			"name": "Azoris Faial Garden – Resort Hotel",
-			"area": "Horta",
-			"address": "Rua Consul Dabney",
-			"lat": 38.53074,
-			"lng": -28.627726,
-			"url": "https://www.booking.com/hotel/pt/fayal-resort.html",
-			"score": 8.1,
-			"count": 1073,
-			"stars": 4,
-			"total": 117.3,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Horta, rated 8.1 from 1,073 Booking.com reviews."
-		}
-	},
+	"fribourg-switzerland": { "Best Value": {
+		"id": 65279,
+		"name": "Hôtel de la Rose",
+		"area": "Fribourg Old Town",
+		"address": "Murtengasse 1",
+		"lat": 46.806567,
+		"lng": 7.161292,
+		"url": "https://www.booking.com/hotel/ch/roserribourgschweizswitzerland.html",
+		"score": 8,
+		"count": 1793,
+		"stars": 3,
+		"total": 301.39,
+		"checked": "27 Oct 2026",
+		"reason": "Central Fribourg Old Town hotel rated 8 from 1,793 Booking.com reviews: good value close to the sights."
+	} },
+	"geelong-australia": { "Luxury": {
+		"id": 487626,
+		"name": "Novotel Geelong",
+		"area": "Geelong waterfront",
+		"address": "10-14 Eastern Beach Road",
+		"lat": -38.14496,
+		"lng": 144.363496,
+		"url": "https://www.booking.com/hotel/au/novotel-geelong.html",
+		"score": 7.7,
+		"count": 1760,
+		"stars": 4,
+		"total": 438.2,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Geelong waterfront rated 7.7/10 from 1,760 Booking.com reviews."
+	} },
+	"glasgow-unitedkingdom": { "Best Value": {
+		"id": 6822334,
+		"name": "Maldron Hotel Glasgow City",
+		"area": "Glasgow City Centre",
+		"address": "Renfrew Street",
+		"lat": 55.86548,
+		"lng": -4.255551,
+		"url": "https://www.booking.com/hotel/gb/maldron-glasgow.html",
+		"score": 8.7,
+		"count": 10299,
+		"stars": 4,
+		"total": 339.6,
+		"checked": "27 Oct 2026",
+		"reason": "Central Glasgow City Centre hotel rated 8.7 from 10,299 Booking.com reviews: good value close to the sights."
+	} },
+	"grenoble-france": { "Budget": {
+		"id": 250266,
+		"name": "Hôtel Gloria",
+		"area": "Grenoble centre",
+		"address": "12 Rue Aristide Berges",
+		"lat": 45.191438,
+		"lng": 5.718498,
+		"url": "https://www.booking.com/hotel/fr/gallia-grenoble.html",
+		"score": 8,
+		"count": 484,
+		"stars": 2,
+		"total": 160,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Grenoble centre, rated 8 from 484 Booking.com reviews."
+	} },
+	"hanoi-vietnam": { "Budget": {
+		"id": 8307217,
+		"name": "Golden Sun Hotel",
+		"area": "Hoan Kiem Old Quarter",
+		"address": "33 Hang Quat Street",
+		"lat": 21.032656,
+		"lng": 105.849305,
+		"url": "https://www.booking.com/hotel/vn/golden-sun-amp-spa.html",
+		"score": 9,
+		"count": 2805,
+		"stars": 3,
+		"total": 120.99,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Hoan Kiem Old Quarter, rated 9 from 2,805 Booking.com reviews."
+	} },
+	"heidelberg-germany": { "Best Value": {
+		"id": 9464637,
+		"name": "ATLANTIC Hotel Heidelberg",
+		"area": "Bahnstadt, Heidelberg",
+		"address": "Europaplatz 1",
+		"lat": 49.403328,
+		"lng": 8.673722,
+		"url": "https://www.booking.com/hotel/de/atlantic-heidelberg.html",
+		"score": 8.8,
+		"count": 4523,
+		"stars": 4,
+		"total": 314.38,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bahnstadt, Heidelberg hotel rated 8.8 from 4,523 Booking.com reviews: good value close to the sights."
+	} },
+	"hersonissos-greece": { "Budget": {
+		"id": 7436116,
+		"name": "Sea Breeze Hotel",
+		"area": "Limenas Hersonissou",
+		"address": "Antoniou Kassaveti & 25 Martiou, 17",
+		"lat": 35.315225,
+		"lng": 25.396684,
+		"url": "https://www.booking.com/hotel/gr/sea-breeze-hotel.html",
+		"score": 9.1,
+		"count": 439,
+		"stars": 3,
+		"total": 140.7,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Limenas Hersonissou, rated 9.1 from 439 Booking.com reviews."
+	} },
 	"kemer-turkiye": {
 		"Budget": {
 			"id": 7176481,
@@ -15047,23 +16911,21 @@ var overrides_central_2710c = {
 			"reason": "Central Kemer centre hotel rated 8.5 from 175 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"krakow-poland": {
-		"Best Value": {
-			"id": 1850028,
-			"name": "Mercure Krakow Stare Miasto",
-			"area": "Kleparz, Kraków",
-			"address": "Pawia 18 B",
-			"lat": 50.066754,
-			"lng": 19.944759,
-			"url": "https://www.booking.com/hotel/pl/mercure-krakow-stare-miasto.html",
-			"score": 9.3,
-			"count": 3091,
-			"stars": 4,
-			"total": 202.82,
-			"checked": "27 Oct 2026",
-			"reason": "Central Kleparz, Kraków hotel rated 9.3 from 3,091 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"krakow-poland": { "Best Value": {
+		"id": 1850028,
+		"name": "Mercure Krakow Stare Miasto",
+		"area": "Kleparz, Kraków",
+		"address": "Pawia 18 B",
+		"lat": 50.066754,
+		"lng": 19.944759,
+		"url": "https://www.booking.com/hotel/pl/mercure-krakow-stare-miasto.html",
+		"score": 9.3,
+		"count": 3091,
+		"stars": 4,
+		"total": 202.82,
+		"checked": "27 Oct 2026",
+		"reason": "Central Kleparz, Kraków hotel rated 9.3 from 3,091 Booking.com reviews: good value close to the sights."
+	} },
 	"le-havre-france": {
 		"Budget": {
 			"id": 213578,
@@ -15071,7 +16933,7 @@ var overrides_central_2710c = {
 			"area": "Perret, Le Havre",
 			"address": "121 Rue De Paris",
 			"lat": 49.488497,
-			"lng": 0.107342,
+			"lng": .107342,
 			"url": "https://www.booking.com/hotel/fr/citotel-le-marly.html",
 			"score": 7.7,
 			"count": 170,
@@ -15086,7 +16948,7 @@ var overrides_central_2710c = {
 			"area": "Le Havre centre",
 			"address": "23, Cours De La République",
 			"lat": 49.493344,
-			"lng": 0.124318,
+			"lng": .124318,
 			"url": "https://www.booking.com/hotel/fr/hotelterminuslehavre.html",
 			"score": 8.2,
 			"count": 564,
@@ -15096,108 +16958,96 @@ var overrides_central_2710c = {
 			"reason": "Central Le Havre centre hotel rated 8.2 from 564 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"le-mans-france": {
-		"Budget": {
-			"id": 182388,
-			"name": "The Originals City, Hôtel Chantecler, Le Mans",
-			"area": "Le Mans centre",
-			"address": "50 Rue De La Pelouse",
-			"lat": 47.998404,
-			"lng": 0.192959,
-			"url": "https://www.booking.com/hotel/fr/chantecler.html",
-			"score": 7.9,
-			"count": 1078,
-			"stars": 3,
-			"total": 173.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Le Mans centre, rated 7.9 from 1,078 Booking.com reviews."
-		}
-	},
-	"leicester-unitedkingdom": {
-		"Best Value": {
-			"id": 5728536,
-			"name": "Novotel Leicester",
-			"area": "Leicester City Centre",
-			"address": "2 Great Central Square",
-			"lat": 52.636879,
-			"lng": -1.139759,
-			"url": "https://www.booking.com/hotel/gb/novotel-leicester.html",
-			"score": 8.8,
-			"count": 2994,
-			"stars": 4,
-			"total": 395.48,
-			"checked": "27 Oct 2026",
-			"reason": "Central Leicester City Centre hotel rated 8.8 from 2,994 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"leipzig-germany": {
-		"Best Value": {
-			"id": 1761763,
-			"name": "INNSiDE by Meliá Leipzig",
-			"area": "Mitte, Leipzig",
-			"address": "Gottschedstraße 1",
-			"lat": 51.339771,
-			"lng": 12.370545,
-			"url": "https://www.booking.com/hotel/de/innside-by-melia-leipzig.html",
-			"score": 8.6,
-			"count": 4250,
-			"stars": 4,
-			"total": 280.25,
-			"checked": "27 Oct 2026",
-			"reason": "Central Mitte, Leipzig hotel rated 8.6 from 4,250 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"liepaja-latvia": {
-		"Budget": {
-			"id": 26057,
-			"name": "Liva Hotel",
-			"area": "Liepāja centre",
-			"address": "Lielā iela 11",
-			"lat": 56.508898,
-			"lng": 21.012282,
-			"url": "https://www.booking.com/hotel/lv/liva.html",
-			"score": 8.6,
-			"count": 7045,
-			"stars": 3,
-			"total": 108.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Liepāja centre, rated 8.6 from 7,045 Booking.com reviews."
-		}
-	},
-	"lille-france": {
-		"Budget": {
-			"id": 45885,
-			"name": "ibis Styles Lille Centre Gare Beffroi",
-			"area": "Lille Centre",
-			"address": "172 Rue Pierre Mauroy",
-			"lat": 50.632382,
-			"lng": 3.067943,
-			"url": "https://www.booking.com/hotel/fr/ibis-styles-lille-centre-gare-beffroi.html",
-			"score": 7.9,
-			"count": 3592,
-			"stars": 3,
-			"total": 192.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Lille Centre, rated 7.9 from 3,592 Booking.com reviews."
-		}
-	},
-	"limassol-cyprus": {
-		"Budget": {
-			"id": 17202,
-			"name": "Pefkos City Hotel",
-			"area": "Limassol city",
-			"address": "Misiaouli & Kavazoglou Str, 70",
-			"lat": 34.674359,
-			"lng": 33.025787,
-			"url": "https://www.booking.com/hotel/cy/pefkos.html",
-			"score": 9.0,
-			"count": 1772,
-			"stars": 3,
-			"total": 259.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Limassol city, rated 9 from 1,772 Booking.com reviews."
-		}
-	},
+	"le-mans-france": { "Budget": {
+		"id": 182388,
+		"name": "The Originals City, Hôtel Chantecler, Le Mans",
+		"area": "Le Mans centre",
+		"address": "50 Rue De La Pelouse",
+		"lat": 47.998404,
+		"lng": .192959,
+		"url": "https://www.booking.com/hotel/fr/chantecler.html",
+		"score": 7.9,
+		"count": 1078,
+		"stars": 3,
+		"total": 173.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Le Mans centre, rated 7.9 from 1,078 Booking.com reviews."
+	} },
+	"leicester-unitedkingdom": { "Best Value": {
+		"id": 5728536,
+		"name": "Novotel Leicester",
+		"area": "Leicester City Centre",
+		"address": "2 Great Central Square",
+		"lat": 52.636879,
+		"lng": -1.139759,
+		"url": "https://www.booking.com/hotel/gb/novotel-leicester.html",
+		"score": 8.8,
+		"count": 2994,
+		"stars": 4,
+		"total": 395.48,
+		"checked": "27 Oct 2026",
+		"reason": "Central Leicester City Centre hotel rated 8.8 from 2,994 Booking.com reviews: good value close to the sights."
+	} },
+	"leipzig-germany": { "Best Value": {
+		"id": 1761763,
+		"name": "INNSiDE by Meliá Leipzig",
+		"area": "Mitte, Leipzig",
+		"address": "Gottschedstraße 1",
+		"lat": 51.339771,
+		"lng": 12.370545,
+		"url": "https://www.booking.com/hotel/de/innside-by-melia-leipzig.html",
+		"score": 8.6,
+		"count": 4250,
+		"stars": 4,
+		"total": 280.25,
+		"checked": "27 Oct 2026",
+		"reason": "Central Mitte, Leipzig hotel rated 8.6 from 4,250 Booking.com reviews: good value close to the sights."
+	} },
+	"liepaja-latvia": { "Budget": {
+		"id": 26057,
+		"name": "Liva Hotel",
+		"area": "Liepāja centre",
+		"address": "Lielā iela 11",
+		"lat": 56.508898,
+		"lng": 21.012282,
+		"url": "https://www.booking.com/hotel/lv/liva.html",
+		"score": 8.6,
+		"count": 7045,
+		"stars": 3,
+		"total": 108,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Liepāja centre, rated 8.6 from 7,045 Booking.com reviews."
+	} },
+	"lille-france": { "Budget": {
+		"id": 45885,
+		"name": "ibis Styles Lille Centre Gare Beffroi",
+		"area": "Lille Centre",
+		"address": "172 Rue Pierre Mauroy",
+		"lat": 50.632382,
+		"lng": 3.067943,
+		"url": "https://www.booking.com/hotel/fr/ibis-styles-lille-centre-gare-beffroi.html",
+		"score": 7.9,
+		"count": 3592,
+		"stars": 3,
+		"total": 192.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Lille Centre, rated 7.9 from 3,592 Booking.com reviews."
+	} },
+	"limassol-cyprus": { "Budget": {
+		"id": 17202,
+		"name": "Pefkos City Hotel",
+		"area": "Limassol city",
+		"address": "Misiaouli & Kavazoglou Str, 70",
+		"lat": 34.674359,
+		"lng": 33.025787,
+		"url": "https://www.booking.com/hotel/cy/pefkos.html",
+		"score": 9,
+		"count": 1772,
+		"stars": 3,
+		"total": 259.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Limassol city, rated 9 from 1,772 Booking.com reviews."
+	} },
 	"llanes-spain": {
 		"Budget": {
 			"id": 1359715,
@@ -15210,7 +17060,7 @@ var overrides_central_2710c = {
 			"score": 8.6,
 			"count": 368,
 			"stars": 2,
-			"total": 130.0,
+			"total": 130,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Llanes old town, rated 8.6 from 368 Booking.com reviews."
 		},
@@ -15225,7 +17075,7 @@ var overrides_central_2710c = {
 			"score": 8.4,
 			"count": 3338,
 			"stars": 3,
-			"total": 148.0,
+			"total": 148,
 			"checked": "27 Oct 2026",
 			"reason": "Central Llanes hotel rated 8.4 from 3,338 Booking.com reviews: good value close to the sights."
 		},
@@ -15240,79 +17090,56 @@ var overrides_central_2710c = {
 			"score": 8.4,
 			"count": 1638,
 			"stars": 4,
-			"total": 144.0,
+			"total": 144,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Llanes centre rated 8.4/10 from 1,638 Booking.com reviews."
 		}
 	},
-	"marmaris-turkiye": {
-		"Budget": {
-			"id": 10178584,
-			"name": "FIFTY5 Suite Hotel",
-			"area": "Marmaris centre",
-			"address": "Çıldır Mahallesi 107/1 Sok No 7",
-			"lat": 36.850658,
-			"lng": 28.26402,
-			"url": "https://www.booking.com/hotel/tr/fifty5-suite.html",
-			"score": 8.1,
-			"count": 465,
-			"stars": 3,
-			"total": 120.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Marmaris centre, rated 8.1 from 465 Booking.com reviews."
-		}
-	},
-	"milan-italy": {
-		"Budget": {
-			"id": 81191,
-			"name": "Hotel Canada",
-			"area": "Milan City Centre",
-			"address": "Via Santa Sofia 16",
-			"lat": 45.45731,
-			"lng": 9.191093,
-			"url": "https://www.booking.com/hotel/it/canadamilan.html",
-			"score": 8.7,
-			"count": 2310,
-			"stars": 3,
-			"total": 476.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Milan City Centre, rated 8.7 from 2,310 Booking.com reviews."
-		}
-	},
-	"miskolc-hungary": {
-		"Budget": {
-			"id": 75550,
-			"name": "Hotel Pannonia",
-			"area": "Miskolc centre",
-			"address": "Kossuth u. 2",
-			"lat": 48.102995,
-			"lng": 20.781707,
-			"url": "https://www.booking.com/hotel/hu/pannonia.html",
-			"score": 8.2,
-			"count": 524,
-			"stars": 2,
-			"total": 162.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Miskolc centre, rated 8.2 from 524 Booking.com reviews."
-		}
-	},
-	"montpellier-france": {
-		"Budget": {
-			"id": 272001,
-			"name": "Hôtel Des Arts, Artisanal et Indépendant",
-			"area": "Montpellier City-Centre",
-			"address": "6 boulevard Victor Hugo",
-			"lat": 43.606476,
-			"lng": 3.877872,
-			"url": "https://www.booking.com/hotel/fr/des-arts-montpellier.html",
-			"score": 8.2,
-			"count": 1093,
-			"stars": 2,
-			"total": 203.76,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Montpellier City-Centre, rated 8.2 from 1,093 Booking.com reviews."
-		}
-	},
+	"marmaris-turkiye": { "Budget": {
+		"id": 10178584,
+		"name": "FIFTY5 Suite Hotel",
+		"area": "Marmaris centre",
+		"address": "Çıldır Mahallesi 107/1 Sok No 7",
+		"lat": 36.850658,
+		"lng": 28.26402,
+		"url": "https://www.booking.com/hotel/tr/fifty5-suite.html",
+		"score": 8.1,
+		"count": 465,
+		"stars": 3,
+		"total": 120,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Marmaris centre, rated 8.1 from 465 Booking.com reviews."
+	} },
+	"milan-italy": { "Budget": {
+		"id": 81191,
+		"name": "Hotel Canada",
+		"area": "Milan City Centre",
+		"address": "Via Santa Sofia 16",
+		"lat": 45.45731,
+		"lng": 9.191093,
+		"url": "https://www.booking.com/hotel/it/canadamilan.html",
+		"score": 8.7,
+		"count": 2310,
+		"stars": 3,
+		"total": 476.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Milan City Centre, rated 8.7 from 2,310 Booking.com reviews."
+	} },
+	"montpellier-france": { "Budget": {
+		"id": 272001,
+		"name": "Hôtel Des Arts, Artisanal et Indépendant",
+		"area": "Montpellier City-Centre",
+		"address": "6 boulevard Victor Hugo",
+		"lat": 43.606476,
+		"lng": 3.877872,
+		"url": "https://www.booking.com/hotel/fr/des-arts-montpellier.html",
+		"score": 8.2,
+		"count": 1093,
+		"stars": 2,
+		"total": 203.76,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Montpellier City-Centre, rated 8.2 from 1,093 Booking.com reviews."
+	} },
 	"munich-germany": {
 		"Budget": {
 			"id": 26266,
@@ -15322,7 +17149,7 @@ var overrides_central_2710c = {
 			"lat": 48.138063,
 			"lng": 11.557413,
 			"url": "https://www.booking.com/hotel/de/metropol.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 4588,
 			"stars": 3,
 			"total": 1140.2,
@@ -15340,725 +17167,551 @@ var overrides_central_2710c = {
 			"score": 8.9,
 			"count": 3048,
 			"stars": 4,
-			"total": 1480.0,
+			"total": 1480,
 			"checked": "27 Oct 2026",
 			"reason": "Central Altstadt-Lehel, Munich hotel rated 8.9 from 3,048 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"nha-trang-vietnam": {
-		"Best Value": {
-			"id": 9920811,
-			"name": "Aaron Boutique Hotel",
-			"area": "Nha Trang centre",
-			"address": "16 Biet Thu Street, Loc Tho Ward",
-			"lat": 12.235908,
-			"lng": 109.194799,
-			"url": "https://www.booking.com/hotel/vn/aaron-boutique.html",
-			"score": 8.8,
-			"count": 1425,
-			"stars": 4,
-			"total": 60.57,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nha Trang centre hotel rated 8.8 from 1,425 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"nice-france": {
-		"Best Value": {
-			"id": 366859,
-			"name": "Arome Hôtel",
-			"area": "Nice City Centre",
-			"address": "65, Rue de la Buffa",
-			"lat": 43.69606,
-			"lng": 7.256702,
-			"url": "https://www.booking.com/hotel/fr/connexion.html",
-			"score": 8.6,
-			"count": 801,
-			"stars": 3,
-			"total": 177.38,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nice City Centre hotel rated 8.6 from 801 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"nimes-france": {
-		"Best Value": {
-			"id": 57302,
-			"name": "Novotel Atria Nimes Centre",
-			"area": "Nîmes centre",
-			"address": "5 boulevard de Prague",
-			"lat": 43.835421,
-			"lng": 4.363404,
-			"url": "https://www.booking.com/hotel/fr/atria-nimes-centre.html",
-			"score": 8.5,
-			"count": 414,
-			"stars": 4,
-			"total": 254.5,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nîmes centre hotel rated 8.5 from 414 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"olhao-portugal": {
-		"Best Value": {
-			"id": 11131089,
-			"name": "B&B HOTEL Olhão Algarve",
-			"area": "Olhão",
-			"address": "100 Avenida Dom João VI",
-			"lat": 37.034119,
-			"lng": -7.839762,
-			"url": "https://www.booking.com/hotel/pt/b-amp-b-olhao-algarve.html",
-			"score": 8.3,
-			"count": 2090,
-			"stars": 3,
-			"total": 112.9,
-			"checked": "27 Oct 2026",
-			"reason": "Central Olhão hotel rated 8.3 from 2,090 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"orvieto-italy": {
-		"Budget": {
-			"id": 13755,
-			"name": "Hotel Corso",
-			"area": "Orvieto old town",
-			"address": "Corso Cavour 343",
-			"lat": 42.719868,
-			"lng": 12.116498,
-			"url": "https://www.booking.com/hotel/it/corso-orvieto.html",
-			"score": 8.3,
-			"count": 898,
-			"stars": 3,
-			"total": 297.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Orvieto old town, rated 8.3 from 898 Booking.com reviews."
-		}
-	},
-	"parma-italy": {
-		"Best Value": {
-			"id": 372934,
-			"name": "Hotel Button",
-			"area": "Parma City Centre",
-			"address": "Borgo Della Salina 7",
-			"lat": 44.800643,
-			"lng": 10.328788,
-			"url": "https://www.booking.com/hotel/it/button.html",
-			"score": 8.4,
-			"count": 3421,
-			"stars": 3,
-			"total": 184.4,
-			"checked": "27 Oct 2026",
-			"reason": "Central Parma City Centre hotel rated 8.4 from 3,421 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"passau-germany": {
-		"Luxury": {
-			"id": 264724,
-			"name": "Altstadt-Hotel Passau",
-			"area": "Passau Old Town",
-			"address": "Bräugasse 23-29",
-			"lat": 48.574379,
-			"lng": 13.473281,
-			"url": "https://www.booking.com/hotel/de/altstadt-passau.html",
-			"score": 9.0,
-			"count": 1865,
-			"stars": 4,
-			"total": 318.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Passau Old Town rated 9/10 from 1,865 Booking.com reviews."
-		}
-	},
-	"pau-france": {
-		"Budget": {
-			"id": 225515,
-			"name": "Ostal Pau Universite - Sure Hotel Collection by Best Western",
-			"area": "Pau",
-			"address": "38 rue Ronsard",
-			"lat": 43.318971,
-			"lng": -0.358644,
-			"url": "https://www.booking.com/hotel/fr/alhotel.html",
-			"score": 8.5,
-			"count": 1057,
-			"stars": 3,
-			"total": 165.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Pau, rated 8.5 from 1,057 Booking.com reviews."
-		}
-	},
-	"porto-moniz-portugal": {
-		"Best Value": {
-			"id": 38921,
-			"name": "Hotel Euro Moniz",
-			"area": "Porto Moniz",
-			"address": "Rua das Alfarrobeiras, 4",
-			"lat": 32.867152,
-			"lng": -17.169037,
-			"url": "https://www.booking.com/hotel/pt/euromoniz.html",
-			"score": 8.7,
-			"count": 1780,
-			"stars": 4,
-			"total": 322.56,
-			"checked": "27 Oct 2026",
-			"reason": "Central Porto Moniz hotel rated 8.7 from 1,780 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"punta-arenas-chile": {
-		"Luxury": {
-			"id": 255548,
-			"name": "Hotel Diego de Almagro Punta Arenas",
-			"area": "Punta Arenas centre",
-			"address": "Avenida Colón, 1290",
-			"lat": -53.16324,
-			"lng": -70.897243,
-			"url": "https://www.booking.com/hotel/cl/diego-de-almagro-punta-arenas.html",
-			"score": 8.3,
-			"count": 1452,
-			"stars": 4,
-			"total": 295.22,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Punta Arenas centre rated 8.3/10 from 1,452 Booking.com reviews."
-		}
-	},
-	"rennes-france": {
-		"Budget": {
-			"id": 79638,
-			"name": "Garden Hotel Rennes Centre Gare",
-			"area": "Rennes centre",
-			"address": "3 Rue Duhamel",
-			"lat": 48.108868,
-			"lng": -1.673457,
-			"url": "https://www.booking.com/hotel/fr/garden.html",
-			"score": 8.3,
-			"count": 2792,
-			"stars": 3,
-			"total": 254.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Rennes centre, rated 8.3 from 2,792 Booking.com reviews."
-		}
-	},
-	"riga-latvia": {
-		"Best Value": {
-			"id": 26004,
-			"name": "Hestia Hotel Jugend",
-			"area": "Centre, Riga",
-			"address": "Pulkveža Brieža iela 11",
-			"lat": 56.960543,
-			"lng": 24.105635,
-			"url": "https://www.booking.com/hotel/lv/hestia-hotel-jugend.html",
-			"score": 8.7,
-			"count": 5629,
-			"stars": 4,
-			"total": 118.4,
-			"checked": "27 Oct 2026",
-			"reason": "Central Centre, Riga hotel rated 8.7 from 5,629 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"riyadh-saudiarabia": {
-		"Budget": {
-			"id": 9481397,
-			"name": "Comfort Hotel Riyadh Olaya",
-			"area": "Al Olaya, Riyadh",
-			"address": "Al-Thumamah Valley St, Al Olaya",
-			"lat": 24.706898,
-			"lng": 46.677238,
-			"url": "https://www.booking.com/hotel/sa/comfort-riyadh-olaya.html",
-			"score": 8.9,
-			"count": 1463,
-			"stars": 3,
-			"total": 280.25,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Al Olaya, Riyadh, rated 8.9 from 1,463 Booking.com reviews."
-		}
-	},
-	"sabadell-spain": {
-		"Best Value": {
-			"id": 91626,
-			"name": "Hotel Urpí",
-			"area": "Sabadell centre",
-			"address": "Sant Matíes, 5",
-			"lat": 41.553127,
-			"lng": 2.105746,
-			"url": "https://www.booking.com/hotel/es/urpisabadell.html",
-			"score": 7.6,
-			"count": 1255,
-			"stars": 3,
-			"total": 227.92,
-			"checked": "27 Oct 2026",
-			"reason": "Central Sabadell centre hotel rated 7.6 from 1,255 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"salalah-oman": {
-		"Budget": {
-			"id": 1461760,
-			"name": "Muscat International Hotel Plaza",
-			"area": "Salalah centre",
-			"address": "23 July St., opposite Sultan Qaboos Mosque",
-			"lat": 17.014879,
-			"lng": 54.091792,
-			"url": "https://www.booking.com/hotel/om/muscat-internatonal-plaza-salalah.html",
-			"score": 7.9,
-			"count": 409,
-			"stars": 3,
-			"total": 97.63,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salalah centre, rated 7.9 from 409 Booking.com reviews."
-		}
-	},
-	"san-miguel-de-allende-mexico": {
-		"Luxury": {
-			"id": 2444885,
-			"name": "Hotel Casa Blanca 7",
-			"area": "Centro Histórico",
-			"address": "Juárez 7, Zona Centro",
-			"lat": 20.914764,
-			"lng": -100.741934,
-			"url": "https://www.booking.com/hotel/mx/casa-blanca-7.html",
-			"score": 9.3,
-			"count": 62,
-			"stars": 5,
-			"total": 1269.25,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Centro Histórico, rated 9.3 from 62 Booking.com reviews."
-		}
-	},
-	"salou-spain": {
-		"Budget": {
-			"id": 90406,
-			"name": "Num Hotel",
-			"area": "Salou City Centre",
-			"address": "Carrer del Nord, 8",
-			"lat": 41.076751,
-			"lng": 1.132434,
-			"url": "https://www.booking.com/hotel/es/regentearagon.html",
-			"score": 8.3,
-			"count": 1934,
-			"stars": 4,
-			"total": 142.92,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salou City Centre, rated 8.3 from 1,934 Booking.com reviews."
-		}
-	},
-	"santiago-chile": {
-		"Best Value": {
-			"id": 174540,
-			"name": "Hotel Panamericano",
-			"area": "Santiago City Centre",
-			"address": "Teatinos 320",
-			"lat": -33.43979,
-			"lng": -70.655514,
-			"url": "https://www.booking.com/hotel/cl/panamericano-santiago.html",
-			"score": 8.8,
-			"count": 4049,
-			"stars": 3,
-			"total": 139.56,
-			"checked": "27 Oct 2026",
-			"reason": "Central Santiago City Centre hotel rated 8.8 from 4,049 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"sarande-albania": {
-		"Budget": {
-			"id": 1429246,
-			"name": "Hotel Real",
-			"area": "Sarandë centre",
-			"address": "Rr. Skenderbeu",
-			"lat": 39.874144,
-			"lng": 20.007565,
-			"url": "https://www.booking.com/hotel/al/real.html",
-			"score": 9.2,
-			"count": 439,
-			"stars": 3,
-			"total": 90.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Sarandë centre, rated 9.2 from 439 Booking.com reviews."
-		}
-	},
-	"stresa-italy": {
-		"Budget": {
-			"id": 15950842,
-			"name": "Hotel Luina",
-			"area": "Stresa centre",
-			"address": "Via Giuseppe Garibaldi, 21",
-			"lat": 45.883534,
-			"lng": 8.541483,
-			"url": "https://www.booking.com/hotel/it/luina-stresa.html",
-			"score": 8.2,
-			"count": 94,
-			"stars": 2,
-			"total": 244.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Stresa centre, rated 8.2 from 94 Booking.com reviews."
-		}
-	},
-	"toulon-france": {
-		"Best Value": {
-			"id": 50061,
-			"name": "Hôtel Amirauté",
-			"area": "Toulon centre",
-			"address": "4, rue Adolphe Guiol",
-			"lat": 43.125132,
-			"lng": 5.929607,
-			"url": "https://www.booking.com/hotel/fr/amiraute.html",
-			"score": 8.3,
-			"count": 1152,
-			"stars": 3,
-			"total": 177.44,
-			"checked": "27 Oct 2026",
-			"reason": "Central Toulon centre hotel rated 8.3 from 1,152 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"toulouse-france": {
-		"Budget": {
-			"id": 51924,
-			"name": "Hotel Albert 1er",
-			"area": "Capitole, Toulouse",
-			"address": "8 rue Rivals",
-			"lat": 43.606032,
-			"lng": 1.444919,
-			"url": "https://www.booking.com/hotel/fr/hotelalberttoulouse.html",
-			"score": 8.8,
-			"count": 837,
-			"stars": 3,
-			"total": 253.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Capitole, Toulouse, rated 8.8 from 837 Booking.com reviews."
-		}
-	},
-	"trapani-italy": {
-		"Budget": {
-			"id": 486706,
-			"name": "Hotel Moderno",
-			"area": "Trapani City Centre",
-			"address": "Via Tenente Genovese 20",
-			"lat": 38.016204,
-			"lng": 12.509152,
-			"url": "https://www.booking.com/hotel/it/moderno-trapani.html",
-			"score": 8.6,
-			"count": 745,
-			"stars": 2,
-			"total": 168.64,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trapani City Centre, rated 8.6 from 745 Booking.com reviews."
-		}
-	},
-	"trieste-italy": {
-		"Budget": {
-			"id": 89116,
-			"name": "Hotel James Joyce",
-			"area": "Trieste Old Town",
-			"address": "Via Cavazzeni 7",
-			"lat": 45.648472,
-			"lng": 13.76764,
-			"url": "https://www.booking.com/hotel/it/james-joyce.html",
-			"score": 8.5,
-			"count": 1299,
-			"stars": 3,
-			"total": 216.7,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trieste Old Town, rated 8.5 from 1,299 Booking.com reviews."
-		}
-	},
-	"verona-italy": {
-		"Best Value": {
-			"id": 5373431,
-			"name": "Boutique Hotel Touring",
-			"area": "Verona Historical Centre",
-			"address": "Via Quintino Sella 5",
-			"lat": 45.441889,
-			"lng": 10.996925,
-			"url": "https://www.booking.com/hotel/it/touring-verona.html",
-			"score": 9.2,
-			"count": 1916,
-			"stars": 3,
-			"total": 414.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Verona Historical Centre hotel rated 9.2 from 1,916 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"versailles-france": {
-		"Budget": {
-			"id": 428542,
-			"name": "Hotel des Lys",
-			"area": "Versailles centre",
-			"address": "16 rue Richaud",
-			"lat": 48.80721,
-			"lng": 2.134073,
-			"url": "https://www.booking.com/hotel/fr/richaud.html",
-			"score": 8.5,
-			"count": 1343,
-			"stars": 3,
-			"total": 258.12,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Versailles centre, rated 8.5 from 1,343 Booking.com reviews."
-		}
-	},
-	"vichy-france": {
-		"Budget": {
-			"id": 44891,
-			"name": "Hôtel Le Biarritz - Vichy",
-			"area": "Vichy centre",
-			"address": "3, rue Grangier",
-			"lat": 46.12432,
-			"lng": 3.42432,
-			"url": "https://www.booking.com/hotel/fr/biarritz.html",
-			"score": 8.5,
-			"count": 883,
-			"stars": 3,
-			"total": 161.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vichy centre, rated 8.5 from 883 Booking.com reviews."
-		}
-	},
-	"vitoria-gasteiz-spain": {
-		"Best Value": {
-			"id": 91179,
-			"name": "Silken Ciudad de Vitoria",
-			"area": "Vitoria-Gasteiz centre",
-			"address": "Portal de Castilla, 8",
-			"lat": 42.843553,
-			"lng": -2.680584,
-			"url": "https://www.booking.com/hotel/es/ciudaddevitoria.html",
-			"score": 8.8,
-			"count": 9303,
-			"stars": 4,
-			"total": 222.99,
-			"checked": "27 Oct 2026",
-			"reason": "Central Vitoria-Gasteiz centre hotel rated 8.8 from 9,303 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tampa-united-states": {
-		"Best Value": {
-			"id": 247179,
-			"name": "The Barrymore Hotel Tampa Riverwalk",
-			"area": "Downtown Tampa",
-			"address": "111 West Fortune Street",
-			"lat": 27.953256,
-			"lng": -82.463794,
-			"url": "https://www.booking.com/hotel/us/howard-johnson-plaza-tampa.html",
-			"score": 8.3,
-			"count": 3134,
-			"stars": 3,
-			"total": 486.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Tampa hotel rated 8.3 from 3,134 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"vodice-croatia": {
-		"Luxury": {
-			"id": 3402519,
-			"name": "Hotel Scala d'Oro",
-			"area": "Vodice",
-			"address": "22 Ulica Lasan Ante Kabalera",
-			"lat": 43.759563,
-			"lng": 15.787564,
-			"url": "https://www.booking.com/hotel/hr/scala-d-39-oro.html",
-			"score": 9.0,
-			"count": 662,
-			"stars": 4,
-			"total": 206.23,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Vodice rated 9/10 from 662 Booking.com reviews."
-		}
-	},
-	"slough-unitedkingdom": {
-		"Luxury": {
-			"id": 108913,
-			"name": "Holiday Inn Slough Windsor by IHG",
-			"area": "Slough centre",
-			"address": "1 Church Street, Chalvey",
-			"lat": 51.507841,
-			"lng": -0.61119,
-			"url": "https://www.booking.com/hotel/gb/courtyard.html",
-			"score": 7.8,
-			"count": 3392,
-			"stars": 4,
-			"total": 213.74,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Slough centre rated 7.8/10 from 3,392 Booking.com reviews."
-		}
-	},
-	"salvador-brazil": {
-		"Budget": {
-			"id": 1523673,
-			"name": "Aquarena Hotel",
-			"area": "Salvador",
-			"address": "Rua Rodolfo Pimentel, 241",
-			"lat": -12.98176,
-			"lng": -38.495933,
-			"url": "https://www.booking.com/hotel/br/aquarena-suites-salvador.html",
-			"score": 8.3,
-			"count": 1603,
-			"stars": 2,
-			"total": 95.67,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salvador, rated 8.3 from 1,603 Booking.com reviews."
-		}
-	},
-	"kolkata-india": {
-		"Best Value": {
-			"id": 251366,
-			"name": "Peerless Hotel Kolkata",
-			"area": "Chowringhee, Kolkata",
-			"address": "12 Jawahar Lal Nehru Road",
-			"lat": 22.562288,
-			"lng": 88.351412,
-			"url": "https://www.booking.com/hotel/in/the-peerless-inn.html",
-			"score": 7.8,
-			"count": 725,
-			"stars": 4,
-			"total": 205.88,
-			"checked": "27 Oct 2026",
-			"reason": "Central Chowringhee, Kolkata hotel rated 7.8 from 725 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"portsmouth-united-kingdom": {
-		"Luxury": {
-			"id": 36885,
-			"name": "Portsmouth Marriott Hotel",
-			"area": "Portsmouth",
-			"address": "Southampton Road",
-			"lat": 50.845879,
-			"lng": -1.090704,
-			"url": "https://www.booking.com/hotel/gb/portsmouth-marriott.html",
-			"score": 8.3,
-			"count": 2403,
-			"stars": 4,
-			"total": 358.23,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Portsmouth rated 8.3/10 from 2,403 Booking.com reviews."
-		}
-	},
-	"le-puy-en-velay-france": {
-		"Budget": {
-			"id": 23784,
-			"name": "B&B HOTEL Le Puy-en-Velay",
-			"area": "Vals-près-le-Puy",
-			"address": "2 Avenue Charles Massot",
-			"lat": 45.029532,
-			"lng": 3.87664,
-			"url": "https://www.booking.com/hotel/fr/brivas.html",
-			"score": 8.6,
-			"count": 1337,
-			"stars": 2,
-			"total": 135.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vals-près-le-Puy, rated 8.6 from 1,337 Booking.com reviews."
-		}
-	},
-	"almaty-kazakhstan": {
-		"Best Value": {
-			"id": 2501211,
-			"name": "Plaza Hotel Almaty",
-			"area": "Almaty centre",
-			"address": "Kozhamkulov Street 215/120",
-			"lat": 43.249356,
-			"lng": 76.916985,
-			"url": "https://www.booking.com/hotel/kz/the-plaza-almaty.html",
-			"score": 8.2,
-			"count": 426,
-			"stars": 4,
-			"total": 252.55,
-			"checked": "27 Oct 2026",
-			"reason": "Central Almaty centre hotel rated 8.2 from 426 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"altoona-united-states": {
-		"Luxury": {
-			"id": 2230610,
-			"name": "Wingate by Wyndham Altoona Downtown/Medical Center",
-			"area": "Downtown Altoona",
-			"address": "909 Chestnut Avenue",
-			"lat": 40.51841,
-			"lng": -78.398753,
-			"url": "https://www.booking.com/hotel/us/wingate-by-wyndham-altoona.html",
-			"score": 8.3,
-			"count": 412,
-			"stars": 3,
-			"total": 235.5,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Altoona rated 8.3/10 from 412 Booking.com reviews."
-		}
-	},
-	"ann-arbor-united-states": {
-		"Budget": {
-			"id": 1483188,
-			"name": "Residence Inn by Marriott Ann Arbor Downtown",
-			"area": "Downtown Ann Arbor",
-			"address": "120 West Huron Street",
-			"lat": 42.281502,
-			"lng": -83.749466,
-			"url": "https://www.booking.com/hotel/us/residence-inn-ann-arbor-downtown.html",
-			"score": 8.3,
-			"count": 56,
-			"stars": 3,
-			"total": 403.46,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Ann Arbor, rated 8.3 from 56 Booking.com reviews."
-		}
-	},
-	"antequera-spain": {
-		"Budget": {
-			"id": 5328709,
-			"name": "Hotel Manzanito",
-			"area": "Antequera centre",
-			"address": "Plaza San Sebastián, 4",
-			"lat": 37.016369,
-			"lng": -4.559611,
-			"url": "https://www.booking.com/hotel/es/manzanito.html",
-			"score": 8.3,
-			"count": 3788,
-			"stars": 2,
-			"total": 120.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Antequera centre, rated 8.3 from 3,788 Booking.com reviews."
-		}
-	},
-	"badajoz-spain": {
-		"Budget": {
-			"id": 10293890,
-			"name": "Akla Hotel Badajoz",
-			"area": "Badajoz old town",
-			"address": "38 Melendez Valdéz",
-			"lat": 38.879835,
-			"lng": -6.972495,
-			"url": "https://www.booking.com/hotel/es/adealba-badajoz.html",
-			"score": 9.1,
-			"count": 1435,
-			"stars": 2,
-			"total": 149.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Badajoz old town, rated 9.1 from 1,435 Booking.com reviews."
-		}
-	},
-	"brentwood-united-states": {
-		"Budget": {
-			"id": 191243,
-			"name": "Holiday Inn Express Hotel & Suites Nashville Brentwood 65S",
-			"area": "Brentwood",
-			"address": "5566 Franklin Pike Circle",
-			"lat": 36.041845,
-			"lng": -86.780924,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-brentwood-north-nashville-area.html",
-			"score": 8.4,
-			"count": 191,
-			"stars": 2,
-			"total": 238.43,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Brentwood, rated 8.4 from 191 Booking.com reviews."
-		}
-	},
-	"casper-united-states": {
-		"Best Value": {
-			"id": 282406,
-			"name": "Hilton Garden Inn Casper",
-			"area": "Casper",
-			"address": "1150 North Poplar Street",
-			"lat": 42.862553,
-			"lng": -106.333945,
-			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-casper.html",
-			"score": 8.5,
-			"count": 136,
-			"stars": 3,
-			"total": 313.29,
-			"checked": "27 Oct 2026",
-			"reason": "Central Casper hotel rated 8.5 from 136 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"nha-trang-vietnam": { "Best Value": {
+		"id": 9920811,
+		"name": "Aaron Boutique Hotel",
+		"area": "Nha Trang centre",
+		"address": "16 Biet Thu Street, Loc Tho Ward",
+		"lat": 12.235908,
+		"lng": 109.194799,
+		"url": "https://www.booking.com/hotel/vn/aaron-boutique.html",
+		"score": 8.8,
+		"count": 1425,
+		"stars": 4,
+		"total": 60.57,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nha Trang centre hotel rated 8.8 from 1,425 Booking.com reviews: good value close to the sights."
+	} },
+	"nice-france": { "Best Value": {
+		"id": 366859,
+		"name": "Arome Hôtel",
+		"area": "Nice City Centre",
+		"address": "65, Rue de la Buffa",
+		"lat": 43.69606,
+		"lng": 7.256702,
+		"url": "https://www.booking.com/hotel/fr/connexion.html",
+		"score": 8.6,
+		"count": 801,
+		"stars": 3,
+		"total": 177.38,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nice City Centre hotel rated 8.6 from 801 Booking.com reviews: good value close to the sights."
+	} },
+	"nimes-france": { "Best Value": {
+		"id": 57302,
+		"name": "Novotel Atria Nimes Centre",
+		"area": "Nîmes centre",
+		"address": "5 boulevard de Prague",
+		"lat": 43.835421,
+		"lng": 4.363404,
+		"url": "https://www.booking.com/hotel/fr/atria-nimes-centre.html",
+		"score": 8.5,
+		"count": 414,
+		"stars": 4,
+		"total": 254.5,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nîmes centre hotel rated 8.5 from 414 Booking.com reviews: good value close to the sights."
+	} },
+	"olhao-portugal": { "Best Value": {
+		"id": 11131089,
+		"name": "B&B HOTEL Olhão Algarve",
+		"area": "Olhão",
+		"address": "100 Avenida Dom João VI",
+		"lat": 37.034119,
+		"lng": -7.839762,
+		"url": "https://www.booking.com/hotel/pt/b-amp-b-olhao-algarve.html",
+		"score": 8.3,
+		"count": 2090,
+		"stars": 3,
+		"total": 112.9,
+		"checked": "27 Oct 2026",
+		"reason": "Central Olhão hotel rated 8.3 from 2,090 Booking.com reviews: good value close to the sights."
+	} },
+	"orvieto-italy": { "Budget": {
+		"id": 13755,
+		"name": "Hotel Corso",
+		"area": "Orvieto old town",
+		"address": "Corso Cavour 343",
+		"lat": 42.719868,
+		"lng": 12.116498,
+		"url": "https://www.booking.com/hotel/it/corso-orvieto.html",
+		"score": 8.3,
+		"count": 898,
+		"stars": 3,
+		"total": 297.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Orvieto old town, rated 8.3 from 898 Booking.com reviews."
+	} },
+	"parma-italy": { "Best Value": {
+		"id": 372934,
+		"name": "Hotel Button",
+		"area": "Parma City Centre",
+		"address": "Borgo Della Salina 7",
+		"lat": 44.800643,
+		"lng": 10.328788,
+		"url": "https://www.booking.com/hotel/it/button.html",
+		"score": 8.4,
+		"count": 3421,
+		"stars": 3,
+		"total": 184.4,
+		"checked": "27 Oct 2026",
+		"reason": "Central Parma City Centre hotel rated 8.4 from 3,421 Booking.com reviews: good value close to the sights."
+	} },
+	"passau-germany": { "Luxury": {
+		"id": 264724,
+		"name": "Altstadt-Hotel Passau",
+		"area": "Passau Old Town",
+		"address": "Bräugasse 23-29",
+		"lat": 48.574379,
+		"lng": 13.473281,
+		"url": "https://www.booking.com/hotel/de/altstadt-passau.html",
+		"score": 9,
+		"count": 1865,
+		"stars": 4,
+		"total": 318,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Passau Old Town rated 9/10 from 1,865 Booking.com reviews."
+	} },
+	"pau-france": { "Budget": {
+		"id": 225515,
+		"name": "Ostal Pau Universite - Sure Hotel Collection by Best Western",
+		"area": "Pau",
+		"address": "38 rue Ronsard",
+		"lat": 43.318971,
+		"lng": -.358644,
+		"url": "https://www.booking.com/hotel/fr/alhotel.html",
+		"score": 8.5,
+		"count": 1057,
+		"stars": 3,
+		"total": 165.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Pau, rated 8.5 from 1,057 Booking.com reviews."
+	} },
+	"porto-moniz-portugal": { "Best Value": {
+		"id": 38921,
+		"name": "Hotel Euro Moniz",
+		"area": "Porto Moniz",
+		"address": "Rua das Alfarrobeiras, 4",
+		"lat": 32.867152,
+		"lng": -17.169037,
+		"url": "https://www.booking.com/hotel/pt/euromoniz.html",
+		"score": 8.7,
+		"count": 1780,
+		"stars": 4,
+		"total": 322.56,
+		"checked": "27 Oct 2026",
+		"reason": "Central Porto Moniz hotel rated 8.7 from 1,780 Booking.com reviews: good value close to the sights."
+	} },
+	"punta-arenas-chile": { "Luxury": {
+		"id": 255548,
+		"name": "Hotel Diego de Almagro Punta Arenas",
+		"area": "Punta Arenas centre",
+		"address": "Avenida Colón, 1290",
+		"lat": -53.16324,
+		"lng": -70.897243,
+		"url": "https://www.booking.com/hotel/cl/diego-de-almagro-punta-arenas.html",
+		"score": 8.3,
+		"count": 1452,
+		"stars": 4,
+		"total": 295.22,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Punta Arenas centre rated 8.3/10 from 1,452 Booking.com reviews."
+	} },
+	"rennes-france": { "Budget": {
+		"id": 79638,
+		"name": "Garden Hotel Rennes Centre Gare",
+		"area": "Rennes centre",
+		"address": "3 Rue Duhamel",
+		"lat": 48.108868,
+		"lng": -1.673457,
+		"url": "https://www.booking.com/hotel/fr/garden.html",
+		"score": 8.3,
+		"count": 2792,
+		"stars": 3,
+		"total": 254.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Rennes centre, rated 8.3 from 2,792 Booking.com reviews."
+	} },
+	"riga-latvia": { "Best Value": {
+		"id": 26004,
+		"name": "Hestia Hotel Jugend",
+		"area": "Centre, Riga",
+		"address": "Pulkveža Brieža iela 11",
+		"lat": 56.960543,
+		"lng": 24.105635,
+		"url": "https://www.booking.com/hotel/lv/hestia-hotel-jugend.html",
+		"score": 8.7,
+		"count": 5629,
+		"stars": 4,
+		"total": 118.4,
+		"checked": "27 Oct 2026",
+		"reason": "Central Centre, Riga hotel rated 8.7 from 5,629 Booking.com reviews: good value close to the sights."
+	} },
+	"riyadh-saudiarabia": { "Budget": {
+		"id": 9481397,
+		"name": "Comfort Hotel Riyadh Olaya",
+		"area": "Al Olaya, Riyadh",
+		"address": "Al-Thumamah Valley St, Al Olaya",
+		"lat": 24.706898,
+		"lng": 46.677238,
+		"url": "https://www.booking.com/hotel/sa/comfort-riyadh-olaya.html",
+		"score": 8.9,
+		"count": 1463,
+		"stars": 3,
+		"total": 280.25,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Al Olaya, Riyadh, rated 8.9 from 1,463 Booking.com reviews."
+	} },
+	"sabadell-spain": { "Best Value": {
+		"id": 91626,
+		"name": "Hotel Urpí",
+		"area": "Sabadell centre",
+		"address": "Sant Matíes, 5",
+		"lat": 41.553127,
+		"lng": 2.105746,
+		"url": "https://www.booking.com/hotel/es/urpisabadell.html",
+		"score": 7.6,
+		"count": 1255,
+		"stars": 3,
+		"total": 227.92,
+		"checked": "27 Oct 2026",
+		"reason": "Central Sabadell centre hotel rated 7.6 from 1,255 Booking.com reviews: good value close to the sights."
+	} },
+	"san-miguel-de-allende-mexico": { "Luxury": {
+		"id": 2444885,
+		"name": "Hotel Casa Blanca 7",
+		"area": "Centro Histórico",
+		"address": "Juárez 7, Zona Centro",
+		"lat": 20.914764,
+		"lng": -100.741934,
+		"url": "https://www.booking.com/hotel/mx/casa-blanca-7.html",
+		"score": 9.3,
+		"count": 62,
+		"stars": 5,
+		"total": 1269.25,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Centro Histórico, rated 9.3 from 62 Booking.com reviews."
+	} },
+	"salou-spain": { "Budget": {
+		"id": 90406,
+		"name": "Num Hotel",
+		"area": "Salou City Centre",
+		"address": "Carrer del Nord, 8",
+		"lat": 41.076751,
+		"lng": 1.132434,
+		"url": "https://www.booking.com/hotel/es/regentearagon.html",
+		"score": 8.3,
+		"count": 1934,
+		"stars": 4,
+		"total": 142.92,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Salou City Centre, rated 8.3 from 1,934 Booking.com reviews."
+	} },
+	"santiago-chile": { "Best Value": {
+		"id": 174540,
+		"name": "Hotel Panamericano",
+		"area": "Santiago City Centre",
+		"address": "Teatinos 320",
+		"lat": -33.43979,
+		"lng": -70.655514,
+		"url": "https://www.booking.com/hotel/cl/panamericano-santiago.html",
+		"score": 8.8,
+		"count": 4049,
+		"stars": 3,
+		"total": 139.56,
+		"checked": "27 Oct 2026",
+		"reason": "Central Santiago City Centre hotel rated 8.8 from 4,049 Booking.com reviews: good value close to the sights."
+	} },
+	"sarande-albania": { "Budget": {
+		"id": 1429246,
+		"name": "Hotel Real",
+		"area": "Sarandë centre",
+		"address": "Rr. Skenderbeu",
+		"lat": 39.874144,
+		"lng": 20.007565,
+		"url": "https://www.booking.com/hotel/al/real.html",
+		"score": 9.2,
+		"count": 439,
+		"stars": 3,
+		"total": 90,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Sarandë centre, rated 9.2 from 439 Booking.com reviews."
+	} },
+	"stresa-italy": { "Budget": {
+		"id": 15950842,
+		"name": "Hotel Luina",
+		"area": "Stresa centre",
+		"address": "Via Giuseppe Garibaldi, 21",
+		"lat": 45.883534,
+		"lng": 8.541483,
+		"url": "https://www.booking.com/hotel/it/luina-stresa.html",
+		"score": 8.2,
+		"count": 94,
+		"stars": 2,
+		"total": 244,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Stresa centre, rated 8.2 from 94 Booking.com reviews."
+	} },
+	"toulon-france": { "Best Value": {
+		"id": 50061,
+		"name": "Hôtel Amirauté",
+		"area": "Toulon centre",
+		"address": "4, rue Adolphe Guiol",
+		"lat": 43.125132,
+		"lng": 5.929607,
+		"url": "https://www.booking.com/hotel/fr/amiraute.html",
+		"score": 8.3,
+		"count": 1152,
+		"stars": 3,
+		"total": 177.44,
+		"checked": "27 Oct 2026",
+		"reason": "Central Toulon centre hotel rated 8.3 from 1,152 Booking.com reviews: good value close to the sights."
+	} },
+	"toulouse-france": { "Budget": {
+		"id": 51924,
+		"name": "Hotel Albert 1er",
+		"area": "Capitole, Toulouse",
+		"address": "8 rue Rivals",
+		"lat": 43.606032,
+		"lng": 1.444919,
+		"url": "https://www.booking.com/hotel/fr/hotelalberttoulouse.html",
+		"score": 8.8,
+		"count": 837,
+		"stars": 3,
+		"total": 253.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Capitole, Toulouse, rated 8.8 from 837 Booking.com reviews."
+	} },
+	"trapani-italy": { "Budget": {
+		"id": 486706,
+		"name": "Hotel Moderno",
+		"area": "Trapani City Centre",
+		"address": "Via Tenente Genovese 20",
+		"lat": 38.016204,
+		"lng": 12.509152,
+		"url": "https://www.booking.com/hotel/it/moderno-trapani.html",
+		"score": 8.6,
+		"count": 745,
+		"stars": 2,
+		"total": 168.64,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Trapani City Centre, rated 8.6 from 745 Booking.com reviews."
+	} },
+	"trieste-italy": { "Budget": {
+		"id": 89116,
+		"name": "Hotel James Joyce",
+		"area": "Trieste Old Town",
+		"address": "Via Cavazzeni 7",
+		"lat": 45.648472,
+		"lng": 13.76764,
+		"url": "https://www.booking.com/hotel/it/james-joyce.html",
+		"score": 8.5,
+		"count": 1299,
+		"stars": 3,
+		"total": 216.7,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Trieste Old Town, rated 8.5 from 1,299 Booking.com reviews."
+	} },
+	"verona-italy": { "Best Value": {
+		"id": 5373431,
+		"name": "Boutique Hotel Touring",
+		"area": "Verona Historical Centre",
+		"address": "Via Quintino Sella 5",
+		"lat": 45.441889,
+		"lng": 10.996925,
+		"url": "https://www.booking.com/hotel/it/touring-verona.html",
+		"score": 9.2,
+		"count": 1916,
+		"stars": 3,
+		"total": 414,
+		"checked": "27 Oct 2026",
+		"reason": "Central Verona Historical Centre hotel rated 9.2 from 1,916 Booking.com reviews: good value close to the sights."
+	} },
+	"versailles-france": { "Budget": {
+		"id": 428542,
+		"name": "Hotel des Lys",
+		"area": "Versailles centre",
+		"address": "16 rue Richaud",
+		"lat": 48.80721,
+		"lng": 2.134073,
+		"url": "https://www.booking.com/hotel/fr/richaud.html",
+		"score": 8.5,
+		"count": 1343,
+		"stars": 3,
+		"total": 258.12,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Versailles centre, rated 8.5 from 1,343 Booking.com reviews."
+	} },
+	"vichy-france": { "Budget": {
+		"id": 44891,
+		"name": "Hôtel Le Biarritz - Vichy",
+		"area": "Vichy centre",
+		"address": "3, rue Grangier",
+		"lat": 46.12432,
+		"lng": 3.42432,
+		"url": "https://www.booking.com/hotel/fr/biarritz.html",
+		"score": 8.5,
+		"count": 883,
+		"stars": 3,
+		"total": 161.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vichy centre, rated 8.5 from 883 Booking.com reviews."
+	} },
+	"vitoria-gasteiz-spain": { "Best Value": {
+		"id": 91179,
+		"name": "Silken Ciudad de Vitoria",
+		"area": "Vitoria-Gasteiz centre",
+		"address": "Portal de Castilla, 8",
+		"lat": 42.843553,
+		"lng": -2.680584,
+		"url": "https://www.booking.com/hotel/es/ciudaddevitoria.html",
+		"score": 8.8,
+		"count": 9303,
+		"stars": 4,
+		"total": 222.99,
+		"checked": "27 Oct 2026",
+		"reason": "Central Vitoria-Gasteiz centre hotel rated 8.8 from 9,303 Booking.com reviews: good value close to the sights."
+	} },
+	"vodice-croatia": { "Luxury": {
+		"id": 3402519,
+		"name": "Hotel Scala d'Oro",
+		"area": "Vodice",
+		"address": "22 Ulica Lasan Ante Kabalera",
+		"lat": 43.759563,
+		"lng": 15.787564,
+		"url": "https://www.booking.com/hotel/hr/scala-d-39-oro.html",
+		"score": 9,
+		"count": 662,
+		"stars": 4,
+		"total": 206.23,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Vodice rated 9/10 from 662 Booking.com reviews."
+	} },
+	"portsmouth-united-kingdom": { "Luxury": {
+		"id": 36885,
+		"name": "Portsmouth Marriott Hotel",
+		"area": "Portsmouth",
+		"address": "Southampton Road",
+		"lat": 50.845879,
+		"lng": -1.090704,
+		"url": "https://www.booking.com/hotel/gb/portsmouth-marriott.html",
+		"score": 8.3,
+		"count": 2403,
+		"stars": 4,
+		"total": 358.23,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Portsmouth rated 8.3/10 from 2,403 Booking.com reviews."
+	} },
+	"le-puy-en-velay-france": { "Budget": {
+		"id": 23784,
+		"name": "B&B HOTEL Le Puy-en-Velay",
+		"area": "Vals-près-le-Puy",
+		"address": "2 Avenue Charles Massot",
+		"lat": 45.029532,
+		"lng": 3.87664,
+		"url": "https://www.booking.com/hotel/fr/brivas.html",
+		"score": 8.6,
+		"count": 1337,
+		"stars": 2,
+		"total": 135.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vals-près-le-Puy, rated 8.6 from 1,337 Booking.com reviews."
+	} },
+	"altoona-united-states": { "Luxury": {
+		"id": 2230610,
+		"name": "Wingate by Wyndham Altoona Downtown/Medical Center",
+		"area": "Downtown Altoona",
+		"address": "909 Chestnut Avenue",
+		"lat": 40.51841,
+		"lng": -78.398753,
+		"url": "https://www.booking.com/hotel/us/wingate-by-wyndham-altoona.html",
+		"score": 8.3,
+		"count": 412,
+		"stars": 3,
+		"total": 235.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Altoona rated 8.3/10 from 412 Booking.com reviews."
+	} },
+	"ann-arbor-united-states": { "Budget": {
+		"id": 1483188,
+		"name": "Residence Inn by Marriott Ann Arbor Downtown",
+		"area": "Downtown Ann Arbor",
+		"address": "120 West Huron Street",
+		"lat": 42.281502,
+		"lng": -83.749466,
+		"url": "https://www.booking.com/hotel/us/residence-inn-ann-arbor-downtown.html",
+		"score": 8.3,
+		"count": 56,
+		"stars": 3,
+		"total": 403.46,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Ann Arbor, rated 8.3 from 56 Booking.com reviews."
+	} },
+	"antequera-spain": { "Budget": {
+		"id": 5328709,
+		"name": "Hotel Manzanito",
+		"area": "Antequera centre",
+		"address": "Plaza San Sebastián, 4",
+		"lat": 37.016369,
+		"lng": -4.559611,
+		"url": "https://www.booking.com/hotel/es/manzanito.html",
+		"score": 8.3,
+		"count": 3788,
+		"stars": 2,
+		"total": 120,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Antequera centre, rated 8.3 from 3,788 Booking.com reviews."
+	} },
+	"badajoz-spain": { "Budget": {
+		"id": 10293890,
+		"name": "Akla Hotel Badajoz",
+		"area": "Badajoz old town",
+		"address": "38 Melendez Valdéz",
+		"lat": 38.879835,
+		"lng": -6.972495,
+		"url": "https://www.booking.com/hotel/es/adealba-badajoz.html",
+		"score": 9.1,
+		"count": 1435,
+		"stars": 2,
+		"total": 149.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Badajoz old town, rated 9.1 from 1,435 Booking.com reviews."
+	} },
+	"brentwood-united-states": { "Budget": {
+		"id": 191243,
+		"name": "Holiday Inn Express Hotel & Suites Nashville Brentwood 65S",
+		"area": "Brentwood",
+		"address": "5566 Franklin Pike Circle",
+		"lat": 36.041845,
+		"lng": -86.780924,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-brentwood-north-nashville-area.html",
+		"score": 8.4,
+		"count": 191,
+		"stars": 2,
+		"total": 238.43,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Brentwood, rated 8.4 from 191 Booking.com reviews."
+	} },
+	"casper-united-states": { "Best Value": {
+		"id": 282406,
+		"name": "Hilton Garden Inn Casper",
+		"area": "Casper",
+		"address": "1150 North Poplar Street",
+		"lat": 42.862553,
+		"lng": -106.333945,
+		"url": "https://www.booking.com/hotel/us/hilton-garden-inn-casper.html",
+		"score": 8.5,
+		"count": 136,
+		"stars": 3,
+		"total": 313.29,
+		"checked": "27 Oct 2026",
+		"reason": "Central Casper hotel rated 8.5 from 136 Booking.com reviews: good value close to the sights."
+	} },
 	"dallas-united-states": {
 		"Budget": {
 			"id": 2186378,
@@ -16091,463 +17744,246 @@ var overrides_central_2710c = {
 			"reason": "Central Main Street District, Dallas hotel rated 8.4 from 1,181 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"darlington-united-kingdom": {
-		"Luxury": {
-			"id": 115510,
-			"name": "Bannatyne Hotel Darlington",
-			"area": "Darlington",
-			"address": "Southend Avenue",
-			"lat": 54.522252,
-			"lng": -1.560893,
-			"url": "https://www.booking.com/hotel/gb/thenewgrangehotel.html",
-			"score": 8.1,
-			"count": 1751,
-			"stars": 4,
-			"total": 342.58,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darlington rated 8.1/10 from 1,751 Booking.com reviews."
-		}
-	},
-	"mytilene-greece": {
-		"Luxury": {
-			"id": 273019,
-			"name": "Theofilos Paradise Boutique Hotel",
-			"area": "Mytilene centre",
-			"address": "Skra 7",
-			"lat": 39.106489,
-			"lng": 26.559408,
-			"url": "https://www.booking.com/hotel/gr/theofilos-paradise-boutique.html",
-			"score": 9.2,
-			"count": 579,
-			"stars": 4,
-			"total": 253.5,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Mytilene centre rated 9.2/10 from 579 Booking.com reviews."
-		}
-	},
-	"namur-belgium": {
-		"Best Value": {
-			"id": 20171,
-			"name": "Ibis Namur Centre",
-			"area": "Namur centre",
-			"address": "Rue du Premier Lanciers 10",
-			"lat": 50.466335,
-			"lng": 4.871066,
-			"url": "https://www.booking.com/hotel/be/ibisnamur.html",
-			"score": 8.1,
-			"count": 1823,
-			"stars": 3,
-			"total": 204.08,
-			"checked": "27 Oct 2026",
-			"reason": "Central Namur centre hotel rated 8.1 from 1,823 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"kielce-poland": {
-		"Luxury": {
-			"id": 591528,
-			"name": "Hotel Willa Hueta",
-			"area": "Kielce centre",
-			"address": "Ul. Juliusza Słowackiego 25",
-			"lat": 50.863782,
-			"lng": 20.631243,
-			"url": "https://www.booking.com/hotel/pl/willa-hueta.html",
-			"score": 8.8,
-			"count": 795,
-			"stars": 4,
-			"total": 158.98,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Kielce centre rated 8.8/10 from 795 Booking.com reviews."
-		}
-	},
-	"omaha-united-states": {
-		"Budget": {
-			"id": 10384055,
-			"name": "Moxy Omaha Downtown",
-			"area": "Downtown Omaha",
-			"address": "409 South 12th Street",
-			"lat": 41.25623,
-			"lng": -95.9316,
-			"url": "https://www.booking.com/hotel/us/moxy-omaha-downtown.html",
-			"score": 8.3,
-			"count": 296,
-			"stars": 3,
-			"total": 250.76,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Omaha, rated 8.3 from 296 Booking.com reviews."
-		}
-	},
-	"regina-canada": {
-		"Budget": {
-			"id": 373473,
-			"name": "Wingate by Wyndham Regina",
-			"area": "Downtown Regina",
-			"address": "1700 Broad Street",
-			"lat": 50.451628,
-			"lng": -104.606648,
-			"url": "https://www.booking.com/hotel/ca/wingate-by-wyndham-regina.html",
-			"score": 7.7,
-			"count": 545,
-			"stars": 3,
-			"total": 188.11,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Regina, rated 7.7 from 545 Booking.com reviews."
-		}
-	},
-	"santa-fe-united-states": {
-		"Budget": {
-			"id": 277420,
-			"name": "El Sendero Inn, an Ascend Collection Hotel",
-			"area": "Santa Fe centre",
-			"address": "311 Old Santa Fe Trail",
-			"lat": 35.68507,
-			"lng": -105.936952,
-			"url": "https://www.booking.com/hotel/us/garrett-s-desert-inn.html",
-			"score": 8.4,
-			"count": 1554,
-			"stars": 4,
-			"total": 370.05,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Santa Fe centre, rated 8.4 from 1,554 Booking.com reviews."
-		}
-	},
-	"savannah-unitedstates": {
-		"Budget": {
-			"id": 250149,
-			"name": "Springhill Suites by Marriott Savannah Downtown Historic District",
-			"area": "Historic Savannah",
-			"address": "150 Montgomery Street",
-			"lat": 32.078114,
-			"lng": -81.096523,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-savannah-downtown-historic-district.html",
-			"score": 8.6,
-			"count": 1081,
-			"stars": 3,
-			"total": 342.22,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Historic Savannah, rated 8.6 from 1,081 Booking.com reviews."
-		}
-	},
-	"shimla-india": {
-		"Luxury": {
-			"id": 78785,
-			"name": "The Oberoi Cecil",
-			"area": "Shimla",
-			"address": "Chaura Maidan",
-			"lat": 31.103213,
-			"lng": 77.154611,
-			"url": "https://www.booking.com/hotel/in/the-oberoi-cecil.html",
-			"score": 9.5,
-			"count": 256,
-			"stars": 5,
-			"total": 543.39,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Shimla, rated 9.5 from 256 Booking.com reviews."
-		}
-	},
-	"trabzon-turkiye": {
-		"Budget": {
-			"id": 3588192,
-			"name": "Life Point Hotel",
-			"area": "Trabzon City Center",
-			"address": "Kemerkaya Mahallesi Halkevi Caddesi No:27",
-			"lat": 41.007035,
-			"lng": 39.727777,
-			"url": "https://www.booking.com/hotel/tr/life-point-trabzon-ili1.html",
-			"score": 8.3,
-			"count": 372,
-			"stars": 3,
-			"total": 188.1,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trabzon City Center, rated 8.3 from 372 Booking.com reviews."
-		}
-	},
-	"windsor-unitedkingdom": {
-		"Luxury": {
-			"id": 200685,
-			"name": "Sir Christopher Wren Hotel",
-			"area": "Windsor City Centre",
-			"address": "Thames Street",
-			"lat": 51.485328,
-			"lng": -0.607974,
-			"url": "https://www.booking.com/hotel/gb/scw.html",
-			"score": 8.4,
-			"count": 1828,
-			"stars": 4,
-			"total": 481.93,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Windsor City Centre rated 8.4/10 from 1,828 Booking.com reviews."
-		}
-	},
-	"austin-unitedstates": {
-		"Budget": {
-			"id": 9717923,
-			"name": "Fairfield Inn & Suites Austin Downtown",
-			"area": "Rainey Street, Downtown Austin",
-			"address": "76 East Avenue",
-			"lat": 30.25888,
-			"lng": -97.737936,
-			"url": "https://www.booking.com/hotel/us/fairfield-by-marriott-inn-suites-austin-downtown.html",
-			"score": 8.9,
-			"count": 67,
-			"stars": 3,
-			"total": 603.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Rainey Street, Downtown Austin, rated 8.9 from 67 Booking.com reviews."
-		}
-	},
-	"biloxi-united-states": {
-		"Budget": {
-			"id": 275860,
-			"name": "Best Western Oak Manor",
-			"area": "Biloxi",
-			"address": "886 Beach Boulevard",
-			"lat": 30.394736,
-			"lng": -88.891606,
-			"url": "https://www.booking.com/hotel/us/best-western-plus-oak-manor.html",
-			"score": 7.9,
-			"count": 741,
-			"stars": 3,
-			"total": 167.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Biloxi, rated 7.9 from 741 Booking.com reviews."
-		}
-	},
-	"charlotte-united-states": {
-		"Budget": {
-			"id": 42235,
-			"name": "Hampton Inn Charlotte Uptown",
-			"area": "Uptown Charlotte",
-			"address": "530 E. Martin Luther King Jr. Blvd",
-			"lat": 35.22018,
-			"lng": -80.842228,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-charlotte-uptown.html",
-			"score": 8.4,
-			"count": 452,
-			"stars": 3,
-			"total": 296.22,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Uptown Charlotte, rated 8.4 from 452 Booking.com reviews."
-		}
-	},
-	"corpus-christi-united-states": {
-		"Budget": {
-			"id": 58959,
-			"name": "Best Western Corpus Christi",
-			"area": "Downtown Corpus Christi",
-			"address": "300 North Shoreline Boulevard",
-			"lat": 27.794105,
-			"lng": -97.392618,
-			"url": "https://www.booking.com/hotel/us/b-w-marina-grand-corpus-christi-texas.html",
-			"score": 8.2,
-			"count": 548,
-			"stars": 3,
-			"total": 222.09,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Corpus Christi, rated 8.2 from 548 Booking.com reviews."
-		}
-	},
-	"dubai": {
-		"Best Value": {
-			"id": 73581,
-			"name": "Rose Rayhaan by Rotana - Dubai",
-			"area": "Trade Centre, Dubai",
-			"address": "Sheikh Zayed Road",
-			"lat": 25.211921,
-			"lng": 55.276412,
-			"url": "https://www.booking.com/hotel/ae/rose-rotana-dubai.html",
-			"score": 8.3,
-			"count": 4794,
-			"stars": 4,
-			"total": 283.74,
-			"checked": "27 Oct 2026",
-			"reason": "Central Trade Centre, Dubai hotel rated 8.3 from 4,794 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"florianopolis-brazil": {
-		"Budget": {
-			"id": 718144,
-			"name": "Ibis Florianopolis",
-			"area": "Florianópolis City Centre",
-			"address": "Avenida Rio Branco 37",
-			"lat": -27.592466,
-			"lng": -48.558131,
-			"url": "https://www.booking.com/hotel/br/ibis-florianopolis.html",
-			"score": 8.7,
-			"count": 2664,
-			"stars": 3,
-			"total": 204.01,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Florianópolis City Centre, rated 8.7 from 2,664 Booking.com reviews."
-		}
-	},
-	"houston-united-states": {
-		"Best Value": {
-			"id": 4989542,
-			"name": "Cambria Hotel Houston Downtown Convention Center",
-			"area": "Downtown Houston",
-			"address": "1314 Texas Avenue",
-			"lat": 29.75803,
-			"lng": -95.359582,
-			"url": "https://www.booking.com/hotel/us/cambria-houston-downtown-convention-center.html",
-			"score": 8.4,
-			"count": 1846,
-			"stars": 4,
-			"total": 305.47,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Houston hotel rated 8.4 from 1,846 Booking.com reviews: good value close to the sights."
-		},
-		"Luxury": {
-			"id": 184636,
-			"name": "Four Seasons Hotel Houston",
-			"area": "Downtown Houston",
-			"address": "1300 Lamar Street",
-			"lat": 29.754184,
-			"lng": -95.362595,
-			"url": "https://www.booking.com/hotel/us/four-seasons-houston.html",
-			"score": 9.0,
-			"count": 60,
-			"stars": 5,
-			"total": 1567.19,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Houston, rated 9 from 60 Booking.com reviews."
-		}
-	},
-	"kandy-srilanka": {
-		"Best Value": {
-			"id": 9584646,
-			"name": "Lake Avenue Hotel Kandy",
-			"area": "Kandy City Centre",
-			"address": "No 14 Anagarika Dharmapala Mawatha",
-			"lat": 7.291025,
-			"lng": 80.644411,
-			"url": "https://www.booking.com/hotel/lk/lake-avenue.html",
-			"score": 8.6,
-			"count": 760,
-			"stars": 4,
-			"total": 175.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Kandy City Centre hotel rated 8.6 from 760 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"kingston-canada": {
-		"Luxury": {
-			"id": 275202,
-			"name": "Kingston Marriott Hotel",
-			"area": "Downtown Kingston",
-			"address": "285 King Street East",
-			"lat": 44.229353,
-			"lng": -76.481594,
-			"url": "https://www.booking.com/hotel/ca/four-points-by-sheraton-kingston.html",
-			"score": 8.5,
-			"count": 494,
-			"stars": 4,
-			"total": 286.26,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Kingston rated 8.5/10 from 494 Booking.com reviews."
-		}
-	},
-	"larnaca-cyprus": {
-		"Luxury": {
-			"id": 3540491,
-			"name": "Radisson Blu Hotel, Larnaca",
-			"area": "Larnaca",
-			"address": "2, Atlantidon street",
-			"lat": 34.931383,
-			"lng": 33.637433,
-			"url": "https://www.booking.com/hotel/cy/radisson-blu-larnaca.html",
-			"score": 8.5,
-			"count": 1552,
-			"stars": 5,
-			"total": 474.36,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Larnaca, rated 8.5 from 1,552 Booking.com reviews."
-		}
-	},
-	"lovina-indonesia": {
-		"Luxury": {
-			"id": 403404,
-			"name": "The Lovina",
-			"area": "Kalibukbuk, Lovina",
-			"address": "Jl. Mas Lovina, Kalibukbuk",
-			"lat": -8.154251,
-			"lng": 115.030959,
-			"url": "https://www.booking.com/hotel/id/lovina-beach-resort.html",
-			"score": 9.0,
-			"count": 378,
-			"stars": 5,
-			"total": 177.41,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Kalibukbuk, Lovina, rated 9 from 378 Booking.com reviews."
-		}
-	},
-	"lefkada-greece": {
-		"Luxury": {
-			"id": 242589,
-			"name": "Hotel Lefkas",
-			"area": "Lefkada Town",
-			"address": "Filippa Panagou 2",
-			"lat": 38.834975,
-			"lng": 20.710264,
-			"url": "https://www.booking.com/hotel/gr/lefkas.html",
-			"score": 8.0,
-			"count": 968,
-			"stars": 3,
-			"total": 103.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Lefkada Town rated 8/10 from 968 Booking.com reviews."
-		}
-	},
-	"manila-philippines": {
-		"Luxury": {
-			"id": 778247,
-			"name": "The Manila Hotel",
-			"area": "Ermita, Manila",
-			"address": "One Rizal Park",
-			"lat": 14.58363,
-			"lng": 120.973865,
-			"url": "https://www.booking.com/hotel/ph/the-manila-hotel.html",
-			"score": 8.8,
-			"count": 807,
-			"stars": 5,
-			"total": 265.82,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Ermita, Manila, rated 8.8 from 807 Booking.com reviews."
-		}
-	},
-	"roses-spain": {
-		"Luxury": {
-			"id": 94221,
-			"name": "Hotel Maritim 4 Superior",
-			"area": "Santa Margarida, Roses",
-			"address": "Jacinto Benavente 2-10",
-			"lat": 42.264821,
-			"lng": 3.161512,
-			"url": "https://www.booking.com/hotel/es/maritim.html",
-			"score": 8.5,
-			"count": 3516,
-			"stars": 4,
-			"total": 249.42,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Santa Margarida, Roses rated 8.5/10 from 3,516 Booking.com reviews."
-		}
-	},
-	"san-diego-unitedstates": {
-		"Best Value": {
-			"id": 263697,
-			"name": "Courtyard by Marriott San Diego Downtown",
-			"area": "Downtown San Diego",
-			"address": "530 Broadway",
-			"lat": 32.715951,
-			"lng": -117.159536,
-			"url": "https://www.booking.com/hotel/us/courtyard-san-diego-downtown.html",
-			"score": 8.3,
-			"count": 652,
-			"stars": 4,
-			"total": 390.23,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown San Diego hotel rated 8.3 from 652 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"darlington-united-kingdom": { "Luxury": {
+		"id": 115510,
+		"name": "Bannatyne Hotel Darlington",
+		"area": "Darlington",
+		"address": "Southend Avenue",
+		"lat": 54.522252,
+		"lng": -1.560893,
+		"url": "https://www.booking.com/hotel/gb/thenewgrangehotel.html",
+		"score": 8.1,
+		"count": 1751,
+		"stars": 4,
+		"total": 342.58,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darlington rated 8.1/10 from 1,751 Booking.com reviews."
+	} },
+	"kielce-poland": { "Luxury": {
+		"id": 591528,
+		"name": "Hotel Willa Hueta",
+		"area": "Kielce centre",
+		"address": "Ul. Juliusza Słowackiego 25",
+		"lat": 50.863782,
+		"lng": 20.631243,
+		"url": "https://www.booking.com/hotel/pl/willa-hueta.html",
+		"score": 8.8,
+		"count": 795,
+		"stars": 4,
+		"total": 158.98,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Kielce centre rated 8.8/10 from 795 Booking.com reviews."
+	} },
+	"omaha-united-states": { "Budget": {
+		"id": 10384055,
+		"name": "Moxy Omaha Downtown",
+		"area": "Downtown Omaha",
+		"address": "409 South 12th Street",
+		"lat": 41.25623,
+		"lng": -95.9316,
+		"url": "https://www.booking.com/hotel/us/moxy-omaha-downtown.html",
+		"score": 8.3,
+		"count": 296,
+		"stars": 3,
+		"total": 250.76,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Omaha, rated 8.3 from 296 Booking.com reviews."
+	} },
+	"santa-fe-united-states": { "Budget": {
+		"id": 277420,
+		"name": "El Sendero Inn, an Ascend Collection Hotel",
+		"area": "Santa Fe centre",
+		"address": "311 Old Santa Fe Trail",
+		"lat": 35.68507,
+		"lng": -105.936952,
+		"url": "https://www.booking.com/hotel/us/garrett-s-desert-inn.html",
+		"score": 8.4,
+		"count": 1554,
+		"stars": 4,
+		"total": 370.05,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Santa Fe centre, rated 8.4 from 1,554 Booking.com reviews."
+	} },
+	"savannah-unitedstates": { "Budget": {
+		"id": 250149,
+		"name": "Springhill Suites by Marriott Savannah Downtown Historic District",
+		"area": "Historic Savannah",
+		"address": "150 Montgomery Street",
+		"lat": 32.078114,
+		"lng": -81.096523,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-savannah-downtown-historic-district.html",
+		"score": 8.6,
+		"count": 1081,
+		"stars": 3,
+		"total": 342.22,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Historic Savannah, rated 8.6 from 1,081 Booking.com reviews."
+	} },
+	"shimla-india": { "Luxury": {
+		"id": 78785,
+		"name": "The Oberoi Cecil",
+		"area": "Shimla",
+		"address": "Chaura Maidan",
+		"lat": 31.103213,
+		"lng": 77.154611,
+		"url": "https://www.booking.com/hotel/in/the-oberoi-cecil.html",
+		"score": 9.5,
+		"count": 256,
+		"stars": 5,
+		"total": 543.39,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Shimla, rated 9.5 from 256 Booking.com reviews."
+	} },
+	"biloxi-united-states": { "Budget": {
+		"id": 275860,
+		"name": "Best Western Oak Manor",
+		"area": "Biloxi",
+		"address": "886 Beach Boulevard",
+		"lat": 30.394736,
+		"lng": -88.891606,
+		"url": "https://www.booking.com/hotel/us/best-western-plus-oak-manor.html",
+		"score": 7.9,
+		"count": 741,
+		"stars": 3,
+		"total": 167.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Biloxi, rated 7.9 from 741 Booking.com reviews."
+	} },
+	"charlotte-united-states": { "Budget": {
+		"id": 42235,
+		"name": "Hampton Inn Charlotte Uptown",
+		"area": "Uptown Charlotte",
+		"address": "530 E. Martin Luther King Jr. Blvd",
+		"lat": 35.22018,
+		"lng": -80.842228,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-charlotte-uptown.html",
+		"score": 8.4,
+		"count": 452,
+		"stars": 3,
+		"total": 296.22,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Uptown Charlotte, rated 8.4 from 452 Booking.com reviews."
+	} },
+	"corpus-christi-united-states": { "Budget": {
+		"id": 58959,
+		"name": "Best Western Corpus Christi",
+		"area": "Downtown Corpus Christi",
+		"address": "300 North Shoreline Boulevard",
+		"lat": 27.794105,
+		"lng": -97.392618,
+		"url": "https://www.booking.com/hotel/us/b-w-marina-grand-corpus-christi-texas.html",
+		"score": 8.2,
+		"count": 548,
+		"stars": 3,
+		"total": 222.09,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Corpus Christi, rated 8.2 from 548 Booking.com reviews."
+	} },
+	"kandy-srilanka": { "Best Value": {
+		"id": 9584646,
+		"name": "Lake Avenue Hotel Kandy",
+		"area": "Kandy City Centre",
+		"address": "No 14 Anagarika Dharmapala Mawatha",
+		"lat": 7.291025,
+		"lng": 80.644411,
+		"url": "https://www.booking.com/hotel/lk/lake-avenue.html",
+		"score": 8.6,
+		"count": 760,
+		"stars": 4,
+		"total": 175.12,
+		"checked": "27 Oct 2026",
+		"reason": "Central Kandy City Centre hotel rated 8.6 from 760 Booking.com reviews: good value close to the sights."
+	} },
+	"kingston-canada": { "Luxury": {
+		"id": 275202,
+		"name": "Kingston Marriott Hotel",
+		"area": "Downtown Kingston",
+		"address": "285 King Street East",
+		"lat": 44.229353,
+		"lng": -76.481594,
+		"url": "https://www.booking.com/hotel/ca/four-points-by-sheraton-kingston.html",
+		"score": 8.5,
+		"count": 494,
+		"stars": 4,
+		"total": 286.26,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Kingston rated 8.5/10 from 494 Booking.com reviews."
+	} },
+	"larnaca-cyprus": { "Luxury": {
+		"id": 3540491,
+		"name": "Radisson Blu Hotel, Larnaca",
+		"area": "Larnaca",
+		"address": "2, Atlantidon street",
+		"lat": 34.931383,
+		"lng": 33.637433,
+		"url": "https://www.booking.com/hotel/cy/radisson-blu-larnaca.html",
+		"score": 8.5,
+		"count": 1552,
+		"stars": 5,
+		"total": 474.36,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Larnaca, rated 8.5 from 1,552 Booking.com reviews."
+	} },
+	"lovina-indonesia": { "Luxury": {
+		"id": 403404,
+		"name": "The Lovina",
+		"area": "Kalibukbuk, Lovina",
+		"address": "Jl. Mas Lovina, Kalibukbuk",
+		"lat": -8.154251,
+		"lng": 115.030959,
+		"url": "https://www.booking.com/hotel/id/lovina-beach-resort.html",
+		"score": 9,
+		"count": 378,
+		"stars": 5,
+		"total": 177.41,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Kalibukbuk, Lovina, rated 9 from 378 Booking.com reviews."
+	} },
+	"lefkada-greece": { "Luxury": {
+		"id": 242589,
+		"name": "Hotel Lefkas",
+		"area": "Lefkada Town",
+		"address": "Filippa Panagou 2",
+		"lat": 38.834975,
+		"lng": 20.710264,
+		"url": "https://www.booking.com/hotel/gr/lefkas.html",
+		"score": 8,
+		"count": 968,
+		"stars": 3,
+		"total": 103,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Lefkada Town rated 8/10 from 968 Booking.com reviews."
+	} },
+	"manila-philippines": { "Luxury": {
+		"id": 778247,
+		"name": "The Manila Hotel",
+		"area": "Ermita, Manila",
+		"address": "One Rizal Park",
+		"lat": 14.58363,
+		"lng": 120.973865,
+		"url": "https://www.booking.com/hotel/ph/the-manila-hotel.html",
+		"score": 8.8,
+		"count": 807,
+		"stars": 5,
+		"total": 265.82,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Ermita, Manila, rated 8.8 from 807 Booking.com reviews."
+	} },
+	"roses-spain": { "Luxury": {
+		"id": 94221,
+		"name": "Hotel Maritim 4 Superior",
+		"area": "Santa Margarida, Roses",
+		"address": "Jacinto Benavente 2-10",
+		"lat": 42.264821,
+		"lng": 3.161512,
+		"url": "https://www.booking.com/hotel/es/maritim.html",
+		"score": 8.5,
+		"count": 3516,
+		"stars": 4,
+		"total": 249.42,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Santa Margarida, Roses rated 8.5/10 from 3,516 Booking.com reviews."
+	} },
 	"seoul-southkorea": {
 		"Budget": {
 			"id": 99177,
@@ -16572,7 +18008,7 @@ var overrides_central_2710c = {
 			"lat": 37.565212,
 			"lng": 126.980731,
 			"url": "https://www.booking.com/hotel/kr/lotte-seoul-seoul.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 2069,
 			"stars": 5,
 			"total": 1071.72,
@@ -16580,263 +18016,3068 @@ var overrides_central_2710c = {
 			"reason": "A 5-star hotel in Jung-gu, Seoul, rated 9 from 2,069 Booking.com reviews."
 		}
 	},
-	"tampico-mexico": {
-		"Luxury": {
-			"id": 317111,
-			"name": "HS HOTSSON Hotel Tampico",
-			"area": "Tampico",
-			"address": "Avenida Hidalgo 2000, Colonia Smith",
-			"lat": 22.240661,
-			"lng": -97.870288,
-			"url": "https://www.booking.com/hotel/mx/camino-real-tampico.html",
-			"score": 8.6,
-			"count": 270,
-			"stars": 5,
-			"total": 378.6,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Tampico, rated 8.6 from 270 Booking.com reviews."
-		}
-	},
-	"yantai-china": {
-		"Budget": {
-			"id": 15245951,
-			"name": "No 53 Chaoyang Street Hotel",
-			"area": "Zhifu, Yantai",
-			"address": "No. 53 Chaoyang Street, Zhifu District",
-			"lat": 37.544431,
-			"lng": 121.402142,
-			"url": "https://www.booking.com/hotel/cn/zhao-yang-wen-bao-yi-zhu-jiu-dian.html",
-			"score": 9.4,
-			"count": 6,
-			"stars": 4,
-			"total": 88.15,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Zhifu, Yantai, rated 9.4 from 6 Booking.com reviews."
-		}
-	},
-	"bikaner-india": {
-		"Budget": {
-			"id": 12588798,
-			"name": "Partap Mahal",
-			"area": "Bikaner old city",
-			"address": "Near head post office, behind Junagarh fort",
-			"lat": 28.021809,
-			"lng": 73.315768,
-			"url": "https://www.booking.com/hotel/in/partap-mahal.html",
-			"score": 8.9,
-			"count": 39,
-			"stars": 3,
-			"total": 124.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bikaner old city, rated 8.9 from 39 Booking.com reviews."
-		}
-	},
-	"plymouth-united-states": {
-		"Luxury": {
-			"id": 12044449,
-			"name": "Cambria Hotel & Suites Plymouth",
-			"area": "Plymouth",
-			"address": "26 Plaza Way",
-			"lat": 41.95,
-			"lng": -70.71896,
-			"url": "https://www.booking.com/hotel/us/cambria-suites-plymouth.html",
-			"score": 8.2,
-			"count": 119,
-			"stars": 4,
-			"total": 250.02,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Plymouth rated 8.2/10 from 119 Booking.com reviews."
-		}
-	},
-	"bytom-poland": {
-		"Best Value": {
-			"id": 483420,
-			"name": "B&B HOTEL Bytom",
-			"area": "Bytom",
-			"address": "ul. Strzelców Bytomskich 87",
-			"lat": 50.372317,
-			"lng": 18.89403,
-			"url": "https://www.booking.com/hotel/pl/prime.html",
-			"score": 8.6,
-			"count": 1183,
-			"stars": 3,
-			"total": 99.43,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bytom hotel rated 8.6 from 1,183 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"mulhouse-france": {
-		"Budget": {
-			"id": 51623,
-			"name": "Best Western Mulhouse Salvator Centre",
-			"area": "Mulhouse centre",
-			"address": "29 Passage Central",
-			"lat": 47.74771,
-			"lng": 7.34183,
-			"url": "https://www.booking.com/hotel/fr/interhotelsalvator.html",
-			"score": 8.1,
-			"count": 1461,
-			"stars": 3,
-			"total": 167.64,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Mulhouse centre, rated 8.1 from 1,461 Booking.com reviews."
-		}
-	},
-	"watford-unitedkingdom": {
-		"Best Value": {
-			"id": 221968,
-			"name": "Best Western White House Hotel",
-			"area": "Watford centre",
-			"address": "27-31 Upton Road",
-			"lat": 51.656378,
-			"lng": -0.401913,
-			"url": "https://www.booking.com/hotel/gb/whitehousehotel.html",
-			"score": 7.1,
-			"count": 3296,
-			"stars": 3,
-			"total": 284.19,
-			"checked": "27 Oct 2026",
-			"reason": "Central Watford centre hotel rated 7.1 from 3,296 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"basingstoke-united-kingdom": {
-		"Best Value": {
-			"id": 34474,
-			"name": "Holiday Inn Basingstoke by IHG",
-			"area": "Basingstoke",
-			"address": "Grove Road",
-			"lat": 51.253808,
-			"lng": -1.080143,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn.html",
-			"score": 7.4,
-			"count": 923,
-			"stars": 4,
-			"total": 379.72,
-			"checked": "27 Oct 2026",
-			"reason": "Central Basingstoke hotel rated 7.4 from 923 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"chemnitz-germany": {
-		"Luxury": {
-			"id": 63486,
-			"name": "co56 Chemnitz",
-			"area": "Chemnitz",
-			"address": "Salzstr. 56",
-			"lat": 50.847107,
-			"lng": 12.916336,
-			"url": "https://www.booking.com/hotel/de/co56-hotel-chemnitz.html",
-			"score": 8.3,
-			"count": 1986,
-			"stars": 4,
-			"total": 238.35,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chemnitz rated 8.3/10 from 1,986 Booking.com reviews."
-		}
-	},
-	"ipswich-united-kingdom": {
-		"Best Value": {
-			"id": 35725,
-			"name": "Holiday Inn Ipswich by IHG",
-			"area": "Ipswich",
-			"address": "London Road",
-			"lat": 52.046275,
-			"lng": 1.105328,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn-ipswich.html",
-			"score": 8.0,
-			"count": 1404,
-			"stars": 4,
-			"total": 363.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Ipswich hotel rated 8 from 1,404 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"darmstadt-germany": {
-		"Luxury": {
-			"id": 405351,
-			"name": "IntercityHotel Darmstadt",
-			"area": "Darmstadt centre",
-			"address": "Poststr. 12",
-			"lat": 49.873399,
-			"lng": 8.631574,
-			"url": "https://www.booking.com/hotel/de/intercityhotel-darmstadt.html",
-			"score": 8.0,
-			"count": 1222,
-			"stars": 4,
-			"total": 226.44,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darmstadt centre rated 8/10 from 1,222 Booking.com reviews."
-		}
-	},
-	"tarifa-spain": {
-		"Best Value": {
-			"id": 1472442,
-			"name": "Aristoy - by Grupo Tribu",
-			"area": "Tarifa old town",
-			"address": "Calderón de la Barca, 3",
-			"lat": 36.013359,
-			"lng": -5.60347,
-			"url": "https://www.booking.com/hotel/es/aristoy.html",
-			"score": 9.0,
-			"count": 807,
-			"stars": 2,
-			"total": 158.02,
-			"checked": "27 Oct 2026",
-			"reason": "Central Tarifa old town hotel rated 9 from 807 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"chesterfield-united-kingdom": {
-		"Luxury": {
-			"id": 13929039,
-			"name": "SPIRE VIEW at THE SPREAD EAGLE",
-			"area": "Chesterfield town centre",
-			"address": "7 Beetwell Street",
-			"lat": 53.234065,
-			"lng": -1.42701,
-			"url": "https://www.booking.com/hotel/gb/spire-view-at-the-spread-eagle.html",
-			"score": 8.7,
-			"count": 550,
-			"stars": 4,
-			"total": 265.45,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chesterfield town centre rated 8.7/10 from 550 Booking.com reviews."
-		}
-	},
-	"rovaniemi-finland": {
-		"Luxury": {
-			"id": 37066,
-			"name": "Santa's Hotel Santa Claus",
-			"area": "Rovaniemi centre",
-			"address": "Korkalonkatu 29",
-			"lat": 66.502812,
-			"lng": 25.732335,
-			"url": "https://www.booking.com/hotel/fi/santas-hotel-santa-claus.html",
-			"score": 8.7,
-			"count": 743,
-			"stars": 4,
-			"total": 424.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Rovaniemi centre rated 8.7/10 from 743 Booking.com reviews."
-		}
-	},
-	"vancouver-united-states": {
-		"Budget": {
-			"id": 7715810,
-			"name": "Hotel Indigo Vancouver Waterfront-Portland by IHG",
-			"area": "Vancouver Waterfront",
-			"address": "550 Waterfront Way",
-			"lat": 45.625843,
-			"lng": -122.681558,
-			"url": "https://www.booking.com/hotel/us/indigo-vancouver-dwtn-portland-area-an-ihg.html",
-			"score": 9.0,
-			"count": 104,
-			"stars": 3,
-			"total": 443.68,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews."
-		}
-	}
+	"tampico-mexico": { "Luxury": {
+		"id": 317111,
+		"name": "HS HOTSSON Hotel Tampico",
+		"area": "Tampico",
+		"address": "Avenida Hidalgo 2000, Colonia Smith",
+		"lat": 22.240661,
+		"lng": -97.870288,
+		"url": "https://www.booking.com/hotel/mx/camino-real-tampico.html",
+		"score": 8.6,
+		"count": 270,
+		"stars": 5,
+		"total": 378.6,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Tampico, rated 8.6 from 270 Booking.com reviews."
+	} },
+	"yantai-china": { "Budget": {
+		"id": 15245951,
+		"name": "No 53 Chaoyang Street Hotel",
+		"area": "Zhifu, Yantai",
+		"address": "No. 53 Chaoyang Street, Zhifu District",
+		"lat": 37.544431,
+		"lng": 121.402142,
+		"url": "https://www.booking.com/hotel/cn/zhao-yang-wen-bao-yi-zhu-jiu-dian.html",
+		"score": 9.4,
+		"count": 6,
+		"stars": 4,
+		"total": 88.15,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Zhifu, Yantai, rated 9.4 from 6 Booking.com reviews."
+	} },
+	"bikaner-india": { "Budget": {
+		"id": 12588798,
+		"name": "Partap Mahal",
+		"area": "Bikaner old city",
+		"address": "Near head post office, behind Junagarh fort",
+		"lat": 28.021809,
+		"lng": 73.315768,
+		"url": "https://www.booking.com/hotel/in/partap-mahal.html",
+		"score": 8.9,
+		"count": 39,
+		"stars": 3,
+		"total": 124.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bikaner old city, rated 8.9 from 39 Booking.com reviews."
+	} },
+	"plymouth-united-states": { "Luxury": {
+		"id": 12044449,
+		"name": "Cambria Hotel & Suites Plymouth",
+		"area": "Plymouth",
+		"address": "26 Plaza Way",
+		"lat": 41.95,
+		"lng": -70.71896,
+		"url": "https://www.booking.com/hotel/us/cambria-suites-plymouth.html",
+		"score": 8.2,
+		"count": 119,
+		"stars": 4,
+		"total": 250.02,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Plymouth rated 8.2/10 from 119 Booking.com reviews."
+	} },
+	"bytom-poland": { "Best Value": {
+		"id": 483420,
+		"name": "B&B HOTEL Bytom",
+		"area": "Bytom",
+		"address": "ul. Strzelców Bytomskich 87",
+		"lat": 50.372317,
+		"lng": 18.89403,
+		"url": "https://www.booking.com/hotel/pl/prime.html",
+		"score": 8.6,
+		"count": 1183,
+		"stars": 3,
+		"total": 99.43,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bytom hotel rated 8.6 from 1,183 Booking.com reviews: good value close to the sights."
+	} },
+	"mulhouse-france": { "Budget": {
+		"id": 51623,
+		"name": "Best Western Mulhouse Salvator Centre",
+		"area": "Mulhouse centre",
+		"address": "29 Passage Central",
+		"lat": 47.74771,
+		"lng": 7.34183,
+		"url": "https://www.booking.com/hotel/fr/interhotelsalvator.html",
+		"score": 8.1,
+		"count": 1461,
+		"stars": 3,
+		"total": 167.64,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Mulhouse centre, rated 8.1 from 1,461 Booking.com reviews."
+	} },
+	"watford-unitedkingdom": { "Best Value": {
+		"id": 221968,
+		"name": "Best Western White House Hotel",
+		"area": "Watford centre",
+		"address": "27-31 Upton Road",
+		"lat": 51.656378,
+		"lng": -.401913,
+		"url": "https://www.booking.com/hotel/gb/whitehousehotel.html",
+		"score": 7.1,
+		"count": 3296,
+		"stars": 3,
+		"total": 284.19,
+		"checked": "27 Oct 2026",
+		"reason": "Central Watford centre hotel rated 7.1 from 3,296 Booking.com reviews: good value close to the sights."
+	} },
+	"chemnitz-germany": { "Luxury": {
+		"id": 63486,
+		"name": "co56 Chemnitz",
+		"area": "Chemnitz",
+		"address": "Salzstr. 56",
+		"lat": 50.847107,
+		"lng": 12.916336,
+		"url": "https://www.booking.com/hotel/de/co56-hotel-chemnitz.html",
+		"score": 8.3,
+		"count": 1986,
+		"stars": 4,
+		"total": 238.35,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chemnitz rated 8.3/10 from 1,986 Booking.com reviews."
+	} },
+	"ipswich-united-kingdom": { "Best Value": {
+		"id": 35725,
+		"name": "Holiday Inn Ipswich by IHG",
+		"area": "Ipswich",
+		"address": "London Road",
+		"lat": 52.046275,
+		"lng": 1.105328,
+		"url": "https://www.booking.com/hotel/gb/holiday-inn-ipswich.html",
+		"score": 8,
+		"count": 1404,
+		"stars": 4,
+		"total": 363,
+		"checked": "27 Oct 2026",
+		"reason": "Central Ipswich hotel rated 8 from 1,404 Booking.com reviews: good value close to the sights."
+	} },
+	"darmstadt-germany": { "Luxury": {
+		"id": 405351,
+		"name": "IntercityHotel Darmstadt",
+		"area": "Darmstadt centre",
+		"address": "Poststr. 12",
+		"lat": 49.873399,
+		"lng": 8.631574,
+		"url": "https://www.booking.com/hotel/de/intercityhotel-darmstadt.html",
+		"score": 8,
+		"count": 1222,
+		"stars": 4,
+		"total": 226.44,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darmstadt centre rated 8/10 from 1,222 Booking.com reviews."
+	} },
+	"tarifa-spain": { "Best Value": {
+		"id": 1472442,
+		"name": "Aristoy - by Grupo Tribu",
+		"area": "Tarifa old town",
+		"address": "Calderón de la Barca, 3",
+		"lat": 36.013359,
+		"lng": -5.60347,
+		"url": "https://www.booking.com/hotel/es/aristoy.html",
+		"score": 9,
+		"count": 807,
+		"stars": 2,
+		"total": 158.02,
+		"checked": "27 Oct 2026",
+		"reason": "Central Tarifa old town hotel rated 9 from 807 Booking.com reviews: good value close to the sights."
+	} },
+	"rovaniemi-finland": { "Luxury": {
+		"id": 37066,
+		"name": "Santa's Hotel Santa Claus",
+		"area": "Rovaniemi centre",
+		"address": "Korkalonkatu 29",
+		"lat": 66.502812,
+		"lng": 25.732335,
+		"url": "https://www.booking.com/hotel/fi/santas-hotel-santa-claus.html",
+		"score": 8.7,
+		"count": 743,
+		"stars": 4,
+		"total": 424,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Rovaniemi centre rated 8.7/10 from 743 Booking.com reviews."
+	} },
+	"vancouver-united-states": { "Budget": {
+		"id": 7715810,
+		"name": "Hotel Indigo Vancouver Waterfront-Portland by IHG",
+		"area": "Vancouver Waterfront",
+		"address": "550 Waterfront Way",
+		"lat": 45.625843,
+		"lng": -122.681558,
+		"url": "https://www.booking.com/hotel/us/indigo-vancouver-dwtn-portland-area-an-ihg.html",
+		"score": 9,
+		"count": 104,
+		"stars": 3,
+		"total": 443.68,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews."
+	} },
+	"frankfurt-germany": { "Luxury": {
+		"id": 66126,
+		"name": "Steigenberger Icon Frankfurter Hof",
+		"area": "City centre",
+		"address": "Am Kaiserplatz, 60311 Frankfurt/Main",
+		"lat": 50.110155,
+		"lng": 8.675766,
+		"url": "https://www.booking.com/hotel/de/steigenberger-frankfurter-hof.html",
+		"score": 8.6,
+		"count": 2656,
+		"stars": 5,
+		"total": 829,
+		"checked": "11 Nov 2026",
+		"reason": "Frankfurt's classic grand hotel on Kaiserplatz, an official 5-star in the very centre, rated 8.6/10 by 2,656 guests on Booking.com."
+	} }
 };
-for (const [cid, v] of Object.entries(overrides_central_2710c)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
+var booking_dest_default = {
+	"a-coruna": 900056174,
+	"a-coruna-spain": 900056174,
+	aachen: -1736607,
+	"aachen-germany": -1736607,
+	aalborg: -2739166,
+	"aalborg-denmark": -2739166,
+	aalst: -1952945,
+	"aalst-belgium": -1952945,
+	aarhus: -2739400,
+	"aarhus-denmark": -2739400,
+	"abano-terme": -109810,
+	"abano-terme-italy": -109810,
+	aberdeen: -2587757,
+	"aberdeen-unitedkingdom": -2587757,
+	abidjan: -2115275,
+	"abidjan-ivory-coast": -2115275,
+	"abu-dhabi": -782066,
+	"abu-dhabi-unitedarabemirates": -782066,
+	abuja: -1997013,
+	"abuja-nigeria": -1997013,
+	accra: -2067935,
+	"accra-ghana": -2067935,
+	adana: -732885,
+	"adana-turkiye": -732885,
+	"addis-ababa": -603097,
+	"addis-ababa-ethiopia": -603097,
+	adeje: -369166,
+	"adeje-spain": -369166,
+	adelaide: -1555188,
+	"adelaide-australia": -1555188,
+	agra: -2088244,
+	"agra-india": -2088244,
+	agrigento: -110017,
+	"agrigento-italy": -110017,
+	aguascalientes: -1649885,
+	"aguascalientes-mexico": -1649885,
+	ahmedabad: -2088270,
+	"ahmedabad-india": -2088270,
+	airdrie: -559949,
+	"airdrie-canada": -559949,
+	"aix-en-provence": -1406939,
+	"aix-en-provence-france": -1406939,
+	"aix-les-bains": -1406943,
+	"aix-les-bains-france": -1406943,
+	ajaccio: -1406959,
+	"ajaccio-france": -1406959,
+	ajman: -782102,
+	"ajman-united-arab-emirates": -782102,
+	akita: 169140,
+	"akita-japan": 169140,
+	akron: 20096766,
+	"akron-united-states": 20096766,
+	alajuela: -1105982,
+	"alajuela-costa-rica": -1105982,
+	alanya: -734728,
+	"alanya-turkiye": -734728,
+	alba: -110073,
+	"alba-italy": -110073,
+	albacete: -369589,
+	"albacete-spain": -369589,
+	albufeira: -2157420,
+	"albufeira-portugal": -2157420,
+	albuquerque: 20083006,
+	"albuquerque-united-states": 20083006,
+	"alcala-de-henares": -369777,
+	"alcala-de-henares-spain": -369777,
+	alcobendas: -369850,
+	"alcobendas-spain": -369850,
+	alessandria: -110146,
+	"alessandria-italy": -110146,
+	alesund: -250944,
+	"alesund-norway": -250944,
+	alexandria: 20135442,
+	"alexandria-united-states": 20135442,
+	algeciras: -370160,
+	"algeciras-spain": -370160,
+	alghero: -110164,
+	"alghero-italy": -110164,
+	alicante: -370210,
+	"alicante-spain": -370210,
+	alkmaar: -2140374,
+	"alkmaar-netherlands": -2140374,
+	almaty: -2334069,
+	"almaty-kazakhstan": -2334069,
+	almeria: -370374,
+	"almeria-spain": -370374,
+	almunecar: -370435,
+	"almunecar-spain": -370435,
+	alnwick: -2588151,
+	"alnwick-united-kingdom": -2588151,
+	alpharetta: 20024701,
+	"alpharetta-united-states": 20024701,
+	altea: -370520,
+	"altea-spain": -370520,
+	altoona: 20105430,
+	"altoona-united-states": 20105430,
+	amalfi: -110339,
+	"amalfi-italy": -110339,
+	amarante: -2158154,
+	"amarante-portugal": -2158154,
+	amarillo: 20126270,
+	"amarillo-united-states": 20126270,
+	amboise: -1407398,
+	"amboise-france": -1407398,
+	amersfoort: -2140452,
+	"amersfoort-netherlands": -2140452,
+	ames: 20039879,
+	"ames-united-states": 20039879,
+	amiens: -1407447,
+	"amiens-france": -1407447,
+	amman: -970362,
+	"amman-jordan": -970362,
+	amritsar: -2088794,
+	"amritsar-india": -2088794,
+	amstelveen: -2140475,
+	"amstelveen-the-netherlands": -2140475,
+	amsterdam: -2140479,
+	"amsterdam-netherlands": -2140479,
+	anaheim: 20011324,
+	"anaheim-united-states": 20011324,
+	ancona: -110393,
+	"ancona-italy": -110393,
+	"andorra-la-vella": -1394439,
+	"andorra-la-vella-andorra": -1394439,
+	angers: -1407646,
+	"angers-france": -1407646,
+	"angra-do-heroismo": -2158372,
+	"angra-do-heroismo-portugal": -2158372,
+	ankara: -735338,
+	"ankara-trkiye": -735338,
+	"ann-arbor": 20063809,
+	"ann-arbor-united-states": 20063809,
+	annapolis: 20053621,
+	"annapolis-united-states": 20053621,
+	annecy: -1407760,
+	"annecy-france": -1407760,
+	antalya: -735347,
+	"antalya-trkiye": -735347,
+	antequera: -370891,
+	"antequera-spain": -370891,
+	antibes: -1407848,
+	"antibes-france": -1407848,
+	"antigua-guatemala": -1131627,
+	"antigua-guatemala-guatemala": -1131627,
+	antwerp: -1953257,
+	"antwerp-belgium": -1953257,
+	aomori: -225562,
+	"aomori-japan": -225562,
+	apeldoorn: -2140567,
+	"apeldoorn-netherlands": -2140567,
+	apia: -1307163,
+	"apia-samoa": -1307163,
+	appleton: 20149290,
+	"appleton-united-states": 20149290,
+	aqaba: -970025,
+	"aqaba-jordan": -970025,
+	aranjuez: -371013,
+	"aranjuez-spain": -371013,
+	arcachon: -1408052,
+	"arcachon-france": -1408052,
+	arcadia: 20011368,
+	"arcadia-united-states": 20011368,
+	arequipa: -337471,
+	"arequipa-peru": -337471,
+	arezzo: -110636,
+	"arezzo-italy": -110636,
+	arica: -872566,
+	"arica-chile": -872566,
+	arles: -1408370,
+	"arles-france": -1408370,
+	arlington: 20126350,
+	"arlington-united-states": 20126350,
+	arnhem: -2140612,
+	"arnhem-netherlands": -2140612,
+	arras: -1408524,
+	"arras-france": -1408524,
+	arrecife: -371574,
+	"arrecife-spain": -371574,
+	arusha: -2561033,
+	"arusha-tanzania": -2561033,
+	ascona: -2551089,
+	"ascona-switzerland": -2551089,
+	asheville: 20090971,
+	"asheville-united-states": 20090971,
+	assisi: -110824,
+	"assisi-italy": -110824,
+	astana: -2334218,
+	"astana-kazakhstan": -2334218,
+	asti: -110834,
+	"asti-italy": -110834,
+	astorga: -371834,
+	"astorga-spain": -371834,
+	asuncion: -910015,
+	"asuncion-paraguay": -910015,
+	aswan: -291535,
+	"aswan-egypt": -291535,
+	athens: -814876,
+	"athens-greece": -814876,
+	atlanta: 20024809,
+	"atlanta-united-states": 20024809,
+	"atlantic-city": 20080494,
+	"atlantic-city-united-states": 20080494,
+	atlixco: -1651727,
+	"atlixco-mexico": -1651727,
+	atyrau: -2334555,
+	"atyrau-kazakhstan": -2334555,
+	"auburn-alabama": 20000152,
+	"auburn-alabama-united-states": 20000152,
+	auckland: -1506909,
+	"auckland-newzealand": -1506909,
+	augsburg: -1742412,
+	"augsburg-germany": -1742412,
+	augusta: 20024822,
+	"augusta-united-states": 20024822,
+	aurangabad: -2089356,
+	"aurangabad-india": -2089356,
+	aurora: 20017066,
+	"aurora-united-states": 20017066,
+	austin: 20126394,
+	"austin-unitedstates": 20126394,
+	aveiro: -2158957,
+	"aveiro-portugal": -2158957,
+	avignon: -1409631,
+	"avignon-france": -1409631,
+	avila: -371972,
+	"avila-spain": -371972,
+	aviles: -371974,
+	"aviles-spain": -371974,
+	ayr: -2588883,
+	"ayr-unitedkingdom": -2588883,
+	bacolod: -2409706,
+	"bacolod-philippines": -2409706,
+	"bad-hofgastein": -1974507,
+	"bad-hofgastein-austria": -1974507,
+	"bad-homburg-vor-der-hohe": -1743152,
+	"bad-homburg-vor-der-hohe-germany": -1743152,
+	"bad-ischl": -1974508,
+	"bad-ischl-austria": -1974508,
+	badajoz: -372124,
+	"badajoz-spain": -372124,
+	"baden-baden": -1743083,
+	"baden-baden-germany": -1743083,
+	baeza: -372141,
+	"baeza-spain": -372141,
+	baghdad: -3103581,
+	"baghdad-iraq": -3103581,
+	"bahia-blanca": -977594,
+	"bahia-blanca-argentina": -977594,
+	bakersfield: 20011460,
+	"bakersfield-united-states": 20011460,
+	baku: -2705195,
+	"baku-azerbaijan": -2705195,
+	bali: -2683839,
+	"bali-indonesia": -2683839,
+	"balneario-camboriu": -627380,
+	"balneario-camboriu-brazil": -627380,
+	baltimore: 20053799,
+	"baltimore-united-states": 20053799,
+	"bandar-seri-begawan": -1337176,
+	"bandar-seri-begawan-brunei": -1337176,
+	bandung: -2671576,
+	"bandung-indonesia": -2671576,
+	banff: -560592,
+	"banff-canada": -560592,
+	bangkok: -3414440,
+	"bangkok-thailand": -3414440,
+	"banja-luka": -74381,
+	"banja-luka-bosnia-and-herzegovina": -74381,
+	banyuwangi: -2671874,
+	"banyuwangi-indonesia": -2671874,
+	barcelona: -372490,
+	bari: -111255,
+	"bari-italy": -111255,
+	barnstaple: -2589310,
+	"barnstaple-unitedkingdom": -2589310,
+	barranquilla: -578007,
+	"barranquilla-colombia": -578007,
+	barueri: -628670,
+	"barueri-brazil": -628670,
+	basel: -2551183,
+	"basel-switzerland": -2551183,
+	basingstoke: -2589399,
+	"basingstoke-united-kingdom": -2589399,
+	bastia: -1410679,
+	"bastia-france": -1410679,
+	bath: -2589418,
+	"bath-unitedkingdom": -2589418,
+	"baton-rouge": 20048321,
+	"baton-rouge-united-states": 20048321,
+	battambang: -1023114,
+	"battambang-cambodia": -1023114,
+	batumi: 900049585,
+	"batumi-georgia": 900049585,
+	bauru: -628827,
+	"bauru-brazil": -628827,
+	bayeux: -1410836,
+	"bayeux-france": -1410836,
+	bayonne: -1410844,
+	"bayonne-france": -1410844,
+	bayreuth: -1744769,
+	"bayreuth-germany": -1744769,
+	beaune: -1411193,
+	"beaune-france": -1411193,
+	beaverton: 20104052,
+	"beaverton-united-states": 20104052,
+	beijing: -1898541,
+	"beijing-china": -1898541,
+	beirut: -801546,
+	"beirut-lebanon": -801546,
+	bekasi: -2672646,
+	"bekasi-indonesia": -2672646,
+	belem: -629039,
+	"belem-brazil": -629039,
+	belfast: -2589607,
+	"belfast-unitedkingdom": -2589607,
+	belgrade: -74897,
+	"belgrade-serbia": -74897,
+	bellevue: 20143074,
+	"bellevue-united-states": 20143074,
+	bellingham: 20143075,
+	"bellingham-united-states": 20143075,
+	"belo-horizonte": -629138,
+	"belo-horizonte-brazil": -629138,
+	benalmadena: -373144,
+	"benalmadena-spain": -373144,
+	bend: 20104057,
+	"bend-united-states": 20104057,
+	benevento: -111459,
+	"benevento-italy": -111459,
+	benicassim: -373221,
+	"benicassim-spain": -373221,
+	benidorm: -373226,
+	"benidorm-spain": -373226,
+	"bento-goncalves": -629235,
+	"bento-goncalves-brazil": -629235,
+	bentonville: 20007849,
+	"bentonville-united-states": 20007849,
+	beppu: -226266,
+	"beppu-japan": -226266,
+	bergamo: -111474,
+	"bergamo-italy": -111474,
+	bergen: -252873,
+	"bergen-norway": -252873,
+	berkeley: 20011602,
+	"berkeley-united-states": 20011602,
+	berlin: -1746443,
+	"berlin-germany": -1746443,
+	bern: -2551235,
+	"bern-switzerland": -2551235,
+	besancon: -1412198,
+	"besancon-france": -1412198,
+	bethesda: 20054014,
+	"bethesda-united-states": 20054014,
+	bethlehem: 20105898,
+	"bethlehem-united-states": 20105898,
+	beziers: -1412490,
+	"beziers-france": -1412490,
+	bhopal: -2091670,
+	"bhopal-india": -2091670,
+	bialystok: -493500,
+	biarritz: -1412526,
+	"biarritz-france": -1412526,
+	"biaystok-poland": -493500,
+	bielefeld: -1747422,
+	"bielefeld-germany": -1747422,
+	"bielsko-biaa-poland": -493705,
+	"bielsko-biala": -493705,
+	bikaner: -2091848,
+	"bikaner-india": -2091848,
+	bilbao: -373608,
+	"bilbao-spain": -373608,
+	billings: 20076133,
+	"billings-united-states": 20076133,
+	billund: -2739909,
+	"billund-denmark": -2739909,
+	biloxi: 20068916,
+	"biloxi-united-states": 20068916,
+	binghamton: 20085036,
+	"binghamton-united-states": 20085036,
+	binz: -1840707,
+	"binz-germany": -1840707,
+	birmingham: -2589989,
+	"birmingham-alabama": 20000374,
+	"birmingham-alabama-united-states": 20000374,
+	"birmingham-united-kingdom": -2589989,
+	bismarck: 20095945,
+	"bismarck-united-states": 20095945,
+	bitola: -75269,
+	"bitola-north-macedonia": -75269,
+	blackpool: -2590134,
+	"blackpool-united-kingdom": -2590134,
+	blacksburg: 20135982,
+	"blacksburg-united-states": 20135982,
+	blankenberge: -1954545,
+	"blankenberge-belgium": -1954545,
+	bled: -75414,
+	"bled-slovenia": -75414,
+	bloemfontein: -1211814,
+	"bloemfontein-south-africa": -1211814,
+	blois: -1413119,
+	"blois-france": -1413119,
+	bloomington: 20036688,
+	"bloomington-united-states": 20036688,
+	blumenau: -629420,
+	"blumenau-brazil": -629420,
+	"boa-vista": -629687,
+	"boa-vista-brazil": -629687,
+	"boca-raton": 20021614,
+	"boca-raton-united-states": 20021614,
+	bogor: -2673677,
+	"bogor-indonesia": -2673677,
+	bogota: -578472,
+	"bogota-colombia": -578472,
+	boise: 20031434,
+	"boise-united-states": 20031434,
+	bologna: -111742,
+	"bologna-italy": -111742,
+	bolzano: -111758,
+	"bolzano-italy": -111758,
+	bonn: -1750167,
+	"bonn-germany": -1750167,
+	bordeaux: -1413751,
+	"bordeaux-france": -1413751,
+	"bossier-city": 20048491,
+	"bossier-city-united-states": 20048491,
+	boston: 20061717,
+	"boston-unitedstates": 20061717,
+	boucherville: 900039985,
+	"boucherville-canada": 900039985,
+	boulder: 20017143,
+	"boulder-united-states": 20017143,
+	bourges: -1414329,
+	"bourges-france": -1414329,
+	bournemouth: -2590498,
+	"bournemouth-united-kingdom": -2590498,
+	bowie: 20054158,
+	"bowie-united-states": 20054158,
+	"bowling-green": 20044112,
+	"bowling-green-united-states": 20044112,
+	bozeman: 20076176,
+	"bozeman-united-states": 20076176,
+	bradenton: 20021638,
+	"bradenton-united-states": 20021638,
+	braga: -2160205,
+	"braga-portugal": -2160205,
+	braganca: -2160210,
+	"braganca-portugal": -2160210,
+	branson: 20071942,
+	"branson-united-states": 20071942,
+	brasilia: -631243,
+	"brasilia-brazil": -631243,
+	brasov: -1153613,
+	"brasov-romania": -1153613,
+	bratislava: -840999,
+	"bratislava-slovakia": -840999,
+	breda: -2141874,
+	"breda-netherlands": -2141874,
+	bregenz: -1975069,
+	"bregenz-austria": -1975069,
+	bremen: -1752234,
+	"bremen-germany": -1752234,
+	bremerhaven: -1752254,
+	"bremerhaven-germany": -1752254,
+	brentwood: 20120808,
+	"brentwood-united-states": 20120808,
+	brescia: -112155,
+	"brescia-italy": -112155,
+	brest: -1415036,
+	"brest-france": -1415036,
+	bridgetown: -1393285,
+	"bridgetown-barbados": -1393285,
+	bridgwater: -2590864,
+	"bridgwater-united-kingdom": -2590864,
+	brindisi: -112183,
+	"brindisi-italy": -112183,
+	brisbane: -1561728,
+	"brisbane-australia": -1561728,
+	bristol: -2590919,
+	"bristol-unitedkingdom": -2590919,
+	brno: -542184,
+	"brno-czechia": -542184,
+	brookline: 20061760,
+	"brookline-united-states": 20061760,
+	brooklyn: 20085207,
+	"brooklyn-united-states": 20085207,
+	brossard: -561713,
+	"brossard-canada": -561713,
+	bruges: -1955473,
+	"bruges-belgium": -1955473,
+	brussels: -1955538,
+	"brussels-belgium": -1955538,
+	bryan: 20126837,
+	"bryan-united-states": 20126837,
+	bucharest: -1153951,
+	"bucharest-romania": -1153951,
+	budapest: -850553,
+	"budapest-hungary": -850553,
+	budva: 900039384,
+	"budva-montenegro": 900039384,
+	"buena-park": 20011850,
+	"buena-park-united-states": 20011850,
+	"buenos-aires": -979186,
+	"buenos-aires-argentina": -979186,
+	buffalo: 20085250,
+	"buffalo-united-states": 20085250,
+	burbank: 20011868,
+	"burbank-united-states": 20011868,
+	burgas: -832673,
+	"burgas-bulgaria": -832673,
+	burgos: -374415,
+	"burgos-spain": -374415,
+	burlington: 20134593,
+	"burlington-united-states": 20134593,
+	burnaby: -561859,
+	"burnaby-canada": -561859,
+	burnley: -2591335,
+	"burnley-united-kingdom": -2591335,
+	bursa: -740501,
+	"bursa-turkiye": -740501,
+	busan: -713900,
+	"busan-southkorea": -713900,
+	bydgoszcz: -496361,
+	"bydgoszcz-poland": -496361,
+	bytom: -496464,
+	"bytom-poland": -496464,
+	"cabo-san-lucas": -1698603,
+	"cabo-san-lucas-mexico": -1698603,
+	caceres: -374847,
+	"caceres-spain": -374847,
+	cadiz: -374884,
+	"cadiz-spain": -374884,
+	caen: -1416098,
+	"caen-france": -1416098,
+	cairns: -1563537,
+	"cairns-australia": -1563537,
+	cairo: -290692,
+	"cairo-egypt": -290692,
+	cajamarca: -339006,
+	"cajamarca-peru": -339006,
+	"caldas-da-rainha": -2160804,
+	"caldas-da-rainha-portugal": -2160804,
+	"caldas-novas": -633378,
+	"caldas-novas-brazil": -633378,
+	calgary: -561990,
+	"calgary-canada": -561990,
+	cali: -579248,
+	"cali-colombia": -579248,
+	calpe: -375124,
+	"calpe-spain": -375124,
+	cambridge: -2591658,
+	"cambridge-massachusetts": 20061794,
+	"cambridge-massachusetts-united-states": 20061794,
+	"cambridge-unitedkingdom": -2591658,
+	camden: 20051628,
+	"camden-united-states": 20051628,
+	campeche: -1654644,
+	"campeche-mexico": -1654644,
+	campinas: -633905,
+	"campinas-brazil": -633905,
+	"campo-grande": -634091,
+	"campo-grande-brazil": -634091,
+	"campos-do-jordao": -634196,
+	"campos-do-jordao-brazil": -634196,
+	"can-tho": -3709910,
+	"can-tho-vietnam": -3709910,
+	canakkale: -741845,
+	"canakkale-turkiye": -741845,
+	canberra: -1563952,
+	"canberra-australia": -1563952,
+	cancun: -1655011,
+	"cancun-mexico": -1655011,
+	canela: -634522,
+	"canela-brazil": -634522,
+	canggu: 900048236,
+	"canggu-indonesia": 900048236,
+	cannes: -1416533,
+	"cannes-france": -1416533,
+	canterbury: -2591722,
+	"canterbury-united-kingdom": -2591722,
+	"cape-coral": 20021751,
+	"cape-coral-united-states": 20021751,
+	"cape-town": -1217214,
+	"cape-town-southafrica": -1217214,
+	caracas: -938457,
+	"caracas-venezuela": -938457,
+	caraguatatuba: -635371,
+	"caraguatatuba-brazil": -635371,
+	carcassonne: -1416701,
+	"carcassonne-france": -1416701,
+	cardiff: -2591777,
+	"cardiff-unitedkingdom": -2591777,
+	carlisle: -2591825,
+	"carlisle-united-kingdom": -2591825,
+	carmel: 20012034,
+	"carmel-united-states": 20012034,
+	carpi: -113432,
+	"carpi-italy": -113432,
+	cartagena: -376394,
+	"cartagena-spain": -376394,
+	cary: 20091550,
+	"cary-united-states": 20091550,
+	casablanca: -28159,
+	"casablanca-morocco": -28159,
+	cascais: -2162360,
+	"cascais-portugal": -2162360,
+	caserta: -114219,
+	"caserta-italy": -114219,
+	casper: 20151704,
+	"casper-united-states": 20151704,
+	cassis: -1416912,
+	"cassis-france": -1416912,
+	castelldefels: -376945,
+	"castelldefels-spain": -376945,
+	"castellon-de-la-plana": -376967,
+	"castellon-de-la-plana-spain": -376967,
+	catania: -114787,
+	"catania-italy": -114787,
+	cattolica: -114819,
+	"cattolica-italy": -114819,
+	"caxias-do-sul": -636693,
+	"caxias-do-sul-brazil": -636693,
+	cayenne: -916118,
+	"cayenne-french-guiana": -916118,
+	"cebu-city": -2421883,
+	"cebu-city-philippines": -2421883,
+	"cedar-rapids": 20040169,
+	"cedar-rapids-united-states": 20040169,
+	cefalu: -114960,
+	"cefalu-italy": -114960,
+	centennial: 20017240,
+	"centennial-united-states": 20017240,
+	cesena: -115251,
+	"cesena-italy": -115251,
+	cesenatico: -115252,
+	"cesenatico-italy": -115252,
+	"ceske-budejovice": -542884,
+	"ceske-budejovice-czechia": -542884,
+	"chalon-sur-saone": -1417862,
+	"chalon-sur-saone-france": -1417862,
+	chandigarh: -2092770,
+	"chandigarh-india": -2092770,
+	chandler: 20005954,
+	"chandler-united-states": 20005954,
+	chania: -820164,
+	"chania-greece": -820164,
+	chantilly: -1418519,
+	"chantilly-france": -1418519,
+	"chapel-hill": 20091622,
+	"chapel-hill-united-states": 20091622,
+	charleston: 20115955,
+	"charleston-unitedstates": 20115955,
+	charlotte: 20091627,
+	"charlotte-united-states": 20091627,
+	charlottesville: 20136635,
+	"charlottesville-united-states": 20136635,
+	charlottetown: -562447,
+	"charlottetown-canada": -562447,
+	chartres: -1418879,
+	"chartres-france": -1418879,
+	chatham: -562473,
+	"chatham-canada": -562473,
+	chattanooga: 20121171,
+	"chattanooga-united-states": 20121171,
+	chaves: -2163041,
+	"chaves-portugal": -2163041,
+	cheltenham: -2592344,
+	"cheltenham-unitedkingdom": -2592344,
+	chemnitz: -1756500,
+	"chemnitz-germany": -1756500,
+	chengdu: -1900349,
+	"chengdu-china": -1900349,
+	cherkasy: -1037001,
+	"cherkasy-ukraine": -1037001,
+	chernivtsi: -1037073,
+	"chernivtsi-ukraine": -1037073,
+	chester: -2592377,
+	"chester-united-kingdom": -2592377,
+	chesterfield: -2592380,
+	"chesterfield-united-kingdom": -2592380,
+	cheyenne: 20151708,
+	"cheyenne-united-states": 20151708,
+	"chianciano-terme": -115341,
+	"chianciano-terme-italy": -115341,
+	"chiang-mai": -3247115,
+	"chiang-mai-thailand": -3247115,
+	"chiang-rai": -3247118,
+	"chiang-rai-thailand": -3247118,
+	chiba: -226438,
+	"chiba-japan": -226438,
+	chicago: 20033173,
+	"chicago-unitedstates": 20033173,
+	"chiclana-de-la-frontera": -377937,
+	"chiclana-de-la-frontera-spain": -377937,
+	chiclayo: -342011,
+	"chiclayo-peru": -342011,
+	chico: 20012160,
+	"chico-united-states": 20012160,
+	chihuahua: -1657142,
+	"chihuahua-mexico": -1657142,
+	chilliwack: -562560,
+	"chilliwack-canada": -562560,
+	chisinau: -2276223,
+	"chisinau-moldova": -2276223,
+	chongqing: -1900774,
+	"chongqing-china": -1900774,
+	chorzow: -497098,
+	"chorzow-poland": -497098,
+	christchurch: -1508289,
+	"christchurch-newzealand": -1508289,
+	"chula-vista": 20012187,
+	"chula-vista-united-states": 20012187,
+	cincinnati: 20097593,
+	"cincinnati-united-states": 20097593,
+	cirebon: -2676069,
+	"cirebon-indonesia": -2676069,
+	cirencester: -2592612,
+	"cirencester-united-kingdom": -2592612,
+	"ciudad-real": -378244,
+	"ciudad-real-spain": -378244,
+	"ciudad-victoria": -1658114,
+	"ciudad-victoria-mexico": -1658114,
+	"clermont-ferrand": -1420711,
+	"clermont-ferrand-france": -1420711,
+	cleveland: 20097630,
+	"cleveland-united-states": 20097630,
+	"cluj-napoca": -1156174,
+	"cluj-napoca-romania": -1156174,
+	coatepec: -1658211,
+	"coatepec-mexico": -1658211,
+	coatzacoalcos: -1658228,
+	"coatzacoalcos-mexico": -1658228,
+	cochabamba: -685052,
+	"cochabamba-bolivia": -685052,
+	"coeur-d-alene": 20031552,
+	"coeur-d-alene-united-states": 20031552,
+	cognac: -1420906,
+	"cognac-france": -1420906,
+	coimbatore: -2093654,
+	"coimbatore-india": -2093654,
+	coimbra: -2163275,
+	"coimbra-portugal": -2163275,
+	colchester: -2592989,
+	"colchester-united-kingdom": -2592989,
+	colima: -1658431,
+	"colima-mexico": -1658431,
+	colmar: -1421049,
+	"colmar-france": -1421049,
+	cologne: -1810561,
+	"cologne-germany": -1810561,
+	colombo: -2214877,
+	"colombo-srilanka": -2214877,
+	"colorado-springs": 20017286,
+	"colorado-springs-united-states": 20017286,
+	columbia: 20116092,
+	"columbia-united-states": 20116092,
+	columbus: 20097699,
+	"columbus-united-states": 20097699,
+	comayagua: -1117777,
+	"comayagua-honduras": -1117777,
+	comitan: -1658938,
+	"comitan-mexico": -1658938,
+	como: -116052,
+	"como-italy": -116052,
+	compiegne: -1421280,
+	"compiegne-france": -1421280,
+	concepcion: -878181,
+	"concepcion-chile": -878181,
+	"conil-de-la-frontera": -378657,
+	"conil-de-la-frontera-spain": -378657,
+	constanta: -1156502,
+	"constanta-romania": -1156502,
+	conwy: -2593181,
+	"conwy-united-kingdom": -2593181,
+	copenhagen: -2745636,
+	"copenhagen-denmark": -2745636,
+	"cordoba-argentina": -983417,
+	"cordoba-mexico": -1659281,
+	"cordoba-spain": -378765,
+	corfu: -820069,
+	"corfu-greece": -820069,
+	cork: -1501986,
+	"cork-ireland": -1501986,
+	corlu: -744197,
+	"corlu-turkiye": -744197,
+	"corpus-christi": 20127357,
+	"corpus-christi-united-states": 20127357,
+	corralejo: -378878,
+	"corralejo-spain": -378878,
+	cosenza: -116404,
+	"cosenza-italy": -116404,
+	"costa-mesa": 20012348,
+	"costa-mesa-united-states": 20012348,
+	cotonou: -1332987,
+	"cotonou-benin": -1332987,
+	cottbus: -1756822,
+	"cottbus-germany": -1756822,
+	coventry: -2593386,
+	"coventry-unitedkingdom": -2593386,
+	cozumel: -1659715,
+	"cozumel-mexico": -1659715,
+	craiova: -1157134,
+	"craiova-romania": -1157134,
+	crawley: -2593554,
+	"crawley-united-kingdom": -2593554,
+	cremona: -116503,
+	"cremona-italy": -116503,
+	cromer: -2593677,
+	"cromer-united-kingdom": -2593677,
+	"cuenca-ecuador": -926345,
+	"cuenca-spain": -379455,
+	cuernavaca: -1660131,
+	"cuernavaca-mexico": -1660131,
+	cuiaba: -639305,
+	"cuiaba-brazil": -639305,
+	culiacan: -1660347,
+	"culiacan-mexico": -1660347,
+	cullera: -379633,
+	"cullera-spain": -379633,
+	cuneo: -116669,
+	"cuneo-italy": -116669,
+	cupertino: 20012435,
+	"cupertino-united-states": 20012435,
+	curitiba: -639568,
+	"curitiba-brazil": -639568,
+	cusco: -345275,
+	"cusco-peru": -345275,
+	czestochowa: -498439,
+	"czestochowa-poland": -498439,
+	"da-nang": -3712125,
+	"da-nang-vietnam": -3712125,
+	daegu: -717105,
+	"daegu-south-korea": -717105,
+	daejeon: -717199,
+	"daejeon-south-korea": -717199,
+	dakar: -2266494,
+	"dakar-senegal": -2266494,
+	dalat: -3712045,
+	"dalat-vietnam": -3712045,
+	dalian: -1901835,
+	"dalian-china": -1901835,
+	dallas: 20127504,
+	"dallas-united-states": 20127504,
+	dambulla: -2215119,
+	"dambulla-sri-lanka": -2215119,
+	danville: 20137137,
+	"danville-united-states": 20137137,
+	"dar-es-salaam": -2562166,
+	"dar-es-salaam-tanzania": -2562166,
+	darlington: -2594095,
+	"darlington-united-kingdom": -2594095,
+	darmstadt: -1757722,
+	"darmstadt-germany": -1757722,
+	darwin: -1569058,
+	"darwin-australia": -1569058,
+	davenport: 20022031,
+	"davenport-united-states": 20022031,
+	davis: 20012481,
+	"davis-united-states": 20012481,
+	dax: -1423682,
+	"dax-france": -1423682,
+	dayton: 20097871,
+	"dayton-united-states": 20097871,
+	"daytona-beach": 20022037,
+	"daytona-beach-united-states": 20022037,
+	deadwood: 20119510,
+	"deadwood-united-states": 20119510,
+	deauville: -1423684,
+	"deauville-france": -1423684,
+	debrecen: -851960,
+	"debrecen-hungary": -851960,
+	delft: -2142932,
+	"delft-netherlands": -2142932,
+	"delray-beach": 20022065,
+	"delray-beach-united-states": 20022065,
+	"den-bosch": -2152943,
+	"den-bosch-netherlands": -2152943,
+	denia: -379820,
+	"denia-spain": -379820,
+	denizli: -745666,
+	"denizli-turkiye": -745666,
+	denpasar: -2676772,
+	"denpasar-indonesia": -2676772,
+	denver: 20017349,
+	"denver-unitedstates": 20017349,
+	derby: -2594262,
+	"derby-unitedkingdom": -2594262,
+	"derry-londonderry": -2601896,
+	"derry-londonderry-united-kingdom": -2601896,
+	"des-moines": 20040350,
+	"des-moines-united-states": 20040350,
+	"desenzano-del-garda": -116777,
+	"desenzano-del-garda-italy": -116777,
+	detroit: 20064402,
+	"detroit-united-states": 20064402,
+	deventer: -2143290,
+	"deventer-netherlands": -2143290,
+	dijon: -1423981,
+	"dijon-france": -1423981,
+	dinan: -1423997,
+	"dinan-france": -1423997,
+	dinard: -1424002,
+	"dinard-france": -1424002,
+	diyarbakir: -746541,
+	"diyarbakr-turkiye": -746541,
+	doha: -785169,
+	"doha-qatar": -785169,
+	doncaster: -2594486,
+	"doncaster-united-kingdom": -2594486,
+	dortmund: -1761123,
+	"dortmund-germany": -1761123,
+	dresden: -1761619,
+	"dresden-germany": -1761619,
+	dubai: -782831,
+	"dublin-ireland": -1502554,
+	"dublin-united-states": 20097977,
+	dubrovnik: -79996,
+	"dubrovnik-croatia": -79996,
+	duisburg: -1761951,
+	"duisburg-germany": -1761951,
+	dumaguete: -2425232,
+	"dumaguete-philippines": -2425232,
+	dundee: -2594859,
+	"dundee-united-kingdom": -2594859,
+	dunedin: -1509094,
+	"dunedin-newzealand": -1509094,
+	dunkerque: -1424668,
+	"dunkerque-france": -1424668,
+	durban: -1224926,
+	"durban-southafrica": -1224926,
+	"durham-united-kingdom": -2594983,
+	"durham-united-states": 20092053,
+	dusseldorf: -1762397,
+	"dusseldorf-germany": -1762397,
+	eastbourne: -2595114,
+	"eastbourne-unitedkingdom": -2595114,
+	edinburgh: -2595386,
+	"edinburgh-unitedkingdom": -2595386,
+	edirne: -747443,
+	"edirne-turkiye": -747443,
+	eindhoven: -2144027,
+	"eindhoven-netherlands": -2144027,
+	eisenach: -1765079,
+	"eisenach-germany": -1765079,
+	"el-puerto-de-santa-maria": -381105,
+	"el-puerto-de-santa-maria-spain": -381105,
+	elche: -380518,
+	"elche-spain": -380518,
+	emden: -1766064,
+	"emden-germany": -1766064,
+	enniskillen: -2595628,
+	"enniskillen-united-kingdom": -2595628,
+	epinal: -1425321,
+	"epinal-france": -1425321,
+	erfurt: -1766996,
+	"erfurt-germany": -1766996,
+	erzurum: -748394,
+	"erzurum-turkiye": -748394,
+	eskisehir: -748685,
+	"eskisehir-turkiye": -748685,
+	essaouira: -32532,
+	"essaouira-morocco": -32532,
+	essen: -2144272,
+	"essen-germany": -2144272,
+	estepona: -382067,
+	"estepona-spain": -382067,
+	estoril: -2164873,
+	"estoril-portugal": -2164873,
+	"evian-les-bains": -1426081,
+	"evian-les-bains-france": -1426081,
+	evora: -2164922,
+	"evora-portugal": -2164922,
+	exeter: -2595805,
+	"exeter-united-kingdom": -2595805,
+	falmouth: -2595899,
+	"falmouth-unitedkingdom": -2595899,
+	fano: -117233,
+	"fano-italy": -117233,
+	farnborough: -2595943,
+	"farnborough-united-kingdom": -2595943,
+	faro: -2165075,
+	"faro-portugal": -2165075,
+	fatima: -2165099,
+	"fatima-portugal": -2165099,
+	ferrara: -117387,
+	"ferrara-italy": -117387,
+	ferrol: -380667,
+	"ferrol-spain": -380667,
+	figueres: -382463,
+	"figueres-spain": -382463,
+	flagstaff: 20006240,
+	"flagstaff-united-states": 20006240,
+	flensburg: -1770407,
+	"flensburg-germany": -1770407,
+	florence: -117543,
+	"florence-italy": -117543,
+	florianopolis: -643337,
+	"florianopolis-brazil": -643337,
+	foggia: -117638,
+	"foggia-italy": -117638,
+	foligno: -117669,
+	"foligno-italy": -117669,
+	folkestone: -2596358,
+	"folkestone-unitedkingdom": -2596358,
+	forli: -117787,
+	"forli-italy": -117787,
+	"fort-lauderdale": 20022339,
+	"fort-lauderdale-united-states": 20022339,
+	fortaleza: -643612,
+	"fortaleza-brazil": -643612,
+	"forte-dei-marmi": -117863,
+	"forte-dei-marmi-italy": -117863,
+	"foz-do-iguacu": -643720,
+	"foz-do-iguacu-brazil": -643720,
+	frankfurt: -1771148,
+	"frankfurt-germany": -1771148,
+	franklin: 20122126,
+	"franklin-united-states": 20122126,
+	fredericton: -564968,
+	"fredericton-canada": -564968,
+	freetown: -1315606,
+	"freetown-sierra-leone": -1315606,
+	fribourg: -2552078,
+	"fribourg-switzerland": -2552078,
+	friedrichshafen: -1772098,
+	"friedrichshafen-germany": -1772098,
+	fuengirola: -383095,
+	"fuengirola-spain": -383095,
+	fukuoka: 900047908,
+	"fukuoka-japan": 900047908,
+	fulda: -1772866,
+	"fulda-germany": -1772866,
+	funchal: -2166199,
+	"funchal-portugal": -2166199,
+	gaborone: -1397372,
+	"gaborone-botswana": -1397372,
+	gaeta: -118131,
+	"gaeta-italy": -118131,
+	gallipoli: -118224,
+	"gallipoli-italy": -118224,
+	galway: -1502950,
+	"galway-ireland": -1502950,
+	gandia: -383645,
+	"gandia-spain": -383645,
+	"garmisch-partenkirchen": -1774161,
+	"garmisch-partenkirchen-germany": -1774161,
+	gaziantep: -749276,
+	"gaziantep-turkiye": -749276,
+	gdansk: -501400,
+	"gdansk-poland": -501400,
+	gdynia: -501414,
+	"gdynia-poland": -501414,
+	geelong: -1574693,
+	"geelong-australia": -1574693,
+	geneva: -2552151,
+	"geneva-switzerland": -2552151,
+	genoa: -118400,
+	"genoa-italy": -118400,
+	georgetown: -919880,
+	"georgetown-guyana": -919880,
+	getafe: -383976,
+	"getafe-spain": -383976,
+	ghent: -1958757,
+	"ghent-belgium": -1958757,
+	gijon: -384004,
+	"gijon-spain": -384004,
+	girona: -383956,
+	"girona-spain": -383956,
+	glasgow: -2597039,
+	"glasgow-unitedkingdom": -2597039,
+	gliwice: -501777,
+	"gliwice-poland": -501777,
+	gloucester: -2597215,
+	"gloucester-unitedkingdom": -2597215,
+	"gold-coast": -1575736,
+	"gold-coast-australia": -1575736,
+	gothenburg: -2482986,
+	"gothenburg-sweden": -2482986,
+	gottingen: -1778071,
+	"gottingen-germany": -1778071,
+	"granada-nicaragua": -1111886,
+	"granada-spain": -384328,
+	graz: -1978544,
+	"graz-austria": -1978544,
+	"great-yarmouth": -2597637,
+	"great-yarmouth-united-kingdom": -2597637,
+	grenoble: -1430647,
+	"grenoble-france": -1430647,
+	grindelwald: -2552301,
+	"grindelwald-switzerland": -2552301,
+	groningen: -2145032,
+	"groningen-netherlands": -2145032,
+	grosseto: -118932,
+	"grosseto-italy": -118932,
+	"guadalajara-mexico": -1669612,
+	"guadalajara-spain": -384580,
+	guanajuato: -1669986,
+	"guanajuato-mexico": -1669986,
+	guangzhou: -1907161,
+	"guangzhou-china": -1907161,
+	gubbio: -119044,
+	"gubbio-italy": -119044,
+	guildford: -2597829,
+	"guildford-unitedkingdom": -2597829,
+	guilin: -1907565,
+	"guilin-china": -1907565,
+	guimaraes: -2167026,
+	"guimaraes-portugal": -2167026,
+	gyeongju: -710797,
+	"gyeongju-south-korea": -710797,
+	"ha-long": -3715715,
+	"ha-long-vietnam": -3715715,
+	haarlem: -2145280,
+	"haarlem-netherlands": -2145280,
+	hakodate: -228222,
+	"hakodate-japan": -228222,
+	hakone: -228233,
+	"hakone-japan": -228233,
+	halifax: -565805,
+	"halifax-canada": -565805,
+	hamamatsu: -228320,
+	"hamamatsu-japan": -228320,
+	hamburg: -1785434,
+	"hamburg-germany": -1785434,
+	hamilton: -565834,
+	"hamilton-canada": -565834,
+	hangzhou: -1908366,
+	"hangzhou-china": -1908366,
+	hanoi: -3714993,
+	"hanoi-vietnam": -3714993,
+	harbin: -1908524,
+	"harbin-china": -1908524,
+	harrogate: -2598194,
+	"harrogate-united-kingdom": -2598194,
+	hasselt: -1959925,
+	"hasselt-belgium": -1959925,
+	"hat-yai": -3247839,
+	"hat-yai-thailand": -3247839,
+	heidelberg: -1788826,
+	"heidelberg-germany": -1788826,
+	heilbronn: -1789068,
+	"heilbronn-germany": -1789068,
+	helsinki: -1364995,
+	"helsinki-finland": -1364995,
+	heraklion: 900063017,
+	"heraklion-greece": 900063017,
+	heringsdorf: -1863011,
+	"heringsdorf-germany": -1863011,
+	hersonissos: -820290,
+	"hersonissos-greece": -820290,
+	hiroshima: -229436,
+	"hiroshima-japan": -229436,
+	"ho-chi-minh-city": -3730078,
+	"ho-chi-minh-city-vietnam": -3730078,
+	hobart: -1578440,
+	"hobart-australia": -1578440,
+	"hoi-an": -3715584,
+	"hoi-an-vietnam": -3715584,
+	hondarribia: 900039331,
+	"hondarribia-spain": 900039331,
+	honfleur: -1432206,
+	"honfleur-france": -1432206,
+	"hong-kong": -1353149,
+	"hong-kong-hongkong": -1353149,
+	honolulu: 20030916,
+	"honolulu-unitedstates": 20030916,
+	horta: -2167069,
+	"horta-portugal": -2167069,
+	houston: 20128761,
+	"houston-united-states": 20128761,
+	"hua-hin": -3248049,
+	"hua-hin-thailand": -3248049,
+	huddersfield: -2599166,
+	"huddersfield-united-kingdom": -2599166,
+	hue: -3715887,
+	"hue-vietnam": -3715887,
+	huelva: -385563,
+	"huelva-spain": -385563,
+	huesca: -385645,
+	"huesca-spain": -385645,
+	hull: -2600203,
+	"hull-united-kingdom": -2600203,
+	huntsville: 20002147,
+	"huntsville-united-states": 20002147,
+	hurghada: 90003908,
+	"hurghada-egypt": 90003908,
+	hyderabad: -2097701,
+	"hyderabad-india": -2097701,
+	hyeres: -1432443,
+	"hyeres-france": -1432443,
+	iasi: -1161664,
+	"iasi-romania": -1161664,
+	ibiza: -385722,
+	"ibiza-spain": -385722,
+	ierapetra: -818075,
+	"ierapetra-greece": -818075,
+	ikeja: -2011499,
+	"ikeja-nigeria": -2011499,
+	imola: -119232,
+	"imola-italy": -119232,
+	imperia: -119237,
+	"imperia-italy": -119237,
+	incheon: -708814,
+	"incheon-south-korea": -708814,
+	indianapolis: 20037880,
+	"indianapolis-united-states": 20037880,
+	ingolstadt: -1800781,
+	"ingolstadt-germany": -1800781,
+	innsbruck: -1981445,
+	"innsbruck-austria": -1981445,
+	interlaken: -2552548,
+	"interlaken-switzerland": -2552548,
+	inverness: -2599537,
+	"inverness-unitedkingdom": -2599537,
+	ioannina: -818126,
+	"ioannina-greece": -818126,
+	ipswich: -2599568,
+	"ipswich-united-kingdom": -2599568,
+	iquitos: -350039,
+	"iquitos-peru": -350039,
+	istanbul: -755070,
+	"istanbul-trkiye": -755070,
+	izmir: -755097,
+	"izmir-trkiye": -755097,
+	jaca: -386061,
+	"jaca-spain": -386061,
+	"jackson-wyoming": 20151854,
+	"jackson-wyoming-united-states": 20151854,
+	jaen: -386068,
+	"jaen-spain": -386068,
+	jaipur: -2098033,
+	"jaipur-india": -2098033,
+	jakarta: -2679652,
+	"jakarta-indonesia": -2679652,
+	jeddah: -3096108,
+	"jeddah-saudiarabia": -3096108,
+	"jerez-de-la-frontera": -386204,
+	"jerez-de-la-frontera-spain": -386204,
+	jimbaran: -2680135,
+	"jimbaran-indonesia": -2680135,
+	jodhpur: -2098686,
+	"jodhpur-india": -2098686,
+	johannesburg: -1240261,
+	"johannesburg-southafrica": -1240261,
+	"johor-bahru": -2405456,
+	"johor-bahru-malaysia": -2405456,
+	kagoshima: -231554,
+	"kagoshima-japan": -231554,
+	kaiserslautern: -1802780,
+	"kaiserslautern-germany": -1802780,
+	kanazawa: -232370,
+	"kanazawa-japan": -232370,
+	kandy: -2222251,
+	"kandy-srilanka": -2222251,
+	kaohsiung: -2632378,
+	"kaohsiung-taiwan": -2632378,
+	karachi: -2764584,
+	"karachi-pakistan": -2764584,
+	karlsruhe: -1803994,
+	"karlsruhe-germany": -1803994,
+	karpacz: -507063,
+	"karpacz-poland": -507063,
+	kathmandu: -1022136,
+	"kathmandu-nepal": -1022136,
+	katowice: -507224,
+	"katowice-poland": -507224,
+	kaunas: -2615427,
+	"kaunas-lithuania": -2615427,
+	kayseri: -759102,
+	"kayseri-turkiye": -759102,
+	kelowna: -567125,
+	"kelowna-canada": -567125,
+	kemer: -759455,
+	"kemer-turkiye": -759455,
+	kiel: -1805669,
+	"kiel-germany": -1805669,
+	kielce: -507561,
+	"kielce-poland": -507561,
+	kigali: -2181358,
+	"kigali-rwanda": -2181358,
+	"kingston-canada": -567303,
+	"kingston-jamaica": -3752438,
+	kitzbuhel: -1982333,
+	"kitzbuhel-austria": -1982333,
+	klagenfurt: -1982354,
+	"klagenfurt-austria": -1982354,
+	"knokke-heist": -1962217,
+	"knokke-heist-belgium": -1962217,
+	kobe: -233817,
+	"kobe-japan": -233817,
+	koblenz: -1809855,
+	"koblenz-germany": -1809855,
+	kolkata: 900062918,
+	"kolkata-india": 900062918,
+	kolobrzeg: -508542,
+	konstanz: -1811125,
+	"konstanz-germany": -1811125,
+	konya: -761917,
+	"konya-turkiye": -761917,
+	"koobrzeg-poland": -508542,
+	kortrijk: -1962372,
+	"kortrijk-belgium": -1962372,
+	kosice: -843247,
+	"kosice-slovakia": -843247,
+	kotor: -85411,
+	"kotor-montenegro": -85411,
+	krakow: -510625,
+	"krakow-poland": -510625,
+	"krynica-zdroj": -511182,
+	"krynica-zdroj-poland": -511182,
+	kumamoto: -234757,
+	"kumamoto-japan": -234757,
+	kunming: -1913826,
+	"kunming-china": -1913826,
+	kurashiki: -234898,
+	"kurashiki-japan": -234898,
+	"kusadas-turkiye": -763789,
+	kusadasi: -763789,
+	kuta: -2683839,
+	"kuta-indonesia": -2683839,
+	kyoto: -235402,
+	"kyoto-japan": -235402,
+	"la-baule": -1425593,
+	"la-baule-france": -1425593,
+	"la-paz-bolivia": -693412,
+	"la-paz-mexico": -1676469,
+	"la-rochelle": -1438604,
+	"la-rochelle-france": -1438604,
+	"la-spezia": -119773,
+	"la-spezia-italy": -119773,
+	"lagos-nigeria": -2017355,
+	"lagos-portugal": -2167534,
+	lamego: -2167651,
+	"lamego-portugal": -2167651,
+	"lamezia-terme": -123036,
+	"lamezia-terme-italy": -123036,
+	larnaca: -2738479,
+	"larnaca-cyprus": -2738479,
+	"las-palmas-de-gran-canaria": -388528,
+	"las-palmas-de-gran-canaria-spain": -388528,
+	"las-vegas": 20079110,
+	"las-vegas-unitedstates": 20079110,
+	latina: -119798,
+	"latina-italy": -119798,
+	lausanne: -2552809,
+	"lausanne-switzerland": -2552809,
+	"le-havre": -1441598,
+	"le-havre-france": -1441598,
+	"le-mans": -1441792,
+	"le-mans-france": -1441792,
+	"le-puy-en-velay": -1442932,
+	"le-puy-en-velay-france": -1442932,
+	"le-touquet-paris-plage": -1446262,
+	"le-touquet-paris-plage-france": -1446262,
+	lecce: -119920,
+	"lecce-italy": -119920,
+	leeds: -2600941,
+	"leeds-united-kingdom": -2600941,
+	leeuwarden: -2148497,
+	"leeuwarden-netherlands": -2148497,
+	lefkada: -822235,
+	"lefkada-greece": -822235,
+	legian: 900048191,
+	"legian-indonesia": 900048191,
+	leicester: -2600961,
+	"leicester-unitedkingdom": -2600961,
+	leipzig: -1817680,
+	"leipzig-germany": -1817680,
+	leiria: -2167877,
+	"leiria-portugal": -2167877,
+	"leon-nicaragua": -1112996,
+	"leon-spain": -389068,
+	"les-sables-d-olonne": -1445718,
+	"les-sables-d-olonne-france": -1445718,
+	leuven: -1963947,
+	"leuven-belgium": -1963947,
+	liege: -1964016,
+	"liege-belgium": -1964016,
+	liepaja: -3210389,
+	"liepaja-latvia": -3210389,
+	lijiang: -1902900,
+	"lijiang-china": -1902900,
+	lille: -1447079,
+	"lille-france": -1447079,
+	lima: -352647,
+	"lima-peru": -352647,
+	limassol: -2738495,
+	"limassol-cyprus": -2738495,
+	limoges: -1447117,
+	"limoges-france": -1447117,
+	lincoln: -2601144,
+	"lincoln-unitedkingdom": -2601144,
+	linz: -1984321,
+	"linz-austria": -1984321,
+	lisbon: -2167973,
+	"lisbon-portugal": -2167973,
+	livermore: 20014116,
+	"livermore-united-states": 20014116,
+	liverpool: -2601422,
+	"liverpool-unitedkingdom": -2601422,
+	livorno: -120258,
+	"livorno-italy": -120258,
+	ljubljana: -87271,
+	"ljubljana-slovenia": -87271,
+	llanes: -389360,
+	"llanes-spain": -389360,
+	lleida: 900039124,
+	"lleida-spain": 900039124,
+	"lloret-de-mar": -389487,
+	"lloret-de-mar-spain": -389487,
+	locarno: -2552936,
+	"locarno-switzerland": -2552936,
+	lodz: -513922,
+	logrono: -389593,
+	"logrono-spain": -389593,
+	london: -2601889,
+	"london-canada": -568193,
+	"los-angeles": 20014181,
+	"los-angeles-unitedstates": 20014181,
+	louisville: 20046120,
+	"louisville-united-states": 20046120,
+	lourdes: -1448015,
+	"lourdes-france": -1448015,
+	loutraki: -822697,
+	"loutraki-greece": -822697,
+	lovina: -2697286,
+	"lovina-indonesia": -2697286,
+	"luang-prabang": -2665957,
+	"luang-prabang-laos": -2665957,
+	lubeck: -1821233,
+	"lubeck-germany": -1821233,
+	lublin: -514340,
+	"lublin-poland": -514340,
+	lucca: -120405,
+	"lucca-italy": -120405,
+	lucerne: -2552994,
+	"lucerne-switzerland": -2552994,
+	ludwigsburg: -1821445,
+	"ludwigsburg-germany": -1821445,
+	"ludwigshafen-am-rhein": -1821461,
+	"ludwigshafen-am-rhein-germany": -1821461,
+	lugano: -2552969,
+	"lugano-switzerland": -2552969,
+	lugo: -390505,
+	"lugo-spain": -390505,
+	lund: -2502498,
+	"lund-sweden": -2502498,
+	luton: -2602296,
+	"luton-unitedkingdom": -2602296,
+	"luxembourg-city": -1736191,
+	"luxembourg-city-luxembourg": -1736191,
+	luxor: -290821,
+	"luxor-egypt": -290821,
+	lynchburg: 20139440,
+	"lynchburg-united-states": 20139440,
+	lyon: -1448468,
+	"lyon-france": -1448468,
+	maastricht: -2149006,
+	"maastricht-netherlands": -2149006,
+	macao: -1204094,
+	"macao-macao": -1204094,
+	madison: 20150485,
+	"madison-united-states": 20150485,
+	madrid: -390625,
+	"madrid-spain": -390625,
+	mahon: -390716,
+	"mahon-spain": -390716,
+	maidstone: -2602456,
+	"maidstone-unitedkingdom": -2602456,
+	mainz: -1822614,
+	"mainz-germany": -1822614,
+	makarska: -87968,
+	"makarska-croatia": -87968,
+	malaga: -390787,
+	"malaga-spain": -390787,
+	malang: -2686378,
+	"malang-indonesia": -2686378,
+	male: -1306876,
+	"male-maldives": -1306876,
+	malmo: -2503264,
+	"malmo-sweden": -2503264,
+	manama: -784833,
+	"manama-bahrain": -784833,
+	manchester: -2602512,
+	"manchester-unitedkingdom": -2602512,
+	manila: -2437894,
+	"manila-philippines": -2437894,
+	mannheim: -1822951,
+	"mannheim-germany": -1822951,
+	marbella: -391076,
+	"marbella-spain": -391076,
+	marmaris: -764696,
+	"marmaris-turkiye": -764696,
+	marsala: -121193,
+	"marsala-italy": -121193,
+	marseille: -1449947,
+	"marseille-france": -1449947,
+	maspalomas: -391429,
+	"maspalomas-spain": -391429,
+	mataro: -391524,
+	"mataro-spain": -391524,
+	matera: -121381,
+	"matera-italy": -121381,
+	matsue: -235892,
+	"matsue-japan": -235892,
+	matsumoto: -235949,
+	"matsumoto-japan": -235949,
+	matsuyama: 6075075,
+	"matsuyama-japan": 6075075,
+	mazatlan: -1682941,
+	"mazatlan-mexico": -1682941,
+	mechelen: -1964894,
+	"mechelen-belgium": -1964894,
+	medan: -2687472,
+	"medan-indonesia": -2687472,
+	medellin: -592318,
+	"medellin-colombia": -592318,
+	"melbourne-australia": -1586844,
+	"melbourne-united-states": 20023163,
+	memphis: 20123619,
+	"memphis-united-states": 20123619,
+	mendoza: -1003869,
+	"mendoza-argentina": -1003869,
+	menton: -1450921,
+	"menton-france": -1450921,
+	merano: -121562,
+	"merano-italy": -121562,
+	"merida-mexico": -1683102,
+	"merida-spain": -391934,
+	messina: -121616,
+	"messina-italy": -121616,
+	metz: -1451260,
+	"metz-france": -1451260,
+	"mexico-city": -1658079,
+	"mexico-city-mexico": -1658079,
+	miami: 20023181,
+	"miami-unitedstates": 20023181,
+	middlesbrough: -2603029,
+	"middlesbrough-united-kingdom": -2603029,
+	miedzyzdroje: -516306,
+	"miedzyzdroje-poland": -516306,
+	milan: -121726,
+	"milan-italy": -121726,
+	"milton-keynes": -2603171,
+	"milton-keynes-unitedkingdom": -2603171,
+	milwaukee: 20150599,
+	"milwaukee-united-states": 20150599,
+	minneapolis: 20067845,
+	"minneapolis-united-states": 20067845,
+	miskolc: -861626,
+	"miskolc-hungary": -861626,
+	miyazaki: -236950,
+	"miyazaki-japan": -236950,
+	modena: -121865,
+	"modena-italy": -121865,
+	modica: -121868,
+	"modica-italy": -121868,
+	mombasa: -2256513,
+	"mombasa-kenya": -2256513,
+	monopoli: -122100,
+	"monopoli-italy": -122100,
+	"montecatini-terme": -122250,
+	"montecatini-terme-italy": -122250,
+	monterey: 20014579,
+	"monterey-united-states": 20014579,
+	monterrey: -1684228,
+	"monterrey-mexico": -1684228,
+	montevideo: -907764,
+	"montevideo-uruguay": -907764,
+	montpellier: -1453260,
+	"montpellier-france": -1453260,
+	montreal: -569541,
+	"montreal-canada": -569541,
+	montreux: -2553210,
+	"montreux-switzerland": -2553210,
+	morelia: -1684316,
+	"morelia-mexico": -1684316,
+	mostar: -89574,
+	"mostar-bosniaandherzegovina": -89574,
+	motril: -393216,
+	"motril-spain": -393216,
+	"mui-ne": -3714811,
+	"mui-ne-vietnam": -3714811,
+	mulhouse: -1454215,
+	"mulhouse-france": -1454215,
+	munduk: -2688600,
+	"munduk-indonesia": -2688600,
+	munich: -1829149,
+	"munich-germany": -1829149,
+	munster: -1829320,
+	"munster-germany": -1829320,
+	murcia: -393418,
+	"murcia-spain": -393418,
+	muscat: -787987,
+	"muscat-oman": -787987,
+	mytilene: -824223,
+	"mytilene-greece": -824223,
+	nadi: -1191076,
+	"nadi-fiji": -1191076,
+	nafplio: -824497,
+	"nafplio-greece": -824497,
+	nagasaki: -237732,
+	"nagasaki-japan": -237732,
+	nagoya: -237874,
+	"nagoya-japan": -237874,
+	naha: -237896,
+	"naha-japan": -237896,
+	nairobi: -2258072,
+	"nairobi-kenya": -2258072,
+	namur: -1965962,
+	"namur-belgium": -1965962,
+	nancy: -1454430,
+	"nancy-france": -1454430,
+	nanjing: -1919548,
+	"nanjing-china": -1919548,
+	nantes: -1454460,
+	"nantes-france": -1454460,
+	naples: -122902,
+	"naples-florida": 20023293,
+	"naples-florida-united-states": 20023293,
+	"naples-italy": -122902,
+	nara: -238469,
+	"nara-japan": -238469,
+	narbonne: 900039110,
+	"narbonne-france": 900039110,
+	nashville: 20123908,
+	"nashville-unitedstates": 20123908,
+	"naxos-chora": -824502,
+	"naxos-chora-greece": -824502,
+	nazare: -2170637,
+	"nazare-portugal": -2170637,
+	nerja: -393985,
+	"nerja-spain": -393985,
+	"new-delhi": -2106102,
+	"new-delhi-india": -2106102,
+	"new-orleans": 20050264,
+	"new-orleans-unitedstates": 20050264,
+	"new-york": 20088325,
+	"new-york-unitedstates": 20088325,
+	"newcastle-australia": -1591316,
+	"newcastle-south-africa": -1265439,
+	"newcastle-upon-tyne": -2603966,
+	"newcastle-upon-tyne-united-kingdom": -2603966,
+	"newport-rhode-island": 20028374,
+	"newport-rhode-island-united-states": 20028374,
+	newquay: -2604050,
+	"newquay-unitedkingdom": -2604050,
+	"nha-trang": -3723998,
+	"nha-trang-vietnam": -3723998,
+	"niagara-falls": -570141,
+	"niagara-falls-canada": -570141,
+	nice: -1454990,
+	"nice-france": -1454990,
+	nicosia: -2738616,
+	"nicosia-cyprus": -2738616,
+	nijmegen: -2150237,
+	"nijmegen-netherlands": -2150237,
+	nimes: -1455068,
+	"nimes-france": -1455068,
+	"north-vancouver": -570375,
+	"north-vancouver-canada": -570375,
+	norwich: -2604458,
+	"norwich-united-kingdom": -2604458,
+	nottingham: -2604469,
+	"nottingham-united-kingdom": -2604469,
+	"novi-sad": -90313,
+	"novi-sad-serbia": -90313,
+	nuremberg: -1835238,
+	"nuremberg-germany": -1835238,
+	"nusa-dua": 900040039,
+	"nusa-dua-indonesia": 900040039,
+	"nusa-lembongan": -2684939,
+	"nusa-lembongan-indonesia": -2684939,
+	"nusa-penida": 900052009,
+	"nusa-penida-indonesia": 900052009,
+	nuuk: -2084615,
+	"nuuk-greenland": -2084615,
+	oakland: 20014887,
+	"oakland-united-states": 20014887,
+	oban: -2604531,
+	"oban-unitedkingdom": -2604531,
+	oberstdorf: -1837930,
+	"oberstdorf-germany": -1837930,
+	obidos: -2170835,
+	"obidos-portugal": -2170835,
+	odense: -2748189,
+	"odense-denmark": -2748189,
+	"odz-poland": -513922,
+	offenbach: -1839089,
+	"offenbach-germany": -1839089,
+	ohrid: -90608,
+	"ohrid-northmacedonia": -90608,
+	oia: -824928,
+	"oia-greece": -824928,
+	okayama: -240213,
+	"okayama-japan": -240213,
+	"oklahoma-city": 20103321,
+	"oklahoma-city-united-states": 20103321,
+	olbia: -123255,
+	"olbia-italy": -123255,
+	olhao: -2170898,
+	"olhao-portugal": -2170898,
+	olomouc: -551849,
+	"olomouc-czechia": -551849,
+	olsztyn: -519859,
+	"olsztyn-poland": -519859,
+	omaha: 20078399,
+	"omaha-united-states": 20078399,
+	opatija: -90715,
+	"opatija-croatia": -90715,
+	opole: -519973,
+	"opole-poland": -519973,
+	oristano: -123414,
+	"oristano-italy": -123414,
+	orlando: 20023488,
+	"orlando-unitedstates": 20023488,
+	orleans: -1456116,
+	"orleans-france": -1456116,
+	orvieto: -123502,
+	"orvieto-italy": -123502,
+	osaka: -240905,
+	"osaka-japan": -240905,
+	osijek: -90981,
+	"osijek-croatia": -90981,
+	oslo: -273837,
+	"oslo-norway": -273837,
+	osnabruck: -1840017,
+	"osnabruck-germany": -1840017,
+	ostend: -1966651,
+	"ostend-belgium": -1966651,
+	ostuni: -123591,
+	"ostuni-italy": -123591,
+	ottawa: -570760,
+	"ottawa-canada": -570760,
+	oulu: -1379888,
+	"oulu-finland": -1379888,
+	ourense: -394670,
+	"ourense-spain": -394670,
+	"ouro-preto": -658339,
+	"ouro-preto-brazil": -658339,
+	oviedo: -394970,
+	"oviedo-spain": -394970,
+	oxford: -2604911,
+	"oxford-unitedkingdom": -2604911,
+	paignton: -2604959,
+	"paignton-unitedkingdom": -2604959,
+	pakse: -2667159,
+	"pakse-laos": -2667159,
+	palenque: -1686650,
+	"palenque-mexico": -1686650,
+	palermo: -123798,
+	"palermo-italy": -123798,
+	"palm-springs": 20015057,
+	"palm-springs-united-states": 20015057,
+	palma: -395224,
+	"palma-spain": -395224,
+	pamplona: -395308,
+	"pamplona-spain": -395308,
+	"panama-city": -168008,
+	"panama-city-panama": -168008,
+	paphos: -2738671,
+	"paphos-cyprus": -2738671,
+	paris: -1456928,
+	parma: -123999,
+	"parma-italy": -123999,
+	passau: -1841582,
+	"passau-germany": -1841582,
+	pattaya: -3242432,
+	"pattaya-thailand": -3242432,
+	pau: -1457078,
+	"pau-france": -1457078,
+	peniche: -2172099,
+	"peniche-portugal": -2172099,
+	perigueux: -1457472,
+	"perigueux-france": -1457472,
+	perpignan: -1457525,
+	"perpignan-france": -1457525,
+	perth: -1594675,
+	"perth-australia": -1594675,
+	perugia: -124324,
+	"perugia-italy": -124324,
+	pesaro: -124331,
+	"pesaro-italy": -124331,
+	pescara: -124336,
+	"pescara-italy": -124336,
+	peterborough: -2605287,
+	"peterborough-unitedkingdom": -2605287,
+	philadelphia: 20111994,
+	"philadelphia-unitedstates": 20111994,
+	"phnom-penh": -1033783,
+	"phnom-penh-cambodia": -1033783,
+	phoenix: 20006890,
+	"phoenix-united-states": 20006890,
+	phuket: -3253342,
+	"phuket-thailand": -3253342,
+	piacenza: -124464,
+	"piacenza-italy": -124464,
+	pisa: -124918,
+	"pisa-italy": -124918,
+	pitlochry: -2605387,
+	"pitlochry-unitedkingdom": -2605387,
+	pittsburgh: 20112087,
+	"pittsburgh-united-states": 20112087,
+	plasencia: -396935,
+	"plasencia-spain": -396935,
+	"playa-blanca": -396946,
+	"playa-blanca-spain": -396946,
+	"playa-del-carmen": -1689065,
+	"playa-del-carmen-mexico": -1689065,
+	pleasanton: 20015274,
+	"pleasanton-united-states": 20015274,
+	plovdiv: -837298,
+	"plovdiv-bulgaria": -837298,
+	"plymouth-united-kingdom": -2605448,
+	"plymouth-united-states": 20063004,
+	"plymouth-unitedkingdom": -2605448,
+	poitiers: -1458949,
+	"poitiers-france": -1458949,
+	pokhara: -1022488,
+	"pokhara-nepal": -1022488,
+	"polignano-a-mare": -125217,
+	"polignano-a-mare-italy": -125217,
+	pompei: -125275,
+	"pompei-italy": -125275,
+	ponferrada: -397088,
+	"ponferrada-spain": -397088,
+	"ponta-delgada": -2172834,
+	"ponta-delgada-portugal": -2172834,
+	"ponte-de-lima": -2172901,
+	"ponte-de-lima-portugal": -2172901,
+	pontresina: -2553646,
+	"pontresina-switzerland": -2553646,
+	pordenone: -125476,
+	"pordenone-italy": -125476,
+	porec: -92761,
+	"porec-croatia": -92761,
+	portimao: -2173080,
+	"portimao-portugal": -2173080,
+	portland: 20104927,
+	"portland-unitedstates": 20104927,
+	porto: -2173088,
+	"porto-moniz": -2173164,
+	"porto-moniz-portugal": -2173164,
+	"porto-portugal": -2173088,
+	"porto-vecchio": -1459500,
+	"porto-vecchio-france": -1459500,
+	portree: -2605636,
+	"portree-unitedkingdom": -2605636,
+	portrush: -2605638,
+	"portrush-united-kingdom": -2605638,
+	"portsmouth-united-kingdom": -2605646,
+	"portsmouth-united-states": 20080121,
+	potenza: -125617,
+	"potenza-italy": -125617,
+	potsdam: -1844464,
+	"potsdam-germany": -1844464,
+	poznan: -523642,
+	"poznan-poland": -523642,
+	prague: -553173,
+	"prague-czechia": -553173,
+	"presidente-prudente": -664346,
+	"presidente-prudente-brazil": -664346,
+	preston: -2605730,
+	"preston-united-kingdom": -2605730,
+	puebla: -1690063,
+	"puebla-mexico": -1690063,
+	"puerto-de-la-cruz": -397851,
+	"puerto-de-la-cruz-spain": -397851,
+	"puerto-del-carmen": 900039128,
+	"puerto-del-carmen-spain": 900039128,
+	"puerto-princesa": -2446952,
+	"puerto-princesa-philippines": -2446952,
+	"puerto-vallarta": -1690444,
+	"puerto-vallarta-mexico": -1690444,
+	"puerto-varas": -897520,
+	"puerto-varas-chile": -897520,
+	pula: -93462,
+	"pula-croatia": -93462,
+	pune: -2108361,
+	"pune-india": -2108361,
+	"punta-arenas": -897667,
+	"punta-arenas-chile": -897667,
+	"punta-del-este": -908402,
+	"punta-del-este-uruguay": -908402,
+	qingdao: -1922199,
+	"qingdao-china": -1922199,
+	quarteira: -2173524,
+	"quarteira-portugal": -2173524,
+	"quebec-city": -571851,
+	"quebec-city-canada": -571851,
+	quedlinburg: -1845461,
+	"quedlinburg-germany": -1845461,
+	queenstown: 900039039,
+	"queenstown-newzealand": 900039039,
+	queretaro: -1690669,
+	"queretaro-mexico": -1690669,
+	quimper: -1460750,
+	"quimper-france": -1460750,
+	quito: -932573,
+	"quito-ecuador": -932573,
+	"quy-nhon": -3727579,
+	"quy-nhon-vietnam": -3727579,
+	rabat: -43376,
+	"rabat-morocco": -43376,
+	ragusa: -126066,
+	"ragusa-italy": -126066,
+	raleigh: 20094466,
+	"raleigh-united-states": 20094466,
+	rapallo: -126102,
+	"rapallo-italy": -126102,
+	ravenna: -126146,
+	"ravenna-italy": -126146,
+	reading: -2606065,
+	"reading-unitedkingdom": -2606065,
+	recife: -665520,
+	"recife-brazil": -665520,
+	regensburg: -1847451,
+	"regensburg-germany": -1847451,
+	"reggio-emilia": -126195,
+	"reggio-emilia-italy": -126195,
+	regina: -572127,
+	"regina-canada": -572127,
+	reims: -1461340,
+	"reims-france": -1461340,
+	rennes: -1461464,
+	"rennes-france": -1461464,
+	reno: 20079268,
+	"reno-united-states": 20079268,
+	rethymno: -827465,
+	"rethymno-greece": -827465,
+	reykjavik: -2651804,
+	"reykjavik-iceland": -2651804,
+	rhodes: 213835,
+	"rhodes-greece": 213835,
+	ribadesella: -399019,
+	"ribadesella-spain": -399019,
+	riccione: -126306,
+	"riccione-italy": -126306,
+	richmond: 20141027,
+	"richmond-united-states": 20141027,
+	riga: -3212216,
+	"riga-latvia": -3212216,
+	rimini: -126373,
+	"rimini-italy": -126373,
+	"rio-branco": -666544,
+	"rio-branco-brazil": -666544,
+	"rio-de-janeiro": -666610,
+	"rio-de-janeiro-brazil": -666610,
+	"riva-del-garda": -126468,
+	"riva-del-garda-italy": -126468,
+	riyadh: -3093009,
+	"riyadh-saudiarabia": -3093009,
+	rochefort: -1462180,
+	"rochefort-france": -1462180,
+	rochester: 20089239,
+	"rochester-united-states": 20089239,
+	"rock-hill": 20118370,
+	"rock-hill-united-states": 20118370,
+	rome: -126693,
+	ronda: -399659,
+	"ronda-spain": -399659,
+	ronne: -2749512,
+	"ronne-denmark": -2749512,
+	roscoff: -1462648,
+	"roscoff-france": -1462648,
+	roses: -399710,
+	"roses-spain": -399710,
+	rostock: -1852370,
+	"rostock-germany": -1852370,
+	rotterdam: -2152403,
+	"rotterdam-netherlands": -2152403,
+	rouen: -1462807,
+	"rouen-france": -1462807,
+	rovaniemi: -1384477,
+	"rovaniemi-finland": -1384477,
+	rovinj: -94604,
+	"rovinj-croatia": -94604,
+	"royal-tunbridge-wells": -2606622,
+	"royal-tunbridge-wells-unitedkingdom": -2606622,
+	royan: -1463117,
+	"royan-france": -1463117,
+	rye: -2606736,
+	"rye-unitedkingdom": -2606736,
+	rzeszow: -527004,
+	"rzeszow-poland": -527004,
+	saarbrucken: -1854320,
+	"saarbrucken-germany": -1854320,
+	sabadell: -399916,
+	"sabadell-spain": -399916,
+	sacramento: 20015688,
+	"sacramento-united-states": 20015688,
+	"saint-brieuc": -1464183,
+	"saint-brieuc-france": -1464183,
+	"saint-jean-de-luz": -1466154,
+	"saint-jean-de-luz-france": -1466154,
+	"saint-malo": -1466824,
+	"saint-malo-france": -1466824,
+	"saint-raphael": -1468219,
+	"saint-raphael-france": -1468219,
+	"saint-tropez": -1468723,
+	"saint-tropez-france": -1468723,
+	salalah: -788664,
+	"salalah-oman": -788664,
+	salamanca: -400105,
+	"salamanca-spain": -400105,
+	salen: -2530977,
+	"salen-sweden": -2530977,
+	salerno: -127126,
+	"salerno-italy": -127126,
+	salisbury: -2606982,
+	"salisbury-united-kingdom": -2606982,
+	salou: -400284,
+	"salou-spain": -400284,
+	"salt-lake-city": 20133956,
+	"salt-lake-city-united-states": 20133956,
+	salta: -1011490,
+	"salta-argentina": -1011490,
+	salvador: -667833,
+	"salvador-brazil": -667833,
+	salzburg: -1989985,
+	"salzburg-austria": -1989985,
+	samsun: -769015,
+	"samsun-turkiye": -769015,
+	"san-antonio": 20131185,
+	"san-antonio-united-states": 20131185,
+	"san-benedetto-del-tronto": -127284,
+	"san-benedetto-del-tronto-italy": -127284,
+	"san-carlos-de-bariloche": -1012061,
+	"san-carlos-de-bariloche-argentina": -1012061,
+	"san-cristobal-de-las-casas": -1695911,
+	"san-cristobal-de-las-casas-mexico": -1695911,
+	"san-diego": 20015725,
+	"san-diego-unitedstates": 20015725,
+	"san-francisco": 20015732,
+	"san-francisco-unitedstates": 20015732,
+	"san-jose-costa-rica": -1109108,
+	"san-jose-costarica": -1109108,
+	"san-jose-united-states": 20015742,
+	"san-miguel-de-allende": -1699222,
+	"san-miguel-de-allende-mexico": -1699222,
+	"san-sebastian": -401497,
+	"san-sebastian-spain": -401497,
+	sanford: 20023956,
+	"sanford-united-states": 20023956,
+	"sanlucar-de-barrameda": -401019,
+	"sanlucar-de-barrameda-spain": -401019,
+	sanremo: -128201,
+	"sanremo-italy": -128201,
+	"santa-barbara": 20015794,
+	"santa-barbara-united-states": 20015794,
+	"santa-cruz-de-tenerife": -401686,
+	"santa-cruz-de-tenerife-spain": -401686,
+	"santa-fe-argentina": -1014485,
+	"santa-fe-united-states": 20084310,
+	"santa-margherita-ligure": -128439,
+	"santa-margherita-ligure-italy": -128439,
+	"santa-marta": -598739,
+	"santa-marta-colombia": -598739,
+	santander: -401949,
+	"santander-spain": -401949,
+	santiago: -901202,
+	"santiago-chile": -901202,
+	"santiago-de-compostela": -402059,
+	"santiago-de-compostela-spain": -402059,
+	"santo-domingo": -3366242,
+	"santo-domingo-dominicanrepublic": -3366242,
+	sanur: 325646,
+	"sanur-indonesia": 325646,
+	"sao-paulo": -671824,
+	"sao-paulo-brazil": -671824,
+	sapporo: -242395,
+	"sapporo-japan": -242395,
+	sarajevo: -94996,
+	"sarajevo-bosniaandherzegovina": -94996,
+	sarande: -107914,
+	"sarande-albania": -107914,
+	"sarlat-la-caneda": -1469461,
+	"sarlat-la-caneda-france": -1469461,
+	saskatoon: -573213,
+	"saskatoon-canada": -573213,
+	savannah: 20029490,
+	"savannah-unitedstates": 20029490,
+	scarborough: -2607229,
+	"scarborough-united-kingdom": -2607229,
+	schwerin: -1862713,
+	"schwerin-germany": -1862713,
+	seattle: 20144883,
+	"seattle-unitedstates": 20144883,
+	"seefeld-in-tirol": -1991551,
+	"seefeld-in-tirol-austria": -1991551,
+	segovia: -402548,
+	"segovia-spain": -402548,
+	semarang: -2696070,
+	"semarang-indonesia": -2696070,
+	seminyak: 900040134,
+	"seminyak-indonesia": 900040134,
+	sendai: -242701,
+	"sendai-japan": -242701,
+	senigallia: -129467,
+	"senigallia-italy": -129467,
+	seoul: -716583,
+	"seoul-southkorea": -716583,
+	sesimbra: -2176735,
+	"sesimbra-portugal": -2176735,
+	"sestri-levante": -129637,
+	"sestri-levante-italy": -129637,
+	setubal: -2176724,
+	"setubal-portugal": -2176724,
+	seville: -402849,
+	"seville-spain": -402849,
+	shanghai: -1924465,
+	"shanghai-china": -1924465,
+	sharjah: -782371,
+	"sharjah-unitedarabemirates": -782371,
+	"sharm-el-sheikh": -302053,
+	"sharm-el-sheikh-egypt": -302053,
+	sheffield: -2607573,
+	"sheffield-united-kingdom": -2607573,
+	sheki: -2708296,
+	"sheki-azerbaijan": -2708296,
+	shenzhen: -1925268,
+	"shenzhen-china": -1925268,
+	shimla: -2111367,
+	"shimla-india": -2111367,
+	shizuoka: -244116,
+	"shizuoka-japan": -244116,
+	shrewsbury: -2607759,
+	"shrewsbury-unitedkingdom": -2607759,
+	sibenik: -95501,
+	"sibenik-croatia": -95501,
+	side: 900039392,
+	"side-turkiye": 900039392,
+	"siem-reap": -1032755,
+	"siem-reap-cambodia": -1032755,
+	siena: -129709,
+	"siena-italy": -129709,
+	"sierra-vista": 20007175,
+	"sierra-vista-united-states": 20007175,
+	sihanoukville: -1023795,
+	"sihanoukville-cambodia": -1023795,
+	siliguri: -2111079,
+	"siliguri-india": -2111079,
+	singapore: -73635,
+	"singapore-singapore": -73635,
+	sintra: -2176842,
+	"sintra-portugal": -2176842,
+	sirmione: -129795,
+	"sirmione-italy": -129795,
+	sitges: -403043,
+	"sitges-spain": -403043,
+	skopje: -95841,
+	"skopje-northmacedonia": -95841,
+	sliema: -19110,
+	"sliema-malta": -19110,
+	slough: -2608023,
+	"slough-unitedkingdom": -2608023,
+	sofia: -838489,
+	"sofia-bulgaria": -838489,
+	solo: -2698531,
+	"solo-indonesia": -2698531,
+	sopot: -529430,
+	"sopot-poland": -529430,
+	sopron: -866320,
+	"sopron-hungary": -866320,
+	soria: -403310,
+	"soria-spain": -403310,
+	sorrento: -129972,
+	"sorrento-italy": -129972,
+	southampton: -2608164,
+	"southampton-united-kingdom": -2608164,
+	southport: -2608309,
+	"southport-united-kingdom": -2608309,
+	spa: -1970133,
+	"spa-belgium": -1970133,
+	"split-croatia": -96492,
+	spokane: 20144997,
+	"spokane-united-states": 20144997,
+	spoleto: -130123,
+	"spoleto-italy": -130123,
+	"st-albans": -2606778,
+	"st-albans-unitedkingdom": -2606778,
+	"st-andrews": -2606781,
+	"st-andrews-united-kingdom": -2606781,
+	"st-augustine": 20023904,
+	"st-augustine-united-states": 20023904,
+	"st-gallen": -2554e3,
+	"st-gallen-switzerland": -2554e3,
+	"st-john-s": -572899,
+	"st-john-s-canada": -572899,
+	stamford: 20019394,
+	"stamford-united-states": 20019394,
+	stavanger: -280816,
+	"stavanger-norway": -280816,
+	stellenbosch: -1287082,
+	"stellenbosch-southafrica": -1287082,
+	stockholm: -2524279,
+	"stockholm-sweden": -2524279,
+	strasbourg: -1471697,
+	"strasbourg-france": -1471697,
+	stresa: -130280,
+	"stresa-italy": -130280,
+	stuttgart: -1871728,
+	"stuttgart-germany": -1871728,
+	sucre: -701781,
+	"sucre-bolivia": -701781,
+	sunderland: -2609121,
+	"sunderland-united-kingdom": -2609121,
+	surabaya: -2698521,
+	"surabaya-indonesia": -2698521,
+	suva: -1195133,
+	"suva-fiji": -1195133,
+	suwon: -716880,
+	"suwon-south-korea": -716880,
+	suzhou: 79514,
+	"suzhou-china": 79514,
+	swakopmund: -2586743,
+	"swakopmund-namibia": -2586743,
+	swansea: -2609220,
+	"swansea-united-kingdom": -2609220,
+	swinoujscie: -531637,
+	"swinoujscie-poland": -531637,
+	sydney: -1603135,
+	"sydney-australia": -1603135,
+	syracuse: -129785,
+	"syracuse-italy": -129785,
+	szczecin: -531881,
+	"szczecin-poland": -531881,
+	szczyrk: -532039,
+	"szczyrk-poland": -532039,
+	"szklarska-poreba": -532181,
+	"szklarska-poreba-poland": -532181,
+	"ta-if": -3093456,
+	"ta-if-saudi-arabia": -3093456,
+	taichung: -2637824,
+	"taichung-taiwan": -2637824,
+	tainan: -2637868,
+	"tainan-taiwan": -2637868,
+	taipei: -2637882,
+	"taipei-taiwan": -2637882,
+	tallinn: -2625660,
+	"tallinn-estonia": -2625660,
+	tampa: 20024246,
+	"tampa-united-states": 20024246,
+	tampere: -1388513,
+	"tampere-finland": -1388513,
+	tampico: -1704008,
+	"tampico-mexico": -1704008,
+	tangier: -51554,
+	"tangier-morocco": -51554,
+	taormina: -130467,
+	"taormina-italy": -130467,
+	taos: 20084406,
+	"taos-united-states": 20084406,
+	taranto: -130476,
+	"taranto-italy": -130476,
+	tarifa: -403890,
+	"tarifa-spain": -403890,
+	tarragona: -403902,
+	"tarragona-spain": -403902,
+	tartu: -2625737,
+	"tartu-estonia": -2625737,
+	tavira: -2177325,
+	"tavira-portugal": -2177325,
+	tbilisi: 900047975,
+	"tbilisi-georgia": 900047975,
+	"tel-aviv": -781545,
+	"tel-aviv-israel": -781545,
+	tenby: -2609551,
+	"tenby-united-kingdom": -2609551,
+	terrassa: -403906,
+	"terrassa-spain": -403906,
+	teruel: -404164,
+	"teruel-spain": -404164,
+	"the-hague": -2152921,
+	"the-hague-netherlands": -2152921,
+	thessaloniki: -829252,
+	"thessaloniki-greece": -829252,
+	thun: -2554447,
+	"thun-switzerland": -2554447,
+	tilburg: -2153993,
+	"tilburg-netherlands": -2153993,
+	"timmendorfer-strand": -1874883,
+	"timmendorfer-strand-germany": -1874883,
+	tirana: -108649,
+	"tirana-albania": -108649,
+	"titisee-neustadt": -1874960,
+	"titisee-neustadt-germany": -1874960,
+	tokyo: -246227,
+	toledo: -404357,
+	"toledo-spain": -404357,
+	tomar: -2177563,
+	"tomar-portugal": -2177563,
+	toronto: -574890,
+	"toronto-canada": -574890,
+	torquay: -2610007,
+	"torquay-unitedkingdom": -2610007,
+	torremolinos: -404759,
+	"torremolinos-spain": -404759,
+	torrevieja: -404832,
+	"torrevieja-spain": -404832,
+	torshavn: -2752670,
+	"torshavn-faroe-islands": -2752670,
+	torun: -533064,
+	"torun-poland": -533064,
+	toulon: -1473153,
+	"toulon-france": -1473153,
+	toulouse: -1473166,
+	"toulouse-france": -1473166,
+	tours: -1473290,
+	"tours-france": -1473290,
+	townsville: -1605526,
+	"townsville-australia": -1605526,
+	toyama: -246605,
+	"toyama-japan": -246605,
+	trabzon: -773700,
+	"trabzon-turkiye": -773700,
+	trani: -131185,
+	"trani-italy": -131185,
+	trapani: -131189,
+	"trapani-italy": -131189,
+	travemunde: -1832925,
+	"travemunde-germany": -1832925,
+	"traverse-city": 20066299,
+	"traverse-city-united-states": 20066299,
+	trento: -131282,
+	"trento-italy": -131282,
+	treviso: -131327,
+	"treviso-italy": -131327,
+	trieste: -131346,
+	"trieste-italy": -131346,
+	trogir: -98777,
+	"trogir-croatia": -98777,
+	"troms-norway": -284406,
+	tromso: -284406,
+	trondheim: -284421,
+	"trondheim-norway": -284421,
+	"trouville-sur-mer": -1473931,
+	"trouville-sur-mer-france": -1473931,
+	troyes: -1473937,
+	"troyes-france": -1473937,
+	truro: -2610245,
+	"truro-unitedkingdom": -2610245,
+	tubingen: -1876189,
+	"tubingen-germany": -1876189,
+	tucson: 20007417,
+	"tucson-united-states": 20007417,
+	tudela: -405242,
+	"tudela-spain": -405242,
+	tulum: -1707023,
+	"tulum-mexico": -1707023,
+	tunis: -731701,
+	"tunis-tunisia": -731701,
+	turin: -130938,
+	"turin-italy": -130938,
+	turku: -1389822,
+	"turku-finland": -1389822,
+	ubeda: -405326,
+	"ubeda-spain": -405326,
+	ubud: -2701757,
+	"ubud-indonesia": -2701757,
+	udaipur: -2113635,
+	"udaipur-india": -2113635,
+	udine: -131482,
+	"udine-italy": -131482,
+	ulaanbaatar: -2353539,
+	"ulaanbaatar-mongolia": -2353539,
+	ulm: -1876794,
+	"ulm-germany": -1876794,
+	umea: -2532255,
+	"umea-sweden": -2532255,
+	uppsala: -2532413,
+	"uppsala-sweden": -2532413,
+	ushuaia: -1018179,
+	"ushuaia-argentina": -1018179,
+	ustka: -534125,
+	"ustka-poland": -534125,
+	utrecht: -2154382,
+	"utrecht-netherlands": -2154382,
+	vaasa: -1390532,
+	"vaasa-finland": -1390532,
+	valdosta: 20030311,
+	"valdosta-united-states": 20030311,
+	valence: -1474436,
+	"valence-france": -1474436,
+	"valencia-spain": -406131,
+	"valencia-united-states": 20016576,
+	"valencia-venezuela": -960192,
+	valkenburg: -2154420,
+	"valkenburg-netherlands": -2154420,
+	valladolid: -406201,
+	"valladolid-spain": -406201,
+	valletta: -19310,
+	"valletta-malta": -19310,
+	"vancouver-canada": -575268,
+	"vancouver-united-states": 20145212,
+	vannes: -1474712,
+	"vannes-france": -1474712,
+	varanasi: -2114217,
+	"varanasi-india": -2114217,
+	varese: -131903,
+	"varese-italy": -131903,
+	varna: -839465,
+	"varna-bulgaria": -839465,
+	venice: -132007,
+	"venice-italy": -132007,
+	ventura: 20016621,
+	"ventura-united-states": 20016621,
+	verona: -132092,
+	"verona-italy": -132092,
+	versailles: -1475811,
+	"versailles-france": -1475811,
+	vevey: -2554683,
+	"vevey-switzerland": -2554683,
+	"viana-do-castelo": -2179314,
+	"viana-do-castelo-portugal": -2179314,
+	viareggio: -132191,
+	"viareggio-italy": -132191,
+	vicenza: -132209,
+	"vicenza-italy": -132209,
+	vichy: -1476098,
+	"vichy-france": -1476098,
+	victoria: -575350,
+	"victoria-canada": -575350,
+	vienna: -1995499,
+	"vienna-austria": -1995499,
+	vientiane: -2669740,
+	"vientiane-laos": -2669740,
+	vigo: -407214,
+	"vigo-spain": -407214,
+	"vila-real": -2179752,
+	"vila-real-portugal": -2179752,
+	vilamoura: 900039091,
+	"vilamoura-portugal": 900039091,
+	villach: -1994484,
+	"villach-austria": -1994484,
+	vilnius: -2620663,
+	"vilnius-lithuania": -2620663,
+	viseu: -2179985,
+	"viseu-portugal": -2179985,
+	viterbo: -132645,
+	"viterbo-italy": -132645,
+	"vitoria-gasteiz": -408890,
+	"vitoria-gasteiz-spain": -408890,
+	vodice: -100686,
+	"vodice-croatia": -100686,
+	volos: -830589,
+	"volos-greece": -830589,
+	warsaw: -534433,
+	"warsaw-poland": -534433,
+	"washington-dc": 20021296,
+	"washington-dc-unitedstates": 20021296,
+	watford: -2610992,
+	"watford-unitedkingdom": -2610992,
+	weimar: -1884584,
+	"weimar-germany": -1884584,
+	wellington: -1521348,
+	"wellington-newzealand": -1521348,
+	wels: -1995338,
+	"wels-austria": -1995338,
+	whistler: 900000001,
+	"whistler-canada": 900000001,
+	whitstable: -2611649,
+	"whitstable-united-kingdom": -2611649,
+	wiesbaden: -1887737,
+	"wiesbaden-germany": -1887737,
+	"wilmington-north-carolina": 20095750,
+	"wilmington-north-carolina-united-states": 20095750,
+	winchester: -2611813,
+	"winchester-unitedkingdom": -2611813,
+	windermere: -2611820,
+	"windermere-united-kingdom": -2611820,
+	windhoek: -2587496,
+	"windhoek-namibia": -2587496,
+	"windsor-canada": -576073,
+	"windsor-united-kingdom": -2611829,
+	"windsor-unitedkingdom": -2611829,
+	winnipeg: -576096,
+	"winnipeg-canada": -576096,
+	"wisa-poland": -535705,
+	wisla: -535705,
+	wismar: -1889625,
+	"wismar-germany": -1889625,
+	woking: -2611963,
+	"woking-unitedkingdom": -2611963,
+	wolfsburg: -1890440,
+	"wolfsburg-germany": -1890440,
+	"worcester-united-kingdom": -2612109,
+	"worcester-united-states": 20063716,
+	"worcester-unitedkingdom": -2612109,
+	"wrocaw-poland": -537080,
+	wroclaw: -537080,
+	wurzburg: -1891486,
+	"wurzburg-germany": -1891486,
+	xian: -1931562,
+	"xian-china": -1931562,
+	yamagata: -248164,
+	"yamagata-japan": -248164,
+	yangon: -440623,
+	"yangon-myanmar": -440623,
+	yangshuo: -1935586,
+	"yangshuo-china": -1935586,
+	yantai: -1935855,
+	"yantai-china": -1935855,
+	yaounde: -3160026,
+	"yaounde-cameroon": -3160026,
+	yerevan: -2325645,
+	"yerevan-armenia": -2325645,
+	yogyakarta: -2703546,
+	"yogyakarta-indonesia": -2703546,
+	yokohama: -248593,
+	"yokohama-japan": -248593,
+	york: -2612321,
+	"york-unitedkingdom": -2612321,
+	zaandam: -2156180,
+	"zaandam-netherlands": -2156180,
+	zacatecas: -1708981,
+	"zacatecas-mexico": -1708981,
+	zadar: -101499,
+	"zadar-croatia": -101499,
+	zagreb: -101579,
+	"zagreb-croatia": -101579,
+	zakopane: -538221,
+	"zakopane-poland": -538221,
+	zakynthos: -831270,
+	"zakynthos-greece": -831270,
+	zalaegerszeg: -870672,
+	"zalaegerszeg-hungary": -870672,
+	zamora: -409113,
+	"zamora-spain": -409113,
+	zandvoort: -2156256,
+	"zandvoort-netherlands": -2156256,
+	"zanzibar-city": -2574823,
+	"zanzibar-city-tanzania": -2574823,
+	zaragoza: -409149,
+	"zaragoza-spain": -409149,
+	"zell-am-see": -1996247,
+	"zell-am-see-austria": -1996247,
+	"zielona-gora": -539726,
+	"zielona-gora-poland": -539726,
+	zurich: -2554935,
+	"zurich-switzerland": -2554935,
+	zwolle: -2156821,
+	"zwolle-netherlands": -2156821
+};
+var hotel_photos_default = {
+	hotels: /* @__PURE__ */ JSON.parse("{\"ae/ajman-beach\":\"63934778:7408cd72522fd01ddc2cd6a95cbfd4782e6282b1c5262882d17544b4afe0f2a5 63934791:86270dd1400220250e4436e3061717010515eccc45ef73a96de6b473831ee059 71291631:500bb434d1315285e5ce20e0e56b7352219cc909bf60dea8d3134f2a66372c25\",\"ae/citymax-al-wahda\":\"260872886:f602d0727c1ecdca8e29668116e1dcb51bda6baf3402fc77f5d1449c3adde5aa 260856689:501a295d58512099f74fb466dcf883e5a51b644d8138d13f40f80ba8d40b51df 42042499:da0f97313bd1476190b4aa095165b6c504f69ba1fa42bc5d3a00c6b34699acc7\",\"ae/radisson-blu-hotel-and-resort-abu-dhabi-corniche\":\"326824830:b8d3223d6337f5cd7457f58d4b05772ec2877891b199945eff1d4647ccc3c57a 301224080:374c6898683bd5e5c0e4dd6832b62df13f5b3ca76cb73c9be7ffe5bd4de51ddc 301227033:27d8d6873e2ee0b021594652fadd23f89edb32f004186ed7765187c6fdb51d80\",\"ae/radisson-sas-media-city\":\"328785361:d765af7d93d2b569eb010871b316a8be2aeb4949ab0ab846b3834a092de30ff5 328785406:0f381d15556e6bb414d5c41c11e7f566d992d3a99103230d3e54f726bdc6f31b 328785403:db41ee502b8d2ec3df72235a6b7eb7a7cf98836bc6767c9b02a56611a97e617e\",\"ae/rose-rotana-dubai\":\"880336949:a99c3b7044481773a91fc7736086f12788724626e6fe3ecb60c0533bd57d1d68 880337402:31da64eb182fdff75d1366107e8d0fb29670f2e6d4e88b2d300747a9f278fdab 415011466:75d6ed3293700e1e7b733be24b6f62bd75d28b6ec51dfa63cba94bbf980e7f24\",\"ae/rove-city-walk\":\"314180471:9a198adc53deb35052ff316ae3e04f295d489c160393f662b146eecd6d5b0b81 326197646:6affb18ce69923f2dc9af60c7d86b432923eb11d18c6d9099e0509b3e13c9c81 314180408:681a007be670fd60c7e9c14d3f24cbb112528be0ae1cbf96ba74c25c30bfdab5\",\"ae/the-fairmont-dubai\":\"926315839:f4f4c05dc67c5036d36d6e2798642632375d984e91739ebe4b842e772045beeb 926315845:adfc64f84ea19bf7988c0259be20fd342a5e0d6e109e7eacdea555b7640ecbe8 926315844:70598c18728817fd7cec80f9bb59f6631ad669d7900f861ae52c96607b7aa0ad\",\"ae/tryp-by-wyndham-abu-dhabi\":\"741912311:4d93e33ebcd83250149b3c8628c3bf9c7fba1cb405913f6bd2f7eca8d181b577 767846813:9a856709bb351cbfca9469bc1e7d56331d55a489dce60de4652c33183537ee36 767846816:4c92b645b3a28879ca011995a8a0a37147d600510aeda7a28ae7e94a0baa04cd\",\"al/hilton-garden-inn-tirana\":\"484104749:aa0c9921211654cbd3879d6dd5b37a8e2129e3aceed2c409fb89efb7119714d9 528704317:4fdfd45e32236e3a0d0e15f201d07d99af8cc5a55cf9a22490bfa137143f303a 484104795:6eabd9b2687bcc5dc508439e193b5631044287c0aa7bee15a7a00b55c0720a96\",\"al/real\":\"557112017:eae3e66680456c266bb9eeae297582a437c1bf8c585b56d5604bb9ee81256a9d 292987656:6eb3c05ee59019fd71b4183f0bc886c09bca0e8c91007b999c48227f1a29ee70 292987615:98118b491f34faa976f7bfb67a5e49e51f32ca61c5fb5550a0308904a05c5a96\",\"am/courtyard-by-marriott-yerevan\":\"538440861:76bbb4b3fb26717bb7eb3136cad8ec931c6df83a140a2f3db99dda27d8fe6aad 538440867:f30aeac334ada8098dd35391a3d58426242de9bfc6c2003d72a20c1d0d0af800 538440926:9e7cc9891ba6243b53d565b6104963c47cf81085a875ad0ddfa6761b56da241e\",\"am/marriott-armenia-yerevan\":\"453399810:40052eebbac9efcf0f334557232a9b34b7811ce7cdfda790b720b22d99950aee 453399803:711cf61cd7a167778bbffb319416ac943c2de3d40ce72051ff8a29bcf523714d 895516324:5fd186d530a48e293fcf107ca4965156fa5dc9f01dd005ff9e04e3250d757c8a\",\"ar/alejandro-io\":\"924591543:2994721ac29b69c69f5f8bbe2a28fa68977ca6f153471e77a348c5adab35676a 924591540:fef6770968a0ac6a3692e831a158b35ac1614848b7d5d0722b6304f3e75568a3 924591604:20363efe13bd72bd702bb9b9688c14234a9d1a93fd3fa15d2f11c82ad458c56f\",\"ar/cacique-inacayal\":\"48115146:74276cd8eb4c39d20b42b95d8322cb09055b7daf08f064d6f8e15f49411db4bc 931940425:eaa7b7eb2c1162d5f464cb807344ebb9b067c0ebca422e7f5a84834de68616f1 40402789:bc9f79da7e07d1e9afe6ab8b5832cd85ada19a553f4e27cb06f113b3c7cb1290\",\"ar/design-suites-salta\":\"620252824:8754d3ac5a6babb00629f3fcac02ee118e0628ec48210459356d2323b9d4ae99 620239375:ddc7e32e168017b5ce57475d7f5dc2a7e179689126fe01a7b85620814e10ec72 620239400:75b15032e9eb20b59c65c4fefd26eb02bede7e7dd7e0dfc0627adbf776cdda2c\",\"ar/faena-hotel-buenos-aires\":\"898692781:37a692cd9b391865a8f3bebb2ac74d1c41fe605c3b3d1db86e2c36a3b975ab40 54138953:c38b0765ac610d1dc28400b2c1601c1351c0948d1cab40a1fc5338372a5db285 10953633:d63676bb346691bfa1cefdc85acee2604826522082c433a110a58ac354fbf88c\",\"ar/llao-llao-rsort-golf-spa\":\"283201085:bac160a434abca3514e24b6ea00bcc86a4f0c3a64fe9e8b09ae542ed4ec54550 283201082:0ac4c14a788406bad2aeecd10f8d447b16b351af183bf82a8a47c697d5372fea 283201089:a801166f9d5e2fda80c6ccb4658dc135831a9a14f84414a9467c768a79f505ab\",\"ar/windsor-tower\":\"320462657:1ebf72216a51b1833248e9fe7fa30a31b0e880188390b443190b0ba665ab376d 320462656:a3c94596af3e0486f163379d634a67712fcc805b9c20dc65fda6240bb5a58a56 320462652:a5e65d7cf9da99c62e4d9c9d0a51a08cfac74bc147e8e2420d4d2a7b74bfb506\",\"at/alpin-resort-sacher\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/559367201.jpg?k=bb0ac1525c277c4c0e7f2cd526210fc5f2f1e0ef381142ecdcbcbd6d88928fb9&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/777066431.jpg?k=9a1a72838b94e32d7adc12d6a858c1dce2cf3756f3a5c403454893ddf20c646c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/253383733.jpg?k=1a84b1ed85a70b548f10aa229c1dd0716d091078a255ce1fec0c135e6d870400&o=&hp=1\",\"at/hotelinnsbruck\":\"615479935:9306a043f9290c80f2843d7798a6b18078126818e834dda97ad29345f05a0830 615479950:ff4a9766d7d20de80af77d3b098b8d7ebd99860de727f8dda75b3b9dd8bf99e7 615479934:7420210b287cd1e5ccf5e37d599ea3f622077087043b0cf7c37a34eed769b164\",\"at/mercure-bregenz-cit\":\"871513572:ff697d5125eee858f54890ae28ad230273ebe9f66dedf01e70dfcd6da7a83a83 881684666:b06715498d03e17d8cc1c5699b516b5cc78a7b988dc5ebb1b86720dcedcb1230 776539032:10d0c677ca4244a9848cf4dff2aad101cf52e5778e7545779934fe3ae0bc44e4\",\"at/novotel-wien-hauptbahnhof\":\"764035791:4704d1611fa25f2c1503f8b8623107470f738d1ab3fbd880acb8fa5fb65a48fa 880673109:a8599b04a52efc15a33f0253769ea884f1ebc396494036eaf60fc9d6231e2c7e 777217466:70a01d90454dd0d22a8edf59b06f4183eb412bb6d836c87a714d11347dd69b65\",\"at/parkhotel-brunauer\":\"https://static.cupid.travel/hotels/10416656.jpg https://static.cupid.travel/hotels/554707693.jpg https://static.cupid.travel/hotels/554702501.jpg\",\"at/restaurant-dermuth\":\"270561897:911c970c56ba52be006d0c4dfdb24ddecc8ceb5fe50fa56d1b5681b13c7118f6 270571270:ef4911bf2c271cbed78b1a9ded4c3b2cf18e656605a5190b9c42813ccc84d789 270571573:b41fb0916d1c0d003c8a9fbf0d400cbd9aeb91f27c3b0d48bf64bc183ad8d0c1\",\"at/seepark-congress-spa-klagenfurt-am-worthersee\":\"925701835:91478d71ca583cf7692564e014ee0a08ac3a938439ba3b7d909ebe6acbdd17ce 925701994:995ce89c13d5d06d7b312c617568814e8609b3cfa9482b3ce650b4de9b33ac90 925701840:403a4258a379f5196f470a5ba92628efa865d7f32b78562249a40cba8d13fa31\",\"at/thermenhotel-karawankenhof\":\"670380170:ca5b9e118002aac361f07b35091a5a11b059b3fbafdbe97084efe98dbeecac2f 670380169:81eaaf372a1a55c12d1e68ca2e7222bfd3803294c29024ce7b84b2e114b6e6d9 670380384:2b2fc4ecd5436817b77aebffbd389b0e3430e30532cf4ecf673c5c3071a16367\",\"au/crowne-plaza-geelong-by-ihg\":\"859431886:a84d3216c35103aeaf2385037e39653c910c23c50aa90e90755b104a0e9d0790 822323485:903065ff8aeb468cfcf2c35e7929fc44f410b36db936782e0d66e40ca910a3e2 880802644:67c9fbc2537810f33a8b2db888dd338a9d26b47226962ccfc83298cf9bc45c60\",\"au/fullerton-sydney\":\"455472218:7c0a065bafa261750a2afa48e42fc25446d4fd99348e38186a07c0f0c784426f 455417770:6f40c58d7b838dc439d0a53b2c4c8c3538114d589e79cdaa5c6913cc9e5bafcc 455472147:8af18d68734fbb193151747146d77b5b288bd3fe12b0c6bc1f74e483b132d4f2\",\"au/hhotel\":\"669739621:5795c60611be6096b4c3167ab2b2032cd48af902d51f21452b4396957c734d6e 669739613:824ba5f3d434762f30fcaa7f09f987fc0f56736531409c806c4451c88065b96c 669739643:1f8eb6f59d3d9979d60b451eb208707d3691a230d6738ab23e75aebc8d96d973\",\"au/hyatt-canberra\":\"https://static.cupid.travel/hotels/543815274.jpg https://static.cupid.travel/hotels/403888309.jpg https://static.cupid.travel/hotels/403888592.jpg\",\"au/imperial-hotel-gold-coast\":\"930940968:6ad6f85bd27c4a49c58cc7f4094fa13d80e234a68a75ae61cc5afcca84ac0ca3 930940964:b59375584f94a24c1a187308dc1ffa47173eafa60aaee4ff22afbb37c595f2b6 914752809:16f6edb479634fc67f0b0d2f663d028292c6047c346d0a2ee94708cfb9307953\",\"au/novotel-geelong\":\"765808335:cfff37a1bcc248e1a5d58b0a68d89123f21ae2513adb732098f8fa203f661245 883297027:a9c2c09740face853eeff0b91618622aec2afc24aa6a19dc427de12fa7605351 876875640:410c6da1bb2961de65dae800be8efc1758b1602e0ea6caf0b38761e795c95815\",\"au/pan-pacific-perth\":\"568230633:45861a3c8c1f35fced864524935076c7ddcb3a77b5573ee922bb050939bb7801 568230687:202ba119ed09c89547d8aad71aa610578ed0cacda9a3167118bf6b004e87f2be 544289986:dc489e41d821f8869a81f31ebe70865d101f46b7c05b95da70761101cd1a3473\",\"au/stamford-plaza-brisbane\":\"500344705:7c281c5d82b4dca0fdd09bce503ac49e7e5829a51f33dbd1e206e8d8652f67b4 600599145:839154094db7156985ad024b7ccae553dce275260ffdc47ced20c4b3a8159da2 500340291:354f2ed19e5027cc919d5b0a3fb6fd35493e112be4d3e0ffdba08d69c50ba447\",\"au/the-calile\":\"816887599:d45954ae2a2f6790b1cf97f0e675fd01161bc4c8e1ce1b04468a6f2a268537dc 931423448:2935b6dcb6f8b9c79e0d2e26973b2140eba2388dd78748ecbb252d4cf359fbad 931423439:0db98c61a97ca1fcbe06808c96ece6665ccbe3cebce97c4b7b90fc42bee24df3\",\"au/the-langham-melbourne\":\"32751780:149b6947fb07a93aca40964eee5764a3697e4e4e8e41040d31cdea0dc98077bf 32751778:cf282be790c649bd78b2e8ef2f5308db977641d128d540b3f5562ccdd2473854 737184020:8da7debf698609f666448b8790f7932c71b5beabf461280ba1d0f4d9770842ad\",\"au/the-sebel-playford-adelaide\":\"765785786:a8e8c981b96de2bf9836fcd9021e2a4ac2cd896f7ea503dc26d386fcb92c0946 765785788:0a8f1e2fe3836812c68ac077f0e3b420b095935f3eb45752cde5f7612d71dc0d 765785805:ae02a1bd88e154564ef0f356f037609e642cb34af8a6440f336e282b6238d24a\",\"az/fairmont-baku\":\"933494435:84ded328685ef9d8f105dc9b275828ba9fad2239309dd891b754eee858d90042 933494393:c82e8805c3deeeb02fa1c218c53b729cf4de48022c1637d4a4c72b6cbbb6f554 933494386:09e096001d2cf17ba9e56a63357abc6176f4d97b77e793f48177d8c22ba5eda7\",\"az/radisson-hotel-baku\":\"369023294:224182448dc500784c5a359543c3f272796214c3f2e33e109c9bb70e935f5f46 369023292:d69ea6716aa795638644e7ab705d27fd29e9b88e34f4f49e48f70f43b1cb01b0 369370533:a976ed26db4b85c2ccaead15d228c9e2d595feab6d39f72a8aa152a6dad3c183\",\"az/sheki-palace\":\"351591353:6cde93236aad050867b69ad59a0e7f3495b3d00a68586290ac0d6b11c8db68cb 351590781:7b36a8f520f211745b32743fde7411a43c240c0a6e0c05dc9ce5dd87d9e29578 347828769:e18f318b72cb9d2f86897c98083456b5f5d9c119382e56d114ef34654172c24e\",\"ba/radon-plaza\":\"635153483:c49315acdbcd6427101a96b0665cd2652375863d76043f12c9bb0f9219d68b79 635153487:e15793634d87db3e14648fc2533667d32fb52ae8d25944da621ffad2811dbfc2 635153485:fcfa41fc58e155e193af443a8b7d1287c5098ca7ef29426c1c54d695d51c420f\",\"bb/barbados-needhamspoint\":\"538409369:98603c0897e8f9734ab3cf06a6d7dd01821133091146b3f5850272c2a97902c6 538409374:bc678a16988ed118a98a5098dec66ae3a6e751213e93ed0a876e1d7173df8e62 538741577:3b5e7348591941e76bfec54314961535e12ba2c196d9e70e01c29250c2af09d3\",\"bb/coconut-court-beach\":\"234213237:64e4b872799116eea89fb5b5961e50c80b8c377ad92d1adc10b1866645e61cdf 242743282:58fc809d355a6a5a00a955dfb63af9871e9f39b0703b12ef09e6c5da8cd6a990 242743294:fc65808f33c9809401d2b2f190cc8a8b6b62b766c2caae331261ff60a9e995ee\",\"be/aspria-royal-la-rasante\":\"30798055:72b7dececcfacf394feab5cd219e40c56c54c76805c569c9ab1cca0fe4a47d7a 30798053:480803656148b837333cef9891f7c07595dc5483088c9dbee0f7f527c52e18db 42209036:10f53735c3ab685771ec43fa273d02637634ff566582f97a120dcd16444b0f06\",\"be/ibis-heverlee\":\"886817299:a2a7f6ef114356b096ba18cfc0f5e8bfd3582760ed8682fd846605d9e2956a5d 886817303:2b32f257884b1090d2b84a7a48733964511f7d7486490c98493ffd3ebf66f4e2 928265123:c3bd59f4133473d02953cfcc68e56eb8d90fb962b6e6382ad60e965fc1414755\",\"be/ibis-styles-namur\":\"930956967:b15471d3fdff30651069a03853584bbf19a2cdc310e51ea75ebccc51633c0ad3 930956972:d8d0f084a50104eb4cffeb836a7e4c9b8fc7a5380c6857da7f2a417b7db83159 914971101:a66a287f5a31a57ab8d4e14a7e3dd718fe50c36c6e1239e75d5ab4ad809822c9\",\"be/ibisnamur\":\"749759014:0758a490c1ba785bd1e108d4a43881c0a65b81e436f1d72fed7b0c8ad0d507f5 903465758:f9253673132b4819f0d0af9eedb9fcfa774b14901998b70eac3e84a2951998a7 903465760:fe2efef0eb1e2ed337a7cd32b1064e81bf85a7829f8f07c1f32e36512e59c3c8\",\"be/les-tanneurs\":\"886735769:9e5686ffafd4cc864326893bfaa5428bd7048a8820cce5002e3e1f5cf0680f32 886735766:1631caba2fdcddf6fc157b03966cdac3308b9937982f49e918a9a44badf19b74 886735755:c5626eab8a23eab4ba175916ce76f96284773050f7c9b2acda0b434630ad889c\",\"be/nh-collection-antwerp-centre\":\"749318221:714df5c0b6a67a5dbfda0e47d798645a202c8159fbcb9de6771a2f28c0397cc8 749318259:8f569e9a1a0b8bc503074d07648d7eadb03682e1ab47c20d455c4377103b3afa 749318294:8d82e0bdfb76c73ad97b58b63558afb55fe39f4e7036e2f65270a5e0d67c0d99\",\"be/novotelleuvencentrum\":\"876162288:67623e04142414caa735a34fac0930ca0c2736bd065e63148e7ab76aca21a75d 749757796:558d9d5d2a481a8205a4e09467c47b264f4175f8a571d8f6be7b4cd6aa614a1d 869111629:fe414e45cfc65618c386028d5280fb262bc80af4b1655e464abc30c4745813ea\",\"be/park-inn-leuven\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/232821853.jpg?k=808865b95c3243f325ebf1dc58a1a99fe13f36534b1e5e68ef815ad9086273cd&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/232822275.jpg?k=40eacfbd4391756c16fb2d23162cfc8103255ec7ca9b6115b7e059e468d56e77&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/28318546.jpg?k=236d8a1235482ecccc03750cfed0e52ac6573c56f0a13b9b9b8102876b6c3fd0&o=&hp=1\",\"be/royal-astrid\":\"152278797:7359b05afcc5f4adb1f245f3ce90a97521279178b888620db0b1a487f8dcc1b1 152278787:ab98a5f930019065c3145d231484541250a18b89aebf94cda48aabbeccca86e7 152278790:1b2075922905a67519f0a4182d960933216fd40e7b354f0ff0ca244500722f66\",\"be/steigenberger-grandhotel\":\"222626929:c7de0214e5b70de01146c4730920a68355cf60b3198fa16903b30f8d63085d6c 878982739:6cfbfd79d6b902a0b00ea499a1c3295d123735bf8a7f37f19f4a40b042a15b74 834356823:5a385d0d8770b056a2fe9064d0da8707893e858523dd5bd56a71b01c646e954b\",\"bg/doubletree-by-hilton-plovdiv-center\":\"929290413:3d093600244a8d6fb8f46375d642e47794fdf8e42c5d0b1d5742ecb3f9a13806 929290500:c248f9598e7ed6e525c0ed6f4969f6838394c8a4a78c73fb49449a66a0329ad9 929290466:3042075719d95d50002c8117903eb4836211dc9897517c477206419f8b8d5b93\",\"bg/hyatt-regency-sofia\":\"270395752:f5f328097b62218f0d513359eb523c15d98f540101c83ed1923b379a906f8219 262017594:f402b4f36affed195d9c79949d6a4b9096a4321e3bd63ea2501d2802e488776b 270395785:59b4d6024592f7d3b86d6aa967d8c4e0ef17f44e301c7d38357b089c65ee17c1\",\"bg/luxor\":\"921271105:255cdca6918144b975ea127061404ede03e9b735dffbac7777dc721230e6d2bc 921271135:328d5b8f3380b590e7752d1ae8c74d3e0a01c44b90a6ce5676439964cb6da3f5 921271174:67b73489a30d2efbaeb464f582f1ed5bc72fd9b6f5da3cc6a5f2839a134f9099\",\"bh/four-seasons-bahrain\":\"47532899:bbd5607f0af5d9f89f889305d01103b6f6bf0751f88eb20ab6668e762a355bac 50407680:8328e57d4cc7545bd02f1859879cbc31ac3987fa71dc3f8713672aa6d80ba2fb 280065827:3f9bca6d1da6d3300cd0a756a91770a358d7da18236114b9b7e7c69b354f22e2\",\"bj/golden-tulip-le-diplomate\":\"908634242:e39627346a1535ad4c5169c73c2887acd4c3e3bb04db717dfde0f4480f7860ad 908633866:349f89c80cc4d4528543f343fd5ebb23147af419649b431f8393bb5141628bbf 908631360:969561271d84be8b29b91629ff893ef76670049e0819667b3b729fe4669c2c46\",\"bj/sofitel-cotonou-marina-spa\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/875880446.jpg?k=9a27e96004fa9e72df77991063a87aecf780474bd3821210283b0051a3433902&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/878605436.jpg?k=1eab36514d19543bb32f8d4a3ece37593ed16dfd138c46efa41372b546bee96c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/908219353.jpg?k=d3dd72305364c4711a1a2e19a4a283e2677a85911e30b36d9cfd40d09c80a270&o=&hp=1\",\"bn/radisson-brunei-darussalam\":\"781114048:32e9f72d93ba1781f417f9f94cd556634e0adb150befd2e3f4781e1c6cf6025f 781114062:f29ca0a969da3154e056c3eb9f4fe04c8253424b95fca0f4a98370698f7dae58 781114030:45c67e85ca6fcbe1dcc360b5736e2992aae00368c7d29b65201d939e566719fb\",\"bo/aranjuez-cochabamba\":\"871258646:71f34f9750e325ddc46339059f12ab5769683ccdace1294c611eb85376053a64 871260581:8510f40dae9797879e0767f060b90e0e0a868ce969e0ad87c83bdf7e92d34b07 871258734:cb772c035f12f8c6e50c9a1b36150bc0d0fd10d634e69b499787079b0f72e9c1\",\"bo/stannum-boutique\":\"586051638:4408fa7e00479010ff5aeab6d5bd5bfef9ae1018b7ef36a2412433b8dcd13367 586051594:5fc0149219c29bff7305a2cce4301ef6cc2d1cce8c890b2fe081a8043d9bba88 586051609:64730b15055834aa022468d7aee2018ac64cd85dd0101b8d7b262827767c6078\",\"br/aquarena-suites-salvador\":\"54811924:8ec187637d1b059ce7c9adf09fa5af7ec0d27fb4434da1ac2b93db19361d9278 54811953:3543509147a6a6e54f70014ecb6f013d862628b6f74780b30f5e7d3e4f7341b6 63506041:b9a35017c658b909aa09f0414093a9392982ad561ce3370c3aa4999bd659f330\",\"br/blue-tree-towers-bauru\":\"132330312:f1408de23b3594ab67ea49548fe049903612438e668f93dc3e1f00e6b1b94ef0 132193784:b86e2e04c04bf38bef881d5a847366d83d02f2d09444cb39aeab7b0731b128ec 132330302:977d8256db3f751e4db96d7495ac597c4845b1482c2029df5631d9435099fd92\",\"br/bourbon-cataratas\":\"913983471:be4a0053d1a34aa2c4d88de5f2024ff3f24dd7123205d82dbcafe7b727da7981 913983467:d42151e15fa0772fe1aebd51dc62b46f25a37f9e5668e0a13200c52eeefcfe1f 913983470:c0e78e4a579a634d11d96d019eb66985ccf2ffe3b7a412df56069fc1a5b95efb\",\"br/campo-grande\":\"934478400:929e1b20e0dc3a744d07d8777eea04e4fc6e503c04bcbb469bb36f9f911d3ce6 846222075:21b1f955c03e271e30a962d54714112a16a46994365ba753b690e3c3561ca481 883232739:e488e77408096ed92a07169c4202dd1f10f45957095c0c3f1e5813006c7e7c68\",\"br/faial\":\"793283477:6a509dc74ef28093fb9aedd4fab7e5a64203fc353115e47679c27088b6281016 793283705:ed64b3974ae3bc74927e8a1d24659b460c084e41defefb491effeb31f5c25093 413375056:651fae27d21c0a695057b88902b5933f9a2fe95a3126ddcfaeca4542e25609e8\",\"br/fera-palace\":\"545276810:43b36f10d5c5fe8f841ef1f375e7f1ca52285f0ec5ff9660a2bc27a9d70f6719 545283073:8af31ea2e9c428295737034180900cabdf2a4af84bd850534532899da75c050e 545283118:bb07958bcc4155498699ae2fd74cca536dc0579a2c1c4ea604536ab3341158aa\",\"br/hampton-by-hilton-caraguatatuba-serramar\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/796546365.jpg?k=a6c59856a71a998cc69e7bac44cf21085c93c0b67061c4d6c29cbf6fcc1f56c8&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/796546504.jpg?k=727b1ba638f1d65caf619f0759bc7224f735b58f68204d855dcba002b0046f37&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/796546396.jpg?k=9092479e45e667c61868ad9f351b358bc7c0f3b99b54bf900519ed89af90e1c2&o=&hp=1\",\"br/hotel-inter-cuiaba\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/517398679.jpg?k=926075322f4b6f52b38b309e5905770d12dd0d4cf58176a6ef13b82679f76f79&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/855963924.jpg?k=d7439ea0df6298da74159e9808a73e2a099f83277c190f99995bb477338d41ed&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/244428408.jpg?k=63f2136c5fe1deb103f52b5604aa20dd3ff03ed4cfc982dd3f6d8192fb4973c8&o=&hp=1\",\"br/hotel-princesa-belem\":\"708173697:dd7423c4f3b0e25dc4865ad17ddb51f029680ddaa51adf97b33fd1706848ef4d 708173744:d62e77543c235c81c1278a6952809010c513075f992342ff25dcea867a18bf48 708173808:7593ba61dabb93047fbe80d758c7fc345b9e688438f82331e55f60ad8175eccc\",\"br/hotelspavinho\":\"505822969:1400c1211ce1b4d0c2d9f167f44d503fc2a5c8b1b767eff98e15b5f3c70076ac 505823103:655949e6650f0c0e41bbc533794513b84614e1b3e6e97ac7307518bc12430df3 505830898:b5f63fc5d4e9ad9e282cc6ebbc2a6f247279b1e235ca1c10c8e98b79d0bf6f1b\",\"br/ibis-florianopolis\":\"880422790:a531d3f7bb315b77fca305db0b7102a861990758f6032a76defb333af8da1867 924561833:25cc3b2a055adc38da018c29c30d857b93eb80052c248fade98de009e26f128b 922254091:906491421ef5c26d5184575f001a797d7a6d793f2e0373ed81a7cda0bfacba3e\",\"br/intercontinental-sao-paulo\":\"669663398:1d9be2757d83ec286df4bf53588af04b70909f359d15a737eb7d9b7959d25b96 669663451:d0fd5c2b7c7490170fa14dc9390e0d2579657d0b9d457191b52f81bbcc0a5b78 669663307:7d0bb0ccb8ea130662189d3c9290552c46b54524dddc78e8ecc87a4b1b84c3e3\",\"br/laghetto-viverone-estacao\":\"683957027:aeb31f7b2d19af2f78d5245cb814e8a392275031c840ab038220c42b8034c1f0 683957028:2e1801ecf4706ace7e478702877b249f4387a446a4a5a335688f0450f36c6e6e 385221276:53c17b4b874f3fcfcd200033723b0edbe87da77ac24e08086419478f7d7f2bf9\",\"br/melia-brasil-21\":\"923785321:102b6cff1f172c16762ecb31f5d0ced402164ee6a8bbd40d477ea7e4cd6872ad 923785318:857b36f470ee6ef4e5f74d31cf1ac8dd121722774d89e80faf621264aebe48ec 923785353:fed8b93e2d30d5cf3331b5d0e5bec0a23eeaa07aced49fc8ebec17af07f5e122\",\"br/melia-campinas\":\"929626701:bec9f83ae66cdabb48c7538419d3db62523171c1614148bdb7f1c5d52c55ffb2 929626694:df889ddd65a3ce747a09c198aa89b1659b75a5d55a683ee53751c4baf70b8437 929626695:3a33f0f6c886876a0e4731639bfb68fb5de2cd6a068c5844a3c27a4b63140dec\",\"br/morada-pedra-branca\":\"570993769:e83dc84e49d50565345872f224942a2626e8e8e7d92b40dd25abcc2d1783e011 570994851:a650288ed62016666c3c2d2a30416dd007de85a0acf0b676241e5a1e28566de4 570993675:e95863e2d37f03bf540301d954dacf5e95074cb179119f59ea0b948c8df72b4c\",\"br/nadai-confort\":\"649391751:dd19bc15f2a2b8922b750a6a89766ce1d519d1622d793d7be03b8b0b5de05f0a 628863837:16671c1e3ef7a7a84db3d545bad61a2740e87aa56c383950146de2cbcd8c30d4 649392030:2ef37b6e18723f1aee0fdee07a1f7ef384a50406839303a0fb8c8875419cb828\",\"br/ouro-minas-palace\":\"911198376:a9858150a247437d9317a05fb04e7879eb2b259678252becb57ef7113609a270 911198430:1629699b2984b7968e4c8b0ff9e48e512259cce608d8e30c724fe1b6c8ffe29b 911198444:9aa88913977bc8e1c8f77f9f72f17bac4effd3cec7afb46ae724e2b37ec7f64d\",\"br/plaza-blumenau\":\"373861977:82e3eaa2dc127b79c355d137ab1fb3fc224e7abd71e0f4093112a8682c49ef82 373861573:cdd10b8e38b9d51e4fcea70fcb3d1232f076ea362dd651b14105619607e90d72 373861554:1c30a5d35040978fc72874e15b680a3ea9a2d39427d2dcec78ef0e4cf0ec028a\",\"br/radisson-curitiba\":\"917172917:37678f4a35a327fd1eb6efb1b8eda632920447bb0ccc11749f6171912a33e4a1 41094357:d1115606a558afe9f88e05d17dfafa42999893c89499c1e857d6426c5a7faa64 916766373:b5cb22d47b4e3249e3a5a40f7cbec7eca064a39db816f7dec967faecb36d7f6e\",\"br/rio-de-janeiro\":\"914917709:63ce2781e8e895cc4507094cf1fb6e17f27b4ec8c494f55a6ba85a8904c16ba1 933110836:e71ab4b4e92af903a5e9d622f657fa7d01f84776ed31f5b4a56ba61446c4dc74 914917712:aeee73d8573208756196e70646d68ae424e3af785c8ef15a6db39038098c7be3\",\"br/santa-clara-caldas-novas\":\"583017390:deb45338c16edb808110f329c7afaf096b7b0b272a287e73ada1a7aa2e31e20c 583018567:2e89008de35508d05fcd04534ecce00492fa006a5a6141ae2c10cf750e87eaa9 583018578:03396caaba1fa328fe031ff394745f13e7952b167739ac503a0c42b98778edae\",\"br/taiyo\":\"592672228:05e61ed1bd23d70898d0cd4473610c5a53b2df55df32e77afb1aa7a143e8b97b 595413661:9b73f0b706a69d432906c31341ecbf2255a7f8f851e65381c35c41136539dc2c 181029508:5392120b8e39798d15b0c9ae6dcd73ba226ed7b21044896478ed42307240c46c\",\"br/tivoli-maiorana-belem-para\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/799907519.jpg?k=34c28b4d6573bf5c9d456c82a86956c8051b5391ea29803d83ca32b06037fc36&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/795720158.jpg?k=8c9f6aae2359344fb4dff462d7375833fb8546b6b822b9206a6e5ddaaee075bc&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/795719132.jpg?k=cffb7d4afa874c83fa4867b2f4f70dfc2f8dbcacefc4b1d287dae4e31327dd92&o=&hp=1\",\"br/vila-gale-fortaleza-fortaleza\":\"292193757:b94048cc4b6d630d2eca68ddc3df8662fa7cb8a2ccf9fdaa3f99757e44fad70a 525192980:93d1dbd2f24aa8ede14b2f683cd9f4cc5897d2ca738c710045fb7ed64645fa85 525195035:bd7c61a4a8d7ec780c9ceec3905ce59b40292a155fb6118c440283b72d1ec1fb\",\"br/zii-boa-vista\":\"884244830:d3eb5660dc7f15deeb0e4cffb2f01dcd5e215e992ffb92cee0a365e5ddcb43cb 654507294:5c10c7d4cca2b87af5908a743a00fc2d4107988d446b0a36f2fe89035995ad31 654507337:a082242652a8ded34a5a25246ed90c30fc8646e7c6b79371f72dc8e2917172b0\",\"bw/peermont-walmont\":\"255267258:47baf57a98915e24b2fd3a928e4e4943d72ff250e3aba2300bab48af2ed6a2c4 36593071:e6ac58f541b5176e1e7c7492cbf703bfe67f435aa4971a4f52f9492728ac56d4 36593111:8623a81198e2303e0f2d505b83ba2ab55402c5b85eeb690f2749c4b12a792d8f\",\"ca/best-western-kelowna\":\"773330445:53e721c072bbea2e76a92648226c49feed8825558debecefdd7627727a9dbda1 773330459:3a76b780ecbe3e79665015ef673e25731b7a156d9e12b11958a498aa798a29da 773330470:fc391c78208c32c030534702b73c3e2cbe4d01b1260ab0ae3ef6c53b882d984d\",\"ca/caesars-windsor-and-casino\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/66148232.jpg?k=c7a35ac2fa3a2d352a2c4edfb3f893f88deb0dbae5c91fca6472202ff89aa389&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/875659967.jpg?k=46df324f99463caa1cabff77eb5e72c7fa8e3648f960ca6a6fa6a03e5ffe5367&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/833771356.jpg?k=d63ce66f221b04edf4553f22ad0180ad6a9bbcd341b7f8760585a8ce0f1dc7e2&o=&hp=1\",\"ca/calgary-marriott\":\"461718758:b3c4cec226051a324ce4fab6faffa2a3296ae292f50354b8c461f2c5d2301515 461718757:a7674cd65a67096d3b69d0a43b182a388577c3c996572db9aa90058f6779a400 461718775:3626f816e78004bb0e731d30de2f4a22ee48fec614ef79f686cafb77989d5b2c\",\"ca/comfort-inn-catham\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/736003645.jpg?k=481bdbaee5477c7513fed5b6cc1143a11e1eef6fba3de941e20365cb48efdff8&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/736003987.jpg?k=7a485e59b7d4286588a4de40b63c4f97c6c7787043c04dd796640de9f2a618ca&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/740307206.jpg?k=fcb806708583b38e7dcb7c22da3d649a2127a4977cdd82a7a544358bd42836c3&o=&hp=1\",\"ca/courtyard-montreal-brossard\":\"880130815:eb317a27cfbfdc78e5d8fd4e1fbeae32799be58a697b6e558f1b7fa026da68bc 627549385:753b50c568465e4749ead049c1288b7355239af47605e29482e5a116c41f880e 627549390:8110421d7f8bf697a70b2af9cc64b362a74086e575bea82f0e2194c6ebe06066\",\"ca/delta-bessborough\":\"https://static.cupid.travel/hotels/587046325.jpg https://static.cupid.travel/hotels/587046331.jpg https://static.cupid.travel/hotels/587046328.jpg\",\"ca/delta-fredericton\":\"568081259:d1acf6b27ff755944cef869fd975749c12fa679c5e92671d5476f6b7beec7d0d 568077841:9aa97ba0cefffa62c89b94128b7473aef2f0ac2e47e89f146354f351dd778219 568073826:10cb714bb7c0cb0ecfa1aec805bb611d2919dad4082c649b5b66edf29a619a60\",\"ca/delta-grand-okanagan-resort\":\"469142650:2ad43073ff720fc15cdb50f414f6816c14419b31e4b430e1cabb77b0895f6f7f 628041418:00ae8cff202ce9b737166bb4764eb0a6d8e340ed5c404ba61fc93d0905ae53d5 471548480:1eec9a52f97205ebf9e69553527f53eedf924dc740540e77585f8477a597262c\",\"ca/delta-prince-edward\":\"482986785:b1f0dacb29cd8a45eedf4e7eaec3cc1487ddaf41fa5f59c461bc562bfa9d6971 482986831:a51e75277f2ce206890e402426f75e8f7caeb6b9643a2c75ac69247402f822fa 628062113:19961fa0b13a31968b7af22b42f02a6e2490fccc9fdae5e70891a8a3206fdd0b\",\"ca/element-vancouver-metrotown\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/628055418.jpg?k=be8d6cf32b20f49d8d9e26edb05c6a4c39073afd591d6831f9fabfaaa7b9de4c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/697402611.jpg?k=ff9b6e7ff011ea7c9e9d1f64dbe1ee9dbb223ad5de32efecc66a0cb0f5ecd73f&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/697402615.jpg?k=8b745cb91c9d3c41093b040ffef9df1d05b0112044ebeeba534b6848d5b583df&o=&hp=1\",\"ca/faimont-pacific-rim\":\"811649179:736701392bde7deef1cc1011590c03ca9b35872254258c2aa8bba5e1e2b1888e 875744247:6d3ac6e405ad8d034e812c3e937e9e45e4c3ec0a2211bcc349faa6b7f06a3a4b 885672579:fe46f1326de6371eb9e7a8b74332555a652ac2a038732d83957b5ba4a35493bc\",\"ca/fairfield-inn-suites-by-marriott-regina\":\"630083737:00ad40ca978eef1ab84fe05a24292e85a750b86ec5ff84bd0ec1c92850219c06 630083739:adb3cdc843a3de486725ebbc8a8673ee23f87c729861d1def680c346910868bd 630083754:cbaf74e307db0fa1ef14fb65dd7e8720e4fc9221afe7f63b0d169c9acd68e64e\",\"ca/fairmont-banff-srpings\":\"914599588:860daa7073595f1019efd315f77b0596e8129a0e4c9cc88786c28cd9879ea71d 914599589:3c533807e27d905376b8276b03f20d31dd739f5998af8c4406c861746a66f7c7 914599548:3a17f9074b2d00ce34a9059e5f97a167f154e4dd81a593cc42af91e1cc2f39d7\",\"ca/fairmont-chateau-frontenac\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/764172156.jpg?k=574247525a4718dc65893e35745d4f082c68933a09de74553d9de403e8a08534&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914600856.jpg?k=e66fdbfe3d9f29cfba263907dc03a95facd253bc05dea214f50a4b55f4e977af&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914600877.jpg?k=c72b3a06e4924e4a674e413258cd28acc53fe5da7f6c692d53a7961635547bea&o=&hp=1\",\"ca/fairmont-chateau-laurier\":\"885672281:e87a7c2272099d8d9447d4289f1f97b75307162d506e08cb65a4daa7b1babe82 766083697:5b29a931ba6314e881337e87d35b56674af7bec66673512e0265248b96ce70d5 776065346:208747adbdb4c27ab85c29d585bfdf872b7f6a100bf7288285e063a1e34d0926\",\"ca/fairmont-chateau-whistler\":\"764173335:a0d0db0bdd45b49d8b24ce23dc37bc5c590869586bbaf111b5c8f0368a1591c3 776065878:c39e707ee481049d2f624c663398cf74d6a953ca3e0332407373b127c16befce 894307633:a0cfa503e8df0ebe0bfe49dc0bbd655617b9cb938e5ed830cfc347756b921b16\",\"ca/fairmont-empress\":\"101987386:7c45ff23dfd2f4f85411cc05a5598a2cf31ae87c8df054f8eeac9402c532d2df 101987377:e94e31c99f7335ac335450a5bfabdbfe5ae552cfae5c782f48b8f15c7522fd3a 101979628:9689373aeb139a354b709dd1ce707dafdbf396a9622ad20c6f6b0dc9f19bdcd8\",\"ca/four-points-by-sheraton-kingston\":\"725586759:2ceba221a151e9975a6924edd12456043711a59e13881e5956ae8532c9a4b2da 643529455:c23a466de5626535d118f7db3ec66a6b464ada35612c8ba467f3c736ca135f67 643529484:c8c752da80ffea586cc801665c3e8c2971fe4773a48db7b647563603a6ca45e8\",\"ca/four-seasons-toronto-at-yorkville\":\"556060803:aa840aad1bfacad9229a02e0687023959483a2656942fe0bfb2ef6b0f5d22cf9 556059895:14a1931ece9fedeaa260ec3af40a720daa8e11971b6e8a5bd4c51b58c1511013 556060768:fbbd324a86a397dc07459982e19a67628c0d81ee362dae4c2758b302fd8700d6\",\"ca/four-seasons-whistler\":\"219730143:12e94ba02d8dd6ff66a257744b3728c302d8f83ef1d7c7cb4f499e7b752af62e 254206075:908c46c52d01ccf6282cf6b6c84173b4247d0e84f23bc35d8e16bc579958da43 219730446:ae6ca118e202b9b3cefd570df921f4bd188e05ad6d249d39465476747b9821f1\",\"ca/hampton-inn-by-hilton-chilliwack\":\"473616538:bfd62d62ed2b5c4fd5e739d5dbbab4a28993a29b7c230f1182bd17bceee76a8b 473616555:4c1de93406de99807ab811f6b1f6005d29443a006a765c4fbd9527f7a9b59cc3 473616574:304e1244094f44a6538d6212d33e2325dedd6ec3f6dd53fd9299bc144c196096\",\"ca/homewood-suites-by-hilton-ottawa-downtown\":\"484370833:fea6aa4a36617ac265a91d66fd488cffd38a8e6dc126173bf24a17d385179a62 484370842:9b493ec5ad92fe3341f00c4bccc85747e9b51d4fa9c53e6b55e709b72acab852 484370849:6b510dfe8c3c5d5b3f1f5c0515c5640146c60adc140c0159ef5105e8cff66540\",\"ca/imperia-et-suites-boucherville\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/216967753.jpg?k=969b8dd657db1d94c23d2d34e9835a65f3832ef703becc91707a12de4adb6a69&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/176894547.jpg?k=060f1c63e5f01db2dbb05a5cf76dbc08594dd981919a30128ef1546f9de9a4a4&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/176894490.jpg?k=c124735e4232f60cf4ed9943ea56714b8d05a5f29345c0d68facf9790c0d8a52&o=&hp=1\",\"ca/inn-at-the-forks-winnipeg\":\"172719123:7157cd833a3a62022c8f4b16ed44f3a510322cce77c24b10c8ecad58d22f5c15 172717719:4d9c5017e8389cc00344f774f9acc357838468b63fd1d9a4ea50776fc029e36e 172717630:a270a99dfd5846f988fef8dd3ed67fa22bfd499523a549e9b85a0e2ee651f5d3\",\"ca/la-tumu\":\"646712194:441acacb8fa50cf0922c39a91a29330b53c0b655475e879681c1b5dec23078d4 646712190:0614b9ee9e0a3439b7ff5aac597a9b664a69e628e737b1b65e4cfea26ae94117 646712191:f5f9f121d796732f25a1254522cd6037e73c6659f0a30f693c7b1f69c154712b\",\"ca/london-ontario-exeter-road\":\"850115471:86bd861c3296461608f92b792275dd90e075730d78fa57c1db3db7ede7bdc5af 850115472:8ce86a3948dae3d3f2cb92129d9412ed42fa13d03f6887c5335e090e820104cf 850115459:73070089f957ed6976c1d0c01b87e5bc96a6a75f61617fdaabfde8a4599b9c03\",\"ca/nova-scotia\":\"448677138:5fd4c2e35da8141814757e95ba36ccbdc7c0c59aae242b3748de1b2682aae051 448677111:c373192a81b1b8e78bf0d0dda29da1d8552ec7d3992cf9a3e5da6471e6d2aae0 448677124:e4f78f16e5fbed234b9b5944c2dcca4a0a736a79519af45050fc3ee9a8ee185c\",\"ca/omni-mont-royal\":\"238466731:6799ec4fb38e640846d702af07f724bc2ed9475260015ec22945e97df70e8037 384349870:f51d1ae5d66ab382807cd91aa7959f8ecf2ecd53b7ed2afba86b8168d3864f98 374719329:4ca7c9f430d92916b29b6f36689d0e8c18ea633d7c3b753ce3fb926941fffa0b\",\"ca/quality-inn-suites-brossard\":\"930945875:5ceaae1f773a819f6dda92f7e548875e2f32e9a841d7a27a05f6c0699704ed9c 930945880:8c7d9b586d722a8a3b408c9f46f9fe2a135c63f14c80d787bcf0680e864afbb6 930945894:c77e8bff1bc97dcf3415d9a935f24a24946716c8b2b8b165e9a7c2b916fefa88\",\"ca/ramada-downtown-calgary\":\"550605446:398e90cb5ae63867a48cd37c845ee2fdd9dc44e5361ef065317233840364d51d 550034450:f13fe78424c6e08efa274e84dfbc736de8b40b9210b68859dcb56e2f22cf3bf6 550034383:507cd579f53225a4ac98d481da1f240287c1f85ac8e3e789fa7d538c5a8c8921\",\"ca/rimrock-banff\":\"815853597:235948ae11880cdace5e92f2838f25b2d56b26848103e79bf7473936fc67d59c 818353445:e9fca16b4c2636d3ff1c980d279f724b40ecfad9ded5baf2e468fe35fc689b54 815853565:a3e58b665f130ec99995007e662a355f0ba67914638589eacb8f5578559cbfb9\",\"ca/ryan-mansion\":\"678243510:44749292229d830844e2747272c6f13cdb6a76e5c7743a8c9d1cfae3bde5333b 678243356:adf74fbdbddd4c5d482b9a26a309e05e1625e77b597654d286fc212d0f0b6ea3 678242908:131a41869d4537617370152c1fc3855b2bcfbf0a38a3389d3e8502bd78924e12\",\"ca/sheraton-vancouver-wall-centre\":\"892656893:02ed1ebfa8424eba96cc3dcd6b544049ec03967946ad6bff4414725b31947a81 463643046:fa2c0759ec67d0742d6d4ef5c14fad8d9ea42383f2d3b27b5aa6e89171fcf9ea 592102679:2ad3146e2cf2d2ce4020123afd42da81da99bd181e3542b5087082af4ec01332\",\"ca/staybridge-suites-hamilton-downtown\":\"15335337:362628b99d0d0acefa9127e70a4bdbc3c7c0f35d4bd17fc439d4291ab34dbc65 11162869:1ef032e10e66f2ca607baefed4544974c614fa5ebbbf32c45e08648d7c4f0601 39407083:83dce956ec5939a21c3f34fceeab45385dced8b5e4136b930f930903114ed277\",\"ca/the-royal-private-residence-club\":\"314532316:bb01f71507739e1b68e21d52406fd7c4b0b9db903861952fed7ee1a1760b6fdb 314532317:f670df9008e76ad4ae97c1da0b39af3aba6c0fda01265785a3975f37d447158d 314532331:4867f8b7c0d0a8366f9c465792237de17fdc8afe9d823f6ee7d7964bb0e2e0f3\",\"ca/vmiharbour-victoria-british-columbia\":\"736973451:45f594a90867beb0b195e0dd33f70323206861a6b9777c33062df5165956c66e 736973447:7834c92362e0a37b2e74f4fd8a3de8953455595c5d1a48ead100ed2e8c7c4086 849996039:88f3ccdf5dcfc971ce66753bc4cb5d4cd9200a8c1fe1c0f561e838a2924519b7\",\"ca/westin-resort-and-spa\":\"463647986:45c89f235f42bc11efc7cce85f4fb40f1d443fb570d98f2c88cf911652c5bb03 463647985:9b22cfe2c8766008b16444f4fea3895bd6f62a012f3fae078b2aec6d2bb8aefc 463648012:5d4beb01a5d46b8770940ed9e66d0914f0e85c8ca766dae596e8ea2d20f64554\",\"ca/wingate-by-wyndham-regina\":\"8196227:38e0543a595ed33974e1b60193f636fba47dccc0e8973ccd465358c56670a32b 63897665:269c301bccfe4576418944f2ccb76c765ed8a7128b4ea011555ce9de572d94ab 63897666:0a647958a005bb77b3456b6cf254081d79bbf961fa6decdfa120a82f8da8d2ba\",\"ca/x-toronto-by-library-collection-toronto\":\"678277532:f1d4f83feb37ab043d092f69bfb88bccde962da4c0ede01c999cf30f25ad32eb 678277932:782805e77478537cbbdc8a5862bd704bd475386e1d8aec2bdcd51df1ea833b82 678277622:6ed8845c418c1609fcf22c01f0f68a43135b6ca57e0c834249c89ea2a42f2e1f\",\"ch/ascovilla\":\"195188337:85e9139499f7b18bdf75b735de25770e53ce9612eb574188a0bccc427bafee3d 195187179:13b0e82cd0eebfbce507930ede5fc099d5459764e5a42e4102f0c2f1a12881c9 195186149:969c16093238e108cabbe9111106191ae00027ae6bff13446ffeab42f5cded26\",\"ch/geneve-centre-gare\":\"884538453:d817e1d323280193245d8f27d796648a5357bea4ce0b3500cf58c4430e1d4280 846222914:23d63eb8c4e3817b36ae54b3e556bf843aa3e52eb7f3e5bc52e924523998ad5a 884538454:98ab0ddac62a9e00967b4d8162fe29e8987c5136831645e911bbf9b325d48934\",\"ch/hotelmontbrillant\":\"56435561:ead34b0017465d27d4e816e47b44c3674f72e8f30a30be44cd861a6a15f1d548 233931380:8421ac0f3eab9b5f27a506a2123fc47b6f0ede70fc59de352de0d3e80f906543 233931378:6b5e028ba23fcbd02bf840858dee6f7b01b40e4c91f5406718ef5fb8a9838333\",\"ch/lausannepalace\":\"932586246:8822b2c5d8b3f8c47e59e4a472dd1c7907f04f02ecec84124bc261ab854fb4cf 932586350:acaa6f35f46640501b295107e7d0847c97698edbf45f15ea106d7a5586ddbcfd 932586449:24e9e700976fbe4befe9d8a897531203360b9130c4edfd897790a955ef434fd7\",\"ch/movenpick-basel\":\"915060063:ea4805d73e29dc297ece92872e94fa8ba6f61f537538a4333eb59b107a91ebd7 915060073:e487d634c45b3cd41069641d549ad9d5e7982e8580ca7eab74dcad44923301a8 927896680:f9ff4c5ab903f78d9dd081eae460c8d6c011941b2e92b4cbc2d1f8a8e3f05553\",\"ch/newstar\":\"88875093:c5bc2d9926be98322fba991a40b8b150a395c5769a5be13cd7c7efba58cf8fae 88875113:b889e2f676fce47b44cc4278ef1cc62c683381c11699bd55f83f0d1cd50a8add 88875087:497a4d2a9a2151e4c7e0e1e291efbc2702734bb3ef4c25ecb2fd26a6d3108b8f\",\"ch/roserribourgschweizswitzerland\":\"112289681:fb92dfe82b690233c82618110eb152dd8a667f41033bd0fcc724b13f377b4e5c 112289696:96b71b0c56f1f1eebe1e234dea767b3ac35973c9324fab417efc7c40aef7ba87 112289690:c3694c07ad8f3d29a31a5b3774c633bfb7afa09789fa8a45868ec50e1c64a6ff\",\"ci/astral\":\"311280595:429e9be04b905ebc78da2d8739fcd66032e1e5fedffb69a5252e5aa521b96cbd 311983043:1da81488b30906d5a850d1fbbacc4b446cbcc3b3e505f7c7e0300d01fdcfd826 311983336:d641b8f9bd0b0246e0eb35d3bdf0a0d592b8fdf18599519a5e1c6d198c948544\",\"ci/ivotel-abidjan\":\"807503990:a4de114025f51b36bbb52e32d187c652a3faab6fc662e2fd3b4b7b847ad83a4d 807520411:d5fee4b9ee9ec40f2c7d7a937a7596199c71e9969f8ce87810773f2f742be012 680544964:22104a1ab32214d095fb5835cbdf2957f790f43ee30f4aaec6ecbf2749c709aa\",\"ci/movenpick-abidjan\":\"880210213:fb22198ed39485d96a7c86104519223a50390fae8168b8d8041bbe111a835e2b 885742006:22fc1f8f6b39f824de303b33617d6c3b25a2552aa380e394b870d94f104ba182 796334557:91cb33495b438a2065e047351696d0465020cf19928f82beaf8e2fe76ed690e5\",\"cl/alborada\":\"464795401:91759200b49d13c075d48404ebf50c57f83b40c6edfda86d94b2b86166044b3c 565313321:857d9164e8ba3bd4d57be9555d25e7c01cfac7561c6b28d123d7ae86ec546953 671033893:d8c6846b19e5f611905af3f29b9a536532321a9187982072a79d83221095f967\",\"cl/diego-de-almagro-punta-arenas\":\"423378361:ff16f492b21d380cc13ceb126984ab08828cdb3512ce219fd6e3263f20234af4 423378563:f347a50d6ed93bdd624f7bcff846e03cc2217a0ced91efacf2024bf033054b27 423378773:3cb7e8a6d76a5a8b0de92988d37bd7e9cc0ab2ad851b748ca0ad6aac43fb368e\",\"cl/panamericano-santiago\":\"542882790:dfe61581783f58a19bc6d47b8629c62aa04f4e80e0f11372e990888c20df8ccc 542797179:41cab486d475dffca2d52d1c922ce317b4e02c7895d6610771c965fce3e6aad5 131208840:286a0b8c29cbc85ad74ed38c32976b03e5dc5c62bddd1b8d6c13f49d6a54ed00\",\"cn/dorsett-grand-chengdu\":\"545870136:b07ec76cc2229a527ece6978532f0480d2d0f2f462ff7e96ae72129a9517fd13 545870102:f8f9186da4f2314bf7a51097a9438d6392d18c25fb88f6ac7d09a40619ebb53e 108821798:f6c46a1c6caf7a6846c08ab025520d07afc3cdb432dfc2f9999c01c17c9f341d\",\"cn/four-seasons-shenzhen\":\"696900287:b1330e7b36de78c3404336301a1946887222c3948386cf411b0e3909298a85f4 200551563:1808f232fd82cb47b97b4ad7b8e931aa79fb0a98bb9a65204672f9f46bfd46ac 203905036:b4473b5c60b6c1b589547923a4a280b423df04c995f913f37ff6a3ac0e190804\",\"cn/hilton-yantai-golden-coast\":\"483793940:7c130035283c5d96028dfeced9a5ee0d6eabce505933b9bd7814318bbee55cf7 483793945:7d266dfaa34e25bebc50439aba6d370eef95acb81620af8acf5287b05fe648b2 483793948:b25741c0f86c509d660df353a90486c66344f5f718c53179f24ffb1a7c2b7d3f\",\"cn/hyatt-regency-hangzhou\":\"915628295:13239896558a3c1593b22a4f6e54489682338ede861dcbfe7f3faadea8db7500 915628298:c7268c892676f0ff6477700800a7830b57fda754e7e656db5a20d9d56fff03c9 915628304:0ab3b275f2bda3c80fdca4e7cfcd1c458c6bdae1a3b34995dcbc31db06d03ecd\",\"cn/indigo-lijiang-ancient-town\":\"930620437:ce55dcd0ffc3f95a73772cde808f822fac88f72337faea86c8be71afbed629ca 930620698:e50e7abf20f7c6f4fecacabecab043452fb965dfec6351451320bb1a5f84a664 802614904:2880c720536667e4722415187c84b4e669650ac15037b4ee24bca2c2055ea96d\",\"cn/intercontinental-nanjing\":\"918784269:14fa15a94c1d64c4278c95ca6061dea5d40e1913c0df58d8d2d2e7d293c7ea3d 646063211:f193d1e8e06f966e3c9a5e90041bdaed8e7bdbbf26033ea63a958a01e7e08a7c 687500977:0d2aabdbb9dd712309e844c962a5168a49f35ecfe0b144308db3ad82eb6b408c\",\"cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12\":\"280853085:0d751e53cb8a2cda9e6baa6fa28086be2d840eb6add3c8fbb05b0256c79ebae6 280853099:168c4c3577d78752e712b7514710e65f49031e4da2a9657b76877d5cc0499b67 281737501:cb5865d7d17e43b3b271199577940198c898b3e69734df4253e046e1aea8ccb1\",\"cn/shangri-la-harbin\":\"799514355:62138d95f00c87b6d0cb9361c957615fb650006124ce944773a47b7522ab7817 799514330:35f9b9afa53a6c62d3139aacf03f3a343a60b1c63541800ef150f65111e2f42a 799516023:5043bcda19dfe7bf121397460aa80f22893985b81439dfd4cb898a3601aad914\",\"cn/shangri-la-qingdao\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/832443324.jpg?k=ef99a59b635137ea1de60e3198168582999b2f5cbbe4739b259dede76c71a0f6&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/297164714.jpg?k=86673261fb9f956f2588965c736e937d5608154c2c44f21eb3d2c154cfa051c1&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/295685222.jpg?k=004eace9ca8b00c5d665035d4b5492c53bea7ebc968c1241244cb96f74403897&o=&hp=1\",\"cn/shangri-la-suzhou\":\"669864366:edf7455c038901a5811771548cce5a9ed50e616503c59dd6fb538080dfb058f7 689271834:e58b92352a485c3a10ab33ffac9dc291f8e848aa13dc6b2227508f0e1d6e2227 689271837:d7572a4a4a1d1fc6eca3f4dacc6f81e2a2a547fd010d296ba21c0a8e2a4fd731\",\"cn/shangri-la-xi-an\":\"789990889:20d3781ee680dd0e600c6a849ae7cdd7132815a292177befafb395387c19d6d3 789990888:b7cb4d54faf91dbae36e49fd20cfad985bc8e97f01d8bf13f2b89e042c81fc4f 789990877:0563e12da97d53dc3eb4ef7e8330a54df59e8c7e4a9ef7fdbc90311bfe0054f0\",\"cn/shen-zhen-jiang-su-bin-guan\":\"580187494:60df6506a78e5fed407bafd4e4e23177d0ae1ce3a277f68db82ca24301ebc22a 580187472:ab161af29268c7d6153f1774c7861a3c8d6e9f51ce1f4716f93e168093eea7a6 580187478:17ab527e3fbe5a4fd848595e36c7e6bb65a99d8f5da390c3a0ebaf5e3193d663\",\"cn/sofitel-kunming\":\"777101538:21607053051e5ddd10c20fe6e403a40652680b93d032c5d1321c6da0efdd6a60 804338438:e8b7408aad8d1c895b8394b0a46c0568d6ac91032c22d5236e6c7776b2eef2da 69364872:51573ceaeae99228bd17dc5f7802f929915873dd21bba9f674d8b85144d059b4\",\"cn/the-portman-ritz-carlton-shanghai\":\"667218104:7e6b018b1862471852aababe2082fac9c70007ed342b8ad082b6529aa155c92c 667631107:f248daccbffe8e3c2aeab2db536153059e64dc00196587506db5e76013a8ab20 667631112:1248d4f830739e56649bc62cc49c1cad1c454e6cc183d2e9d202bfeb26912d3b\",\"cn/zhao-yang-wen-bao-yi-zhu-jiu-dian\":\"793265455:bec38c2cfe3a793b64a4ee85818baa9f6476a4655fc368a33b9019b94298ecb3 793265453:a693cdd15ccbe1168a99783a966a17c0de0b3bce43893baf4f068d46653e658a 793265461:4a6aa83e793ef55287bc9cd78a99ff899affdba621310b3594358cd86800e10b\",\"co/boutique-don-pepe\":\"479979517:4fae0a7d72afd613d8ad549260933226799b5434a79ccb0ac5f89ef6bc3174a5 479979307:d24d9d3fc55fee6d0b30e48e22c164c7fd31dc4e4b56649ec1be880f1c52e8c0 479984113:2efc696d55887d718e1a69a2bdbfcbe0556208f736a3090e07177f996cb8f5a3\",\"co/estelar-calle-100\":\"898663226:70058debed33fdd8532e601da71a3aa184f72a6d1a534ccb57249cfc65c87059 898663393:c70a41136fb84d467bac1db168d391463ba14989ebdab2dee64963d23ae8136e 898663264:199877b45b3aafb13a374a6443186b8ebc4423bfc8d39f32d05587cf3d57281d\",\"co/four-points-by-sheraton-medellin\":\"657583802:dda4215543f6f4f548e135525dce0ff182a5259012ecc7226aefdba6098cc614 657583834:98f2b794c0bd0d28e53e8bf83b150edea7cd9d862d248614f530ff323b06099c 657583824:b87d674b14196680e57cb3138600607a5179dd9c32d2ff947298b31ed8c2029a\",\"co/intercontinental-cali\":\"410434169:85685026ce3a09b198fbd1a347126270422a0331a8d62780180a05e9f89386cb 867221357:c5e350627ecca06be38667067ac4a4ea474b1b9b64fb914a2c61111e0914bb70 306544050:8a2da82f574d1c3fc63466468ab40895c3a16a58970e6a858ee61422fd40ca14\",\"co/intercontinental-medellin\":\"772458625:bc239e628f2ec043a373d03e43bb25091f3c5dde86f833cb734c150c41881fb3 654566269:4975f41c577e5b7d0f5e8694e52cadc68a86b8607e45cfb1859421af47fb5409 784483517:83d5c69dd5635da03b23165b37c7729a5dc2239b2b6965884f149c6553474a28\",\"co/promotora-dann-carlton-barranquilla\":\"359698380:19c12743455bfaa7d726f2879e7bfff1f7ca8983b91939e391b2322ae5458c6d 481571516:1ec509975ca3469ee097310858fe64835a54606b8fd0c200037c467c2e0c30c5 640513741:e0a2ae80f9138fdf63b30dc70f9d039d2d3928e2950d8a785255900cac4630eb\",\"co/w-bogota\":\"643113193:db666093c1cbe13d5006ef604272044566e2ef25eed3a4dfd6fbdc7e28683f73 643113216:736117aaf8d667382e21877f2634f4b606537c558ead8b53ffd4057566f9c953 643113232:e5b0773a038b3d60daa049808635deb2327955e068bcb874776d8df53d6e51c4\",\"cr/radisson-europa\":\"151784463:9792c2875098d3a537b26ce0782081adbe62db635f4511bd9ff240fc6d8377a0 151783742:3ab429ae384aa493644f51d1fb99067d0dd28476ae1fff1d93aac9ecad59e541 299062799:252ff90c806c323bae6850a4ee5f266a52463eb5ddf20227dbeb82edea33c9f8\",\"cr/residence-inn-by-marriott-san-jose-alajuela-el-coyol\":\"836303007:ee43f02c933dc6d6d81ba0744f51956cbbb20f37563166bc185ec49c8e13f2bb 836304131:912cf158ebe59e9eb1eb0680b9414b88d4169207e07692eacd52574eab7f3518 836304137:4ea5d9d95df037d810b046e7cd5ceb66a80f25f5720bbe5c6a6439c8c57b4f69\",\"cy/easyhotel-larnaka\":\"574236580:ef239dec947b93dc73f2b556bf7c5130ed8ed5561f8dce2aa43f31ccc971761b 574232226:9634c3fe01962b39e2b5548003cf39365fd9c74d9b3f0e2dbc6a21929ef50f34 574232242:743105f456e285d95c98977ea28e49ee231723618e38e1b98f0b175a5c84fc4c\",\"cy/pefkos\":\"808438672:4483b3d393e8496b6230ddadde055023dbc69ef7b814fa2c71f099b69e896393 808439332:676039bafcdfc440870b21208a42c534afb75463cf9004df991423b877749539 808439202:f292895ee1c95de0ef686b477fc7594244499e65294d058d80aab3f680711e57\",\"cy/radisson-blu-larnaca\":\"164982440:ff39eb15e2fad3895d0779e1f7a7c9205d05c93bac4f90656c4ea0bc0f9a4228 164966530:46968ed2383a73dc4f476500b128fe677219d4fbce911b20ee2261b5ddf66399 164966523:a35ba7ce5921d30413ec51b1486e2f4d6017f395d5a563442c039989de1765f0\",\"cz/four-seasons-prague\":\"802803178:d3030d9ed4f0cd82dc664557e5cfdad66e2e76dfae5441495b938a8af11d9fef 802800061:3547b1a37914d119e2aa1b89161c1bbfaed833dd80e99e270c689622a43cf784 803758622:f19ed6fa9e8c863fbbcdc25ba81449d3b312847d6f0c5b31145e80f468cec2b0\",\"cz/herbarium-boutique\":\"327614077:882ffa25631ff81f34611ac4cc293afe0e2f2612e531c574b66ad7886d7c2613 327614904:3ae521163323ae2f86fb20bea30460af3efaa026c8e1b9b541022e07079948a2 304799636:c9473104c7edfdecbf349f1888794c04373d3957afd912ddf72d89462c1a02ff\",\"cz/radisson-blu-hotel-prague\":\"232798258:4d27da12074fe9ce25fb5b56c10b1d7d96564b17dd673e6885f9b12381417f37 232799130:072a26eb186a811700c9b2d71e60d0f02b98aff3b25ddedec68faa86e13bcfa0 232799570:01d3eb048fddc71f003e08c1f044a9485b43ba78378954d0aaf5e14cedc7a4ea\",\"de/altstadt-passau\":\"157552906:35f1baad3d55ded685df7b660d74d9e7c9b3cbf876e9eccb7dc1470d1dbc4c7e 93590003:124c9c46f41e5bd9e3e109aba8226d47ab7647d2461f0a01db163e5268332109 16926529:a6f4e275d928ca2da4fe28521623c348f517e5ea723481cbd92fca9bd684dd52\",\"de/atlantic-heidelberg\":\"524365312:0005d327635f6ab0fc2588fd32c31172eca79b9255a667118d48c08eb247ae1e 524365318:349f34d983cd706e469d4ec3122defadf81160e08fab054702dc0b5e24390410 524365331:25b071317656137816daaeda6e9315aafb888ddbbb2a7d8845e37ec47dc5d5be\",\"de/binzhotel-landhaus-waechter\":\"648535243:8aaf73eecd55a35bc247a22f218fdc0d9933875d92fdf8c04476eaa38b725d3c 648549509:ddafc79c31f64cb8b7ae38d9cfe74dcc064b20318944df92514474228d57c0ff 648549521:de0e47aebc4a1fd30c83c637b6190d7d1cf85dd79cd8a6ce20a2892f58140612\",\"de/co56-hotel-chemnitz\":\"315514309:4a829e3e448b99bc9ee08796847c7988143d4509d2ca867056a17bff797d66df 315514173:2199081cdd1fddf30094b72a79d4b4b0174e16a9ae5c66ed249085fb24da1d90 315514070:72d7395b2b034d80fb3a4c736e9141a68b22e1cfa8889d69225a7d5171981bdd\",\"de/erfuzumnordhotel\":\"825610860:5b27186d52c1978f3b70ffc56271bb64757ee13bf90d10d1db10eb411b0ecc15 825611891:9e3c19b999bae9829ab64968ac240ee700e26a38f19b7d67243807c277d85caf 825611078:5998a9bd8b1249c85fe609e8e6fe9edb212487fec8843851a2a61604af15f441\",\"de/gustav-stresemann-institut\":\"790436444:7610833493e7c600fcbc309bc27131f36b3248912c16a8f2f8fddf65f8c73cd8 790436442:15dd795b48b18cc491344bfe8ad68d27f3302cd6e256395a01a498f82729bee7 790436441:0f379122bcee978b82b7742769f38ae0245bfebc6ba7c31b1f4794f2cdae2cf5\",\"de/hilton-bonn\":\"434342596:fcb0b547435ca5ae377efb21c1da7f4a1707609155f0f452c74f86e3b209941f 532535035:2afac6fdd3906748187a5221dd08c7092aa01719b2e6bbec2989fd32b8665502 532535034:3529364be2591a8fe05e582ac6ce270141b1f6c9687aae092e0c6b022a2e98d6\",\"de/ibis-styles-tubingen\":\"751489078:84cca734aaceb32b57c72ed8e7d05374cc8a4d730c88feeb2d0277fcdfac8d1a 751489116:2d74f18c811bfb1dad303986ae70e8e3757a51932b688bebf2322fcbe44f7885 882075311:73335f4ae904d801d5b07da5414df3e1b371a2247b7a4a5bcaab320a52698e8c\",\"de/innside-by-melia-aachen\":\"932110214:5b44b9991cd6b67d6de996fdc4c06691afe981c996fe6d58563e54bf4b62b5fb 932110215:a958e9146f2fe9b69116a1f11d1bff9de5783732525575d01977dd28fab9d7d6 932110154:48e94d891bf20bd10716cd95259475d3fd0a01796f4f623ea49843e8b0c1ada1\",\"de/innside-by-melia-leipzig\":\"929621274:ff4a93b476d2a5a85d9b87f13a0c39ff1447f80b1a8951e9545abde66eb546ea 929621173:5f9a9e5cf89573a4130f9808a9d9bf7c7a0c153ccee07e553206bd4a1488f104 929621178:a064c11223c4bff37270d629c8bf28be999a5c551d891bc1ad56df0d3b1ccf88\",\"de/intercityhotel-darmstadt\":\"71748896:cdbfa3531a2bb116357ee8d36fa9c36426b5fe1855380eaa9bd6ddb3aa0c7a8d 71747706:54792aff7ad508efaf943a7c69a72730877eef94ddded1fbfb862e8a1b42dc29 71747505:999aa9dd00938f419185f70c4c47460d51225c17989eca0f9e683757c535e8f1\",\"de/maritim-kurhaushotel-bad-homburg\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/327053626.jpg?k=8d29d27703bd3e2b3f359bf89a2a1961330a02504231f39778a2a27b526fa7b4&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/550663515.jpg?k=64009fabeb46551bbd6fd7a79a378ae6f7ce5e1241dece747ab00176f8997b66&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/34799899.jpg?k=a10235dfcaa5eea5b5300ae22b4fab87fbf33182d98f1a0d73265e534d286f55&o=&hp=1\",\"de/metropol\":\"382475591:7cf1cc0293118d34d79b75ab52459f9d208902a6117ecfb8f94eb008c500e812 274393864:5f02c705dd1fec7b2b6b3ce6a704d014be27fe6392bb7cbbfa2a4af470a66ced 216690249:f7d196b090cd913cbb6c463c422ea89109bb59dedca2c725160bf1d6d2d046c7\",\"de/nh-essen-essen12\":\"701713316:4150eaca38045c065f81e1e533571d3b22c5bfee388076eb03da96d5976afbf0 328273257:ef25ae2d6fa4645cd7e0457399c06478226131f2101843bc68f1974b0e26f36f 701713341:ea6de66bf593fc1f2a107a9c00f4bfdf3ec24c65bc977c88100263dfd86c4876\",\"de/nhdortmund\":\"928653207:dd2453f3c58f3d8d803db8914a9abb90fd1e03c922024c6d2cef840226c19a33 928653282:1206df2fa5a3f0d7ccf6595173b13d227917aa3480fdd8a45cfc0bdd1bbd0ad4 928653281:f7306ccb524f36f13084f31510519aa2ac0a47f4a7aec8560a5d62d2546e07af\",\"de/premier-inn-koblenz-city\":\"933716174:3d0d1394d44e6a6106f58c7fc6307c359eb43ffa6585b86fa86887e29676b1fa 933716282:eefd8034c840031d1dcc4cea9bc0550115126de22482ba43348dc11aaf0341ad 933716277:0ba980802b017ea9d5a7b877846d1f682d3ce3bd6153174e3948166defe9688d\",\"de/radisson-sas\":\"929565299:d8397d7c7f38e5c35b83b38d38174a1a540a4de7a72c3505294a8de215046ceb 929565309:163326d7bd9b76a5ff338854a48e44d633577dd7fef8a80606af99215a84a0b7 929565298:8800f61a6ff98ea407eb7bb85112134366e61f67b9db02c9b91108daaf83ce71\",\"de/romantik-am-bruhl\":\"214280473:027ed0739dcb0d633ba784ab13e0cf03dbffc56b9c5a877bad914485be23cbf5 214280415:cad7c8c29d5275147d445fd8dc3f20f4f525f3bde28e3e1cb557eeef5c7e26d2 214280147:3231ab87a3ed59da6cdd20d0cca8b7385d64ba13c6b78ddca8e733733a4cac9f\",\"de/steigenbergerduisburgerhof\":\"13818388:a8b039ec87932aef50c6eb26207407b494ca82cc4e2644edcd5dc9287014e253 13818387:5d4d0fbeac1a743cb5ccc41478525496f43bbaf5e417b662c373b94a468c1233 98662370:cf5596d6b6bbb2fac0ab97cf407e8a5b214dc0f925fe6b1ca4981b6c79d59f28\",\"de/super-8-by-wyndham-augsburg\":\"934186913:fdb080b78ceaa3deefd6723ffdd837cc7ddac0a784ca99e6b4d8b7640e663320 934186916:5e3e288678689a9762abb5697d7b7ae424a5bf193cbe14b5a28946ea2c913cec 934186919:a32f010b58692157a6d3a1abecd45f5cf9735c91f4b5b2c73891a5063d2b5868\",\"de/super-8-by-wyndham-chemnitz\":\"934186972:43090e70d2dbc587839630b9f9654680d3e7ec4e9ce9365e70a344107f6c181f 934186978:4411dba9c750edcd285834f2918bffb08615d28664be44fc5dc14e0645887137 934186985:efd201f0a69e2e364c137d3eb70035204864100ccb4b3f71efe540f4896c8d8a\",\"de/super-8-by-wyndham-mainz-zollhafen\":\"934187043:b0785e03e276944a6c4115ca0c9ad4a8c01b286f8b0dd7c5acca039165916fd1 934187045:70d63656d5651c50956784ef2261ad981be53b6f43bd215ee892586040e5ef7d 929515981:b0ec24c16a4842e1c49878b69f052b808199c7fa50692fdae650dbde659bb69a\",\"de/torbrau\":\"138315056:066ddb3683753b8d9e0315efcf02e462b899ac224fb5eed023e648b908066bb5 639811409:11a6f158c631a4e30237559fc57de56f524e3b0d5267e6cdb9d63a17a261f846 642529870:f015fd50ddac87deef398738188870a581c58dd674af67ae86920d58bcdfcb1c\",\"de/wiesbaden_nassauerhof\":\"https://static.cupid.travel/hotels/117020000.jpg https://static.cupid.travel/hotels/501519085.jpg https://static.cupid.travel/hotels/221030302.jpg\",\"dk/b-amp-b-aalborg\":\"852167553:53b7fea56c19a54ff7ed91bb1138dd02595e6ab2194da32dd737157a07a80735 741911221:ad050a7a0236642b9ee04c4fc873b648567e31fe6ecc67fd55f256680e1a0a1b 741911229:767d1b2aeb06cc2af3635e2c91a124c03267e0718c4511698d71af780774f2ae\",\"dk/city-odense\":\"698540824:2a1bdbfdd2247c92ee7475c24fb92231f4902ea72afd3af4e635184e5c6df72d 930194744:886b6a8554e6603308027fcb476679cc453eb50d5db532abf27c950f4b9f99a3 930193989:533f50699a4acab5687427acc7a6127bf78fcbdfefec21037bfd48adf94a3712\",\"dk/radisson-sas-scandinavia\":\"497245335:5a6ba8c29a9934bd6420ee689c075d1a6821dceb3497f991a5ecafe0289bbfc5 460334442:aaee60e6677f1778cf8218e6948baf1f87cafb442230635e7cb76fc422e8b811 497245357:68a8ee8081ac2d4c4bba22cf512fccf3de04bd6cd9e7799b137a29fc5c15df18\",\"ec/swissotel-quito\":\"883078303:93eda3cd14a7770ed5a42a9cc81cfd1b013f59511efc6f881f2d1c95a4056a82 903057128:bdcaed1475e6ff3361b2c17bdc7051b4be3422ecc08643fc7488395986acaee7 883078306:5fb18d77041c311cf4025afb8a6a421c993d33e678679abfa0e3a7d5e391a765\",\"ee/hotelolumpia-tallinn\":\"674806963:cb19d7204af5e3ee585983311d1a021f8864cc0a6407af5e6d32c5370168918d 674806973:55536db424fde796769756146578d808a44556ce41a1dad54b062a29bd19c77d 270749131:adb74f1e47c5fd5881d5b1c10e42c721a83581eee2014c83965bfd60b9284029\",\"ee/swissotel-tallinn\":\"776069453:b17ce2627ab89f0fdd4d9ca8f84a1f3db7e74f291f9e58d1977bca3a070012be 776069465:ef24787b0a654ad315824f35eb9ec37bb401809ec651bb6010a040b3042f02fd 881451567:0afff9b20cca23004f56b181e87c45775a3496a82f96eeafddec615c359700b3\",\"ee/v-spa-amp-conference\":\"134707852:c63b3a3f9ef29f6917520c2fed9c73a7c8c386e461a919b2b473d0a1fd087e3b 92960913:cea9757f820786715021aacd019031cc14d47127c270004a3cdf92626466d04c 92961168:1e7c8799bbe93e68d8088a663650e87d1d2499bd7a919e07e39ae140149ba181\",\"eg/kempinski-nile-cairo\":\"922730640:3c13c0847ea643f6ba4ebe68e559b788eedb1e49d30ea1a5d135e8fb57d96e8f 922730657:f4f94f1f671896fc614f53ffe05683726319bf502a4d87fabc64c0dff3119bd7 922730680:d5f2c04631f528b8b42b5a5994a0ab1a131f5486e9a7022b801dc75f88db6aa7\",\"eg/sea-star-beau-rivage\":\"867097166:d3b6881b866108d5414eca269d956dcfeb9527d4aa97821f29594868913f2b82 867244583:fa3e42beb68607a63f4a52c23b7c7e2f1eaccb4109b03e7c27a42979ca392342 867244611:592cad17847c8e5166282825a8841342ccca1b3e87f0dc911a4116d43d722d57\",\"es/adealba-badajoz\":\"606353770:2821274701ab058172b67d0e926d1449445c729b956527b4e93805acf31db113 606353774:8b822b1f4e9a4415648978816b1128e97b08ee6eab5166f57302469b7c23e94e 606353767:364e472c80deeba3eecf28996d7182d5659a86675bf56c4b893d87ba9f3ad432\",\"es/aristoy\":\"681786206:422c2b01da971031490e2daa91898fbec65e329d55ff3cf829caca975e7da3fd 681786205:315076ba848162651c9a57f04c9cf0bef9949bf2466fd35f1075426db5492fd4 681786202:a83b7492253f20070efcb0d14347ef44a88625d694e6c04f94692f0167398f01\",\"es/b-amp-b-puerta-del-sol\":\"84574753:b5ac5138581584a00260a4c4cd2c0b70e677d12ceab8a2da297362d5c1667ae4 84574790:faafb8e729f0d4ae2dcd648e043ee3010f5dcf0cc2e2514c7fd26002aab6642e 82449317:6de335849b2f62355999f61422c3748998d42029da9d50fa5faa7fe02c32e4e9\",\"es/bcnevents\":\"929090349:bbbb3ff7fb537e5a104821113666a3b912469a0315ba8e87a0c42a14307926a9 929090352:2819da5f4d3bf8a3da7a234fda1682ad2be8adc738e70537a08d40a6fe14ba21 929090347:11f461b0520f18ae0feddd7dbec19ba0311f333107a86b5855b6adc8f9dffb71\",\"es/boutique-la-brisa-del-mar\":\"492560988:d316d2417628250f9152fb95f1b71ae00d768d0e0fd89d573c80f008a5aa8b54 492560917:88008bdb1125ff8dd673bd3ee82de31630d87930b7f531e74376e64808827b69 492560882:e51e934ba01838ca1f8dbb4fb673b66b2c70ad9434804c8b3a9fb3a20a305bc8\",\"es/bulevard\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/724945821.jpg?k=a7c5973a0e565df9e5df4630b9b39ef2d99322c1b323ba0de900d9a9c4878492&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/724944091.jpg?k=82a95f79fb2887dcfe1bb59fa9e007f22ad1e193dcc6c783e9965ef77684795d&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/4163191.jpg?k=20358b967385237257d252d3458abb82e3f91dbdf39223684794f12f57bab0d4&o=&hp=1\",\"es/carlossercotel\":\"928746949:7da4132d75050954699d9d6ae63d16ec5de9a220aad6d9cda976a9bb9c015c3a 928746995:72e36fab4bc5b82b285708a22b1f164819e94f7bc2926b5da7994565f627a6ec 928746941:114adf327b6876d755d31f69647a453dc0f442631451fc47ae8866191e6ebf60\",\"es/casa-senorial-del-siglo-xviii\":\"422835262:6000fddfcba7e395f095df8ff63f09915113611aeac0f82aabf26fa46ace4c5e 331696269:363e55c6c7e241477e74653b240ae3167d28037b60131249a2ef90af02a88f67 545986220:068621cbe9540eb59ae4a1cd8b64ca44f663cf46ced1839aaab1bd32cb8748c7\",\"es/ciudaddevitoria\":\"517355116:f37e2232c6f2d9b2b236dc0be34e6c64b83b928d8bbfc4ffc17c6003e61d6c19 269019112:72544c599eac915b02402ff3468967a1c250173666b074aa08a583b335e48809 269021650:198d8a356cf6521ad4b76bad9fdb243504e85f3925a63cba424990ac4a8740c8\",\"es/cristine-bedfor\":\"290003021:1409f38863bb3d16e0e70988a17ccbff11b6a787faca6596738ec41ce11b5753 301096917:01cc3293b80b424f942b624d46b4caa8ee1f7788b287f6ca774bb8578bc7a3fc 301096907:34aeadf1871c8b8aa04025f336f6229d993f88de8519a1fb57272ce9a4001fb0\",\"es/del-golf\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/468656230.jpg?k=01d905766cf676d53d0d48d128c490fc4ac87296c028498eb9f9ba63fbb9b2a9&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/898476019.jpg?k=181de61a5dcef445be5ade7366a1a2edde178257b3a01f4169bb2c11f6090415&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/892663218.jpg?k=deea7308dd433d6153458228c6ce420ab7206567bdfd1c549db1120371216861&o=&hp=1\",\"es/diagonal-zero\":\"831784198:ae36fef09fd528c56f06a873ee4c6c1df9d072572875e8d24a64af5359e553e1 678177018:78515514851d2e5429e938670231fa895aa09a29ac1fefd47aad097c231b82e5 853612324:50d3fa27cc6ad560d40c14967c8608b32226d9c69d87d1870bf13e8768efba53\",\"es/don-manolito\":\"741802213:6f76161ffd29576286789b160d1e358e968ff97aebfeb9f58bbeeb47b234f274 741797673:f4b21ef4c19d7cf957499503db92df7293014df53460bd47c59e7483d0a21ba2 741797681:0dca169dfac3d4e5def3da317f1a7a4d2d8910286640fb56e163ce746145370c\",\"es/four-seasons-madrid\":\"400579280:b40cef7f95fec6e37ad30ee4178cde973b2b96b08ab507dd7589c8bd5e3e7734 400579273:d6d941889277a6764e20cb8c211233ece6f41262fb952829487606ab22352c7c 400579267:11966feecc874437b5baf5419dc04e41b0cf214112aa8d187553fc2468cea663\",\"es/granhotelreydonjaime\":\"412968005:821269faeb9eb1809cac0be8e364d25768fd37db9d0dbb11b19e5057370c7761 312879879:ef7474e2b44119a875379ad3ca3b67e0f383d928092072a0c290e3afd2287ba9 412968003:9ae9207ccf6c5f6505fa3d96bb835f182b09405d2636e871362a38e90e603b90\",\"es/hotel-guadalajara-convention-center-affiliated-by-melia\":\"929753350:1bb84c440eec806ee758495357c4a0d49f8419a7514bf7a61516fbefcef957f8 929753345:24dc395703f62afac0b373ebf77b73afb9e797a178673fb7ba8653bd8cc4b465 929753336:babf8fec35b1ecb83f55950d53cce2bf3adef0aa1db3b51e87fb0893ff39fc5c\",\"es/ibis-barcelona-castelldefels\":\"934518195:72915176ae592c99f931af0a73a827f0edf45e5f2a4d77e1861fd4536188a8f4 934518199:3778eede5e1c3142c317cdbad7c2c989a516a7e14194e3bd603ec0e84c066e3f 934518200:170813d38c0e5d2e95e53a92071a560e1e1384fc3abcfd6eaf2a8bb035386fb8\",\"es/ibis-budget-huerta-de-murcia\":\"934107260:8bd5b92ed0b046f8fb591a90a52f9f0c35792657f3dfb2fc7a2f3c07b775ce0d 934107269:e8985188e34165b0fe61cac91a931ec62ea2aed93e74304c2f9153ac7676cd35 934107278:4bd80292aa3b2581295e5d1e7754aeef0520a5206cf2689f094f610eafcc0a99\",\"es/la-fuente-del-sol\":\"286639046:e9e811ac457efd985db5b6c1cf0bc6294537765245ca8f662f32931d04e3bb4f 286639742:a166167ccc23100aef37c3caecae00b67da5894ea0830aa023e85589f1b03c8c 286639206:dbe2c76bb21b3bfee1d6b8b73ed77acd1154c18db0e33dc5debcf6e1505dbb4c\",\"es/la-posada-del-rey\":\"67617272:33396b99c176903cc2c0e30e4e6a48c16705cf50f4ee139655e37a95a475c0d1 581261312:b559377a21a123c1341227e4a07ea3f04331a76d303077ddf6ea16e61291e513 581259589:bfda6fe0369f539666ec2382a989e78447bb3fc47085883e9bb245a78964d6db\",\"es/las-aguilas\":\"933169329:7808ad57e538c50f499449bf59743b6ea2a2fe8762f9945eb4a4b1a4c82f8b50 933169321:ddee64af8c7138b5ccedace1e46aa73913f980b41fc20a4c0308dc3333c9b4e5 933169328:531621f0ffef3cbfa5b2c377e84f97aa5c80c68cf89e0ac64b390e1f1e455202\",\"es/manzanito\":\"837003930:8350456d2787f5ad580d38fcaed017f2fce5e6a0651947e21356781f392bb661 393272620:643df367f67aa00309c7c70a97a71d872493dca0a9f234f1e9e7cdfdeaf240a6 399536299:b26a6a80fff8f57000ff13ef621533e05e3cb93cd5ba8856b0e511124087e2dc\",\"es/maritim\":\"142008996:103fd569c470cd5d88f89f75ff3905560b6582ed92adfd2d1da285a8cfe26676 280337626:9661e721d6853b8d6aa53e62178915723f444d4199801de5877cf759acaed954 364372235:a24e80fe0fc97bbae5941e9fa97aeabe5db0e5eae92a172f4e02370a1fbef6af\",\"es/miraolas\":\"261588359:cc9a6c688bb89b62a4725889b1cea3db1690f9e15a578e8ede1f32ccf0f1dd09 472773616:4524816ca3eedfe0ada7cc96cbab3aed034a7a59394a0ed6b1802ea136e531e5 840757490:e0d9a8e5688bc843319e551a01c9a2efe4ffd97c8da5706d34fcd98dcc423728\",\"es/monumento-pazo-de-orban\":\"63799051:793380bc0e22e6526048a3756dbd8149fdc9173ef98bdf667ca1f4fc645baa26 63798942:0b235b1783e28b034e37a446cb7fdb9e791a8777427c5b9d67c6e3bcb833220a 63798705:bf0334c7911fce504702aa0ff642bd7159c7a1000e28ba832e2d4a828ea3ef1d\",\"es/murrieta\":\"932883798:30c3d7bf8be967835ec28e673320e5c6572fd9da57e3388aaf4482a6fcaf1cb6 932883795:9b8c4b8f4aa5d14a200c0c0a0e3c1702f620efdb219f4b71524a552a0104ddeb 932883813:fea8f3873160923a4be5713a9c77b4ef651deeb45cfaa8178e366050a324ecf9\",\"es/nhpirineos\":\"749832520:27a8ac9f5384ac8c6e110946ec86ddbc7a5dd3a2b0f4308d3f444db83ff01077 792246967:e4aeaca3fb5b7a60011d61a5f6cf239f625705c3339c4442e391015865eeac3b 749832525:748924bb12f61adf8b7f9acf0b1fac2f007ca25ed023eccd130cd759b0ee399c\",\"es/noctis\":\"577130117:d640f64f74d35dd2270b1b6a4bec74d88a3cd75658a65c94cb4f525fb5fc3ec8 577130122:4a23e8544a27accd20ff4b70476222ba8d319c94a433860ddddef356f2e68ad7 543110947:d8c523b4bbaf65f852d448369a779476bee94ded146e8a467fb6aef8edf1ae37\",\"es/port-mahon\":\"928600310:7cd1790889a4c6d6bb81cb14eafcd97a9deb086d918628f95d813db8024fc491 928600544:742fbca013b18958d192e60ea689c6d63432eeb044ff286d94e940a52df2841a 928602380:1431723d2551cfde84b6e7bed9972d930cc83e3eb596d52c73e868eab1d930ad\",\"es/regentearagon\":\"43691700:68a1b82ef60a9bcc9cca6de36dda396d5bdf2ba53744f87189ae9b05aa03ecdd 641434553:dc09abbbb9b880d269651c5f64271f676593a8881f6b533f45132fc6648a20ba 641434556:6c240d6f94f8958acea8f473abc8d6433a9de1886c4656bece9b6922f7d19513\",\"es/regina-madrid\":\"504163407:d03a7fbfa495d77d8ce560b233b80b381779fed7538829038ea6e2c2af55676f 474727993:be4b682a7e96ca1ef93ddfc149c68b689223c6e0db6e3b2500a8d308698eb6ce 923298774:ecfdca3d0343e75c16fc3906fddd667d56fac0ed85e20a587524282b6b2ed00f\",\"es/sanfermin\":\"https://static.cupid.travel/hotels/581553988.jpg https://static.cupid.travel/hotels/519493993.jpg https://static.cupid.travel/hotels/519493998.jpg\",\"es/sercotel-esteoeste\":\"930537962:97661ee403619af9b12259a4fe64638ee6b9283e22bd4ceb8c3c5cfcbf2739d4 930538287:a3bf1a4bfeb0464eb8769e9604edd6fb73bb02397efa61092793610058702a75 930538267:478c85b9c1ab340fdb29b4c99ba24ebd043083053a02b1da8aa8401414d9f905\",\"es/spa-la-hacienda-de-don-juan\":\"545521069:83fef6b70dfc537bedbccbe959b2a576958b4c09148a40837cb86e419781cab6 33981274:25648e5138eb0f07db14fa0644080872312e06853ea2737bbeb105aa943615ff 423095141:c2fba8cf027f97827235c1312673972e94f1803f5f254eea958cc780fef3d2a3\",\"es/urpisabadell\":\"137368570:826630c549325e2cf974fe6101bc52d76191417be2f0171e2001fe86f8211acc 161871311:0de36a4e4aad3190ab5165b7df2efa1f3b5a9f4aadb3aa53834066859c2bcf49 725124090:9633477b8445db443abd084a54e47fb1c403ee4f5b97615fa88c0d3e50fa3827\",\"es/w-barcelona\":\"894744064:ae63aba972a4064280bc3cd6239dd6c63b3fd9134ecb4c0359985453b89dc45d 894744076:7e0671bcf82ff86761ad5bc6a1d0ec01f5eb631495afc3ecc00bd311b7069bb0 894744068:0348c93970e2024f173e93698a6edf34a1d39a9ec2bcc966b78090b3eb7cdf89\",\"fi/cumulus-turku\":\"928181305:9065c60c9deef5542592a86e35e59c3b2d4880090099ba62ed61f5e0253b61b7 928181351:257d4eb5af2d8ee3cad7d0862fe629a403f775a1e95e222333b104ff585e9210 928181403:fcbd898ad3a8a4ca00e052a2416f893347cab93aa6a63d35a3a5da5868067bbe\",\"fi/santas-hotel-santa-claus\":\"827697318:a2d2fb6dc7d5c90b0c078a3a329bd9192c8264374f1746b242edc512c3d8d02a 827697392:4213ae76ca709b4e77d1a8f6f550a036f9246346b345808c043c3c54c15ca192 827697403:697af89b54a10948d1f2a87cc0e462185645db23827c0afb74d1fc5fa1e6c385\",\"fi/scandic-vaasa\":\"654403879:bf0f3625726ae1c4b3b5f649f1b041add894c38d71753918b0a63f36278578ee 654403903:5b315ba55eda5de6a06d341b78a245f4c542024df76f30af97b1e6af22ba5a67 654403899:0bab8679b652f3bb754549826eade7f3ff3c25e59509c94f5a392592b49ab885\",\"fi/swhotelkamphelsinki\":\"622530768:18e6ae4c96f19cee42e464afc8ffb9495ca568611e26ad3c2155f1ca0ad08b1e 622530373:1a7ba1e9946d24d7c0b76fc178de31705e40a03510460a6be0ac063f070cac64 622530384:647b1256782163dbed49a5b70f181260551ca2a72beded54245cf42b4a7a9012\",\"fr/alhotel\":\"545172158:cb242959b6e8bc76fb955bf7eb008d059f8fd7c90edc35f7b27157d08f1df8cf 545172166:736f3f0da1c2ae8e554061e4da4228434f33181682df0c3ae373c58a45ee6f3a 545172176:0b801714c0becaf5b240c71d3316e8aa45dcd3ace2768ed2b8f65d688606add9\",\"fr/amiraute\":\"374664591:a524a1c4572402e744565cc74a60da975029b8ed6bc4386546bd927b75388625 34223036:1f7a43f4287e05ee1f30ea8caa40847588dd8d970cd3edaa96a696b88db24ef7 30189843:e3ef7e0ace02f4060fd717e3c4b1a44f05370cab82396d78925fe759d00e10ee\",\"fr/arlescamargue\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/282937894.jpg?k=b715ece7faa676e14c0673daa0ecd832009dfbc59fe7959fe3c2147958ddf023&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/205112227.jpg?k=201066ee13e3144073819f2ec300bf9b5a824fc32915a5f44436220752bc199c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/205108032.jpg?k=f0d94c2f10b9a3ef632626371f99f55baf812f2fb528d5dec4e2c9e82b22b3c8&o=&hp=1\",\"fr/atria-nimes-centre\":\"765652408:f12b6dffa1b9e69a388fe4da6324513e9f251e7bea7b57c1755a3d45b19bf684 908345878:69148394f3f5c75595c41021f97735f0716334e8a84f1c775d3f53814833c95d 908345879:8cd1073b40eed8ee167e25d31673e629454822c4fd1d8c6ad459b314f015e703\",\"fr/barriere-lille\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/599851134.jpg?k=52921ca42141974c7133320a5303083ff0d2664c3a18fecd16bf9ad083f3b215&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/599853854.jpg?k=74fe0f06129a67eebb31f3a577a63dacbcd6b5bdda49868930d07fcfe66a8625&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/599854327.jpg?k=b20eb459ad0622938192caa0c1fbc5f04e9f44875a60d643870bb40cb8de0f7f&o=&hp=1\",\"fr/bestwesternhoteljerzual\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/751136273.jpg?k=f827ba14ee2b00a80cd0593e0553eb8fbf64555876ebacef568f9703ded2933e&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914566381.jpg?k=7b26ee6dd9f596848cb723564b2b2ce6a70b8d2add1a939b169a20e4a3899a31&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914566389.jpg?k=efa7976cfac5f8b0f9f6a2b5784d38c70155df1bbb922e592927e3ae76113356&o=&hp=1\",\"fr/biarritz\":\"194860228:5a2a6c51c0ff18c87b7c0744c23ba9e0110a3a657d1dfe9e7d9906306a1602ba 194861963:cc0e9366bb0ceeca99d3586cac744c2d837096fb886783e7904ab2bb97126d6c 194860279:5b6c685417f306b6dd1819367213a346e8c30391fe7cb15587afd3937d30f17d\",\"fr/brivas\":\"583363881:a6647a780ca9f561976ac2947beba6ab207ae3abda9eed5a87368e158509b3ed 582522612:25b7eb12e9a06f17ccd5ad014db064d5c781d87a3d49dcabad9f8d599cf2e772 583363884:ea5c22ae8bfdf7abc317761d4da76b2e98a353d18cd3dd8542619eb6827800d1\",\"fr/central-park-amp-spa\":\"836918474:04138d31a10336cccc11174f5d43166ca99522b29db2de9703b28085e51da8b9 836918495:b569ec61558ff9c67a6d5f855a98cf22fab4882ceece869d2c24f335cb344d8c 836918460:b8689eef37d40fa6262643e17f06b24baf41e79d1b51f003bced8a5a033c7378\",\"fr/chais-monnet\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/426652497.jpg?k=5bb93126c5fd3a1356cbc21af9a8d299243aa572213e9ab674777f8edbe0f837&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/494633581.jpg?k=da1ae1de72a7a473fae44c812bb3348a7d642adcef83244d4962acdb31e87869&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/425311469.jpg?k=ef8ae886cf6a27769ab7d96334616fe44d167a7a1d5774dd106ca787afdc0124&o=&hp=1\",\"fr/chantecler\":\"549256956:285173c2e0ca9bdb12ec8eae14ad68df61c6a92324d942e91a649eaabaa9d76c 549256955:2b300ecb6e5c9e97d9755adecc297a39d19abd72abf7bc139958e1dd97ecc1d8 549256609:b954f10d9a5ff5fbe1278a65c7eec3c4e8e35744f710f356599320aa3a66442d\",\"fr/citotel-le-marly\":\"874975291:100e28ad791b605b5019e8afcf6bdea4801efd7b1a15cbd8c269459091b1f1cf 874975292:ea93ba77b80ebe3fdd7603c1bfadd5b54c5e4c6cc6ca51494ce3c1b2b94fe913 886444043:950ef61d6441123e5d3f3f7620651beec30f73dfc624a7f300a346b1e38103a7\",\"fr/clermont-ferrand-polydome\":\"917099099:35e5787332ed1be216adca9017a19fd972c83961a3fba5b83904ace53c86e69b 914494136:97f384a5ddc9ce637e8a6176de92a969b044c238a77a99a2926581a9f8694eaa 925811842:1bb43e439e28cdc4f5476a28f6c3795aaa3dc7d980eaafe9eda53e07b6670953\",\"fr/colmar-champ-de-mars\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/914981737.jpg?k=55d4340dfe1de59db947232f0f62e03cc3cc361db1fd9157a252076968dda0ee&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914981754.jpg?k=af66a1927d09f528f89dd303644ae63cb81b578d3f4bda7f5fc1e04b6c3f5b7e&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914981746.jpg?k=2fbdc41907ef435977cec177991f30bc16a5cd079835cc302e6f8e3963bc5373&o=&hp=1\",\"fr/connexion\":\"137495004:ff21479ebda4c69b27659212c7a50215fa0cce6863d7d44320cbb297803c0f93 137507646:15ce35bf67362d894d4cb2b8c3af58a7ea35cd80ea0888b8bf5900dc8d98316a 137507858:301470e233856f52df7d6b71aeab8b5b0c4cfb4e2bab731c41ff60a61f0ce342\",\"fr/des-arts-montpellier\":\"140274092:1b3f98ff1ae063f8ce8e69b1db0d1f5bf73ab53c9f540f9788d75ff904506ffb 140605258:9b6745424ee5fe62596a917c76be367f429ad5c03682b083914c8c9b88edfbdd 140274083:488500b18af6704ab495dc30946ef96f910e5d5d6fd9894a1e71cc7e76a7667d\",\"fr/donibane\":\"659826549:844e0cbd13aa541946dfc124157f2e53a38b18fc7665e760e98eb54e97385d3d 659826546:e19e995c1cba2b52990a2e59227a8259e907f72382f87c2addb5b9771fb900f8 659825695:fb76f025b0295ba2e7fd2c6a6715285908761e2013fc7d359324bbf525ac4f5b\",\"fr/express-by-holiday-inn-arras\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/270817056.jpg?k=f5376214d5f76f00f5def25894fb4c8a85df5b7d865e15f41585d6eb18c47e5b&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/899840124.jpg?k=5cf52739fc4f498bf5e1b4251cca188d7fcafd643e6d15978dec8f9ed024be3c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/250770144.jpg?k=2156ef89cbd5d1069aebde3dc2a1376bc16523691b76338317904bfc62b0130a&o=&hp=1\",\"fr/four-seasons-george-v-paris\":\"722089959:74b238146992edaee15d34af668021eb57cee3abbae9efea7939dbbaa1e716b7 722089980:5109a8b0f4cf1883c0ee0e48a84869e4e0a57f52f2ff516595621be4785f728e 794130492:ec8b3d3198a2c35e633f23332486adf19157c6e4aeb26de1be23937aa2070312\",\"fr/gallia-grenoble\":\"514248284:91092ee286218fb2919a1dd487014b461e3c04a4ecf033f54ec171d58e46b222 405360582:6dd80af8503065429ab02cd8a31218c7ebc7cdfed781ac55b70725e8377b3cca 405361473:731ddcfa2d144d58a4d89f8367dbe831a4bf0d17806502567793ee1c69a6810a\",\"fr/garden\":\"338408761:86b8d8014bb8d2935c7ac43dc7ab578d7f32f291208cec5ef812dacd1b53f8be 345408513:269701d5fd1ad7710d91642b46a5ee81878b7133b23d8685a6978658b075efd0 347378984:666ddcf2a20cf53d0421835e6a3898cf5eeb97c95e63d07849c0b4a8d05b8285\",\"fr/ginkgo\":\"171074174:605b4c831b7bde0edbc1c2f28a070bf38adcd5d2c7bd5b3b642c62d6a8f1c923 898419131:4fe293cbc2cfb7f2915eb19bc5022f1f0218ce8751d38dd28e46baf5bb978f2e 552048293:c67525ed4b9964caf9added6683510f5eac98bd60e4b9bef01ef0734782ab8c2\",\"fr/grand-hotel-bordeaux-spa\":\"347075981:e7da015c7fc6345a640c3f0ac95a232518ab54f7d842e510087631a759140e7a 347075640:1d9ad7c8945c2d05564705f6b162301746507e8d46496c638d3beb1ec6f0ec50 468714327:5617cdfa16b65759dd8840aedf7d48a7243de45f7de8b16c432211b2b33b54bc\",\"fr/grand-mercure-bourges-de-bourbon\":\"934472291:5d26626830d21d2b0c0fe5582918f99ab07e48532aa650ad8c0299078dc8fb6f 880351116:d3285ed86faf5a064700b0b6f027abdcd3f2d8de3354419758870a4f2f82d979 845565795:374ccd5ff3389f5cdb15ea5e96804d16903bf6f9d71c07146dbabc4e8156c16e\",\"fr/grand-mercure-roi-rene\":\"888272212:09e4207ad341eaa2572aaf75817ffb5dbda37970d52aa5ef2d307fb2f23e5fde 888272217:b861b6d76338261a4fe3e0f18af4a091592741b0ba7d211716f1e01542635bfc 888272222:0acedeb2b79ab6e8f54368b0a8c841525aa91e6b8aa03d41207be45987b58faa\",\"fr/hotel-le-continental\":\"540729708:b5d821bda50622080ac47eb0b76ca8099ed3cfdcc0ad0dd54f657bc09781c873 540729702:51d5b1d67e9a4cd3e9220c32864aa9f6984767609c3230f06d033c4a7bb9dc2e 540729688:6c526ae59101ca6ee3f036550b79b5b084903ff6d713f51f3a878a5e1f07e00e\",\"fr/hotelalberttoulouse\":\"71216186:087ac3e5dcea291684cc0de5dd46695afe02044021d882f833efae4acc1fd2ba 71241964:1aeb07ee62ee4b057851903bf06ee15a0a0d23baf61701ac35936d47b0b78468 71216154:9d45e3ca478e58c0e8c909ae0d0f28cd9687e847cb79dd5a14ee5aaa1e6d26fa\",\"fr/hoteldelagrotte\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/628419498.jpg?k=f9c1539c305f14a3fffc71ea47df6e3e4b6033e08e3bbe621ee7ca84589afbcd&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/388424228.jpg?k=fdd95c8c6c8a75f9e4df0a4128b9a573b4e4459280ce3200eaef209d7202ab82&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/628419502.jpg?k=093b3aa3825510c9bd8d18b599d53551ea4a58f47dae8c64c4e22748880e28d2&o=&hp=1\",\"fr/hoteldupalaisbiarritz\":\"897965456:09896736435caedd2ac8fdd7e8e039b24a4a5b5c4fc2d5be7ebb0f5612c11ea2 926011385:0f3d892964db292a7b254eb90012021e4ea5f68934c98842531ff6c8e7c0741c 926011304:b2d3a78927399d2d174ee10d8e85a4f795c2a49f429632888114c1cf7beda702\",\"fr/hotelnapolmenton\":\"22055098:69d1e0b4392fcd9c355969f7ae2adce4b19c861d00e739353b321ce263b51465 22054582:5f7097348ccb9acde3099c2ce093ba36056573345aa574287d4a41ff4bcf3565 28075730:9b1a8a20d23861ba874204f0599ad3c2c3b97abb7bf6ae978ee02e779de1ea64\",\"fr/hotelterminuslehavre\":\"315950508:62154a8f7d0331b13284591b39ddd0ca5e57d75b7718f3cd021b711b07a85182 315947776:9d40a3761685583ba22c6299e902082c8dc09ffab0eec935ab7303c87cd2fd9e 315950584:21524a6c03c19b878ed5fc9ac51251bf4f068d707ed17f119c072d86c2060b45\",\"fr/hyeres-cote-d-azur\":\"934446092:dc80565e5a962f5aea81e986cf39bf69bf623062393c922613a348f80cd6288b 776560686:550426b162607187ea02bca65832f756b75b2d78369b291cd69a98d7820265e1 934446095:db3b778868ca052d0a4d46811f8c3adedf1dd2efbda73ff2d9149cfd3b173ae9\",\"fr/ibis-budget-strasbourg-centre-republique\":\"933152755:ac6b42c769cc68809a487bfa6cccb54e9989ad7b8d39209b71e0a15e2532bf2c 933152749:e1f6f4f752e2a95269183f54f1e1df995d93c4e0c0537d8bf00de0d60b209317 903096095:ae8b7da126bd1c3949b381504491cf847ae7e4b80785707f9c6706a0237d7f74\",\"fr/ibis-compiegne\":\"934433858:ed24159e88b7d15e865ee70704c0c5ed8fabf0689ae545c9dc83e26015c33ab9 908331807:e3ebf0aa2fd8134b71f2a5d7539167df8e943cf11d5d1eee83e8c7ddbc3efb9e 748656191:d172c2fc2496d91d401a2765027f866014e0ebed87815f666c7ed3db3fc01f2b\",\"fr/ibis-pa-c-rigueux-centre\":\"173249189:560c1c7508a84c9e438905f82f8ba28c0db59587480b74f651d9b1ad197f5384 19345322:304eaca321aeb0dff7df06be67a7f016bc9f657647b8ae72d21575f72afce4a7 924023322:0653cc4410db8ebe20fe49ef686b8a0b3aeff04a48ff7febaa7c973de24f8708\",\"fr/ibis-styles-lille-centre-gare-beffroi\":\"934457940:8cef59dbffe4e7edc7441524aad3c9ba55095c41486efe98ae9a52d8515cff6d 876097137:513cb52fafed1901bb05dea7fc748664a8c3a4a2a2bac914962c62b8908bc822 934457942:b980445cd14a27ae38fd435f839b6db3b29b00156c2f19c96687312608842733\",\"fr/interhotelsalvator\":\"472880080:70b9cd20d063358aabf269939e2f6c1ce08cfc9c322c6f1724116dd2ffd077be 391008641:a99436b8253145465cc3af05dc9bd309b94903153381539fa2090cf037cc889a 391008633:e1daa7c0449aaee8405b975121f9f566d9ab4ae6de537837d33c2fe98048695b\",\"fr/kyriad-prestige-compiegne\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/692588746.jpg?k=bb7130cdb47a26ec367e9d5fb52ae501d181ef97c8c9397f1f94e7b010d6524f&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/870239151.jpg?k=91fee408022fea015d4da42ff3a7faba2f462efd5e226053ad9dfcd8ad9ce003&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/911477370.jpg?k=77163497647405c8468d21ef0c23d513259bf1c02b9d3e4f58a6c0d5eb21c552&o=&hp=1\",\"fr/l-39-in-situ\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/102089560.jpg?k=218cd7d8b469486a0b2646500ce88594fca083b2ca56c3cadcecb20d6612e83c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/102093672.jpg?k=69c0171e4b55871dec174068c0d537207df694a6bdee01c2263a94954bf7cc0f&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/890921237.jpg?k=c0a4510405aa5fd2d146e3413a0687d04c4345e74d6990f970cdbac073dd8bb8&o=&hp=1\",\"fr/la-villa-mauresque\":\"16813838:98522401f92e7d41bc37663bb3d9936a4783c06333b31f3cde1373a2c7fe0075 577286492:d14e9f17366beabdfdb6ebb5c9a407e45034383cc4b730e7a540637b47ece3d1 577290300:3ad606f710986dbda20a2feb149e8648593f447e5a4729f3224affb04f24b0b1\",\"fr/le-c-boutique-narbonne\":\"345223253:ef4aea8aacae6221f8c64c8bc2ac4e1d78536a789685dd318ceaf81f2853a16e 345224525:223f09a857254a48c884a7f7cf0b13ec03f098bd5c005c3714a8df2010c04d52 309069160:236741e52a5e2f432e4e539f339a10938b9d1ef48e6323c2dd3c2d90b2068023\",\"fr/le-calendal-arles\":\"923425039:a3cd32f2e8e9b600758c264bace362e3e5a2aae3330f3ec3e78525465ec8fd72 923425084:1117a1df1afae80c004a73ae3228854ee2bb423180015ffb3993ee0e8e2e59db 923425142:6a2518c5cdb2495f344938480e0a341422c6ca595f43dc2bd582c37751bde898\",\"fr/le-roof\":\"930847730:fb016be335cfa939cf182596656d422d2e1dbe54f3e3971f532233700bad7fe4 930847733:841b4c35b05d0f6564b1afa32622f48b8df7f4863fa5404a2551db5306612c39 930848465:53af5fb1a91bf32f031c2d4e497846ffaedaccfd3a271180131659ea25057697\",\"fr/les-coteaux-de-sarlat\":\"699044057:4e3a2cd67d41db039875f37af5e8dc2ee73fbb64d1343fcbc0b932227d2609d1 699044043:b87d992a333113a5dd7f7747d5aa8f9acdad7a89ffc20fdfa969de07c55bc00f 699044833:ca799d307f8754c0e2fd8f24b75e4a809c7cd8e14c51afb5879750936ebf9c6a\",\"fr/les-loges-annecy-vieille-ville\":\"203070029:e59e5b184e520e7d0594d35fda4cc1db718225f8bf17b1c848bea63e7de598a5 26668571:4195cefdd4f1bee526dd582f231b8dc0e12541cad6edad7bd93781ff1ccbe047 26668648:4fb72d92f0dab85f3cd8f09a8c2ed303961cecd901a98ef76da32a893c3641a5\",\"fr/les-tresorieres\":\"325405356:76ae933dab8c16fb038ae158c1526cd88c608af1af65c007064dcad83bfb4378 330640191:58c8bc784ff10f21356aeaac0c30ce0faa320982e0dc21cc102920aa8d424e52 330640310:5e090777112ea0455e2e81cfef1bf03e0d7656dca8bf665b43cd09ba16635ece\",\"fr/limoges-le-lac\":\"914376155:51d723fb2f30997647818382cffb6d9c863ed896dcb422f700532e0951764283 914376093:a02e9443bfcd7e1f51c427a678f7efa05c8784e94ec2f1acc84ee152d0155576 932768824:cba24182f50333d6e01b82038eba6806af7b0242ae7d6529b6c5ea0af9ec6f38\",\"fr/lyon-metropole\":\"472119377:2f2e2e196031d67c9cf4450243a175646be51a8351d9247c2e37d19d441b309a 584311156:1b67f097f983967811cae0c6dbe16a488a809451d50e10c4d2af3e6310ae6171 584337158:4891f075b5c5d06f3de624ee7655c944020f4d47beac04942745cb4b38bd8420\",\"fr/maison-pic\":\"826935477:af2f2a106323156f02d9c41d7ce32076b2044db0fd0739d58eb89cf0ae25d77b 826935924:89ee618e0fb599e5b50c6e61cd27a820e087b94c8ae2081a3b86936e7afe5843 826935469:3cbf9bf59aed1d6159491ee33d2da40bdc7bcb037bd752c81e019ed60da3b18e\",\"fr/majestic-barriere\":\"https://static.cupid.travel/hotels/257014757.jpg https://static.cupid.travel/hotels/418416381.jpg https://static.cupid.travel/hotels/170482899.jpg\",\"fr/marseille-dieu\":\"419882716:5a3398c7d3cdf1be8c39496025dab2a7b27ed2be5f070ec24927c159a867668d 419882709:10ffbe2fe6179be304d747c6c0d2fae5a9b24e2160c54ea436b7921d1694923d 419882685:b5643f825a89da2d07f724d99a6a4177b7e686244c35bee47207246cdceb4e28\",\"fr/mercure-blois-centre\":\"931744190:d377014954028b61d5cc8e1daa48cdb871590518d88c018acaa7ace1a3de27ac 933208683:f3047f10ef61e4a8c33e8d1e2b05c3134341f18e764c10551b5de6adcc653e83 881752124:8f762b6e945d6254bb4ac91d64ac545caccc85dedf88ed94f6761987023789a0\",\"fr/mercure-chantilly-resort-conventions\":\"776028903:0405983b8be6e358eb28543ebd21b732ab2c8bc575351668f5ed635656e14e87 908106364:b4cf86292b382d0a8053eac12c54585a3d0f56b5d9433f054c8048a01d8979c9 908106391:752e66699e55bcdc18365a32c196c030863bf03dc21997955e5a0369f7b41a6b\",\"fr/mercure-clermont-ferrand-centre-jaude\":\"934734194:e664d549990b7c7b35188224869574b061b35c38e57f12d1c1b8d064698a17da 870898891:972a98e3ec2bc9b3526bfc2c90795099b38b0b105461a670b88361ef4d3d8eda 873474398:9462d9cb187390cb8537fd7004ff6e5a8abd6fa7ed3a16c683203a2bf7ee4c48\",\"fr/mercure-quimper-kerlic\":\"881636083:4aae7f6cfeab82ac83c938466ef2eff2ce616dbd064f67236bc5d70a5c097f7a 884456766:a256ad04e3173161bf23e45776927741a16e1d2b1526af6f5a25592ce9bf9f9a 881636079:abca3d1d29257fdbf610b95493fd74ff00876da96db38e07def8d701a6cf661a\",\"fr/novotel-paris-tour-eiffel\":\"914471702:25567244dc35e5faeba4882cd49eb5d05f6b878dd4c20b5f174d896899027c5b 934543051:a8ba659b70b6ede3a1ba0d8978c17ac21b06d946dd1795d9cd2664bb971f0c43 914471736:40f6106b5b66d92622a2e8afe0db8cce60f944fbcb3272374f0dc5d9cbbb5fb3\",\"fr/novotel-suites-colmar-centre\":\"155473699:116a95f411533dea2d69fba460e46e28ad88d4e31b62090dcde5410b14039589 457465589:bb5a50f5b81204827b10fcedb737186827872c2df9bf64dae8652bab4b48e4c2 155473704:a5fa2367edd04ff28c8d9c599d3ad68bdbb8594b23b3910af40f906f31e3fa4d\",\"fr/park-grenoble\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/869256255.jpg?k=ca864ee7610a4b8f9857a7e81be24e12f7180a2e21cae8bb1f16b1e3c1857836&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/869256300.jpg?k=52932ce978b01adb21180a71da7468c70ff8b31f69ea676721891639d42d8ef8&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/876790827.jpg?k=be099b397f1d73c56764931f486227ed31d162713fe604354532bf5a425c84a2&o=&hp=1\",\"fr/paul\":\"628430878:c1d8e67ba72dc9546ec11b007cb0ec2d6b131cc4f591ad332b2822684e1ee4cc 628430850:351fa25f1b037d5c5ec868e81308609b85b29a40553733fb6d3389b1a9ab32dd 628430846:cbcb63665e989f8889fb12cb0c060239614cae78a9c8f13d2a8574e44bbec80d\",\"fr/radisson-blu-resort\":\"137154291:1ffc0ddc75e3a2bceca3c9aeb2ac7a6ca590405a2c38ed03eb8ee188cba07e00 41114308:bc9ad071503f6b69e1a4e9183ecd5335c546539be104f8b6331f65e7a8fafc00 531681178:b6e39b4616c73185eed0369ee3e677271c2d85242c2cb9f28ea1698cee1e2966\",\"fr/republique-dijon\":\"95754756:563de498f415c5b7cd333b6370eb3d0439e0ca41f61736af2036500e0776b4fb 95754657:793f12e3e63909cf3f6174ba707f6c1098620109acda1a9b812d8c5b990f6193 95753949:e5dec8708ed57058200af2ede0db974797ec45b4a03fe5b1d5215797ca3ecee3\",\"fr/richaud\":\"192451204:478bfc8dd362818b1b44fc4962f6fdc159aaa112d03bc9fa25dbfdbdb0dac2ca 192451123:f6edbdc61fc3d150232997603424205bd12d20355de7e5cc1c49dd5e1fed9c61 192442182:44401e2d040cb6dd940f86f76415f0a8570f9b7bfb48c426d68347f1a6a68aeb\",\"fr/rosemary\":\"883034859:d548037e75f2a51a23cc27d7969e52cfe696118125369cdaa49b3f2451cd67ea 883035561:9c50c561dc4fbe10e48d7cca1579d0b54e11fcc739056064e549a052dc22f9e4 883035559:558b3a0d85acf71380ea2d47a0d9f9c450079d46c4294e693640eba11f401059\",\"fr/royal-thalasso-barriere\":\"89409080:4900ef3dcb622a4e8473963aa4ca4796d6c605fafa842bd3f233bce026d770b0 213154111:6711c65efa418658644c213f660715043d2b8de96b6576536db9ca369ca6c31f 637450545:84669eba3881c615ffb90a0d3df5830b441dd603a21cfd6e7dd5ff7fc14f3070\",\"fr/thalassa-miramar-biarritz\":\"776635963:ac4d8835cee05d2f4ef56740e72ebc137e53fe793031a3e525bbb1be3503b011 749314995:97aec18f4a757a7a3c597f2386a326b99a83253633b89ae904b5a915b191e1e4 749315004:dab865f3a877dd3d86f67e4d5a50dbc4944f1ae8a110370890582b6c712b7a23\",\"fr/thalassa-porticcio\":\"511166908:f578039c712003e195584e21b793ca7c203d4735f634ced85dc9c431792e35e2 410604602:7e90c70f7766013fb364085204369852506c35ab6db24006b79efcc3c76897b2 449625703:9b79c7f0a5a0d3abf5a68ea5e0264c22ba05ced2e3458182db0dcbd18667f5e2\",\"fr/vacances-bleues-splendid-dax\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/140851831.jpg?k=0848d9f3cff26ef6b3a27edcfe4934bac2f7719578b1e2a3efe936de2233a976&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/159993163.jpg?k=d18542b71be1d11a3256ce5e5ef785907a17fbfe871c5bd36f11161445d5bf94&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/138695274.jpg?k=3f26b3bc886733f64537221c33933481635567395719575d3a19918b3bd46616&o=&hp=1\",\"gb/10-theatre-street-apartment\":\"97525656:07d5c8258f81d507b9db4dcf35dead5c45c09c00d868252d18cc9435b39787fd 97525939:1dd283eea1cd1b0e0c6a720e9527fed4c5807b4c8a23a98e3a654795c5f0b71c 97525971:c34f9a33e94018fc1d04b57c3d7dde0d3a6de0deefa1cc31d9dd8a5992cf5e2a\",\"gb/alexander-house-and-utopia-spa\":\"239731333:a524636bf7e117dc11bfc02a9d86bbacaf104b297d046ef04d366cd1af1ca096 399574003:32368b986ca99da9041f0ea29db63e5d10bd58273ba9907055b7a3ef6f5a109d 239727934:2859b4d92825f3139df85a908c61ab50677603573eb3d89e11f4268328bf186e\",\"gb/aloft-birmingham-eastside\":\"459892290:c1969f21922323e921c21fd7c13a6a94427c8232255743dd996fea7f3f6d8e49 643111651:7046d265103a9c9560c0bc3e47d3aeaf1662ea9c25a48df5063814c7d05a4edd 643111662:21159c1ceb9104237dac7ec2ab8be8e2b6fb7eb775ad358adcd49b61e02ddf47\",\"gb/aparthotel-adagio-glasgow-central\":\"907407228:9e3545adbac50fe9932e91c6fe145d835f531fc39cd3b753b51762bfce210b02 881537481:b6d35edc13a5b09ece9fd7e7c12b66c5bfadd6ce3f9cebb8ac948cd8a466fee8 880196232:6b0c5118affddaba4c235a23ec395f1f4888b7c967c07f2637ffcf06838d1aea\",\"gb/best-western-reigate-manor\":\"535875168:47c0756ba03877cef67f181e9765097ccbe15ad71388f8930c1a534ca82b5677 813388390:ee0e7aead77d0f1986f9af44ca1adab45c0e852262ad0f9f7aa1911a8f4a8882 477593216:85715d6a59f449577ed0cec9dba2dfc216bcf16a664ceeaf258319747db5bbb0\",\"gb/cary-arms-babbacombe-torquay\":\"540297053:f03a52fcd25213a527a57ece78d5651416b0f11b872cb37b34cd6f8a570eaa1b 540297932:7d84a128a2a56436cce724a348335aa8a673d0c4e8e193412882d9d97324b889 579931677:ce490ce104abfdb0cfcc2b1bbe3bd82e3785f36163b181b16398657d14aaab14\",\"gb/copthornewindsor\":\"442591039:060411ac7a7204ee7991e23cbb88f49b8ab9a37189e0801bb22097955d4b3c5b 442591067:44f30cc89c7f91efd108f9afc22eb13c16b2ed35eddc8cf94792bb3ad73fa045 514752356:110ccb60bf0b7024664b730308ee7f9c69c1a935cdfa0ac1beab56ac64523b47\",\"gb/courtyard\":\"249048572:73a89e7b9ae8819b50401cdcba6c6e96645a1b1487a6a80487399ff1db4c7a97 226141767:281c5e6bb691bc7cc06bd76a6dffccceeced135a11b9a3786cdca740f44b6085 245765180:0187526df08c8a6d26d56106d151dbdd88f3882c2160304f9966be6e455c3526\",\"gb/doubletree-by-hilton-hull\":\"928477443:ea61ce7aa222396901ec0504bb2fe37cc5c68349603fffa6f144477405e1b96e 928477450:49bc67edbd500859a997e34e43cba9b714fdabc6b07913009a7c537eb41c60cb 507579596:3f8e7881df69e65020e8c4ce84cca6db8f2a0b5e0d811fcca3d09e5f7e391994\",\"gb/duke-of-cumberland\":\"492702907:8e42993db1bf34ec5d6261807ef753d375944b099b5e4feb980afba03f25e701 492703045:8a7dd5b6f754526eb20f65a7f0f0c6522d6eebd5977c4fa33ba689ed609dc91e 658185830:756b2ae7c98e58664642902925e48b4b624276e5b8436049d04f5212fe7e3b76\",\"gb/fairfieldhouse\":\"438422989:73dfd5f42edf49febbd2bc452fd74259c5a4776f7a6e78b7223776cb8c4ac94b 438424002:569632fff1ae1756fb2dfd66c30cb3b3d2c349162d42f348296feaca50190aff 438418937:dd59f634da4af3ce9d4478fdfd2832c9a26032025d9872b531fc4d9d20f322d6\",\"gb/goswell-house\":\"842573833:dd7aaeaef2e62cf924faa6f0dfd22d083b9e57913d0d315b56631870d5daca6f 842573834:b9a75cc0b43bf73540bd095310e7879523d4fbf4550b8785500a3eb02f23bee3 265782464:4673da418eb3f28aacaff58ebdc38bbae342e55fac8ae4b342199085fe78fb8d\",\"gb/hampton-by-hilton-bristol-city-centre\":\"888601857:6d02d4155cd49ffb25625e88ca0653b7653e0655fcfbf1ced7bce9327cb81259 483835011:fd19c6405d686fd683bc7a9b7d8332319114d44ae3afe8f8a713796a0e131909 483835022:15f49de867f2860a8918650d597bd3feab5e33b7a86ccf466b75f4856b07c2b0\",\"gb/hilton-maidstone\":\"115823954:c63277ebee4ee2883d04727e01a3ff2a3da843d2c1b8d56b8b18a3c1972b9187 69884798:c31cc3a5f188bfda4d4f5207c015b5dde7e27e3b75d219e54d5159b54c1e6392 88864154:745eb1587819f3d27bfac2ef73cf28279c33e10f72ae4913de253ba1f19d72e8\",\"gb/hilton-woking\":\"928930368:9985a02d4efd380583c90339f9354086d7dce380e9cf0993cf4e120028c3e58c 928930373:dcae9fa050de454f1c17a07c077eb66be002abe3a8d9781aa816d20cfe919d71 928930379:a4739f5fcd32f47d4d7a011d3532f36312f126b1e744fb583f109686acdd48b3\",\"gb/holiday-inn\":\"804246417:577989bdc1250cc986c72d9783be502ae770fdd7deaa0d334239d3365bffdb73 339044043:6aff05ffeb7b754de9033c088009a9c96c2f78172acbb2a251acbfaa71b2fa0d 339044048:82b43ae8d8ece5e20fff6f6952e4e517946d71cb7032c84601373053a00bf56b\",\"gb/holiday-inn-farnborough\":\"768638466:fa37e0425d060fa0ad7bfe5cf8c414e7441b1090bf5d8748e41a46d60c808685 768638478:3f285eba02c16083c606bc073ad561c1614e1e6e0f4a516922fbaccc16b78ee8 768638480:2195b1d85ff2fcca985ae1ad5740bdced043a52537f0c0833974823d86ef293f\",\"gb/holiday-inn-ipswich\":\"667773156:39ae5c6c912e074cf990508dc05000a5ab56af55bdfbd7a0df0882b7d5beee63 290724572:c149f67c4635238a2e472132dad2e6cd3fa27251edb5d1e5e2f5bb0130608150 607796862:7cdbc2a3a72422df8ab5736f52070d53c696cc9a9410f62ad7b73d0682e410e4\",\"gb/holiday-inn-norwich\":\"272458415:13364d2e9fee619e4af13eeebd264b8d83d6350b15b234872973312bf2dda8a8 297117457:6ad5c49b7461ee3758eb6e5d3761a7bd4cbe5061cddef4b5e85945fa84a8d6f4 592256509:9e3496907edeff94e0486a49ec37d0c4a79c6690ce9bda91b505c338a4934979\",\"gb/hotelindigolondonkwestbyihg\":\"818819963:2e1ea4b60faa3d08b250183b9334993862cc93e4bfb13993b8394f29e5e2748f 818819953:53495dc7d5943cffe4fe38aa78e8931e2afb34cf65923d44b54423dd985bc744 818819962:74c869125c592627af251f199d576e6506764f1e596a0a4af5fa72b6c61570f9\",\"gb/innkeeper-s-lodge-maidstone\":\"136219927:13b862f1a3e7058be3f0426c13d862306d516fe072ffe1f73727fb8a7a0dd8e4 136219912:776a00d1c1cad15b5ff0f84c096ea68fe27c6284bfb72722b027cbf09a11790f 136219902:a0d7d8b45502fb95f6fec9da03334cbfa9934a24df9e19d8bfa9a655719925ff\",\"gb/kingswoodhotel\":\"351075267:444eb1eee9d777d820ba715f3c7610f525d36bca4448cb4639600d402719de99 351075088:fa332b7cb156499c9eed99117b525420fe21900e12abab21c9b3dfb64c6989c6 618029856:5e2d29974b4d9dab195ee84af400daab1990207484ed8fd3ab576e734c108f9b\",\"gb/leonardo-hotel-bristol-city\":\"300400487:eb8b3a69fdbfe59ac2ed2b74190539d1bbe76221d2a0635aa430955507bc2286 300400486:ee2445257e8387e5bbba0494b60d727cc6a8d1223ce2d04f49043ebd4574e392 300400493:24f6746068c7561a57940873f639f7c64cf8ae239db4fb0307469e268eee9aa2\",\"gb/linton-luton\":\"271006689:16dec8f4b06c7a648adcb57c0d03f18453f0e0861eb8ca45e404652586df889b 149920228:d49a39e0ec59ecf1094f0f8f717d16f1510f3c4b433c37f617921ed9090ba88a 149920026:a10ea34bbb58ab4b9d5fa9db1b967b9b48af909bfbbde617f238ee7459d59683\",\"gb/maldron-glasgow\":\"822410710:e6bc3f28bd4bf6c214d3e5008f0d9b3dd0bc7e3997f7257d3f03b83854a74d98 273062663:5f9b01865a93327441c80b0435e0494602095316f65defe0b956e64ddb0d6d1a 273728312:e4c512e363260909abcb3e0e3daa411216da3f6231d798c53e8cd03dc41b571a\",\"gb/no-26-by-the-sea\":\"270913309:5498911f8718083f3322fe5323c3d85411c88a80db3e8691f6e269b5a4eae9ad 270913303:d02b6120311c1c330bffe104a2a00c9fb94c8b34fcb081653fa825dc8f679d6e 270913394:7bfe7ee2d183b0d2e3ddfa46da680cc2d5c0b1b4f5f1a22c8648a45e6cd3671b\",\"gb/novotel-leicester\":\"241227253:7e0a64f63d2c1dae14ea814d36bd0eca7d3be25cbd7ac9678527a9b9b78dc28d 241221150:aac67af3ac54a058200bf889316b8a1c6008fb1ff633a9c9c9e5d575daff0c7a 241224098:35b7289a2d52ab7741f7d4a0439a8ea47a667d9e593494fc78ab7e5726c61f20\",\"gb/olde-house-by-marstons-inns\":\"357932001:24d6c4c0fee86de682e9cadd92f4a16bae18ff6d3b39c24a238244e7aa4053ee 357932013:fc986dd15259c8b6b4ff150f0b33c7a8f3a1f82ef7db35108441ffc138656707 357931986:7671874b471296b0c633e9d843ee37e4a4d5266349cace38188ec87e1564ab51\",\"gb/one-roker-terrace-tyne-and-wear\":\"678181199:4ff998fe56521b27023061706f33c1524e46d4c1fc61d5f59299d1acec58e4ba 810908380:312ed814cfc98356b647d5970a0f7928aa5576d958c81791604d31fdfd250441 678180934:7ff9763e43b6dc452c577460326a2af645e86170b13d8a28a782487c56d7b4ef\",\"gb/pentahotel-birmingham\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/789981347.jpg?k=0cbc832d4e131ac049aec2b59b023d52151c17b6d9ea02b962c85537b8a8c674&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/852167513.jpg?k=f750b10638b70cbea5754eed8f138aafb7e4f51cd306261aa94128b2f9eb5a4c&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/817093231.jpg?k=662c92e67fd572ff24bc6e7f36d0e06f22d8f1b928631c7c6ea41da3898c38df&o=&hp=1\",\"gb/portsmouth-marriott\":\"486805858:47ced5e321d6dc0b573a086971f4f4bd87aff461a60ed60e5bbfca08fce7aa02 453265062:68283e28158d670a9cf9a5c14f5eeac59c5367443eb4ab9eb2d9ba2c9a5c79bd 453265061:6ef51d92ef2f6c73158dbf12c71508403d6a1f1a45f98b385b6f724fb7fdc85b\",\"gb/regent-doncaster\":\"64268162:3b7ddec156acb2175f190ee3907e4732aa119f5ac8a331d9f582e2bf1cfee7cf 62185574:00d878a7d4154bd6cf0f0d57071814b73c4477f6aba47f16d3ec3676f01e32a7 240165933:c1c52c712fd68414e884ac1a8d22e4507367e18bc22af12d5ee1a1e85070998c\",\"gb/sadie-best-western-at-luton\":\"690748201:2d6ea5b3d2db52b08ab35340324d9a02fd4f72f24ee90ae76ed36d954abda46a 690807721:edb5f2831ee249f0a038af40d7347ccc16407cedc23e760238839a022ad0659c 690748471:0497ebc3a56c11b6f6cfc86da5f9d99b1f40f397c611507302231cba443d83cb\",\"gb/scw\":\"98858692:1899a2d157e2243eb741b916dd937c4bf0455a15b2fd27023bd2f8f15ff57084 98858695:999c29c095bcfb9cee3c98854477267d4e027cd2f1923160498f59451aa4fbb0 98858697:635a1000e996835c80d099cf6ed4d09c9ea4ae3d61abd44160df081c2632c296\",\"gb/spire-view-at-the-spread-eagle\":\"679317604:c8033a067998c652418499833487b2d950881cac6ba89f5b0fc0ef4d4a434cf9 793699886:c5f40dc376b68dcc6cd8f5e404702b5be2b0752feb129985694570c509d76704 679319748:882ad8118ea11088b9cdb02c891b9a8e924699373febee71e93b9754ee8991e0\",\"gb/the-bullhotel\":\"101171762:97cb8335e9110bacebcb256a63237c8fea97453baf64aaf8450eb5782c5c9409 257921733:554b26155550f0794d0c4c9ec0ec1aba32cc5f8bc8795fbd33a2149fe891d102 608600803:ec1cdcb93e4df5512f59bbfddbb933d6e58f21b2b53b0d5859eff94f92d99a80\",\"gb/the-elizabeth-house\":\"236950289:4a514e922e9a3dac3c27c1c5c6112931aa87c4098525e54b910b1309e9be5f8d 339621871:9d444cfa1925b2500f6bff190e0b30c18d7a723e3bfbaa6e8d691e257978fc53 282140694:a3ca400189b327ea6daaaf2eedae8ab52d798ba8503656c360d620a9242fdacf\",\"gb/the-halston-aparthotel\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/569770139.jpg?k=ee98a9815937a694202700a43ecb9de8c1cccb88f82003ad97016db2ba1c689b&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/569784242.jpg?k=19a5e92376f54e8f94a09f7534cd5dc58bee0e5c75c2aa3f963b6a151bd4b6d0&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/425946665.jpg?k=5e5bd407eca3a475bc4819753b34c948c110c479660b7196f1e379628c65a29f&o=&hp=1\",\"gb/the-manor-boutique-restaurant-and-bar-conwy\":\"550384342:deed42572ba99d78a5b6ac98b9d6784a08e897b756ab88e87fe03d392f590a74 578885220:bd1ae5656b7cd99c93e82470578838296be7c48a9fe45db8a62ab97d4b4f0c0a 550384595:70a375e4705dbb9bfef879aa76315eb2de45ec65044349ba8a3db13ed656cc6d\",\"gb/the-maple-manor\":\"83519597:4a2369dbcaa5fb2c1a0c7b47e12b0e99959baa2d0cbb160030ae2a72a52cf759 83519585:b1e315fa46d4b766d85eeb14341e3499ea153a46ed8ceb7d051a471c7049ddf9 83519583:73c61104fdea24af620fcd1cdd417ec9582886dffd78033b070bc41bc784d55c\",\"gb/the-ned\":\"414352455:3238ef706643fd2494b775a0c696315d7f3222b12ca3dc3e284fdce782bb0bd1 414352515:f5106fe1360ff724724eb78a0754489a5a9d4aac83fded2f4bfd1ba218f1cb11 414352384:d08b7bcadbb94fb4cecb01e36832222d2efb0f79761442a52f787e00ae3ded42\",\"gb/the-oaks\":\"523379456:c53d1d4f2af68fb599b9fa0a8b23a688ec5bd78ff3e701a06b00c0ef06dbf5bf 475015840:b80a5564e8da24ee9a1eeece8307612510dcb66861a261c209f63534a7fc305d 475015853:a0f28a5061ea6711dd91c0af2169c187d6d03003248e8e9f33e6e5524b58cb77\",\"gb/thefalcon\":\"3521972:071c9c0f71c5bee264d431a6a32c5e25edb902fa6d34e2b9a339ce375019fa4f 3521976:73ae916e75f7ee92d6cf4139008d4133e4fe655f05e630223ffbb15396ac7e82 1617312:31debe768c3c2d653bf9fe39be26d1c79fe868f09f2b32e3417db978d88b1820\",\"gb/thenewgrangehotel\":\"223593209:24187a6e13d9054233d10619ff37e98fda380467de98ed7a9b599896c123d280 551007958:c138eb3ef15340e80d64149cc44dcfc93290437f4f044638de9db49d96f04257 551007748:15b02cdd5eacc2501a8d50be456c2f2fe539e0229a8dca06b07119ae8f15ec54\",\"gb/thequayhotel\":\"453562025:555fb29aaff1c95731052172855179cfb7d76f566fa6a62da946cfcf985a1e45 263361784:acf38fb8b15e880b40f11810848d2270b4f927af91be86f1d5252c9b0e412de1 145703770:be5befbd216b93811e4408905358a9b742c4fde9eaa55c24d553790a6726d474\",\"gb/thistleluton\":\"907266195:b15cb4aea52e6ff2fedd4d3cc9b310d42e7d22a906559aa65f9897529e7d66e6 907266194:41eacee1946b29e8d773ffdab4bcccc9a3ae8cc4c7a1121c8e3b0e5bc8b086b8 907266189:bf79aa8044e0f6a71a53ad644965e5f3ea098e34bf3adae7f0b4f2750e3cc9b5\",\"gb/village-basingstoke\":\"244589831:d67c0f849e68c3f79208d86cfa113277797936f9f9f35dca4e5122802bf9e94d 220651549:c4518d38f9923d599f6acf55587e8644be16d043104567d0fdeacd22ed73b0e1 244589801:03ae3957c97000295f70bdaec81b56361b694b5099ec6f7e21a974bf99b71d9f\",\"gb/westville\":\"309329520:288e46273ff9ec8d86ae910c7aa49b72741989c928dedea26d46dd5ef9ce6889 309329334:df760fbd3943c0f76bd1ae959e81dea29f2d630822ad15c1bc3c30a6d587e3c4 309316789:5b7137917d452d61feecbd248c8b93e3f16476e829c10d67c554edc3479494ec\",\"gb/whitehousehotel\":\"157862471:e5ae5fb9f8d15c6887ed037b4331c111eb6a7edf9adad5d5c50b3bff0b601d98 101490328:534e6ee570303a33b05ba693e876a0974701fb5cda4bb4f3fb4cf18cd86a8022 101494253:ebd89425665bbc46cad5374f00bc6ac596a9fc776da61205e09cd424e0d04063\",\"ge/tbilisi-times\":\"108621998:9617c3eec66f2ca6e927421e794d6e30573d9680d4392d54ce817f76a57bf0ec 108624016:24eed3f497906ad890be9a66cd4b86157e621c153724e6700984ad74a41724e2 108622536:3397f04aa00a4796fe4abe1979855dce309f61c6c64131eb67eaab79683d8547\",\"gf/best-westerm-amazonia\":\"914643126:c0a503e96bb098ae158982df4d3e565735a64adb17bfde3980ec0c4f2b8205f1 914643127:2b65d1a8f7c732000958940c854ae8863f4d923864d2aac8681e16922e245e1f 914643128:e4b36527936e3532840c959d1d6a3c0fac89dccc34b71e1a24ddb535bdb2ee58\",\"gh/floria-sky-suites\":\"891090845:fe673391a1c04e073ca45db5acda4261de80b4bea4307b62fc08c034460967e2 891090905:bde6313c912adf0deee2d1b6133a743d43d6997d0d2594ff2957d6a92b3d3d5d 891090948:c458efca220b3bf593e3d8001ef0b06aa27d52662f238c709dc4548024e73a84\",\"gr/amphitryon\":\"20285124:b7ca70e809d90be1099785d1d28e82a45d356370ed62af604587d0b1bd7900aa 20285130:bccb5515b9c136d00ec654d6035aa33d77b559058f66c9b528ecdd0275b6ccb5 13559577:f74ca7b45e74f077bccf08be016cdb97417c175a718e11b15de4e7f557ccbe4e\",\"gr/lefkas\":\"444064343:667bbaa228f773b73e9b45404857334c1a238077e7cc357c8e7b8c19a4745601 444062963:d90c89235e8f5fc658fb95b3d856143d3813c96f12a6544feb7da2b21835b507 444064161:16422f29b0f712c7ff45847668dc5fb18b2d3535dcc0ae44227044bff4545880\",\"gr/nautilux-by-mage-hotels\":\"767567526:5ec4d2c6cb276b6467993a0125d8c86fd59382b1294f8962b3a90804f7850806 767567735:d1cfd8a550f152f6e8431992e5b80466a4c00e4a8edb7342bff598711b364249 767567922:c9080bc5d46c5e207c648bccfe009c08ec617426e109c6bfad5660ae16b317fa\",\"gr/naxos-village\":\"447289727:5efa4bcf48b5c8e6e68e080453baf075bb80314709bf1c527df35bf27cc57946 447290220:e4110e4e7b38979ea653de7651492cf2ff05e33f4f0ddfeca15a7ebd8014db00 816990550:41e0ad40d2c4a17d290010b824cf11c9b36a15728921b5c967e026a8ba709bff\",\"gr/petra-mare\":\"613812869:2c7c320ebbc43131d0c13f6474ffc968cb7df4dcf7960f1995dc1ccc14b479ff 613839572:1b338712bb9b8450c0b9d8206051cdab171d1f5600c331dcc044c999a9408ee4 613813210:05016e28702f58c7c57361b6f398b6d76db71c45776772de4e727e2430c7885f\",\"gr/poseidon-resort\":\"467935643:124ff7ac3426e6b7282c5d4ad42edf361faf28a04c363f286d2855336819b573 438062398:7b0ba5e80cc6c2988752d174eef9f9c6f159fd2d7479a8cb7f3a5d728db25627 351275702:d1f0df6c958bcfb47d55edbc470b8ca275b6b3b482fadf44332566f0ffe16378\",\"gr/sea-breeze-hotel\":\"330755351:743e61bb976e1e8c023f60ea926d9f1f9df1b2cad80f438cc8e901221c6ebd35 565498687:c30f7797bd09d6b8b49d27ce9ef794c8bd9ba5f4dce9c0272f6221a15906f5b4 565498610:279f0d4fd43f62667bba73ad104275504e2ad6eab0cb07971872a798ab282e5e\",\"gr/theofilos-paradise-boutique\":\"117703712:63207ff61ff5c23e24c4bcd7a81d03af3ac011dc0d7a4c695983169949cd8343 117703698:96cc17dd9eded290c5d96677a295f479de17b558da35bb88e027c8983f5c5408 117703701:cfec0b8f045db15dfa531aad094f080d9e29786a7d643018d241dd83f71a5308\",\"gy/guyana-marriott-georgetown-georgetown\":\"450979805:1522916fa470d69bd9f81647f67f2d2f372155fb8da7cd2fe18608137b502406 522476839:758afb3c257d4dfe2713c44af3b1b519a061e9e20dd91a48c3223ddc929c8413 628228442:7038566d2a56b58bdd1ea35fef967992dcb4e8c3e53dac4630b086c28b93fa13\",\"hr/ambasador\":\"291064593:594afac4124076d1ae989a4f75f653f48a14bce1d78570d5fcd87c18c4537421 291065581:09ba195639c814461e4f03d602dfef15d9584f3285a7feee67738cd5552186e5 291064468:033f2b6c14cd225912864546c4834f66436c22a05c727aa35b2261bf1c37aebd\",\"hr/double-tree-by-hilton-zagreb\":\"540504041:16565a435e7aac76d05dad7bee5e3d20344d008d8429a0550a1d099399c9769d 484101662:36b8c4cb245f4f4d454bd1475d762aeda08fc78f3b2ccf93fa0750982dc6453a 489681553:494e0cd5fcf1ae3b309a9c571c55facfb97acb2eab4df992ee68cde3952f0778\",\"hr/funimationzadar\":\"438313000:16e66d861ecae82391afd80f69859f7f15d9b90fd28da136d2d5a47986a3a7ea 438312952:07ddf58e0cc5d3351da742130d76a5d30f51fe105e712ca1811a5974bbcaa502 156535755:77240bf5415edf6f67bd054e5129b6a36d6207567e8b5bcd127e2ebd214d9b6d\",\"hr/hotelexcelsiordubrovnik\":\"108015668:5b5647eaf6aa835047af5b643c6697a01460a006d1838e31c8d8614cc3f3519a 108016410:14139fac7aa08a799f0a282735874d09831f340543ef5f39b9a61875930093dd 18756454:f16386696c807d4a96aa190cc969ffe61a82845a8ec069bea63b06a167f7c358\",\"hr/lone\":\"312832555:3231dc80bd05be3e54f4d0e0a1d53c917d3b5b7c19b257b4e73809cabefc129f 144136755:3066cfdce1627e753a95a4e277f9dbe3890238a6fea30c73cbf49a962f55b979 4903378:ee3f37d3f9281a4d03ee5d69afbbf3913d4d5647029b458a528ae2467f5be4f1\",\"hr/scala-d-39-oro\":\"174366078:201c22e218f0ecda7c4252fffac99c6d46a69320f2d68783a6528137ff2f6b0c 174366068:9b4adcac8f8eade55de76ced3b105d82f0147d34ac1a9ec9e43bb0d0f106122c 174366085:1030a02ffc9bf5ddd9197795916dd3d1f97ea5cd05f62b043f511d9bfd8a4a45\",\"hr/silver\":\"455548191:c8a525b4edbe97bb0a785d07c9cd48ff84234a05f47345d60e009c4fd56409c5 61311779:10163936edbf614d66fb7be05af1fe1a2fa1820bfd8f31af5a042424158acd34 61311786:92473e3e0d4036209b2203f5aad7401ab88666458c9e57c63dbe91408b1fd3de\",\"hr/waldinger\":\"654510789:5f711a24c4209a361640654e7aa08065c1fb56a06adedb2c0cdb78269cb5be57 654510784:e7ce2aee61fbe35fe401f6d17c29a9211c6856c7fb66857b66cd44d8ac460447 654517660:b943bb1b253dfe4dd5ef949196ee45261fdb93fe30083820b649df56dfbe0281\",\"hr/westinzagreb\":\"477725671:1e633edad0712eff88198108e9d2dd74561fde8aaf37b60d3361222c71b2f83b 477725699:350e4fa9b3d7ee6ef48019c896bbc18ccff70dd86e07c9cad0e03d8c68d788a2 477725715:c86fff5db62b496332d912e1c7cdf62e91dacab7ba9b3119c66b4b6b2c9de398\",\"hu/pannonia\":\"693229576:5cef8f80608f89c50bfcbca7d402f9b1b42df037756b42095c6ae7e0c7a199fd 693235288:bbf98629a35a598275042a14476bc119577a75c679b2383050d77d8f1b6f1b1b 821295713:870a74da2efd3f35b2727038bce37f055c55cc3891295923a3853f9232994878\",\"hu/premier-miskolc\":\"454290905:3c62a204c9047b230f7aaa4cb3f54bd88d2f5cecdaa27240f9498bceae41fc0b 442792241:a75f7725ce7cad5c6e678ab1a4daa523b79b4d83e563eed8bfc7f645bd8697b6 442791913:cb266036e10a04385a3f087e15e6c5051f9bfb59cb7fe9acb8431651f47f357f\",\"id/aston-banyuwangi-city\":\"490688367:76fab3d1fee41e4135c0aa0e6bdd1290aa88e5497ad935d209c1bea857b1cf9d 136424253:ab5ce614799a71106808c2218f4950e2bc6361e00d8fcf3c5b27f64321b5d033 490688311:1e2ca292bfdcc8594429483457e43f141392b287ab134c86e347892963359183\",\"id/bali-true-living\":\"932341019:1833df2853176da7698c3088da0706fa5d33eb5b9a30a8f0f101a2bf69200b13 932341017:3a88e508126cd686cbde100d7e0a652d7a6a3a5161ef9d68665d2df878e98f20 932341016:3d92ee5c070f3b2552b83ad90e065fa4554015461e13d518cb4f777ece5d5ced\",\"id/berawa-amp-villas\":\"920616450:9b79518cdb48bac8bb3499a3b7d91b10375ed8c8584e227f64e6679a18086585 636814372:ecf27198860152b97c841d99ae5315540cbdc006648474fd39e2741634bfd386 636505975:59172d7203161af2b058875d06cbd98ea28a54f4d79a10e19c7bbfd8a599d067\",\"id/blambangan-banyuwangi\":\"250965072:40f2f3567d5ecf4e8978a2248bf6167c003dbc70d97a600a38e68530f50b4b93 250965075:a2876bc0b08400de3537abec837a8f18c1b384362c5e6dd057c26051c9f0da99 250965078:1c0abcf1d89272090dafc5a9b4853bcfb91e2baf20d87d0b52cbf9b7459aa1bc\",\"id/deep-roots-dive-amp-yoga-resort\":\"695881579:061f32fd64c69c3b6a57f6124a25d0ac85691e0cf023f1108ab31297364f6953 695881549:b3f35caaacddf0eb3bc4873f13e355f71cba5c81404e2829596c5858f602c837 695881566:026d0ea06e4580e50a8f353476124464c03ec823c08b9aaf894da10e7e997672\",\"id/ize-seminyak\":\"528644647:bf81e19bc1e7cc1603cf87952371fc41501b76576f1ef5fccd9fd6b233e54e0f 266548364:4f4d821b00ab6dc3764126fdc6f70e092082ad8e162266d3d26af5007a9964ba 187890660:672327ad757a32f6f05e19e886232fbf4d174f91444402acca2764bc7ac4b6c3\",\"id/kumala-pantai\":\"329271106:b168d36d5f75515f3de46ce52ef50cfab131fc374de926cf613c0728212babc2 329271104:531e98b704d1ec0bc751f344770e618841a32c1925e31119270d65408a4af4ba 329271114:610886e6540c50c1854f10dcee343a2a63e309eff78d703576840f95b940a610\",\"id/lorin-dwangsa-solo-kabupaten-karanganyar\":\"561622436:b317e0114ea6c95badec8a9df0f8f60b0a1e80b94f66a2a60176c7ef39fe6c37 563128186:ed0e6c47db674727fd7ae2074ec7744553161ca2395a70e2d751764e6e3bcebb 561622831:a3f3293735cde391232f2b81ceb2808d7acf458aeb67d7f7b548becb531de0af\",\"id/lovina-beach-resort\":\"398726795:f7e7ce26d97b8e10632b5658866985c59ba3e13150541cbd9f3139571882576f 658837068:e1045619fadcc3821eb045e9e28eb2c58f826dfda7c41010237d7ec559f7bde1 222739801:331602d8a7f0f92139ce6579ecb4744253249c2383d78102f5e188c65006ba8e\",\"id/my-dream\":\"477773698:62bf11af2e8dc5d0207e72499b7999875af32c1d17e2202c5365bdff4aaa965f 477773708:9a795e81eabcbaa3e68999c9214f2df41dfe290a5960adc80f82df4748f71610 477773700:a11d51a44012df11a682ce4db586afffb75025fdcbae1300393ab94b6ccb0f22\",\"id/santika-banyuwangi\":\"708682981:8d02361f3b360eca1f4d9229fd81d932923b98dc4e7ace79427fa796ff6a9bfb 295868695:e31155a83d254b126b45f940d8245fbc3d4bb6bb859cad16f118fc30be517c03 163716940:222214006a682055740d24dab848d43767ae0cf521eff841c457a494d1916731\",\"id/swiss-belcourt-bogor\":\"488045418:2e02e8b9584a9e7840b4218c7df54c86ac16a3230423fbcf2cf735c60baae3e9 46361312:bb22b7af86cbff8e46ca2d307a61b5f7fe5fdcaae89e9b47bb671bb8d9228567 46361314:aea5ec201ac32b78f7221a315752db5b57c616419753b9eb62253d693ada45fb\",\"id/swiss-belinn-bogor\":\"573752253:490d54cadd4ec4c6b8e28425a056d725649439005d22122eb77c2227bc034680 573752371:c10a7eb014b4a05657184f70801a865465ea6f4d0a03ade1c2198442eb9dd6d6 489146205:f1a48384b2effc7fc458c8221c1e869b4e3f5c7fb77dc6cd476f0b39bfb91848\",\"id/the-1o1-bogor-suryakancana\":\"497547278:f2958400a80c3c84e2eddeab20b9d4d63811013d8ba7f7d0c3593db963c7502d 497547358:7384e7f458a08f201eacd9b4213e7d2329216c34949c04c7c04d1c470e77ab5d 497547343:eb5befa3d6fb47844a40282dab10b8ed42ebeb88954fb3d76c129550ba7818f8\",\"id/the-kleep-jungle-resort-klungkung-regency\":\"641713078:29cfad6e5abb03edd804ff8e2139e6d5c76138480edd9fa2a0bddfd090540578 686946546:5fb753ee5982b1737027d63b6cf6f5d6a2657f8c132e065ea3dceae7e6a19aaf 686946580:336e223ee542774d240c1ed661a23d8388032971c39c3fe89ce4bc96ba37a837\",\"id/the-magani-amp-spa\":\"117209532:57f9b5897714ed5663df226480c81b517edc17a910644f323555f7cb8e14a2ce 633443071:4a80ae1ed0fec6bdfe1224f2b398ac2db1191b7be8f9c6c6f4328a775e2da46e 633443483:7a32bb9f220d49ed8c617fd53c973e10f238e30c2a25e18905ad28ed4dcedae7\",\"in/amarpreet\":\"447742242:1f59b88d17621e80e02e07ac588c23a668b7510b6cac8eb9f191dc8fa2c82cd0 453124707:d3b4438f3dc6403e92ff381c6b53faa9f3fa8eb9ef55bdb41e9290fc17e9930c 453123761:5f157cab541d512847fced7d3bf0a6ac3b6bd8029021710be84a89098d70ca1a\",\"in/collection-o-grey-stone\":\"923348207:2bda409dd8eeeac9b4a148843752efdad71cbba3ec13d479f091cca7accffaf8 930585888:896342f3006907fb6a400d8a8ba699f18e722224fbb8c4d4c1b0ef790f15a993 930585891:46ba6ef591afb76d96310ec86154fe4600caa9aeb2cd4568779c21cb831eea7e\",\"in/combermere\":\"28157214:fe99b82065ef98b7ffa64bc5bcd23ff0d10ac2eae0a367d3b1ca04aa2494291d 28157016:3e125710e51af65af99f589976abbc0c550f0722af87d04db4aae08bc03050ff 28156015:ce3d10c554096e9e993ef86cefe549d95c44cb48810587ec3ea0ec9e9654d966\",\"in/courtyard-amritsar\":\"474206182:c6cc152ec232916fda45b166d785865f0e462822116cdeab16237069ab1e897f 526869256:3326fd688c7f76c68c4469ed3c2b349715525640a7443cff487846f62d7d81d8 656745458:355085fe8e64b27b1cebdf378dd77046122e050e3fe35937ec7e6154009eac75\",\"in/howard-johnson-by-wyndham\":\"348627451:aabdf93c4299992b9ea47ca0286db35bd9c5983d60a83a3360c79c8b18623016 348627448:82a4b3ecbc7e4b92123006b5582095474e71fa9f22c23d7d37a56ca2e6e8b89d 351013363:2102942e2d2e376e81197371fbc6b5c1bb30f6a022db6405d9d3a857366ffca7\",\"in/hyderabad-marriott-convention-centre\":\"475468113:a3290eae3f6a667256cbb3b80f8ee4da3082eb9a2b096cf11d034fcb19eb2a18 504421573:2d55ce478357f84ef173654a09d1e5ffe1bc2f3d01068ef56b0487a3cbd67e28 504421465:baacf854e2557377901b5cb3e2f7bd7917f48eff0bd76eaa05bfd08c63d9a4ed\",\"in/icon\":\"38543484:62a903a60751262dcf7718976cf0d76f456ba0dcff5ba41ca22c656cf2d574dd 883305850:9c367867d9312a2dc6cb3f39f03a44592bf692db5b528e518d16a9f91d91975b 887850367:bd009531d2412080540adb5fb50d690a3823f9e260bb3b193264008e09f33d9c\",\"in/lindsay\":\"375136660:b4e2613a4edddea8e909f1b97375e25dac6c052a44b6c592100729ddf31b3baf 375137391:c4a05133e9f1df1309f436ef826bda2a9c5d121026a3a356f11ff1967f3c53d4 375138843:cf9651b296419e464f992efd85ace3d5ceca9f33f8cbf9cb5b9625801fd56839\",\"in/partap-mahal\":\"634743962:038d8e6d7005b66fdceabb03b10f5d5ff843079e91ff18ecd7c22b8ef64af7c0 609862160:9b8fc047baf5a58799d0396066ba0819141cd667a0fff0534dffd20874a98d8b 609863288:253d5a239dfd2fd24068e732030f590b0f955acd06dd115342ff08fa9b95ce87\",\"in/prime-land-varanasi\":\"488515201:90454d89c2a14b5d3e9caf084bd5b1304f587388d51524ec01393d5a10d702b1 701450919:614d5e310e733cbb0a3b8ec29def55a75b445404d856d8a655d9cf9517b12c58 701439725:d64a4abc01c859d40ea0202577042d3867e9d5566f4eae76d87666dcf5e9f0e1\",\"in/rambagh-palace\":\"407616931:d145ac27042c7372be80a0fd6adac153cdc12c4f09c8edf30b7c00535e1d0c08 407617069:66a57d0b180bd301a051e19a5adf7c4e6729eb658cca171b0e85f42aa9a2eb31 407617059:ded704511e936984be9286ccd787c9095815de1b0d4ae3f08c66e9a01e13e2a1\",\"in/red-fox-jaipur\":\"35290254:80084d44dc3c4a56233f9143a3b0f20e7b0b398e1f2556f8f37dc1e8dd2a9f7f 35290257:9e804854b9b1c481d15acb2b8c43103a0ef0285610d26f64276e0883c8c47bd5 95513028:838be5bb01aa197786c2bc544e41127d29b2ae707ea5c6aefe5a5b6c5f781908\",\"in/shreyas-pune\":\"674682707:3200892855df1ed26dc70f01bad46b66e153fd565775cf17da723fd7f44d6820 674682759:819823329bfb8e3bb23985bcaaf528030e5211b1f7cc722c9985c10817657903 674687934:eb0e5973d153ea5d10524f1f36d94bb0ed0fe98f7ad7b7ce5d0dc717c8128058\",\"in/stay-well-dx\":\"921177373:743f98bc735f4747497b0c2b72f3e88b4b9ed6e32e209897bc7cfe522af4ab80 921177386:7bd499fd48311d6981af371eab9d1ada5babb219517b23e0af533b1e03b4efb3 921177374:300877733fa66229e31a42948f479b2806cde595ecea984fdd09ec7e9b883edb\",\"in/the-bhopal-grande\":\"21247318:d37206fd454b5ab2b2e5421b65f18cad8db5d83f775ca112045f2e0ee9f2ff75 21247404:26b9c5fbf2f2d67d70008900910ccdf0480632a686fa3c3a173ff58e1703511d 21247372:5b2aedcc756f452ec2251e5bee3acdec676a24daeeefb6bcb846ce7b19d08de7\",\"in/the-lalit-great-eastern-kolkata\":\"27456015:097726f53fc91115fae4bb879d7d4ac69f8f28e2f893e588235bb345f97b3bbd 27150882:dbc3207b64e8060e9173646f76f72e9be746c27946670a8309cd9ee598411f67 27455247:6cd783365d934ab08452c64a9095c7cd9f1f1ce7c68dc69b991516f3a15ceeda\",\"in/the-oberoi-cecil\":\"565044105:4c82f29c78536fda29ac3fc7786364619855d2a1d4dd6c03cb3564d9a56c518a 565044496:649073e0181b439ff9caf339cfd238cd7984be2586c6c3fea3a3436813e14059 565045015:52e08340f08bda607962235095c59700e3b45d0d52b6f097f79fd9f657ea695d\",\"in/the-peerless-inn\":\"887725818:03f82f5752b370f6f70def869be153f69574594e9da51e795a1bbbc7991f9831 887725819:677e90f89b9c946b14f16406a5e16dda39d28f339a9eb88b7ba310eefcab300d 887725840:0911600065daeb7d5f466091408516eb2ff0af8d91fab71863f2131dbe5382a1\",\"it/airone-grosseto\":\"538886108:41aa8ec802e8143afce97d4a27bfa2c192c77bda55351f5a8366a271b9f707ae 538886151:873c8d6ca982b2d89eafff9a404fc8bf2e1db06d3f8cb4d808ed33a6b4fd274d 538886122:0ef891e0fab5b08e54c7b60eea8a83d80ba12d43e2150a10cd984fb338b1b0e3\",\"it/albergo-della-corte-benevento1\":\"201846684:c9475efe30e58116eafa02cea52fea11936f436035818fc8a338c347a886b8e9 201851055:39ad70c2d51bb5a1bd75e6b0936e92e0f38c73d71b7334eebf47cb64bd5077a0 201850782:1c8df1b646850711c63f877add8f6800b6fe1472cbfe997073ae8dc2f21fe6d8\",\"it/albergo-san-lorenzo\":\"131350067:5f650a95a9b623d1986a3c6a1cb267491b4742fecc9b12aabcb75246ebc28d34 131349225:e784e9c530038439d277c80c53ed46c4910fa25e26fb801c5d70381b5b712c3a 9955571:3b3aa6af30573fae4327c1457737deea3a9e1ab25471d00ed1412e71ed08a3a9\",\"it/aries\":\"728201311:9658dc9007eac415cc0714a161169c737723f6a0fec55818b81f406a70c25123 728201241:3bee27fde68ce7826e10bfe7c3f01e2e7abcc3349fc039685d5ea397e911c9b4 729314114:c44ccc1bc2e8035c77963f48e5a5e003db46ddd3a8c8f88b7825cd3d85ae4adb\",\"it/button\":\"65920882:c461d2bcd063baa7a5058d7cb7fc7eef117c300cda937402508814e116f9813f 65920878:490b362b58ab11e1fdcdbb5c046a7052451abe3c2e8e344cf29dc5bb7c24391a 65921244:39c165dc1e8125508360fbb11857f8e0cf9d92b5eb148f439435aea62d436665\",\"it/canadamilan\":\"135243194:5971d78c9427bc58a0af7ea111d1be34779338c3eec21131b0fd7a58acbbbca4 136872607:4951baa960f446484bed4d879180a9e6455f89fbabdabbbd221e6dfbd94f6333 136872806:03ef0778ed3dd8c4d7489e9053bc2106a928a5aa8f46ae507cfb58527f11d27b\",\"it/corso-orvieto\":\"375148308:4c2d8bbf48befd6b50b14dfc9d75d4825f792155d7919589014f8f0bf2e807f3 375159571:7fa440fa1e3c9a04f33de6fdc40ee5f3d9e106398a3acc639949adcb5b5cccd7 375158112:08d216985301bccc12ae4e085ef7a566685f5ac5332097de53cf4de73186b0e4\",\"it/duchessa-isabella\":\"472130373:abec2a0088ff3e681336b327604ea033f0e743bf949aa3d28d632e8ef3489457 472130355:a380ebf540bc3ae96a7ce70ac0b9390f762cb776d3e5ead1e5c44f8f30103ee2 686611212:ccb6825df6625b424f11354957be412e027dca593f0690f39dfbe9baba8f5929\",\"it/europa-desenzano-del-garda\":\"36999314:8fd002374415ca890ec1c625f8253d3b28e28415b615f41f12dc6e6b07b8b072 774877688:47501226ad89289a080f3651850dd735e453e549e077b736960ec0bd8cb4c5b0 700546781:ee81ce60fff5ed0bdf7e0e0df44155735abd0c6b2bbf92bbc58f48e74c9c88f7\",\"it/europa-taranto\":\"627076760:587e69a49f060a267dc7c946665e6d1d3f117ebe7251d8559226f918b29f0aa1 627076759:344d5b8e3c81086846631d7fc77dbff851f32f2c412b783bf3f88d0377b99684 627076871:0d630c14c6966e9f0512645b570f77405bb074e26c53b328d287d5b45bb0f0d2\",\"it/garden-latina1\":\"582578062:1e20406cd49a40a3547c6fb41c6d0e7ff906ce7bad43e57254fcf6f1b18c8b80 582578061:db69e93ec614678afb1613c1338f3d2df02c541feac4a8ded5b3c0fd5b015701 582578059:00eb7e83fbb4cf041e214c17c04c2af0185b6e8075f6fa924332c8ae91ae9238\",\"it/globus-city\":\"255308339:a4562a43c40125cdfbeccd746404bdb26ac0495bb04d7560c999b45f57d3dd91 255308341:78aec4192d389195f886477c50cae777f15a0d9de60eb5e4eb6f6eb9da96abe5 255308342:6a856ad76b90cfb8bc5c3b1c12a915cb944e7799c8b0a83ecb7e3057504d6831\",\"it/grand-passetto\":\"170228475:1c53da183cde852aeaa7e97eb2c263f47041b086411be04b6b70a1590242d706 354980511:e166db5e1e6a374ba798f37b124854202f2e3b5a5fb051b3dc6dd4ed730fa2bb 354980512:3f3bf33aa19ed82d6655ba005d0828ad94a3d67e858647345281a1e8e6155815\",\"it/grandhoteltimeo\":\"313250591:35f71c259343f2318689a82b2b298f5b049231760a028b6b18148a23a8e89a37 313250648:9c9e39eb2ba037dd212dcd373d7289d494ae005ce0dce4064904999ea68b625e 313250590:db48ec15d22605c807ea1533784597355982116fa30072a9523f7cbdba5f8173\",\"it/graziella-patio\":\"26097478:0242ce017d4dce3a48a469e0b6900bca1101dcdcf809e6ffd82ebec9ae72086e 598578203:bf4d0ecd44139bc604e0be706d77a2befe75e674a4e15514217b4cea61afdee6 598578548:83647f491fe75bc902d95edb86c0768badab1298f16aafef70114433c387b084\",\"it/habita79-pompeii-a-tribute-portfolio-hotel\":\"849027642:61666fc4e8814d36d4a06511587e02c0ecd9205080bb72260698b349fd342411 849027635:573689bb82f72601d60354f8d89c6fdb1fc757932ec759a1e291a9288f20b29d 849027547:504646e1f578a631c13adf5261c7a4d964faf1c5aab8c63e1b862c8b6a869458\",\"it/histo-san-pietro-sul-mar-piccolo\":\"586131960:80c3b5bba9e84a37228e6e725482581c5d57eb4c3d395703692cce898e40975f 586216976:9aebb3eb4b00a0979300fcf820610fbb468b26f8f2a0fa503d61e05e2f55fa9e 586878280:68118db2023cc9d700ebdef4805617236801f96803d3660daec3f62cef781b79\",\"it/hortenberg-homes\":\"391237320:b7db800090119d6de184f1f86ef72e12743e40a9929a8534c50b5968fa18f73b 391236697:876eead6040b462ae4ad5ad25cfd24af8c9711dc51b6e22c73ed62b0acd039bb 391237491:1c2f705af63c7e3e76e7490670e67175f10ac90cae8db207742132882e4e9bc2\",\"it/il-cantagalli\":\"84970335:4fcfaf5a55aa1127ee8fe9403c46dabc66652c635b7a8b3559019af57396229f 84437142:d8df311c3c8a816eda399b83baf80fc9e8f9f4a7dcdeb5bda9defafe61141d2f 78534463:d5b74ba272a307dfe7442215ff283766942b8f3946a6fd28d2a024eb4dd7ff51\",\"it/james-joyce\":\"199070771:047f532dfbf092873a371dcad6230e98ef67784d4f0563380333a743d7dac6eb 246755171:88b9584ffd79acaff6e99df3200b5832d32f729225612301ca1c0dce00a15181 246755149:374d955aa5820feb4f808ff27c7ba1d31b7fbe831afc709fa691dffa51c355f6\",\"it/la-rosetta\":\"763966329:db7645cb188796bdf6d0c2f7884eed4a26a717bfc264d1bc5acf5be7aff5a92c 763966459:3963a54d5a69bf513c765f38e288614485fd6f91a0d37b9da3e0a7f8df440e07 763966979:d9c867432387a9a953702e2d46f76c1159d5f001109803c99495308cbe013493\",\"it/locarno\":\"176028348:95a760891b500212b1b8774b0fc9c54e9612e05d0279bc3a6c0a4ad8a95cae81 138198600:b608df3bb45f659a053cd2374b7f54744d9d365a597a563cd6032fb8a8c655bb 110298364:c16920fd6bce6c6f89e177fc6843700b267b229cbccdca4319165ae708096df6\",\"it/luina-stresa\":\"839562107:a8f8a4d6175ee28f0eb5d1886192a9419de63424ee6df6149777127bd11ba7e9 839562300:5551f80889ad7922c22d715e1645c08e7f85d4439ee0eeb451a3caa0cde1aa2b 839562519:0dabf28d1bda3b202695f7f45a1d03cfd9aa3bbd00b767dd165f85ad279928da\",\"it/moderno-trapani\":\"73168242:377b5dd2deff0aa6722b5f415e2dbeb9a285dafaac414220b0441a83c4fe58c5 73168232:06592c76bba10b1f612989c8a7e0965222138f7a74fe61c4689ddc73bf44ce7a 73168184:9c4285588c204e2f4a5d6288b6635257e3a19dbac5e5b1ac34a1d696d1b33975\",\"it/palazzo-dipinto-lucca\":\"257309432:c9f571fba81e811624221553c2afa82e223db884793721f8db7b1d9ca04f568e 257309436:4197647ddc18e09f479aa4f4186edf3a44940472fc02dab363c15f53bd15b28a 257309317:ff9939ae3257f4d2d4e7436431e456e19841e085d1af6d0ad438c859922a0c56\",\"it/poggio-del-sole-resort\":\"92215354:b160f5b78225ab29ae21d18622af96d8a99d456c4e78496041d00d5c6a1a2117 92215359:552ebe24fc3d746936c6fd65808b2e642ef6b3a1ba9b05c93a5cad377172e5f7 92215743:30055f6f4ad73a2c0f0fdba64cdf0f0331d11fd9db5831fd54e41a2a2b8d71da\",\"it/rome-cavalieri-hilton\":\"927183673:ba60816d1f402c76682b5f1e8e458bc966096e704cdc5ec0708cf9228be86cc9 927183527:2d4ea6e2a9cc2d7db9e0d38a400dde19cc386f384d878a6d49befb46cc7a8f38 927183719:077202c6dfa606791ade4935bac289e31ff14c799a691579c224f07bb0b3d312\",\"it/savant\":\"13735306:6c222c536fd855c1d5073dc31830b70a49cebb74d292782b8f57030d7a8b411e 13733222:a8393f3099dc25eeea67446ee01fae884541a7c4e909719df884fe2f3ec0119d 39565531:121689993e821b718990f5b5f55396be03f7513b5b1834c0763c874b5f20048c\",\"it/savona\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/914662804.jpg?k=246ff545d5075c937b8fc145961eaf0a4f7c7566847a384861603725430ccee3&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914662802.jpg?k=50693bf521855f9f2d468747b3bce4a933d22f14d7eaf016a645dce4b42d1873&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/914662803.jpg?k=68ac4f37d0f2ecee0ec2941a713bedd135061a2cb10b1c3c7fa4a79355eca3df&o=&hp=1\",\"it/terrazza-marconi-hotel-spamarine\":\"928286010:726c62c3545a4c4aab3e14f58c4c07988eb48613abede4fa0a6cab8cda288d05 928286008:bba7dd06e1451a6e7d43f5a124787664759374158e8e921f6f654c50ef32e447 928286002:b57bface6a45f5e0204e3b07535cc4728753cdd061f65860b09bc88ba552c9e5\",\"it/torre-del-fuggisole\":\"488363541:2af8c602787b1e078bcb54fc7e413da2b4e31aa0480ff39a482597ab1f2f7f6a 488359301:234273d99964bc2d889904544cf8ca5ae9b14f00259789206b382e3eef070e2a 488363601:c21697980cca1ecfd61833f89ea8cff2066bfcfa41a08d2dda0e4e23a6109bc4\",\"it/touring-verona\":\"240986130:af4617aaa60638cfead2b1e55c63ff0a691bccd0d9abf2fdb8623f050b70d727 240986209:30efbde8e3b790a4f70ce974135942f649d44b549132dd58fa2065c219184abe 240986163:45dd0027746de6fbd1af42ffd513704c5a130bad45cc8cfed5ce9d94c295f310\",\"it/vittoria-brescia\":\"34086292:58d1e3333782a5f184c316306f16f701ed3da21a5ab138ca6a5664b7420412a9 109741256:8e09c312e967b79250198cbb44f0609b8eeea908253f692a8e66ceefb0ab50bf 85661399:070628f328b5e703d0617cdbd0a6c7c5b00e2d543839b36d57d511e37156cd6a\",\"jm/rok-hotel-kingston-tapestry-collection-by-hilton\":\"928946760:3b654b8b221b4d29c62ed7efde2a6f6faa87441745339b8fe65cb0bbcbc843a1 928946770:92a417a7d7f46c8362ff030cdaa7f348985419e833bee6e36bd5cf38be539200 928946781:9b7d0dcb7d64908f1016e7632f4d512ed5f0552e70d6e781cc61e3f0c8d28a7c\",\"jo/kempinski-aqaba\":\"683076501:696d14f697a156ca4bffc8b355226d9ca4128f53d231b6ed44843f1f84088598 683076552:dfa23c541ba188e27b057f94a0781ec73203ab464e82d5c2e8114042d2ac88c3 683076614:7d001547eb5791c31f2701c16f4fa75b777109a518dba198b2d70e190abd3a48\",\"jp/aloft-osaka-dojima\":\"463674864:3f135143342cbdd4bab688141ad3290d3faf43742c3719de46596221aa7aa7a1 724025793:c5ed255e660bd243ae2a022aad041323498cee0b9bc633b410298844551add6d 468564493:087886d8a75e52b5ce25fc4fee32d2acae341b0a252a732e6e15ccddb3af976b\",\"jp/fav-hakodate\":\"381602236:d2c3106e892caaf9af3c7585150e99dab5d2117c0cee2699899ee19fe26aeeab 381602463:5014c1e18e54dd88a79d0c22eb98d6ed39c29465148527704172a4d0f5a5a7a1 381602653:2631f970daa4ec5242dc9e26abb8cb890d12cc6c70e7fbce4e71f78969765d01\",\"jp/hotel-clubby-sapporo\":\"915035454:581ae6332357e0ec684a11dcdaf7c2a89a32cb122e1bb08e170ed7c7573a28b9 934288085:fb3006bddd87b68dda6571313b7275b5cc907a3ef7877761acfdc7417e341112 934288093:1c79544f8085c39a02fbef0c404cfcc985c754fda29de2f776a8c25ee6ee95f6\",\"jp/hoteruabesutogurandegang-shan\":\"181089266:5fbbc2923272a1decf3841573e87440188301098edec07cf32830d56cab5dec9 326277578:a8dc4e28804b38b74171e48fd40cf7b1c30691fd5c0399d4cce260919ccf8408 167974178:9d3a614dc9a2c0aeab061b6065506b5d181592eab5640943fb42eded80ada15a\",\"jp/intercontinental-hotels-sapporo\":\"826465722:43876ef31b77f7fbf0686411ed21c325737caabc4bbeae34e0f797d7dc1eddae 784360233:d70c41a817c23f9501b19283cbf03d33b4eb986712c0c0c725d8c9c52079788b 784365363:17faffd70114ba8b1ff763b7ca2d69e7addfdd04455e334133fac42e38cb144c\",\"jp/oriental-express-fukuoka-nakasu-kawabata\":\"500973236:6c409283b028de138b13e9425996b81f913f77872749e848f838d9f5459a4840 498053501:918105b44b658e43e694a0c8c2bb9c392411fcca70fa1f7a8466a9550da2c6d3 299119057:a613cf3d0ceb6d0778a6aac038f252cf87aefcc74a286643019d340adcccd61b\",\"jp/resol-hakodate\":\"898020719:9d426fa56f2962c0534326cfacc55ad79cd4bdad6fcc587fc6ae8bf8c5bb1dde 898020717:582a1648dbf2f4c9b813e257a2e46b330395e4d812e80b8d2e5d52051278da43 49011193:1d4d14dd727317b2aa22f8f975eb77f470bda4da6c6b86fc26fea5a9d3b0fc91\",\"jp/shangri-la-tokyo\":\"845844148:0bc9d966ac1f3e1f66400bce261536a7103e3feac645929a34d45b7741a481f8 845845082:d8922917b85a556477a7760c7f2cfd8f081204f056903defab994a28dc0f03ba 289832913:2f5fcf04c41c462800d10f56465ea71f8ba8ce6fe70ca211ddcccd5ccd51a33f\",\"jp/sheraton-grande-ocean-resort-miyazaki\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/711057626.jpg?k=c2c93049b12b85d3e1556122734113fa2ec612673842437136db20e841a8d804&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/790248505.jpg?k=c8355a39e60765ec897096a7828f03c91a3d57eecf0dc4a5cc94544bb24308ea&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/742057557.jpg?k=09e600f62aa49aeb77cbfed4158cabd451ed139e07ecd7bf2ffbdfec6fcafc70&o=&hp=1\",\"jp/strata-naha\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/271676945.jpg?k=5913c9f1b89c2621b7e76b2c3bf018906210fb9929a4151a4238ba96d2a28c38&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/354012135.jpg?k=883e9500ba58a430b8efa63edacbaa9c8cc2c1a49d74f9d6b79456bb2cac8f14&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/271676573.jpg?k=b99ba43de29bd1ef876c38d0faeb2c794b0df7eb6b2df15f8dac86a42a2fa5b5&o=&hp=1\",\"jp/susukinoguranberuhoteru\":\"318946301:ab08a35edadc672fa1e177079df905db3177a2937e0f0c2634653f8543be14f0 325051610:113d32b93a4eef5c0b9fc16320e2e652e60c1dc0b7da8d8bf8b3f3b23e22e89a 318946285:9bc5d28c150b01dc74678b79ed95847d8010e5b54076023a97dc2fdd3dbd6f43\",\"jp/the-prince-sakura-tower-tokyo\":\"151504819:03e4bacb93ec1d11abd3a68e85e5d4b3915d9ae5e14ce393bdf88da119a81354 151504831:1520f4055edcf9b9dd3876ae5c5cc2d5a57b44b83b08186a17a7a99438c3d661 151505599:59a74270dc333c0ca0a25672c5471a1c22cabdb37405d5d69db7db41e36196ae\",\"ke/bahari-beach\":\"660371133:1d688d64655eb856796e01ebf0b903db8ec540045925c1ecebf280ddbaf86904 629096781:8e4d64a8a676c16753c434c456f3d867b36b684723cf8a8ad248e67d8c025fb3 629096340:e7a00105243a05170b741f75933068d2d2c7b8c206f98f95af578f2f19777a60\",\"ke/tulia-house\":\"40992548:99ed87f5d1ef5bb9b7bea6178cc12699a3bba5f3609288a76ae65d53d34090fa 32756415:3dfa5b8542924b6075c9376f6f4d446d605c1d7889b6503639a8dd5ad4260ff2 184177681:c94af2c095ec6bf10ae47dd4c7b74aa8e629d5e81a45a8aacf32d04c186a4156\",\"kh/novotel-sihanoukville-holiday-resort\":\"525943244:ba0d85a7b54c3c87b8a447c5f6fd27570440d18c688dcfafae83e8994e37a91b 915043649:ae18ae92686f6a12c7c4ca1d512ebd61fd24c2d25241b2710dbe15cefa3f5b01 915043651:4c1a80719c45d9c7376d9a958545db125aed1bc73f50883416cd0dcc55652b7d\",\"kh/queenco-amp-casino-tower\":\"827146300:34a6cb22ac4233d5c9e1057b9d62d489e29559b9a831a793cc2fffd70b7888a8 827146296:a2f352054d7feffc6ef234fd17bd5bc45ca7a3dd051566a9a1fdc1e5bd8d2323 827146294:3eac694d2108ea0be136a837d8212d784811a5b032df03b13b8def60fd12b5ac\",\"kh/rosewood-phnom-penh-phnom-penh1\":\"834372647:fc04af7f673ae67ef0a28b1294c9a9c7d5c9afa4bbcb05df3427603aa5d8e8f6 235509671:5220abd15281677ce15514597e1eafa3b513746ce706eaad07eb545bf9cc395c 134128484:739e3254f03373e127bca30a3ce54cd1f0224282e42245973b4d27b3d9988df7\",\"kh/sokha-siem-reap-resort-convention-center\":\"723739676:4a818515c29b1cc32542ee7907a66d27d44bb24776e68d3bb0be690af2725406 723739730:0e6411e9d17f4e44b483065ae588f97cce6268c531348e4cdd94dac546fc10f1 723739690:0a3e2f44881972e1605107d3fdd8330f0e822d6ec60e80432d1cbd079ec90862\",\"kr/avani-central-busan\":\"252557696:37876cb73b0a5f998171941b496045bc8080e354ee4daac56527797077076369 252562019:9a33ad87c3c0b34c54ecdffdc102121aff0c228171e25dd1dc1bf2486b808785 252561919:bc85fc64914ebf7e728ddec6ec44ffa9d9d310e5d7a90637320cd42c02e2495c\",\"kr/hilton-busan\":\"592548465:7a6e609ee59a37424f012d665144c280389bb4c324c4e1df750d590b81d6ca70 592548859:30a9285ccc16d268bd1b83788c5f4c3f0fb9922e797d3fae370e6372a9677738 592549474:f75db944fb80d2901aae20887da5779e5f29481c0e6492fdc5ac28d72e22f4ef\",\"kr/holiday-inn-incheon-songdo\":\"347586900:3034cbef6a73098290890ee4b6baa631437d97de6d31ea899b78ae37bbbf773f 324697164:6062110cbe0e515cf143970d74eabc5cd37f4011d4fe0a5d82e779acd72d51d5 226128578:5cf70b585a43ea4ad12175aadb9a8b3b42b382d12d5f739504161a00e4ac6a43\",\"kr/ibis-myeong-dong\":\"884605389:81ed0e9d803497240b547e420dd196aa7c2b73c96aa215af66cb1065fe9b52d3 776710891:a07b0cb1d037e73fa803d27d5c16c1a88852dde0bd1405576067ae9424f677cc 880473869:28e825166ec666dad4737f672c0414583ff0f9b581198c284989811091f2cecf\",\"kr/lotte-busan\":\"40671232:0b66936e90b8ae758855fade1b5ed638e2787bff0cd567da29ff324d6c6a16d5 196142521:d42403b51f49f59b76719454b079e68cf7c507cf39bb9c56f55896f7a8e21f8e 505638621:5927f25260464b04c48e5ed43cc0f981d5742fb02d62b1f31c52fe4ce5fe9f3d\",\"kr/lotte-seoul-seoul\":\"909733005:28dd0bf1b7a0bc571949f152b8ae215b3c1869e7164a8937c73b7c530ced10b5 906381872:7bab0d842940b31c07a4a9e5dde88a230f6b847c41315b3694d11ee3aa93861b 906382921:7a6803bf4cb0f4ee6e815040c67b500983f95da6b863558197ec1ba2412e819f\",\"kr/sheraton-incheon\":\"894858135:22cf86f4388983da96fc3b7085266edef7e31ee46ef638fcb1a6f48eebe599b4 459610678:6db2df7d9996eaff07bf92d861dc9b79549e7fcd3b1f2b77d5204849aacec767 459610694:80903f6db844819e6aa1569ae81dc91977f7e4d1c45b0f716f3ff08eb3bcec9d\",\"kr/toyoko-inn-incheon-bupyeong\":\"885711039:81ff0cc4a3db1237b3cc25947b559bb0de91e067ac91c4af98751d8d37b8b780 885724850:59eb25ae1da9ff0541d485fcf4996151a8f39718b6708ac0cc8528317995862f 885724847:92ec019e401babbfcaeea24b77ac0335ddb5e631f2b7426285a572d4a1679163\",\"kz/park-inn-by-radisson-astana\":\"692198198:57bb86942eba57e901e6fc8b31414cf581d841371fabdff6381cf72e59472dce 248309026:9fe574862e1e2559a2f643739e4ab1e4f67d9a3f04238377df282321d0a3c074 232836694:06bbb768db2612602db36c4a188758ebe6cbb7639d28021a0730d2d57a63318f\",\"kz/rahat-palace\":\"842071455:3f7054b1e3c2a3bbc4aee8945da87cc1c5756a4728b6aad8f1b090a99d5c8594 842072295:4c6036861a57cbd5d114e741f7a4938908ba36d4fa30757c25f70399b28af0c5 842071398:e5b5489d4970178a6bce61460285e5984a4fe07ecd6ca34addb502b48123d7cb\",\"kz/the-plaza-almaty\":\"109484727:a719cb618851ecdf6b612ca7b91b96c80f9ca4941112034d880e72709be9b036 665683304:07e529a4931abac4cdac36cdd46f0c293dbf871845a69ad385aeac5ddb821b70 665691876:67753fd3bc3d4bf36f249f3b470c0089039c1b917064b654fd7eb4ccdfa30179\",\"la/luangprabang-aurora-hostel\":\"701273639:bb213f852a573d357cc118fcac42bfb13771859f579a0024eb2cb2b4ecf577d4 701273684:8e08f0d756b47e513b9d8fbf87816cfdbfd50373e62d6cce6d11a7be603dc310 701273674:b320b725ff90e005e7dbd54605278c5119a08258e1bf4541e23d9c3cd1164a04\",\"la/pakse\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/802618691.jpg?k=079c2851cec3b8cad6d4bd32aa4181998bab71cbda85fb21ce82aed7543587d0&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/549237597.jpg?k=bc19fb0e4853fcef8deb126bd2c8b07f3332fc7c8d9f41b0c871f1417dcacff2&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/892022291.jpg?k=6d1a9ef55d13e9575d3863be3c3ce6d72ef9a7ecdbb4bf94b869f0d8170b0fcb&o=&hp=1\",\"la/pullman-luang-prabang\":\"880664014:96d29727a0ecd5a3c40a12c62b9983df3aff4e9ee8978035d6c150abd56b96f9 875089391:1722c3839ac2b2f2e2f121e095c462054cf75b3cafdaff47b14c77f3c443d5a7 752449585:033fd80a00f3733ebde815607e886f7266253bba6d474b91afb14750983e58a3\",\"la/vientiane-vientiane\":\"923882569:b4e131db424d27f216de5d1052ad11d48463dacd08c1b3353c215acacef98c5b 923882566:d8b6c26fa81662432fe571bf3a83ddbe1d853f94925dfe33525d1a4c4c7de585 923882570:7f304dd05c43d7efe662ad60b2b028f1d900441e1e1ae1957ce6f8c054d0ceee\",\"lk/lake-avenue\":\"457891498:ea2e17b5febc9831fc99f93a34b1457e9187a4bad96f39ff1b6e77b7617f6e85 457891499:18657d576f7f52c27dc76339bfa66e631f54af24ee93ebc07bc7ad6eefc03667 886553682:42862e35475ff2fe64361a7070746253ceabd213807a8e2e910ddaa3540e148a\",\"lk/sundaras-sigiriya-jungles-resort\":\"840370259:c352b3928311494169efa45842b69985ec1230d99d8259c85fb1c19cd076ef9e 929261752:5b67961f98e9f78c43a4e957c6eb6189df26ab8cb73792495726176e6448a39c 841016291:e1250fa22345d8446d2eea95d60c9b403dfe635411816ab4ea27ec75a1754308\",\"lu/jj32\":\"237095044:507df56e91791b35d5dd1f5092c8670ad315701fe66abd4aa65fbe5fb5007e1c 237094361:ad86ca66e17ba25e74a439e64302fac8c8ead9e448518aa2b51fca1b8401f869 177545370:1814f9bc1cf1dd167b06cd4e0bc9d988af9c601d9a59b6059d485d2dfbe3e55d\",\"lv/hestia-hotel-jugend\":\"826590189:20dcbe2de54d415bc8abd8b2557f5e705abe109c88827c4642170e28f52c1d00 826590177:0848e6df21fbbb996b850b78927fc5a1206610ef9a99d0a1cf597f07cb732e57 826590188:14697ff4ce38a5780a650619a1b685a34f4b411eabbd8774afa2f398083313a0\",\"lv/liva\":\"215719404:de6496ed6df79ceda5a1975750ce3036446e9ea42528116fe4de15bb643c00ae 886087101:c5aa1c7f89b1bddb416ebca27b6a079322e47f4c5d5326c87d8d09684817626e 563281487:9c693626de6a85364a8a09879d1bf45ecff037bf061bd84e0e528b007a679273\",\"mm/melia-yangon\":\"933910429:f1289ffa793fce64d7e65521e5d5d543f80e296895ebcb3800d65a8ba716d64e 933910426:d68227bc3183cbcd4ee1fcf8b835582bd42aee95a416b9f1fa413b29251c5ec4 933910431:6c508381ac286880cfb24c8043efa420cb3849bd998e6cc3309164807597d940\",\"mn/shangri-la-ulaanbaatar\":\"187230691:78abddb06d96b4b81355297be92fce7e260d20c7eb30748e05ce3582c108c4da 187230689:e81a850319ecd916d0a92a04c75f18eb59affc75176cc1435247959b9dce317a 195409491:6178684abceb0e4466fc6867eb88d8445bfd3e5850a29e5dd6346725908002ea\",\"mv/beehive-premier-male\":\"670839138:40ab84640ff3cfb76f0db91e4fef5e60660a1f45f069e8c9302ea18022a4ef0d 670839163:2d84fd04916ad96dce822e5dd6fe1c22417166f68bfd0233c078914aef3add43 670839252:ea6b8ad0fbf881c05549c12d1cff6b47bd7b872e19b0564e835adc62c7eb525c\",\"mx/boutique-hacienda-del-gobernador\":\"160637199:813ed46f9cc265e7070e465409b07247945cd15ebb285f0d372c253f23f43f1d 160388483:512d3852f4eb56ce0bd9a823a1a334938f4b6bbff36910cd98931e50a11a97f0 160388306:24ec1dd333c50d928d94ae490200bf7d626d793afe1dc2f1f56ef5e041eeeec5\",\"mx/camino-real-tampico\":\"901753010:19844eb989a3ac8b273b6e9af5883fa21d3e401a9a85be665e1f667dab2b09bc 901753008:445845aa48eecd27d932287c3ba9af8ca79b2f010515fa98ee9f5a20cc731bc4 806247336:65e34bf87b8f763c91694e4ae643d8ad5af1556f0a746aa3754c9f48d9026a1c\",\"mx/casa-blanca-7\":\"346159135:12562349e7d5433b38c5e52c9947d02c957eff1abc25fd964fec235b8a41eb15 346101025:fea195500f0493a4eef931538e91c2526b0470917cf4af4c408116a4828cc44a 346148945:5bece08ba3857afed85d1014f5fbc4fa44615f2b83106f06c322d3df15369d7b\",\"mx/casa-don-gustavo-boutique\":\"563842001:286a99222e71b368b20db9f032edb723565899f0ad6ae86226cd70bb7c3a9b97 19236206:2ad2bf75ccd32de22f2fa0ac978ec13e4fccaabf29cfd6cdd903304b802eac63 215077335:c40ed0316721168719c014d74ab576e48ac3064baf42a636903f804f3f81368d\",\"mx/casa-zevallos\":\"276460846:b22df6ce31f3a90509e6a582e94777c345ad3ea8b7c61c422da16dee56443d26 276462366:a78b979838fb17a758bb6fbf84b733fb2f9f7ad54b3181b747bb7dd6483f115f 276462363:72783e355bea0f14e68aafbf584752aa6390992b71dbffc37bbcd0d4e055297c\",\"mx/city-express-campeche\":\"482640220:c24381438615c1a663962f957f27416bcf1f185f9ef27dce1dc4d9055e6ee331 482640222:ffd4eb292aa0822c7f34e0fc3a02cd0b43ef95be32bc0cbf06627e6af23b9d26 482640214:f1012a267c4cfd0a0eb605d577538753a481c17c9f90d251c0d8ec58ab9490d1\",\"mx/city-express-plus-puerto-vallarta\":\"482633109:927ab5cc761356ead7ebfd066d6f123d04625953a5e75e6ac31f3e1d898e5ec0 482633121:a4f7b1a720a681348cd9f5c3bc6157f65207bfcdf8b594e9017adfc6d2f1fba1 573402441:2ff6b013bfbf8b155a8651f431d0e386647c851e3f844e1d0316c4c3b3a9e911\",\"mx/criol\":\"75988953:45a3b0b2e1e3be871310234d01fee495593ac91b0512fef9ba3c1077c191b5cb 75736468:d830dee8ab7e579a360911e02928f7ea7da51467e95988663ebd6030a614155e 75742147:b580f4b49a699f301c9b6b72c00f4a5fd730b601c0cc89a0e97c2b784c95452d\",\"mx/devossion-by-live-aqua-playa-del-carmen\":\"867105936:60d61614239c8d6f79f82fd509bfea6d7c88945835203ccd0a290a4df200fcfc 866603951:d5165b0c6fd6547a9a2042dcde5080c0bf8a200323b20b59b1d7228bfcf597a3 756837050:ea32fa6f34d136384faf3fdf5b89eb093bd05b6941df58dcb80e983d93388cca\",\"mx/don-miguel\":\"258026903:d3180c9fccb42a2fd226a2e634a77e747e589cd1364b6fde5c8096239ef66c82 258022327:db4498a77aca1f74ebbcf014df0e6a0119a9fe65388a1580bf3a75a797a02085 216884803:c4ac447078ea49adddbc8de34aea7a5dcb399f50d358f5f6a4663df65f48d745\",\"mx/dreams-cozumel-cape-resort-amp-spa\":\"916250321:4295d71c871c46b56d441871ebe0c2dd47fc2f685febd6127dea0d00f3f0039b 916250464:1b895658f5d794cba176299286aca4b36b4def62214ee06f7dd44049d51d0355 916250552:01da8660624b225762c56f491bec83aa51d89754a440b6244a8c400803942240\",\"mx/fiesta-inn-coatzacoalcos\":\"377177736:0740b2a159cafa0d4cdbabdc2062034022509f6f6da56251d45257ecedd5bc85 757236841:8b4b0424121e2586e0c247aabda63382ee007092e0a04b2db838fa5de02f3a5a 377177645:878e8b7afe40829579497b9e9ba407eccf59c076246cce8c31cbd9e5cc43cb84\",\"mx/fiesta-inn-monterrey-tecnologico\":\"927948143:29e2e71264a9ada97c7db0de145a50e5f04a1ab1267da86ab7a8d842df3d7a26 927948146:b7a5a194bf6e43a9c29146dc982987503d2e6126f21b9fd567ee8f02a48f7396 927948144:787957431e1d33e9254be8351af9a87229f0ec3a4716417c0d8add90d9c8b06b\",\"mx/fiesta-inn-morelia-altozano\":\"266617933:6200ae265a1c95fee7224519e8585d4c52131312c96d68fcd4f88f363b930b41 266617935:2913d9da6374bec58b76838177461bcc0d921d4f377a55a33c2bcda4c5030ffa 441478672:cd984823af33454eee8652b6cb8a841faa401b4afa52d21c1bacae1c0354289f\",\"mx/four-points-by-sheraton-distrito-uno-chihuahua\":\"604222737:e2307e9cb701f585767f8e7de2582710ebbf10018f5820f6e20b6237886c850f 639825596:5cc42019cd256e0f73469bebcd45cb5fca037a0e2a5062f0811a8fd4a78e3084 915431048:4317ace5aea9e044c456e93b951284e21f60b5f68923d61add7c6cd186e64346\",\"mx/hacienda-del-bosque\":\"34401070:9b4de9078ade9a4d7c9650723b38fb975b749f042a297516e0b0c8d7e2e2df7a 744080160:15ab363d1fa127f16f60afe98999add837e3e80b0d41808afc923fe0caf57251 810379407:fd54abbece2daf7392a2723a7054ea8cefd7cb3deb8823b771dbd4aac302742e\",\"mx/hampton-inn-by-hilton-ciudad-victoria\":\"473517046:8d5e4a12eea6fedc37ef378e59b40cf31212fba6070405dd0e800b3222722350 473517066:8f2e04b588ec8058b1be1fc7577c540841a26ff33a02e1ca0a6c73628e6943dc 473517067:525d8a85104c7b630a98ef5b038618bce2aea15cb9a8fc18356d78d5502ec6a8\",\"mx/hampton-inn-suites-by-hilton-puebla\":\"474436910:ddb68c7e9890aa99d7e5a96b47a2612c2577e419c4573ee1b66a7af5baa7a83a 474436914:3008ae10d9158876a24a58ad55e36b684968535c0b7a6bf5e24b12bb9ff297cf 474436912:6b68ce1967631ee6dd761591709d721fb83182ee6a099097d360d4d95e347b50\",\"mx/hilton-garden-inn-aguascalientes\":\"922176395:cf8e64fe77479b4560f2c349760d88a30c51cdf07916e83fcfe3b19e1685f149 922176408:f6cd2d8919b89501e0b5249937a4dba941bd61441a489cd97921b24306025290 491882599:1b9de76ff9e896da69ee8ea48bcd3c8a37d296c4d2fd96c4af0efe24f55512bd\",\"mx/hilton-garden-inn-monterrey-obispado\":\"486125409:13dfc983967254899c1c3b100e82de2eb19d1e81f0b1f7e63578df5a3667a3f7 486125404:dd7ae9193058ca71baddf8e8fc953f91c391bbad8bf80d704857acb1f331a4d8 486125418:6e1274d767904fe68d28f9f498ae92353664582092388939aa19e04732b9ecfc\",\"mx/holiday-inn-campeche\":\"244465221:f6c42fc439b40e07aa51c8f7e4fbc0881fe80c7c0344f6e342d0fb9071155f13 404025612:fb8a09efebaa4b9f724b16e0784224b0594479a9d60b3cc432fcb421b4eb5fa9 404025610:39b02c586350ec8a0a29e91d5a510400c4a0a43cfcc9867e78397e68dfe9c950\",\"mx/holiday-inn-suites\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/295148939.jpg?k=7bc1161923d33af6bd32c303ac410bd231631d2a688dbb91555b32325d860ede&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/281689728.jpg?k=7e2bca04e5ed995999bf70de87ae6fe895b4f1ebe30f6180de5e99b17bbe725b&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/281689769.jpg?k=05305af2eb347c80954ccdcf381b71267c15de314b93be7999646e157177203c&o=&hp=1\",\"mx/home2suites-by-hilton-queretaro\":\"486122638:cf4e7f9d4767592f3500d9fe66989d3378b252786c70dcdb8f1615c3a713811a 486122657:f3c079c74fd68132c053a0518cba563142d3705e6040192066a1dd1bff8bf3a5 486122668:1237d5b7035fe71357f582c4d96ab8df82ce60ede99a6de4356aec10a392b2c3\",\"mx/live-aqua-san-miguel-de-allende-urban-resort\":\"450949027:5cc9f4748028d91867d339661ba77d00ca5269ea63d45eb30aa021f00f0dca5a 450949149:d3862294303987026e07baffd52d818c825f2c698359e308dd9d2f59b655d08a 450948863:fe651385c15fe977e474277dfcf65de490f1796d3cd7cf0e222dca5590fed2aa\",\"mx/luxury-2-bedroom-condo-with-shared-pool-10min-from-tulum-ruins\":\"388628096:a632c85146bb6e62e20824723593ba20909d9603d2e3846fc5206dbc03b85705 388628164:c9f637872c723e660dd9156de11ab2c7bb14ac127b7edcf3d3717588e664e633 388627872:20d3abef68d3a0a18de113f075b124f0c48ad0f7a1b13b1e12b6cd6ee8002bc6\",\"mx/mansion-del-valle\":\"519925305:ee6473d390bf3afd8bca6e40641baf6bde9309e3ea10f3ec52a46975e584114c 519925296:4e553707c3bb4fcded4bf017a929b969bb7d04d3ca2fbdd5bf70b1ee386827fd 552137724:8c147714c2d420fcbbc409ba9718650e50768378ccb23205c9a963281fa52056\",\"mx/medano-and-suites\":\"93556985:55c7677ccb2ce7f7630a0b19b63f763cc26cde478d3202999f7a5ed0429f0928 93556988:03e18de6938632b6f98de0fabf81df38aee2e2d2c31566ffa0badb97c926ac42 93556991:03cd7c2ba55b306458c174ca0398d55a858a3d031018eab7226a2c6bc371d549\",\"mx/paseo-del-centro-i-luxury-condominio-boutique-i-centro-historico\":\"873244659:a2aa59a2cc70d995b00bd6c6e824226df505bb788bb78c098c89d19d41118d53 873244868:6839f6fd08b6a99544aa3f218b60cff24df1aac779d5c034dc87c42fc5dc0a70 873244831:81cd089b125373beaa7f26ce3593e04529a1ff927087ce28f0e93e926ffd3b3b\",\"mx/posada-el-zagua-n\":\"723014736:ea8cb72b0bef66c0553601a94d30f5f662b2510644218251ba27f664270ab439 723005774:3418851ad79e56499f30c7a54dc055dccdd55d5273439b40123fae643f2cb7d1 724325705:6b383b918ff9be74f71fd701a8d46f87f021a1dd5a81e63d7333c7c2ff57b573\",\"mx/presidente-intercontinental-cancun-resort\":\"318363495:1f5a15036ebb8a34ac1b61c5f5e024bb32f70a1f91bb287c63cd2f102bd729bd 318358351:f90b4ce6d9e9f3f0b24a73407b1ca5fc79d69cbf4aa4f750aadf7a535639321b 318363483:2c2fdb1c9fd42efc5190ef1236ce9b0a244a09803d833f71643b37c8a1ff4a93\",\"mx/puebla-marriott-real\":\"763222806:a90d51cb0b6115c98a69f353fa59d0d4254d2340115949c468cc2dc1a2cd940b 431727720:d1f1e5fc31c6fdcfdee20b926b53803e0a871e6d559a7d276948f76456564f5e 431712631:c78a4bf982d60779acb891a74d152be5ea05191994f887a1c486314e0b84277d\",\"mx/quinta-real-aguascalientes\":\"583581910:65f64ee4bf476d064cd19ba8057386734457bc535965a3f62508b841282df225 592427618:46e87a52fe2b0bbff0162be12729e5545073bd0ed3dc171a969c861f3d54a485 592427486:55634ccd10525e3feae75026f12a3ee0a321d3e766e1defb35432cdf3dd63eae\",\"mx/radisson-hacienda-cancun\":\"863713618:9620f9526d364465d1c56398ffab01eda7596ed3aed4eb6b607e98cf56d30f6a 186268829:510882ac91f7a81e0b4658874a535599c9427b3ea107b9a2bb01c3ded8ce884d 186268928:f153d40c135facb313ec8fba31855ec4c4fc25c63f2cdec9effdca83814af39c\",\"mx/seven-crown\":\"315049482:c4a3cd66da735f2db59efc410dddd503b871898a10bde906c517114bcc1626c8 315049170:013d3cd2472f990e79ec644bdc57c2a65ea521fd5ec70f8c240253f26a81de54 315049165:c0ed6fa1f7e4c703d175dfea502e6a7e1c1249905b783de152b5e8d3a0d8509e\",\"mx/una-vida\":\"430644390:1dd0302eeb55578ec696d39d0f457d928aac09be2cecbf3cc51f3f49744dab9b 568925441:8090a744258811f4c46af6dd8bd3a7777d72a93ecf7b2e51d06bb840f069a220 543300190:372bb3a3dcf108ee47fd580052f82e1fddd29778fb2d74c51e404e09d033a43a\",\"mx/victoria-express-guadalajara\":\"526548437:9d58b594a185f171c63b8476398daf9c49de4105c59948eb6e4dda09e33703f4 526548419:dc87858d0f32f6406e53c4d27565d476fa156279b56b61b71c9d4fbe2a43bacf 526548421:9e3def613e15c43b4f80170390efc2b31a6d7f56d41d9d231137ac1ab50d10d0\",\"mx/youssef-exceptionnel\":\"382069019:b79e05f8c227a158f20cd6918deaa6b5e2a4e5d07ee71cef29085812f0cafdfd 382057005:664b271d9aae7a73b5a2c3a80951cacc6c198789b017c5b142be0e50b25b79fd 382058386:663854a9546092d4dc6c5e34119a280365edf744e1276b59b5b453fcd318edb6\",\"na/hansa-swakopmund\":\"176855738:488f9e8c3e94574ae76cd4a3875ec262b56b85035fc02c4f2ff1250d71482a83 176861023:c7b325c738c579294c5ad17492d8ba794841a3f57556293c75847096fac91bee 176858609:a201f34584dd06e23f1a2a7e8e3bcf4b9b7368ec70c6926811bbc060884dccc3\",\"ng/check-inn-hotels-abuja\":\"790029861:d84d073517887472c76cebfc993734f9c3f55aa679b371f28000390751e65b2c 790029877:2c66e159dba727052773599b1d57d8cbd81ccaa2e19b99c9e313e0c81123e4ab 790029859:ffc5bf32f981529fccebe5539e0601836d6cc08f362e270250c08f3ef65851f6\",\"ng/musada-luxury-hotels-and-suites\":\"335198672:987cce60a322e5df2b5e680aec53816947154d2a33e20dafabf6e387bbf87589 335198781:93b6950216207fae47b16650dc99a07666ea7d3f79eef9264f0b7c372a6ab3fe 335198775:61f48da2fa46dda88e44a9ff05344be80e42765cc167492890a90bddeed8301d\",\"ng/presken-kuramo-waters-lagos\":\"562316455:dff2ab82be31ad746e3461b5fcf4b04e040aab9e267b16254c71250744e8b98a 562316459:d8cb9d6549a3f9481a0567ec25ad475aa2a07a5d092ba7b290b1033cfe90ed26 562316470:5844f63394b688cc11b031c4c5f932a73e708b0cfc70c0cebd2aa81dfae931a3\",\"nl/blue\":\"927002589:88626c93479780a4fabb378dda6877dec7630ab41251671ddc0d3feb608b8519 927002560:79a8237defe122bb72a4b092c4e07bbde1abc3989683e0cfb4c2192e904a1029 927002566:f0cc9e1c29f805f3fd2ee859b97af971598993a6c540d01730e13d3a41670572\",\"nl/estherea\":\"605629759:539bddd95460d9adf4643ce98276f17aba666070ba5c8b513902c9b78c62b892 605704294:7401398fbe6e460c5696b9dd7495c9ed8fd7d797bda0abdc2619f5a3eb00daf2 605644286:953cc829f7cfcc07617c3694c95da79e59c5f602852e07b144d0ae0a6f0dd5b9\",\"nl/eurohotel-den-bosch\":\"540681370:68b4de4e2a475f2e5173825229b1eef6f0bdfc5bd2d5c72e11123753235337fc 540681355:8854630c5d82ba480a8a6e5074c7962914dbd623f356d9444a20f6f168ebb108 540681389:adfd6561e045fb9ca493979746aa3830fd44d1f32085b679cee3a5dea5f840af\",\"nl/ibistilburg\":\"924552247:40c16eea1f0b3e87040335501f3876edbb15bbf0b534c76f733e7030b720fda6 933182538:0791294616dddd53060f9c87262eef5886051e9bd28b6a792e342fe71b9ad1cf 922089624:64f27a4c6747216ac6b073d5c27d1da222527e7dd64872ac02730123c2a63b6b\",\"nl/lambermon-s-suites\":\"252843119:2a0378bc79d5be39405abbf517edfe16a91be8cad8adb477b6535ef2f9437dab 252843118:5ebfdcb2f07c62b0a8badb6490ca7f1432951a9044d69d6c965621480ee9244c 252843117:657d1fe984592d16cba32d167b274ee3c1e26591464f574230aec57120094804\",\"om/al-baleed-resort-salalah-by-anantara\":\"375828463:ea2913ac524c655e4d3d3b88554dd3a4ac6923a98f3915b6661b8ce22f4be0e5 81638214:9c1dbdd60684f261c5224c6bcb921145f7e236fc32a6b5ee9c3f2091aa7caa41 85407400:887c30abc5349831e32422cc612549e886c9ac3210611501cd8278e0f7780bd8\",\"om/muscat-internatonal-plaza-salalah\":\"73521406:fe7832df6c6fe0e34047ba80ef908e1b2325bd2d9abd3a14c15d31023a4e6de0 411163090:e34d1602ad6c5a4e0adcb272ee9d0f42f7c6533eaec9b21c0df8980a6d3e569e 466228808:6f916ed79bf470b0c91fb518ad722d7f26757c3afc84594f8a80c4c69e571578\",\"om/ramada-encore-by-wyndham-muscat-al-ghubrah\":\"291045102:8915349a14cced8b7bd19768dcd7c68872058be85bd273e4601868e4baad77d1 291046651:997ece002686b71d43978f37b346dbd22e406bd8ad9ea97a8de02520eda78fdc 291046649:af8c968b238ab6557c7002848ab64ae5919a83bf2813ba4921c6d4dcaa313a54\",\"om/the-chedi-muscat\":\"562830594:ac368567d69617d6c310079b87fb471cebeb262cd1180a8067b5d4643a741851 535229915:2ef84c955cc91e5afa4286a41a63c4b2be5dd40976df96051571952a30787f6f 535228397:9fcab5f8caf998230a4c91d2b63d5d4e46c317ea556de24fdf2f150fb086c949\",\"pe/homman-hostel-boutique\":\"329688754:b8c0eb3c38f97025110f51f098a194ea927d7f5ad18bd54e84d774d27db144e2 332869268:35555d2d442ba52e5ad7babb82c46362e48aeb42343097494dd6d0f808dcb71f 329688751:edbf7d3b6aedf84f3653b2bf410a7c26256a749e3c673469e03ab1cbf2b5f6be\",\"pe/san-eduardo\":\"678582612:f48605042bdf91c6daec252960fd0ce9ddcfa5884bc61a0c7eb6db0fa5f44831 678582586:9cba98272f3e98a250f50c31fcafce3dbc18734e4e1d4a378022b3edcc7d62a9 678582555:bbe744fbf9b86299fc1342e768600820678a590e0fe1b24dd484dad689fc83f9\",\"ph/amelie-manila\":\"207477298:a5e75b766694b168a144084d85a1cec10ff39bae04d94689ebdaba9c86e7618c 207477297:0fb1da100268f332ca45514f132ab4ea5ab70aed4386387cac14a46eb03437b9 207477300:9955255757424a00b419ba2253173a33d24fd6c30c5c2dde51d74c181e1b6dd9\",\"ph/h2o\":\"173537923:eb2508350cef5bad154c1334d54b36b1a01b703a37e840cd5441fa5751c941fa 173537928:0b1746fcb3e1794c940bde80e7db6c8985ec43e92a67ef4b4185a8d3ea5e8014 173537932:f60f83f2f67394a953a041e1fb213fc693e9a6c0293e240e95a79389f1f8aaa2\",\"ph/red-planet-binondo\":\"931765864:e7008e5a85ee57e9105e30b00bbf35313bca7ea4adad772129ae0b1db53166ff 931765862:9ac53172d286f55ccc836c3509e2c5c2cf76196e21c6ca6eb7de0ee23107bd30 931765863:08418f22e4aea789a3ba163baa80e46d2b885bcbab03d06191e98bf3cc38aaa8\",\"ph/the-manila-hotel\":\"220460443:a0363d7c3c82251a348634b148e09d49ad2709207e9ec87559330087b03c907b 97575602:51c0cfd46552a40579bf61b4a6a377f17cdd3848fd45e951e2b9caec4c303a6d 326384643:8c3702a8a81275faf4329d499c2a39c2c7b02ce8d256119b9043c8fd80dfb005\",\"pk/new-imperial-dha\":\"894496683:4285889ce9474951d6ea9002bafe1dd07347f47a499767b7037c663737e4f2c5 893326444:32b1c28603c2f662548ecf6c7506b03d85f476ce8434a2ec3bd3ddd0a2842625 727910606:eaef5b97df3417227788e675758c78db3c7550917ddbe506a19f705a6897d0c8\",\"pl/apartamenty-grapielnia\":\"700115254:f48a02a0b7ccc8b60753b391e1205df2d65419a54f01199356a900d8d28e7c56 700115264:de357aa1fb93ce69233696458d8d6f754e4f8a8d2e71d7e2a37448d99d461e93 25525018:6554f1546d8dc888215d251907c5036df34f38d7a9f26822dd6995024bbb68e2\",\"pl/dwl-jagiellonka\":\"190446288:ac6822e686246811ae2df49b120df3ea709b9c1a4d5964c1464407d22762f5aa 63314230:96da54fdae32ea0605d7a59392086cffa235cbe51266f306e32f0a800d870293 63314390:18dff74ea323838da4310c353fb2069340639d5e41f3db839966b48b41a42596\",\"pl/hilton-swinoujscie-resort-and-spa\":\"928807821:c2fd525cf17b24d9b4530a36bb568df934318b696a613b91e9a94905db7f14fa 928807829:f1a9bf91977e35f181698bdc808052870393ced8358dcc2a99b90e685c5761a7 928807835:ccee69c6678072f04c98738f0290d65904e3378e0edcdb11ec2bb4a8ff63af76\",\"pl/hoteleuropasopot\":\"931259822:50490cd2a3b977cf5bcbce20cf2e1e2a6de565cba0c625d004d22202fcbacd5a 742976084:fde9a92053a048dcceb424b45eb1147de2c48ae00e147e977c7440c048a055a4 931660193:53ea092ce8e7d67560207806f400b272af60dfe285c7b5883ddcfdc59757368f\",\"pl/mercure-krakow-stare-miasto\":\"765531852:c7677ec5cd619977c57417c4cbe84cec477fc8e6afd7574c667b1f6eb925c561 765531879:ccab0a71ebf3143c5e2615e860713e76b0300f39a1f680a99c769fd123fe0999 882075395:42e355c0fa8f901b7181176e206fd8e3bf5c1d463fe38f9a4bafe480a31dec12\",\"pl/prime\":\"767100913:98a9b2a5ea46bf072582d7bdaefe38cd7132727f2ded4b0b59d10250b71448f1 767100963:bc7d09519ee0e4da9e6f8f691d709a2206a85803cb87d5e84f5856a4c47f94f2 767100965:e3cae3e186ad1bdc82fab80a67c1dd613cfab875da1c58a87e399c0c3cc6623f\",\"pl/willa-hueta\":\"18708833:50c88323bea41b3d80a9bf57ce9bd1f4bdd7f57041530a28fef026a32939072e 18956884:e8541b2db82999267a86feb0797dc01a2896c9b97b2e5fefe9fa99682eb97523 18956888:63bd86313aa763bdd8f70afe62981bd4d38c92983e0b46bacb42877b457f7005\",\"pl/yacht-club-tiffi-olsztyn\":\"379956311:7d9c9ea7c741a9cac05fef5ceb8a530ff8d90bf287ca4f606978e10dc9f01dbc 581826896:5d7260a8ec53f492d1afbd21a9fd47c2e53dfc2bdfc55784d3f41a375d83da5b 581827049:82d6a99dc0a429db8243c25ee41f6dc00f72404ef797c1cee27564268c7f06ba\",\"pt/alfagarresort\":\"415316199:b64905bb16319da2bda17c90d2f94350fa2b8f6a61b2f038110ff194844c4308 415316204:fc58c7b411d9282f4a3e5e64e55264299ff3902f0cd831fcd1376adb1b49242b 415316196:b8bca22ff4a70dc1eff513c7ab683efc651765824dd58f230c2ff9509c6640dc\",\"pt/b-amp-b-olhao-algarve\":\"536746233:b504988881c75811f6326fb821db2f0a8cb943a319d482b33db8fc85bf1adedc 536746230:178771f3f0b0648765ce004172463d03dcf61d109bf7e138b83c5682464df23e 536746229:f2773078761a26ca6873884ec75cbf39c970c3aac01b5b0b39a074b6051b816b\",\"pt/carmo-s-boutique\":\"431643655:10cd4ca6c42bf1fc76f30441cb4b38d332a44ce5bc1823b974ffd116893739dd 9351017:5e6f3ac26134668549bebffdafd4e970d1a2355baa2a67d4bdd26af0113491ea 518650738:cefca74c2ca8a349c573235cd36eb1f4627de173f823ca3c873cd1a1d5615ef5\",\"pt/costadoiroambiancevillage\":\"552248266:3791627cfc009fb2b25db918db4664ec901bc5ba78b1d463d596a12603c8d9e2 48911326:48e84cb18909cf74783767c82bff99f87595306b24f59e7f72510f629d56e486 48911811:94d700416b16845046c561d4d0d2a4ff138b0bc76846c9aad8f67ca99d42baa0\",\"pt/estalagem-turismo\":\"87615684:c7553f3b36b7c9754c4efa2c1a4289cc3dc0ae3e4b742d487ab1d4da08c6725a 87638924:e90356631286333caf73fd41ec653b2f7b96783aa730978667f102f079c3bfd9 87715263:cdbecd8bf3ba54e6117b64bb9efc961f39a5287952fca420646a9827d0c0f2ea\",\"pt/euromoniz\":\"774250255:dfb38c2d4c2edca3c0a28548ae6cc0953d22679e299142989bc8db3a51b37d7d 913149798:2f709185587e05633cd4c3b5480e87fff17aaccaee3803689cee42055162fe7d 913149885:c241a2c5eade352c8c9b77373ef3d30adce03fb2c5774a7407a40ac728ad8cd1\",\"pt/fayal-resort\":\"252593390:18ee9fc7b3c02fc34eab57fd720d5acfe8ec208f1c7a6e92eedd44377ad0ccf2 114405312:f4f898fc298bb2c99c424a044886501c66e29fa5a0f568727ba175be99522a30 252593389:67d92d900a9ead840e036d94430dae4edd9b34ba68fed866d5cc01c311bfd609\",\"pt/inatel-albufeira\":\"167119253:5fe0735993695a8d40aa05db00c5951d49f4591283717f7fff8823135490a1a5 167511148:1293463b6db24d39db239d31fe69321c98c515a2080e2f2e882c2f7ac8e9e802 167511119:ccccd7538dd254302c6c47222a19021c47760794c0f0cf4beee2a2e5ec85f049\",\"pt/kavia-do-largo\":\"314527100:4644c7539d25e6b946d739ada1ed7986d22800fcdb1da67f8bd84ce8b54fe148 314527071:acb5615b447fe9612c8764da44e56abe19fb38db35ef2739d4ba98bf6aed2a4a 314527064:336d49a27bad5cb85f77cf64bb79edec6bcab91107e700cb66c200c69f92a423\",\"pt/melia-braga-spa\":\"931405384:2fe3092e3a1a3fefda4e6c8186f73f03e1bf6ee64b48044b1179a8c4c341bd1d 931405385:d7e9870117d5777a6fd5a58492d3776f8b34745612c46f997c4b361be0a6a74f 931405386:bf376dd297f8298c783658e3a675b0c9fe3824a3d3236c6a09bcfda05fe9ced3\",\"pt/pousada-de-abidos-castelo-de-abidos\":\"571356037:508a4e71de15e810166c1a2a552e36aa4d8e91574fdc33b760414d11556db34e 571356035:1e1b0b02137e7bd31073b0337f21f7878a0e66e3a56b9552b929f7b133da52a8 571356036:8e0a8d6862bf5898f9fddc7c1ab0714553a9334e701d684976f900f1adcd2c78\",\"pt/residencial-afonso-iii\":\"477291571:cc4dd278e0b4d4c4960ff0e8f7c3cd147bb56f78a082e88b8db614be214df471 460571505:cd5535157c46a7749d70fd15f165062e6e0ed810cedd3dc20b63a9313b01059d 477290815:3d1533f6f0fa0117613ad3f7354986b0609122957256361303326e27205075a6\",\"pt/residencial-dom-joao\":\"551931928:a309e10effa667814f7a6bfb18573436568af5b65885eb08fd8c056d67abce63 821921875:48b625f0949c2ec867c5a4a74ea8f2db67332ef4ed197bc050cf2d5b1f64791d 551931773:a48c426c1010ff96dc72c935085f0adaae38f96f27a0fc150ac80943cb371d27\",\"pt/the-book\":\"889687080:26855a465c7e274b55e15bfd7523577ac25abf2268d3da537268912e72227279 889687076:092c44d0b851d87131f9013928d6bcad66eb91795e157e8e0b26ff5de85edd1f 889687047:3a8964d67bedb1b2f59642ac7e004c266099679ca3c6baf132bd41bcb427169e\",\"pt/vale-s-torcato-houses-and-wine-bar\":\"364413637:2205485ff2712621cec3edfa2561a07e92f9bae814659c8d93de806384c6ea68 364413671:c5ff8b53be435e0ebc2c6699f01083d7f4cf5637621d0388f0d313564fa8b8da 364413709:0ef228b53edbae0e4043d8f71fcca0736565d71ce04f38398bf0e44bcd76bf9d\",\"qa/ibis-doha\":\"915009202:6f0067e6400318c7c15154d79e00c74b147694257843e8e843f78c7a4561bb0d 915009200:f697eb1952d2433199aa7d34242d53cc383f58f11d414efb3a035c44e3701849 915009204:647f05b0dc5e850b82b0f9a5936a48f976906143233fd0ec06e8a80f30a10cb4\",\"ro/alexis\":\"795595408:00ab972d8b2c95d1bd9f43ef00934f98530842d972a56d09a42d3dcedc09bedc 441389728:2ddb179d13e712241c7c2ca94779f93eca9a7f1e6c1b69c3cef0cb4d262b55c9 441389868:a2c5ccde1c89fa25379c4d20cb1b9f8a88cc97e1baa97214a9f4599ec4c1dcc7\",\"ro/belle-epoque-boutique-villa\":\"75021522:0089ed439d9c3f12c113506aa51f88056e81b53801b7429c504e7920749b88a1 880789284:87f808fc15ddfeeaa046d80d9569dd1e77577b190458b6e33fb211e9574ede2a 75024539:e39f299bce21272880838c4a666d582133fe0e3dbbe8d66402d86eb31cca28ed\",\"ro/pleiada-boutique-hotel-and-spa\":\"173553341:67851a3a9ab888d3c83dcd4d6a64d14f4a8eb7e4caa2b90033849d986be9e39a 27573572:6eac466a0af44a1decab2823e6acb8dcae88a5c33e526ec573447b050d706431 486551903:157953cefafd6853425d3d2e6d9b005051ab254bbd5a972ec5218e5288c75493\",\"sa/almuhaidb-aparthotel\":\"932548394:d51bcd65e40056550e7282cd7e3c55d71c702467eacf9297a8fe978c0e6db1fa 932548318:494ed162a961c371c595b9a3ea6445e33276d1b4800a73f0971e71aec5ff78fa 932548336:cc640876e08c400a65a08b094b6513732f587ed2e13241080bcd5f1f0d0779a7\",\"sa/awaliv-international\":\"534400469:645503415b0b4a4c0b4b394e633a4b48b1c1832259ceb90d4f32854d3c8e00b9 534405643:cfc07db28a8c8129e03773543583195476a9492746437b05568765ac8cb7f8a3 534405868:18f55218c0c684c009be37abb18dc272eaa9b27fb0c3add2090dc6cad63b4b66\",\"sa/comfort-riyadh-olaya\":\"638904558:f3debdc5c4b099270cafb7a9c5a2bea6bc1d1013b4278914e0f14ab7738eeb20 638961678:20e1f63730b388cd8339489f89959e3abebeb7c5ac37468f5cee687244b19753 664346266:2e2852ea1a2481889bd8ccf79ff181dfa541f17096af3c359ac5779e44e7ad1e\",\"sa/le-reve\":\"441832224:3e648c2f7bdadfbb6e343d9fbf2a67b978d624f012385eb6ca0850f8fded00f4 439919411:9bc4d449dedd648b700714f8a0f6bfe2e9816c9832f6428ff033f7d60a40e31a 439919406:02f3a5aab1bf0c53d41d4f4e38599f23559e6c2b34b393e51f7c9c53363999bd\",\"sa/lfswl-l-rb-ll-jnh-lfdqy\":\"795676628:cbc2a0c178ac18adba292b0fa5502c371c265bd749eef66a54e04edc076ae1c4 796115457:b298372b2e772a9d6023018c7df25b3bf679bb994514b40b6b5e6ca624179e4e 796115460:51e4a0024a0a2e28d2c9ab8709486905a01f51b2e855fc4f3c1c621e59ba21fe\",\"sa/rovotel-jeddah\":\"650762549:93229f6cdc375bfcc54260639a68dba06c042ab1a75e0a436afa969d384caae8 652005857:713bcc81bd5604a68e98a90773b2ca9645d40f822940e2dc0acf57d00b19d382 408561626:89d7f75a0c81378fdeb5e573ec2b487f84b71526017d390fb980ebb714e019f3\",\"sa/sunset\":\"732687169:abeb99bbb8a23d2d2109e7b0163dad26f0e998e56f319ed4cfa9d056a428d17f 631597439:cf94e60eb011a57332b78e4cd5fd81ea6cc38c8e2287f9b8deb2125a56409b46 732687159:0ee2312754195c011fd924538d5f5d63f1f8e1be460d0bfb3dae92ed4cd8395f\",\"se/home-baltzar\":\"828585481:e72c18bf81dea141a2457ef246f1c480ee59e5942e4494bd3642d52e64f5a530 828585510:fdc13e9fcf696a9f8d86464173c92882af2aa170725a9208c25c9a51355e729d 828585550:a1d5ecc3b21a36a55baa859c128374f09a853d11a5cccd8a595d5e3e27d54c66\",\"si/wud\":\"208042377:918fafa88b3595f4918bbee83b23485ca6cf263a104419b99500372c429bd5a1 208043479:31c39581e9bd0c2f601f248d6ea95f0d603f714e08b6ac7a6b35e983a2d1199b 208329744:0032b6e65f3ffcd9188425e2ea807d93575c41cc6f92e7f8e025baccea8b35d0\",\"sk/yasmin-kosice\":\"20896273:f2e369443195e28f03c8fa5ffb311c4a9e697b38f1172aa50c31a981031bdc97 117333234:d05e3fd483ab316f263b7537370941b2ad4b0dfccdf1dbed2ac5bd0e8c60cf5c 117019614:468198bbeb3dad8dac0049cdc0e5c11fad1367807d3ed3eb5fc08cf110832cc7\",\"sn/azalai-dakar\":\"520720969:99d212f21545b855f1b98ba94091025d90a5a491fd7f52993d694e164018a2ff 520720741:48d80bc2871be9b565243f80b28ff05326cb835a3a8d73612fde0e6e07e125bc 520720992:98dbb482cd5f37cf9bdfff11c2ad7d1b908eaea51e5d799899bb48eef584e82f\",\"sn/dakar-teranga\":\"908317295:a7acd33b9f5a84aa8425aed7a707933c23a4a3599fcff8d1bfff7bc125369881 908317311:bd95893f13b6b9c4acf5999d5b42c9098518f3e1a067e1b9ec413729c2f8aad3 776515906:3c1f2114bfed5a4b226d93c9752c01d52f9643c6feebe782618ad15e18b48505\",\"sn/wakola-cheikh-anta-diop\":\"585646247:30b6d8d6438bb28f9d79775d90dadf51ca0f320ff4a769de9fd6e13417976f63 587540220:7343757c451351e42a16a5330c8c7ac3735a21c8df4ec872c1151c6928b98c41 587231873:72c115af87e94787e4339be4d88ce6dfc5d856d5cb8f74ed37acde2619919791\",\"th/99-the-gallery\":\"895769634:20d2530b77d6337fdb8b6bafe0874435dea61f865a065c3ce2b9458cca0a5fcf 895263621:d81a0024c82c81f1e2b9c909a586ee7906c69902e6226d13122540a19ecbded6 895263670:efd65a34cfb6fb01af71477196dcd7965c3a0b16ec9b7f22d79031f7ecd9db21\",\"th/at-mind-executive-suites\":\"262124509:332a0686d540408962a4ff5a3ab727702b6972e25af15272e063461264bc3090 262124511:970ecf086dade18b6a5b4367875c6c68fbc64dbcb9148337bd8d0a1a9441e891 262124503:ca64d2e03f6e672e1de2cc68f4ea2909cdf41e13e0c01ad959d3652fec6e8d94\",\"th/chayadol-boutique-resort\":\"207519591:282cac2e558a69c9cf87621d108e23306563632fdfb23b2705372b20d0fcf148 207519582:a0bf2bee4fd5044170a65ab220ea8169c148b3b3fbb8b74cd79c7ca71f00244a 207519602:9ec62ca75102eb0de7f02649907bc47a37064d7df0cfbfd4eab4473a38eff09c\",\"th/new-siam-palace-ville\":\"427320055:d761581a02e01f7842c4964e1d187882d737d6592f9ffdcc982141ecd61f265f 100500429:d49338e64da2c8753ca892427ddb306505af5faa6c8e33a75f803af7c031403a 102143573:65f23eb886de970b5e7dea68fa221ebb75bf1beac3c42182b2c79240e02e4fe9\",\"th/royal-cliff-beach-resort\":\"656326391:dadfd5019929de5cc497c3f6b32f192bade5219e10280ef6dd55ef7947248d2c 656326415:7e755b8180af64c13a567c4680775ef462aafc48d87827310d220067c305e536 656326495:681da9cf6471cbc46aac2acb894f893508eb4e7deb1e4be65a1fec7e7cfd68db\",\"th/the-siamese\":\"775885016:75ae26f7772fe1f1789316d2e4b2f6fa4713ebb8a64e4f9ee1b5b232ecd54464 775885013:6e69c38e405dce43b9231af9b8d7accb54cc7e200dc907580c5a8f0a6ab19611 775885007:b417b94e37733a5880b160ec124b041b7655271a7f0b38264f6473b6e80f600d\",\"tr/banana-otel\":\"702913744:bf841504b3d509ba58172cdaf646fda0aedc81461b3d14a6629010343f8584bf 370623504:c87462ff8e86e0758c04442e99c494301992a43f224662fde02c6ed6f302dbfe 704721221:995ef54d1e8098f8169051699e2517705af041aa78bbf0d090c8513f6f84594e\",\"tr/elijah\":\"334928781:fb98e00370d6c674c5148b5b1255e0f6352e5ddb75d60a6d7dff33f8cb10346b 334928785:9019d7406f4456ca9b1799ed2564aca5c0b094ada829944059f48ea60201cf0f 334928793:d0b7e9c26a34352b58e6f2c97b496319356ee8e6d3d48c708df4b48b9ce6a32f\",\"tr/fifty5-suite\":\"868899694:db5ea376f59e38f7c59dfc94ba02243d6686d5d55a3dc9be089bfb6bdc977743 868899706:3f08140206809f7dc856cad24feebf74ec432a9aee5bb7c3d5046c291d02960d 868899717:b55359e4a91e1d355dc949c6d48de87f5ae5f479a7001cf3a15b950cd3231d11\",\"tr/funda\":\"349043016:91e9bb795f4c068de60627d94d0341a1b979f6f3be58d2a9b8cf11bdd751f4a8 349043440:6f008bb900a596ea40eb3ec81631af18fec4ace341d5bc4386b57c1af8459ff3 548696970:5fee01aaec715ddcff848b6ee753370b8d4e50dea8e8787af8dff926c8605480\",\"tr/golden-lotus-kemer\":\"818716990:870fafd29dcbdfd6302046ca07e26c41b68b9447cb98e674ff1b7932980ca35c 818716992:0972f1c103604a33cad75ec828f871a6ce3708dd0a8e944a9faa501c8c38cb40 818716983:84a681a1237fd9cf891dc36fab6d6024561fccc43e1ab307ceffc5406e6d458e\",\"tr/hilton-garden-inn-izmir-bayrakli\":\"484106561:8eb934f7edd1fd96f56aa50439d9e7a418e5a0e45accaf93ab984d5906c9ad05 484106564:c77161157b755debc44678a39ce170d0f7100947e7e659e62810095d1c80fbd6 484106565:1dc9eb0311d888a0bb954a273730ac14dd9d59bce6a400e0d0b0ee423d1b3c8f\",\"tr/holiday-inn-bursa-city-centre-bursa\":\"519834877:78bab6c218eadd0a37b2f1b47534c0c210eabe27b1d0f3aeb230f20f234fe40a 262294138:3364be64dfa8c2de5274822aa8d6e2301cef96b7c388e8f2636f9def25d7d168 519835368:ac5c91fc5e83e55c166c12b7bf81b4c71477bc2188927d4451e1a92cb6d7df92\",\"tr/kent-otel\":\"16519378:7b6a7532d6f9b13acec2ae2551e14d7657ba4ec627d87c01b6d76f0651985238 16519413:8eb529a0e920abca1dfa974a93946d568f89bf1e7ecaaa069e8b7527ea97dbaf 16519398:37d4d0ab1aa9b017e2efb57cf9c1dc1be8b75e67c854b62fbfcd29204b4c092b\",\"tr/life-point-trabzon-ili1\":\"448069204:66b3677bf606ae9b2bc985432794bd682c9ec020d88b0abaccdbcf70e3d88d06 373944421:164031ec9e39d5c5d16afbe116e9d039082dbc1770b7290fdc3d190730e4b049 373944307:8d1729cf2171a061a3b84826c5b9f7c80938fded6137d9221e9ea658c26179f1\",\"tr/north-point-denizli\":\"21616060:d2601b186e1605a00a1987506663c02dfb2120fd789dde77ca10570d75f9347b 21616216:c48ba7ac1e7fd845897cdfa045fb076df405848405d2e9460665eebc96b451d4 21616228:e8097b4fe2463b3d76f55e9ab4f430023f91f52156541b18c6f7b2608c9378e7\",\"tr/panorama-damla-otel\":\"78826176:11ce2f338e367f6e06b139cb0e084d41ae6832f3f52bc5c524f80592cb67a9f2 90164461:51463f4c48e4961caf55130d21100275c0d69626ed9c6b98815fb412bd525275 78824646:6bd3d8afe2bbe511c3ecbef85881ec35aa211d33780986a5716fb6e536b3adab\",\"tr/sirius-deluxe\":\"827503390:39793920b4564c0378c052449876958b7bb6b4ea81594660e4955181187fca3d 239653784:f3931e292f6adb7ac0c0e6a38378e4cdfc07bbb94a10413f7826da69770908a5 827503373:4be80f807bc6f4666ff60d81aec40f8541b4846695aca01b55d4be8f3515fcb8\",\"tw/jj-s-hotel\":\"243907512:d6a31d2932b3d2bf5226cfd1dd912711286f10e283d5af945d5883379d7dd0d3 264385043:0b6dbf1c1a4155f2ad74336580477b6dda34dd5d30cc75c5b14c89b0dc733757 243907437:c7d2e274efa7e92e07a5fd08c19df723e12f60fea728f1347d6b2ef79f37e3f8\",\"tw/lessuitescc\":\"686502480:782c4f9dee38dcb59cbe7827332bb5d20b52df53b7906b038e155ea234a4a7f6 686502463:a461a9915c796065e9fe9d2d03326fa890bbfa9db74b8cfc123c1a31ff6ee1e1 686502462:fc4f4ef68f53793129be4ddb82b1e9a966841aaf14e619b3ebffb8fa7e23e32f\",\"tw/lu-ju-wen-lu-song-shan-ji-chang-guan-ji-chang-jie-bo-shang-yin-shui-chan-xing-ti\":\"406176665:059d83786c2892ed112191c72b30f4525605cccc0af806f49acf5640ddc3599c 406176756:8364c8d51c4df4fb95ac3901511af8efddd33e817123c2f51e1fff3f7ce12432 632058489:01dcee61d3629621a6143556a610bc43a5781459ae0252079f86ef330fd2663a\",\"tw/qia-er-deng-fan-dian-tai-zhong-guan\":\"802677615:e7c20470ee313b0ec1e41f500b5d1e7a36f6d395d1eb6c7f779449487399e4ea 247498008:3d81dcb0b5d262543b7e90381c34e0c8c63103dba24aafca0217a38b36c77ed0 175081667:c4e1f59d6580845a6c2b26786266b2a0b8ccb19404608c13caa0a491e121de6f\",\"tz/crowne-plaza-dar-es-salaam-an-ihg\":\"479081443:acebb00710c47342b548749216c17445c12a8f6435fc9b2e9fc14803c6a5aaa5 482696800:8dec06a49c872323d8ad4c9f7379b354ea3bb2e25a8193d8f09fa488a496b705 482696786:135bbd30da8f300dddea62c18b3817b3a19d39e36af627a117c9d4d8ec57ba24\",\"tz/gran-melia-arusha\":\"931783549:cdb9e0b95d5ae32d50c6330cf5005a38421b0459c6278d25bdb4aa82a717b046 931783537:0dd8afdf923dc095b2a3f2e8c9a5adba38c307040cf7624412e70faca99443a0 931783539:d25b3ff655ed4acd7db2f7cb88f67c8fff106b47e48141bf634ae00319b7b570\",\"tz/tiffany-diamond\":\"248843007:3e54d154242ae6c9bc07f559e3fbdb1f1e50bcb5c2787d7ef0c93d208f195a13 250162822:db64bb23da2c7a2d41496953d82a4f0cdf70a5487bf33906a0ad711429795c4b 250162824:9fbd80f2f4fd743784381731b04a4d84b431a5dc1abdc22c8412a7ba64dff147\",\"ua/apelsin\":\"501357728:6ee4a4f6315908d44c7994de6fa39bf809966f19c79bfeccc2e156bb7a9c7b17 510744630:79509617164559b07c54ec336e50fcdc4dacd5f4f150ba5e8045a92f91d720a7 510744607:db5a1d9ee9d5bbfbd860a7c450c14b1eacbe9510b2ac4d9fed17d54382a8e483\",\"ua/tourist-complex-bukovyna\":\"310333077:0e27c07a066ae475fd709bfe10b7aafc3f31b5adb231290be125821bbc7ca61b 310333082:26b1d299c9f692b6b15d0ff7b8855dc8ae0ba068d51b3443f019824cf90b0813 310333081:488f6616fb55138ae1851da821b497182c8722dbd74781fbbb90bb3429c1d26d\",\"us/ac-by-marriott-san-jose-downtown\":\"626687142:92f0f5165130c1204e159efdd054fe89fc94d4e055b2af2334d19e03a87eed22 626687156:4cfd40c632ffeaff47bac6c95ffc6b362ffd261ae0ce78ae64ef69ecb29ab563 626687110:233dcda130feee7928e54741620816a94773911e4808b94912a2d72bc02a43dd\",\"us/americas-best-inn-and-suites-salt-lake-city\":\"792337075:6bf7b09eb557e09e2923e9c1b5ead0dafcb81eaabcba05669958059def3935c6 792337081:0b3260b723a368a965bd80d806d7a32a2db14d32994f430aa32bcc96ab2439f7 792337087:34359af4a40483b00d763df3fb1b2efd4a411a74261deab7b8ab243ee81ba266\",\"us/andaluz\":\"486054339:2831c96beb96abaa3dca3ae558ea5d53f9d9f9de171b10c58c78537deb8fc4bb 486054343:43cdd1285fbf44d41789e6d2b614f02a7edd22edb09a3007a437454867b8ea41 486054329:377a2efa52205ab3b23a491c992dc33322901c86706bd3d02dc852c467856cbc\",\"us/ardent-dayton-downtown-tapestry-collection-by-hilton\":\"929339905:063696bad87aa0bae8f62a987dbe94c0ee8d51150dab7b267e2c846dee942237 929339928:3bfdfff6b765546377798f60dfa4a7072fc851156bdc80d8a35cefca70561e9c 929339929:1e76509cc993a09f845d2a9c8fb6d5f0400b5654515b7af23a05e6b227d743f8\",\"us/austin-proper\":\"450041617:cbd77c308ccbf38abb2611a5aa4205bda08bb3b71862c9cab5cba75558b65771 450041546:f6eb45be0a34aaf7ec3b2357d1f05735aabfd1ad853adebacbd108062d5ce316 484384444:c484dd3b0de694da9de4ce33fa29fb20cfc2bc55d2187cd8ea526f0dc1695f79\",\"us/b-w-marina-grand-corpus-christi-texas\":\"509955186:aa062b0f1781e28ffee4c63b80f619eab7a0953f0343cf9ba325a0e4d73c6108 509955190:ea7aef850f21b865d946931c9711f0fb1c8f75bae5f2b521c20f52156b288645 509955188:d9c65a595ff2bbf58237d615c58338eaafd46a993c2472286c787e7ca19f8327\",\"us/best-western-downtown-phoenix\":\"297588384:f32fc3bb65fb31e91380afe3d87d7106c1fdc28003f858251ce1b8b24883190c 297588387:45ed4b9736704b6d92c15ec4e50e325d6150d9f2e7d8b8567cbe715cbff5ff95 297588404:b0a6ce697c49b0a471fec575baba13f9921be12044deaf0d22ab05f24dd2c35b\",\"us/best-western-marina-gateway\":\"931275864:5cdef399a762b90de3bfaa145616d4b64e8338136e92d3b829a638805b055163 931275850:593a2d9f5c8e4933188085e2644aeca2cdad800deffe456539b9332905ce6d80 931275854:17fda943ea7116c75bda3b8cd0cecb28c4a74c63df5f2d67508a7211a2c34111\",\"us/best-western-plus-downtown-inn-suites\":\"423236233:f07e91a47609ce7e853d1daa917b12be00764be91f1ae0f0cdf4ccca717df22e 329017204:8c2bd6e4220a418fd453790224f20858a0e966785a2a82abff46485c81ec447f 423236248:35e458f198298726a6f5736992d522b699c0e9003bd8c596dba524c75f64964f\",\"us/best-western-plus-oak-manor\":\"550853120:363c6f0b7214f518e9c63ec54d5527e5dad6d1eb10036042a87e195187e986b0 550853122:15f7c213c39bc818651c5882f81e8b19701b127227a00581eb52d0c68ea62fc0 550853146:57238b90cbfb489062ced6ae6806c9325cb8034c946cdbe21d2e3d06d7a5da2f\",\"us/best-western-royal-sun\":\"454939767:ee634fcd6945bc2339c1570854e1bb0fbbff228193f3a9d8be959de3dc2e71f2 454939766:bafd0d160db5679a4e2aa3f303cd7cd8e84193b1bc8e9ba1b05d141e05776d27 454939775:374b7bded08c1612fbc7b4e1964806adcd736fd35f867042f5760d540a581ec6\",\"us/bethlehem-77-sands-boulevard\":\"469061833:8056ad48b2dbd85dc3d86a36750d53aa7d83f9411390e74b9ecdff28a163d932 484648409:45d5f1e6736ccc09fdf7bca5a9f0c1b0b81fd9d385e5500034e91a8f1403c26f 493308644:9ac2f7cbfaa0a7ef56dec00de955b4d4b1d07a132845b4428b712120976ed0e7\",\"us/bryan-1920-austins-colony-parkway-texas\":\"561178036:6365e19697f3eedbde16ab635541e0e45629537ade56d546f071aae405c401c3 561178043:5b66c1637fa22267c7ea3c98e7328570b0775cf3513e6b7ba859a89119902e13 561178044:59cfb71e5792bf39c63eab478f13b4f0ffc71ad903d388a7d035827bfb8a335a\",\"us/cambria-houston-downtown-convention-center\":\"717515809:14ee4a0969801f783e6417241a8c74367b924e0c1c1169e72638e7725b267d12 717515898:5ba3df8aec8b5f11986cd76cefbb0c6539686ffc704e5919a7fb855b977d56a1 215714513:d0ecdaff69846ff7d00ee0241620fe6c9d57c2cabb07f33c932ef08178052d69\",\"us/cambria-suites-plymouth\":\"770565722:495cb0f52d3b7d73ae5bbe1e3b99ffd29cff0799a79ac1a6c38bf9cff1279cf4 770565616:cef10447619eb5fd5ae3fe5a5a55a615655b9a075c565ac024d4ddce91922465 770565632:ba3f5b971e78ffbf4b8906992d256f5063ee330cfefcb5d43c874ccf09852e23\",\"us/cary-500-caitboo\":\"927175944:7146c97034e2bbbb45935abccc1a255d91ab7be7dd33c369517419cf8eff5c8c 927175947:f9c4c04f34f0b839a4014b61ef0ab5867c252f918ef34889c5853b4b2e566e59 927175951:2ba7525b04daeed32eb4da6021b33f1a8809a6f1f533e12ca1e9cf6c18b0dfb6\",\"us/citizen-house\":\"712676215:47d8988b254c99e0ba817547044b6bc5c484655cd0ded1243a7044ca25eaccfb 667145686:dca3dad43f7aba2ca622dfbe160a37dc2db492d34b9cacda4f0a89f7dce79465 712676235:8f1a5284966abd634b964351d7b439ae71b7b9f524c111ab515a10dec725ee71\",\"us/comfort-suites-indianapolis-city-centre\":\"23060870:338d1a7d19ddf70d26ab2028828cde31c834496357bc1829ef8010f0b4f59c56 239191682:6491a91641e611cce399dfe73c258cf45f62f7756db1fe7b3a178f5b40352894 550402968:3ee3243dd69f7f885f7949b3ce2a8e59aeb60ef8aed3c2273d8edaff7c541277\",\"us/comfort-suites-valdosta\":\"933589006:2c499847296d5ebceef1a4731b00bb5d6904548949ad8c6d47dfe5000251d432 933589009:f0476ae4f90baf3489491f2aa1ea81e9fba9d7edbd83b4a14becea7b9014c502 933589007:cae68ddd77aeb81cb1711a0d45be690d50b875d01bb23dc3651ccace682e6a9f\",\"us/commerce-street-suites-dallas-downtown-tx\":\"928082996:6c621d2cef09653d6c56a0e2bca4767b7e12f9d294278da022c06d34d776cee0 928083002:1cef435662c420612a1e9894552f8e1b8a53cd89dee01e1e6ac8466d0698ee46 928083005:329ffdb9560fb4fbdf5f2d919db68878f610c588edabe1aee0acf0179c3d81a7\",\"us/conrad-indianapolis\":\"837630178:46be79f8051786ad10499eeb6f737e307fba5c3bf536e62823dfff6afd0cde65 837630166:9aac2176c79c6c2d76312883e6347ae65419bfd53b09def33b4a52f2ab4ef5d1 837630174:a256bf148108f6a870c7506d1c5442cebc6a16f77a25608805c1467cc480f33b\",\"us/conrad-los-angeles\":\"833781759:d11d370156be8995d2262757c8bb22dec6d987a5fdcaf1a1af368d0099a175b9 833781804:d170334500b39d0fdb89e3cf2bc91eaa56a2df01c3aa8f445da0e21ad56caeda 833781813:4092097eb2a10cb4d6dfa1b25315a14814bfb28852093d6fc307868f9b34da6d\",\"us/courtyard-by-marriott-akron-downtown\":\"643100713:1e0c41a764f6e53f16d46db490edac27976d8b27b2e5532cd880b5f30e997d05 643100729:e680201e508ce4855e49f2732bd94343fd7fa8e67c1069b347ebbe8086f1a601 643100736:fcbb07125e0f2f869ef2b571daec05c31dce78389129b52c7b838a7033c0d900\",\"us/courtyard-by-marriott-bradenton-sarasota-riverfront\":\"864914755:cf7e6110f1b3c597af9b66acde2f32b83c9eee520f898938fae3d365ba87683d 602582848:5360e0d847a00b8b7647c9048675238639075c78e2b3ff1db377bd747dfeb74c 864914370:04d27a6b4bffb38953b48cac527c78485f1b016a5ea0e3e32dfd3069202eb779\",\"us/courtyard-san-diego-downtown\":\"434784058:228f6665819ad9a5b82dc51258f8274e62bf27fe4e800a59edd08bb33fd133ef 434784063:c308474520b912fef98628adc0ae50107a85940456e3f353ab0eafb9544aaebc 434784071:4120897b79cbf34e2a4a2e430973d23596cfbc688c006719fd28e8b372c2dc48\",\"us/dayton-marriott\":\"716390449:0de08bc020a2a483cb03624b27cf05c13059be0a2ef856d72013f4df65a047e0 716396385:3f0de41cf969d69cf7af48efc0f76e64c6145265a229aa8feb7931094003667c 643367305:e3dbd5d3531c220c2d194c7d4ff9c76a95e80248e1dc5e8b8e900bd91a7f4960\",\"us/don-fernando\":\"557347432:ad252896d7d260a90de779acdb566e5f0fe48dd31cc2532b6eb0259751c00c88 557347435:a2aed60683c1a86d0dd03573bd2cbe2483aad57a004b4eefc6a1249f422cbee3 557347492:73aa8311f38813d0eede1a1cddd2ad36e56a0cc99eb7e2212393b1fbf460fc65\",\"us/embassy-suites-by-hilton-bethesda-washington-dc\":\"928967360:846a8934cf3ca97f9d34e7ce4c37605ee7d1c64d1168cc59d01413b4153aec84 928967365:53e0dbc1c5babe1ceaf8b8a8710be5c5b39b9964434b71ac7e22b326e3f935fe 928967375:dfa5f6fd6a5c863783173902a9086d828024a7198bc9b195a0a136ec0de3d4de\",\"us/embassy-suites-by-hilton-chattanooga-downtown\":\"759908302:a963d284f42674e45db6ab6ac7c9dd749fbf6f6cc21f2424fc1c57ab5387b51c 759908304:9a10bd12dd71a9c825a640394973761a40539b608a1805bf2ca56ea694f63a89 759908341:ee11cf418f041c7d8514447c73daa9b3913e36f0d27ffcf2eedcb25cccb0ec59\",\"us/embassy-suites-by-hilton-wilmington-riverfront\":\"928481889:dca94ed7dcc3a565946dd30d9607f54815c3fc1e75a3eefc24649734586b2409 928481902:6d8d085caea44be3283cd6ba272368750e8ed57069c5917ec92c0df17ee6851c 928481927:935c3a4a3dc25392bd7bf99aaaa87ad45997fba8ecebea3fea97979973f8afe1\",\"us/embassy-suites-sacramento-riverfront-promenade\":\"927194734:e5c7694ff8bb8affeeb698e7e4cf99bc667458b73ece39de5e879d2eb3fa80e5 927194781:c18918bb9c16bca1b86c1b4b39f9cb88e8739e69d74e6a603807623fd3048183 927194861:c7a75f0559014004b34f6e5aa657a263c1cb6d82c0cf21415e11febd0382ef9a\",\"us/everhome-suites-bowling-green\":\"787906795:a2448f55c5814a1f46cd9f0bdf4b8e2d2bd75a44a37edf936c4bf1ddeaec8582 789956889:4cad111230c6fa5068ba9627b20beca05de50a63ea68de7533c722bf2ab857c2 929784273:b8a09538cd6e3e370b8f75060500268ae26213195d70b56b89951f134c5e05b2\",\"us/fairfield-by-marriott-inn-suites-austin-downtown\":\"713042236:e8c324a7a771f7bf3691a72fc980360f5192d7ae3e055b690959effc6126c0fb 713042182:65d9fefdcf3edd41c14567f3598b80d1cc0e9cba1913e964c6313bb633193cad 567273760:9564b2874f9f31051d01ad0d923832746da0e847446434057342907b707d35bf\",\"us/four-seasons-houston\":\"421461816:6fe3aa2319bc9440c3180ada7105d947eb6b8c960fdaac2531f35d1972edf93e 267159842:9ce00ae54d33a1e27dc7f36d0d14f94923feb9923afcdbda91d89165105c6c8e 338133231:fdbf1edee112613794305c217e5a89734dae8f3ff501fa860618dca39f3d91ea\",\"us/garden-inn-durham-university-medical-center\":\"490844476:20d4613683a019e7f278c527ac2f1fb390bc872eb7ba3d62d61715584b411327 486006906:a5bbc7fdac1e01f0022dc52cbd1a50710097398cee9ee935f9b5094ec9b492f0 486006922:73359d1f690207f14ee8727ca25070850a56fae5f516b9b9fc819aede547583c\",\"us/garrett-s-desert-inn\":\"770016192:8305b47167e2ad0ee1cba2eecfcd1297a134054a3338d2e64fa5869ea57b9fb1 770016190:cabbd83dbc333138199578b737aee3c4e8052206fc82b66c4919f85538bc9d72 770016194:91255012c0c9f85bf0dcd414b83fdea910a10476df046c1186dfd69b7330a632\",\"us/hampton-inn-amp-suites-des-moines-downtown\":\"485477328:93e939e878e4e7c1869475313d421e2edcb69b706d34f66767389f6d4e1ba625 485477327:db6620d227b3e069590c5d9d2710bdc45a51e27889b92029bf4b73a6db060c69 485477349:8d754f24c65c2fc03bb2738f3ba7c2cf5daa67e1dd14bb6c6d26d55152b4ba1d\",\"us/hampton-inn-cedar-rapids\":\"473518447:559e734cbcbf16497c7e65b0ef0f9779fbbbb344ca786f87d32f228e5981199c 473518457:04a0206ef8edf2777fb70f5fd74b5cb8f8637f8a33a1969833d495d2ab18ddc9 473518454:25520264bd01a731953ddd0a9608e78d2b8406ebd2d013a6f5a213d47d5b85e2\",\"us/hampton-inn-charlotte-uptown\":\"492131917:be2d5ecfb29ab8f1220ea7e0d94e0876db2a382f22b72f9c979af6a85a8a5999 492131923:6b76edeee091c3c2bdbac8c93e41b99c326c04932904349beb674afd3762d538 492131928:afc61536c5d0457ec3d1acd8ba10b9ef7f2eb3933151b86601eabc54e2f41506\",\"us/hampton-inn-suites-boise-downtown\":\"490782787:4d2e2dc311a5d389a9b77cdbd6591e56a68b802d8f203dd9c0414bcc1255aeec 490782799:78d020fdfcc6a1564c15e85f0c0519f9016ecdd03681816eebc0bb939c95bd31 506985063:3b1656d9d3695af40e0fd4e10cd688e508f2acd22efcd5516aa7b21abd9f58ad\",\"us/hampton-inn-suites-cape-coral\":\"495048916:b5b7ece60f5c2cd8bf4c6fd76c31e702de3bcc597596826d8e3f9567b254ce92 495048927:a1ebd8de21a8b688be043399acf36db0fe04ba263cc9f04ea3344bcb1aef99d0 495048954:5a3d17e3a91b49019feecf760077315f6dd655cb118ccedb7135af9324e9e209\",\"us/hampton-inn-suites-cedar-rapids\":\"473518577:1e0050eec4fce57bd0744eecdb84b8bf2b4e483c7c832e754d78b9f8b396b40e 473518583:975da6e17ff22ef58670ecaa46af26fa4c5e11607448b5f7ebd07fd583de6d7d 473518593:f131c7cd82b361cdabc52deb5124343c5961046b27432832db82e728c609896d\",\"us/hampton-inn-suites-chico-ca\":\"https://static.cupid.travel/hotels/ex_489f5ee9_z.jpg https://static.cupid.travel/hotels/ex_e895bb76_z.jpg https://static.cupid.travel/hotels/ex_446eeced_z.jpg\",\"us/hampton-inn-suites-minneapolis-downtown\":\"928013111:ff30ebd267f4c574ca495368ce7a2e0e52bddd935bc7307a6aa84f3479395f6e 928013129:ea76d2d58cc730e9713fcd877fcb751c3a3eb9689997cf1bc4e42da07ccf6685 928013142:f6ebedc30db079c718f1da6ed7151a1a752c712522318371c9c9144d1b4a2083\",\"us/hampton-inn-suites-naples-south\":\"929352877:4dc381b6e7c8b3cefad5de70155210c9f463e1a307d3d53f0c7a1c4366f86fd3 929352879:18495b4531e83baec3b986c5f8f1362e954b59283822128a5315acfd25f6d774 929352892:e7ae37344abc922031154020c8358dc9e4cccd45dc892d8a922c9b907ea571d0\",\"us/hampton-inn-suites-phoenix-downtown\":\"484670689:58cb229f4e4c5641324606879027973998bb814f6333791bd3a75b29faac3cfa 484670737:5efe1df88bf48aa4776856c33f4d894ac6d269cd08fcb2f9d99c248d8d4f3130 484670687:2a25957ee7f7c5a71fe475aa5a559d22bb43c88137b33cb2244a3c1f2899e39e\",\"us/hampton-inn-tech-downtown\":\"484913533:c9ac15f19870616be2636ad93bde591e67a3683faecb03a42acb1db097be589c 484913546:a41c1dc94b1a7bec7c028aba63751c342ae694153d3b5c24bc9b4f124b41dab7 484913562:6a92a238d307abb7bef6470e880c66bf9cd387c657cc9f259b33d4f78a057fce\",\"us/hampton-inn-tucson-downtown-az\":\"485731805:e89663d65d921df4e14e09ea1bf3fb6a08537324b237ebcb4627ad23952ecf44 485731738:e1d0283f94b3ca4522e940abfafe881d910224853e7a83f5a686726c7ccf2b82 485731779:acb29ed8c2c60b3979782d38bf49aa12c37f4cf59add8a4c77bf80eee5afa56f\",\"us/hilton-garden-inn-akron\":\"926492638:1fa5008bb8d5ccd0111023ac859c2f7532f568a18cc1609cfece3f0911a50d9d 926492693:19a69551203bd681c97079551f5b66e80cd73fa3d449a2fb0a1f2b4413a3bd3a 926492701:7dbb2df050abcaa1add7a1fa15d23841101deccfa4206588ae604f7033698d9e\",\"us/hilton-garden-inn-casper\":\"623988896:3832a02cbb13c96ae5bdb735f37e73b50de770320372170c3cd8b98dee665774 623988924:ff7966ed9e47c381b5bc2a7a28bae7d3874837676170838111eb1a6fdaa25939 623988932:b5c4bc4583e904cea3d5fb858611f919da4d551156baae144fbff5b5c53dc1c3\",\"us/hilton-garden-inn-portland-beaverton\":\"485693394:0a67b8a29b3f804a44d7b999ccb4c796dc5be6a273c7ce057b75cf8e12c32b06 485693404:351ef738bf41f91dbdacf2b3d628414ec5798e12f2b5033e6e4742a10d137c25 485693408:1f3e446fa7c955ad6f2370de1b0bcf1cbc81d998c2587a8cfc2f80b234a657bc\",\"us/hilton-melbourne-rialto-place\":\"484863317:93045dc77c68e2f1fcae859a93c2a5177e9d763fa3cda6919b17b3f7b748f200 484863418:5eeecf38019a273cae5fc25f464343c83577a5a556af98055544fd7765e38a50 484863423:c2c101cb18f8d3d5a901fdb8551fad4af5e8fc7f28f062af6f028f00472e8eae\",\"us/hilton-shreveport\":\"517375919:1ee664115a79f118a0385aad8eb584fb3db6d34322d4430b9a0bd4b507382ac3 517375920:b6489004f51ce614e07c980f6f30bc4319f1a6e46f270217c501462555cf5d33 517375948:5a7b6433043d5861dce42028654c606fdecae178733a2bf0bdf7986ab766ac2b\",\"us/holiday-inn-baton-rouge-college-drive-i-10\":\"682454267:35d245ba633c33fd489188cbf73298ca214ac0b1c30a070de810a687b3550f5c 682454296:cf41469073744a3b671742b517533a0d2ba93f8a43fface8d0cbe6801073d948 682454333:7c5f9c800d0241394f6415271e19a21310ecab7cdb5feb8f7c6f91d4aeff5fee\",\"us/holiday-inn-burbank-media-center\":\"903886373:effb6b9c0a64b12b9f8ae33b155872b41234360e044872da6028f1bf9cd87e88 903886368:2288f4b130a132ec8eda9008681ee43637a500c2fa00b10ae59fbc9f4f0d7d2e 903887732:afa9317bad716c16e821a4af69d54fe999ad7e6d8d01bf978814d98cf37ef8d8\",\"us/holiday-inn-columbus-downtown-capital-square\":\"334775360:efc1641b7302d8c12d15141f7570eb9432daa3fe6189f09d84337c4768fc9f10 334775257:5e8eea45bd64e6a28d0129b41f498079c7e5ccbc88737b0b8a17c27b4613a08c 334775334:92b2021067c4cb4ed4c87950a8451b473f67fdf218f69a148742efd9ed111533\",\"us/holiday-inn-express-richmond-downtown\":\"230326655:a8620edebbe60eccaccb2fa8525d396bc2f4b7a9b332baaf2860f32228a1f81c 230327433:0029842c73facf87eee948fc29138d49e4ba41808132e31330a097db5adcc49d 283218825:a4aec21225b5bd6f14222acc235f80d177046c0aa563e3515c8c4c0e36b626ab\",\"us/holiday-inn-express-suites-bethlehem\":\"111772824:c025539d08e6ead50a6641b0a9889b7ecee7e049dd2f299eb51b83ebee15f6af 111772822:cf325f96b4a925ed22a288051d3fab64aaeea0edcbfe80343c0df8e7020c5f4d 247240268:b11b9e0ac76fa31d4ae06f03b17795759ccc1f7a64e93860f18b3f27fe20ab97\",\"us/holiday-inn-express-suites-brentwood-north-nashville-area\":\"256816392:086c60d52c84de435f798b45b4247d0d0e10e9536902cb3bf6a3cfba41a1de6f 223462378:5c46813def796c6c747b0307c4dc7cb044a9662ce9053b517c166ff8415d48a9 291954022:cf562a0be8fc341d13a9bcb2bd31e101a4b01d5f2ba26a074629551696daeed3\",\"us/holiday-inn-express-suites-downtown-louisville\":\"253761201:301570e20d9a23f8809ce89b12d1dc16e2775fc04639f5356620298c997c16be 651647081:7c175352366930c73d29f39c454fd70f9fa3c8e2f6031fb41f28d64ea1a229e3 651647084:682fe58a306bcf96f605c5f68f8f3afa71fa1c67618f91035ac1adc2e7156f4d\",\"us/holiday-inn-valdosta-hotels\":\"253243762:6e998d77a0c06036c6892d4543dcf7f5e933a0718432713c619b88f129e4dff8 274090434:67be279940237ef33d890d57e92cdaf36ef657356ed873483d85fa2a6597d7a4 241260789:3aea89f2e70eac27a42d772fbf5c82655e1fba82f3f370ead6df30cee9b213f6\",\"us/home2-suites-by-hilton-ann-arbor-south\":\"930511586:d108c188d819c62983132650a83a79c31b8a591171fbe859665a959003de4318 930511611:11914a63275d85e7ec0c6faf0b74faafe26112f60ff900aa2363412eeeca2241 930511570:1c9fb4ac08724ec049069165cdc64d69de63f1725ff556d138fd180fcf817c71\",\"us/home2-suites-by-hilton-charlotte-uptown-nc\":\"928806777:17c0f01b6f7100c39ff4a17a6f7b4cadae7ac1f5fed6aac10a6a757b28434dee 928806786:918d35a8c7128136c16ff44193aff08c00a59ed9d246a87111c2822b89872643 928806789:6d23b13726a025f1532d7fe38963d1cf3239e73c7f52bc281bcf3f19f68a801b\",\"us/home2-suites-by-hilton-tampa-downtown-channel-district\":\"484663327:c8e133ffa0fcc1cf11f06a08136b03375787031ba7e6e3d740c4e45d9420845b 484663332:7bcebec3d248882ed85a55ccae799525804660d51d5dd2cd8bc197a58abbe4c0 484663330:5f63b144ea9b074f0fd1914b55911810c798109f0e0f62922ba7536d2dae8bdc\",\"us/homewood-suites-by-hilton-livermore-ca\":\"928871012:4bbe7225d79226cab58302107f03340ae6e29865af5e3ef03507189df1c293da 928871010:4df9ef236320c569d13f8ab72bbe2e2ac791df820765daf42c01233ca00a3a91 928871020:dfca9890e3d18d3b9cabbfca488ba50e0825c9f142c38a3b01bd56f168ac5401\",\"us/hotel-burlington-and-conference-center\":\"928414434:ab54777245ef0f6ba965748100efec525649614853dcdce3800009844b0ab03c 928414457:fb6179aa4614b2973d560bf3bcc045f2e0b3e28b9734c621496216ddec1ab4d7 928414463:524a82c4a22304aaa6bcdd0d91ff3ddeaeba83adca512f58c2b5880af543e023\",\"us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton\":\"929368462:d7b138246673dad1da9866387fe70b4faaaa9cc190ca3126dd799afff9bcd5e0 929368479:12b56342580c1426077491d583eb082ff18b10f8c8acfb865c0631c1bf1344c0 929368486:ad29226c3896f2424f1ff0eed178e24300e4b6c01fa3171a3935629be2ffbab3\",\"us/hotel-galleria-boulevard-brentwood\":\"https://static.cupid.travel/hotels/169745114.jpg https://static.cupid.travel/hotels/169745217.jpg https://static.cupid.travel/hotels/169745652.jpg\",\"us/howard-johnson-plaza-tampa\":\"148867591:0f4c796fcecc5d53038481cf2592d6cb43d3ef4dbeffe273af8465fae248ff4d 148867583:7630476758f6a303843712d9ca650bb71fbfdc3489c14bf054398938793b1730 148867569:542f1015ad7155c4b7efb05a3018c0b80d905afd62e2f2f95c7907553a59547a\",\"us/indigo-vancouver-dwtn-portland-area-an-ihg\":\"716491936:da3c679792e92ab03816b44c22638ae4b77f9a33a2e009fda1b3d45bd481ee99 577110608:70eaba3c6b74d7b71d887a17d1555fa76bcaa5109b16077ba4db0da743f94c45 577110565:0dfe9b32f014dddaf548052c005d0a8732aa77a39e7292ccb000b30b5eaa1a09\",\"us/inn-amp-suites-bradenton\":\"926408827:1fb9bf5d29ffc088ba2ef59e05647e37b680ba7cf61e2f4f3a53606539adbd2a 926408874:d623fe7454d07e8c70acfe98134580245fe56187890c62a6ef6ce8d9736c399d 926408771:bf764166b6ee69a947d6e3b965382f742e68d57b951808d63e971e48193465b5\",\"us/innquest-roommaster\":\"485124738:fd7990ca836b165423019efb066ff89e229b161a60b52dfb535ad14965ad05e4 463719503:c1ff70546629a9178f65b9149a0def4d56f9527ee39d1f9ea8107e64c5a0cba4 485124744:b704b62c8403137f558c3b7ac5d7a027f604a717ba9fcdbdcc611e05fbc89014\",\"us/intercontinental-hotels-san-diego\":\"287413219:b3d0e7dac2953d542a6cc1f8728471285ac62bdf57eda0b39d045585479f98a6 276124621:f6ba41cf455bc7c014fe6045877ebc92e2ee5078d9e32d397b5fadbe87493808 280604219:6d5777a1b1d82213f18260495863def924bccca8baf202c10a5cf377c3576a02\",\"us/johnson-street-suites-madison-downtown\":\"591190231:ae9b9373e95ce5c1976c048478e6ef3b6d52ed00cdf3c5ab30c9a32ad24dc83d 591190300:c853cce0d462f81bbacf8c42d55378ae050e5101bf1704825806991c1616e216 591190320:a4fda1ba0965d172bf1a389b4eb6ec21b3cc803b9730c4926760b79fc3d01df9\",\"us/jw-marriott-anaheim-resort\":\"643422196:e9f98ba51955915f4147fb6a75f87d43547a9d1b40b9908135763eb4422b72ba 646783451:2c12271bccabfd68e7129059064a12722ca0ea84190bcb0c700e86190a83f8a4 643422216:ed174d014989d54175b7b058418eacadf144c63458d8bbff14f62cedd650781a\",\"us/la-playa-carmel\":\"500056783:6500e635d2f6eec0cc01b6c0cb20a007dd2e5b6c2f5d89f924c602243b418720 194613428:8a84f2aab90f4d94623fe12931c6b45a80b798518cfee620bd6a56fe115635a1 500058596:b8241625bb6b76578a3ebb85fcbfbf6f5f2dc0221907e9c54c7979fee07dc808\",\"us/la-quinta-naples-downtown\":\"284465926:29df3d315cfcb52c853813b91fdeb5cb25917b1bf609771f9ab12454b35ea7fd 252503813:61258c48ffd13ece8236b1f9878569aab9a377e19b67890aa824d9bab60363f0 262123227:1af9f2355720ca1029a57b4143d118c3c71971452905c2064b62fe9bc388a942\",\"us/laquinta-inn\":\"250448953:989c398db28ab4c0742ed680679949cb456c2eea550baba5c6b93dc95b37e953 882094592:14d94d83dddeee0f8133a6116e01eb331638a1dde3c083cde2584722afd1529b 882094589:b347718c6f9a56900e6c790f695d89564b693dd6c4528da358dd3287df3fb6e0\",\"us/lasalle-bryan-by-magnolia-hotels\":\"615962671:11cab75d0fd9feea1244df3e08f9d0c21c81f2f01a56f2b7b3f208c46bb716e2 612457795:e57f2d56329de9c15c1e549a8411e86a73ac63cffe2c325420c4df5bdd1fd3a9 612457827:da1d5e05343d27e13870039c23e4cf6f29295066e4b7ad52e08dd494cf4355a1\",\"us/lorenzo-hotel-dallas-tapestry-collection-by-hilton\":\"929491307:dd0d5a4717f1d8263b0ec65dddc5b498dce9fd31362bbb891b54cb6664a65f86 929491309:92e62cafef8ab14015b3b9e2d6f980397a8099c49b69beb29a54869c5f00ada0 929491333:c49ddfcb0dfe59c251b6016c2053635303bcaeae8b5f6802cf9e83bf32e70c91\",\"us/melby-downtown-melbourne-tapestry-collection-by-hilton\":\"474958073:7af6a30b0f491232a2f92cd85ce68e02c7653a79d01efda8ef7366b182f1ba89 474958063:1db60c43d38d413d809726904d77047d43397b021a30f68697c4e1141d89913d 474958083:8958526de4cc379edd969a770e486eed61e8ad6149d6c97f9ac4197c870a3a3e\",\"us/monterey-park-spa\":\"513671541:ffb46e2775ecc4fc4fb6f42b3342f34f74885f244cb070093de43093f82ca893 132234382:7c194e5c55c42857a801dbab2ecf31b6a4ddb7c6fd222d2ef17667360b3bb4eb 6557675:699efafeb95f837ac8018a298fdd59a092c1f38c097f7496cbd72f5a6d84115f\",\"us/moxy-omaha-downtown\":\"505523251:2d8fe18881abeea09caeeca0a19980120b6452eb0691d29571d5e8e0ce1a55d1 508381652:8dcf628481f0880a5beaaae6f600fbbe5b68b9d1cc5eea3b7f8324ee2bb68234 505523258:01a03843ccbc02c08ca41d45671343cc6951e340cb5f416d1210deac6fc10b66\",\"us/moxy-richmond-downtown\":\"446994957:0b22a17da3d73e108e8dd453b00df73aea5052dd14b9647a03c843d2cff3d29f 446994961:10db95db1a7340e0848709ed70c67c805cbed59c10aff892fe1113167e299dae 446994966:ed102a6ab406fadf9527f4c2ef355edc513b3b0adee83b0b353f1229c86b29bd\",\"us/naples-bay-resort\":\"581955071:8010894a21d6c2e346e17a2d6aabd52b69432d27a296074d33f37068c66dfcb5 253946757:3b4cd67d14af479d610b44d6f50cede6476e2fe5247e41f9bdc74fa010422699 581955477:874da02980e8dcb312e3515a0e5f99f258cfbee884ada2312c45c8efe195f27c\",\"us/naples-park-central\":\"562937655:fa621dc8bb93960a7607cd31ec983b6d336d1efa494746ba14c97956e2b0012c 562937652:8a39e499da3d77fe04163f85a928dd904de32462329f041af79135e6bf386433 562937653:2cd0a6edd9c49d053b186216fcb868d664e6417c0db2ea0ea9530bded56903d5\",\"us/nautilus-inn-d\":\"811620975:50e371ab8dea4a9613dc6e2342eb942ff10515339f848a056a1c8bf9dee957a9 811620974:3662921b46e5beda925ab5dab04d5e2f73240ba9bc353d7c2ceb8e0436a7a1cf 811620971:8abcc3e7356e8f681cc4b0aa6ac462c1dc0652930eb85611e1f59a90557fec48\",\"us/ocean-sands\":\"473526200:cf52726cab48b2a0d1c957ad57ddbee6f56d8d9650998d742922c3e69136d1bd 473526224:36ee084be10422a5873fad4b48999eef8224f65e4b23292607eaaeb64c26b057 473526280:908d5da3f6d3a19f7b4efd4a3946ff62cf061b594f40c5c08a04b3f091e3cb26\",\"us/palmetto-marriott-resort-spa\":\"550386335:731fdd76cec25dda691ea209c0364aa9eba65dd911a9bd9babed9dccf7749e3f 602865604:3ea217c35e0df1da3c7cb91251eb3c31cd09ca09f0a6e31e2870364939cc74fc 602865565:647bb2bc0d7e0389f3693a355ceb7339d384c5ed4cbe2f4fedb56d0ffa1ec4dd\",\"us/phoenix-50-eastadams\":\"433337832:d4be625907ebded4555662db7b2147a39ff6cd79fd8f53f7eaac5e7e6927bdcb 604503475:2dce6a2f3447b1c33f406dca1944e7147fde3d5a096d49c7852e45c90ec2c450 604503442:4dcb518cfd2bdd42ab689847f7ae700edbc09eee85469c38bbaa014b99a8830a\",\"us/renaissance-baton-rouge-baton-rouge\":\"643124279:0fb6d8084f7bff336c499cc17ec46d471826c3914140bbd4449a04e1d6247536 643124286:597deb6db29c0b6014e05c6cf02bedbe4e8ffbcebc74c2668e96880975ebb5b6 643124284:936be4464b78a14675793fef1a3d28364acf6806ff0878bdc03feb776ce6084e\",\"us/renaissance-boca-raton\":\"626924144:6cdd73596d1579a3ae33adb079ae925e014d680bf9c2598a29464df49b556418 626924159:ed1b8d02df43881c53393e703df9c318f5ebd4a12a3ce4aa2613a61e620be22b 626924147:04574b21ae89807b23ce4fae3a995420d8e89a546d73dc232483e1b453a13f7c\",\"us/residence-inn-ann-arbor-downtown\":\"693284535:233aa7c9ec4dcd23e940631f7391e5ca7bb487b0bdc7b617e4a62d00ec274947 693284552:ecb11c289973ef641f1c87b2d0655cb12a8bb7858969f23384e20a74f9dcffe7 478660196:0f8d65cb97324791dde3e169239ecbefe46bffcf934bacec496101c4a3452d2d\",\"us/safari-inn\":\"799909580:e7dccf0c05faec5884a96b28f748bdc564109faa62eeb07303af91da03cb68af 799909581:f18d35a7e0206a65f6f7041df9ecb604ce9c183a8b7b3ca3465dfd7869c6d525 799909585:b1df2d882fac7df6d5a4b4c3432a122ae9b245ecf96ab2bf8442f2231f9d01c6\",\"us/seven-nine-three-nine-essen-park-inn-and-suites-baton-rouge\":\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/810435938.jpg?k=b7a6daff1bc1b5fea7edf08aade36c843f53e444872317cd3bdc46a448df1218&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/810435978.jpg?k=62752d1a7029f6bc87c03aedb103e46a24e5d3aff49bc74585ce97f87e48431a&o=&hp=1 https://cf.bstatic.com/xdata/images/hotel/max1024x768/810435948.jpg?k=1cf06082deb150b3662aa2830bda8c54bae5048366476d8489c09ad4c2a0a2a7&o=&hp=1\",\"us/signia-by-hilton-san-jose\":\"928967423:09440d0f0b8bbcb43e601b2e59d96dfd81ffccb3a0aec93b8f2626441b43a8b3 928967666:ce47b64dd00186bcc2c27cff4262a16cd8b5a0729954ba6ca848f196c86439bf 928967341:335c0a40659bd917b6f23900aea1f6509ca0d6a1da912ebd36c93b279aaa37b3\",\"us/springhill-suites-by-marriott-bozeman\":\"607362794:f2678cd06821b3dbbab74231b002c4a44c6b075a3f631948323569d993b695fd 607361988:a5b4033fc7f16631fa1431d72e2604b8de039c11ccede5a3d99261e337089a43 607362926:16446521c711d4abe9c3ef200e1270450bbcf49ccdf11f5f4e0d87cafd039855\",\"us/springhill-suites-by-marriott-colorado-springs-downtown\":\"674793699:712be6f7fd63eae5b90120087294c6cbc76842363a59e1f2d4b9db79ced96c52 459583168:29721876e3fe889a181a329bc3a012ca288e74e4e6d03b3be934d62bd30bf059 697036057:8199bec4793d0ee9e2116c9724ec38e9447483e769db0eed3d465c40bbdf7e47\",\"us/springhill-suites-by-marriott-savannah-downtown-historic-district\":\"645413536:067d04de043d2400c73eb6808032bea9d07e3b2b1346bf0d47b6ebe7d273a7ec 645413571:3eff15054e80561940b652b0f7242c232d062f84db387ab60695ceca5ad25570 649450999:9cfe78c007ffef463d7c439a341e93e4e7b609777be42457c6fd37d5913bfdfa\",\"us/springhill-suites-miami-arts-health-district\":\"630227434:19e91ff6cd7b6004abcc6623f0478491117e0bb570a3eb87692f6dfad70e745e 630227435:3aba1532f7197bbcb1deed9d2211ba4f5fd1fe06780280ebfe4bc2872479d98d 630227439:e521da5a56360e6b1efaa7ea8e09c5b4975c9a0ed0f2b0941f98c408c070c02c\",\"us/the-anniversary-inn-boise\":\"511110436:7dbd6f18317b6bbc2c22a93369189407245d8de665f86563cd2ec79a5e9033f1 693478738:4148a0815c8f0fbc9de1123f40082b5fa2fbe55fa9fbe27f9a3d5a3765816fb1 693478730:e5fa725a214005504be637da6f0e58c528750c367b14eba98453371305024c80\",\"us/the-anniversary-inn-salt-lake-city\":\"504573030:1020d23687dd68bd97d6ebb21974cb48f73a5dd7951f894bc4103b24259ae0ad 504573043:6a341f0eb93c27e8fa1e46787bd72b17bb6f52c171cddd5f57857da1819c35d4 504573055:7dcc2d65a8b809d95f576bc69b279796df20b5bce7d60e57ae3c52c467594b4a\",\"us/the-compton\":\"758940890:6f51ca4678a97c595ffd21e4fb560a20a0b890db1bcbe04f6e0ac8281ad13e61 758940895:017ce697780119fd71f8fa1ea9aac039d841bee83818d5eb0d08a7f57b893915 758940903:cbcf3183723e68beb65cd0762bdb3254740b3355f9f3dd29fbf10c1da39a85f4\",\"us/the-davenport-grand-autograph-collection\":\"645025258:263bc187317235698cda099e1d6006e33322945f7c402f15d001447c10763f9b 798324623:b6e54f3f2e681532cfa994264aeabff6569175c0a4f5c2a280a352741896a8af 645025464:6c9bf6f4bf8b5d4c59149058052bc7a0e376c9cc48af29ff0c0df4c610d28f7b\",\"us/the-edgewater-madison1\":\"38031894:dcc0e1a3138ead91a2c39597450b69bff6ab73732a528da86908ceb027abd95e 52669855:dc343ac127d5d3576898ccab7c1421d538121735ebe302a19d6b8906aeecf45b 38032010:b5fc28a8e5fa8b2a4a678332ff6b875b0463eeb9339dc0c2ed67e07d58293dc0\",\"us/the-leo-kent-tucson-a-tribute-portfolio\":\"479847201:cc01139a2b83ae1c9ac513b7e8e28e293dd6b30748cc0df195f44fd66c941234 479847203:61fa0b96c85defb437d4a14c1b191ce4baba519d348814d0b00267cb0b86eef4 483093162:3ef5cd41436ccb2c3ebe8f5410325d3a3d37b7768e1504b501bb036215eb380a\",\"us/the-painted-lady-birmingham\":\"652875160:91f2abf23f27bd0c994f1b920b749a5e7203927531751974e8922d3eaf1138b2 652875537:41e056963fb1a36a462fca1dbb64272a7dc97af83209946c8565c98771981ba7 652877259:6067e778e93482a0d55c324355f122106092c76a87002cc3f9b4f732585d3aa1\",\"us/the-peregrine-omaha-downtown-curio-collection-by-hilton\":\"928847065:b1117dabfe8c2215643ef3e70da3d052aa3d2b97a99162e1aeaa931e43e49f29 928847069:b45debf4b61f89336560d6813fa103ada5b28b226911f12b97a7db53e9e850ed 928847068:9104029337055d232693a1a046710812425d1b8c26b9ab5b59d6d024f85b090b\",\"us/the-victoria-park\":\"240905693:95b65aff054752eea7b9f100f3c92807cb31f53b44a62bda8149fc8b051cb256 240905551:59b549af475cb41fa8d1a4331d0354c220cf32e8f7b26130fd68b68f1fd7008c 30922285:31e058a02a87c086ecf8d93dcffd60f2da78b2b27caa340fcce22199feaf6b68\",\"us/the-virginian-lynchburg-curio-collection-by-hilton\":\"474413625:655dba6965ba7af5913b935253bfc62d72bb6b6d8608f048104f9fda796858c8 474413627:cad33ec27aec8d7447f79b3972f82fdc453392aeb3dab88299e5c623db5abcb2 474413633:32834dd0e13654207524cd82bb44a63484660971e772f382835199b018b4bf11\",\"us/travelodge-newport1\":\"474391010:cfdc6dfe9d3aa1fe19c86baae75bbd4df6dee0dedf12ddbbdb445da03e720d61 474391012:8c65efa11f297a10ef9b4fdd78795c9a36837c73633acf505572f4febbdff021 474391031:eeb47304f480e8bdf9575e1ef1375914065d3946e174596ca38e188277ff5cec\",\"us/tru-by-hilton-columbia-downtown\":\"690655111:646bc34a095aeb2b83f69396acfe4e665dd3b366c514021936b7ba377519684e 690655118:c24ba0d0ef104ca000a2110e0aff0c585e24d271c2cff9adbb4c3bea2afcdb6e 690655126:b0a571c5c100b451aa7549455e42e9ba5fa05c5eb51bc08617f95f10da0307c4\",\"us/westin-lake-mary\":\"561186316:3204d5120c7232bd93dfc4f71eb3ba69d8a3d33e43264878d08f71457bf43f5a 561186324:a5cd72cf4f44a1e51f9e7aadc7af038a4f998335c654d60a397bc5386878bdb9 561186326:e9d9cde8aeb0baedd53117556c73e926928d66cfce150fdb0067d5c57479292e\",\"us/wingate-by-wyndham-altoona\":\"145534473:ca6dd6d102391e19c487a4ad8c4230a905353eaaf91823e61617bf5609006cf4 120876963:011242b97e38b325611b8662e80b057a11affa482ae4c535e427a5c5a837ae13 173430010:aacc518a5f008b07f691221ab9693b4baaf78cbefe7d67f57ea820ac4053c841\",\"ve/el-arroyo\":\"933195642:6b952433d11e44485b622a7991fc352ebbece04218a1d3d63d833c62d3779729 933195635:20d77bb6c70f6ed969c014c04eaf899bc1f6f01a5b9e595ebaac6eaad9d913c5 933195634:19cff4ba8a6fe3f3d236d0e9922a61a8792ff405f14579ff3b534f9692a0ae02\",\"vn/aaron-boutique\":\"493191208:ca32efc6f1c9e71bf420475348a228f61498c36186aa19243da4abf3c76c6441 489128034:3b0aab4bda392444b9c9a660b93fd7358b34be04b9cc98e5b2e735fdf1624e2e 489128195:9148bdbbd0916763194e22ccf4855350927161d28c91326a06232b67880e0db6\",\"vn/dalat-palace\":\"687470348:bcc87ab0d3d44fbbb0b96b731e955261333c6394baec964e029d6389156c9190 680502114:85dac9b9dba4d097ddde175ebaec2192d41c823fd0837e6c77d911f0ed938fa4 687470344:b572b2b3e363e0a453929d971aec435f7d4808497957fca708ea9dd34bb50468\",\"vn/golden-sun-amp-spa\":\"492646453:319bc6f01768b8135b9de31d2dcdb18470ac348d4ee423771bdbdc4b0b463de2 492646464:badebdef5184c222bc602a0c823d614854e7cb32c85b63b1e3c02dfba89501de 492646457:b2bc9c2b7db91b86755541886d9994edc8c9266b87323febbaad7777e5ea25d6\",\"vn/melia-vinpearl-hue-hotel\":\"931773685:ec449cc764050d4a01aa4704bdfaaa23b1521ca7734ba5e6d77c3c6d18af4edf 931773693:f1841ba9b8e5d94a85e02e5c3a6e7028e0f89fec1e6b385d7ca72826a3b5e92c 931773695:94622fef0c6e6a462760acd71ce74bdaa1ef326fbf0bbf237c69387ae86adc00\",\"vn/the-anam-mui-ne\":\"416024152:137720594d2ea363e807aeaf88fc1191084294f0c10b14365386d2261bdae64d 927732979:c3aa4c1f67625e26c269c803153e701250aefa3047b6cf9b794569aa509c15bd 416036649:c7b67fb439597e1904c85bb68e97d70f502aec6981d9ad0d07916fe5b9837175\",\"ws/sheraton-samoa-aggie-greys-hotel-and-bungalows\":\"592255486:b2e60a96cc5f0409983db65005d49a36d969352efa246e504d545ee614ee3c06 592255527:cbe94d49d2946c35765fc8d7c7231418055c4dfd932e0a321eaae5443558dc6c 841802102:25002928995635692c86409f0338ef2ae2c5768bc5389646ef0145f5b064b76b\",\"za/blue-waters\":\"183028170:8ce27d001ba2b24d19e4b08d8bdc5515d1d7cce02259dc7708e6458dc02add24 182876316:d96f81818ddf84b656333ea1c356c04f402e9e3f5d5a7f21f956c50f9ccd639e 17771656:5c106555f32afa357600e93618cb6e5ea21f11c936b195de009b45b0adeb6912\",\"za/campuskey-staycations\":\"https://static.cupid.travel/hotels/491186686.jpg https://static.cupid.travel/hotels/495078604.jpg https://static.cupid.travel/hotels/495078470.jpg\",\"za/four-seasons-the-westcliff\":\"887793926:47a78ec40ee3b7fe2c262ddb7a4d7e122cd03c611b6e64537555578d21fdf899 31584440:1ee0425f0aa60809b22c46c0d4b1c0a9b77738212c1d840266683c94ebabb036 244597430:9fda97a44e2faf665a4947f8cbe74287ce77baf5d959ea8c13b121cdaf985ab7\",\"za/garden-court-milpark-braamfontein\":\"479293015:b02c7244e74de0fde3f7ab77bb9c9b367767532f8b188f9da93db4c27200bb23 220623246:698bd005685098f633b363020a93f75fd452de5794de95b0278a3b1c1aa3a43d 120961191:2d4ac6ac988c2a7db325f7b7190caacd614abccb78ffd59162ef0992d232bebd\",\"za/onomo-hotel-cape-town\":\"909534543:3e0bd093417ef3f7c775b0c7702ca905a64791b3fa8fc229e0ec93a746a3fce3 909534548:9d69a9552f0286cace54dddeb96c147033d183a24945f7e2a6431655979c0a84 909534550:292ac791b52b690fb8078422901d966899a2baf756fc5c7a48c867b4bf28695b\",\"za/wedgeview-country-house-spa\":\"286908004:7ae92e68c4289fbc0f5013a204ec15c9cf25805deaeef55014f0b142de55119a 271842636:8dd8bb894f9f268385c476912547243ad2d372f24f00b5e13913d0c997e3971f 271842640:fa018acce58cd70e984d64fda3f7244ee9a2a7d09b6fd43ee015aaad58cfa07d\"}"),
+	gyms: /* @__PURE__ */ JSON.parse("{\"airdrie-canada:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/029f9658-9856-42cd-aa1e-65f781a80951.jpg\",\"hotelgyms.com\"]],\"aix-les-bains-france:standard\":[[\"https://staycation.twic.pics/pictures/production/2636ab5fb4995e24339b646716413977.blob\",\"staycation.co\"]],\"amboise-france:luxury\":[[\"https://www.staysomedays.com/wp-content/uploads/2026/07/le-relais-damboise-amboise-exterior.jpg\",\"staysomedays.com\"]],\"amiens-france:luxury\":[[\"https://www.dayuse.com/_next/image?url=https%3A%2F%2Fstatic.dayuse.com%2Fhotels%2F21543%2F94beb06d64062ea0613e285086c33f39-you-hotel-amiens-handwritten-collection-janvier-2026.jpg&w=640&q=75\",\"dayuse.com\"]],\"annecy-france:budget\":[[\"https://static.cupid.travel/hotels/ex_193275f0_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_17898cdc_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_4b23f330_z.jpg\",\"LiteAPI\"]],\"atyrau-kazakhstan:budget\":[[\"https://static.cupid.travel/hotels/512908231.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/526572203.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/452348599.jpg\",\"LiteAPI\"]],\"batumi-georgia:budget\":[[\"https://photos.travelmyth.com/hotels/480/42/4255580-620232d3_z.jpg\",\"travelmyth.com\"]],\"bauru-brazil:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/27ba3d06a8f59ada55370a481c67cc06.jpg\",\"hotelgyms.com\"]],\"bekasi-indonesia:budget\":[[\"https://static.cupid.travel/hotels/154314965.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/397004976.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/317258145.jpg\",\"LiteAPI\"]],\"besancon-france:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/1b96a23b-9402-43e1-94aa-a129c2394be6.jpg\",\"hotelgyms.com\"]],\"bitola-north-macedonia:standard\":[[\"https://static.cupid.travel/hotels/ex_a51c9bce_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_385ca6d2_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_67613738_z.jpg\",\"LiteAPI\"]],\"boa-vista-brazil:budget\":[[\"https://www.ahstatic.com/photos/b306_ho_00_p_1024x768.jpg\",\"all.accor.com\"]],\"bydgoszcz-poland:budget\":[[\"https://static.cupid.travel/hotels/92209874.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/46996394.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/59247652.jpg\",\"LiteAPI\"]],\"caen-france:standard\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/a3f564ab-6779-4c92-a26f-23757858ded4.jpg\",\"hotelgyms.com\"]],\"cairo-egypt:luxury\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/8c7ca3cd-e10c-4d4e-ac75-74e132f74eb0.jpg\",\"hotelgyms.com\"]],\"caldas-novas-brazil:budget\":[[\"https://static.cupid.travel/hotels/ex_w1257h813x12y0-31b87791_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_b4640543_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_59618116_z.jpg\",\"LiteAPI\"]],\"campos-do-jordao-brazil:luxury\":[[\"https://static.cupid.travel/hotels/542302640.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/402890353.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/396088387.jpg\",\"LiteAPI\"]],\"cancun-mexico:standard\":[[\"https://static.cupid.travel/hotels/ex_045146a4_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_cff2b2f9_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_07e0b455_z.jpg\",\"LiteAPI\"]],\"canela-brazil:budget\":[[\"https://static.cupid.travel/hotels/ex_fa4b3983_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_787e9605_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_71b83f82_z.jpg\",\"LiteAPI\"]],\"canggu-indonesia:budget\":[[\"https://static.cupid.travel/hotels/588562452.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/586163715.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/586163714.jpg\",\"LiteAPI\"]],\"castellon-de-la-plana-spain:standard\":[[\"https://static.cupid.travel/hotels/605637725.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/605643528.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/605699539.jpg\",\"LiteAPI\"]],\"chalon-sur-saone-france:budget\":[[\"https://cdn.prod.website-files.com/60be1733a80d60dbbc51ee0d/60be7cece045c6f31f8a8c3f_og-img-sg.png\",\"le-saintgeorges.fr\"]],\"chihuahua-mexico:budget\":[[\"https://static.cupid.travel/hotels/484345586.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/484345599.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/484345604.jpg\",\"LiteAPI\"]],\"cochabamba-bolivia:budget\":[[\"https://static.cupid.travel/hotels/215675119.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/220697742.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/243836177.jpg\",\"LiteAPI\"]],\"concepcion-chile:standard\":[[\"https://content.r9cdn.net/rimg/himg/b6/de/40/ice-2611448-5f3817-520129.jpg?width=1200&height=630&crop=false\",\"es.momondo.com\"]],\"cotonou-benin:standard\":[[\"https://static.cupid.travel/hotels/ex_d4895783_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_95b96761_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_eb241b2d_z.jpg\",\"LiteAPI\"]],\"cozumel-mexico:budget\":[[\"https://img.guruhotel.dev/insecure/rs:fill:1400:700/g:sm/czM6Ly9ndXJ1aG90ZWxmaWxlcy9wcm9kdWN0aW9uL2I0Y2MzNmY4LWE3ZDQtNDFiYy1iZWM3LWMwMDEwNWYzYWE0Zi9pbWFnZS0xNzgzNDQ5MDc2MDI3LXoybml6eWg0aHA4LmpwZw==\",\"casabahiacozumel.com\"]],\"curitiba-brazil:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/e1d7a8b37ca8b3fc049aef211b1b6b11.jpg\",\"hotelgyms.com\"]],\"darmstadt-germany:luxury\":[[\"https://plazahotels.de/api/v1/media/eknlcrbadbumuq0eisf07z22\",\"plazahotels.de\"]],\"denizli-turkiye:luxury\":[[\"https://static.cupid.travel/hotels/539025537.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/539021830.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/539013898.jpg\",\"LiteAPI\"]],\"denizli-turkiye:standard\":[[\"https://static.cupid.travel/hotels/446481784.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/216359712.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/216358893.jpg\",\"LiteAPI\"]],\"eisenach-germany:luxury\":[[\"https://static.cupid.travel/hotels/238717225.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/512945873.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/46782121.jpg\",\"LiteAPI\"]],\"foligno-italy:budget\":[[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/920488504.jpg?k=bb5a135d3e5e44f0f3e562c8630a0d53f96f85212f0bac27d35590d52c07fa2e&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/920488505.jpg?k=f9b4834dc939156ca0f08a35bc3e8363f73057634f28f604329d85de0bf09c9a&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/920488503.jpg?k=e679a97e8a5499f958f918096616f53c3c170ea2216726dda194829ed2cf727d&o=\",\"Booking.com\"]],\"folkestone-unitedkingdom:budget\":[[\"https://static.cupid.travel/hotels/107793418.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/107784668.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/142721697.jpg\",\"LiteAPI\"]],\"freetown-sierra-leone:budget\":[[\"https://static.cupid.travel/hotels/ex_b76bd5ac_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_88feff15_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_7b7c545e_z.jpg\",\"LiteAPI\"]],\"gaborone-botswana:budget\":[[\"https://static.cupid.travel/hotels/ex_89654919_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_dafcabec_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_79ec15f0_z.jpg\",\"LiteAPI\"]],\"gaborone-botswana:standard\":[[\"https://static.cupid.travel/hotels/131444183.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/120103136.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/121735986.jpg\",\"LiteAPI\"]],\"grenoble-france:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/1605007b-dc61-471b-8f99-a345ae801ea6.jpg\",\"hotelgyms.com\"]],\"guadalajara-mexico:budget\":[[\"https://q-xx.bstatic.com/xdata/images/hotel/max1280/488282865.jpg?k=2be50995b03201de278f8dcdb2076bb1908aa53b497ac64f56828faf6e6d6d0f&o=&a=2325679\",\"priceline.com\"]],\"hamamatsu-japan:luxury\":[[\"https://cache.marriott.com/is/image/marriotts7prod/mc-fszhm-lobby-lounge-and-bar-31862:Wide-Hor?wid=1336&fit=constrain\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/111902774.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/111904233.jpg\",\"LiteAPI\"]],\"helsinki-finland:standard\":[[\"https://finland.ihg.com/crowne-plaza-helsinki-hesperia/wp-content/uploads/sites/3/2026/03/hotelliaula-crowne-plaza-helsinki-hesperia-ihg-1920x1080.webp\",\"finland.ihg.com\"],[\"https://cdn-datahub.visitfinland.com/images/e58d7fb0-85c5-11ec-985d-e198ad26f99d-Crowne_Palza_Helsinki_Hesperia_outdoor.jpg?s=1200\",\"visitfinland.com\"]],\"kobe-japan:budget\":[[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929512406.jpg?k=7e0e843f6d3122b405da990891ee889d021d4c7bf75caaf19b058fa1f145061a&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929512432.jpg?k=fb3df481060646e2a786c39c2a657ed11ed38471f585f305ea3af3c796ae6ee3&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929512440.jpg?k=7b0f690f7c8394643f6671f5e156b67687fc7cbd4783451ee1f85f0576cfb6ea&o=\",\"Booking.com\"]],\"lille-france:standard\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/5bb5efdd4a7e133626aff981de9a8d5b.jpg\",\"hotelgyms.com\"]],\"lyon-france:budget\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/90bc00866cf88c4d24f14b64cb868424.jpg\",\"hotelgyms.com\"]],\"marsala-italy:luxury\":[[\"https://static.cupid.travel/hotels/240920859.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/195507839.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/195452132.jpg\",\"LiteAPI\"]],\"mexico-city-mexico:budget\":[[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/654670390.jpg?k=db364278fd106d65f85f3370e79e7674650919714afdda2e61405f5c33253f82&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/654670387.jpg?k=124c0e3832eba1db1c008b1e0a31d87f8f9d3f9c147ffef90f00219321ea5ccc&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/316800406.jpg?k=629659277a3bdbe686dbde693737bd044d29a2eb3e22e20993622968909d736d&o=\",\"Booking.com\"]],\"morelia-mexico:budget\":[[\"https://static.cupid.travel/hotels/509331555.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/509331582.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/509331570.jpg\",\"LiteAPI\"]],\"north-vancouver-canada:standard\":[[\"https://image-tc.galaxy.tf/wijpeg-jaqdvk9ci2ifhds67peci9kw/amenities_og-image.jpg\",\"coasthotels.com\"]],\"playa-del-carmen-mexico:budget\":[[\"https://static.cupid.travel/hotels/ex_880114cf_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_91f31b27_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_b5a08892_z.jpg\",\"LiteAPI\"]],\"porec-croatia:luxury\":[[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/866843731.jpg?k=448e809af08dbde6fe7d2637c9434948a5386e6428f6f14e1c61bc926a73cd5f&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/866847811.jpg?k=8268610727c84b92324b2eb2e02f1e0c5671a413d5418e039554b09113334acd&o=\",\"Booking.com\"],[\"https://cf.bstatic.com/xdata/images/hotel/max1024x768/866847820.jpg?k=28a0a1d2060b1671ab27d8b027a03cfb454e3df8b877659f56195803bae462d3&o=\",\"Booking.com\"]],\"pune-india:budget\":[[\"https://static.cupid.travel/hotels/63545360.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/117921019.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/117913985.jpg\",\"LiteAPI\"]],\"recife-brazil:standard\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/f2f5da45bad93167670e78952892668f.jpg\",\"hotelgyms.com\"]],\"rimini-italy:standard\":[[\"https://static.cupid.travel/hotels/213554722.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/88122851.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/479977528.jpg\",\"LiteAPI\"]],\"saint-tropez-france:standard\":[[\"https://synapi.sainttropeztourisme.com/apidae/filestore/objets-touristiques/images/218/150/42047194.png\",\"sainttropeztourisme.com\"]],\"sarande-albania:standard\":[[\"https://q-xx.bstatic.com/xdata/images/hotel/max1280/208888513.jpg?k=2580b35036b0ff9b41ae49210e3e6caeeae7a55581e5f53468378a380e253add&o=&a=2325679\",\"priceline.com\"],[\"https://media.albaniavisit.com/media/accommodation/hotel/max1024x768/303307580.jpg\",\"stay.albaniavisit.com\"]],\"strasbourg-france:budget\":[[\"https://www.ahstatic.com/photos/6202_ho_00_p_1024x768.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_9be55b0a_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_66ef3310_z.jpg\",\"LiteAPI\"]],\"taichung-taiwan:budget\":[[\"https://static.cupid.travel/hotels/507977337.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/556527519.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/556527521.jpg\",\"LiteAPI\"]],\"tampere-finland:standard\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/524bd54ff524f17ba2b41653a0ab6b68.jpg\",\"hotelgyms.com\"]],\"turku-finland:budget\":[[\"https://cdn.s-cloud.fi/v1/assets/dam-id/53JGkRBLqvc8W7wYlpDemx.webp\",\"sokoshotels.fi\"]],\"varese-italy:budget\":[[\"https://static.cupid.travel/hotels/81086845.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/611783300.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/611781925.jpg\",\"LiteAPI\"]],\"winnipeg-canada:luxury\":[[\"https://cdn-media.hotelgyms.com/images/gym/optimized/8b33c9f7-d359-44d6-9bd2-fd1130735020.jpg\",\"hotelgyms.com\"]],\"yaounde-cameroon:luxury\":[[\"https://static.cupid.travel/hotels/ex_e20f69f3_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_bb6049b7_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_f2f16987_z.jpg\",\"LiteAPI\"]],\"yaounde-cameroon:standard\":[[\"https://static.cupid.travel/hotels/ex_ea703ecc_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_b4a74a0a_z.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/ex_1f003902_z.jpg\",\"LiteAPI\"]],\"yokohama-japan:standard\":[[\"https://static.cupid.travel/hotels/328071879.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/328074302.jpg\",\"LiteAPI\"],[\"https://static.cupid.travel/hotels/358500699.jpg\",\"LiteAPI\"]]}"),
+	dead: [
+		"b:122865267",
+		"b:135685298",
+		"b:138836231",
+		"b:139224544",
+		"b:148165126",
+		"b:149947019",
+		"b:151332605",
+		"b:152302208",
+		"b:183272338",
+		"b:187500995",
+		"b:187501019",
+		"b:187501047",
+		"b:187501562",
+		"b:201647950",
+		"b:202681624",
+		"b:207559914",
+		"b:207576548",
+		"b:231188148",
+		"b:232634313",
+		"b:239664509",
+		"b:246859927",
+		"b:253880585",
+		"b:271603022",
+		"b:385440487",
+		"b:389392307",
+		"b:402233122",
+		"b:405947523",
+		"b:406925064",
+		"b:406925100",
+		"b:414406703",
+		"b:422196881",
+		"b:423153727",
+		"b:438392628",
+		"b:453179510",
+		"b:467297803",
+		"b:474885979",
+		"b:474885988",
+		"b:474886005",
+		"b:474886006",
+		"b:474946356",
+		"b:474946359",
+		"b:474946374",
+		"b:474946410",
+		"b:474946431",
+		"b:484045341",
+		"b:484045388",
+		"b:484328407",
+		"b:484328426",
+		"b:484328452",
+		"b:484328467",
+		"b:484328478",
+		"b:484880904",
+		"b:484880931",
+		"b:484880965",
+		"b:484880975",
+		"b:484924031",
+		"b:485983965",
+		"b:485984011",
+		"b:485984040",
+		"b:486039914",
+		"b:486039940",
+		"b:486039969",
+		"b:486040102",
+		"b:494385027",
+		"b:494385079",
+		"b:494385103",
+		"b:499577029",
+		"b:504666242",
+		"b:520544263",
+		"b:522322177",
+		"b:532848353",
+		"b:539416647",
+		"b:539417896",
+		"b:547664514",
+		"b:56224735",
+		"b:56224760",
+		"b:56224814",
+		"b:565386062",
+		"b:565386077",
+		"b:565386087",
+		"b:565386090",
+		"b:5708849",
+		"b:57284768",
+		"b:585883027",
+		"b:585883083",
+		"b:605889567",
+		"b:607384067",
+		"b:609718635",
+		"b:618235472",
+		"b:623992755",
+		"b:624657134",
+		"b:662718157",
+		"b:664264244",
+		"b:664264296",
+		"b:664264316",
+		"b:666873565",
+		"b:666950090",
+		"b:666954982",
+		"b:667221155",
+		"b:667221178",
+		"b:669929621",
+		"b:673588531",
+		"b:679727952",
+		"b:682861630",
+		"b:751964709",
+		"b:751964712",
+		"b:751964753",
+		"b:751964764",
+		"b:757298476",
+		"b:761113179",
+		"b:761590737",
+		"b:764369841",
+		"b:764448749",
+		"b:766359733",
+		"b:767853428",
+		"b:773206540",
+		"b:776702591",
+		"b:777351047",
+		"b:781443554",
+		"b:783285028",
+		"b:783285219",
+		"b:783286151",
+		"b:787639950",
+		"b:787906710",
+		"b:787906764",
+		"b:789956776",
+		"b:804278381",
+		"b:804279801",
+		"b:806394002",
+		"b:808116943",
+		"b:816968324",
+		"b:816968378",
+		"b:816968418",
+		"b:816968450",
+		"b:818189586",
+		"b:827684701",
+		"b:827816957",
+		"b:834381976",
+		"b:837374721",
+		"b:838928363",
+		"b:839071851",
+		"b:840354596",
+		"b:848250590",
+		"b:848250621",
+		"b:848250645",
+		"b:848780513",
+		"b:848877635",
+		"b:851905356",
+		"b:8531668",
+		"b:857051562",
+		"b:857051566",
+		"b:857051623",
+		"b:857051642",
+		"b:857051654",
+		"b:857056495",
+		"b:857056500",
+		"b:857056502",
+		"b:857056553",
+		"b:857056580",
+		"b:857099556",
+		"b:857099559",
+		"b:857099608",
+		"b:857099624",
+		"b:857099758",
+		"b:857100402",
+		"b:857100409",
+		"b:857100438",
+		"b:857100443",
+		"b:857652988",
+		"b:857652994",
+		"b:857653001",
+		"b:857653028",
+		"b:869243005",
+		"b:869243038",
+		"b:869243055",
+		"b:869243078",
+		"b:871303964",
+		"b:871324989",
+		"b:872568510",
+		"b:873247327",
+		"b:873474476",
+		"b:876062996",
+		"b:880576355",
+		"b:880673351",
+		"b:881654590",
+		"b:881654594",
+		"b:881654610",
+		"b:882880348",
+		"b:883206661",
+		"b:884867107",
+		"b:886800402",
+		"b:886817310",
+		"b:886817315",
+		"b:887528933",
+		"b:890042949",
+		"b:893130595",
+		"b:893130633",
+		"b:893130662",
+		"b:893130711",
+		"b:894356560",
+		"b:894356986",
+		"b:895380519",
+		"b:896150114",
+		"b:900912214",
+		"b:900912230",
+		"b:900912260",
+		"b:900912384",
+		"b:901447979",
+		"b:901448109",
+		"b:904358511",
+		"b:906700230",
+		"b:906700231",
+		"b:906700234",
+		"b:906700241",
+		"b:907487336",
+		"b:907487448",
+		"b:907487482",
+		"b:908276349",
+		"b:908276351",
+		"b:908276417",
+		"b:908544856",
+		"b:908544858",
+		"b:908544861",
+		"b:908544862",
+		"b:908544882",
+		"b:908645195",
+		"b:908835590",
+		"b:908835598",
+		"b:908835602",
+		"b:908835610",
+		"b:910596397",
+		"b:910596398",
+		"b:910596399",
+		"b:910597119",
+		"b:910597120",
+		"b:910597122",
+		"b:910597127",
+		"b:910597136",
+		"b:910612801",
+		"b:911013796",
+		"b:911354256",
+		"b:912551099",
+		"b:912551111",
+		"b:914456327",
+		"b:914835628",
+		"b:914835629",
+		"b:914835630",
+		"b:914835639",
+		"b:914994808",
+		"b:914997796",
+		"b:915035424",
+		"b:915035425",
+		"b:915035442",
+		"b:915035443",
+		"b:915060104",
+		"b:915060106",
+		"b:915060309",
+		"b:916722559",
+		"b:916722634",
+		"b:916722651",
+		"b:916722663",
+		"b:918058027",
+		"b:918778733",
+		"b:918778737",
+		"b:918778746",
+		"b:918778877",
+		"b:918873332",
+		"b:920624150",
+		"b:920707311",
+		"b:923027091",
+		"b:923027092",
+		"b:923027093",
+		"b:923458307",
+		"b:924193668",
+		"b:924531264",
+		"b:924534751",
+		"b:924541855",
+		"b:924562466",
+		"b:924562468",
+		"b:924562775",
+		"b:924565745",
+		"b:924566438",
+		"b:924676910",
+		"b:924676914",
+		"b:924689918",
+		"b:924714315",
+		"b:925263896",
+		"b:925278112",
+		"b:925278115",
+		"b:925373792",
+		"b:925389907",
+		"b:925389919",
+		"b:925411133",
+		"b:925491204",
+		"b:925798122",
+		"b:925931036",
+		"b:925931037",
+		"b:925956692",
+		"b:925956708",
+		"b:925956710",
+		"b:94978782"
+	]
+};
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
@@ -16930,7 +21171,7 @@ async function cityStats() {
 	}
 	return [...by.values()];
 }
-var TX = {
+var TX$2 = {
 	en: {
 		od_t: "Open data: hotel picks for 1,295 cities",
 		od_d: "Download the Top3Hotels dataset (CSV or JSON): three hotel picks per city with guest scores, review counts and reference prices. Free to reuse under CC BY 4.0.",
@@ -17007,7 +21248,7 @@ var TX = {
 		nine_d: "Todos los hoteles de nuestras elecciones con nota de 9 o más y precio de referencia por debajo de 60 euros la noche.",
 		nine_h: "Nota de 9 o más, por menos de 60 euros la noche",
 		nine_lead: "Hoteles con nota de huéspedes de 9/10 o más y precio de referencia por debajo de 60 euros la noche, de nuestras elecciones en 1.295 ciudades.",
-		country_t: (c) => `Hoteles con mejor relación calidad-precio en ${c}, ciudad a ciudad`,
+		country_t: (c) => `Hoteles con mejor calidad-precio en ${c}`,
 		country_d: (c) => `Dónde cuesta menos una buena noche de hotel en ${c}: nuestros hoteles económico, calidad-precio y de lujo en cada ciudad, con precios de referencia.`,
 		country_h: (c) => `${c}: dónde cuesta menos un buen hotel`,
 		country_lead: (c, n) => `${n} ciudades de ${c}, ordenadas por el precio de nuestro hotel calidad-precio.`,
@@ -17016,7 +21257,7 @@ var TX = {
 		more: "Ver los tres hoteles"
 	}
 };
-var tx = (L) => TX[L] ?? TX.en;
+var tx = (L) => TX$2[L] ?? TX$2.en;
 var GROWTH_LANGS = ["en", "es"];
 var fmt = (n) => n == null ? "" : money(n);
 var sc = (n) => n == null ? "" : n.toFixed(1);
@@ -17027,7 +21268,7 @@ function table(L, rows, cols) {
 		return `<td>${p?.nightly ? `<b>${fmt(p.nightly)}</b> <small>${esc(p.name)}${p.score ? ` · ${sc(p.score)}` : ""}</small>` : ""}</td>`;
 	}).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
-var CSS$1 = `<style>.ix{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 26px}.ix th,.ix td{padding:9px 8px;border-bottom:1px solid rgba(127,127,127,.22);text-align:left;vertical-align:top}.ix th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}.ix small{opacity:.7}.ix b{white-space:nowrap}.gw{max-width:980px;margin:0 auto;padding:28px 16px 40px}.gw h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}.gw .lead{font-size:19px;opacity:.85;max-width:720px}.gw h2{margin:34px 0 8px}.dl{display:inline-block;margin:6px 10px 6px 0;padding:12px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;font-weight:700}.note{font-size:14px;opacity:.75}</style>`;
+var CSS$1 = `<style>.ix{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 26px}.ix th,.ix td{padding:9px 8px;border-bottom:1px solid rgba(127,127,127,.22);text-align:left;vertical-align:top}.ix th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}.ix small{opacity:.7}.ix b{white-space:nowrap}.gw{max-width:980px;margin:0 auto;padding:28px 16px 40px}.gw h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}.gw .lead{font-size:19px;color:var(--muted);max-width:720px}.gw h2{margin:34px 0 8px}.dl{display:inline-block;margin:6px 10px 6px 0;padding:12px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;font-weight:700}.note{font-size:14px;color:var(--muted)}</style>`;
 async function openDataPage(L) {
 	const t = tx(L);
 	const n = (await allPicks()).length;
@@ -17155,18 +21396,31 @@ async function countryValuePage(L, cslug) {
 	const st = (await cityStats()).filter((s) => s.cslug === cslug && s.value?.nightly);
 	if (st.length < 3) return null;
 	st.sort((a, b) => a.value.nightly - b.value.nightly);
-	const c = st[0].country;
-	const body = `${CSS$1}<main class="gw"><h1>${esc(t.country_h(c))}</h1><p class="lead">${esc(t.country_lead(c, st.length))}</p>${table(L, st, [
+	const c = await countryLocal(cslug, L, st[0].country);
+	const body = `${CSS$1}<main class="gw"><p class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, `/country/${cslug}`)}">${esc(c)}</a></p><h1>${esc(t.country_h(c))}</h1><p class="lead">${esc(t.country_lead(c, st.length))}</p>${table(L, st, [
 		"budget",
 		"value",
 		"lux"
-	])}<p class="note">${esc(t.od_p3)}</p></main>`;
+	])}<p><a class="dl" href="${P(L, `/country/${cslug}`)}">${esc(L === "es" ? `Todas las ciudades de ${c}` : `All our cities in ${c}`)}</a></p><p class="note">${esc(t.od_p3)}</p></main>`;
+	const ld = [{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: t.country_h(c),
+		itemListElement: st.map((x, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: `${x.value.name}, ${x.city}`,
+			url: SITE + P(L, "/" + x.slug)
+		}))
+	}];
+	const cheapest = st[0];
 	return page({
 		L,
-		title: `${t.country_t(c)} | Top3Hotels`,
-		description: t.country_d(c),
+		title: `${t.country_t(c)} (2026)`,
+		description: `${t.country_d(c)} ${L === "es" ? "Más barato" : "Cheapest"}: ${cheapest.city}, ${fmt(cheapest.value.nightly)}.`,
 		path: `/best-value/${cslug}`,
 		body,
+		ld,
 		alts: GROWTH_LANGS
 	});
 }
@@ -17175,6 +21429,22 @@ async function countryValueSlugs() {
 	const n = /* @__PURE__ */ new Map();
 	for (const s of st) if (s.value?.nightly) n.set(s.cslug, (n.get(s.cslug) ?? 0) + 1);
 	return [...n].filter(([, k]) => k >= 3).map(([c]) => c);
+}
+/** Every pick in plain text, for AI assistants (same data as /data/top3hotels.json). */
+async function llmsFullTxt() {
+	const st = await cityStats();
+	const line = (lab, x) => x ? `- ${lab}: ${x.name}${x.stars ? ` · ${x.stars}-star` : ""}${x.score ? ` · guest score ${x.score.toFixed(1)}/10` : ""}${x.reviews ? ` (${x.reviews.toLocaleString("en-US")} reviews)` : ""}${x.nightly ? ` · reference €${Math.round(x.nightly)} a night` : ""}` : "";
+	const rows = [...st].sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city));
+	return `# Top3Hotels: every pick (${rows.length} cities)
+
+> Three hotels per city, chosen by public rules (${SITE}/how-we-choose): Budget (cheapest well-rated room), Best Value (best balance of guest score and price) and Luxury (best-reviewed five-star or upscale hotel). Guest scores and review counts are Booking.com snapshots; reference prices are per night for 10 to 12 Nov 2026, 2 adults, not live quotes. Licence CC BY 4.0: credit "Top3Hotels (top3hotels.com)" with a link.
+
+${rows.map((s) => `## ${s.city}, ${s.country}\n${SITE}/${s.slug}\n${[
+		line("Budget", s.budget),
+		line("Best Value", s.value),
+		line("Luxury", s.lux)
+	].filter(Boolean).join("\n")}`).join("\n\n")}
+`;
 }
 async function llmsTxt() {
 	const st = await cityStats();
@@ -17197,6 +21467,7 @@ async function llmsTxt() {
 ${top.map((s) => `- [${s.city}, ${s.country}](${SITE}/${s.slug})`).join("\n")}
 
 ## All cities
+- [Every pick in plain text](${SITE}/llms-full.txt)
 - [Destinations](${SITE}/destinations) and [sitemap](${SITE}/sitemap.xml)
 
 Please credit "Top3Hotels (top3hotels.com)" with a link when you use these picks or numbers.
@@ -17316,7 +21587,7 @@ ${r ? `<div style="border:1px solid rgba(127,127,127,.25);border-radius:18px;pad
 		path,
 		body,
 		alts: GROWTH_LANGS,
-		noindex: q.has("max")
+		noindex: true
 	});
 }
 function splitPage(L) {
@@ -17331,7 +21602,8 @@ function splitPage(L) {
 		description: t.s_d,
 		path: "/split",
 		body,
-		alts: GROWTH_LANGS
+		alts: GROWTH_LANGS,
+		noindex: true
 	});
 }
 async function awardsPage(L) {
@@ -17372,8 +21644,10 @@ var TD = {
 		row_tags: "Good for",
 		pick: "Which one?",
 		pick_p: (b, v, l) => `Choose ${b} if price matters most, ${v} for the best balance of score and price, and ${l} if you want the best-reviewed upscale stay.`,
-		near_t: (s, c) => `Hotels near ${s}, ${c}: our picks and distances`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hotels near ${s}: walking distances` : `Hotels near ${s}, ${c}: walking distances`,
 		near_d: (s, c) => `How far our three hotel picks in ${c} are from ${s}, with straight-line distance and an estimated walk.`,
+		near_d2: (s, h, d, w, c) => `Closest of our picks to ${s}: ${h}, ${d}${w ? ` (about ${w} on foot)` : ""}. Budget, best value and luxury hotels in ${c} with guest scores and prices.`,
+		cmp_city: (c) => `Hotels in ${c}`,
 		near_h: (s) => `Hotels near ${s}`,
 		near_lead: (s, c) => `Our three picks in ${c}, sorted by distance to ${s}. Distances are straight-line from map coordinates; real walking routes are longer.`,
 		dist: "Distance",
@@ -17398,8 +21672,10 @@ var TD = {
 		row_tags: "Bueno para",
 		pick: "¿Cuál elegir?",
 		pick_p: (b, v, l) => `Elige ${b} si lo que más importa es el precio, ${v} para el mejor equilibrio entre nota y precio, y ${l} si quieres la estancia superior mejor valorada.`,
-		near_t: (s, c) => `Hoteles cerca de ${s}, ${c}: nuestras elecciones y distancias`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hoteles cerca de ${s}: distancias a pie` : `Hoteles cerca de ${s}, ${c}: distancias a pie`,
 		near_d: (s, c) => `A qué distancia están nuestros tres hoteles de ${c} de ${s}, en línea recta y con un paseo estimado.`,
+		near_d2: (s, h, d, w, c) => `El más cercano de nuestros hoteles a ${s}: ${h}, a ${d}${w ? ` (unos ${w} a pie)` : ""}. Hoteles económico, calidad-precio y de lujo en ${c} con notas y precios.`,
+		cmp_city: (c) => `Hoteles en ${c}`,
 		near_h: (s) => `Hoteles cerca de ${s}`,
 		near_lead: (s, c) => `Nuestros tres hoteles en ${c}, ordenados por distancia a ${s}. Las distancias son en línea recta según coordenadas; a pie el camino real es más largo.`,
 		dist: "Distancia",
@@ -17433,7 +21709,7 @@ async function comparePicksPage(L, slug) {
 	const f = await cityFull(slug);
 	if (!f || f.hotels.length < 3) return null;
 	const t = td(L);
-	const c = f.ix.city;
+	const c = cityName(f.ix, L);
 	const hs = f.hotels;
 	const row = (label, fn) => `<tr><th scope="row">${label}</th>${hs.map((h) => `<td>${fn(h)}</td>`).join("")}</tr>`;
 	const list = (a) => a?.length ? `<ul style="margin:0;padding-left:18px">${a.slice(0, 3).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
@@ -17455,46 +21731,129 @@ ${row(t.row_tags, (h) => esc((h.extras?.tags ?? []).join(", ")))}
 		description: t.cmp_d(c),
 		path: `/compare-picks/${slug}`,
 		body,
-		alts: GROWTH_LANGS
+		alts: GROWTH_LANGS,
+		noindex: true
 	});
 }
-async function nearPage(L, slug, sight) {
-	const f = await cityFull(slug);
-	if (!f) return null;
-	const sights = f.cd.extras?.sights ?? [];
-	const s = sights.find((x) => slugify(x.name) === sight);
-	if (!s) return null;
-	const t = td(L);
-	const c = f.ix.city;
-	const rows = f.hotels.filter((h) => h.coordinates).map((h) => ({
+/** Sights of a city, without duplicates (two sights can share a slug). */
+function sightsOf(cd) {
+	const seen = /* @__PURE__ */ new Set();
+	return (cd?.extras?.sights ?? []).filter((x) => {
+		const k = slugify(x.name);
+		if (!k || seen.has(k) || typeof x.lat !== "number") return false;
+		seen.add(k);
+		return true;
+	});
+}
+function nearRows(f, s) {
+	return f.hotels.filter((h) => h.coordinates).map((h) => ({
 		h,
 		d: km$1(s, {
 			lat: h.coordinates.latitude,
 			lng: h.coordinates.longitude
 		})
 	})).sort((a, b) => a.d - b.d);
+}
+/** A "hotels near X" page is only worth indexing when one of our picks is really near (walkable). */
+var nearOk = (rows) => rows.length > 0 && rows[0].d <= 2.5;
+async function nearPage(L, slug, sight) {
+	const f = await cityFull(slug);
+	if (!f) return null;
+	const sights = sightsOf(f.cd);
+	const s = sights.find((x) => slugify(x.name) === sight);
+	if (!s) return null;
+	const t = td(L);
+	const c = cityName(f.ix, L);
+	const rows = nearRows(f, s);
 	if (!rows.length) return null;
 	const walk = (d) => Math.round(d * 1.3 * 60 / 4.8);
-	const body = `${CSS$1}<main class="gw"><h1>${esc(t.near_h(s.name))}</h1><p class="lead">${esc(t.near_lead(s.name, c))}</p>
-<div style="overflow-x:auto"><table class="ix"><thead><tr><th>Hotel</th><th>${t.dist}</th><th>${t.walk}</th><th>${tx(L).score}</th><th>${tx(L).night}</th></tr></thead><tbody>${rows.map(({ h, d }) => `<tr><td><b>${esc(h.name)}</b> <small>${esc(CATL(L, h.category))}</small></td><td>${d < 1 ? Math.round(d * 1e3) + " m" : d.toFixed(1).replace(".", L === "es" ? "," : ".") + " km"}</td><td>${walk(d) > 45 ? `<small>${t.far}</small>` : `${walk(d)} ${t.min}`}</td><td>${h.booking?.score ? sc(h.booking.score) : ""}</td><td>${h.offer?.nightly ? `<b>${fmt(h.offer.nightly)}</b>` : ""}</td></tr>`).join("")}</tbody></table></div>
-<p>${t.closest}: <b>${esc(rows[0].h.name)}</b>.</p>
-<h2>${t.nearby}</h2><p>${sights.filter((x) => x !== s).map((x) => `<a href="${P(L, `/near/${slug}/${slugify(x.name)}`)}">${esc(x.name)}</a>`).join(" · ")}</p>
-<p><a class="dl" href="${P(L, "/" + slug)}">${t.all}</a> <a class="dl" href="${P(L, "/compare-picks/" + slug)}">${td(L).cmp_h(c)}</a></p><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	const dist = (d) => d < 1 ? Math.round(d * 1e3) + " m" : d.toFixed(1).replace(".", L === "es" ? "," : ".") + " km";
+	const others = sights.filter((x) => x !== s).filter((x) => nearOk(nearRows(f, x)));
+	const cheapest = [...rows].filter((r) => r.h.offer?.nightly).sort((a, b) => a.h.offer.nightly - b.h.offer.nightly)[0];
+	const faq = L === "es" ? [[`¿Qué hotel está más cerca de ${s.name}?`, `De nuestros tres hoteles en ${c}, ${rows[0].h.name} es el más cercano, a ${dist(rows[0].d)} en línea recta${walk(rows[0].d) <= 45 ? ` (unos ${walk(rows[0].d)} minutos a pie)` : ""}.`], ...cheapest ? [[`¿Cuál es el hotel más barato cerca de ${s.name}?`, `${cheapest.h.name}, a ${dist(cheapest.d)}, con un precio de referencia de ${fmt(cheapest.h.offer.nightly)} la noche.`]] : []] : [[`Which hotel is closest to ${s.name}?`, `Of our three picks in ${c}, ${rows[0].h.name} is the closest, ${dist(rows[0].d)} in a straight line${walk(rows[0].d) <= 45 ? ` (about ${walk(rows[0].d)} minutes on foot)` : ""}.`], ...cheapest ? [[`What is the cheapest hotel near ${s.name}?`, `${cheapest.h.name}, ${dist(cheapest.d)} away, with a reference price of ${fmt(cheapest.h.offer.nightly)} a night.`]] : []];
+	const body = `${CSS$1}<main class="gw"><p class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/" + slug)}">${esc(t.cmp_city(c))}</a> › ${esc(s.name)}</p><h1>${esc(t.near_h(s.name))}</h1><p class="lead">${esc(t.near_lead(s.name, c))}</p>
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>Hotel</th><th>${t.dist}</th><th>${t.walk}</th><th>${tx(L).score}</th><th>${tx(L).night}</th></tr></thead><tbody>${rows.map(({ h, d }) => `<tr><td><b>${esc(h.name)}</b> <small>${esc(CATL(L, h.category))}</small></td><td>${dist(d)}</td><td>${walk(d) > 45 ? `<small>${t.far}</small>` : `${walk(d)} ${t.min}`}</td><td>${h.booking?.score ? sc(h.booking.score) : ""}</td><td>${h.offer?.nightly ? `<b>${fmt(h.offer.nightly)}</b>` : ""}</td></tr>`).join("")}</tbody></table></div>
+<p>${t.closest}: <b>${esc(rows[0].h.name)}</b> (${dist(rows[0].d)}). <a href="https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lng}" rel="noopener" target="_blank">${L === "es" ? "Ver en el mapa" : "See on the map"} ↗</a></p>
+${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}
+${others.length ? `<h2>${t.nearby}</h2><p>${others.map((x) => `<a href="${P(L, `/near/${slug}/${slugify(x.name)}`)}">${esc(t.near_h(x.name))}</a>`).join(" · ")}</p>` : ""}
+<p><a class="dl" href="${P(L, "/" + slug)}">${t.all}</a></p><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+	const w0 = walk(rows[0].d);
+	const ld = [
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: SITE + P(L, "/")
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: t.cmp_city(c),
+					item: SITE + P(L, "/" + slug)
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: t.near_h(s.name),
+					item: SITE + P(L, `/near/${slug}/${sight}`)
+				}
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: faq.map(([q, a]) => ({
+				"@type": "Question",
+				name: q,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: a
+				}
+			}))
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: t.near_h(s.name),
+			about: {
+				"@type": "TouristAttraction",
+				name: s.name,
+				geo: {
+					"@type": "GeoCoordinates",
+					latitude: s.lat,
+					longitude: s.lng
+				}
+			},
+			itemListElement: rows.map(({ h, d }, i) => ({
+				"@type": "ListItem",
+				position: i + 1,
+				name: `${h.name} (${dist(d)})`,
+				url: SITE + P(L, "/" + slug)
+			}))
+		}
+	];
 	return page({
 		L,
-		title: `${t.near_t(s.name, c)} | Top3Hotels`,
-		description: t.near_d(s.name, c),
+		title: t.near_t(s.name, c),
+		description: t.near_d2(s.name, rows[0].h.name, dist(rows[0].d), w0 <= 45 ? `${w0} min` : "", c),
 		path: `/near/${slug}/${sight}`,
 		body,
-		alts: GROWTH_LANGS
+		ld,
+		alts: GROWTH_LANGS,
+		noindex: !nearOk(rows)
 	});
 }
 async function seoPaths() {
-	const { index, cx } = await data();
+	const { index } = await data();
 	const out = [];
 	for (const c of index) {
-		out.push(`/compare-picks/${c.slug}`);
-		for (const s of cx[c.id]?.sights ?? []) out.push(`/near/${c.slug}/${slugify(s.name)}`);
+		const f = await cityFull(c.slug);
+		if (!f) continue;
+		for (const s of sightsOf(f.cd)) if (nearOk(nearRows(f, s))) out.push(`/near/${c.slug}/${slugify(s.name)}`);
 	}
 	return out;
 }
@@ -17746,35 +22105,824 @@ self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.a
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET'||r.mode!=='navigate'||new URL(r.url).origin!==location.origin)return;
 e.respondWith(fetch(r).then(res=>{if(res.ok){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||caches.match('/'))))});`;
 var MANIFEST = JSON.stringify({
-	name: "Top3Hotels",
+	id: "/",
+	name: "Top3Hotels: the 3 best hotels in any city",
 	short_name: "Top3Hotels",
 	description: "Three hotels per city, chosen by public rules: budget, best value and luxury.",
+	lang: "en",
+	dir: "ltr",
 	start_url: "/?source=pwa",
 	scope: "/",
 	display: "standalone",
-	background_color: "#f7f8fa",
-	theme_color: "#0e1520",
+	orientation: "portrait",
+	background_color: "#faf9f5",
+	theme_color: "#0b1122",
+	categories: ["travel", "lifestyle"],
 	icons: [
 		{
-			src: "/icon-192.png",
+			src: "/brand/icon.svg?v=6",
+			sizes: "any",
+			type: "image/svg+xml"
+		},
+		{
+			src: "/brand/icon-192.png?v=6",
 			sizes: "192x192",
-			type: "image/png"
+			type: "image/png",
+			purpose: "any"
 		},
 		{
-			src: "/icon-512.png",
+			src: "/brand/icon-512.png?v=6",
 			sizes: "512x512",
-			type: "image/png"
+			type: "image/png",
+			purpose: "any"
 		},
 		{
-			src: "/icon-512.png",
+			src: "/brand/icon-maskable-512.png?v=6",
 			sizes: "512x512",
 			type: "image/png",
 			purpose: "maskable"
 		}
+	],
+	shortcuts: [
+		{
+			name: "All destinations",
+			url: "/destinations?source=pwa"
+		},
+		{
+			name: "Saved hotels",
+			url: "/saved?source=pwa"
+		},
+		{
+			name: "Cheapest cities",
+			url: "/cheap-cities?source=pwa"
+		}
 	]
 });
-var CSS_DP = ".t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-btn.empty{color:#7a8594;font-weight:500}\n.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}\n.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}\nhtml.t3dp-open,html.t3dp-open body{overflow:hidden}\nhtml.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}\n.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}\n.t3dp[hidden]{display:none}\n.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}\n.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}\n@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}\n.t3dp-h{display:flex;align-items:center;gap:8px}\n.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}\n.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}\n.t3dp-ar{color:#9aa3af}\n.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}\n.t3dp-c:hover{background:#f1f3f6}\n.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}\n.t3dp-wk{display:none}\n.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}\n.t3dp-nav[hidden]{display:none}\n.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}\n.t3dp-nav button:disabled{opacity:.3;cursor:default}\n.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}\n.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}\n.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}\n.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}\n.t3dp-g button:hover:not(:disabled){background:#f1f3f6}\n.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}\n.t3dp-g button.td{font-weight:800;color:#d83b51}\n.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}\n.t3dp-g button.pv{background:#fdf1f3}\n.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}\n.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}\n.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}\n.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}\n.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}\n.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}\n.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}\n.t3dp-ok:disabled{background:#e9b9c1;cursor:default}\n@media (max-width:720px){\n.t3dp{align-items:flex-end}\n.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}\n@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}\n.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}\n.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}\n.t3dp-g button{height:46px;font-size:15px}\n.t3dp-ok{flex:none}\n}\n@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}\n/* destination suggestions must sit above the date fields */\n.search .field:first-child{z-index:40}\n.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}\nbody:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}\nbody.t3-herovis #v2-sticky{transform:translateY(160%)!important}\n\n.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}\n@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}\n.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}\n@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}\n";
+var CSS_DP = ".t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-btn.empty{color:#4f5b6b;font-weight:500}\n.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}\n.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}\nhtml.t3dp-open,html.t3dp-open body{overflow:hidden}\nhtml.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}\n.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}\n.t3dp[hidden]{display:none}\n.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}\n.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}\n@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}\n.t3dp-h{display:flex;align-items:center;gap:8px}\n.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}\n.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}\n.t3dp-ar{color:#9aa3af}\n.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}\n.t3dp-c:hover{background:#f1f3f6}\n.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}\n.t3dp-wk{display:none}\n.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}\n.t3dp-nav[hidden]{display:none}\n.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}\n.t3dp-nav button:disabled{opacity:.3;cursor:default}\n.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}\n.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}\n.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}\n.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}\n.t3dp-g button:hover:not(:disabled){background:#f1f3f6}\n.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}\n.t3dp-g button.td{font-weight:800;color:#d83b51}\n.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}\n.t3dp-g button.pv{background:#fdf1f3}\n.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}\n.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}\n.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}\n.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}\n.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}\n.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}\n.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}\n.t3dp-ok:disabled{background:#e9b9c1;cursor:default}\n@media (max-width:720px){\n.t3dp{align-items:flex-end}\n.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}\n@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}\n.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}\n.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}\n.t3dp-g button{height:46px;font-size:15px}\n.t3dp-ok{flex:none}\n}\n@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}\n/* destination suggestions must sit above the date fields */\n.search .field:first-child{z-index:40}\n.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}\nbody:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}\nbody.t3-herovis #v2-sticky{transform:translateY(160%)!important}\n\n.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}\n@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}\n.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}\n@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}\n";
 var JS_DP = "/* Top3Hotels range date picker: one sheet for check-in + check-out, replaces the native date pickers.\n   The real <input type=date> fields stay in the DOM (hidden) so every existing handler keeps working. */\n(function () {\n  if (window.T3DP) return;\n  var L = (document.documentElement.lang || 'en').slice(0, 2);\n  var TX = {\n    en: { add: 'Add date', ci: 'Check in', co: 'Check out', n1: 'night', n: 'nights', clear: 'Clear', done: 'Done', pickCo: 'Now pick your check-out', pickCi: 'Pick your check-in', max: 'Max. 30 nights' },\n    es: { add: 'Elegir fecha', ci: 'Entrada', co: 'Salida', n1: 'noche', n: 'noches', clear: 'Borrar', done: 'Listo', pickCo: 'Ahora elige la salida', pickCi: 'Elige la entrada', max: 'Máx. 30 noches' },\n    de: { add: 'Datum wählen', ci: 'Anreise', co: 'Abreise', n1: 'Nacht', n: 'Nächte', clear: 'Löschen', done: 'Fertig', pickCo: 'Jetzt Abreise wählen', pickCi: 'Anreise wählen', max: 'Max. 30 Nächte' },\n    fr: { add: 'Choisir', ci: 'Arrivée', co: 'Départ', n1: 'nuit', n: 'nuits', clear: 'Effacer', done: 'OK', pickCo: 'Choisissez le départ', pickCi: \"Choisissez l'arrivée\", max: '30 nuits max.' },\n    it: { add: 'Scegli data', ci: 'Arrivo', co: 'Partenza', n1: 'notte', n: 'notti', clear: 'Cancella', done: 'Fatto', pickCo: 'Ora scegli la partenza', pickCi: \"Scegli l'arrivo\", max: 'Max 30 notti' },\n    pt: { add: 'Escolher', ci: 'Entrada', co: 'Saída', n1: 'noite', n: 'noites', clear: 'Limpar', done: 'Pronto', pickCo: 'Agora escolha a saída', pickCi: 'Escolha a entrada', max: 'Máx. 30 noites' },\n    da: { add: 'Vælg dato', ci: 'Indtjekning', co: 'Udtjekning', n1: 'nat', n: 'nætter', clear: 'Ryd', done: 'Færdig', pickCo: 'Vælg nu udtjekning', pickCi: 'Vælg indtjekning', max: 'Maks. 30 nætter' }\n  };\n  var t = TX[L] || TX.en;\n  var loc = document.documentElement.lang || 'en';\n  var DAY = 864e5;\n  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }\n  function parse(s) { if (!s || !/^\\d{4}-\\d{2}-\\d{2}$/.test(s)) return null; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }\n  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }\n  function nights(a, b) { return Math.round((b - a) / DAY); }\n  var fmtShort = new Intl.DateTimeFormat(loc, { weekday: 'short', day: 'numeric', month: 'short' });\n  var fmtMonth = new Intl.DateTimeFormat(loc, { month: 'long', year: 'numeric' });\n  var wk = []; for (var i = 0; i < 7; i++) wk.push(new Intl.DateTimeFormat(loc, { weekday: 'narrow' }).format(new Date(2024, 0, 1 + i)));\n  function fire(el) { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }\n\n  /* sheet */\n  var sh, st = {};\n  function build() {\n    sh = document.createElement('div'); sh.className = 't3dp'; sh.hidden = true;\n    sh.innerHTML = '<div class=\"t3dp-bd\" data-x></div><div class=\"t3dp-p\" role=\"dialog\" aria-modal=\"true\" aria-label=\"' + t.ci + ' / ' + t.co + '\">' +\n      '<div class=\"t3dp-h\"><button type=\"button\" class=\"t3dp-s\" data-s=\"0\"><small>' + t.ci + '</small><b></b></button><span class=\"t3dp-ar\">→</span><button type=\"button\" class=\"t3dp-s\" data-s=\"1\"><small>' + t.co + '</small><b></b></button><button type=\"button\" class=\"t3dp-c\" data-x aria-label=\"Close\">✕</button></div>' +\n      '<p class=\"t3dp-hint\" aria-live=\"polite\"></p><div class=\"t3dp-wk\"></div><div class=\"t3dp-nav\"><button type=\"button\" data-m=\"-1\" aria-label=\"Previous month\">‹</button><button type=\"button\" data-m=\"1\" aria-label=\"Next month\">›</button></div><div class=\"t3dp-ms\"></div>' +\n      '<div class=\"t3dp-f\"><button type=\"button\" class=\"t3dp-clr\">' + t.clear + '</button><span class=\"t3dp-n\"></span><button type=\"button\" class=\"t3dp-ok\">' + t.done + '</button></div></div>';\n    document.body.appendChild(sh);\n    sh.querySelector('.t3dp-wk').innerHTML = wk.map(function (w) { return '<span>' + w + '</span>'; }).join('');\n    sh.addEventListener('click', function (e) {\n      var x = e.target.closest('[data-x]'); if (x) return close();\n      var d = e.target.closest('button[data-d]'); if (d && !d.disabled) return pick(parse(d.dataset.d));\n      var m = e.target.closest('[data-m]'); if (m) { st.off = Math.max(0, st.off + (+m.dataset.m)); return render(); }\n      var s = e.target.closest('[data-s]'); if (s) { st.phase = +s.dataset.s; if (st.phase === 0) { } return render(); }\n      if (e.target.closest('.t3dp-clr')) { st.a = st.b = null; st.phase = 0; return render(); }\n      if (e.target.closest('.t3dp-ok')) return apply(true);\n    });\n    sh.addEventListener('mouseover', function (e) { var d = e.target.closest('button[data-d]'); if (d && st.phase === 1 && st.a) { st.hov = parse(d.dataset.d); paint(); } });\n    document.addEventListener('keydown', function (e) { if (!sh.hidden && e.key === 'Escape') close(); });\n  }\n  function monthHTML(y, m) {\n    var first = new Date(y, m, 1), lead = (first.getDay() + 6) % 7, days = new Date(y, m + 1, 0).getDate(), td = today(), h = '';\n    for (var i = 0; i < lead; i++) h += '<span></span>';\n    for (var d = 1; d <= days; d++) {\n      var dt = new Date(y, m, d), k = iso(dt), dis = dt < td || (st.phase === 1 && st.a && dt > st.a && nights(st.a, dt) > 30);\n      h += '<button type=\"button\" data-d=\"' + k + '\"' + (dis ? ' disabled' : '') + (+dt === +td ? ' class=\"td\"' : '') + ' aria-label=\"' + fmtShort.format(dt) + '\">' + d + '</button>';\n    }\n    return '<div class=\"t3dp-m\"><h4>' + fmtMonth.format(first) + '</h4><div class=\"t3dp-g\">' + h + '</div></div>';\n  }\n  function render() {\n    var base = today(), many = matchMedia('(max-width: 720px)').matches, n = many ? 12 : 2, h = '';\n    for (var i = 0; i < n; i++) { var dm = new Date(base.getFullYear(), base.getMonth() + (many ? 0 : st.off) + i, 1); h += monthHTML(dm.getFullYear(), dm.getMonth()); }\n    var ms = sh.querySelector('.t3dp-ms'); ms.innerHTML = h;\n    sh.querySelector('.t3dp-nav').hidden = true;\n    if (!many) {\n      var hs = ms.querySelectorAll('.t3dp-m h4');\n      hs[0].insertAdjacentHTML('afterbegin', '<button type=\"button\" class=\"t3dp-mv l\" data-m=\"-1\" aria-label=\"Previous month\"' + (st.off <= 0 ? ' disabled' : '') + '>‹</button>');\n      hs[hs.length - 1].insertAdjacentHTML('beforeend', '<button type=\"button\" class=\"t3dp-mv r\" data-m=\"1\" aria-label=\"Next month\">›</button>');\n    }\n    paint();\n  }\n  function paint() {\n    var a = st.a, b = st.b || (st.phase === 1 && a && st.hov && st.hov > a ? st.hov : null);\n    sh.querySelectorAll('button[data-d]').forEach(function (el) {\n      var d = parse(el.dataset.d), on = a && +d === +a, off = b && +d === +b;\n      el.classList.toggle('a', !!on); el.classList.toggle('b', !!off); el.classList.toggle('lone', !!(on && !b));\n      el.classList.toggle('in', !!(a && b && d > a && d < b));\n      el.classList.toggle('pv', !!(a && !st.b && b && d > a && d <= b));\n    });\n    var s = sh.querySelectorAll('.t3dp-s');\n    s[0].querySelector('b').textContent = st.a ? fmtShort.format(st.a) : t.add;\n    s[1].querySelector('b').textContent = st.b ? fmtShort.format(st.b) : t.add;\n    s[0].classList.toggle('on', st.phase === 0); s[1].classList.toggle('on', st.phase === 1);\n    var nn = st.a && st.b ? nights(st.a, st.b) : 0;\n    sh.querySelector('.t3dp-n').textContent = nn ? nn + ' ' + (nn === 1 ? t.n1 : t.n) : '';\n    sh.querySelector('.t3dp-hint').textContent = st.phase === 1 && st.a && !st.b ? t.pickCo + ' · ' + t.max : (!st.a ? t.pickCi : '');\n    sh.querySelector('.t3dp-ok').disabled = !(st.a && st.b);\n  }\n  function pick(d) {\n    if (st.phase === 0 || !st.a || d <= st.a) { st.a = d; st.b = null; st.phase = 1; st.hov = null; render(); return; }\n    st.b = d; st.hov = null; paint();\n    apply(false); setTimeout(close, 260);\n  }\n  function apply(andClose) {\n    if (!st.a || !st.b || !st.pair) return;\n    var ci = st.pair.ci, co = st.pair.co;\n    ci.value = iso(st.a); fire(ci);\n    co.value = iso(st.b); fire(co);\n    sync(st.pair);\n    try { document.dispatchEvent(new CustomEvent('t3:dates', { detail: { root: st.pair.root, ci: ci.value, co: co.value } })); } catch (_) {}\n    if (andClose) close();\n  }\n  function open(pair, phase) {\n    if (!sh) build();\n    st.pair = pair; st.a = parse(pair.ci.value); st.b = parse(pair.co.value);\n    if (st.a && st.a < today()) { st.a = st.b = null; }\n    st.phase = phase === 1 && st.a ? 1 : 0; if (st.phase === 0) { } st.off = 0; st.hov = null;\n    if (st.a) { var td = today(); st.off = Math.max(0, (st.a.getFullYear() - td.getFullYear()) * 12 + st.a.getMonth() - td.getMonth()); }\n    sh.hidden = false; document.documentElement.classList.add('t3dp-open');\n    render();\n    if (matchMedia('(max-width: 720px)').matches && st.a) {\n      var el = sh.querySelector('[data-d=\"' + iso(st.a) + '\"]'); if (el) { var m = el.closest('.t3dp-m'); if (m) m.scrollIntoView({ block: 'start' }); }\n    } else sh.querySelector('.t3dp-ms').scrollTop = 0;\n  }\n  function close() { if (!sh) return; sh.hidden = true; document.documentElement.classList.remove('t3dp-open'); }\n\n  /* attach to every check-in/check-out pair */\n  function label(el) { var d = parse(el.value); return d ? fmtShort.format(d) : t.add; }\n  function sync(pair) { pair.bi.textContent = label(pair.ci); pair.bo.textContent = label(pair.co); pair.bi.classList.toggle('empty', !pair.ci.value); pair.bo.classList.toggle('empty', !pair.co.value); }\n  function q(root, k) { return root.querySelector('#' + k + ',[name=' + k + '],[data-sync=' + k + ']'); }\n  function attach(root) {\n    var ci = q(root, 'checkin'), co = q(root, 'checkout');\n    if (!ci || !co || ci.dataset.t3dp || ci.type !== 'date') return;\n    var pair = { ci: ci, co: co, root: root }; root.__t3pair = pair;\n    [ci, co].forEach(function (inp, k) {\n      inp.dataset.t3dp = '1'; inp.classList.add('t3dp-real'); inp.style.display = 'none'; inp.tabIndex = -1; inp.setAttribute('aria-hidden', 'true');\n      var b = document.createElement('button'); b.type = 'button'; b.className = 't3dp-btn';\n      b.setAttribute('aria-haspopup', 'dialog'); b.setAttribute('aria-label', k ? t.co : t.ci);\n      inp.insertAdjacentElement('afterend', b);\n      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(pair, k); });\n      inp.addEventListener('change', function () { sync(pair); }); inp.addEventListener('input', function () { sync(pair); });\n      if (k) pair.bo = b; else pair.bi = b;\n    });\n    var lab = root.querySelectorAll('label[for=\"checkin\"],label[for=\"checkout\"]');\n    lab.forEach(function (l) { l.addEventListener('click', function (e) { e.preventDefault(); open(pair, l.getAttribute('for') === 'checkout' ? 1 : 0); }); });\n    sync(pair);\n    setInterval(function () { sync(pair); }, 1500);\n  }\n  function scan() { document.querySelectorAll('.search,.t3-citybar,form').forEach(attach); }\n  window.T3DP = { scan: scan, open: open, openFor: function (root, ph) { scan(); if (root && root.__t3pair) open(root.__t3pair, ph || 0); } };\n  var hero = document.querySelector('.hero');\n  if (hero && document.querySelector('.hero .search') && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { document.body.classList.toggle('t3-herovis', es[0].isIntersecting); }, { threshold: 0.15 }).observe(hero);\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();\n  new MutationObserver(function () { clearTimeout(scan.t); scan.t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });\n})();\n";
+/**
+* "Best hotel gyms" pages: /gyms (index) and /gyms/<city-slug>, in English and Spanish (/es/...).
+* Data: src/generated/gyms.json, built from data/gyms/<slug>.json by tools/gyms/build.py.
+* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the gym only.
+*/
+/** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
+var IX$1 = {
+	file: "/assets/t3d/gyms.a31e866601.json",
+	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akita-japan\":\"Akita\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alesund-norway\":\"Ålesund\",\"alexandria-united-states\":\"Alexandria\",\"algeciras-spain\":\"Algeciras\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"amersfoort-netherlands\":\"Amersfoort\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"aomori-japan\":\"Aomori\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arnhem-netherlands\":\"Arnhem\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baghdad-iraq\":\"Baghdad\",\"bahia-blanca-argentina\":\"Bahia Blanca\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"baltimore-united-states\":\"Baltimore\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayreuth-germany\":\"Bayreuth\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belém\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"bridgwater-united-kingdom\":\"Bridgwater\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzów\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"cosenza-italy\":\"Cosenza\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuenca-spain\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"czestochowa-poland\":\"Częstochowa\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"den-bosch-netherlands\":\"Den Bosch\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunedin-newzealand\":\"Dunedin\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"emden-germany\":\"Emden\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"ferrol-spain\":\"Ferrol\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"fribourg-switzerland\":\"Fribourg\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"haarlem-netherlands\":\"Haarlem\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"leon-spain\":\"León\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"lincoln-unitedkingdom\":\"Lincoln\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luton-unitedkingdom\":\"Luton\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"nuuk-greenland\":\"Nuuk\",\"oakland-united-states\":\"Oakland\",\"oberstdorf-germany\":\"Oberstdorf\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"offenbach-germany\":\"Offenbach\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"passau-germany\":\"Passau\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perigueux-france\":\"Périgueux\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"pordenone-italy\":\"Pordenone\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"slough-unitedkingdom\":\"Slough\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"toyama-japan\":\"Toyama\",\"trabzon-turkiye\":\"Trabzon\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"wels-austria\":\"Wels\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"woking-unitedkingdom\":\"Woking\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
+};
+var I$1 = IX$1.ids;
+var G$1 = {};
+var loaded$2 = null;
+var load$2 = () => loaded$2 ??= fetch(`${SITE}${IX$1.file}`).then((r) => {
+	if (!r.ok) throw new Error(`data ${r.status}`);
+	return r.json();
+}).then((j) => {
+	G$1 = j;
+}).catch((e) => {
+	loaded$2 = null;
+	throw e;
+});
+var TIERS$1 = [
+	"luxury",
+	"standard",
+	"budget"
+];
+var GYM_LANGS = ["en", "es"];
+/** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
+async function slugs$1() {
+	const { byId, bySlug } = await data();
+	const pub = (id) => byId.get(id)?.slug ?? id;
+	const toId = (s) => I$1[s] ? s : bySlug.get(s)?.id;
+	return {
+		pub,
+		toId,
+		byId
+	};
+}
+var gymPaths = async () => {
+	const { pub } = await slugs$1();
+	return ["/gyms", ...Object.keys(I$1).map((id) => `/gyms/${pub(id)}`)];
+};
+var TX$1 = {
+	en: {
+		tier: {
+			luxury: "Luxury",
+			standard: "Mid-range",
+			budget: "Budget"
+		},
+		tierNote: {
+			luxury: "5-star hotels",
+			standard: "4-star hotels",
+			budget: "3 stars or less"
+		},
+		h1: (c) => `The best hotel gyms in ${c}`,
+		title: (c) => `Best hotel gyms in ${c}: luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `The hotel with the best gym in ${c} at every budget: ${n.join(", ")}. Judged on the gym only: size, equipment, hours and extras.`,
+		lead: "One hotel per budget, picked for its gym, not its lobby. Size, equipment, opening hours and extras, with sources.",
+		best: "Best gym in the city",
+		size: "Size",
+		hours: "Hours",
+		h24: "Open 24 hours",
+		equip: "Equipment",
+		extras: "Extras",
+		access: "Access",
+		perNight: "/ night",
+		book: "See prices on Booking",
+		site: "Hotel website",
+		sources: "Sources",
+		low: "Limited information: confirm the gym with the hotel before booking.",
+		none: "We could not confirm a hotel gym in this category.",
+		photoGym: "Gym photo: Booking.com",
+		photoHotel: "Hotel photo: Booking.com",
+		photoCity: "City photo",
+		how: "How we choose",
+		howBody: "We look only at the gym: size, free weights and machines, opening hours, extras like a pool or sauna, and what guests say about it. Categories follow the official star rating. Every fact comes from a public source listed under each hotel. Links to Booking.com are affiliate links: if you book, we may earn a commission at no cost to you.",
+		checked: "Checked",
+		crumbs: "Hotel gyms",
+		hotels: (c) => `The 3 best hotels in ${c}`,
+		idxTitle: "Best hotel gyms, city by city | Top3Hotels",
+		idxH1: "The best hotel gyms, city by city",
+		idxDesc: "The hotel with the best gym in every city we cover, at three budgets: luxury, mid-range and budget.",
+		cities: "cities"
+	},
+	es: {
+		tier: {
+			luxury: "Lujo",
+			standard: "Estándar",
+			budget: "Económico"
+		},
+		tierNote: {
+			luxury: "Hoteles de 5 estrellas",
+			standard: "Hoteles de 4 estrellas",
+			budget: "3 estrellas o menos"
+		},
+		h1: (c) => `Los mejores gimnasios de hotel en ${c}`,
+		title: (c) => `Mejores gimnasios de hotel en ${c}: lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `El hotel con el mejor gimnasio de ${c} en cada presupuesto: ${n.join(", ")}. Valoramos solo el gimnasio: tamaño, equipamiento, horario y extras.`,
+		lead: "Un hotel por presupuesto, elegido por su gimnasio, no por su recepción. Tamaño, equipamiento, horario y extras, con fuentes.",
+		best: "El mejor gimnasio de la ciudad",
+		size: "Tamaño",
+		hours: "Horario",
+		h24: "Abierto 24 horas",
+		equip: "Equipamiento",
+		extras: "Extras",
+		access: "Acceso",
+		perNight: "/ noche",
+		book: "Ver precios en Booking",
+		site: "Web del hotel",
+		sources: "Fuentes",
+		low: "Información limitada: confirma el gimnasio con el hotel antes de reservar.",
+		none: "No hemos podido confirmar un gimnasio de hotel en esta categoría.",
+		photoGym: "Foto del gimnasio: Booking.com",
+		photoHotel: "Foto del hotel: Booking.com",
+		photoCity: "Foto de la ciudad",
+		how: "Cómo elegimos",
+		howBody: "Miramos solo el gimnasio: tamaño, peso libre y máquinas, horario, extras como piscina o sauna, y lo que dicen los huéspedes. Las categorías siguen la clasificación oficial de estrellas. Cada dato sale de una fuente pública que enlazamos bajo cada hotel. Los enlaces a Booking.com son de afiliado: si reservas, podemos ganar una comisión sin coste para ti.",
+		checked: "Revisado",
+		crumbs: "Gimnasios de hotel",
+		hotels: (c) => `Los 3 mejores hoteles de ${c}`,
+		idxTitle: "Mejores gimnasios de hotel, ciudad por ciudad | Top3Hotels",
+		idxH1: "Los mejores gimnasios de hotel, ciudad por ciudad",
+		idxDesc: "El hotel con el mejor gimnasio de cada ciudad que cubrimos, en tres presupuestos: lujo, estándar y económico.",
+		cities: "ciudades"
+	}
+};
+var CSS_GYM$1 = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
+.gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
+.gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
+.gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.gcard:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c);z-index:2}.gcard.luxury{--c:#b8860b}.gcard.standard{--c:#d83b51}.gcard.budget{--c:#1f7a5a}
+.gcard .ph{position:relative;aspect-ratio:4/3;background:#dfe8f2;overflow:hidden}.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
+.gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
+.gcard .gchips .top{background:#10213a;color:#fff}
+.gcard .gprice{position:absolute;right:12px;bottom:12px;z-index:2;pointer-events:none}
+.gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
+.gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
+.gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
+.gcard .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}.gcard .btn{min-height:44px}.gcard .lnk{align-self:center;font-size:14px}
+.gcard .src{font-size:12px;opacity:.7}.gcard .src a,.gcard .src .nolink{color:inherit;margin-right:8px}
+.gcard.empty .bd{justify-content:center;text-align:center;color:var(--muted);min-height:180px}
+.gym .best{border-left:3px solid #10213a;background:rgba(127,127,127,.07);padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:15px}
+.gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
+.gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
+@media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
+var ESC_URL$1 = (u) => esc(u);
+var host$1 = (u) => {
+	try {
+		return new URL(u).hostname.replace(/^www\./, "");
+	} catch {
+		return u;
+	}
+};
+/** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to the home page),
+*  so only a real hotel page gets a Booking button. Without one we fall back to the hotel's own website,
+*  or show no button at all; never a search link. */
+var BK_HOTEL$1 = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
+var bookingFor$1 = (p) => p.bookingUrl && BK_HOTEL$1.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3gym") : null;
+function ctasFor$1(p, x, slug, t) {
+	const bk = bookingFor$1(p);
+	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
+	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="gym_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
+	return "";
+}
+var bkKey$1 = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
+var nameKey$1 = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function cityPrices$1(id) {
+	const out = /* @__PURE__ */ new Map();
+	const c = await cityData(id).catch(() => null);
+	for (const h of c?.hotels ?? []) {
+		const n = h.offer?.nightly;
+		if (!n || n <= 0) continue;
+		const v = {
+			nightly: n,
+			checked: h.booking?.checked
+		};
+		const k = bkKey$1(h.booking?.url);
+		if (k) out.set(k, v);
+		if (h.name) out.set(nameKey$1(h.name), v);
+	}
+	return out;
+}
+var priceFor$1 = (prices, p) => prices.get(bkKey$1(p.bookingUrl)) ?? prices.get(nameKey$1(p.hotel));
+var isoOf$1 = (s) => {
+	const d = new Date(s ?? "");
+	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+};
+var OTA_NOAFF$1 = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
+var srcLink$1 = (s) => {
+	let h = "";
+	try {
+		h = new URL(s).hostname;
+	} catch {
+		return "";
+	}
+	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3gymsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
+	if (OTA_NOAFF$1.test(h)) return `<span class="nolink">${esc(host$1(s))}</span>`;
+	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
+};
+function card$2(t, p, city, L, cityImg, slug, price) {
+	const x = TX$1[L];
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
+	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
+	const g = p.gym ?? {};
+	const px = p;
+	const own = p.photo?.url && !isDeadImg(p.photo.url) ? p.photo.url : null;
+	const gx = gymPhotos(px._gk ?? "");
+	const phs = hotelPhotos(p.bookingUrl, [own, ...px._cat ?? []]);
+	for (const [u] of gx) if (!phs.includes(u)) phs.push(u);
+	const img = phs[0] ?? cityImg;
+	const src0 = gx.find(([u]) => u === phs[0]);
+	const credit = !phs[0] ? x.photoCity : phs[0] === own ? p.photo?.gym ? x.photoGym : x.photoHotel : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
+	const rows = [];
+	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
+	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
+	if (g.equipment?.length) rows.push(`<dt>${esc(x.equip)}</dt><dd>${esc(g.equipment.join(" · "))}</dd>`);
+	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
+	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
+	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL$1(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+<div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
+${ctasFor$1(p, x, slug, t)}
+<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink$1(s)).join("")}</div></div></article>`;
+}
+/** Whole hotel card opens Booking (city cards and gym cards); buttons, links and toggles keep their own action. */
+var CARD_CLICK = `<style>article.card,article.gcard:not(.empty){cursor:pointer}</style><script>document.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('article.card,article.gcard');if(!c||e.defaultPrevented)return;if(e.target.closest('a,button,summary,details,input,select,label,textarea'))return;try{if(String(getSelection()).length>2)return}catch(_){}var b=c.querySelector('a.btn');if(b)b.click()});<\/script>`;
+async function gymCityPage(urlSlug, Lx) {
+	await load$2();
+	const { pub, toId, byId } = await slugs$1();
+	const id = toId(urlSlug);
+	const city = id ? G$1[id] : void 0;
+	if (!id || !city) return null;
+	const slug = pub(id);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/gyms/${slug}`)}`, 301);
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX$1[L];
+	const ic = byId.get(id);
+	const cn = ic ? cityName(ic, L) : city.city;
+	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
+	const path = `/gyms/${slug}`;
+	const picks = TIERS$1.map((t) => [t, city.tiers[t]]);
+	const prices = await cityPrices$1(id);
+	{
+		const cd = await cityData(id).catch(() => null);
+		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
+		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
+			_gk: `${id}:${t}`,
+			_cat: gal.get(bkPath(pk.bookingUrl)) ?? []
+		});
+	}
+	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
+	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
+	const bestPick = city.best ? city.tiers[city.best] : null;
+	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
+<div class="gcards">${picks.map(([t, p]) => card$2(t, p, city, L, cityImg, slug, p ? priceFor$1(prices, p) : void 0)).join("")}</div>
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		item: {
+			"@type": "Hotel",
+			name: p.hotel,
+			...p.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: p.stars
+			} } : {},
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: city.city,
+				addressCountry: city.country
+			},
+			amenityFeature: [{
+				"@type": "LocationFeatureSpecification",
+				name: "Fitness center",
+				value: true
+			}],
+			description: L === "es" ? p.summary_es : p.summary_en,
+			...p.photo?.url ? { image: p.photo.url } : {},
+			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor$1(prices, p)?.nightly),
+			additionalProperty: {
+				"@type": "PropertyValue",
+				name: "category",
+				value: x.tier[t]
+			}
+		}
+	}));
+	return page({
+		L,
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		description: x.desc(cn, names),
+		path,
+		body,
+		scripts: CARD_CLICK,
+		alts: GYM_LANGS,
+		...(() => {
+			const bp = bestPick;
+			const bi = bp ? [...hotelPhotos(bp.bookingUrl, [bp.photo?.url, ...bp._cat ?? []]), ...gymPhotos(bp._gk ?? "").map(([u]) => u)] : [];
+			return bi[0] || cityImg ? { image: bi[0] || `https://www.top3hotels.com${cityImg}` } : {};
+		})(),
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: x.h1(cn),
+			url: `${SITE}${P(L, path)}`,
+			itemListElement: items
+		}, {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: `${SITE}${P(L, "/")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: x.crumbs,
+					item: `${SITE}${P(L, "/gyms")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: city.city,
+					item: `${SITE}${P(L, path)}`
+				}
+			]
+		}]
+	});
+}
+async function gymIndexPage(Lx) {
+	await load$2();
+	const { pub } = await slugs$1();
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX$1[L];
+	const byCountry = /* @__PURE__ */ new Map();
+	for (const [slug, c] of Object.entries(G$1)) {
+		const list = byCountry.get(c.country) ?? [];
+		list.push([slug, c]);
+		byCountry.set(c.country, list);
+	}
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G$1).length} ${esc(x.cities)}</p>
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
+	return page({
+		L,
+		title: x.idxTitle,
+		description: x.idxDesc,
+		path: "/gyms",
+		body,
+		alts: GYM_LANGS,
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			name: x.idxH1,
+			url: `${SITE}${P(L, "/gyms")}`
+		}]
+	});
+}
+/** Small link for the city page. */
+var gymLink = (id, slug, L) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">🏋️ ${esc(TX$1[L === "es" ? "es" : "en"].h1(I$1[id]))} →</a></p>` : "";
+/**
+* "Best hotel pools" pages: /pools (index) and /pools/<city-slug>, in English and Spanish (/es/...).
+* Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
+* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the pool only.
+*/
+/** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
+var IX = {
+	file: "/assets/t3d/pools.df88d3bd9e.json",
+	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alessandria-italy\":\"Alessandria\",\"alesund-norway\":\"Ålesund\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alnwick-united-kingdom\":\"Alnwick\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"astorga-spain\":\"Astorga\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atlixco-mexico\":\"Atlixco\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baeza-spain\":\"Baeza\",\"baghdad-iraq\":\"Baghdad\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"balneario-camboriu-brazil\":\"Balneario Camboriu\",\"baltimore-united-states\":\"Baltimore\",\"bandar-seri-begawan-brunei\":\"Bandar Seri Begawan\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banja-luka-bosnia-and-herzegovina\":\"Banja Luka\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bastia-france\":\"Bastia\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayeux-france\":\"Bayeux\",\"bayonne-france\":\"Bayonne\",\"bayreuth-germany\":\"Bayreuth\",\"beaune-france\":\"Beaune\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belem\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bikaner-india\":\"Bikaner\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgas-bulgaria\":\"Burgas\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-da-rainha-portugal\":\"Caldas da Rainha\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"carcassonne-france\":\"Carcassonne\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"cassis-france\":\"Cassis\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chartres-france\":\"Chartres\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chernivtsi-ukraine\":\"Chernivtsi\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzow\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comayagua-honduras\":\"Comayagua\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dijon-france\":\"Dijon\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"florianopolis-brazil\":\"Florianópolis\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hondarribia-spain\":\"Hondarribia\",\"honfleur-france\":\"Honfleur\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-havre-france\":\"Le Havre\",\"le-mans-france\":\"Le Mans\",\"le-puy-en-velay-france\":\"Le Puy-en-Velay\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"les-sables-d-olonne-france\":\"Les Sables-d'Olonne\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lijiang-china\":\"Lijiang\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"llanes-spain\":\"Llanes\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"los-angeles-unitedstates\":\"Los Angeles\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsumoto-japan\":\"Matsumoto\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"menton-france\":\"Menton\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"metz-france\":\"Metz\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"mostar-bosniaandherzegovina\":\"Mostar\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munduk-indonesia\":\"Munduk\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"mytilene-greece\":\"Mytilene\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"namur-belgium\":\"Namur\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"oban-unitedkingdom\":\"Oban\",\"oberstdorf-germany\":\"Oberstdorf\",\"obidos-portugal\":\"Óbidos\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostend-belgium\":\"Ostend\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"ouro-preto-brazil\":\"Ouro Preto\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"plasencia-spain\":\"Plasencia\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plovdiv-bulgaria\":\"Plovdiv\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portree-unitedkingdom\":\"Portree\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"presidente-prudente-brazil\":\"Presidente Prudente\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"ribadesella-spain\":\"Ribadesella\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-branco-brazil\":\"Rio Branco\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochefort-france\":\"Rochefort\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rye-unitedkingdom\":\"Rye\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salvador-brazil\":\"Salvador\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-costarica\":\"San José\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santa-marta-colombia\":\"Santa Marta\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"shrewsbury-unitedkingdom\":\"Shrewsbury\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"spa-belgium\":\"Spa\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sucre-bolivia\":\"Sucre\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"tenby-united-kingdom\":\"Tenby\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"trabzon-turkiye\":\"Trabzon\",\"trani-italy\":\"Trani\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"truro-unitedkingdom\":\"Truro\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"varna-bulgaria\":\"Varna\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yangshuo-china\":\"Yangshuo\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zakynthos-greece\":\"Zakynthos\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
+};
+var I = IX.ids;
+var G = {};
+var loaded$1 = null;
+var load$1 = () => loaded$1 ??= fetch(`${SITE}${IX.file}`).then((r) => {
+	if (!r.ok) throw new Error(`data ${r.status}`);
+	return r.json();
+}).then((j) => {
+	G = j;
+}).catch((e) => {
+	loaded$1 = null;
+	throw e;
+});
+var TIERS = [
+	"luxury",
+	"standard",
+	"budget"
+];
+var POOL_LANGS = ["en", "es"];
+/** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
+async function slugs() {
+	const { byId, bySlug } = await data();
+	const pub = (id) => byId.get(id)?.slug ?? id;
+	const toId = (s) => I[s] ? s : bySlug.get(s)?.id;
+	return {
+		pub,
+		toId,
+		byId
+	};
+}
+var poolPaths = async () => {
+	const { pub } = await slugs();
+	return ["/pools", ...Object.keys(I).map((id) => `/pools/${pub(id)}`)];
+};
+var TX = {
+	en: {
+		tier: {
+			luxury: "Luxury",
+			standard: "Mid-range",
+			budget: "Budget"
+		},
+		tierNote: {
+			luxury: "5-star hotels",
+			standard: "4-star hotels",
+			budget: "3 stars or less"
+		},
+		h1: (c) => `The best hotel pools in ${c}`,
+		title: (c) => `Best hotel pools in ${c}: luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `The hotel with the best pool in ${c} at every budget: ${n.join(", ")}. Judged on the pool only: type, size, heating, views and hours.`,
+		lead: "One hotel per budget, picked for its pool. Rooftop, indoor or lap pool, heating, season and extras, with sources.",
+		best: "Best pool in the city",
+		type: "Pool",
+		length: "Length",
+		heatedT: "Heated",
+		yes: "Yes",
+		season: "Season",
+		hours: "Hours",
+		h24: "Open 24 hours",
+		extras: "Extras",
+		access: "Access",
+		kinds: {
+			outdoor: "Outdoor",
+			indoor: "Indoor",
+			rooftop: "Rooftop",
+			infinity: "Infinity",
+			lap: "Lap pool",
+			beach: "By the beach",
+			plunge: "Plunge pool"
+		},
+		perNight: "/ night",
+		book: "See prices on Booking",
+		site: "Hotel website",
+		sources: "Sources",
+		low: "Limited information: confirm the pool with the hotel before booking.",
+		none: "We could not confirm a hotel pool in this category.",
+		photoGym: "Pool photo: Booking.com",
+		photoHotel: "Hotel photo: Booking.com",
+		photoCity: "City photo",
+		how: "How we choose",
+		howBody: "We look only at the pool: rooftop, infinity, indoor or lap pool, size, heating and season, views, extras like a jacuzzi or pool bar, and what guests say about it. Categories follow the official star rating. Every fact comes from a public source listed under each hotel. Links to Booking.com are affiliate links: if you book, we may earn a commission at no cost to you.",
+		checked: "Checked",
+		crumbs: "Hotel pools",
+		hotels: (c) => `The 3 best hotels in ${c}`,
+		idxTitle: "Best hotel pools, city by city | Top3Hotels",
+		idxH1: "The best hotel pools, city by city",
+		idxDesc: "The hotel with the best pool in every city we cover, at three budgets: luxury, mid-range and budget.",
+		cities: "cities"
+	},
+	es: {
+		tier: {
+			luxury: "Lujo",
+			standard: "Estándar",
+			budget: "Económico"
+		},
+		tierNote: {
+			luxury: "Hoteles de 5 estrellas",
+			standard: "Hoteles de 4 estrellas",
+			budget: "3 estrellas o menos"
+		},
+		h1: (c) => `Las mejores piscinas de hotel en ${c}`,
+		title: (c) => `Mejores piscinas de hotel en ${c}: lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `El hotel con la mejor piscina de ${c} en cada presupuesto: ${n.join(", ")}. Valoramos solo la piscina: tipo, tamaño, climatización, vistas y horario.`,
+		lead: "Un hotel por presupuesto, elegido por su piscina. En azotea, cubierta o de nado, climatización, temporada y extras, con fuentes.",
+		best: "La mejor piscina de la ciudad",
+		type: "Piscina",
+		length: "Largo",
+		heatedT: "Climatizada",
+		yes: "Sí",
+		season: "Temporada",
+		hours: "Horario",
+		h24: "Abierta 24 horas",
+		extras: "Extras",
+		access: "Acceso",
+		kinds: {
+			outdoor: "Exterior",
+			indoor: "Cubierta",
+			rooftop: "En la azotea",
+			infinity: "Infinita",
+			lap: "De nado",
+			beach: "Junto a la playa",
+			plunge: "Pequeña"
+		},
+		perNight: "/ noche",
+		book: "Ver precios en Booking",
+		site: "Web del hotel",
+		sources: "Fuentes",
+		low: "Información limitada: confirma la piscina con el hotel antes de reservar.",
+		none: "No hemos podido confirmar una piscina de hotel en esta categoría.",
+		photoGym: "Foto de la piscina: Booking.com",
+		photoHotel: "Foto del hotel: Booking.com",
+		photoCity: "Foto de la ciudad",
+		how: "Cómo elegimos",
+		howBody: "Miramos solo la piscina: en azotea, infinita, cubierta o de nado, tamaño, climatización y temporada, vistas, extras como jacuzzi o bar, y lo que dicen los huéspedes. Las categorías siguen la clasificación oficial de estrellas. Cada dato sale de una fuente pública que enlazamos bajo cada hotel. Los enlaces a Booking.com son de afiliado: si reservas, podemos ganar una comisión sin coste para ti.",
+		checked: "Revisado",
+		crumbs: "Piscinas de hotel",
+		hotels: (c) => `Los 3 mejores hoteles de ${c}`,
+		idxTitle: "Mejores piscinas de hotel, ciudad por ciudad | Top3Hotels",
+		idxH1: "Las mejores piscinas de hotel, ciudad por ciudad",
+		idxDesc: "El hotel con la mejor piscina de cada ciudad que cubrimos, en tres presupuestos: lujo, estándar y económico.",
+		cities: "ciudades"
+	}
+};
+var CSS_GYM = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
+.gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
+.gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
+.gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.gcard:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c);z-index:2}.gcard.luxury{--c:#b8860b}.gcard.standard{--c:#d83b51}.gcard.budget{--c:#1f7a5a}
+.gcard .ph{position:relative;aspect-ratio:4/3;background:#dfe8f2;overflow:hidden}.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
+.gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
+.gcard .gchips .top{background:#10213a;color:#fff}
+.gcard .gprice{position:absolute;right:12px;bottom:12px;z-index:2;pointer-events:none}
+.gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
+.gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
+.gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
+.gcard .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}.gcard .btn{min-height:44px}.gcard .lnk{align-self:center;font-size:14px}
+.gcard .src{font-size:12px;opacity:.7}.gcard .src a,.gcard .src .nolink{color:inherit;margin-right:8px}
+.gcard.empty .bd{justify-content:center;text-align:center;color:var(--muted);min-height:180px}
+.gym .best{border-left:3px solid #10213a;background:rgba(127,127,127,.07);padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:15px}
+.gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
+.gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
+@media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
+var ESC_URL = (u) => esc(u);
+var host = (u) => {
+	try {
+		return new URL(u).hostname.replace(/^www\./, "");
+	} catch {
+		return u;
+	}
+};
+/** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to the home page),
+*  so only a real hotel page gets a Booking button. Without one we fall back to the hotel's own website,
+*  or show no button at all; never a search link. */
+var BK_HOTEL = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
+var bookingFor = (p) => p.bookingUrl && BK_HOTEL.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3pool") : null;
+function ctasFor(p, x, slug, t) {
+	const bk = bookingFor(p);
+	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="pool_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
+	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="pool_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
+	return "";
+}
+var bkKey = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
+var nameKey = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function cityPrices(id) {
+	const out = /* @__PURE__ */ new Map();
+	const c = await cityData(id).catch(() => null);
+	for (const h of c?.hotels ?? []) {
+		const n = h.offer?.nightly;
+		if (!n || n <= 0) continue;
+		const v = {
+			nightly: n,
+			checked: h.booking?.checked
+		};
+		const k = bkKey(h.booking?.url);
+		if (k) out.set(k, v);
+		if (h.name) out.set(nameKey(h.name), v);
+	}
+	return out;
+}
+var priceFor = (prices, p) => prices.get(bkKey(p.bookingUrl)) ?? prices.get(nameKey(p.hotel));
+var isoOf = (s) => {
+	const d = new Date(s ?? "");
+	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+};
+var OTA_NOAFF = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
+var srcLink = (s) => {
+	let h = "";
+	try {
+		h = new URL(s).hostname;
+	} catch {
+		return "";
+	}
+	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3poolsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host(s))}</a>`;
+	if (OTA_NOAFF.test(h)) return `<span class="nolink">${esc(host(s))}</span>`;
+	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`;
+};
+function card$1(t, p, city, L, cityImg, slug, price) {
+	const x = TX[L];
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
+	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
+	const g = p.pool ?? {};
+	const px = p;
+	const own = p.photo?.url && !isDeadImg(p.photo.url) ? p.photo.url : null;
+	const gx = [];
+	const phs = hotelPhotos(p.bookingUrl, [own, ...px._cat ?? []]);
+	for (const [u] of gx) if (!phs.includes(u)) phs.push(u);
+	const img = phs[0] ?? cityImg;
+	const src0 = gx.find(([u]) => u === phs[0]);
+	const credit = !phs[0] ? x.photoCity : phs[0] === own ? p.photo?.gym ? x.photoGym : x.photoHotel : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
+	const rows = [];
+	const kinds = (g.kind ?? []).map((k) => x.kinds[k] ?? k);
+	if (kinds.length) rows.push(`<dt>${esc(x.type)}</dt><dd>${esc(kinds.join(" · "))}</dd>`);
+	if (g.lengthM) rows.push(`<dt>${esc(x.length)}</dt><dd>${g.lengthM} m</dd>`);
+	if (g.heated) rows.push(`<dt>${esc(x.heatedT)}</dt><dd>${esc(x.yes)}</dd>`);
+	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
+	if (g.seasonal) rows.push(`<dt>${esc(x.season)}</dt><dd>${esc(g.seasonal)}</dd>`);
+	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
+	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
+	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+<div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
+${ctasFor(p, x, slug, t)}
+<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink(s)).join("")}</div></div></article>`;
+}
+async function poolCityPage(urlSlug, Lx) {
+	await load$1();
+	const { pub, toId, byId } = await slugs();
+	const id = toId(urlSlug);
+	const city = id ? G[id] : void 0;
+	if (!id || !city) return null;
+	const slug = pub(id);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/pools/${slug}`)}`, 301);
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX[L];
+	const ic = byId.get(id);
+	const cn = ic ? cityName(ic, L) : city.city;
+	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
+	const path = `/pools/${slug}`;
+	const picks = TIERS.map((t) => [t, city.tiers[t]]);
+	const prices = await cityPrices(id);
+	{
+		const cd = await cityData(id).catch(() => null);
+		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
+		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
+			_gk: `${id}:${t}`,
+			_cat: gal.get(bkPath(pk.bookingUrl)) ?? []
+		});
+	}
+	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
+	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
+	const bestPick = city.best ? city.tiers[city.best] : null;
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/pools")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
+<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		item: {
+			"@type": "Hotel",
+			name: p.hotel,
+			...p.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: p.stars
+			} } : {},
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: city.city,
+				addressCountry: city.country
+			},
+			amenityFeature: [{
+				"@type": "LocationFeatureSpecification",
+				name: "Swimming pool",
+				value: true
+			}],
+			description: L === "es" ? p.summary_es : p.summary_en,
+			...p.photo?.url ? { image: p.photo.url } : {},
+			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor(prices, p)?.nightly),
+			additionalProperty: {
+				"@type": "PropertyValue",
+				name: "category",
+				value: x.tier[t]
+			}
+		}
+	}));
+	return page({
+		L,
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		description: x.desc(cn, names),
+		path,
+		body,
+		scripts: CARD_CLICK,
+		alts: POOL_LANGS,
+		...(() => {
+			const bp = bestPick;
+			const bi = bp ? [...hotelPhotos(bp.bookingUrl, [bp.photo?.url, ...bp._cat ?? []])] : [];
+			return bi[0] || cityImg ? { image: bi[0] || `https://www.top3hotels.com${cityImg}` } : {};
+		})(),
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: x.h1(cn),
+			url: `${SITE}${P(L, path)}`,
+			itemListElement: items
+		}, {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: `${SITE}${P(L, "/")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: x.crumbs,
+					item: `${SITE}${P(L, "/pools")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: city.city,
+					item: `${SITE}${P(L, path)}`
+				}
+			]
+		}]
+	});
+}
+async function poolIndexPage(Lx) {
+	await load$1();
+	const { pub } = await slugs();
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX[L];
+	const byCountry = /* @__PURE__ */ new Map();
+	for (const [slug, c] of Object.entries(G)) {
+		const list = byCountry.get(c.country) ?? [];
+		list.push([slug, c]);
+		byCountry.set(c.country, list);
+	}
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G).length} ${esc(x.cities)}</p>
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/pools/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
+	return page({
+		L,
+		title: x.idxTitle,
+		description: x.idxDesc,
+		path: "/pools",
+		body,
+		alts: POOL_LANGS,
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			name: x.idxH1,
+			url: `${SITE}${P(L, "/pools")}`
+		}]
+	});
+}
+/** Small link for the city page. */
+var poolLink = (id, slug, L) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">🏊 ${esc(TX[L === "es" ? "es" : "en"].h1(I[id]))} →</a></p>` : "";
 /**
 * Server-rendered SEO layer for Top3Hotels (v2).
 *
@@ -17820,10 +22968,29 @@ function load() {
 	return loaded;
 }
 var maps;
+/** City slugs that clash with site tools (e.g. /split = "Split the hotel bill"): the city keeps its id as URL (/split-croatia). */
+var RESERVED_CITY_SLUGS = /* @__PURE__ */ new Set([
+	"split",
+	"budget",
+	"escape",
+	"awards",
+	"near-me",
+	"open-data",
+	"gyms",
+	"pools",
+	"find",
+	"hotel",
+	"brand"
+]);
 async function data() {
 	const d = await load();
 	if (!maps) {
-		const bySlug = new Map(d.index.map((c) => [c.slug, c]));
+		const alias = [];
+		for (const c of d.index) if (RESERVED_CITY_SLUGS.has(c.slug)) {
+			alias.push([c.slug, c]);
+			c.slug = c.id;
+		}
+		const bySlug = new Map([...alias, ...d.index.map((c) => [c.slug, c])]);
 		const byId = new Map(d.index.map((c) => [c.id, c]));
 		const byCountry = /* @__PURE__ */ new Map();
 		for (const c of d.index) {
@@ -17868,6 +23035,25 @@ function unpack(packed, value) {
 	return walk(value);
 }
 var BLOCKED_IMG = /onthebeach\.co\.uk/;
+var T3PH = hotel_photos_default;
+var DEAD_IMG = new Set(T3PH.dead);
+var phx = (s) => /^\d+:[0-9a-f]+$/.test(s) ? `https://cf.bstatic.com/xdata/images/hotel/max1024x768/${s.split(":")[0]}.jpg?k=${s.split(":")[1]}&o=` : s;
+var imgKey = (u) => {
+	const m = String(u ?? "").match(/bstatic\.com\/xdata\/images\/hotel\/[^/]+\/(\d+)\./);
+	return m ? "b:" + m[1] : String(u ?? "");
+};
+var isDeadImg = (u) => !u || DEAD_IMG.has(imgKey(u));
+var bkPath = (u) => (String(u ?? "").match(/\/hotel\/([a-z]{2}\/[^.?#/]+)/) || [])[1] ?? "";
+var gymPhotos = (k) => (T3PH.gyms[k] ?? []).filter(([u]) => u && !isDeadImg(u));
+function hotelPhotos(bookingUrl, have = []) {
+	const out = [];
+	const extra = (T3PH.hotels[bkPath(bookingUrl)] ?? "").split(" ").filter(Boolean).map(phx);
+	for (const u of [...have, ...extra]) if (u && !isDeadImg(u) && !out.some((x) => imgKey(x) === imgKey(u))) out.push(u);
+	return out;
+}
+var FB_ON = "var f=(this.dataset.fb||'').split('|').filter(Boolean);this.removeAttribute('srcset');if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.onerror=null}";
+var bsSet = (u, sizes = "(max-width: 700px) 92vw, 400px") => /^https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/max1024x768\//.test(String(u ?? "")) ? ` srcset="${esc(String(u).replace("/max1024x768/", "/max500/"))} 500w, ${esc(String(u).replace("/max1024x768/", "/max750/"))} 750w, ${esc(String(u))} 1024w" sizes="${sizes}"` : "";
+var fbAttr = (list) => ` data-fb="${esc(list.filter(Boolean).join("|"))}" onerror="${FB_ON}"`;
 var hotelKey = (h) => {
 	try {
 		return new URL(h.booking?.url ?? "").pathname;
@@ -17927,6 +23113,15 @@ async function cityData(id) {
 	});
 	for (const h of city.hotels ?? []) {
 		if (h.gallery) h.gallery = h.gallery.filter((g) => !BLOCKED_IMG.test(g.src ?? ""));
+		{
+			const have = (h.gallery ?? []).filter((g) => g.src && !isDeadImg(g.src));
+			const extra = hotelPhotos(h.booking?.url).filter((u) => !have.some((g) => imgKey(g.src) === imgKey(u)));
+			h.gallery = [...have, ...extra.map((src) => ({
+				src,
+				source: h.booking?.url ?? "",
+				credit: "Booking.com"
+			}))];
+		}
 		const e = hx[hotelKey(h)];
 		if (e) h.extras = e;
 		const lv = live_prices_default[id];
@@ -18060,7 +23255,8 @@ map.on('click','c',function(e){var p=e.features[0].properties,price=p.p?' · '+F
 		description: m.mapLead,
 		path: "/map",
 		body,
-		langs: true
+		langs: true,
+		noindex: true
 	});
 }
 async function pressPage() {
@@ -18116,20 +23312,20 @@ var GT = {
 		how: "Cómo ganamos dinero"
 	}
 };
-var CSS_BLOG = `.post{max-width:760px;margin:0 auto}.post .crumbs{font-size:13px;opacity:.7;margin:8px 0 18px}.post .crumbs a{color:inherit}
+var CSS_BLOG = `.post{max-width:760px;margin:0 auto}.post .crumbs{font-size:13px;color:var(--muted);margin:8px 0 18px}.post .crumbs a{color:inherit}
 .post h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 12px}.post .dek{font-size:19px;line-height:1.5;opacity:.85;margin:0 0 14px}
-.post .by{font-size:14px;opacity:.7;margin:0 0 26px}.post h2{font-size:26px;margin:38px 0 12px}.post h3{font-size:19px;margin:24px 0 6px}
+.post .by{font-size:14px;color:var(--muted);margin:0 0 26px}.post h2{font-size:26px;margin:38px 0 12px}.post h3{font-size:19px;margin:24px 0 6px}
 .post p,.post li{font-size:17px;line-height:1.65}.post ul,.post ol{padding-left:22px}.post li{margin:4px 0}
 .post .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:15px;line-height:1.55;margin:22px 0}
 .pick{border:1px solid rgba(127,127,127,.25);border-radius:14px;padding:18px 20px;margin:18px 0}.pick-h{display:flex;flex-direction:column;gap:6px}
 .pick h3{margin:0;font-size:22px}.pick .chip{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:rgba(127,127,127,.12)}
-.pick-budget .chip{color:#1f7a5a}.pick-value .chip{color:#d83b51}.pick-lux .chip{color:#b8860b}
+.pick-budget .chip{color:#15603f}.pick-value .chip{color:#a8213a}.pick-lux .chip{color:#7a5200}
 .pick .facts{list-style:none;padding:0;margin:10px 0;display:flex;flex-wrap:wrap;gap:6px 16px}.pick .facts li{font-size:14px;margin:0;opacity:.9}
 .pick .catch{font-size:15px;opacity:.9}.pick .ctas{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
 .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.post table{width:100%;border-collapse:collapse;font-size:15px}.post th,.post td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(127,127,127,.2);vertical-align:top}
 .post td small{opacity:.65}@media(max-width:560px){.post td:nth-child(4),.post th:nth-child(4){display:none}.post th,.post td{padding:8px 6px}}.post .notes li{margin:8px 0}.post .more{margin:40px 0 0;padding:18px 0 0;border-top:1px solid rgba(127,127,127,.25)}
 .glist{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin:24px 0}.glist a{display:block;border:1px solid rgba(127,127,127,.25);border-radius:14px;padding:18px;color:inherit;text-decoration:none}
-.glist a:hover{border-color:#d83b51}.glist h2{font-size:20px;margin:6px 0 8px;line-height:1.25}.glist p{margin:0;font-size:15px;opacity:.8;line-height:1.5}.glist small{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.6}`;
+.glist a:hover{border-color:#d83b51}.glist h2{font-size:20px;margin:6px 0 8px;line-height:1.25}.glist p{margin:0;font-size:15px;color:var(--muted);line-height:1.5}.glist small{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}`;
 var postBody = (b) => b.replace(/\{\{bk:([^}]+)\}\}/g, (_m, u) => esc(CJ_BOOKING(u, "t3guide")));
 var guideFor = (slug) => POSTS.find((p) => p.city === slug);
 function guidesIndex(L = "en") {
@@ -18167,7 +23363,7 @@ function guidePage(slug, L = "en") {
 	const body = `<style>${CSS_BLOG}</style><article class="post"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/guides")}">${esc(g.guides)}</a></nav>
 <h1>${esc(p.h1)}</h1><p class="dek">${esc(p.dek)}</p><p class="by">${esc(g.by)} ${esc(p.author)} · ${esc(g.upd)} ${fmtDate(p.updated, L)} · ${p.mins} ${esc(g.read)}</p>
 ${postBody(p.body)}
-<p class="note" style="font-size:13px;opacity:.7;margin-top:28px">${esc(g.aff)} <a href="/affiliate-disclosure">${esc(g.how)}</a>.</p>
+<p class="note" style="font-size:13px;color:var(--ink);margin-top:28px">${esc(g.aff)} <a href="/affiliate-disclosure">${esc(g.how)}</a>.</p>
 <div class="more"><h2 style="margin-top:0">${esc(g.more)}</h2><ul>${others.map((o) => `<li><a href="${P(L, `/guides/${o.slug}`)}">${esc(o.h1)}</a></li>`).join("")}</ul></div></article>`;
 	return page({
 		L,
@@ -18236,7 +23432,7 @@ var SOCIAL_TXT = {
 };
 var CSS_SOCIAL = `.t3-sp{display:flex;justify-content:center;margin:10px 0 0}.t3-social{display:inline-flex;align-items:center;gap:10px;padding:4px 14px 4px 5px;border-radius:999px;border:1px solid rgba(127,127,127,.22);background:rgba(127,127,127,.06);color:inherit!important;font-size:13px;line-height:1.25;text-decoration:none!important;max-width:100%}
 .t3-social:hover{border-color:#1877f2}.t3-social .av{display:inline-flex;flex:none}.t3-social .av img{width:24px;height:24px;border-radius:50%;border:2px solid var(--bg,#fff);object-fit:cover;margin-left:-8px;background:#ddd}.t3-social .av img:first-child{margin-left:0}
-.t3-social b{font-weight:700}.t3-social .fb{color:#1877f2;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
+.t3-social b{font-weight:700}.t3-social .fb{color:#1259c3;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
 var socialPill = (L) => {
 	if (L !== "es") return "";
 	const [a, b] = SOCIAL_TXT[L] ?? SOCIAL_TXT["en"];
@@ -18352,7 +23548,6 @@ function bookingLink(h, ci, co) {
 	}
 }
 var mapLink = (h, city) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${h.name}, ${h.address ?? ""}, ${city.city}, ${city.country}`);
-var LOGO = `<svg width="28" height="24" viewBox="0 0 28 24" aria-hidden="true"><rect x="0" y="11" width="7.5" height="13" rx="2.2" fill="#1f7a5a"/><rect x="10.25" y="0" width="7.5" height="24" rx="2.2" fill="#d83b51"/><rect x="20.5" y="5.5" width="7.5" height="18.5" rx="2.2" fill="#c9971c"/></svg>`;
 var CSS = `@font-face{font-family:Fraunces;font-style:normal;font-weight:300 700;font-display:swap;src:url(/fonts/fraunces-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Fraunces;font-style:normal;font-weight:300 700;font-display:swap;src:url(/fonts/fraunces-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:Inter;font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -18464,38 +23659,110 @@ var GLOBAL_JS = `(function(){var io='IntersectionObserver' in window?new Interse
 document.addEventListener('click',function(ev){
 var c=ev.target.closest&&ev.target.closest('[data-copy]');if(c){ev.preventDefault();var u=c.getAttribute('data-copy');(navigator.share&&matchMedia('(pointer:coarse)').matches?navigator.share({url:u,title:document.title}).catch(function(){}):navigator.clipboard.writeText(u).then(function(){c.textContent=c.getAttribute('data-done')}))}
 var q=ev.target.closest&&ev.target.closest('[data-quick]');if(q){ev.preventDefault();var f=q.closest('form'),n=+q.getAttribute('data-quick'),d0=new Date(),a,b;if(n<0){var add=(5-d0.getDay()+7)%7+(n===-2?7:0);a=new Date(d0.getTime()+add*864e5);b=new Date(a.getTime()+2*864e5)}else{a=new Date(d0.getTime()+n*864e5);b=new Date(a.getTime()+2*864e5)}var iso=function(x){return x.toISOString().slice(0,10)};f.querySelector('[name=checkin]').value=iso(a);f.querySelector('[name=checkout]').value=iso(b)}})})();`;
+function seoNorm(o) {
+	let title = o.title;
+	if (title.length > 60 && title.endsWith(" | Top3Hotels")) title = title.slice(0, -13);
+	let description = o.description;
+	if (description.length > 160) description = description.slice(0, 157).replace(/[\s,;:·–-]+[^\s]*$/, "") + "…";
+	const ld = [...o.ld ?? []].map((x) => x && x["@type"] === "Article" ? {
+		...x,
+		image: x.image ?? [o.image ?? `https://www.top3hotels.com/og.png`],
+		author: x.author && typeof x.author === "object" && !x.author.url ? {
+			...x.author,
+			url: `${SITE}/about`
+		} : x.author
+	} : x);
+	const has = JSON.stringify(ld);
+	if (o.path === "/") {
+		if (!has.includes("\"WebSite\"")) ld.push({
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			name: "Top3Hotels",
+			url: SITE + P(o.L, "/"),
+			inLanguage: o.L,
+			potentialAction: {
+				"@type": "SearchAction",
+				target: {
+					"@type": "EntryPoint",
+					urlTemplate: `${SITE}/find?q={search_term_string}`
+				},
+				"query-input": "required name=search_term_string"
+			}
+		});
+	} else if (!o.noindex && !has.includes("\"BreadcrumbList\"")) ld.push({
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [{
+			"@type": "ListItem",
+			position: 1,
+			name: "Top3Hotels",
+			item: SITE + P(o.L, "/")
+		}, {
+			"@type": "ListItem",
+			position: 2,
+			name: title.replace(/ \| Top3Hotels$/, ""),
+			item: SITE + P(o.L, o.path)
+		}]
+	});
+	return {
+		title,
+		description,
+		ld
+	};
+}
+/** Sitewide footer links to the biggest country hubs (crawl paths into ~600 city pages). */
+var FOOT_COUNTRIES = [
+	["italy", "IT"],
+	["spain", "ES"],
+	["france", "FR"],
+	["germany", "DE"],
+	["united-kingdom", "GB"],
+	["united-states", "US"]
+];
 function page(o) {
+	o = {
+		...o,
+		...seoNorm(o)
+	};
 	const t = T[o.L];
 	const url = SITE + P(o.L, o.path);
-	const image = o.image ?? `https://www.top3hotels.com/og.png`;
-	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
+	const image = o.image ?? ogImage(o.L);
+	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") + (o.altLinks.find(([l]) => l === "en") ? `<link rel="alternate" hreflang="x-default" href="${SITE}${o.altLinks.find(([l]) => l === "en")[1]}">` : "") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
-${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large">`}${alt}
-<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}"><meta property="og:locale" content="${t.htmlLang}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}">
-<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">`}<link rel="alternate" type="application/feed+json" title="Top3Hotels" href="/feed.json">${alt}
+<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.includes("/og/") || image.endsWith("/og.png") ? "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:type\" content=\"image/png\">" : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${{
+		en: "en_GB",
+		es: "es_ES",
+		de: "de_DE",
+		fr: "fr_FR",
+		it: "it_IT",
+		pt: "pt_PT",
+		da: "da_DK"
+	}[o.L] ?? "en_GB"}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:creator" content="@mrstartups"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}"><meta name="twitter:image:alt" content="${esc(o.title)}">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><meta name="application-name" content="Top3Hotels"><meta name="apple-mobile-web-app-title" content="Top3Hotels"><meta name="format-detection" content="telephone=no">${ICON_LINKS}<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>${CSS}
 ${CSS_PLUS}
 ${CSS_TRUST}${CSS_ALT}
 ${CSS_MORE}
 ${CSS_SOCIAL}
-${CSS_DP}</style><link rel="manifest" href="/manifest.webmanifest">
+${CSS_DP}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
-${consentScript(Z[o.L])}</head><body><div class="wrap">
-<header class="top"><a class="logo" href="${P(o.L, "/")}">${LOGO}<span>top3hotels<em>.</em></span></a><nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
-${socialPill(o.L)}<main>${o.body}</main>
-<footer><div class="cols"><div><a class="logo" href="${P(o.L, "/")}" style="font-size:20px">${LOGO}<span>top3hotels<em>.</em></span></a><p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
+${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
+<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
+${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
+<footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "en" || o.L === "es" ? `<li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : "Hotel gyms"}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : "Hotel pools"}</a></li>` : ""}${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
 window.T3V=${json(M[o.L].voice)};${JS_MORE}
-${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
+${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`;
 }
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
 	status,
@@ -18513,9 +23780,16 @@ var ALT_TXT = {
 	pt: "Esgotado nas suas datas? Ver as melhores alternativas disponíveis",
 	da: "Udsolgt på dine datoer? Se de bedste ledige alternativer"
 };
+/** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to its home page).
+*  "See alternatives" links use the city's Booking destination id, resolved once from booking.com (city pages
+*  and the picks' hotel pages) and stored in src/generated/booking-dest.json. No id -> no link. */
+var BK_DEST = booking_dest_default;
 function altSearch(k, nightly, stars, city) {
+	const id = city.id && BK_DEST[city.id] || city.slug && BK_DEST[city.slug];
+	if (!id) return null;
 	const u = new URL("https://www.booking.com/searchresults.html");
-	u.searchParams.set("ss", `${city.city}, ${city.country}`);
+	u.searchParams.set("dest_id", String(id));
+	u.searchParams.set("dest_type", "city");
 	u.searchParams.set("group_adults", "2");
 	u.searchParams.set("no_rooms", "1");
 	u.searchParams.set("group_children", "0");
@@ -18525,7 +23799,7 @@ function altSearch(k, nightly, stars, city) {
 	if (k === "budget") f = `review_score=80${n ? `;price=EUR-0-${Math.ceil(n * 1.3)}-1` : ""}`;
 	else if (k === "value") f = `review_score=80${n ? `;price=EUR-${Math.floor(n * .7)}-${Math.ceil(n * 1.35)}-1` : ""}`;
 	else f = `review_score=80;class=5${(stars ?? 5) < 5 ? ";class=4" : ""}`;
-	u.searchParams.set("nflt", f);
+	u.searchParams.set("nflt", `ht_id=204;${f}`);
 	return CJ_BOOKING(u.toString(), "t3alt");
 }
 var NOTE = {
@@ -18616,9 +23890,9 @@ var REP = {
 		err: "Kunne ikke sende. Prøv igen."
 	}
 };
-var VOTE_JS = `document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-vote] [data-v]");if(!b)return;var w=b.closest("[data-vote]"),k="t3v_"+w.dataset.vote;try{if(localStorage.getItem(k))return}catch(_){}w.querySelectorAll("button").forEach(function(x){x.disabled=true});var a="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4";fetch("https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_votes",{method:"POST",headers:{apikey:a,Authorization:"Bearer "+a,"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify({city_slug:w.dataset.vote,vote:+b.dataset.v,lang:window.T3L||null})}).then(function(){var m=w.querySelector(".vmsg");m.textContent=m.dataset.ok;try{localStorage.setItem(k,"1");t3track("vote",{city:w.dataset.vote,v:+b.dataset.v})}catch(_){}})});`;
+var VOTE_JS = `document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-vote] [data-v]");if(!b)return;var w=b.closest("[data-vote]"),k="t3v_"+w.dataset.vote;try{if(localStorage.getItem(k))return}catch(_){}w.querySelectorAll("button").forEach(function(x){x.disabled=true});var a="sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz";fetch("https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_votes",{method:"POST",headers:{apikey:a,Authorization:"Bearer "+a,"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify({city_slug:w.dataset.vote,vote:+b.dataset.v,lang:window.T3L||null})}).then(function(){var m=w.querySelector(".vmsg");m.textContent=m.dataset.ok;try{localStorage.setItem(k,"1");t3track("vote",{city:w.dataset.vote,v:+b.dataset.v})}catch(_){}})});`;
 var INSTALL_JS = `(function(){var ev;window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();ev=e;if(document.getElementById("t3inst"))return;var b=document.createElement("button");b.id="t3inst";b.type="button";var L=window.T3L||"en";b.textContent={es:"Instalar app",de:"App installieren",fr:"Installer l\u2019app",it:"Installa l\u2019app",pt:"Instalar app",da:"Installer app"}[L]||"Install app";b.style.cssText="position:fixed;right:14px;bottom:14px;z-index:60;padding:11px 16px;border-radius:999px;border:0;background:#0b3b8c;color:#fff;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer";b.onclick=function(){if(!ev)return;ev.prompt();ev.userChoice.then(function(c){try{t3track("pwa_install",{outcome:c.outcome})}catch(_){}b.remove();ev=null})};document.body.appendChild(b)})})();`;
-var REPORT_JS = `document.addEventListener('submit',function(e){var f=e.target;if(!f.dataset||!f.dataset.report)return;e.preventDefault();var m=f.querySelector('.repmsg'),b=f.querySelector('button');var d=JSON.parse(f.dataset.report);d.message=f.message.value.trim();d.email=f.email.value.trim()||null;b.disabled=true;fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_reports',{method:'POST',headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4','Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;m.textContent=m.dataset.ok;f.message.value='';try{t3track('report_sent',{city:d.city,category:d.category})}catch(_){}}).catch(function(){m.textContent=m.dataset.err;b.disabled=false})});`;
+var REPORT_JS = `document.addEventListener('submit',function(e){var f=e.target;if(!f.dataset||!f.dataset.report)return;e.preventDefault();var m=f.querySelector('.repmsg'),b=f.querySelector('button');var d=JSON.parse(f.dataset.report);d.message=f.message.value.trim();d.email=f.email.value.trim()||null;b.disabled=true;fetch('https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/top3_reports',{method:'POST',headers:{'apikey':'sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz','Authorization':'Bearer sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz','Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;m.textContent=m.dataset.ok;f.message.value='';try{t3track('report_sent',{city:d.city,category:d.category})}catch(_){}}).catch(function(){m.textContent=m.dataset.err;b.disabled=false})});`;
 var isHostel = (h) => /hostel|\bdorm|capsule|albergue|jugendherberge/i.test(`${h.name} ${h.booking?.url ?? ""}`);
 var addrKey = (a) => {
 	const first = (a ?? "").toLowerCase().split(",").find((x) => /\d/.test(x) && /[a-z\u00c0-\u024f]{3}/.test(x)) ?? "";
@@ -18626,7 +23900,7 @@ var addrKey = (a) => {
 	const num = (first.match(/\d+/) ?? [""])[0];
 	return street && num ? `${street}#${num}` : "";
 };
-var CSS_ALT = `.rep{margin:8px 0 0;font-size:13px}.rep summary{cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.rep form{display:flex;flex-direction:column;gap:8px;margin-top:8px}.rep textarea,.rep input{font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--paper);color:var(--ink)}.rep .btn{min-height:40px}.repmsg{margin:0;font-size:12.5px;color:var(--muted)}.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}`;
+var CSS_ALT = `.rep{margin:8px 0 0;font-size:13px}.rep summary{cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.rep form{display:flex;flex-direction:column;gap:8px;margin-top:8px}.rep textarea,.rep input{font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--paper);color:var(--ink)}.rep .btn{min-height:40px}.repmsg{margin:0;font-size:12.5px;color:var(--muted)}.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}a.alt{padding:11px 0;margin-top:2px}`;
 function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
@@ -18654,7 +23928,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 		h.candidateCount ? y.whyFrom(h.candidateCount) : ""
 	].filter(Boolean);
 	return `<article class="card ${k}" id="${k}">
-<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
+<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}"${bsSet(img)} alt="${esc(h.name)}, ${esc(city.city)}" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer"${fbAttr([...gal.slice(1), cityImg])}>` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
 <div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
@@ -18664,9 +23938,9 @@ ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}
 <div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
-<div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
+<div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
-${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
+${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p>${((a) => a ? `<a class="alt" href="${esc(a)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : "")(altSearch(k, o.nightly, b.stars, city))}` : ""}
 ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a></div><details class="rep"><summary>${esc(M[L].report)}</summary><form data-report="${esc(JSON.stringify({
 		city: city.slug,
@@ -18697,7 +23971,11 @@ function mapScript(hs, sights) {
 	return `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css" media="print" onload="this.media='all'">
 <script>(function(){var P=${json(pts)},S=${json(ss)},el=document.getElementById('map');if(!el)return;var go=function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js';s.onload=function(){var dark=matchMedia('(prefers-color-scheme: dark)').matches;var m=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/'+(dark?'dark':'positron'),center:[P[0].lng,P[0].lat],zoom:12,attributionControl:{compact:true},cooperativeGestures:true});m.addControl(new maplibregl.NavigationControl({showCompass:false}));var b=new maplibregl.LngLatBounds();P.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:30px;height:30px;border-radius:50%;background:'+p.c+';color:#fff;font:700 14px system-ui;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 3px 10px #0005';d.textContent=p.n;new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:18}).setText(p.name)).addTo(m);b.extend([p.lng,p.lat])});var cx=P.reduce(function(t,p){return t+p.lng},0)/P.length,cy=P.reduce(function(t,p){return t+p.lat},0)/P.length;S.forEach(function(p){var d=document.createElement('div');d.style.cssText='width:12px;height:12px;border-radius:50%;background:#46566a;border:2px solid #fff';new maplibregl.Marker({element:d}).setLngLat([p.lng,p.lat]).setPopup(new maplibregl.Popup({offset:10}).setText(p.name)).addTo(m);var dk=Math.hypot((p.lng-cx)*Math.cos(cy*Math.PI/180),p.lat-cy)*111;if(dk<=3)b.extend([p.lng,p.lat])});m.fitBounds(b,{padding:50,maxZoom:15,duration:0})};document.head.appendChild(s)};if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();go()}},{rootMargin:'300px'});io.observe(el)}else go()})();<\/script>`;
 }
-async function cityPage(city, L) {
+async function cityPage(city0, L) {
+	const city = {
+		...city0,
+		city: cityName(city0, L)
+	};
 	const hpRows = await hotelPagesList();
 	const hpLive = new Set(hpRows.map((x) => x.slug));
 	const hpL = new Map(hpRows.map((x) => [x.slug, hpLangs(x)]));
@@ -18718,7 +23996,8 @@ async function cityPage(city, L) {
 	const o0 = budget.offer ?? {};
 	const sample = budget.candidateCount;
 	const cname = countryName(city, L);
-	const title = t.title(city.city);
+	const homonym = (await data()).index.some((x) => x.city === city0.city && x.id !== city.id);
+	const title = t.title(homonym ? `${city.city}, ${cname}` : city.city);
 	const description = t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
 	const dates = range(o0.checkin, o0.checkout);
@@ -18863,7 +24142,7 @@ async function cityPage(city, L) {
 		path,
 		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${esc(cname)}</a> › ${esc(city.city)}</p>
 <div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
-<div class="in"><p class="eyebrow">${esc(cname)} · 3 · ${esc(t.ourPick)}</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
+<div class="in"><p class="eyebrow">${esc(cname)} · Top 3</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
 <p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${flights}${in1}${jump}<span hidden data-track="${esc(JSON.stringify({
 			s: city.slug,
 			c: city.city
@@ -18871,8 +24150,15 @@ async function cityPage(city, L) {
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
-<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
-<p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · ${esc(checkedText)}.</p>
+${gymLink(city.id, city.slug, L)}${poolLink(city.id, city.slug, L)}<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
+<p class="note">${esc(t.refRate)}: ${esc(dates)}, ${esc({
+			es: "2 adultos, 1 habitación",
+			de: "2 Erwachsene, 1 Zimmer",
+			fr: "2 adultes, 1 chambre",
+			it: "2 adulti, 1 camera",
+			pt: "2 adultos, 1 quarto",
+			da: "2 voksne, 1 værelse"
+		}[L] || "2 adults, 1 room")} · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
 			slug: city.slug,
 			city: city.city,
@@ -18906,13 +24192,116 @@ ${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cn
 		ld,
 		...image ? { image } : {},
 		langs: true,
-		scripts: mapScript(hs, sights)
+		scripts: mapScript(hs, sights) + CARD_CLICK
 	});
 }
 async function tileFor(c, h, L, extra = "") {
 	const { cx } = await data();
 	const img = h.gallery?.find((g) => g.src)?.src ?? (cx[c.id]?.hero?.img ? `/api/img/${c.id}/small` : void 0);
-	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
+	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" width="480" height="300" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
+}
+function countryIntro(rows, cname, L) {
+	if (L !== "en" && L !== "es") return "";
+	const hs = rows.filter((r) => r.d).flatMap((r) => r.d.hotels.map((h) => ({
+		h,
+		c: r.c
+	})));
+	const cheap = hs.filter((x) => x.h.category === "Budget" && x.h.offer?.nightly).sort((a, b) => a.h.offer.nightly - b.h.offer.nightly)[0];
+	const top = hs.filter((x) => x.h.booking?.score).sort((a, b) => b.h.booking.score - a.h.booking.score)[0];
+	const lux = hs.filter((x) => x.h.category === "Luxury");
+	const five = lux.filter((x) => x.h.booking?.stars === 5).length;
+	if (!cheap || !top) return "";
+	const s = top.h.booking.score.toFixed(1);
+	return L === "es" ? `<p class="intro">La opción Económico más barata de ${esc(cname)} es ${esc(cheap.h.name)} en ${esc(cheap.c.city)}, unos ${money(cheap.h.offer.nightly)} la noche (precio de referencia). La nota más alta entre nuestras elecciones es la de ${esc(top.h.name)} en ${esc(top.c.city)} (${s.replace(".", ",")}/10 en Booking.com). ${lux.length === 1 ? five ? "Nuestra elección de Lujo es un hotel de cinco estrellas." : "Nuestra elección de Lujo no es un hotel de cinco estrellas." : `${five} de nuestras ${lux.length} elecciones de Lujo son hoteles de cinco estrellas.`}</p>` : `<p class="intro">The cheapest Budget pick in ${esc(cname)} is ${esc(cheap.h.name)} in ${esc(cheap.c.city)}, about ${money(cheap.h.offer.nightly)} a night (reference price). The highest guest score among our picks belongs to ${esc(top.h.name)} in ${esc(top.c.city)} (${s}/10 on Booking.com). ${lux.length === 1 ? five ? "Our Luxury pick is a five-star hotel." : "Our Luxury pick is not a five-star hotel." : `${five} of our ${lux.length} Luxury picks are five-star hotels.`}</p>`;
+}
+var f1 = (L, n) => L === "en" ? n.toFixed(1) : n.toFixed(1).replace(".", ",");
+var FAQH = {
+	en: "Quick answers",
+	es: "Respuestas rápidas",
+	de: "Kurz beantwortet",
+	fr: "Réponses rapides",
+	it: "Risposte rapide",
+	pt: "Respostas rápidas",
+	da: "Hurtige svar"
+};
+/** Country FAQ computed from the picks (cheapest budget city, best-rated luxury, best value). Nothing invented. */
+function countryFaq(L, cname, rows) {
+	const ok = rows.filter((r) => r.d?.hotels?.length);
+	if (!ok.length) return [];
+	const get = (r, cat) => r.d.hotels.find((h) => h.category === cat);
+	const bud = ok.map((r) => ({
+		r,
+		h: get(r, "Budget")
+	})).filter((x) => x.h?.offer?.nightly).sort((a, b) => a.h.offer.nightly - b.h.offer.nightly)[0];
+	const lux = ok.map((r) => ({
+		r,
+		h: get(r, "Luxury")
+	})).filter((x) => x.h?.booking?.score).sort((a, b) => b.h.booking.score - a.h.booking.score)[0];
+	const val = ok.map((r) => ({
+		r,
+		h: get(r, "Best Value")
+	})).filter((x) => x.h?.booking?.score).sort((a, b) => b.h.booking.score - a.h.booking.score)[0];
+	const Q = {
+		en: [
+			[`Where is the cheapest good hotel in ${cname}?`, (x) => `${x.h.name} in ${x.r.c.city}, our Budget pick, from a reference ${money(x.h.offer.nightly)} a night.`],
+			[`What is the best-rated luxury hotel in ${cname}?`, (x) => `${x.h.name} in ${x.r.c.city}, guest score ${f1(L, x.h.booking.score)}/10.`],
+			[`Which hotel in ${cname} is the best value?`, (x) => `${x.h.name} in ${x.r.c.city}: guest score ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` for about ${money(x.h.offer.nightly)} a night` : ""}.`]
+		],
+		es: [
+			[`¿Dónde está el hotel bueno más barato de ${cname}?`, (x) => `${x.h.name}, en ${x.r.c.city}: nuestro económico, desde ${money(x.h.offer.nightly)} la noche (precio de referencia).`],
+			[`¿Cuál es el hotel de lujo mejor valorado de ${cname}?`, (x) => `${x.h.name}, en ${x.r.c.city}, con una nota de ${f1(L, x.h.booking.score)}/10.`],
+			[`¿Qué hotel de ${cname} tiene mejor calidad-precio?`, (x) => `${x.h.name}, en ${x.r.c.city}: nota ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` por unos ${money(x.h.offer.nightly)} la noche` : ""}.`]
+		],
+		de: [
+			[`Wo ist das günstigste gute Hotel in ${cname}?`, (x) => `${x.h.name} in ${x.r.c.city}, unser günstiger Tipp, ab ${money(x.h.offer.nightly)} pro Nacht (Referenzpreis).`],
+			[`Welches Luxushotel in ${cname} ist am besten bewertet?`, (x) => `${x.h.name} in ${x.r.c.city}, Gästenote ${f1(L, x.h.booking.score)}/10.`],
+			[`Welches Hotel in ${cname} bietet das beste Preis-Leistungs-Verhältnis?`, (x) => `${x.h.name} in ${x.r.c.city}: Note ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` für etwa ${money(x.h.offer.nightly)} pro Nacht` : ""}.`]
+		],
+		fr: [
+			[`Où trouver le bon hôtel le moins cher en ${cname} ?`, (x) => `${x.h.name} à ${x.r.c.city}, notre choix petit budget, dès ${money(x.h.offer.nightly)} la nuit (prix de référence).`],
+			[`Quel est l'hôtel de luxe le mieux noté en ${cname} ?`, (x) => `${x.h.name} à ${x.r.c.city}, note des clients ${f1(L, x.h.booking.score)}/10.`],
+			[`Quel hôtel offre le meilleur rapport qualité-prix en ${cname} ?`, (x) => `${x.h.name} à ${x.r.c.city} : note ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` pour environ ${money(x.h.offer.nightly)} la nuit` : ""}.`]
+		],
+		it: [
+			[`Dov'è l'hotel buono più economico in ${cname}?`, (x) => `${x.h.name} a ${x.r.c.city}, la nostra scelta economica, da ${money(x.h.offer.nightly)} a notte (prezzo di riferimento).`],
+			[`Qual è l'hotel di lusso meglio valutato in ${cname}?`, (x) => `${x.h.name} a ${x.r.c.city}, voto degli ospiti ${f1(L, x.h.booking.score)}/10.`],
+			[`Quale hotel in ${cname} ha il miglior rapporto qualità-prezzo?`, (x) => `${x.h.name} a ${x.r.c.city}: voto ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` per circa ${money(x.h.offer.nightly)} a notte` : ""}.`]
+		],
+		pt: [
+			[`Onde fica o hotel bom mais barato em ${cname}?`, (x) => `${x.h.name}, em ${x.r.c.city}, a nossa escolha económica, desde ${money(x.h.offer.nightly)} por noite (preço de referência).`],
+			[`Qual é o hotel de luxo mais bem avaliado em ${cname}?`, (x) => `${x.h.name}, em ${x.r.c.city}, nota dos hóspedes ${f1(L, x.h.booking.score)}/10.`],
+			[`Que hotel em ${cname} tem melhor qualidade-preço?`, (x) => `${x.h.name}, em ${x.r.c.city}: nota ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` por cerca de ${money(x.h.offer.nightly)} por noite` : ""}.`]
+		],
+		da: [
+			[`Hvor er det billigste gode hotel i ${cname}?`, (x) => `${x.h.name} i ${x.r.c.city}, vores billige valg, fra ${money(x.h.offer.nightly)} pr. nat (referencepris).`],
+			[`Hvilket luksushotel i ${cname} har den bedste karakter?`, (x) => `${x.h.name} i ${x.r.c.city}, gæstekarakter ${f1(L, x.h.booking.score)}/10.`],
+			[`Hvilket hotel i ${cname} giver mest for pengene?`, (x) => `${x.h.name} i ${x.r.c.city}: karakter ${f1(L, x.h.booking.score)}/10${x.h.offer?.nightly ? ` for omkring ${money(x.h.offer.nightly)} pr. nat` : ""}.`]
+		]
+	};
+	const q = Q[L] ?? Q["en"];
+	const out = [];
+	if (bud) out.push([q[0][0], q[0][1](bud)]);
+	if (lux) out.push([q[1][0], q[1][1](lux)]);
+	if (val) out.push([q[2][0], q[2][1](val)]);
+	return out;
+}
+/** Country meta description that names real picks and a real price (was "N destinations. Three picks…"). */
+function countryDesc(L, cname, rows) {
+	const ok = rows.filter((r) => r.d?.hotels?.length);
+	const first = ok[0];
+	const v = first?.d.hotels.find((h) => h.category === "Best Value") ?? first?.d.hotels[1];
+	const cheap = ok.map((r) => r.d.hotels.find((h) => h.category === "Budget")?.offer?.nightly).filter((x) => typeof x === "number").sort((a, b) => a - b)[0];
+	const cities = ok.slice(0, 4).map((r) => r.c.city).join(", ");
+	const D = {
+		en: `The 3 best hotels in ${cname}, city by city: budget, best value and luxury in ${cities}${ok.length > 4 ? " and more" : ""}.${v ? ` Top value pick: ${v.name}.` : ""}${cheap ? ` From ${money(cheap)} a night.` : ""}`,
+		es: `Los 3 mejores hoteles de ${cname}, ciudad a ciudad: económico, calidad-precio y lujo en ${cities}${ok.length > 4 ? " y más" : ""}.${v ? ` Mejor calidad-precio: ${v.name}.` : ""}${cheap ? ` Desde ${money(cheap)} la noche.` : ""}`,
+		de: `Die 3 besten Hotels in ${cname}: günstig, Preis-Leistung und Luxus in ${cities}${ok.length > 4 ? " und mehr" : ""}.${v ? ` Preis-Leistungs-Tipp: ${v.name}.` : ""}${cheap ? ` Ab ${money(cheap)} pro Nacht.` : ""}`,
+		fr: `Les 3 meilleurs hôtels en ${cname} : petit budget, qualité-prix et luxe à ${cities}${ok.length > 4 ? " et plus" : ""}.${v ? ` Meilleur rapport qualité-prix : ${v.name}.` : ""}${cheap ? ` Dès ${money(cheap)} la nuit.` : ""}`,
+		it: `I 3 migliori hotel in ${cname}: economico, qualità-prezzo e lusso a ${cities}${ok.length > 4 ? " e altre" : ""}.${v ? ` Miglior qualità-prezzo: ${v.name}.` : ""}${cheap ? ` Da ${money(cheap)} a notte.` : ""}`,
+		pt: `Os 3 melhores hotéis em ${cname}: económico, qualidade-preço e luxo em ${cities}${ok.length > 4 ? " e mais" : ""}.${v ? ` Melhor qualidade-preço: ${v.name}.` : ""}${cheap ? ` Desde ${money(cheap)} por noite.` : ""}`,
+		da: `De 3 bedste hoteller i ${cname}: billigt, mest for pengene og luksus i ${cities}${ok.length > 4 ? " og flere" : ""}.${v ? ` Mest for pengene: ${v.name}.` : ""}${cheap ? ` Fra ${money(cheap)} pr. nat.` : ""}`
+	};
+	return D[L] ?? D["en"];
 }
 async function countryPage(cslug, L) {
 	const { byCountry } = await data();
@@ -18921,24 +24310,36 @@ async function countryPage(cslug, L) {
 	const t = T[L];
 	const cname = countryName(list[0], L);
 	const rows = await Promise.all(list.map(async (c) => ({
-		c,
+		c: {
+			...c,
+			city: cityName(c, L)
+		},
 		d: await cityData(c.id)
 	})));
 	const path = `/country/${cslug}`;
 	const ld = [{
 		"@context": "https://schema.org",
 		"@type": "BreadcrumbList",
-		itemListElement: [{
-			"@type": "ListItem",
-			position: 1,
-			name: "Top3Hotels",
-			item: SITE + P(L, "/")
-		}, {
-			"@type": "ListItem",
-			position: 2,
-			name: cname,
-			item: SITE + P(L, path)
-		}]
+		itemListElement: [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: "Top3Hotels",
+				item: SITE + P(L, "/")
+			},
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: t.allDest,
+				item: SITE + P(L, "/destinations")
+			},
+			{
+				"@type": "ListItem",
+				position: 3,
+				name: cname,
+				item: SITE + P(L, path)
+			}
+		]
 	}, {
 		"@context": "https://schema.org",
 		"@type": "ItemList",
@@ -18946,24 +24347,37 @@ async function countryPage(cslug, L) {
 		itemListElement: list.map((c, i) => ({
 			"@type": "ListItem",
 			position: i + 1,
-			name: t.h1(c.city),
+			name: t.h1(cityName(c, L)),
 			url: `${SITE}${P(L, "/" + c.slug)}`
 		}))
 	}];
 	const tiles = await Promise.all(rows.filter((r) => r.d).map(({ c, d }) => tileFor(c, d.hotels[1], L)));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/destinations")}">${esc(t.allDest)}</a> › ${esc(cname)}</p>
-<h1>${esc(t.countryH1(cname))}<em>.</em></h1><p class="lead">${esc(t.countryLead(list.length))}</p>
+<h1>${esc(t.countryH1(cname))}<em>.</em></h1><p class="lead">${esc(t.countryLead(list.length))}</p>${countryIntro(rows, cname, L)}
 <div class="tiles">${tiles.join("")}</div>
 <section><div class="tablewrap"><table><thead><tr><th>${esc(t.allDest)}</th><th>${esc(t.cat.Budget)}</th><th>${esc(t.cat["Best Value"])}</th><th>${esc(t.cat.Luxury)}</th></tr></thead><tbody>
 ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
-</tbody></table></div></section>`;
+</tbody></table></div></section>${GROWTH_LANGS.includes(L) && (await countryValueSlugs()).includes(cslug) ? `<p class="note"><a href="${P(L, `/best-value/${cslug}`)}">${esc(L === "es" ? `Dónde cuesta menos un buen hotel en ${cname} →` : `Where a good hotel costs least in ${cname} →`)}</a></p>` : ""}`;
 	const img = rows.find((r) => r.d?.extras?.hero?.img)?.d?.extras?.hero?.img;
+	const faq = countryFaq(L, cname, rows);
+	if (faq.length) ld.push({
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		mainEntity: faq.map(([q, a]) => ({
+			"@type": "Question",
+			name: q,
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: a
+			}
+		}))
+	});
 	return page({
 		L,
+		body: body + (faq.length ? `<section><h2>${esc(FAQH[L] ?? FAQH["en"])}</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>` : ""),
 		title: t.countryTitle(cname, list.length),
-		description: `${t.countryLead(list.length)} ${list.slice(0, 5).map((c) => c.city).join(", ")}…`,
+		description: countryDesc(L, cname, rows),
 		path,
-		body,
 		ld,
 		langs: true,
 		...img ? { image: img } : {}
@@ -18975,7 +24389,7 @@ async function destinationsPage(L) {
 	const countries = [...byCountry.entries()].sort((a, b) => countryName(a[1][0], L).localeCompare(countryName(b[1][0], L), L));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(t.allDest)}</p><h1>${esc(t.destH1(index.length))}<em>.</em></h1>
 <p class="lead">${esc(t.destLead(countries.length))}</p>
-<section class="countries">${countries.map(([cs, list]) => `<h2><a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)}</a></li>`).join("")}</ul>`).join("")}</section>`;
+<section class="countries">${countries.map(([cs, list]) => `<h2><a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul>`).join("")}</section>`;
 	return page({
 		L,
 		title: t.destTitle(index.length),
@@ -19181,6 +24595,29 @@ async function themePage(theme, L) {
 <h1>${esc(th.h1)}<em>.</em></h1><p class="lead">${esc(th.lead)}</p><div class="tiles">${tiles.join("")}</div>`;
 	const ld = [{
 		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: "Top3Hotels",
+				item: SITE + P(L, "/")
+			},
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: t.lists,
+				item: SITE + P(L, "/lists")
+			},
+			{
+				"@type": "ListItem",
+				position: 3,
+				name: th.title,
+				item: SITE + P(L, `/lists/${theme}`)
+			}
+		]
+	}, {
+		"@context": "https://schema.org",
 		"@type": "ItemList",
 		name: th.h1,
 		itemListElement: rows.map(({ c, h }, i) => ({
@@ -19194,7 +24631,7 @@ async function themePage(theme, L) {
 	return page({
 		L,
 		title: `${th.title} (2026) | Top3Hotels`,
-		description: th.lead,
+		description: `${th.lead.replace(/\.?$/, ".")} ${rows.slice(0, 3).map(({ c, h }) => `${h.name} (${c.city})`).join(", ")}…`,
 		path: `/lists/${theme}`,
 		body,
 		ld,
@@ -19215,26 +24652,66 @@ async function eventPage(slug, L) {
 	const tiles = await Promise.all(d.hotels.map((h) => tileFor(c, h, L)));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/lists")}">${esc(t.lists)}</a> › ${esc(ev.name)}</p>
 <div class="hero${d.extras?.hero?.img ? "" : " noimg"}">${d.extras?.hero?.img ? `<img src="/api/img/${esc(c.id)}/big" alt="${esc(c.city)}">` : ""}<div class="in"><p class="eyebrow">${esc(ev.when)}</p><h1>Best hotels for ${esc(ev.name)}<em>.</em></h1><p class="lead">Three hotels in ${esc(c.city)}: one Budget, one Best Value, one Luxury. Book early: prices rise fast around ${esc(ev.name)}.</p></div></div>
-<div class="tiles">${tiles.join("")}</div><p style="margin-top:22px"><a class="btn" href="${P(L, "/" + c.slug)}">${esc(t.h1(c.city))} →</a></p>`;
+<div class="tiles">${tiles.join("")}</div>
+<section><h2>Where to stay in ${esc(c.city)} for ${esc(ev.name)}</h2><ul>${d.hotels.map((h) => `<li><b>${esc(h.name)}</b> (${esc(t.cat[h.category] ?? h.category)})${h.area ? `, ${esc(h.area)}` : ""}${h.booking?.score ? `: guest score ${h.booking.score.toFixed(1)}/10` : ""}${h.offer?.nightly ? `, reference ${money(h.offer.nightly)} a night` : ""}.</li>`).join("")}</ul>
+<p>${esc(ev.name)} runs ${esc(ev.when)}. Hotels in ${esc(c.city)} fill up and get more expensive around it, so compare the three early and book the one with free cancellation if your dates may move.</p>
+<h2>Other events</h2><p>${EVENTS.filter((e) => e.slug !== slug).slice(0, 8).map((e) => `<a href="/lists/${e.slug}">${esc(e.name)}</a>`).join(" · ")}</p></section>
+<p style="margin-top:22px"><a class="btn" href="${P(L, "/" + c.slug)}">${esc(t.h1(c.city))} →</a></p>`;
+	const ld = [{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{
+				"@type": "ListItem",
+				position: 1,
+				name: "Top3Hotels",
+				item: "https://www.top3hotels.com/"
+			},
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: t.lists,
+				item: "https://www.top3hotels.com/lists"
+			},
+			{
+				"@type": "ListItem",
+				position: 3,
+				name: ev.name,
+				item: `${SITE}/lists/${slug}`
+			}
+		]
+	}, {
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: `Best hotels for ${ev.name}`,
+		itemListElement: d.hotels.map((h, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: `${h.name}, ${c.city}`,
+			url: `${SITE}/${c.slug}`
+		}))
+	}];
 	return page({
 		L,
 		title,
 		description: `The three hotels to book in ${c.city} for ${ev.name} (${ev.when}): Budget, Best Value and Luxury, with sourced scores and reference prices.`,
 		path: `/lists/${slug}`,
 		body,
-		langs: true,
+		ld,
+		...L === "en" ? { alts: ["en"] } : { noindex: true },
 		...d.extras?.hero?.img ? { image: d.extras.hero.img } : {}
 	});
 }
-function notFoundPage(path, L) {
+function notFoundPage(path, L, sug = []) {
 	const t = T[L];
+	const dym = sug.length ? `<p style="text-align:center;margin:18px 0 0;font-size:18px">${L === "es" ? "¿Quizás buscabas" : "Did you mean"} ${sug.map((c) => `<a href="${P(L, "/" + c.slug)}"><b>${esc(c.city)}</b></a>`).join(", ")}?</p>` : "";
 	return page({
 		L,
 		title: `${t.notFound} | Top3Hotels`,
 		description: t.destLead(119),
 		path,
 		noindex: true,
-		body: `<div style="text-align:center;padding:56px 0 10px"><p style="font:400 92px/1 var(--serif);margin:0;color:var(--coral)">4<span style="color:var(--budget)">0</span><span style="color:var(--lux)">4</span></p><h1 style="margin-top:12px">${esc(Y[L].nfTitle)}<em>.</em></h1><p class="lead" style="margin:0 auto">${esc(t.notFound)}. ${esc(Y[L].nfLead)}</p><p style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:22px"><button type="button" class="btn" data-pal>🔍 ${esc(Y[L].js["search"])}</button><a class="btn ghost" href="/random">🎲 ${esc(Y[L].js["surprise"])}</a><a class="btn ghost" href="${P(L, "/destinations")}">${esc(t.allDest)}</a></p><div class="chipsrow" style="justify-content:center;margin-top:26px">${POPULAR.map((s) => `<a href="${P(L, "/" + s)}">${esc(s.replace(/-/g, " ").replace(/\b\w/g, (m) => m.toUpperCase()))}</a>`).join("")}</div></div>`
+		body: `<div style="text-align:center;padding:56px 0 10px"><p style="font:400 92px/1 var(--serif);margin:0;color:var(--coral)">4<span style="color:var(--budget)">0</span><span style="color:var(--lux)">4</span></p><h1 style="margin-top:12px">${esc(Y[L].nfTitle)}<em>.</em></h1><p class="lead" style="margin:0 auto">${esc(t.notFound)}. ${esc(Y[L].nfLead)}</p>${dym}<p style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:22px"><button type="button" class="btn" data-pal>🔍 ${esc(Y[L].js["search"])}</button><a class="btn ghost" href="/random">🎲 ${esc(Y[L].js["surprise"])}</a><a class="btn ghost" href="${P(L, "/destinations")}">${esc(t.allDest)}</a></p><div class="chipsrow" style="justify-content:center;margin-top:26px">${POPULAR.map((s) => `<a href="${P(L, "/" + s)}">${esc(s.replace(/-/g, " ").replace(/\b\w/g, (m) => m.toUpperCase()))}</a>`).join("")}</div></div>`
 	});
 }
 async function stats() {
@@ -19262,10 +24739,10 @@ ${pillars(n)}
 <div class="prose">
 <h2>Why we exist</h2><p>Booking a hotel should not take an evening. Big booking sites show hundreds of options, sponsored placements and filters. We do the shortlisting for you, with the same rules in every city, so you can decide in seconds and book with confidence.</p>
 <h2>What makes us different</h2><ul><li><b>Three picks, not three hundred.</b> One per budget level, always in the same order.</li><li><b>No paid rankings.</b> A hotel cannot pay to be included, moved up or kept in a list.</li><li><b>Sourced and dated.</b> Guest scores, review counts and reference prices come from Booking.com and show the date we checked them.</li><li><b>Useful context.</b> Walking time to the best-known sights, what guests praise and what they criticise, and who each hotel suits best.</li></ul>
-<h2>Who is behind Top3Hotels</h2><p>Top3Hotels is an independent project of ${esc(BRAND.entity)} (${esc(BRAND.place)}), founded by ${esc(BRAND.founder)}, a growth and travel-tech entrepreneur based between Denmark and Spain. The editorial rules are public on <a href="/how-we-choose">How we choose</a>.</p>
+<h2>Who is behind Top3Hotels</h2><div class="founder"><img src="${esc(FOUNDER.photo)}" alt="Carlos de Ory, founder of Top3Hotels" width="160" height="240" loading="lazy" referrerpolicy="no-referrer" onerror="this.outerHTML='<span class=&quot;fav&quot; aria-hidden=&quot;true&quot;>CO</span>'"><div><p><b>${esc(FOUNDER.name)}, founder.</b> ${esc(FOUNDER.bioEn)}</p><p lang="es"><b>En español.</b> ${esc(FOUNDER.bioEs)}</p><p class="flinks">${FOUNDER.sameAs.map((u) => `<a href="${esc(u)}" rel="me noopener" target="_blank">${esc(u.replace(/^https:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" · ")}</p></div></div><p>Top3Hotels is an independent project of ${esc(BRAND.entity)} (${esc(BRAND.place)}). The editorial rules are public on <a href="/how-we-choose">How we choose</a>.</p><style>.founder{display:flex;gap:20px;align-items:flex-start;margin:8px 0 18px}.founder img,.founder .fav{flex:none;width:120px;height:180px;object-fit:cover;border-radius:16px;background:#e8edf3}.founder .fav{display:grid;place-items:center;font:600 34px Fraunces,Georgia,serif;color:var(--ink)}.founder p{margin:0 0 10px}.flinks{font-size:14px}.flinks a{color:inherit}@media(max-width:560px){.founder{flex-direction:column}}</style>
 <h2>How we make money</h2><p>When you book through some of our links we may earn a commission from the booking site, at no extra cost to you. Commissions never influence which hotels we pick.</p>
 <p><a class="btn" href="/how-we-choose">How we choose</a> <a class="btn ghost" href="/partners">For hotels &amp; partners</a></p></div>`,
-		ld: [orgLd()]
+		ld: [orgLd(), founderLd()]
 	});
 }
 async function methodPage() {
@@ -19365,6 +24842,44 @@ function legalPage(kind) {
 		body: `${crumbsEn(title)}<h1>${esc(title)}<em>.</em></h1><div class="prose">${html2}</div>`
 	});
 }
+var FOUNDER = {
+	name: "Carlos de Ory",
+	photo: "https://www.carlosdeory.com/assets/cdo/carlos.jpg",
+	sameAs: [
+		"https://www.carlosdeory.com/",
+		"https://www.linkedin.com/in/carlosdeory/",
+		"https://x.com/mrstartups",
+		"https://www.instagram.com/carlosdeory/",
+		"https://www.youtube.com/@CarlosDeOry",
+		"https://www.facebook.com/happylowcostofficialpage"
+	],
+	bioEn: "Carlos de Ory is a Spanish entrepreneur and the founder of Top3Hotels. He has run an affiliate-marketing business for more than 11 years, best known for Happy Low Cost, a travel deals community with more than 400,000 followers. His background is in growth: he leads AI, SEO and performance marketing for his own companies and works as a growth marketer and CMO. Earlier in his career he worked in talent acquisition at Robert Half and Kraft Heinz.",
+	bioEs: "Carlos de Ory es un emprendedor español y el fundador de Top3Hotels. Lleva más de 11 años al frente de un negocio de marketing de afiliación, conocido sobre todo por Happy Low Cost, una comunidad de ofertas de viaje con más de 400.000 seguidores. Su perfil es de crecimiento: dirige la IA, el SEO y el marketing de resultados de sus propias empresas y trabaja como growth marketer y CMO. Antes trabajó en captación de talento en Robert Half y Kraft Heinz."
+};
+var founderLd = () => ({
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"@id": `${SITE}/about#founder`,
+	name: FOUNDER.name,
+	jobTitle: "Founder",
+	description: FOUNDER.bioEn,
+	image: FOUNDER.photo,
+	url: `${SITE}/about`,
+	sameAs: FOUNDER.sameAs,
+	knowsAbout: [
+		"Affiliate marketing",
+		"Growth marketing",
+		"Search engine optimization",
+		"Performance marketing",
+		"Artificial intelligence",
+		"Travel"
+	],
+	worksFor: {
+		"@type": "Organization",
+		name: "Top3Hotels",
+		url: SITE
+	}
+});
 function orgLd() {
 	return {
 		"@context": "https://schema.org",
@@ -19380,7 +24895,9 @@ function orgLd() {
 		},
 		founder: {
 			"@type": "Person",
-			name: BRAND.founder
+			"@id": `${SITE}/about#founder`,
+			name: BRAND.founder,
+			sameAs: FOUNDER.sameAs
 		}
 	};
 }
@@ -19552,6 +25069,18 @@ var POPULAR = [
 	"malaga",
 	"prague"
 ];
+/** Most-searched cities, countries, method and FAQ for the language homes (crawlable links + real answers). */
+async function homeExtra(L) {
+	const hx = HOME_EXTRA[L];
+	if (!hx) return "";
+	const { index, byCountry } = await data();
+	const top = [...index].sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0)).slice(0, 36);
+	const cs = [...byCountry.entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 24);
+	return `<section><h2>${esc(hx.cities)}</h2><ul class="grid">${top.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(T[L].h1(cityName(c, L)))}</a></li>`).join("")}</ul></section>
+<section><h2>${esc(hx.countries)}</h2><ul class="grid">${cs.map(([k, v]) => `<li><a href="${P(L, "/country/" + k)}">${esc(countryName(v[0], L))} <span>${v.length}</span></a></li>`).join("")}</ul></section>
+<section><h2>${esc(hx.how)}</h2><ol>${hx.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol><p><a href="/how-we-choose">→</a></p></section>
+<section><h2>${esc(hx.faqH)}</h2>${hx.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>`;
+}
 async function landingPage(L) {
 	const { bySlug, byCountry } = await data();
 	const t = T[L];
@@ -19561,17 +25090,40 @@ async function landingPage(L) {
 		return c && d ? tileFor(c, d.hotels[1], L) : "";
 	}));
 	const aps = Object.entries(await airports());
+	const extra = await homeExtra(L);
 	const body = `<h1 style="margin-top:28px">${esc(t.homeH1)}<em>.</em></h1><p class="lead">${esc(t.lead())}</p>
 <form class="find" action="/" method="get" role="search"><label><span>${esc(t.search)}</span><input name="city" required autocomplete="off" placeholder="London, Paris, Tokyo…"></label><button class="btn" type="submit">${esc(t.seeDates)}</button></form>
 <section><h2>${esc(t.popular)}</h2><div class="tiles">${tiles.join("")}</div></section>
 <section><h2>${esc(t.fromNav)}</h2><ul class="grid">${aps.map(([k, a]) => `<li><a href="${P(L, `/from/${k}`)}">${esc(t.fromH1(a.name))} <span>${esc(a.iata)}</span></a></li>`).join("")}</ul></section>
-<section><h2>${esc(t.lists)}</h2><ul class="grid">${THEMES.map((th) => `<li><a href="${P(L, `/lists/${th}`)}">${esc(t.themes[th].title)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, "/destinations")}">${esc(t.destH1(byCountry.size))} →</a></p></section>`;
+<section><h2>${esc(t.lists)}</h2><ul class="grid">${THEMES.map((th) => `<li><a href="${P(L, `/lists/${th}`)}">${esc(t.themes[th].title)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, "/destinations")}">${esc(t.destH1(byCountry.size))} →</a></p></section>${extra}`;
+	const hx = HOME_EXTRA[L];
+	const ld = [{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		name: "Top3Hotels",
+		url: SITE,
+		logo: `${SITE}/brand/icon-512.png`,
+		sameAs: ["https://x.com/mrstartups"]
+	}];
+	if (hx) ld.push({
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		mainEntity: hx.faq.map(([q, a]) => ({
+			"@type": "Question",
+			name: q,
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: a
+			}
+		}))
+	});
 	return page({
 		L,
-		title: `Top3Hotels | ${t.footer}`,
-		description: t.lead(),
+		title: HOME_SEO[L]?.title || `Top3Hotels | ${t.footer}`,
+		description: HOME_SEO[L]?.description || t.lead(),
 		path: "/",
 		body,
+		ld,
 		langs: true
 	});
 }
@@ -19729,7 +25281,7 @@ async function embedPage(slug) {
 	const t = T.en;
 	const items = d.hotels.map((h) => {
 		const img = h.gallery?.find((g) => g.src)?.src;
-		return `<a class="h ${catKey(h)}" href="${SITE}/${c.slug}#${catKey(h)}" target="_blank" rel="noopener">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}<span class="t">${esc(label(h, "en"))}</span><strong>${esc(h.name)}</strong><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)} ${esc(t.perNight)}</small></a>`;
+		return `<a class="h ${catKey(h)}" href="${SITE}/${c.slug}#${catKey(h)}" target="_blank" rel="noopener">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"${fbAttr((h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3))}>` : ""}<span class="t">${esc(label(h, "en"))}</span><strong>${esc(h.name)}</strong><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)} ${esc(t.perNight)}</small></a>`;
 	}).join("");
 	return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Top 3 hotels in ${esc(c.city)} · Top3Hotels</title><style>body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;color:#10213a;background:#faf8f4}.w{padding:14px}.hd{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 10px}.hd b{font:600 18px Georgia,serif}.hd a{color:#d83b51;font-size:12px;text-decoration:none;font-weight:600}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.h{display:flex;flex-direction:column;gap:3px;background:#fff;border:1px solid #e6e1d8;border-top:4px solid var(--c);border-radius:14px;overflow:hidden;color:#10213a;text-decoration:none;padding-bottom:10px}.h img{width:100%;aspect-ratio:3/2;object-fit:cover;background:#f2eee7}.h .t,.h strong,.h small{padding:0 10px}.h .t{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--c);margin-top:6px}.h strong{font:600 15px/1.25 Georgia,serif}.h small{color:#525d6b}.budget{--c:#1f7a5a}.value{--c:#d83b51}.lux{--c:#9a6b00}</style></head><body><div class="w"><div class="hd"><b>The 3 best hotels in ${esc(c.city)}</b><a href="${SITE}/${c.slug}" target="_blank" rel="noopener">top3hotels.com ↗</a></div><div class="g">${items}</div></div></body></html>`;
 }
@@ -19941,7 +25493,7 @@ var HPT = {
 };
 var CSS_HP = `.hp-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px;font-size:15px;opacity:.9}.hp-facts b{font-weight:700}.hp-badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--pale,#eef3fa);margin:0 0 10px}
 .hp-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:6px 0 18px;background:#e5e8ee}.hp-verdict{font-size:19px;line-height:1.55;border-left:4px solid currentColor;padding:4px 0 4px 16px;margin:0 0 22px}
-.hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;opacity:.7;text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
+.hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;color:var(--muted);text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
 .hp-faq details{border-top:1px solid rgba(127,127,127,.25);padding:12px 0}.hp-faq summary{font-weight:700;cursor:pointer;font-size:17px}.hp-others{display:grid;gap:10px;margin:10px 0 0;padding:0;list-style:none}.hp-others a{display:block;padding:12px 14px;border:1px solid rgba(127,127,127,.25);border-radius:12px;text-decoration:none}`;
 async function hotelPage(slug, L) {
 	if (!HP_LANGS.includes(L)) return null;
@@ -19956,9 +25508,14 @@ async function hotelPage(slug, L) {
 	const live = new Set(list.map((x) => x.slug));
 	const bk = f.booking_url ? CJ_BOOKING(String(f.booking_url), "t3hotel") : null;
 	const alt = altSearch(d.cat, f.nightly_eur, f.stars, {
+		id: city?.id,
+		slug: d.city_slug,
 		city: d.city,
 		country: d.country
 	});
+	const hgal = ((city ? await cityData(city.id).catch(() => null) : null)?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.gallery?.map((g) => g.src) ?? [];
+	const hphotos = hotelPhotos(f.booking_url, [f.photo, ...hgal]);
+	const hfb = city ? `/api/img/${city.id}/big` : "";
 	const others = (f.other_picks ?? []).map((o) => {
 		const s2 = hotelSlug(o.name, d.city_slug);
 		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
@@ -19972,13 +25529,13 @@ async function hotelPage(slug, L) {
 		f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
 		f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
 	].filter(Boolean).join("");
-	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p><a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : "";
+	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p>${alt ? `<a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : ""}` : "";
 	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
-<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
+<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${city ? `<a href="${P(L, `/country/${city.cslug}`)}">${esc(countryName(city, L))}</a> › ` : ""}<a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
 <h1>${esc(f.name)}</h1>
 <p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
-${f.photo ? `<img class="hp-hero" src="${esc(f.photo)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+${hphotos[0] || hfb ? `<img class="hp-hero" width="1280" height="720" fetchpriority="high" src="${esc(hphotos[0] || hfb)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer"${fbAttr([...hphotos.slice(1), hfb])}>` : ""}
 <div class="hp-facts">${facts}</div>
 <p class="hp-verdict">${esc(c.verdict)}</p>
 ${cta}
@@ -19993,7 +25550,7 @@ ${cta}
 			"@type": "Hotel",
 			name: f.name,
 			url: SITE + P(L, path),
-			...f.photo ? { image: f.photo } : {},
+			...hphotos.length ? { image: hphotos.slice(0, 3) } : {},
 			address: {
 				"@type": "PostalAddress",
 				...f.address ? { streetAddress: f.address } : {},
@@ -20033,15 +25590,21 @@ ${cta}
 					name: t.home,
 					item: SITE + P(L, "/")
 				},
-				{
+				...city ? [{
 					"@type": "ListItem",
 					position: 2,
+					name: countryName(city, L),
+					item: SITE + P(L, `/country/${city.cslug}`)
+				}] : [],
+				{
+					"@type": "ListItem",
+					position: city ? 3 : 2,
 					name: d.city,
 					item: SITE + P(L, `/${d.city_slug}`)
 				},
 				{
 					"@type": "ListItem",
-					position: 3,
+					position: city ? 4 : 3,
 					name: f.name,
 					item: SITE + P(L, path)
 				}
@@ -20056,7 +25619,7 @@ ${cta}
 		body,
 		ld,
 		alts: Object.keys(d.content ?? {}).filter((l) => HP_LANGS.includes(l)),
-		image: f.photo || void 0
+		image: hphotos[0] || void 0
 	});
 }
 async function hotelSitemap() {
@@ -20069,11 +25632,9 @@ async function sitemapFor(L) {
 		"/destinations",
 		"/lists",
 		"/cheap-cities",
-		"/map",
-		"/press",
 		...Object.keys(await airports()).map((k) => `/from/${k}`),
 		...THEMES.map((t) => `/lists/${t}`),
-		...EVENTS.map((e) => `/lists/${e.slug}`),
+		...L === "en" ? EVENTS.map((e) => `/lists/${e.slug}`) : [],
 		...[...byCountry.keys()].map((c) => `/country/${c}`),
 		...index.map((c) => `/${c.slug}`)
 	];
@@ -20082,33 +25643,30 @@ async function sitemapFor(L) {
 		"/how-we-choose",
 		"/partners",
 		"/contact",
-		"/privacy",
-		"/cookies",
-		"/terms",
-		"/imprint",
-		"/affiliate-disclosure",
+		"/press",
 		"/guides",
 		...POSTS.map((x) => `/guides/${x.slug}`)
-	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : L === "es" ? ["/guides", ...POSTS_ES.map((x) => `/guides/${x.slug}`)].map((x) => `<url><loc>${SITE}/es${x}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
+	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${CONTENT_DATE}</lastmod></url>`).join("\n") + "\n" : L === "es" ? ["/guides", ...POSTS_ES.map((x) => `/guides/${x.slug}`)].map((x) => `<url><loc>${SITE}/es${x}</loc><lastmod>${CONTENT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
+	const enes = L === "en" || L === "es" ? [...await gymPaths(), ...await poolPaths()].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod><xhtml:link rel="alternate" hreflang="en" href="${SITE}${x}"/><xhtml:link rel="alternate" hreflang="es" href="${SITE}/es${x}"/><xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n" : "";
 	const growth = GROWTH_LANGS.includes(L) ? [
 		"/open-data",
 		"/hotel-price-index",
 		"/rated-9-under-60",
 		"/budget",
-		"/escape",
-		"/split",
 		"/awards",
 		"/near-me",
 		"/best-value-hotels-2026",
 		...await seoPaths(),
 		...(await countryValueSlugs()).map((c) => `/best-value/${c}`)
-	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${GROWTH_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}</url>`).join("\n") + "\n" : "";
-	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${SNAPSHOT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}</url>`).join("\n")}\n${extra}${growth}</urlset>\n`;
+	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod>${GROWTH_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n" : "";
+	const heroImg = /* @__PURE__ */ new Map();
+	for (const c of index) if ((await cityData(c.id))?.extras?.hero?.img) heroImg.set("/" + c.slug, `${SITE}/api/img/${c.id}/big`);
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${CONTENT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${p}"/>${heroImg.has(p) ? `<image:image><image:loc>${heroImg.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n")}\n${extra}${enes}${growth}</urlset>\n`;
 }
-var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${SNAPSHOT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc></sitemap>\n</sitemapindex>\n`;
-var ROBOTS = `User-agent: *\nAllow: /\nDisallow: /api/\n\n# Data and summary for AI assistants: ${SITE}/llms.txt (open data: ${SITE}/open-data)\nSitemap: ${SITE}/sitemap.xml\n`;
+var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>\n</sitemapindex>\n`;
+var ROBOTS = `User-agent: *\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# AI assistants and AI search engines are welcome to crawl and cite us (please credit \"Top3Hotels\" with a link).\nUser-agent: GPTBot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: ClaudeBot\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: anthropic-ai\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Google-Extended\nUser-agent: Applebot-Extended\nUser-agent: Amazonbot\nUser-agent: DuckAssistBot\nUser-agent: Meta-ExternalAgent\nUser-agent: CCBot\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# Summary for AI assistants: ${SITE}/llms.txt\n# Every pick in plain text: ${SITE}/llms-full.txt\n# Open data (CC BY 4.0): ${SITE}/open-data\nSitemap: ${SITE}/sitemap.xml\n`;
 var SB_URL = "https://gmdalfsvtfhzepyrdmjj.supabase.co";
-var SB_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4";
+var SB_ANON = "sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz";
 function envVar(env, k) {
 	const v = env && env[k] || globalThis.process?.env?.[k];
 	return typeof v === "string" && v ? v : void 0;
@@ -20121,16 +25679,22 @@ async function alerts(request, env) {
 		headers: { "content-type": "application/json" }
 	});
 	if (request.method === "GET") return res({ enabled: true });
+	if (request.method !== "POST") return res({ error: "method" }, 405);
+	const origin = request.headers.get("origin");
+	if (origin && !/^https:\/\/(www\.)?top3hotels\.com$/.test(origin)) return res({ error: "origin" }, 403);
+	if (!(request.headers.get("content-type") ?? "").includes("application/json")) return res({ error: "content_type" }, 415);
+	if (Number(request.headers.get("content-length") ?? 0) > 2048) return res({ error: "too_large" }, 413);
 	let body;
 	try {
-		body = await request.json();
+		body = JSON.parse((await request.text()).slice(0, 2048));
 	} catch {
 		return res({ error: "bad_json" }, 400);
 	}
 	const email = String(body.email ?? "").trim().toLowerCase();
 	if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || email.length > 200) return res({ error: "bad_email" }, 400);
-	const city = String(body.city ?? "").slice(0, 80);
-	const category = String(body.category ?? "").slice(0, 20);
+	if (body.website) return res({ ok: true });
+	const city = String(body.city ?? "").replace(/[<>"]/g, "").slice(0, 80);
+	const category = String(body.category ?? "").replace(/[^a-z -]/gi, "").slice(0, 20);
 	const max = Math.max(1, Math.min(1e5, Math.round(Number(body.max) || 0)));
 	if (!key || !audience) return (await fetch(`${SB_URL}/rest/v1/top3_alerts`, {
 		method: "POST",
@@ -20238,6 +25802,18 @@ async function handleSeo(request, env) {
 	}
 	if (p === "/random") return randomCity();
 	if (p === "/api/map.json") return mapJson();
+	if (p === "/.well-known/security.txt" || p === "/security.txt") return new Response(`Contact: mailto:${BRAND.email}\nExpires: 2027-11-08T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://www.top3hotels.com/.well-known/security.txt
+Policy: https://www.top3hotels.com/terms
+`, { headers: {
+		"content-type": "text/plain; charset=utf-8",
+		"cache-control": "public, max-age=86400"
+	} });
+	if (p === "/site.webmanifest") return new Response(MANIFEST, { headers: {
+		"content-type": "application/manifest+json",
+		"cache-control": "public, max-age=86400"
+	} });
 	if (p === "/manifest.webmanifest") return new Response(MANIFEST, { headers: {
 		"content-type": "application/manifest+json",
 		"cache-control": "public, max-age=86400"
@@ -20256,6 +25832,10 @@ async function handleSeo(request, env) {
 		"content-type": "application/json; charset=utf-8",
 		"cache-control": "public, max-age=3600, s-maxage=86400",
 		"access-control-allow-origin": "*"
+	} });
+	if (p === "/llms-full.txt") return new Response(await llmsFullTxt(), { headers: {
+		"content-type": "text/plain; charset=utf-8",
+		"cache-control": "public, max-age=3600, s-maxage=86400"
 	} });
 	if (p === "/llms.txt") return new Response(await llmsTxt(), { headers: {
 		"content-type": "text/plain; charset=utf-8",
@@ -20300,6 +25880,18 @@ async function handleSeo(request, env) {
 			"cache-control": "public, max-age=3600, s-maxage=86400"
 		} });
 	}
+	if (p === "/gyms") return html(await gymIndexPage("en"));
+	const gy = p.match(/^\/gyms\/([a-z0-9-]+)\/?$/);
+	if (gy) {
+		const out = await gymCityPage(gy[1], "en");
+		return out instanceof Response ? out : out ? html(out) : null;
+	}
+	if (p === "/pools") return html(await poolIndexPage("en"));
+	const po = p.match(/^\/pools\/([a-z0-9-]+)\/?$/);
+	if (po) {
+		const out = await poolCityPage(po[1], "en");
+		return out instanceof Response ? out : out ? html(out) : null;
+	}
 	let L = "en";
 	const lm = p.match(/^\/(es|de|fr|it|pt|da)(\/.*)?$/);
 	if (lm) {
@@ -20312,11 +25904,25 @@ async function handleSeo(request, env) {
 			const out = guidePage(gde[1], "es");
 			return out ? html(out) : null;
 		}
+		if (L === "es" && p === "/gyms") return html(await gymIndexPage("es"));
+		const gye = p.match(/^\/gyms\/([a-z0-9-]+)\/?$/);
+		if (gye) {
+			if (L !== "es") return Response.redirect(`${SITE}${p}`, 301);
+			const out = await gymCityPage(gye[1], "es");
+			return out instanceof Response ? out : out ? html(out) : null;
+		}
+		if (L === "es" && p === "/pools") return html(await poolIndexPage("es"));
+		const poe = p.match(/^\/pools\/([a-z0-9-]+)\/?$/);
+		if (poe) {
+			if (L !== "es") return Response.redirect(`${SITE}${p}`, 301);
+			const out = await poolCityPage(poe[1], "es");
+			return out instanceof Response ? out : out ? html(out) : null;
+		}
 	}
 	{
 		const gp = p === "/open-data" ? "od" : p === "/hotel-price-index" ? "idx" : p === "/rated-9-under-60" ? "nine" : p.startsWith("/best-value/") ? "bv" : p === "/budget" ? "bud" : p === "/escape" ? "esc" : p === "/split" ? "spl" : p === "/awards" ? "aw" : p === "/near-me" ? "nm" : p === "/best-value-hotels-2026" ? "b100" : /^\/compare-picks\/[a-z0-9-]+\/?$/.test(p) ? "cmp" : /^\/near\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(p) ? "near" : "";
 		if (gp) {
-			if (!GROWTH_LANGS.includes(L)) return Response.redirect(`${SITE}${p}`, 302);
+			if (!GROWTH_LANGS.includes(L)) return Response.redirect(`${SITE}${p}`, 301);
 			if (gp === "od") return html(await openDataPage(L));
 			if (gp === "idx") return html(await priceIndexPage(L));
 			if (gp === "nine") return html(await ninePage(L));
@@ -20378,9 +25984,9 @@ async function handleSeo(request, env) {
 	}
 	const hp = p.match(/^\/hotel\/([a-z0-9-]+)\/?$/);
 	if (hp) {
-		if (!HP_LANGS.includes(L)) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 302);
+		if (!HP_LANGS.includes(L)) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 301);
 		const out = await hotelPage(hp[1], L);
-		if (!out && L !== "en" && (await hotelPagesList()).some((x) => x.slug === hp[1])) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 302);
+		if (!out && L !== "en" && (await hotelPagesList()).some((x) => x.slug === hp[1])) return Response.redirect(`${SITE}/hotel/${hp[1]}`, 301);
 		return out ? html(out, 200, "public, max-age=1800, s-maxage=21600") : html(notFoundPage(p, L), 404, "no-store");
 	}
 	const country = p.match(/^\/country\/([a-z0-9-]+)\/?$/);
@@ -20399,14 +26005,24 @@ async function handleSeo(request, env) {
 		const ex = ALIASES[slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "")];
 		const legacy = byId.get(slug) ?? (ex ? bySlug.get(ex) ?? byId.get(ex) : void 0) ?? (await data()).index.find((c) => c.alias === slug);
 		if (legacy) return Response.redirect(`${SITE}${P(L, "/" + legacy.slug)}${url.search}`, 301);
-		return html(notFoundPage(p, L), 404, "no-store");
+		const lev = (a, b) => {
+			const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+			for (let j = 1; j <= b.length; j++) d[0][j] = j;
+			for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+			return d[a.length][b.length];
+		};
+		const sug = slug.length >= 3 && slug.length <= 40 ? (await data()).index.map((c) => ({
+			c,
+			s: lev(slug, c.slug)
+		})).filter((x) => x.s <= Math.max(2, Math.floor(slug.length / 4))).sort((a, b) => a.s - b.s || (b.c.pop ?? 0) - (a.c.pop ?? 0)).slice(0, 6).map((x) => x.c) : [];
+		return html(notFoundPage(p, L, sug), 404, "no-store");
 	}
 	const out = await cityPage(city, L);
 	return out ? html(out) : html(notFoundPage(p, L), 404, "no-store");
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-CbvFkyG6.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CW6UWq0F.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -20428,13 +26044,41 @@ function isH3SwallowedErrorBody(body) {
 		return false;
 	}
 }
+/** Browser security headers for every response of the top3hotels worker (8-nov-2026).
+*  CSP keeps inline scripts (the pages are server-rendered with inline JS) but blocks plugins, <base> hijacking,
+*  form posts to other sites and framing by other sites. /embed/* is meant to be framed by blogs, so it is the exception. */
+function secure(res, url) {
+	const h = new Headers(res.headers);
+	const embed = url.pathname.startsWith("/embed");
+	const ct = h.get("content-type") ?? "";
+	h.set("x-content-type-options", "nosniff");
+	h.set("referrer-policy", "strict-origin-when-cross-origin");
+	h.set("permissions-policy", "camera=(), microphone=(self), geolocation=(self), payment=(), usb=(), serial=(), bluetooth=(), browsing-topics=(), interest-cohort=()");
+	h.set("x-permitted-cross-domain-policies", "none");
+	if (ct.includes("text/html")) {
+		h.set("content-security-policy", `object-src 'none'; base-uri 'self'; form-action 'self' https://www.booking.com; frame-ancestors ${embed ? "*" : "'self'"}; upgrade-insecure-requests`);
+		if (!embed) h.set("x-frame-options", "SAMEORIGIN");
+		h.set("cross-origin-opener-policy", "same-origin-allow-popups");
+	}
+	return new Response(res.body, {
+		status: res.status,
+		statusText: res.statusText,
+		headers: h
+	});
+}
 var server_default = { async fetch(request, env, ctx) {
+	const url = new URL(request.url);
+	const res = await handle(request, env, ctx);
+	if (res.status >= 300 && res.status < 400) return res;
+	return secure(res, url);
+} };
+async function handle(request, env, ctx) {
 	try {
 		const url = new URL(request.url);
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-ojFoXWiQ.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-QgKBIq8G.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {
@@ -20453,6 +26097,6 @@ var server_default = { async fetch(request, env, ctx) {
 			headers: { "content-type": "text/html; charset=utf-8" }
 		});
 	}
-} };
+}
 //#endregion
 export { server_default as default, renderErrorPage as t };

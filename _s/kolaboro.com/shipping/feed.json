@@ -1,0 +1,310 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Kolaboro: what we shipped each day",
+ "home_page_url": "https://kolaboro.com/shipping/",
+ "feed_url": "https://kolaboro.com/shipping/feed.json",
+ "description": "One item per UTC day with the changes shipped to kolaboro.com, from the git history of the live site.",
+ "language": "en",
+ "authors": [
+  {
+   "name": "Kolaboro",
+   "url": "https://kolaboro.com"
+  }
+ ],
+ "items": [
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-17",
+   "url": "https://kolaboro.com/changelog/2026-11-17/",
+   "title": "17 November 2026: 12 changes shipped",
+   "content_text": "- Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status\n- Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers\n- Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)\n- Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)\n- Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language\n- Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro n30c: map clusters and delay heat layer, pin check, price history by place, image reuse across all hashes, widget v2 and builder, engineering status</li><li>Kolaboro.com data: snapshot entry 2026-11-17 (1,745 projects) in the dataset hash chain; web forensics 532 registration dates, 452 certificate issuers</li><li>Daily dataset hash chain, API v1 playground and change sync, project certificates, data quality, developer website forensics, offline app (n30b)</li><li>Contract reader on /tools/ and contract check, timeline link on compare, slider script fix, sitemap and ticker line (n30a)</li><li>Kolaboro n30c: status tiles from the 7-day outside probes, deploy wording, widget country names in the page language</li><li>Contract reader passages keep their own direction on Arabic pages, larger radar labels on phones (n30a)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-17T00:00:00Z",
+   "date_modified": "2026-11-17T17:05:56Z",
+   "_kolaboro": {
+    "ships": 12,
+    "data_updates": 13,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-14",
+   "url": "https://kolaboro.com/changelog/2026-11-14/",
+   "title": "14 November 2026: 34 changes shipped",
+   "content_text": "- /countries/ (58 countries with 5+ named projects) and /rankings/ in 7 more languages with hreflang from the English pages, in /m/sitemap.xml (n29i)\n- True lastmod pins and IndexNow 2026-11-14T14:43 (run by hand: the scheduled job was cancelled by the daily Actions budget on 12 and 13 Nov) (n29t)\n- Feeds link project pages instead of /p/?id= redirects, feed icon that exists, corrections.json links, Arabic skip link override removed (n28a)\n- /numbers/ served from a day-long edge copy refreshed in the background (cold build 8.6 s), quoted price context without half words (n28a)\n- [name] /m/ and /p/ get the 404 page, chart heights on /press/monthly/, Russian cookie label, Arabic arrows (n28a)\n- No canonical on 404 pages, Content-Language on every page, /numbers/ copy survives deploys, ticker line (n28a)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>/countries/ (58 countries with 5+ named projects) and /rankings/ in 7 more languages with hreflang from the English pages, in /m/sitemap.xml (n29i)</li><li>True lastmod pins and IndexNow 2026-11-14T14:43 (run by hand: the scheduled job was cancelled by the daily Actions budget on 12 and 13 Nov) (n29t)</li><li>Feeds link project pages instead of /p/?id= redirects, feed icon that exists, corrections.json links, Arabic skip link override removed (n28a)</li><li>/numbers/ served from a day-long edge copy refreshed in the background (cold build 8.6 s), quoted price context without half words (n28a)</li><li>[name] /m/ and /p/ get the 404 page, chart heights on /press/monthly/, Russian cookie label, Arabic arrows (n28a)</li><li>No canonical on 404 pages, Content-Language on every page, /numbers/ copy survives deploys, ticker line (n28a)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-14T00:00:00Z",
+   "date_modified": "2026-11-14T16:42:09Z",
+   "_kolaboro": {
+    "ships": 34,
+    "data_updates": 11,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-13",
+   "url": "https://kolaboro.com/changelog/2026-11-13/",
+   "title": "13 November 2026: 26 changes shipped",
+   "content_text": "- Faster first paint on 235 pages (page height read after load), home below-the-fold sections rendered on demand, calculator converts the price to the tax currency (n27u)\n- No page claims site visits work today; they are marked \"being set up\" in 8 languages, pricing shows the status, hero line reads cleanly on phones (n27z)\n- Handover on record is the latest dated handover we hold, so moved or phased projects are not shown as kept or overdue (82 projects corrected, n27g)\n- Most searched projects list updated from the review batch; Place and GeoCoordinates item marked done on /progress/improvements/ (n27g)\n- The 150 most searched projects in UAE, Middle East, Europe and Africa reviewed against official registers and developer pages (n27r1)\n- Buying off-plan guides for Bali, Dubai, Phuket, Costa del Sol, Lisbon, Cyprus, Miami and Tulum in 8 languages (n27c, items 10 and 11)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Faster first paint on 235 pages (page height read after load), home below-the-fold sections rendered on demand, calculator converts the price to the tax currency (n27u)</li><li>No page claims site visits work today; they are marked &quot;being set up&quot; in 8 languages, pricing shows the status, hero line reads cleanly on phones (n27z)</li><li>Handover on record is the latest dated handover we hold, so moved or phased projects are not shown as kept or overdue (82 projects corrected, n27g)</li><li>Most searched projects list updated from the review batch; Place and GeoCoordinates item marked done on /progress/improvements/ (n27g)</li><li>The 150 most searched projects in UAE, Middle East, Europe and Africa reviewed against official registers and developer pages (n27r1)</li><li>Buying off-plan guides for Bali, Dubai, Phuket, Costa del Sol, Lisbon, Cyprus, Miami and Tulum in 8 languages (n27c, items 10 and 11)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-13T00:00:00Z",
+   "date_modified": "2026-11-13T14:59:25Z",
+   "_kolaboro": {
+    "ships": 26,
+    "data_updates": 9,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-12",
+   "url": "https://kolaboro.com/changelog/2026-11-12/",
+   "title": "12 November 2026: 49 changes shipped",
+   "content_text": "- Named project titles: a very long project name falls back to its part before the first comma, dash or slash so the title stays under 60 characters (n24s)\n- /handover/, /areas/ and /vs/ pages answer 503 (retry) instead of falling to 404 if a data file fails to load; comparison table fits phones (n26s)\n- Translation sweep (n25t): handover dates in words and country names localized, ticker and Dataset JSON-LD in the page language, long titles fit\n- /progress/ (daily counters, projects added per day, 300 improvements), press figures per place, moderation policy, team and method (n26y)\n- Transparency rankings (n23): consent box before the button, \"page we read\" as the source label (some tracked pages are sales pages)\n- Named project pages answer what people search (n24s): quick answer, question headings, checklist, where, related six, search titles\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Named project titles: a very long project name falls back to its part before the first comma, dash or slash so the title stays under 60 characters (n24s)</li><li>/handover/, /areas/ and /vs/ pages answer 503 (retry) instead of falling to 404 if a data file fails to load; comparison table fits phones (n26s)</li><li>Translation sweep (n25t): handover dates in words and country names localized, ticker and Dataset JSON-LD in the page language, long titles fit</li><li>/progress/ (daily counters, projects added per day, 300 improvements), press figures per place, moderation policy, team and method (n26y)</li><li>Transparency rankings (n23): consent box before the button, &quot;page we read&quot; as the source label (some tracked pages are sales pages)</li><li>Named project pages answer what people search (n24s): quick answer, question headings, checklist, where, related six, search titles</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-12T00:00:00Z",
+   "date_modified": "2026-11-12T21:12:38Z",
+   "_kolaboro": {
+    "ships": 49,
+    "data_updates": 9,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-11",
+   "url": "https://kolaboro.com/changelog/2026-11-11/",
+   "title": "11 November 2026: 21 changes shipped",
+   "content_text": "- Can you legally short-let there (rules table with official sources on project pages, /guides/short-let-rules/ in 8 languages, JSON); filings module wired, data to follow\n- Official filings of listed developers (exchange, ticker, filings link, latest SEC annual report; 39 developer pages), short-let rules table layout on phones\n- Promised dates as a calendar (.ics) and where the schedule puts the project today, bulk check against the public index, sealed X-ray page in 8 languages\n- Around the site (OpenStreetMap places, CAMS air), distance claims next to the map, climate at the plot (CMIP6) on pinned project pages (n21b)\n- Site.js measures scrollable boxes only near the screen and rescans links only when links were added (no forced layout of off-screen sections)\n- Bulk check content masked in session recordings, sealed X-ray language menu keeps the page, larger calendar button in the portal\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Can you legally short-let there (rules table with official sources on project pages, /guides/short-let-rules/ in 8 languages, JSON); filings module wired, data to follow</li><li>Official filings of listed developers (exchange, ticker, filings link, latest SEC annual report; 39 developer pages), short-let rules table layout on phones</li><li>Promised dates as a calendar (.ics) and where the schedule puts the project today, bulk check against the public index, sealed X-ray page in 8 languages</li><li>Around the site (OpenStreetMap places, CAMS air), distance claims next to the map, climate at the plot (CMIP6) on pinned project pages (n21b)</li><li>Site.js measures scrollable boxes only near the screen and rescans links only when links were added (no forced layout of off-screen sections)</li><li>Bulk check content masked in session recordings, sealed X-ray language menu keeps the page, larger calendar button in the portal</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-11T00:00:00Z",
+   "date_modified": "2026-11-11T20:39:05Z",
+   "_kolaboro": {
+    "ships": 21,
+    "data_updates": 10,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-09",
+   "url": "https://kolaboro.com/changelog/2026-11-09/",
+   "title": "9 November 2026: 36 changes shipped",
+   "content_text": "- Speed (n20p): date and number formatters built once per isolate (named page render 10x less CPU), database reads on named pages capped at 2.5 s, per-step Server-Timing\n- UX sweep part A (tools merge and clarity, check, pricing table, country search, 404 link) and corporate family code (GLEIF level 2) for developer pages and graph\n- AI spend cut (owner, 9 Nov): website model calls on Haiku only, max 2000 output tokens, real Haiku 5.5 prices in the spend guard, 3 desk reviews per IP per hour\n- Any plot from space since 2017 (on-demand Sentinel-2 frames per quarter, 8 languages) and time-lapse GIF share on the plot tool and the named-page time machine\n- Speed (n20p): named pages answered from the edge copy before any data is read, parallel data loads, /open figures kept 60 s, analytics deferred on tools pages\n- Login and sign-up pages on phones: rows no longer stretch to the screen height, so adding the passkey button does not move the page (CLS 0.26 to 0.01) (n19f)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Speed (n20p): date and number formatters built once per isolate (named page render 10x less CPU), database reads on named pages capped at 2.5 s, per-step Server-Timing</li><li>UX sweep part A (tools merge and clarity, check, pricing table, country search, 404 link) and corporate family code (GLEIF level 2) for developer pages and graph</li><li>AI spend cut (owner, 9 Nov): website model calls on Haiku only, max 2000 output tokens, real Haiku 5.5 prices in the spend guard, 3 desk reviews per IP per hour</li><li>Any plot from space since 2017 (on-demand Sentinel-2 frames per quarter, 8 languages) and time-lapse GIF share on the plot tool and the named-page time machine</li><li>Speed (n20p): named pages answered from the edge copy before any data is read, parallel data loads, /open figures kept 60 s, analytics deferred on tools pages</li><li>Login and sign-up pages on phones: rows no longer stretch to the screen height, so adding the passkey button does not move the page (CLS 0.26 to 0.01) (n19f)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-09T00:00:00Z",
+   "date_modified": "2026-11-09T23:34:52Z",
+   "_kolaboro": {
+    "ships": 36,
+    "data_updates": 32,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-08",
+   "url": "https://kolaboro.com/changelog/2026-11-08/",
+   "title": "8 November 2026: 30 changes shipped",
+   "content_text": "- Kolaboro X-ray extension 2.1.0 with the payment email check on Gmail web; email check ranks whole-word lookalikes first and never quotes account numbers (n17a)\n- /open refreshes on its own (live developer answers, new weeks from public data, paying-customer count); buyer groups per project behind a switch (/cohort/)\n- See the site: open street-level photos near the pin and a 3D view (terrain, Overture buildings, 150 m circle, pin accuracy) on named project pages\n- Prices over time shows a headline only after a word like from or price; stacked tables on phones; England live check without console error (n18d)\n- Stage estimate states a building first-seen date only when the Overture registry has one; release dates formatted; method page breadcrumb\n- Radar through the clouds and building footprints in the from-space section, /api/x/space, sealed site-visit record (/tools/site-visit/)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro X-ray extension 2.1.0 with the payment email check on Gmail web; email check ranks whole-word lookalikes first and never quotes account numbers (n17a)</li><li>/open refreshes on its own (live developer answers, new weeks from public data, paying-customer count); buyer groups per project behind a switch (/cohort/)</li><li>See the site: open street-level photos near the pin and a 3D view (terrain, Overture buildings, 150 m circle, pin accuracy) on named project pages</li><li>Prices over time shows a headline only after a word like from or price; stacked tables on phones; England live check without console error (n18d)</li><li>Stage estimate states a building first-seen date only when the Overture registry has one; release dates formatted; method page breadcrumb</li><li>Radar through the clouds and building footprints in the from-space section, /api/x/space, sealed site-visit record (/tools/site-visit/)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-08T00:00:00Z",
+   "date_modified": "2026-11-08T22:33:45Z",
+   "_kolaboro": {
+    "ships": 30,
+    "data_updates": 31,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-07",
+   "url": "https://kolaboro.com/changelog/2026-11-07/",
+   "title": "7 November 2026: 71 changes shipped",
+   "content_text": "- Free project checks now show results as they load, with evidence cards on location, price per m2, developer record and local law.\n- The satellite card now picks the newest picture with a clear view around the pin location.\n- Project pages now show construction progress from space, using monthly satellite images and a chart set against the developer's own dates.\n- The buyer portal now compares the payments you have made with how far the building has progressed.\n- A new map shows links between developers, such as a shared company, registry number or address.\n- Sign-up from translated check pages no longer lands on a missing page, and the country count is now the same everywhere (94).\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>Free project checks now show results as they load, with evidence cards on location, price per m2, developer record and local law.</li><li>The satellite card now picks the newest picture with a clear view around the pin location.</li><li>Project pages now show construction progress from space, using monthly satellite images and a chart set against the developer&#x27;s own dates.</li><li>The buyer portal now compares the payments you have made with how far the building has progressed.</li><li>A new map shows links between developers, such as a shared company, registry number or address.</li><li>Sign-up from translated check pages no longer lands on a missing page, and the country count is now the same everywhere (94).</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-07T00:00:00Z",
+   "date_modified": "2026-11-07T22:22:51Z",
+   "_kolaboro": {
+    "ships": 71,
+    "data_updates": 57,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-06",
+   "url": "https://kolaboro.com/changelog/2026-11-06/",
+   "title": "6 November 2026: 34 changes shipped",
+   "content_text": "- You can now click a spot on the map to look up official property registers, with a check that works on phones.\n- Uploaded PDFs are checked for signs of tampering, and developer photos are checked for date, location and reused images.\n- Price per m2 can now be compared with official data, and a developer's company network is shown on its page.\n- Developers can have their replies verified, and a viewer shows what changed on a project page, including on phones.\n- Search for named projects is instant in 8 languages, and you can watch a project with one click.\n- You can check many registers at once with the new bulk check, shown as cards on phones.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now click a spot on the map to look up official property registers, with a check that works on phones.</li><li>Uploaded PDFs are checked for signs of tampering, and developer photos are checked for date, location and reused images.</li><li>Price per m2 can now be compared with official data, and a developer&#x27;s company network is shown on its page.</li><li>Developers can have their replies verified, and a viewer shows what changed on a project page, including on phones.</li><li>Search for named projects is instant in 8 languages, and you can watch a project with one click.</li><li>You can check many registers at once with the new bulk check, shown as cards on phones.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-06T00:00:00Z",
+   "date_modified": "2026-11-06T21:22:28Z",
+   "_kolaboro": {
+    "ships": 34,
+    "data_updates": 29,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-05",
+   "url": "https://kolaboro.com/changelog/2026-11-05/",
+   "title": "5 November 2026: 72 changes shipped",
+   "content_text": "- You can now look up a project or developer name in official registers live, and the results appear in your check.\n- Projects not yet reviewed now show only facts and a 'Not yet reviewed' note, with no score, and are left out of rankings.\n- After paying with PayPal, the thanks page shows your order, next steps and live payment status. Phones get a sticky pay bar for unpaid cases.\n- Every project page now shows hourly findings.\n- New dark mode, keyboard shortcuts and a printable one page project scorecard. Offline reading is back too.\n- The Spanish portal now covers the dashboard, permit upload and sharing texts, and each language page appears in its own language.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now look up a project or developer name in official registers live, and the results appear in your check.</li><li>Projects not yet reviewed now show only facts and a &#x27;Not yet reviewed&#x27; note, with no score, and are left out of rankings.</li><li>After paying with PayPal, the thanks page shows your order, next steps and live payment status. Phones get a sticky pay bar for unpaid cases.</li><li>Every project page now shows hourly findings.</li><li>New dark mode, keyboard shortcuts and a printable one page project scorecard. Offline reading is back too.</li><li>The Spanish portal now covers the dashboard, permit upload and sharing texts, and each language page appears in its own language.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-05T00:00:00Z",
+   "date_modified": "2026-11-05T22:49:07Z",
+   "_kolaboro": {
+    "ships": 72,
+    "data_updates": 139,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-04",
+   "url": "https://kolaboro.com/changelog/2026-11-04/",
+   "title": "4 November 2026: 67 changes shipped",
+   "content_text": "- You can now check a developer for insolvency records and look up whether a property agent is licensed.\n- Hazard checks now show flood scenarios for 2030 and 2050, plus protected land and mangroves within 1 km of a project.\n- New delivery-delay page and on-time odds lookup show how likely a project is to hand over on schedule.\n- A promise tracker, plain-language search alerts and a list of questions to ask the developer are now available.\n- A new satellite page uses night lights to spot ghost projects, where nothing visibly changes on site.\n- The check, scoring, checklist, about and cases pages are now available in Russian, Chinese, German, French, Arabic and Dutch.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now check a developer for insolvency records and look up whether a property agent is licensed.</li><li>Hazard checks now show flood scenarios for 2030 and 2050, plus protected land and mangroves within 1 km of a project.</li><li>New delivery-delay page and on-time odds lookup show how likely a project is to hand over on schedule.</li><li>A promise tracker, plain-language search alerts and a list of questions to ask the developer are now available.</li><li>A new satellite page uses night lights to spot ghost projects, where nothing visibly changes on site.</li><li>The check, scoring, checklist, about and cases pages are now available in Russian, Chinese, German, French, Arabic and Dutch.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-04T00:00:00Z",
+   "date_modified": "2026-11-04T23:44:52Z",
+   "_kolaboro": {
+    "ships": 67,
+    "data_updates": 91,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-03",
+   "url": "https://kolaboro.com/changelog/2026-11-03/",
+   "title": "3 November 2026: 124 changes shipped",
+   "content_text": "- Project pages now show what would change a project's score, how old its website is, and whether its promises have drifted over time.\n- A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.\n- Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.\n- New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.\n- Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.\n- Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>Project pages now show what would change a project&#x27;s score, how old its website is, and whether its promises have drifted over time.</li><li>A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.</li><li>Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.</li><li>New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.</li><li>Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.</li><li>Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-03T00:00:00Z",
+   "date_modified": "2026-11-03T23:41:45Z",
+   "_kolaboro": {
+    "ships": 124,
+    "data_updates": 84,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-02",
+   "url": "https://kolaboro.com/changelog/2026-11-02/",
+   "title": "2 November 2026: 26 changes shipped",
+   "content_text": "- If you paste a link that is not a property project, the check now says so clearly instead of giving a score.\n- The buyer portal is now available in Spanish, including the language switch, dates, prompts and messages.\n- The portal can read a payment plan with AI. You can also download your data and delete your account.\n- Answers from our open data now carry a digital signature, and a public log lets anyone check that the data was not changed.\n- On phones, the portal has a bottom bar and a compact header, and findings can be swiped.\n- The home page was redesigned. The comparison of buying alone and buying with Kolaboro is now visual, in all 7 languages.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>If you paste a link that is not a property project, the check now says so clearly instead of giving a score.</li><li>The buyer portal is now available in Spanish, including the language switch, dates, prompts and messages.</li><li>The portal can read a payment plan with AI. You can also download your data and delete your account.</li><li>Answers from our open data now carry a digital signature, and a public log lets anyone check that the data was not changed.</li><li>On phones, the portal has a bottom bar and a compact header, and findings can be swiped.</li><li>The home page was redesigned. The comparison of buying alone and buying with Kolaboro is now visual, in all 7 languages.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-02T00:00:00Z",
+   "date_modified": "2026-11-02T23:52:53Z",
+   "_kolaboro": {
+    "ships": 26,
+    "data_updates": 8,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-01",
+   "url": "https://kolaboro.com/changelog/2026-11-01/",
+   "title": "1 November 2026: 86 changes shipped",
+   "content_text": "- Telegram bot webhook (send a project link, get the desk review: missing items, guaranteed-return language, questions), off until the bot token and webhook secret are set\n- Off-plan Transparency Index (73 markets ranked live, method, top and bottom 5, sortable table, citation, CSV) and embeddable market widget for journalists (/embed/?m=)\n- Shipping-daily ticker on every page (live database numbers plus the dated log of what shipped, fed by the research agents; pauses on hover, static for reduced motion)\n- Admin inbox, command palette, live refresh, lead priority, bulk actions, templates; portal getting started, since last visit, compare saved, share with lawyer, print\n- Kolaboro security: PayPal receiver check, email verification page, CSV injection, safe project links, admin view token in hash, no session recording on the portal\n- Fix a syntax error in the market page renderer; small /api/open/summary for the ticker and live numbers so pages no longer download the full 1.1 MB database file\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Telegram bot webhook (send a project link, get the desk review: missing items, guaranteed-return language, questions), off until the bot token and webhook secret are set</li><li>Off-plan Transparency Index (73 markets ranked live, method, top and bottom 5, sortable table, citation, CSV) and embeddable market widget for journalists (/embed/?m=)</li><li>Shipping-daily ticker on every page (live database numbers plus the dated log of what shipped, fed by the research agents; pauses on hover, static for reduced motion)</li><li>Admin inbox, command palette, live refresh, lead priority, bulk actions, templates; portal getting started, since last visit, compare saved, share with lawyer, print</li><li>Kolaboro security: PayPal receiver check, email verification page, CSV injection, safe project links, admin view token in hash, no session recording on the portal</li><li>Fix a syntax error in the market page renderer; small /api/open/summary for the ticker and live numbers so pages no longer download the full 1.1 MB database file</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-01T00:00:00Z",
+   "date_modified": "2026-11-01T22:15:43Z",
+   "_kolaboro": {
+    "ships": 86,
+    "data_updates": 23,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-31",
+   "url": "https://kolaboro.com/changelog/2026-10-31/",
+   "title": "31 October 2026: 8 changes shipped",
+   "content_text": "- Project cards now show, for each check, whether it is confirmed, not confirmed, contradicted or backed by a registry, plus how many claims were tested.\n- All 328 projects now have all 6 checks, covering 73 markets in 52 countries.\n- Live cases now show 100% public (6 of 6) or exactly which checks are missing. There is also a new 100% filter.\n- After a check, you can share the result by link, save it as a PDF, and get an email follow-up.\n- The sample report is lighter and has photos you can swipe through, a to-do list you can tick, and a share-with-lawyer button.\n- A new security page explains who sees your case and how it is stored. A refund line now sits next to prices.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>Project cards now show, for each check, whether it is confirmed, not confirmed, contradicted or backed by a registry, plus how many claims were tested.</li><li>All 328 projects now have all 6 checks, covering 73 markets in 52 countries.</li><li>Live cases now show 100% public (6 of 6) or exactly which checks are missing. There is also a new 100% filter.</li><li>After a check, you can share the result by link, save it as a PDF, and get an email follow-up.</li><li>The sample report is lighter and has photos you can swipe through, a to-do list you can tick, and a share-with-lawyer button.</li><li>A new security page explains who sees your case and how it is stored. A refund line now sits next to prices.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-31T00:00:00Z",
+   "date_modified": "2026-10-31T22:04:16Z",
+   "_kolaboro": {
+    "ships": 8,
+    "data_updates": 2,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-30",
+   "url": "https://kolaboro.com/changelog/2026-10-30/",
+   "title": "30 October 2026: 25 changes shipped",
+   "content_text": "- Kolaboro r28: 228 projects in 27 countries with public-disclosure scorecard and map, desk review without email wall plus market comparison, analytics error fix\n- Kolaboro r25: evidence locker, document reader (all types, PDF, 8 languages), field tool, ops, follow cases, price check\n- R29: realhunt arrivals - email capture on blocked listings, no off-plan scorecard for resale homes, home-buyer copy\n- Kolaboro r25: academy lessons, Spanish home, pricing includes, sample score reframed, benchmark, ops tab\n- Kolaboro r26: UX fixes from full audit (home tools, check page, technology, status, verify, copy)\n- Kolaboro r28b: deeper data for Dubai and Spain projects, cases scorecard sorted by transparency\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro r28: 228 projects in 27 countries with public-disclosure scorecard and map, desk review without email wall plus market comparison, analytics error fix</li><li>Kolaboro r25: evidence locker, document reader (all types, PDF, 8 languages), field tool, ops, follow cases, price check</li><li>R29: realhunt arrivals - email capture on blocked listings, no off-plan scorecard for resale homes, home-buyer copy</li><li>Kolaboro r25: academy lessons, Spanish home, pricing includes, sample score reframed, benchmark, ops tab</li><li>Kolaboro r26: UX fixes from full audit (home tools, check page, technology, status, verify, copy)</li><li>Kolaboro r28b: deeper data for Dubai and Spain projects, cases scorecard sorted by transparency</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-10-30T00:00:00Z",
+   "date_modified": "2026-10-30T21:46:05Z",
+   "_kolaboro": {
+    "ships": 25,
+    "data_updates": 2,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-29",
+   "url": "https://kolaboro.com/changelog/2026-10-29/",
+   "title": "29 October 2026: 9 changes shipped",
+   "content_text": "- You can now request a check and receive a reference for it, so you can follow your request.\n- The real buyer portal can now be tried as a read-only demo, so you can look around before signing up.\n- Satellite watch is now live on the technology page and updates weekly.\n- A new technology page explains how checks work, including comparing building plans with what is actually built.\n- Evidence timestamps are now anchored to Bitcoin, and a verify page lets you confirm them yourself.\n- A new status page, open data documents and live counters show how the service is running.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now request a check and receive a reference for it, so you can follow your request.</li><li>The real buyer portal can now be tried as a read-only demo, so you can look around before signing up.</li><li>Satellite watch is now live on the technology page and updates weekly.</li><li>A new technology page explains how checks work, including comparing building plans with what is actually built.</li><li>Evidence timestamps are now anchored to Bitcoin, and a verify page lets you confirm them yourself.</li><li>A new status page, open data documents and live counters show how the service is running.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-29T00:00:00Z",
+   "date_modified": "2026-10-29T22:42:46Z",
+   "_kolaboro": {
+    "ships": 9,
+    "data_updates": 1,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-28",
+   "url": "https://kolaboro.com/changelog/2026-10-28/",
+   "title": "28 October 2026: 24 changes shipped",
+   "content_text": "- You can now get a free instant desk review of a project on the check page, before deciding on the paid check.\n- The home page now explains the difference between the free desk review and the €490 pre-purchase check.\n- You can pay for the pre-purchase check with PayPal. Refund terms are now written out clearly.\n- A full sample client report shows the verdict, money paid versus built, nine checks, GPS-verified photos, and plan versus site.\n- A live research page covers 122 projects in 9 markets, with a map and a simulator showing how much money is at risk.\n- After you pay, you can sign up for a client account and log in to a portal.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now get a free instant desk review of a project on the check page, before deciding on the paid check.</li><li>The home page now explains the difference between the free desk review and the €490 pre-purchase check.</li><li>You can pay for the pre-purchase check with PayPal. Refund terms are now written out clearly.</li><li>A full sample client report shows the verdict, money paid versus built, nine checks, GPS-verified photos, and plan versus site.</li><li>A live research page covers 122 projects in 9 markets, with a map and a simulator showing how much money is at risk.</li><li>After you pay, you can sign up for a client account and log in to a portal.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-28T00:00:00Z",
+   "date_modified": "2026-10-28T16:59:30Z",
+   "_kolaboro": {
+    "ships": 24,
+    "data_updates": 3,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-27",
+   "url": "https://kolaboro.com/changelog/2026-10-27/",
+   "title": "27 October 2026: 7 changes shipped",
+   "content_text": "- The Trust Score now uses 9 checks with set rules, and a new page explains how projects are scored.\n- You can now try a payment plan checker, a risk calculator and a first check of your contract.\n- A sample score and report, a buyer checklist and guides show what a check looks like before you start.\n- There are now 5 destination pages with an index and a comparison table.\n- The check page suggests matches as you type, and the home page is also available in Spanish.\n- Pages are easier to read, with better colour contrast, a reading progress bar and a glossary of terms.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>The Trust Score now uses 9 checks with set rules, and a new page explains how projects are scored.</li><li>You can now try a payment plan checker, a risk calculator and a first check of your contract.</li><li>A sample score and report, a buyer checklist and guides show what a check looks like before you start.</li><li>There are now 5 destination pages with an index and a comparison table.</li><li>The check page suggests matches as you type, and the home page is also available in Spanish.</li><li>Pages are easier to read, with better colour contrast, a reading progress bar and a glossary of terms.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-27T00:00:00Z",
+   "date_modified": "2026-10-27T22:02:32Z",
+   "_kolaboro": {
+    "ships": 7,
+    "data_updates": 0,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-21",
+   "url": "https://kolaboro.com/changelog/2026-10-21/",
+   "title": "21 October 2026: 1 change shipped",
+   "content_text": "- The site now stores its data in its own database, replacing older databases that were run by an outside website-building tool.\n- The outside tool's visitor tracking has been removed from the site.\n- Badges from the outside website-building tool no longer appear on the site.\n- The option to sign in with a social account is hidden for now.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>The site now stores its data in its own database, replacing older databases that were run by an outside website-building tool.</li><li>The outside tool&#x27;s visitor tracking has been removed from the site.</li><li>Badges from the outside website-building tool no longer appear on the site.</li><li>The option to sign in with a social account is hidden for now.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-21T00:00:00Z",
+   "date_modified": "2026-10-21T16:20:11Z",
+   "_kolaboro": {
+    "ships": 1,
+    "data_updates": 0,
+    "method": "ai-checked"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-10-19",
+   "url": "https://kolaboro.com/changelog/2026-10-19/",
+   "title": "19 October 2026: 1 change shipped",
+   "content_text": "- A new version of the site was published. The commit subject gives no detail on what buyers will see differently.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>A new version of the site was published. The commit subject gives no detail on what buyers will see differently.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-10-19T00:00:00Z",
+   "date_modified": "2026-10-19T21:47:09Z",
+   "_kolaboro": {
+    "ships": 1,
+    "data_updates": 0,
+    "method": "ai-checked"
+   }
+  }
+ ]
+}

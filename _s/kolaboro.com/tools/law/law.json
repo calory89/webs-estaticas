@@ -1,0 +1,392 @@
+{
+  "name": "Kolaboro law notes for off-plan buyers",
+  "version": "2026-11-03",
+  "about": "Short, plain-language notes on rules that matter when you buy property off-plan abroad. Every note quotes the official text and links to it. We only include an article after reading it in the official source. This is general information, not legal advice.",
+  "topics": {
+    "parties": "Who is buying and selling",
+    "price": "Price",
+    "payment": "Payment schedule",
+    "completion": "Completion date",
+    "delay": "Delay penalty",
+    "termination": "Termination and refund",
+    "escrow": "Escrow or protected account",
+    "title": "Title type",
+    "law": "Governing law",
+    "permit": "Permits"
+  },
+  "markets": {
+    "ID": "Indonesia",
+    "AE-DU": "Dubai (UAE)",
+    "TH": "Thailand",
+    "ES": "Spain",
+    "PT": "Portugal"
+  },
+  "sources": {
+    "id-pp18-2021": {
+      "law": "Government Regulation (PP) No. 18 of 2021 on Management Rights, Land Rights, Strata Units and Land Registration",
+      "publisher": "JDIH Nasional (peraturan.go.id), Ministry of Law",
+      "url": "https://www.peraturan.go.id/files3/pp-no-18-tahun-2021_asli.pdf",
+      "language": "id"
+    },
+    "id-uupa-1960": {
+      "law": "Law No. 5 of 1960 on Basic Agrarian Principles (UUPA)",
+      "publisher": "JDIH Nasional (peraturan.go.id), Ministry of Law",
+      "url": "https://peraturan.go.id/files/UU0051960.pdf",
+      "language": "id"
+    },
+    "id-uu1-2011": {
+      "law": "Law No. 1 of 2011 on Housing and Residential Areas",
+      "publisher": "JDIH Nasional (peraturan.go.id), Ministry of Law",
+      "url": "https://peraturan.go.id/files/uu1-2011bt.pdf",
+      "language": "id",
+      "note": "Text as enacted in 2011. Parts of this law were later amended by the Job Creation law; we quote the 2011 text and say where that matters."
+    },
+    "id-pp16-2021": {
+      "law": "Government Regulation (PP) No. 16 of 2021 implementing Law No. 28 of 2002 on Buildings",
+      "publisher": "JDIH of the Ministry of Housing and Settlement Areas (jdih.pkp.go.id)",
+      "url": "https://jdih.pkp.go.id/produk-hukum/file/pp-nomor-16-tahun-2021-tanpa-lampiran.pdf",
+      "language": "id"
+    },
+    "ae-du-law8-2007": {
+      "law": "Dubai Law No. (8) of 2007 Concerning Escrow Accounts for Real Estate Development",
+      "publisher": "Dubai Legislation Portal (dlp.dubai.gov.ae), Government of Dubai",
+      "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2007/Law%20No.%20(8)%20of%202007%20Concerning%20Escrow%20Accounts%20for%20Real%20Estate%20Development%20in%20the%20Emirate%20of%20Dubai.html",
+      "language": "en",
+      "note": "Official English text published by the Government of Dubai. The Arabic text prevails."
+    },
+    "ae-du-law13-2008": {
+      "law": "Dubai Law No. (13) of 2008 Regulating the Interim Property Register",
+      "publisher": "Dubai Legislation Portal (dlp.dubai.gov.ae), Government of Dubai",
+      "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2008/Law%20No.%20(13)%20of%202008.html",
+      "language": "en",
+      "note": "Official English text published by the Government of Dubai. The Arabic text prevails."
+    },
+    "th-condo-2522": {
+      "law": "Condominium Act B.E. 2522 (1979), as amended",
+      "publisher": "Department of Lands, Ministry of Interior (dol.go.th)",
+      "url": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf",
+      "page": "https://www.dol.go.th/en/knowledge-land-department/law/act/act-822003851644342272/",
+      "language": "th"
+    },
+    "es-loe-1999": {
+      "law": "Law 38/1999 on Building Regulation (Ley de Ordenación de la Edificación), first additional provision",
+      "publisher": "Boletín Oficial del Estado (boe.es), consolidated text",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-21567#daprimera",
+      "language": "es"
+    },
+    "es-cc-1889": {
+      "law": "Spanish Civil Code (Código Civil)",
+      "publisher": "Boletín Oficial del Estado (boe.es), consolidated text",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art1454",
+      "language": "es"
+    },
+    "pt-cc-1966": {
+      "law": "Portuguese Civil Code (Código Civil), Decree-Law 47344/66",
+      "publisher": "Procuradoria-Geral Distrital de Lisboa legislation database (pgdlisboa.pt), consolidated text",
+      "url": "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=775A0442&nid=775&tabela=leis&pagina=1&ficha=1&so_miolo=&nversao=",
+      "language": "pt"
+    }
+  },
+  "rules": [
+    {
+      "id": "id-foreigner-hak-pakai",
+      "market": "ID",
+      "topics": [
+        "title",
+        "parties"
+      ],
+      "title": "A foreigner can own a house in Indonesia only on Hak Pakai (right of use) land",
+      "plain": "A landed house owned by a foreigner must sit on Hak Pakai land: either plain Hak Pakai, Hak Pakai granted over someone's Hak Milik by a deed before a land deed official (PPAT), or Hak Pakai over Management Rights land under an agreement with the holder. Apartments (strata units) follow separate rules in the same article. If your contract promises you Hak Milik, or keeps the title in another person's name for you, ask a lawyer before paying.",
+      "source": "id-pp18-2021",
+      "cite": "Article 71(1)(a)",
+      "quote": "Rumah tempat tinggal atau hunian yang dapat dimiliki oleh Orang Asing merupakan: a. rumah tapak di atas Tanah: 1. hak pakai; atau 2. hak pakai di atas: a) hak milik, yang dikuasai berdasarkan perjanjian pemberian hak pakai di atas hak milik dengan akta Pejabat Pembuat Akta Tanah; atau b) Hak Pengelolaan, berdasarkan perjanjian pemanfaatan Tanah dengan pemegang Hak Pengelolaan.",
+      "translation": "Houses or dwellings that may be owned by a Foreigner are: a. landed houses on Land: 1. right of use (hak pakai); or 2. right of use over: a) freehold (hak milik), held under an agreement granting right of use over freehold made by deed of a Land Deed Official; or b) Management Rights, under a land use agreement with the holder of the Management Rights.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-foreigner-immigration-doc",
+      "market": "ID",
+      "topics": [
+        "parties"
+      ],
+      "title": "The foreign buyer needs an immigration document",
+      "plain": "Only a foreigner who holds an immigration document under Indonesian law can own a home. Check what the contract says about your status and which document the notary will ask for.",
+      "source": "id-pp18-2021",
+      "cite": "Article 69(1)",
+      "quote": "Orang Asing yang dapat memiliki rumah tempat tinggal atau hunian merupakan Orang Asing yang mempunyai dokumen keimigrasian sesuai dengan ketentuan peraturan perundang-undangan.",
+      "translation": "A Foreigner who may own a house or dwelling is a Foreigner who holds an immigration document in accordance with the laws and regulations.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-hak-pakai-term",
+      "market": "ID",
+      "topics": [
+        "title"
+      ],
+      "title": "Hak Pakai on State or Management Rights land runs 30 years, then 20, then 30",
+      "plain": "Right of use with a time limit is granted for up to 30 years, can be extended for up to 20 years, and renewed for up to 30 years. An extension or renewal is an application, not automatic. Check which term your contract promises and who pays for extensions.",
+      "source": "id-pp18-2021",
+      "cite": "Article 52(1)",
+      "quote": "Hak pakai di atas Tanah Negara dan Tanah Hak Pengelolaan dengan jangka waktu diberikan untuk jangka waktu paling lama 30 (tiga puluh) tahun, diperpanjang untuk jangka waktu paling lama 20 (dua puluh) tahun, dan diperbarui untuk jangka waktu paling lama 30 (tiga puluh) tahun.",
+      "translation": "Right of use with a time limit over State Land and Management Rights Land is granted for at most 30 years, extended for at most 20 years, and renewed for at most 30 years.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-foreigner-limits",
+      "market": "ID",
+      "topics": [
+        "price",
+        "title"
+      ],
+      "title": "Foreign ownership has limits: minimum price, plot size, number of units, residential use",
+      "plain": "The regulation lets the government set a minimum price, a maximum plot size, a maximum number of plots or units, and requires residential use. The current figures are set in separate ministerial rules, so check them for your region before you sign.",
+      "source": "id-pp18-2021",
+      "cite": "Article 72",
+      "quote": "Kepemilikan rumah tempat tinggal atau hunian Orang Asing sebagaimana dimaksud dalam Pasal 71 diberikan dengan batasan: a. minimal harga; b. luas bidang Tanah; c. jumlah bidang Tanah atau unit Satuan Rumah Susun; dan d. peruntukan untuk rumah tinggal atau hunian.",
+      "translation": "Ownership of a house or dwelling by a Foreigner as referred to in Article 71 is granted with limits on: a. minimum price; b. land plot area; c. number of land plots or strata units; and d. designation for residential use.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-hak-milik-citizens",
+      "market": "ID",
+      "topics": [
+        "title"
+      ],
+      "title": "Only Indonesian citizens can hold Hak Milik (freehold)",
+      "plain": "Freehold land (Hak Milik, often shown as SHM on the certificate) can only be held by an Indonesian citizen. A foreign buyer cannot be registered as the owner of Hak Milik land.",
+      "source": "id-uupa-1960",
+      "cite": "Article 21(1)",
+      "quote": "Hanya warga-negara Indonesia dapat mempunyai hak milik.",
+      "translation": "Only Indonesian citizens may hold freehold (hak milik).",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-nominee-void",
+      "market": "ID",
+      "topics": [
+        "title"
+      ],
+      "title": "Arrangements that pass freehold to a foreigner, directly or indirectly, are void",
+      "plain": "Any sale or other act meant to transfer Hak Milik to a foreigner, directly or indirectly, is void by law, the land falls to the State, and money already paid to the owner cannot be claimed back. This is why nominee structures (an Indonesian holds the freehold for you) are a serious risk.",
+      "source": "id-uupa-1960",
+      "cite": "Article 26(2)",
+      "quote": "Setiap jual-beli, penukaran, penghibahan, pemberian dengan wasiat dan perbuatan-perbuatan lain yang dimaksudkan untuk langsung atau tidak langsung memindahkan hak milik kepada orang asing, kepada seorang warga-negara yang disamping kewarganegaraan Indonesianya mempunyai kewarga-negaraan asing atau kepada suatu badan hukum kecuali yang ditetapkan oleh Pemerintah termaksud dalam pasal 21 ayat (2), adalah batal karena hukum dan tanahnya jatuh kepada Negara, dengan ketentuan, bahwa hak-hak pihak lain yang membebaninya tetap berlangsung serta semua pembayaran yang telah diterima oleh pemilik tidak dapat dituntut kembali.",
+      "translation": "Every sale, exchange, gift, bequest and other act intended to transfer freehold directly or indirectly to a foreigner, to a citizen who also holds a foreign citizenship, or to a legal entity other than those set by the Government under Article 21(2), is void by law and the land falls to the State, provided that rights of other parties encumbering it continue and all payments already received by the owner cannot be claimed back.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-hak-sewa",
+      "market": "ID",
+      "topics": [
+        "title"
+      ],
+      "title": "Leasehold: a lease of someone else's land for building",
+      "plain": "The basic land law recognises a lease of land owned by someone else for building, paid to the owner, and a foreigner domiciled in Indonesia may hold it. A lease is a contract with the land owner, so check the owner on the land certificate, the length of the lease, and the written terms for extension.",
+      "source": "id-uupa-1960",
+      "cite": "Articles 44(1) and 45",
+      "quote": "Seseorang atau suatu badan hukum mempunyai hak sewa atas tanah, apabila ia berhak mempergunakan tanah-milik orang lain untuk keperluan bangunan, dengan membayar kepada pemiliknya sejumlah uang sebagai sewa.",
+      "translation": "A person or legal entity has a lease right over land if entitled to use land owned by another for building, paying the owner a sum of money as rent.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-ppjb-conditions",
+      "market": "ID",
+      "topics": [
+        "payment",
+        "permit",
+        "title",
+        "completion"
+      ],
+      "title": "Pre-sales (PPJB) of houses under construction need land status, permits and 20% built first",
+      "plain": "Homes still being built may be sold through a preliminary sale agreement (PPJB) only after there is certainty on the land ownership, what is promised, the building permit, the infrastructure, and at least 20% of the housing built. Ask the developer for proof of each. This is the 2011 wording; the Job Creation law later amended parts of this law, so have a lawyer confirm the current text.",
+      "source": "id-uu1-2011",
+      "cite": "Article 42(1) and (2)",
+      "quote": "Perjanjian pendahuluan jual beli sebagaimana dimaksud pada ayat (1) dilakukan setelah memenuhi persyaratan kepastian atas: a. status pemilikan tanah; b. hal yang diperjanjikan; c. kepemilikan izin mendirikan bangunan induk; d. ketersediaan prasarana, sarana, dan utilitas umum; dan e. keterbangunan perumahan paling sedikit 20% (dua puluh persen).",
+      "translation": "The preliminary sale agreement referred to in paragraph (1) is made after meeting the requirement of certainty on: a. the land ownership status; b. what is agreed; c. holding the main building permit; d. availability of infrastructure, facilities and public utilities; and e. at least 20% (twenty percent) of the housing built.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "id-pbg-definition",
+      "market": "ID",
+      "topics": [
+        "permit"
+      ],
+      "title": "PBG is the building approval; SLF certifies the building is fit for use",
+      "plain": "PBG (Persetujuan Bangunan Gedung) is the permit given to the building owner to build. SLF (Sertifikat Laik Fungsi) is issued by the local government to state the building is fit for function before it can be used. Both run through SIMBG, the government's web system, so a real PBG can be checked there.",
+      "source": "id-pp16-2021",
+      "cite": "Article 1 points 17, 18 and 48",
+      "quote": "perizinan yang diberikan kepada pemilik Bangunan Gedung untuk membangun baru ... sertifikat yang diberikan oleh Pemerintah Daerah untuk menyatakan kelaikan fungsi Bangunan Gedung sebelum dapat dimanfaatkan ... sistem elektronik berbasis web yang digunakan untuk melaksanakan proses penyelenggaraan PBG",
+      "translation": "a permit given to the owner of a Building to build new ... a certificate given by the Regional Government to state that a Building is fit for function before it can be used ... a web-based electronic system used to carry out the PBG process",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-escrow-required",
+      "market": "AE-DU",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "Off-plan sellers in Dubai must have an escrow account for the project",
+      "plain": "A developer that wants to sell units off-plan must apply to the Land Department to open an escrow account, and buyers' payments are deposited into an account opened in the name of the project. Pay only into the project's escrow account named in your contract, never to a personal or company operating account.",
+      "source": "ae-du-law8-2007",
+      "cite": "Articles 6 and 7",
+      "quote": "Any Developer who wishes to sell Units off-plan must submit to the Department a request to open an Escrow Account.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-escrow-ring-fenced",
+      "market": "AE-DU",
+      "topics": [
+        "escrow"
+      ],
+      "title": "Escrow money is only for building that project and is protected from the developer's creditors",
+      "plain": "Each project has its own escrow account, used only to build that project. The developer's creditors cannot seize the money in it.",
+      "source": "ae-du-law8-2007",
+      "cite": "Article 9",
+      "quote": "An Escrow Account will be opened in the name of the project, and will be dedicated exclusively to the construction of that Real Estate Development project. No attachment may be imposed on the payments deposited in this account for the benefit of the creditors of the Developer.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-retention",
+      "market": "AE-DU",
+      "topics": [
+        "completion",
+        "payment"
+      ],
+      "title": "5% of the escrow stays back for a year after units are registered",
+      "plain": "When the developer gets the completion certificate, the escrow agent keeps 5% of the account and releases it one year after the units are registered to buyers. A contract that lets the developer take everything at handover is worth asking about.",
+      "source": "ae-du-law8-2007",
+      "cite": "Article 14",
+      "quote": "An Escrow Agent must retain five percent (5%) of the total value of each Escrow Account once the Developer obtains the completion certificate. The retained amount will be released to the Developer one (1) year from the registration of Units in the name of purchasers.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-not-completed",
+      "market": "AE-DU",
+      "topics": [
+        "termination",
+        "delay"
+      ],
+      "title": "If a project is not completed, the escrow agent must act to complete it or refund buyers",
+      "plain": "If the project is not completed, the escrow agent, after consulting the Land Department, must take measures to protect depositors: either get the project completed or refund their payments.",
+      "source": "ae-du-law8-2007",
+      "cite": "Article 15",
+      "quote": "In the event of any emergency situation where the Real Estate Development project is not completed, the Escrow Agent of that project must, after consultation with the Department, take the required measures to preserve the rights of depositors, and ensure that the Real Estate Development project is completed, or depositors are refunded their payments.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-ad-permit",
+      "market": "AE-DU",
+      "topics": [
+        "permit"
+      ],
+      "title": "Off-plan advertising needs written permission from the Land Department",
+      "plain": "A developer may not advertise off-plan units, or promote them at exhibitions, without written authorisation from the Land Department. Dubai property ads now carry a permit QR code you can check (see our permit QR check).",
+      "source": "ae-du-law8-2007",
+      "cite": "Article 5",
+      "quote": "A Developer may not advertise in local or international media, and may not participate in local or international exhibitions to promote the sale of Units or Real Property off-plan, unless he obtains an authorisation in writing from the Department.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-interim-register",
+      "market": "AE-DU",
+      "topics": [
+        "title"
+      ],
+      "title": "An off-plan sale must be entered in the Interim Property Register, or it is void",
+      "plain": "Every off-plan sale must be entered in the Land Department's Interim Property Register. A sale that is not registered there is void. Ask for proof of registration of your unit.",
+      "source": "ae-du-law13-2008",
+      "cite": "Article 3(1)",
+      "quote": "Any disposition that occurs in respect of any Real Property Unit sold off-plan will be entered in the Interim Property Register, and any sale or any other legal disposition that transfers or restricts ownership or any ancillary rights will be void unless entered in that Register.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "ae-du-land-and-approvals",
+      "market": "AE-DU",
+      "topics": [
+        "permit",
+        "title"
+      ],
+      "title": "No off-plan sale before the developer holds the land and the approvals",
+      "plain": "A developer may not start a project or sell units off-plan before taking possession of the land and getting the required approvals.",
+      "source": "ae-du-law13-2008",
+      "cite": "Article 4",
+      "quote": "No Master Developer or Sub-developer may commence a project or dispose of its Real Property Units by way of Off-plan Sale before taking possession of the land on which the project will be implemented and obtaining the required approvals from the Competent Entities in the Emirate.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "th-49-quota",
+      "market": "TH",
+      "topics": [
+        "title",
+        "parties"
+      ],
+      "title": "Foreigners together may own at most 49% of the unit area in a Thai condominium",
+      "plain": "In each condominium, all foreign owners together may hold at most 49% of the total area of all units. If the foreign quota is full, a foreigner cannot be registered as owner. Ask the developer for the current foreign quota figure and how your unit is counted.",
+      "source": "th-condo-2522",
+      "cite": "Section 19 bis",
+      "quote": "อาคารชุดแต่ละอาคารชุดจะมีคนต่างด้าวหรือนิติบุคคลตามที่ระบุไว้ในมาตรา ๑๙ ถือกรรมสิทธิ์ในห้องชุดได้เมื่อรวมกันแล้วต้องไม่เกินอัตราร้อยละสี่สิบเก้าของเนื้อที่ของห้องชุดทั้งหมดในอาคารชุดนั้นในขณะที่ขอจดทะเบียนอาคารชุดตามมาตรา ๖",
+      "translation": "In each condominium, foreigners or juristic persons under section 19 may hold ownership of units which, combined, must not exceed forty-nine percent of the area of all units in that condominium at the time of applying to register the condominium under section 6.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "th-foreign-funds",
+      "market": "TH",
+      "topics": [
+        "payment"
+      ],
+      "title": "A foreign buyer must show the money came from abroad",
+      "plain": "A foreigner buying under the foreign funds route must show evidence that foreign currency was brought into Thailand, or was withdrawn from a non-resident baht account or a foreign currency account, for at least the price of the unit. Keep the bank's transfer documents for every payment.",
+      "source": "th-condo-2522",
+      "cite": "Section 19 ter (5)",
+      "quote": "สำหรับคนต่างด้าวและนิติบุคคลตามมาตรา ๑๙ (๕) ต้องแสดงหลักฐานการนำเงินตราต่างประเทศเข้ามาในราชอาณาจักรหรือหลักฐานการถอนเงินจากบัญชีเงินบาทของบุคคลที่มีถิ่นที่อยู่นอกประเทศหรือถอนเงินจากบัญชีเงินฝากเงินตราต่างประเทศในจำนวนไม่น้อยกว่าค่าห้องชุดที่จะซื้อ",
+      "translation": "Foreigners and juristic persons under section 19 (5) must show evidence of bringing foreign currency into the Kingdom, or evidence of withdrawing money from the baht account of a person resident abroad or from a foreign currency deposit account, in an amount not less than the price of the unit to be bought.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "es-deposit-guarantee",
+      "market": "ES",
+      "topics": [
+        "escrow",
+        "payment",
+        "termination"
+      ],
+      "title": "In Spain, money paid before completion must be guaranteed and kept in a special account",
+      "plain": "A developer taking payments for homes under construction must guarantee their return plus legal interest, by insurance or a bank guarantee, from the moment it has the building licence, in case construction does not start or is not finished on time. The payments must go into a special bank account, separate from the developer's other money. Ask for your individual guarantee before you pay.",
+      "source": "es-loe-1999",
+      "cite": "First additional provision, One, 1 (a) and (b)",
+      "quote": "Garantizar, desde la obtención de la licencia de edificación, la devolución de las cantidades entregadas más los intereses legales, mediante contrato de seguro de caución suscrito con entidades aseguradoras debidamente autorizadas para operar en España, o mediante aval solidario emitido por entidades de crédito debidamente autorizadas, para el caso de que la construcción no se inicie o no llegue a buen fin en el plazo convenido para la entrega de la vivienda.",
+      "translation": "Guarantee, from the time the building licence is obtained, the return of the amounts paid plus legal interest, by a surety insurance contract with insurers duly authorised to operate in Spain, or by a joint and several guarantee issued by duly authorised credit institutions, in case construction does not start or is not completed within the period agreed for handing over the home.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "es-arras",
+      "market": "ES",
+      "topics": [
+        "termination"
+      ],
+      "title": "Penitential deposit (arras): buyer walks away and loses it, seller walks away and pays it back double",
+      "plain": "If the contract uses a deposit as arras or señal, either side can withdraw: the buyer by losing the deposit, the seller by returning it doubled. Check which kind of deposit your contract describes; contracts often say.",
+      "source": "es-cc-1889",
+      "cite": "Article 1454",
+      "quote": "Si hubiesen mediado arras o señal en el contrato de compra y venta, podrá rescindirse el contrato allanándose el comprador a perderlas, o el vendedor a devolverlas duplicadas.",
+      "translation": "If a deposit (arras or señal) was given in the sale contract, the contract may be cancelled by the buyer agreeing to lose it, or by the seller returning it doubled.",
+      "checked": "2026-11-03"
+    },
+    {
+      "id": "pt-sinal",
+      "market": "PT",
+      "topics": [
+        "termination",
+        "delay"
+      ],
+      "title": "Promissory contract deposit (sinal): if the seller fails, the buyer can claim double",
+      "plain": "In a Portuguese promissory contract (contrato-promessa) with a deposit (sinal), if the buyer fails the seller keeps the deposit; if the seller fails, the buyer can demand double what was paid. The buyer can instead ask a court to enforce the sale.",
+      "source": "pt-cc-1966",
+      "cite": "Article 442(2) and (3)",
+      "quote": "Se quem constitui o sinal deixar de cumprir a obrigação por causa que lhe seja imputável, tem o outro contraente a faculdade de fazer sua a coisa entregue; se o não cumprimento do contrato for devido a este último, tem aquele a faculdade de exigir o dobro do que prestou",
+      "translation": "If the party who gave the deposit fails to perform for a reason attributable to them, the other party may keep what was given; if the failure is due to the latter, the former may demand double what they paid",
+      "checked": "2026-11-03"
+    }
+  ]
+}

@@ -37,3 +37,12 @@
   apply(false); reveal();
   addEventListener('hashchange', reveal);
 })();
+
+// live lookup counter (real count from /api/kb/lookup/stats; stays hidden when zero or unavailable)
+(function(){
+  var el = document.getElementById('lkCount'); if (!el || !window.fetch) return;
+  fetch('/api/kb/lookup/stats').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+    if (!d || !(d.lookups > 0)) return;
+    el.textContent = d.lookups.toLocaleString('en') + (d.lookups === 1 ? ' live lookup' : ' live lookups') + ' run so far.'; el.hidden = false;
+  }).catch(function(){});
+})();

@@ -136,6 +136,9 @@
 
   function asks(sc, tl0, tlLate) {
     var A = [];
+    var rS = parse($('prS').value), rT = parse($('prT').value), rH = parse($('prH').value);
+    if (rS && rH && rH <= rS) A.push('Your handover date is not after the signing date, so this page assumed handover 30 months after signing. Check the dates in the timeline above.');
+    else if (rT && rH && rT > rH) A.push('Your structure date is after your handover date, so this page placed the structure 60% of the way to handover. Check the dates in the timeline above.');
     if (Math.abs(sc.tot - 100) > 0.05) A.push('Your payments add up to ' + fmtP(sc.tot) + '. Check the plan against the contract before reading the rest.');
     if (sc.pre > 30) A.push('Lower what you pay before the structure is complete. Today it is ' + fmtP(sc.pre) + ' of the price; ask to move payments to structure and handover until it is about 30% or less.');
     if (sc.sign > 20) A.push('The payment at signing is ' + fmtP(sc.sign) + '. Ask for a smaller reservation and down payment, since nothing is built yet when you pay it.');
