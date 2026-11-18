@@ -179,10 +179,10 @@ function codeBlocks(slug) {
 }
 async function docsPage(u, env, shell, lang) {
   const P = lang === 'en' ? '' : pre(lang);
-  const card = (h, p, links) => '<div><h3>' + esc(h) + '</h3><p>' + esc(p) + '</p><p class="n31-s">' + links.map(([href, l, en]) => '<a href="' + href + '"' + (en && lang !== 'en' ? ' hreflang="en"' : '') + '>' + esc(l) + '</a>').join(' · ') + '</p></div>';
+  const card = (h, p, links) => '<div><h3>' + esc(h) + '</h3><p>' + esc(p) + '</p><p class="n31-s">' + links.map(([href, l, en]) => '<a href="' + href + '"' + (en && lang !== 'en' ? ' hreflang="en"' : '') + '>' + esc(l) + '</a>').join(' · ') + (h === t(lang, 'd_mcp') ? ' · <code dir="ltr">https://kolaboro.com/mcp</code>' : '') + '</p></div>';
   const cards = '<div class="n31-g">' +
     card(t(lang, 'd_api'), t(lang, 'd_api_p'), [[P + '/api/docs/', '/api/docs/'], ['/api/v1/openapi.json', 'openapi.json'], [P + '/data/snapshots/', '/data/snapshots/']]) +
-    card(t(lang, 'd_mcp'), t(lang, 'd_mcp_p'), [['/docs/mcp/', '/docs/mcp/', 1], ['/mcp', 'https://kolaboro.com/mcp']]) +
+    card(t(lang, 'd_mcp'), t(lang, 'd_mcp_p'), [['/docs/mcp/', '/docs/mcp/', 1]]) +
     card(t(lang, 'd_wid'), t(lang, 'd_wid_p'), [[P + '/tools/widget/', '/tools/widget/']]) +
     card(t(lang, 'd_sdk'), t(lang, 'd_sdk_p'), [['/docs/sdk/', '/docs/sdk/', 1]]) +
     card(t(lang, 'd_hook'), t(lang, 'd_hook_p'), [['/docs/webhooks/', '/docs/webhooks/', 1]]) +
