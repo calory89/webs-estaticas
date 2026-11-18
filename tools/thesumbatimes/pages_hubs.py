@@ -785,7 +785,7 @@ def nearby_html(g, item, l):
     li = "".join(f'<li><a href="{g["url_of"](a, l)}">{esc(pname(a, l))}</a><span>{km_l(d, l)}{" (" + t["apx"] + ")" if apx else ""}</span></li>' for d, a, apx in rows[:4])
     ga = next((x for x in g["all_items"]() if x["slug"] == "getting-around-sumba"), None)
     more = f' <a href="{g["url_of"](ga, l)}">{esc(ga[l]["title"])}</a>' if ga else ""
-    return f'<section class="nearby"><h2 id="nearby">{t["nb_t"]}</h2><ul>{li}</ul><p>{t["nb_note"]}{more}</p></section>'
+    return f'<section class="nearby" data-block="nearby"><h2 id="nearby">{t["nb_t"]}</h2><ul>{li}</ul><p>{t["nb_note"]}{more}</p></section>'
 
 _SPLIT = re.compile(r"(<a\b.*?</a>|<h[1-6][^>]*>.*?</h[1-6]>|<script\b.*?</script>|<style\b.*?</style>|<button\b.*?</button>|<summary\b.*?</summary>|<[^>]+>)", re.S)
 _GRX = {}

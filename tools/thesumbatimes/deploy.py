@@ -105,7 +105,7 @@ const AIB=[['gptbot','GPTBot'],['oai-searchbot','OAI-SearchBot'],['chatgpt-user'
 function refGroup(h){if(!h)return'';if(/(^|\.)google\./.test(h))return'google';if(/bing\.com$/.test(h))return'bing';if(/chatgpt\.com$|openai\.com$/.test(h))return'chatgpt';if(/perplexity\.ai$/.test(h))return'perplexity';if(/copilot\.microsoft\.com$/.test(h))return'copilot';if(/gemini\.google\.com$/.test(h))return'gemini';if(/claude\.ai$/.test(h))return'claude';if(/duckduckgo\.com$|yandex\.|yahoo\.|ecosia\.org$|brave\.com$/.test(h))return'other-search';if(/facebook\.com$|instagram\.com$|t\.co$|x\.com$|tiktok\.com$|pinterest\.|youtube\.com$|linkedin\.com$|reddit\.com$|wa\.me$|whatsapp\.com$|t\.me$/.test(h))return'social';return'other-site'}
 async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'').toLowerCase();if(!ua||req.method!=='GET')return;
  if(BOT.test(ua)){const b=AIB.find(x=>ua.includes(x[0]));if(!b)return;const kb='sb/'+new Date().toISOString().slice(0,10);let o={b:{},p:{}};const vb=await env.IMG.get(kb);if(vb){try{o=JSON.parse(vb)}catch(e){}}
-  o.b[b[1]]=(o.b[b[1]]||0)+1;if(/gpt|oai|claude|perplexity/.test(b[0])){const pp=p.replace(/index\.html$/,'');if(o.p[pp]||Object.keys(o.p).length<300)o.p[pp]=(o.p[pp]||0)+1}
+  o.b[b[1]]=(o.b[b[1]]||0)+1;if(/gpt|oai|claude|perplexity/.test(b[0])){const pp=p.replace(/index\.html$/,'');if(o.p[pp]||Object.keys(o.p).length<300)o.p[pp]=(o.p[pp]||0)+1}else if(/googlebot|bingbot/.test(b[0])){const f=b[0].indexOf('google')>-1?'g':'m';o[f]=o[f]||{};const pp=p.replace(/index\.html$/,'');if(o[f][pp]||Object.keys(o[f]).length<1500)o[f][pp]=(o[f][pp]||0)+1}
   if(Math.random()<0.34||!vb)await env.IMG.put(kb,JSON.stringify(o),{expirationTtl:86400*120});return}
  if(req.headers.get('sec-fetch-mode')!=='navigate'||!req.headers.get('accept-language')||(req.headers.get('sec-fetch-dest')||'document')!=='document'||(req.headers.get('purpose')||req.headers.get('sec-purpose')||'').includes('prefetch'))return;
  const k='st/'+new Date().toISOString().slice(0,10);let d={pv:0,l:{},p:{},c:{},r:{},s:{}};const v=await env.IMG.get(k);if(v){try{d=JSON.parse(v)}catch(e){}}
@@ -114,7 +114,27 @@ async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'')
  const us_=u.searchParams.get('utm_source');let rh='';try{rh=new URL(req.headers.get('referer')||'').hostname.replace(/^www\./,'')}catch(e){}if(rh&&rh!=='thesumbatimes.com'){inc(d.r,rh);d.g=d.g||{};inc(d.g,refGroup(rh))}else if(!rh){d.g=d.g||{};inc(d.g,us_?'campaign':'direct')}
  if(us_)inc(d.s,us_.slice(0,30).toLowerCase());
  await env.IMG.put(k,JSON.stringify(d),{expirationTtl:86400*120})}catch(e){}}
+async function ev(req,env){try{if(req.method!=='POST')return new Response('',{status:405});const ua=req.headers.get('user-agent')||'';if(!ua||BOT.test(ua))return new Response(null,{status:204});
+ const b=JSON.parse((await req.text()).slice(0,600));const k='st/'+new Date().toISOString().slice(0,10);let d={pv:0,l:{},p:{},c:{},r:{},s:{}};const v=await env.IMG.get(k);if(v){try{d=JSON.parse(v)}catch(e){}}
+ const inc=(o,key,cap)=>{if(o[key]||Object.keys(o).length<cap)o[key]=(o[key]||0)+1};const clean=x=>String(x||'').toLowerCase().replace(/[^\p{L}\p{N} \/_.-]/gu,'').trim().slice(0,60);
+ if(b.k==='h'){const p=clean(b.p);if(p&&F[p+'index.html']){d.h=d.h||{};const a=d.h[p]||(Object.keys(d.h).length<400?[0,0]:null);if(a){a[b.v?0:1]++;d.h[p]=a}}}
+ else if(b.k==='b'){const n=clean(b.b).slice(0,24);if(n){d.b=d.b||{};inc(d.b,n,60)}}
+ else if(b.k==='v'){const n=clean(b.b).slice(0,24);if(n){d.bv=d.bv||{};inc(d.bv,n,60)}}
+ else if(b.k==='q'){const q=clean(b.q).slice(0,40);if(q.length>1){const f=b.n>0?'q':'q0';d[f]=d[f]||{};inc(d[f],q,300)}}
+ else return new Response(null,{status:204});
+ await env.IMG.put(k,JSON.stringify(d),{expirationTtl:86400*120});return new Response(null,{status:204})}catch(e){return new Response(null,{status:204})}}
+async function top(req,env,u,ctx){const l=['en','es','id'].includes(u.searchParams.get('l'))?u.searchParams.get('l'):'en';const ck=new Request(u.origin+'/api/top?l='+l);
+ try{const c=await caches.default.match(ck);if(c)return c}catch(e){}
+ const tot={};const now=Date.now();const days=[];for(let i=0;i<7;i++)days.push('st/'+new Date(now-i*86400000).toISOString().slice(0,10));
+ const vs=await Promise.all(days.map(k=>env.IMG.get(k).catch(()=>null)));
+ for(const v of vs){if(!v)continue;try{const p=JSON.parse(v).p||{};for(const k in p){if(k.startsWith('/'+l+'/')&&k.split('/').length>=5)tot[k]=(tot[k]||0)+p[k]}}catch(e){}}
+ const ix={};for(const a of idx(l))ix[a.u]=a.t;
+ const out=Object.entries(tot).filter(e=>ix[e[0]]&&e[1]>=3).sort((a,b)=>b[1]-a[1]).slice(0,5).map(e=>({u:e[0],t:ix[e[0]]}));
+ const R=new Response(JSON.stringify(out),{headers:Object.assign({'content-type':'application/json; charset=utf-8','cache-control':'public, max-age=3600','x-robots-tag':'noindex'},SEC)});
+ if(ctx)ctx.waitUntil(caches.default.put(ck,R.clone()).catch(()=>{}));return R}
 export default{async fetch(req,env,ctx){const u=new URL(req.url);
+ if(u.pathname==='/api/ev')return ev(req,env);
+ if(u.pathname==='/api/top')return top(req,env,u,ctx);
  if(u.pathname.startsWith('/api/nl/'))return nl(req,env,u);
  if(u.pathname==='/api/ask')return ask(req,env);
  if(u.pathname==='/api/question')return question(req,env);

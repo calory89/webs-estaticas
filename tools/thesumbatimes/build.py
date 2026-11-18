@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months
-MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, engage, pages_start
+MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, pages_start]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -322,7 +322,7 @@ body{padding-bottom:64px}
 THEME_JS = "<script>try{var t=localStorage.getItem('st-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
 
 _CSSH = []
-def css_all(): return CSS + "".join("\n" + getattr(m, "CSS", "") for m in MODULES)
+def css_all(): return CSS + engage.CSS + "".join("\n" + getattr(m, "CSS", "") for m in MODULES)
 def css_hash():
     if not _CSSH:
         import hashlib; _CSSH.append(hashlib.sha1(css_all().encode()).hexdigest()[:10])
@@ -406,10 +406,10 @@ def footer_scripts(l):
     """Shared footer scripts (newsletter, saved list, assistant, service worker) go to one cached file per language instead of being repeated in every page."""
     if l not in _FJS:
         import hashlib
-        raw = sub_js(l) + reader_tools.saved_js(l) + assistant(l) + "<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})</script>"
+        raw = sub_js(l) + reader_tools.saved_js(l) + assistant(l) + engage.js(l) + "<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})</script>"
         js = ";\n".join(re.findall(r"<script>(.*?)</script>", raw, re.S)); htm = re.sub(r"<script>.*?</script>", "", raw, flags=re.S)
         path = f"/j.{l}.{hashlib.sha1(js.encode()).hexdigest()[:10]}.js"
-        _FJS[l] = (htm + f'<script src="{path}" defer></script>', path, js)
+        _FJS[l] = (htm + engage.spec_rules() + f'<script src="{path}" defer></script>', path, js)
     return _FJS[l][0]
 def foot_links(l):
     rows = list(FOOT)
@@ -502,7 +502,7 @@ def related(a, l):
     ta = set(seo_extra.tags_of(a)); pool = [b for b in all_items() if b is not a and kind_of(b) != "letter"]
     def score(b): return (len(ta & set(seo_extra.tags_of(b))) * 3 + (2 if b["section"] == a["section"] else 0) + (1 if group_of(b) == group_of(a) else 0) + (1 if kind_of(b) != kind_of(a) else 0))
     pick = sorted(pool, key=lambda b: (-score(b), -dt(b).timestamp()))[:6]
-    return f'<section class="block"><div class="hd"><h2>{X[l]["related"]}</h2></div><div class="grid">{"".join(card(b,l) for b in pick)}</div></section>'
+    return f'<section class="block" data-block="related"><div class="hd"><h2>{X[l]["related"]}</h2></div><div class="grid">{"".join(card(b,l) for b in pick)}</div></section>'
 PN = {"en": ("Previous", "Next"), "es": ("Anterior", "Siguiente"), "id": ("Sebelumnya", "Berikutnya")}
 def prev_next(a, l):
     """Previous / next piece of the same kind and section (chronological), for readers and for crawl paths."""
@@ -510,7 +510,7 @@ def prev_next(a, l):
     if a not in same or len(same) < 2: return ""
     i = same.index(a); pv = same[i - 1] if i > 0 else None; nx = same[i + 1] if i < len(same) - 1 else None
     f = lambda b, lab, arrow_l, arrow_r: f'<a href="{url_of(b, l)}">{arrow_l}{lab}{arrow_r}<b>{esc(b[l]["title"])}</b></a>' if b else "<span></span>"
-    return f'<nav class="pn" aria-label="{PN[l][0]} / {PN[l][1]}">{f(pv, PN[l][0], "← ", "")}{f(nx, PN[l][1], "", " →")}</nav>'
+    return f'<nav class="pn" data-block="prevnext" aria-label="{PN[l][0]} / {PN[l][1]}">{f(pv, PN[l][0], "← ", "")}{f(nx, PN[l][1], "", " →")}</nav>'
 
 def gmaps(pl): return f"https://www.google.com/maps/search/?api=1&query={pl['lat']},{pl['lon']}"
 
@@ -530,14 +530,14 @@ def extras_html(a, l):
         top += f'<div class="facts"><b>{t["facts_box"]}</b><dl>' + "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in fx) + "</dl></div>"
     fq = (a.get("faq") or {}).get(l)
     if fq:
-        bottom += f'<section class="faq"><h2 id="faq">{t["faq_t"]}</h2>' + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(an)}</p></details>" for q, an in fq) + "</section>"
+        bottom += f'<section class="faq" data-block="faq"><h2 id="faq">{t["faq_t"]}</h2>' + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(an)}</p></details>" for q, an in fq) + "</section>"
     if kind_of(a) == "guide":
         names = [re.split(r"[,:]", a[l]["title"])[0].strip()] + [p["name"] for p in (a.get("places") or [])]
         names = [n for n in names if len(n) >= 5]
         me = url_of(a, l)
         news = [b for b in all_items() if kind_of(b) == "brief" and (me in body_raw(b, l) or a["slug"] in body_raw(b, "en") or any(n.lower() in (b[l]["title"] + " " + b[l]["dek"] + " " + body_raw(b, l)).lower() for n in names[1:]))][:4]
         if news:
-            bottom += f'<div class="facts nwb"><b>{NEWS_T[l]}</b><ul>' + "".join(f'<li><a href="{url_of(b,l)}">{esc(b[l]["title"])}</a><time datetime="{iso(b)}">{fdate(b,l,False)}</time></li>' for b in news) + "</ul></div>"
+            bottom += f'<div class="facts nwb" data-block="latestnews"><b>{NEWS_T[l]}</b><ul>' + "".join(f'<li><a href="{url_of(b,l)}">{esc(b[l]["title"])}</a><time datetime="{iso(b)}">{fdate(b,l,False)}</time></li>' for b in news) + "</ul></div>"
     pls = a.get("places") or []
     if pls:
         bottom += f'<section class="pls"><h2 id="places">{t["places_t"]}</h2><ul>' + "".join(
@@ -688,7 +688,10 @@ def article_page(a, l):
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}T{tm(a)}:00+08:00">'
     kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
     if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
-    s = head(l, (c.get("seo_title") or c["title"]) + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
+    extra += f'<link rel="alternate" type="text/markdown" href="{url}index.md">'
+    _pd = pages_geo.place_desc(globals(), a, l)
+    s = head(l, (c.get("seo_title") or c["title"]) + " · The Sumba Times", (_pd + " " + c["dek"]) if _pd else c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
+    write(tpl[l] + "index.md", markdown_of(a, l, url))
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(pages_hubs.glossary_links(globals(), ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l), l)
     if a.get("dateline"):
@@ -697,19 +700,48 @@ def article_page(a, l):
     top_x, bot_x = extras_html(a, l)
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
     crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a></div>'
-    plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
-    s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{esc(kicker(a,l))}</p>
+    plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta" data-block="plancta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
+    s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}<span class="ty">{TYPE_T[l][type_of(a)]}</span> · {esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}{seo_extra.reviewed_html(globals(), a, l)}<span>{mins(a,l)} {x["min"]}</span></div>
 <div class="rtb">{reader_tools.listen_button(l)}{reader_tools.save_button(l)}</div>
-{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{pages_hubs.nearby_html(globals(), a, l)}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
+{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{pages_geo.place_box(globals(), a, l)}{pages_hubs.nearby_html(globals(), a, l)}{seo_extra.topics_html(a, l)}{plan_cta}{engage.helpful_html(l, CONTACT) if kind_of(a) == "guide" else ""}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 {prev_next(a, l)}<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
     write(tpl[l], s)
 
+TYPE_T = {"en": {"news": "News", "guide": "Guide", "place": "Place", "letter": "Letter", "explainer": "Explained"}, "es": {"news": "Noticia", "guide": "Guía", "place": "Lugar", "letter": "Carta", "explainer": "Explicado"},
+          "id": {"news": "Berita", "guide": "Panduan", "place": "Tempat", "letter": "Surat", "explainer": "Penjelasan"}}
+def type_of(a):
+    k = kind_of(a)
+    if k == "letter": return "letter"
+    if k == "brief": return "news"
+    if a["section"] == "places": return "place"
+    return "explainer" if k == "explainer" else "guide"
+def markdown_of(a, l, url):
+    """Plain Markdown version of an article for AI assistants and readers (served at <article url>index.md, noindex)."""
+    c = a[l]; b = fix_links(body_raw(a, l))
+    b = re.sub(r"<script\b.*?</script>|<style\b.*?</style>", "", b, flags=re.S)
+    b = re.sub(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', lambda m: f"[{re.sub(r'<[^>]+>', '', m.group(2))}]({(BASE + m.group(1)) if m.group(1).startswith('/') else m.group(1)})", b, flags=re.S)
+    b = re.sub(r"<h2[^>]*>(.*?)</h2>", r"\n\n## \1\n\n", b, flags=re.S); b = re.sub(r"<h3[^>]*>(.*?)</h3>", r"\n\n### \1\n\n", b, flags=re.S)
+    b = re.sub(r"<(strong|b)>(.*?)</\1>", r"**\2**", b, flags=re.S); b = re.sub(r"<(em|i)>(.*?)</\1>", r"*\2*", b, flags=re.S)
+    b = re.sub(r"<li[^>]*>(.*?)</li>", r"\n- \1", b, flags=re.S)
+    b = re.sub(r"</t[dh]>\s*<t[dh][^>]*>", " | ", b); b = re.sub(r"<tr[^>]*>\s*<t[dh][^>]*>", "\n| ", b); b = re.sub(r"</t[dh]>\s*</tr>", " |", b)
+    b = re.sub(r"</p>|<br\s*/?>|</ul>|</ol>|</table>|</blockquote>", "\n\n", b); b = html.unescape(re.sub(r"<[^>]+>", "", b)); b = re.sub(r"[ \t]+\n", "\n", b); b = re.sub(r"\n{3,}", "\n\n", b).strip()
+    md = f"# {c['title']}\n\n{c['dek']}\n\n- Source: The Sumba Times, {url}\n- Published: {a['date']}" + (f"\n- Updated: {a['updated']}" if a.get("updated") else "") + f"\n- Language: {l}\n\n"
+    if c.get("answer"): md += f"**{T[l]['answer']}:** {c['answer']}\n\n"
+    fx = (a.get("facts") or {}).get(l)
+    if fx: md += "".join(f"- **{k}:** {v}\n" for k, v in fx) + "\n"
+    _ps = pages_geo.place_sentence(globals(), a, l)
+    if _ps: md += _ps + "\n\n"
+    md += b + "\n"
+    fq = (a.get("faq") or {}).get(l)
+    if fq: md += f"\n## {T[l]['faq_t']}\n\n" + "".join(f"**{q}**\n\n{an}\n\n" for q, an in fq)
+    if a.get("sources"): md += f"\n## {UI[l]['sources']}\n\n" + "".join(f"- [{t_}]({h})\n" for t_, h in a["sources"])
+    return md
 PAGER = {"en": ("Newer", "Older", "Page"), "es": ("Más recientes", "Anteriores", "Página"), "id": ("Lebih baru", "Sebelumnya", "Halaman")}
 def section_page(sec, l):
-    x = X[l]; per = 30
+    x = X[l]; per = 200 if sec == "places" else 30
     if sec == "guides": items = [a for a in all_items() if kind_of(a) == "guide"]
     elif sec in LEGACY: items = [a for a in all_items() if a["section"] == sec]
     else: items = [a for a in all_items() if group_of(a) == sec]
@@ -784,7 +816,7 @@ def home(l):
     briefs = [a for a in items if kind_of(a) == "brief" and a is not top]
     guides = travel_guides()
     feat = next((g for g in guides if g["slug"] == "best-time-to-visit-sumba"), guides[0])
-    ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "The Sumba Times", "url": BASE + f"/{l}/", "inLanguage": l,
+    ld = [{"@context": "https://schema.org", "@type": "WebSite", "@id": BASE + "/#website", "name": "The Sumba Times", "alternateName": ["Sumba Times", "TheSumbaTimes"], "url": BASE + f"/{l}/", "inLanguage": l, "publisher": {"@id": BASE + "/#organization"},
            "potentialAction": {"@type": "SearchAction", "target": BASE + f"/{l}/search/?q={{search_term_string}}", "query-input": "required name=search_term_string"}},
           {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "@id": BASE + "/#organization", "name": "The Sumba Times", "url": BASE + "/", "logo": BASE + "/apple-touch-icon.png",
            **pages_trust.org_ld_extra(l), "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
@@ -801,7 +833,7 @@ def home(l):
     brief_col = f'<div class="brf"><h2 class="rh">{n["brief_t"]}</h2>' + "".join(
         f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a><a class="more" href="/{l}/week/">{WEEK_T[l][0]} →</a></div>'
     rail = f"""<div class="rail">{reader_tools.live_box_plus(live_box(l), l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
-<a class="plan" href="/{l}/plan/"><b>{n["start"]}</b><span>{t["plan_cta_p"]}</span></a></section></div>"""
+<a class="plan" href="/{l}/start/"><b>{n["start"]}</b><span>{pages_start.S[l]["desc"].split(":")[0]}.</span></a></section>{engage.most_read_html(l)}</div>"""
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
 <section class="fp">{brief_col}{lead}{rail}</section>"""
     # secondary strip: next stories with photos (news first, then guides)
@@ -828,6 +860,7 @@ def home(l):
     ess = "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in guides[:10])
     s += f"""<section class="bottom">{figures(l)}<section class="ess"><h2 class="rh">{n["essential_t"]}</h2><ol>{ess}</ol></section>
 <section class="letter"><h2 class="rh">{n["letter_t"]}</h2>{hl(LETTER, l, img=False, when=True)}{subscribe(l)}</section></section>"""
+    s += pages_start.all_guides_html(globals(), l)
     s += "</main>" + footer(l) + live_js(l) + reader_tools.live_extra_js(l)
     write(tpl.format(l=l), s)
 
@@ -944,11 +977,18 @@ def search_page(l):
     s = head(l, x["search"] + " · The Sumba Times", x["search_ph"], tpl, noindex=True) + masthead(l, tpl)
     s += f"""<main id="main" class="w"><div class="nar"><h1>{x["search"]}</h1><form class="srch" role="search" onsubmit="event.preventDefault();go()"><input id="q" type="search" placeholder="{esc(x["search_ph"])}" aria-label="{esc(x["search_ph"])}" autofocus></form><div id="res"></div></div></main>
 <script>var IX=null;function norm(s){{return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}}
+var SYN=[['weekuri','waikuri','weekuri','wekuri'],['ratenggaro','ratengaro','rotenggaro'],['pasola','pasolla'],['waingapu','wangapu','waingappu'],['tambolaka','tambulaka','tambolakka'],['waikabubak','wekabubak','waikabubuk'],['nihi','nihiwatu'],['ikat','tenun'],['beach','pantai','playa'],['waterfall','air terjun','cascada','curug'],['village','kampung','aldea','pueblo'],['flight','flights','penerbangan','vuelo','vuelos','pesawat'],['ferry','kapal','feri','ferri','barco'],['price','cost','harga','biaya','precio','coste','cuanto cuesta'],['ticket','tiket','entrada','entrance'],['hotel','penginapan','alojamiento','stay'],['weather','cuaca','tiempo','clima'],['surf','surfing','selancar'],['map','peta','mapa'],['airport','bandara','aeropuerto'],['visa','visado'],['horse','kuda','caballo'],['hill','bukit','colina']];
+function lev1(a,b){{if(a===b)return true;var la=a.length,lb=b.length;if(Math.abs(la-lb)>1)return false;var i=0;while(i<la&&i<lb&&a[i]===b[i])i++;var ra=a.slice(i),rb=b.slice(i);if(la===lb)return ra.slice(1)===rb.slice(1);return la>lb?ra.slice(1)===rb:ra===rb.slice(1)}}
+function variants(w){{var v=[w];SYN.forEach(function(g){{if(g.indexOf(w)>-1)g.forEach(function(x){{if(v.indexOf(x)<0)v.push(x)}})}});return v}}
+var LOGT=null;
 function go(){{var q=norm(document.getElementById('q').value.trim());if(!q)return;history.replaceState(null,'','?q='+encodeURIComponent(q));try{{clarity('event','search')}}catch(e){{}}
-var p=IX?Promise.resolve(IX):fetch('/{l}/search.json').then(function(r){{return r.json()}}).then(function(j){{IX=j;return j}});
-p.then(function(ix){{var ws=q.split(/\\s+/),out=ix.map(function(a){{var h=norm(a.t+' '+a.d+' '+a.x),sc=0;ws.forEach(function(w){{if(h.indexOf(w)>-1)sc+=(norm(a.t).indexOf(w)>-1?3:1)}});return [sc,a]}}).filter(function(z){{return z[0]>0}}).sort(function(a,b){{return b[0]-a[0]}});
-var r=document.getElementById('res');r.innerHTML=out.length?'':'<p>{x["search_none"]}</p>';out.forEach(function(z){{var a=z[1],d=document.createElement('div');d.className='card';d.style.margin='0 0 20px';d.innerHTML='<p class="k"></p><h3><a></a></h3><p></p>';d.querySelector('.k').textContent=a.s;var A=d.querySelector('a');A.href=a.u;A.textContent=a.t;d.querySelectorAll('p')[1].textContent=a.d;r.appendChild(d)}})}})}}
-var q0=new URLSearchParams(location.search).get('q');if(q0){{document.getElementById('q').value=q0;go()}}</script>""" + footer(l)
+var p=IX?Promise.resolve(IX):fetch('/{l}/search.json').then(function(r){{return r.json()}}).then(function(j){{j.forEach(function(a){{a._t=norm(a.t);a._h=norm(a.t+' '+a.d+' '+a.x);a._w=a._t.split(/[^a-z0-9]+/)}});IX=j;return j}});
+p.then(function(ix){{var ws=q.split(/\\s+/).filter(function(w){{return w.length>1}}),out=ix.map(function(a){{var sc=0;ws.forEach(function(w){{var best=0;variants(w).forEach(function(v,i){{var s=0;if(a._t.indexOf(v)>-1)s=i?3:4;else if(a._h.indexOf(v)>-1)s=1;if(s>best)best=s}});
+if(!best&&w.length>=5&&a._w.some(function(x){{return x.length>=4&&lev1(x,w)}}))best=2;sc+=best}});return [sc,a]}}).filter(function(z){{return z[0]>0}}).sort(function(a,b){{return b[0]-a[0]}}).slice(0,60);
+var r=document.getElementById('res');r.innerHTML=out.length?'':'<p>{x["search_none"]}</p>';var groups={{}},order=[];out.forEach(function(z){{var k=z[1].s;if(!groups[k]){{groups[k]=[];order.push(k)}}groups[k].push(z[1])}});
+order.forEach(function(k){{var h=document.createElement('h2');h.className='rh';h.textContent=k+' ('+groups[k].length+')';r.appendChild(h);groups[k].forEach(function(a){{var d=document.createElement('div');d.className='card';d.style.margin='0 0 18px';d.innerHTML='<h3><a></a></h3><p></p>';var A=d.querySelector('a');A.href=a.u;A.textContent=a.t;d.querySelector('p').textContent=a.d;r.appendChild(d)}})}});
+clearTimeout(LOGT);LOGT=setTimeout(function(){{if(window.stEv)stEv({{k:'q',q:q,n:out.length}})}},1500)}})}}
+var q0=new URLSearchParams(location.search).get('q');if(q0){{document.getElementById('q').value=q0;go()}}document.getElementById('q').addEventListener('input',function(){{clearTimeout(window._sd);window._sd=setTimeout(go,350)}});</script>""" + footer(l)
     write(tpl.format(l=l), s)
 
 def notfound(l):
@@ -1008,6 +1048,11 @@ def sitemaps():
         for l in LANGS:
             imgs.append(f'<url><loc>{BASE}{url_of(a,l)}</loc><image:image><image:loc>{BASE}/img/{img_key(a)}-1280.webp</image:loc></image:image></url>')
     write("/image-sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(imgs) + "</urlset>")
+    groups = {"news": [], "guides": [], "places": [], "pages": []}
+    art = {BASE + url_of(a, l): ("places" if a["section"] == "places" else "guides" if kind_of(a) == "guide" else "news") for a in all_items() for l in LANGS}
+    for u_ in urls: groups[art.get(re.search(r"<loc>(.*?)</loc>", u_).group(1), "pages")].append(u_)
+    for k_, v_ in groups.items(): write(f"/sitemaps/{k_}.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(v_) + "</urlset>")
+    write("/sitemap-index.xml", '<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<sitemap><loc>{BASE}/sitemaps/{k_}.xml</loc><lastmod>{NOW.date().isoformat()}</lastmod></sitemap>" for k_ in groups) + f"<sitemap><loc>{BASE}/news-sitemap.xml</loc></sitemap><sitemap><loc>{BASE}/image-sitemap.xml</loc></sitemap></sitemapindex>")
     write("/" + INDEXNOW + ".txt", INDEXNOW)
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>")
     news = []
@@ -1020,7 +1065,7 @@ def sitemaps():
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "CCBot", "meta-externalagent", "DuckAssistBot", "MistralAI-User"]
     rb = "# The Sumba Times welcomes search engines and AI assistants. Please cite and link the article you use.\n"
     rb += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\nDisallow: /*/search/\n\n"
-    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\nSitemap: https://thesumbatimes.com/image-sitemap.xml\n"
+    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\nSitemap: https://thesumbatimes.com/image-sitemap.xml\nSitemap: https://thesumbatimes.com/sitemap-index.xml\n"
     write("/robots.txt", rb)
     llms()
 
@@ -1034,6 +1079,7 @@ def llms():
     t += f"Plan a trip: {BASE}/en/plan/ (Spanish {BASE}/es/plan/, Indonesian {BASE}/id/plan/)\n\n"
     t += "## Travel guides (English)\n" + lines("en") + "\n## Guías de viaje (español)\n" + lines("es") + "\n## Panduan perjalanan (Bahasa Indonesia)\n" + lines("id")
     t += "\n## News\n" + "".join(f"- [{a['en']['title']}]({BASE}{url_of(a,'en')}) ({a['date']})\n" for a in all_items() if kind_of(a) == "brief")
+    t += f"\n## Data and tools\n- Markdown version of any article: add index.md to its URL (example: {BASE}{url_of(travel_guides()[0],'en')}index.md)\n- Open data (CSV, JSON, GeoJSON): {BASE}/en/data/\n- Road distances and driving times: {BASE}/en/distances/\n- Map of every place: {BASE}/en/map/\n- Flights to Sumba: {BASE}/en/flights/\n- Events calendar: {BASE}/en/events/\n- Climate month by month: {BASE}/en/sumba-in/\n- Earthquakes near Sumba since 2000: {BASE}/en/earthquakes/\n- Glossary: {BASE}/en/glossary/\n"
     t += f"\n## Optional\n- About and editorial standards: {BASE}/en/about/\n- RSS: {BASE}/en/feed.xml\n- Sitemap: {BASE}/sitemap.xml\n"
     write("/llms.txt", t)
     for ll in ("es", "id"):
