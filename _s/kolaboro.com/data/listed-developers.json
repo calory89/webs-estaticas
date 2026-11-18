@@ -6,8 +6,7 @@
   "Each developer name as published is compared with company names in Wikidata items that have a stock exchange statement, in the SEC EDGAR company list, and in the official company lists of the Australian Securities Exchange and of KAP (Borsa Istanbul). Only exact matches, ignoring legal-form endings such as PJSC, PLC, PCL, Bhd, Inc., Ltd, A.S., are kept, then checked by hand; same-name companies in another business were removed.",
   "Subsidiaries and joint ventures with a different name are not matched, so a developer missing here may still belong to a listed group.",
   "Filing links go to the company page on the exchange or regulator where that page could be checked, else to the official site of the exchange.",
-  "Latest annual report: forms 10-K, 20-F or 40-F from the SEC EDGAR submissions API.",
-  "Added 18 Nov 2026: for a few large listed developers, the latest full-year results and the credit ratings as the company itself announced them (press release or results page, linked and dated). Ratings change: the agency is the source of the current rating."
+  "Latest annual report: forms 10-K, 20-F or 40-F from the SEC EDGAR submissions API."
  ],
  "sources": {
   "wikidata": {
@@ -87,10 +86,6 @@
   "XNYS": {
    "n": "New York Stock Exchange (filings on SEC EDGAR)",
    "u": "https://www.sec.gov/edgar/search/"
-  },
-  "XADS": {
-   "n": "Abu Dhabi Securities Exchange",
-   "u": "https://www.adx.ae/"
   }
  },
  "developers": {
@@ -193,34 +188,6 @@
      "t": "EMAAR",
      "u": "https://www.dfm.ae/the-exchange/market-information/company/EMAAR"
     }
-   ],
-   "fin": {
-    "y": 2025,
-    "cur": "AED",
-    "rev": 49600000000.0,
-    "pbt": 25700000000.0,
-    "np": null,
-    "d": "2026-02-12",
-    "src": "https://www.emaar.com/en/press-release-listing/emaar-achieves-another-record-year-with-highest-ever-sales-revenue-and-profit-in-2025",
-    "read": "2026-11-18"
-   },
-   "rt": [
-    {
-     "a": "S&P Global Ratings",
-     "r": "BBB+",
-     "o": "stable",
-     "d": "2025-06-11",
-     "src": "https://www.emaar.com/en/press-release-listing/sp-and-moodys-upgrade-emaars-credit-ratings",
-     "read": "2026-11-18"
-    },
-    {
-     "a": "Moody's",
-     "r": "Baa1",
-     "o": "stable",
-     "d": "2025-06-11",
-     "src": "https://www.emaar.com/en/press-release-listing/sp-and-moodys-upgrade-emaars-credit-ratings",
-     "read": "2026-11-18"
-    }
    ]
   },
   "emaar-properties": {
@@ -231,34 +198,6 @@
      "x": "XDFM",
      "t": "EMAAR",
      "u": "https://www.dfm.ae/the-exchange/market-information/company/EMAAR"
-    }
-   ],
-   "fin": {
-    "y": 2025,
-    "cur": "AED",
-    "rev": 49600000000.0,
-    "pbt": 25700000000.0,
-    "np": null,
-    "d": "2026-02-12",
-    "src": "https://www.emaar.com/en/press-release-listing/emaar-achieves-another-record-year-with-highest-ever-sales-revenue-and-profit-in-2025",
-    "read": "2026-11-18"
-   },
-   "rt": [
-    {
-     "a": "S&P Global Ratings",
-     "r": "BBB+",
-     "o": "stable",
-     "d": "2025-06-11",
-     "src": "https://www.emaar.com/en/press-release-listing/sp-and-moodys-upgrade-emaars-credit-ratings",
-     "read": "2026-11-18"
-    },
-    {
-     "a": "Moody's",
-     "r": "Baa1",
-     "o": "stable",
-     "d": "2025-06-11",
-     "src": "https://www.emaar.com/en/press-release-listing/sp-and-moodys-upgrade-emaars-credit-ratings",
-     "read": "2026-11-18"
     }
    ]
   },
@@ -596,37 +535,6 @@
      "x": "XKLS",
      "t": "5401",
      "u": null
-    }
-   ]
-  },
-  "aldar-properties": {
-   "co": "Aldar Properties",
-   "l": [
-    {
-     "x": "XADS",
-     "t": "ALDAR",
-     "u": null
-    }
-   ],
-   "fin": {
-    "y": 2025,
-    "cur": "AED",
-    "rev": 33800000000.0,
-    "pbt": 10000000000.0,
-    "np": 8800000000.0,
-    "d": "2026-02-09",
-    "src": "https://www.aldar.com/en/news-and-media/aldar-q4-fy-2025-financial-results",
-    "read": "2026-11-18"
-   },
-   "rt": [
-    {
-     "a": "Moody's",
-     "r": "Baa2",
-     "o": "stable",
-     "d": "2025-01",
-     "src": "https://vazeno.files.cmp.optimizely.com/download/assets/Aldar+-+Press+Release+-+Hybrid+Note+Issuance+-+FINAL+EN/dc05c57e5d6211f0b5376a302fc0481b",
-     "read": "2026-11-18",
-     "n": "reaffirmed"
     }
    ]
   }

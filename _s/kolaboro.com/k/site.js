@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=n31a1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
+  var V = { palette: '/k/palette.js?v=n28c1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -14,26 +14,7 @@
   function ev(name, params) {
     try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
     try { if (window.clarity) clarity('event', name); } catch (e) {}
-    try { fn(name, params); } catch (e) {}
   }
-  // n31a (18 Nov 2026): first-party funnel. One step name per browser session to /api/open/fn (counted per day at the edge, no cookie,
-  // id or address kept), and a project save once per browser to /api/open/sv. Shown on /funnel/.
-  var FN = { seo_check: 'project_cta', seo_book: 'project_cta', n31_cta: 'project_cta', cta_sticky: 'project_cta', desk_url: 'check_start', check_project: 'check_start', desk_done: 'check_done', generate_lead: 'lead' };
-  function fnSend(step) {
-    try { if (/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent) || sessionStorage.getItem('kb-fn-' + step)) return; sessionStorage.setItem('kb-fn-' + step, '1'); } catch (e) { return; }
-    try { if (!(navigator.sendBeacon && navigator.sendBeacon('/api/open/fn?s=' + step))) fetch('/api/open/fn?s=' + step, { method: 'POST', keepalive: true }); } catch (e) {}
-  }
-  window.kbFunnel = fnSend;
-  function fn(name, params) {
-    var st = FN[name];
-    if (st === 'project_cta' && !/^\/(?:[a-z]{2}\/)?projects\/[a-z0-9-]+\/$/.test(location.pathname)) return;
-    if (st) fnSend(st);
-    if (name === 'named_save' && typeof params === 'string' && /^[A-Za-z0-9-]{3,20}$/.test(params)) {
-      try { var k = 'kb-n31-sv', a = JSON.parse(localStorage.getItem(k) || '[]'); if (a.indexOf(params) >= 0) return; a.push(params); localStorage.setItem(k, JSON.stringify(a.slice(-500))); if (navigator.sendBeacon) navigator.sendBeacon('/api/open/sv?id=' + encodeURIComponent(params)); } catch (e) {}
-    }
-  }
-  if (/^\/book\/?$/.test(location.pathname)) fnSend('book');
-  if (/^\/thanks/.test(location.pathname)) fnSend('pay_return');
   window.kbEvent = ev;
 
   // nav shadow + mobile menu
@@ -323,27 +304,6 @@
     var quiz = form.querySelector('.quiz');
     var draftKey = 'kb-draft-' + (form.id || 'f');
     var lbl = function (n) { return form.querySelector('[data-l="' + n + '"]'); };
-    // n31a (18 Nov 2026, items 29 and 36): buyers send only an email and the project; name, place, phone, message, when and budget
-    // are optional and folded behind one button. Other roles keep the full form.
-    var QS = { en: ['More details (optional)', 'When do you plan to buy?', ['Within 3 months', '3 to 12 months', 'Later than 12 months', 'I already signed'], 'Budget', ['Under €200,000', '€200,000 to €500,000', '€500,000 to €1 million', 'Over €1 million'], 'Choose'],
-      es: ['Más detalles (opcional)', '¿Cuándo piensas comprar?', ['En menos de 3 meses', 'De 3 a 12 meses', 'En más de 12 meses', 'Ya firmé'], 'Presupuesto', ['Menos de 200.000 €', 'De 200.000 a 500.000 €', 'De 500.000 € a 1 millón', 'Más de 1 millón de €'], 'Elige'],
-      de: ['Weitere Angaben (optional)', 'Wann möchten Sie kaufen?', ['Innerhalb von 3 Monaten', 'In 3 bis 12 Monaten', 'In mehr als 12 Monaten', 'Ich habe schon unterschrieben'], 'Budget', ['Unter 200.000 €', '200.000 bis 500.000 €', '500.000 € bis 1 Million', 'Über 1 Million €'], 'Auswählen'],
-      fr: ['Plus de détails (facultatif)', 'Quand pensez-vous acheter ?', ['Dans les 3 mois', 'Dans 3 à 12 mois', 'Dans plus de 12 mois', 'J’ai déjà signé'], 'Budget', ['Moins de 200 000 €', '200 000 à 500 000 €', '500 000 € à 1 million', 'Plus de 1 million €'], 'Choisir'],
-      nl: ['Meer details (optioneel)', 'Wanneer wilt u kopen?', ['Binnen 3 maanden', 'Over 3 tot 12 maanden', 'Over meer dan 12 maanden', 'Ik heb al getekend'], 'Budget', ['Onder € 200.000', '€ 200.000 tot € 500.000', '€ 500.000 tot € 1 miljoen', 'Boven € 1 miljoen'], 'Kies'],
-      ru: ['Подробнее (необязательно)', 'Когда планируете покупку?', ['В течение 3 месяцев', 'Через 3–12 месяцев', 'Позже чем через 12 месяцев', 'Я уже подписал договор'], 'Бюджет', ['До 200 000 €', 'От 200 000 до 500 000 €', 'От 500 000 € до 1 млн', 'Более 1 млн €'], 'Выберите'],
-      zh: ['更多信息（选填）', '您打算何时购买？', ['3 个月内', '3 到 12 个月', '12 个月以后', '我已经签约'], '预算', ['低于 20 万欧元', '20 万至 50 万欧元', '50 万至 100 万欧元', '超过 100 万欧元'], '请选择'],
-      ar: ['تفاصيل إضافية (اختياري)', 'متى تنوي الشراء؟', ['خلال 3 أشهر', 'بعد 3 إلى 12 شهرًا', 'بعد أكثر من 12 شهرًا', 'وقّعت بالفعل'], 'الميزانية', ['أقل من 200,000 يورو', 'من 200,000 إلى 500,000 يورو', 'من 500,000 يورو إلى مليون', 'أكثر من مليون يورو'], 'اختر'] };
-    var QV = [['soon', '3-12m', '12m+', 'signed'], ['<200k', '200-500k', '500k-1m', '1m+']];
-    var Q = QS[(document.documentElement.lang || 'en').slice(0, 2)] || QS.en, qx = null, qt = null;
-    if (form.querySelector('.step2') && form.name && !form.querySelector('.kbq-x')) {
-      if (!document.getElementById('kbq-css')) { var qc = document.createElement('style'); qc.id = 'kbq-css'; qc.textContent = 'form.kb-short .step-next{display:none!important}form.kb-short .step2{display:grid}form.kb-short:not(.kb-more) label.f:has(> input[name=name]),form.kb-short:not(.kb-more) label.f:has(> input[name=place]),form.kb-short:not(.kb-more) label.f:has(> input[name=phone]),form.kb-short:not(.kb-more) label.f:has(> textarea[name=msg]),form.kb-short:not(.kb-more) .kbq-x{display:none}form:not(.kb-short) .kbq-x,form:not(.kb-short) .kbq-t,form.kb-more .kbq-t{display:none}.kbq-t{justify-self:start;min-height:44px;padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:600;text-decoration:underline;cursor:pointer}'; document.head.appendChild(qc); }
-      var sel = function (nm, lab, opts, vals) { return '<label class="f">' + lab + '<select name="' + nm + '"><option value="">' + Q[5] + '</option>' + opts.map(function (o, i) { return '<option value="' + vals[i] + '">' + o + '</option>'; }).join('') + '</select></label>'; };
-      qx = document.createElement('div'); qx.className = 'two kbq-x'; qx.innerHTML = sel('kb_when', Q[1], Q[2], QV[0]) + sel('kb_budget', Q[3], Q[4], QV[1]);
-      var pj = form.project && form.project.closest('.two'); if (pj) pj.parentNode.insertBefore(qx, pj.nextSibling);
-      qt = document.createElement('button'); qt.type = 'button'; qt.className = 'kbq-t'; qt.textContent = Q[0]; qt.setAttribute('aria-expanded', 'false');
-      var cs = form.querySelector('label.consent'); if (cs) cs.parentNode.insertBefore(qt, cs);
-      qt.addEventListener('click', function () { form.classList.add('kb-more'); qt.setAttribute('aria-expanded', 'true'); if (form.place) form.place.focus(); });
-    }
 
     function role() { var r = form.querySelector('input[name=role]:checked'); return r ? r.value : (form.dataset.defaultRole || 'buyer'); }
     function setRole(r) {
@@ -354,7 +314,6 @@
       if (lbl('msg')) lbl('msg').textContent = c[4];
       if (quiz) quiz.classList.toggle('on', r === 'agent');
       form.setAttribute('data-r', r);
-      if (qx) { form.classList.toggle('kb-short', r === 'buyer'); var s2 = form.querySelector('.step2'); if (r === 'buyer' && s2) s2.classList.add('on'); }
     }
     form.addEventListener('change', function (e) { if (e.target.name === 'role') setRole(e.target.value); });
     document.querySelectorAll('a[data-role],button[data-role]').forEach(function (a) { a.addEventListener('click', function () { setRole(a.dataset.role); }); });
@@ -396,27 +355,24 @@
       var f = new FormData(form), g = function (k) { return String(f.get(k) || '').trim(); };
       var r = role(), bad = null;
       ['name', 'email', 'place', 'msg'].forEach(function (k) { fieldErr(k, ''); });
-      var short = form.classList.contains('kb-short');
-      if (!g('name') && !short) { fieldErr('name', MSG.name); bad = bad || 'name'; }
+      if (!g('name')) { fieldErr('name', MSG.name); bad = bad || 'name'; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('email'))) { fieldErr('email', MSG.email); bad = bad || 'email'; }
-      if (g('place').length < 2 && !short) { fieldErr('place', MSG.place); bad = bad || 'place'; }
-      if (g('msg').length < 3 && !short) { fieldErr('msg', MSG.msg); bad = bad || 'msg'; }
+      if (g('place').length < 2) { fieldErr('place', MSG.place); bad = bad || 'place'; }
+      if (g('msg').length < 3) { fieldErr('msg', MSG.msg); bad = bad || 'msg'; }
       if (bad) { form[bad].focus(); err.textContent = MSG.check; return; }
       if (!f.get('consent')) { err.textContent = MSG.consent; return; }
       if (g('company') || Date.now() - started < 2500) { err.textContent = MSG.bot; return; }
 
       var extra = [];
       if (g('project')) extra.push('Project: ' + g('project'));
-      if (g('kb_when')) extra.push('When: ' + g('kb_when'));
-      if (g('kb_budget')) extra.push('Budget: ' + g('kb_budget'));
       if (r === 'agent' && quiz) ['q_live', 'q_bg', 'q_lang'].forEach(function (k) { if (g(k)) extra.push(k.replace('q_', '') + ': ' + g(k)); });
       var source = [form.dataset.source || 'yc-home', qs.get('utm_source'), qs.get('utm_campaign'), document.referrer && new URL(document.referrer).host].filter(Boolean).join(' | ').slice(0, 200);
       send.disabled = true; var label = send.textContent; send.textContent = MSG.sending;
       fetch(URL_, {
         method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ p_name: g('name') || 'Check request', p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
-          p_who: r + ' | ' + g('place'), p_bring: ((g('msg') || (short ? 'Short check request' : '')) + (extra.length ? '\n\n' + extra.join('\n') : '')).slice(0, 4000),
-          p_learn: g('project').slice(0, 300), p_week: g('kb_when'), p_lang: 'en', p_source: source, p_plan: ('yc-' + r).slice(0, 20) })
+        body: JSON.stringify({ p_name: g('name'), p_email: g('email'), p_country: g('place'), p_phone: g('phone'),
+          p_who: r + ' | ' + g('place'), p_bring: (g('msg') + (extra.length ? '\n\n' + extra.join('\n') : '')).slice(0, 4000),
+          p_learn: g('project').slice(0, 300), p_week: '', p_lang: 'en', p_source: source, p_plan: ('yc-' + r).slice(0, 20) })
       }).then(function (res) { return res.json(); }).then(function (d) {
         if (d === 'ok') {
           form.classList.add('sent'); try { st && st.removeItem(draftKey); } catch (e) {}
@@ -582,7 +538,7 @@
   var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_event', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
   function log(kind, ref){ try { fetch(SB, { method:'POST', keepalive:true, headers:{ apikey:K, Authorization:'Bearer '+K, 'Content-Type':'application/json' }, body: JSON.stringify({ p_kind:kind, p_ref:ref||null, p_page:location.pathname }) }); } catch(e){} }
   window.kbLog = log;
-  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href*="paypal.com"]'); if (a) { log('pay_click', a.getAttribute('data-ev') || a.textContent.trim().slice(0,60)); try { if (window.kbFunnel) kbFunnel('pay_click'); } catch (x) {} } }, true);
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href*="paypal.com"]'); if (a) log('pay_click', a.getAttribute('data-ev') || a.textContent.trim().slice(0,60)); }, true);
   if (/^\/thanks/.test(location.pathname)) { try { if (!sessionStorage.getItem('kb-pr')) { sessionStorage.setItem('kb-pr','1'); log('paypal_return', location.search.slice(0,200)); } } catch(e){ log('paypal_return'); } }
 })();
 
@@ -1086,74 +1042,4 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   }
   var lvRun = function () { setTimeout(levels, 400); setTimeout(levels, 3000); };
   if (D.readyState === 'complete') lvRun(); else addEventListener('load', lvRun);
-})();
-
-/* n31t (batch 31, items 290 and 294): with "reduce motion" set, scripted scrolling jumps instead of gliding (every smooth scroll on the
-   site goes through these two calls, including lazily loaded tools); before printing, folded sections open so the paper copy is complete,
-   and close again after */
-(function () {
-  try {
-    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      var fix = function (o) { if (o && typeof o === 'object' && o.behavior === 'smooth') { o = Object.assign({}, o); o.behavior = 'auto'; } return o; };
-      var siv = Element.prototype.scrollIntoView; Element.prototype.scrollIntoView = function (o) { return siv.call(this, fix(o)); };
-      var st = window.scrollTo; window.scrollTo = function (a, b) { return typeof a === 'object' ? st.call(window, fix(a)) : st.call(window, a, b); };
-      var sb = window.scrollBy; window.scrollBy = function (a, b) { return typeof a === 'object' ? sb.call(window, fix(a)) : sb.call(window, a, b); };
-    }
-  } catch (e) {}
-  var opened = [];
-  addEventListener('beforeprint', function () { opened = [].slice.call(document.querySelectorAll('main details:not([open])')); opened.forEach(function (d) { d.open = true; }); });
-  addEventListener('afterprint', function () { opened.forEach(function (d) { d.open = false; }); opened = []; });
-})();
-
-/* n31t (batch 31, item 289): a progress bar above the live steps of the free check (/check/ in 8 languages): steps done out of steps
-   shown, updated as the steps change; it says only what the steps list already says */
-(function () {
-  var L = document.getElementById('az-prog'); if (!L || !window.MutationObserver) return;
-  var LG = (document.documentElement.lang || 'en').slice(0, 2), T = { en: ['Progress of the check', '{k} of {n} steps done'], es: ['Progreso de la comprobación', '{k} de {n} pasos hechos'], de: ['Fortschritt der Prüfung', '{k} von {n} Schritten erledigt'], fr: ['Avancement de la vérification', '{k} étapes sur {n} faites'], nl: ['Voortgang van de check', '{k} van {n} stappen klaar'], ru: ['Ход проверки', 'Готово шагов: {k} из {n}'], zh: ['核查进度', '已完成 {k}/{n} 步'], ar: ['تقدّم الفحص', 'اكتمل {k} من {n} خطوات'] }[LG] || ['Progress of the check', '{k} of {n} steps done'];
-  var w = document.createElement('div'); w.className = 'k31-pg'; w.setAttribute('role', 'progressbar'); w.setAttribute('aria-label', T[0]); w.setAttribute('aria-valuemin', '0'); w.setAttribute('aria-valuemax', '100'); w.hidden = true;
-  w.innerHTML = '<i></i><span></span>';
-  var st = document.createElement('style'); st.textContent = '.k31-pg{position:relative;height:28px;margin:8px 0;border-radius:99px;background:rgba(23,33,43,.08);overflow:hidden}.k31-pg i{position:absolute;inset-block:0;inset-inline-start:0;width:0;background:#0B7A55;border-radius:99px;transition:width .3s}.k31-pg span{position:relative;display:block;padding:0 12px;line-height:28px;font-size:.9rem;font-weight:700}:root[data-theme=dark] .k31-pg{background:rgba(255,255,255,.12)}:root[data-theme=dark] .k31-pg i{background:#1E8E63}@media (prefers-reduced-motion:reduce){.k31-pg i{transition:none}}';
-  document.head.appendChild(st); L.parentNode.insertBefore(w, L);
-  var upd = function () {
-    var li = [].slice.call(L.children).filter(function (x) { return x.tagName === 'LI' && !x.classList.contains('tot'); }), n = li.length;
-    if (n < 2) { w.hidden = true; return; }
-    var k = li.filter(function (x) { return /\b(ok|done|warn|bad|fail|skip)\b/.test(x.className); }).length, p = Math.round(100 * k / n);
-    w.hidden = false; w.firstChild.style.width = p + '%'; w.setAttribute('aria-valuenow', String(p)); w.lastChild.textContent = T[1].replace('{k}', k).replace('{n}', n);
-  };
-  new MutationObserver(upd).observe(L, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] }); upd();
-})();
-
-/* n31t (batch 31, items 287 and 291): "?" opens the keyboard shortcuts page; on English pages, a visitor whose browser asks for one of
-   our other languages is offered this page in that language (only when it exists here: the page's own hreflang link). Nothing is
-   stored except the choice to hide the offer (localStorage, try/catch). */
-(function () {
-  var D = document, H = D.documentElement, LG = (H.lang || 'en').slice(0, 2).toLowerCase(), P = LG === 'en' ? '' : '/' + LG;
-  D.addEventListener('keydown', function (e) {
-    var t = e.target || {};
-    if (e.key !== '?' || e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable) return;
-    if (/\/shortcuts\/?$/.test(location.pathname)) return;
-    e.preventDefault(); location.href = P + '/shortcuts/';
-  });
-  // "/" opens search on every page (pages with their own search box marked data-kbd="/" keep focusing that box, see above)
-  D.addEventListener('keydown', function (e) {
-    var t = e.target || {};
-    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || D.querySelector('[data-kbd="/"]') || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable) return;
-    if (window.kbOpenSearch) { e.preventDefault(); window.kbOpenSearch(); }
-  });
-  if (LG !== 'en' || /^\/(admin|portal|login|embed|agents)\b/.test(location.pathname)) return;
-  var W = { es: ['Esta página también está en español.', 'Ver en español', 'Cerrar'], de: ['Diese Seite gibt es auch auf Deutsch.', 'Auf Deutsch ansehen', 'Schließen'], fr: ['Cette page existe aussi en français.', 'Voir en français', 'Fermer'], nl: ['Deze pagina is er ook in het Nederlands.', 'Bekijk in het Nederlands', 'Sluiten'], ru: ['Эта страница есть и на русском.', 'Открыть на русском', 'Закрыть'], zh: ['本页也有中文版本。', '查看中文版', '关闭'], ar: ['هذه الصفحة متوفرة بالعربية أيضًا.', 'عرضها بالعربية', 'إغلاق'] };
-  var want = null; try { (navigator.languages || [navigator.language || '']).some(function (x) { x = String(x || '').slice(0, 2).toLowerCase(); if (x === 'en') return true; if (W[x]) { want = x; return true; } return false; }); } catch (e) {}
-  if (!want) return;
-  try { if (localStorage.getItem('kb-lang-offer') === 'no') return; } catch (e) {}
-  var alt = D.querySelector('link[rel="alternate"][hreflang="' + want + '"]'); if (!alt) return;
-  var href = alt.getAttribute('href') || ''; try { var u = new URL(href, location.href); if (u.host !== location.host || u.pathname === location.pathname) return; href = u.pathname + u.search + u.hash; } catch (e) { return; }
-  var show = function () {
-    var w = W[want], b = D.createElement('div'); b.className = 'k31-lo'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', w[1]); b.lang = want; if (want === 'ar') b.dir = 'rtl';
-    var s = D.createElement('style'); s.textContent = '.k31-lo{position:fixed;z-index:70;inset-inline-start:16px;bottom:16px;max-width:min(420px,calc(100vw - 32px));display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border-radius:14px;background:var(--ink,#17212B);color:#fff;font:500 15px/1.4 Archivo,system-ui,sans-serif;box-shadow:0 10px 28px rgba(23,33,43,.28)}.k31-lo a{color:#fff;font-weight:700;text-decoration:underline;min-height:44px;display:inline-flex;align-items:center}.k31-lo button{margin-inline-start:auto;min-width:44px;min-height:44px;border:0;border-radius:10px;background:rgba(255,255,255,.12);color:#fff;font:inherit;cursor:pointer}@media(max-width:640px){.k31-lo{bottom:84px}}@media print{.k31-lo{display:none}}';
-    var p = D.createElement('span'); p.textContent = w[0]; var a = D.createElement('a'); a.href = href; a.hreflang = want; a.textContent = w[1];
-    var x = D.createElement('button'); x.type = 'button'; x.textContent = '×'; x.setAttribute('aria-label', w[2]);
-    x.addEventListener('click', function () { b.remove(); try { localStorage.setItem('kb-lang-offer', 'no'); } catch (e) {} });
-    b.appendChild(p); b.appendChild(a); b.appendChild(x); D.head.appendChild(s); D.body.appendChild(b);
-  };
-  if (D.readyState === 'complete') setTimeout(show, 1200); else addEventListener('load', function () { setTimeout(show, 1200); });
 })();

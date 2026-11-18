@@ -26,7 +26,7 @@ const nf = (n, l, d) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', 
 const fd = (d, l) => { if (!d) return ''; try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(String(d).slice(0, 10) + 'T12:00:00Z')); } catch (e) { return String(d).slice(0, 10); } };
 const bdi = (l, h) => l === 'ar' ? '<bdi>' + h + '</bdi>' : h;
 // links written as /path/ in the strings become real links (only site-relative paths, escaped first)
-const lk = (s, l) => esc(s).replace(/(^|[\s(:])(\/(?:[a-z0-9._#-]+\/?)+)(?=[\s).,;:]|$)/gi, (m, a, p) => a + '<a href="' + (/^\/(data|api|open|security\/sbom|\.well-known|engineering|status|k)\b/.test(p) || l === 'en' ? p : pre(l) + p) + '"' + (l === 'ar' ? ' dir="ltr"' : '') + '>' + p + '</a>');
+const lk = (s, l) => esc(s).replace(/(^|[\s(:\uff1a\uff08])(\/(?:[a-z0-9._#-]+\/?)+)(?=[\s).,;:\u3002\uff0c]|$)/gi, (m, a, p) => { const tail = /[.,]+$/.exec(p); if (tail) p = p.slice(0, -tail[0].length); return a + '<a href="' + (/^\/(data|api|open|security\/sbom|\.well-known|engineering|status|k)\b/.test(p) || l === 'en' ? p : pre(l) + p) + '"' + (l === 'ar' ? ' dir="ltr"' : '') + '>' + p + '</a>' + (tail ? tail[0] : ''); });
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const R = {
   arch: new RegExp('^\\/' + LP + 'engineering\\/architecture\\/?$'), mods: new RegExp('^\\/' + LP + 'engineering\\/modules\\/?$'), rb: new RegExp('^\\/' + LP + 'engineering\\/rollback\\/?$'),

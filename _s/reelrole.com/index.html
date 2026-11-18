@@ -1,53 +1,129 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<meta name="theme-color" content="#FFFFFF" />
-<title>ReelRole: Get Hired Through Video</title>
-<meta name="description" content="ReelRole is the video-first hiring platform for sales closers. We are rebuilding: sign-ups and logins are paused for now." />
-<link rel="canonical" href="https://reelrole.com/" />
-<meta name="robots" content="index, follow" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://reelrole.com/" />
-<meta property="og:title" content="ReelRole: Get Hired Through Video" />
-<meta property="og:description" content="Video-first hiring for sales closers. We are rebuilding: sign-ups and logins are paused for now." />
-<meta property="og:image" content="https://reelrole.com/og-image.png" />
-<meta property="og:site_name" content="ReelRole" />
-<meta name="twitter:card" content="summary_large_image" />
-<style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#111827;background:#fff;min-height:100vh;display:flex;flex-direction:column}
-  header{padding:24px;display:flex;justify-content:center}
-  header img{height:40px;width:auto}
-  main{flex:1;display:flex;align-items:center;justify-content:center;padding:24px}
-  .card{max-width:560px;text-align:center}
-  h1{font-size:clamp(28px,5vw,40px);line-height:1.15;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
-  p{font-size:17px;line-height:1.6;color:#4b5563;margin-bottom:14px}
-  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
-  a.btn{display:inline-block;padding:13px 22px;border-radius:12px;font-weight:600;font-size:16px;text-decoration:none}
-  a.primary{background:#111827;color:#fff}
-  a.secondary{border:1px solid #d1d5db;color:#111827}
-  footer{padding:24px;text-align:center;font-size:13px;color:#9ca3af}
-  footer a{color:#6b7280}
-</style>
-</head>
-<body>
-<header><a href="/"><img src="/brand/reelrole-logo.webp" alt="ReelRole" width="160" height="40" /></a></header>
-<main>
-  <div class="card">
-    <h1>We're rebuilding ReelRole</h1>
-    <p>ReelRole is video-first hiring for sales closers: candidates show who they are in a short video, and companies hear them before the first call.</p>
-    <p>New sign-ups and logins are paused while we rebuild. If you're hiring closers, or want to be considered when we reopen, write to us.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:carlos@equinoxinvestmentgroup.com?subject=ReelRole">Email us</a>
-      <a class="btn secondary" href="https://bestsalesclosers.com/">Closers Retreat 2027</a>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Performance -->
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://mfyfqtlozspmiautbgef.supabase.co" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/brand/reelrole-logo.webp" type="image/webp" fetchpriority="high" />
+    <!-- Non-blocking font load -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
+    
+    <!-- SEO -->
+    <title>ReelRole: Get Hired Through Video · AI-Powered Recruitment</title>
+    <meta name="description" content="Record a short video and let top companies discover you. ReelRole is the video-first hiring platform: free for talent, companies pay only to unlock the candidates they want." />
+    <link rel="canonical" href="https://reelrole.com/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://reelrole.com/" />
+    <meta property="og:title" content="ReelRole: Get Hired Through Video · AI-Powered Recruitment" />
+    <meta property="og:description" content="Record a short video and let top companies discover you. Free for talent. Companies unlock candidates from €5." />
+    <meta property="og:image" content="https://reelrole.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ReelRole" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ReelRole: Get Hired Through Video" />
+    <meta name="twitter:description" content="Record a short video and let top companies discover you. AI-powered video hiring." />
+    <meta name="twitter:image" content="https://reelrole.com/og-image.png" />
+
+    <!-- JSON-LD (Organization + WebApplication) is injected by the home page only. -->
+
+    <!-- Critical CSS -->
+    <style>
+      html { font-family: 'Inter', system-ui, sans-serif; }
+      body { margin: 0; padding: 0; background: #fff; }
+      #root { min-height: 100vh; }
+      /* Generic app-shell skeleton (header bar + text lines); matches the app theme. */
+      .initial-skeleton {
+        --sk-bg: #fff; --sk-a: #f3f4f6; --sk-b: #e5e7eb;
+        position: fixed; inset: 0; background: var(--sk-bg); z-index: 9999;
+        display: flex; flex-direction: column; align-items: center; padding-top: 112px;
+      }
+      .initial-skeleton.sk-dark { --sk-bg: #0b0b0f; --sk-a: #1c1c22; --sk-b: #2a2a32; }
+      .sk-bar { position: absolute; top: 0; left: 0; right: 0; height: 64px; border-bottom: 1px solid var(--sk-a); }
+      .sk-wrap { width: 90%; max-width: 720px; }
+      .sk-line {
+        height: 20px; border-radius: 8px; margin: 0 auto 16px;
+        background: linear-gradient(90deg, var(--sk-a), var(--sk-b), var(--sk-a));
+        background-size: 200% 100%; animation: shimmer 1.5s infinite;
+      }
+      .sk-line.sk-title { height: 40px; margin-bottom: 24px; }
+      @media (prefers-reduced-motion: reduce) { .sk-line { animation: none; } }
+      @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BH3lSJrF.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-PTgXo8u4.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-B0jLwO9-.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BQfgVGqA.css">
+  </head>
+  <body>
+    <div class="initial-skeleton" id="initial-skeleton" aria-hidden="true">
+      <div class="sk-bar"></div>
+      <div class="sk-wrap">
+        <div class="sk-line sk-title" style="width: 70%"></div>
+        <div class="sk-line" style="width: 90%"></div>
+        <div class="sk-line" style="width: 80%"></div>
+        <div class="sk-line" style="width: 40%; height: 44px; margin-top: 32px; border-radius: 999px"></div>
+      </div>
     </div>
-  </div>
-</main>
-<footer>© <span id="y">2026</span> ReelRole · <a href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a></footer>
-<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
-</body>
+    <script>
+      // Scroll-reveal may hide content only when JS is running (see .reveal in index.css).
+      document.documentElement.classList.add('js-reveal');
+      // Match the theme next-themes will apply (light by default, dark only if chosen).
+      try { if (localStorage.getItem('theme') === 'dark') document.getElementById('initial-skeleton').classList.add('sk-dark'); } catch (e) {}
+    </script>
+    <!-- Without JS the skeleton must not cover the fallback content below. -->
+    <noscript><style>.initial-skeleton { display: none !important; }</style></noscript>
+
+    <noscript>
+      <div style="max-width:720px;margin:40px auto;padding:0 16px;font-family:system-ui,sans-serif;color:#111">
+        <h1>ReelRole: Get hired through video</h1>
+        <p>Record a short video introduction and let companies discover you. Free for talent. Companies browse video profiles and pay only to unlock the candidates they want to contact (€5 per unlock, or €20/month for unlimited unlocks).</p>
+        <ul>
+          <li><a href="/for-talent">For talent</a></li>
+          <li><a href="/for-companies">For companies</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/how-it-works">How it works</a></li>
+          <li><a href="/trending">Trending talent</a></li>
+          <li><a href="/contact">Contact</a> · hello@reelrole.com</li>
+        </ul>
+        <p>Please enable JavaScript to record your video or browse profiles.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    
+    <script>
+      (function () {
+        var started = Date.now();
+        function hide() {
+          var s = document.getElementById('initial-skeleton');
+          if (!s) return;
+          var ready = document.documentElement.hasAttribute('data-react-loaded') && document.getElementById('root').childElementCount > 0;
+          if (ready || Date.now() - started > 8000) {
+            s.style.transition = 'opacity 0.3s ease';
+            s.style.opacity = '0';
+            setTimeout(function () { s.remove(); }, 300);
+          } else {
+            setTimeout(hide, 100);
+          }
+        }
+        window.addEventListener('DOMContentLoaded', hide);
+      })();
+    </script>
+  </body>
 </html>

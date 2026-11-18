@@ -1,8 +1,8 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 182 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 182 casas es de 95.000 € (1.193 € por m², calculado con las 178 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 17 de noviembre de 2026, RealHunt publica 182 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 182 casas es de 95.000 € (1.193 € por m², calculado con las 178 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 | Impuestos y gastos de compra | 7,5–14% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, sin restricciones en la actualidad; el gobierno ha propuesto un impuesto del 100% sobre (o prohibición de) compradores no residentes no comunitarios, no promulgado. |
 | Impuesto anual sobre la vivienda | IBI 0,4-1,1% del valor catastral (municipal), más imputación de rentas en el IRPF/IRNR si no está alquilada. |
-| Fecha de estas cifras | 18 de noviembre de 2026 |
+| Fecha de estas cifras | 17 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

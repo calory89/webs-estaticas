@@ -1,10 +1,9 @@
 {
  "name": "Kolaboro corrections log",
- "updated": "2026-11-18",
+ "updated": "2026-11-13",
  "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "page": "https://kolaboro.com/corrections/",
  "how_to_request": "Email hello@kolaboro.com with the project page link, what you think is wrong and the evidence (a document, a registry extract or a dated photo). We reply within 10 working days.",
- "kinds": {"pin": "map pin moved", "claim": "status of a tested claim changed", "field": "a recorded fact (permit number, date, place) corrected", "removal": "personal data removed (logged without the data)"},
  "audits": [
   {
    "date": "2026-11-01",
@@ -21,105 +20,6 @@
   }
  ],
  "entries": [
-  {
-   "date": "2026-11-13",
-   "id": "KUA-004",
-   "kind": "field",
-   "what": "permit number",
-   "before": "30141-2/06-2029/0431(N)-(S)",
-   "after": "30141-2/06-2029/0431(A)-(S)",
-   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
-  },
-  {
-   "date": "2026-11-13",
-   "id": "KUA-011",
-   "kind": "field",
-   "what": "permit number",
-   "before": "13262-2/03-2029/0221(N)-(S)",
-   "after": "13262-2/03-2029/0221(A)-(S)",
-   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
-  },
-  {
-   "date": "2026-11-13",
-   "id": "KUA-012",
-   "kind": "field",
-   "what": "permit number",
-   "before": "11430-2/03-2027/0280(N)-(S)",
-   "after": "11430-2/03-2027/0280(A)-(S)",
-   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
-  },
-  {
-   "date": "2026-11-13",
-   "id": "MYS-028",
-   "kind": "field",
-   "what": "permit number",
-   "before": "30440-1/10-2026/1099(A)-(S)",
-   "after": "30440-1/10-2027/0775(R)-(S)",
-   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists a renewed permit (R), valid to 1 Oct 2027; the number on record was the earlier permit."
-  },
-  {
-   "date": "2026-11-13",
-   "id": "MIA-001",
-   "kind": "field",
-   "what": "permit number",
-   "before": "Miami-Dade demolition permit 2026067492",
-   "after": "Florida DBPR condominium filing PR77415",
-   "why": "Review of 13 Nov 2026: the number on record was a demolition permit for the existing building, not a permit for the tower. The page now shows the Florida DBPR condominium filing first and labels the demolition permit as such."
-  },
-  {
-   "date": "2026-11-13",
-   "id": "FNC-001",
-   "kind": "field",
-   "what": "handover date",
-   "before": "2028",
-   "after": "2029 to 2030",
-   "why": "Review of 13 Nov 2026: the 2028 on record came from the press; the developer's own page prints the expected conclusion as 2029 to 2030. The record now uses the developer's wording."
-  },
-  {
-   "date": "2026-11-12",
-   "id": "LKA-019",
-   "kind": "field",
-   "what": "place",
-   "before": "Colombo",
-   "after": "Negombo, Gampaha District",
-   "why": "The area text on record made our place rules count the project in Colombo. It is in Negombo, Gampaha District, so it left the Colombo place page and ranking."
-  },
-  {
-   "date": "2026-11-12",
-   "id": "PHL-019",
-   "kind": "field",
-   "what": "place",
-   "before": "Quezon City",
-   "after": "Quezon City, Metro Manila",
-   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
-  },
-  {
-   "date": "2026-11-12",
-   "id": "PHL-021",
-   "kind": "field",
-   "what": "place",
-   "before": "Quezon City",
-   "after": "Quezon City, Metro Manila",
-   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
-  },
-  {
-   "date": "2026-11-12",
-   "id": "PHL-024",
-   "kind": "field",
-   "what": "place",
-   "before": "Malate, Manila",
-   "after": "Malate, Manila, Metro Manila",
-   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
-  },
-  {
-   "date": "2026-11-12",
-   "id": "PHL-025",
-   "kind": "field",
-   "what": "place",
-   "before": "Caloocan City",
-   "after": "Caloocan City, Metro Manila",
-   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
-  },
   {
    "date": "2026-11-09",
    "id": "BHX-002",

@@ -2,9 +2,9 @@
 
 Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 110 m²) y Estados Unidos (mediana de 95 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 6 países, sobre todo en Italia (33), Japón (19) y Alemania (10).
 
-A partir de 591 anuncios revisados por una persona, a 18 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
+A partir de 591 anuncios revisados por una persona, a 17 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
 
-Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
+Actualizado el 17 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
 
 ## La tabla
 

@@ -2,7 +2,7 @@
 
 Este es un directorio de 179 portales inmobiliarios de 54 países: los portales nacionales, las grandes webs de anuncios clasificados y los portales pensados para compradores extranjeros, cada uno con su dirección. Aparecen en el orden en que RealHunt los consulta cuando busca casas en ese país. Estar en la lista no es una recomendación ni una valoración.
 
-Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
+Actualizado el 17 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
 
 ## España
 

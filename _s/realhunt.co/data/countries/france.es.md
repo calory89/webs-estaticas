@@ -1,8 +1,8 @@
 # Casas baratas en Francia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 42 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 42 casas es de 60.000 € (1.200 € por m², calculado con las 38 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 285.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
+A 17 de noviembre de 2026, RealHunt publica 42 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 42 casas es de 60.000 € (1.200 € por m², calculado con las 38 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 285.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/france · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/france · Actualizado el 17 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/france.json · PDF: https:/
 | Impuestos y gastos de compra | 7–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar propiedades en Francia sin restricciones importantes, y los compradores no comunitarios no necesitan permiso, aunque los trámites pueden llevar más tiempo. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto anual sobre bienes inmuebles (taxe foncière) que fijan las administraciones locales, y los propietarios de una segunda vivienda amueblada pagan además el impuesto de habitación (taxe d'habitation), que algunos municipios incrementan con un recargo del 5% al 60%. |
-| Fecha de estas cifras | 18 de noviembre de 2026 |
+| Fecha de estas cifras | 17 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
