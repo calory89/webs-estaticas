@@ -31,7 +31,7 @@ const COPY = {
 // What /pricing and /book promise today (copied, not paraphrased into new promises)
 const OFFER = {
   price: '€490', per: 'one-off, per property', refund: 'Full refund if we cannot take your case.',
-  items: ['Title and zoning checked at the land office', "Permits and the developer's track record", 'Contract read for risky clauses', 'Site visit with GPS-stamped photos and video (being set up)', 'Written report, reviewed by a senior reviewer'],
+  items: ['Title and zoning checked at the land office by a local agent (being set up)', "Permits and the developer's track record", 'Contract read for risky clauses', 'Site visit with GPS-stamped photos and video (being set up)', 'Written report, reviewed before it is sent'],
   timeline: [['Same day', 'We confirm your case and email you a login to it.'], ['Within 2 days', 'Documents: land certificate, permit and contract are shared and read.'],
     ['Within 5 days', 'Land office and site visit: title checked, plot filmed with GPS- and time-stamped photos. Site visits are being set up: we first confirm an agent for your location.'], ['Usually within 7 days', 'Written report: nine checks, every finding linked to its evidence.']],
   pay: PAY, book: '/book/', pricing: '/pricing',
