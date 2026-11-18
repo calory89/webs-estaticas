@@ -85,4 +85,12 @@ EXTRA_UI3 = {
  "fa_r2": "{ap} is the closer airport: the places of {r} are on average about {k} km away in a straight line.",
  "m_sun": "Sunrise and sunset in Waingapu in {m}: about {r} and {s} (WITA, UTC+8).",
  "air_t": "Distance to the airports",
+ "by_team": "By the Sumba Secrets team, Mamboro",
+ "how_check": "How we check",
+ "f_editorial": "Editorial policy",
+ "f_contact": "Contact",
+ "f_privacy": "Privacy",
+ "f_corr": "Corrections",
+ "f_use": "Use our maps",
+ "f_quick": "Quick answers",
 }
