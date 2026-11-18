@@ -38,7 +38,7 @@ export const T = {
   },
   es: {
     home: 'Kolaboro', eng: 'Ingeniería', data: 'Datos abiertos',
-    sn_title: 'Datos diarios a prueba de manipulación: cadena de hashes SHA-256', sn_h1: 'Instantáneas diarias de los datos',
+    sn_title: 'Datos diarios infalsificables: cadena de hashes SHA-256', sn_h1: 'Instantáneas diarias de los datos',
     sn_lead: 'Cada día que se publica el conjunto de datos de proyectos, sus bytes exactos reciben una huella SHA-256. La entrada de cada día incluye la anterior, así que cambiar un día pasado rompería todas las entradas siguientes. Aquí se guarda una copia del archivo de cada día para que cualquiera pueda comprobarlo.',
     sn_verify_h: 'Compruébalo en tu navegador', sn_verify_btn: 'Comprobar la cadena y el archivo de hoy', sn_verify_wait: 'Comprobando…',
     sn_file_lbl: 'O comprueba un archivo que descargaste antes (named.json o una copia .gz):', sn_nothing: 'No se sube nada: el archivo se calcula en este dispositivo.',
@@ -110,7 +110,7 @@ export const T = {
   },
   fr: {
     home: 'Kolaboro', eng: 'Ingénierie', data: 'Données ouvertes',
-    sn_title: 'Données quotidiennes infalsifiables : chaîne de hachages SHA-256', sn_h1: 'Instantanés quotidiens des données',
+    sn_title: 'Données quotidiennes infalsifiables : hachages SHA-256', sn_h1: 'Instantanés quotidiens des données',
     sn_lead: 'Chaque jour où le jeu de données des projets est publié, ses octets exacts reçoivent une empreinte SHA-256. L’entrée de chaque jour inclut la précédente : modifier un jour passé casserait toutes les entrées suivantes. Une copie du fichier de chaque jour est gardée ici pour que chacun puisse vérifier.',
     sn_verify_h: 'Vérifier dans votre navigateur', sn_verify_btn: 'Vérifier la chaîne et le fichier du jour', sn_verify_wait: 'Vérification…',
     sn_file_lbl: 'Ou vérifiez un fichier téléchargé plus tôt (named.json ou une copie .gz) :', sn_nothing: 'Rien n’est envoyé : le fichier est haché sur cet appareil.',
@@ -135,7 +135,7 @@ export const T = {
     ce_live: 'Page du projet en direct', ce_json: 'Certificat en JSON', ce_print: 'Imprimer', ce_qr: 'Code QR de ce certificat', ce_note: 'Un certificat consigne ce qui était publié et vérifié à sa date. Ce n’est ni un verdict sur le projet ou son promoteur, ni une garantie.',
     ce_k: { developer: 'Promoteur', place: 'Lieu', stage: 'Phase', handover: 'Date de livraison enregistrée', permit: 'Numéro de permis publié', register: 'Registre officiel', checks: 'Vérifications publiques', reviewed: 'Revu', checked: 'Dernière vérification', sources: 'Sources' },
     ce_yes: 'oui', ce_no: 'non', ce_none: 'non publié', ce_facts_sha: 'Faits (JSON canonique)', ce_named_sha: 'Fichier de données /data/named.json', ce_cases_sha: 'Fichier de données /data/bali-cases.json', ce_chain: 'Tête de la chaîne d’instantanés', ce_issued: 'Émis',
-    dq_title: 'Qualité des données : couverture et fraîcheur de chaque champ', dq_h1: 'Qualité des données',
+    dq_title: 'Qualité des données : couverture et fraîcheur', dq_h1: 'Qualité des données',
     dq_lead: 'À quel point nos données de projets sont complètes et récentes, champ par champ et marché par marché. Calculé à partir du jeu de données publié à chaque déploiement ; rien n’est estimé ici.',
     dq_f_h: 'Couverture par champ', dq_th_f: ['Champ', 'Projets renseignés', 'Part'], dq_m_h: 'Par marché (10 projets ou plus)', dq_fr_h: 'Fraîcheur : jours depuis la dernière vérification de chaque projet',
     dq_fr: { d7: 'sous 7 jours', d30: '8 à 30 jours', d90: '31 à 90 jours', old: 'plus de 90 jours' }, dq_th_m: ['Marché', 'Projets', 'Date de livraison', 'Prix', 'Numéro de permis', 'Repère sur la carte', 'Page officielle', 'Médiane de jours depuis la vérification'],
@@ -182,7 +182,7 @@ export const T = {
   },
   ru: {
     home: 'Kolaboro', eng: 'Инженерия', data: 'Открытые данные',
-    sn_title: 'Защищённые от подмены ежедневные данные: цепочка хешей SHA-256', sn_h1: 'Ежедневные снимки данных',
+    sn_title: 'Ежедневные данные без подмены: цепочка хешей SHA-256', sn_h1: 'Ежедневные снимки данных',
     sn_lead: 'Каждый день, когда публикуется набор данных о проектах, его точные байты получают отпечаток SHA-256. Запись каждого дня включает предыдущую, поэтому изменение любого прошедшего дня сломает все последующие записи. Копия файла за каждый день хранится здесь, чтобы любой мог проверить.',
     sn_verify_h: 'Проверьте в браузере', sn_verify_btn: 'Проверить цепочку и сегодняшний файл', sn_verify_wait: 'Проверяем…',
     sn_file_lbl: 'Или проверьте файл, скачанный ранее (named.json или копию .gz):', sn_nothing: 'Ничего не загружается: хеш считается на этом устройстве.',

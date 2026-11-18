@@ -244,6 +244,7 @@ function guidePage(G, slug, lang, lease) {
   const notesOf = k => (plan[k] || []).map(([nk]) => note(nk, lang)).filter(Boolean);
   const vT = { in: inP, p: name, n: nf(lang, D.n) };
   const faq = [[txt('q_what', vT), txt('a_what', { steps: STEPS.map(k => t(lang, 'st_' + k)).join('; ') })]];
+  if (D.n) faq.push([txt('q_safe', vT), txt('a_safe', Object.assign({ a: nf(lang, D.permit), b: nf(lang, D.deposit), c: nf(lang, D.past) }, vT))]);   // n31s (item 197): the question people search, answered from the figures on this page
   if (notesOf('land').length && P.own !== false) faq.push([txt('q_own', vT), notesOf('land').join(' ')]);
   if (notesOf('money').length) faq.push([txt('q_dep', vT), notesOf('money').join(' ')]);
   if (D.n) { faq.push([txt('q_permit', vT), txt('d_permit', Object.assign({ a: nf(lang, D.permit) }, vT))]); faq.push([txt('q_late', vT), txt('d_date', Object.assign({ a: nf(lang, D.past), b: nf(lang, D.moved) }, vT))]); }
