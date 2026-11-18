@@ -157,6 +157,7 @@ def place_box(g, a, l):
         k = near[0][1]; j = IDX[k]; u = _url(g, HUB_PAGE[k], l)
         rows += f'<dt>{t["nearest"]}</dt><dd>{f"""<a href="{u}">{HUB[k][l]}</a>""" if u else HUB[k][l]}: {num(km(i, j), l)} {t["km_road"]}, {t["about"]} {drv(km(i, j), l)}</dd>'
     rows += f'<dt>{t["coords"]}</dt><dd>{p["lat"]:.4f}, {p["lon"]:.4f} · <a href="https://www.google.com/maps/search/?api=1&query={p["lat"]},{p["lon"]}" target="_blank" rel="noopener">{t["open_map"]}</a></dd>'
+    rows += sun_row(g, p, l)
     nb = neighbours(g, a)
     comb = ""
     if nb:
@@ -251,9 +252,9 @@ SITEMAP = ["/{l}/distances/", "/{l}/map/", "/{l}/earthquakes/", "/{l}/data/"] + 
 FOOTER = [("/{l}/distances/", {"en": "Distances", "es": "Distancias", "id": "Jarak"}), ("/{l}/data/", {"en": "Data", "es": "Datos", "id": "Data"})]
 CSS = """
 .gbox{margin:26px 0 0;border-top:3px solid var(--ink);padding-top:8px}.gbox h2{font-size:22px;margin:.2em 0 .4em}.gbox dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 12px;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gbox dt{font-weight:700}.gbox dd{margin:0}
-.gsent,.gcomb,.gnote{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnote{color:var(--mut);font-size:13.5px}.gnb{list-style:none;padding:0;margin:0 0 12px;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnb li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:7px 0}.gnb span{color:var(--mut);white-space:nowrap}
-.gfig{margin:10px 0}.gfig figcaption{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--mut);margin-top:4px}.lmap{width:100%;height:auto;display:block;background:color-mix(in srgb,var(--accent) 6%,var(--bg));border:1px solid var(--line);border-radius:6px;color:var(--ink)}
-.gtab{width:100%;border-collapse:collapse;font:14.5px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:8px 0 18px}.gtab th,.gtab td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.gtab th{font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}.gtab td.n,.gtab th.n{text-align:right;white-space:nowrap}.gscroll{overflow-x:auto}
+.gsent,.gcomb,.gnote{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnote{color:var(--muted);font-size:13.5px}.gnb{list-style:none;padding:0;margin:0 0 12px;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnb li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:7px 0}.gnb span{color:var(--muted);white-space:nowrap}
+.gfig{margin:10px 0}.gfig figcaption{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted);margin-top:4px}.lmap{width:100%;height:auto;display:block;background:color-mix(in srgb,var(--accent) 6%,var(--bg));border:1px solid var(--line);border-radius:6px;color:var(--ink)}
+.gtab{width:100%;border-collapse:collapse;font:14.5px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:8px 0 18px}.gtab th,.gtab td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.gtab th{font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.gtab td.n,.gtab th.n{text-align:right;white-space:nowrap}.gscroll{overflow-x:auto}
 .gcalc{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px;font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gcalc label{display:inline-block;margin:0 12px 8px 0}.gcalc select{font:inherit;padding:6px;max-width:100%}.gcalc output{display:block;font-weight:700;margin-top:6px}
 @media(max-width:600px){.gbox dl{grid-template-columns:1fr}.gbox dt{margin-top:6px}}
 """
@@ -261,7 +262,7 @@ CSS = """
 def _table(head, rows, num_from=1):
     th = "".join(f'<th{" class=n" if i >= num_from else ""}>{h}</th>' for i, h in enumerate(head))
     tr = "".join("<tr>" + "".join(f'<td{" class=n" if i >= num_from else ""}>{c}</td>' for i, c in enumerate(r)) + "</tr>" for r in rows)
-    return f'<div class="gscroll"><table class="gtab"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div>'
+    return f'<div class="gscroll" tabindex="0" role="region" aria-label="{re.sub("<[^>]+>", "", head[0] or head[1])}"><table class="gtab"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div>'
 def _place_rows(g):
     its = _items(g)
     return [(i, its[p["k"]]) for i, p in enumerate(PTS) if not p.get("hub") and p["k"] in its and not pages_hubs._is_area(its[p["k"]]) and km(i, 0) is not None]
@@ -382,7 +383,7 @@ def _quakes(g, l):
     cap = {"en": f"The {inside} epicentres that fall inside the frame of this map; the rest lie further out to sea or under Flores and Sumbawa.", "es": f"Los {inside} epicentros que caen dentro del marco de este mapa; el resto queda mar adentro o bajo Flores y Sumbawa.", "id": f"{inside} episentrum yang berada di dalam bingkai peta ini; sisanya berada lebih jauh di laut atau di bawah Flores dan Sumbawa."}[l]
     body = (f'<div class="ans"><b>{g["T"][l]["answer"]}</b><p>{esc(t["q_lead"].format(**kw))}</p></div><p>{esc(t["q_why"].format(avg=num(round(n / ((big["t"] * 0 + max(e["t"] for e in E)) / 1000 - 946684800) * 31557600, 1), l)))}</p>'
             f'<figure class="gfig">{svg(l, t["q_map_alt"], dots + town_dots(), labels=town_labels(l))}<figcaption>{esc(cap)} USGS, © OpenStreetMap.</figcaption></figure>'
-            f'<h2 id="largest">{t["q_top"]}</h2>{_table(head, [row(e) for e in top])}<h2 id="years">{t["q_year"]}</h2><div class="gscroll"><table class="gtab"><tbody>{bars}</tbody></table></div>'
+            f'<h2 id="largest">{t["q_top"]}</h2>{_table(head, [row(e) for e in top])}<h2 id="years">{t["q_year"]}</h2><div class="gscroll" tabindex="0" role="region" aria-label="{esc(t["q_year"])}"><table class="gtab"><tbody>{bars}</tbody></table></div>'
             f'<h2 id="do">{t["q_do"]}</h2><p>{esc(t["q_do_p"])} <a href="https://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg" rel="nofollow noopener" target="_blank">BMKG</a>.' + (f' <a href="{sf}">{esc(_items(g)["sumba-travel-safety-health"][l]["title"])}</a>.' if sf else "") + "</p>"
             f'<details><summary><b>{esc(t["q_all"].format(n=n))}</b></summary>{_table(head, [row(e) for e in sorted(E, key=lambda e: -e["t"])])}</details>'
             f'<p class="gnote">{esc(t["q_method"].format(d=fdate(g, l, QUAKES["fetched"])))} <a href="https://earthquake.usgs.gov/earthquakes/search/" rel="nofollow noopener" target="_blank">USGS</a> · <a href="/data/sumba-earthquakes.csv">CSV</a></p>')
@@ -450,5 +451,30 @@ def _data(g, l):
 def build(g):
     _files(g)
     for l in g["LANGS"]:
-        _distances(g, l); _map(g, l); _quakes(g, l); _data(g, l)
+        _distances(g, l); _map(g, l); _quakes(g, l)
         for a, b in PAIRS: _pair(g, l, a, b)
+
+def build_data_pages(g):
+    """Called by build.py after every module ran, so that files added by other modules are listed too."""
+    for l in g["LANGS"]: _data(g, l)
+
+# ---------- sun times per place (NOAA solar position equations, no network) ----------
+def sun_times(lat, lon, year, month, day, tz=8):
+    """(sunrise, sunset) as 'HH:MM' local time (WITA = UTC+8) from the NOAA sunrise equation; accuracy about one minute."""
+    n = datetime.date(year, month, day).toordinal() - datetime.date(year, 1, 1).toordinal() + 1
+    g_ = 2 * math.pi / 365 * (n - 1 + 0.5)
+    eqt = 229.18 * (0.000075 + 0.001868 * math.cos(g_) - 0.032077 * math.sin(g_) - 0.014615 * math.cos(2 * g_) - 0.040849 * math.sin(2 * g_))
+    dec = 0.006918 - 0.399912 * math.cos(g_) + 0.070257 * math.sin(g_) - 0.006758 * math.cos(2 * g_) + 0.000907 * math.sin(2 * g_) - 0.002697 * math.cos(3 * g_) + 0.00148 * math.sin(3 * g_)
+    la = math.radians(lat)
+    ha = math.degrees(math.acos(math.cos(math.radians(90.833)) / (math.cos(la) * math.cos(dec)) - math.tan(la) * math.tan(dec)))
+    def hm(mins):
+        mins = int(round(mins + tz * 60)) % 1440; return f"{mins // 60:02d}:{mins % 60:02d}"
+    return hm(720 - 4 * (lon + ha) - eqt), hm(720 - 4 * (lon - ha) - eqt)
+SUN_T = {"en": ("Sunrise and sunset", "Sunrise from {a} ({am}) to {b} ({bm}); sunset from {c} ({cm}) to {d} ({dm}), local time (WITA). Calculated for these coordinates on the 15th of each month."),
+         "es": ("Amanecer y atardecer", "Amanece entre las {a} ({am}) y las {b} ({bm}); anochece entre las {c} ({cm}) y las {d} ({dm}), hora local (WITA). Calculado para estas coordenadas el día 15 de cada mes."),
+         "id": ("Matahari terbit dan terbenam", "Terbit antara pukul {a} ({am}) dan {b} ({bm}); terbenam antara pukul {c} ({cm}) dan {d} ({dm}) WITA. Dihitung untuk koordinat ini pada tanggal 15 setiap bulan.")}
+def sun_row(g, p, l):
+    rows = [(m,) + sun_times(p["lat"], p["lon"], 2027, m, 15) for m in range(1, 13)]
+    r0 = min(rows, key=lambda r: r[1]); r1 = max(rows, key=lambda r: r[1]); s0 = min(rows, key=lambda r: r[2]); s1 = max(rows, key=lambda r: r[2])
+    mn_ = lambda m: g["MONTHS"][l][m - 1]; f = (lambda x: x.replace(":", ".")) if l == "id" else (lambda x: x)
+    return f'<dt>{SUN_T[l][0]}</dt><dd>{SUN_T[l][1].format(a=f(r0[1]), am=mn_(r0[0]), b=f(r1[1]), bm=mn_(r1[0]), c=f(s0[2]), cm=mn_(s0[0]), d=f(s1[2]), dm=mn_(s1[0]))}</dd>'

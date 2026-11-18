@@ -29,6 +29,25 @@ for f in pages:
         if not os.path.exists(p) and h not in redir: err(f"{rel}: broken link {h}")
     if "noindex" not in s and len(re.findall(r"<h1", s)) != 1: err(f"{rel}: must have exactly one <h1>")
 
+# --- indexable pages: unique <title>, JSON-LD present, listed in the sitemap, at least 3 internal links pointing to them (stops the deploy) ---
+_sm = set(re.findall(r"<loc>https://thesumbatimes\.com(/[^<]*)</loc>", open(os.path.join(OUT, "sitemap.xml"), encoding="utf-8").read()))
+_titles, _inbound, _index = {}, {}, []
+for f in pages:
+    s = open(f, encoding="utf-8").read(); rel = f.replace(OUT, "").replace("index.html", "")
+    body = s[s.find("</head>"):]
+    for h in set(re.findall(r'href="(/(?:en|es|id)/[^"#?]*)"', body)):
+        if h != rel: _inbound[h] = _inbound.get(h, 0) + 1
+    if 'name="robots" content="noindex"' in s or rel == "/": continue
+    _index.append(rel)
+    t = re.search(r"<title>(.*?)</title>", s, re.S)
+    _titles.setdefault(t.group(1).strip() if t else "", []).append(rel)
+    if "application/ld+json" not in s: err(f"{rel}: indexable page without JSON-LD")
+    if rel not in _sm and "/page/" not in rel: err(f"{rel}: indexable page missing from sitemap.xml")
+for t, ps in _titles.items():
+    if len(ps) > 1: err(f"duplicate <title> on {len(ps)} pages ({', '.join(ps[:3])}): {t[:70]}")
+for rel in _index:
+    if _inbound.get(rel, 0) < 3: err(f"{rel}: only {_inbound.get(rel, 0)} internal links point to this page (minimum 3)")
+
 # --- per news brief, per language ---
 items = b.all_items()
 briefs = [a for a in items if b.kind_of(a) == "brief"]

@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, engage, pages_start
-MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, pages_start]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, engage, pages_start, pages_tools
+MODULES = [seo_extra, reader_tools, pages_live, press, pages_trust, pages_hubs, pages_months, pages_geo, pages_tools, pages_start]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -246,6 +246,7 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}.wk{border-bottom:1px solid var(--line);padding:14px 0}.wk h2{font-size:22px;margin:.15em 0 .3em}.wk h2 a{text-decoration:none}.wk p{margin:0}.corr2{font:14.5px/1.5 -apple-system,sans-serif;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}.corr2 b{color:var(--ink)}.nwb ul{margin:.4em 0 0;padding-left:18px;font-size:16px}.nwb li{margin:4px 0}.nwb time{color:var(--muted);font-size:13px;margin-left:6px}.keys ul{margin:.4em 0 0;padding-left:20px;font-size:17px;line-height:1.45}.vis p{margin:.4em 0 0;font:16px/1.5 Georgia,serif}
 .facts dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 0;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.facts dt{font-weight:700}.facts dd{margin:0}
 .faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px}.faq details p{margin:.5em 0 0}
+.ctx{font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-left:3px solid var(--line);padding:2px 0 2px 12px;margin:0 0 16px;color:var(--muted)}.ctx a{color:var(--ink)}.ctx.old{border-left-color:var(--red);color:var(--ink)}.ty{color:var(--ink)}
 .pls ul{font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.pcta{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:24px}
 .cf{display:flex;flex-wrap:wrap;gap:12px}.cf label{display:flex;flex-direction:column;font:600 13px -apple-system,sans-serif;gap:4px;color:var(--muted)}.cf input,.cf select,.qf2 textarea,.qf2 input{font:16px -apple-system,sans-serif;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);min-width:120px}.cr{margin:14px 0 4px;font:15px -apple-system,sans-serif}.cr span{display:block;color:var(--muted)}.cr b{display:block;font:700 28px/1.2 'Cormorant Garamond',Georgia,serif;margin:4px 0}.cr small{color:var(--muted)}.qf2 form{display:flex;flex-direction:column;gap:8px;max-width:640px}.qf2 button{align-self:flex-start;background:#a3271c;color:#fff;border:0;border-radius:999px;padding:11px 18px;font:700 14px -apple-system,sans-serif;cursor:pointer}.hp{position:absolute;left:-9999px}.qm{font:14px -apple-system,sans-serif;margin:0}.mf{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}.mf button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 12px;font:13.5px -apple-system,sans-serif;cursor:pointer;min-height:36px}.mf button.on{color:var(--ink);border-color:var(--ink)}.mf i{width:10px;height:10px;border-radius:50%;display:inline-block}.map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
 .maplibregl-popup-content{font:14px/1.4 -apple-system,sans-serif;color:#1d1b18}
@@ -298,7 +299,7 @@ footer .links.l2{font-size:14px;margin-top:10px;opacity:.9}.pn{display:flex;just
 .nlg{list-style:none;padding:0;margin:14px 0 22px}.nlg li{padding:9px 0 9px 28px;border-bottom:1px solid var(--line);position:relative}.nlg li:before{content:"✓";position:absolute;left:4px;color:var(--accent);font-weight:700}
 .tpc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tpc label{border:1px solid currentColor;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:15px;display:inline-flex;gap:7px;align-items:center;min-height:40px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}.tpc input[type=checkbox]{width:16px!important;height:16px!important;min-height:0!important;padding:0!important;margin:0;flex:none!important;accent-color:var(--accent)}
 .ed h2{font-size:24px;margin:26px 0 8px;border-top:1px solid var(--ink);padding-top:14px}.ed .it{padding:10px 0;border-bottom:1px solid var(--line)}.ed .it h3{margin:0 0 4px;font-size:20px}.ed .it p{margin:0}
-.btnp{display:inline-block;background:var(--accent);color:#fff;padding:13px 20px;text-decoration:none;border-radius:4px;border:0;font:inherit;cursor:pointer}.btnp:hover{opacity:.9;color:#fff}
+.btnp{display:inline-block;background:var(--accent);color:var(--card);padding:13px 20px;text-decoration:none;border-radius:4px;border:0;font:inherit;cursor:pointer}.btnp:hover{opacity:.9;color:var(--card)}
 @media print{.m,.bar,nav,footer,.sa,.pop,.np,.ticker{display:none!important}body{background:#fff;padding:0}.gpdf h2{break-after:avoid}.gpdf section{break-inside:auto}a{text-decoration:none;color:#000}}
 .gpdf .cover{border:3px double var(--ink);padding:34px 22px;text-align:center;margin:10px 0 26px}.gpdf .cover h1{font-size:44px;margin:8px 0}.gpdf table{width:100%;border-collapse:collapse}.gpdf td,.gpdf th{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
 .ticker{position:relative;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
@@ -701,15 +702,37 @@ def article_page(a, l):
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
     crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a></div>'
     plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta" data-block="plancta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
-    s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}<span class="ty">{TYPE_T[l][type_of(a)]}</span> · {esc(kicker(a,l))}</p>
+    s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{('<span class="ty">' + TYPE_T[l][type_of(a)] + '</span> · ') if TYPE_T[l][type_of(a)].lower() != kicker(a,l).lower() else ''}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}{seo_extra.reviewed_html(globals(), a, l)}<span>{mins(a,l)} {x["min"]}</span></div>
 <div class="rtb">{reader_tools.listen_button(l)}{reader_tools.save_button(l)}</div>
-{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{pages_geo.place_box(globals(), a, l)}{pages_hubs.nearby_html(globals(), a, l)}{seo_extra.topics_html(a, l)}{plan_cta}{engage.helpful_html(l, CONTACT) if kind_of(a) == "guide" else ""}{share(a,l)}
+{picture(a,l,eager=True)}{top_x}{context_html(a, l)}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{pages_geo.place_box(globals(), a, l)}{pages_hubs.nearby_html(globals(), a, l)}{seo_extra.topics_html(a, l)}{pages_tools.tools_line(globals(), a, l)}{plan_cta}{engage.helpful_html(l, CONTACT) if kind_of(a) == "guide" else ""}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 {prev_next(a, l)}<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
     write(tpl[l], s)
 
+CTX_GUIDE = {"pasola": "pasola-explained", "ikat": "sumba-ikat-weaving-where-to-buy", "marapu": "marapu-ikat-traditional-villages", "ferries": "ferries-to-sumba", "weather": "best-time-to-visit-sumba",
+             "beaches": "things-to-do-in-sumba", "surf": "surfing-in-sumba", "horses": "sumba-horses-sandalwood-pony", "land": "customary-adat-land-sumba-explained", "fuel-roads": "getting-around-sumba", "flights": "how-to-get-to-sumba-from-bali"}
+CTX_T = {"en": ("Background", "Earlier", "This story is from {d}. Schedules, closures and prices may have changed since then. Current situation:"),
+         "es": ("Contexto", "Antes", "Esta noticia es del {d}. Horarios, cierres y precios pueden haber cambiado desde entonces. Situación actual:"),
+         "id": ("Latar belakang", "Sebelumnya", "Berita ini terbit pada {d}. Jadwal, penutupan, dan harga mungkin sudah berubah sejak itu. Kondisi terkini:")}
+def strict_tags(a):
+    """Topic tags whose English terms appear as whole words in the slug (seo_extra.tags_of matches substrings, too loose to claim 'same story')."""
+    tok = set(a["slug"].split("-")); tok |= {x[:-1] for x in tok if x.endswith("s")}
+    return [t_ for t_, (terms, _, _) in seo_extra.TAGS.items() if t_ not in ("waingapu", "west-sumba") and any(x in tok for x in terms)]
+def context_html(a, l):
+    """For news: link to the pillar guide of the story's topic and to the previous story on the same topic; plus a dated notice on stories older than 30 days."""
+    if kind_of(a) != "brief": return ""
+    tags = strict_tags(a); by = {x["slug"]: x for x in all_items()}; out = ""; t = CTX_T[l]
+    if (NOW - dt(a)).days > 30:
+        out += f'<p class="ctx old" data-block="oldnews">{t[2].format(d=fdate(a, l, False))} <a href="/{l}/travel-status/">{esc(dict(pages_tools.TOOLS)["/{l}/travel-status/"][l][0])}</a> · <a href="/{l}/flights/">{esc(dict(pages_tools.TOOLS)["/{l}/flights/"][l][0])}</a> · <a href="/{l}/news/">{esc(sec_name(l, "news"))}</a></p>'
+    gl = next((by[CTX_GUIDE[t_]] for t_ in tags if CTX_GUIDE.get(t_) in by), None)
+    prev = next((b for b in all_items() if kind_of(b) == "brief" and b is not a and dt(b) < dt(a) and set(strict_tags(b)) & set(tags)), None) if tags else None
+    parts = []
+    if gl: parts.append(f'<b>{t[0]}:</b> <a href="{url_of(gl, l)}">{esc(gl[l]["title"])}</a>')
+    if prev: parts.append(f'<b>{t[1]}:</b> <a href="{url_of(prev, l)}">{esc(prev[l]["title"])}</a> ({fdate(prev, l, False)})')
+    if parts: out += f'<p class="ctx" data-block="context">{" · ".join(parts)}</p>'
+    return out
 TYPE_T = {"en": {"news": "News", "guide": "Guide", "place": "Place", "letter": "Letter", "explainer": "Explained"}, "es": {"news": "Noticia", "guide": "Guía", "place": "Lugar", "letter": "Carta", "explainer": "Explicado"},
           "id": {"news": "Berita", "guide": "Panduan", "place": "Tempat", "letter": "Surat", "explainer": "Penjelasan"}}
 def type_of(a):
@@ -1150,6 +1173,7 @@ if __name__ == "__main__":
         for a in all_items(): article_page(a, l)
     newsletter.build(globals())
     for m in MODULES: m.build(globals())
+    pages_geo.build_data_pages(globals())
     for l in LANGS: html_sitemap(l)
     write("/_og.json", json.dumps(OGJ, ensure_ascii=False))
     root(); sitemaps(); redirects(); assets()
