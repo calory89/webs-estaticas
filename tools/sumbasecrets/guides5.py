@@ -419,4 +419,42 @@ GUIDES5 = [
 <li>Eat in local warung.</li></ul>
 <h2>Nature</h2>
 <p>Do not fly drones over villages or ceremonies without permission, see """ + GD("drones-photography-sumba", "drones and photography") + """. Stay on paths in the national parks and never buy shells, coral or wildlife.</p>"""},
+{"s": "sumba-music-dance", "img": "ratenggaro",
+ "t": "Music and dance in Sumba: gongs, the jungga and the Kataga war dance",
+ "d": "The sounds of Sumba: gong and drum ensembles at ceremonies, the jungga lute, the Kataga war dance and women's dances, and how to experience them respectfully.",
+ "b": """<p>In Sumba, music is rarely a show for visitors. It belongs to ceremonies: weddings, funerals, house raisings, harvests and the Pasola. If you are lucky enough to be invited to one, you will hear it at its best.</p>
+<h2>Gongs and drums</h2>
+<p>Sets of gongs and drums accompany most ceremonies, played in interlocking rhythms that can go on for hours. Their sound carries across the valleys and tells neighbouring villages that something important is happening.</p>
+<h2>The jungga</h2>
+<p>The jungga is a small plucked lute played by men, often in the evening, to accompany songs about love, longing and the ancestors. It is one of the most personal sounds of the island.</p>
+<h2>Kataga, the war dance</h2>
+<p>Kataga is a warrior dance performed by men with swords and shields, shouting and leaping in mock combat. It recalls the island's history of clan warfare and is performed at important ceremonies and celebrations.</p>
+<h2>Women's dances</h2>
+<p>Women dance in ikat cloth with ornaments such as the mamuli, a gold or metal pendant shaped like a stylised womb, a symbol of fertility and status. The movements are slow and graceful, often to the rhythm of gongs.</p>
+<h2>Ritual speech and chant</h2>
+<p>In Marapu ceremonies, specialists recite long chants in paired lines, a formal ritual language. See """ + GD("marapu-religion-sumba", "Marapu religion") + """ and """ + GD("languages-of-sumba", "languages of Sumba") + """.</p>
+<h2>How to experience it</h2>
+<ul><li>Ask your driver or guesthouse whether there is a ceremony nearby and whether visitors are welcome.</li>
+<li>Go with a local guide, dress modestly and bring a small gift.</li>
+<li>Ask before filming. Some moments are sacred.</li>
+<li>See """ + GD("sumba-events-calendar", "the events calendar") + """ and """ + GD("respect-etiquette", "respect and etiquette") + """.</li></ul>"""},
+{"s": "sumba-markets", "img": "prailiu-village",
+ "t": "Markets in Sumba: what to see, eat and buy",
+ "d": "Town and village markets in Sumba: when to go, what you will find, how to buy ikat and betel, and simple market etiquette.",
+ "b": """<p>Markets are the easiest way to see everyday life in Sumba. People come from the villages to sell vegetables, fruit, fish, betel nut and cloth, and to meet friends.</p>
+<h2>Town markets</h2>
+<p>Each of the four main towns has a daily market: Waingapu, Waikabubak, Tambolaka and Waibakul. Mornings are the busiest and freshest time. Weekly markets are also held in some villages; ask locally which day.</p>
+<h2>What you will find</h2>
+<ul><li><b>Fruit and vegetables</b> from the island's farms, depending on the season.</li>
+<li><b>Fish</b> from the coast, best early in the morning.</li>
+<li><b>Sirih pinang</b>, betel leaf and areca nut, chewed by many adults and offered to guests.</li>
+<li><b>Ikat cloth</b>, from simple pieces to fine hand-dyed cloths. See """ + GD("sumba-ikat-weaving", "Sumba ikat") + """.</li>
+<li><b>Household goods</b>, machetes, baskets and plastic everything.</li></ul>
+<h2>Eating at the market</h2>
+<p>Simple stalls sell rice with side dishes, grilled fish and sweet snacks. Choose busy stalls where food is cooked fresh. See """ + GD("food-in-sumba", "food in Sumba") + """.</p>
+<h2>Market etiquette</h2>
+<ul><li>Ask before photographing people.</li>
+<li>Bargain politely for cloth and souvenirs, not for food.</li>
+<li>Carry small notes. Change can be hard to find.</li>
+<li>Learn a few words, see """ + GD("indonesian-phrases-sumba", "useful Indonesian phrases") + """.</li></ul>"""},
 ]

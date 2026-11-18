@@ -120,7 +120,7 @@ assert not any(b in blob for b in bad), "hotel photo in gallery"
 data = {"langs": LANGS, "lname": LNAME, "tl": TIMES_LANG, "ui": UI, "ui2": UI2, "wx": WX, "places": PLACES, "towns": TOWNS, "towntxt": TOWNS_ALL,
         "guides": GUIDES_ALL, "credits": CREDITS, "rtxt": REGION_TXT, "rslug": REGION_SLUG, "cslug": CAT_SLUG, "ctxt": CAT_TXT, "season": SEASON,
         "gallery": GALLERY, "airports": AIRPORTS, "regions": json.load(open("regions.json")), "indexnow": "5f0c3b7e9a2d4c18b6e1a7f3d9c2e0b4",
-        "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "climate": json.load(open("climate.json")), "months": MONTHS_ALL, "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
+        "built": datetime.date.today().isoformat(), "ver": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S"), "nbase": NEAR_BASE, "svc": json.load(open("osm_services.json")), "climate": json.load(open("climate.json")), "months": MONTHS_ALL, "near": NEAR, "videos": VIDEOS, "vmeta": VIDEO_META}
 # ---- real lastmod per page: date changes only when that page's content changes ----
 import hashlib, os
 _lm = json.load(open("lastmod.json")) if os.path.exists("lastmod.json") else {}
