@@ -289,3 +289,28 @@ export async function handle(req, u, env, ctx, shell) {
 }
 export const stalledLabel = lang => (S[lang] || S.en).h1;
 export { LANGS };
+
+// ------------------------------------------------------------------------------------------------ 129, 130: results and credit ratings
+// Latest full-year results and credit ratings of a few large listed developers, as the company announced them (listed-developers.json fin, rt).
+const FR = {
+  en: { res: 'Full-year {y} results as published by the company on {d}: revenue {rev}{np}{pbt}.', np: '; net profit {v}', pbt: '; profit before tax {v}', rt: 'Credit rating announced by the company on {d}: {a} {r}, outlook {o}.', o: { stable: 'stable', positive: 'positive', negative: 'negative' }, cav: 'Ratings and results change: the rating agency and the company\'s latest report are the sources of the current figures.' },
+  es: { res: 'Resultados del año {y} publicados por la empresa el {d}: ingresos {rev}{np}{pbt}.', np: '; beneficio neto {v}', pbt: '; beneficio antes de impuestos {v}', rt: 'Calificación crediticia anunciada por la empresa el {d}: {a} {r}, perspectiva {o}.', o: { stable: 'estable', positive: 'positiva', negative: 'negativa' }, cav: 'Las calificaciones y los resultados cambian: la agencia y el último informe de la empresa son la fuente de las cifras vigentes.' },
+  de: { res: 'Jahresergebnis {y}, vom Unternehmen veröffentlicht am {d}: Umsatz {rev}{np}{pbt}.', np: '; Nettogewinn {v}', pbt: '; Gewinn vor Steuern {v}', rt: 'Vom Unternehmen am {d} gemeldetes Kreditrating: {a} {r}, Ausblick {o}.', o: { stable: 'stabil', positive: 'positiv', negative: 'negativ' }, cav: 'Ratings und Ergebnisse ändern sich: Quelle der aktuellen Zahlen sind die Ratingagentur und der jüngste Bericht des Unternehmens.' },
+  fr: { res: 'Résultats annuels {y} publiés par la société le {d} : chiffre d’affaires {rev}{np}{pbt}.', np: ' ; bénéfice net {v}', pbt: ' ; bénéfice avant impôts {v}', rt: 'Notation de crédit annoncée par la société le {d} : {a} {r}, perspective {o}.', o: { stable: 'stable', positive: 'positive', negative: 'négative' }, cav: 'Les notations et les résultats changent : l’agence de notation et le dernier rapport de la société sont la source des chiffres actuels.' },
+  nl: { res: 'Jaarresultaten {y}, door het bedrijf gepubliceerd op {d}: omzet {rev}{np}{pbt}.', np: '; nettowinst {v}', pbt: '; winst voor belasting {v}', rt: 'Kredietrating, door het bedrijf bekendgemaakt op {d}: {a} {r}, vooruitzicht {o}.', o: { stable: 'stabiel', positive: 'positief', negative: 'negatief' }, cav: 'Ratings en resultaten veranderen: het ratingbureau en het laatste verslag van het bedrijf zijn de bron van de actuele cijfers.' },
+  ru: { res: 'Годовые результаты за {y} год, опубликованные компанией {d}: выручка {rev}{np}{pbt}.', np: '; чистая прибыль {v}', pbt: '; прибыль до налогов {v}', rt: 'Кредитный рейтинг, объявленный компанией {d}: {a} {r}, прогноз {o}.', o: { stable: 'стабильный', positive: 'позитивный', negative: 'негативный' }, cav: 'Рейтинги и результаты меняются: источник актуальных данных это рейтинговое агентство и последний отчёт компании.' },
+  zh: { res: '公司于 {d} 公布的 {y} 年全年业绩：收入 {rev}{np}{pbt}。', np: '；净利润 {v}', pbt: '；税前利润 {v}', rt: '公司于 {d} 公布的信用评级：{a} {r}，展望{o}。', o: { stable: '稳定', positive: '正面', negative: '负面' }, cav: '评级和业绩会变化：当前数据以评级机构和公司最新报告为准。' },
+  ar: { res: 'نتائج العام {y} كما نشرتها الشركة في {d}: الإيرادات {rev}{np}{pbt}.', np: '؛ صافي الربح {v}', pbt: '؛ الربح قبل الضريبة {v}', rt: 'تصنيف ائتماني أعلنته الشركة في {d}: {a} {r}، النظرة {o}.', o: { stable: 'مستقرة', positive: 'إيجابية', negative: 'سلبية' }, cav: 'التصنيفات والنتائج تتغير: مصدر الأرقام الحالية هو وكالة التصنيف وآخر تقرير للشركة.' }
+};
+const fdym = (d, l) => /^\d{4}-\d{2}$/.test(String(d || '')) ? (() => { try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(d + '-15T12:00:00Z')); } catch (e) { return d; } })() : fdt(d, l);
+const money = (cur, v, l) => '<span dir="ltr">' + esc(cur) + ' ' + nf(v / 1e9, l, 1) + ' bn</span>';
+export function finRtHtml(d, lang) {   // '' or <li> items
+  if (!d) return '';
+  const L = FR[lang] || FR.en, src = (u, ) => { let h = ''; try { h = new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } return ' <a class="k-src" href="' + esc(u) + '" rel="noopener nofollow" target="_blank">' + esc(h) + '</a>'; };
+  const out = [];
+  const f = d.fin;
+  if (f && f.rev && f.src) out.push(fill(esc(L.res), { y: esc(f.y), d: esc(fdt(f.d, lang)), rev: money(f.cur, f.rev, lang), np: f.np ? fill(esc(L.np), { v: money(f.cur, f.np, lang) }) : '', pbt: f.pbt ? fill(esc(L.pbt), { v: money(f.cur, f.pbt, lang) }) : '' }) + src(f.src));
+  for (const r of d.rt || []) if (r.src && r.r) out.push(fill(esc(L.rt), { d: esc(fdym(r.d, lang)), a: '<span lang="en" dir="ltr">' + esc(r.a) + '</span>', r: '<b dir="ltr">' + esc(r.r) + '</b>', o: esc(L.o[r.o] || r.o) }) + src(r.src));
+  if (!out.length) return '';
+  return out.map(s => '<li class="kfact">' + s + '</li>').join('') + '<li class="k-muted">' + esc(L.cav) + '</li>';
+}

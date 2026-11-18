@@ -8,6 +8,7 @@
 // Routes:
 //   GET /api/x/filings            every matched developer (public JSON)
 //   GET /api/x/filings?dev=<slug> one developer
+import { finRtHtml } from './kbx_n31c.js';   // n31c (items 129, 130)
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/filings\/?$/;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -95,7 +96,8 @@ export function filingsDevHtml(fd, slug, lang) {
   if (d.q) L.push(esc(t(lang, 'src_wd')) + ' <a class="k-src" href="https://www.wikidata.org/wiki/' + esc(d.q) + '" rel="noopener" target="_blank">Wikidata ' + esc(d.q) + '</a>');
   if (d.src && fd.sources && fd.sources[d.src] && okUrl(fd.sources[d.src].url)) L.push(esc(t(lang, 'src_list')) + ' <a class="k-src" href="' + esc(fd.sources[d.src].url) + '" rel="noopener nofollow" target="_blank">' + ltr(fd.sources[d.src].name) + '</a>');
   if (d.cik) L.push(esc(t(lang, 'src_sec')) + ' <a class="k-src" href="https://data.sec.gov/submissions/CIK' + esc(String(d.cik).padStart(10, '0')) + '.json" rel="noopener nofollow" target="_blank">SEC EDGAR, CIK ' + esc(d.cik) + '</a>');
-  if (L.length) h += '<ul class="fl">' + L.map(s => '<li class="kfact">' + s + '</li>').join('') + '</ul>';
+  const FR31 = finRtHtml(d, lang);   // n31c: latest results and credit ratings as the company announced them
+  if (L.length || FR31) h += '<ul class="fl">' + L.map(s => '<li class="kfact">' + s + '</li>').join('') + FR31 + '</ul>';
   h += '<p class="k-small k-muted">' + esc(t(lang, 'cav')) + '</p><p class="k-small"><a class="k-src" href="/api/x/filings?dev=' + esc(slug) + '">' + esc(t(lang, 'json')) + '</a> <span class="k-muted">' + esc(String(t(lang, 'upd')).replace('{d}', fdt(fd.updated, lang))) + '</span></p></div>';
   return h;
 }
@@ -112,7 +114,7 @@ export async function handle(req, u, env) {
     const d = (fd.developers || {})[s];
     if (!d) return out({ dev: s, listed_match: false, note: 'No exact-name match to a listed company in our sources. This is not a finding: the developer may be private, listed under another name, or a subsidiary of a listed group.', updated: fd.updated }, 404);
     return out({ dev: s, url: ORIGIN + '/developers/' + s + '/#filings', listed_match: true, updated: fd.updated, company: d.co, wikidata: d.q || null, lei: d.lei || null, sec_cik: d.cik || null,
-      listings: d.l.map(l => ({ exchange: (fd.exchanges[l.x] || {}).n || l.x, ticker: l.t || null, filings: l.u || (fd.exchanges[l.x] || {}).u || null })), latest_annual_report_sec: d.annual || null, sources: fd.sources });
+      listings: d.l.map(l => ({ exchange: (fd.exchanges[l.x] || {}).n || l.x, ticker: l.t || null, filings: l.u || (fd.exchanges[l.x] || {}).u || null })), latest_annual_report_sec: d.annual || null, results_as_published: d.fin || null, credit_ratings_as_announced: d.rt || null, sources: fd.sources });
   }
   return out(Object.assign({ per_developer: ORIGIN + '/api/x/filings?dev=<slug>' }, fd));
 }
