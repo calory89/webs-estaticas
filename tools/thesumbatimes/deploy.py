@@ -6,12 +6,15 @@ import os, json, base64, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(HERE, "out"); W = os.path.join(HERE, "worker")
 KV_NAMESPACE_ID = "f0aa5acc53a44f3194e7e428071161e2"   # Workers KV "thesumbatimes-img": img/<slug>-640.webp, img/<slug>-1280.webp, og/<slug>.jpg
 TEXT = (".html", ".xml", ".txt", ".svg", ".json", ".webmanifest", ".js", ".css")
-F = {}
+F = {}; PAGES = {}
 for root, _, files in os.walk(OUT):
     for f in files:
         fp = os.path.join(root, f); p = "/" + os.path.relpath(fp, OUT).replace(os.sep, "/")
         if p.startswith("/img/"): continue
-        if f.endswith(TEXT):
+        if f.endswith(".html") or f.endswith(".md"):
+            # page bodies live in KV under pg/<sha16 of content> (immutable keys), not in the bundle: the bundle only maps path -> key
+            _t = open(fp, encoding="utf-8").read(); _k = hashlib.sha1(_t.encode()).hexdigest()[:16]; PAGES[_k] = _t; F[p] = {"k": _k, "e": _k}
+        elif f.endswith(TEXT):
             _t = open(fp, encoding="utf-8").read(); F[p] = {"t": _t, "e": hashlib.sha1(_t.encode()).hexdigest()[:16]}
         else: F[p] = {"b64": base64.b64encode(open(fp, "rb").read()).decode()}
 OGF = {}
@@ -21,11 +24,17 @@ JS = "const F=" + json.dumps(F, ensure_ascii=False) + ";\nconst OGF=" + json.dum
 const RD=F['/_redirects.json']?JSON.parse(F['/_redirects.json'].t):{};
 const ES=new Set(['ES','MX','AR','CO','CL','PE','VE','EC','GT','CU','BO','DO','HN','PY','SV','NI','CR','PA','UY','PR','GQ']);
 const BOT=/bot|crawl|spider|slurp|facebookexternalhit|embedly|preview|whatsapp|telegram|lighthouse|headless|gptbot|claude|anthropic|perplexity|google-extended|ccbot|bytespider|applebot|bingpreview/i;
-const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',svg:'image/svg+xml',png:'image/png',woff2:'font/woff2',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg',js:'application/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
+const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',csv:'text/csv; charset=utf-8',geojson:'application/geo+json',ics:'text/calendar; charset=utf-8',svg:'image/svg+xml',png:'image/png',woff2:'font/woff2',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg',js:'application/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
 const SEC={'x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin','strict-transport-security':'max-age=31536000; includeSubDomains','permissions-policy':'camera=(), microphone=(), geolocation=()','x-frame-options':'SAMEORIGIN'};
 function hdr(ext,cache){return Object.assign({'content-type':CT[ext]||'application/octet-stream','cache-control':cache},SEC);}
-function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=(ext==='woff2'||ext==='css'||p.startsWith('/j.'))?'public, max-age=31536000, immutable':ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
+function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=(ext==='woff2'||ext==='css'||p.startsWith('/j.'))?'public, max-age=31536000, immutable':ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json'||ext==='md'||ext==='csv')?'public, max-age=600':'public, max-age=86400';
  const h=hdr(ext,cache);if(p.startsWith('/widget/')){delete h['x-frame-options'];h['content-security-policy']='frame-ancestors *';}if(f.b64){const b=Uint8Array.from(atob(f.b64),c=>c.charCodeAt(0));return new Response(b,{status,headers:h});}return new Response(f.t,{status,headers:h});}
+async function page(p,status,env){const f=F[p];if(!f.k)return resp(p,status);let t=null;
+ try{t=await env.IMG.get('pg/'+f.k,{cacheTtl:86400})}catch(e){}
+ if(t===null){try{t=await env.IMG.get('pg/'+f.k)}catch(e){}}
+ if(t===null)return new Response('Temporarily unavailable, please retry in a moment.',{status:503,headers:Object.assign({'content-type':'text/plain; charset=utf-8','retry-after':'30','cache-control':'no-store'},SEC)});
+ const ext=p.split('.').pop();const h=hdr(ext,ext==='html'?'public, max-age=300, stale-while-revalidate=600':'public, max-age=600');if(p.startsWith('/widget/')){delete h['x-frame-options'];h['content-security-policy']='frame-ancestors *';}if(ext==='md')h['x-robots-tag']='noindex';
+ return new Response(t,{status,headers:h});}
 
 const AI_URL='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/sumba-ai';
 const AI_PER_IP=20, AI_PER_DAY=600;
@@ -121,12 +130,23 @@ export default{async fetch(req,env,ctx){const u=new URL(req.url);
  if(p.startsWith('/pdf/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:Object.assign({'content-type':'application/pdf','cache-control':'public, max-age=86400','x-robots-tag':'noindex'},SEC)});}const m=p.match(/-(en|es|id)\.pdf$/);return Response.redirect(u.origin+'/'+(m?m[1]:'en')+'/guide/sumba-7-days/',302);}
  if(p.startsWith('/img/')||p.startsWith('/og/')){const ck=new Request(u.origin+p);try{const ch=await caches.default.match(ck);if(ch)return ch}catch(e){}const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){const R=new Response(v,{headers:hdr(k.split('.').pop(),p.startsWith('/og/')?'public, max-age=86400':'public, max-age=2592000')});if(ctx)ctx.waitUntil(caches.default.put(ck,R.clone()).catch(()=>{}));return R;}const fb=OGF[p.slice(4)];if(fb){const v2=await env.IMG.get('og/'+fb+'.jpg',{type:'arrayBuffer'});if(v2)return new Response(v2,{headers:hdr('jpg','public, max-age=3600')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
- if(F[p]){const et=F[p].e?'W/"'+F[p].e+'"':null;if(et&&(req.headers.get('if-none-match')||'').replace(/^W\//,'')===et.slice(2)){return new Response(null,{status:304,headers:Object.assign({'etag':et,'cache-control':'public, max-age=300'},SEC)});}if(p.endsWith('.html')&&env.IMG&&ctx)ctx.waitUntil(hit(req,env,u,p));const r0=resp(p,200);if(et)r0.headers.set('etag',et);if(p.endsWith('.json'))r0.headers.set('x-robots-tag','noindex');return r0;}
+ if(F[p]){const et=F[p].e?'W/"'+F[p].e+'"':null;if(et&&(req.headers.get('if-none-match')||'').replace(/^W\//,'')===et.slice(2)){return new Response(null,{status:304,headers:Object.assign({'etag':et,'cache-control':'public, max-age=300'},SEC)});}if(p.endsWith('.html')&&env.IMG&&ctx)ctx.waitUntil(hit(req,env,u,p));const r0=await page(p,200,env);if(et)r0.headers.set('etag',et);if(p.endsWith('.json'))r0.headers.set('x-robots-tag','noindex');return r0;}
  if(!/\.[a-z0-9]{2,12}$/i.test(p)&&F[p+'/index.html']){return Response.redirect(u.origin+u.pathname+'/'+u.search,301);}
- const m=p.match(/^\/(en|es|id)\//);return resp(m&&F['/'+m[1]+'/404.html']?'/'+m[1]+'/404.html':'/404.html',404);}};
+ const m=p.match(/^\/(en|es|id)\//);return page(m&&F['/'+m[1]+'/404.html']?'/'+m[1]+'/404.html':'/404.html',404,env);}};
 """
 os.makedirs(W, exist_ok=True)
 open(os.path.join(W, "index.js"), "w", encoding="utf-8").write(JS)
 META = {"main_module": "index.js", "compatibility_date": "2026-11-01", "keep_bindings": ["secret_text"], "bindings": [{"type": "kv_namespace", "name": "IMG", "namespace_id": KV_NAMESPACE_ID}]}
 open(os.path.join(W, "metadata.json"), "w").write(json.dumps(META))
+import gzip
+with gzip.open(os.path.join(W, "pages.json.gz"), "wt", encoding="utf-8", compresslevel=9) as _g: json.dump(PAGES, _g, ensure_ascii=False)
+# the deploy job (claude-ops jobs/tst_deploy.sh) needs BOTH files: copy them next to each other when the ops repo is checked out beside this one
+_ops = os.environ.get("TST_OPS") or os.path.join(HERE, "..", "..", "..", "claude-ops", "data", "thesumbatimes")
+if os.path.isdir(_ops):
+    import shutil
+    with open(os.path.join(W, "index.js"), "rb") as _i, gzip.open(os.path.join(_ops, "index.js.gz"), "wb", compresslevel=9) as _o: shutil.copyfileobj(_i, _o)
+    shutil.copy(os.path.join(W, "pages.json.gz"), os.path.join(_ops, "pages.json.gz")); shutil.copy(os.path.join(W, "metadata.json"), os.path.join(_ops, "metadata.json"))
+    if os.path.exists(os.path.join(OUT, "_og.json")): shutil.copy(os.path.join(OUT, "_og.json"), os.path.join(_ops, "og.json"))
+    print("copied index.js.gz + pages.json.gz + metadata.json + og.json to", os.path.normpath(_ops))
+print("pages in KV", len(PAGES), "bytes", sum(len(v.encode()) for v in PAGES.values()))
 print("worker bytes", len(JS.encode()), "files", len(F))
