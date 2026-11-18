@@ -103,15 +103,72 @@ def review_out(r):
             'co': (r.get('company') or None), 'sq': {k: v for k, v in (r.get('sq') or {}).items() if v}, 'miss': [m for m in (r.get('miss') or []) if ok_text(m)] or None}
 
 
+# n31c (18 Nov 2026, items 121-123): the Dubai Land Department register facts already held in the claims (DLD project number and
+# status, escrow account bank, % built at the latest DLD inspection and its date, units, completion date on the register), as one
+# structured record per project. Read only from claims whose source is the DLD register (dubailand.gov.ae) or its public mirror
+# (dubairealestateiq.com, which shows the DLD project number and register date for each figure).
+DLD_SRC = re.compile(r'^https?://(?:[a-z0-9-]+\.)*(?:dubailand\.gov\.ae|dubairealestateiq\.com)/', re.I)
+_MON = {m: i + 1 for i, m in enumerate('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split())}
+
+
+def _dmy(t):
+    m = re.match(r'(\d{1,2}) ([A-Z][a-z]{2})[a-z]* (\d{4})$', (t or '').strip())
+    return '%s-%02d-%02d' % (m.group(3), _MON[m.group(2)], int(m.group(1))) if m and m.group(2) in _MON else None
+
+
+def dld_facts(p):
+    r, src = {}, None
+    for x in p.get('claims') or []:
+        if not isinstance(x, dict) or not DLD_SRC.match(str(x.get('source') or '')): continue
+        t = re.sub(r'\s+', ' ', str(x.get('claim') or ''))
+        got = False
+        m = re.search(r'\bproject (\d{3,5})\b', t)
+        if m and 'no' not in r: r['no'] = m.group(1); got = True
+        m = re.search(r'\bstatus (Active|Pending|Finished|Completed|Cancelled|Not Started|Conditional Activating)\b', t) or re.search(r'\(project \d{3,5}, (Active|Pending|Finished|Completed|Cancelled)\)', t)
+        if m and 'st' not in r: r['st'] = m.group(1); got = True
+        m = (re.search(r'escrow account bank (?:on the DLD register: )?([A-Z][A-Za-z&.()\' -]+?)(?:\s*/|,|;|$)', t) or re.search(r'Escrow account \(([^)]+)\)', t)
+             or re.search(r'Escrow account held at ([A-Z][A-Za-z&.()\' -]+?)(?:,|;|\.|$)', t) or re.search(r'\bescrow ([A-Z][A-Za-z&.()\' -]+?), [\d.]+% built', t))
+        if m and 'bank' not in r:
+            b = m.group(1).strip(' .')
+            if 3 <= len(b) <= 70: r['bank'] = b; got = True
+        m = (re.search(r'([\d.]+)% built at (?:the )?(?:latest )?DLD inspection (?:of|on) (\d{1,2} [A-Z][a-z]{2}[a-z]* \d{4})', t) or re.search(r'Construction at ([\d.]+)% \(DLD inspection (\d{1,2} [A-Z][a-z]{2} \d{4})\)', t)
+             or re.search(r'([\d.]+)% built at (\d{1,2} [A-Z][a-z]{2} \d{4}) inspection', t))
+        if m:
+            d = _dmy(m.group(2))
+            if d and (not r.get('pd') or d > r['pd']):
+                try: r['pct'] = float(m.group(1)); r['pd'] = d; got = True
+                except ValueError: pass
+        m = re.search(r'([\d,]+) units on the (?:DLD )?register', t)
+        if m and 'units' not in r: r['units'] = int(m.group(1).replace(',', '')); got = True
+        m = re.search(r'completion date on the register (\d{1,2} [A-Z][a-z]{2} \d{4})', t) or re.search(r'registered completion (\d{1,2} [A-Z][a-z]{2} \d{4})', t)
+        if m and 'comp' not in r and _dmy(m.group(1)): r['comp'] = _dmy(m.group(1)); got = True
+        if got and not src: src = x.get('source')
+    if r.get('pct') is not None and not (0 <= r['pct'] <= 100): r.pop('pct'); r.pop('pd', None)
+    if not (r.get('no') or r.get('bank') or r.get('pct') is not None): return None
+    r['src'] = src
+    return r
+
+
+def load_aliases():
+    try:
+        a = json.load(open(os.path.join(HERE, 'aliases.json')))
+        return a.get('developers') or {}, a.get('projects') or {}
+    except (OSError, ValueError):
+        return {}, {}
+
+
 def main(cases_path, out_path):
     projects = json.load(open(os.path.join(HERE, 'projects.json')))['projects'] + json.load(open(os.path.join(HERE, 'projects-world.json'))).get('projects', [])
     latest = json.load(open(os.path.join(DATA, 'latest.json'))) if os.path.exists(os.path.join(DATA, 'latest.json')) else {}
     regw = (json.load(open(os.path.join(DATA, 'registry-watch.json'))) if os.path.exists(os.path.join(DATA, 'registry-watch.json')) else {}).get('projects', {})
     cases = {c['id']: c for c in json.load(open(cases_path)).get('cases', [])}
-    n, out, seen_slug, dropped = {}, [], set(), {'role': 0, 'opinion': 0, 'id_mismatch': 0}
+    n, out, seen_slug, dropped = {}, [], set(), {'role': 0, 'opinion': 0, 'id_mismatch': 0, 'merged': 0}
+    DEV_ALIAS, PROJ_ALIAS = load_aliases()
     for p in sorted(projects, key=lambda x: x.get('market', 'Bali') != 'Bali'):   # identical ordering to agent.public_cases()
         mk = p.get('market', 'Bali'); n[mk] = n.get(mk, 0) + 1
         pid = '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), n[mk])
+        if p.get('merged_into'):   # n31c: merged duplicate, keeps its place so later ids do not move; its page redirects
+            dropped['merged'] += 1; PROJ_ALIAS.setdefault(slugify(p.get('slug') or p.get('name')), p['merged_into']); continue
         c = cases.get(pid)
         if not c or c.get('market') != mk or c.get('units') != (p.get('seed') or {}).get('units'):   # same id, same market, same unit count: the same record
             dropped['id_mismatch'] += 1; continue
@@ -152,9 +209,11 @@ def main(cases_path, out_path):
             if isinstance(v, list): v = [clean(x, 80) for x in v if isinstance(x, str) and ok_text(x)][:12]
             fx[k] = v
         if pid in PIN_FIX: fx['lat'], fx['lng'] = PIN_FIX[pid]
+        dld = dld_facts(p) if mk in ('Dubai', 'Dubai Islands') or p.get('country') in ('UAE', 'United Arab Emirates') else None
+        if dld: fx['dld'] = dld
         lt = latest.get(p.get('slug')) or {}
         rw = regw.get(p.get('slug'))
-        out.append({'id': pid, 's': slug, 'n': clean(p.get('name'), 140), 'dv': dev, 'dvs': slugify(dev) if dev else None, 'mk': mk, 'co': p.get('country', 'Indonesia'),
+        out.append({'id': pid, 's': slug, 'n': clean(p.get('name'), 140), 'dv': dev, 'dvs': (lambda d: DEV_ALIAS.get(d, d))(slugify(dev)) if dev else None, 'mk': mk, 'co': p.get('country', 'Indonesia'),
                     'ar': clean(p.get('area'), 80) or None, 'st': c.get('stage'), 'sts': p.get('status'), 'url': p.get('url'),
                     'du': p.get('docs_url') if p.get('docs_url') != p.get('url') else None, 'pn': p.get('permit_number') or (p.get('seed') or {}).get('permit_number'),
                     'dl': [t for t in (keep(x) for x in (p.get('docs_listed') or [])) if t][:14], 'ev': ev, 'cl': cl[:24], 'fl': fl[:8], 'fx': fx,
@@ -162,14 +221,17 @@ def main(cases_path, out_path):
                     'sha': lt.get('sha256'), 'sealed': lt.get('sealed') or lt.get('checked'),
                     'rw': {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'code', 'checked')} if rw else None,
                     'rvw': review_out(p.get('review'))})
+    from validate import check as _validate   # n31c (item 116): automatic checks on every record before it is published
+    qa = _validate(out)
     devs = {}
     for x in out:
         if x['dvs']: devs.setdefault(x['dvs'], {'n': x['dv'], 'p': []})['p'].append(x['id'])
     res = {'version': 'named-1', 'updated': json.load(open(cases_path)).get('updated'), 'count': len(out), 'developers': len(devs), 'dropped': dropped,
            'rules': 'Facts only, each with its source link. Items naming a person or using opinion words are dropped before publishing.', 'review_rules': REVIEW_RULES,
-           'reviewed_n27': sum(1 for x in out if x.get('rvw') and x['rvw']['ok']), 'projects': out}
+           'reviewed_n27': sum(1 for x in out if x.get('rvw') and x['rvw']['ok']),
+           'aliases': {'developers': {k: v for k, v in sorted(DEV_ALIAS.items()) if v in devs}, 'projects': dict(sorted(PROJ_ALIAS.items()))}, 'qa': qa, 'projects': out}
     json.dump(res, open(out_path, 'w'), ensure_ascii=False, separators=(',', ':'))
-    print('named index:', len(out), 'projects,', len(devs), 'developers, dropped', dropped)
+    print('named index:', len(out), 'projects,', len(devs), 'developers, dropped', dropped, '| validation', qa['counts'], 'held', qa['held'])
 
 
 if __name__ == '__main__':

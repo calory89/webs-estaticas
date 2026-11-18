@@ -21709,11 +21709,11 @@
     "permit_claim": true,
     "permit_number": "07/GPXD",
     "plans_published": true,
-    "escrow": null,
+    "escrow": "Bank guarantee for off-plan buyers: BIDV guarantee agreement up to VND 3,500bn (max 70% of contract values and not above sums advanced), plus a VPBank guarantee facility; developer publishes guarantee commitments in its legal disclosure",
     "progress_pct": null,
     "developer_delivered": "Gamuda Land Vietnam townships Celadon City and Gamuda City (Gamuda Berhad integrated report FY2024); Artisan Park vacant possession targeted Q4 FY2025",
     "units": 2052,
-    "payment_plan": null,
+    "payment_plan": "VND 100M booking; 10% at SPA, staged to 50%, 45% + 2% maintenance fund at handover notice, 5% at certificate (Sales Scheme 25.1, Aug 2026, agent)",
     "price_per_m2": null,
     "progress_updates": true
    },
@@ -21728,22 +21728,22 @@
     "all_six": false
    },
    "evidence": {
-    "permit": "Agent publishes building permit 07/GPXD (17 Feb 2023) and sale notices 6488/SXD-PTDT and 11801/SXD-PTDT; developer-related site says permit, 1/500 plan and investment approval complete",
-    "escrow": "No guaranteeing bank or bank-guarantee certificate published, although Vietnamese law requires one for off-plan sales",
+    "permit": "Developer disclosure lists construction permit 07/GPXD (HCMC DOC) and sale-eligibility notices 6488 and 11801; Fili reports the DOC notices of 16 Jul and 5 Dec 2024",
+    "escrow": "Developer lists bank guarantee commitments; Fili details the BIDV guarantee (up to VND 3,500bn) and a VPBank guarantee",
     "progress": "Topping out of final towers on 12 Aug 2026 reported by CafeLand, Cong Luan (via vietnam.vn) and Nhip Song Kinh Doanh; May 2026 floor-by-floor update",
     "plans": "Unit types and areas published; agents show layouts",
     "record": "Gamuda Berhad's audited integrated report names delivered Vietnam townships (Celadon City, Gamuda City) and reports Eaton Park phase 1 sales",
-    "returns": "No rental guarantee or yield claim"
+    "returns": "No guaranteed return or yield found"
    },
    "verification": {
-    "permit": "developer",
-    "escrow": "none",
+    "permit": "independent",
+    "escrow": "independent",
     "progress": "independent",
     "plans": "developer",
     "record": "independent",
-    "returns": "none"
+    "returns": "developer"
    },
-   "verified_score": 2,
+   "verified_score": 4,
    "claims": [
     {
      "claim": "Building permit 07/GPXD issued 17 Feb 2023",
@@ -21810,6 +21810,78 @@
      "status": "unverified",
      "by": "none",
      "source": "https://gamudaland.com.vn/en/news/news-and-story-38"
+    },
+    {
+     "claim": "Construction permit 07/GPXD issued Feb 2023 by HCMC DOC",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "All 2,000 apartments eligible for off-plan sale",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Bank guarantee for off-plan buyers (BIDV, up to VND 3,500bn)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Land use right certificate valid to 2072",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Developer committed not to mortgage project land",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Tam Luc Real Estate JSC registered, enterprise code 0314020818",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://eatonpark.com.vn/project-information-disclosure/"
+    },
+    {
+     "claim": "All six towers topped out 12 Aug 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://gamudaland.com.vn/en/news/news-and-story-38"
+    },
+    {
+     "claim": "Handover from Q3 2027",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Launch prices VND 125-145M per sqm",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm"
+    },
+    {
+     "claim": "Foreigners hold 50-year title within 30% per tower cap",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/"
+    },
+    {
+     "claim": "Agent handover dates Q2 2027 (A5-A6) and Q1 2028 (A1-A4)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
+    },
+    {
+     "claim": "No guaranteed rental return",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dndrealty.com.vn/en/du-an/eaton-park/"
     }
    ],
    "facts": {
@@ -21833,11 +21905,11 @@
     ],
     "size_min_m2": 50.7,
     "size_max_m2": 113.9,
-    "price_min": null,
-    "price_max": null,
+    "price_min": 4000000000.0,
+    "price_max": 25000000000.0,
     "currency": "VND",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 10.0,
+    "payment_plan": "10% at SPA, to 50% during construction, 45% at handover, 5% at certificate (agent)",
     "foreign_ownership": "50-year ownership certificate for foreigners, max 30% of units per tower",
     "rental_programme": null,
     "service_charge": null,
@@ -21864,13 +21936,17 @@
    "flags": [],
    "sources": [
     "https://dndrealty.com.vn/en/du-an/eaton-park/",
+    "https://dndrealty.com.vn/tien-do-du-an-eaton-park/",
+    "https://eatonpark.com.vn/project-information-disclosure/",
     "https://en.vneconomy.vn/gamuda-lands-eaton-park-project-sees-99-of-second-batch-sold-in-a-week.htm",
+    "https://fili.vn/2024/12/toan-bo-2000-can-ho-hang-sang-eaton-park-o-thu-duc-duoc-phep-ban-nha-tren-giay-4222-1253376.htm",
     "https://gamuda.listedcompany.com/newsroom/GAMUDA_IR2024_(Cover_to_Page_57).pdf",
     "https://gamudaland.com.vn/en/news/news-and-story-38",
     "https://gamudalandvietnam.vn/cap-nhat-tien-do-xay-dung-du-an-eaton-park-gamuda-land-moi-nhat-thang-5-2026/",
     "https://nhipsongkinhdoanh.vn/gamuda-land-cat-noc-hai-toa-thap-cuoi-cung-tai-du-an-hang-sang-eaton-park-31848.htm",
     "https://residential.cbrevietnam.com/en-US/eaton-park-1",
     "https://www.realtique.net/en/news/market-update/42671/eaton-park-thu-duc-foreign-buyer-guide/",
+    "https://www.savills.com.vn/residential/ho-chi-minh-city-projects/eaton-park.aspx",
     "https://www.vietnam.vn/eaton-park-cat-noc-hai-toa-thap-cuoi-gamuda-land-hoan-tat-ket-cau-toan-du-an"
    ],
    "review": {
@@ -121931,7 +122007,7 @@
     "developer news: final towers topped out 12 Aug 2026, handover from Q3 2027",
     "agents: unit mix 1BR 50.7 to 3BR 104.8 sqm, foreign quota rules, payment schedule"
    ],
-   "note": "2,000-apartment, six-tower project by Malaysia's Gamuda Land; all towers topped out on 12 Aug 2026 and handover is targeted from Q3 2027. HCMC Department of Construction allowed off-plan sales of all 2,000 units (Jul and Dec 2024), and BIDV signed a buyer guarantee of up to VND 3,500bn, per Fili; foreigners buy on 50-year title within a 30% per-tower cap. (checked 1 Nov 2026)",
+   "note": "2,000-apartment, six-tower project by Malaysia's Gamuda Land; all towers topped out on 12 Aug 2026 and handover is targeted from Q3 2027. HCMC Department of Construction allowed off-plan sales of all 2,000 units (Jul and Dec 2024), and BIDV signed a buyer guarantee of up to VND 3,500bn, per Fili; foreigners buy on 50-year title within a 30% per-tower cap. (checked 1 Nov 2026) Merged on 18 Nov 2026 into eaton-park-thu-duc-hcmc (the same project recorded twice); this record keeps its place so other ids do not move.",
    "evidence": {
     "permit": "Developer disclosure lists construction permit 07/GPXD (HCMC DOC) and sale-eligibility notices 6488 and 11801; Fili reports the DOC notices of 16 Jul and 5 Dec 2024",
     "escrow": "Developer lists bank guarantee commitments; Fili details the BIDV guarantee (up to VND 3,500bn) and a VPBank guarantee",
@@ -122118,7 +122194,8 @@
      "price": "press",
      "developer": "developer"
     }
-   }
+   },
+   "merged_into": "eaton-park-thu-duc-hcmc"
   },
   {
    "slug": "paramount-signature-nha-trang-vega-city-kdi",
@@ -149476,7 +149553,7 @@
     "yield_pct": null,
     "completion": "2030-Q2",
     "permit_claim": true,
-    "permit_number": "30216-2/01-2029/0022(A)-(S)",
+    "permit_number": "30216-1/10-2028/0847(A)-(S); 30216-2/01-2029/0022(A)-(S)",
     "plans_published": true,
     "escrow": "Developer names no HDA account; TEDUH records Schedule H (Jadual H) sale agreements under the statutory Housing Development Account; land encumbered to CIMB Investment Bank Berhad (APDL)",
     "progress_pct": 60.08,
@@ -149595,6 +149672,24 @@
      "status": "unverified",
      "by": "none",
      "source": "https://paviliondamansaraheights.com/royal-suites"
+    },
+    {
+     "claim": "Imperial Residences permit 30216-1/10-2028/0847(A)-(S), 154 units, RM5,429,000 to RM19,812,000, completion March 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://paviliondamansaraheights.com/apdl"
+    },
+    {
+     "claim": "Royal Suites permit 30216-2/01-2029/0022(A)-(S), 490 units, RM754,000 to RM4,666,000, completion May 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://paviliondamansaraheights.com/apdl"
+    },
+    {
+     "claim": "Pavilion Damansara Heights mall (earlier phase) is open, a record of delivery by the same group (Wikipedia, not a registry)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://en.wikipedia.org/wiki/Pavilion_Damansara_Heights"
     }
    ],
    "facts": {
@@ -149640,18 +149735,23 @@
     "brochure_url": "https://paviliondamansaraheights.com/PDHISP/pdf/e-Brochure-royal-suites.pdf"
    },
    "sources": [
+    "https://en.wikipedia.org/wiki/Pavilion_Damansara_Heights",
     "https://paviliondamansaraheights.com/",
     "https://paviliondamansaraheights.com/apdl",
     "https://paviliondamansaraheights.com/developer",
+    "https://paviliondamansaraheights.com/news-and-events",
     "https://paviliondamansaraheights.com/royal-suites",
     "https://paviliondamansaraheights.com/site-progress",
+    "https://propcashflow.my/blog/new-condo-kuala-lumpur/",
+    "https://propertysifu.my/newprojects/damansara-heights/condo/pavilion-damansara-heights",
     "https://teduh.kpkt.gov.my/api/projek-swasta/30216-1",
     "https://teduh.kpkt.gov.my/api/projek-swasta/30216-2",
     "https://teduh.kpkt.gov.my/api/projek-swasta?q=Pavilion+Damansara&search_type=projek&page=1",
     "https://theedgemalaysia.com/node/800317",
-    "https://www.edgeprop.my/content/1916561/pavilion-damansara-heights-new-phase-hits-milestone-corporate-suites-hotel-tower-topping-out-80-office-space-sold"
+    "https://www.edgeprop.my/content/1916561/pavilion-damansara-heights-new-phase-hits-milestone-corporate-suites-hotel-tower-topping-out-80-office-space-sold",
+    "https://www.paviliondamansaraheightssuites.com/"
    ],
-   "permit_number": "30216-2/01-2029/0022(A)-(S)",
+   "permit_number": "30216-1/10-2028/0847(A)-(S); 30216-2/01-2029/0022(A)-(S)",
    "added": "2026-10-31",
    "status": "active",
    "disclosure": {
@@ -170204,7 +170304,7 @@
     "lng": 101.660678,
     "permit_authority": "KPKT / National Housing Department (JPN); building plan approved by Dewan Bandaraya Kuala Lumpur"
    },
-   "note": "Phase 2 of the 16-acre freehold Pavilion masterplan, with two permits published on the developer site. The developer site has a Site Progress page but it showed no content when opened, so I could not confirm construction has started. Only 3 of the 4 requested projects are included because I could not verify a fourth that is under construction and sold to foreigners.",
+   "note": "Phase 2 of the 16-acre freehold Pavilion masterplan, with two permits published on the developer site. The developer site has a Site Progress page but it showed no content when opened, so I could not confirm construction has started. Only 3 of the 4 requested projects are included because I could not verify a fourth that is under construction and sold to foreigners. Merged on 18 Nov 2026 into pavilion-damansara-heights-phase-2-jendela-mayang (the same project recorded twice); this record keeps its place so other ids do not move.",
    "positives": [
     "Developer licence and both advertising permit numbers, building plan numbers and price ranges published",
     "Floor plan pages listed for each residence type on the developer site",
@@ -170235,7 +170335,8 @@
    "verified_score": 0,
    "added": "2026-11-04",
    "found_by": "discover-agent",
-   "slug": "pavilion-damansara-heights-phase-2-imperial-residences-and-r"
+   "slug": "pavilion-damansara-heights-phase-2-imperial-residences-and-r",
+   "merged_into": "pavilion-damansara-heights-phase-2-jendela-mayang"
   },
   {
    "name": "Abay Joly",

@@ -55,6 +55,7 @@ jobs:
             tools/kolaboro-ship/
             tools/kolaboro-agent/projects.json
             tools/kolaboro-agent/projects-world.json
+            tools/kolaboro-agent/snapshots.py
       - name: History of the live branch (commits and trees only, no file contents)
         env:
           GH_TOKEN: ${{ github.token }}
@@ -72,6 +73,12 @@ jobs:
           KB_SHIP_DAY_USD: '0.05'   # 6 Nov 2026: hard cap for all runs of the UTC day together (ai.by_day in shipping.json)
           KB_SHIP_NEW_FILES: '1'   # 5 Nov: room again after the satellite images were packed (about 1,700 files under the Pages limit); about 1 new day page a day
         run: python3 tools/kolaboro-ship/ship.py --git "$RUNNER_TEMP/hist.git" --ref pub/_lovable --main . --out "$RUNNER_TEMP/out"
+      - name: Daily dataset snapshot (SHA-256 hash chain of /data/named.json)
+        # n31c (18 Nov 2026): adds each finished UTC day to /data/snapshots/ from the history clone above, published with the shipping
+        # log in the same commit. A few seconds inside this daily job: no new workflow, no extra checkout.
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"; touch "$RUNNER_TEMP/out/files.txt"
+          python3 tools/kolaboro-agent/snapshots.py "$RUNNER_TEMP/hist.git" pub/_lovable --out "$RUNNER_TEMP/out" --files "$RUNNER_TEMP/out/files.txt" || echo "::warning::daily snapshot not added"
       - name: Publish to kolaboro.com
         run: |
           set -e

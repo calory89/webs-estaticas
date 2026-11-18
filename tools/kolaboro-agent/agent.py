@@ -286,7 +286,7 @@ def _overdue(p):
 def duplicates(projects):
     """Internal: likely duplicate listings (same market and similar name, or locations within 150 m)."""
     import math
-    out = []; P = [p for p in projects if p.get('market')]
+    out = []; P = [p for p in projects if p.get('market') and not p.get('merged_into')]
     words = lambda p: set(w for w in re.findall(r'[a-z0-9]+', (p.get('name') or '').lower()) if len(w) > 2 and w not in ('the', 'residence', 'residences', 'villas', 'villa', 'tower', 'project', 'apartments', 'by'))
     for i, a in enumerate(P):
         for b in P[i + 1:]:
@@ -337,6 +337,9 @@ def public_cases(projects, latest):
     out = []; n = {}
     for p in sorted(projects, key=lambda x: x.get('market', 'Bali') != 'Bali'):  # stable: file order keeps IDs fixed
         mk = p.get('market', 'Bali'); n[mk] = n.get(mk, 0) + 1; i = n[mk] - 1
+        # n31c (18 Nov 2026): a record merged into another one (the same project recorded twice) keeps its place, so the ids of the
+        # records after it never move, but publishes nothing; its old page redirects to the record it was merged into (aliases.json)
+        if p.get('merged_into'): continue
         rec = latest.get(p['slug'], {}); c = rec.get('claims') or {}; read = rec.get('source') == 'ai'
         s = p.get('seed') or {}; sc = from_seed(s); m = dict(sc); m.update({k: v for k, v in c.items() if v not in (None, '', [])})
         ck = _checks(p, m, s); gl = m.get('guaranteed_language')
@@ -393,7 +396,7 @@ def public_cases(projects, latest):
         if h:
             c['history'] = sorted(h, key=lambda x: x['d'] or '', reverse=True)[:8]
         c.pop('_slug', None)
-    res['db'] = db_stats(projects, out)
+    res['db'] = db_stats([p for p in projects if not p.get('merged_into')], out)   # n31c: a merged duplicate is not counted twice
     res['db']['changes_detected'] = sum(len(v) for v in hist.values())
     res['db']['sat_watched'] = sum(1 for c in out if c.get('sat')); res['db']['sat_no_change'] = sum(1 for c in out if (c.get('sat') or {}).get('status') == 'no visible change'); res['db']['register_watched'] = sum(1 for c in out if c.get('register'))
     lines = ''.join('%s %s\n' % (c['id'], c['fp']['sha256']) for c in sorted(out, key=lambda c: c['id']) if c.get('fp'))
@@ -469,6 +472,8 @@ def main():
     if _clash:
         sys.exit('public id prefix used by more than one market, add a PREFIX entry: %s' % _clash)
     latest = load(os.path.join(DATA, 'latest.json'), {})
+    for _p in projects:
+        if _p.get('merged_into'): latest.pop(_p['slug'], None)   # n31c: a merged duplicate is not counted twice in the aggregates
     changes = load(os.path.join(DATA, 'changes.json'), [])
     runs = load(os.path.join(DATA, 'runs.json'), [])
     global MAX_USD
@@ -482,6 +487,7 @@ def main():
         prev = latest.get(p['slug'], {})
         return (prev.get('source') == 'ai', prev.get('checked') or '')
     for p in sorted(projects, key=_order):
+        if p.get('merged_into'): continue   # n31c: merged duplicate, nothing to read
         prev = latest.get(p['slug'], {})
         if not KEY:
             if not prev.get('claims'): latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": from_seed(p['seed']), "source": "seed", "checked": TODAY}
@@ -519,7 +525,7 @@ def main():
     for slug, rec in latest.items(): rec.setdefault('market', next((p.get('market', 'Bali') for p in projects if p['slug'] == slug), 'Bali'))
     markets = sorted({p.get('market', 'Bali') for p in projects})
     runs_pub = [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs]
-    json.dump({"updated": TODAY, "projects": len(projects), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
+    json.dump({"updated": TODAY, "projects": sum(1 for p in projects if not p.get('merged_into')), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(duplicates(projects), open(os.path.join(DATA, 'duplicates.json'), 'w'), ensure_ascii=False, indent=1)
     pc = public_cases(projects, latest)
     if pc.get('seal') and KEY:

@@ -18760,35 +18760,6 @@
   "sealed": "2026-11-05",
   "checked": "2026-11-05"
  },
- "eaton-park-gamuda-land": {
-  "name": "Eaton Park",
-  "url": "https://gamudaland.com.vn/en/news/news-and-story-38",
-  "market": "Vietnam",
-  "claims": {
-   "price_from": null,
-   "currency": null,
-   "title_type": null,
-   "lease_years_base": null,
-   "extension_promised": null,
-   "guaranteed_language": false,
-   "advertised_yield_pct": null,
-   "completion_year": 2027,
-   "permit_claim": false,
-   "permit_number": null,
-   "plans_published": false,
-   "escrow_or_guarantee": null,
-   "quotes": [
-    "targeting the delivery of perfect homes to customers starting from Q3/2027",
-    "Through three launches, the project consistently maintained a record of filling 90% of its inventory within just a few hours of release",
-    "Every process is strictly monitored under the international GQUAS quality control standard system established by Gamuda Land itself"
-   ]
-  },
-  "source": "ai",
-  "hash": "60a8e0bfe7160f8c",
-  "sha256": "60a8e0bfe7160f8c8e58b109cebd7c1a4d149d1d942c5aa3a3c072acc00d9d57",
-  "sealed": "2026-11-05",
-  "checked": "2026-11-05"
- },
  "paramount-signature-nha-trang-vega-city-kdi": {
   "name": "Paramount Signature Nha Trang by Melia (Libera Nha Trang tower CT10)",
   "url": "https://liberanhatrang.vn/the-paramount",
@@ -26352,35 +26323,6 @@
   "source": "ai",
   "hash": "b10d98bd87a35c82",
   "sha256": "b10d98bd87a35c82e626dedc92d178c8f22184c5692f45585c654d375be285a5",
-  "sealed": "2026-11-06",
-  "checked": "2026-11-06"
- },
- "pavilion-damansara-heights-phase-2-imperial-residences-and-r": {
-  "name": "Pavilion Damansara Heights Phase 2 (Imperial Residences and Royal Suites)",
-  "url": "https://paviliondamansaraheights.com/",
-  "market": "Kuala Lumpur",
-  "claims": {
-   "price_from": null,
-   "currency": null,
-   "title_type": "freehold",
-   "lease_years_base": null,
-   "extension_promised": null,
-   "guaranteed_language": false,
-   "advertised_yield_pct": null,
-   "completion_year": null,
-   "permit_claim": false,
-   "permit_number": null,
-   "plans_published": true,
-   "escrow_or_guarantee": null,
-   "quotes": [
-    "Pavilion Damansara Heights is an iconic 16-acre masterplan that brings together seamless connectivity with freehold Luxury Residences",
-    "Imperial Residences Built-up From 3,380 sq.ft. to 4,090 sq.ft. (314 sq.m. to 380 sq.m.) View Floor Plan",
-    "Experience the ultimate convenience of living directly above the 1 mil sq.ft. Pavilion Damansara Heights Mall"
-   ]
-  },
-  "source": "ai",
-  "hash": "2efe5e061bd8b484",
-  "sha256": "2efe5e061bd8b48492184f4036fbd253611231a17fa77aec986cc02ed123024c",
   "sealed": "2026-11-06",
   "checked": "2026-11-06"
  },
