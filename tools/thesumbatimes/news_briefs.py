@@ -3,13 +3,142 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'travel',
+ 'slug': 'wanggameti-hike-no-permit-us-national-matalawa-park-no-official-trail-2026',
+ 'date': '2026-11-19',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'excursion-wanggameti-sin-permiso-estadounidense-parque-nacional-matalawa-2026', 'id': 'pendakian-wanggameti-wna-amerika-tanpa-izin-balai-tn-matalawa-2026'},
+ 'keywords': {'en': ['Wanggameti hiking permit', 'Mount Wanggameti trail', 'Matalawa National Park', 'hiking in Sumba', 'East Sumba national park rules', 'foreign hikers Indonesia permit'],
+              'es': ['permiso senderismo Wanggameti',
+                     'ruta Monte Wanggameti',
+                     'Parque Nacional Matalawa',
+                     'senderismo en Sumba',
+                     'normas parque nacional Sumba Oriental',
+                     'senderistas extranjeros Indonesia permiso'],
+              'id': ['izin mendaki Wanggameti', 'jalur pendakian Gunung Wanggameti', 'TN Matalawa', 'mendaki di Sumba', 'aturan taman nasional Sumba Timur', 'WNA mendaki Indonesia izin']},
+ 'en': {'title': 'Wanggameti hikers, including a US national, had no permit, park says',
+        'dek': 'The park head says no official trail exists yet, repeat offenders risk a blacklist, and local guides will be required once routes open; no date has been given.',
+        'answer': 'A group of six who hiked Gunung Wanggameti in East Sumba on Friday 13 November 2026 had no permit, and one was a US citizen, the head of the Matalawa national park authority told '
+                  'reporters on 18 November, Waingapu.com reported. The park says there is no official trail yet, so it issues no permits.',
+        'keys': ['Park head Lugi Hartanto said the group asked for a permit, was refused because no official route exists, and went in anyway.',
+                 'The group was called in, questioned and signed a statement not to repeat it; he warned that a repeat would mean a blacklist.',
+                 'The park is preparing this year to survey and set out a trail with the search and rescue agency, the regency disaster agency and local communities.',
+                 'Local people must be involved as guides for everyone who hikes there; no opening date, fee or permit system has been published.'],
+        'visitors': 'Do not enter Wanggameti on your own: the park says no official trail exists and it is issuing no permits. Ask the park office in Waingapu first.',
+        'body': '<p>A group of six people who hiked Gunung Wanggameti in East Sumba on Friday 13 November 2026 did not have a permit, and one of them was a United States citizen, the head of the '
+                'national park authority told reporters on Wednesday 18 November, according to Waingapu.com. The authority, Balai Taman Nasional Manupeu Tanadaru-Laiwanggi Wanggameti (TN Matalawa), '
+                'says there is no official hiking trail yet, so it cannot grant a permit to anyone. Times are WITA (UTC+8).</p><h2>What the park says happened</h2><p>Park head Lugi Hartanto said the '
+                'group asked the office for permission but was refused because no official route exists, and went in anyway. One member of the group, a 33-year-old from East Sumba, did not return to '
+                'the hiking post and was found safe at 07:09 on Saturday 14 November after an overnight search, as we reported in <a '
+                'href="/en/news/hiker-found-alive-wanggameti-national-park-east-sumba-rescue/">our earlier story</a>. Those first reports did not say whether the group had a permit.</p><p>Hartanto '
+                'said the park called in and questioned the whole group and had them sign a statement promising not to repeat it. According to Waingapu.com, he warned that a repeat would mean a '
+                'blacklist, which he described as a heavy penalty for nature lovers because it could stop them hiking elsewhere, and he named Bromo, Rinjani, Kerinci, Leuser, Marapi and Merapi as '
+                'examples. He added that a national park is not open ground to enter at will.</p><h2>What is planned for the trail</h2><p>The park says it is preparing this year to survey and '
+                'arrange a hiking route, together with the national search and rescue agency (Basarnas), the regency disaster agency (BPBD) and local communities. Hartanto said local people must be '
+                'involved as guides for everyone who wants to hike in the area. He acknowledged that Wanggameti attracts hikers, including tourists from abroad, and asked everyone, foreigners '
+                "included, to respect the park's rules until an official trail and safety system are ready.</p><p>Waingapu.com is the only outlet with these statements. It does not name the American "
+                'or the other hikers, and it reports no fine or legal action. No opening date, fee or permit procedure has been announced.</p><h2>What it means for visitors, residents and '
+                'investors</h2><p>Visitors: do not enter Wanggameti on your own. The park says no official trail exists and it is issuing no permits, and its head has warned of blacklisting for '
+                'repeat offenders. Ask the park office in Waingapu before planning anything, and see <a href="/en/places/laiwangi-wanggameti-national-park/">our park guide</a> and <a '
+                'href="/en/things-to-do/hiking-in-sumba/">our hiking guide</a> for what can be done now. Residents: the park says local people will be required as guides once routes are set, but it '
+                'gave no details on training or pay. Investors: a regulated, guided trail could eventually mean demand for guides and homestays near the park, but with no date, fees or operating '
+                'rules published, treat it as an intention, not a market.</p>',
+        'faq': [['Can I hike Gunung Wanggameti in East Sumba?',
+                 'Not officially yet. The Matalawa park head said on 18 November 2026 that there is no official trail, so no permits are issued, and that local guides will be required once routes '
+                 'are set.'],
+                ['What happens to hikers who enter without a permit?',
+                 'The park questioned the group and had them sign a statement not to repeat it, and its head warned that a repeat would mean a blacklist, Waingapu.com reported. No fine or legal '
+                 'action was reported.']]},
+ 'es': {'title': 'Excursión al Wanggameti, con un estadounidense, sin permiso del parque',
+        'dek': 'El director del parque dice que aún no hay ruta oficial, que los reincidentes arriesgan una lista negra y que habrá guías locales obligatorios; sin fecha.',
+        'answer': 'Un grupo de seis personas que subió al Gunung Wanggameti, en Sumba Oriental, el viernes 13 de noviembre de 2026 no tenía permiso, y una era ciudadana de Estados Unidos, dijo el 18 '
+                  'de noviembre el director del parque nacional Matalawa, según Waingapu.com. El parque asegura que todavía no hay ruta oficial y que no concede permisos.',
+        'keys': ['El director del parque, Lugi Hartanto, dijo que el grupo pidió permiso, se lo negaron porque no existe ruta oficial, y entró igualmente.',
+                 'Al grupo se le citó, se le interrogó y firmó una declaración de no repetirlo; él advirtió de que reincidir supondría entrar en una lista negra.',
+                 'El parque prepara este año un estudio y el trazado de una ruta con la agencia de búsqueda y rescate, la agencia de desastres de la regencia y las comunidades locales.',
+                 'La gente local deberá participar como guía de todo el que camine allí; no se ha publicado fecha de apertura, tarifa ni sistema de permisos.'],
+        'visitors': 'No entres por tu cuenta en el Wanggameti: el parque dice que no hay ruta oficial y que no concede permisos. Consulta antes en la oficina del parque en Waingapu.',
+        'body': '<p>Un grupo de seis personas que subió al Gunung Wanggameti, en Sumba Oriental, el viernes 13 de noviembre de 2026 no tenía permiso, y una de ellas era ciudadana de Estados Unidos, '
+                'dijo a los periodistas el miércoles 18 de noviembre el director de la autoridad del parque nacional, según Waingapu.com. La autoridad, Balai Taman Nasional Manupeu '
+                'Tanadaru-Laiwanggi Wanggameti (TN Matalawa), afirma que todavía no existe una ruta de senderismo oficial, así que no puede conceder permiso a nadie. Las horas son WITA '
+                '(UTC+8).</p><h2>Qué dice el parque que ocurrió</h2><p>El director del parque, Lugi Hartanto, explicó que el grupo pidió permiso a la oficina pero se lo denegaron porque no existe '
+                'ruta oficial, y entró de todos modos. Uno de los integrantes, un hombre de 33 años de Sumba Oriental, no volvió al puesto de salida y apareció sano y salvo a las 07:09 del sábado 14 '
+                'de noviembre tras una búsqueda nocturna, como contamos en <a href="/es/news/excursionista-hallado-vivo-parque-nacional-wanggameti-rescate-sumba-oriental/">nuestra noticia '
+                'anterior</a>. Aquellas primeras informaciones no decían si el grupo tenía permiso.</p><p>Hartanto dijo que el parque citó e interrogó a todo el grupo y le hizo firmar una '
+                'declaración de que no lo repetirá. Según Waingapu.com, advirtió de que una reincidencia supondría una lista negra, que describió como una sanción dura para los amantes de la '
+                'naturaleza porque podría impedirles caminar en otros lugares, y citó como ejemplos Bromo, Rinjani, Kerinci, Leuser, Marapi y Merapi.</p><h2>Qué se prevé para la ruta</h2><p>El '
+                'parque dice que este año prepara un estudio y el trazado de una ruta de senderismo junto con la agencia nacional de búsqueda y rescate (Basarnas), la agencia de desastres de la '
+                'regencia (BPBD) y las comunidades locales. Hartanto afirmó que la gente local debe participar como guía de todo el que quiera caminar por la zona. Reconoció que el Wanggameti atrae '
+                'a senderistas, también turistas de otros países, y pidió a todos, extranjeros incluidos, que respeten las normas del parque hasta que haya una ruta oficial y un sistema de seguridad '
+                'listos.</p><p>Waingapu.com es el único medio con estas declaraciones. No nombra a la estadounidense ni a los demás excursionistas, y no informa de multa ni de acciones legales. No '
+                'se ha anunciado fecha de apertura, tarifa ni procedimiento de permisos.</p><h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: no entres por tu cuenta en '
+                'el Wanggameti. El parque dice que no hay ruta oficial y que no concede permisos, y su director ha advertido de una lista negra para los reincidentes. Consulta en la oficina del '
+                'parque en Waingapu antes de planear nada, y mira <a href="/es/places/parque-nacional-laiwangi-wanggameti/">nuestra guía del parque</a> y <a '
+                'href="/es/things-to-do/senderismo-en-sumba/">nuestra guía de senderismo</a> para ver qué se puede hacer ahora. Residentes: el parque dice que la gente local será obligatoria como '
+                'guía cuando se fijen las rutas, pero no da detalles sobre formación ni pago. Inversores: una ruta regulada y con guía podría traer algún día demanda de guías y alojamientos cerca '
+                'del parque, pero sin fecha, tarifas ni normas publicadas conviene verla como una intención, no como un mercado.</p>',
+        'faq': [['¿Se puede subir al Gunung Wanggameti, en Sumba Oriental?',
+                 'Oficialmente todavía no. El director del parque Matalawa dijo el 18 de noviembre de 2026 que no hay ruta oficial, por lo que no se conceden permisos, y que los guías locales serán '
+                 'obligatorios cuando se fijen las rutas.'],
+                ['¿Qué pasa con quien entra sin permiso?',
+                 'El parque interrogó al grupo y le hizo firmar una declaración de que no lo repetirá, y su director advirtió de una lista negra si reincide, según Waingapu.com. No se informó de '
+                 'multa ni de acciones legales.']]},
+ 'id': {'title': 'Pendakian Wanggameti yang libatkan WNA AS tak berizin, tegas TN Matalawa',
+        'dek': 'Kepala balai menyebut belum ada jalur resmi, pelanggar berulang terancam daftar hitam, dan pemandu lokal akan diwajibkan; tanggal belum diumumkan.',
+        'answer': 'Enam orang yang mendaki Gunung Wanggameti di Sumba Timur pada Jumat 13 November 2026 tidak mengantongi izin, dan salah satunya warga negara Amerika Serikat, kata Kepala Balai TN '
+                  'Matalawa kepada wartawan pada 18 November, lapor Waingapu.com. Balai menyatakan belum ada jalur resmi sehingga tidak ada izin yang diberikan.',
+        'keys': ['Kepala Balai Lugi Hartanto mengatakan rombongan sempat mengajukan izin, ditolak karena belum ada rute resmi, tetapi tetap masuk.',
+                 'Rombongan dipanggil, diperiksa, dan membuat surat pernyataan tidak mengulangi; ia memperingatkan pengulangan berarti masuk daftar hitam.',
+                 'Balai tahun ini menyiapkan survei dan penataan jalur bersama Basarnas, BPBD, dan masyarakat setempat.',
+                 'Warga lokal wajib dilibatkan sebagai pemandu bagi setiap pendaki; tanggal pembukaan, tarif, atau sistem izin belum dipublikasikan.'],
+        'visitors': 'Jangan masuk Wanggameti sendiri: balai menyatakan belum ada jalur resmi dan belum memberi izin. Tanyakan dulu ke kantor balai di Waingapu.',
+        'body': '<p>Enam orang yang mendaki Gunung Wanggameti di Sumba Timur pada Jumat 13 November 2026 tidak mengantongi izin, dan salah satunya warga negara Amerika Serikat, kata Kepala Balai '
+                'Taman Nasional kepada wartawan pada Rabu 18 November, menurut Waingapu.com. Balai Taman Nasional Manupeu Tanadaru-Laiwanggi Wanggameti (TN Matalawa) menyatakan belum ada jalur '
+                'pendakian resmi, sehingga belum bisa memberi izin kepada siapa pun. Waktu dalam WITA (UTC+8).</p><h2>Penjelasan balai tentang kejadiannya</h2><p>Kepala Balai Lugi Hartanto '
+                'mengatakan rombongan sempat mengajukan izin ke kantornya, tetapi ditolak karena belum ada rute resmi, dan tetap masuk. Salah satu anggota rombongan, seorang pria 33 tahun asal Sumba '
+                'Timur, tidak kembali ke posko dan ditemukan selamat pukul 07.09 pada Sabtu 14 November setelah pencarian semalam, seperti kami laporkan dalam <a '
+                'href="/id/news/pendaki-ditemukan-selamat-taman-nasional-wanggameti-sumba-timur/">berita kami sebelumnya</a>. Laporan awal itu belum menyebut apakah rombongan berizin.</p><p>Hartanto '
+                'mengatakan balai memanggil dan memeriksa seluruh rombongan serta meminta mereka membuat surat pernyataan tidak mengulangi. Menurut Waingapu.com, ia memperingatkan bahwa pengulangan '
+                'akan berujung daftar hitam, yang ia gambarkan sangat berat bagi pencinta alam karena bisa menghalangi mereka mendaki di tempat lain, dengan contoh Bromo, Rinjani, Kerinci, Leuser, '
+                'Marapi, dan Merapi. Ia menambahkan bahwa taman nasional bukan ruang terbuka yang boleh dimasuki sesuka hati.</p><h2>Rencana penataan jalur</h2><p>Balai menyatakan tahun ini sedang '
+                'menyiapkan survei dan penataan jalur pendakian bersama Basarnas, BPBD, dan masyarakat lokal. Hartanto mengatakan warga setempat wajib dilibatkan sebagai pemandu bagi setiap orang '
+                'yang hendak mendaki di kawasan itu. Ia mengakui Wanggameti menarik minat pendaki, termasuk wisatawan dari luar negeri, dan meminta semua pihak, termasuk warga negara asing, '
+                'menghormati aturan balai sampai jalur resmi dan sistem keselamatannya siap.</p><p>Waingapu.com adalah satu-satunya media dengan pernyataan ini. Medianya tidak menyebut nama warga AS '
+                'maupun pendaki lainnya, dan tidak melaporkan denda atau proses hukum. Tanggal pembukaan, tarif, dan prosedur izin belum diumumkan.</p><h2>Apa artinya bagi pengunjung, penduduk, dan '
+                'investor</h2><p>Pengunjung: jangan masuk Wanggameti sendiri. Balai menyatakan belum ada jalur resmi dan belum memberi izin, dan kepalanya memperingatkan daftar hitam bagi pelanggar '
+                'berulang. Tanyakan dulu ke kantor balai di Waingapu sebelum merencanakan apa pun, dan baca <a href="/id/places/taman-nasional-laiwangi-wanggameti/">panduan taman nasional kami</a> '
+                'serta <a href="/id/things-to-do/hiking-dan-trekking-di-sumba/">panduan hiking kami</a> untuk kegiatan yang bisa dilakukan sekarang. Penduduk: balai menyatakan warga lokal akan '
+                'diwajibkan sebagai pemandu setelah jalur ditetapkan, tetapi belum menjelaskan pelatihan atau upahnya. Investor: jalur resmi dengan pemandu suatu hari bisa memunculkan kebutuhan '
+                'pemandu dan homestay di sekitar taman nasional, tetapi tanpa tanggal, tarif, dan aturan operasional yang dipublikasikan, anggap ini sebagai niat, bukan pasar.</p>',
+        'faq': [['Bolehkah mendaki Gunung Wanggameti di Sumba Timur?',
+                 'Secara resmi belum. Kepala Balai TN Matalawa menyatakan pada 18 November 2026 bahwa belum ada jalur resmi sehingga izin tidak diberikan, dan pemandu lokal akan diwajibkan setelah '
+                 'jalur ditetapkan.'],
+                ['Apa akibatnya bagi pendaki yang masuk tanpa izin?',
+                 'Balai memeriksa rombongan dan meminta surat pernyataan tidak mengulangi, dan kepalanya memperingatkan daftar hitam bila terulang, lapor Waingapu.com. Tidak ada denda atau proses '
+                 'hukum yang dilaporkan.']]},
+ 'sources': [['Waingapu.Com: Terungkap! Pendakian Ilegal Gunung Wanggameti Libatkan WNA Amerika, Balai TN Matalawa Tegaskan Tak Berizin (18 Nov 2026)',
+              'https://www.waingapu.com/terungkap-pendakian-ilegal-gunung-wanggameti-libatkan-wna-amerika-balai-tn-matalawa-tegaskan-tak-berizin/'],
+             ['Waingapu.Com: Tersesat Saat Hiking di Gunung Wanggameti, Yulius Akhirnya Ditemukan Tim SAR setelah 2 Hari Pencarian (14 Nov 2026)',
+              'https://www.waingapu.com/tersesat-saat-hiking-di-gunung-wanggameti-yulius-akhirnya-ditemukan-tim-sar-setelah-2-hari-pencarian/']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': 'Jordan siva',
+           'license': 'CC BY-SA 4.0',
+           'license_url': 'https://creativecommons.org/licenses/by-sa/4.0',
+           'page': 'https://commons.wikimedia.org/wiki/File:Tanggedu_Waterfall_Jordan_siva.jpg',
+           'ai': False,
+           'caption': {'en': 'File photo: the Tanggedu river gorge in East Sumba. It does not show Wanggameti or the hikers in this story.',
+                       'es': 'Foto de archivo: el desfiladero del río de Tanggedu, en Sumba Oriental. No muestra el Wanggameti ni a los excursionistas de esta noticia.',
+                       'id': 'Foto arsip: ngarai sungai Tanggedu di Sumba Timur. Foto ini tidak menunjukkan Wanggameti maupun para pendaki dalam berita ini.'}}},
 {'section': 'business',
  'slug': 'salura-island-jetty-rp50-billion-east-sumba-regent-visit-2026',
  'date': '2026-11-18',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'embarcadero-isla-salura-50000-millones-rupias-regente-sumba-oriental-2026', 'id': 'dermaga-pulau-salura-rp50-miliar-bupati-sumba-timur-2026'},
  'keywords': {'en': ['Salura island', 'Salura jetty', 'East Sumba outer islands', 'Cyclone Seroja Sumba', 'Waingapu KSOP', 'Sumba investment 2026'],
               'es': ['isla de Salura', 'embarcadero de Salura', 'islas exteriores de Sumba Oriental', 'ciclón Seroja Sumba', 'inversión en Sumba 2026'],
