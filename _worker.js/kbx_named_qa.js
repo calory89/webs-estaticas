@@ -184,7 +184,6 @@ export function q(lang, k, v) {
   const s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k];
   return v ? String(s).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s;   // n25t: no "г.." when a date ends the sentence
 }
-export const QA_LANGS = Object.keys(S);
 const len = s => [...String(s)].length;
 
 // Title under 60 characters: the searched word for the language, then the most clicked fact (handover date, "permit published"),

@@ -218,7 +218,6 @@ export function radarSvg(lang, cols) {   // cols: [{ name, st: ['ok'|'part'|'no'
   return '<figure class="n30r"><figcaption><b>' + esc(t30(lang, 'cp_radar')) + '</b></figcaption><div dir="ltr"><svg viewBox="-90 -6 540 352" role="img" aria-label="' + esc(t30(lang, 'cp_radar') + ': ' + cols.map(c => c.name + ' ' + c.st.map((s, i) => L[i] + ' ' + t30(lang, 'st')[s]).join(', ')).join('; ')) + '">' + g + '</svg></div>' + leg + '<p class="k-muted">' + esc(t30(lang, 'cp_radar_n')) + '</p></figure>' +
     '<style>.n30r{margin:18px 0;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);padding:14px}.n30r svg{width:100%;max-width:520px;display:block;margin:0 auto}.n30r .g{fill:none;stroke:var(--line,#d5d3cc);stroke-width:1}.n30r .p{fill-opacity:.12;stroke-width:2.5}.n30r text{font-size:17px;fill:var(--ink,#17212B)}.n30rl{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:8px 0}.n30rl i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}</style>';
 }
-export const stLabel = (lang, s) => t30(lang, 'st')[s] || s;
 
 // ------------------------------------------------------------------------------------------------ item 4: contract reader page
 const CR_KEYS = ['ho', 'pen', 'esc', 'pay', 'law', 'can'];

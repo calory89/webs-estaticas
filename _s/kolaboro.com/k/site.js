@@ -1087,3 +1087,38 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   var lvRun = function () { setTimeout(levels, 400); setTimeout(levels, 3000); };
   if (D.readyState === 'complete') lvRun(); else addEventListener('load', lvRun);
 })();
+
+/* n31t (batch 31, items 287 and 291): "?" opens the keyboard shortcuts page; on English pages, a visitor whose browser asks for one of
+   our other languages is offered this page in that language (only when it exists here: the page's own hreflang link). Nothing is
+   stored except the choice to hide the offer (localStorage, try/catch). */
+(function () {
+  var D = document, H = D.documentElement, LG = (H.lang || 'en').slice(0, 2).toLowerCase(), P = LG === 'en' ? '' : '/' + LG;
+  D.addEventListener('keydown', function (e) {
+    var t = e.target || {};
+    if (e.key !== '?' || e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable) return;
+    if (/\/shortcuts\/?$/.test(location.pathname)) return;
+    e.preventDefault(); location.href = P + '/shortcuts/';
+  });
+  // "/" opens search on every page (pages with their own search box marked data-kbd="/" keep focusing that box, see above)
+  D.addEventListener('keydown', function (e) {
+    var t = e.target || {};
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || D.querySelector('[data-kbd="/"]') || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable) return;
+    if (window.kbOpenSearch) { e.preventDefault(); window.kbOpenSearch(); }
+  });
+  if (LG !== 'en' || /^\/(admin|portal|login|embed|agents)\b/.test(location.pathname)) return;
+  var W = { es: ['Esta página también está en español.', 'Ver en español', 'Cerrar'], de: ['Diese Seite gibt es auch auf Deutsch.', 'Auf Deutsch ansehen', 'Schließen'], fr: ['Cette page existe aussi en français.', 'Voir en français', 'Fermer'], nl: ['Deze pagina is er ook in het Nederlands.', 'Bekijk in het Nederlands', 'Sluiten'], ru: ['Эта страница есть и на русском.', 'Открыть на русском', 'Закрыть'], zh: ['本页也有中文版本。', '查看中文版', '关闭'], ar: ['هذه الصفحة متوفرة بالعربية أيضًا.', 'عرضها بالعربية', 'إغلاق'] };
+  var want = null; try { (navigator.languages || [navigator.language || '']).some(function (x) { x = String(x || '').slice(0, 2).toLowerCase(); if (x === 'en') return true; if (W[x]) { want = x; return true; } return false; }); } catch (e) {}
+  if (!want) return;
+  try { if (localStorage.getItem('kb-lang-offer') === 'no') return; } catch (e) {}
+  var alt = D.querySelector('link[rel="alternate"][hreflang="' + want + '"]'); if (!alt) return;
+  var href = alt.getAttribute('href') || ''; try { var u = new URL(href, location.href); if (u.host !== location.host || u.pathname === location.pathname) return; href = u.pathname + u.search + u.hash; } catch (e) { return; }
+  var show = function () {
+    var w = W[want], b = D.createElement('div'); b.className = 'k31-lo'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', w[1]); b.lang = want; if (want === 'ar') b.dir = 'rtl';
+    var s = D.createElement('style'); s.textContent = '.k31-lo{position:fixed;z-index:70;inset-inline-start:16px;bottom:16px;max-width:min(420px,calc(100vw - 32px));display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border-radius:14px;background:var(--ink,#17212B);color:#fff;font:500 15px/1.4 Archivo,system-ui,sans-serif;box-shadow:0 10px 28px rgba(23,33,43,.28)}.k31-lo a{color:#fff;font-weight:700;text-decoration:underline;min-height:44px;display:inline-flex;align-items:center}.k31-lo button{margin-inline-start:auto;min-width:44px;min-height:44px;border:0;border-radius:10px;background:rgba(255,255,255,.12);color:#fff;font:inherit;cursor:pointer}@media(max-width:640px){.k31-lo{bottom:84px}}@media print{.k31-lo{display:none}}';
+    var p = D.createElement('span'); p.textContent = w[0]; var a = D.createElement('a'); a.href = href; a.hreflang = want; a.textContent = w[1];
+    var x = D.createElement('button'); x.type = 'button'; x.textContent = '×'; x.setAttribute('aria-label', w[2]);
+    x.addEventListener('click', function () { b.remove(); try { localStorage.setItem('kb-lang-offer', 'no'); } catch (e) {} });
+    b.appendChild(p); b.appendChild(a); b.appendChild(x); D.head.appendChild(s); D.body.appendChild(b);
+  };
+  if (D.readyState === 'complete') setTimeout(show, 1200); else addEventListener('load', function () { setTimeout(show, 1200); });
+})();

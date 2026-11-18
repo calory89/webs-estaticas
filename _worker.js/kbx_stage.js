@@ -13,7 +13,6 @@ const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOCALE = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 export const VERSION = 'stage-rules-1';
 export const PATHS = /^\/api\/x\/stage(?:\/|$)/;
-export const MPATH = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;
 export const RULES = { optical_band_pts: 15, optical_window: 3, earthworks_after_clear_months: 3, radar_window: 3, footprint_cover_pct: 10, footprint_near_m: 75, already_built_pct: 50, min_clear_months: 6, start_grace_months: 6 };
 const ORDER = ['none', 'cleared', 'earthworks', 'structure', 'roofed'];
 

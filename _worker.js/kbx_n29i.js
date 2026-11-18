@@ -324,7 +324,6 @@ export async function mAlternates(env, key) {
   const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '">';
 }
 // is there a translated market file? (for links from other pages)
-export function mHas(mk) { return !!(MD && MD.M.has(slugM(mk))); }
 function mSitemap(D) {
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const urls = [...D.M.values()].flatMap(m => { const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<url><loc>' + xe(ORIGIN + pre(l) + p) + '</loc><lastmod>' + m.st.lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(ORIGIN + pre(a) + p) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'); });
@@ -335,7 +334,6 @@ function mSitemap(D) {
 
 // ------------------------------------------------------------------------------------------------ items 93 and 95: hub figures and Q&A
 const HUB_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(projects|rankings\/transparency|handover|handover\/overdue)\/$/;   // /countries/ and /developers/ count all tracked cases (incl. anonymous ones): left out so the figures never disagree
-export const hubMatch = p => HUB_RX.test(p);
 function hubParts(D, kind, lang) {
   const A = D.all, ix = D.ix, d = fd(D.d, lang), N = n => nf(lang, n);
   if (kind === 'projects') {
