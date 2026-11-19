@@ -1,8 +1,17 @@
 {
- "v": "1s82kkk-ot3g",
+ "v": "89dcr-0o0d",
  "built": "2026-11-19",
  "pages": {
   "tools/contract-scan": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/delay-compensation": [
    "es",
    "de",
    "fr",
@@ -39,6 +48,24 @@
    "ar"
   ],
   "tools/payment-risk": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/refund-tracker": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/resale-exit": [
    "es",
    "de",
    "fr",
