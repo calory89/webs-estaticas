@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T13:16:31.134Z",
+ "updated": "2026-11-19T13:56:58.749Z",
  "base": "https://kolaboro.com",
  "journey": [
   "Home page",
@@ -8,7 +8,7 @@
   "Verify its signed data on /verify",
   "Status page"
  ],
- "runs_kept": 12,
+ "runs_kept": 13,
  "runs_passed": 11,
  "median_ms_by_step": {
   "1": 1941,
@@ -22,6 +22,70 @@
   "/data/journeys/2.webp"
  ],
  "runs": [
+  {
+   "at": "2026-11-19T13:56:58.749Z",
+   "ok": false,
+   "total_ms": 26784,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 5492,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": false,
+     "ms": 21292,
+     "url": "/cases/?q=Bali",
+     "detail": "page.waitForSelector: Timeout 20000ms exceeded.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    }
+   ]
+  },
   {
    "at": "2026-11-12T13:16:31.134Z",
    "ok": false,
