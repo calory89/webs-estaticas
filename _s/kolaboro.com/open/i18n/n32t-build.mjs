@@ -35,6 +35,7 @@ const manifest = { v: 0, built: new Date().toISOString().slice(0, 10), pages: {}
 const live = process.argv.includes('--live');
 let names = new Set();
 try { const nj = JSON.parse(fs.readFileSync(path.join(ROOT, '_s/kolaboro.com/data/named.json'), 'utf8')); for (const x of (nj.projects || nj.P || nj)) { if (x && (x.n || x.name)) names.add(String(x.n || x.name).replace(/\s+/g, ' ').trim()); if (x && (x.dv || x.developer)) names.add(String(x.dv || x.developer).replace(/\s+/g, ' ').trim()); for (const k of ['mk', 'ar', 'co']) if (x && x[k]) { names.add(String(x[k])); for (const q of String(x[k]).split(', ')) names.add(q); } } } catch (e) {}
+try { const bc = JSON.parse(fs.readFileSync(path.join(ROOT, '_s/kolaboro.com/data/bali-cases.json'), 'utf8')); for (const c of bc.cases || []) for (const k of ['market', 'country', 'region']) if (c[k]) names.add(String(c[k])); } catch (e) {}   // regions and markets of every tracked case (/new/ lists them)
 const report = [];
 for (const l of LANGS) fs.mkdirSync(path.join(OUT, l), { recursive: true });
 for (const l of LANGS) {
@@ -56,7 +57,7 @@ for (const f of files.filter(f => f !== '_common.tsv')) {
     fs.writeFileSync(path.join(OUT, l, key + '.json'), JSON.stringify(j));
     const D = M.mkDict(l, { s: Object.assign({}, keep, common.s[l] || {}, j.s), p: (common.p[l] || []).concat(j.p) });
     let miss = route === 'm' ? [] : (main ? M.missing(main, D) : null);
-    if (miss) miss = miss.filter(s => !names.has(s) && !/^.+ vs .+$/.test(s));
+    if (miss) miss = miss.filter(s => !names.has(s) && !s.split(', ').every(q => names.has(q)) && !/^.+ vs .+$/.test(s));   // project, developer and place names are data
     if (miss === null) { report.push(key + ' ' + l + ': English page not read (run with --live), kept as before'); try { const old = JSON.parse(fs.readFileSync(path.join(OUT, 'manifest.json'), 'utf8')); if ((old.pages[route] || []).includes(l)) ok.push(l); } catch (e) {} continue; }
     if (miss.length) report.push(key + ' ' + l + ': ' + miss.length + ' fragments missing: ' + miss.slice(0, 6).map(s => JSON.stringify(s.slice(0, 60))).join(', '));
     else ok.push(l);

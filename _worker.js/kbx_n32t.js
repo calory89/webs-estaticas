@@ -15,7 +15,7 @@ import { mkName, coName } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
-const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
+const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t1';
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
@@ -60,9 +60,9 @@ async function dict(env, lang, key) {
   const [a, b] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true)]);
   let v = null;
   if (b && b.s) {
-    const s = Object.assign({}, (a && a.s) || {}, b.s), P = [];
-    for (const [src, out] of ((a && a.p) || []).concat(b.p || [])) { const names = []; const rx = new RegExp('^' + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return '(.+?)'; }) + '$'); P.push([rx, out, names]); }
-    v = { s, P, t: b.t, d: b.d, h: b.h || null, lang };
+    const s = Object.assign({}, (a && a.s) || {}, b.s), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
+    for (const [src, out] of ((a && a.p) || []).concat(b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
+    v = { s, P, H, t: b.t, d: b.d, h: b.h || null, lang };
   }
   DCACHE.set(k, { t: Date.now(), v }); return v;
 }
@@ -73,7 +73,7 @@ function auto(s, lang) {
   let m = DRX.exec(s);
   if (m) { const d = new Date(Date.UTC(+m[3], MON.findIndex(x => x.startsWith(m[2])), +m[1], 12)); try { return new Intl.DateTimeFormat(LOC[lang], { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d); } catch (e) { return null; } }
   if ((m = YRX.exec(s))) { const d = new Date(Date.UTC(+m[2], MON.findIndex(x => x.startsWith(m[1])), 15, 12)); try { return new Intl.DateTimeFormat(LOC[lang], { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d); } catch (e) { return null; } }
-  if ((m = /^(.+) \((\d[\d,]*)\)$/.exec(s))) { const n = place(m[1], lang); if (n) return n + ' (' + m[2] + ')'; }
+  if ((m = /^(.+) \((\d[\d,]*)\)$/.exec(s)) && /^[A-Z]/.test(m[1]) && m[1].length <= 40) return (place(m[1], lang) || m[1]) + ' (' + m[2] + ')';   // "Spain (80)": a place and its count
   return place(s, lang);
 }
 function place(s, lang) {
@@ -93,9 +93,10 @@ function trText(D, raw) {
   const sp = (SEP.exec(core) || [''])[0]; core = core.slice(sp.length).trim(); if (!core) return raw;
   const t = T(D, core); return t == null ? raw : lead + enc(sp) + enc(t) + trail;
 }
-const ATTR = /(\s(?:placeholder|aria-label|title|alt|data-n32)=")([^"]*)(")/g;
+const ATTR = /(\s(?:placeholder|aria-label|title|alt|data-l|data-label|data-n32)=")([^"]*)(")/g;
 export function trHtml(html, D, LS) {
   const out = [];
+  for (const [rx, o, names] of D.H || []) html = html.replace(rx, (...m) => o.replace(/\{(\w+)\}/g, (z, k) => { const i = names.indexOf(k); if (i < 0) return z; const v = dec(m[i + 1]).trim(); return enc(D.s[v] != null ? D.s[v] : (auto(v, D.lang) || v)); }));
   for (const tok of html.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/)) {
     if (!tok) continue;
     if (tok[0] !== '<' || tok === '<') { out.push(trText(D, tok)); continue; }
@@ -184,6 +185,7 @@ export async function enAlt(u, r, env) {
 // build and test helper (tools/kolaboro-i18n/n32t-build.mjs): the fragments of an English <main> that the dictionary leaves untranslated
 export function missing(html, D) {
   const out = new Set();
+  for (const [rx, o] of D.H || []) html = String(html).replace(rx, () => o.replace(/[A-Za-z]/g, ''));   // what a markup pattern covers counts as translated
   const chk = c => { c = dec(c).replace(/\s+/g, ' ').trim(); c = c.slice(((SEP.exec(c) || [''])[0]).length).trim(); if (c && /[A-Za-z]{2}/.test(c) && T(D, c) == null) out.add(c); };
   for (const tok of String(html).split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/)) {
     if (!tok || /^<(?:script|style|!--)/.test(tok)) continue;
@@ -191,5 +193,5 @@ export function missing(html, D) {
   }
   return [...out];
 }
-export function mkDict(lang, j) { const P = []; for (const [src, out] of j.p || []) { const names = []; const rx = new RegExp('^' + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return '(.+?)'; }) + '$'); P.push([rx, out, names]); } return { s: j.s || {}, P, t: j.t, d: j.d, h: j.h || null, lang }; }
+export function mkDict(lang, j) { const P = [], H = []; for (const [src, out] of j.p || []) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); } return { s: j.s || {}, P, H, t: j.t, d: j.d, h: j.h || null, lang }; }
 export { T as n32tT };

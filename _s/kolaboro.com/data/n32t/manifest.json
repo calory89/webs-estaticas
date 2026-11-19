@@ -1,7 +1,25 @@
 {
- "v": "cfamhf-bkly",
+ "v": "odaq3w-hq0l",
  "built": "2026-11-19",
  "pages": {
+  "m": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "new": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
   "tools/build-cost": [
    "es",
    "de",
@@ -120,6 +138,15 @@
    "ar"
   ],
   "tools/yield-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "vs": [
    "es",
    "de",
    "fr",

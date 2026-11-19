@@ -5,7 +5,7 @@
   'use strict';
   var me = document.currentScript, L = document.documentElement.lang, K = me && me.getAttribute('data-k');
   if (!K || !/^(es|de|fr|nl|ru|zh|ar)$/.test(L)) return;
-  var LOC = { es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[L];
+  var LOC = { es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' }[L];
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var DRX = /^(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? (\d{4})$/, YRX = /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{4})$/;
   var SEP = /^[\s\/·|›>]+/, S = {}, P = [], CC = {}, DN = null, CU = {}, DC = null, done = typeof WeakMap === 'function' ? new WeakMap() : null;
