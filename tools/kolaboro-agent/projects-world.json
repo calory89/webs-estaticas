@@ -11046,6 +11046,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://vibekaron.com/"
+    },
+    {
+     "claim": "Sales launch: Sales launch Q4 2026, completion Q4 2029, as printed on the developer page (source read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://vibekaron.com/"
     }
    ],
    "facts": {
@@ -11084,7 +11090,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "ONEP (EIA approval); Karon municipality (building permit)",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "Q4 2026"
    },
    "positives": [
     "Price per m2 and stage payments published",
@@ -21533,6 +21540,24 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.bradenton.com/news/article317463519.html"
+    },
+    {
+     "claim": "Court record: Palm Beach County Circuit Court case 50-2025-CA-012762-XXXX-MB, complaint filed 9 Dec 2025: a buyer of a unit at Tower 105 Residences seeks return of USD 529,448 in deposits, alleging the unit was not completed by 30 Sep 2025. Allegations, not findings (Boca Post, read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocapost.com/boca-raton-news/buyer-sues-via-mizner-first-american-over-529k-deposit-for-boca-condo-at-mandarin-oriental-project/"
+    },
+    {
+     "claim": "Court record: Palm Beach County Circuit Court case 502026CA003063XXXAMB, complaint filed 17 Mar 2026: a buyer of a unit at Tower 105 Residences seeks USD 1,168,744 in deposits, alleging the unit was not delivered by 30 Sep 2025. Allegations, not findings (Boca Post, read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bocapost.com/boca-raton-news/boca-buyer-sues-via-mizner-developer-over-1-16-million-deposit-at-tower-105-residences"
+    },
+    {
+     "claim": "Court record: US Bankruptcy Court, Southern District of Florida, case 9:25-bk-25197 (Chapter 11, filed 23 Dec 2025) for the company holding the hotel part of the project (docket index, read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inforuptcy.com/browse-filings/florida-southern-bankruptcy-court/9:25-bk-25197/bankruptcy-case-via-mizner-owner-ii-llc"
     }
    ],
    "facts": {
@@ -21605,7 +21630,10 @@
     "https://www.bradenton.com/news/article317463519.html",
     "https://www.nytimes.com/2026/10/21/realestate/they-promised-luxury-condos-1-billion-later-buyers-are-still-waiting.html",
     "https://www.palmbeachpost.com/story/business/real-estate/2026/08/21/bocas-mandarin-oriental-builder-claims-lender-mismanaged-tower/91066537007/",
-    "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide"
+    "https://www.rehubmiami.com/blog/mandarin-oriental-residences-boca-raton-guide",
+    "https://bocapost.com/boca-raton-news/buyer-sues-via-mizner-first-american-over-529k-deposit-for-boca-condo-at-mandarin-oriental-project/",
+    "https://bocapost.com/boca-raton-news/boca-buyer-sues-via-mizner-developer-over-1-16-million-deposit-at-tower-105-residences",
+    "https://www.inforuptcy.com/browse-filings/florida-southern-bankruptcy-court/9:25-bk-25197/bankruptcy-case-via-mizner-owner-ii-llc"
    ]
   },
   {
@@ -31915,6 +31943,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.rangedevelopmentsgroup.com/the-island-heights"
+    },
+    {
+     "claim": "Pin: 25.689188, 55.734312 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.rangedevelopmentsgroup.com/the-island-heights"
     }
    ],
    "facts": {
@@ -31951,8 +31985,8 @@
      "yoga area",
      "beach 90 m"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 25.689188,
+    "lng": 55.734312,
     "permit_authority": "RAK Municipality (building permit) and RERA Ras Al Khaimah (project registration, escrow)",
     "brochure_url": null
    },
@@ -35275,6 +35309,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://cegegypt.com/katameya-coast-north-coast/"
+    },
+    {
+     "claim": "Pin: 31.078675, 28.187864 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.starlightdevelopments.com/developments/katameya-coast/"
     }
    ],
    "facts": {
@@ -35314,8 +35354,8 @@
      "retail district (Coastal Village)",
      "clubhouse"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 31.078675,
+    "lng": 28.187864,
     "permit_authority": "New Urban Communities Authority (NUCA), Ministry of Housing",
     "brochure_url": null
    },
@@ -36218,6 +36258,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://partners.nuanu.realestate/the-residence-en"
+    },
+    {
+     "claim": "Sales launch: Grand launch on 8 June 2024; the developer says all 40 units sold within one day (source read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://oxoliving.com/leading-the-way-in-sustainable-living-oxo-the-residences-sold-out-in-1-day/"
     }
    ],
    "facts": {
@@ -36260,7 +36306,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Tabanan Regency government (PBG via SIMBG)",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "8 Jun 2024"
    },
    "positives": [
     "Sell-out, prices and groundbreaking confirmed by national news agency ANTARA and Kompas",
@@ -49054,6 +49101,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.palmera.realestate/saudi-arabia/property/trump-plaza-jeddah/"
+    },
+    {
+     "claim": "Sales launch: Dar Global half-year 2026 results: Trump Plaza Jeddah launched in January 2026, gross development value USD 383.6 million (source read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.investegate.co.uk/announcement/rns/dar-global--dar/dar-global-half-year-2026-results/9787936"
     }
    ],
    "facts": {
@@ -49091,7 +49144,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Saudi Real Estate General Authority (REGA), Wafi off-plan sales programme",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "Jan 2026"
    },
    "positives": [
     "Developer is LSE listed and reports the project in audited filings",
@@ -57858,6 +57912,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.dotproperty.com.ph/ads/1-bedroom-condo-for-sale-in-el-sol-punta-enga%C3%B1o-cebu_bd669cecf5ff-d771-5a02-7277-d715d089"
+    },
+    {
+     "claim": "Sales launch: Grand launch on 11 December 2021 in Cebu, as reported by SunStar (source read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://weekend.sunstar.com.ph/blog/2021/12/26/el-sol-a-residential-paradise-in-lapu-lapu/"
     }
    ],
    "facts": {
@@ -57900,7 +57960,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "DHSUD (License to Sell); Lapu-Lapu City building official",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "11 Dec 2021"
    },
    "positives": [
     "Licences to sell shown from DHSUD public records",
@@ -77691,6 +77752,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.prachachat.net/real-estate/news-2083002"
+    },
+    {
+     "claim": "Developer progress page: 100% complete, completion date September 2026; construction permit issued and EIA approved (page read 18 Nov 2026, photos dated November 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.sansiri.com/projectprogress/en/589"
     }
    ],
    "facts": {
@@ -77734,7 +77801,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "ONEP (EIA); Nong Kae / Hua Hin municipality (building permit)",
-    "brochure_url": null
+    "brochure_url": null,
+    "completion_actual": "September 2026"
    },
    "sources": [
     "https://brandinside.asia/sansiri-the-standard-residences-hua-hin/",
@@ -79243,6 +79311,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://richmind.com/oystra-al-marjan-island-groundbreaking/"
+    },
+    {
+     "claim": "Sales launch: Developer: Oystra unveiled at a launch event in April 2025; Phase 2 launched on 27 January 2026 after Phase 1 sold out (source read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://richmind.com/oystra-al-marjan-island-groundbreaking/"
     }
    ],
    "facts": {
@@ -79288,7 +79362,8 @@
     "lat": 25.68,
     "lng": 55.74,
     "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA-RAK)",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "Apr 2025"
    },
    "verified_score": 2,
    "positives": [
@@ -102326,6 +102401,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://udcqatar.com/Media-Room/Press-Releases/EGM"
+    },
+    {
+     "claim": "Sales launch: Masterplan unveiled and registration of interest opened at Cityscape Qatar 2026 (The Peninsula, 28 Oct 2026) (source read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thepeninsulaqatar.com/article/28/10/2026/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatars-opening-day"
     }
    ],
    "facts": {
@@ -102364,7 +102445,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Ministry of Municipality; Real Estate Regulatory Authority (Aqarat) for off-plan sales",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "Oct 2026"
    },
    "verified_score": 2,
    "positives": [
@@ -114533,6 +114615,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
+    },
+    {
+     "claim": "Sales launch: Fiji Sun: the Koro Fiji and Tabua Tower projects were launched on 9 October 2025 in Suva (source read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://fijisun.com.fj/null/null/270m-twin-developments-launched-to-transform-nadi-and-suva-skylines"
     }
    ],
    "facts": {
@@ -114565,7 +114653,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Nadi Town Council / Director of Town and Country Planning",
-    "brochure_url": null
+    "brochure_url": null,
+    "sales_launch": "9 Oct 2025"
    },
    "verified_score": 0,
    "sources": [
@@ -120989,7 +121078,7 @@
     "yield_pct": null,
     "completion": "2030",
     "permit_claim": true,
-    "permit_number": null,
+    "permit_number": "Developer licence Class I, Licence No. 322704",
     "plans_published": true,
     "escrow": null,
     "progress_pct": null,
@@ -121087,6 +121176,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://empathia-seychelles.com/"
+    },
+    {
+     "claim": "Developer page prints: Developer licence Class I, Licence No. 322704 (page read 18 Nov 2026); not checked on a register",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://empathia-seychelles.com/"
     }
    ],
    "facts": {
@@ -121150,7 +121245,7 @@
     "score": 3,
     "all_six": false
    },
-   "permit_number": null,
+   "permit_number": "Developer licence Class I, Licence No. 322704",
    "verified_score": 0
   },
   {
@@ -124364,6 +124459,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://vistara.visualweb.app/"
+    },
+    {
+     "claim": "Sales launch: Off-plan sales launched in December 2025, villas from USD 2,120,000 for 4 bedrooms (Terra Red article) (source read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://terrared.com/designing-for-the-caribbean-inside-the-architecture-of-vistara-residences/"
     }
    ],
    "facts": {
@@ -124401,7 +124502,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Planning and Development Department (Chief Town Planner), Barbados",
-    "brochure_url": "https://issuu.com/imaginedevelopments/docs/vistara"
+    "brochure_url": "https://issuu.com/imaginedevelopments/docs/vistara",
+    "sales_launch": "Dec 2025"
    },
    "verified_score": 0,
    "sources": [
@@ -129612,6 +129714,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.worldconstructionnetwork.com/data-insights/construction-twosenopati-residential-complex/"
+    },
+    {
+     "claim": "Court record: Central Jakarta Commercial Court case 237/Pdt.Sus-PKPU/PN.Niaga.Jkt.Pst, decided 15 Sep 2025: a creditor application for suspension of debt payments (PKPU) against PT Asiana Senopati over unpaid land settlement money for a Senopati apartment site was rejected; the ruling as reported does not name the project (Dandapala, read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dandapala.com/article/detail/pn-jakarta-pusat-tolak-pkpu-asiana-senopati-ingatkan-patuhi-putusan-perdamaian"
     }
    ],
    "facts": {
@@ -129654,7 +129762,8 @@
     "https://kfmap.asia/apartment/two-senopati-tower-1-19132",
     "https://marcom.colliers365.com/download/files/Q1-2026-ColliersQuarterly-Jakarta-Apartment.pdf",
     "https://twosenopati.co.id/",
-    "https://www.worldconstructionnetwork.com/data-insights/construction-twosenopati-residential-complex/"
+    "https://www.worldconstructionnetwork.com/data-insights/construction-twosenopati-residential-complex/",
+    "https://dandapala.com/article/detail/pn-jakarta-pusat-tolak-pkpu-asiana-senopati-ingatkan-patuhi-putusan-perdamaian"
    ],
    "added": "2026-10-31",
    "disclosure": {
@@ -136011,6 +136120,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.rera.gov.bh/"
+    },
+    {
+     "claim": "Sales launch: Palace Residences Marassi Al Bahrain launched in August 2024 (172 serviced apartments, 10 storeys) (source read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://binaaeaglehills.com/eagle-hills-diyar-appoints-kooheji-contractors-for-palace-residences-marassi-al-bahrain-and-marassi-views-with-a-total-project-cost-of-147-million-dollars/"
     }
    ],
    "facts": {
@@ -136055,7 +136170,8 @@
     "lat": null,
     "lng": null,
     "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
-    "brochure_url": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf"
+    "brochure_url": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf",
+    "sales_launch": "Aug 2024"
    },
    "positives": [
     "Escrow account and bank named in developer documents",
@@ -137875,6 +137991,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/"
+    },
+    {
+     "claim": "Pin: 37.058000, -8.058000 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.valedolobo.com/en/the-residences-vale-do-lobo/"
     }
    ],
    "facts": {
@@ -137913,8 +138035,8 @@
      "24-hour security",
      "two parking spaces per unit"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 37.058,
+    "lng": -8.058,
     "permit_authority": "Câmara Municipal de Loulé",
     "brochure_url": null
    },
@@ -144402,6 +144524,12 @@
      "status": "contradicted",
      "by": "none",
      "source": "https://trawaya.com/"
+    },
+    {
+     "claim": "Pin: -8.349900, 116.039900 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://trawaya.com/"
     }
    ],
    "facts": {
@@ -144437,8 +144565,8 @@
      "Starlink Wi-Fi",
      "walled villas with private entrance"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.3499,
+    "lng": 116.0399,
     "permit_authority": "North Lombok Regency (PBG and SLF via SIMBG/OSS)",
     "brochure_url": null
    },
@@ -167930,6 +168058,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://en.igihe.com/business-62/article/fortis-green-bets-long-term-as-masaka-views-eco-estate-breaks-ground-in-kigali"
+    },
+    {
+     "claim": "Pin: -1.948665, 30.091517 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fortisgreenhousing.com/masaka-views"
     }
    ],
    "facts": {
@@ -167951,8 +168085,8 @@
     "deposit_pct": null,
     "foreign_ownership": null,
     "rental_programme": "Build-to-rent: developer says it will own and manage the 302 apartments; no rental programme for buyers seen",
-    "lat": null,
-    "lng": null,
+    "lat": -1.948665,
+    "lng": 30.091517,
     "permit_authority": null
    },
    "note": "USD 25 million eco-estate on 7 hectares. Construction began on 24 October 2025, so it is about a year in and only just inside the off-plan window. Only about 84 houses and townhouses are for sale. The BPR mortgage MoU (August 2026) explicitly targets diaspora and foreign-based buyers. I opened only the developer's About page; the project page and downloads were linked but not opened. This is the developer's first housing project.",
@@ -167970,7 +168104,8 @@
     "https://mobile.igihe.com/imyubakire/article/fortis-green-housing-yatangiye-kubaka-umudugudu-w-icyitegererezo-i-masaka-w",
     "https://www.fortisgreenhousing.com/about",
     "https://www.fortisgreenhousing.com/post/fortis-green-marks-a-milestone-with-masaka-views-groundbreaking",
-    "https://www.newtimes.co.rw/article/38256/news/rwanda/bpr-bank-fortis-green-housing-deal-opens-new-path-to-homeownership/amp"
+    "https://www.newtimes.co.rw/article/38256/news/rwanda/bpr-bank-fortis-green-housing-deal-opens-new-path-to-homeownership/amp",
+    "https://www.fortisgreenhousing.com/masaka-views"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -171782,7 +171917,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": 287,
-    "payment_plan": null
+    "payment_plan": "Instalments for up to 42 months depending on the building, 10% down payment; phased plan 10%, 60%, 30%"
    },
    "verification": {
     "permit": "none",
@@ -171816,6 +171951,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://bars.avrohost.com/en/properties/exclusive/apartment/53766"
+    },
+    {
+     "claim": "Payment plan published by the developer: Instalments for up to 42 months depending on the building, 10% down payment; phased plan 10%, 60%, 30% (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://ar-go.am/en/project/firdus-prime-residence-1"
     }
    ],
    "facts": {
@@ -171834,12 +171975,13 @@
     "size_max_m2": 322,
     "price_min": 82323000,
     "price_max": 611164100,
-    "deposit_pct": null,
+    "deposit_pct": 10,
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
     "lng": null,
-    "permit_authority": null
+    "permit_authority": null,
+    "payment_plan": "Instalments for up to 42 months depending on the building, 10% down payment; phased plan 10%, 60%, 30%"
    },
    "note": "Premium three-building complex in central Yerevan, marked under construction by ARGO and by the 2GIS map listing. The page I opened is the sales agent's, not a dedicated developer site (firdusresidence.am is referenced but I did not open it). The price, developer and handover date differ between sources. The price_min and price_max figures are in AMD, from the rezident.am portal.",
    "positives": [
@@ -181569,7 +181711,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "With post-dated cheques: 10% down payment, 5% after 1 month, 1% a month for 75 months, 10% in month 12. Without: 10% down payment, 10% after 1 month, 1% a month for 70 months, 10% in month 12"
    },
    "verification": {
     "permit": "registry",
@@ -181639,6 +181781,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-boulevard-heights"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 10% down payment, 5% after 1 month, 1% a month for 75 months, 10% in month 12. Without: 10% down payment, 10% after 1 month, 1% a month for 70 months, 10% in month 12 (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-boulevard-heights"
     }
    ],
    "facts": {
@@ -181648,7 +181796,7 @@
     "size_max_m2": 97,
     "price_min": 784000,
     "price_max": 1400000,
-    "deposit_pct": null,
+    "deposit_pct": 10,
     "delay_months": null,
     "developer_founded": null,
     "handover_promised": "2028-Q4",
@@ -181659,7 +181807,8 @@
     "unit_types": [
      "studio",
      "1-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "With post-dated cheques: 10% down payment, 5% after 1 month, 1% a month for 75 months, 10% in month 12. Without: 10% down payment, 10% after 1 month, 1% a month for 70 months, 10% in month 12"
    },
    "note": "Samana pool apartments in DLRC from AED 770,000; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
    "positives": [],
@@ -183398,7 +183547,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "Construction-linked: 15% down payment, 10% at 35% built, 10% at 45% built, 5% at 50% built, 60% on handover"
    },
    "verification": {
     "permit": "registry",
@@ -183462,6 +183611,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/six-senses-residences-dubai-marina"
+    },
+    {
+     "claim": "Payment plan published by the developer: Construction-linked: 15% down payment, 10% at 35% built, 10% at 45% built, 5% at 50% built, 60% on handover (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.select-group.ae/developments/six-senses-residences-dubai-marina"
     }
    ],
    "facts": {
@@ -183471,7 +183626,7 @@
     "size_max_m2": 531,
     "price_min": 6100000,
     "price_max": 29400000,
-    "deposit_pct": null,
+    "deposit_pct": 15,
     "delay_months": null,
     "developer_founded": null,
     "developer_company": "Select Global Development L.L.C (DLD developer 972)",
@@ -183481,7 +183636,8 @@
     "unit_types": [
      "2-bedroom apartment",
      "4-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "Construction-linked: 15% down payment, 10% at 35% built, 10% at 45% built, 5% at 50% built, 60% on handover"
    },
    "note": "Six Senses branded tower in Dubai Marina; portal lists delivery Q3 2028. (checked 5 Nov 2026)",
    "positives": [],
@@ -183836,7 +183992,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 9, 10% in month 15, 5% in month 21, then 1% a month for 24 months. Without: 20% on booking, same steps, 19 final months. A 50/50 plan is also offered"
    },
    "verification": {
     "permit": "registry",
@@ -183900,6 +184056,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/rome-by-sd"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 9, 10% in month 15, 5% in month 21, then 1% a month for 24 months. Without: 20% on booking, same steps, 19 final months. A 50/50 plan is also offered (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-rome"
     }
    ],
    "facts": {
@@ -183909,7 +184071,7 @@
     "size_max_m2": 125,
     "price_min": 932000,
     "price_max": 2300000,
-    "deposit_pct": null,
+    "deposit_pct": 15,
     "delay_months": null,
     "developer_founded": null,
     "handover_promised": "2027-Q4",
@@ -183920,7 +184082,8 @@
     "unit_types": [
      "1-bedroom apartment",
      "2-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 9, 10% in month 15, 5% in month 21, then 1% a month for 24 months. Without: 20% on booking, same steps, 19 final months. A 50/50 plan is also offered"
    },
    "note": "Samana apartments in Meydan from AED 2.03m; portal lists phase 2 delivery Q2 2027. (checked 5 Nov 2026)",
    "positives": [],
@@ -184007,7 +184170,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "With post-dated cheques: 15% on booking, 10% in month 12, 1% a month for 75 months. Without: 20% on booking, 10% in month 12, 1% a month for 70 months"
    },
    "verification": {
     "permit": "registry",
@@ -184071,6 +184234,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-hills-south"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% on booking, 10% in month 12, 1% a month for 75 months. Without: 20% on booking, 10% in month 12, 1% a month for 70 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-hills-south"
     }
    ],
    "facts": {
@@ -184080,7 +184249,7 @@
     "size_max_m2": 63,
     "price_min": 539000,
     "price_max": 1000000,
-    "deposit_pct": null,
+    "deposit_pct": 15,
     "delay_months": null,
     "developer_founded": null,
     "handover_promised": "2028-Q2",
@@ -184091,7 +184260,8 @@
     "unit_types": [
      "studio",
      "1-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "With post-dated cheques: 15% on booking, 10% in month 12, 1% a month for 75 months. Without: 20% on booking, 10% in month 12, 1% a month for 70 months"
    },
    "note": "Samana apartments in Dubai South; portal lists phases 4 and 5 for delivery Q4 2028. (checked 5 Nov 2026)",
    "positives": [],
@@ -185044,7 +185214,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "20% deposit, 50% during construction, 30% on completion"
    },
    "verification": {
     "permit": "registry",
@@ -185114,6 +185284,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/binghatti-luxuria"
+    },
+    {
+     "claim": "Payment plan published by the developer: 20% deposit, 50% during construction, 30% on completion (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.binghatti.com/en/projects/binghatti-luxuria"
     }
    ],
    "facts": {
@@ -185123,7 +185299,7 @@
     "size_max_m2": 70,
     "price_min": 700000,
     "price_max": 1100000,
-    "deposit_pct": null,
+    "deposit_pct": 20,
     "delay_months": null,
     "developer_founded": null,
     "handover_promised": "2027-Q3",
@@ -185134,7 +185310,8 @@
     "unit_types": [
      "studio",
      "1-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "20% deposit, 50% during construction, 30% on completion"
    },
    "note": "Apartment building in JVT; developer states completion in Q3 2027, portal Q4 2027. (checked 5 Nov 2026)",
    "positives": [],
@@ -188135,7 +188312,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null
+    "payment_plan": "Two options: 60/40 (60% during construction, 40% on completion in June 2028) or 70/30 with payments after handover"
    },
    "verification": {
     "permit": "registry",
@@ -188205,6 +188382,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/le-blanc-residence-by-imtiaz"
+    },
+    {
+     "claim": "Payment plan published by the developer: Two options: 60/40 (60% during construction, 40% on completion in June 2028) or 70/30 with payments after handover (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://imtiaz.ae/property/le-blanc"
     }
    ],
    "facts": {
@@ -188227,7 +188410,8 @@
      "1-bedroom apartment",
      "2-bedroom apartment",
      "3-bedroom apartment"
-    ]
+    ],
+    "payment_plan": "Two options: 60/40 (60% during construction, 40% on completion in June 2028) or 70/30 with payments after handover"
    },
    "note": "Imtiaz apartments in DLRC from AED 799,179; developer states completion Q2 2028. (checked 5 Nov 2026)",
    "positives": [],
@@ -198819,7 +199003,7 @@
     "progress_updates": false,
     "developer_delivered": null,
     "units": 190,
-    "payment_plan": null,
+    "payment_plan": "Developer financing at 0% interest: at least 10% down payment, the rest until the building is finished; discount for cash",
     "price_per_m2": null
    },
    "verification": {
@@ -198848,6 +199032,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
+    },
+    {
+     "claim": "Payment plan published by the developer: Developer financing at 0% interest: at least 10% down payment, the rest until the building is finished; discount for cash (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://m2.ge/en/projects/m2-mtatsmindis-parktan"
     }
    ],
    "facts": {
@@ -198867,8 +199057,8 @@
     "price_min": null,
     "price_max": null,
     "currency": null,
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 10,
+    "payment_plan": "Developer financing at 0% interest: at least 10% down payment, the rest until the building is finished; discount for cash",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -200064,7 +200254,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "20% down payment, 10% in months 12, 18 and 24 during construction, then 2% a month for 25 months after handover",
     "price_per_m2": null
    },
    "verification": {
@@ -200153,6 +200343,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/ocean-bay-by-samana-developers"
+    },
+    {
+     "claim": "Payment plan published by the developer: 20% down payment, 10% in months 12, 18 and 24 during construction, then 2% a month for 25 months after handover (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-bay"
     }
    ],
    "facts": {
@@ -200171,8 +200367,8 @@
     "price_min": 2887000,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% down payment, 10% in months 12, 18 and 24 during construction, then 2% a month for 25 months after handover",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": 25.297735,
@@ -208683,6 +208879,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://2futures.com/projects/la-pirogue-residences"
+    },
+    {
+     "claim": "Pin: -20.295890, 57.365054 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/la-pirogue-residences"
     }
    ],
    "facts": {
@@ -208707,8 +208909,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -20.29589,
+    "lng": 57.365054,
     "permit_authority": null
    },
    "note": "La Pirogue Residences by 2Futures, in joint venture with Ciel Properties and Sunlife in Black River, west coast of Mauritius (Mauritius). Added from the official developer page: off-plan; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
@@ -219261,7 +219463,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 10% down payment, 10% in month 12, 1% a month for 80 months. Without: 15% down payment, 10% in month 12, 1% a month for 75 months",
     "price_per_m2": null
    },
    "verification": {
@@ -219344,6 +219546,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-parkville"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 10% down payment, 10% in month 12, 1% a month for 80 months. Without: 15% down payment, 10% in month 12, 1% a month for 75 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-parkville"
     }
    ],
    "facts": {
@@ -219364,8 +219572,8 @@
     "price_min": 1309244,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 10,
+    "payment_plan": "With post-dated cheques: 10% down payment, 10% in month 12, 1% a month for 80 months. Without: 15% down payment, 10% in month 12, 1% a month for 75 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -222012,6 +222220,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://2futures.com/projects/sunset-cove"
+    },
+    {
+     "claim": "Pin: -20.348320, 57.364944 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/sunset-cove"
     }
    ],
    "facts": {
@@ -222035,8 +222249,8 @@
     "payment_plan": null,
     "foreign_ownership": "Foreigners and Mauritians (as published)",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -20.34832,
+    "lng": 57.364944,
     "permit_authority": null
    },
    "note": "Sunset Cove by 2Futures in Coastal Road, Tamarin, west coast (Mauritius). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
@@ -222154,6 +222368,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://2futures.com/projects/infinity-by-the-sea"
+    },
+    {
+     "claim": "Pin: -20.386445, 57.377914 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://2futures.com/projects/infinity-by-the-sea"
     }
    ],
    "facts": {
@@ -222177,8 +222397,8 @@
     "payment_plan": null,
     "foreign_ownership": "Foreigners and Mauritians (as published)",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -20.386445,
+    "lng": 57.377914,
     "permit_authority": null
    },
    "note": "Infinity by the Sea by 2Futures in Black River, west coast (Mauritius). Added from the official developer page: under construction; no handover date published. Not yet reviewed. (read 12 Nov 2026)",
@@ -228802,7 +229022,7 @@
     "progress_updates": false,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "Reservation fee printed as 1M, then 25% down payment within 1 month; bank loans on request",
     "price_per_m2": null
    },
    "verification": {
@@ -228837,6 +229057,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
+    },
+    {
+     "claim": "Payment plan published by the developer: Reservation fee printed as 1M, then 25% down payment within 1 month; bank loans on request (developer page read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.primelands.lk/apartment/VENEZIA-NEGOMBO/en"
     }
    ],
    "facts": {
@@ -228855,8 +229081,8 @@
     "price_min": 60000000,
     "price_max": null,
     "currency": "LKR",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 25,
+    "payment_plan": "Reservation fee printed as 1M, then 25% down payment within 1 month; bank loans on request",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": 7.196342,
@@ -232772,7 +232998,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": 619,
-    "payment_plan": null,
+    "payment_plan": "20% on signing the contract, 50% during construction, 30% on completion",
     "price_per_m2": null
    },
    "verification": {
@@ -232861,6 +233087,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/binghatti-skyblade"
+    },
+    {
+     "claim": "Payment plan published by the developer: 20% on signing the contract, 50% during construction, 30% on completion (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.binghatti.com/en/projects/binghatti-skyblade"
     }
    ],
    "facts": {
@@ -232882,8 +233114,8 @@
     "price_min": 1900000,
     "price_max": 5500000,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on signing the contract, 50% during construction, 30% on completion",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -233397,7 +233629,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "20% on signing the contract, 50% during construction, 30% on completion",
     "price_per_m2": null
    },
    "verification": {
@@ -233486,6 +233718,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/one-by-binghatti"
+    },
+    {
+     "claim": "Payment plan published by the developer: 20% on signing the contract, 50% during construction, 30% on completion (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.binghatti.com/en/projects/one-by-binghatti"
     }
    ],
    "facts": {
@@ -233504,8 +233742,8 @@
     "price_min": 2000000,
     "price_max": 4100000,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on signing the contract, 50% during construction, 30% on completion",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -236043,6 +236281,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000031483?rejestr=P&format=json"
+    },
+    {
+     "claim": "Pin: 50.078984, 19.950802 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/krakow/lista-inwestycji/29-aleja"
     }
    ],
    "facts": {
@@ -236065,8 +236309,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 50.078984,
+    "lng": 19.950802,
     "permit_authority": null
    },
    "note": "29 Aleja by Dom Development S.A. in ul. Prandoty 10 C i E, Stare Miasto, Kraków (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q1. Not yet reviewed. (read 13 Nov 2026)",
@@ -240605,6 +240849,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000031483?rejestr=P&format=json"
+    },
+    {
+     "claim": "Pin: 51.082055, 17.071016 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/wroclaw/lista-inwestycji/osiedle-miedzyleska"
     }
    ],
    "facts": {
@@ -240627,8 +240877,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 51.082055,
+    "lng": 17.071016,
     "permit_authority": null
    },
    "note": "Osiedle Międzyleska by Dom Development S.A. in ul. Międzyleska 6c, Tarnogaj, Wrocław (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q3. Not yet reviewed. (read 13 Nov 2026)",
@@ -240713,6 +240963,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000031483?rejestr=P&format=json"
+    },
+    {
+     "claim": "Pin: 51.142793, 17.116571 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domd.pl/pl-pl/wroclaw/lista-inwestycji/osiedle-zielna"
     }
    ],
    "facts": {
@@ -240735,8 +240991,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 51.142793,
+    "lng": 17.116571,
     "permit_authority": null
    },
    "note": "Osiedle Zielna by Dom Development S.A. in ul. Zielna, Psie Pole, Wrocław (Poland). Added from the official developer page: off-plan; handover on record: 2027-Q1. Not yet reviewed. (read 13 Nov 2026)",
@@ -260093,7 +260349,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "Two options: 60/40, or a plan with 30% paid over 3 years after handover",
     "price_per_m2": null
    },
    "verification": {
@@ -260122,6 +260378,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://imtiaz.ae/property/cove-by-imtiaz"
+    },
+    {
+     "claim": "Payment plan published by the developer: Two options: 60/40, or a plan with 30% paid over 3 years after handover (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://imtiaz.ae/property/cove-by-imtiaz"
     }
    ],
    "facts": {
@@ -260139,7 +260401,7 @@
     "price_max": null,
     "currency": null,
     "deposit_pct": null,
-    "payment_plan": null,
+    "payment_plan": "Two options: 60/40, or a plan with 30% paid over 3 years after handover",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -261799,7 +262061,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 12, 5% in months 18 and 24, then 0.5% a month for 58 months after handover. Without: 20% on booking, same steps",
     "price_per_m2": null
    },
    "verification": {
@@ -261870,6 +262132,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-barari-avenue"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 12, 5% in months 18 and 24, then 0.5% a month for 58 months after handover. Without: 20% on booking, same steps (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-avenue"
     }
    ],
    "facts": {
@@ -261886,8 +262154,8 @@
     "price_min": 2583887,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 15,
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 36 months, 10% in month 12, 5% in months 18 and 24, then 0.5% a month for 58 months after handover. Without: 20% on booking, same steps",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": 25.091842,
@@ -261985,7 +262253,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months",
     "price_per_m2": null
    },
    "verification": {
@@ -262050,6 +262318,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-barari-views"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-barari-views"
     }
    ],
    "facts": {
@@ -262070,8 +262344,8 @@
     "price_min": 600000,
     "price_max": 1700000,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 15,
+    "payment_plan": "With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -262558,7 +262832,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 15% on booking, 10% in month 12, 5% in month 18, 1% a month for 42 months, 0.5% a month for 56 months. Without: 20% on booking, then 0.5% a month for 46 months",
     "price_per_m2": null
    },
    "verification": {
@@ -262647,6 +262921,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-ibiza"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% on booking, 10% in month 12, 5% in month 18, 1% a month for 42 months, 0.5% a month for 56 months. Without: 20% on booking, then 0.5% a month for 46 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-ibiza"
     }
    ],
    "facts": {
@@ -262668,8 +262948,8 @@
     "price_min": 1036667,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 15,
+    "payment_plan": "With post-dated cheques: 15% on booking, 10% in month 12, 5% in month 18, 1% a month for 42 months, 0.5% a month for 56 months. Without: 20% on booking, then 0.5% a month for 46 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": 25.097703,
@@ -262768,7 +263048,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months",
     "price_per_m2": null
    },
    "verification": {
@@ -262857,6 +263137,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-ivy-gardens"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-ivy-gardens"
     }
    ],
    "facts": {
@@ -262877,8 +263163,8 @@
     "price_min": 549000,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 15,
+    "payment_plan": "With post-dated cheques: 15% down payment, 1% a month for 35 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 20% down payment, then 0.5% a month for 50 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": 25.092085,
@@ -263172,7 +263458,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "50% during construction (10% down payment, 5% in month 6, 1% a month for 15 months, 20% on handover) and 50% after handover (1% a month for 36 months, 7% in months 12 and 24)",
     "price_per_m2": null
    },
    "verification": {
@@ -263243,6 +263529,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/ocean-pearl-by-sd"
+    },
+    {
+     "claim": "Payment plan published by the developer: 50% during construction (10% down payment, 5% in month 6, 1% a month for 15 months, 20% on handover) and 50% after handover (1% a month for 36 months, 7% in months 12 and 24) (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-pearl"
     }
    ],
    "facts": {
@@ -263263,8 +263555,8 @@
     "price_min": 3940444,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 10,
+    "payment_plan": "50% during construction (10% down payment, 5% in month 6, 1% a month for 15 months, 20% on handover) and 50% after handover (1% a month for 36 months, 7% in months 12 and 24)",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -263361,7 +263653,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "20% on booking, 10% in months 12 and 24, then 2% a month for 30 months after handover",
     "price_per_m2": null
    },
    "verification": {
@@ -263432,6 +263724,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/ocean-pearl-2-by-sd"
+    },
+    {
+     "claim": "Payment plan published by the developer: 20% on booking, 10% in months 12 and 24, then 2% a month for 30 months after handover (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-ocean-pearl-2"
     }
    ],
    "facts": {
@@ -263452,8 +263750,8 @@
     "price_min": 4278811,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 20,
+    "payment_plan": "20% on booking, 10% in months 12 and 24, then 2% a month for 30 months after handover",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -263550,7 +263848,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 42 months, 10% in month 12, 5% in month 18, 0.5% a month for 56 months after handover. Without: 20% on booking, then 0.5% a month for 46 months",
     "price_per_m2": null
    },
    "verification": {
@@ -263627,6 +263925,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-park-meadows"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 15% on booking, 1% a month for 42 months, 10% in month 12, 5% in month 18, 0.5% a month for 56 months after handover. Without: 20% on booking, then 0.5% a month for 46 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-park-meadows"
     }
    ],
    "facts": {
@@ -263646,8 +263950,8 @@
     "price_min": 771000,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 15,
+    "payment_plan": "With post-dated cheques: 15% on booking, 1% a month for 42 months, 10% in month 12, 5% in month 18, 0.5% a month for 56 months after handover. Without: 20% on booking, then 0.5% a month for 46 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -263744,7 +264048,7 @@
     "progress_updates": true,
     "developer_delivered": null,
     "units": null,
-    "payment_plan": null,
+    "payment_plan": "With post-dated cheques: 20% on booking, 1% a month for 30 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 25% down payment, then 0.5% a month for 50 months",
     "price_per_m2": null
    },
    "verification": {
@@ -263821,6 +264125,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/samana-skyros"
+    },
+    {
+     "claim": "Payment plan published by the developer: With post-dated cheques: 20% on booking, 1% a month for 30 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 25% down payment, then 0.5% a month for 50 months (developer page read 18 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://www.samanadevelopers.com/projects/samana-skyros"
     }
    ],
    "facts": {
@@ -263840,8 +264150,8 @@
     "price_min": 649000,
     "price_max": null,
     "currency": "AED",
-    "deposit_pct": null,
-    "payment_plan": null,
+    "deposit_pct": 20,
+    "payment_plan": "With post-dated cheques: 20% on booking, 1% a month for 30 months, 10% in month 6, 5% in months 12 and 18, 0.5% a month for 60 months. Without: 25% down payment, then 0.5% a month for 50 months",
     "foreign_ownership": null,
     "rental_programme": null,
     "lat": null,
@@ -274021,6 +274331,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-kekliktepe"
+    },
+    {
+     "claim": "Pin: 38.336470, 26.790928 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-kekliktepe"
     }
    ],
    "facts": {
@@ -274041,8 +274357,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 38.33647,
+    "lng": 26.790928,
     "permit_authority": null
    },
    "note": "Ege Yapı Kekliktepe by Ege Yapı in Urla, İzmir (Turkey). Added from the source page: under construction; handover on record: 2026. Not yet reviewed. (read 17 Nov 2026)",
@@ -274120,6 +274436,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://egeyapi.com/en/ege-yapi-sile"
+    },
+    {
+     "claim": "Pin: 41.116798, 29.655000 (coordinates of the project marker in the map on the developer page, read 18 Nov 2026); coordinates as published on the source page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://egeyapi.com/en/ege-yapi-sile"
     }
    ],
    "facts": {
@@ -274140,8 +274462,8 @@
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 41.116798,
+    "lng": 29.655,
     "permit_authority": null
    },
    "note": "Ege Yapı Şile by Ege Yapı in Şile, İstanbul (Turkey). Added from the source page: off-plan; handover on record: 2028. Not yet reviewed. (read 17 Nov 2026)",
@@ -319095,6 +319417,348 @@
      "developer": "registry"
     }
    }
+  },
+  {
+   "name": "Bayfancy Residence",
+   "developer": "Bayfancy",
+   "area": "Hulhumalé Phase 2",
+   "country": "Maldives",
+   "market": "Maldives",
+   "stage": "under construction",
+   "url": "https://corporatemaldives.com/?p=74681",
+   "docs_url": "https://corporatemaldives.com/?p=74681",
+   "permit_number": null,
+   "seed": {
+    "price": 3500000,
+    "currency": "MVR",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Superstructure of the 18-storey building completed; deep-pile foundation finished 12 Dec 2024, 18th floor slab cast 23 Sep 2025 (Corporate Maldives, 23 Oct 2025; read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://corporatemaldives.com/?p=74681"
+    },
+    {
+     "claim": "Sales opened in May 2025; prices from MVR 3.5 million (1+1, 735 sq ft) to MVR 26 million (Sky Villa, 6,100 to 6,500 sq ft); 20% of the construction volume approved by HDC reached at that time (advertorial, 17 May 2025; read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.plus.mv/?p=126987"
+    },
+    {
+     "claim": "No completion or handover date is printed in these sources",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://corporatemaldives.com/?p=74681"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": "December 2024",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "penthouse"
+    ],
+    "size_min_m2": 68,
+    "size_max_m2": null,
+    "price_min": 3500000,
+    "price_max": null,
+    "currency": "MVR",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null,
+    "sales_launch": "May 2025"
+   },
+   "note": "Bayfancy Residence in Hulhumalé Phase 2 (Maldives). Added from Maldivian press: under construction; no handover date published. Not yet reviewed. (read 19 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://corporatemaldives.com/?p=74681",
+    "https://www.plus.mv/?p=126987"
+   ],
+   "docs_listed": [
+    "Superstructure of the 18-storey building completed; deep-pile foundation finished 12 Dec 2024, 18th floor slab cast 23 Sep 2025 (Corporate Maldives, 23 Oct 2025; read 19 Nov 2026)",
+    "Sales opened in May 2025; prices from MVR 3.5 million (1+1, 735 sq ft) to MVR 26 million (Sky Villa, 6,100 to 6,500 sq ft); 20% of the construction volume approved by HDC reached at that time (advertorial, 17 May 2025; read 19 Nov 2026)",
+    "No completion or handover date is printed in these sources"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-19",
+   "found_by": "discover-manual",
+   "slug": "bayfancy-residence-hulhumale"
+  },
+  {
+   "name": "Renaatus Irumathi",
+   "developer": "Renaatus Projects Pvt Ltd",
+   "area": "Hulhumalé (east shore)",
+   "country": "Maldives",
+   "market": "Maldives",
+   "stage": "under construction",
+   "url": "https://irumathi.renaatus.com/",
+   "docs_url": "https://irumathi.renaatus.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": true,
+    "units": 69,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer site for Renaatus Irumathi Residence, Hulhumalé: ground and first floor commercial space, basement parking with at least one car space per apartment (read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://irumathi.renaatus.com/"
+    },
+    {
+     "claim": "Island Chief, 19 Mar 2025: sales open, 20% built, on track for completion by December 2026 (read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://islandchief.com/news/view/56943"
+    },
+    {
+     "claim": "Atoll Times, 1 Jul 2026: 24 single-level apartments, 41 duplexes and 4 penthouses, design by the Maldivian firm Spaces (read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://atolltimes.mv/post/business/16408"
+    },
+    {
+     "claim": "The developer company Renaatus Projects Pvt Ltd is listed by the Housing Development Corporation for its earlier Hulhumalé building, Renaatus IthaaMuiy (73 units, started 2016, completed 2018)",
+     "status": "unverified",
+     "by": "registry",
+     "source": "https://properties.hdc.mv/property/renaatus-ithaamuiy"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": "Renaatus Projects Pvt Ltd",
+    "construction_start": null,
+    "handover_promised": "December 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "duplex",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null,
+    "developer_projects_delivered": 1
+   },
+   "note": "Renaatus Irumathi by Renaatus Projects Pvt Ltd in Hulhumalé (Maldives). Added from the developer site and Maldivian press: under construction; completion by December 2026 reported in March 2025. Not yet reviewed. (read 19 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://irumathi.renaatus.com/",
+    "https://islandchief.com/news/view/56943",
+    "https://atolltimes.mv/post/business/16408",
+    "https://properties.hdc.mv/property/renaatus-ithaamuiy"
+   ],
+   "docs_listed": [
+    "Developer site for Renaatus Irumathi Residence, Hulhumalé: ground and first floor commercial space, basement parking with at least one car space per apartment (read 19 Nov 2026)",
+    "Island Chief, 19 Mar 2025: sales open, 20% built, on track for completion by December 2026 (read 19 Nov 2026)",
+    "Atoll Times, 1 Jul 2026: 24 single-level apartments, 41 duplexes and 4 penthouses, design by the Maldivian firm Spaces (read 19 Nov 2026)",
+    "The developer company Renaatus Projects Pvt Ltd is listed by the Housing Development Corporation for its earlier Hulhumalé building, Renaatus IthaaMuiy (73 units, started 2016, completed 2018)"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-19",
+   "found_by": "discover-manual",
+   "slug": "renaatus-irumathi-hulhumale"
+  },
+  {
+   "name": "Nobu Island Estate Residences, Maldives",
+   "developer": "Sarat International (with Nobu Hospitality)",
+   "area": "Munyafushi, Laamu Atoll",
+   "country": "Maldives",
+   "market": "Maldives",
+   "stage": "off-plan",
+   "url": "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/",
+   "docs_url": "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 10,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "TTG Asia, 23 Feb 2026: Nobu Hotel Maldives on Munyafushi, Laamu Atoll, developed in partnership with Sarat International: 26 beach villas, 30 overwater villas and 10 Nobu Island Estate Residences, each on its own private island (read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/"
+    },
+    {
+     "claim": "No opening date, price or sales terms for the residences are published in this source",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/"
+    },
+    {
+     "claim": "Dreaming of Maldives (4 Jul 2026) lists the project with 10 residences and an expected year of 2027 for the wave of openings it covers; no project date is given (read 19 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.dreamingofmaldives.com/branded-residences-and-private-estates-coming-to-the-maldives/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null,
+    "brand": "Nobu"
+   },
+   "note": "Nobu Island Estate Residences on Munyafushi, Laamu Atoll (Maldives), with Sarat International. Added from press: announced Feb 2026; no handover date published. Not yet reviewed. (read 19 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/",
+    "https://www.dreamingofmaldives.com/branded-residences-and-private-estates-coming-to-the-maldives/"
+   ],
+   "docs_listed": [
+    "TTG Asia, 23 Feb 2026: Nobu Hotel Maldives on Munyafushi, Laamu Atoll, developed in partnership with Sarat International: 26 beach villas, 30 overwater villas and 10 Nobu Island Estate Residences, each on its own private island (read 19 Nov 2026)",
+    "No opening date, price or sales terms for the residences are published in this source",
+    "Dreaming of Maldives (4 Jul 2026) lists the project with 10 residences and an expected year of 2027 for the wave of openings it covers; no project date is given (read 19 Nov 2026)"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-19",
+   "found_by": "discover-manual",
+   "slug": "nobu-island-estate-residences-maldives"
   }
  ]
 }

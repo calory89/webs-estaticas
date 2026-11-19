@@ -136,6 +136,14 @@
   ]
  },
  {
+  "a": "altintas-700-unit-project-aksu",
+  "b": "park-ya-am-antalya-antalya",
+  "market": "Antalya",
+  "why": [
+   "68 m apart"
+  ]
+ },
+ {
   "a": "palm-jebel-ali-frond-a-villas",
   "b": "palm-jebel-ali-frond-o",
   "market": "Dubai",
@@ -324,7 +332,8 @@
   "b": "creative-homes-bulevar",
   "market": "Costa del Sol",
   "why": [
-   "similar name"
+   "similar name",
+   "0 m apart"
   ]
  },
  {
@@ -332,7 +341,8 @@
   "b": "creative-homes-bulevar-ii",
   "market": "Costa del Sol",
   "why": [
-   "similar name"
+   "similar name",
+   "0 m apart"
   ]
  },
  {
@@ -496,6 +506,22 @@
   ]
  },
  {
+  "a": "edge-raha-island-ras-al-khaimah",
+  "b": "skai-ras-al-khaimah",
+  "market": "Ras Al Khaimah",
+  "why": [
+   "86 m apart"
+  ]
+ },
+ {
+  "a": "edge-raha-island-ras-al-khaimah",
+  "b": "solera-ras-al-khaimah",
+  "market": "Ras Al Khaimah",
+  "why": [
+   "112 m apart"
+  ]
+ },
+ {
   "a": "damac-islands-dubai",
   "b": "damac-islands-2-bahamas-1",
   "market": "Dubai",
@@ -573,6 +599,14 @@
   "market": "Dubai",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "skai-ras-al-khaimah",
+  "b": "solera-ras-al-khaimah",
+  "market": "Ras Al Khaimah",
+  "why": [
+   "130 m apart"
   ]
  },
  {

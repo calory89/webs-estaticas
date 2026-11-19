@@ -37,7 +37,8 @@ FLAG_RX = [('criminal', r'\b(prosecutor|prosecuted|criminal (?:case|complaint|ch
            ('delay', r'\b(delayed|delays|missed (?:the )?(?:completion|handover)|years? late|months? late|overdue)\b')]
 FACT_KEEP = ('developer_founded', 'developer_hq', 'developer_company', 'developer_projects_delivered', 'developer_units_delivered', 'listed_or_audited',
              'construction_start', 'handover_promised', 'original_handover', 'delay_months', 'unit_types', 'size_min_m2', 'size_max_m2', 'price_min',
-             'price_max', 'currency', 'deposit_pct', 'payment_plan', 'foreign_ownership', 'service_charge', 'permit_authority', 'brand', 'lat', 'lng')
+             'price_max', 'currency', 'deposit_pct', 'payment_plan', 'foreign_ownership', 'service_charge', 'permit_authority', 'brand', 'lat', 'lng',
+             'sales_launch', 'completion_actual')   # n32d: sales launch date and actual completion date, each also stated in a sourced claim
 # Pin corrections checked by hand (n19f, 9 Nov 2026). The research record had these two Birmingham pins one degree of latitude
 # too far north (Peak District). Sources: OpenStreetMap "Former Police Station > 59x Apartments Conversion (Priors Gate)",
 # Steelhouse Lane B4 6QA (developer page: former Steelhouse Lane Police Headquarters); postcodes.io B5 7AY, the postcode on

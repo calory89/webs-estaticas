@@ -51265,5 +51265,71 @@
   },
   "source": "seed",
   "checked": "2026-11-18"
+ },
+ "bayfancy-residence-hulhumale": {
+  "name": "Bayfancy Residence",
+  "url": "https://corporatemaldives.com/?p=74681",
+  "market": "Maldives",
+  "claims": {
+   "price_from": 3500000,
+   "currency": "MVR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "checked": "2026-11-19"
+ },
+ "renaatus-irumathi-hulhumale": {
+  "name": "Renaatus Irumathi",
+  "url": "https://irumathi.renaatus.com/",
+  "market": "Maldives",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "checked": "2026-11-19"
+ },
+ "nobu-island-estate-residences-maldives": {
+  "name": "Nobu Island Estate Residences, Maldives",
+  "url": "https://www.ttgasia.com/2026/02/23/nobu-hospitality-to-debut-hotel-and-private-island-residences-in-maldives/",
+  "market": "Maldives",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "checked": "2026-11-19"
  }
 }
