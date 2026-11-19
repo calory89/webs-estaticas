@@ -16,7 +16,7 @@ import { mkName, coName } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
-export const N32T_V = 'n32t3';
+export const N32T_V = 'n32t4';
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -37,9 +37,11 @@ const OTHER = ['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contra
 export async function localSet(env, lang) {
   const M = await manifest(env), S = new Set(OTHER);
   for (const [k, L] of Object.entries(M.pages || {})) if (L.includes(lang)) S.add('/' + k + '/');
+  // country and market pages exist in the other languages only with 5+ named projects (kbx_n29i): link those, keep the rest in English
+  try { const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env); for (const c of D.C.keys()) S.add('/countries/' + c + '/'); for (const k of D.M.keys()) S.add('/m/' + k + '/'); } catch (e) {}
   return S;
 }
-const FIXED = /^\/(?:|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/(?:[a-z0-9-]{2,60}\/)?|rankings\/(?:[a-z0-9-]{2,60}\/)?|m\/[^/.]{2,60}\/|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
+const FIXED = /^\/(?:|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {
   if (!/^\/(?!\/)/.test(h) || /^\/(?:es|de|fr|nl|ru|zh|ar)\//.test(h)) return h;
   const i = h.search(/[?#]/), p = i < 0 ? h : h.slice(0, i);
