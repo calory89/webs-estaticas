@@ -1,6 +1,6 @@
 ﻿country,homes_with_indicator,low,medium,high,medium_or_high_pct,with_official_zone,small_sample
 Dominican Republic,5,0,5,0,100,0,yes
-United States,57,38,6,13,33,49,no
+United States,52,34,6,12,35,45,no
 Greece,20,16,4,0,20,0,no
 Cyprus,5,4,1,0,20,0,yes
 Bulgaria,7,6,1,0,14,0,yes
@@ -8,8 +8,8 @@ Spain,186,171,15,0,8,0,no
 Mexico,12,11,1,0,8,0,no
 Japan,31,29,2,0,6,0,no
 Denmark,46,44,2,0,4,0,no
-Sweden,36,35,1,0,3,0,no
-Italy,68,67,1,0,1,0,no
+Sweden,35,34,1,0,3,0,no
+Italy,67,66,1,0,1,0,no
 France,45,45,0,0,0,0,no
 Poland,31,31,0,0,0,0,no
 Germany,20,20,0,0,0,0,no

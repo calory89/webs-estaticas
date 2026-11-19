@@ -61,4 +61,4 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 Who writes this. RealHunt Research is the name RealHunt publishes its own studies and guides under; RealHunt is run by Equinox Investment Group LLC, founded by Carlos de Ory Gordillo. Rules, taxes and costs are compiled from the sources listed on this page; prices come from the homes listed on RealHunt. General information, not legal or tax advice. [Editorial policy and corrections](https://realhunt.co/editorial-policy) · [How the score works](https://realhunt.co/method) · [Who we are](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/guide/poland (RealHunt, 2026-11-18)
+Source: https://realhunt.co/guide/poland (RealHunt, 2026-11-19)

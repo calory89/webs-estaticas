@@ -1,24 +1,24 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 39 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 39 casas es de 72.000 € (680 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 19 de noviembre de 2026, RealHunt publica 38 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 38 casas es de 73.000 € (701 € por m², calculado con las 20 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 19 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
 
 ## Datos clave
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 39 |
-| Precio de salida mediano | 72.000 € |
-| Precio mediano por m² | 680 € (21 casas de superficie conocida) |
+| Casas en RealHunt | 38 |
+| Precio de salida mediano | 73.000 € |
+| Precio mediano por m² | 701 € (20 casas de superficie conocida) |
 | Superficie mediana | 110 m² |
 | La más barata y la más cara | 22.000 € · 99.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
 | Impuestos y gastos de compra | 1,5–3,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay normas de ciudadanía o residencia para comprar una vivienda en Suecia, pero necesitas un número de identidad personal sueco o número de coordinación (samordningsnummer) para registrar la propiedad. |
 | Impuesto anual sobre la vivienda | Las casas pagan una tasa municipal sobre la propiedad (kommunal fastighetsavgift) de 10.425 SEK en 2026, o el 0,75% del valor fiscal si es menor. |
-| Fecha de estas cifras | 18 de noviembre de 2026 |
+| Fecha de estas cifras | 19 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/sweden
 
-## Las 39 casas, de mejor a peor nota
+## Las 38 casas, de mejor a peor nota
 
 ### Villa acogedora con sauna, a 100 m del río
 
@@ -96,14 +96,6 @@ https://realhunt.co/es/deal/DcaE8pfoH77
 Una casa flexible de 156 m² que puede ser una sola vivienda amplia o mantener su distribución actual de dos viviendas independientes de 3 estancias, una por planta. Cada planta tiene su propia cocina, salón con chimenea, dos dormitorios y un baño reformado.
 
 https://realhunt.co/es/deal/Dc-RMNwIPpv
-
-### Casa de los años 50 con dos viviendas y calefacción geotérmica
-
-45.000 € · Bruzaholm, Eksjö, Jönköping, Sweden · 139 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-09-23
-
-Una casa, dos viviendas independientes: un piso de tres habitaciones abajo y otro de dos arriba, ideal para familia extensa, invitados o más flexibilidad. Y mucho carácter de los años 50, con suelos de madera, cocinas retro, chimeneas, balcón y un sótano completo con garaje y trastero.
-
-https://realhunt.co/es/deal/DcsW6VPIMJO
 
 ### Casa de madera con encanto en el bosque cerca de un lago
 

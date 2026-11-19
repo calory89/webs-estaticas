@@ -1,21 +1,20 @@
 # Where the homes under €50,000 are: countries and regions (2026)
 
-80 of the 641 homes on RealHunt cost €50,000 or less, and 28 cost €30,000 or less. Most are in Italy (33), Japan (19), Germany (10). The region with the most is Chemnitz, Germany, with 8.
+79 of the 634 homes on RealHunt cost €50,000 or less, and 28 cost €30,000 or less. Most are in Italy (33), Japan (19), Germany (10). The region with the most is Chemnitz, Germany, with 8.
 
-Homes checked by a person and ready to live in, at their asking price on 18 November 2026. Countries and regions with fewer than 3 such homes are not listed.
+Homes checked by a person and ready to live in, at their asking price on 19 November 2026. Countries and regions with fewer than 3 such homes are not listed.
 
-Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.csv
+Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.csv
 
 ## The table
 
 | Country | Homes at or under €50,000 | Share of the country's homes | At or under €30,000 | Cheapest | Median size |
 | --- | --- | --- | --- | --- | --- |
-| Italy | 33 | 48% | 13 | €12,000 | 50 m² |
+| Italy | 33 | 49% | 13 | €12,000 | 50 m² |
 | Japan | 19 | 59% | 13 | €7,400 | 70 m² |
 | Germany | 10 | 50% | 0 | €40,000 | 49 m² |
 | France | 6 | 13% | 0 | €39,000 | 116 m² |
 | Spain | 5 | 3% | 0 | €38,000 | 86 m² |
-| Sweden | 3 | 8% | 2 | €22,000 | n/a |
 
 | Region | Country | Homes at or under €50,000 | Median price | Median €/m² |
 | --- | --- | --- | --- | --- |
@@ -30,7 +29,7 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/homes-u
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 641 chosen listings (68% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 634 chosen listings (68% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - A region is the last part of each home's location before the country (a province, a state, a county or a city).
 - The count describes what RealHunt lists today. A country that is missing may have such homes that have not been added yet.

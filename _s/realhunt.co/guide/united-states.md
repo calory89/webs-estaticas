@@ -32,11 +32,11 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 - [€82,875 · Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875) · Chapmanville, West Virginia · score 95 · 176 m² · 2 bed
 - [€78,426 · Updated 3-bed house in Huntington, West Virginia](https://realhunt.co/deal/huntington-78426) · Huntington, West Virginia · score 95 · 150 m² · 3 bed
 - [€65,428 · Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428) · McKees Rocks, Pennsylvania · score 93 · 106 m² · 3 bed
-- [€80,100 · Bright refreshed 3-bed with new kitchen next to the national forest](https://realhunt.co/deal/us-kane-80k-699794) · Kane, Pennsylvania · score 92 · 108 m² · 3 bed
+- [€153,900 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 91 · 199 m² · 3 bed
 - [€68,917 · Updated 2-bed house in Cleveland, Oklahoma](https://realhunt.co/deal/cleveland-68917) · Cleveland, Oklahoma · score 91 · 98 m² · 2 bed
-- [€151,000 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 90 · 199 m² · 3 bed
+- [€200,000 · Victorian house with original oak woodwork opposite a park in Marietta, Ohio](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k) · Marietta, Ohio · score 90 · 191 m² · 3 bed
 
-[All 57 homes in the United States](https://realhunt.co/homes/united-states)
+[All 52 homes in the United States](https://realhunt.co/homes/united-states)
 
 [Costs, taxes and sources for United States](https://realhunt.co/costs/united-states) · [Buying-cost calculator for United States](https://realhunt.co/buying-costs/united-states) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -64,4 +64,4 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 Who writes this. RealHunt Research is the name RealHunt publishes its own studies and guides under; RealHunt is run by Equinox Investment Group LLC, founded by Carlos de Ory Gordillo. Rules, taxes and costs are compiled from the sources listed on this page; prices come from the homes listed on RealHunt. General information, not legal or tax advice. [Editorial policy and corrections](https://realhunt.co/editorial-policy) · [How the score works](https://realhunt.co/method) · [Who we are](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/guide/united-states (RealHunt, 2026-11-18)
+Source: https://realhunt.co/guide/united-states (RealHunt, 2026-11-19)

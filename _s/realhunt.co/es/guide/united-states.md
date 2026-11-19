@@ -32,11 +32,11 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 - [82.875 € · Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia Occidental](https://realhunt.co/es/deal/chapmanville-82875) · Chapmanville, Virginia Occidental · nota 95 · 176 m² · 2 dorm.
 - [78.426 € · Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental](https://realhunt.co/es/deal/huntington-78426) · Huntington, Virginia Occidental · nota 95 · 150 m² · 3 dorm.
 - [65.428 € · Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania](https://realhunt.co/es/deal/mckees-rocks-65428) · McKees Rocks, Pensilvania · nota 93 · 106 m² · 3 dorm.
-- [80.100 € · Casa luminosa de 3 dormitorios con cocina nueva junto al bosque nacional](https://realhunt.co/es/deal/us-kane-80k-699794) · Kane, Pensilvania · nota 92 · 108 m² · 3 dorm.
+- [153.900 € · La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k) · Scotland Neck, Carolina del Norte · nota 91 · 199 m² · 3 dorm.
 - [68.917 € · Casa de 2 dormitorios actualizada en Cleveland, Oklahoma](https://realhunt.co/es/deal/cleveland-68917) · Cleveland, Oklahoma · nota 91 · 98 m² · 2 dorm.
-- [151.000 € · La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k) · Scotland Neck, Carolina del Norte · nota 90 · 199 m² · 3 dorm.
+- [200.000 € · Casa victoriana con carpintería de roble original frente a un parque en Marietta, Ohio](https://realhunt.co/es/deal/us-marietta-oh-victorian-oak-woodwork-220k) · Marietta, Ohio · nota 90 · 191 m² · 3 dorm.
 
-[Las 57 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
+[Las 52 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
 
 [Gastos, impuestos y fuentes de Estados Unidos](https://realhunt.co/es/costs/united-states) · [Calculadora de gastos de compra para Estados Unidos](https://realhunt.co/es/buying-costs/united-states) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -64,4 +64,4 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 Quién escribe esto. RealHunt Research es el nombre con el que RealHunt publica sus propios estudios y guías; RealHunt pertenece a Equinox Investment Group LLC, fundada por Carlos de Ory Gordillo. Las normas, los impuestos y los gastos se recopilan de las fuentes citadas en esta página; los precios salen de las casas publicadas en RealHunt. Información general, no asesoramiento jurídico ni fiscal. [Política editorial y correcciones](https://realhunt.co/es/editorial-policy) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Quiénes somos](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/guide/united-states (RealHunt, 2026-11-18)
+Fuente: https://realhunt.co/es/guide/united-states (RealHunt, 2026-11-19)

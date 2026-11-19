@@ -4,18 +4,18 @@ Press
 
 RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
 
-Numbers updated 18 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
+Numbers updated 19 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt in numbers
 
-- 641homes for sale on the site
+- 634homes for sale on the site
 - 19countries with at least 3 homes
-- €86,962median asking price
+- €86,500median asking price
 - €7,400cheapest home today
 - 68%of homes cost €100,000 or less
 - 70–98range of scores today (scale 70 to 98)
 - 135homes added in the last 30 days
-- 57portals and agencies the homes come from
+- 58portals and agencies the homes come from
 - 280answers to "can I buy there?" (14 nationalities, 20 countries)
 
 Computed from the homes on the site each time it is updated. Asking prices in euros.
@@ -27,10 +27,10 @@ Computed from the homes on the site each time it is updated. Asking prices in eu
 - [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country). From 0.6–1.1% in Georgia to 12–22% in Northern Cyprus.
 - [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy). Free for any nationality in 12 of 20 countries; restricted in Canada, Denmark and Switzerland.
 - [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions). Highest median score: West Jutland, Denmark (91).
-- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000). 80 homes at or under €50,000; most in Italy (33).
+- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000). 79 homes at or under €50,000; most in Italy (33).
 - [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary). 1.5 years of net pay in Germany, 8 in the Netherlands.
-- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 8% of 634 homes are marked medium or high; 13 are marked high.
-- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,456/m² under 30 km from an airport, €1,037/m² between 30 and 60 km.
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 8% of 627 homes are marked medium or high; 12 are marked high.
+- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,460/m² under 30 km from an airport, €1,037/m² between 30 and 60 km.
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices). From €1,366/m² in Batumi to €3,661/m² in Phuket.
 
 Each page has its chart, table, CSV, method and a ready citation. Need a different cut (one country, one price band, one month)? Ask at carlos@equinoxinvestmentgroup.com.
@@ -66,4 +66,4 @@ Press, data requests and interviews: carlos@equinoxinvestmentgroup.com. We answe
 Write to the press contact[All the data](https://realhunt.co/research)[Badges and widgets](https://realhunt.co/embed)
 
 ---
-Source: https://realhunt.co/press (RealHunt, 2026-11-18)
+Source: https://realhunt.co/press (RealHunt, 2026-11-19)

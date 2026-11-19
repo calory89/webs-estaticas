@@ -4,7 +4,7 @@ Confianza
 
 RealHunt publica cifras que calcula con sus propios anuncios y normas de compra que recopila de fuentes citadas. Nadie puede pagar por cambiar una nota, un puesto o una cifra, y los errores se corrigen en la página, con su fecha.
 
-Última revisión: 18 de noviembre de 2026
+Última revisión: 19 de noviembre de 2026
 
 ### Quién publica RealHunt
 
@@ -43,4 +43,4 @@ Cada día entran y salen casas, y las páginas de datos se recalculan en cada ac
 Los textos, las cifras, los gráficos y las tablas se pueden citar con un enlace a la página de la que salen (páginas de datos: Creative Commons BY 4.0). Las fotos pertenecen a los anuncios originales y no nos corresponde licenciarlas. [Página de prensa](https://realhunt.co/es/press) · [Para asistentes de IA](https://realhunt.co/es/for-ai).
 
 ---
-Fuente: https://realhunt.co/es/editorial-policy (RealHunt, 2026-11-18)
+Fuente: https://realhunt.co/es/editorial-policy (RealHunt, 2026-11-19)

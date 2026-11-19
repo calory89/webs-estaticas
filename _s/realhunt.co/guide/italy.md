@@ -35,7 +35,7 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
-[All 69 homes in Italy](https://realhunt.co/homes/italy)
+[All 68 homes in Italy](https://realhunt.co/homes/italy)
 
 [Costs, taxes and sources for Italy](https://realhunt.co/costs/italy) · [Buying-cost calculator for Italy](https://realhunt.co/buying-costs/italy) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -59,4 +59,4 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 Who writes this. RealHunt Research is the name RealHunt publishes its own studies and guides under; RealHunt is run by Equinox Investment Group LLC, founded by Carlos de Ory Gordillo. Rules, taxes and costs are compiled from the sources listed on this page; prices come from the homes listed on RealHunt. General information, not legal or tax advice. [Editorial policy and corrections](https://realhunt.co/editorial-policy) · [How the score works](https://realhunt.co/method) · [Who we are](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/guide/italy (RealHunt, 2026-11-18)
+Source: https://realhunt.co/guide/italy (RealHunt, 2026-11-19)

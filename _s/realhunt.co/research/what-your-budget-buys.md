@@ -1,10 +1,10 @@
 # What €50,000, €100,000 and €200,000 buy, country by country (2026)
 
-Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), Japan (median 106 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 6 countries, most of them in Italy (33), Japan (19), Germany (10).
+Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), Japan (median 106 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 5 countries, most of them in Italy (33), Japan (19), Germany (10).
 
-From 641 listings checked by a person, 18 November 2026. A home counts in one price band only.
+From 634 listings checked by a person, 19 November 2026. A home counts in one price band only.
 
-Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
+Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
 
 ## The table
 
@@ -18,8 +18,8 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Germany | 10 | 49 m² | €976 | 1 | [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045), €40,000, score 87 |
 | France | 6 | 116 m² | €431 | 3 | [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775), €39,950, score 92 |
 | Spain | 5 | 86 m² | €570 | 2 | [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809), €38,000, score 94 |
-| Sweden | 3 | n/a | n/a | 3 | [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb), €25,960, score 93 |
 | Switzerland | 2 | n/a | n/a | 2 | [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), €32,300, score 92 |
+| Sweden | 2 | n/a | n/a | n/a | [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb), €25,960, score 93 |
 | Denmark | 1 | n/a | n/a | n/a | [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX), €35,400, score 91 |
 | Portugal | 1 | n/a | n/a | 3 | [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522), €48,000, score 84 |
 
@@ -32,8 +32,8 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Sweden | 36 | 110 m² | €701 | 3 | [Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989), €62,300, score 93 |
 | Poland | 31 | 62 m² | €1,139 | 3 | [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977), €57,120, score 96 |
 | France | 25 | 52 m² | €1,250 | 2 | [Four-room 71 m² flat with two balconies in Mulhouse](https://realhunt.co/deal/fr-mulhouse-52k-754748), €51,800, score 90 |
-| Italy | 19 | 70 m² | €1,250 | 2 | [Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133), €95,000, score 91 |
-| United States | 19 | 95 m² | €872 | 2 | [Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875), €82,875, score 95 |
+| Italy | 18 | 70 m² | €1,250 | 2 | [Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133), €95,000, score 91 |
+| United States | 15 | 96 m² | €832 | 2 | [Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875), €82,875, score 95 |
 | Japan | 13 | 106 m² | €758 | 3 | [Hillside kominka with sea views over the Kyoto coast](https://realhunt.co/deal/Da7vZIFDIuo), €54,280, score 86 |
 | Mexico | 10 | 68 m² | €1,140 | 2 | [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), €50,575, score 93 |
 | Germany | 10 | 57 m² | €1,078 | 1 | [65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680), €55,000, score 84 |
@@ -53,7 +53,7 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | France | 13 | 113 m² | €1,158 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454), €148,400, score 91 |
 | Greece | 13 | 93 m² | €1,465 | 2 | [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k), €109,000, score 93 |
 | Portugal | 12 | 125 m² | €1,364 | 2 | [Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372), €110,000, score 91 |
-| United States | 12 | 133 m² | €1,364 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k), €151,000, score 90 |
+| United States | 11 | 114 m² | €1,364 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k), €153,900, score 91 |
 | United Kingdom | 2 | n/a | n/a | 2 | [Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k), €126,500, score 83 |
 | Dominican Republic | 2 | n/a | n/a | 2 | [Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359), €187,800, score 89 |
 | Cyprus | 2 | n/a | n/a | 2 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), €130,000, score 83 |
@@ -63,7 +63,7 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 641 chosen listings (68% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 634 chosen listings (68% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Price bands do not overlap: up to €50,000; €50,001 to €100,000; €100,001 to €200,000.
 - Size and price per m² are shown when at least 3 homes in the band give their size. An empty band means RealHunt lists no home there today, not that none exists in the country.

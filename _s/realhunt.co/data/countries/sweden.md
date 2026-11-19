@@ -1,24 +1,24 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 19 November 2026, RealHunt lists 38 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 38 homes is €73,000 (€701 per m², from the 20 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/sweden · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/sweden · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
 
 ## Key facts
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 39 |
-| Median asking price | €72,000 |
-| Median price per m² | €680 (21 homes with a known size) |
+| Homes on RealHunt | 38 |
+| Median asking price | €73,000 |
+| Median price per m² | €701 (20 homes with a known size) |
 | Median size | 110 m² |
 | Cheapest and most expensive | €22,000 · €99,000 |
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 1.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership. |
 | Yearly property tax | Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower. |
-| Date of these figures | 18 November 2026 |
+| Date of these figures | 19 November 2026 |
 
 ## Costs and taxes
 
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/sweden
 
-## The 39 homes, best score first
+## The 38 homes, best score first
 
 ### Cosy villa with sauna, 100 m from the river
 
@@ -96,14 +96,6 @@ https://realhunt.co/deal/DcaE8pfoH77
 A flexible 156 m² house that can be one generous home or keep its current setup of two separate 3-room living areas, one per floor. Both floors have their own kitchen, living room with fireplace, two bedrooms and a renovated bathroom.
 
 https://realhunt.co/deal/Dc-RMNwIPpv
-
-### Two-apartment 1950s house with geothermal heating
-
-€45,000 · Bruzaholm, Eksjö, Jönköping, Sweden · 139 m² · 3 bedrooms · RealHunt score 91 · added 2026-09-23
-
-One house, two separate living spaces: a three-room apartment downstairs and a two-room apartment upstairs, ideal for extended family, guests or extra flexibility. Plenty of 1950s character too, with wooden floors, retro kitchens, fireplaces, a balcony and a full basement with garage and storage.
-
-https://realhunt.co/deal/DcsW6VPIMJO
 
 ### Charming wooden house in the forest near a lake
 

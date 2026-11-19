@@ -2,7 +2,7 @@
 
 This is a directory of 179 property portals in 54 countries: the national portals, the large classified sites and the portals made for foreign buyers, each with its web address. They are in the order RealHunt checks them when it looks for homes in that country. Being listed here is not a recommendation or a rating.
 
-Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
+Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
 
 ## Spain
 
@@ -38,7 +38,7 @@ RealHunt: 18 checked homes, https://realhunt.co/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 69 checked homes, https://realhunt.co/homes/italy
+RealHunt: 68 checked homes, https://realhunt.co/homes/italy
 
 ## France
 
@@ -119,7 +119,7 @@ RealHunt: 46 checked homes, https://realhunt.co/homes/denmark
 1. [Hemnet](https://www.hemnet.se/)
 2. [Booli](https://www.booli.se/)
 
-RealHunt: 39 checked homes, https://realhunt.co/homes/sweden
+RealHunt: 38 checked homes, https://realhunt.co/homes/sweden
 
 ## Norway
 
@@ -213,7 +213,7 @@ RealHunt: 5 checked homes, https://realhunt.co/homes/cyprus
 7. [Century 21](https://www.century21.com/)
 8. [RE/MAX](https://www.remax.com/)
 
-RealHunt: 57 checked homes, https://realhunt.co/homes/united-states
+RealHunt: 52 checked homes, https://realhunt.co/homes/united-states
 
 ## Canada
 

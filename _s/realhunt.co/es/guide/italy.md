@@ -35,7 +35,7 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 - [30.000 € · Casa de pueblo con balcón con vistas al mar en Pollina, a 30 minutos de Cefalù](https://realhunt.co/es/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicilia · nota 91 · 50 m² · 1 dorm.
 - [195.000 € · Piso en el lago Como renovado con balcón con vistas al lago, a 100 m de la orilla](https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lago de Como, Lombardía · nota 91 · 80 m² · 1 dorm.
 
-[Las 69 casas en Italia](https://realhunt.co/es/homes/italy)
+[Las 68 casas en Italia](https://realhunt.co/es/homes/italy)
 
 [Gastos, impuestos y fuentes de Italia](https://realhunt.co/es/costs/italy) · [Calculadora de gastos de compra para Italia](https://realhunt.co/es/buying-costs/italy) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -59,4 +59,4 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 Quién escribe esto. RealHunt Research es el nombre con el que RealHunt publica sus propios estudios y guías; RealHunt pertenece a Equinox Investment Group LLC, fundada por Carlos de Ory Gordillo. Las normas, los impuestos y los gastos se recopilan de las fuentes citadas en esta página; los precios salen de las casas publicadas en RealHunt. Información general, no asesoramiento jurídico ni fiscal. [Política editorial y correcciones](https://realhunt.co/es/editorial-policy) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Quiénes somos](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/guide/italy (RealHunt, 2026-11-18)
+Fuente: https://realhunt.co/es/guide/italy (RealHunt, 2026-11-19)

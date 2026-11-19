@@ -1,10 +1,10 @@
 # Qué casa se compra con 50.000, 100.000 y 200.000 €, país por país (2026)
 
-Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 110 m²) y Japón (mediana de 106 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 6 países, sobre todo en Italia (33), Japón (19) y Alemania (10).
+Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 110 m²) y Japón (mediana de 106 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 5 países, sobre todo en Italia (33), Japón (19) y Alemania (10).
 
-A partir de 641 anuncios revisados por una persona, a 18 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
+A partir de 634 anuncios revisados por una persona, a 19 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
 
-Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
+Actualizado el 19 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
 
 ## La tabla
 
@@ -18,8 +18,8 @@ Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Alemania | 10 | 49 m² | 976 € | 1 | [Ático soleado con balcón por 40.000 € en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-40k-931045), 40.000 €, nota 87 |
 | Francia | 6 | 116 m² | 431 € | 3 | [Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775), 39.950 €, nota 92 |
 | España | 5 | 86 m² | 570 € | 2 | [Casa de 2 dormitorios con terraza en Alpujarra de la Sierra](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809), 38.000 €, nota 94 |
-| Suecia | 3 | s. d. | s. d. | 3 | [Villa acogedora con sauna, a 100 m del río](https://realhunt.co/es/deal/DdPBLT2CLlb), 25.960 €, nota 93 |
 | Suiza | 2 | s. d. | s. d. | 2 | [Casa modular de 70 m² con bomba de calor, para llevar a tu propio terreno](https://realhunt.co/es/deal/ch-lengnau-30k-26130), 32.300 €, nota 92 |
+| Suecia | 2 | s. d. | s. d. | s. d. | [Villa acogedora con sauna, a 100 m del río](https://realhunt.co/es/deal/DdPBLT2CLlb), 25.960 €, nota 93 |
 | Dinamarca | 1 | s. d. | s. d. | s. d. | [Casita con tejado de paja de 1800 en pleno campo abierto](https://realhunt.co/es/deal/Dc4LcqwjPZX), 35.400 €, nota 91 |
 | Portugal | 1 | s. d. | s. d. | 3 | [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), 48.000 €, nota 84 |
 
@@ -32,8 +32,8 @@ Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Suecia | 36 | 110 m² | 701 € | 3 | [Adosado de ladrillo de tres dormitorios con jardín cerca de la costa sur en Skivarp](https://realhunt.co/es/deal/se-skivarp-62k-1795989), 62.300 €, nota 93 |
 | Polonia | 31 | 62 m² | 1.139 € | 3 | [Piso de 127 m² con cuatro estancias, logia y despensa en Bytom](https://realhunt.co/es/deal/pl-bytom-57k-186977), 57.120 €, nota 96 |
 | Francia | 25 | 52 m² | 1.250 € | 2 | [Piso de cuatro estancias y 71 m² con dos balcones en Mulhouse](https://realhunt.co/es/deal/fr-mulhouse-52k-754748), 51.800 €, nota 90 |
-| Italia | 19 | 70 m² | 1.250 € | 2 | [Casa de piedra reformada con balcón con vistas al lago de Como](https://realhunt.co/es/deal/it-san-siro-95k-057133), 95.000 €, nota 91 |
-| Estados Unidos | 19 | 95 m² | 872 € | 2 | [Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia Occidental](https://realhunt.co/es/deal/chapmanville-82875), 82.875 €, nota 95 |
+| Italia | 18 | 70 m² | 1.250 € | 2 | [Casa de piedra reformada con balcón con vistas al lago de Como](https://realhunt.co/es/deal/it-san-siro-95k-057133), 95.000 €, nota 91 |
+| Estados Unidos | 15 | 96 m² | 832 € | 2 | [Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia Occidental](https://realhunt.co/es/deal/chapmanville-82875), 82.875 €, nota 95 |
 | Japón | 13 | 106 m² | 758 € | 3 | [Kominka en la ladera con vistas al mar sobre la costa de Kyoto](https://realhunt.co/es/deal/Da7vZIFDIuo), 54.280 €, nota 86 |
 | México | 10 | 68 m² | 1.140 € | 2 | [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), 50.575 €, nota 93 |
 | Alemania | 10 | 57 m² | 1.078 € | 1 | [Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz](https://realhunt.co/es/deal/de-chemnitz-55k-462680), 55.000 €, nota 84 |
@@ -53,7 +53,7 @@ Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Francia | 13 | 113 m² | 1.158 € | 3 | [Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois](https://realhunt.co/es/deal/fr-ohain-148k-150454), 148.400 €, nota 91 |
 | Grecia | 13 | 93 m² | 1.465 € | 2 | [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k), 109.000 €, nota 93 |
 | Portugal | 12 | 125 m² | 1.364 € | 2 | [Casa de cinco dormitorios con dos cocinas, calefacción central y tejado nuevo en Silvares, Fundão](https://realhunt.co/es/deal/pt-silvares-110k-271372), 110.000 €, nota 91 |
-| Estados Unidos | 12 | 133 m² | 1.364 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 151.000 €, nota 90 |
+| Estados Unidos | 11 | 114 m² | 1.364 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 153.900 €, nota 91 |
 | Reino Unido | 2 | s. d. | s. d. | 2 | [Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k), 126.500 €, nota 83 |
 | Dominican Republic | 2 | s. d. | s. d. | 2 | [Piso amueblado en primera línea en Juan Dolio con balcón con vistas al mar](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359), 187.800 €, nota 89 |
 | Chipre | 2 | s. d. | s. d. | 2 | [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), 130.000 €, nota 83 |
@@ -63,7 +63,7 @@ Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 641 anuncios escogidos (el 68% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 634 anuncios escogidos (el 68% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Los tramos no se solapan: hasta 50.000 €; de 50.001 a 100.000 €; de 100.001 a 200.000 €.
 - La superficie y el precio por m² se muestran cuando al menos 3 casas del tramo indican su superficie. Un tramo vacío significa que RealHunt no tiene hoy ninguna casa ahí, no que no exista en el país.

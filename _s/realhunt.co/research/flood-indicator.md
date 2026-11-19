@@ -1,17 +1,17 @@
 # Cheap homes and flood risk: share with a medium or high indicator, by country (2026)
 
-52 of 634 homes on RealHunt with a flood indicator (8%) are marked medium or high, and 13 are marked high. The share is largest in the Dominican Republic (100% of 5), the United States (33% of 57), Greece (20% of 20). No home is marked medium or high in France, Poland, Germany, the Netherlands, Portugal, Canada and Switzerland.
+51 of 627 homes on RealHunt with a flood indicator (8%) are marked medium or high, and 12 are marked high. The share is largest in the Dominican Republic (100% of 5), the United States (35% of 52), Greece (20% of 20). No home is marked medium or high in France, Poland, Germany, the Netherlands, Portugal, Canada and Switzerland.
 
-The indicator is RealHunt's own first check, 18 November 2026: an official flood zone where one is open to query (49 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
+The indicator is RealHunt's own first check, 19 November 2026: an official flood zone where one is open to query (45 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
 
-Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.csv
+Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.csv
 
 ## The table
 
 | Country | Homes with the indicator | Low | Medium | High | Medium or high | With an official zone |
 | --- | --- | --- | --- | --- | --- | --- |
 | Dominican Republic | 5 | 0 | 5 | 0 | 100% | 0 |
-| United States | 57 | 38 | 6 | 13 | 33% | 49 |
+| United States | 52 | 34 | 6 | 12 | 35% | 45 |
 | Greece | 20 | 16 | 4 | 0 | 20% | 0 |
 | Cyprus | 5 | 4 | 1 | 0 | 20% | 0 |
 | Bulgaria | 7 | 6 | 1 | 0 | 14% | 0 |
@@ -19,8 +19,8 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/flood-i
 | Mexico | 12 | 11 | 1 | 0 | 8% | 0 |
 | Japan | 31 | 29 | 2 | 0 | 6% | 0 |
 | Denmark | 46 | 44 | 2 | 0 | 4% | 0 |
-| Sweden | 36 | 35 | 1 | 0 | 3% | 0 |
-| Italy | 68 | 67 | 1 | 0 | 1% | 0 |
+| Sweden | 35 | 34 | 1 | 0 | 3% | 0 |
+| Italy | 67 | 66 | 1 | 0 | 1% | 0 |
 | France | 45 | 45 | 0 | 0 | 0% | 0 |
 | Poland | 31 | 31 | 0 | 0 | 0% | 0 |
 | Germany | 20 | 20 | 0 | 0 | 0% | 0 |
@@ -34,7 +34,7 @@ Updated 18 November 2026. Source: RealHunt, https://realhunt.co/research/flood-i
 - The indicator is a first filter, not a flood-risk assessment. Outside the United States it is a rough reading of the terrain: a home marked low can still flood, and a home marked medium may be perfectly safe behind a defence.
 - Countries are not measured with the same ruler: the United States figure uses official flood zones for most homes, the others do not. Compare countries with care.
 - 7 homes have no indicator yet and are not counted. Countries with fewer than 5 homes with the indicator are left out; with fewer than 10 they are marked as a small sample.
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 641 chosen listings (68% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 634 chosen listings (68% of them at or under €100,000), not national averages.
 - Before buying, check the address on the official flood map of the country and ask the seller and the insurer about past floods.
 
 ## How to cite

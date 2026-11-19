@@ -1,24 +1,24 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 18 de noviembre de 2026, RealHunt publica 69 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 69 casas es de 59.000 € (1.014 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 19 de noviembre de 2026, RealHunt publica 68 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 68 casas es de 59.000 € (1.014 € por m², calculado con las 43 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 195.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 18 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 19 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
 
 ## Datos clave
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 69 |
+| Casas en RealHunt | 68 |
 | Precio de salida mediano | 59.000 € |
 | Precio mediano por m² | 1.014 € (43 casas de superficie conocida) |
 | Superficie mediana | 76 m² |
 | La más barata y la más cara | 12.000 € · 195.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 82 |
+| Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciprocidad (EE.UU., Reino Unido, Canadá, Australia califican). |
 | Impuesto anual sobre la vivienda | IMU 0,4-1,06% en segundas viviendas (sobre el valor catastral). |
-| Fecha de estas cifras | 18 de noviembre de 2026 |
+| Fecha de estas cifras | 19 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 69 casas, de mejor a peor nota
+## Las 68 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -461,14 +461,6 @@ Casa adosada de dos plantas en la tranquila aldea de Ludduì, en una colina de B
 
 https://realhunt.co/es/deal/it-sardinia-budoni-sea-view-158k
 
-### Casa estilo chalet con vistas a la montaña
-
-59.000 € · Martiniana Po, Piedmont, Italy · nota RealHunt 79 · añadida el 2026-09-23
-
-¿Buscas una escapada tranquila rodeada de naturaleza? Esta casa estilo chalet en Martiniana Po ofrece la mezcla perfecta de comodidad, privacidad y vida de montaña.
-
-https://realhunt.co/es/deal/DdM-Ye2jLIm
-
 ### Terrazas panorámicas y jardín privado en un pueblo histórico de Lunigiana
 
 100.000 € · Lunigiana, Massa-Carrara, Tuscany, Italy · nota RealHunt 79 · añadida el 2026-09-23
@@ -484,14 +476,6 @@ https://realhunt.co/es/deal/DdVz9K2ktYe
 Vivienda de tres piezas en primera planta con entrada totalmente independiente, en la tranquila zona de Mura de Montaione, reformada con mimo en 2019: salón amplio con chimenea que da a una terraza privada, cocina moderna con mesa de madera y lámparas colgantes, dos dormitorios luminosos y baño con ventana. Abajo, un patio privado y una bodega con zona de lavadero. En las colinas entre Florencia, Pisa y Siena. Precio 140.000 €, unos 1.795 €/m².
 
 https://realhunt.co/es/deal/it-tuscany-montaione-renovated-140k
-
-### Casa de tres dormitorios en lo alto de una colina, con dos chimeneas y terraza panorámica a la montaña
-
-90.000 € · Tuscany, Italy · nota RealHunt 78 · añadida el 2026-09-23
-
-En un tranquilo pueblo en lo alto de una colina en la Toscana, esta casa luminosa combina espacios amplios, dos chimeneas y una terraza panorámica con preciosas vistas a las montañas de alrededor. Con tres dormitorios amplios y un interior listo para entrar a vivir, es un sitio acogedor para disfrutar de la auténtica vida de pueblo toscano.
-
-https://realhunt.co/es/deal/DdLhHoAESiS
 
 ### Casa de ladrillo restaurada con patio en el centro antiguo de Amandola, Le Marche
 
@@ -572,6 +556,14 @@ https://realhunt.co/es/deal/it-cisternino-65k-4hcrku
 Una 'cummersa' típica e independiente de unos 45 m² en la Via Porta Nuova, en el casco histórico de Locorotondo, uno de los pueblos más bonitos de Italia, en el valle de Itria. Lista para entrar y en excelente estado estructural: salón y aseo abajo, dormitorio con chimenea de época arriba. Para vivir o para alquilar a turistas.
 
 https://realhunt.co/es/deal/it-locorotondo-75k-3me3r0
+
+### Casa de tres dormitorios en lo alto de una colina, con dos chimeneas y terraza panorámica a la montaña
+
+85.000 € · Bajardo, Liguria · nota RealHunt 75 · añadida el 2026-09-23
+
+Set in a peaceful hilltop village in Liguria, this bright home pairs generous living spaces, two fireplaces and a panoramic terrace with beautiful views across the surrounding mountains. With three spacious bedrooms and a move-in-ready interior, it is a welcoming place to enjoy authentic Tuscan village life.
+
+https://realhunt.co/es/deal/DdLhHoAESiS
 
 ### Casa con jardín en Borgorose, Rieti
 

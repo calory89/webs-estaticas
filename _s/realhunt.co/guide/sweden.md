@@ -36,7 +36,7 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 - [€59,000 · Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Sweden · score 92 · 156 m² · 4 bed
 - [€55,000 · 1914 home with lake views, guest house and double garage on 6,525 m²](https://realhunt.co/deal/DcaE8pfoH77) · Naggen, Medelpad, Sweden · score 92 · 120 m² · 2 bed
 
-[All 39 homes in Sweden](https://realhunt.co/homes/sweden)
+[All 38 homes in Sweden](https://realhunt.co/homes/sweden)
 
 [Costs, taxes and sources for Sweden](https://realhunt.co/costs/sweden) · [Buying-cost calculator for Sweden](https://realhunt.co/buying-costs/sweden) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -63,4 +63,4 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 Who writes this. RealHunt Research is the name RealHunt publishes its own studies and guides under; RealHunt is run by Equinox Investment Group LLC, founded by Carlos de Ory Gordillo. Rules, taxes and costs are compiled from the sources listed on this page; prices come from the homes listed on RealHunt. General information, not legal or tax advice. [Editorial policy and corrections](https://realhunt.co/editorial-policy) · [How the score works](https://realhunt.co/method) · [Who we are](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/guide/sweden (RealHunt, 2026-11-18)
+Source: https://realhunt.co/guide/sweden (RealHunt, 2026-11-19)

@@ -4,18 +4,18 @@ Prensa
 
 RealHunt (realhunt.co) es una web donde los extranjeros encuentran, comprueban y compran vivienda: reúne casas baratas en venta en todo el mundo, cada una revisada por una persona y puntuada de 70 a 98 frente a todas las demás de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original y los compradores no pagan nada. También publica, con permiso para citarlos, las normas de compra, los impuestos y los gastos de 20 países y datos sobre lo que cuestan las casas baratas.
 
-Cifras actualizadas el 18 de noviembre de 2026 · Contacto de prensa: carlos@equinoxinvestmentgroup.com
+Cifras actualizadas el 19 de noviembre de 2026 · Contacto de prensa: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt en cifras
 
-- 641casas en venta en la web
+- 634casas en venta en la web
 - 19países con al menos 3 casas
-- 86.962 €precio de salida mediano
+- 86.500 €precio de salida mediano
 - 7.400 €la casa más barata hoy
 - 68%de las casas cuesta 100.000 € o menos
 - 70–98rango de notas hoy (escala de 70 a 98)
 - 135casas añadidas en los últimos 30 días
-- 57portales y agencias de los que salen las casas
+- 58portales y agencias de los que salen las casas
 - 280respuestas a «¿puedo comprar allí?» (14 nacionalidades, 20 países)
 
 Calculadas con las casas de la web cada vez que se actualiza. Precios de salida en euros.
@@ -27,10 +27,10 @@ Calculadas con las casas de la web cada vez que se actualiza. Precios de salida 
 - [Gastos de compra de una vivienda por país: impuestos y gastos además del precio (2026)](https://realhunt.co/es/research/buying-costs-by-country). Del 0,6–1,1% en Georgia al 12–22% en el norte de Chipre.
 - [Dónde puede y dónde no puede comprar casa un extranjero: las normas de 20 países (2026)](https://realhunt.co/es/research/where-foreigners-can-buy). Libre para cualquier nacionalidad en 12 de 20 países; restringido en Canadá, Dinamarca y Suiza.
 - [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Jutlandia Occidental, Dinamarca (91).
-- [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 80 casas de 50.000 € o menos; la mayoría en Italia (33).
+- [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 79 casas de 50.000 € o menos; la mayoría en Italia (33).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
-- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 634 casas está marcado como medio o alto; 13, como alto.
-- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.456 €/m² a menos de 30 km de un aeropuerto, 1.037 €/m² entre 30 y 60 km.
+- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 627 casas está marcado como medio o alto; 12, como alto.
+- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.460 €/m² a menos de 30 km de un aeropuerto, 1.037 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
 
 Cada página tiene su gráfico, tabla, CSV, método y una cita lista para copiar. ¿Necesitas otro corte (un país, un tramo de precio, un mes)? Pídelo en carlos@equinoxinvestmentgroup.com.
@@ -66,4 +66,4 @@ Prensa, peticiones de datos y entrevistas: carlos@equinoxinvestmentgroup.com. Re
 Escribir al contacto de prensa[Todos los datos](https://realhunt.co/es/research)[Insignias y widgets](https://realhunt.co/es/embed)
 
 ---
-Fuente: https://realhunt.co/es/press (RealHunt, 2026-11-18)
+Fuente: https://realhunt.co/es/press (RealHunt, 2026-11-19)

@@ -1,24 +1,24 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 69 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 69 homes is €59,000 (€1,014 per m², from the 43 homes with a known size); the cheapest costs €12,000 and the most expensive €195,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 19 November 2026, RealHunt lists 68 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 68 homes is €59,000 (€1,014 per m², from the 43 homes with a known size); the cheapest costs €12,000 and the most expensive €195,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/italy · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/italy · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
 
 ## Key facts
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 69 |
+| Homes on RealHunt | 68 |
 | Median asking price | €59,000 |
 | Median price per m² | €1,014 (43 homes with a known size) |
 | Median size | 76 m² |
 | Cheapest and most expensive | €12,000 · €195,000 |
-| Median RealHunt score (70 to 98) | 82 |
+| Median RealHunt score (70 to 98) | 83 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
 | Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify). |
 | Yearly property tax | IMU 0.4-1.06% on second homes (on cadastral value). |
-| Date of these figures | 18 November 2026 |
+| Date of these figures | 19 November 2026 |
 
 ## Costs and taxes
 
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 69 homes, best score first
+## The 68 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -461,14 +461,6 @@ A two-level terraced house in the peaceful hillside hamlet of Ludduì, Budoni, w
 
 https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k
 
-### Chalet-style home with mountain views
-
-€59,000 · Martiniana Po, Piedmont, Italy · RealHunt score 79 · added 2026-09-23
-
-Looking for a peaceful escape surrounded by nature? This chalet-style home in Martiniana Po offers the perfect blend of comfort, privacy, and mountain living.
-
-https://realhunt.co/deal/DdM-Ye2jLIm
-
 ### Panoramic terraces and a private garden in a historic Lunigiana village
 
 €100,000 · Lunigiana, Massa-Carrara, Tuscany, Italy · RealHunt score 79 · added 2026-09-23
@@ -484,14 +476,6 @@ https://realhunt.co/deal/DdVz9K2ktYe
 A three-room first-floor home with a fully independent entrance in the quiet Mura area of Montaione, carefully renovated in 2019: a spacious living room with a fireplace opening onto a private terrace, a modern kitchen with a wooden table and pendant lights, two bright bedrooms and a bathroom with a window. Below, a private courtyard and a cellar with a laundry corner. In the hills between Florence, Pisa and Siena. Asking €140,000, about €1,795/m².
 
 https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
-
-### Three-bedroom hilltop home with two fireplaces and a panoramic mountain terrace
-
-€90,000 · Tuscany, Italy · RealHunt score 78 · added 2026-09-23
-
-Set in a peaceful hilltop village in Tuscany, this bright home pairs generous living spaces, two fireplaces and a panoramic terrace with beautiful views across the surrounding mountains. With three spacious bedrooms and a move-in-ready interior, it is a welcoming place to enjoy authentic Tuscan village life.
-
-https://realhunt.co/deal/DdLhHoAESiS
 
 ### Restored brick house with courtyard in the old centre of Amandola, Le Marche
 
@@ -572,6 +556,14 @@ https://realhunt.co/deal/it-cisternino-65k-4hcrku
 A typical detached 'cummersa' of about 45 m² on Via Porta Nuova in the historic centre of Locorotondo, one of Italy's most beautiful villages in the Itria Valley. Ready to move into and in excellent structural condition: living area and guest bathroom below, a bedroom with a period fireplace above. Works as a home or a holiday let.
 
 https://realhunt.co/deal/it-locorotondo-75k-3me3r0
+
+### Three-bedroom hilltop home with two fireplaces and a panoramic mountain terrace
+
+€85,000 · Bajardo, Liguria · RealHunt score 75 · added 2026-09-23
+
+Set in a peaceful hilltop village in Liguria, this bright home pairs generous living spaces, two fireplaces and a panoramic terrace with beautiful views across the surrounding mountains. With three spacious bedrooms and a move-in-ready interior, it is a welcoming place to enjoy authentic Tuscan village life.
+
+https://realhunt.co/deal/DdLhHoAESiS
 
 ### House with garden in Borgorose, Rieti
 

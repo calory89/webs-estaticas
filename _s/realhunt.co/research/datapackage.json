@@ -2,8 +2,8 @@
  "name": "realhunt-research",
  "title": "RealHunt data: cheap homes, buying costs and rules for foreign buyers",
  "homepage": "https://realhunt.co/research",
- "version": "2026-11-18",
- "created": "2026-11-18",
+ "version": "2026-11-19",
+ "created": "2026-11-19",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -26,7 +26,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median asking price, price per m² and cheapest home in 19 countries, from 641 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
+   "description": "Median asking price, price per m² and cheapest home in 19 countries, from 634 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
    "schema": {
     "fields": [
      {
@@ -295,7 +295,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "80 homes at or under €50,000, checked by a person: how many each country and region has, the cheapest and the median size. Chart, tables and CSV.",
+   "description": "79 homes at or under €50,000, checked by a person: how many each country and region has, the cheapest and the median size. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {
@@ -381,7 +381,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "8% of 634 cheap homes carry a medium or high flood indicator. The share in each country, what the indicator is and what it is not. Chart and CSV.",
+   "description": "8% of 627 cheap homes carry a medium or high flood indicator. The share in each country, what the indicator is and what it is not. Chart and CSV.",
    "schema": {
     "fields": [
      {
@@ -424,7 +424,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median price and price per m² of 628 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
+   "description": "Median price and price per m² of 621 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {

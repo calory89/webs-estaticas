@@ -1,24 +1,24 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 18 November 2026, RealHunt lists 57 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 57 homes is €173,300 (€1,465 per m², from the 57 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 19 November 2026, RealHunt lists 52 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 52 homes is €213,600 (€1,654 per m², from the 52 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/united-states · Updated 18 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/united-states · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
 
 ## Key facts
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 57 |
-| Median asking price | €173,300 |
-| Median price per m² | €1,465 (57 homes with a known size) |
-| Median size | 114 m² |
+| Homes on RealHunt | 52 |
+| Median asking price | €213,600 |
+| Median price per m² | €1,654 (52 homes with a known size) |
+| Median size | 116 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China. |
 | Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit. |
-| Date of these figures | 18 November 2026 |
+| Date of these figures | 19 November 2026 |
 
 ## Costs and taxes
 
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 57 homes, best score first
+## The 52 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -74,14 +74,6 @@ https://realhunt.co/deal/chapmanville-82875
 
 https://realhunt.co/deal/mckees-rocks-65428
 
-### Bright refreshed 3-bed with new kitchen next to the national forest
-
-€80,100 · Kane, Pennsylvania · 108 m² · 3 bedrooms · RealHunt score 92 · added 2026-10-05
-
-A two-storey 1910 house of about 108 m², refreshed with a bright neutral interior, new flooring throughout and a kitchen with brand-new appliances. Covered wood deck off the kitchen, three bedrooms upstairs. Kane is the gateway to the Allegheny National Forest. That is about €80,100.
-
-https://realhunt.co/deal/us-kane-80k-699794
-
 ### Updated 2-bed house in Cleveland, Oklahoma
 
 €68,917 · Cleveland, Oklahoma · 98 m² · 2 bedrooms · RealHunt score 91 · added 2026-09-23
@@ -92,7 +84,7 @@ https://realhunt.co/deal/cleveland-68917
 
 ### The historic Savage House: a white Victorian with a gingerbread porch
 
-€151,000 · Scotland Neck, North Carolina · 199 m² · 3 bedrooms · RealHunt score 90 · added 2026-10-16
+€153,900 · Scotland Neck, North Carolina · 199 m² · 3 bedrooms · RealHunt score 91 · added 2026-10-16
 
 Step into the charm of the historic Savage House, a beautiful 1900 Victorian in Scotland Neck, North Carolina: 2,143 sq ft (199 m²) with three bedrooms and two bathrooms, gingerbread trim, a front porch reached by a brick path, high ceilings and freshly finished interiors with wood floors, on a large shaded lot. Asking $169,900 (about €151,000), about €759/m².
 
@@ -105,6 +97,14 @@ https://realhunt.co/deal/us-north-carolina-victorian-170k
 Asking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio. The oak staircase, pocket doors, glazed French doors and wide trim are all still in place. It has three bedrooms, two bathrooms (one on the ground floor), an eat-in kitchen, a separate dining room, ground-floor laundry and a floored walk-up attic. Outside there is a front porch, rear deck, fenced back garden and a one-car detached garage. A city park, the library and the river trail are across the street or close by. Yearly property tax US$2,127, no HOA fee.
 
 https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k
+
+### Blue 1907 cottage with 9-foot ceilings and a new kitchen
+
+€79,200 · Freeport, Illinois · 83 m² · 2 bedrooms · RealHunt score 89 · added 2026-10-05
+
+A 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen and dining area. Covered porch, private back yard and a detached garage, in Freeport, Illinois. That is about €83,700.
+
+https://realhunt.co/deal/us-freeport-83k-605154
 
 ### Updated 3-bed house in Clairton, Pennsylvania
 
@@ -122,29 +122,13 @@ https://realhunt.co/deal/clairton-85929
 
 https://realhunt.co/deal/mckeesport-82875
 
-### Blue 1907 cottage with 9-foot ceilings and a new kitchen
+### Modern rustic Ozarks cabin minutes from the river
 
-€83,700 · Freeport, Illinois · 83 m² · 2 bedrooms · RealHunt score 88 · added 2026-10-05
+€86,500 · Dora, Missouri · 104 m² · 2 bedrooms · RealHunt score 88 · added 2026-10-05
 
-A 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen and dining area. Covered porch, private back yard and a detached garage, in Freeport, Illinois. That is about €83,700.
+Built in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land minutes from the North Fork of the White River, Bryant Creek and the Mark Twain National Forest. Full-time home or weekend retreat. That is about €84,500.
 
-https://realhunt.co/deal/us-freeport-83k-605154
-
-### Charming 1952 Cape Cod with fall colours on a 1.1-acre lot
-
-€155,500 · LaVale, Maryland (Allegheny Mountains) · 174 m² · 3 bedrooms · RealHunt score 88 · added 2026-10-16
-
-Charm, space and a great setting: a 1952 three-bedroom Cape Cod on 1.1 acres in LaVale, in the Allegheny Mountains of western Maryland, with 1,868 sq ft (174 m²), hardwood floors, a wooden staircase, bright freshly painted rooms, a full basement and a big lawn framed by trees that blaze orange in autumn. Asking $175,000 (about €155,500), about €894/m².
-
-https://realhunt.co/deal/us-maryland-cape-cod-autumn-175k
-
-### Lake-country home with a wood stove, deck and pool near Big Wolf Lake
-
-€173,300 · Big Wolf Lake, Lewiston, Michigan · 144 m² · 3 bedrooms · RealHunt score 88 · added 2026-10-16
-
-A charming three-bedroom, two-bathroom home on Big Wolf Lake Road in Lewiston, northern Michigan: 1,545 sq ft (144 m²) with a pine-ceiling living room and wood stove, a colourful dining room, a kitchen with stainless appliances, a covered front porch, a deck with an above-ground pool and 0.9 acres of pines. Lakes, trails and golf all around. Asking $195,000 (about €173,300), about €1,203/m².
-
-https://realhunt.co/deal/us-michigan-big-wolf-lake-195k
+https://realhunt.co/deal/us-dora-84k-329130
 
 ### Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa
 
@@ -154,13 +138,37 @@ Recently updated with new roof (Jan 2022), fresh exterior and interior paint (Ma
 
 https://realhunt.co/deal/us-tampa-8105-325k
 
-### Move-in ready 2-bed house in East Palestine, Ohio
+### Gambrel-roof farmhouse with metal roof and heat pump in Maine
 
-€82,788 · East Palestine, Ohio · 95 m² · 2 bedrooms · RealHunt score 87 · added 2026-09-23
+€72,800 · Ashland, Maine · 96 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-05
 
-95 m² (1,024 sq ft), 2 bed, 1 bath, built 1890. Asking $94,900.
+Three bedrooms and two bathrooms in about 96 m², with hardwood floors, an eat-in kitchen and updated bathrooms. The big jobs are done: metal roof and an efficient heat pump. Green lot in Ashland, in the woods and lakes of northern Maine. That is about €89,000.
 
-https://realhunt.co/deal/east-palestine-82788
+https://realhunt.co/deal/us-ashland-89k-672054
+
+### Garden house with arbor and garage on the Canadian border
+
+€77,300 · Madawaska, Maine · 124 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-05
+
+A 1943 house with three bedrooms and 1.5 baths in about 124 m². Recent updates: new flooring, new furnace and water heater, new stainless kitchen appliances. Pretty garden with an arbor and a detached garage, near the school and sports fields in Madawaska, Maine, across the river from Canada. That is about €79,300.
+
+https://realhunt.co/deal/us-madawaska-79k-677888
+
+### Riverfront house on French Island with views of the Penobscot
+
+€159,400 · French Island, Old Town, Maine · 117 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-16
+
+A 1,258 sq ft (117 m²) three-bedroom home on historic French Island in Old Town, Maine, with stunning views of the Penobscot River right from the yard: a standing-seam metal roof, a fresh kitchen, a bright living room and a lot that runs down to the water. Bangor and the University of Maine are minutes away. Asking $175,000 (about €159,400), about €1,360/m².
+
+https://realhunt.co/deal/us-maine-old-town-riverfront-185k
+
+### Adirondack farmhouse on 10.8 acres of autumn forest
+
+€163,100 · Forestport, Adirondack foothills, New York · 147 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-16
+
+Forestport Adirondack foothills retreat on 10.8 acres: a 1918 farmhouse of 1,577 sq ft (147 m²) with three bedrooms, a renovated grey kitchen with butcher-block counters, a dining room, a living room with a stone accent wall and an enclosed sun porch, surrounded by maple forest that turns red and gold every October. Asking $179,000 (about €159,100), about €1,082/m².
+
+https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k
 
 ### Well-kept three-bedroom colonial with a metal roof in Geneva, Finger Lakes
 
@@ -201,30 +209,6 @@ https://realhunt.co/deal/us-hollywood-140-501-290k
 Charming 1958 ranch home with recently renovated interior featuring soaring ceilings, exposed wood ceiling details, and wood-look tile flooring. Open floor plan with seamless indoor-outdoor flow to a fully fenced backyard with patio. Close to parks, the Hillsborough River, and major highways for easy Tampa commuting.
 
 https://realhunt.co/deal/us-tampa-8009-312k
-
-### Garden house with arbor and garage on the Canadian border
-
-€79,300 · Madawaska, Maine · 124 m² · 3 bedrooms · RealHunt score 86 · added 2026-10-05
-
-A 1943 house with three bedrooms and 1.5 baths in about 124 m². Recent updates: new flooring, new furnace and water heater, new stainless kitchen appliances. Pretty garden with an arbor and a detached garage, near the school and sports fields in Madawaska, Maine, across the river from Canada. That is about €79,300.
-
-https://realhunt.co/deal/us-madawaska-79k-677888
-
-### Modern rustic Ozarks cabin minutes from the river
-
-€84,500 · Dora, Missouri · 104 m² · 2 bedrooms · RealHunt score 86 · added 2026-10-05
-
-Built in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land minutes from the North Fork of the White River, Bryant Creek and the Mark Twain National Forest. Full-time home or weekend retreat. That is about €84,500.
-
-https://realhunt.co/deal/us-dora-84k-329130
-
-### Gambrel-roof farmhouse with metal roof and heat pump in Maine
-
-€89,000 · Ashland, Maine · 96 m² · 3 bedrooms · RealHunt score 86 · added 2026-10-05
-
-Three bedrooms and two bathrooms in about 96 m², with hardwood floors, an eat-in kitchen and updated bathrooms. The big jobs are done: metal roof and an efficient heat pump. Green lot in Ashland, in the woods and lakes of northern Maine. That is about €89,000.
-
-https://realhunt.co/deal/us-ashland-89k-672054
 
 ### Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort Lauderdale
 
@@ -282,21 +266,13 @@ A large custom-built Scandinavian-style log cabin from 1998 on a quiet country r
 
 https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k
 
-### Adirondack farmhouse on 10.8 acres of autumn forest
+### Well-kept A-frame on 2.5 acres in Michigan's Upper Peninsula
 
-€159,100 · Forestport, Adirondack foothills, New York · 147 m² · 3 bedrooms · RealHunt score 85 · added 2026-10-16
+€173,100 · Kenton, Upper Peninsula, Michigan · 102 m² · 3 bedrooms · RealHunt score 85 · added 2026-10-16
 
-Forestport Adirondack foothills retreat on 10.8 acres: a 1918 farmhouse of 1,577 sq ft (147 m²) with three bedrooms, a renovated grey kitchen with butcher-block counters, a dining room, a living room with a stone accent wall and an enclosed sun porch, surrounded by maple forest that turns red and gold every October. Asking $179,000 (about €159,100), about €1,082/m².
+Just outside Kenton, in the Ottawa National Forest area of Michigan's Upper Peninsula, a well-kept 1984 A-frame on 2.49 acres: 1,097 sq ft (102 m²) with three bedrooms, a kitchen with an island, a vaulted wood-panelled loft, a sunroom looking onto the woods, a deck and a fire pit. Snowmobile and ATV trails start nearby. Asking $190,000 (about €173,100), about €1,700/m².
 
-https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k
-
-### Riverfront house on French Island with views of the Penobscot
-
-€164,400 · French Island, Old Town, Maine · 117 m² · 3 bedrooms · RealHunt score 85 · added 2026-10-16
-
-A 1,258 sq ft (117 m²) three-bedroom home on historic French Island in Old Town, Maine, with stunning views of the Penobscot River right from the yard: a standing-seam metal roof, a fresh kitchen, a bright living room and a lot that runs down to the water. Bangor and the University of Maine are minutes away. Asking $185,000 (about €164,400), about €1,405/m².
-
-https://realhunt.co/deal/us-maine-old-town-riverfront-185k
+https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k
 
 ### Bright corner split-level condo with 2.5 baths at Paragon, Plantation
 
@@ -354,14 +330,6 @@ A 2-bed, 2-bath condo of 1,330 sq ft with a split-bedroom plan, large closets, t
 
 https://realhunt.co/deal/us-kendall-6666-301-299k
 
-### Move-in ready 2-bed house in Marion, Indiana
-
-€87,150 · Marion, Indiana · 71 m² · 2 bedrooms · RealHunt score 83 · added 2026-09-23
-
-71 m² (768 sq ft), 2 bed, 1 bath, built 1954. Asking $99,900. The listing mentions: private fenced-in backyard, detached garage, newer gas furnace, newer central air.
-
-https://realhunt.co/deal/marion-87150
-
 ### Renovated 1-bed house in Perryville, Arkansas
 
 €91,599 · Perryville, Arkansas · 75 m² · 1 bedrooms · RealHunt score 83 · added 2026-09-23
@@ -369,22 +337,6 @@ https://realhunt.co/deal/marion-87150
 75 m² (810 sq ft), 1 bed, 1 bath, built 1948. Asking $105,000. The listing mentions: cherry hill area, no restrictions, cleared acreage, open pasture views.
 
 https://realhunt.co/deal/perryville-91599
-
-### Renovated 0-bed condo in Little River, South Carolina
-
-€92,471 · Little River, South Carolina · 63 m² · RealHunt score 83 · added 2026-09-23
-
-63 m² (680 sq ft), 1 bath, built 1988. Asking $106,000. The listing mentions: stackable washer dryer, large kitchen pantry, large storage room, community pool. HOA about $329 a month.
-
-https://realhunt.co/deal/little-river-92471
-
-### Well-kept A-frame on 2.5 acres in Michigan's Upper Peninsula
-
-€142,200 · Kenton, Upper Peninsula, Michigan · 102 m² · 3 bedrooms · RealHunt score 83 · added 2026-10-16
-
-Just outside Kenton, in the Ottawa National Forest area of Michigan's Upper Peninsula, a well-kept 1984 A-frame on 2.49 acres: 1,097 sq ft (102 m²) with three bedrooms, a kitchen with an island, a vaulted wood-panelled loft, a sunroom looking onto the woods, a deck and a fire pit. Snowmobile and ATV trails start nearby. Asking $160,000 (about €142,200), about €1,394/m².
-
-https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k
 
 ### Brand-new 2024 log cabin surrounded by farmland in Kentucky
 
@@ -466,6 +418,14 @@ A detached 3-bed, 2-bath house on a corner lot with a large fenced back garden f
 
 https://realhunt.co/deal/us-boca-raton-8315-490k
 
+### Renovated 0-bed condo in Little River, South Carolina
+
+€88,800 · Little River, South Carolina · 63 m² · RealHunt score 81 · added 2026-09-23
+
+63 m² (680 sq ft), 1 bath, built 1988. Asking $97,500. The listing mentions: stackable washer dryer, large kitchen pantry, large storage room, community pool. HOA about $329 a month.
+
+https://realhunt.co/deal/little-river-92471
+
 ### Renovated 2-bed house in Beeville, Texas
 
 €95,089 · Beeville, Texas · 74 m² · 2 bedrooms · RealHunt score 81 · added 2026-09-23
@@ -473,6 +433,14 @@ https://realhunt.co/deal/us-boca-raton-8315-490k
 74 m² (798 sq ft), 2 bed, 1 bath, built 1965. Asking $109,000. The listing mentions: new cha system, new plumbing, new electrical, new meter loop.
 
 https://realhunt.co/deal/beeville-95089
+
+### Move-in ready 2-bed house in Marion, Indiana
+
+€118,300 · Marion, Indiana · 71 m² · 2 bedrooms · RealHunt score 81 · added 2026-09-23
+
+71 m² (768 sq ft), 2 bed, 1 bath, built 1954. Asking $129,900. The listing mentions: private fenced-in backyard, detached garage, newer gas furnace, newer central air.
+
+https://realhunt.co/deal/marion-87150
 
 ### Two-bedroom with a screened balcony over the fairways at Coronado Tower II
 
@@ -497,11 +465,3 @@ https://realhunt.co/deal/marion-95874
 A 2-bed, 2-bath townhouse of 1,030 sq ft with two primary suites and remodeled bathrooms, an upgraded kitchen, vaulted wood ceilings, a skylight, a stone accent wall and a loft. In the heart of Plantation, minutes from Plantation Walk, with quick access to the Turnpike, I-595 and Fort Lauderdale airport. Asking US$297,500.
 
 https://realhunt.co/deal/us-plantation-485-36-298k
-
-### Updated 2-bed house in Oswego, New York
-
-€95,961 · Oswego, New York · 66 m² · 2 bedrooms · RealHunt score 77 · added 2026-09-23
-
-66 m² (706 sq ft), 2 bed, 1 bath, built 1905. Asking $110,000.
-
-https://realhunt.co/deal/oswego-95961

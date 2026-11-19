@@ -2,7 +2,7 @@
 
 Este es un directorio de 179 portales inmobiliarios de 54 países: los portales nacionales, las grandes webs de anuncios clasificados y los portales pensados para compradores extranjeros, cada uno con su dirección. Aparecen en el orden en que RealHunt los consulta cuando busca casas en ese país. Estar en la lista no es una recomendación ni una valoración.
 
-Actualizado el 18 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
+Actualizado el 19 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
 
 ## España
 
@@ -38,7 +38,7 @@ RealHunt: 18 casas revisadas, https://realhunt.co/es/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 69 casas revisadas, https://realhunt.co/es/homes/italy
+RealHunt: 68 casas revisadas, https://realhunt.co/es/homes/italy
 
 ## Francia
 
@@ -119,7 +119,7 @@ RealHunt: 46 casas revisadas, https://realhunt.co/es/homes/denmark
 1. [Hemnet](https://www.hemnet.se/)
 2. [Booli](https://www.booli.se/)
 
-RealHunt: 39 casas revisadas, https://realhunt.co/es/homes/sweden
+RealHunt: 38 casas revisadas, https://realhunt.co/es/homes/sweden
 
 ## Noruega
 
@@ -213,7 +213,7 @@ RealHunt: 5 casas revisadas, https://realhunt.co/es/homes/cyprus
 7. [Century 21](https://www.century21.com/)
 8. [RE/MAX](https://www.remax.com/)
 
-RealHunt: 57 casas revisadas, https://realhunt.co/es/homes/united-states
+RealHunt: 52 casas revisadas, https://realhunt.co/es/homes/united-states
 
 ## Canadá
 
