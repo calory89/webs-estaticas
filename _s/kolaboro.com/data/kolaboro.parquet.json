@@ -1,22 +1,22 @@
 {
  "name": "Kolaboro open dataset, Parquet",
  "version": 1,
- "generated": "2026-11-05T16:58:33Z",
+ "generated": "2026-11-19T16:49:11Z",
  "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "source": {
   "url": "https://kolaboro.com/data/bali-cases.json",
-  "sha256": "8f5decbe28f61470ecd5775ca3e8403045c958ee9a03b5744fcbcd7613231606",
-  "updated": "2026-11-05",
-  "projects": 1116
+  "sha256": "8ea186cd320f2f8f396439638274e96ac8ba4d0a8ecf10c1403a6bb59ec11d48",
+  "updated": "2026-11-19",
+  "projects": 2002
  },
  "files": [
   {
    "path": "/data/kolaboro.parquet",
    "table": "projects",
    "description": "one row per tracked project",
-   "rows": 1116,
-   "bytes": 71304,
-   "sha256": "dcd0d097d8a1f467b5755b1f39ac3a4a7217c9f5382fb53e058e90f911eace8d",
+   "rows": 2002,
+   "bytes": 89384,
+   "sha256": "43b94da7ec00d7a9e6934f4c3048514303464d5639868d3fa852f230aebff301",
    "columns": [
     {
      "name": "id",
@@ -192,9 +192,9 @@
    "path": "/data/kolaboro-markets.parquet",
    "table": "markets",
    "description": "one row per market, same method as /api/open/markets",
-   "rows": 170,
-   "bytes": 7713,
-   "sha256": "afda06abb70077225b0ef92873f987e1fa63ccfe848f998a449206357a9e458c",
+   "rows": 182,
+   "bytes": 8005,
+   "sha256": "6ad5ec7cc49654ba72de43b13567b32368d74efbd779956597c6c44ec593556e",
    "columns": [
     {
      "name": "market",
@@ -240,5 +240,5 @@
   }
  ],
  "signed_manifest": "https://kolaboro.com/api/x/e/parquet-manifest",
- "note": "Advertised claims and what is public, not verified facts. Projects are anonymous until verification is complete. Built daily by a GitHub Actions workflow from the public JSON; the signed manifest is produced by the site worker after it re-hashes these files."
+ "note": "Advertised claims and what is public, not verified facts. Each project has a named page with sourced facts, except projects in Sumba. Built daily by a GitHub Actions workflow from the public JSON; the signed manifest is produced by the site worker after it re-hashes these files."
 }
