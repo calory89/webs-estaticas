@@ -263,7 +263,9 @@
     var foot = document.querySelector('footer'), footVisible = false;
     if (foot && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { footVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(foot);
     function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm && !footVisible); }
-    addEventListener('scroll', upd, { passive: true }); upd();
+    // n32s (item 259): no first call here: reading scrollY while the page was still being laid out forced a full layout inside this script
+    // (280 ms on a phone for a long page). The observers above call upd() once the layout is done; without them it runs after load.
+    addEventListener('scroll', upd, { passive: true }); if (!('IntersectionObserver' in window)) addEventListener('load', upd, { once: true });
     // hidden while the reader types in a field. site.css did this with body:has(input:focus), and :has() on the body made the
     // browser restyle the whole page after every DOM change; a class on the body costs nothing (n20p, 9 Nov 2026)
     var typ = function () { var a = document.activeElement; document.body.classList.toggle('kb-typing', !!a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)); };
@@ -680,9 +682,12 @@
   // keep a copy of the index in this browser so search also works offline: fetched once, in idle time, unless data saving is on
   var has = false; try { has = !!localStorage.getItem('kb-sx-v1'); } catch (e) { has = true; }
   var save = navigator.connection && navigator.connection.saveData;
+  // n32s (item 259): only after the reader's first touch, key or scroll (window.kbLate), never during the first load: building the
+  // index of 2,000 projects was a 150 ms task on a phone
   if (!has && !save && !priv) window.kbWhenActive(function () {
     var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { setTimeout(warm, 2500); }, { timeout: 4000 }); };
-    if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+    var late = window.kbLate || function (f) { addEventListener('load', function () { setTimeout(f, 8000); }, { once: true }); };
+    late(go);
   });
 })();
 // verify badges: open their explanation toward the side with room, so it never runs off the screen

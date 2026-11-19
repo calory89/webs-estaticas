@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v 2a099a898b) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v dd003cfe8e) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css). */
@@ -226,6 +226,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
   .k-table--stack tr{display:block;padding:10px 14px;border-bottom:1px solid var(--k-line)}
   .k-table--stack td{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border:0;text-align:end}
   .k-table--stack td::before{content:attr(data-label);color:var(--k-muted);text-align:start;font-weight:500}
+  .k-table--stack tbody tr:nth-child(n+9){content-visibility:auto;contain-intrinsic-size:auto 190px}
 }
 
 /* tabs: role=tablist / role=tab / aria-selected (ds.js adds arrow-key support) */

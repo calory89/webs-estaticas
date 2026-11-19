@@ -109,3 +109,6 @@
 .mk-ix .ix-thin a{border-style:dashed}
 .mk-ix .t{font-size:.9rem;line-height:1.45;color:var(--ink-2,#3D4852)}
 .mk-ix .d{font-size:.8rem;color:var(--muted);margin-top:auto}
+/* n32s (item 259): rows below the first screens are laid out only when they come near the viewport */
+.mk-list>li:nth-child(n+24){content-visibility:auto;contain-intrinsic-size:auto 53px}
+@media(max-width:760px){.mk-list>li:nth-child(n+24){contain-intrinsic-size:auto 86px}}

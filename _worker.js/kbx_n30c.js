@@ -16,7 +16,7 @@ import { mkName, coName } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const pre = l => l === 'en' ? '' : '/' + l;
-export const N30C_V = 'n30c1';
+export const N30C_V = 'n32s1';   // n32s: map starts after the first interaction
 export const PATHS = /^\/k\/n30c-map\.js$|^\/api\/v1\/pin\/[A-Za-z0-9-]{3,20}$|^\/embed\/v2(?:\.js|\/[a-z0-9-]{1,90}\/?)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:prices\/history(?:\/[a-z0-9-]{2,60})?|watch\/lookalikes\/images|tools\/widget|engineering\/status)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
 const MEMO = {};
@@ -295,7 +295,8 @@ function mapClient() {
     listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
     var u = new URL(location.href); KEYS.forEach(function (k) { if (q(k)) u.searchParams.set(k, q(k)); else u.searchParams.delete(k); }); try { history.replaceState(null, '', u.pathname + u.search); } catch (e) {}
     if (!map || !Lf) return; cluster(); drawHeat();
-    if (fit) { var B = pins.map(function (p) { return [p[4], p[5]]; }).concat(Object.keys(byMk).map(function (k) { return data.mk[k]; })); if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12 }); fit = false; }
+    if (fit) { var B = pins.map(function (p) { return [p[4], p[5]]; }).concat(Object.keys(byMk).map(function (k) { return data.mk[k]; })); if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12, animate: !mapEl.classList.contains('kmp-ld') }); fit = false; }
+    if (mapEl.classList.contains('kmp-ld')) setTimeout(function () { mapEl.classList.remove('kmp-ld'); }, 60);   // n32s: shown once in place (no layout shift)
   };
   var rs = el('button', 'kmp-r', f('mpr')); rs.type = 'button'; rs.hidden = true; fm.appendChild(rs);
   var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); listEl.parentNode.insertBefore(e0, listEl);
@@ -306,9 +307,13 @@ function mapClient() {
     if (leg && j.delay) leg.querySelector('.kmp-legt').textContent = f('mh_leg', { n: nf(j.delay.n), d: j.delay.as_of }); draw(); }).catch(function () { cnt.textContent = f('mpe'); if (!map) mapEl.textContent = f('mpe'); });
   fm.addEventListener('change', function () { lim = 60; fit = true; draw(); }); fm.addEventListener('submit', function (e) { e.preventDefault(); });
   var mb = MP.querySelector('.kmp-more'); if (mb) mb.addEventListener('click', function () { lim += 120; draw(); });
-  var boot = function () { if (map) return; var cs = el('link'); cs.rel = 'stylesheet'; cs.href = M.css; document.head.appendChild(cs); var s = el('script'); s.src = M.js; s.onload = function () { Lf = window.L; mapEl.textContent = ''; map = Lf.map(mapEl, { scrollWheelZoom: false, worldCopyJump: true, minZoom: innerWidth < 700 ? 1 : 2, preferCanvas: false }).setView([20, 20], 2);
+  var boot = function () { if (map || booted) return; booted = true; var cs = el('link'); cs.rel = 'stylesheet'; cs.href = M.css; document.head.appendChild(cs); var hs = el('style'); hs.textContent = '.kmp-ld .leaflet-pane,.kmp-ld .leaflet-control-container{visibility:hidden}'; document.head.appendChild(hs); var s = el('script'); s.src = M.js; s.onload = function () { Lf = window.L; mapEl.textContent = ''; mapEl.classList.add('kmp-ld'); setTimeout(function () { mapEl.classList.remove('kmp-ld'); }, 4000); map = Lf.map(mapEl, { scrollWheelZoom: false, worldCopyJump: true, minZoom: innerWidth < 700 ? 1 : 2, preferCanvas: false }).setView([20, 20], 2);
     Lf.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map); map.on('zoomend', function () { cluster(); }); draw(); }; s.onerror = function () { mapEl.textContent = f('mpe'); }; document.head.appendChild(s); };
-  if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); boot(); } }, { rootMargin: '300px' }); io.observe(mapEl); } else boot();
+  // n32s (item 259): the map library (Leaflet, about 1.2 s of main-thread work on a phone) starts after the reader's first touch, scroll,
+  // key or mouse move (window.kbLate, 8 s after load at the latest), or at once on a tap on the map; the list works before that
+  var booted = false, late = function () { (window.kbLate || function (f) { f(); })(boot); };
+  mapEl.addEventListener('pointerdown', boot, { once: true });
+  if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); late(); } }, { rootMargin: '300px' }); io.observe(mapEl); } else late();
 }
 const MAP_JS = '(' + mapClient.toString() + ')();';
 // strings the map page passes to the client (kbx_u27.js mapPage)

@@ -93,7 +93,10 @@
     h += '<a class="btn btn-line" href="/database#ask">Ask about this market</a></div></div></section>';
     return { html: h, draw: function(mode){
       var s = C.slice().sort(byScore); if (mode === 'asc') s.reverse(); if (mode === 'id') s.sort(function(a, b){ return a.id < b.id ? -1 : 1; });
-      $('mk-list').innerHTML = '<li class="mk-hd" aria-hidden="true"><span>Project</span><span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span><span>Published</span><span>Confirmed</span><span>Signals</span></li>' + s.map(function(c){ return row(c, showMarket); }).join('');
+      // n32s (item 259): the first 40 rows at once, the rest in slices of 80 between frames (482 rows for Dubai were one 300 ms task on a phone)
+      var R = s.map(function(c){ return row(c, showMarket); }), el = $('mk-list'), tok = (el._kt = (el._kt || 0) + 1), i = 40;
+      el.innerHTML = '<li class="mk-hd" aria-hidden="true"><span>Project</span><span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span><span>Published</span><span>Confirmed</span><span>Signals</span></li>' + R.slice(0, i).join('');
+      (function more(){ if (el._kt !== tok || i >= R.length) return; el.insertAdjacentHTML('beforeend', R.slice(i, i + 80).join('')); i += 80; setTimeout(more, 30); })();
     } };
   }
   function wireSort(draw){
