@@ -1,5 +1,5 @@
 {
- "v": "ibg62j-2zfp",
+ "v": "1c2wduy-ag59",
  "built": "2026-11-19",
  "pages": {
   "m": [
@@ -21,6 +21,15 @@
    "ar"
   ],
   "registers": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/agent-check": [
    "es",
    "de",
    "fr",
@@ -66,6 +75,15 @@
    "ar"
   ],
   "tools/deposit-protection": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/insolvency-check": [
    "es",
    "de",
    "fr",
