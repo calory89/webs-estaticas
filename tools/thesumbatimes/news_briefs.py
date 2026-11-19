@@ -3,13 +3,122 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'business',
+ 'slug': 'msm-sugar-mill-fire-umalulu-east-sumba-2026',
+ 'date': '2026-11-20',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'incendio-ingenio-azucarero-msm-umalulu-sumba-oriental-2026', 'id': 'kebakaran-pabrik-gula-msm-umalulu-sumba-timur-2026'},
+ 'keywords': {'en': ['PT Muria Sumba Manis fire', 'East Sumba sugar mill', 'Umalulu sugar factory', 'Sumba sugarcane', 'Sumba investment 2026', 'sugar industry NTT'],
+              'es': ['incendio ingenio azucarero Sumba', 'PT Muria Sumba Manis', 'Umalulu Sumba Oriental', 'caña de azúcar Sumba', 'inversión en Sumba 2026'],
+              'id': ['kebakaran pabrik gula Sumba Timur', 'PT Muria Sumba Manis', 'pabrik gula Umalulu', 'tebu Sumba Timur', 'investasi Sumba Timur 2026']},
+ 'en': {'title': 'Police: cane waste self-ignited in fire at East Sumba sugar mill',
+        'dek': 'Police say fermenting cane waste caught fire at 44°C at PT MSM in Umalulu and hit a conveyor building; damage, date and mill status are not reported.',
+        'answer': 'Police in East Sumba say a pile of fermenting sugarcane waste ignited spontaneously at the PT Muria Sumba Manis sugar mill in Umalulu, citing a company '
+                  'thermometer reading of 44°C, Waingapu.com reported on 18 November 2026. The waste section and a conveyor building were affected; no damage value or injuries '
+                  'were reported.',
+        'keys': ['Police criminal investigation chief Iptu Rizaldi Haris said fermenting cane waste burned on its own in high heat.',
+                 'He cited 44°C on the company thermometer on the Sunday before.',
+                 'The waste section was fairly heavily hit and a conveyor building was affected; police examined the scene.',
+                 'The report gives no fire date, injuries, damage value, mill status or company statement.'],
+        'visitors': 'The report concerns a working industrial site in Umalulu, not a tourist area, and mentions no travel disruption.',
+        'body': '<p>Police in East Sumba say a heap of sugarcane waste that was fermenting and heating up caught fire on its own at the PT Muria Sumba Manis (MSM) sugar mill in '
+                'Umalulu district, according to Waingapu.com on Wednesday 18 November 2026. Times are WITA (UTC+8).</p><h2>What the police say</h2><p>Photos and videos of the '
+                'fire spread on social media, but no official explanation followed at first. Waingapu.com asked the East Sumba police criminal investigation chief, Iptu Rizaldi '
+                'Haris, by WhatsApp on the evening of Tuesday 17 November. He replied that the incident report was still being written and would go to the police chief before any '
+                'information was released.</p><p>On the evening of Wednesday 18 November he gave the first account. According to him, a pile of sugarcane waste in which microbes '
+                "were fermenting the material burned spontaneously because of high temperature. He said the company's own thermometer showed 44 degrees Celsius on the Sunday "
+                'before. Rizaldi added that the waste section was fairly heavily affected, that the conveyor building was also hit, and that police have examined the '
+                'scene.</p><h2>What is not known</h2><p>Waingapu.com is the only outlet with these statements. Its report does not give the date or time of the fire, any '
+                "injuries, the value of the damage, whether the mill has stopped or for how long, or any statement from the company. The cause is the police's explanation as "
+                'relayed by the outlet; no technical report or investigation result has been published.</p><h2>What it means for visitors, residents and '
+                'investors</h2><p>Visitors: the report concerns a working industrial site in Umalulu, not a tourist area, and it mentions no travel disruption. Residents: it '
+                'mentions no evacuation, smoke warning or injury, but it does not rule them out either, so follow the East Sumba disaster agency for local alerts. Investors: a '
+                "fire in the waste area and a damaged conveyor building at the island's sugar mill is a reminder that fire risk is part of cane operations in the dry season. BMKG "
+                'expects the rains to start late in most of NTT, as <a href="/en/living/el-nino-late-rainy-season-ntt-sumba-2026/">we reported earlier</a>. Watch for a company '
+                'statement on repairs and on the harvest and milling schedule before drawing conclusions about supply or jobs.</p>',
+        'faq': [['What caused the fire at the East Sumba sugar mill?',
+                 'Police said on 18 November 2026 that a pile of sugarcane waste, fermenting from microbes, burned spontaneously in high temperature at PT Muria Sumba Manis in '
+                 'Umalulu, Waingapu.com reported. No technical report has been published.'],
+                ['Is the mill still operating?', 'Not reported. The Waingapu.com story does not say whether the mill stopped, for how long, or what the damage is worth.']]},
+ 'es': {'title': 'Incendio en ingenio azucarero de Sumba: combustión espontánea',
+        'dek': 'La policía dice que residuos de caña en fermentación ardieron a 44°C en PT MSM, en Umalulu, y afectaron un edificio de cintas; faltan daños y fecha.',
+        'answer': 'La policía de Sumba Oriental dice que una pila de residuos de caña en fermentación se incendió de forma espontánea en el ingenio de PT Muria Sumba Manis, en '
+                  'Umalulu, y cita 44°C en el termómetro de la empresa, informó Waingapu.com el 18 de noviembre de 2026. Resultaron afectados la zona de residuos y un edificio de '
+                  'cintas; no se informó de valor de daños ni de heridos.',
+        'keys': ['El jefe de investigación criminal, Iptu Rizaldi Haris, dijo que residuos de caña en fermentación ardieron solos por el calor.',
+                 'Citó 44°C en el termómetro de la empresa el domingo anterior.',
+                 'La zona de residuos sufrió daños considerables y un edificio de cintas resultó afectado; la policía inspeccionó el lugar.',
+                 'La información no da fecha del incendio, heridos, valor de los daños, estado del ingenio ni declaración de la empresa.'],
+        'visitors': 'La noticia trata de una instalación industrial en Umalulu, no de una zona turística, y no menciona trastornos para los viajeros.',
+        'body': '<p>La policía de Sumba Oriental dice que un montón de residuos de caña de azúcar, que fermentaba y se calentaba, se incendió por sí solo en el ingenio de PT '
+                'Muria Sumba Manis (MSM), en el distrito de Umalulu, según Waingapu.com el miércoles 18 de noviembre de 2026. Las horas son WITA (UTC+8).</p><h2>Qué dice la '
+                'policía</h2><p>Fotos y vídeos del incendio circularon por las redes sociales, pero al principio no hubo explicación oficial. Waingapu.com preguntó por WhatsApp '
+                'al jefe de investigación criminal de la policía de Sumba Oriental, Iptu Rizaldi Haris, la noche del martes 17 de noviembre. Respondió que el informe del suceso '
+                'aún se estaba redactando y que iría primero al jefe de policía antes de dar información.</p><p>La noche del miércoles 18 de noviembre dio la primera versión. '
+                'Según él, una pila de residuos de caña en la que microbios fermentaban el material ardió de forma espontánea por la alta temperatura. Dijo que el termómetro de '
+                'la propia empresa marcó 44 grados centígrados el domingo anterior. Rizaldi añadió que la zona de residuos sufrió daños considerables, que el edificio de las '
+                'cintas transportadoras también resultó afectado y que la policía ya inspeccionó el lugar.</p><h2>Qué no se sabe</h2><p>Waingapu.com es el único medio con estas '
+                'declaraciones. Su información no da la fecha ni la hora del incendio, heridos, el valor de los daños, si el ingenio se ha detenido ni por cuánto tiempo, ni '
+                'ninguna declaración de la empresa. La causa es la explicación de la policía tal como la recoge el medio; no se ha publicado informe técnico ni resultado de la '
+                'investigación.</p><h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: la noticia trata de una instalación industrial en Umalulu, no de '
+                'una zona turística, y no menciona trastornos para los viajeros. Residentes: no menciona evacuación, aviso de humo ni heridos, pero tampoco los descarta; sigue '
+                'los avisos de la agencia de desastres de Sumba Oriental. Inversores: un incendio en la zona de residuos y un edificio de cintas dañado en el ingenio de la isla '
+                'recuerdan que el riesgo de fuego forma parte del cultivo de caña en la estación seca. El BMKG prevé que las lluvias lleguen tarde a casi toda NTT, como <a '
+                'href="/es/living/el-nino-retrasa-lluvias-sumba-ntt-diciembre-2026/">contamos antes</a>. Conviene esperar un comunicado de la empresa sobre reparaciones y '
+                'calendario de zafra y molienda antes de sacar conclusiones sobre producción o empleo.</p>',
+        'faq': [['¿Qué causó el incendio en el ingenio azucarero de Sumba Oriental?',
+                 'La policía dijo el 18 de noviembre de 2026 que una pila de residuos de caña, en fermentación por microbios, ardió de forma espontánea por la alta temperatura en '
+                 'PT Muria Sumba Manis, en Umalulu, según Waingapu.com. No se ha publicado informe técnico.'],
+                ['¿Sigue funcionando el ingenio?', 'No se informa. La noticia de Waingapu.com no dice si el ingenio se detuvo, por cuánto tiempo ni cuánto valen los daños.']]},
+ 'id': {'title': 'Kebakaran Pabrik Gula MSM Umalulu: Polisi Duga Terbakar Spontan',
+        'dek': 'Polisi: limbah tebu terfermentasi terbakar pada 44°C di PT MSM Umalulu, bangunan conveyor terdampak; kerugian dan status pabrik belum dilaporkan.',
+        'answer': 'Polisi Sumba Timur menyebut tumpukan limbah tebu yang terfermentasi terbakar spontan di pabrik gula PT Muria Sumba Manis, Umalulu, dengan suhu 44°C menurut '
+                  'alat ukur perusahaan, lapor Waingapu.Com pada 18 November 2026. Bagian limbah dan bangunan conveyor terdampak; nilai kerugian dan korban luka tidak dilaporkan.',
+        'keys': ['Kasat Reskrim Iptu Rizaldi Haris menyebut limbah tebu terfermentasi terbakar sendiri akibat suhu tinggi.',
+                 'Ia menyebut suhu 44°C pada alat ukur perusahaan di hari Minggu sebelumnya.',
+                 'Bagian limbah terdampak cukup besar dan bangunan conveyor ikut terdampak; polisi sudah olah TKP.',
+                 'Laporan tidak menyebut tanggal kebakaran, korban luka, nilai kerugian, status pabrik, atau pernyataan perusahaan.'],
+        'visitors': 'Berita ini menyangkut kawasan industri di Umalulu, bukan kawasan wisata, dan tidak menyebut gangguan perjalanan.',
+        'body': '<p>Polisi Sumba Timur menyebut tumpukan limbah tebu yang mengalami fermentasi dan memanas terbakar sendiri di pabrik gula PT Muria Sumba Manis (MSM), Kecamatan '
+                'Umalulu, menurut Waingapu.Com pada Rabu 18 November 2026. Jam dalam WITA (UTC+8).</p><h2>Penjelasan polisi</h2><p>Foto dan video kebakaran beredar luas di media '
+                'sosial, tetapi awalnya belum ada penjelasan resmi. Waingapu.Com menghubungi Kasat Reskrim Polres Sumba Timur, Iptu Rizaldi Haris, lewat WhatsApp pada Selasa '
+                'malam 17 November. Ia menjawab bahwa laporan kejadian masih dibuat dan akan dikirim ke Kapolres lebih dulu sebelum informasi disampaikan.</p><p>Pada Rabu malam '
+                '18 November ia menyampaikan penjelasan pertama. Menurutnya, tumpukan limbah tebu yang difermentasi mikroba terbakar spontan akibat suhu tinggi. Ia mengatakan '
+                'alat ukur suhu milik perusahaan mencatat 44 derajat Celsius pada hari Minggu sebelumnya. Rizaldi menambahkan bahwa bagian limbah terdampak cukup besar, bangunan '
+                'conveyor ikut terdampak, dan polisi sudah melakukan olah TKP.</p><h2>Yang belum diketahui</h2><p>Waingapu.Com satu-satunya media dengan keterangan ini. '
+                'Laporannya tidak menyebut tanggal dan jam kebakaran, korban luka, nilai kerugian, apakah pabrik berhenti beroperasi dan berapa lama, maupun pernyataan '
+                'perusahaan. Penyebab adalah penjelasan polisi sebagaimana dikutip media itu; belum ada laporan teknis atau hasil penyelidikan yang dipublikasikan.</p><h2>Apa '
+                'artinya bagi wisatawan, warga, dan investor</h2><p>Wisatawan: berita ini menyangkut kawasan industri di Umalulu, bukan kawasan wisata, dan tidak menyebut '
+                'gangguan perjalanan. Warga: laporan tidak menyebut evakuasi, peringatan asap, atau korban luka, tetapi juga tidak menyingkirkannya, jadi ikuti informasi BPBD '
+                'Sumba Timur. Investor: kebakaran di area limbah dan bangunan conveyor yang rusak di pabrik gula pulau ini mengingatkan bahwa risiko api adalah bagian dari usaha '
+                'tebu di musim kemarau. BMKG memperkirakan hujan datang terlambat di sebagian besar NTT, seperti <a '
+                'href="/id/living/el-nino-sangat-kuat-mundurkan-musim-hujan-ntt-sumba-2026/">kami laporkan sebelumnya</a>. Tunggu pernyataan perusahaan soal perbaikan serta '
+                'jadwal panen dan giling sebelum menarik kesimpulan tentang pasokan atau lapangan kerja.</p>',
+        'faq': [['Apa penyebab kebakaran pabrik gula di Sumba Timur?',
+                 'Polisi menyebut pada 18 November 2026 bahwa tumpukan limbah tebu yang difermentasi mikroba terbakar spontan akibat suhu tinggi di PT Muria Sumba Manis, Umalulu, '
+                 'lapor Waingapu.Com. Belum ada laporan teknis yang dipublikasikan.'],
+                ['Apakah pabrik masih beroperasi?', 'Tidak dilaporkan. Berita Waingapu.Com tidak menyebut apakah pabrik berhenti, berapa lama, atau nilai kerugiannya.']]},
+ 'sources': [['Waingapu.Com: Perlu Dua Hari Dikonfirmasi Wartawan, Begini Penjelasan Polres Sumba Timur Terkait Kebakaran PT MSM (18 Nov 2026)',
+              'https://www.waingapu.com/perlu-dua-hari-dikonfirmasi-wartawan-begini-penjelasan-polres-sumba-timur-terkait-kebakaran-pt-msm/']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': '',
+           'license': '',
+           'license_url': '',
+           'page': '',
+           'ai': True,
+           'caption': {'en': 'AI-generated illustration of a sugarcane field and a sugar mill on an island savanna; not a photo of PT MSM, of Umalulu or of the fire.',
+                       'es': 'Ilustración generada con IA de un campo de caña y un ingenio azucarero en una sabana isleña; no es una foto de PT MSM, de Umalulu ni del incendio.',
+                       'id': 'Ilustrasi buatan AI ladang tebu dan pabrik gula di savana pulau; bukan foto PT MSM, Umalulu, maupun kebakaran tersebut.'}}},
 {'section': 'travel',
  'slug': 'wanggameti-hike-no-permit-us-national-matalawa-park-no-official-trail-2026',
  'date': '2026-11-19',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'excursion-wanggameti-sin-permiso-estadounidense-parque-nacional-matalawa-2026', 'id': 'pendakian-wanggameti-wna-amerika-tanpa-izin-balai-tn-matalawa-2026'},
  'keywords': {'en': ['Wanggameti hiking permit', 'Mount Wanggameti trail', 'Matalawa National Park', 'hiking in Sumba', 'East Sumba national park rules', 'foreign hikers Indonesia permit'],
               'es': ['permiso senderismo Wanggameti',
