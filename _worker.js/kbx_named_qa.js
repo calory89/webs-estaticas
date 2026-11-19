@@ -194,7 +194,7 @@ export function qaTitle(lang, f) {
   // n27g: "<name> reviews <year>: <overdue handover | handover date, permit and developer>", longest form that fits first
   const by = f.y ? q(lang, 'b_y', { n: f.n, y: f.y }) : base;
   if (f.y) {
-    const lab = f.ov ? [q(lang, 't_ov', { mm: months(lang, f.ov, lang === 'ar' ? 'gen' : 'nom', f.nf) }), q(lang, 't_ov2')] : [q(lang, 't_lab'), q(lang, 't_lab2')];
+    const lab = f.ov ? [q(lang, 't_ov', { mm: months(lang, f.ov, lang === 'ar' ? 'gen' : 'nom', f.nf) }), q(lang, 't_ov2')] : f.dn && f.dn[0] ? f.dn : [q(lang, 't_lab'), q(lang, 't_lab2')];   // n32s: f.dn, completed projects
     for (const l of lab) C.push(by + q(lang, 's1') + l + ' | Kolaboro', by + q(lang, 's1') + l);
   }
   for (let k = facts.length; k >= 1; k--) { const t = by + q(lang, 's1') + facts.slice(0, k).join(q(lang, 's2')); C.push(t + ' | Kolaboro', t); }

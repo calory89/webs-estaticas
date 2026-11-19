@@ -102,7 +102,7 @@ async function viaTop3(req, env, ctx) {
   return r;
 }
 // kolaboro.com: browser security headers (no framing of private pages, camera and location only for our own pages)
-const KB_CITE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:numbers|press\/delivery-index\/\d{4}-\d{2})\/$/;   // n29e (batch 29): pages whose figures get a "Cite" button (/k/cite29.js)
+const KB_CITE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:numbers|press\/delivery-index\/\d{4}-\d{2}|reports(?:\/[a-z0-9-]{2,40})?|rankings(?:\/[a-z0-9-]{2,40}){0,2}|handover(?:\/[a-z0-9-]{2,40}){0,2}|m\/[^/.]{2,60}|projects|vs|countries(?:\/[a-z0-9-]{2,60})?)\/$/;   // n32s (item 227): also reports, rankings, handover, market, country hubs and /projects/, /vs/   // n29e (batch 29): pages whose figures get a "Cite" button (/k/cite29.js)
 function kbHeaders(r, u) {
   const ct = r.headers.get('content-type') || '';
   if (!/text\/html/.test(ct)) {
@@ -181,7 +181,7 @@ function kbHeaders(r, u) {
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
-    .on('body', { element(e) { if (KB_CITE29.test(u.pathname)) e.append('<script nonce="' + nonce + '" src="/k/cite29.js?v=1" defer></script>', { html: true }); } })   // n29e: "Cite" buttons on report figures (item 74)
+    .on('body', { element(e) { if (KB_CITE29.test(u.pathname)) e.append('<script nonce="' + nonce + '" src="/k/cite29.js?v=2" defer></script>', { html: true }); } })   // n29e: "Cite" buttons on report figures (item 74)
     .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } if (KB_SPEC_OK(u.pathname)) t.before(KB_SPEC.replace('{N}', nonce), { html: true }); }); } }).transform(out);
 }
 // n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
@@ -380,11 +380,42 @@ async function llInject(req, u, env, ctx, r) {
 // n29h1 (batch 29): links from existing pages (market files, handover, transparency, guides, developer pages, /new/, /rankings/) to the
 // place data pages of kbx_h29.js, appended to <main>; never blocks the page
 const H29L = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|rankings(?:\/transparency(?:\/[a-z0-9-]{2,40})?)?|new|guides\/buying-off-plan(?:\/[a-z-]{2,30})?|developers\/[a-z0-9-]{1,90})\/?$/;
+let kn32s = null;
 async function h29Inject(req, u, env, r) {
+  try { if (r && req.method === 'GET' && r.status === 200) { if (!kn32s) kn32s = await import('./kbx_n32s.js'); r = await kn32s.answer(req, u, env, r); } } catch (e) {}   // n32s (item 217): dated, sourced answer line under the h1 of the data hubs
   if (req.method !== 'GET' || !r || r.status !== 200 || !H29L.test(u.pathname) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
   try { if (!kh29) kh29 = await import('./kbx_h29.js'); const h = await kh29.linksFor(env, u.pathname); if (h) r = new HTMLRewriter().on('main', { element(e) { e.append(h, { html: true }); } }).transform(r); } catch (e) {}
   try { if (!kn31s) kn31s = await import('./kbx_n31s.js'); r = await kn31s.inject(req, u, env, r); } catch (e) {}   // n31s (batch 31): most searched projects of the place, feed links
   return r;
+}
+// n32s (batch 32, items 258 and 259): whole-page edge copies for pages that were slow to build: the market files (/m/<market>/ in 8
+// languages, about 1 s to the last byte) and /engineering/status/ (it measures other pages live: 17 s on a cold build). Like /countries/
+// (n29q), a copy is served at once and rebuilt in the background when it is older than 15 minutes or was built by another deployment.
+// The copy is taken after kbHeaders, so on every answer its script nonce is replaced in the body and in the CSP headers by a fresh one.
+const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status)\/$/, KB_EDGE_BUSY = new Set();
+async function kbEdge(req, u, env, ctx, make) {
+  if (req.method !== 'GET' || u.search || typeof caches === 'undefined' || !KB_EDGE.test(u.pathname)) return make();
+  const ck = new Request('https://kolaboro.com/__edge/v1' + u.pathname), sha = String((env && env.CF_PAGES_COMMIT_SHA) || '');
+  const keep = async r0 => {
+    if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0;
+    const t = await r0.text(), h = new Headers(r0.headers); h.delete('content-length');
+    const hc = new Headers(h); hc.set('x-built', String(Date.now())); hc.set('x-sha', sha); hc.set('x-cc', h.get('cache-control') || 'no-cache'); hc.set('cache-control', 'public, max-age=86400');
+    const put = caches.default.put(ck, new Response(t, { headers: hc })).catch(() => {}); if (ctx && ctx.waitUntil) ctx.waitUntil(put); else await put;
+    return new Response(t, { status: 200, headers: h });
+  };
+  try {
+    const hit = await caches.default.match(ck);
+    if (hit) {
+      const age = Date.now() - (+hit.headers.get('x-built') || 0), stale = age > 900e3 || (!!sha && hit.headers.get('x-sha') !== sha);
+      if (stale && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has(u.pathname)) { KB_EDGE_BUSY.add(u.pathname); ctx.waitUntil(Promise.resolve().then(make).then(keep).catch(() => {}).then(() => { KB_EDGE_BUSY.delete(u.pathname); })); }
+      const h = new Headers(hit.headers), old = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]{8,})'/);
+      let t = await hit.text();
+      if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
+      h.set('cache-control', h.get('x-cc') || 'no-cache'); ['x-built', 'x-sha', 'x-cc'].forEach(k => h.delete(k)); h.set('x-edge-cache', stale ? 'stale' : 'hit');
+      return new Response(t, { status: 200, headers: h });
+    }
+  } catch (e) {}
+  return keep(await make());
 }
 let kTick = null, kbots = null, kg27 = null;
 export default {
@@ -598,8 +629,8 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K30C.test(u.pathname)) {
       if (!k30c) k30c = await import('./kbx_n30c.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await k30c.handle(req, u, env, ctx, shell);
-      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+      const r = await kbEdge(req, u, env, ctx, async () => { const r0 = await k30c.handle(req, u, env, ctx, shell); return r0 && /text\/html/.test(r0.headers.get('content-type') || '') ? kbHeaders(r0, u) : r0; });   // n32s: edge copy of /engineering/status/
+      if (r) return r;
     }
     // kolaboro.com (n30a, batch 30): /k/n30a.js, /k/n30a-cr.js, /api/v1/slippage[.csv], /[lang/]tools/contract-reader/, /[lang/]methods/handover-slippage/, /[lang/]projects/<slug>/timeline/ (see kbx_n30a.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN30.test(u.pathname)) {
@@ -673,6 +704,11 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K29I.test(u.pathname)) {
       if (!k29i) k29i = await import('./kbx_n29i.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      // n32s (item 258): translated market files are kept at the edge as whole pages (kbEdge), with the handover slippage block
+      const mm32 = /^\/(es|de|fr|nl|ru|zh|ar)\/m\/([^/.]{2,60})\/$/.exec(u.pathname);
+      if (mm32 && req.method === 'GET') { const r = await kbEdge(req, u, env, ctx, async () => { let r0 = await k29i.page(req, u, env, ctx, shell);
+        if (r0 && r0.status === 200) { try { if (!kn30) kn30 = await import('./kbx_n30a.js'); const sb = await kn30.slipBlock(env, decodeURIComponent(mm32[2]), mm32[1]); if (sb) r0 = new HTMLRewriter().on('main', { element(e) { e.append(sb, { html: true }); } }).transform(r0); } catch (e) {} }
+        return r0 && /text\/html/.test(r0.headers.get('content-type') || '') ? kbHeaders(r0, u) : r0; }); if (r) return r; }
       // n31s (item 193): translated country pages are kept in the edge cache like the English ones (served at once, rebuilt in the background after 15 minutes)
       const kc31 = !u.search && req.method === 'GET' && typeof caches !== 'undefined' && /^\/(?:es|de|fr|nl|ru|zh|ar)\/countries\/[a-z0-9-]{2,60}\/$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/n31' + u.pathname) : null;
       if (kc31) { try { const hit = await caches.default.match(kc31); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0);
@@ -772,6 +808,7 @@ export default {
     if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/.]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
       if (!kb) kb = await import('./kolaboro.js');
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
+      return kbEdge(req, u, env, ctx, async () => {   // n32s (item 258): whole-page edge copy of /m/<market>/
       const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
       const sr = await kb.ssr(base, u, isP ? 'p' : 'm', env);
@@ -786,6 +823,7 @@ export default {
       try { if (!kn30) kn30 = await import('./kbx_n30a.js'); const sb = await kn30.slipBlock(env, decodeURIComponent(u.pathname.split('/')[2] || ''), 'en'); if (sb) sr2 = new HTMLRewriter().on('main', { element(e) { e.append(sb, { html: true }); } }).transform(sr2); } catch (e) {}   // n30a: handover slippage of the market
       try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return h29Inject(req, u, env, new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr2)); } catch (e) {}
       return h29Inject(req, u, env, sr2);
+      });
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)

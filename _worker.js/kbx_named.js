@@ -49,7 +49,8 @@ import { light6 } from './kbx_u27.js';
 import { regSale, rsText, rsNoAsk } from './kbx_n31d_rs.js';   // n31d (lead request): DLD registered sale prices are not asking prices
 import { p29Project, distLine, satHtml29, ppmMedian, ppmOf, medians, companyRegs, regLi, localName, devAnswer, devFilter, DEV_CSS, DEV_JS, t29 } from './kbx_p29.js';   // batch 29 (n29p): payment plan, unit types, foreign ownership and short lets, distances, place median per m2, satellite line, same-place projects, company registers, local names, developer quick answer and filters
 import { slipLine } from './kbx_n30a.js';   // batch 30 (n30a): handover slippage of the market, live
-import { trustBlock, kindIco, t31 as tb31, loadS as loadS31 } from './kbx_n31b_page.js';   // batch 31 (n31b): what is confirmed and how fresh, sources by kind, report an error per line
+import { trustBlock, kindIco, t31 as tb31, loadS as loadS31 } from './kbx_n31b_page.js';
+import { load as loadS32, doneLab, isDone } from './kbx_n32s.js';   // batch 32 (n32s, item 199): title words for completed projects (/data/n32s-i18n.json)   // batch 31 (n31b): what is confirmed and how fresh, sources by kind, report an error per line
 import { rulesData } from './kbx_rules.js';
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
@@ -415,7 +416,7 @@ function projectPage(ix, x, lang, extra) {
   // n24s: search title under 60 characters and description under 155, with the searched word and the most clicked fact
   // n27g: with the year, an overdue handover where it fits, and the description opening with the overdue date, the moves or no permit
   const nfL = v => num(v, lang), yNow = new Date().getUTCFullYear();
-  const title = qaTitle(lang, { n: name, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, dv: x.dv, y: yNow, ov: ovN, nf: nfL });
+  const title = qaTitle(lang, { n: name, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, dv: x.dv, y: yNow, ov: ovN, nf: nfL, dn: isDone(x, c) ? doneLab(lang) : null });   // n32s (item 199): completed projects
   const desc = dot(qaDesc(lang, { n: name, by: dv0.by, place, place2, h: ho ? fd(ho.d, lang) : null, pn: !!x.pn, s: tp ? tpS : null, rv: rvd, d: fd(checked, lang), ov: ovN, mv: hand && hand.mv ? hand.mv : 0, nf: nfL }));
 
   // in short (answer-ready summary)
@@ -945,6 +946,7 @@ function pinOff(x) {
 }
 export async function render(ix, kind, key, lang, env, ctx) {   // exported for the local test and the scan endpoint
   try { await loadS31(env); } catch (e) {}   // n31b: trust block strings (/data/n31b-i18n.json)
+  try { await loadS32(env); } catch (e) {}   // n32s: completed-project title words
   if (kind === 'i') return indexPage(ix, lang);
   if (kind === 'projects') {
     const x = ix.bySlug.get(key); if (!x) return null;
@@ -1015,7 +1017,7 @@ export async function handle(req, u, env, ctx, shell) {
   // n20p (9 Nov 2026): the rendered page is kept at the edge under a key that needs no data to compute (code version + path), so a
   // cached page is answered before any data file is read. Each copy remembers the data version it was built from. A copy older
   // than a minute is still answered at once and checked in the background: same data version, its clock restarts; new data (a
-  // publish, an approved developer reply), the page is rendered again for the next reader. Copies live 6 hours at most.
+  // publish, an approved developer reply), the page is rendered again for the next reader. Copies live a day at most (6 hours until n32s).
   const fk = new Request(ORIGIN + '/__named_fast/' + CACHE_V + cohortKey(env) + p), t0 = Date.now();
   try {
     const hit = await caches.default.match(fk);
@@ -1062,7 +1064,7 @@ async function lmFiles(ix, env) {
     return { named: ix.named, cases: ix.cases, caseBy: ix.caseBy, prom, find, prog, raw: x => RAWN.has(x) ? Object.assign({}, x, { n: RAWN.get(x) }) : x };
   } catch (e) { return null; }
 }
-const FAST_FRESH = 60000, FAST_TTL = 21600, REFRESHING = new Set();
+const FAST_FRESH = 60000, FAST_TTL = 86400, REFRESHING = new Set();   // n32s (item 258): copies live a day (were 6 hours); a copy is still re-checked in the background after a minute
 // the data version a page was built from: any change here means the page must be rendered again
 async function dataVer(ix, env, kind, key) {
   const pj = key && kind === 'projects', dv = key && kind === 'developers', nul = () => null;

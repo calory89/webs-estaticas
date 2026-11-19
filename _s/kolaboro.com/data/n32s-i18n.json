@@ -1,0 +1,67 @@
+{
+ "version": "n32s-1 (19 Nov 2026)",
+ "en": {
+  "a_g": "On {d}, Kolaboro tracks {n} off-plan projects in {m} markets and {c} countries. {pn} ({pp}) publish a permit or licence number, {hd} ({hp}) have a handover date on record and {od} are past that date.",
+  "a_p": "On {d}, Kolaboro tracks {n} off-plan projects in {p}. {pn} ({pp}) publish a permit or licence number, {hd} ({hp}) have a handover date on record and {od} are past that date.",
+  "a_src": "Source: Kolaboro open data ({f}), CC BY 4.0.",
+  "a_lab": "In short",
+  "t_dn": "completed, buyer reports and record",
+  "t_dn2": "completed, buyer reports"
+ },
+ "es": {
+  "a_g": "A {d}, Kolaboro sigue {n} proyectos sobre plano en {m} mercados y {c} países. {pn} ({pp}) publican un número de licencia o permiso, {hd} ({hp}) tienen fecha de entrega registrada y {od} ya la superaron.",
+  "a_p": "A {d}, Kolaboro sigue {n} proyectos sobre plano en {p}. {pn} ({pp}) publican un número de licencia o permiso, {hd} ({hp}) tienen fecha de entrega registrada y {od} ya la superaron.",
+  "a_src": "Fuente: datos abiertos de Kolaboro ({f}), CC BY 4.0.",
+  "a_lab": "En breve",
+  "t_dn": "terminado, compradores e historial",
+  "t_dn2": "terminado, compradores"
+ },
+ "fr": {
+  "a_g": "Au {d}, Kolaboro suit {n} projets sur plan sur {m} marchés et dans {c} pays. {pn} ({pp}) publient un numéro de permis ou de licence, {hd} ({hp}) ont une date de livraison relevée et {od} l’ont dépassée.",
+  "a_p": "Au {d}, Kolaboro suit {n} projets sur plan pour {p}. {pn} ({pp}) publient un numéro de permis ou de licence, {hd} ({hp}) ont une date de livraison relevée et {od} l’ont dépassée.",
+  "a_src": "Source : données ouvertes de Kolaboro ({f}), CC BY 4.0.",
+  "a_lab": "En bref",
+  "t_dn": "livré, retours d’acheteurs et historique",
+  "t_dn2": "livré, retours d’acheteurs"
+ },
+ "de": {
+  "a_g": "Stand {d}: Kolaboro verfolgt {n} Off-Plan-Projekte in {m} Märkten und {c} Ländern. {pn} ({pp}) veröffentlichen eine Genehmigungs- oder Lizenznummer, {hd} ({hp}) haben einen erfassten Übergabetermin, bei {od} ist er überschritten.",
+  "a_p": "Stand {d}: Kolaboro verfolgt {n} Off-Plan-Projekte in {p}. {pn} ({pp}) veröffentlichen eine Genehmigungs- oder Lizenznummer, {hd} ({hp}) haben einen erfassten Übergabetermin, bei {od} ist er überschritten.",
+  "a_src": "Quelle: offene Daten von Kolaboro ({f}), CC BY 4.0.",
+  "a_lab": "Kurz gesagt",
+  "t_dn": "fertiggestellt, Käuferberichte, Verlauf",
+  "t_dn2": "fertiggestellt, Käuferberichte"
+ },
+ "nl": {
+  "a_g": "Op {d} volgt Kolaboro {n} projecten op plan in {m} markten en {c} landen. {pn} ({pp}) publiceren een vergunnings- of licentienummer, {hd} ({hp}) hebben een vastgelegde opleverdatum en bij {od} is die verstreken.",
+  "a_p": "Op {d} volgt Kolaboro {n} projecten op plan in {p}. {pn} ({pp}) publiceren een vergunnings- of licentienummer, {hd} ({hp}) hebben een vastgelegde opleverdatum en bij {od} is die verstreken.",
+  "a_src": "Bron: open data van Kolaboro ({f}), CC BY 4.0.",
+  "a_lab": "In het kort",
+  "t_dn": "opgeleverd, kopersmeldingen en historie",
+  "t_dn2": "opgeleverd, kopersmeldingen"
+ },
+ "ru": {
+  "a_g": "На {d} Kolaboro отслеживает проекты новостроек: {n} (рынков: {m}, стран: {c}). Номер разрешения или лицензии публикуют {pn} ({pp}), записанный срок сдачи есть у {hd} ({hp}), у {od} этот срок уже прошёл.",
+  "a_p": "На {d} Kolaboro отслеживает проекты новостроек, {p}: {n}. Номер разрешения или лицензии публикуют {pn} ({pp}), записанный срок сдачи есть у {hd} ({hp}), у {od} этот срок уже прошёл.",
+  "a_src": "Источник: открытые данные Kolaboro ({f}), CC BY 4.0.",
+  "a_lab": "Коротко",
+  "t_dn": "сдан, сообщения покупателей и история",
+  "t_dn2": "сдан, сообщения покупателей"
+ },
+ "zh": {
+  "a_g": "截至{d}，Kolaboro 跟踪 {c} 个国家、{m} 个市场的 {n} 个期房项目：{pn} 个（{pp}）公布许可或执照编号，{hd} 个（{hp}）有交付日期记录，{od} 个已超过该日期。",
+  "a_p": "截至{d}，Kolaboro 跟踪{p}的 {n} 个期房项目：{pn} 个（{pp}）公布许可或执照编号，{hd} 个（{hp}）有交付日期记录，{od} 个已超过该日期。",
+  "a_src": "来源：Kolaboro 开放数据（{f}），CC BY 4.0。",
+  "a_lab": "简要",
+  "t_dn": "已交付，买家反馈与记录",
+  "t_dn2": "已交付，买家反馈"
+ },
+ "ar": {
+  "a_g": "حتى {d}، يتابع Kolaboro عدد {n} من المشاريع على الخارطة في {m} سوقًا و{c} دولة. تنشر {pn} ({pp}) منها رقم ترخيص أو تصريح، ولـ{hd} ({hp}) منها موعد تسليم مسجّل، وتجاوزت {od} منها هذا الموعد.",
+  "a_p": "حتى {d}، يتابع Kolaboro عدد {n} من المشاريع على الخارطة في {p}. تنشر {pn} ({pp}) منها رقم ترخيص أو تصريح، ولـ{hd} ({hp}) منها موعد تسليم مسجّل، وتجاوزت {od} منها هذا الموعد.",
+  "a_src": "المصدر: بيانات Kolaboro المفتوحة ({f})، CC BY 4.0.",
+  "a_lab": "باختصار",
+  "t_dn": "مكتمل، بلاغات المشترين والسجل",
+  "t_dn2": "مكتمل، بلاغات المشترين"
+ }
+}

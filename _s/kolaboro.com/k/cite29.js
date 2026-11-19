@@ -1,5 +1,6 @@
 /* kolaboro.com batch 29 (n29e, 14 Nov 2026): "Cite" button on every figure of the report pages (item 74).
-   Figures: rows of .knum tables (/numbers/), .sx-kv tiles (/press/delivery-index/<month>/), [data-cite] elements.
+   Figures: rows of .knum tables (/numbers/), .sx-kv tiles (/press/delivery-index/<month>/), [data-cite] elements; since n32s also the
+   figure tiles of rankings, reports, handover and market pages and the row-header tables of the monthly figures (60 buttons at most).
    The citation: "<figure>: <value>". Kolaboro, <page title>, <address of the page>, <date>. CC BY 4.0. Nothing is sent anywhere. */
 (function () {
   var L = (document.documentElement.lang || 'en').slice(0, 2);
@@ -30,6 +31,17 @@
   var K = document.querySelectorAll('.sx-kv > div'), q = document.querySelector('.sx-q');
   var qd = q ? (/\(([^)]*\d{4}[^)]*)\)/.exec(q.textContent) || [])[1] : '';
   for (var j = 0; j < K.length; j++) add(K[j], txt(K[j].querySelector('span')), txt(K[j].querySelector('b')), qd || '');
+  // n32s (batch 32, item 227): the figure tiles of rankings, reports, handover and market pages, and the summary tables of the monthly
+  // figures (a row header and a number), dated from the page's answer line (data-asof), the column header "(19 Nov 2026)" or a <time>
+  var pd = (document.querySelector('[data-asof]') || {}).getAttribute ? document.querySelector('[data-asof]').getAttribute('data-asof') : '';
+  if (!pd) { var tm = document.querySelector('main time'); pd = tm ? txt(tm) : ''; }
+  var n = 0, MAX = 60;
+  var KV = document.querySelectorAll('.ktr-kv > div, .kfa-kv > div, .k29-kv > div, .n3-kv > div');
+  for (var a = 0; a < KV.length && n < MAX; a++) { var bv = KV[a].querySelector('b'), sl = KV[a].querySelector('span'); if (bv && sl && !KV[a].querySelector('.k29c')) { add(KV[a], txt(sl), txt(bv), pd); n++; } }
+  var TR = document.querySelectorAll('main table:not(.knum) tbody tr');
+  for (var r = 0; r < TR.length && n < MAX; r++) { var th = TR[r].querySelector('th[scope="row"]'), td = TR[r].querySelector('td.k-n'); if (!th || !td || td.querySelector('.k29c')) continue;
+    var tb = TR[r].closest('table'), hd = tb && tb.querySelectorAll('thead th'), ci = [].indexOf.call(TR[r].children, td), hc = hd && hd[ci] ? (/\(([^)]*\d{4}[^)]*)\)/.exec(txt(hd[ci])) || [])[1] : '';
+    add(td, txt(th), txt(td), hc || pd); n++; }
   var D = document.querySelectorAll('[data-cite]');
   for (var k = 0; k < D.length; k++) add(D[k], D[k].getAttribute('data-cite'), D[k].getAttribute('data-cite-v') || txt(D[k]), D[k].getAttribute('data-cite-d') || '', D[k].id || '');
 })();
