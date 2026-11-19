@@ -69,6 +69,9 @@ export async function answer(req, u, env, r) {
   if (!html) return r;
   let done = false;
   const rw = new HTMLRewriter();
+  // n32s (item 259): the market file's hero grows from "Loading" to about 830 px on a phone (500 px wide screens) when /m/m.js fills it;
+  // the space is kept from the start so the figures below it do not jump (layout shift 0.55 on /m/dubai/ in a Lighthouse run)
+  if (lang === 'en' && /^\/m\//.test(p)) html = '<style id="n32-mh">#mk-root .mk-load{min-height:440px}@media(max-width:600px){#mk-root .mk-load{min-height:760px}}</style>' + html;
   if (lang === 'en' && /^\/m\//.test(p)) rw.on('#mk-root', { element(e) { if (done) return; done = true; e.after(html, { html: true }); } });   // the market file's h1 is rebuilt by /m/m.js inside #mk-root
   else rw.on('main h1', { element(e) { if (done) return; done = true; e.after(html, { html: true }); } });
   return rw.transform(r);
