@@ -29,6 +29,8 @@ function parse(f) {
 }
 const files = fs.readdirSync(SRC).filter(f => f.endsWith('.tsv')), common = files.includes('_common.tsv') ? parse(path.join(SRC, '_common.tsv')) : parse('/dev/null');
 const LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
+// currency names as English pages print them ("US dollar", "Thai baht") -> ISO code, for the browser's Intl.DisplayNames
+const CUR = {}; { const dn = new Intl.DisplayNames(['en'], { type: 'currency' }); for (const c of (Intl.supportedValuesOf ? Intl.supportedValuesOf('currency') : [])) { const n = dn.of(c); if (n && n !== c) { CUR[n] = c; CUR[n.replace(/ ([A-Z])/g, (m, x) => ' ' + x.toLowerCase())] = c; } } Object.assign(CUR, { 'UAE dirham': 'AED', 'Israeli shekel': 'ILS' }); }
 const manifest = { v: 0, built: new Date().toISOString().slice(0, 10), pages: {} };
 const live = process.argv.includes('--live');
 let names = new Set();
@@ -37,7 +39,7 @@ const report = [];
 for (const l of LANGS) fs.mkdirSync(path.join(OUT, l), { recursive: true });
 for (const l of LANGS) {
   const keep = Object.fromEntries([...common.keep].map(k => [k, k]));
-  fs.writeFileSync(path.join(OUT, l, '_common.json'), JSON.stringify({ s: Object.assign(keep, common.s[l] || {}), p: common.p[l] || [], cc: H.CO_ISO2 }));   // cc: country names the browser puts in the page language (Intl.DisplayNames)
+  fs.writeFileSync(path.join(OUT, l, '_common.json'), JSON.stringify({ s: Object.assign(keep, common.s[l] || {}), p: common.p[l] || [], cc: H.CO_ISO2, cu: CUR }));   // cc: country names the browser puts in the page language (Intl.DisplayNames)
 }
 for (const f of files.filter(f => f !== '_common.tsv')) {
   const key = f.replace(/\.tsv$/, ''), page = parse(path.join(SRC, f)), route = key.replace(/^tools-/, 'tools/');

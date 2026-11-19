@@ -8,7 +8,7 @@
   var LOC = { es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[L];
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var DRX = /^(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? (\d{4})$/, YRX = /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (\d{4})$/;
-  var SEP = /^[\s\/·|›>]+/, S = {}, P = [], CC = {}, DN = null, done = typeof WeakMap === 'function' ? new WeakMap() : null;
+  var SEP = /^[\s\/·|›>]+/, S = {}, P = [], CC = {}, DN = null, CU = {}, DC = null, done = typeof WeakMap === 'function' ? new WeakMap() : null;
   function get(u) { return fetch(u, { credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }); }
   function compile(list) {
     (list || []).forEach(function (e) {
@@ -21,6 +21,7 @@
     var m = DRX.exec(s); if (m) return dt(new Date(Date.UTC(+m[3], MON.indexOf(m[2]), +m[1], 12)), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
     m = YRX.exec(s); if (m) return dt(new Date(Date.UTC(+m[2], MON.indexOf(m[1]), 15, 12)), { month: 'long', year: 'numeric', timeZone: 'UTC' });
     if (CC[s] && DN) { try { return DN.of(CC[s]) || null; } catch (e) { return null; } }
+    if (CU[s] && DC) { try { return DC.of(CU[s]) || null; } catch (e) { return null; } }
     return null;
   }
   function T(s) {
@@ -56,6 +57,7 @@
   }
   var main = document.querySelector('main') || document.body;
   Promise.all([get('/data/n32t/' + L + '/_common.json'), get('/data/n32t/' + L + '/' + K + '.json')]).then(function (a) {
+    if (a[0] && a[0].cu) { CU = a[0].cu; try { DC = new Intl.DisplayNames([LOC], { type: 'currency' }); } catch (e) { DC = null; } }
     if (a[0] && a[0].cc) { CC = a[0].cc; try { DN = new Intl.DisplayNames([LOC], { type: 'region', fallback: 'none' }); } catch (e) { DN = null; } }
     [a[0], a[1]].forEach(function (d) { if (d && d.s) for (var k in d.s) if (Object.prototype.hasOwnProperty.call(d.s, k)) S[k] = d.s[k]; compile(d && d.p); });
     walk(main);

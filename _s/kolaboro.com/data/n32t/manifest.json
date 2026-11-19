@@ -1,8 +1,26 @@
 {
- "v": "89dcr-1nju",
+ "v": "cfamhf-bkly",
  "built": "2026-11-19",
  "pages": {
+  "tools/build-cost": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
   "tools/contract-scan": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/currency-risk": [
    "es",
    "de",
    "fr",
@@ -21,6 +39,15 @@
    "ar"
   ],
   "tools/deposit-protection": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/late-handover": [
    "es",
    "de",
    "fr",
