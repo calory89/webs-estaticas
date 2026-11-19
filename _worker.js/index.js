@@ -81,6 +81,7 @@ let ke29 = null, ke29l = null; const KE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(
 let kt27 = null; const KT27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:corrections|buyer-cases|cite|contact|transparency-badge)\/?$|^\/embed\/transparency\/[a-z0-9-]{1,90}\.svg$|^\/rankings\/transparency(?:\/[a-z0-9-]{2,40})?\.csv$/;   // n27t (batch 27): corrections log, buyer cases, how to cite, contact, transparency badge, ranking CSV (kbx_t27.js)
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
 let k404 = null;   // n25e: 301 map, 410 and the translated 404 page (kbx_404.js)
+let kn32t = null; const KN32T = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;   // n32t (batch 32): tool pages, registers guide, new, vs and markets hubs in 7 more languages (keep equal to PATHS in kbx_n32t.js)
 let kn31s = null; const KN31S = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools|glossary)\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:docs|reports\/month)\/?$|^\/engineering\/notes(?:\/[a-z0-9-]{3,60})?\/?$|^\/projects\/[a-z0-9-]{1,90}\.md$/;   // n31s (batch 31): translated tools hub and glossary, figures of the month, developer docs hub, engineering notes, project markdown (keep equal to PATHS in kbx_n31s.js)
 let kseo = null; const KSEO = /^\/(sitemap_index\.xml|api\/seo\/lastmod|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;   // keep equal to PATHS in kbx_seo.js
 // rh-kcheck-v2: realhunt.co runtime layer (Kolaboro deal box, sponsored Kolaboro feed card, Eco Beach City at 36,500) at /__k/kcheck.js; kolaboro.com "from RealHunt" banner at /__k/kbrh.js
@@ -733,6 +734,13 @@ export default {
     }
     // kolaboro.com (n26i, batch 26): AI crawler visits per day, counted at the edge (see kbx_bots.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && /^\/api\/open\/ai-crawlers\/?$/.test(u.pathname)) { if (!kbots) kbots = await import('./kbx_bots.js'); return kbots.api(req); }
+    // kolaboro.com (n32t, batch 32): /<lang>/tools/<tool>/, /<lang>/registers/, /<lang>/new/, /<lang>/vs/, /<lang>/m/ translated from the English page (see kbx_n32t.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && KN32T.test(u.pathname)) {
+      if (!kn32t) kn32t = await import('./kbx_n32t.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'text/html' } }), env, ctx);
+      try { const r = await kn32t.handle(req, u, env, ctx, shell, inner); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
     // kolaboro.com (n26i, batch 26): /numbers/ in 8 languages, citable figures with source and date (see kbx_numbers.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && KNUM.test(u.pathname)) {
       if (!knum) knum = await import('./kbx_numbers.js');
@@ -749,6 +757,7 @@ export default {
       // The copy is taken before kbHeaders, so every response still gets its own CSP nonce.
       const make = async () => {
         let r = await h29Inject(req, u, env, await llInject(req, u, env, ctx, await kseo.handle(req, u, env, ctx, shell, inner)));
+        if (r && r.status === 200 && (u.pathname === '/new/' || u.pathname === '/vs/')) { try { if (!kn32t) kn32t = await import('./kbx_n32t.js'); r = await kn32t.enAlt(u, r, env); } catch (e) {} }   // n32t: hreflang to the translated hubs
         if (r && r.status === 200 && req.method === 'GET' && /^\/(?:countries|rankings)\/(?:[a-z0-9-]{2,60}\/)?$/.test(u.pathname) && /text\/html/.test(r.headers.get('content-type') || '')) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); const al = await k29i.crAlternates(env, u.pathname); if (al) r = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(al, { html: true }); } }).transform(r); } catch (e) {} }   // n29i: hreflang to the language versions
         return r;
       };
@@ -784,6 +793,7 @@ export default {
       if (req.method === 'GET' && kr.status === 200 && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?about\/$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!ke29l) ke29l = await import('./kbx_e29_lines.js'); const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en', ab = ke29l.ABOUT_CSS + ke29l.aboutBox(lg); kr = new HTMLRewriter().on('main', { element(e) { e.append(ab, { html: true }); } }).transform(kr); } catch (e) {} }   // n29e: entity facts on /about/ (item 62)
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/metrics/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); const mh = await k27a.metricsHtml(); if (mh) kr = new HTMLRewriter().on('main', { element(e) { e.append(mh, { html: true }); } }).transform(kr); } catch (e) {} }   // n27a: usage by page type and return visits on /metrics/
       if (req.method === 'GET' && kr.status === 200 && u.pathname === '/engineering/' && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); const bh = await kbots.html(req); kr = new HTMLRewriter().on('main', { element(e) { e.append(bh, { html: true }); } }).transform(kr); } catch (e) {} }   // n26i: AI crawler visits on /engineering/
+      if (req.method === 'GET' && kr.status === 200 && /^\/(?:tools\/[a-z-]{3,30}|m|registers)\/$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) { try { if (!kn32t) kn32t = await import('./kbx_n32t.js'); kr = await kn32t.enAlt(u, kr, env); } catch (e) {} }   // n32t: hreflang to the translated pages
       if (req.method === 'GET' && kr.status === 200 && (u.pathname === '/tools/' || u.pathname === '/glossary/')) { try { if (!kn31s) kn31s = await import('./kbx_n31s.js'); kr = await kn31s.enStatic(u, kr, env); } catch (e) {} }   // n31s: hreflang to the translated hubs, project examples in the glossary
       // n26i (batch 26): the home page and the hubs link the project pages the fewest other project pages link to (kbx_named.js)
       kr = await llInject(req, u, env, ctx, kr);

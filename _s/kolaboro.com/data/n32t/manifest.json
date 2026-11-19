@@ -1,0 +1,42 @@
+{
+ "v": "801zxm-9xpe",
+ "built": "2026-11-19",
+ "pages": {
+  "tools/contract-scan": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/payment-plan": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/risk": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/yield-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ]
+ }
+}

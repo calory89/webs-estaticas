@@ -78,10 +78,11 @@ export function toolsParse(src) {
 }
 async function toolsHub(u, env, shell, lang) {
   const src = await asset(env, '/tools/', 'text'); const P = toolsParse(src); if (!P || !P.G.length) return null;
-  let untr = 0;
+  let untr = 0, LT = LOCAL_TOOLS;
+  try { LT = new Set([...LOCAL_TOOLS, ...(await (await import('./kbx_n32t.js')).localSet(env, lang))]); } catch (e) {}   // n32t: tool pages translated by kbx_n32t.js
   const grp = P.G.map((g, gi) => '<p class="eyebrow" role="heading" aria-level="2" id="' + g.id + '"' + (gi ? ' style="margin-top:40px"' : '') + '>' + esc(t(lang, 'g_' + g.id)) + '</p><div class="ft-method" style="margin-top:12px">' + g.L.map(x => {
     const tr = (TOOLS[x.href] || {})[lang]; if (!tr) untr++;
-    const href = LOCAL_TOOLS.has(x.href) ? pre(lang) + x.href : x.href, en = !LOCAL_TOOLS.has(x.href);
+    const href = LT.has(x.href) ? pre(lang) + x.href : x.href, en = !LT.has(x.href);
     const tag = x.tag ? '<span class="ft-tag ' + x.tc + '">' + esc(TAGS[x.tag] ? t(lang, TAGS[x.tag]) : x.tag) + '</span>' : '';
     return '<div class="ft-f' + (x.look ? ' look' : '') + '"><h3><a href="' + href + '"' + (en ? ' hreflang="en"' : '') + '>' + (tr ? esc(tr[0]) : x.name) + '</a>' + tag + '</h3><p>' + (tr ? esc(tr[1]) : x.desc) + (en ? ' <span class="n31-s">(' + esc(t(lang, 'inen')) + ')</span>' : '') + '</p></div>';
   }).join('') + '</div>').join('');
