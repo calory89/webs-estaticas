@@ -117,7 +117,7 @@ def _rain(g, l):
             f'<label>{t["r_coast"]}<select id="rc"><option value="w">{t["r_w"]}</option><option value="e">{t["r_e"]}</option></select></label><output id="ro" aria-live="polite"></output></div>'
             f'<h2 id="months">{t["r_tab"]}</h2>{pages_geo._table([t["r_mo"], t["r_w"], t["r_e"]], rows)}<p class="gnote">{esc(t["r_note"])} {esc(pages_months.SOURCE)}.</p>'
             f'<p><a href="/{l}/sumba-in/">{t["r_more"]} →</a> · <a href="/data/sumba-climate-monthly.csv">CSV</a></p>')
-    pages_hubs._page(g, l, tpl, t["r_title"], t["r_desc"], t["r_h1"], _home(g, l), body, [], t["kicker"], js)
+    pages_hubs._page(g, l, tpl, t["r_title"], t["r_desc"], t["r_h1"], _home(g, l), body, [pages_geo.webapp(t["r_h1"], t["r_desc"], pages_hubs.BASE + tpl.format(l=l), l)], t["kicker"], js)
 
 TOOLS = [("/{l}/plan/", {"en": ("Trip planner and budget", "Map, budget calculator and questions to our desk."), "es": ("Planificador y presupuesto", "Mapa, calculadora de presupuesto y preguntas a la redacción."), "id": ("Perencana dan anggaran", "Peta, kalkulator anggaran, dan pertanyaan untuk redaksi.")}),
          ("/{l}/distances/", {"en": ("Distances and driving times", "Road km and time between towns, airports and every place."), "es": ("Distancias y tiempos", "Km por carretera y tiempo entre ciudades, aeropuertos y cada lugar."), "id": ("Jarak dan waktu tempuh", "Km lewat jalan dan waktu antara kota, bandara, dan tiap tempat.")}),
@@ -152,7 +152,7 @@ def _tools(g, l):
           "['fk','fc','fp'].forEach(function(i){$(i).oninput=$(i).onchange=f});['cd','cn','cp'].forEach(function(i){$(i).oninput=c});f();c()})()</script>")
     body = f'<p class="dek">{esc(t["t_lead"])}</p><h2 id="all">{t["t_all"]}</h2><ul class="tlist" data-block="toolslist">{li}</ul>{fuel}{car}'
     il = {"@context": "https://schema.org", "@type": "ItemList", "name": t["t_h1"], "itemListElement": [{"@type": "ListItem", "position": k + 1, "name": d[l][0], "url": pages_hubs.BASE + u.format(l=l)} for k, (u, d) in enumerate(TOOLS)]}
-    pages_hubs._page(g, l, tpl, t["t_title"], t["t_desc"], t["t_h1"], _home(g, l), body, [il], t["kicker"], js)
+    pages_hubs._page(g, l, tpl, t["t_title"], t["t_desc"], t["t_h1"], _home(g, l), body, [il, pages_geo.webapp(t["t_fuel"], t["t_desc"], pages_hubs.BASE + tpl.format(l=l) + "#fuel", l), pages_geo.webapp(t["t_car"], t["t_desc"], pages_hubs.BASE + tpl.format(l=l) + "#car", l)], t["kicker"], js)
 
 def tools_line(g, a, l):
     """One line of live tools related to the article's topics (flights, weather, culture, places) for the end of every article."""

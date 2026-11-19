@@ -472,12 +472,37 @@ REL_TOOLS = {"flights": ["how-to-get-to-sumba-from-bali", "tambolaka-airport-gui
              "events": ["pasola-explained", "pasola-2027-dates", "sumba-weddings-funerals-ceremonies", "sumba-etiquette-mistakes", "best-time-to-visit-sumba", "ratenggaro-village"],
              "travel-status": ["sumba-travel-safety-health", "sumba-rainy-season", "getting-around-sumba", "ferries-to-sumba", "tambolaka-airport-guide", "waingapu-airport-guide"],
              "press": ["sumba-facts-figures", "short-history-of-sumba", "where-is-sumba", "sumba-travel-guide", "pasola-explained", "weekuri-lagoon"]}
+ARCH_T = {"en": ("Sumba news: {m} {y}", "All {n} stories The Sumba Times published about Sumba in {m} {y}, newest first, with date and summary.", "News archive by month", "stories"),
+          "es": ("Noticias de Sumba: {m} de {y}", "Las {n} noticias que The Sumba Times publicó sobre Sumba en {m} de {y}, de la más reciente a la más antigua, con fecha y resumen.", "Archivo de noticias por mes", "noticias"),
+          "id": ("Berita Sumba: {m} {y}", "Seluruh {n} berita Sumba yang diterbitkan The Sumba Times pada {m} {y}, dari yang terbaru, lengkap dengan tanggal dan ringkasan.", "Arsip berita per bulan", "berita")}
+def news_months():
+    by = {}
+    for a in all_items():
+        if kind_of(a) in ("brief", "letter"): by.setdefault(a["date"][:7], []).append(a)
+    return {k: sorted(v, key=dt, reverse=True) for k, v in sorted(by.items(), reverse=True)}
+def archive_links(l):
+    return f'<p class="tags" data-block="newsarchive"><b>{ARCH_T[l][2]}:</b> ' + " ".join(f'<a href="/{l}/news/{k[:4]}/{k[5:]}/">{MONTHS[l][int(k[5:]) - 1]} {k[:4]} ({len(v)})</a>' for k, v in news_months().items()) + "</p>"
+def news_archive():
+    for k, its in news_months().items():
+        for l in LANGS:
+            t = ARCH_T[l]; mname = MONTHS[l][int(k[5:]) - 1]; tpl = "/{l}/news/" + k[:4] + "/" + k[5:] + "/"
+            title = t[0].format(m=mname, y=k[:4]); desc = t[1].format(n=len(its), m=mname, y=k[:4])
+            rows = "".join(f'<li style="margin:0 0 14px"><a href="{url_of(a, l)}"><b>{esc(a[l]["title"])}</b></a><br><small>{fdate(a, l, False)} · {esc(kicker(a, l))}</small><br>{esc(a[l]["dek"])}</li>' for a in its)
+            il = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "inLanguage": l, "url": BASE + tpl.format(l=l),
+                  "mainEntity": {"@type": "ItemList", "numberOfItems": len(its), "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": a[l]["title"], "url": BASE + url_of(a, l)} for i, a in enumerate(its)]}}
+            pages_hubs._page(globals(), l, tpl, title, desc, title, [(X[l]["home"], f"/{l}/"), (sec_name(l, "news"), f"/{l}/news/")], f'<p class="dek">{esc(desc)}</p><ol style="padding-left:1.2em">{rows}</ol>' + archive_links(l), [il])
+def security_txt():
+    exp = (NOW + datetime.timedelta(days=330)).strftime("%Y-%m-%dT00:00:00Z")
+    write("/.well-known/security.txt", f"Contact: mailto:{CONTACT}\nExpires: {exp}\nPreferred-Languages: en, es, id\nCanonical: {BASE}/.well-known/security.txt\n")
 REL_TOOLS_T = {"en": "Related guides and places", "es": "Guías y lugares relacionados", "id": "Panduan dan tempat terkait"}
 def write(p, s):
     m_ = re.match(r"^/(en|es|id)/(flights|events|travel-status|press)/$", p)
     if m_ and "</main>" in s:
         l_ = m_.group(1); by_ = {a["slug"]: a for a in all_items()}
         li_ = "".join(f'<li><a href="{url_of(by_[k], l_)}">{esc(by_[k][l_]["title"])}</a></li>' for k in REL_TOOLS[m_.group(2)] if k in by_)
+    m2_ = re.match(r"^/(en|es|id)/news/$", p)
+    if m2_ and "</main>" in s: s = s.replace("</main>", f'<div class="w">{archive_links(m2_.group(1))}</div></main>', 1)
+    if m_ and "</main>" in s:
         s = s.replace("</main>", f'<div class="nar"><section class="nearby" data-block="reltools"><h2>{REL_TOOLS_T[l_]}</h2><ul>{li_}</ul></section></div></main>', 1)
     fp = os.path.join(OUT, p.lstrip("/"))
     if fp.endswith("/"): fp += "index.html"
@@ -710,18 +735,19 @@ def article_page(a, l):
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}T{tm(a)}:00+08:00">'
     kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
     if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
+    if a["slug"] in AIRPORT_LD: extra += '<script type="application/ld+json">' + json.dumps(dict({"@context": "https://schema.org", "@type": "Airport", "address": {"@type": "PostalAddress", "addressRegion": "East Nusa Tenggara", "addressCountry": "ID"}, "containedInPlace": {"@type": "Place", "name": "Sumba"}, "url": url}, **AIRPORT_LD[a["slug"]]), ensure_ascii=False) + "</script>"
     extra += f'<link rel="alternate" type="text/markdown" href="{url}index.md">'
     _pd = pages_geo.place_desc(globals(), a, l)
     s = head(l, (c.get("seo_title") or c["title"]) + " · The Sumba Times", (_pd + " " + c["dek"]) if _pd else c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     write(tpl[l] + "index.md", markdown_of(a, l, url))
-    srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
+    srcs = "".join(f'<li><a href="{esc(h)}" rel="{"noopener" if OFFICIAL_SRC.search(h) else "nofollow noopener"}" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(pages_hubs.glossary_links(globals(), ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])}.</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l, a)
     top_x, bot_x = extras_html(a, l)
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
-    crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a>' + (f' › <a href="/{l}/{a["section"]}/">{esc(sec_name(l,a["section"]))}</a>' if a["section"] != grp and a["section"] in LEGACY else "") + "</div>"
+    crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a>' + (f' › <a href="/{l}/{a["section"]}/">{esc(sec_name(l,a["section"]))}</a>' if a["section"] != grp and a["section"] in LEGACY else "") + pages_geo.regency_crumb(globals(), a, l) + "</div>"
     plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta" data-block="plancta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{('<span class="ty">' + TYPE_T[l][type_of(a)] + '</span> · ') if TYPE_T[l][type_of(a)].lower() != kicker(a,l).lower() else ''}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
@@ -754,6 +780,9 @@ def context_html(a, l):
     if prev: parts.append(f'<b>{t[1]}:</b> <a href="{url_of(prev, l)}">{esc(prev[l]["title"])}</a> ({fdate(prev, l, False)})')
     if parts: out += f'<p class="ctx" data-block="context">{" · ".join(parts)}</p>'
     return out
+OFFICIAL_SRC = re.compile(r"https?://[^/]*(\\.go\\.id|\\.gov|\\.gob\\.es|\\.gov\\.uk|\\.gov\\.au|\\.ac\\.id|\\.edu|who\\.int|unesco\\.org|iucnredlist\\.org|europa\\.eu|un\\.org|worldbank\\.org)(/|$)")
+AIRPORT_LD = {"tambolaka-airport-guide": {"name": "Lede Kalumbang Airport (Tambolaka)", "alternateName": ["Tambolaka Airport", "Bandara Lede Kalumbang"], "iataCode": "TMC", "geo": {"@type": "GeoCoordinates", "latitude": -9.4097, "longitude": 119.2445}},
+              "waingapu-airport-guide": {"name": "Umbu Mehang Kunda Airport (Waingapu)", "alternateName": ["Waingapu Airport", "Bandara Umbu Mehang Kunda"], "iataCode": "WGP", "geo": {"@type": "GeoCoordinates", "latitude": -9.6692, "longitude": 120.3020}}}
 TYPE_T = {"en": {"news": "News", "guide": "Guide", "place": "Place", "letter": "Letter", "explainer": "Explained"}, "es": {"news": "Noticia", "guide": "Guía", "place": "Lugar", "letter": "Carta", "explainer": "Explicado"},
           "id": {"news": "Berita", "guide": "Panduan", "place": "Tempat", "letter": "Surat", "explainer": "Penjelasan"}}
 def type_of(a):
@@ -1035,10 +1064,18 @@ clearTimeout(LOGT);LOGT=setTimeout(function(){{if(window.stEv)stEv({{k:'q',q:q,n
 var q0=new URLSearchParams(location.search).get('q');if(q0){{document.getElementById('q').value=q0;go()}}document.getElementById('q').addEventListener('input',function(){{clearTimeout(window._sd);window._sd=setTimeout(go,350)}});</script>""" + footer(l)
     write(tpl.format(l=l), s)
 
+NF_T = {"en": ("Did you mean", "Search The Sumba Times", "Start here"), "es": ("Quizá buscabas", "Buscar en The Sumba Times", "Empieza aquí"), "id": ("Mungkin maksud Anda", "Cari di The Sumba Times", "Mulai di sini")}
 def notfound(l):
-    x = X[l]; tpl = "/{l}/404.html"
+    x = X[l]; tpl = "/{l}/404.html"; t = NF_T[l]
     s = head(l, x["nf"] + " · The Sumba Times", x["nf_t"], "/{l}/", noindex=True) + masthead(l, "/{l}/")
-    s += f'<main id="main" class="w"><div class="nar" style="padding:40px 0"><h1>{x["nf"]}</h1><p>{x["nf_t"]}</p><p><a href="/{l}/">{x["back"]}</a> · <a href="/{l}/search/">{x["search"]}</a></p></div></main>' + footer(l)
+    s += f'''<main id="main" class="w"><div class="nar" style="padding:40px 0"><h1>{x["nf"]}</h1><p>{x["nf_t"]}</p>
+<form action="/{l}/search/" method="get" role="search" style="margin:14px 0"><input type="search" name="q" id="nfq" aria-label="{t[1]}" placeholder="{t[1]}" style="font:inherit;padding:8px;width:min(100%,24em)"> <button class="btnp" type="submit">{x["search"]}</button></form>
+<section id="nfs" data-block="nf-suggest" hidden><h2 class="rh">{t[0]}</h2><ul></ul></section>
+<p><a href="/{l}/">{x["back"]}</a> · <a href="/{l}/start/">{t[2]}</a> · <a href="/{l}/sitemap/">{esc(SMAP[l][0])}</a></p>
+{engage.most_read_html(l)}<div style="margin-top:26px">{subscribe(l, False, None, "404")}</div></div></main>
+<script>(function(){{var w=decodeURIComponent(location.pathname).toLowerCase().split('/').filter(function(x){{return x&&x.length>2&&!/^(en|es|id|index\\.html|404\\.html)$/.test(x)}}).join('-').split(/[^a-z0-9\\u00c0-\\u024f]+/).filter(function(x){{return x.length>2}});if(!w.length)return;
+document.getElementById('nfq').value=w.join(' ');fetch('/{l}/search.json').then(function(r){{return r.json()}}).then(function(ix){{var out=ix.map(function(a){{var h=(a.u+' '+a.t).toLowerCase(),sc=0;w.forEach(function(k){{if(h.indexOf(k)>-1)sc+=k.length}});return [sc,a]}}).filter(function(z){{return z[0]>3}}).sort(function(a,b){{return b[0]-a[0]}}).slice(0,5);
+if(!out.length)return;var s=document.getElementById('nfs'),ul=s.querySelector('ul');out.forEach(function(z){{var li=document.createElement('li'),a=document.createElement('a');a.href=z[1].u;a.textContent=z[1].t;li.appendChild(a);ul.appendChild(li)}});s.hidden=false}}).catch(function(){{}})}})()</script>''' + footer(l)
     write(f"/{l}/404.html", s)
 
 def feed(l):
@@ -1092,6 +1129,7 @@ def sitemaps():
         for l in LANGS:
             imgs.append(f'<url><loc>{BASE}{url_of(a,l)}</loc><image:image><image:loc>{BASE}/img/{img_key(a)}-1280.webp</image:loc></image:image></url>')
     write("/image-sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(imgs) + "</urlset>")
+    for k_ in news_months(): add("/{l}/news/" + k_[:4] + "/" + k_[5:] + "/")
     groups = {"news": [], "guides": [], "places": [], "pages": []}
     art = {BASE + url_of(a, l): ("places" if a["section"] == "places" else "guides" if kind_of(a) == "guide" else "news") for a in all_items() for l in LANGS}
     for u_ in urls: groups[art.get(re.search(r"<loc>(.*?)</loc>", u_).group(1), "pages")].append(u_)
@@ -1108,8 +1146,8 @@ def sitemaps():
     write("/news-sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' + "".join(news) + "</urlset>")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "CCBot", "meta-externalagent", "DuckAssistBot", "MistralAI-User"]
     rb = "# The Sumba Times welcomes search engines and AI assistants. Please cite and link the article you use.\n"
-    rb += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\nDisallow: /*/search/\n\n"
-    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\nSitemap: https://thesumbatimes.com/image-sitemap.xml\nSitemap: https://thesumbatimes.com/sitemap-index.xml\n"
+    rb += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\nDisallow: /*/search/\nDisallow: /api/\n\n"
+    rb += "User-agent: *\nContent-Signal: search=yes, ai-input=yes, ai-train=yes\nAllow: /\nDisallow: /*/search/\nDisallow: /api/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\nSitemap: https://thesumbatimes.com/image-sitemap.xml\nSitemap: https://thesumbatimes.com/sitemap-index.xml\n"
     write("/robots.txt", rb)
     llms()
 
@@ -1194,7 +1232,7 @@ if __name__ == "__main__":
         for a in all_items(): article_page(a, l)
     newsletter.build(globals())
     for m in MODULES: m.build(globals())
-    pages_geo.build_data_pages(globals())
+    pages_geo.build_data_pages(globals()); news_archive(); security_txt()
     for l in LANGS: html_sitemap(l)
     write("/_og.json", json.dumps(OGJ, ensure_ascii=False))
     root(); sitemaps(); redirects(); assets()

@@ -115,7 +115,7 @@ def box(l, inline=False, topic=None, src=""):
     title = s[f"t_{t}_t"] if t else s["box_t"]; text = s[f"t_{t}_p"] if t else s["box_p"]
     btn = s["t_pasola_b"] if t == "pasola" else s["btn"]
     cls = "sub in" if inline else "sub"; hid = "" if inline else ' id="subscribe"'
-    return f"""<div class="{cls}"{hid}><h3>{title}</h3><p>{text}</p>
+    return f"""<div class="{cls}"{hid} data-nosnippet><h3>{title}</h3><p>{text}</p>
 <form onsubmit="return stSub(event,this)" data-topic="{t or 'travel'}" data-src="{esc(src)}"><input type="email" name="email" required autocomplete="email" placeholder="{esc(s["ph"])}" aria-label="{esc(s["ph"])}"><input type="text" name="w" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px"><button type="submit">{btn}</button></form>
 <div class="msg" role="status" aria-live="polite"></div><small>{s["privacy"]} <a href="/{l}/newsletter/">{s["name"]}</a></small></div>"""
 

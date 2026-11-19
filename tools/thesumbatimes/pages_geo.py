@@ -104,8 +104,9 @@ def svg(l, title, dots=(), lines=(), labels=(), cls="lmap"):
     s = f'<svg class="{cls}" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(title)}" xmlns="http://www.w3.org/2000/svg"><title>{esc(title)}</title>{base_svg()}'
     for ln in lines:
         s += '<polyline points="' + " ".join("{:g},{:g}".format(*xy(x, y)) for x, y in ln) + '" fill="none" stroke="#a3271c" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>'
-    for lon, lat, r, col in dots:
-        x, y = xy(lon, lat); s += f'<circle cx="{x:g}" cy="{y:g}" r="{r}" fill="{col}" stroke="#fff" stroke-width="1"/>'
+    for d in dots:
+        lon, lat, r, col = d[:4]; x, y = xy(lon, lat); c = f'<circle cx="{x:g}" cy="{y:g}" r="{r}" fill="{col}" stroke="#fff" stroke-width="1"/>'
+        s += f'<a href="{esc(d[4])}" target="_top"><title>{esc(d[5])}</title>{c}</a>' if len(d) > 4 else c
     for lon, lat, text, anchor in labels:
         x, y = xy(lon, lat); dx = {"start": 8, "end": -8, "middle": 0}[anchor]; dy = -9 if anchor == "middle" else 4
         s += f'<text x="{x + dx:g}" y="{y + dy:g}" text-anchor="{anchor}" font-size="13" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="currentColor" paint-order="stroke" stroke="var(--bg,#fff)" stroke-width="3">{esc(text)}</text>'
@@ -132,6 +133,12 @@ def neighbours(g, a, n=3, max_km=45):
         rows.append((km(i, j), km(i, j), its[p["k"]]))
     rows.sort(key=lambda r: r[0])
     return [r for r in rows if r[0] <= max_km][:n]
+COPY_T = {"en": "Copy coordinates", "es": "Copiar coordenadas", "id": "Salin koordinat"}
+def regency_crumb(g, a, l):
+    """' › regency page' for the breadcrumb of a place page, or ''."""
+    if a.get("section") != "places" or pages_hubs._is_area(a) or not a.get("places"): return ""
+    k = REG_PAGE.get(regency_of(a) or ""); u = _url(g, k, l) if k else None
+    return f' › <a href="{u}">{esc(pages_hubs.pname(_items(g)[k], l))}</a>' if u else ""
 def place_sentence(g, a, l):
     i = _place_idx(a)
     if i is None or km(i, 0) is None or km(i, 1) is None: return ""
@@ -177,7 +184,7 @@ def place_box(g, a, l):
     if near and a["slug"] != HUB_PAGE.get(near[0][1]):
         k = near[0][1]; j = IDX[k]; u = _url(g, HUB_PAGE[k], l)
         rows += f'<dt>{t["nearest"]}</dt><dd>{f"""<a href="{u}">{HUB[k][l]}</a>""" if u else HUB[k][l]}: {num(km(i, j), l)} {t["km_road"]}, {t["about"]} {drv(km(i, j), l)}</dd>'
-    rows += f'<dt>{t["coords"]}</dt><dd>{p["lat"]:.4f}, {p["lon"]:.4f} · <a href="https://www.google.com/maps/search/?api=1&query={p["lat"]},{p["lon"]}" target="_blank" rel="noopener">{t["open_map"]}</a></dd>'
+    rows += f'<dt>{t["coords"]}</dt><dd>{p["lat"]:.4f}, {p["lon"]:.4f} · <a href="https://www.google.com/maps/search/?api=1&query={p["lat"]},{p["lon"]}" target="_blank" rel="noopener">{t["open_map"]}</a> · <button type="button" class="gcp" data-c="{p["lat"]:.5f}, {p["lon"]:.5f}" data-ok="✓" onclick="var b=this;navigator.clipboard&&navigator.clipboard.writeText(b.dataset.c).then(function(){{b.textContent=b.dataset.ok}})">{COPY_T[l]}</button></dd>'
     _rk = REG_PAGE.get(regency_of(a) or ""); _rp = _url(g, _rk, l) if _rk else None
     if _rp: rows = f'<dt>{REG_T[l][0]}</dt><dd><a href="{_rp}">{esc(pages_hubs.pname(_items(g)[_rk], l))}</a></dd>' + rows
     rows += sun_row(g, p, l)
@@ -218,8 +225,8 @@ P = {
         "q_method": "Source: USGS Earthquake Catalog, query of {d}: magnitude 5.0 or more, within 250 km of 9.7° S, 120.0° E, from 1 January 2000. Magnitudes published by Indonesia's BMKG for the same events can differ by a few tenths. Distances are from the epicentre to the centre of the island in a straight line.",
         "q_do": "What to do", "q_do_p": "If you feel a strong or long earthquake near the coast, move to higher ground without waiting for a warning. Official information is published by BMKG.", "q_crumb": "Earthquakes", "q_map_alt": "Map of earthquake epicentres of magnitude 5 or more around Sumba since 2000",
         "x_title": "Sumba open data: places, distances, climate, flights and more", "x_h1": "Sumba data to download", "x_desc": "Tables about Sumba to download as CSV, JSON and GeoJSON: places with coordinates, road distances, monthly climate, flights, events, earthquakes and glossary.",
-        "x_lead": "These are the tables behind the pages of The Sumba Times, ready to download. Journalists, students, guides and developers can reuse them with credit to The Sumba Times and a link to this page. Each file states its source and the date of the data.",
-        "x_file": "File", "x_rows": "Rows", "x_what": "What it contains", "x_src": "Source", "x_lic": "Reuse", "x_lic_p": "Our own compilation can be reused with credit and a link. The underlying sources keep their own terms: OpenStreetMap data is under ODbL, the USGS catalogue is public domain, and Open-Meteo ERA5 data is under CC BY 4.0. Flight and event rows cite the source of each item on its page.", "x_crumb": "Data"},
+        "x_lead": "These are the tables behind the pages of The Sumba Times, ready to download. Journalists, students, guides and developers can reuse them under the Creative Commons Attribution 4.0 licence (CC BY 4.0): credit The Sumba Times and link to this page. Each file states its source and the date of the data.",
+        "x_file": "File", "x_rows": "Rows", "x_what": "What it contains", "x_src": "Source", "x_lic": "Reuse", "x_lic_p": "Our own compilation is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The underlying sources keep their own terms: OpenStreetMap data is under ODbL, the USGS catalogue is public domain, and Open-Meteo ERA5 data is under CC BY 4.0. Flight and event rows cite the source of each item on its page.", "x_crumb": "Data"},
  "es": {"d_title": "Distancias en Sumba y tiempos en coche: tabla y calculadora", "d_h1": "Distancias y tiempos de trayecto en Sumba",
         "d_desc": "Distancia por carretera y tiempo en coche entre Tambolaka, Waikabubak, Waibakul, Waingapu, los dos aeropuertos y {n} lugares de Sumba. Calculado sobre carreteras de OpenStreetMap.",
         "d_lead": "¿Cuánto se tarda? Esta página da la distancia por carretera y el tiempo en coche entre las cuatro ciudades de Sumba, sus dos aeropuertos, el puerto de Waikelo y {n} playas, cascadas, aldeas y miradores. Elige dos puntos en la calculadora o consulta las tablas.",
@@ -243,8 +250,8 @@ P = {
         "q_method": "Fuente: catálogo de terremotos del USGS, consulta del {d}: magnitud 5,0 o más, a menos de 250 km de 9,7° S, 120,0° E, desde el 1 de enero de 2000. Las magnitudes que publica la BMKG de Indonesia para los mismos sismos pueden diferir en unas décimas. Las distancias son en línea recta del epicentro al centro de la isla.",
         "q_do": "Qué hacer", "q_do_p": "Si notas un terremoto fuerte o largo cerca de la costa, sube a un lugar alto sin esperar un aviso. La información oficial la publica la BMKG.", "q_crumb": "Terremotos", "q_map_alt": "Mapa de epicentros de terremotos de magnitud 5 o más alrededor de Sumba desde 2000",
         "x_title": "Datos abiertos de Sumba: lugares, distancias, clima, vuelos y más", "x_h1": "Datos de Sumba para descargar", "x_desc": "Tablas sobre Sumba para descargar en CSV, JSON y GeoJSON: lugares con coordenadas, distancias por carretera, clima mensual, vuelos, eventos, terremotos y glosario.",
-        "x_lead": "Estas son las tablas que hay detrás de las páginas de The Sumba Times, listas para descargar. Periodistas, estudiantes, guías y desarrolladores pueden reutilizarlas citando a The Sumba Times y enlazando esta página. Cada archivo indica su fuente y la fecha de los datos.",
-        "x_file": "Archivo", "x_rows": "Filas", "x_what": "Qué contiene", "x_src": "Fuente", "x_lic": "Reutilización", "x_lic_p": "Nuestra recopilación se puede reutilizar con cita y enlace. Las fuentes de origen mantienen sus condiciones: los datos de OpenStreetMap están bajo ODbL, el catálogo del USGS es de dominio público y los datos ERA5 de Open-Meteo están bajo CC BY 4.0. Las filas de vuelos y eventos citan la fuente de cada dato en su página.", "x_crumb": "Datos"},
+        "x_lead": "Estas son las tablas que hay detrás de las páginas de The Sumba Times, listas para descargar. Periodistas, estudiantes, guías y desarrolladores pueden reutilizarlas con la licencia Creative Commons Atribución 4.0 (CC BY 4.0): hay que citar a The Sumba Times y enlazar esta página. Cada archivo indica su fuente y la fecha de los datos.",
+        "x_file": "Archivo", "x_rows": "Filas", "x_what": "Qué contiene", "x_src": "Fuente", "x_lic": "Reutilización", "x_lic_p": "Nuestra recopilación se publica con licencia CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es). Las fuentes de origen mantienen sus condiciones: los datos de OpenStreetMap están bajo ODbL, el catálogo del USGS es de dominio público y los datos ERA5 de Open-Meteo están bajo CC BY 4.0. Las filas de vuelos y eventos citan la fuente de cada dato en su página.", "x_crumb": "Datos"},
  "id": {"d_title": "Jarak dan waktu tempuh di Sumba: tabel dan kalkulator", "d_h1": "Jarak dan waktu tempuh di Sumba",
         "d_desc": "Jarak lewat jalan darat dan waktu berkendara antara Tambolaka, Waikabubak, Waibakul, Waingapu, dua bandara, dan {n} tempat wisata di Sumba. Dihitung dari data jalan OpenStreetMap.",
         "d_lead": "Berapa jauh dan berapa jam? Halaman ini memuat jarak lewat jalan darat dan waktu berkendara antara empat kota di Sumba, dua bandaranya, Pelabuhan Waikelo, dan {n} pantai, air terjun, kampung adat, dan bukit. Pilih dua titik di kalkulator atau baca tabelnya.",
@@ -268,8 +275,8 @@ P = {
         "q_method": "Sumber: Katalog Gempa USGS, kueri {d}: magnitudo 5,0 atau lebih, dalam radius 250 km dari 9,7° LS, 120,0° BT, sejak 1 Januari 2000. Magnitudo yang dirilis BMKG untuk gempa yang sama bisa berbeda beberapa persepuluh. Jarak dihitung garis lurus dari episentrum ke pusat pulau.",
         "q_do": "Apa yang harus dilakukan", "q_do_p": "Jika merasakan gempa kuat atau lama di dekat pantai, segera menuju tempat tinggi tanpa menunggu peringatan. Informasi resmi dikeluarkan oleh BMKG.", "q_crumb": "Gempa bumi", "q_map_alt": "Peta episentrum gempa bermagnitudo 5 atau lebih di sekitar Sumba sejak 2000",
         "x_title": "Data terbuka Sumba: tempat, jarak, iklim, penerbangan, dan lainnya", "x_h1": "Data Sumba untuk diunduh", "x_desc": "Tabel tentang Sumba untuk diunduh dalam format CSV, JSON, dan GeoJSON: tempat dengan koordinat, jarak lewat jalan, iklim bulanan, penerbangan, acara, gempa, dan glosarium.",
-        "x_lead": "Inilah tabel di balik halaman-halaman The Sumba Times, siap diunduh. Jurnalis, pelajar, pemandu, dan pengembang boleh memakainya kembali dengan menyebut The Sumba Times dan menautkan halaman ini. Setiap berkas mencantumkan sumber dan tanggal datanya.",
-        "x_file": "Berkas", "x_rows": "Baris", "x_what": "Isi", "x_src": "Sumber", "x_lic": "Pemakaian ulang", "x_lic_p": "Kompilasi kami boleh dipakai ulang dengan menyebut sumber dan menautkan halaman ini. Sumber asalnya tetap mengikuti ketentuan masing-masing: data OpenStreetMap berlisensi ODbL, katalog USGS merupakan domain publik, dan data ERA5 dari Open-Meteo berlisensi CC BY 4.0. Baris penerbangan dan acara menyebut sumber tiap data di halamannya.", "x_crumb": "Data"},
+        "x_lead": "Inilah tabel di balik halaman-halaman The Sumba Times, siap diunduh. Jurnalis, pelajar, pemandu, dan pengembang boleh memakainya kembali dengan lisensi Creative Commons Atribusi 4.0 (CC BY 4.0): sebutkan The Sumba Times dan tautkan halaman ini. Setiap berkas mencantumkan sumber dan tanggal datanya.",
+        "x_file": "Berkas", "x_rows": "Baris", "x_what": "Isi", "x_src": "Sumber", "x_lic": "Pemakaian ulang", "x_lic_p": "Kompilasi kami berlisensi CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.id). Sumber asalnya tetap mengikuti ketentuan masing-masing: data OpenStreetMap berlisensi ODbL, katalog USGS merupakan domain publik, dan data ERA5 dari Open-Meteo berlisensi CC BY 4.0. Baris penerbangan dan acara menyebut sumber tiap data di halamannya.", "x_crumb": "Data"},
 }
 SITEMAP = ["/{l}/distances/", "/{l}/map/", "/{l}/earthquakes/", "/{l}/data/"] + ["/{l}/distances/" + pair_slug(a, b) + "/" for a, b in PAIRS]
 FOOTER = [("/{l}/distances/", {"en": "Distances", "es": "Distancias", "id": "Jarak"}), ("/{l}/data/", {"en": "Data", "es": "Datos", "id": "Data"})]
@@ -278,6 +285,7 @@ CSS = """
 .gsent,.gcomb,.gnote{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnote{color:var(--muted);font-size:13.5px}.gnb{list-style:none;padding:0;margin:0 0 12px;font:15px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gnb li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:7px 0}.gnb span{color:var(--muted);white-space:nowrap}
 .gfig{margin:10px 0}.gfig figcaption{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted);margin-top:4px}.lmap{width:100%;height:auto;display:block;background:color-mix(in srgb,var(--accent) 6%,var(--bg));border:1px solid var(--line);border-radius:6px;color:var(--ink)}
 .gtab{width:100%;border-collapse:collapse;font:14.5px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:8px 0 18px}.gtab th,.gtab td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.gtab th{font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.gtab td.n,.gtab th.n{text-align:right;white-space:nowrap}.gscroll{overflow-x:auto}
+.gcp{font:inherit;background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer}
 .gupd dt{font:700 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:10px}.gupd dd{margin:2px 0 0}
 .gcalc{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px;font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gcalc label{display:inline-block;margin:0 12px 8px 0}.gcalc select{font:inherit;padding:6px;max-width:100%}.gcalc output{display:block;font-weight:700;margin-top:6px}
 @media(max-width:600px){.gbox dl{grid-template-columns:1fr}.gbox dt{margin-top:6px}}
@@ -292,11 +300,28 @@ def _place_rows(g):
     return [(i, its[p["k"]]) for i, p in enumerate(PTS) if not p.get("hub") and p["k"] in its and not pages_hubs._is_area(its[p["k"]]) and km(i, 0) is not None]
 def _crumbs(l, g): return [(g["X"][l]["home"], f"/{l}/")]
 def _ds(name, desc, url, files, l, date=None):
-    return {"@context": "https://schema.org", "@type": "Dataset", "name": name, "description": desc, "url": url, "inLanguage": l, "dateModified": date or FETCHED, "isAccessibleForFree": True,
+    return {"@context": "https://schema.org", "@type": "Dataset", "name": name, "description": desc, "url": url, "inLanguage": l, "dateModified": date or FETCHED, "isAccessibleForFree": True, "license": "https://creativecommons.org/licenses/by/4.0/",
             "creator": {"@type": "NewsMediaOrganization", "@id": pages_hubs.BASE + "/#organization", "name": "The Sumba Times", "url": pages_hubs.BASE + "/"},
             "spatialCoverage": {"@type": "Place", "name": "Sumba, East Nusa Tenggara, Indonesia"},
             "distribution": [{"@type": "DataDownload", "encodingFormat": fmt, "contentUrl": pages_hubs.BASE + f} for f, fmt in files]}
 
+def webapp(name, desc, url, l):
+    return {"@context": "https://schema.org", "@type": "WebApplication", "name": name, "description": desc, "url": url, "inLanguage": l, "applicationCategory": "TravelApplication", "operatingSystem": "Any",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@id": pages_hubs.BASE + "/#organization"}}
+EMB_T = {"en": ("Put this map on your website", "Free to embed with the credit line. Copy this code:", "Places in Sumba. Map by The Sumba Times"), "es": ("Pon este mapa en tu web", "Se puede incrustar gratis con la línea de crédito. Copia este código:", "Lugares de Sumba. Mapa de The Sumba Times"),
+         "id": ("Pasang peta ini di situs Anda", "Gratis disematkan dengan mencantumkan kredit. Salin kode ini:", "Tempat wisata di Sumba. Peta oleh The Sumba Times")}
+def _embed(g, l):
+    """/widget/map-LANG.html: the map alone, every dot linked to its place page, for iframes on other sites (noindex)."""
+    col = {"beach": "#1f7a8c", "water": "#2a6fdb", "village": "#a3271c", "view": "#c77d1a", "nature": "#3d7a3a", "town": "#555"}; B = pages_hubs.BASE
+    def typ(a): return g["ptype"]({"name": a["places"][0]["name"], "url": a})
+    dots = [(PTS[i]["lon"], PTS[i]["lat"], 6, col.get(typ(a), "#555"), B + g["url_of"](a, l) + "?utm_source=embed-map", pages_hubs.pname(a, l)) for i, a in _place_rows(g)]
+    htm = (f'<!doctype html><html lang="{l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{esc(EMB_T[l][2])}</title>'
+           f'<link rel="canonical" href="{B}/{l}/map/"><style>body{{margin:0;font:13px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:#1b1a17;background:#f6f1ea}}svg{{width:100%;height:auto;display:block;--card:#fff;--bg:#f6f1ea}}p{{margin:4px 8px 8px}}a{{color:inherit}}circle{{cursor:pointer}}</style></head><body>'
+           f'{svg(l, EMB_T[l][2], dots, labels=town_labels(l))}<p><a href="{B}/{l}/map/?utm_source=embed-map" target="_top">{esc(EMB_T[l][2])}</a> · © OpenStreetMap</p></body></html>')
+    g["write"](f"/widget/map-{l}.html", htm)
+def embed_box(l):
+    code = f'<iframe src="{pages_hubs.BASE}/widget/map-{l}.html" title="{EMB_T[l][2]}" width="100%" height="460" style="border:0;max-width:680px" loading="lazy"></iframe>'
+    return f'<h2 id="embed">{EMB_T[l][0]}</h2><p>{EMB_T[l][1]}</p><textarea readonly rows="3" style="width:100%;font:13px ui-monospace,monospace;padding:8px" onclick="this.select()" aria-label="{EMB_T[l][0]}">{esc(code)}</textarea>'
 def _distances(g, l):
     t = P[l]; s_ = S[l]; rows = _place_rows(g); n = len(rows); tpl = "/{l}/distances/"
     hubs = ["tmc", "tambolaka", "waikelo", "waikabubak", "waibakul", "waingapu", "wgp"]
@@ -323,7 +348,7 @@ def _distances(g, l):
             f'<h2 id="method">{t["method_t"]}</h2><p>{esc(t["method"].format(d=fdate(g, l)))}</p><p><a href="/data/sumba-distances.csv">{t["dl"]} (CSV)</a> · <a href="/{l}/data/">{P[l]["x_h1"]}</a> · <a href="/{l}/map/">{P[l]["m_h1"]}</a></p>')
     url = pages_hubs.BASE + tpl.format(l=l)
     pages_hubs._page(g, l, tpl, t["d_title"], t["d_desc"].format(n=n), t["d_h1"], _crumbs(l, g), body,
-                     [_ds(t["d_h1"], t["d_desc"].format(n=n), url, [("/data/sumba-distances.csv", "text/csv")], l)], t["kicker"], js)
+                     [_ds(t["d_h1"], t["d_desc"].format(n=n), url, [("/data/sumba-distances.csv", "text/csv")], l), webapp(t["calc_t"], t["d_desc"].format(n=n), url, l)], t["kicker"], js)
 
 def _seg_dist(px, py, ax, ay, bx, by):
     dx, dy = bx - ax, by - ay; q = dx * dx + dy * dy
@@ -381,7 +406,7 @@ def _map(g, l):
     regs = [a for a in g["all_items"]() if a["section"] == "places" and pages_hubs._is_area(a)]
     regl = " · ".join(f'<a href="{g["url_of"](a, l)}">{esc(pages_hubs.pname(a, l))}</a>' for a in regs)
     body = (f'<p class="dek">{esc(t["m_lead"].format(n=n))}</p><figure class="gfig">{svg(l, t["m_h1"], dots + town_dots(), labels=town_labels(l))}<figcaption>{legend}. © OpenStreetMap.</figcaption></figure>'
-            f'<p><a href="/{l}/plan/#map">{t["m_inter"]} →</a> · <a href="/{l}/distances/">{P[l]["d_h1"]}</a> · <a href="/data/sumba-places.geojson">GeoJSON</a> · <a href="/data/sumba-places.csv">CSV</a></p><p>{regl}</p>{lists}<p class="gnote">{esc(t["method"].format(d=fdate(g, l)))}</p>')
+            f'<p><a href="/{l}/plan/#map">{t["m_inter"]} →</a> · <a href="/{l}/distances/">{P[l]["d_h1"]}</a> · <a href="/data/sumba-places.geojson">GeoJSON</a> · <a href="/data/sumba-places.csv">CSV</a></p><p>{regl}</p>{lists}{embed_box(l)}<p class="gnote">{esc(t["method"].format(d=fdate(g, l)))}</p>')
     il = {"@context": "https://schema.org", "@type": "ItemList", "name": t["m_h1"], "numberOfItems": n, "itemListElement": [{"@type": "ListItem", "position": k + 1, "name": pages_hubs.pname(a, l), "url": pages_hubs.BASE + g["url_of"](a, l)} for k, (i, a) in enumerate(rows)]}
     pages_hubs._page(g, l, tpl, t["m_title"].format(n=n), t["m_desc"].format(n=n), t["m_h1"], _crumbs(l, g), body, [il], t["kicker"])
 
@@ -429,9 +454,13 @@ def _files(g):
         p = PTS[i]; r = [a["slug"], pages_hubs.pname(a, "en"), typ(a), p.get("area", ""), p["lat"], p["lon"], km(i, 0), tmin(km(i, 0))[0], tmin(km(i, 0))[1], km(i, 1), tmin(km(i, 1))[0], tmin(km(i, 1))[1]] + [B + g["url_of"](a, x) for x in ("en", "es", "id")]
         pl.append(r); feats.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": [p["lon"], p["lat"]]}, "properties": dict(zip(pl[0][:4] + pl[0][6:], r[:4] + r[6:]))})
     g["write"]("/data/sumba-places.csv", _csv(pl))
+    g["write"]("/data/sumba-places.json", json.dumps({"source": B + "/en/data/", "license": "CC BY 4.0", "date": FETCHED, "places": [dict(zip(pl[0], r_)) for r_ in pl[1:]]}, ensure_ascii=False))
+    g["write"]("/data/sumba-flights.json", json.dumps({"source": B + "/en/flights/", "license": "CC BY 4.0", "checked": pages_live.CHECKED, "routes": pages_live.FLIGHTS}, ensure_ascii=False, default=str))
+    g["write"]("/data/sumba-events.json", json.dumps({"source": B + "/en/events/", "license": "CC BY 4.0", "events": pages_live.EVENTS}, ensure_ascii=False, default=str))
     g["write"]("/data/sumba-places.geojson", json.dumps({"type": "FeatureCollection", "name": "Sumba places, The Sumba Times", "source": B + "/en/data/", "date": FETCHED, "features": feats}, ensure_ascii=False))
     src_osm = "The Sumba Times; road km from OSRM on OpenStreetMap roads, " + FETCHED + "; driving minutes estimated at 42 and 34 km/h"
     FILES.append(("/data/sumba-places.csv", "text/csv", len(pl) - 1, {"en": "Every place page: name, type, regency, coordinates and road distance and driving time from both airports.", "es": "Todas las fichas de lugares: nombre, tipo, regencia, coordenadas y distancia por carretera y tiempo en coche desde los dos aeropuertos.", "id": "Semua halaman tempat: nama, jenis, kabupaten, koordinat, serta jarak lewat jalan dan waktu tempuh dari kedua bandara."}, src_osm))
+    FILES.append(("/data/sumba-places.json", "application/json", len(pl) - 1, {"en": "The same table as JSON. Also: sumba-flights.json and sumba-events.json.", "es": "La misma tabla en JSON. También: sumba-flights.json y sumba-events.json.", "id": "Tabel yang sama dalam JSON. Juga: sumba-flights.json dan sumba-events.json."}, src_osm))
     FILES.append(("/data/sumba-places.geojson", "application/geo+json", len(feats), {"en": "The same places as points for any map software.", "es": "Los mismos lugares como puntos para cualquier programa de mapas.", "id": "Tempat yang sama dalam bentuk titik untuk perangkat lunak peta apa pun."}, src_osm))
     keep = [i for i, p in enumerate(PTS) if p.get("hub")] + [i for i, _ in rows]
     its = _items(g)
@@ -494,14 +523,14 @@ def _data(g, l):
     url = B + tpl.format(l=l)
     cat = {"@context": "https://schema.org", "@type": "DataCatalog", "name": t["x_h1"], "description": t["x_desc"], "url": url, "inLanguage": l,
            "publisher": {"@type": "NewsMediaOrganization", "@id": B + "/#organization", "name": "The Sumba Times", "url": B + "/"},
-           "dataset": [{"@type": "Dataset", "name": f.split("/")[-1], "description": d[l] + " " + src, "url": url, "isAccessibleForFree": True, "creator": {"@type": "NewsMediaOrganization", "@id": B + "/#organization", "name": "The Sumba Times"},
+           "dataset": [{"@type": "Dataset", "name": f.split("/")[-1], "description": d[l] + " " + src, "url": url, "isAccessibleForFree": True, "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "NewsMediaOrganization", "@id": B + "/#organization", "name": "The Sumba Times"},
                         "distribution": [{"@type": "DataDownload", "encodingFormat": fmt, "contentUrl": B + f}]} for f, fmt, n, d, src in FILES]}
     pages_hubs._page(g, l, tpl, t["x_title"], t["x_desc"], t["x_h1"], _crumbs(l, g), body, [cat], t["kicker"])
 
 def build(g):
     _files(g)
     for l in g["LANGS"]:
-        _distances(g, l); _map(g, l); _quakes(g, l)
+        _distances(g, l); _map(g, l); _quakes(g, l); _embed(g, l)
         for a, b in PAIRS: _pair(g, l, a, b)
 
 def build_data_pages(g):
