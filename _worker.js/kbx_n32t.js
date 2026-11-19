@@ -16,7 +16,7 @@ import { mkName, coName } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
-export const N32T_V = 'n32t2';
+export const N32T_V = 'n32t3';
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -135,7 +135,8 @@ async function render(env, lang, key, D, body, shTxt, extra) {
   const pg = { title: D.t + ' | Kolaboro', desc: D.d, canon, body, alt, ld };
   let html = await N.assemble(pg, lang, new Response(shTxt));
   // function replacements: page scripts can hold "$'" or "$&" (e.g. 'US$'), which a replacement string would expand
-  if (extra && extra.css) { const c = extra.css + '</head>'; html = html.replace('</head>', () => c); }
+  // longer words in de/nl/ru can widen a grid track past a 390 px screen: let cards shrink and wrap
+  const c = (extra && extra.css ? extra.css : '') + '<style>main .rg-cards>*,main .rgc{min-width:0;overflow-wrap:anywhere}</style></head>'; html = html.replace('</head>', () => c);
   const tail = (extra && extra.js ? extra.js : '') + '<script src="/k/n32t.js?v=' + N32T_V + '" data-k="' + esc(key.replace(/\//g, '-')) + '" defer></script></body>';
   html = html.replace('</body>', () => tail);
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
