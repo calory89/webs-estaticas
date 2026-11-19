@@ -1,0 +1,124 @@
+{
+ "v": "kolaboro-early-hints-1",
+ "measured": "2026-11-19",
+ "tool": "13.6.0",
+ "device": "mobile (simulated throttling)",
+ "before_commit": "a4410e1d4c..1a73cb948e (before n32x)",
+ "after_commit": "39bae1faa0 and later",
+ "example_header": "Link: </k/site.css?v=3a6e94c8e7>; rel=preload; as=style, </k/ds-site.css?v=dd003cfe8e>; rel=preload; as=style, </k/fonts/archivo-latin.woff2>; rel=preload; as=font; type=\"font/woff2\"; crossorigin",
+ "h103": true,
+ "h103_check": "curl --http2 -v https://kolaboro.com/ and /anomalies/ on 19 Nov 2026 after the deploy: \"HTTP/2 103\" then \"HTTP/2 200\"",
+ "note": "LCP equalled FCP in the runs counted in lcp_element: the largest element is text. Other changes went live between the before and after runs.",
+ "templates": [
+  {
+   "name": "Home",
+   "path": "/",
+   "runs": 6,
+   "before": {
+    "lcp_ms": 1393,
+    "runs_ms": [
+     1281,
+     1393,
+     1416
+    ]
+   },
+   "after": {
+    "lcp_ms": 1316,
+    "runs_ms": [
+     1316,
+     1397,
+     1294
+    ]
+   },
+   "lcp_element": "= FCP (6/6)"
+  },
+  {
+   "name": "Project page",
+   "path": "/projects/amani-melasti/",
+   "runs": 6,
+   "before": {
+    "lcp_ms": 1404,
+    "runs_ms": [
+     1891,
+     1349,
+     1404
+    ]
+   },
+   "after": {
+    "lcp_ms": 1182,
+    "runs_ms": [
+     1182,
+     1089,
+     1329
+    ]
+   },
+   "lcp_element": "= FCP (5/6)"
+  },
+  {
+   "name": "Market page",
+   "path": "/m/dubai/",
+   "runs": 6,
+   "before": {
+    "lcp_ms": 1416,
+    "runs_ms": [
+     1406,
+     1422,
+     1416
+    ]
+   },
+   "after": {
+    "lcp_ms": 1276,
+    "runs_ms": [
+     1810,
+     1276,
+     1224
+    ]
+   },
+   "lcp_element": "= FCP (5/6)"
+  },
+  {
+   "name": "Project list",
+   "path": "/projects/",
+   "runs": 6,
+   "before": {
+    "lcp_ms": 1614,
+    "runs_ms": [
+     1597,
+     1620,
+     1614
+    ]
+   },
+   "after": {
+    "lcp_ms": 1564,
+    "runs_ms": [
+     1466,
+     1608,
+     1564
+    ]
+   },
+   "lcp_element": "= FCP (6/6)"
+  },
+  {
+   "name": "Developer page",
+   "path": "/developers/emaar-properties/",
+   "runs": 6,
+   "before": {
+    "lcp_ms": 1402,
+    "runs_ms": [
+     1402,
+     1401,
+     1407
+    ]
+   },
+   "after": {
+    "lcp_ms": 1252,
+    "runs_ms": [
+     1252,
+     1111,
+     1335
+    ]
+   },
+   "lcp_element": "= FCP (6/6)"
+  }
+ ]
+}

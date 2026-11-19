@@ -15,7 +15,7 @@
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const V = 'x1';
+export const V = 'x2';
 let T = null;
 async function loadT(env) {
   if (T) return T;
@@ -145,7 +145,9 @@ async function provenance(env) {
   const att = { type: 'kolaboro-build-attestation-v1', site: ORIGIN + '/', commit, branch: (env && env.CF_PAGES_BRANCH) || null,
     worker_tree: (fromDep && fromDep.worker_tree) || (fromHist && fromHist.worker_tree) || null, worker_bytes: (fromHist && fromHist.worker_bytes) || null,
     dataset: { file: '/data/named.json', sha256: ch ? ch.live.sha256 : null, bytes: ch ? ch.live.bytes : null, snapshot_chain_tip: ch ? ch.chain_tip : null },
-    live_seen_by_guard: (fromDep && fromDep.at) || null, smoke_checks: fromDep ? [fromDep.checks_passed, fromDep.checks_total] : null, attested_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
+    live_seen_by_guard: (fromDep && fromDep.at) || null, smoke_checks: fromDep ? [fromDep.checks_passed, fromDep.checks_total] : null,
+    latest_recorded_deploy: (() => { const x = D0.find(y => y.commit && (y.worker_tree || (H0.find(z => z.commit === y.commit) || {}).worker_tree)); if (!x || x.commit === commit) return null; const hh = H0.find(z => z.commit === x.commit) || {}; return { commit: x.commit, live_seen: x.at, worker_tree: x.worker_tree || hh.worker_tree, note: 'The newest deploy the guard recorded. Commits after it that change only data files keep this worker source; a code commit changes it.' }; })(),
+    attested_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
     meaning: 'Which code commit and which dataset this site served at attested_at, signed by the key in /.well-known/kolaboro-keys.json. worker_tree is null until the deploy guard or the history file records this commit.' };
   let signature = null;
   try { const K = await import('./kolaboro.js'), msgHash = await shaHex(B.canon(att)); const s = await K.signBody(env, B.canon(att)); if (s) signature = { alg: 'Ed25519', kid: (env && env.KB_SIGN_KID) || 'kb', value: s, message: '"kolaboro-sig-v1\\n" + SHA-256 hex of the canonical JSON of "attestation" (keys sorted, no spaces)', attestation_sha256: msgHash }; } catch (e) {}
@@ -158,7 +160,7 @@ async function pvPage(env, shell, l) {
   const p = await provenance(env), a = p.attestation, s = p.signature;
   const sh = x => x ? '<code>' + esc(String(x).slice(0, 12)) + '</code>' : '<span class="mut">' + esc(t(l, 'pv_na')) + '</span>';
   const kv = t(l, 'pv_kv');
-  const cur = table([kv[0], kv[1]], [[kv[2], sh(a.commit)], [kv[3], sh(a.worker_tree)], [kv[4], a.worker_bytes ? bdi(l, nf(a.worker_bytes / 1048576, l, 2) + ' MiB') : sh(null)], [kv[5], sh(a.dataset.sha256)], [kv[6], sh(a.dataset.snapshot_chain_tip)], [kv[7], a.live_seen_by_guard ? esc(a.live_seen_by_guard.replace('T', ' ').slice(0, 16)) + ' UTC' : sh(null)], [kv[8], esc(a.attested_at.replace('T', ' ').slice(0, 16)) + ' UTC'], [kv[9], s ? '<span class="ok">Ed25519</span> <code>' + esc(s.kid) + '</code>' : '<span class="mut">' + esc(t(l, 'pv_nosig')) + '</span>']].map(r => '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + r[1] + '</td></tr>'));
+  const cur = table([kv[0], kv[1]], [[kv[2], sh(a.commit)], [kv[3], a.worker_tree ? sh(a.worker_tree) : sh(null) + (a.latest_recorded_deploy ? ' <span class="k-xs">' + esc(fill(t(l, 'pv_latest'), { c: a.latest_recorded_deploy.commit.slice(0, 12), w: String(a.latest_recorded_deploy.worker_tree).slice(0, 12) })) + '</span>' : '')], [kv[4], a.worker_bytes ? bdi(l, nf(a.worker_bytes / 1048576, l, 2) + ' MiB') : sh(null)], [kv[5], sh(a.dataset.sha256)], [kv[6], sh(a.dataset.snapshot_chain_tip)], [kv[7], a.live_seen_by_guard ? esc(a.live_seen_by_guard.replace('T', ' ').slice(0, 16)) + ' UTC' : sh(null)], [kv[8], esc(a.attested_at.replace('T', ' ').slice(0, 16)) + ' UTC'], [kv[9], s ? '<span class="ok">Ed25519</span> <code>' + esc(s.kid) + '</code>' : '<span class="mut">' + esc(t(l, 'pv_nosig')) + '</span>']].map(r => '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + r[1] + '</td></tr>'));
   const hist = table(t(l, 'pv_th'), p.history.slice(0, 40).map(x => '<tr><td class="n">' + esc((x.live_seen || '').replace('T', ' ').slice(0, 16)) + '</td><td>' + sh(x.commit) + '</td><td>' + esc(t(l, 'pv_r')[x.result] || x.result || '') + (x.smoke && x.smoke[1] ? ' <span class="k-xs">' + x.smoke[0] + '/' + x.smoke[1] + '</span>' : '') + '</td><td>' + sh(x.worker_tree) + '</td><td class="n">' + (x.worker_bytes ? bdi(l, nf(x.worker_bytes / 1048576, l, 2)) : '') + '</td><td>' + sh(x.dataset_sha256) + '</td></tr>'));
   const b = sec(t(l, 'pv_cur'), cur) + '<p><a href="/api/v1/provenance">/api/v1/provenance</a> · <a href="' + pre(l) + '/verify/offline/">' + esc(t(l, 'of_t')) + '</a></p>' + sec(t(l, 'pv_hist'), hist) + sec(t(l, 'method'), paras(l, 'pv_p')) + filesList(l, [['/data/provenance.json', 'JSON'], ['/data/deploys.json', 'JSON'], ['/open/deploy-guard.py', 'Python']]);
   return page(shell, l, Object.assign(H(l, 'pv'), { path: '/engineering/provenance/', body: b, updated: '2026-11-19', crumb: [[t(l, 'eng'), '/engineering/']], maxAge: 300 }));
@@ -181,7 +183,7 @@ async function stream(req, u, env, ctx) {
       await w.write(en.encode('retry: 15000\n' + sse(null, 'hello', { api: 'kolaboro-stream-v1', commit, total: E.length, replayed: rep.length, last_change_at: C.last, hold_s: hold / 1000, docs: ORIGIN + '/changes/live/' }) + rep.join('')));
       const t0 = Date.now();
       while (Date.now() - t0 < hold) {
-        await new Promise(r => setTimeout(r, 15000));
+        await new Promise(r => setTimeout(r, Math.max(1000, Math.min(15000, hold - (Date.now() - t0)))));
         let live = ''; try { const r = await fetch(ORIGIN + '/api/open/build', { cf: { cacheTtl: 15 } }); if (r.ok) live = String((await r.json()).commit || ''); } catch (e) {}
         await w.write(en.encode(live && commit && live !== commit ? sse(null, 'deploy', { commit: live, note: 'A new deploy is live; reconnect to receive its changes.' }) : ': keep-alive ' + new Date().toISOString() + '\n\n'));
         if (live && commit && live !== commit) break;

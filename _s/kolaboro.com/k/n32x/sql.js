@@ -22,7 +22,7 @@
   var unb64 = function (s) { try { s = s.replace(/-/g, '+').replace(/_/g, '/'); while (s.length % 4) s += '='; return decodeURIComponent(escape(atob(s))); } catch (e) { return null; } };
   var css = '<style>.sq-ed{display:grid;gap:8px}.sq-ed textarea{width:100%;min-height:150px;font:13px/1.45 ui-monospace,Menlo,monospace;direction:ltr;text-align:left}.sq-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.sq-ex{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px;padding:0;list-style:none}.sq-ex button{font-size:.9rem}.sq-st{font-size:.92rem;color:var(--muted,#59626B);margin:6px 0}.sq-st.ok{color:#0B7A55}.sq-st.no{color:#B42318}.sq-out{overflow:auto;max-height:520px;border:1px solid var(--line,#d5d3cc);border-radius:10px;margin-top:8px}.sq-out table{font-size:.85rem;min-width:0;direction:ltr}.sq-out td.n{text-align:right;font-variant-numeric:tabular-nums}.sq-out td.nul{color:var(--muted,#888)}:root[data-theme=dark] .sq-st.ok{color:#4BE3A4}</style>';
   var h = css + '<p class="k-xs">' + esc(M.local) + '</p><p><b>' + esc(M.ex) + '</b></p><ul class="sq-ex">' + M.exs.map(function (x, i) { return '<li><button type="button" class="kbtn" data-ex="' + i + '">' + esc(x) + '</button></li>'; }).join('') + '</ul>' +
-    '<div class="sq-ed"><label for="sq-sql" class="k-xs">' + esc(M.q) + '</label><textarea id="sq-sql" spellcheck="false" dir="ltr"></textarea><div class="sq-bar"><button type="button" class="btn" id="sq-go">' + esc(M.load) + '</button><button type="button" class="kbtn" id="sq-share">' + esc(M.share) + '</button><button type="button" class="kbtn" id="sq-csv" hidden>' + esc(M.csv) + '</button></div></div><p class="sq-st" id="sq-st" role="status" aria-live="polite"></p><div class="sq-out" id="sq-out" tabindex="0" hidden></div>';
+    '<div class="sq-ed"><label for="sq-sql" class="k-xs">' + esc(M.q) + '</label><textarea id="sq-sql" spellcheck="false" dir="ltr"></textarea><div class="sq-bar"><button type="button" class="btn" id="sq-go">' + esc(M.load) + '</button><button type="button" class="kbtn" id="sq-share">' + esc(M.share) + '</button><button type="button" class="kbtn" id="sq-csv" hidden>' + esc(M.csv) + '</button></div></div><p class="sq-st" id="sq-st" role="status" aria-live="polite"></p><p class="k-xs" id="sq-ok" hidden></p><div class="sq-out" id="sq-out" tabindex="0" hidden></div>';
   A.innerHTML = h;
   var ta = $('sq-sql'), st = $('sq-st'), out = $('sq-out'), db = null, conn = null, card = null, last = null, busy = false;
   var m = /[#&]q=([A-Za-z0-9_-]+)/.exec(location.hash), shared = m && unb64(m[1]);
@@ -52,7 +52,7 @@
     }).then(function () { return db.connect(); }).then(function (c) {
       conn = c; return Promise.all(card.files.map(function (f) { return conn.query('CREATE OR REPLACE VIEW ' + f.table + " AS SELECT * FROM read_parquet('" + f.table + ".parquet')"); }));
     }).then(function () {
-      status(fill(M.ready, { ms: nf(Math.round(performance.now() - t0)) }) + ' · ' + M.hash_ok, 'ok'); $('sq-go').textContent = M.run; $('sq-go').disabled = false; busy = false; return run();
+      var ok = $('sq-ok'); ok.textContent = fill(M.ready, { ms: nf(Math.round(performance.now() - t0)) }) + ' · ' + M.hash_ok; ok.hidden = false; $('sq-go').textContent = M.run; $('sq-go').disabled = false; busy = false; return run();
     }).catch(function (e) { busy = false; db = null; $('sq-go').disabled = false; status(M.err + ': ' + (e && e.message ? e.message : e), 'no'); });
   }
   function cell(v) {
