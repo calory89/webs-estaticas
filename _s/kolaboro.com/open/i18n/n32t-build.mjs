@@ -12,7 +12,7 @@ import fs from 'fs';
 import path from 'path';
 const ROOT = process.cwd(), SRC = path.join(ROOT, '_s/kolaboro.com/open/i18n/src'), OUT = path.join(ROOT, '_s/kolaboro.com/data/n32t');
 const COLS = ['es', 'fr', 'de', 'ru', 'zh', 'ar', 'nl'];
-const M = await import(path.join(ROOT, '_worker.js/kbx_n32t.js'));
+const M = await import(path.join(ROOT, '_worker.js/kbx_n32t.js')), H = await import(path.join(ROOT, '_worker.js/kbx_hdate.js'));
 let bad = 0;
 function parse(f) {
   const o = { s: {}, p: {}, t: {}, d: {}, h: {}, keep: new Set(), n: 0 };
@@ -32,12 +32,12 @@ const LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const manifest = { v: 0, built: new Date().toISOString().slice(0, 10), pages: {} };
 const live = process.argv.includes('--live');
 let names = new Set();
-try { const nj = JSON.parse(fs.readFileSync(path.join(ROOT, '_s/kolaboro.com/data/named.json'), 'utf8')); for (const x of (nj.projects || nj.P || nj)) { if (x && (x.n || x.name)) names.add(String(x.n || x.name).replace(/\s+/g, ' ').trim()); if (x && (x.dv || x.developer)) names.add(String(x.dv || x.developer).replace(/\s+/g, ' ').trim()); } } catch (e) {}
+try { const nj = JSON.parse(fs.readFileSync(path.join(ROOT, '_s/kolaboro.com/data/named.json'), 'utf8')); for (const x of (nj.projects || nj.P || nj)) { if (x && (x.n || x.name)) names.add(String(x.n || x.name).replace(/\s+/g, ' ').trim()); if (x && (x.dv || x.developer)) names.add(String(x.dv || x.developer).replace(/\s+/g, ' ').trim()); for (const k of ['mk', 'ar', 'co']) if (x && x[k]) { names.add(String(x[k])); for (const q of String(x[k]).split(', ')) names.add(q); } } } catch (e) {}
 const report = [];
 for (const l of LANGS) fs.mkdirSync(path.join(OUT, l), { recursive: true });
 for (const l of LANGS) {
   const keep = Object.fromEntries([...common.keep].map(k => [k, k]));
-  fs.writeFileSync(path.join(OUT, l, '_common.json'), JSON.stringify({ s: Object.assign(keep, common.s[l] || {}), p: common.p[l] || [] }));
+  fs.writeFileSync(path.join(OUT, l, '_common.json'), JSON.stringify({ s: Object.assign(keep, common.s[l] || {}), p: common.p[l] || [], cc: H.CO_ISO2 }));   // cc: country names the browser puts in the page language (Intl.DisplayNames)
 }
 for (const f of files.filter(f => f !== '_common.tsv')) {
   const key = f.replace(/\.tsv$/, ''), page = parse(path.join(SRC, f)), route = key.replace(/^tools-/, 'tools/');

@@ -1,8 +1,26 @@
 {
- "v": "801zxm-9xpe",
+ "v": "1s82kkk-och2",
  "built": "2026-11-19",
  "pages": {
   "tools/contract-scan": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/deposit-protection": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/market-match": [
    "es",
    "de",
    "fr",
@@ -20,7 +38,25 @@
    "zh",
    "ar"
   ],
+  "tools/payment-risk": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
   "tools/risk": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/total-cost": [
    "es",
    "de",
    "fr",
