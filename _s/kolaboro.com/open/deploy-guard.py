@@ -188,9 +188,27 @@ def keep_checks(state, d):
     if d.get('checks'): state['latest_checks'] = {'at': d.get('at') or now(), 'commit': d.get('commit'), 'checks': [{'name': c['name'], 'ok': c['ok'], 'detail': c.get('detail', '')[:160]} for c in d['checks']]}
 
 
+def provenance(c):
+    """Build provenance (n32x, 19 Nov 2026): git tree id of _worker.js at the commit (the exact worker source Pages bundles) and the SHA-256
+    of /data/named.json as the live site serves it (from the signed /api/v1/snapshots). Shown on /engineering/provenance/."""
+    o = {}
+    try:
+        t = subprocess.run(['git', 'rev-parse', c + ':_worker.js'], capture_output=True, text=True)
+        if t.returncode == 0 and t.stdout.strip(): o['worker_tree'] = t.stdout.strip()
+    except Exception: pass
+    try:
+        with urllib.request.urlopen(urllib.request.Request(BASE + '/api/v1/snapshots', headers={'user-agent': 'kolaboro-deploy-guard/1.0'}), timeout=20) as r:
+            s = (json.load(r).get('live') or {}).get('sha256')
+            if s: o['dataset_sha256'] = s
+    except Exception: pass
+    return o
+
+
 def entry(d, **kw):
     e = {'at': now(), 'commit': d.get('commit') or kw.get('commit'), 'checks_passed': d.get('checks_passed'), 'checks_total': d.get('checks_total'), 'failed': d.get('failed') or [], 'run': RUN}
-    e.update(kw); return e
+    e.update(kw)
+    if e.get('commit'): e.update(provenance(e['commit']))
+    return e
 
 
 def drill(state, tip):

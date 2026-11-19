@@ -66,6 +66,7 @@ let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^
 const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;   // n31a (batch 31): keep equal to PATHS in kbx_n31a.js
 let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
+let kn32x = null; const KN32X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/sql|claims\/search|anomalies|graph\/entities|verify\/offline|engineering\/(?:provenance|early-hints)|changes\/live|watch\/website-changes|satellite\/construction-index)\/?$|^\/api\/v1\/(?:stream|provenance)$|^\/sql\/?$/;   // n32x (batch 32): keep equal to PATHS in kbx_n32x.js
 let kn31t = null; const KN31T = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:engineering\/(?:architecture|modules|rollback|licenses|checks|maintenance)|shortcuts|security\/disclosure|press\/cases|press\/data-journalism)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/press(?:\/monthly)?\/?$|^\/api\/v1\/alerts$|^\/security\.txt$/;   // n31t (batch 31): keep equal to PATHS in kbx_n31t.js
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
 let knum = null; const KNUM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?numbers\/?$/;   // n26i: keep equal to PAGE in kbx_numbers.js
@@ -157,6 +158,9 @@ function kbHeaders(r, u) {
     h.set('content-security-policy-report-only', h.get('content-security-policy-report-only').replace(/script-src [^;]+; script-src-attr 'none'; /, "script-src * 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data:; "));
   }
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
+  // n32x (batch 32, Early Hints): the stylesheets and main font every public page loads, as Link preload headers; Cloudflare answers the
+  // next requests with 103 Early Hints from them, so the browser fetches the CSS while the worker still builds the page (/engineering/early-hints/)
+  if (r.status === 200 && !priv && !embed && !/^\/(?:(?:es\/)?apply|agents|shared|thanks|visit)(?:\/|$)/.test(u.pathname)) h.append('link', '</k/site.css?v=' + KB_SITE_CSS_V + '>; rel=preload; as=style, </k/' + (KB_DSS_V === KB_DS_V ? 'ds-site' : 'ds') + '.css?v=' + KB_DS_V + '>; rel=preload; as=style, </k/fonts/archivo-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
@@ -512,6 +516,13 @@ export default {
       if (!kn31b) kn31b = await import('./kbx_n31b.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
+    // kolaboro.com (n32x, batch 32): /data/sql/, /claims/search/, /anomalies/, /graph/entities/, /verify/offline/, /engineering/{provenance,early-hints}/,
+    // /changes/live/, /watch/website-changes/, /satellite/construction-index/, /api/v1/{stream,provenance}; /sql/ 301 (see kbx_n32x.js)
+    if (host === 'kolaboro.com' && KN32X.test(u.pathname)) {
+      if (!kn32x) kn32x = await import('./kbx_n32x.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn32x.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n31t, batch 31): engineering pages (architecture, modules, rollback, licences, checks, maintenance preview), /shortcuts/,
     // /security/disclosure/, press pages in 8 languages, /api/v1/alerts (see kbx_n31t.js)

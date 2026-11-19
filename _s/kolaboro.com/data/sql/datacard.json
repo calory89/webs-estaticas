@@ -1,0 +1,409 @@
+{
+ "name": "Kolaboro open dataset",
+ "version": "2026-11-19.1",
+ "built": "2026-11-19",
+ "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+ "source": {
+  "file": "/data/named.json",
+  "sha256": "5b0bfe5efa566cf5b1db5150c80da33e2ef7af9f3bf33fb8c92d704e2447741d",
+  "published": "2026-11-19",
+  "snapshots": "/data/snapshots/"
+ },
+ "what_it_is": "What developers advertise about off-plan projects and what official registers and independent sources show, each claim with its source link. Advertised claims are not verified facts unless the claim status says so.",
+ "not_included": "Names of people, buyer reports, contact details, anything from the private research record. Sumba projects and projects of the site operator are left out.",
+ "limits": "Projects are the ones being marketed and found by our research; this is not a census of a market. Prices are the developer or portal asking price in the stated currency, not sale prices. Dates written as a quarter count as its last month, a year as December.",
+ "build": "Built from the published /data/named.json by /open/n32x-build.py (Python, pyarrow, no network). The same input gives the same rows; Parquet bytes can differ between pyarrow versions, so compare rows, not file hashes, across builds.",
+ "files": [
+  {
+   "table": "projects",
+   "description": "One row per tracked off-plan project",
+   "rows": 1997,
+   "parquet": {
+    "path": "/data/sql/projects.parquet",
+    "bytes": 369097,
+    "sha256": "ec8624c89b037b8220d01e1a4d535defdc84fc309c016abbc15be0529faf5010"
+   },
+   "csv": {
+    "path": "/data/sql/projects.csv",
+    "bytes": 1114078,
+    "sha256": "faf1c19161cfcca3d7807ce6532a9fa476487b4ec19aec7132e3351d468f8408"
+   },
+   "columns": [
+    {
+     "name": "id",
+     "type": "string",
+     "description": "Stable project id (market code and number)"
+    },
+    {
+     "name": "slug",
+     "type": "string",
+     "description": "Page slug: https://kolaboro.com/projects/<slug>/"
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "description": "Project name as marketed"
+    },
+    {
+     "name": "developer",
+     "type": "string",
+     "description": "Developer brand"
+    },
+    {
+     "name": "developer_slug",
+     "type": "string",
+     "description": "Developer page slug: /developers/<slug>/"
+    },
+    {
+     "name": "market",
+     "type": "string",
+     "description": "Market (city, island or region)"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "description": "Country"
+    },
+    {
+     "name": "area",
+     "type": "string",
+     "description": "Area or district"
+    },
+    {
+     "name": "stage",
+     "type": "string",
+     "description": "Stage on record: off-plan, under construction, completed"
+    },
+    {
+     "name": "sales_status",
+     "type": "string",
+     "description": "Sales status when stated (active, sold out, stalled, website dead)"
+    },
+    {
+     "name": "developer_page",
+     "type": "string",
+     "description": "The developer's own project page"
+    },
+    {
+     "name": "permit_number",
+     "type": "string",
+     "description": "Permit or registration number when published"
+    },
+    {
+     "name": "handover_on_record",
+     "type": "string",
+     "description": "Handover date on record, as written in the source"
+    },
+    {
+     "name": "handover_month",
+     "type": "string",
+     "description": "handover_on_record as YYYY-MM (a quarter counts as its last month, a year as December)"
+    },
+    {
+     "name": "first_handover_on_record",
+     "type": "string",
+     "description": "First handover date we recorded, as written"
+    },
+    {
+     "name": "first_handover_month",
+     "type": "string",
+     "description": "first_handover_on_record as YYYY-MM"
+    },
+    {
+     "name": "delay_months",
+     "type": "double",
+     "description": "Months between the first and the current date when the source states it"
+    },
+    {
+     "name": "construction_start",
+     "type": "string",
+     "description": "Construction start when stated"
+    },
+    {
+     "name": "price_min",
+     "type": "double",
+     "description": "Lowest asking price advertised (not a sale price)"
+    },
+    {
+     "name": "price_max",
+     "type": "double",
+     "description": "Highest asking price advertised"
+    },
+    {
+     "name": "currency",
+     "type": "string",
+     "description": "ISO currency of the prices"
+    },
+    {
+     "name": "size_min_m2",
+     "type": "double",
+     "description": "Smallest unit size, m2"
+    },
+    {
+     "name": "size_max_m2",
+     "type": "double",
+     "description": "Largest unit size, m2"
+    },
+    {
+     "name": "price_per_m2_min",
+     "type": "double",
+     "description": "price_min / size_min_m2 (only when the smallest size is 10 m2 or more)"
+    },
+    {
+     "name": "deposit_pct",
+     "type": "double",
+     "description": "Deposit percent when stated"
+    },
+    {
+     "name": "payment_plan",
+     "type": "string",
+     "description": "Payment plan as written in the source"
+    },
+    {
+     "name": "foreign_ownership",
+     "type": "string",
+     "description": "Ownership form for foreign buyers as written"
+    },
+    {
+     "name": "permit_authority",
+     "type": "string",
+     "description": "Authority that issues the permit"
+    },
+    {
+     "name": "registered_company",
+     "type": "string",
+     "description": "Registered company named in the sources (text in brackets removed)"
+    },
+    {
+     "name": "lat",
+     "type": "double",
+     "description": "Pin latitude from official or developer sources"
+    },
+    {
+     "name": "lng",
+     "type": "double",
+     "description": "Pin longitude"
+    },
+    {
+     "name": "dld_project_number",
+     "type": "string",
+     "description": "Dubai Land Department project number"
+    },
+    {
+     "name": "dld_status",
+     "type": "string",
+     "description": "Status on the DLD register"
+    },
+    {
+     "name": "dld_percent_built",
+     "type": "double",
+     "description": "Percent built at the last DLD inspection"
+    },
+    {
+     "name": "dld_inspection_date",
+     "type": "string",
+     "description": "Date of that inspection"
+    },
+    {
+     "name": "dld_completion_date",
+     "type": "string",
+     "description": "Completion date on the DLD register"
+    },
+    {
+     "name": "dld_units",
+     "type": "double",
+     "description": "Units on the DLD register"
+    },
+    {
+     "name": "escrow_bank",
+     "type": "string",
+     "description": "Escrow bank on the DLD register"
+    },
+    {
+     "name": "dld_source",
+     "type": "string",
+     "description": "Where the DLD record was read"
+    },
+    {
+     "name": "claims",
+     "type": "int64",
+     "description": "Developer claims recorded"
+    },
+    {
+     "name": "claims_verified",
+     "type": "int64",
+     "description": "Claims confirmed by another source"
+    },
+    {
+     "name": "claims_unverified",
+     "type": "int64",
+     "description": "Claims no other source confirms yet"
+    },
+    {
+     "name": "claims_contradicted",
+     "type": "int64",
+     "description": "Claims another source contradicts"
+    },
+    {
+     "name": "sources",
+     "type": "int64",
+     "description": "Distinct source links"
+    },
+    {
+     "name": "added",
+     "type": "string",
+     "description": "Date the project was added"
+    },
+    {
+     "name": "reviewed",
+     "type": "bool",
+     "description": "Passed the documented review checklist"
+    },
+    {
+     "name": "review_date",
+     "type": "string",
+     "description": "Date of that review"
+    },
+    {
+     "name": "record_sha256",
+     "type": "string",
+     "description": "SHA-256 of the project record as sealed"
+    },
+    {
+     "name": "page",
+     "type": "string",
+     "description": "Kolaboro page"
+    }
+   ]
+  },
+  {
+   "table": "claims",
+   "description": "One row per developer claim and how it was checked",
+   "rows": 15411,
+   "parquet": {
+    "path": "/data/sql/claims.parquet",
+    "bytes": 556055,
+    "sha256": "5613a9f041e157e15b96600991d8126bc43e100748cc3ecf1afd91d87fa851c9"
+   },
+   "csv": {
+    "path": "/data/sql/claims.csv",
+    "bytes": 3459278,
+    "sha256": "b69aa5cf7126a2c29eaafe7907fd638c01cb9ca4b7e96cffd8385baa9b72954e"
+   },
+   "columns": [
+    {
+     "name": "project_id",
+     "type": "string",
+     "description": "projects.id of the project"
+    },
+    {
+     "name": "project_slug",
+     "type": "string",
+     "description": "projects.slug of the project"
+    },
+    {
+     "name": "n",
+     "type": "int64",
+     "description": "Claim number within the project"
+    },
+    {
+     "name": "claim",
+     "type": "string",
+     "description": "The claim as the developer or a portal states it"
+    },
+    {
+     "name": "status",
+     "type": "string",
+     "description": "verified, unverified or contradicted"
+    },
+    {
+     "name": "checked_against",
+     "type": "string",
+     "description": "What it was checked against: official register, independent source, developer, not checked"
+    },
+    {
+     "name": "source",
+     "type": "string",
+     "description": "Link where the claim was read"
+    },
+    {
+     "name": "read",
+     "type": "string",
+     "description": "Date the project was last read or reviewed"
+    }
+   ]
+  },
+  {
+   "table": "markets",
+   "description": "One row per market, computed from the projects table",
+   "rows": 182,
+   "parquet": {
+    "path": "/data/sql/markets.parquet",
+    "bytes": 7933,
+    "sha256": "ac1db2a2de2d3482b86a06e64ec5add4dc5b12721856e7459cc5c5694c0f17f3"
+   },
+   "csv": {
+    "path": "/data/sql/markets.csv",
+    "bytes": 7516,
+    "sha256": "83b1fd79f59642f2c7d7b9873b565cb90ee5241dd5818f8edb5f69b2135e620f"
+   },
+   "columns": [
+    {
+     "name": "market",
+     "type": "string",
+     "description": "Market"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "description": "Country"
+    },
+    {
+     "name": "projects",
+     "type": "int64",
+     "description": "Projects tracked"
+    },
+    {
+     "name": "with_permit_number",
+     "type": "int64",
+     "description": "Projects with a published permit or registration number"
+    },
+    {
+     "name": "with_handover_date",
+     "type": "int64",
+     "description": "Projects with a handover date on record"
+    },
+    {
+     "name": "overdue",
+     "type": "int64",
+     "description": "Projects whose handover date on record has passed and that are not completed"
+    },
+    {
+     "name": "claims",
+     "type": "int64",
+     "description": "Claims recorded"
+    },
+    {
+     "name": "claims_contradicted",
+     "type": "int64",
+     "description": "Claims contradicted"
+    },
+    {
+     "name": "reviewed",
+     "type": "int64",
+     "description": "Projects reviewed"
+    },
+    {
+     "name": "median_price_per_m2_min",
+     "type": "double",
+     "description": "Median price_per_m2_min (3 or more projects; currencies mixed if the market uses more than one)"
+    },
+    {
+     "name": "price_per_m2_sample",
+     "type": "int64",
+     "description": "Projects in that median"
+    }
+   ]
+  }
+ ]
+}
