@@ -1,5 +1,5 @@
 {
- "v": "odaq3w-hq0l",
+ "v": "ibg62j-2zfp",
  "built": "2026-11-19",
  "pages": {
   "m": [
@@ -12,6 +12,15 @@
    "ar"
   ],
   "new": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "registers": [
    "es",
    "de",
    "fr",

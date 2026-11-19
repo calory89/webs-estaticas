@@ -70,6 +70,7 @@ const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Au
 const MRX = MON.map(m => m.slice(0, 3)).join('|');
 const DRX = new RegExp('^(\\d{1,2}) (' + MRX + ')[a-z]*\\.? (\\d{4})$'), YRX = new RegExp('^(' + MRX + ')[a-z]* (\\d{4})$');
 function auto(s, lang) {
+  if (/^(?:https?:\/\/)?[\w-]+(?:\.[\w-]+)*\.[a-z]{2,6}(?:\/\S*)?$/i.test(s)) return s;   // a domain, file or address stays as written
   let m = DRX.exec(s);
   if (m) { const d = new Date(Date.UTC(+m[3], MON.findIndex(x => x.startsWith(m[2])), +m[1], 12)); try { return new Intl.DateTimeFormat(LOC[lang], { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d); } catch (e) { return null; } }
   if ((m = YRX.exec(s))) { const d = new Date(Date.UTC(+m[2], MON.findIndex(x => x.startsWith(m[1])), 15, 12)); try { return new Intl.DateTimeFormat(LOC[lang], { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d); } catch (e) { return null; } }

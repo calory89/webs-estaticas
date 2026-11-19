@@ -18,6 +18,7 @@
   }
   function dt(d, o) { try { return new Intl.DateTimeFormat(LOC, o).format(d); } catch (e) { return null; } }
   function auto(s) {
+    if (/^(?:https?:\/\/)?[\w-]+(?:\.[\w-]+)*\.[a-z]{2,6}(?:\/\S*)?$/i.test(s)) return s;
     var m = DRX.exec(s); if (m) return dt(new Date(Date.UTC(+m[3], MON.indexOf(m[2]), +m[1], 12)), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
     m = YRX.exec(s); if (m) return dt(new Date(Date.UTC(+m[2], MON.indexOf(m[1]), 15, 12)), { month: 'long', year: 'numeric', timeZone: 'UTC' });
     if (CC[s] && DN) { try { return DN.of(CC[s]) || null; } catch (e) { return null; } }
