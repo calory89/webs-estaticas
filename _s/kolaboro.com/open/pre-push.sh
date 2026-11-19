@@ -1,6 +1,8 @@
 #!/bin/sh
 # Kolaboro push check (13 Nov 2026). Written to be installed as the git pre-push hook of the repository that publishes kolaboro.com
 # (cp to .git/hooks/pre-push), so it runs on every push to pub/_lovable without using any CI minutes; run it by hand until then. It REPORTS and never blocks: the branch also deploys about 60 other sites.
+# The one exception (n32w, 19 Nov 2026): 0. worker size guard (open/worker-size-guard.sh) STOPS the push when _worker.js passes 24.6 MiB,
+# because Cloudflare Pages refuses every build of the branch above 25 MiB (18 Nov 2026: about 60 sites blocked for an hour).
 #   1. bundle check of the edge worker (esbuild, the same command the publishers run by hand), result printed with its exit code
 #   2. bundle size: a warning when the bundle is more than 5% bigger than the last published build (/data/builds.json)
 #   3. after the push, the live site runs its own smoke test of 20 key pages on the first request for the new commit:
@@ -13,6 +15,10 @@ while read -r lref lsha rref rsha; do
 done
 [ "$want" = 1 ] || exit 0
 top=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+# 0. worker size guard (n32w): read from the pushed commit itself, so it works in sparse checkouts too
+if git cat-file -e "$sha:_s/kolaboro.com/open/worker-size-guard.sh" 2>/dev/null; then
+  git show "$sha:_s/kolaboro.com/open/worker-size-guard.sh" | (cd "$top" && sh -s "$sha") || { echo "kolaboro push check: PUSH STOPPED by the worker size guard (see above)."; exit 1; }
+fi
 [ -f "$top/_worker.js/index.js" ] || { echo "kolaboro push check: _worker.js not in this checkout, skipped"; exit 0; }
 tmp=$(mktemp -d 2>/dev/null || echo /tmp/kbpp$$); mkdir -p "$tmp"
 out=$(cd "$top" && timeout 120 npx -y esbuild _worker.js/index.js --bundle --format=esm --platform=neutral --external:'node:*' --log-level=error --legal-comments=none --charset=utf8 --outfile="$tmp/worker.js" 2>&1); code=$?

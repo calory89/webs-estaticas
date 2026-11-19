@@ -17,7 +17,7 @@ import { trData } from './kbx_tr.js';
 import { hdisp, mkName } from './kbx_hdate.js';
 import { data as namedData } from './kbx_named.js';
 import { tcFor, TC_SOURCES, TC_SETS, costCalc } from './kbx_facets.js';   // n29h2 (item 29): tax rows of /tools/total-cost/
-import { NT29, SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME, TC29, TCPL, TCPL_T, TCS } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
+import { SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME, TC29, TCPL, TCPL_T, TCS } from './kbx_buy_c29.js';   // batch 29 (n29h2): 8 country guides (item 26)
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { guideNext, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): next review (item 64), who is accountable (56)
 import { e29t } from './kbx_e29_i18n.js';
@@ -96,7 +96,7 @@ const SRC = {
   mx_rpca: { n: 'PROFECO contract register (RPCA)', u: 'https://rpca.profeco.gob.mx/', d: REVIEWED },
   mx_reglist: { n: 'Kolaboro register guide: Mexico', u: '/registers/#mexico', d: REVIEWED, own: 1 }
 };
-Object.assign(SRC, SRC29); Object.assign(NT, NT29);
+Object.assign(SRC, SRC29);   // n32w (19 Nov 2026): NT29 is merged into /data/i18n/kbx_buy_notes.json (NT), loaded by kbx_strings.js
 // place -> step -> [note, [sources]]. Steps without a place note show the generic paragraph and our figures only.
 const STEPS = ['company', 'land', 'permit', 'money', 'sale', 'date'];
 const PLAN = {

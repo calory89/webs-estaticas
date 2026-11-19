@@ -36,6 +36,10 @@ let jm = null;
 let jb = null;
 let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
+// n32w (19 Nov 2026): kolaboro.com string tables live in /_s/kolaboro.com/data/i18n/*.json (worker size limit); every kolaboro.com
+// request waits for them once per isolate (kbx_strings.js) before any module that reads them runs
+let kStr = null;
+async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} }
 const KXR_V = 'n22e1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers|type)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
@@ -390,6 +394,7 @@ export default {
     if (env && env.KB_MAINT === '1' && (req.method === 'GET' || req.method === 'HEAD') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) {
       try { if (!kn31t) kn31t = await import('./kbx_n31t.js'); const u0 = new URL(req.url); if (!kn31t.MAINT_SKIP.test(u0.pathname)) return await kn31t.maintPage(u0, env); } catch (e) {}
     }
+    if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) await kbStrings(env);   // n32w: string tables first (see kbStrings)
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
@@ -421,6 +426,7 @@ export default {
       if (q) return /^[a-z0-9.-]{3,80}$/.test(q) ? new Response(null, { status: 302, headers: { location: '/', 'set-cookie': '__site=' + q + '; Path=/; SameSite=Lax; Secure; HttpOnly' } }) : new Response('Not found', { status: 404 });   // n20s: host names only (no cookie attribute injection)
       const m = (req.headers.get('cookie') || '').match(/(?:^|;\s*)__site=([a-z0-9.-]{3,80})(?:;|$)/);
       if (m) host = m[1];
+      if (host === 'kolaboro.com') await kbStrings(env);   // n32w: previews of kolaboro.com too
       // preview: route shared assets here too and point the bundles' /__sb/ calls at this preview host
       const isAsset = u.pathname.startsWith('/assets/') || u.pathname.startsWith('/__l5e/assets-v1/');
       if (!u.pathname.startsWith('/__sb/')) {
