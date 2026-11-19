@@ -3320,6 +3320,20 @@ var HOME_EXTRA = {
 };
 var CN = city_names_default;
 var cityName = (c, L) => L === "en" ? c.city : CN[c.id]?.[L] ?? c.city;
+/** City meta description that leads with the real "from" price (budget pick) and the value pick's guest score. */
+function cityDescPrice(L, c, b, v, l, price, score) {
+	const s = score ? ` (${L === "en" ? score.toFixed(1) : score.toFixed(1).replace(".", ",")}/10)` : "";
+	const D = {
+		en: `From ${price} a night: the 3 best hotels in ${c}. Budget ${b}, best value ${v}${s} and luxury ${l}. Real guest scores, no paid rankings.`,
+		es: `Desde ${price} la noche: los 3 mejores hoteles de ${c}. Económico ${b}, calidad-precio ${v}${s} y lujo ${l}. Notas reales, sin rankings pagados.`,
+		de: `Ab ${price} pro Nacht: die 3 besten Hotels in ${c}. Günstig ${b}, Preis-Leistung ${v}${s}, Luxus ${l}. Echte Gästenoten, keine gekauften Rankings.`,
+		fr: `Dès ${price} la nuit : les 3 meilleurs hôtels à ${c}. Petit budget ${b}, qualité-prix ${v}${s} et luxe ${l}. Vraies notes clients.`,
+		it: `Da ${price} a notte: i 3 migliori hotel a ${c}. Economico ${b}, qualità-prezzo ${v}${s} e lusso ${l}. Voti reali degli ospiti.`,
+		pt: `Desde ${price} por noite: os 3 melhores hotéis em ${c}. Económico ${b}, qualidade-preço ${v}${s} e luxo ${l}. Notas reais de hóspedes.`,
+		da: `Fra ${price} pr. nat: de 3 bedste hoteller i ${c}. Billigt ${b}, mest for pengene ${v}${s} og luksus ${l}. Ægte gæstekarakterer.`
+	};
+	return D[L] ?? D.en;
+}
 var js = (o) => o;
 var Y = {
 	en: {
@@ -22453,7 +22467,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 || Object.entries(I$1).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
 		description: x.desc(cn, names),
 		path,
 		body,
@@ -22847,7 +22861,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 || Object.entries(I).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
 		description: x.desc(cn, names),
 		path,
 		body,
@@ -23996,9 +24010,10 @@ async function cityPage(city0, L) {
 	const o0 = budget.offer ?? {};
 	const sample = budget.candidateCount;
 	const cname = countryName(city, L);
-	const homonym = (await data()).index.some((x) => x.city === city0.city && x.id !== city.id);
+	const homonym = (await data()).index.some((x) => x.id !== city.id && (x.city === city0.city || cityName(x, L) === city.city));
 	const title = t.title(homonym ? `${city.city}, ${cname}` : city.city);
-	const description = t.desc(city.city, cname, budget.name, value.name, lux.name);
+	const minPrice = Math.min(...hs.map((h) => h.offer?.nightly ?? Infinity));
+	const description = Number.isFinite(minPrice) && minPrice <= 150 ? cityDescPrice(L, city.city, budget.name, value.name, lux.name, money(minPrice), value.booking?.score) : t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
 	const dates = range(o0.checkin, o0.checkout);
 	const pageDate = cityChecked(hs);
@@ -24198,7 +24213,9 @@ ${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cn
 async function tileFor(c, h, L, extra = "") {
 	const { cx } = await data();
 	const img = h.gallery?.find((g) => g.src)?.src ?? (cx[c.id]?.hero?.img ? `/api/img/${c.id}/small` : void 0);
-	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" width="480" height="300" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
+	const hs = hotelSlug(h.name, c.slug);
+	const hasHp = HP_LANGS.includes(L) && (await hotelPagesList()).some((x) => x.slug === hs && (!x.langs || x.langs.includes(L)));
+	return `<a class="tile ${catKey(h)}" href="${P(L, hasHp ? `/hotel/${hs}` : "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(cityName(c, L))}" width="480" height="300" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(cityName(c, L))}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
 }
 function countryIntro(rows, cname, L) {
 	if (L !== "en" && L !== "es") return "";
@@ -25520,6 +25537,75 @@ async function hotelPage(slug, L) {
 		const s2 = hotelSlug(o.name, d.city_slug);
 		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
 	});
+	const op = f.other_picks ?? [];
+	const CMP = {
+		en: [
+			`How it compares with the other picks in ${d.city}`,
+			"Hotel",
+			"Type",
+			"Guest score",
+			"Reference price"
+		],
+		es: [
+			`Cómo se compara con los otros elegidos de ${d.city}`,
+			"Hotel",
+			"Tipo",
+			"Nota",
+			"Precio de referencia"
+		],
+		de: [
+			`Vergleich mit den anderen Tipps in ${d.city}`,
+			"Hotel",
+			"Typ",
+			"Gästenote",
+			"Referenzpreis"
+		],
+		fr: [
+			`Comparaison avec les autres choix à ${d.city}`,
+			"Hôtel",
+			"Type",
+			"Note",
+			"Prix de référence"
+		],
+		it: [
+			`Confronto con le altre scelte a ${d.city}`,
+			"Hotel",
+			"Tipo",
+			"Voto",
+			"Prezzo di riferimento"
+		],
+		pt: [
+			`Comparação com as outras escolhas em ${d.city}`,
+			"Hotel",
+			"Tipo",
+			"Nota",
+			"Preço de referência"
+		],
+		da: [
+			`Sammenligning med de andre valg i ${d.city}`,
+			"Hotel",
+			"Type",
+			"Karakter",
+			"Referencepris"
+		]
+	};
+	const ch = CMP[L] ?? CMP["en"];
+	const sc1 = (n) => n ? (L === "en" ? n.toFixed(1) : n.toFixed(1).replace(".", ",")) + "/10" : "–";
+	const cmpTable = op.length ? `<h2>${esc(ch[0])}</h2><div style="overflow-x:auto"><table class="hp-cmp" style="width:100%;border-collapse:collapse;font-size:15px"><thead><tr>${ch.slice(1).map((x) => `<th style="text-align:left;padding:8px;border-bottom:2px solid #e5e2da">${esc(x)}</th>`).join("")}</tr></thead><tbody>${[{
+		name: f.name,
+		category: t[`cat_${d.cat}`] ?? d.cat,
+		nightly_eur: f.nightly_eur,
+		score: f.score ? Number(f.score) : void 0,
+		me: true
+	}, ...op.map((o) => ({
+		...o,
+		category: t[`cat_${{
+			Budget: "budget",
+			"Best Value": "value",
+			Luxury: "luxury"
+		}[o.category] ?? o.category}`] ?? o.category,
+		me: false
+	}))].map((o) => `<tr${o.me ? " style=\"background:#fff6e5\"" : ""}><td style="padding:8px;border-bottom:1px solid #eee">${o.me ? `<b>${esc(o.name)}</b>` : esc(o.name)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(o.category)}</td><td style="padding:8px;border-bottom:1px solid #eee">${sc1(o.score)}</td><td style="padding:8px;border-bottom:1px solid #eee">${o.nightly_eur ? money(o.nightly_eur) : "–"}</td></tr>`).join("")}</tbody></table></div>` : "";
 	const upd = (d.updated_at || d.published_at || "").slice(0, 10);
 	const path = `/hotel/${slug}`;
 	const facts = [
@@ -25542,6 +25628,7 @@ ${cta}
 ${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
 ${cta}
 <h2>${esc(t.faq)}</h2><div class="hp-faq">${(c.faq ?? []).map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
+${cmpTable}
 <h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
 </article>`;
 	const ld = [
@@ -25664,7 +25751,7 @@ async function sitemapFor(L) {
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${CONTENT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${p}"/>${heroImg.has(p) ? `<image:image><image:loc>${heroImg.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n")}\n${extra}${enes}${growth}</urlset>\n`;
 }
 var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>\n</sitemapindex>\n`;
-var ROBOTS = `User-agent: *\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# AI assistants and AI search engines are welcome to crawl and cite us (please credit \"Top3Hotels\" with a link).\nUser-agent: GPTBot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: ClaudeBot\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: anthropic-ai\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Google-Extended\nUser-agent: Applebot-Extended\nUser-agent: Amazonbot\nUser-agent: DuckAssistBot\nUser-agent: Meta-ExternalAgent\nUser-agent: CCBot\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# Summary for AI assistants: ${SITE}/llms.txt\n# Every pick in plain text: ${SITE}/llms-full.txt\n# Open data (CC BY 4.0): ${SITE}/open-data\nSitemap: ${SITE}/sitemap.xml\n`;
+var ROBOTS = `# Search and AI answer engines are welcome: the picks, prices and data are meant to be cited with a link.\nUser-agent: Googlebot\nUser-agent: Bingbot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: GPTBot\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: ClaudeBot\nUser-agent: Google-Extended\nUser-agent: Applebot\nUser-agent: Applebot-Extended\nUser-agent: DuckDuckBot\nUser-agent: YandexBot\nAllow: /\nAllow: /api/img\nDisallow: /api/\n\nUser-agent: *\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# AI assistants and AI search engines are welcome to crawl and cite us (please credit \"Top3Hotels\" with a link).\nUser-agent: GPTBot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: ClaudeBot\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: anthropic-ai\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Google-Extended\nUser-agent: Applebot-Extended\nUser-agent: Amazonbot\nUser-agent: DuckAssistBot\nUser-agent: Meta-ExternalAgent\nUser-agent: CCBot\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# Summary for AI assistants: ${SITE}/llms.txt\n# Every pick in plain text: ${SITE}/llms-full.txt\n# Open data (CC BY 4.0): ${SITE}/open-data\nSitemap: ${SITE}/sitemap.xml\n`;
 var SB_URL = "https://gmdalfsvtfhzepyrdmjj.supabase.co";
 var SB_ANON = "sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz";
 function envVar(env, k) {
