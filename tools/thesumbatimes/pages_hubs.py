@@ -593,7 +593,7 @@ S = {
         "order": "The order runs from west to east, by longitude. It is not a ranking: we have not scored these places against each other, and the right one for you depends on where you are staying and what you want from the day. Each entry repeats the short answer and key facts from the place's own page; follow the link for directions, costs and etiquette.",
         "approx": "For a few places the map point we hold is the village or area centre, not the exact spot, so their position in the order is approximate.",
         "read": "Read the guide to {n}", "places_n": "{n} places", "near_t": "Near the main towns", "near_l": "Places near {t}", "other_lists": "Other lists",
-        "near_title": "Places near {t}: {n} within 40 km", "near_desc": "Beaches, villages, hills and waterfalls within 40 km of {t}, Sumba, in a straight line, nearest first, with a short description and a link to each guide.",
+        "near_title": "Places near {t}: {n} within 40 km", "near_desc": "Beaches, villages, hills and waterfalls within 40 km of {t}, Sumba, in a straight line, nearest by road first, with a short description and a link to each guide.",
         "near_intro": "These are the places with their own guide on The Sumba Times that lie within 40 km of {t} in a straight line, nearest first. The distance is measured between map points; it is not the driving distance. By road the trip is always longer, so check each page for the road distance and driving time, and read {ga} before planning a day.",
         "near_town": "For the town itself, see our guide to {t}.", "ga": "our guide to getting around Sumba", "sl": "straight-line", "from": "from {t}", "under1": "under 1 km", "apx": "map point approximate",
         "near_none": "No place with its own guide lies within 40 km yet.", "near_other": "Near other towns",
@@ -871,6 +871,8 @@ def _best(g, l):
         body = f'<p class="lead">{intro}</p><p>{t_["order"]}{" " + t_["approx"] if any(_pt(a)[2] for a in its) else ""}</p>'
         body += "".join(_entry(g, a, l, i + 1, area_l(a, l)) for i, a in enumerate(its))
         others = "".join(f'<a href="/{l}/best/{s}/">{esc(nm[l])}</a>' for s, nm, _, _, _ in lists if s != slug)
+        _pg = g.get("pages_geo"); _br = _pg.br_links(g, l, cat=slug) if _pg else ""
+        if _br: body += f'<p class="hub-n"><b>{_pg.BR_T[l]["regs"]}:</b> {_br}</p>'
         body += f'<p class="hub-n"><b>{t_["other_lists"]}:</b> {others}</p>{nav_near}<div style="margin-top:26px">{g["subscribe"](l, False, None, "best")}</div>'
         _page(g, l, tpl, title, intro, title, [home, (t_["best"], f"/{l}/best/")], body, [_itemlist(g, title, BASE + tpl.format(l=l), l, its)])
     li = "".join(f'<li><a href="/{l}/best/{s}/">{esc(nm[l])}</a><small>{t_["places_n"].format(n=len(its))}</small><p>{esc(intros[l].format(n=len(its)))}</p></li>' for s, nm, _, intros, its in lists)
@@ -892,7 +894,11 @@ def _near(g, l):
             if a is ti or _is_area(a): continue
             la2, lo2, apx = _pt(a); d = hav(la, lo, la2, lo2)
             if d <= RADIUS_KM: rows.append((d, a, apx))
-        rows.sort(key=lambda r: r[0]); n = len(rows)
+        _pg = g.get("pages_geo")
+        def _road(a):
+            if not _pg or a["slug"] not in _pg.IDX or slug not in _pg.IDX: return None
+            return _pg.km(_pg.IDX[a["slug"]], _pg.IDX[slug])
+        rows.sort(key=lambda r: (_road(r[1]) if _road(r[1]) is not None else r[0] * 1.4)); n = len(rows)
         tpl = "/{l}/near/" + slug + "/"; title = t_["near_title"].format(t=town, n=n)
         body = f'<p class="lead">{t_["near_intro"].format(t=town, ga=ga_link)}</p>'
         if ti:
@@ -901,6 +907,7 @@ def _near(g, l):
         if not rows: body += f'<p>{t_["near_none"]}</p>'
         for i, (d, a, apx) in enumerate(rows):
             where = f'{km_l(d, l)} {t_["from"].format(t=town)}' + (f' ({t_["apx"]})' if apx else "") + (" · " + area_l(a, l) if area_l(a, l) else "")
+            if _road(a) is not None: where += " · " + {"en": "{k} km by road, about {t}", "es": "{k} km por carretera, unos {t}", "id": "{k} km lewat jalan, sekitar {t}"}[l].format(k=_pg.num(_road(a), l), t=_pg.drv(_road(a), l))
             body += _entry(g, a, l, i + 1, where)
         body += f'<p class="hub-n"><b>{t_["near_other"]}:</b> ' + "".join(f'<a href="/{l}/near/{s}/">{esc(nm)}</a>' for s, _, nm, _ in NEAR if s != slug) + f'</p><p class="hub-n"><a href="/{l}/best/">{t_["best_h1"]} →</a></p><div style="margin-top:26px">{g["subscribe"](l, False, None, "near")}</div>'
         crumbs = [home, (t_["best"], f"/{l}/best/")]

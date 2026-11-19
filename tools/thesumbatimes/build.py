@@ -1121,6 +1121,8 @@ def sitemaps():
     add("/{l}/about/")
     for m in MODULES:
         for t in getattr(m, "SITEMAP", []): add(t, NOW.date().isoformat() if t in getattr(m, "DAILY", ()) else None)
+        if hasattr(m, "sitemap_extra"):
+            for t in m.sitemap_extra(globals()): add(t)
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
     imgs = []
     for a in all_items():
@@ -1157,11 +1159,13 @@ def llms():
         for a in travel_guides():
             c = a[l]; out += f"- [{c['title']}]({BASE}{url_of(a,l)}): {c.get('answer') or c['dek']}\n"
         return out
-    t = "# The Sumba Times\n\n> Independent-style news, travel guides and culture from the island of Sumba, East Nusa Tenggara, Indonesia, in English, Spanish and Indonesian. New stories every morning at 6:00 WITA. Published by Eco Beach City (disclosed on every page); covers the whole island; sources are linked under every story.\n\n"
+    t = "# The Sumba Times\n\n> News, travel guides and culture from the island of Sumba, East Nusa Tenggara, Indonesia, in English, Spanish and Indonesian. New stories every morning at 6:00 WITA. Published by Eco Beach City (disclosed on every page); covers the whole island; sources are linked under every story.\n\n"
     t += f"Plan a trip: {BASE}/en/plan/ (Spanish {BASE}/es/plan/, Indonesian {BASE}/id/plan/)\n\n"
     t += "## Travel guides (English)\n" + lines("en") + "\n## Guías de viaje (español)\n" + lines("es") + "\n## Panduan perjalanan (Bahasa Indonesia)\n" + lines("id")
     t += "\n## News\n" + "".join(f"- [{a['en']['title']}]({BASE}{url_of(a,'en')}) ({a['date']})\n" for a in all_items() if kind_of(a) == "brief")
     t += f"\n## Data and tools\n- Markdown version of any article: add index.md to its URL (example: {BASE}{url_of(travel_guides()[0],'en')}index.md)\n- Open data (CSV, JSON, GeoJSON): {BASE}/en/data/\n- Road distances and driving times: {BASE}/en/distances/\n- Map of every place: {BASE}/en/map/\n- Flights to Sumba: {BASE}/en/flights/\n- Events calendar: {BASE}/en/events/\n- Climate month by month: {BASE}/en/sumba-in/\n- Earthquakes near Sumba since 2000: {BASE}/en/earthquakes/\n- Glossary: {BASE}/en/glossary/\n"
+    t += "\n## Places (English)\n" + "".join(f"- [{pages_hubs.pname(a, 'en')}]({BASE}{url_of(a, 'en')}): {pages_geo.place_sentence(globals(), a, 'en') or a['en']['dek']}\n" for a in all_items() if a["section"] == "places")
+    t += f"\n## Other languages\n- Español: {BASE}/es/llms.txt\n- Bahasa Indonesia: {BASE}/id/llms.txt\n"
     t += f"\n## Optional\n- About and editorial standards: {BASE}/en/about/\n- RSS: {BASE}/en/feed.xml\n- Sitemap: {BASE}/sitemap.xml\n"
     write("/llms.txt", t)
     for ll in ("es", "id"):

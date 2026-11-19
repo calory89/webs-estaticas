@@ -170,7 +170,7 @@ def regency_box(g, a, l):
         h = 0 if km(i, 0) <= km(i, 1) else 1
         return f'{num(km(i, h), l)} km · {HUB["tmc" if h == 0 else "wgp"][l]}'
     li = "".join(f'<li><a href="{g["url_of"](b, l)}">{esc(pages_hubs.pname(b, l))}</a><span>{near(i)}</span></li>' for i, b in rows)
-    return f'<section class="gbox" data-block="regency"><h2 id="all-places">{t[1]} ({len(rows)})</h2><p class="gcomb">{t[2]}</p><ul class="gnb">{li}</ul><p class="gnote"><a href="/{l}/map/">{S[l]["see_map"]} →</a></p></section>'
+    return f'<section class="gbox" data-block="regency"><h2 id="all-places">{t[1]} ({len(rows)})</h2><p class="gcomb">{t[2]}</p><ul class="gnb">{li}</ul><p class="hub-n"><b>{BR_T[l]["regs"]}:</b> {br_links(g, l, reg=reg)}</p><p class="gnote"><a href="/{l}/map/">{S[l]["see_map"]} →</a></p></section>'
 def place_box(g, a, l):
     i = _place_idx(a)
     if i is None or km(i, 0) is None: return regency_box(g, a, l)
@@ -279,6 +279,7 @@ P = {
         "x_file": "Berkas", "x_rows": "Baris", "x_what": "Isi", "x_src": "Sumber", "x_lic": "Pemakaian ulang", "x_lic_p": "Kompilasi kami berlisensi CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.id). Sumber asalnya tetap mengikuti ketentuan masing-masing: data OpenStreetMap berlisensi ODbL, katalog USGS merupakan domain publik, dan data ERA5 dari Open-Meteo berlisensi CC BY 4.0. Baris penerbangan dan acara menyebut sumber tiap data di halamannya.", "x_crumb": "Data"},
 }
 SITEMAP = ["/{l}/distances/", "/{l}/map/", "/{l}/earthquakes/", "/{l}/data/"] + ["/{l}/distances/" + pair_slug(a, b) + "/" for a, b in PAIRS]
+def sitemap_extra(g): return ["/{l}/best/" + br_slug(c, r) + "/" for (c, r) in by_regency(g)]
 FOOTER = [("/{l}/distances/", {"en": "Distances", "es": "Distancias", "id": "Jarak"}), ("/{l}/data/", {"en": "Data", "es": "Datos", "id": "Data"})]
 CSS = """
 .gbox{margin:26px 0 0;border-top:3px solid var(--ink);padding-top:8px}.gbox h2{font-size:22px;margin:.2em 0 .4em}.gbox dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 12px;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.gbox dt{font-weight:700}.gbox dd{margin:0}
@@ -530,7 +531,7 @@ def _data(g, l):
 def build(g):
     _files(g)
     for l in g["LANGS"]:
-        _distances(g, l); _map(g, l); _quakes(g, l); _embed(g, l)
+        _distances(g, l); _map(g, l); _quakes(g, l); _embed(g, l); _best_regency(g, l)
         for a, b in PAIRS: _pair(g, l, a, b)
 
 def build_data_pages(g):
@@ -557,3 +558,43 @@ def sun_row(g, p, l):
     r0 = min(rows, key=lambda r: r[1]); r1 = max(rows, key=lambda r: r[1]); s0 = min(rows, key=lambda r: r[2]); s1 = max(rows, key=lambda r: r[2])
     mn_ = lambda m: g["MONTHS"][l][m - 1]; f = (lambda x: x.replace(":", ".")) if l == "id" else (lambda x: x)
     return f'<dt>{SUN_T[l][0]}</dt><dd>{SUN_T[l][1].format(a=f(r0[1]), am=mn_(r0[0]), b=f(r1[1]), bm=mn_(r1[0]), c=f(s0[2]), cm=mn_(s0[0]), d=f(s1[2]), dm=mn_(s1[0]))}</dd>'
+
+# ---------- lists by type inside each regency: /LANG/best/<type>-in-<regency>/ (only where 3 or more places exist) ----------
+REG_SLUG = {"Southwest Sumba": "southwest-sumba", "West Sumba": "west-sumba", "Central Sumba": "central-sumba", "East Sumba": "east-sumba"}
+REG_NAME = {"Southwest Sumba": {"en": "Southwest Sumba", "es": "Sumba Suroccidental", "id": "Sumba Barat Daya"}, "West Sumba": {"en": "West Sumba", "es": "Sumba Occidental", "id": "Sumba Barat"},
+            "Central Sumba": {"en": "Central Sumba", "es": "Sumba Central", "id": "Sumba Tengah"}, "East Sumba": {"en": "East Sumba", "es": "Sumba Oriental", "id": "Sumba Timur"}}
+BR_T = {"en": {"title": "{c} in {r}: {n} places with distances", "desc": "{n} {cl} in {r} regency, Sumba, ordered by road distance from {h}: from {a} ({ak} km) to {b} ({bk} km), with key facts and a link to each guide.",
+               "intro": "The Sumba Times has a guide to {n} {cl} in {r} regency. They are listed by road distance from {h}, the nearer airport for this part of the island. The closest is {a}, {ak} km away, and the farthest is {b}, at {bk} km. It is an order by distance, not a ranking.",
+               "where": "{k} km by road from {h}, about {t}", "others": "Other lists in {r}", "same": "{c} in other regencies", "all": "All {cl} in Sumba", "regs": "By regency"},
+        "es": {"title": "{c} en {r}: {n} lugares con distancias", "desc": "{n} {cl} en la regencia de {r} (Sumba), por distancia por carretera desde el {h}: de {a} ({ak} km) a {b} ({bk} km), con datos clave y enlace a cada ficha.",
+               "intro": "The Sumba Times tiene ficha de {n} {cl} en la regencia de {r}. La lista sigue el orden de distancia por carretera desde el {h}, el aeropuerto más cercano a esta parte de la isla. Empieza por {a}, a {ak} km, y termina en {b}, a {bk} km. Es un orden por distancia, no una clasificación.",
+               "where": "A {k} km por carretera del {h}, unos {t}", "others": "Otras listas de {r}", "same": "{c} en otras regencias", "all": "Todos los lugares de este tipo en Sumba", "regs": "Por regencia"},
+        "id": {"title": "{c} di {r}: {n} tempat lengkap dengan jarak", "desc": "{n} {cl} di Kabupaten {r}, Sumba, diurutkan menurut jarak lewat jalan dari {h}: dari {a} ({ak} km) sampai {b} ({bk} km), lengkap dengan data penting dan tautan ke tiap panduan.",
+               "intro": "The Sumba Times memiliki panduan untuk {n} {cl} di Kabupaten {r}. Urutannya mengikuti jarak lewat jalan dari {h}, bandara terdekat untuk bagian pulau ini. Yang terdekat adalah {a}, {ak} km, dan yang terjauh {b}, {bk} km. Ini urutan jarak, bukan peringkat.",
+               "where": "{k} km lewat jalan dari {h}, sekitar {t}", "others": "Daftar lain di {r}", "same": "{c} di kabupaten lain", "all": "Semua tempat sejenis di Sumba", "regs": "Per kabupaten"}}
+def by_regency(g):
+    """{(category slug, regency): [(index, item), ...]} for combinations with 3 or more places."""
+    out = {}
+    for i, a in _place_rows(g):
+        c = pages_hubs.cat_of(g, a); r = regency_of(a)
+        if c and r: out.setdefault((c, r), []).append((i, a))
+    return {k: v for k, v in out.items() if len(v) >= 3}
+def br_slug(c, r): return f"{c}-in-{REG_SLUG[r]}"
+def br_links(g, l, reg=None, cat=None, skip=None):
+    names = {b[0]: b[1] for b in pages_hubs.BEST}
+    return "".join(f'<a href="/{l}/best/{br_slug(c, r)}/">{esc(names[c][l])} · {esc(REG_NAME[r][l])} ({len(v)})</a>' for (c, r), v in sorted(by_regency(g).items()) if (reg is None or r == reg) and (cat is None or c == cat) and (c, r) != skip)
+def _best_regency(g, l):
+    names = {b[0]: b[1] for b in pages_hubs.BEST}; t = BR_T[l]
+    for (c, r), rows in by_regency(g).items():
+        h = 0 if sum(km(i, 0) for i, _ in rows) <= sum(km(i, 1) for i, _ in rows) else 1; hk = "tmc" if h == 0 else "wgp"
+        rows = sorted(rows, key=lambda x: km(x[0], h)); n = len(rows); cn = names[c][l]; cl = cn.lower() if l != "id" else cn.lower(); rn = REG_NAME[r][l]
+        kw = dict(c=cn, cl=cl, r=rn, n=n, h=HUB[hk][l], a=pages_hubs.pname(rows[0][1], l), ak=num(km(rows[0][0], h), l), b=pages_hubs.pname(rows[-1][1], l), bk=num(km(rows[-1][0], h), l))
+        tpl = "/{l}/best/" + br_slug(c, r) + "/"; title = t["title"].format(**kw)
+        body = f'<p class="lead">{esc(t["intro"].format(**kw))}</p>' + "".join(pages_hubs._entry(g, a, l, k + 1, t["where"].format(k=num(km(i, h), l), h=HUB[hk][l], t=drv(km(i, h), l))) for k, (i, a) in enumerate(rows))
+        dots = town_dots() + [(PTS[i]["lon"], PTS[i]["lat"], 5, "#a3271c") for i, _ in rows]
+        body += f'<figure class="gfig">{svg(l, title, dots, labels=town_labels(l))}<figcaption>{esc(title)}. © OpenStreetMap.</figcaption></figure>'
+        o1 = br_links(g, l, reg=r, skip=(c, r)); o2 = br_links(g, l, cat=c, skip=(c, r)); rp = _url(g, REG_PAGE[r], l)
+        if o1: body += f'<p class="hub-n"><b>{esc(t["others"].format(r=rn))}:</b> {o1}</p>'
+        if o2: body += f'<p class="hub-n"><b>{esc(t["same"].format(c=cn))}:</b> {o2}</p>'
+        body += f'<p class="hub-n"><a href="/{l}/best/{c}/">{esc(t["all"].format(cl=cl))} →</a>' + (f' <a href="{rp}">{esc(pages_hubs.pname(_items(g)[REG_PAGE[r]], l))} →</a>' if rp else "") + f' <a href="/{l}/distances/">{P[l]["d_h1"]} →</a></p><p class="gnote">{esc(S[l]["note"].format(d=fdate(g, l)))}</p>'
+        pages_hubs._page(g, l, tpl, title, t["desc"].format(**kw), title, _crumbs(l, g) + [(pages_hubs.S[l]["best"], f"/{l}/best/"), (cn, f"/{l}/best/{c}/")], body, [pages_hubs._itemlist(g, title, pages_hubs.BASE + tpl.format(l=l), l, [a for _, a in rows])])
