@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-18",
+   "url": "https://kolaboro.com/changelog/2026-11-18/",
+   "title": "18 November 2026: 31 changes shipped",
+   "content_text": "- Kolaboro.com n31b: trust strings moved out of the worker bundle to /data/n31b-i18n.json (loaded once per isolate), -204 KB toward the Pages 25 MiB _worker.js limit\n- Move n31e strings and share-image font masks out of the worker into static JSON (worker directory was over the 25 MiB Pages limit, every build failed since 13:21Z)\n- Check copy says land office checks and site visits need a local agent (being set up), no unnamed senior reviewer, press method no longer names a model vendor\n- N31c strings moved to /data/n31c-i18n.json (46 KB out of _worker.js), 51 more pins, Internet Archive copies for 542 project pages (batch 31, n31c)\n- Kolaboro.com n31t: links in engineering page sentences keep the trailing full stop outside the link and work after Chinese full-width colons\n- /registers/ covers 36 markets (17 added), latest results and credit ratings of Emaar and Aldar as announced (batch 31, n31c)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n31b: trust strings moved out of the worker bundle to /data/n31b-i18n.json (loaded once per isolate), -204 KB toward the Pages 25 MiB _worker.js limit</li><li>Move n31e strings and share-image font masks out of the worker into static JSON (worker directory was over the 25 MiB Pages limit, every build failed since 13:21Z)</li><li>Check copy says land office checks and site visits need a local agent (being set up), no unnamed senior reviewer, press method no longer names a model vendor</li><li>N31c strings moved to /data/n31c-i18n.json (46 KB out of _worker.js), 51 more pins, Internet Archive copies for 542 project pages (batch 31, n31c)</li><li>Kolaboro.com n31t: links in engineering page sentences keep the trailing full stop outside the link and work after Chinese full-width colons</li><li>/registers/ covers 36 markets (17 added), latest results and credit ratings of Emaar and Aldar as announced (batch 31, n31c)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-18T00:00:00Z",
+   "date_modified": "2026-11-18T22:20:39Z",
+   "_kolaboro": {
+    "ships": 31,
+    "data_updates": 12,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-17",
    "url": "https://kolaboro.com/changelog/2026-11-17/",
    "title": "17 November 2026: 12 changes shipped",
