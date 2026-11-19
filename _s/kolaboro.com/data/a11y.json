@@ -1,48 +1,79 @@
 {
- "updated": "2026-11-05T10:00:10.060Z",
+ "updated": "2026-11-19T11:09:08.078Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 512,
+ "seconds": 1398,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-05T10:00:10.060Z",
-  "pages": 212,
+  "at": "2026-11-19T11:09:08.078Z",
+  "pages": 535,
   "errors": 0,
   "nodes_by_impact": {
-   "critical": 1,
-   "serious": 73,
+   "critical": 0,
+   "serious": 60,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 200,
-  "pages_with_serious_or_critical": 12
+  "pages_clean": 507,
+  "pages_with_serious_or_critical": 28
  },
  "rules": [
-  {
-   "id": "aria-allowed-attr",
-   "impact": "critical",
-   "help": "Elements must only use supported ARIA attributes",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=axeAPI",
-   "pages": 1,
-   "nodes": 1,
-   "examples": [
-    "/shipping/"
-   ]
-  },
   {
    "id": "color-contrast",
    "impact": "serious",
    "help": "Elements must meet minimum color contrast ratio thresholds",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
-   "pages": 4,
-   "nodes": 31,
+   "pages": 10,
+   "nodes": 11,
    "examples": [
+    "/pricing/",
     "/portal/demo/",
-    "/report/state-of-off-plan-2026/live/",
-    "/docs/api/explorer/",
-    "/digest/"
+    "/es/pricing/",
+    "/de/pricing/",
+    "/fr/pricing/"
+   ]
+  },
+  {
+   "id": "nested-interactive",
+   "impact": "serious",
+   "help": "Interactive controls must not be nested",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=axeAPI",
+   "pages": 8,
+   "nodes": 8,
+   "examples": [
+    "/satellite/monthly/",
+    "/es/satellite/monthly/",
+    "/fr/satellite/monthly/",
+    "/de/satellite/monthly/",
+    "/nl/satellite/monthly/"
+   ]
+  },
+  {
+   "id": "label-content-name-mismatch",
+   "impact": "serious",
+   "help": "Elements must have their visible text as part of their accessible name",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+   "pages": 7,
+   "nodes": 33,
+   "examples": [
+    "/index/delays/",
+    "/vs/",
+    "/es/vs/",
+    "/de/vs/",
+    "/fr/vs/"
+   ]
+  },
+  {
+   "id": "definition-list",
+   "impact": "serious",
+   "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/glossary/"
    ]
   },
   {
@@ -50,35 +81,10 @@
    "impact": "serious",
    "help": "Scrollable region must have keyboard access",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI",
-   "pages": 4,
-   "nodes": 12,
-   "examples": [
-    "/docs/api/",
-    "/docs/mcp/",
-    "/docs/webhooks/",
-    "/docs/partners/"
-   ]
-  },
-  {
-   "id": "aria-prohibited-attr",
-   "impact": "serious",
-   "help": "Elements must only use permitted ARIA attributes",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
    "pages": 1,
-   "nodes": 25,
+   "nodes": 3,
    "examples": [
-    "/investors/dossier/"
-   ]
-  },
-  {
-   "id": "link-in-text-block",
-   "impact": "serious",
-   "help": "Links must be distinguishable without relying on color",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=axeAPI",
-   "pages": 1,
-   "nodes": 1,
-   "examples": [
-    "/map/"
+    "/docs/webhooks/"
    ]
   },
   {
@@ -356,13 +362,31 @@
    "url": "/glossary/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "definition-list",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "dl"
+     ]
+    }
+   ]
   },
   {
    "url": "/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/book/",
@@ -384,6 +408,12 @@
   },
   {
    "url": "/guides/contract-clauses/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/short-let-rules/",
    "status": 200,
    "error": null,
    "violations": []
@@ -461,18 +491,7 @@
    "url": "/docs/api/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "scrollable-region-focusable",
-     "impact": "serious",
-     "nodes": 5,
-     "targets": [
-      ".api-b:nth-child(11)",
-      ".api-b:nth-child(15)",
-      ".api-b:nth-child(18)"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/metrics/",
@@ -694,7 +713,16 @@
    "url": "/es/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/es/database/",
@@ -706,7 +734,16 @@
    "url": "/de/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/de/database/",
@@ -718,7 +755,16 @@
    "url": "/fr/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/fr/database/",
@@ -730,7 +776,16 @@
    "url": "/ru/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/ru/database/",
@@ -742,7 +797,16 @@
    "url": "/nl/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/nl/database/",
@@ -766,7 +830,16 @@
    "url": "/zh/pricing/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[rel=\"noopener\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/zh/database/",
@@ -826,16 +899,7 @@
    "url": "/docs/mcp/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "scrollable-region-focusable",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      ".eg-code:nth-child(17)"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/docs/sdk/",
@@ -865,18 +929,7 @@
    "url": "/investors/dossier/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "aria-prohibited-attr",
-     "impact": "serious",
-     "nodes": 25,
-     "targets": [
-      "rect[y=\"15.538650306748465\"]",
-      "rect[y=\"14.97914110429447\"]",
-      "rect[aria-label=\"4 Nov 2026: 815\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/prices/",
@@ -886,6 +939,12 @@
   },
   {
    "url": "/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/courts/",
    "status": 200,
    "error": null,
    "violations": []
@@ -915,12 +974,6 @@
    "violations": []
   },
   {
-   "url": "/tools/iban-check/",
-   "status": 200,
-   "error": null,
-   "violations": []
-  },
-  {
    "url": "/check/red-team/",
    "status": 200,
    "error": null,
@@ -936,21 +989,58 @@
    "url": "/report/state-of-off-plan-2026/live/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "color-contrast",
-     "impact": "serious",
-     "nodes": 24,
-     "targets": [
-      "dd > .lv-ok:nth-child(1)",
-      ".lv-ok:nth-child(4)",
-      "tr:nth-child(1) > td:nth-child(4) > .lv-ok"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/satellite/plot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/bulk-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/bulk-check/",
    "status": 200,
    "error": null,
    "violations": []
@@ -1060,7 +1150,18 @@
    "url": "/index/delays/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 22,
+     "targets": [
+      ".dl-bar[data-m=\"Vietnam\"][type=\"button\"]",
+      ".dl-bar[data-m=\"Northern Cyprus\"][type=\"button\"]",
+      ".dl-bar[data-m=\"Cambodia\"][type=\"button\"]"
+     ]
+    }
+   ]
   },
   {
    "url": "/press/monthly/",
@@ -1090,18 +1191,7 @@
    "url": "/docs/partners/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "scrollable-region-focusable",
-     "impact": "serious",
-     "nodes": 3,
-     "targets": [
-      ".eg-code:nth-child(12)",
-      ".eg-code:nth-child(13)",
-      "div[data-p=\"c\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/ru/check/",
@@ -1365,16 +1455,7 @@
    "url": "/shipping/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "aria-allowed-attr",
-     "impact": "critical",
-     "nodes": 1,
-     "targets": [
-      "button[data-d=\"2026-11-05\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/data/",
@@ -1401,16 +1482,7 @@
    "url": "/map/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "link-in-text-block",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "a[href$=\"leafletjs.com\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/compare/markets/",
@@ -1432,11 +1504,10 @@
     {
      "id": "color-contrast",
      "impact": "serious",
-     "nodes": 5,
+     "nodes": 2,
      "targets": [
-      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b5.c > a[data-k=\"new\"][href$=\"#list\"]",
-      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(3) > a[data-k=\"page\"][href$=\"#list\"]",
-      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(6) > a[data-k=\"register\"][href$=\"#list\"]"
+      ".b4.c > a[data-k=\"new\"][href$=\"#list\"]",
+      ".b5.c > a[data-k=\"register\"][href$=\"#list\"]"
      ]
     }
    ]
@@ -1475,7 +1546,7 @@
      "impact": "serious",
      "nodes": 4,
      "targets": [
-      "a[href$=\"api/\"]",
+      "td:nth-child(5) > a[href$=\"api/\"]",
       "a[href$=\"mcp/\"]",
       "a[href$=\"webhooks/\"]"
      ]
@@ -1487,9 +1558,2037 @@
    "status": 200,
    "error": null,
    "violations": []
+  },
+  {
+   "url": "/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/contract-reader/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/methods/handover-slippage/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/find-listing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/handover-history/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/visa-by-investment/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/compare-countries/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/on-time/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/request-documents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/inheritance/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/foreign-mortgages/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/area-report/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/translate/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/receipt-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/payment-vs-progress/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/es/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/fr/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/de/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/nl/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/zh/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ar/satellite/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "nested-interactive",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "svg[viewBox=\"0 0 960 480\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/watch/new-websites/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/app/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".k29c"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/es/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".k29c[type=\"button\"]:nth-child(8)",
+      ".k29c[type=\"button\"]:nth-child(9)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/de/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".k29c[type=\"button\"]:nth-child(8)",
+      ".k29c[type=\"button\"]:nth-child(9)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/fr/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".k29c[type=\"button\"]:nth-child(8)",
+      ".k29c[type=\"button\"]:nth-child(9)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/nl/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".k29c[type=\"button\"]:nth-child(8)",
+      ".k29c[type=\"button\"]:nth-child(9)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/vs/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".k29c[type=\"button\"]:nth-child(8)",
+      ".k29c[type=\"button\"]:nth-child(9)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/zh/vs/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/vs/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/new/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/tools/site-visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
   }
  ],
  "history": [
+  {
+   "at": "2026-11-19T11:09:08.078Z",
+   "pages": 535,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 0,
+    "serious": 60,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 507,
+   "pages_with_serious_or_critical": 28
+  },
   {
    "at": "2026-11-05T10:00:10.060Z",
    "pages": 212,
