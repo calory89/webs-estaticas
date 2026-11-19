@@ -1,5 +1,5 @@
 {
- "v": "vh5whr-g1l5",
+ "v": "hfw7xc-lqo3",
  "built": "2026-11-19",
  "pages": {
   "m": [
@@ -47,6 +47,15 @@
    "zh",
    "ar"
   ],
+  "tools/contract-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
   "tools/contract-scan": [
    "es",
    "de",
@@ -75,6 +84,15 @@
    "ar"
   ],
   "tools/deposit-protection": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/image-check": [
    "es",
    "de",
    "fr",
