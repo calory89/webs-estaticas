@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "markets": 182,
  "countries": 94,
  "note": "Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.",
@@ -5492,7 +5492,7 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -10316,13 +10316,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "bbf410de3727e0b202acfbfa9e3733b301ce7dfc7cd168448d937d4162d42332",
     "date": "2026-11-05"
@@ -13501,7 +13501,7 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -15709,7 +15709,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 2
    },
    "stage": "off-plan",
@@ -37012,13 +37012,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "fp": {
     "sha256": "3d37232160e2fbed2438828be2dde40cf9e5b1e0936c4d2d352e97a21fcd4ba9",
     "date": "2026-11-06"
@@ -37648,13 +37648,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "fp": {
     "sha256": "8c32aa34f30a0750f0d3531335764c26ac36455ee3ae2f66bc2d740b3fad719f",
     "date": "2026-11-06"
@@ -37792,13 +37792,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "fp": {
     "sha256": "778d334184178d08c39a30dfb9ea1cdd718c9e57dbb8211a6d6357e25d31ffc6",
     "date": "2026-11-06"
@@ -37863,13 +37863,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "fp": {
     "sha256": "d06baeae03578ac881738e7cdf17ce7647a17c1281ac793254062c8ff560eb6c",
     "date": "2026-11-06"
@@ -38285,13 +38285,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "fp": {
     "sha256": "e444372b2675423b9b968bf708a009ff8b2a63dd6e5be568eb4994b90ee00d57",
     "date": "2026-11-06"
@@ -39345,13 +39345,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 10,
    "fp": {
     "sha256": "b780f6f11aade3a3c47f5ab3510ece9d8c3a94a1db634c9605457e9c2b4afbd5",
     "date": "2026-11-06"
@@ -40203,13 +40203,13 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 12,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -41544,13 +41544,13 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -41612,13 +41612,13 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -41816,13 +41816,13 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -45653,13 +45653,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 2
   },
   {
    "id": "DXB-204",
@@ -46253,13 +46253,13 @@
    "vscore": 3,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 9,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46321,13 +46321,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46525,13 +46525,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 12,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46593,13 +46593,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 12,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46729,13 +46729,13 @@
    "vscore": 3,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46797,13 +46797,13 @@
    "vscore": 3,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46865,13 +46865,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -46933,13 +46933,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -65405,13 +65405,13 @@
    "vscore": 0,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "58e07c0c7ada32075e1b809a31c61ed275ab63bbf2de6a47eddee8d2fdfe1652",
     "date": "2026-11-05"
@@ -66795,7 +66795,7 @@
    "vscore": 0,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "off-plan",
@@ -71671,13 +71671,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "GEO-014",
@@ -72225,13 +72225,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "ac8b06ddf9c55af01b6c73a8b4994d37674c0bc0fa96073256ec709d2c4ff386",
     "date": "2026-11-05"
@@ -76445,7 +76445,7 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 2
    },
    "stage": "completed",
@@ -78061,13 +78061,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "ITA-001",
@@ -78939,7 +78939,7 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -80211,13 +80211,13 @@
    "vscore": 0,
    "claims": {
     "verified": 3,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 9,
    "fp": {
     "sha256": "fa93f003f2dce4f0d032d491c0e1e287de707e322e7a7e7df9d025f09e89e287",
     "date": "2026-11-05"
@@ -92267,6 +92267,190 @@
    }
   },
   {
+   "id": "MLE-004",
+   "market": "Maldives",
+   "country": "Maldives",
+   "region": "Maldives",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "19 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MLE-005",
+   "market": "Maldives",
+   "country": "Maldives",
+   "region": "Maldives",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 69,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "19 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MLE-006",
+   "market": "Maldives",
+   "country": "Maldives",
+   "region": "Maldives",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 10,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "19 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 1
+  },
+  {
    "id": "MLA-001",
    "market": "Malta",
    "country": "Malta",
@@ -94624,13 +94808,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "MRU-011",
@@ -94685,13 +94869,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "MRU-012",
@@ -94746,13 +94930,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "MED-001",
@@ -105207,7 +105391,7 @@
    "vscore": 1,
    "claims": {
     "verified": 6,
-    "unverified": 1,
+    "unverified": 4,
     "contradicted": 4
    },
    "stage": "under construction",
@@ -108469,7 +108653,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -110688,7 +110872,7 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "off-plan",
@@ -113844,13 +114028,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "POL-002",
@@ -114278,13 +114462,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "POL-009",
@@ -114340,13 +114524,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "POL-010",
@@ -117338,7 +117522,7 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -117746,13 +117930,13 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "e7bd25fb1ffd610987a109d6585d882dd5914a0f53a8b88e3890c8fe2f88311e",
     "date": "2026-11-05"
@@ -118465,7 +118649,7 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 3
    },
    "stage": "under construction",
@@ -121862,7 +122046,7 @@
    "vscore": 1,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -122981,7 +123165,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 4
    },
    "stage": "under construction",
@@ -126646,13 +126830,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "LKA-020",
@@ -129596,13 +129780,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "TCA-001",
@@ -133312,13 +133496,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 9,
    "fp": {
     "sha256": "7baac671e2289f1c17a9e374156f391f74a8114bb84620eb811c5c5c8c9f1bea",
     "date": "2026-11-06"
@@ -134343,30 +134527,30 @@
   }
  ],
  "db": {
-  "updated": "2026-11-18",
-  "projects": 1999,
+  "updated": "2026-11-19",
+  "projects": 2002,
   "markets": 182,
   "countries": 94,
-  "sources": 7940,
-  "data_points": 51234,
+  "sources": 7953,
+  "data_points": 51374,
   "claims": {
    "verified": 6172,
-   "unverified": 7957,
+   "unverified": 8017,
    "contradicted": 1370
   },
-  "claims_total": 15499,
-  "deep_profiles": 1999,
+  "claims_total": 15559,
+  "deep_profiles": 2002,
   "checks_by_level": {
    "registry": 1792,
    "independent": 483,
    "developer": 2020,
    "contradicted": 103,
-   "none": 7596
+   "none": 7614
   },
-  "checks_rated": 11994,
+  "checks_rated": 12012,
   "stages": {
-   "off-plan": 760,
-   "under construction": 1176,
+   "off-plan": 761,
+   "under construction": 1178,
    "completed": 17
   },
   "all_six_public": 65,

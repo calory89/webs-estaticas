@@ -101,6 +101,7 @@
 - [Project file example](https://kolaboro.com/p/BALI-014/)
 - [Off-Plan Disclosure Standard v1.0](https://kolaboro.com/standard/)
 - [Official registers buyers can search, by country](https://kolaboro.com/registers/)
+- [Court cases against tracked developers, with case numbers](https://kolaboro.com/courts/) (data: https://kolaboro.com/data/court-cases.json)
 - [Satellite watch of development areas](https://kolaboro.com/satellite/)
 - [Data desk for journalists](https://kolaboro.com/press/data/)
 - [Open data API, no key (JSON, CSV)](https://kolaboro.com/api/open)
