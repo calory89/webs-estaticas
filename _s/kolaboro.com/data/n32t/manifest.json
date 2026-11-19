@@ -1,5 +1,5 @@
 {
- "v": "1c2wduy-ag59",
+ "v": "vh5whr-g1l5",
  "built": "2026-11-19",
  "pages": {
   "m": [
@@ -120,6 +120,24 @@
    "ar"
   ],
   "tools/payment-risk": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/pdf-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/permit-check": [
    "es",
    "de",
    "fr",
