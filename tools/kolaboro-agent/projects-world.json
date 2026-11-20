@@ -51074,7 +51074,9 @@
     "https://www.apartments.com.au/builders/5point-projects",
     "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218",
     "https://www.apartments.com.au/news/qld/first-look-5point-doubles-down-on-old-burleigh-road-plans-lumara-broadbeach",
-    "https://www.apartments.com.au/news/qld/locals-interstate-holiday-makers-drive-early-sales-at-lumara-broadbeachs-newest-luxury-apartment-tower"
+    "https://www.apartments.com.au/news/qld/locals-interstate-holiday-makers-drive-early-sales-at-lumara-broadbeachs-newest-luxury-apartment-tower",
+    "https://abr.business.gov.au/ABN/View?abn=61615602027",
+    "https://abr.business.gov.au/ABN/View?abn=48061567708"
    ],
    "stage": "under construction",
    "verification": {
@@ -51139,12 +51141,24 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.apartments.com.au/new-apartments/lumara-broadbeach-108-old-burleigh-road-broadbeach-qld-4218"
+    },
+    {
+     "claim": "Australian Business Register: ABN 61 615 602 027 is 5POINT PROJECTS PTY LTD, Australian private company, ABN active from 1 Nov 2016, main business location QLD 4218 (read 20 Nov 2026; matched by the ABN already held in our research record for this developer)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=61615602027"
+    },
+    {
+     "claim": "Australian Business Register: ABN 48 061 567 708 is BOURKE PROJECTS PTY LTD, Australian private company, ABN active from 3 Jun 2000, main business location QLD 4217 (read 20 Nov 2026; matched by same name as the joint-venture partner; the project pages print no ABN)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=48061567708"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": "Gold Coast, Australia",
-    "developer_company": "5Point Projects Pty Ltd, ABN 61 615 602 027 (JV with Bourke Projects)",
+    "developer_company": "5Point Projects Pty Ltd, ABN 61 615 602 027, and Bourke Projects Pty Ltd, ABN 48 061 567 708 (Australian Business Register; joint venture)",
     "developer_projects_delivered": null,
     "developer_units_delivered": null,
     "listed_or_audited": null,
@@ -51255,7 +51269,8 @@
     "https://www.apartments.com.au/news/qld/red-co-plots-new-como-varsity-lake-apartments",
     "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences",
     "https://www.theurbandeveloper.com/articles/red-and-co-makes-gold-coast-debut-with-aud250m-lifestyle-led-como-at-varsity-lakes-raptis-waterpoint",
-    "https://www.theurbandeveloper.com/articles/red-co-stafford-arca-construction-start"
+    "https://www.theurbandeveloper.com/articles/red-co-stafford-arca-construction-start",
+    "https://abr.business.gov.au/ABN/View?abn=18610575427"
    ],
    "stage": "under construction",
    "verification": {
@@ -51326,12 +51341,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.apartments.com.au/news/qld/red-co-to-launch-debut-gold-coast-development-como-varsity-lakes-as-construction-commences"
+    },
+    {
+     "claim": "Australian Business Register: ABN 18 610 575 427 is RED & CO DEVELOPMENTS PTY LTD, Australian private company, ABN active from 4 Feb 2016, GST registered from 1 May 2016, main business location QLD 4006 (read 20 Nov 2026; matched by the ABN already held in our research record for this developer)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=18610575427"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": "Brisbane, Australia",
-    "developer_company": "Red & Co Developments Pty Ltd, ABN 18 610 575 427 (co-founders Keiran Foster and David Laverty)",
+    "developer_company": "Red & Co Developments Pty Ltd, ABN 18 610 575 427 (Australian Business Register)",
     "developer_projects_delivered": 26.0,
     "developer_units_delivered": 500.0,
     "listed_or_audited": null,
@@ -51667,7 +51688,8 @@
     "https://www.apartments.com.au/news/nsw/sekisui-buys-st-leonards-development-site-for-waterstone-apartments",
     "https://www.apartments.com.au/news/nsw/sekisui-house-australia-breaks-ground-at-waterstone-st-leonards-following-positive-sales-results",
     "https://www.planningportal.nsw.gov.au/planning-panel/residential-flat-building-development-26",
-    "https://www.sustainablebuildingawards.com.au/multiple-dwelling-2019/west-village-one"
+    "https://www.sustainablebuildingawards.com.au/multiple-dwelling-2019/west-village-one",
+    "https://abr.business.gov.au/ABN/View?abn=71134688510"
    ],
    "stage": "under construction",
    "verification": {
@@ -51744,12 +51766,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.apartments.com.au/new-apartments/waterstone-st-leonards-24-berry-road-st-leonards-nsw-2065"
+    },
+    {
+     "claim": "Australian Business Register: ABN 71 134 688 510 is Sekisui House Australia Holdings Pty Limited, Australian private company, ABN active from 18 Dec 2008, main business location NSW 2113 (read 20 Nov 2026; matched by the ABN printed in the footer of sekisuihouse.com.au)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=71134688510"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": "Sydney, Australia (parent Sekisui House Ltd, Osaka, Japan)",
-    "developer_company": "Sekisui House Australia (subsidiary of Sekisui House Ltd)",
+    "developer_company": "Sekisui House Australia Holdings Pty Limited, ABN 71 134 688 510 (printed on sekisuihouse.com.au; Australian Business Register), subsidiary of Sekisui House Ltd",
     "developer_projects_delivered": null,
     "developer_units_delivered": null,
     "listed_or_audited": "Parent Sekisui House Ltd listed on Tokyo Stock Exchange (not checked in a filing)",
@@ -51899,7 +51927,8 @@
     "https://production-urban-next-git-ude-461-urban-ninja.vercel.app/news/qld/morris-releases-second-tower-at-crest-broadbeach-after-tower-one-sales-success",
     "https://realcommercial.com.au/news/sydneys-apartments-back-on-song-as-city-tower-kicks-off",
     "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
-    "https://www.sbs.com.au/news/article/alarm-after-blocks-developer-taken-to-court-for-alleged-shoddy-work/bbh8sseap"
+    "https://www.sbs.com.au/news/article/alarm-after-blocks-developer-taken-to-court-for-alleged-shoddy-work/bbh8sseap",
+    "https://abr.business.gov.au/Search/ResultsActive?SearchText=Deicorp"
    ],
    "stage": "under construction",
    "verification": {
@@ -51977,12 +52006,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://hydemetropolitan.com.au"
+    },
+    {
+     "claim": "Australian Business Register lists Deicorp Pty Ltd (ABN 55 138 180 337) and Deicorp Group Pty Limited (ABN 47 090 799 885), both active, main business location NSW 2016 (read 20 Nov 2026; same name as the developer; which one signs buyer contracts is not published)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Deicorp"
     }
    ],
    "facts": {
     "developer_founded": 1999.0,
     "developer_hq": "Sydney, Australia",
-    "developer_company": "Deicorp (founder Fouad Deiri); legal entity not published",
+    "developer_company": "Deicorp Pty Ltd, ABN 55 138 180 337, and Deicorp Group Pty Limited, ABN 47 090 799 885, both NSW 2016 (Australian Business Register; which company signs buyer contracts is not published)",
     "developer_projects_delivered": null,
     "developer_units_delivered": 12000.0,
     "listed_or_audited": null,
@@ -58534,6 +58569,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://mira-ocean-estates.com/"
+    },
+    {
+     "claim": "The project site names the developer as Mira Developments (\"Mira Ocean Estates by Mira Developments\"), and miradevelopments.ae lists Trussardi Residences among its projects (read 20 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://miradevelopments.ae/"
     }
    ],
    "facts": {
@@ -58574,7 +58615,8 @@
     "https://mira-ocean-estates.com/trussardi-residences/",
     "https://opr.ae/projects/mira-ocean-estates-mira-developments-salalah-oman",
     "https://uinvestgroup.com/oman/developers/mira-developments/",
-    "https://www.oceanestateshomes.com/"
+    "https://www.oceanestateshomes.com/",
+    "https://miradevelopments.ae/"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -60186,7 +60228,8 @@
     "https://greatfinehome.com/en/listing/sale/listingProject/724",
     "https://www.zawya.com/en/press-release/companies-news/modon-launches-tara-park-on-reem-island-as-abu-dhabis-off-plan-pipeline-expands-341200",
     "https://investindxb.com/wp-content/uploads/2026/04/MODON-TARA-PARK-2-FACTSHEET-investindxb.pdf",
-    "https://modonrealty.com/projects/tara-park"
+    "https://modonrealty.com/projects/tara-park",
+    "https://modon.com/faqs"
    ],
    "verification": {
     "permit": "developer",
@@ -60232,6 +60275,12 @@
      "status": "contradicted",
      "by": "none",
      "source": "https://investindxb.com/wp-content/uploads/2026/04/MODON-TARA-PARK-2-FACTSHEET-investindxb.pdf"
+    },
+    {
+     "claim": "Modon FAQ: Tara Park has two residential towers with 494 units: 156 one-bedroom (average 83 m2), 310 two-bedroom (average 138 m2) and 28 three-bedroom (average 198 m2); freehold, open to local and international buyers (modon.com/faqs, read 20 Nov 2026)",
+     "status": "unverified",
+     "by": "developer",
+     "source": "https://modon.com/faqs"
     }
    ],
    "facts": {
@@ -97739,6 +97788,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.hsfkramer.com/notes/realestate/2025-posts/firb-update"
+    },
+    {
+     "claim": "Australian Business Register: ABN 99 686 447 325 is GOLD PARTNERS AUSTRALIA PTY LTD, Australian private company, ABN active from 22 Apr 2025, main business location NSW 2118 (read 20 Nov 2026; matched by the ABN already held in our research record for this developer)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=99686447325"
     }
    ],
    "facts": {
@@ -106803,6 +106858,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+    },
+    {
+     "claim": "Australian Business Register: ABN 27 006 708 738 is CENTRAL EQUITY LIMITED, Australian public company, ABN active from 25 Feb 2000, main business location VIC 3006 (read 20 Nov 2026; matched by the ABN printed on centralequity.com.au)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=27006708738"
     }
    ],
    "facts": {
@@ -106857,7 +106918,8 @@
     "https://www.apartments.com.au/news/qld/first-crane-arrives-as-multiplex-gets-moving-on-palmera-residences",
     "https://www.apartments.com.au/news/qld/nab-funds-1-billion-surfers-paradise-apartment-development-palmera",
     "https://www.apartments.com.au/news/qld/palmera-residences-fly-out-the-door-as-sales-pass-400-million",
-    "https://www.multiplex.global/projects/palmera-residences/"
+    "https://www.multiplex.global/projects/palmera-residences/",
+    "https://abr.business.gov.au/ABN/View?abn=27006708738"
    ],
    "review": {
     "d": "2026-11-13",
@@ -114803,6 +114865,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+    },
+    {
+     "claim": "Australian Business Register: ABN 11 123 752 803 is SPG LAND AUSTRALIA PTY LTD, Australian private company, ABN active from 2 Mar 2007, main business location QLD 4218 (read 20 Nov 2026; matched by the ABN already held in our research record for this developer)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=11123752803"
     }
    ],
    "facts": {
@@ -114854,7 +114922,8 @@
     "https://www.apartments.com.au/news/qld/spg-land-launches-1-5-billion-paradiso-place-at-attractive-price-point",
     "https://www.apartments.com.au/news/qld/spg-land-sell-over-75-of-surfers-paradise-tower-paradiso-place",
     "https://www.apartments.com.au/news/qld/spg-lands-paradiso-place-surfers-paradise-mega-apartment-development-set-to-launch",
-    "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld"
+    "https://www.theurbandeveloper.com/articles/spg-land-surfers-paradise-paradiso-place-work-begins-qld",
+    "https://abr.business.gov.au/ABN/View?abn=11123752803"
    ],
    "review": {
     "d": "2026-11-13",
@@ -139546,12 +139615,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://thelandmarkmermaidbeach.com.au/"
+    },
+    {
+     "claim": "Australian Business Register: ABN 91 622 840 386 is ANIKO GROUP PTY LTD, Australian private company, ABN active from 14 Nov 2017, main business location QLD 4218 (read 20 Nov 2026; matched by same name as the developer; the developer site prints no ABN)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=91622840386"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": "Gold Coast, Australia",
-    "developer_company": null,
+    "developer_company": "Aniko Group Pty Ltd, ABN 91 622 840 386 (Australian Business Register; same name, the developer site prints no ABN)",
     "developer_projects_delivered": 4.0,
     "developer_units_delivered": null,
     "listed_or_audited": null,
@@ -139603,7 +139678,8 @@
     "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/",
     "https://www.planningalerts.org.au/applications/3303544",
     "https://www.theurbandeveloper.com/articles/aniko-mermaid-beach-gold-coast-mixed-use-approval",
-    "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland"
+    "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland",
+    "https://abr.business.gov.au/ABN/View?abn=91622840386"
    ],
    "verified_score": 3,
    "status": "active",
@@ -195879,12 +195955,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.mirvac.com/en/about/news-and-media/construction-commences-on-mirvacs-isle-apartments-project-in-brisbane-creating-new-green-urban-oasis"
+    },
+    {
+     "claim": "Developer company: Mirvac Limited, ABN 92 003 280 699 (Australian Business Register); the same register record as the developer's other projects on Kolaboro (read 20 Nov 2026)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=92003280699"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Mirvac Limited, ABN 92 003 280 699 (Australian Business Register)",
     "construction_start": null,
     "handover_promised": "November 2026",
     "original_handover": null,
@@ -195911,7 +195993,8 @@
    "flags": [],
    "sources": [
     "https://isle.mirvac.com/",
-    "https://www.mirvac.com/en/about/news-and-media/construction-commences-on-mirvacs-isle-apartments-project-in-brisbane-creating-new-green-urban-oasis"
+    "https://www.mirvac.com/en/about/news-and-media/construction-commences-on-mirvacs-isle-apartments-project-in-brisbane-creating-new-green-urban-oasis",
+    "https://abr.business.gov.au/ABN/View?abn=92003280699"
    ],
    "docs_listed": [
     "Developer page: \"completion anticipated November 2026\"",
@@ -211609,12 +211692,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.finbar.com.au/developments/palmyra-west"
+    },
+    {
+     "claim": "Developer company: Finbar Group Limited, ABN 97 009 113 473 (Australian Business Register); the same register record as the developer's other projects on Kolaboro (read 20 Nov 2026)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=97009113473"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Finbar Group Limited, ABN 97 009 113 473 (Australian Business Register)",
     "construction_start": null,
     "handover_promised": "Mid 2027",
     "original_handover": null,
@@ -211640,7 +211729,8 @@
    "flags": [],
    "sources": [
     "https://www.finbar.com.au/developments",
-    "https://www.finbar.com.au/developments/palmyra-west"
+    "https://www.finbar.com.au/developments/palmyra-west",
+    "https://abr.business.gov.au/ABN/View?abn=97009113473"
    ],
    "docs_listed": [
     "Address printed: 45 McGregor Rd, Palmyra WA 6157, Australia"
@@ -211716,12 +211806,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.finbar.com.au/developments/romeo-applecross"
+    },
+    {
+     "claim": "Developer company: Finbar Group Limited, ABN 97 009 113 473 (Australian Business Register); the same register record as the developer's other projects on Kolaboro (read 20 Nov 2026)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=97009113473"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Finbar Group Limited, ABN 97 009 113 473 (Australian Business Register)",
     "construction_start": null,
     "handover_promised": "2028",
     "original_handover": null,
@@ -211747,7 +211843,8 @@
    "flags": [],
    "sources": [
     "https://www.finbar.com.au/developments",
-    "https://www.finbar.com.au/developments/romeo-applecross"
+    "https://www.finbar.com.au/developments/romeo-applecross",
+    "https://abr.business.gov.au/ABN/View?abn=97009113473"
    ],
    "docs_listed": [
     "Address printed: 910 Canning Hwy, Applecross WA 6153, Australia",
@@ -211927,12 +212024,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open"
+    },
+    {
+     "claim": "Australian Business Register lists FRASERS PROPERTY AUSTRALIA PTY LIMITED, ABN 89 600 448 726, main business location NSW 2138, active (read 20 Nov 2026; same name as the developer, the project pages print no ABN)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=89600448726"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Frasers Property Australia Pty Limited, ABN 89 600 448 726 (Australian Business Register; same name)",
     "construction_start": null,
     "handover_promised": "Mid 2027",
     "original_handover": null,
@@ -211959,7 +212062,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open"
+    "https://www.frasersproperty.com.au/inspiration/the-heart-of-midtown-macpark-is-now-open",
+    "https://abr.business.gov.au/ABN/View?abn=89600448726"
    ],
    "docs_listed": [
     "\"Treehouse is already under construction\"; 1, 2 and 3-bedroom apartments \"with estimated completion in mid-2027\"",
@@ -226571,12 +226675,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    },
+    {
+     "claim": "Australian Business Register lists Consolidated Properties Group Pty Ltd, ABN 42 134 685 582, main business location QLD 4000, active (read 20 Nov 2026; same name as the developer, the project pages print no ABN)",
+     "status": "verified",
+     "by": "registry",
+     "source": "https://abr.business.gov.au/ABN/View?abn=42134685582"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Consolidated Properties Group Pty Ltd, ABN 42 134 685 582 (Australian Business Register; same name)",
     "construction_start": null,
     "handover_promised": null,
     "original_handover": null,
@@ -226601,7 +226711,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/"
+    "https://www.consolidatedpropertiesgroup.com.au/cpg-unveils-castile-at-47-skyring-terrace/",
+    "https://abr.business.gov.au/ABN/View?abn=42134685582"
    ],
    "docs_listed": [
     "Developer news (29 May 2026): the approved development comprises 227 apartments in a 25-storey tower plus a six-storey riverfront building of 12 residences, designed by Woods Bagot",
