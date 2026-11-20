@@ -61,6 +61,29 @@ const RH_KNOWN = new Set(["__k", "es", "__sb", "about", "account", "admin", "age
 function asset(env, req, path) {
   return env.ASSETS.fetch(new Request(new URL(path, req.url), { method: req.method === 'HEAD' ? 'HEAD' : 'GET', headers: req.headers, redirect: 'manual' }));
 }
+/* rh-pack-1 (20 Nov 2026): home pages (/deal/<slug>, /es/deal/<slug>) come from the bundles /_pk/v1/<n>.json written by
+   the site build (score-insight-rank seo/pack.ts, same FNV-1a hash of the path), so the deploy does not need one file per page.
+   Up to 24 bundles stay in memory for 2 minutes. A page that is not in its bundle falls back to its own file.
+   /__pk/<path> serves a page only from the bundles (noindex), to compare them with the files. */
+const RH_PK_SERVE = false, RH_PK = new Map(), RH_PK_RE = /^\/(?:es\/)?deal\/[\w.~-]+$/;
+function packShard(k) { let h = 0x811c9dc5; for (let i = 0; i < k.length; i++) { h ^= k.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h % 256; }
+async function packPage(env, req, path) {
+  if (!RH_PK_RE.test(path)) return null;
+  const n = packShard(path); let c = RH_PK.get(n);
+  if (!c || Date.now() - c.at > 120000) {
+    try {
+      const r = await env.ASSETS.fetch(new Request(new URL('/_pk/v1/' + n + '.json', req.url)));
+      if (r.status === 200) c = { at: Date.now(), m: await r.json() };
+      else if (r.status === 404) c = { at: Date.now(), m: {} };
+    } catch (e) { /* keep the old copy, if any */ }
+    if (!c) return null;
+    RH_PK.delete(n); RH_PK.set(n, c);
+    while (RH_PK.size > 24) RH_PK.delete(RH_PK.keys().next().value);
+  }
+  const html = Object.prototype.hasOwnProperty.call(c.m, path) ? c.m[path] : null;
+  if (typeof html !== 'string') return null;
+  return new Response(req.method === 'HEAD' ? null : html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=0, must-revalidate' } });
+}
 /* rh-redir-1 (14 Nov 2026): old addresses answer 301 (or 410) from /redirects.json, a flat { "/old": "/new" } map written by the site build; read once per 5 minutes */
 let RH_REDIR = null, RH_REDIR_AT = 0;
 async function redirMap(env, req) {
@@ -73,6 +96,8 @@ async function redirMap(env, req) {
   return RH_REDIR || {};
 }
 async function pages(req, env, u) {
+  if (u.pathname.startsWith('/_pk/')) return new Response(null, { status: 404 });
+  if (u.pathname.startsWith('/__pk/')) { const t = await packPage(env, req, u.pathname.slice(5)); if (!t) return new Response('not in the bundles', { status: 404, headers: { 'x-robots-tag': 'noindex' } }); t.headers.set('x-robots-tag', 'noindex'); return t; }
   if ((req.method === 'GET' || req.method === 'HEAD') && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
     const m = await redirMap(env, req);
     const k = u.pathname.length > 1 ? u.pathname.replace(/\/+$/, '') : '/';
@@ -83,6 +108,7 @@ async function pages(req, env, u) {
   if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await asset(env, req, '/__q/' + k + '=' + v + '/'); if (q.status === 200) return q; } } }
   if (u.pathname === '/finds' || u.pathname === '/finds/') return new Response(null, { status: 301, headers: { location: '/' + u.search } });
   if (u.pathname.length > 1 && u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: '/' + u.pathname.replace(/\/+$/, '').replace(/^[\/\\]+/, '') + u.search } });
+  if (RH_PK_SERVE && (req.method === 'GET' || req.method === 'HEAD')) { const pk = await packPage(env, req, u.pathname); if (pk) return pk; }
   let r = await asset(env, req, u.pathname + u.search);
   if (r.status >= 300 && r.status < 400) {
     const l = new URL(r.headers.get('location') || '', u);
