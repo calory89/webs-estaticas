@@ -158,7 +158,7 @@ function findPage(lang, key) {
   const inner = '<form class="n31f" id="n31-fl" role="search"><label for="n31-q">' + esc(w(key === 'find-listing' ? 'fl_lab' : 'hh_lab')) + '</label><input id="n31-q" name="q" type="text" inputmode="url" autocomplete="off" spellcheck="false" placeholder="' + esc(w('fl_ph')) + '" maxlength="600">' +
     '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('fl_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o"></div>' +
     '<h2>' + esc(w('fl_how_h')) + '</h2><ul class="n31p">' + w('fl_how').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
-    '<p class="n31m">' + esc(w('fl_api')) + ' <a href="/api/v1/find?q=marina">/api/v1/find?q=</a> · <a href="/api/v1/handover-history/unsere-flora-berlin">/api/v1/handover-history/&lt;slug&gt;</a> · <a href="' + pre(lang) + '/extension/">' + esc(w('fl_ext')) + '</a></p>';
+    '<p class="n31m">' + esc(w('fl_api')) + ' <a href="/api/v1/find?q=marina">/api/v1/find?q=</a> · <a href="/api/v1/handover-history/unsere-flora-berlin">/api/v1/handover-history/&lt;slug&gt;</a> · <a href="' + '/extension/">' + esc(w('fl_ext')) + '</a></p>';
   return frame(lang, '/tools/' + key + '/', key, inner, { m: M, me: key, priv: w(key === 'find-listing' ? 'fl_priv' : 'hh_priv') });
 }
 
@@ -229,7 +229,7 @@ async function comparePage(env, lang, u) {
   const cell = (cc, html) => '<td data-l="' + esc(country(cc, lang)) + '">' + html + '</td>';
   const lnk = (s) => s ? ' <small><a href="' + esc(/^\//.test(s.u) ? P + s.u : s.u) + '"' + (/^\//.test(s.u) ? '' : ' rel="noopener" target="_blank"') + '>' + esc(s.n) + '</a>' + (s.d ? ' · ' + esc(t31(lang, 'read_on', { d: fdate(s.d, lang) })) : '') + '</small>' : '';
   const R = [];
-  R.push([w('cc_r_k'), cc => '<b>' + nf(D.per[cc].k, lang) + '</b><small><a href="' + P + '/countries/' + String(country(cc, 'en')).toLowerCase().replace(/[^a-z]+/g, '-') + '/">' + esc(w('cc_open')) + '</a></small>']);
+  R.push([w('cc_r_k'), cc => '<b>' + nf(D.per[cc].k, lang) + '</b><small><a href="' + P + '/countries/' + ({ AE: 'uae', US: 'usa' }[cc] || String(country(cc, 'en')).toLowerCase().replace(/[^a-z]+/g, '-')) + '/">' + esc(w('cc_open')) + '</a></small>']);
   R.push([w('cc_r_own'), cc => { const n = note(cc, 'land'); return n ? esc(n.tx) + lnk(n.s) : '<span class="n31m">' + esc(w('cc_none')) + '</span>'; }]);
   R.push([w('cc_r_money'), cc => { const n = note(cc, 'money'); return n ? esc(n.tx) + lnk(n.s) : '<span class="n31m">' + esc(w('cc_none')) + '</span>'; }]);
   R.push([w('cc_r_pn'), cc => { const o = D.per[cc]; return '<b>' + nf(Math.round(o.pn / o.k * 100), lang) + ' %</b><small>' + esc(w('cc_of', { a: nf(o.pn, lang), b: nf(o.k, lang) })) + '</small>'; }]);
