@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://oykcsmextclpdnugixqz.supabase.co" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="RealHunt: new homes" href="https://realhunt.co/feed.xml" />
+    <link rel="alternate" type="application/atom+xml" title="RealHunt: new homes (Atom)" href="https://realhunt.co/feed.atom" />
+    <link rel="alternate" type="application/feed+json" title="RealHunt: new homes (JSON Feed)" href="https://realhunt.co/feed.json" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Todas las páginas y casas en México · RealHunt</title>
+    <meta name="description" content="Las 14 casas que tenemos en México y las otras 21 páginas de RealHunt sobre el país: listas por precio y región, guías y gastos." />
+    <meta name="author" content="RealHunt" />
+    <meta name="robots" content="index, follow" />
+    <!-- 15-nov-2026: large image previews in Google results and Discover. A tag of its own: seo/polish.ts and the worker rewrite the robots tag above. -->
+    <meta name="googlebot" content="max-image-preview:large, max-snippet:-1" />
+    <meta name="bingbot" content="max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://realhunt.co/es/sitemap/mexico" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RealHunt" />
+    <meta property="og:title" content="Todas las páginas y casas en México · RealHunt" />
+    <meta property="og:description" content="Las 14 casas que tenemos en México y las otras 21 páginas de RealHunt sobre el país: listas por precio y región, guías y gastos. Forma parte del mapa del sitio y se rehace cada vez que se actualiza la web." />
+    <meta property="og:image" content="https://realhunt.co/og-home.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://realhunt.co/es/sitemap/mexico" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RealHuntApp" />
+    <meta name="twitter:title" content="Todas las páginas y casas en México · RealHunt" />
+    <meta name="twitter:description" content="Las 14 casas que tenemos en México y las otras 21 páginas de RealHunt sobre el país: listas por precio y región, guías y gastos. Forma parte del mapa del sitio y se rehace cada vez que se actualiza la web." />
+    <meta name="twitter:image" content="https://realhunt.co/og-home.jpg" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://realhunt.co/#organization","name":"RealHunt","url":"https://realhunt.co/","logo":"https://realhunt.co/favicon.png","description":"Casas baratas en venta en todo el mundo, cada una revisada por una persona y con nota de 70 a 98.","email":"hello@realhunt.co","parentOrganization":{"@type":"Organization","name":"Equinox Investment Group LLC","address":{"@type":"PostalAddress","streetAddress":"30 N Gould St Ste N","addressLocality":"Sheridan","addressRegion":"WY","postalCode":"82801","addressCountry":"US"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"RealHunt","alternateName":["Real Hunt","realhunt.co"],"url":"https://realhunt.co"}</script>
+    <script>
+    /* Language (8-nov-2026): Spanish only for visitors in a Spanish-speaking country (saved Cloudflare country, else time zone), English for everyone else whatever the browser language; ?lang= and the saved EN/ES choice win. Mirrors src/lib/lang.ts pickLang. */
+    (function(){var d=document.documentElement,l="en";try{var q=new URLSearchParams(location.search).get("lang"),s=null,g=null;
+    /* 10-nov-2026: /es/... is the Spanish copy of a page (its own address for search engines). The prefix means "Spanish" whatever the country or the saved choice, and it stays in the address: the router runs with basename /es (src/lib/esPath.ts), so links, reloads and the canonical keep it. */
+    if(/^\/es(\/|$)/.test(location.pathname)){q="es";window.__rhUrlLang="es"}try{s=localStorage.getItem("rh_lang");g=localStorage.getItem("rh_geo")}catch(e){}
+    if(q==="es"||q==="en")l=q;else if(s==="es"||s==="en")l=s;else if(g&&/^[A-Z]{2}$/.test(g)&&g!=="XX"&&g!=="T1"){if(/^(ES|MX|AR|CO|CL|PE|VE|EC|GT|CU|BO|DO|HN|PY|SV|NI|CR|PA|UY|PR|GQ)$/.test(g))l="es"}else{var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
+    if(/^(Europe\/Madrid|Africa\/Ceuta|Atlantic\/Canary|Africa\/Malabo|America\/(Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Mazatlan|Bahia_Banderas|Hermosillo|Tijuana|Ensenada|Santa_Isabel|Bogota|Lima|Santiago|Punta_Arenas|Argentina\/.+|Buenos_Aires|Cordoba|Mendoza|Catamarca|Jujuy|Rosario|Caracas|Montevideo|Asuncion|La_Paz|Guayaquil|Guatemala|El_Salvador|Tegucigalpa|Managua|Costa_Rica|Panama|Havana|Santo_Domingo|Puerto_Rico)|Pacific\/(Easter|Galapagos)|Chile\/.+|Mexico\/.+|Cuba)$/.test(tz))l="es"}}catch(e){}
+    d.setAttribute("data-lang",l);d.lang=l;if(l==="es"){d.className+=" rh-i18n-wait";var k=document.createElement("link");k.rel="preload";k.as="fetch";k.href="/i18n/es-core.json?v=3";k.crossOrigin="anonymous";document.head.appendChild(k);var k2=k.cloneNode();k2.href="/i18n/es-listings.json?v=3";document.head.appendChild(k2);setTimeout(function(){d.classList.remove("rh-i18n-wait")},1500)}})();
+    </script>
+    <script>/* 15-nov-2026: cheap phones (2 GB of memory or less) and "data saver" get the page without blur, shadows and shimmer (src/lib/perf.css). */
+    (function(){try{var n=navigator,c=n.connection||{};if((n.deviceMemory&&n.deviceMemory<=2)||c.saveData)document.documentElement.className+=" rh-lite"}catch(e){}})();</script>
+    <style>html{background:#FFFFFF}#root:empty{min-height:100vh}html.rh-i18n-wait #root{visibility:hidden}.rh-static{max-width:760px;margin:0 auto;padding:24px 16px;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#14181c}.rh-static h1{font:800 clamp(26px,4vw,40px)/1.1 system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 10px}.rh-static h2{font:800 20px system-ui,sans-serif;margin:22px 0 8px}.rh-static a{color:#D4420C}.rh-static ul,.rh-static ol{padding-left:20px}.rh-static li{margin:4px 0}.rh-static nav{font-size:13px;color:#6b737a;margin-bottom:8px}</style>
+    <!-- Meta Pixel: the script is only downloaded after the visitor accepts cookies -->
+    <script>
+    window.rhEnablePixel=function(){if(window.__rhpx)return;window.__rhpx=1;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','774992015604419');fbq('track','PageView');};
+    try{if(localStorage.getItem('rh_consent')==='all')window.rhEnablePixel();}catch(e){}
+    </script>
+    <!-- Microsoft Clarity: heatmaps and session replays so we can see what visitors do and improve the site.
+         Form inputs are masked. Until the visitor clicks "Accept all" it runs without cookies (consent denied);
+         after that it may use its cookies to link visits. Ads storage is always denied. -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        /* 10-nov-2026 speed: the Clarity script is fetched once the page has loaded, so it never competes with the first photo */
+        var go=function(){setTimeout(function(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);},1200)};
+        if(l.readyState==="complete")go();else c.addEventListener("load",go);
+    })(window, document, "clarity", "script", "yn43cuf00q");
+    (function(){var g=function(){try{return localStorage.getItem('rh_consent')==='all'}catch(e){return false}};
+    var send=function(){window.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:g()?'granted':'denied'})};
+    send();window.addEventListener('rh:consent',send);})();
+    </script>
+    <link rel="preconnect" href="https://realhunt-media.pages.dev" />
+  <script type="module" crossorigin src="/assets/index-Cyl5LyBQ.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-D96rnT3N.js">
+  <link rel="modulepreload" crossorigin href="/assets/icons-CZkLHEoJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/supabase-CYzOsYot.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Dub6gJBz.css">
+  <script>(()=>{const p=location.pathname.replace(/^\/es(?=\/|$)/,'')||'/',r={"Community":["/assets/ToolsPage-B2JXikHD.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/v8-DWfyZniB.js","/assets/OperationsTools-Cg_RQhd9.js","/assets/KeyboardShortcutsModal-DaqF94j0.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/use-mobile-BZrfKEJI.js"],"Home":["/assets/Home-MML6jzEq.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/SignUp-BpvsYstL.js","/assets/Sell-CgdiYjqs.js","/assets/use-mobile-BZrfKEJI.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/StickyMobileCTA-ngAuzcQ6.js","/assets/grade-BPJLW84W.js","/assets/DecisionSummary-zfmpWGRE.js","/assets/MapPage-BJQwwzN8.js"],"FindDetail":["/assets/FindDetail-Bf42V-Zz.js","/assets/react-D96rnT3N.js","/assets/SignUp-BpvsYstL.js","/assets/index-Cyl5LyBQ.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/Sell-CgdiYjqs.js","/assets/use-mobile-BZrfKEJI.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/StickyMobileCTA-ngAuzcQ6.js","/assets/grade-BPJLW84W.js","/assets/DecisionSummary-zfmpWGRE.js","/assets/MapPage-BJQwwzN8.js"],"Weather":["/assets/Weather-D-bl7ldy.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js"],"Map":["/assets/homesmap-BqoD44m7.js","/assets/react-D96rnT3N.js","/assets/leaflet-BWLZ7Z6t.js","/assets/v8-DWfyZniB.js","/assets/index-Cyl5LyBQ.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/OperationsTools-Cg_RQhd9.js","/assets/KeyboardShortcutsModal-DaqF94j0.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/map-B5OnsLa-.js"]},k=p==='/'||/^\/(deal|map|top|live-search|homes|hunt|compare|score|blog|guide|costs|can-i-buy|buying-costs)(\/|$)/.test(p)?'Community':/^\/from\//.test(p)?'Home':/^\/find\//.test(p)?'FindDetail':/^\/weather\/?$/.test(p)?'Weather':null,m=p==='/map',add=function(rel,href,as){const l=document.createElement('link');l.rel=rel;l.href=href;if(as)l.as=as;if(rel==='modulepreload')l.crossOrigin='';document.head.appendChild(l)};if(m)add('preconnect','https://tile.openstreetmap.org');for(const href of (r[k]||[]).concat(m?r.Map||[]:[]))add('modulepreload',href);if(m)for(const href of ["/assets/leaflet-Dgihpmma.css","/assets/index-Dub6gJBz.css","/assets/v8-Cr70eMj3.css"])add('preload',href,'style');if(p==='/'||/^\/(deal|map|homes|compare|live-search)(\/|$)/.test(p)){try{window.__rhSnap=fetch('/data/rh-static.json',{cache:'no-cache'}).then(function(x){if(!x.ok)throw 0;return x.json()});window.__rhSnap.catch(function(){});if(document.documentElement.getAttribute('data-lang')==='es'){window.__rhSnapEs=fetch('/data/rh-static-es.json',{cache:'no-cache'}).then(function(x){if(!x.ok)throw 0;return x.json()});window.__rhSnapEs.catch(function(){})}}catch(e){}}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://realhunt.co/#organization","name":"RealHunt","url":"https://realhunt.co/","logo":"https://realhunt.co/favicon.png","email":"hello@realhunt.co","parentOrganization":{"@type":"Organization","name":"Equinox Investment Group LLC","address":{"@type":"PostalAddress","streetAddress":"30 N Gould St Ste N","addressLocality":"Sheridan","addressRegion":"WY","postalCode":"82801","addressCountry":"US"}}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RealHunt","item":"https://realhunt.co/es"},{"@type":"ListItem","position":2,"name":"Mapa del sitio","item":"https://realhunt.co/es/sitemap"},{"@type":"ListItem","position":3,"name":"México","item":"https://realhunt.co/es/sitemap/mexico"}]}</script><link rel="alternate" hreflang="en" href="https://realhunt.co/sitemap/mexico" /><link rel="alternate" hreflang="es" href="https://realhunt.co/es/sitemap/mexico" /><link rel="alternate" hreflang="x-default" href="https://realhunt.co/sitemap/mexico" /></head>
+
+  <body>
+    <div id="root"><main class="rh-static" data-rh-keep data-rh-static lang="es"><nav class="rh-bc" aria-label="Ruta"><a href="/es">RealHunt</a> › <a href="/es/sitemap">Mapa del sitio</a> › <span aria-current="page">México</span></nav><h1>Todas las páginas y casas en México</h1><p>35 páginas.</p><h2>Países y regiones</h2><ul><li><a href="/es/homes/mexico">Casas en venta en México</a></li></ul><h2>Casas por precio</h2><ul><li><a href="/es/homes/mexico/under-200000">Casas en venta en México por menos de 200.000 €</a></li></ul><h2>Casas baratas</h2><ul><li><a href="/es/cheap-houses/with-garage-in-mexico">Casas con garaje en venta en México</a></li><li><a href="/es/cheap-houses/over-80-sqm-in-mexico">Casas de más de 80 m² en venta en México</a></li></ul><h2>Guías de compra</h2><ul><li><a href="/es/guide/mexico">Cómo comprar una casa en México siendo extranjero</a></li></ul><h2>Gastos e impuestos</h2><ul><li><a href="/es/costs/mexico">Comprar una casa en México: lo que cuesta de verdad</a></li><li><a href="/es/buying-costs/mexico">Gastos de compra en México: calculadora y ejemplos resueltos</a></li></ul><h2>¿Puedo comprar allí?</h2><ul><li><a href="/es/can-i-buy/german-in-mexico">¿Puede un alemán comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/australian-in-mexico">¿Puede un australiano comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/british-in-mexico">¿Puede un británico comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/canadian-in-mexico">¿Puede un canadiense comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/danish-in-mexico">¿Puede un danés comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/spanish-in-mexico">¿Puede un español comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/american-in-mexico">¿Puede un estadounidense comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/french-in-mexico">¿Puede un francés comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/irish-in-mexico">¿Puede un irlandés comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/italian-in-mexico">¿Puede un italiano comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/dutch-in-mexico">¿Puede un neerlandés comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/norwegian-in-mexico">¿Puede un noruego comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/swedish-in-mexico">¿Puede un sueco comprar una vivienda en México?</a></li><li><a href="/es/can-i-buy/swiss-in-mexico">¿Puede un suizo comprar una vivienda en México?</a></li></ul><h2>Casas</h2><ul><li><a href="/es/deal/mx-mazatlan-three-bed-house-gated-pool-2-9m">143.000 € · Casa de tres dormitorios en una comunidad privada con piscina en Mazatlán, Sinaloa</a></li><li><a href="/es/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m">152.100 € · Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, Querétaro</a></li><li><a href="/es/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m">160.200 € · Casa de tres dormitorios en un complejo amurallado con piscina en Puerto Vallarta, Jalisco</a></li><li><a href="/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m">216.600 € · Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida</a></li><li><a href="/es/deal/san-pedro-tlaquepaque-50575">50.575 € · Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco</a></li><li><a href="/es/deal/zapopan-64230">64.230 € · Casa de 2 dormitorios en Zapopan, Jalisco</a></li><li><a href="/es/deal/cuautlancingo-68984">68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla</a></li><li><a href="/es/deal/tonala-70805">70.805 € · Casa de 2 dormitorios en Tonalá, Jalisco</a></li><li><a href="/es/deal/mazatlan-80920">80.920 € · Piso de 3 dormitorios cerca de la playa en Mazatlán, Sinaloa</a></li><li><a href="/es/deal/mazatlan-83298">83.298 € · Piso de 2 dormitorios en Mazatlán, Sinaloa</a></li><li><a href="/es/deal/mazatlan-83448">83.448 € · Piso de 2 dormitorios en Mazatlán, Sinaloa</a></li><li><a href="/es/deal/mx-mazatlan-86k-809756">86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata</a></li><li><a href="/es/deal/mx-mazatlan-97k-889034">97.100 € · Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de Mazatlán</a></li><li><a href="/es/deal/mazatlan-98621">98.621 € · Piso de 2 dormitorios en Mazatlán, Sinaloa</a></li></ul><h2>Mapa del sitio</h2><p><a href="/es/sitemap">Mapa del sitio</a> · <a href="/es/sitemap/homes">Casas</a></p></main></div>
+    <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})})</script>
+  </body>
+</html>

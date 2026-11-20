@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 91
 
+Gastos de compra
+6–9%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 32, por nota
 
 - [Nota 9111.380 €Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de HidaShokawa, Gifu53 m² · 1 dorm. · 215 €/m² · 18 días en RealHuntUna cabaña de troncos de 1999 de 53 m² en una parcela de 332 m² en propiedad en una urbanización de bosque gestionado en Shokawa, Takayama.](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929)
@@ -105,6 +114,28 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 75 a 91 sobre 98. La de mejor nota: [Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, Hiroshima](https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k). 15 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Japón
+
+Región | Viviendas | Precio mediano
+Shizuoka | 1 | 10.240 €
+[Gifu](https://realhunt.co/es/homes/japan/gifu) | 3 | 11.380 €
+Nagano | 1 | 15.930 €
+Oita | 1 | 19.320 €
+Gunma | 2 | 27.870 €
+[Wakayama](https://realhunt.co/es/homes/japan/wakayama) | 6 | 34.960 €
+Kagawa | 1 | 43.240 €
+Yamanashi | 1 | 44.160 €
+Kyoto | 2 | 54.280 €
+Hyogo | 2 | 54.300 €
+Niigata | 2 | 56.120 €
+Okayama | 2 | 57.040 €
+Shiga | 1 | 62.560 €
+Fukui | 1 | 78.200 €
+Mie | 1 | 84.500 €
+Kanagawa | 2 | 91.080 €
+Tochigi | 1 | 104.600 €
+Hiroshima | 1 | 107.500 €
+
 ### Gastos de compra y normas para extranjeros en Japón
 
 ¿Pueden comprar los extranjeros? Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia.
@@ -163,7 +194,7 @@ Por región [Wakayama 6](https://realhunt.co/es/homes/japan/wakayama) [Gifu 3](h
 
 Por zona [Kanto 5](https://realhunt.co/es/homes/japan/kanto) [Chubu 9](https://realhunt.co/es/homes/japan/chubu) [Kansai 12](https://realhunt.co/es/homes/japan/kansai) [Chugoku 3](https://realhunt.co/es/homes/japan/chugoku)
 
-Por característica [Cerca de un lago 4](https://realhunt.co/es/cheap-houses/near-a-lake-in-japan) [Con jardín 6](https://realhunt.co/es/cheap-houses/with-garden-in-japan) [Cabañas y casas de campo 6](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-japan) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-japan) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-japan) [Vistas al mar 7](https://realhunt.co/es/cheap-houses/with-sea-view-in-japan) [Con garaje 8](https://realhunt.co/es/cheap-houses/with-garage-in-japan) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-japan) [Cerca de un aeropuerto 11](https://realhunt.co/es/cheap-houses/near-an-airport-in-japan) [Menos de 500 €/m² 12](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-japan) [Nota 90 o más 10](https://realhunt.co/es/cheap-houses/score-90-plus-in-japan) [Nuevas este mes 15](https://realhunt.co/es/cheap-houses/new-this-month-in-japan) [De una planta 9](https://realhunt.co/es/cheap-houses/single-storey-in-japan) [Zona tranquila 5](https://realhunt.co/es/cheap-houses/quiet-location-in-japan)
+Por característica [Cerca de un lago 4](https://realhunt.co/es/cheap-houses/near-a-lake-in-japan) [Con jardín 6](https://realhunt.co/es/cheap-houses/with-garden-in-japan) [Cabañas y casas de campo 6](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-japan) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-japan) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-japan) [Vistas al mar 7](https://realhunt.co/es/cheap-houses/with-sea-view-in-japan) [Con garaje 8](https://realhunt.co/es/cheap-houses/with-garage-in-japan) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-japan) [Cerca de un aeropuerto 11](https://realhunt.co/es/cheap-houses/near-an-airport-in-japan) [Menos de 500 €/m² 12](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-japan) [Nota 90 o más 10](https://realhunt.co/es/cheap-houses/score-90-plus-in-japan) [Nuevas este mes 15](https://realhunt.co/es/cheap-houses/new-this-month-in-japan) [Nuevas esta semana 5](https://realhunt.co/es/cheap-houses/new-this-week-in-japan) [De una planta 9](https://realhunt.co/es/cheap-houses/single-storey-in-japan) [Zona tranquila 5](https://realhunt.co/es/cheap-houses/quiet-location-in-japan) [Más de 80 m² 9](https://realhunt.co/es/cheap-houses/over-80-sqm-in-japan)
 
 Clasificaciones [Más metros por euro 17](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-japan)
 
@@ -175,7 +206,7 @@ Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://
 
 Estos anuncios proceden de athome.co.jp (10), instagram.com (10), suumo.jp (4), homes.co.jp (3), ark-next.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Japón](https://realhunt.co/es/alerts?country=Japan) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Japan#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Japón](https://realhunt.co/es/alerts?country=Japan) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Japan#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Japón](https://realhunt.co/es/sitemap/japan)
 
 ---
 Fuente: https://realhunt.co/es/homes/japan (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

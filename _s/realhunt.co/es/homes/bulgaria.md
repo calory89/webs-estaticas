@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 94
 
+Gastos de compra
+3,2–8,5%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 6 viviendas, de mejor a peor nota
 
 - [Nota 9466.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 37 días en RealHuntPiso amplio de 89,5 m² en la tercera planta de un edificio de cinco alturas dentro del complejo cerrado y cuidado Kavarna Paradise, a 3 minutos…](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
@@ -55,6 +64,13 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 6 con terraza, 2 con garaje, 3 con piscina.
 - Notas: de 84 a 94 sobre 98. La de mejor nota: [Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en Kavarna](https://realhunt.co/es/deal/bg-kavarna-66k-89698).
 - La más reciente, añadida el 18 de noviembre de 2026: [Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti Vlas](https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034). 1 de estas viviendas se añadió en los últimos 30 días.
+
+### Precio mediano por región en Bulgaria
+
+Región | Viviendas | Precio mediano
+Varna | 1 | 58.900 €
+[Kavarna (mar Negro)](https://realhunt.co/es/homes/bulgaria/kavarna-black-sea) | 4 | 69.000 €
+Burgas | 1 | 89.000 €
 
 ### Gastos de compra y normas para extranjeros en Bulgaria
 
@@ -109,11 +125,13 @@ Por característica [Vistas al mar 5](https://realhunt.co/es/cheap-houses/with-s
 
 Por característica y presupuesto [Con piscina, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/with-pool-under-100000-in-bulgaria)
 
+Países vecinos [Grecia 24](https://realhunt.co/es/homes/greece)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de bulgarianproperties.com (3), homes.bg (2), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Bulgaria](https://realhunt.co/es/alerts?country=Bulgaria) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Bulgaria#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Bulgaria](https://realhunt.co/es/alerts?country=Bulgaria) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Bulgaria#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Bulgaria](https://realhunt.co/es/sitemap/bulgaria)
 
 ---
 Fuente: https://realhunt.co/es/homes/bulgaria (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

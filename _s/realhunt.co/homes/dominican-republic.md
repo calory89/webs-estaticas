@@ -22,6 +22,15 @@ Median size
 Top score
 90
 
+Buying costs
+4.25–7%
+
+Foreign buyers
+Can buy freely
+
+Data of
+20 Nov 2026
+
 ### The 5 homes, best score first
 
 - [Score 90€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 39 days on RealHuntA renovated oceanfront apartment in Juan Dolio, on the Caribbean coast east of Santo Domingo, sold ready to live in.](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
@@ -49,6 +58,13 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 1 with a garden, 4 with a terrace, 5 with a garage, 3 with a pool.
 - Scores: 84 to 90 out of 98. The best rated: [Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views](https://realhunt.co/deal/dr-juan-dolio-224k-441923).
 - Newest, added 18 November 2026: [Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k). 1 of these homes was added in the last 30 days.
+
+### Median price by region in the Dominican Republic
+
+Region | Homes | Median price
+Puerto Plata | 1 | €150,000
+Samaná | 1 | €201,200
+[San Pedro de Macorís](https://realhunt.co/homes/dominican-republic/san-pedro-de-macoris) | 3 | €223,600
 
 ### Buying costs and rules for foreigners in the Dominican Republic
 
@@ -102,7 +118,7 @@ By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realh
 
 These listings come from supercasas.com (5). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in the Dominican Republic](https://realhunt.co/alerts?country=Dominican%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Dominican+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in the Dominican Republic](https://realhunt.co/alerts?country=Dominican%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Dominican+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Dominican Republic](https://realhunt.co/sitemap/dominican-republic)
 
 ---
 Source: https://realhunt.co/homes/dominican-republic (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 85
 
+Gastos de compra
+3–12%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 7 viviendas, de mejor a peor nota
 
 - [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 46 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
@@ -53,6 +62,16 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 2 con jardín, 2 con terraza, 1 con garaje, 1 con chimenea.
 - Notas: de 76 a 85 sobre 98. La de mejor nota: [Casa de pueblo de 2 dormitorios con terraza en la región vinícola del Dão](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, Azores](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k). 6 de estas viviendas se añadieron en los últimos 30 días.
+
+### Precio mediano por región en Portugal
+
+Región | Viviendas | Precio mediano
+Beja | 1 | 95.000 €
+Viseu | 2 | 99.000 €
+Faro | 1 | 130.000 €
+Viana do Castelo | 1 | 156.000 €
+Coimbra | 1 | 169.000 €
+Azores | 1 | 179.000 €
 
 ### Gastos de compra y normas para extranjeros en Portugal
 
@@ -97,13 +116,15 @@ Por presupuesto [Menos de 100.000 € 3](https://realhunt.co/es/homes/portugal/u
 
 Por dormitorios [2 dormitorios 5](https://realhunt.co/es/homes/portugal/2-bedroom)
 
-Por característica [Casas de piedra 4](https://realhunt.co/es/cheap-houses/stone-houses-in-portugal) [Para entrar a vivir 5](https://realhunt.co/es/cheap-houses/turnkey-in-portugal) [Nuevas este mes 6](https://realhunt.co/es/cheap-houses/new-this-month-in-portugal) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-portugal)
+Por característica [Casas de piedra 4](https://realhunt.co/es/cheap-houses/stone-houses-in-portugal) [Para entrar a vivir 5](https://realhunt.co/es/cheap-houses/turnkey-in-portugal) [Nuevas este mes 6](https://realhunt.co/es/cheap-houses/new-this-month-in-portugal) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-portugal) [Más de 80 m² 3](https://realhunt.co/es/cheap-houses/over-80-sqm-in-portugal)
+
+Países vecinos [España 137](https://realhunt.co/es/homes/spain)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de green-acres.pt (4), imovirtual.com (3). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Portugal](https://realhunt.co/es/alerts?country=Portugal) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Portugal#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Portugal](https://realhunt.co/es/alerts?country=Portugal) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Portugal#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Portugal](https://realhunt.co/es/sitemap/portugal)
 
 ---
 Fuente: https://realhunt.co/es/homes/portugal (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

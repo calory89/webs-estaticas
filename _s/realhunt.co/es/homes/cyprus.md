@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 93
 
+Gastos de compra
+2,5–3,5%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 5 viviendas, de mejor a peor nota
 
 - [Nota 93341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 39 días en RealHuntApartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos.](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
@@ -53,6 +62,13 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 2 con jardín, 4 con terraza, 5 con garaje, 4 con piscina.
 - Notas: de 78 a 93 sobre 98. La de mejor nota: [Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar](https://realhunt.co/es/deal/cy-coral-bay-341k-080655).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, Famagusta](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k). 3 de estas viviendas se añadieron en los últimos 30 días.
+
+### Precio mediano por región en Chipre
+
+Región | Viviendas | Precio mediano
+Larnaca | 1 | 130.000 €
+Paphos | 2 | 341.000 €
+Famagusta | 2 | 470.000 €
 
 ### Gastos de compra y normas para extranjeros en Chipre
 
@@ -105,11 +121,13 @@ Por entorno [Junto al mar 4](https://realhunt.co/es/homes/cyprus/by-the-sea)
 
 Por característica [Vistas al mar 3](https://realhunt.co/es/cheap-houses/with-sea-view-in-cyprus) [Cerca de un aeropuerto 3](https://realhunt.co/es/cheap-houses/near-an-airport-in-cyprus) [Zona tranquila 4](https://realhunt.co/es/cheap-houses/quiet-location-in-cyprus)
 
+Países vecinos [Grecia 24](https://realhunt.co/es/homes/greece)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de rightmove.co.uk (4), cy.green-acres.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Chipre](https://realhunt.co/es/alerts?country=Cyprus) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Cyprus#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Chipre](https://realhunt.co/es/alerts?country=Cyprus) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Cyprus#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Chipre](https://realhunt.co/es/sitemap/cyprus)
 
 ---
 Fuente: https://realhunt.co/es/homes/cyprus (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

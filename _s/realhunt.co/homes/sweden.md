@@ -22,6 +22,15 @@ Median size
 Top score
 93
 
+Buying costs
+1.5–3.5%
+
+Foreign buyers
+Can buy freely
+
+Data of
+20 Nov 2026
+
 ### The 30 best of 38, by score
 
 - [Score 93€78,000Extensively renovated 1945 house on 2,800 m² of garden and woodlandMarkaryd, Småland800 m² · 2 bed · €98/m² · 58 days on RealHuntSet along a small country road outside Markaryd, this 1945 house has been extensively updated in a clean, modern style while still offering 2,800…](https://realhunt.co/deal/Dce2FjbIxt8)
@@ -111,6 +120,29 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 76 to 93 out of 98. The best rated: [Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8).
 - Newest, added 20 November 2026: [Renovated red wooden villa with wide valley views near Fränsta, Västernorrland](https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek). 4 of these homes were added in the last 30 days.
 
+### Median price by region in Sweden
+
+Region | Homes | Median price
+Central Sweden | 1 | €22,000
+Northern Sweden | 2 | €54,000
+Blekinge | 1 | €54,000
+Ljusnarsberg | 1 | €56,120
+Medelpad | 1 | €64,000
+Malmö | 1 | €67,200
+Västernorrland | 2 | €68,000
+Jämtland | 1 | €68,000
+Kronoberg | 1 | €71,000
+[Gävleborg](https://realhunt.co/homes/sweden/gavleborg) | 3 | €73,000
+Jönköping | 1 | €73,000
+[Småland](https://realhunt.co/homes/sweden/smaland) | 4 | €75,440
+Dalarna | 1 | €77,000
+Norrbotten | 1 | €81,000
+[Värmland](https://realhunt.co/homes/sweden/varmland) | 6 | €83,000
+Dalsland | 2 | €85,000
+Västra Götaland | 1 | €87,400
+[Skåne](https://realhunt.co/homes/sweden/skane) | 6 | €94,100
+Västerbotten | 2 | €99,000
+
 ### Buying costs and rules for foreigners in Sweden
 
 Can foreigners buy? Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership.
@@ -177,7 +209,7 @@ By region [Skåne 6](https://realhunt.co/homes/sweden/skane) [Värmland 6](https
 
 By area [Norrland 12](https://realhunt.co/homes/sweden/norrland)
 
-By feature [Near a lake 8](https://realhunt.co/cheap-houses/near-a-lake-in-sweden) [With a garden 20](https://realhunt.co/cheap-houses/with-garden-in-sweden) [With a sauna 4](https://realhunt.co/cheap-houses/with-sauna-in-sweden) [Cabins and cottages 10](https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden) [With a terrace 10](https://realhunt.co/cheap-houses/with-a-terrace-in-sweden) [With land 10](https://realhunt.co/cheap-houses/with-land-in-sweden) [With a fireplace 3](https://realhunt.co/cheap-houses/with-fireplace-in-sweden) [With a garage 6](https://realhunt.co/cheap-houses/with-garage-in-sweden) [Near an airport 6](https://realhunt.co/cheap-houses/near-an-airport-in-sweden) [Under €500/m² 5](https://realhunt.co/cheap-houses/under-500-per-sqm-in-sweden) [Score 90+ 9](https://realhunt.co/cheap-houses/score-90-plus-in-sweden) [New this month 4](https://realhunt.co/cheap-houses/new-this-month-in-sweden) [Quiet location 15](https://realhunt.co/cheap-houses/quiet-location-in-sweden)
+By feature [Near a lake 8](https://realhunt.co/cheap-houses/near-a-lake-in-sweden) [With a garden 20](https://realhunt.co/cheap-houses/with-garden-in-sweden) [With a sauna 4](https://realhunt.co/cheap-houses/with-sauna-in-sweden) [Cabins and cottages 10](https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden) [With a terrace 10](https://realhunt.co/cheap-houses/with-a-terrace-in-sweden) [With land 10](https://realhunt.co/cheap-houses/with-land-in-sweden) [With a fireplace 3](https://realhunt.co/cheap-houses/with-fireplace-in-sweden) [With a garage 6](https://realhunt.co/cheap-houses/with-garage-in-sweden) [Near an airport 6](https://realhunt.co/cheap-houses/near-an-airport-in-sweden) [Under €500/m² 5](https://realhunt.co/cheap-houses/under-500-per-sqm-in-sweden) [Score 90+ 9](https://realhunt.co/cheap-houses/score-90-plus-in-sweden) [New this month 4](https://realhunt.co/cheap-houses/new-this-month-in-sweden) [New this week 3](https://realhunt.co/cheap-houses/new-this-week-in-sweden) [Quiet location 15](https://realhunt.co/cheap-houses/quiet-location-in-sweden) [Over 80 m² 15](https://realhunt.co/cheap-houses/over-80-sqm-in-sweden) [Over 120 m² 6](https://realhunt.co/cheap-houses/over-120-sqm-in-sweden)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-sweden) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-sweden)
 
@@ -187,11 +219,13 @@ In pounds and dollars [Under £50,000 8](https://realhunt.co/cheap-houses/under-
 
 Near a city [Near Copenhagen 18](https://realhunt.co/cheap-houses/near-copenhagen)
 
+Neighbouring countries [Denmark 46](https://realhunt.co/homes/denmark)
+
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from hemnet.se (20), instagram.com (8), svenskfast.se (3), finn.no (2), alembi.se (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Sweden](https://realhunt.co/alerts?country=Sweden) · [Filter and sort these homes](https://realhunt.co/?country=Sweden#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Sweden](https://realhunt.co/alerts?country=Sweden) · [Filter and sort these homes](https://realhunt.co/?country=Sweden#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Sweden](https://realhunt.co/sitemap/sweden)
 
 ---
 Source: https://realhunt.co/homes/sweden (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

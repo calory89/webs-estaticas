@@ -26,6 +26,15 @@ Median size
 Top score
 93
 
+Buying costs
+5.5–7%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 24 homes, best score first
 
 - [Score 93€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 35 days on RealHuntA 116 m² two-storey house in Vasilitsi, at the southern tip of the Messinian peninsula, with views over the sea and the hills: three bedrooms, two…](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
@@ -92,6 +101,23 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 79 to 93 out of 98. The best rated: [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k).
 - Newest, added 20 November 2026: [Restored three-bed stone house with roof terrace in Kritsa village, Crete](https://realhunt.co/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k). 10 of these homes were added in the last 30 days.
 
+### Median price by region in Greece
+
+Region | Homes | Median price
+Lesbos | 1 | €70,000
+Samos | 2 | €80,000
+North Evia | 1 | €80,000
+Pelion | 2 | €120,000
+Skopelos (Sporades) | 1 | €150,000
+Rhodes | 1 | €155,000
+[Crete](https://realhunt.co/homes/greece/crete) | 7 | €158,000
+Messinia | 2 | €158,000
+Magnesia | 1 | €167,000
+Halkidiki | 2 | €170,000
+Karpathos | 1 | €170,000
+Chios | 1 | €175,000
+Laconia | 2 | €195,000
+
 ### Buying costs and rules for foreigners in Greece
 
 Taxes and fees add about 5.5 to 7% to the price: Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top. On the median home on this page (€155,000) that is €8,525 to €10,850, so €163,525 to €165,850 in all.
@@ -150,19 +176,21 @@ By region [Crete 7](https://realhunt.co/homes/greece/crete)
 
 By area [Peloponnese 4](https://realhunt.co/homes/greece/peloponnese)
 
-By feature [With a garden 10](https://realhunt.co/cheap-houses/with-garden-in-greece) [Stone houses 13](https://realhunt.co/cheap-houses/stone-houses-in-greece) [With a terrace 19](https://realhunt.co/cheap-houses/with-a-terrace-in-greece) [Move-in ready 8](https://realhunt.co/cheap-houses/turnkey-in-greece) [Sea view 11](https://realhunt.co/cheap-houses/with-sea-view-in-greece) [With a fireplace 11](https://realhunt.co/cheap-houses/with-fireplace-in-greece) [With a garage 6](https://realhunt.co/cheap-houses/with-garage-in-greece) [On an island 14](https://realhunt.co/cheap-houses/on-an-island-in-greece) [In the mountains 3](https://realhunt.co/cheap-houses/in-the-mountains-in-greece) [Olive trees or vines 3](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-greece) [Near an airport 12](https://realhunt.co/cheap-houses/near-an-airport-in-greece) [Score 90+ 3](https://realhunt.co/cheap-houses/score-90-plus-in-greece) [New this month 10](https://realhunt.co/cheap-houses/new-this-month-in-greece) [Period features 3](https://realhunt.co/cheap-houses/with-period-features-in-greece) [Quiet location 15](https://realhunt.co/cheap-houses/quiet-location-in-greece)
+By feature [With a garden 10](https://realhunt.co/cheap-houses/with-garden-in-greece) [Stone houses 13](https://realhunt.co/cheap-houses/stone-houses-in-greece) [With a terrace 19](https://realhunt.co/cheap-houses/with-a-terrace-in-greece) [Move-in ready 8](https://realhunt.co/cheap-houses/turnkey-in-greece) [Sea view 11](https://realhunt.co/cheap-houses/with-sea-view-in-greece) [With a fireplace 11](https://realhunt.co/cheap-houses/with-fireplace-in-greece) [With a garage 6](https://realhunt.co/cheap-houses/with-garage-in-greece) [On an island 14](https://realhunt.co/cheap-houses/on-an-island-in-greece) [In the mountains 3](https://realhunt.co/cheap-houses/in-the-mountains-in-greece) [Olive trees or vines 3](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-greece) [Near an airport 12](https://realhunt.co/cheap-houses/near-an-airport-in-greece) [Score 90+ 3](https://realhunt.co/cheap-houses/score-90-plus-in-greece) [New this month 10](https://realhunt.co/cheap-houses/new-this-month-in-greece) [Period features 3](https://realhunt.co/cheap-houses/with-period-features-in-greece) [Quiet location 15](https://realhunt.co/cheap-houses/quiet-location-in-greece) [Over 80 m² 12](https://realhunt.co/cheap-houses/over-80-sqm-in-greece) [Over 120 m² 3](https://realhunt.co/cheap-houses/over-120-sqm-in-greece)
 
-Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-greece) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-greece)
+Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-greece) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-greece) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-greece)
 
-By feature and budget [Houses under €100,000 6](https://realhunt.co/cheap-houses/houses-under-100000-in-greece) [Stone houses under €100,000 5](https://realhunt.co/cheap-houses/stone-houses-under-100000-in-greece) [Move-in ready under €100,000 5](https://realhunt.co/cheap-houses/turnkey-under-100000-in-greece) [Sea view under €100,000 4](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-greece) [With a garden under €100,000 3](https://realhunt.co/cheap-houses/with-garden-under-100000-in-greece)
+By feature and budget [Sea view under €150,000 7](https://realhunt.co/cheap-houses/with-sea-view-under-150000-in-greece) [Houses under €100,000 6](https://realhunt.co/cheap-houses/houses-under-100000-in-greece) [Stone houses under €100,000 5](https://realhunt.co/cheap-houses/stone-houses-under-100000-in-greece) [Move-in ready under €100,000 5](https://realhunt.co/cheap-houses/turnkey-under-100000-in-greece) [Sea view under €100,000 4](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-greece) [With a garden under €100,000 3](https://realhunt.co/cheap-houses/with-garden-under-100000-in-greece)
 
 In pounds and dollars [Under £100,000 9](https://realhunt.co/cheap-houses/under-100000-pounds-in-greece) [Under $100,000 6](https://realhunt.co/cheap-houses/under-100000-dollars-in-greece)
+
+Neighbouring countries [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from green-acres.gr (20), spitogatos.gr (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Greece](https://realhunt.co/alerts?country=Greece) · [Filter and sort these homes](https://realhunt.co/?country=Greece#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Greece](https://realhunt.co/alerts?country=Greece) · [Filter and sort these homes](https://realhunt.co/?country=Greece#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Greece](https://realhunt.co/sitemap/greece)
 
 ---
 Source: https://realhunt.co/homes/greece (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

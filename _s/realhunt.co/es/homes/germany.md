@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 87
 
+Gastos de compra
+5–8,5%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 21 viviendas, de mejor a peor nota
 
 - [Nota 8740.000 €Ático soleado con balcón por 40.000 € en ChemnitzEbersdorf, Chemnitz54 m² · 1 dorm. · 741 €/m² · 38 días en RealHunt54 m² bajo cubierta en un edificio de los años 30 bien cuidado, a 4,4 km del centro: recibidor, salón, dormitorio, baño con luz natural y bañera…](https://realhunt.co/es/deal/de-chemnitz-40k-931045)
@@ -82,6 +91,18 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 71 a 87 sobre 98. La de mejor nota: [Ático soleado con balcón por 40.000 € en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-40k-931045).
 - La más reciente, añadida el 20 de noviembre de 2026: [Apartamento a nivel del jardín con terraza sur a pasos de la playa en el fiordo de Flensburg](https://realhunt.co/es/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k). 1 de estas viviendas se añadió en los últimos 30 días.
 
+### Precio mediano por región en Alemania
+
+Región | Viviendas | Precio mediano
+[Chemnitz](https://realhunt.co/es/homes/germany/chemnitz) | 14 | 50.000 €
+Krefeld | 1 | 50.000 €
+Wuppertal | 1 | 50.000 €
+Quierschied | 1 | 55.000 €
+Bremen | 1 | 60.000 €
+Gelsenkirchen | 1 | 60.000 €
+Magdeburg | 1 | 60.000 €
+Schleswig-Holstein | 1 | 199.000 €
+
 ### Gastos de compra y normas para extranjeros en Alemania
 
 ¿Pueden comprar los extranjeros? Sí. No hay restricciones para que los extranjeros compren propiedades en Alemania, aunque los compradores no comunitarios normalmente necesitan un depósito mayor para obtener un préstamo.
@@ -130,15 +151,19 @@ Por región [Chemnitz 14](https://realhunt.co/es/homes/germany/chemnitz)
 
 Por característica [Con jardín 6](https://realhunt.co/es/cheap-houses/with-garden-in-germany) [Con terraza 9](https://realhunt.co/es/cheap-houses/with-a-terrace-in-germany) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-germany) [Con garaje 3](https://realhunt.co/es/cheap-houses/with-garage-in-germany) [Cerca de un aeropuerto 4](https://realhunt.co/es/cheap-houses/near-an-airport-in-germany) [Elementos de época 6](https://realhunt.co/es/cheap-houses/with-period-features-in-germany)
 
+Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-germany)
+
 Por característica y presupuesto [Con jardín, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-germany) [Con jardín, menos de 50.000 € 3](https://realhunt.co/es/cheap-houses/with-garden-under-50000-in-germany) [Para entrar a vivir, menos de 50.000 € 3](https://realhunt.co/es/cheap-houses/turnkey-under-50000-in-germany)
 
 En libras y en dólares [Menos de 50.000 libras 16](https://realhunt.co/es/cheap-houses/under-50000-pounds-in-germany)
+
+Países vecinos [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Francia 45](https://realhunt.co/es/homes/france) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Polonia 31](https://realhunt.co/es/homes/poland) [Dinamarca 46](https://realhunt.co/es/homes/denmark)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de kleinanzeigen.de (20), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Alemania](https://realhunt.co/es/alerts?country=Germany) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Germany#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Alemania](https://realhunt.co/es/alerts?country=Germany) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Germany#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Alemania](https://realhunt.co/es/sitemap/germany)
 
 ---
 Fuente: https://realhunt.co/es/homes/germany (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

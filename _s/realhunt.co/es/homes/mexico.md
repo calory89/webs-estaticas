@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 86
 
+Gastos de compra
+3,5–8%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 4 viviendas, de mejor a peor nota
 
 - [Nota 86Nueva216.600 €Casa colonial con piscina y jardín en Barrio de Santiago, centro de MéridaMérida, Yucatán160 m² · 2 dorm. · 1.354 €/m² · Añadida hoySe pide MX$4.450.000 (aproximadamente 216.600 €) por Casa Ya'axche', una casa colonial de una planta de 160 m² en un solar de 279 m² en Barrio de…](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m)
@@ -51,6 +60,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 2 con jardín, 4 con terraza, 3 con garaje, 4 con piscina.
 - Notas: de 81 a 86 sobre 98. La de mejor nota: [Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m). 4 de estas viviendas se añadieron en los últimos 30 días.
+
+### Precio mediano por región en México
+
+Región | Viviendas | Precio mediano
+Sinaloa | 1 | 143.000 €
+Querétaro | 1 | 152.100 €
+Jalisco | 1 | 160.200 €
+Yucatán | 1 | 216.600 €
 
 ### Gastos de compra y normas para extranjeros en México
 
@@ -92,13 +109,15 @@ Alrededor de un 3,5 a 8 % además del precio: Impuesto sobre adquisición de inm
 
 Por presupuesto [Menos de 200.000 € 3](https://realhunt.co/es/homes/mexico/under-200000)
 
-Por característica [Con garaje 3](https://realhunt.co/es/cheap-houses/with-garage-in-mexico)
+Por característica [Con garaje 3](https://realhunt.co/es/cheap-houses/with-garage-in-mexico) [Más de 80 m² 3](https://realhunt.co/es/cheap-houses/over-80-sqm-in-mexico)
+
+Países vecinos [Estados Unidos 59](https://realhunt.co/es/homes/united-states)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom)
 
 Estos anuncios proceden de casasyterrenos.com (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en México](https://realhunt.co/es/alerts?country=Mexico) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Mexico#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en México](https://realhunt.co/es/alerts?country=Mexico) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Mexico#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en México](https://realhunt.co/es/sitemap/mexico)
 
 ---
 Fuente: https://realhunt.co/es/homes/mexico (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

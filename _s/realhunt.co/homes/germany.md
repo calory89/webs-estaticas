@@ -22,6 +22,15 @@ Median size
 Top score
 87
 
+Buying costs
+5–8.5%
+
+Foreign buyers
+Can buy freely
+
+Data of
+20 Nov 2026
+
 ### The 21 homes, best score first
 
 - [Score 87€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 38 days on RealHunt54 m² under the roof of a well-kept 1930s building, 4.4 km from the centre: a hallway, a living room, a bedroom, a daylight bathroom with a bath…](https://realhunt.co/deal/de-chemnitz-40k-931045)
@@ -82,6 +91,18 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 71 to 87 out of 98. The best rated: [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045).
 - Newest, added 20 November 2026: [Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k). 1 of these homes was added in the last 30 days.
 
+### Median price by region in Germany
+
+Region | Homes | Median price
+[Chemnitz](https://realhunt.co/homes/germany/chemnitz) | 14 | €50,000
+Krefeld | 1 | €50,000
+Wuppertal | 1 | €50,000
+Quierschied | 1 | €55,000
+Bremen | 1 | €60,000
+Gelsenkirchen | 1 | €60,000
+Magdeburg | 1 | €60,000
+Schleswig-Holstein | 1 | €199,000
+
 ### Buying costs and rules for foreigners in Germany
 
 Can foreigners buy? Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan.
@@ -130,15 +151,19 @@ By region [Chemnitz 14](https://realhunt.co/homes/germany/chemnitz)
 
 By feature [With a garden 6](https://realhunt.co/cheap-houses/with-garden-in-germany) [With a terrace 9](https://realhunt.co/cheap-houses/with-a-terrace-in-germany) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-germany) [With a garage 3](https://realhunt.co/cheap-houses/with-garage-in-germany) [Near an airport 4](https://realhunt.co/cheap-houses/near-an-airport-in-germany) [Period features 6](https://realhunt.co/cheap-houses/with-period-features-in-germany)
 
+Rankings [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-germany)
+
 By feature and budget [With a garden under €100,000 5](https://realhunt.co/cheap-houses/with-garden-under-100000-in-germany) [With a garden under €50,000 3](https://realhunt.co/cheap-houses/with-garden-under-50000-in-germany) [Move-in ready under €50,000 3](https://realhunt.co/cheap-houses/turnkey-under-50000-in-germany)
 
 In pounds and dollars [Under £50,000 16](https://realhunt.co/cheap-houses/under-50000-pounds-in-germany)
+
+Neighbouring countries [Netherlands 18](https://realhunt.co/homes/netherlands) [France 45](https://realhunt.co/homes/france) [Switzerland 10](https://realhunt.co/homes/switzerland) [Poland 31](https://realhunt.co/homes/poland) [Denmark 46](https://realhunt.co/homes/denmark)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from kleinanzeigen.de (20), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Germany](https://realhunt.co/alerts?country=Germany) · [Filter and sort these homes](https://realhunt.co/?country=Germany#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Germany](https://realhunt.co/alerts?country=Germany) · [Filter and sort these homes](https://realhunt.co/?country=Germany#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Germany](https://realhunt.co/sitemap/germany)
 
 ---
 Source: https://realhunt.co/homes/germany (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

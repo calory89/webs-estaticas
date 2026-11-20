@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 89
 
+Gastos de compra
+3–9%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 5 viviendas, de mejor a peor nota
 
 - [Nota 8982.600 €Casa de dos dormitorios con mucho estilo y chimenea abiertaShildon, County Durham72 m² · 2 dorm. · 1.147 €/m² · 45 días en RealHuntUnos 72 m² de estancias muy bien presentadas en Shildon (condado de Durham): chimenea abierta, un baño completo con mucho estilo y dos dormitorios…](https://realhunt.co/es/deal/uk-shildon-82k-780165)
@@ -49,6 +58,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 2 con jardín, 3 con terraza, 2 con garaje, 1 con chimenea.
 - Notas: de 81 a 89 sobre 98. La de mejor nota: [Casa de dos dormitorios con mucho estilo y chimenea abierta](https://realhunt.co/es/deal/uk-shildon-82k-780165).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k). 4 de estas viviendas se añadieron en los últimos 30 días.
+
+### Precio mediano por región en el Reino Unido
+
+Región | Viviendas | Precio mediano
+County Durham | 1 | 82.600 €
+Dumfries and Galloway | 1 | 121.000 €
+Aberdeenshire | 1 | 126.500 €
+Irlanda del Norte | 2 | 198.400 €
 
 ### Gastos de compra y normas para extranjeros en el Reino Unido
 
@@ -100,11 +117,13 @@ Por entorno [Casas de pueblo 4](https://realhunt.co/es/homes/united-kingdom/vill
 
 Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-kingdom) [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-united-kingdom) [Nuevas este mes 4](https://realhunt.co/es/cheap-houses/new-this-month-in-united-kingdom)
 
+Países vecinos [Francia 45](https://realhunt.co/es/homes/france)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de onthemarket.com (2), propertypal.com (2), rightmove.co.uk (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en el Reino Unido](https://realhunt.co/es/alerts?country=United%20Kingdom) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+Kingdom#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en el Reino Unido](https://realhunt.co/es/alerts?country=United%20Kingdom) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+Kingdom#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en el Reino Unido](https://realhunt.co/es/sitemap/united-kingdom)
 
 ---
 Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

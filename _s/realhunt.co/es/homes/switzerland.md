@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 92
 
+Gastos de compra
+1–5%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 10 viviendas, de mejor a peor nota
 
 - [Nota 8270.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 47 días en RealHuntUn chalet reformado de 1,5 habitaciones y unos 30 m² en una parcela de unos 150 m², con grandes ventanales correderos, cocina nueva y baño con ducha.](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
@@ -63,6 +72,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 5 con jardín, 2 con terraza, 4 con garaje, 4 con piscina, 3 con chimenea.
 - Notas: de 70 a 92 sobre 98. La de mejor nota: [Chalet reformado con jardín en un camping verde de las colinas de Neuchâtel](https://realhunt.co/es/deal/ch-lignieres-65k-24005).
 - La más reciente, añadida el 4 de octubre de 2026: [Chalet reformado con jardín en un camping verde de las colinas de Neuchâtel](https://realhunt.co/es/deal/ch-lignieres-65k-24005).
+
+### Precio mediano por región en Suiza
+
+Región | Viviendas | Precio mediano
+Berna | 1 | 32.300 €
+[Valais](https://realhunt.co/es/homes/switzerland/valais) | 7 | 59.300 €
+Neuchâtel | 1 | 70.100 €
+San Galo | 1 | 80.700 €
 
 ### Gastos de compra y normas para extranjeros en Suiza
 
@@ -111,11 +128,13 @@ Por característica [Con jardín 5](https://realhunt.co/es/cheap-houses/with-gar
 
 Por característica y presupuesto [Con piscina, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-pool-under-100000-in-switzerland)
 
+Países vecinos [Francia 45](https://realhunt.co/es/homes/france) [Italia 73](https://realhunt.co/es/homes/italy) [Alemania 21](https://realhunt.co/es/homes/germany)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de immoscout24.ch (10). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Suiza](https://realhunt.co/es/alerts?country=Switzerland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Switzerland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Suiza](https://realhunt.co/es/alerts?country=Switzerland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Switzerland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Suiza](https://realhunt.co/es/sitemap/switzerland)
 
 ---
 Fuente: https://realhunt.co/es/homes/switzerland (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

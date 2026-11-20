@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 98
 
+Gastos de compra
+1,5–3%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 46, por nota
 
 - [Nota 9879.800 €Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €Ranum, Jutlandia Septentrional198 m² · 5 dorm. · 403 €/m² · 46 días en RealHuntVilla de 1973 bien cuidada, con 198 m² y cinco dormitorios, en una calle tranquila de Ranum, cerca del Limfjord y el lago Vilsted.](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd)
@@ -123,6 +132,31 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 82 a 98 sobre 98. La de mejor nota: [Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd).
 - La más reciente, añadida el 18 de noviembre de 2026: [Villa lista para entrar a vivir con cocina moderna, terraza grande y vistas al campo abierto cerca de Høng](https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk). 1 de estas viviendas se añadió en los últimos 30 días.
 
+### Precio mediano por región en Dinamarca
+
+Región | Viviendas | Precio mediano
+Sønderjylland | 1 | 35.400 €
+[Fionia](https://realhunt.co/es/homes/denmark/funen) | 5 | 79.800 €
+Vejen | 1 | 82.800 €
+[Falster](https://realhunt.co/es/homes/denmark/falster) | 3 | 83.800 €
+Lolland | 1 | 83.800 €
+la zona de Ringsted | 1 | 86.300 €
+Selandia Occidental | 1 | 87.000 €
+Sjællands Odde | 1 | 87.100 €
+[Jutlandia Occidental](https://realhunt.co/es/homes/denmark/west-jutland) | 5 | 89.100 €
+Munke Bjergby | 1 | 93.000 €
+[Jutlandia Septentrional](https://realhunt.co/es/homes/denmark/north-jutland) | 11 | 93.200 €
+[Mors](https://realhunt.co/es/homes/denmark/mors) | 3 | 93.200 €
+Jutlandia Central | 1 | 93.200 €
+Grindsted | 1 | 93.200 €
+la zona de Vordingborg | 1 | 93.200 €
+Stevns | 1 | 93.200 €
+Jutlandia Oriental | 2 | 93.600 €
+Thy | 2 | 93.600 €
+la zona de Skælskør | 2 | 99.900 €
+la zona de Slagelse | 1 | 99.900 €
+la zona de Høng | 1 | 160.000 €
+
 ### Gastos de compra y normas para extranjeros en Dinamarca
 
 Los impuestos y gastos añaden alrededor de un 1,5 a 3 % al precio: Tasa de inscripción de la escritura (tinglysningsafgift) de 1.850 DKK más el 0,6% del precio, alrededor del 1% para el abogado del comprador y, si pides un préstamo, una tasa de inscripción de la hipoteca de 1.825 DKK más el 1,25% del préstamo; la comisión del agente suele pagarla el vendedor. En la vivienda mediana de esta página (93.200 €) son de 1.398 € a 2.796 €, es decir, de 94.598 € a 95.996 € en total.
@@ -177,17 +211,19 @@ Por región [Jutlandia Septentrional 11](https://realhunt.co/es/homes/denmark/no
 
 Por zona [Jutlandia 27](https://realhunt.co/es/homes/denmark/jutland) [Lolland y Falster 4](https://realhunt.co/es/homes/denmark/lolland-falster)
 
-Por característica [Con jardín 20](https://realhunt.co/es/cheap-houses/with-garden-in-denmark) [Cabañas y casas de campo 3](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-denmark) [Con terraza 14](https://realhunt.co/es/cheap-houses/with-a-terrace-in-denmark) [Para entrar a vivir 15](https://realhunt.co/es/cheap-houses/turnkey-in-denmark) [Con terreno 7](https://realhunt.co/es/cheap-houses/with-land-in-denmark) [Con garaje 8](https://realhunt.co/es/cheap-houses/with-garage-in-denmark) [En una isla 12](https://realhunt.co/es/cheap-houses/on-an-island-in-denmark) [Cerca de un aeropuerto 15](https://realhunt.co/es/cheap-houses/near-an-airport-in-denmark) [Menos de 500 €/m² 3](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-denmark) [Nota 90 o más 20](https://realhunt.co/es/cheap-houses/score-90-plus-in-denmark) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-denmark) [Elementos de época 10](https://realhunt.co/es/cheap-houses/with-period-features-in-denmark) [Zona tranquila 31](https://realhunt.co/es/cheap-houses/quiet-location-in-denmark)
+Por característica [Con jardín 20](https://realhunt.co/es/cheap-houses/with-garden-in-denmark) [Cabañas y casas de campo 3](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-denmark) [Con terraza 14](https://realhunt.co/es/cheap-houses/with-a-terrace-in-denmark) [Para entrar a vivir 15](https://realhunt.co/es/cheap-houses/turnkey-in-denmark) [Con terreno 7](https://realhunt.co/es/cheap-houses/with-land-in-denmark) [Con garaje 8](https://realhunt.co/es/cheap-houses/with-garage-in-denmark) [En una isla 12](https://realhunt.co/es/cheap-houses/on-an-island-in-denmark) [Cerca de un aeropuerto 15](https://realhunt.co/es/cheap-houses/near-an-airport-in-denmark) [Menos de 500 €/m² 3](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-denmark) [Nota 90 o más 20](https://realhunt.co/es/cheap-houses/score-90-plus-in-denmark) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-denmark) [Elementos de época 10](https://realhunt.co/es/cheap-houses/with-period-features-in-denmark) [Zona tranquila 31](https://realhunt.co/es/cheap-houses/quiet-location-in-denmark) [Más de 80 m² 40](https://realhunt.co/es/cheap-houses/over-80-sqm-in-denmark) [Más de 120 m² 18](https://realhunt.co/es/cheap-houses/over-120-sqm-in-denmark)
 
-Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-denmark) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-denmark)
+Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-denmark) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-denmark) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-denmark)
 
 Cerca de una ciudad [Cerca de Copenhague 18](https://realhunt.co/es/cheap-houses/near-copenhagen) [Cerca de Aarhus 14](https://realhunt.co/es/cheap-houses/near-aarhus)
+
+Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany) [Suecia 38](https://realhunt.co/es/homes/sweden)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de boligsiden.dk (43), boliga.dk (2), estate.dk (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Dinamarca](https://realhunt.co/es/alerts?country=Denmark) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Denmark#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Dinamarca](https://realhunt.co/es/alerts?country=Denmark) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Denmark#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Dinamarca](https://realhunt.co/es/sitemap/denmark)
 
 ---
 Fuente: https://realhunt.co/es/homes/denmark (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

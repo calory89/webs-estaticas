@@ -22,6 +22,15 @@ Median size
 Top score
 89
 
+Buying costs
+3–9%
+
+Foreign buyers
+Can buy freely
+
+Data of
+20 Nov 2026
+
 ### The 5 homes, best score first
 
 - [Score 89€82,600Beautifully styled two-bed home with an open fireplaceShildon, County Durham72 m² · 2 bed · €1,147/m² · 45 days on RealHuntAbout 72 m² of beautifully presented rooms in Shildon, County Durham: a feature open fireplace, a stylish four-piece bathroom and two double…](https://realhunt.co/deal/uk-shildon-82k-780165)
@@ -49,6 +58,14 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 2 with a garden, 3 with a terrace, 2 with a garage, 1 with a fireplace.
 - Scores: 81 to 89 out of 98. The best rated: [Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165).
 - Newest, added 20 November 2026: [Refurbished period townhouse with a double garage in Lack village, County Fermanagh](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k). 4 of these homes were added in the last 30 days.
+
+### Median price by region in the United Kingdom
+
+Region | Homes | Median price
+County Durham | 1 | €82,600
+Dumfries and Galloway | 1 | €121,000
+Aberdeenshire | 1 | €126,500
+Northern Ireland | 2 | €198,400
 
 ### Buying costs and rules for foreigners in the United Kingdom
 
@@ -100,11 +117,13 @@ By setting [Village houses 4](https://realhunt.co/homes/united-kingdom/village-h
 
 By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-united-kingdom) [Move-in ready 3](https://realhunt.co/cheap-houses/turnkey-in-united-kingdom) [New this month 4](https://realhunt.co/cheap-houses/new-this-month-in-united-kingdom)
 
+Neighbouring countries [France 45](https://realhunt.co/homes/france)
+
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from onthemarket.com (2), propertypal.com (2), rightmove.co.uk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in the United Kingdom](https://realhunt.co/alerts?country=United%20Kingdom) · [Filter and sort these homes](https://realhunt.co/?country=United+Kingdom#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in the United Kingdom](https://realhunt.co/alerts?country=United%20Kingdom) · [Filter and sort these homes](https://realhunt.co/?country=United+Kingdom#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United Kingdom](https://realhunt.co/sitemap/united-kingdom)
 
 ---
 Source: https://realhunt.co/homes/united-kingdom (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

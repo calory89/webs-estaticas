@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 93
 
+Gastos de compra
+1,5–3,5%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 38, por nota
 
 - [Nota 9378.000 €Casa de 1945 muy reformada en 2.800 m² de jardín y bosqueMarkaryd, Småland800 m² · 2 dorm. · 98 €/m² · 58 días en RealHuntJunto a una pequeña carretera comarcal a las afueras de Markaryd, esta casa de 1945 se ha actualizado a fondo con un estilo limpio y moderno, y…](https://realhunt.co/es/deal/Dce2FjbIxt8)
@@ -111,6 +120,29 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 76 a 93 sobre 98. La de mejor nota: [Casa de 1945 muy reformada en 2.800 m² de jardín y bosque](https://realhunt.co/es/deal/Dce2FjbIxt8).
 - La más reciente, añadida el 20 de noviembre de 2026: [Villa de madera roja renovada con amplias vistas del valle cerca de Fränsta, Västernorrland](https://realhunt.co/es/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek). 4 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Suecia
+
+Región | Viviendas | Precio mediano
+Centro de Suecia | 1 | 22.000 €
+Norte de Suecia | 2 | 54.000 €
+Blekinge | 1 | 54.000 €
+Ljusnarsberg | 1 | 56.120 €
+Medelpad | 1 | 64.000 €
+Malmö | 1 | 67.200 €
+Västernorrland | 2 | 68.000 €
+Jämtland | 1 | 68.000 €
+Kronoberg | 1 | 71.000 €
+[Gävleborg](https://realhunt.co/es/homes/sweden/gavleborg) | 3 | 73.000 €
+Jönköping | 1 | 73.000 €
+[Småland](https://realhunt.co/es/homes/sweden/smaland) | 4 | 75.440 €
+Dalarna | 1 | 77.000 €
+Norrbotten | 1 | 81.000 €
+[Värmland](https://realhunt.co/es/homes/sweden/varmland) | 6 | 83.000 €
+Dalsland | 2 | 85.000 €
+Västra Götaland | 1 | 87.400 €
+[Escania](https://realhunt.co/es/homes/sweden/skane) | 6 | 94.100 €
+Västerbotten | 2 | 99.000 €
+
 ### Gastos de compra y normas para extranjeros en Suecia
 
 ¿Pueden comprar los extranjeros? Sí. No hay normas de ciudadanía o residencia para comprar una vivienda en Suecia, pero necesitas un número de identidad personal sueco o número de coordinación (samordningsnummer) para registrar la propiedad.
@@ -177,7 +209,7 @@ Por región [Escania 6](https://realhunt.co/es/homes/sweden/skane) [Värmland 6]
 
 Por zona [Norrland 12](https://realhunt.co/es/homes/sweden/norrland)
 
-Por característica [Cerca de un lago 8](https://realhunt.co/es/cheap-houses/near-a-lake-in-sweden) [Con jardín 20](https://realhunt.co/es/cheap-houses/with-garden-in-sweden) [Con sauna 4](https://realhunt.co/es/cheap-houses/with-sauna-in-sweden) [Cabañas y casas de campo 10](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-sweden) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-sweden) [Con terreno 10](https://realhunt.co/es/cheap-houses/with-land-in-sweden) [Con chimenea 3](https://realhunt.co/es/cheap-houses/with-fireplace-in-sweden) [Con garaje 6](https://realhunt.co/es/cheap-houses/with-garage-in-sweden) [Cerca de un aeropuerto 6](https://realhunt.co/es/cheap-houses/near-an-airport-in-sweden) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-sweden) [Nota 90 o más 9](https://realhunt.co/es/cheap-houses/score-90-plus-in-sweden) [Nuevas este mes 4](https://realhunt.co/es/cheap-houses/new-this-month-in-sweden) [Zona tranquila 15](https://realhunt.co/es/cheap-houses/quiet-location-in-sweden)
+Por característica [Cerca de un lago 8](https://realhunt.co/es/cheap-houses/near-a-lake-in-sweden) [Con jardín 20](https://realhunt.co/es/cheap-houses/with-garden-in-sweden) [Con sauna 4](https://realhunt.co/es/cheap-houses/with-sauna-in-sweden) [Cabañas y casas de campo 10](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-sweden) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-sweden) [Con terreno 10](https://realhunt.co/es/cheap-houses/with-land-in-sweden) [Con chimenea 3](https://realhunt.co/es/cheap-houses/with-fireplace-in-sweden) [Con garaje 6](https://realhunt.co/es/cheap-houses/with-garage-in-sweden) [Cerca de un aeropuerto 6](https://realhunt.co/es/cheap-houses/near-an-airport-in-sweden) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-sweden) [Nota 90 o más 9](https://realhunt.co/es/cheap-houses/score-90-plus-in-sweden) [Nuevas este mes 4](https://realhunt.co/es/cheap-houses/new-this-month-in-sweden) [Nuevas esta semana 3](https://realhunt.co/es/cheap-houses/new-this-week-in-sweden) [Zona tranquila 15](https://realhunt.co/es/cheap-houses/quiet-location-in-sweden) [Más de 80 m² 15](https://realhunt.co/es/cheap-houses/over-80-sqm-in-sweden) [Más de 120 m² 6](https://realhunt.co/es/cheap-houses/over-120-sqm-in-sweden)
 
 Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-sweden) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-sweden)
 
@@ -187,11 +219,13 @@ En libras y en dólares [Menos de 50.000 libras 8](https://realhunt.co/es/cheap-
 
 Cerca de una ciudad [Cerca de Copenhague 18](https://realhunt.co/es/cheap-houses/near-copenhagen)
 
+Países vecinos [Dinamarca 46](https://realhunt.co/es/homes/denmark)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de hemnet.se (20), instagram.com (8), svenskfast.se (3), finn.no (2), alembi.se (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Suecia](https://realhunt.co/es/alerts?country=Sweden) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Sweden#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Suecia](https://realhunt.co/es/alerts?country=Sweden) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Sweden#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Suecia](https://realhunt.co/es/sitemap/sweden)
 
 ---
 Fuente: https://realhunt.co/es/homes/sweden (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

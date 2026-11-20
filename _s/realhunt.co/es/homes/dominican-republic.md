@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 90
 
+Gastos de compra
+4,25–7%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 5 viviendas, de mejor a peor nota
 
 - [Nota 90223.600 €Piso de 3 dormitorios frente al mar en Juan Dolio con vistas abiertas al CaribeJuan Dolio, San Pedro de Macorís98 m² · 3 dorm. · 2.282 €/m² · 39 días en RealHuntApartamento reformado frente al mar en Juan Dolio, en la costa caribeña al este de Santo Domingo, listo para entrar a vivir.](https://realhunt.co/es/deal/dr-juan-dolio-224k-441923)
@@ -49,6 +58,13 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 1 con jardín, 4 con terraza, 5 con garaje, 3 con piscina.
 - Notas: de 84 a 90 sobre 98. La de mejor nota: [Piso de 3 dormitorios frente al mar en Juan Dolio con vistas abiertas al Caribe](https://realhunt.co/es/deal/dr-juan-dolio-224k-441923).
 - La más reciente, añadida el 18 de noviembre de 2026: [Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto Plata](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k). 1 de estas viviendas se añadió en los últimos 30 días.
+
+### Precio mediano por región en República Dominicana
+
+Región | Viviendas | Precio mediano
+Puerto Plata | 1 | 150.000 €
+Samaná | 1 | 201.200 €
+[San Pedro de Macorís](https://realhunt.co/es/homes/dominican-republic/san-pedro-de-macoris) | 3 | 223.600 €
 
 ### Gastos de compra y normas para extranjeros en República Dominicana
 
@@ -102,7 +118,7 @@ Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://
 
 Estos anuncios proceden de supercasas.com (5). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en República Dominicana](https://realhunt.co/es/alerts?country=Dominican%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Dominican+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en República Dominicana](https://realhunt.co/es/alerts?country=Dominican%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Dominican+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en República Dominicana](https://realhunt.co/es/sitemap/dominican-republic)
 
 ---
 Fuente: https://realhunt.co/es/homes/dominican-republic (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

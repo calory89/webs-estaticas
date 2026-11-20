@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 96
 
+Gastos de compra
+2,5–4%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 31, por nota
 
 - [Nota 9657.120 €Piso de 127 m² con cuatro estancias, logia y despensa en BytomBytom, Silesia127 m² · 3 dorm. · 450 €/m² · 38 días en RealHuntUn piso enorme de 127 m² en la segunda planta de la calle Falista: gran salón comedor, tres dormitorios independientes, cocina equipada con salida…](https://realhunt.co/es/deal/pl-bytom-57k-186977)
@@ -108,6 +117,28 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 78 a 96 sobre 98. La de mejor nota: [Piso de 127 m² con cuatro estancias, logia y despensa en Bytom](https://realhunt.co/es/deal/pl-bytom-57k-186977).
 - La más reciente, añadida el 18 de noviembre de 2026: [Apartamento de planta baja con jardín, terraza y garaje en Szklarska Poręba, Karkonosze](https://realhunt.co/es/deal/pl-szklarska-poreba-garden-flat-91k-543867). 1 de estas viviendas se añadió en los últimos 30 días.
 
+### Precio mediano por región en Polonia
+
+Región | Viviendas | Precio mediano
+Silesia | 2 | 60.547 €
+Cuyavia y Pomerania | 1 | 67.402 €
+Bytom | 1 | 68.316 €
+Zabrze | 1 | 68.316 €
+[Podlaskie](https://realhunt.co/es/homes/poland/podlaskie) | 5 | 71.971 €
+Mazovia | 1 | 72.885 €
+Wałbrzych | 1 | 72.885 €
+Lubusz | 1 | 75.170 €
+Gniezno | 1 | 75.398 €
+[Łódź](https://realhunt.co/es/homes/poland/lodz) | 3 | 76.084 €
+Świętokrzyskie | 2 | 77.455 €
+Varmia y Masuria | 2 | 77.683 €
+[Baja Silesia](https://realhunt.co/es/homes/poland/lower-silesia) | 3 | 79.740 €
+Gran Polonia | 2 | 79.740 €
+Opole | 1 | 79.740 €
+Pomerania | 1 | 79.740 €
+Pomerania Occidental | 2 | 79.968 €
+Subcarpacia | 1 | 79.968 €
+
 ### Gastos de compra y normas para extranjeros en Polonia
 
 Los impuestos y gastos añaden alrededor de un 2,5 a 4 % al precio: Impuesto sobre actos de derecho civil (PCC) del 2% del valor, que paga el comprador en los 14 días siguientes a la escritura; honorarios del notario (taksa notarialna) con un máximo de 1.010 PLN más el 0,4% del valor que supere 60.000 PLN, más un 23% de IVA; tasa judicial de 200 PLN por inscribir la propiedad en el registro (más 100 PLN si se abre un registro nuevo); abogado opcional, alrededor del 1%; la comisión del agente (alrededor del 2-3%) depende del contrato. En la vivienda mediana de esta página (75.170 €) son de 1.879 € a 3.007 €, es decir, de 77.049 € a 78.177 € en total.
@@ -156,13 +187,15 @@ Por región [Podlaskie 5](https://realhunt.co/es/homes/poland/podlaskie) [Łód�
 
 Por característica [Con jardín 4](https://realhunt.co/es/cheap-houses/with-garden-in-poland) [Con terraza 11](https://realhunt.co/es/cheap-houses/with-a-terrace-in-poland) [Para entrar a vivir 13](https://realhunt.co/es/cheap-houses/turnkey-in-poland) [Cerca de un aeropuerto 6](https://realhunt.co/es/cheap-houses/near-an-airport-in-poland) [Nota 90 o más 7](https://realhunt.co/es/cheap-houses/score-90-plus-in-poland) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-poland)
 
-Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-poland) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-poland)
+Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-poland) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-poland) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-poland)
+
+Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de morizon.pl (31). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Polonia](https://realhunt.co/es/alerts?country=Poland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Poland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Polonia](https://realhunt.co/es/alerts?country=Poland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Poland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Polonia](https://realhunt.co/es/sitemap/poland)
 
 ---
 Fuente: https://realhunt.co/es/homes/poland (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

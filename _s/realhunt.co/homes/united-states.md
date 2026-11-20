@@ -22,6 +22,15 @@ Median size
 Top score
 95
 
+Buying costs
+2–5%
+
+Foreign buyers
+Can buy freely
+
+Data of
+20 Nov 2026
+
 ### The 30 best of 59, by score
 
 - [Score 93New€223,300Renovated 1889 Victorian with a deep front porch in Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 bed · €773/m² · Added todayAsking US$245,000 (about €223,300) for a renovated 1889 Victorian of about 289 m² in Lynchburg, a historic city on the James River at the foot of…](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
@@ -132,6 +141,29 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 79 to 95 out of 98. The best rated: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
 - Newest, added 20 November 2026: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 35 of these homes were added in the last 30 days.
 
+### Median price by region in the United States
+
+Region | Homes | Median price
+Oklahoma | 1 | €68,917
+[Maine](https://realhunt.co/homes/united-states/maine) | 3 | €77,300
+Illinois | 1 | €79,200
+West Virginia | 2 | €82,875
+Missouri | 1 | €86,500
+South Carolina | 1 | €88,800
+Arkansas | 2 | €91,599
+Texas | 1 | €95,089
+Indiana | 2 | €118,300
+[Pennsylvania](https://realhunt.co/homes/united-states/pennsylvania) | 6 | €137,700
+North Carolina | 1 | €153,900
+Kentucky | 1 | €155,500
+Michigan | 1 | €173,100
+Ohio | 1 | €200,000
+[Wisconsin](https://realhunt.co/homes/united-states/wisconsin) | 4 | €214,100
+New York | 2 | €218,100
+Virginia | 2 | €227,700
+Minnesota | 2 | €232,400
+[Florida](https://realhunt.co/homes/united-states/florida) | 25 | €255,400
+
 ### Buying costs and rules for foreigners in the United States
 
 Can foreigners buy? Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China.
@@ -195,9 +227,11 @@ By bedrooms [2 bedrooms 27](https://realhunt.co/homes/united-states/2-bedroom) [
 
 By region [Florida 25](https://realhunt.co/homes/united-states/florida) [Pennsylvania 6](https://realhunt.co/homes/united-states/pennsylvania) [Wisconsin 4](https://realhunt.co/homes/united-states/wisconsin) [Maine 3](https://realhunt.co/homes/united-states/maine)
 
-By feature [Near a lake 8](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 25](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 7](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 40](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 4](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 20](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 34](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 35](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 13](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 5](https://realhunt.co/cheap-houses/low-community-fee-in-united-states)
+By area [Boca Raton 4](https://realhunt.co/homes/united-states/boca-raton)
 
-Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-united-states)
+By feature [Near a lake 8](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 25](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 7](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 40](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 4](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 20](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 34](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 35](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [New this week 10](https://realhunt.co/cheap-houses/new-this-week-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 13](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 5](https://realhunt.co/cheap-houses/low-community-fee-in-united-states) [Over 120 m² 29](https://realhunt.co/cheap-houses/over-120-sqm-in-united-states)
+
+Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-united-states) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-united-states)
 
 By feature and budget [With a garden under €100,000 4](https://realhunt.co/cheap-houses/with-garden-under-100000-in-united-states) [Move-in ready under €100,000 4](https://realhunt.co/cheap-houses/turnkey-under-100000-in-united-states)
 
@@ -205,11 +239,13 @@ In pounds and dollars [Under $100,000 12](https://realhunt.co/cheap-houses/under
 
 Near a city [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
+Neighbouring countries [Canada 14](https://realhunt.co/homes/canada) [Mexico 4](https://realhunt.co/homes/mexico)
+
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from coldwellbanker.com (36), redfin.com (15), estately.com (8). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United States](https://realhunt.co/sitemap/united-states)
 
 ---
 Source: https://realhunt.co/homes/united-states (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

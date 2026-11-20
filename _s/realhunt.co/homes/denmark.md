@@ -26,6 +26,15 @@ Median size
 Top score
 98
 
+Buying costs
+1.5–3%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 30 best of 46, by score
 
 - [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 46 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
@@ -123,6 +132,31 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 82 to 98 out of 98. The best rated: [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd).
 - Newest, added 18 November 2026: [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk). 1 of these homes was added in the last 30 days.
 
+### Median price by region in Denmark
+
+Region | Homes | Median price
+Sønderjylland | 1 | €35,400
+[Funen](https://realhunt.co/homes/denmark/funen) | 5 | €79,800
+Vejen | 1 | €82,800
+[Falster](https://realhunt.co/homes/denmark/falster) | 3 | €83,800
+Lolland | 1 | €83,800
+the Ringsted area | 1 | €86,300
+West Zealand | 1 | €87,000
+Sjællands Odde | 1 | €87,100
+[West Jutland](https://realhunt.co/homes/denmark/west-jutland) | 5 | €89,100
+Munke Bjergby | 1 | €93,000
+[North Jutland](https://realhunt.co/homes/denmark/north-jutland) | 11 | €93,200
+[Mors](https://realhunt.co/homes/denmark/mors) | 3 | €93,200
+Central Jutland | 1 | €93,200
+Grindsted | 1 | €93,200
+the Vordingborg area | 1 | €93,200
+Stevns | 1 | €93,200
+East Jutland | 2 | €93,600
+Thy | 2 | €93,600
+the Skælskør area | 2 | €99,900
+the Slagelse area | 1 | €99,900
+the Høng area | 1 | €160,000
+
 ### Buying costs and rules for foreigners in Denmark
 
 Taxes and fees add about 1.5 to 3% to the price: Registration fee on the deed (tinglysningsafgift) of DKK 1,850 plus 0.6% of the price, about 1% for a buyer's lawyer, and, if you borrow, a mortgage registration fee of DKK 1,825 plus 1.25% of the loan; the seller normally pays the agent. On the median home on this page (€93,200) that is €1,398 to €2,796, so €94,598 to €95,996 in all.
@@ -177,17 +211,19 @@ By region [North Jutland 11](https://realhunt.co/homes/denmark/north-jutland) [F
 
 By area [Jutland 27](https://realhunt.co/homes/denmark/jutland) [Lolland and Falster 4](https://realhunt.co/homes/denmark/lolland-falster)
 
-By feature [With a garden 20](https://realhunt.co/cheap-houses/with-garden-in-denmark) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-denmark) [With a terrace 14](https://realhunt.co/cheap-houses/with-a-terrace-in-denmark) [Move-in ready 15](https://realhunt.co/cheap-houses/turnkey-in-denmark) [With land 7](https://realhunt.co/cheap-houses/with-land-in-denmark) [With a garage 8](https://realhunt.co/cheap-houses/with-garage-in-denmark) [On an island 12](https://realhunt.co/cheap-houses/on-an-island-in-denmark) [Near an airport 15](https://realhunt.co/cheap-houses/near-an-airport-in-denmark) [Under €500/m² 3](https://realhunt.co/cheap-houses/under-500-per-sqm-in-denmark) [Score 90+ 20](https://realhunt.co/cheap-houses/score-90-plus-in-denmark) [Single-storey 3](https://realhunt.co/cheap-houses/single-storey-in-denmark) [Period features 10](https://realhunt.co/cheap-houses/with-period-features-in-denmark) [Quiet location 31](https://realhunt.co/cheap-houses/quiet-location-in-denmark)
+By feature [With a garden 20](https://realhunt.co/cheap-houses/with-garden-in-denmark) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-denmark) [With a terrace 14](https://realhunt.co/cheap-houses/with-a-terrace-in-denmark) [Move-in ready 15](https://realhunt.co/cheap-houses/turnkey-in-denmark) [With land 7](https://realhunt.co/cheap-houses/with-land-in-denmark) [With a garage 8](https://realhunt.co/cheap-houses/with-garage-in-denmark) [On an island 12](https://realhunt.co/cheap-houses/on-an-island-in-denmark) [Near an airport 15](https://realhunt.co/cheap-houses/near-an-airport-in-denmark) [Under €500/m² 3](https://realhunt.co/cheap-houses/under-500-per-sqm-in-denmark) [Score 90+ 20](https://realhunt.co/cheap-houses/score-90-plus-in-denmark) [Single-storey 3](https://realhunt.co/cheap-houses/single-storey-in-denmark) [Period features 10](https://realhunt.co/cheap-houses/with-period-features-in-denmark) [Quiet location 31](https://realhunt.co/cheap-houses/quiet-location-in-denmark) [Over 80 m² 40](https://realhunt.co/cheap-houses/over-80-sqm-in-denmark) [Over 120 m² 18](https://realhunt.co/cheap-houses/over-120-sqm-in-denmark)
 
-Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-denmark) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-denmark)
+Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-denmark) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-denmark) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-denmark)
 
 Near a city [Near Copenhagen 18](https://realhunt.co/cheap-houses/near-copenhagen) [Near Aarhus 14](https://realhunt.co/cheap-houses/near-aarhus)
+
+Neighbouring countries [Germany 21](https://realhunt.co/homes/germany) [Sweden 38](https://realhunt.co/homes/sweden)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from boligsiden.dk (43), boliga.dk (2), estate.dk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Denmark](https://realhunt.co/alerts?country=Denmark) · [Filter and sort these homes](https://realhunt.co/?country=Denmark#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Denmark](https://realhunt.co/alerts?country=Denmark) · [Filter and sort these homes](https://realhunt.co/?country=Denmark#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Denmark](https://realhunt.co/sitemap/denmark)
 
 ---
 Source: https://realhunt.co/homes/denmark (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

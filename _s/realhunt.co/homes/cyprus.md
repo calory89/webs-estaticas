@@ -26,6 +26,15 @@ Median size
 Top score
 93
 
+Buying costs
+2.5–3.5%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 5 homes, best score first
 
 - [Score 93€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 39 days on RealHuntA ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos.](https://realhunt.co/deal/cy-coral-bay-341k-080655)
@@ -53,6 +62,13 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 2 with a garden, 4 with a terrace, 5 with a garage, 4 with a pool.
 - Scores: 78 to 93 out of 98. The best rated: [Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views](https://realhunt.co/deal/cy-coral-bay-341k-080655).
 - Newest, added 20 November 2026: [Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k). 3 of these homes were added in the last 30 days.
+
+### Median price by region in Cyprus
+
+Region | Homes | Median price
+Larnaca | 1 | €130,000
+Paphos | 2 | €341,000
+Famagusta | 2 | €470,000
 
 ### Buying costs and rules for foreigners in Cyprus
 
@@ -105,11 +121,13 @@ By setting [By the sea 4](https://realhunt.co/homes/cyprus/by-the-sea)
 
 By feature [Sea view 3](https://realhunt.co/cheap-houses/with-sea-view-in-cyprus) [Near an airport 3](https://realhunt.co/cheap-houses/near-an-airport-in-cyprus) [Quiet location 4](https://realhunt.co/cheap-houses/quiet-location-in-cyprus)
 
+Neighbouring countries [Greece 24](https://realhunt.co/homes/greece)
+
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from rightmove.co.uk (4), cy.green-acres.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Cyprus](https://realhunt.co/alerts?country=Cyprus) · [Filter and sort these homes](https://realhunt.co/?country=Cyprus#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Cyprus](https://realhunt.co/alerts?country=Cyprus) · [Filter and sort these homes](https://realhunt.co/?country=Cyprus#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Cyprus](https://realhunt.co/sitemap/cyprus)
 
 ---
 Source: https://realhunt.co/homes/cyprus (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

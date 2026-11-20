@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 93
 
+Gastos de compra
+5,5–7%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 24 viviendas, de mejor a peor nota
 
 - [Nota 93109.000 €Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en MeseniaVasilitsi, Messinia116 m² · 3 dorm. · 940 €/m² · 35 días en RealHuntCasa de dos plantas y 116 m² en Vasilitsi, en el extremo sur de la península de Mesenia, con vistas al mar y a las colinas: tres dormitorios, dos…](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k)
@@ -92,6 +101,23 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 79 a 93 sobre 98. La de mejor nota: [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de piedra de tres dormitorios restaurada con terraza en la azotea en el pueblo de Kritsa, Creta](https://realhunt.co/es/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k). 10 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Grecia
+
+Región | Viviendas | Precio mediano
+Lesbos | 1 | 70.000 €
+Samos | 2 | 80.000 €
+North Evia | 1 | 80.000 €
+Pelion | 2 | 120.000 €
+Skopelos (Sporades) | 1 | 150.000 €
+Rodas | 1 | 155.000 €
+[Creta](https://realhunt.co/es/homes/greece/crete) | 7 | 158.000 €
+Messinia | 2 | 158.000 €
+Magnesia | 1 | 167.000 €
+Halkidiki | 2 | 170.000 €
+Karpathos | 1 | 170.000 €
+Chios | 1 | 175.000 €
+Laconia | 2 | 195.000 €
+
 ### Gastos de compra y normas para extranjeros en Grecia
 
 Los impuestos y gastos añaden alrededor de un 5,5 a 7 % al precio: Impuesto de transmisión del 3,09% del precio o del valor fiscal, el que sea mayor; notario alrededor del 0,8-1% más IVA; tasas del registro de la propiedad alrededor del 0,5-0,7%; abogado 1-2% más IVA; si hay agente, el comprador suele pagar además una comisión del 1-3% más IVA. En la vivienda mediana de esta página (155.000 €) son de 8.525 € a 10.850 €, es decir, de 163.525 € a 165.850 € en total.
@@ -150,19 +176,21 @@ Por región [Creta 7](https://realhunt.co/es/homes/greece/crete)
 
 Por zona [Peloponeso 4](https://realhunt.co/es/homes/greece/peloponnese)
 
-Por característica [Con jardín 10](https://realhunt.co/es/cheap-houses/with-garden-in-greece) [Casas de piedra 13](https://realhunt.co/es/cheap-houses/stone-houses-in-greece) [Con terraza 19](https://realhunt.co/es/cheap-houses/with-a-terrace-in-greece) [Para entrar a vivir 8](https://realhunt.co/es/cheap-houses/turnkey-in-greece) [Vistas al mar 11](https://realhunt.co/es/cheap-houses/with-sea-view-in-greece) [Con chimenea 11](https://realhunt.co/es/cheap-houses/with-fireplace-in-greece) [Con garaje 6](https://realhunt.co/es/cheap-houses/with-garage-in-greece) [En una isla 14](https://realhunt.co/es/cheap-houses/on-an-island-in-greece) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-greece) [Olivos o viñas 3](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-greece) [Cerca de un aeropuerto 12](https://realhunt.co/es/cheap-houses/near-an-airport-in-greece) [Nota 90 o más 3](https://realhunt.co/es/cheap-houses/score-90-plus-in-greece) [Nuevas este mes 10](https://realhunt.co/es/cheap-houses/new-this-month-in-greece) [Elementos de época 3](https://realhunt.co/es/cheap-houses/with-period-features-in-greece) [Zona tranquila 15](https://realhunt.co/es/cheap-houses/quiet-location-in-greece)
+Por característica [Con jardín 10](https://realhunt.co/es/cheap-houses/with-garden-in-greece) [Casas de piedra 13](https://realhunt.co/es/cheap-houses/stone-houses-in-greece) [Con terraza 19](https://realhunt.co/es/cheap-houses/with-a-terrace-in-greece) [Para entrar a vivir 8](https://realhunt.co/es/cheap-houses/turnkey-in-greece) [Vistas al mar 11](https://realhunt.co/es/cheap-houses/with-sea-view-in-greece) [Con chimenea 11](https://realhunt.co/es/cheap-houses/with-fireplace-in-greece) [Con garaje 6](https://realhunt.co/es/cheap-houses/with-garage-in-greece) [En una isla 14](https://realhunt.co/es/cheap-houses/on-an-island-in-greece) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-greece) [Olivos o viñas 3](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-greece) [Cerca de un aeropuerto 12](https://realhunt.co/es/cheap-houses/near-an-airport-in-greece) [Nota 90 o más 3](https://realhunt.co/es/cheap-houses/score-90-plus-in-greece) [Nuevas este mes 10](https://realhunt.co/es/cheap-houses/new-this-month-in-greece) [Elementos de época 3](https://realhunt.co/es/cheap-houses/with-period-features-in-greece) [Zona tranquila 15](https://realhunt.co/es/cheap-houses/quiet-location-in-greece) [Más de 80 m² 12](https://realhunt.co/es/cheap-houses/over-80-sqm-in-greece) [Más de 120 m² 3](https://realhunt.co/es/cheap-houses/over-120-sqm-in-greece)
 
-Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-greece) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-greece)
+Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-greece) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-greece) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-greece)
 
-Por característica y presupuesto [Casas, menos de 100.000 € 6](https://realhunt.co/es/cheap-houses/houses-under-100000-in-greece) [Casas de piedra, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/stone-houses-under-100000-in-greece) [Para entrar a vivir, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-greece) [Vistas al mar, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-sea-view-under-100000-in-greece) [Con jardín, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-greece)
+Por característica y presupuesto [Vistas al mar, menos de 150.000 € 7](https://realhunt.co/es/cheap-houses/with-sea-view-under-150000-in-greece) [Casas, menos de 100.000 € 6](https://realhunt.co/es/cheap-houses/houses-under-100000-in-greece) [Casas de piedra, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/stone-houses-under-100000-in-greece) [Para entrar a vivir, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-greece) [Vistas al mar, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-sea-view-under-100000-in-greece) [Con jardín, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-greece)
 
 En libras y en dólares [Menos de 100.000 libras 9](https://realhunt.co/es/cheap-houses/under-100000-pounds-in-greece) [Menos de 100.000 dólares 6](https://realhunt.co/es/cheap-houses/under-100000-dollars-in-greece)
+
+Países vecinos [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de green-acres.gr (20), spitogatos.gr (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Grecia](https://realhunt.co/es/alerts?country=Greece) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Greece#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Grecia](https://realhunt.co/es/alerts?country=Greece) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Greece#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Grecia](https://realhunt.co/es/sitemap/greece)
 
 ---
 Fuente: https://realhunt.co/es/homes/greece (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

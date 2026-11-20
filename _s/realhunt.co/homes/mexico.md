@@ -26,6 +26,15 @@ Median size
 Top score
 86
 
+Buying costs
+3.5–8%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 4 homes, best score first
 
 - [Score 86New€216,600Colonial house with a pool and garden in Barrio de Santiago, Mérida centreMérida, Yucatán160 m² · 2 bed · €1,354/m² · Added todayAsking MX$4,450,000 (about €216,600) for Casa Ya'axche', a single-storey colonial house of 160 m² on a 279 m² plot in Barrio de Santiago, one of…](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m)
@@ -51,6 +60,14 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 2 with a garden, 4 with a terrace, 3 with a garage, 4 with a pool.
 - Scores: 81 to 86 out of 98. The best rated: [Colonial house with a pool and garden in Barrio de Santiago, Mérida centre](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m).
 - Newest, added 20 November 2026: [Colonial house with a pool and garden in Barrio de Santiago, Mérida centre](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m). 4 of these homes were added in the last 30 days.
+
+### Median price by region in Mexico
+
+Region | Homes | Median price
+Sinaloa | 1 | €143,000
+Querétaro | 1 | €152,100
+Jalisco | 1 | €160,200
+Yucatán | 1 | €216,600
 
 ### Buying costs and rules for foreigners in Mexico
 
@@ -92,13 +109,15 @@ About 3.5 to 8% on top of the price: Acquisition tax 2-5% + notary 0.5-1% + lega
 
 By budget [Under €200,000 3](https://realhunt.co/homes/mexico/under-200000)
 
-By feature [With a garage 3](https://realhunt.co/cheap-houses/with-garage-in-mexico)
+By feature [With a garage 3](https://realhunt.co/cheap-houses/with-garage-in-mexico) [Over 80 m² 3](https://realhunt.co/cheap-houses/over-80-sqm-in-mexico)
+
+Neighbouring countries [United States 59](https://realhunt.co/homes/united-states)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom)
 
 These listings come from casasyterrenos.com (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Mexico](https://realhunt.co/alerts?country=Mexico) · [Filter and sort these homes](https://realhunt.co/?country=Mexico#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Mexico](https://realhunt.co/alerts?country=Mexico) · [Filter and sort these homes](https://realhunt.co/?country=Mexico#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Mexico](https://realhunt.co/sitemap/mexico)
 
 ---
 Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

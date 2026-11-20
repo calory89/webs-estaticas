@@ -26,6 +26,15 @@ Median size
 Top score
 96
 
+Buying costs
+2.5–4%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 30 best of 31, by score
 
 - [Score 96€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 38 days on RealHuntA huge 127 m² flat on the second floor on Falista street: a big living and dining room, three separate bedrooms, a fully fitted kitchen opening…](https://realhunt.co/deal/pl-bytom-57k-186977)
@@ -108,6 +117,28 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 78 to 96 out of 98. The best rated: [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977).
 - Newest, added 18 November 2026: [Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze](https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867). 1 of these homes was added in the last 30 days.
 
+### Median price by region in Poland
+
+Region | Homes | Median price
+Silesia | 2 | €60,547
+Kuyavia-Pomerania | 1 | €67,402
+Bytom | 1 | €68,316
+Zabrze | 1 | €68,316
+[Podlaskie](https://realhunt.co/homes/poland/podlaskie) | 5 | €71,971
+Masovia | 1 | €72,885
+Wałbrzych | 1 | €72,885
+Lubusz | 1 | €75,170
+Gniezno | 1 | €75,398
+[Łódź](https://realhunt.co/homes/poland/lodz) | 3 | €76,084
+Świętokrzyskie | 2 | €77,455
+Warmia-Masuria | 2 | €77,683
+[Lower Silesia](https://realhunt.co/homes/poland/lower-silesia) | 3 | €79,740
+Greater Poland | 2 | €79,740
+Opole | 1 | €79,740
+Pomerania | 1 | €79,740
+West Pomerania | 2 | €79,968
+Subcarpathia | 1 | €79,968
+
 ### Buying costs and rules for foreigners in Poland
 
 Taxes and fees add about 2.5 to 4% to the price: Tax on civil law transactions (PCC) 2% of the value, paid by the buyer within 14 days of the deed; notary fee (taksa notarialna) capped at PLN 1,010 plus 0.4% of the value above PLN 60,000, plus 23% VAT; court fee of PLN 200 to enter ownership in the land register (plus PLN 100 for a new register); optional lawyer about 1%; the agent fee (about 2-3%) depends on the agreement. On the median home on this page (€75,170) that is €1,879 to €3,007, so €77,049 to €78,177 in all.
@@ -156,13 +187,15 @@ By region [Podlaskie 5](https://realhunt.co/homes/poland/podlaskie) [Łódź 3](
 
 By feature [With a garden 4](https://realhunt.co/cheap-houses/with-garden-in-poland) [With a terrace 11](https://realhunt.co/cheap-houses/with-a-terrace-in-poland) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-poland) [Near an airport 6](https://realhunt.co/cheap-houses/near-an-airport-in-poland) [Score 90+ 7](https://realhunt.co/cheap-houses/score-90-plus-in-poland) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-poland)
 
-Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-poland) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-poland)
+Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-poland) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-poland) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-poland)
+
+Neighbouring countries [Germany 21](https://realhunt.co/homes/germany)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from morizon.pl (31). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Poland](https://realhunt.co/alerts?country=Poland) · [Filter and sort these homes](https://realhunt.co/?country=Poland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Poland](https://realhunt.co/alerts?country=Poland) · [Filter and sort these homes](https://realhunt.co/?country=Poland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Poland](https://realhunt.co/sitemap/poland)
 
 ---
 Source: https://realhunt.co/homes/poland (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

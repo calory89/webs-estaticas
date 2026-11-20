@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://oykcsmextclpdnugixqz.supabase.co" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="RealHunt: new homes" href="https://realhunt.co/feed.xml" />
+    <link rel="alternate" type="application/atom+xml" title="RealHunt: new homes (Atom)" href="https://realhunt.co/feed.atom" />
+    <link rel="alternate" type="application/feed+json" title="RealHunt: new homes (JSON Feed)" href="https://realhunt.co/feed.json" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Every page and home in Switzerland · RealHunt</title>
+    <meta name="description" content="The 10 homes we list in Switzerland and the 29 other pages about the country on RealHunt: lists by price and region, guides and costs." />
+    <meta name="author" content="RealHunt" />
+    <meta name="robots" content="index, follow" />
+    <!-- 15-nov-2026: large image previews in Google results and Discover. A tag of its own: seo/polish.ts and the worker rewrite the robots tag above. -->
+    <meta name="googlebot" content="max-image-preview:large, max-snippet:-1" />
+    <meta name="bingbot" content="max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://realhunt.co/sitemap/switzerland" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RealHunt" />
+    <meta property="og:title" content="Every page and home in Switzerland · RealHunt" />
+    <meta property="og:description" content="The 10 homes we list in Switzerland and the 29 other pages about the country on RealHunt: lists by price and region, guides and costs. Part of the site map, rebuilt every time the site is updated." />
+    <meta property="og:image" content="https://realhunt.co/og-home.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://realhunt.co/sitemap/switzerland" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RealHuntApp" />
+    <meta name="twitter:title" content="Every page and home in Switzerland · RealHunt" />
+    <meta name="twitter:description" content="The 10 homes we list in Switzerland and the 29 other pages about the country on RealHunt: lists by price and region, guides and costs. Part of the site map, rebuilt every time the site is updated." />
+    <meta name="twitter:image" content="https://realhunt.co/og-home.jpg" />
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","@id":"https://realhunt.co/#organization","name":"RealHunt","url":"https://realhunt.co/","logo":"https://realhunt.co/favicon.png","description":"Cheap homes for sale around the world, each checked by a person and scored from 70 to 98.","email":"hello@realhunt.co","parentOrganization":{"@type":"Organization","name":"Equinox Investment Group LLC","address":{"@type":"PostalAddress","streetAddress":"30 N Gould St Ste N","addressLocality":"Sheridan","addressRegion":"WY","postalCode":"82801","addressCountry":"US"}}}
+    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"RealHunt","alternateName":["Real Hunt","realhunt.co"],"url":"https://realhunt.co"}</script>
+    <script>
+    /* Language (8-nov-2026): Spanish only for visitors in a Spanish-speaking country (saved Cloudflare country, else time zone), English for everyone else whatever the browser language; ?lang= and the saved EN/ES choice win. Mirrors src/lib/lang.ts pickLang. */
+    (function(){var d=document.documentElement,l="en";try{var q=new URLSearchParams(location.search).get("lang"),s=null,g=null;
+    /* 10-nov-2026: /es/... is the Spanish copy of a page (its own address for search engines). The prefix means "Spanish" whatever the country or the saved choice, and it stays in the address: the router runs with basename /es (src/lib/esPath.ts), so links, reloads and the canonical keep it. */
+    if(/^\/es(\/|$)/.test(location.pathname)){q="es";window.__rhUrlLang="es"}try{s=localStorage.getItem("rh_lang");g=localStorage.getItem("rh_geo")}catch(e){}
+    if(q==="es"||q==="en")l=q;else if(s==="es"||s==="en")l=s;else if(g&&/^[A-Z]{2}$/.test(g)&&g!=="XX"&&g!=="T1"){if(/^(ES|MX|AR|CO|CL|PE|VE|EC|GT|CU|BO|DO|HN|PY|SV|NI|CR|PA|UY|PR|GQ)$/.test(g))l="es"}else{var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
+    if(/^(Europe\/Madrid|Africa\/Ceuta|Atlantic\/Canary|Africa\/Malabo|America\/(Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Mazatlan|Bahia_Banderas|Hermosillo|Tijuana|Ensenada|Santa_Isabel|Bogota|Lima|Santiago|Punta_Arenas|Argentina\/.+|Buenos_Aires|Cordoba|Mendoza|Catamarca|Jujuy|Rosario|Caracas|Montevideo|Asuncion|La_Paz|Guayaquil|Guatemala|El_Salvador|Tegucigalpa|Managua|Costa_Rica|Panama|Havana|Santo_Domingo|Puerto_Rico)|Pacific\/(Easter|Galapagos)|Chile\/.+|Mexico\/.+|Cuba)$/.test(tz))l="es"}}catch(e){}
+    d.setAttribute("data-lang",l);d.lang=l;if(l==="es"){d.className+=" rh-i18n-wait";var k=document.createElement("link");k.rel="preload";k.as="fetch";k.href="/i18n/es-core.json?v=3";k.crossOrigin="anonymous";document.head.appendChild(k);var k2=k.cloneNode();k2.href="/i18n/es-listings.json?v=3";document.head.appendChild(k2);setTimeout(function(){d.classList.remove("rh-i18n-wait")},1500)}})();
+    </script>
+    <script>/* 15-nov-2026: cheap phones (2 GB of memory or less) and "data saver" get the page without blur, shadows and shimmer (src/lib/perf.css). */
+    (function(){try{var n=navigator,c=n.connection||{};if((n.deviceMemory&&n.deviceMemory<=2)||c.saveData)document.documentElement.className+=" rh-lite"}catch(e){}})();</script>
+    <style>html{background:#FFFFFF}#root:empty{min-height:100vh}html.rh-i18n-wait #root{visibility:hidden}.rh-static{max-width:760px;margin:0 auto;padding:24px 16px;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#14181c}.rh-static h1{font:800 clamp(26px,4vw,40px)/1.1 system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 10px}.rh-static h2{font:800 20px system-ui,sans-serif;margin:22px 0 8px}.rh-static a{color:#D4420C}.rh-static ul,.rh-static ol{padding-left:20px}.rh-static li{margin:4px 0}.rh-static nav{font-size:13px;color:#6b737a;margin-bottom:8px}</style>
+    <!-- Meta Pixel: the script is only downloaded after the visitor accepts cookies -->
+    <script>
+    window.rhEnablePixel=function(){if(window.__rhpx)return;window.__rhpx=1;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','774992015604419');fbq('track','PageView');};
+    try{if(localStorage.getItem('rh_consent')==='all')window.rhEnablePixel();}catch(e){}
+    </script>
+    <!-- Microsoft Clarity: heatmaps and session replays so we can see what visitors do and improve the site.
+         Form inputs are masked. Until the visitor clicks "Accept all" it runs without cookies (consent denied);
+         after that it may use its cookies to link visits. Ads storage is always denied. -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        /* 10-nov-2026 speed: the Clarity script is fetched once the page has loaded, so it never competes with the first photo */
+        var go=function(){setTimeout(function(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);},1200)};
+        if(l.readyState==="complete")go();else c.addEventListener("load",go);
+    })(window, document, "clarity", "script", "yn43cuf00q");
+    (function(){var g=function(){try{return localStorage.getItem('rh_consent')==='all'}catch(e){return false}};
+    var send=function(){window.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:g()?'granted':'denied'})};
+    send();window.addEventListener('rh:consent',send);})();
+    </script>
+    <link rel="preconnect" href="https://realhunt-media.pages.dev" />
+  <script type="module" crossorigin src="/assets/index-Cyl5LyBQ.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-D96rnT3N.js">
+  <link rel="modulepreload" crossorigin href="/assets/icons-CZkLHEoJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/supabase-CYzOsYot.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Dub6gJBz.css">
+  <script>(()=>{const p=location.pathname.replace(/^\/es(?=\/|$)/,'')||'/',r={"Community":["/assets/ToolsPage-B2JXikHD.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/v8-DWfyZniB.js","/assets/OperationsTools-Cg_RQhd9.js","/assets/KeyboardShortcutsModal-DaqF94j0.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/use-mobile-BZrfKEJI.js"],"Home":["/assets/Home-MML6jzEq.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/SignUp-BpvsYstL.js","/assets/Sell-CgdiYjqs.js","/assets/use-mobile-BZrfKEJI.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/StickyMobileCTA-ngAuzcQ6.js","/assets/grade-BPJLW84W.js","/assets/DecisionSummary-zfmpWGRE.js","/assets/MapPage-BJQwwzN8.js"],"FindDetail":["/assets/FindDetail-Bf42V-Zz.js","/assets/react-D96rnT3N.js","/assets/SignUp-BpvsYstL.js","/assets/index-Cyl5LyBQ.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/Sell-CgdiYjqs.js","/assets/use-mobile-BZrfKEJI.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/StickyMobileCTA-ngAuzcQ6.js","/assets/grade-BPJLW84W.js","/assets/DecisionSummary-zfmpWGRE.js","/assets/MapPage-BJQwwzN8.js"],"Weather":["/assets/Weather-D-bl7ldy.js","/assets/index-Cyl5LyBQ.js","/assets/react-D96rnT3N.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js"],"Map":["/assets/homesmap-BqoD44m7.js","/assets/react-D96rnT3N.js","/assets/leaflet-BWLZ7Z6t.js","/assets/v8-DWfyZniB.js","/assets/index-Cyl5LyBQ.js","/assets/icons-CZkLHEoJ.js","/assets/supabase-CYzOsYot.js","/assets/OperationsTools-Cg_RQhd9.js","/assets/KeyboardShortcutsModal-DaqF94j0.js","/assets/index-DmMqI9JM.js","/assets/platform-BuiS7YUr.js","/assets/map-B5OnsLa-.js"]},k=p==='/'||/^\/(deal|map|top|live-search|homes|hunt|compare|score|blog|guide|costs|can-i-buy|buying-costs)(\/|$)/.test(p)?'Community':/^\/from\//.test(p)?'Home':/^\/find\//.test(p)?'FindDetail':/^\/weather\/?$/.test(p)?'Weather':null,m=p==='/map',add=function(rel,href,as){const l=document.createElement('link');l.rel=rel;l.href=href;if(as)l.as=as;if(rel==='modulepreload')l.crossOrigin='';document.head.appendChild(l)};if(m)add('preconnect','https://tile.openstreetmap.org');for(const href of (r[k]||[]).concat(m?r.Map||[]:[]))add('modulepreload',href);if(m)for(const href of ["/assets/leaflet-Dgihpmma.css","/assets/index-Dub6gJBz.css","/assets/v8-Cr70eMj3.css"])add('preload',href,'style');if(p==='/'||/^\/(deal|map|homes|compare|live-search)(\/|$)/.test(p)){try{window.__rhSnap=fetch('/data/rh-static.json',{cache:'no-cache'}).then(function(x){if(!x.ok)throw 0;return x.json()});window.__rhSnap.catch(function(){});if(document.documentElement.getAttribute('data-lang')==='es'){window.__rhSnapEs=fetch('/data/rh-static-es.json',{cache:'no-cache'}).then(function(x){if(!x.ok)throw 0;return x.json()});window.__rhSnapEs.catch(function(){})}}catch(e){}}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RealHunt","item":"https://realhunt.co/"},{"@type":"ListItem","position":2,"name":"Site map","item":"https://realhunt.co/sitemap"},{"@type":"ListItem","position":3,"name":"Switzerland","item":"https://realhunt.co/sitemap/switzerland"}]}</script><link rel="alternate" hreflang="en" href="https://realhunt.co/sitemap/switzerland" /><link rel="alternate" hreflang="es" href="https://realhunt.co/es/sitemap/switzerland" /><link rel="alternate" hreflang="x-default" href="https://realhunt.co/sitemap/switzerland" /></head>
+
+  <body>
+    <div id="root"><main class="rh-static" data-rh-keep data-rh-static><nav class="rh-bc" aria-label="Breadcrumb"><a href="/">RealHunt</a> › <a href="/sitemap">Site map</a> › <span aria-current="page">Switzerland</span></nav><h1>Every page and home in Switzerland</h1><p>39 pages.</p><h2>Countries and regions</h2><ul><li><a href="/homes/switzerland">Houses for sale in Switzerland</a></li><li><a href="/homes/switzerland/1-bedroom">1-bedroom houses for sale in Switzerland</a></li><li><a href="/homes/switzerland/valais">Houses for sale in Valais, Switzerland</a></li><li><a href="/homes/switzerland/valais/under-80000">Cheap houses for sale in Valais, Switzerland under €80,000</a></li><li><a href="/homes/switzerland/valais/raron">Houses for sale in Raron, Valais</a></li></ul><h2>Homes by price</h2><ul><li><a href="/homes/switzerland/under-100000">Cheap houses for sale in Switzerland under €100,000</a></li><li><a href="/homes/switzerland/under-60000">Cheap houses for sale in Switzerland under €60,000</a></li><li><a href="/homes/switzerland/under-80000">Cheap houses for sale in Switzerland under €80,000</a></li></ul><h2>Cheap houses</h2><ul><li><a href="/cheap-houses/cabins-and-cottages-in-switzerland">Cheap cabins and cottages in Switzerland</a></li><li><a href="/cheap-houses/with-fireplace-in-switzerland">Cheap homes with a fireplace in Switzerland</a></li><li><a href="/cheap-houses/with-pool-under-100000-in-switzerland">Cheap homes with a pool in Switzerland under €100,000</a></li><li><a href="/cheap-houses/with-garage-in-switzerland">Cheap houses with a garage in Switzerland</a></li><li><a href="/cheap-houses/with-garden-in-switzerland">Cheap houses with a garden in Switzerland</a></li></ul><h2>Buying guides</h2><ul><li><a href="/guide/switzerland">How to buy a home in Switzerland as a foreigner</a></li></ul><h2>Costs and taxes</h2><ul><li><a href="/costs/switzerland">Buying a home in Switzerland: what it really costs</a></li><li><a href="/buying-costs/switzerland">Buying costs in Switzerland: calculator and worked examples</a></li></ul><h2>Can I buy there?</h2><ul><li><a href="/can-i-buy/british-in-switzerland">Can a British citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/canadian-in-switzerland">Can a Canadian buy property in Switzerland?</a></li><li><a href="/can-i-buy/danish-in-switzerland">Can a Danish citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/dutch-in-switzerland">Can a Dutch citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/french-in-switzerland">Can a French citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/german-in-switzerland">Can a German buy property in Switzerland?</a></li><li><a href="/can-i-buy/norwegian-in-switzerland">Can a Norwegian buy property in Switzerland?</a></li><li><a href="/can-i-buy/spanish-in-switzerland">Can a Spanish citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/swedish-in-switzerland">Can a Swedish citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/american-in-switzerland">Can an American buy property in Switzerland?</a></li><li><a href="/can-i-buy/australian-in-switzerland">Can an Australian buy property in Switzerland?</a></li><li><a href="/can-i-buy/irish-in-switzerland">Can an Irish citizen buy property in Switzerland?</a></li><li><a href="/can-i-buy/italian-in-switzerland">Can an Italian buy property in Switzerland?</a></li></ul><h2>Homes</h2><ul><li><a href="/deal/ch-lengnau-30k-26130">€32,300 · 70 m² modular house with heat pump, to move to your own plot</a></li><li><a href="/deal/ch-raron-40k-76568">€42,600 · Fenced 2.5-room camping house with a sunny terrace in Raron</a></li><li><a href="/deal/ch-salgesch-49k-76547">€52,800 · Holiday cottage with winter garden by a bathing lake in Salgesch</a></li><li><a href="/deal/ch-brig-55k-63824">€59,300 · Bright as-new tiny house with sleeping loft and heat pump</a></li><li><a href="/deal/ch-brig-55k-63831">€59,300 · Wooden tiny house with two lofts and a wood stove, ready to move</a></li><li><a href="/deal/ch-lignieres-65k-24005">€70,100 · Renovated chalet with garden in a green campsite in the Neuchâtel hills</a></li><li><a href="/deal/ch-raron-70k-61979">€74,900 · Winter-proof wooden chalet by a stream in the Valais Alps</a></li><li><a href="/deal/ch-gommiswald-75k-93656">€80,700 · Year-round wooden chalet with garden and pool access near Lake Zurich</a></li><li><a href="/deal/ch-raron-80k-63919">€85,900 · Mobile home with 120 m² garden, gazebo and pellet heating in Valais</a></li><li><a href="/deal/ch-raron-82k-76555">€88,400 · Like-new furnished camping house in the sunny Upper Valais</a></li></ul><h2>Site map</h2><p><a href="/sitemap">Site map</a> · <a href="/sitemap/homes">Homes</a></p></main></div>
+    <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){})})</script>
+  </body>
+</html>

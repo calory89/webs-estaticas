@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 95
 
+Gastos de compra
+2–5%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 59, por nota
 
 - [Nota 93Nueva223.300 €Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 dorm. · 773 €/m² · Añadida hoySe pide US$245.000 (aproximadamente 223,3 €) por una casa victoriana de 1889 renovada de aproximadamente 289 m² en Lynchburg, una ciudad…](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
@@ -132,6 +141,29 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 79 a 95 sobre 98. La de mejor nota: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 35 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Estados Unidos
+
+Región | Viviendas | Precio mediano
+Oklahoma | 1 | 68.917 €
+[Maine](https://realhunt.co/es/homes/united-states/maine) | 3 | 77.300 €
+Illinois | 1 | 79.200 €
+Virginia Occidental | 2 | 82.875 €
+Missouri | 1 | 86.500 €
+Carolina del Sur | 1 | 88.800 €
+Arkansas | 2 | 91.599 €
+Texas | 1 | 95.089 €
+Indiana | 2 | 118.300 €
+[Pensilvania](https://realhunt.co/es/homes/united-states/pennsylvania) | 6 | 137.700 €
+Carolina del Norte | 1 | 153.900 €
+Kentucky | 1 | 155.500 €
+Michigan | 1 | 173.100 €
+Ohio | 1 | 200.000 €
+[Wisconsin](https://realhunt.co/es/homes/united-states/wisconsin) | 4 | 214.100 €
+Nueva York | 2 | 218.100 €
+Virginia | 2 | 227.700 €
+Minnesota | 2 | 232.400 €
+[Florida](https://realhunt.co/es/homes/united-states/florida) | 25 | 255.400 €
+
 ### Gastos de compra y normas para extranjeros en Estados Unidos
 
 ¿Pueden comprar los extranjeros? Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pero unos 30 estados han añadido algunos límites, y Texas y Florida restringen a compradores de ciertos países como China.
@@ -195,9 +227,11 @@ Por dormitorios [2 dormitorios 27](https://realhunt.co/es/homes/united-states/2-
 
 Por región [Florida 25](https://realhunt.co/es/homes/united-states/florida) [Pensilvania 6](https://realhunt.co/es/homes/united-states/pennsylvania) [Wisconsin 4](https://realhunt.co/es/homes/united-states/wisconsin) [Maine 3](https://realhunt.co/es/homes/united-states/maine)
 
-Por característica [Cerca de un lago 8](https://realhunt.co/es/cheap-houses/near-a-lake-in-united-states) [Con jardín 25](https://realhunt.co/es/cheap-houses/with-garden-in-united-states) [Con piscina 14](https://realhunt.co/es/cheap-houses/with-pool-in-united-states) [Casas de piedra 3](https://realhunt.co/es/cheap-houses/stone-houses-in-united-states) [Cabañas y casas de campo 7](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-united-states) [Con terraza 40](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-states) [Para entrar a vivir 12](https://realhunt.co/es/cheap-houses/turnkey-in-united-states) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-united-states) [Con chimenea 4](https://realhunt.co/es/cheap-houses/with-fireplace-in-united-states) [Con garaje 20](https://realhunt.co/es/cheap-houses/with-garage-in-united-states) [Cerca de un aeropuerto 34](https://realhunt.co/es/cheap-houses/near-an-airport-in-united-states) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-united-states) [Nuevas este mes 35](https://realhunt.co/es/cheap-houses/new-this-month-in-united-states) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-united-states) [Zona tranquila 13](https://realhunt.co/es/cheap-houses/quiet-location-in-united-states) [Comunidad baja 5](https://realhunt.co/es/cheap-houses/low-community-fee-in-united-states)
+Por zona [Boca Raton 4](https://realhunt.co/es/homes/united-states/boca-raton)
 
-Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-united-states)
+Por característica [Cerca de un lago 8](https://realhunt.co/es/cheap-houses/near-a-lake-in-united-states) [Con jardín 25](https://realhunt.co/es/cheap-houses/with-garden-in-united-states) [Con piscina 14](https://realhunt.co/es/cheap-houses/with-pool-in-united-states) [Casas de piedra 3](https://realhunt.co/es/cheap-houses/stone-houses-in-united-states) [Cabañas y casas de campo 7](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-united-states) [Con terraza 40](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-states) [Para entrar a vivir 12](https://realhunt.co/es/cheap-houses/turnkey-in-united-states) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-united-states) [Con chimenea 4](https://realhunt.co/es/cheap-houses/with-fireplace-in-united-states) [Con garaje 20](https://realhunt.co/es/cheap-houses/with-garage-in-united-states) [Cerca de un aeropuerto 34](https://realhunt.co/es/cheap-houses/near-an-airport-in-united-states) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-united-states) [Nuevas este mes 35](https://realhunt.co/es/cheap-houses/new-this-month-in-united-states) [Nuevas esta semana 10](https://realhunt.co/es/cheap-houses/new-this-week-in-united-states) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-united-states) [Zona tranquila 13](https://realhunt.co/es/cheap-houses/quiet-location-in-united-states) [Comunidad baja 5](https://realhunt.co/es/cheap-houses/low-community-fee-in-united-states) [Más de 120 m² 29](https://realhunt.co/es/cheap-houses/over-120-sqm-in-united-states)
+
+Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-united-states) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-united-states)
 
 Por característica y presupuesto [Con jardín, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-united-states) [Para entrar a vivir, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-united-states)
 
@@ -205,11 +239,13 @@ En libras y en dólares [Menos de 100.000 dólares 12](https://realhunt.co/es/ch
 
 Cerca de una ciudad [Cerca de Miami 22](https://realhunt.co/es/cheap-houses/near-miami)
 
+Países vecinos [Canadá 14](https://realhunt.co/es/homes/canada) [México 4](https://realhunt.co/es/homes/mexico)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de coldwellbanker.com (36), redfin.com (15), estately.com (8). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Estados Unidos](https://realhunt.co/es/alerts?country=United%20States) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+States#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Estados Unidos](https://realhunt.co/es/alerts?country=United%20States) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+States#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Estados Unidos](https://realhunt.co/es/sitemap/united-states)
 
 ---
 Fuente: https://realhunt.co/es/homes/united-states (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

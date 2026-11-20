@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 92
 
+Gastos de compra
+7–8,5%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 45, por nota
 
 - [Nota 9239.950 €Casa de 171 m² con antiguo local comercial en el centro de Bussière-PoitevineBussière-Poitevine, Haute-Vienne171 m² · 3 dorm. · 234 €/m² · 37 días en RealHuntEn pleno centro del pueblo, junto a la panadería, la farmacia y el colegio: bodega, cocina, salón, aseo y un antiguo local con escaparate en la…](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775)
@@ -118,6 +127,41 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 75 a 92 sobre 98. La de mejor nota: [Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de pueblo de piedra de los años 1700 lista para entrar de 180 m² cerca de La Rochefoucauld, Charente](https://realhunt.co/es/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k). 21 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Francia
+
+Región | Viviendas | Precio mediano
+Haute-Vienne | 1 | 39.950 €
+Puy-de-Dôme | 1 | 49.900 €
+Aveyron | 1 | 49.980 €
+[Saint-Étienne](https://realhunt.co/es/homes/france/saint-etienne) | 5 | 54.000 €
+Marseille | 1 | 54.000 €
+Haute-Marne | 1 | 55.000 €
+Le Mans | 1 | 55.000 €
+Nouvelle-Aquitaine | 2 | 56.000 €
+Dijon | 1 | 57.000 €
+Roubaix | 1 | 57.000 €
+Grenoble | 1 | 59.000 €
+Toulouse | 1 | 59.500 €
+Le Havre | 1 | 59.990 €
+Mulhouse | 2 | 60.000 €
+Perpignan | 2 | 60.000 €
+Corrèze | 1 | 66.600 €
+Gers | 1 | 69.500 €
+Haute-Garonne | 1 | 85.000 €
+Vienne | 1 | 123.000 €
+Lot | 1 | 125.000 €
+[Charente](https://realhunt.co/es/homes/france/charente) | 4 | 134.375 €
+Orne | 1 | 137.900 €
+Dordogne | 2 | 139.000 €
+Loir-et-Cher | 1 | 146.990 €
+Nord | 1 | 148.400 €
+Creuse | 2 | 149.000 €
+Bretaña | 1 | 178.500 €
+Burgundy | 2 | 188.000 €
+Normandía | 1 | 205.000 €
+Provence | 2 | 210.000 €
+Occitanie | 1 | 285.000 €
+
 ### Gastos de compra y normas para extranjeros en Francia
 
 ¿Pueden comprar los extranjeros? Sí. Los extranjeros pueden comprar propiedades en Francia sin restricciones importantes, y los compradores no comunitarios no necesitan permiso, aunque los trámites pueden llevar más tiempo.
@@ -175,9 +219,9 @@ Por región [Saint-Étienne 5](https://realhunt.co/es/homes/france/saint-etienne
 
 Por zona [Lemosín 4](https://realhunt.co/es/homes/france/limousin)
 
-Por característica [Con jardín 16](https://realhunt.co/es/cheap-houses/with-garden-in-france) [Casas de piedra 14](https://realhunt.co/es/cheap-houses/stone-houses-in-france) [Con terraza 17](https://realhunt.co/es/cheap-houses/with-a-terrace-in-france) [Para entrar a vivir 12](https://realhunt.co/es/cheap-houses/turnkey-in-france) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-france) [Con chimenea 8](https://realhunt.co/es/cheap-houses/with-fireplace-in-france) [Con garaje 10](https://realhunt.co/es/cheap-houses/with-garage-in-france) [Cerca de un aeropuerto 12](https://realhunt.co/es/cheap-houses/near-an-airport-in-france) [Menos de 500 €/m² 3](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-france) [Nota 90 o más 13](https://realhunt.co/es/cheap-houses/score-90-plus-in-france) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-france) [Nuevas este mes 21](https://realhunt.co/es/cheap-houses/new-this-month-in-france) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-france) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-france) [Zona tranquila 12](https://realhunt.co/es/cheap-houses/quiet-location-in-france)
+Por característica [Con jardín 16](https://realhunt.co/es/cheap-houses/with-garden-in-france) [Casas de piedra 14](https://realhunt.co/es/cheap-houses/stone-houses-in-france) [Con terraza 17](https://realhunt.co/es/cheap-houses/with-a-terrace-in-france) [Para entrar a vivir 12](https://realhunt.co/es/cheap-houses/turnkey-in-france) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-france) [Con chimenea 8](https://realhunt.co/es/cheap-houses/with-fireplace-in-france) [Con garaje 10](https://realhunt.co/es/cheap-houses/with-garage-in-france) [Cerca de un aeropuerto 12](https://realhunt.co/es/cheap-houses/near-an-airport-in-france) [Menos de 500 €/m² 3](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-france) [Nota 90 o más 13](https://realhunt.co/es/cheap-houses/score-90-plus-in-france) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-france) [Nuevas este mes 21](https://realhunt.co/es/cheap-houses/new-this-month-in-france) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-france) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-france) [Zona tranquila 12](https://realhunt.co/es/cheap-houses/quiet-location-in-france) [Más de 80 m² 23](https://realhunt.co/es/cheap-houses/over-80-sqm-in-france) [Más de 120 m² 8](https://realhunt.co/es/cheap-houses/over-120-sqm-in-france)
 
-Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-france) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-france)
+Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-france) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-france) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-france)
 
 Por característica y presupuesto [Casas, menos de 100.000 € 9](https://realhunt.co/es/cheap-houses/houses-under-100000-in-france) [Con jardín, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-france) [Casas de pueblo, menos de 50.000 € 4](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-france) [Para entrar a vivir, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-france)
 
@@ -185,11 +229,13 @@ En libras y en dólares [Menos de 100.000 libras 27](https://realhunt.co/es/chea
 
 Cerca de una ciudad [Cerca de Lyon 6](https://realhunt.co/es/cheap-houses/near-lyon)
 
+Países vecinos [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Alemania 21](https://realhunt.co/es/homes/germany)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de bienici.com (31), green-acres.fr (10), espaces-atypiques.com (1), french-property.com (1), instagram.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Francia](https://realhunt.co/es/alerts?country=France) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=France#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Francia](https://realhunt.co/es/alerts?country=France) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=France#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Francia](https://realhunt.co/es/sitemap/france)
 
 ---
 Fuente: https://realhunt.co/es/homes/france (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

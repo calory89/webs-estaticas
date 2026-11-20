@@ -26,6 +26,15 @@ Median size
 Top score
 94
 
+Buying costs
+1.5–4%
+
+Foreign buyers
+Some limits
+
+Data of
+20 Nov 2026
+
 ### The 14 homes, best score first
 
 - [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · Added todayAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
@@ -72,6 +81,14 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 5 with a garden, 5 with a terrace, 1 with a garage, 2 with a fireplace.
 - Scores: 81 to 94 out of 98. The best rated: [Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k).
 - Newest, added 20 November 2026: [Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k). 5 of these homes were added in the last 30 days.
+
+### Median price by region in Canada
+
+Region | Homes | Median price
+Saskatchewan | 2 | €68,327
+Newfoundland | 2 | €99,323
+[New Brunswick](https://realhunt.co/homes/canada/new-brunswick) | 4 | €99,500
+[Nova Scotia](https://realhunt.co/homes/canada/nova-scotia) | 6 | €127,100
 
 ### Buying costs and rules for foreigners in Canada
 
@@ -124,15 +141,19 @@ By region [Nova Scotia 6](https://realhunt.co/homes/canada/nova-scotia) [New Bru
 
 By area [Atlantic Canada 12](https://realhunt.co/homes/canada/atlantic-canada)
 
-By feature [Near a lake 3](https://realhunt.co/cheap-houses/near-a-lake-in-canada) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-canada) [With a terrace 5](https://realhunt.co/cheap-houses/with-a-terrace-in-canada) [Move-in ready 3](https://realhunt.co/cheap-houses/turnkey-in-canada) [New this month 5](https://realhunt.co/cheap-houses/new-this-month-in-canada) [Quiet location 4](https://realhunt.co/cheap-houses/quiet-location-in-canada)
+By feature [Near a lake 3](https://realhunt.co/cheap-houses/near-a-lake-in-canada) [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-canada) [With a terrace 5](https://realhunt.co/cheap-houses/with-a-terrace-in-canada) [Move-in ready 3](https://realhunt.co/cheap-houses/turnkey-in-canada) [New this month 5](https://realhunt.co/cheap-houses/new-this-month-in-canada) [Quiet location 4](https://realhunt.co/cheap-houses/quiet-location-in-canada) [Over 80 m² 10](https://realhunt.co/cheap-houses/over-80-sqm-in-canada) [Over 120 m² 6](https://realhunt.co/cheap-houses/over-120-sqm-in-canada)
+
+Rankings [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-canada)
 
 By feature and budget [By the sea under €100,000 5](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-canada)
+
+Neighbouring countries [United States 59](https://realhunt.co/homes/united-states)
 
 By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
 
 These listings come from redfin.ca (9), remax.ca (5). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
-[Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+[Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Canada](https://realhunt.co/sitemap/canada)
 
 ---
 Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

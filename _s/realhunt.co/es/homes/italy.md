@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 91
 
+Gastos de compra
+4–15%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 30 mejores de 73, por nota
 
 - [Nota 91Nueva115.000 €Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de ComoSan Siro, Lombardía85 m² · 2 dorm. · 1.353 €/m² · 11 días en RealHuntCasa pareada de 85 m² restaurada y habitable en el casco antiguo peatonal de San Siro, en la orilla oeste del lago de Como.](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633)
@@ -137,6 +146,24 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 73 a 91 sobre 98. La de mejor nota: [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de ladera renovada con grandes terrazas cerca de Castellino Tanaro, Piamonte](https://realhunt.co/es/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k). 26 de estas viviendas se añadieron en los últimos 30 días.
 
+### Precio mediano por región en Italia
+
+Región | Viviendas | Precio mediano
+[Lacio](https://realhunt.co/es/homes/italy/lazio) | 7 | 20.000 €
+[Calabria](https://realhunt.co/es/homes/italy/calabria) | 8 | 35.000 €
+[Sicilia](https://realhunt.co/es/homes/italy/sicily) | 6 | 45.000 €
+Marche | 1 | 55.000 €
+[Abruzos](https://realhunt.co/es/homes/italy/abruzzo) | 3 | 59.000 €
+[Apulia](https://realhunt.co/es/homes/italy/apulia) | 5 | 65.000 €
+[Toscana](https://realhunt.co/es/homes/italy/tuscany) | 10 | 83.000 €
+[Lago de Como](https://realhunt.co/es/homes/italy/lake-como) | 5 | 85.000 €
+[Lombardía](https://realhunt.co/es/homes/italy/lombardy) | 4 | 115.000 €
+Le Marche | 2 | 120.000 €
+[Umbría](https://realhunt.co/es/homes/italy/umbria) | 7 | 130.000 €
+[Piamonte](https://realhunt.co/es/homes/italy/piedmont) | 4 | 140.000 €
+[Cerdeña](https://realhunt.co/es/homes/italy/sardinia) | 7 | 150.000 €
+[Liguria](https://realhunt.co/es/homes/italy/liguria) | 3 | 170.000 €
+
 ### Gastos de compra y normas para extranjeros en Italia
 
 Los impuestos y gastos añaden alrededor de un 4 a 15 % al precio: Impuesto de registro del 9% en una segunda vivienda (segunda mano), o IVA en obra nueva; notario 1-2% + abogado ~1% + agente ~3% (GPG, compra y venta: 10-18%). En la vivienda mediana de esta página (65.000 €) son de 2.600 € a 9.750 €, es decir, de 67.600 € a 74.750 € en total.
@@ -195,21 +222,23 @@ Por región [Toscana 10](https://realhunt.co/es/homes/italy/tuscany) [Calabria 8
 
 Por zona [Sur de Italia 29](https://realhunt.co/es/homes/italy/southern-italy) [Abruzos y Las Marcas 4](https://realhunt.co/es/homes/italy/abruzzo-and-marche)
 
-Por característica [Cerca de un lago 13](https://realhunt.co/es/cheap-houses/near-a-lake-in-italy) [Con jardín 19](https://realhunt.co/es/cheap-houses/with-garden-in-italy) [Casas de piedra 21](https://realhunt.co/es/cheap-houses/stone-houses-in-italy) [Con terraza 38](https://realhunt.co/es/cheap-houses/with-a-terrace-in-italy) [Para entrar a vivir 15](https://realhunt.co/es/cheap-houses/turnkey-in-italy) [Vistas al mar 12](https://realhunt.co/es/cheap-houses/with-sea-view-in-italy) [Con chimenea 24](https://realhunt.co/es/cheap-houses/with-fireplace-in-italy) [Con garaje 12](https://realhunt.co/es/cheap-houses/with-garage-in-italy) [En una isla 13](https://realhunt.co/es/cheap-houses/on-an-island-in-italy) [De montaña 5](https://realhunt.co/es/cheap-houses/in-the-mountains-in-italy) [Olivos o viñas 4](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-italy) [Cerca de un aeropuerto 18](https://realhunt.co/es/cheap-houses/near-an-airport-in-italy) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-italy) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-italy) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-italy) [Nuevas este mes 26](https://realhunt.co/es/cheap-houses/new-this-month-in-italy) [Elementos de época 13](https://realhunt.co/es/cheap-houses/with-period-features-in-italy) [Buen tiempo 3](https://realhunt.co/es/cheap-houses/good-weather-in-italy) [Zona tranquila 36](https://realhunt.co/es/cheap-houses/quiet-location-in-italy)
+Por característica [Cerca de un lago 13](https://realhunt.co/es/cheap-houses/near-a-lake-in-italy) [Con jardín 19](https://realhunt.co/es/cheap-houses/with-garden-in-italy) [Casas de piedra 21](https://realhunt.co/es/cheap-houses/stone-houses-in-italy) [Con terraza 38](https://realhunt.co/es/cheap-houses/with-a-terrace-in-italy) [Para entrar a vivir 15](https://realhunt.co/es/cheap-houses/turnkey-in-italy) [Vistas al mar 12](https://realhunt.co/es/cheap-houses/with-sea-view-in-italy) [Con chimenea 24](https://realhunt.co/es/cheap-houses/with-fireplace-in-italy) [Con garaje 12](https://realhunt.co/es/cheap-houses/with-garage-in-italy) [En una isla 13](https://realhunt.co/es/cheap-houses/on-an-island-in-italy) [De montaña 5](https://realhunt.co/es/cheap-houses/in-the-mountains-in-italy) [Olivos o viñas 4](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-italy) [Cerca de un aeropuerto 18](https://realhunt.co/es/cheap-houses/near-an-airport-in-italy) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-italy) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-italy) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-italy) [Nuevas este mes 26](https://realhunt.co/es/cheap-houses/new-this-month-in-italy) [Nuevas esta semana 19](https://realhunt.co/es/cheap-houses/new-this-week-in-italy) [Elementos de época 13](https://realhunt.co/es/cheap-houses/with-period-features-in-italy) [Buen tiempo 3](https://realhunt.co/es/cheap-houses/good-weather-in-italy) [Zona tranquila 36](https://realhunt.co/es/cheap-houses/quiet-location-in-italy) [Más de 80 m² 24](https://realhunt.co/es/cheap-houses/over-80-sqm-in-italy) [Más de 120 m² 11](https://realhunt.co/es/cheap-houses/over-120-sqm-in-italy)
 
-Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-italy)
+Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-italy) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-italy)
 
-Por característica y presupuesto [Casas, menos de 100.000 € 28](https://realhunt.co/es/cheap-houses/houses-under-100000-in-italy) [Casas de pueblo, menos de 50.000 € 21](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-italy) [Casas, menos de 50.000 € 19](https://realhunt.co/es/cheap-houses/houses-under-50000-in-italy) [Casas de piedra, menos de 100.000 € 17](https://realhunt.co/es/cheap-houses/stone-houses-under-100000-in-italy) [Pisos, menos de 100.000 € 11](https://realhunt.co/es/cheap-houses/apartments-under-100000-in-italy) [Pisos, menos de 50.000 € 9](https://realhunt.co/es/cheap-houses/apartments-under-50000-in-italy) [Con jardín, menos de 100.000 € 9](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-italy) [Vistas al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/with-sea-view-under-100000-in-italy) [Junto al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-italy) [Casas de pueblo, menos de 30.000 € 7](https://realhunt.co/es/cheap-houses/village-houses-under-30000-in-italy) [Para entrar a vivir, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-italy) [Junto al mar, menos de 50.000 € 6](https://realhunt.co/es/cheap-houses/by-the-sea-under-50000-in-italy)
+Por característica y presupuesto [Casas, menos de 100.000 € 28](https://realhunt.co/es/cheap-houses/houses-under-100000-in-italy) [Casas de pueblo, menos de 50.000 € 21](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-italy) [Casas, menos de 50.000 € 19](https://realhunt.co/es/cheap-houses/houses-under-50000-in-italy) [Casas de piedra, menos de 100.000 € 17](https://realhunt.co/es/cheap-houses/stone-houses-under-100000-in-italy) [Pisos, menos de 100.000 € 11](https://realhunt.co/es/cheap-houses/apartments-under-100000-in-italy) [Pisos, menos de 50.000 € 9](https://realhunt.co/es/cheap-houses/apartments-under-50000-in-italy) [Con jardín, menos de 100.000 € 9](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-italy) [Vistas al mar, menos de 150.000 € 8](https://realhunt.co/es/cheap-houses/with-sea-view-under-150000-in-italy) [Vistas al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/with-sea-view-under-100000-in-italy) [Junto al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-italy) [Casas de pueblo, menos de 30.000 € 7](https://realhunt.co/es/cheap-houses/village-houses-under-30000-in-italy) [Para entrar a vivir, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-italy)
 
 En libras y en dólares [Menos de 50.000 dólares 28](https://realhunt.co/es/cheap-houses/under-50000-dollars-in-italy)
 
 Cerca de una ciudad [Cerca de Milán 9](https://realhunt.co/es/cheap-houses/near-milan) [Cerca de Roma 8](https://realhunt.co/es/cheap-houses/near-rome)
 
+Países vecinos [Francia 45](https://realhunt.co/es/homes/france) [Suiza 10](https://realhunt.co/es/homes/switzerland)
+
 Por país [España 137](https://realhunt.co/es/homes/spain) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de green-acres.it (29), idealista.it (16), instagram.com (13), immobiliare.it (10), rightmove.co.uk (2). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Italia](https://realhunt.co/es/alerts?country=Italy) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Italy#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Italia](https://realhunt.co/es/alerts?country=Italy) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Italy#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Italia](https://realhunt.co/es/sitemap/italy)
 
 ---
 Fuente: https://realhunt.co/es/homes/italy (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

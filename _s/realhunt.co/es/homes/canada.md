@@ -26,6 +26,15 @@ Tamaño mediano
 Mejor nota
 94
 
+Gastos de compra
+1,5–4%
+
+Compradores extranjeros
+Con límites
+
+Datos del
+20 nov 2026
+
 ### Las 14 viviendas, de mejor a peor nota
 
 - [Nota 88Nueva124.000 €Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva EscociaHillsburn, Nueva Escocia106 m² · 3 dorm. · 1.170 €/m² · Añadida hoySe pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en…](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
@@ -72,6 +81,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 5 con jardín, 5 con terraza, 1 con garaje, 2 con chimenea.
 - Notas: de 81 a 94 sobre 98. La de mejor nota: [Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva Escocia](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva Escocia](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k). 5 de estas viviendas se añadieron en los últimos 30 días.
+
+### Precio mediano por región en Canadá
+
+Región | Viviendas | Precio mediano
+Saskatchewan | 2 | 68.327 €
+Terranova | 2 | 99.323 €
+[Nuevo Brunswick](https://realhunt.co/es/homes/canada/new-brunswick) | 4 | 99.500 €
+[Nueva Escocia](https://realhunt.co/es/homes/canada/nova-scotia) | 6 | 127.100 €
 
 ### Gastos de compra y normas para extranjeros en Canadá
 
@@ -124,15 +141,19 @@ Por región [Nueva Escocia 6](https://realhunt.co/es/homes/canada/nova-scotia) [
 
 Por zona [Canadá atlántico 12](https://realhunt.co/es/homes/canada/atlantic-canada)
 
-Por característica [Cerca de un lago 3](https://realhunt.co/es/cheap-houses/near-a-lake-in-canada) [Con jardín 5](https://realhunt.co/es/cheap-houses/with-garden-in-canada) [Con terraza 5](https://realhunt.co/es/cheap-houses/with-a-terrace-in-canada) [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-canada) [Nuevas este mes 5](https://realhunt.co/es/cheap-houses/new-this-month-in-canada) [Zona tranquila 4](https://realhunt.co/es/cheap-houses/quiet-location-in-canada)
+Por característica [Cerca de un lago 3](https://realhunt.co/es/cheap-houses/near-a-lake-in-canada) [Con jardín 5](https://realhunt.co/es/cheap-houses/with-garden-in-canada) [Con terraza 5](https://realhunt.co/es/cheap-houses/with-a-terrace-in-canada) [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-canada) [Nuevas este mes 5](https://realhunt.co/es/cheap-houses/new-this-month-in-canada) [Zona tranquila 4](https://realhunt.co/es/cheap-houses/quiet-location-in-canada) [Más de 80 m² 10](https://realhunt.co/es/cheap-houses/over-80-sqm-in-canada) [Más de 120 m² 6](https://realhunt.co/es/cheap-houses/over-120-sqm-in-canada)
+
+Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-canada)
 
 Por característica y presupuesto [Junto al mar, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-canada)
+
+Países vecinos [Estados Unidos 59](https://realhunt.co/es/homes/united-states)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de redfin.ca (9), remax.ca (5). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en Canadá](https://realhunt.co/es/alerts?country=Canada) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Canada#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en Canadá](https://realhunt.co/es/alerts?country=Canada) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Canada#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Canadá](https://realhunt.co/es/sitemap/canada)
 
 ---
 Fuente: https://realhunt.co/es/homes/canada (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

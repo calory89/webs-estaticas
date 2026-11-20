@@ -22,6 +22,15 @@ Tamaño mediano
 Mejor nota
 94
 
+Gastos de compra
+2–9%
+
+Compradores extranjeros
+Compra libre
+
+Datos del
+20 nov 2026
+
 ### Las 18 viviendas, de mejor a peor nota
 
 - [Nota 94299.000 €Piso esquinero remodelado con balcón al sur sobre el canal, ReigersbosReigersbos, Amsterdam73 m² · 2 dorm. · 4.096 €/m² · 38 días en RealHunt72 m² en 1ª planta: se rehízo la distribución con los dormitorios delante y el salón detrás, con cocina moderna oscura, baño nuevo con lavadora y…](https://realhunt.co/es/deal/nl-amsterdam-299k-563619)
@@ -119,13 +128,17 @@ Por dormitorios [2 dormitorios 11](https://realhunt.co/es/homes/netherlands/2-be
 
 Por zona [Ámsterdam Sudeste 13](https://realhunt.co/es/homes/netherlands/amsterdam-zuidoost)
 
-Por característica [Con terraza 15](https://realhunt.co/es/cheap-houses/with-a-terrace-in-netherlands) [Nota 90 o más 5](https://realhunt.co/es/cheap-houses/score-90-plus-in-netherlands)
+Por característica [Con terraza 15](https://realhunt.co/es/cheap-houses/with-a-terrace-in-netherlands) [Nota 90 o más 5](https://realhunt.co/es/cheap-houses/score-90-plus-in-netherlands) [Más de 80 m² 4](https://realhunt.co/es/cheap-houses/over-80-sqm-in-netherlands)
+
+Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-netherlands)
+
+Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany)
 
 Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
 
 Estos anuncios proceden de funda.nl (18). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
-[Avísame por correo de viviendas nuevas en los Países Bajos](https://realhunt.co/es/alerts?country=Netherlands) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Netherlands#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+[Avísame por correo de viviendas nuevas en los Países Bajos](https://realhunt.co/es/alerts?country=Netherlands) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Netherlands#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en los Países Bajos](https://realhunt.co/es/sitemap/netherlands)
 
 ---
 Fuente: https://realhunt.co/es/homes/netherlands (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
