@@ -177,7 +177,7 @@ async function monthPage(u, env, shell, lang) {
     '<p class="n31-s">' + esc(t(lang, 'm_src', { d: rd })) + ' <a href="/data/progress.json">progress.json</a> · <a href="/data/named.json">named.json</a></p><p class="n31-s" id="cite">' + esc(t(lang, 'm_cite', { mo: moN, d: rd })) + ' <a href="' + pre(lang) + '/cite/">/cite/</a></p>';
   return page(shell, lang, { title: t(lang, 'm_title', { mo: moN }), desc: t(lang, 'm_desc', { mo: moN }), h1: t(lang, 'm_title', { mo: moN }), lead: t(lang, 'm_lead'), canon: ORIGIN + pre(lang) + '/reports/month/', alt: altOf('/reports/month/'),
     crumb: [[pre(lang) + '/reports/', t(lang, 'reports')], [null, moN]], body, mod: now.d, type: 'Report',
-    ld: [{ '@type': 'Dataset', name: t(lang, 'm_title', { mo: moN }), url: ORIGIN + pre(lang) + '/reports/month/', license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: now.d, temporalCoverage: mo, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/progress.json' }] }] });
+    ld: [{ '@type': 'Dataset', name: t(lang, 'm_title', { mo: moN }), description: t(lang, 'm_lead') || t(lang, 'm_title', { mo: moN }), url: ORIGIN + pre(lang) + '/reports/month/', license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: now.d, temporalCoverage: mo, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/progress.json' }] }] });
 }
 
 // ------------------------------------------------------------------------------------------------ items 228 and 230: /docs/
