@@ -797,6 +797,7 @@ function devPage(ix, dv, lang, extra) {
     [tr(lang, 'q_dproj', { dev: name }), L.map(x => x.n + ' (' + mkName(x.mk, lang) + ')').join(', ') + '.']];
   // s15a: register, on-time delivery and buyer reviews, answered from the GLEIF lookup and our promise record
   FAQ.splice(1, 0, [tr(lang, 'q_dreg', { dev: name }), gl.matches.length ? gl.matches.slice(0, 2).map(m => tr(lang, 'gleif_found', { legal: m.legal, lei: m.lei, jur: m.jur, st: m.st, ls: m.ls, reg: fd(m.reg, lang) })).join(' ') : gl.ok ? tr(lang, 'a_dreg_none', { d: fd(gl.at, lang) }) : tr(lang, 'a_dreg_err')]);
+  if (fx.developer_company && cleanOk(String(fx.developer_company))) FAQ[1][1] += ' ' + tr(lang, 'df_company') + ': ' + String(fx.developer_company) + ' (' + tr(lang, 'dfacts_src', { n: dsrc('developer_company').n }) + ').';   // n33p (item 46): the company line of our record, with its source
   FAQ.splice(2, 0, [tr(lang, 'q_ddeliv', { dev: name }), P.length ? tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') }) : tr(lang, 'drec_none')]);
   if (FD) FAQ.splice(3, 0, FD.faq);
   FAQ.push([tr(lang, 'q_drev', { dev: name }), tr(lang, 'a_drev')]);
