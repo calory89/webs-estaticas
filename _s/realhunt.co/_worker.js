@@ -65,7 +65,8 @@ function asset(env, req, path) {
    the site build (score-insight-rank seo/pack.ts, same FNV-1a hash of the path), so the deploy does not need one file per page.
    Up to 24 bundles stay in memory for 2 minutes. A page that is not in its bundle falls back to its own file.
    /__pk/<path> serves a page only from the bundles (noindex), to compare them with the files. */
-const RH_PK_SERVE = false, RH_PK = new Map(), RH_PK_RE = /^\/(?:es\/)?deal\/[\w.~-]+$/;
+/* rh-pack-2 (20 Nov 2026): on for every home page, after all 1,366 pages compared equal with their files */
+const RH_PK_SERVE = true, RH_PK = new Map(), RH_PK_RE = /^\/(?:es\/)?deal\/[\w.~-]+$/;
 function packShard(k) { let h = 0x811c9dc5; for (let i = 0; i < k.length; i++) { h ^= k.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h % 256; }
 async function packPage(env, req, path) {
   if (!RH_PK_RE.test(path)) return null;
@@ -171,6 +172,7 @@ export default {
     }
     if (u.pathname === '/_worker.js' || u.pathname.startsWith('/_rhbuild')) return new Response('Not found', { status: 404 });
     const r = await env.ASSETS.fetch(req);
+    if (r.status === 404 && RH_PK_RE.test(u.pathname)) { const pk = await packPage(env, req, u.pathname); if (pk) return pk; }
     if (!IMG.test(u.pathname) || isImg(r)) return r;
     const t = await topImage(u); if (t) return t;
     return new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain' } });
