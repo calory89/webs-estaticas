@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "markets": 182,
  "countries": 94,
  "note": "Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.",
@@ -7204,7 +7204,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": null,
@@ -19072,14 +19072,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 3,
    "fp": {
     "sha256": "bf495553e2fc94be9e26e70c2f86a10bcdeae2b6e6728302e85d156a1ca513c5",
     "date": "2026-11-15"
@@ -19137,14 +19137,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 4
   },
   {
    "id": "BNE-005",
@@ -72808,7 +72808,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 1,
+    "verified": 3,
     "unverified": 8,
     "contradicted": 0
    },
@@ -72874,7 +72874,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 3,
+    "verified": 4,
     "unverified": 6,
     "contradicted": 1
    },
@@ -72939,7 +72939,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 5,
     "contradicted": 2
    },
@@ -73004,7 +73004,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 7,
     "contradicted": 1
    },
@@ -73077,7 +73077,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 4,
     "contradicted": 1
    },
@@ -73208,14 +73208,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 4,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 11,
    "fp": {
     "sha256": "35b48fa5eb675285ac24cbca1d4f4fc46be62c97b14a48fac6ce0c89575090c4",
     "date": "2026-11-05"
@@ -104161,7 +104161,7 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 1
    },
    "stage": "off-plan",
@@ -107971,14 +107971,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "PER-004",
@@ -108033,14 +108033,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "PER-005",
@@ -127557,7 +127557,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 2,
+    "verified": 3,
     "unverified": 7,
     "contradicted": 2
    },
@@ -127641,7 +127641,7 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 4,
+    "verified": 5,
     "unverified": 5,
     "contradicted": 2
    },
@@ -128029,14 +128029,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "SYD-010",
@@ -134527,18 +134527,18 @@
   }
  ],
  "db": {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "projects": 2002,
   "markets": 182,
   "countries": 94,
-  "sources": 7953,
-  "data_points": 51374,
+  "sources": 7967,
+  "data_points": 51380,
   "claims": {
-   "verified": 6172,
-   "unverified": 8017,
+   "verified": 6186,
+   "unverified": 8019,
    "contradicted": 1370
   },
-  "claims_total": 15559,
+  "claims_total": 15575,
   "deep_profiles": 2002,
   "checks_by_level": {
    "registry": 1792,
