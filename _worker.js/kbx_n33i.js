@@ -51,6 +51,7 @@ export async function pre(req, u, env) {
 }
 
 // ---------- after the answer ----------
+const POST_ONLY = /^\/api\/kb\/(?:analyze|progress|ask|document|plan|report-draft|csp|copilot|bulk|err)\/?$/;
 const TRACK = /^(utm_[a-z]+|gclid|fbclid|msclkid|ref|src)$/i;
 function linkFix(href) {   // -> null (leave), { nf: true } (add nofollow), { p: id } or { m: slug } (clean path)
   if (!href || /^(#|mailto:|tel:|javascript:|data:|webcal:)/i.test(href)) return null;
@@ -73,8 +74,9 @@ export async function post(req, u, r, env) {
   if (/^\/api\//.test(u.pathname)) {
     if (r.headers.has('x-robots-tag') && !(req.method === 'GET' && r.status === 404 && /^\/api\/kb\//.test(u.pathname))) return r;
     const h = new Headers(r.headers); if (!h.has('x-robots-tag')) h.set('x-robots-tag', 'noindex');
-    const st = req.method === 'GET' && r.status === 404 && /^\/api\/kb\//.test(u.pathname) ? 410 : r.status;
-    return new Response(r.body, { status: st, statusText: st === 410 ? 'Gone' : r.statusText, headers: h });
+    let st = r.status;
+    if (req.method === 'GET' && st === 404 && /^\/api\/kb\//.test(u.pathname)) { st = POST_ONLY.test(u.pathname) ? 405 : 410; if (st === 405) h.set('allow', 'POST'); }   // endpoints our pages POST to answer 405, never-existing paths 410
+    return new Response(r.body, { status: st, statusText: st === 410 ? 'Gone' : st === 405 ? 'Method Not Allowed' : r.statusText, headers: h });
   }
   if (req.method !== 'GET' || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
   let ix = null;
