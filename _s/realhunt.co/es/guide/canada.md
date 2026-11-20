@@ -36,9 +36,9 @@ Impuesto sobre los ingresos por alquiler: A los no residentes se les retiene el 
 - [99.500 € · Casa en la costa acadiana con 4 dormitorios y baño nuevo](https://realhunt.co/es/deal/ca-grande-anse-99k-148091) · Grande-Anse, Nuevo Brunswick · nota 86 · 107 m² · 4 dorm.
 - [127.100 € · Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva Escocia](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k) · Pictou, Nueva Escocia · nota 86 · 132 m² · 3 dorm.
 
-[Las 11 casas en Canadá](https://realhunt.co/homes/canada)
+[Las 11 casas en Canadá](https://realhunt.co/es/homes/canada)
 
-[Gastos, impuestos y fuentes de Canadá](https://realhunt.co/costs/canada) · [Calculadora de gastos de compra para Canadá](https://realhunt.co/es/buying-costs/canada) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
+[Gastos, impuestos y fuentes de Canadá](https://realhunt.co/es/costs/canada) · [Calculadora de gastos de compra para Canadá](https://realhunt.co/es/buying-costs/canada) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara Canadá
 
@@ -67,4 +67,4 @@ Impuesto sobre los ingresos por alquiler: A los no residentes se les retiene el 
 Quién escribe esto. RealHunt Research es el nombre con el que RealHunt publica sus propios estudios y guías; RealHunt pertenece a Equinox Investment Group LLC, fundada por Carlos de Ory Gordillo. Las normas, los impuestos y los gastos se recopilan de las fuentes citadas en esta página; los precios salen de las casas publicadas en RealHunt. Información general, no asesoramiento jurídico ni fiscal. [Política editorial y correcciones](https://realhunt.co/es/editorial-policy) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Quiénes somos](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/guide/canada (RealHunt, 2026-11-19)
+Fuente: https://realhunt.co/es/guide/canada (RealHunt, 2026-11-20)

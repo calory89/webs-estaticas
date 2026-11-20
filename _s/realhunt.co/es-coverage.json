@@ -2,60 +2,13 @@
  "noindex_copies": 7,
  "written_by_hand": {
   "pages": 737,
-  "words": 373233,
-  "english": 21,
-  "failed": [
-   {
-    "url": "https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k",
-    "english": 15,
-    "words": 455,
-    "hits": [
-     "by",
-     "the",
-     "by",
-     "by",
-     "the",
-     "by",
-     "the",
-     "by",
-     "the",
-     "by",
-     "the",
-     "by"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/ca-grande-anse-99k-148091",
-    "english": 2,
-    "words": 399,
-    "hits": [
-     "by",
-     "the"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/astle-93111",
-    "english": 2,
-    "words": 251,
-    "hits": [
-     "by",
-     "the"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/minto-99323",
-    "english": 2,
-    "words": 262,
-    "hits": [
-     "by",
-     "the"
-    ]
-   }
-  ]
+  "words": 373255,
+  "english": 0,
+  "failed": []
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1025,
+ "twins": 1034,
  "groups": {
   "homes": {
    "pages": 634,
@@ -67,24 +20,24 @@
   },
   "places": {
    "pages": 488,
-   "twins": 481,
-   "words": 1017980,
-   "english": 66,
-   "spanish_pct": 99.99
+   "twins": 488,
+   "words": 1017868,
+   "english": 0,
+   "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
-   "twins": 7,
-   "words": 2731,
-   "english": 420,
+   "twins": 8,
+   "words": 2728,
+   "english": 418,
    "by_hand": 2,
-   "spanish_pct": 84.62
+   "spanish_pct": 84.68
   },
   "content": {
    "pages": 583,
-   "twins": 581,
-   "words": 446664,
-   "english": 2,
+   "twins": 582,
+   "words": 446661,
+   "english": 0,
    "by_hand": 42,
    "spanish_pct": 100
   },
@@ -96,132 +49,8 @@
    "spanish_pct": 89.02
   }
  },
- "not_published": 477,
+ "not_published": 468,
  "not_published_sample": [
-  {
-   "url": "https://realhunt.co/homes/canada",
-   "english": 8,
-   "words": 1984,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/homes/canada/by-the-sea",
-   "english": 8,
-   "words": 1435,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/homes/canada/new-brunswick",
-   "english": 12,
-   "words": 1176,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-garden-in-canada",
-   "english": 10,
-   "words": 1111,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-canada",
-   "english": 10,
-   "words": 1191,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/homes/canada/atlantic-canada",
-   "english": 8,
-   "words": 1507,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/cheap-houses/quiet-location-in-canada",
-   "english": 10,
-   "words": 1253,
-   "hits": [
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the",
-    "by",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/new",
-   "english": 2,
-   "words": 984,
-   "hits": [
-    "by",
-    "the"
-   ]
-  },
   {
    "url": "https://realhunt.co/extension",
    "english": 13,
@@ -6329,6 +6158,140 @@
    "url": "https://realhunt.co/top/batumi/next-address-khimshiashvili-batumi",
    "english": 9,
    "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/serenade-airport-batumi",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/well-home-batumi-batumi",
+   "english": 13,
+   "words": 76,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/nbg-duo-khimshiashvili-batumi",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/marina-club-airport-batumi",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/villa-makhinjauri-batumi",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/dest-asatiani-batumi-batumi",
+   "english": 13,
+   "words": 79,
+   "hits": [
+    "Apartments",
+    "in",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "Apartments",
+    "in",
+    "See"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/parkside-villas-airport-batumi",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/batumi/summer-365-airport-batumi",
+   "english": 9,
+   "words": 81,
    "hits": [
     "Ranked",
     "in",

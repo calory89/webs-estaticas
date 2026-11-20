@@ -1,8 +1,8 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 19 November 2026, RealHunt lists 11 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 11 homes is €93,111 (€963 per m², from the 11 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 20 November 2026, RealHunt lists 11 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 11 homes is €93,111 (€963 per m², from the 11 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/canada · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/canada · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
 | Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied. |
 | Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026. |
-| Date of these figures | 19 November 2026 |
+| Date of these figures | 20 November 2026 |
 
 ## Costs and taxes
 
@@ -125,11 +125,11 @@ https://realhunt.co/deal/shearstown-99323
 
 https://realhunt.co/deal/minto-99323
 
-### Four-bedroom house on about five acres in St. Andrews by-the-Sea, New Brunswick
+### Four-bedroom house on about five acres in Saint Andrews, New Brunswick
 
 €190,700 · Saint Andrews, New Brunswick · 150 m² · 4 bedrooms · RealHunt score 82 · added 2026-11-18
 
-Asking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of St. Andrews by-the-Sea, a well-known coastal resort town in New Brunswick. It has four bedrooms and two full bathrooms, two bedrooms on the main level and two below, a bright living room with wood floors, a kitchen with wood cabinets and large decks. The land is mostly lawn and trees, with a storage shed, and the aerial photos show the bay in the distance. Downtown shops, restaurants and the waterfront are minutes away. Yearly property tax C$3,679.
+Asking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of Saint Andrews, a well-known coastal resort town in New Brunswick. It has four bedrooms and two full bathrooms, two bedrooms on the main level and two below, a bright living room with wood floors, a kitchen with wood cabinets and large decks. The land is mostly lawn and trees, with a storage shed, and the aerial photos show the bay in the distance. Downtown shops, restaurants and the waterfront are minutes away. Yearly property tax C$3,679.
 
 https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 

@@ -1,8 +1,8 @@
 # Cheap homes in Denmark: key facts and every home on RealHunt
 
-On 19 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
+On 20 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/denmark · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/denmark · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://realhunt.co/data/countries/denmark.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://re
 | Taxes and fees to buy | 1.5–3% of the price (as of 2026) |
 | Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. |
 | Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. |
-| Date of these figures | 19 November 2026 |
+| Date of these figures | 20 November 2026 |
 
 ## Costs and taxes
 
@@ -415,7 +415,7 @@ https://realhunt.co/deal/dk-herborg-89k-d18595
 
 ### Move-in ready villa with modern kitchen, big terrace and open field views near Høng
 
-€160,000 · Sæby near Høng, West Zealand · 101 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-18
+€160,000 · Sæby, near Høng · 101 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-18
 
 A bright, well-kept villa in the village of Sæby, a short drive from Høng in West Zealand, registered as a villa for year-round living and described as ready to move into. 101 m² from 1948 with a modern white handle-free kitchen open to the dining area, a roomy living room, three rooms including a first floor with skylights, and a bathroom with a separate shower. Outside there is a large wooden terrace, an easy green garden on a 491 m² plot, a carport and open views over the fields. Asking 1,195,000 DKK (about €160,000), around €1,585/m². Owner costs 1,291 DKK a month (about €173).
 

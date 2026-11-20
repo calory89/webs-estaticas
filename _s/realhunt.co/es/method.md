@@ -4,7 +4,7 @@ Metodología
 
 La nota RealHunt es una calificación de 70 a 98 que lleva cada casa de RealHunt. Primero una persona decide si la casa se publica; después la nota promedia hasta 11 notas parciales de 0 a 100, todas con el mismo peso, y compara la casa con todas las demás de la web.
 
-Versión 2026-11-14 · cifras de 634 casas a 19 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
+Versión 2026-11-14 · cifras de 634 casas a 20 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
 
 ### Paso 1. Una persona revisa la casa
 
@@ -66,4 +66,4 @@ Fecha | Qué cambió
 [La obra nueva usa otra clasificación: cómo funciona el Top 100](https://realhunt.co/top/how-we-rank) · [Quién está detrás de RealHunt](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/method (RealHunt, 2026-11-19)
+Fuente: https://realhunt.co/es/method (RealHunt, 2026-11-20)

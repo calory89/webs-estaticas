@@ -2,9 +2,9 @@
 
 Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€398/m²), Sweden (€701/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€43,240) and Germany (€55,000).
 
-Medians of 634 listings in 19 countries, each checked by a person, on 19 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+Medians of 634 listings in 19 countries, each checked by a person, on 20 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
 
-Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.csv
+Updated 20 November 2026. Source: RealHunt, https://realhunt.co/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.csv
 
 ## The table
 
@@ -13,7 +13,7 @@ Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/prices 
 | Japan | 32 | €43,240 | €398 | 16 | 88 m² | €7,400 | €91,080 | 17 | 86 |
 | Sweden | 38 | €73,000 | €701 | 20 | 110 m² | €22,000 | €99,000 | 22 | 85 |
 | Bulgaria (small sample) | 7 | €66,000 | €740 | 7 | 87 m² | €58,900 | €89,000 | 4 | 93 |
-| Denmark | 46 | €93,200 | €790 | 44 | 115 m² | €35,400 | €160,000 | 20 | 88 |
+| Denmark | 46 | €93,200 | €790 | 44 | 115 m² | €35,400 | €160,000 | 21 | 88 |
 | Canada | 11 | €93,111 | €963 | 11 | 94 m² | €55,842 | €190,700 | 4 | 86 |
 | Italy | 68 | €59,000 | €1,014 | 43 | 76 m² | €12,000 | €195,000 | 21 | 83 |
 | Germany | 20 | €55,000 | €1,053 | 20 | 51 m² | €40,000 | €60,000 | 7 | 81 |

@@ -1,8 +1,8 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 19 November 2026, RealHunt lists 186 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 186 homes is €96,000 (€1,208 per m², from the 182 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 20 November 2026, RealHunt lists 186 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 186 homes is €96,000 (€1,208 per m², from the 182 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/spain · Updated 19 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/spain · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 | Taxes and fees to buy | 7.5–14% of the price (as of 2026) |
 | Can foreigners buy? | Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted. |
 | Yearly property tax | IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes. |
-| Date of these figures | 19 November 2026 |
+| Date of these figures | 20 November 2026 |
 
 ## Costs and taxes
 

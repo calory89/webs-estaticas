@@ -1,8 +1,8 @@
 # Casas baratas en México: datos clave y todas las casas de RealHunt
 
-A 19 de noviembre de 2026, RealHunt publica 12 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 12 casas es de 83.448 € (1.266 € por m², calculado con las 12 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 160.200 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 12 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 12 casas es de 83.448 € (1.266 € por m², calculado con las 12 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 160.200 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/mexico · Actualizado el 19 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/mexico · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https:/
 | Impuestos y gastos de compra | 3,5–8% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, pero en la Zona Restringida (dentro de 50 km de la costa o 100 km de fronteras, que cubre Tulum y Playa del Carmen) solo mediante un fideicomiso bancario o una empresa mexicana; propiedad directa en otros lugares. |
 | Impuesto anual sobre la vivienda | Predial municipal, fijado localmente sobre el valor catastral; suele ser bajo, a menudo menos que las cuotas de comunidad (HOA). |
-| Fecha de estas cifras | 19 de noviembre de 2026 |
+| Fecha de estas cifras | 20 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

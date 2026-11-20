@@ -1,21 +1,21 @@
 {
- "total": 2140,
+ "total": 2186,
  "max_total": 2500,
  "langs": {
   "de": {
-   "pages": 477,
+   "pages": 487,
    "by_kind": {
-    "country": 16,
+    "country": 17,
     "gband": 5,
     "ccyBand": 13,
     "gfeature": 32,
-    "band": 49,
-    "feature": 158,
-    "setting": 20,
+    "band": 50,
+    "feature": 162,
+    "setting": 21,
     "combo": 47,
     "ptype": 10,
-    "beds": 25,
-    "near": 8,
+    "beds": 26,
+    "near": 10,
     "area": 16,
     "region": 52,
     "regionBand": 24,
@@ -25,6 +25,7 @@
     "spain": 78,
     "italy": 70,
     "united-states": 36,
+    "denmark": 31,
     "france": 35,
     "sweden": 33,
     "poland": 14,
@@ -38,70 +39,30 @@
     "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
-    "all countries": 51,
-    "denmark": 24
+    "all countries": 53,
+    "united-kingdom": 1
    },
    "homes": 541,
    "homes_with_title": 541,
-   "not_published": 11,
+   "not_published": 1,
    "not_published_sample": [
     {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
      "path": "/homes/united-kingdom",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/cheap-houses/near-copenhagen",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-aarhus",
-     "why": "a home without a title in this language, or a place without a vetted name"
+     "why": "English left: tax"
     }
    ],
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 232,
+   "pages": 236,
    "by_kind": {
-    "country": 16,
+    "country": 17,
     "gband": 5,
     "ccyBand": 13,
-    "band": 49,
-    "setting": 20,
+    "band": 50,
+    "setting": 21,
     "ptype": 10,
-    "beds": 25,
+    "beds": 26,
     "area": 16,
     "region": 52,
     "regionBand": 24,
@@ -111,6 +72,7 @@
     "spain": 49,
     "italy": 35,
     "united-states": 18,
+    "denmark": 16,
     "france": 15,
     "sweden": 18,
     "poland": 6,
@@ -125,49 +87,33 @@
     "dominican-republic": 3,
     "cyprus": 2,
     "all countries": 8,
-    "denmark": 13
+    "united-kingdom": 1
    },
    "homes": 541,
    "homes_with_title": 541,
-   "not_published": 5,
+   "not_published": 1,
    "not_published_sample": [
     {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
      "path": "/homes/united-kingdom",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "buying rules of united-kingdom not translated"
+     "why": "English left: tax"
     }
    ],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 477,
+   "pages": 487,
    "by_kind": {
-    "country": 16,
+    "country": 17,
     "gband": 5,
     "ccyBand": 13,
     "gfeature": 32,
-    "band": 49,
-    "feature": 158,
-    "setting": 20,
+    "band": 50,
+    "feature": 162,
+    "setting": 21,
     "combo": 47,
     "ptype": 10,
-    "beds": 25,
-    "near": 8,
+    "beds": 26,
+    "near": 10,
     "area": 16,
     "region": 52,
     "regionBand": 24,
@@ -177,6 +123,7 @@
     "spain": 78,
     "italy": 70,
     "united-states": 36,
+    "denmark": 31,
     "france": 35,
     "sweden": 33,
     "poland": 14,
@@ -190,74 +137,34 @@
     "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
-    "all countries": 51,
-    "denmark": 24
+    "all countries": 53,
+    "united-kingdom": 1
    },
    "homes": 541,
    "homes_with_title": 541,
-   "not_published": 11,
+   "not_published": 1,
    "not_published_sample": [
     {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
      "path": "/homes/united-kingdom",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/cheap-houses/near-copenhagen",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-aarhus",
-     "why": "a home without a title in this language, or a place without a vetted name"
+     "why": "English left: tax"
     }
    ],
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 477,
+   "pages": 488,
    "by_kind": {
-    "country": 16,
+    "country": 18,
     "gband": 5,
     "ccyBand": 13,
     "gfeature": 32,
-    "band": 49,
-    "feature": 158,
-    "setting": 20,
+    "band": 50,
+    "feature": 162,
+    "setting": 21,
     "combo": 47,
     "ptype": 10,
-    "beds": 25,
-    "near": 8,
+    "beds": 26,
+    "near": 10,
     "area": 16,
     "region": 52,
     "regionBand": 24,
@@ -267,6 +174,7 @@
     "spain": 78,
     "italy": 70,
     "united-states": 36,
+    "denmark": 31,
     "france": 35,
     "sweden": 33,
     "poland": 14,
@@ -280,74 +188,29 @@
     "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
-    "all countries": 51,
-    "denmark": 24
+    "united-kingdom": 2,
+    "all countries": 53
    },
    "homes": 541,
    "homes_with_title": 541,
-   "not_published": 11,
-   "not_published_sample": [
-    {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-kingdom",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/cheap-houses/near-copenhagen",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-aarhus",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    }
-   ],
+   "not_published": 0,
+   "not_published_sample": [],
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 477,
+   "pages": 488,
    "by_kind": {
-    "country": 16,
+    "country": 18,
     "gband": 5,
     "ccyBand": 13,
     "gfeature": 32,
-    "band": 49,
-    "feature": 158,
-    "setting": 20,
+    "band": 50,
+    "feature": 162,
+    "setting": 21,
     "combo": 47,
     "ptype": 10,
-    "beds": 25,
-    "near": 8,
+    "beds": 26,
+    "near": 10,
     "area": 16,
     "region": 52,
     "regionBand": 24,
@@ -357,6 +220,7 @@
     "spain": 78,
     "italy": 70,
     "united-states": 36,
+    "denmark": 31,
     "france": 35,
     "sweden": 33,
     "poland": 14,
@@ -370,64 +234,19 @@
     "portugal": 9,
     "dominican-republic": 6,
     "cyprus": 3,
-    "all countries": 51,
-    "denmark": 24
+    "united-kingdom": 2,
+    "all countries": 53
    },
    "homes": 541,
    "homes_with_title": 541,
-   "not_published": 11,
-   "not_published_sample": [
-    {
-     "path": "/homes/denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/denmark/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-denmark",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/united-kingdom",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "buying rules of united-kingdom not translated"
-    },
-    {
-     "path": "/cheap-houses/near-copenhagen",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-aarhus",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    }
-   ],
+   "not_published": 0,
+   "not_published_sample": [],
    "sitemap": "sitemap-pl.xml"
   }
  },
  "hreflang": {
-  "english_pages_linked": 477,
-  "spanish_pages_linked": 470
+  "english_pages_linked": 488,
+  "spanish_pages_linked": 488
  },
  "failures": []
 }

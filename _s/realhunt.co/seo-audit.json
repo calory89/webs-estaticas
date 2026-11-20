@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4101,
-  "indexable": 3561,
+  "pages": 4110,
+  "indexable": 3570,
   "noindex": 540,
   "noindex_by_polish": 460,
   "duplicate_homes": 2,
-  "title_over_60": 1228,
+  "title_over_60": 1229,
   "desc_over_155": 0,
   "desc_under_120": 72,
   "desc_out_of_range": 72,
@@ -17,17 +17,15 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3534,
+  "pages_with_hreflang": 3552,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3467,
-  "redirects": 1276,
-  "moved_stubs": 247
+  "with_lastmod": 3475,
+  "redirects": 1289,
+  "moved_stubs": 250
  },
- "failures": [
-  "tech: link through redirect: 1 (/es -> /es/homes/canada)"
- ],
+ "failures": [],
  "groups": {
   "/": {
    "pages": 1,
@@ -345,11 +343,11 @@
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 266,
-   "indexable": 266,
+   "pages": 269,
+   "indexable": 269,
    "noindex": 0,
-   "median_words": 1805,
-   "title_over_60": 76,
+   "median_words": 1796,
+   "title_over_60": 77,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -372,8 +370,8 @@
    "inlinks_under_3": 0
   },
   "/es/costs/*": {
-   "pages": 26,
-   "indexable": 26,
+   "pages": 27,
+   "indexable": 27,
    "noindex": 0,
    "median_words": 507,
    "title_over_60": 0,
@@ -402,7 +400,7 @@
    "pages": 634,
    "indexable": 633,
    "noindex": 1,
-   "median_words": 292,
+   "median_words": 293,
    "title_over_60": 535,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -471,8 +469,8 @@
    "inlinks_under_3": 0
   },
   "/es/homes/*": {
-   "pages": 23,
-   "indexable": 17,
+   "pages": 24,
+   "indexable": 18,
    "noindex": 6,
    "median_words": 2940,
    "title_over_60": 0,
@@ -480,10 +478,10 @@
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 197,
-   "indexable": 197,
+   "pages": 200,
+   "indexable": 200,
    "noindex": 0,
-   "median_words": 1690,
+   "median_words": 1678,
    "title_over_60": 23,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -502,6 +500,15 @@
    "indexable": 1,
    "noindex": 0,
    "median_words": 958,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/new": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 1429,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -546,7 +553,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 209,
+   "median_words": 215,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -555,7 +562,7 @@
    "pages": 10,
    "indexable": 10,
    "noindex": 0,
-   "median_words": 1300,
+   "median_words": 1328,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -771,7 +778,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1246,
+   "median_words": 1245,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -960,7 +967,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3561,
+   "pages with JSON-LD changed": 3570,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: datePosted added": 634,
    "Article: author, date, headline or image missing": 52
@@ -1116,7 +1123,7 @@
    "/deal/DZzpJ7UDSZB",
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
-   "... 1168 more"
+   "... 1169 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1124,7 +1131,7 @@
   ]
  },
  "spanish": {
-  "twins": 1025,
+  "twins": 1034,
   "groups": {
    "homes": {
     "pages": 634,
@@ -1136,24 +1143,24 @@
    },
    "places": {
     "pages": 488,
-    "twins": 481,
-    "words": 1017980,
-    "english": 66,
-    "spanish_pct": 99.99
+    "twins": 488,
+    "words": 1017868,
+    "english": 0,
+    "spanish_pct": 100
    },
    "pages": {
     "pages": 41,
-    "twins": 7,
-    "words": 2731,
-    "english": 420,
+    "twins": 8,
+    "words": 2728,
+    "english": 418,
     "by_hand": 2,
-    "spanish_pct": 84.62
+    "spanish_pct": 84.68
    },
    "content": {
     "pages": 583,
-    "twins": 581,
-    "words": 446664,
-    "english": 2,
+    "twins": 582,
+    "words": 446661,
+    "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
    },
@@ -1168,10 +1175,10 @@
  },
  "tech": {
   "summary": {
-   "checked": 4101,
-   "indexable": 3561,
+   "checked": 4110,
+   "indexable": 3570,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 1,
    "external_link_hosts": 315,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1179,13 +1186,10 @@
    "year_in_title": 2,
    "near_identical_pages": 521,
    "region_used_as_country": 2,
-   "link_through_redirect": 1,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
-  "failures": [
-   "link through redirect: 1 (/es -> /es/homes/canada)"
-  ],
+  "failures": [],
   "lists": {
    "no_text_without_javascript": [
     "/agents (26 words)",
@@ -1260,16 +1264,13 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
-   ],
-   "link_through_redirect": [
-    "/es -> /es/homes/canada"
    ]
   },
   "depth": {
    "0": 2,
-   "1": 130,
-   "2": 3056,
-   "3": 373
+   "1": 132,
+   "2": 3071,
+   "3": 365
   },
   "noindex": {
    "app screen": 5,
@@ -1295,8 +1296,8 @@
      "path": "/",
      "html_kb": 8.9,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.1,
-     "route_js_kb": 395.7,
+     "entry_js_kb": 78.2,
+     "route_js_kb": 395.9,
      "requests_in_html": 14,
      "high_priority_images": 2,
      "eager_images": 2,
@@ -1307,8 +1308,8 @@
      "path": "/deal/DZ-9LczExWp",
      "html_kb": 11.3,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.1,
-     "route_js_kb": 395.7,
+     "entry_js_kb": 78.2,
+     "route_js_kb": 395.9,
      "requests_in_html": 13,
      "high_priority_images": 1,
      "eager_images": 1,
@@ -1319,8 +1320,8 @@
      "path": "/homes/spain",
      "html_kb": 21,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.1,
-     "route_js_kb": 395.7,
+     "entry_js_kb": 78.2,
+     "route_js_kb": 395.9,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1331,8 +1332,8 @@
      "path": "/homes/bulgaria/under-80000",
      "html_kb": 11.4,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.1,
-     "route_js_kb": 395.7,
+     "entry_js_kb": 78.2,
+     "route_js_kb": 395.9,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1341,10 +1342,10 @@
     },
     "map": {
      "path": "/map",
-     "html_kb": 6.1,
+     "html_kb": 6,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.1,
-     "route_js_kb": 444.7,
+     "entry_js_kb": 78.2,
+     "route_js_kb": 444.9,
      "requests_in_html": 15,
      "high_priority_images": 0,
      "eager_images": 0,
@@ -1367,12 +1368,12 @@
   "sitemap-homes.xml": 633,
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 56,
-  "sitemap-es-main.xml": 13,
-  "sitemap-es-countries.xml": 164,
+  "sitemap-es-main.xml": 14,
+  "sitemap-es-countries.xml": 168,
   "sitemap-es-prices.xml": 50,
-  "sitemap-es-cheap-houses.xml": 267,
+  "sitemap-es-cheap-houses.xml": 270,
   "sitemap-es-guides.xml": 61,
-  "sitemap-es-costs.xml": 55,
+  "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 33,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 172,

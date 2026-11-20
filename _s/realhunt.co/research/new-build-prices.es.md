@@ -2,9 +2,9 @@
 
 En las clasificaciones de obra nueva de RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Batumi (1.366 €/m², 100 proyectos) y el más alto en Phuket (3.661 €/m², 80 proyectos). Koh Samui: 1.759 €/m²; Bali: 1.872 €/m²; Tulum: 2.847 €/m².
 
-417 proyectos en 5 destinos, a partir de los precios «desde» publicados por los promotores, a 19 de noviembre de 2026. Algunos se venden en régimen de arrendamiento a largo plazo y otros antes de construirse: un precio por m² no es comparable con una vivienda terminada en plena propiedad sin leer cada proyecto.
+417 proyectos en 5 destinos, a partir de los precios «desde» publicados por los promotores, a 20 de noviembre de 2026. Algunos se venden en régimen de arrendamiento a largo plazo y otros antes de construirse: un precio por m² no es comparable con una vivienda terminada en plena propiedad sin leer cada proyecto.
 
-Actualizado el 19 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/new-build-prices (CC BY 4.0). CSV: https://realhunt.co/research/new-build-prices.es.csv
+Actualizado el 20 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/new-build-prices (CC BY 4.0). CSV: https://realhunt.co/research/new-build-prices.es.csv
 
 ## La tabla
 

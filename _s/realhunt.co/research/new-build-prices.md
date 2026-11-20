@@ -2,9 +2,9 @@
 
 In RealHunt's new-build rankings the median starting price per square metre is lowest in Batumi (€1,366/m², 100 projects) and highest in Phuket (€3,661/m², 80 projects). Koh Samui: €1,759/m²; Bali: €1,872/m²; Tulum: €2,847/m².
 
-417 projects in 5 destinations, from the developers' published "from" prices, 19 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
+417 projects in 5 destinations, from the developers' published "from" prices, 20 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
 
-Updated 19 November 2026. Source: RealHunt, https://realhunt.co/research/new-build-prices (CC BY 4.0). CSV: https://realhunt.co/research/new-build-prices.csv
+Updated 20 November 2026. Source: RealHunt, https://realhunt.co/research/new-build-prices (CC BY 4.0). CSV: https://realhunt.co/research/new-build-prices.csv
 
 ## The table
 

@@ -4,7 +4,7 @@ Methodology
 
 The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
 
-Version 2026-11-14 · figures from 634 homes on 19 November 2026 · [Markdown version](https://realhunt.co/method.md)
+Version 2026-11-14 · figures from 634 homes on 20 November 2026 · [Markdown version](https://realhunt.co/method.md)
 
 ### Step 1. A person checks the home
 
@@ -66,4 +66,4 @@ Date | What changed
 [New builds use a different ranking: how the Top 100 works](https://realhunt.co/top/how-we-rank) · [Who runs RealHunt](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/method (RealHunt, 2026-11-19)
+Source: https://realhunt.co/method (RealHunt, 2026-11-20)

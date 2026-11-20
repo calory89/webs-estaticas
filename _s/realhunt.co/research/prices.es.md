@@ -2,9 +2,9 @@
 
 Entre los 15 países con al menos 10 casas de superficie conocida en RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Japón (398 €/m²), Suecia (701 €/m²) y Dinamarca (790 €/m²), y el más alto en los Países Bajos (4.286 €/m²). El precio de salida mediano más bajo está en Japón (43.240 €) y Alemania (55.000 €).
 
-Medianas de 634 anuncios en 19 países, revisados uno a uno por una persona, a 19 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
+Medianas de 634 anuncios en 19 países, revisados uno a uno por una persona, a 20 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
 
-Actualizado el 19 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
+Actualizado el 20 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
 
 ## La tabla
 
@@ -13,7 +13,7 @@ Actualizado el 19 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Japón | 32 | 43.240 € | 398 € | 16 | 88 m² | 7.400 € | 91.080 € | 17 | 86 |
 | Suecia | 38 | 73.000 € | 701 € | 20 | 110 m² | 22.000 € | 99.000 € | 22 | 85 |
 | Bulgaria (muestra pequeña) | 7 | 66.000 € | 740 € | 7 | 87 m² | 58.900 € | 89.000 € | 4 | 93 |
-| Dinamarca | 46 | 93.200 € | 790 € | 44 | 115 m² | 35.400 € | 160.000 € | 20 | 88 |
+| Dinamarca | 46 | 93.200 € | 790 € | 44 | 115 m² | 35.400 € | 160.000 € | 21 | 88 |
 | Canadá | 11 | 93.111 € | 963 € | 11 | 94 m² | 55.842 € | 190.700 € | 4 | 86 |
 | Italia | 68 | 59.000 € | 1.014 € | 43 | 76 m² | 12.000 € | 195.000 € | 21 | 83 |
 | Alemania | 20 | 55.000 € | 1.053 € | 20 | 51 m² | 40.000 € | 60.000 € | 7 | 81 |

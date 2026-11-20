@@ -1,8 +1,8 @@
 # Casas baratas en Canadá: datos clave y todas las casas de RealHunt
 
-A 19 de noviembre de 2026, RealHunt publica 11 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 11 casas es de 93.111 € (963 € por m², calculado con las 11 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 11 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 11 casas es de 93.111 € (963 € por m², calculado con las 11 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 19 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https:/
 | Impuestos y gastos de compra | 1,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Mayormente no por ahora: una prohibición federal impide que no canadienses compren viviendas en ciudades y pueblos grandes hasta el 1 de enero de 2027, con excepciones como titulares de permiso de trabajo y cónyuges de ciudadanos o residentes permanentes. La prohibición no cubre áreas rurales y pueblos pequeños, y el gobierno ha dicho que no tiene previsto simplemente extenderla, pero se está estudiando un sustituto. |
 | Impuesto anual sobre la vivienda | El impuesto sobre la propiedad lo fija cada ciudad como un porcentaje del valor tasado, desde alrededor del 0,3% en Vancouver hasta el 2,12% en Saint John en 2026. |
-| Fecha de estas cifras | 19 de noviembre de 2026 |
+| Fecha de estas cifras | 20 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
@@ -125,11 +125,11 @@ https://realhunt.co/es/deal/shearstown-99323
 
 https://realhunt.co/es/deal/minto-99323
 
-### Casa de cuatro dormitorios en aproximadamente cinco acres en St. Andrews by-the-Sea, Nuevo Brunswick
+### Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo Brunswick
 
 190.700 € · Saint Andrews, New Brunswick · 150 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
 
-Se pide C$299,900 (aproximadamente €190,700) por una casa blanca de aproximadamente 150 m² en aproximadamente cinco acres en las afueras de St. Andrews by-the-Sea, una conocida ciudad resort costera en Nuevo Brunswick. Tiene cuatro dormitorios y dos baños completos, dos dormitorios en el nivel principal y dos abajo, un salón luminoso con suelos de madera, una cocina con armarios de madera y amplias terrazas. El terreno es principalmente césped y árboles, con un cobertizo de almacenamiento, y las fotos aéreas muestran la bahía a la distancia. Las tiendas del centro, restaurantes y la orilla están a minutos. Impuesto inmobiliario anual C$3,679.
+Se pide C$299,900 (aproximadamente €190,700) por una casa blanca de aproximadamente 150 m² en aproximadamente cinco acres en las afueras de Saint Andrews, una conocida ciudad resort costera en Nuevo Brunswick. Tiene cuatro dormitorios y dos baños completos, dos dormitorios en el nivel principal y dos abajo, un salón luminoso con suelos de madera, una cocina con armarios de madera y amplias terrazas. El terreno es principalmente césped y árboles, con un cobertizo de almacenamiento, y las fotos aéreas muestran la bahía a la distancia. Las tiendas del centro, restaurantes y la orilla están a minutos. Impuesto inmobiliario anual C$3,679.
 
 https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 
