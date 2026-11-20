@@ -18,10 +18,10 @@
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
   "pages_with_hreflang": 3732,
-  "thin_under_150_words": 22,
+  "thin_under_150_words": 21,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3700,
+  "with_lastmod": 3707,
   "redirects": 1372,
   "moved_stubs": 278
  },
@@ -904,7 +904,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 50,
+   "median_words": 475,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -913,7 +913,7 @@
    "pages": 6,
    "indexable": 6,
    "noindex": 0,
-   "median_words": 917,
+   "median_words": 918,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -995,7 +995,6 @@
    "/new-builds",
    "/research/new-builds",
    "/top/how-we-rank",
-   "/top",
    "/weather",
    "/sitemap/new-builds"
   ],
@@ -1167,9 +1166,9 @@
    "top": {
     "pages": 434,
     "twins": 0,
-    "words": 39631,
-    "english": 4351,
-    "spanish_pct": 89.02
+    "words": 39923,
+    "english": 4550,
+    "spanish_pct": 88.6
    }
   }
  },
@@ -1178,7 +1177,7 @@
    "checked": 4298,
    "indexable": 3750,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 5,
    "external_link_hosts": 315,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,

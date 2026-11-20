@@ -44,9 +44,9 @@
   "top": {
    "pages": 434,
    "twins": 0,
-   "words": 39631,
-   "english": 4351,
-   "spanish_pct": 89.02
+   "words": 39923,
+   "english": 4550,
+   "spanish_pct": 88.6
   }
  },
  "not_published": 468,
@@ -245,20 +245,20 @@
   },
   {
    "url": "https://realhunt.co/top",
-   "english": 37,
-   "words": 88,
+   "english": 147,
+   "words": 411,
    "hits": [
-    "The",
-    "best",
-    "new",
-    "in",
+    "New",
     "ranked",
-    "by",
-    "price",
+    "in",
+    "checked",
+    "starting",
+    "prices",
     "and",
-    "then",
-    "by",
-    "buyers",
+    "the",
+    "best",
+    "of",
+    "each",
     "new"
    ]
   },
@@ -283,21 +283,21 @@
   },
   {
    "url": "https://realhunt.co/top/bali",
-   "english": 111,
-   "words": 777,
+   "english": 133,
+   "words": 770,
    "hits": [
-    "Ranked",
-    "by",
-    "score",
+    "new",
+    "in",
+    "The",
+    "best",
+    "new",
+    "and",
+    "apartment",
+    "in",
     "from",
-    "price",
-    "price",
-    "and",
-    "then",
-    "buyer",
-    "and",
-    "questions",
-    "from"
+    "checked",
+    "Ranked",
+    "by"
    ]
   },
   {
@@ -1905,21 +1905,21 @@
   },
   {
    "url": "https://realhunt.co/top/phuket",
-   "english": 91,
-   "words": 935,
+   "english": 113,
+   "words": 928,
    "hits": [
-    "Ranked",
-    "by",
-    "score",
+    "new",
+    "in",
+    "The",
+    "best",
+    "new",
+    "and",
+    "apartment",
+    "in",
     "from",
-    "price",
-    "price",
-    "and",
-    "then",
-    "buyer",
-    "and",
-    "questions",
-    "from"
+    "checked",
+    "Ranked",
+    "by"
    ]
   },
   {
@@ -3524,21 +3524,21 @@
   },
   {
    "url": "https://realhunt.co/top/tulum",
-   "english": 105,
-   "words": 717,
+   "english": 127,
+   "words": 710,
    "hits": [
-    "Ranked",
-    "by",
-    "score",
+    "new",
+    "in",
+    "The",
+    "best",
+    "new",
+    "and",
+    "apartment",
+    "in",
     "from",
-    "price",
-    "price",
-    "and",
-    "then",
-    "buyer",
-    "and",
-    "questions",
-    "from"
+    "checked",
+    "Ranked",
+    "by"
    ]
   },
   {
@@ -5149,21 +5149,21 @@
   },
   {
    "url": "https://realhunt.co/top/batumi",
-   "english": 61,
-   "words": 844,
+   "english": 83,
+   "words": 837,
    "hits": [
-    "Ranked",
-    "by",
-    "score",
+    "new",
+    "in",
+    "The",
+    "best",
+    "new",
+    "and",
+    "apartment",
+    "in",
     "from",
-    "price",
-    "price",
-    "and",
-    "then",
-    "buyer",
-    "and",
-    "questions",
-    "from"
+    "checked",
+    "Ranked",
+    "by"
    ]
   },
   {
