@@ -4,8 +4,16 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-19T07:54:37Z</updated>
+<updated>2026-11-20T07:44:27Z</updated>
 <author><name>Kolaboro</name></author>
+<entry>
+<title>19 November 2026: 31 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-19/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-19</id>
+<published>2026-11-19T00:00:00Z</published>
+<updated>2026-11-19T18:58:48Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n32t: /new/, /vs/ and /m/ hubs in 8 languages (market files hub built from the translated market files); markup patterns for sentences with figures&lt;/li&gt;&lt;li&gt;Kolaboro.com n32s: edge copies of market files and /engineering/status/, answer line on hubs, completed-project titles, cite buttons on more report figures&lt;/li&gt;&lt;li&gt;Kolaboro.com n32t: total cost, payment plan risk, market match and deposit protection tools in 8 languages; country names translated in tool results&lt;/li&gt;&lt;li&gt;Kolaboro.com n32s: lighter market files and map start, stacked tables laid out lazily, plainer words, same save label, ticker line&lt;/li&gt;&lt;li&gt;Kolaboro.com n32t: late handover, currency risk and build cost tools in 8 languages; currency names translated in tool results&lt;/li&gt;&lt;li&gt;Kolaboro.com n32t: English meta descriptions of the translated tool pages and registers guide cut to 160 characters&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>18 November 2026: 31 changes shipped</title>
 <link href="https://kolaboro.com/changelog/2026-11-18/"/>

@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-19",
+   "url": "https://kolaboro.com/changelog/2026-11-19/",
+   "title": "19 November 2026: 31 changes shipped",
+   "content_text": "- Kolaboro.com n32t: /new/, /vs/ and /m/ hubs in 8 languages (market files hub built from the translated market files); markup patterns for sentences with figures\n- Kolaboro.com n32s: edge copies of market files and /engineering/status/, answer line on hubs, completed-project titles, cite buttons on more report figures\n- Kolaboro.com n32t: total cost, payment plan risk, market match and deposit protection tools in 8 languages; country names translated in tool results\n- Kolaboro.com n32s: lighter market files and map start, stacked tables laid out lazily, plainer words, same save label, ticker line\n- Kolaboro.com n32t: late handover, currency risk and build cost tools in 8 languages; currency names translated in tool results\n- Kolaboro.com n32t: English meta descriptions of the translated tool pages and registers guide cut to 160 characters\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n32t: /new/, /vs/ and /m/ hubs in 8 languages (market files hub built from the translated market files); markup patterns for sentences with figures</li><li>Kolaboro.com n32s: edge copies of market files and /engineering/status/, answer line on hubs, completed-project titles, cite buttons on more report figures</li><li>Kolaboro.com n32t: total cost, payment plan risk, market match and deposit protection tools in 8 languages; country names translated in tool results</li><li>Kolaboro.com n32s: lighter market files and map start, stacked tables laid out lazily, plainer words, same save label, ticker line</li><li>Kolaboro.com n32t: late handover, currency risk and build cost tools in 8 languages; currency names translated in tool results</li><li>Kolaboro.com n32t: English meta descriptions of the translated tool pages and registers guide cut to 160 characters</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-19T00:00:00Z",
+   "date_modified": "2026-11-19T18:58:48Z",
+   "_kolaboro": {
+    "ships": 31,
+    "data_updates": 12,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-18",
    "url": "https://kolaboro.com/changelog/2026-11-18/",
    "title": "18 November 2026: 31 changes shipped",
