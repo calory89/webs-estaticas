@@ -18810,7 +18810,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "HTTP Error 404: Not Found"
+  "last_error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
  },
  "hoshinoya-hutte-niseko-tokyu-land": {
   "name": "HOSHINOYA Hutte Niseko (provisional name)",
@@ -25740,7 +25740,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "<urlopen error [Errno -2] Name or service not known>"
+  "last_error": "robots.txt disallows this page"
  },
  "valora-estate-namibia": {
   "name": "Valora Estate",
@@ -25806,7 +25806,7 @@
    "quotes": []
   },
   "source": "seed",
-  "last_error": "<urlopen error [Errno -2] Name or service not known>"
+  "last_error": "robots.txt disallows this page"
  },
  "sovereign-bay-at-gulf-of-goa-estate-villas-goa": {
   "name": "Sovereign Bay at Gulf of Goa (Estate Villas)",
@@ -32624,13 +32624,19 @@
    "completion_year": 2030,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "ESTIMATED COMPLETION DATE: EAST & WEST PLOTS: Η1 2030",
+    "VIEW THE BROCHURE FLOOR PLANS 360° APARTMENT TOUR | EAST PLOT UPPER LEVEL",
+    "all purchases of residential properties in The Ellinikon are exempted from VAT until the 31/12/2026."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11",
-  "last_error": "spend budget reached"
+  "source": "ai",
+  "hash": "0437b7225e175ba1",
+  "sha256": "0437b7225e175ba1722a8e02314cd9e053ebdcfba908e6f59000b319392216ac",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "pavilion-terraces-the-ellinikon-little-athens": {
   "name": "Pavilion Terraces (The Ellinikon, Little Athens)",
@@ -32647,12 +32653,19 @@
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "AVAILABILITY: SOLD OUT",
+    "ESTIMATED COMPLETION DATE: H2 2028",
+    "all purchases of residential properties in The Ellinikon are exempted from VAT until the 31/12/2026."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "0bcf50bd8dbd6844",
+  "sha256": "0bcf50bd8dbd68445c64489542dab855f98712b97f24b5a03a13b0c00b785525",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "trump-tower-jeddah": {
   "name": "Trump Tower Jeddah",
@@ -32671,10 +32684,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Completion is scheduled for December 2029.",
+    "The Trump Organization is not the owner, developer, or seller of the property.",
+    "DarGlobal Holdings Real Estate, the owner and developer of the property, uses the \"Trump\" name and mark under license"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "65ed0eed9c644fdf",
+  "sha256": "65ed0eed9c644fdf6dff1fb45b8e93094064e85c3074348390c92b97f1d999bb",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "itzae-tulum": {
   "name": "Itzaé Tulum",
@@ -32693,10 +32713,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "INVIERTE SIN RIESGO EN PREVENTA",
+    "DISEÑADOS PARA EXPLOTAR LAS RENTAS VACACIONALES",
+    "con altos rendimientos gracias a la renta por Airbnb"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "04bb496e5855899a",
+  "sha256": "04bb496e5855899aaddcaa2fbad50159c165a4c2eab9a7db6f2d6d664b4caaf3",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "inspire-uptown": {
   "name": "Inspire UpTown",
@@ -32715,10 +32742,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "anno di consegna 2027",
+    "Cinque edifici al centro del quartiere firmati da MAB Arquitectura e DVA Architecture",
+    "Classe energetica A Nearly Zero Energy Building nZEB"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "cce70cbb8443e6a4",
+  "sha256": "cce70cbb8443e6a43537472136bc87cdf7319d1d92b4994c7747fabfc9b30822",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "m2-at-mtatsminda-park": {
   "name": "m² at Mtatsminda Park",
@@ -32735,12 +32769,19 @@
    "completion_year": 2026,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": null,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "COMPLETION DATE 2026",
+    "Construction deadline: Buildings I-VI - 2026 year",
+    "Mortgage loan conditions differ according to the bank's current terms."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "fad9a229342c1371",
+  "sha256": "fad9a229342c1371895092e3ccf0a73482368e30fdb4d77cdbdbbcd2f0deb962",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "iconica-gold-coast": {
   "name": "ICONICA",
@@ -32752,17 +32793,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2027,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "all projects are DA-approved and under construction prior to selling.",
+    "Investors can benefit from Meriton's Tenant Guarantee.",
+    "Due 2027 – Secure your \"off the plan\" apartment now"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "107fa89f1401a7d4",
+  "sha256": "107fa89f1401a7d4654ebd1b9df1883cee31a837b32d9694af07af7aab585b10",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "the-carling": {
   "name": "The Carling",
@@ -32774,39 +32822,53 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2027,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "all projects are DA-approved and under construction prior to selling",
+    "Investors can benefit from Meriton's Tenant Guarantee.",
+    "Due for completion in 2027."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "3f20b4406a0e3faf",
+  "sha256": "3f20b4406a0e3fafc7c0e8641b44c2c7daa9abe99b8fec19b6ba2df385394ed6",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "zetland-square": {
   "name": "Zetland Square",
   "url": "https://www.meriton.com.au/residential-buy/zetland-square/",
   "market": "Sydney",
   "claims": {
-   "price_from": 745000,
+   "price_from": 730000,
    "currency": "AUD",
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2028,
-   "permit_claim": false,
+   "permit_claim": true,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "all projects are DA-approved and under construction prior to selling",
+    "Investors can benefit from a tenant guarantee, rising rents and negative gearing tax advantages",
+    "Due for completion in late 2028."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "64d02496b2669efe",
+  "sha256": "64d02496b2669efe4538924504d2670ff21d0c66153e7f452c37938ca264fe96",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "lumiere-midtown": {
   "name": "LUMIÈRE Midtown",
@@ -32815,20 +32877,27 @@
   "claims": {
    "price_from": null,
    "currency": null,
-   "title_type": null,
-   "lease_years_base": null,
+   "title_type": "leasehold",
+   "lease_years_base": 50,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Free-hold ownership for Vietnamese citizens 50-year ownership for foreign nationals",
+    "Estimated Handover 2027",
+    "Tower A floorplan Tower B floorplan"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "f71e34d84d543fcf",
+  "sha256": "f71e34d84d543fcfde81e295472664d447cfa165750f1e38410434b2dbb7e796",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "villa-miami": {
   "name": "Villa Miami",
@@ -32847,10 +32916,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Expected Completion 2027",
+    "Residences 49 residences",
+    "Height 55-story tower"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "255c6c7d76c323e9",
+  "sha256": "255c6c7d76c323e958d5015cca6449a699ea2e95a51ec488afd8ef974c569333",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "the-well-coconut-grove": {
   "name": "THE WELL Coconut Grove",
@@ -32869,10 +32945,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Expected Completion 2028",
+    "194 residences across 8 floors",
+    "Certification Florida Green Building Design, Silver Certification"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "59a6e791fdb63ef3",
+  "sha256": "59a6e791fdb63ef330423aa40c94cb3a4ff34cbdc223a6e9efc616695558d4a5",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "olana-naples-residences": {
   "name": "Olana Naples Residences",
@@ -32891,10 +32974,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "offering 12 estate-sized homes, starting at $30 million",
+    "Sales for Olana Naples Residences are being handled, exclusively, by Premier Sotheby's International Realty",
+    "Each residence at Olana Naples spans over 10,000 square feet"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "b8e95cca27951297",
+  "sha256": "b8e95cca279512973862b90b7b07b32ac49521a7f1c5692d8ac10aec789313f2",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "harbor-171-torre-norte": {
   "name": "Harbor 171 Torre Norte",
@@ -32911,12 +33001,19 @@
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Precios desde: $647,080 USD",
+    "Hasta 15% de descuento o aparta con solo el 10% de enganche y su siguiente pago hasta inicio de obra.",
+    "Pago al momento de la escrituración y entrega de la unidad"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "1b6ccd66127d4831",
+  "sha256": "1b6ccd66127d4831205cb4fd9c80bacce2dbc44a72772c2704158ac828df1acf",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "samana-resorts": {
   "name": "SAMANA Resorts",
@@ -32935,10 +33032,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Apartments at SAMANA Resorts were previously offered from AED 1.3 million.",
+    "Handover at SAMANA Resorts is anticipated for Q3, 2028.",
+    "The project is now fully reserved."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "c486c2b250590a10",
+  "sha256": "c486c2b250590a10b19af46a47da643edf04acf5e8d3f37c31697023f8e73b13",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "samana-ocean-bay": {
   "name": "SAMANA Ocean Bay",
@@ -32957,10 +33061,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Starting price AED 2,887,000*",
+    "The anticipated handover date for SAMANA Ocean Bay is Q2, 2028.",
+    "Post-handover: 2% per month for 25 months"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "1ec3e20032e31525",
+  "sha256": "1ec3e20032e31525f9b3ce42e06189ca99fb03cfbd0c26b1100e8eb6f7327d27",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "6-palma-balearics": {
   "name": "6 Palma",
@@ -32977,12 +33088,19 @@
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Handover date: August 2027.",
+    "Apartment From 765.000€ 2 beds 2 baths",
+    "6 Palma is an exclusive project of 6 apartments in a privileged area of Palma de Mallorca"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "5302b4701ba0ff20",
+  "sha256": "5302b4701ba0ff20d43c5f3a4fd025738a4b448afbafb6c15d2b354ef7930bac",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "cor-39-balearics": {
   "name": "Cor 39",
@@ -33001,10 +33119,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "un proyecto en Palma de Mallorca que contempla 12 viviendas y un local comercial",
+    "La entrega está prevista para marzo de 2028.",
+    "Las imágenes y planos del proyecto son solo a efectos ilustrativos."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "c95e174dfb0b9fdd",
+  "sha256": "c95e174dfb0b9fdd85255e721d41b01d884008fdb36a4a897e72b429f1f9678c",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "habitat-torremare": {
   "name": "Habitat TorreMare",
@@ -33023,10 +33148,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Habitat TorreMare Malaga, Malaga Sold development",
+    "Our Habitat TorreMare will have around 98 properties to make this dream come true very soon.",
+    "*The image is indicative and does not necessarily correspond to the features of the future properties"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "be9a60a826f40f22",
+  "sha256": "be9a60a826f40f222074dda1ca1a39ceb20e8707e1b28c414da9fdf11d4af411",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "folkart-orion": {
   "name": "Folkart Orion",
@@ -33045,10 +33177,17 @@
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Ön satışa sunulan ilk etabın Eylül 2028’de, ikinci etabın ise Haziran 2029’da tamamlanması planlanıyor.",
+    "Folkart Orion, Türkiye Bina Deprem Yönetmeliği (TBDY 2018) ve uluslararası yüksek yapı standartlarına uygun şekilde tasarlanıyor.",
+    "Orion; konut, rezidans, 5 yıldızlı otel, ofis, mağazalar, restoranlar ve hastane olmak üzere yedi farklı fonksiyonu bir araya getiriyor."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "303687d9c8b3caf1",
+  "sha256": "303687d9c8b3caf102496f7ff61d8142bb913acd880ded1efcdfcb05286a0aee",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "parq-blue-bali": {
   "name": "Parq Blue",
@@ -33069,8 +33208,11 @@
    "escrow_or_guarantee": null,
    "quotes": []
   },
-  "source": "seed",
-  "checked": "2026-11-11"
+  "source": "ai",
+  "hash": "b1f4c4bcd1315b79",
+  "sha256": "b1f4c4bcd1315b79a9f0c3dad9e696194ac7c3efdadad8954fd9a80ee9f98e3e",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "valmer-french-riviera": {
   "name": "Valmer",
@@ -33082,17 +33224,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2029,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du studio au 4 pièces à partir de 233 000 €",
+    "Livraison à partir du 1 er trimestre 2029",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "06c7292210a755c5",
+  "sha256": "06c7292210a755c53a384b458a9415aaf76d6a7360892c71b946e61bc1ceebf0",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "palm-square": {
   "name": "Palm Square",
@@ -33104,17 +33253,25 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du 2 pièces au 3 pièces à partir de 259 000 €",
+    "Garantie loyer impayé + logement vacant",
+    "98 % des biens loués le 1 er mois",
+    "Livraison à partir du 4 ème trimestre 2027"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "46e8b1291df6e840",
+  "sha256": "46e8b1291df6e84008a47336c9a6e1e9dfe2f1ebd8c4c7883bf14de509758af8",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "woodeum-paris-rive-gauche": {
   "name": "Woodeum Paris Rive Gauche",
@@ -33126,17 +33283,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du studio au 4 pièces à partir de 349 000 €",
+    "Livraison à partir du 2 ème trimestre 2027",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "8ecc0e7b0ab39852",
+  "sha256": "8ecc0e7b0ab39852d3946dc5cb603b3eba5fe8435c3bc0ac4dd10363c4fd8fcc",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "le-belvedere-bordo-neo": {
   "name": "Le Belvédère - Bordo Neo",
@@ -33146,19 +33310,26 @@
    "price_from": 84000,
    "currency": "EUR",
    "title_type": null,
-   "lease_years_base": null,
+   "lease_years_base": 16,
    "extension_promised": null,
    "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Studio à partir de 84 000 €",
+    "Une décote de 36 %* sur le prix d'achat de votre bien",
+    "Livraison à partir du 3 ème trimestre 2028"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "b0992651f19fd6e2",
+  "sha256": "b0992651f19fd6e221be38c494f41273fa71d6d4c214ee008406e7fea8bdb805",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "le-belvedere-bordo-tempo": {
   "name": "Le Belvédère - Bordo Tempo",
@@ -33170,17 +33341,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du studio au 5 pièces à partir de 130 000 €",
+    "Livraison à partir du 3 ème trimestre 2028",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "7730b0936a2aad12",
+  "sha256": "7730b0936a2aad129b3e5b51c499618e32109a6bee73432a9493c92dc8808c12",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "elokence-france": {
   "name": "Elokence",
@@ -33197,12 +33375,19 @@
    "completion_year": 2028,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "du 2 pièces évolutif au duplex 4 pièces évolutif à partir de 239 000 €",
+    "Livraison à partir du 4 ème trimestre 2028",
+    "Un investissement immobilier comporte des risques de perte en capital."
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "65f082be6403ae42",
+  "sha256": "65f082be6403ae42adb4b491fd84c56e128c94f79fae4f3430220b332890ac4c",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "ki-lyon-france": {
   "name": "KI (Lyon)",
@@ -33214,17 +33399,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": false,
+   "guaranteed_language": true,
    "advertised_yield_pct": null,
    "completion_year": 2027,
    "permit_claim": false,
    "permit_number": null,
-   "plans_published": false,
+   "plans_published": true,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Du 4 pièces au 5 pièces à partir de 710 000 €",
+    "Livraison à partir du 1 er trimestre 2027",
+    "Garantie loyer impayé + logement vacant"
+   ]
   },
-  "source": "seed",
-  "checked": "2026-11-12"
+  "source": "ai",
+  "hash": "d71b9dc130b0b366",
+  "sha256": "d71b9dc130b0b36612719d931ff21c7fe2db256b9998cc2b1d8d445b3a06289c",
+  "sealed": "2026-11-20",
+  "checked": "2026-11-20"
  },
  "cove-boulevard-by-imtiaz": {
   "name": "Cove Boulevard by Imtiaz",
@@ -33246,7 +33438,8 @@
    "quotes": []
   },
   "source": "seed",
-  "checked": "2026-11-12"
+  "checked": "2026-11-12",
+  "last_error": "spend budget reached"
  },
  "sunset-bay-grand-by-imtiaz": {
   "name": "Sunset Bay Grand by Imtiaz",
