@@ -1069,7 +1069,7 @@ async function lmFiles(ix, env) {
     return { named: ix.named, cases: ix.cases, caseBy: ix.caseBy, prom, find, prog, raw: x => RAWN.has(x) ? Object.assign({}, x, { n: RAWN.get(x) }) : x };
   } catch (e) { return null; }
 }
-const FAST_FRESH = 60000, FAST_TTL = 86400, REFRESHING = new Set();   // n32s (item 258): copies live a day (were 6 hours); a copy is still re-checked in the background after a minute
+const FAST_FRESH = 60000, FAST_TTL = 259200, REFRESHING = new Set();   // n33i (item 18): copies live 3 days (n32s: a day; before: 6 hours), so long-tail translated pages crawlers revisit are answered from the edge; a copy is still re-checked in the background after a minute
 // the data version a page was built from: any change here means the page must be rendered again
 async function dataVer(ix, env, kind, key) {
   const pj = key && kind === 'projects', dv = key && kind === 'developers', nul = () => null;

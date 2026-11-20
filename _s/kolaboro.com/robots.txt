@@ -1,11 +1,10 @@
 # kolaboro.com robots.txt
 # Search engines and AI answer engines are welcome to crawl, index and cite the public pages and the open data (CC BY 4.0).
-# One group for everyone, so the same rules apply to every crawler named here and to all others.
-# Reviewed 14 Nov 2026 (n29t): public pages, /data/, /api/open/, /llms.txt and the sitemaps are open; only private, POST-only and Cloudflare paths are closed.
-User-agent: *
-User-agent: Googlebot
-User-agent: Google-Extended
-User-agent: Bingbot
+# Two groups with the same rules, except one: the answer-engine crawlers in the first group may read /api/x/ (the endpoints
+# documented in /llms-full.txt); search crawlers do not need it (n33i, 20 Nov 2026: Search Console counted it as crawled, not indexed).
+# Reviewed 20 Nov 2026 (n33i; before: 14 Nov, n29t): public pages, /data/, /api/open/, /llms.txt and the sitemaps are open; only private, POST-only and Cloudflare paths are closed.
+# n33i: /api/kb/ (our own pages' endpoints) and the asset folder /k/ are closed too, except the scripts, styles, fonts, images and JSON
+# that pages need to render (Allow lines are longer, so they win).
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
@@ -15,13 +14,47 @@ User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: CCBot
-User-agent: Applebot
-User-agent: Applebot-Extended
 User-agent: DuckAssistBot
-User-agent: YandexBot
 User-agent: Amazonbot
 User-agent: Meta-ExternalAgent
 User-agent: MistralAI-User
+Allow: /
+Disallow: /admin
+Disallow: /backup-admin/
+Disallow: /portal
+Disallow: /confirm-email/
+Disallow: /reset/
+Disallow: /shared/
+Disallow: /agents/me
+Disallow: /login
+Disallow: /thanks
+Disallow: /watchlist/
+Disallow: /saved/
+Disallow: /old/
+Disallow: /api/kb/
+Disallow: /cdn-cgi/
+Disallow: /k/
+Allow: /k/*.js
+Allow: /k/*.css
+Allow: /k/*.woff2
+Allow: /k/*.woff
+Allow: /k/*.png
+Allow: /k/*.jpg
+Allow: /k/*.jpeg
+Allow: /k/*.webp
+Allow: /k/*.avif
+Allow: /k/*.svg
+Allow: /k/*.gif
+Allow: /k/*.ico
+Allow: /k/*.json
+
+User-agent: *
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: YandexBot
 User-agent: Google-CloudVertexBot
 User-agent: Baiduspider
 User-agent: SeznamBot
@@ -39,15 +72,22 @@ Disallow: /thanks
 Disallow: /watchlist/
 Disallow: /saved/
 Disallow: /old/
-# endpoints that only answer POST from our own pages, and Cloudflare's own paths (n25e: they showed as 404 in Search Console)
-Disallow: /api/kb/analyze
-Disallow: /api/kb/progress
-Disallow: /api/kb/ask
-Disallow: /api/kb/document
-Disallow: /api/kb/plan
-Disallow: /api/kb/report-draft
-Disallow: /api/kb/csp
-Disallow: /api/x/b/
+Disallow: /api/kb/
+Disallow: /api/x/
 Disallow: /cdn-cgi/
+Disallow: /k/
+Allow: /k/*.js
+Allow: /k/*.css
+Allow: /k/*.woff2
+Allow: /k/*.woff
+Allow: /k/*.png
+Allow: /k/*.jpg
+Allow: /k/*.jpeg
+Allow: /k/*.webp
+Allow: /k/*.avif
+Allow: /k/*.svg
+Allow: /k/*.gif
+Allow: /k/*.ico
+Allow: /k/*.json
 
 Sitemap: https://kolaboro.com/sitemap_index.xml

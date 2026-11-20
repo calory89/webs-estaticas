@@ -14,9 +14,11 @@ const MAP = {
   '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/guides/buying-off-plan/',
   '/data/visual-tests.json': '/data/quality.json', '/data/page-weight.json': '/data/quality.json',
   '/open/evals/': '/engineering/evals/',
-  '/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles', '/data/benchmark/': '/data/#benchmark'
+  '/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles', '/data/benchmark/': '/data/#benchmark',
+  // n33i (20 Nov 2026): 404s in Search Console: /x/ (the X-ray pages live at /x/<seal>/; the tool is /check/), /pay, /k/sat/ (satellite tiles folder)
+  '/x/': '/check/', '/x': '/check/', '/pay': '/pricing/', '/pay/': '/pricing/', '/k/sat/': '/satellite/', '/k/sat': '/satellite/'
 };
-const GONE = new Set(['/6', '/p/HO']);   // truncated or garbled strings found by Search Console, never pages of ours
+const GONE = new Set(['/6', '/p/HO', '/k']);   // n33i: /k/ is the asset folder, never a page   // truncated or garbled strings found by Search Console, never pages of ours
 const rd = (loc, s) => new Response(null, { status: s || 301, headers: { location: loc, 'cache-control': 'public, max-age=86400', 'x-robots-tag': 'noindex' } });
 
 export async function fix(u, env) {

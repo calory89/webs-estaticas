@@ -82,6 +82,7 @@ let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|ch
 let ke29 = null, ke29l = null; const KE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:editorial-policy|how-we-work|sources|buyer-protection-law|countries\/foreign-buyers)\/?$/;   // n29e (batch 29): trust pages (kbx_e29.js)
 let kt27 = null; const KT27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:corrections|buyer-cases|cite|contact|transparency-badge)\/?$|^\/embed\/transparency\/[a-z0-9-]{1,90}\.svg$|^\/rankings\/transparency(?:\/[a-z0-9-]{2,40})?\.csv$/;   // n27t (batch 27): corrections log, buyer cases, how to cite, contact, transparency badge, ranking CSV (kbx_t27.js)
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
+let kn33i = null;   // n33i (batch 33): old query URLs, API noindex, parameter links, crawler 304s (kbx_n33i.js)
 let k404 = null;   // n25e: 301 map, 410 and the translated 404 page (kbx_404.js)
 let kn32t = null; const KN32T = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;   // n32t (batch 32): tool pages, registers guide, new, vs and markets hubs in 7 more languages (keep equal to PATHS in kbx_n32t.js)
 let kn31s = null; const KN31S = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools|glossary)\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:docs|reports\/month)\/?$|^\/engineering\/notes(?:\/[a-z0-9-]{3,60})?\/?$|^\/projects\/[a-z0-9-]{1,90}\.md$/;   // n31s (batch 31): translated tools hub and glossary, figures of the month, developer docs hub, engineering notes, project markdown (keep equal to PATHS in kbx_n31s.js)
@@ -312,7 +313,10 @@ async function kbCond(req, r) {
   const norm = t.replace(/ nonce="[A-Za-z0-9+/=]*"/g, '').replace(/'nonce-[A-Za-z0-9+/=]*'/g, '');
   const d = new Uint8Array(await crypto.subtle.digest('SHA-1', new TextEncoder().encode(norm))), tag = 'W/"' + [...d.slice(0, 10)].map(x => x.toString(16).padStart(2, '0')).join('') + '"';
   const h = new Headers(r.headers); h.set('etag', tag); h.delete('content-length');
+  // n33i (item 17): Cloudflare drops this ETag on HTML, so crawlers revalidate with If-Modified-Since: see lmBot in kbx_n33i.js
+  let ims304 = false; try { if (!kn33i) kn33i = await import('./kbx_n33i.js'); const u1 = new URL(req.url), lb = await kn33i.lmBot(req, u1.pathname + u1.search, tag, h.get('last-modified')); if (lb && lb.lm) h.set('last-modified', lb.lm); ims304 = !!(lb && lb.not); } catch (e) {}
   const inm = req.headers.get('if-none-match');
+  if (ims304 && !inm) { const h3 = new Headers(); for (const k of ['etag', 'last-modified', 'cache-control', 'vary', 'date', 'x-robots-tag']) if (h.get(k)) h3.set(k, h.get(k)); return new Response(null, { status: 304, headers: h3 }); }
   if (inm && inm.split(',').some(x => { x = x.trim(); return x === '*' || x.replace(/^W\//, '') === tag.replace(/^W\//, ''); })) {
     const h3 = new Headers(); for (const k of ['etag', 'last-modified', 'cache-control', 'vary', 'date', 'x-robots-tag']) if (h.get(k)) h3.set(k, h.get(k));
     return new Response(null, { status: 304, headers: h3 });
@@ -455,6 +459,8 @@ export default {
     if (r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const ct = r.headers.get('content-type') || '', pth = new URL(req.url).pathname;
       if ((/text\/csv/.test(ct) || (/json/.test(ct) && /^\/(data|api\/open|api\/v1|api\/x\/transparency|rankings|stories|press)\//.test(pth))) && !/rel="?license/.test(r.headers.get('link') || '')) {
         try { const h = new Headers(r.headers), lk = h.get('link'); h.set('link', (lk ? lk + ', ' : '') + '<https://creativecommons.org/licenses/by/4.0/>; rel="license"'); r = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {} } }
+    // n33i (batch 33, items 1, 6, 13): X-Robots-Tag noindex on every /api/ answer, 410 for unknown /api/kb/ GETs, nofollow or clean paths on parameter links
+    if (r && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (/^\/api\//.test(u0.pathname) || (req.method === 'GET' && r.status === 200 && /text\/html/.test(r.headers.get('content-type') || ''))) { try { if (!kn33i) kn33i = await import('./kbx_n33i.js'); r = await kn33i.post(req, u0, r, env); } catch (e) {} } }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
       // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
       if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
@@ -491,6 +497,12 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD')) { const kc = kbCaseFix(u); if (kc) return new Response(null, { status: 301, headers: { location: kc, 'cache-control': 'public, max-age=3600' } }); }
     // n29q: Sumba (conflict of interest) is shown only in the transparency ranking: its market file and anonymous project pages point there
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/sumba|p\/sum-\d{1,4})\/?$/i.test(u.pathname)) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1]; return new Response(null, { status: 301, headers: { location: (lg ? '/' + lg : '') + '/rankings/transparency/sumba/', 'cache-control': 'public, max-age=3600' } }); }
+    // n33i (batch 33, items 3, 4, 5, 15): /p/?id=, /m/?market=, /<lang>/ask-developer/?id= and unknown ids on /explain/, /timeline/, /ask-developer/
+    if (host === 'kolaboro.com' && req.method === 'GET' && u.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:p|m|ask-developer|explain|timeline)\/?$/.test(u.pathname)) {
+      try { if (!kn33i) kn33i = await import('./kbx_n33i.js'); const x = await kn33i.pre(req, u, env); if (x instanceof Response) return x;
+        if (x === 'nf') { const nu = new URL('/__kb_missing__/', u); const nf = kbHeaders(await this.site(new Request(nu, req), env, ctx, nu, host), nu); if (nf.status === 404 && /text\/html/.test(nf.headers.get('content-type') || '')) { if (!k404) k404 = await import('./kbx_404.js'); const pg = await k404.page(nf, u, 404, env); return /^\/(es|de|fr|nl|ru|zh|ar)\//.test(u.pathname) ? kbHeaders(pg, u) : pg; } }
+      } catch (e) {}
+    }
     // kolaboro.com (seoT, batch 8): HEAD answers exactly like GET (status and headers, no body) for every page, incl. worker-rendered ones
     if (host === 'kolaboro.com' && env && env.KB_WKEY) { if (!kb) kb = await import('./kolaboro.js'); kb.useEnv(env); }   // sec13: worker key from the Cloudflare secret when Carlos sets it
     if (host === 'kolaboro.com' && req.method === 'HEAD' && !/^\/(api|mcp)(\/|$)/.test(u.pathname)) { const g = await this.fetch(new Request(req.url, { method: 'GET', headers: req.headers }), env, ctx); return new Response(null, { status: g.status, statusText: g.statusText, headers: g.headers }); }

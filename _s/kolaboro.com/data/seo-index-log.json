@@ -1,0 +1,8 @@
+{
+ "version": "seo-index-log-1",
+ "source": "Google Search Console (Pages report and Performance report, last 28 days), read by the site owner. One row a week.",
+ "how_to_add": "Append one object to weeks with the date read and the counts shown in Search Console; leave a field out when it was not read. Never estimate.",
+ "weeks": [
+  {"date": "2026-11-20", "indexed": 12400, "not_indexed": 17200, "discovered_not_indexed": 9791, "crawled_not_indexed": 1740, "noindex": 2516, "alternate_canonical": 2440, "redirect": 374, "not_found": 337, "clicks_28d": 226, "impressions_28d": 13200, "avg_position": 12.2, "external_links": 5, "linking_sites": 3}
+ ]
+}
