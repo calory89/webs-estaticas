@@ -29,7 +29,7 @@ Calculadas con las casas de la web cada vez que se actualiza. Precios de salida 
 - [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Jutlandia Occidental, Dinamarca (91).
 - [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 79 casas de 50.000 € o menos; la mayoría en Italia (33).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
-- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 667 casas está marcado como medio o alto; 12, como alto.
+- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 706 casas está marcado como medio o alto; 13, como alto.
 - [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.460 €/m² a menos de 30 km de un aeropuerto, 1.080 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
 - [Las casas más baratas por metro cuadrado de Europa (2026)](https://realhunt.co/es/research/cheapest-per-sqm-europe). La más baja de Europa: 98 €/m² en Markaryd, Kronoberg, Småland, Suecia; mediana más baja: Suecia, 680 €/m².

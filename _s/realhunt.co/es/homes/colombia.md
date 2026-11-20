@@ -70,6 +70,8 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 - 2 anuncios indican la cuota mensual de comunidad, de 149 EUR a 203 EUR. Súmala a tus gastos anuales.
 - 1 está en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
+- 2 de 3 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 2 de 3 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
 - En conjunto, estas viviendas puntúan más bajo en precio (17/100 de media) y más alto en cercanía a un aeropuerto (95/100).
 
 ### Preguntas de quienes compran

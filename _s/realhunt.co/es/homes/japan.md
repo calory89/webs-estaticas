@@ -155,7 +155,7 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 ### En qué fijarse antes de comprar
 
 - 15 de los 33 anuncios no indican la superficie, así que su precio por m² no se puede comparar.
-- 2 de 33 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 3 de 33 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
 - 5 de 33 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
 - 11 de 33 muestran una posición aproximada en el mapa: el anuncio da la localidad, no la calle.
 - En conjunto, estas viviendas puntúan más bajo en gastos de compra (36/100 de media) y más alto en cercanía a un aeropuerto (86/100).

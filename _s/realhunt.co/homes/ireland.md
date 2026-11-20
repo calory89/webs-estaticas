@@ -105,7 +105,7 @@ By budget [Under €300,000 4](https://realhunt.co/homes/ireland/under-300000)
 
 By setting [By the sea 3](https://realhunt.co/homes/ireland/by-the-sea)
 
-By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-ireland) [Over 80 m² 3](https://realhunt.co/cheap-houses/over-80-sqm-in-ireland)
+By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-ireland) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-ireland)
 
 Neighbouring countries [United Kingdom 5](https://realhunt.co/homes/united-kingdom)
 

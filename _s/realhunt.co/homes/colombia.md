@@ -70,6 +70,8 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 - 2 listings state a monthly community fee, from 149 EUR to 203 EUR. Add it to your yearly costs.
 - 1 is in a shared building or complex but the listing does not state the community fee: ask for it in writing.
+- 2 of 3 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 2 of 3 are close to a motorway, a railway or an airport (high on our noise check).
 - As a group these homes score lowest on price (17/100 on average) and highest on distance to an airport (95/100).
 
 ### Questions buyers ask

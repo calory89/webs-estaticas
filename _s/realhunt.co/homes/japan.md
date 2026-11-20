@@ -155,7 +155,7 @@ General information, not tax or legal advice. Figures checked in 2026.
 ### What to watch out for
 
 - 15 of the 33 listings give no floor area, so their price per m² cannot be compared.
-- 2 of 33 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 3 of 33 sit where our rough flood check reads medium or high. Each home page links the official flood map.
 - 5 of 33 are close to a motorway, a railway or an airport (high on our noise check).
 - 11 of 33 show an approximate map position: the listing names the town, not the street.
 - As a group these homes score lowest on buying costs (36/100 on average) and highest on distance to an airport (86/100).

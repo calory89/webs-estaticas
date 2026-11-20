@@ -21,9 +21,9 @@
   "thin_under_150_words": 27,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4033,
-  "redirects": 1836,
-  "moved_stubs": 318
+  "with_lastmod": 4035,
+  "redirects": 1840,
+  "moved_stubs": 322
  },
  "failures": [],
  "groups": {
@@ -130,7 +130,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1906,
+   "median_words": 1905,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -346,7 +346,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2315,
+   "median_words": 2313,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1284,7 +1284,7 @@
    "places": {
     "pages": 630,
     "twins": 630,
-    "words": 1340490,
+    "words": 1341612,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1318,7 +1318,7 @@
    "checked": 4640,
    "indexable": 4098,
    "max_depth": 3,
-   "titles_changed_since_last_build": 10,
+   "titles_changed_since_last_build": 17,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1326,7 +1326,7 @@
    "year_in_title": 2,
    "near_identical_pages": 528,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 8,
+   "title_changed_twice_in_28_days": 14,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1408,6 +1408,12 @@
     "Dcky5gADEHo: Scandinavia"
    ],
    "title_changed_twice_in_28_days": [
+    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (274)",
+    "/cheap-houses/quiet-location-in-canada: Houses away from motorways and railways in Canada (7)",
+    "/cheap-houses/quiet-location-in-france: Houses away from motorways and railways in France (18)",
+    "/cheap-houses/quiet-location-in-greece: Houses away from motorways and railways in Greece (21)",
+    "/cheap-houses/quiet-location-in-italy: Cheap homes away from motorways and railways in Italy (45)",
+    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (80)",
     "/deal/DbC0D4RoLzc: House in Värmlandsnäs, Sweden for €53,000 · RealHunt",
     "/deal/DdC7bBTgSg1: 3-bedroom house in Risögrund, Sweden for €81,000 · RealHunt",
     "/deal/es-san-martin-de-valdeiglesias-175k-710397: 1-bedroom house in San Martín de Valdeiglesias for €175,000",

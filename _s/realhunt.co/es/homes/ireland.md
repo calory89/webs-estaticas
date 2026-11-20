@@ -105,7 +105,7 @@ Por presupuesto [Menos de 300.000 € 4](https://realhunt.co/es/homes/ireland/un
 
 Por entorno [Junto al mar 3](https://realhunt.co/es/homes/ireland/by-the-sea)
 
-Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-ireland) [Más de 80 m² 3](https://realhunt.co/es/cheap-houses/over-80-sqm-in-ireland)
+Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-ireland) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-ireland)
 
 Países vecinos [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom)
 

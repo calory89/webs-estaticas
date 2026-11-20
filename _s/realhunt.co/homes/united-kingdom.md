@@ -116,7 +116,7 @@ By setting [Village houses 3](https://realhunt.co/homes/united-kingdom/village-h
 
 By region [Northern Ireland 3](https://realhunt.co/homes/united-kingdom/northern-ireland)
 
-By feature [With a garden 3](https://realhunt.co/cheap-houses/with-garden-in-united-kingdom) [With a terrace 4](https://realhunt.co/cheap-houses/with-a-terrace-in-united-kingdom) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-united-kingdom)
+By feature [With a garden 3](https://realhunt.co/cheap-houses/with-garden-in-united-kingdom) [With a terrace 4](https://realhunt.co/cheap-houses/with-a-terrace-in-united-kingdom) [Quiet location 4](https://realhunt.co/cheap-houses/quiet-location-in-united-kingdom)
 
 Neighbouring countries [Ireland 4](https://realhunt.co/homes/ireland) [France 45](https://realhunt.co/homes/france)
 

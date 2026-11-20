@@ -381,7 +381,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "8% of 667 cheap homes carry a medium or high flood indicator. The share in each country, what the indicator is and what it is not. Chart and CSV.",
+   "description": "8% of 706 cheap homes carry a medium or high flood indicator. The share in each country, what the indicator is and what it is not. Chart and CSV.",
    "schema": {
     "fields": [
      {

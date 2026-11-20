@@ -116,7 +116,7 @@ Por entorno [Casas de pueblo 3](https://realhunt.co/es/homes/united-kingdom/vill
 
 Por región [Irlanda del Norte 3](https://realhunt.co/es/homes/united-kingdom/northern-ireland)
 
-Por característica [Con jardín 3](https://realhunt.co/es/cheap-houses/with-garden-in-united-kingdom) [Con terraza 4](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-kingdom) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-united-kingdom)
+Por característica [Con jardín 3](https://realhunt.co/es/cheap-houses/with-garden-in-united-kingdom) [Con terraza 4](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-kingdom) [Zona tranquila 4](https://realhunt.co/es/cheap-houses/quiet-location-in-united-kingdom)
 
 Países vecinos [Irlanda 4](https://realhunt.co/es/homes/ireland) [Francia 45](https://realhunt.co/es/homes/france)
 
