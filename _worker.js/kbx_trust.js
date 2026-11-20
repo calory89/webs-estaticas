@@ -271,11 +271,13 @@ function moderationPage(lang) {
   return { path: MOD_P, title, desc, body, ld: [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, lastReviewed: REVIEWED, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } }, crumbLd(lang, [[t(lang, 'mo_h1'), pre(lang) + MOD_P]])] };
 }
 const FOUNDERS = [['Carlos de Ory', 'r_ceo'], ['Ignacio Hojas García-Plaza', 'r_co']];   // exactly as published on /about/
+// n33a (item 88): stable ids for the two people already public on /team/ and /about/ (Person nodes, also used by the Organization on the home page)
+const FID = ['carlos-de-ory', 'ignacio-hojas-garcia-plaza'], FJOB = ['CEO', 'Co-founder'];
 function teamPage(lang) {
   const how = '<ol class="k-steps">' + t(lang, 'tm_how').map(([h, p]) => '<li><b>' + esc(h) + '</b><p>' + esc(p) + '</p></li>').join('') + '</ol>';
   const ab = lang === 'en' || lang === 'es' ? pre(lang) + '/about/' : '/about/';
   const body = '<div class="kpg">' + head(lang, [[t(lang, 'tm_h1'), pre(lang) + TEAM_P]], esc(t(lang, 'tm_h1')), esc(t(lang, 'tm_lead')), '<p class="k-small k-muted"><time datetime="' + REVIEWED + '">' + esc(tx(lang, 'rev', { d: fdt(REVIEWED, lang) })) + '</time></p>') +
-    '<div class="k-prose"><h2 id="who">' + esc(t(lang, 'tm_who_h')) + '</h2><p>' + esc(t(lang, 'tm_who_p')) + '</p><ul>' + FOUNDERS.map(([n, r]) => '<li><b>' + bdi(n) + '</b>: ' + esc(t(lang, r)) + '</li>').join('') + '</ul><p><a class="k-src" href="' + ab + '">' + esc(t(lang, 'l_about')) + '</a></p><p>' + esc(t(lang, 'tm_agents')) + '</p>' +
+    '<div class="k-prose"><h2 id="who">' + esc(t(lang, 'tm_who_h')) + '</h2><p>' + esc(t(lang, 'tm_who_p')) + '</p><ul>' + FOUNDERS.map(([n, r], i) => '<li id="' + FID[i] + '"><b>' + bdi(n) + '</b>: ' + esc(t(lang, r)) + '</li>').join('') + '</ul><p><a class="k-src" href="' + ab + '">' + esc(t(lang, 'l_about')) + '</a></p><p>' + esc(t(lang, 'tm_agents')) + '</p>' +
     (t31(lang, 'tm_legal_h') ? '<h2 id="legal">' + esc(t31(lang, 'tm_legal_h')) + '</h2><p>' + esc(t31(lang, 'tm_legal')) + '</p>' : '') +   // n31b (item 74)
     '<h2 id="method">' + esc(t(lang, 'tm_how_h')) + '</h2>' + how +
     '<h2 id="roles">' + esc(t(lang, 'tm_roles_h')) + '</h2><ul>' + t(lang, 'tm_roles').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
@@ -288,7 +290,9 @@ function teamPage(lang) {
     // n29e (batch 29): editorial policy, daily process and sources per country
     '<p>' + [['/editorial-policy/', 'l_ep'], ['/how-we-work/', 'l_hw'], ['/sources/', 'l_src']].map(([h, k]) => '<a href="' + pre(lang) + h + '">' + esc(e29t(lang, k)) + '</a>').join(' · ') + '</p></div></div></section></div>';
   const title = t(lang, 'tm_title'), desc = t(lang, 'tm_desc'), url = ORIGIN + pre(lang) + TEAM_P;
-  return { path: TEAM_P, title, desc, body, ld: [{ '@type': 'AboutPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, lastReviewed: REVIEWED, about: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/', founder: FOUNDERS.map(([n]) => ({ '@type': 'Person', name: n })) } }, crumbLd(lang, [[t(lang, 'tm_h1'), pre(lang) + TEAM_P]])] };
+  return { path: TEAM_P, title, desc, body, ld: [{ '@type': 'AboutPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, lastReviewed: REVIEWED, about: { '@id': ORIGIN + '/#org' }, mainEntity: { '@id': ORIGIN + '/#org' }, hasPart: FOUNDERS.map((f, i) => ({ '@id': ORIGIN + TEAM_P + '#' + FID[i] })) },
+    { '@type': 'Organization', '@id': ORIGIN + '/#org', name: 'Kolaboro', url: ORIGIN + '/', sameAs: ['https://github.com/calory89/kolaboro-open'], founder: FOUNDERS.map((f, i) => ({ '@id': ORIGIN + TEAM_P + '#' + FID[i] })) },
+    ...FOUNDERS.map(([n, r], i) => ({ '@type': 'Person', '@id': ORIGIN + TEAM_P + '#' + FID[i], name: n, jobTitle: FJOB[i], description: t(lang, r), worksFor: { '@id': ORIGIN + '/#org' }, url: url + '#' + FID[i] })), crumbLd(lang, [[t(lang, 'tm_h1'), pre(lang) + TEAM_P]])] };
 }
 
 // ------------------------------------------------------------------------------------------------ page entry

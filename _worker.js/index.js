@@ -39,7 +39,7 @@ let kb = null, kbx = null, ksat = null, klk = null;
 // n32w (19 Nov 2026): kolaboro.com string tables live in /_s/kolaboro.com/data/i18n/*.json (worker size limit); every kolaboro.com
 // request waits for them once per isolate (kbx_strings.js) before any module that reads them runs
 let kStr = null;
-async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} }
+async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} try { if (!kn33a) kn33a = await import('./kbx_n33a.js'); } catch (e) {} }   // n33a: byline and hub feeds read by kbHeaders (sync)
 const KXR_V = 'n22e1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers|type)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
@@ -66,6 +66,7 @@ let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^
 const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;   // n31a (batch 31): keep equal to PATHS in kbx_n31a.js
 let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
+let kn33a = null; const KN33A = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?delays\/?$/;   // n33a (batch 33): keep equal to PATHS in kbx_n33a.js
 let kn32x = null; const KN32X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/sql|claims\/search|anomalies|graph\/entities|verify\/offline|engineering\/(?:provenance|early-hints)|changes\/live|watch\/website-changes|satellite\/construction-index)\/?$|^\/api\/v1\/(?:stream|provenance)$|^\/sql\/?$/;   // n32x (batch 32): keep equal to PATHS in kbx_n32x.js
 let kn31t = null; const KN31T = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:engineering\/(?:architecture|modules|rollback|licenses|checks|maintenance)|shortcuts|security\/disclosure|press\/cases|press\/data-journalism)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/press(?:\/monthly)?\/?$|^\/api\/v1\/alerts$|^\/security\.txt$/;   // n31t (batch 31): keep equal to PATHS in kbx_n31t.js
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
@@ -180,13 +181,18 @@ function kbHeaders(r, u) {
   let ga = false, gaTail = '';
   // n28a: 146 static pages have Open Graph tags but no og:locale (shared links were read as English); it is added from the path language
   let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || (/^\/agents\/id(\/|$)/.test(u.pathname) ? 'id_ID' : 'en_GB');
-  return new HTMLRewriter().on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
+  // n33a (batch 33): items 86 (a JSON Feed and an Atom feed of the data changes in the <head> of every hub that carries none) and 89
+  // (who made a report, from what, the method and where to send corrections, under every report)
+  let fJ = false, fA = false; const n33 = kn33a && r.status === 200 && !priv && !embed ? kn33a : null, n33F = n33 && n33.FEED_HUB.test(u.pathname), n33B = n33 && n33.REPORTS.test(u.pathname);
+  return new HTMLRewriter().on('head link[rel="alternate"]', { element(e) { const ty = e.getAttribute('type') || ''; if (/feed\+json/.test(ty)) fJ = true; if (/atom\+xml/.test(ty)) fA = true; } })
+    .on('main', { element(e) { if (n33B) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [0, 'en'])[1]; const b = n33.byline(lg, u.pathname); if (b) e.append('<div class="wrap">' + b + '</div>', { html: true }); } } })
+    .on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
     .on('body', { element(e) { if (KB_CITE29.test(u.pathname)) e.append('<script nonce="' + nonce + '" src="/k/cite29.js?v=2" defer></script>', { html: true }); } })   // n29e: "Cite" buttons on report figures (item 74)
-    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } if (KB_SPEC_OK(u.pathname)) t.before(KB_SPEC.replace('{N}', nonce), { html: true }); }); } }).transform(out);
+    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (ogT && !ogL) { t.before('<meta property="og:locale" content="' + OGL + '">', { html: true }); ogL = true; } if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } if (KB_SPEC_OK(u.pathname)) t.before(KB_SPEC.replace('{N}', nonce), { html: true }); if (n33F && !(fJ && fA)) t.before(n33.feedLinks(u.pathname, fJ, fA), { html: true }); if (n33) { const dl = n33.dataLd(u.pathname); if (dl) t.before(dl, { html: true }); } }); } }).transform(out);
 }
 // n21e (11 Nov 2026): Russian number agreement. Templates in about 20 modules say "{k} проектов"; after 2, 3, 4 (22, 33...) Russian
 // wants the genitive singular ("2 проекта") and after 1 (21, 31...) the nominative singular ("1 проект"). Left alone: 5 to 20, numbers
@@ -213,7 +219,8 @@ function kbRu(html) {
     return num + gap + adj + KB_RU_N[noun][0];
   });
 }
-const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year' }, es: { meses: 'mes', 'días': 'día', semanas: 'semana', 'años': 'año' },
+const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year', projects: 'project' }, es: { meses: 'mes', 'días': 'día', semanas: 'semana', 'años': 'año' },   // n33a: + projects ("1 projects tracked" on developer answers)
+ 
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
@@ -431,6 +438,7 @@ export default {
       try { if (!kn31t) kn31t = await import('./kbx_n31t.js'); const u0 = new URL(req.url); if (!kn31t.MAINT_SKIP.test(u0.pathname)) return await kn31t.maintPage(u0, env); } catch (e) {}
     }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) await kbStrings(env);   // n32w: string tables first (see kbStrings)
+    if (kn33a && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { await kn33a.prep(env, new URL(req.url)); } catch (e) {} }   // n33a (item 79): data card for the /data/ Dataset node
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
@@ -516,6 +524,12 @@ export default {
       if (!kn31b) kn31b = await import('./kbx_n31b.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
+    // kolaboro.com (n33a, batch 33): /[lang/]delays/, off-plan delays of the week, same address every week (see kbx_n33a.js)
+    if (host === 'kolaboro.com' && KN33A.test(u.pathname)) {
+      if (!kn33a) kn33a = await import('./kbx_n33a.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn33a.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n32x, batch 32): /data/sql/, /claims/search/, /anomalies/, /graph/entities/, /verify/offline/, /engineering/{provenance,early-hints}/,
     // /changes/live/, /watch/website-changes/, /satellite/construction-index/, /api/v1/{stream,provenance}; /sql/ 301 (see kbx_n32x.js)

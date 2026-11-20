@@ -27,7 +27,7 @@ import { E } from './kbx_e27_i18n.js';
 
 // module-level tables of code modules (n32w step 2): each module reads TB.<module>_<name>, filled here
 export const TB = { kbx_stage_S: {}, kbx_n29i_T: {}, kbx_n29i_BT: {}, kbx_plot_T: {}, kbx_land_S: {}, kbx_pp_S: {}, kbx_around_S: {},
-  kbx_bulkix_T: {}, kbx_web_S: {}, kbx_money_S: {}, kbx_watch_S: {}, kbx_net_T: {}, kbx_paper_T: {}, kbx_paper_N: {}, kbx_rules_S: {} };
+  kbx_bulkix_T: {}, kbx_web_S: {}, kbx_money_S: {}, kbx_watch_S: {}, kbx_net_T: {}, kbx_paper_T: {}, kbx_paper_N: {}, kbx_rules_S: {}, kbx_n33a_S: {} };
 export const FILES = {
   kbx_named_i18n: { T: named }, kbx_h29_i18n: { H }, kbx_facets_i18n: { FS }, kbx_e29_i18n: { E29 }, kbx_trust_i18n: { TS },
   kbx_tr_i18n: { TRS }, kbx_t27_i18n: { T27 }, kbx_n30a_i18n: { S: n30aS }, kbx_n30c_i18n: { S: n30cS }, kbx_fc_i18n: { FT },
@@ -37,6 +37,7 @@ export const FILES = {
   kbx_pp: { S: TB.kbx_pp_S }, kbx_around: { S: TB.kbx_around_S },
   kbx_bulkix: { T: TB.kbx_bulkix_T }, kbx_web: { S: TB.kbx_web_S }, kbx_money: { S: TB.kbx_money_S }, kbx_watch: { S: TB.kbx_watch_S },
   kbx_net: { T: TB.kbx_net_T }, kbx_paper: { T: TB.kbx_paper_T, N: TB.kbx_paper_N }, kbx_rules: { S: TB.kbx_rules_S },
+  kbx_n33a: { S: TB.kbx_n33a_S },   // n33a (batch 33): /delays/, report byline, hub feed titles
 };
 const done = new Set();
 let pend = null;
