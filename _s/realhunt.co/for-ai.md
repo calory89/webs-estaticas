@@ -41,10 +41,20 @@ Can a person of one nationality buy in one country? | [realhunt.co/can-i-buy](ht
 How do you buy a home in a country, step by step? | [realhunt.co/guide](https://realhunt.co/guide) | realhunt.co/guide/<country>.md
 What is the RealHunt score? | [realhunt.co/method](https://realhunt.co/method) | [realhunt.co/method.md](https://realhunt.co/method.md)
 Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
+Is a home on RealHunt still for sale, and how do you know? | [realhunt.co/how-we-check-homes](https://realhunt.co/how-we-check-homes) | [realhunt.co/how-we-check-homes.md](https://realhunt.co/how-we-check-homes.md)
+Which homes does RealHunt turn down? | [realhunt.co/what-we-reject](https://realhunt.co/what-we-reject) | [realhunt.co/what-we-reject.md](https://realhunt.co/what-we-reject.md)
+Which homes left the site, and when? | [realhunt.co/research/removed-homes](https://realhunt.co/research/removed-homes) | –
+How does RealHunt make money? | [realhunt.co/how-we-make-money](https://realhunt.co/how-we-make-money) | [realhunt.co/how-we-make-money.md](https://realhunt.co/how-we-make-money.md)
+Where in Europe is a home cheapest per square metre? | [realhunt.co/research/cheapest-per-sqm-europe](https://realhunt.co/research/cheapest-per-sqm-europe) | [realhunt.co/research/cheapest-per-sqm-europe.md](https://realhunt.co/research/cheapest-per-sqm-europe.md)
+Where are the homes by the sea under €100,000? | [realhunt.co/research/sea-homes-under-100000](https://realhunt.co/research/sea-homes-under-100000) | [realhunt.co/research/sea-homes-under-100000.md](https://realhunt.co/research/sea-homes-under-100000.md)
+How many homes were added this month, by country? | [realhunt.co/research/new-homes-this-month](https://realhunt.co/research/new-homes-this-month) | [realhunt.co/research/new-homes-this-month.md](https://realhunt.co/research/new-homes-this-month.md)
+Key facts and every home of one country, as data | [realhunt.co/data/countries/index.json](https://realhunt.co/data/countries/index.json) | realhunt.co/data/countries/<country>.md
+Every home on RealHunt, one line each | [realhunt.co/data/homes.jsonl](https://realhunt.co/data/homes.jsonl) | –
 
 ### Files made for machines
 
 - [/llms.txt](https://realhunt.co/llms.txt): short index of the site
+- [/data/homes.jsonl](https://realhunt.co/data/homes.jsonl): every home, one JSON object per line: price, place, size, score, state and address
 - [/llms-full.txt](https://realhunt.co/llms-full.txt): method, data, costs, guides and every home in one text file
 - Markdown copy of each data page, each guide and the method: the same address ending in .md
 - CSV of each dataset: linked from its page
@@ -52,7 +62,7 @@ Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
 
 ### Crawlers
 
-[robots.txt](https://realhunt.co/robots.txt) allows search engines and the crawlers of AI assistants (among them GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Amazonbot, CCBot) on every public page. Only the private API paths are closed.
+[robots.txt](https://realhunt.co/robots.txt) allows search engines and the crawlers of AI assistants (among them GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Amazonbot, CCBot) on every public page, and names the homes, the listings, the guides and the data files as open to them. Only the private areas (accounts, admin, inboxes) and the API are closed.
 
 ### Contact
 

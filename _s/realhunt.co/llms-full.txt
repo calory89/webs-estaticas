@@ -56,11 +56,20 @@ RealHunt does not sell the resale homes it lists: it links to the original listi
 
 Found an error? Write to carlos@equinoxinvestmentgroup.com with the page and what is wrong. For a home that is sold or wrongly described, the report button on its page is the fastest way.
 
-When a figure, a rule or a description is corrected, the page is changed and its date updated. Changes to how the score works are recorded in the [change log of the method](https://realhunt.co/method).
+When a figure, a rule or a description is corrected, the page is changed and its date updated, and the change is listed with its date in the [corrections](https://realhunt.co/corrections). Changes to how the score works are recorded in the [change log of the method](https://realhunt.co/method).
 
 ### Updates
 
 Homes are added and removed every day, and the data pages are recomputed with each update, so two visits can show slightly different numbers. Each page shows when it was last updated.
+
+### How we check homes and what we publish about it
+
+- [How we know a home is still for sale](https://realhunt.co/how-we-check-homes)
+- [Which homes we reject and why](https://realhunt.co/what-we-reject)
+- [What we never do](https://realhunt.co/what-we-never-do)
+- [How RealHunt makes money](https://realhunt.co/how-we-make-money)
+- [Corrections and changes, with their dates](https://realhunt.co/corrections)
+- [Homes taken off the site, month by month](https://realhunt.co/research/removed-homes)
 
 ### Quoting RealHunt
 
@@ -113,10 +122,20 @@ Can a person of one nationality buy in one country? | [realhunt.co/can-i-buy](ht
 How do you buy a home in a country, step by step? | [realhunt.co/guide](https://realhunt.co/guide) | realhunt.co/guide/<country>.md
 What is the RealHunt score? | [realhunt.co/method](https://realhunt.co/method) | [realhunt.co/method.md](https://realhunt.co/method.md)
 Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
+Is a home on RealHunt still for sale, and how do you know? | [realhunt.co/how-we-check-homes](https://realhunt.co/how-we-check-homes) | [realhunt.co/how-we-check-homes.md](https://realhunt.co/how-we-check-homes.md)
+Which homes does RealHunt turn down? | [realhunt.co/what-we-reject](https://realhunt.co/what-we-reject) | [realhunt.co/what-we-reject.md](https://realhunt.co/what-we-reject.md)
+Which homes left the site, and when? | [realhunt.co/research/removed-homes](https://realhunt.co/research/removed-homes) | –
+How does RealHunt make money? | [realhunt.co/how-we-make-money](https://realhunt.co/how-we-make-money) | [realhunt.co/how-we-make-money.md](https://realhunt.co/how-we-make-money.md)
+Where in Europe is a home cheapest per square metre? | [realhunt.co/research/cheapest-per-sqm-europe](https://realhunt.co/research/cheapest-per-sqm-europe) | [realhunt.co/research/cheapest-per-sqm-europe.md](https://realhunt.co/research/cheapest-per-sqm-europe.md)
+Where are the homes by the sea under €100,000? | [realhunt.co/research/sea-homes-under-100000](https://realhunt.co/research/sea-homes-under-100000) | [realhunt.co/research/sea-homes-under-100000.md](https://realhunt.co/research/sea-homes-under-100000.md)
+How many homes were added this month, by country? | [realhunt.co/research/new-homes-this-month](https://realhunt.co/research/new-homes-this-month) | [realhunt.co/research/new-homes-this-month.md](https://realhunt.co/research/new-homes-this-month.md)
+Key facts and every home of one country, as data | [realhunt.co/data/countries/index.json](https://realhunt.co/data/countries/index.json) | realhunt.co/data/countries/<country>.md
+Every home on RealHunt, one line each | [realhunt.co/data/homes.jsonl](https://realhunt.co/data/homes.jsonl) | –
 
 ### Files made for machines
 
 - [/llms.txt](https://realhunt.co/llms.txt): short index of the site
+- [/data/homes.jsonl](https://realhunt.co/data/homes.jsonl): every home, one JSON object per line: price, place, size, score, state and address
 - [/llms-full.txt](https://realhunt.co/llms-full.txt): method, data, costs, guides and every home in one text file
 - Markdown copy of each data page, each guide and the method: the same address ending in .md
 - CSV of each dataset: linked from its page
@@ -124,7 +143,7 @@ Who runs RealHunt? | [realhunt.co/about](https://realhunt.co/about) | –
 
 ### Crawlers
 
-[robots.txt](https://realhunt.co/robots.txt) allows search engines and the crawlers of AI assistants (among them GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Amazonbot, CCBot) on every public page. Only the private API paths are closed.
+[robots.txt](https://realhunt.co/robots.txt) allows search engines and the crawlers of AI assistants (among them GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, Amazonbot, CCBot) on every public page, and names the homes, the listings, the guides and the data files as open to them. Only the private areas (accounts, admin, inboxes) and the API are closed.
 
 ### Contact
 
@@ -239,6 +258,9 @@ Computed from the homes on the site each time it is updated. Asking prices in eu
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 8% of 627 homes are marked medium or high; 12 are marked high.
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,464/m² under 30 km from an airport, €1,067/m² between 30 and 60 km.
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices). From €1,366/m² in Batumi to €3,661/m² in Phuket.
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe). Lowest in Europe: €98/m² in Markaryd, Kronoberg, Småland, Sweden; lowest median: Sweden, €680/m².
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000). 94 homes by the sea at or under €100,000; most in Spain (25).
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month). 179 homes added in November 2026; most in the United States (35).
 
 Each page has its chart, table, CSV, method and a ready citation. Need a different cut (one country, one price band, one month)? Ask at carlos@equinoxinvestmentgroup.com.
 
@@ -280,7 +302,7 @@ RealHunt data
 
 ## RealHunt data: home prices, buying costs and rules for foreign buyers, by country
 
-RealHunt publishes 10 datasets, recomputed on every update from the 684 homes on the site and the buying rules of 20 countries. Anyone may quote them with a link.
+RealHunt publishes 13 datasets, recomputed on every update from the 684 homes on the site and the buying rules of 20 countries. Anyone may quote them with a link.
 
 Updated 20 November 2026 · Creative Commons BY 4.0
 
@@ -294,6 +316,9 @@ Updated 20 November 2026 · Creative Commons BY 4.0
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)8% of 627 homes are marked medium or high; 12 are marked high.[CSV](https://realhunt.co/research/flood-indicator.csv) · [Markdown](https://realhunt.co/research/flood-indicator.md)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)€1,464/m² under 30 km from an airport, €1,067/m² between 30 and 60 km.[CSV](https://realhunt.co/research/price-by-airport-distance.csv) · [Markdown](https://realhunt.co/research/price-by-airport-distance.md)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)From €1,366/m² in Batumi to €3,661/m² in Phuket.[CSV](https://realhunt.co/research/new-build-prices.csv) · [Markdown](https://realhunt.co/research/new-build-prices.md)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)Lowest in Europe: €98/m² in Markaryd, Kronoberg, Småland, Sweden; lowest median: Sweden, €680/m².[CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown](https://realhunt.co/research/cheapest-per-sqm-europe.md)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)94 homes by the sea at or under €100,000; most in Spain (25).[CSV](https://realhunt.co/research/sea-homes-under-100000.csv) · [Markdown](https://realhunt.co/research/sea-homes-under-100000.md)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)179 homes added in November 2026; most in the United States (35).[CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown](https://realhunt.co/research/new-homes-this-month.md)
 
 ### What the data is
 
@@ -415,6 +440,9 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -843,6 +871,120 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
+- [All datasets](https://realhunt.co/research)
+
+
+---
+Source: https://realhunt.co/research/cheapest-per-sqm-europe (updated 2026-11-20)
+
+RealHunt data
+
+## The cheapest homes per square metre in Europe (2026)
+
+The home with the lowest asking price per square metre in Europe on RealHunt is Extensively renovated 1945 house on 2,800 m² of garden and woodland in Markaryd, Kronoberg, Småland, Sweden: €78,000 for 800 m², €98/m². By country, the lowest median price per m² is in Sweden (€680/m²), Bulgaria (€740/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²).
+
+From 495 homes in 14 European countries whose listing gives a size of at least 20 m², each checked by a person, 20 November 2026.
+
+Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown version](https://realhunt.co/research/cheapest-per-sqm-europe.md) · How to cite
+Median asking price per m² in Europe, by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 20 November 2026.
+
+- Sweden 21 homes €680
+- Bulgaria small sample: 7 homes €740
+- Denmark 44 homes €790
+- Germany 21 homes €1,053
+- Poland 31 homes €1,139
+- Italy 52 homes €1,167
+- France 48 homes €1,175
+- Spain 186 homes €1,217
+- Portugal 19 homes €1,352
+- Greece 23 homes €1,465
+- United Kingdom small sample: 5 homes €1,807
+- Switzerland 10 homes €2,337
+- Cyprus small sample: 6 homes €3,723
+- Netherlands 18 homes €4,286
+
+Hatched bar: fewer than 10 homes, read with care.
+
+### The 25 homes with the lowest price per m² in Europe
+
+Rank | Home | Place | Price | Size | €/m² | Score
+1 | [Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8) | Markaryd, Kronoberg, Småland, Sweden | €78,000 | 800 m² | €98 | 93
+2 | [1926 character home with a full home spa, sauna and geothermal heating](https://realhunt.co/deal/DdAqg70oDDj) | Bjurholm, Västerbotten, Sweden | €99,000 | 680 m² | €146 | 85
+3 | [Four-level village house with sea and mountain views in Sangineto, Calabria](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976) | Sangineto, Cosenza, Calabria | €22,000 | 108 m² | €204 | 91
+4 | [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775) | Bussière-Poitevine, Haute-Vienne | €39,950 | 171 m² | €234 | 92
+5 | [Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, Teruel](https://realhunt.co/deal/es-torre-los-negros-63k-028057) | Torre los Negros, Teruel | €63,000 | 256 m² | €246 | 91
+6 | [5-bedroom semi-detached house with terrace in Nevada](https://realhunt.co/deal/es-nevada-77k-72929) | Nevada, Granada, Spain | €77,000 | 306 m² | €252 | 94
+7 | [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809) | Alpujarra de la Sierra, Granada, Spain | €38,000 | 150 m² | €253 | 94
+8 | [5-bedroom house with mountain views in Parres](https://realhunt.co/deal/es-parres-90k-15042) | Parres, Asturias, Spain | €90,000 | 355 m² | €254 | 90
+9 | [Whitewashed four-bedroom village house with several terraces and big views in Líjar, Almería](https://realhunt.co/deal/es-lijar-69k-658718) | Líjar, Almería | €69,000 | 237 m² | €291 | 91
+10 | [5-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-59k-77832) | Cehegín, Murcia, Spain | €59,900 | 200 m² | €300 | 88
+11 | [Two-bedroom apartment with terrace in a historic Tuscan village](https://realhunt.co/deal/DdSm-JkiJem) | Montieri, Grosseto, Tuscany, Italy | €16,000 | 51 m² | €314 | 82
+12 | [Cottage on 6,148 m² of garden and woodland near two lakes](https://realhunt.co/deal/DcNI1r5oM57) | Eringsboda, Blekinge, Sweden | €54,000 | 148 m² | €365 | 93
+13 | [Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) | Tegsnäset, Västerbotten, Sweden | €59,000 | 156 m² | €378 | 92
+14 | [3-bedroom house with fireplace in Quirós](https://realhunt.co/deal/es-quiros-93k-41930) | Quirós, Asturias, Spain | €93,000 | 240 m² | €388 | 84
+15 | [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637) | Nacimiento, Almería, Spain | €39,000 | 100 m² | €390 | 92
+16 | [Colorful one-bedroom apartment with attic and balcony](https://realhunt.co/deal/Dcxwhq4kRRe) | Gradoli, Viterbo, Lazio, Italy | €20,000 | 51 m² | €392 | 80
+17 | [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp) | Fiamignano, Rieti, Lazio, Italy | €16,000 | 40 m² | €400 | 83
+18 | [4-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-79k-37859) | Cehegín, Murcia, Spain | €79,900 | 200 m² | €400 | 86
+19 | [5-bedroom house with terrace in Sorvilán](https://realhunt.co/deal/es-sorvilan-59k-76765) | Sorvilán, Granada, Spain | €59,000 | 147 m² | €401 | 94
+20 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) | Ranum, North Jutland | €79,800 | 198 m² | €403 | 98
+21 | [155 m² home with two greenhouses, own irrigation well and double garage](https://realhunt.co/deal/DcPcCXHgXCK) | Åfors, Kalmar, Småland, Sweden | €64,000 | 155 m² | €413 | 83
+22 | [Country house with a veranda near the Saint-Rémy lake, Thiers](https://realhunt.co/deal/fr-thiers-49k-mo1869) | Thiers, Puy-de-Dôme | €49,900 | 120 m² | €416 | 89
+23 | [Renovated three-level house with an energy rating C in Decazeville, Aveyron](https://realhunt.co/deal/fr-decazeville-49k-900846) | Decazeville, Aveyron | €49,980 | 116 m² | €431 | 90
+24 | [182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) | Orehoved, Falster | €79,800 | 182 m² | €438 | 97
+25 | [3-bedroom house with terrace in Bimenes](https://realhunt.co/deal/es-bimenes-86k-71966) | Bimenes, Asturias, Spain | €86,000 | 195 m² | €441 | 90
+
+### By country
+
+Country | Homes with size | Median €/m² | Cheapest per m²
+[Sweden](https://realhunt.co/homes/sweden) | 21 | €680 | €98 ([Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8))
+[Bulgaria](https://realhunt.co/homes/bulgaria) | 7 | €740 | €690 ([Two-bedroom flat with two sea-panorama terraces in Kavarna Hills](https://realhunt.co/deal/bg-kavarna-hills-69k-1606144))
+[Denmark](https://realhunt.co/homes/denmark) | 44 | €790 | €403 ([198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd))
+[Germany](https://realhunt.co/homes/germany) | 21 | €1,053 | €694 ([72 m² flat in a listed building near the university, vacant](https://realhunt.co/deal/de-chemnitz-50k-665910))
+[Poland](https://realhunt.co/homes/poland) | 31 | €1,139 | €450 ([127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977))
+[Italy](https://realhunt.co/homes/italy) | 52 | €1,167 | €204 ([Four-level village house with sea and mountain views in Sangineto, Calabria](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976))
+[France](https://realhunt.co/homes/france) | 48 | €1,175 | €234 ([171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775))
+[Spain](https://realhunt.co/homes/spain) | 186 | €1,217 | €246 ([Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, Teruel](https://realhunt.co/deal/es-torre-los-negros-63k-028057))
+[Portugal](https://realhunt.co/homes/portugal) | 19 | €1,352 | €480 ([Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522))
+[Greece](https://realhunt.co/homes/greece) | 23 | €1,465 | €850 ([Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330))
+[United Kingdom](https://realhunt.co/homes/united-kingdom) | 5 | €1,807 | €1,147 ([Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165))
+[Switzerland](https://realhunt.co/homes/switzerland) | 10 | €2,337 | €461 ([70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130))
+[Cyprus](https://realhunt.co/homes/cyprus) | 6 | €3,723 | €1,857 ([Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874))
+[Netherlands](https://realhunt.co/homes/netherlands) | 18 | €4,286 | €3,037 ([107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653))
+
+### Method and limits
+
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 684 chosen listings (64% of them at or under €100,000), not national averages.
+- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
+- Price per m² is the asking price divided by the size the listing gives. Homes under 20 m² and homes without a size are left out. Sizes are those of the listing and can be measured in different ways from one country to another.
+- Europe here means the countries of Europe, Cyprus included. Countries with fewer than 3 homes with a size are left out of the country table.
+- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
+
+[Raw data: the 684 homes behind the figures (CSV)](https://realhunt.co/research/homes.csv) · [How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000)
+- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
+- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
+- [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -1343,6 +1485,38 @@ September 2026 | 122 | 10 | €62,560
 
 The price series, one reading per month of all the homes, is in [prices by country](https://realhunt.co/research/prices#series).
 
+### Homes taken off or no longer for sale, day by day
+
+The last 60 days, newest first. A home whose advert went offline keeps its page with a notice.
+
+- 19 November 2026 4 no longer for sale (advert offline), 7 taken off the site, 1 back: [4-bedroom house in Flix](https://realhunt.co/deal/es-flix-80k-33800), [Single-storey house with a private pool on a 1,000 m² plot near Seville](https://realhunt.co/deal/es-los-palacios-pool-145k-190022882), [Log-and-stone mountain house among pines, sold furnished](https://realhunt.co/deal/es-piera-174k-821120), [3-bedroom semi-detached house with patio in Roquetas de Mar](https://realhunt.co/deal/es-roquetas-de-mar-82k-66798), [2012 house with 4 bedrooms, renovated, near the coast in Shizuoka](https://realhunt.co/deal/jp-shimizu-81k-591487), Two-apartment 1950s house with geothermal heating and 6 more.
+- 18 November 2026 1 no longer for sale (advert offline): [2-bedroom country house with terrace in Xert](https://realhunt.co/deal/es-xert-95k-90186).
+- 17 November 2026 12 no longer for sale (advert offline): [Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi), [1-bedroom flat with terrace in Moguer](https://realhunt.co/deal/es-moguer-98k-75562), [Fully remodelled Alentejo village house with wooden ceilings in Chança, Alter do Chão](https://realhunt.co/deal/pt-alter-do-chao-115k-285437), [Detached five-bedroom house with garden, garage and central heating in Brunhoso, Mogadouro](https://realhunt.co/deal/pt-brunhoso-125k-258088), [Fully remodelled three-storey house 50 metres from the town gates of Castelo de Vide](https://realhunt.co/deal/pt-castelo-de-vide-145k-284590), [Fully renovated three-storey village house in Peso, Covilhã, below Serra da Estrela](https://realhunt.co/deal/pt-covilha-peso-150k-280003) and 6 more.
+- 15 November 2026 2 no longer for sale (advert offline): [3-bedroom flat in San Martín del Rey Aurelio](https://realhunt.co/deal/es-san-martin-del-rey-aurelio-85k-66374), [Renovated family home with a view of Mount Fuji](https://realhunt.co/deal/jp-fuji-66k-852751).
+- 14 November 2026 3 no longer for sale (advert offline), 1 back: [Renovated hilltop house with panoramic sea views](https://realhunt.co/deal/Dc07Tz9DoUf), [3-bedroom house with terrace in Íllora](https://realhunt.co/deal/es-illora-55k-41725), [1-bedroom apartment with terrace in Murcia](https://realhunt.co/deal/es-murcia-82k-15626), [Canarian cave home with a mountain-facing terrace](https://realhunt.co/deal/galdar-mountain-cave-99500).
+- 13 November 2026 1 no longer for sale (advert offline): [1-bedroom apartment with pool in Nevada](https://realhunt.co/deal/es-nevada-44k-95451).
+- 12 November 2026 3 no longer for sale (advert offline): [Two-bedroom flat with a panoramic sea view on the first line in Pomorie](https://realhunt.co/deal/bg-pomorie-60k-1630398), [Renovated hilltop house with panoramic sea views](https://realhunt.co/deal/Dc07Tz9DoUf), [Newly renovated Mediterranean chalet with a home office, sold furnished](https://realhunt.co/deal/es-sueca-167k-027159).
+- 11 November 2026 2 no longer for sale (advert offline): [Wood-lined duplex in Gironella's old town with fireplace and a balcony with views](https://realhunt.co/deal/es-gironella-139k-934028), [4-bedroom flat with mountain views in Petrer](https://realhunt.co/deal/es-petrer-85k-17043).
+- 10 November 2026 1 no longer for sale (advert offline): [2-bedroom house with fireplace in Cumbres de San Bartolomé](https://realhunt.co/deal/es-cumbres-de-san-bartolome-43k-76551).
+- 9 November 2026 1 back: [Wood-lined duplex in Gironella's old town with fireplace and a balcony with views](https://realhunt.co/deal/es-gironella-139k-934028).
+- 8 November 2026 1 no longer for sale (advert offline): [2-bedroom flat with mountain views in El Perelló](https://realhunt.co/deal/es-el-perello-98k-73036).
+- 7 November 2026 2 no longer for sale (advert offline), 1 back: [3-bedroom house with terrace in Castalla](https://realhunt.co/deal/es-castalla-85k-41639), [Wood-lined duplex in Gironella's old town with fireplace and a balcony with views](https://realhunt.co/deal/es-gironella-139k-934028), [3-bedroom flat with patio in Tavernes de la Valldigna](https://realhunt.co/deal/es-tavernes-de-la-valldigna-90k-27013).
+- 6 November 2026 1 no longer for sale (advert offline), 1 back: [134 m² flat a few steps from Chinchón's famous Plaza Mayor](https://realhunt.co/deal/es-chinchon-165k-004043), [House in upper Llíria with a pool terrace, panoramic views and a two-car garage](https://realhunt.co/deal/es-lliria-180k-695737).
+- 5 November 2026 5 no longer for sale (advert offline), 1 back: [Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u), [2-bedroom house with terrace in Árchez](https://realhunt.co/deal/es-archez-65k-74704), [Renovated 220 m² town house with a roof terrace with views and a wine cellar](https://realhunt.co/deal/es-capellades-165k-203609), [2-bedroom flat in Ginestar](https://realhunt.co/deal/es-ginestar-80k-99389), [5-bedroom semi-detached house with terrace in Nevada](https://realhunt.co/deal/es-nevada-77k-72929), [Bright duplex with a 13 m² terrace and open views in Terrassa](https://realhunt.co/deal/es-terrassa-169k-923454).
+- 4 November 2026 2 no longer for sale (advert offline): [1-bedroom flat with pool in Torremanzanas / La Torre de les Maçanes](https://realhunt.co/deal/es-torremanzanas-la-torre-de-les-macanes-99k-04350), [Corbières village house with a modern kitchen](https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6).
+- 3 November 2026 2 no longer for sale (advert offline): [2-bedroom flat in Cartagena](https://realhunt.co/deal/es-cartagena-95k-46660), [Sea-view penthouse 2 minutes' walk from the beach in Dénia](https://realhunt.co/deal/es-denia-219k-283381).
+- 2 November 2026 1 no longer for sale (advert offline), 1 back: [2-bedroom house with terrace in Árchez](https://realhunt.co/deal/es-archez-65k-74704), [Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u).
+- 1 November 2026 1 no longer for sale (advert offline): [Move-in-ready village house by the famous canal locks](https://realhunt.co/deal/fr-rogny-les-sept-ecluses-65k-2p3e04).
+- 31 October 2026 2 no longer for sale (advert offline), 1 back: [Renovated hilltop house with panoramic sea views](https://realhunt.co/deal/Dc07Tz9DoUf), [Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste](https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484), [Stone town house with three bedrooms and a modern shower](https://realhunt.co/deal/fr-auzances-69k-3pkknx).
+- 30 October 2026 3 no longer for sale (advert offline): [134 m² flat a few steps from Chinchón's famous Plaza Mayor](https://realhunt.co/deal/es-chinchon-165k-004043), [2-bedroom flat with pool in Masdenverge](https://realhunt.co/deal/es-masdenverge-85k-59248), [3-bedroom flat in Torrelavega](https://realhunt.co/deal/es-torrelavega-95k-04565).
+- 29 October 2026 3 no longer for sale (advert offline), 1 back: [Freshly renovated five-bedroom house with an ocean view](https://realhunt.co/deal/DcTSbXtj9qu), [Renovated hilltop house with panoramic sea views](https://realhunt.co/deal/Dc07Tz9DoUf), [1-bedroom house with garden in Marines](https://realhunt.co/deal/es-marines-54k-94700), [Renovated 2-bed flat with a glazed sun room and a private roof terrace](https://realhunt.co/deal/es-puerto-de-la-cruz-199k-329542).
+- 28 October 2026 3 no longer for sale (advert offline): [Hillside chalet with mountain views and a sea glimpse, plus a guest house](https://realhunt.co/deal/es-godelleta-178k-277470), [2-bedroom flat in Langreo](https://realhunt.co/deal/es-langreo-61k-38277), [Small cortijo with 7,000 m² of almond trees in the Alpujarra](https://realhunt.co/deal/es-mecina-bombaron-75k-riayjs).
+- 27 October 2026 1 no longer for sale (advert offline): [Never-lived-in ground-floor flat with a communal pool in Albatera](https://realhunt.co/deal/es-albatera-pool-new-135k-190471633).
+- 26 October 2026 43 no longer for sale (advert offline): [3-bed apartment in Cuautlancingo, Puebla](https://realhunt.co/deal/cuautlancingo-68984), [Furnished townhouse with a private pool, 100 m from the sea in Protaras](https://realhunt.co/deal/cy-protaras-350k-257111), [1914 home with lake views, guest house and double garage on 6,525 m²](https://realhunt.co/deal/DcaE8pfoH77), [Blue-shuttered village home a short stroll from the Mar Menor](https://realhunt.co/deal/Dcnr1XjFDfu), [Freshly renovated five-bedroom house with an ocean view](https://realhunt.co/deal/DcTSbXtj9qu), [Panoramic terraces and a private garden in a historic Lunigiana village](https://realhunt.co/deal/DdVz9K2ktYe) and 37 more.
+- 25 October 2026 3 no longer for sale (advert offline): [Three-bedroom flat with a full high-spec renovation in Utrera](https://realhunt.co/deal/es-utrera-renovated-80k-190050590), [Stylish renovated flat with a fireplace and terrace in Montaione, Tuscany](https://realhunt.co/deal/it-tuscany-montaione-renovated-140k), [Tuscan cottage with an olive-tree garden 5 minutes from Saturnia hot springs](https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k).
+
+[Every home taken off the site, month by month](https://realhunt.co/research/removed-homes)
+
 ### Dated changes to the method, the lists and the files
 
 - 20 November 2026 Per-country data files (JSON, Markdown, PDF), the map files and the OpenAPI description were rebuilt. [Open data](https://realhunt.co/research/open-data).
@@ -1351,7 +1525,7 @@ The price series, one reading per month of all the homes, is in [prices by count
 
 ### What this page does not show
 
-- Homes that were sold or withdrawn leave the site and are not counted in the days above, so an old day shows only the homes that are still listed.
+- Homes that left the site are not counted in the days above, so an old day shows only the homes that are still listed. They are in the [log of homes taken off the site](https://realhunt.co/research/removed-homes), and price changes in the [corrections](https://realhunt.co/corrections).
 - Corrections to a published figure are recorded in the [editorial policy and corrections](https://realhunt.co/editorial-policy) page.
 - The newest homes one by one are in [new homes](https://realhunt.co/new) and in the feeds ([RSS](https://realhunt.co/feed.xml), [Atom](https://realhunt.co/feed.atom), [JSON](https://realhunt.co/feed.json)).
 
@@ -1512,6 +1686,9 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -1585,6 +1762,9 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -1646,6 +1826,141 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
+- [All datasets](https://realhunt.co/research)
+
+
+---
+Source: https://realhunt.co/research/new-homes-this-month (updated 2026-11-20)
+
+RealHunt data
+
+## New homes on RealHunt in November 2026, by country
+
+179 homes were added to RealHunt in November 2026 up to 20 November 2026, in 24 countries. Most are in the United States (35), Spain (26), Italy (25). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
+
+Counted on the day each home went up on RealHunt. Homes that have already left the site are not counted. The page is rebuilt with every update.
+
+Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown version](https://realhunt.co/research/new-homes-this-month.md) · How to cite
+Homes added in November 2026, by countryNumber of homes, up to 20 November 2026. In brackets, the median price.
+
+- United States median €237,400 35
+- Spain median €178,000 26
+- Italy median €120,000 25
+- France median €139,000 20
+- Portugal median €130,000 16
+- Japan median €25,600 15
+- Greece median €175,000 10
+- Canada median €140,000 5
+- Mexico median €160,200 4
+- United Kingdom median €195,400 4
+- Cyprus median €187,000 3
+- Sweden median €72,000 3
+- Thailand median €139,500 2
+- Austria median €149,000 1
+- Belgium median €249,900 1
+- Bulgaria median €89,000 1
+- Colombia median €165,200 1
+- Denmark median €160,000 1
+- Dominican Republic median €150,000 1
+- Germany median €199,000 1
+- Ireland median €230,000 1
+- Montenegro median €175,000 1
+- Poland median €90,600 1
+- Uruguay median €186,300 1
+
+### Homes added in November 2026, by country
+
+Country | Homes added | From | Median price | Best-scored home
+[United States](https://realhunt.co/homes/united-states) | 35 | €134,400 | €237,400 | [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
+€223,300 · score 93
+[Spain](https://realhunt.co/homes/spain) | 26 | €63,000 | €178,000 | [Country house with pool on a 5,500 m² plot near Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146)
+€155,000 · score 91
+[Italy](https://realhunt.co/homes/italy) | 25 | €22,000 | €120,000 | [Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+€29,000 · score 91
+[France](https://realhunt.co/homes/france) | 20 | €69,500 | €139,000 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454)
+€148,400 · score 91
+[Portugal](https://realhunt.co/homes/portugal) | 16 | €68,500 | €130,000 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027)
+€68,500 · score 91
+[Japan](https://realhunt.co/homes/japan) | 15 | €7,400 | €25,600 | [Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929)
+€11,380 · score 91
+[Greece](https://realhunt.co/homes/greece) | 10 | €85,000 | €175,000 | [Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
+€170,000 · score 89
+[Canada](https://realhunt.co/homes/canada) | 5 | €124,000 | €140,000 | [Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
+€124,000 · score 88
+[Mexico](https://realhunt.co/homes/mexico) | 4 | €143,000 | €160,200 | [Colonial house with a pool and garden in Barrio de Santiago, Mérida centre](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m)
+€216,600 · score 86
+[United Kingdom](https://realhunt.co/homes/united-kingdom) | 4 | €121,000 | €195,400 | [Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
+€126,500 · score 83
+[Cyprus](https://realhunt.co/homes/cyprus) | 3 | €130,000 | €187,000 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
+€130,000 · score 83
+[Sweden](https://realhunt.co/homes/sweden) | 3 | €68,000 | €72,000 | [Renovated red wooden villa with wide valley views near Fränsta, Västernorrland](https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek)
+€68,000 · score 90
+[Thailand](https://realhunt.co/homes/thailand) | 2 | €76,700 | €139,500 | [Renovated two-bedroom condo with pool and gym near Chiang Mai Night Bazaar](https://realhunt.co/deal/th-chiang-mai-2-bed-pool-condo-77k-5379536)
+€76,700 · score 86
+[Austria](https://realhunt.co/homes/austria) | 1 | €149,000 | €149,000 | [Fully renovated 150 m² semi-detached house with garden in Neudau, Styrian spa country](https://realhunt.co/deal/at-neudau-renovated-semi-detached-house-149k)
+€149,000 · score 85
+[Belgium](https://realhunt.co/homes/belgium) | 1 | €249,900 | €249,900 | [Renovated 112 m² town-centre flat with energy rating A in Marche-en-Famenne](https://realhunt.co/deal/be-marche-en-famenne-renovated-112m2-flat-energy-a-250k)
+€249,900 · score 78
+[Bulgaria](https://realhunt.co/homes/bulgaria) | 1 | €89,000 | €89,000 | [Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas](https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034)
+€89,000 · score 84
+[Colombia](https://realhunt.co/homes/colombia) | 1 | €165,200 | €165,200 | [Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
+€165,200 · score 86
+[Denmark](https://realhunt.co/homes/denmark) | 1 | €160,000 | €160,000 | [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk)
+€160,000 · score 82
+[Dominican Republic](https://realhunt.co/homes/dominican-republic) | 1 | €150,000 | €150,000 | [Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
+€150,000 · score 84
+[Germany](https://realhunt.co/homes/germany) | 1 | €199,000 | €199,000 | [Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
+€199,000 · score 77
+[Ireland](https://realhunt.co/homes/ireland) | 1 | €230,000 | €230,000 | [Three-bed marina-view apartment with roof terrace and boat berth in Leitrim Village](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+€230,000 · score 80
+[Montenegro](https://realhunt.co/homes/montenegro) | 1 | €175,000 | €175,000 | [Single-storey 138 m² home with garden below the mountains in Zupci, near Bar](https://realhunt.co/deal/me-zupci-single-storey-home-mountain-view-175k)
+€175,000 · score 84
+[Poland](https://realhunt.co/homes/poland) | 1 | €90,600 | €90,600 | [Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze](https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867)
+€90,600 · score 80
+[Uruguay](https://realhunt.co/homes/uruguay) | 1 | €186,300 | €186,300 | [Three-bedroom house with a barbecue patio near the rambla in Colonia del Sacramento](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+€186,300 · score 82
+
+### The months before
+
+Month | Homes added | Countries | Median price
+November 2026 | 179 | 24 | €152,100
+October 2026 | 383 | 19 | €86,500
+September 2026 | 122 | 10 | €62,560
+
+The newest homes one by one are in [new homes](https://realhunt.co/new); every day with its homes is in [what changed in the data](https://realhunt.co/research/data-changelog), and the homes that left the site in [homes taken off the site](https://realhunt.co/research/removed-homes).
+
+### Method and limits
+
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 684 chosen listings (64% of them at or under €100,000), not national averages.
+- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
+- A home counts in the month it went up on RealHunt. A home that has since left the site is not counted, so the months before can only go down when homes leave.
+- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
+
+[Raw data: the 684 homes behind the figures (CSV)](https://realhunt.co/research/homes.csv) · [How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
+
+### How to cite this page
+
+You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
+
+Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
+
+### More data from RealHunt
+
+- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
+- [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)
+- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
+- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
+- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
+- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000)
+- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
+- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
+- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
+- [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -1670,6 +1985,8 @@ Address | Format | What it is
 [/research/homes.csv](https://realhunt.co/research/homes.csv) | CSV | Every home, one row each, to recompute any figure.
 [/research/monthly-series.csv](https://realhunt.co/research/monthly-series.csv) | CSV | One reading per month since November 2026: homes, countries and medians.
 [/research/property-portals.csv](https://realhunt.co/research/property-portals.csv) | CSV | The directory of property portals by country.
+[/data/homes.jsonl](https://realhunt.co/data/homes.jsonl) | JSON Lines | Every home on the site, one JSON object per line: address, price, size, price per m², bedrooms, score and a one-line summary of it, the day it went up and its state (listed, unconfirmed or advert offline). The first line says what the file is.
+/research/removed-homes.json · .csv | JSON, CSV | The log of homes taken off the site or whose advert went offline, and of price changes, with dates.
 [/data/realhunt-homes.geojson](https://realhunt.co/data/realhunt-homes.geojson) | GeoJSON | Every home with coordinates, for a map.
 [/data/realhunt-best-homes.kml](https://realhunt.co/data/realhunt-best-homes.kml) | KML | The ten best-scored homes of each country; opens in Google Earth and imports into Google My Maps.
 [/openapi.json](https://realhunt.co/openapi.json) | OpenAPI 3.1 | What each file is, its fields and its address, in the format assistants and developer tools read.
@@ -1816,6 +2133,9 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -1916,812 +2236,72 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
 ---
-Source: https://realhunt.co/research/property-portals (updated 2026-11-20)
-
-Directory
-
-## Property portals by country: where homes are listed for sale in 54 countries
-
-This is a directory of 179 property portals in 54 countries: the national portals, the large classified sites and the portals made for foreign buyers, each with its web address. They are in the order RealHunt checks them when it looks for homes in that country. Being listed here is not a recommendation or a rating.
-
-List compiled on 9 November 2026. RealHunt has homes in 19 of these countries; the counts are of 20 November 2026.
-
-Updated 20 November 2026
-
-### How to use this list
-
-- Start with the first two or three portals of a country: they are the ones we check first.
-- The same home is often on more than one portal, and the price is not always the same. Compare before you call.
-- Prices on a portal are asking prices. Taxes and fees come on top: see [what it costs to buy in each country](https://realhunt.co/costs).
-- RealHunt is not a portal and not an estate agent. A person checks each home before it is listed, it gets a score from 70 to 98, and the page links to the original listing. [How the score works](https://realhunt.co/method).
-
-### Countries
-
-- Albania2
-- Argentina3
-- Australia3
-- Austria3
-- Belgium3
-- Brazil4
-- Bulgaria3
-- Canada4
-- Chile3
-- Colombia3
-- Costa Rica3
-- Croatia3
-- Cyprus2
-- Czechia2
-- Denmark4
-- Dominican Republic3
-- Ecuador2
-- Finland2
-- France7
-- Georgia2
-- Germany5
-- Greece3
-- Hungary2
-- Iceland2
-- Indonesia5
-- Ireland2
-- Italy7
-- Japan4
-- Malaysia3
-- Malta3
-- Mexico5
-- Montenegro2
-- Morocco3
-- Netherlands3
-- New Zealand3
-- Norway2
-- Panama2
-- Peru3
-- Philippines3
-- Poland4
-- Portugal6
-- Romania3
-- Slovenia2
-- South Africa2
-- Spain8
-- Sweden2
-- Switzerland3
-- Thailand4
-- Turkey3
-- United Arab Emirates3
-- United Kingdom5
-- United States8
-- Uruguay3
-- Vietnam2
-
-### The 179 portals, country by country
-
--
-
-#### Spain
-
-- [Idealista](https://www.idealista.com/)idealista.com
-- [Fotocasa](https://www.fotocasa.es/)fotocasa.es
-- [pisos.com](https://www.pisos.com/)pisos.com
-- [Habitaclia](https://www.habitaclia.com/)habitaclia.com
-- [Yaencontre](https://www.yaencontre.com/)yaencontre.com
-- [Milanuncios](https://www.milanuncios.com/)milanuncios.com
-- [ThinkSPAIN](https://www.thinkspain.com/)thinkspain.com
-- [Kyero](https://www.kyero.com/)kyero.com
-
-RealHunt lists [190 checked homes in Spain](https://realhunt.co/homes/spain), median asking price €97,000. Their original listings are on fotocasa.es (150), pisos.com (17), green-acres.es (10), thinkspain.com (7). [How to buy there](https://realhunt.co/guide/spain) · [Costs and taxes](https://realhunt.co/costs/spain)
-
--
-
-#### Portugal
-
-- [Idealista PT](https://www.idealista.pt/)idealista.pt
-- [Imovirtual](https://www.imovirtual.com/)imovirtual.com
-- [Casa SAPO](https://casa.sapo.pt/)casa.sapo.pt
-- [SuperCasa](https://supercasa.pt/)supercasa.pt
-- [OLX](https://www.olx.pt/)olx.pt
-- [RE/MAX PT](https://www.remax.pt/)remax.pt
-
-RealHunt lists [19 checked homes in Portugal](https://realhunt.co/homes/portugal), median asking price €125,000. Their original listings are on imovirtual.com (15), green-acres.pt (4). [How to buy there](https://realhunt.co/guide/portugal) · [Costs and taxes](https://realhunt.co/costs/portugal)
-
--
-
-#### Italy
-
-- [Immobiliare.it](https://www.immobiliare.it/)immobiliare.it
-- [Idealista IT](https://www.idealista.it/)idealista.it
-- [Casa.it](https://www.casa.it/)casa.it
-- [Subito](https://www.subito.it/)subito.it
-- [Wikicasa](https://www.wikicasa.it/)wikicasa.it
-- [Gate-away](https://www.gate-away.com/)gate-away.com
-- [Trovit IT](https://case.trovit.it/)trovit.it
-
-RealHunt lists [77 checked homes in Italy](https://realhunt.co/homes/italy), median asking price €75,000. Their original listings are on green-acres.it (31), idealista.it (16), immobiliare.it (10), rightmove.co.uk (2). [How to buy there](https://realhunt.co/guide/italy) · [Costs and taxes](https://realhunt.co/costs/italy)
-
--
-
-#### France
-
-- [SeLoger](https://www.seloger.com/)seloger.com
-- [Leboncoin](https://www.leboncoin.fr/)leboncoin.fr
-- [Bien'ici](https://www.bienici.com/)bienici.com
-- [Logic-Immo](https://www.logic-immo.com/)logic-immo.com
-- [PAP](https://www.pap.fr/)pap.fr
-- [Green-Acres](https://www.green-acres.fr/)green-acres.fr
-- [Superimmo](https://www.superimmo.com/)superimmo.com
-
-RealHunt lists [52 checked homes in France](https://realhunt.co/homes/france), median asking price €69,900. Their original listings are on bienici.com (31), green-acres.fr (17), espaces-atypiques.com (1), french-property.com (1). [How to buy there](https://realhunt.co/guide/france) · [Costs and taxes](https://realhunt.co/costs/france)
-
--
-
-#### Germany
-
-- [ImmoScout24](https://www.immobilienscout24.de/)immobilienscout24.de
-- [Immowelt](https://www.immowelt.de/)immowelt.de
-- [Kleinanzeigen](https://www.kleinanzeigen.de/)kleinanzeigen.de
-- [Immonet](https://www.immonet.de/)immonet.de
-- [Ohne-Makler](https://www.ohne-makler.net/)ohne-makler.net
-
-RealHunt lists [21 checked homes in Germany](https://realhunt.co/homes/germany), median asking price €55,000. Their original listings are on kleinanzeigen.de (20), green-acres.fr (1). [How to buy there](https://realhunt.co/guide/germany) · [Costs and taxes](https://realhunt.co/costs/germany)
-
--
-
-#### United Kingdom
-
-- [Rightmove](https://www.rightmove.co.uk/)rightmove.co.uk
-- [Zoopla](https://www.zoopla.co.uk/)zoopla.co.uk
-- [OnTheMarket](https://www.onthemarket.com/)onthemarket.com
-- [PrimeLocation](https://www.primelocation.com/)primelocation.com
-- [Purplebricks](https://www.purplebricks.co.uk/)purplebricks.co.uk
-
-RealHunt lists [6 checked homes in the United Kingdom](https://realhunt.co/homes/united-kingdom), median asking price €126,500. Their original listings are on rightmove.co.uk (2), onthemarket.com (2), propertypal.com (2). [How to buy there](https://realhunt.co/guide/united-kingdom) · [Costs and taxes](https://realhunt.co/costs/united-kingdom)
-
--
-
-#### Ireland
-
-- [Daft.ie](https://www.daft.ie/)daft.ie
-- [MyHome.ie](https://www.myhome.ie/)myhome.ie
-
--
-
-#### Netherlands
-
-- [Funda](https://www.funda.nl/)funda.nl
-- [Pararius](https://www.pararius.nl/)pararius.nl
-- [Jaap](https://www.jaap.nl/)jaap.nl
-
-RealHunt lists [18 checked homes in the Netherlands](https://realhunt.co/homes/netherlands), median asking price €325,000. Their original listings are on funda.nl (18). [How to buy there](https://realhunt.co/guide/netherlands) · [Costs and taxes](https://realhunt.co/costs/netherlands)
-
--
-
-#### Belgium
-
-- [Immoweb](https://www.immoweb.be/)immoweb.be
-- [Zimmo](https://www.zimmo.be/)zimmo.be
-- [Immovlan](https://immovlan.be/)immovlan.be
-
--
-
-#### Switzerland
-
-- [Homegate](https://www.homegate.ch/)homegate.ch
-- [ImmoScout24 CH](https://www.immoscout24.ch/)immoscout24.ch
-- [Comparis](https://en.comparis.ch/)comparis.ch
-
-RealHunt lists [10 checked homes in Switzerland](https://realhunt.co/homes/switzerland), median asking price €70,100. Their original listings are on immoscout24.ch (10). [How to buy there](https://realhunt.co/guide/switzerland) · [Costs and taxes](https://realhunt.co/costs/switzerland)
-
--
-
-#### Austria
-
-- [Willhaben](https://www.willhaben.at/)willhaben.at
-- [ImmoScout24 AT](https://www.immobilienscout24.at/)immobilienscout24.at
-- [derStandard Immobilien](https://immobilien.derstandard.at/)derstandard.at
-
--
-
-#### Denmark
-
-- [Boligsiden](https://www.boligsiden.dk/)boligsiden.dk
-- [Boliga](https://www.boliga.dk/)boliga.dk
-- [home](https://home.dk/)home.dk
-- [EDC](https://www.edc.dk/)edc.dk
-
-RealHunt lists [46 checked homes in Denmark](https://realhunt.co/homes/denmark), median asking price €93,200. Their original listings are on boligsiden.dk (43), boliga.dk (2), estate.dk (1). [How to buy there](https://realhunt.co/guide/denmark) · [Costs and taxes](https://realhunt.co/costs/denmark)
-
--
-
-#### Sweden
-
-- [Hemnet](https://www.hemnet.se/)hemnet.se
-- [Booli](https://www.booli.se/)booli.se
-
-RealHunt lists [39 checked homes in Sweden](https://realhunt.co/homes/sweden), median asking price €72,000. Their original listings are on hemnet.se (20), svenskfast.se (3), finn.no (2), alembi.se (1). [How to buy there](https://realhunt.co/guide/sweden) · [Costs and taxes](https://realhunt.co/costs/sweden)
-
--
-
-#### Norway
-
-- [FINN](https://www.finn.no/)finn.no
-- [Hjem.no](https://hjem.no/)hjem.no
-
--
-
-#### Finland
-
-- [Etuovi](https://www.etuovi.com/)etuovi.com
-- [Oikotie](https://asunnot.oikotie.fi/)oikotie.fi
-
--
-
-#### Poland
-
-- [Otodom](https://www.otodom.pl/)otodom.pl
-- [OLX](https://www.olx.pl/)olx.pl
-- [Morizon](https://www.morizon.pl/)morizon.pl
-- [Gratka](https://gratka.pl/)gratka.pl
-
-RealHunt lists [31 checked homes in Poland](https://realhunt.co/homes/poland), median asking price €75,170. Their original listings are on morizon.pl (31). [How to buy there](https://realhunt.co/guide/poland) · [Costs and taxes](https://realhunt.co/costs/poland)
-
--
-
-#### Czechia
-
-- [Sreality](https://www.sreality.cz/)sreality.cz
-- [Bezrealitky](https://www.bezrealitky.cz/)bezrealitky.cz
-
--
-
-#### Hungary
-
-- [Ingatlan.com](https://ingatlan.com/)ingatlan.com
-- [Otthontérkép](https://otthonterkep.hu/)otthonterkep.hu
-
--
-
-#### Romania
-
-- [Imobiliare.ro](https://www.imobiliare.ro/)imobiliare.ro
-- [Storia](https://www.storia.ro/)storia.ro
-- [OLX RO](https://www.olx.ro/)olx.ro
-
--
-
-#### Bulgaria
-
-- [Imot.bg](https://www.imot.bg/)imot.bg
-- [Homes.bg](https://www.homes.bg/)homes.bg
-- [Imoti.net](https://www.imoti.net/)imoti.net
-
-RealHunt lists [7 checked homes in Bulgaria](https://realhunt.co/homes/bulgaria), median asking price €66,000. Their original listings are on homes.bg (3), bulgarianproperties.com (3), green-acres.fr (1). [How to buy there](https://realhunt.co/guide/bulgaria) · [Costs and taxes](https://realhunt.co/costs/bulgaria)
-
--
-
-#### Greece
-
-- [Spitogatos](https://www.spitogatos.gr/)spitogatos.gr
-- [XE.gr](https://www.xe.gr/)xe.gr
-- [Tospitimou](https://www.tospitimou.gr/)tospitimou.gr
-
-RealHunt lists [24 checked homes in Greece](https://realhunt.co/homes/greece), median asking price €155,000. Their original listings are on green-acres.gr (20), spitogatos.gr (4). [How to buy there](https://realhunt.co/guide/greece) · [Costs and taxes](https://realhunt.co/costs/greece)
-
--
-
-#### Croatia
-
-- [Njuškalo](https://www.njuskalo.hr/)njuskalo.hr
-- [Index oglasi](https://www.index.hr/)index.hr
-- [Crozilla](https://www.crozilla.com/)crozilla.com
-
--
-
-#### Slovenia
-
-- [Nepremičnine.net](https://www.nepremicnine.net/)nepremicnine.net
-- [Bolha](https://www.bolha.com/)bolha.com
-
--
-
-#### Cyprus
-
-- [Bazaraki](https://www.bazaraki.com/)bazaraki.com
-- [Home.cy](https://www.home.cy/)home.cy
-
-RealHunt lists [6 checked homes in Cyprus](https://realhunt.co/homes/cyprus), median asking price €341,000. Their original listings are on rightmove.co.uk (5), cy.green-acres.com (1). [How to buy there](https://realhunt.co/guide/cyprus) · [Costs and taxes](https://realhunt.co/costs/cyprus)
-
--
-
-#### Malta
-
-- [MaltaPark](https://www.maltapark.com/)maltapark.com
-- [RE/MAX Malta](https://remax-malta.com/)remax-malta.com
-- [Frank Salt](https://frank.com.mt/)frank.com.mt
-
--
-
-#### Turkey
-
-- [Sahibinden](https://www.sahibinden.com/)sahibinden.com
-- [Hepsiemlak](https://www.hepsiemlak.com/)hepsiemlak.com
-- [Emlakjet](https://www.emlakjet.com/)emlakjet.com
-
--
-
-#### United States
-
-- [Zillow](https://www.zillow.com/)zillow.com
-- [Realtor.com](https://www.realtor.com/)realtor.com
-- [Redfin](https://www.redfin.com/)redfin.com
-- [Homes.com](https://www.homes.com/)homes.com
-- [Trulia](https://www.trulia.com/)trulia.com
-- [Coldwell Banker](https://www.coldwellbanker.com/)coldwellbanker.com
-- [Century 21](https://www.century21.com/)century21.com
-- [RE/MAX](https://www.remax.com/)remax.com
-
-RealHunt lists [59 checked homes in the United States](https://realhunt.co/homes/united-states), median asking price €214,100. Their original listings are on coldwellbanker.com (36), redfin.com (15), estately.com (8). [How to buy there](https://realhunt.co/guide/united-states) · [Costs and taxes](https://realhunt.co/costs/united-states)
-
--
-
-#### Canada
-
-- [REALTOR.ca](https://www.realtor.ca/)realtor.ca
-- [Zolo](https://www.zolo.ca/)zolo.ca
-- [RE/MAX CA](https://www.remax.ca/)remax.ca
-- [Point2](https://www.point2homes.com/)point2homes.com
-
-RealHunt lists [14 checked homes in Canada](https://realhunt.co/homes/canada), median asking price €99,323. Their original listings are on redfin.ca (9), remax.ca (5). [How to buy there](https://realhunt.co/guide/canada) · [Costs and taxes](https://realhunt.co/costs/canada)
-
--
-
-#### Mexico
-
-- [Inmuebles24](https://www.inmuebles24.com/)inmuebles24.com
-- [Vivanuncios](https://www.vivanuncios.com.mx/)vivanuncios.com.mx
-- [Lamudi MX](https://www.lamudi.com.mx/)lamudi.com.mx
-- [Propiedades.com](https://propiedades.com/)propiedades.com
-- [Century 21 México](https://century21mexico.com/)century21mexico.com
-
-RealHunt lists [14 checked homes in Mexico](https://realhunt.co/homes/mexico), median asking price €86,100. Their original listings are on casasyterrenos.com (14). [How to buy there](https://realhunt.co/guide/mexico) · [Costs and taxes](https://realhunt.co/costs/mexico)
-
--
-
-#### Colombia
-
-- [Finca Raíz](https://www.fincaraiz.com.co/)fincaraiz.com.co
-- [Metrocuadrado](https://www.metrocuadrado.com/)metrocuadrado.com
-- [Ciencuadras](https://www.ciencuadras.com/)ciencuadras.com
-
--
-
-#### Argentina
-
-- [Zonaprop](https://www.zonaprop.com.ar/)zonaprop.com.ar
-- [Argenprop](https://www.argenprop.com/)argenprop.com
-- [Mercado Libre Inmuebles](https://inmuebles.mercadolibre.com.ar/)mercadolibre.com.ar
-
--
-
-#### Chile
-
-- [Portal Inmobiliario](https://www.portalinmobiliario.com/)portalinmobiliario.com
-- [TocToc](https://www.toctoc.com/)toctoc.com
-- [Yapo](https://www.yapo.cl/)yapo.cl
-
--
-
-#### Peru
-
-- [Urbania](https://urbania.pe/)urbania.pe
-- [Adondevivir](https://www.adondevivir.com/)adondevivir.com
-- [Properati PE](https://www.properati.com.pe/)properati.com.pe
-
--
-
-#### Ecuador
-
-- [Plusvalía](https://www.plusvalia.com/)plusvalia.com
-- [Properati EC](https://www.properati.com.ec/)properati.com.ec
-
--
-
-#### Uruguay
-
-- [InfoCasas](https://www.infocasas.com.uy/)infocasas.com.uy
-- [Gallito](https://www.gallito.com.uy/)gallito.com.uy
-- [Mercado Libre UY](https://inmuebles.mercadolibre.com.uy/)mercadolibre.com.uy
-
--
-
-#### Brazil
-
-- [ZAP Imóveis](https://www.zapimoveis.com.br/)zapimoveis.com.br
-- [VivaReal](https://www.vivareal.com.br/)vivareal.com.br
-- [Imovelweb](https://www.imovelweb.com.br/)imovelweb.com.br
-- [OLX BR](https://www.olx.com.br/)olx.com.br
-
--
-
-#### Costa Rica
-
-- [Encuentra24](https://www.encuentra24.com/)encuentra24.com
-- [Properati CR](https://www.properati.co.cr/)properati.co.cr
-- [RE/MAX CR](https://www.remax-costa-rica.com/)remax-costa-rica.com
-
--
-
-#### Panama
-
-- [Encuentra24](https://www.encuentra24.com/)encuentra24.com
-- [Compreoalquile](https://www.compreoalquile.com/)compreoalquile.com
-
--
-
-#### Dominican Republic
-
-- [SuperCasas](https://www.supercasas.com/)supercasas.com
-- [Corotos](https://www.corotos.com.do/)corotos.com.do
-- [RE/MAX RD](https://www.remaxrd.com/)remaxrd.com
-
-RealHunt lists [5 checked homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic), median asking price €201,200. Their original listings are on supercasas.com (5). [How to buy there](https://realhunt.co/guide/dominican-republic) · [Costs and taxes](https://realhunt.co/costs/dominican-republic)
-
--
-
-#### United Arab Emirates
-
-- [Bayut](https://www.bayut.com/)bayut.com
-- [Property Finder](https://www.propertyfinder.ae/)propertyfinder.ae
-- [Dubizzle](https://dubai.dubizzle.com/)dubizzle.com
-
--
-
-#### South Africa
-
-- [Property24](https://www.property24.com/)property24.com
-- [Private Property](https://www.privateproperty.co.za/)privateproperty.co.za
-
--
-
-#### Morocco
-
-- [Mubawab](https://www.mubawab.ma/)mubawab.ma
-- [Avito](https://www.avito.ma/)avito.ma
-- [Sarouty](https://www.sarouty.ma/)sarouty.ma
-
--
-
-#### Thailand
-
-- [DDproperty](https://www.ddproperty.com/)ddproperty.com
-- [Hipflat](https://www.hipflat.com/)hipflat.com
-- [FazWaz](https://www.fazwaz.com/)fazwaz.com
-- [Dot Property](https://www.dotproperty.co.th/)dotproperty.co.th
-
--
-
-#### Indonesia
-
-- [Rumah123](https://www.rumah123.com/)rumah123.com
-- [99.co](https://www.99.co/)99.co
-- [Lamudi ID](https://www.lamudi.co.id/)lamudi.co.id
-- [OLX ID](https://www.olx.co.id/)olx.co.id
-- [FazWaz](https://www.fazwaz.com/)fazwaz.com
-
--
-
-#### Malaysia
-
-- [PropertyGuru](https://www.propertyguru.com.my/)propertyguru.com.my
-- [iProperty](https://www.iproperty.com.my/)iproperty.com.my
-- [Mudah](https://www.mudah.my/)mudah.my
-
--
-
-#### Philippines
-
-- [Lamudi PH](https://www.lamudi.com.ph/)lamudi.com.ph
-- [Dot Property PH](https://www.dotproperty.com.ph/)dotproperty.com.ph
-- [PropertyGuru PH](https://www.propertyguru.com.ph/)propertyguru.com.ph
-
--
-
-#### Vietnam
-
-- [Batdongsan](https://batdongsan.com.vn/)batdongsan.com.vn
-- [Chợ Tốt Nhà](https://nha.chotot.com/)chotot.com
-
--
-
-#### Georgia
-
-- [SS.ge](https://home.ss.ge/)ss.ge
-- [Myhome.ge](https://www.myhome.ge/)myhome.ge
-
--
-
-#### Australia
-
-- [realestate.com.au](https://www.realestate.com.au/)realestate.com.au
-- [Domain](https://www.domain.com.au/)domain.com.au
-- [Allhomes](https://www.allhomes.com.au/)allhomes.com.au
-
--
-
-#### New Zealand
-
-- [Trade Me Property](https://www.trademe.co.nz/)trademe.co.nz
-- [realestate.co.nz](https://www.realestate.co.nz/)realestate.co.nz
-- [OneRoof](https://www.oneroof.co.nz/)oneroof.co.nz
-
--
-
-#### Japan
-
-- [SUUMO](https://suumo.jp/)suumo.jp
-- [LIFULL HOME'S](https://www.homes.co.jp/)homes.co.jp
-- [at home](https://www.athome.co.jp/)athome.co.jp
-- [Real Estate Japan](https://realestate.co.jp/)realestate.co.jp
-
-RealHunt lists [35 checked homes in Japan](https://realhunt.co/homes/japan), median asking price €44,160. Their original listings are on athome.co.jp (11), suumo.jp (6), homes.co.jp (3), usuki-c44206.akiya-athome.jp (1). [How to buy there](https://realhunt.co/guide/japan) · [Costs and taxes](https://realhunt.co/costs/japan)
-
--
-
-#### Iceland
-
-- [Fasteignir Vísir](https://fasteignir.visir.is/)fasteignir.visir.is
-- [mbl Fasteignir](https://www.mbl.is/)mbl.is
-
--
-
-#### Montenegro
-
-- [Realitica](https://www.realitica.com/)realitica.com
-- [Estitor](https://estitor.com/)estitor.com
-
--
-
-#### Albania
-
-- [MerrJep](https://www.merrjep.al/)merrjep.al
-- [Century 21 Albania](https://www.century21albania.com/)century21albania.com
-
-### What is in the list and what is not
-
-- Each entry has the name of the portal, its country and its web address. The link goes to the portal's front page.
-- Two portals work in more than one country and appear once in each.
-- We do not rate the portals, we do not count their listings and we do not say which one is best: that changes by region and by type of home.
-- A portal is missing, has closed or has changed its address? Write to carlos@equinoxinvestmentgroup.com and we will correct the list.
-
-### Download
-
-[CSV](https://realhunt.co/research/property-portals.csv) [JSON](https://realhunt.co/research/property-portals.json) [Markdown](https://realhunt.co/research/property-portals.md)
-
-Text and figures on this page are free to quote with a link ([Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Photos of the homes belong to the original listings.
-
-### How to cite this page
-
-You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
-
-Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
-
-### More data from RealHunt
-
-- [Key facts for buying a home, country by country](https://realhunt.co/research/country-facts)
-- [Open data: files, licence and how to read them](https://realhunt.co/research/open-data)
-- [What changed in the data, day by day](https://realhunt.co/research/data-changelog)
-- [Find homes by country and price, with a link you can share](https://realhunt.co/research/find-homes)
-- [All datasets and studies](https://realhunt.co/research)
-- [For AI assistants: what you can quote](https://realhunt.co/for-ai)
-
-
----
-Source: https://realhunt.co/research/what-your-budget-buys (updated 2026-11-20)
+Source: https://realhunt.co/research/sea-homes-under-100000 (updated 2026-11-20)
 
 RealHunt data
 
-## What €50,000, €100,000 and €200,000 buy, country by country (2026)
+## Homes by the sea under €100,000: where they are, country by country (2026)
 
-Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 110 m²), the United States (median 96 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 5 countries, most of them in Italy (33), Japan (19), Germany (10).
+RealHunt lists 94 homes by the sea at or under €100,000, in 11 countries. Most are in Spain (25), Denmark (16), Japan (15). The cheapest is Japanese home with a sakura garden in Usuki, Oita, Japan, at €19,320.
 
-From 684 listings checked by a person, 20 November 2026. A home counts in one price band only.
+Homes checked by a person, at their asking price on 20 November 2026. Countries with fewer than 3 such homes are counted but not charted.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/what-your-budget-buys.csv) · [Markdown version](https://realhunt.co/research/what-your-budget-buys.md) · How to cite
-Median size of a home priced €50,001 to €100,000Square metres, largest first. Countries with at least 5 homes with a known size in this band, 20 November 2026.
+Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/sea-homes-under-100000.csv) · [Markdown version](https://realhunt.co/research/sea-homes-under-100000.md) · How to cite
+Homes by the sea at or under €100,000, by countryNumber of homes on RealHunt, 20 November 2026. In brackets, the median price.
 
-- Denmark 43 homes 115 m²
-- Sweden 21 homes 110 m²
-- United States 15 homes 96 m²
-- Japan small sample: 7 homes 92 m²
-- Bulgaria small sample: 7 homes 87 m²
-- Canada small sample: 9 homes 83 m²
-- Spain 105 homes 79 m²
-- Portugal small sample: 5 homes 75 m²
-- Italy small sample: 9 homes 70 m²
-- Greece small sample: 6 homes 68 m²
-- Mexico 10 homes 68 m²
-- Poland 31 homes 62 m²
-- Germany 10 homes 57 m²
-- France 23 homes 52 m²
-- Switzerland small sample: 8 homes 34 m²
+- Spain median €95,000 25
+- Denmark median €93,200 16
+- Japan median €54,280 15
+- Italy median €39,000 8
+- Bulgaria median €66,000 7
+- Mexico median €86,100 6
+- Sweden median €64,000 5
+- Canada median €92,552 5
+- Greece median €80,000 4
 
-Hatched bar: fewer than 10 homes, read with care.
+Hatched bar: fewer than 5 homes.
 
-### What up to €50,000 buys, by country
+### Homes by the sea at or under €100,000: where they are
 
-Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
-[Italy](https://realhunt.co/homes/italy) | 33 | 50 m² | €600 | 1 | [Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
-€29,000 · 55 m² · score 91
-[Japan](https://realhunt.co/homes/japan) | 19 | 70 m² | €284 | 2 | [Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929)
-€11,380 · 53 m² · score 91
-[Germany](https://realhunt.co/homes/germany) | 10 | 49 m² | €976 | 1 | [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045)
-€40,000 · 54 m² · score 87
-[France](https://realhunt.co/homes/france) | 6 | 116 m² | €431 | 3 | [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775)
-€39,950 · 171 m² · score 92
-[Spain](https://realhunt.co/homes/spain) | 5 | 86 m² | €570 | 2 | [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809)
-€38,000 · 150 m² · score 94
-[Switzerland](https://realhunt.co/homes/switzerland) | 2 | n/a | n/a | 2 | [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130)
-€32,300 · 70 m² · score 92
-[Sweden](https://realhunt.co/homes/sweden) | 2 | n/a | n/a | n/a | [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb)
-€25,960 · score 93
-[Denmark](https://realhunt.co/homes/denmark) | 1 | n/a | n/a | n/a | [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX)
-€35,400 · score 91
-[Portugal](https://realhunt.co/homes/portugal) | 1 | n/a | n/a | 3 | [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
-€48,000 · 100 m² · score 84
+Country | Homes | From | Median price | Median size | Where they are | Best-scored home
+[Spain](https://realhunt.co/homes/spain) | 25 | €49,000 | €95,000 | 67 m² | Murcia (8), Alicante (5), Almería (4), Alpujarra (Granada) (1) | [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380)
+€55,000 · score 94
+[Denmark](https://realhunt.co/homes/denmark) | 16 | €35,400 | €93,200 | 115 m² | Falster (3), North Jutland (3), near Skælskør (2), Thy (2) | [182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+€79,800 · score 97
+[Japan](https://realhunt.co/homes/japan) | 15 | €19,320 | €54,280 | 91 m² | Wakayama (4), Hyogo (2), Kanagawa (2), Kyoto (2) | [Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama](https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430)
+€19,910 · score 91
+[Italy](https://realhunt.co/homes/italy) | 8 | €28,000 | €39,000 | 40 m² | Calabria (4), Sicily (3), Sardinia (1) | [Holiday flat with a big sea-view terrace and garden in Calabria](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+€29,000 · score 91
+[Bulgaria](https://realhunt.co/homes/bulgaria) | 7 | €58,900 | €66,000 | 87 m² | Kavarna (Black Sea) (4), Burgas (1), Pomorie (Black Sea) (1), Varna (1) | [Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698)
+€66,000 · score 94
+[Mexico](https://realhunt.co/homes/mexico) | 6 | €80,920 | €86,100 | 68 m² | Sinaloa (6) | [3-bed apartment near the beach in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-80920)
+€80,920 · score 90
+[Sweden](https://realhunt.co/homes/sweden) | 5 | €55,000 | €64,000 | 50 m² | Medelpad (2), Norrbotten (1), Västerbotten (1), Västernorrland (1) | [Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv)
+€59,000 · score 92
+[Canada](https://realhunt.co/homes/canada) | 5 | €86,962 | €92,552 | 107 m² | Newfoundland (2), Nova Scotia (2), New Brunswick (1) | [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962)
+€86,962 · score 94
+[Greece](https://realhunt.co/homes/greece) | 4 | €68,000 | €80,000 | 64 m² | Samos (Greece) (2), Crete (Greece) (1), North Evia (Greece) (1) | [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
+€68,000 · score 90
+[United States](https://realhunt.co/homes/united-states) | 2 | €88,800 | €95,089 | n/a | South Carolina (1), Texas (1) | [Renovated 2-bed house in Beeville, Texas](https://realhunt.co/deal/beeville-95089)
+€95,089 · score 81
+[United Kingdom](https://realhunt.co/homes/united-kingdom) | 1 | €88,500 | €88,500 | n/a | Northumberland (1) | [Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241)
+€88,500 · score 88
 
-### What €50,001 to €100,000 buys, by country
-
-Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
-[Spain](https://realhunt.co/homes/spain) | 109 | 79 m² | €1,067 | 2 | [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380)
-€55,000 · 120 m² · score 94
-[Denmark](https://realhunt.co/homes/denmark) | 44 | 115 m² | €787 | 3 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
-€79,800 · 198 m² · score 98
-[Sweden](https://realhunt.co/homes/sweden) | 37 | 110 m² | €680 | 3 | [Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989)
-€62,300 · 102 m² · score 93
-[Poland](https://realhunt.co/homes/poland) | 31 | 62 m² | €1,139 | 3 | [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977)
-€57,120 · 127 m² · score 96
-[France](https://realhunt.co/homes/france) | 26 | 52 m² | €1,200 | 2 | [Four-room 71 m² flat with two balconies in Mulhouse](https://realhunt.co/deal/fr-mulhouse-52k-754748)
-€51,800 · 71 m² · score 90
-[Italy](https://realhunt.co/homes/italy) | 18 | 70 m² | €1,250 | 2 | [Renovated stone house with a lake-view balcony above Lake Como](https://realhunt.co/deal/it-san-siro-95k-057133)
-€95,000 · 60 m² · score 91
-[United States](https://realhunt.co/homes/united-states) | 15 | 96 m² | €832 | 2 | [Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875)
-€82,875 · 176 m² · score 95
-[Japan](https://realhunt.co/homes/japan) | 14 | 92 m² | €758 | 3 | [Hillside kominka with sea views over the Kyoto coast](https://realhunt.co/deal/Da7vZIFDIuo)
-€54,280 · score 86
-[Mexico](https://realhunt.co/homes/mexico) | 10 | 68 m² | €1,140 | 2 | [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
-€50,575 · 49 m² · score 93
-[Germany](https://realhunt.co/homes/germany) | 10 | 57 m² | €1,078 | 1 | [65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680)
-€55,000 · 65 m² · score 84
-[Canada](https://realhunt.co/homes/canada) | 9 | 83 m² | €930 | 2 | [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962)
-€86,962 · 124 m² · score 94
-[Switzerland](https://realhunt.co/homes/switzerland) | 8 | 34 m² | €2,372 | 1 | [Holiday cottage with winter garden by a bathing lake in Salgesch](https://realhunt.co/deal/ch-salgesch-49k-76547)
-€52,800 · 40 m² · score 85
-[Bulgaria](https://realhunt.co/homes/bulgaria) | 7 | 87 m² | €740 | 2 | [Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698)
-€66,000 · 90 m² · score 94
-[Greece](https://realhunt.co/homes/greece) | 7 | 68 m² | €1,250 | 2 | [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
-€68,000 · 80 m² · score 90
-[Portugal](https://realhunt.co/homes/portugal) | 5 | 75 m² | €913 | 2 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027)
-€68,500 · 75 m² · score 91
-[United Kingdom](https://realhunt.co/homes/united-kingdom) | 2 | n/a | n/a | 2 | [Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165)
-€82,600 · 72 m² · score 89
-
-### What €100,001 to €200,000 buys, by country
-
-Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home
-[Spain](https://realhunt.co/homes/spain) | 64 | 116 m² | €1,446 | 3 | [Country house with pool on a 5,500 m² plot near Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146)
-€155,000 · 151 m² · score 91
-[Italy](https://realhunt.co/homes/italy) | 26 | 104 m² | €1,404 | 2 | [Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
-€115,000 · 85 m² · score 91
-[France](https://realhunt.co/homes/france) | 17 | 113 m² | €1,175 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454)
-€148,400 · 106 m² · score 91
-[Greece](https://realhunt.co/homes/greece) | 17 | 88 m² | €1,895 | 2 | [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
-€109,000 · 116 m² · score 93
-[Portugal](https://realhunt.co/homes/portugal) | 13 | 110 m² | €1,364 | 2 | [Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372)
-€110,000 · 176 m² · score 91
-[United States](https://realhunt.co/homes/united-states) | 12 | 117 m² | €1,379 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k)
-€153,900 · 199 m² · score 91
-[Canada](https://realhunt.co/homes/canada) | 5 | 150 m² | €963 | 3 | [Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
-€124,000 · 106 m² · score 88
-[United Kingdom](https://realhunt.co/homes/united-kingdom) | 4 | 80 m² | €1,854 | 2 | [Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
-€126,500 · 70 m² · score 83
-[Cyprus](https://realhunt.co/homes/cyprus) | 3 | 74 m² | €2,527 | 2 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
-€130,000 · 70 m² · score 83
-[Mexico](https://realhunt.co/homes/mexico) | 3 | 94 m² | €1,704 | 3 | [Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro](https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m)
-€152,100 · 146 m² · score 85
-[Japan](https://realhunt.co/homes/japan) | 2 | n/a | n/a | 4 | [Bright four-bedroom house from 2014 on Mukaishima island, Onomichi, Hiroshima](https://realhunt.co/deal/jp-onomichi-mukaishima-2014-house-108k)
-€107,500 · 104 m² · score 78
-[Dominican Republic](https://realhunt.co/homes/dominican-republic) | 2 | n/a | n/a | 2 | [Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359)
-€187,800 · 82 m² · score 89
-[Denmark](https://realhunt.co/homes/denmark) | 1 | n/a | n/a | 3 | [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk)
-€160,000 · 101 m² · score 82
-[Germany](https://realhunt.co/homes/germany) | 1 | n/a | n/a | 2 | [Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
-€199,000 · 60 m² · score 77
+Every home by the sea, at any price, is in the lists by country, for example [cheap houses by what you are looking for](https://realhunt.co/cheap-houses).
 
 ### Method and limits
 
 - RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 684 chosen listings (64% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
-- Price bands do not overlap: up to €50,000; €50,001 to €100,000; €100,001 to €200,000.
-- Size and price per m² are shown when at least 3 homes in the band give their size. An empty band means RealHunt lists no home there today, not that none exists in the country.
-- Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
-
-[Raw data: the 684 homes behind the figures (CSV)](https://realhunt.co/research/homes.csv) · [How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
-
-### How to cite this page
-
-You can quote these figures, the chart and the table, in full or in part, if you name RealHunt and link to this page (Creative Commons BY 4.0). No need to ask.
-
-Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press page](https://realhunt.co/press) and [how the score works](https://realhunt.co/method).
-
-### More data from RealHunt
-
-- [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)
-- [Buying costs by country: taxes and fees on top of the price (2026)](https://realhunt.co/research/buying-costs-by-country)
-- [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
-- [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
-- [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000)
-- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
-- [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
-- [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
-- [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
-- [All datasets](https://realhunt.co/research)
-
-
----
-Source: https://realhunt.co/research/years-of-salary (updated 2026-11-20)
-
-RealHunt data
-
-## How many years of average net pay a cheap home costs, by country (2026)
-
-The median home on RealHunt costs 1.5 years of average net pay in Germany and 8 in the Netherlands, among the 10 countries with at least 10 homes and Eurostat earnings data. In Germany that is a median asking price of €55,000 against net earnings of €36,535 a year.
-
-Prices: 530 homes on RealHunt, 20 November 2026. Pay: Eurostat, annual net earnings of a single person without children on the average wage, 2025. These are cheap homes chosen by a person, not each country's average home.
-
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/years-of-salary.csv) · [Markdown version](https://realhunt.co/research/years-of-salary.md) · How to cite
-Years of average net pay that the median home on RealHunt costsMedian asking price divided by yearly net earnings (Eurostat 2025), fewest years first. 20 November 2026.
-
-- Germany 21 homes 1.5
-- Sweden 39 homes 1.8
-- Denmark 46 homes 2.1
-- France 52 homes 2.2
-- Italy 77 homes 2.7
-- Spain 190 homes 3.6
-- Poland 31 homes 3.9
-- Bulgaria small sample: 7 homes 4.6
-- Portugal 19 homes 5.8
-- Greece 24 homes 7.2
-- Netherlands 18 homes 8
-- Cyprus small sample: 6 homes 12
-
-Hatched bar: fewer than 10 homes, read with care.
-
-### Years of pay to buy the median home, by country: the table
-
-Country | Years of net pay | Median asking price | Net earnings a year (2025) | Homes
-[Germany](https://realhunt.co/homes/germany) | 1.5 | €55,000 | €36,535 | 21
-[Sweden](https://realhunt.co/homes/sweden) | 1.8 | €72,000 | €38,950 | 39
-[Denmark](https://realhunt.co/homes/denmark) | 2.1 | €93,200 | €45,430 | 46
-[France](https://realhunt.co/homes/france) | 2.2 | €69,900 | €32,346 | 52
-[Italy](https://realhunt.co/homes/italy) | 2.7 | €75,000 | €27,788 | 77
-[Spain](https://realhunt.co/homes/spain) | 3.6 | €97,000 | €27,041 | 190
-[Poland](https://realhunt.co/homes/poland) | 3.9 | €75,170 | €19,086 | 31
-[Bulgaria](https://realhunt.co/homes/bulgaria) (small sample) | 4.6 | €66,000 | €14,450 | 7
-[Portugal](https://realhunt.co/homes/portugal) | 5.8 | €125,000 | €21,449 | 19
-[Greece](https://realhunt.co/homes/greece) | 7.2 | €155,000 | €21,498 | 24
-[Netherlands](https://realhunt.co/homes/netherlands) | 8 | €325,000 | €40,793 | 18
-[Cyprus](https://realhunt.co/homes/cyprus) (small sample) | 12 | €341,000 | €28,340 | 6
-
-Earnings source: [Eurostat, annual net earnings (earn_nt_net)](https://ec.europa.eu/eurostat/databrowser/view/earn_nt_net/default/table?lang=en), single person without children earning 100% of the average wage, 2025; table updated by Eurostat on 10 November 2026, read on 14 November 2026.
-
-### Method and limits
-
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 684 chosen listings (64% of them at or under €100,000), not national averages.
-- Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
-- Years = median asking price ÷ annual net earnings. It ignores taxes and fees of the purchase, interest and living costs: it is a yardstick to compare countries, not the time needed to save for a home.
-- Earnings are national averages for 2025; homes are where RealHunt has found them, often in cheaper regions than the national average. Countries Eurostat does not publish for that year (Norway, Switzerland, the United Kingdom, the United States, Japan and others) are left out.
-- Countries with fewer than 5 homes are left out; with fewer than 10 they are marked as a small sample.
+- By the sea: within 5 km of the coast when the distance is known, otherwise homes filed by a person under beach and coast.
+- The count describes what RealHunt lists today. A country that is missing may have such homes that have not been added yet.
 - Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
 
 [Raw data: the 684 homes behind the figures (CSV)](https://realhunt.co/research/homes.csv) · [How homes are chosen and scored](https://realhunt.co/method) · [Editorial policy and corrections](https://realhunt.co/editorial-policy)
@@ -2740,9 +2320,12 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 - [Where foreigners can and cannot buy a home: the rules in 20 countries (2026)](https://realhunt.co/research/where-foreigners-can-buy)
 - [Best-scored regions for a cheap home, ranked (2026)](https://realhunt.co/research/best-scored-regions)
 - [Where the homes under €50,000 are: countries and regions (2026)](https://realhunt.co/research/homes-under-50000)
+- [How many years of average net pay a cheap home costs, by country (2026)](https://realhunt.co/research/years-of-salary)
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator)
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance)
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices)
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month)
 - [All datasets](https://realhunt.co/research)
 
 
@@ -20226,41 +19809,6 @@ Source: https://realhunt.co/best
 - [Best homes in Cyprus](https://realhunt.co/homes/cyprus): Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views, €341,000
 - [Best homes in United Kingdom](https://realhunt.co/homes/united-kingdom): Beautifully styled two-bed home with an open fireplace, €82,600
 - [Best homes in Dominican Republic](https://realhunt.co/homes/dominican-republic): Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views, €223,600
-
-
----
-Source: https://realhunt.co/embed (updated 2026-11-20)
-
-For your site
-
-## RealHunt badges and widgets: show a score or the best homes on your site
-
-Paste one of these snippets into a listing, a blog post or a forum signature to show a home's RealHunt score or the best homes in a country. They are plain HTML with an image and a link, with no script and no tracking, and the image updates by itself.
-
-Free to use on any site. Keep the link to RealHunt as it is.
-
-### RealHunt score badge for a home
-
-For sellers and agents whose home is on RealHunt: show its score on your own listing. Paste the address of the home on RealHunt and copy the code.
-
-Example: the best-scored home today.
-
-### Best homes in a country: a card for your page
-
-For blogs, forums and guides about moving or buying abroad: the three best-scored homes in a country, always current.
-
-### "Data: RealHunt" badge and link
-
-For articles that use a figure from the [RealHunt data pages](https://realhunt.co/research).
-
-### Good to know
-
-- No script, no cookies, no tracking: an image and a link. It works in WordPress, Squarespace, Wix, Ghost, Substack and most forums that allow images.
-- The images are redrawn every time RealHunt is updated, so a score or a list never goes stale. If a home is sold and leaves RealHunt, its badge stops showing.
-- The score is RealHunt's own grade, not an endorsement of the seller or a valuation. Do not edit the image or present it as something else.
-- A badge cannot be bought and showing one does not change a home's score.
-
-[How the score works](https://realhunt.co/method) · [Data to quote](https://realhunt.co/research) · [Press page](https://realhunt.co/press) · Questions: carlos@equinoxinvestmentgroup.com
 
 
 ## Every home on RealHunt (title | country | price | size | score | page)

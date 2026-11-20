@@ -1,9 +1,9 @@
 {
  "summary": {
-  "pages": 4298,
-  "indexable": 3750,
-  "noindex": 548,
-  "noindex_by_polish": 462,
+  "pages": 4316,
+  "indexable": 3780,
+  "noindex": 536,
+  "noindex_by_polish": 450,
   "duplicate_homes": 2,
   "title_over_60": 376,
   "desc_over_155": 0,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3732,
+  "pages_with_hreflang": 3762,
   "thin_under_150_words": 21,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3707,
+  "with_lastmod": 3737,
   "redirects": 1372,
   "moved_stubs": 278
  },
@@ -31,7 +31,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 639,
+   "median_words": 656,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -153,6 +153,15 @@
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
+  "/corrections": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 465,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/costs": {
    "pages": 1,
    "indexable": 1,
@@ -193,7 +202,7 @@
    "pages": 684,
    "indexable": 683,
    "noindex": 1,
-   "median_words": 1121,
+   "median_words": 1160,
    "title_over_60": 41,
    "desc_out_of_range": 17,
    "inlinks_under_3": 0
@@ -220,7 +229,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 482,
+   "median_words": 541,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -247,7 +256,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 701,
+   "median_words": 722,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -360,6 +369,15 @@
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
+  "/es/corrections": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 567,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/costs": {
    "pages": 1,
    "indexable": 1,
@@ -400,7 +418,7 @@
    "pages": 684,
    "indexable": 683,
    "noindex": 1,
-   "median_words": 991,
+   "median_words": 1026,
    "title_over_60": 108,
    "desc_out_of_range": 2,
    "inlinks_under_3": 0
@@ -409,7 +427,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 530,
+   "median_words": 588,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -436,7 +454,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 637,
+   "median_words": 767,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -486,6 +504,24 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/es/how-we-check-homes": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 815,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/how-we-make-money": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 284,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/map": {
    "pages": 1,
    "indexable": 1,
@@ -517,7 +553,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 891,
+   "median_words": 975,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -535,16 +571,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 659,
+   "median_words": 749,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/research/*": {
-   "pages": 15,
-   "indexable": 15,
+   "pages": 19,
+   "indexable": 19,
    "noindex": 0,
-   "median_words": 999,
+   "median_words": 1179,
    "title_over_60": 2,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -553,7 +589,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 215,
+   "median_words": 244,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -578,9 +614,9 @@
   },
   "/es/sources/*": {
    "pages": 34,
-   "indexable": 28,
-   "noindex": 6,
-   "median_words": 477,
+   "indexable": 34,
+   "noindex": 0,
+   "median_words": 509,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -608,6 +644,24 @@
    "indexable": 1,
    "noindex": 0,
    "median_words": 515,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/what-we-never-do": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 430,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/es/what-we-reject": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 740,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -652,7 +706,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 594,
+   "median_words": 725,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -709,6 +763,24 @@
    "median_words": 1505,
    "title_over_60": 1,
    "desc_out_of_range": 24,
+   "inlinks_under_3": 0
+  },
+  "/how-we-check-homes": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 772,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/how-we-make-money": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 272,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/insider": {
@@ -805,7 +877,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 807,
+   "median_words": 879,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -823,16 +895,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 583,
+   "median_words": 661,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/research/*": {
-   "pages": 16,
-   "indexable": 16,
+   "pages": 20,
+   "indexable": 20,
    "noindex": 0,
-   "median_words": 876,
+   "median_words": 1000,
    "title_over_60": 1,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -841,7 +913,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 242,
+   "median_words": 271,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -866,9 +938,9 @@
   },
   "/sources/*": {
    "pages": 34,
-   "indexable": 28,
-   "noindex": 6,
-   "median_words": 409,
+   "indexable": 34,
+   "noindex": 0,
+   "median_words": 459,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -945,6 +1017,24 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/what-we-never-do": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 429,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
+  "/what-we-reject": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 699,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/winners": {
    "pages": 1,
    "indexable": 0,
@@ -957,7 +1047,6 @@
  },
  "noindex_by_polish": {
   "app screen": 5,
-  "portal list": 12,
   "form, contract or demo": 4,
   "home finder, city copy": 12,
   "legal page": 4,
@@ -967,7 +1056,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3750,
+   "pages with JSON-LD changed": 3780,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: availability left out (advert not confirmed)": 268,
    "Article: author, date, headline or image missing": 52
@@ -1158,7 +1247,7 @@
    "content": {
     "pages": 586,
     "twins": 585,
-    "words": 449791,
+    "words": 453727,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1174,10 +1263,10 @@
  },
  "tech": {
   "summary": {
-   "checked": 4298,
-   "indexable": 3750,
+   "checked": 4316,
+   "indexable": 3780,
    "max_depth": 3,
-   "titles_changed_since_last_build": 1346,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1185,7 +1274,6 @@
    "year_in_title": 2,
    "near_identical_pages": 523,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 24,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1264,44 +1352,17 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/deal/DdLhHoAESiS: House in Bajardo, Italy for €85,000 · RealHunt",
-    "/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k: 4-bedroom house in Saint Andrews, Canada for €190,700",
-    "/deal/little-river-92471: Flat in Little River, South Carolina for €88,800 · RealHunt",
-    "/deal/marion-87150: 2-bedroom house in Marion, Indiana for €118,300 · RealHunt",
-    "/deal/us-adirondacks-farmhouse-10-acres-179k: 3-bedroom farmhouse in Forestport, New York for €163,100",
-    "/deal/us-ashland-89k-672054: 3-bedroom farmhouse in Ashland, Maine for €72,800 · RealHunt",
-    "/deal/us-dora-84k-329130: 2-bedroom cabin in Dora, Missouri for €86,500 · RealHunt",
-    "/deal/us-freeport-83k-605154: 2-bedroom cottage in Freeport, Illinois for €79,200",
-    "/deal/us-madawaska-79k-677888: 3-bedroom house in Madawaska, Maine for €77,300 · RealHunt",
-    "/deal/us-maine-old-town-riverfront-185k: 3-bedroom house in French Island, Maine for €159,400",
-    "/deal/us-michigan-a-frame-2-5-acres-160k: 3-bedroom home in Kenton, Michigan for €173,100 · RealHunt",
-    "/deal/us-north-carolina-victorian-170k: 3-bedroom house in Scotland Neck for €153,900 · RealHunt",
-    "/es/deal/DdLhHoAESiS: Casa en Bajardo, Italia por 85.000 € · RealHunt",
-    "/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k: Casa de 4 dormitorios en Saint Andrews, Canadá por 190.700 €",
-    "/es/deal/little-river-92471: Piso en Little River, Carolina del Sur por 88.800 €",
-    "/es/deal/marion-87150: Casa de 2 dormitorios en Marion, Indiana por 118.300 €",
-    "/es/deal/us-adirondacks-farmhouse-10-acres-179k: Casa de campo de 3 dormitorios en Forestport por 163.100 €",
-    "/es/deal/us-ashland-89k-672054: Casa de campo de 3 dormitorios en Ashland por 72.800 €",
-    "/es/deal/us-dora-84k-329130: Cabaña de 2 dormitorios en Dora, Missouri por 86.500 €",
-    "/es/deal/us-freeport-83k-605154: Casa de campo de 2 dormitorios en Freeport por 79.200 €",
-    "/es/deal/us-madawaska-79k-677888: Casa de 3 dormitorios en Madawaska, Maine por 77.300 €",
-    "/es/deal/us-maine-old-town-riverfront-185k: Casa de 3 dormitorios en French Island, Maine por 159.400 €",
-    "/es/deal/us-michigan-a-frame-2-5-acres-160k: Casa de 3 dormitorios en Kenton, Michigan por 173.100 €",
-    "/es/deal/us-north-carolina-victorian-170k: Casa de 3 dormitorios en Scotland Neck por 153.900 €"
    ]
   },
   "depth": {
    "0": 2,
-   "1": 134,
-   "2": 3245,
-   "3": 369
+   "1": 136,
+   "2": 3285,
+   "3": 357
   },
   "noindex": {
    "app screen": 5,
    "set by its template": 84,
-   "portal list": 12,
    "form, contract or demo": 4,
    "home finder, city copy": 12,
    "legal page": 4,
@@ -1320,10 +1381,10 @@
    "pages": {
     "home": {
      "path": "/",
-     "html_kb": 8.9,
+     "html_kb": 9,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.2,
-     "route_js_kb": 396,
+     "entry_js_kb": 78.3,
+     "route_js_kb": 396.4,
      "requests_in_html": 14,
      "high_priority_images": 2,
      "eager_images": 2,
@@ -1332,10 +1393,10 @@
     },
     "deal": {
      "path": "/deal/DZ-9LczExWp",
-     "html_kb": 11.9,
+     "html_kb": 12.1,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.2,
-     "route_js_kb": 396,
+     "entry_js_kb": 78.3,
+     "route_js_kb": 396.4,
      "requests_in_html": 13,
      "high_priority_images": 1,
      "eager_images": 1,
@@ -1346,8 +1407,8 @@
      "path": "/homes/spain",
      "html_kb": 21,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.2,
-     "route_js_kb": 396,
+     "entry_js_kb": 78.3,
+     "route_js_kb": 396.4,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1358,8 +1419,8 @@
      "path": "/homes/bulgaria/under-80000",
      "html_kb": 11.4,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.2,
-     "route_js_kb": 396,
+     "entry_js_kb": 78.3,
+     "route_js_kb": 396.4,
      "requests_in_html": 15,
      "high_priority_images": 3,
      "eager_images": 3,
@@ -1370,8 +1431,8 @@
      "path": "/map",
      "html_kb": 6.1,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 78.2,
-     "route_js_kb": 445,
+     "entry_js_kb": 78.3,
+     "route_js_kb": 445.4,
      "requests_in_html": 15,
      "high_priority_images": 0,
      "eager_images": 0,
@@ -1382,28 +1443,41 @@
   }
  },
  "sitemaps": {
-  "sitemap-main.xml": 17,
+  "sitemap-main.xml": 22,
   "sitemap-countries.xml": 180,
   "sitemap-prices.xml": 55,
   "sitemap-cheap-houses.xml": 291,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
-  "sitemap-blog.xml": 34,
+  "sitemap-blog.xml": 38,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 172,
   "sitemap-homes.xml": 683,
   "sitemap-new-builds.xml": 8,
-  "sitemap-more.xml": 58,
-  "sitemap-es-main.xml": 14,
+  "sitemap-more.xml": 64,
+  "sitemap-es-main.xml": 19,
   "sitemap-es-countries.xml": 180,
   "sitemap-es-prices.xml": 55,
   "sitemap-es-cheap-houses.xml": 291,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
-  "sitemap-es-blog.xml": 33,
+  "sitemap-es-blog.xml": 37,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 172,
   "sitemap-es-homes.xml": 683,
-  "sitemap-es-more.xml": 52
+  "sitemap-es-more.xml": 58
+ },
+ "pack": {
+  "bundles": 256,
+  "in_bundles": {
+   "en": 684,
+   "es": 684
+  },
+  "single_files": {
+   "en": 0,
+   "es": 0
+  },
+  "in_sitemaps": 1366,
+  "in_sitemaps_not_served": []
  }
 }

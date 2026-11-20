@@ -1,0 +1,108 @@
+## Apartments for sale in the Dominican Republic
+
+Updated 20 November 2026. Newest home added 18 November 2026.
+
+RealHunt lists 5 apartments for sale in the Dominican Republic today, priced from €150,000 to €223,600. The cheapest costs €150,000: [Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k), in Puerto Plata (103 m², 2 bedrooms). The median price is €201,200 (€2,282/m²), against €90,500 (€1,200/m²) for the 591 homes on RealHunt in 28 countries.
+
+Homes
+5
+
+From
+€150,000
+
+Median price
+€201,200
+
+Median per m²
+€2,282/m²
+
+Median size
+103 m²
+
+Top score
+90
+
+### The 5 homes, best score first
+
+- [Score 90€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 39 days on RealHuntA renovated oceanfront apartment in Juan Dolio, on the Caribbean coast east of Santo Domingo, sold ready to live in.](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
+- [Score 89€187,800Furnished front-line flat in Juan Dolio with a sea-view balconyJuan Dolio, San Pedro de Macorís82 m² · 2 bed · €2,290/m² · 39 days on RealHuntA 2023 apartment on the front line of Juan Dolio beach with direct beach access, sold furnished and ready to move in.](https://realhunt.co/deal/dr-juan-dolio-188k-425359)
+- [Score 88€223,600Front-line beach flat in Juan Dolio with pool and jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 bed · €2,130/m² · 39 days on RealHuntA lived-in, ready apartment on the front line of the beach in Juan Dolio: 105 m², 2 bedrooms, 2 bathrooms, living-dining room, balcony, laundry…](https://realhunt.co/deal/dr-juan-dolio-224k-447078)
+- [Score 87€201,200Furnished beachfront flat on Playa Las Ballenas, Las TerrenasLas Terrenas, Samaná2 bed · 39 days on RealHuntA 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula.](https://realhunt.co/deal/dr-las-terrenas-201k-439030)
+- [Score 84New€150,000Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 bed · €1,456/m² · 2 days on RealHuntAsking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa…](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
+
+### Compare the 5 homes, cheapest first
+
+Home | Place | Price | Size | Per m² | Beds | Score | Added
+[Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k) | Puerto Plata | €150,000 | 103 m² | €1,456/m² | 2 | 84 | 18 Nov 2026
+[Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359) | Juan Dolio, San Pedro de Macorís | €187,800 | 82 m² | €2,290/m² | 2 | 89 | 12 Oct 2026
+[Furnished beachfront flat on Playa Las Ballenas, Las Terrenas](https://realhunt.co/deal/dr-las-terrenas-201k-439030) | Las Terrenas, Samaná | €201,200 | · | · | 2 | 87 | 12 Oct 2026
+[Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views](https://realhunt.co/deal/dr-juan-dolio-224k-441923) | Juan Dolio, San Pedro de Macorís | €223,600 | 98 m² | €2,282/m² | 3 | 90 | 12 Oct 2026
+[Front-line beach flat in Juan Dolio with pool and jacuzzi](https://realhunt.co/deal/dr-juan-dolio-224k-447078) | Juan Dolio, San Pedro de Macorís | €223,600 | 105 m² | €2,130/m² | 2 | 88 | 12 Oct 2026
+
+### The 5 homes in numbers
+
+- Size: half of them have 103 m² or more. The largest has 105 m²: [Front-line beach flat in Juan Dolio with pool and jacuzzi](https://realhunt.co/deal/dr-juan-dolio-224k-447078).
+- Bedrooms: 4 with 2 bedrooms, 1 with 3.
+- Type: 5 apartments.
+- Setting: 5 by the sea.
+- Where: San Pedro de Macorís (3), Puerto Plata (1), Samaná (1).
+- Extras named in the listings: 1 with a garden, 4 with a terrace, 5 with a garage, 3 with a pool.
+- Scores: 84 to 90 out of 98. The best rated: [Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views](https://realhunt.co/deal/dr-juan-dolio-224k-441923).
+- Newest, added 18 November 2026: [Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k). 1 of these homes was added in the last 30 days.
+
+### Buying costs and rules for foreigners in the Dominican Republic
+
+Can foreigners buy? Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions.
+
+Taxes and fees add about 4.25 to 7% to the price: The buyer pays a 3% transfer tax (0% for qualifying first purchases under CONFOTUR tourism incentives), legal fees of about 1-2% and notary fees of about 0.25-1%, plus registration costs, while the seller pays the 2-3% agent fee. On the median home on this page (€201,200) that is €8,551 to €14,084, so €209,751 to €215,284 in all.
+
+At the same percentages: on €40,000, €1,700 to €2,800; on €80,000, €3,400 to €5,600; on €150,000, €6,375 to €10,500.
+
+Yearly property tax: The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold.
+
+[Buying-cost calculator for a home in the Dominican Republic](https://realhunt.co/buying-costs/dominican-republic) · [All costs and taxes](https://realhunt.co/costs/dominican-republic) · [How to buy, step by step](https://realhunt.co/guide/dominican-republic) · [Rules by nationality](https://realhunt.co/can-i-buy)
+
+General information, not tax or legal advice. Figures checked in 2026.
+
+### What to watch out for
+
+- 1 of the 5 listings gives no floor area, so its price per m² cannot be compared.
+- 1 listing states a monthly community fee, of 127 USD. Add it to your yearly costs.
+- 5 of 5 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 3 of 5 are close to a motorway, a railway or an airport (high on our noise check).
+- As a group these homes score lowest on price (7/100 on average) and highest on distance to an airport (98/100).
+
+### Questions buyers ask
+
+#### How much does an apartment for sale in the Dominican Republic cost?
+
+Asking prices run from €150,000 to €223,600 across 5 homes. The median is €201,200, or €2,282/m².
+
+#### What is the cheapest apartment for sale in the Dominican Republic?
+
+Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata in Puerto Plata, listed at €150,000, 103 m², 2 bedrooms. Its RealHunt score is 84.
+
+#### Can foreigners buy a house in the Dominican Republic?
+
+Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions.
+
+#### What are the buying costs in the Dominican Republic?
+
+About 4.25 to 7% on top of the price: The buyer pays a 3% transfer tax (0% for qualifying first purchases under CONFOTUR tourism incentives), legal fees of about 1-2% and notary fees of about 0.25-1%, plus registration costs, while the seller pays the 2-3% agent fee. On the median home on this page (€201,200) that is €8,551 to €14,084. General information, not tax advice.
+
+### More searches in the Dominican Republic
+
+By budget [Under €300,000 5](https://realhunt.co/homes/dominican-republic/under-300000)
+
+By region [San Pedro de Macorís 3](https://realhunt.co/homes/dominican-republic/san-pedro-de-macoris)
+
+By feature [With a terrace 4](https://realhunt.co/cheap-houses/with-a-terrace-in-dominican-republic) [Move-in ready 4](https://realhunt.co/cheap-houses/turnkey-in-dominican-republic) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-dominican-republic)
+
+By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
+
+These listings come from supercasas.com (5). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+
+[Email me new homes in the Dominican Republic](https://realhunt.co/alerts?country=Dominican%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Dominican+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+
+---
+Source: https://realhunt.co/homes/dominican-republic (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.

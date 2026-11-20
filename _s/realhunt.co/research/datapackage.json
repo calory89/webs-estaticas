@@ -516,6 +516,135 @@
    ]
   },
   {
+   "name": "cheapest-per-sqm-europe",
+   "title": "The cheapest homes per square metre in Europe (2026)",
+   "path": "https://realhunt.co/research/cheapest-per-sqm-europe.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "The 25 homes with the lowest asking price per m² in Europe on RealHunt, and the median per country, from 495 real listings checked by a person. Chart, tables and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank"
+     },
+     {
+      "name": "url"
+     },
+     {
+      "name": "title"
+     },
+     {
+      "name": "country"
+     },
+     {
+      "name": "place"
+     },
+     {
+      "name": "price_eur"
+     },
+     {
+      "name": "size_sqm"
+     },
+     {
+      "name": "eur_per_sqm"
+     },
+     {
+      "name": "score"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/cheapest-per-sqm-europe"
+    }
+   ]
+  },
+  {
+   "name": "sea-homes-under-100000",
+   "title": "Homes by the sea under €100,000: where they are, country by country (2026)",
+   "path": "https://realhunt.co/research/sea-homes-under-100000.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "94 real homes by the sea at or under €100,000, checked by a person: how many each country has, the cheapest, the median price and where they are. Chart, table and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "url"
+     },
+     {
+      "name": "title"
+     },
+     {
+      "name": "country"
+     },
+     {
+      "name": "region"
+     },
+     {
+      "name": "place"
+     },
+     {
+      "name": "price_eur"
+     },
+     {
+      "name": "size_sqm"
+     },
+     {
+      "name": "score"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/sea-homes-under-100000"
+    }
+   ]
+  },
+  {
+   "name": "new-homes-this-month",
+   "title": "New homes on RealHunt in November 2026, by country",
+   "path": "https://realhunt.co/research/new-homes-this-month.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "179 homes added to RealHunt in November 2026, in 24 countries: how many per country, the cheapest, the median price and the best scored. With the months before. Chart, tables and CSV.",
+   "schema": {
+    "fields": [
+     {
+      "name": "month"
+     },
+     {
+      "name": "country"
+     },
+     {
+      "name": "homes_added"
+     },
+     {
+      "name": "cheapest_eur"
+     },
+     {
+      "name": "median_price_eur"
+     },
+     {
+      "name": "best_home_url"
+     },
+     {
+      "name": "best_home_score"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "RealHunt",
+     "path": "https://realhunt.co/research/new-homes-this-month"
+    }
+   ]
+  },
+  {
    "name": "homes",
    "title": "The homes behind the figures, one row each",
    "path": "https://realhunt.co/research/homes.csv",

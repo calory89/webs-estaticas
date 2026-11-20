@@ -32,11 +32,20 @@ RealHunt does not sell the resale homes it lists: it links to the original listi
 
 Found an error? Write to carlos@equinoxinvestmentgroup.com with the page and what is wrong. For a home that is sold or wrongly described, the report button on its page is the fastest way.
 
-When a figure, a rule or a description is corrected, the page is changed and its date updated. Changes to how the score works are recorded in the [change log of the method](https://realhunt.co/method).
+When a figure, a rule or a description is corrected, the page is changed and its date updated, and the change is listed with its date in the [corrections](https://realhunt.co/corrections). Changes to how the score works are recorded in the [change log of the method](https://realhunt.co/method).
 
 ### Updates
 
 Homes are added and removed every day, and the data pages are recomputed with each update, so two visits can show slightly different numbers. Each page shows when it was last updated.
+
+### How we check homes and what we publish about it
+
+- [How we know a home is still for sale](https://realhunt.co/how-we-check-homes)
+- [Which homes we reject and why](https://realhunt.co/what-we-reject)
+- [What we never do](https://realhunt.co/what-we-never-do)
+- [How RealHunt makes money](https://realhunt.co/how-we-make-money)
+- [Corrections and changes, with their dates](https://realhunt.co/corrections)
+- [Homes taken off the site, month by month](https://realhunt.co/research/removed-homes)
 
 ### Quoting RealHunt
 

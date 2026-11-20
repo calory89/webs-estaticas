@@ -1,0 +1,110 @@
+## Casas en venta en el Reino Unido
+
+Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+
+RealHunt tiene hoy 5 casas en venta en el Reino Unido, con precios de 82.600 € a 198.400 €. La más barata cuesta 82.600 €: [Casa de dos dormitorios con mucho estilo y chimenea abierta](https://realhunt.co/es/deal/uk-shildon-82k-780165), en Shildon (72 m², 2 dormitorios). El precio mediano es de 126.500 € (1.807 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+
+Viviendas
+5
+
+Desde
+82.600 €
+
+Precio mediano
+126.500 €
+
+Mediana por m²
+1.807 €/m²
+
+Tamaño mediano
+72 m²
+
+Mejor nota
+89
+
+### Las 5 viviendas, de mejor a peor nota
+
+- [Nota 8982.600 €Casa de dos dormitorios con mucho estilo y chimenea abiertaShildon, County Durham72 m² · 2 dorm. · 1.147 €/m² · 45 días en RealHuntUnos 72 m² de estancias muy bien presentadas en Shildon (condado de Durham): chimenea abierta, un baño completo con mucho estilo y dos dormitorios…](https://realhunt.co/es/deal/uk-shildon-82k-780165)
+- [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 2 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · Añadida hoySe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
+- [Nota 82Nueva195.400 €Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del NorteGreyabbey, Irlanda del Norte80 m² · 2 dorm. · 2.443 €/m² · Añadida hoySe pide £169.950 (aproximadamente 195.400 €) por una casa adosada de 80 m² en el corazón del histórico Greyabbey, completamente renovada en los…](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
+- [Nota 81Nueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 2 días en RealHuntUna cottage terraced tradicional en el centro de Whithorn, en el extremo más al suroeste de Escocia.](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+
+### Compara las 5 viviendas, de más barata a más cara
+
+Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
+[Casa de dos dormitorios con mucho estilo y chimenea abierta](https://realhunt.co/es/deal/uk-shildon-82k-780165) | Shildon, County Durham | 82.600 € | 72 m² | 1.147 €/m² | 2 | 89 | 6 oct 2026
+[Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, Galloway](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k) | Whithorn, Dumfries and Galloway | 121.000 € | 67 m² | 1.806 €/m² | 2 | 81 | 18 nov 2026
+[Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k) | Macduff, Aberdeenshire | 126.500 € | 70 m² | 1.807 €/m² | 2 | 83 | 18 nov 2026
+[Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del Norte](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k) | Greyabbey, Irlanda del Norte | 195.400 € | 80 m² | 2.443 €/m² | 2 | 82 | 20 nov 2026
+[Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) | Lack, Irlanda del Norte | 198.400 € | 107 m² | 1.854 €/m² | 3 | 83 | 20 nov 2026
+
+### Las 5 viviendas en cifras
+
+- Tamaño: la mitad tiene 72 m² o más. La más grande tiene 107 m²: [Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k).
+- Dormitorios: 4 con 2 dormitorios, 1 con 3.
+- Tipo: 4 casas.
+- Entorno: 1 junto al mar, 4 en pueblos.
+- Dónde: Irlanda del Norte (2), Aberdeenshire (1), County Durham (1), Dumfries and Galloway (1).
+- Extras que mencionan los anuncios: 2 con jardín, 3 con terraza, 2 con garaje, 1 con chimenea.
+- Notas: de 81 a 89 sobre 98. La de mejor nota: [Casa de dos dormitorios con mucho estilo y chimenea abierta](https://realhunt.co/es/deal/uk-shildon-82k-780165).
+- La más reciente, añadida el 20 de noviembre de 2026: [Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k). 4 de estas viviendas se añadieron en los últimos 30 días.
+
+### Gastos de compra y normas para extranjeros en el Reino Unido
+
+¿Pueden comprar los extranjeros? Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí.
+
+Los impuestos y gastos añaden alrededor de un 3 a 9 % al precio: En Inglaterra e Irlanda del Norte, el Stamp Duty Land Tax (SDLT) es del 0% hasta 125.000 £ y del 2% de 125.001 £ a 250.000 £, más un recargo del 2% para no residentes en el Reino Unido y otro 5% si ya tienes una vivienda en cualquier país, así que un no residente con otra vivienda paga el 7% hasta 125.000 £ y el 9% hasta 250.000 £; abogado (conveyancer) alrededor del 0,6-1%, con un mínimo habitual de unas 2.100 £ con IVA; tasa del Land Registry de 20 £ a 230 £; las búsquedas registrales van aparte; el vendedor paga al agente inmobiliario. En la vivienda mediana de esta página (126.500 €) son de 3.795 € a 11.385 €, es decir, de 130.295 € a 137.885 € en total.
+
+Con los mismos porcentajes: sobre 40.000 €, de 1.200 € a 3.600 €; sobre 80.000 €, de 2.400 € a 7.200 €; sobre 150.000 €, de 4.500 € a 13.500 €.
+
+Impuesto anual sobre la propiedad: Los propietarios u ocupantes pagan el council tax al ayuntamiento, y muchos ayuntamientos de Inglaterra cobran a las segundas viviendas un recargo de hasta el 100% desde abril de 2025.
+
+[Calculadora de gastos de compra en el Reino Unido](https://realhunt.co/es/buying-costs/united-kingdom) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/united-kingdom) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/united-kingdom) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+
+Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
+
+### Quien no vive en el Reino Unido paga 2 puntos más de impuesto de compra
+
+Desde el 1 de abril de 2021, los tipos del impuesto de compra (Stamp Duty Land Tax) sobre una vivienda son 2 puntos porcentuales más altos para quien no es residente en el Reino Unido. A efectos de este impuesto, una persona no es residente si no ha estado en el Reino Unido al menos 183 días en los 12 meses anteriores a la compra.
+
+Fuente: [GOV.UK, tipos del Stamp Duty Land Tax para no residentes en el Reino Unido](https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents). Revisado en noviembre de 2026. Información general, no asesoramiento legal ni fiscal.
+
+### En qué fijarse antes de comprar
+
+- En conjunto, estas viviendas puntúan más bajo en precio por m² (34/100 de media) y más alto en gastos de compra (92/100).
+
+### Preguntas de quienes compran
+
+#### ¿Cuánto cuesta una casa en venta en el Reino Unido?
+
+Los precios de venta van de 82.600 € a 198.400 € entre 5 viviendas. La mediana es de 126.500 € (1.807 €/m²).
+
+#### ¿Cuál es la casa más barata en venta en el Reino Unido?
+
+Casa de dos dormitorios con mucho estilo y chimenea abierta, en Shildon, anunciada por 82.600 €, con 72 m² y 2 dormitorios. Su nota en RealHunt es 89.
+
+#### ¿Pueden los extranjeros comprar una casa en el Reino Unido?
+
+Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí.
+
+#### ¿Cuáles son los gastos de compra en el Reino Unido?
+
+Alrededor de un 3 a 9 % además del precio: En Inglaterra e Irlanda del Norte, el Stamp Duty Land Tax (SDLT) es del 0% hasta 125.000 £ y del 2% de 125.001 £ a 250.000 £, más un recargo del 2% para no residentes en el Reino Unido y otro 5% si ya tienes una vivienda en cualquier país, así que un no residente con otra vivienda paga el 7% hasta 125.000 £ y el 9% hasta 250.000 £; abogado (conveyancer) alrededor del 0,6-1%, con un mínimo habitual de unas 2.100 £ con IVA; tasa del Land Registry de 20 £ a 230 £; las búsquedas registrales van aparte; el vendedor paga al agente inmobiliario. En la vivienda mediana de esta página (126.500 €) son de 3.795 € a 11.385 €. Información general, no asesoramiento fiscal.
+
+### Más búsquedas en el Reino Unido
+
+Por presupuesto [Menos de 150.000 € 3](https://realhunt.co/es/homes/united-kingdom/under-150000) [Menos de 200.000 € 5](https://realhunt.co/es/homes/united-kingdom/under-200000)
+
+Por entorno [Casas de pueblo 4](https://realhunt.co/es/homes/united-kingdom/village-houses)
+
+Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-kingdom) [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-united-kingdom) [Nuevas este mes 4](https://realhunt.co/es/cheap-houses/new-this-month-in-united-kingdom)
+
+Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [México 4](https://realhunt.co/es/homes/mexico)
+
+Estos anuncios proceden de onthemarket.com (2), propertypal.com (2), rightmove.co.uk (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+
+[Avísame por correo de viviendas nuevas en el Reino Unido](https://realhunt.co/es/alerts?country=United%20Kingdom) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+Kingdom#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method)
+
+---
+Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.

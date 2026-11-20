@@ -32,6 +32,9 @@ Computed from the homes on the site each time it is updated. Asking prices in eu
 - [Cheap homes and flood risk: share with a medium or high indicator, by country (2026)](https://realhunt.co/research/flood-indicator). 8% of 627 homes are marked medium or high; 12 are marked high.
 - [How the price of a cheap home changes with the distance to the airport (2026)](https://realhunt.co/research/price-by-airport-distance). €1,464/m² under 30 km from an airport, €1,067/m² between 30 and 60 km.
 - [New-build prices per m² in Bali, Phuket, Koh Samui, Tulum and Batumi (2026)](https://realhunt.co/research/new-build-prices). From €1,366/m² in Batumi to €3,661/m² in Phuket.
+- [The cheapest homes per square metre in Europe (2026)](https://realhunt.co/research/cheapest-per-sqm-europe). Lowest in Europe: €98/m² in Markaryd, Kronoberg, Småland, Sweden; lowest median: Sweden, €680/m².
+- [Homes by the sea under €100,000: where they are, country by country (2026)](https://realhunt.co/research/sea-homes-under-100000). 94 homes by the sea at or under €100,000; most in Spain (25).
+- [New homes on RealHunt in November 2026, by country](https://realhunt.co/research/new-homes-this-month). 179 homes added in November 2026; most in the United States (35).
 
 Each page has its chart, table, CSV, method and a ready citation. Need a different cut (one country, one price band, one month)? Ask at carlos@equinoxinvestmentgroup.com.
 

@@ -32,11 +32,20 @@ RealHunt no vende las casas de segunda mano que publica: enlaza con el anuncio o
 
 ¿Has visto un error? Escribe a carlos@equinoxinvestmentgroup.com indicando la página y qué está mal. Si una casa está vendida o mal descrita, lo más rápido es el botón de aviso de su página.
 
-Cuando se corrige una cifra, una norma o una descripción, se cambia la página y se actualiza su fecha. Los cambios en el funcionamiento de la nota se anotan en el [registro de cambios del método](https://realhunt.co/es/method).
+Cuando se corrige una cifra, una norma o una descripción, se cambia la página y se actualiza su fecha, y el cambio se anota con su fecha en las [correcciones](https://realhunt.co/es/corrections). Los cambios en el funcionamiento de la nota se anotan en el [registro de cambios del método](https://realhunt.co/es/method).
 
 ### Actualizaciones
 
 Cada día entran y salen casas, y las páginas de datos se recalculan en cada actualización, así que dos visitas pueden mostrar cifras algo distintas. Cada página indica cuándo se actualizó por última vez.
+
+### Cómo revisamos las casas y qué publicamos sobre ello
+
+- [Cómo sabemos que una casa sigue a la venta](https://realhunt.co/es/how-we-check-homes)
+- [Qué casas rechazamos y por qué](https://realhunt.co/es/what-we-reject)
+- [Lo que nunca hacemos](https://realhunt.co/es/what-we-never-do)
+- [Cómo gana dinero RealHunt](https://realhunt.co/es/how-we-make-money)
+- [Correcciones y cambios, con su fecha](https://realhunt.co/es/corrections)
+- [Casas retiradas de la web, mes a mes](https://realhunt.co/es/research/removed-homes)
 
 ### Citar a RealHunt
 
