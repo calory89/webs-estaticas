@@ -103,7 +103,8 @@ export async function kbTick(req, r, env) {
     try { if (!K33) K33 = await import('./kbx_n33l.js'); if (await K33.load(env)) {
       const alt = {}, seen = new Set(); let lsw = false, done = false, msDone = false;
       const fh = K33.footer(pl), ms = r.status === 200 && K33.msWants(pth) ? K33.msBlock(pl, pth) : '';
-      rw = rw.on('head link[rel="alternate"][hreflang]', { element(e) { const l = e.getAttribute('hreflang'), p = K33.altPath(e.getAttribute('href') || ''); if (p && K33.LANGS.includes(l)) alt[l] = p; } })
+      // a hreflang link to a ?query address points at a page that is canonical to another one (/tools/account-check/?lang=es): dropped
+      rw = rw.on('head link[rel="alternate"][hreflang]', { element(e) { if (/\?/.test(e.getAttribute('href') || '') && !/^\/x\//.test(pth)) { e.remove(); return; } const l = e.getAttribute('hreflang'), p = K33.altPath(e.getAttribute('href') || ''); if (p && K33.LANGS.includes(l)) alt[l] = p; } })
         .on('details.lsw', { element() { lsw = true; } })
         .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); seen.add(l); if (alt[l]) e.setAttribute('href', alt[l]); } })
         .on('details.lsw ul', { element(e) { e.onEndTag(t => { const add = K33.lswMissing(alt, seen); if (add) t.before(add, { html: true }); }); } })
