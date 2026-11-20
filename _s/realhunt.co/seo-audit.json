@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4640,
-  "indexable": 4098,
+  "pages": 4638,
+  "indexable": 4096,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 425,
+  "title_over_60": 424,
   "desc_over_155": 0,
   "desc_under_120": 83,
   "desc_out_of_range": 83,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 44,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4080,
+  "pages_with_hreflang": 4078,
   "thin_under_150_words": 27,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4035,
-  "redirects": 1840,
-  "moved_stubs": 322
+  "with_lastmod": 4033,
+  "redirects": 1842,
+  "moved_stubs": 324
  },
  "failures": [],
  "groups": {
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1905,
+   "median_words": 1902,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 336,
-   "indexable": 336,
+   "pages": 335,
+   "indexable": 335,
    "noindex": 0,
    "median_words": 1599,
    "title_over_60": 9,
@@ -346,17 +346,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2313,
+   "median_words": 2308,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 336,
-   "indexable": 336,
+   "pages": 335,
+   "indexable": 335,
    "noindex": 0,
-   "median_words": 1899,
-   "title_over_60": 85,
+   "median_words": 1897,
+   "title_over_60": 84,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -1056,7 +1056,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4098,
+   "pages with JSON-LD changed": 4096,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: availability left out (advert not confirmed)": 268,
    "Article: author, date, headline or image missing": 52
@@ -1263,7 +1263,7 @@
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
    "/deal/bg-kavarna-66k-89682",
-   "... 365 more"
+   "... 364 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1271,7 +1271,7 @@
   ]
  },
  "spanish": {
-  "twins": 1183,
+  "twins": 1182,
   "groups": {
    "homes": {
     "pages": 713,
@@ -1282,9 +1282,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 630,
-    "twins": 630,
-    "words": 1341612,
+    "pages": 629,
+    "twins": 629,
+    "words": 1337886,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1315,10 +1315,10 @@
  },
  "tech": {
   "summary": {
-   "checked": 4640,
-   "indexable": 4098,
+   "checked": 4638,
+   "indexable": 4096,
    "max_depth": 3,
-   "titles_changed_since_last_build": 17,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1326,7 +1326,6 @@
    "year_in_title": 2,
    "near_identical_pages": 528,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 14,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1406,28 +1405,12 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (274)",
-    "/cheap-houses/quiet-location-in-canada: Houses away from motorways and railways in Canada (7)",
-    "/cheap-houses/quiet-location-in-france: Houses away from motorways and railways in France (18)",
-    "/cheap-houses/quiet-location-in-greece: Houses away from motorways and railways in Greece (21)",
-    "/cheap-houses/quiet-location-in-italy: Cheap homes away from motorways and railways in Italy (45)",
-    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (80)",
-    "/deal/DbC0D4RoLzc: House in Värmlandsnäs, Sweden for €53,000 · RealHunt",
-    "/deal/DdC7bBTgSg1: 3-bedroom house in Risögrund, Sweden for €81,000 · RealHunt",
-    "/deal/es-san-martin-de-valdeiglesias-175k-710397: 1-bedroom house in San Martín de Valdeiglesias for €175,000",
-    "/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k: 4-bedroom house in Secinaro, Italy for €95,000 · RealHunt",
-    "/es/deal/DbC0D4RoLzc: Casa en Värmlandsnäs, Suecia por 53.000 € · RealHunt",
-    "/es/deal/DdC7bBTgSg1: Casa de 3 dormitorios en Risögrund, Suecia por 81.000 €",
-    "/es/deal/es-san-martin-de-valdeiglesias-175k-710397: Casa de 1 dormitorio en San Martín de Valdeiglesias por 175.000 €",
-    "/es/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k: Casa de 4 dormitorios en Secinaro, Italia por 95.000 €"
    ]
   },
   "depth": {
    "0": 2,
    "1": 142,
-   "2": 3569,
+   "2": 3567,
    "3": 385
   },
   "noindex": {
@@ -1516,7 +1499,7 @@
   "sitemap-main.xml": 22,
   "sitemap-countries.xml": 237,
   "sitemap-prices.xml": 56,
-  "sitemap-cheap-houses.xml": 337,
+  "sitemap-cheap-houses.xml": 336,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 38,
@@ -1558,7 +1541,7 @@
   "sitemap-es-main.xml": 19,
   "sitemap-es-countries.xml": 237,
   "sitemap-es-prices.xml": 56,
-  "sitemap-es-cheap-houses.xml": 337,
+  "sitemap-es-cheap-houses.xml": 336,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 37,

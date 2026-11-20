@@ -1,7 +1,7 @@
 ## RealHunt AI score
-Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
+Scored now: 79 · total: 720 · approx cost (Haiku): $0.51
 
-### Homes to review (397)
+### Homes to review (441)
 | home | beauty | condition | cover ok | keep | flags |
 |---|---|---|---|---|---|
 | [fr-esperaza-86k-sxd5p3](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | 45 | 50 | False | False | dated kitchen cabinets and appliances, worn tile flooring throughout, cluttered, |
@@ -98,6 +98,11 @@ Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
 | [us-marietta-oh-victorian-oak-woodwork-220k](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k) | 55 | 50 | False | False | exterior needs renovation and repainting, worn porch and steps require repair, d |
 | [mx-puerto-vallarta-three-bed-house-pool-condo-3-25m](https://realhunt.co/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m) | 55 | 60 | False | False | dated interior design, bland, characterless spaces, mismatched furnishings, basi |
 | [es-asturias-quiros-ricabo-mountain-house-180k](https://realhunt.co/deal/es-asturias-quiros-ricabo-mountain-house-180k) | 55 | 50 | False | False | exterior looks weathered and old, paint peeling on green walls, heating not yet  |
+| [it-tuscany-capannori-ruota-townhouse-garden-130k](https://realhunt.co/deal/it-tuscany-capannori-ruota-townhouse-garden-130k) | 55 | 65 | False | False | overgrown garden in cover photo, weathered stone facade needs attention, dark, u |
+| [pt-alentejo-marvao-ponte-velha-house-river-view-140k](https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k) | 55 | 58 | False | False | exterior looks tired and aged, dated bathroom and fixtures, needs interior updat |
+| [cz-lomnicka-plesna-brick-house-heat-pump-131k](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k) | 55 | 60 | False | False | dated interior furnishings, small bedroom, modest living space, aging aesthetic  |
+| [it-umbria-gubbio-stone-farmhouse-3-hectares-148k](https://realhunt.co/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k) | 55 | 50 | False | False | extensive visible deterioration and damage, crumbling stone facade in multiple a |
+| [fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k](https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k) | 55 | 58 | False | False | Exterior looks run-down and neglected, Overgrown vegetation and unkempt grounds, |
 | [chapmanville-82875](https://realhunt.co/deal/chapmanville-82875) | 58 | 62 | False | False | exterior looks dated and worn, metal roof appears aged, modest curb appeal, smal |
 | [DcsW6VPIMJO](https://realhunt.co/deal/DcsW6VPIMJO) | 58 | 62 | False | False | hallway looks dated and institutional, retro kitchens need modernization, 1950s  |
 | [es-roquetas-de-mar-82k-66798](https://realhunt.co/deal/es-roquetas-de-mar-82k-66798) | 58 | 62 | False | False | kitchen dated and cramped, mismatched furniture styles, worn flooring, cluttered |
@@ -150,6 +155,7 @@ Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
 | [fr-bessac-134k-729283](https://realhunt.co/deal/fr-bessac-134k-729283) | 62 | 55 | False | False | single-glazed windows need replacement, energy rating E - poor insulation, exter |
 | [fr-la-charite-sur-loire-town-house-patio-119k](https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k) | 62 | 65 | False | False | Exterior facade looks weathered and aged, Cover photo appears depressing and run |
 | [jp-awaji-misawa-house-54k-788413](https://realhunt.co/deal/jp-awaji-misawa-house-54k-788413) | 62 | 65 | False | False | exterior looks dated and institutional, clunky proportions and minimal curb appe |
+| [uy-la-aguada-brick-chalet-one-block-from-beach-165k](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k) | 62 | 65 | False | False | exterior needs updating and painting, dated 1990s aesthetic throughout, overgrow |
 | [es-villar-del-arzobispo-125k-092921](https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921) | 65 | 55 | False | False | unfinished construction site appearance, bare dirt grounds need landscaping, inc |
 | [DcTSbXtj9qu](https://realhunt.co/deal/DcTSbXtj9qu) | 65 | 72 | False | False | cover photo depressing with empty parking lot, coastal industrial aesthetic not  |
 | [es-reinosa-85k-84223](https://realhunt.co/deal/es-reinosa-85k-84223) | 65 | 70 | False | False | Dated interior design aesthetic, Mismatched furniture and decor, Wooden beam cei |
@@ -167,6 +173,7 @@ Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
 | [bg-kavarna-66k-89682](https://realhunt.co/deal/bg-kavarna-66k-89682) | 68 | 72 | False | False | Photo 0 looks cluttered and institutional, Mismatched furniture and sparse decor |
 | [es-idiazabal-95k-27409](https://realhunt.co/deal/es-idiazabal-95k-27409) | 68 | 72 | False | False | kitchen is dated and cramped, uneven style mix throughout, yellow walls feel dat |
 | [it-sicily-collesano-madonie-four-bed-house-115k](https://realhunt.co/deal/it-sicily-collesano-madonie-four-bed-house-115k) | 68 | 65 | False | False | facade needs repainting and cosmetic work, dated interior aesthetics throughout, |
+| [fr-masseube-gers-renovated-townhouse-70k](https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k) | 68 | 72 | False | False | exterior facade aged and weathered, photo 0 shows run-down appearance, no outdoo |
 | [acquappesa-sea-view-39000](https://realhunt.co/deal/acquappesa-sea-view-39000) | 72 | 70 | True | False | outdated furniture and decor, worn terracotta tiles, basic kitchen needs updatin |
 | [Dc6Y4UKDLyc](https://realhunt.co/deal/Dc6Y4UKDLyc) | 72 | 65 | False | False | needs renovation and restoration work, deteriorating stone facade and mortar, al |
 | [dk-ranum-79k-6d9fbd](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) | 72 | 65 | True | False | 1973 villa shows age and wear, dated kitchen with old cabinetry, kitchen applian |
@@ -356,6 +363,35 @@ Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
 | [gr-karpathos-othos-four-bed-sea-view-170k](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k) | 72 | 65 | False | False | cover photo shows unfinished village construction, dated kitchen and bathroom fi |
 | [gr-ano-volos-pelion-stone-house-gulf-view-167k](https://realhunt.co/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k) | 72 | 65 | False | False | exterior needs maintenance and updating, partially furnished, not fully ready, d |
 | [dk-hoeng-saeby-move-in-ready-villa-1195k-dkk](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk) | 72 | 75 | False | True | photo 0 shows cluttered frontage with bins and gravel, 1948 construction visible |
+| [pt-centro-penacova-paradela-village-house-views-189k](https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k) | 72 | 70 | True | False | Energy class F - very poor efficiency, Needs modernization and updates, Original |
+| [gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k](https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k) | 72 | 75 | False | False | exterior facade needs refresh, balcony railings show wear, dated awning style, s |
+| [gr-mani-milea-1850-stone-house-courtyard-195k](https://realhunt.co/deal/gr-mani-milea-1850-stone-house-courtyard-195k) | 72 | 75 | False | True | exterior looks weathered and aged, photo 0 appears run-down despite recent rebui |
+| [es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k](https://realhunt.co/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k) | 72 | 75 | False | False | exterior facade looks institutional and cold, cover photo lacks warmth and appea |
+| [es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k](https://realhunt.co/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k) | 72 | 75 | False | True | roof terrace looks bare and institutional, artificial turf on terrace, mismatche |
+| [uy-piriapolis-playa-grande-house-near-sea-198k](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k) | 72 | 65 | False | False | overgrown front garden needs maintenance, weathered exterior facade, patchy lawn |
+| [gr-messinia-andriani-renovated-stone-house-180k](https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k) | 72 | 75 | False | True | bare dirt courtyard in cover photo, unfinished exterior landscaping, photo 0 loo |
+| [it-piedmont-acqui-terme-vaulted-period-flat-140k](https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k) | 72 | 75 | False | False | Exterior facade shows age and wear, Ground floor street-level exposure, No eleva |
+| [es-catalonia-roquetes-renovated-townhouse-no-fees-120k](https://realhunt.co/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k) | 72 | 75 | False | True | exterior facade looks weathered and plain, photo 0 appears dated and uninviting, |
+| [us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k](https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k) | 72 | 75 | False | True | cracked driveway needs repair, overgrown landscaping, unkempt yard, dated exteri |
+| [ca-pictou-ns-1888-house-harbour-views-koi-pond-250k](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k) | 72 | 65 | False | False | overgrown front yard and landscaping, dated interior décor needs updating, kitch |
+| [ie-kilkieran-connemara-sea-view-two-bed-house-230k](https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k) | 72 | 75 | False | True | exterior facade looks weathered and institutional, photo 0 has unwelcoming owl-l |
+| [hu-balatonlelle-house-sauna-plunge-pool-guest-studio-249k](https://realhunt.co/deal/hu-balatonlelle-house-sauna-plunge-pool-guest-studio-249k) | 72 | 75 | False | True | Photo 0 exterior looks tired and dated, Mismatched roof tiles suggest age, Garde |
+| [ie-leitrim-village-marina-view-apartment-berth-230k](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k) | 72 | 75 | False | False | exterior photo shows industrial marina infrastructure, cover photo lacks residen |
+| [uk-lack-fermanagh-refurbished-townhouse-double-garage-172k](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) | 72 | 78 | False | False | exterior facade looks weathered and dated, cover photo shows aging render and pl |
+| [jp-yonago-kaike-2016-one-floor-japanese-house-143k](https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k) | 72 | 75 | False | False | exterior looks tired and aged, overgrown surrounding area, deteriorated pavement |
+| [it-piedmont-castellino-tanaro-renovated-hill-house-115k](https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k) | 72 | 75 | False | True | overgrown garden needs maintenance, photo 0 looks unkempt and neglected, no cent |
+| [ie-tramore-ground-floor-two-bed-flat-near-beach-220k](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k) | 72 | 78 | False | True | Photo 0 shows cluttered coastal estate, distracting neighbors, Red box highlight |
+| [fr-plouezoch-stone-house-conservatory-near-terenez-178k](https://realhunt.co/deal/fr-plouezoch-stone-house-conservatory-near-terenez-178k) | 72 | 65 | True | False | dated bathroom needs renovation, old wallpaper upstairs requires redecoration, e |
+| [us-la-crosse-wi-updated-four-bed-house-235k](https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k) | 72 | 78 | False | False | exterior needs fresh paint and trim work, front porch appears weathered, dated e |
+| [si-kozjak-kungota-renovated-country-house-2ha-245k](https://realhunt.co/deal/si-kozjak-kungota-renovated-country-house-2ha-245k) | 72 | 78 | False | False | exterior facade looks institutional, not charming, dilapidated outbuildings visi |
+| [it-liguria-savignone-garden-flat-mountain-views-104k](https://realhunt.co/deal/it-liguria-savignone-garden-flat-mountain-views-104k) | 72 | 65 | False | False | facade shows age and uneven coloring, building appears weathered and needs maint |
+| [ca-liverpool-ns-updated-character-house-workshop-220k](https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k) | 72 | 75 | False | True | exterior needs fresh paint, dated blue siding appearance, overgrown landscaping  |
+| [jp-nasushiobara-refreshed-2009-house-105k](https://realhunt.co/deal/jp-nasushiobara-refreshed-2009-house-105k) | 72 | 75 | True | False | needs new water heater installation, dated yellow kitchen cabinets, small rooms, |
+| [it-piedmont-acqui-terme-country-house-garden-180k](https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k) | 72 | 75 | False | False | exterior facade needs refreshing, photo 0 shows dated appearance, brick pile vis |
+| [fr-provence-riez-renovated-village-house-dpe-b-159k](https://realhunt.co/deal/fr-provence-riez-renovated-village-house-dpe-b-159k) | 72 | 75 | False | True | exterior facade looks weathered and aged, cover photo lacks curb appeal, some ki |
+| [se-fransta-romback-red-wooden-villa-valley-view-750k-sek](https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek) | 72 | 75 | False | False | exterior weathered and aged, photo 0 looks run-down and sad, 1915 building shows |
+| [it-marche-san-lorenzo-in-campo-house-garden-garage-120k](https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k) | 72 | 75 | False | True | exterior looks aged and institutional, photo 0 shows tired facade despite renova |
+| [gr-crete-koutsounari-stone-house-libyan-sea-view-195k](https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k) | 72 | 65 | False | False | rustic/aged stone facade needs repointing, weathered wooden doors and shutters,  |
 | [it-san-siro-95k-057133](https://realhunt.co/deal/it-san-siro-95k-057133) | 75 | 72 | False | True | exterior looks aged and weathered, overgrown vegetation and clutter in courtyard |
 | [dk-hurup-66k-a04f4a](https://realhunt.co/deal/dk-hurup-66k-a04f4a) | 75 | 78 | False | True | Cover photo out of focus with obstructed view, Historic 1850s building may feel  |
 | [dk-hygum-90k-715977](https://realhunt.co/deal/dk-hygum-90k-715977) | 75 | 80 | False | True | Photo 0 exterior looks dated and industrial, Brick facade shows weathering, Sett |
@@ -398,6 +434,14 @@ Scored now: 0 · total: 641 · approx cost (Haiku): $0.00
 | [fr-bergerac-139k-175736](https://realhunt.co/deal/fr-bergerac-139k-175736) | 78 | 85 | False | True | exterior needs cosmetic work, old weathered facade, rustic setting may not appea |
 | [it-rosignano-marittimo-sea-view-village-flat-125k](https://realhunt.co/deal/it-rosignano-marittimo-sea-view-village-flat-125k) | 78 | 82 | False | True | exterior photo shows aged building facade, photo 0 lacks curb appeal for cover |
 | [gr-chios-volissos-1881-stone-house-175k](https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k) | 78 | 82 | False | True | exterior facade weathered and aged-looking, photo 0 shows deteriorated stone and |
+| [fr-normandy-vendeuvre-stone-house-river-garden-205k](https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k) | 78 | 65 | True | False | needs finishing and refreshing work, not move-in ready, some cosmetic updates re |
+| [it-tuscany-arcidosso-stone-house-terrace-115k](https://realhunt.co/deal/it-tuscany-arcidosso-stone-house-terrace-115k) | 78 | 82 | False | True | exterior facade looks weathered and aged, photo 0 appears dark and uninviting, m |
+| [mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) | 78 | 75 | False | False | exterior needs fresh paint and cleaning, stone foundation shows weathering, some |
+| [ca-summerside-pe-heritage-house-tin-ceilings-300k](https://realhunt.co/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k) | 78 | 72 | True | False | needs modernization, heritage restoration required, dated kitchen and bathrooms, |
+| [it-umbria-spoleto-la-torretta-restored-hamlet-house-155k](https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155k) | 78 | 75 | True | False | one room still needs work, unfinished bathroom, small commercial area only 73m2, |
+| [uk-greyabbey-renovated-end-terrace-garage-170k](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k) | 78 | 85 | False | False | exterior facade aging and weathered, photo 0 looks dated and uninviting, street- |
+| [us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k) | 78 | 82 | False | True | exterior photo 0 shows sparse landscaping, front yard lacks curb appeal, tree th |
 | [es-golf-del-sur-250k-061726](https://realhunt.co/deal/es-golf-del-sur-250k-061726) | 82 | 85 | False | True | Photo 0 interior looks dated and dark, Worn roller blinds need replacement, Olde |
 | [us-aventura-18011-1904-350k](https://realhunt.co/deal/us-aventura-18011-1904-350k) | 82 | 85 | False | True | Marina view in cover photo lacks appeal, Exterior shot not representative of int |
 | [us-pembroke-pines-8956-245k](https://realhunt.co/deal/us-pembroke-pines-8956-245k) | 82 | 85 | False | True | cover photo lacks curb appeal, exterior view uninviting for listing showcase |
+| [es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k](https://realhunt.co/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k) | 82 | 75 | True | False | communal pool closed indefinitely, community fees not disclosed, building facade |

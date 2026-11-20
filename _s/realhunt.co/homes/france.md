@@ -225,8 +225,6 @@ Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-france) 
 
 By feature and budget [Houses under €100,000 9](https://realhunt.co/cheap-houses/houses-under-100000-in-france) [With a garden under €100,000 5](https://realhunt.co/cheap-houses/with-garden-under-100000-in-france) [Village houses under €50,000 4](https://realhunt.co/cheap-houses/village-houses-under-50000-in-france) [Move-in ready under €100,000 3](https://realhunt.co/cheap-houses/turnkey-under-100000-in-france)
 
-In pounds and dollars [Under £100,000 27](https://realhunt.co/cheap-houses/under-100000-pounds-in-france)
-
 Near a city [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon)
 
 Neighbouring countries [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 21](https://realhunt.co/homes/germany)

@@ -1,14 +1,14 @@
 {
- "total": 2793,
+ "total": 2788,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 620,
+   "pages": 619,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 14,
+    "ccyBand": 13,
     "band": 56,
     "feature": 205,
     "setting": 24,
@@ -26,7 +26,7 @@
     "italy": 94,
     "united-states": 47,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 38,
     "japan": 45,
     "poland": 14,
@@ -53,11 +53,11 @@
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 313,
+   "pages": 312,
    "by_kind": {
     "country": 22,
     "gband": 5,
-    "ccyBand": 14,
+    "ccyBand": 13,
     "band": 56,
     "setting": 24,
     "ptype": 11,
@@ -72,7 +72,7 @@
     "italy": 53,
     "united-states": 26,
     "denmark": 17,
-    "france": 16,
+    "france": 15,
     "sweden": 19,
     "japan": 22,
     "poland": 6,
@@ -99,12 +99,12 @@
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 620,
+   "pages": 619,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 14,
+    "ccyBand": 13,
     "band": 56,
     "feature": 205,
     "setting": 24,
@@ -122,7 +122,7 @@
     "italy": 94,
     "united-states": 47,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 38,
     "japan": 45,
     "poland": 14,
@@ -149,12 +149,12 @@
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 620,
+   "pages": 619,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 14,
+    "ccyBand": 13,
     "band": 56,
     "feature": 205,
     "setting": 24,
@@ -172,7 +172,7 @@
     "italy": 94,
     "united-states": 47,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 38,
     "japan": 45,
     "poland": 14,
@@ -199,12 +199,12 @@
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 620,
+   "pages": 619,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 14,
+    "ccyBand": 13,
     "band": 56,
     "feature": 205,
     "setting": 24,
@@ -222,7 +222,7 @@
     "italy": 94,
     "united-states": 47,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 38,
     "japan": 45,
     "poland": 14,
@@ -250,8 +250,8 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 620,
-  "spanish_pages_linked": 620
+  "english_pages_linked": 619,
+  "spanish_pages_linked": 619
  },
  "home_pages_linked": 1204,
  "failures": []
