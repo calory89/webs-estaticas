@@ -13,7 +13,7 @@
   function fmt(n){ return (n || 0).toLocaleString('en'); }
   function ok(c, k){ var x = c.checks || {}; return k === 'permit' ? x.permit === 2 : k === 'escrow' ? x.escrow === true : k === 'progress' ? x.progress != null : !!x[k]; }
   function share(C, k){ return C.length ? C.filter(function(c){ return ok(c, k); }).length / C.length : 0; }
-  function mlink(m){ return '/m/?market=' + encodeURIComponent(m); }
+  function mlink(m){ return '/m/' + encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-')) + '/'; }   // n33a: clean market path (the ?market= form answers 301 to it)
   function clink(c){ return '/m/?country=' + encodeURIComponent(c); }
   function overdue(c){ return (c.overdue || 0) > 0 || (c.delay || 0) > 0; }
   function contra(c){ return ((c.claims || {}).contradicted || 0) > 0; }
@@ -114,7 +114,7 @@
   }
 
   function renderIndex(d, miss){
-    var C = d.cases || [], G = {};
+    var C = (d.cases || []).filter(function(c){ return !/sumba|eco\s*beach|equinox/i.test(String(c.market) + ' ' + String(c.name || '')); }), G = {};   // n33a: Sumba only in the transparency ranking
     C.forEach(function(c){ var g = G[c.country] = G[c.country] || {}; g[c.market] = (g[c.market] || 0) + 1; });
     var cs = Object.keys(G).sort();
     var nm = 0; cs.forEach(function(c){ nm += Object.keys(G[c]).length; });

@@ -135,6 +135,24 @@ export function dataLd(path) {
   return '<script type="application/ld+json">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>';
 }
 
+// item 87: /m/ built its whole list in the browser ("Loading the latest data" without JavaScript). The same list (markets by country,
+// counts from /data/bali-cases.json) is now in the HTML; /m/m.js still redraws it after load. Sumba is left out (transparency ranking only).
+let CS = null, CS_AT = 0;
+const slugM = m => encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-'));
+export async function mIndex(env, r) {
+  try {
+    if (!CS || Date.now() - CS_AT > 6e5) { const q = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/bali-cases.json')); if (q.ok) { CS = (await q.json()).cases || []; CS_AT = Date.now(); } }
+    if (!CS || !CS.length) return r;
+    const G = {}; let n = 0;
+    for (const c of CS) { if (!c.market || !c.country || COI.test(c.market + ' ' + (c.name || ''))) continue; n++; const g = G[c.country] = G[c.country] || {}; g[c.market] = (g[c.market] || 0) + 1; }
+    const cs = Object.keys(G).sort(), nm = cs.reduce((a, c) => a + Object.keys(G[c]).length, 0);
+    const root = '<p class="eyebrow">Market files</p><h1 id="mk-h1">Every off-plan market we track</h1><p class="lead">' + nf(n, 'en') + ' projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>';
+    const body = '<section class="mk-sec"><div class="wrap"><h2>Markets by country</h2><div class="mk-grp">' + cs.map(c => { const ms = Object.keys(G[c]).sort(), tot = ms.reduce((s, m) => s + G[c][m], 0);
+      return '<section><h3>' + esc(c) + ' <small style="color:var(--muted);font-weight:600">' + tot + '</small></h3><ul class="mk-mk">' + ms.map(m => '<li><a href="/m/' + slugM(m) + '/">' + esc(m) + ' <small>' + G[c][m] + '</small></a></li>').join('') + '</ul></section>'; }).join('') + '</div></div></section>';
+    return new HTMLRewriter().on('#mk-root', { element(e) { e.setInnerContent(root, { html: true }); } }).on('#mk-body', { element(e) { e.setInnerContent(body, { html: true }); } }).transform(r);
+  } catch (e) { return r; }
+}
+
 export async function handle(req, u, env, ctx, shell) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
   const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?delays(\/?)$/.exec(u.pathname); if (!m) return null;
