@@ -1,10 +1,11 @@
 {
  "version": "seo-validation-1",
- "checked": "2026-11-20 12:58 UTC",
+ "checked": "2026-11-20 13:03 UTC",
  "note": "The addresses behind each Search Console validation request of 20 Nov 2026, with the answer kolaboro.com gives now (status code, and noindex where it applies).",
  "lists": [
   {
    "name": "API answers out of the index (X-Robots-Tag: noindex)",
+   "n": 5,
    "urls": [
     {
      "url": "/api/open/build",
@@ -41,6 +42,7 @@
   },
   {
    "name": "Website check with a query (noindex)",
+   "n": 2,
    "urls": [
     {
      "url": "/check/?url=https://example.com",
@@ -59,6 +61,7 @@
   },
   {
    "name": "Ask the developer in other languages (301 to the English form)",
+   "n": 7,
    "urls": [
     {
      "url": "/es/ask-developer/?id=DXB-030",
@@ -106,37 +109,14 @@
    "now": "7 x 301"
   },
   {
-   "name": "Sumba query addresses (301 to the transparency ranking)",
-   "urls": [
-    {
-     "url": "/p/?id=SUM-001",
-     "status": 301,
-     "location": "/rankings/transparency/sumba/",
-     "x_robots_tag": "noindex"
-    },
-    {
-     "url": "/p/?id=SUM-002",
-     "status": 301,
-     "location": "/rankings/transparency/sumba/",
-     "x_robots_tag": "noindex"
-    },
-    {
-     "url": "/es/p/?id=SUM-003",
-     "status": 301,
-     "location": "/es/rankings/transparency/sumba/",
-     "x_robots_tag": "noindex"
-    },
-    {
-     "url": "/m/?market=Sumba",
-     "status": 301,
-     "location": "/rankings/transparency/sumba/",
-     "x_robots_tag": "noindex"
-    }
-   ],
+   "name": "Query addresses of the conflict-of-interest market (301 to its transparency ranking; addresses not listed here)",
+   "n": 4,
+   "urls": [],
    "now": "4 x 301"
   },
   {
    "name": "Old /p/?id= addresses (301 to the project page)",
+   "n": 6,
    "urls": [
     {
      "url": "/p/?id=KHM-001",
@@ -178,7 +158,8 @@
    "now": "6 x 301"
   },
   {
-   "name": "Search Console 404s (301 to the nearest page or 410)",
+   "name": "Search Console 404s (301 to the nearest page, 410, or 405 for endpoints our pages POST to)",
+   "n": 8,
    "urls": [
     {
      "url": "/x/",
@@ -218,7 +199,7 @@
     },
     {
      "url": "/api/kb/analyze",
-     "status": 410,
+     "status": 405,
      "location": null,
      "x_robots_tag": "noindex"
     },
@@ -229,10 +210,11 @@
      "x_robots_tag": "noindex"
     }
    ],
-   "now": "5 x 301, 3 x 410"
+   "now": "5 x 301, 1 x 405, 2 x 410"
   },
   {
    "name": "Unknown ids (real 404, not an empty page)",
+   "n": 6,
    "urls": [
     {
      "url": "/p/?id=ARE-001",
