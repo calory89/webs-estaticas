@@ -86,6 +86,11 @@ jobs:
               [ -f "$O/press/$f" ] || continue
               H=$(git hash-object -w "$O/press/$f"); git update-index --add --cacheinfo 100644,$H,$K/press/monthly/$f
             done
+            # n33b: frozen monthly edition of the transparency ranking by market (only written when the press release is regenerated)
+            for f in $(ls "$O/tm" 2>/dev/null); do
+              git cat-file -e "$P:$K/data/transparency-monthly/$f" 2>/dev/null && continue   # an edition, once published, never changes
+              H=$(git hash-object -w "$O/tm/$f"); git update-index --add --cacheinfo 100644,$H,$K/data/transparency-monthly/$f
+            done
             T=$(git write-tree); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: delay index and on-time odds $(date -u +%F)")

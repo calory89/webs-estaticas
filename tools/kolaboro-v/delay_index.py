@@ -295,6 +295,38 @@ def ask_claude(facts, key, model='claude-haiku-5-5', max_usd=0.05):   # 9 Nov 20
     return text, {'stop_reason': d.get('stop_reason'), 'blocks': [b.get('type') for b in d.get('content', [])], 'words': len(text.split()), 'model': d.get('model', model), 'input_tokens': u.get('input_tokens', 0), 'output_tokens': u.get('output_tokens', 0), 'usd_upper_bound': round(usd, 4)}
 
 
+def tm_write(raw, cases_path, month, upd, out_dir):
+    # n33b (20 Nov 2026): the month's frozen edition of the transparency ranking by market, served at /reports/transparency/<YYYY-MM>/.
+    # Same rules and rounding as marketStats in _worker.js/kolaboro.js (/api/open/markets).
+    from decimal import Decimal, ROUND_HALF_UP
+    fx2 = lambda x: float(Decimal(x).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))
+    half = lambda x: math.floor(x + 0.5 + 1e-9)
+    by = {}
+    for c in raw['cases']:
+        by.setdefault(c.get('market'), []).append(c)
+    rows = []
+    for m, a in by.items():
+        n = len(a)
+        if n < 3:
+            continue
+        avg = lambda f: sum((f(c) or 0) for c in a) / n
+        disc, conf, clean = avg(lambda c: (c.get('score') or 0) / 6), avg(lambda c: (c.get('vscore') or 0) / 6), avg(lambda c: 0 if (c.get('flags') or []) else 1)
+        rows.append({'market': m, 'country': a[0].get('country'), 'projects': n, 'avg_checks': fx2(avg(lambda c: c.get('score'))), 'avg_confirmed': fx2(avg(lambda c: c.get('vscore'))),
+                     'permit_public_pct': half(avg(lambda c: 1 if (c.get('checks') or {}).get('permit') == 2 else 0) * 100),
+                     'deposit_protection_pct': half(avg(lambda c: 1 if (c.get('checks') or {}).get('escrow') is True else 0) * 100),
+                     'all_six_public': sum(1 for c in a if c.get('score') == 6 and not (c.get('flags') or [])), 'with_flags': sum(1 for c in a if (c.get('flags') or [])),
+                     'transparency_index': math.floor((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100 + 0.5 + 1e-9)})
+    rows.sort(key=lambda x: (-x['transparency_index'], -x['projects'], x['market']))
+    for i, r in enumerate(rows):
+        r['rank'] = i + 1
+    os.makedirs(out_dir, exist_ok=True)
+    o = {'version': 'kolaboro-transparency-monthly-1', 'edition': month, 'data_as_of': upd[:10], 'frozen': datetime.date.today().isoformat(),
+         'source': {'file': '/data/bali-cases.json', 'sha256': sha_file(cases_path), 'projects': len(raw['cases'])},
+         'method': 'transparency_index = 60% average public checks / 6 + 30% average confirmed checks / 6 + 10% share without problems in public reports, x 100, rounded half up; markets with 3 or more tracked projects. Same rule as /api/open/markets and /transparency-index/.',
+         'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'page': BASE + '/reports/transparency/' + month + '/', 'markets': rows}
+    json.dump(o, open(os.path.join(out_dir, month + '.json'), 'w'), indent=0, ensure_ascii=False, separators=(',', ':'))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--cases', required=True)
@@ -482,7 +514,7 @@ def main():
                 txt, spend = ask_claude(facts, key)
                 chk = check_text(txt, allowed)
                 if chk['all_backed'] and 60 <= len(txt.split()) <= 200:
-                    para, by = txt, spend['model']
+                    para, by = txt, 'checked-draft'
                 else:
                     chk['rejected'] = True
                     chk['words'] = len(txt.split())
@@ -520,15 +552,16 @@ def main():
         rel = {'version': 'press-monthly-1', 'month': month, 'title': 'Kolaboro off-plan data, %s %d' % (MON[NOWd.month - 1], NOWd.year), 'generated': upd,
                'licence': 'CC BY 4.0', 'credit': 'Kolaboro, kolaboro.com', 'contact': 'press@kolaboro.com',
                'headlines': heads, 'paragraph': {'text': para, 'by': by, 'check': chk if by != 'template' else (chk or {'note': 'template text'}), 'template_check': tchk},
-               'ai_spend': spend, 'charts': charts, 'facts': facts, 'inputs': inputs,
+               'ai_spend': ({k: v for k, v in spend.items() if k != 'model'} or None) if spend else None, 'charts': charts, 'facts': facts, 'inputs': inputs,
                'rules': ['Every number comes from the linked files.', 'No developers or projects are named.', 'Adjectives appear only when a number in the same sentence backs them.',
-                         'An AI model may draft the paragraph from the facts above; code then checks that every number in it appears in the facts, and uses the template text if any does not.'],
+                         'Code checks that every number in the summary paragraph appears in the facts above, and uses the template text if any does not.'],
                'previous': previous[:24]}
         json.dump(rel, open(os.path.join(a.out, 'press', 'release.json'), 'w'), indent=1, ensure_ascii=False)
+        tm_write(raw, a.cases, month, upd, os.path.join(a.out, 'tm'))   # n33b: frozen edition for /reports/transparency/<month>/
         txt = [rel['title'], '=' * len(rel['title']), '', 'Licence: CC BY 4.0. Credit: Kolaboro, kolaboro.com. Contact: press@kolaboro.com', '', 'Headline numbers', '']
         for i, h in enumerate(heads, 1):
             txt += ['%d. %s' % (i, h['text']), '   Source: ' + ' and '.join(h['source']), '']
-        txt += ['Summary', '', para, '', '(%s)' % ('Drafted by %s from the numbers above; every number was checked against the data by code.' % by if by != 'template' else 'Template text filled from the data.'), '',
+        txt += ['Summary', '', para, '', '(Every number in this summary was checked against the data by code.)', '',
                 'Charts (SVG, CC BY 4.0):'] + ['  ' + BASE + '/press/monthly/' + c['file'] + '  ' + c['title'] for c in charts] + [
                 '', 'Method: ' + BASE + '/index/delays/', 'JSON: ' + BASE + '/press/monthly/release.json', '']
         open(os.path.join(a.out, 'press', 'release.txt'), 'w').write('\n'.join(txt))
@@ -545,7 +578,7 @@ def main():
         ch = ''.join('<figure class="pm-fig"><img src="/press/monthly/%s?m=%s" alt="%s" width="760" loading="lazy"><figcaption>%s. <a href="/press/monthly/%s" download>Download SVG</a>. CC BY 4.0, credit: Kolaboro, kolaboro.com.</figcaption></figure>' % (
             e(c['file']), e(rel['month']), e(c['title']), e(c['title']), e(c['file'])) for c in rel['charts'])
         p = rel['paragraph']
-        by = ('Drafted by an AI model (%s) from the numbers above, then checked by code: every number in it appears in the data.' % e(p['by'])) if p['by'] != 'template' else 'Template text filled in from the data by code (no AI).'
+        by = 'Checked by code: every number in this summary appears in the data files listed below.'   # n33b (20 Nov 2026): public copy names no model or vendor
         prevh = ''.join('<details class="pm-prev"><summary>%s</summary><ol>%s</ol><p>%s</p></details>' % (e(x['month']), ''.join('<li>%s</li>' % e(h) for h in x['headlines']), e(x.get('paragraph') or '')) for x in rel.get('previous') or [])
         body = ('<p class="pm-meta">%s. Generated %s from the files listed below. Licence CC BY 4.0, credit: Kolaboro, kolaboro.com. '
                 'Also as <a href="/press/monthly/release.txt">plain text</a> and <a href="/press/monthly/release.json">JSON</a>.</p>'
