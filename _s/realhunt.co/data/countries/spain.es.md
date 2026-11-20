@@ -1,6 +1,6 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 186 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 186 casas es de 96.000 € (1.208 € por m², calculado con las 182 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 190 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 190 casas es de 97.000 € (1.217 € por m², calculado con las 186 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 186 |
-| Precio de salida mediano | 96.000 € |
-| Precio mediano por m² | 1.208 € (182 casas de superficie conocida) |
+| Casas en RealHunt | 190 |
+| Precio de salida mediano | 97.000 € |
+| Precio mediano por m² | 1.217 € (186 casas de superficie conocida) |
 | Superficie mediana | 85 m² |
 | La más barata y la más cara | 38.000 € · 348.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/spain
 
-## Las 186 casas, de mejor a peor nota
+## Las 190 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios con terraza en Alpujarra de la Sierra
 
@@ -1424,6 +1424,14 @@ Chalé reformado recientemente listo para entrar a vivir. Amplio de 130 m² dist
 
 https://realhunt.co/es/deal/live-pisos-4ds0f1
 
+### Piso de dos dormitorios en la última planta con terraza privada en la azotea en Cabo Blanco, Tenerife
+
+196.000 € · Cabo Blanco, Arona, Tenerife · 82 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
+
+Un piso luminoso de 82 m² en la última planta de un pequeño bloque en Cabo Blanco, una ciudad canaria local aproximadamente 10 minutos en coche desde la TF-1 y los complejos turísticos de la costa sur de Los Cristianos. Salón y cocina moderna de planta abierta, dos buenos dormitorios con armarios empotrados, un baño con ducha a ras de suelo y una sala de utilidades. La mejor parte es una terraza privada en la azotea detrás de su propia puerta, amueblada con tumbonas y una mesa, con vistas a las montañas. Se vende amueblado y descrito como llave en mano, con un supermercado, tiendas y bares cercanos. Las cuotas comunitarias no se indican.
+
+https://realhunt.co/es/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k
+
 ### Piso de tres dormitorios luminoso y reformado con cocina moderna en Bellavista, Sevilla
 
 199.000 € · Bellavista, Sevilla · 100 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-08
@@ -1488,6 +1496,14 @@ https://realhunt.co/es/deal/es-costa-del-silencio-199k-024468
 
 https://realhunt.co/es/deal/es-biar-85k-66151
 
+### Casa adosada completamente renovada sin gastos de comunidad en Roquetes, cerca de Tortosa
+
+120.000 € · Raval de Crist, Roquetes, Tarragona · 82 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa adosada de 1920 en la tranquila zona de Raval de Crist de Roquetes, junto a Tortosa en el sur de Cataluña, completamente renovada y lista para entrar a vivir. 82 m² de espacio utilizable en tres plantas: salón, comedor y cocina equipada que se abre a un pequeño patio amurallado, luego un dormitorio doble y uno individual, un balcón orientado al sur y un cuarto de baño con bañera de hidromasaje, más una habitación semisubterránea para oficina o gimnasio con su propio aseo. Se han mantenido las vigas y muros de piedra. Aire acondicionado reversible e internet de fibra. El anuncio afirma cero gastos de comunidad.
+
+https://realhunt.co/es/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k
+
 ### Apartamento de un dormitorio con terraza soleada, piscina compartida y vistas al mar en Almuñécar
 
 149.000 € · Almuñécar, Granada · 45 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-18
@@ -1512,6 +1528,14 @@ Chalet independiente construido en 2025 y casi sin usar, en la urbanización Cos
 
 https://realhunt.co/es/deal/es-san-martin-de-valdeiglesias-175k-710397
 
+### Piso de última planta renovado frente al océano y el Teide en Mesa del Mar, Tenerife
+
+185.980 € · Mesa del Mar, Tacoronte, Tenerife · 51 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-11-20
+
+Un piso de un dormitorio en la décima y última planta de un edificio en primera línea de playa en Mesa del Mar en la costa norte de Tenerife, junto a la playa y piscinas naturales de agua de mar. Las fotos muestran océano abierto desde las ventanas y el Teide desde el dormitorio. El anuncio dice que la fontanería, los cables, el cuarto de baño y la cocina fueron renovados recientemente, y se vende amueblado. Acceso por ascensor. El edificio está siendo repintado; el propietario ya ha pagado ese gasto. La piscina comunitaria está cerrada sin fecha de reapertura. Aproximadamente 51 m². Los gastos mensuales de comunidad no se especifican.
+
+https://realhunt.co/es/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k
+
 ### Casa de campo de 1 dormitorio con chimenea en O Saviñao
 
 80.000 € · O Saviñao, Lugo, Spain · 50 m² · 1 dormitorios · nota RealHunt 76 · añadida el 2026-10-01
@@ -1519,6 +1543,14 @@ https://realhunt.co/es/deal/es-san-martin-de-valdeiglesias-175k-710397
 80.000 € por 50 m² y 1 dormitorio en O Saviñao (Lugo), unos 1.600 €/m². Con chimenea. Para entrar a vivir: anunciado como casi nuevo y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-o-savinao-80k-20772
+
+### Casa de pueblo renovada con piscina propia en Benijófar, Costa Blanca
+
+195.000 € · Benijófar, Alicante · 66 m² · 2 dormitorios · nota RealHunt 76 · añadida el 2026-11-20
+
+Una casa de una planta en el centro de Benijófar, una pequeña ciudad en la Vega Baja tierra adentro desde el sur de la Costa Blanca, renovada y descrita como lista para entrar. Aproximadamente 66 m², orientada al sur, con un salón y cocina abiertos, dos dormitorios dobles con techos altos y vigas de madera, y un baño moderno. El patio privado vallado contiene una piscina de aproximadamente 18 m² y una terraza comedor, que es raro a este precio. Las tiendas, escuelas y servicios de salud están en la ciudad. Las cuotas comunitarias e impuestos anuales no se indican en el anuncio.
+
+https://realhunt.co/es/deal/es-benijofar-renovated-village-house-private-pool-195k
 
 ### Amplio duplex con ladrillo visto en el centro de Madrid
 

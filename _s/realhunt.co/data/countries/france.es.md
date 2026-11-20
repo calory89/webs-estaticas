@@ -1,6 +1,6 @@
 # Casas baratas en Francia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 45 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 45 casas es de 65.000 € (1.154 € por m², calculado con las 41 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 285.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 52 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 52 casas es de 69.900 € (1.175 € por m², calculado con las 48 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 285.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/france · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/france.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 45 |
-| Precio de salida mediano | 65.000 € |
-| Precio mediano por m² | 1.154 € (41 casas de superficie conocida) |
-| Superficie mediana | 74 m² |
+| Casas en RealHunt | 52 |
+| Precio de salida mediano | 69.900 € |
+| Precio mediano por m² | 1.175 € (48 casas de superficie conocida) |
+| Superficie mediana | 83 m² |
 | La más barata y la más cara | 39.000 € · 285.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 84 |
+| Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 7–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar propiedades en Francia sin restricciones importantes, y los compradores no comunitarios no necesitan permiso, aunque los trámites pueden llevar más tiempo. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto anual sobre bienes inmuebles (taxe foncière) que fijan las administraciones locales, y los propietarios de una segunda vivienda amueblada pagan además el impuesto de habitación (taxe d'habitation), que algunos municipios incrementan con un recargo del 5% al 60%. |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/france
 
-## Las 45 casas, de mejor a peor nota
+## Las 52 casas, de mejor a peor nota
 
 ### Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine
 
@@ -241,6 +241,14 @@ https://realhunt.co/es/deal/fr-bourmont-60k-q27mnf
 
 https://realhunt.co/es/deal/fr-mulhouse-60k-377472
 
+### Casa de pueblo de piedra de los años 1700 lista para entrar de 180 m² cerca de La Rochefoucauld, Charente
+
+189.000 € · Yvrac-et-Malleyrand, Charente · 180 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-20
+
+Aproximadamente 180 m² de casa de piedra antigua por 189.000 euros, aproximadamente 1.050 euros por m², y el anuncio dice que está lista para entrar. La planta baja tiene tres habitaciones de más de 30 m² cada una: un salón, una gran cocina con vigas de madera y un dormitorio con su propio cuarto de baño, así que puedes vivir en un solo nivel. Arriba hay un dormitorio de 34 m² con un cuarto de baño privado, una oficina de 23 m², un altillo y una terraza. Piedra vista, vigas antiguas y estufas. Jardín pequeño y fácil de mantener, cochera y taller. El pueblo está a 5 km de La Rochefoucauld y a 30 km de la estación de TGV de Angulema. Calificación energética D.
+
+https://realhunt.co/es/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k
+
 ### Casa con carácter y vistas panorámicas en Treignac
 
 66.600 € · Treignac, Corrèze · 88 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-05
@@ -296,6 +304,14 @@ https://realhunt.co/es/deal/fr-saint-etienne-60k-772580
 Casa de pueblo de 50 m² en la entrada del barrio histórico de Saint-Mathieu, con patio de luz: salón con cocina abierta, dormitorio principal con baño y aseo propios, y altillo arriba. Recién terminada, lista para vivir. Precio 60.000 €, unos 1.200 €/m².
 
 https://realhunt.co/es/deal/fr-perpignan-60k-990769
+
+### Casa adosada renovada con cocina nueva y aire acondicionado en Masseube, Gers
+
+69.500 € · Masseube, Gers · 70 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-20
+
+Una casa adosada renovada de 70 m² en Masseube por €69.500, menos de €1.000 por m², cerca de las tiendas y servicios. En la planta baja un salón de 25 m² se abre a una cocina completamente equipada, con un trastero y WC. En la planta superior hay dos dormitorios de 13 y 16 m², cada uno con su propia ducha y lavabo. El tejado fue rehecho en 2013, el ático está aislado y hay aire acondicionado reversible. Conectado a alcantarillado. Calificación energética C, buena para una casa antigua. Las fotos muestran suelos frescos, una cocina nueva y unidades de ducha limpias. No se menciona jardín.
+
+https://realhunt.co/es/deal/fr-masseube-gers-renovated-townhouse-70k
 
 ### Casa urbana renovada con patio central en el centro de La Charité-sur-Loire, Borgoña
 
@@ -377,6 +393,14 @@ En Espéraza, un pueblo animado con comercios a 15 minutos de Limoux, en el alto
 
 https://realhunt.co/es/deal/fr-esperaza-86k-sxd5p3
 
+### Casa de piedra renovada en el Canal du Nivernais en Champvert, Borgoña
+
+188.000 € · Champvert, Nièvre, Burgundy · 160 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-20
+
+Una casa de piedra en un pueblo con acceso directo al camino de sirga del Canal du Nivernais, renovada a lo largo de los años y vendida sin necesidad de obras. Alrededor de 160 m2 por 188.000 euros, así que menos de 1.200 euros por m2. Hay un salón de 50 m2 con estufa de pellets, una cocina equipada con isla, dos dormitorios grandes (uno en suite) y un estudio de 30 m2 en las antiguas cuadras. El tejado fue rehecho en 2024, la calefacción central de gas data de 2017 y la calificación energética es C. Jardín de 1.225 m2, a 5 minutos de Decize. Impuesto sobre la propiedad 890 euros anuales.
+
+https://realhunt.co/es/deal/fr-burgundy-champvert-canal-stone-house-188k
+
 ### Estudio reformado con balcón junto al metro Bagatelle, Toulouse
 
 59.500 € · Bagatelle, Toulouse · 30 m² · nota RealHunt 78 · añadida el 2026-10-13
@@ -385,6 +409,30 @@ https://realhunt.co/es/deal/fr-esperaza-86k-sxd5p3
 
 https://realhunt.co/es/deal/fr-toulouse-60k-120948
 
+### Casa de pueblo renovada con calificación energética B en el centro de Riez, Verdon
+
+159.000 € · Riez, Alpes-de-Haute-Provence, Provence · 91 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa de pueblo de 91 m² en una pequeña plaza en el centro de Riez, completamente renovada a los estándares actuales y con calificación B de energía, que es raro en una casa provenzal antigua. Tiene dos cocinas y zonas de estar en las plantas bajas, dos dormitorios (uno con su propia ducha), un cuarto de baño, aire acondicionado reversible en tres zonas y aproximadamente 50 m² de sótanos. Un pequeño patio detrás de una puerta de hierro forjado cabe una mesa. Tiendas, escuelas, un hospital y dos mercados semanales están en el pueblo, y el lago Sainte-Croix y las gargantas de Verdon están a minutos. Aproximadamente 1.750 euros por m².
+
+https://realhunt.co/es/deal/fr-provence-riez-renovated-village-house-dpe-b-159k
+
+### Casa de piedra bretona con invernadero cerca de las playas de Térénez en Plouezoc'h
+
+178.500 € · Plouezoc'h, Finistère, Brittany · 88 m² · 3 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa bretona de granito y pizarra a 5 minutos de las playas de Térénez y de la escuela de vela. Tiene 88 m² más un invernadero acristalado de 20 m² a lo largo del lado del jardín. En la planta baja hay una cocina con comedor, un salón comedor, un dormitorio y un cuarto de baño, así que es posible vivir en un solo nivel. Arriba hay dos dormitorios más y un espacio abierto para una oficina. La parcela es de aproximadamente 520 m² con aparcamiento. La cocina es moderna, pero las habitaciones de arriba conservan papeles pintados antiguos y el cuarto de baño está anticuado, así que planifica una remodelación. Calificación energética E.
+
+https://realhunt.co/es/deal/fr-plouezoch-stone-house-conservatory-near-terenez-178k
+
+### Casa de pueblo del Luberon renovada con bodega abovedada en Saint-Martin-de-Castillon
+
+210.000 € · Saint-Martin-de-Castillon, Vaucluse, Provence · 90 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa de pueblo completamente renovada de aproximadamente 90 m² en las colinas del Luberon, cotizada cerca del extremo inferior del rango de ventas locales por m² del portal. La cocina equipada se abre a una bodega de piedra abovedada y una pequeña terraza, el salón luminoso tiene una estufa de leña y vistas abiertas, y hay dos dormitorios, un cuarto de ducha moderno, dos aseos y una sala de utilidad. Las fotos muestran techos con vigas y acabados nuevos por todas partes. Las tiendas y la piscina del pueblo están a unos 400 metros de distancia. Pidiendo 210.000 euros.
+
+https://realhunt.co/es/deal/fr-provence-saint-martin-de-castillon-village-house-210k
+
 ### Piso de un dormitorio a cuatro minutos a pie de la estación de Grenoble
 
 59.000 € · Berriat, Grenoble · 33 m² · 1 dormitorios · nota RealHunt 76 · añadida el 2026-10-13
@@ -392,6 +440,14 @@ https://realhunt.co/es/deal/fr-toulouse-60k-120948
 33 m² en planta baja en la zona de Chorier-Berriat: salón con cocina, dormitorio aparte de 9,6 m² y baño con ducha, recién pintado y con suelos nuevos. La estación de Grenoble está a cuatro minutos a pie y seis líneas de autobús paran a cinco minutos. Certificado energético F (calefacción eléctrica). Precio 59.000 €, unos 1.777 €/m².
 
 https://realhunt.co/es/deal/fr-grenoble-59k-973013
+
+### Casa de piedra con orilla privada de río y construcciones anexas en Vendeuvre, Normandía
+
+205.000 € · Vendeuvre, Calvados, Normandy · 100 m² · 3 dormitorios · nota RealHunt 76 · añadida el 2026-11-20
+
+Una casa de piedra de 99,5 m² en una parcela cerrada de 1.545 m² que desciende hasta un río con riberas privadas. En la planta baja hay un salón con inserto de chimenea de leña, una cocina equipada y un cuarto de baño, y arriba tres dormitorios de 13 a 15 m². Ya hay cristalería doble, una bomba de calor aire-agua reciente y paneles solares instalados, y las construcciones anexas añaden aproximadamente 150 m² con dos garajes, un taller y una cochera. El anuncio dice que aún está por planificar algo de trabajo de acabado y refresco. Saint-Pierre-sur-Dives está a 7 minutos en coche. Impuesto predial 647 euros al año.
+
+https://realhunt.co/es/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
 
 ### Casa dúplex de 2009 con jardín privado en un pueblo termal
 

@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 - [59.000 € · Casa con dos viviendas, pozas en el río para bañarse y calefacción geotérmica](https://realhunt.co/es/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Suecia · nota 92 · 156 m² · 4 dorm.
 - [55.000 € · Casa de 1914 con vistas al lago, casa de invitados y garaje doble en 6.525 m²](https://realhunt.co/es/deal/DcaE8pfoH77) · Naggen, Medelpad, Suecia · nota 92 · 120 m² · 2 dorm.
 
-[Las 38 casas en Suecia](https://realhunt.co/es/homes/sweden)
+[Las 39 casas en Suecia](https://realhunt.co/es/homes/sweden)
 
 [Gastos, impuestos y fuentes de Suecia](https://realhunt.co/es/costs/sweden) · [Calculadora de gastos de compra para Suecia](https://realhunt.co/es/buying-costs/sweden) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -45,11 +45,11 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 - [Suecia vs España](https://realhunt.co/es/countries/spain-vs-sweden)
 - [Suecia vs Italia](https://realhunt.co/es/countries/italy-vs-sweden)
 - [Suecia vs Estados Unidos](https://realhunt.co/es/countries/sweden-vs-united-states)
-- [Suecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-sweden)
 - [Suecia vs Francia](https://realhunt.co/es/countries/france-vs-sweden)
+- [Suecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-sweden)
 - [Suecia vs Japón](https://realhunt.co/es/countries/japan-vs-sweden)
 - [Suecia vs Polonia](https://realhunt.co/es/countries/poland-vs-sweden)
-- [Suecia vs Alemania](https://realhunt.co/es/countries/germany-vs-sweden)
+- [Suecia vs Grecia](https://realhunt.co/es/countries/greece-vs-sweden)
 
 ### Fuentes
 

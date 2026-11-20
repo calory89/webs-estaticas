@@ -35,7 +35,7 @@ Tax on rental income: Long-term: 25% flat for non-residents; short-term (AL) und
 - [€125,000 · Detached five-bedroom house with garden, garage and central heating in Brunhoso, Mogadouro](https://realhunt.co/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · score 91 · 170 m² · 5 bed
 - [€100,000 · Five-bedroom house with garage and balconies in a Trás-os-Montes village near Miranda do Douro](https://realhunt.co/deal/pt-miranda-do-douro-100k-350867) · São Pedro da Silva, Miranda do Douro, Bragança · score 91 · 158 m² · 5 bed
 
-[All 18 homes in Portugal](https://realhunt.co/homes/portugal)
+[All 19 homes in Portugal](https://realhunt.co/homes/portugal)
 
 [Costs, taxes and sources for Portugal](https://realhunt.co/costs/portugal) · [Buying-cost calculator for Portugal](https://realhunt.co/buying-costs/portugal) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,8 +44,8 @@ Tax on rental income: Long-term: 25% flat for non-residents; short-term (AL) und
 - [Portugal vs Spain](https://realhunt.co/countries/portugal-vs-spain)
 - [Portugal vs Italy](https://realhunt.co/countries/italy-vs-portugal)
 - [Portugal vs United States](https://realhunt.co/countries/portugal-vs-united-states)
-- [Portugal vs Denmark](https://realhunt.co/countries/denmark-vs-portugal)
 - [Portugal vs France](https://realhunt.co/countries/france-vs-portugal)
+- [Portugal vs Denmark](https://realhunt.co/countries/denmark-vs-portugal)
 - [Portugal vs Sweden](https://realhunt.co/countries/portugal-vs-sweden)
 - [Portugal vs Japan](https://realhunt.co/countries/japan-vs-portugal)
 - [Portugal vs Poland](https://realhunt.co/countries/poland-vs-portugal)

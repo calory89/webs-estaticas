@@ -1,6 +1,6 @@
 # Casas baratas en Alemania: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 20 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 20 casas es de 55.000 € (1.053 € por m², calculado con las 20 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 60.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 21 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 21 casas es de 55.000 € (1.053 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/germany · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 20 |
+| Casas en RealHunt | 21 |
 | Precio de salida mediano | 55.000 € |
-| Precio mediano por m² | 1.053 € (20 casas de superficie conocida) |
+| Precio mediano por m² | 1.053 € (21 casas de superficie conocida) |
 | Superficie mediana | 51 m² |
-| La más barata y la más cara | 40.000 € · 60.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 81 |
+| La más barata y la más cara | 40.000 € · 199.000 € |
+| Nota RealHunt mediana (de 70 a 98) | 80 |
 | Impuestos y gastos de compra | 5–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones para que los extranjeros compren propiedades en Alemania, aunque los compradores no comunitarios normalmente necesitan un depósito mayor para obtener un préstamo. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan el impuesto sobre bienes inmuebles (Grundsteuer), que desde 2025 se calcula como valor tasado x tipo impositivo x un coeficiente municipal (Hebesatz) que fija cada municipio. |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/germany
 
-## Las 20 casas, de mejor a peor nota
+## Las 21 casas, de mejor a peor nota
 
 ### Ático soleado con balcón por 40.000 € en Chemnitz
 
@@ -168,6 +168,14 @@ https://realhunt.co/es/deal/de-wuppertal-50k-248035
 51,4 m² en la 1ª planta de un edificio de época bien cuidado: salón y dormitorio con tarima, cocina alicatada y baño con bañera, más trastero. Calle tranquila, libre ya; comisión fija de 2.380 €. Precio 55.000 €. unos 1.070 €/m².
 
 https://realhunt.co/es/deal/de-chemnitz-55k-074122
+
+### Apartamento a nivel del jardín con terraza sur a pasos de la playa en el fiordo de Flensburg
+
+199.000 € · Wassersleben, Harrislee, Schleswig-Holstein · 60 m² · 2 dormitorios · nota RealHunt 77 · añadida el 2026-11-20
+
+Un piso de tres habitaciones de aproximadamente 60 m² a pocos pasos de la playa y del fiordo de Flensburg. El salón con cocina abierta tiene ventanales del piso al techo que dan a una terraza orientada al sur con vistas a un jardín comunitario bien cuidado. Dos habitaciones más que funcionan como dormitorios u oficina, y el cuarto de baño tiene bañera. Persianas eléctricas en cada ventana, un cuarto de almacenamiento sin escalones en el sótano para bicicletas y equipo de playa, y una plaza de aparcamiento al frente. Está vacío y disponible pronto. Calefacción por distrito, clase energética C. Las cuotas mensuales del edificio no se indican en el anuncio.
+
+https://realhunt.co/es/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k
 
 ### Piso de dos habitaciones con balcón y plaza de garaje en Chemnitz
 

@@ -35,7 +35,7 @@ Impuesto sobre los ingresos por alquiler: Larga estancia: 25% fijo para no resid
 - [125.000 € · Casa independiente de cinco dormitorios con jardín, garaje y calefacción central en Brunhoso, Mogadouro](https://realhunt.co/es/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · nota 91 · 170 m² · 5 dorm.
 - [100.000 € · Casa de cinco dormitorios con garaje y balcones en una aldea de Trás-os-Montes cerca de Miranda do Douro](https://realhunt.co/es/deal/pt-miranda-do-douro-100k-350867) · São Pedro da Silva, Miranda do Douro, Bragança · nota 91 · 158 m² · 5 dorm.
 
-[Las 18 casas en Portugal](https://realhunt.co/es/homes/portugal)
+[Las 19 casas en Portugal](https://realhunt.co/es/homes/portugal)
 
 [Gastos, impuestos y fuentes de Portugal](https://realhunt.co/es/costs/portugal) · [Calculadora de gastos de compra para Portugal](https://realhunt.co/es/buying-costs/portugal) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,8 +44,8 @@ Impuesto sobre los ingresos por alquiler: Larga estancia: 25% fijo para no resid
 - [Portugal vs España](https://realhunt.co/es/countries/portugal-vs-spain)
 - [Portugal vs Italia](https://realhunt.co/es/countries/italy-vs-portugal)
 - [Portugal vs Estados Unidos](https://realhunt.co/es/countries/portugal-vs-united-states)
-- [Portugal vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-portugal)
 - [Portugal vs Francia](https://realhunt.co/es/countries/france-vs-portugal)
+- [Portugal vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-portugal)
 - [Portugal vs Suecia](https://realhunt.co/es/countries/portugal-vs-sweden)
 - [Portugal vs Japón](https://realhunt.co/es/countries/japan-vs-portugal)
 - [Portugal vs Polonia](https://realhunt.co/es/countries/poland-vs-portugal)

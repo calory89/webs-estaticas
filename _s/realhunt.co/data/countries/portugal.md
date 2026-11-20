@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 18 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 18 homes is €125,000 (€1,352 per m², from the 18 homes with a known size); the cheapest costs €48,000 and the most expensive €183,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 20 November 2026, RealHunt lists 19 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 19 homes is €125,000 (€1,352 per m², from the 19 homes with a known size); the cheapest costs €48,000 and the most expensive €183,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 18 |
+| Homes on RealHunt | 19 |
 | Median asking price | €125,000 |
-| Median price per m² | €1,352 (18 homes with a known size) |
-| Median size | 110 m² |
+| Median price per m² | €1,352 (19 homes with a known size) |
+| Median size | 100 m² |
 | Cheapest and most expensive | €48,000 · €183,000 |
 | Median RealHunt score (70 to 98) | 91 |
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 18 homes, best score first
+## The 19 homes, best score first
 
 ### Restored single-storey Alentejo house with reed ceilings near Mértola
 
@@ -173,6 +173,14 @@ https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k
 A granite village house rebuilt inside from top to bottom, about 5 km from the town of Tábua. The advert lists new windows, doors and shutters, new wiring and plumbing, rock-wool insulation on the inner walls, recessed lighting and a new fitted kitchen, so there is nothing left to do. Ground floor with open kitchen, living room and WC, and a first floor with three bedrooms, a full bathroom and a spare room for laundry or office. About 142 m2 of built area, 125 m2 useful. Energy class C, which is unusual for a stone house at this price.
 
 https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k
+
+### Renovated furnished cottage on 860 m2 of land in Lajes do Pico, Azores
+
+€179,000 · Silveira, Lajes do Pico, Azores · 84 m² · 1 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A fully renovated stone cottage in Silveira, 3 km from the old whaling town of Lajes on Pico island, sold furnished and equipped. 84 m2 of built area on two floors with a bedroom, living room, new fitted kitchen and modern shower room, plus air conditioning and fibre internet. Energy class C. It stands on 860 m2 of land with parking and fruit trees, all classed as urban, and the advert says about 388 m2 more could be built subject to permission. School 1 km away, Pico airport 30 minutes. Only one bedroom.
+
+https://realhunt.co/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k
 
 ### Renovated two-bedroom whitewashed cottage in Alcaria Ruiva, near Mértola, Alentejo
 

@@ -1,6 +1,6 @@
 # Cheap homes in Mexico: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 12 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 12 homes is €83,448 (€1,266 per m², from the 12 homes with a known size); the cheapest costs €50,575 and the most expensive €160,200. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 20 November 2026, RealHunt lists 14 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 14 homes is €86,100 (€1,266 per m², from the 14 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/mexico · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 12 |
-| Median asking price | €83,448 |
-| Median price per m² | €1,266 (12 homes with a known size) |
-| Median size | 71 m² |
-| Cheapest and most expensive | €50,575 · €160,200 |
+| Homes on RealHunt | 14 |
+| Median asking price | €86,100 |
+| Median price per m² | €1,266 (14 homes with a known size) |
+| Median size | 75 m² |
+| Cheapest and most expensive | €50,575 · €216,600 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 3.5–8% of the price (as of 2026) |
 | Can foreigners buy? | Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere. |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/mexico
 
-## The 12 homes, best score first
+## The 14 homes, best score first
 
 ### 2-bed apartment in San Pedro Tlaquepaque, Jalisco
 
@@ -113,6 +113,22 @@ https://realhunt.co/deal/mx-mazatlan-86k-809756
 89 m², 2 bed, 2 bath. Asking MXN 1,950,000.
 
 https://realhunt.co/deal/mazatlan-98621
+
+### Colonial house with a pool and garden in Barrio de Santiago, Mérida centre
+
+€216,600 · Mérida, Yucatán · 160 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-20
+
+Asking MX$4,450,000 (about €216,600) for Casa Ya'axche', a single-storey colonial house of 160 m² on a 279 m² plot in Barrio de Santiago, one of the old neighbourhoods of central Mérida. It keeps its stone walls, high ceilings and patterned cement tile floors. The living room, kitchen and dining area open onto a long swimming pool, and there are inner gardens with mature trees, a barbecue area and terrace. Both bedrooms have their own bathroom, air conditioning and fans, and there is a third bathroom by the patio, a covered parking space and a laundry room. The photos show it renovated and furnished.
+
+https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m
+
+### Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro
+
+€152,100 · El Marqués, Querétaro · 146 m² · 3 bedrooms · RealHunt score 85 · added 2026-11-20
+
+Asking MX$3,125,000 (about €152,100) for a three-year-old two-storey house of about 146 m² in Alleza Mirador, a gated estate in El Marqués on the edge of Querétaro city. It has three bedrooms, two full bathrooms and a guest toilet, an open kitchen with island and stainless appliances, a laundry room, fitted wardrobes and a covered back terrace with skylights. Two cars park in front. The advert describes it as in excellent condition, and the photos show a tidy, modern home. Residents share a swimming pool, gym, tennis and padel courts, play area and barbecue spots. Maintenance fee not stated.
+
+https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m
 
 ### 2-bed apartment in Mazatlán, Sinaloa
 

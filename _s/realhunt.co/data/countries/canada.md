@@ -1,6 +1,6 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 11 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 11 homes is €93,111 (€963 per m², from the 11 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 20 November 2026, RealHunt lists 14 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 14 homes is €99,323 (€963 per m², from the 14 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/canada · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 11 |
-| Median asking price | €93,111 |
-| Median price per m² | €963 (11 homes with a known size) |
-| Median size | 94 m² |
+| Homes on RealHunt | 14 |
+| Median asking price | €99,323 |
+| Median price per m² | €963 (14 homes with a known size) |
+| Median size | 107 m² |
 | Cheapest and most expensive | €55,842 · €190,700 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
@@ -51,7 +51,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/canada
 
-## The 11 homes, best score first
+## The 14 homes, best score first
 
 ### Updated 2-bed house in Glace Bay, Nova Scotia
 
@@ -84,6 +84,22 @@ https://realhunt.co/deal/bulyea-55842
 77 m² (824 sq ft), 2 bed, 1 bath, built 1926. Asking C$110,000. The listing mentions: bright kitchen, unique corner cabinet, access to attic space, excellent storage space.
 
 https://realhunt.co/deal/avonlea-68327
+
+### Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia
+
+€124,000 · Hillsburn, Nova Scotia · 106 m² · 3 bedrooms · RealHunt score 88 · added 2026-11-20
+
+Asking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy about 10 minutes from Annapolis Royal. The aerial photos show the sea just below. It is move-in ready, with a freshly painted exterior and new windows. The main floor has a large country kitchen with an island, a dining room, a living room with a pellet stove and a sea view, and a big bathroom with soaker tub and walk-in shower. Upstairs are the three bedrooms and a storage room. Outside are raised garden beds, a shed, a deck and a viewing platform.
+
+https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
+
+### Character 1888 house with harbour views and a koi pond garden in Pictou, Nova Scotia
+
+€159,000 · Pictou, Nova Scotia · 171 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-20
+
+Asking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the harbour and a short walk to downtown. The big costs are done: a newer metal roof, a propane furnace and some new plumbing. Inside are tall windows, wood floors, a fireplace, original crown mouldings and a curved staircase, with three bedrooms and one and a half bathrooms. The front veranda faces the street, and the back garden has a koi pond and a large barn. The kitchen is older but clean.
+
+https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k
 
 ### Renovated 2-bed house in Astle, New Brunswick
 
@@ -124,6 +140,14 @@ https://realhunt.co/deal/shearstown-99323
 83 m² (896 sq ft), 2 bed, 1 bath. Asking C$159,900. The listing mentions: new detached garage, updated decks, efficient ductless heat pump, completed landscaping.
 
 https://realhunt.co/deal/minto-99323
+
+### Updated character house with a wood stove and workshop in Liverpool, Nova Scotia
+
+€140,000 · Liverpool, Nova Scotia · 155 m² · 3 bedrooms · RealHunt score 85 · added 2026-11-20
+
+Asking C$220,000 (about €140,000) for a 1935 house of about 155 m², a few minutes from downtown Liverpool, a harbour town on Nova Scotia's South Shore about 90 minutes from Halifax. Much of the work is done: refinished original wood floors, a renovated kitchen with custom cabinets, wooden worktops and a cast-iron farmhouse sink, replastered and painted walls, updated wiring and plumbing, new gutters and a certified wood stove in the newly insulated living room. There is a bathroom with shower downstairs, a new half bath upstairs and a flexible two-plus-one bedroom layout. Outside are a large workshop and a stocked woodshed.
+
+https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k
 
 ### Four-bedroom house on about five acres in Saint Andrews, New Brunswick
 

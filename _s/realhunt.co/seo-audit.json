@@ -1,14 +1,14 @@
 {
  "summary": {
-  "pages": 4110,
-  "indexable": 3570,
-  "noindex": 540,
-  "noindex_by_polish": 460,
+  "pages": 4298,
+  "indexable": 3750,
+  "noindex": 548,
+  "noindex_by_polish": 462,
   "duplicate_homes": 2,
-  "title_over_60": 1229,
+  "title_over_60": 1330,
   "desc_over_155": 0,
-  "desc_under_120": 72,
-  "desc_out_of_range": 72,
+  "desc_under_120": 75,
+  "desc_out_of_range": 75,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 3552,
+  "pages_with_hreflang": 3732,
   "thin_under_150_words": 22,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 3475,
-  "redirects": 1289,
-  "moved_stubs": 250
+  "with_lastmod": 3700,
+  "redirects": 1372,
+  "moved_stubs": 278
  },
  "failures": [],
  "groups": {
@@ -130,16 +130,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1560,
+   "median_words": 1672,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 269,
-   "indexable": 269,
+   "pages": 290,
+   "indexable": 290,
    "noindex": 0,
-   "median_words": 1510,
+   "median_words": 1543,
    "title_over_60": 7,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -166,7 +166,7 @@
    "pages": 27,
    "indexable": 27,
    "noindex": 0,
-   "median_words": 445,
+   "median_words": 446,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -190,11 +190,11 @@
    "inlinks_under_3": 0
   },
   "/deal/*": {
-   "pages": 634,
-   "indexable": 633,
+   "pages": 684,
+   "indexable": 683,
    "noindex": 1,
-   "median_words": 890,
-   "title_over_60": 468,
+   "median_words": 898,
+   "title_over_60": 518,
    "desc_out_of_range": 18,
    "inlinks_under_3": 0
   },
@@ -328,7 +328,7 @@
    "pages": 268,
    "indexable": 268,
    "noindex": 0,
-   "median_words": 941,
+   "median_words": 944,
    "title_over_60": 47,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -337,17 +337,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1907,
+   "median_words": 2031,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 269,
-   "indexable": 269,
+   "pages": 290,
+   "indexable": 290,
    "noindex": 0,
-   "median_words": 1796,
-   "title_over_60": 77,
+   "median_words": 1822,
+   "title_over_60": 78,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -373,7 +373,7 @@
    "pages": 27,
    "indexable": 27,
    "noindex": 0,
-   "median_words": 507,
+   "median_words": 518,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -397,11 +397,11 @@
    "inlinks_under_3": 0
   },
   "/es/deal/*": {
-   "pages": 634,
-   "indexable": 633,
+   "pages": 684,
+   "indexable": 683,
    "noindex": 1,
-   "median_words": 293,
-   "title_over_60": 535,
+   "median_words": 304,
+   "title_over_60": 585,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -469,19 +469,19 @@
    "inlinks_under_3": 0
   },
   "/es/homes/*": {
-   "pages": 24,
-   "indexable": 18,
-   "noindex": 6,
-   "median_words": 2940,
+   "pages": 28,
+   "indexable": 19,
+   "noindex": 9,
+   "median_words": 2559,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 200,
-   "indexable": 200,
+   "pages": 216,
+   "indexable": 216,
    "noindex": 0,
-   "median_words": 1678,
+   "median_words": 1689,
    "title_over_60": 23,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -508,7 +508,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1429,
+   "median_words": 1435,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -544,7 +544,7 @@
    "pages": 15,
    "indexable": 15,
    "noindex": 0,
-   "median_words": 977,
+   "median_words": 999,
    "title_over_60": 2,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -562,7 +562,7 @@
    "pages": 10,
    "indexable": 10,
    "noindex": 0,
-   "median_words": 1328,
+   "median_words": 1427,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -571,15 +571,15 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 327,
+   "median_words": 361,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/sources/*": {
-   "pages": 31,
-   "indexable": 26,
-   "noindex": 5,
+   "pages": 34,
+   "indexable": 28,
+   "noindex": 6,
    "median_words": 477,
    "title_over_60": 0,
    "desc_out_of_range": 0,
@@ -598,7 +598,7 @@
    "pages": 12,
    "indexable": 12,
    "noindex": 0,
-   "median_words": 941,
+   "median_words": 948,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -670,7 +670,7 @@
    "pages": 23,
    "indexable": 23,
    "noindex": 0,
-   "median_words": 726,
+   "median_words": 738,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -694,21 +694,21 @@
    "inlinks_under_3": 0
   },
   "/homes/*": {
-   "pages": 24,
-   "indexable": 18,
-   "noindex": 6,
-   "median_words": 2553,
+   "pages": 28,
+   "indexable": 19,
+   "noindex": 9,
+   "median_words": 2309,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 200,
-   "indexable": 200,
+   "pages": 216,
+   "indexable": 216,
    "noindex": 0,
-   "median_words": 1456,
+   "median_words": 1463,
    "title_over_60": 1,
-   "desc_out_of_range": 21,
+   "desc_out_of_range": 24,
    "inlinks_under_3": 0
   },
   "/insider": {
@@ -778,7 +778,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1245,
+   "median_words": 1222,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -859,15 +859,15 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 323,
+   "median_words": 357,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/sources/*": {
-   "pages": 31,
-   "indexable": 26,
-   "noindex": 5,
+   "pages": 34,
+   "indexable": 28,
+   "noindex": 6,
    "median_words": 409,
    "title_over_60": 0,
    "desc_out_of_range": 0,
@@ -957,7 +957,7 @@
  },
  "noindex_by_polish": {
   "app screen": 5,
-  "portal list": 10,
+  "portal list": 12,
   "form, contract or demo": 4,
   "home finder, city copy": 12,
   "legal page": 4,
@@ -967,9 +967,9 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 3570,
+   "pages with JSON-LD changed": 3750,
    "ItemList: items removed or renumbered": 10,
-   "RealEstateListing: datePosted added": 634,
+   "RealEstateListing: datePosted added": 684,
    "Article: author, date, headline or image missing": 52
   },
   "missing": {}
@@ -1043,24 +1043,24 @@
    "/guide",
    "/help-buying",
    "/homes/bulgaria/kavarna-black-sea",
+   "/homes/canada/atlantic-canada/under-100000",
+   "/homes/canada/atlantic-canada/under-150000",
    "/homes/denmark/4-bedroom",
    "/homes/germany/chemnitz/under-50000",
    "/homes/italy/southern-italy/under-100000",
+   "/homes/italy/southern-italy/under-150000",
    "/homes/netherlands/2-bedroom",
    "/homes/netherlands/3-bedroom",
    "/homes/spain/4-bedroom",
    "/homes/spain/alicante/under-100000",
    "/homes/spain/alicante/under-150000",
-   "/homes/spain/alicante/under-200000",
    "/homes/spain/granada/under-100000",
    "/homes/spain/madrid/under-200000",
    "/homes/spain/murcia/under-100000",
    "/homes/sweden/4-bedroom",
    "/homes/united-kingdom/under-150000",
-   "/homes/united-states/3-bedroom",
-   "/homes/united-states/under-100000",
-   "/homes/united-states/under-150000",
-   "... 12 more"
+   "/homes/united-kingdom/under-200000",
+   "... 15 more"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -1123,7 +1123,7 @@
    "/deal/DZzpJ7UDSZB",
    "/deal/Da7vZIFDIuo",
    "/deal/Db59YYrjN5h",
-   "... 1169 more"
+   "... 1270 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1131,35 +1131,35 @@
   ]
  },
  "spanish": {
-  "twins": 1034,
+  "twins": 1075,
   "groups": {
    "homes": {
-    "pages": 634,
-    "twins": 634,
+    "pages": 684,
+    "twins": 684,
     "words": 0,
     "english": 0,
-    "by_hand": 634,
+    "by_hand": 684,
     "spanish_pct": 0
    },
    "places": {
-    "pages": 488,
-    "twins": 488,
-    "words": 1017868,
+    "pages": 526,
+    "twins": 526,
+    "words": 1110167,
     "english": 0,
     "spanish_pct": 100
    },
    "pages": {
     "pages": 41,
     "twins": 8,
-    "words": 2728,
+    "words": 2735,
     "english": 418,
     "by_hand": 2,
-    "spanish_pct": 84.68
+    "spanish_pct": 84.72
    },
    "content": {
-    "pages": 583,
-    "twins": 582,
-    "words": 446661,
+    "pages": 586,
+    "twins": 585,
+    "words": 449791,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1175,17 +1175,18 @@
  },
  "tech": {
   "summary": {
-   "checked": 4110,
-   "indexable": 3570,
+   "checked": 4298,
+   "indexable": 3750,
    "max_depth": 3,
-   "titles_changed_since_last_build": 1,
+   "titles_changed_since_last_build": 325,
    "external_link_hosts": 315,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 5,
    "year_in_title": 2,
-   "near_identical_pages": 521,
+   "near_identical_pages": 524,
    "region_used_as_country": 2,
+   "title_changed_twice_in_28_days": 207,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1220,18 +1221,16 @@
    ],
    "near_identical_pages": [
     "/can-i-buy/american-in-greece ~ /can-i-buy/canadian-in-greece (92%)",
-    "/can-i-buy/british-in-canada ~ /can-i-buy/danish-in-canada (92%)",
-    "/can-i-buy/british-in-canada ~ /can-i-buy/dutch-in-canada (94%)",
-    "/can-i-buy/british-in-canada ~ /can-i-buy/french-in-canada (95%)",
-    "/can-i-buy/british-in-canada ~ /can-i-buy/irish-in-canada (95%)",
-    "/can-i-buy/british-in-canada ~ /can-i-buy/swedish-in-canada (92%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/dutch-in-canada (92%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/french-in-canada (94%)",
+    "/can-i-buy/british-in-canada ~ /can-i-buy/irish-in-canada (94%)",
     "/can-i-buy/british-in-denmark ~ /can-i-buy/canadian-in-denmark (92%)",
     "/can-i-buy/british-in-greece ~ /can-i-buy/canadian-in-greece (94%)",
     "/can-i-buy/british-in-sweden ~ /can-i-buy/canadian-in-sweden (92%)",
     "/can-i-buy/british-in-switzerland ~ /can-i-buy/canadian-in-switzerland (94%)",
     "/can-i-buy/british-in-united-states ~ /can-i-buy/dutch-in-united-states (92%)",
     "/can-i-buy/british-in-united-states ~ /can-i-buy/french-in-united-states (95%)",
-    "/can-i-buy/british-in-united-states ~ /can-i-buy/german-in-united-states (92%)",
+    "/can-i-buy/british-in-united-states ~ /can-i-buy/german-in-united-states (94%)",
     "/can-i-buy/british-in-united-states ~ /can-i-buy/irish-in-united-states (95%)",
     "/can-i-buy/british-in-united-states ~ /can-i-buy/swedish-in-united-states (94%)",
     "/can-i-buy/canadian-in-dominican-republic ~ /can-i-buy/danish-in-dominican-republic (92%)",
@@ -1259,23 +1258,68 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/irish-in-cyprus (97%)",
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/italian-in-cyprus (94%)",
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
-    "... 481 more"
+    "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
+    "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
+    "... 484 more"
    ],
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/by-the-sea: Cheap homes by the sea (138, from €19,320) · RealHunt",
+    "/cheap-houses/cabins-and-cottages: Cheap cabins and cottages (43, from €7,400) · RealHunt",
+    "/cheap-houses/houses-under-100000-in-france: Cheap houses for sale in France under €100,000 (9)",
+    "/cheap-houses/in-the-mountains: Cheap homes in the mountains (34, from €7,400) · RealHunt",
+    "/cheap-houses/in-the-mountains-in-spain: Cheap homes in the mountains in Spain (20, from €59,000)",
+    "/cheap-houses/low-community-fee: Homes with a low community fee (11, from €90,600) · RealHunt",
+    "/cheap-houses/most-space-for-the-money-in-japan: The 17 houses with the most space for the money in Japan",
+    "/cheap-houses/most-space-for-the-money-in-sweden: The 20 homes with the most space for the money in Sweden",
+    "/cheap-houses/near-alicante: Cheap homes for sale within 100 km of Alicante (39)",
+    "/cheap-houses/near-an-airport: Homes within 30 km of an airport (205, from €10,240)",
+    "/cheap-houses/near-an-airport-in-italy: Cheap homes within 30 km of an airport in Italy (18)",
+    "/cheap-houses/near-an-airport-in-spain: Homes within 30 km of an airport in Spain (47, from €52,000)",
+    "/cheap-houses/near-an-airport-in-united-states: Homes within 30 km of an airport in the United States (34)",
+    "/cheap-houses/new-this-month: Homes added in the last 30 days (175, from €7,400)",
+    "/cheap-houses/new-this-month-in-greece: Homes added in the last 30 days in Greece (10, from €85,000)",
+    "/cheap-houses/new-this-month-in-italy: Homes added in the last 30 days in Italy (26, from €22,000)",
+    "/cheap-houses/new-this-month-in-spain: Homes added in the last 30 days in Spain (29, from €63,000)",
+    "/cheap-houses/new-this-month-in-united-states: Homes added in the last 30 days in the United States (35)",
+    "/cheap-houses/on-an-island: Homes on an island (60, from €30,000) · RealHunt",
+    "/cheap-houses/on-an-island-in-greece: Houses on an island in Greece (14, from €68,000) · RealHunt",
+    "/cheap-houses/on-an-island-in-italy: Cheap homes on an island in Italy (13, from €30,000)",
+    "/cheap-houses/score-90-plus: Cheap homes scoring 90 or more (120, from €7,400) · RealHunt",
+    "/cheap-houses/score-90-plus-in-sweden: Cheap homes scoring 90 or more in Sweden (9, from €22,000)",
+    "/cheap-houses/score-90-plus-in-united-states: Houses scoring 90 or more in the United States (8)",
+    "/cheap-houses/single-storey: Single-storey houses (30, from €10,240) · RealHunt",
+    "/cheap-houses/single-storey-in-spain: Single-storey houses in Spain (6, from €125,000) · RealHunt",
+    "/cheap-houses/stone-houses: Stone houses (65, from €12,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-france: Stone houses in France (14, from €46,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-greece: Stone houses in Greece (13, from €68,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-italy: Cheap stone houses in Italy (21, from €12,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-spain: Stone houses in Spain (5, from €63,000) · RealHunt",
+    "/cheap-houses/turnkey: Cheap move-in ready homes (201, from €15,930) · RealHunt",
+    "/cheap-houses/turnkey-in-france: Move-in ready homes in France (12, from €59,500) · RealHunt",
+    "/cheap-houses/turnkey-in-greece: Cheap move-in ready houses in Greece (8, from €68,000)",
+    "/cheap-houses/turnkey-in-italy: Move-in ready homes in Italy (15, from €30,000) · RealHunt",
+    "/cheap-houses/turnkey-in-spain: Cheap move-in ready homes in Spain (92, from €39,000)",
+    "/cheap-houses/turnkey-in-united-states: Move-in ready homes in the United States (12, from €82,875)",
+    "/cheap-houses/under-100000: Cheap houses for sale under €100,000 (368, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (297, from €7,400)",
+    "/cheap-houses/under-100000-dollars-in-sweden: Cheap homes for sale in Sweden under $100,000 (32)",
+    "... 167 more"
    ]
   },
   "depth": {
    "0": 2,
-   "1": 132,
-   "2": 3071,
-   "3": 365
+   "1": 134,
+   "2": 3235,
+   "3": 379
   },
   "noindex": {
    "app screen": 5,
-   "set by its template": 78,
-   "portal list": 10,
+   "set by its template": 84,
+   "portal list": 12,
    "form, contract or demo": 4,
    "home finder, city copy": 12,
    "legal page": 4,
@@ -1306,7 +1350,7 @@
     },
     "deal": {
      "path": "/deal/DZ-9LczExWp",
-     "html_kb": 11.3,
+     "html_kb": 11.4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 78.2,
      "route_js_kb": 395.9,
@@ -1318,7 +1362,7 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 21,
+     "html_kb": 20.9,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 78.2,
      "route_js_kb": 395.9,
@@ -1342,7 +1386,7 @@
     },
     "map": {
      "path": "/map",
-     "html_kb": 6,
+     "html_kb": 6.1,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 78.2,
      "route_js_kb": 444.9,
@@ -1357,27 +1401,27 @@
  },
  "sitemaps": {
   "sitemap-main.xml": 17,
-  "sitemap-countries.xml": 168,
-  "sitemap-prices.xml": 50,
-  "sitemap-cheap-houses.xml": 270,
+  "sitemap-countries.xml": 180,
+  "sitemap-prices.xml": 55,
+  "sitemap-cheap-houses.xml": 291,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 34,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 172,
-  "sitemap-homes.xml": 633,
+  "sitemap-homes.xml": 683,
   "sitemap-new-builds.xml": 8,
-  "sitemap-more.xml": 56,
+  "sitemap-more.xml": 58,
   "sitemap-es-main.xml": 14,
-  "sitemap-es-countries.xml": 168,
-  "sitemap-es-prices.xml": 50,
-  "sitemap-es-cheap-houses.xml": 270,
+  "sitemap-es-countries.xml": 180,
+  "sitemap-es-prices.xml": 55,
+  "sitemap-es-cheap-houses.xml": 291,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 33,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 172,
-  "sitemap-es-homes.xml": 633,
-  "sitemap-es-more.xml": 50
+  "sitemap-es-homes.xml": 683,
+  "sitemap-es-more.xml": 52
  }
 }

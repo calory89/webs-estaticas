@@ -35,7 +35,7 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 - [30.000 € · Casa de pueblo con balcón con vistas al mar en Pollina, a 30 minutos de Cefalù](https://realhunt.co/es/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicilia · nota 91 · 50 m² · 1 dorm.
 - [195.000 € · Piso en el lago Como renovado con balcón con vistas al lago, a 100 m de la orilla](https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lago de Como, Lombardía · nota 91 · 80 m² · 1 dorm.
 
-[Las 68 casas en Italia](https://realhunt.co/es/homes/italy)
+[Las 77 casas en Italia](https://realhunt.co/es/homes/italy)
 
 [Gastos, impuestos y fuentes de Italia](https://realhunt.co/es/costs/italy) · [Calculadora de gastos de compra para Italia](https://realhunt.co/es/buying-costs/italy) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -43,12 +43,12 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 
 - [Italia vs España](https://realhunt.co/es/countries/italy-vs-spain)
 - [Italia vs Estados Unidos](https://realhunt.co/es/countries/italy-vs-united-states)
-- [Italia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-italy)
 - [Italia vs Francia](https://realhunt.co/es/countries/france-vs-italy)
+- [Italia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-italy)
 - [Italia vs Suecia](https://realhunt.co/es/countries/italy-vs-sweden)
 - [Italia vs Japón](https://realhunt.co/es/countries/italy-vs-japan)
 - [Italia vs Polonia](https://realhunt.co/es/countries/italy-vs-poland)
-- [Italia vs Alemania](https://realhunt.co/es/countries/germany-vs-italy)
+- [Italia vs Grecia](https://realhunt.co/es/countries/greece-vs-italy)
 
 ### Fuentes
 

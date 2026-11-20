@@ -35,7 +35,7 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 - [€30,000 · Village house with a sea-view balcony in Pollina, 30 minutes from Cefalù](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) · Pollina, Palermo, Sicily · score 91 · 50 m² · 1 bed
 - [€195,000 · Renovated Lake Como flat with a lake-view balcony, 100 m from the shore](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k) · Gravedona ed Uniti, Lake Como, Lombardy · score 91 · 80 m² · 1 bed
 
-[All 68 homes in Italy](https://realhunt.co/homes/italy)
+[All 77 homes in Italy](https://realhunt.co/homes/italy)
 
 [Costs, taxes and sources for Italy](https://realhunt.co/costs/italy) · [Buying-cost calculator for Italy](https://realhunt.co/buying-costs/italy) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -43,12 +43,12 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 
 - [Italy vs Spain](https://realhunt.co/countries/italy-vs-spain)
 - [Italy vs United States](https://realhunt.co/countries/italy-vs-united-states)
-- [Italy vs Denmark](https://realhunt.co/countries/denmark-vs-italy)
 - [Italy vs France](https://realhunt.co/countries/france-vs-italy)
+- [Italy vs Denmark](https://realhunt.co/countries/denmark-vs-italy)
 - [Italy vs Sweden](https://realhunt.co/countries/italy-vs-sweden)
 - [Italy vs Japan](https://realhunt.co/countries/italy-vs-japan)
 - [Italy vs Poland](https://realhunt.co/countries/italy-vs-poland)
-- [Italy vs Germany](https://realhunt.co/countries/germany-vs-italy)
+- [Italy vs Greece](https://realhunt.co/countries/greece-vs-italy)
 
 ### Sources
 

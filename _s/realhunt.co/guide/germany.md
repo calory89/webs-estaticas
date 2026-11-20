@@ -36,7 +36,7 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 - [€45,000 · Renovated two-room flat with a new kitchen and garden in the Kaßberg](https://realhunt.co/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · score 83 · 49 m² · 1 bed
 - [€55,000 · Fully renovated period flat with a south balcony, let at 7.4%](https://realhunt.co/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · score 83 · 66 m² · 1 bed
 
-[All 20 homes in Germany](https://realhunt.co/homes/germany)
+[All 21 homes in Germany](https://realhunt.co/homes/germany)
 
 [Costs, taxes and sources for Germany](https://realhunt.co/costs/germany) · [Buying-cost calculator for Germany](https://realhunt.co/buying-costs/germany) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -45,8 +45,8 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 - [Germany vs Spain](https://realhunt.co/countries/germany-vs-spain)
 - [Germany vs Italy](https://realhunt.co/countries/germany-vs-italy)
 - [Germany vs United States](https://realhunt.co/countries/germany-vs-united-states)
-- [Germany vs Denmark](https://realhunt.co/countries/denmark-vs-germany)
 - [Germany vs France](https://realhunt.co/countries/france-vs-germany)
+- [Germany vs Denmark](https://realhunt.co/countries/denmark-vs-germany)
 - [Germany vs Sweden](https://realhunt.co/countries/germany-vs-sweden)
 - [Germany vs Japan](https://realhunt.co/countries/germany-vs-japan)
 - [Germany vs Poland](https://realhunt.co/countries/germany-vs-poland)

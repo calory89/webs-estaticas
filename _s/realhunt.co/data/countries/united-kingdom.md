@@ -1,6 +1,6 @@
 # Cheap homes in the United Kingdom: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 4 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 4 homes is €121,000 (€1,806 per m², from the 3 homes with a known size); the cheapest costs €82,600 and the most expensive €126,500. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 4 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 20 November 2026, RealHunt lists 6 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 6 homes is €126,500 (€1,807 per m², from the 5 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 6 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/united-kingdom · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: htt
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 4 (small sample) |
-| Median asking price | €121,000 |
-| Median price per m² | €1,806 (3 homes with a known size) |
-| Median size | 70 m² |
-| Cheapest and most expensive | €82,600 · €126,500 |
-| Median RealHunt score (70 to 98) | 88 |
+| Homes on RealHunt | 6 (small sample) |
+| Median asking price | €126,500 |
+| Median price per m² | €1,807 (5 homes with a known size) |
+| Median size | 72 m² |
+| Cheapest and most expensive | €82,600 · €198,400 |
+| Median RealHunt score (70 to 98) | 83 |
 | Taxes and fees to buy | 3–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there. |
 | Yearly property tax | Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025. |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-kingdom
 
-## The 4 homes, best score first
+## The 6 homes, best score first
 
 ### Beautifully styled two-bed home with an open fireplace
 
@@ -73,6 +73,22 @@ https://realhunt.co/deal/uk-blyth-88k-869241
 A well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and ready to move into. 70 m² with an entrance hall, an open-plan kitchen and living room with all appliances included, two bedrooms and a fully fitted bathroom upstairs. The front bedroom looks out over the Moray Firth. Modern fittings throughout, and the advert says it works equally as a permanent home. Freehold. Asking offers over £110,000 (about €126,500), around €1,800/m². Council tax band B.
 
 https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k
+
+### Refurbished period townhouse with a double garage in Lack village, County Fermanagh
+
+€198,400 · Lack, County Fermanagh, Northern Ireland · 107 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-20
+
+Asking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its original character. The lounge opens to a contemporary kitchen and dining area, there are three bedrooms with an en suite to the main one, plus a stylish family bathroom. Oil central heating and PVC double glazing. Outside it has a generous end site with parking, a yard and a large double garage. Photos show green hills beside the house and a bright, well kept interior. Rates £702 a year. EPC E52.
+
+https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k
+
+### Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern Ireland
+
+€195,400 · Greyabbey, Northern Ireland · 80 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+Asking £169,950 (about €195,400) for an 80 m² end-terrace house in the heart of historic Greyabbey, comprehensively renovated within the last five years. Downstairs there is a bright open-plan living and dining room, a modern kitchen with integrated appliances and a WC. Upstairs are two double bedrooms, the main one with an en suite, plus a family shower room. A substantial garage and workshop sits behind the house, with street parking in front. It is turnkey and sold as a home or holiday base; it is run as a holiday let at present. Rates £1,299 a year.
+
+https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k
 
 ### Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway
 

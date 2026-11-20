@@ -1,6 +1,6 @@
 # Casas baratas en Canadá: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 11 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 11 casas es de 93.111 € (963 € por m², calculado con las 11 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 14 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 14 casas es de 99.323 € (963 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 11 |
-| Precio de salida mediano | 93.111 € |
-| Precio mediano por m² | 963 € (11 casas de superficie conocida) |
-| Superficie mediana | 94 m² |
+| Casas en RealHunt | 14 |
+| Precio de salida mediano | 99.323 € |
+| Precio mediano por m² | 963 € (14 casas de superficie conocida) |
+| Superficie mediana | 107 m² |
 | La más barata y la más cara | 55.842 € · 190.700 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 1,5–4% del precio (cifras de 2026) |
@@ -51,7 +51,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/canada
 
-## Las 11 casas, de mejor a peor nota
+## Las 14 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia
 
@@ -84,6 +84,22 @@ https://realhunt.co/es/deal/bulyea-55842
 77 m² (824 sq ft), 2 dormitorios, 1 baño, construida en 1926. Precio: 110.000 C$. El anuncio menciona: cocina luminosa, armario esquinero singular, acceso al desván, excelente espacio de almacenaje.
 
 https://realhunt.co/es/deal/avonlea-68327
+
+### Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva Escocia
+
+124.000 € · Hillsburn, Nova Scotia · 106 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-20
+
+Se pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en Hillsburn, un pueblo de la costa en la Bahía de Fundy a unos 10 minutos de Annapolis Royal. Las fotos aéreas muestran el mar justo abajo. Está lista para entrar, con exterior recién pintado y ventanas nuevas. La planta principal tiene una gran cocina campestre con isla, un comedor, un salón con estufa de pellets y vista al mar, y un cuarto de baño grande con bañera de remojo y ducha de obra. Arriba hay tres dormitorios y una habitación de almacenamiento. Fuera hay jardineras elevadas, un cobertizo, una terraza y una plataforma de observación.
+
+https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
+
+### Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva Escocia
+
+159.000 € · Pictou, Nova Scotia · 171 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-20
+
+Se pide C$249,900 (aproximadamente €159,000) por una casa de madera blanca de aproximadamente 171 m², construida en 1888 en el pueblo histórico preservado de Pictou, con vistas al puerto y a corta distancia del centro. Los grandes gastos ya están hechos: un tejado de metal más nuevo, una caldera de propano y algunas tuberías nuevas. En el interior hay ventanas altas, suelos de madera, una chimenea, molduras de corona original y una escalera curva, con tres dormitorios y un baño y medio. La veranda delantera da a la calle y el jardín trasero tiene un estanque de carpas y un gran granero. La cocina es antigua pero limpia.
+
+https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k
 
 ### Casa de 2 dormitorios reformada en Astle, Nuevo Brunswick
 
@@ -124,6 +140,14 @@ https://realhunt.co/es/deal/shearstown-99323
 83 m² (896 sq ft), 2 dormitorios, 1 baño. Precio: 159.900 C$. El anuncio menciona: garaje independiente nuevo, terrazas de madera actualizadas, bomba de calor eficiente sin conductos, jardín terminado.
 
 https://realhunt.co/es/deal/minto-99323
+
+### Casa de carácter actualizada con estufa de leña y taller en Liverpool, Nueva Escocia
+
+140.000 € · Liverpool, Nova Scotia · 155 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-11-20
+
+Se pide C$220,000 (aproximadamente €140,000) por una casa de 1935 de aproximadamente 155 m², a pocos minutos del centro de Liverpool, un pueblo portuario en la costa sur de Nueva Escocia a unos 90 minutos de Halifax. La mayor parte del trabajo está hecho: suelos de madera original restaurados, cocina renovada con armarios personalizados, encimeras de madera y fregadero tipo granja de hierro fundido, paredes replasadas y pintadas, instalación eléctrica y tuberías actualizadas, canaletas nuevas y estufa de leña certificada en la sala de estar recientemente aislada. Hay un cuarto de baño con ducha en la planta baja, un nuevo medio baño arriba y un flexible diseño de dos dormitorios más uno. En el exterior hay un taller grande y una leñera bien surtida.
+
+https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k
 
 ### Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo Brunswick
 

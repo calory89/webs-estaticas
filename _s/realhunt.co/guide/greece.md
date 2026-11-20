@@ -36,7 +36,7 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [€170,000 · Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · score 89 · 165 m² · 4 bed
 - [€95,000 · Fairy-tale house with a gazebo and stone BBQ in the Pelion forest](https://realhunt.co/deal/gr-pelion-fairytale-house-95k) · Chania, Pelion (near Portaria) · score 88 · 68 m² · 2 bed
 
-[All 20 homes in Greece](https://realhunt.co/homes/greece)
+[All 24 homes in Greece](https://realhunt.co/homes/greece)
 
 [Costs, taxes and sources for Greece](https://realhunt.co/costs/greece) · [Buying-cost calculator for Greece](https://realhunt.co/buying-costs/greece) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -45,8 +45,8 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [Greece vs Spain](https://realhunt.co/countries/greece-vs-spain)
 - [Greece vs Italy](https://realhunt.co/countries/greece-vs-italy)
 - [Greece vs United States](https://realhunt.co/countries/greece-vs-united-states)
-- [Greece vs Denmark](https://realhunt.co/countries/denmark-vs-greece)
 - [Greece vs France](https://realhunt.co/countries/france-vs-greece)
+- [Greece vs Denmark](https://realhunt.co/countries/denmark-vs-greece)
 - [Greece vs Sweden](https://realhunt.co/countries/greece-vs-sweden)
 - [Greece vs Japan](https://realhunt.co/countries/greece-vs-japan)
 - [Greece vs Poland](https://realhunt.co/countries/greece-vs-poland)

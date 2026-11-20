@@ -1,6 +1,6 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 38 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 38 homes is €73,000 (€701 per m², from the 20 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 20 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/sweden · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 38 |
-| Median asking price | €73,000 |
-| Median price per m² | €701 (20 homes with a known size) |
+| Homes on RealHunt | 39 |
+| Median asking price | €72,000 |
+| Median price per m² | €680 (21 homes with a known size) |
 | Median size | 110 m² |
 | Cheapest and most expensive | €22,000 · €99,000 |
 | Median RealHunt score (70 to 98) | 85 |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/sweden
 
-## The 38 homes, best score first
+## The 39 homes, best score first
 
 ### Cosy villa with sauna, 100 m from the river
 
@@ -112,6 +112,14 @@ https://realhunt.co/deal/Dc6j54PF6hV
 An 84 m² through-flat on the 6th floor with a lift and open views over the area: a spacious living and dining room, three good bedrooms, a fresh kitchen, two toilets and a big sunny balcony. Light floors and bright white rooms, ready to move into. Swedish co-op flat (bostadsrätt) with a monthly fee of 7,586 SEK (about €680). Copenhagen is about 40 minutes by car over the Øresund bridge. Asking 750,000 SEK (about €67,200), about €800/m².
 
 https://realhunt.co/deal/se-malmo-rosengard-67k-1678590
+
+### Renovated red wooden villa with wide valley views near Fränsta, Västernorrland
+
+€68,000 · Rombäck, Fränsta, Västernorrland · 116 m² · 2 bedrooms · RealHunt score 90 · added 2026-11-20
+
+Asking 750,000 SEK (about €68,000) for a 116 m² two-storey wooden house from 1915 on a 2,820 m² plot, under €600 per m². The advert says you can move straight in: kitchen, bathroom and surfaces were renovated in 2016, the wiring was recently updated and fibre broadband is connected. Downstairs are a kitchen with island and old wood stove, a dining room, a living room with fireplace and a tiled stove, and a shower room. Upstairs are two bedrooms. A garage and barn give storage, and the house looks out over a wide green valley. Running costs 36,085 SEK a year.
+
+https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek
 
 ### Swedish villa with a glazed porch and big garden in Gnarp
 

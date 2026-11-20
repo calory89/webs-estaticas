@@ -31,12 +31,12 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 
 - [82.875 € · Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia Occidental](https://realhunt.co/es/deal/chapmanville-82875) · Chapmanville, Virginia Occidental · nota 95 · 176 m² · 2 dorm.
 - [78.426 € · Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental](https://realhunt.co/es/deal/huntington-78426) · Huntington, Virginia Occidental · nota 95 · 150 m² · 3 dorm.
+- [223.300 € · Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k) · Lynchburg, Virginia · nota 93 · 289 m² · 3 dorm.
 - [65.428 € · Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania](https://realhunt.co/es/deal/mckees-rocks-65428) · McKees Rocks, Pensilvania · nota 93 · 106 m² · 3 dorm.
 - [153.900 € · La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k) · Scotland Neck, Carolina del Norte · nota 91 · 199 m² · 3 dorm.
 - [68.917 € · Casa de 2 dormitorios actualizada en Cleveland, Oklahoma](https://realhunt.co/es/deal/cleveland-68917) · Cleveland, Oklahoma · nota 91 · 98 m² · 2 dorm.
-- [200.000 € · Casa victoriana con carpintería de roble original frente a un parque en Marietta, Ohio](https://realhunt.co/es/deal/us-marietta-oh-victorian-oak-woodwork-220k) · Marietta, Ohio · nota 90 · 191 m² · 3 dorm.
 
-[Las 52 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
+[Las 59 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
 
 [Gastos, impuestos y fuentes de Estados Unidos](https://realhunt.co/es/costs/united-states) · [Calculadora de gastos de compra para Estados Unidos](https://realhunt.co/es/buying-costs/united-states) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,12 +44,12 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 
 - [Estados Unidos vs España](https://realhunt.co/es/countries/spain-vs-united-states)
 - [Estados Unidos vs Italia](https://realhunt.co/es/countries/italy-vs-united-states)
-- [Estados Unidos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Estados Unidos vs Francia](https://realhunt.co/es/countries/france-vs-united-states)
+- [Estados Unidos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Estados Unidos vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-states)
 - [Estados Unidos vs Japón](https://realhunt.co/es/countries/japan-vs-united-states)
 - [Estados Unidos vs Polonia](https://realhunt.co/es/countries/poland-vs-united-states)
-- [Estados Unidos vs Alemania](https://realhunt.co/es/countries/germany-vs-united-states)
+- [Estados Unidos vs Grecia](https://realhunt.co/es/countries/greece-vs-united-states)
 
 ### Fuentes
 

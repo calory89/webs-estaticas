@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [170.000 € · Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, Karpathos](https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · nota 89 · 165 m² · 4 dorm.
 - [95.000 € · Casa de cuento con cenador y barbacoa de piedra en el bosque de Pelion](https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k) · Chania, Pelion (cerca de Portaria) · nota 88 · 68 m² · 2 dorm.
 
-[Las 20 casas en Grecia](https://realhunt.co/es/homes/greece)
+[Las 24 casas en Grecia](https://realhunt.co/es/homes/greece)
 
 [Gastos, impuestos y fuentes de Grecia](https://realhunt.co/es/costs/greece) · [Calculadora de gastos de compra para Grecia](https://realhunt.co/es/buying-costs/greece) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -45,8 +45,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [Grecia vs España](https://realhunt.co/es/countries/greece-vs-spain)
 - [Grecia vs Italia](https://realhunt.co/es/countries/greece-vs-italy)
 - [Grecia vs Estados Unidos](https://realhunt.co/es/countries/greece-vs-united-states)
-- [Grecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-greece)
 - [Grecia vs Francia](https://realhunt.co/es/countries/france-vs-greece)
+- [Grecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-greece)
 - [Grecia vs Suecia](https://realhunt.co/es/countries/greece-vs-sweden)
 - [Grecia vs Japón](https://realhunt.co/es/countries/greece-vs-japan)
 - [Grecia vs Polonia](https://realhunt.co/es/countries/greece-vs-poland)

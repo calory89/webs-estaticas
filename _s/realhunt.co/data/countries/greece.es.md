@@ -1,6 +1,6 @@
 # Casas baratas en Grecia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 20 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 20 casas es de 125.000 € (1.364 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 175.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 24 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 24 casas es de 155.000 € (1.465 € por m², calculado con las 23 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 20 |
-| Precio de salida mediano | 125.000 € |
-| Precio mediano por m² | 1.364 € (19 casas de superficie conocida) |
-| Superficie mediana | 80 m² |
-| La más barata y la más cara | 68.000 € · 175.000 € |
+| Casas en RealHunt | 24 |
+| Precio de salida mediano | 155.000 € |
+| Precio mediano por m² | 1.465 € (23 casas de superficie conocida) |
+| Superficie mediana | 82 m² |
+| La más barata y la más cara | 68.000 € · 199.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 87 |
 | Impuestos y gastos de compra | 5,5–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los compradores de fuera de la UE y EFTA necesitan un permiso para comprar en zonas fronterizas designadas (partes del norte de Grecia e islas del Egeo oriental como el Dodecaneso y Rodas). El gobierno ha anunciado un impuesto de transferencia del 15% para compradores no comunitarios de viviendas a partir del 1 de enero de 2027, aún no definitivo en septiembre de 2026. |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/greece
 
-## Las 20 casas, de mejor a peor nota
+## Las 24 casas, de mejor a peor nota
 
 ### Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia
 
@@ -184,6 +184,14 @@ Casa de obra nueva de 2025 con 72 m² en Kallikrateia, Calcídica, eficiencia en
 
 https://realhunt.co/es/deal/gr-halkidiki-new-house-160k
 
+### Casa de piedra de tres dormitorios restaurada con terraza en la azotea en el pueblo de Kritsa, Creta
+
+199.000 € · Kritsa, Agios Nikolaos, Crete · 105 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-20
+
+Una casa de piedra restaurada a corta distancia de la plaza de Kritsa, el pueblo más grande de los alrededores de Agios Nikolaos y a 7 km del pueblo y playas de arena. Una terraza llena de plantas bajo una pérgola conduce a una terraza en la azotea amueblada con vistas a las montañas, el pueblo y el mar a lo lejos. En el interior hay techos con vigas de madera, paredes de piedra, un salón con estufa de leña, una cocina equipada, tres dormitorios y tres cuartos de baño. Se vende amueblada y en muy buen estado. El acceso en coche está a aproximadamente 70 m de distancia, con aparcamiento público a 100 a 150 m.
+
+https://realhunt.co/es/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k
+
 ### Casa de madera estilo isla con terraza y barbacoa sobre el golfo Pagasético
 
 120.000 € · Trikeri, Pelion · 54 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-16
@@ -192,6 +200,14 @@ En Trikeri, un pueblo empedrado con aire de isla en la punta de Pelion, una casa
 
 https://realhunt.co/es/deal/gr-trikeri-sea-terrace-120k
 
+### Casa de piedra de dos plantas con vista al mar de Libia en Koutsounari, sur de Creta
+
+195.000 € · Koutsounari, Ierapetra, Crete · 88 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-20
+
+Una casa de piedra de dos plantas con vistas abiertas del mar de Libia, a 1,3 km de Long Beach en la costa sur de Creta. Un patio pavimentado de piedra bajo una pérgola mira al mar, y las escaleras interiores conducen a una gran terraza con vistas. El salón tiene vigas de madera y una chimenea, y hay una cocina tradicional independiente, dos dormitorios y dos cuartos de baño, todos alicatados. El agua caliente viene de un panel solar, y hay aparcamiento afuera. Las tiendas y tabernas abiertas todo el año están a 3 minutos en coche. Aproximadamente 88 m² por 195.000 euros.
+
+https://realhunt.co/es/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k
+
 ### Casita de verano en una parcela de 980 m² a 2 km de la playa
 
 158.000 € · Marathopolis, near Gargaliani, Messinia · 62 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-16
@@ -199,6 +215,22 @@ https://realhunt.co/es/deal/gr-trikeri-sea-terrace-120k
 Casa de 62 m² en una parcela llana de 980 m² entre olivos y pocos vecinos, cerca de Marathopolis: zona de estar con estufa de leña, cocina abierta, dormitorio y baño con ducha abajo, y una escalera de madera que sube a un altillo con balcón y más camas. Jardín con caminos, trastero y barbacoa de obra. A 2 km de la playa de Lagouvardos, a 15 minutos de Gialova y sus campos de golf y a 25 de Pylos. Precio 158.000 €, unos 2.548 €/m².
 
 https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k
+
+### Casa de patio de piedra restaurada con terraza con vistas al mar en Gytheio
+
+195.000 € · Gytheio, Laconia · 85 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Una casa de piedra tradicional de 85 m² en un callejón tranquilo sin coches en el casco antiguo de Gytheio, a corta distancia del paseo portuario, en una parcela vallada de 127 m². Restaurada con pavimento de piedra original, suelos de madera y puertas antiguas conservadas. Un salón con suelo de piedra se abre al patio, donde una cocina recientemente renovada y una ducha exterior se encuentran bajo un limonero. En la planta superior hay un dormitorio doble y uno individual y un baño moderno, y una terraza elevada mira sobre los tejados al mar. Se vende llave en mano; la playa de Mavrovouni está a 5 minutos en coche.
+
+https://realhunt.co/es/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k
+
+### Piso de dos dormitorios amueblado con vistas al mar en Nea Fokea, Kassandra, Halkidiki
+
+170.000 € · Nea Fokea, Kassandra, Halkidiki · 60 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
+
+Un piso de 60 m² en la primera planta de un edificio de dos plantas en Nea Fokea, un pueblo costero en la península de Kassandra de Halkidiki. El anuncio dice que se puede ver el mar desde las ventanas y que los propietarios dejarán el mobiliario. Salón abierto con una cocina moderna equipada y estufa de leña, dos dormitorios y un cuarto de ducha, con ventanas en dos lados y un balcón cubierto con toldos. Aire acondicionado, calefacción central de fuel con radiadores y calefacción solar del agua. Las fotos muestran una casa bien cuidada lista para usar.
+
+https://realhunt.co/es/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k
 
 ### Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, Creta
 

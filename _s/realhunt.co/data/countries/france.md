@@ -1,6 +1,6 @@
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 45 homes for sale in France, each one checked by a person. In France, the median asking price of those 45 homes is €65,000 (€1,154 per m², from the 41 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 20 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/france · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 45 |
-| Median asking price | €65,000 |
-| Median price per m² | €1,154 (41 homes with a known size) |
-| Median size | 74 m² |
+| Homes on RealHunt | 52 |
+| Median asking price | €69,900 |
+| Median price per m² | €1,175 (48 homes with a known size) |
+| Median size | 83 m² |
 | Cheapest and most expensive | €39,000 · €285,000 |
-| Median RealHunt score (70 to 98) | 84 |
+| Median RealHunt score (70 to 98) | 83 |
 | Taxes and fees to buy | 7–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer. |
 | Yearly property tax | Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%. |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/france
 
-## The 45 homes, best score first
+## The 52 homes, best score first
 
 ### 171 m² house with a former shop in the centre of Bussière-Poitevine
 
@@ -241,6 +241,14 @@ https://realhunt.co/deal/fr-bourmont-60k-q27mnf
 
 https://realhunt.co/deal/fr-mulhouse-60k-377472
 
+### Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, Charente
+
+€189,000 · Yvrac-et-Malleyrand, Charente · 180 m² · 2 bedrooms · RealHunt score 84 · added 2026-11-20
+
+About 180 m² of old stone house for €189,000, roughly €1,050 per m², and the advert says it is ready to move into. The ground floor has three rooms of over 30 m² each: a living room, a large beamed kitchen and a bedroom with its own bathroom, so you can live on one level. Upstairs are a 34 m² bedroom with a private bathroom, a 23 m² office, a mezzanine and a terrace. Exposed stone, old beams and stoves. Small easy garden, carport and workshop. The village is 5 km from La Rochefoucauld and 30 km from Angoulême TGV station. Energy rating D.
+
+https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k
+
 ### Character house with panoramic views in Treignac
 
 €66,600 · Treignac, Corrèze · 88 m² · 2 bedrooms · RealHunt score 83 · added 2026-10-05
@@ -296,6 +304,14 @@ https://realhunt.co/deal/fr-saint-etienne-60k-772580
 A 50 m² town house at the edge of the historic Saint-Mathieu quarter, with a light well: a living room with an open kitchen, a master bedroom with its own bathroom and WC, and a mezzanine upstairs. Freshly finished, ready to live in. Asking €60,000, about €1,200/m².
 
 https://realhunt.co/deal/fr-perpignan-60k-990769
+
+### Renovated townhouse with new kitchen and air conditioning in Masseube, Gers
+
+€69,500 · Masseube, Gers · 70 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-20
+
+A renovated 70 m² townhouse in Masseube for €69,500, under €1,000 per m², close to the shops and services. Downstairs a 25 m² living room opens to a fully fitted kitchen, with a storage room and WC. Upstairs are two bedrooms of 13 and 16 m², each with its own shower and basin. The roof was redone in 2013, the attic is insulated and there is reversible air conditioning. Connected to mains drainage. Energy rating C, good for an older house. The photos show fresh floors, a new kitchen and clean shower units. No garden is mentioned.
+
+https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k
 
 ### Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy
 
@@ -377,6 +393,14 @@ In Espéraza, a lively village with shops 15 minutes from Limoux, in the upper A
 
 https://realhunt.co/deal/fr-esperaza-86k-sxd5p3
 
+### Renovated stone house on the Canal du Nivernais in Champvert, Burgundy
+
+€188,000 · Champvert, Nièvre, Burgundy · 160 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-20
+
+A stone village house with direct access to the towpath of the Canal du Nivernais, renovated over the years and sold as needing no work. About 160 m2 for 188,000 euros, so under 1,200 euros per m2. There is a 50 m2 living room with a pellet stove, a fitted kitchen with an island, two large bedrooms (one en suite) and a 30 m2 study in the former stables. The roof was redone in 2024, gas central heating dates from 2017 and the energy rating is C. Garden of 1,225 m2, 5 minutes from Decize. Property tax 890 euros a year.
+
+https://realhunt.co/deal/fr-burgundy-champvert-canal-stone-house-188k
+
 ### Renovated studio with a balcony by the Bagatelle metro, Toulouse
 
 €59,500 · Bagatelle, Toulouse · 30 m² · RealHunt score 78 · added 2026-10-13
@@ -385,6 +409,30 @@ https://realhunt.co/deal/fr-esperaza-86k-sxd5p3
 
 https://realhunt.co/deal/fr-toulouse-60k-120948
 
+### Renovated village house with energy rating B in the centre of Riez, Verdon
+
+€159,000 · Riez, Alpes-de-Haute-Provence, Provence · 91 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A 91 m2 village house on a small square in the centre of Riez, fully renovated to current standards and rated B for energy, which is rare for an old Provençal house. It has two kitchens and living areas over the lower floors, two bedrooms (one with its own shower), a bathroom, reversible air conditioning in three zones and about 50 m2 of cellars. A small courtyard behind a wrought iron gate fits a table. Shops, schools, a hospital and two weekly markets are in the village, and Lake Sainte-Croix and the Verdon gorges are minutes away. About 1,750 euros per m2.
+
+https://realhunt.co/deal/fr-provence-riez-renovated-village-house-dpe-b-159k
+
+### Breton stone house with a conservatory near the Térénez beaches in Plouezoc'h
+
+€178,500 · Plouezoc'h, Finistère, Brittany · 88 m² · 3 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A granite and slate Breton house 5 minutes from the Térénez beaches and sailing school. It has 88 m² plus a 20 m² glazed conservatory along the garden side. Downstairs are a kitchen with dining space, a living and dining room, a bedroom and a bathroom, so single-level living is possible. Upstairs are two more bedrooms and an open area for an office. The plot is about 520 m² with parking. The kitchen is modern, but the upstairs rooms keep old wallpaper and the bathroom is dated, so plan to redecorate. Energy rating E.
+
+https://realhunt.co/deal/fr-plouezoch-stone-house-conservatory-near-terenez-178k
+
+### Renovated Luberon village house with vaulted cellar in Saint-Martin-de-Castillon
+
+€210,000 · Saint-Martin-de-Castillon, Vaucluse, Provence · 90 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A fully renovated village house of about 90 m2 in the Luberon hills, priced near the low end of the portal's local sales range per m2. The fitted kitchen opens onto a vaulted stone cellar and a small terrace, the bright living room has a wood stove and open views, and there are two bedrooms, a modern shower room, two toilets and a utility room. The photos show beamed ceilings and new finishes throughout. Shops and the village swimming pool are about 400 metres away. Asking 210,000 euros.
+
+https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210k
+
 ### One-bedroom flat four minutes' walk from Grenoble station
 
 €59,000 · Berriat, Grenoble · 33 m² · 1 bedrooms · RealHunt score 76 · added 2026-10-13
@@ -392,6 +440,14 @@ https://realhunt.co/deal/fr-toulouse-60k-120948
 33 m² on the ground floor in the Chorier-Berriat area: a living room with a kitchen, a separate 9.6 m² bedroom and a shower room, freshly painted with new floors. Grenoble station is a four-minute walk and six bus lines stop five minutes away. Energy rating F (electric heating). Asking €59,000, about €1,777/m².
 
 https://realhunt.co/deal/fr-grenoble-59k-973013
+
+### Stone house with a private riverbank and outbuildings in Vendeuvre, Normandy
+
+€205,000 · Vendeuvre, Calvados, Normandy · 100 m² · 3 bedrooms · RealHunt score 76 · added 2026-11-20
+
+A 99.5 m2 stone house on an enclosed 1,545 m2 plot that runs down to a river with private banks. Downstairs are a living room with a wood-burning insert, a fitted kitchen and a bathroom, and upstairs three bedrooms of 13 to 15 m2. Double glazing, a recent air-to-water heat pump and solar panels are already in place, and the outbuildings add about 150 m2 with two garages, a workshop and a carport. The advert says some finishing and refreshing work is still to plan. Saint-Pierre-sur-Dives is a 7-minute drive. Property tax 647 euros a year.
+
+https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
 
 ### 2009 duplex house with a private garden in a spa village
 

@@ -49,7 +49,7 @@ Impuesto sobre los ingresos por alquiler: Un no residente que alquila una vivien
 - [Dinamarca vs Suecia](https://realhunt.co/es/countries/denmark-vs-sweden)
 - [Dinamarca vs Japón](https://realhunt.co/es/countries/denmark-vs-japan)
 - [Dinamarca vs Polonia](https://realhunt.co/es/countries/denmark-vs-poland)
-- [Dinamarca vs Alemania](https://realhunt.co/es/countries/denmark-vs-germany)
+- [Dinamarca vs Grecia](https://realhunt.co/es/countries/denmark-vs-greece)
 
 ### Fuentes
 

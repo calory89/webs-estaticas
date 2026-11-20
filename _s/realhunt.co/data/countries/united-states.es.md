@@ -1,6 +1,6 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 52 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 52 casas es de 213.600 € (1.654 € por m², calculado con las 52 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 59 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 59 casas es de 214.100 € (1.580 € por m², calculado con las 59 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 52 |
-| Precio de salida mediano | 213.600 € |
-| Precio mediano por m² | 1.654 € (52 casas de superficie conocida) |
-| Superficie mediana | 116 m² |
+| Casas en RealHunt | 59 |
+| Precio de salida mediano | 214.100 € |
+| Precio mediano por m² | 1.580 € (59 casas de superficie conocida) |
+| Superficie mediana | 118 m² |
 | La más barata y la más cara | 65.428 € · 447.600 € |
-| Nota RealHunt mediana (de 70 a 98) | 85 |
+| Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 2–5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pero unos 30 estados han añadido algunos límites, y Texas y Florida restringen a compradores de ciertos países como China. |
 | Impuesto anual sobre la vivienda | El impuesto sobre la propiedad se fija localmente y en 2024 fue de media alrededor del 1,22% del valor en la mayor ciudad de cada estado, desde el 0,30% en Honolulu hasta el 3,02% en Detroit. |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-states
 
-## Las 52 casas, de mejor a peor nota
+## Las 59 casas, de mejor a peor nota
 
 ### Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental
 
@@ -74,6 +74,14 @@ https://realhunt.co/es/deal/chapmanville-82875
 
 https://realhunt.co/es/deal/mckees-rocks-65428
 
+### Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia
+
+223.300 € · Lynchburg, Virginia · 289 m² · 3 dormitorios · nota RealHunt 93 · añadida el 2026-11-20
+
+Se pide US$245.000 (aproximadamente €223.300) por una casa victoriana de 1889 renovada de aproximadamente 289 m² en Lynchburg, una ciudad histórica en el río James al pie de las Blue Ridge. Conserva sus techos altos, ventanas altas, suelos de madera noble y ornamentadas chimeneas de mármol tallado, y la cocina blanca tiene electrodomésticos de acero inoxidable. La suite del dormitorio principal y la lavandería están en la planta baja. En el exterior hay un porche delantero cubierto profundo, un jardín delantero plantado y la casa de carruajes original para almacenamiento. El tejado de metal y el revestimiento azul se ven bien cuidados en las fotos. Impuesto sobre la propiedad anual US$1.638, sin cuota de HOA.
+
+https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k
+
 ### Casa de 2 dormitorios actualizada en Cleveland, Oklahoma
 
 68.917 € · Cleveland, Oklahoma · 98 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-09-23
@@ -89,6 +97,14 @@ https://realhunt.co/es/deal/cleveland-68917
 Entra en el encanto de la histórica Savage House, una casa victoriana preciosa de 1900 en Scotland Neck, Carolina del Norte: 199 m² con tres dormitorios y dos baños, molduras de encaje de madera, porche al que se llega por un camino de ladrillo, techos altos e interiores recién arreglados con suelos de madera, en una parcela grande con sombra. Precio 169.900 $ (unos 151.000 €), unos 759 €/m².
 
 https://realhunt.co/es/deal/us-north-carolina-victorian-170k
+
+### Casa de 1886 actualizada con jardín vallado y garaje de gran tamaño en La Crosse, Wisconsin
+
+195.800 € · La Crosse, Wisconsin · 142 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-20
+
+Se pide US$214.900 (aproximadamente 195.800 euros) por una casa de tres dormitorios de aproximadamente 142 m² en La Crosse, una ciudad universitaria en el Misisipí en el oeste de Wisconsin. Construida en 1886, ha tenido actualizaciones recientes: pintura fresca en muchas habitaciones, aire acondicionado central nuevo, calentador de agua nuevo y terraza nueva. La entrada se abre a una habitación de porche cerrada luminosa, y la cocina de galera tiene suelos de aspecto madera y muchos armarios. El jardín trasero completamente vallado está bien ajardinado, con patio y pozo de fuego, y el garaje de gran tamaño alberga tres o más coches más almacenamiento. Un cuarto de baño. Impuesto predial anual US$3.565, sin tarifa HOA.
+
+https://realhunt.co/es/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k
 
 ### Casa victoriana con carpintería de roble original frente a un parque en Marietta, Ohio
 
@@ -114,6 +130,14 @@ https://realhunt.co/es/deal/us-freeport-83k-605154
 
 https://realhunt.co/es/deal/clairton-85929
 
+### Casa de tres dormitorios con patio grande vallado cerca del Misisipí en Red Wing
+
+209.600 € · Red Wing, Minnesota · 137 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-11-20
+
+Se pide US$230,000 (aproximadamente €209,600) por una casa de 1996 de aproximadamente 137 m² en una calle tranquila sin salida en Red Wing, un pueblo histórico a orillas del río bajo acantilados arbolados en el Misisipí. Ha sido recién pintada, con suelos de madera dura en el nivel principal, donde están los tres dormitorios, cocina y un cuarto de baño completo actualizado. El nivel inferior terminado añade una sala familiar con chimenea de gas y un medio baño. En el exterior hay una terraza, un enorme patio trasero vallado, un cobertizo y un garaje de dos plazas anexo. Las fotos aéreas muestran el río y Colvill Park muy cerca. Impuesto sobre la propiedad anual US$2,848, sin cuota HOA.
+
+https://realhunt.co/es/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k
+
 ### Casa de 3 dormitorios lista para entrar a vivir en McKeesport, Pensilvania
 
 82.875 € · McKeesport, Pennsylvania · 95 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
@@ -129,6 +153,22 @@ https://realhunt.co/es/deal/mckeesport-82875
 Construida en 2008: cabaña de dos dormitorios y unos 104 m² con paredes de pino, salón-comedor abierto y cocina equipada, en terreno abierto a minutos del río North Fork, Bryant Creek y el bosque nacional Mark Twain. Para vivir todo el año o para escapadas. Unos 84.500 €.
 
 https://realhunt.co/es/deal/us-dora-84k-329130
+
+### Casa actualizada de cuatro dormitorios con cocina nueva en La Crosse, Wisconsin
+
+214.100 € · La Crosse, Wisconsin · 127 m² · 4 dormitorios · nota RealHunt 88 · añadida el 2026-11-20
+
+Se pide US$235.000 (aproximadamente €214.100) por una casa de aproximadamente 127 m² en La Crosse, una ciudad universitaria en el río Mississippi en el oeste de Wisconsin. Construida en 1889, ha sido actualizada de arriba a abajo: una cocina nueva con armarios shaker blancos, azulejos tipo metro y una estufa de gas, baños nuevos y elegantes incluyendo una ducha de aspecto mármol, suelos de aspecto madera clara y una zona de salón y comedor abierta. El anuncio lista cuatro dormitorios. Hay un porche delantero, un jardín lateral cerrado y espacio atrás para una terraza o un futuro garaje. Impuesto sobre la propiedad anual US$2.903, sin cuota de HOA.
+
+https://realhunt.co/es/deal/us-la-crosse-wi-updated-four-bed-house-235k
+
+### Casa de 1899 bien mantenida con garaje doble nuevo cerca de Chester Park en Duluth
+
+232.400 € · Duluth, Minnesota · 148 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-20
+
+Se pide US$255.000 (aproximadamente €232.400) por una casa de aproximadamente 148 m² en Duluth, la ciudad portuaria montañosa en el lago Superior. Construida en 1899, ha tenido su calefacción, tejado, ventanas, revestimiento, puertas, cableado y fontanería completamente reemplazados desde 2011. En la planta baja hay amplios salones y comedores con suelos de madera noble, una cocina blanca con electrodomésticos de acero inoxidable y una puerta a la terraza trasera, y un medio baño con lavandería. Los tres dormitorios y un baño completo actualizado están en la planta superior. Hay un garaje de dos plazas más nuevo y una plaza de aparcamiento adicional, y Chester Park y el centro están cerca. Impuesto sobre la propiedad anual US$3.368, sin cuota de HOA.
+
+https://realhunt.co/es/deal/us-duluth-mn-renewed-1899-house-double-garage-255k
 
 ### Espaciosa casa de dos pisos con cuatro dormitorios y planta flexible en Buffalo Estates, Tampa
 
@@ -154,11 +194,11 @@ Casa de 1943 con tres dormitorios y baño y medio en unos 124 m². Reformas reci
 
 https://realhunt.co/es/deal/us-madawaska-79k-677888
 
-### Casa a la orilla del río en French Island con vistas al Penobscot
+### Casa junto al río en la isla francesa con vistas del Penobscot
 
 159.400 € · French Island, Old Town, Maine · 117 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-16
 
-A 1,258 sq ft (117 m²) three-bedroom home on historic French Island in Old Town, Maine, with stunning views of the Penobscot River right from the yard: a standing-seam metal roof, a fresh kitchen, a bright living room and a lot that runs down to the water. Bangor and the University of Maine are minutes away. Asking $175,000 (about €159,400), about €1,360/m².
+Una casa de tres dormitorios de 1.258 sq ft (117 m²) en la histórica isla francesa en Old Town, Maine, con vistas impresionantes del río Penobscot directamente desde el patio: un tejado de metal de pie, una cocina reciente, un salón radiante y un terreno que desciende hasta el agua. Bangor y la Universidad de Maine están a minutos. Pidiendo $175.000 (alrededor de €159.400), aproximadamente €1.360/m².
 
 https://realhunt.co/es/deal/us-maine-old-town-riverfront-185k
 
@@ -185,6 +225,14 @@ https://realhunt.co/es/deal/us-geneva-ny-finger-lakes-colonial-240k
 Condo actualizado de 2 dormitorios y 2 baños en última planta de 1.197 sq ft en la comunidad cerrada Las Vistas, con balcón privado, lavadora y secadora en la unidad y abundante luz. Jardines bordeados de palmeras, piscina grande y gimnasio; cerca de CityPlace Doral, parques, escuelas y la Autopista Palmetto, aproximadamente 20 minutos del Aeropuerto de Miami y Brickell. Pidiendo US$249,000.
 
 https://realhunt.co/es/deal/us-doral-8215-502-249k
+
+### Casa de ladrillo de 1927 con sala de tres estaciones y jardín con pérgola en Manitowoc, Wisconsin
+
+227.700 € · Manitowoc, Wisconsin · 146 m² · 4 dormitorios · nota RealHunt 87 · añadida el 2026-11-20
+
+Se pide US$249,900 (aproximadamente €227,700) por una casa de ladrillo de 1927 de aproximadamente 146 m² en el lado norte de Manitowoc, un pueblo portuario en el lago Míchigan. Tiene cuatro dormitorios, dos cuartos de baño, suelos de madera dura y su carpintería y puertas de madera original. Una luminosa sala de tres estaciones con techo de madera se abre desde el frente, y un porche de piso superior da a las puestas de sol. El jardín es lo destacado: caminos de ladrillo, parterres escalonados, matas de frambuesa y un patio bajo una pérgola cubierta de vid, además de un garaje de dos plazas independiente. Las fotos muestran un hogar impecable y cuidado. Impuesto sobre la propiedad anual US$2,911, sin cuota HOA.
+
+https://realhunt.co/es/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 
 ### Propiedad de inversión de dos unidades con ingresos por alquiler en Belmont Heights, Tampa
 
@@ -266,13 +314,21 @@ Gran cabaña de troncos de estilo escandinavo, hecha a medida en 1998, en una ca
 
 https://realhunt.co/es/deal/us-wisconsin-scandi-log-cabin-179k
 
-### A-frame bien cuidada en 1 hectárea en la península superior de Michigan
+### Casa A-frame bien cuidada en 2,5 acres en la Península Superior de Michigan
 
 173.100 € · Kenton, Upper Peninsula, Michigan · 102 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-10-16
 
-Just outside Kenton, in the Ottawa National Forest area of Michigan's Upper Peninsula, a well-kept 1984 A-frame on 2.49 acres: 1,097 sq ft (102 m²) with three bedrooms, a kitchen with an island, a vaulted wood-panelled loft, a sunroom looking onto the woods, a deck and a fire pit. Snowmobile and ATV trails start nearby. Asking $190,000 (about €173,100), about €1,700/m².
+Justo afuera de Kenton, en la zona del Bosque Nacional de Ottawa en la Península Superior de Michigan, una casa A-frame bien cuidada de 1984 en 2,49 acres: 1.097 sq ft (102 m²) con tres dormitorios, una cocina con isla, una buhardilla abovedada con paneles de madera, una galería acristalada con vistas al bosque, una terraza y una zona de fuego. Las pistas de motos de nieve y ATV comienzan cerca. Pidiendo $190.000 (alrededor de €173.100), aproximadamente €1.700/m².
 
 https://realhunt.co/es/deal/us-michigan-a-frame-2-5-acres-160k
+
+### Casa de tres dormitorios lista para entrar a vivir a corta distancia del centro de Bedford, Virginia
+
+227.700 € · Bedford, Virginia · 109 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-11-20
+
+Pidiendo US$249.996 (alrededor de €227.700) por una casa de 1960 de aproximadamente 109 m² recientemente renovada en Bedford, un pequeño pueblo en las estribaciones de Blue Ridge de Virginia, a corta distancia de las tiendas y restaurantes del centro. Tiene tres dormitorios, dos baños completos, suelos de madera y una cocina blanca radiante con electrodomésticos de acero inoxidable. Los principales elementos costosos son recientes: el tejado fue reemplazado en 2020, el sistema de calefacción y refrigeración tiene cuatro años y el frigorífico uno. Afuera hay un césped, un patio cubierto y una segunda zona de estar bajo un toldo de metal, más un cobertizo de almacenamiento. Impuesto sobre la propiedad anual US$1.025, sin cuota HOA.
+
+https://realhunt.co/es/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k
 
 ### Condominio luminoso de esquina en dos niveles con 2,5 baños en Paragon, Plantation
 
@@ -418,11 +474,11 @@ Casa independiente de 3 dormitorios y 2 baños en lote en esquina con gran jard�
 
 https://realhunt.co/es/deal/us-boca-raton-8315-490k
 
-### Apartamento reformado sin dormitorio en Little River, Carolina del Sur
+### Condo renovado de 0 dormitorios en Little River, Carolina del Sur
 
 88.800 € · Little River, South Carolina · 63 m² · nota RealHunt 81 · añadida el 2026-09-23
 
-63 m² (680 sq ft), 1 bath, built 1988. Asking $97,500. The listing mentions: stackable washer dryer, large kitchen pantry, large storage room, community pool. HOA about $329 a month.
+63 m² (680 sq ft), 1 baño, construido 1988. Pidiendo $97.500. El anuncio menciona: lavadora secadora apilable, despensa de cocina grande, sala de almacenamiento grande, piscina comunitaria. HOA aproximadamente $329 mensuales.
 
 https://realhunt.co/es/deal/little-river-92471
 
@@ -438,7 +494,7 @@ https://realhunt.co/es/deal/beeville-95089
 
 118.300 € · Marion, Indiana · 71 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-09-23
 
-71 m² (768 sq ft), 2 bed, 1 bath, built 1954. Asking $129,900. The listing mentions: private fenced-in backyard, detached garage, newer gas furnace, newer central air.
+71 m² (768 sq ft), 2 dormitorios, 1 baño, construido 1954. Pidiendo $129.900. El anuncio menciona: patio trasero vallado privado, garaje independiente, caldera de gas más reciente, aire central más reciente.
 
 https://realhunt.co/es/deal/marion-87150
 

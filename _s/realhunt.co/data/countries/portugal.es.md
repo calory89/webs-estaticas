@@ -1,6 +1,6 @@
 # Casas baratas en Portugal: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 18 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 18 casas es de 125.000 € (1.352 € por m², calculado con las 18 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 183.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 19 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 19 casas es de 125.000 € (1.352 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 183.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/portugal · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 18 |
+| Casas en RealHunt | 19 |
 | Precio de salida mediano | 125.000 € |
-| Precio mediano por m² | 1.352 € (18 casas de superficie conocida) |
-| Superficie mediana | 110 m² |
+| Precio mediano por m² | 1.352 € (19 casas de superficie conocida) |
+| Superficie mediana | 100 m² |
 | La más barata y la más cara | 48.000 € · 183.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 91 |
 | Impuestos y gastos de compra | 3–12% del precio (cifras de 2026) |
@@ -44,7 +44,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/portugal
 
-## Las 18 casas, de mejor a peor nota
+## Las 19 casas, de mejor a peor nota
 
 ### Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola
 
@@ -173,6 +173,14 @@ https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k
 Una casa de pueblo de granito reconstruida completamente en su interior, a unos 5 km de la localidad de Tábua. El anuncio lista ventanas, puertas y persianas nuevas, cableado y tuberías nuevas, aislamiento de lana de roca en las paredes interiores, iluminación empotrada y una cocina equipada nueva, así que no hay nada que hacer. Planta baja con cocina abierta, salón y WC, y primer piso con tres dormitorios, baño completo y habitación de repuesto para lavandería u oficina. Aproximadamente 142 m2 de área construida, 125 m2 útil. Clase energética C, lo cual es inusual para una casa de piedra a este precio.
 
 https://realhunt.co/es/deal/pt-central-tabua-renovated-granite-house-169k
+
+### Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, Azores
+
+179.000 € · Silveira, Lajes do Pico, Azores · 84 m² · 1 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa de piedra completamente renovada en Silveira, 3 km del antiguo pueblo ballenero de Lajes en la isla de Pico, vendida amueblada y equipada. 84 m² de área construida en dos plantas con un dormitorio, salón, cocina equipada nueva y baño moderno, además de aire acondicionado e internet de fibra. Clase energética C. Está sobre 860 m² de terreno con aparcamiento y árboles frutales, todo clasificado como urbano, y el anuncio dice que aproximadamente 388 m² más podrían construirse sujeto a permiso. Escuela a 1 km, aeropuerto de Pico a 30 minutos. Solo un dormitorio.
+
+https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k
 
 ### Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, Alentejo
 

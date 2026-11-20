@@ -1,6 +1,6 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 186 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 186 homes is €96,000 (€1,208 per m², from the 182 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 20 November 2026, RealHunt lists 190 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 190 homes is €97,000 (€1,217 per m², from the 186 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/spain · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 186 |
-| Median asking price | €96,000 |
-| Median price per m² | €1,208 (182 homes with a known size) |
+| Homes on RealHunt | 190 |
+| Median asking price | €97,000 |
+| Median price per m² | €1,217 (186 homes with a known size) |
 | Median size | 85 m² |
 | Cheapest and most expensive | €38,000 · €348,000 |
 | Median RealHunt score (70 to 98) | 85 |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/spain
 
-## The 186 homes, best score first
+## The 190 homes, best score first
 
 ### 2-bedroom house with terrace in Alpujarra de la Sierra
 
@@ -1424,6 +1424,14 @@ Recently reformed chalet ready to move into immediately. Spacious 130 m² distri
 
 https://realhunt.co/deal/live-pisos-4ds0f1
 
+### Top-floor two-bedroom flat with private roof terrace in Cabo Blanco, Tenerife
+
+€196,000 · Cabo Blanco, Arona, Tenerife · 82 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-20
+
+A bright 82 m2 flat on the top floor of a small block in Cabo Blanco, a local Canarian town about 10 minutes by car from the TF-1 and the south coast resorts of Los Cristianos. Open-plan living room and modern kitchen, two good bedrooms with built-in wardrobes, a bathroom with walk-in shower and a utility room. The best part is a private roof terrace behind its own gate, furnished with loungers and a table, with mountain views. Sold furnished and described as turnkey, with a supermarket, shops and bars close by. Community fees are not stated.
+
+https://realhunt.co/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k
+
 ### Bright renovated three-bedroom flat with modern kitchen in Bellavista, Sevilla
 
 €199,000 · Bellavista, Sevilla · 100 m² · 3 bedrooms · RealHunt score 80 · added 2026-11-08
@@ -1488,6 +1496,14 @@ https://realhunt.co/deal/es-costa-del-silencio-199k-024468
 
 https://realhunt.co/deal/es-biar-85k-66151
 
+### Fully renovated townhouse with no community fees in Roquetes, near Tortosa
+
+€120,000 · Raval de Crist, Roquetes, Tarragona · 82 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A 1920 townhouse in the quiet Raval de Crist area of Roquetes, next to Tortosa in southern Catalonia, completely renovated and ready to move into. 82 m2 of usable space on three floors: living room, dining room and fitted kitchen opening to a small walled patio, then a double and a single bedroom, a south-facing balcony and a bathroom with jetted tub, plus a semi-basement room for an office or gym with its own toilet. Beams and stone walls kept. Reversible air conditioning and fibre internet. The advert states zero community fees.
+
+https://realhunt.co/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k
+
 ### One-bedroom flat with a sunny terrace, shared pool and sea views in Almuñécar
 
 €149,000 · Almuñécar, Granada · 45 m² · 1 bedrooms · RealHunt score 77 · added 2026-11-18
@@ -1512,6 +1528,14 @@ Detached house built in 2025 and barely used, in the Costa de Madrid estate of S
 
 https://realhunt.co/deal/es-san-martin-de-valdeiglesias-175k-710397
 
+### Renovated top-floor flat facing the ocean and Teide in Mesa del Mar, Tenerife
+
+€185,980 · Mesa del Mar, Tacoronte, Tenerife · 51 m² · 1 bedrooms · RealHunt score 77 · added 2026-11-20
+
+A one-bedroom flat on the tenth and top floor of a seafront building in Mesa del Mar on the north coast of Tenerife, next to the beach and natural sea pools. The photos show open ocean from the windows and Mount Teide from the bedroom. The advert says plumbing, wiring, bathroom and kitchen were recently renewed, and it is sold furnished. Lift access. The building is having its paintwork redone; the owner has already paid that charge. The communal pool is closed with no reopening date given. About 51 m2. Monthly community fees are not stated.
+
+https://realhunt.co/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k
+
 ### 1-bedroom country house with fireplace in O Saviñao
 
 €80,000 · O Saviñao, Lugo, Spain · 50 m² · 1 bedrooms · RealHunt score 76 · added 2026-10-01
@@ -1519,6 +1543,14 @@ https://realhunt.co/deal/es-san-martin-de-valdeiglesias-175k-710397
 €80,000 for 50 m² and 1 bedroom in O Saviñao (Lugo), about €1,600/m². With fireplace. Ready to move in: listed as almost new, and not marked as occupied, rented or at auction. Ask for the nota simple before paying a deposit.
 
 https://realhunt.co/deal/es-o-savinao-80k-20772
+
+### Renovated village house with its own pool in Benijófar, Costa Blanca
+
+€195,000 · Benijófar, Alicante · 66 m² · 2 bedrooms · RealHunt score 76 · added 2026-11-20
+
+A single-storey house in the centre of Benijófar, a small town in the Vega Baja inland from the southern Costa Blanca, renovated and described as move-in ready. About 66 m2, south facing, with an open living room and kitchen, two double bedrooms with high ceilings and wooden beams, and a modern shower room. The private walled yard holds a pool of about 18 m2 and a dining terrace, which is rare at this price. Shops, schools and health services are in the town. Community fees and yearly tax are not stated in the advert.
+
+https://realhunt.co/deal/es-benijofar-renovated-village-house-private-pool-195k
 
 ### Bright duplex apartment with exposed brick in central Madrid
 

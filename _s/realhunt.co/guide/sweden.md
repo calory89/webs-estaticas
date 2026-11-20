@@ -36,7 +36,7 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 - [€59,000 · Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Sweden · score 92 · 156 m² · 4 bed
 - [€55,000 · 1914 home with lake views, guest house and double garage on 6,525 m²](https://realhunt.co/deal/DcaE8pfoH77) · Naggen, Medelpad, Sweden · score 92 · 120 m² · 2 bed
 
-[All 38 homes in Sweden](https://realhunt.co/homes/sweden)
+[All 39 homes in Sweden](https://realhunt.co/homes/sweden)
 
 [Costs, taxes and sources for Sweden](https://realhunt.co/costs/sweden) · [Buying-cost calculator for Sweden](https://realhunt.co/buying-costs/sweden) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -45,11 +45,11 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 - [Sweden vs Spain](https://realhunt.co/countries/spain-vs-sweden)
 - [Sweden vs Italy](https://realhunt.co/countries/italy-vs-sweden)
 - [Sweden vs United States](https://realhunt.co/countries/sweden-vs-united-states)
-- [Sweden vs Denmark](https://realhunt.co/countries/denmark-vs-sweden)
 - [Sweden vs France](https://realhunt.co/countries/france-vs-sweden)
+- [Sweden vs Denmark](https://realhunt.co/countries/denmark-vs-sweden)
 - [Sweden vs Japan](https://realhunt.co/countries/japan-vs-sweden)
 - [Sweden vs Poland](https://realhunt.co/countries/poland-vs-sweden)
-- [Sweden vs Germany](https://realhunt.co/countries/germany-vs-sweden)
+- [Sweden vs Greece](https://realhunt.co/countries/greece-vs-sweden)
 
 ### Sources
 

@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 - [45.000 € · Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg](https://realhunt.co/es/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · nota 83 · 49 m² · 1 dorm.
 - [55.000 € · Piso de época reformado por completo con balcón al sur, alquilado al 7,4%](https://realhunt.co/es/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · nota 83 · 66 m² · 1 dorm.
 
-[Las 20 casas en Alemania](https://realhunt.co/es/homes/germany)
+[Las 21 casas en Alemania](https://realhunt.co/es/homes/germany)
 
 [Gastos, impuestos y fuentes de Alemania](https://realhunt.co/es/costs/germany) · [Calculadora de gastos de compra para Alemania](https://realhunt.co/es/buying-costs/germany) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -45,8 +45,8 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 - [Alemania vs España](https://realhunt.co/es/countries/germany-vs-spain)
 - [Alemania vs Italia](https://realhunt.co/es/countries/germany-vs-italy)
 - [Alemania vs Estados Unidos](https://realhunt.co/es/countries/germany-vs-united-states)
-- [Alemania vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-germany)
 - [Alemania vs Francia](https://realhunt.co/es/countries/france-vs-germany)
+- [Alemania vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-germany)
 - [Alemania vs Suecia](https://realhunt.co/es/countries/germany-vs-sweden)
 - [Alemania vs Japón](https://realhunt.co/es/countries/germany-vs-japan)
 - [Alemania vs Polonia](https://realhunt.co/es/countries/germany-vs-poland)

@@ -1,6 +1,6 @@
 # Casas baratas en el Reino Unido: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 4 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 4 casas es de 121.000 € (1.806 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 126.500 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
+A 20 de noviembre de 2026, RealHunt publica 6 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 6 casas es de 126.500 € (1.807 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 4 (muestra pequeña) |
-| Precio de salida mediano | 121.000 € |
-| Precio mediano por m² | 1.806 € (3 casas de superficie conocida) |
-| Superficie mediana | 70 m² |
-| La más barata y la más cara | 82.600 € · 126.500 € |
-| Nota RealHunt mediana (de 70 a 98) | 88 |
+| Casas en RealHunt | 6 (muestra pequeña) |
+| Precio de salida mediano | 126.500 € |
+| Precio mediano por m² | 1.807 € (5 casas de superficie conocida) |
+| Superficie mediana | 72 m² |
+| La más barata y la más cara | 82.600 € · 198.400 € |
+| Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 3–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí. |
 | Impuesto anual sobre la vivienda | Los propietarios u ocupantes pagan el council tax al ayuntamiento, y muchos ayuntamientos de Inglaterra cobran a las segundas viviendas un recargo de hasta el 100% desde abril de 2025. |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-kingdom
 
-## Las 4 casas, de mejor a peor nota
+## Las 6 casas, de mejor a peor nota
 
 ### Casa de dos dormitorios con mucho estilo y chimenea abierta
 
@@ -73,6 +73,22 @@ https://realhunt.co/es/deal/uk-blyth-88k-869241
 Una casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida completamente amueblada y lista para mudarse. 70 m² con un hall de entrada, una cocina de planta abierta y sala de estar con todos los electrodomésticos incluidos, dos dormitorios y un cuarto de baño completamente equipado en la planta superior. El dormitorio delantero tiene vistas al fiordo de Moray. Acabados modernos en toda la propiedad, y el anuncio dice que funciona igual como casa permanente. Propiedad libre. Pidiendo ofertas por encima de £110,000 (aproximadamente €126,500), alrededor de €1,800/m². Banda impuesto municipal B.
 
 https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k
+
+### Casa adosada de época renovada con garaje doble en el pueblo de Lack, County Fermanagh
+
+198.400 € · Lack, County Fermanagh, Northern Ireland · 107 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-20
+
+Se piden £172,500 (aproximadamente €198,400) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada, manteniendo su carácter original. El salón se abre a una cocina y comedor contemporáneos, hay tres dormitorios con baño en suite en el principal, más un cuarto de baño familiar elegante. Calefacción central de gasóleo y doble acristalamiento de PVC. En el exterior tiene un solar final generoso con aparcamiento, patio y un gran garaje doble. Las fotos muestran colinas verdes junto a la casa y un interior luminoso y bien cuidado. Contribuciones £702 al año. EPC E52.
+
+https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k
+
+### Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del Norte
+
+195.400 € · Greyabbey, Northern Ireland · 80 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Se pide £169,950 (aproximadamente €195,400) por una casa adosada de 80 m² en el corazón del histórico Greyabbey, completamente renovada en los últimos cinco años. En la planta baja hay un salón comedor de planta abierta luminoso, una cocina moderna con electrodomésticos integrados y un WC. En la planta superior hay dos dormitorios dobles, el principal con baño en suite, más un cuarto de baño familiar. Un garaje y taller sustancial se sitúan detrás de la casa, con aparcamiento en la calle al frente. Es llave en mano y se vende como vivienda o base de vacaciones; actualmente se gestiona como alquiler vacacional. Contribuciones £1,299 al año.
+
+https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k
 
 ### Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, Galloway
 

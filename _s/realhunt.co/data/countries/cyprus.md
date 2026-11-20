@@ -1,6 +1,6 @@
 # Cheap homes in Cyprus: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 5 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 5 homes is €341,000 (€3,723 per m², from the 5 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 5 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 20 November 2026, RealHunt lists 6 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 6 homes is €341,000 (€3,723 per m², from the 6 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 6 homes this is a small sample, so the median for Cyprus is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/cyprus · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 5 (small sample) |
+| Homes on RealHunt | 6 (small sample) |
 | Median asking price | €341,000 |
-| Median price per m² | €3,723 (5 homes with a known size) |
+| Median price per m² | €3,723 (6 homes with a known size) |
 | Median size | 84 m² |
 | Cheapest and most expensive | €130,000 · €470,000 |
 | Median RealHunt score (70 to 98) | 84 |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/cyprus
 
-## The 5 homes, best score first
+## The 6 homes, best score first
 
 ### Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views
 
@@ -82,6 +82,14 @@ https://realhunt.co/deal/cy-protaras-470k-585375
 A resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca. 70 m² of covered area plus a 14 m² covered balcony, an open-plan living room with fitted kitchen, a family bathroom and a guest WC with shower, and air conditioning throughout. Sold fully furnished with an allocated covered parking bay, a storage unit and use of the communal pool. The advert gives 10 minutes to the sea and 20 minutes to Larnaca airport. Asking €130,000, about €1,860/m². Communal fees: about €1,295 a year.
 
 https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874
+
+### Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta
+
+€187,000 · Paralimni, Famagusta · 74 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+A two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated. 74 m² inside plus an 11 m² front veranda and a 5 m² balcony with a partial sea view from the main bedroom. New kitchen with integrated dishwasher and oven, a guest WC, a bathroom with a walk-in shower, new air conditioning, upgraded fitted wardrobes and a new solar hot-water system. Allocated parking at the rear. The advert puts the nearest beach 10 minutes away. Sold unfurnished. Asking €187,000, about €2,530/m². Communal fees are not stated.
+
+https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
 
 ### Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, Paphos
 

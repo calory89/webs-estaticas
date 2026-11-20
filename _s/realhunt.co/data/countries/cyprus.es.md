@@ -1,6 +1,6 @@
 # Casas baratas en Chipre: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 5 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 5 casas es de 341.000 € (3.723 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
+A 20 de noviembre de 2026, RealHunt publica 6 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 6 casas es de 341.000 € (3.723 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/cyprus · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 5 (muestra pequeña) |
+| Casas en RealHunt | 6 (muestra pequeña) |
 | Precio de salida mediano | 341.000 € |
-| Precio mediano por m² | 3.723 € (5 casas de superficie conocida) |
+| Precio mediano por m² | 3.723 € (6 casas de superficie conocida) |
 | Superficie mediana | 84 m² |
 | La más barata y la más cara | 130.000 € · 470.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 84 |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/cyprus
 
-## Las 5 casas, de mejor a peor nota
+## Las 6 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar
 
@@ -82,6 +82,14 @@ https://realhunt.co/es/deal/cy-protaras-470k-585375
 Un apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de Larnaca. 70 m² de área cubierta más un balcón cubierto de 14 m², una sala de estar de plano abierto con cocina equipada, un cuarto de baño familiar y un WC de invitados con ducha, y aire acondicionado en todas partes. Se vende completamente amueblado con una plaza de aparcamiento cubierto asignada, un trastero y uso de la piscina comunitaria. El anuncio da 10 minutos al mar y 20 minutos al aeropuerto de Larnaca. Precio solicitado €130.000, aproximadamente €1.860/m². Cuotas comunitarias: aproximadamente €1.295 al año.
 
 https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874
+
+### Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, Famagusta
+
+187.000 € · Paralimni, Famagusta · 74 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Una casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada. 74 m² de interior más una verandá delantera de 11 m² y un balcón de 5 m² con vista parcial al mar desde el dormitorio principal. Cocina nueva con lavavajillas y horno integrados, un WC de cortesía, un cuarto de baño con ducha de obra, aire acondicionado nuevo, armarios empotrados mejorados y un nuevo sistema de agua caliente solar. Aparcamiento asignado en la parte trasera. El anuncio sitúa la playa más cercana a 10 minutos. Se vende sin amueblar. Se pide 187.000 euros, aproximadamente 2.530 euros/m². Los gastos comunitarios no se especifican.
+
+https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
 
 ### Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, Pafos
 

@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 68 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 68 homes is €59,000 (€1,014 per m², from the 43 homes with a known size); the cheapest costs €12,000 and the most expensive €195,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 20 November 2026, RealHunt lists 77 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 77 homes is €75,000 (€1,167 per m², from the 52 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 68 |
-| Median asking price | €59,000 |
-| Median price per m² | €1,014 (43 homes with a known size) |
-| Median size | 76 m² |
-| Cheapest and most expensive | €12,000 · €195,000 |
-| Median RealHunt score (70 to 98) | 83 |
+| Homes on RealHunt | 77 |
+| Median asking price | €75,000 |
+| Median price per m² | €1,167 (52 homes with a known size) |
+| Median size | 80 m² |
+| Cheapest and most expensive | €12,000 · €197,000 |
+| Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
 | Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify). |
 | Yearly property tax | IMU 0.4-1.06% on second homes (on cadastral value). |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 68 homes, best score first
+## The 77 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -173,6 +173,14 @@ https://realhunt.co/deal/Dc82VcSjAIe
 
 https://realhunt.co/deal/lake-como-plesio-89000
 
+### Renovated hillside house with big terraces near Castellino Tanaro, Piedmont
+
+€115,000 · Viorno, Castellino Tanaro, Piedmont · 180 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-20
+
+A former barn turned into a home in the small hamlet of Viorno, about 2 km from Castellino Tanaro in the hills of Cuneo province. The advert lists the work done: new roof in 2010, all wiring renewed, plumbing replaced in 2015, modern double-glazed windows, new shutters, replastered walls and a new terrace in 2019. About 180 m2 with a dining room and open kitchen, TV room, two bedrooms and two bathrooms, plus a tavern with fireplace, two cellars and a garage. Wood stoves, no central heating. Described as in excellent condition and ready to move in, at roughly 640 euros per m2.
+
+https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k
+
 ### Stone house with a swimming pool in a Tuscan village
 
 €24,000 · Tuscany, Italy · RealHunt score 85 · added 2026-09-23
@@ -196,6 +204,14 @@ https://realhunt.co/deal/Dc8TyIDkexU
 
 
 https://realhunt.co/deal/DdOGB56ABXI
+
+### Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche
+
+€120,000 · San Lorenzo in Campo, Le Marche · 130 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-20
+
+An early 1900s detached house in the centre of San Lorenzo in Campo, a hill village in Pesaro and Urbino province, about 25 km from the Marotta beaches. The renovated, furnished first floor (65 m2) has a kitchen with dining area, two bedrooms and a bathroom; the ground floor (65 m2) holds a garage and two storage rooms. The owner lists wall and ceiling insulation, new floors, exterior painting and certified wiring, plumbing and boiler. A fenced south-facing garden of about 350 m2, a covered pergola and a carport. Pharmacy, shops and schools are a short walk away.
+
+https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k
 
 ### Medieval-village house with a terrace above a sea of clouds in Tuscany
 
@@ -261,6 +277,14 @@ A semi-detached house of 101 m² in Torremezzo, the seaside part of Falconara Al
 
 https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k
 
+### Renovated country house with garden and vineyard views near Acqui Terme
+
+€180,000 · Acqui Terme, Piedmont · 200 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-20
+
+A large house about 2 km from the spa town of Acqui Terme, free on three sides and largely renovated according to the advert. About 200 m2 on two floors: entrance hall, living room, kitchen with a French window to the private garden and a dining room under a brick vault on the ground floor, with bedrooms, a bathroom, a laundry and a balcony with open views upstairs. The photos show a paved garden terrace and vineyards behind. Independent gas central heating, a fireplace and parking space. Around 900 euros per m2 for a move-in home in the Monferrato wine hills.
+
+https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k
+
 ### Two-bedroom apartment with two balconies in a historic village
 
 €16,000 · Fiamignano, Rieti, Lazio, Italy · 40 m² · RealHunt score 83 · added 2026-09-23
@@ -324,6 +348,14 @@ https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 Charming 2-bedroom apartment in the historic Tuscan village of Montieri. 2 bedrooms, 1 bathroom, 51 m² (549 sq ft). Set along a charming alley leading toward the historic castle square, the apartment has a comfortable living room, a kitchenette, two bedrooms and a private terrace with attractive views.
 
 https://realhunt.co/deal/DdSm-JkiJem
+
+### Renovated period flat with vaulted ceilings in central Acqui Terme, Piedmont
+
+€140,000 · Acqui Terme, Piedmont · 120 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+A second-floor flat of about 120 m2 in a period building in the centre of Acqui Terme, the Piedmont spa town known for its hot springs and wine country. The advert says it was completely renovated, keeping the vaulted ceilings and original marble fireplace, with new wooden floors throughout. Living room and kitchen divided by a corten steel wall, a large bedroom, a second connected bedroom or study, and a bathroom with tub. Three balconies, two over the street and one inside the courtyard. Independent gas heating. No lift, so stairs only. About 1,170 euros per m2.
+
+https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k
 
 ### Cosy mountain townhouse near the Abetone ski slopes, sold furnished
 
@@ -396,6 +428,14 @@ https://realhunt.co/deal/it-sardinia-vignola-sea-view-160k
 A finely renovated 90 m² home over three floors in the small Valdilucciole hamlet near Città della Pieve, plus a 24 m² annexe with a living/sleeping area: beamed ceilings, a living room with a pellet stove, a kitchen, two bathrooms and three bedrooms with countryside views. A fenced garden and orchard with olive, peach, pear, fig and plum trees and a row of table grapes. New roof in 2015 and double-glazed wooden windows. Asking €160,000, about €1,404/m².
 
 https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k
+
+### Renovated country house with panoramic porch and olive grove near Arpino, Lazio
+
+€180,000 · Arpino, Frosinone, Lazio · 147 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-20
+
+A recently renovated single-storey country house on the hills around Arpino, within walking distance of the historic town. The photos show new bathrooms, white walls, wood floors and a large covered porch with a beamed wooden roof looking over olive trees and mountains. It has a fireplace, a pellet stove, air conditioning, new double glazing and metal shutters, plus a cellar. The garden around the house is fenced and gated, and the plot of about 11,751 m2 is planted with olives. About 147 m2 for 180,000 euros, under 1,250 euros per m2.
+
+https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k
 
 ### Colorful one-bedroom apartment with attic and balcony
 
@@ -477,6 +517,14 @@ A three-room first-floor home with a fully independent entrance in the quiet Mur
 
 https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
 
+### Detached town house with three en-suite bedrooms in old Iglesias, Sardinia
+
+€155,000 · Iglesias, Sardinia · 104 m² · 3 bedrooms · RealHunt score 79 · added 2026-11-20
+
+A detached house in the historic centre of Iglesias in south-west Sardinia, about 15 minutes by car from the Sulcis coast and the beach at Masua, according to the advert. About 104 m2 with three double bedrooms, each with its own bathroom, plus a living room and kitchenette. The owner lists new windows and doors, heat pumps for heating and cooling, carpenter-made furniture and a wrought-iron staircase. Sold fully furnished and equipped, ready to move in. Light from two street fronts. Listed by the owner.
+
+https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
+
 ### Restored brick house with courtyard in the old centre of Amandola, Le Marche
 
 €109,000 · Amandola, Le Marche · 85 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-18
@@ -492,6 +540,14 @@ https://realhunt.co/deal/it-marche-amandola-restored-brick-house-109k
 A detached stone house built in 2006, so it has the look of an old Umbrian cottage without the old-house problems. It stands at the edge of the hamlet of Colforcella, about 3 km from Cascia, on roughly 600 m2 of its own land with open views over the valley and hills. Inside are about 84 m2 on two floors: two living areas with fireplaces, a fitted kitchen, one double bedroom and two bathrooms, with beams and terracotta floors. Gas heating, private parking and a small store. Sold fully furnished by the owner and described as ready to use.
 
 https://realhunt.co/deal/it-umbria-cascia-stone-house-valley-view-130k
+
+### Stone farmhouse with four bedrooms and 3 hectares of land near Gubbio, Umbria
+
+€148,000 · Gubbio, Perugia, Umbria · 110 m² · 4 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A seismically reinforced stone farmhouse portion in a sunny, secluded spot 20 minutes from medieval Gubbio, with its own entrance and about 3 hectares of land. The 110 m2 first floor holds a large kitchen, a living room with a fireplace, four double bedrooms and two bathrooms. Below are another 110 m2 of storerooms that could become a second flat. There is also a barn with a wood-fired oven and a tool shed. The photos show a clean stone exterior and plain, tidy rooms. At 148,000 euros this is a lot of house and land for central Italy.
+
+https://realhunt.co/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k
 
 ### House in Ventimiglia di Sicilia, Palermo
 
@@ -533,6 +589,14 @@ A second-floor flat of about 73 m2 in a small three-storey building with shared 
 
 https://realhunt.co/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
 
+### Newly renovated two-bed flat with sea-view terrace in Castellaro, Liguria
+
+€197,000 · Castellaro, Imperia, Liguria · 76 m² · 2 bedrooms · RealHunt score 77 · added 2026-11-20
+
+A two-bedroom flat of about 76 m2 in a small building 300 metres from the hill village of Castellaro, freshly renovated and ready to move into, with no condominium fees. The terrace has wide views over olive groves to the sea, which also shows from the bedroom windows. Inside are a living room with a new kitchen, a main bedroom with walk-in wardrobe and en suite, a second bathroom and a laundry area. Heating and cooling come from inverter units, with double glazing and electric shutters. A 43 m2 garage below can be bought separately. Asking 197,000 euros.
+
+https://realhunt.co/deal/it-liguria-castellaro-renovated-sea-view-flat-no-fees-197k
+
 ### Tuscan cottage with an olive-tree garden 5 minutes from Saturnia hot springs
 
 €139,000 · Montemerano, Maremma, Tuscany · 76 m² · 2 bedrooms · RealHunt score 76 · added 2026-10-16
@@ -564,6 +628,14 @@ https://realhunt.co/deal/it-locorotondo-75k-3me3r0
 Set in a peaceful hilltop village in Liguria, this bright home pairs generous living spaces, two fireplaces and a panoramic terrace with beautiful views across the surrounding mountains. With three spacious bedrooms and a move-in-ready interior, it is a welcoming place to enjoy authentic Tuscan village life.
 
 https://realhunt.co/deal/DdLhHoAESiS
+
+### Restored medieval hamlet home with two en-suite bedrooms near Spoleto, Umbria
+
+€155,000 · La Torretta, Spoleto, Umbria · 73 m² · 2 bedrooms · RealHunt score 75 · added 2026-11-20
+
+A recently renovated house on three levels with its own entrance, in a small medieval hamlet 5 km from Spoleto. The ground floor is a living room with kitchen, and each upper floor has a bedroom with a fireplace and its own bathroom. Finishes are modern resin floors set against vaulted ceilings and rough stone-effect walls, and the advert calls the condition perfect. With it come a 5 m2 laundry, an 11 m2 room with bathroom that still needs work, and two small plots of 126 and 63 m2. The commercial area is 73 m2. Asking 155,000 euros.
+
+https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155k
 
 ### House with garden in Borgorose, Rieti
 

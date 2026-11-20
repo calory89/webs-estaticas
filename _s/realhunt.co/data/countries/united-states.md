@@ -1,6 +1,6 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 52 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 52 homes is €213,600 (€1,654 per m², from the 52 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 20 November 2026, RealHunt lists 59 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 59 homes is €214,100 (€1,580 per m², from the 59 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 52 |
-| Median asking price | €213,600 |
-| Median price per m² | €1,654 (52 homes with a known size) |
-| Median size | 116 m² |
+| Homes on RealHunt | 59 |
+| Median asking price | €214,100 |
+| Median price per m² | €1,580 (59 homes with a known size) |
+| Median size | 118 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
-| Median RealHunt score (70 to 98) | 85 |
+| Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China. |
 | Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit. |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 52 homes, best score first
+## The 59 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -74,6 +74,14 @@ https://realhunt.co/deal/chapmanville-82875
 
 https://realhunt.co/deal/mckees-rocks-65428
 
+### Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia
+
+€223,300 · Lynchburg, Virginia · 289 m² · 3 bedrooms · RealHunt score 93 · added 2026-11-20
+
+Asking US$245,000 (about €223,300) for a renovated 1889 Victorian of about 289 m² in Lynchburg, a historic city on the James River at the foot of the Blue Ridge. It keeps its high ceilings, tall windows, hardwood floors and ornate carved fireplace mantels, and the white kitchen has stainless appliances. The main bedroom suite and the laundry are on the ground floor. Outside there is a deep covered front porch, a planted front garden and the original carriage house for storage. The metal roof and blue siding look well kept in the photos. Yearly property tax US$1,638, no HOA fee.
+
+https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k
+
 ### Updated 2-bed house in Cleveland, Oklahoma
 
 €68,917 · Cleveland, Oklahoma · 98 m² · 2 bedrooms · RealHunt score 91 · added 2026-09-23
@@ -89,6 +97,14 @@ https://realhunt.co/deal/cleveland-68917
 Step into the charm of the historic Savage House, a beautiful 1900 Victorian in Scotland Neck, North Carolina: 2,143 sq ft (199 m²) with three bedrooms and two bathrooms, gingerbread trim, a front porch reached by a brick path, high ceilings and freshly finished interiors with wood floors, on a large shaded lot. Asking $169,900 (about €151,000), about €759/m².
 
 https://realhunt.co/deal/us-north-carolina-victorian-170k
+
+### Updated 1886 house with a fenced garden and an oversized garage in La Crosse, Wisconsin
+
+€195,800 · La Crosse, Wisconsin · 142 m² · 3 bedrooms · RealHunt score 90 · added 2026-11-20
+
+Asking US$214,900 (about €195,800) for a three-bedroom house of about 142 m² in La Crosse, a university city on the Mississippi in western Wisconsin. Built in 1886, it has had recent updates: fresh paint in many rooms, new central air conditioning, a new water heater and a new deck. The front opens into a bright enclosed porch room, and the galley kitchen has wood-look floors and plenty of cupboards. The fully fenced back garden is neatly landscaped, with a patio and fire pit, and the oversized garage holds three or more cars plus storage. One bathroom. Yearly property tax US$3,565, no HOA fee.
+
+https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k
 
 ### Victorian house with original oak woodwork opposite a park in Marietta, Ohio
 
@@ -114,6 +130,14 @@ https://realhunt.co/deal/us-freeport-83k-605154
 
 https://realhunt.co/deal/clairton-85929
 
+### Three-bedroom house with a big fenced yard near the Mississippi in Red Wing
+
+€209,600 · Red Wing, Minnesota · 137 m² · 3 bedrooms · RealHunt score 89 · added 2026-11-20
+
+Asking US$230,000 (about €209,600) for a 1996 house of about 137 m² on a quiet dead-end street in Red Wing, a historic river town under wooded bluffs on the Mississippi. It has been freshly painted, with hardwood floors on the main level, where the three bedrooms, kitchen and an updated full bathroom are. The finished lower level adds a family room with a gas fireplace and a half bath. Outside there is a deck, a huge fenced back garden, a shed and an attached two-car garage. The aerial photos show the river and Colvill Park close by. Yearly property tax US$2,848, no HOA fee.
+
+https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k
+
 ### Move-in ready 3-bed house in McKeesport, Pennsylvania
 
 €82,875 · McKeesport, Pennsylvania · 95 m² · 3 bedrooms · RealHunt score 88 · added 2026-09-23
@@ -129,6 +153,22 @@ https://realhunt.co/deal/mckeesport-82875
 Built in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land minutes from the North Fork of the White River, Bryant Creek and the Mark Twain National Forest. Full-time home or weekend retreat. That is about €84,500.
 
 https://realhunt.co/deal/us-dora-84k-329130
+
+### Updated four-bedroom house with a new kitchen in La Crosse, Wisconsin
+
+€214,100 · La Crosse, Wisconsin · 127 m² · 4 bedrooms · RealHunt score 88 · added 2026-11-20
+
+Asking US$235,000 (about €214,100) for a house of about 127 m² in La Crosse, a university city on the Mississippi River in western Wisconsin. Built in 1889, it has been updated from top to bottom: a new kitchen with white shaker units, subway tiles and a gas range, stylish new bathrooms including a marble-look shower, light wood-look floors and an open living and dining area. The advert lists four bedrooms. There is a front porch, a fenced side lawn and room behind for a patio or a future garage. Yearly property tax US$2,903, no HOA fee.
+
+https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k
+
+### Well-kept 1899 house with a new double garage near Chester Park in Duluth
+
+€232,400 · Duluth, Minnesota · 148 m² · 3 bedrooms · RealHunt score 88 · added 2026-11-20
+
+Asking US$255,000 (about €232,400) for a house of about 148 m² in Duluth, the hilly port city on Lake Superior. Built in 1899, it has had its furnace, roof, windows, siding, doors, wiring and plumbing all replaced since 2011. Downstairs are spacious living and dining rooms with hardwood floors, a white kitchen with stainless appliances and a door to the back deck, and a half bath with laundry. The three bedrooms and an updated full bathroom are upstairs. There is a newer two-car garage plus an extra parking space, and Chester Park and downtown are close. Yearly property tax US$3,368, no HOA fee.
+
+https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k
 
 ### Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa
 
@@ -185,6 +225,14 @@ https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k
 An updated 2-bed, 2-bath top-floor condo of 1,197 sq ft in the gated Las Vistas community, with a private balcony, an in-unit washer and dryer and plenty of light. Palm-lined gardens, a large pool and a gym; close to CityPlace Doral, parks, schools and the Palmetto Expressway, about 20 minutes from Miami Airport and Brickell. Asking US$249,000.
 
 https://realhunt.co/deal/us-doral-8215-502-249k
+
+### 1927 brick house with a three-season room and pergola garden in Manitowoc, Wisconsin
+
+€227,700 · Manitowoc, Wisconsin · 146 m² · 4 bedrooms · RealHunt score 87 · added 2026-11-20
+
+Asking US$249,900 (about €227,700) for a 1927 brick house of about 146 m² on the north side of Manitowoc, a port town on Lake Michigan. It has four bedrooms, two bathrooms, hardwood floors and its original wood trim and doors. A bright three-season room with wood ceiling opens off the front, and an upstairs porch faces the sunsets. The garden is the star: brick paths, tiered beds, raspberry canes and a patio under a grape-covered pergola, plus a detached two-car garage. The photos show a spotless, cared-for home. Yearly property tax US$2,911, no HOA fee.
+
+https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 
 ### Dual-unit investment property with rental income in Belmont Heights, Tampa
 
@@ -273,6 +321,14 @@ https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k
 Just outside Kenton, in the Ottawa National Forest area of Michigan's Upper Peninsula, a well-kept 1984 A-frame on 2.49 acres: 1,097 sq ft (102 m²) with three bedrooms, a kitchen with an island, a vaulted wood-panelled loft, a sunroom looking onto the woods, a deck and a fire pit. Snowmobile and ATV trails start nearby. Asking $190,000 (about €173,100), about €1,700/m².
 
 https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k
+
+### Move-in ready three-bedroom house a short walk from downtown Bedford, Virginia
+
+€227,700 · Bedford, Virginia · 109 m² · 3 bedrooms · RealHunt score 85 · added 2026-11-20
+
+Asking US$249,996 (about €227,700) for a freshly updated 1960 house of about 109 m² in Bedford, a small town in the foothills of Virginia's Blue Ridge, within a short walk of the shops and restaurants downtown. It has three bedrooms, two full bathrooms, hardwood floors and a bright white kitchen with stainless appliances. The main costly items are recent: the roof was replaced in 2020, the heating and cooling system is four years old and the fridge one. Outside there is a lawn, a covered patio and a second sitting area under a metal canopy, plus a storage shed. Yearly property tax US$1,025, no HOA fee.
+
+https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k
 
 ### Bright corner split-level condo with 2.5 baths at Paragon, Plantation
 

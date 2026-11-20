@@ -1,6 +1,6 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 38 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 38 casas es de 73.000 € (701 € por m², calculado con las 20 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 39 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 39 casas es de 72.000 € (680 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 38 |
-| Precio de salida mediano | 73.000 € |
-| Precio mediano por m² | 701 € (20 casas de superficie conocida) |
+| Casas en RealHunt | 39 |
+| Precio de salida mediano | 72.000 € |
+| Precio mediano por m² | 680 € (21 casas de superficie conocida) |
 | Superficie mediana | 110 m² |
 | La más barata y la más cara | 22.000 € · 99.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/sweden
 
-## Las 38 casas, de mejor a peor nota
+## Las 39 casas, de mejor a peor nota
 
 ### Villa acogedora con sauna, a 100 m del río
 
@@ -112,6 +112,14 @@ https://realhunt.co/es/deal/Dc6j54PF6hV
 Piso pasante de 84 m² en sexta planta con ascensor y vistas abiertas sobre el barrio: salón-comedor amplio, tres buenos dormitorios, cocina en buen estado, dos aseos y un balcón grande y soleado. Suelos claros y habitaciones blancas y luminosas, listo para entrar. Cooperativa sueca (bostadsrätt) con cuota mensual de 7.586 SEK (unos 680 €). Copenhague queda a unos 40 minutos en coche por el puente de Øresund. Precio 750.000 SEK (unos 67.200 €), unos 800 €/m².
 
 https://realhunt.co/es/deal/se-malmo-rosengard-67k-1678590
+
+### Villa de madera roja renovada con amplias vistas del valle cerca de Fränsta, Västernorrland
+
+68.000 € · Rombäck, Fränsta, Västernorrland · 116 m² · 2 dormitorios · nota RealHunt 90 · añadida el 2026-11-20
+
+Se piden 750,000 SEK (aproximadamente €68,000) por una casa de madera de dos plantas de 116 m² de 1915 en una parcela de 2,820 m², menos de €600 por m². El anuncio dice que puedes mudarte directamente: cocina, cuarto de baño y superficies fueron renovados en 2016, la instalación eléctrica fue actualizada recientemente y está conectado el acceso de banda ancha por fibra óptica. En la planta baja hay una cocina con isla y estufa de leña antigua, comedor, salón con chimenea y estufa de azulejos, y cuarto de baño con ducha. En la planta superior hay dos dormitorios. Un garaje y granero dan espacio de almacenamiento, y la casa se abre a un amplio valle verde. Costes de funcionamiento 36,085 SEK al año.
+
+https://realhunt.co/es/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek
 
 ### Villa sueca con porche acristalado y gran jardín en Gnarp
 

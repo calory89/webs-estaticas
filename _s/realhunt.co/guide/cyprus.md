@@ -33,9 +33,10 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 - [€350,000 · Furnished townhouse with a private pool, 100 m from the sea in Protaras](https://realhunt.co/deal/cy-protaras-350k-257111) · Protaras, Famagusta · score 92 · 94 m² · 2 bed
 - [€470,000 · Sea-front ground-floor flat with a 50 m² terrace and overflow pool in Protaras](https://realhunt.co/deal/cy-protaras-470k-585375) · Protaras, Famagusta · score 84 · 85 m² · 2 bed
 - [€130,000 · Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874) · Mazotos, Larnaca · score 83 · 70 m² · 2 bed
+- [€187,000 · Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k) · Paralimni, Famagusta · score 82 · 74 m² · 2 bed
 - [€195,000 · Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, Paphos](https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684) · Mesa Chorio, Paphos · score 78 · 74 m² · 2 bed
 
-[All 5 homes in Cyprus](https://realhunt.co/homes/cyprus)
+[All 6 homes in Cyprus](https://realhunt.co/homes/cyprus)
 
 [Costs, taxes and sources for Cyprus](https://realhunt.co/costs/cyprus) · [Buying-cost calculator for Cyprus](https://realhunt.co/buying-costs/cyprus) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,8 +45,8 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 - [Cyprus vs Spain](https://realhunt.co/countries/cyprus-vs-spain)
 - [Cyprus vs Italy](https://realhunt.co/countries/cyprus-vs-italy)
 - [Cyprus vs United States](https://realhunt.co/countries/cyprus-vs-united-states)
-- [Cyprus vs Denmark](https://realhunt.co/countries/cyprus-vs-denmark)
 - [Cyprus vs France](https://realhunt.co/countries/cyprus-vs-france)
+- [Cyprus vs Denmark](https://realhunt.co/countries/cyprus-vs-denmark)
 - [Cyprus vs Sweden](https://realhunt.co/countries/cyprus-vs-sweden)
 - [Cyprus vs Japan](https://realhunt.co/countries/cyprus-vs-japan)
 - [Cyprus vs Poland](https://realhunt.co/countries/cyprus-vs-poland)

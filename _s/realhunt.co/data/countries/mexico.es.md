@@ -1,6 +1,6 @@
 # Casas baratas en México: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 12 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 12 casas es de 83.448 € (1.266 € por m², calculado con las 12 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 160.200 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 14 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 14 casas es de 86.100 € (1.266 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 216.600 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/mexico · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 12 |
-| Precio de salida mediano | 83.448 € |
-| Precio mediano por m² | 1.266 € (12 casas de superficie conocida) |
-| Superficie mediana | 71 m² |
-| La más barata y la más cara | 50.575 € · 160.200 € |
+| Casas en RealHunt | 14 |
+| Precio de salida mediano | 86.100 € |
+| Precio mediano por m² | 1.266 € (14 casas de superficie conocida) |
+| Superficie mediana | 75 m² |
+| La más barata y la más cara | 50.575 € · 216.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 3,5–8% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, pero en la Zona Restringida (dentro de 50 km de la costa o 100 km de fronteras, que cubre Tulum y Playa del Carmen) solo mediante un fideicomiso bancario o una empresa mexicana; propiedad directa en otros lugares. |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/mexico
 
-## Las 12 casas, de mejor a peor nota
+## Las 14 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco
 
@@ -113,6 +113,22 @@ https://realhunt.co/es/deal/mx-mazatlan-86k-809756
 89 m², 2 dormitorios, 2 baños. Precio: 1.950.000 MXN.
 
 https://realhunt.co/es/deal/mazatlan-98621
+
+### Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida
+
+216.600 € · Mérida, Yucatán · 160 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-20
+
+Se pide MX$4,450,000 (aproximadamente €216,600) por Casa Ya'axche', una casa colonial de una planta de 160 m² en un solar de 279 m² en Barrio de Santiago, uno de los barrios antiguos del centro de Mérida. Conserva sus muros de piedra, techos altos y suelos de cemento con motivos de baldosas. El salón, cocina y comedor se abren a una larga piscina, y hay jardines interiores con árboles maduros, zona de barbacoa y terraza. Ambos dormitorios tienen su propio cuarto de baño, aire acondicionado y ventiladores, y hay un tercer baño junto al patio, una plaza de garaje cubierta y una sala de lavandería. Las fotos la muestran renovada y amueblada.
+
+https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m
+
+### Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, Querétaro
+
+152.100 € · El Marqués, Querétaro · 146 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-11-20
+
+Se pide MX$3.125.000 (aproximadamente €152.100) por una casa de dos plantas de tres años de antigüedad de aproximadamente 146 m² en Alleza Mirador, una urbanización cerrada en El Marqués en las afueras de la ciudad de Querétaro. Tiene tres dormitorios, dos baños completos y un aseo de invitados, una cocina abierta con isla y electrodomésticos de acero inoxidable, una lavandería, armarios empotrados y una terraza trasera cubierta con tragaluces. Dos coches aparcan en la parte delantera. El anuncio lo describe como en excelente estado, y las fotos muestran un hogar ordenado y moderno. Los residentes comparten una piscina, gimnasio, pistas de tenis y pádel, zona de juegos y áreas de barbacoa. Cuota de mantenimiento no indicada.
+
+https://realhunt.co/es/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m
 
 ### Piso de 2 dormitorios en Mazatlán, Sinaloa
 

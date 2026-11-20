@@ -31,12 +31,12 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 
 - [€82,875 · Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875) · Chapmanville, West Virginia · score 95 · 176 m² · 2 bed
 - [€78,426 · Updated 3-bed house in Huntington, West Virginia](https://realhunt.co/deal/huntington-78426) · Huntington, West Virginia · score 95 · 150 m² · 3 bed
+- [€223,300 · Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k) · Lynchburg, Virginia · score 93 · 289 m² · 3 bed
 - [€65,428 · Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428) · McKees Rocks, Pennsylvania · score 93 · 106 m² · 3 bed
 - [€153,900 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 91 · 199 m² · 3 bed
 - [€68,917 · Updated 2-bed house in Cleveland, Oklahoma](https://realhunt.co/deal/cleveland-68917) · Cleveland, Oklahoma · score 91 · 98 m² · 2 bed
-- [€200,000 · Victorian house with original oak woodwork opposite a park in Marietta, Ohio](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k) · Marietta, Ohio · score 90 · 191 m² · 3 bed
 
-[All 52 homes in the United States](https://realhunt.co/homes/united-states)
+[All 59 homes in the United States](https://realhunt.co/homes/united-states)
 
 [Costs, taxes and sources for United States](https://realhunt.co/costs/united-states) · [Buying-cost calculator for United States](https://realhunt.co/buying-costs/united-states) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,12 +44,12 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 
 - [United States vs Spain](https://realhunt.co/countries/spain-vs-united-states)
 - [United States vs Italy](https://realhunt.co/countries/italy-vs-united-states)
-- [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
 - [United States vs France](https://realhunt.co/countries/france-vs-united-states)
+- [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
 - [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
 - [United States vs Japan](https://realhunt.co/countries/japan-vs-united-states)
 - [United States vs Poland](https://realhunt.co/countries/poland-vs-united-states)
-- [United States vs Germany](https://realhunt.co/countries/germany-vs-united-states)
+- [United States vs Greece](https://realhunt.co/countries/greece-vs-united-states)
 
 ### Sources
 

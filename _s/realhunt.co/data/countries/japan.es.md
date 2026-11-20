@@ -1,6 +1,6 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 32 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 32 casas es de 43.240 € (398 € por m², calculado con las 16 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 91.080 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 35 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 35 casas es de 44.160 € (427 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 107.500 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 32 |
-| Precio de salida mediano | 43.240 € |
-| Precio mediano por m² | 398 € (16 casas de superficie conocida) |
+| Casas en RealHunt | 35 |
+| Precio de salida mediano | 44.160 € |
+| Precio mediano por m² | 427 € (19 casas de superficie conocida) |
 | Superficie mediana | 88 m² |
-| La más barata y la más cara | 7.400 € · 91.080 € |
+| La más barata y la más cara | 7.400 € · 107.500 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia. |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/japan
 
-## Las 32 casas, de mejor a peor nota
+## Las 35 casas, de mejor a peor nota
 
 ### Chalet de montaña con estufa de leña y altillo en el bosque de Hida
 
@@ -299,6 +299,22 @@ Una casa de madera de dos plantas terminada en enero de 2018, mucho más nueva q
 
 https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
 
+### Casa de cuatro dormitorios de 2004 en Misaki en la península de Miura, Kanagawa
+
+79.500 € · Misaki-machi Moroiso, Miura, Kanagawa · 83 m² · 4 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa de madera de dos plantas terminada en diciembre de 2004 en Moroiso, en el lado Misaki de la península de Miura en Kanagawa. 82,8 m² con cuatro habitaciones más una zona de salón, comedor y cocina, almacenamiento en cada habitación, un cuarto de baño con ventana y calentador, y un balcón, en una parcela de 123 m² en dominio absoluto con aparcamiento. Desde la estación de Misakiguchi hay un viaje de 12 minutos en autobús y 3 minutos a pie. El propietario aún vive allí y la fecha de entrega es negociable. Pidiendo 13.900.000 yenes (aproximadamente 79.500 euros), menos de 1.000 euros/m².
+
+https://realhunt.co/es/deal/jp-miura-misaki-four-bed-house-2004-80k
+
+### Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, Hiroshima
+
+107.500 € · Mukaishima, Onomichi, Hiroshima · 104 m² · 4 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una casa de madera de dos plantas construida en enero de 2014 en Mukaishima, la isla que mira a Onomichi a través de un estrecho brazo del Mar Interior de Seto. 103,5 m² con cuatro dormitorios, una zona de salón, comedor y cocina orientada al sur que se abre a una habitación tatami, un vestidor y un área cubierta para secar, en una parcela de 183 m² en dominio absoluto con aparcamiento para cuatro coches. La casa está vacía y también puede usarse como una pequeña oficina. La estación de Onomichi está a 5,4 km, aproximadamente 13 minutos en autobús. El agua de la red llega a la parcela a través de un terreno vecino. Pidiendo 18.800.000 yenes (aproximadamente 107.500 euros), aproximadamente 1.040 euros/m².
+
+https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k
+
 ### Cabaña en el monte Fuji con terraza para sauna, baño de agua fría y cabaña de invitados
 
 44.160 € · Fujikawaguchiko, Yamanashi, Japan · nota RealHunt 75 · añadida el 2026-09-23
@@ -306,3 +322,11 @@ https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
 Una cabaña a los pies del monte Fuji con una terraza pensada para noches de sauna, por 48.000 $. Está en una tranquila comunidad de cabañas en las tierras altas de Fujikawaguchiko, Yamanashi, con veranos frescos, inviernos de verdad y el monte Fuji al otro lado de los árboles.
 
 https://realhunt.co/es/deal/DdL76VHCMsm
+
+### Casa de tres dormitorios renovada de 2009 con aparcamiento para dos en Nasushiobara, Tochigi
+
+104.600 € · Higashi-Mishima, Nasushiobara, Tochigi · 98 m² · 3 dormitorios · nota RealHunt 75 · añadida el 2026-11-20
+
+Una casa de madera de dos plantas construida en julio de 2009 en Higashi-Mishima, Nasushiobara, en el norte de Tochigi. 97,9 m² con tres dormitorios y una zona de salón, comedor y cocina, balcones en ambas plantas y almacenamiento en cada habitación, en una parcela de 192 m² en dominio absoluto con aparcamiento para dos coches. El vendedor acaba de renovar el papel pintado, limpiar la cocina y los cuartos de baño y cambiar las cerraduras, y la casa vacía puede ser entregada inmediatamente. Una escuela primaria está a 600 m y un supermercado a 450 m. El comprador debe instalar un nuevo calentador de agua. Pidiendo 18.290.000 yenes (aproximadamente 104.600 euros).
+
+https://realhunt.co/es/deal/jp-nasushiobara-refreshed-2009-house-105k

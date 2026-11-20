@@ -31,12 +31,12 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 
 - [€86,962 · Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962) · Glace Bay, Nova Scotia · score 94 · 124 m² · 2 bed
 - [€90,400 · Big family house with sea views over the Strait of Canso](https://realhunt.co/deal/ca-mulgrave-90k-623450) · Mulgrave, Nova Scotia · score 92 · 215 m² · 3 bed
+- [€124,000 · Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k) · Hillsburn, Nova Scotia · score 88 · 106 m² · 3 bed
 - [€55,842 · Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842) · Bulyea, Saskatchewan · score 88 · 62 m² · 2 bed
 - [€68,327 · Updated 2-bed house in Avonlea, Saskatchewan](https://realhunt.co/deal/avonlea-68327) · Avonlea, Saskatchewan · score 88 · 77 m² · 2 bed
-- [€99,500 · Acadian coast house with 4 bedrooms and a new bathroom](https://realhunt.co/deal/ca-grande-anse-99k-148091) · Grande-Anse, New Brunswick · score 86 · 107 m² · 4 bed
-- [€127,100 · Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k) · Pictou, Nova Scotia · score 86 · 132 m² · 3 bed
+- [€159,000 · Character 1888 house with harbour views and a koi pond garden in Pictou, Nova Scotia](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k) · Pictou, Nova Scotia · score 87 · 171 m² · 3 bed
 
-[All 11 homes in Canada](https://realhunt.co/homes/canada)
+[All 14 homes in Canada](https://realhunt.co/homes/canada)
 
 [Costs, taxes and sources for Canada](https://realhunt.co/costs/canada) · [Buying-cost calculator for Canada](https://realhunt.co/buying-costs/canada) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -45,8 +45,8 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 - [Canada vs Spain](https://realhunt.co/countries/canada-vs-spain)
 - [Canada vs Italy](https://realhunt.co/countries/canada-vs-italy)
 - [Canada vs United States](https://realhunt.co/countries/canada-vs-united-states)
-- [Canada vs Denmark](https://realhunt.co/countries/canada-vs-denmark)
 - [Canada vs France](https://realhunt.co/countries/canada-vs-france)
+- [Canada vs Denmark](https://realhunt.co/countries/canada-vs-denmark)
 - [Canada vs Sweden](https://realhunt.co/countries/canada-vs-sweden)
 - [Canada vs Japan](https://realhunt.co/countries/canada-vs-japan)
 - [Canada vs Poland](https://realhunt.co/countries/canada-vs-poland)

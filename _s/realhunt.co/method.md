@@ -4,7 +4,7 @@ Methodology
 
 The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
 
-Version 2026-11-14 · figures from 634 homes on 20 November 2026 · [Markdown version](https://realhunt.co/method.md)
+Version 2026-11-14 · figures from 684 homes on 20 November 2026 · [Markdown version](https://realhunt.co/method.md)
 
 ### Step 1. A person checks the home
 
@@ -14,33 +14,33 @@ Old is fine; neglected is not. RealHunt turns down about three listings for ever
 
 ### Step 2. The 11 sub-scores, from 0 to 100
 
-Sub-score | What it measures | Homes with it (of 634)
-Price | How cheap it is next to every other home here and in its country | 586
-Price per m² | How little you pay per square metre | 513
-Space | Size of the house | 519
-Move-in condition | Renovated or ready to live in scores more; homes that need work score less | 586
-Extras | Garden, terrace, pool, sauna, fireplace, views, land and more | 586
-Sea & lakes | How close it is to the sea or a lake | 371
+Sub-score | What it measures | Homes with it (of 684)
+Price | How cheap it is next to every other home here and in its country | 636
+Price per m² | How little you pay per square metre | 563
+Space | Size of the house | 569
+Move-in condition | Renovated or ready to live in scores more; homes that need work score less | 636
+Extras | Garden, terrace, pool, sauna, fireplace, views, land and more | 636
+Sea & lakes | How close it is to the sea or a lake | 393
 Good weather | Good-weather days a year where the home is: a high of 18–33 °C, dry, light wind (climate normals) | 318
-Airport | Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more | 573
-Buying costs | Taxes and fees to buy in this country: lower scores more | 559
-Listing detail | Photos, size and rooms published, verified by us | 586
-Buyer interest | Views and saves from RealHunt buyers | 634
+Airport | Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more | 623
+Buying costs | Taxes and fees to buy in this country: lower scores more | 603
+Listing detail | Photos, size and rooms published, verified by us | 636
+Buyer interest | Views and saves from RealHunt buyers | 684
 
-A sub-score is left out, not guessed, when the listing lacks what it needs: a home with no published size has no price per m² and no space sub-score, and a home with no sea or lake recorded nearby has no water sub-score. Today 215 of 634 homes have all 11.
+A sub-score is left out, not guessed, when the listing lacks what it needs: a home with no published size has no price per m² and no space sub-score, and a home with no sea or lake recorded nearby has no water sub-score. Today 215 of 684 homes have all 11.
 
 ### Step 3. From sub-scores to the grade
 
-The grade is the plain average of the sub-scores a home has, each with the same weight, placed on the 70 to 98 scale: the home with the lowest average on the site gets 70, the one with the highest gets 98, and the rest fall in between in proportion. So a grade compares a home with the other homes listed, and it can move when homes are added or removed. No sub-score counts double and none can be bought. You can check it on any home page: in today's data the grade equals about 44.5 plus 0.64 times the average of the home's sub-scores, and 93% of the 577 homes with at least 8 sub-scores are within one point of that line (100% within two).
+The grade is the plain average of the sub-scores a home has, each with the same weight, placed on the 70 to 98 scale: the home with the lowest average on the site gets 70, the one with the highest gets 98, and the rest fall in between in proportion. So a grade compares a home with the other homes listed, and it can move when homes are added or removed. No sub-score counts double and none can be bought. You can check it on any home page: in today's data the grade equals about 45.2 plus 0.63 times the average of the home's sub-scores, and 90% of the 627 homes with at least 8 sub-scores are within one point of that line (100% within two).
 
 Home pages, country pages and the front page are ordered by this grade, best first. Votes and saves only move the buyer-interest sub-score; nobody pays to rank higher.
 
 ### How to read a grade
 
 Grade | What it means | Homes today
-90–98 | Top of the site. Usually cheap for its size, ready to live in and well placed. | 140
-80–89 | Very good. Strong on most sub-scores, with one or two weak spots you can see on the home page. | 432
-70–79 | Good. It passed the hand check, but the sub-scores show what you give up. | 62
+90–98 | Top of the site. Usually cheap for its size, ready to live in and well placed. | 143
+80–89 | Very good. Strong on most sub-scores, with one or two weak spots you can see on the home page. | 461
+70–79 | Good. It passed the hand check, but the sub-scores show what you give up. | 80
 
 ### What the score is not: limits
 

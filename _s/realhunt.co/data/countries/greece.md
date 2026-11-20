@@ -1,6 +1,6 @@
 # Cheap homes in Greece: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 20 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 20 homes is €125,000 (€1,364 per m², from the 19 homes with a known size); the cheapest costs €68,000 and the most expensive €175,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 20 November 2026, RealHunt lists 24 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 24 homes is €155,000 (€1,465 per m², from the 23 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/greece · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 20 |
-| Median asking price | €125,000 |
-| Median price per m² | €1,364 (19 homes with a known size) |
-| Median size | 80 m² |
-| Cheapest and most expensive | €68,000 · €175,000 |
+| Homes on RealHunt | 24 |
+| Median asking price | €155,000 |
+| Median price per m² | €1,465 (23 homes with a known size) |
+| Median size | 82 m² |
+| Cheapest and most expensive | €68,000 · €199,000 |
 | Median RealHunt score (70 to 98) | 87 |
 | Taxes and fees to buy | 5.5–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026. |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/greece
 
-## The 20 homes, best score first
+## The 24 homes, best score first
 
 ### Three-bedroom village house with a vine-covered terrace and sea views in Messinia
 
@@ -184,6 +184,14 @@ A new-build 72 m² house from 2025 in Kallikrateia, Halkidiki, energy class A an
 
 https://realhunt.co/deal/gr-halkidiki-new-house-160k
 
+### Restored three-bed stone house with roof terrace in Kritsa village, Crete
+
+€199,000 · Kritsa, Agios Nikolaos, Crete · 105 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-20
+
+A restored stone house a short walk from the square of Kritsa, the largest village around Agios Nikolaos and 7 km from the town and sandy beaches. A plant-filled terrace under a pergola leads to a furnished roof terrace with views over the mountains, the village and the sea in the distance. Inside are wood-beamed ceilings, stone walls, a living room with a wood stove, a fitted kitchen, three bedrooms and three bathrooms. It is sold furnished and in very good condition. Car access is about 70 m away, with public parking 100 to 150 m away.
+
+https://realhunt.co/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k
+
 ### Wooden island-style house with a BBQ terrace hanging over the Pagasetic Gulf
 
 €120,000 · Trikeri, Pelion · 54 m² · 2 bedrooms · RealHunt score 83 · added 2026-10-16
@@ -192,6 +200,14 @@ In the cobbled, island-like village of Trikeri at the tip of Pelion, a 54 m² ho
 
 https://realhunt.co/deal/gr-trikeri-sea-terrace-120k
 
+### Two-storey stone house facing the Libyan Sea in Koutsounari, south Crete
+
+€195,000 · Koutsounari, Ierapetra, Crete · 88 m² · 2 bedrooms · RealHunt score 83 · added 2026-11-20
+
+A two-storey stone house with open views of the Libyan Sea, 1.3 km from Long Beach on the south coast of Crete. A stone-paved courtyard under a pergola faces the sea, and inside stairs lead up to a large view terrace. The living room has wood beams and a fireplace, and there is a separate traditional kitchen, two bedrooms and two bathrooms, all tiled. Hot water comes from a solar panel, and there is parking outside. Shops and tavernas open all year are a 3-minute drive away. About 88 m2 for 195,000 euros.
+
+https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k
+
 ### Summer cottage on a 980 m² garden plot 2 km from the beach
 
 €158,000 · Marathopolis, near Gargaliani, Messinia · 62 m² · 2 bedrooms · RealHunt score 82 · added 2026-10-16
@@ -199,6 +215,22 @@ https://realhunt.co/deal/gr-trikeri-sea-terrace-120k
 A 62 m² house on a flat plot of 980 m² among olive trees and just a few neighbours, near Marathopolis: a sitting area with a wood stove, an open kitchen, a bedroom and a shower room downstairs, and a wooden staircase up to an attic with a balcony and extra beds. A garden with paths, a storeroom and a built-in BBQ. 2 km to Lagouvardos beach, 15 minutes to Gialova and its golf courses, 25 to Pylos. Asking €158,000, about €2,548/m².
 
 https://realhunt.co/deal/gr-gargaliani-garden-sea-158k
+
+### Restored stone courtyard house with a sea-view roof terrace in Gytheio
+
+€195,000 · Gytheio, Laconia · 85 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+A traditional stone house of 85 m2 on a quiet car-free lane in the old town of Gytheio, a short walk from the harbour front, on a 127 m2 walled plot. Restored with original stone paving, wooden floors and old doors kept. A stone-floored living room opens to the courtyard, where a newly renovated kitchen and an outdoor shower sit under a lemon tree. Upstairs are a double and a single bedroom and a modern shower room, and a raised terrace looks over the rooftops to the sea. Sold turnkey; Mavrovouni beach is 5 minutes by car.
+
+https://realhunt.co/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k
+
+### Furnished two-bedroom flat with sea views in Nea Fokea, Kassandra, Halkidiki
+
+€170,000 · Nea Fokea, Kassandra, Halkidiki · 60 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-20
+
+A 60 m2 first-floor flat in a two-storey building in Nea Fokea, a seaside village on the Kassandra peninsula of Halkidiki. The advert says the sea can be seen from the windows and that the owners will leave the furniture. Open living room with a modern fitted kitchen and wood stove, two bedrooms and a shower room, with windows on two sides and a covered balcony with awnings. Air conditioning, oil central heating with radiators and solar water heating. The photos show a well-kept home ready to use.
+
+https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k
 
 ### Furnished one-bedroom ground-floor flat with a private yard in Elounda, Crete
 

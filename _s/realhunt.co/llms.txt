@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 634 homes in 19 countries. Updated 2026-11-20.
+Today: 684 homes in 19 countries. Updated 2026-11-20.
 
 ## Key pages
 
@@ -84,22 +84,22 @@ Today: 634 homes in 19 countries. Updated 2026-11-20.
 
 ## Countries
 
-- [Spain](https://realhunt.co/homes/spain): 186 homes
-- [Italy](https://realhunt.co/homes/italy): 68 homes
-- [United States](https://realhunt.co/homes/united-states): 52 homes
+- [Spain](https://realhunt.co/homes/spain): 190 homes
+- [Italy](https://realhunt.co/homes/italy): 77 homes
+- [United States](https://realhunt.co/homes/united-states): 59 homes
+- [France](https://realhunt.co/homes/france): 52 homes
 - [Denmark](https://realhunt.co/homes/denmark): 46 homes
-- [France](https://realhunt.co/homes/france): 45 homes
-- [Sweden](https://realhunt.co/homes/sweden): 38 homes
-- [Japan](https://realhunt.co/homes/japan): 32 homes
+- [Sweden](https://realhunt.co/homes/sweden): 39 homes
+- [Japan](https://realhunt.co/homes/japan): 35 homes
 - [Poland](https://realhunt.co/homes/poland): 31 homes
-- [Greece](https://realhunt.co/homes/greece): 20 homes
-- [Germany](https://realhunt.co/homes/germany): 20 homes
+- [Greece](https://realhunt.co/homes/greece): 24 homes
+- [Germany](https://realhunt.co/homes/germany): 21 homes
+- [Portugal](https://realhunt.co/homes/portugal): 19 homes
 - [Netherlands](https://realhunt.co/homes/netherlands): 18 homes
-- [Portugal](https://realhunt.co/homes/portugal): 18 homes
-- [Mexico](https://realhunt.co/homes/mexico): 12 homes
-- [Canada](https://realhunt.co/homes/canada): 11 homes
+- [Canada](https://realhunt.co/homes/canada): 14 homes
+- [Mexico](https://realhunt.co/homes/mexico): 14 homes
 - [Switzerland](https://realhunt.co/homes/switzerland): 10 homes
 - [Bulgaria](https://realhunt.co/homes/bulgaria): 7 homes
-- [Cyprus](https://realhunt.co/homes/cyprus): 5 homes
+- [Cyprus](https://realhunt.co/homes/cyprus): 6 homes
+- [United Kingdom](https://realhunt.co/homes/united-kingdom): 6 homes
 - [Dominican Republic](https://realhunt.co/homes/dominican-republic): 5 homes
-- [United Kingdom](https://realhunt.co/homes/united-kingdom): 4 homes

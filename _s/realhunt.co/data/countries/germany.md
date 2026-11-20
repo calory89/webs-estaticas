@@ -1,6 +1,6 @@
 # Cheap homes in Germany: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 20 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 20 homes is €55,000 (€1,053 per m², from the 20 homes with a known size); the cheapest costs €40,000 and the most expensive €60,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
+On 20 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/germany · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://re
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 20 |
+| Homes on RealHunt | 21 |
 | Median asking price | €55,000 |
-| Median price per m² | €1,053 (20 homes with a known size) |
+| Median price per m² | €1,053 (21 homes with a known size) |
 | Median size | 51 m² |
-| Cheapest and most expensive | €40,000 · €60,000 |
-| Median RealHunt score (70 to 98) | 81 |
+| Cheapest and most expensive | €40,000 · €199,000 |
+| Median RealHunt score (70 to 98) | 80 |
 | Taxes and fees to buy | 5–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan. |
 | Yearly property tax | Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets. |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/germany
 
-## The 20 homes, best score first
+## The 21 homes, best score first
 
 ### Sunny attic flat with a balcony for €40,000 in Chemnitz
 
@@ -168,6 +168,14 @@ https://realhunt.co/deal/de-wuppertal-50k-248035
 51.4 m² on the 1st floor of a well-kept period building: a living room and bedroom with laminate floors, a tiled kitchen and a bathroom with a bath, plus a cellar. Quiet street, free now; fixed buyer's commission €2,380. Asking €55,000, about €1,070/m².
 
 https://realhunt.co/deal/de-chemnitz-55k-074122
+
+### Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord
+
+€199,000 · Wassersleben, Harrislee, Schleswig-Holstein · 60 m² · 2 bedrooms · RealHunt score 77 · added 2026-11-20
+
+A three-room flat of about 60 m² a few steps from the beach and the Flensburg Fjord. The living room with open kitchen has floor-to-ceiling windows onto a south-facing terrace that looks over a well kept communal garden. Two further rooms work as bedrooms or an office, and the bathroom has a tub. Electric outside blinds on every window, a step-free basement storage room for bikes and beach gear, and a parking space in front. It is empty and available soon. District heating, energy class C. Monthly building fees are not given in the advert.
+
+https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k
 
 ### Two-room flat with a balcony and underground parking in Chemnitz
 

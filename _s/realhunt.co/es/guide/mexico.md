@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · nota 87 · 78 m² · 3 dorm.
 - [86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · nota 86 · 68 m² · 2 dorm.
 
-[Las 12 casas en México](https://realhunt.co/es/homes/mexico)
+[Las 14 casas en México](https://realhunt.co/es/homes/mexico)
 
 [Gastos, impuestos y fuentes de México](https://realhunt.co/es/costs/mexico) · [Calculadora de gastos de compra para México](https://realhunt.co/es/buying-costs/mexico) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -45,8 +45,8 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [México vs España](https://realhunt.co/es/countries/mexico-vs-spain)
 - [México vs Italia](https://realhunt.co/es/countries/italy-vs-mexico)
 - [México vs Estados Unidos](https://realhunt.co/es/countries/mexico-vs-united-states)
-- [México vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-mexico)
 - [México vs Francia](https://realhunt.co/es/countries/france-vs-mexico)
+- [México vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-mexico)
 - [México vs Suecia](https://realhunt.co/es/countries/mexico-vs-sweden)
 - [México vs Japón](https://realhunt.co/es/countries/japan-vs-mexico)
 - [México vs Polonia](https://realhunt.co/es/countries/mexico-vs-poland)

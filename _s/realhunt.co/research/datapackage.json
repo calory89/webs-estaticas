@@ -26,7 +26,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median asking price, price per m² and cheapest home in 19 countries, from 634 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
+   "description": "Median asking price, price per m² and cheapest home in 19 countries, from 684 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
    "schema": {
     "fields": [
      {
@@ -252,7 +252,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "32 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
+   "description": "34 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
    "schema": {
     "fields": [
      {
@@ -424,7 +424,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median price and price per m² of 621 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
+   "description": "Median price and price per m² of 671 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {

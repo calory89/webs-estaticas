@@ -1,6 +1,6 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 32 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 32 homes is €43,240 (€398 per m², from the 16 homes with a known size); the cheapest costs €7,400 and the most expensive €91,080. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 20 November 2026, RealHunt lists 35 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 35 homes is €44,160 (€427 per m², from the 19 homes with a known size); the cheapest costs €7,400 and the most expensive €107,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/japan · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 32 |
-| Median asking price | €43,240 |
-| Median price per m² | €398 (16 homes with a known size) |
+| Homes on RealHunt | 35 |
+| Median asking price | €44,160 |
+| Median price per m² | €427 (19 homes with a known size) |
 | Median size | 88 m² |
-| Cheapest and most expensive | €7,400 · €91,080 |
+| Cheapest and most expensive | €7,400 · €107,500 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency. |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/japan
 
-## The 32 homes, best score first
+## The 35 homes, best score first
 
 ### Mountain chalet with a wood stove and a loft in the Hida forest
 
@@ -299,6 +299,22 @@ A two-storey wooden house finished in January 2018, far newer than most homes at
 
 https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
 
+### Four-bedroom house from 2004 in Misaki on the Miura peninsula, Kanagawa
+
+€79,500 · Misaki-machi Moroiso, Miura, Kanagawa · 83 m² · 4 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A two-storey wooden house finished in December 2004 in Moroiso, on the Misaki side of the Miura peninsula in Kanagawa. 82.8 m² with four rooms plus a living, dining and kitchen area, storage in every room, a bathroom with a window and a heater, and a balcony, on a 123 m² freehold plot with parking. From Misakiguchi station it is a 12 minute bus ride and a 3 minute walk. The owner still lives there and the handover date is open to discussion. Asking ¥13,900,000 (about €79,500), under €1,000/m².
+
+https://realhunt.co/deal/jp-miura-misaki-four-bed-house-2004-80k
+
+### Bright four-bedroom house from 2014 on Mukaishima island, Onomichi, Hiroshima
+
+€107,500 · Mukaishima, Onomichi, Hiroshima · 104 m² · 4 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A two-storey wooden house built in January 2014 on Mukaishima, the island facing Onomichi across a narrow strait of the Seto Inland Sea. 103.5 m² with four bedrooms, a south-facing living, dining and kitchen room opening onto a tatami room, a walk-in wardrobe and a covered drying area, on a 183 m² freehold plot with parking for four cars. The house is empty and may also be used as a small office. Onomichi station is 5.4 km away, about 13 minutes by bus. Mains water reaches the plot through a neighbour's land. Asking ¥18,800,000 (about €107,500), roughly €1,040/m².
+
+https://realhunt.co/deal/jp-onomichi-mukaishima-2014-house-108k
+
 ### Mt. Fuji cabin with sauna deck, cold plunge and a guest cabin
 
 €44,160 · Fujikawaguchiko, Yamanashi, Japan · RealHunt score 75 · added 2026-09-23
@@ -306,3 +322,11 @@ https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
 A cabin at the foot of Mt. Fuji with a deck built for sauna nights, for $48,000. It sits in a quiet highland cabin community in Fujikawaguchiko, Yamanashi, with cool summers, real winters and Mt. Fuji on the other side of the trees.
 
 https://realhunt.co/deal/DdL76VHCMsm
+
+### Refreshed three-bedroom house from 2009 with parking for two in Nasushiobara, Tochigi
+
+€104,600 · Higashi-Mishima, Nasushiobara, Tochigi · 98 m² · 3 bedrooms · RealHunt score 75 · added 2026-11-20
+
+A two-storey wooden house built in July 2009 in Higashi-Mishima, Nasushiobara, in northern Tochigi. 97.9 m² with three bedrooms and a living, dining and kitchen room, balconies on both floors and storage in every room, on a 192 m² freehold plot with parking for two cars. The seller has just renewed the wallpaper, cleaned the kitchen and bathrooms and changed the locks, and the empty house can be handed over at once. A primary school is 600 m away and a supermarket 450 m. The buyer must fit a new water heater. Asking ¥18,290,000 (about €104,600).
+
+https://realhunt.co/deal/jp-nasushiobara-refreshed-2009-house-105k
