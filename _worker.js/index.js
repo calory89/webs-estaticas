@@ -182,10 +182,13 @@ function kbHeaders(r, u) {
   let ga = false, gaTail = '';
   // n28a: 146 static pages have Open Graph tags but no og:locale (shared links were read as English); it is added from the path language
   let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || (/^\/agents\/id(\/|$)/.test(u.pathname) ? 'id_ID' : 'en_GB');
+  // n33c (item 40, 20 Nov 2026): a title over 60 characters drops " | Kolaboro" (234 of the 536 main-sitemap pages were cut in results)
+  let tB = '';
   // n33a (batch 33): items 86 (a JSON Feed and an Atom feed of the data changes in the <head> of every hub that carries none) and 89
   // (who made a report, from what, the method and where to send corrections, under every report)
   let fJ = false, fA = false; const n33 = kn33a && r.status === 200 && !priv && !embed ? kn33a : null, n33F = n33 && n33.FEED_HUB.test(u.pathname), n33B = n33 && n33.REPORTS.test(u.pathname);
-  return new HTMLRewriter().on('head link[rel="alternate"]', { element(e) { const ty = e.getAttribute('type') || ''; if (/feed\+json/.test(ty)) fJ = true; if (/atom\+xml/.test(ty)) fA = true; } })
+  return new HTMLRewriter().on('head > title', { text(t) { tB += t.text; if (!t.lastInTextNode) { t.remove(); return; } const n = [...tB.replace(/&(?:amp|lt|gt|quot|#39);/g, 'x').trim()].length; t.replace(n > 60 ? tB.replace(/\s*\|\s*Kolaboro\s*$/, '') : tB, { html: true }); tB = ''; } })
+    .on('head link[rel="alternate"]', { element(e) { const ty = e.getAttribute('type') || ''; if (/feed\+json/.test(ty)) fJ = true; if (/atom\+xml/.test(ty)) fA = true; } })
     .on('main', { element(e) { if (n33B) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [0, 'en'])[1]; const b = n33.byline(lg, u.pathname); if (b) e.append('<div class="wrap">' + b + '</div>', { html: true }); } } })
     .on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
@@ -800,7 +803,7 @@ export default {
       const r = await h29Inject(req, u, env, await knm.handle(req, u, env, ctx, shell));
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
-    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || (/^\/p\/?$/.test(u.pathname) && u.searchParams.has('id')))) { if (!knm) knm = await import('./kbx_named.js'); const rd = await knm.redirectP(u, env); if (rd) return rd; }
+    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/(?:p|id)\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || (/^\/p\/?$/.test(u.pathname) && u.searchParams.has('id')))) { if (!knm) knm = await import('./kbx_named.js'); const rd = await knm.redirectP(u, env); if (rd) return rd; }
     // kolaboro.com (s15c, batch 15): embeddable fact cards and delivery trackers, verified-reply badge, monthly market data stories
     // with CSV, public change log + Atom, answer files and llms-projects.txt (see kbx_cite.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && KCITE.test(u.pathname)) {

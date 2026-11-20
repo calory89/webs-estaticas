@@ -64,3 +64,4 @@
 .cp-chip a{flex:1 1 220px;color:var(--ink-2);text-decoration:none;line-height:1.4}.cp-chip a b{color:var(--ink);margin-inline-end:6px}.cp-chip a:hover b{text-decoration:underline}
 .cp-chip .cp-x{margin-top:0;min-height:40px}
 .cp-x{min-height:40px}
+.cp-ex{margin-top:18px;max-width:62ch;border-inline-start:3px solid var(--line);padding-inline-start:12px;font-size:.95rem}.cp-ex-h{font-weight:700;margin:0}.cp-ex ul{margin:4px 0 0;padding-inline-start:18px}.cp-ex li{margin:2px 0}.cp-ex-l{margin:4px 0 0}.cp-ex a{min-height:24px}
