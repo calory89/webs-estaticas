@@ -37,7 +37,7 @@ Datos del
 
 ### Las 24 viviendas, de mejor a peor nota
 
-- [Nota 93109.000 €Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en MeseniaVasilitsi, Messinia116 m² · 3 dorm. · 940 €/m² · 35 días en RealHuntCasa de dos plantas y 116 m² en Vasilitsi, en el extremo sur de la península de Mesenia, con vistas al mar y a las colinas: tres dormitorios, dos…](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k)
+- [Nota 93109.000 €Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en MeseniaVasilitsi, Mesenia116 m² · 3 dorm. · 940 €/m² · 35 días en RealHuntCasa de dos plantas y 116 m² en Vasilitsi, en el extremo sur de la península de Mesenia, con vistas al mar y a las colinas: tres dormitorios, dos…](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k)
 - [Nota 91115.000 €Casa encalada en un pueblo de Creta con azotea y escalera de caracolChoumeriako, Creta93 m² · 2 dorm. · 1.237 €/m² · 35 días en RealHuntCasa independiente de 93 m² reformada en el pueblo tradicional de Choumeriako, a 3 km de Neapoli y a 13 km de las playas de Agios Nikolaos.](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k)
 - [Nota 9068.000 €Casa de piedra de dos plantas con vistas al mar en Marathokampos, SamosAgia Triada, Samos80 m² · 2 dorm. · 850 €/m² · 37 días en RealHuntCasa de piedra cuidada de 80 m² en la parte alta de Marathokampos, zona de Agia Triada, con una vista preciosa al mar.](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330)
 - [Nota 89150.000 €Casa de piedra en la isla con puertas azules y vistas al mar hacia SkiathosGlossa, Skopelos (Sporades)110 m² · 2 dorm. · 1.364 €/m² · 35 días en RealHuntMaisonette de piedra de 110 m² en Paleo Klima, Glossa, en Skopelos, la isla de Mamma Mia, con vistas despejadas al Egeo y a Skiathos.](https://realhunt.co/es/deal/gr-skopelos-sea-view-150k)
@@ -57,7 +57,7 @@ Datos del
 - [Nota 84Nueva199.000 €Casa de piedra de tres dormitorios restaurada con terraza en la azotea en el pueblo de Kritsa, CretaKritsa, Creta105 m² · 3 dorm. · 1.895 €/m² · Añadida hoyUna casa de piedra restaurada a corta distancia de la plaza de Kritsa, el pueblo más grande de los alrededores de Agios Nikolaos y a 7 km del…](https://realhunt.co/es/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k)
 - [Nota 83120.000 €Casa de madera estilo isla con terraza y barbacoa sobre el golfo PagaséticoTrikeri, Pelion54 m² · 2 dorm. · 2.222 €/m² · 35 días en RealHuntEn Trikeri, un pueblo empedrado con aire de isla en la punta de Pelion, una casa de 54 m² en dos niveles: estudio de madera reformado con mimo…](https://realhunt.co/es/deal/gr-trikeri-sea-terrace-120k)
 - [Nota 83Nueva195.000 €Casa de piedra de dos plantas con vista al mar de Libia en Koutsounari, sur de CretaKoutsounari, Creta88 m² · 2 dorm. · 2.216 €/m² · Añadida hoyUna casa de piedra de dos plantas con vistas abiertas del mar de Libia, a 1,3 km de Long Beach en la costa sur de Creta.](https://realhunt.co/es/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k)
-- [Nota 82158.000 €Casita de verano en una parcela de 980 m² a 2 km de la playaMarathopolis, Messinia62 m² · 2 dorm. · 2.548 €/m² · 35 días en RealHuntCasa de 62 m² en una parcela llana de 980 m² entre olivos y pocos vecinos, cerca de Marathopolis: zona de estar con estufa de leña, cocina…](https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k)
+- [Nota 82158.000 €Casita de verano en una parcela de 980 m² a 2 km de la playaMarathopolis, Mesenia62 m² · 2 dorm. · 2.548 €/m² · 35 días en RealHuntCasa de 62 m² en una parcela llana de 980 m² entre olivos y pocos vecinos, cerca de Marathopolis: zona de estar con estufa de leña, cocina…](https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k)
 - [Nota 82Nueva195.000 €Casa de patio de piedra restaurada con terraza con vistas al mar en GytheioGytheio, Laconia85 m² · 2 dorm. · 2.294 €/m² · Añadida hoyUna casa de piedra tradicional de 85 m² en un callejón tranquilo sin coches en el casco antiguo de Gytheio, a corta distancia del paseo portuario…](https://realhunt.co/es/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k)
 - [Nota 80Nueva170.000 €Piso de dos dormitorios amueblado con vistas al mar en Nea Fokea, Kassandra, HalkidikiNea Fokea, Halkidiki60 m² · 2 dorm. · 2.833 €/m² · Añadida hoyUn piso de 60 m² en la primera planta de un edificio de dos plantas en Nea Fokea, un pueblo costero en la península de Kassandra de Halkidiki.](https://realhunt.co/es/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k)
 - [Nota 79Nueva125.000 €Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, CretaElounda, Creta35 m² · 1 dorm. · 3.571 €/m² · 2 días en RealHuntUn apartamento de planta baja de 35,5 m² en Elounda, uno de los pueblos turísticos más conocidos de Creta, vendido completamente amueblado y listo…](https://realhunt.co/es/deal/gr-crete-elounda-one-bed-private-yard-125k)
@@ -72,14 +72,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de piedra reformada con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-marathokampos-80k-19741965) | Marathokampos, Samos | 80.000 € | 64 m² | 1.250 €/m² | 2 | 88 | 14 oct 2026
 [Casa de campo unifamiliar renovada entre olivos cerca de Gytheio](https://realhunt.co/es/deal/gr-laconia-gytheio-renovated-country-house-85k) | Cerca de Gytheio, Laconia | 85.000 € | 82 m² | 1.037 €/m² | 2 | 87 | 18 nov 2026
 [Casa de cuento con cenador y barbacoa de piedra en el bosque de Pelion](https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k) | Chania, Pelion | 95.000 € | 68 m² | 1.397 €/m² | 2 | 88 | 16 oct 2026
-[Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k) | Vasilitsi, Messinia | 109.000 € | 116 m² | 940 €/m² | 3 | 93 | 16 oct 2026
+[Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k) | Vasilitsi, Mesenia | 109.000 € | 116 m² | 940 €/m² | 3 | 93 | 16 oct 2026
 [Casa encalada en un pueblo de Creta con azotea y escalera de caracol](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k) | Choumeriako, Creta | 115.000 € | 93 m² | 1.237 €/m² | 2 | 91 | 16 oct 2026
 [Casa de madera estilo isla con terraza y barbacoa sobre el golfo Pagasético](https://realhunt.co/es/deal/gr-trikeri-sea-terrace-120k) | Trikeri, Pelion | 120.000 € | 54 m² | 2.222 €/m² | 2 | 83 | 16 oct 2026
 [Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, Creta](https://realhunt.co/es/deal/gr-crete-elounda-one-bed-private-yard-125k) | Elounda, Creta | 125.000 € | 35 m² | 3.571 €/m² | 1 | 79 | 18 nov 2026
 [Casa de piedra en la isla con puertas azules y vistas al mar hacia Skiathos](https://realhunt.co/es/deal/gr-skopelos-sea-view-150k) | Glossa, Skopelos (Sporades) | 150.000 € | 110 m² | 1.364 €/m² | 2 | 89 | 16 oct 2026
 [Casa moderna y amueblada de dos dormitorios cerca del mar en Rodas](https://realhunt.co/es/deal/gr-rhodes-paradeisi-modern-155k) | Paradeisi, Rodas | 155.000 € | 84 m² | 1.845 €/m² | 2 | 85 | 16 oct 2026
 [Casa amueblada en Creta con piscina compartida entre solo cuatro casas](https://realhunt.co/es/deal/gr-crete-drapanos-pool-158k) | Drapanos, Creta | 158.000 € | 76 m² | 2.079 €/m² | 2 | 87 | 16 oct 2026
-[Casita de verano en una parcela de 980 m² a 2 km de la playa](https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k) | Marathopolis, Messinia | 158.000 € | 62 m² | 2.548 €/m² | 2 | 82 | 16 oct 2026
+[Casita de verano en una parcela de 980 m² a 2 km de la playa](https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k) | Marathopolis, Mesenia | 158.000 € | 62 m² | 2.548 €/m² | 2 | 82 | 16 oct 2026
 [Casita nueva de 2025 con porche de pérgola a 400 m del mar en Calcídica](https://realhunt.co/es/deal/gr-halkidiki-new-house-160k) | Kallikrateia, Halkidiki | 159.990 € | 72 m² | 2.222 €/m² | 3 | 84 | 16 oct 2026
 [Casa de piedra de tres dormitorios con vistas al golfo en Ano Volos, al pie del Pelion](https://realhunt.co/es/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k) | Ano Volos, Magnesia | 167.000 € | 114 m² | 1.465 €/m² | 3 | 85 | 18 nov 2026
 [Piso de dos dormitorios amueblado con vistas al mar en Nea Fokea, Kassandra, Halkidiki](https://realhunt.co/es/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k) | Nea Fokea, Halkidiki | 170.000 € | 60 m² | 2.833 €/m² | 2 | 80 | 20 nov 2026
@@ -96,7 +96,7 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Dormitorios: 1 con 1 dormitorio, 18 con 2, 4 con 3, 1 con 4 o más.
 - Tipo: 3 pisos y 21 casas.
 - Entorno: 14 junto al mar, 9 en pueblos, 1 en ciudad.
-- Dónde: Creta (7), Halkidiki (2), Laconia (2), Messinia (2), Pelion (2), Samos (2).
+- Dónde: Creta (7), Halkidiki (2), Laconia (2), Mesenia (2), Pelion (2), Samos (2).
 - Extras que mencionan los anuncios: 10 con jardín, 19 con terraza, 6 con garaje, 1 con piscina, 11 con chimenea.
 - Notas: de 79 a 93 sobre 98. La de mejor nota: [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de piedra de tres dormitorios restaurada con terraza en la azotea en el pueblo de Kritsa, Creta](https://realhunt.co/es/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k). 10 de estas viviendas se añadieron en los últimos 30 días.
@@ -111,7 +111,7 @@ Pelion | 2 | 120.000 €
 Skopelos (Sporades) | 1 | 150.000 €
 Rodas | 1 | 155.000 €
 [Creta](https://realhunt.co/es/homes/greece/crete) | 7 | 158.000 €
-Messinia | 2 | 158.000 €
+Mesenia | 2 | 158.000 €
 Magnesia | 1 | 167.000 €
 Halkidiki | 2 | 170.000 €
 Karpathos | 1 | 170.000 €

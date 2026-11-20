@@ -29,8 +29,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 
 ### Mejores casas en Grecia
 
-- [109.000 € · Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k) · Vasilitsi, Messinia · nota 93 · 116 m² · 3 dorm.
-- [115.000 € · Casa encalada en un pueblo de Creta con azotea y escalera de caracol](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, cerca de Neapoli, Crete · nota 91 · 93 m² · 2 dorm.
+- [109.000 € · Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k) · Vasilitsi, Mesenia · nota 93 · 116 m² · 3 dorm.
+- [115.000 € · Casa encalada en un pueblo de Creta con azotea y escalera de caracol](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, cerca de Neapoli, Creta · nota 91 · 93 m² · 2 dorm.
 - [68.000 € · Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330) · Agia Triada, Marathokampos, Samos (Grecia) · nota 90 · 80 m² · 2 dorm.
 - [150.000 € · Casa de piedra en la isla con puertas azules y vistas al mar hacia Skiathos](https://realhunt.co/es/deal/gr-skopelos-sea-view-150k) · Glossa, Skopelos (Sporades) · nota 89 · 110 m² · 2 dorm.
 - [170.000 € · Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, Karpathos](https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · nota 89 · 165 m² · 4 dorm.

@@ -130,7 +130,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "What you pay on top of the price when you buy a home in 27 countries, ranked from 0.6–1.1% to 12–22%, with yearly property tax and sources. Chart, table and CSV.",
+   "description": "What you pay on top of the price when you buy a home in 29 countries, ranked from 0.6–1.1% to 12–22%, with yearly property tax and sources. Chart, table and CSV.",
    "schema": {
     "fields": [
      {

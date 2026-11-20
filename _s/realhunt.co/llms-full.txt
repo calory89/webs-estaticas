@@ -453,7 +453,7 @@ RealHunt data
 
 ## Buying costs by country: taxes and fees on top of the price (2026)
 
-Of 27 countries and destinations, the taxes and fees you pay on top of the price are lowest in Georgia (0.6–1.1%), Albania (1.3–1.9%), Denmark (1.5–3%) and highest in Northern Cyprus (12–22%), Lombok (6.5–18%), Bali (6.5–18%). On a €100,000 home that is from €600 to €22,000.
+Of 29 countries and destinations, the taxes and fees you pay on top of the price are lowest in Georgia (0.6–1.1%), Albania (1.3–1.9%), Denmark (1.5–3%) and highest in Northern Cyprus (12–22%), Lombok (6.5–18%), Bali (6.5–18%). On a €100,000 home that is from €600 to €22,000.
 
 Transfer tax or VAT, stamp duty, notary, land registry and lawyer, as a share of the price. Compiled from the sources linked for each country; general information, not tax advice.
 
@@ -469,6 +469,7 @@ Taxes and fees on top of the price, by countryRange in % of the purchase price, 
 - Norway 2.5–3%
 - Vietnam 2.5–3.1%
 - Cyprus 2.5–3.5%
+- ireland 2.5–3.5%
 - Switzerland 1–5%
 - Poland 2.5–4%
 - United States 2–5%
@@ -478,6 +479,7 @@ Taxes and fees on top of the price, by countryRange in % of the purchase price, 
 - Bulgaria 3.2–8.5%
 - United Kingdom 3–9%
 - Greece 5.5–7%
+- uruguay 5–8%
 - Germany 5–8.5%
 - Japan 6–9%
 - Portugal 3–12%
@@ -500,6 +502,7 @@ Country | On top of the price | On €100,000 | As of | Sources
 [Norway](https://realhunt.co/buying-costs/norway) | 2.5–3% | €2,500 – €3,000 | 2026 | [9 sources](https://realhunt.co/costs/norway)
 [Vietnam](https://realhunt.co/buying-costs/vietnam) | 2.5–3.1% | €2,500 – €3,100 | 2026 | [7 sources](https://realhunt.co/costs/vietnam)
 [Cyprus](https://realhunt.co/buying-costs/cyprus) | 2.5–3.5% | €2,500 – €3,500 | 2026 | [8 sources](https://realhunt.co/costs/cyprus)
+[ireland](https://realhunt.co/buying-costs/ireland) | 2.5–3.5% | €2,500 – €3,500 | 2026 | [3 sources](https://realhunt.co/costs/ireland)
 [Switzerland](https://realhunt.co/buying-costs/switzerland) | 1–5% | €1,000 – €5,000 | 2026 | [9 sources](https://realhunt.co/costs/switzerland)
 [Poland](https://realhunt.co/buying-costs/poland) | 2.5–4% | €2,500 – €4,000 | 2026 | [4 sources](https://realhunt.co/costs/poland)
 [United States](https://realhunt.co/buying-costs/united-states) | 2–5% | €2,000 – €5,000 | 2026 | [7 sources](https://realhunt.co/costs/united-states)
@@ -509,6 +512,7 @@ Country | On top of the price | On €100,000 | As of | Sources
 [Bulgaria](https://realhunt.co/buying-costs/bulgaria) | 3.2–8.5% | €3,200 – €8,500 | 2026 | [3 sources](https://realhunt.co/costs/bulgaria)
 [United Kingdom](https://realhunt.co/buying-costs/united-kingdom) | 3–9% | €3,000 – €9,000 | 2026 | [7 sources](https://realhunt.co/costs/united-kingdom)
 [Greece](https://realhunt.co/buying-costs/greece) | 5.5–7% | €5,500 – €7,000 | 2026 | [5 sources](https://realhunt.co/costs/greece)
+[uruguay](https://realhunt.co/buying-costs/uruguay) | 5–8% | €5,000 – €8,000 | 2026 | [2 sources](https://realhunt.co/costs/uruguay)
 [Germany](https://realhunt.co/buying-costs/germany) | 5–8.5% | €5,000 – €8,500 | 2026 | [6 sources](https://realhunt.co/costs/germany)
 [Japan](https://realhunt.co/buying-costs/japan) | 6–9% | €6,000 – €9,000 | 2026 | [8 sources](https://realhunt.co/costs/japan)
 [Portugal](https://realhunt.co/buying-costs/portugal) | 3–12% | €3,000 – €12,000 | 2026 | [4 sources](https://realhunt.co/costs/portugal)
@@ -631,6 +635,16 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 
 -
 
+#### ireland: 2.5–3.5%
+
+Stamp duty of 1% of the price up to €1 million (2% from €1 million to €1.5 million and 6% above), solicitor's fees of about 1-1.5% plus 23% VAT, and registration fees of €425 to €800; the seller pays the estate agent, whose fee is usually built into the asking price.
+
+Yearly property tax: Local Property Tax (LPT): from 2026 a home valued up to €240,000 pays a basic €95 a year and one valued €240,001 to €315,000 pays €235; each council can raise or lower the basic rate by up to 15%, and most raised it by 15% for 2026.
+
+[Work it out for your price](https://realhunt.co/buying-costs/ireland) · [Sources](https://realhunt.co/costs/ireland)
+
+-
+
 #### Switzerland: 1–5%
 
 Transfer tax (Handänderungssteuer, droits de mutation) 0% to about 3.3% depending on the canton; notary about 0.1-0.5%; land register fee, a small fixed amount or percentage; optional lawyer 1-2%; the agent fee (2-3%) is paid by the seller.
@@ -736,6 +750,14 @@ Yearly property tax: Owners on 1 January pay the unified property tax (ENFIA), c
 Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% up to €12,000, 25% to €24,000, 35% to €36,000 and 45% above, after a flat 5% deduction for expenses.
 
 [Work it out for your price](https://realhunt.co/buying-costs/greece) · [Sources](https://realhunt.co/costs/greece)
+
+-
+
+#### uruguay: 5–8%
+
+Transfer tax (ITP) of 2% for the buyer and 2% for the seller, on the cadastral value (valor real) set by the Dirección Nacional de Catastro; notary fees of about 3%; and an agent's fee of about 3%.
+
+[Work it out for your price](https://realhunt.co/buying-costs/uruguay) · [Sources](https://realhunt.co/costs/uruguay)
 
 -
 
@@ -19739,41 +19761,6 @@ Top 10 by score in other countries [Denmark 10](https://realhunt.co/cheap-houses
 These listings come from redfin.com (5), coldwellbanker.com (3), estately.com (2). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [All 59 homes in the United States](https://realhunt.co/homes/united-states) · [Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
-
-
----
-Source: https://realhunt.co/embed (updated 2026-11-20)
-
-For your site
-
-## RealHunt badges and widgets: show a score or the best homes on your site
-
-Paste one of these snippets into a listing, a blog post or a forum signature to show a home's RealHunt score or the best homes in a country. They are plain HTML with an image and a link, with no script and no tracking, and the image updates by itself.
-
-Free to use on any site. Keep the link to RealHunt as it is.
-
-### RealHunt score badge for a home
-
-For sellers and agents whose home is on RealHunt: show its score on your own listing. Paste the address of the home on RealHunt and copy the code.
-
-Example: the best-scored home today.
-
-### Best homes in a country: a card for your page
-
-For blogs, forums and guides about moving or buying abroad: the three best-scored homes in a country, always current.
-
-### "Data: RealHunt" badge and link
-
-For articles that use a figure from the [RealHunt data pages](https://realhunt.co/research).
-
-### Good to know
-
-- No script, no cookies, no tracking: an image and a link. It works in WordPress, Squarespace, Wix, Ghost, Substack and most forums that allow images.
-- The images are redrawn every time RealHunt is updated, so a score or a list never goes stale. If a home is sold and leaves RealHunt, its badge stops showing.
-- The score is RealHunt's own grade, not an endorsement of the seller or a valuation. Do not edit the image or present it as something else.
-- A badge cannot be bought and showing one does not change a home's score.
-
-[How the score works](https://realhunt.co/method) · [Data to quote](https://realhunt.co/research) · [Press page](https://realhunt.co/press) · Questions: carlos@equinoxinvestmentgroup.com
 
 
 ## Every home on RealHunt (title | country | price | size | score | page)
