@@ -508,7 +508,8 @@ async function hubUrls(B) {
   return out;
 }
 function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates; lastmod = last real data change (kbx_lastmod.js)
-  const list = B.N.all.filter(e => e.type === type && (e.sm !== false || (B.prio && B.prio.has(e.loc.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/')))));   // n33i: a page Search Console shows impressions for (data/seo-priority.json) is listed even when thin (sm=false), with its language versions const byBase = new Map(), T = B.T;
+  // n33i: a page Search Console shows impressions for (data/seo-priority.json) is listed even when thin (sm=false), with its language versions
+  const list = B.N.all.filter(e => e.type === type && (e.sm !== false || (B.prio && B.prio.has(e.loc.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/'))))); const byBase = new Map(), T = B.T;
   const all = T ? [...T.project.values()].sort() : [], newest = all[all.length - 1] || null;
   const tlm = (e, b) => { if (!T) return null; if (type === 'project' && e.id) return T.project.get(e.id) || null; if (type === 'developer') { const m = /^\/developers\/([^/]+)\/$/.exec(b); return m ? T.developer.get(m[1]) || null : null; } if (type === 'index') return newest; return null; };
   for (const e of list) { const p = e.loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p), b = m ? m[2] : p; if (!byBase.has(b)) byBase.set(b, []); byBase.get(b).push(Object.assign({ l: m ? m[1] : (e.lang || 'en') }, e)); }
