@@ -80,6 +80,8 @@ let kcal = null; const KCAL = /^\/projects\/[a-z0-9-]{1,90}\/calendar\.ics$/;   
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
 let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
 let ke29 = null, ke29l = null; const KE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:editorial-policy|how-we-work|sources|buyer-protection-law|countries\/foreign-buyers)\/?$/;   // n29e (batch 29): trust pages (kbx_e29.js)
+let kn33b = null; const KN33B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:reports\/transparency(?:\/20\d\d-[01]\d)?|transparency-badge\/developers)\/?$|^\/reports\/transparency(?:\/20\d\d-[01]\d)?\.csv$|^\/embed\/transparency\/developer\/[a-z0-9-]{1,90}\.svg$/;   // n33b (batch 33): monthly transparency report by market, developer badge (keep equal to PATHS in kbx_n33b.js)
+const KN33C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:press\/monthly|press\/data|research(?:\/[a-z0-9-]{1,80})?|index\/(?:delays|prices)|transparency-index|rankings(?:\/[a-z0-9-]{1,60}){0,2}|handover(?:\/[a-z0-9-]{1,60}){0,2}|numbers|data|reports)\/$/;   // n33b: report pages that get a citation block (keep equal to CITE_RX)
 let kt27 = null; const KT27 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:corrections|buyer-cases|cite|contact|transparency-badge)\/?$|^\/embed\/transparency\/[a-z0-9-]{1,90}\.svg$|^\/rankings\/transparency(?:\/[a-z0-9-]{2,40})?\.csv$/;   // n27t (batch 27): corrections log, buyer cases, how to cite, contact, transparency badge, ranking CSV (kbx_t27.js)
 let ktru = null; const KTRU = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:progress(?:\/improvements)?|moderation|team|press\/places(?:\/[a-z0-9-]{2,40})?)\/?$|^\/progress\/sitemap\.xml$|^\/api\/x\/progress(?:\/today)?\/?$/;   // n26y (batch 26): progress, 300 improvements, press figures per place, moderation policy, team and method (see kbx_trust.js)
 let kn33i = null;   // n33i (batch 33): old query URLs, API noindex, parameter links, crawler 304s (kbx_n33i.js)
@@ -465,6 +467,10 @@ export default {
         try { const h = new Headers(r.headers), lk = h.get('link'); h.set('link', (lk ? lk + ', ' : '') + '<https://creativecommons.org/licenses/by/4.0/>; rel="license"'); r = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {} } }
     // n33i (batch 33, items 1, 6, 13): X-Robots-Tag noindex on every /api/ answer, 410 for unknown /api/kb/ GETs, nofollow or clean paths on parameter links
     if (r && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (/^\/api\//.test(u0.pathname) || (req.method === 'GET' && r.status === 200 && /text\/html/.test(r.headers.get('content-type') || ''))) { try { if (!kn33i) kn33i = await import('./kbx_n33i.js'); r = await kn33i.post(req, u0, r, env); } catch (e) {} } }
+    // n33b (batch 33, item 93): "How to cite this page" (text with link, BibTeX, licence) on report pages that carry none (see kbx_n33b.js cite)
+    if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && KN33C.test(new URL(req.url).pathname) && /text\/html/.test(r.headers.get('content-type') || '')) {
+      try { if (!kn33b) kn33b = await import('./kbx_n33b.js'); r = await kn33b.cite(req, r, env, new URL(req.url)); } catch (e) {}
+    }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
       // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
       if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
@@ -707,6 +713,13 @@ export default {
       if (!ke29) ke29 = await import('./kbx_e29.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const r = await ke29.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // kolaboro.com (n33b, batch 33): /reports/transparency/[<YYYY-MM>/] + CSV, /transparency-badge/developers/ and its SVG, 8 languages (see kbx_n33b.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN33B.test(u.pathname)) {
+      if (!kn33b) kn33b = await import('./kbx_n33b.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kn33b.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n27t, batch 27): /corrections/, /buyer-cases/, /cite/, /contact/, /transparency-badge/ in 8 languages, the badge SVG and the ranking CSV (see kbx_t27.js)

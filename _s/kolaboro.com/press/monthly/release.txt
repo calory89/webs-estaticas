@@ -24,7 +24,7 @@ Summary
 
 Kolaboro data show 896 tracked projects across 144 markets in November 2026. Of these, 755 projects have a handover date that can be used for the delay index. History for the delay index starts this month. Among those 755 projects, 62 are past the first handover date, a share of 8.2%, and 31 are past the current advertised handover date, a share of 4.1%. For projects past the first handover date, the median is 10.5 months and the 90th percentile is 35.0 months. In 50 markets, at least 5 projects have a handover date. The transparency index covers 95 markets, with a median of 42.0 on a scale with a maximum of 100. The price index for all markets stands at 100.03, against a base of 100.
 
-(Drafted by claude-sonnet-5-5 from the numbers above; every number was checked against the data by code.)
+(Every number in this summary was checked against the data by code.)
 
 Charts (SVG, CC BY 4.0):
   https://kolaboro.com/press/monthly/chart-delays.svg  Share of projects past the first promised handover, by market

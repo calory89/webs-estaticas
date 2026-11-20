@@ -11,7 +11,8 @@
 //                                                   existing database uptime probe of /api/kb/health (warm())
 // UI parts exported for kbx_named.js: nextStep() (the "What next" block with compare, save, alert, ask and share), filterBar() for
 // /projects/, CSS and JS. Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
-import { t30, radarSvg } from './kbx_n30a.js';   // n30a (batch 30): timeline link, compare radar of the six checks
+import { t30, radarSvg } from './kbx_n30a.js';
+import { T as NT } from './kbx_named_i18n.js';   // n33b: rel_embed label (table filled by kbx_strings.js before every request)   // n30a (batch 30): timeline link, compare radar of the six checks
 import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -118,7 +119,8 @@ export function nextStep(lang, x, name, cmp, txt) {   // txt (n31d, item 148): t
     '<li><button type="button" data-kn-save aria-pressed="false"><span aria-hidden="true">☆</span><span>' + esc(t26(lang, 'nx_save')) + '</span></button></li>' +
     '<li><a href="#watch" data-kn-alert><span aria-hidden="true">✉</span>' + esc(t26(lang, 'nx_alert')) + '</a></li>' +
     '<li><a href="/ask-developer/?id=' + encodeURIComponent(x.id) + '"><span aria-hidden="true">?</span>' + esc(t26(lang, 'nx_ask')) + '</a></li>' +
-    '<li><a href="' + P + '/projects/' + x.s + '/timeline/"><span aria-hidden="true">⋮</span>' + esc(t30(lang, 'tl_link')) + '</a></li></ul>' +   // n30a: every dated record on one timeline
+    '<li><a href="' + P + '/projects/' + x.s + '/timeline/"><span aria-hidden="true">⋮</span>' + esc(t30(lang, 'tl_link')) + '</a></li>' +   // n30a: every dated record on one timeline
+    '<li><a href="/embed/p/' + x.s + '/' + (lang === 'en' ? '' : '?lang=' + lang) + '" rel="nofollow"><span aria-hidden="true" dir="ltr">&lt;/&gt;</span>' + esc((NT[lang] || NT.en || {}).rel_embed || 'Embed these facts on your site') + '</a></li></ul>' +   // n33b (item 95): the free widgets, visible on every project page
     '<p class="knx-s"><span>' + esc(t26(lang, 'sh')) + ':</span> <a href="' + esc(wa) + '" target="_blank" rel="noopener nofollow">WhatsApp</a> <button type="button" data-kn-copy>' + esc(t26(lang, 'sh_copy')) + '</button> <button type="button" data-kn-share hidden>' + esc(t26(lang, 'sh_more')) + '</button> <span class="knx-o" role="status" aria-live="polite"></span>' +
     ' <a class="knx-my" href="/watchlist/">' + esc(t26(lang, 'nx_my')) + '</a></p></section>';
 }

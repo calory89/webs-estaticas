@@ -343,6 +343,8 @@ async function sitemapXml(env) {
   try { const p = await opt(env, 'progress.json'); if (p && p.items_updated) lm[IMP_P] = p.items_updated; } catch (e) {}
   // n27t (batch 27): the trust pages of kbx_t27.js
   for (const p of ['/corrections/', '/buyer-cases/', '/cite/', '/contact/', '/transparency-badge/']) { paths.push(p); lm[p] = REVIEWED; }
+  // n33b (batch 33): monthly transparency report by market (latest edition, fixed URL) and the developer badge page (kbx_n33b.js)
+  for (const p of ['/reports/transparency/', '/transparency-badge/developers/']) { paths.push(p); lm[p] = '2026-11-20'; }
   // n31b (batch 31): case studies, conflicts of interest, limits, data removal, fraud tips, transparency report, register copies, score history (kbx_n31b.js)
   for (const p of ['/case-studies/', '/case-studies/aykon-city-3/', '/conflicts-of-interest/', '/what-we-cannot-know/', '/data-removal/', '/report-fraud/', '/transparency-report/2026/', '/registers/captures/', '/score-history/']) { paths.push(p); lm[p] = '2026-11-18'; }
   // n29e (batch 29): editorial policy, how we work, sources, buyer protection compared, foreign buyers compared (kbx_e29.js)
