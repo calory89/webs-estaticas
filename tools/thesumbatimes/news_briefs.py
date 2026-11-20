@@ -4,12 +4,215 @@
 WA = "https://www.waingapu.com/"
 BRIEFS = [
 {'section': 'business',
+ 'slug': 'ksop-waingapu-small-vessel-permit-counter-salura-island-2026',
+ 'date': '2026-11-21',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'ventanilla-permisos-barcas-pequenas-isla-salura-ksop-waingapu-2026',
+           'id': 'gerai-pas-kecil-pelabuhan-salura-ksop-waingapu-2026'},
+ 'keywords': {'en': ['Salura island',
+                     'KSOP Waingapu',
+                     'Pas Kecil',
+                     'small vessel permit Indonesia',
+                     'East Sumba fishing boats',
+                     'Sumba outer islands'],
+              'es': ['isla de Salura',
+                     'KSOP Waingapu',
+                     'Pas Kecil',
+                     'permiso de barcas pequeñas Indonesia',
+                     'pesca en Sumba Oriental',
+                     'islas exteriores de Sumba'],
+              'id': ['Pulau Salura',
+                     'KSOP Waingapu',
+                     'Pas Kecil',
+                     'dokumen kapal nelayan',
+                     'Karera Sumba Timur',
+                     'pulau terluar Sumba']},
+ 'en': {'title': 'East Sumba opens small-vessel permit counter on Salura island',
+        'dek': 'The Waingapu harbour master now measures boats and issues Pas Kecil permits in Salura port, but no '
+               'fees or requirements are published.',
+        'answer': "The Waingapu harbour master's office (KSOP Class IV) has opened a counter in Salura port, Karera "
+                  'district, East Sumba, where boat owners can have vessels measured and obtain a small-vessel permit '
+                  '(Pas Kecil), Waingapu.com reported on 20 November 2026. The report gives no opening date, fee or '
+                  'list of requirements.',
+        'keys': ['KSOP Class IV Waingapu opened a Gerai Pas Kecil in Praisalura village, Salura island, so owners no '
+                 'longer have to travel far for boat paperwork.',
+                 'Owners can have a vessel measured and a Pas Kecil issued if the boat meets the legal requirements.',
+                 'The regent, deputy regent, prosecutor, police chief and other officials attended; the regency backs '
+                 'the service.',
+                 'Fees, hours, size limits and the opening date are not reported, and the account comes from one '
+                 'outlet.'],
+        'visitors': 'The counter is for boat owners, not passengers; the report mentions no passenger service to '
+                    'Salura, so ask a local operator and check sea conditions first.',
+        'body': "<p>The Waingapu harbour master's office has opened a counter on Salura island where boat owners can "
+                'have their vessels measured and obtain a small-vessel permit, known as a Pas Kecil, Waingapu.com '
+                'reported on 20 November 2026. The office, KSOP Class IV Waingapu, says the Gerai Pas Kecil in the '
+                'port of Praisalura village, Karera district, is meant to spare islanders a long trip for boat '
+                'paperwork. The report gives no opening date, fee, opening hours or list of requirements.</p><h2>What '
+                'the counter offers</h2><p>According to Waingapu.com, boat owners can now have a vessel measured and a '
+                'Pas Kecil issued at Salura, provided the boat meets the legal requirements. Until now, the paper '
+                'says, islanders had to travel quite far to get these services. KSOP head Fadly Afand Djafar is '
+                'reported as saying that boat paperwork should not be hard to reach for people on the coast and on '
+                'islands. The office hopes more owners and fishermen will complete their documents, which it links to '
+                'order and safety in sailing. The report presents the counter as part of the Directorate General of '
+                "Sea Transportation's commitment to better public service in island areas.</p><h2>Who "
+                'attended</h2><p>The paper lists regent Umbu Lili Pekuwali, the deputy regent, district prosecutor '
+                'Ariyanto Novindra and police chief AKBP Nanang Wahyudi among the officials present, together with '
+                'navy representatives, the fisheries and transport offices, the Sumba Timur weather station, the '
+                'Karera sub-district head and the Salura village head. The East Sumba government is reported to back '
+                'the service. Our <a '
+                'href="/en/business/salura-island-jetty-rp50-billion-east-sumba-regent-visit-2026/">18 November '
+                "brief</a> covered the regent's planned visit to the island over its Rp50 billion jetty; the new "
+                'report does not say whether the two events are linked. Everything here comes from one outlet, so '
+                'treat it as single-source until KSOP or the regency publishes its own notice.</p><h2>What it means '
+                'for visitors, residents and investors</h2><p>Visitors: the counter is for boat owners, not '
+                'passengers; the report mentions no passenger service to Salura, so ask a local operator and check sea '
+                'conditions first. Residents: islanders with boats can now have a vessel measured and permitted on '
+                'Salura itself, but ask KSOP Waingapu about fees, size limits and papers, which the report does not '
+                'list. Investors: this is a basic-services step on an outer island, not funding, a concession or a '
+                'tourism permit. Anyone planning charters or marine tourism around Salura should confirm with KSOP '
+                'Waingapu which vessel documents an operator needs.</p>',
+        'faq': [['What is a Pas Kecil?',
+                 'Waingapu.com describes it as a document for small vessels, issued after the boat is measured and '
+                 'meets the legal requirements. The report does not list the size limit, fee or papers needed.'],
+                ['Where is the new counter?',
+                 'In the port of Praisalura village, Salura island, Karera district, East Sumba, run by KSOP Class IV '
+                 'Waingapu.']]},
+ 'es': {'title': 'Salura estrena ventanilla de permisos para barcas pequeñas',
+        'dek': 'La capitanía del puerto de Waingapu mide barcas y emite el permiso Pas Kecil en el puerto de Salura, '
+               'pero no publica tasas ni requisitos.',
+        'answer': 'La capitanía del puerto de Waingapu (KSOP Clase IV) ha abierto en el puerto de Salura, en el '
+                  'distrito de Karera (Sumba Oriental), una ventanilla donde los dueños de barcas pueden medirlas y '
+                  'obtener el permiso para embarcaciones pequeñas (Pas Kecil), informó Waingapu.com el 20 de noviembre '
+                  'de 2026. La información no da fecha de apertura, tasas ni requisitos.',
+        'keys': ['KSOP Clase IV Waingapu abrió un Gerai Pas Kecil en la aldea de Praisalura, isla de Salura, para que '
+                 'los dueños no tengan que viajar lejos por los papeles de sus barcas.',
+                 'Los dueños pueden medir la embarcación y obtener un Pas Kecil si la barca cumple los requisitos '
+                 'legales.',
+                 'Asistieron el regente, el vicerregente, el fiscal, el jefe de policía y otras autoridades; la '
+                 'regencia respalda el servicio.',
+                 'No se informa de tasas, horario, límites de tamaño ni fecha de apertura, y el relato procede de un '
+                 'solo medio.'],
+        'visitors': 'La ventanilla es para dueños de barcas, no para pasajeros; la información no menciona ningún '
+                    'servicio de pasajeros a Salura, así que consulte a un operador local y revise antes el estado del '
+                    'mar.',
+        'body': '<p>La capitanía del puerto de Waingapu ha abierto en la isla de Salura una ventanilla donde los '
+                'dueños de barcas pueden medir su embarcación y obtener el permiso para embarcaciones pequeñas, '
+                'conocido como Pas Kecil, informó Waingapu.com el 20 de noviembre de 2026. La oficina, KSOP Clase IV '
+                'Waingapu, explica que el Gerai Pas Kecil, situado en el puerto de la aldea de Praisalura, en el '
+                'distrito de Karera, pretende ahorrar a los isleños un largo viaje para tramitar los papeles de sus '
+                'barcas. La información no da fecha de apertura, tasas, horario ni lista de requisitos.</p><h2>Qué '
+                'ofrece la ventanilla</h2><p>Según Waingapu.com, los dueños de barcas pueden medir ahora su '
+                'embarcación y obtener el Pas Kecil en Salura, siempre que la barca cumpla los requisitos legales. '
+                'Hasta ahora, dice el medio, los isleños tenían que viajar bastante lejos para estos trámites. El jefe '
+                'de KSOP, Fadly Afand Djafar, sostiene que los papeles de las barcas no deberían ser difíciles de '
+                'alcanzar para quienes viven en la costa y en las islas. La oficina espera que más dueños y pescadores '
+                'completen su documentación, que vincula con el orden y la seguridad de la navegación. La información '
+                'presenta la ventanilla como parte del compromiso de la Dirección General de Transporte Marítimo con '
+                'mejorar el servicio público en las zonas insulares.</p><h2>Quién asistió</h2><p>El medio cita entre '
+                'los presentes al regente Umbu Lili Pekuwali, al vicerregente, al fiscal del distrito Ariyanto '
+                'Novindra y al jefe de policía AKBP Nanang Wahyudi, junto con representantes de la Armada, las '
+                'oficinas de pesca y de transportes, la estación meteorológica de Sumba Oriental, el jefe del '
+                'subdistrito de Karera y el jefe de la aldea de Salura. Según la información, el Gobierno de Sumba '
+                'Oriental respalda el servicio. Nuestra <a '
+                'href="/es/business/embarcadero-isla-salura-50000-millones-rupias-regente-sumba-oriental-2026/">crónica '
+                'del 18 de noviembre</a> contó la visita prevista del regente a la isla por su embarcadero de 50.000 '
+                'millones de rupias; la nueva información no dice si ambos actos están relacionados. Todo procede de '
+                'un solo medio, así que conviene tomarlo como fuente única hasta que KSOP o la regencia publiquen su '
+                'propio aviso.</p><h2>Qué significa para visitantes, residentes e inversores</h2><p>Visitantes: la '
+                'ventanilla es para dueños de barcas, no para pasajeros; la información no menciona ningún servicio de '
+                'pasajeros a Salura, así que consulte a un operador local y revise antes el estado del mar. '
+                'Residentes: los isleños con barca pueden medirla y tramitar su permiso en la propia Salura, pero '
+                'pregunten en KSOP Waingapu por las tasas, los límites de tamaño y los papeles, que la información no '
+                'detalla. Inversores: es un paso en servicios básicos en una isla exterior, no una financiación, una '
+                'concesión ni un permiso turístico. Quien prevea chárteres o turismo marino en torno a Salura debería '
+                'confirmar con KSOP Waingapu qué documentos de embarcación necesita un operador.</p>',
+        'faq': [['¿Qué es un Pas Kecil?',
+                 'Waingapu.com lo describe como un documento para embarcaciones pequeñas, que se emite tras medir la '
+                 'barca y comprobar que cumple los requisitos legales. La información no detalla el límite de tamaño, '
+                 'la tasa ni los papeles necesarios.'],
+                ['¿Dónde está la nueva ventanilla?',
+                 'En el puerto de la aldea de Praisalura, isla de Salura, distrito de Karera, Sumba Oriental, '
+                 'gestionada por KSOP Clase IV Waingapu.']]},
+ 'id': {'title': 'KSOP Waingapu buka gerai Pas Kecil di Pulau Salura',
+        'dek': 'KSOP kini mengukur perahu dan menerbitkan Pas Kecil di pelabuhan Salura, tetapi biaya dan persyaratan '
+               'belum dipublikasikan.',
+        'answer': 'KSOP Kelas IV Waingapu membuka gerai di pelabuhan Salura, Kecamatan Karera, Sumba Timur, tempat '
+                  'pemilik perahu dapat mengukur kapal dan mengurus Pas Kecil, lapor Waingapu.Com pada 20 November '
+                  '2026. Laporan itu tidak menyebut tanggal pembukaan, biaya, atau daftar persyaratan.',
+        'keys': ['KSOP Kelas IV Waingapu membuka Gerai Pas Kecil di Desa Praisalura, Pulau Salura, sehingga pemilik '
+                 'kapal tidak perlu menempuh perjalanan jauh untuk dokumen.',
+                 'Pemilik dapat mengukur kapal dan mengurus Pas Kecil jika kapal memenuhi persyaratan.',
+                 'Bupati, wakil bupati, jaksa, kapolres, dan unsur lain hadir; pemerintah kabupaten mendukung layanan '
+                 'ini.',
+                 'Biaya, jam layanan, batas ukuran, dan tanggal pembukaan tidak dilaporkan, dan keterangan berasal '
+                 'dari satu media.'],
+        'visitors': 'Gerai ini untuk pemilik kapal, bukan penumpang; laporan tidak menyebut layanan penumpang ke '
+                    'Salura, jadi tanyakan operator setempat dan cek kondisi laut lebih dulu.',
+        'body': '<p>Kantor Kesyahbandaran dan Otoritas Pelabuhan (KSOP) Kelas IV Waingapu membuka gerai di Pulau '
+                'Salura tempat pemilik perahu dapat mengukur kapalnya dan mengurus Pas Kecil, dokumen untuk kapal '
+                'kecil, lapor Waingapu.Com pada 20 November 2026. Gerai Pas Kecil di pelabuhan Desa Praisalura, '
+                'Kecamatan Karera, itu dimaksudkan agar warga pulau tidak perlu menempuh perjalanan jauh untuk '
+                'mengurus dokumen kapal. Laporan tersebut tidak menyebut tanggal pembukaan, biaya, jam layanan, maupun '
+                'daftar persyaratan.</p><h2>Layanan yang tersedia</h2><p>Menurut Waingapu.Com, pemilik kapal kini '
+                'dapat mengukur kapal dan mengurus penerbitan Pas Kecil di Salura, selama kapal memenuhi persyaratan '
+                'sesuai ketentuan perundang-undangan. Selama ini, tulis media itu, warga harus menempuh perjalanan '
+                'cukup jauh untuk layanan tersebut. Kepala KSOP Kelas IV Waingapu, Fadly Afand Djafar, disebut '
+                'mengatakan bahwa pelayanan administrasi kapal tidak seharusnya sulit dijangkau masyarakat pesisir dan '
+                'pulau. Kantor itu berharap lebih banyak pemilik kapal dan nelayan melengkapi dokumennya, yang '
+                'dikaitkan dengan ketertiban dan keselamatan pelayaran. Laporan menyebut gerai ini bagian dari '
+                'komitmen Direktorat Jenderal Perhubungan Laut untuk meningkatkan pelayanan publik di wilayah '
+                'kepulauan.</p><h2>Siapa yang hadir</h2><p>Media itu menyebut Bupati Umbu Lili Pekuwali, Wakil Bupati, '
+                'Kepala Kejaksaan Negeri Ariyanto Novindra, dan Kapolres AKBP Nanang Wahyudi di antara yang hadir, '
+                'bersama unsur TNI Angkatan Laut, Dinas Perikanan, Dinas Perhubungan, Stasiun Meteorologi Sumba Timur, '
+                'Camat Karera, dan Kepala Desa Salura. Pemerintah Kabupaten Sumba Timur disebut mendukung layanan ini. '
+                '<a href="/id/business/dermaga-pulau-salura-rp50-miliar-bupati-sumba-timur-2026/">Berita kami pada 18 '
+                'November</a> memuat rencana kunjungan bupati ke pulau itu soal dermaga Rp50 miliar; laporan baru '
+                'tidak menyebut apakah kedua kegiatan itu berkaitan. Semua keterangan ini berasal dari satu media, '
+                'jadi anggaplah sebagai sumber tunggal sampai KSOP atau pemerintah kabupaten merilis pengumumannya '
+                'sendiri.</p><h2>Apa artinya bagi pengunjung, warga, dan investor</h2><p>Pengunjung: gerai ini untuk '
+                'pemilik kapal, bukan penumpang; laporan tidak menyebut layanan penumpang ke Salura, jadi tanyakan '
+                'operator setempat dan cek kondisi laut lebih dulu. Warga: pemilik perahu di pulau kini dapat mengukur '
+                'dan mengurus dokumen kapal di Salura sendiri, tetapi tanyakan ke KSOP Waingapu soal biaya, batas '
+                'ukuran, dan berkas yang diperlukan, karena laporan tidak merincinya. Investor: ini langkah layanan '
+                'dasar di pulau terluar, bukan pendanaan, konsesi, atau izin pariwisata. Siapa pun yang berencana '
+                'menjalankan sewa kapal atau wisata bahari di sekitar Salura sebaiknya memastikan ke KSOP Waingapu '
+                'dokumen kapal apa yang dibutuhkan operator.</p>',
+        'faq': [['Apa itu Pas Kecil?',
+                 'Waingapu.Com menggambarkannya sebagai dokumen untuk kapal kecil, diterbitkan setelah kapal diukur '
+                 'dan memenuhi persyaratan. Laporan tidak merinci batas ukuran, biaya, atau berkas yang diperlukan.'],
+                ['Di mana gerai barunya?',
+                 'Di pelabuhan Desa Praisalura, Pulau Salura, Kecamatan Karera, Sumba Timur, dikelola KSOP Kelas IV '
+                 'Waingapu.']]},
+ 'sources': [['Waingapu.Com: KSOP Waingapu Buka Gerai Pas Kecil di Pulau Salura, Nelayan Tak Perlu Jauh Urus Legalitas '
+              'Kapal (20 Nov 2026)',
+              'https://www.waingapu.com/ksop-waingapu-buka-gerai-pas-kecil-di-pulau-salura-nelayan-tak-perlu-jauh-urus-legalitas-kapal/'],
+             ['Waingapu.Com: Hari Ini Bupati Sumba Timur Bertolak ke Pulau Salura, Ini Agenda Penting yang Dibawa (17 '
+              'Nov 2026)',
+              'https://www.waingapu.com/hari-ini-bupati-sumba-timur-bertolak-ke-pulau-salura-ini-agenda-penting-yang-dibawa/']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': '06Ivonne',
+           'license': 'CC BY-SA 4.0',
+           'license_url': 'https://creativecommons.org/licenses/by-sa/4.0',
+           'page': 'https://commons.wikimedia.org/wiki/File:Walakeri_Beach_3.jpg',
+           'ai': False,
+           'caption': {'en': 'File photo: a boat on the sand at low tide, Walakeri Beach, East Sumba, 2018. It does '
+                             'not show Salura or its port.',
+                       'es': 'Foto de archivo: una barca sobre la arena con la marea baja, playa de Walakeri, Sumba '
+                             'Oriental, 2018. No muestra Salura ni su puerto.',
+                       'id': 'Foto arsip: perahu di atas pasir saat air surut, Pantai Walakeri, Sumba Timur, 2018. '
+                             'Foto ini tidak menunjukkan Salura atau pelabuhannya.'}}},
+
+{'section': 'business',
  'slug': 'msm-sugar-mill-fire-umalulu-east-sumba-2026',
  'date': '2026-11-20',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
+ 
  'slugs': {'es': 'incendio-ingenio-azucarero-msm-umalulu-sumba-oriental-2026', 'id': 'kebakaran-pabrik-gula-msm-umalulu-sumba-timur-2026'},
  'keywords': {'en': ['PT Muria Sumba Manis fire', 'East Sumba sugar mill', 'Umalulu sugar factory', 'Sumba sugarcane', 'Sumba investment 2026', 'sugar industry NTT'],
               'es': ['incendio ingenio azucarero Sumba', 'PT Muria Sumba Manis', 'Umalulu Sumba Oriental', 'caña de azúcar Sumba', 'inversión en Sumba 2026'],
