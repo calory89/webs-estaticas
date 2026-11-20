@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-03",
- "records_scanned": 12486,
+ "updated": "2026-11-20",
+ "records_scanned": 12464,
  "projects": {
   "layan-green-park-phase-2": {
    "register": "Thailand ONEP EIA register",
@@ -8,7 +8,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/21650 dated 29/12/2565 (Thai calendar)",
    "code": "256509-110",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "riviera-malibu-residences": {
    "register": "Thailand ONEP EIA register",
@@ -16,7 +16,7 @@
    "status": "approved",
    "detail": "approval ทส 1010.5/16617 dated 12/10/2564 (Thai calendar)",
    "code": "256504-39",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "citygate-de-phuket": {
    "register": "Thailand ONEP EIA register",
@@ -24,7 +24,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/24797 dated 14/11/2568 (Thai calendar)",
    "code": "256807-88",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-one-naiharn": {
    "register": "Thailand ONEP EIA register",
@@ -32,7 +32,7 @@
    "status": "approved",
    "detail": "approval ทส 1010.5/1620 dated 05/02/2564 (Thai calendar)",
    "code": "14990",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-zero-nai-yang": {
    "register": "Thailand ONEP EIA register",
@@ -40,7 +40,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/24287 dated 31/10/2568 (Thai calendar)",
    "code": "256806-7",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "vega-condominium": {
    "register": "Thailand ONEP EIA register",
@@ -48,7 +48,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/5851 dated 12/03/2567 (Thai calendar)",
    "code": "256610-42",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "grand-solaire-pattaya": {
    "register": "Thailand ONEP EIA register",
@@ -56,7 +56,7 @@
    "status": "approved",
    "detail": "approval ทส 1010.5/17038 dated 15/12/2563 (Thai calendar)",
    "code": "14910",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "riviera-beverly-hills-residences": {
    "register": "Thailand ONEP EIA register",
@@ -64,7 +64,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/23677 dated 20/10/2568 (Thai calendar)",
    "code": "256807-41",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "riviera-santa-monica": {
    "register": "Thailand ONEP EIA register",
@@ -72,14 +72,14 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/17814 dated 01/09/2568 (Thai calendar)",
    "code": "256806-6",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-title-coralina-kamala": {
    "register": "Thailand ONEP EIA register",
    "item": "environmental approval",
    "status": "not in the approved list",
    "code": "256909-43",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "copacabana-coral-reef-jomtien": {
    "register": "Thailand ONEP EIA register",
@@ -87,14 +87,14 @@
    "status": "approved",
    "detail": "approval ทส 1010.5/10429 dated 11/08/2563 (Thai calendar)",
    "code": "14612",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "vibe-town-karon": {
    "register": "Thailand ONEP EIA register",
    "item": "environmental approval",
    "status": "not in the approved list",
    "code": "256909-55",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "widen-by-sansiri-sathorn": {
    "register": "Thailand ONEP EIA register",
@@ -102,7 +102,7 @@
    "status": "approved",
    "detail": "approval กท 1104/794 dated 11/04/2568 (Thai calendar)",
    "code": "256709-48",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "astra-infinite-chiang-mai": {
    "register": "Thailand ONEP EIA register",
@@ -110,7 +110,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/2041 dated 02/02/2569 (Thai calendar)",
    "code": "256811-27",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-olive-naiyang-rhom-bho": {
    "register": "Thailand ONEP EIA register",
@@ -118,7 +118,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/9398 dated 10/04/2569 (Thai calendar)",
    "code": "256811-61",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "vip-tropika-bangtao-vip-property-development": {
    "register": "Thailand ONEP EIA register",
@@ -126,7 +126,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/21178 dated 18/09/2569 (Thai calendar)",
    "code": "256904-44",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "laguna-lake-residences-aster-banyan-group": {
    "register": "Thailand ONEP EIA register",
@@ -134,7 +134,7 @@
    "status": "approved",
    "detail": "approval ทส1009.5/4893 dated 23/02/2569 (Thai calendar)",
    "code": "256810-3",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "layan-verde-villacarte": {
    "register": "Thailand ONEP EIA register",
@@ -142,7 +142,14 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/21226 dated 22/10/2567 (Thai calendar)",
    "code": "256706-27",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
+  },
+  "still-sukhumvit-20-sc-asset": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "filed, not approved",
+   "code": "256810-25",
+   "checked": "2026-11-20"
   },
   "once-wongamat-honour-thailand": {
    "register": "Thailand ONEP EIA register",
@@ -150,7 +157,15 @@
    "status": "approved",
    "detail": "approval ทส.1009.5/2180 dated - (Thai calendar)",
    "code": "256711-35",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
+  },
+  "aquarous-jomtien-pattaya-assetwise": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "approved",
+   "detail": "approval ทส 1009.5/19659 dated - (Thai calendar)",
+   "code": "256707-6",
+   "checked": "2026-11-20"
   },
   "the-boon-condo-bophut-b2-development": {
    "register": "Thailand ONEP EIA register",
@@ -158,7 +173,15 @@
    "status": "approved",
    "detail": "approval สฎ0014.2/10717 dated 07/07/2569 (Thai calendar)",
    "code": "256810-47",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
+  },
+  "the-standard-residences-hua-hin-sansiri": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "approved",
+   "detail": "approval ทส 1010.5/7296.1 dated 29/05/2563 (Thai calendar)",
+   "code": "14399",
+   "checked": "2026-11-20"
   },
   "aura-condominium-rawai-the-one-group": {
    "register": "Thailand ONEP EIA register",
@@ -166,7 +189,7 @@
    "status": "approved",
    "detail": "approval ทส1009.5/21393 dated 28/10/2567 (Thai calendar)",
    "code": "256706-35",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "so-lagoon-cherngtalay-origin": {
    "register": "Thailand ONEP EIA register",
@@ -174,7 +197,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/1981 dated 30/01/2569 (Thai calendar)",
    "code": "256808-8",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "anava-samui-zhongfa": {
    "register": "Thailand ONEP EIA register",
@@ -182,7 +205,7 @@
    "status": "approved",
    "detail": "approval ทส1009.5/127 dated 09/01/2568 (Thai calendar)",
    "code": "256703-68",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-riviera-palm-beach-wongamat-riviera-group": {
    "register": "Thailand ONEP EIA register",
@@ -190,7 +213,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/26064 dated 08/12/2568 (Thai calendar)",
    "code": "256805-23",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-title-cielo-rawai-rhom-bho": {
    "register": "Thailand ONEP EIA register",
@@ -198,7 +221,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/872 dated 29/01/2568 (Thai calendar)",
    "code": "256709-68",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "wing-samui-condo-phase-2": {
    "register": "Thailand ONEP EIA register",
@@ -206,7 +229,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/1807 dated 09/01/2566 (Thai calendar)",
    "code": "256508-93",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "hythe-by-botanica": {
    "register": "Thailand ONEP EIA register",
@@ -214,7 +237,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/11069 dated 26/05/2568 (Thai calendar)",
    "code": "256801-51",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "vip-space-odyssey-rawai": {
    "register": "Thailand ONEP EIA register",
@@ -222,7 +245,7 @@
    "status": "approved",
    "detail": "approval ทส.1009.5/27431 dated 30/12/2568 (Thai calendar)",
    "code": "256811-41",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-riviera-california-riviera-group": {
    "register": "Thailand ONEP EIA register",
@@ -230,7 +253,7 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/6641 dated 12/03/2569 (Thai calendar)",
    "code": "256902-10",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "the-monument-sathon-sansiri": {
    "register": "Thailand ONEP EIA register",
@@ -238,7 +261,7 @@
    "status": "approved",
    "detail": "approval 1009.5/9979 dated 24/04/2568 (Thai calendar)",
    "code": "256801-28",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "chapter-charoenkrung-riverside-pruksa": {
    "register": "Thailand ONEP EIA register",
@@ -246,7 +269,7 @@
    "status": "approved",
    "detail": "approval กท1102/60 dated 20/06/2568 (Thai calendar)",
    "code": "256802-40",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
   },
   "arise-hill-sansai-ornsirin": {
    "register": "Thailand ONEP EIA register",
@@ -254,7 +277,31 @@
    "status": "approved",
    "detail": "approval ทส 1009.5/9584 dated - (Thai calendar)",
    "code": "256711-17",
-   "checked": "2026-11-03"
+   "checked": "2026-11-20"
+  },
+  "xt-10-ekkamai": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "approved",
+   "detail": "approval ทส 1009.5/15030 dated 08/08/2568 (Thai calendar)",
+   "code": "256712-49",
+   "checked": "2026-11-20"
+  },
+  "pty-residence-sai-1": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "approved",
+   "detail": "approval ทส 1009.5/21468 dated 29/10/2567 (Thai calendar)",
+   "code": "256704-35",
+   "checked": "2026-11-20"
+  },
+  "the-modeva-bangtao": {
+   "register": "Thailand ONEP EIA register",
+   "item": "environmental approval",
+   "status": "approved",
+   "detail": "approval ทส 1009.5/896 dated 29/01/2568 (Thai calendar)",
+   "code": "256709-44",
+   "checked": "2026-11-20"
   },
   "residensi-m-azura": {
    "register": "Malaysia KPKT TEDUH register",
@@ -382,53 +429,6 @@
    "status": "active",
    "detail": "permit 30685-1/04-2027/0328(A)-(S) valid to 2027-04-18; progress 53.11/54.30%",
    "code": "30685-1",
-   "checked": "2026-11-13"
-  },
-  "the-modeva-bangtao": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "approved",
-   "detail": "approval ทส 1009.5/896 dated 29/01/2568 (Thai calendar)",
-   "code": "256709-44",
-   "checked": "2026-11-13"
-  },
-  "xt-10-ekkamai": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "approved",
-   "detail": "approval ทส 1009.5/15030 dated 08/08/2568 (Thai calendar)",
-   "code": "256712-49",
-   "checked": "2026-11-13"
-  },
-  "pty-residence-sai-1": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "approved",
-   "detail": "approval ทส 1009.5/21468 dated 29/10/2567 (Thai calendar)",
-   "code": "256704-35",
-   "checked": "2026-11-13"
-  },
-  "the-standard-residences-hua-hin-sansiri": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "approved",
-   "detail": "approval ทส 1010.5/7296.1 dated 29/05/2563 (Thai calendar)",
-   "code": "14399",
-   "checked": "2026-11-13"
-  },
-  "aquarous-jomtien-pattaya-assetwise": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "approved",
-   "detail": "approval ทส 1009.5/19659",
-   "code": "256707-6",
-   "checked": "2026-11-13"
-  },
-  "still-sukhumvit-20-sc-asset": {
-   "register": "Thailand ONEP EIA register",
-   "item": "environmental approval",
-   "status": "filed, not approved",
-   "code": "256810-25",
    "checked": "2026-11-13"
   },
   "ora-by-casa-tua-fortune": {
