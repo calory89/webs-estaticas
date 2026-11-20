@@ -1304,7 +1304,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -1328,7 +1328,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 1,
+   "fp": {
+    "sha256": "b1f4c4bcd1315b79a9f0c3dad9e696194ac7c3efdadad8954fd9a80ee9f98e3e",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "BALI-080",
@@ -14159,7 +14163,7 @@
    "country": "Spain",
    "region": "Balearics",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2027,
    "title": null,
@@ -14170,7 +14174,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -14182,13 +14186,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -14213,7 +14217,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 7,
+   "fp": {
+    "sha256": "5302b4701ba0ff20d43c5f3a4fd025738a4b448afbafb6c15d2b354ef7930bac",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "PMI-008",
@@ -14250,7 +14258,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -14275,7 +14283,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "c95e174dfb0b9fdd85255e721d41b01d884008fdb36a4a897e72b429f1f9678c",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "PMI-009",
@@ -14590,7 +14602,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -14795,7 +14807,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "filed, not approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -14997,7 +15009,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -15077,7 +15089,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -15150,7 +15162,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -23322,7 +23334,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -23523,7 +23535,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -27439,7 +27451,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -27463,7 +27475,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 1,
+   "fp": {
+    "sha256": "be9a60a826f40f222074dda1ca1a39ceb20e8707e1b28c414da9fdf11d4af411",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "CDS-029",
@@ -40116,7 +40132,7 @@
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
@@ -40142,6 +40158,10 @@
    "delay": null,
    "overdue": null,
    "profile": 11,
+   "fp": {
+    "sha256": "c486c2b250590a10b19af46a47da643edf04acf5e8d3f37c31697023f8e73b13",
+    "date": "2026-11-20"
+   },
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -40184,7 +40204,7 @@
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
@@ -40210,6 +40230,10 @@
    "delay": null,
    "overdue": null,
    "profile": 12,
+   "fp": {
+    "sha256": "1ec3e20032e31525f9b3ce42e06189ca99fb03cfbd0c26b1100e8eb6f7327d27",
+    "date": "2026-11-20"
+   },
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -67145,7 +67169,7 @@
    "country": "France",
    "region": "France",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
    "title": null,
@@ -67156,9 +67180,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -67174,10 +67198,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -67199,7 +67224,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "8ecc0e7b0ab39852d3946dc5cb603b3eba5fe8435c3bc0ac4dd10363c4fd8fcc",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "FRA-002",
@@ -67207,18 +67236,18 @@
    "country": "France",
    "region": "France",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Under $100k",
    "done": 2028,
    "title": null,
-   "lease": null,
+   "lease": 16,
    "yield": null,
    "units": 140,
    "checks": {
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -67230,13 +67259,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -67261,7 +67290,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "fp": {
+    "sha256": "b0992651f19fd6e221be38c494f41273fa71d6d4c214ee008406e7fea8bdb805",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "FRA-003",
@@ -67269,7 +67302,7 @@
    "country": "France",
    "region": "France",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
    "title": null,
@@ -67280,9 +67313,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -67298,10 +67331,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -67323,7 +67357,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "7730b0936a2aad129b3e5b51c499618e32109a6bee73432a9493c92dc8808c12",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "FRA-004",
@@ -67331,7 +67369,7 @@
    "country": "France",
    "region": "France",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2028,
    "title": null,
@@ -67342,7 +67380,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -67354,13 +67392,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -67385,7 +67423,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "65f082be6403ae42adb4b491fd84c56e128c94f79fae4f3430220b332890ac4c",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "FRA-005",
@@ -67393,7 +67435,7 @@
    "country": "France",
    "region": "France",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2027,
    "title": null,
@@ -67404,9 +67446,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -67422,10 +67464,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -67447,7 +67490,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "d71b9dc130b0b36612719d931ff21c7fe2db256b9998cc2b1d8d445b3a06289c",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "FRA-006",
@@ -70142,7 +70189,7 @@
    "country": "France",
    "region": "French Riviera",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2029,
    "title": null,
@@ -70153,9 +70200,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -70171,10 +70218,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -70196,7 +70244,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "06c7292210a755c53a384b458a9415aaf76d6a7360892c71b946e61bc1ceebf0",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "NCE-008",
@@ -70204,7 +70256,7 @@
    "country": "France",
    "region": "French Riviera",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
    "title": null,
@@ -70215,9 +70267,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -70233,10 +70285,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "12 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -70258,7 +70311,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "46e8b1291df6e84008a47336c9a6e1e9dfe2f1ebd8c4c7883bf14de509758af8",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "NCE-009",
@@ -71652,7 +71709,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -71677,7 +71734,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "fp": {
+    "sha256": "fad9a229342c1371895092e3ccf0a73482368e30fdb4d77cdbdbbcd2f0deb962",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "GEO-014",
@@ -73235,12 +73296,12 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -73250,17 +73311,18 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 0,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -73281,7 +73343,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "107fa89f1401a7d4654ebd1b9df1883cee31a837b32d9694af07af7aab585b10",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "OOL-010",
@@ -74393,7 +74459,7 @@
    "country": "Greece",
    "region": "Greece",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Price not stated",
    "done": 2030,
    "title": null,
@@ -74404,7 +74470,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -74416,13 +74482,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -74447,7 +74513,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "0437b7225e175ba1722a8e02314cd9e053ebdcfba908e6f59000b319392216ac",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "GRC-014",
@@ -74455,7 +74525,7 @@
    "country": "Greece",
    "region": "Greece",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Price not stated",
    "done": 2028,
    "title": null,
@@ -74466,7 +74536,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -74478,13 +74548,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -74509,7 +74579,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "0bcf50bd8dbd68445c64489542dab855f98712b97f24b5a03a13b0c00b785525",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "GRC-015",
@@ -75576,18 +75650,18 @@
    "country": "Vietnam",
    "region": "Ho Chi Minh City",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "Price not stated",
    "done": 2027,
-   "title": null,
-   "lease": null,
+   "title": "leasehold",
+   "lease": 50,
    "yield": null,
    "units": 808,
    "checks": {
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -75599,16 +75673,16 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -75630,7 +75704,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "f71e34d84d543fcfde81e295472664d447cfa165750f1e38410434b2dbb7e796",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "SGN-004",
@@ -76460,7 +76538,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -78357,7 +78435,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -78382,7 +78460,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "cce70cbb8443e6a43537472136bc87cdf7319d1d92b4994c7747fabfc9b30822",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "ITA-006",
@@ -78608,7 +78690,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -78633,7 +78715,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "303687d9c8b3caf102496f7ff61d8142bb913acd880ded1efcdfcb05286a0aee",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "IZM-003",
@@ -80838,7 +80924,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -81046,7 +81132,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -81118,7 +81204,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -97058,7 +97144,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -97083,7 +97169,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "255c6c7d76c323e958d5015cca6449a699ea2e95a51ec488afd8ef974c569333",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "MIA-018",
@@ -97120,7 +97210,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -97145,7 +97235,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "59a6e791fdb63ef330423aa40c94cb3a4ff34cbdc223a6e9efc616695558d4a5",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "MIA-019",
@@ -101575,7 +101669,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -101599,7 +101693,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "fp": {
+    "sha256": "b8e95cca279512973862b90b7b07b32ac49521a7f1c5692d8ac10aec789313f2",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "BNA-001",
@@ -106551,7 +106649,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -106622,7 +106720,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -106731,7 +106829,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -106802,7 +106900,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -106873,7 +106971,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -107112,7 +107210,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -107249,7 +107347,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -107321,7 +107419,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -107393,7 +107491,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -107785,7 +107883,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -110437,7 +110535,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -110516,7 +110614,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -110588,7 +110686,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -110659,7 +110757,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    },
    "history": [
     {
@@ -110744,7 +110842,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -110816,7 +110914,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "not in the approved list",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -110887,7 +110985,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "not in the approved list",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111157,7 +111255,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111231,7 +111329,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111304,7 +111402,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111377,7 +111475,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111454,7 +111552,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111690,7 +111788,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111762,7 +111860,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111835,7 +111933,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -111907,7 +112005,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-03"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -112359,7 +112457,7 @@
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
-    "checked": "2026-11-13"
+    "checked": "2026-11-20"
    }
   },
   {
@@ -116651,7 +116749,7 @@
    "country": "Mexico",
    "region": "Puerto Vallarta",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": null,
    "title": null,
@@ -116662,7 +116760,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -116674,13 +116772,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -116704,7 +116802,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "1b6ccd66127d4831205cb4fd9c80bacce2dbc44a72772c2704158ac828df1acf",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "PVR-014",
@@ -121465,7 +121567,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -121489,7 +121591,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "04bb496e5855899aaddcaa2fbad50159c165a4c2eab9a7db6f2d6d664b4caaf3",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "RMY-023",
@@ -122449,7 +122555,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -122474,7 +122580,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "65ed0eed9c644fdf6dff1fb45b8e93094064e85c3074348390c92b97f1d999bb",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "KSA-009",
@@ -127866,12 +127976,12 @@
    "yield": null,
    "units": 223,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -127881,17 +127991,18 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 0,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -127912,7 +128023,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "3f20b4406a0e3fafc7c0e8641b44c2c7daa9abe99b8fec19b6ba2df385394ed6",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "SYD-008",
@@ -127928,12 +128043,12 @@
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -127943,17 +128058,18 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 0,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "11 Nov 2026",
+   "checked": "20 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -127974,7 +128090,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "64d02496b2669efe4538924504d2670ff21d0c66153e7f452c37938ca264fe96",
+    "date": "2026-11-20"
+   }
   },
   {
    "id": "SYD-009",
@@ -134564,9 +134684,9 @@
   "register_watched": 528
  },
  "seal": {
-  "date": "2026-11-15",
-  "count": 1061,
-  "root": "4eac72f3f2f3bc4ab00dd1ca1e4a9a90039f485c600d85ec0971d6abf0b76ac8",
+  "date": "2026-11-20",
+  "count": 1087,
+  "root": "cc0f1531164a712e73a215a509142231ef1e66363234dae786cd840dd92376d3",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },

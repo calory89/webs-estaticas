@@ -129,9 +129,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -260,9 +260,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -391,9 +391,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -522,9 +522,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -654,9 +654,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -786,9 +786,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -916,9 +916,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1047,9 +1047,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1180,9 +1180,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1310,9 +1310,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1440,9 +1440,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1570,9 +1570,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1701,9 +1701,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1831,9 +1831,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -1963,9 +1963,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2096,9 +2096,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2226,9 +2226,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2261,7 +2261,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 5,
    "price_usd": {
     "known": 8,
     "median": 728000.0,
@@ -2360,9 +2360,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2495,9 +2495,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2630,9 +2630,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2762,9 +2762,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -2893,9 +2893,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3025,9 +3025,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3156,9 +3156,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3287,9 +3287,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3419,9 +3419,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3556,9 +3556,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3690,9 +3690,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3820,9 +3820,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -3951,9 +3951,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4083,9 +4083,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4216,9 +4216,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4350,9 +4350,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4480,9 +4480,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4613,9 +4613,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4746,9 +4746,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -4877,9 +4877,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5007,9 +5007,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5137,9 +5137,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5267,9 +5267,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5399,9 +5399,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5530,9 +5530,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5662,9 +5662,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5795,9 +5795,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -5928,9 +5928,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6061,9 +6061,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6194,9 +6194,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6324,9 +6324,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6456,9 +6456,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6587,9 +6587,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6717,9 +6717,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6847,9 +6847,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -6980,9 +6980,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7117,9 +7117,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7247,9 +7247,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7379,9 +7379,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7509,9 +7509,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7643,9 +7643,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7773,9 +7773,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -7905,9 +7905,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8036,9 +8036,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8053,12 +8053,12 @@
     "known": 0
    },
    "lease": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null,
+    "known": 1,
+    "median": 16,
+    "min": 16,
+    "max": 16,
     "hist": {
-     "under 30": 0,
+     "under 30": 1,
      "30 to 34": 0,
      "35 to 39": 0,
      "40 or more": 0
@@ -8068,10 +8068,10 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 0,
+   "guaranteed_language": 3,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 5,
    "price_usd": {
     "known": 28,
     "median": 212000.0,
@@ -8170,9 +8170,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8302,9 +8302,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8334,10 +8334,10 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 2,
+   "guaranteed_language": 4,
    "permit_claims": 1,
    "permit_numbers_published": 1,
-   "plans_published": 4,
+   "plans_published": 6,
    "price_usd": {
     "known": 14,
     "median": 324000.0,
@@ -8435,9 +8435,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8569,9 +8569,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8700,9 +8700,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8830,9 +8830,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -8960,9 +8960,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9093,9 +9093,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9125,8 +9125,8 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 0,
-   "permit_claims": 5,
+   "guaranteed_language": 1,
+   "permit_claims": 6,
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
@@ -9226,9 +9226,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9261,7 +9261,7 @@
    "guaranteed_language": 0,
    "permit_claims": 2,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 6,
    "price_usd": {
     "known": 5,
     "median": 1728000.0,
@@ -9361,9 +9361,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9492,9 +9492,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9622,9 +9622,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9753,9 +9753,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -9766,19 +9766,19 @@
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 12,
    "title": {
-    "leasehold": 0,
-    "known": 0
+    "leasehold": 1,
+    "known": 1
    },
    "lease": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null,
+    "known": 1,
+    "median": 50,
+    "min": 50,
+    "max": 50,
     "hist": {
      "under 30": 0,
      "30 to 34": 0,
      "35 to 39": 0,
-     "40 or more": 0
+     "40 or more": 1
     }
    },
    "extension_promised": {
@@ -9788,7 +9788,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 1,
+   "plans_published": 2,
    "price_usd": {
     "known": 6,
     "median": 183000.0,
@@ -9886,9 +9886,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10016,9 +10016,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10149,9 +10149,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10283,9 +10283,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10416,9 +10416,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10548,9 +10548,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10678,9 +10678,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10809,9 +10809,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -10939,9 +10939,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11071,9 +11071,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11204,9 +11204,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11334,9 +11334,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11466,9 +11466,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11599,9 +11599,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11733,9 +11733,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11864,9 +11864,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -11996,9 +11996,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12126,9 +12126,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12256,9 +12256,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12387,9 +12387,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12518,9 +12518,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12649,9 +12649,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12780,9 +12780,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -12913,9 +12913,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13047,9 +13047,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13179,9 +13179,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13311,9 +13311,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13446,9 +13446,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13578,9 +13578,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13711,9 +13711,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13842,9 +13842,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -13974,9 +13974,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14106,9 +14106,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14238,9 +14238,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14369,9 +14369,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14500,9 +14500,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14634,9 +14634,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14766,9 +14766,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -14896,9 +14896,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15028,9 +15028,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15160,9 +15160,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15291,9 +15291,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15423,9 +15423,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15553,9 +15553,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15684,9 +15684,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15815,9 +15815,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -15946,9 +15946,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16076,9 +16076,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16209,9 +16209,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16342,9 +16342,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16473,9 +16473,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16606,9 +16606,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16737,9 +16737,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16868,9 +16868,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -16999,9 +16999,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17131,9 +17131,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17263,9 +17263,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17394,9 +17394,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17528,9 +17528,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17660,9 +17660,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17790,9 +17790,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -17926,9 +17926,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18060,9 +18060,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18192,9 +18192,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18323,9 +18323,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18456,9 +18456,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18587,9 +18587,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18717,9 +18717,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18752,7 +18752,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 6,
+   "plans_published": 7,
    "price_usd": {
     "known": 7,
     "median": 296000.0,
@@ -18849,9 +18849,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -18981,9 +18981,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19114,9 +19114,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19249,9 +19249,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19380,9 +19380,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19512,9 +19512,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19642,9 +19642,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19772,9 +19772,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -19902,9 +19902,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20036,9 +20036,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20166,9 +20166,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20296,9 +20296,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20426,9 +20426,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20557,9 +20557,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20690,9 +20690,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20821,9 +20821,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -20953,9 +20953,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21086,9 +21086,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21216,9 +21216,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21346,9 +21346,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21478,9 +21478,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21510,8 +21510,8 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 1,
-   "permit_claims": 3,
+   "guaranteed_language": 3,
+   "permit_claims": 5,
    "permit_numbers_published": 2,
    "plans_published": 2,
    "price_usd": {
@@ -21612,9 +21612,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21742,9 +21742,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -21874,9 +21874,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22006,9 +22006,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22137,9 +22137,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22267,9 +22267,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22399,9 +22399,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22531,9 +22531,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22661,9 +22661,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22792,9 +22792,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -22923,9 +22923,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23055,9 +23055,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23186,9 +23186,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23316,9 +23316,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23450,9 +23450,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23583,9 +23583,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23713,9 +23713,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23844,9 +23844,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
@@ -23977,9 +23977,9 @@
     },
     {
      "date": "2026-11-20",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
+     "mode": "ai",
+     "pages_ok": 28,
+     "pages_failed": 87,
      "changes": 0
     }
    ]
