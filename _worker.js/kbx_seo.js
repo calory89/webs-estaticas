@@ -508,7 +508,7 @@ async function hubUrls(B) {
   return out;
 }
 function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates; lastmod = last real data change (kbx_lastmod.js)
-  const list = B.N.all.filter(e => e.type === type && e.sm !== false); const byBase = new Map(), T = B.T;
+  const list = B.N.all.filter(e => e.type === type && (e.sm !== false || (B.prio && B.prio.has(e.loc.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/')))));   // n33i: a page Search Console shows impressions for (data/seo-priority.json) is listed even when thin (sm=false), with its language versions const byBase = new Map(), T = B.T;
   const all = T ? [...T.project.values()].sort() : [], newest = all[all.length - 1] || null;
   const tlm = (e, b) => { if (!T) return null; if (type === 'project' && e.id) return T.project.get(e.id) || null; if (type === 'developer') { const m = /^\/developers\/([^/]+)\/$/.exec(b); return m ? T.developer.get(m[1]) || null : null; } if (type === 'index') return newest; return null; };
   for (const e of list) { const p = e.loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p), b = m ? m[2] : p; if (!byBase.has(b)) byBase.set(b, []); byBase.get(b).push(Object.assign({ l: m ? m[1] : (e.lang || 'en') }, e)); }
@@ -526,6 +526,7 @@ async function sitemaps(env, B, name) {
   const S = { ['pages-en']: pages.filter(p => p.lang === 'en') };
   for (const l of LANGS.slice(1)) S['pages-' + l] = pages.filter(p => p.lang === l);
   Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare' && h.loc === SITE + '/vs/'), markets: mk, 'projects-anonymous': [] });   // n27g: sitemap diet: the /vs/<id>-vs-<id>/ pairs and the anonymous /p/ pages stay live but are not listed (anon: kept for the count only)
+  try { const pr0 = await file(env, '/data/seo-priority.json'); B.prio = new Set(((pr0 && pr0.recrawl) || []).map(r => String(r.path || '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/'))); } catch (e) { B.prio = null; }
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   S.images = await imageUrls(env, B, NP, ND, pages);
