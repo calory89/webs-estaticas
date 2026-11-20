@@ -7,7 +7,7 @@ const ORIGIN = 'https://kolaboro.com';
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
-let C = { t: 0, h: null };
+let C = { t: 0, h: null }, K33 = null;
 export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
 const SC_L = { en: 'Keyboard shortcuts', es: 'Atajos de teclado', de: 'Tastenkürzel', fr: 'Raccourcis clavier', nl: 'Sneltoetsen', ru: 'Горячие клавиши', zh: '键盘快捷键', ar: 'اختصارات لوحة المفاتيح' };
 const SITE_V = 'n32s1'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
@@ -98,6 +98,19 @@ export async function kbTick(req, r, env) {
     rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } })
       // n27t (batch 27): the corrections log, contact (with response times) and how to cite, in the page language, in the footer's Trust column
       .on('footer a[href="/corrections/"]', { element(e) { const lp = lm ? '/' + pl : ''; e.setAttribute('href', lp + '/corrections/'); e.after('</li><li><a href="' + lp + '/contact/">' + esc(FT27[pl][0]) + '</a></li><li><a href="' + lp + '/cite/">' + esc(FT27[pl][1]) + '</a></li><li><a href="' + lp + '/editorial-policy/">' + esc(FT29[pl][0]) + '</a></li><li><a href="' + lp + '/how-we-work/">' + esc(FT29[pl][1]) + '</a>', { html: true }); } });
+    // n33l (batch 33, items 63, 64, 71, 74): the shorter footer, "most searched this month" on the home page and hubs, and a language
+    // menu that links the page's own language versions (see kbx_n33l.js). Without its data file the page keeps the old footer.
+    try { if (!K33) K33 = await import('./kbx_n33l.js'); if (await K33.load(env)) {
+      const alt = {}, seen = new Set(); let lsw = false, done = false, msDone = false;
+      const fh = K33.footer(pl), ms = r.status === 200 && K33.msWants(pth) ? K33.msBlock(pl, pth) : '';
+      rw = rw.on('head link[rel="alternate"][hreflang]', { element(e) { const l = e.getAttribute('hreflang'), p = K33.altPath(e.getAttribute('href') || ''); if (p && K33.LANGS.includes(l)) alt[l] = p; } })
+        .on('details.lsw', { element() { lsw = true; } })
+        .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); seen.add(l); if (alt[l]) e.setAttribute('href', alt[l]); } })
+        .on('details.lsw ul', { element(e) { e.onEndTag(t => { const add = K33.lswMissing(alt, seen); if (add) t.before(add, { html: true }); }); } })
+        .on('nav#menu > a.btn', { element(e) { if (lsw || done || Object.keys(alt).length < 2) return; done = true; e.before(K33.lswHtml(pl, alt), { html: true }); } });
+      if (fh) rw = rw.on('footer .fgrid > div:not(:first-child)', { element(e) { e.remove(); } }).on('footer .fgrid', { element(e) { e.append(fh, { html: true }); } });
+      if (ms) rw = rw.on('main', { element(e) { if (msDone) return; msDone = true; e.prepend(ms, { html: true }); } });
+    } } catch (e) {}
     if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
     // n31t (batch 31, item 16): the second copy of the lines exists only for the endless scroll; it is now left empty in the HTML (no
     // duplicate text for readers, screen readers or search engines) and site.js adds it, inert and hidden from assistive tech, only

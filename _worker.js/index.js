@@ -395,12 +395,13 @@ async function llInject(req, u, env, ctx, r) {
 // n29h1 (batch 29): links from existing pages (market files, handover, transparency, guides, developer pages, /new/, /rankings/) to the
 // place data pages of kbx_h29.js, appended to <main>; never blocks the page
 const H29L = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|handover(?:\/20\d\d\/[a-z0-9-]{2,60})?|rankings(?:\/transparency(?:\/[a-z0-9-]{2,40})?)?|new|guides\/buying-off-plan(?:\/[a-z-]{2,30})?|developers\/[a-z0-9-]{1,90})\/?$/;
-let kn32s = null;
+let kn32s = null, kn33l = null;
 async function h29Inject(req, u, env, r) {
   try { if (r && req.method === 'GET' && r.status === 200) { if (!kn32s) kn32s = await import('./kbx_n32s.js'); r = await kn32s.answer(req, u, env, r); } } catch (e) {}   // n32s (item 217): dated, sourced answer line under the h1 of the data hubs
   if (req.method !== 'GET' || !r || r.status !== 200 || !H29L.test(u.pathname) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
   try { if (!kh29) kh29 = await import('./kbx_h29.js'); const h = await kh29.linksFor(env, u.pathname); if (h) r = new HTMLRewriter().on('main', { element(e) { e.append(h, { html: true }); } }).transform(r); } catch (e) {}
   try { if (!kn31s) kn31s = await import('./kbx_n31s.js'); r = await kn31s.inject(req, u, env, r); } catch (e) {}   // n31s (batch 31): most searched projects of the place, feed links
+  try { if (/\/developers\/[a-z0-9-]{1,90}\/$/.test(u.pathname)) { if (!kn33l) kn33l = await import('./kbx_n33l.js'); r = await kn33l.devMarkets(req, u, env, r); } } catch (e) {}   // n33l (item 66): the developer's market pages
   return r;
 }
 // n32s (batch 32, items 258 and 259): whole-page edge copies for pages that were slow to build: the market files (/m/<market>/ in 8
@@ -509,6 +510,12 @@ export default {
     if (host === 'kolaboro.com' && req.method === 'GET' && /^\/m\/[^/.]{2,60}$/.test(u.pathname)) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
     // n19e (batch 19): tools merged into one page (the payment account check was a subset of the account check)
     if (host === 'kolaboro.com' && req.method === 'GET' && /^\/tools\/iban-check\/?(?:index\.html)?$/.test(u.pathname)) return new Response(null, { status: 301, headers: { location: '/tools/account-check/' + u.search, 'cache-control': 'public, max-age=3600' } });
+    // kolaboro.com (n33l, batch 33, item 76): HTML site map /[<lang>/]sitemap/ by country and market (see kbx_n33l.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?sitemap\/?$/.test(u.pathname)) {
+      try { if (!kn33l) kn33l = await import('./kbx_n33l.js');
+        const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+        const r = await kn33l.sitemapPage(req, u, env, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
     // kolaboro.com (n31s, batch 31): /<lang>/tools/, /<lang>/glossary/, /[lang/]reports/month/, /[lang/]docs/, /engineering/notes/[<post>/], /projects/<slug>.md (see kbx_n31s.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KN31S.test(u.pathname)) {
       if (!kn31s) kn31s = await import('./kbx_n31s.js');
