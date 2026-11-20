@@ -1,6 +1,6 @@
 # Casas baratas en el Reino Unido: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 6 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 6 casas es de 126.500 € (1.807 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
+A 20 de noviembre de 2026, RealHunt publica 7 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 7 casas es de 126.500 € (1.807 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 6 (muestra pequeña) |
+| Casas en RealHunt | 7 (muestra pequeña) |
 | Precio de salida mediano | 126.500 € |
-| Precio mediano por m² | 1.807 € (5 casas de superficie conocida) |
-| Superficie mediana | 72 m² |
+| Precio mediano por m² | 1.807 € (6 casas de superficie conocida) |
+| Superficie mediana | 80 m² |
 | La más barata y la más cara | 82.600 € · 198.400 € |
 | Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 3–9% del precio (cifras de 2026) |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-kingdom
 
-## Las 6 casas, de mejor a peor nota
+## Las 7 casas, de mejor a peor nota
 
 ### Casa de dos dormitorios con mucho estilo y chimenea abierta
 
@@ -73,6 +73,14 @@ https://realhunt.co/es/deal/uk-blyth-88k-869241
 Una casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida completamente amueblada y lista para mudarse. 70 m² con un hall de entrada, una cocina de planta abierta y sala de estar con todos los electrodomésticos incluidos, dos dormitorios y un cuarto de baño completamente equipado en la planta superior. El dormitorio delantero tiene vistas al fiordo de Moray. Acabados modernos en toda la propiedad, y el anuncio dice que funciona igual como casa permanente. Propiedad libre. Pidiendo ofertas por encima de £110,000 (aproximadamente €126,500), alrededor de €1,800/m². Banda impuesto municipal B.
 
 https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k
+
+### Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh
+
+161.000 € · Enniskillen, County Fermanagh (Northern Ireland) · 107 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-20
+
+Se pide £140.000 (unos €161.000). Una casa adosada de tres dormitorios en una zona tranquila de Enniskillen, Co. Fermanagh, bien mantenida dentro y fuera. Alrededor de 107 m²: una cocina equipada con zona de comedor, zona de servicios y WC en la planta baja, una sala de estar luminosa con chimenea abierta, y tres dormitorios (dos dobles) con cuarto de baño familiar en la planta superior. Tiene paneles solares, aislamiento de pladur seco en las paredes exteriores, una caldera de condensación nueva y algunos radiadores nuevos. Jardín delantero con muros de piedra y un patio trasero cerrado con zona de asientos cubierta y un cobertizo grande. Tasas £652 al año.
+
+https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k
 
 ### Casa adosada de época renovada con garaje doble en el pueblo de Lack, County Fermanagh
 

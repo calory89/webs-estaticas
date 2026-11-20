@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 77 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 77 homes is €75,000 (€1,167 per m², from the 52 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 20 November 2026, RealHunt lists 81 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 81 homes is €80,000 (€1,167 per m², from the 56 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 77 |
-| Median asking price | €75,000 |
-| Median price per m² | €1,167 (52 homes with a known size) |
+| Homes on RealHunt | 81 |
+| Median asking price | €80,000 |
+| Median price per m² | €1,167 (56 homes with a known size) |
 | Median size | 80 m² |
 | Cheapest and most expensive | €12,000 · €197,000 |
 | Median RealHunt score (70 to 98) | 82 |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 77 homes, best score first
+## The 81 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -349,6 +349,22 @@ Charming 2-bedroom apartment in the historic Tuscan village of Montieri. 2 bedro
 
 https://realhunt.co/deal/DdSm-JkiJem
 
+### Renovated stone house inside the walls of Gaglietole Castle, Umbria
+
+€125,000 · Gaglietole, Collazzone, Umbria · 125 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+A stone house within the walls of the small medieval castle of Gaglietole, near Collazzone in the hills between Perugia and Todi, recently renovated and described as in excellent condition. About 125 m2: a large living area, an eat-in kitchen with a wood-burning stove, a double and a single bedroom, a study area and two bathrooms, plus an attic reached by a pull-down stair. The bedroom windows look over open hills. A single garage nearby is included. Roughly 1,000 euros per m2 for a move-in home in a historic Umbrian setting, a few minutes from shops and services.
+
+https://realhunt.co/deal/it-umbria-collazzone-castle-stone-house-125k
+
+### Renovated 1790 townhouse with garden and hill views in Ruota, near Lucca
+
+€130,000 · Ruota, Capannori, Tuscany · 95 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
+
+A detached stone townhouse from 1790 in the small hill village of Ruota, completely renovated in 2015, with views over the hills and the Compitese plain. About 95 m2 on three floors: open kitchen and living room with a big fireplace, then a double and a twin bedroom, a study corner and a shower room with skylight, and a cellar room with a rock wall that opens onto the enclosed private garden. No condominium fees, an owned parking space in front of the garden, and papers in order according to the advert. Lucca is 20 to 30 minutes away and Pisa airport about 45.
+
+https://realhunt.co/deal/it-tuscany-capannori-ruota-townhouse-garden-130k
+
 ### Renovated period flat with vaulted ceilings in central Acqui Terme, Piedmont
 
 €140,000 · Acqui Terme, Piedmont · 120 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-20
@@ -477,6 +493,14 @@ A traditional Gallurese stazzo in the historic centre of Luras, northern Sardini
 
 https://realhunt.co/deal/it-sardinia-luras-stazzo-97k
 
+### Renovated stone house with terrace in medieval Arcidosso, Monte Amiata
+
+€115,000 · Arcidosso, Grosseto, Tuscany · 100 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-20
+
+A fully renovated house with its own front door in the medieval centre of Arcidosso, a lively hill town on the slopes of Monte Amiata in southern Tuscany. Inside are exposed stone walls, beamed ceilings and terracotta floors: a large living room with kitchen corner and fireplace, a study, a bathroom and a usable terrace on the lower level, then a double bedroom, a small second bedroom and a second bathroom above. Heating runs on mains gas, and it is sold furnished and ready to live in. About 100 m2 for 115,000 euros.
+
+https://realhunt.co/deal/it-tuscany-arcidosso-stone-house-terrace-115k
+
 ### Four-level town house ready to live in at Collesano, in the Madonie hills near Cefalù
 
 €115,000 · Collesano, Sicily · 200 m² · 4 bedrooms · RealHunt score 80 · added 2026-11-18
@@ -524,6 +548,14 @@ https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
 A detached house in the historic centre of Iglesias in south-west Sardinia, about 15 minutes by car from the Sulcis coast and the beach at Masua, according to the advert. About 104 m2 with three double bedrooms, each with its own bathroom, plus a living room and kitchenette. The owner lists new windows and doors, heat pumps for heating and cooling, carpenter-made furniture and a wrought-iron staircase. Sold fully furnished and equipped, ready to move in. Light from two street fronts. Listed by the owner.
 
 https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
+
+### Ground-floor flat with a 225 m2 south-facing garden in Savignone, Liguria
+
+€104,000 · Savignone, Genoa, Liguria · 75 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-20
+
+A private sale of a 75 m2 flat with its own entrance in a nine-unit building in Savignone, a green village in the hills behind Genoa, 600 m from the main square. The best part is a south-facing garden of 225 m2 with a vine pergola and mountain views, plus a covered 14 m2 veranda. Inside are a large living room, a kitchenette, a double bedroom, a bathroom and a second room for a bedroom or study. Described as in excellent condition, with its own heating, and mostly furnished. The seller says management fees are low but gives no figure.
+
+https://realhunt.co/deal/it-liguria-savignone-garden-flat-mountain-views-104k
 
 ### Restored brick house with courtyard in the old centre of Amandola, Le Marche
 

@@ -2,22 +2,22 @@
 
 Updated 20 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 59 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,100 (€1,580/m²), against €90,500 (€1,200/m²) for the 591 homes on RealHunt in 28 countries.
+RealHunt lists 62 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,900 (€1,570/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
 
 Homes
-59
+62
 
 From
 €65,428
 
 Median price
-€214,100
+€214,900
 
 Median per m²
-€1,580/m²
+€1,570/m²
 
 Median size
-118 m²
+121 m²
 
 Top score
 95
@@ -31,17 +31,20 @@ Can buy freely
 Data of
 20 Nov 2026
 
-### The 30 best of 59, by score
+### The 30 best of 62, by score
 
 - [Score 93New€223,300Renovated 1889 Victorian with a deep front porch in Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 bed · €773/m² · Added todayAsking US$245,000 (about €223,300) for a renovated 1889 Victorian of about 289 m² in Lynchburg, a historic city on the James River at the foot of…](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
 - [Score 91€153,900The historic Savage House: a white Victorian with a gingerbread porchScotland Neck, North Carolina199 m² · 3 bed · €773/m² · 35 days on RealHuntStep into the charm of the historic Savage House, a beautiful 1900 Victorian in Scotland Neck, North Carolina: 2,143 sq ft (199 m²) with three…](https://realhunt.co/deal/us-north-carolina-victorian-170k)
 - [Score 90New€200,000Victorian house with original oak woodwork opposite a park in Marietta, OhioMarietta, Ohio191 m² · 3 bed · €1,047/m² · 2 days on RealHuntAsking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio.](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k)
+- [Score 90New€227,700Wooded raised ranch with cedar ceilings across the road from Lake Huron, AlpenaAlpena, Michigan172 m² · 2 bed · €1,324/m² · Added todayAsking US$250,000 (about €227,700).](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k)
 - [Score 90New€195,800Updated 1886 house with a fenced garden and an oversized garage in La Crosse, WisconsinLa Crosse, Wisconsin142 m² · 3 bed · €1,379/m² · Added todayAsking US$214,900 (about €195,800) for a three-bedroom house of about 142 m² in La Crosse, a university city on the Mississippi in western Wisconsin.](https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k)
 - [Score 89€79,200Blue 1907 cottage with 9-foot ceilings and a new kitchenFreeport, Illinois83 m² · 2 bed · €954/m² · 46 days on RealHuntA 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen…](https://realhunt.co/deal/us-freeport-83k-605154)
 - [Score 89€85,929Updated 3-bed house in Clairton, PennsylvaniaClairton, Pennsylvania116 m² · 3 bed · €741/m² · 58 days on RealHunt116 m² (1,248 sq ft), 3 bed, 2 bath, built 1938.](https://realhunt.co/deal/clairton-85929)
 - [Score 89New€209,600Three-bedroom house with a big fenced yard near the Mississippi in Red WingRed Wing, Minnesota137 m² · 3 bed · €1,530/m² · Added todayAsking US$230,000 (about €209,600) for a 1996 house of about 137 m² on a quiet dead-end street in Red Wing, a historic river town under wooded…](https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k)
+- [Score 89New€182,100Fully restored 1940s cottage with a deep front porch on a corner lot in Hot SpringsHot Springs, Arkansas117 m² · 2 bed · €1,556/m² · Added todayAsking US$199,900 (about €182,100).](https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k)
 - [Score 88€86,500Modern rustic Ozarks cabin minutes from the riverDora, Missouri104 m² · 2 bed · €832/m² · 46 days on RealHuntBuilt in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land…](https://realhunt.co/deal/us-dora-84k-329130)
 - [Score 88New€291,200Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, TampaBuffalo Estates, Florida210 m² · 4 bed · €1,387/m² · 12 days on RealHuntRecently updated with new roof (Jan 2022), fresh exterior and interior paint (May/April 2025), and new carpet (Feb 2026).](https://realhunt.co/deal/us-tampa-8105-325k)
+- [Score 88New€214,900Renovated four-bedroom house with new roof, kitchen and baths in Sandusky, Lake ErieSandusky, Ohio139 m² · 4 bed · €1,546/m² · Added todayAsking US$236,000 (about €214,900).](https://realhunt.co/deal/us-sandusky-oh-renovated-four-bed-house-deck-236k)
 - [Score 88New€214,100Updated four-bedroom house with a new kitchen in La Crosse, WisconsinLa Crosse, Wisconsin127 m² · 4 bed · €1,686/m² · Added todayAsking US$235,000 (about €214,100) for a house of about 127 m² in La Crosse, a university city on the Mississippi River in western Wisconsin.](https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k)
 - [Score 88New€232,400Well-kept 1899 house with a new double garage near Chester Park in DuluthDuluth, Minnesota148 m² · 3 bed · €1,570/m² · Added todayAsking US$255,000 (about €232,400) for a house of about 148 m² in Duluth, the hilly port city on Lake Superior.](https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k)
 - [Score 87€159,400Riverfront house on French Island with views of the PenobscotFrench Island, Maine117 m² · 3 bed · €1,362/m² · 35 days on RealHuntA 1,258 sq ft (117 m²) three-bedroom home on historic French Island in Old Town, Maine, with stunning views of the Penobscot River right from the…](https://realhunt.co/deal/us-maine-old-town-riverfront-185k)
@@ -60,13 +63,10 @@ Data of
 - [Score 86New€134,400Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort LauderdaleMaybury Mansions, Florida81 m² · 2 bed · €1,659/m² · 12 days on RealHuntRenovated with modern finishes, light-filled spaces, and private outdoor access on the first floor.](https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k)
 - [Score 86New€389,800Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca RatonBoca Chase, Florida158 m² · 3 bed · €2,467/m² · 13 days on RealHunt55+ community: at least one resident must be 55 or older.](https://realhunt.co/deal/us-boca-raton-18102-435k)
 - [Score 85€159,100Scandinavian-style log cabin with a stone fireplace on 10 acresSaxon, Wisconsin133 m² · 3 bed · €1,196/m² · 35 days on RealHuntA large custom-built Scandinavian-style log cabin from 1998 on a quiet country road in Saxon, Wisconsin, near Lake Superior: 1,430 sq ft (133 m²)…](https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k)
-- [Score 85€173,100Well-kept A-frame on 2.5 acres in Michigan's Upper PeninsulaKenton, Michigan102 m² · 3 bed · €1,697/m² · 35 days on RealHuntJust outside Kenton, in the Ottawa National Forest area of Michigan's Upper Peninsula, a well-kept 1984 A-frame on 2.49 acres: 1,097 sq ft (102…](https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k)
-- [Score 85New€412,200Updated corner house with impact windows in Greenbriar at Boca Chase (55+ community)Boca Chase, Florida147 m² · 3 bed · €2,804/m² · 13 days on RealHunt55+ community: at least one resident must be 55 or older.](https://realhunt.co/deal/us-boca-raton-10308-460k)
-- [Score 85New€227,700Move-in ready three-bedroom house a short walk from downtown Bedford, VirginiaBedford, Virginia109 m² · 3 bed · €2,089/m² · Added todayAsking US$249,996 (about €227,700) for a freshly updated 1960 house of about 109 m² in Bedford, a small town in the foothills of Virginia's Blue…](https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k)
 
-Showing the 30 best-scored of 59 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 62 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 59 homes, cheapest first
+### Compare the 60 cheapest of 62
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428) | McKees Rocks, Pennsylvania | €65,428 | 106 m² | €617/m² | 3 | 93 | 23 Sep 2026
@@ -94,15 +94,18 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Adirondack farmhouse on 10.8 acres of autumn forest](https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k) | Forestport, New York | €163,100 | 147 m² | €1,110/m² | 3 | 87 | 16 Oct 2026
 [Well-kept A-frame on 2.5 acres in Michigan's Upper Peninsula](https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k) | Kenton, Michigan | €173,100 | 102 m² | €1,697/m² | 3 | 85 | 16 Oct 2026
 [Log cabin at Canadohta Lake with a duck pond out front](https://realhunt.co/deal/us-pennsylvania-lake-cabin-200k) | Canadohta Lake, Pennsylvania | €177,700 | 93 m² | €1,911/m² | 2 | 82 | 16 Oct 2026
+[Fully restored 1940s cottage with a deep front porch on a corner lot in Hot Springs](https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k) | Hot Springs, Arkansas | €182,100 | 117 m² | €1,556/m² | 2 | 89 | 20 Nov 2026
 [Updated 1886 house with a fenced garden and an oversized garage in La Crosse, Wisconsin](https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k) | La Crosse, Wisconsin | €195,800 | 142 m² | €1,379/m² | 3 | 90 | 20 Nov 2026
 [Victorian house with original oak woodwork opposite a park in Marietta, Ohio](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k) | Marietta, Ohio | €200,000 | 191 m² | €1,047/m² | 3 | 90 | 18 Nov 2026
 [Three-bedroom house with a big fenced yard near the Mississippi in Red Wing](https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k) | Red Wing, Minnesota | €209,600 | 137 m² | €1,530/m² | 3 | 89 | 20 Nov 2026
 [Fully renovated brick rowhouse with a fenced yard in Lancaster, Pennsylvania](https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k) | Lancaster, Pennsylvania | €213,600 | 127 m² | €1,682/m² | 3 | 86 | 18 Nov 2026
 [Updated four-bedroom house with a new kitchen in La Crosse, Wisconsin](https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k) | La Crosse, Wisconsin | €214,100 | 127 m² | €1,686/m² | 4 | 88 | 20 Nov 2026
+[Renovated four-bedroom house with new roof, kitchen and baths in Sandusky, Lake Erie](https://realhunt.co/deal/us-sandusky-oh-renovated-four-bed-house-deck-236k) | Sandusky, Ohio | €214,900 | 139 m² | €1,546/m² | 4 | 88 | 20 Nov 2026
 [Well-kept three-bedroom colonial with a metal roof in Geneva, Finger Lakes](https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k) | Geneva, New York | €218,100 | 128 m² | €1,704/m² | 3 | 87 | 18 Nov 2026
 [Remodeled lakefront townhouse with impact windows in Pembroke Pines](https://realhunt.co/deal/us-pembroke-pines-8956-245k) | Westview, Florida | €219,500 | 97 m² | €2,263/m² | 2 | 84 | 7 Nov 2026
 [Top-floor two-bed condo in a gated resort-style community in Doral](https://realhunt.co/deal/us-doral-8215-502-249k) | Las Vistas at Doral, Florida | €223,100 | 111 m² | €2,010/m² | 2 | 87 | 7 Nov 2026
 [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k) | Lynchburg, Virginia | €223,300 | 289 m² | €773/m² | 3 | 93 | 20 Nov 2026
+[Wooded raised ranch with cedar ceilings across the road from Lake Huron, Alpena](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k) | Alpena, Michigan | €227,700 | 172 m² | €1,324/m² | 2 | 90 | 20 Nov 2026
 [Move-in ready three-bedroom house a short walk from downtown Bedford, Virginia](https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k) | Bedford, Virginia | €227,700 | 109 m² | €2,089/m² | 3 | 85 | 20 Nov 2026
 [1927 brick house with a three-season room and pergola garden in Manitowoc, Wisconsin](https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k) | Manitowoc, Wisconsin | €227,700 | 146 m² | €1,560/m² | 4 | 87 | 20 Nov 2026
 [High-floor two-bedroom with city views at Commodore Plaza, Aventura](https://realhunt.co/deal/us-aventura-2750-2404-259k) | Aventura, Florida | €232,100 | 100 m² | €2,321/m² | 2 | 83 | 7 Nov 2026
@@ -126,20 +129,18 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Renovated high-floor two-bedroom with skyline and sunset views in Aventura](https://realhunt.co/deal/us-aventura-18011-1904-350k) | Aventura, Florida | €313,600 | 149 m² | €2,105/m² | 2 | 83 | 7 Nov 2026
 [Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca Raton](https://realhunt.co/deal/us-boca-raton-18102-435k) | Boca Chase, Florida | €389,800 | 158 m² | €2,467/m² | 3 | 86 | 7 Nov 2026
 [Updated corner house with impact windows in Greenbriar at Boca Chase (55+ community)](https://realhunt.co/deal/us-boca-raton-10308-460k) | Boca Chase, Florida | €412,200 | 147 m² | €2,804/m² | 3 | 85 | 7 Nov 2026
-[Corner-lot family house with a big fenced garden of fruit trees, Country Park, Boca Raton](https://realhunt.co/deal/us-boca-raton-8315-490k) | Country Park, Florida | €439,000 | 102 m² | €4,304/m² | 3 | 82 | 7 Nov 2026
-[Lakefront three-bedroom house with a screened patio in Country Park, Boca Raton](https://realhunt.co/deal/us-boca-raton-8353-500k) | Country Park, Florida | €447,600 | 150 m² | €2,984/m² | 3 | 83 | 7 Nov 2026
 
-### The 59 homes in numbers
+### The 62 homes in numbers
 
-- Size: half of them have 118 m² or more. The largest has 289 m²: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
-- Bedrooms: 1 with 1 bedroom, 27 with 2, 26 with 3, 4 with 4 or more; 1 listing does not say.
-- Type: 14 apartments and 41 houses.
-- Setting: 2 by the sea, 20 in villages, 37 in towns.
-- Where: Florida (25), Pennsylvania (6), Wisconsin (4), Maine (3), Arkansas (2), Indiana (2).
+- Size: half of them have 121 m² or more. The largest has 289 m²: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
+- Bedrooms: 1 with 1 bedroom, 29 with 2, 26 with 3, 5 with 4 or more; 1 listing does not say.
+- Type: 14 apartments and 44 houses.
+- Setting: 3 by the sea, 20 in villages, 39 in towns.
+- Where: Florida (25), Pennsylvania (6), Wisconsin (4), Arkansas (3), Maine (3), Indiana (2).
 - Lowest median price: Maine, €77,300 across 3 homes. Highest: Florida, €255,400 across 25.
-- Extras named in the listings: 25 with a garden, 40 with a terrace, 20 with a garage, 14 with a pool, 4 with a fireplace, 2 with a sauna.
+- Extras named in the listings: 27 with a garden, 42 with a terrace, 22 with a garage, 14 with a pool, 5 with a fireplace, 2 with a sauna.
 - Scores: 79 to 95 out of 98. The best rated: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
-- Newest, added 20 November 2026: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 35 of these homes were added in the last 30 days.
+- Newest, added 20 November 2026: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 38 of these homes were added in the last 30 days.
 
 ### Median price by region in the United States
 
@@ -150,16 +151,16 @@ Illinois | 1 | €79,200
 West Virginia | 2 | €82,875
 Missouri | 1 | €86,500
 South Carolina | 1 | €88,800
-Arkansas | 2 | €91,599
+[Arkansas](https://realhunt.co/homes/united-states/arkansas) | 3 | €91,599
 Texas | 1 | €95,089
 Indiana | 2 | €118,300
 [Pennsylvania](https://realhunt.co/homes/united-states/pennsylvania) | 6 | €137,700
 North Carolina | 1 | €153,900
 Kentucky | 1 | €155,500
-Michigan | 1 | €173,100
-Ohio | 1 | €200,000
 [Wisconsin](https://realhunt.co/homes/united-states/wisconsin) | 4 | €214,100
+Ohio | 2 | €214,900
 New York | 2 | €218,100
+Michigan | 2 | €227,700
 Virginia | 2 | €227,700
 Minnesota | 2 | €232,400
 [Florida](https://realhunt.co/homes/united-states/florida) | 25 | €255,400
@@ -168,7 +169,7 @@ Minnesota | 2 | €232,400
 
 Can foreigners buy? Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China.
 
-Taxes and fees add about 2 to 5% to the price: Closing costs vary by state and typically run 2-5% of the loan amount, covering title search and title insurance, recording fees, attorney fees, appraisal and lender fees; since August 2024 the seller no longer has to pay the buyer's agent, so the buyer may pay it unless the seller agrees to; FIRPTA does not apply when you buy but does when a foreigner later sells, with the buyer generally withholding 15% of the sale price. On the median home on this page (€214,100) that is €4,282 to €10,705, so €218,382 to €224,805 in all.
+Taxes and fees add about 2 to 5% to the price: Closing costs vary by state and typically run 2-5% of the loan amount, covering title search and title insurance, recording fees, attorney fees, appraisal and lender fees; since August 2024 the seller no longer has to pay the buyer's agent, so the buyer may pay it unless the seller agrees to; FIRPTA does not apply when you buy but does when a foreigner later sells, with the buyer generally withholding 15% of the sale price. On the median home on this page (€214,900) that is €4,298 to €10,745, so €219,198 to €225,645 in all.
 
 At the same percentages: on €40,000, €800 to €2,000; on €80,000, €1,600 to €4,000; on €150,000, €3,000 to €7,500.
 
@@ -187,17 +188,17 @@ Source: [Internal Revenue Service, FIRPTA withholding](https://www.irs.gov/indiv
 ### What to watch out for
 
 - A low price has a reason. [Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa](https://realhunt.co/deal/us-tampa-8105-325k): 1964 home in suburban Tampa location.
-- 8 listings state a monthly community fee, from 124 USD to 1073 USD. Add it to your yearly costs.
+- 9 listings state a monthly community fee, of 11 EUR. Add it to your yearly costs.
 - 14 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 18 of 59 sit where our rough flood check reads medium or high. Each home page links the official flood map.
-- 3 of 59 are close to a motorway, a railway or an airport (high on our noise check).
-- As a group these homes score lowest on price (31/100 on average) and highest on distance to an airport (90/100).
+- 18 of 62 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 3 of 62 are close to a motorway, a railway or an airport (high on our noise check).
+- As a group these homes score lowest on price (32/100 on average) and highest on distance to an airport (90/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in the United States cost?
 
-Asking prices run from €65,428 to €447,600 across 59 homes. The median is €214,100, or €1,580/m².
+Asking prices run from €65,428 to €447,600 across 62 homes. The median is €214,900, or €1,570/m².
 
 #### What is the cheapest house for sale in the United States?
 
@@ -209,7 +210,7 @@ Yes. There is no federal ban on foreigners buying homes, but about 30 states hav
 
 #### What are the buying costs in the United States?
 
-About 2 to 5% on top of the price: Closing costs vary by state and typically run 2-5% of the loan amount, covering title search and title insurance, recording fees, attorney fees, appraisal and lender fees; since August 2024 the seller no longer has to pay the buyer's agent, so the buyer may pay it unless the seller agrees to; FIRPTA does not apply when you buy but does when a foreigner later sells, with the buyer generally withholding 15% of the sale price. On the median home on this page (€214,100) that is €4,282 to €10,705. General information, not tax advice.
+About 2 to 5% on top of the price: Closing costs vary by state and typically run 2-5% of the loan amount, covering title search and title insurance, recording fees, attorney fees, appraisal and lender fees; since August 2024 the seller no longer has to pay the buyer's agent, so the buyer may pay it unless the seller agrees to; FIRPTA does not apply when you buy but does when a foreigner later sells, with the buyer generally withholding 15% of the sale price. On the median home on this page (€214,900) that is €4,298 to €10,745. General information, not tax advice.
 
 #### Which region is cheapest in the United States?
 
@@ -217,21 +218,21 @@ Among regions with at least 3 homes on RealHunt, Maine has the lowest median pri
 
 ### More searches in the United States
 
-By budget [Under €80,000 6](https://realhunt.co/homes/united-states/under-80000) [Under €100,000 15](https://realhunt.co/homes/united-states/under-100000) [Under €150,000 18](https://realhunt.co/homes/united-states/under-150000) [Under €200,000 27](https://realhunt.co/homes/united-states/under-200000) [Under €300,000 54](https://realhunt.co/homes/united-states/under-300000)
+By budget [Under €80,000 6](https://realhunt.co/homes/united-states/under-80000) [Under €100,000 15](https://realhunt.co/homes/united-states/under-100000) [Under €150,000 18](https://realhunt.co/homes/united-states/under-150000) [Under €200,000 28](https://realhunt.co/homes/united-states/under-200000) [Under €300,000 57](https://realhunt.co/homes/united-states/under-300000)
 
-By setting [Village houses 20](https://realhunt.co/homes/united-states/village-houses) [In town 37](https://realhunt.co/homes/united-states/in-town)
+By setting [By the sea 3](https://realhunt.co/homes/united-states/by-the-sea) [Village houses 20](https://realhunt.co/homes/united-states/village-houses) [In town 39](https://realhunt.co/homes/united-states/in-town)
 
-By type [Apartments 14](https://realhunt.co/homes/united-states/apartments) [Houses 41](https://realhunt.co/homes/united-states/houses)
+By type [Apartments 14](https://realhunt.co/homes/united-states/apartments) [Houses 44](https://realhunt.co/homes/united-states/houses)
 
-By bedrooms [2 bedrooms 27](https://realhunt.co/homes/united-states/2-bedroom) [3 bedrooms 26](https://realhunt.co/homes/united-states/3-bedroom)
+By bedrooms [2 bedrooms 29](https://realhunt.co/homes/united-states/2-bedroom) [3 bedrooms 26](https://realhunt.co/homes/united-states/3-bedroom) [4+ bedrooms 5](https://realhunt.co/homes/united-states/4-bedroom)
 
-By region [Florida 25](https://realhunt.co/homes/united-states/florida) [Pennsylvania 6](https://realhunt.co/homes/united-states/pennsylvania) [Wisconsin 4](https://realhunt.co/homes/united-states/wisconsin) [Maine 3](https://realhunt.co/homes/united-states/maine)
+By region [Florida 25](https://realhunt.co/homes/united-states/florida) [Pennsylvania 6](https://realhunt.co/homes/united-states/pennsylvania) [Wisconsin 4](https://realhunt.co/homes/united-states/wisconsin) [Arkansas 3](https://realhunt.co/homes/united-states/arkansas) [Maine 3](https://realhunt.co/homes/united-states/maine)
 
 By area [Boca Raton 4](https://realhunt.co/homes/united-states/boca-raton)
 
-By feature [Near a lake 8](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 25](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 7](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 40](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 4](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 20](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 34](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 35](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [New this week 10](https://realhunt.co/cheap-houses/new-this-week-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 13](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 5](https://realhunt.co/cheap-houses/low-community-fee-in-united-states) [Over 120 m² 29](https://realhunt.co/cheap-houses/over-120-sqm-in-united-states)
+By feature [Near a lake 10](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 27](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 8](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 5](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 22](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 36](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 9](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 38](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [New this week 13](https://realhunt.co/cheap-houses/new-this-week-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 13](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee-in-united-states) [Over 120 m² 31](https://realhunt.co/cheap-houses/over-120-sqm-in-united-states)
 
-Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-united-states) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-united-states)
+Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-united-states)
 
 By feature and budget [With a garden under €100,000 4](https://realhunt.co/cheap-houses/with-garden-under-100000-in-united-states) [Move-in ready under €100,000 4](https://realhunt.co/cheap-houses/turnkey-under-100000-in-united-states)
 
@@ -239,11 +240,11 @@ In pounds and dollars [Under $100,000 12](https://realhunt.co/cheap-houses/under
 
 Near a city [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
-Neighbouring countries [Canada 14](https://realhunt.co/homes/canada) [Mexico 4](https://realhunt.co/homes/mexico)
+Neighbouring countries [Canada 16](https://realhunt.co/homes/canada) [Mexico 3](https://realhunt.co/homes/mexico)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
+By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Mexico 3](https://realhunt.co/homes/mexico) [Colombia 3](https://realhunt.co/homes/colombia)
 
-These listings come from coldwellbanker.com (36), redfin.com (15), estately.com (8). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from coldwellbanker.com (39), redfin.com (15), estately.com (8). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United States](https://realhunt.co/sitemap/united-states)
 

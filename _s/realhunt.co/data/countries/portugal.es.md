@@ -1,6 +1,6 @@
 # Casas baratas en Portugal: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 19 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 19 casas es de 125.000 € (1.352 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 183.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 21 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 21 casas es de 130.000 € (1.364 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 189.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/portugal · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 19 |
-| Precio de salida mediano | 125.000 € |
-| Precio mediano por m² | 1.352 € (19 casas de superficie conocida) |
-| Superficie mediana | 100 m² |
-| La más barata y la más cara | 48.000 € · 183.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 91 |
+| Casas en RealHunt | 21 |
+| Precio de salida mediano | 130.000 € |
+| Precio mediano por m² | 1.364 € (21 casas de superficie conocida) |
+| Superficie mediana | 96 m² |
+| La más barata y la más cara | 48.000 € · 189.000 € |
+| Nota RealHunt mediana (de 70 a 98) | 85 |
 | Impuestos y gastos de compra | 3–12% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, los mismos derechos que los ciudadanos portugueses (aumento de IMT para compradores extranjeros de segunda residencia anunciado en septiembre de 2025). |
 | Impuesto anual sobre la vivienda | IMI 0,3-0,45% del valor fiscal (urbano), fijado por cada municipio. |
@@ -44,7 +44,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/portugal
 
-## Las 19 casas, de mejor a peor nota
+## Las 21 casas, de mejor a peor nota
 
 ### Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola
 
@@ -173,6 +173,22 @@ https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k
 Una casa de pueblo de granito reconstruida completamente en su interior, a unos 5 km de la localidad de Tábua. El anuncio lista ventanas, puertas y persianas nuevas, cableado y tuberías nuevas, aislamiento de lana de roca en las paredes interiores, iluminación empotrada y una cocina equipada nueva, así que no hay nada que hacer. Planta baja con cocina abierta, salón y WC, y primer piso con tres dormitorios, baño completo y habitación de repuesto para lavandería u oficina. Aproximadamente 142 m2 de área construida, 125 m2 útil. Clase energética C, lo cual es inusual para una casa de piedra a este precio.
 
 https://realhunt.co/es/deal/pt-central-tabua-renovated-granite-house-169k
+
+### Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de Penacova
+
+189.000 € · Paradela da Cortiça, Penacova, Coimbra · 95 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
+
+Una casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã. Conserva sus puertas originales, techos de madera y suelos y detalles de granito, con ventanas de aluminio. La planta principal tiene una cocina con chimenea abierta y zona de comedor, una sala de estar con balcón, tres dormitorios y un cuarto de baño completo, que se abre a una terraza y jardín. Debajo hay un garaje y un taller, arriba una buhardilla grande, y fuera un cobertizo con barbacoa y horno de leña. Las tiendas están a 5 o 10 minutos, varias playas fluviales a 20 o 30 minutos, y Coímbra a unos 45 minutos. Clase energética F.
+
+https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k
+
+### Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, Alentejo
+
+140.000 € · Ponte Velha, Marvão, Portalegre · 70 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-20
+
+Una casa luminosa de 70 m2 en la tranquila zona de Ponte Velha bajo Marvão, con vistas al río y la montaña, en una parcela completamente vallada de 476 m2 con viñas, olivos y un árbol de caqui. Dos dormitorios dobles, una sala de estar con estufa de pellets, una cocina con horno de gas y un calentador de agua nuevo, y un cuarto de baño, antiguo pero limpio. Dos anexos podrían convertirse en una unidad pequeña separada. El anuncio sitúa la piscina de río y los cafés de Portagem a 5 minutos, Marvão y Castelo de Vide a 15 minutos, y dice que la licencia y los documentos del registro de la propiedad están listos. El portal lo clasifica bajo Pernes; el texto lo sitúa cerca de Marvão.
+
+https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k
 
 ### Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, Azores
 

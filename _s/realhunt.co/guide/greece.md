@@ -33,10 +33,10 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [€115,000 · Whitewashed Cretan village house with a roof terrace and spiral stairs](https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, near Neapoli, Crete · score 91 · 93 m² · 2 bed
 - [€68,000 · Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330) · Agia Triada, Marathokampos, Samos (Greece) · score 90 · 80 m² · 2 bed
 - [€150,000 · Stone island house with blue doors and a sea view over to Skiathos](https://realhunt.co/deal/gr-skopelos-sea-view-150k) · Glossa, Skopelos (Sporades) · score 89 · 110 m² · 2 bed
+- [€180,000 · Renovated detached stone house with courtyard in Andriani, Messinia](https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k) · Andriani, Messinia · score 89 · 148 m² · 2 bed
 - [€170,000 · Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · score 89 · 165 m² · 4 bed
-- [€95,000 · Fairy-tale house with a gazebo and stone BBQ in the Pelion forest](https://realhunt.co/deal/gr-pelion-fairytale-house-95k) · Chania, Pelion (near Portaria) · score 88 · 68 m² · 2 bed
 
-[All 24 homes in Greece](https://realhunt.co/homes/greece)
+[All 27 homes in Greece](https://realhunt.co/homes/greece)
 
 [Costs, taxes and sources for Greece](https://realhunt.co/costs/greece) · [Buying-cost calculator for Greece](https://realhunt.co/buying-costs/greece) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

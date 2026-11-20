@@ -1,19 +1,20 @@
 ﻿pais,casas_con_indicador,bajo,medio,alto,medio_o_alto_pct,con_zona_oficial,muestra_pequena
 Dominican Republic,5,0,5,0,100,0,si
-Estados Unidos,52,34,6,12,35,45,no
-Grecia,20,16,4,0,20,0,no
-Chipre,5,4,1,0,20,0,si
+Estados Unidos,58,40,6,12,31,51,no
+Grecia,24,20,4,0,17,0,no
+Chipre,6,5,1,0,17,0,si
 Bulgaria,7,6,1,0,14,0,si
-España,186,171,15,0,8,0,no
-México,12,11,1,0,8,0,no
-Japón,31,29,2,0,6,0,no
+España,189,173,16,0,8,0,no
+México,14,13,1,0,7,0,no
+Japón,33,31,2,0,6,0,no
 Dinamarca,46,44,2,0,4,0,no
-Suecia,35,34,1,0,3,0,no
-Italia,67,66,1,0,1,0,no
-Francia,45,45,0,0,0,0,no
+Suecia,36,35,1,0,3,0,no
+Italia,75,74,1,0,1,0,no
+Francia,50,50,0,0,0,0,no
 Polonia,31,31,0,0,0,0,no
-Alemania,20,20,0,0,0,0,no
+Alemania,21,21,0,0,0,0,no
+Portugal,19,19,0,0,0,0,no
 Países Bajos,18,18,0,0,0,0,no
-Portugal,18,18,0,0,0,0,no
-Canadá,11,11,0,0,0,0,no
+Canadá,14,14,0,0,0,0,no
 Suiza,10,10,0,0,0,0,no
+Reino Unido,5,5,0,0,0,0,si

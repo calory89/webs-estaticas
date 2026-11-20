@@ -2,10 +2,10 @@
 
 Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 32 casas en venta en Japón, con precios de 7.400 € a 107.500 €. La más barata cuesta 7.400 €: [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056), en Shokawa (94 m², 2 dormitorios). El precio mediano es de 44.160 € (398 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+RealHunt tiene hoy 33 casas en venta en Japón, con precios de 7.400 € a 142.500 €. La más barata cuesta 7.400 €: [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056), en Shokawa (94 m², 2 dormitorios). El precio mediano es de 44.160 € (427 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
 
 Viviendas
-32
+33
 
 Desde
 7.400 €
@@ -14,10 +14,10 @@ Precio mediano
 44.160 €
 
 Mediana por m²
-398 €/m²
+427 €/m²
 
 Tamaño mediano
-83 m²
+91 m²
 
 Mejor nota
 91
@@ -31,7 +31,7 @@ Compra libre
 Datos del
 20 nov 2026
 
-### Las 30 mejores de 32, por nota
+### Las 30 mejores de 33, por nota
 
 - [Nota 9111.380 €Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de HidaShokawa, Gifu53 m² · 1 dorm. · 215 €/m² · 18 días en RealHuntUna cabaña de troncos de 1999 de 53 m² en una parcela de 332 m² en propiedad en una urbanización de bosque gestionado en Shokawa, Takayama.](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929)
 - [Nota 917.400 €Chalet de montaña con estufa de leña y altillo en el bosque de HidaShokawa, Gifu94 m² · 2 dorm. · 79 €/m² · 18 días en RealHuntUn chalet de dos plantas de 1992 de 93 m² en una parcela de 558 m² en propiedad absoluta en una urbanización de casas de vacaciones gestionada en…](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056)
@@ -48,10 +48,11 @@ Datos del
 - [Nota 8657.040 €Casa reformada en una isla con una de las mejores vistas al mar de JapónKojima, Okayama2 dorm. · 58 días en RealHuntEn lo alto de una colina en la isla de Kojima, en Okayama, este refugio de 2 dormitorios preciosamente reformado se construyó en 1993 y ofrece 91㎡…](https://realhunt.co/es/deal/Db59YYrjN5h)
 - [Nota 8578.200 €Auténtica casa japonesa de 150 años con jardín, colina de bambú y kuraEchizen, Fukui230 m² · 340 €/m² · 58 días en RealHuntUna auténtica casa japonesa de 150 años por solo 85.000 $ en Echizen, Fukui, en el interior frente al mar de Japón.](https://realhunt.co/es/deal/DcbA4gjAVct)
 - [Nota 82Nueva54.300 €Casa familiar construida por Misawa con vista parcial al mar en la isla de Awaji, HyogoFukakusa, Hyogo91 m² · 3 dorm. · 597 €/m² · 2 días en RealHuntConstruida en octubre de 2000 por Misawa Homes y, según el agente, utilizada cuidadosamente en el interior.](https://realhunt.co/es/deal/jp-awaji-misawa-house-54k-788413)
+- [Nota 81Nueva142.500 €Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, YonagoKaike-Shinden, Tottori140 m² · 4 dorm. · 1.018 €/m² · Añadida hoyPidiendo ¥25.000.000 (aproximadamente 142.500 euros).](https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k)
 - [Nota 8191.080 €Casa de estilo japonés con engawa y jardín en una ciudad de aguas termalesYugawara, Kanagawa58 días en RealHuntUna auténtica casa de estilo japonés de una sola planta con un amplio engawa que se abre a su propio jardín, en una de las ciudades de aguas…](https://realhunt.co/es/deal/DbA4_hKEThx)
 - [Nota 79Nueva84.500 €Casa construida en 2018 en una parcela de 1.181 m² cerca del mar en Shima, MieAgo-cho Tategami, Mie106 m² · 2 dorm. · 797 €/m² · 2 días en RealHuntUna casa de madera de dos plantas terminada en enero de 2018, mucho más nueva que la mayoría de casas a este precio.](https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606)
-- [Nota 78Nueva107.500 €Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, HiroshimaMukaishima, Hiroshima104 m² · 4 dorm. · 1.034 €/m² · Añadida hoyUna casa de madera de dos plantas construida en enero de 2014 en Mukaishima, la isla que mira a Onomichi a través de un estrecho brazo del Mar…](https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k)
 - [Nota 78Nueva79.500 €Casa de cuatro dormitorios de 2004 en Misaki en la península de Miura, KanagawaMisaki-machi Moroiso, Kanagawa83 m² · 4 dorm. · 958 €/m² · Añadida hoyUna casa de madera de dos plantas terminada en diciembre de 2004 en Moroiso, en el lado Misaki de la península de Miura en Kanagawa.](https://realhunt.co/es/deal/jp-miura-misaki-four-bed-house-2004-80k)
+- [Nota 77Nueva125.400 €Casa moderna de tres dormitorios de 2015 con sala de doble altura en Yakumo, MatsueYakumo-cho Hiyoshi, Shimane96 m² · 3 dorm. · 1.306 €/m² · Añadida hoySe pide ¥21.990.000 (aproximadamente 125,4 €).](https://realhunt.co/es/deal/jp-matsue-yakumo-modern-2015-house-garden-125k)
 - [Nota 75Nueva104.600 €Casa de tres dormitorios renovada de 2009 con aparcamiento para dos en Nasushiobara, TochigiHigashi-Mishima, Tochigi98 m² · 3 dorm. · 1.067 €/m² · Añadida hoyUna casa de madera de dos plantas construida en julio de 2009 en Higashi-Mishima, Nasushiobara, en el norte de Tochigi.](https://realhunt.co/es/deal/jp-nasushiobara-refreshed-2009-house-105k)
 - [Nota 8919.320 €Casa japonesa con jardín de sakuraUsuki, Oita58 días en RealHuntConstruida en 1977, esta casa de madera de una planta con encanto tiene una amplia distribución 6DK con cinco habitaciones de estilo japonés y un…](https://realhunt.co/es/deal/DbbD15oDKLz)
 - [Nota 8818.400 €Casita en la ladera sobre el mar, a dos minutos de la playaYura, Wakayama58 días en RealHuntUna casita en una ladera en Yura, Wakayama, a 80 metros sobre el mar, por 20.000 $.](https://realhunt.co/es/deal/Dc_EC5LDMeg)
@@ -62,11 +63,10 @@ Datos del
 - [Nota 8618.400 €Casa de labranza de 100 años con tierras de cultivo y almacénJapón58 días en RealHuntDe verdad que no me creo que una casa tradicional de 100 años con sus propias tierras de cultivo y almacén esté a la venta por menos de 20.000 $.](https://realhunt.co/es/deal/DZzpJ7UDSZB)
 - [Nota 8654.280 €Cabaña de troncos blanca con una gran terraza de madera en una urbanización junto a un lagoHimeji, Hyogo58 días en RealHuntUna cabaña de troncos blanca escondida en un pueblo turístico arbolado de Hyogo, con una gran terraza de madera que ya tiene un fregadero…](https://realhunt.co/es/deal/Dbk8HHgCAHX)
 - [Nota 8539.560 €Casa de una planta totalmente reformada cerca de la costaArida, Wakayama58 días en RealHuntArida es un pueblo costero lleno de fragantes campos de mandarinos, a 1,5 horas en coche de la ciudad de Osaka.](https://realhunt.co/es/deal/DcjCuYlkrFY)
-- [Nota 8456.120 €Casa de madera con playa privadaKushimoto, Wakayama58 días en RealHuntEsta casa monísima en Japón viene con playa privada por solo 61.000 $.](https://realhunt.co/es/deal/DcEQh3AjBbN)
 
-Se muestran las 30 con mejor nota de 32 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
+Se muestran las 30 con mejor nota de 33 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
-### Compara las 32 viviendas, de más barata a más cara
+### Compara las 33 viviendas, de más barata a más cara
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056) | Shokawa, Gifu | 7.400 € | 94 m² | 79 €/m² | 2 | 91 | 2 nov 2026
@@ -100,19 +100,20 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa construida en 2018 en una parcela de 1.181 m² cerca del mar en Shima, Mie](https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606) | Ago-cho Tategami, Mie | 84.500 € | 106 m² | 797 €/m² | 2 | 79 | 18 nov 2026
 [Casa de estilo japonés con engawa y jardín en una ciudad de aguas termales](https://realhunt.co/es/deal/DbA4_hKEThx) | Yugawara, Kanagawa | 91.080 € | · | · | · | 81 | 23 sept 2026
 [Casa de tres dormitorios renovada de 2009 con aparcamiento para dos en Nasushiobara, Tochigi](https://realhunt.co/es/deal/jp-nasushiobara-refreshed-2009-house-105k) | Higashi-Mishima, Tochigi | 104.600 € | 98 m² | 1.067 €/m² | 3 | 75 | 20 nov 2026
-[Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, Hiroshima](https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k) | Mukaishima, Hiroshima | 107.500 € | 104 m² | 1.034 €/m² | 4 | 78 | 20 nov 2026
+[Casa moderna de tres dormitorios de 2015 con sala de doble altura en Yakumo, Matsue](https://realhunt.co/es/deal/jp-matsue-yakumo-modern-2015-house-garden-125k) | Yakumo-cho Hiyoshi, Shimane | 125.400 € | 96 m² | 1.306 €/m² | 3 | 77 | 20 nov 2026
+[Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, Yonago](https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k) | Kaike-Shinden, Tottori | 142.500 € | 140 m² | 1.018 €/m² | 4 | 81 | 20 nov 2026
 
-### Las 32 viviendas en cifras
+### Las 33 viviendas en cifras
 
-- Tamaño: la mitad tiene 83 m² o más. La más grande tiene 230 m²: [Auténtica casa japonesa de 150 años con jardín, colina de bambú y kura](https://realhunt.co/es/deal/DcbA4gjAVct).
-- Dormitorios: 1 con 1 dormitorio, 7 con 2, 6 con 3, 3 con 4 o más; 15 anuncios no lo indican.
-- Tipo: 28 casas.
-- Entorno: 16 junto al mar, 18 en pueblos.
+- Tamaño: la mitad tiene 91 m² o más. La más grande tiene 230 m²: [Auténtica casa japonesa de 150 años con jardín, colina de bambú y kura](https://realhunt.co/es/deal/DcbA4gjAVct).
+- Dormitorios: 1 con 1 dormitorio, 7 con 2, 7 con 3, 3 con 4 o más; 15 anuncios no lo indican.
+- Tipo: 29 casas.
+- Entorno: 16 junto al mar, 19 en pueblos.
 - Dónde: Wakayama (6), Gifu (3), Gunma (2), Hyogo (2), Kanagawa (2), Kyoto (2).
 - Precio mediano más bajo: Gifu, 11.380 € entre 3 viviendas. El más alto: Wakayama, 34.960 € entre 6.
-- Extras que mencionan los anuncios: 6 con jardín, 10 con terraza, 8 con garaje, 1 con piscina, 1 con chimenea, 1 con sauna.
+- Extras que mencionan los anuncios: 7 con jardín, 10 con terraza, 9 con garaje, 1 con piscina, 1 con chimenea, 1 con sauna.
 - Notas: de 75 a 91 sobre 98. La de mejor nota: [Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, Hiroshima](https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k). 15 de estas viviendas se añadieron en los últimos 30 días.
+- La más reciente, añadida el 20 de noviembre de 2026: [Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, Yonago](https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k). 16 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Precio mediano por región en Japón
 
@@ -134,7 +135,8 @@ Fukui | 1 | 78.200 €
 Mie | 1 | 84.500 €
 Kanagawa | 2 | 91.080 €
 Tochigi | 1 | 104.600 €
-Hiroshima | 1 | 107.500 €
+Shimane | 1 | 125.400 €
+Tottori | 1 | 142.500 €
 
 ### Gastos de compra y normas para extranjeros en Japón
 
@@ -152,17 +154,17 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 ### En qué fijarse antes de comprar
 
-- 15 de los 32 anuncios no indican la superficie, así que su precio por m² no se puede comparar.
-- 2 de 32 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
-- 5 de 32 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
-- 11 de 32 muestran una posición aproximada en el mapa: el anuncio da la localidad, no la calle.
-- En conjunto, estas viviendas puntúan más bajo en gastos de compra (36/100 de media) y más alto en cercanía a un aeropuerto (85/100).
+- 15 de los 33 anuncios no indican la superficie, así que su precio por m² no se puede comparar.
+- 2 de 33 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 5 de 33 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
+- 11 de 33 muestran una posición aproximada en el mapa: el anuncio da la localidad, no la calle.
+- En conjunto, estas viviendas puntúan más bajo en gastos de compra (36/100 de media) y más alto en cercanía a un aeropuerto (86/100).
 
 ### Preguntas de quienes compran
 
 #### ¿Cuánto cuesta una casa en venta en Japón?
 
-Los precios de venta van de 7.400 € a 107.500 € entre 32 viviendas. La mediana es de 44.160 € (398 €/m²).
+Los precios de venta van de 7.400 € a 142.500 € entre 33 viviendas. La mediana es de 44.160 € (427 €/m²).
 
 #### ¿Cuál es la casa más barata en venta en Japón?
 
@@ -184,27 +186,27 @@ Entre las regiones con al menos 3 viviendas en RealHunt, Gifu tiene el precio me
 
 Por presupuesto [Menos de 15.000 € 3](https://realhunt.co/es/homes/japan/under-15000) [Menos de 20.000 € 9](https://realhunt.co/es/homes/japan/under-20000) [Menos de 30.000 € 13](https://realhunt.co/es/homes/japan/under-30000) [Menos de 40.000 € 15](https://realhunt.co/es/homes/japan/under-40000) [Menos de 50.000 € 18](https://realhunt.co/es/homes/japan/under-50000) [Menos de 60.000 € 25](https://realhunt.co/es/homes/japan/under-60000) [Menos de 80.000 € 28](https://realhunt.co/es/homes/japan/under-80000)
 
-Por entorno [Junto al mar 16](https://realhunt.co/es/homes/japan/by-the-sea) [Casas de pueblo 18](https://realhunt.co/es/homes/japan/village-houses)
+Por entorno [Junto al mar 16](https://realhunt.co/es/homes/japan/by-the-sea) [Casas de pueblo 19](https://realhunt.co/es/homes/japan/village-houses)
 
-Por tipo [Casas 28](https://realhunt.co/es/homes/japan/houses)
+Por tipo [Casas 29](https://realhunt.co/es/homes/japan/houses)
 
-Por dormitorios [2 dormitorios 7](https://realhunt.co/es/homes/japan/2-bedroom) [3 dormitorios 6](https://realhunt.co/es/homes/japan/3-bedroom)
+Por dormitorios [2 dormitorios 7](https://realhunt.co/es/homes/japan/2-bedroom) [3 dormitorios 7](https://realhunt.co/es/homes/japan/3-bedroom)
 
 Por región [Wakayama 6](https://realhunt.co/es/homes/japan/wakayama) [Gifu 3](https://realhunt.co/es/homes/japan/gifu)
 
-Por zona [Kanto 5](https://realhunt.co/es/homes/japan/kanto) [Chubu 9](https://realhunt.co/es/homes/japan/chubu) [Kansai 12](https://realhunt.co/es/homes/japan/kansai) [Chugoku 3](https://realhunt.co/es/homes/japan/chugoku)
+Por zona [Kanto 5](https://realhunt.co/es/homes/japan/kanto) [Chubu 9](https://realhunt.co/es/homes/japan/chubu) [Kansai 12](https://realhunt.co/es/homes/japan/kansai) [Chugoku 4](https://realhunt.co/es/homes/japan/chugoku)
 
-Por característica [Cerca de un lago 4](https://realhunt.co/es/cheap-houses/near-a-lake-in-japan) [Con jardín 6](https://realhunt.co/es/cheap-houses/with-garden-in-japan) [Cabañas y casas de campo 6](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-japan) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-japan) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-japan) [Vistas al mar 7](https://realhunt.co/es/cheap-houses/with-sea-view-in-japan) [Con garaje 8](https://realhunt.co/es/cheap-houses/with-garage-in-japan) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-japan) [Cerca de un aeropuerto 11](https://realhunt.co/es/cheap-houses/near-an-airport-in-japan) [Menos de 500 €/m² 12](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-japan) [Nota 90 o más 10](https://realhunt.co/es/cheap-houses/score-90-plus-in-japan) [Nuevas este mes 15](https://realhunt.co/es/cheap-houses/new-this-month-in-japan) [Nuevas esta semana 5](https://realhunt.co/es/cheap-houses/new-this-week-in-japan) [De una planta 9](https://realhunt.co/es/cheap-houses/single-storey-in-japan) [Zona tranquila 5](https://realhunt.co/es/cheap-houses/quiet-location-in-japan) [Más de 80 m² 9](https://realhunt.co/es/cheap-houses/over-80-sqm-in-japan)
+Por característica [Cerca de un lago 4](https://realhunt.co/es/cheap-houses/near-a-lake-in-japan) [Con jardín 7](https://realhunt.co/es/cheap-houses/with-garden-in-japan) [Cabañas y casas de campo 6](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-japan) [Con terraza 10](https://realhunt.co/es/cheap-houses/with-a-terrace-in-japan) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-japan) [Vistas al mar 7](https://realhunt.co/es/cheap-houses/with-sea-view-in-japan) [Con garaje 9](https://realhunt.co/es/cheap-houses/with-garage-in-japan) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-japan) [Cerca de un aeropuerto 12](https://realhunt.co/es/cheap-houses/near-an-airport-in-japan) [Menos de 500 €/m² 12](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-japan) [Nota 90 o más 10](https://realhunt.co/es/cheap-houses/score-90-plus-in-japan) [Nuevas este mes 16](https://realhunt.co/es/cheap-houses/new-this-month-in-japan) [Nuevas esta semana 6](https://realhunt.co/es/cheap-houses/new-this-week-in-japan) [De una planta 9](https://realhunt.co/es/cheap-houses/single-storey-in-japan) [Zona tranquila 7](https://realhunt.co/es/cheap-houses/quiet-location-in-japan) [Más de 80 m² 10](https://realhunt.co/es/cheap-houses/over-80-sqm-in-japan)
 
-Clasificaciones [Más metros por euro 17](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-japan)
+Clasificaciones [Más metros por euro 18](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-japan)
 
-Por característica y presupuesto [Casas, menos de 50.000 € 16](https://realhunt.co/es/cheap-houses/houses-under-50000-in-japan) [Casas de pueblo, menos de 50.000 € 14](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-japan) [Casas de pueblo, menos de 30.000 € 10](https://realhunt.co/es/cheap-houses/village-houses-under-30000-in-japan) [Junto al mar, menos de 50.000 € 6](https://realhunt.co/es/cheap-houses/by-the-sea-under-50000-in-japan)
+Por característica y presupuesto [Casas, menos de 100.000 € 26](https://realhunt.co/es/cheap-houses/houses-under-100000-in-japan) [Casas, menos de 50.000 € 16](https://realhunt.co/es/cheap-houses/houses-under-50000-in-japan) [Casas de pueblo, menos de 50.000 € 14](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-japan) [Casas de pueblo, menos de 30.000 € 10](https://realhunt.co/es/cheap-houses/village-houses-under-30000-in-japan) [Junto al mar, menos de 50.000 € 6](https://realhunt.co/es/cheap-houses/by-the-sea-under-50000-in-japan) [Con jardín, menos de 100.000 € 6](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-japan)
 
 Cerca de una ciudad [Cerca de Osaka 10](https://realhunt.co/es/cheap-houses/near-osaka)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
+Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
-Estos anuncios proceden de athome.co.jp (10), instagram.com (10), suumo.jp (4), homes.co.jp (3), ark-next.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+Estos anuncios proceden de athome.co.jp (10), instagram.com (10), homes.co.jp (4), suumo.jp (4), ark-next.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Japón](https://realhunt.co/es/alerts?country=Japan) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Japan#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Japón](https://realhunt.co/es/sitemap/japan)
 

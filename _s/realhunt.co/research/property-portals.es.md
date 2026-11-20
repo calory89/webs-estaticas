@@ -15,7 +15,7 @@ Actualizado el 20 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 7. [ThinkSPAIN](https://www.thinkspain.com/)
 8. [Kyero](https://www.kyero.com/)
 
-RealHunt: 190 casas revisadas, https://realhunt.co/es/homes/spain
+RealHunt: 191 casas revisadas, https://realhunt.co/es/homes/spain
 
 ## Portugal
 
@@ -26,7 +26,7 @@ RealHunt: 190 casas revisadas, https://realhunt.co/es/homes/spain
 5. [OLX](https://www.olx.pt/)
 6. [RE/MAX PT](https://www.remax.pt/)
 
-RealHunt: 19 casas revisadas, https://realhunt.co/es/homes/portugal
+RealHunt: 21 casas revisadas, https://realhunt.co/es/homes/portugal
 
 ## Italia
 
@@ -38,7 +38,7 @@ RealHunt: 19 casas revisadas, https://realhunt.co/es/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 77 casas revisadas, https://realhunt.co/es/homes/italy
+RealHunt: 81 casas revisadas, https://realhunt.co/es/homes/italy
 
 ## Francia
 
@@ -70,12 +70,14 @@ RealHunt: 21 casas revisadas, https://realhunt.co/es/homes/germany
 4. [PrimeLocation](https://www.primelocation.com/)
 5. [Purplebricks](https://www.purplebricks.co.uk/)
 
-RealHunt: 6 casas revisadas, https://realhunt.co/es/homes/united-kingdom
+RealHunt: 7 casas revisadas, https://realhunt.co/es/homes/united-kingdom
 
 ## Irlanda
 
 1. [Daft.ie](https://www.daft.ie/)
 2. [MyHome.ie](https://www.myhome.ie/)
+
+RealHunt: 4 casas revisadas, https://realhunt.co/es/homes/ireland
 
 ## Países Bajos
 
@@ -170,7 +172,7 @@ RealHunt: 7 casas revisadas, https://realhunt.co/es/homes/bulgaria
 2. [XE.gr](https://www.xe.gr/)
 3. [Tospitimou](https://www.tospitimou.gr/)
 
-RealHunt: 24 casas revisadas, https://realhunt.co/es/homes/greece
+RealHunt: 27 casas revisadas, https://realhunt.co/es/homes/greece
 
 ## Croacia
 
@@ -213,7 +215,7 @@ RealHunt: 6 casas revisadas, https://realhunt.co/es/homes/cyprus
 7. [Century 21](https://www.century21.com/)
 8. [RE/MAX](https://www.remax.com/)
 
-RealHunt: 59 casas revisadas, https://realhunt.co/es/homes/united-states
+RealHunt: 62 casas revisadas, https://realhunt.co/es/homes/united-states
 
 ## Canadá
 
@@ -222,7 +224,7 @@ RealHunt: 59 casas revisadas, https://realhunt.co/es/homes/united-states
 3. [RE/MAX CA](https://www.remax.ca/)
 4. [Point2](https://www.point2homes.com/)
 
-RealHunt: 14 casas revisadas, https://realhunt.co/es/homes/canada
+RealHunt: 16 casas revisadas, https://realhunt.co/es/homes/canada
 
 ## México
 
@@ -232,13 +234,15 @@ RealHunt: 14 casas revisadas, https://realhunt.co/es/homes/canada
 4. [Propiedades.com](https://propiedades.com/)
 5. [Century 21 México](https://century21mexico.com/)
 
-RealHunt: 14 casas revisadas, https://realhunt.co/es/homes/mexico
+RealHunt: 15 casas revisadas, https://realhunt.co/es/homes/mexico
 
 ## Colombia
 
 1. [Finca Raíz](https://www.fincaraiz.com.co/)
 2. [Metrocuadrado](https://www.metrocuadrado.com/)
 3. [Ciencuadras](https://www.ciencuadras.com/)
+
+RealHunt: 3 casas revisadas, https://realhunt.co/es/homes/colombia
 
 ## Argentina
 
@@ -268,6 +272,8 @@ RealHunt: 14 casas revisadas, https://realhunt.co/es/homes/mexico
 1. [InfoCasas](https://www.infocasas.com.uy/)
 2. [Gallito](https://www.gallito.com.uy/)
 3. [Mercado Libre UY](https://inmuebles.mercadolibre.com.uy/)
+
+RealHunt: 4 casas revisadas, https://realhunt.co/es/homes/uruguay
 
 ## Brasil
 
@@ -368,7 +374,7 @@ RealHunt: 5 casas revisadas, https://realhunt.co/es/homes/dominican-republic
 3. [athome.co.jp](https://www.athome.co.jp/)
 4. [realestate.co.jp](https://realestate.co.jp/)
 
-RealHunt: 35 casas revisadas, https://realhunt.co/es/homes/japan
+RealHunt: 36 casas revisadas, https://realhunt.co/es/homes/japan
 
 ## Islandia
 

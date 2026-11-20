@@ -2,7 +2,7 @@
 
 > RealHunt publica casas baratas en venta en todo el mundo (la mayoría por menos de 100.000 €), revisadas una a una por una persona y calificadas de 70 a 98 frente a todas las demás casas de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original.
 
-Hoy: 684 casas en 28 países. Actualizado el 2026-11-20. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
+Hoy: 713 casas en 31 países. Actualizado el 2026-11-20. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
 
 ## Páginas principales
 
@@ -43,22 +43,25 @@ Hoy: 684 casas en 28 países. Actualizado el 2026-11-20. Índice en inglés, con
 
 ## Países
 
-- [Viviendas en venta en España](https://realhunt.co/es/homes/spain): 190 casas. Texto: https://realhunt.co/es/homes/spain.md
-- [Casas en venta en Italia](https://realhunt.co/es/homes/italy): 77 casas. Texto: https://realhunt.co/es/homes/italy.md
-- [Casas en venta en Estados Unidos](https://realhunt.co/es/homes/united-states): 59 casas. Texto: https://realhunt.co/es/homes/united-states.md
+- [Viviendas en venta en España](https://realhunt.co/es/homes/spain): 191 casas. Texto: https://realhunt.co/es/homes/spain.md
+- [Casas en venta en Italia](https://realhunt.co/es/homes/italy): 81 casas. Texto: https://realhunt.co/es/homes/italy.md
+- [Casas en venta en Estados Unidos](https://realhunt.co/es/homes/united-states): 62 casas. Texto: https://realhunt.co/es/homes/united-states.md
 - [Casas en venta en Francia](https://realhunt.co/es/homes/france): 52 casas. Texto: https://realhunt.co/es/homes/france.md
 - [Casas en venta en Dinamarca](https://realhunt.co/es/homes/denmark): 46 casas. Texto: https://realhunt.co/es/homes/denmark.md
 - [Casas en venta en Suecia](https://realhunt.co/es/homes/sweden): 39 casas. Texto: https://realhunt.co/es/homes/sweden.md
-- [Casas en venta en Japón](https://realhunt.co/es/homes/japan): 35 casas. Texto: https://realhunt.co/es/homes/japan.md
+- [Casas en venta en Japón](https://realhunt.co/es/homes/japan): 36 casas. Texto: https://realhunt.co/es/homes/japan.md
 - [Pisos en venta en Polonia](https://realhunt.co/es/homes/poland): 31 casas. Texto: https://realhunt.co/es/homes/poland.md
-- [Casas en venta en Grecia](https://realhunt.co/es/homes/greece): 24 casas. Texto: https://realhunt.co/es/homes/greece.md
+- [Casas en venta en Grecia](https://realhunt.co/es/homes/greece): 27 casas. Texto: https://realhunt.co/es/homes/greece.md
+- [Casas en venta en Portugal](https://realhunt.co/es/homes/portugal): 21 casas. Texto: https://realhunt.co/es/homes/portugal.md
 - [Pisos en venta en Alemania](https://realhunt.co/es/homes/germany): 21 casas. Texto: https://realhunt.co/es/homes/germany.md
-- [Casas en venta en Portugal](https://realhunt.co/es/homes/portugal): 19 casas. Texto: https://realhunt.co/es/homes/portugal.md
 - [Pisos en venta en los Países Bajos](https://realhunt.co/es/homes/netherlands): 18 casas. Texto: https://realhunt.co/es/homes/netherlands.md
-- [Casas en venta en Canadá](https://realhunt.co/es/homes/canada): 14 casas. Texto: https://realhunt.co/es/homes/canada.md
-- [Casas en venta en México](https://realhunt.co/es/homes/mexico): 14 casas. Texto: https://realhunt.co/es/homes/mexico.md
+- [Casas en venta en Canadá](https://realhunt.co/es/homes/canada): 16 casas. Texto: https://realhunt.co/es/homes/canada.md
+- [Casas en venta en México](https://realhunt.co/es/homes/mexico): 15 casas. Texto: https://realhunt.co/es/homes/mexico.md
 - [Casas en venta en Suiza](https://realhunt.co/es/homes/switzerland): 10 casas. Texto: https://realhunt.co/es/homes/switzerland.md
+- [Casas en venta en el Reino Unido](https://realhunt.co/es/homes/united-kingdom): 7 casas. Texto: https://realhunt.co/es/homes/united-kingdom.md
 - [Pisos en venta en Bulgaria](https://realhunt.co/es/homes/bulgaria): 7 casas. Texto: https://realhunt.co/es/homes/bulgaria.md
-- [Casas en venta en el Reino Unido](https://realhunt.co/es/homes/united-kingdom): 6 casas. Texto: https://realhunt.co/es/homes/united-kingdom.md
 - [Pisos en venta en Chipre](https://realhunt.co/es/homes/cyprus): 6 casas. Texto: https://realhunt.co/es/homes/cyprus.md
 - [Pisos en venta en República Dominicana](https://realhunt.co/es/homes/dominican-republic): 5 casas. Texto: https://realhunt.co/es/homes/dominican-republic.md
+- [Viviendas en venta en Irlanda](https://realhunt.co/es/homes/ireland): 4 casas. Texto: https://realhunt.co/es/homes/ireland.md
+- [Casas en venta en Uruguay](https://realhunt.co/es/homes/uruguay): 4 casas. Texto: https://realhunt.co/es/homes/uruguay.md
+- [Casas en venta en Colombia](https://realhunt.co/es/homes/colombia): 3 casas. Texto: https://realhunt.co/es/homes/colombia.md

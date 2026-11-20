@@ -33,10 +33,10 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [115.000 € · Casa encalada en un pueblo de Creta con azotea y escalera de caracol](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, cerca de Neapoli, Creta · nota 91 · 93 m² · 2 dorm.
 - [68.000 € · Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330) · Agia Triada, Marathokampos, Samos (Grecia) · nota 90 · 80 m² · 2 dorm.
 - [150.000 € · Casa de piedra en la isla con puertas azules y vistas al mar hacia Skiathos](https://realhunt.co/es/deal/gr-skopelos-sea-view-150k) · Glossa, Skopelos (Sporades) · nota 89 · 110 m² · 2 dorm.
+- [180.000 € · Casa de piedra adosada renovada con patio en Andriani, Mesinia](https://realhunt.co/es/deal/gr-messinia-andriani-renovated-stone-house-180k) · Andriani, Mesenia · nota 89 · 148 m² · 2 dorm.
 - [170.000 € · Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, Karpathos](https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k) · Othos, Karpathos · nota 89 · 165 m² · 4 dorm.
-- [95.000 € · Casa de cuento con cenador y barbacoa de piedra en el bosque de Pelion](https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k) · Chania, Pelion (cerca de Portaria) · nota 88 · 68 m² · 2 dorm.
 
-[Las 24 casas en Grecia](https://realhunt.co/es/homes/greece)
+[Las 27 casas en Grecia](https://realhunt.co/es/homes/greece)
 
 [Gastos, impuestos y fuentes de Grecia](https://realhunt.co/es/costs/greece) · [Calculadora de gastos de compra para Grecia](https://realhunt.co/es/buying-costs/greece) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

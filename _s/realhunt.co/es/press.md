@@ -8,33 +8,33 @@ Cifras actualizadas el 20 de noviembre de 2026 · Contacto de prensa: carlos@equ
 
 ### RealHunt en cifras
 
-- 684casas en venta en la web
-- 19países con al menos 3 casas
-- 90.000 €precio de salida mediano
+- 713casas en venta en la web
+- 22países con al menos 3 casas
+- 93.000 €precio de salida mediano
 - 7.400 €la casa más barata hoy
-- 64%de las casas cuesta 100.000 € o menos
+- 61%de las casas cuesta 100.000 € o menos
 - 70–98rango de notas hoy (escala de 70 a 98)
-- 185casas añadidas en los últimos 30 días
-- 65portales y agencias de los que salen las casas
+- 214casas añadidas en los últimos 30 días
+- 66portales y agencias de los que salen las casas
 - 280respuestas a «¿puedo comprar allí?» (14 nacionalidades, 20 países)
 
 Calculadas con las casas de la web cada vez que se actualiza. Precios de salida en euros.
 
 ### Datos que puedes citar
 
-- [Precio de salida mediano de una casa barata, por país (2026)](https://realhunt.co/es/research/prices). Precio mediano por m² más bajo: Japón, 427 €.
+- [Precio de salida mediano de una casa barata, por país (2026)](https://realhunt.co/es/research/prices). Precio mediano por m² más bajo: Japón, 463 €.
 - [Qué casa se compra con 50.000, 100.000 y 200.000 €, país por país (2026)](https://realhunt.co/es/research/what-your-budget-buys). Con 50.001 a 100.000 € se compra una mediana de 115 m² en Dinamarca y de 34 m² en Suiza.
 - [Gastos de compra de una vivienda por país: impuestos y gastos además del precio (2026)](https://realhunt.co/es/research/buying-costs-by-country). Del 0,6–1,1% en Georgia al 12–22% en el norte de Chipre.
 - [Dónde puede y dónde no puede comprar casa un extranjero: las normas de 20 países (2026)](https://realhunt.co/es/research/where-foreigners-can-buy). Libre para cualquier nacionalidad en 12 de 20 países; restringido en Canadá, Dinamarca y Suiza.
 - [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Jutlandia Occidental, Dinamarca (91).
 - [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 79 casas de 50.000 € o menos; la mayoría en Italia (33).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
-- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 627 casas está marcado como medio o alto; 12, como alto.
-- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.464 €/m² a menos de 30 km de un aeropuerto, 1.067 €/m² entre 30 y 60 km.
+- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 667 casas está marcado como medio o alto; 12, como alto.
+- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.460 €/m² a menos de 30 km de un aeropuerto, 1.080 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
 - [Las casas más baratas por metro cuadrado de Europa (2026)](https://realhunt.co/es/research/cheapest-per-sqm-europe). La más baja de Europa: 98 €/m² en Markaryd, Kronoberg, Småland, Suecia; mediana más baja: Suecia, 680 €/m².
 - [Casas junto al mar por menos de 100.000 €: dónde están, país por país (2026)](https://realhunt.co/es/research/sea-homes-under-100000). 94 casas junto al mar de 100.000 € o menos; la mayoría en España (25).
-- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 179 casas añadidas en noviembre de 2026; la mayoría en Estados Unidos (35).
+- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 208 casas añadidas en noviembre de 2026; la mayoría en Estados Unidos (38).
 
 Cada página tiene su gráfico, tabla, CSV, método y una cita lista para copiar. ¿Necesitas otro corte (un país, un tramo de precio, un mes)? Pídelo en carlos@equinoxinvestmentgroup.com.
 

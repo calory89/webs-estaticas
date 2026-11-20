@@ -36,7 +36,7 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 - [€153,900 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 91 · 199 m² · 3 bed
 - [€68,917 · Updated 2-bed house in Cleveland, Oklahoma](https://realhunt.co/deal/cleveland-68917) · Cleveland, Oklahoma · score 91 · 98 m² · 2 bed
 
-[All 59 homes in the United States](https://realhunt.co/homes/united-states)
+[All 62 homes in the United States](https://realhunt.co/homes/united-states)
 
 [Costs, taxes and sources for United States](https://realhunt.co/costs/united-states) · [Buying-cost calculator for United States](https://realhunt.co/buying-costs/united-states) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

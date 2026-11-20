@@ -2,7 +2,7 @@
 
 Updated 20 November 2026. Newest home added 4 October 2026.
 
-RealHunt lists 10 houses for sale in Switzerland today, priced from €32,300 to €88,400. The cheapest costs €32,300: [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), in Lengnau (70 m², 1 bedroom). The median price is €70,100 (€2,337/m²), against €90,500 (€1,200/m²) for the 591 homes on RealHunt in 28 countries.
+RealHunt lists 10 houses for sale in Switzerland today, priced from €32,300 to €88,400. The cheapest costs €32,300: [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), in Lengnau (70 m², 1 bedroom). The median price is €70,100 (€2,337/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
 Can you buy here? Read this first
 Under the Lex Koller law, EU/EFTA citizens living in Switzerland and holders of a C permit buy like Swiss citizens, and non-EU holders of a B permit can buy a home they live in. People living abroad need a cantonal permit and can usually only buy one holiday home in a tourist area, within national quotas; a proposed tightening was under consultation in 2026.
 
@@ -128,9 +128,9 @@ By feature [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-swi
 
 By feature and budget [With a pool under €100,000 4](https://realhunt.co/cheap-houses/with-pool-under-100000-in-switzerland)
 
-Neighbouring countries [France 45](https://realhunt.co/homes/france) [Italy 73](https://realhunt.co/homes/italy) [Germany 21](https://realhunt.co/homes/germany)
+Neighbouring countries [France 45](https://realhunt.co/homes/france) [Italy 77](https://realhunt.co/homes/italy) [Germany 21](https://realhunt.co/homes/germany)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 73](https://realhunt.co/homes/italy) [United States 59](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 24](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 14](https://realhunt.co/homes/canada) [Portugal 7](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Mexico 4](https://realhunt.co/homes/mexico)
+By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Mexico 3](https://realhunt.co/homes/mexico) [Colombia 3](https://realhunt.co/homes/colombia)
 
 These listings come from immoscout24.ch (10). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

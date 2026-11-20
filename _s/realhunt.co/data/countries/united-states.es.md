@@ -1,6 +1,6 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 59 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 59 casas es de 214.100 € (1.580 € por m², calculado con las 59 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 62 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 62 casas es de 214.900 € (1.570 € por m², calculado con las 62 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 59 |
-| Precio de salida mediano | 214.100 € |
-| Precio mediano por m² | 1.580 € (59 casas de superficie conocida) |
-| Superficie mediana | 118 m² |
+| Casas en RealHunt | 62 |
+| Precio de salida mediano | 214.900 € |
+| Precio mediano por m² | 1.570 € (62 casas de superficie conocida) |
+| Superficie mediana | 121 m² |
 | La más barata y la más cara | 65.428 € · 447.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 2–5% del precio (cifras de 2026) |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-states
 
-## Las 59 casas, de mejor a peor nota
+## Las 62 casas, de mejor a peor nota
 
 ### Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental
 
@@ -114,6 +114,14 @@ Precio solicitado US$220.000 (aproximadamente €200.000) por una casa victorian
 
 https://realhunt.co/es/deal/us-marietta-oh-victorian-oak-woodwork-220k
 
+### Casa de rancho elevado boscosa con techos de cedro al otro lado de la carretera del Lago Hurón, Alpena
+
+227.700 € · Alpena, Michigan · 172 m² · 2 dormitorios · nota RealHunt 90 · añadida el 2026-11-20
+
+Se pide US$250.000 (aproximadamente €227.700). Un rancho elevado de 2006 de 172 m² en casi media hectárea de bosque, con el Lago Hurón y una playa de arena para nadar justo al otro lado de la carretera. El área abierta de sala, comedor y cocina está bajo un techo abovedado de tableros de cedro blanco, con una estufa de leña, armarios de roble rojo y una gran isla de cocina. Tiene dos dormitorios y dos cuartos de baño completos, con espacio para agregar un tercer dormitorio. Tiene calefacción radiante en el piso, una cimentación aislada y un garaje muy grande calefaccionado para coches, un barco o un taller. Impuesto sobre la propiedad US$1.420 al año. HOA US$150 al año por mantenimiento de carreteras y limpieza de nieve.
+
+https://realhunt.co/es/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k
+
 ### Casita azul de 1907 con techos altos y cocina nueva
 
 79.200 € · Freeport, Illinois · 83 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-10-05
@@ -129,6 +137,14 @@ https://realhunt.co/es/deal/us-freeport-83k-605154
 116 m² (1.248 sq ft), 3 dormitorios, 2 baños, construida en 1938. Precio: 98.500 $. El anuncio menciona: terraza de madera grande, cocina amplia actualizada, armarios de sobra, baño completo compartido.
 
 https://realhunt.co/es/deal/clairton-85929
+
+### Cabaña completamente restaurada de los años 40 con porche frontal profundo en esquina en Hot Springs
+
+182.100 € · Hot Springs, Arkansas · 117 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-11-20
+
+Pidiendo US$199.900 (aproximadamente 182.100 euros). Una casa de 1940 en una parcela en esquina bajo árboles de roble altos, completamente restaurada con toda la fontanería y cableado nuevos. Conserva los suelos de madera noble y el porche frontal cubierto profundo, y la sala de estar, comedor y cocina se comunican entre sí. La cocina es nueva, con armarios blancos, encimeras de granito, estanterías abiertas y electrodomésticos de acero inoxidable. El dormitorio principal tiene su propio baño con ducha tipo walk-in alicatada, hay un segundo dormitorio y un baño de invitados. El jardín trasero está completamente vallado y hay una cochera para un coche. Se incluyen lavadora, secadora y nevera. Impuesto sobre la propiedad US$820 al año, sin HOA.
+
+https://realhunt.co/es/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k
 
 ### Casa de tres dormitorios con patio grande vallado cerca del Misisipí en Red Wing
 
@@ -161,6 +177,14 @@ https://realhunt.co/es/deal/us-dora-84k-329130
 Se pide US$235.000 (aproximadamente €214.100) por una casa de aproximadamente 127 m² en La Crosse, una ciudad universitaria en el río Mississippi en el oeste de Wisconsin. Construida en 1889, ha sido actualizada de arriba a abajo: una cocina nueva con armarios shaker blancos, azulejos tipo metro y una estufa de gas, baños nuevos y elegantes incluyendo una ducha de aspecto mármol, suelos de aspecto madera clara y una zona de salón y comedor abierta. El anuncio lista cuatro dormitorios. Hay un porche delantero, un jardín lateral cerrado y espacio atrás para una terraza o un futuro garaje. Impuesto sobre la propiedad anual US$2.903, sin cuota de HOA.
 
 https://realhunt.co/es/deal/us-la-crosse-wi-updated-four-bed-house-235k
+
+### Casa renovada de cuatro dormitorios con tejado, cocina y baños nuevos en Sandusky, Lake Erie
+
+214.900 € · Sandusky, Ohio · 139 m² · 4 dormitorios · nota RealHunt 88 · añadida el 2026-11-20
+
+Se pide US$236.000 (unos €214.900). Una casa de 1920 de 139 m² en la localidad de Lake Erie de Sandusky, rehecha y lista para mudarse. La lista de trabajos incluye revestimiento nuevo, ventanas, tejado, canalones, placas de yeso, pintura, suelos e iluminación, un sistema eléctrico actualizado y tuberías parcialmente actualizadas. La cocina tiene armarios nuevos, encimeras de granito y electrodomésticos nuevos, y ambos cuartos de baño son nuevos con platos de ducha de cristal. Hay cuatro dormitorios, uno con almacenamiento adicional en el ático detrás del armario. Fuera hay una terraza compuesta grande, un jardín trasero grande y un cobertizo de almacenamiento. Impuesto sobre la propiedad US$1.128 al año, sin HOA.
+
+https://realhunt.co/es/deal/us-sandusky-oh-renovated-four-bed-house-deck-236k
 
 ### Casa de 1899 bien mantenida con garaje doble nuevo cerca de Chester Park en Duluth
 

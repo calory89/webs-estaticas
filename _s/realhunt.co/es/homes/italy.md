@@ -2,26 +2,26 @@
 
 Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 73 casas en venta en Italia, con precios de 12.000 € a 197.000 €. La más barata cuesta 12.000 €: [Casa de piedra en un pueblo de colina a 55 min de Roma](https://realhunt.co/es/deal/DcoUnwBDDxF), en Lacio (1 dormitorio). El precio mediano es de 65.000 € (1.150 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+RealHunt tiene hoy 77 casas en venta en Italia, con precios de 12.000 € a 197.000 €. La más barata cuesta 12.000 €: [Casa de piedra en un pueblo de colina a 55 min de Roma](https://realhunt.co/es/deal/DcoUnwBDDxF), en Lacio (1 dormitorio). El precio mediano es de 75.000 € (1.150 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciprocidad (EE.UU., Reino Unido, Canadá, Australia califican).
 
 [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · Gastos de compra y normas para extranjeros en Italia
 
 Viviendas
-73
+77
 
 Desde
 12.000 €
 
 Precio mediano
-65.000 €
+75.000 €
 
 Mediana por m²
 1.150 €/m²
 
 Tamaño mediano
-80 m²
+81 m²
 
 Mejor nota
 91
@@ -35,7 +35,7 @@ Con límites
 Datos del
 20 nov 2026
 
-### Las 30 mejores de 73, por nota
+### Las 30 mejores de 77, por nota
 
 - [Nota 91Nueva115.000 €Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de ComoSan Siro, Lombardía85 m² · 2 dorm. · 1.353 €/m² · 11 días en RealHuntCasa pareada de 85 m² restaurada y habitable en el casco antiguo peatonal de San Siro, en la orilla oeste del lago de Como.](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633)
 - [Nota 8912.000 €Casa de piedra en un pueblo de colina a 55 min de RomaLacio1 dorm. · 58 días en RealHunt1 dormitorio · 1 baño · 50 min a la playa · 55 min al aeropuerto de Roma.](https://realhunt.co/es/deal/DcoUnwBDDxF)
@@ -53,7 +53,9 @@ Datos del
 - [Nota 8385.000 €Piso de 2 dormitorios con terraza con vistas al lago de ComoPeglio, Lago de Como69 m² · 2 dorm. · 1.232 €/m² · 52 días en RealHunt85.000 € por una casa sobre el lago de Como.](https://realhunt.co/es/deal/lake-como-peglio-85000)
 - [Nota 83Nueva95.000 €Casa de pueblo de cuatro dormitorios con piso de huéspedes y terraza cubierta en Secinaro, AbruzosSecinaro, Abruzos171 m² · 4 dorm. · 556 €/m² · 2 días en RealHuntUna casa grande en el pueblo de montaña de Secinaro, hecha uniendo tres pequeños pisos, 171 m² en total.](https://realhunt.co/es/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k)
 - [Nota 82159.000 €Casa de montaña acogedora junto a las pistas de Abetone, se vende amuebladaCutigliano, Toscana127 m² · 3 dorm. · 1.252 €/m² · 35 días en RealHuntCasa adosada de 127 m², libre por tres lados, en el centro de Cutigliano, a pocos kilómetros de las pistas de esquí de Doganaccia y Abetone: gran…](https://realhunt.co/es/deal/it-tuscany-cutigliano-ski-house-159k)
+- [Nota 82Nueva130.000 €Casa de pueblo de 1790 renovada con jardín y vistas a las colinas en Ruota, cerca de LuccaRuota, Toscana95 m² · 2 dorm. · 1.368 €/m² · Añadida hoyUna casa de piedra adosada de 1790 en el pequeño pueblo de montaña de Ruota, completamente renovada en 2015, con vistas sobre las colinas y la…](https://realhunt.co/es/deal/it-tuscany-capannori-ruota-townhouse-garden-130k)
 - [Nota 82Nueva140.000 €Piso de época renovado con techos abovedados en el centro de Acqui Terme, PiamonteAcqui Terme, Piamonte120 m² · 2 dorm. · 1.167 €/m² · Añadida hoyUn piso de segunda planta de aproximadamente 120 m² en un edificio de época en el centro de Acqui Terme, la estación termal del Piamonte conocida…](https://realhunt.co/es/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k)
+- [Nota 82Nueva125.000 €Casa de piedra renovada dentro de los muros del Castillo de Gaglietole, UmbríaGaglietole, Umbría125 m² · 2 dorm. · 1.000 €/m² · Añadida hoyUna casa de piedra dentro de los muros del pequeño castillo medieval de Gaglietole, cerca de Collazzone en las colinas entre Perugia y Todi…](https://realhunt.co/es/deal/it-umbria-collazzone-castle-stone-house-125k)
 - [Nota 8143.500 €'La Casa Felice': casa de 2 dormitorios en un pueblo de colina de Umbría por 48.000 €San Venanzo, Umbría77 m² · 2 dorm. · 565 €/m² · 46 días en RealHuntCasa adosada de dos plantas y unos 77 m² en el centro de San Venanzo, pueblo de colina de Umbría, con dos dormitorios, salón con estufa de leña y…](https://realhunt.co/es/deal/it-san-venanzo-48k-knitz9)
 - [Nota 81160.000 €Villa con vistas al mar y dos verandas cubiertas a 1 km de la playa de VignolaBaia Vignola, Cerdeña86 m² · 2 dorm. · 1.860 €/m² · 35 días en RealHuntVilla adosada de esquina en el residencial Baia Vignola, en el norte de Cerdeña, con unas vistas al mar espléndidas: salón luminoso con cocina…](https://realhunt.co/es/deal/it-sardinia-vignola-sea-view-160k)
 - [Nota 81160.000 €Casa de campo reformada en Umbría con anexo, parra y huerto de frutalesCittà della Pieve, Umbría114 m² · 3 dorm. · 1.404 €/m² · 35 días en RealHuntCasa de 90 m² en tres plantas, reformada con gusto, en la pequeña aldea de Valdilucciole, cerca de Città della Pieve, más un anexo de 24 m² con…](https://realhunt.co/es/deal/it-umbria-citta-della-pieve-orchard-160k)
@@ -63,14 +65,12 @@ Datos del
 - [Nota 8164.000 €Casa rústica de piedra con patio, balcón y varias dependencias anexasColfelice, Lacio58 días en RealHuntLlena de encanto rústico, esta casa tradicional de piedra en Colfelice, Frosinone, tiene una acogedora chimenea, estancias amplias y un bonito…](https://realhunt.co/es/deal/Dc26pZMj0VD)
 - [Nota 8097.000 €Stazzo de granito reformado con flores en las ventanas en un pueblo de CerdeñaLuras, Cerdeña70 m² · 2 dorm. · 1.386 €/m² · 35 días en RealHuntUn stazzo tradicional de Gallura en el centro histórico de Luras, al norte de Cerdeña, restaurado respetando el granito visto, la madera y el…](https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k)
 - [Nota 80158.000 €Casa en la colina con veranda y vistas al mar a 1 km de la playa de Porto OttioluLudduì, Cerdeña64 m² · 2 dorm. · 2.469 €/m² · 35 días en RealHuntCasa adosada de dos plantas en la tranquila aldea de Ludduì, en una colina de Budoni, con vistas exclusivas al mar de Cerdeña: salón luminoso con…](https://realhunt.co/es/deal/it-sardinia-budoni-sea-view-158k)
+- [Nota 80Nueva115.000 €Casa de piedra renovada con terraza en Arcidosso medieval, Monte AmiataArcidosso, Toscana100 m² · 2 dorm. · 1.150 €/m² · Añadida hoyUna casa completamente renovada con puerta frontal propia en el centro medieval de Arcidosso, un pueblo de montaña animado en las laderas de Monte…](https://realhunt.co/es/deal/it-tuscany-arcidosso-stone-house-terrace-115k)
 - [Nota 80Nueva115.000 €Casa urbana de cuatro niveles lista para vivir en Collesano, en las colinas de Madonie cerca de CefalùCollesano, Sicilia200 m² · 4 dorm. · 575 €/m² · 2 días en RealHuntUna casa adosada de cuatro niveles en el centro de Collesano, un pueblo dentro del Parque de Madonie cerca de Cefalù.](https://realhunt.co/es/deal/it-sicily-collesano-madonie-four-bed-house-115k)
-- [Nota 80Nueva139.000 €Casa de campo renovada de un dormitorio en 4.000 m² de terreno cerca de Francavilla Fontana, ApuliaFrancavilla Fontana, Apulia85 m² · 1 dorm. · 1.635 €/m² · 2 días en RealHuntUna casa de campo de una sola planta de aproximadamente 85 m² en 4.000 m² de terreno privado cercado con olivos, alrededor de 10 minutos de…](https://realhunt.co/es/deal/it-puglia-francavilla-fontana-country-home-139k)
-- [Nota 8083.000 €Casa de piedra reformada y amueblada con altillo y jardín privado en la ToscanaCastelnuovo di Val di Cecina, Toscana58 días en RealHuntPreciosamente reformada y llena de carácter rústico, esta acogedora casa de piedra en Castelnuovo di Val di Cecina combina vigas vistas y chimenea…](https://realhunt.co/es/deal/DdDyY8OgGIP)
-- [Nota 8039.000 €Chalet alpino listo para entrar a vivir a 1.000 m con terreno propioPaesana, Piamonte30 m² · 1.300 €/m² · 58 días en RealHuntChalet independiente con terreno propio y terraza panorámica en Via Ponte Vecchio, Paesana, Cuneo, Piamonte.](https://realhunt.co/es/deal/DdVwBL7DVl0)
 
-Se muestran las 30 con mejor nota de 73 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
+Se muestran las 30 con mejor nota de 77 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
-### Compara las 60 más baratas de 73
+### Compara las 60 más baratas de 77
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de piedra en un pueblo de colina a 55 min de Roma](https://realhunt.co/es/deal/DcoUnwBDDxF) | Lacio | 12.000 € | · | · | 1 | 89 | 23 sept 2026
@@ -122,29 +122,29 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de piedra reformada con balcón con vistas al lago de Como](https://realhunt.co/es/deal/it-san-siro-95k-057133) | San Siro, Lago de Como | 95.000 € | 60 m² | 1.583 €/m² | 2 | 91 | 12 oct 2026
 [Stazzo de granito reformado con flores en las ventanas en un pueblo de Cerdeña](https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k) | Luras, Cerdeña | 97.000 € | 70 m² | 1.386 €/m² | 2 | 80 | 16 oct 2026
 [Dúplex de piedra con vigas y jardín con vistas al lago y garaje encima del lago Iseo, Parzanica](https://realhunt.co/es/deal/it-lake-iseo-parzanica-beamed-duplex-100k) | Parzanica, Lombardía | 100.000 € | 80 m² | 1.250 €/m² | 1 | 81 | 18 nov 2026
+[Piso de planta baja con jardín orientado al sur de 225 m² en Savignone, Liguria](https://realhunt.co/es/deal/it-liguria-savignone-garden-flat-mountain-views-104k) | Savignone, Liguria | 104.000 € | 75 m² | 1.387 €/m² | 2 | 78 | 20 nov 2026
 [Casa de ladrillo restaurada con patio en el centro antiguo de Amandola, Le Marche](https://realhunt.co/es/deal/it-marche-amandola-restored-brick-house-109k) | Amandola, Le Marche | 109.000 € | 85 m² | 1.282 €/m² | 2 | 78 | 18 nov 2026
 [Casa de ladera renovada con grandes terrazas cerca de Castellino Tanaro, Piamonte](https://realhunt.co/es/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k) | Viorno, Piamonte | 115.000 € | 180 m² | 639 €/m² | 2 | 86 | 20 nov 2026
 [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633) | San Siro, Lombardía | 115.000 € | 85 m² | 1.353 €/m² | 2 | 91 | 9 nov 2026
 [Casa urbana de cuatro niveles lista para vivir en Collesano, en las colinas de Madonie cerca de Cefalù](https://realhunt.co/es/deal/it-sicily-collesano-madonie-four-bed-house-115k) | Collesano, Sicilia | 115.000 € | 200 m² | 575 €/m² | 4 | 80 | 18 nov 2026
+[Casa de piedra renovada con terraza en Arcidosso medieval, Monte Amiata](https://realhunt.co/es/deal/it-tuscany-arcidosso-stone-house-terrace-115k) | Arcidosso, Toscana | 115.000 € | 100 m² | 1.150 €/m² | 2 | 80 | 20 nov 2026
 [Casa independiente con jardín de 350 m² y garaje en San Lorenzo in Campo, Marcas](https://realhunt.co/es/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k) | San Lorenzo in Campo, Le Marche | 120.000 € | 130 m² | 923 €/m² | 2 | 85 | 20 nov 2026
 [Casa de pueblo renovada con vistas al mar bajo el castillo en Rosignano Marittimo, Toscana](https://realhunt.co/es/deal/it-rosignano-marittimo-sea-view-village-flat-125k) | Rosignano Marittimo, Toscana | 125.000 € | 58 m² | 2.155 €/m² | 1 | 77 | 18 nov 2026
+[Casa de piedra renovada dentro de los muros del Castillo de Gaglietole, Umbría](https://realhunt.co/es/deal/it-umbria-collazzone-castle-stone-house-125k) | Gaglietole, Umbría | 125.000 € | 125 m² | 1.000 €/m² | 2 | 82 | 20 nov 2026
+[Casa de pueblo de 1790 renovada con jardín y vistas a las colinas en Ruota, cerca de Lucca](https://realhunt.co/es/deal/it-tuscany-capannori-ruota-townhouse-garden-130k) | Ruota, Toscana | 130.000 € | 95 m² | 1.368 €/m² | 2 | 82 | 20 nov 2026
 [Casa de piedra independiente con jardín y vistas al valle cerca de Cascia, Umbría](https://realhunt.co/es/deal/it-umbria-cascia-stone-house-valley-view-130k) | Colforcella, Umbría | 130.000 € | 84 m² | 1.548 €/m² | 1 | 78 | 18 nov 2026
-[Casa de campo renovada de un dormitorio en 4.000 m² de terreno cerca de Francavilla Fontana, Apulia](https://realhunt.co/es/deal/it-puglia-francavilla-fontana-country-home-139k) | Francavilla Fontana, Apulia | 139.000 € | 85 m² | 1.635 €/m² | 1 | 80 | 18 nov 2026
-[Piso de época renovado con techos abovedados en el centro de Acqui Terme, Piamonte](https://realhunt.co/es/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k) | Acqui Terme, Piamonte | 140.000 € | 120 m² | 1.167 €/m² | 2 | 82 | 20 nov 2026
-[Casa de piedra de granja con cuatro dormitorios y 3 hectáreas de terreno cerca de Gubbio, Umbría](https://realhunt.co/es/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k) | Gubbio, Umbría | 148.000 € | 110 m² | 1.345 €/m² | 4 | 78 | 20 nov 2026
-[Casa luminosa de tres plantas con terrazas frente al lago Omodeo en Soddì, Cerdeña](https://realhunt.co/es/deal/it-sardinia-soddi-lake-omodeo-view-house-150k) | Soddì, Cerdeña | 150.000 € | 150 m² | 1.000 €/m² | 3 | 81 | 18 nov 2026
 
-### Las 73 viviendas en cifras
+### Las 77 viviendas en cifras
 
-- Tamaño: la mitad tiene 80 m² o más. La más grande tiene 220 m²: [Casa toscana de piedra y vigas con terraza de 70 m² y acabados de calidad](https://realhunt.co/es/deal/it-tuscany-roccastrada-stone-loft-158k).
-- Dormitorios: 22 con 1 dormitorio, 26 con 2, 10 con 3, 4 con 4 o más; 11 anuncios no lo indican.
-- Tipo: 15 pisos y 45 casas.
-- Entorno: 12 junto al mar, 53 en pueblos, 2 en ciudad.
-- Dónde: Toscana (10), Calabria (8), Lacio (7), Cerdeña (7), Umbría (7), Sicilia (6).
-- Precio mediano más bajo: Lacio, 20.000 € entre 7 viviendas. El más alto: Liguria, 170.000 € entre 3.
-- Extras que mencionan los anuncios: 19 con jardín, 38 con terraza, 12 con garaje, 1 con piscina, 24 con chimenea.
+- Tamaño: la mitad tiene 81 m² o más. La más grande tiene 220 m²: [Casa toscana de piedra y vigas con terraza de 70 m² y acabados de calidad](https://realhunt.co/es/deal/it-tuscany-roccastrada-stone-loft-158k).
+- Dormitorios: 22 con 1 dormitorio, 30 con 2, 10 con 3, 4 con 4 o más; 11 anuncios no lo indican.
+- Tipo: 16 pisos y 48 casas.
+- Entorno: 12 junto al mar, 57 en pueblos, 2 en ciudad.
+- Dónde: Toscana (12), Calabria (8), Umbría (8), Lacio (7), Cerdeña (7), Sicilia (6).
+- Precio mediano más bajo: Lacio, 20.000 € entre 7 viviendas. El más alto: Liguria, 170.000 € entre 4.
+- Extras que mencionan los anuncios: 21 con jardín, 39 con terraza, 14 con garaje, 1 con piscina, 26 con chimenea.
 - Notas: de 73 a 91 sobre 98. La de mejor nota: [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa de ladera renovada con grandes terrazas cerca de Castellino Tanaro, Piamonte](https://realhunt.co/es/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k). 26 de estas viviendas se añadieron en los últimos 30 días.
+- La más reciente, añadida el 20 de noviembre de 2026: [Casa de ladera renovada con grandes terrazas cerca de Castellino Tanaro, Piamonte](https://realhunt.co/es/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k). 30 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Precio mediano por región en Italia
 
@@ -155,18 +155,18 @@ Región | Viviendas | Precio mediano
 Marche | 1 | 55.000 €
 [Abruzos](https://realhunt.co/es/homes/italy/abruzzo) | 3 | 59.000 €
 [Apulia](https://realhunt.co/es/homes/italy/apulia) | 5 | 65.000 €
-[Toscana](https://realhunt.co/es/homes/italy/tuscany) | 10 | 83.000 €
 [Lago de Como](https://realhunt.co/es/homes/italy/lake-como) | 5 | 85.000 €
+[Toscana](https://realhunt.co/es/homes/italy/tuscany) | 12 | 115.000 €
 [Lombardía](https://realhunt.co/es/homes/italy/lombardy) | 4 | 115.000 €
 Le Marche | 2 | 120.000 €
-[Umbría](https://realhunt.co/es/homes/italy/umbria) | 7 | 130.000 €
+[Umbría](https://realhunt.co/es/homes/italy/umbria) | 8 | 130.000 €
 [Piamonte](https://realhunt.co/es/homes/italy/piedmont) | 4 | 140.000 €
 [Cerdeña](https://realhunt.co/es/homes/italy/sardinia) | 7 | 150.000 €
-[Liguria](https://realhunt.co/es/homes/italy/liguria) | 3 | 170.000 €
+[Liguria](https://realhunt.co/es/homes/italy/liguria) | 4 | 170.000 €
 
 ### Gastos de compra y normas para extranjeros en Italia
 
-Los impuestos y gastos añaden alrededor de un 4 a 15 % al precio: Impuesto de registro del 9% en una segunda vivienda (segunda mano), o IVA en obra nueva; notario 1-2% + abogado ~1% + agente ~3% (GPG, compra y venta: 10-18%). En la vivienda mediana de esta página (65.000 €) son de 2.600 € a 9.750 €, es decir, de 67.600 € a 74.750 € en total.
+Los impuestos y gastos añaden alrededor de un 4 a 15 % al precio: Impuesto de registro del 9% en una segunda vivienda (segunda mano), o IVA en obra nueva; notario 1-2% + abogado ~1% + agente ~3% (GPG, compra y venta: 10-18%). En la vivienda mediana de esta página (75.000 €) son de 3.000 € a 11.250 €, es decir, de 78.000 € a 86.250 € en total.
 
 Con los mismos porcentajes: sobre 40.000 €, de 1.600 € a 6.000 €; sobre 80.000 €, de 3.200 € a 12.000 €; sobre 150.000 €, de 6.000 € a 22.500 €.
 
@@ -179,18 +179,18 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 ### En qué fijarse antes de comprar
 
 - Un precio bajo tiene un motivo. [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633): Hay que cambiar la caldera (radiadores y tuberías están), y a la casa se llega a pie: el parking público está a unos 200 m y no tiene plaza propia.
-- 23 de los 73 anuncios no indican la superficie, así que su precio por m² no se puede comparar.
+- 23 de los 77 anuncios no indican la superficie, así que su precio por m² no se puede comparar.
 - 1 anuncio indica la cuota mensual de comunidad, de 58 EUR. Súmala a tus gastos anuales.
-- 1 está en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
-- 1 de 73 está donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
-- 2 de 73 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
-- 2 de 73 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
+- 2 están en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
+- 1 de 77 está donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 2 de 77 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
+- 2 de 77 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
 
 ### Preguntas de quienes compran
 
 #### ¿Cuánto cuesta una casa en venta en Italia?
 
-Los precios de venta van de 12.000 € a 197.000 € entre 73 viviendas. La mediana es de 65.000 € (1.150 €/m²).
+Los precios de venta van de 12.000 € a 197.000 € entre 77 viviendas. La mediana es de 75.000 € (1.150 €/m²).
 
 #### ¿Cuál es la casa más barata en venta en Italia?
 
@@ -202,7 +202,7 @@ Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciproc
 
 #### ¿Cuáles son los gastos de compra en Italia?
 
-Alrededor de un 4 a 15 % además del precio: Impuesto de registro del 9% en una segunda vivienda (segunda mano), o IVA en obra nueva; notario 1-2% + abogado ~1% + agente ~3% (GPG, compra y venta: 10-18%). En la vivienda mediana de esta página (65.000 €) son de 2.600 € a 9.750 €. Información general, no asesoramiento fiscal.
+Alrededor de un 4 a 15 % además del precio: Impuesto de registro del 9% en una segunda vivienda (segunda mano), o IVA en obra nueva; notario 1-2% + abogado ~1% + agente ~3% (GPG, compra y venta: 10-18%). En la vivienda mediana de esta página (75.000 €) son de 3.000 € a 11.250 €. Información general, no asesoramiento fiscal.
 
 #### ¿Cuál es la región más barata en Italia?
 
@@ -210,33 +210,33 @@ Entre las regiones con al menos 3 viviendas en RealHunt, Lacio tiene el precio m
 
 ### Más búsquedas en Italia
 
-Por presupuesto [Menos de 20.000 € 5](https://realhunt.co/es/homes/italy/under-20000) [Menos de 30.000 € 13](https://realhunt.co/es/homes/italy/under-30000) [Menos de 40.000 € 22](https://realhunt.co/es/homes/italy/under-40000) [Menos de 50.000 € 32](https://realhunt.co/es/homes/italy/under-50000) [Menos de 80.000 € 40](https://realhunt.co/es/homes/italy/under-80000) [Menos de 100.000 € 49](https://realhunt.co/es/homes/italy/under-100000) [Menos de 150.000 € 61](https://realhunt.co/es/homes/italy/under-150000)
+Por presupuesto [Menos de 20.000 € 5](https://realhunt.co/es/homes/italy/under-20000) [Menos de 30.000 € 13](https://realhunt.co/es/homes/italy/under-30000) [Menos de 40.000 € 22](https://realhunt.co/es/homes/italy/under-40000) [Menos de 50.000 € 32](https://realhunt.co/es/homes/italy/under-50000) [Menos de 80.000 € 40](https://realhunt.co/es/homes/italy/under-80000) [Menos de 100.000 € 49](https://realhunt.co/es/homes/italy/under-100000) [Menos de 150.000 € 65](https://realhunt.co/es/homes/italy/under-150000)
 
-Por entorno [Junto al mar 12](https://realhunt.co/es/homes/italy/by-the-sea) [Casas de pueblo 53](https://realhunt.co/es/homes/italy/village-houses)
+Por entorno [Junto al mar 12](https://realhunt.co/es/homes/italy/by-the-sea) [Casas de pueblo 57](https://realhunt.co/es/homes/italy/village-houses)
 
-Por tipo [Pisos 15](https://realhunt.co/es/homes/italy/apartments) [Casas 45](https://realhunt.co/es/homes/italy/houses)
+Por tipo [Pisos 16](https://realhunt.co/es/homes/italy/apartments) [Casas 48](https://realhunt.co/es/homes/italy/houses)
 
-Por dormitorios [1 dormitorio 22](https://realhunt.co/es/homes/italy/1-bedroom) [2 dormitorios 26](https://realhunt.co/es/homes/italy/2-bedroom) [3 dormitorios 10](https://realhunt.co/es/homes/italy/3-bedroom)
+Por dormitorios [1 dormitorio 22](https://realhunt.co/es/homes/italy/1-bedroom) [2 dormitorios 30](https://realhunt.co/es/homes/italy/2-bedroom) [3 dormitorios 10](https://realhunt.co/es/homes/italy/3-bedroom)
 
-Por región [Toscana 10](https://realhunt.co/es/homes/italy/tuscany) [Calabria 8](https://realhunt.co/es/homes/italy/calabria) [Lacio 7](https://realhunt.co/es/homes/italy/lazio) [Cerdeña 7](https://realhunt.co/es/homes/italy/sardinia) [Umbría 7](https://realhunt.co/es/homes/italy/umbria) [Sicilia 6](https://realhunt.co/es/homes/italy/sicily) [Apulia 5](https://realhunt.co/es/homes/italy/apulia) [Lago de Como 5](https://realhunt.co/es/homes/italy/lake-como) [Lombardía 4](https://realhunt.co/es/homes/italy/lombardy) [Piamonte 4](https://realhunt.co/es/homes/italy/piedmont) [Abruzos 3](https://realhunt.co/es/homes/italy/abruzzo) [Liguria 3](https://realhunt.co/es/homes/italy/liguria)
+Por región [Toscana 12](https://realhunt.co/es/homes/italy/tuscany) [Calabria 8](https://realhunt.co/es/homes/italy/calabria) [Umbría 8](https://realhunt.co/es/homes/italy/umbria) [Lacio 7](https://realhunt.co/es/homes/italy/lazio) [Cerdeña 7](https://realhunt.co/es/homes/italy/sardinia) [Sicilia 6](https://realhunt.co/es/homes/italy/sicily) [Apulia 5](https://realhunt.co/es/homes/italy/apulia) [Lago de Como 5](https://realhunt.co/es/homes/italy/lake-como) [Liguria 4](https://realhunt.co/es/homes/italy/liguria) [Lombardía 4](https://realhunt.co/es/homes/italy/lombardy) [Piamonte 4](https://realhunt.co/es/homes/italy/piedmont) [Abruzos 3](https://realhunt.co/es/homes/italy/abruzzo)
 
 Por zona [Sur de Italia 29](https://realhunt.co/es/homes/italy/southern-italy) [Abruzos y Las Marcas 4](https://realhunt.co/es/homes/italy/abruzzo-and-marche)
 
-Por característica [Cerca de un lago 13](https://realhunt.co/es/cheap-houses/near-a-lake-in-italy) [Con jardín 19](https://realhunt.co/es/cheap-houses/with-garden-in-italy) [Casas de piedra 21](https://realhunt.co/es/cheap-houses/stone-houses-in-italy) [Con terraza 38](https://realhunt.co/es/cheap-houses/with-a-terrace-in-italy) [Para entrar a vivir 15](https://realhunt.co/es/cheap-houses/turnkey-in-italy) [Vistas al mar 12](https://realhunt.co/es/cheap-houses/with-sea-view-in-italy) [Con chimenea 24](https://realhunt.co/es/cheap-houses/with-fireplace-in-italy) [Con garaje 12](https://realhunt.co/es/cheap-houses/with-garage-in-italy) [En una isla 13](https://realhunt.co/es/cheap-houses/on-an-island-in-italy) [De montaña 5](https://realhunt.co/es/cheap-houses/in-the-mountains-in-italy) [Olivos o viñas 4](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-italy) [Cerca de un aeropuerto 18](https://realhunt.co/es/cheap-houses/near-an-airport-in-italy) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-italy) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-italy) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-italy) [Nuevas este mes 26](https://realhunt.co/es/cheap-houses/new-this-month-in-italy) [Nuevas esta semana 19](https://realhunt.co/es/cheap-houses/new-this-week-in-italy) [Elementos de época 13](https://realhunt.co/es/cheap-houses/with-period-features-in-italy) [Buen tiempo 3](https://realhunt.co/es/cheap-houses/good-weather-in-italy) [Zona tranquila 36](https://realhunt.co/es/cheap-houses/quiet-location-in-italy) [Más de 80 m² 24](https://realhunt.co/es/cheap-houses/over-80-sqm-in-italy) [Más de 120 m² 11](https://realhunt.co/es/cheap-houses/over-120-sqm-in-italy)
+Por característica [Cerca de un lago 13](https://realhunt.co/es/cheap-houses/near-a-lake-in-italy) [Con jardín 21](https://realhunt.co/es/cheap-houses/with-garden-in-italy) [Casas de piedra 24](https://realhunt.co/es/cheap-houses/stone-houses-in-italy) [Con terraza 39](https://realhunt.co/es/cheap-houses/with-a-terrace-in-italy) [Para entrar a vivir 18](https://realhunt.co/es/cheap-houses/turnkey-in-italy) [Vistas al mar 12](https://realhunt.co/es/cheap-houses/with-sea-view-in-italy) [Con chimenea 26](https://realhunt.co/es/cheap-houses/with-fireplace-in-italy) [Con garaje 14](https://realhunt.co/es/cheap-houses/with-garage-in-italy) [En una isla 13](https://realhunt.co/es/cheap-houses/on-an-island-in-italy) [De montaña 6](https://realhunt.co/es/cheap-houses/in-the-mountains-in-italy) [Olivos o viñas 4](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-italy) [Cerca de un aeropuerto 21](https://realhunt.co/es/cheap-houses/near-an-airport-in-italy) [Menos de 500 €/m² 5](https://realhunt.co/es/cheap-houses/under-500-per-sqm-in-italy) [Nota 90 o más 8](https://realhunt.co/es/cheap-houses/score-90-plus-in-italy) [Elegidas a mano 10](https://realhunt.co/es/cheap-houses/editors-picks-in-italy) [Nuevas este mes 30](https://realhunt.co/es/cheap-houses/new-this-month-in-italy) [Nuevas esta semana 23](https://realhunt.co/es/cheap-houses/new-this-week-in-italy) [Elementos de época 14](https://realhunt.co/es/cheap-houses/with-period-features-in-italy) [Buen tiempo 3](https://realhunt.co/es/cheap-houses/good-weather-in-italy) [Zona tranquila 41](https://realhunt.co/es/cheap-houses/quiet-location-in-italy) [Edificios singulares 3](https://realhunt.co/es/cheap-houses/unusual-buildings-in-italy) [Más de 80 m² 27](https://realhunt.co/es/cheap-houses/over-80-sqm-in-italy) [Más de 120 m² 12](https://realhunt.co/es/cheap-houses/over-120-sqm-in-italy)
 
 Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-italy) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-italy)
 
 Por característica y presupuesto [Casas, menos de 100.000 € 28](https://realhunt.co/es/cheap-houses/houses-under-100000-in-italy) [Casas de pueblo, menos de 50.000 € 21](https://realhunt.co/es/cheap-houses/village-houses-under-50000-in-italy) [Casas, menos de 50.000 € 19](https://realhunt.co/es/cheap-houses/houses-under-50000-in-italy) [Casas de piedra, menos de 100.000 € 17](https://realhunt.co/es/cheap-houses/stone-houses-under-100000-in-italy) [Pisos, menos de 100.000 € 11](https://realhunt.co/es/cheap-houses/apartments-under-100000-in-italy) [Pisos, menos de 50.000 € 9](https://realhunt.co/es/cheap-houses/apartments-under-50000-in-italy) [Con jardín, menos de 100.000 € 9](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-italy) [Vistas al mar, menos de 150.000 € 8](https://realhunt.co/es/cheap-houses/with-sea-view-under-150000-in-italy) [Vistas al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/with-sea-view-under-100000-in-italy) [Junto al mar, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-italy) [Casas de pueblo, menos de 30.000 € 7](https://realhunt.co/es/cheap-houses/village-houses-under-30000-in-italy) [Para entrar a vivir, menos de 100.000 € 7](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-italy)
 
-En libras y en dólares [Menos de 50.000 dólares 28](https://realhunt.co/es/cheap-houses/under-50000-dollars-in-italy)
+En libras y en dólares [Menos de 100.000 libras 55](https://realhunt.co/es/cheap-houses/under-100000-pounds-in-italy) [Menos de 50.000 dólares 28](https://realhunt.co/es/cheap-houses/under-50000-dollars-in-italy)
 
 Cerca de una ciudad [Cerca de Milán 9](https://realhunt.co/es/cheap-houses/near-milan) [Cerca de Roma 8](https://realhunt.co/es/cheap-houses/near-rome)
 
 Países vecinos [Francia 45](https://realhunt.co/es/homes/france) [Suiza 10](https://realhunt.co/es/homes/switzerland)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
+Por país [España 137](https://realhunt.co/es/homes/spain) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
-Estos anuncios proceden de green-acres.it (29), idealista.it (16), instagram.com (13), immobiliare.it (10), rightmove.co.uk (2). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+Estos anuncios proceden de green-acres.it (33), idealista.it (16), instagram.com (13), immobiliare.it (10), rightmove.co.uk (2). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Italia](https://realhunt.co/es/alerts?country=Italy) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Italy#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Italia](https://realhunt.co/es/sitemap/italy)
 

@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 77 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 77 casas es de 75.000 € (1.167 € por m², calculado con las 52 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 81 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 81 casas es de 80.000 € (1.167 € por m², calculado con las 56 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 77 |
-| Precio de salida mediano | 75.000 € |
-| Precio mediano por m² | 1.167 € (52 casas de superficie conocida) |
+| Casas en RealHunt | 81 |
+| Precio de salida mediano | 80.000 € |
+| Precio mediano por m² | 1.167 € (56 casas de superficie conocida) |
 | Superficie mediana | 80 m² |
 | La más barata y la más cara | 12.000 € · 197.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 77 casas, de mejor a peor nota
+## Las 81 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -349,6 +349,22 @@ Piso con encanto de 2 dormitorios en el pueblo histórico toscano de Montieri. 2
 
 https://realhunt.co/es/deal/DdSm-JkiJem
 
+### Casa de piedra renovada dentro de los muros del Castillo de Gaglietole, Umbría
+
+125.000 € · Gaglietole, Collazzone, Umbria · 125 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Una casa de piedra dentro de los muros del pequeño castillo medieval de Gaglietole, cerca de Collazzone en las colinas entre Perugia y Todi, recientemente renovada y descrita como en excelente estado. Aproximadamente 125 m²: una gran sala de estar, una cocina comedor con estufa de leña, un dormitorio doble y uno individual, un área de estudio y dos cuartos de baño, más un desván al que se accede por una escalera plegable. Las ventanas del dormitorio dan vista a colinas abiertas. Se incluye un único garaje cercano. Aproximadamente 1.000 euros por m² para una casa lista para habitar en un entorno histórico de Umbría, a pocos minutos de tiendas y servicios.
+
+https://realhunt.co/es/deal/it-umbria-collazzone-castle-stone-house-125k
+
+### Casa de pueblo de 1790 renovada con jardín y vistas a las colinas en Ruota, cerca de Lucca
+
+130.000 € · Ruota, Capannori, Tuscany · 95 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Una casa de piedra adosada de 1790 en el pequeño pueblo de montaña de Ruota, completamente renovada en 2015, con vistas sobre las colinas y la llanura de Compitese. Aproximadamente 95 m² en tres plantas: cocina abierta y sala de estar con una chimenea grande, luego un dormitorio doble y uno con dos camas, un rincón de estudio y un cuarto de ducha con claraboya, y una habitación sótano con muro de roca que se abre al jardín privado cerrado. Sin cuotas de condominio, una plaza de aparcamiento en propiedad frente al jardín, y papeles en orden según el anuncio. Lucca está a 20 o 30 minutos y el aeropuerto de Pisa aproximadamente a 45.
+
+https://realhunt.co/es/deal/it-tuscany-capannori-ruota-townhouse-garden-130k
+
 ### Piso de época renovado con techos abovedados en el centro de Acqui Terme, Piamonte
 
 140.000 € · Acqui Terme, Piedmont · 120 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
@@ -477,6 +493,14 @@ Un stazzo tradicional de Gallura en el centro histórico de Luras, al norte de C
 
 https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k
 
+### Casa de piedra renovada con terraza en Arcidosso medieval, Monte Amiata
+
+115.000 € · Arcidosso, Grosseto, Tuscany · 100 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
+
+Una casa completamente renovada con puerta frontal propia en el centro medieval de Arcidosso, un pueblo de montaña animado en las laderas de Monte Amiata en el sur de Toscana. En el interior hay muros de piedra vista, techos con vigas y suelos de terracota: una gran sala de estar con rincón de cocina y chimenea, un estudio, un baño y una terraza utilizable en el nivel inferior, luego un dormitorio doble, un segundo dormitorio pequeño y un segundo baño arriba. La calefacción funciona con gas de red, y se vende amueblada y lista para vivir. Aproximadamente 100 m² por 115.000 euros.
+
+https://realhunt.co/es/deal/it-tuscany-arcidosso-stone-house-terrace-115k
+
 ### Casa urbana de cuatro niveles lista para vivir en Collesano, en las colinas de Madonie cerca de Cefalù
 
 115.000 € · Collesano, Sicily · 200 m² · 4 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
@@ -524,6 +548,14 @@ https://realhunt.co/es/deal/it-tuscany-montaione-renovated-140k
 Una casa independiente en el centro histórico de Iglesias en el suroeste de Cerdeña, aproximadamente 15 minutos en coche desde la costa de Sulcis y la playa de Masua, según el anuncio. Aproximadamente 104 m² con tres dormitorios dobles, cada uno con su propio baño, además de un salón y una cocina americana. El propietario lista ventanas y puertas nuevas, bombas de calor para calefacción y refrigeración, muebles hechos por carpintero y una escalera de hierro forjado. Se vende completamente amueblada y equipada, lista para entrar. Luz desde dos fachadas a la calle. Listado por el propietario.
 
 https://realhunt.co/es/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
+
+### Piso de planta baja con jardín orientado al sur de 225 m² en Savignone, Liguria
+
+104.000 € · Savignone, Genoa, Liguria · 75 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+
+Una venta privada de un piso de 75 m² con entrada propia en un edificio de nueve unidades en Savignone, un pueblo verde en las colinas detrás de Génova, a 600 m de la plaza principal. Lo mejor es un jardín orientado al sur de 225 m² con pérgola de viña y vistas a la montaña, más una veranda cubierta de 14 m². En el interior hay una sala de estar grande, una cocina americana, un dormitorio doble, un baño y una segunda habitación para dormitorio o estudio. Se describe como en excelentes condiciones, con calefacción propia, y mayormente amueblado. El vendedor dice que las cuotas de administración son bajas pero no da cifra.
+
+https://realhunt.co/es/deal/it-liguria-savignone-garden-flat-mountain-views-104k
 
 ### Casa de ladrillo restaurada con patio en el centro antiguo de Amandola, Le Marche
 

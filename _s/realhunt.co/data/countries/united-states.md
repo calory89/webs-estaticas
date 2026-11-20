@@ -1,6 +1,6 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 59 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 59 homes is €214,100 (€1,580 per m², from the 59 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 20 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 59 |
-| Median asking price | €214,100 |
-| Median price per m² | €1,580 (59 homes with a known size) |
-| Median size | 118 m² |
+| Homes on RealHunt | 62 |
+| Median asking price | €214,900 |
+| Median price per m² | €1,570 (62 homes with a known size) |
+| Median size | 121 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 59 homes, best score first
+## The 62 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -114,6 +114,14 @@ Asking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in th
 
 https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k
 
+### Wooded raised ranch with cedar ceilings across the road from Lake Huron, Alpena
+
+€227,700 · Alpena, Michigan · 172 m² · 2 bedrooms · RealHunt score 90 · added 2026-11-20
+
+Asking US$250,000 (about €227,700). A 2006 raised ranch of 172 m² on nearly half an acre of woodland, with Lake Huron and a sandy swimming beach just across the road. The open living, dining and kitchen area sits under a cathedral ceiling of white cedar boards, with a wood stove, red oak cabinets and a large kitchen island. There are two bedrooms and two full bathrooms, with room to add a third bedroom. It has in-floor heating, an insulated foundation and a very large heated garage for cars, a boat or a workshop. Property tax US$1,420 a year. HOA US$150 a year for road upkeep and snow clearing.
+
+https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k
+
 ### Blue 1907 cottage with 9-foot ceilings and a new kitchen
 
 €79,200 · Freeport, Illinois · 83 m² · 2 bedrooms · RealHunt score 89 · added 2026-10-05
@@ -129,6 +137,14 @@ https://realhunt.co/deal/us-freeport-83k-605154
 116 m² (1,248 sq ft), 3 bed, 2 bath, built 1938. Asking $98,500. The listing mentions: large deck, spacious updated kitchen, ample closet space, full common bath.
 
 https://realhunt.co/deal/clairton-85929
+
+### Fully restored 1940s cottage with a deep front porch on a corner lot in Hot Springs
+
+€182,100 · Hot Springs, Arkansas · 117 m² · 2 bedrooms · RealHunt score 89 · added 2026-11-20
+
+Asking US$199,900 (about €182,100). A 1940 house on a corner lot under tall oak trees, fully restored with all new plumbing and wiring. It keeps its hardwood floors and deep covered front porch, and the living room, dining room and kitchen flow into one another. The kitchen is new, with white cabinets, granite worktops, open shelving and stainless steel appliances. The main bedroom has its own bathroom with a tiled walk-in shower, and there is a second bedroom and a guest bathroom. The back garden is fully fenced and there is a one-car carport. Washer, dryer and fridge are included. Property tax US$820 a year, no HOA.
+
+https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k
 
 ### Three-bedroom house with a big fenced yard near the Mississippi in Red Wing
 
@@ -161,6 +177,14 @@ https://realhunt.co/deal/us-dora-84k-329130
 Asking US$235,000 (about €214,100) for a house of about 127 m² in La Crosse, a university city on the Mississippi River in western Wisconsin. Built in 1889, it has been updated from top to bottom: a new kitchen with white shaker units, subway tiles and a gas range, stylish new bathrooms including a marble-look shower, light wood-look floors and an open living and dining area. The advert lists four bedrooms. There is a front porch, a fenced side lawn and room behind for a patio or a future garage. Yearly property tax US$2,903, no HOA fee.
 
 https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k
+
+### Renovated four-bedroom house with new roof, kitchen and baths in Sandusky, Lake Erie
+
+€214,900 · Sandusky, Ohio · 139 m² · 4 bedrooms · RealHunt score 88 · added 2026-11-20
+
+Asking US$236,000 (about €214,900). A 1920 house of 139 m² in the Lake Erie town of Sandusky, redone and ready to move into. The work list includes new siding, windows, roof, gutters, drywall, paint, flooring and lighting, an updated electrical system and partly updated plumbing. The kitchen has new cabinets, granite worktops and new appliances, and both bathrooms are new with glass walk-in showers. There are four bedrooms, one with extra attic storage behind the closet. Outside is a large composite deck, a big back garden and a storage shed. Property tax US$1,128 a year, no HOA.
+
+https://realhunt.co/deal/us-sandusky-oh-renovated-four-bed-house-deck-236k
 
 ### Well-kept 1899 house with a new double garage near Chester Park in Duluth
 

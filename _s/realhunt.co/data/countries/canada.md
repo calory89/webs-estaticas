@@ -1,6 +1,6 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 14 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 14 homes is €99,323 (€963 per m², from the 14 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 20 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/canada · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 14 |
-| Median asking price | €99,323 |
-| Median price per m² | €963 (14 homes with a known size) |
-| Median size | 107 m² |
+| Homes on RealHunt | 16 |
+| Median asking price | €99,500 |
+| Median price per m² | €963 (16 homes with a known size) |
+| Median size | 124 m² |
 | Cheapest and most expensive | €55,842 · €190,700 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
@@ -51,7 +51,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/canada
 
-## The 14 homes, best score first
+## The 16 homes, best score first
 
 ### Updated 2-bed house in Glace Bay, Nova Scotia
 
@@ -68,6 +68,14 @@ https://realhunt.co/deal/glace-bay-86962
 A well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso. Updated kitchen, 200-amp electrics and new plumbing; about 215 m² in total. Asking price CAD 144,500. That is about €90,400. Canada's ban on foreign buyers applies in cities and towns of 10,000+ people until 1 January 2027; ask the agent whether it applies here.
 
 https://realhunt.co/deal/ca-mulgrave-90k-623450
+
+### Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland
+
+€123,400 · Twillingate, Newfoundland · 203 m² · 5 bedrooms · RealHunt score 90 · added 2026-11-20
+
+Asking C$194,000 (about €123,400), under €610 per m². A roomy 203 m² house in the outport town of Twillingate, in Newfoundland's Iceberg Alley, known for iceberg and whale watching. It has had major renovations: complete rewiring with 200-amp service, electric heat throughout, a mini-split heat pump and an updated kitchen with new white cabinets. There are five bedrooms, each with its own private bathroom, plus a half bath, a living room and two dining areas. It was run as a bed and breakfast and is sold fully furnished. Outside are a lawn, a 14 x 20 ft storage shed and a traditional root cellar. Property tax C$1,200 a year.
+
+https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k
 
 ### Updated 2-bed house in Bulyea, Saskatchewan
 
@@ -148,6 +156,14 @@ https://realhunt.co/deal/minto-99323
 Asking C$220,000 (about €140,000) for a 1935 house of about 155 m², a few minutes from downtown Liverpool, a harbour town on Nova Scotia's South Shore about 90 minutes from Halifax. Much of the work is done: refinished original wood floors, a renovated kitchen with custom cabinets, wooden worktops and a cast-iron farmhouse sink, replastered and painted walls, updated wiring and plumbing, new gutters and a certified wood stove in the newly insulated living room. There is a bathroom with shower downstairs, a new half bath upstairs and a flexible two-plus-one bedroom layout. Outside are a large workshop and a stocked woodshed.
 
 https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k
+
+### Four-bed heritage house with tin ceilings and flower gardens in downtown Summerside
+
+€190,700 · Summerside, Prince Edward Island · 156 m² · 4 bedrooms · RealHunt score 82 · added 2026-11-20
+
+Asking C$299,900 (about €190,700). A historic house of 156 m² in Summerside's Downtown Heritage District, close to the shops, restaurants and waterfront. It keeps its hardwood and softwood floors, Douglas fir trim, decorative tin ceilings and built-in cabinets. The main floor has a living room with a propane stove, a formal dining room, a large eat-in kitchen, laundry, two bedrooms and a family room with a cathedral ceiling, a pellet stove and garden doors to the rear deck. Upstairs are two more bedrooms and a bathroom with a claw-foot tub. Mature trees and flower gardens surround it. Property tax C$2,218 a year.
+
+https://realhunt.co/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k
 
 ### Four-bedroom house on about five acres in Saint Andrews, New Brunswick
 

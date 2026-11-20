@@ -33,10 +33,10 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 - [€80,920 · 3-bed apartment near the beach in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-80920) · Mazatlán, Sinaloa · score 90 · 71 m² · 3 bed
 - [€64,230 · 2-bed house in Zapopan, Jalisco](https://realhunt.co/deal/zapopan-64230) · Zapopan, Jalisco · score 90 · 125 m² · 2 bed
 - [€70,805 · 2-bed house in Tonalá, Jalisco](https://realhunt.co/deal/tonala-70805) · Tonalá, Jalisco · score 89 · 65 m² · 2 bed
+- [€195,300 · Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) · El Tepehuaje, Tuxcueca, Jalisco · score 88 · 245 m² · 5 bed
 - [€68,984 · 3-bed apartment in Cuautlancingo, Puebla](https://realhunt.co/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · score 87 · 78 m² · 3 bed
-- [€86,100 · New 2-bed condo with rooftop and terrace in Mazatlán, ready now](https://realhunt.co/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · score 86 · 68 m² · 2 bed
 
-[All 14 homes in Mexico](https://realhunt.co/homes/mexico)
+[All 15 homes in Mexico](https://realhunt.co/homes/mexico)
 
 [Costs, taxes and sources for Mexico](https://realhunt.co/costs/mexico) · [Buying-cost calculator for Mexico](https://realhunt.co/buying-costs/mexico) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

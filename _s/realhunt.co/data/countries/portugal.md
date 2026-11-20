@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 19 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 19 homes is €125,000 (€1,352 per m², from the 19 homes with a known size); the cheapest costs €48,000 and the most expensive €183,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 20 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 19 |
-| Median asking price | €125,000 |
-| Median price per m² | €1,352 (19 homes with a known size) |
-| Median size | 100 m² |
-| Cheapest and most expensive | €48,000 · €183,000 |
-| Median RealHunt score (70 to 98) | 91 |
+| Homes on RealHunt | 21 |
+| Median asking price | €130,000 |
+| Median price per m² | €1,364 (21 homes with a known size) |
+| Median size | 96 m² |
+| Cheapest and most expensive | €48,000 · €189,000 |
+| Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
 | Can foreigners buy? | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025). |
 | Yearly property tax | IMI 0.3-0.45% of taxable value (urban), set by municipality. |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 19 homes, best score first
+## The 21 homes, best score first
 
 ### Restored single-storey Alentejo house with reed ceilings near Mértola
 
@@ -173,6 +173,22 @@ https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k
 A granite village house rebuilt inside from top to bottom, about 5 km from the town of Tábua. The advert lists new windows, doors and shutters, new wiring and plumbing, rock-wool insulation on the inner walls, recessed lighting and a new fitted kitchen, so there is nothing left to do. Ground floor with open kitchen, living room and WC, and a first floor with three bedrooms, a full bathroom and a spare room for laundry or office. About 142 m2 of built area, 125 m2 useful. Energy class C, which is unusual for a stone house at this price.
 
 https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k
+
+### Three-bedroom village house with terrace and Serra da Lousã views near Penacova
+
+€189,000 · Paradela da Cortiça, Penacova, Coimbra · 95 m² · 3 bedrooms · RealHunt score 80 · added 2026-11-20
+
+A neat three-storey village house in Paradela da Cortiça with an open view of the Serra da Lousã. It keeps its original doors, wooden ceilings and floors and granite details, with aluminium windows. The main floor has a kitchen with open fireplace and dining area, a living room with balcony, three bedrooms and a full bathroom, opening onto a terrace and garden. Below are a garage and a workshop, above a large attic, and outside a shed with barbecue and wood oven. Shops are 5 to 10 minutes away, several river beaches 20 to 30 minutes, and Coimbra about 45 minutes. Energy class F.
+
+https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k
+
+### Two-bedroom house with fenced garden and river views near Marvão, Alentejo
+
+€140,000 · Ponte Velha, Marvão, Portalegre · 70 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-20
+
+A bright 70 m2 house in the quiet Ponte Velha area below Marvão, with river and mountain views, on a fully fenced 476 m2 plot with grapevines, olive trees and a persimmon tree. Two double bedrooms, a living room with a pellet stove, a kitchen with gas oven and a new water heater, and one bathroom, dated but clean. Two annexes could become a separate small unit. The advert puts the river pool and cafes of Portagem 5 minutes away, Marvão and Castelo de Vide 15 minutes, and says the licence and land registry papers are ready. The portal files it under Pernes; the text places it near Marvão.
+
+https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k
 
 ### Renovated furnished cottage on 860 m2 of land in Lajes do Pico, Azores
 

@@ -1,6 +1,6 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 190 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 190 casas es de 97.000 € (1.217 € por m², calculado con las 186 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 191 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 191 casas es de 97.000 € (1.217 € por m², calculado con las 187 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 190 |
+| Casas en RealHunt | 191 |
 | Precio de salida mediano | 97.000 € |
-| Precio mediano por m² | 1.217 € (186 casas de superficie conocida) |
+| Precio mediano por m² | 1.217 € (187 casas de superficie conocida) |
 | Superficie mediana | 85 m² |
 | La más barata y la más cara | 38.000 € · 348.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/spain
 
-## Las 190 casas, de mejor a peor nota
+## Las 191 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios con terraza en Alpujarra de la Sierra
 
@@ -1415,6 +1415,14 @@ https://realhunt.co/es/deal/es-moguer-98k-75562
 Dúplex impecable en un edificio de 2009 en Robledondo, un pueblo de montaña de la Sierra Oeste de Madrid rodeado de naturaleza: salón comedor luminoso con grandes ventanales abajo, y arriba dos dormitorios y dos baños completos (uno en suite) con vistas abiertas al campo. 96 m².
 
 https://realhunt.co/es/deal/es-robledondo-169k-614624
+
+### Dúplex de esquina de dos dormitorios con terraza con vistas a las montañas en Alcalá de la Selva
+
+177.000 € · Alcalá de la Selva, Teruel · 112 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
+
+Un dúplex de esquina construido en 2009 en Alcalá de la Selva, una aldea de montaña en Teruel a unos 10 minutos de las pistas de esquí de Valdelinares y a una hora de Valencia. Tiene 112 m² construidos, 95 m² útiles, con dos dormitorios con armarios empotrados, un cuarto de baño con bañera, un aseo de visitas, una cocina equipada y una sala de estar con inserto de chimenea. La terraza orientada al este tiene amplias vistas de las colinas cubiertas de pinos. Se incluyen un ascensor, una plaza de aparcamiento cubierta y un trastero. Las fotos muestran un interior moderno y bien cuidado, listo para entrar a vivir. Las cuotas de comunidad no se indican en el anuncio.
+
+https://realhunt.co/es/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k
 
 ### Casa de cuatro dormitorios reformada con terraza en Palmete, Sevilla
 

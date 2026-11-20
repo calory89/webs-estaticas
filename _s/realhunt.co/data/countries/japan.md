@@ -1,6 +1,6 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 35 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 35 homes is €44,160 (€427 per m², from the 19 homes with a known size); the cheapest costs €7,400 and the most expensive €107,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 20 November 2026, RealHunt lists 36 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 36 homes is €49,680 (€463 per m², from the 20 homes with a known size); the cheapest costs €7,400 and the most expensive €142,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/japan · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 35 |
-| Median asking price | €44,160 |
-| Median price per m² | €427 (19 homes with a known size) |
-| Median size | 88 m² |
-| Cheapest and most expensive | €7,400 · €107,500 |
+| Homes on RealHunt | 36 |
+| Median asking price | €49,680 |
+| Median price per m² | €463 (20 homes with a known size) |
+| Median size | 91 m² |
+| Cheapest and most expensive | €7,400 · €142,500 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency. |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/japan
 
-## The 35 homes, best score first
+## The 36 homes, best score first
 
 ### Mountain chalet with a wood stove and a loft in the Hida forest
 
@@ -291,6 +291,14 @@ A pure Japanese-style single-story home with a wide engawa opening onto its own 
 
 https://realhunt.co/deal/DbA4_hKEThx
 
+### Japanese-style one-floor house from 2016 on a big corner plot near Kaike, Yonago
+
+€142,500 · Kaike-Shinden, Yonago, Tottori · 140 m² · 4 bedrooms · RealHunt score 81 · added 2026-11-20
+
+Asking ¥25,000,000 (about €142,500). A wooden house finished in October 2016 in Kaike-Shinden, Yonago, a short drive from the Kaike hot-spring resort and its beach on the Sea of Japan. The advert describes it as a one-floor home without stairs: 140 m² with a dining kitchen, a western-style room and three tatami rooms, including a 10-mat room with a tokonoma alcove, plus a bathroom with a window, two toilets and a sunny wooden veranda corridor. All-electric. It stands on a 510 m² freehold corner plot with roads on three sides, parking for three or more cars and a separate 33 m² storage garage. Empty, handover at once.
+
+https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
+
 ### House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie
 
 €84,500 · Ago-cho Tategami, Shima, Mie · 106 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-18
@@ -307,13 +315,13 @@ A two-storey wooden house finished in December 2004 in Moroiso, on the Misaki si
 
 https://realhunt.co/deal/jp-miura-misaki-four-bed-house-2004-80k
 
-### Bright four-bedroom house from 2014 on Mukaishima island, Onomichi, Hiroshima
+### Modern three-bedroom house from 2015 with a double-height living room in Yakumo, Matsue
 
-€107,500 · Mukaishima, Onomichi, Hiroshima · 104 m² · 4 bedrooms · RealHunt score 78 · added 2026-11-20
+€125,400 · Yakumo-cho Hiyoshi, Matsue, Shimane · 96 m² · 3 bedrooms · RealHunt score 77 · added 2026-11-20
 
-A two-storey wooden house built in January 2014 on Mukaishima, the island facing Onomichi across a narrow strait of the Seto Inland Sea. 103.5 m² with four bedrooms, a south-facing living, dining and kitchen room opening onto a tatami room, a walk-in wardrobe and a covered drying area, on a 183 m² freehold plot with parking for four cars. The house is empty and may also be used as a small office. Onomichi station is 5.4 km away, about 13 minutes by bus. Mains water reaches the plot through a neighbour's land. Asking ¥18,800,000 (about €107,500), roughly €1,040/m².
+Asking ¥21,990,000 (about €125,400). A two-storey wooden house finished in January 2015 in Yakumo-cho Hiyoshi, a quiet residential area in the green hills south of Matsue, the castle city of Shimane. 96 m² with a bright living, dining and kitchen room of about 20 tatami under a double-height ceiling, a modern fitted kitchen, a bathroom with a window and three bedrooms upstairs, on a 168 m² freehold plot with a lawn garden and parking for three cars. The house is empty and sold directly by the owning company, which is refreshing it now. JR Iya station is 7.2 km away.
 
-https://realhunt.co/deal/jp-onomichi-mukaishima-2014-house-108k
+https://realhunt.co/deal/jp-matsue-yakumo-modern-2015-house-garden-125k
 
 ### Mt. Fuji cabin with sauna deck, cold plunge and a guest cabin
 

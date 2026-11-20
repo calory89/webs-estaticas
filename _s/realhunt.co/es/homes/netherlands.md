@@ -2,7 +2,7 @@
 
 Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 13 de octubre de 2026.
 
-RealHunt tiene hoy 18 pisos en venta en los Países Bajos, con precios de 299.000 € a 339.500 €. La más barata cuesta 299.000 €: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619), en Reigersbos (73 m², 2 dormitorios). El precio mediano es de 325.000 € (4.286 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+RealHunt tiene hoy 18 pisos en venta en los Países Bajos, con precios de 299.000 € a 339.500 €. La más barata cuesta 299.000 €: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619), en Reigersbos (73 m², 2 dormitorios). El precio mediano es de 325.000 € (4.286 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
 
 Viviendas
 18
@@ -134,7 +134,7 @@ Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/b
 
 Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
+Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
 Estos anuncios proceden de funda.nl (18). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

@@ -33,10 +33,10 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [80.920 € · Piso de 3 dormitorios cerca de la playa en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-80920) · Mazatlán, Sinaloa · nota 90 · 71 m² · 3 dorm.
 - [64.230 € · Casa de 2 dormitorios en Zapopan, Jalisco](https://realhunt.co/es/deal/zapopan-64230) · Zapopan, Jalisco · nota 90 · 125 m² · 2 dorm.
 - [70.805 € · Casa de 2 dormitorios en Tonalá, Jalisco](https://realhunt.co/es/deal/tonala-70805) · Tonalá, Jalisco · nota 89 · 65 m² · 2 dorm.
+- [195.300 € · Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) · El Tepehuaje, Tuxcueca, Jalisco · nota 88 · 245 m² · 5 dorm.
 - [68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · nota 87 · 78 m² · 3 dorm.
-- [86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · nota 86 · 68 m² · 2 dorm.
 
-[Las 14 casas en México](https://realhunt.co/es/homes/mexico)
+[Las 15 casas en México](https://realhunt.co/es/homes/mexico)
 
 [Gastos, impuestos y fuentes de México](https://realhunt.co/es/costs/mexico) · [Calculadora de gastos de compra para México](https://realhunt.co/es/buying-costs/mexico) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

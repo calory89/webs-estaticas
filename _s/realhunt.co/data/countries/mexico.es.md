@@ -1,6 +1,6 @@
 # Casas baratas en México: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 14 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 14 casas es de 86.100 € (1.266 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 216.600 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 15 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 15 casas es de 86.100 € (1.140 € por m², calculado con las 15 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 216.600 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/mexico · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 14 |
+| Casas en RealHunt | 15 |
 | Precio de salida mediano | 86.100 € |
-| Precio mediano por m² | 1.266 € (14 casas de superficie conocida) |
+| Precio mediano por m² | 1.140 € (15 casas de superficie conocida) |
 | Superficie mediana | 75 m² |
 | La más barata y la más cara | 50.575 € · 216.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/mexico
 
-## Las 14 casas, de mejor a peor nota
+## Las 15 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco
 
@@ -81,6 +81,14 @@ https://realhunt.co/es/deal/mazatlan-80920
 65 m², 2 dormitorios. Precio: 1.400.000 MXN. El anuncio menciona: jardín, aparcamiento.
 
 https://realhunt.co/es/deal/tonala-70805
+
+### Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje
+
+195.300 € · El Tepehuaje, Tuxcueca, Jalisco · 245 m² · 5 dormitorios · nota RealHunt 88 · añadida el 2026-11-20
+
+Se pide MX$4.080.000 (aproximadamente €195.300). Una casa de 8 años de antigüedad de 245 m² en una parcela de 514 m² en la aldea de El Tepehuaje, en la orilla sur del Lago Chapala y a aproximadamente una hora de Guadalajara. Tiene ventanas arqueadas, muros de piedra y techos abovedados de ladrillo, una sala y comedor con chimenea de doble cara y una cocina con barra de desayuno. Hay cinco dormitorios, cada uno con su propio cuarto de baño completo; el principal tiene vista al lago, zona de estar y jacuzzi. Una gran terraza en la azotea con vistas al lago, y hay un patio con una hoguera, área de asador y aparcamiento para dos coches.
+
+https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m
 
 ### Piso de 3 dormitorios en Cuautlancingo, Puebla
 

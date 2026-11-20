@@ -1,6 +1,6 @@
 # Casas baratas en Canadá: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 14 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 14 casas es de 99.323 € (963 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 16 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 16 casas es de 99.500 € (963 € por m², calculado con las 16 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 14 |
-| Precio de salida mediano | 99.323 € |
-| Precio mediano por m² | 963 € (14 casas de superficie conocida) |
-| Superficie mediana | 107 m² |
+| Casas en RealHunt | 16 |
+| Precio de salida mediano | 99.500 € |
+| Precio mediano por m² | 963 € (16 casas de superficie conocida) |
+| Superficie mediana | 124 m² |
 | La más barata y la más cara | 55.842 € · 190.700 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 1,5–4% del precio (cifras de 2026) |
@@ -51,7 +51,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/canada
 
-## Las 14 casas, de mejor a peor nota
+## Las 16 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia
 
@@ -68,6 +68,14 @@ https://realhunt.co/es/deal/glace-bay-86962
 Casa de 1949 bien cuidada en Mulgrave, Nueva Escocia, con tres dormitorios, baño y medio y vistas preciosas al estrecho de Canso. Cocina reformada, electricidad de 200 A y fontanería nueva; unos 215 m² en total. Precio: 144.500 CAD. Unos 90.400 €. La prohibición de Canadá a compradores extranjeros se aplica en ciudades y pueblos de más de 10.000 habitantes hasta el 1 de enero de 2027; pregunta a la agencia si afecta a esta zona.
 
 https://realhunt.co/es/deal/ca-mulgrave-90k-623450
+
+### Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova
+
+123.400 € · Twillingate, Newfoundland · 203 m² · 5 dormitorios · nota RealHunt 90 · añadida el 2026-11-20
+
+Se pide C$194.000 (aproximadamente €123.400), menos de €610 por m². Una casa espaciosa de 203 m² en la localidad de Twillingate, en Iceberg Alley de Terranova, conocida por la observación de icebergs y ballenas. Ha tenido renovaciones importantes: recableado completo con servicio de 200 amperios, calefacción eléctrica en toda la casa, una bomba de calor mini-split y una cocina actualizada con nuevos armarios blancos. Tiene cinco dormitorios, cada uno con su propio cuarto de baño privado, más un medio baño, una sala de estar y dos comedores. Se usó como alojamiento y desayuno y se vende completamente amueblada. En el exterior hay un césped, un trastero de 14 x 20 pies y una bodega tradicional. Impuesto sobre la propiedad C$1.200 al año.
+
+https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k
 
 ### Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan
 
@@ -148,6 +156,14 @@ https://realhunt.co/es/deal/minto-99323
 Se pide C$220,000 (aproximadamente €140,000) por una casa de 1935 de aproximadamente 155 m², a pocos minutos del centro de Liverpool, un pueblo portuario en la costa sur de Nueva Escocia a unos 90 minutos de Halifax. La mayor parte del trabajo está hecho: suelos de madera original restaurados, cocina renovada con armarios personalizados, encimeras de madera y fregadero tipo granja de hierro fundido, paredes replasadas y pintadas, instalación eléctrica y tuberías actualizadas, canaletas nuevas y estufa de leña certificada en la sala de estar recientemente aislada. Hay un cuarto de baño con ducha en la planta baja, un nuevo medio baño arriba y un flexible diseño de dos dormitorios más uno. En el exterior hay un taller grande y una leñera bien surtida.
 
 https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k
+
+### Casa histórica de cuatro dormitorios con techos de hojalata y jardines de flores en el centro de Summerside
+
+190.700 € · Summerside, Prince Edward Island · 156 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
+
+Se pide C$299.900 (aproximadamente €190.700). Una casa histórica de 156 m² en el Distrito de Patrimonio del Centro de Summerside, cerca de las tiendas, restaurantes y frente al agua. Conserva sus pisos de madera dura y blanda, moldura de abeto de Oregón, techos decorativos de hojalata y armarios empotrados. La planta principal tiene una sala de estar con una estufa de propano, un comedor formal, una gran cocina comedor, lavadero, dos dormitorios y una sala familiar con techo abovedado, una estufa de pellets y puertas al jardín que dan a la terraza trasera. En el piso superior hay dos dormitorios más y un cuarto de baño con una bañera con patas. Árboles maduros y jardines de flores la rodean. Impuesto sobre la propiedad C$2.218 al año.
+
+https://realhunt.co/es/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k
 
 ### Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo Brunswick
 

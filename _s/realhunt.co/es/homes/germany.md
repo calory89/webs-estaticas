@@ -2,7 +2,7 @@
 
 Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 21 pisos en venta en Alemania, con precios de 40.000 € a 199.000 €. La más barata cuesta 40.000 €: [Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisión](https://realhunt.co/es/deal/de-chemnitz-40k-587336), en Sonnenberg (41 m²). El precio mediano es de 55.000 € (1.053 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+RealHunt tiene hoy 21 pisos en venta en Alemania, con precios de 40.000 € a 199.000 €. La más barata cuesta 40.000 €: [Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisión](https://realhunt.co/es/deal/de-chemnitz-40k-587336), en Sonnenberg (41 m²). El precio mediano es de 55.000 € (1.053 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
 
 Viviendas
 21
@@ -120,7 +120,7 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 ### En qué fijarse antes de comprar
 
 - 1 está en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
-- 2 de 21 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
+- 3 de 21 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
 - En conjunto, estas viviendas puntúan más bajo en espacio (16/100 de media) y más alto en estado para entrar a vivir (84/100).
 
 ### Preguntas de quienes compran
@@ -159,7 +159,7 @@ En libras y en dólares [Menos de 50.000 libras 16](https://realhunt.co/es/cheap
 
 Países vecinos [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Francia 45](https://realhunt.co/es/homes/france) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Polonia 31](https://realhunt.co/es/homes/poland) [Dinamarca 46](https://realhunt.co/es/homes/denmark)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
+Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
 Estos anuncios proceden de kleinanzeigen.de (20), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

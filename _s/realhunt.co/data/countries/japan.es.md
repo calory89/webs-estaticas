@@ -1,6 +1,6 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 35 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 35 casas es de 44.160 € (427 € por m², calculado con las 19 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 107.500 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 36 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 36 casas es de 49.680 € (463 € por m², calculado con las 20 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 142.500 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 35 |
-| Precio de salida mediano | 44.160 € |
-| Precio mediano por m² | 427 € (19 casas de superficie conocida) |
-| Superficie mediana | 88 m² |
-| La más barata y la más cara | 7.400 € · 107.500 € |
+| Casas en RealHunt | 36 |
+| Precio de salida mediano | 49.680 € |
+| Precio mediano por m² | 463 € (20 casas de superficie conocida) |
+| Superficie mediana | 91 m² |
+| La más barata y la más cara | 7.400 € · 142.500 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia. |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/japan
 
-## Las 35 casas, de mejor a peor nota
+## Las 36 casas, de mejor a peor nota
 
 ### Chalet de montaña con estufa de leña y altillo en el bosque de Hida
 
@@ -291,6 +291,14 @@ Una auténtica casa de estilo japonés de una sola planta con un amplio engawa q
 
 https://realhunt.co/es/deal/DbA4_hKEThx
 
+### Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, Yonago
+
+142.500 € · Kaike-Shinden, Yonago, Tottori · 140 m² · 4 dormitorios · nota RealHunt 81 · añadida el 2026-11-20
+
+Pidiendo ¥25.000.000 (aproximadamente 142.500 euros). Una casa de madera terminada en octubre de 2016 en Kaike-Shinden, Yonago, a corta distancia en coche del complejo de aguas termales de Kaike y su playa en el Mar de Japón. El anuncio la describe como una casa de una planta sin escaleras: 140 m² con cocina de comedor, una habitación de estilo occidental y tres habitaciones de tatami, incluyendo una habitación de 10 esteras con alcoba tokonoma, más un baño con ventana, dos aseos y un corredor de veranda de madera soleado. Todo eléctrico. Se encuentra en una parcela de esquina en régimen de plena propiedad de 510 m² con calles en tres lados, aparcamiento para tres o más coches y un garaje de almacén separado de 33 m². Vacía, entrega inmediata.
+
+https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
+
 ### Casa construida en 2018 en una parcela de 1.181 m² cerca del mar en Shima, Mie
 
 84.500 € · Ago-cho Tategami, Shima, Mie · 106 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
@@ -307,13 +315,13 @@ Una casa de madera de dos plantas terminada en diciembre de 2004 en Moroiso, en 
 
 https://realhunt.co/es/deal/jp-miura-misaki-four-bed-house-2004-80k
 
-### Casa luminosa de cuatro dormitorios de 2014 en la isla Mukaishima, Onomichi, Hiroshima
+### Casa moderna de tres dormitorios de 2015 con sala de doble altura en Yakumo, Matsue
 
-107.500 € · Mukaishima, Onomichi, Hiroshima · 104 m² · 4 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+125.400 € · Yakumo-cho Hiyoshi, Matsue, Shimane · 96 m² · 3 dormitorios · nota RealHunt 77 · añadida el 2026-11-20
 
-Una casa de madera de dos plantas construida en enero de 2014 en Mukaishima, la isla que mira a Onomichi a través de un estrecho brazo del Mar Interior de Seto. 103,5 m² con cuatro dormitorios, una zona de salón, comedor y cocina orientada al sur que se abre a una habitación tatami, un vestidor y un área cubierta para secar, en una parcela de 183 m² en dominio absoluto con aparcamiento para cuatro coches. La casa está vacía y también puede usarse como una pequeña oficina. La estación de Onomichi está a 5,4 km, aproximadamente 13 minutos en autobús. El agua de la red llega a la parcela a través de un terreno vecino. Pidiendo 18.800.000 yenes (aproximadamente 107.500 euros), aproximadamente 1.040 euros/m².
+Se pide ¥21.990.000 (aproximadamente €125.400). Una casa de madera de dos plantas terminada en enero de 2015 en Yakumo-cho Hiyoshi, un área residencial tranquila en las colinas verdes al sur de Matsue, la ciudad castillo de Shimane. 96 m² con una sala, comedor y cocina luminosos de aproximadamente 20 tatami bajo un techo de doble altura, una cocina moderna equipada, un cuarto de baño con ventana y tres dormitorios en el piso superior, en una parcela de 168 m² en propiedad absoluta con jardín con césped y aparcamiento para tres coches. La casa está vacía y se vende directamente por la empresa propietaria, que actualmente la está renovando. La estación de JR Iya está a 7,2 km de distancia.
 
-https://realhunt.co/es/deal/jp-onomichi-mukaishima-2014-house-108k
+https://realhunt.co/es/deal/jp-matsue-yakumo-modern-2015-house-garden-125k
 
 ### Cabaña en el monte Fuji con terraza para sauna, baño de agua fría y cabaña de invitados
 

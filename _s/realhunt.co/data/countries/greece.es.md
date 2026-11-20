@@ -1,6 +1,6 @@
 # Casas baratas en Grecia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 24 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 24 casas es de 155.000 € (1.465 € por m², calculado con las 23 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
+A 20 de noviembre de 2026, RealHunt publica 27 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 27 casas es de 155.000 € (1.477 € por m², calculado con las 26 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 24 |
+| Casas en RealHunt | 27 |
 | Precio de salida mediano | 155.000 € |
-| Precio mediano por m² | 1.465 € (23 casas de superficie conocida) |
-| Superficie mediana | 82 m² |
+| Precio mediano por m² | 1.477 € (26 casas de superficie conocida) |
+| Superficie mediana | 85 m² |
 | La más barata y la más cara | 68.000 € · 199.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 87 |
+| Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 5,5–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los compradores de fuera de la UE y EFTA necesitan un permiso para comprar en zonas fronterizas designadas (partes del norte de Grecia e islas del Egeo oriental como el Dodecaneso y Rodas). El gobierno ha anunciado un impuesto de transferencia del 15% para compradores no comunitarios de viviendas a partir del 1 de enero de 2027, aún no definitivo en septiembre de 2026. |
 | Impuesto anual sobre la vivienda | Quienes son propietarios a 1 de enero pagan el impuesto unificado sobre la propiedad (ENFIA), calculado por inmueble según su ubicación, superficie, antigüedad y valor oficial de la zona, con un recargo si el total de inmuebles en Grecia supera 500.000 €. |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/greece
 
-## Las 24 casas, de mejor a peor nota
+## Las 27 casas, de mejor a peor nota
 
 ### Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia
 
@@ -87,6 +87,14 @@ https://realhunt.co/es/deal/gr-skopelos-sea-view-150k
 Una casa de tres plantas de 165 m² en Othos, el pueblo más alto de Karpathos, renovada en 2014. Cuatro dormitorios y cuatro baños, una gran cocina independiente con barra de desayuno y un luminoso salón de azulejos. La planta superior se abre a una amplia terraza que mira al pueblo blanco, las colinas y el Egeo. Está conectada a agua de red y alcantarillado, y el centro del pueblo está a un paseo. El anuncio sitúa Pigadia, la capital de la isla y puerto de ferrys, a 12 km y la playa de Sikelao a 8 km. Se pide 170.000 €, alrededor de 1.030 €/m², bajo para una casa de isla de este tamaño.
 
 https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k
+
+### Casa de piedra adosada renovada con patio en Andriani, Mesinia
+
+180.000 € · Andriani, Messinia · 148 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-11-20
+
+Una casa de piedra adosada de 148 m² en el pueblo de Andriani, recién renovada y situada en una parcela de aproximadamente 500 m². Las fotos muestran suelos de madera nueva, ventanas y puertas de madera nueva, una cocina blanca equipada y baños modernos alicatados. En la planta baja hay una gran sala de estar y comedor con baño, y en la planta superior dos dormitorios grandes, dos baños más y un balcón con vistas al campo. Dos entradas, una a un patio pavimentado y jardín junto a la cocina, la otra a aparcamiento privado. El pueblo costero de Agios Andreas está a 7 km y Kalamata aproximadamente a 50 km. La comisión de agencia es aparte.
+
+https://realhunt.co/es/deal/gr-messinia-andriani-renovated-stone-house-180k
 
 ### Casa tradicional de esquina en Agiasos, el pueblo de montaña de Lesbos
 
@@ -144,6 +152,14 @@ Una casa de piedra de 160 m2 en dos plantas en el pueblo de colina de Karydi, re
 
 https://realhunt.co/es/deal/gr-crete-karydi-renovated-stone-house-175k
 
+### Casa antigua de piedra renovada con patio privado en Neapoli, Creta oriental
+
+149.000 € · Neapoli, Lasithi, Crete · 93 m² · 1 dormitorios · nota RealHunt 86 · añadida el 2026-11-20
+
+Una casa antigua de piedra en un callejón tranquilo a pocos minutos a pie del centro de Neapoli, una animada ciudad del mercado cretense con tiendas, bancos y un mercado de productos semanales. Los propietarios la renovaron con un alto estándar: doble acristalamiento con persianas y mosquiteras, calefacción central por gasóleo, aire acondicionado, agua caliente solar y una cocina equipada con lavavajillas. Un patio enlosado y vallado conduce a la sala de estar, cocina y cuarto de ducha, con un dormitorio doble, guardarropa y terraza solarium arriba, más un desván que podría convertirse en un segundo dormitorio. Aproximadamente 93 m². Agios Nikolaos y sus playas están a aproximadamente 11 km de distancia.
+
+https://realhunt.co/es/deal/gr-crete-neapoli-renovated-stone-house-courtyard-149k
+
 ### Piso amueblado de dos dormitorios con vistas al mar en Pefki, norte de Eubea
 
 80.000 € · Pefki, Artemisio, North Evia (Greece) · 50 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-14
@@ -183,6 +199,14 @@ https://realhunt.co/es/deal/gr-chios-volissos-1881-stone-house-175k
 Casa de obra nueva de 2025 con 72 m² en Kallikrateia, Calcídica, eficiencia energética A y amueblada: tres dormitorios, salón, cocina y tres baños, con un gran porche de madera con pérgola, guirnaldas de luces para las noches de verano, jardín con plataneras, aparcamiento, aire acondicionado, doble acristalamiento y barbacoa. El mar está a 400 m y el aeropuerto de Salónica a unos 45 km. Precio 159.990 €, unos 2.222 €/m².
 
 https://realhunt.co/es/deal/gr-halkidiki-new-house-160k
+
+### Casa de piedra de 1850 amueblada con patio y vistas a la montaña en Milea, Mani Occidental
+
+195.000 € · Milea, West Mani, Messinia · 132 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-11-20
+
+Una casa de piedra de dos plantas de estilo tradicional Mani, construida alrededor de 1850 y reconstruida en 2003, en el tranquilo pueblo de montaña de Milea. Aproximadamente 132 m² incluyendo los muros de piedra gruesa, en una parcela de 233 m² con patio de piedra y terraza cubierta con vistas a la montaña. La planta baja tiene una sala de estar con chimenea, cocina y WC, y la planta superior otra sala de estar, baño y dormitorio, accesibles por dentro o por una escalera exterior. Dos unidades de aire acondicionado, y se vende completamente amueblada y lista para usar. La comisión de agencia del 3% más IVA es aparte.
+
+https://realhunt.co/es/deal/gr-mani-milea-1850-stone-house-courtyard-195k
 
 ### Casa de piedra de tres dormitorios restaurada con terraza en la azotea en el pueblo de Kritsa, Creta
 

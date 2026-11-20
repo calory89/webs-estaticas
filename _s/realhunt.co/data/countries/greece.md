@@ -1,6 +1,6 @@
 # Cheap homes in Greece: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 24 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 24 homes is €155,000 (€1,465 per m², from the 23 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 20 November 2026, RealHunt lists 27 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 27 homes is €155,000 (€1,477 per m², from the 26 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/greece · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 24 |
+| Homes on RealHunt | 27 |
 | Median asking price | €155,000 |
-| Median price per m² | €1,465 (23 homes with a known size) |
-| Median size | 82 m² |
+| Median price per m² | €1,477 (26 homes with a known size) |
+| Median size | 85 m² |
 | Cheapest and most expensive | €68,000 · €199,000 |
-| Median RealHunt score (70 to 98) | 87 |
+| Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 5.5–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026. |
 | Yearly property tax | Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000. |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/greece
 
-## The 24 homes, best score first
+## The 27 homes, best score first
 
 ### Three-bedroom village house with a vine-covered terrace and sea views in Messinia
 
@@ -87,6 +87,14 @@ https://realhunt.co/deal/gr-skopelos-sea-view-150k
 A three-floor house of 165 m² in Othos, the highest village on Karpathos, renovated in 2014. Four bedrooms and four bathrooms, a large separate kitchen with a breakfast bar and a bright tiled living room. The top floor opens onto a wide terrace that looks over the white village, the hills and the Aegean. It is connected to mains water and sewage, and the village centre is a walk away. The advert puts Pigadia, the island capital and ferry port, 12 km away and Sikelao beach 8 km away. Asking €170,000, about €1,030/m², low for an island house this size.
 
 https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k
+
+### Renovated detached stone house with courtyard in Andriani, Messinia
+
+€180,000 · Andriani, Messinia · 148 m² · 2 bedrooms · RealHunt score 89 · added 2026-11-20
+
+A detached stone house of 148 m2 in the village of Andriani, freshly renovated and set on a plot of about 500 m2. The photos show new timber floors, new wooden windows and doors, a fitted white kitchen and modern tiled bathrooms. Downstairs is a large living and dining area with a bathroom, and upstairs two big bedrooms, two more bathrooms and a balcony with country views. Two entrances, one onto a paved courtyard and garden by the kitchen, the other onto private parking. The seaside village of Agios Andreas is 7 km away and Kalamata about 50 km. Agency fee is extra.
+
+https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k
 
 ### Traditional corner house in Agiasos, Lesbos' mountain village
 
@@ -144,6 +152,14 @@ A stone house of 160 m2 on two levels in the hill village of Karydi, renovated i
 
 https://realhunt.co/deal/gr-crete-karydi-renovated-stone-house-175k
 
+### Renovated old stone house with private courtyard in Neapoli, east Crete
+
+€149,000 · Neapoli, Lasithi, Crete · 93 m² · 1 bedrooms · RealHunt score 86 · added 2026-11-20
+
+An old stone house on a quiet cul de sac a few minutes on foot from the centre of Neapoli, a lively Cretan market town with shops, banks and a weekly produce market. The owners renovated it to a high standard: double glazing with shutters and insect screens, oil central heating, air conditioning, solar hot water and a fitted kitchen with dishwasher. A gated, tiled courtyard leads to the living room, kitchen and shower room, with a double bedroom, cloakroom and sun terrace above, plus a loft that could become a second bedroom. About 93 m2. Agios Nikolaos and its beaches are about 11 km away.
+
+https://realhunt.co/deal/gr-crete-neapoli-renovated-stone-house-courtyard-149k
+
 ### Furnished two-bedroom flat with a sea view in Pefki, North Evia
 
 €80,000 · Pefki, Artemisio, North Evia (Greece) · 50 m² · 2 bedrooms · RealHunt score 85 · added 2026-10-14
@@ -183,6 +199,14 @@ https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k
 A new-build 72 m² house from 2025 in Kallikrateia, Halkidiki, energy class A and sold furnished: three bedrooms, a living room, a kitchen and three bathrooms, with a big wooden pergola deck, string lights for summer evenings, a garden with banana plants, parking, A/C, double glazing and a BBQ. The sea is 400 m away and Thessaloniki airport about 45 km. Asking €159,990, about €2,222/m².
 
 https://realhunt.co/deal/gr-halkidiki-new-house-160k
+
+### Furnished 1850 stone house with courtyard and mountain views in Milea, West Mani
+
+€195,000 · Milea, West Mani, Messinia · 132 m² · 1 bedrooms · RealHunt score 84 · added 2026-11-20
+
+A two-level stone house in traditional Mani style, first built around 1850 and rebuilt in 2003, in the quiet hill village of Milea. About 132 m2 including the thick stone walls, on a 233 m2 plot with a stone courtyard and a covered terrace looking over the mountains. The ground floor has a living room with fireplace, kitchen and WC, and the upper floor a second living room, bathroom and bedroom, reached inside or by an outside stair. Two air conditioning units, and it is sold fully furnished and ready to use. The agency fee of 3% plus VAT is extra.
+
+https://realhunt.co/deal/gr-mani-milea-1850-stone-house-courtyard-195k
 
 ### Restored three-bed stone house with roof terrace in Kritsa village, Crete
 

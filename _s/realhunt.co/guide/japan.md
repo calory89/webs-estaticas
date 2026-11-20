@@ -36,7 +36,7 @@ Tax on rental income: Rent paid to a non-resident is subject to 20.42% withholdi
 - [€25,600 · Wooden villa in Kita-Karuizawa that you can rent out as a holiday home](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · score 91 · 60 m² · 2 bed
 - [€22,750 · Cedar-lined forest cabin renovated in 2023, with a deck and a big loft room](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · score 91 · 75 m² · 3 bed
 
-[All 35 homes in Japan](https://realhunt.co/homes/japan)
+[All 36 homes in Japan](https://realhunt.co/homes/japan)
 
 [Costs, taxes and sources for Japan](https://realhunt.co/costs/japan) · [Buying-cost calculator for Japan](https://realhunt.co/buying-costs/japan) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

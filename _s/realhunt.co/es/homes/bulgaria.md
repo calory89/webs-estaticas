@@ -2,7 +2,7 @@
 
 Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 18 de noviembre de 2026.
 
-RealHunt tiene hoy 6 pisos en venta en Bulgaria, con precios de 58.900 € a 89.000 €. La más barata cuesta 58.900 €: [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u), en Byala (53 m², 1 dormitorio). El precio mediano es de 69.000 € (759 €/m²), frente a 90.500 € (1.200 €/m²) de las 591 viviendas de RealHunt en 28 países.
+RealHunt tiene hoy 6 pisos en venta en Bulgaria, con precios de 58.900 € a 89.000 €. La más barata cuesta 58.900 €: [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u), en Byala (53 m², 1 dormitorio). El precio mediano es de 69.000 € (759 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sí, edificios y apartamentos, con derechos similares a los locales; según GPG, los extranjeros no pueden ser propietarios de tierra directamente, por lo que una empresa búlgara es la ruta habitual.
 
@@ -125,9 +125,9 @@ Por característica [Vistas al mar 5](https://realhunt.co/es/cheap-houses/with-s
 
 Por característica y presupuesto [Con piscina, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/with-pool-under-100000-in-bulgaria)
 
-Países vecinos [Grecia 24](https://realhunt.co/es/homes/greece)
+Países vecinos [Grecia 27](https://realhunt.co/es/homes/greece)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 73](https://realhunt.co/es/homes/italy) [Estados Unidos 59](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 24](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 14](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 7](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [México 4](https://realhunt.co/es/homes/mexico)
+Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
 Estos anuncios proceden de bulgarianproperties.com (3), homes.bg (2), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

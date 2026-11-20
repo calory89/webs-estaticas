@@ -1,6 +1,6 @@
 # Cheap homes in Mexico: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 14 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 14 homes is €86,100 (€1,266 per m², from the 14 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 20 November 2026, RealHunt lists 15 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 15 homes is €86,100 (€1,140 per m², from the 15 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/mexico · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 14 |
+| Homes on RealHunt | 15 |
 | Median asking price | €86,100 |
-| Median price per m² | €1,266 (14 homes with a known size) |
+| Median price per m² | €1,140 (15 homes with a known size) |
 | Median size | 75 m² |
 | Cheapest and most expensive | €50,575 · €216,600 |
 | Median RealHunt score (70 to 98) | 86 |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/mexico
 
-## The 14 homes, best score first
+## The 15 homes, best score first
 
 ### 2-bed apartment in San Pedro Tlaquepaque, Jalisco
 
@@ -81,6 +81,14 @@ https://realhunt.co/deal/mazatlan-80920
 65 m², 2 bed. Asking MXN 1,400,000. The listing mentions: garden, parking.
 
 https://realhunt.co/deal/tonala-70805
+
+### Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje
+
+€195,300 · El Tepehuaje, Tuxcueca, Jalisco · 245 m² · 5 bedrooms · RealHunt score 88 · added 2026-11-20
+
+Asking MX$4,080,000 (about €195,300). An 8-year-old house of 245 m² on a 514 m² plot in the village of El Tepehuaje, on the south shore of Lake Chapala and about an hour from Guadalajara. It has arched windows, stone walls and brick vaulted ceilings, a living and dining room with a double-sided fireplace and a kitchen with a breakfast bar. There are five bedrooms, each with its own full bathroom; the main one has a lake view, a sitting area and a jacuzzi. A large roof terrace looks over the lake, and there is a patio with a fire pit, a barbecue area and parking for two cars.
+
+https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m
 
 ### 3-bed apartment in Cuautlancingo, Puebla
 

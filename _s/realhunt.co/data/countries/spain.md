@@ -1,6 +1,6 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 190 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 190 homes is €97,000 (€1,217 per m², from the 186 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 20 November 2026, RealHunt lists 191 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 191 homes is €97,000 (€1,217 per m², from the 187 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/spain · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 190 |
+| Homes on RealHunt | 191 |
 | Median asking price | €97,000 |
-| Median price per m² | €1,217 (186 homes with a known size) |
+| Median price per m² | €1,217 (187 homes with a known size) |
 | Median size | 85 m² |
 | Cheapest and most expensive | €38,000 · €348,000 |
 | Median RealHunt score (70 to 98) | 85 |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/spain
 
-## The 190 homes, best score first
+## The 191 homes, best score first
 
 ### 2-bedroom house with terrace in Alpujarra de la Sierra
 
@@ -1415,6 +1415,14 @@ https://realhunt.co/deal/es-moguer-98k-75562
 A spotless duplex in a 2009 building in Robledondo, a mountain village of the Sierra Oeste de Madrid surrounded by nature: a bright living-dining room with large windows downstairs, and two bedrooms and two full bathrooms (one en suite) upstairs, with open views of the countryside. 96 m².
 
 https://realhunt.co/deal/es-robledondo-169k-614624
+
+### Two-bedroom corner duplex with mountain-view terrace in Alcalá de la Selva
+
+€177,000 · Alcalá de la Selva, Teruel · 112 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-20
+
+A corner duplex built in 2009 in Alcalá de la Selva, a mountain village in Teruel about 10 minutes from the Valdelinares ski slopes and an hour from Valencia. It has 112 m2 built, 95 m2 usable, with two bedrooms with fitted wardrobes, a bathroom with bath, a guest toilet, a fitted kitchen and a living room with a fireplace insert. The east-facing terrace has wide views of the pine-covered hills. A lift, a covered parking space and a storage room are included. The photos show a modern, well-kept interior, ready to move into. Community fees are not stated in the advert.
+
+https://realhunt.co/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k
 
 ### Renovated four-bedroom house with terrace in Palmete, Seville
 

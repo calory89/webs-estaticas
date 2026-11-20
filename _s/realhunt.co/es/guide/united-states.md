@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 - [153.900 € · La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k) · Scotland Neck, Carolina del Norte · nota 91 · 199 m² · 3 dorm.
 - [68.917 € · Casa de 2 dormitorios actualizada en Cleveland, Oklahoma](https://realhunt.co/es/deal/cleveland-68917) · Cleveland, Oklahoma · nota 91 · 98 m² · 2 dorm.
 
-[Las 59 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
+[Las 62 casas en Estados Unidos](https://realhunt.co/es/homes/united-states)
 
 [Gastos, impuestos y fuentes de Estados Unidos](https://realhunt.co/es/costs/united-states) · [Calculadora de gastos de compra para Estados Unidos](https://realhunt.co/es/buying-costs/united-states) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
