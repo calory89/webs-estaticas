@@ -1,10 +1,10 @@
 # Kolaboro: full guide for AI assistants
 
-Generated 2026-11-05T22:47:31Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
+Generated 2026-11-20T23:15:25Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
 
 ## What Kolaboro is
-Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Checks off-plan projects in any country (desk review and official-register lookups online; on-site visits by local agents, confirmed per location before the agent starts) and is recruiting its first local agents; desk research covers 1,116 off-plan projects in 170 markets and 94 countries (5 November 2026), 8,999 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month. (from https://kolaboro.com/llms.txt)
-Live totals at generation (GET /api/open/stats): 1116 tracked projects in 170 markets and 96 countries, data updated 2026-11-05.
+Kolaboro checks off-plan property projects for people buying abroad, before each payment. Every project page shows what the developer published (company, land, permit or licence number, handover date, payment plan, construction status) against official registers and dated sources, with a right of reply. Buyers pay; developers never pay. Today the checks are desk reviews and official-register lookups online, with Sentinel-2 satellite views where we hold them; site visits by local agents are being set up, and escrow is not offered. Desk research covers 2,002 off-plan projects in 182 markets and 94 countries (20 November 2026), 13,269 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Prices and what each service includes today: https://kolaboro.com/pricing/. (from https://kolaboro.com/llms.txt)
+Live totals at generation (GET /api/open/stats): 2002 tracked projects in 182 markets and 94 countries, data updated 2026-11-20.
 Kolaboro is operated by Equinox Investment Group LLC (Wyoming, USA) and gives independent verification and information, not legal, tax or financial advice.
 
 ## Named projects and anonymity (read this before quoting anything)
@@ -22,210 +22,222 @@ Advertised prices, yields and dates are what developers advertise, not verified 
 - Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over "kolaboro-sig-v1\n" + the SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. x-kolaboro-dataset-sha256 names the dataset file an answer came from.
 - Every day a public log head is recorded (https://kolaboro.com/log), timestamped in Bitcoin and in Sigstore Rekor; GET /api/open/log, /api/open/checkpoint and the proof endpoints let anyone check it.
 
-## Datasets (57, 113 files, 19.8 MB)
-Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 71 of 71 files; datasets late at measurement: 2. Freshness now: GET https://kolaboro.com/api/x/data/freshness
+## Datasets (385, 441 files, 69.9 MB)
+Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 71 of 74 files; datasets late at measurement: 2. Freshness now: GET https://kolaboro.com/api/x/data/freshness
 
 ### Data about projects and markets
 
 Tracked off-plan projects (anonymous) (id: bali-cases)
   URL: https://kolaboro.com/data/bali-cases.json
   Every off-plan project Kolaboro tracks, one record per anonymous project id: market, country, stage, price band, promised handover year, the six public checks (permit, deposit protection, progress, plans, track record, no guaranteed returns), how far each is confirmed, claims tested, flags and the change history. Advertised claims, not verified facts. The same data is served filtered by /api/open/projects.
-  Size 1.6 MB; 1,116 projects; SHA-256 8f5decbe28f61470ecd5775ca3e8403045c958ee9a03b5744fcbcd7613231606; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 2.9 MB; 2,002 projects; SHA-256 bf6b36b7338a894ac7bbcd6a0fe3504992f123bec66fab340f37fa65506c96d2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: twice a month (1st and 15th, 06:17 UTC) and every time the research files change. Last updated: 2026-11-20. Freshness target 18 days.
   Schema: https://kolaboro.com/api/x/data/schema/bali-cases.json
 
 What developers advertise, by market (id: world-claims)
   URL: https://kolaboro.com/data/world-claims.json
   Per market: how many tracked projects, title and lease terms advertised, guaranteed-return language, permit claims, permit numbers and plans published, and advertised USD prices. Aggregates only.
-  Size 395.6 KB; 170 markets; SHA-256 e6ced9db19ad9ab646d14ff4c680de2f9c3faa1608f05c5547bd3f76965df839; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 423.4 KB; 182 markets; SHA-256 dcd313296b60befb7fcf5382add55f279bbcc045750643cffcaef3f48b6c2818; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: twice a month (1st and 15th, 06:17 UTC) and every time the research files change. Last updated: 2026-11-20. Freshness target 18 days.
   Schema: https://kolaboro.com/api/x/data/schema/world-claims.json
 
 What developers advertise in Bali (id: bali-claims)
   URL: https://kolaboro.com/data/bali-claims.json
   The same aggregate as world-claims for the Bali market alone: title and lease terms, guaranteed-return language, permit claims and numbers, plans and advertised prices.
-  Size 2.1 KB; not a table; SHA-256 13d924f2ed7f923953e60db22987a916bbe4e85a792cfe2b32332adfea5e0824; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 2.1 KB; not a table; SHA-256 50397b336993c821eb14cd0e5737102381e16f52a2b6977610e1e3fce64a2f69; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: twice a month (1st and 15th, 06:17 UTC) and every time the research files change. Last updated: 2026-11-20. Freshness target 18 days.
   Schema: https://kolaboro.com/api/x/data/schema/bali-claims.json
 
 Projects table (Parquet) (id: kolaboro-parquet)
   URL: https://kolaboro.com/data/kolaboro.parquet
   One row per tracked project, built from bali-cases.json: checks, confirmation levels, claims, delay, satellite status and page fingerprint, in Apache Parquet for DuckDB, pandas or Spark. Columns and row count are listed in kolaboro.parquet.json.
-  Size 69.6 KB; 1,116 projects; SHA-256 dcd0d097d8a1f467b5755b1f39ac3a4a7217c9f5382fb53e058e90f911eace8d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 07:43 UTC and after each research run; rewritten only when the source changed. Last updated: 2026-11-05T16:58:33Z. Freshness target 2 days.
+  Size 87.3 KB; 2,002 projects; SHA-256 43b94da7ec00d7a9e6934f4c3048514303464d5639868d3fa852f230aebff301; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Thursday 07:43 UTC, and after each research run; rewritten only when the source changed. Last updated: 2026-11-19T16:49:11Z. Freshness target 9 days.
 
 Markets table (Parquet) (id: kolaboro-markets-parquet)
   URL: https://kolaboro.com/data/kolaboro-markets.parquet
   One row per market with the same method as /api/open/markets: projects, average public and confirmed checks, permit and deposit-protection shares, flags and the transparency index.
-  Size 7.5 KB; 170 markets; SHA-256 afda06abb70077225b0ef92873f987e1fa63ccfe848f998a449206357a9e458c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 07:43 UTC and after each research run; rewritten only when the source changed. Last updated: 2026-11-05T16:58:33Z. Freshness target 2 days.
+  Size 7.8 KB; 182 markets; SHA-256 6ad5ec7cc49654ba72de43b13567b32368d74efbd779956597c6c44ec593556e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Thursday 07:43 UTC, and after each research run; rewritten only when the source changed. Last updated: 2026-11-19T16:49:11Z. Freshness target 9 days.
 
 Parquet export manifest (id: kolaboro-parquet-manifest)
   URL: https://kolaboro.com/data/kolaboro.parquet.json
   Columns, row counts, sizes and SHA-256 of the two Parquet files and the SHA-256 of the bali-cases.json they were built from. A signed copy is served by /api/x/e/parquet-manifest.
-  Size 4.5 KB; 2 files; SHA-256 c36fc72f71df04d74462db6f350e0cb763e24c46118ce6d66d2f011420f18cc2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 07:43 UTC and after each research run; rewritten only when the source changed. Last updated: 2026-11-05T16:58:33Z. Freshness target 2 days.
+  Size 4.5 KB; 2 files; SHA-256 12bad209f3e9c6ebb1721b57fe1cd3ed846cd10118f70d2dff7ae85d710849fc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Thursday 07:43 UTC, and after each research run; rewritten only when the source changed. Last updated: 2026-11-19T16:49:11Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/kolaboro-parquet-manifest.json
+
+Live findings from developer pages (id: live-findings)
+  URL: https://kolaboro.com/data/live-findings.json
+  Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).
+  Size 147.7 KB; 500 findings; SHA-256 71a5c45ca56e36f8a27395a98f64b345736948ab41d2dfa8d91d54f6dff2d768; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-20T16:20:27Z. Freshness target 2 days.
+
+Live findings per project (id: findings-by-project)
+  URL: https://kolaboro.com/data/findings-by-project.json
+  Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.
+  Size 292.1 KB; 1,083 projects; SHA-256 61c8afdb90e29ffba0135abb6e73fb4c278405c080a1556cad3fbe9e2521dd16; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-20T16:20:27Z. Freshness target 2 days.
 
 Dated developer promises (id: promises)
   URL: https://kolaboro.com/data/promises.json
   Every dated promise a developer made about a tracked project (handover, construction start, structure, other milestones, permits, rental programme), read from the research records, with its status today. Per project and per market.
-  Size 404.8 KB; 929 projects; SHA-256 a870e0c8d21e51f9c77f9063358eb7bf468599654fabb676336ccbc0339f13a0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 11:23 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 379.9 KB; 857 projects; SHA-256 9e330db7b1a3417bc6a73a7eec0fe9e1993907cdb3f9a0c687ecaa571f26a632; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Wednesday 11:23 UTC, and after each research run. Last updated: 2026-11-18. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/promises.json
 
 Promise drift on developer pages (id: promise-drift)
   URL: https://kolaboro.com/data/promise-drift.json
   Day by day, which advertised values changed on each tracked developer page (handover date, prices, units and other fields), from fingerprinted page text. No URLs or names.
-  Size 178.6 KB; 838 projects; SHA-256 54091ac4c76556b14a2f2033ae652764d5fc395edc8add7ae9ff001aa727506f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 09:43 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 198.8 KB; 1,067 projects; SHA-256 640d229325d57e3c01b657dc697a3e144e118929fff69f9db6304c215e6ca8a9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 16th at 09:43 UTC, and after each research run. Last updated: 2026-11-16. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/promise-drift.json
 
 Website age of project pages (id: domain-age)
   URL: https://kolaboro.com/data/domain-age.json
   For each project whose page is on its own website: domain registration date (RDAP) and earliest TLS certificate (Certificate Transparency), at month precision. No domains are published.
-  Size 69.7 KB; 1,116 projects; SHA-256 7443d30f6560ea3c0feeb0a07204a372b1a43daea183243c32776647092c75c5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 09:43 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 102.1 KB; 1,595 projects; SHA-256 595ef3054a6cf9ed737d19e3e05dcd5e34ed924fd77bc5d17cd63a33916c2b06; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 16th at 09:43 UTC, and after each research run. Last updated: 2026-11-16. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/domain-age.json
 
 Delivery delay index (id: delay-index)
   URL: https://kolaboro.com/data/delay-index.json
   How far tracked off-plan projects are behind the first handover date on record, by market, with rules, caveats and monthly history.
   Size 43.2 KB; 170 markets; SHA-256 e8a9198d1cd4c8a935489d1fd9f43add0d493d2225c5342ea572e58be27e957c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 16:37 UTC, monthly snapshot on the 1st, and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Updates: weekly, Thursday 16:37 UTC, monthly snapshot on the 1st, and after each research run. Last updated: 2026-11-05. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/delay-index.json
 
 On-time handover odds (id: on-time)
   URL: https://kolaboro.com/data/on-time.json
   For each project: will it hand over within 6 months of the first date on record? Estimated from closed comparable projects with a 95% interval, plus validation and the bias of the sample.
   Size 154.5 KB; 1,116 projects; SHA-256 b87bc44b76536642a5ad3737ee22fb951d960de691da86d979e58ef137dbbe32; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 16:37 UTC, monthly snapshot on the 1st, and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Updates: weekly, Thursday 16:37 UTC, monthly snapshot on the 1st, and after each research run. Last updated: 2026-11-05. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/on-time.json
 
 Asking-price index (id: price-index)
   URL: https://kolaboro.com/data/price-index.json
   Chained index of advertised asking prices ("from" prices on developer and listing pages) per market, with daily snapshots, rules and caveats. Not transaction prices.
-  Size 157.0 KB; 108 markets; SHA-256 ae225a089b4143e948c9f58be896b39e958d46bb3327d764f8d7e9be1c192387; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 14:41 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 212.8 KB; 108 markets; SHA-256 2e46c5dee85ebff843ccf2c28a6165e68f2baa87b4f4a7b2f70f76eee72a493c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Wednesday 14:41 UTC, and after each research run. Last updated: 2026-11-15. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/price-index.json
 
 Advertised versus registered prices (id: price-reality)
   URL: https://kolaboro.com/data/price-reality.json
   Advertised starting prices compared with officially registered sales where a government publishes them: counts, quartiles and medians only, converted to USD at a cited rate. Lists the markets not covered.
-  Size 83.1 KB; 7 markets; SHA-256 ffdee2e15e9f51758803ce8baeb9749a7971c5d378aebf2a86f310a424e4aab6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 04:17 UTC. Last updated: 2026-11-04. Freshness target 10 days.
+  Size 106.3 KB; 7 markets; SHA-256 68141e96a221b9920078be9d101a146160cd55bd88d72787576470af4edd57da; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 13th at 04:17 UTC. Last updated: 2026-11-13. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/price-reality.json
 
 Risk patterns (id: risk)
   URL: https://kolaboro.com/data/risk.json
   Which tracked projects look unusual on public warning signs compared with all others, and why, with a model card. It ranks; it does not predict. No project has a confirmed outcome to train on.
-  Size 162.3 KB; 896 projects; SHA-256 8b1481584a5380cf797f9969a14910df229ea2fe8f2b83f12104da14f8ae905b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 04:17 UTC. Last updated: 2026-11-04. Freshness target 10 days.
+  Size 284.8 KB; 1,595 projects; SHA-256 0cc5645187198d1d2bef25d12dfba026ee78b7590e271a3732ddae2516e1dd6b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 13th at 04:17 UTC. Last updated: 2026-11-13. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/risk.json
 
 Official register checks (id: register-checks)
   URL: https://kolaboro.com/data/register-checks.json
   Every official register linked on /registers/: whether our checker could read it (time, HTTP status, size and SHA-256 of the bytes received), and per project the register result, with a hash-chained lookup archive.
-  Size 45.9 KB; 53 registers; SHA-256 ab6c797fd5f234ff49758e271b9315ab89377972d87990fb55b1c6dc83ced181; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 04:17 UTC. Last updated: 2026-11-04. Freshness target 10 days.
+  Size 58.0 KB; 53 registers; SHA-256 ec9ef858930133b83675cb2f7b107af12fb2281c921224ecb9f2faad4d0f0881; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 13th at 04:17 UTC. Last updated: 2026-11-13. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/register-checks.json
 
 Company and director graph (UK) (id: company-graph)
   URL: https://kolaboro.com/data/company-graph.json
   Anonymised company and director graph for tracked projects whose developer is a UK company found on Companies House by exact name. Counts and anonymised nodes only.
-  Size 92.4 KB; 25 projects; SHA-256 a15ecdfdb67acc75cdb08802a2eea381020b51c95613dd05306ead15e0ed37f2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Wednesday 05:41 UTC. Last updated: 2026-11-04T13:15:03Z. Freshness target 9 days.
+  Size 92.4 KB; 25 projects; SHA-256 7b9322f83b5de031976c556499b847bb2f8dd81853b883af06bbd71a7186daa6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 8th at 05:41 UTC. Last updated: 2026-11-08T12:12:20Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/company-graph.json
 
 Global company graph (GLEIF) (id: company-graph-global)
   URL: https://kolaboro.com/data/company-graph-global.json
   For each tracked project: whether the companies named as developer have a Legal Entity Identifier, their parents and countries, as counts and booleans only. Source GLEIF (CC0).
-  Size 282.9 KB; 1,011 projects; SHA-256 c2723170643836f10f71d18a2e0f87b77f2625b506f84c6029376a3d11fe67a6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Tuesday 04:17 UTC. Last updated: 2026-11-04T09:36:15Z. Freshness target 9 days.
+  Size 282.9 KB; 1,011 projects; SHA-256 64f38d27fb656b81a6b5c941ad2cca69aa4037dd690dc2b9158913663f85bb88; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 4th at 04:17 UTC. Last updated: 2026-11-04T09:36:15Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/company-graph-global.json
 
 Insolvency watch (id: insolvency-watch)
   URL: https://kolaboro.com/data/insolvency-watch.json
   Daily check of UK and Spanish developer companies against insolvency notices (The Gazette, BORME). Each hit is reduced to date, source and type of notice; no company names.
   Size 9.9 KB; 86 projects; SHA-256 be93a0f6b88087b0069783de04704e1de76e48622b8abd7db7263355f591bd27; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 07:23 UTC. Last updated: 2026-11-05T15:34:51Z. Freshness target 2 days.
+  Updates: monthly, on the 5th at 07:23 UTC. Last updated: 2026-11-05T15:34:51Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/insolvency-watch.json
 
 Spanish insolvency index (hashed) (id: insolvency-es-index)
   URL: https://kolaboro.com/data/insolvency-es-index.json
   Insolvency acts published in BORME Section One, keyed by a truncated SHA-256 of the normalised company name so the file is not a readable list of companies; anyone can test a name against it. Source BOE, reuse with attribution.
   Size 644.6 KB; 2,718 companies; SHA-256 17a66fed302e24afe2defa24163e9e2200383d3945c0c5453ed0803ff3227fe8; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 07:23 UTC. Last updated: 2026-11-05T15:34:51Z. Freshness target 2 days.
+  Updates: monthly, on the 5th at 07:23 UTC. Last updated: 2026-11-05T15:34:51Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/insolvency-es-index.json
 
 Natural hazards at tracked projects (id: hazards)
   URL: https://kolaboro.com/data/hazards.json
   Elevation, flood depth, earthquakes, tsunamis, volcanoes and coastline distance for tracked projects with coordinates and watched areas, rounded so they cannot pinpoint a plot. Sources listed in the file.
-  Size 48.6 KB; 168 projects; SHA-256 add6472b886f9924fccaebfce6a3b7a02dad83564acd59b4a03ae213d90e2b28; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: monthly, on the 9th at 03:17 UTC. Last updated: 2026-11-04. Freshness target 34 days.
+  Size 53.5 KB; 189 projects; SHA-256 459e5df55f6582e7c0e34e6020e24fc89269f38e13efff98a449d02d7a2688a7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 9th at 03:17 UTC. Last updated: 2026-11-09. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/hazards.json
 
 Satellite watch (Sentinel-2 and Sentinel-1) (id: satellite)
   URL: https://kolaboro.com/data/satellite.json
   Sentinel-2 vegetation and clearing per season and Sentinel-1 radar backscatter change for every watched site and area (boxes of about 1 km). Contains modified Copernicus Sentinel data.
   Size 71.1 KB; 27 sites; SHA-256 f2a846b0f7087d73acbd2abf3a8176ea932bf30ef2bc0a76168938c44155bd30; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 07:41 UTC. Last updated: 2026-11-05. Freshness target 10 days.
+  Updates: monthly, on the 3rd at 07:41 UTC. Last updated: 2026-11-05. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/satellite.json
 
 Monthly optical progress series (id: satellite-optical)
   URL: https://kolaboro.com/data/satellite-optical.json
   Per watched site and month from January 2023: cloud-masked Sentinel-2 median, built_pct (built-up or bare ground, which look alike at 10 m) and new built-up since the baseline month. Contains modified Copernicus Sentinel data.
-  Size 412.5 KB; 27 sites; SHA-256 c21006df86dbdd16d2cb945b9b3cc9ece4273788d3bbe714f491a21994a6f389; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Tuesday 09:17 UTC. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 415.4 KB; 27 sites; SHA-256 23a059d7915b1e992771f7a4bf977201e60f8fea804398ce0163d8453d451ab7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 11th at 09:17 UTC. Last updated: 2026-11-11. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/satellite-optical.json
 
 Stalled construction sites (id: stalled-sites)
   URL: https://kolaboro.com/data/stalled-sites.json
   Sentinel-2 change between clear quarters in a 150 m window around every project with coordinates, and which sites show almost no change.
-  Size 132.6 KB; 168 projects; SHA-256 9e647f9fb7e5b4238b05801213d45056b31c0139fa8d547f1a41eb98ebd13625; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Wednesday 04:41 UTC. Last updated: 2026-11-04. Freshness target 10 days.
+  Size 231.9 KB; 295 projects; SHA-256 d760a5185f268cc8fb313b08303bb5a6c7759b196fc1351eb8b8054587a77dd2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 12th at 04:41 UTC. Last updated: 2026-11-12. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/stalled-sites.json
 
 Night lights at finished projects (id: night-lights)
   URL: https://kolaboro.com/data/night-lights.json
   NASA Black Marble night-time light at projects that should be finished, compared with the surrounding ring, monthly for 36 months. Light is a proxy, not proof of occupancy.
   Size 4.8 KB; 5 projects; SHA-256 50839058f887712e7f0e44401e4e1242383e2fd912bb17298db64c28bce6e06f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Wednesday 04:41 UTC. Last updated: 2026-11-04. Freshness target 10 days.
+  Updates: monthly, on the 12th at 04:41 UTC. Last updated: 2026-11-04. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/night-lights.json
 
 Visual changes on developer pages (id: visual-diff)
   URL: https://kolaboro.com/data/visual-diff.json
   Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published, because they would copy the developers' own copyrighted images.
-  Size 49.3 KB; 430 projects; SHA-256 032acaab68f56c795a7aa8ba1f9bb4ddb2417e89e96bd11d34e696eff6667674; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 15:23 UTC. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 62.8 KB; 568 projects; SHA-256 5de31113e210d73fd799dc631509597b45e9688c2979df1054588c64697d2dab; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 6th at 15:23 UTC. Last updated: 2026-11-06. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/visual-diff.json
 
 Reused renders across projects (id: render-reuse)
   URL: https://kolaboro.com/data/render-reuse.json
   Pairs of images that appear on the pages of two different tracked projects on different domains (CLIP image embeddings, cosine 0.85 or more, confirmed by feature matching), with what was excluded and why.
-  Size 2.5 KB; 0 pairs; SHA-256 0632307d112498bd68b1150022ab0b8e0989e195296852a16df0cef62a2552f9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Sunday 06:37 UTC. Last updated: 2026-11-05T07:43:11Z. Freshness target 9 days.
+  Size 2.5 KB; 0 pairs; SHA-256 60685762c0c2741f238b3c01c865ec74e6a84e34d45710909cd831a0d12dd67e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 7th at 06:37 UTC. Last updated: 2026-11-07T13:45:07Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/render-reuse.json
 
 Perceptual image hashes (id: image-hashes)
   URL: https://kolaboro.com/data/image-hashes.json
   64-bit difference hashes of the images kept by the weekly render-reuse run, so anyone can check whether a picture appears on a tracked project page.
-  Size 461.0 KB; 8,887 images; SHA-256 21e5dd9598acd74177222f0794b4895a069a8538fef662ec93084c3d9fe0dc31; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Sunday 06:37 UTC. Last updated: 2026-11-05T07:41:39Z. Freshness target 9 days.
+  Size 501.7 KB; 9,673 images; SHA-256 da074ea12fb7e779028c44eedfc3979aed99659499a8866b6a22c52e5e90ac9d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 7th at 06:37 UTC. Last updated: 2026-11-07T13:43:14Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/image-hashes.json
 
 Render index (id: image-index)
   URL: https://kolaboro.com/data/image-index.json
   Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.
-  Size 422.0 KB; 7,612 images; SHA-256 de2f4d0050013f8d99bcf58e5f2615b094b2f502498a3b7e3d9166556dd1a784; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Sunday 04:51 UTC. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 635.0 KB; 11,482 images; SHA-256 d665bcb26cec536e641af0d1d81e60b3980d4d0c867d3a7688ac18cfb408e688; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 14th at 04:51 UTC. Last updated: 2026-11-14. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/image-index.json
 
 Similar projects (id: similar)
   URL: https://kolaboro.com/data/similar.json
   For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.
-  Size 198.5 KB; 1,116 projects; SHA-256 f7a3a8876d105c5514d31f2f486bd98e79fd6411507b904f4afab0948cf51b10; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 02:23 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 294.3 KB; 1,745 projects; SHA-256 6c9b8a8c1bafdbbef2f14d69e4d5583ed3bbbe6aa0e1d72988b59af1ba195cb6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Tuesday 02:23 UTC, and after each research run. Last updated: 2026-11-17. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/similar.json
 
 Mystery shopper programme (id: mystery-shopper)
@@ -254,78 +266,78 @@ AI desk review benchmark (id: benchmark)
 Accessibility audit (id: a11y)
   URL: https://kolaboro.com/data/a11y.json
   axe-core audit of every page (WCAG 2.2 AA rules) with counts per rule and page and the run history.
-  Size 25.2 KB; 212 pages; SHA-256 3e41f0709a34571b031565fcf8e6177d0bb472bf89aa5afd8f458dbc0085fb0a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 02:47 UTC. Last updated: 2026-11-05T10:00:10.060Z. Freshness target 2 days.
+  Size 59.6 KB; 535 pages; SHA-256 f46d270fdd4ccb2b4a4664398c081ac210f3665d251e6ce7a6b115b30e665b82; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 19th at 02:47 UTC. Last updated: 2026-11-19T11:09:08.078Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/a11y.json
 
 Lighthouse scores (id: lighthouse)
   URL: https://kolaboro.com/data/lighthouse.json
   Lighthouse runs per page and form factor with thresholds and flags.
-  Size 15.7 KB; 40 runs; SHA-256 bbf06fe71064d14f88600b4a2275549a685bc7e91b428bd9ab2ee76715eccd61; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 04:23 UTC. Last updated: 2026-11-05T12:42:32.711Z. Freshness target 2 days.
+  Size 20.2 KB; 44 runs; SHA-256 074b5b8b6e840f42ead1a35cc031985335f6c6afa2602d2ca876b42f30bc2fc4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 17th at 04:23 UTC. Last updated: 2026-11-17T13:43:36.325Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/lighthouse.json
 
 Site QA crawl (id: qa)
   URL: https://kolaboro.com/data/qa.json
   Daily crawl of every page and link with the checks that ran and any problems found.
-  Size 2.9 KB; 18 checks; SHA-256 e8eda886e65f28dd9182079a26522bb51b60e84544c675b5ff07eda7475f32bd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 05:23 UTC. Last updated: 2026-11-05T13:39:32.092Z. Freshness target 2 days.
+  Size 2.8 KB; 18 checks; SHA-256 c1bb78f47cc87761a0de3fb00a270604a80e654b68ad474c935e812727a71e69; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 10th at 05:23 UTC. Last updated: 2026-11-10T13:56:17.031Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/qa.json
 
 Synthetic user journeys (id: journeys)
   URL: https://kolaboro.com/data/journeys.json
   A scripted buyer journey run in a real browser every week: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).
-  Size 90.3 KB; 9 runs; SHA-256 899a9c236aeb1e7e2c4eb45cc695d4abcd0533646687b66056a68b5cef9ed6ac; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Thursday 04:41 UTC. Last updated: 2026-11-05T18:56:54.919Z. Freshness target 9 days.
+  Size 103.3 KB; 13 runs; SHA-256 a14270fc331c12b2905810c65f0726dede92f8573bb1ba5debaa73f889efd91d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Thursday 04:41 UTC. Last updated: 2026-11-19T13:56:58.749Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/journeys.json
 
 Independent verifier run (id: verifiers)
   URL: https://kolaboro.com/data/verifiers.json
   Three independent implementations (JavaScript, Python, Go) check the test vectors and the live log, checkpoint, proofs and signatures.
-  Size 1.9 KB; not a table; SHA-256 c72a98c05f3aa8473e6eb77fe4304c328de7c0d6b23344907f8817b4a1943c28; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 08:41 UTC. Last updated: 2026-11-05T16:51:53Z. Freshness target 2 days.
+  Size 1.9 KB; not a table; SHA-256 6965b968498b987b64a80537d3b6e21202f64c1115a0b5a12790682c8b52075c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Saturday 08:41 UTC. Last updated: 2026-11-14T15:19:54Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/verifiers.json
 
 Chaos drills (id: chaos)
   URL: https://kolaboro.com/data/chaos.json
   Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.
-  Size 13.1 KB; 3 runs; SHA-256 1cd846ff32bcffc80cc6e43ae0846247594a91c1e71243e09ce30e4d0bddfec1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Wednesday 05:11 UTC. Last updated: 2026-11-04T13:00:06Z. Freshness target 9 days.
+  Size 17.6 KB; 4 runs; SHA-256 3f51a542b35e7d9c3ccc69daafb4e5e751ebc74cc94a0c0a00251af2bd840e9f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: monthly, on the 18th at 05:11 UTC. Last updated: 2026-11-18T13:53:01Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/chaos.json
 
 Security scan (id: security-scan)
   URL: https://kolaboro.com/data/security-scan.json
   OWASP ZAP baseline passive scan of kolaboro.com: alerts by risk.
-  Size 3.3 KB; 22 alerts; SHA-256 d26d8c3f172c1775b3cd64a97f4ed6ff0b7caae3b3f71ca33adc0c22ba996e19; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Tuesday 04:29 UTC. Last updated: 2026-11-03T09:58:33Z. Freshness target 9 days.
+  Size 3.1 KB; 21 alerts; SHA-256 3628d4a9d85a5ccb7247c1c831f34faf96e51f68c968ed4d2808fb137890385b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Tuesday 04:29 UTC. Last updated: 2026-11-17T13:47:53Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/security-scan.json
 
 Backup restore drill (id: restore)
   URL: https://kolaboro.com/data/restore.json
   Weekly drill: the latest database backup is restored into a clean PostgreSQL and checked table by table, and evidence files are re-hashed.
-  Size 1.2 KB; 14 tables; SHA-256 0724349dbf25e6b89705b97a26a35ede865513721832f2cbd5e3323470466bb5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 03:17 UTC. Last updated: 2026-11-03T09:12:58Z. Freshness target 9 days.
+  Size 1.2 KB; 14 tables; SHA-256 ee66411fb9af30abdc3788346c672b44f2e2d3e971e57e031b3137d71ad66a45; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Monday 03:17 UTC. Last updated: 2026-11-16T11:17:37Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/restore.json
 
 Deploy guard record (id: deploys)
   URL: https://kolaboro.com/data/deploys.json
   Each deploy of the site: smoke checks after it went live, and any automatic rollback.
-  Size 45.5 KB; 122 deploys; SHA-256 5c47acf1d402253d30bdce35547e0de9c5fb58ed5c83f0b54819633a50b85488; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: after each site deploy (event driven, checked every 30 minutes). Last updated: 2026-11-05T17:07:29Z.
+  Size 75.1 KB; 200 deploys; SHA-256 16995dfb29bc48dd4326594514eeeab95447631a3c08ade866efc107f8ae03e1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: after each site deploy (event driven, plus a daily check at 06:37 UTC). Last updated: 2026-11-20T15:44:41Z.
   Schema: https://kolaboro.com/api/x/data/schema/deploys.json
 
 Site manifest (id: site-manifest)
   URL: https://kolaboro.com/data/site-manifest.json
   SHA-256 of every file published on kolaboro.com outside /data/, computed from the git commit the live site was serving.
-  Size 69.8 KB; 722 files; SHA-256 8873fb51d5f159150190790702524c4a0ba4de8c4b26103ddc64c2fc45248e79; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: checked every 30 minutes, written when the live commit changes. Last updated: 2026-11-05T19:03:51Z.
+  Size 71.6 KB; 742 files; SHA-256 4660e9bbc5a11f5aa773c6937cc8b81967c08dba654a941d93d0cc30766a08e1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: checked weekly (Monday 04:23 UTC), written when the live commit changes. Last updated: 2026-11-16T12:54:40Z.
   Schema: https://kolaboro.com/api/x/data/schema/site-manifest.json
 
 Reproducible worker builds (id: builds)
   URL: https://kolaboro.com/data/builds.json
   Deterministic bundle of the site worker for each worker source tree that went live, built twice in clean folders; reproduced says whether both builds were identical.
-  Size 4.6 KB; 9 builds; SHA-256 13096dc3be16080ebdd3c8efd7950f6381d43c8e826080163635c1a495091106; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: checked every 30 minutes, written when the worker changes. Last updated: 2026-11-05T19:03:57Z.
+  Size 5.4 KB; 11 builds; SHA-256 d9e540b0335629c2cc6e390957c967fbe65112f9bbc1bb5580000b5cd2fc435e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: checked weekly (Monday 04:23 UTC), written when the worker changes. Last updated: 2026-11-16T12:54:47Z.
   Schema: https://kolaboro.com/api/x/data/schema/builds.json
 
 Property-based tests of the scoring rules (id: property-tests)
@@ -338,15 +350,15 @@ Property-based tests of the scoring rules (id: property-tests)
 Shipping log (id: shipping)
   URL: https://kolaboro.com/data/shipping.json
   Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.
-  Size 99.0 KB; 12 days; SHA-256 f864c863e9f61ecd5ccd0dee24fa335fe009042c4fadc264109463177cf4be72; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Friday 12:19 UTC. Last updated: 2026-11-05T15:32:01Z. Freshness target 9 days.
+  Size 187.5 KB; 26 days; SHA-256 f2e71ecfee830f02e035d22d0f1c05338761776223d62b7ed295e91f197dea65; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Friday 12:19 UTC. Last updated: 2026-11-20T07:44:27Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/shipping.json
 
 Roadmap items verified live (id: roadmap-sync)
   URL: https://kolaboro.com/data/roadmap-sync.json
   Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.
-  Size 10.6 KB; 36 items; SHA-256 2e26d7540faf5b7d1ab435a9fdda5c7dd96b28ab45bfaf994b6fb57ae2effb12; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Friday 12:19 UTC (shipping log job). Last updated: 2026-11-05T22:03:34Z. Freshness target 9 days.
+  Size 10.6 KB; 36 items; SHA-256 0921b350467973ac6a00b010be29a9bbd5ffd90c830623fb4c5b81608231d4b1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Friday 12:19 UTC (shipping log job). Last updated: 2026-11-20T07:44:27Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/roadmap-sync.json
 
 ### Map tiles used by the checks
@@ -382,23 +394,539 @@ Sample photo progress analysis (id: progress-sample)
 
 ### Not yet described
 
-findings-by-project.json (id: undescribed-findings-by-project-json)
-  URL: https://kolaboro.com/data/findings-by-project.json
-  Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.
-  Size 165.1 KB; not a table; SHA-256 f3731cbfa75acfacdf83682ba848caeec50178f72e70ec319cf3e829be24a5dd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-05T16:46:49Z.
+anomalies.json (id: undescribed-anomalies-json)
+  URL: https://kolaboro.com/data/anomalies.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 33.8 KB; not a table; SHA-256 9d99b7e2f096f84a499357ec39010f69775a0ba3d88ca178d6b3de67c6dd1b6e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+around.json (id: undescribed-around-json)
+  URL: https://kolaboro.com/data/around.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 104.6 KB; not a table; SHA-256 ea14b2353870da86ccb8f3684c318ae58683dcb61eaedb48bee65d4b56b467b0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+buildings.json (id: undescribed-buildings-json)
+  URL: https://kolaboro.com/data/buildings.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 360.8 KB; not a table; SHA-256 f6294954d7e8219bd6c4cee0cac9e73610b4aa84184cc3feb3cdc1d230c366ba; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-08.
+
+captures/2026-11-18/KSM-007-onep.json (id: undescribed-captures-2026-11-18-ksm-007-onep-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KSM-007-onep.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 554 bytes; not a table; SHA-256 b291b59b6a347bb79d9b2597e08883bd80615c2e53e334b2c9dd93dc3edf4a7e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-004-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-004-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-004-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.7 KB; not a table; SHA-256 473157d1e02f7e82953b5d2cd3c8f6201ca15023396c7e295519d094e0c75158; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-008-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-008-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-008-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 4079f71db6171fdd262e18e216927aa0479397b9227e0989fe5c0db00ede891a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-009-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-009-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-009-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 KB; not a table; SHA-256 1a4ccd5990c477c9c95376820d8955e9c110c5c7973a2207f3a038f1367a560a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-010-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-010-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-010-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.8 KB; not a table; SHA-256 5ae31aef63e10a2a3cf9ef24501d8ec7f21856763d72bfdcb3bbd9980024e205; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-011-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-011-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-011-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 KB; not a table; SHA-256 85a53f175a6cbbaa205829246c80d900b8e34b1d522b91da9fa255b672ee7299; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-012-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-012-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-012-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 7f84dad9c2d8c2cca0f7ebd029081d68030e116fef3ca427a55aca0dba7e18f5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/KUA-013-teduh-redacted.json (id: undescribed-captures-2026-11-18-kua-013-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/KUA-013-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.8 KB; not a table; SHA-256 ca61d5cae4518948652987cc4813dc2f578098ff977ee7c61546e0efd97d0622; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-001-dbpr.csv (id: undescribed-captures-2026-11-18-mia-001-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-001-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 320 bytes; not a table; SHA-256 92c4e0379d04525768258cbdf9869968ca6f010a98b9801a84d76c478e5e34a6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-002-dbpr.csv (id: undescribed-captures-2026-11-18-mia-002-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-002-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 360 bytes; not a table; SHA-256 ed51962ec47c18dfd4a6f26c308811f450893dc368bddf20c41de426d19e8484; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-003-dbpr.csv (id: undescribed-captures-2026-11-18-mia-003-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-003-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 320 bytes; not a table; SHA-256 919e1a98b7378710cc070c6f6b9c2fe25845e419d8d045d3dbe818d7eb5fb3b0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-004-dbpr.csv (id: undescribed-captures-2026-11-18-mia-004-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-004-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 388 bytes; not a table; SHA-256 115ea541f8a3240355006303d55bf0963620f54694303c5576778b898f10aa4f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-005-dbpr.csv (id: undescribed-captures-2026-11-18-mia-005-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-005-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 331 bytes; not a table; SHA-256 5ad109906ebdd5f20b325ea7db12a9185d651355d093d075c82a30ced456f69d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-006-dbpr.csv (id: undescribed-captures-2026-11-18-mia-006-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-006-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 496 bytes; not a table; SHA-256 5ef6c73fbe266ff079aafadb9ba623b61b60aa5dddba5638b0e03f146fca980d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-007-dbpr.csv (id: undescribed-captures-2026-11-18-mia-007-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-007-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 314 bytes; not a table; SHA-256 13f07951f96a07949fc0db98fc12fd436fc6c95d8beece15724fde05022b8dd6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-008-dbpr.csv (id: undescribed-captures-2026-11-18-mia-008-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-008-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 331 bytes; not a table; SHA-256 dd6e9fa0379999474605b13b1999e3368c30af86b3c975221796a9bd40ea232b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-009-dbpr.csv (id: undescribed-captures-2026-11-18-mia-009-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-009-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 347 bytes; not a table; SHA-256 642317b4a11c00f3698e260904ebe40f5dc91fd50c5d46ca73c5d85790318993; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-010-dbpr.csv (id: undescribed-captures-2026-11-18-mia-010-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-010-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 317 bytes; not a table; SHA-256 628a93f98081b2bebca912e8299d03dd5494556feea169c1b2dcece7c0b8ed49; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-011-dbpr.csv (id: undescribed-captures-2026-11-18-mia-011-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-011-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 469 bytes; not a table; SHA-256 1a1026d5eb296c000b061e67f34e4bde31e2aa3fc012fb90424ae3d1a145786d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-012-dbpr.csv (id: undescribed-captures-2026-11-18-mia-012-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-012-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 309 bytes; not a table; SHA-256 2cf758e941809e42a43a3b35e5d66eda84102cb98f4101f490d2a58a412e00e0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MIA-013-dbpr.csv (id: undescribed-captures-2026-11-18-mia-013-dbpr-csv)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MIA-013-dbpr.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 325 bytes; not a table; SHA-256 878a1ad480ed3afafccf62045c048443c12a32f7163639fc70d0920c862da0e3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-004-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-004-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-004-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 689e1b0f4d286fa712892fa6e4d48e7cc31824749cf9bca6f8248dd817b452ff; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-013-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-013-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-013-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.8 KB; not a table; SHA-256 1cc4b6e524a29b99b1919da53c4c4d4cbe8ee91627d3d7019d1f0710de4a02b6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-018-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-018-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-018-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 f360bce26a6fb9a670314271ac92b653c68bc4887229e171bbc60e22ca4f1682; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-024-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-024-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-024-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.8 KB; not a table; SHA-256 d4decf1e86401248e269c46355c21955b84fc1d32b4513be0e537a510d63e2b3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-025-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-025-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-025-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 KB; not a table; SHA-256 e13610344c2b25424ee820b3d2bf9696b95932ca999818fc9b2d8cebd66b2eec; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-026-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-026-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-026-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 2ea9fd9ff52425e169fb739919af0739cd1fb3b006004fecb3de303e3d00d0a0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-027-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-027-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-027-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 b3646e16f01a23b20d6cc94be618b80625ff4a5f60f37c062315734525f164e8; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-028-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-028-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-028-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.5 KB; not a table; SHA-256 dfa293958db274ce06080811da0a98ce9f01266e402e28162f66f87f010e0239; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/MYS-029-teduh-redacted.json (id: undescribed-captures-2026-11-18-mys-029-teduh-redacted-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/MYS-029-teduh-redacted.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.7 KB; not a table; SHA-256 a4274ce22ac17b052cd49773c0e5ef46e781aae5b7dbe1171112019e4c5bd4db; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/PHK-012-onep.json (id: undescribed-captures-2026-11-18-phk-012-onep-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/PHK-012-onep.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 639 bytes; not a table; SHA-256 1c02c7286d1a1926a2fb6536b1c345faf5ecb7a6c4305da06a31361305421175; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/onep-eia-list.json (id: undescribed-captures-2026-11-18-onep-eia-list-json)
+  URL: https://kolaboro.com/data/captures/2026-11-18/onep-eia-list.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 64.4 KB; not a table; SHA-256 79f7eed64915c14d5fe1a2508bae15e8d7b834c82070de1e7788145f7cf40834; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+captures/2026-11-18/rak-rera-projects-2026.pdf (id: undescribed-captures-2026-11-18-rak-rera-projects-2026-pdf)
+  URL: https://kolaboro.com/data/captures/2026-11-18/rak-rera-projects-2026.pdf
+  Published under /data/ but not yet described in the catalog registry.
+  Size 945.4 KB; not a table; SHA-256 783d67792639fc197db1cf4d79712670f7e226aca373b66f987a2c620dd936ff; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:16:12Z.
+
+claims-index.json (id: undescribed-claims-index-json)
+  URL: https://kolaboro.com/data/claims-index.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 MB; not a table; SHA-256 71481321c6494b3ba721596b6903ed4f5180a9889e8eada98751168f8d874b5a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+climate.json (id: undescribed-climate-json)
+  URL: https://kolaboro.com/data/climate.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 43.7 KB; not a table; SHA-256 a637bffabcfe2d5fd8810647d5d862c08a2e2381ad79f95ac58e75372e6c5013; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+construction-index.json (id: undescribed-construction-index-json)
+  URL: https://kolaboro.com/data/construction-index.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 127.0 KB; not a table; SHA-256 a89ab4a248d65203a9f0b56c28342c84076f0ff9fe4d0edcacbabf912d432575; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+construction-progress.json (id: undescribed-construction-progress-json)
+  URL: https://kolaboro.com/data/construction-progress.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 470.9 KB; not a table; SHA-256 2cce30340426908ab0f233cda04c6c5fc0cf08048865952f3426441cff1ef225; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-08.
+
+corrections.json (id: undescribed-corrections-json)
+  URL: https://kolaboro.com/data/corrections.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.5 KB; not a table; SHA-256 7f06286c1089472c16ed72f18f0d0646dc34ccca04334676dbced9dc42a6d945; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
+
+court-cases.json (id: undescribed-court-cases-json)
+  URL: https://kolaboro.com/data/court-cases.json
+  Not yet described in the catalog registry. The file describes itself as: Public court cases against developers we track, each with its case number. Facts only: court, number, date, the companies named, what the record says and the outcome or status. Private individuals who sued are not named. A filed complaint states allegations, not findings.
+  Size 10.5 KB; not a table; SHA-256 ecdea46fc375cac2c5b8b2458573ad72e4c9dd16c77de4c681e5935871afb14c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19.
+
+dev-links.json (id: undescribed-dev-links-json)
+  URL: https://kolaboro.com/data/dev-links.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 24f1b3839998d2a7313ed3f9aeff20aa56e1d21026745cc203e9148ff2ab55fc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+dev-response.json (id: undescribed-dev-response-json)
+  URL: https://kolaboro.com/data/dev-response.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 962 bytes; not a table; SHA-256 e61c93da3ea732f6b241ec408007dfe27053f96e6eb63e4f979b4924ad6c401d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T23:15:27.284Z.
+
+distance-claims.json (id: undescribed-distance-claims-json)
+  URL: https://kolaboro.com/data/distance-claims.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 25.2 KB; not a table; SHA-256 518d971f8ba98bdff4bb9e186b9b7cb8b8d0e56ac5e6700d6a90e6a21ba08f57; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+early-hints.json (id: undescribed-early-hints-json)
+  URL: https://kolaboro.com/data/early-hints.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 84553ee12d7a72402cafe3582be86e7954982dedf395730ee016a24ce9d98dde; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:04:59Z.
+
+engineering-checks.json (id: undescribed-engineering-checks-json)
+  URL: https://kolaboro.com/data/engineering-checks.json
+  Not yet described in the catalog registry. The file describes itself as: Results of the engineering checks run on the live site on the date of each block, shown on https://kolaboro.com/engineering/checks/. Written from the tool outputs; the commit that changes this file lists the runs.
+  Size 8.5 KB; not a table; SHA-256 271742aee2bf33ff1e2c5502147536ab05d3a7bdf26362bb4a1cfeb386217000; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
+
+entity-graph.json (id: undescribed-entity-graph-json)
+  URL: https://kolaboro.com/data/entity-graph.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 315.3 KB; not a table; SHA-256 4dfab54a9c2f6001370360ae1c01b0bf13d8e10f37a81ce6e7b7755e099c04af; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+gazette.json (id: undescribed-gazette-json)
+  URL: https://kolaboro.com/data/gazette.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 20.7 KB; not a table; SHA-256 5e19b4dc98dfc405d67a2cb7ad9306b6f8db2fc7bddc193dd21ccb85763c079d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+gleif-family.json (id: undescribed-gleif-family-json)
+  URL: https://kolaboro.com/data/gleif-family.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 62.6 KB; not a table; SHA-256 073ff71f61124ed149a695e91891c93b7628d3363b04f9b98b21fc8da0d459fd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T12:29:55Z.
+
+i18n/kbx_around.json (id: undescribed-i18n-kbx-around-json)
+  URL: https://kolaboro.com/data/i18n/kbx_around.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 40.0 KB; not a table; SHA-256 26b43c67ae3bc1d6a9fdcd710ec04807d8fc55db7f5489ea475f69765c28cd78; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_bulkix.json (id: undescribed-i18n-kbx-bulkix-json)
+  URL: https://kolaboro.com/data/i18n/kbx_bulkix.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 32.5 KB; not a table; SHA-256 4550a4386a5b72b91a5fed4a1d06bbe5127924b41ab698f7c555a090f7d94f30; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_buy_c29.json (id: undescribed-i18n-kbx-buy-c29-json)
+  URL: https://kolaboro.com/data/i18n/kbx_buy_c29.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 116.2 KB; not a table; SHA-256 b0c7d297d47000f08ec24ec2556c66b5b31970b5e4580a14c7c3e9807402764c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_buy_i18n.json (id: undescribed-i18n-kbx-buy-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_buy_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 71.4 KB; not a table; SHA-256 288a97502c1cb592bb288fd61c2eaad457376554c2cf20f6b76daa0e56b95031; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_buy_notes.json (id: undescribed-i18n-kbx-buy-notes-json)
+  URL: https://kolaboro.com/data/i18n/kbx_buy_notes.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 148.1 KB; not a table; SHA-256 b4af773d9115aa26a990ef03ebe2630dd144f7a9974440de13f63114e0b5b7cf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_cite_i18n.json (id: undescribed-i18n-kbx-cite-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_cite_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 53.1 KB; not a table; SHA-256 e92df4d9dd5818534e34a6a812b5116ccbad1f9d2c11b41665407263b5f7a03c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_cohort_i18n.json (id: undescribed-i18n-kbx-cohort-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_cohort_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 38.8 KB; not a table; SHA-256 6931c79efc00102449d3f90a464b8206a4632366a01a47e71d6a813a33b66cec; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_e27_i18n.json (id: undescribed-i18n-kbx-e27-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_e27_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 33.8 KB; not a table; SHA-256 ffe7999c5e841cb0995a7820537b85dd031d7f8728129434d529202ad448f9cb; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_e29_i18n.json (id: undescribed-i18n-kbx-e29-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_e29_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 116.2 KB; not a table; SHA-256 ff2878e74c0636fcc3212fb102beb42b978ed9df7b1494c402723538102c58f5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_facets_i18n.json (id: undescribed-i18n-kbx-facets-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_facets_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 130.0 KB; not a table; SHA-256 6ac1d6c6bd094a3c72203537696e1887a78734a802e54916a268aadf8d0c73cc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:40:38Z.
+
+i18n/kbx_fc_i18n.json (id: undescribed-i18n-kbx-fc-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_fc_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 65.2 KB; not a table; SHA-256 75bea6ab20caaa2b50b99c1ef12cb859642595d817f27a47fed8e29c2634229d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_h29_i18n.json (id: undescribed-i18n-kbx-h29-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_h29_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 131.5 KB; not a table; SHA-256 40d0495ca9872d7328a6e9dd460fa83e905ad67b3112dccd883a243c5914f592; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_land.json (id: undescribed-i18n-kbx-land-json)
+  URL: https://kolaboro.com/data/i18n/kbx_land.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 48.6 KB; not a table; SHA-256 52e45d24eaf180695dbae29b552edd44280f9abf94ce8f9876ba92d029ffbb7d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_money.json (id: undescribed-i18n-kbx-money-json)
+  URL: https://kolaboro.com/data/i18n/kbx_money.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 29.8 KB; not a table; SHA-256 2954f9109961ce6f65fd0279c61a9272f69efab444483570d1eb95bfd05a0577; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_n29i.json (id: undescribed-i18n-kbx-n29i-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n29i.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 81.5 KB; not a table; SHA-256 4d426350ceaae3b149381ef705db51553574ccd530e1b31c4c348674ac996c69; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_n30a_i18n.json (id: undescribed-i18n-kbx-n30a-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n30a_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 70.0 KB; not a table; SHA-256 4df886001639d593aeaa5b82b46f0aef51c4438038a8523042dca43e311074d2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:31:43Z.
+
+i18n/kbx_n30b_i18n.json (id: undescribed-i18n-kbx-n30b-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n30b_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 65.6 KB; not a table; SHA-256 423447318e403134bd88094c416c546d2d772f9b4ed2544a7b932176a2194b0d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_n30c_i18n.json (id: undescribed-i18n-kbx-n30c-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n30c_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 82.5 KB; not a table; SHA-256 2186c4ed0bbfab4394fb865cf628d80664b3b56e914a2a1218a39a1e32123295; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_n31d_i18n.json (id: undescribed-i18n-kbx-n31d-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n31d_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 34.0 KB; not a table; SHA-256 a661bc5770566e028937bdef2eb0afe0026c7f2a90a2564639e2e667e8e669bd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_n33a.json (id: undescribed-i18n-kbx-n33a-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n33a.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 22.3 KB; not a table; SHA-256 bf045d61e3902cbec56aec917970e59135bc3ddcf677d1fe8b7b13f5fd2f9bab; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:52:30Z.
+
+i18n/kbx_n33c.json (id: undescribed-i18n-kbx-n33c-json)
+  URL: https://kolaboro.com/data/i18n/kbx_n33c.json
+  Not yet described in the catalog registry. The file describes itself as: kolaboro.com n33c (20 Nov 2026): search titles and descriptions built from each page's own data (developer and project pages), 8 languages. Loaded once per isolate by _worker.js/kbx_strings.js (TB.kbx_n33c_S).
+  Size 8.8 KB; not a table; SHA-256 aecd4c725e09d58202d0739aec61a06eba50a3d6f2eeac3f74c024906ba4030b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:54:55Z.
+
+i18n/kbx_named_i18n.json (id: undescribed-i18n-kbx-named-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_named_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 201.8 KB; not a table; SHA-256 891a0842212008e4f3c8fd368ff4fe709ea9d3b98639de8bc12dc5d9df6a0f9e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:40:38Z.
+
+i18n/kbx_net.json (id: undescribed-i18n-kbx-net-json)
+  URL: https://kolaboro.com/data/i18n/kbx_net.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 31.5 KB; not a table; SHA-256 53b72f4c745ed2ff0fb24ae37d8143cd372a9b8484f85ed835342c025a797762; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_paper.json (id: undescribed-i18n-kbx-paper-json)
+  URL: https://kolaboro.com/data/i18n/kbx_paper.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 53.6 KB; not a table; SHA-256 ac28579885a6fea7a16da7a2edfb66b6a0215f21c225825a60682c9bb4108ca7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_plot.json (id: undescribed-i18n-kbx-plot-json)
+  URL: https://kolaboro.com/data/i18n/kbx_plot.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 52.0 KB; not a table; SHA-256 d50890b670c9348d10a28d28b2f5eccc86c38412393dc2eff7dfc240b883787a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_pp.json (id: undescribed-i18n-kbx-pp-json)
+  URL: https://kolaboro.com/data/i18n/kbx_pp.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 48.5 KB; not a table; SHA-256 f6b0722d0344886ed8c1ba804c9bca90525498b4f22099a380bcd76dd080c178; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_rules.json (id: undescribed-i18n-kbx-rules-json)
+  URL: https://kolaboro.com/data/i18n/kbx_rules.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 27.3 KB; not a table; SHA-256 29c05dfb0623187935f7d5b4174037f18a753c5cf3c0330d66e33fe6c82d7c63; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_stage.json (id: undescribed-i18n-kbx-stage-json)
+  URL: https://kolaboro.com/data/i18n/kbx_stage.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 66.4 KB; not a table; SHA-256 d4d1680b3c9ff1a1b76b0337cca779100fd4d97ad637336b81da8825f352eb1d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:29:51Z.
+
+i18n/kbx_t27_i18n.json (id: undescribed-i18n-kbx-t27-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_t27_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 89.3 KB; not a table; SHA-256 299f61baf1f52547b989096beb32533f4963f717e8d53c488d79d9f384aa7bcd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_tr_i18n.json (id: undescribed-i18n-kbx-tr-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_tr_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 97.3 KB; not a table; SHA-256 b2dbf3d3c9a20653eda41f39e4e6c396d2b570ffc1635ca4d3423d45b74357c5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:40:38Z.
+
+i18n/kbx_trust_i18n.json (id: undescribed-i18n-kbx-trust-i18n-json)
+  URL: https://kolaboro.com/data/i18n/kbx_trust_i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 112.3 KB; not a table; SHA-256 f54750b0a6629ccd6a3b1e8655feb866effb2b43e24babcffa264d1a4f5aac44; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:17:36Z.
+
+i18n/kbx_watch.json (id: undescribed-i18n-kbx-watch-json)
+  URL: https://kolaboro.com/data/i18n/kbx_watch.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 28.6 KB; not a table; SHA-256 161b623322d6eef87ee0159f5da314cf27c83a458efcee0fa38d71e30b518ab4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+i18n/kbx_web.json (id: undescribed-i18n-kbx-web-json)
+  URL: https://kolaboro.com/data/i18n/kbx_web.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 32.4 KB; not a table; SHA-256 3301c035baf8061632e6fe9a496c0f04c8cdbf762c9a122aede389b3e5a163bd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:42:17Z.
+
+image-reuse.json (id: undescribed-image-reuse-json)
+  URL: https://kolaboro.com/data/image-reuse.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.5 KB; not a table; SHA-256 e68f1cf96645c11e759dd9c90aeada6b4ef9c66eb45496fd0c3a0525745c621a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17.
 
 indexnow.json (id: undescribed-indexnow-json)
   URL: https://kolaboro.com/data/indexnow.json
   Published under /data/ but not yet described in the catalog registry.
-  Size 1.2 MB; not a table; SHA-256 a8d661f232d46f028deb9b591c7a43efbcd47c38b39b0a675f1fe4076aabcb54; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T17:09:53Z.
+  Size 1.8 MB; not a table; SHA-256 dbbed2ca67cf5aa18a05cbaf031015823c932f316d5403a727606741daeeaf64; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T18:20:42Z.
 
-live-findings.json (id: undescribed-live-findings-json)
-  URL: https://kolaboro.com/data/live-findings.json
-  Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).
-  Size 132.9 KB; not a table; SHA-256 17872d5cfea18a0d08a17fc307d3a27fd4888254dfe4afdebda9cdbc155cc28e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-05T22:12:33Z.
+land-rules.json (id: undescribed-land-rules-json)
+  URL: https://kolaboro.com/data/land-rules.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 37.2 KB; not a table; SHA-256 50b353d0a888fb7d86a1247ece75bfc08876a36eda73df87ca5ea7d3a940fdc3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
+
+lastmod.json (id: undescribed-lastmod-json)
+  URL: https://kolaboro.com/data/lastmod.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 303.5 KB; not a table; SHA-256 e977a916a0e04b455404862c30576f1d5cdd258f127fe46569cb4dc482f0f01f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T18:00Z.
+
+listed-developers.json (id: undescribed-listed-developers-json)
+  URL: https://kolaboro.com/data/listed-developers.json
+  Not yet described in the catalog registry. The file describes itself as: Developers we track whose published name matches a listed company exactly (legal-form endings aside): exchange, ticker, the official place to read filings, and for SEC filers the latest annual report. No share prices, no advice.
+  Size 13.6 KB; not a table; SHA-256 757592d83527527f3124257fdda4fef40fbc8b6cb55d019f93d6469d097d6095; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+lookalikes.json (id: undescribed-lookalikes-json)
+  URL: https://kolaboro.com/data/lookalikes.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 60.8 KB; not a table; SHA-256 9deabb4ae2a6df72af0253b2507525916b5ef080b6cd49dd1ab05a9a7ee6f420; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19.
 
 lookup-coverage.json (id: undescribed-lookup-coverage-json)
   URL: https://kolaboro.com/data/lookup-coverage.json
@@ -406,23 +934,1463 @@ lookup-coverage.json (id: undescribed-lookup-coverage-json)
   Size 5.3 KB; not a table; SHA-256 d3446f2e80aae4f2be760ab95e93297fce657edd726558a131bd77808ca34e2f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: unknown. Last updated: 2026-11-05.
 
+map-history.json (id: undescribed-map-history-json)
+  URL: https://kolaboro.com/data/map-history.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 190.4 KB; not a table; SHA-256 5bd4b0bba2a7f0799ab107fd5fc7ae80aee000f140f3961e8d1a5dc37efe9a55; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
+
+n31a-i18n.json (id: undescribed-n31a-i18n-json)
+  URL: https://kolaboro.com/data/n31a-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 78.0 KB; not a table; SHA-256 9a5134f274818daad18d2a15f4748d4c15a995c8fe7275aadb500add51fc580c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:06:09Z.
+
+n31b-i18n.json (id: undescribed-n31b-i18n-json)
+  URL: https://kolaboro.com/data/n31b-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 199.5 KB; not a table; SHA-256 961977df126b69d48dd0d3543b803834de29818ea00bfb40afe74cddb7047472; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:06:20Z.
+
+n31c-i18n.json (id: undescribed-n31c-i18n-json)
+  URL: https://kolaboro.com/data/n31c-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 45.6 KB; not a table; SHA-256 9f7464b3c069939bea6b7639e3ab21877091189d8a8b519f706b7d10ad40c197; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:38:33Z.
+
+n31e-i18n.json (id: undescribed-n31e-i18n-json)
+  URL: https://kolaboro.com/data/n31e-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 261.9 KB; not a table; SHA-256 500722a362627866d3f08ffe7143c1ddefae31137119a8974205b14d85ea81d3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:31:43Z.
+
+n31s-i18n.json (id: undescribed-n31s-i18n-json)
+  URL: https://kolaboro.com/data/n31s-i18n.json
+  Not yet described in the catalog registry. The file describes itself as: kolaboro.com batch 31 (n31s): strings of _worker.js/kbx_n31s.js in 8 languages (S), /tools/ hub entries by link (TOOLS), glossary terms by anchor (GL). Read once per isolate.
+  Size 103.5 KB; not a table; SHA-256 1966f841a7d07b124f838a823490a7384cfa8f98f003beb08d7ffa37ab36deb9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:05:42Z.
+
+n31t-i18n.json (id: undescribed-n31t-i18n-json)
+  URL: https://kolaboro.com/data/n31t-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 149.9 KB; not a table; SHA-256 9bf8e90cd006cae71c64534f391a5236d6bb3929ad8d755a90511a3b798a8850; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:41:45Z.
+
+n32s-i18n.json (id: undescribed-n32s-i18n-json)
+  URL: https://kolaboro.com/data/n32s-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.4 KB; not a table; SHA-256 33c7e94f20a56007e515e496974436cececf1dcbf38a280fe826fcb08eb0a843; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:40:25Z.
+
+n32t/ar/_common.json (id: undescribed-n32t-ar-common-json)
+  URL: https://kolaboro.com/data/n32t/ar/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 15.0 KB; not a table; SHA-256 3e5ba2e3b45314c3fac5396b499b5a73fe766cbb361f23070f0fabbbe3bd6a49; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/m.json (id: undescribed-n32t-ar-m-json)
+  URL: https://kolaboro.com/data/n32t/ar/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.2 KB; not a table; SHA-256 11db22766211482e0c5386a1cae90ae107442f6ca0894003d74ad740635fd5a5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/new.json (id: undescribed-n32t-ar-new-json)
+  URL: https://kolaboro.com/data/n32t/ar/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.8 KB; not a table; SHA-256 167ad6ed700aced5b480f0d4d5250d3911f610b9aec5f06ec224911bc2aefd22; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/registers.json (id: undescribed-n32t-ar-registers-json)
+  URL: https://kolaboro.com/data/n32t/ar/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 84.2 KB; not a table; SHA-256 090ee7b5b4525cc39134acfa7f1d2006b362ba2b1a6da5e765dbe6a009c58c83; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/ar/tools-agent-check.json (id: undescribed-n32t-ar-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.2 KB; not a table; SHA-256 ae2ed8b23b0a4362246476d2ce4033a25ea01dea5f6d503aa6ad44ebca22d1af; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/ar/tools-build-cost.json (id: undescribed-n32t-ar-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.4 KB; not a table; SHA-256 16c12d168d89bdec9f26f554b24f512070052855889ca7aa660fadb92a04e2da; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-contract-check.json (id: undescribed-n32t-ar-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.1 KB; not a table; SHA-256 bd1d2e99dd3eccc66d0015023a2493243e62398256eb0e748713b9de47b13c32; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/ar/tools-contract-scan.json (id: undescribed-n32t-ar-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.7 KB; not a table; SHA-256 0eafc1301cb5645b4dce1e2eb93c8bbebfdfc93c11b87f0e3c11cb5ad367734d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-currency-risk.json (id: undescribed-n32t-ar-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 14.0 KB; not a table; SHA-256 4748afb4fc382bab9c28137863cc46136a135d461ed96158e39ba507d9c76c0b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-delay-compensation.json (id: undescribed-n32t-ar-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.5 KB; not a table; SHA-256 e906dec438d8e24a714ccf6f6c320a3936526ad564b6bb533535b896b4c4089f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-deposit-protection.json (id: undescribed-n32t-ar-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.2 KB; not a table; SHA-256 f2d52aca86eb87628099c6bf318d9ee8412090f000e8f779cd085e7e2bb363e9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-image-check.json (id: undescribed-n32t-ar-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.0 KB; not a table; SHA-256 6eefdaaa1f39158ee6eb13c51ccec4d43756e1f2367dc34cdc5111148fe3cfc8; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/ar/tools-insolvency-check.json (id: undescribed-n32t-ar-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.8 KB; not a table; SHA-256 0484e90fda84d51e23cbba66d99f8992dbc500d1410ab873ea0bb0ba6c3cc440; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/ar/tools-late-handover.json (id: undescribed-n32t-ar-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.3 KB; not a table; SHA-256 8db1841cecb14cdb9c8fd86897fb9ab18e4f60a4d3c53c96602213c4af1a93fd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-market-match.json (id: undescribed-n32t-ar-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.8 KB; not a table; SHA-256 73da34eb46bdd27c7fcfd7262155bde910522cee4597de501e55366d604be82a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-payment-plan.json (id: undescribed-n32t-ar-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 KB; not a table; SHA-256 3827a0b35942bea8141202e41394605708d897bd265807461cd35500045bee69; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-payment-risk.json (id: undescribed-n32t-ar-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.0 KB; not a table; SHA-256 1e389b111f801cbe6f8a75e0c44c0787ffe24386258b1a59ba5813b9d348f3d7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-pdf-check.json (id: undescribed-n32t-ar-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.9 KB; not a table; SHA-256 e6d14168de587ba80705bafcdbfcf1274e94f8618595872ae7632514ba77922d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/ar/tools-permit-check.json (id: undescribed-n32t-ar-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.2 KB; not a table; SHA-256 0a4109c3a423d1239474003b0984574f7244ff894a6c2eb67ae02f1f1cbece88; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/ar/tools-refund-tracker.json (id: undescribed-n32t-ar-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.4 KB; not a table; SHA-256 581bb9fc5621a532e8e9d7e8441f44cd46eec06326882df90d9b91b26e394ce2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-resale-exit.json (id: undescribed-n32t-ar-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.3 KB; not a table; SHA-256 d3d84597f6021ef89bdf134f8d8f10306795c37d1b2b74449176d9cd62a6ccbf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-risk.json (id: undescribed-n32t-ar-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.8 KB; not a table; SHA-256 6c4320e40f83c8b9ab72307c2bb35a204a5c0c8647a487c29c1a266ce28372ed; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-site-visit.json (id: undescribed-n32t-ar-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.7 KB; not a table; SHA-256 ca21694440316f56d30b89cdc7172abded255de8f3c6a938b478a52aa3e78ef5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/ar/tools-total-cost.json (id: undescribed-n32t-ar-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.9 KB; not a table; SHA-256 777cdc96f1d848f95f86f2e5f1ecc8d08ee0d010ceee2c5102ef051727cd6d40; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/tools-yield-check.json (id: undescribed-n32t-ar-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/ar/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.6 KB; not a table; SHA-256 7cdfad3b3aa5347c71b04a3fd945f8eda888987ba46885217e8c92274dbf9755; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ar/vs.json (id: undescribed-n32t-ar-vs-json)
+  URL: https://kolaboro.com/data/n32t/ar/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.0 KB; not a table; SHA-256 51b36195e1e1dc0a35515ffa48f68751e46642db4961ede3e6680d4f27650f13; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/_common.json (id: undescribed-n32t-de-common-json)
+  URL: https://kolaboro.com/data/n32t/de/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 14.2 KB; not a table; SHA-256 ad769c7e66a2ad99e8549601bede3aed46f568c3c2e9459bec4bb2bb88fc8647; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/m.json (id: undescribed-n32t-de-m-json)
+  URL: https://kolaboro.com/data/n32t/de/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 973 bytes; not a table; SHA-256 a8aa610ed2f587f9baccac803b605fa9ddb0bdfb3193549fb180b54b076d5bce; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/new.json (id: undescribed-n32t-de-new-json)
+  URL: https://kolaboro.com/data/n32t/de/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.3 KB; not a table; SHA-256 bc92b4372ff39ec239666a9b1807f23e766f513320a4b5520147cb26547c9e0d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/registers.json (id: undescribed-n32t-de-registers-json)
+  URL: https://kolaboro.com/data/n32t/de/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 74.4 KB; not a table; SHA-256 95f8b699a4f416f240f4f675a4f4764d17d93cd27797d137b8c7abc64e466034; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/de/tools-agent-check.json (id: undescribed-n32t-de-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.0 KB; not a table; SHA-256 384dd69a0219a4356e0e586148cbaf4bad92753944056bb40ba3209fc7e5b8f4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/de/tools-build-cost.json (id: undescribed-n32t-de-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 d9a2972825fba76f5c4d03b305a0ed74ab5d339995eaedb9d445ef9e41aea240; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-contract-check.json (id: undescribed-n32t-de-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 35d0229585958628ce5bd1c91592ab479ad0ccd69937adf4680499962d0bf7fa; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/de/tools-contract-scan.json (id: undescribed-n32t-de-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 73bdc2e7461c7699247f50e3a622a7658ac11262a7e284e4523dea783a7e5cd2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-currency-risk.json (id: undescribed-n32t-de-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 12.1 KB; not a table; SHA-256 f9cfecb63e5d12a516597abcc5b673295263537f429bf29dcf511624ace90b5d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-delay-compensation.json (id: undescribed-n32t-de-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.8 KB; not a table; SHA-256 d5b1daa26e0d17c841b589c929f75c51cea17243ff0481ec81282725c98e9597; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-deposit-protection.json (id: undescribed-n32t-de-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.2 KB; not a table; SHA-256 82d09bf5f195f06725a3c7e8a539243a9c831ae1eea8ae55586df33ffe820acd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-image-check.json (id: undescribed-n32t-de-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.3 KB; not a table; SHA-256 c094c607ab53be9a2887dd26b46e645262212cc3036c8ab39346161483504f6e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/de/tools-insolvency-check.json (id: undescribed-n32t-de-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.8 KB; not a table; SHA-256 1cfdd8333fa61b102380f942de43520d4146c08398d5146699933a47be1530c0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/de/tools-late-handover.json (id: undescribed-n32t-de-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.8 KB; not a table; SHA-256 aaf82484cfd65101884dce68331646944752a6120fb11fc487221337a4404f41; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-market-match.json (id: undescribed-n32t-de-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.7 KB; not a table; SHA-256 fea38dec7c9e1ef10333501a4485d63bd2e84583e5e27cad91c955a36060e27f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-payment-plan.json (id: undescribed-n32t-de-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.4 KB; not a table; SHA-256 a1bff03ede425e5c10a89e64353ff4da565c41efa66ff6d68ca7f5a2549faa3e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-payment-risk.json (id: undescribed-n32t-de-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.0 KB; not a table; SHA-256 e495d67782024528fa4e52e06433706ff1e9330cd65c674b004dd44f70b71161; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-pdf-check.json (id: undescribed-n32t-de-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 dd8459a92d73e48042d64e5508fe91c0f42566d8cb3a5e6cdf91ad63d9b70e67; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/de/tools-permit-check.json (id: undescribed-n32t-de-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.9 KB; not a table; SHA-256 fb2942562aa524b34046fd681570faf696f59e9812dc738426528766811e0adf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/de/tools-refund-tracker.json (id: undescribed-n32t-de-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.5 KB; not a table; SHA-256 7d0bf0524e55490d502516fab39e8797264b6706d7551c96b5c03b701f18e167; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-resale-exit.json (id: undescribed-n32t-de-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.1 KB; not a table; SHA-256 2d8778980e339cec9d32f6f889ce732da8e59b96418dd3626a3e3eee7fc71799; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-risk.json (id: undescribed-n32t-de-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.6 KB; not a table; SHA-256 cef26783f534e4106f9c5067aff699863cbc4d74128d3a411859c06a85e3bffb; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-site-visit.json (id: undescribed-n32t-de-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.9 KB; not a table; SHA-256 a1ec08761229f1cdcb67008d9c34153bd61b25f660072c91f8d84724e0e27ca0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/de/tools-total-cost.json (id: undescribed-n32t-de-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.0 KB; not a table; SHA-256 9095db3aede7a8093e7069994ce6bb500710377ce007cacb9fe05912497e34ec; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/tools-yield-check.json (id: undescribed-n32t-de-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/de/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 28d9cb1508cef41c5c1f1918ed4dbd4e6b71b3482df29e89e19e73957ee5557a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/de/vs.json (id: undescribed-n32t-de-vs-json)
+  URL: https://kolaboro.com/data/n32t/de/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 780 bytes; not a table; SHA-256 a8f83afe3652420309921435fdc3fc507deef6243bbba323cd486e54168e67bc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/_common.json (id: undescribed-n32t-es-common-json)
+  URL: https://kolaboro.com/data/n32t/es/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 14.1 KB; not a table; SHA-256 3abde3a3371af8e3503456fd4835dab420a4167be558172c1adeb88ed0d3be8e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/m.json (id: undescribed-n32t-es-m-json)
+  URL: https://kolaboro.com/data/n32t/es/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 977 bytes; not a table; SHA-256 eab7e176de199fe46fefe0a58f4e14e60ff8cb66b4e8b426a1660d3c21f8af87; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/new.json (id: undescribed-n32t-es-new-json)
+  URL: https://kolaboro.com/data/n32t/es/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.3 KB; not a table; SHA-256 107ef19a3c33b5fdf89a91ed57b49bb33a2d1f15b17e8f41b548b215a603add4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/registers.json (id: undescribed-n32t-es-registers-json)
+  URL: https://kolaboro.com/data/n32t/es/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 74.4 KB; not a table; SHA-256 5492c0226a7b39f8a727ff12d7ceb7717924008f817fcf753e6b541d13e1f11c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/es/tools-agent-check.json (id: undescribed-n32t-es-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.0 KB; not a table; SHA-256 18db48bd414b6c6b8c010f1cc4fca801e845c93d0c8e4ee3428fcb4fca6a0bc4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/es/tools-build-cost.json (id: undescribed-n32t-es-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.1 KB; not a table; SHA-256 5a413fbe5433bc0703d559a58acc871d55b1d344eb0da96d3b59849a6f27df96; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-contract-check.json (id: undescribed-n32t-es-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 177409db64b782916a16cb700ea30ed6df0567e6d16bdbf68bf251bbf96d88db; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/es/tools-contract-scan.json (id: undescribed-n32t-es-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 49ff82b64cd4dac8ff214ba03c265ddd685a4a9053180c7d7829302f5498f8cb; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-currency-risk.json (id: undescribed-n32t-es-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.9 KB; not a table; SHA-256 3ef6bcc576a0ae7f8fbbf5d6616a91d396cdf6946e2efbb11b42b9f90321fa1b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-delay-compensation.json (id: undescribed-n32t-es-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.6 KB; not a table; SHA-256 fba155742c32ce1292f44ba2581c3ebac7358f8d4c4d180037d745d8cde34a85; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-deposit-protection.json (id: undescribed-n32t-es-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.1 KB; not a table; SHA-256 fd8f8118135e170e894da4e76eafb3f317cdd0576936fed04afc6e5a8434e06e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-image-check.json (id: undescribed-n32t-es-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.5 KB; not a table; SHA-256 bb36b69e17b5013c76230742e4949500e5f1287ddb98118f2d37e48523435471; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/es/tools-insolvency-check.json (id: undescribed-n32t-es-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.0 KB; not a table; SHA-256 e179f89ca53b59f05e125b80088233f8ed149dca2582886b3d26a1c4a6b24431; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/es/tools-late-handover.json (id: undescribed-n32t-es-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.8 KB; not a table; SHA-256 c07e62a3c1f6ae83847e7e9a71a7c7cc4e038869e87787fb7ba4875d85602843; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-market-match.json (id: undescribed-n32t-es-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.8 KB; not a table; SHA-256 504c1ff010fadbf945e3d9fb8d60f77b461d845cb9b9170c761cf4e196b506ad; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-payment-plan.json (id: undescribed-n32t-es-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 79cd772c90cb1fcda5a9f5289b621139485f9a72808a18d6076ba3174def0e23; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-payment-risk.json (id: undescribed-n32t-es-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.9 KB; not a table; SHA-256 a2d2f61afc02f8269cddd492d5a9cbd9755ce45ccbb5740e5c7048b2cd2bc44d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-pdf-check.json (id: undescribed-n32t-es-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 6226a4a46f74cf9ca3a9523878b178ec27a7982746ed21fa6281f74fe595de8e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/es/tools-permit-check.json (id: undescribed-n32t-es-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.9 KB; not a table; SHA-256 412cfcc58570b706b2e787d88862c74fba9a4cfeb9799ff6ea0f4977cf67a43e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/es/tools-refund-tracker.json (id: undescribed-n32t-es-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.5 KB; not a table; SHA-256 556f1322a4c622555ad021e2e13d932f391bd6a0951d86005486bcc03e73eb53; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-resale-exit.json (id: undescribed-n32t-es-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.9 KB; not a table; SHA-256 735f6387aaa3d0585325a689c219efbfcfbb1bc3f69bb44bca3edb55016653ce; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-risk.json (id: undescribed-n32t-es-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.5 KB; not a table; SHA-256 8c77733b7f726d064a7fbe399c7ce0402522d30a049d899a863249dd64723f40; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-site-visit.json (id: undescribed-n32t-es-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.9 KB; not a table; SHA-256 53b776f43ed735e66776e9c09baef0da512b7548ef19ba7556c3004f33391b05; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/es/tools-total-cost.json (id: undescribed-n32t-es-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.1 KB; not a table; SHA-256 d4a97cdf940c5a08c289a1964282dd59e4cac7401cc33c589083547b4c20c7c6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/tools-yield-check.json (id: undescribed-n32t-es-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/es/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 541b30a386ccc0779605448f3dd0e9a88985a47d6f680c66dde9aae4aef98ace; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/es/vs.json (id: undescribed-n32t-es-vs-json)
+  URL: https://kolaboro.com/data/n32t/es/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 827 bytes; not a table; SHA-256 736f4760c19cd22085e151aa34df07091052618fe8dd494a6658584955ddfae8; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/_common.json (id: undescribed-n32t-fr-common-json)
+  URL: https://kolaboro.com/data/n32t/fr/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 14.2 KB; not a table; SHA-256 64aa3360af6ff97db644f643cc9b5c2f13a647fff586aef4c94653f0b2b5fa0b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/m.json (id: undescribed-n32t-fr-m-json)
+  URL: https://kolaboro.com/data/n32t/fr/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 935 bytes; not a table; SHA-256 d4ed47f7fd575c75783ee4f8f49bf745003bed87dc645b27fd27dae186f5a72e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/new.json (id: undescribed-n32t-fr-new-json)
+  URL: https://kolaboro.com/data/n32t/fr/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.3 KB; not a table; SHA-256 6f2ddf8512174bc911b6963f1d744545792066574d08002aaa373ccbbbe113b5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/registers.json (id: undescribed-n32t-fr-registers-json)
+  URL: https://kolaboro.com/data/n32t/fr/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 76.0 KB; not a table; SHA-256 c85ae5f93ec55e42d0e34f5bd0ef4819f7b38d6e9e3916578d15722503526b65; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/fr/tools-agent-check.json (id: undescribed-n32t-fr-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.2 KB; not a table; SHA-256 20a31cf7260fe1c2acb6ae15956e4db0234c635ee152ce8c466fe49c781b7a5a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/fr/tools-build-cost.json (id: undescribed-n32t-fr-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.1 KB; not a table; SHA-256 ee005dfb96d6827f0e2d48f7781e3a2e46a3350a1bfda2bd497200ce9783123e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-contract-check.json (id: undescribed-n32t-fr-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 1900736f106f01ed350153b0d490da8a190864cb996d3a7809c16b78eba87ce0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/fr/tools-contract-scan.json (id: undescribed-n32t-fr-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 e88a99ccf9608c09753a4039bbbe991e56bb9698c89920fdcbf6d5c7e6c07f4d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-currency-risk.json (id: undescribed-n32t-fr-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 12.3 KB; not a table; SHA-256 ea068a25a21a4a45633f2812afb8f57fbfb006df36addbe854f4ef5f9037c78f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-delay-compensation.json (id: undescribed-n32t-fr-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.9 KB; not a table; SHA-256 703980edbbb266114db5d3e12911e446d7b73bf9d78ecb278fcf7c3bcbd2662a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-deposit-protection.json (id: undescribed-n32t-fr-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.3 KB; not a table; SHA-256 228f56c4531b964b866efee056f7d9167597f4f0c0bad7b5e215ae72ca2fa499; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-image-check.json (id: undescribed-n32t-fr-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.6 KB; not a table; SHA-256 fd3085d6d908153d2d47966c18ee2af380436bd43ea3f80bd747893849f68e7b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/fr/tools-insolvency-check.json (id: undescribed-n32t-fr-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.1 KB; not a table; SHA-256 3ac60fd6d32ea5d6d3e48ed254f2fdae607298884803e12e029799de2730c797; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/fr/tools-late-handover.json (id: undescribed-n32t-fr-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.7 KB; not a table; SHA-256 6b92044df321c72c1a55af77dd9365ef4a71596fe49825f8ab0200131e209a62; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-market-match.json (id: undescribed-n32t-fr-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.7 KB; not a table; SHA-256 2e70ed51bc3ca20962732dbac69664fc9c85573f10dd9c08daea6a99ff95f1bc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-payment-plan.json (id: undescribed-n32t-fr-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 5f04c7fd67ee42359e2218ec5f8689fecf107ec3180ad2236c508fcb9f2dc06d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-payment-risk.json (id: undescribed-n32t-fr-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.0 KB; not a table; SHA-256 44a1a5c0f6fc06dd59d8955c7e81fc09a6e7d15f7d761bea5808cfd02db4c9dc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-pdf-check.json (id: undescribed-n32t-fr-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 778d84ca0126c76d833627178966357c9f67f351828f759f79657a1585b2cedd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/fr/tools-permit-check.json (id: undescribed-n32t-fr-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.0 KB; not a table; SHA-256 47304179c0f122c1205ce78b29c034ffb8c2172220d1a800c04921254633401f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/fr/tools-refund-tracker.json (id: undescribed-n32t-fr-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.5 KB; not a table; SHA-256 ef9d060aa3fd6362e10dbe5df2a4780ee629683f1c0f279c988618a834ad1c7d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-resale-exit.json (id: undescribed-n32t-fr-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.0 KB; not a table; SHA-256 772be8593bf9e27d9f1ab25912e99e6702c31b7692035a8fcbb4f64c49c4cc1c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-risk.json (id: undescribed-n32t-fr-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.5 KB; not a table; SHA-256 c1bc2b5f48f2ab11a38a32f9251d2487ae6e47fdbf51578786e99c389a0e83e5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-site-visit.json (id: undescribed-n32t-fr-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.1 KB; not a table; SHA-256 b2b7a63501d7e80e28bbbd4e950abfbece29779ffa21ed2ea16316d651645f57; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/fr/tools-total-cost.json (id: undescribed-n32t-fr-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 ef258e4228d6d43294e38180862c5f4d5f0515ccdce0b78b339109f81c9124ff; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/tools-yield-check.json (id: undescribed-n32t-fr-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/fr/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 1746f7505ce26fb809dc02bae114c512709e614bca527d088c0b5f7f7b37d02f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/fr/vs.json (id: undescribed-n32t-fr-vs-json)
+  URL: https://kolaboro.com/data/n32t/fr/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 825 bytes; not a table; SHA-256 4d747276beeda68c3f3a699e71e15580873b0f7ec161081812821c7138ba5250; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/manifest.json (id: undescribed-n32t-manifest-json)
+  URL: https://kolaboro.com/data/n32t/manifest.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 5ce38c90e8b9939371a55fff92a9dbe5b2e543ee1cdd657c7fdac763ff7f43fd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/nl/_common.json (id: undescribed-n32t-nl-common-json)
+  URL: https://kolaboro.com/data/n32t/nl/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 14.1 KB; not a table; SHA-256 46aa1329c6cd53f377bc5ac80a11e63d89d730fdef399586ded1e8cb620d1400; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/m.json (id: undescribed-n32t-nl-m-json)
+  URL: https://kolaboro.com/data/n32t/nl/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 948 bytes; not a table; SHA-256 cb319dc14e1b90c4daadf80116883f4f72aded6906cd7f0d61b6cd25d4279e7e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/new.json (id: undescribed-n32t-nl-new-json)
+  URL: https://kolaboro.com/data/n32t/nl/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.2 KB; not a table; SHA-256 76d5a8f810599ecd7faeb4f041d9d55ae69dfc37c5b8c1b6dedf532dcd766e4a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/registers.json (id: undescribed-n32t-nl-registers-json)
+  URL: https://kolaboro.com/data/n32t/nl/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 73.5 KB; not a table; SHA-256 c689751a01a19104b45174fc4f92645ae1b833502976e86d6e5d5e703560fa5c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/nl/tools-agent-check.json (id: undescribed-n32t-nl-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.0 KB; not a table; SHA-256 2af6ca3d3f28961ae9b0f8cbbf73a587349a6759d56f1964d3be88774986519e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/nl/tools-build-cost.json (id: undescribed-n32t-nl-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 7f3dc1d9da5abde2f97ccb9992f9a1b866f8eebf3bc4ee47af46f1e1bbccfff7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-contract-check.json (id: undescribed-n32t-nl-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 aa68a3469ad7ba41cccf4b945ea7bae0aa8c855b116f445e61e382484efae9db; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/nl/tools-contract-scan.json (id: undescribed-n32t-nl-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 49924daf7b73899c93d7f986dca9df7238b3002b13f4706e98a918b0eca611b3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-currency-risk.json (id: undescribed-n32t-nl-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.9 KB; not a table; SHA-256 25eb305fe72a81cab4699ea7f1a44bb6007ccc878f9807d6fa6dfb86bea3e00c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-delay-compensation.json (id: undescribed-n32t-nl-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.7 KB; not a table; SHA-256 15d76e56dd5ca61938b1cdfb0723ae697d1bd9bf37e82853294b637cdc887376; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-deposit-protection.json (id: undescribed-n32t-nl-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.1 KB; not a table; SHA-256 e99f20b3392b1db788650d2eed70a899a93fe9b74e39a5bfa622e65fd616af0e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-image-check.json (id: undescribed-n32t-nl-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.4 KB; not a table; SHA-256 85ae56fe244bcd07dccc3da301f85b6c98ece081988f439f6a52459a40ee42e6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/nl/tools-insolvency-check.json (id: undescribed-n32t-nl-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.8 KB; not a table; SHA-256 ba3a1ea6874571334daf5d6aa8fa03327685ea8dea79ac1b174db12c80ce0b44; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/nl/tools-late-handover.json (id: undescribed-n32t-nl-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.7 KB; not a table; SHA-256 80a0811f91715cf1e8b671d10cde129bb4770afdd86bc2fc5c8299e1d9a3aaa1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-market-match.json (id: undescribed-n32t-nl-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.4 KB; not a table; SHA-256 72fab43fbcc25ccaa2d2a0ad0f7d9f2b0156366d6b91926a8ea4f81514ba7b45; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-payment-plan.json (id: undescribed-n32t-nl-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.3 KB; not a table; SHA-256 959eeff93e9691df84a01c26b70e7936b8325c289993d8606172b1a062b1e106; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-payment-risk.json (id: undescribed-n32t-nl-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.8 KB; not a table; SHA-256 b65f88bb97c1c22aea2772cffe1c08ce0c4310a44e18316d35c624f409afddab; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-pdf-check.json (id: undescribed-n32t-nl-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 5cd99b106844838a7567b7055eab4b75e2ebc36b51642e419cb68a4fa633423c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/nl/tools-permit-check.json (id: undescribed-n32t-nl-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.8 KB; not a table; SHA-256 4a6441c507746fd6c05c7031462fd2d065e169dc0337e6eb9e0f8a972316fada; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/nl/tools-refund-tracker.json (id: undescribed-n32t-nl-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.3 KB; not a table; SHA-256 904f37691c6bd2d4ce764f0d04c972d4e4f715bc536396539d8d61a8d69356f6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-resale-exit.json (id: undescribed-n32t-nl-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.9 KB; not a table; SHA-256 0c7a0368f70c199af826f2cd21ff8ae0dacc443527fba7653487a9f0198c229d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-risk.json (id: undescribed-n32t-nl-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.5 KB; not a table; SHA-256 27375ba978b54a451abbfb69d09b750e1810c5b85bf73a96fdb99bb122698ad6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-site-visit.json (id: undescribed-n32t-nl-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.9 KB; not a table; SHA-256 b551de47e9d34c73d24090a3c26cf24a040418c8e9b3a6e8141098d784549b8c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/nl/tools-total-cost.json (id: undescribed-n32t-nl-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.8 KB; not a table; SHA-256 9c2081f7bf8fd9f411e6e1486f6ac788bb7bbe93851204f71c2678380818337e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/tools-yield-check.json (id: undescribed-n32t-nl-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/nl/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.2 KB; not a table; SHA-256 d0a4d362550945b505302c54089b0b5c2cfac9cd0107394ffdb1ff90eb17b8c4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/nl/vs.json (id: undescribed-n32t-nl-vs-json)
+  URL: https://kolaboro.com/data/n32t/nl/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 803 bytes; not a table; SHA-256 22cdf841110a856b115e2314967c770fad375104b22e55bd213330220ec8b8ea; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/_common.json (id: undescribed-n32t-ru-common-json)
+  URL: https://kolaboro.com/data/n32t/ru/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 15.9 KB; not a table; SHA-256 4dcddedd5e41f7cc4a8902fd2121d3719f4729fc758edc5967ceca7203a31ed7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/m.json (id: undescribed-n32t-ru-m-json)
+  URL: https://kolaboro.com/data/n32t/ru/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.3 KB; not a table; SHA-256 fc47068e4a2e4232c2a04f9cdef9bad0e58529aa18ddc43a64167f38fb155f1a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/new.json (id: undescribed-n32t-ru-new-json)
+  URL: https://kolaboro.com/data/n32t/ru/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 4.3 KB; not a table; SHA-256 be327b12daea224b5b9b085a20f0d1225e835a590f0c4d5d5a2c8939b2b96674; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/registers.json (id: undescribed-n32t-ru-registers-json)
+  URL: https://kolaboro.com/data/n32t/ru/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 98.3 KB; not a table; SHA-256 145e5c701a386a1a17c846fc39b7fb97c4399d6324e799cc222b8bfe0960335f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/ru/tools-agent-check.json (id: undescribed-n32t-ru-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.2 KB; not a table; SHA-256 29b5b3d51ef7335c9fae019e52cae5f09b3b5034577b1c5bb29933db1c57607f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/ru/tools-build-cost.json (id: undescribed-n32t-ru-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.5 KB; not a table; SHA-256 311bc1da87fbfe40456c2f9244c4d395e40383b7f46d083244e2579b8d302e75; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-contract-check.json (id: undescribed-n32t-ru-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.1 KB; not a table; SHA-256 76e7160a4c8c07618110a40dc8eacb8d23e99d40f9d33b3e9650d6a220d5f410; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/ru/tools-contract-scan.json (id: undescribed-n32t-ru-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.2 KB; not a table; SHA-256 750c36058958d478155bcbd316bf4840c7420fd2c667a13fed6c52d0dae66105; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-currency-risk.json (id: undescribed-n32t-ru-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 16.0 KB; not a table; SHA-256 53b99594393385cfa24d481b8e46d13e5386d33d3ce67dcb85e39867afef2ff5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-delay-compensation.json (id: undescribed-n32t-ru-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.9 KB; not a table; SHA-256 d32c06c51b25ed634c219404a65070e07c597b92e71cb9239bf73f09092d1399; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-deposit-protection.json (id: undescribed-n32t-ru-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.7 KB; not a table; SHA-256 6db7b64fbc9731f75e769f39f2b4dd7bda05a7bc25416f7bb73150a80e1d077c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-image-check.json (id: undescribed-n32t-ru-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 12.5 KB; not a table; SHA-256 31c279526f283e3ee6eaede6bcd18a94ade13faf000075e126f60c80a01889f1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/ru/tools-insolvency-check.json (id: undescribed-n32t-ru-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 9.1 KB; not a table; SHA-256 92c1de4aa1e3134611b5031ae48836633e7ced85d4d15eb7ed561f92a4e25688; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/ru/tools-late-handover.json (id: undescribed-n32t-ru-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.6 KB; not a table; SHA-256 e0822ecf4725f140250efe6eb2de4419b7cf8de246c67872302559d1fa939d17; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-market-match.json (id: undescribed-n32t-ru-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; not a table; SHA-256 a47ed3f4659f72b24a54130426b895cb8d02d87aa439cbf4e040d1ad3d56a2c2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-payment-plan.json (id: undescribed-n32t-ru-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.0 KB; not a table; SHA-256 1c5a6939959ec7290be087ed4b0bf79480114a5cbbe859cb178621ea64ade080; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-payment-risk.json (id: undescribed-n32t-ru-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 8639ef7d82000d126c1e1e57833ca0fdffbf00ca06fb7019b53ef068922e2120; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-pdf-check.json (id: undescribed-n32t-ru-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.2 KB; not a table; SHA-256 91cee60d26075e603bc84d08ecb3771e41d92692c0164a168218964dca93c36e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/ru/tools-permit-check.json (id: undescribed-n32t-ru-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 11.8 KB; not a table; SHA-256 df2d3df8e263b047595fddd7ea3c40d794ba1ff6384a3c80ee6bdc3641004b13; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/ru/tools-refund-tracker.json (id: undescribed-n32t-ru-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.3 KB; not a table; SHA-256 fb28d6531835050698b7a58fbf64b402a21ae77c9348b5cf4c4fb437d319914a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-resale-exit.json (id: undescribed-n32t-ru-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 13.1 KB; not a table; SHA-256 4c2f9d12822d9557ab92f22d4dbbd4b4347fbdba46a0baea35162165a1e4c29b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-risk.json (id: undescribed-n32t-ru-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.1 KB; not a table; SHA-256 1a2983888524625a7fb0247ed053f08cd2af9dc9d022ee0d6c4a283ab8b0b350; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-site-visit.json (id: undescribed-n32t-ru-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.8 KB; not a table; SHA-256 e17f8f00b7c55fca725ff9b3965d50bd0f04fa9d3a3e68ea5ee27baf011fccad; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/ru/tools-total-cost.json (id: undescribed-n32t-ru-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.8 KB; not a table; SHA-256 41b417c06eb2873e488c6dd930863b0f59fc401372a87e6896b6bc3c14911546; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/tools-yield-check.json (id: undescribed-n32t-ru-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/ru/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.2 KB; not a table; SHA-256 9316db5addc8c873bd14498c7362b332b1c7eac88474dc46dec403349beea42c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/ru/vs.json (id: undescribed-n32t-ru-vs-json)
+  URL: https://kolaboro.com/data/n32t/ru/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.0 KB; not a table; SHA-256 d8ab79818f219dfb38a632be9305f620417b1061e043d5383b8bf7e2af58121a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/_common.json (id: undescribed-n32t-zh-common-json)
+  URL: https://kolaboro.com/data/n32t/zh/_common.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 13.8 KB; not a table; SHA-256 060ec2c185c020c81a911929dfbd1799cb65cc5d81f364f6236c91381e4601dc; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/m.json (id: undescribed-n32t-zh-m-json)
+  URL: https://kolaboro.com/data/n32t/zh/m.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 869 bytes; not a table; SHA-256 9a8a977f69a0ef6df4b15d69086ec297438fa91ae462744971c8aae00212ff3f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/new.json (id: undescribed-n32t-zh-new-json)
+  URL: https://kolaboro.com/data/n32t/zh/new.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.9 KB; not a table; SHA-256 0b5b8b25df8d0ec647ef848b6be69a39c45431a965f3fb5e76cd42a9a9c54539; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/registers.json (id: undescribed-n32t-zh-registers-json)
+  URL: https://kolaboro.com/data/n32t/zh/registers.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 65.3 KB; not a table; SHA-256 d383feb59572bf6692edbcfb03365ab4186286889416bbe42b1102d7164f70f9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:10:22Z.
+
+n32t/zh/tools-agent-check.json (id: undescribed-n32t-zh-tools-agent-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-agent-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.4 KB; not a table; SHA-256 4b5bb705dd3f39a72faf90dbcaf08e28b5d9f34b594c455b74c6a5e90374191d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/zh/tools-build-cost.json (id: undescribed-n32t-zh-tools-build-cost-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-build-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.1 KB; not a table; SHA-256 542a305b12e3ce344157f7359ecb78a4bbe48b9b16101d870b00684738a50140; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-contract-check.json (id: undescribed-n32t-zh-tools-contract-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-contract-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.0 KB; not a table; SHA-256 adbce4e60108040406a6335121e374971809c68db2a005a53c126478d95bf373; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/zh/tools-contract-scan.json (id: undescribed-n32t-zh-tools-contract-scan-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-contract-scan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.0 KB; not a table; SHA-256 ec031595353f4c2bad19ad1f8f4f2af4e0307043d3037f14a4b5f63e7f7aa303; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-currency-risk.json (id: undescribed-n32t-zh-tools-currency-risk-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-currency-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.8 KB; not a table; SHA-256 d7ae0c57876315960788e2aeddefad22ad4f7ae0e1aed0d56e9130029e11968f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-delay-compensation.json (id: undescribed-n32t-zh-tools-delay-compensation-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-delay-compensation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.9 KB; not a table; SHA-256 abdebdf4b5d1fab11c57c984fed798c8d106b1e0e3d3d78aee4f0cc8a7ba02a0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-deposit-protection.json (id: undescribed-n32t-zh-tools-deposit-protection-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-deposit-protection.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.4 KB; not a table; SHA-256 cb7a8df257da2f40bbb83da5a6f96c6a7ebbdf5f24cfba960114c73e82793db9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-image-check.json (id: undescribed-n32t-zh-tools-image-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-image-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.5 KB; not a table; SHA-256 189db17b94feee28723e518ebdb41be4a14faff5e75b667d7cfbc005f82d59d7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:24:57Z.
+
+n32t/zh/tools-insolvency-check.json (id: undescribed-n32t-zh-tools-insolvency-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-insolvency-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.2 KB; not a table; SHA-256 ba4bb610ed5194de6cca8daec31a04eb9952114ba23808832b88a55d40802c53; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:59:25Z.
+
+n32t/zh/tools-late-handover.json (id: undescribed-n32t-zh-tools-late-handover-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-late-handover.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.8 KB; not a table; SHA-256 e18203931af7379bb2c3b13077b7be85eeaece8d9880141960e0ba77934d7610; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-market-match.json (id: undescribed-n32t-zh-tools-market-match-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-market-match.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.1 KB; not a table; SHA-256 d6c1369c1f63d8fbb7cfe8b9b3c0235d177df2f208ac5ff77be0b634269890f2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-payment-plan.json (id: undescribed-n32t-zh-tools-payment-plan-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-payment-plan.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.1 KB; not a table; SHA-256 45ae457781d8e08cda54b5afa23d411473f74fb3c293c1d445aa4c9aeafc866a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-payment-risk.json (id: undescribed-n32t-zh-tools-payment-risk-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-payment-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.4 KB; not a table; SHA-256 d02e43f6d698aa3544e5577e3a5c1e04e9bddf4a1a472e56d466063d59a80912; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-pdf-check.json (id: undescribed-n32t-zh-tools-pdf-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-pdf-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 6.9 KB; not a table; SHA-256 6971a919d9f6462bccea7fdedab2bb75cb518882e0ccc099a456cfdb2bbb30af; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/zh/tools-permit-check.json (id: undescribed-n32t-zh-tools-permit-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-permit-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.2 KB; not a table; SHA-256 63dc85b4d1096737792fcb663bbe08bfe1b8b6ae6759f24e98498fff4ba00b57; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:20:31Z.
+
+n32t/zh/tools-refund-tracker.json (id: undescribed-n32t-zh-tools-refund-tracker-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-refund-tracker.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 4.8 KB; not a table; SHA-256 02988f09c5d0ffa7cc967f1c293ff77148d330add2909599c5639a3ca72dcabf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-resale-exit.json (id: undescribed-n32t-zh-tools-resale-exit-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-resale-exit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 8.8 KB; not a table; SHA-256 7781a1a61cd0c58944b1bf1154f2ba96ead210a19a01bd5e35f03aefa9c4f41b; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-risk.json (id: undescribed-n32t-zh-tools-risk-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-risk.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.4 KB; not a table; SHA-256 af947a1e235f68fc7068fa48d5103554aa9886eb3611d5e4aa08c44e769e9249; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-site-visit.json (id: undescribed-n32t-zh-tools-site-visit-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-site-visit.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.5 KB; not a table; SHA-256 9e83bfcacf05b9095ad8288ab8fd12731e0b1899622da750e0cd91683bb3fdaf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:27:57Z.
+
+n32t/zh/tools-total-cost.json (id: undescribed-n32t-zh-tools-total-cost-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-total-cost.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.0 KB; not a table; SHA-256 193faf3532810899790fcd1adf2fbb1dea54817e1162d90804229f0568bb7572; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/tools-yield-check.json (id: undescribed-n32t-zh-tools-yield-check-json)
+  URL: https://kolaboro.com/data/n32t/zh/tools-yield-check.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.1 KB; not a table; SHA-256 d7efd37f2f68b8b1eac29b94cd7c03f65e8c3fa95c26f19251f526cd9a327283; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32t/zh/vs.json (id: undescribed-n32t-zh-vs-json)
+  URL: https://kolaboro.com/data/n32t/zh/vs.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 684 bytes; not a table; SHA-256 c96ebab60c844d3b3e32073ab43c37c5ba1ce137682ae836ce68b143476ab50d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:53:50Z.
+
+n32x-i18n.json (id: undescribed-n32x-i18n-json)
+  URL: https://kolaboro.com/data/n32x-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 163.1 KB; not a table; SHA-256 8b8f586f73e8326af3d21123a3d9db1f72a38fa5e9827b31a31eb3b56979cea5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T10:07:37Z.
+
+n33b-i18n.json (id: undescribed-n33b-i18n-json)
+  URL: https://kolaboro.com/data/n33b-i18n.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 32.9 KB; not a table; SHA-256 12d0ba37cf080697160d8f6604c7a5babed24eabb841e124e8374fb98b1883ee; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T13:02:32Z.
+
+n33l.json (id: undescribed-n33l-json)
+  URL: https://kolaboro.com/data/n33l.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 73.8 KB; not a table; SHA-256 c6b042003a4daff1afd8b213b2a25f21a564698763717d7bd36826f343864028; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:54:01Z.
+
 named.json (id: undescribed-named-json)
   URL: https://kolaboro.com/data/named.json
   Published under /data/ but not yet described in the catalog registry.
-  Size 3.7 MB; not a table; SHA-256 a82f4e6da8d6a0bd567f941268063fa3d232ed91a49c9bb93cd1bcd9629363b7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05.
+  Size 6.8 MB; not a table; SHA-256 3cfd1a96b6b0ed4ea4d9c583681d1e1cc9f5fc94e706d4f616401d3cdf8583c3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+og-font.json (id: undescribed-og-font-json)
+  URL: https://kolaboro.com/data/og-font.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 168.7 KB; not a table; SHA-256 d2bbe4ad93c2a00473038ec4d9f1c21f186fd7a9d86aec9abc9d37bb8200d3d7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:06:31Z.
+
+page-history-0.json (id: undescribed-page-history-0-json)
+  URL: https://kolaboro.com/data/page-history-0.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.0 MB; not a table; SHA-256 e7e977a702feeacfd6ddb9cde625544a2c4dae0db73294ae5e663f24301c0484; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T14:25:32Z.
+
+page-history-1.json (id: undescribed-page-history-1-json)
+  URL: https://kolaboro.com/data/page-history-1.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 4.8 MB; not a table; SHA-256 7bc0d677fcccfb05db3548fe52e7f92d683ddb125c4308aa9a9bbcd5290676ca; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T14:25:32Z.
+
+page-history-2.json (id: undescribed-page-history-2-json)
+  URL: https://kolaboro.com/data/page-history-2.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.2 MB; not a table; SHA-256 5e1526bbeef7ea6c15e79bf1b1002b21946f02e722204259beb92eea9faf84de; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T14:25:32Z.
+
+planning.json (id: undescribed-planning-json)
+  URL: https://kolaboro.com/data/planning.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 88.6 KB; not a table; SHA-256 3495b46df121090988ce78208ab58d6f51beb2f7a0d8bec98183e05da0e1ed0d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-15T11:58:23Z.
+
+price-history.json (id: undescribed-price-history-json)
+  URL: https://kolaboro.com/data/price-history.json
+  Not yet described in the catalog registry. The file describes itself as: Prices printed on the page we track for each named project, by date of the copy: our sealed copies (SHA-256) and Internet Archive captures since 2017. Currency as printed, nothing converted.
+  Size 2.2 MB; not a table; SHA-256 416ae822d670e878a7f71478bfe85bc7dbb7616e53ed7454fd19471b4f3655b0; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-15T12:24:21Z.
+
+progress.json (id: undescribed-progress-json)
+  URL: https://kolaboro.com/data/progress.json
+  Not yet described in the catalog registry. The file describes itself as: Public progress of kolaboro.com. "items": the 300 improvements picked on 13 Nov 2026 out of about 1,000 ideas, with their status (done, doing = in progress, next, planned); updated by hand as work ships. "days": one row per UTC day with figures that cannot be rebuilt later from other files (sources cited, developer claims, URLs in the sitemaps), written once a day by the open-history job (.github/workflows/kolaboro-open-history.yml on main) from https://kolaboro.com/api/x/progress/today.
+  Size 44.9 KB; not a table; SHA-256 2a80813a8f934a51ee3b5e323371defb91ba99a66a9ffddd263bd47a6eab80fd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T07:43:00Z.
+
+provenance.json (id: undescribed-provenance-json)
+  URL: https://kolaboro.com/data/provenance.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 63.9 KB; not a table; SHA-256 85b36c653e7fcadd6f4ac9c5112b88a6f296dc7487ee3bf438f112b260704922; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
 
 quality.json (id: undescribed-quality-json)
   URL: https://kolaboro.com/data/quality.json
   Published under /data/ but not yet described in the catalog registry.
-  Size 377.3 KB; not a table; SHA-256 4b6441cc270b00d06bcbc057231217c0376798deb996aad513c1b94f923a0694; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T07:24:07Z.
+  Size 691.7 KB; not a table; SHA-256 1c3dffc50e560d32f14b461b62871759bc0d278660133ddd54f57647c8574edf; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T15:51:25Z.
+
+register-captures.json (id: undescribed-register-captures-json)
+  URL: https://kolaboro.com/data/register-captures.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 31.3 KB; not a table; SHA-256 dbe079d0248fecd8ea4c462e1ee72f3d4214d4f0e3f606ee8b963cd9847b90b7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
+
+sales-nearby.json (id: undescribed-sales-nearby-json)
+  URL: https://kolaboro.com/data/sales-nearby.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.2 KB; not a table; SHA-256 ad90d11181427aaf1226973f4352e4fe6f9bd5ce24230ad604c699cddf2de86a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-09.
+
+sanctions.json (id: undescribed-sanctions-json)
+  URL: https://kolaboro.com/data/sanctions.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 47.9 KB; not a table; SHA-256 c8b7f67d0a2af00f667f14655db0083a4b20418a153e69249b9dc9a2dba309ad; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+satellite-radar.json (id: undescribed-satellite-radar-json)
+  URL: https://kolaboro.com/data/satellite-radar.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 85.1 KB; not a table; SHA-256 73e33c901422abb92e5dfd9c239d38f73ddc3f34cc4e82218cdf9dbc22795089; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-08.
+
+score-history.json (id: undescribed-score-history-json)
+  URL: https://kolaboro.com/data/score-history.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 80.0 KB; not a table; SHA-256 22ba273ff215241bf7e3302bb817c5cc48c83843feda3307e8eb2decce705bce; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18.
 
 seo-audit.json (id: undescribed-seo-audit-json)
   URL: https://kolaboro.com/data/seo-audit.json
   Published under /data/ but not yet described in the catalog registry.
-  Size 10.7 KB; not a table; SHA-256 a0c9cc5afbff8e48b51ea0403157fc197f47c414cee06ce85e5f940ebad087b7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T15:41Z.
+  Size 32.1 KB; not a table; SHA-256 a74251af42cb4ed433c542ea6600af1993aaaa4013ee238a80ff30bb9e50b6d5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-14T15:26Z.
+
+seo-checks.json (id: undescribed-seo-checks-json)
+  URL: https://kolaboro.com/data/seo-checks.json
+  Not yet described in the catalog registry. The file describes itself as: kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), AI crawler user agents against the edge (item 229). Run by hand; no scheduled job.
+  Size 1.3 KB; not a table; SHA-256 f2caf2d44a807b23d21b10acb0067279a715c2b8bec998bda294be5aa537a43e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:33:37Z.
+
+seo-daily.json (id: undescribed-seo-daily-json)
+  URL: https://kolaboro.com/data/seo-daily.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 12.5 KB; not a table; SHA-256 bf4872e306ef54e0a9ab276099c1a6885fe674ef64972dd49406800204ca4e53; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-16T19:54Z.
+
+seo-external-links.json (id: undescribed-seo-external-links-json)
+  URL: https://kolaboro.com/data/seo-external-links.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.8 KB; not a table; SHA-256 4e93d2188d760772e957f82bdc68d15dc493a56210ed8ca3c51ef1285e06ac6c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+seo-index-log.json (id: undescribed-seo-index-log-json)
+  URL: https://kolaboro.com/data/seo-index-log.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 654 bytes; not a table; SHA-256 c5dc633eb12d96a5a20db004607818e9d7e946171df2f179ee737cbf7539f5a1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T12:53:09Z.
+
+seo-priority.json (id: undescribed-seo-priority-json)
+  URL: https://kolaboro.com/data/seo-priority.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.4 KB; not a table; SHA-256 4ccfc282b0598ca969ab87f4dd4ff02824a6c4feecf39696387db5ab5a5f9d48; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+seo-validation.json (id: undescribed-seo-validation-json)
+  URL: https://kolaboro.com/data/seo-validation.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 5.7 KB; not a table; SHA-256 652bc8da7ab367fb5a5b2483423e28b173aca803fc4d7cf1f7de461c634ffe2c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T13:03:52Z.
+
+short-let-rules.json (id: undescribed-short-let-rules-json)
+  URL: https://kolaboro.com/data/short-let-rules.json
+  Not yet described in the catalog registry. The file describes itself as: Short-let rules as stated by the official source we read, per jurisdiction. Cells: reg (licence or registration), cap (caps or zones), stay (night limits and definitions), own (rules of the building or owners). s: rule = the source states this; nf = not stated in the official sources we read; nc = not checked yet (no official source read); up = see the wider jurisdiction in the same list.
+  Size 101.1 KB; not a table; SHA-256 9f1ee6febf80165aef2d69c7bf9285fc01256f8662ff42b0b961ec8a752e3f58; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-11.
+
+short-lets.json (id: undescribed-short-lets-json)
+  URL: https://kolaboro.com/data/short-lets.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 21.8 KB; not a table; SHA-256 092332deed24d5343519cd6a15570a0457fc4603ac3f3b971c71b364dca7e740; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-09.
+
+site-3d.json (id: undescribed-site-3d-json)
+  URL: https://kolaboro.com/data/site-3d.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.5 MB; not a table; SHA-256 db9af9368d82eb663be8f8520701c1c234b28fda7081ed91f201487a43db7a0a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-14.
+
+snapshots/2026-11-07/named.json.gz (id: undescribed-snapshots-2026-11-07-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-07/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 891.0 KB; not a table; SHA-256 107cc78086a9686264728ddffd31c712d47151141e0b1b1e0521e9251b3d6324; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-09/named.json.gz (id: undescribed-snapshots-2026-11-09-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-09/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 891.0 KB; not a table; SHA-256 3d2c55c1bb02337a97b68c702b26ba2e894cdaa27e97ac5bbeab6917263e0269; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-11/named.json.gz (id: undescribed-snapshots-2026-11-11-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-11/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 903.0 KB; not a table; SHA-256 9a24811218cdfeefa4fa674b51a1ccacc02f03796d0ea82569b6b9bb4adc8dea; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-12/named.json.gz (id: undescribed-snapshots-2026-11-12-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-12/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 993.1 KB; not a table; SHA-256 948ba6fc10b2b6df4d62f12871f4f47142751d22aaa54895c3f746a073e909f6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-13/named.json.gz (id: undescribed-snapshots-2026-11-13-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-13/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.0 MB; not a table; SHA-256 4e5221d3bdcb092c8bbab0388116bf2c8cdd060017f30da47fe70b84f5054f9f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-15/named.json.gz (id: undescribed-snapshots-2026-11-15-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-15/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.0 MB; not a table; SHA-256 e1b470be0119fe89b98f023c6fc97f1afe29e9815a1d54bce79f579bac588dab; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T01:53:32Z.
+
+snapshots/2026-11-17/named.json.gz (id: undescribed-snapshots-2026-11-17-named-json-gz)
+  URL: https://kolaboro.com/data/snapshots/2026-11-17/named.json.gz
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.0 MB; not a table; SHA-256 7129d16a3c076a2ee8ec4c43ca7936c202cd416372e16b0343ffe0a4a403503a; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17T02:11:01Z.
+
+snapshots/index.json (id: undescribed-snapshots-index-json)
+  URL: https://kolaboro.com/data/snapshots/index.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 4.9 KB; not a table; SHA-256 990a7fcaa9c6c8d6f90a5e941fcfa160c36a46e6aa9550387408f0d5cd4cb209; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17.
+
+sql/claims.csv (id: undescribed-sql-claims-csv)
+  URL: https://kolaboro.com/data/sql/claims.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 3.3 MB; not a table; SHA-256 b69aa5cf7126a2c29eaafe7907fd638c01cb9ca4b7e96cffd8385baa9b72954e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/claims.parquet (id: undescribed-sql-claims-parquet)
+  URL: https://kolaboro.com/data/sql/claims.parquet
+  Published under /data/ but not yet described in the catalog registry.
+  Size 543.0 KB; 15,411 rows; SHA-256 5613a9f041e157e15b96600991d8126bc43e100748cc3ecf1afd91d87fa851c9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/datacard.json (id: undescribed-sql-datacard-json)
+  URL: https://kolaboro.com/data/sql/datacard.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 10.8 KB; not a table; SHA-256 d347e3660fb3d6693942b05c3bccd7ae7e9f81a6de80a8a99771cfa14f5d2129; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/markets.csv (id: undescribed-sql-markets-csv)
+  URL: https://kolaboro.com/data/sql/markets.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.3 KB; not a table; SHA-256 83b1fd79f59642f2c7d7b9873b565cb90ee5241dd5818f8edb5f69b2135e620f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/markets.parquet (id: undescribed-sql-markets-parquet)
+  URL: https://kolaboro.com/data/sql/markets.parquet
+  Published under /data/ but not yet described in the catalog registry.
+  Size 7.7 KB; 182 rows; SHA-256 ac1db2a2de2d3482b86a06e64ec5add4dc5b12721856e7459cc5c5694c0f17f3; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/projects.csv (id: undescribed-sql-projects-csv)
+  URL: https://kolaboro.com/data/sql/projects.csv
+  Published under /data/ but not yet described in the catalog registry.
+  Size 1.1 MB; not a table; SHA-256 faf1c19161cfcca3d7807ce6532a9fa476487b4ec19aec7132e3351d468f8408; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+sql/projects.parquet (id: undescribed-sql-projects-parquet)
+  URL: https://kolaboro.com/data/sql/projects.parquet
+  Published under /data/ but not yet described in the catalog registry.
+  Size 360.4 KB; 1,997 rows; SHA-256 ec8624c89b037b8220d01e1a4d535defdc84fc309c016abbc15be0529faf5010; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+street-photos.json (id: undescribed-street-photos-json)
+  URL: https://kolaboro.com/data/street-photos.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 97.9 KB; not a table; SHA-256 b66e5d6c843cf7d7d9fe5bac6d0c458bc65888d254d2a111c61185c168e6dd0d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17.
+
+ticker.json (id: undescribed-ticker-json)
+  URL: https://kolaboro.com/data/ticker.json
+  Not yet described in the catalog registry. The file describes itself as: Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).
+  Size 203.7 KB; not a table; SHA-256 f4f68007dba7cf4979289061cab4d1ba4f1b20ff190ff05d43417fed5cae5b66; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T13:02:32Z.
+
+traction.json (id: undescribed-traction-json)
+  URL: https://kolaboro.com/data/traction.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 2.4 KB; not a table; SHA-256 334ea0e2ddd031bad891420dd0ffbe760529e51be88b0581f507d24185f87723; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-16T07:13:33Z.
+
+transparency-monthly/2026-11.json (id: undescribed-transparency-monthly-2026-11-json)
+  URL: https://kolaboro.com/data/transparency-monthly/2026-11.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 31.6 KB; not a table; SHA-256 3076608ffb6f0846771a6a9a68781944cb98e2b3825990e8f933569ad37ab48e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20T13:02:32Z.
+
+wayback.json (id: undescribed-wayback-json)
+  URL: https://kolaboro.com/data/wayback.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 110.4 KB; not a table; SHA-256 7895356ea738739406af805cfd380c92ca8902d5f9695fdd9c704528c164ef2e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T14:38:33Z.
+
+web-forensics.json (id: undescribed-web-forensics-json)
+  URL: https://kolaboro.com/data/web-forensics.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 92.9 KB; not a table; SHA-256 c61eeb3a7309c823717c8e27f1baa00d24bb7072cf5d98a16c496a18c42125e8; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-17.
+
+web-health.json (id: undescribed-web-health-json)
+  URL: https://kolaboro.com/data/web-health.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 172.9 KB; not a table; SHA-256 2d396af9a7f894799a0f36cbe66201f8030c645b971e768ae392fbc6179ecb91; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-20.
+
+website-changes.json (id: undescribed-website-changes-json)
+  URL: https://kolaboro.com/data/website-changes.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 764.3 KB; not a table; SHA-256 c9ef540ed6fca1340772713d2d0de37e09924b1eb565aaf142a5ec9953bbfae4; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-19T09:43:42Z.
+
+worker-modules.json (id: undescribed-worker-modules-json)
+  URL: https://kolaboro.com/data/worker-modules.json
+  Not yet described in the catalog registry. The file describes itself as: Modules of the kolaboro.com edge worker (Cloudflare Pages Functions, _worker.js/). "on demand" modules are loaded with import() only by the routes that need them, so a page pays only for its own code. Generated by /open/worker-modules.py from the repository.
+  Size 95.3 KB; not a table; SHA-256 78738a17d3e8a3e7e6295cbd3e0c713ab42207952761d40fd5ab7d995f83fd9f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-18T13:41Z.
 
 ## API (65 operations)
 OpenAPI 3.1: https://kolaboro.com/docs/api/openapi.json. Try any call in the browser: https://kolaboro.com/docs/api/explorer/. Base URL https://kolaboro.com, all GET.
