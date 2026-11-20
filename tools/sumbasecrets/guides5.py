@@ -396,10 +396,13 @@ GUIDES5 = [
 <h2>Trip planning</h2>
 <p><b>How many days do I need?</b> At least five to see the highlights of one side of the island; a week or more for both. See """ + GD("itinerary-7-days", "7-day itinerary") + """.</p>
 <p><b>When is the best time?</b> The dry season, roughly May to October, with green landscapes in April and May. See """ + GD("best-time-weather", "best time to visit") + """.</p>
-<p><b>Is Sumba safe?</b> Generally yes, with common sense. See """ + GD("is-sumba-safe", "is Sumba safe") + """.</p>""",
+<p><b>Is Sumba safe?</b> Generally yes, with common sense. See """ + GD("is-sumba-safe", "is Sumba safe") + """.</p>
+<h2>Property</h2>
+<p><b>Can a foreigner buy a house or land in Sumba?</b> Not as freehold: Indonesian law reserves full ownership of land (hak milik) for Indonesian citizens. Foreigners use other legal titles, such as a right of use (hak pakai) or a long lease, and should always work with an Indonesian notary. RealHunt explains the rules and costs in its <a href="https://realhunt.co/guide/indonesia">guide to buying property in Indonesia</a> and <a href="https://realhunt.co/costs/indonesia">buying costs in Indonesia</a>; homes and land for sale on the island are listed on <a href="https://sumbahomes.com/">Sumba Homes</a>.</p>""",
  "faq": [["Is there Grab in Sumba?", "Ride-hailing apps are not dependable in Sumba, especially outside the towns. Most visitors arrange a car with a driver."],
          ["Do I need a separate visa for Sumba?", "No. Sumba is part of Indonesia, so the same entry rules as Bali apply."],
-         ["Are there ATMs in Sumba?", "Yes, in the main towns such as Tambolaka, Waikabubak, Waibakul and Waingapu, but not on the coast or in villages."]]},
+         ["Are there ATMs in Sumba?", "Yes, in the main towns such as Tambolaka, Waikabubak, Waibakul and Waingapu, but not on the coast or in villages."],
+         ["Can a foreigner buy property in Sumba?", "Not as freehold. Full land ownership (hak milik) is reserved for Indonesian citizens; foreigners use other titles such as a right of use (hak pakai) or a long lease, with an Indonesian notary."]]},
 {"s": "responsible-travel-sumba", "img": "praiyawang-rende",
  "t": "Responsible travel in Sumba: how to visit without doing harm",
  "d": "Photos, donations, children, plastic, water and sacred places: simple rules for a trip that helps Sumba instead of hurting it.",
