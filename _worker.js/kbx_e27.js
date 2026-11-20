@@ -20,6 +20,7 @@
 // Data: /data/named.json, bali-cases.json, promises.json, findings-by-project.json (through kbx_named.js data()), /data/price-history.json,
 // /data/gazette.json, /data/insolvency-watch.json. Places: kbx_tr_places.js. Sumba, Eco Beach City and Equinox never appear here.
 import * as N from './kbx_named.js';
+import { TB } from './kbx_strings.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E } from './kbx_e27_i18n.js';
 import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
@@ -309,7 +310,7 @@ async function hubPage(req, u, env, ctx, shell, lang) {
   const R = [...wk.byPlace.values()].filter(b => b.L.length).map(b => ({ b, now: b.ev.filter(e => inWeek(e, wk.w0)).length, four: b.ev.filter(e => e.d >= from4).length })).sort((a, c) => c.now - a.now || c.four - a.four || a.b.P.n.localeCompare(c.b.P.n));
   const th = t(lang, 'wk_th');
   const w = '<div class="ke-tw"><table class="ke-t"><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
-    R.map(r => '<tr><td><a href="' + pre(lang) + '/weekly/' + r.b.P.s + '/">' + bd(lang, esc(r.b.P.n)) + '</a></td><td class="n">' + nf(r.b.L.length, lang) + '</td><td class="n">' + nf(r.now, lang) + '</td><td class="n">' + nf(r.four, lang) + '</td></tr>').join('') + '</tbody></table></div><p class="ke-note">' + esc(t(lang, 'wk_mail')) + '</p>';
+    R.map(r => '<tr><td><a href="' + pre(lang) + '/weekly/' + r.b.P.s + '/">' + bd(lang, esc(r.b.P.n)) + '</a></td><td class="n">' + nf(r.b.L.length, lang) + '</td><td class="n">' + nf(r.now, lang) + '</td><td class="n">' + nf(r.four, lang) + '</td></tr>').join('') + '</tbody></table></div><p class="ke-note">' + esc(t(lang, 'wk_mail')) + '</p>' + '<p class="ke-f"><a href="' + pre(lang) + '/delays/">' + esc(((TB.kbx_n33a_S || {})[lang] || (TB.kbx_n33a_S || {}).en || {}).dl_t || 'Off-plan delays this week') + '</a></p>';   // n33a (item 85)
   const canon = ORIGIN + pre(lang) + '/weekly/';
   return htmlPage(env, ctx, shell, lang, { title: t(lang, 'wk_hub_t') + ' | Kolaboro', desc: t(lang, 'wk_hub_lead'), canon, body: hero(lang, esc(t(lang, 'wk_hub_t')), esc(t(lang, 'wk_hub_lead'))) + wrap(lang, w), lastmod: wk.today, alt: l => ORIGIN + pre(l) + '/weekly/' }, false);
 }
@@ -325,7 +326,7 @@ async function placeFeed(req, env, s, fmt) {
 }
 async function sitemap(env) {
   const wk = await weekly(env), alt = p => LANGS.map(l => '<xhtml:link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/>';
-  const U = [['/weekly/', wk.today]];
+  const U = [['/weekly/', wk.today], ['/delays/', wk.today]];   // n33a (item 85): the weekly delays page, same address every week
   for (const b of wk.byPlace.values()) if (b.L.length && b.ev.length) U.push(['/weekly/' + b.P.s + '/', b.ev[0].d]);
   const x = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + U.flatMap(([p, d]) => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + d + '</lastmod>' + alt(p) + '</url>')).join('') + '</urlset>';
   return new Response(x, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
