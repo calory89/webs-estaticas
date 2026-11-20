@@ -2,7 +2,7 @@
  "noindex_copies": 10,
  "written_by_hand": {
   "pages": 787,
-  "words": 404261,
+  "words": 894976,
   "english": 0,
   "failed": []
  },
@@ -21,7 +21,7 @@
   "places": {
    "pages": 526,
    "twins": 526,
-   "words": 1110167,
+   "words": 1130808,
    "english": 0,
    "spanish_pct": 100
   },
@@ -44,9 +44,9 @@
   "top": {
    "pages": 434,
    "twins": 0,
-   "words": 39923,
-   "english": 4550,
-   "spanish_pct": 88.6
+   "words": 40090,
+   "english": 4625,
+   "spanish_pct": 88.46
   }
  },
  "not_published": 468,
@@ -283,8 +283,8 @@
   },
   {
    "url": "https://realhunt.co/top/bali",
-   "english": 133,
-   "words": 770,
+   "english": 148,
+   "words": 803,
    "hits": [
     "new",
     "in",
@@ -1905,8 +1905,8 @@
   },
   {
    "url": "https://realhunt.co/top/phuket",
-   "english": 113,
-   "words": 928,
+   "english": 128,
+   "words": 961,
    "hits": [
     "new",
     "in",
@@ -3524,8 +3524,8 @@
   },
   {
    "url": "https://realhunt.co/top/tulum",
-   "english": 127,
-   "words": 710,
+   "english": 142,
+   "words": 744,
    "hits": [
     "new",
     "in",
@@ -5149,8 +5149,8 @@
   },
   {
    "url": "https://realhunt.co/top/batumi",
-   "english": 83,
-   "words": 837,
+   "english": 98,
+   "words": 870,
    "hits": [
     "new",
     "in",
