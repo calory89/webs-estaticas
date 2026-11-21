@@ -77,7 +77,7 @@
   var lt = 0; function soon() { clearTimeout(lt); lt = setTimeout(function () { labelTables(); if (ADMIN) groupNav(); }, 120); }
 
   // ---------- admin side navigation, grouped by job
-  var GROUPS = [['Today', ['today', 'ov', 'inbox', 'crm']], ['Sales', ['pipe', 'cust', 'leads', 'xrays']], ['Delivery', ['board', 'clients', 'ops', 'agents']], ['Money', ['pay']], ['Insight', ['traffic', 'growth', 'reports', 'audits', 'graph', 'tools']], ['System', ['tests']]];
+  var GROUPS = [['Today', ['today', 'ov', 'inbox', 'requests', 'crm']], ['Sales', ['pipe', 'cust', 'leads', 'xrays']], ['Delivery', ['board', 'clients', 'ops', 'agents']], ['Money', ['pay']], ['Insight', ['traffic', 'growth', 'reports', 'audits', 'graph', 'tools']], ['System', ['tests']]];
   var KEYS = { h: 'today', o: 'ov', i: 'inbox', c: 'crm', p: 'pipe', u: 'cust', l: 'leads', x: 'xrays', b: 'board', k: 'clients', e: 'ops', a: 'agents', m: 'pay', g: 'growth', r: 'reports', t: 'tests', y: 'tools' };
   var grouped = '';
   function groupNav() {

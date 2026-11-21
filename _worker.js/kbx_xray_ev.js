@@ -28,12 +28,12 @@ const BUA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/ch
 const COI = new Set(['sumba']);
 const TITLES = { location: 'Location', satellite: 'Satellite now', images: 'Images on the page', ppm: 'Price per m2 vs official data', market: 'Market base rates', developer: 'Developer track record', law: 'Buyer protection law and registers', similar: 'Similar projects nearby' };
 const PAID = {
-  location: 'A local agent will stand on the plot and send GPS-stamped photos (site visits are being set up), so the pin is the real plot, not an address on a web page.',
+  location: 'A local agent will stand on the plot and send GPS-stamped photos (site visits are on request: we confirm a local agent for your location before you pay), so the pin is the real plot, not an address on a web page.',
   satellite: 'The site visit shows what is on the ground today (works, workers, access) instead of a 10 m satellite pixel.',
   images: 'The site visit photographs the real site, which tells you whether the renders and photos match it.',
   ppm: 'The land office and contract review check the price, the unit and the area you would actually sign for.',
   market: null,
-  developer: 'We check the company at the official register, and the developer\'s past projects in person once site visits start (being set up).',
+  developer: 'We check the company at the official register, and the developer\'s past projects in person (site visits on request: we confirm a local agent for your location before you pay).',
   law: 'Our contract review checks whether your contract uses these protections (escrow, delay penalty, refund).',
   similar: null,
 };

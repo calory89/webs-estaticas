@@ -25,18 +25,18 @@ const EMAIL_RX = /^[^@\s<>"',;]+@[^@\s<>"',;]+\.[^@\s<>"',;]+$/;
 
 // A/B-ready copy slots. No urgency, no scarcity, no promised outcome: both variants say the same facts differently.
 const COPY = {
-  A: { h: 'What the X-ray could not verify online', sub: 'Free sources stop at the website. The €490 check goes to the land office and reads your contract; the visit to the plot by a local agent is being set up.', cta: 'Order the €490 check for this project' },
+  A: { h: 'What the X-ray could not verify online', sub: 'Free sources stop at the website. The €490 check goes to the land office and reads your contract; the visit to the plot by a local agent is on request: we confirm a local agent for your location before you pay.', cta: 'Order the €490 check for this project' },
   B: { h: 'The gaps a website cannot close', sub: 'Each gap below needs a person at the land office, on the site or with your contract. That is what the €490 check does.', cta: 'Have these gaps checked, €490' },
 };
 // What /pricing and /book promise today (copied, not paraphrased into new promises)
 const OFFER = {
   price: '€490', per: 'one-off, per property', refund: 'Full refund if we cannot take your case.',
-  items: ['Title and zoning checked at the land office by a local agent (being set up)', "Permits and the developer's track record", 'Contract read for risky clauses', 'Site visit with GPS-stamped photos and video (being set up)', 'Written report, reviewed before it is sent'],
+  items: ['Title and zoning checked at the land office by a local agent (on request)', "Permits and the developer's track record", 'Contract read for risky clauses', 'Site visit with GPS-stamped photos and video (on request)', 'Written report, reviewed before it is sent'],
   timeline: [['Same day', 'We confirm your case and email you a login to it.'], ['Within 2 days', 'Documents: land certificate, permit and contract are shared and read.'],
-    ['Within 5 days', 'Land office and site visit: title checked, plot filmed with GPS- and time-stamped photos. Site visits are being set up: we first confirm an agent for your location.'], ['Usually within 7 days', 'Written report: nine checks, every finding linked to its evidence.']],
+    ['Within 5 days', 'Land office and site visit: title checked, plot filmed with GPS- and time-stamped photos. Site visits are on request: we first confirm an agent for your location.'], ['Usually within 7 days', 'Written report: nine checks, every finding linked to its evidence.']],
   pay: PAY, book: '/book/', pricing: '/pricing',
 };
-const MONITOR = { price: '€99', per: 'per month, per property', items: ['Monthly GPS-stamped site visit (being set up)', 'Milestone check before every payment (being set up)', '"Go" or "hold" advice, based on the evidence', 'Delay alerts by email (once sending opens)', 'Final handover inspection (being set up)'] };
+const MONITOR = { price: '€99', per: 'per month, per property', items: ['Monthly GPS-stamped site visit (on request)', 'Milestone check before every payment (on request)', '"Go" or "hold" advice, based on the evidence', 'Delay alerts by email (once sending opens)', 'Final handover inspection (on request)'] };
 const SAMPLE = { url: '/report/sample', label: 'Sample client report', note: 'a fictional project in Bali, built like a real report' };
 
 function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, extra || {}) }); }
