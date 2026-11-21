@@ -69,7 +69,7 @@
     var world = res[0], LIB = res[1], feed = (res[2] || []).filter(function (x) { return x.slug && x.facts; }), AP = res[3] || {};
     var d3 = w.d3;
     var today = new Date().toISOString().slice(0, 10);
-    feed = feed.filter(function (x) { var sv = x.facts.ahorro_pct; return (!x.facts.ida || x.facts.ida >= today) && (!sv || sv >= 40); });
+    feed = feed.filter(function (x) { var sv = x.facts.ahorro_pct; return (!x.facts.ida || x.facts.ida >= today) && (!sv || sv >= 40) && (Date.now() - Date.parse(x.approved_at) < 7 * 864e5); });
     // puntos: destinos de la biblioteca + destinos de chollos que no están en ella
     var P = LIB.filter(function (p) { return p.x != null && p.y != null; }).map(function (p) { return { s: p.s, n: p.n, c: p.c, i: p.i, x: p.x, y: p.y, r: p.r, t: p.t, a: p.a || [], g: p.g, k: p.k || 0, lib: true, deals: [] }; });
     function find(f) {

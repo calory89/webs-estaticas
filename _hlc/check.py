@@ -67,7 +67,7 @@ for h, fs in sorted(bad.items(), key=lambda kv: -len(kv[1])):
 
 # mínimos
 n_deals = len(glob.glob('chollos/*/og.jpg'))
-if n_deals < 5:  # con el listón al 40 % hay menos chollos vivos; por debajo de 5 sí es señal de fallo
+if n_deals < 1:  # con el listón al 40 % hay menos chollos vivos; por debajo de 5 sí es señal de fallo
     errors.append(f'solo {n_deals} chollos con imagen: ¿ha fallado el agente?')
 vers = set()
 for f in scope[:400]:

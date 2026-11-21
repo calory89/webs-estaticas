@@ -20,7 +20,7 @@ CITY_EN = {'Sevilla': 'Seville', 'Lisboa': 'Lisbon', 'Londres': 'London', 'Parí
            'Ciudad de México': 'Mexico City', 'Filadelfia': 'Philadelphia', 'Sídney': 'Sydney', 'Pekín': 'Beijing', 'Seúl': 'Seoul', 'Tokio': 'Tokyo', 'Singapur': 'Singapore',
            'Dubái': 'Dubai', 'Abu Dabi': 'Abu Dhabi', 'El Cairo': 'Cairo', 'Johannesburgo': 'Johannesburg', 'Río de Janeiro': 'Rio de Janeiro', 'Santiago de Chile': 'Santiago',
            'Ámsterdam': 'Amsterdam', 'Berlín': 'Berlin', 'Dublín': 'Dublin', 'Edimburgo': 'Edinburgh', 'Oporto': 'Porto', 'Bogotá': 'Bogota', 'Samarcanda': 'Samarkand',
-           'Ciudad Ho Chi Minh': 'Ho Chi Minh City', 'Taipéi': 'Taipei', 'Yakarta': 'Jakarta', 'La Habana': 'Havana', 'Marrakech': 'Marrakesh', 'Isla Mauricio': 'Mauritius'}
+           'Ciudad Ho Chi Minh': 'Ho Chi Minh City', 'Taipéi': 'Taipei', 'Yakarta': 'Jakarta', 'La Habana': 'Havana', 'Marrakech': 'Marrakesh', 'Isla Mauricio': 'Mauritius', 'Los Ángeles': 'Los Angeles'}
 
 
 def city_en(c):

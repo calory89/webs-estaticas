@@ -80,7 +80,7 @@ def map_block(full=False):
             f'<div class="mapx-load"><span class="sk" aria-hidden="true"></span><span class="hlc-sr">Cargando el mapa</span></div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
-            '<script src="/hlc/map.js?v=6" defer></script>')
+            '<script src="/hlc/map.js?v=7" defer></script>')
 MAP = map_block()
 TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 Todo <small></small></button>' + ''.join(f'<button type="button" class="chip" data-tab="{k}" aria-pressed="false">{em} {n} <small></small></button>' for k, em, n in [('europa', '🇪🇺', 'Europa'), ('asia', '🌏', 'Asia'), ('norteamerica', '🗽', 'Norteamérica'), ('caribe', '🏝️', 'Caribe'), ('sudamerica', '🌎', 'Sudamérica'), ('africa', '🌍', 'África'), ('oceania', '🦘', 'Oceanía'), ('oriente-medio', '🕌', 'Oriente Medio')])
 

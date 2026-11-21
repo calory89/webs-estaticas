@@ -86,6 +86,7 @@ def smart_desc(t, n=155):
     return t[:n - 1].rsplit(' ', 1)[0].rstrip(',;:') + '…'
 
 
+MAX_DAYS = 7  # días que un chollo sigue vivo en la web desde que se publica
 MIN_SAVE = 40  # % mínimo frente al precio habitual para enseñar un chollo en la web (el agente exige 20 %). Carlos, 11-nov-2026: listón arriba, solo chollos de verdad
 
 
@@ -155,7 +156,14 @@ def keep_deal(x):
     if not f.get('vuelta'):  # solo ida y vuelta, sin excepciones
         return False
     p = f.get('ahorro_pct')
-    return not p or p >= MIN_SAVE
+    if p and p < MIN_SAVE:
+        return False
+    # Carlos, 21-nov-2026: todo chollo caduca por defecto a la semana de publicarse
+    try:
+        age = (datetime.datetime.utcnow() - datetime.datetime.fromisoformat((x.get('approved_at') or '')[:19])).days
+    except Exception:
+        age = 0
+    return age < MAX_DAYS
 
 
 # moneda local del país de salida (tipos de referencia del BCE del día)

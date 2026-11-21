@@ -1,51 +1,17 @@
 # Happy Low Cost: chollos de vuelos activos (21 nov 2026)
 
-> 18 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-21T08:45:43Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 4 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-21T08:57:54Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
-
-## Desde Alicante (España)
-- [Alicante → Oslo (Noruega): 61 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-oslo-61-euros-2026-12-21/), Ryanair, directo, 21 dic 2026 a 31 dic 2026. Precio habitual 120 € (−49 %). Comprobado el 20 nov 2026.
-
-## Desde Barcelona (España)
-- [Barcelona → Edimburgo (Reino Unido): 59 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-edimburgo-59-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 29 ene 2027. Precio habitual 120 € (−51 %). Comprobado el 20 nov 2026.
 
 ## Desde Bilbao (España)
 - [Bilbao → Cracovia (Polonia): 58 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-cracovia-58-euros-2027-02-13/), Wizz Air, directo, 13 feb 2027 a 18 feb 2027. Precio habitual 120 € (−52 %). Comprobado el 21 nov 2026.
 
-## Desde Gran Canaria (España)
-- [Gran Canaria → Salzburgo (Austria): 129 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-salzburgo-129-euros-2026-12-30/), Eurowings, directo, 30 dic 2026 a 6 ene 2027. Precio habitual 240 € (−46 %). Comprobado el 21 nov 2026.
-
 ## Desde Madrid (España)
-- [Madrid → Catania (Italia): 50 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-catania-50-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 16 dic 2026. Precio habitual 90 € (−44 %). Comprobado el 21 nov 2026.
 - [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 20 nov 2026.
-
-## Desde Málaga (España)
-- [Málaga → Riga (Letonia): 96 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-riga-96-euros-2027-02-04/), Ryanair, directo, 4 feb 2027 a 8 feb 2027. Precio habitual 160 € (−40 %). Comprobado el 20 nov 2026.
-
-## Desde Palma de Mallorca (España)
-- [Palma de Mallorca → Berlín (Alemania): 60 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-berlin-60-euros-2026-12-19/), Ryanair, directo, 19 dic 2026 a 31 dic 2026. Precio habitual 110 € (−45 %). Comprobado el 20 nov 2026.
-- [Palma de Mallorca → Estocolmo (Suecia): 61 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-estocolmo-61-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 14 dic 2026. Precio habitual 130 € (−53 %). Comprobado el 21 nov 2026.
-- [Palma de Mallorca → Hamburgo (Alemania): 64 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-hamburgo-64-euros-2027-01-30/), Eurowings, directo, 30 ene 2027 a 31 ene 2027. Precio habitual 140 € (−54 %). Comprobado el 21 nov 2026.
-
-## Desde Santiago de Compostela (España)
-- [Santiago de Compostela → Zúrich (Suiza): 85 € ida y vuelta](https://www.happylowcost.com/chollos/santiago-de-compostela-zurich-85-euros-2026-12-25/), Vueling, directo, 25 dic 2026 a 6 ene 2027. Precio habitual 190 € (−55 %). Comprobado el 21 nov 2026.
-
-## Desde Sevilla (España)
-- [Sevilla → París (Francia): 49 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-paris-49-euros-2026-12-21/), Transavia France, directo, 21 dic 2026 a 1 ene 2027. Precio habitual 110 € (−55 %). Comprobado el 20 nov 2026.
-- [Sevilla → Cagliari (Italia): 72 € ida y vuelta](https://www.happylowcost.com/chollos/sevilla-cagliari-72-euros-2027-02-05/), Ryanair, directo, 5 feb 2027 a 8 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 21 nov 2026.
 
 ## Desde Valencia (España)
 - [Valencia → Viena (Austria): 73 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-viena-73-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 14 feb 2027. Precio habitual 130 € (−44 %). Comprobado el 21 nov 2026.
-
-## Desde Zaragoza (España)
-- [Zaragoza → Londres (Reino Unido): 55 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-55-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 3 feb 2027. Precio habitual 130 € (−58 %). Comprobado el 20 nov 2026.
-
-## Desde Miami (Estados Unidos)
-- [Miami → Guayaquil (Ecuador): 273 € ida y vuelta](https://www.happylowcost.com/chollos/miami-guayaquil-273-euros-2027-01-14/), Copa Airlines, 14 ene 2027 a 21 ene 2027. Precio habitual 580 € (−53 %). Comprobado el 20 nov 2026.
-
-## Desde Perth (Australia)
-- [Perth → Ámsterdam (Países Bajos): 867 € ida y vuelta](https://www.happylowcost.com/chollos/perth-amsterdam-867-euros-2026-11-22/), AirAsia, 22 nov 2026 a 2 dic 2026. Precio habitual 1440 € (−40 %). Comprobado el 20 nov 2026.
 
 ## Desde Tallin (Estonia)
 - [Tallin → Antalya (Turquía): 99 € ida y vuelta](https://www.happylowcost.com/chollos/tallin-antalya-99-euros-2026-11-28/), SunExpress, directo, 28 nov 2026 a 21 dic 2026. Precio habitual 220 € (−55 %). Comprobado el 21 nov 2026.

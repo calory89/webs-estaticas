@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '44'
+V = '45'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -101,7 +101,7 @@ def old_notice(t):
     if not m or 'hlc-old-ssr' in t:
         return t
     pub = datetime.date.fromisoformat(m.group(1))
-    if (datetime.date.today() - pub).days < 21:
+    if (datetime.date.today() - pub).days < 7:
         return t
     h = re.search(r'<h1[^>]*>([^<]+)', t)
     title = _html.unescape(h.group(1)) if h else ''

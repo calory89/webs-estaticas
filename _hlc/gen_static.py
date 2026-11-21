@@ -27,7 +27,7 @@ ES_QA = [
     ('¿Publicáis vuelos solo de ida?', 'Casi nunca: publicamos ida y vuelta, salvo cuando es un error de tarifa claro.'),
     ('¿Qué pasa si el mismo vuelo ya estaba publicado?', 'Si ya teníamos esa ruta igual o más barata, el nuevo no se publica. Si el nuevo es más barato, sustituye al anterior.'),
     ('¿Cuándo se comprobó cada chollo?', 'Cada chollo muestra la fecha y la hora exactas de la última comprobación. Los precios de los vuelos cambian a menudo, a veces en horas: si al reservar ves otro precio, prueba fechas cercanas.'),
-    ('¿Cuándo desaparece un chollo?', 'Volvemos a buscar cada chollo activo una vez al día, con la misma ruta y las mismas fechas. Si ya no aparece o ha subido más de un 10 %, lo retiramos y su página pasa a «caducado». También lo retiramos cuando pasa su fecha de salida.'),
+    ('¿Cuándo desaparece un chollo?', 'Por defecto, a la semana de publicarse. Además, volvemos a buscar cada chollo activo una vez al día, con la misma ruta y las mismas fechas. Si ya no aparece o ha subido más de un 10 %, lo retiramos y su página pasa a «caducado». También lo retiramos cuando pasa su fecha de salida.'),
     ('¿Por qué algunos precios aparecen en otra moneda?', 'Los precios se consultan en euros. Si sales de un país sin euro, añadimos el equivalente aproximado en tu moneda con el tipo de referencia del Banco Central Europeo del día. El precio final lo fija la web donde reserves.'),
     ('¿Ganáis dinero con los chollos?', 'Algunos enlaces son de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. Que un chollo tenga o no comisión no influye en si lo publicamos.'),
 ]
