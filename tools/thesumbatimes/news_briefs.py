@@ -3,13 +3,191 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'living',
+ 'slug': 'bulog-waingapu-2300-tonnes-rice-christmas-new-year-east-sumba-2026',
+ 'date': '2026-11-22',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'bulog-waingapu-2300-toneladas-arroz-navidad-ano-nuevo-sumba-oriental-2026',
+           'id': 'bulog-waingapu-2300-ton-beras-natal-tahun-baru-sumba-timur-2026'},
+ 'keywords': {'en': ['Bulog Waingapu',
+                     'rice stock Sumba',
+                     'East Sumba rice supply',
+                     'Christmas rice supply',
+                     'Kambajawa warehouse',
+                     'Lombok Sumbawa rice'],
+              'es': ['Bulog Waingapu',
+                     'arroz en Sumba',
+                     'reservas de arroz Navidad',
+                     'almacén de Kambajawa',
+                     'arroz de Lombok y Sumbawa',
+                     'Sumba Oriental'],
+              'id': ['Bulog Waingapu',
+                     'stok beras Sumba Timur',
+                     'beras Nataru',
+                     'Gudang Kambajawa',
+                     'beras dari NTB',
+                     'Perum Bulog']},
+ 'en': {'title': 'Bulog Waingapu readies 2,300 tonnes of rice for Christmas',
+        'dek': 'Stock is 800 tonnes now; 1,500 more from Lombok and Sumbawa are due within a week, the agency says, '
+               'with no price or distribution plan given.',
+        'answer': "Bulog's Waingapu branch says it holds 800 tonnes of rice and expects 1,500 tonnes more from "
+                  'Lombok and Sumbawa within a week, for about 2,300 tonnes by Christmas and New Year, Waingapu.com '
+                  'reported on 18 November 2026. The report gives no price, programme or shortage.',
+        'keys': ['Bulog Waingapu holds 800 tonnes of rice in the Kambajawa warehouse, which has a 2,000 tonne '
+                 'capacity.',
+                 '1,500 tonnes are on the way from NTB: 1,250 tonnes from Lombok and 250 tonnes from Sumbawa.',
+                 'Arrival is estimated in under a week from 18 November; the total would be about 2,300 tonnes.',
+                 'No price, distribution programme or shortage is reported, and the account comes from one outlet.'],
+        'visitors': 'Nothing in the report points to a food shortage; it describes a precaution before the busiest '
+                    'holiday weeks.',
+        'body': "<p>The Waingapu branch of Bulog, Indonesia's state food logistics agency, says it is building up "
+                'rice stock for Christmas and New Year in East Sumba, Waingapu.com reported on Wednesday 18 November '
+                '2026. Branch head Inung Tri Afandi told the outlet the warehouse holds 800 tonnes now and that '
+                '1,500 tonnes more are being shipped in from West Nusa Tenggara (NTB), which would bring the total '
+                'to about 2,300 tonnes. Bulog describes the stock as a reserve meant to keep supply stable over the '
+                'holidays.</p><h2>Where the rice comes from</h2><p>The current 800 tonnes sit in the Kambajawa '
+                'warehouse in Waingapu, which has a capacity of 2,000 tonnes, so the incoming stock fits. The extra '
+                "1,500 tonnes come through Bulog's regional office in NTB: 1,250 tonnes from Lombok and 250 tonnes "
+                'from Sumbawa. The report says the rice is being transported and should reach Waingapu in less than '
+                "a week from 18 November. That is the agency's own estimate, not a confirmed arrival date. The "
+                'branch head said he is optimistic that holiday demand can be met with the stock on hand plus the '
+                'NTB shipment.</p><h2>What the report does not say</h2><p>The article gives no rice price or price '
+                'cap, no name for any distribution programme, and no estimate of how many days the stock would last '
+                'or how many households it covers. Beyond calling it a reserve for stable supply, it does not say '
+                'whether the rice is meant for shops, for government distribution or only for storage. It also '
+                'reports no shortage. Everything here comes from one outlet, Waingapu.com, quoting the branch head, '
+                "so treat the figures as Bulog's own until the agency or the regency publishes them.</p><h2>What it "
+                'means for visitors, residents and investors</h2><p>Visitors: nothing in the report points to a food '
+                'shortage, and it describes a precaution ahead of the busiest holiday weeks. Residents: the 2,300 '
+                'tonnes is a Bulog reserve, and the report does not say how or at what price rice will reach local '
+                'shops, so check prices with your usual suppliers rather than assuming a change. Investors: the '
+                "story is a small view of island logistics. East Sumba's rice stock depends on sea shipments from "
+                'Lombok and Sumbawa into Waingapu, so the reliability of the port and ferry links, covered in our '
+                'earlier briefs, matters for food supply as well as for travellers.</p>',
+        'faq': [['How much rice will Bulog Waingapu have for Christmas and New Year?',
+                 'Waingapu.com reports 800 tonnes in stock plus 1,500 tonnes being shipped from NTB, about 2,300 '
+                 'tonnes in total if the shipment arrives as expected.'],
+                ['Is there a rice shortage in East Sumba?',
+                 'The report does not mention one. It describes a reserve prepared for the holidays and gives no '
+                 'price or distribution details.']]},
+ 'es': {'title': 'Bulog prepara 2.300 toneladas de arroz en Waingapu para Navidad',
+        'dek': 'Hay 800 toneladas en almacén y otras 1.500 de Lombok y Sumbawa llegarán en menos de una semana, '
+               'según Bulog; no informa de precios ni reparto.',
+        'answer': 'La delegación de Bulog en Waingapu afirma que tiene 800 toneladas de arroz y espera otras 1.500 '
+                  'de Lombok y Sumbawa en menos de una semana, hasta unas 2.300 para Navidad y Año Nuevo, informó '
+                  'Waingapu.com el 18 de noviembre de 2026. No menciona precios, programas ni escasez.',
+        'keys': ['Bulog Waingapu guarda 800 toneladas de arroz en el almacén de Kambajawa, con capacidad para 2.000.',
+                 'Otras 1.500 toneladas vienen de NTB: 1.250 de Lombok y 250 de Sumbawa.',
+                 'La llegada se estima en menos de una semana desde el 18 de noviembre; el total sería de unas 2.300 '
+                 'toneladas.',
+                 'No se informa de precios, programa de reparto ni escasez, y la información procede de un solo '
+                 'medio.'],
+        'visitors': 'Nada en la información apunta a escasez de alimentos; describe una precaución antes de las '
+                    'semanas de mayor movimiento.',
+        'body': '<p>La delegación de Bulog en Waingapu, la agencia estatal indonesia de logística alimentaria, '
+                'asegura que está reforzando las existencias de arroz para Navidad y Año Nuevo en Sumba Oriental, '
+                'según informó Waingapu.com el miércoles 18 de noviembre de 2026. El jefe de la delegación, Inung '
+                'Tri Afandi, explicó al medio que el almacén guarda ahora 800 toneladas y que otras 1.500 llegan por '
+                'mar desde Nusa Tenggara Occidental (NTB), con lo que el total rondaría las 2.300 toneladas. Bulog '
+                'presenta ese stock como una reserva para mantener estable el suministro durante las '
+                'fiestas.</p><h2>De dónde llega el arroz</h2><p>Las 800 toneladas actuales están en el almacén de '
+                'Kambajawa, en Waingapu, que tiene capacidad para 2.000 toneladas, así que hay sitio para lo que '
+                'viene. Las 1.500 toneladas adicionales salen de la oficina regional de Bulog en NTB: 1.250 '
+                'toneladas de Lombok y 250 de Sumbawa. Según la información, el arroz está en tránsito y debería '
+                'llegar a Waingapu en menos de una semana desde el 18 de noviembre. Es una estimación de la propia '
+                'agencia, no una fecha de llegada confirmada. El jefe de la delegación se mostró optimista sobre '
+                'poder cubrir la demanda navideña con lo que hay en almacén y el envío de NTB.</p><h2>Lo que la '
+                'información no dice</h2><p>El artículo no da el precio del arroz ni un tope de precios, no nombra '
+                'ningún programa de reparto y no calcula cuántos días durarán las existencias ni a cuántos hogares '
+                'alcanzan. Más allá de llamarlo reserva para un suministro estable, tampoco aclara si el arroz irá a '
+                'las tiendas, a un reparto oficial o solo a almacén. Tampoco informa de ninguna escasez. Todo '
+                'procede de un único medio, Waingapu.com, que cita al jefe de la delegación, así que conviene tomar '
+                'las cifras como datos de Bulog hasta que la agencia o la regencia las publiquen.</p><h2>Qué '
+                'significa para visitantes, residentes e inversores</h2><p>Visitantes: nada en la información apunta '
+                'a escasez de alimentos; describe una precaución antes de las semanas de mayor movimiento. '
+                'Residentes: las 2.300 toneladas son una reserva de Bulog y no se explica cómo ni a qué precio '
+                'llegará el arroz a las tiendas locales, así que conviene preguntar precios a los proveedores '
+                'habituales en lugar de dar por hecho un cambio. Inversores: es una pequeña ventana a la logística '
+                'de la isla. El arroz de Sumba Oriental depende de envíos marítimos desde Lombok y Sumbawa hasta '
+                'Waingapu, de modo que la fiabilidad del puerto y de los ferris, que hemos tratado en noticias '
+                'anteriores, importa tanto para el abastecimiento como para los viajeros.</p>',
+        'faq': [['¿Cuánto arroz tendrá Bulog Waingapu para Navidad y Año Nuevo?',
+                 'Waingapu.com informa de 800 toneladas en almacén más 1.500 que llegan de NTB, unas 2.300 en total '
+                 'si el envío llega según lo previsto.'],
+                ['¿Hay escasez de arroz en Sumba Oriental?',
+                 'La información no la menciona. Describe una reserva preparada para las fiestas y no da precios ni '
+                 'detalles de reparto.']]},
+ 'id': {'title': 'Bulog Waingapu siapkan 2.300 ton beras jelang Natal dan Tahun Baru',
+        'dek': 'Stok saat ini 800 ton dan 1.500 ton dari Lombok dan Sumbawa ditargetkan tiba kurang dari sepekan, '
+               'kata Bulog; harga dan penyaluran belum disebut.',
+        'answer': 'Bulog Waingapu menyebut stok beras saat ini 800 ton dan 1.500 ton lagi dari Lombok dan Sumbawa '
+                  'ditargetkan tiba kurang dari sepekan, sehingga totalnya sekitar 2.300 ton menjelang Natal dan '
+                  'Tahun Baru, lapor Waingapu.com pada 18 November 2026. Harga, program penyaluran, dan kekurangan '
+                  'stok tidak disebut.',
+        'keys': ['Bulog Waingapu menyimpan 800 ton beras di Gudang Kambajawa yang berkapasitas 2.000 ton.',
+                 'Tambahan 1.500 ton dari NTB sedang diangkut: 1.250 ton dari Lombok dan 250 ton dari Sumbawa.',
+                 'Kedatangan diperkirakan kurang dari sepekan sejak 18 November; total stok sekitar 2.300 ton.',
+                 'Harga, program penyaluran, maupun kekurangan stok tidak dilaporkan, dan informasi berasal dari '
+                 'satu media.'],
+        'visitors': 'Tidak ada indikasi kekurangan pangan dalam laporan; yang digambarkan adalah langkah '
+                    'berjaga-jaga menjelang pekan libur terpadat.',
+        'body': '<p>Perum Bulog Kantor Cabang Waingapu menyiapkan tambahan stok beras untuk Natal 2026 dan Tahun '
+                'Baru 2027 di Sumba Timur, demikian dilaporkan Waingapu.com pada Rabu 18 November 2026. Kepala Bulog '
+                'Waingapu Inung Tri Afandi menyebut gudang saat ini menyimpan 800 ton beras dan 1.500 ton lagi '
+                'sedang diangkut dari Nusa Tenggara Barat (NTB), sehingga total stok diperkirakan sekitar 2.300 ton. '
+                'Bulog menyebut stok itu sebagai cadangan untuk menjaga kestabilan pasokan selama masa Natal dan '
+                'Tahun Baru.</p><h2>Dari mana beras berasal</h2><p>Stok 800 ton saat ini berada di Gudang Kambajawa, '
+                'Waingapu, yang berkapasitas 2.000 ton, sehingga masih cukup untuk menampung kiriman berikutnya. '
+                'Tambahan 1.500 ton datang melalui Kantor Wilayah Bulog NTB, yaitu 1.250 ton dari Lombok dan 250 ton '
+                'dari Sumbawa. Menurut laporan itu, beras sedang dalam proses pengangkutan dan ditargetkan tiba di '
+                'Waingapu kurang dari sepekan sejak 18 November. Angka itu perkiraan Bulog sendiri, bukan tanggal '
+                'kedatangan yang sudah pasti. Kepala cabang mengaku optimistis kebutuhan beras Nataru dapat dilayani '
+                'dengan stok yang ada ditambah kiriman dari NTB.</p><h2>Yang tidak disebut dalam '
+                'laporan</h2><p>Laporan tidak menyebut harga beras atau harga eceran tertinggi, nama program '
+                'penyaluran, berapa hari stok akan bertahan, maupun jumlah rumah tangga yang terlayani. Selain '
+                'menyebutnya cadangan untuk menjaga stabilitas pasokan, laporan juga tidak menjelaskan apakah beras '
+                'itu untuk dijual di toko, disalurkan pemerintah, atau sekadar disimpan. Laporan itu pun tidak '
+                'menyebut adanya kekurangan beras. Seluruh informasi berasal dari satu media, Waingapu.com, yang '
+                'mengutip kepala cabang, jadi angkanya sebaiknya dianggap data Bulog sendiri sampai Bulog atau '
+                'pemerintah kabupaten merilisnya.</p><h2>Apa artinya bagi pengunjung, warga, dan '
+                'investor</h2><p>Pengunjung: tidak ada indikasi kekurangan pangan dalam laporan; yang digambarkan '
+                'adalah langkah berjaga-jaga menjelang pekan libur terpadat. Warga: 2.300 ton itu cadangan Bulog, '
+                'dan laporan tidak menjelaskan bagaimana atau dengan harga berapa beras akan sampai ke toko, jadi '
+                'tanyakan harga ke pemasok langganan Anda dan jangan langsung berasumsi ada perubahan. Investor: ini '
+                'gambaran kecil logistik pulau. Stok beras Sumba Timur bergantung pada pengiriman laut dari Lombok '
+                'dan Sumbawa ke Waingapu, sehingga keandalan pelabuhan dan jalur feri, yang kami bahas di berita '
+                'sebelumnya, penting bagi pasokan pangan, bukan hanya bagi wisatawan.</p>',
+        'faq': [['Berapa stok beras Bulog Waingapu untuk Natal dan Tahun Baru?',
+                 'Waingapu.com melaporkan stok 800 ton ditambah 1.500 ton yang diangkut dari NTB, sekitar 2.300 ton '
+                 'jika kiriman tiba sesuai perkiraan.'],
+                ['Apakah Sumba Timur kekurangan beras?',
+                 'Laporan tidak menyebutnya. Yang digambarkan adalah cadangan untuk masa libur, tanpa harga maupun '
+                 'rincian penyaluran.']]},
+ 'sources': [['Waingapu.Com: Bulog Waingapu Siapkan 2.300 Ton Beras Jelang Natal dan Tahun Baru, Stok Tambahan dari '
+              'NTB Segera Tiba (18 Nov 2026)',
+              'https://www.waingapu.com/bulog-waingapu-siapkan-2-300-ton-beras-jelang-natal-dan-tahun-baru-stok-tambahan-dari-ntb-segera-tiba/']],
+ 'image': {'ai': True,
+           'caption': {'en': 'AI-generated illustration of stacked rice sacks in a warehouse; not a photo of the '
+                             'Bulog Waingapu warehouse.',
+                       'es': 'Ilustración generada con IA de sacos de arroz apilados en un almacén; no es una foto '
+                             'del almacén de Bulog en Waingapu.',
+                       'id': 'Ilustrasi buatan AI karung beras bertumpuk di gudang; bukan foto gudang Bulog '
+                             'Waingapu.'},
+           'credit': '',
+           'h': 853,
+           'license': '',
+           'license_url': '',
+           'page': '',
+           'w': 1280}},
 {'section': 'business',
  'slug': 'ksop-waingapu-small-vessel-permit-counter-salura-island-2026',
  'date': '2026-11-21',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'ventanilla-permisos-barcas-pequenas-isla-salura-ksop-waingapu-2026',
            'id': 'gerai-pas-kecil-pelabuhan-salura-ksop-waingapu-2026'},
  'keywords': {'en': ['Salura island',
