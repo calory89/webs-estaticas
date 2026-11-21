@@ -16,6 +16,14 @@
   ]
  },
  {
+  "a": "lb-xo-pandawa",
+  "b": "pandawa-residence",
+  "market": "Bali",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "beach-walk-residences-4-imtiaz",
   "b": "beach-walk-grand-2-by-imtiaz",
   "market": "Dubai",
@@ -291,6 +299,30 @@
   "a": "banyan-tree-beach-residences-nerea-banyan-group",
   "b": "banyan-tree-beach-residences-oceanus",
   "market": "Phuket",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "avea-andaman-island-eastern-oriental",
+  "b": "maris-andaman-island",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "avea-andaman-island-eastern-oriental",
+  "b": "the-lume-andaman-island",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "avea-andaman-island-eastern-oriental",
+  "b": "the-meg-andaman-island",
+  "market": "Malaysia",
   "why": [
    "similar name"
   ]
@@ -1124,6 +1156,14 @@
  {
   "a": "palm-central-private-residences-frond-m",
   "b": "palm-central-private-residences-frond-n",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "w-residences-at-dubai-harbour",
+  "b": "dubai-harbour-residences",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -2917,6 +2957,86 @@
  {
   "a": "la-tilia-at-villanova-phase-1",
   "b": "la-tilia-at-villanova-phase-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-acres-3-estates",
+  "b": "the-acres-2-estates-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-wilds-dubai",
+  "b": "the-wilds-residences",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "jumeirah-asora-bay",
+  "b": "jumeirah-residences-asora-bay-ocean-mansions",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "verdana-dubai",
+  "b": "verdana-residence",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "one-park-central-by-iman",
+  "b": "one-sky-park-by-iman",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "one-park-central-by-iman",
+  "b": "one-park-square-by-iman",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "one-sky-park-by-iman",
+  "b": "one-park-square-by-iman",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-first-collection-at-dubai-sports-city",
+  "b": "the-first-collection-at-dubai-studio-city",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "peace-lagoons-by-peace-homes",
+  "b": "peace-lagoons-ii-by-peace-homes",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sky-harmony-by-peace-homes",
+  "b": "sky-line-by-peace-homes",
   "market": "Dubai",
   "why": [
    "similar name"
