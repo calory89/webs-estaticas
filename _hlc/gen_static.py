@@ -11,7 +11,7 @@ import gen_deals as G  # noqa: E402
 import gen_en as E  # noqa: E402
 
 SITE = G.SITE
-ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtZGFsZnN2dGZoemVweXJkbWpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2Mzc3MjIsImV4cCI6MjA1OTIxMzcyMn0.IIbXzmsRZzBeS6DhTHtYJjQNAFVJMaqb0EnxJbwwMx4'  # clave pública (anon) de Supabase gmdalf: solo deja leer el panel agregado e insertar clics
+ANON_KEY = 'sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz'  # clave pública (anon) de Supabase gmdalf: solo deja leer el panel agregado e insertar clics
 FOOT_ES = '<!--hlc-footer-->' + open(os.path.join(ROOT, '_hlc', 'partials', 'footer.html'), encoding='utf-8').read() + '<!--/hlc-footer-->'
 
 
@@ -316,11 +316,14 @@ def main():
 <div style="overflow-x:auto"><table id="top" style="width:100%;border-collapse:collapse;font:15px Inter,sans-serif;background:#fff"><thead><tr style="text-align:left"><th>Chollo</th><th>Clics vuelo</th><th>Clics hotel</th><th>Total</th></tr></thead><tbody></tbody></table></div>
 <style>#t td,#t th,#top td,#top th{padding:10px 12px;border-bottom:1px solid #EADCC4;white-space:nowrap}</style>
 <script>
-(function(){var K='ANONKEY',U='https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/';
-function g(p){return fetch(U+p,{headers:{apikey:K}}).then(function(r){return r.json();});}
+(function(){var K='ANONKEY',U='https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/rpc/hlc_panel';
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-g('hlc_panel_semanal?select=*').then(function(l){document.querySelector('#t tbody').innerHTML=(l||[]).map(function(r){return '<tr><td>'+esc(r.semana)+'</td><td>'+r.alertas+'</td><td>'+r.alertas_email+'</td><td>'+r.alertas_whatsapp+'</td><td>'+r.alertas_push+'</td><td>'+r.push_enviados+'</td><td>'+r.chollos_publicados+'</td><td>'+r.retirados_revalidacion+'</td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.clics_total+'</td></tr>';}).join('');}).catch(function(){document.querySelector('#t tbody').innerHTML='<tr><td colspan="11">No se ha podido cargar.</td></tr>';});
-g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody').innerHTML=(l||[]).map(function(r){return '<tr><td><a href="/chollos/'+esc(r.slug)+'/">'+esc(r.slug)+'</a></td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.total+'</td></tr>';}).join('')||'<tr><td colspan="4">Aún no hay clics registrados.</td></tr>';});
+function key(){var k='';try{k=localStorage.getItem('hlc_panel_k')||'';}catch(e){}if(!k){k=prompt('Clave del panel')||'';}return k;}
+function load(){var k=key();if(!k)return;fetch(U,{method:'POST',headers:{apikey:K,'content-type':'application/json'},body:JSON.stringify({p:k})}).then(function(r){if(!r.ok)throw new Error('clave');return r.json();}).then(function(d){try{localStorage.setItem('hlc_panel_k',k);}catch(e){}
+document.querySelector('#t tbody').innerHTML=(d.semanal||[]).map(function(r){return '<tr><td>'+esc(r.semana)+'</td><td>'+r.alertas+'</td><td>'+r.alertas_email+'</td><td>'+r.alertas_whatsapp+'</td><td>'+r.alertas_push+'</td><td>'+r.push_enviados+'</td><td>'+r.chollos_publicados+'</td><td>'+r.retirados_revalidacion+'</td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.clics_total+'</td></tr>';}).join('');
+document.querySelector('#top tbody').innerHTML=(d.top||[]).map(function(r){return '<tr><td><a href="/chollos/'+esc(r.slug)+'/">'+esc(r.slug)+'</a></td><td>'+r.clics_vuelo+'</td><td>'+r.clics_hotel+'</td><td>'+r.total+'</td></tr>';}).join('')||'<tr><td colspan="4">Aún no hay clics registrados.</td></tr>';
+}).catch(function(){try{localStorage.removeItem('hlc_panel_k');}catch(e){}document.querySelector('#t tbody').innerHTML='<tr><td colspan="11">Clave incorrecta. <a href="">Probar otra vez</a></td></tr>';});}
+load();
 })();
 </script></div></main></body></html>'''.replace('ANONKEY', ANON_KEY)
     os.makedirs('panel', exist_ok=True)

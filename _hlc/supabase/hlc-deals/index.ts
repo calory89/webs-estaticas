@@ -381,7 +381,7 @@ async function cityPhotoGeo(city, iata) {
       }
       for (const fname of cands){
         try {
-          const ii = await (await fetch(`https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600&titles=File:${encodeURIComponent(fname)}`, {
+          const ii = await (await fetch(`https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1920&titles=File:${encodeURIComponent(fname)}`, {
             headers: UAH
           })).json();
           const info = Object.values(ii?.query?.pages || {})[0]?.imageinfo?.[0];
@@ -419,7 +419,7 @@ async function cityPhoto(city, country) {
         const file = s?.originalimage?.source?.split("/").pop();
         if (!file || /\.svg$/i.test(file) || /(flag|map|locator|coat|escudo|bandera|mapa)/i.test(file)) continue;
         const fname = decodeURIComponent(file).replace(/^\d+px-/, "");
-        const ii = await (await fetch(`https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1600&titles=File:${encodeURIComponent(fname)}`, {
+        const ii = await (await fetch(`https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1920&titles=File:${encodeURIComponent(fname)}`, {
           headers: {
             "user-agent": "HappyLowCost/1.0"
           }
@@ -1321,6 +1321,10 @@ async function alert(b, req) {
 const FN = `${SB_URL}/functions/v1/hlc-deals`;
 const slA = (s)=>String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const ALIAS_A = { canarias: ["gran-canaria", "las-palmas-de-gran-canaria", "tenerife", "lanzarote", "fuerteventura", "la-palma"], palma: ["palma-de-mallorca", "palma"], santiago: ["santiago-de-compostela"] };
+async function confirmKey(id) {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`confirm|${id}|${Deno.env.get("HLC_CRON_SECRET")}`));
+  return [...new Uint8Array(d)].slice(0, 10).map((b)=>b.toString(16).padStart(2, "0")).join("");
+}
 async function unsubKey(id) {
   const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${id}|${Deno.env.get("HLC_CRON_SECRET")}`));
   return [...new Uint8Array(d)].slice(0, 10).map((b)=>b.toString(16).padStart(2, "0")).join("");
@@ -1363,9 +1367,19 @@ async function sendAlerts(dry, testTo) {
   };
   if (testTo) return deals.length ? { test: await post(testTo, deals[0], 0), slug: deals[0].slug } : { error: "no hay chollos para la prueba" };
   if (!deals.length) return { deals: 0, sent: 0 };
-  const subs = await db(`hlc_alerts?select=id,origins,destination,max_price,contact,last_sent_at,sent_slugs&channel=eq.email&active=not.is.false&limit=5000`);
-  let sent = 0; const out = [];
+  const subs = await db(`hlc_alerts?select=id,origins,destination,max_price,contact,last_sent_at,sent_slugs,confirmed,confirm_sent_at&channel=eq.email&active=not.is.false&limit=5000`);
+  let sent = 0, confirms = 0; const out = [];
   for (const s of subs){
+    // doble confirmación: hasta que la persona pulse el enlace, solo recibe (una vez) el email para confirmar
+    if (!s.confirmed) {
+      if (dry || s.confirm_sent_at || !/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(s.contact || "")) continue;
+      const link = `${FN}?action=confirm&id=${s.id}&k=${await confirmKey(s.id)}`;
+      const html = `<div style="font:16px/1.6 Arial,sans-serif;color:#14213D;max-width:520px"><p>Hola:</p><p>Alguien (seguramente tú) ha pedido avisos de chollos de vuelos de Happy Low Cost en este email.</p><p><a href="${link}" style="display:inline-block;background:#D63B1C;color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:bold">Sí, quiero los avisos</a></p><p style="font-size:13px;color:#4A5468">Si no has sido tú, ignora este mensaje: no te escribiremos más.</p></div>`;
+      const res = await fetch("https://api.resend.com/emails", { method: "POST", headers: { authorization: `Bearer ${key}`, "content-type": "application/json" },
+        body: JSON.stringify({ from, to: [s.contact], subject: "Confirma tus avisos de chollos ✈️", html, text: `Confirma tus avisos de chollos de Happy Low Cost: ${link}\nSi no has sido tú, ignora este mensaje.` }) });
+      if (res.ok) { confirms++; await db(`hlc_alerts?id=eq.${s.id}`, { method: "PATCH", body: JSON.stringify({ confirm_sent_at: new Date().toISOString() }) }); }
+      continue;
+    }
     if (s.last_sent_at && Date.now() - Date.parse(s.last_sent_at) < 20 * 36e5) continue;
     if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(s.contact || "")) continue;
     const done = new Set(s.sent_slugs || []);
@@ -1386,7 +1400,7 @@ async function sendAlerts(dry, testTo) {
       await db(`hlc_alerts?id=eq.${s.id}`, { method: "PATCH", body: JSON.stringify({ last_sent_at: new Date().toISOString(), sent_slugs: [...done, r.slug].slice(-60) }) });
     }
   }
-  return { deals: deals.length, subs: subs.length, sent, out: out.slice(0, 40) };
+  return { deals: deals.length, subs: subs.length, sent, confirms, out: out.slice(0, 40) };
 }
 Deno.serve(async (req)=>{
   if (req.method === "OPTIONS") return new Response(null, {
@@ -1396,6 +1410,12 @@ Deno.serve(async (req)=>{
   const u = new URL(req.url);
   try {
     if (req.method === "GET" && u.searchParams.get("action") === "dests") return json(await db(`hlc_dest_guides?select=slug,name,country,guide_html,seo_title,meta_description,updated_at,guide_html_en,seo_title_en,meta_description_en&guide_html=not.is.null`));
+    if (u.searchParams.get("action") === "confirm") {
+      const id = Number(u.searchParams.get("id")), k = u.searchParams.get("k") || "";
+      const ok = id > 0 && k === await confirmKey(id);
+      if (ok) await db(`hlc_alerts?id=eq.${id}`, { method: "PATCH", body: JSON.stringify({ confirmed: true, active: true }) });
+      return Response.redirect(`${SITE}/alertas/?confirmada=${ok ? "ok" : "error"}`, 302);
+    }
     if (u.searchParams.get("action") === "unsub") {
       const id = Number(u.searchParams.get("id")), k = u.searchParams.get("k") || "";
       const ok = id > 0 && k === await unsubKey(id);
