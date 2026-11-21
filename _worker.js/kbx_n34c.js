@@ -95,9 +95,11 @@ const jerr = (o, s) => new Response(JSON.stringify(o), { status: s, headers: Obj
 const json = o => JSON.stringify(o, null, 1);
 
 // ------------------------------------------------------------------------------------------------ 24: Brotli copies of /data/*.json
+const BR_ON = false;   // off until the outer response path keeps encodeBody: 'manual' (21 Nov 2026: the copy reached browsers compressed twice)
 let BRM = null; const BROK = {};
 async function brManifest(env) { if (BRM && Date.now() - BRM.t < 600000) return BRM.v; const v = await file(env, '/data/br/manifest.json', 600000); BRM = { t: Date.now(), v }; return v; }
 export async function brServe(req, u, env) {
+  if (!BR_ON) return null;
   if (req.method !== 'GET' || req.headers.get('range') || u.search) return null;
   if (!/\bbr\b/.test(req.headers.get('accept-encoding') || '')) return null;
   if (req.headers.get('cf-worker') || /kolaboro-/i.test(req.headers.get('user-agent') || '')) return null;   // subrequests from our own worker read the normal file (they parse it as text)
