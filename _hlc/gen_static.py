@@ -265,7 +265,14 @@ def main():
     lalt = f'<link rel="alternate" hreflang="es" href="{lurl}"><link rel="alternate" hreflang="en" href="{SITE}/en/legal/">'
     pg = G.head(title='Aviso legal, privacidad y cookies · Happy Low Cost', desc='Quién está detrás de Happy Low Cost, cómo funcionan los precios y los enlaces de afiliado, qué datos guardamos para las alertas y cuáles son tus derechos.',
                 canonical=lurl, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + lalt, body_class='legal')
-    pg += (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">Legal</div><h1 class="x-h1">Aviso legal, privacidad y cookies</h1>'
+    # índice con anclas: aviso legal, privacidad y cookies en la misma página, pero localizables
+    legal_es = legal_es.replace('<h2>Aviso legal</h2>', '<h2 id="aviso-legal">Aviso legal</h2>', 1)
+    legal_es = legal_es.replace('<h3>SÉPTIMA.- TRATAMIENTO DE DATOS Y UTILIZACIÓN DE COOKIES</h3>', '<h3 id="privacidad">SÉPTIMA.- TRATAMIENTO DE DATOS Y UTILIZACIÓN DE COOKIES</h3>', 1)
+    legal_es = legal_es.replace('<p><b>DESCRIPCIÓN DE COOKIES: </b>', '<h3 id="cookies">Cookies</h3><p><b>DESCRIPCIÓN DE COOKIES: </b>', 1)
+    legal_es = legal_es.replace('<p><b>FORMAS DE BLOQUEAR Y LIMITAR EL USO DE COOKIES: </b>', '<p id="bloquear-cookies"><b>FORMAS DE BLOQUEAR Y LIMITAR EL USO DE COOKIES: </b>', 1)
+    toc = ('<ul class="legal-toc"><li><a href="#aviso-legal">Aviso legal</a></li><li><a href="#privacidad">Privacidad y datos</a></li>'
+           '<li><a href="#cookies">Cookies</a></li><li><a href="#bloquear-cookies">Cómo bloquear las cookies</a></li><li><a href="/contacto/">Contacto</a></li></ul>')
+    pg += (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">Legal</div><h1 class="x-h1">Aviso legal, privacidad y cookies</h1>{toc}'
            f'<article class="txt guide">{legal_es}</article></div></main></body></html>')
     os.makedirs('aviso-legal-datos-cookies', exist_ok=True)
     open('aviso-legal-datos-cookies/index.html', 'w', encoding='utf-8').write(pg)

@@ -860,10 +860,10 @@ def main():
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
                     extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer, faq_ld(qa, 'es-ES')]), body_class='deal')
-        page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
+        page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} el {e(fecha(verified))} a las {e(verified[11:16])} (hora peninsular){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
+<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} <span data-rel="{e(checked(x)[:19])}Z">el {e(fecha(verified))} a las {e(verified[11:16])} (hora peninsular)</span>{f" · {ce} {e(cn)}" if cs else ""} <span class="k-n">· <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></span></div>
 <h1>{e(h1t)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(local(x.get("price"), f.get("origen_cc")))} al cambio de hoy</span>' if local(x.get("price"), f.get("origen_cc")) else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
@@ -1124,7 +1124,7 @@ def main():
         c_ = T3.find(p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), ())
         if c_:
             hl.append((p, c_))
-    tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for p, c_ in hl)
+    tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" ' + (f'style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"' if i_ < 6 else f'data-bg="/hlc/img/cities/{p["s"]}-800.jpg"') + f'><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for i_, (p, c_) in enumerate(hl))
     hp = head(title='Dónde dormir barato: los 3 mejores hoteles de cada destino · Happy Low Cost', desc=f'Un hotel económico, uno con la mejor calidad-precio y uno de lujo en {len(hl)} destinos, elegidos por nota real de huéspedes.',
               canonical=f'{SITE}/hoteles/', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
               extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/">', body_class='chollos')

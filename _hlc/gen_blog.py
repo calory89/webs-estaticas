@@ -86,10 +86,11 @@ def blog_page(posts):
            f'<div class="kicker">Blog</div><h1 class="x-h1">Blog de viajes low cost</h1><p style="font-size:18px;max-width:760px">{G.e(lead)}</p>'
            f'<h2 style="margin-top:28px">Guías prácticas</h2><div class="bl-gs">{gh}</div>'
            f'<h2 style="margin-top:34px">Artículos</h2><div class="bl-tools"><input type="search" class="bl-q" placeholder="Busca una ciudad, país o tema" aria-label="Buscar en el blog"><div class="chips" role="group" aria-label="Categorías">{chips}</div></div>'
-           f'<div class="bl-grid" id="bl-grid">{"".join(cardh(p) for p in arts)}</div><p class="bl-none" hidden>No hay artículos con esa búsqueda. <a href="/buscar/">Prueba el buscador</a>.</p>'
-           '</div></main><script>(function(){var g=document.getElementById("bl-grid"),q=document.querySelector(".bl-q"),cs=document.querySelectorAll(".bl-tools .chip"),c="",no=document.querySelector(".bl-none");'
+           f'<div class="bl-grid" id="bl-grid">{"".join(cardh(p) for p in arts)}</div><p class="bl-none" hidden>No hay artículos con esa búsqueda. <a href="/buscar/">Prueba el buscador</a>.</p><p style="text-align:center;margin-top:26px"><button type="button" class="hlc-btn o" id="bl-more">Ver más artículos</button></p>'
+           '</div></main><script>(function(){var g=document.getElementById("bl-grid"),q=document.querySelector(".bl-q"),cs=document.querySelectorAll(".bl-tools .chip"),c="",no=document.querySelector(".bl-none"),mb=document.getElementById("bl-more"),shown=24;'
            'function sl(s){return String(s||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");}'
-           'function f(){var t=sl(q.value).split("-").filter(Boolean),n=0;[].forEach.call(g.children,function(a){var ok=(!c||a.getAttribute("data-c")===c)&&t.every(function(w){return a.getAttribute("data-q").indexOf(w)>=0;});a.hidden=!ok;if(ok)n++;});no.hidden=n>0;}'
+           'function f(){var t=sl(q.value).split("-").filter(Boolean),n=0;[].forEach.call(g.children,function(a){var ok=(!c||a.getAttribute("data-c")===c)&&t.every(function(w){return a.getAttribute("data-q").indexOf(w)>=0;});if(ok)n++;a.hidden=!ok||n>shown;});no.hidden=n>0;mb.hidden=n<=shown;if(n>shown)mb.textContent="Ver más artículos ("+(n-shown)+")";}'
+           'mb.addEventListener("click",function(){shown+=48;f();});f();'
            'q.addEventListener("input",f);cs.forEach(function(b){b.addEventListener("click",function(){c=b.getAttribute("data-c");cs.forEach(function(x){x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",x===b);});f();});});})();</script></body></html>')
     os.makedirs('blog', exist_ok=True)
     open('blog/index.html', 'w', encoding='utf-8').write(pg)

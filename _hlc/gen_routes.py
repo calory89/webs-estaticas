@@ -65,7 +65,22 @@ def en_slug(r):
 def page(r, lang, others):
     en = lang == 'en'
     c = dict(r['content'][lang]); c['_lang'] = lang
-    f = r['facts']
+    f = dict(r['facts'])
+    # fechas de ejemplo ya pasadas: se mueven a las mismas fechas de la semana más adelante, para que los enlaces no abran un buscador vacío
+    shifted = False
+    try:
+        d0_ = datetime.date.fromisoformat((f.get('ejemplo_ida') or '')[:10])
+        if d0_ < datetime.date.today() + datetime.timedelta(days=3):
+            k_ = ((datetime.date.today() + datetime.timedelta(days=21) - d0_).days + 6) // 7 * 7
+            f['ejemplo_ida'] = (d0_ + datetime.timedelta(days=k_)).isoformat()
+            if f.get('ejemplo_vuelta'):
+                f['ejemplo_vuelta'] = (datetime.date.fromisoformat(f['ejemplo_vuelta'][:10]) + datetime.timedelta(days=k_)).isoformat()
+            shifted = True
+    except Exception:
+        pass
+    for k_ in ('h1', 'title'):
+        if c.get(k_):
+            c[k_] = re.sub(r'(\d)\s?€', '\\1\u00a0€', c[k_])
     slug = r['slug']
     url = f"{SITE}/en/flights/{en_slug(r)}/" if en else f"{SITE}/vuelos/{slug}/"
     es_url, en_url = f"{SITE}/vuelos/{slug}/", f"{SITE}/en/flights/{en_slug(r)}/"
@@ -103,7 +118,7 @@ def page(r, lang, others):
     guide_btn = f'<a class="hlc-btn o" href="/{gpath}/">📖 {L("Guía de", "Guide to")} {e(dest)}</a>' if os.path.isfile(os.path.join(gpath, 'index.html')) else ''
     out = h + f'''<main>
 <section class="deal-hero" style="background-image:url({hero})"{G.photos_attr(ds)}><div class="wrap">
-<div class="kicker" style="color:#FFC531">{L("✓ Precios reales consultados el", "✓ Real prices checked on")} {e(f.get("consultado", ""))}</div>
+<div class="kicker" style="color:#FFC531" data-checked="{e((f.get("consultado") or "")[:10])}">{L("✓ Precios reales consultados el", "✓ Real prices checked on")} {e(fdate(f.get("consultado"), en))}</div>
 <h1>{e(c.get("h1", ""))}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_precio">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></a><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
 </div></section>
@@ -123,10 +138,10 @@ def page(r, lang, others):
 <a class="hlc-btn o" href="{e(G.BK.dc("en" if en else "es", "happylowcost-rutas"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_coche">🚗 {L("Alquiler de coche en", "Car hire in")} {e(dest)}</a>
 {"" if en else f'<a class="hlc-btn s" href="/alertas/?d={quote(r["dest"])}">🔔 Avísame si baja de precio</a>'}
 {guide_btn}
-<div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(when)}</div>
+{"" if shifted else f'<div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(fdate(when, en))}</div>'}
 </aside>
 </div>
-<section class="sec rcal" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{L("El mes más barato para volar de", "The cheapest month to fly from")} {e(r["origin"])} {L("a", "to")} {e(dest)}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p></div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
+<section class="sec rcal" id="calendario" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{L("El mes más barato para volar de", "The cheapest month to fly from")} {e(r["origin"])} {L("a", "to")} {e(dest)}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p></div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
 {G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"))}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
@@ -174,8 +189,8 @@ def hub(rows, en):
     for r in rows:
         by.setdefault(r['origin'], []).append(r)
     base = '/en/flights/' if en else '/vuelos/'
-    secs = ''.join(f'<section class="hub"><h2>{"Cheap flights from" if en else "Vuelos baratos desde"} {e(o)}</h2><div class="hub-g">' + ''.join(
-        f'<a class="hub-l" href="{base}{en_slug(r) if en else r["slug"]}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]) if en else r["dest"])} · {r["price_from"]} €</a>' for r in sorted(lst, key=lambda x: x['price_from'])) + '</div></section>' for o, lst in sorted(by.items(), key=lambda kv: -len(kv[1])))
+    secs = ''.join(f'<details class="hub"{" open" if n_ < 2 else ""}><summary><h2 style="all:unset">{"Cheap flights from" if en else "Vuelos baratos desde"} {e(o)}</h2><small>{len(lst)} {"routes" if en else "rutas"} · {"from" if en else "desde"} {min(x["price_from"] for x in lst)} €</small></summary><div class="hub-g">' + ''.join(
+        f'<a class="hub-l" href="{base}{en_slug(r) if en else r["slug"]}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]) if en else r["dest"])} · {r["price_from"]} €</a>' for r in sorted(lst, key=lambda x: x['price_from'])) + '</div></details>' for n_, (o, lst) in enumerate(sorted(by.items(), key=lambda kv: -len(kv[1]))))
     title = 'Cheap flights: every route with real prices · Happy Low Cost' if en else 'Vuelos baratos: todas las rutas con precios reales · Happy Low Cost'
     desc = (f'{len(rows)} routes with real return prices, airlines and the best time to fly.' if en
             else f'{len(rows)} rutas con precios reales de ida y vuelta, aerolíneas y mejor época para volar.')

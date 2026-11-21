@@ -180,8 +180,8 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     if en:
         title = f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'  # así lo buscan: «flight deals to X»
         lead = (f'The cheapest return flight to {name} we found leaves from {oname(r0)} for {r0["price_from"]} € ({stops(f0.get("escalas_ida"), True)}, {f0.get("aerolinea") or "several airlines"}). '
-                f'Usual prices from the {len(lst)} cities we track range from {min(meds)} € to {max(meds)} €.') if meds else f'Return flights to {name} from {len(lst)} cities, with the lowest price we found.'
-        qas = [(f'How much is a flight to {name}?', f'The cheapest return flight we found was {r0["price_from"]} € from {oname(r0)} (search on {fd(f0.get("consultado"), True)}). ' + (f'The usual price across the {len(lst)} cities we track is between {min(meds)} € and {max(meds)} €.' if meds else '')),
+                f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).') if meds else f'Return flights to {name} from {len(lst)} cities, with the lowest price we found.'
+        qas = [(f'How much is a flight to {name}?', f'The cheapest return flight we found was {r0["price_from"]} € from {oname(r0)} (search on {fd(f0.get("consultado"), True)}). ' + (f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).' if meds else '')),
                (f'Which city has the cheapest flights to {name}?', 'Cheapest departures: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in lst[:3]) + '.')]
         if direct:
             qas.append((f'Are there direct flights to {name}?', f'Yes, we found direct flights from {len(direct)} of the cities we track: ' + ', '.join(oname(r) for r in direct[:8]) + ('…' if len(direct) > 8 else '.')))
@@ -193,8 +193,8 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     else:
         title = f'Vuelos baratos a {name} desde {r0["price_from"]} € ({NOW_ES})'
         lead = (f'El vuelo de ida y vuelta más barato a {name} que hemos encontrado sale desde {oname(r0)} por {r0["price_from"]} € ({stops(f0.get("escalas_ida"))}, {f0.get("aerolinea") or "varias aerolíneas"}). '
-                f'Lo habitual desde las {len(lst)} ciudades que vigilamos va de {min(meds)} € a {max(meds)} €.') if meds else f'Vuelos de ida y vuelta a {name} desde {len(lst)} ciudades, con el precio más bajo que hemos encontrado.'
-        qas = [(f'¿Cuánto cuesta un vuelo a {name}?', f'El más barato que encontramos fue de {r0["price_from"]} € ida y vuelta desde {oname(r0)} (consulta del {fd(f0.get("consultado"))}). ' + (f'Lo habitual desde las {len(lst)} ciudades que vigilamos está entre {min(meds)} € y {max(meds)} €.' if meds else '')),
+                f'Lo habitual desde las {len(lst)} ciudades que vigilamos ronda los {int(statistics.median(meds))} € (mediana).') if meds else f'Vuelos de ida y vuelta a {name} desde {len(lst)} ciudades, con el precio más bajo que hemos encontrado.'
+        qas = [(f'¿Cuánto cuesta un vuelo a {name}?', f'El más barato que encontramos fue de {r0["price_from"]} € ida y vuelta desde {oname(r0)} (consulta del {fd(f0.get("consultado"))}). ' + (f'Lo habitual desde las {len(lst)} ciudades que vigilamos ronda los {int(statistics.median(meds))} € (mediana).' if meds else '')),
                (f'¿Desde qué ciudad es más barato volar a {name}?', 'Las salidas más baratas: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in lst[:3]) + '.')]
         if es_lst:
             qas.append((f'¿Cuánto cuesta volar a {name} desde España?', f'Desde España, lo más barato que encontramos sale de {es_lst[0]["origin"]} por {es_lst[0]["price_from"]} € ida y vuelta' + (f'; después {es_lst[1]["origin"]} ({es_lst[1]["price_from"]} €)' if len(es_lst) > 1 else '') + '.'))

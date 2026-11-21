@@ -44,19 +44,26 @@ document.documentElement.classList.add('hlc-js');
   var GEO=detectGeo();GEO.reg=REGIONS[GEO.r];
   if(!ls('hlc_origin')){ls('hlc_origin',GEO.o);ls('hlc_origin_auto','1');}
   w.HLC_GEO=GEO;w.HLC_REGIONS=REGIONS;
-  function geoRank(x){var f=x.facts||{},o=ls('hlc_origin');if(o&&f.origen===o)return 0;if(GEO.reg.cc.indexOf(f.origen_cc)>=0)return 1;if(f.origen_continente===GEO.reg.cont)return 2;return 3;}
+  function geoRank(x){var f=x.facts||{},o=ls('hlc_origin');if(o&&f.origen===o)return 0;if(GEO.reg.cc.indexOf(f.origen_cc)>=0)return 1;if(f.origen_continente===GEO.reg.cont)return 2;return (!EN&&f.origen_cc==='ES')?3:4;}
 
   /* ---------- Cookies (RGPD) + Consent Mode v2 ---------- */
   function store(v){ls('hlc_ck',v);try{d.cookie='hlc_ck='+v+';path=/;max-age=15552000;SameSite=Lax';}catch(e){}}
   function read(){var v=ls('hlc_ck');if(!v){var m=d.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}return v;}
-  function consent(v){var g=v==='granted'?'granted':'denied';try{w.gtag&&w.gtag('consent','update',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g});}catch(e){}try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_consent',hlc_consent:g});}catch(e){}}
-  function cookieBanner(){
-    if(read())return;
+  function consent(v){var g=v==='granted'?'granted':'denied',sg=(v==='granted'||v==='stats')?'granted':'denied';try{w.gtag&&w.gtag('consent','update',{ad_storage:g,analytics_storage:sg,ad_user_data:g,ad_personalization:g});}catch(e){}try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_consent',hlc_consent:g});}catch(e){}}
+  function cookieBanner(force){
+    if(read()&&force!==true)return;var old=d.querySelector('.hlc-ck');if(old)old.remove();
     var b=d.createElement('div');b.className='hlc-ck';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookies');
-    b.innerHTML=T('<p>🍪 Usamos cookies propias y de terceros para medir visitas y enseñarte chollos que te interesen. Puedes aceptarlas o rechazarlas. <a href="/aviso-legal-datos-cookies/">Más información</a>.</p><div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">Rechazar</button><button type="button" class="hlc-btn" data-v="granted">Aceptar</button></div>','<p>🍪 We use our own and third-party cookies to measure visits and show you deals you might like. You can accept or reject them. <a href="/en/legal/">More info</a>.</p><div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">Reject</button><button type="button" class="hlc-btn" data-v="granted">Accept</button></div>');
-    b.addEventListener('click',function(e){var v=e.target&&e.target.getAttribute('data-v');if(!v)return;store(v);consent(v);b.remove();d.body.classList.remove('hlc-ck-open');});
+    b.innerHTML='<p>'+T('🍪 Usamos cookies para medir visitas. <a href="/aviso-legal-datos-cookies/#cookies">Más info</a> · ','🍪 We use cookies to measure visits. <a href="/en/legal/">More info</a> · ')+'<button type="button" class="ck-cfg" aria-expanded="false">'+T('Configurar','Settings')+'</button></p>'+
+      '<div class="ck-opts" hidden><label><input type="checkbox" checked disabled> '+T('Necesarias (siempre)','Necessary (always)')+'</label><label><input type="checkbox" data-ck="stats" checked> '+T('Medición de visitas','Visit analytics')+'</label><label><input type="checkbox" data-ck="ads"> '+T('Publicidad personalizada','Personalised ads')+'</label></div>'+
+      '<div class="hlc-row"><button type="button" class="hlc-btn o" data-v="denied">'+T('Rechazar','Reject')+'</button><button type="button" class="hlc-btn o" data-v="custom" hidden>'+T('Guardar','Save')+'</button><button type="button" class="hlc-btn" data-v="granted">'+T('Aceptar','Accept')+'</button></div>';
+    b.addEventListener('click',function(e){var el=e.target;if(!el||!el.getAttribute)return;
+      if(el.className==='ck-cfg'){var o=b.querySelector('.ck-opts');o.hidden=!o.hidden;el.setAttribute('aria-expanded',String(!o.hidden));b.querySelector('[data-v=custom]').hidden=o.hidden;return;}
+      var v=el.getAttribute('data-v');if(!v)return;
+      if(v==='custom'){var s=b.querySelector('[data-ck=stats]').checked,a=b.querySelector('[data-ck=ads]').checked;v=a&&s?'granted':s?'stats':'denied';}
+      store(v);consent(v);b.remove();d.body.classList.remove('hlc-ck-open');});
     d.body.appendChild(b);d.body.classList.add('hlc-ck-open');
   }
+  function cookieLink(){if(read()==='stats')consent('stats');var l=d.querySelector('.fx-legal');if(!l||l.querySelector('.ck-re'))return;var b=d.createElement('button');b.type='button';b.className='ck-re';b.textContent=T('Preferencias de cookies','Cookie settings');b.onclick=function(){cookieBanner(true);};l.appendChild(d.createTextNode(' · '));l.appendChild(b);}
 
   /* ---------- Destino a partir del título ---------- */
   function cityFromTitle(t){
@@ -148,7 +155,7 @@ document.documentElement.classList.add('hlc-js');
         if(!l.length){box.innerHTML='<div class="dc-empty"><b>Hoy no hay chollos en esta zona.</b><span>Mira otro continente o crea una alerta gratis.</span><a class="hlc-btn" href="/alertas/">Crear alerta gratis</a></div>';return;}
         box.innerHTML=l.slice(0,max).map(card).join('');
       });
-      paintFavs();tabsCount(list);ticker(list);geoNote(list);heroDeal(list);
+      paintFavs();try{w.HLC_seen&&w.HLC_seen();}catch(e){}tabsCount(list);ticker(list);geoNote(list);heroDeal(list);
     });
   }
   function tabsCount(list){d.querySelectorAll('[data-hlc-tabs] [data-tab]').forEach(function(b){var t=b.getAttribute('data-tab');var n=t?list.filter(function(x){var c=CONT[(x.facts||{}).continente];return c&&c[0]===t;}).length:list.length;var sm=b.querySelector('small');if(sm)sm.textContent=n;if(t&&!n)b.hidden=true;});}
@@ -178,7 +185,8 @@ document.documentElement.classList.add('hlc-js');
     var m=d.querySelector('[data-deal-slug]');if(!m)return;
     var ida=m.getAttribute('data-deal-ida'),el=d.querySelector('[data-days]');
     if(ida&&el){var n=Math.ceil((Date.parse(ida)-Date.now())/864e5);if(n>=0)el.textContent=n===0?T('✈️ Sale hoy','✈️ Departs today'):n===1?T('✈️ Sale mañana','✈️ Departs tomorrow'):T('✈️ Sale dentro de '+n+' días','✈️ Departs in '+n+' days');}
-    feed().then(function(list){var s=m.getAttribute('data-deal-slug');if(!(list||[]).some(function(x){return x.slug===s;})||(ida&&ida<new Date().toISOString().slice(0,10))){var b=d.createElement('div');b.className='hlc-old';b.innerHTML=T('<b>⏰ Este chollo ya ha caducado.</b> Los precios cambian rápido. <a href="/chollos/">Mira los chollos de hoy</a> o <a href="/alertas/">crea una alerta</a> para el próximo.','<b>⏰ This deal has expired.</b> Prices move fast. <a href="/en/deals/">See today\'s deals</a>.');var t=d.querySelector('.deal-body');if(t)t.parentNode.insertBefore(b,t);}});
+    var pub=m.getAttribute('data-deal-pub');if(pub&&el){var left=7-Math.floor((Date.now()-Date.parse(pub))/864e5);if(left>0&&left<=3){var ce=d.createElement('div');ce.className='deal-exp';ce.textContent=left===1?T('⏳ Último día: mañana lo retiramos','⏳ Last day: we remove it tomorrow'):T('⏳ Lo retiramos en '+left+' días','⏳ We remove it in '+left+' days');el.parentNode.insertBefore(ce,el.nextSibling);}}
+    feed().then(function(list){var s=m.getAttribute('data-deal-slug');if(!(list||[]).some(function(x){return x.slug===s;})||(ida&&ida<new Date().toISOString().slice(0,10))){var b=d.createElement('div');b.className='hlc-old';b.innerHTML=T('<b>⏰ Este chollo ya ha caducado.</b> Los precios cambian rápido. <a href="/chollos/">Mira los chollos de hoy</a> o <a href="/alertas/">crea una alerta</a> para el próximo.','<b>⏰ This deal has expired.</b> Prices move fast. <a href="/en/deals/">See today\'s deals</a>.');var t=d.querySelector('.deal-body');if(t)t.parentNode.insertBefore(b,t);d.body.classList.add('deal-gone');}});
   }
   /* ---------- Volver arriba ---------- */
   function toTop(){var b=d.createElement('button');b.className='hlc-top';b.type='button';b.setAttribute('aria-label',T('Volver arriba','Back to top'));b.textContent='↑';d.body.appendChild(b);b.onclick=function(){w.scrollTo({top:0,behavior:'smooth'});};w.addEventListener('scroll',function(){b.classList.toggle('on',w.scrollY>1200);},{passive:true});}
@@ -213,7 +221,7 @@ document.documentElement.classList.add('hlc-js');
     var box=d.querySelector('[data-hlc-deals]:not([data-dest])');if(!box||box.closest('.hlc-rel')||d.querySelector('.geo-note'))return;var o=ls('hlc_origin')||GEO.o;
     var mine=list.filter(function(x){return geoRank(x)<3;}).length;
     var n=d.createElement('div');n.className='geo-note';
-    n.innerHTML=(mine?'📍 Te enseñamos primero los chollos con salida desde <b>'+esc(GEO.r==='es'?o:GEO.reg.label)+'</b>.':'📍 Hoy no hay chollos con salida desde <b>'+esc(GEO.reg.label)+'</b>: te enseñamos los mejores del mundo. <a href="/alertas/">Avísame cuando salga uno</a>.')+' <button type="button" class="geo-ch">Cambiar origen</button>';
+    n.innerHTML='<span>'+(mine?'📍 Te enseñamos primero los chollos con salida desde <b>'+esc(GEO.r==='es'?o:GEO.reg.label)+'</b>.':'📍 Hoy no hay chollos con salida desde <b>'+esc(GEO.reg.label)+'</b>: te enseñamos primero los de España y después los mejores del mundo. <a href="/alertas/">Avísame cuando salga uno</a>.')+'</span><button type="button" class="geo-ch">Cambiar origen</button>';
     box.parentNode.insertBefore(n,box);
     n.querySelector('.geo-ch').addEventListener('click',function(){var t=d.querySelector('[data-origin]')||d.querySelector('[data-map-origin]');if(t){t.scrollIntoView({behavior:'smooth',block:'center'});try{t.focus();}catch(e){}}});
   }
@@ -226,7 +234,7 @@ document.documentElement.classList.add('hlc-js');
   /* ---------- Cabeceras con varias fotos del destino ---------- */
   function heroRotate(){
     d.querySelectorAll('[data-photos]').forEach(function(el){
-      var L=el.getAttribute('data-photos').split('|').filter(Boolean);if(L.length<2)return;
+      var L=el.getAttribute('data-photos').split('|').filter(Boolean);if(L.length<2||(w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches))return;
       for(var i=L.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));if(i>0&&j>0){var t=L[i];L[i]=L[j];L[j]=t;}}
       var n=0;el.classList.add('ph-rot');
       setInterval(function(){if(d.hidden)return;var nx=L[(n+1)%L.length],im=new Image();im.onload=function(){n=(n+1)%L.length;el.style.backgroundImage='url('+nx+')';};im.src=nx;},6000);
@@ -411,9 +419,29 @@ document.documentElement.classList.add('hlc-js');
       });
     });
   }
+  /* ---------- Hora relativa (hoy / ayer) ---------- */
+  function relTimes(){d.querySelectorAll('[data-rel]').forEach(function(el){var t=Date.parse(el.getAttribute('data-rel'));if(!t)return;var now=new Date(),dt=new Date(t);
+    var hm=dt.toLocaleTimeString(EN?'en-GB':'es-ES',{hour:'2-digit',minute:'2-digit'});var day=function(x){return new Date(x.getFullYear(),x.getMonth(),x.getDate()).getTime();};var n=Math.round((day(now)-day(dt))/864e5);
+    if(n===0)el.textContent=T('hoy a las ','today at ')+hm;else if(n===1)el.textContent=T('ayer a las ','yesterday at ')+hm;else if(n>1&&n<8)el.textContent=T('hace '+n+' días',n+' days ago');el.title=dt.toLocaleString(EN?'en-GB':'es-ES');});}
+  /* ---------- Rutas: antigüedad del precio ---------- */
+  function routeAge(){var k=d.querySelector('[data-checked]');if(!k)return;var t=Date.parse(k.getAttribute('data-checked'));if(!t)return;var n=Math.floor((Date.now()-t)/864e5);
+    var s=d.createElement('span');s.className='age '+(n<=7?'ok':n<=30?'mid':'old');s.textContent=n<=0?T('hoy','today'):n===1?T('ayer','yesterday'):T('hace '+n+' días',n+' days ago');k.appendChild(d.createTextNode(' · '));k.appendChild(s);
+    if(n>30){var c=d.querySelector('.deal-hero .deal-cta');if(c){var note=d.createElement('p');note.className='stale-note';note.innerHTML=T('Precio de hace '+n+' días: puede haber cambiado. <a href="#calendario">Mira el calendario, que se consulta en vivo ↓</a>','This price is '+n+' days old and may have changed. <a href="#calendario">See the live price calendar ↓</a>');c.parentNode.insertBefore(note,c.nextSibling);}}}
+  /* ---------- Botón de compra fijo en móvil (ficha y ruta) ---------- */
+  function buyBar(){if(!w.matchMedia||!w.matchMedia('(max-width:767px)').matches||!('IntersectionObserver' in w))return;var p=d.querySelector('.deal-hero a.price-tag[href]');if(!p||d.querySelector('[data-ver]'))return;
+    var b=d.createElement('a');b.className='hlc-buy';b.href=p.getAttribute('href');b.target='_blank';b.rel='sponsored nofollow noopener';b.setAttribute('data-hlc','barra_vuelo');
+    if(p.getAttribute('data-tvcity'))b.setAttribute('data-tvcity',p.getAttribute('data-tvcity'));
+    b.innerHTML='<span>'+T('Ver vuelo y fechas','See flight & dates')+'</span><b>'+esc((p.textContent||'').replace(/\s+/g,' ').trim())+'</b>';d.body.appendChild(b);
+    new IntersectionObserver(function(es){var on=!es[0].isIntersecting;b.classList.toggle('on',on);d.body.classList.toggle('hlc-buy-on',on);}).observe(p);}
+  /* ---------- Chollos ya vistos ---------- */
+  function seen(){var L=[];try{L=JSON.parse(ls('hlc_seen')||'[]');}catch(e){}var m=d.querySelector('[data-deal-slug]');
+    w.HLC_seen=function(){d.querySelectorAll('a.dc[data-slug]').forEach(function(a){if(L.indexOf(a.getAttribute('data-slug'))>=0)a.classList.add('seen');});};w.HLC_seen();
+    if(m){var s=m.getAttribute('data-deal-slug');if(L.indexOf(s)<0){L.unshift(s);ls('hlc_seen',JSON.stringify(L.slice(0,80)));}}}
+  /* ---------- Tablas anchas: aviso de que se pueden deslizar ---------- */
+  function wideTables(){d.querySelectorAll('table.pm-t,table.bagt,.inner-post-entry table').forEach(function(tb){if(tb.parentNode.classList.contains('tb-x'))return;var x=d.createElement('div');x.className='tb-x';x.setAttribute('tabindex','0');x.setAttribute('role','region');x.setAttribute('aria-label',T('Tabla: desliza para ver más','Table: swipe to see more'));tb.parentNode.insertBefore(x,tb);x.appendChild(tb);if(x.scrollWidth>x.clientWidth+4)x.classList.add('more');x.addEventListener('scroll',function(){x.classList.toggle('more',x.scrollLeft+x.clientWidth<x.scrollWidth-4);},{passive:true});});}
   function lazyBg(){var l=d.querySelectorAll('[data-bg]');if(!l.length)return;var set=function(el){if(!el.getAttribute('data-bg'))return;el.style.backgroundImage='url('+el.getAttribute('data-bg')+')';el.removeAttribute('data-bg');};if(!('IntersectionObserver' in w)){l.forEach(set);return;}var o=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){set(en.target);o.unobserve(en.target);}});},{rootMargin:'300px'});l.forEach(function(el){o.observe(el);});}
   function init(){try{okStamps();}catch(e){}try{lazyBg();}catch(e){}
-    [bkLinks,langSwitch,quick,geoAirport,pushUI,reportUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,favs,share,dealState,toTop,heroRotate].forEach(function(f){try{f();}catch(e){}});
+    [bkLinks,langSwitch,quick,geoAirport,pushUI,reportUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,cookieLink,favs,share,dealState,toTop,heroRotate,relTimes,routeAge,buyBar,seen,wideTables].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();
