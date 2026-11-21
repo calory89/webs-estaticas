@@ -1318,7 +1318,7 @@
    "checked": 4640,
    "indexable": 4098,
    "max_depth": 3,
-   "titles_changed_since_last_build": 7,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1326,7 +1326,6 @@
    "year_in_title": 2,
    "near_identical_pages": 528,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 7,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1406,15 +1405,6 @@
    "region_used_as_country": [
     "Dc-hu2ajorQ: Scandinavia",
     "Dcky5gADEHo: Scandinavia"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/with-garage-in-united-states: Houses with a garage in the United States (22, from €77,300)",
-    "/deal/us-tampa-4811-265k: 4-bedroom house in Belmont Heights, Florida for €237,400",
-    "/es/cheap-houses/with-garage-in-united-states: Casas con garaje en venta en Estados Unidos (22) · RealHunt",
-    "/es/homes/united-states/houses: Casas en venta en Estados Unidos (45, desde 65.428 €)",
-    "/es/homes/united-states/in-town: Casas en ciudad en venta en Estados Unidos (39) · RealHunt",
-    "/homes/united-states/houses: Houses for sale in the United States (45, from €65,428)",
-    "/homes/united-states/in-town: Houses in town in the United States (39, from €65,428)"
    ]
   },
   "depth": {
@@ -1447,7 +1437,7 @@
      "html_kb": 9.1,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 407.5,
+     "route_js_kb": 409.4,
      "requests_in_html": 14,
      "high_priority_images": 2,
      "eager_images": 2,
@@ -1459,7 +1449,7 @@
      "html_kb": 12.4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 407.5,
+     "route_js_kb": 409.4,
      "requests_in_html": 13,
      "high_priority_images": 1,
      "eager_images": 1,
@@ -1468,10 +1458,10 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 22.1,
+     "html_kb": 22,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 407.5,
+     "route_js_kb": 409.4,
      "requests_in_html": 15,
      "high_priority_images": 1,
      "eager_images": 3,
@@ -1483,7 +1473,7 @@
      "html_kb": 11.5,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 407.5,
+     "route_js_kb": 409.4,
      "requests_in_html": 15,
      "high_priority_images": 1,
      "eager_images": 3,
@@ -1495,7 +1485,7 @@
      "html_kb": 6.2,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 457.1,
+     "route_js_kb": 459,
      "requests_in_html": 15,
      "high_priority_images": 0,
      "eager_images": 0,
