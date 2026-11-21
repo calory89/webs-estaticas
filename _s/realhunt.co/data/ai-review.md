@@ -1,5 +1,5 @@
 ## RealHunt AI score
-Scored now: 79 · total: 720 · approx cost (Haiku): $0.51
+Scored now: 0 · total: 720 · approx cost (Haiku): $0.00
 
 ### Homes to review (441)
 | home | beauty | condition | cover ok | keep | flags |

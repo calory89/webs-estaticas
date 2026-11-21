@@ -202,7 +202,7 @@
    "pages": 713,
    "indexable": 712,
    "noindex": 1,
-   "median_words": 1161,
+   "median_words": 1203,
    "title_over_60": 42,
    "desc_out_of_range": 17,
    "inlinks_under_3": 0
@@ -418,7 +418,7 @@
    "pages": 713,
    "indexable": 712,
    "noindex": 1,
-   "median_words": 1041,
+   "median_words": 1087,
    "title_over_60": 115,
    "desc_out_of_range": 2,
    "inlinks_under_3": 0
@@ -1447,7 +1447,7 @@
      "html_kb": 9.1,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 406.9,
+     "route_js_kb": 407.5,
      "requests_in_html": 14,
      "high_priority_images": 2,
      "eager_images": 2,
@@ -1456,10 +1456,10 @@
     },
     "deal": {
      "path": "/deal/DZ-9LczExWp",
-     "html_kb": 12.3,
+     "html_kb": 12.4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 406.9,
+     "route_js_kb": 407.5,
      "requests_in_html": 13,
      "high_priority_images": 1,
      "eager_images": 1,
@@ -1471,7 +1471,7 @@
      "html_kb": 22.1,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 406.9,
+     "route_js_kb": 407.5,
      "requests_in_html": 15,
      "high_priority_images": 1,
      "eager_images": 3,
@@ -1483,7 +1483,7 @@
      "html_kb": 11.5,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 406.9,
+     "route_js_kb": 407.5,
      "requests_in_html": 15,
      "high_priority_images": 1,
      "eager_images": 3,
@@ -1495,7 +1495,7 @@
      "html_kb": 6.2,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 79.4,
-     "route_js_kb": 456,
+     "route_js_kb": 457.1,
      "requests_in_html": 15,
      "high_priority_images": 0,
      "eager_images": 0,
@@ -1503,7 +1503,25 @@
      "problems": []
     }
    }
-  }
+  },
+  "dupes": [
+   {
+    "why": "price_size_place",
+    "key": "190000|85|cumbre del sol, benitachell (jávea)|spain",
+    "slugs": [
+     "es-cumbre-del-sol-190k-901839",
+     "es-cumbre-del-sol-190k-503985"
+    ]
+   },
+   {
+    "why": "price_size_place",
+    "key": "290000|190|vejer de la frontera|spain",
+    "slugs": [
+     "live-pisos-a4dw9a",
+     "live-pisos-xpjygk"
+    ]
+   }
+  ]
  },
  "sitemaps": {
   "sitemap-main.xml": 22,
