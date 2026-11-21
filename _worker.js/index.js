@@ -156,7 +156,9 @@ function kbHeaders(r, u) {
   // The rest of the policy (connect, img, style, frame sources) stays report-only. Rollback in one line: KB_CSP_SCRIPTS = false below
   // (or Pages variable KB_CSP_STRICT=0, read at the top of fetch). Counts: /api/x/live/csp.
   else if (KB_CSP_SCRIPTS) {
-    h.set('content-security-policy', h.get('content-security-policy') + "; script-src 'nonce-" + nonce + "' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; worker-src 'self' blob:; report-uri /api/kb/csp; report-to csp");
+    // n34s (21 Nov 2026): frame-src enforced too (0 frame reports in 30 days of report-only): only our own pages, the PayPal checkout and
+    // the portal's own PDF previews (data:/blob:) can be framed inside a page, so injected markup cannot frame another site
+    h.set('content-security-policy', h.get('content-security-policy') + "; script-src 'nonce-" + nonce + "' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; worker-src 'self' blob:; frame-src 'self' data: blob: https://www.paypal.com https://www.sandbox.paypal.com; manifest-src 'self'; report-uri /api/kb/csp; report-to csp");
     // the script rules are enforced above, so the report-only copy stops judging scripts: a blocked script is reported once, and the
     // one false report per page view (Cloudflare gives its Zaraz loader a nonce in an enforced header only) is gone from the counts
     h.set('content-security-policy-report-only', h.get('content-security-policy-report-only').replace(/script-src [^;]+; script-src-attr 'none'; /, "script-src * 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data:; "));
@@ -465,6 +467,10 @@ export default {
     if (r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const ct = r.headers.get('content-type') || '', pth = new URL(req.url).pathname;
       if ((/text\/csv/.test(ct) || (/json/.test(ct) && /^\/(data|api\/open|api\/v1|api\/x\/transparency|rankings|stories|press)\//.test(pth))) && !/rel="?license/.test(r.headers.get('link') || '')) {
         try { const h = new Headers(r.headers), lk = h.get('link'); h.set('link', (lk ? lk + ', ' : '') + '<https://creativecommons.org/licenses/by/4.0/>; rel="license"'); r = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {} } }
+    // n34s (21 Nov 2026): API answers (JSON, JSON Feed, GeoJSON) and plain text get a deny-all policy: opened directly in a browser tab
+    // they can never run script, load anything or be framed, even if an echoed query value looked like markup (nosniff stays on)
+    if (r && r.status >= 200 && r.status < 500 && r.status !== 204 && r.status !== 304 && !r.webSocket && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /^(application\/[a-z.+-]*json|text\/plain)/i.test(r.headers.get('content-type') || '') && !r.headers.has('content-security-policy')) {
+      try { const h = new Headers(r.headers); h.set('content-security-policy', "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; sandbox"); h.set('x-content-type-options', 'nosniff'); if (!h.has('referrer-policy')) h.set('referrer-policy', 'strict-origin-when-cross-origin'); r = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h }); } catch (e) {} }
     // n33i (batch 33, items 1, 6, 13): X-Robots-Tag noindex on every /api/ answer, 410 for unknown /api/kb/ GETs, nofollow or clean paths on parameter links
     if (r && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (/^\/api\//.test(u0.pathname) || (req.method === 'GET' && r.status === 200 && /text\/html/.test(r.headers.get('content-type') || ''))) { try { if (!kn33i) kn33i = await import('./kbx_n33i.js'); r = await kn33i.post(req, u0, r, env); } catch (e) {} } }
     // n33b (batch 33, item 93): "How to cite this page" (text with link, BibTeX, licence) on report pages that carry none (see kbx_n33b.js cite)

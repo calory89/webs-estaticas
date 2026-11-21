@@ -449,6 +449,12 @@ const PILOT = new WeakSet();
 // sec13: the Cloudflare secret KB_WKEY replaces this built-in value when it is set (see useEnv); rotate the key once the secret is in place
 let WKEY = 'kbw_05b9a76d1e8195c0d4b0ef74e8d01b5d16b0276008bbc0d0';
 export function useEnv(env) { if (env && typeof env.KB_WKEY === 'string' && /^kbw_[0-9a-f]{32,}$/.test(env.KB_WKEY) && env.KB_WKEY !== WKEY) WKEY = env.KB_WKEY; }
+async function hourCap(name, max) {   // n34s: one counter per location and hour in the Cache API (same pattern as rateLimited)
+  const k = new Request('https://kolaboro.com/__cap/' + name + '/' + new Date().toISOString().slice(0, 13)), h = await caches.default.match(k), n = h ? (+(await h.text()) || 0) : 0;
+  if (n >= max) return true;
+  await caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } }));
+  return false;
+}
 async function rateLimited(req, ctx) {
   if (PILOT.has(req)) return false;
   const ip0 = req.headers.get('cf-connecting-ip') || 'x';
@@ -653,9 +659,10 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/paypal-webhook' && req.method === 'POST') return ppWebhook(req, env, ctx);
   if (u.pathname === '/api/kb/ask' && req.method === 'POST') return logged('ask', () => ask(req, env, ctx), ctx);
   if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
-  if (u.pathname === '/api/kb/eval-run' && req.method === 'POST') return evalRun(req, env, ctx);
+  // n34s (21 Nov 2026): eval-run and witness need no key (the daily jobs call them), so each location takes at most a few calls an hour
+  if (u.pathname === '/api/kb/eval-run' && req.method === 'POST') return (await hourCap('eval', 4)) ? json({ error: 'rate', note: 'at most 4 calls an hour' }, 429) : evalRun(req, env, ctx);
   if (u.pathname === '/api/kb/probe' && req.method === 'POST') return probeReport(req, env, ctx);
-  if (u.pathname === '/api/kb/witness' && req.method === 'POST') return witness(req, env, ctx);
+  if (u.pathname === '/api/kb/witness' && req.method === 'POST') return (await hourCap('witness', 6)) ? json({ error: 'rate', note: 'at most 6 calls an hour' }, 429) : witness(req, env, ctx);
   if ((u.pathname === '/api/kb/err' || u.pathname === '/api/kb/csp') && req.method === 'POST') return clientErr(req, env, ctx);
   if (u.pathname === '/api/kb/stats') return stats(ctx);
   if (u.pathname === '/api/kb/health') return health(env);
