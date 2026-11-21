@@ -95,11 +95,11 @@ const jerr = (o, s) => new Response(JSON.stringify(o), { status: s, headers: Obj
 const json = o => JSON.stringify(o, null, 1);
 
 // ------------------------------------------------------------------------------------------------ 24: Brotli copies of /data/*.json
-const BR_ON = false;   // off until the outer response path keeps encodeBody: 'manual' (21 Nov 2026: the copy reached browsers compressed twice)
+const BR_ON = false;   // 21 Nov 2026: the first version reached browsers compressed twice (an outer layer rebuilt the Response without encodeBody: 'manual'); the answer now carries its own CSP so that layer leaves it alone; tested with the x-kolaboro-br-test header before turning on
 let BRM = null; const BROK = {};
 async function brManifest(env) { if (BRM && Date.now() - BRM.t < 600000) return BRM.v; const v = await file(env, '/data/br/manifest.json', 600000); BRM = { t: Date.now(), v }; return v; }
 export async function brServe(req, u, env) {
-  if (!BR_ON) return null;
+  if (!BR_ON && req.headers.get('x-kolaboro-br-test') !== '1') return null;
   if (req.method !== 'GET' || req.headers.get('range') || u.search) return null;
   if (!/\bbr\b/.test(req.headers.get('accept-encoding') || '')) return null;
   if (req.headers.get('cf-worker') || /kolaboro-/i.test(req.headers.get('user-agent') || '')) return null;   // subrequests from our own worker read the normal file (they parse it as text)
@@ -113,7 +113,7 @@ export async function brServe(req, u, env) {
   if (!ok) return null;
   const b = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + e.br));
   if (!b.ok) return null;
-  return new Response(b.body, { status: 200, encodeBody: 'manual', headers: { 'content-type': 'application/json; charset=utf-8', 'content-encoding': 'br', vary: 'accept-encoding', etag: 'W/"br-' + e.source_sha256.slice(0, 24) + '"', 'cache-control': 'public, max-age=60, stale-while-revalidate=300', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*', link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"', 'x-kolaboro-precompressed': 'brotli q11; source sha256 ' + e.source_sha256 } });
+  return new Response(b.body, { status: 200, encodeBody: 'manual', headers: { 'content-type': 'application/json; charset=utf-8', 'content-encoding': 'br', vary: 'accept-encoding', etag: 'W/"br-' + e.source_sha256.slice(0, 24) + '"', 'cache-control': 'public, max-age=60, stale-while-revalidate=300', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; sandbox", 'referrer-policy': 'strict-origin-when-cross-origin', 'access-control-allow-origin': '*', link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"', 'x-kolaboro-precompressed': 'brotli q11; source sha256 ' + e.source_sha256 } });
 }
 export function brStatus() { return BROK; }
 
