@@ -1,6 +1,6 @@
 {
  "type": "kolaboro-perf-budget-v1",
- "measured": "2026-11-21T08:13:37Z",
+ "measured": "2026-11-21T09:15:33Z",
  "tool": "open/n34c-build.py perf (urllib, Brotli accepted, one cold-ish fetch per file from a build machine)",
  "budget_file": "/open/perf-budget.json",
  "templates": [
@@ -9,13 +9,13 @@
    "path": "/",
    "status": 200,
    "measured": {
-    "html_wire": 27646,
-    "html_raw": 84886,
-    "js_wire": 50471,
-    "js_raw": 144521,
+    "html_wire": 28118,
+    "html_raw": 87092,
+    "js_wire": 51418,
+    "js_raw": 147508,
     "css_wire": 44688,
     "requests": 5,
-    "ttfb_ms": 299
+    "ttfb_ms": 250
    },
    "budget": {
     "path": "/",
@@ -34,10 +34,10 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42881,
-     "raw": 123351
+     "wire": 43828,
+     "raw": 126338
     },
     {
      "path": "/k/ds-site.css?v=dd003cfe8e",
@@ -58,13 +58,13 @@
    "path": "/projects/amani-melasti/",
    "status": 200,
    "measured": {
-    "html_wire": 29443,
-    "html_raw": 119426,
-    "js_wire": 77161,
-    "js_raw": 213418,
+    "html_wire": 29685,
+    "html_raw": 119981,
+    "js_wire": 79214,
+    "js_raw": 219360,
     "css_wire": 44688,
-    "requests": 8,
-    "ttfb_ms": 634
+    "requests": 9,
+    "ttfb_ms": 245
    },
    "budget": {
     "path": "/projects/amani-melasti/",
@@ -79,7 +79,7 @@
     {
      "path": "/k/n31.js?v=a1",
      "kind": "js",
-     "wire": 4480,
+     "wire": 4473,
      "raw": 8927
     },
     {
@@ -89,21 +89,27 @@
      "raw": 2642
     },
     {
+     "path": "/k/n34a/ev.js?v=a1",
+     "kind": "js",
+     "wire": 1214,
+     "raw": 2955
+    },
+    {
      "path": "/k/prov.js?v=369ff51a4c",
      "kind": "js",
      "wire": 7590,
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42994,
-     "raw": 123351
+     "wire": 43828,
+     "raw": 126338
     },
     {
-     "path": "/k/u27.js?v=v113.u27l",
+     "path": "/k/u27.js?v=v115.u27l",
      "kind": "js",
-     "wire": 20611,
+     "wire": 20623,
      "raw": 57328
     },
     {
@@ -125,13 +131,13 @@
    "path": "/ar/projects/amani-melasti/",
    "status": 200,
    "measured": {
-    "html_wire": 44159,
-    "html_raw": 165366,
-    "js_wire": 76938,
-    "js_raw": 213418,
+    "html_wire": 44625,
+    "html_raw": 166122,
+    "js_wire": 79333,
+    "js_raw": 219360,
     "css_wire": 44688,
-    "requests": 8,
-    "ttfb_ms": 748
+    "requests": 9,
+    "ttfb_ms": 286
    },
    "budget": {
     "path": "/ar/projects/amani-melasti/",
@@ -146,7 +152,7 @@
     {
      "path": "/k/n31.js?v=a1",
      "kind": "js",
-     "wire": 4473,
+     "wire": 4480,
      "raw": 8927
     },
     {
@@ -156,21 +162,27 @@
      "raw": 2642
     },
     {
+     "path": "/k/n34a/ev.js?v=a1",
+     "kind": "js",
+     "wire": 1214,
+     "raw": 2955
+    },
+    {
      "path": "/k/prov.js?v=369ff51a4c",
      "kind": "js",
-     "wire": 7590,
+     "wire": 7589,
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42778,
-     "raw": 123351
+     "wire": 43941,
+     "raw": 126338
     },
     {
-     "path": "/k/u27.js?v=v113.u27l",
+     "path": "/k/u27.js?v=v115.u27l",
      "kind": "js",
-     "wire": 20611,
+     "wire": 20623,
      "raw": 57328
     },
     {
@@ -192,13 +204,13 @@
    "path": "/m/dubai/",
    "status": 200,
    "measured": {
-    "html_wire": 24377,
-    "html_raw": 116771,
-    "js_wire": 65905,
-    "js_raw": 185452,
+    "html_wire": 27710,
+    "html_raw": 135452,
+    "js_wire": 66809,
+    "js_raw": 188439,
     "css_wire": 47157,
     "requests": 10,
-    "ttfb_ms": 342
+    "ttfb_ms": 344
    },
    "budget": {
     "path": "/m/dubai/",
@@ -208,7 +220,9 @@
     "js_raw": 204800,
     "requests": 11
    },
-   "over": [],
+   "over": [
+    "html_wire"
+   ],
    "assets": [
     {
      "path": "/k/ask.js?v=544be9f9c8",
@@ -229,10 +243,10 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42994,
-     "raw": 123351
+     "wire": 43898,
+     "raw": 126338
     },
     {
      "path": "/m/m.js?v=n33a1",
@@ -271,13 +285,13 @@
    "path": "/projects/",
    "status": 200,
    "measured": {
-    "html_wire": 71125,
-    "html_raw": 306003,
-    "js_wire": 73415,
-    "js_raw": 207060,
+    "html_wire": 76134,
+    "html_raw": 329664,
+    "js_wire": 74487,
+    "js_raw": 210047,
     "css_wire": 44688,
     "requests": 7,
-    "ttfb_ms": 371
+    "ttfb_ms": 498
    },
    "budget": {
     "path": "/projects/",
@@ -302,15 +316,15 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42881,
-     "raw": 123351
+     "wire": 43941,
+     "raw": 126338
     },
     {
-     "path": "/k/u27.js?v=v113.u27l",
+     "path": "/k/u27.js?v=v115.u27l",
      "kind": "js",
-     "wire": 20611,
+     "wire": 20623,
      "raw": 57328
     },
     {
@@ -332,13 +346,13 @@
    "path": "/developers/emaar-properties/",
    "status": 200,
    "measured": {
-    "html_wire": 26423,
-    "html_raw": 148213,
-    "js_wire": 50471,
-    "js_raw": 144521,
+    "html_wire": 28062,
+    "html_raw": 157062,
+    "js_wire": 51531,
+    "js_raw": 147508,
     "css_wire": 44688,
     "requests": 5,
-    "ttfb_ms": 452
+    "ttfb_ms": 532
    },
    "budget": {
     "path": "/developers/emaar-properties/",
@@ -357,10 +371,10 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42881,
-     "raw": 123351
+     "wire": 43941,
+     "raw": 126338
     },
     {
      "path": "/k/ds-site.css?v=dd003cfe8e",
@@ -381,13 +395,13 @@
    "path": "/rankings/",
    "status": 200,
    "measured": {
-    "html_wire": 18620,
-    "html_raw": 64903,
-    "js_wire": 52804,
-    "js_raw": 149732,
+    "html_wire": 19173,
+    "html_raw": 66763,
+    "js_wire": 53751,
+    "js_raw": 152719,
     "css_wire": 44688,
     "requests": 6,
-    "ttfb_ms": 1418
+    "ttfb_ms": 522
    },
    "budget": {
     "path": "/rankings/",
@@ -412,10 +426,10 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42881,
-     "raw": 123351
+     "wire": 43828,
+     "raw": 126338
     },
     {
      "path": "/k/ds-site.css?v=dd003cfe8e",
@@ -436,13 +450,13 @@
    "path": "/engineering/",
    "status": 200,
    "measured": {
-    "html_wire": 12199,
-    "html_raw": 32972,
-    "js_wire": 57403,
-    "js_raw": 159621,
+    "html_wire": 13735,
+    "html_raw": 37458,
+    "js_wire": 58237,
+    "js_raw": 162608,
     "css_wire": 44688,
     "requests": 7,
-    "ttfb_ms": 700
+    "ttfb_ms": 829
    },
    "budget": {
     "path": "/engineering/",
@@ -473,10 +487,10 @@
      "raw": 21170
     },
     {
-     "path": "/k/site.js?v=n32s1",
+     "path": "/k/site.js?v=n34b1",
      "kind": "js",
-     "wire": 42994,
-     "raw": 123351
+     "wire": 43828,
+     "raw": 126338
     },
     {
      "path": "/k/ds-site.css?v=dd003cfe8e",
@@ -493,6 +507,6 @@
    ]
   }
  ],
- "passed": 8,
+ "passed": 7,
  "total": 8
 }
