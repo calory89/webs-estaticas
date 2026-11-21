@@ -1,7 +1,7 @@
 {
  "built": "2026-11-21",
  "indexable": 6886,
- "pages_given_a_date": 6577,
+ "pages_given_a_date": 6580,
  "video_pages": 0,
  "listing_markdown": 44,
  "llms": {
@@ -16,7 +16,7 @@
  "indexnow": {
   "compared": true,
   "added": 2,
-  "changed": 174,
+  "changed": 178,
   "removed": 0
  },
  "releases": 18,
