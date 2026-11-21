@@ -1,8 +1,8 @@
 # Las casas más baratas por metro cuadrado de Europa (2026)
 
-La casa con el precio de salida por metro cuadrado más bajo de Europa en RealHunt es Casa de 1945 muy reformada en 2.800 m² de jardín y bosque, en Markaryd, Kronoberg, Småland, Sweden: 78.000 € por 800 m², 98 €/m². Por países, el precio mediano por m² más bajo está en Suecia (701 €/m²), Bulgaria (740 €/m²) y Dinamarca (790 €/m²), y el más alto en los Países Bajos (4.286 €/m²).
+La casa con el precio de salida por metro cuadrado más bajo de Europa en RealHunt es Casa de 1945 muy reformada en 2.800 m² de jardín y bosque, en Markaryd, Kronoberg, Småland, Sweden: 78.000 € por 800 m², 98 €/m². Por países, el precio mediano por m² más bajo está en Bulgaria (740 €/m²), Dinamarca (790 €/m²) y Suecia (800 €/m²), y el más alto en los Países Bajos (4.286 €/m²).
 
-A partir de 526 casas de 17 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 21 de noviembre de 2026.
+A partir de 533 casas de 17 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 21 de noviembre de 2026.
 
 Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.es.csv
 
@@ -38,10 +38,10 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | País | Casas con superficie | Mediana €/m² | La más barata por m² |
 | --- | --- | --- | --- |
-| Suecia | 22 | 701 € | 98 € |
 | Bulgaria | 7 | 740 € | 690 € |
 | Dinamarca | 44 | 790 € | 403 € |
-| Italia | 64 | 1.000 € | 204 € |
+| Suecia | 24 | 800 € | 98 € |
+| Italia | 69 | 1.000 € | 204 € |
 | Alemania | 21 | 1.053 € | 694 € |
 | Polonia | 31 | 1.139 € | 450 € |
 | Francia | 48 | 1.175 € | 234 € |
@@ -58,7 +58,7 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 717 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 726 anuncios escogidos (el 60% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - El precio por m² es el precio de salida dividido por la superficie que da el anuncio. Se dejan fuera las casas de menos de 20 m² y las que no indican superficie. Las superficies son las del anuncio y pueden medirse de forma distinta según el país.
 - Europa son aquí los países de Europa, Chipre incluido. Los países con menos de 3 casas con superficie no aparecen en la tabla por país.

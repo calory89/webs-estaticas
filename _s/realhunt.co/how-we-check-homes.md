@@ -9,13 +9,13 @@ Updated 21 November 2026
 ### Today's figures
 
 What | Homes
-Homes on RealHunt today | 717
+Homes on RealHunt today | 726
 Advert confirmed online in the last 30 days | 518
 Last reading: advert online | 419
 Last reading: advert removed | 112
 Last reading: the portal blocked the program | 137
 Last reading: no answer | 7
-Not read by the program yet, or not readable (social posts) | 42
+Not read by the program yet, or not readable (social posts) | 51
 Marked as no longer for sale | 104
 With the notice "we could not confirm this home is still for sale" | 130
 With a dated check by a person on their page | 6

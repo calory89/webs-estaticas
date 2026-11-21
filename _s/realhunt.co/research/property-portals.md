@@ -38,7 +38,7 @@ RealHunt: 21 checked homes, https://realhunt.co/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 83 checked homes, https://realhunt.co/homes/italy
+RealHunt: 88 checked homes, https://realhunt.co/homes/italy
 
 ## France
 
@@ -121,7 +121,7 @@ RealHunt: 46 checked homes, https://realhunt.co/homes/denmark
 1. [Hemnet](https://www.hemnet.se/)
 2. [Booli](https://www.booli.se/)
 
-RealHunt: 39 checked homes, https://realhunt.co/homes/sweden
+RealHunt: 41 checked homes, https://realhunt.co/homes/sweden
 
 ## Norway
 
@@ -378,7 +378,7 @@ RealHunt: 5 checked homes, https://realhunt.co/homes/dominican-republic
 3. [at home](https://www.athome.co.jp/)
 4. [Real Estate Japan](https://realestate.co.jp/)
 
-RealHunt: 36 checked homes, https://realhunt.co/homes/japan
+RealHunt: 38 checked homes, https://realhunt.co/homes/japan
 
 ## Iceland
 

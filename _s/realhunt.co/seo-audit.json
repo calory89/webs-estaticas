@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4658,
-  "indexable": 4116,
+  "pages": 4696,
+  "indexable": 4154,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 430,
+  "title_over_60": 436,
   "desc_over_155": 0,
   "desc_under_120": 70,
   "desc_out_of_range": 70,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 46,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4098,
+  "pages_with_hreflang": 4136,
   "thin_under_150_words": 31,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4056,
+  "with_lastmod": 4096,
   "redirects": 1859,
-  "moved_stubs": 296
+  "moved_stubs": 290
  },
  "failures": [],
  "groups": {
@@ -130,17 +130,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1924,
+   "median_words": 1945,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 339,
-   "indexable": 339,
+   "pages": 343,
+   "indexable": 343,
    "noindex": 0,
-   "median_words": 1603,
-   "title_over_60": 9,
+   "median_words": 1621,
+   "title_over_60": 10,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -199,11 +199,11 @@
    "inlinks_under_3": 0
   },
   "/deal/*": {
-   "pages": 717,
-   "indexable": 716,
+   "pages": 726,
+   "indexable": 725,
    "noindex": 1,
    "median_words": 1204,
-   "title_over_60": 44,
+   "title_over_60": 45,
    "desc_out_of_range": 6,
    "inlinks_under_3": 0
   },
@@ -346,17 +346,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2337,
+   "median_words": 2366,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 339,
-   "indexable": 339,
+   "pages": 343,
+   "indexable": 343,
    "noindex": 0,
-   "median_words": 1893,
-   "title_over_60": 83,
+   "median_words": 1896,
+   "title_over_60": 85,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -415,11 +415,11 @@
    "inlinks_under_3": 0
   },
   "/es/deal/*": {
-   "pages": 717,
-   "indexable": 716,
+   "pages": 726,
+   "indexable": 725,
    "noindex": 1,
-   "median_words": 1088,
-   "title_over_60": 122,
+   "median_words": 1089,
+   "title_over_60": 123,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
@@ -496,11 +496,11 @@
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 269,
-   "indexable": 269,
+   "pages": 275,
+   "indexable": 275,
    "noindex": 0,
-   "median_words": 1606,
-   "title_over_60": 47,
+   "median_words": 1610,
+   "title_over_60": 48,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -544,7 +544,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1485,
+   "median_words": 1501,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -757,8 +757,8 @@
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 269,
-   "indexable": 269,
+   "pages": 275,
+   "indexable": 275,
    "noindex": 0,
    "median_words": 1373,
    "title_over_60": 6,
@@ -850,7 +850,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1263,
+   "median_words": 1288,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -1056,7 +1056,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4116,
+   "pages with JSON-LD changed": 4154,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: availability left out (advert not confirmed)": 260,
    "Article: author, date, headline or image missing": 52
@@ -1268,8 +1268,8 @@
    "/cheap-houses/unusual-buildings-in-italy",
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
-   "/deal/bg-kavarna-66k-89682",
-   "... 370 more"
+   "/cheap-houses/with-olive-trees-or-vines-in-sweden",
+   "... 376 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1277,35 +1277,35 @@
   ]
  },
  "spanish": {
-  "twins": 1187,
+  "twins": 1197,
   "groups": {
    "homes": {
-    "pages": 717,
-    "twins": 717,
+    "pages": 726,
+    "twins": 726,
     "words": 0,
     "english": 0,
-    "by_hand": 717,
+    "by_hand": 726,
     "spanish_pct": 0
    },
    "places": {
-    "pages": 632,
-    "twins": 632,
-    "words": 1345930,
+    "pages": 642,
+    "twins": 642,
+    "words": 1374941,
     "english": 0,
     "spanish_pct": 100
    },
    "pages": {
     "pages": 41,
     "twins": 8,
-    "words": 2877,
+    "words": 2886,
     "english": 418,
     "by_hand": 2,
-    "spanish_pct": 85.47
+    "spanish_pct": 85.52
    },
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458111,
+    "words": 458454,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1321,16 +1321,17 @@
  },
  "tech": {
   "summary": {
-   "checked": 4658,
-   "indexable": 4116,
+   "checked": 4696,
+   "indexable": 4154,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 153,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 6,
    "year_in_title": 2,
-   "near_identical_pages": 525,
+   "near_identical_pages": 530,
+   "title_changed_twice_in_28_days": 133,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1405,14 +1406,57 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
-    "... 485 more"
+    "... 490 more"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/by-the-sea: Cheap homes by the sea (144, from €19,320) · RealHunt",
+    "/cheap-houses/houses-under-100000-in-italy: Cheap houses for sale in Italy under €100,000 (32)",
+    "/cheap-houses/most-space-for-the-money-in-japan: The 19 houses with the most space for the money in Japan",
+    "/cheap-houses/near-an-airport: Homes within 30 km of an airport (211, from €10,240)",
+    "/cheap-houses/near-an-airport-in-italy: Cheap homes within 30 km of an airport in Italy (22)",
+    "/cheap-houses/near-an-airport-in-japan: Cheap houses within 30 km of an airport in Japan (12)",
+    "/cheap-houses/new-this-month: Homes added in the last 30 days (212, from €7,400)",
+    "/cheap-houses/new-this-month-in-italy: Homes added in the last 30 days in Italy (37, from €22,000)",
+    "/cheap-houses/new-this-month-in-japan: Cheap houses added in the last 30 days in Japan (17)",
+    "/cheap-houses/new-this-month-in-sweden: Cheap houses added in the last 30 days in Sweden (6)",
+    "/cheap-houses/new-this-week: Homes added in the last 7 days (158, from €54,300)",
+    "/cheap-houses/new-this-week-in-italy: Homes added in the last 7 days in Italy (30, from €55,000)",
+    "/cheap-houses/new-this-week-in-japan: Houses added in the last 7 days in Japan (8, from €54,300)",
+    "/cheap-houses/over-120-sqm: Homes over 120 m² (141, from €39,950) · RealHunt",
+    "/cheap-houses/over-120-sqm-in-italy: Houses over 120 m² in Italy (13, from €89,000) · RealHunt",
+    "/cheap-houses/over-80-sqm: Homes over 80 m² (326, from €7,400) · RealHunt",
+    "/cheap-houses/over-80-sqm-in-italy: Houses over 80 m² in Italy (35, from €22,000) · RealHunt",
+    "/cheap-houses/over-80-sqm-in-japan: Cheap houses over 80 m² in Japan (12, from €7,400)",
+    "/cheap-houses/single-storey: Single-storey houses (32, from €10,240) · RealHunt",
+    "/cheap-houses/stone-houses: Stone houses (76, from €12,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-italy: Cheap stone houses in Italy (29, from €12,000) · RealHunt",
+    "/cheap-houses/stone-houses-under-100000-in-italy: Cheap stone houses in Italy under €100,000 (20) · RealHunt",
+    "/cheap-houses/turnkey: Cheap move-in ready homes (209, from €15,930) · RealHunt",
+    "/cheap-houses/turnkey-in-italy: Move-in ready homes in Italy (20, from €30,000) · RealHunt",
+    "/cheap-houses/under-100000: Cheap houses for sale under €100,000 (366, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (294, from €7,400)",
+    "/cheap-houses/under-100000-pounds-in-italy: Cheap homes for sale in Italy under £100,000 (59) · RealHunt",
+    "/cheap-houses/under-50000-pounds: Cheap homes for sale under £50,000 (121, from €7,400)",
+    "/cheap-houses/under-75000: Cheap homes for sale under €75,000 (197, from €7,400)",
+    "/cheap-houses/village-houses: Cheap village houses (318, from €7,400) · RealHunt",
+    "/cheap-houses/with-a-terrace: Homes with a terrace or balcony (344, from €10,240)",
+    "/cheap-houses/with-a-terrace-in-italy: Cheap homes with a terrace or balcony in Italy (43)",
+    "/cheap-houses/with-a-terrace-in-sweden: Cheap houses with a terrace or balcony in Sweden (12)",
+    "/cheap-houses/with-fireplace: Homes with a fireplace (108, from €7,400) · RealHunt",
+    "/cheap-houses/with-fireplace-in-italy: Homes with a fireplace in Italy (29, from €13,000)",
+    "/cheap-houses/with-garage: Homes with a garage (153, from €18,770) · RealHunt",
+    "/cheap-houses/with-garage-in-japan: Cheap houses with a garage in Japan (10, from €18,770)",
+    "/cheap-houses/with-garage-in-sweden: Cheap houses with a garage in Sweden (8, from €25,960)",
+    "/cheap-houses/with-garden: Houses with a garden (211, from €19,320) · RealHunt",
+    "/cheap-houses/with-garden-in-italy: Houses with a garden in Italy (26, from €29,000) · RealHunt",
+    "... 93 more"
    ]
   },
   "depth": {
    "0": 2,
    "1": 144,
-   "2": 3581,
-   "3": 389
+   "2": 3613,
+   "3": 395
   },
   "noindex": {
    "app screen": 5,
@@ -1516,9 +1560,9 @@
  },
  "sitemaps": {
   "sitemap-main.xml": 22,
-  "sitemap-countries.xml": 235,
-  "sitemap-prices.xml": 57,
-  "sitemap-cheap-houses.xml": 340,
+  "sitemap-countries.xml": 240,
+  "sitemap-prices.xml": 58,
+  "sitemap-cheap-houses.xml": 344,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 39,
@@ -1538,8 +1582,8 @@
   "sitemap-homes-greece.xml": 27,
   "sitemap-homes-hungary.xml": 1,
   "sitemap-homes-ireland.xml": 4,
-  "sitemap-homes-italy.xml": 83,
-  "sitemap-homes-japan.xml": 36,
+  "sitemap-homes-italy.xml": 88,
+  "sitemap-homes-japan.xml": 38,
   "sitemap-homes-mexico.xml": 14,
   "sitemap-homes-montenegro.xml": 1,
   "sitemap-homes-netherlands.xml": 18,
@@ -1548,7 +1592,7 @@
   "sitemap-homes-portugal.xml": 21,
   "sitemap-homes-slovenia.xml": 3,
   "sitemap-homes-spain.xml": 190,
-  "sitemap-homes-sweden.xml": 39,
+  "sitemap-homes-sweden.xml": 41,
   "sitemap-homes-switzerland.xml": 10,
   "sitemap-homes-thailand.xml": 2,
   "sitemap-homes-united-kingdom.xml": 7,
@@ -1557,9 +1601,9 @@
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 92,
   "sitemap-es-main.xml": 19,
-  "sitemap-es-countries.xml": 235,
-  "sitemap-es-prices.xml": 57,
-  "sitemap-es-cheap-houses.xml": 340,
+  "sitemap-es-countries.xml": 240,
+  "sitemap-es-prices.xml": 58,
+  "sitemap-es-cheap-houses.xml": 344,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 38,
@@ -1579,8 +1623,8 @@
   "sitemap-es-homes-greece.xml": 27,
   "sitemap-es-homes-hungary.xml": 1,
   "sitemap-es-homes-ireland.xml": 4,
-  "sitemap-es-homes-italy.xml": 83,
-  "sitemap-es-homes-japan.xml": 36,
+  "sitemap-es-homes-italy.xml": 88,
+  "sitemap-es-homes-japan.xml": 38,
   "sitemap-es-homes-mexico.xml": 14,
   "sitemap-es-homes-montenegro.xml": 1,
   "sitemap-es-homes-netherlands.xml": 18,
@@ -1589,7 +1633,7 @@
   "sitemap-es-homes-portugal.xml": 21,
   "sitemap-es-homes-slovenia.xml": 3,
   "sitemap-es-homes-spain.xml": 190,
-  "sitemap-es-homes-sweden.xml": 39,
+  "sitemap-es-homes-sweden.xml": 41,
   "sitemap-es-homes-switzerland.xml": 10,
   "sitemap-es-homes-thailand.xml": 2,
   "sitemap-es-homes-united-kingdom.xml": 7,
@@ -1600,14 +1644,14 @@
  "pack": {
   "bundles": 256,
   "in_bundles": {
-   "en": 717,
-   "es": 717
+   "en": 726,
+   "es": 726
   },
   "single_files": {
    "en": 0,
    "es": 0
   },
-  "in_sitemaps": 1432,
+  "in_sitemaps": 1450,
   "in_sitemaps_not_served": []
  }
 }

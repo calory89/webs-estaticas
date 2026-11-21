@@ -38,7 +38,7 @@ RealHunt: 21 casas revisadas, https://realhunt.co/es/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 83 casas revisadas, https://realhunt.co/es/homes/italy
+RealHunt: 88 casas revisadas, https://realhunt.co/es/homes/italy
 
 ## Francia
 
@@ -121,7 +121,7 @@ RealHunt: 46 casas revisadas, https://realhunt.co/es/homes/denmark
 1. [Hemnet](https://www.hemnet.se/)
 2. [Booli](https://www.booli.se/)
 
-RealHunt: 39 casas revisadas, https://realhunt.co/es/homes/sweden
+RealHunt: 41 casas revisadas, https://realhunt.co/es/homes/sweden
 
 ## Noruega
 
@@ -378,7 +378,7 @@ RealHunt: 5 casas revisadas, https://realhunt.co/es/homes/dominican-republic
 3. [athome.co.jp](https://www.athome.co.jp/)
 4. [realestate.co.jp](https://realestate.co.jp/)
 
-RealHunt: 36 casas revisadas, https://realhunt.co/es/homes/japan
+RealHunt: 38 casas revisadas, https://realhunt.co/es/homes/japan
 
 ## Islandia
 

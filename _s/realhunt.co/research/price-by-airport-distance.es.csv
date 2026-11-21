@@ -1,7 +1,7 @@
 ﻿tipo,nombre,desde_km,hasta_km,casas,precio_mediano_eur,mediana_eur_m2,casas_con_superficie,nota_mediana,distancia_mediana_km,a_menos_de_60_km_pct
-tramo,menos de 30 km,0,30,243,129000,1456,225,86,,
-tramo,de 30 a 60 km,30,60,269,91000,1091,244,85,,
-tramo,de 60 a 100 km,60,100,175,85000,1077,163,83,,
+tramo,menos de 30 km,0,30,245,130000,1456,227,86,,
+tramo,de 30 a 60 km,30,60,274,91599,1090,249,85,,
+tramo,de 60 a 100 km,60,100,177,85900,1078,165,83,,
 tramo,100 km o más,100,,20,84000,1094,17,84,,
 pais,Países Bajos,,,18,,,,,14,100
 pais,México,,,14,,,,,20,100
@@ -10,12 +10,12 @@ pais,Dominican Republic,,,5,,,,,25,100
 pais,Grecia,,,27,,,,,31,100
 pais,España,,,191,,,,,37,78
 pais,Chipre,,,6,,,,,38,100
+pais,Japón,,,37,,,,,42,81
 pais,Dinamarca,,,46,,,,,43,70
-pais,Japón,,,35,,,,,43,80
-pais,Italia,,,78,,,,,45,67
+pais,Italia,,,83,,,,,45,66
 pais,Bulgaria,,,7,,,,,47,100
+pais,Suecia,,,37,,,,,48,76
 pais,Francia,,,52,,,,,49,65
-pais,Suecia,,,35,,,,,49,74
 pais,Reino Unido,,,7,,,,,55,57
 pais,Portugal,,,21,,,,,56,57
 pais,Canadá,,,16,,,,,63,44

@@ -2,7 +2,7 @@
 
 Updated 21 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 45 houses for sale in France today, priced from €39,000 to €285,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €66,600 (€1,175/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
+RealHunt lists 45 houses for sale in France today, priced from €39,000 to €285,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €66,600 (€1,175/m²), against €93,200 (€1,221/m²) for the 622 homes on RealHunt in 30 countries.
 
 Homes
 45
@@ -227,9 +227,9 @@ By feature and budget [Houses under €100,000 9](https://realhunt.co/cheap-hous
 
 Near a city [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon)
 
-Neighbouring countries [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 21](https://realhunt.co/homes/germany)
+Neighbouring countries [Spain 135](https://realhunt.co/homes/spain) [Italy 84](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 21](https://realhunt.co/homes/germany)
 
-By country [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 135](https://realhunt.co/homes/spain) [Italy 84](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from bienici.com (31), green-acres.fr (10), espaces-atypiques.com (1), french-property.com (1), instagram.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

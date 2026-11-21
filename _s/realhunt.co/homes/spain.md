@@ -2,7 +2,7 @@
 
 Updated 21 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 135 homes for sale in Spain today, priced from €39,000 to €348,000. The cheapest costs €39,000: [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637), in Nacimiento (100 m², 3 bedrooms). The median price is €99,000 (€1,338/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
+RealHunt lists 135 homes for sale in Spain today, priced from €39,000 to €348,000. The cheapest costs €39,000: [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637), in Nacimiento (100 m², 3 bedrooms). The median price is €99,000 (€1,338/m²), against €93,200 (€1,221/m²) for the 622 homes on RealHunt in 30 countries.
 
 Homes
 135
@@ -252,7 +252,7 @@ Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [
 
 Neighbouring countries [Portugal 6](https://realhunt.co/homes/portugal) [France 45](https://realhunt.co/homes/france)
 
-By country [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Italy 84](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from fotocasa.es (98), pisos.com (17), green-acres.es (10), idealista.com (4), thinkspain.com (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

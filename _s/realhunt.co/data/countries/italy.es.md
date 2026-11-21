@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 83 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 83 casas es de 80.000 € (1.000 € por m², calculado con las 64 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 88 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 88 casas es de 85.000 € (1.000 € por m², calculado con las 69 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 83 |
-| Precio de salida mediano | 80.000 € |
-| Precio mediano por m² | 1.000 € (64 casas de superficie conocida) |
-| Superficie mediana | 81 m² |
+| Casas en RealHunt | 88 |
+| Precio de salida mediano | 85.000 € |
+| Precio mediano por m² | 1.000 € (69 casas de superficie conocida) |
+| Superficie mediana | 82 m² |
 | La más barata y la más cara | 12.000 € · 197.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 83 casas, de mejor a peor nota
+## Las 88 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -164,6 +164,14 @@ https://realhunt.co/es/deal/falconara-albanese-41000
 2 dormitorios · 1 baño · 82 m2 · a 10 minutos del lago · 1 h 9 min al aeropuerto de Milán.
 
 https://realhunt.co/es/deal/Dc82VcSjAIe
+
+### Casa de pueblo con huerto de frutales y vista al campo en Giano dell'Umbria
+
+55.000 € · Giano dell'Umbria, Perugia (Umbria) · 97 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-21
+
+Una casa pareada de dos plantas de unos 97 m² justo debajo del pueblo medieval de colina de Giano dell'Umbria, entre Spoleto, Todi y Montefalco. En la planta baja una gran cocina y comedor se abre a un jardín privado de unos 100 m² con árboles frutales. En la planta superior hay dos dormitorios, un baño moderno y un balcón con amplia vista sobre el valle. Se incluye un sótano separado de 24 m². Tiene doble acristalamiento, calefacción de gas propia y servicios de red, y el anuncio la llama lista para mudarse. El pueblo tiene un bar, tienda de comestibles y farmacia. Pidiendo €55.000, menos de €600 por m².
+
+https://realhunt.co/es/deal/it-giano-dell-umbria-village-house-garden-view-55k
 
 ### Casa de piedra de 3 dormitorios con vistas al lago de Como
 
@@ -509,6 +517,14 @@ Un stazzo tradicional de Gallura en el centro histórico de Luras, al norte de C
 
 https://realhunt.co/es/deal/it-sardinia-luras-stazzo-97k
 
+### Casa de pueblo de piedra con habitaciones con vigas en el centro antiguo de Montecatini Val di Cecina, Toscana
+
+100.000 € · Montecatini Val di Cecina, Pisa (Tuscany) · 110 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-21
+
+Una casa de pueblo de piedra de unos 110 m² en tres niveles en el centro medieval de Montecatini Val di Cecina, un pueblo de colina que el anuncio dice tiene todos los servicios necesarios. El primer piso tiene una gran cocina y comedor con una gran chimenea de ladrillo, un salón y un baño. El piso superior tiene un dormitorio doble y una segunda habitación utilizada como estudio, con vistas a los tejados y callejones antiguos. La planta baja tiene una lavandería y una sala de pasatiempos. Tiene calefacción por gas ciudad y aire acondicionado, y está listada en buen estado estructural. Pidiendo €100.000, unos €910 por m².
+
+https://realhunt.co/es/deal/it-montecatini-val-di-cecina-stone-townhouse-centre-100k
+
 ### Casa de piedra renovada con terraza en Arcidosso medieval, Monte Amiata
 
 115.000 € · Arcidosso, Grosseto, Tuscany · 100 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-20
@@ -564,6 +580,22 @@ https://realhunt.co/es/deal/it-tuscany-montaione-renovated-140k
 Una casa independiente en el centro histórico de Iglesias en el suroeste de Cerdeña, aproximadamente 15 minutos en coche desde la costa de Sulcis y la playa de Masua, según el anuncio. Aproximadamente 104 m² con tres dormitorios dobles, cada uno con su propio baño, además de un salón y una cocina americana. El propietario lista ventanas y puertas nuevas, bombas de calor para calefacción y refrigeración, muebles hechos por carpintero y una escalera de hierro forjado. Se vende completamente amueblada y equipada, lista para entrar. Luz desde dos fachadas a la calle. Listado por el propietario.
 
 https://realhunt.co/es/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
+
+### Casa de piedra restaurada del siglo XIV con dos terrazas en Rocchetta di Fazio, Toscana
+
+160.000 € · Rocchetta di Fazio, Semproniano (Grosseto, Tuscany) · 118 m² · 1 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
+
+Una casa de piedra del siglo XIV en la orilla del pueblo de colina de Rocchetta di Fazio, libre por tres lados, con amplia vista sobre los bosques hacia Monte Argentario. Fue restaurada hace unos 20 años con techo nuevo y techos, conservando las vigas de castaño y suelos de terracota hecha a mano, y el anuncio dice que fue hecha resistente a terremotos. Unos 118 m² en dos niveles con dos baños, dos terrazas y un jardín de unos 300 m². Se vende completamente amueblada. Ahora hay un dormitorio, y el agente sugiere que la cocina podría convertirse en un segundo. Las tiendas están a unos cinco minutos. Pidiendo €160.000.
+
+https://realhunt.co/es/deal/it-rocchetta-di-fazio-restored-14th-century-stone-house-160k
+
+### Casa de campo de piedra con jardín y tres baños cerca de Chiusi della Verna, Toscana
+
+165.000 € · Chiusi della Verna, Arezzo (Tuscany) · 145 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
+
+Una sólida casa de piedra de unos 145 m² en tres plantas, listada en buen estado estructural. La planta baja tiene un gran salón con vigas y chimenea y una cocina, más un baño. En la planta superior hay dos dormitorios y dos baños más. La planta baja tiene dos habitaciones extra con ventanas y su propia puerta de acceso exterior, útil como estudio o taller. Se incluyen un cobertizo de leña separado y un jardín con césped. Las fotos claras y limpias muestran suelos de terracota ordenados y techos de madera. Pidiendo €165.000, unos €1.140 por m².
+
+https://realhunt.co/es/deal/it-chiusi-della-verna-stone-country-house-garden-165k
 
 ### Piso de planta baja con jardín orientado al sur de 225 m² en Savignone, Liguria
 
@@ -636,6 +668,14 @@ https://realhunt.co/es/deal/it-rosignano-marittimo-sea-view-village-flat-125k
 Un piso de segunda planta de alrededor de 73 m² en un pequeño edificio de tres plantas con jardines compartidos cerca del puerto de Aregai, en la costa occidental ligur. El anuncio lo sitúa a un corto paseo de las playas y la vía cicloturista costera, y las fotos muestran mar abierto desde los balcones. Recibidor, salón luminoso con cocina, dormitorio doble, baño y un trastero, con balcón desde ambas habitaciones principales. Se incluyen un sótano y una plaza de aparcamiento al aire libre. No hay calefacción instalada, solo la tubería para radiadores, así que presupuesta para ello. Gastos de condominio alrededor de 700 euros al año.
 
 https://realhunt.co/es/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
+
+### Piso de pueblo renovado con gran terraza con vistas al mar en Pairola, Liguria
+
+175.000 € · Pairola, San Bartolomeo al Mare (Imperia, Liguria) · 80 m² · 2 dormitorios · nota RealHunt 77 · añadida el 2026-11-21
+
+Un piso en última planta de unos 80 m² en un edificio de época en Pairola, un tranquilo pueblo de olivares a menos de 3 km sobre San Bartolomeo al Mare y sus playas. Fue completamente renovado, manteniendo las escaleras de pizarra y las vigas de madera. Hay un gran salón con cocina americana, un dormitorio, un entresuelo utilizado como segundo dormitorio, dos baños, un pequeño balcón y una gran terraza privada con vistas a la torre de la iglesia y el mar. Recibe sol por tres lados. Las fotos muestran estar limpio y amueblado. Pidiendo €175.000, unos €2.190 por m².
+
+https://realhunt.co/es/deal/it-pairola-renovated-flat-sea-view-terrace-175k
 
 ### Piso de dos dormitorios recientemente renovado con terraza con vista al mar en Castellaro, Liguria
 

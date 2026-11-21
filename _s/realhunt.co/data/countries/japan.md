@@ -1,6 +1,6 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 36 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 36 homes is €49,680 (€463 per m², from the 20 homes with a known size); the cheapest costs €7,400 and the most expensive €142,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 21 November 2026, RealHunt lists 38 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 38 homes is €54,280 (€468 per m², from the 22 homes with a known size); the cheapest costs €7,400 and the most expensive €159,600. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/japan · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 36 |
-| Median asking price | €49,680 |
-| Median price per m² | €463 (20 homes with a known size) |
-| Median size | 91 m² |
-| Cheapest and most expensive | €7,400 · €142,500 |
+| Homes on RealHunt | 38 |
+| Median asking price | €54,280 |
+| Median price per m² | €468 (22 homes with a known size) |
+| Median size | 92 m² |
+| Cheapest and most expensive | €7,400 · €159,600 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency. |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/japan
 
-## The 36 homes, best score first
+## The 38 homes, best score first
 
 ### Mountain chalet with a wood stove and a loft in the Hida forest
 
@@ -306,6 +306,22 @@ https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
 A two-storey wooden house finished in January 2018, far newer than most homes at this price. 106 m² with two bedrooms plus a storage room and a living, dining and kitchen space of over 20 tatami, on a 1,181 m² freehold plot in Ago-cho Tategami, in the Ise-Shima area of Mie. The advert lists the sea within 2 km, mountain views, a supermarket within a 10 minute walk and parking for three or more cars. Water comes from a well and there is a septic tank. Asking ¥14,800,000 (about €84,500), roughly €800/m².
 
 https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
+
+### Four-bedroom 2016 house of 132 m² on a corner plot in Takashima, Otaru, Hokkaido
+
+€116,800 · Takashima, Otaru, Hokkaido · 132 m² · 4 bedrooms · RealHunt score 79 · added 2026-11-21
+
+Asking ¥20,490,000 (about €116,800), under €900 per m². A two-storey wooden house from September 2016 on a 324 m² freehold corner plot in a quiet residential part of Otaru, with parking for four cars. 132 m² with a living and dining room, an open kitchen facing the room, four bedrooms, a bathroom and two toilets. The selling company has done a termite treatment, a leak and equipment check and a full clean, and it gives a two-year warranty against leaks and structural defects. It is empty, and the primary school is about 350 m away.
+
+https://realhunt.co/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k
+
+### Japanese country house with an irori hearth and old timber beams near Matsumoto, Nagano
+
+€159,600 · Azusagawa-Ueno, Matsumoto, Nagano · 167 m² · 4 bedrooms · RealHunt score 79 · added 2026-11-21
+
+Asking ¥28,000,000 (about €159,600). A two-storey house from May 2003, built with timbers about a hundred years old, in the countryside of Azusagawa. 167 m² with a sunken irori hearth in a dark wood living room under exposed beams, four tatami rooms, an attic room, a kitchen and a bathroom with a window. It stands on a large 1,218 m² freehold plot with lawn and space for a vegetable garden. The house is empty. Shin-Shimashima station is a 15-minute walk. The plot is in an urbanisation-control area (shigaika chōsei kuiki), where rebuilding or extending can be restricted: ask the agent before you plan works.
+
+https://realhunt.co/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k
 
 ### Four-bedroom house from 2004 in Misaki on the Miura peninsula, Kanagawa
 

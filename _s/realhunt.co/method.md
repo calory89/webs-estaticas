@@ -4,7 +4,7 @@ Methodology
 
 The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
 
-Version 2026-11-14 · figures from 717 homes on 21 November 2026 · [Markdown version](https://realhunt.co/method.md)
+Version 2026-11-14 · figures from 726 homes on 21 November 2026 · [Markdown version](https://realhunt.co/method.md)
 
 ### Step 1. A person checks the home
 
@@ -14,20 +14,20 @@ Old is fine; neglected is not. RealHunt turns down about three listings for ever
 
 ### Step 2. The 11 sub-scores, from 0 to 100
 
-Sub-score | What it measures | Homes with it (of 717)
-Price | How cheap it is next to every other home here and in its country | 669
-Price per m² | How little you pay per square metre | 597
-Space | Size of the house | 603
-Move-in condition | Renovated or ready to live in scores more; homes that need work score less | 669
-Extras | Garden, terrace, pool, sauna, fireplace, views, land and more | 669
-Sea & lakes | How close it is to the sea or a lake | 405
+Sub-score | What it measures | Homes with it (of 726)
+Price | How cheap it is next to every other home here and in its country | 678
+Price per m² | How little you pay per square metre | 606
+Space | Size of the house | 612
+Move-in condition | Renovated or ready to live in scores more; homes that need work score less | 678
+Extras | Garden, terrace, pool, sauna, fireplace, views, land and more | 678
+Sea & lakes | How close it is to the sea or a lake | 406
 Good weather | Good-weather days a year where the home is: a high of 18–33 °C, dry, light wind (climate normals) | 317
-Airport | Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more | 658
-Buying costs | Taxes and fees to buy in this country: lower scores more | 622
-Listing detail | Photos, size and rooms published, verified by us | 669
-Buyer interest | Views and saves from RealHunt buyers | 717
+Airport | Nearest airport with scheduled flights: 20 km or less scores 100, then it drops evenly to 0 at 200 km or more | 667
+Buying costs | Taxes and fees to buy in this country: lower scores more | 631
+Listing detail | Photos, size and rooms published, verified by us | 678
+Buyer interest | Views and saves from RealHunt buyers | 726
 
-A sub-score is left out, not guessed, when the listing lacks what it needs: a home with no published size has no price per m² and no space sub-score, and a home with no sea or lake recorded nearby has no water sub-score. Today 214 of 717 homes have all 11.
+A sub-score is left out, not guessed, when the listing lacks what it needs: a home with no published size has no price per m² and no space sub-score, and a home with no sea or lake recorded nearby has no water sub-score. Today 214 of 726 homes have all 11.
 
 ### Step 3. From sub-scores to the grade
 
@@ -39,8 +39,8 @@ Home pages, country pages and the front page are ordered by this grade, best fir
 
 Grade | What it means | Homes today
 90–98 | Top of the site. Usually cheap for its size, ready to live in and well placed. | 144
-80–89 | Very good. Strong on most sub-scores, with one or two weak spots you can see on the home page. | 488
-70–79 | Good. It passed the hand check, but the sub-scores show what you give up. | 85
+80–89 | Very good. Strong on most sub-scores, with one or two weak spots you can see on the home page. | 492
+70–79 | Good. It passed the hand check, but the sub-scores show what you give up. | 90
 
 ### What the score is not: limits
 

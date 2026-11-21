@@ -1,34 +1,34 @@
 {
- "total": 2797,
+ "total": 2824,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 622,
+   "pages": 632,
    "by_kind": {
     "country": 23,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 13,
-    "band": 57,
-    "feature": 208,
+    "ccyBand": 14,
+    "band": 58,
+    "feature": 211,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
-    "beds": 28,
+    "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 61,
-    "region": 59,
+    "regionBand": 64,
+    "region": 60,
     "town": 7
    },
    "by_country": {
     "spain": 100,
-    "italy": 95,
+    "italy": 98,
     "united-states": 47,
     "denmark": 34,
     "france": 38,
-    "sweden": 38,
-    "japan": 45,
+    "sweden": 41,
+    "japan": 49,
     "poland": 14,
     "greece": 40,
     "germany": 18,
@@ -47,35 +47,35 @@
     "slovenia": 2,
     "all countries": 60
    },
-   "homes": 613,
-   "homes_with_title": 613,
+   "homes": 622,
+   "homes_with_title": 622,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 311,
+   "pages": 318,
    "by_kind": {
     "country": 23,
     "gband": 5,
-    "ccyBand": 13,
-    "band": 57,
+    "ccyBand": 14,
+    "band": 58,
     "setting": 24,
     "ptype": 11,
-    "beds": 28,
+    "beds": 29,
     "area": 22,
-    "regionBand": 61,
-    "region": 59,
+    "regionBand": 64,
+    "region": 60,
     "town": 7
    },
    "by_country": {
     "spain": 66,
-    "italy": 53,
+    "italy": 56,
     "united-states": 26,
     "denmark": 17,
     "france": 15,
-    "sweden": 19,
-    "japan": 21,
+    "sweden": 20,
+    "japan": 24,
     "poland": 6,
     "greece": 15,
     "germany": 9,
@@ -94,39 +94,39 @@
     "slovenia": 2,
     "all countries": 8
    },
-   "homes": 613,
-   "homes_with_title": 613,
+   "homes": 622,
+   "homes_with_title": 622,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 622,
+   "pages": 632,
    "by_kind": {
     "country": 23,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 13,
-    "band": 57,
-    "feature": 208,
+    "ccyBand": 14,
+    "band": 58,
+    "feature": 211,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
-    "beds": 28,
+    "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 61,
-    "region": 59,
+    "regionBand": 64,
+    "region": 60,
     "town": 7
    },
    "by_country": {
     "spain": 100,
-    "italy": 95,
+    "italy": 98,
     "united-states": 47,
     "denmark": 34,
     "france": 38,
-    "sweden": 38,
-    "japan": 45,
+    "sweden": 41,
+    "japan": 49,
     "poland": 14,
     "greece": 40,
     "germany": 18,
@@ -145,8 +145,8 @@
     "slovenia": 2,
     "all countries": 60
    },
-   "homes": 613,
-   "homes_with_title": 613,
+   "homes": 622,
+   "homes_with_title": 622,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-fr.xml"
@@ -157,27 +157,27 @@
     "country": 23,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 13,
-    "band": 57,
-    "feature": 208,
-    "setting": 24,
+    "ccyBand": 14,
+    "band": 58,
+    "feature": 211,
+    "setting": 22,
     "ptype": 11,
     "combo": 54,
-    "beds": 28,
+    "beds": 29,
     "area": 22,
     "near": 12,
     "regionBand": 60,
-    "region": 59,
+    "region": 55,
     "town": 7
    },
    "by_country": {
-    "spain": 100,
-    "italy": 95,
-    "united-states": 46,
+    "spain": 98,
+    "italy": 98,
+    "united-states": 43,
     "denmark": 34,
     "france": 38,
     "sweden": 38,
-    "japan": 45,
+    "japan": 49,
     "poland": 14,
     "greece": 40,
     "germany": 18,
@@ -188,7 +188,7 @@
     "portugal": 6,
     "cyprus": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
+    "united-kingdom": 5,
     "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
@@ -196,10 +196,50 @@
     "slovenia": 2,
     "all countries": 60
    },
-   "homes": 613,
-   "homes_with_title": 613,
-   "not_published": 1,
+   "homes": 622,
+   "homes_with_title": 622,
+   "not_published": 11,
    "not_published_sample": [
+    {
+     "path": "/homes/spain/tarragona/under-100000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/spain/valencia/under-100000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/gavleborg",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/kronoberg",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/varmland/under-80000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-kingdom/northern-ireland",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-kingdom/village-houses",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/arkansas",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/by-the-sea",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/maine",
+     "why": "over the page budget of the language (620)"
+    },
     {
      "path": "/homes/united-states/pennsylvania/under-100000",
      "why": "over the page budget of the language (620)"
@@ -213,27 +253,27 @@
     "country": 23,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 13,
-    "band": 57,
-    "feature": 208,
-    "setting": 24,
+    "ccyBand": 14,
+    "band": 58,
+    "feature": 211,
+    "setting": 22,
     "ptype": 11,
     "combo": 54,
-    "beds": 28,
+    "beds": 29,
     "area": 22,
     "near": 12,
     "regionBand": 60,
-    "region": 59,
+    "region": 55,
     "town": 7
    },
    "by_country": {
-    "spain": 100,
-    "italy": 95,
-    "united-states": 46,
+    "spain": 98,
+    "italy": 98,
+    "united-states": 43,
     "denmark": 34,
     "france": 38,
     "sweden": 38,
-    "japan": 45,
+    "japan": 49,
     "poland": 14,
     "greece": 40,
     "germany": 18,
@@ -244,7 +284,7 @@
     "portugal": 6,
     "cyprus": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
+    "united-kingdom": 5,
     "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
@@ -252,10 +292,50 @@
     "slovenia": 2,
     "all countries": 60
    },
-   "homes": 613,
-   "homes_with_title": 613,
-   "not_published": 1,
+   "homes": 622,
+   "homes_with_title": 622,
+   "not_published": 11,
    "not_published_sample": [
+    {
+     "path": "/homes/spain/tarragona/under-100000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/spain/valencia/under-100000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/gavleborg",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/kronoberg",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/sweden/varmland/under-80000",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-kingdom/northern-ireland",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-kingdom/village-houses",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/arkansas",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/by-the-sea",
+     "why": "over the page budget of the language (620)"
+    },
+    {
+     "path": "/homes/united-states/maine",
+     "why": "over the page budget of the language (620)"
+    },
     {
      "path": "/homes/united-states/pennsylvania/under-100000",
      "why": "over the page budget of the language (620)"
@@ -265,9 +345,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 622,
-  "spanish_pages_linked": 622
+  "english_pages_linked": 632,
+  "spanish_pages_linked": 632
  },
- "home_pages_linked": 1208,
+ "home_pages_linked": 1226,
  "failures": []
 }

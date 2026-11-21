@@ -1,8 +1,8 @@
 # The cheapest homes per square metre in Europe (2026)
 
-The home with the lowest asking price per square metre in Europe on RealHunt is Extensively renovated 1945 house on 2,800 m² of garden and woodland in Markaryd, Kronoberg, Småland, Sweden: €78,000 for 800 m², €98/m². By country, the lowest median price per m² is in Sweden (€701/m²), Bulgaria (€740/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²).
+The home with the lowest asking price per square metre in Europe on RealHunt is Extensively renovated 1945 house on 2,800 m² of garden and woodland in Markaryd, Kronoberg, Småland, Sweden: €78,000 for 800 m², €98/m². By country, the lowest median price per m² is in Bulgaria (€740/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 526 homes in 17 European countries whose listing gives a size of at least 20 m², each checked by a person, 21 November 2026.
+From 533 homes in 17 European countries whose listing gives a size of at least 20 m², each checked by a person, 21 November 2026.
 
 Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.csv
 
@@ -38,10 +38,10 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 
 | Country | Homes with size | Median €/m² | Cheapest per m² |
 | --- | --- | --- | --- |
-| Sweden | 22 | €701 | €98 |
 | Bulgaria | 7 | €740 | €690 |
 | Denmark | 44 | €790 | €403 |
-| Italy | 64 | €1,000 | €204 |
+| Sweden | 24 | €800 | €98 |
+| Italy | 69 | €1,000 | €204 |
 | Germany | 21 | €1,053 | €694 |
 | Poland | 31 | €1,139 | €450 |
 | France | 48 | €1,175 | €234 |
@@ -58,7 +58,7 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 717 chosen listings (61% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 726 chosen listings (60% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Price per m² is the asking price divided by the size the listing gives. Homes under 20 m² and homes without a size are left out. Sizes are those of the listing and can be measured in different ways from one country to another.
 - Europe here means the countries of Europe, Cyprus included. Countries with fewer than 3 homes with a size are left out of the country table.

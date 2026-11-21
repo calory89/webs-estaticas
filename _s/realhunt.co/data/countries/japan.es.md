@@ -1,6 +1,6 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 36 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 36 casas es de 49.680 € (463 € por m², calculado con las 20 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 142.500 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 38 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 38 casas es de 54.280 € (468 € por m², calculado con las 22 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 159.600 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 36 |
-| Precio de salida mediano | 49.680 € |
-| Precio mediano por m² | 463 € (20 casas de superficie conocida) |
-| Superficie mediana | 91 m² |
-| La más barata y la más cara | 7.400 € · 142.500 € |
+| Casas en RealHunt | 38 |
+| Precio de salida mediano | 54.280 € |
+| Precio mediano por m² | 468 € (22 casas de superficie conocida) |
+| Superficie mediana | 92 m² |
+| La más barata y la más cara | 7.400 € · 159.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia. |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/japan
 
-## Las 36 casas, de mejor a peor nota
+## Las 38 casas, de mejor a peor nota
 
 ### Chalet de montaña con estufa de leña y altillo en el bosque de Hida
 
@@ -306,6 +306,22 @@ https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
 Una casa de madera de dos plantas terminada en enero de 2018, mucho más nueva que la mayoría de casas a este precio. 106 m² con dos dormitorios más una trastería y un espacio de salón, comedor y cocina de más de 20 tatami, en una parcela de 1.181 m² en propiedad absoluta en Ago-cho Tategami, en la zona de Ise-Shima en Mie. El anuncio menciona el mar a menos de 2 km, vistas a la montaña, un supermercado a 10 minutos a pie y aparcamiento para tres o más coches. El agua proviene de un pozo y hay una fosa séptica. Se pide 14.800.000 ¥ (alrededor de 84.500 €), aproximadamente 800 €/m².
 
 https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
+
+### Casa de 2016 de cuatro dormitorios de 132 m² en una parcela esquinera en Takashima, Otaru, Hokkaido
+
+116.800 € · Takashima, Otaru, Hokkaido · 132 m² · 4 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
+
+Pidiendo ¥20.490.000 (unos €116.800), menos de €900 por m². Una casa de madera de dos plantas de septiembre de 2016 en una parcela esquinera de propiedad inmueble de 324 m² en una parte residencial tranquila de Otaru, con aparcamiento para cuatro coches. 132 m² con salón y comedor, cocina abierta hacia la sala, cuatro dormitorios, un baño y dos aseos. La empresa vendedora ha realizado un tratamiento de termitas, una comprobación de fugas y equipos y una limpieza completa, y ofrece una garantía de dos años contra fugas y defectos estructurales. Está vacía, y la escuela primaria está a unos 350 m.
+
+https://realhunt.co/es/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k
+
+### Casa de campo japonesa con hogar irori y vigas de madera antigua cerca de Matsumoto, Nagano
+
+159.600 € · Azusagawa-Ueno, Matsumoto, Nagano · 167 m² · 4 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
+
+Pidiendo ¥28.000.000 (unos €159.600). Una casa de dos plantas de mayo de 2003, construida con maderas de unos cien años de antigüedad, en el campo de Azusagawa. 167 m² con un hogar irori hundido en un salón de madera oscura bajo vigas expuestas, cuatro habitaciones de tatami, una habitación en la buhardilla, una cocina y un baño con ventana. Se encuentra en una gran parcela de propiedad inmueble de 1.218 m² con césped y espacio para un huerto. La casa está vacía. La estación de Shin-Shimashima está a 15 minutos a pie. La parcela se encuentra en un área de control de urbanización (shigaika chōsei kuiki), donde la reconstrucción o ampliación pueden estar restringidas: consulte con el agente antes de planificar trabajos.
+
+https://realhunt.co/es/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k
 
 ### Casa de cuatro dormitorios de 2004 en Misaki en la península de Miura, Kanagawa
 

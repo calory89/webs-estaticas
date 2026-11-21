@@ -1,6 +1,6 @@
 # Las regiones con mejor nota para comprar una casa barata (2026)
 
-Entre las 34 regiones con al menos 5 casas en RealHunt, la nota mediana más alta está en West Jutland, Dinamarca (91, precio mediano de 89.100 €); Funen, Dinamarca (90, precio mediano de 79.800 €); Almería, España (89, precio mediano de 82.900 €).
+Entre las 35 regiones con al menos 5 casas en RealHunt, la nota mediana más alta está en West Jutland, Dinamarca (91, precio mediano de 89.100 €); Funen, Dinamarca (90, precio mediano de 79.800 €); Almería, España (89, precio mediano de 82.900 €).
 
 La nota es la calificación propia de RealHunt, de 70 a 98, hecha con 11 notas parciales como precio, espacio, estado, agua, clima y aeropuerto. 21 de noviembre de 2026.
 
@@ -37,20 +37,21 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Tenerife | España | 11 | 82 | 85 | 199.000 € | 2.873 € |
 | Barcelona | España | 6 | 82 | 88 | 169.000 € | 1.557 € |
 | Huelva | España | 5 | 82 | 91 | 95.000 € | 1.062 € |
-| Tuscany | Italia | 14 | 81 | 85 | 115.000 € | 1.150 € |
 | Umbria | Italia | 8 | 81 | 88 | 130.000 € | 1.345 € |
 | Sardinia | Italia | 7 | 81 | 84 | 150.000 € | 1.490 € |
 | Lazio | Italia | 6 | 81 | 89 | 20.000 € | 520 € |
 | Saint-Étienne | Francia | 5 | 81 | 84 | 54.000 € | 1.154 € |
+| Tuscany | Italia | 15 | 80 | 85 | 115.000 € | 1.150 € |
 | Aude | Francia | 5 | 80 | 87 | 73.000 € | 945 € |
 | Valais | Suiza | 7 | 78 | 85 | 59.300 € | 2.372 € |
+| Liguria | Italia | 5 | 77 | 78 | 170.000 € | 2.329 € |
 
 ## Método y límites
 
 - La nota compara entre sí las casas de RealHunt. No es una valoración de la región como lugar para vivir ni una tasación.
 - Una región es la última parte de la ubicación de cada casa antes del país (una provincia, un estado, un condado o una ciudad).
 - Las regiones con menos de 5 casas no aparecen; las que tienen menos de 10 van marcadas como muestra pequeña.
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 717 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 726 anuncios escogidos (el 60% cuesta 100.000 € o menos), no medias nacionales.
 - Mediana: la casa que queda en el centro al ordenarlas (si el número es par, la más alta de las dos centrales).
 
 ## Cómo citar

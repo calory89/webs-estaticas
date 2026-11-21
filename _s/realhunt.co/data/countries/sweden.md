@@ -1,6 +1,6 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€701 per m², from the 22 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 21 November 2026, RealHunt lists 41 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 41 homes is €73,000 (€800 per m², from the 24 homes with a known size); the cheapest costs €22,000 and the most expensive €187,400. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/sweden · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 39 |
-| Median asking price | €72,000 |
-| Median price per m² | €701 (22 homes with a known size) |
-| Median size | 110 m² |
-| Cheapest and most expensive | €22,000 · €99,000 |
+| Homes on RealHunt | 41 |
+| Median asking price | €73,000 |
+| Median price per m² | €800 (24 homes with a known size) |
+| Median size | 116 m² |
+| Cheapest and most expensive | €22,000 · €187,400 |
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 1.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership. |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/sweden
 
-## The 39 homes, best score first
+## The 41 homes, best score first
 
 ### Cosy villa with sauna, 100 m from the river
 
@@ -240,6 +240,22 @@ https://realhunt.co/deal/DczrZZlCl9L
 A classic red wooden house with white corners in a central, child-friendly part of Arbrå, in Hälsingland. 108 m² on one and a half floors with four rooms, three of them bedrooms, a modern fully equipped kitchen, a shower room downstairs and a bathroom with bath upstairs. Surfaces have been renovated over time, two sides of the facade were painted in 2025 and the dishwasher is new in 2026. Glazed conservatory, greenhouse and carport on a 515 m² plot, district heating. Freehold. Asking 795,000 SEK (about €72,000), around €670/m². Running costs 37,524 SEK a year (about €3,400) plus property fee 4,920 SEK.
 
 https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek
+
+### Renovated 1920s villa with a glazed veranda and double garage in Lenhovda, Småland
+
+€178,900 · Lenhovda, Uppvidinge (Kronoberg) · 138 m² · 4 bedrooms · RealHunt score 84 · added 2026-11-21
+
+Asking 2,000,000 SEK (about €178,900) for a 138 m² wooden villa from 1920 with a mansard roof, about €1,300 per m². The advert calls it renovated and ready to move into: in 2026 it got new insulation, part of a new floor structure and underfloor heating with new floors in the hall, kitchen and dining area. It has a ground-source heat pump from 2018, triple glazing, four bedrooms, two renovated shower rooms, a white kitchen, an open fireplace and a tiled stove. The 1,257 m² hedged garden has fruit trees, a deck, a large glazed veranda and an insulated 80 m² double garage. Running costs 39,344 SEK a year.
+
+https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k
+
+### Renovated red wooden house on a big countryside plot near Ingelstad, Småland
+
+€187,400 · Ingelstads Nöbbele, Växjö (Kronoberg) · 117 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-21
+
+Asking 2,095,000 SEK (about €187,400) for a single-storey red wooden house of 117 m² from 1977 on a 1,643 m² plot in green countryside about 3 km from Ingelstad and 15 km from Växjö. The advert lists a lot of recent work: in 2019 both bathrooms, new wiring, new appliances, sanded floors and a painted facade, then an air heat pump, a new garden and a new fuse box. There are three bedrooms plus a small office, a large kitchen, a living room with a wood stove, a long deck and a 40 m² garage. A bus stop is a minute away. Running costs 38,000 SEK a year.
+
+https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k
 
 ### Sea-view cabin with swimming access and boat mooring
 

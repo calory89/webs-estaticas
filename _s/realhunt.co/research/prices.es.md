@@ -1,8 +1,8 @@
 # Precio de salida mediano de una casa barata, por país (2026)
 
-Entre los 15 países con al menos 10 casas de superficie conocida en RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Japón (463 €/m²), Suecia (701 €/m²) y Dinamarca (790 €/m²), y el más alto en los Países Bajos (4.286 €/m²). El precio de salida mediano más bajo está en Japón (49.680 €) y Alemania (55.000 €).
+Entre los 15 países con al menos 10 casas de superficie conocida en RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Japón (468 €/m²), Dinamarca (790 €/m²) y Suecia (800 €/m²), y el más alto en los Países Bajos (4.286 €/m²). El precio de salida mediano más bajo está en Japón (54.280 €) y Alemania (55.000 €).
 
-Medianas de 717 anuncios en 24 países, revisados uno a uno por una persona, a 21 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
+Medianas de 726 anuncios en 24 países, revisados uno a uno por una persona, a 21 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
 
 Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
 
@@ -10,12 +10,12 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | País | Casas | Precio mediano | Mediana €/m² | Casas con superficie | Superficie mediana | La más barata | La más cara | Regiones | Nota mediana |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Japón | 36 | 49.680 € | 463 € | 20 | 91 m² | 7.400 € | 142.500 € | 19 | 86 |
-| Suecia | 39 | 72.000 € | 701 € | 22 | 110 m² | 22.000 € | 99.000 € | 22 | 85 |
+| Japón | 38 | 54.280 € | 468 € | 22 | 92 m² | 7.400 € | 159.600 € | 20 | 86 |
 | Bulgaria (muestra pequeña) | 7 | 66.000 € | 740 € | 7 | 87 m² | 58.900 € | 89.000 € | 4 | 93 |
 | Dinamarca | 46 | 93.200 € | 790 € | 44 | 115 m² | 35.400 € | 160.000 € | 21 | 88 |
+| Suecia | 41 | 73.000 € | 800 € | 24 | 116 m² | 22.000 € | 187.400 € | 24 | 85 |
 | Canadá | 16 | 99.500 € | 963 € | 16 | 124 m² | 55.842 € | 190.700 € | 5 | 86 |
-| Italia | 83 | 80.000 € | 1.000 € | 64 | 81 m² | 12.000 € | 197.000 € | 23 | 82 |
+| Italia | 88 | 85.000 € | 1.000 € | 69 | 82 m² | 12.000 € | 197.000 € | 26 | 82 |
 | Alemania | 21 | 55.000 € | 1.053 € | 21 | 51 m² | 40.000 € | 199.000 € | 8 | 80 |
 | Polonia | 31 | 75.170 € | 1.139 € | 31 | 62 m² | 53.693 € | 90.600 € | 18 | 84 |
 | Francia | 52 | 69.900 € | 1.175 € | 48 | 83 m² | 39.000 € | 285.000 € | 33 | 83 |
@@ -37,7 +37,7 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 717 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 726 anuncios escogidos (el 60% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Mediana: la casa que queda en el centro al ordenarlas (si el número es par, la más alta de las dos centrales).
 - Los países con menos de 10 casas aparecen marcados como muestra pequeña; con menos de 3 no se publican.

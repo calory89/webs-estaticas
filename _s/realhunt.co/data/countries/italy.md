@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 83 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 83 homes is €80,000 (€1,000 per m², from the 64 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 21 November 2026, RealHunt lists 88 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 88 homes is €85,000 (€1,000 per m², from the 69 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 83 |
-| Median asking price | €80,000 |
-| Median price per m² | €1,000 (64 homes with a known size) |
-| Median size | 81 m² |
+| Homes on RealHunt | 88 |
+| Median asking price | €85,000 |
+| Median price per m² | €1,000 (69 homes with a known size) |
+| Median size | 82 m² |
 | Cheapest and most expensive | €12,000 · €197,000 |
 | Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 83 homes, best score first
+## The 88 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -164,6 +164,14 @@ https://realhunt.co/deal/falconara-albanese-41000
 2 bedrooms · 1 bathroom · 82 m2 · 10 minutes to the lake · 1 hour 9 min to Milan Airport.
 
 https://realhunt.co/deal/Dc82VcSjAIe
+
+### Village house with a fruit garden and a countryside view in Giano dell'Umbria
+
+€55,000 · Giano dell'Umbria, Perugia (Umbria) · 97 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-21
+
+A two-storey end house of about 97 m² just below the hilltop medieval village of Giano dell'Umbria, between Spoleto, Todi and Montefalco. Downstairs a large kitchen and dining room opens onto a private garden of about 100 m² with fruit trees. Upstairs are two bedrooms, a modern bathroom and a balcony with a wide view over the valley. A separate 24 m² cellar is included. It has double glazing, its own gas heating and mains services, and the advert calls it ready to move into. The village has a bar, grocery and pharmacy. Asking €55,000, under €600 per m².
+
+https://realhunt.co/deal/it-giano-dell-umbria-village-house-garden-view-55k
 
 ### 3-bedroom stone house with Lake Como views
 
@@ -509,6 +517,14 @@ A traditional Gallurese stazzo in the historic centre of Luras, northern Sardini
 
 https://realhunt.co/deal/it-sardinia-luras-stazzo-97k
 
+### Stone townhouse with beamed rooms in the old centre of Montecatini Val di Cecina, Tuscany
+
+€100,000 · Montecatini Val di Cecina, Pisa (Tuscany) · 110 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-21
+
+A stone townhouse of about 110 m² on three levels in the medieval centre of Montecatini Val di Cecina, a hill village the advert says has all the necessary services. The first floor has a large kitchen and dining room with a big brick fireplace, a living room and a bathroom. The top floor has a double bedroom and a second room used as a study, with a view over the old roofs and lanes. The ground floor holds a laundry and a hobby room. It has city gas heating and air conditioning, and is listed in good structural condition. Asking €100,000, about €910 per m².
+
+https://realhunt.co/deal/it-montecatini-val-di-cecina-stone-townhouse-centre-100k
+
 ### Renovated stone house with terrace in medieval Arcidosso, Monte Amiata
 
 €115,000 · Arcidosso, Grosseto, Tuscany · 100 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-20
@@ -564,6 +580,22 @@ https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
 A detached house in the historic centre of Iglesias in south-west Sardinia, about 15 minutes by car from the Sulcis coast and the beach at Masua, according to the advert. About 104 m2 with three double bedrooms, each with its own bathroom, plus a living room and kitchenette. The owner lists new windows and doors, heat pumps for heating and cooling, carpenter-made furniture and a wrought-iron staircase. Sold fully furnished and equipped, ready to move in. Light from two street fronts. Listed by the owner.
 
 https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
+
+### Restored 14th-century stone house with two terraces in Rocchetta di Fazio, Tuscany
+
+€160,000 · Rocchetta di Fazio, Semproniano (Grosseto, Tuscany) · 118 m² · 1 bedrooms · RealHunt score 79 · added 2026-11-21
+
+A 14th-century stone house at the edge of the hill village of Rocchetta di Fazio, free on three sides, with a wide view over the woods towards Monte Argentario. It was restored about 20 years ago with a new roof and ceilings, keeping the chestnut beams and handmade terracotta floors, and the advert says it was made earthquake-proof. About 118 m² on two levels with two bathrooms, two terraces and a garden of about 300 m². It is sold fully furnished. There is one bedroom now, and the agent suggests the kitchen could become a second. Shops are about five minutes away. Asking €160,000.
+
+https://realhunt.co/deal/it-rocchetta-di-fazio-restored-14th-century-stone-house-160k
+
+### Stone country house with a garden and three bathrooms near Chiusi della Verna, Tuscany
+
+€165,000 · Chiusi della Verna, Arezzo (Tuscany) · 145 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-21
+
+A solid stone house of about 145 m² on three floors, listed in good structural condition. The ground floor has a large beamed living room with a fireplace and a kitchen corner, plus a bathroom. Upstairs are two bedrooms and two more bathrooms. The lower floor has two extra rooms with windows and their own outside door, useful as a studio or workshop. A separate woodshed and a lawned garden come with it. The bright, clean photos show tidy terracotta floors and wooden ceilings. Asking €165,000, about €1,140 per m².
+
+https://realhunt.co/deal/it-chiusi-della-verna-stone-country-house-garden-165k
 
 ### Ground-floor flat with a 225 m2 south-facing garden in Savignone, Liguria
 
@@ -636,6 +668,14 @@ https://realhunt.co/deal/it-rosignano-marittimo-sea-view-village-flat-125k
 A second-floor flat of about 73 m2 in a small three-storey building with shared gardens near the port of Aregai, on the western Ligurian coast. The advert places it a short walk from the beaches and the coastal cycle path, and the photos show open sea from the balconies. Hall, bright living room with kitchen, double bedroom, bathroom and a store cupboard, with a balcony off both main rooms. A cellar and an outdoor parking space are included. There is no heating installed, only the pipework for radiators, so budget for that. Condominium fees about 700 euros a year.
 
 https://realhunt.co/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
+
+### Renovated village flat with a large sea-view terrace in Pairola, Liguria
+
+€175,000 · Pairola, San Bartolomeo al Mare (Imperia, Liguria) · 80 m² · 2 bedrooms · RealHunt score 77 · added 2026-11-21
+
+A top-floor flat of about 80 m² in a period building in Pairola, a quiet olive-grove village less than 3 km above San Bartolomeo al Mare and its beaches. It was fully renovated, keeping the slate stairs and wooden beams. There is a large living room with a kitchenette, a bedroom, a mezzanine used as a second bedroom, two bathrooms, a small balcony and a big private terrace looking over the church tower to the sea. It gets sun on three sides. The photos show it clean and furnished. Asking €175,000, about €2,190 per m².
+
+https://realhunt.co/deal/it-pairola-renovated-flat-sea-view-terrace-175k
 
 ### Newly renovated two-bed flat with sea-view terrace in Castellaro, Liguria
 

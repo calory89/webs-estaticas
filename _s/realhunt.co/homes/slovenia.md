@@ -2,7 +2,7 @@
 
 Updated 21 November 2026. Newest home added 21 November 2026.
 
-RealHunt lists 3 houses for sale in Slovenia today, priced from €105,000 to €245,000. The cheapest costs €105,000: [Restored Prekmurje farmhouse with antique furniture in Ivanjševci, Goričko](https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k), in Ivanjševci (78 m², 1 bedroom). The median price is €229,000 (€1,346/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
+RealHunt lists 3 houses for sale in Slovenia today, priced from €105,000 to €245,000. The cheapest costs €105,000: [Restored Prekmurje farmhouse with antique furniture in Ivanjševci, Goričko](https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k), in Ivanjševci (78 m², 1 bedroom). The median price is €229,000 (€1,346/m²), against €93,200 (€1,221/m²) for the 622 homes on RealHunt in 30 countries.
 
 Homes
 3
@@ -88,7 +88,7 @@ Yes for citizens of EU, EEA and OECD countries (such as the United States, the U
 
 By budget [Under €300,000 3](https://realhunt.co/homes/slovenia/under-300000)
 
-By country [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 135](https://realhunt.co/homes/spain) [Italy 84](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from bolha.com (2), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
