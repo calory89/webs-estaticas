@@ -125,7 +125,7 @@ man = J('n32t/manifest.json')['pages']
 tools, seen = [], set()
 for m in re.finditer(r'<a[^>]*href="(/tools/[a-z0-9-]+/)"[^>]*>(.*?)</a>', hub, re.S):
     path = m.group(1)
-    if path in seen: continue
+    if path in seen or path == '/tools/due-diligence/': continue   # batch 34 pages are listed below with their 8 titles
     seen.add(path)
     b = re.search(r'<b>(.*?)</b>', m.group(2), re.S)
     en = H.unescape(re.sub(r'<[^>]+>', '', b.group(1) if b else m.group(2))).strip()
