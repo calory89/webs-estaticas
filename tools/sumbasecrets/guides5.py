@@ -558,3 +558,18 @@ GUIDES5 += [
 <h2>What it means for visitors</h2><ul><li>Dress modestly in villages and at ceremonies.</li><li>Ask before photographing rituals, tombs or people.</li><li>Alcohol is available in towns but drunkenness is frowned upon.</li><li>See """ + GD("respect-etiquette", "respect and etiquette") + """ and """ + GD("sumba-events-calendar", "the events calendar") + """.</li></ul>""",
   "faq": [["Is Sumba Muslim?", "No. Most people in Sumba are Christian (Protestant or Catholic), many also follow or respect the ancestral Marapu faith, and there is a Muslim minority mainly in the towns."], ["What is Marapu?", "Marapu is Sumba's ancestral religion, centred on the spirits of ancestors; it shapes rituals, the Pasola and the megalithic tombs."]]},
 ]
+
+# 21-nov-2026: 4-day itinerary ("sumba itinerary 4d3n" is a frequent search in Indonesia)
+def _hop(a, b):
+    pa = next(p for p in _ALL if p["s"] == a); pb = next(p for p in _ALL if p["s"] == b)
+    return _drive(_km(pa["ll"], pb["ll"]))
+GUIDES5 += [{"s": "itinerary-4-days", "img": "mandorak-beach",
+ "t": "Sumba in 4 days (4D3N): a route for the west",
+ "d": "A 4-day, 3-night route through West and Southwest Sumba from Tambolaka: lagoons, the Kodi coast, Marapu villages and a waterfall, with drive times.",
+ "b": """<p>Four days are enough to see the best of the west without rushing, if you stay on one side of the island. This route starts and ends at """ + GD("tambolaka-airport", "Tambolaka airport") + """. Drive times are estimates; see our """ + MAP + """ for every stop.</p>
+<h2>Day 1: lagoon and cliffs</h2><p>Land at Tambolaka and head to """ + PL("weekuri-lagoon", "Weekuri Lagoon") + """ for a swim, then """ + PL("mandorak-beach", "Mandorak Beach") + """ (about """ + _hop("weekuri-lagoon", "mandorak-beach")[1] + """ away) for sunset.</p>
+<h2>Day 2: the Kodi coast</h2><p>Visit the traditional village of """ + PL("ratenggaro", "Ratenggaro") + """ with its tall roofs and stone tombs by the sea, then """ + PL("wainyapu", "Wainyapu") + """ and the sunset at """ + PL("pero-beach", "Pero Beach") + """ (about """ + _hop("ratenggaro", "pero-beach")[1] + """ from Ratenggaro).</p>
+<h2>Day 3: Waikabubak and the waterfall</h2><p>Drive inland to Waikabubak for """ + PL("tarung-village", "Tarung") + """ and """ + PL("prai-ijing", "Prai Ijing") + """, two hilltop Marapu villages, then """ + PL("lapopu-waterfall", "Lapopu Waterfall") + """ (about """ + _hop("tarung-village", "lapopu-waterfall")[1] + """ from Tarung).</p>
+<h2>Day 4: the south coast</h2><p>Go down to """ + PL("marosi-beach", "Marosi Beach") + """ and the Pasola field at """ + PL("pasola-wanokaka", "Wanokaka") + """, then back to Tambolaka for your flight (about """ + _hop("pasola-wanokaka", "weekuri-lagoon")[1] + """ to the Kodi side, less to the airport).</p>
+<h2>Tips</h2><ul><li>Hire a car with a driver for the four days, see """ + GD("hire-a-driver-sumba", "hiring a driver") + """.</li><li>Carry cash for village donations, see """ + GD("money-atms-sim-sumba", "money and ATMs") + """.</li><li>Read """ + GD("respect-etiquette", "village etiquette") + """ before day 2.</li><li>More time? See """ + GD("itinerary-5-days", "5 days") + """ or """ + GD("itinerary-7-days", "7 days") + """.</li></ul>""",
+ "faq": [["Is 4 days enough for Sumba?", "Four days are enough for the west and southwest of the island if you stay on one side; for both East and West Sumba allow a week."]]}]

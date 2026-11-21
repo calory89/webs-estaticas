@@ -493,7 +493,7 @@ ${faqBlock(l, regFaq(l, r, items))}<h2 class="sec h2s">${esc(u2.zones)}</h2><div
   const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[r], regionPath(l, r)]]),
     { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r), containedInPlace: { "@type": "TouristDestination", name: "Sumba" } }, faqLD(regFaq(l, r, items))];
   const ph = items.map(p => photos(p)[0]).find(Boolean);
-  return page(l, regionPath(l, r).slice(3), { home: true, title: `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
+  return page(l, regionPath(l, r).slice(3), { home: true, title: ({ en: `${u.reg[r]}: things to do, map & weather`, id: `Wisata ${u.reg[r]}: tempat terbaik, peta & cuaca`, de: `${u.reg[r]}: Sehenswürdigkeiten, Karte & Wetter`, fr: `${u.reg[r]} : que faire, carte et météo`, es: `${u.reg[r]}: qué ver, mapa y tiempo` })[l] || `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
     js: mapJS(l, items, { fit: true, region: r }) });
 }
 
