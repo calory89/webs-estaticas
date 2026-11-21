@@ -1,11 +1,14 @@
 # Happy Low Cost: chollos de vuelos activos (21 nov 2026)
 
-> 4 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-21T10:15:13Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 5 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-21T12:36:41Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
 ## Desde Bilbao (España)
 - [Bilbao → Cracovia (Polonia): 58 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-cracovia-58-euros-2027-02-13/), Wizz Air, directo, 13 feb 2027 a 18 feb 2027. Precio habitual 120 € (−52 %). Comprobado el 21 nov 2026.
+
+## Desde Gran Canaria (España)
+- [Gran Canaria → Bruselas (Bélgica): 74 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-bruselas-74-euros-2027-01-17/), Ryanair, directo, 17 ene 2027 a 27 ene 2027. Precio habitual 160 € (−54 %). Comprobado el 21 nov 2026.
 
 ## Desde Madrid (España)
 - [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 20 nov 2026.
