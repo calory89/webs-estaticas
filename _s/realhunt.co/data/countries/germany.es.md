@@ -89,7 +89,7 @@ https://realhunt.co/es/deal/de-quierschied-55k-581809
 
 https://realhunt.co/es/deal/de-chemnitz-45k-234628
 
-### Piso de época reformado por completo con balcón al sur, alquilado al 7,4%
+### Piso de época reformado por completo con balcón al sur
 
 55.000 € · Sonnenberg, Chemnitz · 66 m² · 1 dormitorios · nota RealHunt 83 · añadida el 2026-10-13
 

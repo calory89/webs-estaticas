@@ -54,7 +54,7 @@ Data of
 - [Score 87New€259,800Corner three-bed condo with three balconies in Downtown HollywoodHollywood, Florida141 m² · 3 bed · €1,843/m² · 13 days on RealHuntA corner 3-bed, 2-bath condo of 1,522 sq ft in a 2007 building, with three balconies facing the sunsets, two parking spaces, a walk-in closet…](https://realhunt.co/deal/us-hollywood-140-501-290k)
 - [Score 87New€223,100Top-floor two-bed condo in a gated resort-style community in DoralDoral, Florida111 m² · 2 bed · €2,010/m² · 13 days on RealHuntAn updated 2-bed, 2-bath top-floor condo of 1,197 sq ft in the gated Las Vistas community, with a private balcony, an in-unit washer and dryer and…](https://realhunt.co/deal/us-doral-8215-502-249k)
 - [Score 87New€227,7001927 brick house with a three-season room and pergola garden in Manitowoc, WisconsinManitowoc, Wisconsin146 m² · 4 bed · €1,560/m² · Added todayAsking US$249,900 (about €227,700) for a 1927 brick house of about 146 m² on the north side of Manitowoc, a port town on Lake Michigan.](https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k)
-- [Score 87New€237,400Dual-unit investment property with rental income in Belmont Heights, TampaBelmont Heights, Florida158 m² · 4 bed · €1,503/m² · 12 days on RealHuntThe main residence features recent major upgrades including a 2021 roof, 2020 HVAC system, granite countertops, stainless steel appliances, and…](https://realhunt.co/deal/us-tampa-4811-265k)
+- [Score 87New€237,400Main house with a second unit in Belmont Heights, TampaBelmont Heights, Florida158 m² · 4 bed · €1,503/m² · 12 days on RealHuntThe main residence features recent major upgrades including a 2021 roof, 2020 HVAC system, granite countertops, stainless steel appliances, and…](https://realhunt.co/deal/us-tampa-4811-265k)
 - [Score 87New€218,100Well-kept three-bedroom colonial with a metal roof in Geneva, Finger LakesGeneva, New York128 m² · 3 bed · €1,704/m² · 2 days on RealHuntAsking US$239,900 (about €218,100) for a move-in ready colonial of about 128 m² in Geneva, a small lakeside city in the Finger Lakes region of…](https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k)
 - [Score 87New€279,600Mid-century ranch with open floor plan and mature oaks in Herchel Heights, TampaHerchel Heights Rev, Florida177 m² · 3 bed · €1,580/m² · 12 days on RealHuntCharming 1958 ranch home with recently renovated interior featuring soaring ceilings, exposed wood ceiling details, and wood-look tile flooring.](https://realhunt.co/deal/us-tampa-8009-312k)
 - [Score 86New€237,400Corner lakefront townhouse with a tropical garden in Westview, Pembroke PinesPembroke Pines, Florida97 m² · 2 bed · €2,447/m² · 13 days on RealHuntA 2-bed, 1.5-bath corner townhouse of 1,040 sq ft with extra green space, a lush front garden, impact windows throughout, a newer A/C and a…](https://realhunt.co/deal/us-pembroke-pines-8982-265k)
@@ -113,7 +113,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Waterfront two-bedroom plus den with two balconies at El Prado, Aventura](https://realhunt.co/deal/us-aventura-18041-1201-260k) | Aventura, Florida | €233,000 | 145 m² | €1,607/m² | 2 | 82 | 7 Nov 2026
 [Golf course and skyline views from a two-bedroom at Coronado, Aventura](https://realhunt.co/deal/us-aventura-20335-2302-265k) | Aventura, Florida | €237,400 | 106 m² | €2,240/m² | 2 | 82 | 7 Nov 2026
 [Corner lakefront townhouse with a tropical garden in Westview, Pembroke Pines](https://realhunt.co/deal/us-pembroke-pines-8982-265k) | Pembroke Pines, Florida | €237,400 | 97 m² | €2,447/m² | 2 | 86 | 7 Nov 2026
-[Dual-unit investment property with rental income in Belmont Heights, Tampa](https://realhunt.co/deal/us-tampa-4811-265k) | Belmont Heights, Florida | €237,400 | 158 m² | €1,503/m² | 4 | 87 | 8 Nov 2026
+[Main house with a second unit in Belmont Heights, Tampa](https://realhunt.co/deal/us-tampa-4811-265k) | Belmont Heights, Florida | €237,400 | 158 m² | €1,503/m² | 4 | 87 | 8 Nov 2026
 [Townhouse with a screened patio three blocks from Young Circle, Hollywood](https://realhunt.co/deal/us-hollywood-2200-6-270k) | Hollywood, Florida | €241,900 | 121 m² | €1,999/m² | 2 | 86 | 7 Nov 2026
 [Updated 1,605 sq ft corner flat on Lake Maule with a wraparound balcony](https://realhunt.co/deal/us-aventura-18011-705-275k) | Aventura, Florida | €246,400 | 149 m² | €1,654/m² | 2 | 84 | 7 Nov 2026
 [Bright corner split-level condo with 2.5 baths at Paragon, Plantation](https://realhunt.co/deal/us-plantation-791-214-280k) | Plantation, Florida | €250,900 | 122 m² | €2,057/m² | 2 | 85 | 7 Nov 2026
@@ -134,7 +134,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 
 - Size: half of them have 121 m² or more. The largest has 289 m²: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
 - Bedrooms: 1 with 1 bedroom, 29 with 2, 26 with 3, 5 with 4 or more; 1 listing does not say.
-- Type: 14 apartments and 44 houses.
+- Type: 14 apartments and 45 houses.
 - Setting: 3 by the sea, 20 in villages, 39 in towns.
 - Where: Florida (25), Pennsylvania (6), Wisconsin (4), Arkansas (3), Maine (3), Indiana (2).
 - Lowest median price: Maine, €77,300 across 3 homes. Highest: Florida, €255,400 across 25.
@@ -222,7 +222,7 @@ By budget [Under €80,000 6](https://realhunt.co/homes/united-states/under-8000
 
 By setting [By the sea 3](https://realhunt.co/homes/united-states/by-the-sea) [Village houses 20](https://realhunt.co/homes/united-states/village-houses) [In town 39](https://realhunt.co/homes/united-states/in-town)
 
-By type [Apartments 14](https://realhunt.co/homes/united-states/apartments) [Houses 44](https://realhunt.co/homes/united-states/houses)
+By type [Apartments 14](https://realhunt.co/homes/united-states/apartments) [Houses 45](https://realhunt.co/homes/united-states/houses)
 
 By bedrooms [2 bedrooms 29](https://realhunt.co/homes/united-states/2-bedroom) [3 bedrooms 26](https://realhunt.co/homes/united-states/3-bedroom) [4+ bedrooms 5](https://realhunt.co/homes/united-states/4-bedroom)
 

@@ -21,7 +21,7 @@
   "thin_under_150_words": 27,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4038,
+  "with_lastmod": 4040,
   "redirects": 1842,
   "moved_stubs": 324
  },
@@ -337,7 +337,7 @@
    "pages": 268,
    "indexable": 268,
    "noindex": 0,
-   "median_words": 944,
+   "median_words": 943,
    "title_over_60": 47,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -922,7 +922,7 @@
    "pages": 33,
    "indexable": 33,
    "noindex": 0,
-   "median_words": 560,
+   "median_words": 557,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 22
@@ -1284,7 +1284,7 @@
    "places": {
     "pages": 629,
     "twins": 629,
-    "words": 1337436,
+    "words": 1337190,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1299,7 +1299,7 @@
    "content": {
     "pages": 591,
     "twins": 590,
-    "words": 457653,
+    "words": 457611,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1318,7 +1318,7 @@
    "checked": 4640,
    "indexable": 4098,
    "max_depth": 3,
-   "titles_changed_since_last_build": 10,
+   "titles_changed_since_last_build": 7,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
@@ -1326,7 +1326,7 @@
    "year_in_title": 2,
    "near_identical_pages": 528,
    "region_used_as_country": 2,
-   "title_changed_twice_in_28_days": 10,
+   "title_changed_twice_in_28_days": 7,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1408,16 +1408,13 @@
     "Dcky5gADEHo: Scandinavia"
    ],
    "title_changed_twice_in_28_days": [
-    "/deal/ca-pictou-ns-cottage-new-kitchen-200k: 3-bedroom house in Pictou, Canada for €127,100 · RealHunt",
-    "/deal/fr-lodeve-top-floor-loft-terrace-285k: 5-bedroom loft in Lodève, France for €285,000 · RealHunt",
-    "/deal/pl-ostroda-68k-805099: 3-bedroom loft in Ostróda, Poland for €68,316 · RealHunt",
-    "/deal/uk-greyabbey-renovated-end-terrace-garage-170k: 2-bedroom townhouse in Greyabbey for €195,400 · RealHunt",
-    "/deal/us-lancaster-pa-renovated-brick-rowhouse-235k: 3-bedroom townhouse in Lancaster, Pennsylvania for €213,600",
-    "/es/deal/ca-pictou-ns-cottage-new-kitchen-200k: Casa de 3 dormitorios en Pictou, Canadá por 127.100 €",
-    "/es/deal/fr-lodeve-top-floor-loft-terrace-285k: Loft de 5 dormitorios en Lodève, Francia por 285.000 €",
-    "/es/deal/pl-ostroda-68k-805099: Loft de 3 dormitorios en Ostróda, Polonia por 68.316 €",
-    "/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k: Casa adosada de 2 dormitorios en Greyabbey por 195.400 €",
-    "/es/deal/us-lancaster-pa-renovated-brick-rowhouse-235k: Casa adosada de 3 dormitorios en Lancaster por 213.600 €"
+    "/cheap-houses/with-garage-in-united-states: Houses with a garage in the United States (22, from €77,300)",
+    "/deal/us-tampa-4811-265k: 4-bedroom house in Belmont Heights, Florida for €237,400",
+    "/es/cheap-houses/with-garage-in-united-states: Casas con garaje en venta en Estados Unidos (22) · RealHunt",
+    "/es/homes/united-states/houses: Casas en venta en Estados Unidos (45, desde 65.428 €)",
+    "/es/homes/united-states/in-town: Casas en ciudad en venta en Estados Unidos (39) · RealHunt",
+    "/homes/united-states/houses: Houses for sale in the United States (45, from €65,428)",
+    "/homes/united-states/in-town: Houses in town in the United States (39, from €65,428)"
    ]
   },
   "depth": {

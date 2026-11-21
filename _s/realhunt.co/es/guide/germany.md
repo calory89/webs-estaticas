@@ -34,7 +34,7 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 - [55.000 € · Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz](https://realhunt.co/es/deal/de-chemnitz-55k-462680) · Gablenz, Chemnitz · nota 84 · 65 m² · 1 dorm.
 - [55.000 € · Piso de tres habitaciones y 71 m² con suelos nuevos, a 10 km de Saarbrücken](https://realhunt.co/es/deal/de-quierschied-55k-581809) · Fischbach, Quierschied · nota 84 · 71 m² · 2 dorm.
 - [45.000 € · Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg](https://realhunt.co/es/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · nota 83 · 49 m² · 1 dorm.
-- [55.000 € · Piso de época reformado por completo con balcón al sur, alquilado al 7,4%](https://realhunt.co/es/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · nota 83 · 66 m² · 1 dorm.
+- [55.000 € · Piso de época reformado por completo con balcón al sur](https://realhunt.co/es/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · nota 83 · 66 m² · 1 dorm.
 
 [Las 21 casas en Alemania](https://realhunt.co/es/homes/germany)
 

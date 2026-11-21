@@ -89,7 +89,7 @@ https://realhunt.co/deal/de-quierschied-55k-581809
 
 https://realhunt.co/deal/de-chemnitz-45k-234628
 
-### Fully renovated period flat with a south balcony, let at 7.4%
+### Fully renovated period flat with a south balcony
 
 €55,000 · Sonnenberg, Chemnitz · 66 m² · 1 bedrooms · RealHunt score 83 · added 2026-10-13
 

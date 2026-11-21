@@ -258,7 +258,7 @@ Asking US$249,900 (about €227,700) for a 1927 brick house of about 146 m² on 
 
 https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 
-### Dual-unit investment property with rental income in Belmont Heights, Tampa
+### Main house with a second unit in Belmont Heights, Tampa
 
 €237,400 · Belmont Heights, Tampa, Florida · 158 m² · 4 bedrooms · RealHunt score 87 · added 2026-11-08
 

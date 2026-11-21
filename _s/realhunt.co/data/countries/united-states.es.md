@@ -258,7 +258,7 @@ Se pide US$249,900 (aproximadamente €227,700) por una casa de ladrillo de 1927
 
 https://realhunt.co/es/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 
-### Propiedad de inversión de dos unidades con ingresos por alquiler en Belmont Heights, Tampa
+### Casa principal con una segunda vivienda en Belmont Heights, Tampa
 
 237.400 € · Belmont Heights, Tampa, Florida · 158 m² · 4 dormitorios · nota RealHunt 87 · añadida el 2026-11-08
 

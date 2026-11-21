@@ -34,7 +34,7 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 - [€55,000 · 65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680) · Gablenz, Chemnitz · score 84 · 65 m² · 1 bed
 - [€55,000 · Three-room 71 m² flat with new floors, 10 km from Saarbrücken](https://realhunt.co/deal/de-quierschied-55k-581809) · Fischbach, Quierschied · score 84 · 71 m² · 2 bed
 - [€45,000 · Renovated two-room flat with a new kitchen and garden in the Kaßberg](https://realhunt.co/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · score 83 · 49 m² · 1 bed
-- [€55,000 · Fully renovated period flat with a south balcony, let at 7.4%](https://realhunt.co/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · score 83 · 66 m² · 1 bed
+- [€55,000 · Fully renovated period flat with a south balcony](https://realhunt.co/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · score 83 · 66 m² · 1 bed
 
 [All 21 homes in Germany](https://realhunt.co/homes/germany)
 

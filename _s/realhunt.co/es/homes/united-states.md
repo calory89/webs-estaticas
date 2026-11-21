@@ -54,7 +54,7 @@ Datos del
 - [Nota 87Nueva259.800 €Condominio de tres dormitorios en esquina con tres balcones en Downtown HollywoodHollywood, Florida141 m² · 3 dorm. · 1.843 €/m² · 13 días en RealHuntUn condominio de 3 dormitorios, 2 baños en esquina de 1.522 sq ft en un edificio de 2007, con tres balcones orientados a las puestas de sol, dos…](https://realhunt.co/es/deal/us-hollywood-140-501-290k)
 - [Nota 87Nueva223.100 €Condo de dos dormitorios en última planta en comunidad cerrada estilo resort en DoralDoral, Florida111 m² · 2 dorm. · 2.010 €/m² · 13 días en RealHuntCondo actualizado de 2 dormitorios y 2 baños en última planta de 1.197 sq ft en la comunidad cerrada Las Vistas, con balcón privado, lavadora y…](https://realhunt.co/es/deal/us-doral-8215-502-249k)
 - [Nota 87Nueva227.700 €Casa de ladrillo de 1927 con sala de tres estaciones y jardín con pérgola en Manitowoc, WisconsinManitowoc, Wisconsin146 m² · 4 dorm. · 1.560 €/m² · Añadida hoySe pide US$249.900 (aproximadamente 227.700 €) por una casa de ladrillo de 1927 de aproximadamente 146 m² en el lado norte de Manitowoc, un pueblo…](https://realhunt.co/es/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k)
-- [Nota 87Nueva237.400 €Propiedad de inversión de dos unidades con ingresos por alquiler en Belmont Heights, TampaBelmont Heights, Florida158 m² · 4 dorm. · 1.503 €/m² · 12 días en RealHuntLa residencia principal cuenta con actualizaciones importantes recientes, incluyendo tejado de 2021, sistema HVAC de 2020, encimeras de granito…](https://realhunt.co/es/deal/us-tampa-4811-265k)
+- [Nota 87Nueva237.400 €Casa principal con una segunda vivienda en Belmont Heights, TampaBelmont Heights, Florida158 m² · 4 dorm. · 1.503 €/m² · 12 días en RealHuntLa residencia principal cuenta con actualizaciones importantes recientes, incluyendo tejado de 2021, sistema HVAC de 2020, encimeras de granito…](https://realhunt.co/es/deal/us-tampa-4811-265k)
 - [Nota 87Nueva218.100 €Colonial de tres dormitorios bien cuidada con tejado de metal en Ginebra, Finger LakesGinebra, New York128 m² · 3 dorm. · 1.704 €/m² · 2 días en RealHuntSe pide US$239.900 (aproximadamente 218.100 €) por una colonial lista para entrar a vivir de aproximadamente 128 m² en Ginebra, una pequeña ciudad…](https://realhunt.co/es/deal/us-geneva-ny-finger-lakes-colonial-240k)
 - [Nota 87Nueva279.600 €Rancho de mediados de siglo con planta abierta y robles maduros en Herchel Heights, TampaHerchel Heights Rev, Florida177 m² · 3 dorm. · 1.580 €/m² · 12 días en RealHuntEncantadora casa rancho de 1958 con interior recientemente renovado presentando techos altos, detalles de techos de madera expuesta y suelos tipo…](https://realhunt.co/es/deal/us-tampa-8009-312k)
 - [Nota 86Nueva237.400 €Casa adosada de esquina junto a lago con jardín tropical en Westview, Pembroke PinesPembroke Pines, Florida97 m² · 2 dorm. · 2.447 €/m² · 13 días en RealHuntUna casa adosada de esquina de 2 dormitorios, 1,5 baños de 1.040 sq ft con espacio verde extra, jardín frontal exuberante, ventanas de impacto en…](https://realhunt.co/es/deal/us-pembroke-pines-8982-265k)
@@ -113,7 +113,7 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Apartamento de dos dormitorios más despacho junto al agua con dos balcones en El Prado, Aventura](https://realhunt.co/es/deal/us-aventura-18041-1201-260k) | Aventura, Florida | 233.000 € | 145 m² | 1.607 €/m² | 2 | 82 | 7 nov 2026
 [Apartamento de dos dormitorios en Coronado, Aventura, con vistas al campo de golf y horizonte](https://realhunt.co/es/deal/us-aventura-20335-2302-265k) | Aventura, Florida | 237.400 € | 106 m² | 2.240 €/m² | 2 | 82 | 7 nov 2026
 [Casa adosada de esquina junto a lago con jardín tropical en Westview, Pembroke Pines](https://realhunt.co/es/deal/us-pembroke-pines-8982-265k) | Pembroke Pines, Florida | 237.400 € | 97 m² | 2.447 €/m² | 2 | 86 | 7 nov 2026
-[Propiedad de inversión de dos unidades con ingresos por alquiler en Belmont Heights, Tampa](https://realhunt.co/es/deal/us-tampa-4811-265k) | Belmont Heights, Florida | 237.400 € | 158 m² | 1.503 €/m² | 4 | 87 | 8 nov 2026
+[Casa principal con una segunda vivienda en Belmont Heights, Tampa](https://realhunt.co/es/deal/us-tampa-4811-265k) | Belmont Heights, Florida | 237.400 € | 158 m² | 1.503 €/m² | 4 | 87 | 8 nov 2026
 [Casa adosada con patio cerrado a tres manzanas de Young Circle, Hollywood](https://realhunt.co/es/deal/us-hollywood-2200-6-270k) | Hollywood, Florida | 241.900 € | 121 m² | 1.999 €/m² | 2 | 86 | 7 nov 2026
 [Piso de esquina actualizado de 1.605 sq ft en Lake Maule con balcón envolvente](https://realhunt.co/es/deal/us-aventura-18011-705-275k) | Aventura, Florida | 246.400 € | 149 m² | 1.654 €/m² | 2 | 84 | 7 nov 2026
 [Condominio luminoso de esquina en dos niveles con 2,5 baños en Paragon, Plantation](https://realhunt.co/es/deal/us-plantation-791-214-280k) | Plantation, Florida | 250.900 € | 122 m² | 2.057 €/m² | 2 | 85 | 7 nov 2026
@@ -134,7 +134,7 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 
 - Tamaño: la mitad tiene 121 m² o más. La más grande tiene 289 m²: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
 - Dormitorios: 1 con 1 dormitorio, 29 con 2, 26 con 3, 5 con 4 o más; 1 anuncio no lo indica.
-- Tipo: 14 pisos y 44 casas.
+- Tipo: 14 pisos y 45 casas.
 - Entorno: 3 junto al mar, 20 en pueblos, 39 en ciudad.
 - Dónde: Florida (25), Pensilvania (6), Wisconsin (4), Arkansas (3), Maine (3), Indiana (2).
 - Precio mediano más bajo: Maine, 77.300 € entre 3 viviendas. El más alto: Florida, 255.400 € entre 25.
@@ -222,7 +222,7 @@ Por presupuesto [Menos de 80.000 € 6](https://realhunt.co/es/homes/united-stat
 
 Por entorno [Junto al mar 3](https://realhunt.co/es/homes/united-states/by-the-sea) [Casas de pueblo 20](https://realhunt.co/es/homes/united-states/village-houses) [En ciudad 39](https://realhunt.co/es/homes/united-states/in-town)
 
-Por tipo [Pisos 14](https://realhunt.co/es/homes/united-states/apartments) [Casas 44](https://realhunt.co/es/homes/united-states/houses)
+Por tipo [Pisos 14](https://realhunt.co/es/homes/united-states/apartments) [Casas 45](https://realhunt.co/es/homes/united-states/houses)
 
 Por dormitorios [2 dormitorios 29](https://realhunt.co/es/homes/united-states/2-bedroom) [3 dormitorios 26](https://realhunt.co/es/homes/united-states/3-bedroom) [4 o más dormitorios 5](https://realhunt.co/es/homes/united-states/4-bedroom)
 
