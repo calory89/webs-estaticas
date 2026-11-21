@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-20",
+   "url": "https://kolaboro.com/changelog/2026-11-20/",
+   "title": "20 November 2026: 19 changes shipped",
+   "content_text": "- Kolaboro.com n33p: questions on payment plan, units and company; named market lists; developer comparison; glossary and register links (data rebuild)\n- Kolaboro.com n33a: /m/ market list in the HTML (works without JavaScript), clean /m/<market>/ links in m.js, Sumba left out of the market index\n- No internal links to redirects or 404s: Kolaboro ID as text (was a link to its own 301), /extension/ and /countries/uae/ links in tools [n33l]\n- Kolaboro.com n33i: developer pages with Search Console impressions listed in sitemaps even with one project [n33i]\n- No hreflang links to ?lang= addresses (account-check, payment-email-check canonical to English) [n33l]\n- Kolaboro.com n33i: fix sitemaps 500 (a comment had swallowed the rest of a line in namedUrls) [n33i]\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n33p: questions on payment plan, units and company; named market lists; developer comparison; glossary and register links (data rebuild)</li><li>Kolaboro.com n33a: /m/ market list in the HTML (works without JavaScript), clean /m/&lt;market&gt;/ links in m.js, Sumba left out of the market index</li><li>No internal links to redirects or 404s: Kolaboro ID as text (was a link to its own 301), /extension/ and /countries/uae/ links in tools [n33l]</li><li>Kolaboro.com n33i: developer pages with Search Console impressions listed in sitemaps even with one project [n33i]</li><li>No hreflang links to ?lang= addresses (account-check, payment-email-check canonical to English) [n33l]</li><li>Kolaboro.com n33i: fix sitemaps 500 (a comment had swallowed the rest of a line in namedUrls) [n33i]</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-20T00:00:00Z",
+   "date_modified": "2026-11-20T23:17:51Z",
+   "_kolaboro": {
+    "ships": 19,
+    "data_updates": 11,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-19",
    "url": "https://kolaboro.com/changelog/2026-11-19/",
    "title": "19 November 2026: 31 changes shipped",
