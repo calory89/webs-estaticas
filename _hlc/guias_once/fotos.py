@@ -27,6 +27,11 @@ for s, n, ne, c, i, r, t in C:
             break
         time.sleep(6)
     if im is None:
+        try:
+            im, cred = G.commons_photo(ne, c)
+        except Exception as ex:
+            print('err2', s, ex)
+    if im is None:
         print('SIN FOTO', s); continue
     big = G.cover(im, 1600, 1000) if im.width >= 1600 else G.cover(im, im.width, int(im.width / 1.6))
     big.save(os.path.join(G.LIB, s + '.jpg'), 'JPEG', quality=80, optimize=True, progressive=True)
