@@ -16,10 +16,10 @@
  "indexnow": {
   "compared": true,
   "added": 0,
-  "changed": 0,
+  "changed": 62,
   "removed": 0
  },
- "releases": 19,
+ "releases": 20,
  "files": [
   "openapi.json",
   "data/countries/index.json",

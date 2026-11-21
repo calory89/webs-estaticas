@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap><loc>https://realhunt.co/sitemap-main.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-countries.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-prices.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-cheap-houses.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-countries.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-prices.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-cheap-houses.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-guides.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-costs.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-blog.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
@@ -43,9 +43,9 @@
   <sitemap><loc>https://realhunt.co/sitemap-new-builds.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-more.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-es-main.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-es-countries.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-es-prices.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
-  <sitemap><loc>https://realhunt.co/sitemap-es-cheap-houses.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-es-countries.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-es-prices.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
+  <sitemap><loc>https://realhunt.co/sitemap-es-cheap-houses.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-es-guides.xml</loc><lastmod>2026-11-20</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-es-costs.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
   <sitemap><loc>https://realhunt.co/sitemap-es-blog.xml</loc><lastmod>2026-11-21</lastmod></sitemap>
