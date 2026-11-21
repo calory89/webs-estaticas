@@ -20,7 +20,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Kolaboro budget gate (max 80 Actions minutes a day, about 0.50 USD)
         env:
@@ -51,6 +51,8 @@ jobs:
           ref: main
           sparse-checkout: |
             tools/kolaboro-agent/dev_web.py
+            tools/kolaboro-agent/source_health.py
+            tools/kolaboro-agent/register_diff.py
             tools/kolaboro-reliability
           sparse-checkout-cone-mode: false
       - uses: actions/cache@v4
@@ -66,9 +68,41 @@ jobs:
           A=""; [ -n "$ONLY" ] && A="--only $ONLY"
           python3 tools/kolaboro-agent/dev_web.py "$RUNNER_TEMP/out" --state "$RUNNER_TEMP/dev-web-private.json" $A
           python3 -c "import json,sys;h=json.load(open('$RUNNER_TEMP/out/web-health.json'));l=json.load(open('$RUNNER_TEMP/out/dev-links.json'));assert h['n']>=(1 if '$ONLY' else 300),h['n'];print('health',h['n'],'runner_ok',h['runner_ok'],'groups',len(l['groups']))"
+      # n34a (21 Nov 2026): source freshness monitor and register change detection, inside this daily job (no new workflow).
+      # One seventh of the cited source URLs per day (so each is read weekly) with the claim passages they carry; one seventh of the
+      # DLD register records per day and the other registers once a week. Each step stops itself after 5 minutes and keeps
+      # yesterday's file when it fails, so it never blocks the website health publish.
+      - name: Sources and registers
+        if: github.event.inputs.only == '' || github.event.inputs.only == null
+        continue-on-error: true
+        run: |
+          mkdir -p "$RUNNER_TEMP/sh" "$RUNNER_TEMP/rd"
+          timeout 300 python3 tools/kolaboro-agent/source_health.py "$RUNNER_TEMP/sh" --evidence --max 1400 && cp "$RUNNER_TEMP/sh/source-health.json" "$RUNNER_TEMP/sh/evidence.json" "$RUNNER_TEMP/out/" || echo "::warning::source health not updated"
+          timeout 300 python3 tools/kolaboro-agent/register_diff.py "$RUNNER_TEMP/rd" --rotate && cp "$RUNNER_TEMP/rd/register-changes.json" "$RUNNER_TEMP/out/" || echo "::warning::register changes not updated"
+      # n34a: rebuild the record history, developer track record, lookalikes, intervals, pin check and open data formats from the
+      # published files (the newest daily snapshot is added by the shipping job at 00:37 UTC). Same script and check as
+      # https://kolaboro.com/engineering/reproducible/ ; public files only, about a minute.
+      - name: Record history and derived data (n34a-build.py)
+        if: github.event.inputs.only == '' || github.event.inputs.only == null
+        continue-on-error: true
+        run: |
+          set -e
+          D="$RUNNER_TEMP/site/data"; mkdir -p "$D/n34a" "$D/snapshots"
+          K=https://kolaboro.com
+          curl -sfL "$K/open/n34a-build.py" -o "$RUNNER_TEMP/n34a-build.py"
+          for f in named.json snapshots/index.json page-history-0.json page-history-1.json page-history-2.json image-reuse.json delay-index.json n34a/boundaries.json n34a/build.json; do curl -sfL "$K/data/$f" -o "$D/$f"; done
+          for f in source-health evidence register-changes; do if [ -s "$RUNNER_TEMP/out/$f.json" ]; then cp "$RUNNER_TEMP/out/$f.json" "$D/"; else curl -sfL "$K/data/$f.json" -o "$D/$f.json" || true; fi; done
+          python3 -c "import json,sys;[print(e['copy']) for e in json.load(open(sys.argv[1]))['entries']]" "$D/snapshots/index.json" | while read -r c; do mkdir -p "$D/$(dirname ${c#/data/})"; curl -sfL "$K$c" -o "$D/${c#/data/}"; done
+          timeout 600 python3 "$RUNNER_TEMP/n34a-build.py" "$D"
+          mkdir -p "$RUNNER_TEMP/n34a"; : > "$RUNNER_TEMP/n34a/pairs.txt"
+          for f in $(cd "$D" && ls n34a/history/*.json n34a/track-record.json n34a/duplicates.json n34a/intervals.json n34a/pins.json n34a/build.json kolaboro-pins.geojson kolaboro-projects.jsonld kolaboro.sqlite formats.json); do echo "$D/$f=_s/kolaboro.com/data/$f" >> "$RUNNER_TEMP/n34a/pairs.txt"; done
+          wc -l < "$RUNNER_TEMP/n34a/pairs.txt"
       - name: Publish to kolaboro.com
         if: github.event.inputs.only == '' || github.event.inputs.only == null
         run: |
+          X=""
+          [ -s "$RUNNER_TEMP/n34a/pairs.txt" ] && X="$(tr '\n' ' ' < "$RUNNER_TEMP/n34a/pairs.txt")"
+          for f in source-health evidence register-changes; do [ -s "$RUNNER_TEMP/out/$f.json" ] && X="$X $RUNNER_TEMP/out/$f.json=_s/kolaboro.com/data/$f.json"; done
           bash tools/kolaboro-reliability/publish.sh "kolaboro.com: developer website health and shared identifiers $(date -u +%F)" \
             "$RUNNER_TEMP/out/web-health.json=_s/kolaboro.com/data/web-health.json" \
-            "$RUNNER_TEMP/out/dev-links.json=_s/kolaboro.com/data/dev-links.json"
+            "$RUNNER_TEMP/out/dev-links.json=_s/kolaboro.com/data/dev-links.json" $X
