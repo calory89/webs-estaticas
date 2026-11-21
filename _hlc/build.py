@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '46'
+V = '47'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -20,11 +20,12 @@ HEAD = (
     "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
     "(function(){var v=null;try{v=localStorage.getItem('hlc_ck');}catch(e){}"
     "if(!v){var m=document.cookie.match(/(?:^|; )hlc_ck=(\\w+)/);v=m&&m[1];}"
-    "var g=v==='granted'?'granted':'denied';"
-    "gtag('consent','default',{ad_storage:g,analytics_storage:g,ad_user_data:g,ad_personalization:g,wait_for_update:500});"
+    "var g=v==='granted'?'granted':'denied',s=(v==='granted'||v==='stats')?'granted':'denied';window.HLC_CK=s;"
+    "gtag('consent','default',{ad_storage:g,analytics_storage:s,ad_user_data:g,ad_personalization:g,wait_for_update:500});"
     "gtag('set','ads_data_redaction',g!=='granted');})();</script>"
     '<script async src="https://www.googletagmanager.com/gtag/js?id=G-WFHBB8PHZJ"></script><script>gtag(\'js\',new Date());gtag(\'config\',\'G-WFHBB8PHZJ\');</script>'
-    '<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4dzg5ivay");</script>'
+    # Clarity solo con consentimiento de medición (sin él pone cookies propias y de Bing)
+    '<script>window.HLC_clarity=function(){if(window.clarity)return;(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4dzg5ivay");clarity("consent");};if(window.HLC_CK==="granted")window.HLC_clarity();</script>'
     f'<link rel="stylesheet" href="/hlc/hlc.css?v={V}">'
     '<link rel="icon" href="/hlc/brand/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/hlc/brand/icon.svg">'
     '<link rel="apple-touch-icon" href="/hlc/brand/icon-180.png"><link rel="manifest" href="/manifest.webmanifest">'
@@ -396,6 +397,9 @@ for f in files:
         t = strip_block(t, a, b)
     t = re.sub(r'<link rel=["\'](?:icon|shortcut icon|apple-touch-icon)["\'][^>]*wp-content[^>]*>\s*', '', t)
     t = re.sub(r'<meta name=["\']msapplication-TileImage["\'][^>]*>\s*', '', t)
+    # tipografías propias: fuera las conexiones a Google Fonts que quedaban en páginas antiguas
+    t = t.replace('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+                  '<link rel="preload" href="/hlc/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/hlc/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>')
     # GTM duplicado (gtm4wp ya lo carga)
     t, n = DUP_GTM.subn('', t)
     stats['gtm'] += n

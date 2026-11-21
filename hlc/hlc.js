@@ -49,7 +49,7 @@ document.documentElement.classList.add('hlc-js');
   /* ---------- Cookies (RGPD) + Consent Mode v2 ---------- */
   function store(v){ls('hlc_ck',v);try{d.cookie='hlc_ck='+v+';path=/;max-age=15552000;SameSite=Lax';}catch(e){}}
   function read(){var v=ls('hlc_ck');if(!v){var m=d.cookie.match(/(?:^|; )hlc_ck=(\w+)/);v=m&&m[1];}return v;}
-  function consent(v){var g=v==='granted'?'granted':'denied',sg=(v==='granted'||v==='stats')?'granted':'denied';try{w.gtag&&w.gtag('consent','update',{ad_storage:g,analytics_storage:sg,ad_user_data:g,ad_personalization:g});}catch(e){}try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_consent',hlc_consent:g});}catch(e){}}
+  function consent(v){var g=v==='granted'?'granted':'denied',sg=(v==='granted'||v==='stats')?'granted':'denied';try{w.gtag&&w.gtag('consent','update',{ad_storage:g,analytics_storage:sg,ad_user_data:g,ad_personalization:g});}catch(e){}try{(w.dataLayer=w.dataLayer||[]).push({event:'hlc_consent',hlc_consent:g});}catch(e){}try{if(sg==='granted'){w.HLC_clarity&&w.HLC_clarity();}else if(w.clarity){w.clarity('consent',false);}}catch(e){}}
   function cookieBanner(force){
     if(read()&&force!==true)return;var old=d.querySelector('.hlc-ck');if(old)old.remove();
     var b=d.createElement('div');b.className='hlc-ck';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookies');

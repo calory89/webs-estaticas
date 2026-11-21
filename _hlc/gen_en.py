@@ -87,7 +87,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=46" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=47" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -264,7 +264,7 @@ def main():
 <aside class="deal-card">
 <div class="facts">
 <div><small>From</small><b>{flag(f.get('origen_cc'))} {e(o)}</b></div><div><small>To</small><b>{flag(f.get('destino_cc'))} {e(d)}</b></div>
-<div><small>Depart</small><b>{e(date_en(f.get('ida', '')))}</b></div><div><small>Return</small><b>{e(date_en(f.get('vuelta') or '') or '—')}</b></div>
+<div><small>Depart</small><b>{e(G.dia_sem(f.get('ida', ''), True) + date_en(f.get('ida', '')))}</b></div><div><small>Return</small><b>{e((G.dia_sem(f.get('vuelta'), True) + date_en(f.get('vuelta'))) if f.get('vuelta') else '—')}{e(G.noches(f, True))}</b></div>
 <div><small>Airline</small><b>{e(f.get('aerolinea') or 'Various')}</b></div><div><small>Stops</small><b>{'Nonstop' if f.get('escalas') == 0 else e(f.get('escalas'))}</b></div>
 </div>
 <a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight from €{e(x.get('price'))}</a>
@@ -453,6 +453,8 @@ def main():
         n = NAMES.get(p['s'], p['n'])
         url = f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/"
         gh = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g['guide_html_en'])
+        gh = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', gh)
+        gh, faq_ld, _w = G.guide_extras(gh, 'en')
         sub = [x for x in deals if G.lib_slug(x['facts']) == p['s']]
         ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/'), (n, None)])
         dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
@@ -462,7 +464,7 @@ def main():
                "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         es = f"{SITE}/destinos/{p['s']}/" if os.path.exists(f"destinos/{p['s']}/index.html") else None
         page = head((g.get('seo_title_en') or f'What to see in {n}') + ' · Happy Low Cost', g.get('meta_description_en') or f'{n} travel guide: what to see, where to stay, what to eat and cheap flights.',
-                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [dest_ld, art, cld], body_class='destino')
+                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [dest_ld, art, cld] + ([faq_ld] if faq_ld else []), body_class='destino')
         cr = G.CR.get(p['s']) or {}
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{G.photos_attr(p['s'])}><div class="wrap">

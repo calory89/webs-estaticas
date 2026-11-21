@@ -548,6 +548,68 @@ def stops_es(f):
     return 'directo' if n == 0 else (f'{n} escala' + ('s' if n and n > 1 else '') if isinstance(n, int) else 'con escalas')
 
 
+
+def guide_extras(gh, lang='es'):
+    """Índice con anclas, minutos de lectura y preguntas frecuentes (FAQPage) a partir del HTML de una guía."""
+    import html as _h
+    used = {}
+    toc = []
+    def anchor(m):
+        txt = re.sub('<[^>]+>', '', m.group(1)).strip()
+        k = slugify(txt)[:60] or 'seccion'
+        used[k] = used.get(k, 0) + 1
+        if used[k] > 1:
+            k = f'{k}-{used[k]}'
+        toc.append((k, txt))
+        return f'<h2 id="{k}">{m.group(1)}</h2>'
+    gh = re.sub(r'<h2>(.*?)</h2>', anchor, gh, flags=re.S)
+    words = len(re.sub('<[^>]+>', ' ', gh).split())
+    mins = max(3, round(words / 230))
+    faq = []
+    m = re.search(r'<h2 id="[^"]*">[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>(.*?)(?=<h2|$)', gh, re.S | re.I)
+    if m:
+        for q, a in re.findall(r'<h3>(.*?)</h3>\s*<p>(.*?)</p>', m.group(1), re.S):
+            q, a = _h.unescape(re.sub('<[^>]+>', '', q)).strip(), _h.unescape(re.sub('<[^>]+>', '', a)).strip()
+            if q and a:
+                faq.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+    faq_ld = {"@type": "FAQPage", "mainEntity": faq[:10]} if len(faq) >= 3 else None
+    if len(toc) >= 4:
+        lab = ('En esta guía', 'min de lectura') if lang == 'es' else ('In this guide', 'min read')
+        nav = (f'<nav class="g-toc" aria-label="{lab[0]}"><details open><summary><b>{lab[0]}</b><span>{mins} {lab[1]}</span></summary><ol>'
+               + ''.join(f'<li><a href="#{k}">{e(t)}</a></li>' for k, t in toc) + '</ol></details></nav>')
+        gh = nav + gh
+    return gh, faq_ld, words
+
+
+def dia_sem(iso, en=False):
+    try:
+        d = datetime.date.fromisoformat(str(iso)[:10])
+        return (['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] if en else ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'])[d.weekday()] + ' '
+    except Exception:
+        return ''
+
+
+def noches(f, en=False):
+    try:
+        n = (datetime.date.fromisoformat(str(f.get('vuelta'))[:10]) - datetime.date.fromisoformat(str(f.get('ida'))[:10])).days
+        return (f' · {n} night' + ('s' if n != 1 else '') if en else f' · {n} noche' + ('s' if n != 1 else '')) if n > 0 else ''
+    except Exception:
+        return ''
+
+
+def ics_link(f, title, url):
+    """Enlace para guardar las fechas del chollo en el calendario del móvil (.ics en data URI)."""
+    from urllib.parse import quote as _q
+    try:
+        a = datetime.date.fromisoformat(str(f.get('ida'))[:10])
+        b = datetime.date.fromisoformat(str(f.get('vuelta') or f.get('ida'))[:10]) + datetime.timedelta(days=1)
+    except Exception:
+        return ''
+    ics = ('BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Happy Low Cost//ES\r\nBEGIN:VEVENT\r\n'
+           f'UID:{a:%Y%m%d}-{slugify(title)[:40]}@happylowcost.com\r\nDTSTART;VALUE=DATE:{a:%Y%m%d}\r\nDTEND;VALUE=DATE:{b:%Y%m%d}\r\n'
+           f'SUMMARY:{title[:70]}\r\nDESCRIPTION:{url}\r\nURL:{url}\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n')
+    return 'data:text/calendar;charset=utf-8,' + _q(ics)
+
 def checked(x):
     """Última comprobación del precio: la revalidación diaria (facts.checked_at) o la publicación."""
     a, c = x.get('approved_at') or '', (x.get('facts') or {}).get('checked_at') or ''
@@ -841,7 +903,7 @@ def main():
         seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}" + (f" en {f.get('periodo')}" if f.get('periodo') else '') + (f" con {f.get('aerolinea')}" if f.get('aerolinea') and len(f.get('aerolinea')) < 22 else '')
         qa = deal_faq(x)
         excerpt = x.get('excerpt') or f"Chollo de vuelo {f.get('origen')} - {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}, comprobado hoy."
-        share_txt = quote(f"{title} {url}")
+        share_txt = quote(f"✈️ {f.get('origen')} → {f.get('destino')} por {f.get('precio')} € ida y vuelta" + (f" ({fecha(f.get('ida'))} – {fecha(f.get('vuelta'))})" if f.get('vuelta') else '') + f"\n{url}")
         verified = madrid(checked(x))
         cs, cn, ce = cont_of(f)
         oc = slugify(f.get('origen_pais') or '')
@@ -880,7 +942,7 @@ def main():
 <aside class="deal-card">
 <div class="facts">
 <div><small>Desde</small><b>{flag(f.get('origen_cc'))} {e(f.get('origen'))}</b></div><div><small>Hasta</small><b>{flag(f.get('destino_cc'))} {e(f.get('destino'))}</b></div>
-<div><small>Ida</small><b>{e(fecha(f.get('ida', '')))}</b></div><div><small>Vuelta</small><b>{e(fecha(f.get('vuelta') or '') or '—')}</b></div>
+<div><small>Ida</small><b>{e(dia_sem(f.get('ida', '')) + fecha(f.get('ida', '')))}</b></div><div><small>Vuelta</small><b>{e((dia_sem(f.get('vuelta')) + fecha(f.get('vuelta'))) if f.get('vuelta') else '—')}{e(noches(f))}</b></div>
 <div><small>Aerolínea</small><b>{e(f.get('aerolinea') or 'Varias')}</b></div><div><small>Escalas</small><b>{'Directo' if f.get('escalas') == 0 else e(f.get('escalas'))}</b></div>
 </div>
 <a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo desde {e(f.get('precio'))} €</a>
@@ -893,6 +955,7 @@ def main():
 {alt_box(f)}
 <div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">Precio comprobado cada día. Los vuelos baratos vuelan: si cambia, prueba fechas cercanas.</div>
 <div class="rep"><button type="button" class="hlc-btn o" data-hlc-report="{e(slug)}">⚠️ ¿Ya no está a este precio? Avísanos</button><small data-report-msg role="status" aria-live="polite"></small></div>
+{f'<a class="hlc-btn o" href="{e(ics_link(f, f"✈️ {f.get('origen')} → {f.get('destino')} · {f.get('precio')} €", url))}" download="chollo-{e(slug)}.ics" data-hlc="deal_calendario">📅 Guardar fechas en el calendario</a>' if f.get('ida') else ''}
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Compartir</button><a class="hlc-btn o" href="https://wa.me/?text={share_txt}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copiar enlace</button></div>
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>
@@ -1085,7 +1148,7 @@ def main():
         url = f"{SITE}/destinos/{p['s']}/"
         gh = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g['guide_html'])
         gh = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', gh)
-        words = len(re.sub('<[^>]+>', ' ', gh).split())
+        gh, g_faq, words = guide_extras(gh, 'es')
         ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/'), (p['n'], None)])
         cr = CR.get(p['s']) or {}
         dest_ld = {"@type": "TouristDestination", "name": p['n'], "url": url, "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg", "geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']},
@@ -1097,7 +1160,7 @@ def main():
         side = ''.join(card(x) for x in sub[:3])
         page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld]), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld] + ([g_faq] if g_faq else [])), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}

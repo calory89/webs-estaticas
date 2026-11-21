@@ -48,3 +48,7 @@
 
 /favicon.ico
   Cache-Control: public, max-age=604800
+
+/hlc/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
