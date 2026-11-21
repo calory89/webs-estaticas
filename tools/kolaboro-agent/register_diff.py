@@ -143,7 +143,7 @@ def parse_dld(t):
     m = re.search(r'Escrow account bank (.+?) Units', t); o['bank'] = m.group(1).strip() if m else None
     m = re.search(r'Units ([\d,]+)', t); o['units'] = int(m.group(1).replace(',', '')) if m else None
     return o
-def nbank(x): return re.sub(r'\b(bank|psc|pjsc|p s c|l l c|llc|the)\b', ' ', re.sub(r'[^a-z ]', ' ', str(x or '').lower())).split() if x else None
+def nbank(x): return re.sub(r'\b(bank|psc|pjsc|p s c|l l c|llc|the)\b', ' ', re.sub(r'[^a-z ]', ' ', re.sub(r'\([^)]*\)', ' ', str(x or '').lower()))).split() if x else None
 REG_DLD = 'Dubai DLD project register (per-project mirror with inspection history)'
 if not NODLD:
     TAG = re.compile(r'<(script|style)\b.*?</\1>', re.S | re.I)
