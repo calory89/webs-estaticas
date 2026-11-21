@@ -303,7 +303,8 @@ GUIDES5 = [
 <h2>Central: in between</h2>
 <p>Central Sumba was created in 2007 and has fewer than 100,000 inhabitants. See """ + GD("central-sumba-guide", "Central Sumba guide") + """.</p>
 <h2>East: dry and wide</h2>
-<p>East Sumba covers more than half the island, with savannah, long beaches and the town of Waingapu, the largest on the island. See """ + GD("east-vs-west-sumba", "East vs West Sumba") + """.</p>"""},
+<p>East Sumba covers more than half the island, with savannah, long beaches and the town of Waingapu, the largest on the island. See """ + GD("east-vs-west-sumba", "East vs West Sumba") + """.</p>""",
+ "faq": [["How many regencies does Sumba have?", "Four: Southwest Sumba (capital Tambolaka), West Sumba (Waikabubak), Central Sumba (Waibakul) and East Sumba (Waingapu)."], ["Which province is Sumba in?", "East Nusa Tenggara (Nusa Tenggara Timur, NTT), whose capital is Kupang on Timor."], ["What is the capital of Southwest Sumba?", "Tambolaka, which also has the island's main airport."], ["What is the capital of East Sumba?", "Waingapu, the largest town on the island, with its own airport."]]},
 {"s": "books-films-sumba", "img": "ratenggaro",
  "t": "Books and films about Sumba",
  "d": "The best reading and watching before a trip to Sumba: anthropology classics, a celebrated Indonesian film and practical resources.",
@@ -370,7 +371,7 @@ GUIDES5 = [
 <li>The island has two national parks with endemic birds.</li>
 <li>The Sumba sandalwood pony is famous across Indonesia.</li>
 <li>""" + PL("weekuri-lagoon", "Weekuri Lagoon") + """ is a saltwater lagoon fed by the sea through the rocks.</li>
-<li>""" + PL("walakiri-beach", "Walakiri") + """ is known for mangrove trees that look like they are dancing at sunset.</li></ol>
+<li>""" + PL("walakiri-beach", "Walakiri") + """ is known for mangrove trees that look like they are dancing at sunset; they are the "dancing trees" of Sumba in so many photos.</li></ol>
 <h2>Travel</h2>
 <ol start="15"><li>Sumba has two airports, one in the west and one in the east.</li>
 <li>Crossing the island by road takes most of a day.</li>
@@ -530,3 +531,30 @@ GUIDES5 += [{"s": "where-is-sumba", "img": "weekuri-lagoon",
 <h2>The island itself</h2><p>Sumba is about 200 km long from west to east. The west is greener and wetter, with traditional villages and rice fields; the east is drier, with savannah and long beaches. Crossing the island by road takes most of a day. See """ + GD("east-vs-west-sumba", "East vs West Sumba") + """, """ + GD("sumba-regencies", "the four regencies") + """ and the """ + MAP + """.</p>
 <h2>Not to be confused with</h2><p>Sumba is not Sumbawa, the larger island to the west between Lombok and Flores. The two are often mixed up.</p>""",
  "faq": [["Where is Sumba?", "Sumba is an island in East Nusa Tenggara, eastern Indonesia, south of Flores and Komodo and about 450 km east of Bali."], ["Is Sumba the same as Sumbawa?", "No. Sumbawa is a different, larger island to the west, between Lombok and Flores."]]}]
+
+# 21-nov-2026: pages for real Google suggestions (sumba vs sumbawa, religion, getting there from abroad)
+GUIDES5 += [
+ {"s": "sumba-vs-sumbawa", "img": "walakiri-beach",
+  "t": "Sumba vs Sumbawa: two different islands, often confused",
+  "d": "Sumba and Sumbawa are not the same island. Where each one is, which province, religion, landscapes and how to tell them apart when booking.",
+  "b": """<p>Sumba and Sumbawa sound alike and are close on the map, but they are two different islands in two different provinces. Mixing them up is one of the most common mistakes when booking flights.</p>
+<table><thead><tr><th></th><th>Sumba</th><th>Sumbawa</th></tr></thead><tbody>
+<tr><td>Province</td><td>East Nusa Tenggara (NTT)</td><td>West Nusa Tenggara (NTB)</td></tr>
+<tr><td>Neighbours</td><td>South of Flores and Komodo</td><td>Between Lombok and Flores</td></tr>
+<tr><td>Main airports</td><td>Tambolaka (TMC), Waingapu (WGP)</td><td>Sumbawa Besar, Bima</td></tr>
+<tr><td>Main religion</td><td>Christian, with the ancestral Marapu faith</td><td>Muslim</td></tr>
+<tr><td>Known for</td><td>Traditional villages, megaliths, the Pasola, lagoons and savannah</td><td>Mount Tambora, surf at Lakey Peak, Moyo Island</td></tr>
+</tbody></table>
+<h2>How to avoid the mix-up</h2><ul><li>Check the airport code: Sumba is <b>TMC</b> or <b>WGP</b>.</li><li>Check the province: Sumba is in <b>NTT</b>.</li><li>Search for the town: Tambolaka, Waikabubak, Waibakul or Waingapu are all on Sumba.</li></ul>
+<p>More: """ + GD("where-is-sumba", "Where is Sumba?") + """, """ + GD("bali-to-sumba", "Bali to Sumba") + """ and """ + GD("tambolaka-airport", "Tambolaka airport") + """.</p>""",
+  "faq": [["Is Sumba the same as Sumbawa?", "No. Sumba is in East Nusa Tenggara, south of Flores; Sumbawa is a different island in West Nusa Tenggara, between Lombok and Flores."], ["What is the airport code for Sumba?", "Sumba has two airports: Tambolaka (TMC) in the west and Waingapu (WGP) in the east."]]},
+ {"s": "religion-in-sumba", "img": "tarung-village",
+  "t": "Religion in Sumba: Christianity, Marapu and Islam",
+  "d": "Is Sumba Muslim? Most people in Sumba are Christian, the ancestral Marapu faith is still alive, and there is a Muslim minority. What this means for visitors.",
+  "b": """<p>Sumba is not a Muslim-majority island, unlike much of Indonesia. Most Sumbanese are Christian, Protestant or Catholic, and many families still follow or respect Marapu, the island's ancestral religion.</p>
+<h2>Christianity</h2><p>Christian missions became active in the early twentieth century, and today churches are found in every town and most villages. Sunday is a quiet day and Christmas is the biggest family holiday.</p>
+<h2>Marapu</h2><p>Marapu is the traditional belief in ancestral spirits who mediate between people and the divine. It shapes the calendar, the Pasola, funerals, house building and the megalithic tombs. It is strongest in West Sumba. Read """ + GD("marapu-religion-sumba", "Marapu religion") + """.</p>
+<h2>Islam</h2><p>There is a Muslim minority, mostly in the towns and some coastal communities, often with roots elsewhere in Indonesia. You will hear the call to prayer in Waingapu and Tambolaka.</p>
+<h2>What it means for visitors</h2><ul><li>Dress modestly in villages and at ceremonies.</li><li>Ask before photographing rituals, tombs or people.</li><li>Alcohol is available in towns but drunkenness is frowned upon.</li><li>See """ + GD("respect-etiquette", "respect and etiquette") + """ and """ + GD("sumba-events-calendar", "the events calendar") + """.</li></ul>""",
+  "faq": [["Is Sumba Muslim?", "No. Most people in Sumba are Christian (Protestant or Catholic), many also follow or respect the ancestral Marapu faith, and there is a Muslim minority mainly in the towns."], ["What is Marapu?", "Marapu is Sumba's ancestral religion, centred on the spirits of ancestors; it shapes rituals, the Pasola and the megalithic tombs."]]},
+]

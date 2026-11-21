@@ -109,3 +109,12 @@ def _fifty():
     n = len(lines)
     return f"<h2>The full list: {n} things to do in Sumba</h2><p>Every place on our map, grouped by type, plus the experiences that are not tied to one spot. Each line links to the full page with directions, photos and the best time to go.</p><ol>{''.join(lines)}</ol>"
 ADD["things-to-do-in-sumba"] = ADD.get("things-to-do-in-sumba", "") + _fifty()
+
+# 21-nov-2026: "how to get to Sumba from Singapore / Sydney / Jakarta" (real Google suggestions)
+ADD["bali-to-sumba"] = ADD.get("bali-to-sumba", "") + f"""<h2>From Singapore, Australia or Jakarta</h2>
+<p>There are no direct international flights to Sumba, so almost every trip connects through another Indonesian airport, usually Bali (Denpasar).</p>
+<ul><li><b>From Singapore:</b> fly to Bali, then take a domestic flight to Tambolaka or Waingapu.</li>
+<li><b>From Australia (Sydney, Melbourne, Perth, Darwin):</b> fly to Bali, then on to Sumba. See {GD('sumba-from-australia', 'Sumba from Australia')}.</li>
+<li><b>From Jakarta:</b> fly to Bali or to Kupang and connect to Sumba; check the airlines for the current routes.</li>
+<li><b>From Kupang (Timor):</b> domestic connections run to Waingapu and Tambolaka on some days.</li></ul>
+<p>Schedules change by season, so always check the airline before you book, and allow a buffer day before an international flight home. Choosing between the two airports: {GD('tambolaka-airport', 'Tambolaka')} for the west, {GD('waingapu-airport', 'Waingapu')} for the east.</p>"""
