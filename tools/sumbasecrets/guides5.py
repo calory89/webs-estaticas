@@ -515,13 +515,4 @@ GUIDES5 += [
 <li><b>Lagoons and waterfalls</b>, with a parking fee or donation at """ + PL("weekuri-lagoon", "Weekuri Lagoon") + """ or """ + PL("lapopu-waterfall", "Lapopu") + """.</li>
 <li><b>Local guides</b> at villages and waterfalls: not free, but cheap and worth it.</li></ul>
 <h2>Keep costs down</h2><p>Group nearby places on the same day with the """ + MAP + """, share a car and eat in local warung. See """ + GD("sumba-on-a-budget", "Sumba on a budget") + """.</p>"""},
- {"s": "sumba-vs-komodo-flores", "img": "mandorak-beach",
-  "t": "Sumba or Komodo and Flores? How to choose",
-  "d": "Sumba versus Labuan Bajo, Komodo and Flores: what each island is best for, crowds, activities and how to combine them via Bali.",
-  "b": """<p>Sumba and Flores are both in East Nusa Tenggara and both reached from Bali, but they offer very different trips.</p>
-<h2>Komodo and Flores are best for</h2><ul><li>Komodo dragons in Komodo National Park.</li><li>Boat trips, snorkelling and diving from Labuan Bajo.</li><li>Volcanoes, crater lakes and mountain villages across Flores.</li></ul>
-<h2>Sumba is best for</h2><ul><li>Living traditional culture: Marapu villages, megalithic tombs and the """ + GD("pasola-dates", "Pasola") + """.</li><li>Empty beaches, lagoons and savannah with few other visitors.</li><li>Surf on the south and west coasts.</li></ul>
-<h2>Crowds</h2><p>Labuan Bajo has grown fast as a boat-trip hub. Sumba remains quiet, with fewer tours and fewer visitors.</p>
-<h2>Combining both</h2><p>The simplest way is via Bali: fly Bali to Labuan Bajo for Komodo, back to Bali, then Bali to Sumba. Check current schedules; routes between the islands change.</p>
-<p>See """ + GD("sumba-vs-bali", "Sumba vs Bali") + """, """ + GD("itinerary-7-days", "a 7-day Sumba itinerary") + """ and """ + GD("bali-to-sumba", "Bali to Sumba") + """.</p>"""},
 ]
