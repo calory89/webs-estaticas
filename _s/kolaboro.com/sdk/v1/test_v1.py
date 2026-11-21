@@ -1,0 +1,13 @@
+# Generated tests for kolaboro_v1.py: python3 test_v1.py  (needs network; exit 1 on any failure)
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kolaboro_v1 import KolaboroV1
+k = KolaboroV1(); C = [["list_projects", {}, ["api", "count", "projects", "updated"]], ["get_project", {"slug": "amani-melasti"}, ["added", "api", "change_history", "developer", "facts_source", "handover"]], ["get_certificate", {"slug": "amani-melasti"}, ["certificate", "signature"]], ["list_developers", {}, ["api", "count", "developers", "updated"]], ["get_developer", {"slug": "teus-group"}, ["aliases", "api", "id", "last_checked", "license", "markets"]], ["get_developer_website", {"slug": "teus-group"}, ["api", "developer", "domains", "legend", "updated"]], ["find", {"q": "dubai"}, ["count", "query", "results"]], ["list_changes", {"since": "2026-11-20"}, ["api", "changes", "count", "feed", "has_more", "last_change_at"]], ["changes_feed", {}, ["authors", "description", "feed_url", "home_page_url", "items", "language"]], ["get_snapshots", {}, ["api", "chain_tip", "copies", "count", "day_rule", "entries"]], ["get_data_quality", {}, ["aliases", "api", "build", "computed_at", "data_updated", "dataset"]], ["get_slippage", {}, ["all", "computed", "fields", "licence", "markets", "method"]], ["get_handover_history", {"slug": "amani-melasti"}, ["current", "developer", "developer_page", "distinct_dates", "events", "id"]], ["get_provenance", {}, ["attestation", "history", "history_file", "signature", "verify"]], ["list_deltas", {}, ["api", "entries", "licence", "page", "signature", "type"]], ["get_delta", {"day": "2026-11-20"}, ["added", "apply", "changed", "counts", "from", "removed"]], ["get_delta_signature", {"day": "2026-11-20"}, ["alg", "bytes", "day", "file", "kid", "message"]], ["get_tree_head", {}, ["entries", "roots_by_size", "rules", "signature", "tree_head"]], ["get_inclusion_proof", {"project": "amani-melasti"}, ["day", "day_index", "day_path", "day_root", "day_size", "leaf"]], ["get_consistency_proof", {"first": 1}, ["first", "first_root", "path", "second", "second_root", "signature"]], ["get_market_chart", {"market": "dubai"}, ["as_of", "country", "delays", "disclosure", "licence", "link"]], ["get_monitoring", {}, ["about", "edge_now", "per_day", "per_page", "samples"]]]
+passed, fails = 0, []
+for op, args, req in C:
+    try:
+        d = getattr(k, op)(**args); miss = [x for x in req if x not in d]
+        if miss: raise Exception("missing " + ",".join(miss))
+        passed += 1
+    except Exception as e: fails.append("%s: %s" % (op, e))
+print(json.dumps({"client": "python", "passed": passed, "total": len(C), "fails": fails})); sys.exit(1 if fails else 0)

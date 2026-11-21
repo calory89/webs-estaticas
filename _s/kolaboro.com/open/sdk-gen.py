@@ -130,12 +130,12 @@ def gen():
         tp = '{ ' + ' '.join('%s%s: %s;' % (p['name'], '' if p['required'] else '?', ts_type(p['schema'])) for p in params) + ' }'
         meth_ts.append('  /** %s */\n  %s(p%s: %s): Promise<%s>;' % (o['summary'], oid, '' if req else '?', tp, rs))
         sig = ', '.join(['self'] + ['%s: %s' % (p['name'], pyt(p['schema'])) for p in req] + ['%s: Optional[%s] = None' % (p['name'], pyt(p['schema'])) for p in opt])
-        pth = 'f' + json.dumps(re.sub(r'\{(\w+)\}', lambda m: '{urllib.parse.quote(str(' + m.group(1) + '), safe="")}', path))
+        pth = 'f"' + re.sub(r'\{(\w+)\}', lambda m: "{urllib.parse.quote(str(" + m.group(1) + "), safe='')}", path) + '"'
         meth_py.append('    def %s(%s) -> "%s":\n        """%s"""\n        return self._get(%s, {%s})\n' % (snake(oid), sig, rs, o['summary'], pth, ', '.join("'%s': %s" % (p['name'], p['name']) for p in params if p['in'] == 'query')))
     for name, s in d['schemas'].items():
         dts.append('export type %s = %s;' % (name, ts_type(s)))
         props = (s.get('properties') or {}) if s.get('type') == 'object' else {}
-        if props and all(re.match(r'^[A-Za-z_][A-Za-z0-9_]*$', k) for k in props): pyty.append('class %s(TypedDict, total=False):\n%s\n' % (name, ''.join('    %s: %s\n' % (k, pyt(v)) for k, v in props.items())))
+        if props: pyty.append('%s = TypedDict(%s, {%s}, total=False)\n' % (name, json.dumps(name), ', '.join('%s: %s' % (json.dumps(k), pyt(v)) for k, v in props.items())))
         else: pyty.append('%s = Dict[str, Any]\n' % name)
     js += meth_js + ['}', 'export default KolaboroV1;']
     dts += ['export declare class KolaboroV1 {', '  constructor(o?: Options);', '  last: { url: string; status: number; signature: { checked: boolean; ok?: boolean; kid?: string }; cached?: boolean } | null;'] + meth_ts + ['}', 'export default KolaboroV1;']
