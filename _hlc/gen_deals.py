@@ -256,7 +256,7 @@ def wiki_photo(dest, country=''):
             src, w, h = o.get('source', ''), o.get('width', 0), o.get('height', 1)
             if not src or src.lower().endswith('.svg') or re.search(r'(map|mapa|flag|bandera|coat|escudo|logo|locator|location)', src, re.I) or w < 1000 or w / h < 1.2:
                 continue
-            thumb = re.sub(r'/commons/(\w/\w\w)/', r'/commons/thumb/\1/', src) + '/1600px-' + src.rsplit('/', 1)[-1] if '/commons/' in src else src
+            thumb = re.sub(r'/commons/(\w/\w\w)/', r'/commons/thumb/\1/', src) + '/1920px-' + src.rsplit('/', 1)[-1] if '/commons/' in src else src
             im = fetch_img(thumb) or fetch_img(src)
             if im:
                 return im, f'Foto: Wikipedia · Wikimedia Commons ({pg.get("title", "")})'
@@ -270,7 +270,7 @@ def commons_photo(dest, country=''):
         return im, cr
     for q in (f'{dest} skyline', f'{dest} panorama', f'{dest} {country}'.strip()):
         for cat in ('Featured_pictures_on_Wikimedia_Commons', 'Quality_images'):
-            u = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'search', 'gsrsearch': f'{q} incategory:{cat} filetype:bitmap', 'gsrnamespace': 6, 'gsrlimit': 15, 'prop': 'imageinfo', 'iiprop': 'url|size|extmetadata', 'iiurlwidth': 1600})
+            u = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'search', 'gsrsearch': f'{q} incategory:{cat} filetype:bitmap', 'gsrnamespace': 6, 'gsrlimit': 15, 'prop': 'imageinfo', 'iiprop': 'url|size|extmetadata', 'iiurlwidth': 1920})
             try:
                 j = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40))
             except Exception:
@@ -292,6 +292,9 @@ def commons_photo(dest, country=''):
 
 
 def fetch_img(url):
+    # Wikimedia solo sirve miniaturas de tamaños estándar desde 2026 (1600px da error 400)
+    if url and 'upload.wikimedia.org' in url and '/1600px-' in url:
+        url = url.replace('/1600px-', '/1920px-')
     try:
         return Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read())).convert('RGB')
     except Exception:
@@ -441,7 +444,7 @@ def city_photo(dest, iata='', country=''):
             # la imagen principal es un mosaico o un mapa: buscamos dentro del artículo una vista de la ciudad
             try:
                 u2 = f'https://{lang}.wikipedia.org/w/api.php?' + urllib.parse.urlencode({'action': 'query', 'format': 'json', 'generator': 'images', 'titles': pg['title'], 'gimlimit': 50,
-                                                                                            'prop': 'imageinfo', 'iiprop': 'url|size', 'iiurlwidth': 1600})
+                                                                                            'prop': 'imageinfo', 'iiprop': 'url|size', 'iiurlwidth': 1920})
                 j2 = json.load(urllib.request.urlopen(urllib.request.Request(u2, headers=UA), timeout=40))
                 for ip in (j2.get('query') or {}).get('pages', {}).values():
                     t2 = ip.get('title', '')
@@ -455,7 +458,7 @@ def city_photo(dest, iata='', country=''):
         if cands:
             break
     for src, t in cands:
-        thumb = re.sub(r'/commons/(\w/\w\w)/', r'/commons/thumb/\1/', src) + '/1600px-' + src.rsplit('/', 1)[-1] if ('/commons/' in src and '/thumb/' not in src) else src
+        thumb = re.sub(r'/commons/(\w/\w\w)/', r'/commons/thumb/\1/', src) + '/1920px-' + src.rsplit('/', 1)[-1] if ('/commons/' in src and '/thumb/' not in src) else src
         im = fetch_img(thumb) or fetch_img(src)
         if im:
             return im, f'Foto: Wikipedia · Wikimedia Commons ({t})'

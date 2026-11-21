@@ -151,7 +151,7 @@ function req1(lang, it) {
 
 async function batchSubmit(lang, items) {
   const before = await spent();
-  const worst = items.length * MAX_TOK * BATCH_PRICE[1] / 1e6;
+  const worst = items.length * 0.115; // coste medio medido por guía en lote (~9.500 tokens de salida)
   if (before + worst > CAP_USD) return { error: "cap", spent: before, worst };
   const r = await fetch("https://api.anthropic.com/v1/messages/batches", { method: "POST", headers: AH(), body: JSON.stringify({ requests: items.map((it) => req1(lang, it)) }) });
   const j = await r.json();
