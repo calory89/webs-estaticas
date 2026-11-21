@@ -363,7 +363,11 @@ const CSS = '<style id="n30b-css">.n30{padding-bottom:40px}.n30>ul:not([class]){
   '.sn-tip td{font-style:italic}@media (max-width:640px){.n30-cg{grid-template-columns:minmax(0,1fr)}.n30-ep{flex-direction:column;align-items:flex-start}}@media print{header,footer,.n30-act,.kx-tick,nav{display:none!important}.n30-qr #ce-qr{border:0}}</style>';
 async function assemble(pg, lang, shell, shellPath) {
   const n = await N();
-  return n.assemble(pg, lang, await shell(pre(lang) + shellPath));
+  // n34s (21 Nov 2026): /<lang>/engineering/, /<lang>/data/ and /<lang>/docs/api/ do not exist, so translated pages took the English 404 page as
+  // their shell (html lang="en", no dir="rtl" on Arabic). They now fall back to the translated shell every named page uses.
+  let sr = await shell(pre(lang) + shellPath);
+  if (lang !== 'en' && (!sr || sr.status !== 200)) sr = await shell(pre(lang) + '/how-we-score/');
+  return n.assemble(pg, lang, sr);
 }
 
 // ------------------------------------------------------------------------------------------------ router

@@ -140,7 +140,7 @@ function kbHeaders(r, u) {
   if (!h.has('referrer-policy')) h.set('referrer-policy', 'strict-origin-when-cross-origin');
   if (!h.has('content-language')) h.set('content-language', /^\/agents\/id(\/|$)/.test(u.pathname) ? 'id' : (/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [0, 'en'])[1]);   // n28a: only 2 page types sent it; Bing reads it for the page language
   if (!h.has('x-content-type-options')) h.set('x-content-type-options', 'nosniff');
-  h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
+  h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), serial=(), hid=(), bluetooth=(), display-capture=(), interest-cohort=(), browsing-topics=()');   // n34s: + serial, hid, bluetooth, display-capture, browsing-topics off
   // Strict CSP trial (report-only): a fresh nonce per response is stamped on every <script> of our own static HTML, with
   // 'strict-dynamic' so trusted scripts can load GTM, Clarity, leaflet, d3 or DuckDB. 'unsafe-inline' and https: are only
   // fallbacks for pre-CSP3 browsers (ignored when a nonce is present). Reports go to /api/kb/csp. Plan: scratchpad csp-strict.txt.
