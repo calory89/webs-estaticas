@@ -15,11 +15,11 @@
  "robots_lines_added": 1,
  "indexnow": {
   "compared": true,
-  "added": 38,
-  "changed": 1194,
+  "added": 0,
+  "changed": 0,
   "removed": 0
  },
- "releases": 23,
+ "releases": 24,
  "files": [
   "openapi.json",
   "data/countries/index.json",
