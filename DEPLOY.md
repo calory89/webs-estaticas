@@ -253,3 +253,22 @@ Probado antes en local contra una copia de `stage_r23`.
 **Publicado:** `pub/_wp` e338dbb (10.163 ficheros, solo `_s/supportnear.com`). Comprobado byte a byte en vivo
 (10.163/10.163). Pruebas en vivo: smoke 0 fallos, R23 0 fallos, `tests_r24/axe_r24.py` 0 fallos (axe, escritorio y
 móvil oscuro). IndexNow 8.641 URL (200). Sitemaps enviados a Search Console.
+
+
+## Ronda 25 (21-nov-2026): más SEO
+
+Pedido de Carlos: «continúa con todo». `qa_r25/patch_r25_pages.py` sobre `city_pages.py` (parte de `city_pages.pre_r25.py`):
+- Inglés por país: «food banks» (o «food pantries» en US y CA) en vez de «free food places» (`CUR['cc']`, `TT`, `need_word`).
+- Página de ciudad: frase con datos propios (sitios con nombre, con horario, con teléfono) y «Common questions» con
+  los 3 sitios más cercanos de comida, albergue y duchas/aseos; lo mismo en JSON-LD `FAQPage`. Textos en `R25` (11 idiomas).
+- Fuera de las páginas (no de la app) los hospitales y clínicas privados conocidos y los dentistas (`_PRIV`):
+  traían búsquedas como «quironsalud pamplona». Dos páginas de salud bajaron de 3 sitios y son ahora stub a su ciudad.
+- `max-image-preview:large` en todas las páginas indexables (`ROBOTS_IDX`).
+- Datos abiertos: `/datos/` (página) y `/datos/<país>.csv` (136, ODbL, sitios a 10 km de sus ciudades), enlazados
+  desde cada página de país. Ojo: la página va en `datos/index.html`; un `datos.html` junto a la carpeta `datos/`
+  hace que `/datos` redirija a `/datos/` y dé 404.
+- `llms.txt` (en `static_extra/`, se copia al árbol en `qa_r25/stage_r25.py`) con países, necesidades, sitios y datos.
+
+**Publicado:** `pub/_wp` aae2c8b (8.893 ficheros, solo `_s/supportnear.com`), con `patch-pub` + `qa_r25/apply_r25.py`
+(prueba en seco antes). Comprobado byte a byte en vivo 8.893/8.893; axe 0 fallos, smoke 0 fallos. `pub/_wp` en 14.782
+ficheros (límite 20.000). IndexNow 8.638 URL.
