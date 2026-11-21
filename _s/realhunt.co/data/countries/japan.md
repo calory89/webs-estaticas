@@ -197,7 +197,7 @@ https://realhunt.co/deal/Dbk8HHgCAHX
 
 ### Freshly renovated five-bedroom house with an ocean view
 
-€56,120 · Kashiwazaki, Niigata, Japan · 120 m² · RealHunt score 86 · added 2026-09-23
+€56,120 · Kashiwazaki, Niigata, Japan · 120 m² · 5 bedrooms · RealHunt score 86 · added 2026-09-23
 
 An ocean view, five bedrooms and a kitchen installed last month, all for $61,000 (¥9.8 million). The house is in Arahama, a small coastal neighborhood of Kashiwazaki on the Sea of Japan side, about two and a half hours from Tokyo. Bus stop three minutes on foot, train station 28.
 
@@ -213,7 +213,7 @@ https://realhunt.co/deal/Dc07Tz9DoUf
 
 ### Renovated island house with one of Japan's best sea views
 
-€57,040 · Kojima, Okayama, Japan · RealHunt score 86 · added 2026-09-23
+€57,040 · Kojima, Okayama, Japan · 2 bedrooms · RealHunt score 86 · added 2026-09-23
 
 Perched on a hilltop on Kojima Island in Okayama, this beautifully renovated 2-bedroom retreat was built in 1993 and offers 91㎡ of bright living space surrounded by endless views of the Seto Inland Sea.
 
@@ -221,7 +221,7 @@ https://realhunt.co/deal/Db59YYrjN5h
 
 ### Japanese villa with a stream, deck and hot spring access
 
-€38,640 · Nasu, Tochigi, Japan · RealHunt score 85 · added 2026-09-23
+€38,640 · Nasu, Tochigi, Japan · 1 bedrooms · RealHunt score 85 · added 2026-09-23
 
 The 1LDK home offers 58㎡ of living space on 265㎡ of freehold land, with one bedroom, an open living and dining area, a wooden deck, and an airy atrium that makes the compact interior feel bright and welcoming.
 

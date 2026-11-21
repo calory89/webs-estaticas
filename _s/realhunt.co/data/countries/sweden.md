@@ -1,6 +1,6 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 21 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€701 per m², from the 22 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/sweden · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
@@ -11,7 +11,7 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 | --- | --- |
 | Homes on RealHunt | 39 |
 | Median asking price | €72,000 |
-| Median price per m² | €680 (21 homes with a known size) |
+| Median price per m² | €701 (22 homes with a known size) |
 | Median size | 110 m² |
 | Cheapest and most expensive | €22,000 · €99,000 |
 | Median RealHunt score (70 to 98) | 85 |
@@ -51,7 +51,7 @@ Full guide: https://realhunt.co/guide/sweden
 
 ### Cosy villa with sauna, 100 m from the river
 
-€25,960 · Northern Sweden · RealHunt score 93 · added 2026-09-23
+€25,960 · Norriån, Boden, Norrbotten · RealHunt score 93 · added 2026-09-23
 
 Cosy villa with a sauna, a big garden house and a garage, in a quiet spot 100 m from the river and 800 m from the lake.
 
@@ -179,7 +179,7 @@ https://realhunt.co/deal/se-landskrona-98k-1673127
 
 ### Classic 1914 red house with four bedrooms across three levels
 
-€56,120 · Ställdalen, Ljusnarsberg · RealHunt score 85 · added 2026-09-23
+€56,120 · Ställdalen, Ljusnarsberg · 4 bedrooms · RealHunt score 85 · added 2026-09-23
 
 Dating back to 1914, this charming red house offers four bedrooms, bright interiors and plenty of space for family life across three levels. A generous garden provides room for growing, playing and long summer days outdoors, while modern upgrades make the home comfortable year-round.
 
@@ -285,7 +285,7 @@ https://realhunt.co/deal/Dbt-d51AaH3
 
 €71,000 · Vivljunga, Kronoberg, Sweden · 2 bedrooms · RealHunt score 80 · added 2026-09-23
 
-
+A summer cabin in the woods at Vivljunga, Kronoberg, Sweden, with a separate guesthouse, two bedrooms and lakes for swimming nearby. Asking about €71,000.
 
 https://realhunt.co/deal/DdSVb-ainBZ
 
@@ -307,7 +307,7 @@ https://realhunt.co/deal/Da4VmKMoP1y
 
 ### 5-bed 1929 house a short walk from Lake Lelång
 
-€90,000 · Gunnarbyn, Värmland, Sweden · RealHunt score 80 · added 2026-09-23
+€90,000 · Gunnarbyn, Värmland, Sweden · 5 bedrooms · RealHunt score 80 · added 2026-09-23
 
 If you want space, this one has plenty of it. Built in 1929, the house has five bedrooms and sits on a private 4,631 m² plot surrounded by nature, with Lake Lelång just a short walk away for swimming and fishing.
 
@@ -331,7 +331,7 @@ https://realhunt.co/deal/Db7aSFMoNPo
 
 ### Former railway keeper's cottage with mountain views
 
-€73,000 · Vallsta, Gävleborg, Sweden · RealHunt score 77 · added 2026-09-23
+€73,000 · Vallsta, Gävleborg, Sweden · 50 m² · RealHunt score 77 · added 2026-09-23
 
 This one comes with a little piece of Swedish railway history. Originally used as a railway keeper’s home, the 50 m² cottage sits among open fields with views towards the forest and mountains, surrounded by a leafy 1,385 m² garden.
 

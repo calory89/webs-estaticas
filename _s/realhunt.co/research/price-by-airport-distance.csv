@@ -1,10 +1,10 @@
 ﻿level,name,from_km,to_km,homes,median_price_eur,median_eur_per_sqm,homes_with_size,median_score,median_distance_km,under_60_km_pct
-band,under 30 km,0,30,243,129000,1460,224,86,,
-band,30 to 60 km,30,60,264,91000,1080,239,85,,
-band,60 to 100 km,60,100,173,85000,1078,159,83,,
-band,100 km or more,100,,20,84000,1094,16,84,,
+band,under 30 km,0,30,243,129000,1456,225,86,,
+band,30 to 60 km,30,60,269,91000,1091,244,85,,
+band,60 to 100 km,60,100,175,85000,1077,163,83,,
+band,100 km or more,100,,20,84000,1094,17,84,,
 country,Netherlands,,,18,,,,,14,100
-country,Mexico,,,15,,,,,20,100
+country,Mexico,,,14,,,,,20,100
 country,United States,,,62,,,,,20,79
 country,Dominican Republic,,,5,,,,,25,100
 country,Greece,,,27,,,,,31,100
@@ -12,10 +12,10 @@ country,Spain,,,191,,,,,37,78
 country,Cyprus,,,6,,,,,38,100
 country,Denmark,,,46,,,,,43,70
 country,Japan,,,35,,,,,43,80
-country,Italy,,,76,,,,,45,67
+country,Italy,,,78,,,,,45,67
 country,Bulgaria,,,7,,,,,47,100
 country,France,,,52,,,,,49,65
-country,Sweden,,,34,,,,,49,74
+country,Sweden,,,35,,,,,49,74
 country,United Kingdom,,,7,,,,,55,57
 country,Portugal,,,21,,,,,56,57
 country,Canada,,,16,,,,,63,44

@@ -74,7 +74,7 @@ https://realhunt.co/deal/bg-kavarna-hills-69k-1606144
 
 €70,000 · Kavarna (Black Sea) · 99 m² · 2 bedrooms · RealHunt score 93 · added 2026-10-14
 
-A 99 m² flat on the fifth of six floors, about 300 m from the beach: a hallway, a spacious living room with a kitchen, two fully equipped bathrooms, two bedrooms, a cellar and two terraces, one with a sea view. Sold with all furniture and appliances (air conditioning, oven, hob, washing machine, fridge), ready to rent out or move in. The complex has two outdoor pools, parking and a play area; maintenance fee €750 a year. Asking €70,000, about €707/m².
+A 99 m² flat on the fifth of six floors, about 300 m from the beach: a hallway, a spacious living room with a kitchen, two fully equipped bathrooms, two bedrooms, a cellar and two terraces, one with a sea view. Sold with all furniture and appliances (air conditioning, oven, hob, washing machine, fridge), ready to move in. The complex has two outdoor pools, parking and a play area; maintenance fee €750 a year. Asking €70,000, about €707/m².
 
 https://realhunt.co/deal/bg-kavarna-70k-1672825
 

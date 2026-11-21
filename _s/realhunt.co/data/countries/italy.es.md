@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 81 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 81 casas es de 80.000 € (1.167 € por m², calculado con las 56 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 83 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 83 casas es de 80.000 € (1.000 € por m², calculado con las 64 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 81 |
+| Casas en RealHunt | 83 |
 | Precio de salida mediano | 80.000 € |
-| Precio mediano por m² | 1.167 € (56 casas de superficie conocida) |
-| Superficie mediana | 80 m² |
+| Precio mediano por m² | 1.000 € (64 casas de superficie conocida) |
+| Superficie mediana | 81 m² |
 | La más barata y la más cara | 12.000 € · 197.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 81 casas, de mejor a peor nota
+## Las 83 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -111,7 +111,7 @@ https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k
 
 ### Casa de piedra en un pueblo de colina a 55 min de Roma
 
-12.000 € · Lazio, Italy · nota RealHunt 89 · añadida el 2026-09-23
+12.000 € · Lazio, Italy · 1 dormitorios · nota RealHunt 89 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 50 min a la playa · 55 min al aeropuerto de Roma.
 
@@ -119,7 +119,7 @@ https://realhunt.co/es/deal/DcoUnwBDDxF
 
 ### Casa encalada a 25 minutos de la playa
 
-28.000 € · Puglia, Italy · nota RealHunt 88 · añadida el 2026-09-23
+28.000 € · Puglia, Italy · 1 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 25 min a la playa · 37 min al aeropuerto de Brindisi.
 
@@ -127,7 +127,7 @@ https://realhunt.co/es/deal/Dc1cyxRDM9Y
 
 ### Casa con vistas al mar a cinco minutos de la playa
 
-30.000 € · Calabria, Italy · nota RealHunt 88 · añadida el 2026-09-23
+30.000 € · Calabria, Italy · 1 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 5 min a la playa · 53 min al aeropuerto de Scalea.
 
@@ -135,7 +135,7 @@ https://realhunt.co/es/deal/Dcgta8yjCAR
 
 ### Casa con vistas al lago a seis minutos del lago
 
-32.000 € · Umbria, Italy · nota RealHunt 88 · añadida el 2026-09-23
+32.000 € · Umbria, Italy · 1 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 6 min al lago · 1 h 15 min al aeropuerto de Perugia.
 
@@ -143,7 +143,7 @@ https://realhunt.co/es/deal/DdUZvbGkTvh
 
 ### Casa con vistas al mar a cinco minutos de la playa
 
-35.000 € · Calabria, Italy · nota RealHunt 87 · añadida el 2026-09-23
+35.000 € · Calabria, Italy · 2 dormitorios · nota RealHunt 87 · añadida el 2026-09-23
 
 2 dormitorios · 1 baño · 5 min a la playa · 1 h 15 min al aeropuerto de Lamezia.
 
@@ -159,7 +159,7 @@ https://realhunt.co/es/deal/falconara-albanese-41000
 
 ### Casa de 2 dormitorios a 10 minutos del lago
 
-45.000 € · Lombardy, Italy · nota RealHunt 86 · añadida el 2026-09-23
+45.000 € · Lombardy, Italy · 82 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-09-23
 
 2 dormitorios · 1 baño · 82 m2 · a 10 minutos del lago · 1 h 9 min al aeropuerto de Milán.
 
@@ -183,7 +183,7 @@ https://realhunt.co/es/deal/it-piedmont-castellino-tanaro-renovated-hill-house-1
 
 ### Casa de piedra con piscina en un pueblo toscano
 
-24.000 € · Tuscany, Italy · nota RealHunt 85 · añadida el 2026-09-23
+24.000 € · Tuscany, Italy · 76 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
 2 dormitorios · 1 baño · 76 m2 · piscina · 1 h 39 min al aeropuerto de Perugia.
 
@@ -191,7 +191,7 @@ https://realhunt.co/es/deal/Dc6Y4UKDLyc
 
 ### Casa de 5 dormitorios con terraza y patio
 
-34.000 € · Como area, Italy · nota RealHunt 85 · añadida el 2026-09-23
+34.000 € · Como area, Italy · 5 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
 Una sorprendentemente grande casa italiana independiente en una de las regiones más deseables del norte de Italia, por solo 34.000 euros. ¿Quieres el listado completo, la ubicación exacta y mi análisis detallado de la propiedad? Propiedades italianas curadas por menos de 100.000 euros.
 
@@ -201,7 +201,7 @@ https://realhunt.co/es/deal/Dc8TyIDkexU
 
 59.000 € · Bomba, Chieti, Abruzzo, Italy · nota RealHunt 85 · añadida el 2026-09-13
 
-
+Casa de piedra restaurada en Bomba, provincia de Chieti (Abruzos), con dos terrazas panorámicas y un lago cerca. Precio 59.000 €.
 
 https://realhunt.co/es/deal/DdOGB56ABXI
 
@@ -231,7 +231,7 @@ https://realhunt.co/es/deal/it-tuscany-roccastrada-stone-loft-158k
 
 ### Casa torre histórica amueblada
 
-35.000 € · Sardinia, Italy · nota RealHunt 84 · añadida el 2026-09-23
+35.000 € · Sardinia, Italy · 75 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-09-23
 
 Casa torre histórica por 35.000 € en Cerdeña 75 m² · 2 dormitorios · 1 baño · balcón · amueblada Repartida en cuatro plantas en el colorido barrio histórico de Cerdeña, y a solo unos 3 km de las playas.
 
@@ -239,7 +239,7 @@ https://realhunt.co/es/deal/Dcmar6QDXXm
 
 ### Casa de 1 dormitorio a 11 minutos del lago de Como
 
-38.000 € · Lake Como, Italy · nota RealHunt 84 · añadida el 2026-09-23
+38.000 € · Lake Como, Italy · 1 dormitorios · nota RealHunt 84 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 11 min al lago · 1 h 12 min al aeropuerto de Milán.
 
@@ -249,7 +249,7 @@ https://realhunt.co/es/deal/DcjBmxJjKHY
 
 39.000 € · Acquappesa, Cosenza, Calabria, Italy · 40 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-09-20
 
-
+Vivienda de 40 m² con un dormitorio y terraza con vistas al mar en Acquappesa, provincia de Cosenza (Calabria). Precio 39.000 €, unos 975 €/m².
 
 https://realhunt.co/es/deal/acquappesa-sea-view-39000
 
@@ -263,7 +263,7 @@ https://realhunt.co/es/deal/DcyzSIdjOz6
 
 ### Casa con vistas al mar y terraza panorámica
 
-49.000 € · Sicily, Italy · nota RealHunt 84 · añadida el 2026-09-23
+49.000 € · Sicily, Italy · 87 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-09-23
 
 Casa con vistas al mar por 49.000 € en Sicilia, Italia 87 m² · 2 dormitorios · 1 baño · balcón de 12 m² con vistas al mar · terraza panorámica de 87 m² A solo 20 minutos del centro de Messina, con vistas increíbles al Mediterráneo.
 
@@ -287,15 +287,15 @@ https://realhunt.co/es/deal/it-piedmont-acqui-terme-country-house-garden-180k
 
 ### Piso de dos dormitorios con dos balcones en un pueblo histórico
 
-16.000 € · Fiamignano, Rieti, Lazio, Italy · 40 m² · nota RealHunt 83 · añadida el 2026-09-23
+16.000 € · Fiamignano, Rieti, Lazio, Italy · 40 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-09-23
 
-2 dormitorios, 1 baño, 40 m² (431 sq ft). En un casco histórico con encanto, este acogedor piso une un entorno precioso con interiores recogidos: un salón acogedor, cocina americana, zona de comedor y dos balcones para disfrutar de las vistas. La sensación de una casa de campo metida en un pueblo fácil de disfrutar.
+2 dormitorios, 1 baño, 40 m² (431 pies cuadrados). En un casco histórico con encanto, este acogedor piso une un entorno precioso con interiores recogidos: un salón acogedor, cocina americana, zona de comedor y dos balcones para disfrutar de las vistas. La sensación de una casa de campo metida en un pueblo fácil de disfrutar.
 
 https://realhunt.co/es/deal/Dcsm9sZoDMp
 
 ### Casa de pueblo de 2 dormitorios a 30 minutos de la playa
 
-39.000 € · Sardinia, Italy · nota RealHunt 83 · añadida el 2026-09-23
+39.000 € · Sardinia, Italy · 2 dormitorios · nota RealHunt 83 · añadida el 2026-09-23
 
 2 dormitorios · 1 baño · 32 min a la playa · 59 min al aeropuerto de Olbia.
 
@@ -311,7 +311,7 @@ https://realhunt.co/es/deal/acquedolci-49000
 
 ### Casa abovedada cerca de la costa de Apulia
 
-49.000 € · Puglia, Italy · nota RealHunt 83 · añadida el 2026-09-23
+49.000 € · Puglia, Italy · 1 dormitorios · nota RealHunt 83 · añadida el 2026-09-23
 
 1 dormitorio · 1 baño · 19 min a la playa · 39 min al aeropuerto de Brindisi.
 
@@ -319,7 +319,7 @@ https://realhunt.co/es/deal/DceAZ_xjMzt
 
 ### Casa de piedra con terraza y vistas a la montaña
 
-59.000 € · Abruzzo, Italy · nota RealHunt 83 · añadida el 2026-09-23
+59.000 € · Abruzzo, Italy · 119 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-09-23
 
 2 dormitorios · 2 baños · 119 m2 · a 25 minutos de la playa · 1 h 12 min al aeropuerto de Abruzzo.
 
@@ -341,13 +341,29 @@ Una casa grande en el pueblo de montaña de Secinaro, hecha uniendo tres pequeñ
 
 https://realhunt.co/es/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 
+### Casa de piedra renovada con chimenea en los bosques de Monte Amiata en Selva, Santa Fiora
+
+99.000 € · Selva, Santa Fiora (Tuscany) · 120 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-21
+
+Una casa de piedra antigua con entrada propia en Selva, una pequeña aldea de Santa Fiora a unos 750 m en los bosques de castaños y hayas de Monte Amiata en el sur de Toscana. Ha sido completamente reformada, con un nuevo sistema de calefacción de pellets hidráulicos, nuevos cuartos de baño, nuevas instalaciones eléctricas y nuevas ventanas. Aproximadamente 120 m² en tres niveles: un sótano y garaje en la planta baja, luego una gran cocina bajo vigas de madera, una sala de estar con chimenea, dos dormitorios dobles y un cuarto de baño, y un tercer dormitorio abuhardillado con un pequeño cuarto de baño en la parte superior. Una parcela de aproximadamente 1.000 m² cerca puede utilizarse para aparcamiento y jardín.
+
+https://realhunt.co/es/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k
+
 ### Piso de dos dormitorios con terraza en un pueblo histórico toscano
 
 16.000 € · Montieri, Grosseto, Tuscany, Italy · 51 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-09-23
 
-Piso con encanto de 2 dormitorios en el pueblo histórico toscano de Montieri. 2 dormitorios, 1 baño, 51 m² (549 sq ft). En un callejón con encanto que sube hacia la plaza del castillo histórico, el piso tiene un salón cómodo, cocina americana, dos dormitorios y una terraza privada con bonitas vistas.
+Piso con encanto de 2 dormitorios en el pueblo histórico toscano de Montieri. 2 dormitorios, 1 baño, 51 m² (549 pies cuadrados). En un callejón con encanto que sube hacia la plaza del castillo histórico, el piso tiene un salón cómodo, cocina americana, dos dormitorios y una terraza privada con bonitas vistas.
 
 https://realhunt.co/es/deal/DdSm-JkiJem
+
+### Cabaña de pueblo con jardín privado y balcón con vista a la colina en Loazzolo, Piamonte
+
+68.000 € · Loazzolo, Asti (Piedmont) · 87 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-21
+
+Una cabaña en el centro de Loazzolo, un pueblo de colina cerca de Asti, a pasos de la plaza principal. Se accede a través de un callejón adoquinado y un arco de piedra hacia un jardín privado con un patio para comer al aire libre. Aproximadamente 87 m²: una luminosa sala de estar y cocina de planta abierta con puertas francesas al patio, luego dos dormitorios arriba, uno con balcón con vistas a las colinas ondulantes, y un cuarto de baño. A nivel de calle hay un garaje, un sótano y un pequeño infernot, una bodega de vinos tradicional excavada en la roca. Calefacción central de gas. Catalogado en buen estado estructural.
+
+https://realhunt.co/es/deal/it-loazzolo-village-cottage-garden-hill-view-68k
 
 ### Casa de piedra renovada dentro de los muros del Castillo de Gaglietole, Umbría
 
@@ -399,7 +415,7 @@ https://realhunt.co/es/deal/it-san-venanzo-48k-knitz9
 
 ### Casa de piedra en un pueblo medieval toscano
 
-45.000 € · Tuscany, Italy · nota RealHunt 81 · añadida el 2026-09-23
+45.000 € · Tuscany, Italy · 65 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-09-23
 
 Casa de piedra por 45.000 € en la Toscana, Italia 65 m² · 2 dormitorios · 1 baño · bodega · pueblo medieval
 
@@ -455,9 +471,9 @@ https://realhunt.co/es/deal/it-lazio-arpino-renovated-country-house-olive-grove-
 
 ### Piso colorido de un dormitorio con buhardilla y balcón
 
-20.000 € · Gradoli, Viterbo, Lazio, Italy · 51 m² · nota RealHunt 80 · añadida el 2026-09-23
+20.000 € · Gradoli, Viterbo, Lazio, Italy · 51 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-09-23
 
-1 dormitorio, 1 baño, 51 m² (549 sq ft). Pequeño, colorido y con mucha personalidad, este piso saca el máximo partido a su superficie compacta con un salón amplio, zona de comedor, cocina americana y una buhardilla muy práctica.
+1 dormitorio, 1 baño, 51 m² (549 pies cuadrados). Pequeño, colorido y con mucha personalidad, este piso saca el máximo partido a su superficie compacta con un salón amplio, zona de comedor, cocina americana y una buhardilla muy práctica.
 
 https://realhunt.co/es/deal/Dcxwhq4kRRe
 
@@ -591,7 +607,7 @@ https://realhunt.co/es/deal/ventimiglia-di-sicilia-35000
 
 ### Casa de pueblo de tres plantas con balcón panorámico sobre los tejados
 
-45.000 € · Italy · nota RealHunt 77 · añadida el 2026-09-23
+45.000 € · Italy · 2 dormitorios · nota RealHunt 77 · añadida el 2026-09-23
 
 Repartida en tres plantas acogedoras, esta casa italiana con mucho carácter tiene dos dormitorios y un balcón panorámico con vistas al campo de alrededor y a los tejados del pueblo. Con todo lo básico a un corto paseo, es una pequeña base ideal para vivir el ritmo pausado de un pueblo italiano.
 
@@ -655,7 +671,7 @@ https://realhunt.co/es/deal/it-locorotondo-75k-3me3r0
 
 ### Casa de tres dormitorios en la cima de una colina con dos chimeneas y una terraza panorámica de montaña
 
-85.000 € · Bajardo, Liguria · nota RealHunt 75 · añadida el 2026-09-23
+85.000 € · Bajardo, Liguria · 3 dormitorios · nota RealHunt 75 · añadida el 2026-09-23
 
 Situada en un tranquilo pueblo en la cima de una colina en Liguria, esta casa radiante combina espacios de vida generosos, dos chimeneas y una terraza panorámica con hermosas vistas sobre las montañas circundantes. Con tres dormitorios espaciosos y un interior listo para entrar a vivir, es un lugar acogedor para disfrutar de la auténtica vida de pueblo toscano.
 
@@ -679,15 +695,15 @@ https://realhunt.co/es/deal/borgorose-49000
 
 ### Pequeña casa de labranza de piedra con terraza en un pueblo de Umbría
 
-46.000 € · Sellano, Perugia, Umbria, Italy · 40 m² · nota RealHunt 73 · añadida el 2026-09-23
+46.000 € · Sellano, Perugia, Umbria, Italy · 40 m² · 1 dormitorios · nota RealHunt 73 · añadida el 2026-09-23
 
-1 dormitorio, 1 baño, 40 m² (431 sq ft). Un dormitorio, un pueblo con encanto y todos los ingredientes para un ritmo más lento. Esta pequeña casa de labranza de piedra es sencilla, con un salón cálido, una cocina práctica, un comedor abierto acogedor y una zona en terrazas para disfrutar del aire fresco.
+1 dormitorio, 1 baño, 40 m² (431 pies cuadrados). Un dormitorio, un pueblo con encanto y todos los ingredientes para un ritmo más lento. Esta pequeña casa de labranza de piedra es sencilla, con un salón cálido, una cocina práctica, un comedor abierto acogedor y una zona en terrazas para disfrutar del aire fresco.
 
 https://realhunt.co/es/deal/DcndWlcGwtG
 
 ### Casa de pueblo de piedra de 3 dormitorios en una aldea tranquila
 
-55.000 € · Piobbico, Marche, Italy · nota RealHunt 73 · añadida el 2026-09-23
+55.000 € · Piobbico, Marche, Italy · 3 dormitorios · nota RealHunt 73 · añadida el 2026-09-23
 
 Casa de pueblo de piedra en una pequeña aldea tranquila Esta encantadora casa de pueblo de 3 dormitorios está en una tranquila aldea rodeada de un campo idílico, con un cálido carácter rural que encaja a la perfección con el entorno.
 

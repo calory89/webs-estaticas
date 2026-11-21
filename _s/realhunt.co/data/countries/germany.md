@@ -93,7 +93,7 @@ https://realhunt.co/deal/de-chemnitz-45k-234628
 
 €55,000 · Sonnenberg, Chemnitz · 66 m² · 1 bedrooms · RealHunt score 83 · added 2026-10-13
 
-65.8 m² on the 3rd floor of a 1900 building: high ceilings, new floors, a fitted kitchen, a bathroom with a bath and a large south balcony over the courtyard. Fully renovated and currently let to a tenant at €5/m², about 7.4% gross yield. Asking €55,000, about €836/m².
+65.8 m² on the 3rd floor of a 1900 building: high ceilings, new floors, a fitted kitchen, a bathroom with a bath and a large south balcony over the courtyard. Fully renovated and currently let to a tenant. Asking €55,000, about €836/m².
 
 https://realhunt.co/deal/de-chemnitz-55k-893563
 

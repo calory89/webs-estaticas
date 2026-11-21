@@ -93,7 +93,7 @@ https://realhunt.co/es/deal/de-chemnitz-45k-234628
 
 55.000 € · Sonnenberg, Chemnitz · 66 m² · 1 dormitorios · nota RealHunt 83 · añadida el 2026-10-13
 
-65,8 m² en la 3ª planta de un edificio de 1900: techos altos, suelos nuevos, cocina equipada, baño con bañera y balcón grande al sur sobre el patio. Reformado por completo y alquilado ahora a 5 €/m², rentabilidad bruta de un 7,4%. Precio 55.000 €. unos 836 €/m².
+65,8 m² en la 3ª planta de un edificio de 1900: techos altos, suelos nuevos, cocina equipada, baño con bañera y balcón grande al sur sobre el patio. Reformado por completo y alquilado actualmente a un inquilino. Precio 55.000 €, unos 836 €/m².
 
 https://realhunt.co/es/deal/de-chemnitz-55k-893563
 

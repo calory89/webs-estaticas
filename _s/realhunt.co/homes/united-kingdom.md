@@ -1,8 +1,8 @@
 ## Houses for sale in the United Kingdom
 
-Updated 20 November 2026. Newest home added 20 November 2026.
+Updated 21 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 5 houses for sale in the United Kingdom today, priced from €121,000 to €198,400. The cheapest costs €121,000: [Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k), in Whithorn (67 m², 2 bedrooms). The median price is €161,000 (€1,807/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
+RealHunt lists 5 houses for sale in the United Kingdom today, priced from €121,000 to €198,400. The cheapest costs €121,000: [Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k), in Whithorn (67 m², 2 bedrooms). The median price is €161,000 (€1,807/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
 
 Homes
 5
@@ -29,15 +29,15 @@ Foreign buyers
 Can buy freely
 
 Data of
-20 Nov 2026
+21 Nov 2026
 
 ### The 5 homes, best score first
 
-- [Score 83New€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 2 days on RealHuntA well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and…](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
-- [Score 83New€198,400Refurbished period townhouse with a double garage in Lack village, County FermanaghLack, Northern Ireland107 m² · 3 bed · €1,854/m² · Added todayAsking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its…](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
-- [Score 83New€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · Added todayAsking £140,000 (about €161,000).](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
-- [Score 82New€195,400Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern IrelandGreyabbey, Northern Ireland80 m² · 2 bed · €2,443/m² · Added todayAsking £169,950 (about €195,400) for an 80 m² end-terrace house in the heart of historic Greyabbey, comprehensively renovated within the last five…](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
-- [Score 81New€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 2 days on RealHuntA traditional terraced cottage in the centre of Whithorn, in the far south-west of Scotland.](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+- [Score 83New€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 3 days on RealHuntA well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and…](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Score 83New€198,400Refurbished period townhouse with a double garage in Lack village, County FermanaghLack, Northern Ireland107 m² · 3 bed · €1,854/m² · 1 day on RealHuntAsking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its…](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
+- [Score 83New€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 1 day on RealHuntAsking £140,000 (about €161,000).](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [Score 82New€195,400Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern IrelandGreyabbey, Northern Ireland80 m² · 2 bed · €2,443/m² · 1 day on RealHuntAsking £169,950 (about €195,400) for an 80 m² end-terrace house in the heart of historic Greyabbey, comprehensively renovated within the last five…](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
+- [Score 81New€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 3 days on RealHuntA traditional terraced cottage in the centre of Whithorn, in the far south-west of Scotland.](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
 
 ### Compare the 5 homes, cheapest first
 
@@ -120,7 +120,7 @@ By feature [With a garden 3](https://realhunt.co/cheap-houses/with-garden-in-uni
 
 Neighbouring countries [Ireland 4](https://realhunt.co/homes/ireland) [France 45](https://realhunt.co/homes/france)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Mexico 3](https://realhunt.co/homes/mexico) [Colombia 3](https://realhunt.co/homes/colombia)
+By country [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from propertypal.com (3), onthemarket.com (2). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

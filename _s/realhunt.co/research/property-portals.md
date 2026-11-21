@@ -38,7 +38,7 @@ RealHunt: 21 checked homes, https://realhunt.co/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 81 checked homes, https://realhunt.co/homes/italy
+RealHunt: 83 checked homes, https://realhunt.co/homes/italy
 
 ## France
 
@@ -147,6 +147,8 @@ RealHunt: 31 checked homes, https://realhunt.co/homes/poland
 1. [Sreality](https://www.sreality.cz/)
 2. [Bezrealitky](https://www.bezrealitky.cz/)
 
+RealHunt: 3 checked homes, https://realhunt.co/homes/czech-republic
+
 ## Hungary
 
 1. [Ingatlan.com](https://ingatlan.com/)
@@ -184,6 +186,8 @@ RealHunt: 27 checked homes, https://realhunt.co/homes/greece
 
 1. [Nepremičnine.net](https://www.nepremicnine.net/)
 2. [Bolha](https://www.bolha.com/)
+
+RealHunt: 3 checked homes, https://realhunt.co/homes/slovenia
 
 ## Cyprus
 
@@ -234,7 +238,7 @@ RealHunt: 16 checked homes, https://realhunt.co/homes/canada
 4. [Propiedades.com](https://propiedades.com/)
 5. [Century 21 México](https://century21mexico.com/)
 
-RealHunt: 15 checked homes, https://realhunt.co/homes/mexico
+RealHunt: 14 checked homes, https://realhunt.co/homes/mexico
 
 ## Colombia
 

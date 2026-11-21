@@ -13,7 +13,7 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | España | 25 | 49.000 € | 95.000 € | 67 m² | Murcia (8), Alicante (5), Almería (4), Alpujarra (Granada) (1) |
 | Dinamarca | 16 | 35.400 € | 93.200 € | 115 m² | Falster (3), North Jutland (3), near Skælskør (2), Thy (2) |
 | Japón | 15 | 19.320 € | 54.280 € | 91 m² | Wakayama (4), Hyogo (2), Kanagawa (2), Kyoto (2) |
-| Italia | 8 | 28.000 € | 39.000 € | 40 m² | Calabria (4), Sicily (3), Sardinia (1) |
+| Italia | 8 | 28.000 € | 39.000 € | 55 m² | Calabria (4), Sicily (3), Sardinia (1) |
 | Bulgaria | 7 | 58.900 € | 66.000 € | 87 m² | Kavarna (Black Sea) (4), Burgas (1), Pomorie (Black Sea) (1), Varna (1) |
 | México | 6 | 80.920 € | 86.100 € | 68 m² | Sinaloa (6) |
 | Suecia | 5 | 55.000 € | 64.000 € | 50 m² | Medelpad (2), Norrbotten (1), Västerbotten (1), Västernorrland (1) |
@@ -24,7 +24,7 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 713 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 717 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Junto al mar: a 5 km o menos de la costa cuando se conoce la distancia; si no, casas que una persona clasificó como playa y costa.
 - El recuento describe lo que RealHunt publica hoy. Un país que no aparece puede tener casas así que aún no se han añadido.

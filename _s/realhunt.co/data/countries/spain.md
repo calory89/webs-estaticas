@@ -362,7 +362,7 @@ https://realhunt.co/deal/es-gualchos-85k-92930
 
 ### One-bedroom escape with 360-degree rooftop views towards the coast
 
-€99,000 · Alicante, Spain · RealHunt score 89 · added 2026-09-23
+€99,000 · Alicante, Spain · 1 bedrooms · RealHunt score 89 · added 2026-09-23
 
 Bright and easygoing, this one-bedroom home in Alicante pairs open-plan living with a private rooftop solarium offering sweeping 360-degree views across the countryside and towards the coast.
 

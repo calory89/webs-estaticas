@@ -1,8 +1,8 @@
 ## Houses for sale in Colombia
 
-Updated 20 November 2026. Newest home added 20 November 2026.
+Updated 21 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 3 houses for sale in Colombia today, priced from €165,200 to €203,500. The cheapest costs €165,200: [Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m), in Santa Marta (120 m², 3 bedrooms). The median price is €176,300 (€1,377/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
+RealHunt lists 3 houses for sale in Colombia today, priced from €165,200 to €203,500. The cheapest costs €165,200: [Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m), in Santa Marta (120 m², 3 bedrooms). The median price is €176,300 (€1,377/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
 
 Homes
 3
@@ -23,13 +23,13 @@ Top score
 86
 
 Data of
-20 Nov 2026
+21 Nov 2026
 
 ### The 3 homes, best score first
 
-- [Score 86New€165,200Fully remodelled three-bedroom house in a gated complex with pool, Santa MartaSanta Marta, Magdalena120 m² · 3 bed · €1,377/m² · Added todayAsking COP 590,000,000 (about €165,200) for a two-storey house of about 120 m² in a gated residential complex in Rodadero Reservado, the quiet…](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
-- [Score 86New€176,300Two-storey house with a mountain-view balcony and estate pool in Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 bed · €1,175/m² · Added todayAsking COP 650,000,000 (about €176,300).](https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
-- [Score 85New€203,500Sea-view four-bed flat on the 16th floor one block from Marbella beach, CartagenaMarbella, Bolívar132 m² · 4 bed · €1,542/m² · Added todayAsking COP 750,000,000 (about €203,500).](https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
+- [Score 86New€165,200Fully remodelled three-bedroom house in a gated complex with pool, Santa MartaSanta Marta, Magdalena120 m² · 3 bed · €1,377/m² · 1 day on RealHuntAsking COP 590,000,000 (about €165,200) for a two-storey house of about 120 m² in a gated residential complex in Rodadero Reservado, the quiet…](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
+- [Score 86New€176,300Two-storey house with a mountain-view balcony and estate pool in Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 bed · €1,175/m² · 1 day on RealHuntAsking COP 650,000,000 (about €176,300).](https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
+- [Score 85New€203,500Sea-view four-bed flat on the 16th floor one block from Marbella beach, CartagenaMarbella, Bolívar132 m² · 4 bed · €1,542/m² · 1 day on RealHuntAsking COP 750,000,000 (about €203,500).](https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
 
 ### Compare the 3 homes, cheapest first
 
@@ -92,7 +92,7 @@ Yes. A home bought by a foreigner counts as foreign investment, which needs no p
 
 By budget [Under €300,000 3](https://realhunt.co/homes/colombia/under-300000)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Mexico 3](https://realhunt.co/homes/mexico)
+By country [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from fincaraiz.com.co (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

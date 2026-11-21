@@ -1,6 +1,6 @@
 # Cheap homes in Mexico: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 15 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 15 homes is €86,100 (€1,140 per m², from the 15 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 21 November 2026, RealHunt lists 14 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 14 homes is €97,100 (€1,266 per m², from the 14 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/mexico · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 15 |
-| Median asking price | €86,100 |
-| Median price per m² | €1,140 (15 homes with a known size) |
+| Homes on RealHunt | 14 |
+| Median asking price | €97,100 |
+| Median price per m² | €1,266 (14 homes with a known size) |
 | Median size | 75 m² |
 | Cheapest and most expensive | €50,575 · €216,600 |
 | Median RealHunt score (70 to 98) | 86 |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/mexico
 
-## The 15 homes, best score first
+## The 14 homes, best score first
 
 ### 2-bed apartment in San Pedro Tlaquepaque, Jalisco
 
@@ -57,14 +57,6 @@ Full guide: https://realhunt.co/guide/mexico
 49 m², 2 bed. Asking MXN 1,000,000. The listing mentions: renovated, near the beach, parking, new build.
 
 https://realhunt.co/deal/san-pedro-tlaquepaque-50575
-
-### 2-bed house in Zapopan, Jalisco
-
-€64,230 · Zapopan, Jalisco · 125 m² · 2 bedrooms · RealHunt score 90 · added 2026-09-23
-
-125 m², 2 bed. Asking MXN 1,270,000. The listing mentions: terrace, gated, with security, parking, new build.
-
-https://realhunt.co/deal/zapopan-64230
 
 ### 3-bed apartment near the beach in Mazatlán, Sinaloa
 
@@ -118,7 +110,7 @@ https://realhunt.co/deal/mx-mazatlan-86k-809756
 
 €98,621 · Mazatlán, Sinaloa · 89 m² · 2 bedrooms · RealHunt score 86 · added 2026-09-23
 
-89 m², 2 bed, 2 bath. Asking MXN 1,950,000.
+An 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa. Asking MXN 1,950,000, about €98,600 (roughly €1,110/m²).
 
 https://realhunt.co/deal/mazatlan-98621
 
@@ -142,7 +134,7 @@ https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1
 
 €83,448 · Mazatlán, Sinaloa · 60 m² · 2 bedrooms · RealHunt score 84 · added 2026-09-23
 
-60 m², 2 bed. Asking MXN 1,650,000.
+A 60 m² two-bedroom apartment in Mazatlán, Sinaloa. Asking MXN 1,650,000, about €83,400 (roughly €1,390/m²).
 
 https://realhunt.co/deal/mazatlan-83448
 

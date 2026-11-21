@@ -1,8 +1,8 @@
 ## Apartments for sale in Cyprus
 
-Updated 20 November 2026. Newest home added 20 November 2026.
+Updated 21 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 5 apartments for sale in Cyprus today, priced from €130,000 to €470,000. The cheapest costs €130,000: [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), in Mazotos (70 m², 2 bedrooms). The median price is €195,000 (€2,635/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
+RealHunt lists 5 apartments for sale in Cyprus today, priced from €130,000 to €470,000. The cheapest costs €130,000: [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), in Mazotos (70 m², 2 bedrooms). The median price is €195,000 (€2,635/m²), against €93,200 (€1,222/m²) for the 613 homes on RealHunt in 30 countries.
 Can you buy here? Read this first
 EU citizens buy without restrictions. Non-EU buyers need permission from the Council of Ministers, applied for through the District Officer, and are normally limited to one home or a plot of up to 4,014 m².
 
@@ -33,15 +33,15 @@ Foreign buyers
 Some limits
 
 Data of
-20 Nov 2026
+21 Nov 2026
 
 ### The 5 homes, best score first
 
-- [Score 93€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 39 days on RealHuntA ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos.](https://realhunt.co/deal/cy-coral-bay-341k-080655)
-- [Score 84€470,000Sea-front ground-floor flat with a 50 m² terrace and overflow pool in ProtarasProtaras, Famagusta85 m² · 2 bed · €5,529/m² · 39 days on RealHuntA 2020 sea-front ground-floor apartment in Protaras, a stone's throw from Green Bay and Cavo Maris beach and about 5 minutes from Fig Tree Bay.](https://realhunt.co/deal/cy-protaras-470k-585375)
-- [Score 83New€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 2 days on RealHuntA resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca.](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Score 82New€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · Added todayA two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated.](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
-- [Score 78New€195,000Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, PaphosMesa Chorio, Paphos74 m² · 2 bed · €2,635/m² · 2 days on RealHuntA two-bedroom ground-floor apartment in Mesa Chorio, a village on the edge of Paphos, sold with its own separate title deed and with the furniture…](https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684)
+- [Score 93€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 40 days on RealHuntA ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos.](https://realhunt.co/deal/cy-coral-bay-341k-080655)
+- [Score 84€470,000Sea-front ground-floor flat with a 50 m² terrace and overflow pool in ProtarasProtaras, Famagusta85 m² · 2 bed · €5,529/m² · 40 days on RealHuntA 2020 sea-front ground-floor apartment in Protaras, a stone's throw from Green Bay and Cavo Maris beach and about 5 minutes from Fig Tree Bay.](https://realhunt.co/deal/cy-protaras-470k-585375)
+- [Score 83New€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 3 days on RealHuntA resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca.](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Score 82New€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · 1 day on RealHuntA two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated.](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Score 78New€195,000Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, PaphosMesa Chorio, Paphos74 m² · 2 bed · €2,635/m² · 3 days on RealHuntA two-bedroom ground-floor apartment in Mesa Chorio, a village on the edge of Paphos, sold with its own separate title deed and with the furniture…](https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684)
 
 ### Compare the 5 homes, cheapest first
 
@@ -123,7 +123,7 @@ By feature [Sea view 3](https://realhunt.co/cheap-houses/with-sea-view-in-cyprus
 
 Neighbouring countries [Greece 27](https://realhunt.co/homes/greece)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Mexico 3](https://realhunt.co/homes/mexico) [Colombia 3](https://realhunt.co/homes/colombia)
+By country [Spain 135](https://realhunt.co/homes/spain) [Italy 79](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 32](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from rightmove.co.uk (4), cy.green-acres.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

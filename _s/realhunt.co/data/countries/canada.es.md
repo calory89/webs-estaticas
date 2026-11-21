@@ -57,7 +57,7 @@ Guía completa: https://realhunt.co/es/guide/canada
 
 86.962 € · Glace Bay, Nova Scotia · 124 m² · 2 dormitorios · nota RealHunt 94 · añadida el 2026-09-23
 
-124 m² (1.334 sq ft), 2 dormitorios, 1 baño. Precio: 140.000 C$. El anuncio menciona: mejoras recientes, sistema de calefacción actualizado, vestidor, a poca distancia a pie del centro.
+124 m² (1.334 pies cuadrados), 2 dormitorios, 1 baño. Precio: 140.000 C$. El anuncio menciona: mejoras recientes, sistema de calefacción actualizado, vestidor, a poca distancia a pie del centro.
 
 https://realhunt.co/es/deal/glace-bay-86962
 
@@ -81,7 +81,7 @@ https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-1
 
 55.842 € · Bulyea, Saskatchewan · 62 m² · 2 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
 
-62 m² (672 sq ft), 2 dormitorios, 1 baño, construida en 1957. Precio: 89.900 C$. El anuncio menciona: ventanas actualizadas, cocina renovada, suelo laminado, sótano parcialmente acabado.
+62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1957. Precio: 89.900 C$. El anuncio menciona: ventanas actualizadas, cocina renovada, suelo laminado, sótano parcialmente acabado.
 
 https://realhunt.co/es/deal/bulyea-55842
 
@@ -89,7 +89,7 @@ https://realhunt.co/es/deal/bulyea-55842
 
 68.327 € · Avonlea, Saskatchewan · 77 m² · 2 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
 
-77 m² (824 sq ft), 2 dormitorios, 1 baño, construida en 1926. Precio: 110.000 C$. El anuncio menciona: cocina luminosa, armario esquinero singular, acceso al desván, excelente espacio de almacenaje.
+77 m² (824 pies cuadrados), 2 dormitorios, 1 baño, construida en 1926. Precio: 110.000 C$. El anuncio menciona: cocina luminosa, armario esquinero singular, acceso al desván, excelente espacio de almacenaje.
 
 https://realhunt.co/es/deal/avonlea-68327
 
@@ -113,7 +113,7 @@ https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k
 
 93.111 € · Astle, New Brunswick · 94 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-09-23
 
-94 m² (1.016 sq ft), 2 dormitorios, 1 baño. Precio: 149.900 C$. El anuncio menciona: cocina grande, armarios actualizados, salón de buen tamaño, ventanales grandes.
+94 m² (1.016 pies cuadrados), 2 dormitorios, 1 baño. Precio: 149.900 C$. El anuncio menciona: cocina grande, armarios actualizados, salón de buen tamaño, ventanales grandes.
 
 https://realhunt.co/es/deal/astle-93111
 
@@ -137,7 +137,7 @@ https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k
 
 99.323 € · Shearstown, Newfoundland · 79 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
-79 m² (855 sq ft), 2 dormitorios, 1 baño, construida en 1945. Precio: 159.900 C$. El anuncio menciona: gran patio trasero, lavadero propio, terraza nueva de madera tratada a presión, cocina moderna.
+79 m² (855 pies cuadrados), 2 dormitorios, 1 baño, construida en 1945. Precio: 159.900 C$. El anuncio menciona: gran patio trasero, lavadero propio, terraza nueva de madera tratada a presión, cocina moderna.
 
 https://realhunt.co/es/deal/shearstown-99323
 
@@ -145,7 +145,7 @@ https://realhunt.co/es/deal/shearstown-99323
 
 99.323 € · Minto, New Brunswick · 83 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
-83 m² (896 sq ft), 2 dormitorios, 1 baño. Precio: 159.900 C$. El anuncio menciona: garaje independiente nuevo, terrazas de madera actualizadas, bomba de calor eficiente sin conductos, jardín terminado.
+83 m² (896 pies cuadrados), 2 dormitorios, 1 baño. Precio: 159.900 C$. El anuncio menciona: garaje independiente nuevo, terrazas de madera actualizadas, bomba de calor eficiente sin conductos, jardín terminado.
 
 https://realhunt.co/es/deal/minto-99323
 
@@ -177,6 +177,6 @@ https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 
 92.552 € · Hughes Brook, Newfoundland · 62 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-09-23
 
-62 m² (672 sq ft), 2 dormitorios, 1 baño, construida en 1962. Precio: 149.000 C$. El anuncio menciona: encimera de cuarzo, muebles oscuros, electrodomésticos de acero inoxidable, isla grande.
+62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1962. Precio: 149.000 C$. El anuncio menciona: encimera de cuarzo, muebles oscuros, electrodomésticos de acero inoxidable, isla grande.
 
 https://realhunt.co/es/deal/hughes-brook-92552

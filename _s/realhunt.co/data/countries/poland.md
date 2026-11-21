@@ -179,7 +179,7 @@ https://realhunt.co/deal/pl-jarocin-73k-877413
 
 €76,084 · Polesie, Łódź · 47 m² · 3 bedrooms · RealHunt score 84 · added 2026-10-13
 
-47 m² on the 3rd floor of a revitalised townhouse near Manufaktura and Plac Hallera: three separate rooms and a living area, a fitted kitchen and a modern shower room. All wiring and plumbing replaced; designed to rent by the room or to live in. Asking 333,000 zł (about €76,084). At about €1,619/m² it is roughly 12% below the median asking price for flats in Łódź (8,011 zł/m², Morizon sample, October 2026).
+47 m² on the 3rd floor of a revitalised townhouse near Manufaktura and Plac Hallera: three separate rooms and a living area, a fitted kitchen and a modern shower room. All wiring and plumbing replaced. Asking 333,000 zł (about €76,084). At about €1,619/m² it is roughly 12% below the median asking price for flats in Łódź (8,011 zł/m², Morizon sample, October 2026).
 
 https://realhunt.co/deal/pl-lodz-76k-708515
 
@@ -259,7 +259,7 @@ https://realhunt.co/deal/pl-namyslow-80k-909104
 
 €79,740 · Suwałki, Podlaskie · 60 m² · 3 bedrooms · RealHunt score 81 · added 2026-10-13
 
-60 m² on the 1st floor of Wojska Polskiego street, after a full renovation: four separate furnished rooms, a kitchen with appliances, a new shower room and a balcony. Ready to live in or rent out. Asking 349,000 zł (about €79,740). At about €1,329/m² it is roughly 12% below the median asking price for flats in Suwałki (6,583 zł/m², Morizon sample, October 2026).
+60 m² on the 1st floor of Wojska Polskiego street, after a full renovation: four separate furnished rooms, a kitchen with appliances, a new shower room and a balcony. Ready to live in. Asking 349,000 zł (about €79,740). At about €1,329/m² it is roughly 12% below the median asking price for flats in Suwałki (6,583 zł/m², Morizon sample, October 2026).
 
 https://realhunt.co/deal/pl-suwalki-80k-028116
 

@@ -171,7 +171,7 @@ https://realhunt.co/es/deal/fr-azille-72k-4qkrv1
 
 ### Casa de piedra de 3 dormitorios en pleno centro del pueblo
 
-46.000 € · Le Lonzac, Nouvelle-Aquitaine, France · nota RealHunt 86 · añadida el 2026-09-23
+46.000 € · Le Lonzac, Nouvelle-Aquitaine, France · 3 dormitorios · nota RealHunt 86 · añadida el 2026-09-23
 
 Casa de piedra en el centro de un pueblo: Le Lonzac, Nouvelle-Aquitaine. En pleno corazón de la vida del pueblo, esta casa de piedra ofrece un equilibrio estupendo entre espacio interior y rincones exteriores para disfrutar.
 
@@ -213,7 +213,7 @@ https://realhunt.co/es/deal/fr-lodeve-top-floor-loft-terrace-285k
 
 39.000 € · Montaud, Saint-Étienne · 45 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-13
 
-45 m² en planta baja de un edificio pequeño (7 viviendas) en la rue Dufour, Carnot: salón pasante, cocina equipada nueva, dormitorio con baño propio y aseo aparte. Doble acristalamiento y gastos bajos (703 € al año); se alquilaba por 400 € al mes. Los honorarios los paga el vendedor. Precio 39.000 €, unos 867 €/m².
+45 m² en planta baja de un edificio pequeño (7 viviendas) en la rue Dufour, Carnot: salón pasante, cocina equipada nueva, dormitorio con baño propio y aseo aparte. Doble acristalamiento y gastos bajos (703 € al año). Los honorarios los paga el vendedor. Precio 39.000 €, unos 867 €/m².
 
 https://realhunt.co/es/deal/fr-saint-etienne-39k-705662
 
@@ -379,7 +379,7 @@ https://realhunt.co/es/deal/fr-saint-etienne-56k-284554
 
 ### Casita de campo de 2 dormitorios en una aldea preciosa
 
-56.000 € · Exideuil-sur-Vienne, Nouvelle-Aquitaine, France · nota RealHunt 79 · añadida el 2026-09-23
+56.000 € · Exideuil-sur-Vienne, Nouvelle-Aquitaine, France · 2 dormitorios · nota RealHunt 79 · añadida el 2026-09-23
 
 Casita de campo en una aldea adorable: Exideuil-sur-Vienne, Nouvelle-Aquitaine. Una cocina luminosa, calidez rústica y mucho espacio exterior le dan a esta casita de campo de dos dormitorios un carácter de lo más relajado.
 

@@ -197,7 +197,7 @@ https://realhunt.co/es/deal/Dbk8HHgCAHX
 
 ### Casa de cinco dormitorios recién reformada con vistas al mar
 
-56.120 € · Kashiwazaki, Niigata, Japan · 120 m² · nota RealHunt 86 · añadida el 2026-09-23
+56.120 € · Kashiwazaki, Niigata, Japan · 120 m² · 5 dormitorios · nota RealHunt 86 · añadida el 2026-09-23
 
 Vistas al mar, cinco dormitorios y una cocina instalada el mes pasado, todo por 61.000 $ (9,8 millones de ¥). La casa está en Arahama, un pequeño barrio costero de Kashiwazaki en el lado del mar de Japón, a unas dos horas y media de Tokio. Parada de autobús a tres minutos andando, estación de tren a 28.
 
@@ -213,7 +213,7 @@ https://realhunt.co/es/deal/Dc07Tz9DoUf
 
 ### Casa reformada en una isla con una de las mejores vistas al mar de Japón
 
-57.040 € · Kojima, Okayama, Japan · nota RealHunt 86 · añadida el 2026-09-23
+57.040 € · Kojima, Okayama, Japan · 2 dormitorios · nota RealHunt 86 · añadida el 2026-09-23
 
 En lo alto de una colina en la isla de Kojima, en Okayama, este refugio de 2 dormitorios preciosamente reformado se construyó en 1993 y ofrece 91㎡ de espacio luminoso rodeado de vistas infinitas al mar interior de Seto.
 
@@ -221,7 +221,7 @@ https://realhunt.co/es/deal/Db59YYrjN5h
 
 ### Villa japonesa con arroyo, terraza de madera y acceso a aguas termales
 
-38.640 € · Nasu, Tochigi, Japan · nota RealHunt 85 · añadida el 2026-09-23
+38.640 € · Nasu, Tochigi, Japan · 1 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
 La casa 1LDK tiene 58㎡ de superficie habitable sobre 265㎡ de terreno en plena propiedad, con un dormitorio, salón-comedor abierto, terraza de madera y un patio interior diáfano que hace que el interior, compacto, se sienta luminoso y acogedor.
 

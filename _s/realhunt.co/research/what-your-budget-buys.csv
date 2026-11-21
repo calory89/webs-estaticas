@@ -1,5 +1,5 @@
 ﻿country,band_from_eur,band_to_eur,homes,homes_with_size,median_size_sqm,median_eur_per_sqm,median_bedrooms,best_home_url,best_home_price_eur,best_home_score
-Italy,0,50000,33,17,50,600,1,https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544,29000,91
+Italy,0,50000,33,22,55,565,1,https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544,29000,91
 Japan,0,50000,19,10,70,284,2,https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929,11380,91
 Germany,0,50000,10,10,49,976,1,https://realhunt.co/deal/de-chemnitz-40k-931045,40000,87
 France,0,50000,6,5,116,431,3,https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775,39950,92
@@ -10,18 +10,18 @@ Denmark,0,50000,1,0,,,,https://realhunt.co/deal/Dc4LcqwjPZX,35400,91
 Portugal,0,50000,1,1,,,3,https://realhunt.co/deal/pt-mogadouro-48k-19109522,48000,84
 Spain,50001,100000,109,105,79,1067,2,https://realhunt.co/deal/es-rossell-55k-187471380,55000,94
 Denmark,50001,100000,44,43,115,787,3,https://realhunt.co/deal/dk-ranum-79k-6d9fbd,79800,98
-Sweden,50001,100000,37,21,110,680,3,https://realhunt.co/deal/se-skivarp-62k-1795989,62300,93
+Sweden,50001,100000,37,22,110,701,3,https://realhunt.co/deal/se-skivarp-62k-1795989,62300,93
 Poland,50001,100000,31,31,62,1139,3,https://realhunt.co/deal/pl-bytom-57k-186977,57120,96
 France,50001,100000,26,23,52,1200,2,https://realhunt.co/deal/fr-mulhouse-52k-754748,51800,90
-Italy,50001,100000,18,9,70,1250,2,https://realhunt.co/deal/it-san-siro-95k-057133,95000,91
+Italy,50001,100000,20,12,87,1232,2,https://realhunt.co/deal/it-san-siro-95k-057133,95000,91
 United States,50001,100000,15,15,96,832,2,https://realhunt.co/deal/chapmanville-82875,82875,95
 Japan,50001,100000,14,7,92,758,3,https://realhunt.co/deal/Da7vZIFDIuo,54280,86
-Mexico,50001,100000,10,10,68,1140,2,https://realhunt.co/deal/san-pedro-tlaquepaque-50575,50575,93
 Germany,50001,100000,10,10,57,1078,1,https://realhunt.co/deal/de-chemnitz-55k-462680,55000,84
 Canada,50001,100000,9,9,83,930,2,https://realhunt.co/deal/glace-bay-86962,86962,94
+Mexico,50001,100000,9,9,65,1140,2,https://realhunt.co/deal/san-pedro-tlaquepaque-50575,50575,93
 Switzerland,50001,100000,8,8,34,2372,1,https://realhunt.co/deal/ch-salgesch-49k-76547,52800,85
-Bulgaria,50001,100000,7,7,87,740,2,https://realhunt.co/deal/bg-kavarna-66k-89698,66000,94
 Greece,50001,100000,7,6,68,1250,2,https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330,68000,90
+Bulgaria,50001,100000,7,7,87,740,2,https://realhunt.co/deal/bg-kavarna-66k-89698,66000,94
 Portugal,50001,100000,5,5,75,913,2,https://realhunt.co/deal/pt-mertola-68k-313027,68500,91
 United Kingdom,50001,100000,2,1,,,2,https://realhunt.co/deal/uk-shildon-82k-780165,82600,89
 Spain,100001,200000,65,65,115,1446,3,https://realhunt.co/deal/es-canedo-valdunciel-155k-154146,155000,91
@@ -36,8 +36,10 @@ Mexico,100001,200000,4,4,146,1704,3,https://realhunt.co/deal/mx-tuxcueca-el-tepe
 Uruguay,100001,200000,4,4,113,1649,3,https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k,180300,85
 Japan,100001,200000,3,3,98,1067,3,https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k,142500,81
 Cyprus,100001,200000,3,3,74,2527,2,https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874,130000,83
+Czech Republic,100001,200000,3,3,109,1464,1,https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k,130900,85
 Dominican Republic,100001,200000,2,2,,,2,https://realhunt.co/deal/dr-juan-dolio-188k-425359,187800,89
 Colombia,100001,200000,2,2,,,3,https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m,165200,86
 Denmark,100001,200000,1,1,,,3,https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk,160000,82
 Ireland,100001,200000,1,1,,,1,https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k,170000,83
 Germany,100001,200000,1,1,,,2,https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k,199000,77
+Slovenia,100001,200000,1,1,,,1,https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k,105000,82

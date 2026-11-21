@@ -8,14 +8,14 @@ Cifras actualizadas el 21 de noviembre de 2026 · Contacto de prensa: carlos@equ
 
 ### RealHunt en cifras
 
-- 713casas en venta en la web
-- 22países con al menos 3 casas
-- 93.000 €precio de salida mediano
+- 717casas en venta en la web
+- 24países con al menos 3 casas
+- 93.200 €precio de salida mediano
 - 7.400 €la casa más barata hoy
 - 61%de las casas cuesta 100.000 € o menos
 - 70–98rango de notas hoy (escala de 70 a 98)
-- 214casas añadidas en los últimos 30 días
-- 66portales y agencias de los que salen las casas
+- 221casas añadidas en los últimos 30 días
+- 67portales y agencias de los que salen las casas
 - 280respuestas a «¿puedo comprar allí?» (14 nacionalidades, 20 países)
 
 Calculadas con las casas de la web cada vez que se actualiza. Precios de salida en euros.
@@ -29,12 +29,12 @@ Calculadas con las casas de la web cada vez que se actualiza. Precios de salida 
 - [Las regiones con mejor nota para comprar una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions). Nota mediana más alta: Jutlandia Occidental, Dinamarca (91).
 - [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 79 casas de 50.000 € o menos; la mayoría en Italia (33).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
-- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 706 casas está marcado como medio o alto; 13, como alto.
-- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.460 €/m² a menos de 30 km de un aeropuerto, 1.080 €/m² entre 30 y 60 km.
+- [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 8 % de 705 casas está marcado como medio o alto; 13, como alto.
+- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.456 €/m² a menos de 30 km de un aeropuerto, 1.091 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
-- [Las casas más baratas por metro cuadrado de Europa (2026)](https://realhunt.co/es/research/cheapest-per-sqm-europe). La más baja de Europa: 98 €/m² en Markaryd, Kronoberg, Småland, Suecia; mediana más baja: Suecia, 680 €/m².
+- [Las casas más baratas por metro cuadrado de Europa (2026)](https://realhunt.co/es/research/cheapest-per-sqm-europe). La más baja de Europa: 98 €/m² en Markaryd, Kronoberg, Småland, Suecia; mediana más baja: Suecia, 701 €/m².
 - [Casas junto al mar por menos de 100.000 €: dónde están, país por país (2026)](https://realhunt.co/es/research/sea-homes-under-100000). 94 casas junto al mar de 100.000 € o menos; la mayoría en España (25).
-- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 208 casas añadidas en noviembre de 2026; la mayoría en Estados Unidos (38).
+- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 215 casas añadidas en noviembre de 2026; la mayoría en Estados Unidos (38).
 
 Cada página tiene su gráfico, tabla, CSV, método y una cita lista para copiar. ¿Necesitas otro corte (un país, un tramo de precio, un mes)? Pídelo en carlos@equinoxinvestmentgroup.com.
 

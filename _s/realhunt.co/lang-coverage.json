@@ -1,29 +1,29 @@
 {
- "total": 2788,
+ "total": 2797,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 619,
+   "pages": 622,
    "by_kind": {
-    "country": 22,
+    "country": 23,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 13,
-    "band": 56,
-    "feature": 205,
+    "band": 57,
+    "feature": 208,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 28,
     "area": 22,
-    "near": 11,
-    "regionBand": 64,
+    "near": 12,
+    "regionBand": 61,
     "region": 59,
     "town": 7
    },
    "by_country": {
-    "spain": 102,
-    "italy": 94,
+    "spain": 100,
+    "italy": 95,
     "united-states": 47,
     "denmark": 34,
     "france": 38,
@@ -41,10 +41,11 @@
     "dominican-republic": 6,
     "united-kingdom": 7,
     "ireland": 5,
-    "uruguay": 3,
+    "uruguay": 4,
     "colombia": 2,
-    "mexico": 2,
-    "all countries": 59
+    "czech-republic": 2,
+    "slovenia": 2,
+    "all countries": 60
    },
    "homes": 613,
    "homes_with_title": 613,
@@ -53,28 +54,28 @@
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 312,
+   "pages": 311,
    "by_kind": {
-    "country": 22,
+    "country": 23,
     "gband": 5,
     "ccyBand": 13,
-    "band": 56,
+    "band": 57,
     "setting": 24,
     "ptype": 11,
     "beds": 28,
     "area": 22,
-    "regionBand": 64,
+    "regionBand": 61,
     "region": 59,
     "town": 7
    },
    "by_country": {
-    "spain": 68,
+    "spain": 66,
     "italy": 53,
     "united-states": 26,
     "denmark": 17,
     "france": 15,
     "sweden": 19,
-    "japan": 22,
+    "japan": 21,
     "poland": 6,
     "greece": 15,
     "germany": 9,
@@ -89,7 +90,8 @@
     "ireland": 3,
     "uruguay": 2,
     "colombia": 2,
-    "mexico": 2,
+    "czech-republic": 2,
+    "slovenia": 2,
     "all countries": 8
    },
    "homes": 613,
@@ -99,27 +101,27 @@
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 619,
+   "pages": 622,
    "by_kind": {
-    "country": 22,
+    "country": 23,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 13,
-    "band": 56,
-    "feature": 205,
+    "band": 57,
+    "feature": 208,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 28,
     "area": 22,
-    "near": 11,
-    "regionBand": 64,
+    "near": 12,
+    "regionBand": 61,
     "region": 59,
     "town": 7
    },
    "by_country": {
-    "spain": 102,
-    "italy": 94,
+    "spain": 100,
+    "italy": 95,
     "united-states": 47,
     "denmark": 34,
     "france": 38,
@@ -137,10 +139,11 @@
     "dominican-republic": 6,
     "united-kingdom": 7,
     "ireland": 5,
-    "uruguay": 3,
+    "uruguay": 4,
     "colombia": 2,
-    "mexico": 2,
-    "all countries": 59
+    "czech-republic": 2,
+    "slovenia": 2,
+    "all countries": 60
    },
    "homes": 613,
    "homes_with_title": 613,
@@ -149,28 +152,28 @@
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 619,
+   "pages": 621,
    "by_kind": {
-    "country": 22,
+    "country": 23,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 13,
-    "band": 56,
-    "feature": 205,
+    "band": 57,
+    "feature": 208,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 28,
     "area": 22,
-    "near": 11,
-    "regionBand": 64,
+    "near": 12,
+    "regionBand": 60,
     "region": 59,
     "town": 7
    },
    "by_country": {
-    "spain": 102,
-    "italy": 94,
-    "united-states": 47,
+    "spain": 100,
+    "italy": 95,
+    "united-states": 46,
     "denmark": 34,
     "france": 38,
     "sweden": 38,
@@ -187,40 +190,46 @@
     "dominican-republic": 6,
     "united-kingdom": 7,
     "ireland": 5,
-    "uruguay": 3,
+    "uruguay": 4,
     "colombia": 2,
-    "mexico": 2,
-    "all countries": 59
+    "czech-republic": 2,
+    "slovenia": 2,
+    "all countries": 60
    },
    "homes": 613,
    "homes_with_title": 613,
-   "not_published": 0,
-   "not_published_sample": [],
+   "not_published": 1,
+   "not_published_sample": [
+    {
+     "path": "/homes/united-states/pennsylvania/under-100000",
+     "why": "over the page budget of the language (620)"
+    }
+   ],
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 619,
+   "pages": 621,
    "by_kind": {
-    "country": 22,
+    "country": 23,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 13,
-    "band": 56,
-    "feature": 205,
+    "band": 57,
+    "feature": 208,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 28,
     "area": 22,
-    "near": 11,
-    "regionBand": 64,
+    "near": 12,
+    "regionBand": 60,
     "region": 59,
     "town": 7
    },
    "by_country": {
-    "spain": 102,
-    "italy": 94,
-    "united-states": 47,
+    "spain": 100,
+    "italy": 95,
+    "united-states": 46,
     "denmark": 34,
     "france": 38,
     "sweden": 38,
@@ -237,22 +246,28 @@
     "dominican-republic": 6,
     "united-kingdom": 7,
     "ireland": 5,
-    "uruguay": 3,
+    "uruguay": 4,
     "colombia": 2,
-    "mexico": 2,
-    "all countries": 59
+    "czech-republic": 2,
+    "slovenia": 2,
+    "all countries": 60
    },
    "homes": 613,
    "homes_with_title": 613,
-   "not_published": 0,
-   "not_published_sample": [],
+   "not_published": 1,
+   "not_published_sample": [
+    {
+     "path": "/homes/united-states/pennsylvania/under-100000",
+     "why": "over the page budget of the language (620)"
+    }
+   ],
    "sitemap": "sitemap-pl.xml"
   }
  },
  "hreflang": {
-  "english_pages_linked": 619,
-  "spanish_pages_linked": 619
+  "english_pages_linked": 622,
+  "spanish_pages_linked": 622
  },
- "home_pages_linked": 1204,
+ "home_pages_linked": 1208,
  "failures": []
 }

@@ -179,7 +179,7 @@ https://realhunt.co/es/deal/pl-jarocin-73k-877413
 
 76.084 € · Polesie, Łódź · 47 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-10-13
 
-47 m² en la 3ª planta de un edificio rehabilitado junto a Manufaktura y la plaza Hallera: tres habitaciones independientes y zona de estar, cocina equipada y baño moderno con ducha. Electricidad y fontanería nuevas; pensado para alquilar por habitaciones o para vivir. Precio 333.000 zł (unos 76.084 €). A unos 1.619 €/m² está aproximadamente un 12% por debajo de la mediana de pisos en venta en Łódź (8.011 zł/m², muestra de Morizon, octubre de 2026).
+47 m² en la 3ª planta de un edificio rehabilitado junto a Manufaktura y la plaza Hallera: tres habitaciones independientes y zona de estar, cocina equipada y baño moderno con ducha. Electricidad y fontanería nuevas. Precio 333.000 zł (unos 76.084 €). A unos 1.619 €/m² está aproximadamente un 12% por debajo de la mediana de pisos en venta en Łódź (8.011 zł/m², muestra de Morizon, octubre de 2026).
 
 https://realhunt.co/es/deal/pl-lodz-76k-708515
 
@@ -259,7 +259,7 @@ https://realhunt.co/es/deal/pl-namyslow-80k-909104
 
 79.740 € · Suwałki, Podlaskie · 60 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-10-13
 
-60 m² en la 1ª planta de la calle Wojska Polskiego, tras una reforma completa: cuatro habitaciones independientes amuebladas, cocina con electrodomésticos, baño nuevo con ducha y balcón. Listo para vivir o alquilar. Precio 349.000 zł (unos 79.740 €). A unos 1.329 €/m² está aproximadamente un 12% por debajo de la mediana de pisos en venta en Suwałki (6.583 zł/m², muestra de Morizon, octubre de 2026).
+60 m² en la 1ª planta de la calle Wojska Polskiego, tras una reforma completa: cuatro habitaciones independientes amuebladas, cocina con electrodomésticos, baño nuevo con ducha y balcón. Listo para vivir. Precio 349.000 zł (unos 79.740 €). A unos 1.329 €/m² está aproximadamente un 12% por debajo de la mediana de pisos en venta en Suwałki (6.583 zł/m², muestra de Morizon, octubre de 2026).
 
 https://realhunt.co/es/deal/pl-suwalki-80k-028116
 

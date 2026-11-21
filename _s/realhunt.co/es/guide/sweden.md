@@ -30,7 +30,7 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 ### Mejores casas en Suecia
 
 - [62.300 € · Adosado de ladrillo de tres dormitorios con jardín cerca de la costa sur en Skivarp](https://realhunt.co/es/deal/se-skivarp-62k-1795989) · Skivarp, Skurup, Skåne (a unos 60 min de Copenhague) · nota 93 · 102 m² · 3 dorm.
-- [25.960 € · Villa acogedora con sauna, a 100 m del río](https://realhunt.co/es/deal/DdPBLT2CLlb) · norte de Suecia · nota 93
+- [25.960 € · Villa acogedora con sauna, a 100 m del río](https://realhunt.co/es/deal/DdPBLT2CLlb) · Norriån, Boden, Norrbotten · nota 93
 - [78.000 € · Casa de 1945 muy reformada en 2.800 m² de jardín y bosque](https://realhunt.co/es/deal/Dce2FjbIxt8) · Markaryd, Kronoberg, Småland, Suecia · nota 93 · 800 m² · 2 dorm.
 - [54.000 € · Casita en 6.148 m² de jardín y bosque cerca de dos lagos](https://realhunt.co/es/deal/DcNI1r5oM57) · Eringsboda, Blekinge, Suecia · nota 93 · 148 m² · 3 dorm.
 - [59.000 € · Casa con dos viviendas, pozas en el río para bañarse y calefacción geotérmica](https://realhunt.co/es/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Suecia · nota 92 · 156 m² · 4 dorm.

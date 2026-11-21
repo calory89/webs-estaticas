@@ -4,7 +4,7 @@ Metodología
 
 La nota RealHunt es una calificación de 70 a 98 que lleva cada casa de RealHunt. Primero una persona decide si la casa se publica; después la nota promedia hasta 11 notas parciales de 0 a 100, todas con el mismo peso, y compara la casa con todas las demás de la web.
 
-Versión 2026-11-14 · cifras de 713 casas a 21 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
+Versión 2026-11-14 · cifras de 717 casas a 21 de noviembre de 2026 · [Versión en Markdown](https://realhunt.co/es/method.md)
 
 ### Paso 1. Una persona revisa la casa
 
@@ -14,20 +14,20 @@ Que sea antigua no importa; que esté abandonada, sí. RealHunt descarta unos tr
 
 ### Paso 2. Las 11 notas parciales, de 0 a 100
 
-Nota parcial | Qué mide | Casas que la tienen (de 713)
-Precio | Lo barata que es frente a las demás casas de la web y de su país | 665
-Precio por m² | Lo poco que pagas por metro cuadrado | 592
-Espacio | Tamaño de la casa | 598
-Para entrar a vivir | Reformada o lista para vivir puntúa más; si necesita obra, menos | 665
-Extras | Jardín, terraza, piscina, sauna, chimenea, vistas, terreno y más | 665
-Mar y lagos | Lo cerca que está del mar o de un lago | 406
-Buen tiempo | Días de buen tiempo al año donde está la casa: máxima de 18 a 33 °C, seco y con poco viento (normales climáticas) | 318
-Aeropuerto | Aeropuerto con vuelos regulares más cercano: a 20 km o menos puntúa 100 y baja de forma pareja hasta 0 a 200 km o más | 652
-Gastos de compra | Impuestos y gastos de compra en este país: cuanto más bajos, más nota | 621
-Detalle del anuncio | Fotos, tamaño y habitaciones publicados, verificado por nosotros | 665
-Interés de compradores | Visitas y guardados de compradores de RealHunt | 713
+Nota parcial | Qué mide | Casas que la tienen (de 717)
+Precio | Lo barata que es frente a las demás casas de la web y de su país | 669
+Precio por m² | Lo poco que pagas por metro cuadrado | 597
+Espacio | Tamaño de la casa | 603
+Para entrar a vivir | Reformada o lista para vivir puntúa más; si necesita obra, menos | 669
+Extras | Jardín, terraza, piscina, sauna, chimenea, vistas, terreno y más | 669
+Mar y lagos | Lo cerca que está del mar o de un lago | 405
+Buen tiempo | Días de buen tiempo al año donde está la casa: máxima de 18 a 33 °C, seco y con poco viento (normales climáticas) | 317
+Aeropuerto | Aeropuerto con vuelos regulares más cercano: a 20 km o menos puntúa 100 y baja de forma pareja hasta 0 a 200 km o más | 658
+Gastos de compra | Impuestos y gastos de compra en este país: cuanto más bajos, más nota | 622
+Detalle del anuncio | Fotos, tamaño y habitaciones publicados, verificado por nosotros | 669
+Interés de compradores | Visitas y guardados de compradores de RealHunt | 717
 
-Una nota parcial se deja fuera, no se inventa, cuando al anuncio le falta el dato necesario: una casa sin superficie publicada no tiene nota de precio por m² ni de espacio, y una casa sin mar ni lago registrados cerca no tiene nota de agua. Hoy 215 de 713 casas tienen las 11.
+Una nota parcial se deja fuera, no se inventa, cuando al anuncio le falta el dato necesario: una casa sin superficie publicada no tiene nota de precio por m² ni de espacio, y una casa sin mar ni lago registrados cerca no tiene nota de agua. Hoy 214 de 717 casas tienen las 11.
 
 ### Paso 3. De las notas parciales a la nota
 
@@ -38,9 +38,9 @@ Las páginas de casas, las de países y la portada se ordenan por esta nota, de 
 ### Cómo leer una nota
 
 Nota | Qué significa | Casas hoy
-90–98 | Lo mejor de la web. Suele ser barata para su tamaño, lista para vivir y bien situada. | 145
-80–89 | Muy buena. Fuerte en casi todas las notas parciales, con uno o dos puntos débiles que se ven en la página de la casa. | 485
-70–79 | Buena. Pasó la revisión, pero las notas parciales muestran a qué renuncias. | 83
+90–98 | Lo mejor de la web. Suele ser barata para su tamaño, lista para vivir y bien situada. | 144
+80–89 | Muy buena. Fuerte en casi todas las notas parciales, con uno o dos puntos débiles que se ven en la página de la casa. | 488
+70–79 | Buena. Pasó la revisión, pero las notas parciales muestran a qué renuncias. | 85
 
 ### Qué no es la nota: límites
 

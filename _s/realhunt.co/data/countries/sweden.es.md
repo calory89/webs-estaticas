@@ -1,6 +1,6 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 39 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 39 casas es de 72.000 € (680 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 39 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 39 casas es de 72.000 € (701 € por m², calculado con las 22 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 99.000 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
@@ -11,7 +11,7 @@ También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https:/
 | --- | --- |
 | Casas en RealHunt | 39 |
 | Precio de salida mediano | 72.000 € |
-| Precio mediano por m² | 680 € (21 casas de superficie conocida) |
+| Precio mediano por m² | 701 € (22 casas de superficie conocida) |
 | Superficie mediana | 110 m² |
 | La más barata y la más cara | 22.000 € · 99.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
@@ -51,7 +51,7 @@ Guía completa: https://realhunt.co/es/guide/sweden
 
 ### Villa acogedora con sauna, a 100 m del río
 
-25.960 € · Northern Sweden · nota RealHunt 93 · añadida el 2026-09-23
+25.960 € · Norriån, Boden, Norrbotten · nota RealHunt 93 · añadida el 2026-09-23
 
 Villa acogedora con sauna, una gran caseta de jardín y garaje, en una zona tranquila a 100 m del río y a 800 m del lago.
 
@@ -179,7 +179,7 @@ https://realhunt.co/es/deal/se-landskrona-98k-1673127
 
 ### Clásica casa roja de 1914 con cuatro dormitorios en tres plantas
 
-56.120 € · Ställdalen, Ljusnarsberg · nota RealHunt 85 · añadida el 2026-09-23
+56.120 € · Ställdalen, Ljusnarsberg · 4 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
 
 Esta casa roja con encanto, de 1914, tiene cuatro dormitorios, interiores luminosos y mucho espacio para la vida familiar repartido en tres plantas. Un jardín generoso da sitio para cultivar, jugar y pasar largos días de verano al aire libre, y las mejoras modernas la hacen cómoda todo el año.
 
@@ -285,7 +285,7 @@ https://realhunt.co/es/deal/Dbt-d51AaH3
 
 71.000 € · Vivljunga, Kronoberg, Sweden · 2 dormitorios · nota RealHunt 80 · añadida el 2026-09-23
 
-
+Cabaña de verano en el bosque en Vivljunga (Kronoberg, Suecia), con casa de invitados aparte, dos dormitorios y lagos para bañarse cerca. Precio: unos 71.000 €.
 
 https://realhunt.co/es/deal/DdSVb-ainBZ
 
@@ -307,7 +307,7 @@ https://realhunt.co/es/deal/Da4VmKMoP1y
 
 ### Casa de 1929 con 5 dormitorios a un paseo del lago Lelång
 
-90.000 € · Gunnarbyn, Värmland, Sweden · nota RealHunt 80 · añadida el 2026-09-23
+90.000 € · Gunnarbyn, Värmland, Sweden · 5 dormitorios · nota RealHunt 80 · añadida el 2026-09-23
 
 Si buscas espacio, aquí te sobra. Construida en 1929, la casa tiene cinco dormitorios y está en una parcela privada de 4.631 m² rodeada de naturaleza, con el lago Lelång a un corto paseo para nadar y pescar.
 
@@ -331,7 +331,7 @@ https://realhunt.co/es/deal/Db7aSFMoNPo
 
 ### Antigua casa de guardavías con vistas a la montaña
 
-73.000 € · Vallsta, Gävleborg, Sweden · nota RealHunt 77 · añadida el 2026-09-23
+73.000 € · Vallsta, Gävleborg, Sweden · 50 m² · nota RealHunt 77 · añadida el 2026-09-23
 
 Esta viene con un pedacito de historia ferroviaria sueca. Usada originalmente como vivienda del guardavías, la casita de 50 m² está entre campos abiertos con vistas al bosque y las montañas, rodeada de un frondoso jardín de 1.385 m².
 

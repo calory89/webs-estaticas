@@ -1,8 +1,8 @@
 # Median asking price of a cheap home, by country (2026)
 
-Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€463/m²), Sweden (€680/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€49,680) and Germany (€55,000).
+Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€463/m²), Sweden (€701/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€49,680) and Germany (€55,000).
 
-Medians of 713 listings in 22 countries, each checked by a person, on 21 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+Medians of 717 listings in 24 countries, each checked by a person, on 21 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
 
 Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.csv
 
@@ -11,18 +11,20 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/prices 
 | Country | Homes | Median price | Median €/m² | Homes with size | Median size | Cheapest | Most expensive | Regions | Median score |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Japan | 36 | €49,680 | €463 | 20 | 91 m² | €7,400 | €142,500 | 19 | 86 |
-| Sweden | 39 | €72,000 | €680 | 21 | 110 m² | €22,000 | €99,000 | 22 | 85 |
+| Sweden | 39 | €72,000 | €701 | 22 | 110 m² | €22,000 | €99,000 | 22 | 85 |
 | Bulgaria (small sample) | 7 | €66,000 | €740 | 7 | 87 m² | €58,900 | €89,000 | 4 | 93 |
 | Denmark | 46 | €93,200 | €790 | 44 | 115 m² | €35,400 | €160,000 | 21 | 88 |
 | Canada | 16 | €99,500 | €963 | 16 | 124 m² | €55,842 | €190,700 | 5 | 86 |
+| Italy | 83 | €80,000 | €1,000 | 64 | 81 m² | €12,000 | €197,000 | 23 | 82 |
 | Germany | 21 | €55,000 | €1,053 | 21 | 51 m² | €40,000 | €199,000 | 8 | 80 |
 | Poland | 31 | €75,170 | €1,139 | 31 | 62 m² | €53,693 | €90,600 | 18 | 84 |
-| Mexico | 15 | €86,100 | €1,140 | 15 | 75 m² | €50,575 | €216,600 | 5 | 86 |
-| Italy | 81 | €80,000 | €1,167 | 56 | 80 m² | €12,000 | €197,000 | 21 | 82 |
 | France | 52 | €69,900 | €1,175 | 48 | 83 m² | €39,000 | €285,000 | 33 | 83 |
 | Spain | 191 | €97,000 | €1,217 | 187 | 85 m² | €38,000 | €348,000 | 48 | 85 |
+| Mexico | 14 | €97,100 | €1,266 | 14 | 75 m² | €50,575 | €216,600 | 5 | 86 |
+| Slovenia (small sample) | 3 | €229,000 | €1,346 | 3 | 112 m² | €105,000 | €245,000 | 3 | 83 |
 | Portugal | 21 | €130,000 | €1,364 | 21 | 96 m² | €48,000 | €189,000 | 13 | 85 |
 | Colombia (small sample) | 3 | €176,300 | €1,377 | 3 | 132 m² | €165,200 | €203,500 | 3 | 86 |
+| Czech Republic (small sample) | 3 | €159,600 | €1,464 | 3 | 109 m² | €130,900 | €179,700 | 3 | 84 |
 | Greece | 27 | €155,000 | €1,477 | 26 | 85 m² | €68,000 | €199,000 | 15 | 86 |
 | United States | 62 | €214,900 | €1,570 | 62 | 121 m² | €65,428 | €447,600 | 20 | 86 |
 | Uruguay (small sample) | 4 | €180,300 | €1,649 | 4 | 113 m² | €150,300 | €186,300 | 3 | 85 |
@@ -35,7 +37,7 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/prices 
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 713 chosen listings (61% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 717 chosen listings (61% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).
 - Countries with fewer than 10 homes are shown and marked as a small sample; with fewer than 3 they are left out.

@@ -1,6 +1,6 @@
 # Dónde están las casas de menos de 50.000 €: países y regiones (2026)
 
-79 de las 713 casas de RealHunt cuestan 50.000 € o menos, y 28 cuestan 30.000 € o menos. La mayoría están en Italia (33), Japón (19) y Alemania (10). La región con más es Chemnitz, Alemania, con 8.
+79 de las 717 casas de RealHunt cuestan 50.000 € o menos, y 28 cuestan 30.000 € o menos. La mayoría están en Italia (33), Japón (19) y Alemania (10). La región con más es Chemnitz, Alemania, con 8.
 
 Casas revisadas por una persona y listas para entrar a vivir, a su precio de salida a 21 de noviembre de 2026. No aparecen los países ni las regiones con menos de 3 casas así.
 
@@ -10,7 +10,7 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | País | Casas de 50.000 € o menos | Parte de las casas del país | De 30.000 € o menos | La más barata | Superficie mediana |
 | --- | --- | --- | --- | --- | --- |
-| Italia | 33 | 41% | 13 | 12.000 € | 50 m² |
+| Italia | 33 | 40% | 13 | 12.000 € | 55 m² |
 | Japón | 19 | 53% | 13 | 7.400 € | 70 m² |
 | Alemania | 10 | 48% | 0 | 40.000 € | 49 m² |
 | Francia | 6 | 12% | 0 | 39.000 € | 116 m² |
@@ -22,14 +22,14 @@ Actualizado el 21 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Calabria | Italia | 6 | 30.000 € | 700 € |
 | Wakayama | Japón | 5 | 27.300 € | s. d. |
 | Lazio | Italia | 4 | 16.000 € | 400 € |
-| Sicily | Italia | 4 | 45.000 € | s. d. |
+| Sicily | Italia | 4 | 45.000 € | 600 € |
 | Gifu | Japón | 3 | 11.380 € | 215 € |
-| Tuscany | Italia | 3 | 24.000 € | s. d. |
+| Tuscany | Italia | 3 | 24.000 € | 316 € |
 | Umbria | Italia | 3 | 43.500 € | s. d. |
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 713 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 717 anuncios escogidos (el 61% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Una región es la última parte de la ubicación de cada casa antes del país (una provincia, un estado, un condado o una ciudad).
 - El recuento describe lo que RealHunt publica hoy. Un país que no aparece puede tener casas así que aún no se han añadido.

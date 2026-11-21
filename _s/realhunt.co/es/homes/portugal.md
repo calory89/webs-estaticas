@@ -1,8 +1,8 @@
 ## Casas en venta en Portugal
 
-Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Actualizado el 21 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 6 casas en venta en Portugal, con precios de 76.500 € a 189.000 €. La más barata cuesta 76.500 €: [Casa de pueblo de 2 dormitorios con terraza en la región vinícola del Dão](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q), en Carregal do Sal (134 m², 2 dormitorios). El precio mediano es de 140.000 € (2.000 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
+RealHunt tiene hoy 6 casas en venta en Portugal, con precios de 76.500 € a 189.000 €. La más barata cuesta 76.500 €: [Casa de pueblo de 2 dormitorios con terraza en la región vinícola del Dão](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q), en Carregal do Sal (134 m², 2 dormitorios). El precio mediano es de 140.000 € (2.000 €/m²), frente a 93.200 € (1.222 €/m²) de las 613 viviendas de RealHunt en 30 países.
 
 Viviendas
 6
@@ -29,16 +29,16 @@ Compradores extranjeros
 Compra libre
 
 Datos del
-20 nov 2026
+21 nov 2026
 
 ### Las 6 viviendas, de mejor a peor nota
 
-- [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 46 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
-- [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · Añadida hoyUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
-- [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 2 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
-- [Nota 79Nueva140.000 €Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 dorm. · 2.000 €/m² · Añadida hoyUna casa luminosa de 70 m2 en la tranquila zona de Ponte Velha bajo Marvão, con vistas al río y la montaña, en una parcela completamente vallada…](https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
-- [Nota 78Nueva179.000 €Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, AzoresSilveira, Azores84 m² · 1 dorm. · 2.131 €/m² · Añadida hoyUna casa de piedra completamente renovada en Silveira, 3 km del antiguo pueblo ballenero de Lajes en la isla de Pico, vendida amueblada y equipada.](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
-- [Nota 77Nueva95.000 €Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 dorm. · 2.065 €/m² · 2 días en RealHuntUna cabaña del Alentejo de una sola planta con ribete azul y puerta roja en una calle empedrada en Alcaria Ruiva.](https://realhunt.co/es/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
+- [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 47 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · 1 día en RealHuntUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
+- [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 3 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+- [Nota 79Nueva140.000 €Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 dorm. · 2.000 €/m² · 1 día en RealHuntUna casa luminosa de 70 m2 en la tranquila zona de Ponte Velha bajo Marvão, con vistas al río y la montaña, en una parcela completamente vallada…](https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
+- [Nota 78Nueva179.000 €Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, AzoresSilveira, Azores84 m² · 1 dorm. · 2.131 €/m² · 1 día en RealHuntUna casa de piedra completamente renovada en Silveira, 3 km del antiguo pueblo ballenero de Lajes en la isla de Pico, vendida amueblada y equipada.](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
+- [Nota 77Nueva95.000 €Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 dorm. · 2.065 €/m² · 3 días en RealHuntUna cabaña del Alentejo de una sola planta con ribete azul y puerta roja en una calle empedrada en Alcaria Ruiva.](https://realhunt.co/es/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
 
 ### Compara las 6 viviendas, de más barata a más cara
 
@@ -114,9 +114,9 @@ Por presupuesto [Menos de 150.000 € 4](https://realhunt.co/es/homes/portugal/u
 
 Por característica [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-portugal) [Nuevas este mes 5](https://realhunt.co/es/cheap-houses/new-this-month-in-portugal) [Más de 80 m² 3](https://realhunt.co/es/cheap-houses/over-80-sqm-in-portugal)
 
-Países vecinos [España 137](https://realhunt.co/es/homes/spain)
+Países vecinos [España 135](https://realhunt.co/es/homes/spain)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
+Por país [España 135](https://realhunt.co/es/homes/spain) [Italia 79](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Eslovenia 3](https://realhunt.co/es/homes/slovenia) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Estos anuncios proceden de green-acres.pt (6). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

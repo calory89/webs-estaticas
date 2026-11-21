@@ -103,7 +103,7 @@ https://realhunt.co/es/deal/ch-raron-70k-61979
 
 59.300 € · Brig, Valais · 25 m² · 1 dormitorios · nota RealHunt 78 · añadida el 2026-10-04
 
-Una tiny house recién construida: unos 25 m² con salón abierto, cocina a medida con inducción y horno, baño con ducha y váter de cisterna, dos altillos para dormir y techos de hasta 3,26 m. Suelo radiante por infrarrojos y estufa de leña, fachada de abeto y tejado aislado. Va sobre un remolque ligero (7,3 × 2,55 m), así que la colocas en un camping o en un terreno donde la normativa lo permita. Se puede ver cerca de Brig. Precio de venta: 55.000 CHF, unos 59.300 €. Comprar en Suiza siendo extranjero no residente está limitado por la ley Lex Koller; pregunta a la agencia si puedes comprar antes de seguir.
+Una minicasa recién construida: unos 25 m² con salón abierto, cocina a medida con inducción y horno, baño con ducha y váter de cisterna, dos altillos para dormir y techos de hasta 3,26 m. Suelo radiante por infrarrojos y estufa de leña, fachada de abeto y tejado aislado. Va sobre un remolque ligero (7,3 × 2,55 m), así que la colocas en un camping o en un terreno donde la normativa lo permita. Se puede ver cerca de Brig. Precio de venta: 55.000 CHF, unos 59.300 €. Comprar en Suiza siendo extranjero no residente está limitado por la ley Lex Koller; pregunta a la agencia si puedes comprar antes de seguir.
 
 https://realhunt.co/es/deal/ch-brig-55k-63831
 

@@ -74,7 +74,7 @@ https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144
 
 70.000 € · Kavarna (Black Sea) · 99 m² · 2 dormitorios · nota RealHunt 93 · añadida el 2026-10-14
 
-Piso de 99 m² en la quinta de seis plantas, a unos 300 m de la playa: pasillo, salón amplio con cocina, dos baños completos, dos dormitorios, trastero y dos terrazas, una con vistas al mar. Se vende con todos los muebles y electrodomésticos (aire acondicionado, horno, placa, lavadora, nevera), listo para alquilar o entrar a vivir. El complejo tiene dos piscinas exteriores, aparcamiento y zona infantil; cuota de mantenimiento 750 € al año. Precio 70.000 €, unos 707 €/m².
+Piso de 99 m² en la quinta de seis plantas, a unos 300 m de la playa: pasillo, salón amplio con cocina, dos baños completos, dos dormitorios, trastero y dos terrazas, una con vistas al mar. Se vende con todos los muebles y electrodomésticos (aire acondicionado, horno, placa, lavadora, nevera), listo para entrar a vivir. El complejo tiene dos piscinas exteriores, aparcamiento y zona infantil; cuota de mantenimiento 750 € al año. Precio 70.000 €, unos 707 €/m².
 
 https://realhunt.co/es/deal/bg-kavarna-70k-1672825
 

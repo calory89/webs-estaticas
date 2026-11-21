@@ -13,7 +13,7 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/sea-hom
 | Spain | 25 | €49,000 | €95,000 | 67 m² | Murcia (8), Alicante (5), Almería (4), Alpujarra (Granada) (1) |
 | Denmark | 16 | €35,400 | €93,200 | 115 m² | Falster (3), North Jutland (3), near Skælskør (2), Thy (2) |
 | Japan | 15 | €19,320 | €54,280 | 91 m² | Wakayama (4), Hyogo (2), Kanagawa (2), Kyoto (2) |
-| Italy | 8 | €28,000 | €39,000 | 40 m² | Calabria (4), Sicily (3), Sardinia (1) |
+| Italy | 8 | €28,000 | €39,000 | 55 m² | Calabria (4), Sicily (3), Sardinia (1) |
 | Bulgaria | 7 | €58,900 | €66,000 | 87 m² | Kavarna (Black Sea) (4), Burgas (1), Pomorie (Black Sea) (1), Varna (1) |
 | Mexico | 6 | €80,920 | €86,100 | 68 m² | Sinaloa (6) |
 | Sweden | 5 | €55,000 | €64,000 | 50 m² | Medelpad (2), Norrbotten (1), Västerbotten (1), Västernorrland (1) |
@@ -24,7 +24,7 @@ Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/sea-hom
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 713 chosen listings (61% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 717 chosen listings (61% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - By the sea: within 5 km of the coast when the distance is known, otherwise homes filed by a person under beach and coast.
 - The count describes what RealHunt lists today. A country that is missing may have such homes that have not been added yet.

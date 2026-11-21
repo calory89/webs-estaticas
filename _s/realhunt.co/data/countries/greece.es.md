@@ -164,7 +164,7 @@ https://realhunt.co/es/deal/gr-crete-neapoli-renovated-stone-house-courtyard-149
 
 80.000 € · Pefki, Artemisio, North Evia (Greece) · 50 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-14
 
-Piso de 50 m² en primera planta a unos cientos de metros de la playa en Pefki, en la isla de Eubea, con vistas al mar desde el balcón. Dos dormitorios, cocina equipada, baño moderno con ducha y rincón de comedor, todo con acabados recientes y suelos claros. Calefacción eléctrica, aire acondicionado, puerta blindada y aparcamiento. Se vende totalmente amueblado y equipado, listo para usar o alquilar. Certificado energético E. Precio 80.000 €, unos 1.600 €/m².
+Piso de 50 m² en primera planta a unos cientos de metros de la playa en Pefki, en la isla de Eubea, con vistas al mar desde el balcón. Dos dormitorios, cocina equipada, baño moderno con ducha y rincón de comedor, todo con acabados recientes y suelos claros. Calefacción eléctrica, aire acondicionado, puerta blindada y aparcamiento. Se vende totalmente amueblado y equipado, listo para usar. Certificado energético E. Precio 80.000 €, unos 1.600 €/m².
 
 https://realhunt.co/es/deal/gr-evia-pefki-80k-19672601
 

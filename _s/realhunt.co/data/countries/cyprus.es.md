@@ -63,7 +63,7 @@ https://realhunt.co/es/deal/cy-coral-bay-341k-080655
 
 350.000 € · Protaras, Famagusta · 94 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-10-12
 
-Adosado de 2009 a 100 metros de la costa de Protaras, amueblado y listo para vivir o alquilar. 94 m² en una parcela de 155 m² con piscina propia: salón abierto con cocina nueva y barra, baño con ducha reformado en planta baja y dos dormitorios dobles arriba, el principal con balcón sobre la piscina. Bares y restaurantes a pie. A unos 3.720 €/m², un 27% por debajo de la mediana de precios pedidos en Protaras (5.136 €/m², index.cy, octubre de 2026).
+Adosado de 2009 a 100 metros de la costa de Protaras, amueblado y listo para vivir. 94 m² en una parcela de 155 m² con piscina propia: salón abierto con cocina nueva y barra, baño con ducha reformado en planta baja y dos dormitorios dobles arriba, el principal con balcón sobre la piscina. Bares y restaurantes a pie. A unos 3.720 €/m², un 27% por debajo de la mediana de precios pedidos en Protaras (5.136 €/m², index.cy, octubre de 2026).
 
 https://realhunt.co/es/deal/cy-protaras-350k-257111
 

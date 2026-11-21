@@ -171,7 +171,7 @@ https://realhunt.co/deal/fr-azille-72k-4qkrv1
 
 ### 3-bed stone house in the heart of a village
 
-€46,000 · Le Lonzac, Nouvelle-Aquitaine, France · RealHunt score 86 · added 2026-09-23
+€46,000 · Le Lonzac, Nouvelle-Aquitaine, France · 3 bedrooms · RealHunt score 86 · added 2026-09-23
 
 Stone house in the center of a village : Le Lonzac, Nouvelle-Aquitaine Right in the heart of village life, this stone village house offers a lovely balance of indoor space and outdoor corners to enjoy.
 
@@ -213,7 +213,7 @@ https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k
 
 €39,000 · Montaud, Saint-Étienne · 45 m² · 1 bedrooms · RealHunt score 84 · added 2026-10-13
 
-45 m² on the ground floor of a small building (7 lots) on rue Dufour, Carnot: a through living room, a new fitted kitchen, a bedroom with its own shower room and a separate WC. Double glazing, low charges (€703 a year); last rented at €400 a month. Seller pays the agency fee. Asking €39,000, about €867/m².
+45 m² on the ground floor of a small building (7 lots) on rue Dufour, Carnot: a through living room, a new fitted kitchen, a bedroom with its own shower room and a separate WC. Double glazing and low charges (€703 a year). Seller pays the agency fee. Asking €39,000, about €867/m².
 
 https://realhunt.co/deal/fr-saint-etienne-39k-705662
 
@@ -379,7 +379,7 @@ https://realhunt.co/deal/fr-saint-etienne-56k-284554
 
 ### 2-bed country cottage in a lovely hamlet
 
-€56,000 · Exideuil-sur-Vienne, Nouvelle-Aquitaine, France · RealHunt score 79 · added 2026-09-23
+€56,000 · Exideuil-sur-Vienne, Nouvelle-Aquitaine, France · 2 bedrooms · RealHunt score 79 · added 2026-09-23
 
 Country cottage in an adorable hamlet : Exideuil-sur-Vienne, Nouvelle-Aquitaine A bright kitchen, rustic warmth, and plenty of outdoor space give this two-bedroom country cottage a wonderfully relaxed character.
 

@@ -30,7 +30,7 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 ### Best homes in Sweden
 
 - [€62,300 · Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989) · Skivarp, Skurup, Skåne (about 60 min from Copenhagen) · score 93 · 102 m² · 3 bed
-- [€25,960 · Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb) · Northern Sweden · score 93
+- [€25,960 · Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb) · Norriån, Boden, Norrbotten · score 93
 - [€78,000 · Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8) · Markaryd, Kronoberg, Småland, Sweden · score 93 · 800 m² · 2 bed
 - [€54,000 · Cottage on 6,148 m² of garden and woodland near two lakes](https://realhunt.co/deal/DcNI1r5oM57) · Eringsboda, Blekinge, Sweden · score 93 · 148 m² · 3 bed
 - [€59,000 · Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Sweden · score 92 · 156 m² · 4 bed

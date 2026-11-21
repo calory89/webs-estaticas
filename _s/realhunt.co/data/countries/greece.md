@@ -164,7 +164,7 @@ https://realhunt.co/deal/gr-crete-neapoli-renovated-stone-house-courtyard-149k
 
 €80,000 · Pefki, Artemisio, North Evia (Greece) · 50 m² · 2 bedrooms · RealHunt score 85 · added 2026-10-14
 
-A 50 m² first-floor flat a few hundred metres from the beach in Pefki, on the island of Evia, with a sea view from the balcony. Two bedrooms, a fitted kitchen, a modern shower room and a dining corner, all freshly finished with light floors. Electric heating, air conditioning, a security door and parking. Sold fully furnished and equipped, ready to use or rent out. Energy rating E. Asking €80,000, about €1,600/m².
+A 50 m² first-floor flat a few hundred metres from the beach in Pefki, on the island of Evia, with a sea view from the balcony. Two bedrooms, a fitted kitchen, a modern shower room and a dining corner, all freshly finished with light floors. Electric heating, air conditioning, a security door and parking. Sold fully furnished and equipped, ready to use. Energy rating E. Asking €80,000, about €1,600/m².
 
 https://realhunt.co/deal/gr-evia-pefki-80k-19672601
 

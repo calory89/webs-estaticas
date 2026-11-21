@@ -1,42 +1,42 @@
 {
- "noindex_copies": 10,
+ "noindex_copies": 8,
  "written_by_hand": {
-  "pages": 825,
-  "words": 1044501,
+  "pages": 829,
+  "words": 1053170,
   "english": 0,
   "failed": []
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1183,
+ "twins": 1187,
  "groups": {
   "homes": {
-   "pages": 713,
-   "twins": 713,
+   "pages": 717,
+   "twins": 717,
    "words": 0,
    "english": 0,
-   "by_hand": 713,
+   "by_hand": 717,
    "spanish_pct": 0
   },
   "places": {
-   "pages": 629,
-   "twins": 629,
-   "words": 1337190,
+   "pages": 632,
+   "twins": 632,
+   "words": 1345930,
    "english": 0,
    "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2827,
+   "words": 2877,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.21
+   "spanish_pct": 85.47
   },
   "content": {
-   "pages": 591,
-   "twins": 590,
-   "words": 457611,
+   "pages": 592,
+   "twins": 591,
+   "words": 458111,
    "english": 0,
    "by_hand": 42,
    "spanish_pct": 100

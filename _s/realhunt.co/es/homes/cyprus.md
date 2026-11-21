@@ -1,8 +1,8 @@
 ## Pisos en venta en Chipre
 
-Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Actualizado el 21 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 5 pisos en venta en Chipre, con precios de 130.000 € a 470.000 €. La más barata cuesta 130.000 €: [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), en Mazotos (70 m², 2 dormitorios). El precio mediano es de 195.000 € (2.635 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
+RealHunt tiene hoy 5 pisos en venta en Chipre, con precios de 130.000 € a 470.000 €. La más barata cuesta 130.000 €: [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), en Mazotos (70 m², 2 dormitorios). El precio mediano es de 195.000 € (2.635 €/m²), frente a 93.200 € (1.222 €/m²) de las 613 viviendas de RealHunt en 30 países.
 ¿Puedes comprar aquí? Lee esto primero
 Los ciudadanos de la UE compran sin restricciones. Los compradores no ciudadanos de la UE necesitan permiso del Consejo de Ministros, solicitado a través del Oficial de Distrito, y normalmente están limitados a una vivienda o una parcela de hasta 4.014 m².
 
@@ -33,15 +33,15 @@ Compradores extranjeros
 Con límites
 
 Datos del
-20 nov 2026
+21 nov 2026
 
 ### Las 5 viviendas, de mejor a peor nota
 
-- [Nota 93341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 39 días en RealHuntApartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos.](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
-- [Nota 84470.000 €Bajo frente al mar con terraza de 50 m² y piscina desbordante en ProtarasProtaras, Famagusta85 m² · 2 dorm. · 5.529 €/m² · 39 días en RealHuntBajo frente al mar de 2020 en Protaras, a un paso de Green Bay y la playa de Cavo Maris y a unos 5 minutos de Fig Tree Bay.](https://realhunt.co/es/deal/cy-protaras-470k-585375)
-- [Nota 83Nueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 2 días en RealHuntUn apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de…](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Nota 82Nueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · Añadida hoyUna casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada.](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
-- [Nota 78Nueva195.000 €Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, PafosMesa Chorio, Paphos74 m² · 2 dorm. · 2.635 €/m² · 2 días en RealHuntUn apartamento de planta baja de dos dormitorios en Mesa Chorio, un pueblo en las afueras de Pafos, vendido con su propia escritura de propiedad…](https://realhunt.co/es/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684)
+- [Nota 93341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 40 días en RealHuntApartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos.](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
+- [Nota 84470.000 €Bajo frente al mar con terraza de 50 m² y piscina desbordante en ProtarasProtaras, Famagusta85 m² · 2 dorm. · 5.529 €/m² · 40 días en RealHuntBajo frente al mar de 2020 en Protaras, a un paso de Green Bay y la playa de Cavo Maris y a unos 5 minutos de Fig Tree Bay.](https://realhunt.co/es/deal/cy-protaras-470k-585375)
+- [Nota 83Nueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 3 días en RealHuntUn apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de…](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Nota 82Nueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · 1 día en RealHuntUna casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada.](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Nota 78Nueva195.000 €Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, PafosMesa Chorio, Paphos74 m² · 2 dorm. · 2.635 €/m² · 3 días en RealHuntUn apartamento de planta baja de dos dormitorios en Mesa Chorio, un pueblo en las afueras de Pafos, vendido con su propia escritura de propiedad…](https://realhunt.co/es/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684)
 
 ### Compara las 5 viviendas, de más barata a más cara
 
@@ -123,7 +123,7 @@ Por característica [Vistas al mar 3](https://realhunt.co/es/cheap-houses/with-s
 
 Países vecinos [Grecia 27](https://realhunt.co/es/homes/greece)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [México 3](https://realhunt.co/es/homes/mexico) [Colombia 3](https://realhunt.co/es/homes/colombia)
+Por país [España 135](https://realhunt.co/es/homes/spain) [Italia 79](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 32](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Eslovenia 3](https://realhunt.co/es/homes/slovenia) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Estos anuncios proceden de rightmove.co.uk (4), cy.green-acres.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

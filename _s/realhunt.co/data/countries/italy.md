@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 81 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 81 homes is €80,000 (€1,167 per m², from the 56 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 21 November 2026, RealHunt lists 83 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 83 homes is €80,000 (€1,000 per m², from the 64 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 81 |
+| Homes on RealHunt | 83 |
 | Median asking price | €80,000 |
-| Median price per m² | €1,167 (56 homes with a known size) |
-| Median size | 80 m² |
+| Median price per m² | €1,000 (64 homes with a known size) |
+| Median size | 81 m² |
 | Cheapest and most expensive | €12,000 · €197,000 |
 | Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 81 homes, best score first
+## The 83 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -111,7 +111,7 @@ https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k
 
 ### Stone house in a hill town 55 min from Rome
 
-€12,000 · Lazio, Italy · RealHunt score 89 · added 2026-09-23
+€12,000 · Lazio, Italy · 1 bedrooms · RealHunt score 89 · added 2026-09-23
 
 1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.
 
@@ -119,7 +119,7 @@ https://realhunt.co/deal/DcoUnwBDDxF
 
 ### Whitewashed house 25 minutes from the beach
 
-€28,000 · Puglia, Italy · RealHunt score 88 · added 2026-09-23
+€28,000 · Puglia, Italy · 1 bedrooms · RealHunt score 88 · added 2026-09-23
 
 1 bedroom · 1 bathroom · 25 min to the beach · 37 min to Brindisi Airport.
 
@@ -127,7 +127,7 @@ https://realhunt.co/deal/Dc1cyxRDM9Y
 
 ### Sea-view house five minutes from the beach
 
-€30,000 · Calabria, Italy · RealHunt score 88 · added 2026-09-23
+€30,000 · Calabria, Italy · 1 bedrooms · RealHunt score 88 · added 2026-09-23
 
 1 bedroom · 1 bathroom · 5 min to the beach · 53 min to Scalea Airport.
 
@@ -135,7 +135,7 @@ https://realhunt.co/deal/Dcgta8yjCAR
 
 ### Lake-view house six minutes from the lake
 
-€32,000 · Umbria, Italy · RealHunt score 88 · added 2026-09-23
+€32,000 · Umbria, Italy · 1 bedrooms · RealHunt score 88 · added 2026-09-23
 
 1 bedroom · 1 bathroom · 6 min to the lake · 1 hour 15 min to Perugia Airport.
 
@@ -143,7 +143,7 @@ https://realhunt.co/deal/DdUZvbGkTvh
 
 ### Sea-view house five minutes from the beach
 
-€35,000 · Calabria, Italy · RealHunt score 87 · added 2026-09-23
+€35,000 · Calabria, Italy · 2 bedrooms · RealHunt score 87 · added 2026-09-23
 
 2 bedrooms · 1 bathroom · 5 min to the beach · 1 hour 15 min to Lamezia Airport.
 
@@ -159,7 +159,7 @@ https://realhunt.co/deal/falconara-albanese-41000
 
 ### 2-bed house 10 minutes from the lake
 
-€45,000 · Lombardy, Italy · RealHunt score 86 · added 2026-09-23
+€45,000 · Lombardy, Italy · 82 m² · 2 bedrooms · RealHunt score 86 · added 2026-09-23
 
 2 bedrooms · 1 bathroom · 82 m2 · 10 minutes to the lake · 1 hour 9 min to Milan Airport.
 
@@ -183,7 +183,7 @@ https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k
 
 ### Stone house with a swimming pool in a Tuscan village
 
-€24,000 · Tuscany, Italy · RealHunt score 85 · added 2026-09-23
+€24,000 · Tuscany, Italy · 76 m² · 2 bedrooms · RealHunt score 85 · added 2026-09-23
 
 2 bedrooms · 1 bathroom · 76 m2 · swimming pool · 1 hour 39 min to Perugia Airport.
 
@@ -191,7 +191,7 @@ https://realhunt.co/deal/Dc6Y4UKDLyc
 
 ### 5-bed house with a terrace and courtyard
 
-€34,000 · Como area, Italy · RealHunt score 85 · added 2026-09-23
+€34,000 · Como area, Italy · 5 bedrooms · RealHunt score 85 · added 2026-09-23
 
 A surprisingly large independent Italian home in one of Northern Italy’s most desirable regions, for just €34,000. Want the full listing, exact location and my detailed property analysis? Curated Italian properties under €100,000.
 
@@ -201,7 +201,7 @@ https://realhunt.co/deal/Dc8TyIDkexU
 
 €59,000 · Bomba, Chieti, Abruzzo, Italy · RealHunt score 85 · added 2026-09-13
 
-
+A restored stone home in Bomba, in the province of Chieti, Abruzzo, with two panoramic terraces and a lake nearby. Asking €59,000.
 
 https://realhunt.co/deal/DdOGB56ABXI
 
@@ -231,7 +231,7 @@ https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k
 
 ### Furnished historic tower house
 
-€35,000 · Sardinia, Italy · RealHunt score 84 · added 2026-09-23
+€35,000 · Sardinia, Italy · 75 m² · 2 bedrooms · RealHunt score 84 · added 2026-09-23
 
 Historic tower house for €35,000 in Sardinia 75 m² · 2 beds · 1 bath · balcony · furnished Set across four levels in the colorful historic district in Sardinia, and just around 3 km from the beaches.
 
@@ -239,7 +239,7 @@ https://realhunt.co/deal/Dcmar6QDXXm
 
 ### 1-bed house 11 minutes from Lake Como
 
-€38,000 · Lake Como, Italy · RealHunt score 84 · added 2026-09-23
+€38,000 · Lake Como, Italy · 1 bedrooms · RealHunt score 84 · added 2026-09-23
 
 1 bedroom · 1 bathroom · 11 min to the lake · 1 hour 12 min to Milan Airport.
 
@@ -249,7 +249,7 @@ https://realhunt.co/deal/DcjBmxJjKHY
 
 €39,000 · Acquappesa, Cosenza, Calabria, Italy · 40 m² · 1 bedrooms · RealHunt score 84 · added 2026-09-20
 
-
+A 40 m² one-bedroom home with a sea-view terrace in Acquappesa, in the province of Cosenza, Calabria. Asking €39,000, about €975/m².
 
 https://realhunt.co/deal/acquappesa-sea-view-39000
 
@@ -263,7 +263,7 @@ https://realhunt.co/deal/DcyzSIdjOz6
 
 ### Sea-view home with a panoramic terrace
 
-€49,000 · Sicily, Italy · RealHunt score 84 · added 2026-09-23
+€49,000 · Sicily, Italy · 87 m² · 2 bedrooms · RealHunt score 84 · added 2026-09-23
 
 Sea-view home for €49,000 in Sicily, Italy 87 m² · 2 beds · 1 bath · 12 m² sea-view balcony · 87 m² panoramic terrace Just 20 minutes from Messina city centre, with incredible views over the Mediterranean.
 
@@ -287,7 +287,7 @@ https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k
 
 ### Two-bedroom apartment with two balconies in a historic village
 
-€16,000 · Fiamignano, Rieti, Lazio, Italy · 40 m² · RealHunt score 83 · added 2026-09-23
+€16,000 · Fiamignano, Rieti, Lazio, Italy · 40 m² · 2 bedrooms · RealHunt score 83 · added 2026-09-23
 
 2 bedrooms, 1 bathroom, 40 m² (431 sq ft). Set in a charming historic center, this cozy apartment brings scenic surroundings together with snug interiors: a welcoming living room, kitchenette, dining area and two balconies for enjoying the views. The feel of a country home wrapped into an easy-to-enjoy village setting.
 
@@ -295,7 +295,7 @@ https://realhunt.co/deal/Dcsm9sZoDMp
 
 ### 2-bed village house 30 minutes from the beach
 
-€39,000 · Sardinia, Italy · RealHunt score 83 · added 2026-09-23
+€39,000 · Sardinia, Italy · 2 bedrooms · RealHunt score 83 · added 2026-09-23
 
 2 bedrooms · 1 bathroom · 32 min to the beach · 59 min to Olbia Airport.
 
@@ -311,7 +311,7 @@ https://realhunt.co/deal/acquedolci-49000
 
 ### Vaulted house near the Puglia coast
 
-€49,000 · Puglia, Italy · RealHunt score 83 · added 2026-09-23
+€49,000 · Puglia, Italy · 1 bedrooms · RealHunt score 83 · added 2026-09-23
 
 1 bedroom · 1 bathroom · 19 min to the beach · 39 min to Brindisi Airport.
 
@@ -319,7 +319,7 @@ https://realhunt.co/deal/DceAZ_xjMzt
 
 ### Stone house with a terrace and mountain views
 
-€59,000 · Abruzzo, Italy · RealHunt score 83 · added 2026-09-23
+€59,000 · Abruzzo, Italy · 119 m² · 2 bedrooms · RealHunt score 83 · added 2026-09-23
 
 2 bedrooms · 2 bathrooms · 119 m2 · 25 minutes to the beach · 1 hour 12 min to Abruzzo Airport.
 
@@ -341,6 +341,14 @@ A large house in the mountain village of Secinaro, made by joining three small f
 
 https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 
+### Renovated stone house with a fireplace in the Monte Amiata woods at Selva, Santa Fiora
+
+€99,000 · Selva, Santa Fiora (Tuscany) · 120 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-21
+
+An old stone house with its own entrance in Selva, a small hamlet of Santa Fiora at about 750 m in the chestnut and beech woods of Monte Amiata in southern Tuscany. It has been fully redone, with a new hydro-pellet heating system, new bathrooms, new wiring and new windows. About 120 m² on three levels: a cellar and garage on the ground floor, then a large kitchen under timber beams, a living room with a fireplace, two double bedrooms and a bathroom, and a third attic bedroom with a small bathroom on top. A plot of about 1,000 m² close by can be used for parking and a garden.
+
+https://realhunt.co/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k
+
 ### Two-bedroom apartment with terrace in a historic Tuscan village
 
 €16,000 · Montieri, Grosseto, Tuscany, Italy · 51 m² · 2 bedrooms · RealHunt score 82 · added 2026-09-23
@@ -348,6 +356,14 @@ https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 Charming 2-bedroom apartment in the historic Tuscan village of Montieri. 2 bedrooms, 1 bathroom, 51 m² (549 sq ft). Set along a charming alley leading toward the historic castle square, the apartment has a comfortable living room, a kitchenette, two bedrooms and a private terrace with attractive views.
 
 https://realhunt.co/deal/DdSm-JkiJem
+
+### Village cottage with a private garden and a hill-view balcony in Loazzolo, Piedmont
+
+€68,000 · Loazzolo, Asti (Piedmont) · 87 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-21
+
+A cottage in the centre of Loazzolo, a hill village near Asti, steps from the main square. It is reached through a cobbled alley and a stone arch into a private garden with a patio for eating outside. About 87 m²: a bright open-plan living room and kitchen with French doors to the patio, then two bedrooms upstairs, one with a balcony looking over the rolling hills, and a bathroom. At street level there is a garage, a cellar and a small infernot, a traditional wine room cut into the rock. Gas central heating. Listed in good structural condition.
+
+https://realhunt.co/deal/it-loazzolo-village-cottage-garden-hill-view-68k
 
 ### Renovated stone house inside the walls of Gaglietole Castle, Umbria
 
@@ -399,7 +415,7 @@ https://realhunt.co/deal/it-san-venanzo-48k-knitz9
 
 ### Stone house in a medieval Tuscan village
 
-€45,000 · Tuscany, Italy · RealHunt score 81 · added 2026-09-23
+€45,000 · Tuscany, Italy · 65 m² · 2 bedrooms · RealHunt score 81 · added 2026-09-23
 
 Stone house for €45,000 in Tuscany, Italy 65 m² · 2 beds · 1 bath · cellar · medieval village
 
@@ -455,7 +471,7 @@ https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180
 
 ### Colorful one-bedroom apartment with attic and balcony
 
-€20,000 · Gradoli, Viterbo, Lazio, Italy · 51 m² · RealHunt score 80 · added 2026-09-23
+€20,000 · Gradoli, Viterbo, Lazio, Italy · 51 m² · 1 bedrooms · RealHunt score 80 · added 2026-09-23
 
 1 bedroom, 1 bathroom, 51 m² (549 sq ft). Small, colorful and full of personality, this apartment makes the most of its compact footprint with a spacious living room, dining area, kitchenette and a handy attic.
 
@@ -591,7 +607,7 @@ https://realhunt.co/deal/ventimiglia-di-sicilia-35000
 
 ### Three-floor village home with a panoramic balcony over the rooftops
 
-€45,000 · Italy · RealHunt score 77 · added 2026-09-23
+€45,000 · Italy · 2 bedrooms · RealHunt score 77 · added 2026-09-23
 
 Spread across three cozy floors, this characterful Italian home offers two bedrooms and a panoramic balcony overlooking the surrounding countryside and village rooftops. With everyday essentials just a short walk away, it is an inviting little base for experiencing the slower rhythm of Italian village life.
 
@@ -655,7 +671,7 @@ https://realhunt.co/deal/it-locorotondo-75k-3me3r0
 
 ### Three-bedroom hilltop home with two fireplaces and a panoramic mountain terrace
 
-€85,000 · Bajardo, Liguria · RealHunt score 75 · added 2026-09-23
+€85,000 · Bajardo, Liguria · 3 bedrooms · RealHunt score 75 · added 2026-09-23
 
 Set in a peaceful hilltop village in Liguria, this bright home pairs generous living spaces, two fireplaces and a panoramic terrace with beautiful views across the surrounding mountains. With three spacious bedrooms and a move-in-ready interior, it is a welcoming place to enjoy authentic Tuscan village life.
 
@@ -679,7 +695,7 @@ https://realhunt.co/deal/borgorose-49000
 
 ### Little stone farmhouse with terrace in an Umbrian village
 
-€46,000 · Sellano, Perugia, Umbria, Italy · 40 m² · RealHunt score 73 · added 2026-09-23
+€46,000 · Sellano, Perugia, Umbria, Italy · 40 m² · 1 bedrooms · RealHunt score 73 · added 2026-09-23
 
 1 bedroom, 1 bathroom, 40 m² (431 sq ft). One bedroom, one charming village and all the ingredients for a slower pace. This little stone farmhouse keeps things simple, with a warm living room, a practical kitchen, a cozy open dining space and a terraced area for enjoying the fresh air.
 
@@ -687,7 +703,7 @@ https://realhunt.co/deal/DcndWlcGwtG
 
 ### 3-bed stone village house in a quiet hamlet
 
-€55,000 · Piobbico, Marche, Italy · RealHunt score 73 · added 2026-09-23
+€55,000 · Piobbico, Marche, Italy · 3 bedrooms · RealHunt score 73 · added 2026-09-23
 
 Stone village house in a small quiet hamlet This charming 3-bedroom village house sits in a quiet little hamlet surrounded by idyllic countryside, with warm country character that feels perfectly at home in the setting.
 

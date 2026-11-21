@@ -262,7 +262,7 @@ https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 
 €237,400 · Belmont Heights, Tampa, Florida · 158 m² · 4 bedrooms · RealHunt score 87 · added 2026-11-08
 
-The main residence features recent major upgrades including a 2021 roof, 2020 HVAC system, granite countertops, stainless steel appliances, and updated electrical and plumbing. The detached 1-bedroom apartment generates $900 monthly rental income with separate living spaces. The property offers multiple entrances, ample parking, and a rear deck, combining flexibility for owner-occupancy or pure investment.
+A main house with recent upgrades (2021 roof, 2020 HVAC, granite countertops, stainless steel appliances, updated electrical and plumbing) plus a detached one-bedroom apartment with its own living space. Multiple entrances, ample parking and a rear deck. 158 m² and four bedrooms in total, in Belmont Heights, Tampa.
 
 https://realhunt.co/deal/us-tampa-4811-265k
 
@@ -446,7 +446,7 @@ https://realhunt.co/deal/us-aventura-2750-2208-295k
 
 €313,600 · Aventura, Miami-Dade, Florida · 149 m² · 2 bedrooms · RealHunt score 83 · added 2026-11-07
 
-A renovated 1,605 sq ft two-bedroom, two-bath flat high up, with skyline and sunset views, a living and dining room and modern finishes, in a building with a private marina, two pools, tennis, a gym, sauna and a courtesy bus around Aventura. It is let until September, so it suits a buyer who can wait or wants the rent. Asking US$350,000 (about €313,600), 1,605 sq ft (149 m²).
+A renovated 1,605 sq ft two-bedroom, two-bath flat high up, with skyline and sunset views, a living and dining room and modern finishes, in a building with a private marina, two pools, tennis, a gym, sauna and a courtesy bus around Aventura. It is let until September, so it suits a buyer who does not need to move in before then. Asking US$350,000 (about €313,600), 1,605 sq ft (149 m²).
 
 https://realhunt.co/deal/us-aventura-18011-1904-350k
 

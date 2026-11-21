@@ -362,7 +362,7 @@ https://realhunt.co/es/deal/es-gualchos-85k-92930
 
 ### Refugio de un dormitorio con vistas de 360 grados desde la azotea hacia la costa
 
-99.000 € · Alicante, Spain · nota RealHunt 89 · añadida el 2026-09-23
+99.000 € · Alicante, Spain · 1 dormitorios · nota RealHunt 89 · añadida el 2026-09-23
 
 Luminosa y sin complicaciones, esta casa de un dormitorio en Alicante combina un espacio diáfano con un solárium privado en la azotea con amplias vistas de 360 grados sobre el campo y hacia la costa.
 

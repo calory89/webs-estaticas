@@ -63,7 +63,7 @@ https://realhunt.co/deal/cy-coral-bay-341k-080655
 
 €350,000 · Protaras, Famagusta · 94 m² · 2 bedrooms · RealHunt score 92 · added 2026-10-12
 
-A 2009 townhouse 100 metres from the coastline of Protaras, sold fully furnished and ready to live in or rent out. 94 m² on a 155 m² plot with its own swimming pool: open-plan living with a new kitchen and breakfast bar, a renovated shower room downstairs, and two double bedrooms upstairs, the main one with a balcony over the pool. Bars and restaurants are within walking distance. At about €3,720/m² it is roughly 27% below the Protaras median asking price (€5,136/m², index.cy, October 2026).
+A 2009 townhouse 100 metres from the coastline of Protaras, sold fully furnished and ready to live in. 94 m² on a 155 m² plot with its own swimming pool: open-plan living with a new kitchen and breakfast bar, a renovated shower room downstairs, and two double bedrooms upstairs, the main one with a balcony over the pool. Bars and restaurants are within walking distance. At about €3,720/m² it is roughly 27% below the Protaras median asking price (€5,136/m², index.cy, October 2026).
 
 https://realhunt.co/deal/cy-protaras-350k-257111
 
