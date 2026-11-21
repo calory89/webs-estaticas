@@ -81,3 +81,31 @@ FAQ["sumba-travel-guide"] = [["Which airport is best for Sumba?", "Tambolaka for
 ADD["things-to-do-in-sumba"] = f"""<h2>More things to do</h2><ul><li>Watch the Pasola in February or March: {GD('pasola-dates', 'dates')}.</li><li>Learn how ikat is woven at {PL('prailiu-village', 'Prailiu')}: {GD('ikat-guide', 'ikat guide')}.</li><li>Catch the sunset at {PL('walakiri-beach', 'Walakiri')}: {GD('best-sunsets-in-sumba', 'best sunsets')}.</li><li>See the megalithic tombs of Anakalang: {GD('sumba-megalithic-tombs', 'tombs')}.</li><li>Surf the south coast: {GD('surf-sumba', 'surf guide')}.</li><li>Explore the quiet {GD('sumba-north-coast', 'north coast')} around Mamboro.</li><li>Plan your route with the {MAP} and save your favourite places.</li></ul>"""
 ADD["best-beaches-in-sumba"] = f"""<h2>Choosing a beach</h2><p>Sumba's south and west coasts face the open Indian Ocean, with big waves and strong currents for much of the year: spectacular, but not always safe for swimming. The north coast around Mamboro is usually calmer. For safe swimming, {PL('weekuri-lagoon', 'Weekuri Lagoon')} is the classic choice. Always check conditions locally and never swim alone.</p><h2>Best for</h2><ul><li><b>Sunset:</b> {PL('walakiri-beach', 'Walakiri')}, {PL('pero-beach', 'Pero')}; see {GD('best-sunsets-in-sumba', 'best sunsets')}.</li><li><b>Surf:</b> {PL('marosi-beach', 'Marosi')}, {PL('tarimbang-bay', 'Tarimbang')}; see {GD('surf-sumba', 'surf guide')}.</li><li><b>Solitude:</b> the north coast, such as {PL('kapulit-beach', 'Kapulit')} and {PL('mananga-beach', 'Mananga')}.</li><li><b>Cliffs and views:</b> {PL('mandorak-beach', 'Mandorak')} and {PL('watu-maladong', 'Watu Maladong')}.</li></ul>"""
 ADD["traditional-villages-sumba"] = f"""<h2>Visiting well</h2><p>Go with a local guide or driver who can introduce you, sign the guestbook and leave a contribution, dress modestly, and ask before photos. Never climb on the tombs. Read {GD('respect-etiquette', 'village etiquette')}, {GD('sumba-traditional-houses', 'traditional houses')} and {GD('sumba-megalithic-tombs', 'megalithic tombs')} first.</p>"""
+
+# 21-nov-2026: the full list of 50 things, built from the map data (one line per place from its own text)
+def _fifty():
+    from places import PLACES as _P
+    from places_mamboro import MAMBORO as _MB
+    import re as _re
+    order = {"beach": 0, "waterfall": 1, "village": 2, "viewpoint": 3, "culture": 4}
+    _seen = set(); _u = [p for p in _P + _MB if not (p["s"] in _seen or _seen.add(p["s"]))]
+    items = sorted(_u, key=lambda p: (order.get(p["c"], 9), p["en"]["n"]))
+    lines = []
+    for p in items:
+        first = _re.split(r"(?<=[.!?])\s", p["en"]["t"].strip())[0]
+        lines.append(f"<li>{PL(p['s'], p['en']['n'])}: {first}</li>")
+    extra = [
+        f"See a Pasola, the ritual horseback spear contest of February and March ({GD('pasola-dates', 'dates')}).",
+        f"Watch ikat being tied, dyed and woven in an East Sumba village ({GD('sumba-ikat-weaving', 'ikat guide')}).",
+        f"Walk the savannah ridges at sunrise ({GD('hiking-sumba', 'hiking guide')}).",
+        f"Go to a town market early in the morning ({GD('sumba-markets', 'markets')}).",
+        f"Watch Sumba's sandalwood ponies on the beaches and hills ({GD('sumba-horses', 'horses of Sumba')}).",
+        f"Surf the reef breaks of the south and west coasts ({GD('surf-sumba', 'surf guide')}).",
+        f"Snorkel the reefs on a calm morning ({GD('snorkeling-diving-sumba', 'snorkelling and diving')}).",
+        f"Eat in a local warung ({GD('food-in-sumba', 'food in Sumba')}).",
+        f"Learn ten words of Indonesian before you go ({GD('indonesian-phrases-sumba', 'phrases')}).",
+    ]
+    lines += [f"<li>{x}</li>" for x in extra]
+    n = len(lines)
+    return f"<h2>The full list: {n} things to do in Sumba</h2><p>Every place on our map, grouped by type, plus the experiences that are not tied to one spot. Each line links to the full page with directions, photos and the best time to go.</p><ol>{''.join(lines)}</ol>"
+ADD["things-to-do-in-sumba"] = ADD.get("things-to-do-in-sumba", "") + _fifty()

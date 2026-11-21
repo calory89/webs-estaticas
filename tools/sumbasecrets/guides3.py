@@ -56,7 +56,7 @@ GUIDES3 = [
 <h2>Is Sumba worth it?</h2>
 <p>If you are looking for culture that is lived rather than performed, wild landscapes and the feeling of travelling somewhere still unknown, very much so. Plan realistically, go slowly and treat the island with respect, and Sumba will be one of the most memorable trips you take in Indonesia. Start with the {MAP} and our list of {A('', 'secret-spots', 'secret spots').replace('/secret-spots//', '/secret-spots/')}.</p>"""},
 
-{"s": "things-to-do-in-sumba", "img": "wairinding-hill", "t": "25 best things to do in Sumba",
+{"s": "things-to-do-in-sumba", "img": "wairinding-hill", "t": "50 best things to do in Sumba",
  "d": "From Weekuri Lagoon to the Pasola, the dancing trees of Walakiri and the megalithic tombs of Anakalang: the best experiences on Sumba island, with a map.",
  "faq": [
   ["What is Sumba most famous for?", "Its traditional villages with tall thatched roofs and megalithic tombs, the Pasola horseback ritual, ikat textiles, Weekuri Lagoon, the savanna hills of the east and world-class surf on the south coast."],

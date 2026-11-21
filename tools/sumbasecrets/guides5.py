@@ -516,3 +516,17 @@ GUIDES5 += [
 <li><b>Local guides</b> at villages and waterfalls: not free, but cheap and worth it.</li></ul>
 <h2>Keep costs down</h2><p>Group nearby places on the same day with the """ + MAP + """, share a car and eat in local warung. See """ + GD("sumba-on-a-budget", "Sumba on a budget") + """.</p>"""},
 ]
+
+# 21-nov-2026: where is Sumba (distances computed, straight line)
+_REF = [("Bali (Denpasar airport)", (-8.748, 115.167)), ("Labuan Bajo, Flores", (-8.486, 119.888)), ("Kupang, Timor", (-10.171, 123.671)), ("Jakarta", (-6.125, 106.656)), ("Darwin, Australia", (-12.415, 130.877)), ("Perth, Australia", (-31.94, 115.967))]
+_rows = "".join(f"<tr><td>{n}</td><td>{round(_km(_A[0]['ll'], ll), -1):.0f} km</td><td>{round(_km(_A[1]['ll'], ll), -1):.0f} km</td></tr>" for n, ll in _REF)
+GUIDES5 += [{"s": "where-is-sumba", "img": "weekuri-lagoon",
+ "t": "Where is Sumba? Location, size and distances from Bali",
+ "d": "Where Sumba island is in Indonesia, how far it is from Bali, Flores, Timor and Australia, and how big it is, with a distance table.",
+ "b": """<p>Sumba is an island in eastern Indonesia, in the province of East Nusa Tenggara (Nusa Tenggara Timur). It lies south of Flores and Komodo, west of Timor and east of Sumbawa, between the Savu Sea to the north and the Indian Ocean to the south.</p>
+<h2>In brief</h2><ul><li><b>Country:</b> Indonesia.</li><li><b>Province:</b> East Nusa Tenggara, capital Kupang on Timor.</li><li><b>Size:</b> about 11,000 km², roughly twice the size of Bali.</li><li><b>Population:</b> about 850,000 (BPS estimate, mid 2025).</li><li><b>Time zone:</b> WITA, UTC+8, the same as Bali.</li><li><b>Airports:</b> Tambolaka (TMC) in the west and Waingapu (WGP) in the east.</li></ul>
+<h2>Distances</h2><p>Straight-line distances from each of Sumba's airports. Flights are usually via Bali; see """ + GD("bali-to-sumba", "Bali to Sumba") + """.</p>
+<table><thead><tr><th>To</th><th>From Tambolaka</th><th>From Waingapu</th></tr></thead><tbody>""" + _rows + """</tbody></table>
+<h2>The island itself</h2><p>Sumba is about 200 km long from west to east. The west is greener and wetter, with traditional villages and rice fields; the east is drier, with savannah and long beaches. Crossing the island by road takes most of a day. See """ + GD("east-vs-west-sumba", "East vs West Sumba") + """, """ + GD("sumba-regencies", "the four regencies") + """ and the """ + MAP + """.</p>
+<h2>Not to be confused with</h2><p>Sumba is not Sumbawa, the larger island to the west between Lombok and Flores. The two are often mixed up.</p>""",
+ "faq": [["Where is Sumba?", "Sumba is an island in East Nusa Tenggara, eastern Indonesia, south of Flores and Komodo and about 450 km east of Bali."], ["Is Sumba the same as Sumbawa?", "No. Sumbawa is a different, larger island to the west, between Lombok and Flores."]]}]
