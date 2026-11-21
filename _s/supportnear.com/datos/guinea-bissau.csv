@@ -1,0 +1,9 @@
+name,category,type,lat,lon,address,opening_hours,phone,osm,supportnear
+Biblioteca Publica,warm,library,11.85689,-15.61037,,,,https://www.openstreetmap.org/node/2025551201,
+Centre Culturel Franco-Bissau Guinéen,warm,community_centre,11.86028,-15.58303,"Praça Che Guevara, C.P. 1001",,,https://www.openstreetmap.org/way/130013455,
+Hospital 3 de Agosto,health,hospital,11.85717,-15.61632,,,,https://www.openstreetmap.org/way/378441514,
+Hospital de Bafatá,health,hospital,12.16894,-14.65895,,,,https://www.openstreetmap.org/way/601314145,
+Hospital Nacional Simão Mendes,health,hospital,11.86364,-15.58057,,,,https://www.openstreetmap.org/relation/5637352,
+Hospital Raoul Follereau,health,hospital,11.85771,-15.61782,,,,https://www.openstreetmap.org/way/130631676,
+,health,hospital,11.85742,-15.61776,,,,https://www.openstreetmap.org/relation/1753787,
+,health,hospital,12.27893,-14.21837,,,,https://www.openstreetmap.org/way/783958576,

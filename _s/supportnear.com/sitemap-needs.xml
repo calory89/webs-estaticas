@@ -1062,7 +1062,7 @@
 <url><loc>https://supportnear.com/c/stuttgart-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/stuttgart-water</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/stuttgart-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/pietermaritzburg-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
+<url><loc>https://supportnear.com/c/pietermaritzburg-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/pietermaritzburg-warm</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/guangzhou-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/guangzhou-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
@@ -1210,7 +1210,6 @@
 <url><loc>https://supportnear.com/c/ebolowa-social</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/ebolowa-water</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/ebolowa-warm</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
-<url><loc>https://supportnear.com/c/ogbomosho-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/qom-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/qom-social</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/qom-water</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
@@ -1338,7 +1337,7 @@
 <url><loc>https://supportnear.com/c/manzini-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/djibouti-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/djibouti-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/windhoek-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
+<url><loc>https://supportnear.com/c/windhoek-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/windhoek-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/windhoek-warm</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/sao-tome-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
@@ -1848,7 +1847,7 @@
 <url><loc>https://supportnear.com/c/hamilton-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/hamilton-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/canberra-hygiene</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/canberra-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
+<url><loc>https://supportnear.com/c/canberra-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/canberra-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/canberra-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/dresden-food</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
@@ -3026,7 +3025,7 @@
 <url><loc>https://supportnear.com/c/alicante-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/alicante-water</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/alicante-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/cordoba-espana-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
+<url><loc>https://supportnear.com/c/cordoba-espana-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/cordoba-espana-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/cordoba-espana-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/valladolid-food</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
@@ -3108,7 +3107,6 @@
 <url><loc>https://supportnear.com/c/burgos-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/burgos-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/burgos-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/albacete-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/albacete-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/albacete-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/salamanca-food</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
@@ -3128,7 +3126,7 @@
 <url><loc>https://supportnear.com/c/leon-espana-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/leon-espana-social</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
 <url><loc>https://supportnear.com/c/leon-espana-warm</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
-<url><loc>https://supportnear.com/c/toledo-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>
+<url><loc>https://supportnear.com/c/toledo-health</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/toledo-social</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/toledo-warm</loc><lastmod>2026-11-21</lastmod><priority>0.5</priority></url>
 <url><loc>https://supportnear.com/c/caceres-health</loc><lastmod>2026-11-21</lastmod><priority>0.7</priority></url>

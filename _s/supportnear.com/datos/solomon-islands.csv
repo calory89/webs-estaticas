@@ -1,0 +1,8 @@
+name,category,type,lat,lon,address,opening_hours,phone,osm,supportnear
+National Library Area,warm,library,-9.43687,159.96446,,,,https://www.openstreetmap.org/way/726022073,
+National Referal Hospital,health,hospital,-9.43522,159.97041,,,,https://www.openstreetmap.org/way/730959655,
+National Referral Hospital,health,hospital,-9.43535,159.97031,,,,https://www.openstreetmap.org/node/1958123256,
+,hygiene,toilets,-9.43345,159.96252,,,,https://www.openstreetmap.org/node/5591401523,
+,hygiene,toilets,-9.42785,159.93603,,,,https://www.openstreetmap.org/way/728224459,
+,hygiene,toilets,-9.42589,159.93264,,,,https://www.openstreetmap.org/way/728236777,
+,hygiene,toilets,-9.44149,159.92470,,,,https://www.openstreetmap.org/way/728959494,
