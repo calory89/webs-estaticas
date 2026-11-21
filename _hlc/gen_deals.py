@@ -928,7 +928,8 @@ def main():
     # ---------- explorador /chollos/ ----------
     intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
              f"Cada precio se comprueba en Kiwi.com antes de publicarlo y otra vez cada día; si sube más de un 10 %, lo retiramos.")
-    list_page('chollos', 'Chollos de vuelos de hoy en todo el mundo, verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
+    _d = datetime.date.today()
+    list_page('chollos', f'Chollos de vuelos de hoy, {_d.day} de {["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"][_d.month - 1]}: verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
               f'{SITE}/chollos/', [('Inicio', '/'), ('Chollos', None)], extra_links=hub, explorer=True)
 
     # ---------- para asistentes de IA y agentes: feed JSON y texto plano con los chollos vivos ----------

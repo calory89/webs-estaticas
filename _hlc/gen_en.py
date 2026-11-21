@@ -297,7 +297,7 @@ def main():
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/deals/{G.en_deal_slug(x)}/", "name": x['en'].get('title', '')} for i, x in enumerate(deals[:50])]
     ldl = [{"@type": "CollectionPage", "name": "Today's flight deals", "url": f"{SITE}/en/deals/", "inLanguage": "en", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     ch, cld = crumbs([('Home', '/en/'), ('Deals', None)])
-    page = head("Today's cheap flight deals worldwide, verified · Happy Low Cost", G.smart_desc(intro), f'{SITE}/en/deals/', f'{SITE}/chollos/', ld=ldl + [cld], body_class='chollos')
+    page = head(f"Today's flight deals ({datetime.date.today().strftime('%-d %B')}), verified · Happy Low Cost", G.smart_desc(intro), f'{SITE}/en/deals/', f'{SITE}/chollos/', ld=ldl + [cld], body_class='chollos')
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
 <div class="sec-h"><div><div class="kicker">Freshly hunted · verified</div><h1 class="x-h1">Today's flight deals</h1><p>{e(intro)}</p></div></div>

@@ -41,6 +41,15 @@ def body(c):
     return s
 
 
+def fdate(iso, en=False):
+    try:
+        d = datetime.date.fromisoformat(str(iso)[:10])
+        m_es = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+        return d.strftime('%-d %b %Y') if en else f'{d.day} {m_es[d.month - 1]} {d.year}'
+    except Exception:
+        return ''
+
+
 def ld(c, url, crumbs):
     faq = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q.get('q', ''), "acceptedAnswer": {"@type": "Answer", "text": q.get('a', '')}} for q in c.get('faq', [])]}
     bc = {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, **({"item": SITE + u} if u else {})} for i, (n, u) in enumerate(crumbs)]}
@@ -68,6 +77,21 @@ def page(r, lang, others):
     when = (f.get('ejemplo_ida') or '')[:10]
     crumbs = [('Home', '/en/'), ('Flights', '/en/flights/'), (c.get('h1', ''), None)] if en else [('Inicio', '/'), ('Vuelos', '/vuelos/'), (c.get('h1', ''), None)]
     alt = (f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="en" href="{en_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">')
+    # título con mes y año, y descripción con los datos de la ruta (antes: frases de plantilla iguales en todas)
+    p_, med_, air_ = f.get('precio_desde_ida_y_vuelta_eur'), f.get('mediana_ida_y_vuelta_eur'), f.get('aerolinea')
+    td = datetime.date.today()
+    mes_es = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'][td.month - 1]
+    mes_en = td.strftime('%B')
+    t0 = c.get('title', '')
+    if t0 and not re.search(r'20\d\d', t0) and len(t0) <= 58:
+        c['title'] = f"{t0} · {mes_en[:3]} {td.year}" if en else f"{t0} · {mes_es[:3]} {td.year}"
+    if p_:
+        if en:
+            c['meta'] = (f"Flights {__import__('en_names').city_en(r['origin'])} to {dest} from €{p_} return" + (', nonstop' if stops == 0 else '') + (f' with {air_}' if air_ else '') + '. '
+                         + (f"The usual price is about €{med_}. " if med_ and med_ > p_ else '') + f"Cheapest month, price calendar and fares checked on {fdate(f.get('consultado'), True)}.")
+        else:
+            c['meta'] = (f"Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
+                         + (f"Lo normal son unos {med_} €. " if med_ and med_ > p_ else '') + f"Mes más barato, calendario de precios y tarifas consultadas el {fdate(f.get('consultado'))}.")
     if en:
         h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), body_class='deal')
     else:

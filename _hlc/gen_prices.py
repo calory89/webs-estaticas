@@ -17,6 +17,11 @@ MES_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 e = G.e
 
 
+_today = datetime.date.today()
+NOW_ES = f'{MES_ES[_today.month - 1]} {_today.year}'
+NOW_EN = f'{MES_EN[_today.month - 1]} {_today.year}'
+
+
 def fd(iso, en=False):
     try:
         d = datetime.date.fromisoformat(str(iso)[:10])
@@ -173,7 +178,7 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     url = url_en if en else url_es
     mt, best = months_table(sorted(lst, key=lambda r: PREF.index(r['origin']) if r['origin'] in PREF else 99), meses, en, lambda r: f'{oname(r)} → {name}')
     if en:
-        title = f'Cheap flights to {name}: real prices from {len(lst)} cities'
+        title = f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'  # así lo buscan: «flight deals to X»
         lead = (f'The cheapest return flight to {name} we found leaves from {oname(r0)} for {r0["price_from"]} € ({stops(f0.get("escalas_ida"), True)}, {f0.get("aerolinea") or "several airlines"}). '
                 f'Usual prices from the {len(lst)} cities we track range from {min(meds)} € to {max(meds)} €.') if meds else f'Return flights to {name} from {len(lst)} cities, with the lowest price we found.'
         qas = [(f'How much is a flight to {name}?', f'The cheapest return flight we found was {r0["price_from"]} € from {oname(r0)} (search on {fd(f0.get("consultado"), True)}). ' + (f'The usual price across the {len(lst)} cities we track is between {min(meds)} € and {max(meds)} €.' if meds else '')),
@@ -186,7 +191,7 @@ def dest_page(d, lst, meses, en, en_slug, guide):
             qas.append((f'What is the cheapest month to fly to {name}?', f'From {oname(best[0])}, the cheapest month in the next six months is {mname(best[1], True)}, at {best[2]} € return.'))
         crumbs = [('Home', '/en/'), ('Flight routes', '/en/flights/'), (f'Flights to {name}', None)]
     else:
-        title = f'Vuelos baratos a {name}: precios reales desde {len(lst)} ciudades'
+        title = f'Vuelos baratos a {name} desde {r0["price_from"]} € ({NOW_ES})'
         lead = (f'El vuelo de ida y vuelta más barato a {name} que hemos encontrado sale desde {oname(r0)} por {r0["price_from"]} € ({stops(f0.get("escalas_ida"))}, {f0.get("aerolinea") or "varias aerolíneas"}). '
                 f'Lo habitual desde las {len(lst)} ciudades que vigilamos va de {min(meds)} € a {max(meds)} €.') if meds else f'Vuelos de ida y vuelta a {name} desde {len(lst)} ciudades, con el precio más bajo que hemos encontrado.'
         qas = [(f'¿Cuánto cuesta un vuelo a {name}?', f'El más barato que encontramos fue de {r0["price_from"]} € ida y vuelta desde {oname(r0)} (consulta del {fd(f0.get("consultado"))}). ' + (f'Lo habitual desde las {len(lst)} ciudades que vigilamos está entre {min(meds)} € y {max(meds)} €.' if meds else '')),
@@ -252,14 +257,14 @@ def orig_page(o, lst, en, en_slug):
     under = [r for r in lst if r['price_from'] < 100]
     T = (lambda a, b: b if en else a)
     if en:
-        title = f'Cheap flights from {oname}: real prices to {len(lst)} destinations'
+        title = f'Cheapest flights from {oname}: {len(lst)} destinations from €{lst[0]["price_from"]} ({NOW_EN})'
         lead = f'The cheapest return flights from {oname} we found: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:4]) + f'. {len(under)} destinations under 100 € return and {len(direct)} with direct flights.'
         qas = [(f'Where can I fly cheaply from {oname}?', 'The cheapest destinations in our last search: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:5]) + '.'),
                (f'How many destinations under 100 € can I reach from {oname}?', f'{len(under)} of the {len(lst)} destinations we track had a return flight under 100 €' + (': ' + ', '.join(dname(r) for r in under[:8]) + ('…' if len(under) > 8 else '.') if under else '.')),
                (f'Which direct flights from {oname} are cheapest?', ('Cheapest direct flights: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in direct[:5]) + '.') if direct else 'In our last search the cheapest options all had at least one stop.')]
         crumbs = [('Home', '/en/'), ('Flight routes', '/en/flights/'), (f'Flights from {oname}', None)]
     else:
-        title = f'Vuelos baratos desde {oname}: precios reales a {len(lst)} destinos'
+        title = f'Vuelos baratos desde {oname}: {len(lst)} destinos desde {lst[0]["price_from"]} € ({NOW_ES})'
         lead = f'Los vuelos de ida y vuelta más baratos desde {oname} que hemos encontrado: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:4]) + f'. {len(under)} destinos por menos de 100 € ida y vuelta y {len(direct)} con vuelo directo.'
         qas = [(f'¿A dónde se puede volar barato desde {oname}?', 'Los destinos más baratos en nuestra última consulta: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:5]) + '.'),
                (f'¿Cuántos destinos hay por menos de 100 € desde {oname}?', f'{len(under)} de los {len(lst)} destinos que vigilamos tenían vuelo de ida y vuelta por menos de 100 €' + (': ' + ', '.join(dname(r) for r in under[:8]) + ('…' if len(under) > 8 else '.') if under else '.')),
