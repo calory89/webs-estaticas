@@ -68,6 +68,7 @@ const altOf = path => l => ORIGIN + pre(l) + path;
 // ------------------------------------------------------------------------------------------------ item 186: /<lang>/tools/
 const ITEM_RX = /<div class="ft-f( look)?"><h3><a href="([^"]+)">([\s\S]*?)<\/a>(?:<span class="ft-tag (ok|note)">([\s\S]*?)<\/span>)?<\/h3><p>([\s\S]*?)<\/p><\/div>/g;
 const TAGS = { 'In your browser': 'tag_browser', 'Photos stay on your phone': 'tag_phone', 'Live lookup': 'tag_live', 'Works offline': 'tag_offline', 'Opens after setup': 'tag_setup' };
+const T34 = { en: ['Due-diligence report builder', 'Search all projects with filters', 'Compare markets'], es: ['Generador de informe de due diligence', 'Buscar proyectos con filtros', 'Comparar mercados'], fr: ['Générateur de rapport de due diligence', 'Rechercher des projets avec filtres', 'Comparer des marchés'], de: ['Due-Diligence-Bericht erstellen', 'Projekte mit Filtern suchen', 'Märkte vergleichen'], nl: ['Due-diligencerapport samenstellen', 'Projecten zoeken met filters', 'Markten vergelijken'], ru: ['Конструктор отчёта due diligence', 'Поиск проектов с фильтрами', 'Сравнить рынки'], zh: ['尽职调查报告生成器', '带筛选搜索项目', '比较市场'], ar: ['منشئ تقرير العناية الواجبة', 'البحث في المشاريع مع مرشحات', 'مقارنة الأسواق'] };   // n34b (batch 34)
 const LOCAL_TOOLS = new Set(['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contract-reader/', '/tools/permit-photo/', '/tools/widget/', '/tools/total-cost/dubai/']);   // tool pages that exist in all 8 languages (checked 18 Nov 2026)
 export function toolsParse(src) {
   const m = /<main[^>]*>([\s\S]*?)<\/main>/.exec(src || ''); if (!m) return null;
@@ -89,7 +90,7 @@ async function toolsHub(u, env, shell, lang) {
   const jump = '<nav class="ft-jump" aria-label="' + esc(t(lang, 't_groups')) + '">' + P.G.map(g => '<a href="#' + g.id + '">' + esc(t(lang, 'g_' + g.id)) + ' <small>' + g.L.length + '</small></a>').join('') + '</nav>';
   const n = P.G.reduce((a, g) => a + g.L.length, 0);
   return page(shell, lang, { title: t(lang, 't_title'), desc: t(lang, 't_desc'), h1: t(lang, 't_title'), lead: t(lang, 't_lead'), canon: ORIGIN + pre(lang) + '/tools/', alt: altOf('/tools/'),
-    crumb: [[null, t(lang, 'tools')]], head: '<link rel="stylesheet" href="' + esc(P.css) + '">', hero: '<p class="k-small"><a href="' + pre(lang) + '/tools/widget/">' + esc(t(lang, 't_widget')) + '</a></p>' + jump,
+    crumb: [[null, t(lang, 'tools')]], head: '<link rel="stylesheet" href="' + esc(P.css) + '">', hero: '<p class="k-small"><a href="' + pre(lang) + '/tools/widget/">' + esc(t(lang, 't_widget')) + '</a>' + (T34[lang] || T34.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/due-diligence/', '/search/', '/markets/compare/'][i] + '">' + esc(x) + '</a>').join('') + '</p>' + jump,   // n34b
     body: '<section class="ft-sec">' + grp + '</section><!-- n31s tools ' + n + ', untranslated ' + untr + ' -->',
     type: 'CollectionPage' });
 }

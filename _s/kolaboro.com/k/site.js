@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=n31a1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
+  var V = { palette: '/k/palette.js?v=n34b1', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -880,7 +880,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   function register() { return navigator.serviceWorker.register('/sw.js', { scope: '/' }); }
   if (canOff) caches.has(SC).then(function (h) { if (h) register().catch(function () {}); }).catch(function () {});   // keep the worker for people who saved something
   // n30b (17 Nov 2026): installable app, offline copies of My projects and recent comparisons, offline banner in 8 languages (k/pwa.js, loaded when idle)
-  (function () { function go() { var s = D.createElement('script'); s.src = '/k/pwa.js?v=n30b3'; s.defer = true; D.head.appendChild(s); } if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 4000 }); else setTimeout(go, 2500); })();
+  (function () { function go() { var s = D.createElement('script'); s.src = '/k/pwa.js?v=n34b1'; s.defer = true; D.head.appendChild(s); } if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 4000 }); else setTimeout(go, 2500); })();
   function assets() {
     var A = {}, add = function (u) { try { var x = new URL(u, location.href); if (x.origin !== location.origin) return; if (/^\/(api\/kb|api\/geo|api\/open\/log|cdn-cgi|__k)\b/.test(x.pathname) || /\.(mp4|pdf|zip)$/i.test(x.pathname)) return; A[norm(x.href)] = 1; } catch (e) {} };
     D.querySelectorAll('link[rel=stylesheet][href],script[src],link[rel=preload][href],link[rel=icon][href]').forEach(function (e) { add(e.href || e.src); });
@@ -1161,4 +1161,38 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     b.appendChild(p); b.appendChild(a); b.appendChild(x); D.head.appendChild(s); D.body.appendChild(b);
   };
   if (D.readyState === 'complete') setTimeout(show, 1200); else addEventListener('load', function () { setTimeout(show, 1200); });
+})();
+/* n34b (21 Nov 2026): 19 print layout for every page (a print-only stylesheet, so nothing blocks rendering; closed sections open while
+   printing; a header line with the address and the date), 18 "since your last visit" on project pages (the public summary of the
+   page is kept in this browser only and compared on the next visit; /k/n34b/seen.js loads only for a returning visitor), 20 the
+   structured correction preview on /corrections/ and /developers/reply/ (/k/n34b/fix.js). */
+(function () {
+  var d = document, P = location.pathname;
+  function add(src) { var s = d.createElement('script'); s.src = src; s.defer = true; d.head.appendChild(s); }
+  try {
+    var l = d.createElement('link'); l.rel = 'stylesheet'; l.media = 'print'; l.href = '/k/n34b/print.css?v=b1'; d.head.appendChild(l);
+    var D = [];
+    addEventListener('beforeprint', function () {
+      var dt = ''; try { dt = new Date().toLocaleDateString(d.documentElement.lang || 'en', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) {}
+      d.documentElement.setAttribute('data-kprint', 'kolaboro.com' + P + ' · ' + dt);
+      D = [].slice.call(d.querySelectorAll('main details:not([open])')); D.forEach(function (x) { x.open = true; });
+    });
+    addEventListener('afterprint', function () { D.forEach(function (x) { x.open = false; }); D = []; });
+  } catch (e) {}
+  if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?corrections\/$|^\/developers\/reply\/$/.test(P)) add('/k/n34b/fix.js?v=b1');
+  var m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?projects\/([a-z0-9-]{1,90})\/$/.exec(P); if (!m) return;
+  function run() {
+    var w = d.getElementById('watch'), k = d.getElementById('checks6'), j = null, u = null;
+    try { j = JSON.parse(w.getAttribute('data-kw')); } catch (e) { return; }
+    try { u = JSON.parse(k.getAttribute('data-u27')); } catch (e) {}
+    if (!j || !j.id || !j.snap) return;
+    var cur = { s: j.snap, p: u && u.p != null ? [u.p, u.c] : null }, all = {}, st = null;
+    try { st = window.localStorage; all = JSON.parse(st.getItem('kb-seen') || '{}') || {}; } catch (e) { return; }
+    var prev = all[j.id], now = new Date().toISOString().slice(0, 10);
+    if (prev && prev.v) { window.KBSeenArgs = { prev: prev, cur: cur, id: j.id, slug: m[2], lang: m[1] || 'en' }; add('/k/n34b/seen.js?v=b1'); }
+    all[j.id] = { v: cur, d: now, f: (prev && prev.f) || now };
+    var ks = Object.keys(all); if (ks.length > 300) ks.sort(function (a, b) { return String(all[a].d).localeCompare(String(all[b].d)); }).slice(0, ks.length - 300).forEach(function (x) { delete all[x]; });
+    try { st.setItem('kb-seen', JSON.stringify(all)); } catch (e) {}
+  }
+  if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', run); else run();
 })();

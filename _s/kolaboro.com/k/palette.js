@@ -138,6 +138,33 @@
       if (root && root.classList.contains('on')) render();
     }).catch(function () {});
   }
+  // n34b (21 Nov 2026): palette v2. Every buyer tool (localized title where the tool page exists in this language), the pages of batch 34,
+  // actions for the page you are on (report, questions, timeline, certificate, compare, print), "compare markets: A, B" when the query
+  // names two or more markets, and a last row that opens /search/ with the query. Labels from /data/n34b-palette.json (8 languages).
+  var X34 = [], X34L = null, X34P = null;
+  function load34() {
+    if (X34P) return X34P;
+    X34P = fetch('/data/n34b-palette.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+      if (!j) return; X34L = j.labels[LG] || j.labels.en; var tr = {}; (j.translated_tools || []).forEach(function (k) { tr['/' + k + '/'] = 1; });
+      (j.tools || []).forEach(function (t) { var ti = (t[2] && t[2][LG]) || t[1], href = (NL && tr[t[0]] ? NL : '') + t[0]; X34.push({ t: 'page', title: ti, sub: X34L.tool + ' · kolaboro.com' + href, href: href, h: norm(ti + ' ' + t[1] + ' tool ' + t[0].replace(/[\/-]/g, ' ')), w: 2 }); });
+      (j.pages || []).forEach(function (p) { var ti = p[1][LG] || p[1].en, href = (p[0] === '/watchlist/' ? '' : NL) + p[0]; X34.push({ t: 'page', title: ti, sub: 'kolaboro.com' + href, href: href, h: norm(ti + ' ' + p[1].en + ' ' + p[2]), w: 3 }); });
+      if (root && root.classList.contains('on')) render();
+    }).catch(function () { X34P = null; });
+    return X34P;
+  }
+  function ctx34(q) {
+    if (!X34L) return [];
+    var m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?projects\/([a-z0-9-]{1,90})\/$/.exec(location.pathname), out = [], qs = norm(q);
+    if (m) { var b = (m[1] ? '/' + m[1] : '') + '/projects/' + m[2] + '/';
+      [['report', b + 'report/'], ['questions', b + 'questions/'], ['timeline', b + 'timeline/'], ['cert', b + 'certificate/'], ['cmpp', '/compare/?p=' + m[2]], ['print', '#print']].forEach(function (a) {
+        var ti = X34L[a[0]]; if (!qs || norm(ti + ' ' + a[0]).indexOf(qs) >= 0) out.push({ it: { t: 'action', title: ti, sub: X34L.act, href: a[1] }, s: 1e8 });
+      }); }
+    if (qs && LASTIX && LASTIX.m) {   // two or more market names in the query: compare them
+      var hit = LASTIX.m.filter(function (k) { var n = norm(k[0]), p = TL ? norm(pl(k[0])) : n; return (' ' + qs + ' ').indexOf(' ' + n + ' ') >= 0 || (p !== n && (' ' + qs + ' ').indexOf(' ' + p + ' ') >= 0); }).slice(0, 4);
+      if (hit.length >= 2) out.unshift({ it: { t: 'action', title: X34L.cmp.replace('{m}', hit.map(function (k) { return TL ? pl(k[0]) : k[0]; }).join(', ')), sub: 'kolaboro.com' + NL + '/markets/compare/', href: NL + '/markets/compare/?m=' + hit.map(function (k) { return k[1]; }).join(',') }, s: 2e9 });
+    }
+    return out;
+  }
   var LASTIX = null;
   function store() { try { return window.localStorage; } catch (e) { return null; } }
   var loading = null;
@@ -154,7 +181,7 @@
         try { st && st.setItem(LS, JSON.stringify({ at: Date.now(), ix: r.json })); meta.offline = true; } catch (e) { meta.offline = false; }
         if (r.check) r.check.then(function (c) { meta.verified = c.state; foot(); });
       }).catch(function () {});
-    var nm = loadNamed();
+    var nm = loadNamed(); load34();
     loading = cached && cached.ix ? Promise.resolve() : Promise.all([net, nm]);
     return loading;
   }
@@ -176,7 +203,9 @@
   function search(q) {
     var t0 = performance.now(), qs = norm(q).split(' ').filter(Boolean), out = [];
     if (!qs.length) out = items.filter(function (x) { return x.t === 'page'; }).slice(0, 10).map(function (x) { return { it: x, s: 0 }; });
-    else { for (var i = 0; i < items.length; i++) { var s = score(items[i], qs); if (s > 0) out.push({ it: items[i], s: s }); } out.sort(function (a, b) { return b.s - a.s; }); out = out.slice(0, 40); }
+    else { var all = items.concat(X34); for (var i = 0; i < all.length; i++) { var s = score(all[i], qs); if (s > 0) out.push({ it: all[i], s: s }); } out.sort(function (a, b) { return b.s - a.s; }); out = out.slice(0, 40); }
+    out = ctx34(q).concat(out);
+    if (qs.length && X34L) out.push({ it: { t: 'action', title: X34L.all.replace('{q}', q.trim().slice(0, 80)), sub: X34L.allsub, href: NL + '/search/?q=' + encodeURIComponent(q.trim().slice(0, 120)) }, s: 0 });
     var url = /^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q.trim()) && !/^[a-z]{2,6}-\d+$/i.test(q.trim());
     if (url) out.unshift({ it: { t: 'action', title: (TL ? TL.dr[0] : 'Run a desk review of ') + q.trim(), sub: TL ? TL.dr[1] : 'Tool · reads the page and lists what it promises and leaves out', href: (TL ? '/' + LG : '') + '/check?url=' + encodeURIComponent(q.trim()) + '#analyze' }, s: 1e9 });
     return { list: out, ms: performance.now() - t0, total: items.length };
@@ -229,6 +258,7 @@
   }
   function go(i, newTab) {
     var x = last.list[i]; if (!x) return;
+    if (x.it.href === '#print') { close(); setTimeout(function () { window.print(); }, 150); return; }   // n34b
     try { var st = store(), rc = JSON.parse((st && st.getItem(RK)) || '[]').filter(function (h) { return h !== x.it.href; }); rc.unshift(x.it.href); st && st.setItem(RK, JSON.stringify(rc.slice(0, 8))); } catch (e) {}
     try { if (window.kbEvent) kbEvent('palette_open_result', { type: x.it.t }); } catch (e) {}
     if (newTab) window.open(x.it.href, '_blank', 'noopener'); else { close(true); location.href = x.it.href; }

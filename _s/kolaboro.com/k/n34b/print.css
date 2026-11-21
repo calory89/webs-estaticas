@@ -1,0 +1,25 @@
+/* Kolaboro print layout (n34b, 21 Nov 2026), loaded with media=print on every page by /k/site.js: clean pages for project, developer
+   and report pages. Navigation, buttons, forms and banners go; sections print open (site.js opens closed ones on beforeprint); every
+   source link prints its full address; a header line carries the page address and the date it was printed (data-kprint). */
+@page { margin: 14mm 12mm; }
+html, body { background: #fff !important; color: #000 !important; }
+body { font-size: 11pt; line-height: 1.45; }
+header, footer, nav, .mcta, .cc, .totop, .skip, .lsw, #shipT, .k-ticker, .ktick, .ship, .k31-lo, .kxp, .kseen button, iframe, video, form, button,
+.kbtn, .btn, .k-btn, .ke-acts, .n34-acts, .n34-rel, .n34-pg, .n32-rel, [data-kx-search], .kfollow, #watch, #cta, #next, #nl-email, .news, .kw-e, .k31-as { display: none !important; }
+html[data-kprint]::before { content: attr(data-kprint); display: block; font: 9pt/1.3 system-ui, sans-serif; color: #444; border-bottom: 1px solid #999; padding: 0 0 4px; margin: 0 0 10px; }
+main, .wrap, .kwrap, .k-wrap { max-width: none !important; padding-left: 0 !important; padding-right: 0 !important; }
+.phero { padding: 0 !important; background: none !important; }
+section, .ks { content-visibility: visible !important; contain-intrinsic-size: auto !important; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+h1 { font-size: 18pt; margin: 0 0 6pt; }
+h2 { font-size: 13pt; margin: 14pt 0 4pt; break-after: avoid; page-break-after: avoid; }
+h3 { font-size: 11.5pt; break-after: avoid; }
+li, tr, figure, .kfact, .ke-l > li, .n34-q > li { break-inside: avoid; page-break-inside: avoid; }
+table { border-collapse: collapse; width: 100% !important; min-width: 0 !important; }
+th, td { border-bottom: 1px solid #bbb !important; padding: 3pt 5pt !important; }
+[class*="-tw"], .k-table-wrap, .ktr-tw { overflow: visible !important; border: 0 !important; }
+a { color: #000 !important; text-decoration: underline; }
+a.k-src[href^="http"]::after, a.src[href^="http"]::after, a.ke-src[href^="http"]::after, #sources a[href^="http"]::after, .n34-q a[href^="http"]::after, a[rel~="nofollow"][href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; word-break: break-all; color: #333; }
+svg, img { max-width: 100% !important; break-inside: avoid; }
+.muted, .k-xs, small { color: #333 !important; }

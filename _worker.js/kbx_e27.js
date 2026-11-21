@@ -129,7 +129,7 @@ const inWeek = (e, w) => e.d >= w && e.d < addD(w, 7);
 const CSS = '<style id="ke27-css">.ke{padding-bottom:40px}.ke h2{margin:28px 0 8px}.ke-sum{color:var(--muted,#56636F);margin:0 0 10px}.ke-l{list-style:none;padding:0;margin:0 0 18px}.ke-l>li{padding:10px 0;border-bottom:1px solid var(--line,#d5d3cc)}.ke-l>li>a{font-weight:700}' +
   '.ke-l ul{margin:4px 0 0;padding-inline-start:18px}.ke-l small{color:var(--muted,#56636F)}.ke-src{font-size:.85rem}.ke-tw{overflow-x:auto}.ke-t{width:100%;border-collapse:collapse;margin:8px 0 18px}.ke-t th,.ke-t td{text-align:start;padding:9px 8px;border-bottom:1px solid var(--line,#d5d3cc);vertical-align:top}.ke-t td.n{font-variant-numeric:tabular-nums;white-space:nowrap}' +
   '.ke-f{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:14px 0}.ke-note{max-width:760px;color:var(--ink-2,#3a4651)}.ke-acts{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.ke-acts a,.ke-acts button{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:1.5px solid var(--ink,#17212B);border-radius:12px;background:var(--card,#fff);color:var(--ink,#17212B);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}' +
-  '.ke-ok{color:var(--k-ok,#1d7a46)}.ke-mid{color:var(--k-warn,#9a6200)}.ke-no{color:var(--muted,#56636F)}@media print{header,footer,nav,.k-ticker,.ktick,.ke-acts,.lsw,.skip{display:none!important}body{background:#fff!important;color:#000}.ke a{color:#000}.ke a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;word-break:break-all}.phero{padding:0!important}}</style>';
+  '.ke-ok{color:var(--k-ok,#1d7a46)}.ke-mid{color:var(--k-warn,#9a6200)}.ke-no{color:var(--muted,#56636F)}@media print{@page{margin:14mm 12mm}header,footer,nav,.k-ticker,.ktick,.ke-acts,.lsw,.skip,.mcta,.cc,.totop,#shipT{display:none!important}.ke h2{break-after:avoid;margin-top:16px}.ke-l>li,.n34-q>li,.ke-t tr{break-inside:avoid}.ke-ref{border:1px solid #999;padding:6px 8px}.n34-q>li::before{border-color:#999}body{background:#fff!important;color:#000}.ke a{color:#000}.ke a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;word-break:break-all}.phero{padding:0!important}}</style>';
 async function htmlPage(env, ctx, shell, lang, pg, noindex) {
   let html = await N.assemble(Object.assign({ ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.title, url: pg.canon, inLanguage: lang } }, pg, { body: CSS + pg.body }), lang, await shell(pre(lang) + '/how-we-score/'));
   if (noindex) html = html.replace('</head>', '<meta name="robots" content="noindex, follow"></head>');
@@ -167,17 +167,27 @@ const STW = { yes: ['✓', 'ke-ok'], part: ['◐', 'ke-mid'], no: ['○', 'ke-no
 const stWord = (lang, st) => st === 'yes' ? N.tr(lang, 'v_pub') : st === 'no' ? N.tr(lang, 'v_notpub') : t(lang, 'st_' + st);
 async function reportPage(req, u, env, ctx, shell, lang, x) {
   const R = await reportData(env, x, lang), name = x.n, b = s => bd(lang, s);
+  // n34b (batch 34): sections chosen in the due-diligence builder (?s=f&s=c or ?s=f,c; all when absent), questions to ask, report reference
+  const SEC = ['f', 'c', 'q', 'h', 's'], want = new Set(u.searchParams.getAll('s').join(',').split(',').map(v => v.trim()).filter(v => SEC.includes(v)));
+  const on = k => !want.size || want.has(k);
+  let X34 = null; try { X34 = await import('./kbx_n34b.js'); await X34.ready(env); } catch (e) { X34 = null; }
+  const tx = (k, v) => X34 ? X34.tx(lang, k, v) : '';
   const a = (u2, l) => u2 ? ' <a class="ke-src" href="' + esc(u2) + '"' + (/^https?:/.test(u2) && !u2.startsWith(ORIGIN) ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(l || t(lang, 'src')) + '</a>' : '';
   let body = hero(lang, esc(t(lang, 'rp_h1', { n: name })), esc(t(lang, 'rp_sub', { d: N.fd(R.today, lang) })));
-  let w = '<div class="ke-acts"><a href="' + pre(lang) + '/projects/' + x.s + '/report.pdf" download>' + esc(PDF_LANGS.has(lang) ? t(lang, 'rp_pdf') : t(lang, 'rp_pdf_en')) + '</a><button type="button" onclick="window.print()">' + esc(t(lang, 'rp_print')) + '</button><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(t(lang, 'rp_back')) + '</a></div>';
-  if (R.qa) w += '<h2>' + esc(N.tr(lang, 's_glance')) + '</h2><p>' + b(esc(R.qa)) + '</p>';
-  w += '<h2>' + esc(t(lang, 'rp_facts')) + '</h2><div class="ke-tw"><table class="ke-t"><tbody>' + R.F.map(f => '<tr><th scope="row">' + esc(f[0]) + '</th><td>' + b(esc(f[1])) + a(f[2]) + '</td></tr>').join('') + '</tbody></table></div>';
-  if (R.tp) {
+  let w = '<div class="ke-acts"><a href="' + pre(lang) + '/projects/' + x.s + '/report.pdf" download>' + esc(PDF_LANGS.has(lang) ? t(lang, 'rp_pdf') : t(lang, 'rp_pdf_en')) + '</a><button type="button" onclick="window.print()">' + esc(t(lang, 'rp_print')) + '</button><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(t(lang, 'rp_back')) + '</a>' + (X34 ? '<a href="' + pre(lang) + '/tools/due-diligence/?p=' + x.s + '">' + esc(tx('rp_build')) + '</a>' : '') + '</div>';
+  if (X34) { let sha = ''; try { const B = await import('./kbx_n30b.js'); sha = String((await B.chain(env)).live.sha256 || ''); } catch (e) { sha = ''; }
+    const self = ORIGIN + pre(lang) + '/projects/' + x.s + '/report/' + (want.size ? '?s=' + SEC.filter(k => want.has(k)).join(',') : '');
+    w += '<p class="ke-note ke-ref">' + esc(tx('rp_ref', { id: x.id + '-' + R.today.replace(/-/g, ''), d: N.fd(R.today, lang), v: (R.ix.named && R.ix.named.version) || '', u: N.fd((R.ix.named && R.ix.named.updated) || R.ix.updated, lang), h: sha.slice(0, 16) || '-' })) + ' ' + esc(tx('rp_share')) + ' <a href="' + esc(self) + '" dir="ltr">' + esc(self.replace(ORIGIN, 'kolaboro.com')) + '</a>' +
+      (want.size ? ' ' + esc(tx('rp_secs', { s: SEC.filter(k => want.has(k)).map(k => tx('sec_' + k)).join(', ') })) : '') + '</p>'; }
+  if (R.qa && on('f')) w += '<h2>' + esc(N.tr(lang, 's_glance')) + '</h2><p>' + b(esc(R.qa)) + '</p>';
+  if (on('f')) w += '<h2>' + esc(t(lang, 'rp_facts')) + '</h2><div class="ke-tw"><table class="ke-t"><tbody>' + R.F.map(f => '<tr><th scope="row">' + esc(f[0]) + '</th><td>' + b(esc(f[1])) + a(f[2]) + '</td></tr>').join('') + '</tbody></table></div>';
+  if (R.tp && on('c')) {
     w += '<h2>' + esc(t(lang, 'rp_tr')) + '</h2><p><b>' + esc(t(lang, 'rp_score', { s: nf(R.tp.score, lang) })) + '</b>' + R.tp.ranks.filter(r => r.ranked).map(r => ' · ' + esc(t(lang, 'rp_rank', { r: nf(r.r, lang), m: nf(r.m, lang), p: r.p }))).join('') + a(R.tp.method, 'kolaboro.com') + '</p>' +
       '<ul class="ke-l">' + R.tp.items.map(i => '<li><span class="' + (STW[i.st] || STW.nc)[1] + '" aria-hidden="true">' + (STW[i.st] || STW.nc)[0] + '</span> <b>' + esc(i.label) + '</b>: ' + b(esc(i.text || stWord(lang, i.st))) + '</li>').join('') + '</ul>';
   }
-  w += '<h2>' + esc(t(lang, 'rp_ch')) + '</h2>' + (R.ev.length ? '<ul class="ke-l">' + R.ev.map(e => '<li><small>' + esc(N.fd(e.d, lang)) + '</small> ' + b(esc(evText(lang, e))) + a(e.src) + '</li>').join('') + '</ul>' : '<p>' + esc(N.tr(lang, 'no_hist')) + '</p>');
-  w += '<h2>' + esc(N.tr(lang, 's_sources')) + '</h2><ul>' + R.srcs.map(s => '<li><a href="' + esc(s) + '" rel="nofollow noopener" target="_blank">' + esc(s.length > 100 ? s.slice(0, 100) + '...' : s) + '</a></li>').join('') + '</ul>';
+  if (X34 && on('q')) { try { const Q = await X34.questionsFor(env, x, lang, R.tp); w += X34.QCSS + '<h2>' + esc(tx('rp_q')) + '</h2>' + X34.questionsHtml(lang, Q, { h3: true }) + '<p><a href="' + pre(lang) + '/projects/' + x.s + '/questions/">' + esc(tx('rp_qall')) + '</a></p>'; } catch (e) {} }
+  if (on('h')) w += '<h2>' + esc(t(lang, 'rp_ch')) + '</h2>' + (R.ev.length ? '<ul class="ke-l">' + R.ev.map(e => '<li><small>' + esc(N.fd(e.d, lang)) + '</small> ' + b(esc(evText(lang, e))) + a(e.src) + '</li>').join('') + '</ul>' : '<p>' + esc(N.tr(lang, 'no_hist')) + '</p>');
+  if (on('s')) w += '<h2>' + esc(N.tr(lang, 's_sources')) + '</h2><ul>' + R.srcs.map(s => '<li><a href="' + esc(s) + '" rel="nofollow noopener" target="_blank">' + esc(s.length > 100 ? s.slice(0, 100) + '...' : s) + '</a></li>').join('') + '</ul>';
   w += '<p class="ke-note">' + esc(t(lang, 'rp_note', { u: '' })) + ' <a href="' + esc(R.live) + '">' + esc(R.live) + '</a></p><p class="ke-note">' + esc(t(lang, 'rp_lic')) + '</p>';
   body += wrap(lang, w);
   const canon = ORIGIN + pre(lang) + '/projects/' + x.s + '/report/';

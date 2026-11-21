@@ -78,6 +78,7 @@ export function slipLine(ix, x, lang, handoverOf, fd) {
   } catch (e) { return ''; }
 }
 // market pages (/m/<market>/ and /<lang>/m/<market>/): a short block with the market's figures and the link to the method page
+const CMP34 = { en: 'Compare {mk} with other markets', es: 'Comparar {mk} con otros mercados', fr: 'Comparer {mk} à d\'autres marchés', de: '{mk} mit anderen Märkten vergleichen', nl: '{mk} vergelijken met andere markten', ru: 'Сравнить {mk} с другими рынками', zh: '将{mk}与其他市场比较', ar: 'قارن {mk} بأسواق أخرى' };
 export async function slipBlock(env, mkSlug, lang) {
   const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
   const r = S0.rows.find(o => slugM(o.mk) === slugM(mkSlug) || String(o.mk).toLowerCase() === String(mkSlug).toLowerCase()); if (!r) return '';
@@ -85,7 +86,7 @@ export async function slipBlock(env, mkSlug, lang) {
   const line = r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) }) : t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
   return '<section class="sec n30s" id="slippage"><div class="wrap"><h2>' + esc(t30(lang, 'sl_blk_h', { mk: mkN })) + '</h2><p>' + esc(line) + '</p>' +
     (r.n >= MIN_N ? '<p class="k-muted">' + esc(t30(lang, 'sl_th')[3]) + ': ' + nf(r.p25, lang) + ' – ' + nf(r.p75, lang) + ' · ' + esc(t30(lang, 'sl_th')[5]) + ': ' + nf(r.notdue, lang) + ' · ' + esc(t30(lang, 'sl_upd', { d: N.fd(S0.day, lang) })) + '</p>' : '') +
-    '<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a></p></div></section>';
+    '<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="' + pre(lang) + '/markets/compare/?m=' + encodeURIComponent(slugM(r.mk)) + '" rel="nofollow">' + esc((CMP34[lang] || CMP34.en).replace('{mk}', mkN)) + '</a></p></div></section>';   // n34b: market comparison
 }
 async function slipApi(env, csv) {
   const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);

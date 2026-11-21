@@ -41,6 +41,16 @@ async function shellPage(shell, lang, o) {
 }
 
 // ------------------------------------------------------------------------------------------------ item 18: price history pages
+const A11Y = {   // n34b (item 16): chart summary and data table labels
+  en: { sum: 'Median index of the {n} projects: {a} on {d1}, {b} on {d2}.', tbl: 'Data table of the median line', d: 'Date', m: 'Median index (first copy = 100)' },
+  es: { sum: 'Índice mediano de los {n} proyectos: {a} el {d1}, {b} el {d2}.', tbl: 'Tabla de datos de la línea mediana', d: 'Fecha', m: 'Índice mediano (primera copia = 100)' },
+  fr: { sum: 'Indice médian des {n} projets : {a} le {d1}, {b} le {d2}.', tbl: 'Tableau des données de la ligne médiane', d: 'Date', m: 'Indice médian (première copie = 100)' },
+  de: { sum: 'Medianindex der {n} Projekte: {a} am {d1}, {b} am {d2}.', tbl: 'Datentabelle der Medianlinie', d: 'Datum', m: 'Medianindex (erste Kopie = 100)' },
+  nl: { sum: 'Mediane index van de {n} projecten: {a} op {d1}, {b} op {d2}.', tbl: 'Gegevenstabel van de mediaanlijn', d: 'Datum', m: 'Mediane index (eerste kopie = 100)' },
+  ru: { sum: 'Медианный индекс {n} проектов: {a} на {d1}, {b} на {d2}.', tbl: 'Таблица данных медианной линии', d: 'Дата', m: 'Медианный индекс (первая копия = 100)' },
+  zh: { sum: '{n} 个项目的中位指数：{d1} 为 {a}，{d2} 为 {b}。', tbl: '中位线数据表', d: '日期', m: '中位指数（首份副本 = 100）' },
+  ar: { sum: 'المؤشر الوسيط لـ{n} مشروعًا: {a} في {d1}، و{b} في {d2}.', tbl: 'جدول بيانات الخط الوسيط', d: 'التاريخ', m: 'المؤشر الوسيط (النسخة الأولى = 100)' }
+};
 function phChart(e, lang) {
   const W = 720, Hh = 300, pl = 44, pr = 12, pt = 12, pb = 30, ms = d => Date.parse(d + 'T00:00:00Z');
   const t0 = ms(e.a), t1 = Math.max(ms(e.b), t0 + 864e5 * 30);
@@ -57,8 +67,13 @@ function phChart(e, lang) {
   const days = [...new Set(e.L.flatMap(r => r.pts.map(p => p[0])))].sort(), med = [];
   for (const d of days) { const v = []; for (const r of e.L) { if (r.pts[0][0] > d) continue; let last = null; for (const p of r.pts) { if (p[0] <= d) last = p[1]; else break; } v.push(last); } if (v.length >= 3) med.push([d, quant(v, .5)]); }
   const ml = med.length > 1 ? '<polyline class="n3-med" points="' + med.map(p => X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join(' ') + '"/>' : '';
-  return '<figure class="kph-fig"><svg class="kph-svg" viewBox="0 0 ' + W + ' ' + Hh + '" role="img" aria-label="' + esc(t(lang, 'ph_chart', { n: e.L.length })) + '">' + g + lines + ml + '</svg><figcaption>' + esc(t(lang, 'ph_chart', { n: num(e.L.length, lang) })) + '</figcaption></figure>' +
-    '<style>.kph-fig{margin:14px 0;max-width:760px}.kph-svg{width:100%;height:auto;display:block}.kph-grid{stroke:var(--k-line,#d5dbd8);stroke-width:1}.kph-ax{font-size:12px;fill:var(--k-muted,#56636F)}.n3-pl{fill:none;stroke:var(--k-sea,#155C75);stroke-width:1.4;opacity:.45}.n3-med{fill:none;stroke:var(--k-ink,#17212B);stroke-width:3.5}@media(max-width:600px){.kph-ax{font-size:20px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}</style>';
+  // n34b (batch 34, item 16): a text summary, keyboard focus and the median line as a data table under the chart
+  const A11 = A11Y[lang] || A11Y.en, sid = 'kph-s' + (e.mk ? String(e.mk).toLowerCase().replace(/[^a-z0-9]+/g, '') : 'all');
+  const sum = med.length > 1 ? A11.sum.replace('{n}', num(e.L.length, lang)).replace('{a}', num(med[0][1], lang, 1)).replace('{d1}', fdt(med[0][0], lang)).replace('{b}', num(med[med.length - 1][1], lang, 1)).replace('{d2}', fdt(med[med.length - 1][0], lang)) : '';
+  const tbl = med.length > 1 ? '<details class="kph-dt"><summary>' + esc(A11.tbl) + '</summary><div class="k-table-wrap" tabindex="0"><table><thead><tr><th scope="col">' + esc(A11.d) + '</th><th scope="col" class="k-n">' + esc(A11.m) + '</th></tr></thead><tbody>' +
+    (med.length > 80 ? med.filter((p, i) => i % Math.ceil(med.length / 80) === 0 || i === med.length - 1) : med).map(p => '<tr><td>' + esc(fdt(p[0], lang)) + '</td><td class="k-n">' + num(p[1], lang, 1) + '</td></tr>').join('') + '</tbody></table></div></details>' : '';
+  return '<figure class="kph-fig"><svg class="kph-svg" viewBox="0 0 ' + W + ' ' + Hh + '" role="img" tabindex="0" aria-label="' + esc(t(lang, 'ph_chart', { n: e.L.length })) + '"' + (sum ? ' aria-describedby="' + sid + '"' : '') + '>' + g + lines + ml + '</svg><figcaption>' + esc(t(lang, 'ph_chart', { n: num(e.L.length, lang) })) + (sum ? ' <span id="' + sid + '">' + esc(sum) + '</span>' : '') + '</figcaption></figure>' + tbl +
+    '<style>.kph-svg:focus{outline:2px solid var(--k-sea,#155C75);outline-offset:4px}.kph-dt{margin:0 0 16px;max-width:760px}.kph-dt summary{min-height:44px;display:flex;align-items:center;cursor:pointer}.kph-fig{margin:14px 0;max-width:760px}.kph-svg{width:100%;height:auto;display:block}.kph-grid{stroke:var(--k-line,#d5dbd8);stroke-width:1}.kph-ax{font-size:12px;fill:var(--k-muted,#56636F)}.n3-pl{fill:none;stroke:var(--k-sea,#155C75);stroke-width:1.4;opacity:.45}.n3-med{fill:none;stroke:var(--k-ink,#17212B);stroke-width:3.5}@media(max-width:600px){.kph-ax{font-size:20px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}</style>';
 }
 const pctS = (v, lang) => (v > 0 ? '+' : v < 0 ? '−' : '') + num(Math.abs(v), lang, 1) + '%';
 async function priceHistory(u, env, shell, lang, mkS) {

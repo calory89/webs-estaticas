@@ -37,6 +37,7 @@ export function knownLine(lang, L6) {
 export const nrNote = lang => '<p class="k31nr" role="note"><b>' + esc(t31(lang, 'nr_h')) + '</b> ' + esc(t31(lang, 'nr_t')) + ' <a href="' + pre(lang) + '/how-we-work/">' + esc(t31(lang, 'nr_l')) + '</a></p>';
 
 // 134: what to ask the developer about THIS project, from the same states plus deposit protection and price (rules, at most 6)
+const ASK34 = { en: 'All questions, with the reason for each', es: 'Todas las preguntas, con su motivo', fr: 'Toutes les questions, avec leur raison', de: 'Alle Fragen mit Begründung', nl: 'Alle vragen, met de reden', ru: 'Все вопросы с причинами', zh: '全部问题及原因', ar: 'كل الأسئلة مع أسبابها' };
 export function askHtml(lang, o) {
   const Q = [], st = {}; for (const [key, , s] of o.L6) st[key] = s;
   const n = o.n, h = o.h;
@@ -48,7 +49,8 @@ export function askHtml(lang, o) {
   if (st.build && (st.build[0] === 'nc' || st.build[0] === 'part')) Q.push(t31(lang, 'a_build'));
   if (!o.price) Q.push(t31(lang, 'a_price'));
   Q.push(t31(lang, 'a_title'));
-  return '<ol>' + Q.slice(0, 5).map(q => '<li>' + esc(q) + '</li>').join('') + '</ol><p><a class="more" href="/ask-developer/?id=' + encodeURIComponent(o.id) + '" data-k31as>' + esc(t31(lang, 'ask_b')) + '</a></p>';
+  return '<ol>' + Q.slice(0, 5).map(q => '<li>' + esc(q) + '</li>').join('') + '</ol><p><a class="more" href="/ask-developer/?id=' + encodeURIComponent(o.id) + '" data-k31as>' + esc(t31(lang, 'ask_b')) + '</a>' +
+    (o.s ? ' · <a href="' + (lang === 'en' ? '' : '/' + lang) + '/projects/' + o.s + '/questions/" rel="nofollow">' + esc(ASK34[lang] || ASK34.en) + '</a>' : '') + '</p>';   // n34b: every question from the gaps, with reasons
 }
 
 // 135: the three closest projects with a pin in the same place (great-circle distance, at most 25 km)
