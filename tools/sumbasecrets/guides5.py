@@ -461,3 +461,67 @@ GUIDES5 = [
 <li>Carry small notes. Change can be hard to find.</li>
 <li>Learn a few words, see """ + GD("indonesian-phrases-sumba", "useful Indonesian phrases") + """.</li></ul>"""},
 ]
+
+# ---- 21-nov-2026: day trips built from the map data (distances = straight line x 1.35 at ~35 km/h, same rule as the site's tools) ----
+import math as _m
+from places import TOWNS as _T, AIRPORTS as _A
+_ALL = _P + _M
+_CATN = {"beach": "beach", "village": "traditional village", "waterfall": "waterfall", "viewpoint": "viewpoint", "culture": "culture"}
+def _km(a, b):
+    R = 6371; t = _m.radians
+    h = _m.sin(t(b[0]-a[0])/2)**2 + _m.cos(t(a[0]))*_m.cos(t(b[0]))*_m.sin(t(b[1]-a[1])/2)**2
+    return 2*R*_m.asin(_m.sqrt(h))
+def _drive(k):
+    road = k*1.35; mins = max(15, round((road/35*60+10)/15)*15); h, mm = divmod(mins, 60)
+    return (max(1, round(road)) if road < 10 else round(road/5)*5), " ".join(x for x in ((f"{h} h" if h else ""), (f"{mm} min" if mm else "")) if x)
+def _daytrips(slug, base, ll, img, intro, extra):
+    rows = sorted(((_km(ll, p["ll"]), p) for p in _ALL), key=lambda x: x[0])
+    near = [(k, p) for k, p in rows if k*1.35 <= 90][:14]
+    tr = "".join(f"<tr><td>{PL(p['s'], p['en']['n'])}</td><td>{_CATN.get(p['c'], p['c'])}</td><td>~{_drive(k)[0]} km</td><td>~{_drive(k)[1]}</td></tr>" for k, p in near)
+    first = near[:3]
+    body = (f"<p>{intro}</p><p>These are the places on our map within about 90 km by road of {base}, closest first. Drive times are estimates from straight-line distance (times 1.35 for the road, about 35 km/h on average); allow more in the rainy season and on village tracks.</p>"
+            f"<h2>Places within reach of {base}</h2><table><thead><tr><th>Place</th><th>Type</th><th>By road</th><th>Drive</th></tr></thead><tbody>{tr}</tbody></table>"
+            f"<h2>An easy half day</h2><p>Start with the closest: " + ", ".join(PL(p['s'], p['en']['n']) for k, p in first) + f". All three are within about {_drive(first[-1][0])[1]} of {base}.</p>"
+            f"<h2>Plan it</h2><p>{extra} Check any route between two points with our {GD('trip-tools', 'trip planner tools').replace('/guide/trip-tools/', '/tools/')} and see everything on the {MAP}.</p>")
+    t = f"Day trips from {base}: {len(near)} places within 90 km"
+    return {"s": slug, "img": img, "t": t, "d": f"Beaches, villages, waterfalls and viewpoints you can reach in a day from {base}, Sumba, with road distance and drive time for each.", "b": body,
+            "faq": [[f"What is closest to {base}?", f"{near[0][1]['en']['n']}, about {_drive(near[0][0])[0]} km by road ({_drive(near[0][0])[1]}), then {near[1][1]['en']['n']} and {near[2][1]['en']['n']}."]]}
+_TW = {t["s"]: t["ll"] for t in _T}
+GUIDES5 += [
+ _daytrips("day-trips-from-tambolaka", "Tambolaka", _A[0]["ll"], "weekuri-lagoon", "Tambolaka has the island's busiest airport and is the natural base for Southwest Sumba: the Kodi coast, Weekuri Lagoon and the big beaches of the west.", "Many visitors land at Tambolaka in the morning and see a first beach the same afternoon."),
+ _daytrips("day-trips-from-waikabubak", "Waikabubak", _TW["waikabubak"], "tarung-village", "Waikabubak, capital of West Sumba, sits in green hills surrounded by traditional villages, and is the best base for Marapu culture and the south coast.", "Villages ask for a donation and a guide is recommended; see our etiquette guide before you go."),
+ _daytrips("day-trips-from-waingapu", "Waingapu", _TW["waingapu"], "walakiri-beach", "Waingapu is the largest town on the island and the gateway to East Sumba: savannah hills, ikat-weaving villages and long empty beaches.", "East Sumba is dry and wide; start early, carry water and plan petrol stops."),
+ {"s": "sumba-from-australia", "img": "pero-beach",
+  "t": "Sumba from Australia: how to get there and what to expect",
+  "d": "Getting to Sumba from Australia via Bali, time zone, when to go, money and what makes Sumba different from Bali for Australian travellers.",
+  "b": """<p>For Australians, Sumba is the quiet island next door to Bali: the same time zone as Perth, a short domestic flight from Denpasar, and a world away from Bali's crowds.</p>
+<h2>Getting there</h2><p>There are no direct international flights to Sumba. Fly to Bali (Denpasar) and connect to """ + GD("tambolaka-airport", "Tambolaka") + """ in the west or """ + GD("waingapu-airport", "Waingapu") + """ in the east. Schedules change by season, so check the airlines before you book. See """ + GD("bali-to-sumba", "Bali to Sumba") + """.</p>
+<h2>Time zone</h2><p>Sumba runs on WITA (UTC+8), the same as Bali and Perth, and two or three hours behind Sydney and Melbourne depending on daylight saving.</p>
+<h2>Entry</h2><p>Sumba is part of Indonesia, so the same entry rules as Bali apply. Check the official Indonesian immigration rules for Australian passport holders before you travel; they change from time to time.</p>
+<h2>When to go</h2><p>The dry season, roughly May to October, matches the Australian winter, which makes it popular for surf and sun. April and May are greener. See """ + GD("best-time-weather", "the best time to visit") + """ and """ + GD("surf-sumba", "surfing in Sumba") + """.</p>
+<h2>How Sumba differs from Bali</h2><ul><li>Far fewer visitors and very few big resorts.</li><li>No ride-hailing to rely on: you hire a car with a driver.</li><li>Cash is needed almost everywhere.</li><li>Living traditional culture: Marapu villages, megalithic tombs, the Pasola.</li></ul>
+<p>Read """ + GD("sumba-vs-bali", "Sumba vs Bali") + """, """ + GD("sumba-trip-cost", "how much a trip costs") + """ and """ + GD("health-safety", "health and safety") + """ (ask a travel doctor about malaria).</p>""",
+  "faq": [["Are there direct flights from Australia to Sumba?", "No. Fly to Bali (Denpasar) and take a domestic flight to Tambolaka or Waingapu."], ["Is Sumba on the same time as Perth?", "Yes. Sumba uses WITA (UTC+8), the same as Bali and Perth."]]},
+ {"s": "free-things-to-do-sumba", "img": "wairinding-hill",
+  "t": "Free and almost free things to do in Sumba",
+  "d": "Sunsets, savannah walks, markets, swimming and village visits for a small donation: the best of Sumba that costs little or nothing.",
+  "b": """<p>Getting around Sumba costs money, but most of what you go there for is free or close to it. A small parking fee or a donation to the village is usually all you pay.</p>
+<h2>Free</h2><ul><li><b>Sunsets</b> from the beaches of the west coast and the hills of the east. See """ + GD("best-sunsets-in-sumba", "the best sunsets") + """.</li>
+<li><b>Savannah walks</b> on """ + PL("wairinding-hill", "Wairinding Hill") + """ and around East Sumba.</li>
+<li><b>Swimming</b> at public beaches; always check currents first.</li>
+<li><b>Town markets</b> in the morning. See """ + GD("sumba-markets", "markets in Sumba") + """.</li>
+<li><b>Watching horses</b> on the beaches and in the hills. See """ + GD("sumba-horses", "horses of Sumba") + """.</li></ul>
+<h2>For a small donation</h2><ul><li><b>Traditional villages</b> such as """ + PL("ratenggaro", "Ratenggaro") + """, """ + PL("tarung-village", "Tarung") + """ or """ + PL("prailiu-village", "Prailiu") + """. Pay the family or person the village indicates.</li>
+<li><b>Lagoons and waterfalls</b>, with a parking fee or donation at """ + PL("weekuri-lagoon", "Weekuri Lagoon") + """ or """ + PL("lapopu-waterfall", "Lapopu") + """.</li>
+<li><b>Local guides</b> at villages and waterfalls: not free, but cheap and worth it.</li></ul>
+<h2>Keep costs down</h2><p>Group nearby places on the same day with the """ + MAP + """, share a car and eat in local warung. See """ + GD("sumba-on-a-budget", "Sumba on a budget") + """.</p>"""},
+ {"s": "sumba-vs-komodo-flores", "img": "mandorak-beach",
+  "t": "Sumba or Komodo and Flores? How to choose",
+  "d": "Sumba versus Labuan Bajo, Komodo and Flores: what each island is best for, crowds, activities and how to combine them via Bali.",
+  "b": """<p>Sumba and Flores are both in East Nusa Tenggara and both reached from Bali, but they offer very different trips.</p>
+<h2>Komodo and Flores are best for</h2><ul><li>Komodo dragons in Komodo National Park.</li><li>Boat trips, snorkelling and diving from Labuan Bajo.</li><li>Volcanoes, crater lakes and mountain villages across Flores.</li></ul>
+<h2>Sumba is best for</h2><ul><li>Living traditional culture: Marapu villages, megalithic tombs and the """ + GD("pasola-dates", "Pasola") + """.</li><li>Empty beaches, lagoons and savannah with few other visitors.</li><li>Surf on the south and west coasts.</li></ul>
+<h2>Crowds</h2><p>Labuan Bajo has grown fast as a boat-trip hub. Sumba remains quiet, with fewer tours and fewer visitors.</p>
+<h2>Combining both</h2><p>The simplest way is via Bali: fly Bali to Labuan Bajo for Komodo, back to Bali, then Bali to Sumba. Check current schedules; routes between the islands change.</p>
+<p>See """ + GD("sumba-vs-bali", "Sumba vs Bali") + """, """ + GD("itinerary-7-days", "a 7-day Sumba itinerary") + """ and """ + GD("bali-to-sumba", "Bali to Sumba") + """.</p>"""},
+]
