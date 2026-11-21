@@ -21,7 +21,7 @@ Espacio | Tamaño de la casa | 598
 Para entrar a vivir | Reformada o lista para vivir puntúa más; si necesita obra, menos | 665
 Extras | Jardín, terraza, piscina, sauna, chimenea, vistas, terreno y más | 665
 Mar y lagos | Lo cerca que está del mar o de un lago | 406
-Buen tiempo | Días de buen tiempo al año donde está la casa: máxima de 18–33 °C, seco y poco viento (normales climáticas) | 318
+Buen tiempo | Días de buen tiempo al año donde está la casa: máxima de 18 a 33 °C, seco y con poco viento (normales climáticas) | 318
 Aeropuerto | Aeropuerto con vuelos regulares más cercano: a 20 km o menos puntúa 100 y baja de forma pareja hasta 0 a 200 km o más | 652
 Gastos de compra | Impuestos y gastos de compra en este país: cuanto más bajos, más nota | 621
 Detalle del anuncio | Fotos, tamaño y habitaciones publicados, verificado por nosotros | 665
