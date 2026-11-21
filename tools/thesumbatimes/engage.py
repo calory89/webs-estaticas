@@ -33,7 +33,7 @@ def js(l):
             "if('IntersectionObserver' in window){var seen={},io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){var n=x.target.dataset.block;io.unobserve(x.target);if(!seen[n]){seen[n]=1;ev({k:'v',b:n})}}})},{threshold:.4});"
             "document.querySelectorAll('[data-block]').forEach(function(x){io.observe(x)})}"
             # front page: most read + new since last visit
-            "var mr=document.getElementById('mr');if(mr){fetch('/api/top?l=" + l + "').then(function(r){return r.json()}).then(function(j){if(!j||j.length<3)return;var ol=mr.querySelector('ol');j.forEach(function(x){var li=document.createElement('li'),a=document.createElement('a');a.href=x.u;a.textContent=x.t;li.appendChild(a);ol.appendChild(li)});mr.hidden=false}).catch(function(){});"
+            "var mr=document.getElementById('mr');if(mr){fetch('/api/top?l=" + l + "').then(function(r){return r.json()}).then(function(j){if(!j||j.length<3)return;var ol=mr.querySelector('ol');j.forEach(function(x){var li=document.createElement('li'),a=document.createElement('a');a.href=x.u;a.textContent=x.t;li.appendChild(a);ol.appendChild(li)});mr.hidden=false;if(window.stBal)stBal()}).catch(function(){});"
             "try{var last=+localStorage.getItem('st_seen')||0;if(last){document.querySelectorAll('.brf .bi time[datetime],.strip time[datetime],.lead time[datetime]').forEach(function(tm){if(Date.parse(tm.getAttribute('datetime'))>last){var n=document.createElement('span');n.className='nw';n.textContent='" + t["new"] + "';tm.parentNode.insertBefore(n,tm)}})}"
             "localStorage.setItem('st_seen',String(Date.now()))}catch(e){}}"
             "})()</script>")

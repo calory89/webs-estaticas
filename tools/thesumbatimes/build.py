@@ -259,6 +259,7 @@ header.m{position:relative}.mh{margin:0;font-size:inherit;line-height:1}.ear{pos
 .rel{list-style:none;padding:0;margin:12px 0 0;border-top:1px solid var(--line)}.rel li{padding:8px 0;border-bottom:1px solid var(--line);font:600 15.5px/1.35 Georgia,serif}.rel li:before{content:"▸ ";color:var(--red)}.rel a{text-decoration:none}
 .bi{padding:9px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.3}.bi time{display:block;font:700 11.5px -apple-system,sans-serif;color:var(--red);letter-spacing:.04em;margin-bottom:2px;font-variant-numeric:tabular-nums}.bi a{text-decoration:none;font-weight:600}
 .more{display:inline-block;margin-top:10px;font:600 13px -apple-system,sans-serif;color:var(--accent)}
+.xtra[hidden]{display:none!important}@media(min-width:561px){.grid.noph .card>.ph{display:none}.grid .card>p:not(.k){display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}}.grid>[data-cut]{display:none!important}.tools{list-style:none;padding:0;margin:12px 0 0;border-top:1px solid var(--line)}.tools li{padding:7px 0;border-bottom:1px solid var(--line);font:600 15px/1.35 Georgia,serif}.tools a{text-decoration:none}
 .st h3{font-size:19px;line-height:1.2;margin:.1em 0 .25em}.st h3 a{text-decoration:none}.st .dk{font-size:15.5px;color:var(--muted);margin:.2em 0 .3em;line-height:1.45}.st .ph{display:block;margin-bottom:8px}.st img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block;background:var(--line)}
 .live{margin-bottom:20px}.lv{display:grid;grid-template-columns:1fr;gap:0;font:14px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.lv div{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dotted var(--line)}.lv b{font-weight:600}.lv span{color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}.src2{font:11px -apple-system,sans-serif;color:var(--muted);margin:6px 0 0}
 .desk .st h3{font-size:21px}.plan{display:block;margin-top:14px;background:var(--ink);color:var(--bg);padding:13px 14px;border-radius:3px;text-decoration:none;font:14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.plan b{display:block;font-size:15px;margin-bottom:3px}.plan:hover{color:var(--bg);opacity:.92}
@@ -269,7 +270,7 @@ header.m{position:relative}.mh{margin:0;font-size:inherit;line-height:1}.ear{pos
 .c4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
 .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
 .bottom{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,1.2fr);gap:26px;padding:22px 0}
-.fg{display:grid;grid-template-columns:1fr 1fr;gap:0}.fg a{display:block;padding:10px 8px 10px 0;border-bottom:1px solid var(--line);text-decoration:none}.fg b{display:block;font:700 30px/1 'Cormorant Garamond',Georgia,serif;color:var(--red)}.fg span{font:13px/1.35 -apple-system,sans-serif;color:var(--muted)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:0}.fg a{display:block;padding:10px 8px 10px 0;border-bottom:1px solid var(--line);text-decoration:none}.fg b{display:block;font:700 30px/1 'Cormorant Garamond',Georgia,serif;color:var(--red)}.fg span{display:block;font:13px/1.35 -apple-system,sans-serif;color:var(--muted)}
 .ess ol{margin:0;padding-left:22px;font-size:16px;line-height:1.35}.ess li{padding:6px 0;border-bottom:1px solid var(--line)}.ess a{text-decoration:none;font-weight:600}
 .letter .st h3{font-style:italic;font-size:22px}.letter .sub{margin-top:12px}
 article p:first-of-type .dl+*{}
@@ -403,11 +404,24 @@ FOOT = [("/{l}/plan/", {"en": "Plan your trip", "es": "Planifica tu viaje", "id"
         ("/{l}/places/", {"en": "Places", "es": "Lugares", "id": "Tempat"}), ("/{l}/best/", {"en": "Best of Sumba", "es": "Lo mejor de Sumba", "id": "Terbaik di Sumba"}), ("/{l}/sumba-in/", {"en": "Sumba month by month", "es": "Sumba mes a mes", "id": "Sumba bulan demi bulan"}), ("/{l}/faq/", {"en": "FAQ", "es": "Preguntas frecuentes", "id": "Tanya jawab"}), ("/{l}/glossary/", {"en": "Glossary", "es": "Glosario", "id": "Glosarium"}), ("/{l}/topic/", {"en": "Topics", "es": "Temas", "id": "Topik"}), ("/{l}/week/", {"en": "This week", "es": "Esta semana", "id": "Pekan ini"}),
         ("/{l}/press/", {"en": "Press", "es": "Prensa", "id": "Pers"}), ("/{l}/sitemap/", {"en": "Site map", "es": "Mapa del sitio", "id": "Peta situs"})]
 _FJS = {}
+BAL_JS = ("<script>(function(){function bot(c){var t=c.getBoundingClientRect().top,m=0;for(var i=0;i<c.children.length;i++){var k=c.children[i];if(k.hidden)continue;var b=k.getBoundingClientRect();if(b.height)m=Math.max(m,b.bottom)}return m-t}"
+          "function fit(){document.querySelectorAll('.grid').forEach(function(g){g.style.gridTemplateColumns='';[].forEach.call(g.children,function(k){k.removeAttribute('data-cut')});"
+          "var cs=[].filter.call(g.children,function(k){return k.classList.contains('card')});if(cs.length){var w=cs.filter(function(k){return k.querySelector('.ph')}).length;g.classList.toggle('noph',w>0&&w<cs.length)}"
+          "var n=g.children.length,c=getComputedStyle(g).gridTemplateColumns.split(' ').length;if(c<2||n%c===0)return;"
+          "for(var k=c-1;k>=2;k--){if(n%k===0&&g.clientWidth/k>=220){g.style.gridTemplateColumns='repeat('+k+',minmax(0,1fr))';return}}"
+          "if(n<c){g.style.gridTemplateColumns='repeat('+n+',minmax(0,1fr))';return}var bk=c;for(var k=c;k>=2;k--){if(g.clientWidth/k>=220&&n%k<n%bk)bk=k}"
+          "if(bk!==c)g.style.gridTemplateColumns='repeat('+bk+',minmax(0,1fr))';for(var i=n-n%bk;i<n;i++)g.children[i].setAttribute('data-cut','')})}"
+          "function bal(){fit();document.querySelectorAll('[data-bal]').forEach(function(g){var cols=[].slice.call(g.children);g.querySelectorAll('.xtra').forEach(function(x){x.hidden=true});g.querySelectorAll('[data-sp]').forEach(function(x){x.style.paddingTop=x.style.paddingBottom='';x.removeAttribute('data-sp')});"
+          "if(getComputedStyle(g).gridTemplateColumns.split(' ').length<2)return;var tg=Math.max.apply(null,cols.map(bot));"
+          "cols.forEach(function(c){var xs=c.querySelectorAll('.xtra');for(var i=0;i<xs.length;i++){if(xs[i].parentNode.closest('.xtra[hidden]'))continue;xs[i].hidden=false;if(bot(c)>tg+2){xs[i].hidden=true;break}}"
+          "var d=tg-bot(c),rs=[].filter.call(c.querySelectorAll('.bi,.rel li,.ess li,.tools li,.lv div'),function(r){return r.offsetParent!==null});if(d>2&&rs.length){var pp=Math.min(d/rs.length/2,18);rs.forEach(function(r){var cs=getComputedStyle(r);r.setAttribute('data-sp','');r.style.paddingTop=(parseFloat(cs.paddingTop)+pp)+'px';r.style.paddingBottom=(parseFloat(cs.paddingBottom)+pp)+'px'})}})})}"
+          "window.stBal=bal;bal();addEventListener('load',function(){bal();setTimeout(bal,1500)});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(bal);var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(bal,150)})})()</script>")
+
 def footer_scripts(l):
     """Shared footer scripts (newsletter, saved list, assistant, service worker) go to one cached file per language instead of being repeated in every page."""
     if l not in _FJS:
         import hashlib
-        raw = sub_js(l) + reader_tools.saved_js(l) + assistant(l) + engage.js(l) + "<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})</script>"
+        raw = BAL_JS + sub_js(l) + reader_tools.saved_js(l) + assistant(l) + engage.js(l) + "<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})</script>"
         js = ";\n".join(re.findall(r"<script>(.*?)</script>", raw, re.S)); htm = re.sub(r"<script>.*?</script>", "", raw, flags=re.S)
         path = f"/j.{l}.{hashlib.sha1(js.encode()).hexdigest()[:10]}.js"
         _FJS[l] = (htm + engage.spec_rules() + f'<script src="{path}" defer></script>', path, js)
@@ -878,9 +892,24 @@ var a=j[0],b=j[1];function t(x){{return Math.round(x.current.temperature_2m)+'°
 set('wx-wgp',t(a));set('wx-tmc',t(b));set('ear-wx','Waingapu '+t(a));set('wx-sun',a.daily.sunrise[0].slice(11)+' / '+a.daily.sunset[0].slice(11)+' WITA')}}).catch(function(){{set('wx-wgp','–');set('wx-tmc','–');set('wx-sun','–')}});
 fetch('https://open.er-api.com/v6/latest/EUR').then(function(r){{return r.json()}}).then(function(j){{var e=j.rates.IDR,u=j.rates.IDR/j.rates.USD;set('fx','1 € = '+Math.round(e).toLocaleString('{l}')+' IDR · 1 $ = '+Math.round(u).toLocaleString('{l}')+' IDR')}}).catch(function(){{set('fx','–')}});}})();</script>"""
 
-def figures(l):
+TOOLS_T = {
+    "en": [("data", "Open data on Sumba (CSV, JSON, maps)"), ("distances", "Road distances and driving times"), ("flights", "Flights to Sumba"), ("events", "Events calendar"), ("sumba-in", "Weather month by month"), ("earthquakes", "Earthquakes near Sumba"), ("glossary", "Sumba glossary"), ("faq", "Questions about Sumba")],
+    "es": [("data", "Datos abiertos de Sumba (CSV, JSON, mapas)"), ("distances", "Distancias y tiempos por carretera"), ("flights", "Vuelos a Sumba"), ("events", "Calendario de eventos"), ("sumba-in", "El tiempo mes a mes"), ("earthquakes", "Terremotos cerca de Sumba"), ("glossary", "Glosario de Sumba"), ("faq", "Preguntas sobre Sumba")],
+    "id": [("data", "Data terbuka Sumba (CSV, JSON, peta)"), ("distances", "Jarak dan waktu tempuh jalan"), ("flights", "Penerbangan ke Sumba"), ("events", "Kalender acara"), ("sumba-in", "Cuaca bulan demi bulan"), ("earthquakes", "Gempa di sekitar Sumba"), ("glossary", "Glosarium Sumba"), ("faq", "Tanya jawab tentang Sumba")],
+}
+RAIL_MORE_T = {"en": "More guides", "es": "Más guías", "id": "Panduan lainnya"}
+
+def rail_more(l, its):
+    # extra rail block, revealed by the balancer only when the rail is the short column
+    if len(its) < 3: return ""
+    return (f'<section class="desk xtra" hidden><h2 class="rh">{RAIL_MORE_T[l]}</h2>'
+            + "".join(f'<div class="bi"><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in its[:2])
+            + "".join(f'<div class="bi xtra" hidden><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in its[2:]) + "</section>")
+
+def figures(l, tools=False):
     n = N[l]
-    return f'<section class="figs"><h2 class="rh">{n["figures_t"]}</h2><div class="fg">' + "".join(f'<a href="{u}"><b>{esc(v)}</b><span>{esc(t)}</span></a>' for v, t, u in n["figures"]) + "</div></section>"
+    tl = ('<ul class="tools">' + "".join(f'<li class="xtra" hidden><a href="/{l}/{p}/">{esc(t)}</a></li>' for p, t in TOOLS_T[l]) + "</ul>") if tools else ""
+    return f'<section class="figs"><h2 class="rh">{n["figures_t"]}</h2><div class="fg">' + "".join(f'<a href="{u}"><b>{esc(v)}</b><span>{esc(t)}</span></a>' for v, t, u in n["figures"]) + "</div>" + tl + "</section>"
 
 def home(l):
     u = UI[l]; x = X[l]; t = T[l]; n = N[l]; tpl = "/{l}/"
@@ -898,17 +927,23 @@ def home(l):
     s = head(l, "The Sumba Times · " + u["tagline"], u["tagline"] + ". " + x["daily"] + ".", tpl, extra=pre + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, front=True)
     ticker = "".join(f'<a href="{url_of(a,l)}"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m %H:%M")}</time>{esc(a[l]["title"])}</a>' for a in items if kind_of(a) == "brief")
     rel = [a for a in briefs if group_of(a) == group_of(top)][:2]
+    # column balancing (no empty space on the front page): hidden extras that a small script reveals
+    # only while they fit next to the tallest column. brf extras = briefs[11:19] (strip keeps briefs[7:11]).
+    brf_x = briefs[11:19]
+    rail_x = [g for g in guides if g is not feat][10:22]
+    lead_x = ([a for a in briefs[19:] if a not in rel] + [g for g in guides[22:] if g is not feat and g not in rail_x])[:18]
     lead = f"""<div class="lead"><p class="k">{badge(top)}{x["top_story"]} · <a href="/{l}/{group_of(top)}/">{esc(sec_name(l,group_of(top)))}</a></p>
 <a href="{url_of(top,l)}" tabindex="-1" style="display:block">{picture(top,l,"(max-width: 980px) 100vw, 620px",eager=True,cap=False)}</a>
 <h2><a href="{url_of(top,l)}">{esc(top[l]["title"])}</a></h2><p class="dek">{esc(top[l]["dek"])}</p>
 <div class="when">{x["desk"]} · <time datetime="{iso(top)}">{fdate(top,l)}</time></div>
-{('<ul class="rel">' + "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in rel) + '</ul>') if rel else ''}</div>"""
+{('<ul class="rel">' + "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in rel) + "".join(f'<li class="xtra" hidden><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in lead_x) + '</ul>') if (rel or lead_x) else ''}</div>"""
     brief_col = f'<div class="brf"><h2 class="rh">{n["brief_t"]}</h2>' + "".join(
-        f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a><a class="more" href="/{l}/week/">{WEEK_T[l][0]} →</a></div>'
+        f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + "".join(
+        f'<div class="bi xtra" hidden><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in brf_x) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a><a class="more" href="/{l}/week/">{WEEK_T[l][0]} →</a></div>'
     rail = f"""<div class="rail">{reader_tools.live_box_plus(live_box(l), l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
-<a class="plan" href="/{l}/start/"><b>{n["start"]}</b><span>{pages_start.S[l]["desc"].split(":")[0]}.</span></a></section>{engage.most_read_html(l)}</div>"""
+<a class="plan" href="/{l}/start/"><b>{n["start"]}</b><span>{pages_start.S[l]["desc"].split(":")[0]}.</span></a></section>{engage.most_read_html(l)}{rail_more(l, rail_x)}</div>"""
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
-<section class="fp">{brief_col}{lead}{rail}</section>"""
+<section class="fp" data-bal>{brief_col}{lead}{rail}</section>"""
     # secondary strip: next stories with photos (news first, then guides)
     used = {id(top), id(feat)} | {id(a) for a in briefs[:7]}
     strip = [a for a in briefs[7:] + [g for g in guides if id(g) not in used]][:4]
@@ -917,21 +952,24 @@ def home(l):
     # travel section: big feature + list
     tr = [g for g in guides if id(g) not in used and g["section"] in ("things-to-do", "getting-here", "where-to-stay")][:5]
     used |= {id(a) for a in tr}
+    tr_x = [g for g in guides if id(g) not in used and g["section"] in ("things-to-do", "getting-here", "where-to-stay")][:8]
     if tr:
         s += f"""<section class="sec"><div class="hd"><h2>{esc(sec_name(l,"travel"))}</h2><a href="/{l}/travel/">{x["all"]} {esc(sec_name(l,"travel"))} →</a></div>
-<div class="tr">{hl(tr[0], l, "big", img=True, size=1280)}<div class="trl">{"".join(hl(a, l, img=True, when=False) for a in tr[1:5])}</div></div></section>"""
+<div class="tr" data-bal><div class="trb">{hl(tr[0], l, "big", img=True, size=1280)}{"".join(f'<div class="bi xtra" hidden><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in tr_x)}</div><div class="trl">{"".join(hl(a, l, img=True, when=False) for a in tr[1:5])}</div></div></section>"""
     cu = [a for a in items if group_of(a) == "culture" and id(a) not in used][:4]
     used |= {id(a) for a in cu}
     if cu:
         s += f'<section class="sec"><div class="hd"><h2>{esc(sec_name(l,"culture"))}</h2><a href="/{l}/culture/">{x["all"]} {esc(sec_name(l,"culture"))} →</a></div><div class="c4">{"".join(hl(a, l, img=True, when=False) for a in cu)}</div></section>'
     cols = ""
-    for sec in ["business", "living", "projects", "news"]:
+    ncol = 0
+    for sec in ["business", "living", "projects", "news", "culture", "travel"]:
         its = [a for a in items if group_of(a) == sec and kind_of(a) != "letter" and a is not top][:4]
-        if its:
+        if len(its) == 4 and ncol < 4:
+            ncol += 1
             cols += f'<div class="col"><h2 class="rh"><a href="/{l}/{sec}/">{esc(sec_name(l,sec))}</a></h2>' + "".join(f'<div class="bi"><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in its) + "</div>"
     s += f'<section class="cols">{cols}</section>'
-    ess = "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in guides[:10])
-    s += f"""<section class="bottom">{figures(l)}<section class="ess"><h2 class="rh">{n["essential_t"]}</h2><ol>{ess}</ol></section>
+    ess = "".join(f'<li{"" if i < 6 else " class=xtra hidden"}><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for i, a in enumerate(guides[:12]))
+    s += f"""<section class="bottom" data-bal>{figures(l, tools=True)}<section class="ess"><h2 class="rh">{n["essential_t"]}</h2><ol>{ess}</ol></section>
 <section class="letter"><h2 class="rh">{n["letter_t"]}</h2>{hl(LETTER, l, img=False, when=True)}{subscribe(l)}</section></section>"""
     s += pages_start.all_guides_html(globals(), l)
     s += "</main>" + footer(l) + live_js(l) + reader_tools.live_extra_js(l)
