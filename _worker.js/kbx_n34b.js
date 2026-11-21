@@ -132,7 +132,7 @@ export function questionsHtml(l, R, o) {
 async function qPage(env, shell, l, x) {
   const R = await questionsFor(env, x, l), P = pre(l), txt = qText(l, R);
   const mail = 'mailto:?subject=' + encodeURIComponent(tf(l, 'mail_subj', { n: x.n })) + '&body=' + encodeURIComponent(txt.slice(0, 1800));
-  const b = '<p class="k-xs">' + esc(tf(l, 'q_count', { k: nf(R.questions.length, l), n: x.n })) + '</p><div class="n34-acts" id="n34-qa"><button type="button" class="hi" data-copy>' + esc(t(l, 'copy')) + '</button><a class="n34-b" href="' + esc(mail) + '">' + esc(t(l, 'mail')) + '</a><button type="button" onclick="window.print()">' + esc(t(l, 'print')) + '</button><span class="k-xs" aria-live="polite" data-copied></span></div>' +
+  const b = '<p class="k-xs">' + esc(tf(l, 'q_count', { k: nf(R.questions.length, l), n: x.n })) + '</p><div class="n34-acts" id="n34-qa"><button type="button" class="hi" data-copy>' + esc(t(l, 'copy')) + '</button><a class="n34-b" href="' + esc(mail) + '">' + esc(t(l, 'mail')) + '</a><button type="button" data-kb-print>' + esc(t(l, 'print')) + '</button><span class="k-xs" aria-live="polite" data-copied></span></div>' +
     questionsHtml(l, R) + '<textarea id="n34-qtxt" hidden readonly>' + esc(txt) + '</textarea>' +
     '<p><a href="' + P + '/projects/' + x.s + '/">' + esc(tf(l, 'back', { n: x.n })) + '</a> · <a href="' + P + '/projects/' + x.s + '/report/">' + esc(t(l, 'report')) + '</a> · <a href="/ask-developer/?id=' + esc(x.id) + '" rel="nofollow">' + esc(t(l, 'did_answer')) + '</a> · <a href="/api/v1/projects/' + x.s + '/questions?lang=' + l + '">JSON</a></p>' +
     '<h2>' + esc(t(l, 'method')) + '</h2>' + (t(l, 'q_meth') || []).map(p => '<p>' + esc(p) + '</p>').join('') +

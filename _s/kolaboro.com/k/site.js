@@ -1179,6 +1179,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     });
     addEventListener('afterprint', function () { D.forEach(function (x) { x.open = false; }); D = []; });
   } catch (e) {}
+  d.addEventListener('click', function (e) { var b = e.target && e.target.closest && e.target.closest('[data-kb-print]'); if (b) { e.preventDefault(); window.print(); } });   // print buttons (inline onclick is blocked by script-src-attr 'none')
   if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?corrections\/$|^\/developers\/reply\/$/.test(P)) add('/k/n34b/fix.js?v=b1');
   var m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?projects\/([a-z0-9-]{1,90})\/$/.exec(P); if (!m) return;
   function run() {
