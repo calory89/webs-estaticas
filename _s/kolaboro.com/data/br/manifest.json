@@ -1,0 +1,137 @@
+{
+ "files": {
+  "named.json": {
+   "source": "/data/named.json",
+   "source_sha256": "3cfd1a96b6b0ed4ea4d9c583681d1e1cc9f5fc94e706d4f616401d3cdf8583c3",
+   "source_bytes": 7168093,
+   "br": "/data/br/named.json.br",
+   "br_bytes": 876030,
+   "quality": 11,
+   "built": "2026-11-21T08:40:11Z",
+   "seconds": 69.7
+  },
+  "bali-cases.json": {
+   "source": "/data/bali-cases.json",
+   "source_sha256": "bf6b36b7338a894ac7bbcd6a0fe3504992f123bec66fab340f37fa65506c96d2",
+   "source_bytes": 2997134,
+   "br": "/data/br/bali-cases.json.br",
+   "br_bytes": 91533,
+   "quality": 11,
+   "built": "2026-11-21T08:40:24Z",
+   "seconds": 13.0
+  },
+  "claims-index.json": {
+   "source": "/data/claims-index.json",
+   "source_sha256": "71481321c6494b3ba721596b6903ed4f5180a9889e8eada98751168f8d874b5a",
+   "source_bytes": 2702248,
+   "br": "/data/br/claims-index.json.br",
+   "br_bytes": 560783,
+   "quality": 11,
+   "built": "2026-11-21T08:40:48Z",
+   "seconds": 24.6
+  },
+  "price-history.json": {
+   "source": "/data/price-history.json",
+   "source_sha256": "416ae822d670e878a7f71478bfe85bc7dbb7616e53ed7454fd19471b4f3655b0",
+   "source_bytes": 2287289,
+   "br": "/data/br/price-history.json.br",
+   "br_bytes": 256360,
+   "quality": 11,
+   "built": "2026-11-21T08:41:02Z",
+   "seconds": 14.1
+  },
+  "site-3d.json": {
+   "source": "/data/site-3d.json",
+   "source_sha256": "db9af9368d82eb663be8f8520701c1c234b28fda7081ed91f201487a43db7a0a",
+   "source_bytes": 1536907,
+   "br": "/data/br/site-3d.json.br",
+   "br_bytes": 503658,
+   "quality": 11,
+   "built": "2026-11-21T08:41:14Z",
+   "seconds": 12.0
+  },
+  "website-changes.json": {
+   "source": "/data/website-changes.json",
+   "source_sha256": "c9ef540ed6fca1340772713d2d0de37e09924b1eb565aaf142a5ec9953bbfae4",
+   "source_bytes": 782643,
+   "br": "/data/br/website-changes.json.br",
+   "br_bytes": 130979,
+   "quality": 11,
+   "built": "2026-11-21T08:41:16Z",
+   "seconds": 1.5
+  },
+  "entity-graph.json": {
+   "source": "/data/entity-graph.json",
+   "source_sha256": "4dfab54a9c2f6001370360ae1c01b0bf13d8e10f37a81ce6e7b7755e099c04af",
+   "source_bytes": 322912,
+   "br": "/data/br/entity-graph.json.br",
+   "br_bytes": 82570,
+   "quality": 11,
+   "built": "2026-11-21T08:41:17Z",
+   "seconds": 0.7
+  },
+  "construction-index.json": {
+   "source": "/data/construction-index.json",
+   "source_sha256": "a89ab4a248d65203a9f0b56c28342c84076f0ff9fe4d0edcacbabf912d432575",
+   "source_bytes": 130014,
+   "br": "/data/br/construction-index.json.br",
+   "br_bytes": 25880,
+   "quality": 11,
+   "built": "2026-11-21T08:41:17Z",
+   "seconds": 0.4
+  },
+  "catalog.json": {
+   "source": "/data/catalog.json",
+   "source_sha256": "2317a307b7ccf47a04f3f79c5ae77f2b8ec53902c22572334166ecbc51ef8a27",
+   "source_bytes": 442172,
+   "br": "/data/br/catalog.json.br",
+   "br_bytes": 31784,
+   "quality": 11,
+   "built": "2026-11-21T08:41:18Z",
+   "seconds": 0.6
+  },
+  "world-claims.json": {
+   "source": "/data/world-claims.json",
+   "source_sha256": "dcd313296b60befb7fcf5382add55f279bbcc045750643cffcaef3f48b6c2818",
+   "source_bytes": 433612,
+   "br": "/data/br/world-claims.json.br",
+   "br_bytes": 6326,
+   "quality": 11,
+   "built": "2026-11-21T08:41:18Z",
+   "seconds": 0.3
+  },
+  "similar.json": {
+   "source": "/data/similar.json",
+   "source_sha256": "6c9b8a8c1bafdbbef2f14d69e4d5583ed3bbbe6aa0e1d72988b59af1ba195cb6",
+   "source_bytes": 301369,
+   "br": "/data/br/similar.json.br",
+   "br_bytes": 43221,
+   "quality": 11,
+   "built": "2026-11-21T08:41:19Z",
+   "seconds": 0.7
+  },
+  "delta/by-project.json": {
+   "source": "/data/delta/by-project.json",
+   "source_sha256": "f41c44b293e1debd76ec8313f08248e0517cc76c23f6722fa592a503865c16d3",
+   "source_bytes": 141537,
+   "br": "/data/br/delta--by-project.json.br",
+   "br_bytes": 22204,
+   "quality": 11,
+   "built": "2026-11-21T08:41:19Z",
+   "seconds": 0.3
+  },
+  "tlog/index.json": {
+   "source": "/data/tlog/index.json",
+   "source_sha256": "0f5966420dfea8fffdd84e4f8081388856e304ede8b69820ce4c1485fc2e0d18",
+   "source_bytes": 5945,
+   "br": "/data/br/tlog--index.json.br",
+   "br_bytes": 2413,
+   "quality": 11,
+   "built": "2026-11-21T08:41:19Z",
+   "seconds": 0.0
+  }
+ },
+ "type": "kolaboro-brotli-manifest-v1",
+ "rule": "The worker serves /data/<file> from its .br copy (Content-Encoding: br) only to clients that accept br, and only while the SHA-256 of the file it would serve equals source_sha256 (checked once per worker isolate per ETag). Otherwise the normal file is served and Cloudflare compresses it on the fly.",
+ "updated": "2026-11-21T08:41:19Z"
+}

@@ -68,6 +68,7 @@ let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|req
 let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
 let kn34b = null; const KN34B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/due-diligence|markets\/compare|search|projects\/[a-z0-9-]{1,90}\/questions)\/?$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\/questions$/;   // n34b (batch 34): keep equal to PATHS in kbx_n34b.js
 let kn33a = null; const KN33A = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?delays\/?$/;   // n33a (batch 33): keep equal to PATHS in kbx_n33a.js
+let kn34c = null; const KN34C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:engineering\/(?:usage|sdk|performance|monitoring|security|mcp|search-quality)|data\/delta|verify\/transparency-log|embed\/charts)\/?$|^\/embed\/chart\/[a-z0-9-]{2,60}\/?$|^\/api\/v1\/(?:delta(?:\/\d{4}-\d{2}-\d{2}(?:\.sig)?)?|tlog(?:\/proof|\/consistency)?|charts\/[a-z0-9-]{2,60}|monitoring)$/;   // n34c (batch 34): keep equal to PATHS in kbx_n34c.js
 let kn32x = null; const KN32X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/sql|claims\/search|anomalies|graph\/entities|verify\/offline|engineering\/(?:provenance|early-hints)|changes\/live|watch\/website-changes|satellite\/construction-index)\/?$|^\/api\/v1\/(?:stream|provenance)$|^\/sql\/?$/;   // n32x (batch 32): keep equal to PATHS in kbx_n32x.js
 let kn31t = null; const KN31T = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:engineering\/(?:architecture|modules|rollback|licenses|checks|maintenance)|shortcuts|security\/disclosure|press\/cases|press\/data-journalism)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/press(?:\/monthly)?\/?$|^\/api\/v1\/alerts$|^\/security\.txt$/;   // n31t (batch 31): keep equal to PATHS in kbx_n31t.js
 let kn30b = null; const KN30B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:data\/snapshots|api\/docs|engineering\/data-quality|offline|projects\/[a-z0-9-]{1,90}\/certificate)\/?$|^\/api\/v1\/(?:snapshots|openapi\.json|data-quality|changes(?:\/feed\.json)?|projects\/[a-z0-9-]{1,90}\/certificate|developers\/[a-z0-9-]{1,90}\/website)$|^\/manifest\.webmanifest$/;   // n30b (batch 30): keep equal to PATHS in kbx_n30b.js
@@ -454,7 +455,7 @@ export default {
     if (kn33a && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { await kn33a.prep(env, new URL(req.url)); } catch (e) {} }   // n33a (item 79): data card for the /data/ Dataset node
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
-    if (req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
+    if ((req.method === 'GET' || (req.method === 'POST' && /^\/mcp\/?$/.test(new URL(req.url).pathname))) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
     let r = await this.fetch0(req, env, ctx);
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { const u0 = new URL(req.url); if (!u0.search && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|rankings\/transparency|handover|handover\/overdue)\/$/.test(u0.pathname)) { try { if (!k29i) k29i = await import('./kbx_n29i.js'); r = await k29i.hubInject(req, u0, env, r, h => ruPlaces(kbRu(h))); } catch (e) {} } }   // n29i: key figures and Q&A on the hubs (items 93, 95)
     // n31t (batch 31, item 274): every /api/v1 JSON answer up to 512 KB is signed like /api/open/*: header x-kolaboro-signature = Ed25519
@@ -572,6 +573,16 @@ export default {
       if (!kn33a) kn33a = await import('./kbx_n33a.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn33a.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
+    // kolaboro.com (n34c, batch 34): /engineering/{usage,sdk,performance,monitoring,security,mcp,search-quality}/, /data/delta/, /verify/transparency-log/,
+    // /embed/charts/, /embed/chart/<market>/, /api/v1/{delta,tlog,charts,monitoring}; and /data/*.json from Brotli quality 11 copies (see kbx_n34c.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/data\/[a-z0-9/_-]+\.json$/.test(u.pathname)) {
+      try { if (!kn34c) kn34c = await import('./kbx_n34c.js'); const r = await kn34c.brServe(req, u, env); if (r) return r; } catch (e) {}
+    }
+    if (host === 'kolaboro.com' && KN34C.test(u.pathname)) {
+      if (!kn34c) kn34c = await import('./kbx_n34c.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      try { const r = await kn34c.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (n32x, batch 32): /data/sql/, /claims/search/, /anomalies/, /graph/entities/, /verify/offline/, /engineering/{provenance,early-hints}/,
     // /changes/live/, /watch/website-changes/, /satellite/construction-index/, /api/v1/{stream,provenance}; /sql/ 301 (see kbx_n32x.js)

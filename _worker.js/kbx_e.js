@@ -4,13 +4,14 @@
 //                                  2026-07-28 (stateless, per-request _meta, server/discover) and 2025-03-26..2025-11-25 (initialize)
 // Every tool answer carries the same Ed25519 signature fields as the open API (/api/open/*): 'kolaboro-sig-v1\n' + SHA-256 hex of the body.
 import { open, sha, signBody } from './kolaboro.js';
+import { TOOLS2, mcpTool } from './kbx_n34c.js';   // n34c (batch 34): MCP server v2 tools (history, evidence, market compare, proofs, deltas)
 
 export const PATHS = /^\/(api\/x\/e\/|mcp(\/|$))/;
 
 const MODERN = ['2026-07-28'];
 const LEGACY = ['2025-11-25', '2025-06-18', '2025-03-26'];
 const SUPPORTED = MODERN.concat(LEGACY);
-const SERVER = { name: 'kolaboro', title: 'Kolaboro open data', version: '1.0.0', websiteUrl: 'https://kolaboro.com/docs/mcp/' };
+export const SERVER = { name: 'kolaboro', title: 'Kolaboro open data', version: '2.0.0', websiteUrl: 'https://kolaboro.com/docs/mcp/' };
 const KEYS_URL = 'https://kolaboro.com/.well-known/kolaboro-keys.json';
 const MAX_BODY = 65536;
 const RATE_MCP = 60, RATE_FILE = 30;   // requests per minute per IP
@@ -125,7 +126,7 @@ async function verifySig(env, body, sigB64, kid) {
 // ---------- tools
 const ID_RE = /^[A-Za-z0-9-]{3,20}$/, DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
 const RO = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
-const TOOLS = [
+export const TOOLS = [
   { name: 'search_projects', title: 'Search tracked projects',
     description: 'List tracked off-plan projects with filters (market, country, stage, minimum checks public or confirmed, flags). Returns anonymous project records exactly as GET /api/open/projects, with its Ed25519 signature. Use get_project for one project.',
     inputSchema: { type: 'object', additionalProperties: false, properties: {
@@ -191,6 +192,7 @@ const TOOLS = [
       key_id: { type: 'string', maxLength: 64 } } },
     annotations: Object.assign({ title: 'Verify a Kolaboro signature' }, RO) },
 ];
+TOOLS.push(...TOOLS2);   // n34c: v2 tools, answered by mcpTool in kbx_n34c.js
 const TOOL_NAMES = TOOLS.map(t => t.name);
 
 function argErr(msg) { const e = new Error(msg); e.arg = true; return e; }
@@ -203,6 +205,13 @@ async function runTool(env, name, a) {
   if (typeof a !== 'object' || Array.isArray(a)) throw argErr('arguments must be an object');
   const known = (TOOLS.find(t => t.name === name).inputSchema.properties) || {};
   const extra = Object.keys(a).filter(k => !(k in known)); if (extra.length) throw argErr('unknown argument(s): ' + extra.join(', '));
+  if (TOOLS2.some(t => t.name === name)) {   // n34c (batch 34)
+    const r = await mcpTool(env, name, a);
+    if (!r) throw argErr('unknown tool');
+    if (r.err) throw argErr(r.err);
+    if (r.status === 404) return [{ status: 404, local: true, body: JSON.stringify(r.body, null, 1), source: r.source || 'https://kolaboro.com/' }];
+    return [await signed(env, JSON.stringify(r.body, null, 1), r.source)];
+  }
   if (name === 'search_projects') {
     const q = new URLSearchParams(), stage = str(a, 'stage');
     if (stage && ['off-plan', 'under construction', 'completed'].indexOf(stage) < 0) throw argErr('stage must be off-plan, under construction or completed');
@@ -361,6 +370,7 @@ async function mcp(req, u, env, ctx) {
       const tr = await rateCheck(req, ctx, 'mcp-tool', RATE_MCP);
       if (!tr.ok) { replies.push(rpcErr(m.id, -32000, 'Rate limit: ' + RATE_MCP + ' tool calls per minute per IP')); status = 429; continue; }
     }
+    if (m && m.method === 'tools/call' && m.params && TOOL_NAMES.indexOf(m.params.name) >= 0) { try { (await import('./kbx_n27a.js')).countMcpTool(m.params.name, ctx); } catch (e) {} }   // n34c: anonymous count per tool
     let r; try { r = await dispatch(env, m, era); } catch (e) { r = rpcErr(m.id, -32603, 'Internal error'); }
     if (r.notFound) { replies.push(r.err); if (era === 'modern' && !batch) status = 404; continue; }
     replies.push(r);

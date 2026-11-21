@@ -5,10 +5,10 @@
  "head_rule": "head = SHA-256 hex of the UTF-8 text \"kolaboro-snapshot-v1|\" + day + \"|/data/named.json|\" + sha256 + \"|\" + bytes + \"|\" + prev, where prev is the head of the entry before (the first entry uses \"genesis\")",
  "day_rule": "one entry per UTC day on which the file was published: the last version published that day; a day whose file is byte-identical to the day before gets no entry",
  "copies": "each copy is the gzip (RFC 1952, mtime 0) of the exact bytes; gunzip it and its SHA-256 equals sha256",
- "note": "Entries up to 2026-11-16 were rebuilt on 2026-11-17 from the version history of the published file. Later entries are added by the snapshot script after a publish; until then /api/v1/snapshots shows a newer live file as a provisional tip.",
- "updated": "2026-11-17",
- "count": 7,
- "tip": "4daf5607fe665d51180e0965d429c1ffde4d098839d2d0b45fc677a1305e2d61",
+ "note": "Entries up to 2026-11-16 were rebuilt on 2026-11-17 from the version history of the published file. From 18 Nov 2026 each finished UTC day is added automatically by the daily publishing job, shortly after the day ends; until then /api/v1/snapshots shows a newer live file as a provisional tip.",
+ "updated": "2026-11-20",
+ "count": 10,
+ "tip": "2bc6c32606791f5f364e922fcd2161573e1c8a066dd0f285f805ecc44b6d1600",
  "entries": [
   {
    "day": "2026-11-07",
@@ -107,6 +107,48 @@
    "copy_sha256": "7129d16a3c076a2ee8ec4c43ca7936c202cd416372e16b0343ffe0a4a403503a",
    "copy_bytes": 1090776,
    "added": "2026-11-17"
+  },
+  {
+   "day": "2026-11-18",
+   "published_at": "2026-11-18T14:06:43Z",
+   "commit": "7d0d511ad7b9",
+   "bytes": 7133670,
+   "sha256": "8625769cbba87c8dca0d4faeb2f2fd9141df2941b58258d0112a1fa8b71c9b12",
+   "projects": 1999,
+   "prev": "4daf5607fe665d51180e0965d429c1ffde4d098839d2d0b45fc677a1305e2d61",
+   "head": "2f34b1bb24e4a300249fde963c9ffa258b3c2186e6d339be2ca7f741d6ac47de",
+   "copy": "/data/snapshots/2026-11-18/named.json.gz",
+   "copy_sha256": "99a01def714e1b92fdcc20ef0c2828de049c06b7435dd034352f2ff1a6e4b258",
+   "copy_bytes": 1228721,
+   "added": "2026-11-21"
+  },
+  {
+   "day": "2026-11-19",
+   "published_at": "2026-11-19T09:39:46Z",
+   "commit": "1a73cb948ea6",
+   "bytes": 7159308,
+   "sha256": "5b0bfe5efa566cf5b1db5150c80da33e2ef7af9f3bf33fb8c92d704e2447741d",
+   "projects": 2002,
+   "prev": "2f34b1bb24e4a300249fde963c9ffa258b3c2186e6d339be2ca7f741d6ac47de",
+   "head": "f598cfaa3a2d42cc08f9ec62c22710f5535e182384466ba19ffacf2f470e618a",
+   "copy": "/data/snapshots/2026-11-19/named.json.gz",
+   "copy_sha256": "aad0757595315e2800e50c5acbc77dfaa093b512e838dc00a75c67fc43263054",
+   "copy_bytes": 1233684,
+   "added": "2026-11-21"
+  },
+  {
+   "day": "2026-11-20",
+   "published_at": "2026-11-20T15:48:05Z",
+   "commit": "2fbe0b3c9a9b",
+   "bytes": 7168093,
+   "sha256": "3cfd1a96b6b0ed4ea4d9c583681d1e1cc9f5fc94e706d4f616401d3cdf8583c3",
+   "projects": 2002,
+   "prev": "f598cfaa3a2d42cc08f9ec62c22710f5535e182384466ba19ffacf2f470e618a",
+   "head": "2bc6c32606791f5f364e922fcd2161573e1c8a066dd0f285f805ecc44b6d1600",
+   "copy": "/data/snapshots/2026-11-20/named.json.gz",
+   "copy_sha256": "172493d1931411e5d94d94c11063569072334b31dbe60cdc626065355e0f9ffb",
+   "copy_bytes": 1237468,
+   "added": "2026-11-21"
   }
  ]
 }

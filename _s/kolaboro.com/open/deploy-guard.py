@@ -158,6 +158,29 @@ def cf_rollback(good):
         return 'cloudflare api: error ' + type(e).__name__
 
 
+MONITOR = '_s/kolaboro.com/data/monitoring.json'
+MON = None
+def monitor_sample():
+    """Synthetic monitoring (n34c, 21 Nov 2026): load the 20 key pages once from this runner (outside Cloudflare) and keep status, time to
+    the last byte and bytes on the wire in /data/monitoring.json (30 days). Shown on /engineering/monitoring/. Never fails the guard."""
+    global MON
+    try:
+        try: d = json.loads(git('show', 'origin/%s:%s' % (BRANCH, MONITOR)))
+        except Exception: d = {}
+        with urllib.request.urlopen(urllib.request.Request(BASE + '/api/x/status/pages', headers={'user-agent': 'kolaboro-deploy-guard/1.0'}), timeout=30) as r: pages = [x['p'] for x in json.load(r)['pages']][:20]
+        S = []
+        for p in pages:
+            t = time.time()
+            try:
+                with urllib.request.urlopen(urllib.request.Request(BASE + p, headers={'user-agent': 'kolaboro-deploy-guard/1.0 (monitor)', 'accept-encoding': 'br'}), timeout=20) as r: b = r.read(); S.append([p, r.status, round((time.time() - t) * 1000), len(b)])
+            except urllib.error.HTTPError as e: S.append([p, e.code, None, 0])
+            except Exception: S.append([p, 0, None, 0])
+        cut = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).isoformat()
+        d['samples'] = [x for x in d.get('samples', []) if x['at'] >= cut] + [{'at': now(), 'vantage': 'GitHub Actions runner (deploy guard)', 'commit': live_commit()[:12], 'pages': S}]
+        MON = json.dumps(d, separators=(',', ':')) + '\n'
+        print('monitor: %d/%d up' % (sum(1 for x in S if 200 <= x[1] < 400), len(S)))
+    except Exception as e: print('monitor skipped: %s' % type(e).__name__)
+
 def publish(state):
     body = json.dumps(state, indent=1) + '\n'
     for _ in range(5):
@@ -167,6 +190,9 @@ def publish(state):
         git('read-tree', tip, env=env)
         blob = git('hash-object', '-w', '--stdin', inp=body)
         git('update-index', '--add', '--cacheinfo', '100644,%s,%s' % (blob, DEPLOYS), env=env)
+        if MON:   # n34c: the monitoring sample of this run goes in the same commit
+            try: git('update-index', '--add', '--cacheinfo', '100644,%s,%s' % (git('hash-object', '-w', '--stdin', inp=MON), MONITOR), env=env)
+            except Exception: pass
         c = commit(git('write-tree', '--missing-ok', env=env), tip, 'kolaboro.com: deploy guard record %s' % now()[:16])
         if subprocess.run(['git', 'push', '-q', 'origin', '%s:refs/heads/%s' % (c, BRANCH)]).returncode == 0: return c
         time.sleep(5)
@@ -238,19 +264,20 @@ def drill(state, tip):
 
 def main():
     tip = fetch(); state = load_state()
+    if MODE != 'drill': monitor_sample()
     if MODE == 'drill':
         ok = drill(state, tip); state['updated'] = now(); publish(state); return 0 if ok else 1
     target = PUSHED or live_commit()
     if not target: print('production did not answer /api/open/build'); return 1
     if not known(target): fetch()
     last = state.get('last_checked')
-    if last and known(last) and (target == last or (is_anc(target, last))): print('already checked'); return 0
+    if last and known(last) and (target == last or (is_anc(target, last))): print('already checked'); (publish(state) if MON else None); return 0
     live, waited = wait_live(target)
     if not live:
         state['deploys'].insert(0, {'at': now(), 'commit': target, 'result': 'not_deployed', 'checks_passed': 0, 'checks_total': 0, 'failed': ['commit not live after 12 minutes'], 'wait_s': waited, 'run': RUN})
         state['updated'] = now(); publish(state); return 1
     changes = human_changes(last if last and known(last) and is_anc(last, live) else None, live)
-    if not changes and EVENT != 'push': print('only data refreshes since the last check'); state['last_checked'] = live; return 0
+    if not changes and EVENT != 'push': print('only data refreshes since the last check'); state['last_checked'] = live; (publish(state) if MON else None); return 0
     d = smoke(live)
     if not d['ok']:
         time.sleep(90)

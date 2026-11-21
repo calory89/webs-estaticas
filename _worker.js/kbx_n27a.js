@@ -145,8 +145,40 @@ async function inc0(k) {
 let CHAIN = Promise.resolve();
 const inc = k => (CHAIN = CHAIN.then(() => inc0(k)));
 const BOT = /bot|crawl|spider|slurp|lighthouse|headless|preview|fetch|curl|wget|python|httpclient|axios|GPT|Claude|anthropic|Perplexity|Bytespider|facebookexternalhit|meta-extern/i;
+// n34c (batch 34, item 21): anonymous API usage per endpoint group and MCP tool, one JSON object per UTC day in the same edge cache
+// ("endpoint group -> count", at most 120 groups a day; no IP, no key, no query string, no user agent kept). Our own probes are left out.
+async function incJ0(k, f) {
+  try { const c = caches.default, hit = await c.match(k); let o = {}; if (hit) { try { o = JSON.parse(await hit.text()) || {}; } catch (e) { o = {}; } }
+    if (!(f in o) && Object.keys(o).length >= 120) f = '(other)'; o[f] = (o[f] || 0) + 1;
+    await c.put(k, new Response(JSON.stringify(o), { headers: { 'cache-control': 'max-age=3024000', 'content-type': 'application/json' } })); } catch (e) {}
+}
+const incJ = (k, f) => (CHAIN = CHAIN.then(() => incJ0(k, f)));
+export function apiGroup(p) {
+  if (p === '/mcp' || p === '/mcp/') return 'POST /mcp';
+  const m = /^\/api\/(v1|open)\/([a-z][a-z0-9_.-]{0,40})(?:\/([^/]{1,120}))?(?:\/([a-z][a-z0-9_.-]{0,30}))?/.exec(p); if (!m) return null;
+  let g = '/api/' + m[1] + '/' + m[2].replace(/\.(json|csv|svg)$/, '.$1');
+  if (m[3]) g += /^(feed\.json|at)$/.test(m[3]) ? '/' + m[3] : (/\.sig$/.test(m[3]) ? '/{id}.sig' : '/{id}');
+  if (m[4]) g += '/' + m[4];
+  return g;
+}
+export function countMcpTool(name, ctx) { if (typeof caches !== 'undefined' && ctx && ctx.waitUntil && /^[a-z_]{2,40}$/.test(name)) ctx.waitUntil(incJ(CK(day(), '_mcp'), name)); }
+export async function apiUsage(days) {
+  const per = [];
+  for (let i = 0; i < days; i++) { const d = day(i); let a = {}, m = {};
+    try { const r = await caches.default.match(CK(d, '_api')); if (r) a = JSON.parse(await r.text()) || {}; } catch (e) {}
+    try { const r = await caches.default.match(CK(d, '_mcp')); if (r) m = JSON.parse(await r.text()) || {}; } catch (e) {}
+    per.push({ date: d, a, m }); }
+  const by = {}, mt = {}; for (const x of per) { for (const [k, v] of Object.entries(x.a)) by[k] = (by[k] || 0) + v; for (const [k, v] of Object.entries(x.m)) mt[k] = (mt[k] || 0) + v; }
+  const sum = o => Object.values(o).reduce((a, b) => a + b, 0);
+  return { since: '2026-11-21', days, total: sum(by), mcp_total: sum(mt), by_endpoint: by, mcp_tools: mt, per_day: per.map(x => ({ date: x.date, calls: sum(x.a), mcp: sum(x.m) })),
+    note: 'API calls counted at the edge per endpoint group and UTC day, in the Cloudflare location that answers this request: no IP address, key, query string or user agent is kept, only "endpoint group -> count". Lower bounds (several edge locations, no durable store), counting since 21 Nov 2026; requests from our own monitors are left out.' };
+}
 export function count(req, u, ctx) {
-  if (typeof caches === 'undefined' || !ctx || !ctx.waitUntil || req.method !== 'GET') return;
+  if (typeof caches === 'undefined' || !ctx || !ctx.waitUntil) return;
+  if ((req.method === 'GET' || req.method === 'POST') && /^\/(api\/(v1|open)\/|mcp\/?$)/.test(u.pathname) && !/kolaboro-|deploy-guard/i.test(req.headers.get('user-agent') || '')) {
+    const g = apiGroup(u.pathname); if (g && (req.method === 'GET' || g === 'POST /mcp')) ctx.waitUntil(incJ(CK(day(), '_api'), g));
+  }
+  if (req.method !== 'GET') return;
   const h = req.headers;
   if (/^\/api\/v1\/search-index/.test(u.pathname)) { if (!BOT.test(h.get('user-agent') || '')) ctx.waitUntil(inc(CK(day(), '_search'))); return; }   // the search box loads this index when someone starts to type
   if (h.get('sec-fetch-dest') !== 'document' || h.get('sec-purpose') || h.get('purpose') || BOT.test(h.get('user-agent') || '')) return;   // real page loads in a browser; prefetch and prerender left out
@@ -163,6 +195,7 @@ async function readDays(keys, days) {
   return out;
 }
 async function usage(days) {
+  let api = null; try { api = await apiUsage(days); } catch (e) {}
   const pv = await readDays(TPL_NAMES, days), rv = await readDays(RV.map(b => 'rv_' + b), days);
   const sum = (A, k) => A.reduce((a, r) => a + (r.counts[k] || 0), 0);
   const byTpl = {}; for (const k of TPL_NAMES.filter(k => k !== '_search')) { const v = sum(pv, k); if (v) byTpl[k] = v; }
@@ -170,6 +203,7 @@ async function usage(days) {
   const sess = RV.reduce((a, b) => a + R[b], 0), back = R.d0 + R.d1_7 + R.d8_30 + R.d31p;
   return { page: ORIGIN + '/metrics/#usage', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', at: new Date().toISOString(), days,
     note: 'Counted at the edge in the Cloudflare location that answers this request, without cookies, ids or IP addresses: only "page type + day -> count". The site has no durable counter store, so these are lower bounds for one location, kept up to 35 days, and can be lost if the location evicts them. Bots, prefetches and prerenders are left out. Counting started on 13 Nov 2026.',
+    api_calls: api ? { since: api.since, total: api.total, by_endpoint: api.by_endpoint, mcp_tools: api.mcp_tools, note: api.note, page: ORIGIN + '/engineering/usage/' } : null,
     page_views_by_type: byTpl, page_views_total: Object.values(byTpl).reduce((a, b) => a + b, 0), searches_started: sum(pv, '_search'),
     return_visits: { note: 'One beacon per browser session, only from visitors who accepted analytics cookies; the browser keeps only the date of its first visit (no id). Buckets: new = first visit, d0 = again on the day of the first visit, d1_7 = first visit 1 to 7 days before, d8_30 = 8 to 30 days, d31p = more than 30 days.', sessions: sess, buckets: R, returning_share_pct: sess ? Math.round(back / sess * 1000) / 10 : null },
     per_day: pv.map((r, i) => ({ date: r.date, page_views: Object.entries(r.counts).filter(e => e[0] !== '_search').reduce((a, e) => a + e[1], 0), searches_started: r.counts._search || 0, sessions_counted: RV.reduce((a, b) => a + (rv[i].counts['rv_' + b] || 0), 0) })) };
@@ -268,6 +302,7 @@ async function ycPage(env, inner) {
     '<h2 id="data">The data today</h2><ul><li>' + f(st && st.projects) + ' projects in ' + f(st && st.markets) + ' markets and ' + f(st && st.countries) + ' countries' + (first ? ', up from ' + f(first.total) + ' on ' + fdate(first.d, 'en') : '') + '.</li><li>' + f(st && st.claims_total) + ' developer claims tested against registers, courts and press; ' + f(st && st.claims && st.claims.contradicted) + ' contradicted by another source.</li><li>' + f(st && st.sources) + ' sources, ' + f(st && st.data_points) + ' data points, ' + f(live.sitemap_urls) + ' public URLs in 8 languages.</li><li>Open API, MCP server, signed daily dataset: <a href="/docs/api/">/docs/api/</a>, <a href="/docs/mcp/">/docs/mcp/</a>.</li></ul>' +
     '<h2 id="shipping">Shipping daily</h2><p>' + f(live.ships_7d) + ' changes shipped and ' + f(live.deploys_7d) + ' deploys in the last 7 days. Every change is listed with its date: <a href="/progress/">/progress/</a> and <a href="/changelog/">/changelog/</a>.</p>' +
     '<h2 id="traction">Traction, as counted</h2><p>From our own database, the same numbers as <a href="/metrics/">/metrics/</a>, zeros included. Where visitors stop between a project page, the check and the payment: <a href="/funnel/">conversion funnel</a>. Visits are one per browser session; bots are left out by user agent.</p><ul><li>Visits in the last 4 weeks: ' + f(sumW('visits')) + '.</li><li>Leads in the last 4 weeks: ' + f(sumW('leads')) + ' (all time: ' + f(T.leads) + ').</li><li>Desk reviews run in the last 4 weeks: ' + f(sumW('desk_reviews')) + '.</li><li>Paid checks so far: ' + f(T.paid_checks != null ? T.paid_checks : sumW('paid_checks')) + '. Revenue so far: ' + f(T.revenue_eur != null ? T.revenue_eur : 0) + ' euros.</li></ul><p class="muted">Usage by page type and return visits, counted at the edge since 13 Nov 2026: <a href="/metrics/#usage">/metrics/#usage</a>.</p>' +
+    '<h2 id="eng-21nov">Engineering shipped 21 Nov 2026</h2><ul><li><a href="/verify/transparency-log/">Transparency log of every project record</a>: append-only Merkle tree over the daily snapshots, RFC 9162 inclusion and consistency proofs, signed tree head, checked in the browser or offline.</li><li><a href="/data/delta/">Signed daily delta files</a>: what changed each day as one Ed25519-signed file, applied and verified with one offline command.</li><li><a href="/engineering/sdk/">Typed SDKs generated from OpenAPI</a>: JavaScript, TypeScript and Python clients for every v1 operation, tested against the live API; the v1 spec now lists its paths.</li><li><a href="/engineering/mcp/">MCP server v2</a>: five more signed tools: record history, claims with evidence, market comparison, Merkle proofs, daily deltas.</li><li><a href="/engineering/search-quality/">Search quality test in 8 languages</a>: 400 fixed queries with expected results, run before every push; multilingual place names and stop words fixed queries that found nothing.</li><li><a href="/engineering/monitoring/">Synthetic monitoring</a>: the 20 key pages loaded from outside Cloudflare twice a day inside existing jobs, 30 days kept.</li><li><a href="/engineering/performance/">Performance budgets</a>: a byte budget per template checked before every push, Brotli quality 11 copies of the largest JSON, immutable versioned assets.</li><li><a href="/engineering/usage/">API usage per endpoint</a>: anonymous calls per endpoint group and MCP tool, counted at the edge without personal data.</li><li><a href="/engineering/security/">Security headers, live</a>: what our key pages send right now and the CSP report-only results.</li><li><a href="/embed/charts/">Embeddable live charts</a>: market delay and disclosure charts as an iframe or a web component, with a followed link to the source.</li></ul>' +
     '<h2 id="product-21nov">Buyer product shipped 21 Nov 2026</h2><ul><li><a href="/tools/due-diligence/">Due-diligence report builder</a>: pick a project and sections, get a dated, sourced report to print or save as PDF, with a shareable link.</li><li><a href="/projects/lb-pandawa-hills/questions/">Questions to ask the developer</a>: made by rules from the gaps in each record, each with its reason and source.</li><li><a href="/search/">Search with facets</a>: country, stage, permit and handover year, instant, filters in the URL.</li><li><a href="/markets/compare/">Compare markets</a>: delays, disclosure, price per m2 with bootstrap intervals, official registers.</li><li><a href="/watchlist/">Watchlist alerts</a>, a command palette with page actions (Ctrl+K), "since your last visit" on project pages, a print layout, chart data tables and <a href="/corrections/">structured corrections</a> with a word diff.</li></ul>' +
     '<h2 id="eng-19nov">Engineering shipped 19 Nov 2026</h2><ul><li><a href="/data/sql/">SQL on the open dataset</a>: Parquet and CSV with a versioned data card, DuckDB in the browser, shareable queries.</li><li><a href="/claims/search/">Search every claim</a>: all published claims and sources, prebuilt index, results while you type.</li><li><a href="/anomalies/">Anomaly radar</a>: outliers in our own data, each with rule, numbers and source.</li><li><a href="/graph/entities/">Entity graph</a>: developers, registered companies, Dubai escrow banks, projects, markets.</li><li><a href="/verify/offline/">Offline verifier</a>: one Python or Node file checks hash chain, Ed25519 signatures and certificates without network.</li><li><a href="/engineering/provenance/">Build provenance</a>: signed attestation of commit, worker source and dataset per deploy.</li><li><a href="/changes/live/">Live change stream</a>: Server-Sent Events at /api/v1/stream.</li><li><a href="/watch/website-changes/">Website change diff</a>: what developers changed in dates, prices and promises.</li><li><a href="/engineering/early-hints/">Early Hints</a>: 103 Early Hints and LCP before and after.</li><li><a href="/satellite/construction-index/">Satellite construction index</a>: Sentinel-2 built-up change per project.</li></ul>' +
     '<h2 id="more">More</h2><p><a href="/about/">About</a> · <a href="/independence/">Independence and conflicts of interest</a> · <a href="/pricing/">Pricing</a> · <a href="/numbers/">Kolaboro in numbers</a></p>';

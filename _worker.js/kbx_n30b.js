@@ -103,6 +103,7 @@ async function chain(env) {
 }
 const short = s => String(s || '').slice(0, 12) + '…';
 async function snapPage(req, u, env, ctx, shell, lang) {
+  let X34 = ''; try { const m = await import('./kbx_n34c.js'); if (await m.ready(env)) X34 = m.relLinks(lang); } catch (e) {}   // n34c: delta files, transparency log and the other batch-34 pages
   const L = T[lang], P = pre(lang), c = await chain(env), path = P + '/data/snapshots/', canonU = ORIGIN + path;
   const rows = (c.entries || []).slice().reverse().map(e => '<tr><td>' + esc(fdt(e.day, lang)) + '</td><td>' + ar(lang, nf(e.projects || 0, lang)) + '</td><td>' + ar(lang, nf(e.bytes / 1e6, lang, 2)) + ' MB</td><td><code title="' + e.sha256 + '">' + short(e.sha256) + '</code></td><td><code title="' + e.head + '">' + short(e.head) + '</code></td><td><a href="' + esc(e.copy) + '" download>.gz</a> <small>' + ar(lang, nf(e.copy_bytes / 1e6, lang, 2)) + ' MB</small></td></tr>').join('');
   const tipRow = c.provisional_tip ? '<tr class="sn-tip"><td>' + esc(fdt(c.provisional_tip.day, lang)) + ' <small>(' + esc(L.sn_tip) + ')</small></td><td></td><td>' + ar(lang, nf(c.provisional_tip.bytes / 1e6, lang, 2)) + ' MB</td><td><code title="' + c.provisional_tip.sha256 + '">' + short(c.provisional_tip.sha256) + '</code></td><td><code title="' + c.provisional_tip.head + '">' + short(c.provisional_tip.head) + '</code></td><td><a href="/data/named.json">named.json</a></td></tr>' : '';
@@ -114,7 +115,7 @@ async function snapPage(req, u, env, ctx, shell, lang) {
     '<div class="n30-tw"><table class="n30-t"><thead><tr>' + L.sn_th.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + tipRow + rows + '</tbody></table></div>' +
     '<p class="k-xs">' + esc(L.sn_note) + '</p>' +
     '<h2>' + esc(L.sn_cli_h) + '</h2><p>' + esc(L.sn_cli) + '</p><h3>' + esc(L.sn_rule_h) + '</h3><pre dir="ltr" class="n30-pre">' + esc(c.head_rule) + '\n\ncurl -sO https://kolaboro.com' + esc(((c.entries || []).slice(-1)[0] || {}).copy || '/data/named.json') + '\ngunzip -c named.json.gz | sha256sum\nprintf \'%s\' "kolaboro-snapshot-v1|DAY|/data/named.json|SHA256|BYTES|PREV" | sha256sum</pre>' +
-    '<p>' + fill(esc(L.sn_more), { log: '<a href="/log/">/log/</a>', api: '<a href="/api/v1/snapshots">/api/v1/snapshots</a>' }) + ' <a href="' + P + '/api/docs/">API v1</a> · <a href="' + P + '/engineering/data-quality/">' + esc(T[lang].dq_h1) + '</a></p></div>' +
+    '<p>' + fill(esc(L.sn_more), { log: '<a href="/log/">/log/</a>', api: '<a href="/api/v1/snapshots">/api/v1/snapshots</a>' }) + ' <a href="' + P + '/api/docs/">API v1</a> · <a href="' + P + '/engineering/data-quality/">' + esc(T[lang].dq_h1) + '</a></p>' + X34 + '</div>' +
     '<script>' + SNAP_JS + '</script>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'Dataset', name: L.sn_h1, description: L.sn_lead, url: canonU, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, dateModified: c.updated, creator: { '@id': ORIGIN + '/#org' },
     distribution: (c.entries || []).map(e => ({ '@type': 'DataDownload', encodingFormat: 'application/gzip', contentUrl: ORIGIN + e.copy, sha256: e.sha256, uploadDate: e.day })) },
@@ -312,12 +313,17 @@ async function openapiV1(env) {
   if (OA && Date.now() - OA.t < 600000) return OA.v;
   const full = await jsonFile(env, '/docs/api/openapi.json');
   const paths = Object.fromEntries(Object.entries(full.paths || {}).filter(([p]) => p.startsWith('/api/v1/') && !/xray|watch/.test(p)));
+  // n34c (batch 34, item 22): the v1 operations with response schemas inferred from live answers (/open/sdk-gen.py spec); the full
+  // spec above has none under /api/v1/, so before this the v1 document listed no paths. The typed SDKs at /sdk/v1/ are generated from it.
+  let v1x = null; try { v1x = await jsonFile(env, '/docs/api/openapi-v1-paths.json'); } catch (e) {}
+  if (v1x && v1x.paths) Object.assign(paths, v1x.paths);
   const v = { openapi: '3.1.0', info: { title: 'Kolaboro API v1', version: '2026-11-17', summary: 'Open, read-only JSON about tracked off-plan projects and their developers.', description: 'No key. CORS open. Rate limit 120 calls a minute per IP per endpoint group, announced in RateLimit-Policy and RateLimit (draft-ietf-httpapi-ratelimit-headers) and X-RateLimit-*. ETag on every answer: send If-None-Match to get 304. Ids (BALI-014) and slugs are stable. Playground: https://kolaboro.com/api/docs/. Full description of every public endpoint: https://kolaboro.com/docs/api/openapi.json', license: full.info && full.info.license, contact: full.info && full.info.contact },
-    servers: [{ url: ORIGIN }], paths, components: full.components || {} };
+    servers: [{ url: ORIGIN }], paths, components: Object.assign({}, full.components || {}, { schemas: Object.assign({}, (full.components || {}).schemas || {}, (v1x && v1x.schemas) || {}) }) };
   OA = { t: Date.now(), v }; return v;
 }
 const EPS = [['projects', '/api/v1/projects'], ['project', '/api/v1/projects/{slug}', 'coco-hills'], ['developers', '/api/v1/developers'], ['developer', '/api/v1/developers/{slug}', 'coco-development-group'], ['website', '/api/v1/developers/{slug}/website', 'coco-development-group'], ['changes', '/api/v1/changes?since={since}', '2026-11-15'], ['feed', '/api/v1/changes/feed.json'], ['certificate', '/api/v1/projects/{slug}/certificate', 'coco-hills'], ['snapshots', '/api/v1/snapshots'], ['quality', '/api/v1/data-quality'], ['search', '/api/v1/search-index']];
 async function docsPage(req, u, env, ctx, shell, lang) {
+  let X34 = ''; try { const m = await import('./kbx_n34c.js'); if (await m.ready(env)) X34 = m.relLinks(lang); } catch (e) {}   // n34c: typed SDKs, deltas, transparency log
   const L = T[lang], P = pre(lang), canonU = ORIGIN + P + '/api/docs/';
   const rows = EPS.map(([k, p, ex]) => { const v = ex ? p.replace(/\{[a-z]+\}/, ex) : p; return '<li class="n30-ep"><div><code dir="ltr">GET ' + esc(p) + '</code><p>' + esc(L.ad_d[k]) + '</p></div><button type="button" class="btn btn-ghost" data-try="' + esc(v) + '">' + esc(L.ad_try) + '</button></li>'; }).join('');
   const msg = { st: L.ad_status, tm: L.ad_time, hd: L.ad_hdr, bd: L.ad_body, again: L.ad_again };
@@ -326,7 +332,7 @@ async function docsPage(req, u, env, ctx, shell, lang) {
     '<h2>' + esc(L.ad_ep) + '</h2><ul class="n30-eps">' + rows + '</ul>' +
     '<form id="ad-f" class="n30-try"><label for="ad-u">URL</label><div class="n30-row"><input id="ad-u" dir="ltr" value="/api/v1/projects/coco-hills" spellcheck="false" autocomplete="off"><button class="btn" type="submit">' + esc(L.ad_try) + '</button> <button class="btn btn-ghost" type="button" id="ad-again" hidden>' + esc(L.ad_again) + '</button></div></form>' +
     '<div id="ad-res" hidden><p id="ad-st" role="status" aria-live="polite"></p><details><summary>' + esc(L.ad_hdr) + '</summary><pre dir="ltr" class="n30-pre" id="ad-h"></pre></details><h3>' + esc(L.ad_body) + '</h3><pre dir="ltr" class="n30-pre n30-body" id="ad-b" tabindex="0"></pre><p class="k-xs" dir="ltr"><code id="ad-curl"></code></p></div>' +
-    '<h2>' + esc(L.ad_lim_h) + '</h2><p>' + esc(L.ad_lim) + '</p><ul class="lk"><li><a href="/api/v1/openapi.json">' + esc(L.ad_spec) + '</a></li><li><a href="/docs/api/explorer/">' + esc(L.ad_full) + '</a></li><li><a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a></li><li><a href="' + P + '/engineering/data-quality/">' + esc(L.dq_h1) + '</a></li></ul></div><script>' + DOCS_JS + '</script>';
+    '<h2>' + esc(L.ad_lim_h) + '</h2><p>' + esc(L.ad_lim) + '</p><ul class="lk"><li><a href="/api/v1/openapi.json">' + esc(L.ad_spec) + '</a></li><li><a href="/docs/api/explorer/">' + esc(L.ad_full) + '</a></li><li><a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a></li><li><a href="' + P + '/engineering/data-quality/">' + esc(L.dq_h1) + '</a></li></ul>' + X34 + '</div><script>' + DOCS_JS + '</script>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebAPI', name: 'Kolaboro API v1', url: canonU, documentation: ORIGIN + '/api/v1/openapi.json', provider: { '@id': ORIGIN + '/#org' }, termsOfService: ORIGIN + '/legal/terms/' }] };
   return assemble({ title: L.ad_title + ' | Kolaboro', desc: L.ad_lead.slice(0, 155), canon: canonU, body, ld, lastmod: '2026-11-17', alt: l => ORIGIN + pre(l) + '/api/docs/' }, lang, shell, '/docs/api/');
 }

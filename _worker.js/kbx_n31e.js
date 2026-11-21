@@ -115,15 +115,31 @@ async function findIndex(ix) {
   const L = ix.P.filter(clean).map(x => ({ x, n: norm(x.n), d: norm(x.dv), a: norm([x.ar, x.mk, x.co].filter(Boolean).join(' ')) }));
   FIX = { ix, L }; return FIX;
 }
+// n34c (batch 34, item 30): multilingual queries. Place names in 8 languages map to the market name we store, words without search
+// meaning in each language are dropped ("proyectos de X en Dubái" = "X Dubai"), and the exact-name bonus ignores those words too.
+// Fixed test set and scores: /open/search-tests.json, /engineering/search-quality/ (run by /open/search-quality.mjs before each push).
+let SAL = null;
+async function aliases(env) {
+  if (SAL) return SAL;
+  let d = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/search-aliases.json')); if (r.ok) d = await r.json(); } catch (e) {}
+  const al = [], stop = new Set();
+  if (d) { for (const [m, L] of Object.entries(d.markets || {})) for (const v of Object.values(L)) { const a = norm(v); if (a && a !== norm(m)) al.push([' ' + a + ' ', ' ' + norm(m) + ' ']); }
+    for (const L of Object.values(d.stop || {})) for (const w of L) stop.add(norm(w)); }
+  al.sort((a, b) => b[0].length - a[0].length); SAL = { al, stop, zh: [...stop].filter(w => /[一-鿿]/.test(w)) }; return SAL;
+}
 export async function findProjects(env, q, lim) {
-  const N = await import('./kbx_named.js'), ix = await N.data(env), F = await findIndex(ix), w = norm(q).split(' ').filter(s => s.length >= 2).slice(0, 8);
+  const N = await import('./kbx_named.js'), [ix, A] = await Promise.all([N.data(env), aliases(env)]), F = await findIndex(ix);
+  let s = ' ' + norm(q) + ' '; for (const [a, m] of A.al) if (s.includes(a)) s = s.split(a).join(m);
+  for (const z of A.zh) s = s.split(z).join(' ');
+  const w = s.split(' ').filter(t => t.length >= 2 || /[一-鿿]/.test(t)).filter(t => !A.stop.has(t)).slice(0, 8);
   if (!w.length) return { ix, N, hits: [] };
-  const hits = [];
+  const hits = [], key = w.join(' '), nk = r => r.nk || (r.nk = r.n.split(' ').filter(t => !A.stop.has(t)).join(' '));
   for (const r of F.L) {
-    let sc = 0, all = true;
-    for (const t of w) { if (r.n.includes(t)) sc += (r.n.split(' ').includes(t) ? 3 : 2); else if (r.d.includes(t)) sc += 1; else if (r.a.includes(t)) sc += 0.5; else { all = false; break; } }
+    let sc = 0, all = true, inName = 0;
+    for (const t of w) { if (r.n.includes(t)) { sc += (r.n.split(' ').includes(t) ? 3 : 2); inName++; } else if (r.d.includes(t)) sc += 1; else if (r.a.includes(t)) sc += 0.5; else { all = false; break; } }
     if (!all) continue;
-    if (r.n === w.join(' ')) sc += 10; else if (r.n.startsWith(w.join(' '))) sc += 4;
+    const k = nk(r), nameWords = w.filter(t => r.n.includes(t)).join(' ');
+    if (r.n === key || k === key) sc += 10; else if (k && nameWords === k) sc += 8; else if (r.n.startsWith(key) || (k && k.startsWith(key))) sc += 4;
     hits.push([sc, r.x]);
   }
   hits.sort((a, b) => b[0] - a[0] || nameOf(a[1]).localeCompare(nameOf(b[1])));

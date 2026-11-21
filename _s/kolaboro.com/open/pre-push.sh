@@ -5,6 +5,7 @@
 # because Cloudflare Pages refuses every build of the branch above 25 MiB (18 Nov 2026: about 60 sites blocked for an hour).
 #   1. bundle check of the edge worker (esbuild, the same command the publishers run by hand), result printed with its exit code
 #   2. bundle size: a warning when the bundle is more than 5% bigger than the last published build (/data/builds.json)
+#   4. performance budget per template and 5. search ranking test in 8 languages (n34c, 21 Nov 2026), both report only
 #   3. after the push, the live site runs its own smoke test of 20 key pages on the first request for the new commit:
 #      https://kolaboro.com/status/#keypages (raw: /api/x/status/pages), every 5 minutes after that.
 # Each result is appended to .git/kolaboro-push-checks.log (time, branch, commit, exit code).
@@ -35,6 +36,14 @@ if [ "$code" = 0 ] && [ -f "$tmp/worker.js" ]; then
   fi
 fi
 rm -rf "$tmp" 2>/dev/null
+# 4. performance budget per template (n34c, 21 Nov 2026): raw bytes of the static scripts each template loads, read from the pushed commit,
+#    against /open/perf-budget.json; and 5. the search ranking regression test in 8 languages (/open/search-tests.json). Both report only.
+if git cat-file -e "$sha:_s/kolaboro.com/open/n34c-build.py" 2>/dev/null; then
+  git show "$sha:_s/kolaboro.com/open/n34c-build.py" > "${TMPDIR:-/tmp}/kb-n34c-build.py" && (cd "$top" && python3 "${TMPDIR:-/tmp}/kb-n34c-build.py" budget "$sha") || echo "kolaboro push check: WARNING a template is over its performance budget (see above, /engineering/performance/)"
+fi
+if [ -f "$top/_s/kolaboro.com/open/search-quality.mjs" ] && [ -f "$top/_worker.js/kbx_n31e.js" ]; then
+  (cd "$top" && timeout 120 node _s/kolaboro.com/open/search-quality.mjs . | tail -n 9) || echo "kolaboro push check: WARNING search ranking regression (see above, /engineering/search-quality/)"
+fi
 if [ "$code" = 0 ]; then echo "kolaboro push check: bundle OK (exit=0). After the deploy see https://kolaboro.com/status/#keypages"
 else echo "kolaboro push check: BUNDLE FAILED (exit=$code). The push goes ahead (report only); fix it now: a broken bundle breaks every site on this branch."; fi
 log="$(git rev-parse --git-common-dir)/kolaboro-push-checks.log"

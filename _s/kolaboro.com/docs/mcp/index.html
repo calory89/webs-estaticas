@@ -86,6 +86,7 @@ await c.connect(new StreamableHTTPClientTransport(new URL("https://kolaboro.com/
 console.log(await c.callTool({ name: "get_project", arguments: { id: "BALI-014" } }));</div>
 <p>Or explore it in the official inspector: <code>npx @modelcontextprotocol/inspector</code>, transport Streamable HTTP, URL above.</p>
 
+<p class="k-small"><b>Server v2, 21 Nov 2026:</b> five more tools (project_history, project_evidence, compare_markets, transparency_proof, dataset_delta) with tests: <a href="/engineering/mcp/">/engineering/mcp/</a>.</p>
 <h2>Tools</h2>
 <div class="eg-tw"><table class="eg-t"><thead><tr><th>Tool</th><th>What it returns</th></tr></thead><tbody>
 <tr><td><code>search_projects</code></td><td>Projects filtered by market, country, stage, minimum checks public or confirmed, all six public, flagged or not. Same records as <a href="/api/open/projects?limit=3">/api/open/projects</a>. Up to 100 per call, with offset.</td></tr>

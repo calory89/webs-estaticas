@@ -54,7 +54,8 @@ const CSS = '<style>.n32{max-width:1100px}.n32 h2{margin:28px 0 8px;font-size:1.
   '@media print{.n32-tw{overflow:visible;border:0}}</style>';
 const table = (th, rows) => '<div class="n32-tw" tabindex="0"><table><thead><tr>' + th.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
 const N = () => import('./kbx_named.js');
-const rel = (l, skip) => '<h2>' + esc(t(l, 'more')) + '</h2><ul class="n32-rel">' + ALL.filter(x => x[0] !== skip).map(x => '<li><a href="' + pre(l) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a></li>').join('') + '<li><a href="/engineering/">' + esc(t(l, 'eng')) + '</a></li></ul>';
+const rel = (l, skip) => '<h2>' + esc(t(l, 'more')) + '</h2><ul class="n32-rel">' + ALL.filter(x => x[0] !== skip).map(x => '<li><a href="' + pre(l) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a></li>').join('') + '<li><a href="/engineering/">' + esc(t(l, 'eng')) + '</a></li></ul>' + (X34 ? X34.relLinks(l) : '');   // n34c: the batch-34 pages too
+let X34 = null;
 // client strings for one page, inlined as JSON (only that language), and its script
 const app = (l, k, extra) => '<div id="n32-app" class="n32-app" data-k="' + k + '" data-l="' + l + '"' + (extra || '') + '><noscript><p>' + esc(t(l, 'nojs')) + '</p></noscript></div><script type="application/json" id="n32-t">' + JSON.stringify(Object.assign({}, T.en['c_' + k] || {}, (T[l] && T[l]['c_' + k]) || {}, { _l: l, _loc: LOC[l] })).replace(/</g, '\\u003c') + '</script><script src="/k/n32x/' + k + '.js?v=' + V + '" defer></script>';
 const paras = (l, k) => (t(l, k) || []).map(p => '<p>' + esc(p) + '</p>').join('');
@@ -239,6 +240,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (p === '/api/v1/stream') return stream(req, u, env, ctx);
   if (p === '/api/v1/provenance') { try { return json(await provenance(env)); } catch (e) { return json({ error: 'unavailable' }); } }
   if (!(await loadT(env))) return null;
+  try { if (!X34) { const m = await import('./kbx_n34c.js'); if (await m.ready(env)) X34 = m; } } catch (e) {}
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
   const L = x => x || 'en';
   if ((m = R.sql.exec(p))) return sqlPage(env, shell, L(m[1]));
