@@ -198,4 +198,4 @@ Estos anuncios proceden de morizon.pl (31). RealHunt no es una inmobiliaria y no
 [Avísame por correo de viviendas nuevas en Polonia](https://realhunt.co/es/alerts?country=Poland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Poland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Polonia](https://realhunt.co/es/sitemap/poland)
 
 ---
-Fuente: https://realhunt.co/es/homes/poland (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/poland (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.

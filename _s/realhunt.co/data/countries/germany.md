@@ -1,8 +1,8 @@
 # Cheap homes in Germany: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
+On 21 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/germany · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/germany · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://re
 | Taxes and fees to buy | 5–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan. |
 | Yearly property tax | Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets. |
-| Date of these figures | 20 November 2026 |
+| Date of these figures | 21 November 2026 |
 
 ## Costs and taxes
 

@@ -166,4 +166,4 @@ These listings come from kleinanzeigen.de (20), green-acres.fr (1). RealHunt is 
 [Email me new homes in Germany](https://realhunt.co/alerts?country=Germany) · [Filter and sort these homes](https://realhunt.co/?country=Germany#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Germany](https://realhunt.co/sitemap/germany)
 
 ---
-Source: https://realhunt.co/homes/germany (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/germany (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

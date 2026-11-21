@@ -127,4 +127,4 @@ Estos anuncios proceden de propertypal.com (3), onthemarket.com (2). RealHunt no
 [Avísame por correo de viviendas nuevas en el Reino Unido](https://realhunt.co/es/alerts?country=United%20Kingdom) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+Kingdom#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en el Reino Unido](https://realhunt.co/es/sitemap/united-kingdom)
 
 ---
-Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.

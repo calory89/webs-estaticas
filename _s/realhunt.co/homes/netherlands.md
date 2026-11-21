@@ -141,4 +141,4 @@ These listings come from funda.nl (18). RealHunt is not an estate agent and does
 [Email me new homes in the Netherlands](https://realhunt.co/alerts?country=Netherlands) · [Filter and sort these homes](https://realhunt.co/?country=Netherlands#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Netherlands](https://realhunt.co/sitemap/netherlands)
 
 ---
-Source: https://realhunt.co/homes/netherlands (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/netherlands (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

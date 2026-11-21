@@ -161,4 +161,4 @@ These listings come from redfin.ca (9), remax.ca (7). RealHunt is not an estate 
 [Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Canada](https://realhunt.co/sitemap/canada)
 
 ---
-Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

@@ -116,4 +116,4 @@ These listings come from myhome.ie (4). RealHunt is not an estate agent and does
 [Email me new homes in Ireland](https://realhunt.co/alerts?country=Ireland) · [Filter and sort these homes](https://realhunt.co/?country=Ireland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Ireland](https://realhunt.co/sitemap/ireland)
 
 ---
-Source: https://realhunt.co/homes/ireland (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/ireland (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

@@ -1,8 +1,8 @@
 # Cheap homes in Ireland: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
+On 21 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/ireland · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/ireland · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/ireland.json · PDF: https://realhunt.co/data/countries/ireland.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/ireland.json · PDF: https://re
 | Taxes and fees to buy | 2.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no restrictions on foreigners buying homes in Ireland, and owning a home does not give a right to live there. |
 | Yearly property tax | Local Property Tax (LPT): from 2026 a home valued up to €240,000 pays a basic €95 a year and one valued €240,001 to €315,000 pays €235; each council can raise or lower the basic rate by up to 15%, and most raised it by 15% for 2026. |
-| Date of these figures | 20 November 2026 |
+| Date of these figures | 21 November 2026 |
 
 ## Costs and taxes
 

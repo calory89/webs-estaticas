@@ -259,4 +259,4 @@ Estos anuncios proceden de fotocasa.es (100), pisos.com (17), green-acres.es (10
 [Avísame por correo de viviendas nuevas en España](https://realhunt.co/es/alerts?country=Spain) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Spain#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en España](https://realhunt.co/es/sitemap/spain)
 
 ---
-Fuente: https://realhunt.co/es/homes/spain (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/spain (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.

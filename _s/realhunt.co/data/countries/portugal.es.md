@@ -1,8 +1,8 @@
 # Casas baratas en Portugal: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 21 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 21 casas es de 130.000 € (1.364 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 189.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 21 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 21 casas es de 130.000 € (1.364 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 189.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/portugal · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/portugal · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https
 | Impuestos y gastos de compra | 3–12% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, los mismos derechos que los ciudadanos portugueses (aumento de IMT para compradores extranjeros de segunda residencia anunciado en septiembre de 2025). |
 | Impuesto anual sobre la vivienda | IMI 0,3-0,45% del valor fiscal (urbano), fijado por cada municipio. |
-| Fecha de estas cifras | 20 de noviembre de 2026 |
+| Fecha de estas cifras | 21 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

@@ -115,4 +115,4 @@ These listings come from casasyterrenos.com (3). RealHunt is not an estate agent
 [Email me new homes in Mexico](https://realhunt.co/alerts?country=Mexico) · [Filter and sort these homes](https://realhunt.co/?country=Mexico#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Mexico](https://realhunt.co/sitemap/mexico)
 
 ---
-Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

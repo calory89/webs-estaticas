@@ -1,8 +1,8 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 81 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 81 casas es de 80.000 € (1.167 € por m², calculado con las 56 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 21 de noviembre de 2026, RealHunt publica 81 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 81 casas es de 80.000 € (1.167 € por m², calculado con las 56 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 197.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí para ciudadanos de la UE; los compradores no comunitarios necesitan reciprocidad (EE.UU., Reino Unido, Canadá, Australia califican). |
 | Impuesto anual sobre la vivienda | IMU 0,4-1,06% en segundas viviendas (sobre el valor catastral). |
-| Fecha de estas cifras | 20 de noviembre de 2026 |
+| Fecha de estas cifras | 21 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

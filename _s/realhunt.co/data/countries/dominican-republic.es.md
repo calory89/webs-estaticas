@@ -1,8 +1,8 @@
 # Casas baratas en la República Dominicana: datos clave y todas las casas de RealHunt
 
-A 20 de noviembre de 2026, RealHunt publica 5 casas en venta en la República Dominicana, revisadas una a una por una persona. En la República Dominicana, el precio de salida mediano de esas 5 casas es de 201.200 € (2.282 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.000 € y la más cara, 223.600 €. Los impuestos y gastos de compra suman alrededor del 4,25–7% del precio de una casa en la República Dominicana (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de la República Dominicana es solo orientativa.
+A 21 de noviembre de 2026, RealHunt publica 5 casas en venta en la República Dominicana, revisadas una a una por una persona. En la República Dominicana, el precio de salida mediano de esas 5 casas es de 201.200 € (2.282 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.000 € y la más cara, 223.600 €. Los impuestos y gastos de compra suman alrededor del 4,25–7% del precio de una casa en la República Dominicana (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de la República Dominicana es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/dominican-republic · Actualizado el 20 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/dominican-republic · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/dominican-republic.json · PDF: https://realhunt.co/data/countries/dominican-republic.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/dominican-republic.json · 
 | Impuestos y gastos de compra | 4,25–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros tienen los mismos derechos que los ciudadanos dominicanos para comprar tierra y viviendas, sin restricciones. |
 | Impuesto anual sobre la vivienda | El impuesto anual IPI es del 1% de la parte del valor total de los inmuebles de una persona en la República Dominicana, según la tasación de la DGII (la administración tributaria), que supere 10.695.494 RD$ en 2026, así que una sola vivienda barata a menudo queda por debajo del umbral. |
-| Fecha de estas cifras | 20 de noviembre de 2026 |
+| Fecha de estas cifras | 21 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

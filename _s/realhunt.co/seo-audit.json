@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4638,
-  "indexable": 4096,
+  "pages": 4640,
+  "indexable": 4098,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 424,
+  "title_over_60": 425,
   "desc_over_155": 0,
   "desc_under_120": 83,
   "desc_out_of_range": 83,
@@ -17,11 +17,11 @@
   "orphans": 0,
   "inlinks_under_3": 44,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4078,
+  "pages_with_hreflang": 4080,
   "thin_under_150_words": 27,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4033,
+  "with_lastmod": 4035,
   "redirects": 1842,
   "moved_stubs": 324
  },
@@ -31,7 +31,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 665,
+   "median_words": 664,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -76,16 +76,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 630,
+   "median_words": 665,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/blog/*": {
-   "pages": 16,
-   "indexable": 16,
+   "pages": 17,
+   "indexable": 17,
    "noindex": 0,
-   "median_words": 1176,
+   "median_words": 1211,
    "title_over_60": 9,
    "desc_out_of_range": 7,
    "inlinks_under_3": 0
@@ -256,7 +256,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 731,
+   "median_words": 729,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -292,17 +292,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 694,
+   "median_words": 737,
    "title_over_60": 1,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
   "/es/blog/*": {
-   "pages": 16,
-   "indexable": 16,
+   "pages": 17,
+   "indexable": 17,
    "noindex": 0,
-   "median_words": 1294,
-   "title_over_60": 13,
+   "median_words": 1337,
+   "title_over_60": 14,
    "desc_out_of_range": 6,
    "inlinks_under_3": 0
   },
@@ -1056,7 +1056,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4096,
+   "pages with JSON-LD changed": 4098,
    "ItemList: items removed or renumbered": 10,
    "RealEstateListing: availability left out (advert not confirmed)": 268,
    "Article: author, date, headline or image missing": 52
@@ -1263,7 +1263,7 @@
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
    "/deal/bg-kavarna-66k-89682",
-   "... 364 more"
+   "... 365 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1271,7 +1271,7 @@
   ]
  },
  "spanish": {
-  "twins": 1182,
+  "twins": 1183,
   "groups": {
    "homes": {
     "pages": 713,
@@ -1297,9 +1297,9 @@
     "spanish_pct": 85.21
    },
    "content": {
-    "pages": 590,
-    "twins": 589,
-    "words": 455723,
+    "pages": 591,
+    "twins": 590,
+    "words": 457653,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1315,8 +1315,8 @@
  },
  "tech": {
   "summary": {
-   "checked": 4638,
-   "indexable": 4096,
+   "checked": 4640,
+   "indexable": 4098,
    "max_depth": 3,
    "titles_changed_since_last_build": 0,
    "external_link_hosts": 316,
@@ -1410,7 +1410,7 @@
   "depth": {
    "0": 2,
    "1": 142,
-   "2": 3567,
+   "2": 3569,
    "3": 385
   },
   "noindex": {
@@ -1502,7 +1502,7 @@
   "sitemap-cheap-houses.xml": 336,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
-  "sitemap-blog.xml": 38,
+  "sitemap-blog.xml": 39,
   "sitemap-can-i-buy.xml": 269,
   "sitemap-compare.xml": 172,
   "sitemap-homes-austria.xml": 1,
@@ -1544,7 +1544,7 @@
   "sitemap-es-cheap-houses.xml": 336,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
-  "sitemap-es-blog.xml": 37,
+  "sitemap-es-blog.xml": 38,
   "sitemap-es-can-i-buy.xml": 269,
   "sitemap-es-compare.xml": 172,
   "sitemap-es-homes-austria.xml": 1,

@@ -137,4 +137,4 @@ These listings come from immoscout24.ch (10). RealHunt is not an estate agent an
 [Email me new homes in Switzerland](https://realhunt.co/alerts?country=Switzerland) · [Filter and sort these homes](https://realhunt.co/?country=Switzerland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Switzerland](https://realhunt.co/sitemap/switzerland)
 
 ---
-Source: https://realhunt.co/homes/switzerland (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/switzerland (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

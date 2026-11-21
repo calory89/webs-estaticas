@@ -99,4 +99,4 @@ These listings come from fincaraiz.com.co (3). RealHunt is not an estate agent a
 [Email me new homes in Colombia](https://realhunt.co/alerts?country=Colombia) · [Filter and sort these homes](https://realhunt.co/?country=Colombia#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Colombia](https://realhunt.co/sitemap/colombia)
 
 ---
-Source: https://realhunt.co/homes/colombia (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/colombia (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

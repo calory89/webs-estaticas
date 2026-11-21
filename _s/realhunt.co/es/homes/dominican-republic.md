@@ -121,4 +121,4 @@ Estos anuncios proceden de supercasas.com (5). RealHunt no es una inmobiliaria y
 [Avísame por correo de viviendas nuevas en República Dominicana](https://realhunt.co/es/alerts?country=Dominican%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Dominican+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en República Dominicana](https://realhunt.co/es/sitemap/dominican-republic)
 
 ---
-Fuente: https://realhunt.co/es/homes/dominican-republic (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/dominican-republic (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.

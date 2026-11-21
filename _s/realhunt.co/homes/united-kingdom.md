@@ -127,4 +127,4 @@ These listings come from propertypal.com (3), onthemarket.com (2). RealHunt is n
 [Email me new homes in the United Kingdom](https://realhunt.co/alerts?country=United%20Kingdom) · [Filter and sort these homes](https://realhunt.co/?country=United+Kingdom#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United Kingdom](https://realhunt.co/sitemap/united-kingdom)
 
 ---
-Source: https://realhunt.co/homes/united-kingdom (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/united-kingdom (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

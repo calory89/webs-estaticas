@@ -1,8 +1,8 @@
 # Cheap homes in Denmark: key facts and every home on RealHunt
 
-On 20 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
+On 21 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/denmark · Updated 20 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/denmark · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://realhunt.co/data/countries/denmark.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/denmark.json · PDF: https://re
 | Taxes and fees to buy | 1.5–3% of the price (as of 2026) |
 | Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. |
 | Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. |
-| Date of these figures | 20 November 2026 |
+| Date of these figures | 21 November 2026 |
 
 ## Costs and taxes
 

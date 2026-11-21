@@ -204,4 +204,4 @@ These listings come from green-acres.gr (23), spitogatos.gr (4). RealHunt is not
 [Email me new homes in Greece](https://realhunt.co/alerts?country=Greece) · [Filter and sort these homes](https://realhunt.co/?country=Greece#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Greece](https://realhunt.co/sitemap/greece)
 
 ---
-Source: https://realhunt.co/homes/greece (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/greece (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

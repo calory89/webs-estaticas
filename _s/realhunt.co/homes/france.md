@@ -236,4 +236,4 @@ These listings come from bienici.com (31), green-acres.fr (10), espaces-atypique
 [Email me new homes in France](https://realhunt.co/alerts?country=France) · [Filter and sort these homes](https://realhunt.co/?country=France#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in France](https://realhunt.co/sitemap/france)
 
 ---
-Source: https://realhunt.co/homes/france (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/france (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

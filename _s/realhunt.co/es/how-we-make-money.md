@@ -4,7 +4,7 @@ Cómo trabaja RealHunt
 
 Los compradores no pagan nada. RealHunt solo cobra una comisión a los promotores de obra nueva, y solo cuando compra un comprador que RealHunt les presentó. No cobra por las casas de segunda mano que publica, ni por un puesto en una lista, ni por una nota.
 
-Actualizado el 20 de noviembre de 2026
+Actualizado el 21 de noviembre de 2026
 
 ### De dónde sale el dinero
 
@@ -35,4 +35,4 @@ RealHunt pertenece a Equinox Investment Group LLC (Sheridan, Wyoming, Estados Un
 - [Política editorial](https://realhunt.co/es/editorial-policy)
 
 ---
-Fuente: https://realhunt.co/es/how-we-make-money (RealHunt, 2026-11-20)
+Fuente: https://realhunt.co/es/how-we-make-money (RealHunt, 2026-11-21)

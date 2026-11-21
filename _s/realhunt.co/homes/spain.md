@@ -259,4 +259,4 @@ These listings come from fotocasa.es (100), pisos.com (17), green-acres.es (10),
 [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain) · [Filter and sort these homes](https://realhunt.co/?country=Spain#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Spain](https://realhunt.co/sitemap/spain)
 
 ---
-Source: https://realhunt.co/homes/spain (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/spain (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

@@ -123,4 +123,4 @@ These listings come from green-acres.pt (6). RealHunt is not an estate agent and
 [Email me new homes in Portugal](https://realhunt.co/alerts?country=Portugal) · [Filter and sort these homes](https://realhunt.co/?country=Portugal#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Portugal](https://realhunt.co/sitemap/portugal)
 
 ---
-Source: https://realhunt.co/homes/portugal (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/portugal (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

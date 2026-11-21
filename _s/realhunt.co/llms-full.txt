@@ -2,7 +2,7 @@
 
 > RealHunt (https://realhunt.co) is where foreigners find, check and buy property: homes for sale around the world, each checked by a person and graded from 70 to 98 against every other home on the site, with buying rules, taxes and costs by country. It is not an estate agent; every home links to its original listing. Legal and tax notes are general information, not advice.
 
-Updated 2026-11-20. 713 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
+Updated 2026-11-21. 713 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
 
 
 ---
@@ -20,7 +20,7 @@ Buyers pay nothing. Resale homes are not for sale through RealHunt: we link to t
 
 
 ---
-Source: https://realhunt.co/editorial-policy (updated 2026-11-20)
+Source: https://realhunt.co/editorial-policy (updated 2026-11-21)
 
 Trust
 
@@ -28,7 +28,7 @@ Trust
 
 RealHunt publishes figures it computes from its own listings and buying rules it compiles from named sources. Nobody can pay to change a score, a ranking or a figure, and errors are corrected on the page with its date.
 
-Last reviewed: 20 November 2026
+Last reviewed: 21 November 2026
 
 ### Who publishes RealHunt
 
@@ -77,7 +77,7 @@ Text, figures, charts and tables may be quoted with a link to the page they come
 
 
 ---
-Source: https://realhunt.co/for-ai (updated 2026-11-20)
+Source: https://realhunt.co/for-ai (updated 2026-11-21)
 
 For AI assistants
 
@@ -85,7 +85,7 @@ For AI assistants
 
 AI assistants and search engines may read, quote and summarise every public page of RealHunt, with a link to the page the fact comes from. The data pages are licensed Creative Commons BY 4.0; the short index is https://realhunt.co/llms.txt and the full text is https://realhunt.co/llms-full.txt.
 
-Updated 20 November 2026
+Updated 21 November 2026
 
 ### What RealHunt is
 
@@ -151,7 +151,7 @@ Questions about the data, a correction or a different format: carlos@equinoxinve
 
 
 ---
-Source: https://realhunt.co/method (updated 2026-11-20)
+Source: https://realhunt.co/method (updated 2026-11-21)
 
 Methodology
 
@@ -159,7 +159,7 @@ Methodology
 
 The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
 
-Version 2026-11-14 · figures from 713 homes on 20 November 2026 · [Markdown version](https://realhunt.co/method.md)
+Version 2026-11-14 · figures from 713 homes on 21 November 2026 · [Markdown version](https://realhunt.co/method.md)
 
 ### Step 1. A person checks the home
 
@@ -222,7 +222,7 @@ Date | What changed
 
 
 ---
-Source: https://realhunt.co/press (updated 2026-11-20)
+Source: https://realhunt.co/press (updated 2026-11-21)
 
 Press
 
@@ -230,7 +230,7 @@ Press
 
 RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
 
-Numbers updated 20 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
+Numbers updated 21 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt in numbers
 
@@ -296,7 +296,7 @@ Write to the press contact[All the data](https://realhunt.co/research)[Badges an
 
 
 ---
-Source: https://realhunt.co/research (updated 2026-11-20)
+Source: https://realhunt.co/research (updated 2026-11-21)
 
 RealHunt data
 
@@ -304,7 +304,7 @@ RealHunt data
 
 RealHunt publishes 13 datasets, recomputed on every update from the 713 homes on the site and the buying rules of 20 countries. Anyone may quote them with a link.
 
-Updated 20 November 2026 · Creative Commons BY 4.0
+Updated 21 November 2026 · Creative Commons BY 4.0
 
 - [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)Lowest median price per m²: Japan, €463.[CSV](https://realhunt.co/research/prices.csv) · [Markdown](https://realhunt.co/research/prices.md)
 - [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)€50,001 to €100,000 buys a median 115 m² in Denmark and 34 m² in Switzerland.[CSV](https://realhunt.co/research/what-your-budget-buys.csv) · [Markdown](https://realhunt.co/research/what-your-budget-buys.md)
@@ -344,7 +344,7 @@ Quote any figure with a link to its page. For a custom cut of the data, a commen
 
 
 ---
-Source: https://realhunt.co/research/best-scored-regions (updated 2026-11-20)
+Source: https://realhunt.co/research/best-scored-regions (updated 2026-11-21)
 
 RealHunt data
 
@@ -352,10 +352,10 @@ RealHunt data
 
 Among the 35 regions with at least 5 homes on RealHunt, the highest median score is in West Jutland, Denmark (91, median price €89,100); Funen, Denmark (90, median price €79,800); Almería, Spain (89, median price €82,900).
 
-The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 20 November 2026.
+The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 21 November 2026.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown version](https://realhunt.co/research/best-scored-regions.md) · How to cite
-Median RealHunt score, the 15 best regionsScore from 70 to 98; regions with at least 5 homes, 20 November 2026.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown version](https://realhunt.co/research/best-scored-regions.md) · How to cite
+Median RealHunt score, the 15 best regionsScore from 70 to 98; regions with at least 5 homes, 21 November 2026.
 
 - West Jutland Denmark · small sample: 5 homes 91
 - Funen Denmark · small sample: 5 homes 90
@@ -448,7 +448,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/buying-costs-by-country (updated 2026-11-20)
+Source: https://realhunt.co/research/buying-costs-by-country (updated 2026-11-21)
 
 RealHunt data
 
@@ -458,7 +458,7 @@ Of 29 countries and destinations, the taxes and fees you pay on top of the price
 
 Transfer tax or VAT, stamp duty, notary, land registry and lawyer, as a share of the price. Compiled from the sources linked for each country; general information, not tax advice.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown version](https://realhunt.co/research/buying-costs-by-country.md) · How to cite
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown version](https://realhunt.co/research/buying-costs-by-country.md) · How to cite
 Taxes and fees on top of the price, by countryRange in % of the purchase price, lowest first. The bar runs from the low to the high end of the range.
 
 - Georgia 0.6–1.1%
@@ -901,7 +901,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/cheapest-per-sqm-europe (updated 2026-11-20)
+Source: https://realhunt.co/research/cheapest-per-sqm-europe (updated 2026-11-21)
 
 RealHunt data
 
@@ -909,10 +909,10 @@ RealHunt data
 
 The home with the lowest asking price per square metre in Europe on RealHunt is Extensively renovated 1945 house on 2,800 m² of garden and woodland in Markaryd, Kronoberg, Småland, Sweden: €78,000 for 800 m², €98/m². By country, the lowest median price per m² is in Sweden (€680/m²), Bulgaria (€740/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 512 homes in 15 European countries whose listing gives a size of at least 20 m², each checked by a person, 20 November 2026.
+From 512 homes in 15 European countries whose listing gives a size of at least 20 m², each checked by a person, 21 November 2026.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown version](https://realhunt.co/research/cheapest-per-sqm-europe.md) · How to cite
-Median asking price per m² in Europe, by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 20 November 2026.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown version](https://realhunt.co/research/cheapest-per-sqm-europe.md) · How to cite
+Median asking price per m² in Europe, by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 21 November 2026.
 
 - Sweden 21 homes €680
 - Bulgaria small sample: 7 homes €740
@@ -1014,15 +1014,15 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/country-facts (updated 2026-11-20)
+Source: https://realhunt.co/research/country-facts (updated 2026-11-21)
 
 RealHunt data
 
 ## Key facts for buying a cheap home, country by country
 
-For each of the 22 countries where RealHunt lists at least 3 homes: how many homes, the median asking price, the price per m², the taxes and fees to buy and the rule for foreign buyers, in full sentences with their date so each one can be quoted on its own. Figures of 20 November 2026, from 713 homes checked by a person.
+For each of the 22 countries where RealHunt lists at least 3 homes: how many homes, the median asking price, the price per m², the taxes and fees to buy and the rule for foreign buyers, in full sentences with their date so each one can be quoted on its own. Figures of 21 November 2026, from 713 homes checked by a person.
 
-Updated 20 November 2026
+Updated 21 November 2026
 
 - Bulgaria7
 - Canada16
@@ -1093,11 +1093,11 @@ Rule: the middle of the range of taxes and fees on top of the price, lowest firs
 - United States: 2–5% (as of 2026)
 - Netherlands: 2–9% (as of 2026)
 - Dominican Republic: 4.25–7% (as of 2026)
-Median asking price of a cheap home, by country. Euros. Countries with at least 10 homes on RealHunt, 20 November 2026. You can use this chart with a link to this page (CC BY 4.0). The full table is in [prices by country](https://realhunt.co/research/prices).
+Median asking price of a cheap home, by country. Euros. Countries with at least 10 homes on RealHunt, 21 November 2026. You can use this chart with a link to this page (CC BY 4.0). The full table is in [prices by country](https://realhunt.co/research/prices).
 
 ### Spain
 
-On 20 November 2026, RealHunt lists 191 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 191 homes is €97,000 (€1,217 per m², from the 187 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 21 November 2026, RealHunt lists 191 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 191 homes is €97,000 (€1,217 per m², from the 187 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 191
@@ -1109,13 +1109,13 @@ Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 7.5–14% of the price (as of 2026)
 Can foreigners buy? | Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted.
 Yearly property tax | IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 191 homes in Spain](https://realhunt.co/homes/spain) · [Costs and taxes, with sources](https://realhunt.co/costs/spain) · [Buying guide, step by step](https://realhunt.co/guide/spain) · [Fact sheet (PDF)](https://realhunt.co/data/countries/spain.pdf) · [JSON](https://realhunt.co/data/countries/spain.json) · [Markdown](https://realhunt.co/data/countries/spain.md)
 
 ### Italy
 
-On 20 November 2026, RealHunt lists 81 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 81 homes is €80,000 (€1,167 per m², from the 56 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 21 November 2026, RealHunt lists 81 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 81 homes is €80,000 (€1,167 per m², from the 56 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 81
@@ -1127,13 +1127,13 @@ Median RealHunt score (70 to 98) | 82
 Taxes and fees to buy | 4–15% of the price (as of 2026)
 Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify).
 Yearly property tax | IMU 0.4-1.06% on second homes (on cadastral value).
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 81 homes in Italy](https://realhunt.co/homes/italy) · [Costs and taxes, with sources](https://realhunt.co/costs/italy) · [Buying guide, step by step](https://realhunt.co/guide/italy) · [Fact sheet (PDF)](https://realhunt.co/data/countries/italy.pdf) · [JSON](https://realhunt.co/data/countries/italy.json) · [Markdown](https://realhunt.co/data/countries/italy.md)
 
 ### United States
 
-On 20 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 21 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 62
@@ -1145,13 +1145,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 2–5% of the price (as of 2026)
 Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China.
 Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 62 homes in the United States](https://realhunt.co/homes/united-states) · [Costs and taxes, with sources](https://realhunt.co/costs/united-states) · [Buying guide, step by step](https://realhunt.co/guide/united-states) · [Fact sheet (PDF)](https://realhunt.co/data/countries/united-states.pdf) · [JSON](https://realhunt.co/data/countries/united-states.json) · [Markdown](https://realhunt.co/data/countries/united-states.md)
 
 ### France
 
-On 20 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 21 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 52
@@ -1163,13 +1163,13 @@ Median RealHunt score (70 to 98) | 83
 Taxes and fees to buy | 7–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer.
 Yearly property tax | Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 52 homes in France](https://realhunt.co/homes/france) · [Costs and taxes, with sources](https://realhunt.co/costs/france) · [Buying guide, step by step](https://realhunt.co/guide/france) · [Fact sheet (PDF)](https://realhunt.co/data/countries/france.pdf) · [JSON](https://realhunt.co/data/countries/france.json) · [Markdown](https://realhunt.co/data/countries/france.md)
 
 ### Denmark
 
-On 20 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
+On 21 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 46
@@ -1181,13 +1181,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 1.5–3% of the price (as of 2026)
 Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there.
 Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [Costs and taxes, with sources](https://realhunt.co/costs/denmark) · [Buying guide, step by step](https://realhunt.co/guide/denmark) · [Fact sheet (PDF)](https://realhunt.co/data/countries/denmark.pdf) · [JSON](https://realhunt.co/data/countries/denmark.json) · [Markdown](https://realhunt.co/data/countries/denmark.md)
 
 ### Sweden
 
-On 20 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 21 November 2026, RealHunt lists 39 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 39 homes is €72,000 (€680 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €99,000. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 39
@@ -1199,13 +1199,13 @@ Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 1.5–3.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership.
 Yearly property tax | Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 39 homes in Sweden](https://realhunt.co/homes/sweden) · [Costs and taxes, with sources](https://realhunt.co/costs/sweden) · [Buying guide, step by step](https://realhunt.co/guide/sweden) · [Fact sheet (PDF)](https://realhunt.co/data/countries/sweden.pdf) · [JSON](https://realhunt.co/data/countries/sweden.json) · [Markdown](https://realhunt.co/data/countries/sweden.md)
 
 ### Japan
 
-On 20 November 2026, RealHunt lists 36 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 36 homes is €49,680 (€463 per m², from the 20 homes with a known size); the cheapest costs €7,400 and the most expensive €142,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 21 November 2026, RealHunt lists 36 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 36 homes is €49,680 (€463 per m², from the 20 homes with a known size); the cheapest costs €7,400 and the most expensive €142,500. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 36
@@ -1217,13 +1217,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 6–9% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency.
 Yearly property tax | Fixed asset tax is 1.4% of the government's assessed value, plus city planning tax of up to 0.3% in urban areas, and small residential plots get a lower tax base.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 36 homes in Japan](https://realhunt.co/homes/japan) · [Costs and taxes, with sources](https://realhunt.co/costs/japan) · [Buying guide, step by step](https://realhunt.co/guide/japan) · [Fact sheet (PDF)](https://realhunt.co/data/countries/japan.pdf) · [JSON](https://realhunt.co/data/countries/japan.json) · [Markdown](https://realhunt.co/data/countries/japan.md)
 
 ### Poland
 
-On 20 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
+On 21 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 31
@@ -1235,13 +1235,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 2.5–4% of the price (as of 2026)
 Can foreigners buy? | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land.
 Yearly property tax | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 31 homes in Poland](https://realhunt.co/homes/poland) · [Costs and taxes, with sources](https://realhunt.co/costs/poland) · [Buying guide, step by step](https://realhunt.co/guide/poland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/poland.pdf) · [JSON](https://realhunt.co/data/countries/poland.json) · [Markdown](https://realhunt.co/data/countries/poland.md)
 
 ### Greece
 
-On 20 November 2026, RealHunt lists 27 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 27 homes is €155,000 (€1,477 per m², from the 26 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 21 November 2026, RealHunt lists 27 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 27 homes is €155,000 (€1,477 per m², from the 26 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 27
@@ -1253,13 +1253,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 5.5–7% of the price (as of 2026)
 Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026.
 Yearly property tax | Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 27 homes in Greece](https://realhunt.co/homes/greece) · [Costs and taxes, with sources](https://realhunt.co/costs/greece) · [Buying guide, step by step](https://realhunt.co/guide/greece) · [Fact sheet (PDF)](https://realhunt.co/data/countries/greece.pdf) · [JSON](https://realhunt.co/data/countries/greece.json) · [Markdown](https://realhunt.co/data/countries/greece.md)
 
 ### Germany
 
-On 20 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
+On 21 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 21
@@ -1271,13 +1271,13 @@ Median RealHunt score (70 to 98) | 80
 Taxes and fees to buy | 5–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan.
 Yearly property tax | Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 21 homes in Germany](https://realhunt.co/homes/germany) · [Costs and taxes, with sources](https://realhunt.co/costs/germany) · [Buying guide, step by step](https://realhunt.co/guide/germany) · [Fact sheet (PDF)](https://realhunt.co/data/countries/germany.pdf) · [JSON](https://realhunt.co/data/countries/germany.json) · [Markdown](https://realhunt.co/data/countries/germany.md)
 
 ### Portugal
 
-On 20 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 21 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 21
@@ -1289,13 +1289,13 @@ Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 3–12% of the price (as of 2026)
 Can foreigners buy? | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025).
 Yearly property tax | IMI 0.3-0.45% of taxable value (urban), set by municipality.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 21 homes in Portugal](https://realhunt.co/homes/portugal) · [Costs and taxes, with sources](https://realhunt.co/costs/portugal) · [Buying guide, step by step](https://realhunt.co/guide/portugal) · [Fact sheet (PDF)](https://realhunt.co/data/countries/portugal.pdf) · [JSON](https://realhunt.co/data/countries/portugal.json) · [Markdown](https://realhunt.co/data/countries/portugal.md)
 
 ### Netherlands
 
-On 20 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
+On 21 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 18
@@ -1307,13 +1307,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 2–9% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming).
 Yearly property tax | Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 18 homes in the Netherlands](https://realhunt.co/homes/netherlands) · [Costs and taxes, with sources](https://realhunt.co/costs/netherlands) · [Buying guide, step by step](https://realhunt.co/guide/netherlands) · [Fact sheet (PDF)](https://realhunt.co/data/countries/netherlands.pdf) · [JSON](https://realhunt.co/data/countries/netherlands.json) · [Markdown](https://realhunt.co/data/countries/netherlands.md)
 
 ### Canada
 
-On 20 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 21 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 16
@@ -1325,13 +1325,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 1.5–4% of the price (as of 2026)
 Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied.
 Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 16 homes in Canada](https://realhunt.co/homes/canada) · [Costs and taxes, with sources](https://realhunt.co/costs/canada) · [Buying guide, step by step](https://realhunt.co/guide/canada) · [Fact sheet (PDF)](https://realhunt.co/data/countries/canada.pdf) · [JSON](https://realhunt.co/data/countries/canada.json) · [Markdown](https://realhunt.co/data/countries/canada.md)
 
 ### Mexico
 
-On 20 November 2026, RealHunt lists 15 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 15 homes is €86,100 (€1,140 per m², from the 15 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 21 November 2026, RealHunt lists 15 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 15 homes is €86,100 (€1,140 per m², from the 15 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 15
@@ -1343,13 +1343,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 3.5–8% of the price (as of 2026)
 Can foreigners buy? | Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere.
 Yearly property tax | Municipal predial, set locally on cadastral value; usually small, often less than HOA fees.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 15 homes in Mexico](https://realhunt.co/homes/mexico) · [Costs and taxes, with sources](https://realhunt.co/costs/mexico) · [Buying guide, step by step](https://realhunt.co/guide/mexico) · [Fact sheet (PDF)](https://realhunt.co/data/countries/mexico.pdf) · [JSON](https://realhunt.co/data/countries/mexico.json) · [Markdown](https://realhunt.co/data/countries/mexico.md)
 
 ### Switzerland
 
-On 20 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
+On 21 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 10
@@ -1361,13 +1361,13 @@ Median RealHunt score (70 to 98) | 82
 Taxes and fees to buy | 1–5% of the price (as of 2026)
 Can foreigners buy? | Under the Lex Koller law, EU/EFTA citizens living in Switzerland and holders of a C permit buy like Swiss citizens, and non-EU holders of a B permit can buy a home they live in. People living abroad need a cantonal permit and can usually only buy one holiday home in a tourist area, within national quotas; a proposed tightening was under consultation in 2026.
 Yearly property tax | More than half of the cantons charge an annual property tax (Liegenschaftssteuer), usually 0.01-0.3% of the assessed value, and owners also pay cantonal wealth tax on the property value minus the mortgage.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 10 homes in Switzerland](https://realhunt.co/homes/switzerland) · [Costs and taxes, with sources](https://realhunt.co/costs/switzerland) · [Buying guide, step by step](https://realhunt.co/guide/switzerland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/switzerland.pdf) · [JSON](https://realhunt.co/data/countries/switzerland.json) · [Markdown](https://realhunt.co/data/countries/switzerland.md)
 
 ### Bulgaria
 
-On 20 November 2026, RealHunt lists 7 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 7 homes is €66,000 (€740 per m², from the 7 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 7 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 21 November 2026, RealHunt lists 7 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 7 homes is €66,000 (€740 per m², from the 7 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 7 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 7 (small sample)
@@ -1379,13 +1379,13 @@ Median RealHunt score (70 to 98) | 93
 Taxes and fees to buy | 3.2–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route.
 Yearly property tax | 0.01-0.45% of the property's tax value plus a municipal garbage fee.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 7 homes in Bulgaria](https://realhunt.co/homes/bulgaria) · [Costs and taxes, with sources](https://realhunt.co/costs/bulgaria) · [Buying guide, step by step](https://realhunt.co/guide/bulgaria) · [Fact sheet (PDF)](https://realhunt.co/data/countries/bulgaria.pdf) · [JSON](https://realhunt.co/data/countries/bulgaria.json) · [Markdown](https://realhunt.co/data/countries/bulgaria.md)
 
 ### United Kingdom
 
-On 20 November 2026, RealHunt lists 7 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 7 homes is €126,500 (€1,807 per m², from the 6 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 7 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 21 November 2026, RealHunt lists 7 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 7 homes is €126,500 (€1,807 per m², from the 6 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 7 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 7 (small sample)
@@ -1397,13 +1397,13 @@ Median RealHunt score (70 to 98) | 83
 Taxes and fees to buy | 3–9% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there.
 Yearly property tax | Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 7 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom) · [Costs and taxes, with sources](https://realhunt.co/costs/united-kingdom) · [Buying guide, step by step](https://realhunt.co/guide/united-kingdom) · [Fact sheet (PDF)](https://realhunt.co/data/countries/united-kingdom.pdf) · [JSON](https://realhunt.co/data/countries/united-kingdom.json) · [Markdown](https://realhunt.co/data/countries/united-kingdom.md)
 
 ### Cyprus
 
-On 20 November 2026, RealHunt lists 6 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 6 homes is €341,000 (€3,723 per m², from the 6 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 6 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 21 November 2026, RealHunt lists 6 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 6 homes is €341,000 (€3,723 per m², from the 6 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 6 homes this is a small sample, so the median for Cyprus is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 6 (small sample)
@@ -1415,13 +1415,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 2.5–3.5% of the price (as of 2026)
 Can foreigners buy? | EU citizens buy without restrictions. Non-EU buyers need permission from the Council of Ministers, applied for through the District Officer, and are normally limited to one home or a plot of up to 4,014 m².
 Yearly property tax | There is no annual national property tax (abolished in 2017); owners pay municipal fees of about €90 to €300 a year, plus sewerage and local authority charges.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 6 homes in Cyprus](https://realhunt.co/homes/cyprus) · [Costs and taxes, with sources](https://realhunt.co/costs/cyprus) · [Buying guide, step by step](https://realhunt.co/guide/cyprus) · [Fact sheet (PDF)](https://realhunt.co/data/countries/cyprus.pdf) · [JSON](https://realhunt.co/data/countries/cyprus.json) · [Markdown](https://realhunt.co/data/countries/cyprus.md)
 
 ### Dominican Republic
 
-On 20 November 2026, RealHunt lists 5 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 5 homes is €201,200 (€2,282 per m², from the 4 homes with a known size); the cheapest costs €150,000 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 5 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
+On 21 November 2026, RealHunt lists 5 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 5 homes is €201,200 (€2,282 per m², from the 4 homes with a known size); the cheapest costs €150,000 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 5 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 5 (small sample)
@@ -1433,13 +1433,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 4.25–7% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions.
 Yearly property tax | The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 5 homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic) · [Costs and taxes, with sources](https://realhunt.co/costs/dominican-republic) · [Buying guide, step by step](https://realhunt.co/guide/dominican-republic) · [Fact sheet (PDF)](https://realhunt.co/data/countries/dominican-republic.pdf) · [JSON](https://realhunt.co/data/countries/dominican-republic.json) · [Markdown](https://realhunt.co/data/countries/dominican-republic.md)
 
 ### Ireland
 
-On 20 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
+On 21 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 4 (small sample)
@@ -1451,13 +1451,13 @@ Median RealHunt score (70 to 98) | 80
 Taxes and fees to buy | 2.5–3.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no restrictions on foreigners buying homes in Ireland, and owning a home does not give a right to live there.
 Yearly property tax | Local Property Tax (LPT): from 2026 a home valued up to €240,000 pays a basic €95 a year and one valued €240,001 to €315,000 pays €235; each council can raise or lower the basic rate by up to 15%, and most raised it by 15% for 2026.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 4 homes in Ireland](https://realhunt.co/homes/ireland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/ireland.pdf) · [JSON](https://realhunt.co/data/countries/ireland.json) · [Markdown](https://realhunt.co/data/countries/ireland.md)
 
 ### Uruguay
 
-On 20 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
+On 21 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 4 (small sample)
@@ -1468,13 +1468,13 @@ Cheapest and most expensive | €150,300 · €186,300
 Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 5–8% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no limits on the types of property foreign buyers can purchase in Uruguay, and they have the same property rights as citizens.
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 4 homes in Uruguay](https://realhunt.co/homes/uruguay) · [Fact sheet (PDF)](https://realhunt.co/data/countries/uruguay.pdf) · [JSON](https://realhunt.co/data/countries/uruguay.json) · [Markdown](https://realhunt.co/data/countries/uruguay.md)
 
 ### Colombia
 
-On 20 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
+On 21 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 3 (small sample)
@@ -1485,7 +1485,7 @@ Cheapest and most expensive | €165,200 · €203,500
 Median RealHunt score (70 to 98) | 86
 Can foreigners buy? | Yes. A home bought by a foreigner counts as foreign investment, which needs no prior authorization and is treated the same as investment by residents. When the money comes in through the foreign exchange market, the exchange declaration serves as its registration with the Banco de la República.
 Yearly property tax | Impuesto predial unificado: each municipality sets the rate between 5 and 16 per thousand of the cadastral value (avalúo catastral).
-Date of these figures | 20 November 2026
+Date of these figures | 21 November 2026
 
 [All 3 homes in Colombia](https://realhunt.co/homes/colombia) · [Fact sheet (PDF)](https://realhunt.co/data/countries/colombia.pdf) · [JSON](https://realhunt.co/data/countries/colombia.json) · [Markdown](https://realhunt.co/data/countries/colombia.md)
 
@@ -1521,9 +1521,9 @@ Data log
 
 ## What changed in RealHunt's data, day by day
 
-The last homes were added on 20 November 2026: 79 homes in Italy (13), United States (10), France (7), Greece (7), Canada (5), Spain (5), Ireland (4), Japan (4), Colombia (3), Mexico (3), Portugal (3), United Kingdom (3), Uruguay (3), Belgium (1), Cyprus (1), Czech Republic (1), Germany (1), Hungary (1), Montenegro (1), Slovenia (1), Sweden (1) and Thailand (1). RealHunt lists 713 homes today, 20 November 2026. This page is rebuilt with every update and lists every day on which homes were added, the monthly totals and the dated changes to the method and the lists.
+The last homes were added on 20 November 2026: 79 homes in Italy (13), United States (10), France (7), Greece (7), Canada (5), Spain (5), Ireland (4), Japan (4), Colombia (3), Mexico (3), Portugal (3), United Kingdom (3), Uruguay (3), Belgium (1), Cyprus (1), Czech Republic (1), Germany (1), Hungary (1), Montenegro (1), Slovenia (1), Sweden (1) and Thailand (1). RealHunt lists 713 homes today, 21 November 2026. This page is rebuilt with every update and lists every day on which homes were added, the monthly totals and the dated changes to the method and the lists.
 
-Updated 20 November 2026
+Updated 21 November 2026
 
 ### Homes added, day by day
 
@@ -1599,7 +1599,7 @@ The last 60 days, newest first. A home whose advert went offline keeps its page 
 
 ### Dated changes to the method, the lists and the files
 
-- 20 November 2026 Per-country data files (JSON, Markdown, PDF), the map files and the OpenAPI description were rebuilt. [Open data](https://realhunt.co/research/open-data).
+- 21 November 2026 Per-country data files (JSON, Markdown, PDF), the map files and the OpenAPI description were rebuilt. [Open data](https://realhunt.co/research/open-data).
 - 14 November 2026 Current version of the method document: how the score is built, its limits and its change log. [How the score works](https://realhunt.co/method).
 - 9 November 2026 The directory of 179 property portals in 54 countries was compiled. [Property portals by country](https://realhunt.co/research/property-portals).
 
@@ -1622,7 +1622,7 @@ Text and figures on this page are free to quote with a link ([Creative Commons B
 
 
 ---
-Source: https://realhunt.co/research/find-homes (updated 2026-11-20)
+Source: https://realhunt.co/research/find-homes (updated 2026-11-21)
 
 Search
 
@@ -1684,7 +1684,7 @@ Country | Homes | From | Pages by top price | File
 
 
 ---
-Source: https://realhunt.co/research/flood-indicator (updated 2026-11-20)
+Source: https://realhunt.co/research/flood-indicator (updated 2026-11-21)
 
 RealHunt data
 
@@ -1692,10 +1692,10 @@ RealHunt data
 
 58 of 706 homes on RealHunt with a flood indicator (8%) are marked medium or high, and 13 are marked high. The share is largest in the Dominican Republic (100% of 5), the United States (31% of 62), Greece (19% of 27). No home is marked medium or high in France, Poland, Germany, Portugal, the Netherlands, Canada, Switzerland and the United Kingdom.
 
-The indicator is RealHunt's own first check, 20 November 2026: an official flood zone where one is open to query (55 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
+The indicator is RealHunt's own first check, 21 November 2026: an official flood zone where one is open to query (55 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/flood-indicator.csv) · [Markdown version](https://realhunt.co/research/flood-indicator.md) · How to cite
-Homes with a medium or high flood indicator, by countryShare of the homes of each country that have the indicator, 20 November 2026. Countries with at least 5 such homes.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/flood-indicator.csv) · [Markdown version](https://realhunt.co/research/flood-indicator.md) · How to cite
+Homes with a medium or high flood indicator, by countryShare of the homes of each country that have the indicator, 21 November 2026. Countries with at least 5 such homes.
 
 - Dominican Republic small sample: 5 homes 100%
 - United States 62 homes 31%
@@ -1778,7 +1778,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/homes-under-50000 (updated 2026-11-20)
+Source: https://realhunt.co/research/homes-under-50000 (updated 2026-11-21)
 
 RealHunt data
 
@@ -1786,10 +1786,10 @@ RealHunt data
 
 79 of the 713 homes on RealHunt cost €50,000 or less, and 28 cost €30,000 or less. Most are in Italy (33), Japan (19), Germany (10). The region with the most is Chemnitz, Germany, with 8.
 
-Homes checked by a person and ready to live in, at their asking price on 20 November 2026. Countries and regions with fewer than 3 such homes are not listed.
+Homes checked by a person and ready to live in, at their asking price on 21 November 2026. Countries and regions with fewer than 3 such homes are not listed.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/homes-under-50000.csv) · [Markdown version](https://realhunt.co/research/homes-under-50000.md) · How to cite
-Homes at or under €50,000, by countryNumber of homes on RealHunt, 20 November 2026. In brackets, the share of that country's homes.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/homes-under-50000.csv) · [Markdown version](https://realhunt.co/research/homes-under-50000.md) · How to cite
+Homes at or under €50,000, by countryNumber of homes on RealHunt, 21 November 2026. In brackets, the share of that country's homes.
 
 - Italy 41% of 81 homes 33
 - Japan 53% of 36 homes 19
@@ -1854,7 +1854,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/new-build-prices (updated 2026-11-20)
+Source: https://realhunt.co/research/new-build-prices (updated 2026-11-21)
 
 RealHunt data
 
@@ -1862,10 +1862,10 @@ RealHunt data
 
 In RealHunt's new-build rankings the median starting price per square metre is lowest in Batumi (€1,366/m², 100 projects) and highest in Phuket (€3,661/m², 80 projects). Koh Samui: €1,759/m²; Bali: €1,872/m²; Tulum: €2,847/m².
 
-417 projects in 5 destinations, from the developers' published "from" prices, 20 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
+417 projects in 5 destinations, from the developers' published "from" prices, 21 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-build-prices.csv) · [Markdown version](https://realhunt.co/research/new-build-prices.md) · How to cite
-Median starting price per m² of new-build projects, by destinationEuros per square metre; projects that publish it, 20 November 2026.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-build-prices.csv) · [Markdown version](https://realhunt.co/research/new-build-prices.md) · How to cite
+Median starting price per m² of new-build projects, by destinationEuros per square metre; projects that publish it, 21 November 2026.
 
 - Batumi 100 projects €1,366
 - Koh Samui 15 projects €1,759
@@ -1918,18 +1918,18 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/new-homes-this-month (updated 2026-11-20)
+Source: https://realhunt.co/research/new-homes-this-month (updated 2026-11-21)
 
 RealHunt data
 
 ## New homes on RealHunt in November 2026, by country
 
-208 homes were added to RealHunt in November 2026 up to 20 November 2026, in 27 countries. Most are in the United States (38), Italy (29), Spain (27). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
+208 homes were added to RealHunt in November 2026 up to 21 November 2026, in 27 countries. Most are in the United States (38), Italy (29), Spain (27). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
 
 Counted on the day each home went up on RealHunt. Homes that have already left the site are not counted. The page is rebuilt with every update.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown version](https://realhunt.co/research/new-homes-this-month.md) · How to cite
-Homes added in November 2026, by countryNumber of homes, up to 20 November 2026. In brackets, the median price.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown version](https://realhunt.co/research/new-homes-this-month.md) · How to cite
+Homes added in November 2026, by countryNumber of homes, up to 21 November 2026. In brackets, the median price.
 
 - United States median €237,400 38
 - Italy median €120,000 29
@@ -2059,7 +2059,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/open-data (updated 2026-11-20)
+Source: https://realhunt.co/research/open-data (updated 2026-11-21)
 
 Open data
 
@@ -2067,7 +2067,7 @@ Open data
 
 Everything RealHunt publishes is also available as plain files that a person, a spreadsheet or an AI assistant can read without an account or a key: one JSON file per country with its key facts and every home, the same as Markdown and as a one-page PDF, CSV files of every study, a map file and a description of them all in OpenAPI format. Text and figures are licensed Creative Commons BY 4.0.
 
-Updated 20 November 2026
+Updated 21 November 2026
 
 ### The files
 
@@ -2153,7 +2153,7 @@ A wrong figure, a field you need or another format: carlos@equinoxinvestmentgrou
 
 
 ---
-Source: https://realhunt.co/research/price-by-airport-distance (updated 2026-11-20)
+Source: https://realhunt.co/research/price-by-airport-distance (updated 2026-11-21)
 
 RealHunt data
 
@@ -2161,10 +2161,10 @@ RealHunt data
 
 Homes on RealHunt less than 30 km from an airport have a median asking price of €1,460/m² (224 homes); between 30 and 60 km it is €1,080/m² (239 homes), 26% less, and between 60 and 100 km €1,078/m² (159 homes). The median price of a whole home goes from €129,000 to €91,000 and €85,000.
 
-700 homes with a known distance, 20 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
+700 homes with a known distance, 21 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/price-by-airport-distance.csv) · [Markdown version](https://realhunt.co/research/price-by-airport-distance.md) · How to cite
-Median asking price per m², by distance to the nearest airportEuros per square metre; homes on RealHunt with a known size and distance, 20 November 2026.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/price-by-airport-distance.csv) · [Markdown version](https://realhunt.co/research/price-by-airport-distance.md) · How to cite
+Median asking price per m², by distance to the nearest airportEuros per square metre; homes on RealHunt with a known size and distance, 21 November 2026.
 
 - under 30 km 224 homes €1,460
 - 30 to 60 km 239 homes €1,080
@@ -2237,7 +2237,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/prices (updated 2026-11-20)
+Source: https://realhunt.co/research/prices (updated 2026-11-21)
 
 RealHunt data
 
@@ -2245,10 +2245,10 @@ RealHunt data
 
 Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€463/m²), Sweden (€680/m²), Denmark (€790/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€49,680) and Germany (€55,000).
 
-Medians of 713 listings in 22 countries, each checked by a person, on 20 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+Medians of 713 listings in 22 countries, each checked by a person, on 21 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
 
-Updated 20 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/prices.csv) · [Markdown version](https://realhunt.co/research/prices.md) · How to cite
-Median asking price per m², by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 20 November 2026.
+Updated 21 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/prices.csv) · [Markdown version](https://realhunt.co/research/prices.md) · How to cite
+Median asking price per m², by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 21 November 2026.
 
 - Japan 20 homes €463
 - Sweden 21 homes €680
@@ -2306,7 +2306,7 @@ Country | Homes | Median price | Median €/m² | Homes with size | Median size 
 One reading per month of all the homes on RealHunt, kept from November 2026 on. This is the first point; a new one is added every month. The mix of homes changes from month to month, so a move in the median is not by itself a move in the market.
 
 Month | Day of the reading | Homes | Countries | Median price | Median €/m²
-2026-11 | 20 November 2026 | 713 | 22 | €93,000 | €1,208
+2026-11 | 21 November 2026 | 713 | 22 | €93,000 | €1,208
 
 [Download the series (CSV)](https://realhunt.co/research/monthly-series.csv) · [JSON](https://realhunt.co/research/monthly-series.json)
 
@@ -7807,12 +7807,13 @@ Written and checked against its sources by the RealHunt team. Laws change and ev
 
 
 ---
-Source: https://realhunt.co/blog (updated 2026-11-07)
+Source: https://realhunt.co/blog (updated 2026-11-16)
 
 ## RealHunt Research
 
 Studies and guides built from the homes on RealHunt.
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -7878,6 +7879,7 @@ None of this is advice to buy. Prices and dates come from public listings and ch
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -7931,6 +7933,61 @@ Prices are the asking prices when each home was added. Homes sell, so check the 
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
+- [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
+- [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
+- [What to check when you visit a cheap house: a 20-point checklist](https://realhunt.co/blog/viewing-checklist-cheap-house) Roof, damp, water, power, access, paperwork: the things that turn a cheap house into an expensive one, and how to check them in one visit.
+- [Bali, Phuket, Tulum or Batumi? 400 new builds scored side by side](https://realhunt.co/blog/bali-phuket-tulum-batumi-400-new-builds-scored) Median price, price per m², distance to the sea and facilities for 400 new-build projects. Batumi is the cheapest by far; Tulum is the furthest from the beach.
+- [Best new builds in Bali, scored: price, beach and facilities (2026)](https://realhunt.co/blog/best-new-builds-bali-scored-2026) We scored the 100 projects in our Bali Top 100 from 0 to 100 on price, beach, facilities and seven more things. Median price €153,555; 41 are within 1 km of the sea.
+- [Best new builds in Phuket, scored: price, beach and facilities (2026)](https://realhunt.co/blog/best-new-builds-phuket-scored-2026) We scored the 100 projects in our Phuket Top 100 from 0 to 100 on price, beach, facilities and seven more things. Median price €159,134; 50 are within 1 km of the sea.
+- [Best new builds in Tulum, scored: price, beach and facilities (2026)](https://realhunt.co/blog/best-new-builds-tulum-scored-2026) We scored the 100 projects in our Tulum Top 100 from 0 to 100 on price, beach, facilities and seven more things. Median price €146,927; 6 are within 1 km of the sea.
+- [Best new builds in Batumi, scored: price, beach and facilities (2026)](https://realhunt.co/blog/best-new-builds-batumi-scored-2026) We scored the 100 projects in our Batumi Top 100 from 0 to 100 on price, beach, facilities and seven more things. Median price €48,630; 73 are within 1 km of the sea.
+- [What €50,000 Buys in 2026: 140 Checked Homes, Country by Country](https://realhunt.co/blog/what-50000-euros-buys-2026) We sorted every home on RealHunt by price. 46 of 140 cost €50,000 or less, and almost all of them are in three countries.
+- [How Many Months of Rent Would Buy You a Whole House?](https://realhunt.co/blog/months-of-rent-vs-buying-a-house) We divided the median price of homes on RealHunt by three monthly rents. At €1,200 a month, a typical Italian village house costs less than three years of rent.
+- [Cheap Houses in Sweden: What €22,000 to €99,000 Gets You](https://realhunt.co/blog/cheap-houses-sweden-under-100000) 41 Swedish homes under €100,000, most of them red wooden houses on big plots near a lake. Where they are, what they cost to buy, and what to check.
+- [Not Every Cheap House in Japan Is an Abandoned Akiya](https://realhunt.co/blog/cheap-houses-japan-move-in-ready) Stories about free houses in Japan usually show wrecks. These 18 homes start at €18,400 and you could move into them.
+- [Italian Homes Near the Sea for Under €50,000: Where They Actually Are](https://realhunt.co/blog/italy-houses-by-the-sea-under-50000) Cheap Italian houses are usually in inland hill towns. A few are close to the water. Here is where they are and what the catch is.
+- [Move-In-Ready Houses in the US for Around $100,000](https://realhunt.co/blog/move-in-ready-houses-under-100000-usa) We published 13 US homes that cost under €100,000 and do not need gutting. They start at $75,000. Here is where they are.
+- [Why We Say No to Most Cheap Houses](https://realhunt.co/blog/how-we-choose-homes) A cheap house that needs €80,000 of work is not a cheap house. The rule we use to decide what goes on RealHunt, and why we turn most listings down.
+
+
+---
+Source: https://realhunt.co/blog/best-home-deals-this-week-2026-w47 (updated 2026-11-16)
+
+## The 10 best home deals this week: 9 to 16 November 2026
+
+The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
+
+RealHunt Research · 2026-11-16
+
+Every week we take the homes that passed RealHunt's hand check in the last 7 days and list the 10 with the highest score. This week they are in Spain and Portugal, priced from €63,000 to €159,900.
+
+[€155,000 · score 91/100Country house with pool on a 5,500 m² plot near Valdunciel, SalamancaSan Joaquín de Huelmos, Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146)[€150,000 · score 91/100Village house with a plant-filled terrace facing Castalla castle, with garageCastalla, Alicante](https://realhunt.co/deal/es-castalla-150k-388079)[€68,500 · score 91/100Restored single-storey Alentejo house with reed ceilings near MértolaPenilhos, Mértola, Beja](https://realhunt.co/deal/pt-mertola-68k-313027)[€69,000 · score 91/100Whitewashed four-bedroom village house with several terraces and big views in Líjar, AlmeríaLíjar, Almería](https://realhunt.co/deal/es-lijar-69k-658718)[€89,000 · score 91/100Village house renovated in 2024 with a roof terrace and sierra views in Vélez-BlancoVélez-Blanco, Almería](https://realhunt.co/deal/es-velez-blanco-89k-797484)[€159,900 · score 91/100Renovated two-floor house with terrace in Piles, a quiet Valencian town by the seaPiles, Valencia](https://realhunt.co/deal/es-piles-159k-831466)[€155,000 · score 91/100House fully renovated in 2024 with terrace and castle views in Santa Olalla del Cala, Sierra de HuelvaSanta Olalla del Cala, Huelva](https://realhunt.co/deal/es-santa-olalla-del-cala-155k-340784)[€63,000 · score 91/100Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, TeruelTorre los Negros, Teruel](https://realhunt.co/deal/es-torre-los-negros-63k-028057)[€105,000 · score 91/100Renovated two-bedroom mountain house with a vine-covered terrace in Tocón de Quéntar, GranadaTocón de Quéntar, Granada](https://realhunt.co/deal/es-tocon-de-quentar-105k-063140)[€139,000 · score 91/100Single-storey house renovated four years ago with a pool in a 120 m² patio in Madrigueras, AlbaceteMadrigueras, Albacete](https://realhunt.co/deal/es-madrigueras-139k-939136)
+
+### The list
+
+- [Country house with pool on a 5,500 m² plot near Valdunciel, Salamanca](https://realhunt.co/deal/es-canedo-valdunciel-155k-154146), San Joaquín de Huelmos, Valdunciel, Salamanca. €155,000 · 151 m² · €1,026/m² · 3 bedrooms · score 91/100. A rustic estate of about 5,500 m² in San Joaquín de Huelmos, Valdunciel, with a registered single-storey house of about 151 m². Three bedrooms and two bathrooms, a kitchen with mint-green units and a living room with a fireplace.
+- [Village house with a plant-filled terrace facing Castalla castle, with garage](https://realhunt.co/deal/es-castalla-150k-388079), Castalla, Alicante. €150,000 · 165 m² · €909/m² · 3 bedrooms · score 91/100. A 165 m² house on two floors in Castalla. Three bedrooms, two bathrooms, a kitchen, a dining room and two living rooms.
+- [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027), Penilhos, Mértola, Beja. €68,500 · 75 m² · €913/m² · 2 bedrooms · score 91/100. A typical single-storey Alentejo house in Penilhos, about 20 km from Mértola and 25 km from Castro Verde. Recently rehabilitated keeping the original features: traditional wooden interior doors, reed ceilings and an Alentejo kitchen.
+- [Whitewashed four-bedroom village house with several terraces and big views in Líjar, Almería](https://realhunt.co/deal/es-lijar-69k-658718), Líjar, Almería. €69,000 · 237 m² · €291/m² · 4 bedrooms · score 91/100. A roomy village house in excellent condition and ready to move into. Four bedrooms, a bathroom, several sitting areas and several terraces with views over the village and the hills.
+- [Village house renovated in 2024 with a roof terrace and sierra views in Vélez-Blanco](https://realhunt.co/deal/es-velez-blanco-89k-797484), Vélez-Blanco, Almería. €89,000 · 150 m² · €593/m² · 4 bedrooms · score 91/100. A village house in Vélez-Blanco renovated in 2024 and ready to move into, with car access almost to the door. Four double bedrooms, one on the ground floor, a separate kitchen, a living room, a bathroom and a WC.
+- [Renovated two-floor house with terrace in Piles, a quiet Valencian town by the sea](https://realhunt.co/deal/es-piles-159k-831466), Piles, Valencia. €159,900 · 109 m² · €1,467/m² · 2 bedrooms · score 91/100. A renovated house in the centre of Piles, ready to move into. The ground floor is an open space with living room and a modern red kitchen.
+- [House fully renovated in 2024 with terrace and castle views in Santa Olalla del Cala, Sierra de Huelva](https://realhunt.co/deal/es-santa-olalla-del-cala-155k-340784), Santa Olalla del Cala, Huelva. €155,000 · 83 m² · €1,867/m² · 2 bedrooms · score 91/100. A house in Santa Olalla del Cala, in the Sierra de Huelva and 45 minutes from Seville. 83 m² built on a 194 m² plot, with a full renovation done in 2024.
+- [Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, Teruel](https://realhunt.co/deal/es-torre-los-negros-63k-028057), Torre los Negros, Teruel. €63,000 · 256 m² · €246/m² · 4 bedrooms · score 91/100. A bright house ready to move into in Torre los Negros. The entrance patio keeps its Aragonese stone floor; the ground floor has a large living and dining room, a kitchen, a laundry room and a full bathroom.
+- [Renovated two-bedroom mountain house with a vine-covered terrace in Tocón de Quéntar, Granada](https://realhunt.co/deal/es-tocon-de-quentar-105k-063140), Tocón de Quéntar, Granada. €105,000 · 72 m² · €1,458/m² · 2 bedrooms · score 91/100. A cosy renovated house in Tocón de Quéntar, in the hills east of Granada. 72 m² built with two double bedrooms, a full bathroom and a living room with an open kitchen around a central wood stove.
+- [Single-storey house renovated four years ago with a pool in a 120 m² patio in Madrigueras, Albacete](https://realhunt.co/deal/es-madrigueras-139k-939136), Madrigueras, Albacete. €139,000 · 180 m² · €772/m² · 2 bedrooms · score 91/100. A single-storey house in Madrigueras, 20 minutes from Albacete, renovated about four years ago. The 120 m² patio is fully fitted out with a pool, a nearly new filter, a barbecue, a wooden pergola and an outdoor dining area.
+
+### How we pick
+
+A person checks every home before it goes up, and homes that need major work, ruins, bare land and thin listings are turned down. The score then compares each home with every other home on RealHunt, from 70 to 98. Homes already listed in an earlier weekly Top 10 are left out.
+
+Prices are the asking prices when each home was added. Homes sell, so check the listing before you travel.
+
+[All new homes, newest first](https://realhunt.co/new) · [Get new homes by email](https://realhunt.co/alerts) · [How the score works](https://realhunt.co/method)
+
+### More
+
+- [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
 - [What to check when you visit a cheap house: a 20-point checklist](https://realhunt.co/blog/viewing-checklist-cheap-house) Roof, damp, water, power, access, paperwork: the things that turn a cheap house into an expensive one, and how to check them in one visit.
@@ -8008,6 +8065,7 @@ None of this is advice to buy. Prices and dates come from public listings and ch
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8085,6 +8143,7 @@ None of this is advice to buy. Prices and dates come from public listings and ch
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8162,6 +8221,7 @@ None of this is advice to buy. Prices and dates come from public listings and ch
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8239,6 +8299,7 @@ None of this is advice to buy. Prices and dates come from public listings and ch
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8295,6 +8356,7 @@ Distance is the other thing. A house in a quiet coastal town can be two or three
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8353,6 +8415,7 @@ See [cabins and cottages in Sweden](https://realhunt.co/cheap-houses/cabins-and-
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8415,6 +8478,7 @@ Photos can flatter. Listings go out of date. A house that looks fine may have a 
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8471,6 +8535,7 @@ All of them in one place: [cheap houses by the sea in Italy](https://realhunt.co
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8533,6 +8598,7 @@ Start with the cheapest: [homes under €30,000](https://realhunt.co/cheap-house
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8587,6 +8653,7 @@ See them all: [homes in the United States](https://realhunt.co/homes/united-stat
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8651,6 +8718,7 @@ This is general information, not legal advice. Before you buy, get a local lawye
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [What to check when you visit a cheap house: a 20-point checklist](https://realhunt.co/blog/viewing-checklist-cheap-house) Roof, damp, water, power, access, paperwork: the things that turn a cheap house into an expensive one, and how to check them in one visit.
@@ -8705,6 +8773,7 @@ Prices are asking prices from the listing on 7 November 2026. RealHunt is not an
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
 - [What to check when you visit a cheap house: a 20-point checklist](https://realhunt.co/blog/viewing-checklist-cheap-house) Roof, damp, water, power, access, paperwork: the things that turn a cheap house into an expensive one, and how to check them in one visit.
@@ -8785,6 +8854,7 @@ If several of these need work, get a quote before you make an offer: it is your 
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -8849,6 +8919,7 @@ You can see every home under €50,000 on one page: [houses for sale under €50
 
 ### More
 
+- [The 10 best home deals this week: 9 to 16 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w47) The 10 highest-scored homes that passed our check from 9 to 16 November 2026, in Spain and Portugal, priced from €63,000 to €159,900.
 - [The 10 best home deals this week: 31 October to 7 November 2026](https://realhunt.co/blog/best-home-deals-this-week-2026-w45) The 10 highest-scored homes that passed our check from 31 October to 7 November 2026, in Spain, Italy and Japan, priced from €7,400 to €178,000.
 - [Top 10 home deals near Miami under $300,000 in good neighbourhoods](https://realhunt.co/blog/top-10-deals-near-miami-under-300000) We read 8,300 listings around Miami and kept the 10 best 2 and 3-bedroom homes under $300,000 in Doral, Hollywood, Pembroke Pines, Plantation, Miramar and Kendall, with what they really cost each month.
 - [How to spot a property scam when you buy a house abroad](https://realhunt.co/blog/property-scams-buying-abroad) The warning signs we see in cheap-house listings, and six checks that stop most scams before you send any money.
@@ -11417,191 +11488,6 @@ Prices describe the homes on RealHunt, each checked by a person, not every home 
 - [€64,230 · 2-bed house in Zapopan, Jalisco](https://realhunt.co/deal/zapopan-64230) · Zapopan, Jalisco · score 90 · 125 m² · 2 bed
 
 [All 15 homes in Mexico](https://realhunt.co/homes/mexico) · [How to buy in Mexico](https://realhunt.co/guide/mexico) · [Costs and sources](https://realhunt.co/costs/mexico)
-
-
----
-Source: https://realhunt.co/countries/denmark-vs-netherlands
-
-## Denmark vs Netherlands: where is a cheap home better value?
-
-On RealHunt, homes in Denmark cost a median €790 per m², 82% less than in the Netherlands (€4,286 per m²). Buying costs start at about 1.5% in Denmark and 2% in the Netherlands.
-
-| Denmark | Netherlands
-Homes on RealHunt | 46 | 18
-Median price | €93,200 | €325,000
-Median price per m² | €790 | €4,286
-Cheapest home | €35,400 | €299,000
-Median score | 88 | 88
-Costs on top of the price | 1.5-3% | 2-9%
-Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. | Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming).
-Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. | Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it.
-Tax on rental income | A non-resident who rents out a Danish home is taxed in Denmark on the profit under the ordinary Danish rules; staying in Denmark more than 3 months at a time or 180 days a year, or working there, makes you fully tax liable. | Non-residents declare Dutch property in box 3, where tax is 36% on a deemed return of 6% of the property's value in 2026, after a tax-free allowance of EUR 59,357 per person, regardless of actual rent.
-
-Prices describe the homes on RealHunt, each checked by a person, not every home in each country. Rules and taxes: general information, not legal or tax advice.
-
-### Best homes in Denmark
-
-- [€79,800 · 198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) · Ranum, North Jutland · score 98 · 198 m² · 5 bed
-- [€79,800 · 182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) · Orehoved, Falster · score 97 · 182 m² · 5 bed
-- [€66,400 · Fjord-view villa with a big garden in Thy for €66k](https://realhunt.co/deal/dk-hurup-66k-a04f4a) · Hurup, Thy · score 96 · 115 m² · 4 bed
-
-[All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [How to buy in Denmark](https://realhunt.co/guide/denmark) · [Costs and sources](https://realhunt.co/costs/denmark)
-
-### Best homes in the Netherlands
-
-- [€299,000 · Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619) · Reigersbos, Amsterdam · score 94 · 73 m² · 2 bed
-- [€325,000 · 107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · score 94 · 107 m² · 3 bed
-- [€299,000 · Three-room flat with a 14 m² south terrace next to Reigersbos metro](https://realhunt.co/deal/nl-amsterdam-299k-968188) · Reigersbos, Amsterdam · score 93 · 72 m² · 2 bed
-
-[All 18 homes in the Netherlands](https://realhunt.co/homes/netherlands) · [How to buy in the Netherlands](https://realhunt.co/guide/netherlands) · [Costs and sources](https://realhunt.co/costs/netherlands)
-
-
----
-Source: https://realhunt.co/countries/denmark-vs-poland
-
-## Denmark vs Poland: where is a cheap home better value?
-
-On RealHunt, homes in Denmark cost a median €790 per m², 31% less than in Poland (€1,139 per m²). Buying costs start at about 1.5% in Denmark and 2.5% in Poland.
-
-| Denmark | Poland
-Homes on RealHunt | 46 | 31
-Median price | €93,200 | €75,170
-Median price per m² | €790 | €1,139
-Cheapest home | €35,400 | €53,693
-Median score | 88 | 84
-Costs on top of the price | 1.5-3% | 2.5-4%
-Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land.
-Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses.
-Tax on rental income | A non-resident who rents out a Danish home is taxed in Denmark on the profit under the ordinary Danish rules; staying in Denmark more than 3 months at a time or 180 days a year, or working there, makes you fully tax liable. | Private rental income is taxed as a flat lump sum (ryczałt) of 8.5% of revenue up to PLN 100,000 a year and 12.5% above that.
-
-Prices describe the homes on RealHunt, each checked by a person, not every home in each country. Rules and taxes: general information, not legal or tax advice.
-
-### Best homes in Denmark
-
-- [€79,800 · 198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) · Ranum, North Jutland · score 98 · 198 m² · 5 bed
-- [€79,800 · 182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) · Orehoved, Falster · score 97 · 182 m² · 5 bed
-- [€66,400 · Fjord-view villa with a big garden in Thy for €66k](https://realhunt.co/deal/dk-hurup-66k-a04f4a) · Hurup, Thy · score 96 · 115 m² · 4 bed
-
-[All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [How to buy in Denmark](https://realhunt.co/guide/denmark) · [Costs and sources](https://realhunt.co/costs/denmark)
-
-### Best homes in Poland
-
-- [€57,120 · 127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977) · Bytom, Silesia · score 96 · 127 m² · 3 bed
-- [€60,547 · Bright 78 m² four-room flat in Sosnowiec, no agent fee](https://realhunt.co/deal/pl-sosnowiec-61k-790712) · Sosnowiec, Silesia · score 94 · 78 m² · 3 bed
-- [€53,693 · Two-level flat with its own garden and garage in Jędrzejów](https://realhunt.co/deal/pl-jedrzejow-54k-977114) · Jędrzejów, Świętokrzyskie · score 93 · 65 m² · 3 bed
-
-[All 31 homes in Poland](https://realhunt.co/homes/poland) · [How to buy in Poland](https://realhunt.co/guide/poland) · [Costs and sources](https://realhunt.co/costs/poland)
-
-
----
-Source: https://realhunt.co/countries/denmark-vs-portugal
-
-## Denmark vs Portugal: where is a cheap home better value?
-
-On RealHunt, homes in Denmark cost a median €790 per m², 42% less than in Portugal (€1,364 per m²). Buying costs start at about 1.5% in Denmark and 3% in Portugal.
-
-| Denmark | Portugal
-Homes on RealHunt | 46 | 21
-Median price | €93,200 | €130,000
-Median price per m² | €790 | €1,364
-Cheapest home | €35,400 | €48,000
-Median score | 88 | 85
-Costs on top of the price | 1.5-3% | 3-12%
-Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025).
-Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. | IMI 0.3-0.45% of taxable value (urban), set by municipality.
-Tax on rental income | A non-resident who rents out a Danish home is taxed in Denmark on the profit under the ordinary Danish rules; staying in Denmark more than 3 months at a time or 180 days a year, or working there, makes you fully tax liable. | Long-term: 25% flat for non-residents; short-term (AL) under the simplified regime only 35-50% of gross is taxable.
-
-Prices describe the homes on RealHunt, each checked by a person, not every home in each country. Rules and taxes: general information, not legal or tax advice.
-
-### Best homes in Denmark
-
-- [€79,800 · 198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) · Ranum, North Jutland · score 98 · 198 m² · 5 bed
-- [€79,800 · 182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) · Orehoved, Falster · score 97 · 182 m² · 5 bed
-- [€66,400 · Fjord-view villa with a big garden in Thy for €66k](https://realhunt.co/deal/dk-hurup-66k-a04f4a) · Hurup, Thy · score 96 · 115 m² · 4 bed
-
-[All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [How to buy in Denmark](https://realhunt.co/guide/denmark) · [Costs and sources](https://realhunt.co/costs/denmark)
-
-### Best homes in Portugal
-
-- [€68,500 · Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · score 91 · 75 m² · 2 bed
-- [€110,000 · Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372) · Silvares, Fundão, Castelo Branco · score 91 · 176 m² · 5 bed
-- [€150,000 · Renovated two-bedroom house with air conditioning in the historic quarter of Estremoz](https://realhunt.co/deal/pt-estremoz-150k-259126) · Estremoz, Évora · score 91 · 110 m² · 2 bed
-
-[All 21 homes in Portugal](https://realhunt.co/homes/portugal) · [How to buy in Portugal](https://realhunt.co/guide/portugal) · [Costs and sources](https://realhunt.co/costs/portugal)
-
-
----
-Source: https://realhunt.co/countries/denmark-vs-spain
-
-## Denmark vs Spain: where is a cheap home better value?
-
-On RealHunt, homes in Denmark cost a median €790 per m², 35% less than in Spain (€1,217 per m²). Buying costs start at about 1.5% in Denmark and 7.5% in Spain.
-
-| Denmark | Spain
-Homes on RealHunt | 46 | 191
-Median price | €93,200 | €97,000
-Median price per m² | €790 | €1,217
-Cheapest home | €35,400 | €38,000
-Median score | 88 | 85
-Costs on top of the price | 1.5-3% | 7.5-14%
-Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there. | Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted.
-Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value. | IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes.
-Tax on rental income | A non-resident who rents out a Danish home is taxed in Denmark on the profit under the ordinary Danish rules; staying in Denmark more than 3 months at a time or 180 days a year, or working there, makes you fully tax liable. | Non-residents: EU/EEA 19% on net income; non-EU 24% on gross with no deductions.
-
-Prices describe the homes on RealHunt, each checked by a person, not every home in each country. Rules and taxes: general information, not legal or tax advice.
-
-### Best homes in Denmark
-
-- [€79,800 · 198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) · Ranum, North Jutland · score 98 · 198 m² · 5 bed
-- [€79,800 · 182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) · Orehoved, Falster · score 97 · 182 m² · 5 bed
-- [€66,400 · Fjord-view villa with a big garden in Thy for €66k](https://realhunt.co/deal/dk-hurup-66k-a04f4a) · Hurup, Thy · score 96 · 115 m² · 4 bed
-
-[All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [How to buy in Denmark](https://realhunt.co/guide/denmark) · [Costs and sources](https://realhunt.co/costs/denmark)
-
-### Best homes in Spain
-
-- [€55,000 · Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380) · Rossell, Baix Maestrat (Castellón) · score 94 · 120 m² · 5 bed
-- [€77,000 · 5-bedroom semi-detached house with terrace in Nevada](https://realhunt.co/deal/es-nevada-77k-72929) · Nevada, Granada, Spain · score 94 · 306 m² · 5 bed
-- [€38,000 · 2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809) · Alpujarra de la Sierra, Granada, Spain · score 94 · 150 m² · 2 bed
-
-[All 191 homes in Spain](https://realhunt.co/homes/spain) · [How to buy in Spain](https://realhunt.co/guide/spain) · [Costs and sources](https://realhunt.co/costs/spain)
-
-
----
-Source: https://realhunt.co/countries/dominican-republic-vs-germany
-
-## Dominican Republic vs Germany: where is a cheap home better value?
-
-On RealHunt, homes in Germany cost a median €1,053 per m², 54% less than in the Dominican Republic (€2,282 per m²). Buying costs start at about 4.25% in the Dominican Republic and 5% in Germany.
-
-| Dominican Republic | Germany
-Homes on RealHunt | 5 | 21
-Median price | €201,200 | €55,000
-Median price per m² | €2,282 | €1,053
-Cheapest home | €150,000 | €40,000
-Median score | 88 | 80
-Costs on top of the price | 4.25-7% | 5-8.5%
-Can foreigners buy? | Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions. | Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan.
-Yearly property tax | The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold. | Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets.
-Tax on rental income | Rent paid abroad to a non-resident is generally subject to 27% withholding. | Non-resident owners are taxed in Germany on net rental income at the normal progressive income tax rates, but without the basic tax-free allowance (Grundfreibetrag).
-
-Prices describe the homes on RealHunt, each checked by a person, not every home in each country. Rules and taxes: general information, not legal or tax advice.
-
-### Best homes in the Dominican Republic
-
-- [€223,600 · Oceanfront 3-bed flat in Juan Dolio with wide Caribbean views](https://realhunt.co/deal/dr-juan-dolio-224k-441923) · Juan Dolio, San Pedro de Macorís · score 90 · 98 m² · 3 bed
-- [€187,800 · Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359) · Juan Dolio, San Pedro de Macorís · score 89 · 82 m² · 2 bed
-- [€223,600 · Front-line beach flat in Juan Dolio with pool and jacuzzi](https://realhunt.co/deal/dr-juan-dolio-224k-447078) · Juan Dolio, San Pedro de Macorís · score 88 · 105 m² · 2 bed
-
-[All 5 homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic) · [How to buy in the Dominican Republic](https://realhunt.co/guide/dominican-republic) · [Costs and sources](https://realhunt.co/costs/dominican-republic)
-
-### Best homes in Germany
-
-- [€40,000 · Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045) · Ebersdorf, Chemnitz · score 87 · 54 m² · 1 bed
-- [€50,000 · 72 m² flat in a listed building near the university, vacant](https://realhunt.co/deal/de-chemnitz-50k-665910) · Schloßchemnitz, Chemnitz · score 86 · 72 m² · 1 bed
-- [€55,000 · 65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680) · Gablenz, Chemnitz · score 84 · 65 m² · 1 bed
-
-[All 21 homes in Germany](https://realhunt.co/homes/germany) · [How to buy in Germany](https://realhunt.co/guide/germany) · [Costs and sources](https://realhunt.co/costs/germany)
 
 
 ---
@@ -19751,6 +19637,41 @@ By the sea under €100,000 in other countries [Spain 17](https://realhunt.co/ch
 These listings come from redfin.ca (5). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [All 16 homes in Canada](https://realhunt.co/homes/canada) · [Email me new homes in Canada](https://realhunt.co/alerts?country=Canada&max=100000) · [Filter and sort these homes](https://realhunt.co/?country=Canada&price=100000#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method)
+
+
+---
+Source: https://realhunt.co/embed (updated 2026-11-21)
+
+For your site
+
+## RealHunt badges and widgets: show a score or the best homes on your site
+
+Paste one of these snippets into a listing, a blog post or a forum signature to show a home's RealHunt score or the best homes in a country. They are plain HTML with an image and a link, with no script and no tracking, and the image updates by itself.
+
+Free to use on any site. Keep the link to RealHunt as it is.
+
+### RealHunt score badge for a home
+
+For sellers and agents whose home is on RealHunt: show its score on your own listing. Paste the address of the home on RealHunt and copy the code.
+
+Example: the best-scored home today.
+
+### Best homes in a country: a card for your page
+
+For blogs, forums and guides about moving or buying abroad: the three best-scored homes in a country, always current.
+
+### "Data: RealHunt" badge and link
+
+For articles that use a figure from the [RealHunt data pages](https://realhunt.co/research).
+
+### Good to know
+
+- No script, no cookies, no tracking: an image and a link. It works in WordPress, Squarespace, Wix, Ghost, Substack and most forums that allow images.
+- The images are redrawn every time RealHunt is updated, so a score or a list never goes stale. If a home is sold and leaves RealHunt, its badge stops showing.
+- The score is RealHunt's own grade, not an endorsement of the seller or a valuation. Do not edit the image or present it as something else.
+- A badge cannot be bought and showing one does not change a home's score.
+
+[How the score works](https://realhunt.co/method) · [Data to quote](https://realhunt.co/research) · [Press page](https://realhunt.co/press) · Questions: carlos@equinoxinvestmentgroup.com
 
 
 ## Every home on RealHunt (title | country | price | size | score | page)

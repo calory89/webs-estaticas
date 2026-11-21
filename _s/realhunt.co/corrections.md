@@ -4,7 +4,7 @@ Trust
 
 When we find that something we published was wrong or out of date, we change the page and its date, and we write the change here. This page lists the price changes of homes, the changes to the method and the corrections reported to us.
 
-Updated 20 November 2026
+Updated 21 November 2026
 
 ### Prices changed to match the advert
 
@@ -52,4 +52,4 @@ Write to carlos@equinoxinvestmentgroup.com with the page and what is wrong. For 
 - [Editorial policy](https://realhunt.co/editorial-policy)
 
 ---
-Source: https://realhunt.co/corrections (RealHunt, 2026-11-20)
+Source: https://realhunt.co/corrections (RealHunt, 2026-11-21)

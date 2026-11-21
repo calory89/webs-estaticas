@@ -211,4 +211,4 @@ These listings come from athome.co.jp (10), instagram.com (10), homes.co.jp (4),
 [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan) · [Filter and sort these homes](https://realhunt.co/?country=Japan#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Japan](https://realhunt.co/sitemap/japan)
 
 ---
-Source: https://realhunt.co/homes/japan (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/japan (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

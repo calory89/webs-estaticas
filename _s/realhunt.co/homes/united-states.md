@@ -249,4 +249,4 @@ These listings come from coldwellbanker.com (39), redfin.com (15), estately.com 
 [Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United States](https://realhunt.co/sitemap/united-states)
 
 ---
-Source: https://realhunt.co/homes/united-states (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/united-states (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

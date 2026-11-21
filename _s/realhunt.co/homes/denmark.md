@@ -226,4 +226,4 @@ These listings come from boligsiden.dk (43), boliga.dk (2), estate.dk (1). RealH
 [Email me new homes in Denmark](https://realhunt.co/alerts?country=Denmark) · [Filter and sort these homes](https://realhunt.co/?country=Denmark#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Denmark](https://realhunt.co/sitemap/denmark)
 
 ---
-Source: https://realhunt.co/homes/denmark (RealHunt, 2026-11-20). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/denmark (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.

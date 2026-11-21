@@ -241,4 +241,4 @@ Estos anuncios proceden de green-acres.it (33), idealista.it (16), instagram.com
 [Avísame por correo de viviendas nuevas en Italia](https://realhunt.co/es/alerts?country=Italy) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Italy#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Italia](https://realhunt.co/es/sitemap/italy)
 
 ---
-Fuente: https://realhunt.co/es/homes/italy (RealHunt, 2026-11-20). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/italy (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.
