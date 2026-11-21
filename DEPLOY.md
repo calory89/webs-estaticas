@@ -272,3 +272,17 @@ Pedido de Carlos: «continúa con todo». `qa_r25/patch_r25_pages.py` sobre `cit
 **Publicado:** `pub/_wp` aae2c8b (8.893 ficheros, solo `_s/supportnear.com`), con `patch-pub` + `qa_r25/apply_r25.py`
 (prueba en seco antes). Comprobado byte a byte en vivo 8.893/8.893; axe 0 fallos, smoke 0 fallos. `pub/_wp` en 14.782
 ficheros (límite 20.000). IndexNow 8.638 URL.
+
+
+## Ronda 26 (21-nov-2026): voluntariado y donaciones + contactos para enlaces
+
+- `qa_r26/patch_r26_pages.py`: `/c/<ciudad>-volunteer` (128) donde hay página de comida: «voluntariado y donaciones de
+  comida», con los mismos sitios (teléfono, horario) y un consejo (llamar antes). Enlace desde `/c/<ciudad>-food`.
+  Textos `R26` (11 idiomas). Ojo: un `{...}` nuevo en su propia línea dentro del f-string cambia el HTML de todas
+  las páginas (una línea vacía) y obliga a republicar miles: ponerlo pegado al bloque siguiente.
+- `outreach/extract.py`: contactos públicos (email/web de OpenStreetMap, de `raw/*.jsonl.gz`) de las entidades que
+  ya salen en SupportNear en España e Irlanda, con su ficha. Salida `contactos_es_ie.csv` (834, 392 con correo;
+  no se guarda en el repositorio). Borradores de correo en el doc de Claude «SupportNear: correos a entidades y
+  bibliotecas (borradores)». No se ha enviado nada.
+
+**Publicado:** `pub/_wp` 14dae43 (257 ficheros), byte a byte 257/257, axe 0 fallos. `pub/_wp` en 14.910 ficheros.
