@@ -100,6 +100,7 @@ async function brManifest(env) { if (BRM && Date.now() - BRM.t < 600000) return 
 export async function brServe(req, u, env) {
   if (req.method !== 'GET' || req.headers.get('range') || u.search) return null;
   if (!/\bbr\b/.test(req.headers.get('accept-encoding') || '')) return null;
+  if (req.headers.get('cf-worker') || /kolaboro-/i.test(req.headers.get('user-agent') || '')) return null;   // subrequests from our own worker read the normal file (they parse it as text)
   const f = u.pathname.slice(6), m = await brManifest(env), e = m && m.files && m.files[f];
   if (!e) return null;
   const src = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + f));
