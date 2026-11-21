@@ -177,7 +177,8 @@ export default {
     if (u.pathname === '/_worker.js' || u.pathname.startsWith('/_rhbuild')) return new Response('Not found', { status: 404 });
     const r = await env.ASSETS.fetch(req);
     if (r.status === 404 && RH_PK_RE.test(u.pathname)) { const pk = await packPage(env, req, u.pathname); if (pk) return pk; }
-    if (!IMG.test(u.pathname) || isImg(r)) return r;
+    /* rh-img-304 (21 Nov 2026): a 304 for a photo the browser already has is the answer, not a miss (it fell through to realhunt-top and became a 404) */
+    if (!IMG.test(u.pathname) || isImg(r) || r.status === 304) return r;
     const t = await topImage(u); if (t) return t;
     return new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain' } });
   }
