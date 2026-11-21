@@ -217,3 +217,39 @@ datos) a las 5.941 paginas cuyo texto no cambio. `SN_BUILT` no afecta a `city_pa
 **Publicado:** `pub/_wp` 6b4c1c4 (5.969 ficheros, todos bajo `_s/supportnear.com`). Comprobado byte a byte en vivo
 (5.969/5.969). Pruebas en vivo sin fallos: smoke 27, features 42, R22 38, R23 41 (`tests_r23/r23.py`), CSP limpia.
 Arbol: `qa_r23/stage_r23.py` (parte de `stage_r22`, que es lo publicado en la R22b) y `qa_r23/mk_manifest.py`.
+
+
+## Ronda 24 (21-nov-2026): SEO (visitas desde Google)
+
+Pedido de Carlos: «implementa todo para mejorar errores y mejoras» sobre el doc «SupportNear: 100 mejoras para
+visitas orgánicas» (Claude Docs). Punto de partida en Search Console (26-oct a 19-nov): 1 clic, 764 impresiones,
+posición media 45,9, 291 URL con impresiones de 7.006.
+
+**Hecho** (`qa_r24/patch_r24_pages.py` sobre `city_pages.py`, idempotente, parte de `city_pages.pre_r24.py`):
+- Una página por sitio con nombre: `/s/<nombre>-<n|w|r><id>` (comida, albergue, duchas, ropa, ayuda legal, con
+  horario o teléfono, a 30 km de una ciudad). Fuera los nombres de 1-2 letras y los que se repiten 3+ veces en la
+  misma ciudad (operadores: JCDecaux, «مركز ايواء»...). 2.529 páginas. Textos de la app (`l/<idioma>.json`:
+  `ui.addr`, `ui.hours`, `ui.phone`, `hours.none`, `cta.open`, `ui.call`, `menu.who`).
+- Las listas de ciudad y de necesidad (y su JSON-LD) enlazan a `/s/...` cuando existe (`purl()`).
+- 136 páginas de país `/country/<slug>` (países con 2+ ciudades), enlazadas desde cada ciudad y desde `/c/`.
+- «Ciudades cercanas» (6, a menos de 250 km) en cada página de ciudad.
+- `/t/<ciudad>`: canónica a `/c/<ciudad>`, fuera del sitemap. Ciudades sin ningún sitio con nombre: `noindex,follow`.
+- Comida, albergue y duchas: página propia con 2 con nombre y 3 en total (`has_need()`).
+- 15 ciudades con el nombre en inglés en la URL (`NAME_FIRST`: Dublin, Cologne, Copenhagen, Gothenburg...);
+  `r24_slug_moves.json` guarda viejo -> nuevo.
+- Pie: fecha de los datos (`SN_BUILT`) + enlace a «Quién está detrás». Textos nuevos en `R24` (11 idiomas).
+- `sitemap.xml` es un índice de `sitemap-main`, `-needs`, `-en`, `-places`.
+- En el árbol publicado (no en el generador): las 147 páginas viejas de ropa y todas las de los slugs movidos son
+  ahora una página mínima `noindex` con `refresh` a la nueva (`r24_stubs.json`; `qa_r24/stage_r24.py`).
+
+**Límite:** Cloudflare Pages admite 20.000 ficheros por despliegue. `pub/_wp` queda en 14.645: caben unas 5.000
+páginas más. Ampliar `/s/` por tandas y mirar antes cuánto indexa Google de `sitemap-places.xml`.
+
+**Publicación nueva (más rápida que la API de árboles):** paquetes .tgz + `qa_r24/apply_r24.py` en el bucket
+temporal; el workflow `patch-pub` de webs-estaticas (`branch=pub/_wp`, `script=<url de apply_r24.py>`, primero
+`dry_run=true`) descarga, comprueba sha256 y el blob git de cada fichero, y solo escribe en `_s/supportnear.com/`.
+Probado antes en local contra una copia de `stage_r23`.
+
+**Publicado:** `pub/_wp` e338dbb (10.163 ficheros, solo `_s/supportnear.com`). Comprobado byte a byte en vivo
+(10.163/10.163). Pruebas en vivo: smoke 0 fallos, R23 0 fallos, `tests_r24/axe_r24.py` 0 fallos (axe, escritorio y
+móvil oscuro). IndexNow 8.641 URL (200). Sitemaps enviados a Search Console.
