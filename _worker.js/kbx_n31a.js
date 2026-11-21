@@ -201,7 +201,7 @@ async function srPage(lang, shell, env, slug) {
 
 // ------------------------------------------------------------------------------------------------ 21: sticky button on project pages
 export function ctaHtml(lang, slug) {
-  const L = CTA[lang] || CTA.en, href = lang === 'en' ? '/book/?p=' + slug : pre(lang) + '/pricing/#check';
+  const L = CTA[lang] || CTA.en, href = (lang === 'en' ? '/book/' : pre(lang) + '/pricing/') + '?p=' + slug + '#kreq';   // n34r: request form first, payment after an agent is confirmed
   return '<div class="mcta kn31c"><a class="btn btn-hi" href="' + href + '" data-ev="n31_cta"><span>' + esc(L[0]) + '</span><small>' + esc(L[1]) + '</small></a></div>' +
     '<style>.kn31c .btn{display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2;padding-block:8px}.kn31c small{font-weight:500;font-size:.78rem;opacity:.92}@media (min-width:761px){.mcta.kn31c{display:block;left:auto;right:20px;bottom:20px;width:auto}.mcta.kn31c .btn{width:auto;padding-inline:20px}[dir=rtl] .mcta.kn31c{right:auto;left:20px}}@media print{.kn31c{display:none!important}}</style>' +
     '<script src="/k/n31.js?v=' + N31V + '" defer></script>';
