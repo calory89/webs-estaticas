@@ -7,7 +7,7 @@ import json, sys, os, re, hashlib, math, statistics, collections, unicodedata, d
 
 SITE = sys.argv[1]; REPO = sys.argv[2] if len(sys.argv) > 2 else None
 D = os.path.join(SITE, 'data')
-TODAY = '2026-11-19'
+TODAY = os.environ.get('KB_TODAY') or datetime.date.today().isoformat()   # n34s: was a fixed '2026-11-19'
 def J(p): return json.load(open(os.path.join(D, p)))
 def W(p, o, indent=None):
     os.makedirs(os.path.dirname(os.path.join(D, p)), exist_ok=True)
