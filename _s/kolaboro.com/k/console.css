@@ -387,3 +387,5 @@ a.kt-a{display:inline-flex;align-items:center;text-decoration:none;color:inherit
 .cmdk li.cmdk-none{cursor:default}
 @media (max-width:900px){.kt-grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:640px){.kt-item{flex-direction:column}.kt-t{flex:none;width:100%}.kt-acts{justify-content:flex-start;margin-inline-start:0}.kt-keys{display:none}.kt-vf{display:flex;width:100%}.kt-vf input{min-width:0;flex:1}.crm-lt .crm-ie{max-width:none}.cmdk-f{display:none}}
+/* n35b (22 Nov 2026): the credential chip sits in a light list on /portal/ and /portal/demo/, not on the dark bar (axe colour contrast) */
+li>.ap-chip[data-vc]{background:var(--k-ink,#13222E);color:var(--k-paper,#F2F4F3)}li>.ap-chip[data-vc]:hover{background:var(--k-ink-2,#2F3E4B)}

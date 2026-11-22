@@ -15,7 +15,9 @@
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 
-export const N30V = 'a6';   // a6: contract text event for the country list (n31e)
+// n35b (batch 35, item 16): the private document vault, linked from the reader
+const VT35 = { en: 'Private document vault (encrypted in your browser)', es: 'Archivo privado de documentos (cifrado en su navegador)', fr: 'Coffre de documents privé (chiffré dans votre navigateur)', de: 'Privater Dokumententresor (verschlüsselt im Browser)', nl: 'Privé documentenkluis (versleuteld in uw browser)', ru: 'Личный сейф документов (шифрование в браузере)', zh: '私人文件保险箱（在浏览器中加密）', ar: 'خزنة مستندات خاصة (مشفّرة في متصفحك)' };
+export const N30V = 'a7';   // a6: contract text event for the country list (n31e); a7: opens a document handed over by the vault (n35b)
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -232,7 +234,7 @@ async function readerPage(u, env, shell, lang) {
     '<details class="n30px"><summary>' + esc(w('cr_or')) + '</summary><label for="n30cr-t" class="k-vh">' + esc(w('cr_or')) + '</label><textarea id="n30cr-t" rows="7" spellcheck="false"></textarea><p><button type="button" class="k-btn" id="n30cr-g">' + esc(w('cr_go')) + '</button> <button type="button" class="k-btn k-btn--ghost" id="n30cr-c">' + esc(w('cr_clear')) + '</button></p></details>' +
     '<p id="n30cr-s" class="n30s0" role="status" aria-live="polite"></p><div id="n30cr-o"></div>' +
     (await (await import('./kbx_n31e.js')).crBlock(lang, env).catch(() => '')) + '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
-    '<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + '</h2><ul><li><a href="/tools/contract-check/">' + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + '</a></li><li><a href="/tools/pdf-check/">' + esc(w('cr_rel3')) + '</a></li></ul></div>' +
+    '<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + '</h2><ul><li><a href="/tools/contract-check/">' + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + '</a></li><li><a href="/tools/pdf-check/">' + esc(w('cr_rel3')) + '</a></li><li><a href="' + P + '/tools/vault/">' + esc(VT35[lang] || VT35.en) + '</a></li></ul></div>' +
     '<style>.n30p{max-width:70ch}.n30d{display:grid;place-items:center;gap:10px;min-height:170px;margin:18px 0;border:2.5px dashed var(--ink,#17212B);border-radius:18px;background:var(--card,#fff);text-align:center;padding:18px;cursor:pointer}.n30d.is-over{border-color:var(--k-sea,#155C75);background:color-mix(in srgb,var(--k-sea,#155C75) 8%,var(--card,#fff))}.n30d p{margin:0}.n30d .k-btn{min-height:48px;display:inline-flex;align-items:center;cursor:pointer}' +
     '.n30px textarea{width:100%;box-sizing:border-box;border:1.5px solid var(--line,#d5d3cc);border-radius:12px;padding:10px;font:inherit;background:var(--paper,#fff);color:inherit}.n30px summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:600}.n30s0{font-weight:600;min-height:1.4em}' +
     '.n30k{border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);padding:12px 16px;margin:12px 0}.n30k h3{margin:0;font-size:1.1rem;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}.n30k h3 small{font-weight:600;color:var(--muted,#59626B)}.n30k.is-none{border-inline-start:4px solid var(--hivis,#FF5B14)}.n30k.is-ok{border-inline-start:4px solid var(--k-sea,#155C75)}.n30k>p{margin:6px 0;color:var(--muted,#59626B)}' +
@@ -315,6 +317,10 @@ function crClient() {
   dz.addEventListener('drop', function (e) { var fl = e.dataTransfer && e.dataTransfer.files; if (fl && fl[0]) take(fl[0]); });
   var ta = document.getElementById('n30cr-t'); document.getElementById('n30cr-g').addEventListener('click', function () { if (ta.value.trim()) run(ta.value.split(/\f/), performance.now(), M.text); });
   document.getElementById('n30cr-c').addEventListener('click', function () { ta.value = ''; out.innerHTML = ''; st.textContent = ''; fi.value = ''; });
+  // n35b (batch 35): a document opened from the private vault (/tools/vault/) arrives decrypted in IndexedDB "kb-vault-x" (same origin);
+  // it is read once and deleted at once, then read here like a dropped file
+  if (location.hash === '#vault' && window.indexedDB) { try { var vq = indexedDB.open('kb-vault-x', 1); vq.onupgradeneeded = function () { vq.result.createObjectStore('x'); };
+    vq.onsuccess = function () { var t = vq.result.transaction('x', 'readwrite'), s = t.objectStore('x'), g = s.get('f'); g.onsuccess = function () { var v = g.result; s.delete('f'); if (v && v.b) take(new File([v.b], v.n || 'document.pdf', { type: v.t || 'application/pdf' })); }; t.oncomplete = function () { vq.result.close(); }; }; } catch (e) {} }
   window.N30CR_TEST = function (pages) { run(pages, performance.now()); return out.innerHTML; };   // used by the automated test only
 }
 export const CR_JS = '(' + crClient.toString() + ')();';

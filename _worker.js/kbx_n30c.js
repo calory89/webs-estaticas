@@ -259,79 +259,14 @@ async function engStatus(u, env, ctx, shell, lang) {
       wt.pages.map(p => '<tr><td><a href="' + esc(p.p) + '">' + esc(t(lang, p.k)) + '</a></td><td class="k-n">' + kb(p.html) + '</td><td class="k-n">' + kb(p.js) + '</td><td class="k-n">' + num(p.n || 0, lang) + '</td><td class="k-n">' + kb((p.html || 0) + (p.js || 0)) + '</td><td class="k-n">' + ms(p.ms) + '</td></tr>').join('') + '</tbody></table></div>';
   } else b += na;
   try { b += await (await import('./kbx_n34c.js')).statusBlock(env, lang); } catch (e) {}   // n34c (batch 34): API usage per endpoint and 30-day synthetic monitoring
+  try { b += await (await import('./kbx_n35b.js')).incidentsHtml(env, lang); } catch (e) {}   // n35b (batch 35, item 20): incident history from deploy guard, monitoring and engineering notes
   b += '<p class="lim">' + esc(t(lang, 'es_more')) + '</p><ul class="lk"><li><a href="/status/">/status/</a></li><li><a href="/engineering/reliability/">/engineering/reliability/</a></li><li><a href="/engineering/speed/">/engineering/speed/</a></li><li><a href="/engineering/page-weight/">/engineering/page-weight/</a></li><li><a href="/data/lighthouse.json">/data/lighthouse.json</a></li></ul>';
   const r = await shellPage(shell, lang, { title: t(lang, 'es_t'), h1: t(lang, 'es_t'), lead: t(lang, 'es_lead'), desc: t(lang, 'es_d'), canon: ORIGIN + P + '/engineering/status/', alt: l => ORIGIN + pre(l) + '/engineering/status/', body: b, crumb: [['/engineering/', t(lang, 'cr_eng')]] });
   if (r) { const h = new Headers(r.headers); h.set('cache-control', 'public, max-age=120'); return new Response(r.body, { status: 200, headers: h }); }
   return r;
 }
 
-// ------------------------------------------------------------------------------------------------ item 15: map client (only /map/ loads it)
-function mapClient() {
-  var MP = document.querySelector('[data-u27x]'); if (!MP) return;
-  var M = JSON.parse(MP.getAttribute('data-u27x')), S = M.s, LG = (document.documentElement.lang || 'en').slice(0, 2), PRE = LG === 'en' ? '' : '/' + LG;
-  var f = function (k, v) { var s = S[k] || k; return v ? s.replace(/\{(\w+)\}/g, function (m, x) { return v[x] != null ? v[x] : m; }) : s; };
-  var nf = function (n) { try { return Number(n).toLocaleString(LG === 'zh' ? 'zh-CN' : LG, { numberingSystem: 'latn' }); } catch (e) { return String(n); } };
-  var el = function (t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
-  var esc2 = function (s) { var x = document.createElement('i'); x.textContent = s; return x.innerHTML; };
-  var mapEl = MP.querySelector('.kmp-m'), listEl = MP.querySelector('.kmp-l'), cnt = MP.querySelector('.kmp-n'), fm = MP.querySelector('form'), leg = MP.querySelector('.kmp-leg'), data = null, map = null, layer = null, heat = null, lim = 60, Lf = null, fit = true;
-  var KEYS = ['co', 'yr', 'pm', 'sc', 'dl', 'hm'];
-  var q = function (n) { var e = fm.elements[n]; return !e ? '' : e.type === 'checkbox' ? (e.checked ? '1' : '') : e.value; };
-  var params = new URLSearchParams(location.search); KEYS.forEach(function (k) { var e = fm.elements[k], v = params.get(k); if (!e || !v) return; if (e.type === 'checkbox') e.checked = v === '1'; else e.value = v; });
-  var col = function (m) { return m >= 12 ? '#C2341B' : m >= 6 ? '#E8772E' : '#F2B544'; };
-  var pass = function (p) { var co = q('co'), yr = q('yr'), pm = q('pm'), sc = q('sc'), dl = q('dl');
-    return (!co || p[3] === co) && (!yr || (yr === '0' ? !p[6] : String(p[6]) === yr)) && (!pm || String(p[7]) === pm) && (!sc || (p[8] != null && p[8] >= +sc)) && (!dl || (p[9] != null && p[9] >= +dl)); };
-  var R = [], pins = [], byMk = {};
-  var cluster = function () {   // grid clustering in screen space: pins closer than about 48 px share one marker
-    if (!map || !Lf) return; if (layer) layer.remove(); layer = Lf.layerGroup().addTo(map);
-    var z = map.getZoom(), cells = {}, G = 48;
-    pins.forEach(function (p) { var pt = map.project([p[4], p[5]], z), k = Math.floor(pt.x / G) + ':' + Math.floor(pt.y / G); (cells[k] = cells[k] || []).push(p); });
-    Object.keys(cells).forEach(function (k) { var L = cells[k];
-      if (L.length === 1 || z >= 15) { L.forEach(function (p) { var m = Lf.circleMarker([p[4], p[5]], { radius: 6, weight: 1.5, color: '#fff', fillColor: p[9] > 0 ? col(p[9]) : '#155C75', fillOpacity: .92 });
-        m.bindPopup('<b>' + esc2(p[1]) + '</b><br>' + esc2(p[2]) + (p[6] ? ' · ' + p[6] : '') + (p[9] > 0 ? '<br>' + esc2(f('mh_late', { m: p[9] })) : '') + '<br><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(f('mpo')) + '</a>'); m.addTo(layer); }); return; }
-      var la = 0, ln = 0, lt = L.filter(function (p) { return p[9] > 0; }).length; L.forEach(function (p) { la += p[4]; ln += p[5]; }); la /= L.length; ln /= L.length;
-      var sz = Math.min(54, 26 + Math.sqrt(L.length) * 4), ic = Lf.divIcon({ className: 'kmp-cl', html: '<span style="width:' + sz + 'px;height:' + sz + 'px;line-height:' + sz + 'px' + (lt ? ';box-shadow:0 0 0 4px ' + col(12) + '55' : '') + '">' + nf(L.length) + '</span>', iconSize: [sz, sz] });
-      var m = Lf.marker([la, ln], { icon: ic, keyboard: true, title: f('mh_cl', { k: L.length }) });
-      m.on('click', function () { var B = Lf.latLngBounds(L.map(function (p) { return [p[4], p[5]]; })); map.fitBounds(B, { padding: [40, 40], maxZoom: Math.min(18, z + 4) }); }); m.addTo(layer); });
-    Object.keys(byMk).forEach(function (k) { var c = data.mk[k], L2 = byMk[k], m = Lf.circleMarker([c[0], c[1]], { radius: Math.min(26, 7 + Math.sqrt(L2.length) * 2.4), weight: 1, color: '#B26A00', fillColor: '#F2B544', fillOpacity: .4, dashArray: '3' });
-      m.bindPopup('<b>' + esc2(f('mpa', { k: L2.length, m: k })) + '</b><br>' + L2.slice(0, 12).map(function (p) { return '<a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a>' + (p[9] > 0 ? ' (' + p[9] + ')' : ''); }).join('<br>') + (L2.length > 12 ? '<br>…' : '')); m.addTo(layer); });
-  };
-  var drawHeat = function () {   // delay heat: one soft disc per project past its first handover date on record, colour by months past
-    if (!map || !Lf) return; if (heat) { heat.remove(); heat = null; } if (leg) leg.hidden = q('hm') !== '1'; if (q('hm') !== '1') return;
-    heat = Lf.layerGroup(); var rd = Lf.canvas ? Lf.canvas({ padding: .3 }) : undefined;
-    R.forEach(function (p) { if (!(p[9] > 0)) return; var ll = p[4] != null ? [p[4], p[5]] : data.mk[p[2]]; if (!ll) return;
-      Lf.circleMarker(ll, { renderer: rd, radius: 18 + Math.min(18, p[9]), stroke: false, fillColor: col(p[9]), fillOpacity: .22, interactive: false }).addTo(heat);
-      Lf.circleMarker(ll, { renderer: rd, radius: 7, stroke: false, fillColor: col(p[9]), fillOpacity: .35, interactive: false }).addTo(heat); });
-    heat.addTo(map); if (heat.bringToBack) heat.eachLayer(function (l) { l.bringToBack && l.bringToBack(); });
-  };
-  var draw = function () {
-    if (!data) return; R = data.p.filter(pass); pins = R.filter(function (p) { return p[4] != null; }); byMk = {};
-    R.forEach(function (p) { if (p[4] == null && data.mk[p[2]]) { (byMk[p[2]] = byMk[p[2]] || []).push(p); } });
-    cnt.textContent = f('mpk', { k: nf(R.length) }); e0.hidden = R.length > 0; rs.hidden = !KEYS.some(function (k) { return q(k); });
-    var h = ''; R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + (p[9] > 0 ? ' · ' + esc2(f('mh_late', { m: p[9] })) : '') + '</small></li>'; });
-    listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
-    var u = new URL(location.href); KEYS.forEach(function (k) { if (q(k)) u.searchParams.set(k, q(k)); else u.searchParams.delete(k); }); try { history.replaceState(null, '', u.pathname + u.search); } catch (e) {}
-    if (!map || !Lf) return; cluster(); drawHeat();
-    if (fit) { var B = pins.map(function (p) { return [p[4], p[5]]; }).concat(Object.keys(byMk).map(function (k) { return data.mk[k]; })); if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12, animate: !mapEl.classList.contains('kmp-ld') }); fit = false; }
-    if (mapEl.classList.contains('kmp-ld')) setTimeout(function () { mapEl.classList.remove('kmp-ld'); }, 60);   // n32s: shown once in place (no layout shift)
-  };
-  var rs = el('button', 'kmp-r', f('mpr')); rs.type = 'button'; rs.hidden = true; fm.appendChild(rs);
-  var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); listEl.parentNode.insertBefore(e0, listEl);
-  var reset = function () { KEYS.forEach(function (k) { var e = fm.elements[k]; if (!e) return; if (e.type === 'checkbox') e.checked = false; else e.value = ''; }); lim = 60; fit = true; draw(); };
-  rs.addEventListener('click', reset); e0b.addEventListener('click', function () { reset(); fm.elements.co && fm.elements.co.focus(); });
-  fetch('/api/v1/map?lang=' + LG + '&v=2').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
-    var yy = fm.elements.yr; if (yy && yy.options.length < 3) { j.yr.forEach(function (y) { var o = el('option', null, y); o.value = y; yy.insertBefore(o, yy.lastElementChild); }); if (params.get('yr')) yy.value = params.get('yr'); }
-    if (leg && j.delay) leg.querySelector('.kmp-legt').textContent = f('mh_leg', { n: nf(j.delay.n), d: j.delay.as_of }); draw(); }).catch(function () { cnt.textContent = f('mpe'); if (!map) mapEl.textContent = f('mpe'); });
-  fm.addEventListener('change', function () { lim = 60; fit = true; draw(); }); fm.addEventListener('submit', function (e) { e.preventDefault(); });
-  var mb = MP.querySelector('.kmp-more'); if (mb) mb.addEventListener('click', function () { lim += 120; draw(); });
-  var boot = function () { if (map || booted) return; booted = true; var cs = el('link'); cs.rel = 'stylesheet'; cs.href = M.css; document.head.appendChild(cs); var hs = el('style'); hs.textContent = '.kmp-ld .leaflet-pane,.kmp-ld .leaflet-control-container{visibility:hidden}'; document.head.appendChild(hs); var s = el('script'); s.src = M.js; s.onload = function () { Lf = window.L; mapEl.textContent = ''; mapEl.classList.add('kmp-ld'); setTimeout(function () { mapEl.classList.remove('kmp-ld'); }, 4000); map = Lf.map(mapEl, { scrollWheelZoom: false, worldCopyJump: true, minZoom: innerWidth < 700 ? 1 : 2, preferCanvas: false }).setView([20, 20], 2);
-    Lf.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map); map.on('zoomend', function () { cluster(); }); draw(); }; s.onerror = function () { mapEl.textContent = f('mpe'); }; document.head.appendChild(s); };
-  // n32s (item 259): the map library (Leaflet, about 1.2 s of main-thread work on a phone) starts after the reader's first touch, scroll,
-  // key or mouse move (window.kbLate, 8 s after load at the latest), or at once on a tap on the map; the list works before that
-  var booted = false, late = function () { (window.kbLate || function (f) { f(); })(boot); };
-  mapEl.addEventListener('pointerdown', boot, { once: true });
-  if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); late(); } }, { rootMargin: '300px' }); io.observe(mapEl); } else late();
-}
-const MAP_JS = '(' + mapClient.toString() + ')();';
+// item 15 map client: moved to the static file /k/n35b/map.js (n35b, batch 35, map v3); /k/n30c-map.js now redirects there for pages cached before
 // strings the map page passes to the client (kbx_u27.js mapPage)
 export const mapStrings = lang => { const o = {}; ['mh_cl', 'mh_late', 'mh_leg', 'mpk', 'mpa', 'mpo', 'mpe', 'mpr', 'mp0'].forEach(k => { o[k] = t(lang, k); }); return o; };
 export { t as t30 };
@@ -339,7 +274,7 @@ export { t as t30 };
 // ------------------------------------------------------------------------------------------------ routes
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
-  if (p === '/k/n30c-map.js') return new Response(MAP_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N30C_V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+  if (p === '/k/n30c-map.js') return new Response(null, { status: 301, headers: { location: '/k/n35b/map.js', 'cache-control': 'public, max-age=3600' } });
   if (p === '/embed/v2.js') return new Response(LOADER, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
   let m = /^\/api\/v1\/pin\/([A-Za-z0-9-]{3,20})$/.exec(p);
   if (m) {

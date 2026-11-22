@@ -15,11 +15,12 @@ async function fontData() {
   if (!d || !d.FONT) throw new Error('og font unavailable');
   FONT = d.FONT; LOGO = d.LOGO;
 }
-import { data, handoverOf, reviewed, fd, tr } from './kbx_named.js';
+import { data, handoverOf, reviewed, fd, tr, lastmod } from './kbx_named.js';
+import { light6 } from './kbx_u27.js';   // n35b (batch 35, item 14): the six checks on the project card
 import { OG_KINDS } from './kbx_ogt.js';
 
 export const PATHS = /^\/og\/(projects|developers|type)\/([a-z0-9-]{1,90})\.png$/;   // n29t: + /og/type/<kind>.png (one image per page type, kbx_ogt.js)
-const W = 1200, H = 630, V = 'og-v1';
+const W = 1200, H = 630, V = 'og-v2';
 const BG = [227, 226, 221], INK = [23, 33, 43], INK2 = [42, 53, 65], MUTED = [94, 104, 114], HI = [255, 91, 20], CARD = [246, 246, 243], LINE = [200, 198, 190];
 
 // ---------- font masks (inflated once per isolate) ----------
@@ -135,17 +136,27 @@ async function draw(card) {
   for (const l of lines) { text(p, T, l, X, y, px, INK); y += Math.round(px * 1.08); }
   y += -Math.round(px * 1.08) + 46;
   text(p, B, fit(B, normText(B, card.sub), 30, MAXW), X, y, 30, INK2);
-  // three fact boxes
-  const top = 392, gap = 18, bw = Math.floor((MAXW - 2 * gap) / 3), bh = 128;
-  card.facts.slice(0, 3).forEach(([l, v], i) => {
+  // three or four fact boxes; v2 (n35b): a row of six check chips under them when the card has checks
+  const nF = Math.min(4, card.facts.length), ck = card.checks, top = ck ? 372 : 392, gap = 18, bw = Math.floor((MAXW - (nF - 1) * gap) / nF), bh = ck ? 108 : 128;
+  card.facts.slice(0, nF).forEach(([l, v], i) => {
     const bx = X + i * (bw + gap);
     frame(p, bx, top, bw, bh, LINE, 16, 2);
-    text(p, B, fit(B, normText(B, l).toUpperCase(), 21, bw - 40), bx + 20, top + 40, 21, MUTED);
+    const lp = nF > 3 ? 18 : 21; text(p, B, fit(B, normText(B, l).toUpperCase(), lp, bw - 40), bx + 20, top + 40, lp, MUTED);
     const vv = wrap(M, normText(M, v), 31, bw - 40, 2);
-    vv.forEach((t, j) => text(p, M, t, bx + 20, top + 82 + j * 34, vv.length > 1 ? 29 : 31, INK));
+    vv.forEach((t, j) => text(p, M, t, bx + 20, top + (ck ? 74 : 82) + j * 32, vv.length > 1 ? 27 : 31, INK));
   });
+  if (ck) {   // state by shape too: filled = published or confirmed, half = partly, bar = not published or date passed, ring = not checked
+    const cw = Math.floor((MAXW - 5 * 10) / 6), cy = 500;
+    ck.forEach(([lbl, s], i) => { const cx = X + i * (cw + 10), col = CK[s] || MUTED;
+      frame(p, cx, cy, cw, 44, LINE, 22, 2); const dx = cx + 24, dy = cy + 22;
+      dot(p, dx, dy, 9, col);
+      if (s === 'nc' || s === 'part') dot(p, dx, dy, 6.5, CARD);
+      if (s === 'part') for (let yy = dy - 7; yy <= dy + 7; yy++) for (let xx = dx - 7; xx <= dx; xx++) blend(p, xx, yy, col, Math.max(0, Math.min(1, 6.5 - Math.hypot(xx - dx, yy - dy))));
+      if (s === 'no') rect(p, dx - 5, dy - 1, 11, 3, CARD, 0);
+      text(p, B, fit(B, normText(B, lbl), 20, cw - 48), cx + 40, cy + 29, 20, INK); });
+  }
   // footer: badge or source line, and the URL
-  const fy = 580;
+  const fy = ck ? 596 : 580;
   if (card.badge) { const bt = normText(M, card.badge), bwid = measure(M, bt, 22); rect(p, X, fy - 30, bwid + 32, 42, [255, 240, 199], 21); text(p, M, bt, X + 16, fy - 1, 22, [122, 75, 0]); }
   else text(p, B, 'Facts only, each with its source on the page', X, fy, 24, MUTED);
   const url = normText(B, 'kolaboro.com' + card.path), uw = measure(B, url, 24), ux = W - X - Math.min(uw, 560);
@@ -159,6 +170,15 @@ function projectCard(ix, x) {
   return { kind: 'Project record', name: x.n, sub: (x.dv ? 'By ' + x.dv + ' · ' : '') + [...new Set(place)].join(', '),
     facts: [['Handover promised', ho ? fd(ho.d, 'en') : 'Not published'], ['Permit number', x.pn ? 'Published' : 'Not published'], ['Stage', stage]],
     badge: reviewed(c) ? null : 'Not yet reviewed by Kolaboro', path: '/projects/' + x.s + '/' };
+}
+// n35b (item 14): v2 project card = stage in the subtitle, last check date as the third fact, and the six checks (same rules as the page)
+const CK = { ok: [28, 124, 74], part: [178, 106, 0], no: [179, 38, 30], nc: [110, 120, 128] }, CKL = { permit: 'Permit', company: 'Company', date: 'Handover', build: 'Build', web: 'Website', lists: 'Lists' };
+async function projectCard2(env, ix, x) {
+  const k = projectCard(ix, x), c = ix.caseBy.get(x.id) || {}, ho = handoverOf(ix, x);
+  let tp = null; try { const T = await import('./kbx_tr.js'); tp = await T.trProject(env, x.id, 'en'); } catch (e) { tp = null; }
+  const L = light6({ tp, c, pn: x.pn, ho, ev: x.ev, ids: [] });
+  k.sub = k.sub + ' · ' + k.facts[2][1]; k.facts[1][1] = L[0][2][1] === 'p_reg' ? 'Confirmed in register' : k.facts[1][1];
+  k.facts[2] = ['Last checked', fd(lastmod(ix, x), 'en')]; k.checks = L.map(([key, , st]) => [CKL[key], st[0]]); return k;
 }
 // n29t (item 43): page-type cards. Live counts from the same data as the site totals (every tracked project, Sumba included, as on the home page)
 const TYPE_CARD = { rankings: ['Ranking', 'Off-plan rankings', 'Delays, changed promises and transparency, computed from public sources'], guides: ['Buyer guide', 'Buying off-plan: what to check', 'Official registers, laws and questions to ask, country by country'],
@@ -174,6 +194,14 @@ function devCard(ix, dv) {
     facts: [['Projects tracked', String(L.length)], ['Permit numbers published', pn + ' of ' + L.length], ['Dated promises tracked', P.length ? P.length + (mv ? ' (' + mv + ' moved)' : '') : 'None yet']],
     badge: null, path: '/developers/' + dv.s + '/' };
 }
+// n35b (item 14): v2 developer card = four facts: projects, permits published, handover dates moved, court cases on record (court-cases.json)
+let CC = null;
+async function devCard2(env, ix, dv) {
+  const k = devCard(ix, dv), L = dv.ids.map(i => ix.byId.get(i)).filter(Boolean), mv = L.filter(x => (ix.prom[x.id] || []).some(p => p.mv)).length;
+  if (!CC) { try { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/court-cases.json')); CC = r.ok ? (await r.json()).cases || [] : null; } catch (e) { CC = null; } }
+  const sl = new Set(L.map(x => x.s)), nc = (CC || []).filter(c => c.dev === dv.s || (c.project && sl.has(c.project))).length;   // cases filed against the developer or one of its projects
+  k.facts = [['Projects', k.facts[0][1]], ['Permits published', k.facts[1][1]], ['Dates moved', mv + ' of ' + L.length], ['Court cases', CC ? String(nc) : 'Not checked']]; return k;
+}
 
 export async function handle(req, u, env, ctx) {
   OGENV = env;
@@ -184,10 +212,10 @@ export async function handle(req, u, env, ctx) {
   const key = new Request('https://kolaboro.com/__og/' + V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.updated || '')) + u.pathname);
   const hdr = { 'content-type': 'image/png', 'cache-control': 'public, max-age=86400, stale-while-revalidate=604800', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   try { const hit = await caches.default.match(key); if (hit) return new Response(hit.body, { headers: Object.assign({ 'x-og-cache': 'hit' }, hdr) }); } catch (e) {}
-  const bytes = await draw(m[1] === 'type' ? typeCard(ix, ent) : m[1] === 'projects' ? projectCard(ix, ent) : devCard(ix, ent));
+  const bytes = await draw(m[1] === 'type' ? typeCard(ix, ent) : m[1] === 'projects' ? await projectCard2(env, ix, ent) : await devCard2(env, ix, ent));
   let perr = '';
   try { await caches.default.put(key, new Response(bytes.slice(0), { headers: { 'content-type': 'image/png', 'cache-control': 'public, max-age=604800' } })); } catch (e) { perr = String(e && e.message || e).slice(0, 120); }
   return new Response(req.method === 'HEAD' ? null : bytes, { headers: Object.assign({ 'x-og-cache': perr ? 'miss; put failed: ' + perr.replace(/[^\x20-\x7e]/g, '') : 'miss', 'content-length': String(bytes.length) }, hdr) });
 }
 // local test hook
-export { draw, projectCard, devCard };
+export { draw, projectCard, devCard, projectCard2, devCard2 };

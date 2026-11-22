@@ -27,7 +27,7 @@
   C7.token = token; C7.esc = esc;
 
   // ---------- styles (both the public site and the portal; colours fall back when a variable is missing) ----------
-  var css = '.c7{--c7-hi:var(--hi,var(--hivis,#FF5B14));--c7-card:var(--card,#fff);--c7-line:var(--line,#E3E2DD);--c7-mut:var(--muted,#5E6872);--c7-ok:#0B7A55;--c7-okb:#DDEFE7;--c7-bad:#B42318;--c7-badb:#FDE2D6;--c7-warn:#865600;--c7-warnb:#FFF0C7}' +
+  var css = '.c7{--c7-hi:var(--hi,var(--hivis,#FF5B14));--c7-card:var(--card,#fff);--c7-line:var(--line,#E3E2DD);--c7-mut:var(--muted,#5E6872);--c7-ok:#08704D;--c7-okb:#DDEFE7;--c7-bad:#B42318;--c7-badb:#FDE2D6;--c7-warn:#865600;--c7-warnb:#FFF0C7}' +
     '.c7-box{background:var(--c7-card);border:1px solid var(--c7-line);border-radius:16px;padding:18px;margin:16px 0;color:inherit}' +
     '.c7-box h3{margin:0 0 6px;font-size:1.08rem}.c7-k{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c7-mut);margin:0 0 6px}' +
     '.c7-reg{border-top:1px solid var(--c7-line);padding:12px 0 2px}.c7-reg:first-of-type{border-top:0}.c7-reg h4{margin:0;font-size:1rem;display:flex;gap:8px;flex-wrap:wrap;align-items:center}' +
