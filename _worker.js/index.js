@@ -239,7 +239,7 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = '0e2978ef85', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '97a221f853', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +

@@ -1428,7 +1428,7 @@ main details>summary{min-height:44px!important}
 .kupd .kid{font-weight:500;color:var(--muted)}
 .kupd .kid::before{content:"\00B7";margin-inline:.45em;font-weight:400}
 /* status pills in plan lists ("on request") wrapped into a two-line blob in narrow tiles */
-.tile li>.k27s{white-space:nowrap;flex:none}
+.tile li>.k27s{white-space:nowrap;flex:none}.tile li:has(>.k27s){flex-wrap:wrap;row-gap:2px}
 /* "Most searched" strip: links were 23 px tall, under the 24 px minimum tap target */
 .n33-ms .wrap a{display:inline-block;padding-block:2px}
 /* phones: form fields under 16 px make iOS Safari zoom the page on focus (search box 14.4 px, map filters 13.4 px) */
