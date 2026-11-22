@@ -389,3 +389,5 @@ a.kt-a{display:inline-flex;align-items:center;text-decoration:none;color:inherit
 @media (max-width:640px){.kt-item{flex-direction:column}.kt-t{flex:none;width:100%}.kt-acts{justify-content:flex-start;margin-inline-start:0}.kt-keys{display:none}.kt-vf{display:flex;width:100%}.kt-vf input{min-width:0;flex:1}.crm-lt .crm-ie{max-width:none}.cmdk-f{display:none}}
 /* n35b (22 Nov 2026): the credential chip sits in a light list on /portal/ and /portal/demo/, not on the dark bar (axe colour contrast) */
 li>.ap-chip[data-vc]{background:var(--k-ink,#13222E);color:var(--k-paper,#F2F4F3)}li>.ap-chip[data-vc]:hover{background:var(--k-ink-2,#2F3E4B)}
+/* n35b (22 Nov 2026): portal pieces from app.css with light backgrounds, readable in dark mode */
+:root[data-theme=dark] .ap-report,:root[data-theme=dark] .x-chain{background:var(--k-sunken,#121A22)}:root[data-theme=dark] .accepted small,:root[data-theme=dark] .x-hash{color:var(--k-muted,#9DA9B3)}
