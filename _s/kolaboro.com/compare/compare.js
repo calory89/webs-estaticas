@@ -2,7 +2,7 @@
 (function(){
   var CK = [['permit', 'Permit or licence number'], ['escrow', 'Deposit protection'], ['progress', 'Construction progress'], ['plans', 'Site or floor plans'], ['record', 'Developer track record'], ['returns_ok', 'No guaranteed returns']];
   var LV = { registry: ['Registry', 4], independent: ['Confirmed', 3], developer: ['Not confirmed', 2], none: ['No source', 1], contradicted: ['Contradicted', 0] };
-  var MAX = 4, C = [], BY = {}, ids = [];
+  var MAX = 4, C = [], BY = {}, ids = [], NM = {};
   var $ = function(i){ return document.getElementById(i); }, box = $('cp'), qi = $('cp-q'), res = $('cp-res');
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function pub(c, k){ var x = c.checks || {}, v = x[k]; if (k === 'permit') return v === 2 ? 'y' : v === 1 ? 'p' : 'n'; if (k === 'escrow') return v === true ? 'y' : 'n'; if (k === 'progress') return v != null ? 'y' : 'n'; return v ? 'y' : 'n'; }
@@ -11,6 +11,9 @@
   function place(c){ return c.region && c.region !== c.market ? c.region + ', ' + c.market : c.market; }
   function lvl(c, k){ var l = (c.verified || {})[k]; return LV[l] ? l : 'none'; }
   function cl(c){ var x = c.claims || {}; return { v: x.verified || 0, u: x.unverified || 0, x: x.contradicted || 0 }; }
+  // n36e: project names and page links from the public search index (loaded after the cases; ids are the fallback)
+  function nm(c){ return NM[c.id] ? NM[c.id][0] : c.id; }
+  function href(c){ return NM[c.id] ? '/projects/' + NM[c.id][1] + '/' : '/p/?id=' + encodeURIComponent(c.id); }
   function num(x){ return +(+x).toFixed(1); }
 
   function readIds(){
@@ -21,7 +24,7 @@
     var u = location.pathname + (ids.length ? '?ids=' + ids.map(encodeURIComponent).join(',') : '');
     try { history.replaceState(null, '', u); } catch (e) {}
     var pr = ids.map(function(i){ return BY[i]; }).filter(Boolean);
-    document.title = pr.length ? 'Compare ' + pr.map(function(c){ return c.id; }).join(', ') + ' | Kolaboro' : 'Compare off-plan projects side by side | Kolaboro';
+    document.title = pr.length ? 'Compare ' + pr.map(nm).join(', ') + ' | Kolaboro' : 'Compare off-plan projects side by side | Kolaboro';
   }
 
   // Each row: label, cell html, numeric value for "best" (higher is better) or null for no highlight
@@ -50,7 +53,7 @@
 
   function table(P){
     var head = '<tr><th scope="col"><span class="sr-only">Project</span></th>' + P.map(function(c){
-      return '<th scope="col" class="cp-h"><a href="/p/?id=' + encodeURIComponent(c.id) + '">' + esc(c.id) + '</a><small>' + esc(place(c)) + '</small><button type="button" class="cp-x" data-rm="' + esc(c.id) + '" aria-label="Remove ' + esc(c.id) + ' from the comparison">Remove</button></th>';
+      return '<th scope="col" class="cp-h"><a href="' + href(c) + '">' + esc(nm(c)) + '</a><small>' + esc(place(c)) + (NM[c.id] ? ' · ' + esc(c.id) : '') + '</small><button type="button" class="cp-x" data-rm="' + esc(c.id) + '" aria-label="Remove ' + esc(c.id) + ' from the comparison">Remove</button></th>';
     }).join('') + '</tr>';
     var body = rows().map(function(r){
       if (r[0] === 'g') return '<tr class="g"><th scope="rowgroup" colspan="1">' + esc(r[1]) + '</th>' + P.map(function(){ return '<td></td>'; }).join('') + '</tr>';
@@ -74,8 +77,8 @@
     if (one) L = L.filter(function(c){ return c.id !== one.id; }).slice(0, 3);
     if (!L.length) return '';
     var set = (one ? [one] : []).concat(L).slice(0, MAX);
-    return '<div class="cp-set"><h3>' + t + '</h3><p>' + s + '</p><ul>' + L.map(function(c){ return '<li><a href="/p/?id=' + encodeURIComponent(c.id) + '"><b>' + esc(c.id) + '</b><small>' + esc(c.market) + ', ' + (c.score || 0) + '/6 published, ' + (c.vscore || 0) + '/6 confirmed, ' + (c.flags || []).length + ' problems</small></a></li>'; }).join('') +
-      '</ul><a class="btn btn-line" href="?ids=' + set.map(function(c){ return encodeURIComponent(c.id); }).join(',') + '" data-set="' + set.map(function(c){ return esc(c.id); }).join(',') + '">' + (one ? 'Compare ' + esc(one.id) + ' with these' : 'Compare these three') + '</a></div>';
+    return '<div class="cp-set"><h3>' + t + '</h3><p>' + s + '</p><ul>' + L.map(function(c){ return '<li><a href="' + href(c) + '"><b>' + esc(nm(c)) + '</b><small>' + esc(c.market) + ', ' + (c.score || 0) + '/6 published, ' + (c.vscore || 0) + '/6 confirmed, ' + (c.flags || []).length + ' problems</small></a></li>'; }).join('') +
+      '</ul><a class="btn btn-line" href="?ids=' + set.map(function(c){ return encodeURIComponent(c.id); }).join(',') + '" data-set="' + set.map(function(c){ return esc(c.id); }).join(',') + '">' + (one ? 'Compare ' + esc(nm(one)) + ' with these' : 'Compare these three') + '</a></div>';
   }
 
   function render(){
@@ -90,8 +93,8 @@
     } else {
       var one = P[0];
       html += '<div class="cp-empty"><h2>' + (one ? 'Add at least one more project' : 'Pick projects to compare') + '</h2>' +
-        (one ? '<p class="cp-chip"><a href="/p/?id=' + encodeURIComponent(one.id) + '"><b>' + esc(one.id) + '</b> ' + esc(place(one)) + ', ' + (one.score || 0) + '/6 published, ' + (one.vscore || 0) + '/6 confirmed</a><button type="button" class="cp-x" data-rm="' + esc(one.id) + '" aria-label="Remove ' + esc(one.id) + ' from the comparison">Remove</button></p>' : '') +
-        '<p class="sub">' + (one ? 'Search above by id or market, or add one of these sets.' : 'Search above by id or market, or start from three projects with strong public evidence and three with problems in public reports.') + '</p>' +
+        (one ? '<p class="cp-chip"><a href="' + href(one) + '"><b>' + esc(nm(one)) + '</b> ' + esc(place(one)) + ', ' + (one.score || 0) + '/6 published, ' + (one.vscore || 0) + '/6 confirmed</a><button type="button" class="cp-x" data-rm="' + esc(one.id) + '" aria-label="Remove ' + esc(one.id) + ' from the comparison">Remove</button></p>' : '') +
+        '<p class="sub">' + (one ? 'Search above by name, id or market, or add one of these sets.' : 'Search above by name, id or market, or start from three projects with strong public evidence and three with problems in public reports.') + '</p>' +
         '<div class="cp-sets">' + setCard('Strong public evidence', 'Most checks confirmed by a registry or independent source, no problems found.', sw[0], one) + setCard('Problems found', 'Problems in public reports or claims contradicted by another source.', sw[1], one) + '</div></div>';
     }
     box.innerHTML = html;
@@ -100,9 +103,9 @@
   function search(q){
     q = q.trim().toLowerCase();
     if (!q) { res.hidden = true; res.innerHTML = ''; qi.setAttribute('aria-expanded', 'false'); return; }
-    var L = C.filter(function(c){ return ids.indexOf(c.id) < 0 && (c.id.toLowerCase().indexOf(q) >= 0 || String(c.market).toLowerCase().indexOf(q) >= 0 || String(c.country).toLowerCase().indexOf(q) >= 0); })
-      .sort(function(a, b){ var ai = a.id.toLowerCase().indexOf(q) === 0 ? 0 : 1, bi = b.id.toLowerCase().indexOf(q) === 0 ? 0 : 1; return ai - bi || (a.id < b.id ? -1 : 1); }).slice(0, 8);
-    res.innerHTML = ids.length >= MAX ? '<li class="e">You already have 4 projects. Remove one to add another.</li>' : L.length ? L.map(function(c){ return '<li><button type="button" data-add="' + esc(c.id) + '"><b>' + esc(c.id) + '</b><small>' + esc(place(c)) + ', ' + (c.score || 0) + '/6, ' + (c.vscore || 0) + '/6 confirmed</small></button></li>'; }).join('') : '<li class="e">No project matches. Try an id like BALI-014 or a market like Dubai.</li>';
+    var L = C.filter(function(c){ return ids.indexOf(c.id) < 0 && (c.id.toLowerCase().indexOf(q) >= 0 || nm(c).toLowerCase().indexOf(q) >= 0 || String(c.market).toLowerCase().indexOf(q) >= 0 || String(c.country).toLowerCase().indexOf(q) >= 0); })
+      .sort(function(a, b){ var ai = a.id.toLowerCase().indexOf(q) === 0 || nm(a).toLowerCase().indexOf(q) === 0 ? 0 : 1, bi = b.id.toLowerCase().indexOf(q) === 0 || nm(b).toLowerCase().indexOf(q) === 0 ? 0 : 1; return ai - bi || (a.id < b.id ? -1 : 1); }).slice(0, 8);
+    res.innerHTML = ids.length >= MAX ? '<li class="e">You already have 4 projects. Remove one to add another.</li>' : L.length ? L.map(function(c){ return '<li><button type="button" data-add="' + esc(c.id) + '"><b>' + esc(nm(c)) + '</b><small>' + esc(place(c)) + (NM[c.id] ? ' · ' + esc(c.id) : '') + ', ' + (c.score || 0) + '/6, ' + (c.vscore || 0) + '/6 confirmed</small></button></li>'; }).join('') : '<li class="e">No project matches. Try a name, an id like BALI-014 or a market like Dubai.</li>';
     res.hidden = false; qi.setAttribute('aria-expanded', 'true');
   }
 
@@ -133,5 +136,8 @@
     C = D.cases || []; C.forEach(function(c){ BY[String(c.id).toUpperCase()] = c; });
     ids = ids.map(function(i){ return BY[i] ? BY[i].id : i; });
     render();
+    fetch('/api/v1/search-index').then(function(r){ return r.ok ? r.json() : null; }).then(function(X){
+      if (!X || !X.p) return; X.p.forEach(function(r){ if (r[2]) NM[String(r[2]).toUpperCase()] = [r[1], r[0]]; }); render(); writeIds();
+    }).catch(function(){});
   }).catch(function(){ box.innerHTML = '<p class="cp-note">We could not load the projects just now. Try again in a moment, or <a href="/cases">browse the projects</a>.</p>'; });
 })();

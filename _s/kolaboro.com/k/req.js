@@ -1,12 +1,13 @@
 /* Kolaboro service request form (n34r, 21 Nov 2026).
    Renders into <div id="kreq"> on /book/ and /<lang>/pricing/. Strings: /data/req-i18n.json (8 languages, Arabic RTL from the page).
    Sends to the insert-only RPC kolaboro_request_submit (anon can insert, never read). Spam: honeypot, minimum fill time, rate limits in the RPC.
-   Prefill: ?p=<project slug> ?project=<name> ?url=<link> ?s=check|visit|monitoring|handover ?c=<country>. Payment is never taken here. */
+   Prefill: ?p=<project slug> ?project=<name> ?url=<link> ?s=check|visit|monitoring|handover|add ?c=<country>. Payment is never taken here.
+   n36e (22 Nov 2026): ?s=add is the free "add and check this project" request for a project not in the database (linked from /check/). */
 (function () {
   var box = document.getElementById('kreq'); if (!box || box.getAttribute('data-on')) return; box.setAttribute('data-on', '1');
   var RPC = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_request_submit';
   var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
-  var LANGS = ['en', 'es', 'fr', 'de', 'nl', 'ru', 'zh', 'ar'], SV = ['check', 'visit', 'monitoring', 'handover'];
+  var LANGS = ['en', 'es', 'fr', 'de', 'nl', 'ru', 'zh', 'ar'], SV = ['check', 'visit', 'monitoring', 'handover'], ADD = false;
   var lang = (document.documentElement.getAttribute('lang') || 'en').slice(0, 2).toLowerCase(); if (LANGS.indexOf(lang) < 0) lang = 'en';
   var Q = new URLSearchParams(location.search), t0 = Date.now(), T = null, ALL = null;
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -41,7 +42,7 @@
     e.preventDefault(); box.scrollIntoView({ behavior: 'smooth', block: 'start' });
     var n = document.getElementById('kq-name'); if (n) setTimeout(function () { n.focus({ preventScroll: true }); }, 400);
   });
-  fetch('/data/req-i18n.json?v=n34r-1').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { ALL = d; T = d[lang] || d.en; render(); }).catch(fallback);
+  fetch('/data/req-i18n.json?v=n36e-1').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) { ALL = d; T = d[lang] || d.en; render(); }).catch(fallback);
 
   function field(id, label, type, extra, opt, help) {
     return '<div class="kq-f' + (extra && extra.wide ? ' kq-w' : '') + '"><label for="kq-' + id + '">' + esc(label) + (opt ? ' <small>(' + esc(T.opt) + ')</small>' : '') + '</label>' +
@@ -52,9 +53,9 @@
   function render() {
     var slug = (Q.get('p') || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 90);
     var proj = Q.get('project') || Q.get('url') || (slug ? nice(slug) : '');
-    var sv = Q.get('s'); if (SV.indexOf(sv) < 0) sv = SV.indexOf((location.hash || '').slice(1)) >= 0 ? location.hash.slice(1) : 'check';
+    var sv = Q.get('s'); ADD = sv === 'add' && !!T.s_add; if (ADD && SV.indexOf('add') < 0) SV = SV.concat('add'); if (SV.indexOf(sv) < 0) sv = SV.indexOf((location.hash || '').slice(1)) >= 0 ? location.hash.slice(1) : 'check';
     var langOpts = LANGS.map(function (l) { return '<option value="' + l + '"' + (l === lang ? ' selected' : '') + '>' + esc(ALL.langs[l]) + '</option>'; }).join('');
-    box.innerHTML = '<form class="kq" id="kq-form" novalidate data-slug="' + esc(slug) + '"><h2 id="kq-t">' + esc(T.title) + '</h2><p class="kq-in">' + esc(T.intro) + '</p>' +
+    box.innerHTML = '<form class="kq" id="kq-form" novalidate data-slug="' + esc(slug) + '"><h2 id="kq-t">' + esc(ADD ? T.title_add : T.title) + '</h2><p class="kq-in">' + esc(ADD ? T.intro_add : T.intro) + '</p>' +
       '<div class="kq-sum" id="kq-sum" role="alert" tabindex="-1"></div>' +
       '<div class="kq-g">' +
       '<fieldset><legend>' + esc(T.service) + '</legend><div class="kq-sv">' + SV.map(function (s) { return '<label><input type="radio" name="service" value="' + s + '"' + (s === sv ? ' checked' : '') + '><div>' + esc(T['s_' + s]) + '<span>' + esc(T['s_' + s + '_p']) + '</span></div></label>'; }).join('') + '</div></fieldset>' +
@@ -68,10 +69,11 @@
       '<div class="kq-hp" aria-hidden="true"><label for="kq-website">Website</label><input id="kq-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>' +
       '<div class="kq-f kq-w"><label class="kq-c" for="kq-consent"><input id="kq-consent" name="consent" type="checkbox" required aria-required="true" aria-describedby="kq-consent-e"><span>' + esc(T.consent) + '</span></label><p class="kq-e" id="kq-consent-e" aria-live="polite"></p></div>' +
       '</div>' +
-      '<p class="kq-pay">' + esc(T.pay) + '</p>' +
+      '<p class="kq-pay" id="kq-pay">' + esc(sv === 'add' ? T.pay_add : T.pay) + '</p>' +
       '<button class="btn btn-hi kq-b" type="submit" id="kq-b">' + esc(T.submit) + '</button>' +
       '<p class="kq-pv">' + esc(T.privacy) + ' <a href="/legal/privacy/">' + esc(T.privacy_link) + '</a></p></form>';
     document.getElementById('kq-form').addEventListener('submit', submit);
+    if (ADD) document.getElementById('kq-form').addEventListener('change', function (e) { if (e.target.name === 'service') document.getElementById('kq-pay').textContent = e.target.value === 'add' ? T.pay_add : T.pay; });
     if (location.hash === '#kreq' || location.hash === '#request') setTimeout(function () { box.scrollIntoView({ block: 'start' }); }, 50);
   }
   function setErr(id, msg) { var i = document.getElementById('kq-' + id), e = document.getElementById('kq-' + id + '-e'); if (i) { if (msg) i.setAttribute('aria-invalid', 'true'); else i.removeAttribute('aria-invalid'); } if (e) e.textContent = msg || ''; return !!msg; }
@@ -101,7 +103,7 @@
   }
   function done(ref, p) {
     try { if (window.gtag) gtag('event', 'request_submit', { service: p.service, lang: p.lang }); } catch (e) {}
-    box.innerHTML = '<div class="kq kq-ok" role="status"><h2 id="kq-done" tabindex="-1">' + esc(T.done_title) + '</h2><p>' + esc(T.done) + '</p><p style="margin:0">' + esc(T.ref) + ':</p><div class="kq-ref">' + esc(ref) + '</div><p class="kq-h">' + esc(T.done_mail) + '</p></div>';
+    box.innerHTML = '<div class="kq kq-ok" role="status"><h2 id="kq-done" tabindex="-1">' + esc(T.done_title) + '</h2><p>' + esc(p.service === 'add' ? T.done_add : T.done) + '</p><p style="margin:0">' + esc(T.ref) + ':</p><div class="kq-ref">' + esc(ref) + '</div><p class="kq-h">' + esc(T.done_mail) + '</p></div>';
     var h = document.getElementById('kq-done'); if (h) h.focus();
   }
 })();

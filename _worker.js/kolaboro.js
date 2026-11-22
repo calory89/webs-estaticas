@@ -1051,12 +1051,16 @@ const API_DOC = { name: 'Kolaboro pilot API', version: 'v1', auth: 'Send your ke
 function cors(r) { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); return new Response(r.body, { status: r.status, headers: h }); }
 // decoy pilot key: it appears only in an HTML comment on /api-pilot; nobody legitimate ever sends it, so any use means someone is scraping for secrets
 const HONEY_API = '2466ab2fe25f1162fbe9a6aeebfa2dee031873a44164b20f4818715e78013c52';
+// n36e: a 401 on the partner endpoints says which key works where (a free kb_live_ key from /api-keys/ is for /api/x/k/m/*)
+export const PILOT_401 = key => ({ error: /^kb_live_/.test(key || '') ? 'wrong_key_type' : 'missing_key', how: 'https://kolaboro.com/api-pilot',
+  note: 'This endpoint takes a partner pilot key (x-api-key: kb_pilot_...). No key needed: GET /api/open/* (same data). Free self-serve key (kb_live_..., https://kolaboro.com/api-keys/): GET /api/x/k/m/<path>, the metered copy of /api/open/<path>. Public sandbox key for the partner feed: x-api-key: kb_sandbox_public on /api/x/z/*.',
+  open: 'https://kolaboro.com/api/open', free_keys: 'https://kolaboro.com/api-keys/', docs: 'https://kolaboro.com/docs/api/' });
 async function apiV1(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
   const path = u.pathname.replace(/\/+$/, '');
   if (path === '/api/v1' || path === '/api/v1/docs') return cors(json(API_DOC));
   const key = req.headers.get('x-api-key') || '';
-  if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return cors(json({ error: 'missing_key', how: 'https://kolaboro.com/api-pilot' }, 401));
+  if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return cors(json(PILOT_401(key), 401));
   if (await sha(key) === HONEY_API) { ctx.waitUntil(rpc('kolaboro_honey_hit', { p_wkey: WKEY, p_kind: 'api_key', p_hint: (req.headers.get('cf-ipcountry') || '?') + ' ' + path.slice(0, 60) }).catch(() => {})); return cors(json({ error: 'invalid_key' }, 401)); }
   const ep = path.replace(/\/[0-9a-f]{64}$/, '/{sha256}').replace(/\/attestations\/[0-9a-f]+$/, '/attestations/{token}');
   let a; try { a = await rpc('kolaboro_api_use', { p_key: key, p_endpoint: req.method + ' ' + ep }); } catch (e) { return cors(json({ error: 'db' }, 503)); }

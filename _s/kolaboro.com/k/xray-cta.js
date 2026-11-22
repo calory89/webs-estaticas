@@ -460,3 +460,38 @@
   function hook() { if (window.KBX && typeof window.KBX.on === 'function' && !K._on) { K._on = 1; window.KBX.on(function (st) { if (S.mode === 'run') onState(st); }); return true; } return false; }
   if (!hook()) { var n = 0, iv = setInterval(function () { if (hook() || ++n > 40) clearInterval(iv); }, 250); }
 })();
+
+/* n36e (22 Nov 2026): a project that is not in our database gets a way to ask for it. When the X-ray's "Already in our database"
+   card says not found, this box links to the request form with service "add" (free): the request is stored, it reaches the CRM
+   (/admin/#requests) and an email goes to the team through the outbox; the visitor gets a reference number. 8 languages. */
+(function () {
+  var LG = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
+  var W = {
+    en: ['Not in our database yet?', 'Ask us to add it. We look it up in the official registers and public sources we read, publish its page if the sources allow, and email you the link. Free.', 'Ask us to add this project'],
+    es: ['¿Aún no está en nuestra base?', 'Pídenos añadirlo. Lo buscamos en los registros oficiales y las fuentes públicas que leemos, publicamos su página si las fuentes lo permiten y te enviamos el enlace. Gratis.', 'Pedir que añadáis este proyecto'],
+    fr: ['Pas encore dans notre base ?', 'Demandez-nous de l’ajouter. Nous le cherchons dans les registres officiels et les sources publiques que nous lisons, publions sa page si les sources le permettent et vous envoyons le lien. Gratuit.', 'Demander l’ajout de ce projet'],
+    de: ['Noch nicht in unserer Datenbank?', 'Bitten Sie uns, es aufzunehmen. Wir suchen es in den amtlichen Registern und öffentlichen Quellen, die wir lesen, veröffentlichen seine Seite, wenn die Quellen es erlauben, und senden Ihnen den Link. Kostenlos.', 'Aufnahme dieses Projekts anfragen'],
+    nl: ['Nog niet in onze database?', 'Vraag ons het toe te voegen. We zoeken het op in de officiële registers en openbare bronnen die we lezen, publiceren de pagina als de bronnen dat toelaten en mailen je de link. Gratis.', 'Vraag om dit project toe te voegen'],
+    ru: ['Этого проекта ещё нет в нашей базе?', 'Попросите нас добавить его. Мы проверим его по официальным реестрам и открытым источникам, которые читаем, опубликуем страницу, если источники это позволяют, и пришлём вам ссылку. Бесплатно.', 'Попросить добавить этот проект'],
+    zh: ['尚未收录在我们的数据库中？', '请我们添加。我们会在所查阅的官方登记册和公开来源中查找，如来源允许即发布其页面，并把链接发给您。免费。', '请求添加此项目'],
+    ar: ['غير موجود في قاعدتنا بعد؟', 'اطلب منا إضافته. نبحث عنه في السجلات الرسمية والمصادر العامة التي نقرؤها، وننشر صفحته إذا سمحت المصادر بذلك، ونرسل إليك الرابط. مجانًا.', 'اطلب إضافة هذا المشروع']
+  };
+  var T = W[LG] || W.en;
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function show(st) {
+    if (!st || !st.cards || document.getElementById('kadd')) return;
+    var m = null; st.cards.forEach(function (c) { if (c && c.id === 'match') m = c; });
+    if (!m || m.status !== 'not_found') return;
+    var q = String((st.input && (st.input.raw || st.input.q || st.input.url || st.input.name)) || st.url || '').slice(0, 200);
+    if (!q) { try { q = (new URLSearchParams(location.search).get('q') || '').slice(0, 200); } catch (e) {} }
+    var isUrl = /^https?:\/\/|^[a-z0-9-]+(\.[a-z0-9-]+)+(\/|$)/i.test(q);
+    var href = (LG === 'en' ? '/book/' : '/' + LG + '/pricing/') + '?s=add&' + (isUrl ? 'url=' : 'project=') + encodeURIComponent(q) + '#kreq';
+    var d = document.createElement('div'); d.id = 'kadd';
+    d.setAttribute('style', 'border:2px solid var(--hivis,#FF5B14);border-radius:16px;padding:16px 18px;margin:14px 0;background:var(--card,#fff)');
+    d.innerHTML = '<b style="display:block;font-size:1.08rem;margin-bottom:4px">' + esc(T[0]) + '</b><p style="margin:0 0 12px">' + esc(T[1]) + '</p><a class="btn btn-hi" href="' + esc(href) + '">' + esc(T[2]) + '</a>';
+    var k = document.getElementById('xr-known'), g = document.getElementById('xr-g');
+    if (k && k.parentNode) k.parentNode.insertBefore(d, k.nextSibling); else if (g && g.parentNode) g.parentNode.insertBefore(d, g); else return;
+  }
+  document.addEventListener('kb:xray', function (e) { if (e && e.detail && e.detail.phase === 'done') show(e.detail); });
+  (function hook(n) { if (window.KBX && typeof window.KBX.on === 'function') window.KBX.on(function (st) { if (st && st.phase === 'done') show(st); }); else if (n < 40) setTimeout(function () { hook(n + 1); }, 250); })(0);
+})();

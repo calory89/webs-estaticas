@@ -10,7 +10,7 @@
 // Every official response is hashed (SHA-256 of the exact bytes); the sorted list of hashes is hashed again into a root that is
 // timestamped in Bitcoin through the site's existing OpenTimestamps path (/api/kb/stamp). Nothing here is invented: a source with
 // no data says not_found / not_published, a source we cannot query says unavailable or needs_key.
-import { api as kbApi, fetchPage, okUrl, pageParts, rpc, sha, logApi, WKEY } from './kolaboro.js';
+import { api as kbApi, fetchPage, okUrl, pageParts, rpc, sha, logApi, WKEY, PILOT_401 } from './kolaboro.js';
 import { handle as hHandle } from './kbx_h.js';
 
 export const PATHS = /^\/api\/(kb|v1)\/lookup(\/|$)/;
@@ -604,7 +604,7 @@ async function lookup(req, u, env, ctx, partner) {
 }
 async function v1(req, u, env, ctx) {
   const key = req.headers.get('x-api-key') || '';
-  if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return out({ error: 'missing_key', how: 'https://kolaboro.com/api-pilot' }, 401);
+  if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return out(PILOT_401(key), 401);
   if (await sha(key) === HONEY_API) { ctx.waitUntil(rpc('kolaboro_honey_hit', { p_wkey: WKEY, p_kind: 'api_key', p_hint: (req.headers.get('cf-ipcountry') || '?') + ' /api/v1/lookup' }).catch(() => {})); return out({ error: 'invalid_key' }, 401); }
   let a; try { a = await rpc('kolaboro_api_use', { p_key: key, p_endpoint: req.method + ' /api/v1/lookup' }); } catch (e) { return out({ error: 'db' }, 503); }
   if (a && a.error) return out(a, a.error === 'rate_limited' ? 429 : 401);

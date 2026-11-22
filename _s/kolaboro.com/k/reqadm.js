@@ -5,7 +5,7 @@
   var A = window.KBADM; if (!A) return;
   var nav = document.querySelector('nav.tabs'), main = document.querySelector('main'); if (!nav || !main) return;
   var ST = [['new', 'New'], ['contacted', 'Contacted'], ['payment_sent', 'Payment sent'], ['paid', 'Paid (manual)'], ['agent_assigned', 'Agent assigned'], ['in_progress', 'In progress'], ['delivered', 'Delivered'], ['cancelled', 'Cancelled']];
-  var SV = { check: 'Pre-purchase check €490', visit: 'Site visit', monitoring: 'Monitoring €99/mo', handover: 'Handover inspection' };
+  var SV = { check: 'Pre-purchase check €490', visit: 'Site visit', monitoring: 'Monitoring €99/mo', handover: 'Handover inspection', add: 'Add and check a project (free)' };
   var SL = {}; ST.forEach(function (s) { SL[s[0]] = s[1]; });
   var R = [], AG = [], SEL = null, loaded = false, busy = false;
   function $(i) { return document.getElementById(i); }

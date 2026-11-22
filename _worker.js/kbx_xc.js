@@ -36,7 +36,7 @@ const OFFER = {
     ['Within 5 days', 'Land office and site visit: title checked, plot filmed with GPS- and time-stamped photos. Site visits are on request: we first confirm an agent for your location.'], ['Usually within 7 days', 'Written report: nine checks, every finding linked to its evidence.']],
   pay: PAY, book: '/book/', pricing: '/pricing',
 };
-const MONITOR = { price: '€99', per: 'per month, per property', items: ['Monthly GPS-stamped site visit (on request)', 'Milestone check before every payment (on request)', '"Go" or "hold" advice, based on the evidence', 'Delay alerts by email (once sending opens)', 'Final handover inspection (on request)'] };
+const MONITOR = { price: '€99', per: 'per month, per property', items: ['Monthly GPS-stamped site visit (on request)', 'Milestone check before every payment (on request)', '"Go" or "hold" advice, based on the evidence', 'Delay alerts by email', 'Final handover inspection (on request)'] };
 const SAMPLE = { url: '/report/sample', label: 'Sample client report', note: 'a fictional project in Bali, built like a real report' };
 
 function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, extra || {}) }); }
