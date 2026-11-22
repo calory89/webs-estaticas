@@ -1,6 +1,6 @@
 # Happy Low Cost: chollos de vuelos activos (22 nov 2026)
 
-> 11 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-22T16:15:56Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 10 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-22T21:52:23Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -8,7 +8,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Barcelona → Dubrovnik (Croacia): 62 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-dubrovnik-62-euros-2026-12-12/), Vueling, directo, 12 dic 2026 a 19 dic 2026. Precio habitual 140 € (−56 %). Comprobado el 22 nov 2026.
 
 ## Desde Bilbao (España)
-- [Bilbao → Cracovia (Polonia): 58 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-cracovia-58-euros-2027-02-13/), Wizz Air, directo, 13 feb 2027 a 18 feb 2027. Precio habitual 120 € (−52 %). Comprobado el 21 nov 2026.
+- [Bilbao → Cracovia (Polonia): 58 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-cracovia-58-euros-2027-02-13/), Wizz Air, directo, 13 feb 2027 a 18 feb 2027. Precio habitual 120 € (−52 %). Comprobado el 22 nov 2026.
 
 ## Desde Gran Canaria (España)
 - [Gran Canaria → Milán (Italia): 69 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-milan-69-euros-2027-01-16/), Ryanair, directo, 16 ene 2027 a 28 ene 2027. Precio habitual 120 € (−43 %). Comprobado el 22 nov 2026.
@@ -16,7 +16,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Gran Canaria → Hamburgo (Alemania): 140 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-hamburgo-140-euros-2026-12-02/), Condor, directo, 2 dic 2026 a 6 dic 2026. Precio habitual 250 € (−44 %). Comprobado el 22 nov 2026.
 
 ## Desde Madrid (España)
-- [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 21 nov 2026.
+- [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 22 nov 2026.
 
 ## Desde Málaga (España)
 - [Málaga → Oporto (Portugal): 41 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-oporto-41-euros-2026-11-28/), Ryanair, directo, 28 nov 2026 a 4 dic 2026. Precio habitual 70 € (−41 %). Comprobado el 22 nov 2026.
@@ -27,6 +27,3 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 ## Desde Valencia (España)
 - [Valencia → Viena (Austria): 73 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-viena-73-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 14 feb 2027. Precio habitual 130 € (−44 %). Comprobado el 22 nov 2026.
 - [Valencia → San Francisco (Estados Unidos): 411 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-san-francisco-411-euros-2027-02-12/), Iberia Airlines, 12 feb 2027 a 19 feb 2027. Precio habitual 740 € (−44 %). Comprobado el 22 nov 2026.
-
-## Desde Tallin (Estonia)
-- [Tallin → Antalya (Turquía): 99 € ida y vuelta](https://www.happylowcost.com/chollos/tallin-antalya-99-euros-2026-11-28/), SunExpress, directo, 28 nov 2026 a 21 dic 2026. Precio habitual 220 € (−55 %). Comprobado el 22 nov 2026.
