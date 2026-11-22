@@ -5102,6 +5102,494 @@
    "detail": "project 4391, completion on the register 15 Jun 2028, 0% built at the DLD inspection of 2 Mar 2026",
    "code": "4391",
    "checked": "2026-11-21"
+  },
+  "sol-levante": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3642, completion on the register 15 Sep 2028, 7.19% built at the DLD inspection of 6 Jul 2026",
+   "code": "3642",
+   "checked": "2026-11-22"
+  },
+  "sol-luxe-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4016, completion on the register 15 Mar 2029, 1.99% built at the DLD inspection of 30 Jun 2026",
+   "code": "4016",
+   "checked": "2026-11-22"
+  },
+  "reef-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "3 registered phases, active",
+   "detail": "projects 3219, 3651, 4062",
+   "code": "3219",
+   "checked": "2026-11-22"
+  },
+  "999-residences-by-reef-luxury-development": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3400, completion on the register 30 Jun 2027, 13.21% built at the DLD inspection of 27 Aug 2026",
+   "code": "3400",
+   "checked": "2026-11-22"
+  },
+  "997-residences-by-reef-luxury-development": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3837, completion on the register 30 Mar 2028, 4.89% built at the DLD inspection of 27 Aug 2026",
+   "code": "3837",
+   "checked": "2026-11-22"
+  },
+  "vincitore-wellness-estate": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4148, completion on the register 15 Feb 2030, 0% built at the DLD inspection of 14 Jul 2026",
+   "code": "4148",
+   "checked": "2026-11-22"
+  },
+  "rena-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3447, completion on the register 15 May 2027, 31.75% built at the DLD inspection of 31 Aug 2026",
+   "code": "3447",
+   "checked": "2026-11-22"
+  },
+  "shoaq-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3630, completion on the register 30 Oct 2027, 16.03% built at the DLD inspection of 27 Oct 2026",
+   "code": "3630",
+   "checked": "2026-11-22"
+  },
+  "avenew888-modo": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3828, completion on the register 15 Mar 2028, 21.21% built at the DLD inspection of 8 Oct 2026",
+   "code": "3828",
+   "checked": "2026-11-22"
+  },
+  "avenew888-loom": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4293, completion on the register 31 Mar 2028, 1.63% built at the DLD inspection of 13 Oct 2026",
+   "code": "4293",
+   "checked": "2026-11-22"
+  },
+  "lia-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4195, completion on the register 20 May 2028, 4.06% built at the DLD inspection of 2 Oct 2026",
+   "code": "4195",
+   "checked": "2026-11-22"
+  },
+  "silena-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3808, completion on the register 30 May 2028, 5.66% built at the DLD inspection of 3 Nov 2026",
+   "code": "3808",
+   "checked": "2026-11-22"
+  },
+  "cheval-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4457, completion on the register 31 Mar 2029, 0.04% built at the DLD inspection of 15 Oct 2026",
+   "code": "4457",
+   "checked": "2026-11-22"
+  },
+  "evergrin-house": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "2 registered phases, active",
+   "detail": "projects 4114, 4260",
+   "code": "4114",
+   "checked": "2026-11-22"
+  },
+  "iridian-park-2": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3765, completion on the register 1 Feb 2027, 21.29% built at the DLD inspection of 31 Jul 2026",
+   "code": "3765",
+   "checked": "2026-11-22"
+  },
+  "luminar-tower-3": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3443, completion on the register 30 Mar 2027, 18.33% built at the DLD inspection of 28 Oct 2026",
+   "code": "3443",
+   "checked": "2026-11-22"
+  },
+  "silviana-park-living": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4216, completion on the register 30 Mar 2027, 2.67% built at the DLD inspection of 13 Aug 2026",
+   "code": "4216",
+   "checked": "2026-11-22"
+  },
+  "verdania-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "3 registered phases, active",
+   "detail": "projects 3543, 3576, 4271",
+   "code": "3543",
+   "checked": "2026-11-22"
+  },
+  "havelock-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3213, completion on the register 31 Dec 2026, 30.03% built at the DLD inspection of 9 Nov 2026",
+   "code": "3213",
+   "checked": "2026-11-22"
+  },
+  "beverly-park": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4009, completion on the register 31 Oct 2027, 6.79% built at the DLD inspection of 29 Sep 2026",
+   "code": "4009",
+   "checked": "2026-11-22"
+  },
+  "beverly-grande": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3767, completion on the register 31 Dec 2027, 2.27% built at the DLD inspection of 29 Sep 2026",
+   "code": "3767",
+   "checked": "2026-11-22"
+  },
+  "beverly-crown": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4514, completion on the register 31 Dec 2028, 0% built at the DLD inspection of 25 Jun 2026",
+   "code": "4514",
+   "checked": "2026-11-22"
+  },
+  "mbl-signature": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3780, completion on the register 31 Mar 2027, 80% built at the DLD inspection of 10 Nov 2026",
+   "code": "3780",
+   "checked": "2026-11-22"
+  },
+  "rove-home-marasi-drive": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2966, completion on the register 31 Aug 2027, 10% built at the DLD inspection of 6 Jul 2026",
+   "code": "2966",
+   "checked": "2026-11-22"
+  },
+  "hq-by-rove": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4143, completion on the register 31 Mar 2029, 0.7% built at the DLD inspection of 6 Jul 2026",
+   "code": "4143",
+   "checked": "2026-11-22"
+  },
+  "district-one-west-phase-2": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3200, completion on the register 19 Nov 2027, 51% built at the DLD inspection of 15 Oct 2026",
+   "code": "3200",
+   "checked": "2026-11-22"
+  },
+  "holm-one-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4181, completion on the register 30 Mar 2028, 17.71% built at the DLD inspection of 22 Oct 2026",
+   "code": "4181",
+   "checked": "2026-11-22"
+  },
+  "linea-by-holm": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4331, completion on the register 15 Jun 2028, 17.96% built at the DLD inspection of 3 Nov 2026",
+   "code": "4331",
+   "checked": "2026-11-22"
+  },
+  "floarea-grande": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3494, completion on the register 14 Aug 2027, 48.2% built at the DLD inspection of 14 Aug 2026",
+   "code": "3494",
+   "checked": "2026-11-22"
+  },
+  "floarea-breeze": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4061, completion on the register 30 Jun 2028, 3.81% built at the DLD inspection of 26 Oct 2026",
+   "code": "4061",
+   "checked": "2026-11-22"
+  },
+  "floarea-oasis": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3603, completion on the register 30 Dec 2028, 12.63% built at the DLD inspection of 15 Sep 2026",
+   "code": "3603",
+   "checked": "2026-11-22"
+  },
+  "floarea-skies": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3717, completion on the register 31 Dec 2028, 4.53% built at the DLD inspection of 6 Jul 2026",
+   "code": "3717",
+   "checked": "2026-11-22"
+  },
+  "mirdad-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4158, completion on the register 31 Dec 2028, 6.02% built at the DLD inspection of 28 Sep 2026",
+   "code": "4158",
+   "checked": "2026-11-22"
+  },
+  "the-community-sports-arena": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3362, completion on the register 31 Oct 2027, 22.42% built at the DLD inspection of 31 Oct 2024",
+   "code": "3362",
+   "checked": "2026-11-22"
+  },
+  "the-central-downtown": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2861, completion on the register 31 Mar 2028, 10.48% built at the DLD inspection of 21 Apr 2026",
+   "code": "2861",
+   "checked": "2026-11-22"
+  },
+  "mirdif-hills-asayel-avenue": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3389, completion on the register 5 May 2027, 33.08% built at the DLD inspection of 8 May 2026",
+   "code": "3389",
+   "checked": "2026-11-22"
+  },
+  "al-vista-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3802, completion on the register 20 Oct 2027, 9.51% built at the DLD inspection of 28 Oct 2026",
+   "code": "3802",
+   "checked": "2026-11-22"
+  },
+  "living-legends-phase-4": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 1323, completion on the register 31 Mar 2027, 62.08% built at the DLD inspection of 13 Mar 2026",
+   "code": "1323",
+   "checked": "2026-11-22"
+  },
+  "pristine-by-zoya": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3069, completion on the register 1 Jan 2027, 58.39% built at the DLD inspection of 20 Aug 2026",
+   "code": "3069",
+   "checked": "2026-11-22"
+  },
+  "miorah-by-zoya": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4228, completion on the register 31 Aug 2027, 16.12% built at the DLD inspection of 20 Jul 2026",
+   "code": "4228",
+   "checked": "2026-11-22"
+  },
+  "elanora-by-zoya": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4459, completion on the register 31 Mar 2028, 0% built at the DLD inspection of 16 Apr 2026",
+   "code": "4459",
+   "checked": "2026-11-22"
+  },
+  "elinor-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4513, completion on the register 30 Jun 2028, 0% built at the DLD inspection of 1 Jul 2026",
+   "code": "4513",
+   "checked": "2026-11-22"
+  },
+  "nuve-by-zoya": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4290, completion on the register 30 Jun 2028, 0.79% built at the DLD inspection of 20 Jul 2026",
+   "code": "4290",
+   "checked": "2026-11-22"
+  },
+  "izel-by-zoya": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4386, completion on the register 15 Sep 2028, 0% built at the DLD inspection of 10 Mar 2026",
+   "code": "4386",
+   "checked": "2026-11-22"
+  },
+  "verano-by-prescott": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3339, completion on the register 31 Dec 2026, 41.07% built at the DLD inspection of 29 Sep 2026",
+   "code": "3339",
+   "checked": "2026-11-22"
+  },
+  "legado-by-prescott": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3210, completion on the register 31 Aug 2027, 23.31% built at the DLD inspection of 30 Sep 2026",
+   "code": "3210",
+   "checked": "2026-11-22"
+  },
+  "the-caden-by-prescott": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4215, completion on the register 15 May 2028, 0.47% built at the DLD inspection of 2 Jun 2026",
+   "code": "4215",
+   "checked": "2026-11-22"
+  },
+  "oasis-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3726, completion on the register 1 Jul 2027, 58.45% built at the DLD inspection of 30 Oct 2026",
+   "code": "3726",
+   "checked": "2026-11-22"
+  },
+  "sports-view-residence-2-by-al-helal-al-zahaby": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3836, completion on the register 10 Nov 2029, 13.35% built at the DLD inspection of 12 Aug 2026",
+   "code": "3836",
+   "checked": "2026-11-22"
+  },
+  "al-habtoor-tower": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2656, completion on the register 31 Dec 2026, 90.01% built at the DLD inspection of 31 Aug 2026",
+   "code": "2656",
+   "checked": "2026-11-22"
+  },
+  "al-haseen-residence": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "3 registered phases, active",
+   "detail": "projects 3562, 3484, 4461",
+   "code": "3562",
+   "checked": "2026-11-22"
+  },
+  "moonsa-residences-2": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3280, completion on the register 31 Dec 2026, 1.01% built at the DLD inspection of 20 Jul 2026",
+   "code": "3280",
+   "checked": "2026-11-22"
+  },
+  "terra-tower": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3278, completion on the register 30 Apr 2027, 7.43% built at the DLD inspection of 8 Jul 2026",
+   "code": "3278",
+   "checked": "2026-11-22"
+  },
+  "astra-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4040, completion on the register 31 Aug 2027, 15.34% built at the DLD inspection of 16 Jul 2026",
+   "code": "4040",
+   "checked": "2026-11-22"
+  },
+  "celesto-tower": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "3 registered phases, active",
+   "detail": "projects 4106, 4440, 4487",
+   "code": "4106",
+   "checked": "2026-11-22"
+  },
+  "elemental-22": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3601, completion on the register 31 May 2028, 45.95% built at the DLD inspection of 4 Nov 2026",
+   "code": "3601",
+   "checked": "2026-11-22"
+  },
+  "the-cape-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4258, completion on the register 31 Dec 2028, 0.71% built at the DLD inspection of 2 Jul 2026",
+   "code": "4258",
+   "checked": "2026-11-22"
+  },
+  "amaal-8-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3004, completion on the register 31 Dec 2028, 11.27% built at the DLD inspection of 28 Oct 2026",
+   "code": "3004",
+   "checked": "2026-11-22"
+  },
+  "leven-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3555, completion on the register 15 Nov 2027, 23.29% built at the DLD inspection of 6 Aug 2026",
+   "code": "3555",
+   "checked": "2026-11-22"
+  },
+  "svn-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4497, completion on the register 31 Dec 2028, 0% built at the DLD inspection of 22 Jun 2026",
+   "code": "4497",
+   "checked": "2026-11-22"
+  },
+  "interstellar-tower": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3403, completion on the register 30 Sep 2028, 0.02% built at the DLD inspection of 6 Jul 2026",
+   "code": "3403",
+   "checked": "2026-11-22"
   }
  }
 }
