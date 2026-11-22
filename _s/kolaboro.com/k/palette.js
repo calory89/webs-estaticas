@@ -201,7 +201,10 @@
     return s * 10 + it.w * (qs.join('').length < 4 ? 6 : 2) - h.length / 400;
   }
   function search(q) {
-    var t0 = performance.now(), qs = norm(q).split(' ').filter(Boolean), out = [];
+    // n35a: names in another script or a registered company name resolve through the public alias table (/data/aliases/)
+    if (!window.kbAlias && !window.__kbAl) { window.__kbAl = 1; var sa = document.createElement('script'); sa.src = '/k/n35a/alias.js?v=a1'; sa.async = true; document.head.appendChild(sa); }
+    var qa = window.kbAlias ? window.kbAlias(q) : null;
+    var t0 = performance.now(), qs = norm(qa || q).split(' ').filter(Boolean), out = [];
     if (!qs.length) out = items.filter(function (x) { return x.t === 'page'; }).slice(0, 10).map(function (x) { return { it: x, s: 0 }; });
     else { var all = items.concat(X34); for (var i = 0; i < all.length; i++) { var s = score(all[i], qs); if (s > 0) out.push({ it: all[i], s: s }); } out.sort(function (a, b) { return b.s - a.s; }); out = out.slice(0, 40); }
     out = ctx34(q).concat(out);
