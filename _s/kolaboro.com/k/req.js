@@ -53,7 +53,7 @@
   function render() {
     var slug = (Q.get('p') || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 90);
     var proj = Q.get('project') || Q.get('url') || (slug ? nice(slug) : '');
-    var sv = Q.get('s'); ADD = sv === 'add' && !!T.s_add; if (ADD && SV.indexOf('add') < 0) SV = SV.concat('add'); if (SV.indexOf(sv) < 0) sv = SV.indexOf((location.hash || '').slice(1)) >= 0 ? location.hash.slice(1) : 'check';
+    var sv = Q.get('s'); ADD = sv === 'add' && !!T.s_add; if (ADD && SV.indexOf('add') < 0) SV = ['add'].concat(SV); if (SV.indexOf(sv) < 0) sv = SV.indexOf((location.hash || '').slice(1)) >= 0 ? location.hash.slice(1) : 'check';
     var langOpts = LANGS.map(function (l) { return '<option value="' + l + '"' + (l === lang ? ' selected' : '') + '>' + esc(ALL.langs[l]) + '</option>'; }).join('');
     box.innerHTML = '<form class="kq" id="kq-form" novalidate data-slug="' + esc(slug) + '"><h2 id="kq-t">' + esc(ADD ? T.title_add : T.title) + '</h2><p class="kq-in">' + esc(ADD ? T.intro_add : T.intro) + '</p>' +
       '<div class="kq-sum" id="kq-sum" role="alert" tabindex="-1"></div>' +
