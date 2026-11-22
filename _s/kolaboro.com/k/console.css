@@ -391,3 +391,4 @@ a.kt-a{display:inline-flex;align-items:center;text-decoration:none;color:inherit
 li>.ap-chip[data-vc]{background:var(--k-ink,#13222E);color:var(--k-paper,#F2F4F3)}li>.ap-chip[data-vc]:hover{background:var(--k-ink-2,#2F3E4B)}
 /* n35b (22 Nov 2026): portal pieces from app.css with light backgrounds, readable in dark mode */
 :root[data-theme=dark] .ap-report,:root[data-theme=dark] .x-chain{background:var(--k-sunken,#121A22)}:root[data-theme=dark] .accepted small,:root[data-theme=dark] .x-hash{color:var(--k-muted,#9DA9B3)}
+:root[data-theme=dark] .x-view{background:var(--k-surface,#16202A);color:var(--k-ink,#E8ECEC);border-color:var(--k-line-2,#34434F)}:root[data-theme=dark] #xchk{color:#5BD6A2!important}
