@@ -13,6 +13,34 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-22",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-22",
+   "title": "22 November 2026: 21 changes shipped so far",
+   "content_text": "- Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)\n- Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)\n- Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)\n- Kolaboro.com n35a: Sumba and operator projects left out of every batch 35 file (independence policy); DLD pace summary line on /m/dubai/\n- Kolaboro.com n35b: /accessibility/ data from the 22 Nov pass: 535 pages, serious or critical axe issues 32 on 14 pages before, 0 after\n- Plan pills move to their own line instead of widening the tile (de/nl pricing overflowed 390 px after the no-wrap pill fix) (n35v)\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)</li><li>Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)</li><li>Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)</li><li>Kolaboro.com n35a: Sumba and operator projects left out of every batch 35 file (independence policy); DLD pace summary line on /m/dubai/</li><li>Kolaboro.com n35b: /accessibility/ data from the 22 Nov pass: 535 pages, serious or critical axe issues 32 on 14 pages before, 0 after</li><li>Plan pills move to their own line instead of widening the tile (de/nl pricing overflowed 390 px after the no-wrap pill fix) (n35v)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-22T00:00:00Z",
+   "date_modified": "2026-11-22T05:30:46Z",
+   "_kolaboro": {
+    "ships": 21,
+    "data_updates": 0,
+    "method": "so-far"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-21",
+   "url": "https://kolaboro.com/changelog/2026-11-21/",
+   "title": "21 November 2026: 21 changes shipped",
+   "content_text": "- Kolaboro.com /security/: say what is enforced today (script and framing rules) and what is still report-only; security-text.json in 8 languages for /engineering/security/\n- Kolaboro.com n34b: rebuild search, market and palette data on the 2,224-project dataset; print buttons without inline onclick (blocked by script-src-attr 'none')\n- Kolaboro.com security (n34s): deny-all policy on JSON and text answers, frame-src and manifest-src enforced, hourly caps on the two keyless job endpoints\n- Brotli copies only for outside clients; the worker's own reads of /data/*.json get the normal file (fixes /api/open/* data_unavailable) (n34c)\n- V1 OpenAPI operations with schemas, generated JS/TS/Python SDK v1 (22/22 tests each), MCP tool tests 17/17, Brotli serving labelled off (n34c)\n- Kolaboro.com n34d: 222 new projects (2,224 tracked): Dubai DLD register phases, Abu Dhabi, Bali, Phuket, Bangkok, Malaysia, Vietnam\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com /security/: say what is enforced today (script and framing rules) and what is still report-only; security-text.json in 8 languages for /engineering/security/</li><li>Kolaboro.com n34b: rebuild search, market and palette data on the 2,224-project dataset; print buttons without inline onclick (blocked by script-src-attr &#x27;none&#x27;)</li><li>Kolaboro.com security (n34s): deny-all policy on JSON and text answers, frame-src and manifest-src enforced, hourly caps on the two keyless job endpoints</li><li>Brotli copies only for outside clients; the worker&#x27;s own reads of /data/*.json get the normal file (fixes /api/open/* data_unavailable) (n34c)</li><li>V1 OpenAPI operations with schemas, generated JS/TS/Python SDK v1 (22/22 tests each), MCP tool tests 17/17, Brotli serving labelled off (n34c)</li><li>Kolaboro.com n34d: 222 new projects (2,224 tracked): Dubai DLD register phases, Abu Dhabi, Bali, Phuket, Bangkok, Malaysia, Vietnam</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-21T00:00:00Z",
+   "date_modified": "2026-11-21T17:15:54Z",
+   "_kolaboro": {
+    "ships": 21,
+    "data_updates": 10,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-20",
    "url": "https://kolaboro.com/changelog/2026-11-20/",
    "title": "20 November 2026: 19 changes shipped",
