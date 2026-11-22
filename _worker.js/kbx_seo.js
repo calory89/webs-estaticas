@@ -678,7 +678,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
   // batch 15 (s15b): hub and guide pages are cached at the edge per deploy (every data publish is a deploy), so a crawler gets the
   // HTML without the data join (TTFB). Only clean URLs; a query string always renders fresh.
-  const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v1/' + env.CF_PAGES_COMMIT_SHA + p) : null;
+  const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
   if (p === '/sitemap_index.xml') { B.inner = inner; B.ctx = ctx; return sitemaps(env, B, 'index'); }
