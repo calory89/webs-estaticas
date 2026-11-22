@@ -3,13 +3,191 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'business',
+ 'slug': 'job-fair-east-sumba-3914-vacancies-most-abroad-2026',
+ 'date': '2026-11-23',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'feria-empleo-sumba-oriental-3914-vacantes-mayoria-extranjero-2026',
+           'id': 'job-fair-sumba-timur-3914-lowongan-sebagian-besar-luar-negeri-2026'},
+ 'keywords': {'en': ['Sumba job fair',
+                     'East Sumba jobs',
+                     'Waingapu job fair 2026',
+                     'Sumba labour market',
+                     'hiring staff in Sumba',
+                     'Indonesian migrant workers NTT'],
+              'es': ['feria de empleo Sumba',
+                     'empleo en Sumba Oriental',
+                     'feria de empleo Waingapu 2026',
+                     'mercado laboral Sumba',
+                     'contratar personal en Sumba',
+                     'trabajadores migrantes NTT'],
+              'id': ['job fair Sumba Timur',
+                     'lowongan kerja Sumba Timur',
+                     'job fair Waingapu 2026',
+                     'pasar kerja Sumba',
+                     'rekrut karyawan di Sumba',
+                     'pekerja migran NTT']},
+ 'en': {'title': 'East Sumba job fair lists 3,914 vacancies, most for work abroad',
+        'dek': 'Waingapu.Com counts 2,464 foreign-placement jobs; VIVA NTT gives no total and names local employers. '
+               'Hiring on the island may face competition.',
+        'answer': "East Sumba's government held a job fair in Waingapu on 19 and 20 November 2026 that Waingapu.Com "
+                  'says listed 3,914 vacancies, 2,464 of them abroad. VIVA NTT gives no total. Neither outlet reports '
+                  'applicants, hires or pay.',
+        'keys': ["Waingapu.Com's infographic counts 3,914 vacancies: 2,464 abroad, 1,140 inter-regional and 310 local.",
+                 'VIVA NTT gives no total; it names Alfamart (200), Agrinas Palma Nusantara (1,000 in Kalimantan) and '
+                 'small local hotel posts.',
+                 'The fair ran 19 and 20 November, 08:00 to 18:00 WITA, at Gedung MPL Pdt. Umbu Hapu Mbay.',
+                 'No applicant, hiring or pay figures are reported; the total rests on one outlet.'],
+        'visitors': 'Nothing changes for visitors; the fair is over.',
+        'body': "<p>East Sumba's government ran a two-day job fair in Waingapu on 19 and 20 November 2026, and "
+                'Waingapu.Com reported that it offered 3,914 vacancies, 2,464 of them for work abroad. The fair was '
+                "organised by the regency's labour and transmigration office (Disnakertrans) at the Gedung MPL Pdt. "
+                'Umbu Hapu Mbay hall, open from 08:00 to 18:00 WITA, according to Waingapu.Com (18 November) and VIVA '
+                "NTT (20 November).</p><h2>What was on offer</h2><p>Waingapu.Com's infographic splits the 3,914 "
+                'vacancies into 2,464 from foreign companies placed through licensed migrant-worker agencies, 1,140 '
+                'from other Indonesian regions under the inter-regional (AKAD) scheme and 310 from local firms and '
+                'other categories. It lists Malaysia, Singapore, Japan, Hong Kong, the UAE and Taiwan as overseas '
+                'destinations. VIVA NTT gives no total and speaks of thousands of positions. It confirms 1,140 '
+                'inter-regional posts and at least 310 local ones, and names employers: Alfamart (200 store crew in '
+                'Sumba and Bali), NSS Waingapu (22), Suzuki Waingapu (10), BTPN Syariah (23 community officers) and '
+                'Agrinas Palma Nusantara (1,000 oil palm harvesters in Kalimantan). Local hospitality jobs were small: '
+                '10 each at Hotel Kambaniru and Tanoma Beach, plus a finance post at Padadita Hotel.</p><h2>What is '
+                'not known</h2><p>Neither outlet reports how many people applied, how many were hired or what the jobs '
+                "pay. The 3,914 total comes only from Waingapu.Com; VIVA NTT's figures cover just part of it. "
+                'Applicants were asked to bring a copy of their ID, their latest diploma and a CV, and Waingapu.Com '
+                'says consultation and vacancy registration were free. VIVA NTT says interview schedules were posted '
+                "on the office's Instagram account.</p><h2>What it means for visitors, residents and "
+                'investors</h2><p>Visitors: nothing changes for your trip; the fair is over. Residents: most of the '
+                'jobs on offer were outside the island, so businesses that hire locally, including foreign-owned ones, '
+                'may be competing with overseas and inter-island offers for the same workers. Investors: the mix '
+                "points to where East Sumba's labour is heading, with local hotels and shops listing only dozens of "
+                'posts against thousands elsewhere. If you plan to staff a business on the island, budget for training '
+                "and retention. Treat the figures as the organisers' and the outlets' own until the regency publishes "
+                'results.</p>',
+        'faq': [['How many vacancies did the East Sumba job fair offer?',
+                 'Waingapu.Com reports 3,914, of which 2,464 were for work abroad. VIVA NTT gives no total.'],
+                ['Were there jobs on Sumba itself?',
+                 'Yes, but few: VIVA NTT lists at least 310 local positions, such as Alfamart, NSS Waingapu, Suzuki '
+                 'Waingapu and small hotel posts.']]},
+ 'es': {'title': 'Feria de empleo en Sumba Oriental: 3.914 vacantes, la mayoría fuera',
+        'dek': 'Waingapu.Com cuenta 2.464 puestos en el extranjero; VIVA NTT no da total y nombra empresas locales. '
+               'Contratar en la isla puede costar más.',
+        'answer': 'El gobierno de Sumba Oriental celebró una feria de empleo en Waingapu el 19 y 20 de noviembre de '
+                  '2026 que, según Waingapu.Com, ofrecía 3.914 vacantes, 2.464 en el extranjero. VIVA NTT no da total. '
+                  'Ningún medio informa de candidatos, contratados ni sueldos.',
+        'keys': ['El gráfico de Waingapu.Com cuenta 3.914 vacantes: 2.464 en el extranjero, 1.140 interregionales y '
+                 '310 locales.',
+                 'VIVA NTT no da total; nombra a Alfamart (200), Agrinas Palma Nusantara (1.000 en Kalimantan) y pocos '
+                 'puestos hoteleros locales.',
+                 'La feria fue el 19 y 20 de noviembre, de 08:00 a 18:00 WITA, en el Gedung MPL Pdt. Umbu Hapu Mbay.',
+                 'No hay cifras de candidatos, contratados ni sueldos; el total depende de un solo medio.'],
+        'visitors': 'No cambia nada para los visitantes; la feria ya terminó.',
+        'body': '<p>El gobierno de Sumba Oriental celebró una feria de empleo de dos días en Waingapu, el 19 y 20 de '
+                'noviembre de 2026, y Waingapu.Com informó de que ofrecía 3.914 vacantes, 2.464 de ellas para trabajar '
+                'en el extranjero. La organizó la oficina de trabajo y transmigración de la regencia (Disnakertrans) '
+                'en el salón Gedung MPL Pdt. Umbu Hapu Mbay, con horario de 08:00 a 18:00 WITA, según Waingapu.Com (18 '
+                'de noviembre) y VIVA NTT (20 de noviembre).</p><h2>Qué se ofrecía</h2><p>El gráfico de Waingapu.Com '
+                'reparte las 3.914 vacantes así: 2.464 de empresas extranjeras con colocación a través de agencias '
+                'autorizadas de trabajadores migrantes, 1.140 de otras regiones de Indonesia dentro del programa '
+                'interregional (AKAD) y 310 de empresas locales y otras categorías. Cita Malasia, Singapur, Japón, '
+                'Hong Kong, Emiratos Árabes y Taiwán como destinos en el extranjero. VIVA NTT no da un total y habla '
+                'de miles de puestos. Confirma 1.140 puestos interregionales y al menos 310 locales, y nombra '
+                'empresas: Alfamart (200 dependientes en Sumba y Bali), NSS Waingapu (22), Suzuki Waingapu (10), BTPN '
+                'Syariah (23 agentes comunitarios) y Agrinas Palma Nusantara (1.000 recolectores de palma de aceite en '
+                'Kalimantan). Los empleos locales de hostelería fueron pocos: 10 en el Hotel Kambaniru, 10 en Tanoma '
+                'Beach y un puesto de finanzas en el Hotel Padadita.</p><h2>Lo que no se sabe</h2><p>Ningún medio '
+                'informa de cuántas personas se presentaron, cuántas fueron contratadas ni cuánto pagan los puestos. '
+                'El total de 3.914 procede solo de Waingapu.Com; las cifras de VIVA NTT cubren solo una parte. Se '
+                'pedía llevar copia del documento de identidad, el último título y un currículum, y Waingapu.Com dice '
+                'que la consulta y el registro de vacantes eran gratuitos. VIVA NTT señala que los horarios de '
+                'entrevistas se publicaron en el Instagram de la oficina.</p><h2>Qué significa para visitantes, '
+                'residentes e inversores</h2><p>Visitantes: no cambia nada para su viaje; la feria ya terminó. '
+                'Residentes: la mayoría de los empleos ofrecidos estaban fuera de la isla, así que los negocios que '
+                'contratan en la zona, también los de capital extranjero, pueden competir con ofertas del extranjero y '
+                'de otras islas por los mismos trabajadores. Inversores: el reparto indica hacia dónde va la mano de '
+                'obra de Sumba Oriental, con hoteles y tiendas locales que anuncian solo decenas de puestos frente a '
+                'miles en otros lugares. Si piensa contratar personal en la isla, prevea formación y retención. Tome '
+                'las cifras como las de los organizadores y de los medios hasta que la regencia publique '
+                'resultados.</p>',
+        'faq': [['¿Cuántas vacantes ofreció la feria de empleo de Sumba Oriental?',
+                 'Waingapu.Com informa de 3.914, de las que 2.464 eran para trabajar en el extranjero. VIVA NTT no da '
+                 'total.'],
+                ['¿Había empleos en la propia Sumba?',
+                 'Sí, pero pocos: VIVA NTT cita al menos 310 puestos locales, como Alfamart, NSS Waingapu, Suzuki '
+                 'Waingapu y algunos de hoteles.']]},
+ 'id': {'title': 'Job fair Sumba Timur: 3.914 lowongan, sebagian besar di luar negeri',
+        'dek': 'Waingapu.Com mencatat 2.464 lowongan penempatan luar negeri; VIVA NTT tidak menyebut total dan '
+               'menyebut perusahaan lokal. Merekrut di pulau ini bisa lebih sulit.',
+        'answer': 'Pemerintah Sumba Timur menggelar job fair di Waingapu pada 19 dan 20 November 2026 yang menurut '
+                  'Waingapu.Com memuat 3.914 lowongan, 2.464 di luar negeri. VIVA NTT tidak menyebut total. Kedua '
+                  'media tidak melaporkan jumlah pelamar, yang diterima, atau gaji.',
+        'keys': ['Infografik Waingapu.Com menghitung 3.914 lowongan: 2.464 luar negeri, 1.140 antardaerah, dan 310 '
+                 'lokal.',
+                 'VIVA NTT tidak menyebut total; menyebut Alfamart (200), Agrinas Palma Nusantara (1.000 di '
+                 'Kalimantan), dan sedikit lowongan hotel lokal.',
+                 'Job fair berlangsung 19 dan 20 November, pukul 08.00 sampai 18.00 WITA, di Gedung MPL Pdt. Umbu Hapu '
+                 'Mbay.',
+                 'Tidak ada data pelamar, penerimaan, atau gaji; total bertumpu pada satu media.'],
+        'visitors': 'Tidak ada yang berubah bagi pengunjung; job fair sudah selesai.',
+        'body': '<p>Pemerintah Sumba Timur menggelar job fair dua hari di Waingapu pada 19 dan 20 November 2026, dan '
+                'Waingapu.Com melaporkan bahwa acara itu membuka 3.914 lowongan kerja, 2.464 di antaranya untuk '
+                'bekerja di luar negeri. Acara diselenggarakan Dinas Tenaga Kerja dan Transmigrasi (Disnakertrans) '
+                'kabupaten di Gedung MPL Pdt. Umbu Hapu Mbay, buka pukul 08.00 sampai 18.00 WITA, menurut Waingapu.Com '
+                '(18 November) dan VIVA NTT (20 November).</p><h2>Apa yang ditawarkan</h2><p>Infografik Waingapu.Com '
+                'membagi 3.914 lowongan itu menjadi 2.464 dari perusahaan asing yang disalurkan lewat agen penempatan '
+                'pekerja migran resmi, 1.140 dari daerah lain di Indonesia lewat skema Antar Kerja Antar Daerah '
+                '(AKAD), dan 310 dari perusahaan lokal dan kategori lain. Negara tujuan yang disebut adalah Malaysia, '
+                'Singapura, Jepang, Hong Kong, Uni Emirat Arab, dan Taiwan. VIVA NTT tidak menyebut total dan hanya '
+                'menulis ribuan formasi. Media itu membenarkan 1.140 posisi antardaerah dan sedikitnya 310 posisi '
+                'lokal, serta menyebut perusahaan: Alfamart (200 kru toko di Sumba dan Bali), NSS Waingapu (22), '
+                'Suzuki Waingapu (10), BTPN Syariah (23 community officer), dan Agrinas Palma Nusantara (1.000 pemanen '
+                'sawit di Kalimantan). Lowongan perhotelan lokal sedikit: masing-masing 10 di Hotel Kambaniru dan '
+                'Tanoma Beach, ditambah satu posisi keuangan di Hotel Padadita.</p><h2>Yang belum '
+                'diketahui</h2><p>Kedua media tidak melaporkan berapa orang yang melamar, berapa yang diterima, atau '
+                'berapa gajinya. Total 3.914 hanya berasal dari Waingapu.Com; angka VIVA NTT hanya mencakup sebagian. '
+                'Pelamar diminta membawa fotokopi KTP, ijazah terakhir, dan CV, dan Waingapu.Com menyebut konsultasi '
+                'serta pendaftaran lowongan gratis. VIVA NTT menyebut jadwal wawancara diumumkan lewat Instagram '
+                'dinas.</p><h2>Apa artinya bagi pengunjung, penduduk, dan investor</h2><p>Pengunjung: tidak ada yang '
+                'berubah untuk perjalanan Anda; job fair sudah selesai. Penduduk: sebagian besar lowongan berada di '
+                'luar pulau, sehingga usaha yang merekrut di sini, termasuk yang dimiliki orang asing, bisa bersaing '
+                'dengan tawaran luar negeri dan antarpulau untuk tenaga kerja yang sama. Investor: komposisi ini '
+                'menunjukkan ke mana tenaga kerja Sumba Timur mengalir, dengan hotel dan toko lokal hanya membuka '
+                'puluhan posisi dibanding ribuan di tempat lain. Jika Anda berencana merekrut karyawan di pulau ini, '
+                'siapkan anggaran pelatihan dan upaya mempertahankan karyawan. Anggap angka-angka ini sebagai angka '
+                'penyelenggara dan media sampai kabupaten merilis hasilnya.</p>',
+        'faq': [['Berapa lowongan yang dibuka di job fair Sumba Timur?',
+                 'Waingapu.Com melaporkan 3.914, di mana 2.464 untuk bekerja di luar negeri. VIVA NTT tidak menyebut '
+                 'total.'],
+                ['Apakah ada lowongan di Sumba sendiri?',
+                 'Ada, tetapi sedikit: VIVA NTT menyebut sedikitnya 310 posisi lokal, seperti Alfamart, NSS Waingapu, '
+                 'Suzuki Waingapu, dan beberapa hotel.']]},
+ 'sources': [['Waingapu.Com: Job Fair Sumba Timur 2026 Buka 3.914 Lowongan Kerja, Ada Peluang ke Jepang hingga '
+              'Malaysia (18 Nov 2026)',
+              'https://www.waingapu.com/job-fair-sumba-timur-2026-buka-3-914-lowongan-kerja-ada-peluang-ke-jepang-hingga-malaysia/'],
+             ['VIVA NTT: Ribuan Asa di Gedung MPL Waingapu: Pemkab Sumba Timur Buka Pintu Karier Lokal hingga '
+              'Mancanegara (20 Nov 2026)',
+              'https://ntt.viva.co.id/news/4224-ribuan-asa-di-gedung-mpl-waingapu-pemkab-sumba-timur-buka-pintu-karier-lokal-hingga-mancanegara']],
+ 'image': {'ai': True,
+           'caption': {'en': 'AI-generated illustration of a job fair hall with blank booths; not a photo of the '
+                             'Waingapu job fair.',
+                       'es': 'Ilustración generada con IA de una feria de empleo con puestos en blanco; no es una foto '
+                             'de la feria de Waingapu.',
+                       'id': 'Ilustrasi buatan AI aula job fair dengan stan kosong; bukan foto job fair Waingapu.'},
+           'credit': '',
+           'h': 853,
+           'license': '',
+           'license_url': '',
+           'page': '',
+           'w': 1280}},
 {'section': 'living',
  'slug': 'bulog-waingapu-2300-tonnes-rice-christmas-new-year-east-sumba-2026',
  'date': '2026-11-22',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'bulog-waingapu-2300-toneladas-arroz-navidad-ano-nuevo-sumba-oriental-2026',
            'id': 'bulog-waingapu-2300-ton-beras-natal-tahun-baru-sumba-timur-2026'},
  'keywords': {'en': ['Bulog Waingapu',
