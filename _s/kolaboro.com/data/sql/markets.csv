@@ -1,32 +1,33 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,592,574,578,8,5500,90,571,20491.0,462
-Bali,Indonesia,133,1,119,25,1027,168,24,3431.4,101
+Dubai,UAE,653,635,639,8,5916,90,632,20223.4,514
+Bali,Indonesia,136,1,122,25,1041,168,24,3455.6,104
 Phuket,Thailand,76,15,71,7,422,23,6,118554.6,38
-Malaysia,Malaysia,52,29,51,1,402,26,9,12139.5,31
-Costa del Sol,Spain,48,2,27,7,322,11,12,4207.6,20
+Malaysia,Malaysia,63,29,62,3,452,26,9,10898.9,42
+Costa del Sol,Spain,49,2,27,7,327,11,12,4248.5,21
+Kuala Lumpur,Malaysia,46,12,46,1,228,2,7,11724.1,19
+Bangkok,Thailand,45,4,45,7,228,4,3,62815.3,33
 Miami,USA,41,13,26,0,258,22,5,14310.0,7
-Kuala Lumpur,Malaysia,37,12,37,0,188,2,7,13976.1,10
+Vietnam,Vietnam,41,6,37,3,228,16,0,9634551.5,25
 Philippines,Philippines,32,11,17,1,221,21,0,284848.5,9
 Abu Dhabi,UAE,30,17,29,2,226,29,2,25735.3,21
 France,France,28,0,23,0,168,0,0,,1
-Bangkok,Thailand,26,4,26,2,147,4,3,155338.0,17
+Cambodia,Cambodia,27,0,27,1,164,21,0,1964.2,18
+Spain,Spain,26,2,11,0,184,6,2,4837.4,14
 Ras Al Khaimah,UAE,26,0,19,0,203,38,7,31518.5,16
-Vietnam,Vietnam,25,6,21,2,164,16,0,53571428.6,11
 Lombok,Indonesia,24,0,17,0,206,27,6,1821.4,15
 Riviera Maya,Mexico,24,0,9,0,226,38,7,24458.8,16
-Spain,Spain,24,2,11,0,174,6,2,4363.1,12
 Brazil,Brazil,22,4,11,0,116,5,0,56787.5,4
 Egypt,Egypt,21,1,16,0,162,17,4,147157.5,16
 Sri Lanka,Sri Lanka,20,0,7,0,140,11,3,543560.6,6
 Istanbul,Turkey,20,6,18,0,169,22,3,4473.7,11
 Greece,Greece,19,1,17,0,136,21,3,7238.1,6
+Costa Blanca,Spain,19,1,9,2,102,8,3,4530.1,8
 Pattaya,Thailand,18,10,17,0,146,15,5,141778.1,12
 Cyprus,Cyprus,18,0,9,0,110,13,5,5702.8,8
 Oman,Oman,18,0,15,0,134,23,1,1311.8,13
 Georgia,Georgia,17,0,12,0,138,24,3,2778.8,9
-Costa Blanca,Spain,17,1,9,2,92,8,3,4157.8,6
+Osaka,Japan,17,0,17,4,59,0,0,1318181.8,11
 Los Cabos,Mexico,16,0,9,1,112,18,3,5383.0,8
-Cambodia,Cambodia,16,0,16,0,115,21,0,2076.6,8
 Warsaw,Poland,16,0,14,0,72,0,0,,1
 Koh Samui,Thailand,15,3,10,0,117,17,1,45769.2,9
 Algarve,Portugal,15,0,6,1,94,7,3,7630.8,6
@@ -51,6 +52,7 @@ Punta Cana,Dominican Republic,10,0,6,0,67,10,1,2841.1,5
 Sydney,Australia,10,5,8,0,81,8,0,,1
 Malta,Malta,10,2,6,1,66,5,1,,2
 Lisbon,Portugal,10,0,5,0,55,8,4,9861.3,6
+Tokyo,Japan,10,3,10,0,45,0,1,4316607.2,4
 Mérida,Mexico,9,0,6,0,67,11,1,44807.7,7
 Portugal,Portugal,9,0,6,1,82,10,1,7412.7,7
 Antalya,Turkey,9,1,7,1,68,11,2,3057.7,5
@@ -58,6 +60,7 @@ Vancouver,Canada,9,0,5,0,29,1,0,,2
 Panama City,Panama,8,0,8,0,71,12,0,4018.8,7
 Croatia,Croatia,8,3,7,1,73,12,0,7870.1,5
 Marrakech,Morocco,8,0,6,0,50,4,1,14318.2,6
+Canary Islands,Spain,8,0,2,0,64,5,1,5282.2,3
 Accra,Ghana,8,0,4,0,33,4,0,3636.1,4
 Hua Hin,Thailand,7,1,6,1,56,7,1,59200.0,5
 Bahrain,Bahrain,7,0,7,0,61,8,1,1394.0,6
@@ -74,11 +77,9 @@ Bulgaria,Bulgaria,6,2,5,0,55,9,0,1645.1,3
 New Zealand,New Zealand,6,1,6,1,51,10,0,12272.7,3
 Goa,India,6,5,5,0,34,5,0,211774.1,4
 Ajman,UAE,6,4,6,0,55,14,0,15665.1,3
-Canary Islands,Spain,6,0,2,0,57,5,1,5282.2,3
 Namibia,Namibia,6,0,2,0,28,1,0,15900.3,6
 Cayman Islands,Cayman Islands,6,1,4,0,40,4,0,9713.0,4
 Maldives,Maldives,6,0,4,0,39,6,0,13680.3,4
-Tokyo,Japan,6,3,6,0,30,0,1,,1
 Lagos,Nigeria,6,0,3,0,23,4,0,3371.7,4
 Berlin,Germany,6,0,6,0,28,3,0,6270.0,4
 Belize,Belize,5,0,3,0,28,4,0,5408.2,3
@@ -102,6 +103,7 @@ Niseko,Japan,4,0,4,0,39,1,1,,1
 Fiji,Fiji,4,0,3,0,32,3,0,,0
 Birmingham,United Kingdom,4,2,3,0,33,6,0,,2
 Umm Al Quwain,UAE,4,0,4,0,38,5,0,,2
+Kyoto,Japan,4,1,4,1,20,1,0,,1
 Dublin,Ireland,4,1,1,0,26,5,0,,2
 Barbados,Barbados,4,0,2,0,28,5,0,8611.0,4
 Ecuador,Ecuador,4,0,2,0,18,1,0,2718.9,4
@@ -129,7 +131,6 @@ Alanya,Turkey,3,0,3,0,28,5,0,4666.7,3
 Fort Lauderdale,USA,3,3,1,0,27,2,0,,1
 Tampa,USA,3,2,3,0,30,3,0,,1
 Melbourne,Australia,3,2,3,0,33,4,0,,2
-Kyoto,Japan,3,1,3,0,16,1,0,,0
 Jamaica,Jamaica,3,1,1,0,15,1,0,,2
 Riviera Nayarit,Mexico,3,0,2,0,30,2,0,,2
 Mozambique,Mozambique,3,0,0,0,9,0,0,,2
@@ -138,7 +139,6 @@ Prague,Czechia,3,0,1,0,8,0,0,,0
 Peru,Peru,3,0,1,0,7,0,0,9000.0,3
 Argentina,Argentina,3,0,3,0,9,4,0,,2
 Tangier,Morocco,3,0,1,0,9,0,0,,1
-Osaka,Japan,3,0,3,0,6,0,0,,0
 Cartagena,Colombia,2,0,2,0,12,2,0,,1
 Palm Beach County,USA,2,0,1,0,19,4,0,,0
 Turks and Caicos,Turks and Caicos Islands,2,1,2,0,19,0,0,,2
