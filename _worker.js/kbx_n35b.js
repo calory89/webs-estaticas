@@ -39,7 +39,7 @@ const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:developers\/compare|tools\/(?:vault|price-per-m2)|projects\/[a-z0-9-]{1,90}\/journey)\/?$/;
 const RX = { dc: new RegExp('^\\/' + LP + 'developers\\/compare(\\/?)$'), vt: new RegExp('^\\/' + LP + 'tools\\/vault(\\/?)$'), pm: new RegExp('^\\/' + LP + 'tools\\/price-per-m2(\\/?)$'), bj: new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/journey(\\/?)$') };
 // pages of this batch, linked from each other ("more tools")
-const ALL = [['dc_t', '/developers/compare/'], ['pm_t', '/tools/price-per-m2/'], ['vt_t', '/tools/vault/'], ['l_cr', '/tools/contract-reader/'], ['l_my', '/tools/my-checklist/']];
+const ALL = [['dc_t', '/developers/compare/'], ['pm_t', '/tools/price-per-m2/'], ['vt_t', '/tools/vault/'], ['l_cr', '/tools/contract-reader/'], ['l_my', '/tools/my-checklist/', 1]];   // 1 = English-only page (no language prefix)
 
 const CSS = '<style id="n35-css">.n35{max-width:1100px}.n35 h2{margin:28px 0 8px;font-size:1.3rem}.n35 p,.n35 li{line-height:1.6}.n35 .k-xs{font-size:.9rem;color:var(--k-muted,#56636F)}' +
   '.n35-tw{overflow-x:auto;border:1px solid var(--k-line,#D5DCDB);border-radius:12px;margin:10px 0 22px;background:var(--k-surface,#fff)}.n35-tw:focus-visible{outline:3px solid var(--k-sea,#155C75)}.n35 table{width:100%;border-collapse:collapse;font-size:.93rem}.n35 th,.n35 td{padding:9px 12px;border-bottom:1px solid var(--k-line,#D5DCDB);text-align:start;vertical-align:top}.n35 thead th{font-size:.82rem}.n35 td.n{font-variant-numeric:tabular-nums}.n35 tbody th{font-weight:600;min-width:150px}' +
@@ -52,7 +52,7 @@ const CSS = '<style id="n35-css">.n35{max-width:1100px}.n35 h2{margin:28px 0 8px
 
 function rel(l, k) {
   const L = ALL.filter(a => a[0] !== k);
-  return '<nav class="n35-rel" aria-label="' + esc(t(l, 'also')) + '"><h2>' + esc(t(l, 'also')) + '</h2><ul>' + L.map(a => '<li><a href="' + pre(l) + a[1] + '">' + esc(t(l, a[0])) + '</a></li>').join('') + '</ul></nav>';
+  return '<nav class="n35-rel" aria-label="' + esc(t(l, 'also')) + '"><h2>' + esc(t(l, 'also')) + '</h2><ul>' + L.map(a => '<li><a href="' + (a[2] ? '' : pre(l)) + a[1] + '">' + esc(t(l, a[0])) + '</a></li>').join('') + '</ul></nav>';
 }
 async function page(shell, l, o) {
   const canon = ORIGIN + pre(l) + o.path;
