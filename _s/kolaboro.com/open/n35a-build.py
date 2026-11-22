@@ -42,7 +42,10 @@ INPUTS = ['named.json', 'price-reality.json', 'register-changes.json', 'court-ca
 LIC = 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)'
 random.seed(35)
 
-N = rj('named.json'); P = N['projects']; BY = {p['id']: p for p in P}; BYS = {p['s']: p for p in P}
+N = rj('named.json')
+COI = re.compile(r'eco\s*beach|\bequinox\b|\bsumba\b', re.I)   # independence policy: Sumba only in the transparency ranking; the operator's projects never
+P = [p for p in N['projects'] if not COI.search(' '.join(str(p.get(k) or '') for k in ('n', 's', 'dv', 'dvs', 'mk', 'ar', 'co')))]
+BY = {p['id']: p for p in P}; BYS = {p['s']: p for p in P}
 BUILT = max(N.get('updated', '')[:10], (rj('register-changes.json') or {}).get('updated', '')[:10])
 def dd(s):
     try: return date.fromisoformat(str(s)[:10])
@@ -268,13 +271,16 @@ def add(dv, d, k, txt, s=None, src=None, extra=None):
     ev[dv].append(o)
 KMAP = {'add': 'added', 'later': 'moved_later', 'earlier': 'moved_earlier', 'permit': 'permit', 'contra': 'contradicted', 'verif': 'verified', 'done': 'completed'}
 for dv, x in TR['d'].items():
+    if COI.search(dv + ' ' + str(x.get('n') or '')): continue
     for e in x.get('ev', []):
         p = BYS.get(e[2])
+        if e[2] and not p: continue
         add(dv, e[0], KMAP.get(e[1], e[1]), e[3] if len(e) > 3 else '', e[2])
 for c in RC.get('changes', []):
     p = BY.get(c.get('id'))
     if p: add(p['dvs'], c.get('after_d'), 'register', c.get('register', ''), p['s'], c.get('url'), {'f': c.get('field'), 'a': c.get('before'), 'b': c.get('after')})
 for c in CC.get('cases', []):
+    if COI.search(str(c.get('dev') or '')): continue
     add(c.get('dev'), c.get('date'), 'court', c.get('court', '') + ' ' + c.get('no', ''), None, c.get('src'), {'w': c.get('what'), 'r': c.get('result')})
 fields = SH['fields']; iu, ist, ich = fields.index('url'), fields.index('status'), fields.index('checked')
 for row in SH['u']:

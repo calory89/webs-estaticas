@@ -278,7 +278,7 @@ export async function inject(req, u, env, r, nonce) {
     if (p === 'engineering/' || p === 'yc/') h = shipped(l);
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) { h = await projBlock(env, l, mm[1]); sel = '#delivery > details'; }
     else if ((mm = /^developers\/([a-z0-9-]{1,90})\/$/.exec(p))) { h = await devBlock(env, l, mm[1]); sel = '#record'; where = 'before'; }
-    else if (p === 'm/dubai/') h = links(l, ['pace', 'ask', 'esc'], t(l, 'mk_h'));
+    else if (p === 'm/dubai/') { const pc = await file(env, '/data/n35a/pace.json'), su = pc && pc.summary; h = links(l, ['pace', 'ask', 'esc'], t(l, 'mk_h')); if (su) h = h.replace('<ul class="n35-rel">', '<p>' + esc(fill(t(l, 'mk_p'), { n: nf(su.compared, l), b: nf(su.behind_pct, l, 1), g: nf(su.median_gap_pts, l, 1) })) + '</p><ul class="n35-rel">'); }
     else if (p === 'data/') h = links(l, ['dic', 'dif', 'qa', 'ali', 'con'], t(l, 'data_h'));
     else if (p === 'data/sql/') h = links(l, ['qa', 'dic']);
     else if (p === 'registers/') h = links(l, ['esc', 'pace']);
