@@ -4,10 +4,10 @@
 (function () {
   'use strict';
   var D = null, busy = null;
-  function plain(s) { return String(s || '').normalize('NFKC').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim(); }
+  function plain(s) { return String(s || '').normalize('NFKC').toLowerCase().normalize('NFKD').replace(/\p{M}/gu, '').replace(/\s+/g, ' ').trim(); }
   function tr(s) { if (!D) return s; var o = ''; for (var i = 0; i < s.length; i++) { var c = s[i], k = D.cyr.indexOf(c), g = D.grk.indexOf(c); o += k >= 0 ? D.cyr_lat[k] : g >= 0 ? D.grk_lat[g] : c; } return o; }
   var LEG = null;
-  function key(s) { var x = tr(String(s || '').normalize('NFKC').toLowerCase()); x = x.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and '); if (LEG) x = x.replace(LEG, ' '); return x.replace(/[^\p{L}\p{N}]+/gu, ' ').replace(/\s+/g, ' ').trim(); }
+  function key(s) { var x = tr(String(s || '').normalize('NFKC').toLowerCase()); x = x.normalize('NFKD').replace(/\p{M}/gu, '').replace(/&/g, ' and '); if (LEG) x = x.replace(LEG, ' '); return x.replace(/[^\p{L}\p{N}]+/gu, ' ').replace(/\s+/g, ' ').trim(); }
   function load() { if (D || busy) return busy; busy = fetch('/data/n35a/alias-q.json').then(function (r) { return r.json(); }).then(function (d) { D = d; try { LEG = new RegExp(d.legal, 'g'); } catch (e) {} return d; }).catch(function () { busy = null; }); return busy; }
   function resolve(q) {
     if (!D) { load(); return null; }

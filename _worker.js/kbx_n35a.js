@@ -13,7 +13,7 @@
 // Strings in 8 languages: /data/n35a-i18n.json (static asset, read once per isolate).
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const V = 'a1';
+export const V = 'a2';
 let T = null;
 async function loadT(env) {
   if (T) return T;
@@ -237,7 +237,7 @@ async function difPage(env, shell, l, nonce) {
 async function qaPage(env, shell, l, nonce) {
   const b = '<p>' + esc(t(l, 'q_intro')) + '</p><div id="n35-qa"><form role="search"><label for="n35-qaq" class="k-xs">' + esc(t(l, 'q_lab')) + '</label><input id="n35-qaq" type="search" style="flex:1 1 320px" autocomplete="off" placeholder="' + esc((t(l, 'q_ex') || [''])[0]) + '"> <button type="button" class="btn" id="n35-qag">' + esc(t(l, 'q_go')) + '</button></form>' +
     '<p class="k-xs">' + esc(t(l, 'q_try')) + '</p><ul class="n35-rel" id="n35-qax">' + [].concat(t(l, 'q_ex') || []).map(x => '<li><button type="button" class="kbtn" data-q="' + esc(x) + '">' + esc(x) + '</button></li>').join('') + '</ul>' +
-    '<p id="n35-qas" role="status" aria-live="polite" class="k-xs"></p><div id="n35-qao"></div></div><script type="application/json" id="n35-qat">' + strings(l, ['q_sql', 'q_none', 'q_load', 'q_rows', 'q_err', 'q_hash', 'q_parsed', 'q_open', 'q_run']) + '</script><script' + nonceOf(nonce) + ' src="/k/n35a/ask.js?v=' + V + '" defer></script>' +
+    '<p id="n35-qas" role="status" aria-live="polite" class="k-xs"></p><div id="n35-qao"></div></div><script type="application/json" id="n35-qat">' + strings(l, ['q_sql', 'q_none', 'q_load', 'q_rows', 'q_err', 'q_hash', 'q_parsed', 'q_open', 'q_run', 'q_c']) + '</script><script' + nonceOf(nonce) + ' src="/k/n35a/ask.js?v=' + V + '" defer></script>' +
     sec(t(l, 'method'), paras(l, 'q_m')) + '<p><a href="' + pre(l) + '/data/sql/">' + esc(t(l, 'q_sqlp')) + '</a> · <a href="' + pre(l) + '/data/dictionary/">' + esc(t(l, 'dic_t')) + '</a></p>' + files(l, ['/k/n35a/ask.js', '/open/n35a-ask-tests.json', '/data/sql/datacard.json']);
   return page(shell, l, Object.assign(H(l, 'qa'), { path: '/data/ask/', body: b, crumb: [DS(l)] }));
 }

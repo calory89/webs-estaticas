@@ -10,7 +10,7 @@ const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); re
 let C = { t: 0, h: null }, K33 = null;
 export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
 const SC_L = { en: 'Keyboard shortcuts', es: 'Atajos de teclado', de: 'Tastenkürzel', fr: 'Raccourcis clavier', nl: 'Sneltoetsen', ru: 'Горячие клавиши', zh: '键盘快捷键', ar: 'اختصارات لوحة المفاتيح' };
-const SITE_V = 'n35a1'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+const SITE_V = 'n35a2'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}

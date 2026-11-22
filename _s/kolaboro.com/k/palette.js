@@ -202,7 +202,7 @@
   }
   function search(q) {
     // n35a: names in another script or a registered company name resolve through the public alias table (/data/aliases/)
-    if (!window.kbAlias && !window.__kbAl) { window.__kbAl = 1; var sa = document.createElement('script'); sa.src = '/k/n35a/alias.js?v=a1'; sa.async = true; document.head.appendChild(sa); }
+    if (!window.kbAlias && !window.__kbAl) { window.__kbAl = 1; var sa = document.createElement('script'); sa.src = '/k/n35a/alias.js?v=a2'; sa.async = true; document.head.appendChild(sa); }
     var qa = window.kbAlias ? window.kbAlias(q) : null;
     var t0 = performance.now(), qs = norm(qa || q).split(' ').filter(Boolean), out = [];
     if (!qs.length) out = items.filter(function (x) { return x.t === 'page'; }).slice(0, 10).map(function (x) { return { it: x, s: 0 }; });

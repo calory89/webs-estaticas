@@ -62,4 +62,6 @@
   F.addEventListener('submit', function (e) { if (!X) return; e.preventDefault(); run(1); });
   O.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[data-pg]'); if (!a || !X) return; e.preventDefault(); run(+a.getAttribute('data-pg')); O.scrollIntoView({ block: 'start' }); });
   F.addEventListener('focusin', function () { load(); }, { once: true });
+  // n35a (22 Nov 2026): names in another script resolve through the public alias table (/data/aliases/); a shared link reruns once it loads
+  (function () { if (window.kbAlias) return; var sa = document.createElement('script'); sa.src = '/k/n35a/alias.js?v=a2'; sa.async = true; sa.onload = function () { var q = F.elements.q && F.elements.q.value, n = 0; if (!q) return; var tq = setInterval(function () { var a = window.kbAlias(q); if (a !== null || ++n > 20) { clearInterval(tq); if (a) load().then(function () { run(1); }); } }, 150); }; document.head.appendChild(sa); })();
 })();
