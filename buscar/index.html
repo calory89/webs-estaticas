@@ -61,7 +61,7 @@ try{(window.dataLayer=window.dataLayer||[]).push({event:'hlc_search',hlc_q:q.sli
 var tm;inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150);});
 document.getElementById('sf').addEventListener('submit',function(e){e.preventDefault();run();});
 var q0=new URLSearchParams(location.search).get('q');if(q0)inp.value=q0;run();
-fetch((EN?'/hlc/search-en.json':'/hlc/search-es.json')+'?v=1ae95506').then(function(r){return r.json();}).then(function(j){IDX=j;run();}).catch(function(){out.innerHTML='<p class="sr-hint">'+T('No se ha podido cargar el buscador.','Search could not load.')+'</p>';});
+fetch((EN?'/hlc/search-en.json':'/hlc/search-es.json')+'?v=00764443').then(function(r){return r.json();}).then(function(j){IDX=j;run();}).catch(function(){out.innerHTML='<p class="sr-hint">'+T('No se ha podido cargar el buscador.','Search could not load.')+'</p>';});
 var tries=0;(function wait(){if(window.HLC_feed){window.HLC_feed().then(function(l){DEALS=l||[];fetch('/chollos/hechos.json').then(function(r){return r.json();}).then(function(h){DEALS.forEach(function(x){if(h.indexOf(x.slug)>=0)x._u='/chollos/'+x.slug+'/';});run();}).catch(run);});}else if(tries++<40)setTimeout(wait,150);})();
 })();</script><!--hlc-footer--><footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>

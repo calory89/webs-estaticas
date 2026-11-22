@@ -1,6 +1,6 @@
-# Happy Low Cost: chollos de vuelos activos (21 nov 2026)
+# Happy Low Cost: chollos de vuelos activos (22 nov 2026)
 
-> 7 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-21T21:38:45Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 8 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-22T06:42:35Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -15,8 +15,11 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 ## Desde Madrid (España)
 - [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 21 nov 2026.
 
+## Desde Palma de Mallorca (España)
+- [Palma de Mallorca → Viena (Austria): 67 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-viena-67-euros-2027-02-12/), Ryanair, directo, 12 feb 2027 a 19 feb 2027. Precio habitual 120 € (−44 %). Comprobado el 22 nov 2026.
+
 ## Desde Valencia (España)
-- [Valencia → Viena (Austria): 73 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-viena-73-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 14 feb 2027. Precio habitual 130 € (−44 %). Comprobado el 21 nov 2026.
+- [Valencia → Viena (Austria): 73 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-viena-73-euros-2027-02-07/), Ryanair, directo, 7 feb 2027 a 14 feb 2027. Precio habitual 130 € (−44 %). Comprobado el 22 nov 2026.
 
 ## Desde Tallin (Estonia)
-- [Tallin → Antalya (Turquía): 99 € ida y vuelta](https://www.happylowcost.com/chollos/tallin-antalya-99-euros-2026-11-28/), SunExpress, directo, 28 nov 2026 a 21 dic 2026. Precio habitual 220 € (−55 %). Comprobado el 21 nov 2026.
+- [Tallin → Antalya (Turquía): 99 € ida y vuelta](https://www.happylowcost.com/chollos/tallin-antalya-99-euros-2026-11-28/), SunExpress, directo, 28 nov 2026 a 21 dic 2026. Precio habitual 220 € (−55 %). Comprobado el 22 nov 2026.
