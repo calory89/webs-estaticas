@@ -382,8 +382,14 @@ export async function handle(req, u, env, ctx, shell, inner) {
     const out = ['# Kolaboro project record ' + (d.id || '') + ' (' + (d.name || m[1]) + '), the same facts as ' + ORIGIN + '/api/v1/projects/' + m[1] + ' . CC BY 4.0, attribute "Kolaboro" and link ' + ORIGIN + '/projects/' + m[1] + '/', 'field,value'].concat(rows.map(rw => csvCell(rw[0]) + ',' + csvCell(rw[1])));
     return txt(out.join('\n') + '\n', 'text/csv; charset=utf-8', { 'content-disposition': 'inline; filename="kolaboro-' + m[1] + '.csv"', link: '<' + ORIGIN + '/projects/' + m[1] + '/>; rel="canonical"', 'x-robots-tag': 'noindex' });
   }
-  if (p === '/yc/try/' || p === '/yc/try') { if (p === '/yc/try') return new Response(null, { status: 301, headers: { location: '/yc/try/' } }); return shellPage(shell, 'en', await ycTryPage(inner)); }
-  if (p === '/yc/' || p === '/yc') { if (p === '/yc') return new Response(null, { status: 301, headers: { location: '/yc/' } }); return shellPage(shell, 'en', await ycPage(env, inner)); }
+  if (p === '/yc/try' || p === '/yc') return new Response(null, { status: 301, headers: { location: p + '/' } });
+  if (p === '/yc/try/' || p === '/yc/') {   // n36e: reviewers land here; the built page is kept 5 minutes at the edge (live figures, cold loads were up to 5 s)
+    const ck = new Request(ORIGIN + '/__yc_cache' + p + Math.floor(Date.now() / 300000));
+    try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
+    const r = await shellPage(shell, 'en', p === '/yc/' ? await ycPage(env, inner) : await ycTryPage(inner));
+    try { const c = r.clone(), h = new Headers(c.headers); h.set('cache-control', 'public, max-age=300'); if (ctx && ctx.waitUntil) ctx.waitUntil(caches.default.put(ck, new Response(c.body, { status: 200, headers: h }))); } catch (e) {}
+    return r;
+  }
   let ix; try { ix = await N.data(env); } catch (e) { return new Response('Data unavailable, try again in a minute.', { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8', 'retry-after': '60', 'cache-control': 'no-store' } }); }
   if ((m = /^\/answers\/place\/([a-z0-9-]{1,90})\.md$/.exec(p))) {
     const pl = places(ix).find(z => z.s === m[1]); if (!pl) return nf();
