@@ -319,7 +319,7 @@ async function shellPage(shell, lang, o) {
   const tags = '<title>' + esc(o.title) + ' | Kolaboro</title><meta name="description" content="' + esc(o.lead) + '"><link rel="canonical" href="' + canon + '">' + alts +
     '<meta name="robots" content="' + (o.noindex ? 'noindex, follow' : 'index, follow') + '"><meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(o.title) + '"><meta property="og:description" content="' + esc(o.lead) + '"><meta property="og:url" content="' + canon + '"><meta property="og:image" content="' + ORIGIN + '/k/og/home.png"><meta name="twitter:card" content="summary_large_image">' +
     '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
-  const main = '<section class="phero"><div class="wrap"><p class="crumb">' + crumbs.map((c, i) => i < crumbs.length - 1 ? '<a href="' + esc(c[1].replace(ORIGIN, '')) + '">' + bdi(c[0]) + '</a>' : bdi(c[0])).join(' / ') + '</p><h1>' + (o.h1h || esc(o.h1)) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><section class="sec k27"><div class="wrap k-prose" style="max-width:none">' + o.body + '</div></section>';
+  const main = '<section class="phero"><div class="wrap"><p class="crumb">' + crumbs.map((c, i) => i < crumbs.length - 1 ? '<a href="' + esc(c[1].replace(ORIGIN, '')) + '">' + bdi(c[0]) + '</a>' : bdi(c[0])).join(' / ') + '</p><h1>' + (o.h1h || esc(o.h1)) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><section class="sec k27"><div class="wrap k-prose" style="max-width:var(--wrap)">' + o.body + '</div></section>';
   const sh = await shell(pre(lang) + '/how-we-score/');
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
@@ -327,7 +327,7 @@ async function shellPage(shell, lang, o) {
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + (o.langs === false && l !== lang ? '/' : path)); } })   // n35v: English-only pages (/yc/) linked /es/yc/ etc., which are 404s
     .transform(new Response(sh.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
   const h = { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900' }; if (o.noindex) h['x-robots-tag'] = 'noindex, follow';
   return new Response(await res.text(), { status: 200, headers: h });

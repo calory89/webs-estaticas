@@ -1416,3 +1416,20 @@ main details>summary{min-height:44px!important}
   main details>summary{list-style:none}
   @page{margin:14mm}
 }
+
+/* n35v (22 Nov 2026), visual and bug audit. The global reset sets every margin and padding to 0, so bare content dropped into a .wrap
+   had no rhythm: headings touching the paragraph above, list bullets hanging outside the page gutter. Low specificity (:where) so
+   every component rule still wins. */
+:where(main .wrap)>:where(*)+h2{margin-top:clamp(28px,4vw,40px)}
+:where(main .wrap)>h2+:where(p,ul,ol){margin-top:8px}
+:where(main .wrap)>:where(ul,ol):not([class]){padding-inline-start:1.25em}
+:where(main .wrap)>:where(ul,ol):not([class])>li+li{margin-top:4px}
+/* "Last checked <date>" and the Kolaboro ID ran together on project pages ("13 Nov 2026 Kolaboro ID"): a separator, the ID secondary */
+.kupd .kid{font-weight:500;color:var(--muted)}
+.kupd .kid::before{content:"\00B7";margin-inline:.45em;font-weight:400}
+/* status pills in plan lists ("on request") wrapped into a two-line blob in narrow tiles */
+.tile li>.k27s{white-space:nowrap;flex:none}
+/* "Most searched" strip: links were 23 px tall, under the 24 px minimum tap target */
+.n33-ms .wrap a{display:inline-block;padding-block:2px}
+/* phones: form fields under 16 px make iOS Safari zoom the page on focus (search box 14.4 px, map filters 13.4 px) */
+@media (max-width:640px){main :is(input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),select,textarea){font-size:16px!important}}

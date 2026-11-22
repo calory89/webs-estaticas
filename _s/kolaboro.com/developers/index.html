@@ -221,7 +221,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   fetch('/api/geo').then(function(r){ return r.json(); }).then(function(g){
     var c = C[g && g.country]; if (!c) return;
     els.forEach(function(el){
-      var m = el.textContent.replace(/[,\s]/g,'').match(/€(\d+)/); if (!m || el.querySelector('.fx')) return;
+      var m = el.textContent.replace(/[,\s]/g,'').match(/€(\d+)/); if (!m || m[1] === '0' || document.querySelector('.n31-curd') || el.querySelector('.fx')) return;
       var v = +m[1] * c[2], step = v > 1000 ? 50 : 5, n = Math.round(v / step) * step;
       el.insertAdjacentHTML('beforeend', '<small class="fx">≈ ' + c[1] + n.toLocaleString('en-US') + ' · charged in €</small>');
     });
