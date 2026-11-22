@@ -163,7 +163,7 @@ async function vtPage(env, shell, l) {
 // ------------------------------------------------------------------------------------------------ 17. price per m2 checker
 const wilson = (k, n) => { const z = 1.96, p = k / n, d = 1 + z * z / n, c = (p + z * z / (2 * n)) / d, h = z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d; return [Math.max(0, c - h), Math.min(1, c + h)]; };
 async function pmPage(env, shell, l, u) {
-  const D = await file(env, '/data/n35b-ppm.json'), P = pre(l), M = (D && D.markets) || [];
+  const D = ((await file(env, '/data/n35b.json')) || {}).ppm, P = pre(l), M = (D && D.markets) || [];
   const ms = (u.searchParams.get('m') || '').toLowerCase(), m = M.find(x => x.slug === ms) || null;
   const pr = parseFloat(String(u.searchParams.get('p') || '').replace(/[^\d.]/g, '')), sz = parseFloat(String(u.searchParams.get('s') || '').replace(/[^\d.]/g, ''));
   const asked = !!(ms || u.searchParams.has('p'));
@@ -184,7 +184,7 @@ async function pmPage(env, shell, l, u) {
   const b = '<form class="n35-f" method="get" action="' + P + '/tools/price-per-m2/"><label for="n35pm">' + esc(t(l, 'pm_mk')) + '<select id="n35pm" name="m" required>' + opt + '</select></label>' +
     '<label for="n35pp">' + esc(t(l, 'pm_p')) + (m ? ' (' + esc(m.currency) + ')' : '') + '<input id="n35pp" name="p" type="number" min="1" step="any" inputmode="decimal" required value="' + (pr > 0 ? esc(pr) : '') + '"></label>' +
     '<label for="n35ps">' + esc(t(l, 'pm_s')) + '<input id="n35ps" name="s" type="number" min="1" step="any" inputmode="decimal" required value="' + (sz > 0 ? esc(sz) : '') + '"></label><button class="n35-b" type="submit">' + esc(t(l, 'pm_go')) + '</button></form>' + res +
-    '<p class="n35-note">' + esc(tf(l, 'pm_note', { d: fdt(D && D.built, l) })) + ' ' + esc(t(l, 'pm_meth')) + ' <a href="/data/n35b-ppm.json">n35b-ppm.json</a></p>' +
+    '<p class="n35-note">' + esc(tf(l, 'pm_note', { d: fdt(D && D.built, l) })) + ' ' + esc(t(l, 'pm_meth')) + ' <a href="/data/n35b.json">n35b.json</a></p>' +
     '<h2>' + esc(t(l, 'pm_tbl')) + '</h2><div class="n35-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'pm_tbl')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'pm_mk')) + '</th><th scope="col">' + esc(t(l, 'pm_th_n')) + '</th><th scope="col">' + esc(t(l, 'pm_th_med')) + '</th><th scope="col">' + esc(t(l, 'pm_th_ci')) + '</th></tr></thead><tbody>' +
     M.map(x => '<tr><td><a href="' + P + '/tools/price-per-m2/?m=' + x.slug + '">' + esc(mkName(x.market, l)) + '</a></td><td class="n">' + nf(x.n, l) + '</td><td class="n">' + nf(x.median, l) + ' ' + esc(x.currency) + '</td><td class="n">' + nf(x.ci95[0], l) + ' – ' + nf(x.ci95[1], l) + '</td></tr>').join('') + '</tbody></table></div>' +
     '<script>(function(){var s=document.getElementById("n35pm"),p=document.querySelector("label[for=n35pp]");if(!s||!p)return;var C={' + M.map(x => '"' + x.slug + '":"' + x.currency + '"').join(',') + '};function u(){var t=p.firstChild;t.textContent=t.textContent.replace(/\\s*\\(.*\\)$/,"")+" ("+(C[s.value]||"")+")"}s.addEventListener("change",u);u()})()</script>';
@@ -193,7 +193,7 @@ async function pmPage(env, shell, l, u) {
 
 // ------------------------------------------------------------------------------------------------ 20. incident history (section of /engineering/status/)
 export async function incidentsHtml(env, l) {
-  await loadT(env); const D = await file(env, '/data/incidents.json'); if (!D || !T) return '';
+  await loadT(env); const D = ((await file(env, '/data/n35b.json')) || {}).incidents; if (!D || !T) return '';
   const fdh = s => { if (!s) return ''; try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(s.replace(/Z$/, ':00Z'))); } catch (e) { return s; } };
   const dur = x => { if (!x.end) return '…'; const m = Math.round((Date.parse(x.end.replace(/Z$/, ':00Z')) - Date.parse(x.start.replace(/Z$/, ':00Z'))) / 60000); return m < 1 ? '<1 min' : m < 120 ? m + ' min' : Math.round(m / 60) + ' h'; };
   const S = D.summary || {};
@@ -201,7 +201,7 @@ export async function incidentsHtml(env, l) {
     '<div class="k-table-wrap" tabindex="0" role="region" aria-label="' + esc(t(l, 'in_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'in_when')) + '</th><th scope="col">' + esc(t(l, 'in_what')) + '</th><th scope="col">' + esc(t(l, 'in_imp')) + '</th><th scope="col">' + esc(t(l, 'in_dur')) + '</th><th scope="col">' + esc(t(l, 'in_fix')) + '</th></tr></thead><tbody>' +
     (D.incidents || []).map(x => '<tr id="i-' + esc(x.id) + '"><td><time datetime="' + esc(x.start.replace(/Z$/, ':00Z')) + '">' + esc(fdh(x.start)) + '</time><br><small>' + esc(x.kind) + '</small></td><td lang="en">' + esc(x.what) + '</td><td lang="en">' + esc(x.impact) + '</td><td class="k-n">' + dur(x) + '</td><td lang="en">' + esc(x.fix) +
       ((x.commits || []).filter(Boolean).length ? ' <small>' + x.commits.filter(Boolean).map(c => '<code>' + esc(c) + '</code>').join(' ') + '</small>' : '') + '</td></tr>').join('') +
-    '</tbody></table></div><p class="k-xs"><a href="/data/incidents.json">' + esc(t(l, 'in_json')) + '</a> · <a href="/data/deploys.json">deploys.json</a> · <a href="/data/monitoring.json">monitoring.json</a></p></section>';
+    '</tbody></table></div><p class="k-xs"><a href="/data/n35b.json">' + esc(t(l, 'in_json')) + '</a> · <a href="/data/deploys.json">deploys.json</a> · <a href="/data/monitoring.json">monitoring.json</a></p></section>';
 }
 
 // ------------------------------------------------------------------------------------------------ routes
