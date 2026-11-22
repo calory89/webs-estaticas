@@ -152,8 +152,6 @@ async function escPage(env, shell, l, u) {
 }
 
 // ------------------------------------------------------------------------------------------------ 4. developer signals
-const CRC = (() => { const a = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; a[n] = c >>> 0; } return a; })();
-const crc32 = s => { let c = 0xFFFFFFFF; for (const b of new TextEncoder().encode(s)) c = CRC[(c ^ b) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
 const SK = l => t(l, 'sk') || {};
 function evRow(l, e, withDev, names) {
   const k = SK(l)[e.k] || e.k;
@@ -168,9 +166,9 @@ function evRow(l, e, withDev, names) {
 async function sigPage(env, shell, l, u, dv) {
   const ix = await file(env, '/data/n35a/signals-index.json'); if (!ix) return null;
   const k = ix.kinds.includes(u.searchParams.get('k')) ? u.searchParams.get('k') : '';
-  const meth = sec(t(l, 'method'), paras(l, 's_m') + '<ul>' + Object.entries(ix.sources).map(([a, b]) => '<li>' + esc(a.split('|').map(x => SK(l)[x] || x).join(', ')) + ': <code>' + esc(b) + '</code></li>').join('') + '</ul>') + files(l, ['/data/n35a/signals-index.json', '/data/n35a/signals/00.json', '/open/n35a-build.py']);
+  const meth = sec(t(l, 'method'), paras(l, 's_m') + '<ul>' + Object.entries(ix.sources).map(([a, b]) => '<li>' + esc(a.split('|').map(x => SK(l)[x] || x).join(', ')) + ': <code>' + esc(b) + '</code></li>').join('') + '</ul>') + files(l, ['/data/n35a/signals-index.json', '/data/n35a/signals.json', '/open/n35a-build.py']);
   if (dv) {
-    const sh = await file(env, '/data/n35a/signals/' + String(crc32(dv) % 16).padStart(2, '0') + '.json'), x = sh && sh.p && sh.p[dv];
+    const sh = await file(env, '/data/n35a/signals.json'), x = sh && sh.p && sh.p[dv];
     if (!x) return null;
     const c = {}; x.e.forEach(e => { c[e.k] = (c[e.k] || 0) + 1; });
     const es = x.e.filter(e => !k || e.k === k);

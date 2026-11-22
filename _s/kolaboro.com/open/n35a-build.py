@@ -27,7 +27,7 @@ if CHECK: ARGS.remove('--check')
 D = os.path.abspath(ARGS[0] if ARGS else '_s/kolaboro.com/data')
 OUTD = tempfile.mkdtemp(prefix='n35a-check-') if CHECK else D
 O = os.path.join(OUTD, 'n35a')
-os.makedirs(os.path.join(O, 'signals'), exist_ok=True)
+os.makedirs(O, exist_ok=True)
 def rj(p, default=None):
     p = os.path.join(D, p)
     return json.load(open(p, encoding='utf-8')) if os.path.exists(p) else default
@@ -289,7 +289,7 @@ for pid, x in DR['projects'].items():
     for c in x.get('changes', []):
         add(p['dvs'], c.get('first_seen'), 'page_change', c.get('label', c.get('f')), p['s'], None, {'a': c.get('from'), 'b': c.get('to')})
 KINDS = ['added', 'moved_later', 'moved_earlier', 'permit', 'register', 'court', 'source_gone', 'page_change', 'verified', 'contradicted', 'completed']
-idx = {'v': 'n35a-signals-1', 'built': BUILT, 'licence': LIC, 'kinds': KINDS, 'shard_rule': 'CRC-32 (zlib) of the developer slug, mod 16', 'developers': {}, 'counts': Counter(), 'latest': []}
+idx = {'v': 'n35a-signals-1', 'built': BUILT, 'licence': LIC, 'kinds': KINDS, 'developers': {}, 'counts': Counter(), 'latest': []}
 shards = defaultdict(dict); allev = []
 for dv, es in ev.items():
     es = sorted(es, key=lambda e: (e['d'], e['k'], e.get('s', ''), e['t']), reverse=True)
@@ -305,7 +305,7 @@ for dv, es in ev.items():
     idx['counts'].update(c)
     for e in out:
         if e['k'] not in ('added', 'verified'): allev.append(dict(e, dv=dv))
-for i in range(16): wj('signals/%02d.json' % i, {'v': 'n35a-signals-1', 'p': shards.get(i, {})})
+wj('signals.json', {'v': 'n35a-signals-1', 'p': {k: v for i in range(16) for k, v in shards.get(i, {}).items()}})   # one file (the Pages deployment has a file count limit)
 idx['counts'] = dict(idx['counts'])
 idx['latest'] = sorted(allev, key=lambda e: (e['d'], e['dv'], e['k'], e.get('s', '')), reverse=True)[:150]
 idx['sources'] = {'added|moved_later|moved_earlier|permit|verified|contradicted|completed': '/data/n34a/track-record.json (our dated snapshots)', 'register': '/data/register-changes.json',
