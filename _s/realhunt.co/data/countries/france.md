@@ -1,8 +1,8 @@
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 22 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/france · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/france · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 | Taxes and fees to buy | 7–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer. |
 | Yearly property tax | Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%. |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 

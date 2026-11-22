@@ -1,8 +1,8 @@
 # Casas baratas en Colombia: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 3 casas en venta en Colombia, revisadas una a una por una persona. En Colombia, el precio de salida mediano de esas 3 casas es de 176.300 € (1.377 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 165.200 € y la más cara, 203.500 €. Con 3 casas la muestra es pequeña, así que la mediana de Colombia es solo orientativa.
+A 22 de noviembre de 2026, RealHunt publica 3 casas en venta en Colombia, revisadas una a una por una persona. En Colombia, el precio de salida mediano de esas 3 casas es de 176.300 € (1.377 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 165.200 € y la más cara, 203.500 €. Con 3 casas la muestra es pequeña, así que la mediana de Colombia es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/colombia · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/colombia · Actualizado el 22 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/colombia.json · PDF: https://realhunt.co/data/countries/colombia.es.pdf
 
 ## Datos clave
@@ -17,7 +17,7 @@ También en JSON: https://realhunt.co/data/countries/colombia.json · PDF: https
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | ¿Puede comprar un extranjero? | Sí. Una vivienda comprada por un extranjero cuenta como inversión extranjera, que no necesita autorización previa y recibe el mismo trato que la inversión de los residentes. Cuando el dinero entra por el mercado cambiario, la declaración de cambio sirve como su registro ante el Banco de la República. |
 | Impuesto anual sobre la vivienda | Impuesto predial unificado: cada municipio fija la tarifa entre el 5 y el 16 por mil del avalúo catastral. |
-| Fecha de estas cifras | 21 de noviembre de 2026 |
+| Fecha de estas cifras | 22 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

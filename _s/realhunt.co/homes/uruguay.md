@@ -1,8 +1,8 @@
 ## Houses for sale in Uruguay
 
-Updated 21 November 2026. Newest home added 20 November 2026.
+Updated 22 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 4 houses for sale in Uruguay today, priced from €150,300 to €186,300. The cheapest costs €150,300: [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), in La Aguada (100 m², 3 bedrooms). The median price is €180,300 (€1,649/m²), against €93,200 (€1,221/m²) for the 622 homes on RealHunt in 30 countries.
+RealHunt lists 4 houses for sale in Uruguay today, priced from €150,300 to €186,300. The cheapest costs €150,300: [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), in La Aguada (100 m², 3 bedrooms). The median price is €180,300 (€1,649/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
 
 Homes
 4
@@ -26,14 +26,14 @@ Buying costs
 5–8%
 
 Data of
-21 Nov 2026
+22 Nov 2026
 
 ### The 4 homes, best score first
 
-- [Score 85New€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 1 day on RealHuntAsking US$198,000 (about €180,300).](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [Score 85New€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 1 day on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Score 82New€150,300Recently built three-bed house three blocks from the beach in La Paloma, RochaLa Paloma, Rocha90 m² · 3 bed · €1,670/m² · 1 day on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
-- [Score 82New€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 3 days on RealHuntAsking US$205,000 (about €186,300) for a single-storey brick house of 113 m² on a 475 m² plot in Colonia del Sacramento, the old Portuguese…](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Score 85New€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 2 days on RealHuntAsking US$198,000 (about €180,300).](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [Score 85New€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 2 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Score 82New€150,300Recently built three-bed house three blocks from the beach in La Paloma, RochaLa Paloma, Rocha90 m² · 3 bed · €1,670/m² · 2 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
+- [Score 82New€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 4 days on RealHuntAsking US$205,000 (about €186,300) for a single-storey brick house of 113 m² on a 475 m² plot in Colonia del Sacramento, the old Portuguese…](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 ### Compare the 4 homes, cheapest first
 
@@ -101,11 +101,11 @@ By budget [Under €200,000 4](https://realhunt.co/homes/uruguay/under-200000)
 
 By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-uruguay) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-uruguay)
 
-By country [Spain 135](https://realhunt.co/homes/spain) [Italy 84](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from infocasas.com.uy (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Uruguay](https://realhunt.co/alerts?country=Uruguay) · [Filter and sort these homes](https://realhunt.co/?country=Uruguay#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Uruguay](https://realhunt.co/sitemap/uruguay)
 
 ---
-Source: https://realhunt.co/homes/uruguay (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/uruguay (RealHunt, 2026-11-22). Licence CC BY 4.0: quote it with a link to the page.

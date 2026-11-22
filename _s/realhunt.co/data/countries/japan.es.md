@@ -1,8 +1,8 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 38 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 38 casas es de 54.280 € (468 € por m², calculado con las 22 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 159.600 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 22 de noviembre de 2026, RealHunt publica 38 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 38 casas es de 54.280 € (468 € por m², calculado con las 22 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 159.600 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 22 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia. |
 | Impuesto anual sobre la vivienda | El impuesto sobre bienes inmuebles (fixed asset tax) es del 1,4% del valor tasado por la Administración, más el impuesto de urbanismo de hasta el 0,3% en zonas urbanas, y las parcelas residenciales pequeñas tienen una base imponible reducida. |
-| Fecha de estas cifras | 21 de noviembre de 2026 |
+| Fecha de estas cifras | 22 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

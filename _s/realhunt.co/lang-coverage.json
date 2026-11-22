@@ -1,30 +1,30 @@
 {
- "total": 2824,
+ "total": 2814,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 632,
+   "pages": 629,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 58,
-    "feature": 211,
+    "band": 57,
+    "feature": 212,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 64,
+    "regionBand": 63,
     "region": 60,
-    "town": 7
+    "town": 6
    },
    "by_country": {
-    "spain": 100,
-    "italy": 98,
-    "united-states": 47,
+    "spain": 99,
+    "italy": 97,
+    "united-states": 48,
     "denmark": 34,
     "france": 38,
     "sweden": 41,
@@ -44,33 +44,32 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "slovenia": 2,
     "all countries": 60
    },
-   "homes": 622,
-   "homes_with_title": 622,
+   "homes": 615,
+   "homes_with_title": 615,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 318,
+   "pages": 314,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
     "ccyBand": 14,
-    "band": 58,
+    "band": 57,
     "setting": 24,
     "ptype": 11,
     "beds": 29,
     "area": 22,
-    "regionBand": 64,
+    "regionBand": 63,
     "region": 60,
-    "town": 7
+    "town": 6
    },
    "by_country": {
-    "spain": 66,
-    "italy": 56,
+    "spain": 65,
+    "italy": 55,
     "united-states": 26,
     "denmark": 17,
     "france": 15,
@@ -91,38 +90,37 @@
     "uruguay": 2,
     "colombia": 2,
     "czech-republic": 2,
-    "slovenia": 2,
     "all countries": 8
    },
-   "homes": 622,
-   "homes_with_title": 622,
+   "homes": 615,
+   "homes_with_title": 615,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 632,
+   "pages": 629,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 58,
-    "feature": 211,
+    "band": 57,
+    "feature": 212,
     "setting": 24,
     "ptype": 11,
     "combo": 54,
     "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 64,
+    "regionBand": 63,
     "region": 60,
-    "town": 7
+    "town": 6
    },
    "by_country": {
-    "spain": 100,
-    "italy": 98,
-    "united-states": 47,
+    "spain": 99,
+    "italy": 97,
+    "united-states": 48,
     "denmark": 34,
     "france": 38,
     "sweden": 41,
@@ -142,11 +140,10 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "slovenia": 2,
     "all countries": 60
    },
-   "homes": 622,
-   "homes_with_title": 622,
+   "homes": 615,
+   "homes_with_title": 615,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-fr.xml"
@@ -154,29 +151,29 @@
   "nl": {
    "pages": 621,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 58,
-    "feature": 211,
+    "band": 57,
+    "feature": 212,
     "setting": 22,
     "ptype": 11,
     "combo": 54,
     "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 60,
-    "region": 55,
-    "town": 7
+    "regionBand": 61,
+    "region": 56,
+    "town": 6
    },
    "by_country": {
-    "spain": 98,
-    "italy": 98,
-    "united-states": 43,
+    "spain": 99,
+    "italy": 97,
+    "united-states": 44,
     "denmark": 34,
     "france": 38,
-    "sweden": 38,
+    "sweden": 39,
     "japan": 49,
     "poland": 14,
     "greece": 40,
@@ -193,25 +190,12 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "slovenia": 2,
     "all countries": 60
    },
-   "homes": 622,
-   "homes_with_title": 622,
-   "not_published": 11,
+   "homes": 615,
+   "homes_with_title": 615,
+   "not_published": 8,
    "not_published_sample": [
-    {
-     "path": "/homes/spain/tarragona/under-100000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/spain/valencia/under-100000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/sweden/gavleborg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/sweden/kronoberg",
      "why": "over the page budget of the language (620)"
@@ -250,29 +234,29 @@
   "pl": {
    "pages": 621,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 58,
-    "feature": 211,
+    "band": 57,
+    "feature": 212,
     "setting": 22,
     "ptype": 11,
     "combo": 54,
     "beds": 29,
     "area": 22,
     "near": 12,
-    "regionBand": 60,
-    "region": 55,
-    "town": 7
+    "regionBand": 61,
+    "region": 56,
+    "town": 6
    },
    "by_country": {
-    "spain": 98,
-    "italy": 98,
-    "united-states": 43,
+    "spain": 99,
+    "italy": 97,
+    "united-states": 44,
     "denmark": 34,
     "france": 38,
-    "sweden": 38,
+    "sweden": 39,
     "japan": 49,
     "poland": 14,
     "greece": 40,
@@ -289,25 +273,12 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "slovenia": 2,
     "all countries": 60
    },
-   "homes": 622,
-   "homes_with_title": 622,
-   "not_published": 11,
+   "homes": 615,
+   "homes_with_title": 615,
+   "not_published": 8,
    "not_published_sample": [
-    {
-     "path": "/homes/spain/tarragona/under-100000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/spain/valencia/under-100000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/sweden/gavleborg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/sweden/kronoberg",
      "why": "over the page budget of the language (620)"
@@ -345,9 +316,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 632,
-  "spanish_pages_linked": 632
+  "english_pages_linked": 629,
+  "spanish_pages_linked": 629
  },
- "home_pages_linked": 1226,
+ "home_pages_linked": 1210,
  "failures": []
 }

@@ -4,7 +4,7 @@ Trust
 
 RealHunt publishes figures it computes from its own listings and buying rules it compiles from named sources. Nobody can pay to change a score, a ranking or a figure, and errors are corrected on the page with its date.
 
-Last reviewed: 21 November 2026
+Last reviewed: 22 November 2026
 
 ### Who publishes RealHunt
 
@@ -52,4 +52,4 @@ Homes are added and removed every day, and the data pages are recomputed with ea
 Text, figures, charts and tables may be quoted with a link to the page they come from (data pages: Creative Commons BY 4.0). Photos belong to the original listings and are not ours to license. [Press page](https://realhunt.co/press) · [For AI assistants](https://realhunt.co/for-ai).
 
 ---
-Source: https://realhunt.co/editorial-policy (RealHunt, 2026-11-21)
+Source: https://realhunt.co/editorial-policy (RealHunt, 2026-11-22)

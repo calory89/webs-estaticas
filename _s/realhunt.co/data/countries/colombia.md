@@ -1,8 +1,8 @@
 # Cheap homes in Colombia: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
+On 22 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/colombia · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/colombia · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/colombia.json · PDF: https://realhunt.co/data/countries/colombia.pdf
 
 ## Key facts
@@ -17,7 +17,7 @@ Also as JSON: https://realhunt.co/data/countries/colombia.json · PDF: https://r
 | Median RealHunt score (70 to 98) | 86 |
 | Can foreigners buy? | Yes. A home bought by a foreigner counts as foreign investment, which needs no prior authorization and is treated the same as investment by residents. When the money comes in through the foreign exchange market, the exchange declaration serves as its registration with the Banco de la República. |
 | Yearly property tax | Impuesto predial unificado: each municipality sets the rate between 5 and 16 per thousand of the cadastral value (avalúo catastral). |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 

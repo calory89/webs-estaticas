@@ -1,8 +1,8 @@
 # Cheap homes in Slovenia: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 3 homes for sale in Slovenia, each one checked by a person. In Slovenia, the median asking price of those 3 homes is €229,000 (€1,346 per m², from the 3 homes with a known size); the cheapest costs €105,000 and the most expensive €245,000. With 3 homes this is a small sample, so the median for Slovenia is a rough guide.
+On 22 November 2026, RealHunt lists 3 homes for sale in Slovenia, each one checked by a person. In Slovenia, the median asking price of those 3 homes is €229,000 (€1,346 per m², from the 3 homes with a known size); the cheapest costs €105,000 and the most expensive €245,000. With 3 homes this is a small sample, so the median for Slovenia is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/slovenia · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/slovenia · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https://realhunt.co/data/countries/slovenia.pdf
 
 ## Key facts
@@ -17,7 +17,7 @@ Also as JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https://r
 | Median RealHunt score (70 to 98) | 83 |
 | Can foreigners buy? | Yes for citizens of EU, EEA and OECD countries (such as the United States, the United Kingdom and Canada), who buy like Slovenians. Citizens of EU candidate countries (North Macedonia, Serbia, Montenegro, Albania, Ukraine, Moldova, Bosnia and Herzegovina and Georgia) first need a decision confirming reciprocity, and citizens of other countries, such as China and Russia, cannot buy, only inherit where reciprocity exists. |
 | Yearly property tax | The direct user of the home, usually the owner, pays a yearly fee for the use of building land (nadomestilo za uporabo stavbnega zemljišča, NUSZ), set by each municipality's ordinance and assessed once a year by the tax administration (FURS); owners of holiday homes also pay property tax (davek od premoženja). |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 

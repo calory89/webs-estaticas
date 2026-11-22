@@ -2,9 +2,9 @@
 
 The home with the lowest asking price per square metre in Europe on RealHunt is Extensively renovated 1945 house on 2,800 m² of garden and woodland in Markaryd, Kronoberg, Småland, Sweden: €78,000 for 800 m², €98/m². By country, the lowest median price per m² is in Bulgaria (€740/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 533 homes in 17 European countries whose listing gives a size of at least 20 m², each checked by a person, 21 November 2026.
+From 533 homes in 17 European countries whose listing gives a size of at least 20 m², each checked by a person, 22 November 2026.
 
-Updated 21 November 2026. Source: RealHunt, https://realhunt.co/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.csv
+Updated 22 November 2026. Source: RealHunt, https://realhunt.co/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.csv
 
 ## The table
 

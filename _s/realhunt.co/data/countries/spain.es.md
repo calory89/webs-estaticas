@@ -1,8 +1,8 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 21 de noviembre de 2026, RealHunt publica 191 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 191 casas es de 97.000 € (1.217 € por m², calculado con las 187 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 22 de noviembre de 2026, RealHunt publica 191 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 191 casas es de 97.000 € (1.217 € por m², calculado con las 187 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 21 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 22 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 | Impuestos y gastos de compra | 7,5–14% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, sin restricciones en la actualidad; el gobierno ha propuesto un impuesto del 100% sobre (o prohibición de) compradores no residentes no comunitarios, no promulgado. |
 | Impuesto anual sobre la vivienda | IBI 0,4-1,1% del valor catastral (municipal), más imputación de rentas en el IRPF/IRNR si no está alquilada. |
-| Fecha de estas cifras | 21 de noviembre de 2026 |
+| Fecha de estas cifras | 22 de noviembre de 2026 |
 
 ## Gastos e impuestos
 
@@ -1482,7 +1482,7 @@ https://realhunt.co/es/deal/es-terrassa-169k-923454
 
 ### Dúplex de dos dormitorios con jardín privado y piscina compartida en Costa de Antigua
 
-180.000 € · Costa de Antigua, Fuerteventura · 61 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
+178.000 € · Costa de Antigua, Fuerteventura · 61 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
 
 Una vivienda de dos plantas de aproximadamente 61 m2 en el complejo Los Soles en la costa este de Fuerteventura, a pocos minutos de Caleta de Fuste y sus playas. La planta baja es un salón luminoso con una cocina moderna abierta y un aseo de invitados, la planta superior tiene dos dormitorios y un baño completo. La terraza-jardín trasera privada se abre hacia la piscina comunitaria, que según el anuncio ha sido recientemente renovada y tiene duchas y aseos. Se describe como en excelente estado y lista para entrar a vivir. Las cuotas de comunidad no se indican en el anuncio, así que pregunte antes de hacer una oferta.
 

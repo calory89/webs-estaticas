@@ -29,8 +29,8 @@ Tax on rental income: Non-residents declare Dutch property in box 3, where tax i
 
 ### Best homes in the Netherlands
 
-- [€299,000 · Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619) · Reigersbos, Amsterdam · score 94 · 73 m² · 2 bed
 - [€325,000 · 107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · score 94 · 107 m² · 3 bed
+- [€299,000 · Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619) · Reigersbos, Amsterdam · score 94 · 73 m² · 2 bed
 - [€299,000 · Three-room flat with a 14 m² south terrace next to Reigersbos metro](https://realhunt.co/deal/nl-amsterdam-299k-968188) · Reigersbos, Amsterdam · score 93 · 72 m² · 2 bed
 - [€335,000 · 93 m² four-room flat with a 13.5 m² balcony by Nelson Mandela Park](https://realhunt.co/deal/nl-amsterdam-335k-962495) · Nelson Mandelapark, Amsterdam · score 90 · 93 m² · 3 bed
 - [€300,000 · Top-floor flat under the eaves with skylights near the Gaasperplas](https://realhunt.co/deal/nl-amsterdam-300k-930369) · Gein, Amsterdam · score 90 · 72 m² · 2 bed
@@ -66,4 +66,4 @@ Tax on rental income: Non-residents declare Dutch property in box 3, where tax i
 Who writes this. RealHunt Research is the name RealHunt publishes its own studies and guides under; RealHunt is run by Equinox Investment Group LLC, founded by Carlos de Ory Gordillo. Rules, taxes and costs are compiled from the sources listed on this page; prices come from the homes listed on RealHunt. General information, not legal or tax advice. [Editorial policy and corrections](https://realhunt.co/editorial-policy) · [How the score works](https://realhunt.co/method) · [Who we are](https://realhunt.co/about)
 
 ---
-Source: https://realhunt.co/guide/netherlands (RealHunt, 2026-11-21)
+Source: https://realhunt.co/guide/netherlands (RealHunt, 2026-11-22)

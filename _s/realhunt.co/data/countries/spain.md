@@ -1,8 +1,8 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 191 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 191 homes is €97,000 (€1,217 per m², from the 187 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 22 November 2026, RealHunt lists 191 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 191 homes is €97,000 (€1,217 per m², from the 187 homes with a known size); the cheapest costs €38,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/spain · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/spain · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 | Taxes and fees to buy | 7.5–14% of the price (as of 2026) |
 | Can foreigners buy? | Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted. |
 | Yearly property tax | IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes. |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 
@@ -1482,7 +1482,7 @@ https://realhunt.co/deal/es-terrassa-169k-923454
 
 ### Two-bedroom duplex with private garden and shared pool in Costa de Antigua
 
-€180,000 · Costa de Antigua, Fuerteventura · 61 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-18
+€178,000 · Costa de Antigua, Fuerteventura · 61 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-18
 
 A two-floor home of about 61 m2 in the Los Soles complex on the east coast of Fuerteventura, a few minutes from Caleta de Fuste and its beaches. Downstairs is a bright living room with an open modern kitchen and a guest toilet, upstairs two bedrooms and a full bathroom. The private rear terrace garden opens towards the communal pool, which the advert says was recently renovated and has showers and toilets. Described as in excellent condition and ready to move into. Community fees are not stated in the advert, so ask before making an offer.
 

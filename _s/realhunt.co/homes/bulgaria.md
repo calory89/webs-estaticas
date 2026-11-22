@@ -1,8 +1,8 @@
 ## Apartments for sale in Bulgaria
 
-Updated 21 November 2026. Newest home added 18 November 2026.
+Updated 22 November 2026. Newest home added 18 November 2026.
 
-RealHunt lists 6 apartments for sale in Bulgaria today, priced from €58,900 to €89,000. The cheapest costs €58,900: [Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u), in Byala (53 m², 1 bedroom). The median price is €69,000 (€759/m²), against €93,200 (€1,221/m²) for the 622 homes on RealHunt in 30 countries.
+RealHunt lists 6 apartments for sale in Bulgaria today, priced from €58,900 to €89,000. The cheapest costs €58,900: [Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u), in Byala (53 m², 1 bedroom). The median price is €69,000 (€759/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
 Can you buy here? Read this first
 Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route.
 
@@ -33,16 +33,16 @@ Foreign buyers
 Some limits
 
 Data of
-21 Nov 2026
+22 Nov 2026
 
 ### The 6 homes, best score first
 
-- [Score 94€66,000Furnished two-bedroom flat with a sea view in a gated complex in KavarnaKavarna Paradise, Kavarna (Black Sea)90 m² · 2 bed · €733/m² · 38 days on RealHuntA spacious 89.5 m² flat on the third floor of a five-storey building in the well-kept gated complex Kavarna Paradise, a 3-minute walk from the…](https://realhunt.co/deal/bg-kavarna-66k-89698)
-- [Score 93€69,000Two-bedroom flat with two sea-panorama terraces in Kavarna HillsKavarna Hills, Kavarna (Black Sea)100 m² · 2 bed · €690/m² · 38 days on RealHuntA furnished 99.6 m² flat on the fourth of six floors in a 2008 brick building in the Kavarna Hills complex, in the seaside part of town: an…](https://realhunt.co/deal/bg-kavarna-hills-69k-1606144)
-- [Score 93€70,000Furnished two-bedroom flat with a sea-view terrace 300 m from the beach in KavarnaKavarna, Kavarna (Black Sea)99 m² · 2 bed · €707/m² · 38 days on RealHuntA 99 m² flat on the fifth of six floors, about 300 m from the beach: a hallway, a spacious living room with a kitchen, two fully equipped…](https://realhunt.co/deal/bg-kavarna-70k-1672825)
-- [Score 92€58,900Sea-view apartment with pool on Bulgaria's Black Sea coastByala, Varna53 m² · 1 bed · €1,111/m² · 47 days on RealHuntA finished one-bedroom apartment of 53 m² in a gated complex in Byala, 50 km south of Varna on the Black Sea, with a panoramic terrace looking…](https://realhunt.co/deal/bg-byala-58k-fbw62u)
-- [Score 92€66,000Ready-to-move-in two-bedroom flat with a sea-view terrace in KavarnaKavarna Paradise, Kavarna (Black Sea)87 m² · 2 bed · €759/m² · 38 days on RealHuntAn 86.5 m² flat on the ground floor of a well-maintained 2007 complex, a 3-minute walk from the beach: an entrance hall, a living room with a…](https://realhunt.co/deal/bg-kavarna-66k-89682)
-- [Score 84New€89,000Sea-view one-bedroom flat with pool and no maintenance fee in Sveti VlasSveti Vlas, Burgas64 m² · 1 bed · €1,391/m² · 3 days on RealHuntA furnished 64 m² flat (57 m² net) on the 2nd floor of a small three-storey building in Sveti Vlas, about 300 m from the beach.](https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034)
+- [Score 94€66,000Furnished two-bedroom flat with a sea view in a gated complex in KavarnaKavarna Paradise, Kavarna (Black Sea)90 m² · 2 bed · €733/m² · 39 days on RealHuntA spacious 89.5 m² flat on the third floor of a five-storey building in the well-kept gated complex Kavarna Paradise, a 3-minute walk from the…](https://realhunt.co/deal/bg-kavarna-66k-89698)
+- [Score 93€69,000Two-bedroom flat with two sea-panorama terraces in Kavarna HillsKavarna Hills, Kavarna (Black Sea)100 m² · 2 bed · €690/m² · 39 days on RealHuntA furnished 99.6 m² flat on the fourth of six floors in a 2008 brick building in the Kavarna Hills complex, in the seaside part of town: an…](https://realhunt.co/deal/bg-kavarna-hills-69k-1606144)
+- [Score 93€70,000Furnished two-bedroom flat with a sea-view terrace 300 m from the beach in KavarnaKavarna, Kavarna (Black Sea)99 m² · 2 bed · €707/m² · 39 days on RealHuntA 99 m² flat on the fifth of six floors, about 300 m from the beach: a hallway, a spacious living room with a kitchen, two fully equipped…](https://realhunt.co/deal/bg-kavarna-70k-1672825)
+- [Score 92€58,900Sea-view apartment with pool on Bulgaria's Black Sea coastByala, Varna53 m² · 1 bed · €1,111/m² · 48 days on RealHuntA finished one-bedroom apartment of 53 m² in a gated complex in Byala, 50 km south of Varna on the Black Sea, with a panoramic terrace looking…](https://realhunt.co/deal/bg-byala-58k-fbw62u)
+- [Score 92€66,000Ready-to-move-in two-bedroom flat with a sea-view terrace in KavarnaKavarna Paradise, Kavarna (Black Sea)87 m² · 2 bed · €759/m² · 39 days on RealHuntAn 86.5 m² flat on the ground floor of a well-maintained 2007 complex, a 3-minute walk from the beach: an entrance hall, a living room with a…](https://realhunt.co/deal/bg-kavarna-66k-89682)
+- [Score 84New€89,000Sea-view one-bedroom flat with pool and no maintenance fee in Sveti VlasSveti Vlas, Burgas64 m² · 1 bed · €1,391/m² · 4 days on RealHuntA furnished 64 m² flat (57 m² net) on the 2nd floor of a small three-storey building in Sveti Vlas, about 300 m from the beach.](https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034)
 
 ### Compare the 6 homes, cheapest first
 
@@ -127,11 +127,11 @@ By feature and budget [With a pool under €100,000 3](https://realhunt.co/cheap
 
 Neighbouring countries [Greece 27](https://realhunt.co/homes/greece)
 
-By country [Spain 135](https://realhunt.co/homes/spain) [Italy 84](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from bulgarianproperties.com (3), homes.bg (2), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Bulgaria](https://realhunt.co/alerts?country=Bulgaria) · [Filter and sort these homes](https://realhunt.co/?country=Bulgaria#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Bulgaria](https://realhunt.co/sitemap/bulgaria)
 
 ---
-Source: https://realhunt.co/homes/bulgaria (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/bulgaria (RealHunt, 2026-11-22). Licence CC BY 4.0: quote it with a link to the page.

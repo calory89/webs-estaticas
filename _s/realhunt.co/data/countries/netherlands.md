@@ -1,8 +1,8 @@
 # Cheap homes in the Netherlands: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
+On 22 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/netherlands · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/netherlands · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/netherlands.json · PDF: https://realhunt.co/data/countries/netherlands.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/netherlands.json · PDF: https:
 | Taxes and fees to buy | 2–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming). |
 | Yearly property tax | Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it. |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 

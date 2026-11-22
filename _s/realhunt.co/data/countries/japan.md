@@ -1,8 +1,8 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 21 November 2026, RealHunt lists 38 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 38 homes is €54,280 (€468 per m², from the 22 homes with a known size); the cheapest costs €7,400 and the most expensive €159,600. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 22 November 2026, RealHunt lists 38 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 38 homes is €54,280 (€468 per m², from the 22 homes with a known size); the cheapest costs €7,400 and the most expensive €159,600. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/japan · Updated 21 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/japan · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency. |
 | Yearly property tax | Fixed asset tax is 1.4% of the government's assessed value, plus city planning tax of up to 0.3% in urban areas, and small residential plots get a lower tax base. |
-| Date of these figures | 21 November 2026 |
+| Date of these figures | 22 November 2026 |
 
 ## Costs and taxes
 
