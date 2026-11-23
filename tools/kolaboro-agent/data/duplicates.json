@@ -288,6 +288,14 @@
   ]
  },
  {
+  "a": "avrupa-konutlari-gunesli-artas",
+  "b": "avrupa-konutlar-sisli-2",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "ellington-sands-i-ellington",
   "b": "ellington-sands-ii",
   "market": "Dubai",
@@ -407,6 +415,14 @@
   "market": "Miami",
   "why": [
    "149 m apart"
+  ]
+ },
+ {
+  "a": "nezihpark-bahcekent-aydur-insaat",
+  "b": "bahcekent-tim",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -3134,6 +3150,46 @@
   "a": "arlington-park-by-majid",
   "b": "arlington-park-ii-by-majid",
   "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "bahce-bahcesehir",
+  "b": "bahceada-bahcesehir",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "bahce-bahcesehir",
+  "b": "levan-bahcesehir",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "bahce-bahcesehir",
+  "b": "parla-bahcesehir",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "gazania-life-1",
+  "b": "gazania-life-2",
+  "market": "Turkey",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "heaven-s-hill-village",
+  "b": "heaven-s-hill-village-ii",
+  "market": "Northern Cyprus",
   "why": [
    "similar name"
   ]
