@@ -531,7 +531,19 @@ async function progBlock(l, env) {
     li('/registers/', tf(l, 'pg_r', { r: nf(g.regs, l), m: nf(g.mk, l) })) +
     li(P + '/data/gaps/#dist', tf(l, 'pg_5', { a: nf(g.five, l), n: nf(g.n, l), p: pct1(g.five, g.n, l) })) +
     li(P + '/data/changes/week/', tf(l, g.w === 1 ? 'pg_w1' : 'pg_wn', { w: nf(g.w, l), p: nf(g.wp, l) })) +
-    '</ul><p class="k-xs" style="margin:8px 0 0">' + esc(t(l, 'pg_n')) + '</p></section>';
+    '</ul><p class="k-xs" style="margin:8px 0 0">' + esc(t(l, 'pg_n')) + '</p></section>' + await todayBlock(l, env);
+}
+// r10u (round 10): /yc/try/ lists what shipped today, one link each, with numbers counted from the published files
+async function todayBlock(l, env) {
+  const g = progStats(), G = await regMap(env), P = pre(l), k = KP ? kpSum(kpRows(null)) : null, li = (h, x) => '<li><a href="' + h + '">' + esc(x) + '</a></li>';
+  return '<section id="n37-shipped" aria-labelledby="n37-shipped-h" style="border:1px solid var(--k-line,#D5DCDB);border-radius:14px;padding:14px 18px;margin:0 0 22px"' + dir(l) + '><h2 id="n37-shipped-h" style="font-size:1.1rem;margin:0 0 6px">' + esc(tf(l, 'yt_h', { d: fd(g.built, l) })) + '</h2><ol style="margin:0;padding-inline-start:22px;line-height:1.7">' +
+    li(P + '/projects/emaar-golf-vale/record/', tf(l, 'yt_rec', { n: nf(g.n, l) })) +
+    (G ? li(P + '/search/?rg=1&amp;so=reg', tf(l, 'yt_rg', { g: nf(G.size, l) })) : '') +
+    (k ? li(P + '/registers/malaysia/', tf(l, 'yt_kp', { e: nf(k.n, l), p: nf(k.pr, l), k: nf(k.late3, l) })) : '') +
+    li(P + '/data/markets/?s=reg', tf(l, 'yt_mc', { m: nf(Object.keys(D.mk).length, l) })) +
+    li(P + '/developers/emaar-properties/#n37-track', t(l, 'yt_dv')) +
+    li(P + '/data/changes/', tf(l, 'yt_ch', { w: nf(g.w, l) })) +
+    '</ol><p class="k-xs" style="margin:8px 0 0"><a href="' + P + '/engineering/#shipped-2026-11-23">' + esc(tf(l, 'yt_all', { n: nf(ITEMS.length, l) })) + '</a></p></section>';
 }
 // r9u (round 9): the Malaysian housing developer register (KPKT TEDUH) on project, record, market and developer pages and on
 // /[l/]registers/malaysia/; register share per developer across markets; /[l/]data/markets/ (markets compared on the 10 key facts and the
@@ -653,7 +665,7 @@ export async function inject(req, u, env, r) {
     const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), l = m[1] || 'en', p = m[2];
     if (!(await load(env))) return r;
     const add = []; let mm;
-    if ((p === 'engineering/' || p === 'yc/') && l === 'en') add.push(['main', 'append', shipped(l)]);
+    if ((p === 'engineering/' || p === 'yc/') && l === 'en') { add.push(['main', 'append', shipped(l)]); if (p === 'yc/') add.push(['section.k27 .k-prose > p', 'after', '<p id="n37-yct" style="border:1px solid var(--k-line,#D5DCDB);border-radius:14px;padding:10px 16px">' + esc(tf(l, 'yt_top', { d: fd(D.built, l), n: nf(ITEMS.length, l) })) + ' <a href="/yc/try/#n37-shipped">' + esc(t(l, 'yt_open')) + '</a> · <a href="#shipped-2026-11-23">' + esc(t(l, 'yt_list')) + '</a></p>']); }   // r10u: today's work at the top of /yc/
     else if (p === 'search/') { await regMap(env);   // r5u: completeness and latest change on each result
       return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37', seTpl(l)); } }).on('ol.n34-res > li > a', { element(e) { const mm2 = /\/projects\/([a-z0-9-]{1,90})\/$/.exec(e.getAttribute('href') || ''), x = mm2 && IX.bySlug.get(mm2[1]); if (x) e.after(seInfo(l, x), { html: true }); } })
         .on('head', { element(e) { e.append(VSC, { html: true }); } }).transform(r);
