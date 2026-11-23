@@ -1,12 +1,12 @@
 {
  "updated": "2026-11-23",
- "projects": 3130,
+ "projects": 3249,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
    "market": "Abu Dhabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 31,
+   "projects": 34,
    "title": {
     "leasehold": 0,
     "known": 11
@@ -32,8 +32,8 @@
    "permit_numbers_published": 3,
    "plans_published": 4,
    "price_usd": {
-    "known": 26,
-    "median": 700000.0,
+    "known": 29,
+    "median": 681000.0,
     "min": 99000.0,
     "max": 2260000.0
    },
@@ -48,7 +48,7 @@
     "2028": 9,
     "2029": 5,
     "2030": 4,
-    "unknown": 6
+    "unknown": 9
    },
    "runs": [
     {
@@ -13063,7 +13063,7 @@
    "updated": "2026-11-23",
    "market": "Lisbon",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -13101,7 +13101,7 @@
    },
    "completion": {
     "2027": 2,
-    "unknown": 8
+    "unknown": 9
    },
    "runs": [
     {
@@ -13856,7 +13856,7 @@
    "updated": "2026-11-23",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 121,
+   "projects": 235,
    "title": {
     "leasehold": 3,
     "known": 31
@@ -13878,13 +13878,13 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 78,
-   "permit_numbers_published": 78,
+   "permit_claims": 192,
+   "permit_numbers_published": 192,
    "plans_published": 6,
    "price_usd": {
-    "known": 113,
-    "median": 125000.0,
-    "min": 34000.0,
+    "known": 227,
+    "median": 112000.0,
+    "min": 16000.0,
     "max": 1095000.0
    },
    "yield": {
@@ -13893,14 +13893,14 @@
     "max": null
    },
    "completion": {
-    "2026": 5,
-    "2027": 16,
-    "2028": 18,
-    "2029": 28,
-    "2030": 23,
-    "2031": 2,
+    "2026": 9,
+    "2027": 25,
+    "2028": 31,
+    "2029": 55,
+    "2030": 45,
+    "2031": 5,
     "2032": 1,
-    "unknown": 28
+    "unknown": 64
    },
    "runs": [
     {
@@ -19269,7 +19269,7 @@
    "updated": "2026-11-23",
    "market": "Portugal",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -19309,7 +19309,7 @@
     "2027": 2,
     "2029": 2,
     "2030": 1,
-    "unknown": 5
+    "unknown": 6
    },
    "runs": [
     {
