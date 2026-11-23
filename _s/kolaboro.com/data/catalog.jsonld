@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-23T13:57:27Z",
+  "@value": "2026-11-23T14:56:23Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -3071,7 +3071,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "73339",
+      "@value": "83276",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3085,7 +3085,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "4660e9bbc5a11f5aa773c6937cc8b81967c08dba654a941d93d0cc30766a08e1"
+      "spdx:checksumValue": "28d92defcbdfcdfe8b6be40b67776de671de9acede588574b6b0c8843737b613"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/site-manifest.json"
@@ -3096,7 +3096,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-16T12:54:40Z",
+    "@value": "2026-11-23T14:55:49Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3134,7 +3134,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "5492",
+      "@value": "5888",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3148,7 +3148,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "d9e540b0335629c2cc6e390957c967fbe65112f9bbc1bb5580000b5cd2fc435e"
+      "spdx:checksumValue": "806f6854f9723f4b8c1cdcb643503331bb46cf6d1009a6dc2706fe968e8afcea"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/builds.json"
@@ -3159,7 +3159,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-16T12:54:47Z",
+    "@value": "2026-11-23T14:55:56Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
