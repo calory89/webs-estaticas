@@ -7939,8 +7939,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 31230-3/03-2029/0214(A)-(S) valid to 2029-03-16; progress 5.00%",
-   "code": "31230-3",
+   "detail": "permit 31230-1/02-2029/0142(A)-(S) valid to 2029-02-24; progress 6.44%; status Lancar",
+   "code": "31230-1",
    "checked": "2026-11-23"
   },
   "pangsapuri-idaman-casuarina-1": {
@@ -8019,8 +8019,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30508-2/01-2029/0064(A)-(S) valid to 2029-01-26; progress 2.73%",
-   "code": "30508-2",
+   "detail": "permit 30508-1/02-2027/0132(A)-(S) valid to 2027-02-06; progress 89.36%; status Lancar",
+   "code": "30508-1",
    "checked": "2026-11-23"
   },
   "residensi-tepian-tasik": {
@@ -8091,8 +8091,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30590-2/11-2028/0955(N)-(S) valid to 2028-11-10; progress 20.00%",
-   "code": "30590-2",
+   "detail": "permit 30590-1/09-2027/0820(A)-(S) valid to 2027-09-05; progress 50.46%; status Lancar",
+   "code": "30590-1",
    "checked": "2026-11-23"
   },
   "pangsapuri-selangorku-vista-azalea": {
@@ -8107,8 +8107,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30240-4/10-2028/0909(N)-(S) valid to 2028-10-30; progress 23.45%",
-   "code": "30240-4",
+   "detail": "permit 30240-3/07-2028/0539(A)-(S) valid to 2028-07-06; progress 62.08%; status Lancar",
+   "code": "30240-3",
    "checked": "2026-11-23"
   },
   "pangsapuri-servis-ceria": {
@@ -8219,8 +8219,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30750-2/07-2028/0541(A)-(S) valid to 2028-07-06; progress 22.17%",
-   "code": "30750-2",
+   "detail": "permit 30750-1/09-2027/0783(A)-(S) valid to 2027-09-01; progress 25.39%; status Lewat",
+   "code": "30750-1",
    "checked": "2026-11-23"
   },
   "perumahan-penjawat-awam-malaysia-ppam-bandar-tun-razak": {
@@ -8435,8 +8435,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30019-3/09-2027/0819(R)-(S) valid to 2027-09-28; progress 59.28%",
-   "code": "30019-3",
+   "detail": "permit 30019-1/06-2027/0429(R)-(S) valid to 2027-06-16; progress 74.76%; status Lewat",
+   "code": "30019-1",
    "checked": "2026-11-23"
   },
   "residensi-padang": {
@@ -8475,8 +8475,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30363-2/06-2027/0396(R)-(S) valid to 2027-06-22; progress 57.95%",
-   "code": "30363-2",
+   "detail": "permit 30363-1/05-2027/0397(R)-(S) valid to 2027-05-07; progress 86.70%; status Lancar",
+   "code": "30363-1",
    "checked": "2026-11-23"
   },
   "residensi-max-ii": {
@@ -8491,8 +8491,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30382-2/06-2027/0413(A)-(S) valid to 2027-06-20; progress 88.17%",
-   "code": "30382-2",
+   "detail": "permit 30382-1/06-2027/0433(R)-(S) valid to 2027-06-20; progress 90.11%; status Lancar",
+   "code": "30382-1",
    "checked": "2026-11-23"
   },
   "residensi-lentera-bangsar": {
@@ -8523,8 +8523,8 @@
    "register": "Malaysia KPKT TEDUH register",
    "item": "advertising and sales permit",
    "status": "active",
-   "detail": "permit 30331-2/01-2027/0085(R)-(S) valid to 2027-01-15; progress 80.00%",
-   "code": "30331-2",
+   "detail": "permit 30331-1/01-2027/0076(R)-(S) valid to 2027-01-12; progress 80.00%; status Lancar",
+   "code": "30331-1",
    "checked": "2026-11-23"
   },
   "amara-residences-ara-damansara": {
@@ -8957,6 +8957,934 @@
    "status": "active",
    "detail": "permit 20199-8/10-2027/0897(N)-(L) valid to 2027-10-27; progress 59.54%; status Lancar",
    "code": "20199-8",
+   "checked": "2026-11-23"
+  },
+  "menara-7-ptb-24669": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20258-2/11-2029/0857(N)-(S) valid to 2029-11-15; progress 0.00%",
+   "code": "20258-2",
+   "checked": "2026-11-23"
+  },
+  "bandar-pengkalan-foresta-residensi-foresta-4": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31371-1/10-2029/0818(N)-(S) valid to 2029-10-30; progress 0.00%",
+   "code": "31371-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-tiara": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31451-1/10-2029/0779(N)-(S) valid to 2029-10-15; progress 0.00%",
+   "code": "31451-1",
+   "checked": "2026-11-23"
+  },
+  "the-celestz-kebun-teh": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31007-2/10-2029/0768(A)-(S) valid to 2029-10-11; progress 0.00%",
+   "code": "31007-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-amora": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30969-2/10-2029/0742(N)-(S) valid to 2029-10-01; progress 0.00%",
+   "code": "30969-2",
+   "checked": "2026-11-23"
+  },
+  "warisan-1-johor-bahru": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31416-1/09-2029/0736(A)-(S) valid to 2029-09-30; progress 0.00%",
+   "code": "31416-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-permata-biru": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31156-1/09-2029/0732(N)-(S) valid to 2029-09-30; progress 17.70%",
+   "code": "31156-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-ion": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30949-2/09-2029/0707(N)-(S) valid to 2029-09-22; progress 20.60%",
+   "code": "30949-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-mutiara-selatan": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31267-1/09-2029/0659(N)-(S) valid to 2029-09-01; progress 5.00%",
+   "code": "31267-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-paragon-mapel": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31366-1/08-2029/0647(A)-(S) valid to 2029-08-25; progress 0.00%",
+   "code": "31366-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-azurit-klebang": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30420-4/08-2029/0628(A)-(S) valid to 2029-08-17; progress 0.77%",
+   "code": "30420-4",
+   "checked": "2026-11-23"
+  },
+  "erinaz-suites-kubang-kerian": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30371-1/08-2029/0584(A)-(S) valid to 2029-08-04; progress 5.00%",
+   "code": "30371-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-jati-de-meru": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30155-2/07-2029/0533(A)-(S) valid to 2029-07-20; progress 32.50%",
+   "code": "30155-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-komersial-atlas": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31367-1/07-2029/0530(A)-(S) valid to 2029-07-19; progress 0.00%",
+   "code": "31367-1",
+   "checked": "2026-11-23"
+  },
+  "ambience-residence": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31375-1/07-2029/0543(N)-(S) valid to 2029-07-21; progress 0.00%",
+   "code": "31375-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-komersial-pinggiran-sungai": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31063-5/07-2029/0506(A)-(S) valid to 2029-07-08; progress 5.00%",
+   "code": "31063-5",
+   "checked": "2026-11-23"
+  },
+  "cantonment-residence": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31193-1/06-2029/0481(A)-(S) valid to 2029-06-30; progress 20.00%",
+   "code": "31193-1",
+   "checked": "2026-11-23"
+  },
+  "skyawani-cassia-residences-1": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31282-1/06-2029/0472(A)-(S) valid to 2029-06-24; progress 0.00%",
+   "code": "31282-1",
+   "checked": "2026-11-23"
+  },
+  "coven-tower": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31100-4/06-2029/0475(A)-(S) valid to 2029-06-25; progress 20.18%",
+   "code": "31100-4",
+   "checked": "2026-11-23"
+  },
+  "residensi-starlight": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31059-1/06-2029/0437(A)-(S) valid to 2029-06-15; progress 5.00%",
+   "code": "31059-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-servis-visi": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31054-1/06-2029/0402(A)-(S) valid to 2029-06-03; progress 5.00%",
+   "code": "31054-1",
+   "checked": "2026-11-23"
+  },
+  "rimbayu-kews": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30871-4/06-2029/0395(N)-(S) valid to 2029-06-02; progress 20.77%",
+   "code": "30871-4",
+   "checked": "2026-11-23"
+  },
+  "residensi-permata": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31124-1/05-2029/0363(A)-(S) valid to 2029-05-18; progress 5.61%",
+   "code": "31124-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-madani-serunai": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30730-2/05-2029/0350(A)-(S) valid to 2029-05-12; progress 0.00%",
+   "code": "30730-2",
+   "checked": "2026-11-23"
+  },
+  "skyawani-pearlmont-residences": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31075-2/05-2029/0334(A)-(S) valid to 2029-05-04; progress 0.00%",
+   "code": "31075-2",
+   "checked": "2026-11-23"
+  },
+  "makmur-plus": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30599-1/04-2029/0299(N)-(S) valid to 2029-04-19; progress 3.54%",
+   "code": "30599-1",
+   "checked": "2026-11-23"
+  },
+  "mutiara-kempas": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31139-1/04-2029/0274(A)-(S) valid to 2029-04-08; progress 0.80%",
+   "code": "31139-1",
+   "checked": "2026-11-23"
+  },
+  "taman-paya-rumput-gemilang": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30801-3/03-2029/0231(A)-(S) valid to 2029-03-24; progress 62.50%",
+   "code": "30801-3",
+   "checked": "2026-11-23"
+  },
+  "keeperz-suites": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31088-2/03-2029/0210(A)-(S) valid to 2029-03-15; progress 5.61%",
+   "code": "31088-2",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-servis-vista": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30944-1/03-2029/0216(A)-(S) valid to 2029-03-17; progress 20.00%",
+   "code": "30944-1",
+   "checked": "2026-11-23"
+  },
+  "apartmen-botanika": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31223-1/03-2029/0199(A)-(S) valid to 2029-03-10; progress 20.66%",
+   "code": "31223-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-sari-hijau-ii": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30966-2/02-2029/0124(A)-(S) valid to 2029-02-11; progress 46.00%",
+   "code": "30966-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-sari-hijau-i": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30966-1/02-2029/0118(A)-(S) valid to 2029-02-10; progress 40.01%",
+   "code": "30966-1",
+   "checked": "2026-11-23"
+  },
+  "puncak-premium": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30496-3/02-2029/0106(N)-(S) valid to 2029-02-08; progress 0.00%",
+   "code": "30496-3",
+   "checked": "2026-11-23"
+  },
+  "taman-hartawan-residen": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31159-1/01-2029/0082(A)-(S) valid to 2029-01-29; progress 0.00%",
+   "code": "31159-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-sempurna": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30482-1/01-2029/0032(A)-(S) valid to 2029-01-08; progress 5.00%",
+   "code": "30482-1",
+   "checked": "2026-11-23"
+  },
+  "trifolia-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30503-2/01-2029/0012(A)-(S) valid to 2029-01-04; progress 8.13%",
+   "code": "30503-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-danga-paragon-1": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31149-1/12-2028/1027(N)-(S) valid to 2028-12-23; progress 12.56%",
+   "code": "31149-1",
+   "checked": "2026-11-23"
+  },
+  "breeze-hill": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31006-2/12-2028/1039(A)-(S) valid to 2028-12-23; progress 20.00%",
+   "code": "31006-2",
+   "checked": "2026-11-23"
+  },
+  "taman-merlimau-mutiara": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30740-4/12-2028/1032(N)-(S) valid to 2028-12-23; progress 23.06%",
+   "code": "30740-4",
+   "checked": "2026-11-23"
+  },
+  "residensi-skyone": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31141-1/12-2028/1036(A)-(S) valid to 2028-12-23; progress 5.00%",
+   "code": "31141-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-permata-indah-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30588-4/12-2028/1037(N)-(S) valid to 2028-12-23; progress 25.57%",
+   "code": "30588-4",
+   "checked": "2026-11-23"
+  },
+  "presint-botani-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31135-7/12-2028/1055(N)-(S) valid to 2028-12-23; progress 23.40%",
+   "code": "31135-7",
+   "checked": "2026-11-23"
+  },
+  "taman-la-casa-ara": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31068-1/12-2028/1005(A)-(S) valid to 2028-12-02; progress 5.45%",
+   "code": "31068-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-tiara-cemerlang-3": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30981-3/11-2028/0961(N)-(S) valid to 2028-11-12; progress 5.00%",
+   "code": "30981-3",
+   "checked": "2026-11-23"
+  },
+  "d-hazelton": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31093-1/11-2028/0947(A)-(S) valid to 2028-11-10; progress 6.71%",
+   "code": "31093-1",
+   "checked": "2026-11-23"
+  },
+  "axis-tower": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31100-3/11-2028/0931(A)-(S) valid to 2028-11-04; progress 20.17%",
+   "code": "31100-3",
+   "checked": "2026-11-23"
+  },
+  "brixton-tower": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31100-2/11-2028/0929(A)-(S) valid to 2028-11-04; progress 20.12%",
+   "code": "31100-2",
+   "checked": "2026-11-23"
+  },
+  "dover-tower": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31100-1/11-2028/0930(A)-(S) valid to 2028-11-04; progress 20.10%",
+   "code": "31100-1",
+   "checked": "2026-11-23"
+  },
+  "the-tenz-kota-setar": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30464-1/11-2028/0959(A)-(S) valid to 2028-11-12; progress 5.00%",
+   "code": "30464-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-sejahtera": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30881-1/11-2028/0919(N)-(S) valid to 2028-11-03; progress 0.00%",
+   "code": "30881-1",
+   "checked": "2026-11-23"
+  },
+  "osk-areca-seremban": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31179-1/11-2028/0920(A)-(S) valid to 2028-11-03; progress 21.53%",
+   "code": "31179-1",
+   "checked": "2026-11-23"
+  },
+  "the-lighthauz": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31088-1/10-2028/0882(A)-(S) valid to 2028-10-21; progress 15.06%",
+   "code": "31088-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-pinegate": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30680-2/10-2028/0839(N)-(S) valid to 2028-10-09; progress 50.04%",
+   "code": "30680-2",
+   "checked": "2026-11-23"
+  },
+  "hijauan-kews": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30871-2/10-2028/0822(N)-(S) valid to 2028-10-07; progress 67.67%",
+   "code": "30871-2",
+   "checked": "2026-11-23"
+  },
+  "soho-sunway-majestic": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31034-1/10-2028/0817(N)-(S) valid to 2028-10-05; progress 5.74%",
+   "code": "31034-1",
+   "checked": "2026-11-23"
+  },
+  "pinnacle-bukit-gambier": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31061-1/09-2028/0781(N)-(S) valid to 2028-09-22; progress 14.74%",
+   "code": "31061-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-rimba": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30898-1/09-2028/0770(A)-(S) valid to 2028-09-17; progress 35.34%",
+   "code": "30898-1",
+   "checked": "2026-11-23"
+  },
+  "taman-pengkalan-impian": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30348-5/09-2028/0749(A)-(S) valid to 2028-09-09; progress 71.30%",
+   "code": "30348-5",
+   "checked": "2026-11-23"
+  },
+  "presint-botani-1": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31135-1/08-2028/0715(A)-(S) valid to 2028-08-28; progress 35.99%",
+   "code": "31135-1",
+   "checked": "2026-11-23"
+  },
+  "skyline-one-sentosa": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31031-1/08-2028/0690(A)-(S) valid to 2028-08-19; progress 7.58%",
+   "code": "31031-1",
+   "checked": "2026-11-23"
+  },
+  "blossom": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30724-1/08-2028/0686(A)-(S) valid to 2028-08-19; progress 2.74%",
+   "code": "30724-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-maxim-pelangi": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31074-1/08-2028/0677(A)-(S) valid to 2028-08-14; progress 20.00%",
+   "code": "31074-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-tiara-cemerlang-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30981-2/08-2028/0673(A)-(S) valid to 2028-08-13; progress 5.00%",
+   "code": "30981-2",
+   "checked": "2026-11-23"
+  },
+  "the-asteriaz-kebun-teh": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31007-1/07-2028/0577(A)-(S) valid to 2028-07-17; progress 30.14%",
+   "code": "31007-1",
+   "checked": "2026-11-23"
+  },
+  "laman-perdana": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20251-3/07-2028/0554(A)-(S) valid to 2028-07-13; progress 84.73%",
+   "code": "20251-3",
+   "checked": "2026-11-23"
+  },
+  "residensi-tiara-cemerlang-1": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30981-1/06-2028/0501(A)-(S) valid to 2028-06-24; progress 26.85%",
+   "code": "30981-1",
+   "checked": "2026-11-23"
+  },
+  "perumahan-makmur-ringlet-jaya": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30237-1/06-2028/0495(A)-(S) valid to 2028-06-22; progress 10.73%",
+   "code": "30237-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-bukit-meldrum": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 31015-1/06-2028/0475(A)-(S) valid to 2028-06-16; progress 21.24%",
+   "code": "31015-1",
+   "checked": "2026-11-23"
+  },
+  "suite-premium-paragon": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30917-1/06-2028/0468(A)-(S) valid to 2028-06-12; progress 21.43%",
+   "code": "30917-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-seri-juru-indah": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30807-1/06-2028/0459(N)-(S) valid to 2028-06-10; progress 62.50%",
+   "code": "30807-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-parkland-permas": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30635-2/05-2028/0421(A)-(S) valid to 2028-05-29; progress 5.00%",
+   "code": "30635-2",
+   "checked": "2026-11-23"
+  },
+  "the-lines-petaling": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30546-1/05-2028/0400(A)-(S) valid to 2028-05-21; progress 0.00%",
+   "code": "30546-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-alora": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30162-2/03-2028/0263(A)-(S) valid to 2028-03-27; progress 78.13%",
+   "code": "30162-2",
+   "checked": "2026-11-23"
+  },
+  "sea-crestz-kuantan-waterfront-resort-city": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30830-1/03-2028/0233(A)-(S) valid to 2028-03-19; progress 32.04%",
+   "code": "30830-1",
+   "checked": "2026-11-23"
+  },
+  "duta-shah-alam": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30075-1/03-2028/0190(A)-(S) valid to 2028-03-06; progress 21.00%",
+   "code": "30075-1",
+   "checked": "2026-11-23"
+  },
+  "qubaz-suites-kuala-terengganu": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30914-1/02-2028/0169(A)-(S) valid to 2028-02-27; progress 28.07%",
+   "code": "30914-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-arden": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30969-1/02-2028/0151(A)-(S) valid to 2028-02-20; progress 20.00%",
+   "code": "30969-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-senibong-mutiara": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30946-1/02-2028/0141(A)-(S) valid to 2028-02-19; progress 37.55%",
+   "code": "30946-1",
+   "checked": "2026-11-23"
+  },
+  "shorea-garden": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30730-1/02-2028/0106(A)-(S) valid to 2028-02-03; progress 67.39%",
+   "code": "30730-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-senyum": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30797-1/01-2028/0065(A)-(S) valid to 2028-01-22; progress 23.13%",
+   "code": "30797-1",
+   "checked": "2026-11-23"
+  },
+  "adison-johor-bahru": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30376-5/01-2028/0059(A)-(S) valid to 2028-01-21; progress 40.33%",
+   "code": "30376-5",
+   "checked": "2026-11-23"
+  },
+  "residensi-perbadanan-islam-teluk-permata": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30588-3/01-2028/0029(A)-(S) valid to 2028-01-08; progress 87.50%",
+   "code": "30588-3",
+   "checked": "2026-11-23"
+  },
+  "centrum-iris": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30401-1/01-2028/0025(A)-(S) valid to 2028-01-07; progress 30.68%",
+   "code": "30401-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-ponderosa": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30684-1/12-2027/1158(N)-(S) valid to 2027-12-17; progress 20.20%",
+   "code": "30684-1",
+   "checked": "2026-11-23"
+  },
+  "taman-gangsa-residen": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30795-1/12-2027/1137(A)-(S) valid to 2027-12-12; progress 88.91%",
+   "code": "30795-1",
+   "checked": "2026-11-23"
+  },
+  "amora-residensi-warisan-9": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30615-1/12-2027/1094(A)-(S) valid to 2027-12-01; progress 38.11%",
+   "code": "30615-1",
+   "checked": "2026-11-23"
+  },
+  "vila-bachang": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30883-1/11-2027/1090(A)-(S) valid to 2027-11-28; progress 85.00%",
+   "code": "30883-1",
+   "checked": "2026-11-23"
+  },
+  "astrum-shah-alam": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30552-2/11-2027/1072(N)-(S) valid to 2027-11-24; progress 38.17%",
+   "code": "30552-2",
+   "checked": "2026-11-23"
+  },
+  "taman-alma-permai": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30836-1/11-2027/1059(N)-(S) valid to 2027-11-20; progress 4.65%",
+   "code": "30836-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-murni": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30530-1/11-2027/1031(N)-(S) valid to 2027-11-10; progress 35.46%",
+   "code": "30530-1",
+   "checked": "2026-11-23"
+  },
+  "bayan-suite": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30737-1/10-2027/0962(A)-(S) valid to 2027-10-21; progress 40.92%",
+   "code": "30737-1",
+   "checked": "2026-11-23"
+  },
+  "scott-logan": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30751-1/09-2027/0873(A)-(S) valid to 2027-09-24; progress 30.60%",
+   "code": "30751-1",
+   "checked": "2026-11-23"
+  },
+  "laman-sunway-6": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30747-1/09-2027/0818(A)-(S) valid to 2027-09-05; progress 55.00%",
+   "code": "30747-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-rambai-indah": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30725-1/07-2027/0653(A)-(S) valid to 2027-07-19; progress 80.00%",
+   "code": "30725-1",
+   "checked": "2026-11-23"
+  },
+  "eden-at-botanica-ct": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30555-1/06-2027/0597(N)-(S) valid to 2027-06-30; progress 39.27%",
+   "code": "30555-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-permata-indah": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30588-1/06-2027/0514(A)-(S) valid to 2027-06-12; progress 87.50%",
+   "code": "30588-1",
+   "checked": "2026-11-23"
+  },
+  "laman-sunway-1": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20231-4/04-2027/0294(N)-(S) valid to 2027-04-03; progress 93.08%",
+   "code": "20231-4",
+   "checked": "2026-11-23"
+  },
+  "avion-daerah-barat-daya": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30544-1/03-2027/0250(A)-(S) valid to 2027-03-19; progress 52.77%",
+   "code": "30544-1",
+   "checked": "2026-11-23"
+  },
+  "suria-paragon": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30435-2/03-2027/0206(A)-(S) valid to 2027-03-03; progress 64.59%",
+   "code": "30435-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-mutiara-austin": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30292-2/01-2027/0090(N)-(S) valid to 2027-01-29; progress 71.15%",
+   "code": "30292-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-oasis": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30524-1/01-2027/0073(A)-(S) valid to 2027-01-21; progress 70.41%",
+   "code": "30524-1",
+   "checked": "2026-11-23"
+  },
+  "the-cube-daerah-timor-laut": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30515-1/01-2027/0072(A)-(S) valid to 2027-01-19; progress 80.10%",
+   "code": "30515-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-servis-bijirin": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30059-1/12-2026/1371(A)-(S) valid to 2026-12-27; progress 47.18%",
+   "code": "30059-1",
+   "checked": "2026-11-23"
+  },
+  "foreshore-apartment": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30246-1/12-2026/1360(A)-(S) valid to 2026-12-25; progress 97.50%",
+   "code": "30246-1",
+   "checked": "2026-11-23"
+  },
+  "noordinz-suites-george-town": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30571-1/11-2027/0884(R)-(S) valid to 2027-11-20; progress 62.08%",
+   "code": "30571-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-servis-permatang-janggus": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30233-1/10-2027/0826(R)-(S) valid to 2027-10-11; progress 95.88%",
+   "code": "30233-1",
+   "checked": "2026-11-23"
+  },
+  "aliva-johor-bahru": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30455-1/08-2027/0656(A)-(S) valid to 2027-08-22; progress 96.07%",
+   "code": "30455-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-aston-permai": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30289-1/06-2027/0421(R)-(S) valid to 2027-06-27; progress 39.21%",
+   "code": "30289-1",
+   "checked": "2026-11-23"
+  },
+  "mandarin-residensi": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30387-1/06-2027/0441(R)-(S) valid to 2027-06-11; progress 62.21%",
+   "code": "30387-1",
+   "checked": "2026-11-23"
+  },
+  "foreshore-residence": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30185-1/05-2027/0311(R)-(S) valid to 2027-05-16; progress 97.50%",
+   "code": "30185-1",
+   "checked": "2026-11-23"
+  },
+  "laguna-bay-residences": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30175-1/05-2027/0438(A)-(S) valid to 2027-05-07; progress 96.32%",
+   "code": "30175-1",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-seri-tawar-permai": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30084-1/02-2027/0339(R)-(S) valid to 2027-02-22; progress 97.50%",
+   "code": "30084-1",
+   "checked": "2026-11-23"
+  },
+  "coronation-square-menara-3": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20258-1/05-2027/0373(R)-(S) valid to 2027-05-31; progress 88.93%",
+   "code": "20258-1",
+   "checked": "2026-11-23"
+  },
+  "gen-rise": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30828-2/12-2027/1106(A)-(S) valid to 2027-12-04; progress 26.76%; status Lancar",
+   "code": "30828-2",
+   "checked": "2026-11-23"
+  },
+  "rimbun-saujana-residency": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 30619-1/04-2027/0347(A)-(S) valid to 2027-04-25; progress 93.89%; status Lancar",
+   "code": "30619-1",
    "checked": "2026-11-23"
   }
  }

@@ -3252,6 +3252,22 @@
   ]
  },
  {
+  "a": "gen-rise",
+  "b": "coven-tower",
+  "market": "Malaysia",
+  "why": [
+   "138 m apart"
+  ]
+ },
+ {
+  "a": "gen-rise",
+  "b": "axis-tower",
+  "market": "Malaysia",
+  "why": [
+   "138 m apart"
+  ]
+ },
+ {
   "a": "999-residences-by-reef-luxury-development",
   "b": "997-residences-by-reef-luxury-development",
   "market": "Dubai",
@@ -3868,6 +3884,187 @@
   "market": "Kuala Lumpur",
   "why": [
    "113 m apart"
+  ]
+ },
+ {
+  "a": "residensi-tiara",
+  "b": "residensi-tiara-cemerlang-3",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-tiara",
+  "b": "residensi-tiara-cemerlang-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-tiara",
+  "b": "residensi-tiara-cemerlang-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-amora",
+  "b": "amora-residensi-warisan-9",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-permata-biru",
+  "b": "residensi-permata",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "coven-tower",
+  "b": "axis-tower",
+  "market": "Malaysia",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "coven-tower",
+  "b": "brixton-tower",
+  "market": "Malaysia",
+  "why": [
+   "52 m apart"
+  ]
+ },
+ {
+  "a": "coven-tower",
+  "b": "dover-tower",
+  "market": "Malaysia",
+  "why": [
+   "53 m apart"
+  ]
+ },
+ {
+  "a": "residensi-sari-hijau-ii",
+  "b": "residensi-sari-hijau-i",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "69 m apart"
+  ]
+ },
+ {
+  "a": "residensi-permata-indah-2",
+  "b": "residensi-permata-indah",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "127 m apart"
+  ]
+ },
+ {
+  "a": "residensi-permata-indah-2",
+  "b": "residensi-permata",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "presint-botani-2",
+  "b": "presint-botani-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-tiara-cemerlang-3",
+  "b": "residensi-tiara-cemerlang-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "residensi-tiara-cemerlang-3",
+  "b": "residensi-tiara-cemerlang-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "axis-tower",
+  "b": "brixton-tower",
+  "market": "Malaysia",
+  "why": [
+   "52 m apart"
+  ]
+ },
+ {
+  "a": "axis-tower",
+  "b": "dover-tower",
+  "market": "Malaysia",
+  "why": [
+   "53 m apart"
+  ]
+ },
+ {
+  "a": "brixton-tower",
+  "b": "dover-tower",
+  "market": "Malaysia",
+  "why": [
+   "1 m apart"
+  ]
+ },
+ {
+  "a": "residensi-tiara-cemerlang-2",
+  "b": "residensi-tiara-cemerlang-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "laman-sunway-6",
+  "b": "laman-sunway-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-permata-indah",
+  "b": "residensi-permata",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "keeperz-suites",
+  "b": "the-lighthauz",
+  "market": "Malaysia",
+  "why": [
+   "114 m apart"
+  ]
+ },
+ {
+  "a": "foreshore-apartment",
+  "b": "foreshore-residence",
+  "market": "Malaysia",
+  "why": [
+   "46 m apart"
   ]
  }
 ]
