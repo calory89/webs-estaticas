@@ -601,7 +601,9 @@ export default {
     if (host === 'kolaboro.com' && KN34B.test(u.pathname)) {
       if (!kn34b) kn34b = await import('./kbx_n34b.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      try { const r = await kn34b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+      let e34 = null; try { const r = await kn34b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) { e34 = e; }
+      // n38 d2: /search/ has no static page, so a failed index read used to fall through to a 404; it now goes to the retry path (one more try, then the 503 notice)
+      if (req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?search\/?$/.test(u.pathname)) throw e34 || new Error('search index unavailable');
     }
     // kolaboro.com (n35a, batch 35): intelligence from our own data: /construction-pace/, /prices/asking-vs-registered/, /registers/escrow-banks/,
     // /signals/, /developers/<slug>/signals/, /data/{contradictions,aliases,dictionary,diff,ask}/, /satellite/changes/ (see kbx_n35a.js)

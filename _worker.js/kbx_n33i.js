@@ -69,6 +69,7 @@ export { linkFix };
 
 function nofollow(e) { const r = (e.getAttribute('rel') || '').trim(); if (!/\bnofollow\b/i.test(r)) e.setAttribute('rel', (r ? r + ' ' : '') + 'nofollow'); }
 
+const TW = { element(e) { e.setAttribute('tabindex', '0'); } };
 export async function post(req, u, r, env) {
   if (!r) return r;
   if (/^\/api\//.test(u.pathname)) {
@@ -90,7 +91,7 @@ export async function post(req, u, r, env) {
         if (f.m) { if (I && f.m !== COI && markets(I).has(f.m)) e.setAttribute('href', '/m/' + f.m + '/'); else nofollow(e); }
       });
     }
-  }).transform(r);
+  }).on('div.k-table-wrap:not([tabindex])', TW).on('div.n37-tw:not([tabindex])', TW).on('div.ktr-tw:not([tabindex])', TW).on('div.sx-tw:not([tabindex])', TW).transform(r);   // n38 d2: wide tables scroll in their box; the box takes keyboard focus so the scroll works without a mouse (WCAG 2.1.1)
 }
 
 // ---------- 304 for crawlers (item 17) ----------
