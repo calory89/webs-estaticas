@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-23T06:13:44Z",
+  "@value": "2026-11-23T06:45:40Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -89,7 +89,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "4619659",
+      "@value": "4799662",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -103,7 +103,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "057401fc0c1a30120c9f531e4ffcf3b77c530fef7fe4e28e8b6736f914fa38fd"
+      "spdx:checksumValue": "4cf2c540020233ad2bf65693bd4b86e4ecb32a51ce1a183fd8228c4654914ba8"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/bali-cases.json"
@@ -154,7 +154,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "455002",
+      "@value": "455004",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -168,7 +168,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "53f94dbb86cb349e8ef7759db9b801bfaa6e306c37788a12029daa2709450cbb"
+      "spdx:checksumValue": "bad9290453cc6570a82dbcee76295c75f07e8d62706f474c38828a6f386a5769"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/world-claims.json"
@@ -284,7 +284,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "102033",
+      "@value": "103104",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -298,7 +298,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "8f39caee4f7573eed3fe622ca1e0e10dd637711a689e43292c8240cb8331d556"
+      "spdx:checksumValue": "b2f9288d41114bbcf1e035a16710a7d50cd505faf500eec5af2e663dc7feee27"
      }
     }
    ],
@@ -343,7 +343,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "8161",
+      "@value": "8179",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -357,7 +357,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3b4d56884cf5ed32e0be605e8ac8ee2ed15ef10ea9700a5567ff2b1b5dddc844"
+      "spdx:checksumValue": "e5109b154e8f16be0d96919480ab48ced0537dc5357eea8ffb5d9f032ec446ed"
      }
     }
    ],
@@ -415,7 +415,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "994f5b2c59773d46447694b97e70797678ce8d3f423d204e724a1b5d18dba5ae"
+      "spdx:checksumValue": "80800a38949e3178b5930f315a2d99750a61f95bc8fb45331d5fa51c79bc679e"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/kolaboro-parquet-manifest.json"
@@ -426,7 +426,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-23T06:06:37Z",
+    "@value": "2026-11-23T06:33:31Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3386,7 +3386,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "58594",
+      "@value": "68464",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3400,7 +3400,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3b85cfd2369307d6084d45165d951a9a3e2c4a66e397cd7237e0e9776d9aae14"
+      "spdx:checksumValue": "ad5773fa983ab1d7b783cc3a0dbf35c6510182ed79aa607cb8de322f21d9fa5e"
      }
     }
    ],
@@ -5366,7 +5366,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "4491979",
+      "@value": "4679654",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -5380,7 +5380,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "1aad3fccc5c64116f04eab02b2101ee88bd432c7c91d1ac15f08fcae5452001a"
+      "spdx:checksumValue": "1ea330513e484553e26b86ae1e8dc7074f59c766381cdfa2fbbcb949dbb64895"
      }
     }
    ],
@@ -5971,7 +5971,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "493857",
+      "@value": "519512",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -5985,7 +5985,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "702cafd9e8c0d022354e4e118562589e5da7325f178ce9e7b979deb0d112489d"
+      "spdx:checksumValue": "08e718e105c035046be2b693c19a7a8c427254127904dca9b2c5c7b9f1d206e4"
      }
     }
    ],
@@ -19006,7 +19006,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "11382395",
+      "@value": "11851045",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -19020,7 +19020,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "5172707736bb4c28b0d7b19c9d4745a698d798be00bbe9f2852056ab2ab6514f"
+      "spdx:checksumValue": "da2d165a77ef30304ea9c506bfadb2c424a6092a6c9c94370cfe5a5e8f41592c"
      }
     }
    ],
@@ -20821,7 +20821,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "5454774",
+      "@value": "5667302",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -20835,7 +20835,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "a528f5406f8ba6ce6334ca38383dbea8bf79a04c739c16f9264673b55beb9a4d"
+      "spdx:checksumValue": "a10173cad8ecd17c2243ff0912b9e2cb88e97964892378c60eba69fabf39ded8"
      }
     }
    ],
@@ -20876,7 +20876,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "747370",
+      "@value": "766866",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -20890,7 +20890,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3c840a20d64ebdb437f55811614d5e41a003f3b1d959452ba9c59f93010bc31e"
+      "spdx:checksumValue": "aa43c5bf048d27508a7b4c1ae9b943c21217229b5a042999a1db63aeeddae8bb"
      }
     }
    ],
@@ -20945,7 +20945,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "304326246df309a3c13b102c048680c7f32dff13d689237b0301bbcb2a057562"
+      "spdx:checksumValue": "6b3e6098a4e2eec9a941cc220402a30858d6ca8f885ac79360ac46523140e748"
      }
     }
    ],
@@ -20986,7 +20986,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "7965",
+      "@value": "7966",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -21000,7 +21000,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "69258625e2bcdceed496c80b8ab4fd48b0e8a808220f6978445bf10e19778649"
+      "spdx:checksumValue": "4eeb7c6adb9e549f952fbe877110dced5f69c42cd0eb661c2bae840572ce1cd9"
      }
     }
    ],
@@ -21041,7 +21041,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "8144",
+      "@value": "8164",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -21055,7 +21055,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "ec3fa38faedd749059ccebd82225724d6b342d5500ef0093fd97019e73ae8edc"
+      "spdx:checksumValue": "2b8706c050572bad275a23263e5e0d12bbc9f41ffd57447476449d73c0bd310c"
      }
     }
    ],
@@ -21096,7 +21096,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "1724199",
+      "@value": "1795042",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -21110,7 +21110,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "7fb077c30cf593109bd1780363bec674a725b30f8edeb2adf3725828e294b9a2"
+      "spdx:checksumValue": "0e2eaa90c7fc1f23ea7f7bb7fd51615e3328ec192f98b2b5e30f0be39463936a"
      }
     }
    ],
@@ -21151,7 +21151,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "497097",
+      "@value": "512182",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -21165,7 +21165,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "e7a001ff0e985959cc187f5ea378f4ae59f9de5527e7b0695e68cbff5d53b695"
+      "spdx:checksumValue": "d61ee5adece767e3faee0bda781cc57b1fd7b16b33e0db04bad3f11e48ede247"
      }
     }
    ],
@@ -21261,7 +21261,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "237022",
+      "@value": "241181",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -21275,7 +21275,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "125d3d00ed00d1038493a8651b463cc461735a63061f6142560adca18fffbeec"
+      "spdx:checksumValue": "726d3513239774deee1962c580ef8890b79d1a6ad9ee316567290537685c695b"
      }
     }
    ],
