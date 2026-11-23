@@ -410,6 +410,22 @@
   ]
  },
  {
+  "a": "the-bryson-of-chatswood-goldfields",
+  "b": "chatswood-grand-residences",
+  "market": "Sydney",
+  "why": [
+   "40 m apart"
+  ]
+ },
+ {
+  "a": "teneriffe-banks-kokoda-property",
+  "b": "castile-newstead",
+  "market": "Brisbane",
+  "why": [
+   "132 m apart"
+  ]
+ },
+ {
   "a": "baccarat-residences-miami-related-group",
   "b": "619-brickell-by-nobu",
   "market": "Miami",
@@ -1376,6 +1392,14 @@
   "market": "Cambodia",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "pagewood-centro-cezanne",
+  "b": "16-studio-drive-eastgardens",
+  "market": "Sydney",
+  "why": [
+   "107 m apart"
   ]
  },
  {
@@ -3200,6 +3224,70 @@
   "market": "Northern Cyprus",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "callista-on-park-west-end",
+  "b": "mollison-towers-west-end",
+  "market": "Brisbane",
+  "why": [
+   "117 m apart"
+  ]
+ },
+ {
+  "a": "1013-1055-collins-street-docklands",
+  "b": "907-913-collins-street-docklands",
+  "market": "Melbourne",
+  "why": [
+   "122 m apart"
+  ]
+ },
+ {
+  "a": "1013-1055-collins-street-docklands",
+  "b": "989-1009-collins-street-docklands",
+  "market": "Melbourne",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "118-122-lorimer-street-docklands",
+  "b": "trielle-at-yarra-s-edge-docklands",
+  "market": "Melbourne",
+  "why": [
+   "67 m apart"
+  ]
+ },
+ {
+  "a": "5-9-waterfront-promenade-shell-cove",
+  "b": "portella-shell-cove",
+  "market": "Shell Cove",
+  "why": [
+   "26 m apart"
+  ]
+ },
+ {
+  "a": "907-913-collins-street-docklands",
+  "b": "989-1009-collins-street-docklands",
+  "market": "Melbourne",
+  "why": [
+   "122 m apart"
+  ]
+ },
+ {
+  "a": "inglis-residences-newmarket-randwick",
+  "b": "norfolk-residences-newmarket-randwick",
+  "market": "Sydney",
+  "why": [
+   "100 m apart"
+  ]
+ },
+ {
+  "a": "summit-ridge-at-sanctuary-wentworth-point",
+  "b": "willow-at-sanctuary-wentworth-point",
+  "market": "Sydney",
+  "why": [
+   "131 m apart"
   ]
  }
 ]

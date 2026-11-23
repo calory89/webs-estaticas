@@ -208,7 +208,7 @@ def _questions(c):
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
-PREFIX = {'Da Nang': 'DAD', 'El Salvador': 'SLV', 'Ho Chi Minh City': 'SGN', 'Vancouver': 'YVR', 'Peru': 'PRU', 'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
+PREFIX = {'Port Macquarie': 'PQQ', 'Canberra': 'CBR', 'Da Nang': 'DAD', 'El Salvador': 'SLV', 'Ho Chi Minh City': 'SGN', 'Vancouver': 'YVR', 'Peru': 'PRU', 'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
           'Abu Dhabi': 'AUH', 'Ras Al Khaimah': 'RAK', 'Oman': 'OMN', 'Istanbul': 'IST', 'Antalya': 'AYT', 'Egypt': 'EGY', 'Cyprus': 'CYP', 'Northern Cyprus': 'NCY', 'Greece': 'GRC',
           'Montenegro': 'MNE', 'Croatia': 'HRV', 'Georgia': 'GEO', 'Spain': 'ESP', 'Portugal': 'PRT', 'Los Cabos': 'CAB', 'Puerto Vallarta': 'PVR', 'Mérida': 'MID', 'Costa Rica': 'CRI',
           'Panama': 'PAN', 'Dominican Republic': 'DOM', 'Colombia': 'COL', 'Brazil': 'BRA', 'Miami': 'MIA', 'Vietnam': 'VNM', 'Philippines': 'PHL', 'Malaysia': 'MYS', 'Cambodia': 'KHM',
