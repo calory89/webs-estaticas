@@ -1,7 +1,7 @@
 /* Kolaboro market file: /m/?market=Bali or /m/?market=Indonesia (country). Everything computed from /data/bali-cases.json */
 (function(){
   var CK = [['permit','Permit or licence number'],['escrow','Deposit protection'],['progress','Construction progress'],['plans','Site or floor plans'],['record','Developer track record'],['returns_ok','No guaranteed returns']];
-  var LV = [['registry','Registry','#17212B'],['independent','Confirmed','#1E8A5A'],['developer','Not confirmed','#B9B4A8'],['contradicted','Contradicted','#C9461A'],['none','Not published','#E7E4DC']];
+  var LV = [['registry','Registry','var(--k-viz-reg,#155C75)'],['independent','Confirmed','var(--k-viz-ok,#2F8A5B)'],['developer','Not confirmed','var(--k-viz-dev,#AEB8BC)'],['contradicted','Contradicted','var(--k-viz-bad,#C2410C)'],['none','Not published','var(--k-viz-track,#E3E8E7)']];
   var ST = [['off-plan','off-plan'],['under construction','under construction'],['completed','completed, still selling']];
   var BASE = 'https://kolaboro.com/m/';
   var ssrEl = document.getElementById('ssr'); if (ssrEl) ssrEl.remove();
@@ -60,7 +60,7 @@
       return '<div class="mk-bar"><span class="nm">' + k[1] + '</span><div class="tr">' +
         '<div class="ln"><span class="t" role="img" aria-label="' + esc(label) + ': ' + pct(a) + '"><i style="width:' + (a * 100) + '%"></i></span><span>' + pct(a) + ' here</span></div>' +
         '<div class="ln all"><span class="t" role="img" aria-label="All markets: ' + pct(b) + '"><i style="width:' + (b * 100) + '%"></i></span><span>' + pct(b) + ' all</span></div></div></div>';
-    }).join('') + '</div><div class="mk-leg"><span style="--c:var(--hivis)">' + esc(label) + '</span><span style="--c:#9AA1A8">All ' + fmt(ALL.length) + ' projects, every market</span></div>';
+    }).join('') + '</div><div class="mk-leg"><span style="--c:var(--k-viz-reg,#155C75)">' + esc(label) + '</span><span style="--c:var(--k-viz-ref,#8A949C)">All ' + fmt(ALL.length) + ' projects, every market</span></div>';
   }
   function levels(C){
     var n = {}, tot = 0; C.forEach(function(c){ var v = c.verified || {}; CK.forEach(function(k){ var l = v[k[0]] || 'none'; n[l] = (n[l] || 0) + 1; tot++; }); });
