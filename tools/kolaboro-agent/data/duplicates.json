@@ -650,9 +650,25 @@
   ]
  },
  {
+  "a": "mirasol-ras-al-khaimah",
+  "b": "mirasol-ii-ras-al-khaimah",
+  "market": "Ras Al Khaimah",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "raw-district-dubai",
   "b": "raw-district-2-by-imtiaz",
   "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "fahid-beach-residences",
+  "b": "the-beach-house-fahid",
+  "market": "Abu Dhabi",
   "why": [
    "similar name"
   ]
@@ -3085,6 +3101,38 @@
  {
   "a": "999-residences-by-reef-luxury-development",
   "b": "997-residences-by-reef-luxury-development",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-one-residences",
+  "b": "the-boulevard-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-one-residences",
+  "b": "parkway-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-autograph-s-series",
+  "b": "the-autograph-i-series",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "arlington-park-by-majid",
+  "b": "arlington-park-ii-by-majid",
   "market": "Dubai",
   "why": [
    "similar name"
