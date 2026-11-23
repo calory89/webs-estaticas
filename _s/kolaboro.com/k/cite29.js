@@ -3,6 +3,7 @@
    figure tiles of rankings, reports, handover and market pages and the row-header tables of the monthly figures (60 buttons at most).
    The citation: "<figure>: <value>". Kolaboro, <page title>, <address of the page>, <date>. CC BY 4.0. Nothing is sent anywhere. */
 (function () {
+  if (window.__k29c) return; window.__k29c = 1;   // n38 d5: some pages carried the script twice and got two buttons per figure (and a layout shift)
   var L = (document.documentElement.lang || 'en').slice(0, 2);
   var T = { en: ['Cite', 'Copied', 'Copy a citation for this figure', 'as of'], es: ['Citar', 'Copiado', 'Copiar una cita de esta cifra', 'a fecha de'], fr: ['Citer', 'Copié', 'Copier une citation de ce chiffre', 'au'],
     de: ['Zitieren', 'Kopiert', 'Zitat für diese Zahl kopieren', 'Stand'], nl: ['Citeren', 'Gekopieerd', 'Kopieer een bronvermelding voor dit cijfer', 'stand'], ru: ['Цитировать', 'Скопировано', 'Скопировать ссылку на эту цифру', 'на'],

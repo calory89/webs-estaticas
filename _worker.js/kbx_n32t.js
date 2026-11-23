@@ -16,7 +16,7 @@ import { mkName, coName } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
-export const N32T_V = 'n32t4';
+export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -178,6 +178,11 @@ async function build(env, lang, key, D, shell, inner) {
   const P = parts(src, shTxt); if (!P) return null;
   let body = trHtml(P.main, D, LS);
   if (key === 'new' || key === 'vs') body = body.replace(/(<a\s[^>]*href="\/vs\/[a-z0-9-]+-vs-[a-z0-9-]+\/")/g, '$1 hreflang="en"');   // pair pages are English only
+  // n38 d5: the shell's inline script rewrites English-format numbers (3,433) in the page locale on DOMContentLoaded, which rewrapped
+  // lines after the first paint (layout shift on /es/vs/, /de/vs/). Same rule here, with the same locale the shell's script reads (KBL.num).
+  const kn = /"num":\s*"([^"]+)"/.exec(shTxt);
+  if (kn && !/^(en|zh)/.test(kn[1])) { try { const NF = new Intl.NumberFormat(kn[1]);
+    body = body.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/).map(tok => !tok || tok[0] === '<' ? tok : tok.replace(/(^|[^\d.,])(\d{1,3}(?:,\d{3})+)(?![\d,]|\.\d)/g, (_, x, y) => x + NF.format(+y.replace(/,/g, '')))).join(''); } catch (e) {} }
   return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js });
 }
 

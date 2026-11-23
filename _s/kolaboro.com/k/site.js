@@ -261,7 +261,9 @@
     if (hc.length && 'IntersectionObserver' in window) { var hio = new IntersectionObserver(function (es) { es.forEach(function (x) { x.target._kbv = x.isIntersecting; }); heroForm = [].some.call(hc, function (f) { return f._kbv; }); upd(); }, { threshold: 0.05 }); hc.forEach(function (f) { hio.observe(f); }); }
     // and hides over the footer, so it never covers the last links or the legal line
     var foot = document.querySelector('footer'), footVisible = false;
-    if (foot && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { footVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(foot);
+    // n38 d5: hides 160 px before the footer comes up (rootMargin), so the bar never sits over the newsletter form or the last links
+    if (foot && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { footVisible = es[0].isIntersecting; upd(); }, { threshold: 0, rootMargin: '0px 0px 160px 0px' }).observe(foot);
+    document.documentElement.classList.add('has-mcta');
     function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm && !footVisible); }
     // n32s (item 259): no first call here: reading scrollY while the page was still being laid out forced a full layout inside this script
     // (280 ms on a phone for a long page). The observers above call upd() once the layout is done; without them it runs after load.
