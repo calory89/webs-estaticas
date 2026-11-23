@@ -28,6 +28,11 @@ DAY_USD = float(os.environ.get('KB_SHIP_DAY_USD', '0.25'))       # all runs of t
 MAX_AI_DAYS_RUN = 25
 AUTO_META = '<meta name="kb-changelog-auto" content="written automatically from the day\'s commits, checked by code">'
 AUTO_MARK = 'name="kb-changelog-auto"'
+# 23 Nov 2026 (Pages file limit, 20,000 files): day pages live in one file, data/changelog-days.json (date -> page HTML), served by the
+# worker at /changelog/<date>/ (kbChangeDay in _worker.js/index.js). New days go into that file; a day still published as its own
+# changelog/<date>/index.html (written by a person) keeps its file and is never rewritten here.
+DAYS_FILE = '_s/kolaboro.com/data/changelog-days.json'
+def days_dump(o): return json.dumps(o, ensure_ascii=False, indent=0, sort_keys=True)   # same format as the file (no trailing newline)
 # People named in a few early commit subjects (all are already public on /about). Removed anyway: subjects are not the place.
 PEOPLE = ['Carlos de Ory', 'Lisa Mikolajewicz', 'Ignacio Hojas', 'calory89']
 FILE_EXT = 'js|mjs|cjs|json|jsonl|html|htm|css|py|md|yml|yaml|svg|png|jpg|jpeg|webp|xml|txt|csv|parquet|sql|ts|go|wasm|woff2|woff|pdf|sh|toml|ics|gz|zip|map|ndjson'
@@ -457,13 +462,20 @@ def main():
 
     key = None if a.no_ai else os.environ.get('ANTHROPIC_API_KEY')
     ai_days = 0
-    pages_existing = set()
+    pages_existing = set(); file_days = set()
     for line in git('ls-tree', '--name-only', ref, SITE + '/changelog/').split('\n'):
         m = re.search(r'changelog/(\d{4}-\d{2}-\d{2})$', line.strip())
-        if m: pages_existing.add(m.group(1))
+        if m: pages_existing.add(m.group(1)); file_days.add(m.group(1))
+    days_raw = show(ref, DAYS_FILE)
+    try: days_json = json.loads(days_raw) if days_raw else {}
+    except Exception: days_json = None          # unreadable: write no day pages this run rather than lose the file
+    if isinstance(days_json, dict): pages_existing |= set(k for k in days_json if re.match(r'^\d{4}-\d{2}-\d{2}$', k))
+    def day_html(d):
+        if d in file_days: return show(ref, '%s/changelog/%s/index.html' % (SITE, d))
+        return (days_json or {}).get(d)
     human_pages = set(); auto_pages = set()
     for d in pages_existing:
-        h = show(ref, '%s/changelog/%s/index.html' % (SITE, d))
+        h = day_html(d)
         if h is None: continue
         (auto_pages if AUTO_MARK in h else human_pages).add(d)
 
@@ -519,20 +531,24 @@ def main():
     # day pages (completed days only), never over a human page
     out_files = {}
     tpl_day = max(human_pages) if human_pages else None
-    template = show(ref, '%s/changelog/%s/index.html' % (SITE, tpl_day)) if tpl_day else None
+    template = day_html(tpl_day) if tpl_day else None
     for d in days.values():
         d['page'] = None; d['page_by'] = None
         if d['date'] in human_pages: d['page'] = '/changelog/%s/' % d['date']; d['page_by'] = 'human'
-        elif d['ships'] and (pdate(d['date']) < today) and template and (ALLOW_NEW_FILES or d['date'] in auto_pages):
+        elif d['ships'] and (pdate(d['date']) < today) and template and days_json is not None:   # a new day is a new key in DAYS_FILE, not a new file
             d['page'] = '/changelog/%s/' % d['date']; d['page_by'] = 'auto'
     pages = sorted((d['date'], d['page']) for d in days.values() if d['page'])
+    days_changed = False
     for i2, (dd, pg) in enumerate(pages):
         d = days[dd]
         if d['page_by'] != 'auto': continue
         prv = pages[i2 - 1] if i2 > 0 else None; nxt = pages[i2 + 1] if i2 + 1 < len(pages) else None
         h = day_page(template, d, prv, nxt)
-        path = '%s/changelog/%s/index.html' % (SITE, dd)
-        if show(ref, path) != h: out_files[path] = h
+        if dd in file_days:
+            path = '%s/changelog/%s/index.html' % (SITE, dd)
+            if show(ref, path) != h: out_files[path] = h
+        elif days_json.get(dd) != h: days_json[dd] = h; days_changed = True
+    if days_changed: out_files[DAYS_FILE] = days_dump(days_json)
 
     # engineering metrics
     metrics = {}
