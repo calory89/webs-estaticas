@@ -1,8 +1,8 @@
 {
- "date": "2026-11-15",
- "drill_at": "2026-11-16T11:17:37Z",
- "backup_file": "2026-11-15.json.gz",
- "backup_sha256": "f1dd50c9056d87fe02ca68991c379192fec9e612267b0c2ba5e0991663556246",
+ "date": "2026-11-22",
+ "drill_at": "2026-11-23T12:40:25Z",
+ "backup_file": "2026-11-22.json.gz",
+ "backup_sha256": "0abc29ab76a202af04b2388f15ec8314fc1e54436034de9ee74ce3d08e0224f8",
  "backup_age_days": 1,
  "postgres": "16.16 (Debian 16.16-1.pgdg13+1)",
  "tables": [
@@ -23,7 +23,7 @@
   },
   {
    "name": "watch",
-   "rows": 6,
+   "rows": 12,
    "ok": true
   },
   {
@@ -33,12 +33,12 @@
   },
   {
    "name": "stamps",
-   "rows": 1099,
+   "rows": 2290,
    "ok": true
   },
   {
    "name": "history",
-   "rows": 6847,
+   "rows": 9551,
    "ok": true
   },
   {
@@ -48,7 +48,7 @@
   },
   {
    "name": "evidence",
-   "rows": 9,
+   "rows": 10,
    "ok": true
   },
   {
@@ -63,12 +63,12 @@
   },
   {
    "name": "events_30d",
-   "rows": 23574,
+   "rows": 34310,
    "ok": true
   },
   {
    "name": "files_index",
-   "rows": 7,
+   "rows": 8,
    "ok": true
   },
   {
@@ -77,11 +77,11 @@
    "ok": true
   }
  ],
- "rows_total": 31587,
- "evidence_files_checked": 7,
+ "rows_total": 46226,
+ "evidence_files_checked": 8,
  "evidence_missing": 0,
  "evidence_bad_hash": 0,
  "evidence_ok": true,
  "ok": true,
- "duration_s": 2.76
+ "duration_s": 3.76
 }
