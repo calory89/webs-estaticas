@@ -51,6 +51,10 @@
   },
   {
    "name": "Data catalog"
+  },
+  {
+   "name": "Key facts",
+   "description": "The 10 key facts of named project records with their sources, and their changes. Method: https://kolaboro.com/data/how-we-verify/"
   }
  ],
  "paths": {
@@ -17072,6 +17076,803 @@
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/bundle/0000000000000000000000000000000000000000000000000000000000000000",
     "x-kolaboro-checked": "2026-11-05T07:20:43Z"
+   }
+  },
+  "/projects/{slug}/record.json": {
+   "get": {
+    "tags": [
+     "Key facts"
+    ],
+    "summary": "One project record, fact by fact",
+    "description": "The 10 key facts we hold for one named project, each with value, source URL, source kind (reg = official register, sat = our satellite reading, dev = developer site, portal, web, rec = our record) and date read, plus the facts not held yet with what to ask for and the official registers that can confirm them. 404 when no record has this slug.",
+    "operationId": "record_json",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Project page slug, e.g. emaar-golf-vale.",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "emaar-golf-vale"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "id": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "slug": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "name": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "market": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "area": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "developer": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "page": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "record": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "built": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "licence": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "fields_held": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "fields_total": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "kinds": {
+           "type": "object",
+           "properties": {
+            "reg": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "dev": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "portal": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "web": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "sat": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "rec": {
+             "type": [
+              "null",
+              "string"
+             ]
+            }
+           }
+          },
+          "facts": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "field": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "label": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "value": {
+              "type": [
+               "null",
+               "number",
+               "string"
+              ]
+             },
+             "source": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "kind": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "date": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "date_is": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "definition": {
+              "type": [
+               "null",
+               "string"
+              ]
+             }
+            }
+           }
+          },
+          "unknown": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "field": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "label": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "how_to_find": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "registers": {
+              "type": "array"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No record with this slug"
+     }
+    },
+    "x-kolaboro-example-url": "https://kolaboro.com/projects/emaar-golf-vale/record.json",
+    "x-kolaboro-checked": "2026-11-23T12:00:00Z"
+   }
+  },
+  "/data/changes.json": {
+   "get": {
+    "tags": [
+     "Key facts"
+    ],
+    "summary": "Changes of key facts",
+    "description": "Every real change of a key fact across named projects, newest first, from our daily copies of the records. A fact restated more precisely (2027-Q2 to 20 Apr 2027) is not counted. months_moved is set for handover dates (a quarter counts as its last month, a year alone as December).",
+    "operationId": "data_changes_json",
+    "parameters": [
+     {
+      "name": "m",
+      "in": "query",
+      "required": false,
+      "description": "Market name, case-insensitive, e.g. Dubai.",
+      "schema": {
+       "type": "string",
+       "maxLength": 80
+      },
+      "example": "Dubai"
+     },
+     {
+      "name": "field",
+      "in": "query",
+      "required": false,
+      "description": "Key fact code.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "ho",
+        "pn",
+        "un",
+        "pr",
+        "co",
+        "es",
+        "cp",
+        "sat",
+        "reg",
+        "ct"
+       ]
+      },
+      "example": "ho"
+     },
+     {
+      "name": "since",
+      "in": "query",
+      "required": false,
+      "description": "Only changes seen on or after this day.",
+      "schema": {
+       "type": "string",
+       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "description": "Rows per page.",
+      "schema": {
+       "type": "integer",
+       "minimum": 1,
+       "maximum": 1000,
+       "default": 200
+      }
+     },
+     {
+      "name": "offset",
+      "in": "query",
+      "required": false,
+      "description": "Rows to skip.",
+      "schema": {
+       "type": "integer",
+       "minimum": 0,
+       "default": 0
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "built": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "licence": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "rule": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "copies_from": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "filters": {
+           "type": "object",
+           "properties": {
+            "m": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "field": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "since": {
+             "type": [
+              "null",
+              "string"
+             ]
+            }
+           }
+          },
+          "total": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "offset": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "limit": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "changes": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "date": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "slug": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "project": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "market": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "developer": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "field": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "label": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "from": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "to": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "months_moved": {
+              "type": [
+               "null",
+               "number"
+              ]
+             },
+             "record": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "source_of_current_value": {
+              "type": [
+               "null",
+               "string"
+              ]
+             }
+            }
+           }
+          },
+          "page": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "feed": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "week": {
+           "type": [
+            "null",
+            "string"
+           ]
+          }
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "description": "Bad field or since value",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "x-kolaboro-example-url": "https://kolaboro.com/data/changes.json?m=Dubai&field=ho&limit=5",
+    "x-kolaboro-checked": "2026-11-23T12:00:00Z"
+   }
+  },
+  "/data/changes/week.json": {
+   "get": {
+    "tags": [
+     "Key facts"
+    ],
+    "summary": "Key-fact changes of the last 7 days",
+    "description": "Real changes of key facts in the 7 days up to the build date, counted by market, with the 7 days before for comparison.",
+    "operationId": "data_changes_week_json",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "built": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "licence": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "rule": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "from": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "to": {
+           "type": [
+            "null",
+            "string"
+           ]
+          },
+          "changes_count": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "projects": {
+           "type": [
+            "null",
+            "number"
+           ]
+          },
+          "previous_week": {
+           "type": "object",
+           "properties": {
+            "from": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "to": {
+             "type": [
+              "null",
+              "string"
+             ]
+            },
+            "changes_count": {
+             "type": [
+              "null",
+              "number"
+             ]
+            }
+           }
+          },
+          "markets": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "market": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "changes": {
+              "type": [
+               "null",
+               "number"
+              ]
+             },
+             "projects": {
+              "type": [
+               "null",
+               "number"
+              ]
+             },
+             "handover_moves": {
+              "type": [
+               "null",
+               "number"
+              ]
+             },
+             "page": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "feed": {
+              "type": [
+               "null",
+               "string"
+              ]
+             }
+            }
+           }
+          },
+          "changes": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "date": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "slug": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "project": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "market": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "developer": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "field": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "label": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "from": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "to": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "months_moved": {
+              "type": [
+               "null",
+               "number"
+              ]
+             },
+             "record": {
+              "type": [
+               "null",
+               "string"
+              ]
+             },
+             "source_of_current_value": {
+              "type": [
+               "null",
+               "string"
+              ]
+             }
+            }
+           }
+          },
+          "page": {
+           "type": [
+            "null",
+            "string"
+           ]
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "x-kolaboro-example-url": "https://kolaboro.com/data/changes/week.json",
+    "x-kolaboro-checked": "2026-11-23T12:00:00Z"
+   }
+  },
+  "/data/changes/feed.atom": {
+   "get": {
+    "tags": [
+     "Key facts"
+    ],
+    "summary": "Key-fact changes (Atom)",
+    "description": "The newest 100 real changes of a key fact as an Atom 1.0 feed, for all markets or one market.",
+    "operationId": "data_changes_feed_atom",
+    "parameters": [
+     {
+      "name": "m",
+      "in": "query",
+      "required": false,
+      "description": "Market name, exact, e.g. Dubai.",
+      "schema": {
+       "type": "string",
+       "maxLength": 80
+      },
+      "example": "Dubai"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/atom+xml": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    },
+    "x-kolaboro-example-url": "https://kolaboro.com/data/changes/feed.atom?m=Dubai",
+    "x-kolaboro-checked": "2026-11-23T12:00:00Z"
+   }
+  },
+  "/data/gaps.csv": {
+   "get": {
+    "tags": [
+     "Key facts"
+    ],
+    "summary": "Coverage of the key facts by market (CSV)",
+    "description": "Share of records holding each of the 10 key facts, for all projects and every market with 5 or more projects. First line is a comment with the build date and licence.",
+    "operationId": "data_gaps_csv",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "text/csv": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    },
+    "x-kolaboro-example-url": "https://kolaboro.com/data/gaps.csv",
+    "x-kolaboro-checked": "2026-11-23T12:00:00Z"
    }
   }
  },

@@ -193,6 +193,17 @@ export const TOOLS = [
     annotations: Object.assign({ title: 'Verify a Kolaboro signature' }, RO) },
 ];
 TOOLS.push(...TOOLS2);   // n34c: v2 tools, answered by mcpTool in kbx_n34c.js
+// r7u (batch 37 round 7): the project record fact by fact and the changes of key facts, answered by mcpTool3 in kbx_n37u.js
+const KF = ['ho', 'pn', 'un', 'pr', 'co', 'es', 'cp', 'sat', 'reg', 'ct'];
+export const TOOLS3 = [
+  { name: 'get_project_record', title: 'Project record, fact by fact',
+    description: 'The 10 key facts we hold for one named project (handover date, permit or registration number, units, starting price, developer legal entity, escrow, construction %, satellite reading, official register entry, court cases), each with its value, source URL, source kind (reg = official register, sat = our satellite reading, dev = developer site, portal, web, rec = our record) and the date we read it, plus the facts we do not hold yet with what to ask for and the official registers that can confirm them. By page slug (e.g. emaar-golf-vale). Same as GET /projects/<slug>/record.json.',
+    inputSchema: { type: 'object', additionalProperties: false, required: ['slug'], properties: { slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' } } } },
+  { name: 'list_fact_changes', title: 'Changes of key facts across projects',
+    description: 'Real changes of the 10 key facts across all named projects, newest first, from our daily copies of the records: date, project, market, field, value before and after, months moved for handover dates, and the source of the current value. A fact restated more precisely (2027-Q2 to 20 Apr 2027) is not counted. Filter by market (e.g. "Dubai"), field, since (YYYY-MM-DD) or the last N days. Same data as GET /data/changes.json.',
+    inputSchema: { type: 'object', additionalProperties: false, properties: { market: { type: 'string', maxLength: 80 }, field: { type: 'string', enum: KF }, since: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' }, days: { type: 'integer', minimum: 1, maximum: 120 }, limit: { type: 'integer', minimum: 1, maximum: 200, default: 50 } } } },
+].map(x => Object.assign(x, { annotations: { title: x.title, readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } }));
+TOOLS.push(...TOOLS3);
 const TOOL_NAMES = TOOLS.map(t => t.name);
 
 function argErr(msg) { const e = new Error(msg); e.arg = true; return e; }
@@ -205,8 +216,8 @@ async function runTool(env, name, a) {
   if (typeof a !== 'object' || Array.isArray(a)) throw argErr('arguments must be an object');
   const known = (TOOLS.find(t => t.name === name).inputSchema.properties) || {};
   const extra = Object.keys(a).filter(k => !(k in known)); if (extra.length) throw argErr('unknown argument(s): ' + extra.join(', '));
-  if (TOOLS2.some(t => t.name === name)) {   // n34c (batch 34)
-    const r = await mcpTool(env, name, a);
+  if (TOOLS2.some(t => t.name === name) || TOOLS3.some(t => t.name === name)) {   // n34c (batch 34); r7u: TOOLS3 answered in kbx_n37u.js
+    const r = TOOLS3.some(t => t.name === name) ? await (await import('./kbx_n37u.js')).mcpTool3(env, name, a) : await mcpTool(env, name, a);
     if (!r) throw argErr('unknown tool');
     if (r.err) throw argErr(r.err);
     if (r.status === 404) return [{ status: 404, local: true, body: JSON.stringify(r.body, null, 1), source: r.source || 'https://kolaboro.com/' }];

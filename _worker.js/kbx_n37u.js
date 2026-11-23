@@ -11,6 +11,8 @@
 //   GET /m/<market>/slugs.json (the id-to-page map that used to ride inside every market page), row counts on /<lang>/data/
 //   r6u (round 6): handover dates moved per developer (developer pages, #n37-track), /[l/]data/changes/week/ (the last 7 days by market),
 //   GET /data/changes/feed.atom[?m=<market>], named region, list and nav landmark for the key-fact groups and link row
+//   r7u (round 7): GET /data/changes.json[?m=&field=&since=&limit=&offset=], GET /data/changes/week.json, MCP tools get_project_record and
+//   list_fact_changes (mcpTool3), /[l/]data/how-we-verify/ (method with live numbers by source kind, registers, satellite, fact age)
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
 
@@ -49,7 +51,7 @@ const recU = (l, s) => pre(l) + '/projects/' + s + '/record/';
 const cnt = r => r[7].split('1').length - 1;
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const RX_REC = new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/record(\\/?)$'), RX_GAP = new RegExp('^\\/' + LP + 'data\\/gaps(\\/?)$'), RX_JS = /^\/projects\/([a-z0-9-]{1,90})\/record\.json$/;
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week))\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week|how-we-verify))\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/data\/changes(?:\/week)?\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
 export const INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|data|data\/dictionary|registers|search|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;
 
 const CSS = '<style id="n37u-css">.n37{max-width:1100px}.n37 h2{margin:28px 0 8px;font-size:1.3rem}.n37 p,.n37 li{line-height:1.6}.n37 .k-xs{font-size:.9rem;color:var(--k-muted,#56636F)}' +
@@ -66,7 +68,7 @@ async function page(shell, l, o) {
   const crumbs = [[t(l, 'home'), pre(l) + '/']].concat(o.crumb || []).concat([[o.h1, null]]);
   const body = '<section class="phero"' + dir(l) + '><div class="wrap"><p class="crumb">' + crumbs.map(c => c[1] ? '<a href="' + esc(c[1]) + '">' + esc(c[0]) + '</a>' : esc(c[0])).join(' / ') + '</p><h1>' + esc(o.h1) + '</h1><p class="lead">' + esc(o.lead) + '</p>' +
     '<p class="k-xs">' + esc(tf(l, 'upd', { d: fd(D.built, l) })) + '</p></div></section><div class="wrap n37"' + dir(l) + '>' + CSS + o.body +
-    '<p class="k-xs">' + esc(t(l, 'meth')) + ' <a href="/data/n37u.json">' + esc(t(l, 'dl')) + '</a> · <a href="/open/n37u-build.py">' + esc(t(l, 'code')) + '</a> · <a href="' + pre(l) + '/registers/">/registers/</a></p></div>';
+    '<p class="k-xs">' + esc(t(l, 'meth')) + ' <a href="' + pre(l) + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a> · <a href="/data/n37u.json">' + esc(t(l, 'dl')) + '</a> · <a href="/open/n37u-build.py">' + esc(t(l, 'code')) + '</a> · <a href="' + pre(l) + '/registers/">/registers/</a></p></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', url: canon, name: o.h1, description: o.lead, inLanguage: l, dateModified: D.built || '2026-11-23', isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] ? ORIGIN + c[1] : canon })) }] };
   const desc = o.lead.length > 155 ? o.lead.slice(0, 152).replace(/\s+\S*$/, '') + '…' : o.lead;
@@ -185,13 +187,8 @@ function gapsCsv() {
   for (const [m, v] of Object.entries(D.mk).sort((a, b) => b[1].n - a[1].n)) L.push([m, v.co || '', v.n, v.med].concat(v.cov).map(q).join(','));
   return new Response(L.join('\n') + '\n', { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'inline; filename="kolaboro-gaps.csv"', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900' } });
 }
-function recJson(r) {
-  const F = D.f, RG = regsFor(r);
-  const o = { id: r[0], slug: r[1], name: r[2], market: r[3], area: r[4] || null, developer: r[6] || null, page: ORIGIN + '/projects/' + r[1] + '/', record: ORIGIN + '/projects/' + r[1] + '/record/', built: D.built || null,
-    licence: 'CC BY 4.0, cite Kolaboro', fields_held: cnt(r), fields_total: F.length, kinds: { reg: 'official register or its published mirror', dev: "the developer's own site", portal: 'a listing portal', web: 'another web page we read', sat: 'our Sentinel-2 reading', rec: 'our record (sources listed on the project page)' },
-    facts: F.map((f, i) => { const c = r[8][i]; return c ? { field: f, label: t('en', 'f_' + f), value: c[0], source: c[1] ? (/^https?:/.test(c[1]) ? c[1] : ORIGIN + c[1]) : ORIGIN + '/projects/' + r[1] + '/#sources', kind: c[2], date: c[3] || null, date_is: f === 'ct' ? 'latest case' : f === 'cp' ? 'register inspection' : f === 'sat' ? 'satellite scene' : 'read', definition: ORIGIN + DEF[f] } : null; }).filter(Boolean),
-    unknown: F.filter((f, i) => !r[8][i]).map(f => ({ field: f, label: t('en', 'f_' + f), how_to_find: t('en', 'ask_' + f), registers: RG.filter(g => g[2].includes(f)).map(g => ({ name: g[0], url: g[1] || null, reached_by_our_checker: g[4] || null })) })) };
-  return new Response(JSON.stringify(o, null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900', 'x-robots-tag': 'noindex' } });
+function recJson(r) {   // r7u: the object is shared with the MCP tool get_project_record
+  return new Response(JSON.stringify(recObj(r), null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900', 'x-robots-tag': 'noindex' } });
 }
 
 // r3u (round 3): facts on record per market (/m/<market>/) and per developer (/developers/<slug>/), live numbers in the home hero,
@@ -301,7 +298,7 @@ const VSC = '<style>.n37-vs{margin:14px 0 0;padding:12px 16px;border:1px solid v
   '.n37-po{display:none}@media print{.n37-po{display:block!important;font-size:16pt;margin:0 0 6px}.n37 a[href]::after{content:none!important}.n37>p.k-xs:last-child{display:none!important}.n37-np,.k-cta,.crumb,#shipped-2026-11-23{display:none!important}.n37 h2{font-size:12pt;margin:10px 0 4px}.n37 table{font-size:9pt}.n37 th,.n37 td{padding:3px 6px}.n37-tw{overflow:visible;border:0;margin:4px 0 8px}.phero h1{font-size:17pt;margin:0}.phero .lead{font-size:10pt}.n37 p,.n37 li{font-size:10pt;line-height:1.35}.n37-vs{padding:6px 10px}@page{size:A4;margin:12mm}}</style>';
 function vsBlock(l, r, acts) {
   const g = vsGroups(r);
-  return '<section class="n37-vs" id="n37-vs" role="region" aria-labelledby="n37-vs-h"' + dir(l) + '><p style="margin:0"><b id="n37-vs-h">' + esc(t(l, 'vs_h')) + '</b> <span class="k-xs">' + esc(t(l, 'vs_n')) + '</span></p><ul role="list">' +   // r6u: named region, list role kept with list-style none
+  return '<section class="n37-vs" id="n37-vs" role="region" aria-labelledby="n37-vs-h"' + dir(l) + '><p style="margin:0"><b id="n37-vs-h">' + esc(t(l, 'vs_h')) + '</b> <span class="k-xs">' + esc(t(l, 'vs_n')) + ' <a href="' + pre(l) + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a></span></p><ul role="list">' +   // r6u: named region, list role kept with list-style none
     [['r', 'vs_r'], ['c', 'vs_c'], ['u', 'vs_u']].map(([k, s]) => '<li class="n37-v' + k + '"><b>' + nf(g[k].length, l) + '</b><span class="n37-sr"> / 10</span> ' + esc(t(l, s)) + (g[k].length ? ': ' + g[k].map(f => esc(t(l, 'f_' + f))).join(', ') : '') + '</li>').join('') + '</ul>' + (acts || '') + '</section>';
 }
 function actRow(l, r) {
@@ -338,7 +335,7 @@ async function changesPage(env, shell, l, mq) {
   b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_mk')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th></tr></thead><tbody>' +
     rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + bdi(r[3]) + '</td><td>' + fname(l, x.f) + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>';
   b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="/data/snapshots/index.json">' + esc(t(l, 'tl_snap')) + '</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a> · <a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a></p>';
-  b = '<p class="n37-np"><a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a> · <a href="/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a></p>' + b;   // r6u
+  b = '<p class="n37-np"><a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a> · <a href="/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a> · <a href="/data/changes.json' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/json">JSON</a> · <a href="/docs/api/#key-facts">API</a></p>' + b;   // r6u
   const res = await page(shell, l, { path: '/data/changes/', h1: t(l, 'ch_h1'), lead: t(l, 'ch_lead'), body: b, noindex: !!mk, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/']] });
   return res;
 }
@@ -384,7 +381,7 @@ async function weekPage(env, shell, l) {
       rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + fname(l, x.f) + (x.f === 'ho' ? ' <span class="k-xs">(' + esc(byM(l, (mIdx(x.v) != null && mIdx(x.p) != null) ? mIdx(x.v) - mIdx(x.p) : null)) + ')</span>' : '') + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>' +
       '<p><a href="' + P + '/data/changes/?m=' + encodeURIComponent(m) + '">' + esc(tf(l, 'wk_all', { m })) + '</a> · <a href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a></p>';
   }
-  b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a> · <a href="/data/changes/feed.atom" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a></p>';
+  b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a> · <a href="/data/changes/feed.atom" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a> · <a href="/data/changes/week.json" type="application/json">JSON</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a></p>';
   return page(shell, l, { path: '/data/changes/week/', h1: t(l, 'wk_h1'), lead: t(l, 'wk_lead'), body: b, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'ch_h1'), P + '/data/changes/']] });
 }
 const FEEDL = '<link rel="alternate" type="application/atom+xml" title="Kolaboro: project fact changes" href="/data/changes/feed.atom">';
@@ -406,10 +403,103 @@ function seJson() {
   return new Response(IX.se, { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*' } });
 }
 function seTpl(l) { const f = {}; for (const k of D.f) f[k] = t(l, 'f_' + k); return JSON.stringify({ k: t(l, 'se_k'), c: t(l, 'se_c'), f }); }
-const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs']];
-const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$/.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
+const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs'], ['s31', '/projects/emaar-golf-vale/'], ['s32', '/docs/api/#key-facts'], ['s33', '/docs/mcp/#key-facts'], ['s34', '/data/how-we-verify/'], ['s35', '/engineering/status/']];
+const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$|^\/docs\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
 const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';
 
+// r7u (round 7): the key-fact changes as JSON (GET /data/changes.json, GET /data/changes/week.json), two MCP tools answered here
+// (get_project_record, list_fact_changes; listed in kbx_e.js) and /[l/]data/how-we-verify/ (the method, with live numbers)
+const JH = { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900' };
+const srcAbs = (r, f) => { const c = r[8][D.f.indexOf(f)]; return c && c[1] ? (/^https?:/.test(c[1]) ? c[1] : ORIGIN + c[1]) : null; };
+function chRow([r, x]) {
+  const o = { date: x.d, slug: r[1], project: r[2], market: r[3], developer: r[6] || null, field: x.f, label: t('en', 'f_' + x.f), from: x.p, to: x.v, months_moved: null, record: ORIGIN + '/projects/' + r[1] + '/record/#timeline', source_of_current_value: srcAbs(r, x.f) };
+  if (x.f === 'ho') { const a = mIdx(x.p), b = mIdx(x.v); if (a != null && b != null) o.months_moved = b - a; }
+  return o;
+}
+const CH_RULE = 'A change is a key fact whose value moved between two of our daily copies of the record (or between the last copy and today). The same fact restated more precisely (2027-Q2 to 20 Apr 2027, December 2026 to 31 Dec 2026) is not counted. A quarter counts as its last month and a year alone as December when months_moved is computed.';
+function chFilter(q) {   // q: { m, field, since, days, limit, offset }
+  let rows = allChanges();
+  if (q.m) { const k = String(q.m).trim().toLowerCase(); rows = rows.filter(x => x[0][3].toLowerCase() === k); }
+  if (q.field) { if (!D.f.includes(q.field)) return { err: 'field must be one of ' + D.f.join(', ') }; rows = rows.filter(x => x[1].f === q.field); }
+  let since = q.since || null;
+  if (since && !/^\d{4}-\d{2}-\d{2}$/.test(since)) return { err: 'since must be YYYY-MM-DD' };
+  if (q.days != null) since = isoD(Date.parse(D.built + 'T00:00:00Z') - (q.days - 1) * DAY);
+  if (since) rows = rows.filter(x => x[1].d >= since);
+  return { rows, since };
+}
+function changesJson(u) {
+  const g = k => u.searchParams.get(k), lim = Math.min(1000, Math.max(1, parseInt(g('limit') || '200', 10) || 200)), off = Math.min(100000, Math.max(0, parseInt(g('offset') || '0', 10) || 0));
+  const q = chFilter({ m: (g('m') || '').slice(0, 80), field: g('field') || '', since: g('since') || '' });
+  if (q.err) return new Response(JSON.stringify({ error: q.err }), { status: 400, headers: JH });
+  const o = { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: CH_RULE, copies_from: TL && TL.days && TL.days.length ? TL.days[0][0] : null, filters: { m: g('m') || null, field: g('field') || null, since: q.since }, total: q.rows.length, offset: off, limit: lim,
+    changes: q.rows.slice(off, off + lim).map(chRow), page: ORIGIN + '/data/changes/', feed: ORIGIN + '/data/changes/feed.atom', week: ORIGIN + '/data/changes/week.json' };
+  return new Response(JSON.stringify(o, null, 1), { headers: JH });
+}
+function weekObj() {
+  const all = allChanges(), z = Date.parse(D.built + 'T00:00:00Z'), a = isoD(z - 6 * DAY), a0 = isoD(z - 13 * DAY), wk = all.filter(x => x[1].d >= a), G = new Map();
+  for (const x of wk) (G.get(x[0][3]) || G.set(x[0][3], []).get(x[0][3])).push(x);
+  return { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: CH_RULE, from: a, to: D.built, changes_count: wk.length, projects: new Set(wk.map(x => x[0])).size,
+    previous_week: { from: a0, to: isoD(z - 7 * DAY), changes_count: all.filter(x => x[1].d >= a0 && x[1].d < a).length },
+    markets: [...G.entries()].sort((m, n) => n[1].length - m[1].length || m[0].localeCompare(n[0])).map(([m, rows]) => ({ market: m, changes: rows.length, projects: new Set(rows.map(x => x[0])).size, handover_moves: rows.filter(x => x[1].f === 'ho').length, page: ORIGIN + '/data/changes/week/#mk-' + slugM(m), feed: ORIGIN + '/data/changes/feed.atom?m=' + encodeURIComponent(m) })),
+    changes: wk.map(chRow), page: ORIGIN + '/data/changes/week/' };
+}
+function recObj(r) {
+  const F = D.f, RG = regsFor(r);
+  return { id: r[0], slug: r[1], name: r[2], market: r[3], area: r[4] || null, developer: r[6] || null, page: ORIGIN + '/projects/' + r[1] + '/', record: ORIGIN + '/projects/' + r[1] + '/record/', built: D.built || null,
+    licence: 'CC BY 4.0, cite Kolaboro', fields_held: cnt(r), fields_total: F.length, kinds: { reg: 'official register or its published mirror', dev: "the developer's own site", portal: 'a listing portal', web: 'another web page we read', sat: 'our Sentinel-2 reading', rec: 'our record (sources listed on the project page)' },
+    facts: F.map((f, i) => { const c = r[8][i]; return c ? { field: f, label: t('en', 'f_' + f), value: c[0], source: c[1] ? (/^https?:/.test(c[1]) ? c[1] : ORIGIN + c[1]) : ORIGIN + '/projects/' + r[1] + '/#sources', kind: c[2], date: c[3] || null, date_is: f === 'ct' ? 'latest case' : f === 'cp' ? 'register inspection' : f === 'sat' ? 'satellite scene' : 'read', definition: ORIGIN + DEF[f] } : null; }).filter(Boolean),
+    unknown: F.filter((f, i) => !r[8][i]).map(f => ({ field: f, label: t('en', 'f_' + f), how_to_find: t('en', 'ask_' + f), registers: RG.filter(g => g[2].includes(f)).map(g => ({ name: g[0], url: g[1] || null, reached_by_our_checker: g[4] || null })) })) };
+}
+export async function mcpTool3(env, name, a) {
+  if (!(await load(env))) return { err: 'temporarily unavailable, please retry' };
+  if (name === 'get_project_record') {
+    if (typeof a.slug !== 'string' || !/^[a-z0-9-]{1,90}$/.test(a.slug)) return { err: 'slug must be lowercase letters, digits and hyphens' };
+    const r = IX.bySlug.get(a.slug); if (!r) return { status: 404, body: { error: 'no project record with this slug', hint: 'Use search_text to find the slug. Projects in Sumba are never named.' } };
+    return { body: recObj(r), source: ORIGIN + '/projects/' + a.slug + '/record.json' };
+  }
+  if (name === 'list_fact_changes') {
+    if (a.days != null && (!Number.isInteger(a.days) || a.days < 1 || a.days > 120)) return { err: 'days must be an integer from 1 to 120' };
+    if (a.limit != null && (!Number.isInteger(a.limit) || a.limit < 1 || a.limit > 200)) return { err: 'limit must be an integer from 1 to 200' };
+    if (a.market != null && (typeof a.market !== 'string' || a.market.length > 80)) return { err: 'market must be a string of at most 80 characters' };
+    const q = chFilter({ m: a.market || '', field: a.field || '', since: a.since || '', days: a.days });
+    if (q.err) return { err: q.err };
+    const lim = a.limit || 50;
+    return { body: { built: D.built, rule: CH_RULE, filters: { market: a.market || null, field: a.field || null, since: q.since }, total: q.rows.length, changes: q.rows.slice(0, lim).map(chRow), more: q.rows.length > lim ? ORIGIN + '/data/changes.json' : null }, source: ORIGIN + '/data/changes.json' };
+  }
+  return null;
+}
+// /[l/]data/how-we-verify/: how a fact gets onto a record, how it is graded and re-checked, with today's numbers from /data/n37u.json
+const AGEB = [[0, 30], [31, 90], [91, 180], [181, 1e9]];
+function verifyStats() {
+  if (IX.vf) return IX.vf;
+  const K = ['reg', 'sat', 'dev', 'portal', 'web', 'rec'], kc = Object.fromEntries(K.map(k => [k, 0])), ab = [0, 0, 0, 0], abK = Object.fromEntries(K.map(k => [k, [0, 0, 0, 0]])), z = Date.parse(D.built + 'T00:00:00Z');
+  let tot = 0, und = 0, sat = 0, satA = null, satZ = null, withReg = 0;
+  for (const r of D.p) { let hasReg = false; r[8].forEach((c, i) => { if (!c) return; tot++; kc[c[2]] = (kc[c[2]] || 0) + 1; if (c[2] === 'reg') hasReg = true;
+    if (D.f[i] === 'sat') { sat++; const d = String(c[3] || '').slice(0, 10); if (/^\d{4}-\d{2}-\d{2}$/.test(d)) { if (!satA || d < satA) satA = d; if (!satZ || d > satZ) satZ = d; } }
+    if (D.f[i] === 'ct') return; const d = String(c[3] || '').slice(0, 10); if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) { und++; return; }
+    const ag = Math.max(0, Math.floor((z - Date.parse(d + 'T00:00:00Z')) / DAY)), b = AGEB.findIndex(x => ag >= x[0] && ag <= x[1]); ab[b]++; if (abK[c[2]]) abK[c[2]][b]++; });
+    if (hasReg) withReg++; }
+  const regs = []; for (const m in D.rg) for (const g of D.rg[m]) regs.push([m, g]);
+  return (IX.vf = { K, kc, tot, ab, abK, und, sat, satA, satZ, withReg, regs, mk: Object.keys(D.rg).length });
+}
+async function verifyPage(env, shell, l) {
+  const P = pre(l), s = verifyStats(), pc = n => nf(s.tot ? Math.round(1000 * n / s.tot) / 10 : 0, l) + '%', conf = s.kc.reg + s.kc.sat;
+  let b = '<p><b>' + esc(tf(l, 'vf_sum', { n: nf(s.tot, l), p: nf(D.n, l), c: nf(conf, l), cp: pc(conf), r: nf(s.withReg, l) })) + '</b></p>';
+  b += '<h2 id="steps">' + esc(t(l, 'vf_st_h')) + '</h2><ol class="n37-g">' + [1, 2, 3, 4, 5, 6].map(i => '<li>' + esc(t(l, 'vf_st' + i)) + '</li>').join('') + '</ol>';
+  b += '<h2 id="kinds">' + esc(t(l, 'vf_k_h')) + '</h2><p>' + esc(t(l, 'vf_k_p')) + '</p><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'vf_k_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_s')) + '</th><th scope="col">' + esc(t(l, 'vf_th_g')) + '</th><th scope="col" class="n">' + esc(t(l, 'vf_th_n')) + '</th><th scope="col" class="n">' + esc(t(l, 'vf_th_p')) + '</th></tr></thead><tbody>' +
+    s.K.map(k => '<tr><th scope="row">' + badge(l, k) + '</th><td>' + esc(t(l, VG[k] === 'r' ? 'vf_g_r' : 'vf_g_c')) + '</td><td class="n">' + nf(s.kc[k] || 0, l) + '</td><td class="n">' + bdi(pc(s.kc[k] || 0)) + '</td></tr>').join('') +
+    '<tr><th scope="row">' + esc(tf(l, 'gp_all', { n: nf(D.n, l) })) + '</th><td></td><td class="n"><b>' + nf(s.tot, l) + '</b></td><td class="n">100%</td></tr></tbody></table></div>';
+  b += '<h2 id="registers">' + esc(t(l, 'vf_r_h')) + '</h2><p>' + esc(tf(l, 'vf_r_p', { n: nf(s.regs.length, l), m: nf(s.mk, l), k: nf(s.kc.reg, l), r: nf(s.withReg, l) })) + '</p><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'vf_r_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'g_reg')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'vf_th_ck')) + '</th></tr></thead><tbody>' +
+    s.regs.map(([m, g]) => '<tr><th scope="row">' + bdi(m) + '</th><td>' + (g[1] ? '<a href="' + esc(g[1]) + '" rel="nofollow noopener">' + bdi(g[0]) + '</a>' : bdi(g[0])) + '</td><td>' + (g[2].length ? g[2].map(f => esc(t(l, 'f_' + f))).join(', ') : '') + '</td><td class="n">' + esc(g[4] ? fd(g[4], l) : '') + '</td></tr>').join('') + '</tbody></table></div><p><a href="' + P + '/registers/">' + esc(t(l, 'vf_r_l')) + '</a></p>';
+  b += '<h2 id="satellite">' + esc(t(l, 'vf_s_h')) + '</h2><p>' + esc(tf(l, 'vf_s_p', { n: nf(s.sat, l), a: fd(s.satA, l), b: fd(s.satZ, l) })) + ' <a href="/satellite/construction-index/">' + esc(t(l, 'vf_s_l')) + '</a></p>';
+  b += '<h2 id="age">' + esc(t(l, 'vf_a_h')) + '</h2><p>' + esc(tf(l, 'vf_a_p', { o: nf(s.ab[3], l), u: nf(s.und, l) })) + '</p><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'vf_a_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_s')) + '</th>' + ['vf_a0', 'vf_a1', 'vf_a2', 'vf_a3'].map(k => '<th scope="col" class="n">' + esc(t(l, k)) + '</th>').join('') + '</tr></thead><tbody>' +
+    s.K.filter(k => s.abK[k].some(Boolean)).map(k => '<tr><th scope="row">' + badge(l, k) + '</th>' + s.abK[k].map(n => '<td class="n">' + nf(n, l) + '</td>').join('') + '</tr>').join('') +
+    '<tr><th scope="row">' + esc(t(l, 'vf_all')) + '</th>' + s.ab.map(n => '<td class="n"><b>' + nf(n, l) + '</b></td>').join('') + '</tr></tbody></table></div><p class="k-xs">' + esc(t(l, 'age_note')) + '</p>';
+  b += '<h2 id="changes">' + esc(t(l, 'vf_c_h')) + '</h2><p>' + esc(tf(l, 'vf_c_p', { n: nf(allChanges().length, l), a: fd(TL && TL.days && TL.days.length ? TL.days[0][0] : D.built, l) })) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a></p>';
+  b += '<h2 id="check">' + esc(t(l, 'vf_x_h')) + '</h2><ul class="n37-rel">' + [[recU(l, 'emaar-golf-vale'), 'vf_x1'], ['/projects/emaar-golf-vale/record.json', 'vf_x2'], [P + '/data/gaps/', 'gp_link'], ['/data/dictionary/', 'vf_x3'], ['/corrections/', 'vf_x4'], ['/docs/api/#key-facts', 'vf_x5']]
+    .map(x => '<li><a href="' + x[0] + '">' + esc(t(l, x[1])) + '</a></li>').join('') + '</ul>';
+  return page(shell, l, { path: '/data/how-we-verify/', h1: t(l, 'vf_h1'), lead: t(l, 'vf_lead'), body: b, crumb: [[t(l, 'data'), P + '/data/']] });
+}
 export async function inject(req, u, env, r) {
   try {
     if (!/text\/html/.test(r.headers.get('content-type') || '')) return r;
@@ -451,6 +541,8 @@ export async function handle(req, u, env, ctx, shell) {
   if (p === '/data/gaps.csv') return gapsCsv();
   if (p === '/data/n37u-se.json') return seJson();
   if (p === '/data/changes/feed.atom') return feedAtom(String(u.searchParams.get('m') || '').slice(0, 80));
+  if (p === '/data/changes.json') return changesJson(u);   // r7u
+  if (p === '/data/changes/week.json') return new Response(JSON.stringify(weekObj(), null, 1), { headers: JH });   // r7u
   if ((m = p.match(/^\/m\/([^/]{2,120})\/slugs\.json$/))) return slugsJson(env, m[1]);
   try { return await route(env, shell, p, u); } catch (e) {
     let e2 = null, diag = '';   // r4u: up to two more tries, each after the string tables are (re)loaded
@@ -469,6 +561,7 @@ async function route(env, shell, p, u) {
   }
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes\/week(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return weekPage(env, shell, m[1] || 'en'); }   // r6u
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return changesPage(env, shell, m[1] || 'en', String((u && u.searchParams.get('m')) || '').slice(0, 80)); }
+  if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/how-we-verify(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return verifyPage(env, shell, m[1] || 'en'); }   // r7u
   if ((m = p.match(RX_REC))) {
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } });
     const r = IX.bySlug.get(m[2]); if (!r) return null;

@@ -61,6 +61,17 @@
 <li><code>GET /api/open/badge/{id}.svg</code>: a live badge for listings and portals, e.g. <img src="/api/open/badge/DXB-001.svg" alt="Kolaboro badge example" height="22" style="vertical-align:middle"></li>
 </ul>
 <pre tabindex="0" style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
+<h2 id="key-facts">Key facts of named projects, field by field</h2>
+<p>The 10 key facts we hold for each named project (handover date, permit or registration number, units, starting price, developer legal entity, escrow, construction %, satellite reading, official register entry, court cases), each with its value, source, source kind and date read, and every real change of those facts from our daily copies. No key, CORS open, CC BY 4.0. How each fact is graded: <a href="/data/how-we-verify/">how we verify a fact</a>.</p>
+<ul>
+<li><code style="word-break:break-all">GET <a href="/projects/emaar-golf-vale/record.json">/projects/{slug}/record.json</a></code>: one record, fact by fact, plus the facts we do not hold yet and the official registers that can confirm them</li>
+<li><code style="word-break:break-all">GET <a href="/data/changes.json?m=Dubai&amp;field=ho&amp;limit=20">/data/changes.json?m=Dubai&amp;field=ho&amp;limit=20</a></code>: real changes of key facts, newest first; filters <code>m</code> (market), <code>field</code> (ho, pn, un, pr, co, es, cp, sat, reg, ct), <code>since</code> (YYYY-MM-DD), <code>limit</code> (up to 1000), <code>offset</code>. Handover moves carry <code>months_moved</code></li>
+<li><code>GET <a href="/data/changes/week.json">/data/changes/week.json</a></code>: the last 7 days, counted by market, with the 7 days before for comparison</li>
+<li><code>GET <a href="/data/changes/feed.atom">/data/changes/feed.atom</a></code> (<code>?m=Dubai</code> for one market): the newest 100 changes as an Atom feed</li>
+<li><code>GET <a href="/data/gaps.csv">/data/gaps.csv</a></code>: coverage of the 10 key facts by market</li>
+<li>MCP tools <code>get_project_record</code> and <code>list_fact_changes</code> on the <a href="/docs/mcp/#key-facts">MCP server</a> return the same data</li>
+</ul>
+<pre tabindex="0" style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/data/changes.json?m=Dubai&amp;field=ho&amp;since=2026-11-17&amp;limit=5"</code></pre>
 <h2 id="agents">For AI agents and SQL</h2><ul><li><b><a href="/docs/mcp/">MCP server</a></b> at <code>https://kolaboro.com/mcp</code>: the same data as tools for Claude and other AI agents (search projects, one project, market statistics, the public log, signature check). No key; every answer signed.</li><li><b><a href="/sql/">SQL in your browser</a></b>: the whole database as two Parquet files rebuilt daily (<a href="/data/kolaboro.parquet">kolaboro.parquet</a>, <a href="/data/kolaboro-markets.parquet">kolaboro-markets.parquet</a>), queried with DuckDB in the page. Their SHA-256 is re-checked and signed by our server at <code><a href="/api/x/e/parquet-manifest">/api/x/e/parquet-manifest</a></code>.</li></ul>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
 <div class="api-b">GET https://kolaboro.com/api/kb/stamp?hash=&lt;sha256&gt;

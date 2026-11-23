@@ -153,7 +153,7 @@ async function timelinePage(u, env, shell, lang, slug) {
   if (pr) {
     const H = (pr.hist || []).filter(e => e && e.seen && e.d).slice().sort((a, b) => a.seen < b.seen ? -1 : a.seen > b.seen ? 1 : 0), lastBy = {};
     for (const e of H) {
-      const src = e.src === 'page' ? [t30(lang, 's_dev'), e.sha ? '/projects/' + x.s + '/changes/' : (x.url || base)] : [t30(lang, 's_res'), base + '#sources'];
+      const src = e.src === 'page' ? [t30(lang, 's_dev'), e.sha ? pre(lang) + '/projects/' + x.s + '/changes/' : (x.url || base)] : [t30(lang, 's_res'), base + '#sources'];
       const l0 = lastBy[e.src || '?'];
       if (l0 && hkey(l0.d) && hkey(e.d) && hkey(e.d) !== hkey(l0.d)) add(e.seen, 'date', t30(lang, 'ev_ho_mv', { a: hdisp(l0.d, lang) || l0.d, b: hdisp(e.d, lang) || e.d }), src);
       else if (!l0 || l0.d !== e.d) add(e.seen, 'date', t30(lang, 'ev_ho', { d: hdisp(e.d, lang) || e.d }), src);

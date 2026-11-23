@@ -87,6 +87,7 @@ console.log(await c.callTool({ name: "get_project", arguments: { id: "BALI-014" 
 <p>Or explore it in the official inspector: <code>npx @modelcontextprotocol/inspector</code>, transport Streamable HTTP, URL above.</p>
 
 <p class="k-small"><b>Server v2, 21 Nov 2026:</b> five more tools (project_history, project_evidence, compare_markets, transparency_proof, dataset_delta) with tests: <a href="/engineering/mcp/">/engineering/mcp/</a>.</p>
+<p class="k-small"><b>23 Nov 2026:</b> two more tools, get_project_record and list_fact_changes, for the key facts of each record and their changes.</p>
 <h2>Tools</h2>
 <div class="eg-tw"><table class="eg-t"><thead><tr><th>Tool</th><th>What it returns</th></tr></thead><tbody>
 <tr><td><code>search_projects</code></td><td>Projects filtered by market, country, stage, minimum checks public or confirmed, all six public, flagged or not. Same records as <a href="/api/open/projects?limit=3">/api/open/projects</a>. Up to 100 per call, with offset.</td></tr>
@@ -101,6 +102,8 @@ console.log(await c.callTool({ name: "get_project", arguments: { id: "BALI-014" 
 <tr><td><code>public_log</code></td><td>The signed checkpoint of the <a href="/log/">public log</a> and its latest daily heads.</td></tr>
 <tr><td><code>dataset_files</code></td><td>The daily Parquet files of the whole database, with SHA-256 re-checked by the server. Same files as <a href="/sql/">SQL in your browser</a>.</td></tr>
 <tr><td><code>verify_signature</code></td><td>Checks that a body was signed by a published Kolaboro key.</td></tr>
+<tr id="key-facts"><td><code>get_project_record</code></td><td>One named project record, fact by fact: the 10 key facts with value, source, source kind and date read, and the facts we do not hold yet with the official registers that can confirm them. Same as <a href="/projects/emaar-golf-vale/record.json">/projects/{slug}/record.json</a>.</td></tr>
+<tr><td><code>list_fact_changes</code></td><td>Real changes of key facts across named projects, newest first, by market, field, date or the last N days, with months moved for handover dates. Same data as <a href="/data/changes.json?limit=5">/data/changes.json</a>. How facts are graded: <a href="/data/how-we-verify/">how we verify a fact</a>.</td></tr>
 </tbody></table></div>
 
 <h2>Signed answers</h2>
